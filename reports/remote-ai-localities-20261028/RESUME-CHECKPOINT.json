@@ -1,0 +1,65 @@
+{
+  "updated_at": "2026-10-28T21:19:05.530003+08:00",
+  "objective": "Ubuntu远程AI接入、品牌与README、逐地官方文书继续适配",
+  "completion_status": "INCOMPLETE_DEPLOYMENT_AND_NATIONWIDE",
+  "repository": "https://github.com/DerpZhenjun/LabourLawyer",
+  "repository_renamed_preserving_history": true,
+  "public_status": {
+    "published_guides": 181,
+    "generatable_localities": 166,
+    "unpublished_candidates": 24,
+    "all_counties_complete": false
+  },
+  "remote_ai": {
+    "transport": "owned SSH forwarding",
+    "model": "qwen3.8:27b",
+    "version": "0.40.12",
+    "native_stream": "PASS_SYNTHETIC",
+    "in_process_api": "PASS_REAL_REMOTE_SYNTHETIC",
+    "deployed_web": "NOT_RUN_BACKEND_RESTART_REJECTED",
+    "windows_model_started": false
+  },
+  "new_locality_work": {
+    "shangcheng": "own-source adapter and isolated API + 13 source/generated pages reviewed; unpublished",
+    "binhai_xiangshui": "four generated documents / six pages reviewed after date-wrap fix; unpublished",
+    "luyang": "own guide/materials/three originals, conflicts retained; no adaptation or publication"
+  },
+  "tests": {
+    "backend_collected": 470,
+    "backend_failures": 0,
+    "backend_errors": 0,
+    "backend_seconds": 111.015,
+    "frontend_build_seconds": 2.49,
+    "digital_typecheck": "PASS",
+    "brand_browser_checks": 5,
+    "main_business_browser": "PENDING_FINAL_LOG"
+  },
+  "openclaw": {
+    "new_public_issues": 2,
+    "new_acknowledgements": 0,
+    "state": "PENDING_OPENCLAW",
+    "global_configuration_changed": false,
+    "collection_or_vision_invoked": false
+  },
+  "restrictions": {
+    "backend_restart": "EXECUTION_POLICY_REJECTED_blocked_by_policy",
+    "candidate_server": "PREVIOUS_EXECUTION_POLICY_REJECTION_RETAINED",
+    "alternate_launch_attempted": false
+  },
+  "safety": {
+    "real_case_database_accessed": false,
+    "synthetic_inputs_only_for_ai_tests": true,
+    "unrelated_training_changes_committed": false,
+    "raw_sessions_or_credentials_published": false
+  },
+  "automation": {
+    "old_nightly": "PAUSED_UNCHANGED",
+    "new_background_collection": "NONE"
+  },
+  "next": [
+    "正常重启旧后端以加载远程AI路由，然后完成顾问和数字人的真实网页问答验收。",
+    "候选验收站受限期间不换方式发布；继续24个候选自己的版式与浏览器验收。",
+    "庐阳DOC尚无批准适配；滨江材料冲突待核验。",
+    "其余区县各自找官方事项与模板，不继承省级或邻区；不恢复过期夜间任务。"
+  ]
+}

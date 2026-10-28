@@ -1,3 +1,5 @@
+<img src="frontend/public/brand/labourlawyer-mark.svg" width="64" height="64" alt="LabourLawyer 标志" />
+
 # LabourLawyer
 
 **选地区，填信息，生成劳动仲裁文书。**
@@ -34,12 +36,32 @@
 | 已发布当地指南 | 181 地：四川 179、江苏 2 |
 | 已发布当地填写生成 | 166 地：四川 164；江苏锡山区、建湖县各自的官方空白文书 |
 | 仅指南、未开放当地生成 | 15 地 |
-| 未发布候选 | 23 地，均不计入上线覆盖 |
+| 未发布候选 | 24 地，均不计入上线覆盖 |
 | 历史省级文书 | 保留独立入口，须另核对适用范围，不计入区县完成数 |
 
-本轮新增滨海县、响水县、杭州市上城区和滨江区的独立资料。滨江区材料栏与流程冲突，保留待核验；临平区搜索落到市本级的结果未作为该区指南。新候选未完成网页验收，未发布。没有任何省份被标记为“全区县完成”。
+近期新增滨海县、响水县、杭州市上城区、滨江区和合肥市庐阳区的独立资料。滨海、响水及上城已完成离线填写与逐页版式检查，仍待网页验收。滨江材料栏与流程冲突，庐阳的时限说明存在差异，均保留待核验。临平搜索落到市本级的结果未作为该区指南。新候选未发布，没有任何省份被标记为“全区县完成”。
 
 运行后在 `/admin/regions` 查看实时矩阵。仓库中可核对 [逐省实际进度](docs/regions-status.md)、[公开数据版本](data/public-regions/manifest.json)、[候选登记](config/regional_candidates.json) 与 [地区接入说明](docs/regional-release.md)。
+
+## AI 法律顾问与法律数字人
+
+文字顾问与阿律数字人共用后端的流式问答，通过 SSH 连接 **Ubuntu Ollama / qwen3.8:27b**。Windows 只做连接转发，不启动本机模型；AI中断时仍可填写、生成文书。数字人提供独立的形象、对话和可选浏览器语音朗读入口。
+
+远程真实流式回答和新接口代码的内存ASGI联调已通过。**运行中旧后端的自动重启被执行策略拒绝，网页完整问答验收尚未完成；正常重启后端后才能加载新路由。** 不把接口测试当成已部署证明。连接、故障与使用说明见 [Ubuntu 远程 AI](docs/remote-ai.md)。
+
+![法律数字人实际页面，截图时明确显示远程问答未连接](docs/images/digital-human.png)
+
+## OpenClaw：公开资料补采与问题追踪
+
+在后台的 **OpenClaw 浏览器补采** 中选择省份，查看或续跑公开指南任务。系统分别记录网页已打开、指南已找到、模板已下载、已验证可填写，保留来源与截图，避免把“下载成功”当成“可以生成”。
+
+![OpenClaw 实际浏览器补采面板](docs/images/openclaw-collection.png)
+
+地区核验页展示精确地区、来源版本、采集差异和问题记录。搜索失败、附件缺失、登录边界等问题持久化到 outbox；只有实际收到完整事件编号回执才标记为已接收。
+
+![地区来源与 OpenClaw 问题投递状态](docs/images/openclaw-regions.png)
+
+截图中的 `PENDING_OPENCLAW` 表示仍待接收确认；历史任务记录不代表本轮执行了模型视觉复核，也不代表全国完成。截图采集期间没有启动采集或同步。操作入口、CLI与安全边界见 [OpenClaw 功能说明](docs/openclaw.md)。
 
 ## 网页、Android 与小程序
 
@@ -61,8 +83,8 @@
 准备 Git、Python 3.11 和 Node.js 22.12+（或兼容 Vite 7 的版本）。Android 构建另需 JDK、Android SDK。
 
 ```powershell
-git clone https://github.com/DerpZhenjun/Partlawyer-LAA.git
-cd Partlawyer-LAA
+git clone https://github.com/DerpZhenjun/LabourLawyer.git
+cd LabourLawyer
 .\start.bat web
 ```
 
@@ -102,7 +124,7 @@ npm run dev -- --host 127.0.0.1
 
 首次启动仅向空的公共指南、地区目录库导入经 SHA-256 校验的发行快照；已有数据不覆盖，不操作案件库。附件缺失或适配身份不匹配时关闭对应生成能力。源码不包含个人案件数据库、登录会话或模型文件。
 
-**生成文书不依赖大模型。** AI 法律信息问答与数字人为可选模块，需另行配置可用服务；远程地址由部署者核对，不需要为了生成 Word 启动或下载模型。
+**生成文书不依赖大模型。** AI问答与数字人为可选模块，连接按 [远程 AI 配置](docs/remote-ai.md) 设置，不需要为了生成 Word 启动或下载模型。
 
 ## 开发与验证
 
