@@ -32,7 +32,21 @@
     "frontend_build_seconds": 2.49,
     "digital_typecheck": "PASS",
     "brand_browser_checks": 5,
-    "main_business_browser": "PENDING_FINAL_LOG"
+    "main_business_browser": {
+      "passed": 10,
+      "failed": 0,
+      "existing_published_website_only": true
+    },
+    "clean_checkout": {
+      "collected": 461,
+      "skipped_private_capture_tests_or_class_setup": 40,
+      "failures": 0,
+      "errors": 0,
+      "seconds": 74.217,
+      "guides": 181,
+      "directory_rows": 3974,
+      "missing_attachments": 0
+    }
   },
   "openclaw": {
     "new_public_issues": 2,
