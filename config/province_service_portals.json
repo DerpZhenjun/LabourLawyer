@@ -1,0 +1,109 @@
+{
+  "navigation_source": "https://gjzwfw.www.gov.cn/col/col611/index.html",
+  "portals": {
+    "beijing": "https://banshi.beijing.gov.cn/",
+    "tianjin": "https://zwfw.tj.gov.cn/",
+    "hebei": "http://www.hbzwfw.gov.cn/",
+    "shanxi": "https://www.shanxi.gov.cn/zwfw/",
+    "neimenggu": "https://zwfw.nmg.gov.cn/",
+    "liaoning": "https://www.lnzwfw.gov.cn/",
+    "jilin": "https://zwfw.jl.gov.cn/",
+    "heilongjiang": "https://www.zwfw.hlj.gov.cn/",
+    "shanghai": "https://zwdt.sh.gov.cn/",
+    "jiangsu": "https://www.jszwfw.gov.cn/",
+    "zhejiang": "https://www.zjzwfw.gov.cn/",
+    "anhui": "https://www.ahzwfw.gov.cn/",
+    "fujian": "https://zwfw.fujian.gov.cn/",
+    "jiangxi": "https://www.jxzwfww.gov.cn/",
+    "shandong": "https://zwfw.sd.gov.cn/",
+    "henan": "https://www.hnzwfw.gov.cn/",
+    "hubei": "https://zwfw.hubei.gov.cn/",
+    "hunan": "https://zwfw-new.hunan.gov.cn/",
+    "guangdong": "https://www.gdzwfw.gov.cn/",
+    "guangxi": "https://zwfw.gxzf.gov.cn/",
+    "hainan": "https://wssp.hainan.gov.cn/",
+    "chongqing": "https://zwykb.cq.gov.cn/",
+    "sichuan": "https://www.sczwfw.gov.cn/",
+    "guizhou": "https://zwfw.guizhou.gov.cn/",
+    "yunnan": "https://zwfw.yn.gov.cn/",
+    "xizang": "https://www.xzzwfw.gov.cn/",
+    "shaanxi": "https://zwfw.shaanxi.gov.cn/",
+    "gansu": "https://zwfw.gansu.gov.cn/",
+    "qinghai": "https://ywtb.qhzwfw.gov.cn/",
+    "ningxia": "https://zwfw.nx.gov.cn/",
+    "xinjiang": "https://zwfw.xinjiang.gov.cn/"
+  },
+  "url_provenance": {
+    "hebei": "https://hdsswj.hd.gov.cn/keditor/attached/file/20240425/20240425091851_17685.pdf",
+    "shanxi": "https://www.shanxi.gov.cn/zwfw/"
+  },
+  "access_notes": {
+    "hebei": "HTTPS旧地址出现证书域名不匹配；官网公布的HTTP入口本次可打开，使用该入口检索。",
+    "shanxi": "使用省政府政务服务栏目及其链接的平台，旧地址zwfw.shanxi.gov.cn不再用作本次检索入口。"
+  },
+  "navigation_windows": {
+    "beijing": "http://beijing.gjzwfw.gov.cn",
+    "tianjin": "https://tj.gjzwfw.gov.cn/",
+    "hebei": "http://hbzwfw.gjzwfw.gov.cn",
+    "shanxi": "http://sxzwfw.gjzwfw.gov.cn",
+    "neimenggu": "http://nmg.gjzwfw.gov.cn",
+    "liaoning": "http://lnzwfw.gjzwfw.gov.cn",
+    "jilin": "http://jlzwfw.gjzwfw.gov.cn",
+    "heilongjiang": "http://hljzwzx.gjzwfw.gov.cn",
+    "shanghai": "http://sh.gjzwfw.gov.cn",
+    "jiangsu": "http://jszwfw.gjzwfw.gov.cn",
+    "zhejiang": "http://zjzwfw.gjzwfw.gov.cn",
+    "anhui": "http://ahzwfw.gjzwfw.gov.cn",
+    "fujian": "http://fjbs.gjzwfw.gov.cn",
+    "jiangxi": "http://jxzwfww.gjzwfw.gov.cn",
+    "shandong": "http://sd.gjzwfw.gov.cn",
+    "henan": "http://hnzwfw.gjzwfw.gov.cn/",
+    "hubei": "http://hubei.gjzwfw.gov.cn",
+    "hunan": "http://hunan.gjzwfw.gov.cn",
+    "guangdong": "http://gdzwfw.gjzwfw.gov.cn",
+    "guangxi": "http://gxzf.gjzwfw.gov.cn",
+    "hainan": "http://hainan.gjzwfw.gov.cn",
+    "chongqing": "http://cq.gjzwfw.gov.cn",
+    "sichuan": "http://sczwfw.gjzwfw.gov.cn",
+    "guizhou": "http://gzegn.gjzwfw.gov.cn",
+    "yunnan": "http://yn.gjzwfw.gov.cn",
+    "xizang": "http://xzzwfw.gjzwfw.gov.cn",
+    "shaanxi": "http://shaanxi.gjzwfw.gov.cn",
+    "gansu": "http://gszwfw.gjzwfw.gov.cn",
+    "qinghai": "http://qhzwfw.gjzwfw.gov.cn",
+    "ningxia": "http://nx.gjzwfw.gov.cn",
+    "xinjiang": "http://xinjiang.gjzwfw.gov.cn"
+  },
+  "navigation_checked_at": "2026-10-07T14:30:10.873788+08:00",
+  "navigation_evidence": "templates\\_reports\\openclaw-tasks\\20261007-130607-2c6533a3\\national-navigation\\navigation.json",
+  "navigation_embedded": {
+    "hebei": [
+      "https://zwfw.hebei.gov.cn/col/col18512/index.html",
+      "http://gjzwfw.www.gov.cn/fwmh/item/dsck_index.do?regionCode=130000"
+    ],
+    "heilongjiang": [
+      "http://qjd.zwfw.hlj.gov.cn/col/col367/index.html",
+      "http://gjzwfw.www.gov.cn/fwmh/item/dsck_index.do?regionCode=230000"
+    ],
+    "shandong": [
+      "http://www.shandong.gov.cn/col/col306437/index.html",
+      "http://gjzwfw.www.gov.cn/fwmh/item/dsck_index.do?regionCode=370000"
+    ],
+    "henan": [
+      "https://www.hnzwfw.gov.cn/col/col65340/index.html",
+      "http://gjzwfw.www.gov.cn/fwmh/item/dsck_index.do?regionCode=410000"
+    ],
+    "hubei": [
+      "https://zwfw.hubei.gov.cn:60443/hbfss/index.html",
+      "http://gjzwfw.www.gov.cn/fwmh/item/dsck_index.do?regionCode=420000"
+    ],
+    "hainan": [
+      "https://wssp.hainan.gov.cn/hnwt/countryFlagShip",
+      "http://gjzwfw.www.gov.cn/fwmh/item/dsck_index.do?regionCode=460000"
+    ],
+    "ningxia": [
+      "https://zwfw.nx.gov.cn/gov/nxqjd_2025.jsp?urltype=tree.TreeTempUrl&wbtreeid=7570&areacode=ZZQ",
+      "http://gjzwfw.www.gov.cn/fwmh/item/dsck_index.do?regionCode=640000"
+    ]
+  }
+}

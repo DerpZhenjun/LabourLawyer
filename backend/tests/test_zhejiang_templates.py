@@ -51,6 +51,17 @@ class ZhejiangOfficialTemplateTests(unittest.TestCase):
         self.assertIn("杭州测试有限公司", text)
         self.assertIn("请求支付拖欠工资15000元", text)
         self.assertIn("杭州市劳动人事争议仲裁委员会", text)
+        footer = document.tables[0].rows[-1].cells[0].paragraphs
+        self.assertEqual(len(footer), 10)
+        self.assertEqual(footer[0].text, "此致")
+        self.assertEqual(footer[1].text, "敬礼")
+        self.assertIn("杭州市劳动人事争议仲裁委员会", footer[2].text)
+        self.assertTrue(footer[2].runs[1].underline)
+        self.assertNotIn("测试申请人", footer[3].text)
+        self.assertIn("2026年", footer[4].text)
+        self.assertIn("附：申请书副本", footer[5].text)
+        self.assertIn("1", footer[5].text)
+        self.assertIn("4.申请书副本份数", footer[9].text)
 
     def test_blank_application_returns_fillable_official_worker_template(self):
         document = generate_LAdocx(
@@ -82,8 +93,12 @@ class ZhejiangOfficialTemplateTests(unittest.TestCase):
         self.assertEqual(len(table.rows), 14)
         text = "\n".join(cell.text for row in table.rows for cell in row.cells)
         self.assertIn("证据10", text)
-        self.assertIn("测试申请人", text)
+        self.assertNotIn("测试申请人", text)
         self.assertIn("2026年9月16日", text)
+        self.assertIn("杭州市劳动人事争议仲裁委员会", document.paragraphs[0].text)
+        footer = document.paragraphs[-1]
+        self.assertIn("本表一式2份提交仲裁委", footer.text)
+        self.assertEqual(footer.runs[0].font.size.pt, 14)
 
     def test_blank_evidence_list_returns_official_template(self):
         document = generate_ELdocx(

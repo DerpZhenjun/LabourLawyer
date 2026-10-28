@@ -1,0 +1,250 @@
+{
+  "beijing": {
+    "motif": "京城屋檐",
+    "kind": "宫殿",
+    "accent": "#9e463b",
+    "wash": "#fcf0e6",
+    "art": "/province-art/beijing.svg",
+    "miniArt": "/assets/province-art/beijing.png"
+  },
+  "tianjin": {
+    "motif": "海河桥影",
+    "kind": "桥梁",
+    "accent": "#32688b",
+    "wash": "#edf5fa",
+    "art": "/province-art/tianjin.svg",
+    "miniArt": "/assets/province-art/tianjin.png"
+  },
+  "hebei": {
+    "motif": "长城山色",
+    "kind": "长城",
+    "accent": "#736244",
+    "wash": "#f7f3e9",
+    "art": "/province-art/hebei.svg",
+    "miniArt": "/assets/province-art/hebei.png"
+  },
+  "shanxi": {
+    "motif": "晋地古塔",
+    "kind": "古塔",
+    "accent": "#8b603e",
+    "wash": "#faf2e7",
+    "art": "/province-art/shanxi.svg",
+    "miniArt": "/assets/province-art/shanxi.png"
+  },
+  "neimenggu": {
+    "motif": "草原毡房",
+    "kind": "毡房",
+    "accent": "#457660",
+    "wash": "#edf6ef",
+    "art": "/province-art/neimenggu.svg",
+    "miniArt": "/assets/province-art/neimenggu.png"
+  },
+  "liaoning": {
+    "motif": "盛京红墙",
+    "kind": "宫殿",
+    "accent": "#985348",
+    "wash": "#faefea",
+    "art": "/province-art/liaoning.svg",
+    "miniArt": "/assets/province-art/liaoning.png"
+  },
+  "jilin": {
+    "motif": "长白山与雪",
+    "kind": "山峰",
+    "accent": "#386978",
+    "wash": "#edf6f8",
+    "art": "/province-art/jilin.svg",
+    "miniArt": "/assets/province-art/jilin.png"
+  },
+  "heilongjiang": {
+    "motif": "冰城穹顶",
+    "kind": "穹顶",
+    "accent": "#586c9f",
+    "wash": "#f0f3fb",
+    "art": "/province-art/heilongjiang.svg",
+    "miniArt": "/assets/province-art/heilongjiang.png"
+  },
+  "shanghai": {
+    "motif": "浦江天际线",
+    "kind": "高楼",
+    "accent": "#5063a0",
+    "wash": "#eff2fb",
+    "art": "/province-art/shanghai.svg",
+    "miniArt": "/assets/province-art/shanghai.png"
+  },
+  "jiangsu": {
+    "motif": "江南园林",
+    "kind": "园林",
+    "accent": "#45796a",
+    "wash": "#eff7f3",
+    "art": "/province-art/jiangsu.svg",
+    "miniArt": "/assets/province-art/jiangsu.png"
+  },
+  "zhejiang": {
+    "motif": "西湖荷影",
+    "kind": "荷花",
+    "accent": "#317b78",
+    "wash": "#ecf8f5",
+    "art": "/province-art/zhejiang.svg",
+    "miniArt": "/assets/province-art/zhejiang.png"
+  },
+  "anhui": {
+    "motif": "徽州白墙",
+    "kind": "徽派",
+    "accent": "#586575",
+    "wash": "#f2f4f6",
+    "art": "/province-art/anhui.svg",
+    "miniArt": "/assets/province-art/anhui.png"
+  },
+  "fujian": {
+    "motif": "闽地土楼",
+    "kind": "土楼",
+    "accent": "#9a6845",
+    "wash": "#fbf3e8",
+    "art": "/province-art/fujian.svg",
+    "miniArt": "/assets/province-art/fujian.png"
+  },
+  "jiangxi": {
+    "motif": "瓷与山水",
+    "kind": "瓷器",
+    "accent": "#496d9b",
+    "wash": "#f0f5fc",
+    "art": "/province-art/jiangxi.svg",
+    "miniArt": "/assets/province-art/jiangxi.png"
+  },
+  "shandong": {
+    "motif": "岱岳松影",
+    "kind": "山峰",
+    "accent": "#597145",
+    "wash": "#f2f6eb",
+    "art": "/province-art/shandong.svg",
+    "miniArt": "/assets/province-art/shandong.png"
+  },
+  "henan": {
+    "motif": "古都牡丹",
+    "kind": "花卉",
+    "accent": "#966276",
+    "wash": "#fcf0f4",
+    "art": "/province-art/henan.svg",
+    "miniArt": "/assets/province-art/henan.png"
+  },
+  "hubei": {
+    "motif": "江城楼阁",
+    "kind": "古塔",
+    "accent": "#94713b",
+    "wash": "#faf5e9",
+    "art": "/province-art/hubei.svg",
+    "miniArt": "/assets/province-art/hubei.png"
+  },
+  "hunan": {
+    "motif": "湘江楼影",
+    "kind": "古塔",
+    "accent": "#8a6349",
+    "wash": "#fbf3ec",
+    "art": "/province-art/hunan.svg",
+    "miniArt": "/assets/province-art/hunan.png"
+  },
+  "guangdong": {
+    "motif": "木棉与岭南",
+    "kind": "花卉",
+    "accent": "#ad5d41",
+    "wash": "#fff2e8",
+    "art": "/province-art/guangdong.svg",
+    "miniArt": "/assets/province-art/guangdong.png"
+  },
+  "guangxi": {
+    "motif": "桂林山水",
+    "kind": "山峰",
+    "accent": "#467e78",
+    "wash": "#eff8f5",
+    "art": "/province-art/guangxi.svg",
+    "miniArt": "/assets/province-art/guangxi.png"
+  },
+  "hainan": {
+    "motif": "椰风海岸",
+    "kind": "椰树",
+    "accent": "#287c91",
+    "wash": "#eef9fb",
+    "art": "/province-art/hainan.svg",
+    "miniArt": "/assets/province-art/hainan.png"
+  },
+  "chongqing": {
+    "motif": "山城桥影",
+    "kind": "桥梁",
+    "accent": "#986049",
+    "wash": "#fbf1eb",
+    "art": "/province-art/chongqing.svg",
+    "miniArt": "/assets/province-art/chongqing.png"
+  },
+  "sichuan": {
+    "motif": "竹林茶香",
+    "kind": "茶碗",
+    "accent": "#647c48",
+    "wash": "#f3f7eb",
+    "art": "/province-art/sichuan.svg",
+    "miniArt": "/assets/province-art/sichuan.png"
+  },
+  "guizhou": {
+    "motif": "黔地鼓楼",
+    "kind": "古塔",
+    "accent": "#63748a",
+    "wash": "#f1f5f9",
+    "art": "/province-art/guizhou.svg",
+    "miniArt": "/assets/province-art/guizhou.png"
+  },
+  "yunnan": {
+    "motif": "山茶花开",
+    "kind": "花卉",
+    "accent": "#a65869",
+    "wash": "#fbf0f3",
+    "art": "/province-art/yunnan.svg",
+    "miniArt": "/assets/province-art/yunnan.png"
+  },
+  "xizang": {
+    "motif": "雪域宫墙",
+    "kind": "宫殿",
+    "accent": "#845f54",
+    "wash": "#faf3ec",
+    "art": "/province-art/xizang.svg",
+    "miniArt": "/assets/province-art/xizang.png"
+  },
+  "shaanxi": {
+    "motif": "长安城楼",
+    "kind": "宫殿",
+    "accent": "#8e664c",
+    "wash": "#f9f2e8",
+    "art": "/province-art/shaanxi.svg",
+    "miniArt": "/assets/province-art/shaanxi.png"
+  },
+  "gansu": {
+    "motif": "敦煌沙色",
+    "kind": "沙丘",
+    "accent": "#ab773c",
+    "wash": "#fdf5e5",
+    "art": "/province-art/gansu.svg",
+    "miniArt": "/assets/province-art/gansu.png"
+  },
+  "qinghai": {
+    "motif": "青海湖波",
+    "kind": "湖泊",
+    "accent": "#41779d",
+    "wash": "#eef6fc",
+    "art": "/province-art/qinghai.svg",
+    "miniArt": "/assets/province-art/qinghai.png"
+  },
+  "ningxia": {
+    "motif": "塞上枸杞",
+    "kind": "花卉",
+    "accent": "#8f624c",
+    "wash": "#f9f2ec",
+    "art": "/province-art/ningxia.svg",
+    "miniArt": "/assets/province-art/ningxia.png"
+  },
+  "xinjiang": {
+    "motif": "天山果香",
+    "kind": "果盘",
+    "accent": "#728044",
+    "wash": "#f7f8eb",
+    "art": "/province-art/xinjiang.svg",
+    "miniArt": "/assets/province-art/xinjiang.png"
+  }
+}

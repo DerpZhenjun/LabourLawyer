@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "source_order": ["provincial_service_portal", "official_department"],
+  "district_strategy": "first_visible",
+  "confirm_ip_search": true,
+  "capitals": {
+    "beijing": "北京市", "tianjin": "天津市", "hebei": "石家庄市", "shanxi": "太原市",
+    "neimenggu": "呼和浩特市", "liaoning": "沈阳市", "jilin": "长春市", "heilongjiang": "哈尔滨市",
+    "shanghai": "上海市", "jiangsu": "南京市", "zhejiang": "杭州市", "anhui": "合肥市",
+    "fujian": "福州市", "jiangxi": "南昌市", "shandong": "济南市", "henan": "郑州市",
+    "hubei": "武汉市", "hunan": "长沙市", "guangdong": "广州市", "guangxi": "南宁市",
+    "hainan": "海口市", "chongqing": "重庆市", "sichuan": "成都市", "guizhou": "贵阳市",
+    "yunnan": "昆明市", "xizang": "拉萨市", "shaanxi": "西安市", "gansu": "兰州市",
+    "qinghai": "西宁市", "ningxia": "银川市", "xinjiang": "乌鲁木齐市"
+  },
+  "capital_codes": {
+    "beijing":"1101", "tianjin":"1201", "hebei":"1301", "shanxi":"1401", "neimenggu":"1501",
+    "liaoning":"2101", "jilin":"2201", "heilongjiang":"2301", "shanghai":"3101", "jiangsu":"3201",
+    "zhejiang":"3301", "anhui":"3401", "fujian":"3501", "jiangxi":"3601", "shandong":"3701",
+    "henan":"4101", "hubei":"4201", "hunan":"4301", "guangdong":"4401", "guangxi":"4501",
+    "hainan":"4601", "chongqing":"5001", "sichuan":"5101", "guizhou":"5201", "yunnan":"5301",
+    "xizang":"5401", "shaanxi":"6101", "gansu":"6201", "qinghai":"6301", "ningxia":"6401", "xinjiang":"6501"
+  }
+}

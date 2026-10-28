@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "province": "Zhejiang",
+      "enabled": true,
+      "adapter": "zhejiang",
+      "guide_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=2510b7af-2402-4502-837c-14eb4a71177d",
+      "allowed_domains": ["zjzwfw.gov.cn", "portal.zjzwfw.gov.cn"],
+      "options": {
+        "local_inner_code": "2510b7af-2402-4502-837c-14eb4a71177d",
+        "material_api": "https://www.zjzwfw.gov.cn/jpaas-zjservice-server/open-api/item/getCondition",
+        "templates": [
+          {"document_type": "application", "display_name": "劳动人事争议仲裁申请书", "material_index": 2, "production_path": "templates/_docx/ZheJiangSheng/《劳动人事争议仲裁申请书》.docx"},
+          {"document_type": "evidence", "display_name": "证据清单", "material_index": 3, "production_path": "templates/_docx/ZheJiangSheng/《证据清单》.docx"}
+        ]
+      }
+    },
+    {
+      "province": "Guangdong",
+      "enabled": true,
+      "adapter": "guangdong",
+      "guide_url": "https://www.gdzwfw.gov.cn/portal/v3/guide/11440000553612461J244211105N00302",
+      "allowed_domains": ["gdzwfw.gov.cn", "static.gdzwfw.gov.cn"],
+      "options": {
+        "task_code": "11440000553612461J244211105N00302",
+        "material_api": "https://www.gdzwfw.gov.cn/portal/api/v2/item-event/getAuditItemDetailCur",
+        "templates": [
+          {"document_type": "application", "display_name": "仲裁申请书", "material_index": 0, "production_path": "templates/_docx/GuangDongSheng/仲裁申请书.docx"},
+          {"document_type": "evidence", "display_name": "证据清单", "material_index": 1, "production_path": "templates/_docx/GuangDongSheng/证据清单.docx"}
+        ]
+      }
+    },
+    {
+      "province": "Jiangsu",
+      "enabled": true,
+      "adapter": "jiangsu",
+      "guide_url": "https://www.jszwfw.gov.cn/jszwfw/bscx/itemlist/briefbszn.do?iddept_ql_inf=11320205014038763X4002014302002&iddept_yw_inf=11320205014038763X400201430200201&ql_kind=20&type=1&webId=35",
+      "allowed_domains": ["jszwfw.gov.cn", "sxgl.jszwfw.gov.cn"],
+      "options": {
+        "templates": [
+          {"document_type": "application", "material_name": "劳动人事争议仲裁申请书", "production_path": "templates/_docx/JiangSuSheng/劳动人事争议仲裁申请书.docx"},
+          {"document_type": "evidence", "material_name": "劳动人事争议仲裁案件证据清单", "production_path": "templates/_docx/JiangSuSheng/证据清单.docx"}
+        ]
+      }
+    },
+    {
+      "province": "Liaoning",
+      "enabled": true,
+      "adapter": "liaoning",
+      "guide_url": "https://center.lnzwfw.gov.cn/api/web/matter/getContent?id=65dbb98b-35ef-47a5-b7ff-1a4f5c914e11",
+      "allowed_domains": ["lnzwfw.gov.cn", "center.lnzwfw.gov.cn"],
+      "options": {
+        "legacy_tls": true,
+        "templates": [
+          {
+            "document_type": "application",
+            "display_name": "仲裁申请书",
+            "link_text_contains": "仲裁申请书.doc",
+            "file_format": "doc",
+            "original_path": "templates/_original/LiaoNingSheng/仲裁申请书.doc",
+            "production_path": "templates/_docx/LiaoNingSheng/仲裁申请书.docx"
+          }
+        ]
+      }
+    }
+  ]
+}

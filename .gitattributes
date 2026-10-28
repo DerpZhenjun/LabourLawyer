@@ -1,0 +1,16 @@
+* text=auto
+*.py text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.vue text eol=lf
+*.md text eol=lf
+*.bat text eol=crlf
+# Sealed official evidence and release snapshots must retain their SHA256 bytes.
+/reports/** -text
+/templates/** -text
+/data/public-regions/** -text
+*.docx -text
+*.doc -text
+*.pdf -text
+*.png -text
+*.jpg -text

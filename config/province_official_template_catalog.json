@@ -1,0 +1,677 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-07",
+  "coverage": "中国大陆31个省级行政区",
+  "provinces": [
+    {
+      "province": "Beijing",
+      "province_zh": "北京市",
+      "folder": "BeiJingShi",
+      "status": "official_archive_templates",
+      "authority": "北京市朝阳区人民政府、北京市朝阳区人力资源和社会保障局",
+      "scope": "北京市朝阳区",
+      "source_url": "http://www.bjchy.gov.cn/affair/ldwq/tjzc/8a24fe9767393e2d01673f3dbdc70a21.html",
+      "allowed_domains": [
+        "bjchy.gov.cn"
+      ],
+      "allow_http": true,
+      "documents": [
+        {
+          "document_type": "application",
+          "display_name": "申请书",
+          "archive_url": "http://www.bjchy.gov.cn/UserFiles/File/2bb0130a4e614ecdbb06bf2b7933ab77.zip",
+          "archive_member_name_contains": "立案下载使用材料/1.申请书.doc",
+          "format": "doc",
+          "original_name": "申请书.doc",
+          "output_name": "劳动人事争议仲裁申请书.docx"
+        },
+        {
+          "document_type": "evidence",
+          "display_name": "证据材料清单",
+          "archive_url": "http://www.bjchy.gov.cn/UserFiles/File/2bb0130a4e614ecdbb06bf2b7933ab77.zip",
+          "archive_member_name_contains": "证据材料清单.doc",
+          "format": "doc",
+          "original_name": "证据材料清单.doc",
+          "output_name": "证据清单.docx"
+        }
+      ]
+    },
+    {
+      "province": "Tianjin",
+      "province_zh": "天津市",
+      "folder": "TianJinShi",
+      "status": "official_doc_templates",
+      "authority": "中新天津生态城管理委员会人社局",
+      "scope": "天津市中新天津生态城",
+      "source_url": "http://www.eco-city.gov.cn/p1/sqldzc/20171010/461.html",
+      "allowed_domains": [
+        "eco-city.gov.cn"
+      ],
+      "allow_http": true,
+      "documents": [
+        {
+          "document_type": "application",
+          "display_name": "劳动仲裁申请书样式",
+          "url": "http://www.eco-city.gov.cn/u/cms/www/201710/110943177zze.doc",
+          "format": "doc",
+          "original_name": "劳动仲裁申请书样式.doc",
+          "output_name": "劳动人事争议仲裁申请书.docx"
+        },
+        {
+          "document_type": "evidence",
+          "display_name": "证据清单",
+          "url": "http://www.eco-city.gov.cn/u/cms/www/201910/081434099aia.docx",
+          "format": "docx",
+          "output_name": "证据清单.docx"
+        }
+      ]
+    },
+    {
+      "province": "Hebei",
+      "province_zh": "河北省",
+      "folder": "HeBeiSheng",
+      "status": "official_service_portal_no_public_blank_found",
+      "allowed_domains": [
+        "he.12333.gov.cn"
+      ],
+      "authority": "河北省人力资源和社会保障公共服务平台",
+      "scope": "河北省",
+      "source_url": "https://www.he.12333.gov.cn/"
+    },
+    {
+      "province": "Shanxi",
+      "province_zh": "山西省",
+      "folder": "ShanXiSheng",
+      "status": "official_portal_template_verified",
+      "allowed_domains": [
+        "sxzwfw.gov.cn",
+        "sxsfqrc.com"
+      ],
+      "authority": "山西省政务服务平台公开办事指南",
+      "scope": "山西省级／直属事项（提交前确认受理机构）",
+      "source_url": "https://www.sxzwfw.gov.cn/icity/icity/proinfo_new?url=https://zwfwpt.sxzwfw.gov.cn:10002/aaa/person/DF7DE8D7F26045BDAD8D4DE619877213",
+      "note": "OpenClaw从省级政务平台取得仲裁申请书；已完成字段、普通及长文本逐页渲染与Ubuntu Qwen复核。证据清单尚未取得单独可填充版本。",
+      "previous_sources": [
+        {
+          "status": "official_template_page_temporarily_unavailable",
+          "authority": "山西转型综合改革示范区人才引进交流服务中心",
+          "scope": "山西转型综合改革示范区",
+          "source_url": "https://www.sxsfqrc.com/article/detail/74pqkH5sMxuLuBZXzVpSAL.htm",
+          "note": "官网明确列出仲裁申请书和证据清单，但采集时源站持续返回 HTTP 502，未伪造或使用非官方副本。"
+        }
+      ],
+      "documents": [
+        {
+          "document_type": "application",
+          "display_name": "仲裁申请书",
+          "format": "docx",
+          "original_name": "仲裁申请书.docx",
+          "output_name": "仲裁申请书.docx",
+          "download_url": "https://zwfwpt.sxzwfw.gov.cn/fis/18a78d3d407-true/master/18ad11b65e3/2024/3/1770297899612991490/%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6.docx?Signature=VFfSbf35b9oMD9b69uqLVCy1w94%3D&AWSAccessKeyId=Mjk2NjI4OTQtODNkNC00ZDI2LTkxYTUtMjhiNGFhZThmZTQ2&Expires=1791434218",
+          "sha256": "e07902e46176fd85e277d3dca1f3f2d9bcd7afa742485e863bc3c0e7f3ba0c4d",
+          "acquisition_run": "20261007-121205-676f95c0",
+          "fill_verified": true,
+          "verification": {
+            "date": "2026-10-07",
+            "adapter": "backend/WenShu/Shanxi/application.py",
+            "proof": ".runtime/shanxi-adaptation/render.json",
+            "model_review": ".runtime/shanxi-adaptation/qwen-review.json",
+            "model_server": "http://10.66.66.1:11434"
+          }
+        }
+      ]
+    },
+    {
+      "province": "InnerMongolia",
+      "province_zh": "内蒙古自治区",
+      "folder": "NeiMengGuZiZhiQu",
+      "status": "official_application_only",
+      "allowed_domains": [
+        "rsj.ordos.gov.cn"
+      ],
+      "authority": "鄂尔多斯市人力资源和社会保障局、鄂尔多斯市劳动人事争议仲裁院",
+      "scope": "内蒙古自治区鄂尔多斯市",
+      "source_url": "http://rsj.ordos.gov.cn/ztzl_146775/xzzx_146783/202503/t20250331_1577917.html",
+      "note": "办事指南公开样表及空表下载按钮；两个官方附件端点均返回 0 字节，未入库。",
+      "allow_http": true,
+      "documents": [
+        {
+          "document_type": "application",
+          "display_name": "劳动仲裁申请书模版",
+          "url": "http://rsj.ordos.gov.cn/ztzl_146775/xzzx_146783/202503/P020260526695057128499.docx",
+          "format": "docx",
+          "output_name": "劳动人事争议仲裁申请书.docx"
+        }
+      ]
+    },
+    {
+      "province": "Liaoning",
+      "province_zh": "辽宁省",
+      "folder": "LiaoNingSheng",
+      "status": "acquired_by_primary_adapter",
+      "authority": "辽宁政务服务网",
+      "scope": "辽宁省",
+      "source_url": "https://center.lnzwfw.gov.cn/api/web/matter/getContent?id=65dbb98b-35ef-47a5-b7ff-1a4f5c914e11",
+      "allowed_domains": [
+        "lnzwfw.gov.cn"
+      ]
+    },
+    {
+      "province": "Jilin",
+      "province_zh": "吉林省",
+      "folder": "JiLinSheng",
+      "status": "official_guide_no_public_blank_found",
+      "authority": "吉林省人力资源和社会保障厅",
+      "scope": "吉林省",
+      "source_url": "https://hrss.jl.gov.cn/ldgx/tjzc/201608/t20160823_2400018.html",
+      "allowed_domains": [
+        "jl.gov.cn"
+      ]
+    },
+    {
+      "province": "Heilongjiang",
+      "province_zh": "黑龙江省",
+      "folder": "HeiLongJiangSheng",
+      "status": "official_online_service_no_public_blank_found",
+      "allowed_domains": [
+        "hlj.gov.cn"
+      ],
+      "authority": "黑龙江省人民政府、哈尔滨市人力资源和社会保障局",
+      "scope": "黑龙江省哈尔滨市",
+      "source_url": "https://www.hlj.gov.cn/hlj/c107856/202307/c00_31646576.shtml"
+    },
+    {
+      "province": "Shanghai",
+      "province_zh": "上海市",
+      "folder": "ShangHaiShi",
+      "status": "official_pdf_templates",
+      "authority": "上海市虹口区人民政府",
+      "scope": "上海市虹口区",
+      "source_url": "https://www.shhk.gov.cn/xwzx/002008/002008017/002008017008/childpage.html",
+      "allowed_domains": [
+        "shhk.gov.cn"
+      ],
+      "documents": [
+        {
+          "document_type": "application",
+          "display_name": "申请书",
+          "url": "https://www.shhk.gov.cn/shhk/93335dbb-3c29-4f59-a3ff-b30cddfe485f/ec2d8fe8-8324-4902-a0a7-8f1ebdc4e90c/申请书.pdf",
+          "format": "pdf",
+          "original_name": "申请书.pdf"
+        },
+        {
+          "document_type": "evidence",
+          "display_name": "证据材料清单",
+          "url": "https://www.shhk.gov.cn/shhk/f4329c27-b321-42cf-9a6e-c219e7703069/6810f582-f875-4aac-bcf2-2fa84dfe09f3/证据材料.pdf",
+          "format": "pdf",
+          "original_name": "证据材料清单.pdf"
+        }
+      ]
+    },
+    {
+      "province": "Jiangsu",
+      "province_zh": "江苏省",
+      "folder": "JiangSuSheng",
+      "status": "acquired_by_primary_adapter",
+      "authority": "江苏政务服务网",
+      "scope": "江苏省无锡市锡山区",
+      "source_url": "https://www.jszwfw.gov.cn/jszwfw/bscx/itemlist/briefbszn.do?iddept_ql_inf=11320205014038763X4002014302002&iddept_yw_inf=11320205014038763X400201430200201&ql_kind=20&type=1&webId=35",
+      "allowed_domains": [
+        "jszwfw.gov.cn"
+      ]
+    },
+    {
+      "province": "Zhejiang",
+      "province_zh": "浙江省",
+      "folder": "ZheJiangSheng",
+      "status": "acquired_by_primary_adapter",
+      "authority": "浙江政务服务网",
+      "scope": "浙江省",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=2510b7af-2402-4502-837c-14eb4a71177d",
+      "allowed_domains": [
+        "zjzwfw.gov.cn"
+      ]
+    },
+    {
+      "province": "Anhui",
+      "province_zh": "安徽省",
+      "folder": "AnHuiSheng",
+      "status": "official_guide_text_only",
+      "authority": "铜陵市人力资源和社会保障局",
+      "scope": "安徽省铜陵市",
+      "source_url": "https://rsj.tl.gov.cn/tlsrlzyhshbzj/c00047/pc/content/content_1737662771616849920.html",
+      "allowed_domains": [
+        "tl.gov.cn"
+      ]
+    },
+    {
+      "province": "Fujian",
+      "province_zh": "福建省",
+      "folder": "FuJianSheng",
+      "status": "official_doc_templates",
+      "authority": "福建省人力资源和社会保障厅",
+      "scope": "福建省",
+      "source_url": "https://rst.fujian.gov.cn/fw/xzzx/qtzl/",
+      "allowed_domains": [
+        "fujian.gov.cn"
+      ],
+      "documents": [
+        {
+          "document_type": "application",
+          "display_name": "仲裁申请书",
+          "url": "https://rst.fujian.gov.cn/fw/xzzx/qtzl/201903/P020190329308466848521.doc",
+          "format": "doc",
+          "original_name": "仲裁申请书.doc",
+          "output_name": "劳动人事争议仲裁申请书.docx"
+        },
+        {
+          "document_type": "evidence",
+          "display_name": "证据清单",
+          "url": "https://rst.fujian.gov.cn/fw/xzzx/qtzl/201903/P020231025383873893591.docx",
+          "format": "docx",
+          "output_name": "证据清单.docx"
+        }
+      ]
+    },
+    {
+      "province": "Jiangxi",
+      "province_zh": "江西省",
+      "folder": "JiangXiSheng",
+      "status": "official_doc_templates",
+      "authority": "赣州市人力资源和社会保障局",
+      "scope": "江西省赣州市",
+      "source_url": "https://rsj.ganzhou.gov.cn/c100245/202405/056c72cd2b5e4df986588ced020c0aa9.shtml",
+      "allowed_domains": [
+        "ganzhou.gov.cn"
+      ],
+      "documents": [
+        {
+          "document_type": "application",
+          "display_name": "仲裁申请书模板",
+          "url": "https://rsj.ganzhou.gov.cn/c100245/202405/056c72cd2b5e4df986588ced020c0aa9/files/e09bc39774d5424590a09bec24dfc09a.doc",
+          "format": "doc",
+          "original_name": "仲裁申请书模板.doc",
+          "output_name": "仲裁申请书.docx"
+        },
+        {
+          "document_type": "evidence",
+          "display_name": "证据目录模板",
+          "url": "https://rsj.ganzhou.gov.cn/c100245/202405/056c72cd2b5e4df986588ced020c0aa9/files/6a6efec1506343aea09ff01bdcb0d651.doc",
+          "format": "doc",
+          "original_name": "证据目录模板.doc",
+          "output_name": "证据清单.docx"
+        }
+      ]
+    },
+    {
+      "province": "Shandong",
+      "province_zh": "山东省",
+      "folder": "ShanDongSheng",
+      "status": "official_doc_templates",
+      "authority": "淄博市人力资源和社会保障局",
+      "scope": "山东省淄博市",
+      "source_url": "https://hrss.zibo.gov.cn/art/2019/1/18/art_2378_1603091.html",
+      "allowed_domains": [
+        "zibo.gov.cn"
+      ],
+      "documents": [
+        {
+          "document_type": "application",
+          "display_name": "劳动人事争议仲裁申请书",
+          "url": "https://hrss.zibo.gov.cn/module/download/downfile.jsp?classid=0&filename=8ff40b6b76cd40639f5ca3b713ac286d.doc",
+          "format": "doc",
+          "original_name": "劳动人事争议仲裁申请书.doc",
+          "output_name": "劳动人事争议仲裁申请书.docx"
+        },
+        {
+          "document_type": "evidence",
+          "display_name": "证据清单",
+          "url": "https://hrss.zibo.gov.cn/module/download/downfile.jsp?classid=0&filename=40e2beb7d006478f8b52c5b3ae7f4337.doc",
+          "format": "doc",
+          "original_name": "证据清单.doc",
+          "output_name": "证据清单.docx"
+        }
+      ]
+    },
+    {
+      "province": "Henan",
+      "province_zh": "河南省",
+      "folder": "HeNanSheng",
+      "status": "official_application_only",
+      "authority": "平顶山市人力资源和社会保障局",
+      "scope": "河南省平顶山市",
+      "source_url": "https://rsj.pds.gov.cn/contents/66103/753808.html",
+      "allowed_domains": [
+        "pds.gov.cn"
+      ],
+      "documents": [
+        {
+          "document_type": "application",
+          "display_name": "劳动人事争议仲裁申请书（书写样板）",
+          "url": "https://rsj.pds.gov.cn/upload/files/2020/4/201059315.doc",
+          "format": "doc",
+          "original_name": "劳动人事争议仲裁申请书（书写样板）.doc",
+          "output_name": "劳动人事争议仲裁申请书.docx"
+        }
+      ]
+    },
+    {
+      "province": "Hubei",
+      "province_zh": "湖北省",
+      "folder": "HuBeiSheng",
+      "status": "official_combined_doc",
+      "authority": "湖北省人力资源和社会保障厅",
+      "scope": "湖北省",
+      "source_url": "https://rst.hubei.gov.cn/zfxxgk/zc/qtzdgkwj/201801/t20180105_705510.shtml",
+      "allowed_domains": [
+        "hubei.gov.cn"
+      ],
+      "documents": [
+        {
+          "document_type": "combined",
+          "display_name": "湖北省劳动人事争议仲裁文书标准（含申请书和证据目录）",
+          "url": "https://rst.hubei.gov.cn/zfxxgk/zc/qtzdgkwj/201801/W020191112023665312426.doc",
+          "format": "doc",
+          "original_name": "湖北省劳动人事争议仲裁文书标准.doc",
+          "output_name": "湖北省劳动人事争议仲裁文书标准.docx"
+        }
+      ]
+    },
+    {
+      "province": "Hunan",
+      "province_zh": "湖南省",
+      "folder": "HuNanSheng",
+      "status": "official_doc_templates",
+      "authority": "岳阳市人力资源和社会保障局",
+      "scope": "湖南省岳阳市",
+      "source_url": "https://rsj.yueyang.gov.cn/7751/65001/content_1920005.html",
+      "allowed_domains": [
+        "yueyang.gov.cn"
+      ],
+      "documents": [
+        {
+          "document_type": "application",
+          "display_name": "劳动争议仲裁申请书",
+          "url": "https://rsj.yueyang.gov.cn/uploadfiles/202203/20220316142251381001.doc",
+          "format": "doc",
+          "original_name": "劳动争议仲裁申请书.doc",
+          "output_name": "劳动人事争议仲裁申请书.docx"
+        },
+        {
+          "document_type": "evidence",
+          "display_name": "证据清单",
+          "url": "https://rsj.yueyang.gov.cn/uploadfiles/202203/20220316142251251002.doc",
+          "format": "doc",
+          "original_name": "证据清单.doc",
+          "output_name": "证据清单.docx"
+        }
+      ]
+    },
+    {
+      "province": "Guangdong",
+      "province_zh": "广东省",
+      "folder": "GuangDongSheng",
+      "status": "acquired_by_primary_adapter",
+      "authority": "广东政务服务网",
+      "scope": "广东省",
+      "source_url": "https://www.gdzwfw.gov.cn/portal/v3/guide/11440000553612461J244211105N00302",
+      "allowed_domains": [
+        "gdzwfw.gov.cn"
+      ]
+    },
+    {
+      "province": "Guangxi",
+      "province_zh": "广西壮族自治区",
+      "folder": "GuangXiZhuangZuZiZhiQu",
+      "status": "official_guide_pdf_no_separate_blank_found",
+      "allowed_domains": [
+        "gxzf.gov.cn"
+      ],
+      "authority": "广西壮族自治区人力资源和社会保障厅",
+      "scope": "广西壮族自治区",
+      "source_url": "https://rst.gxzf.gov.cn/zwgk/xxgkzcfg/fgfxlm/P020241210584780009389.pdf",
+      "documents": [
+        {
+          "document_type": "guide",
+          "display_name": "广西人社政务服务办事指南（含劳动人事争议仲裁申请事项）",
+          "url": "http://rst.gxzf.gov.cn/zwgk/xxgkzcfg/fgfxlm/P020241210584780009389.pdf",
+          "format": "pdf",
+          "original_name": "劳动人事争议仲裁办事指南.pdf"
+        }
+      ],
+      "allow_http": true
+    },
+    {
+      "province": "Hainan",
+      "province_zh": "海南省",
+      "folder": "HaiNanSheng",
+      "status": "official_archive_templates",
+      "authority": "三亚市人力资源和社会保障局",
+      "scope": "海南省三亚市",
+      "source_url": "https://hrss.sanya.gov.cn/rsjsite/bgxz/202407/a8285997898349c681bb1caed26524d1.shtml",
+      "allowed_domains": [
+        "sanya.gov.cn"
+      ],
+      "documents": [
+        {
+          "document_type": "application",
+          "display_name": "三亚市劳动人事争议仲裁申请书",
+          "archive_url": "https://hrss.sanya.gov.cn/rsjsite/bgxz/202407/a8285997898349c681bb1caed26524d1/files/aac255c891584b759265e73bc5870e34.zip",
+          "archive_member_prefix": "1.",
+          "format": "docx",
+          "output_name": "劳动人事争议仲裁申请书.docx"
+        },
+        {
+          "document_type": "evidence",
+          "display_name": "举证清单（申请人）",
+          "archive_url": "https://hrss.sanya.gov.cn/rsjsite/bgxz/202407/a8285997898349c681bb1caed26524d1/files/aac255c891584b759265e73bc5870e34.zip",
+          "archive_member_prefix": "18.",
+          "format": "doc",
+          "original_name": "举证清单（申请人）.doc",
+          "output_name": "证据清单.docx"
+        }
+      ]
+    },
+    {
+      "province": "Chongqing",
+      "province_zh": "重庆市",
+      "folder": "ChongQingShi",
+      "status": "official_guide_no_public_blank_found",
+      "authority": "重庆市人力资源和社会保障局",
+      "scope": "重庆市",
+      "source_url": "https://rlsbj.cq.gov.cn/ztzl/zjskzcfwb/bmlqfwp/ldgxfw/202307/t20230728_12196045.html",
+      "allowed_domains": [
+        "cq.gov.cn"
+      ]
+    },
+    {
+      "province": "Sichuan",
+      "province_zh": "四川省",
+      "folder": "SiChuanSheng",
+      "status": "official_doc_templates",
+      "authority": "广元市劳动人事争议仲裁委员会",
+      "scope": "四川省广元市",
+      "source_url": "https://srsj.cngy.gov.cn/New/Detail/20241225150146727.html",
+      "allowed_domains": [
+        "cngy.gov.cn"
+      ],
+      "documents": [
+        {
+          "document_type": "application",
+          "display_name": "仲裁申请书",
+          "url": "https://srsj.cngy.gov.cn/Files/UploadFile/SiteFile/20160720104022026/2024/12/25/4efe364ab56c47edbe82b06a6e318800.doc",
+          "format": "doc",
+          "original_name": "仲裁申请书.doc",
+          "output_name": "劳动人事争议仲裁申请书.docx"
+        },
+        {
+          "document_type": "evidence",
+          "display_name": "证据材料清单",
+          "url": "https://srsj.cngy.gov.cn/Files/UploadFile/SiteFile/20160720104022026/2024/12/25/eb7f6346f5134677be3e9881f5395798.doc",
+          "format": "doc",
+          "original_name": "证据材料清单.doc",
+          "output_name": "证据清单.docx"
+        }
+      ]
+    },
+    {
+      "province": "Guizhou",
+      "province_zh": "贵州省",
+      "folder": "GuiZhouSheng",
+      "status": "official_application_only",
+      "authority": "贵州政务服务网（遵义市）",
+      "scope": "贵州省遵义市",
+      "source_url": "https://zwfw.guizhou.gov.cn/eptemp.aspx?areacode=520300&isapp=1&istest=1&orgcode=&otheritemcode=11520300560919015T352201412100001&t=Znzw.bszn.bsznIndex",
+      "allowed_domains": [
+        "guizhou.gov.cn"
+      ],
+      "documents": [
+        {
+          "document_type": "application",
+          "display_name": "仲裁申请书样式",
+          "url": "https://zwfw.guizhou.gov.cn/eptemp.aspx?areacode=520300&isapp=1&istest=1&orgcode=&otheritemcode=11520300560919015T352201412100001&t=Znzw.bszn.bsznIndex",
+          "format": "docx",
+          "output_name": "劳动人事争议仲裁申请书.docx",
+          "download_url_status": "needs_rediscovery",
+          "download_note": "公开发行只保留官方指南；原下载地址含不透明 token，不分发。维护时从本地区指南重新定位附件。"
+        }
+      ]
+    },
+    {
+      "province": "Yunnan",
+      "province_zh": "云南省",
+      "folder": "YunNanSheng",
+      "status": "official_combined_docx",
+      "authority": "昆明市呈贡区人力资源和社会保障局",
+      "scope": "云南省昆明市呈贡区",
+      "source_url": "https://m.kunming.cn/zhuanti/c/2022-11-18/13627563.shtml",
+      "allowed_domains": [
+        "kunming.cn"
+      ],
+      "documents": [
+        {
+          "document_type": "combined",
+          "display_name": "附录A（含仲裁申请书、证据清单）",
+          "url": "https://www.kunming.cn/zhuanti/upload/resources/file/2022/11/18/1232729.docx",
+          "format": "docx",
+          "output_name": "附录A（仲裁申请书和证据清单）.docx"
+        }
+      ]
+    },
+    {
+      "province": "Tibet",
+      "province_zh": "西藏自治区",
+      "folder": "XiZangZiZhiQu",
+      "status": "official_guide_no_public_blank_found",
+      "authority": "西藏自治区人力资源和社会保障厅",
+      "scope": "西藏自治区",
+      "source_url": "https://hrss.xizang.gov.cn/zcfg/ldgx/201807/t20180705_245567.html",
+      "allowed_domains": [
+        "xizang.gov.cn"
+      ]
+    },
+    {
+      "province": "Shaanxi",
+      "province_zh": "陕西省",
+      "folder": "ShaanXiSheng",
+      "status": "official_application_and_evidence_directory",
+      "authority": "西安高新技术产业开发区管理委员会、西安市劳动人事争议仲裁委员会高新派出庭",
+      "scope": "陕西省西安高新区",
+      "source_url": "https://xdz.xa.gov.cn/ztzl/ldhshbx/ywzn/1707311223297110018.html",
+      "allowed_domains": [
+        "xa.gov.cn"
+      ],
+      "documents": [
+        {
+          "document_type": "application",
+          "display_name": "劳动争议仲裁申请书",
+          "url": "https://xdz.xa.gov.cn/web_files/xdz/file/2023/10/07/202310071656206607970.docx",
+          "format": "docx",
+          "output_name": "劳动人事争议仲裁申请书.docx"
+        },
+        {
+          "document_type": "evidence",
+          "display_name": "证据目录",
+          "url": "https://xdz.xa.gov.cn/web_files/xdz/file/2023/10/16/202310161203311825151.xlsx",
+          "format": "xlsx",
+          "original_name": "证据目录.xlsx"
+        }
+      ]
+    },
+    {
+      "province": "Gansu",
+      "province_zh": "甘肃省",
+      "folder": "GanSuSheng",
+      "status": "official_application_only",
+      "authority": "白银市人力资源和社会保障局",
+      "scope": "甘肃省白银市",
+      "source_url": "https://www.baiyin.gov.cn/bmzq/bysrlzyhshbzj/zlxz/art/2022/art_b2a1334dedfb4ce398055d09ab01f182.html",
+      "allowed_domains": [
+        "baiyin.gov.cn"
+      ],
+      "documents": [
+        {
+          "document_type": "application",
+          "display_name": "劳动人事争议仲裁申请书",
+          "url": "https://www.baiyin.gov.cn/attach/old/byszf/rsj/file/ziliaoxiazai/2018-07-17/0fbc1f7198ee44db0a4f3e9ae1f611ef.docx",
+          "format": "docx",
+          "output_name": "劳动人事争议仲裁申请书.docx"
+        }
+      ]
+    },
+    {
+      "province": "Qinghai",
+      "province_zh": "青海省",
+      "folder": "QingHaiSheng",
+      "status": "official_guide_pdf_no_separate_blank_found",
+      "authority": "湟源县人民政府",
+      "scope": "青海省西宁市湟源县",
+      "source_url": "https://www.huangyuan.gov.cn/uploadfile/ueditor/file/20210201/1612166941186524.pdf",
+      "allowed_domains": [
+        "huangyuan.gov.cn"
+      ],
+      "documents": [
+        {
+          "document_type": "guide",
+          "display_name": "劳动人事争议仲裁办事指南",
+          "url": "https://www.huangyuan.gov.cn/uploadfile/ueditor/file/20210201/1612166941186524.pdf",
+          "format": "pdf",
+          "original_name": "劳动人事争议仲裁办事指南.pdf"
+        }
+      ]
+    },
+    {
+      "province": "Ningxia",
+      "province_zh": "宁夏回族自治区",
+      "folder": "NingXiaHuiZuZiZhiQu",
+      "status": "official_guide_no_public_blank_found",
+      "authority": "宁夏回族自治区人力资源和社会保障厅",
+      "scope": "宁夏回族自治区",
+      "source_url": "https://hrss.nx.gov.cn/xxgk/zcj/zcfg/zhld/202112/P020211201645957037883.pdf",
+      "allowed_domains": [
+        "nx.gov.cn"
+      ]
+    },
+    {
+      "province": "Xinjiang",
+      "province_zh": "新疆维吾尔自治区",
+      "folder": "XinJiangWeiWuErZiZhiQu",
+      "status": "official_application_only",
+      "authority": "新疆维吾尔自治区人力资源和社会保障厅",
+      "scope": "新疆维吾尔自治区",
+      "source_url": "https://rst.xinjiang.gov.cn/xjrst/c112702/201507/2ceb5217f67043c0b666eeb5b70e903e.shtml",
+      "allowed_domains": [
+        "xinjiang.gov.cn"
+      ],
+      "documents": [
+        {
+          "document_type": "application",
+          "display_name": "劳动（人事）争议仲裁申请书（范例）",
+          "url": "https://rst.xinjiang.gov.cn/xjrst/c112702/201507/2ceb5217f67043c0b666eeb5b70e903e/files/2020021419424910266a.docx",
+          "format": "docx",
+          "output_name": "劳动人事争议仲裁申请书（范例）.docx"
+        }
+      ]
+    }
+  ]
+}

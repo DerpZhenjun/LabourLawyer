@@ -6,29 +6,9 @@ from datetime import date
 from pathlib import Path
 
 from docx import Document
-from docx.enum.table import WD_ALIGN_VERTICAL
-from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml.ns import qn
-from docx.shared import Pt
-
-
-def _write_cell(cell, text: str, *, bold: bool = False, align=WD_ALIGN_PARAGRAPH.LEFT, size: int = 11):
-    """Replace a cell's text while preserving cell geometry and paragraph properties."""
-    paragraphs = cell.paragraphs
-    paragraph = paragraphs[0]
-    for extra in paragraphs[1:]:
-        cell._tc.remove(extra._p)
-    for child in list(paragraph._p):
-        if child.tag != qn("w:pPr"):
-            paragraph._p.remove(child)
-
-    run = paragraph.add_run(str(text or ""))
-    run.font.name = "仿宋_GB2312"
-    run._element.get_or_add_rPr().rFonts.set(qn("w:eastAsia"), "仿宋_GB2312")
-    run.font.size = Pt(size)
-    run.bold = bold
-    paragraph.alignment = align
-    cell.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
+from docx.oxml import OxmlElement
+from WenShu.template_fill import date_parts, replace_text, set_cell_text
 
 
 def _format_date(value: str) -> str:
@@ -37,11 +17,6 @@ def _format_date(value: str) -> str:
         return f"{parsed.year}年{parsed.month}月{parsed.day}日"
     except (TypeError, ValueError):
         return str(value or "")
-
-
-def _household_options(selected: str) -> str:
-    options = ["本省非农业户口", "本省农业户口", "外省非农业户口", "外省农业户口", "港澳台人员", "外籍人员"]
-    return "  ".join(f"{'√' if item == selected else ' '} {item}" for item in options)
 
 
 def _keep_worker_form_only(doc):
@@ -71,45 +46,64 @@ def generate_LAdocx(data: dict, template_docx: str | Path):
     if not requests and not any(str(data.get(key, "")).strip() for key in content_fields):
         return doc
 
-    _write_cell(table.rows[1].cells[1], data.get("applicantName", ""))
-    _write_cell(table.rows[1].cells[4], _format_date(data.get("birthDate", "")), align=WD_ALIGN_PARAGRAPH.CENTER)
-    _write_cell(table.rows[2].cells[1], data.get("gender", ""), align=WD_ALIGN_PARAGRAPH.CENTER)
-    _write_cell(table.rows[2].cells[4], data.get("nationality", ""), align=WD_ALIGN_PARAGRAPH.CENTER)
-    _write_cell(table.rows[3].cells[1], data.get("idNumber", ""))
-    _write_cell(table.rows[3].cells[4], data.get("phone", ""), align=WD_ALIGN_PARAGRAPH.CENTER)
+    set_cell_text(table.rows[1].cells[1], data.get("applicantName", ""))
+    set_cell_text(table.rows[1].cells[4], _format_date(data.get("birthDate", "")))
+    set_cell_text(table.rows[2].cells[1], data.get("gender", ""))
+    set_cell_text(table.rows[2].cells[4], data.get("nationality", ""))
+    set_cell_text(table.rows[3].cells[1], data.get("idNumber", ""))
+    set_cell_text(table.rows[3].cells[4], data.get("phone", ""))
     if data.get("householdType"):
-        _write_cell(table.rows[4].cells[1], _household_options(data.get("householdType", "")), size=9)
-    _write_cell(table.rows[5].cells[2], data.get("idAddress", ""))
+        options = table.rows[4].cells[1].paragraphs
+        selected = data["householdType"]
+        for paragraph in options:
+            if selected in paragraph.text:
+                replace_text(paragraph, selected, "√" + selected)
+    set_cell_text(table.rows[5].cells[2], data.get("idAddress", ""))
 
-    _write_cell(table.rows[7].cells[2], data.get("respondentName", ""))
-    _write_cell(table.rows[8].cells[2], data.get("socialCreditCode", ""))
-    _write_cell(table.rows[9].cells[2], data.get("registeredAddress", ""))
-    _write_cell(table.rows[10].cells[2], data.get("mailingAddress", ""))
-    _write_cell(table.rows[11].cells[2], data.get("workAddress", ""))
-    _write_cell(table.rows[12].cells[2], data.get("legalRepName", ""))
-    _write_cell(table.rows[12].cells[4], data.get("legalRepPhone", ""), align=WD_ALIGN_PARAGRAPH.CENTER)
-    _write_cell(table.rows[13].cells[2], data.get("legalRepName", ""))
-    _write_cell(table.rows[13].cells[4], data.get("legalRepPosition", ""), align=WD_ALIGN_PARAGRAPH.CENTER)
-    _write_cell(table.rows[14].cells[2], data.get("companyContact", ""))
-    _write_cell(table.rows[14].cells[4], data.get("companyContactPhone", ""), align=WD_ALIGN_PARAGRAPH.CENTER)
+    set_cell_text(table.rows[7].cells[2], data.get("respondentName", ""))
+    set_cell_text(table.rows[8].cells[2], data.get("socialCreditCode", ""))
+    set_cell_text(table.rows[9].cells[2], data.get("registeredAddress", ""))
+    set_cell_text(table.rows[10].cells[2], data.get("mailingAddress", ""))
+    set_cell_text(table.rows[11].cells[2], data.get("workAddress", ""))
+    set_cell_text(table.rows[12].cells[2], data.get("legalRepName", ""))
+    set_cell_text(table.rows[12].cells[4], data.get("legalRepPhone", ""))
+    set_cell_text(table.rows[13].cells[2], data.get("legalRepName", ""))
+    set_cell_text(table.rows[13].cells[4], data.get("legalRepPosition", ""))
+    set_cell_text(table.rows[14].cells[2], data.get("companyContact", ""))
+    set_cell_text(table.rows[14].cells[4], data.get("companyContactPhone", ""))
 
     for offset, row_index in enumerate((16, 17, 18, 19)):
         if offset < len(requests):
-            _write_cell(table.rows[row_index].cells[0], f"{offset + 1}．{requests[offset]}", size=11)
+            paragraph = table.rows[row_index].cells[0].paragraphs[0]
+            if row_index == 19:
+                replace_text(paragraph, "……", f"4、{requests[offset]}")
+            else:
+                paragraph.runs[0].text += requests[offset]
 
-    _write_cell(table.rows[21].cells[0], data.get("factsReason", ""), size=11)
+    set_cell_text(table.rows[21].cells[0], data.get("factsReason", ""))
+    # The paper form reserves several blank handwriting lines. Typed content
+    # expands naturally from the original single-line minimum instead.
+    table.rows[21].height=table.rows[16].height
 
-    apply_date = _format_date(data.get("applicationDate", "")) or "    年   月   日"
-    footer = (
-        "此致\n敬礼\n"
-        f"{data.get('committeeName', '')}\n"
-        f"申请人：{data.get('applicantName', '')}\n"
-        f"{apply_date}\n"
-        f"附：申请书副本 {data.get('copyCount', 1)} 份。\n"
-        "注：1.申请书应用黑色钢笔、中性笔书写或打印。\n"
-        "2.申请人应同时提交身份证复印件或其他身份证件。\n"
-        "3.事实与理由部分空格不够用时，可用A4纸续加中页。\n"
-        "4.申请书副本份数，应按对方当事人人数提交。"
-    )
-    _write_cell(table.rows[22].cells[0], footer, size=10)
+    footer = table.rows[22].cells[0].paragraphs
+    committee = str(data.get("committeeName", ""))
+    suffix = "劳动人事争议仲裁委员会"
+    if committee:
+        if committee.endswith(suffix):
+            footer[2].runs[1].text = committee[:-len(suffix)]
+        else:
+            footer[2].runs[1].text = committee
+            footer[2].runs[2].text = ""
+    # Leave the official signature slot for handwriting.
+    year, month, day = date_parts(data.get("applicationDate", ""))
+    if year and month and day:
+        replace_text(footer[4], "年   月    日", f"{year}年   {month}月    {day}日")
+    footer[3].paragraph_format.keep_with_next=True
+    tr_pr=table.rows[22]._tr.get_or_add_trPr()
+    if tr_pr.find(qn('w:cantSplit')) is None:tr_pr.append(OxmlElement('w:cantSplit'))
+    replace_text(footer[5], "      份", f"  {data.get('copyCount', 1)}   份")
+    if len(requests)>4:
+        raise ValueError("浙江官方模板最多容纳4项请求，请合并相关请求或附续页")
+    for index in range(19,15+len(requests),-1):
+        table._tbl.remove(table.rows[index]._tr)
     return doc

@@ -67,6 +67,16 @@ class GuangdongOfficialTemplateTests(unittest.TestCase):
         self.assertIn("广州测试有限公司", text)
         self.assertIn("请求支付拖欠工资15000元", text)
         self.assertIn("广州市劳动人事争议仲裁委员会", text)
+        parties = document.tables[0]
+        self.assertIn("1990年", parties.rows[0].cells[7].text)
+        self.assertIn("月", parties.rows[0].cells[7].text)
+        self.assertIn("□以《当事人有效送达地址确认书》为准", parties.rows[3].cells[1].text)
+        self.assertIn("☑其他：广东省广州市收件地址", parties.rows[3].cells[1].text)
+        facts = document.tables[2]
+        self.assertIn("☑每周工作5天，每天工作8小时", facts.rows[4].cells[1].text)
+        self.assertIn("☑转账", facts.rows[5].cells[7].text)
+        self.assertIn("☑不需签收", facts.rows[5].cells[10].text)
+        self.assertIn("5000元/月", facts.rows[9].cells[8].text)
 
     def test_blank_application_returns_official_template(self):
         document = generate_LAdocx(
@@ -99,8 +109,11 @@ class GuangdongOfficialTemplateTests(unittest.TestCase):
         text = "\n".join(cell.text for row in table.rows for cell in row.cells)
         text += "\n" + "\n".join(paragraph.text for paragraph in document.paragraphs)
         self.assertIn("证据10", text)
-        self.assertIn("测试申请人", text)
+        self.assertNotIn("测试申请人", text)
         self.assertIn("2026年9月16日", text)
+        footer = document.paragraphs[3]
+        self.assertNotIn("测试申请人", footer.text)
+        self.assertIn("提交时间：2026年9月16日", footer.text)
 
     def test_blank_evidence_list_returns_official_template(self):
         document = generate_ELdocx(
