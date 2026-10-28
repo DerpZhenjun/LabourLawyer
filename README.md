@@ -1,146 +1,143 @@
 # LabourLawyer
 
-面向普通劳动者的劳动仲裁文书与办事助手。
+**选地区，填信息，生成劳动仲裁文书。**
 
-LabourLawyer 按省份提供劳动人事争议仲裁申请书、证据清单和官方办理指南。用户无需理解复杂法律术语，只需选择办理地区、按照提示填写事实和诉求，即可生成对应地区格式的 Word 文书，并前往当地政务平台提交申请。
+面向普通劳动者的文书与办事助手。填写仲裁申请书、整理证据清单，再查看当地官方材料要求和提交方式。无需先创建案件或学习管理系统。
 
-> 本项目提供文书和办事信息辅助，不替代执业律师的正式法律意见。办理材料、受理条件和提交方式以当地劳动人事争议仲裁委员会的最新要求为准。
+![首页：统一省份卡片与地区入口](docs/images/home.png)
 
-## 核心流程
+> 本平台是劳动仲裁辅助工具，**不是官方政务服务网站**。文书不保证被受理；管辖、材料和受理条件以当地仲裁机构的最新判断为准。
 
-1. 选择实际工作地或用人单位所在地。
-2. 选择生成仲裁申请书或证据清单。
-3. 按通俗提示填写当事人信息、仲裁请求和证据。
-4. 确认内容并下载 Word 文书。
-5. 查看当地办理指南，前往官方政务平台申请。
+## 从填写到提交
 
-## 当前能力
+1. 选择省、市、区县或功能区。办理地区须结合工作地、用人单位所在地等确认，不能只按户籍选择。
+2. 选择申请书或证据清单。表单提供明确标注的虚构示例，正式使用前替换为自己的信息。
+3. 证据从一项开始，按需添加。生成前可确认或取消，确认后下载 Word 文书。
+4. 查看当地材料份数、窗口地址和办理方式。核实的官方入口提供跳转；登录或验证码由用户在官网自行完成。
 
-- 全国 31 个省级地区入口与搜索。
-- 浙江、广东官方格式的仲裁申请书和证据清单生成。
-- 浙江、广东、江苏、辽宁、福建官方办理入口与流程说明。
-- 表单草稿自动保存、必填项提示和生成前确认。
-- 空白表单也可直接下载官方模板。
-- AI 劳动法律顾问，支持本地 Ollama 模型和多轮对话。
-- 法律数字人入口。
-- 群众服务首页与管理后台分离。
-- Web、Android、微信小程序及可选桌面客户端工程。
+![文书填写：通俗字段、虚构示例和来源提示](docs/images/document-form.png)
 
-未完成专用模板适配的地区会明确显示“适配中”，不会套用其他省份模板。
+支持未填完整时生成参考文书，提交前仍需补齐材料。官方空白模板、官方样例和平台辅助文书分别标注，不把样例冒充空白表格。
 
-## 项目结构
+## 每个地区，使用自己的来源
 
-```text
-backend/          FastAPI 接口、文书生成和管理平台数据
-frontend/         Vue 3 群众服务网页与管理后台
-llm_service/      独立的本地大模型问答服务逻辑
-templates_docx/   按省份分类的官方 Word 模板
-mobile/           Capacitor Android 应用
-miniprogram/      微信小程序
-desktop/          可选 Electron 桌面客户端
-ChatVRM/          法律数字人页面
-scripts/          启动、停止和手机安装脚本
-```
+系统按具体地区匹配事项、办理机关、材料和附件，保留官方链接、采集时间、核验状态及文件 SHA-256。切换地区重新查询；没有当地来源时显示待核验，不继承相邻地区的数据。
+
+![当地办理指南：窗口提示、材料与官方来源](docs/images/local-guide.png)
+
+**公开发行数据更新于 2026-10-28。全国区县尚未完成。**
+
+| 范围 | 当前实际状态 |
+|---|---|
+| 省级入口 | 中国大陆 31 个省级地区；入口存在不代表指南已核验 |
+| 地区目录 | 3,599 条区县或功能区来源记录，涉及 3,586 个精确地区名称组合；不是全国功能区完整普查 |
+| 已发布当地指南 | 181 地：四川 179、江苏 2 |
+| 已发布当地填写生成 | 166 地：四川 164；江苏锡山区、建湖县各自的官方空白文书 |
+| 仅指南、未开放当地生成 | 15 地 |
+| 未发布候选 | 23 地，均不计入上线覆盖 |
+| 历史省级文书 | 保留独立入口，须另核对适用范围，不计入区县完成数 |
+
+本轮新增滨海县、响水县、杭州市上城区和滨江区的独立资料。滨江区材料栏与流程冲突，保留待核验；临平区搜索落到市本级的结果未作为该区指南。新候选未完成网页验收，未发布。没有任何省份被标记为“全区县完成”。
+
+运行后在 `/admin/regions` 查看实时矩阵。仓库中可核对 [公开数据版本](data/public-regions/manifest.json)、[候选登记](config/regional_candidates.json) 与 [地区接入说明](docs/regional-release.md)。
+
+## 网页、Android 与小程序
+
+| 客户端 | 使用方式与边界 |
+|---|---|
+| 网页 | Vue 3 + Vite；精确地区选择、当地填写、指南与管理页面 |
+| Android | Capacitor 复用网页前端；需构建和安装，可通过 USB 调试安装 |
+| 微信小程序 | 原生小程序工程；已有省级文书填写、下载和指南，区县能力与网页尚未完全对齐 |
+| Windows 桌面 | 可选 Electron 工程；开发模式不等于已发布安装包 |
+
+<img src="docs/images/mobile-form.png" alt="手机窄屏文书填写，字段单列排列" width="320" />
+
+截图来自实际网页，信息均为虚构示例。窄屏网页截图不作为 Android 或微信真机验收证明。
 
 ## 快速启动
 
-### Windows 一键启动
+### Windows
 
-双击根目录的 `start-web.bat`。首次运行会自动准备依赖，随后启动：
-
-- 群众服务网页：`http://127.0.0.1:5173`
-- 后端接口：`http://127.0.0.1:8000`
-- API 文档：`http://127.0.0.1:8000/docs`
-- 法律数字人：`http://127.0.0.1:3000`
-
-停止全部本地服务时双击 `stop-web.bat`。日志保存在 `.runtime/`。
-
-更完整的网页、Android 和微信小程序操作步骤见 [启动与使用说明](./启动与使用说明.md)。
-
-### Android USB 安装
-
-1. 手机开启开发者选项和 USB 调试，并允许当前电脑调试。
-2. 保持 `start-web.bat` 启动的服务运行。
-3. 双击 `install-mobile.bat`。
-
-脚本会构建最新网页资源、生成 APK、设置 USB 端口转发、安装并打开应用。生成的调试 APK 位于 `mobile/android/app/build/outputs/apk/debug/app-debug.apk`。
-
-### 微信小程序
-
-使用微信开发者工具导入 `miniprogram/`。发布前需要配置正式 AppID、HTTPS API 地址及微信公众平台的 `request` 合法域名。
-
-## 文书模板
-
-模板统一放在仓库根目录：
-
-```text
-templates_docx/
-├─ ZheJiangSheng/
-└─ GuangDongSheng/
-```
-
-浙江使用带书名号的官方申请书和证据清单文件；广东使用 `仲裁申请书.docx` 和 `证据清单.docx`。如需使用其他模板目录，可设置 `LABOURLAWYER_TEMPLATE_DIR`。
-
-## AI 法律顾问
-
-AI 默认连接本机 Ollama。推荐安装兼顾响应速度和本地资源占用的模型：
+准备 Git、Python 3.11 和 Node.js 22.12+（或兼容 Vite 7 的版本）。Android 构建另需 JDK、Android SDK。
 
 ```powershell
-ollama pull qwen3.5:4b
-ollama serve
+git clone https://github.com/DerpZhenjun/Partlawyer-LAA.git
+cd Partlawyer-LAA
+.\start.bat web
 ```
 
-可通过 `backend/.env` 调整：
+也可双击 `start.bat` 打开统一菜单。首次启动会安装缺少的依赖，前后端由同一入口管理，日志位于 `.runtime/`。关闭浏览器不会自动停止服务。
 
-```dotenv
-OLLAMA_API_BASE=http://127.0.0.1:11434
-LABOURLAWYER_LLM_MODEL=ollama/qwen3.5:4b
-LABOURLAWYER_LLM_REASONING=none
-LABOURLAWYER_LLM_MAX_TOKENS=1200
+- 网页：<http://127.0.0.1:5173/>
+- 地区管理：<http://127.0.0.1:5173/admin/regions>
+- API 文档：<http://127.0.0.1:8000/docs>
+
+```powershell
+.\start.bat stop
+.\start.bat android-open
+.\scripts\install-mobile.ps1
+.\start.bat mini
 ```
 
-模型回答仅用于信息梳理。涉及仲裁请求、金额、时效和重要程序选择时，应结合原始材料并向当地仲裁委员会、12333 或执业律师核实。
+客户端前置条件见 [三端使用说明](docs/client-guide.md)。小程序使用微信开发者工具，Android 使用 Android Studio / Capacitor。HBuilderX 可以编辑前端，但不是这两个客户端的运行、打包工具。
+
+### 手动启动
+
+```bash
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+source .venv/bin/activate
+pip install -r backend/requirements-api.txt
+python scripts/bootstrap-public-data.py
+python -m uvicorn app:app --app-dir backend --host 127.0.0.1 --port 8000
+```
+
+另开终端启动网页：
+
+```bash
+cd frontend
+npm ci
+npm run dev -- --host 127.0.0.1
+```
+
+首次启动仅向空的公共指南、地区目录库导入经 SHA-256 校验的发行快照；已有数据不覆盖，不操作案件库。附件缺失或适配身份不匹配时关闭对应生成能力。源码不包含个人案件数据库、登录会话或模型文件。
+
+**生成文书不依赖大模型。** AI 法律信息问答与数字人为可选模块，需另行配置可用服务；远程地址由部署者核对，不需要为了生成 Word 启动或下载模型。
 
 ## 开发与验证
 
-后端文书测试：
-
-```powershell
-.\.venv\Scripts\python.exe -m unittest discover -s backend/tests -v
+```bash
+python -m unittest discover -s backend/tests
+node scripts/test-document-clients.cjs
+node scripts/test-regional-blank-fields.mjs
+npm --prefix frontend run build
 ```
 
-前端生产构建：
+测试使用临时数据库和虚构信息，不提交真实申请。部分封存采集含官方登录跳转上下文，只留在采集机器；公开克隆会明确跳过对应本地集成测试，不伪造替代证据。构建成功不能代替文书版式和浏览器验收。
 
-```powershell
-npm run build --prefix frontend
+`scripts/verify-*.mjs` 使用 Chrome DevTools MCP；设置 `CHROME_DEVTOOLS_MCP_PATH` 为本机安装入口后执行。README 图片由 `scripts/capture-readme.mjs` 实拍。
+
+## 目录
+
+```text
+frontend/            群众网页、地区选择、文书与管理界面
+backend/             FastAPI、文书适配、精确地区库与来源核验
+templates/_docx/     按省份或具体地区保存的官方原始附件
+config/              表单、官方来源目录和候选登记
+data/public-regions/ 不含个人资料的公共发行快照
+llm_service/         可选 AI 问答
+ChatVRM/             可选数字人
+mobile/              Android / Capacitor
+miniprogram/         微信原生小程序
+desktop/             Electron
+scripts/             启动、采集、维护与验收
+docs/                使用说明与实际页面截图
 ```
 
-Android 同步与构建：
+## 新增区县
 
-```powershell
-npm run sync --prefix mobile
-cd mobile/android
-.\gradlew.bat assembleDebug
-```
+访问该地区自己的官方事项指南，核对机关、事项与适用范围，展开材料和办理方式，逐一下载公开附件并保存来源和 SHA-256。缺少模板保持缺失，不用其他地区文件替代。
 
-## 官方办理入口
+适配须验证地区、事项、附件编号、路径和摘要，在独立测试库检查生成结果，逐页检查文书，并验收桌面和手机宽度的真实网页。通过后才增量发布和导出公共快照。
 
-- [国家 12333 公共服务平台](https://www.12333.gov.cn/)
-- [浙江政务服务网·劳动人事争议仲裁申请](https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=2510b7af-2402-4502-837c-14eb4a71177d)
-- [广东政务服务网·劳动人事争议仲裁申请](https://www.gdzwfw.gov.cn/portal/v3/guide/11440000553612461J244211105N00302)
-- [江苏政务服务劳动争议专题](https://www.jszwfw.gov.cn/col/col172703/index.html)
-- [辽宁政务服务劳动人事争议仲裁申请](https://center.lnzwfw.gov.cn/api/web/matter/getContent?id=65dbb98b-35ef-47a5-b7ff-1a4f5c914e11)
-- [福建省人社厅劳动仲裁办事指南](https://www.fujian.gov.cn/nrrh/srst/202509/t20250910_7003551.htm)
-
-## 上线前检查
-
-- 使用 HTTPS 并将跨域来源限制为正式域名。
-- 为身份证号、电话、住址和证据文件提供加密、删除和备份机制。
-- 接入身份认证、权限控制、租户隔离和审计日志。
-- 定期核验各地区模板、办理链接、材料要求和更新时间。
-- 使用正式 Android 签名生成 release APK/AAB。
-- 完成隐私政策、用户协议、数据处理说明及必要的合规评估。
-
-## License
-
-[MIT](./LICENSE)
+OpenClaw 记录公开采集问题；不可用时持久化为 `PENDING_OPENCLAW`，有真实回执后才标记同步。不得上传身份信息、真实文书或凭据。详情见 [地区接入与发行说明](docs/regional-release.md)。
