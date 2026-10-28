@@ -1,11 +1,12 @@
 /** Editable fields must follow the selected form; hidden examples never submit. */
 const ZHEJIANG='zhejiang_own_blank_v1'
+export const isZhejiangBlankAdapter=adapter=>[ZHEJIANG,'zhejiang_shangcheng_own_blank_v1'].includes(adapter)
 export function regionalApplicationFields(base,isBlank,adapter){
-  if(adapter===ZHEJIANG)return base.filter(f=>!['currentAddress','applicantMailingAddress','applicantPostalCode'].includes(f.key))
+  if(isZhejiangBlankAdapter(adapter))return base.filter(f=>!['currentAddress','applicantMailingAddress','applicantPostalCode'].includes(f.key))
   return isBlank?base.filter(f=>!['nationality','currentAddress','applicantPostalCode'].includes(f.key)).map(f=>f.key==='idAddress'?{...f,label:'居住地址'}:f):base
 }
 export function regionalExtraFields(jsFields,adapter){
-  if(adapter!==ZHEJIANG)return jsFields
+  if(!isZhejiangBlankAdapter(adapter))return jsFields
   return [{key:'householdType',label:'户口类型（按原表填写）',max:50},
     {key:'socialCreditCode',label:'公司统一社会信用代码',max:50},
     {key:'mailingAddress',label:'公司的通讯地址'},

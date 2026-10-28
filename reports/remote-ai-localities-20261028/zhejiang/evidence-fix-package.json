@@ -1,0 +1,14 @@
+{
+  "source_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+  "generated": "evidence-synthetic-fixed.docx",
+  "generated_sha256": "6ed2c4f39b27de54a3d2fd1733ee67c1336cb5ee7c4fcc19ac6082e929192cef",
+  "changed_package_parts": [
+    "word/document.xml"
+  ],
+  "supersedes": "evidence-synthetic.docx",
+  "fixes": [
+    "case label remains 案号",
+    "repeat original header rows",
+    "do not split evidence records across pages"
+  ]
+}

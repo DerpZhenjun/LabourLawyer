@@ -13,6 +13,7 @@ from regional_adapters import checked_reference_adapter
 from regional_blank_documents import fill_blank_document, ADAPTER as BLANK_ADAPTER
 from regional_rongjiang_documents import fill_rongjiang_document, ADAPTER as RONGJIANG_ADAPTER
 from regional_zhejiang_documents import fill_zhejiang_document,ADAPTER as ZHEJIANG_ADAPTER
+from regional_shangcheng_documents import fill_shangcheng_document,ADAPTER as SHANGCHENG_ADAPTER
 from regional_directory import DirectoryStore
 from regional_rollout import build_rollout_status, directory_rows, load_rollout_candidates
 from routes.province_documents import ApplicationRequest, EvidenceRequest, _response
@@ -157,13 +158,15 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
     try:adapter=checked_reference_adapter(g,t,payload.kind)
     except ValueError as exc:raise HTTPException(409,str(exc)) from exc
     try:
-        model=(BlankApplicationRequest if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER} else ApplicationRequest) if payload.kind=='application' else EvidenceRequest
+        model=(BlankApplicationRequest if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER} else ApplicationRequest) if payload.kind=='application' else EvidenceRequest
         data=model.model_validate(payload.data)
     except ValidationError as exc:
         raise HTTPException(422,'填写内容过长或格式不正确，请缩短后重试') from exc
-    if adapter in {BLANK_ADAPTER,RONGJIANG_ADAPTER,ZHEJIANG_ADAPTER} and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
+    if adapter in {BLANK_ADAPTER,RONGJIANG_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER} and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
     try:
-        if adapter==ZHEJIANG_ADAPTER:
+        if adapter==SHANGCHENG_ADAPTER:
+            doc=fill_shangcheng_document(g,t,payload.kind,checked_path(t),data.model_dump())
+        elif adapter==ZHEJIANG_ADAPTER:
             doc=fill_zhejiang_document(g,t,payload.kind,checked_path(t),data.model_dump())
         elif adapter==RONGJIANG_ADAPTER:
             doc=fill_rongjiang_document(g,t,payload.kind,checked_path(t),data.model_dump())
@@ -171,9 +174,9 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
             doc=fill_blank_document(g,t,payload.kind,checked_path(t),data.model_dump())
         else:doc=fill_tianfu_reference(checked_path(t),payload.kind,data.model_dump())
     except ValueError as exc:raise HTTPException(409,str(exc)) from exc
-    suffix=('-依据官方DOC转换填写.docx' if adapter==RONGJIANG_ADAPTER else '-官方空白表格填写.docx' if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER} else '-参考样表辅助填写.docx')
+    suffix=('-依据官方DOC转换填写.docx' if adapter==RONGJIANG_ADAPTER else '-官方空白表格填写.docx' if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER} else '-参考样表辅助填写.docx')
     name=g['district']+('申请书' if payload.kind=='application' else '证据清单')+suffix
     response=_response(doc,name,background_tasks)
-    response.headers['X-Document-Origin']=('official-blank-converted-filled' if adapter==RONGJIANG_ADAPTER else 'official-blank-filled' if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER} else 'official-sample-adaptation-not-blank')
+    response.headers['X-Document-Origin']=('official-blank-converted-filled' if adapter==RONGJIANG_ADAPTER else 'official-blank-filled' if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER} else 'official-sample-adaptation-not-blank')
     response.headers['X-Guide-Source-ID']=g['source_id']
     return response

@@ -57,8 +57,9 @@ class DocumentFieldRegressions(unittest.TestCase):
         for index,fields in INLINE['JiangSuSheng'].items():
             for label,key in fields:
                 if x.get(key):
-                    self.assertIn(value(x,key),ps[index].text,key)
-                    target=next(r for r in ps[index].runs if value(x,key)==r.text.strip())
+                    expected=x[key] if key=='birthDate' else value(x,key)
+                    self.assertIn(expected,ps[index].text,key)
+                    target=next(r for r in ps[index].runs if expected==r.text.strip())
                     self.assertTrue(target.underline,key)
         facts=next(p for p in ps if p.text.startswith('事实与理由'))
         self.assertEqual(facts.text,'事实与理由：'+x['factsReason'])

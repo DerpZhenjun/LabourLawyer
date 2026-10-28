@@ -1,0 +1,499 @@
+{
+  "scope": "unpublished Anhui Hefei Luyang own-source evidence",
+  "files": [
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/browser-actions.jsonl",
+      "sha256": "a7f9041e4b7ce2a6f4ad42b98e42c89e03255d5788fde0ae0c6591861936e707",
+      "bytes": 13714
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/build_candidate.py",
+      "sha256": "036d601ad37457f94519f1918fde05d9a562f504c85146afc02062d2cd81cc80",
+      "bytes": 11735
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/collect.py",
+      "sha256": "794a8bf56537b91756b1a8a6f9eecbce749e023c9656ad17b32a2857f1f1d5e4",
+      "bytes": 4961
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/download_originals.py",
+      "sha256": "1af5c174bea1539ecd1dfec16068974c6e691565942cb08328b7a8e086dcb770",
+      "bytes": 4412
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/application-notice-hover/dom.json",
+      "sha256": "68826cfe33611bcda78b93b95cf9bec0ffa901a6a158acffe6aaec127ca9089a",
+      "bytes": 202540
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/application-notice-hover/page.png",
+      "sha256": "115663cfc3a412c7b2ded9a4aa29c0291206121b9f1169bbcc0d83f9f41cea5e",
+      "bytes": 183231
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/application-notice-hover/provenance.json",
+      "sha256": "9a07bb0eb2af16ac6bdecf52dd5130108ab77a2b472864f02bf288ffea5af984",
+      "bytes": 1084
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/application-notice-hover/rendered.json",
+      "sha256": "0eaff8e55109d7e600bd0378d21d2d3f47fc9df526e47cfeb4b4147ae5972f08",
+      "bytes": 6793
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/application-notice-hover/snapshot.json",
+      "sha256": "e8999c99971cdf7aace794a9bcaa23d243951c82d2b1996b54cd9542c156195b",
+      "bytes": 25593
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "bytes": 224267
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/basic/page.png",
+      "sha256": "d29767ee53cb85a3415933548f308247d25241b8fbb0d63dd7c6593dc81225de",
+      "bytes": 162948
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/basic/provenance.json",
+      "sha256": "819f37aa320579d39514de6ab1ed5231a795b1720663909e7f0366b6ae716919",
+      "bytes": 1009
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/basic/rendered.json",
+      "sha256": "907cd427b650658fffdc2eb31e1d75cee8b8e70fd47a18a0e06652083f08bc42",
+      "bytes": 15627
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/basic/snapshot.json",
+      "sha256": "272abc749eee9369e23f168cfce46ce78a26c8d4fe0c471693e786a80bc6cdd2",
+      "bytes": 43138
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/blank-panel/dom.json",
+      "sha256": "c86bdeea3115149a99dc51d6c2fa80068defc9ed8d48fda13c85b2688da9a595",
+      "bytes": 201855
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/blank-panel/page.png",
+      "sha256": "8ad12595739c6eecce061b33e4d2c27efc6a1214e2230dd32ef9cf1801ebfc1c",
+      "bytes": 180193
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/blank-panel/provenance.json",
+      "sha256": "23980a36c623dda77b3d6409ea8175da3b97b3dc12644ba2adda27a60906b8f0",
+      "bytes": 1032
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/blank-panel/rendered.json",
+      "sha256": "9e199948c4592020aa7fad7ca8bdbf76f2bff3f13918db85624ebe8d120c0751",
+      "bytes": 6630
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/blank-panel/snapshot.json",
+      "sha256": "64658b1c661bc9d37f00281e66eced0887f30232f74976acb343c4274c4654e3",
+      "bytes": 25297
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/conditions-success/dom.json",
+      "sha256": "911a3aad7a0fbb1de879630c6f8430ec7a994068597c7044955de4f8c2a4fff3",
+      "bytes": 189480
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/conditions-success/page.png",
+      "sha256": "3d731c88963a449bf410956606836016b6fb1c01ba74fbd66274ade47634de71",
+      "bytes": 136712
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/conditions-success/provenance.json",
+      "sha256": "fa978a5208208e161dcaee2ad35999d7d90593c355b4e7d8b82be889c7e05eb4",
+      "bytes": 1060
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/conditions-success/rendered.json",
+      "sha256": "596cb446a6809ba520b47113160794bffe76d86dd8a4dc6586cf43f8ceefb695",
+      "bytes": 4697
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/conditions-success/snapshot.json",
+      "sha256": "c58de33e9f79f933449518203cdfbeddddfb11b5280381222db1bcbefb192876",
+      "bytes": 18275
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/detail-application/dom.json",
+      "sha256": "3723a28c7e4d2266101912f608be8ec6e6ab680000f3941c6f41faed07ff7c60",
+      "bytes": 202101
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/detail-application/page.png",
+      "sha256": "f75a2e35493ccd163e97becc7e39e560a5a6b6cde5fb6c9cd32f7adb4214a31a",
+      "bytes": 194190
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/detail-application/provenance.json",
+      "sha256": "0d3624a9cfeaa428f55e3bd524a323f2360dbeb46cf6d8fccf7e31cc4547033c",
+      "bytes": 1060
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/detail-application/rendered.json",
+      "sha256": "8251e11e84a486760e730c26da0d5e08d10501fa615edc2220d6eb2043027ec1",
+      "bytes": 7071
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/detail-application/snapshot.json",
+      "sha256": "8a9263735fb70dca2052aaf751a39864695842c51dfb697d784c377db5baca4b",
+      "bytes": 26545
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/detail-evidence/dom.json",
+      "sha256": "2e2e26cd2382a36665a0ee4a37770c43b0e4f3977e08485a6f288d676cb1b1d4",
+      "bytes": 202701
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/detail-evidence/page.png",
+      "sha256": "f7c71d7ea4e74d78e59455df059a0c83c374f95f5765ddbd078397e306aeb4f2",
+      "bytes": 204369
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/detail-evidence/provenance.json",
+      "sha256": "76c97cdc4c701f1e56319e86a9b8c9ccef68cfe0be94965a778283a62d0f6ba6",
+      "bytes": 1048
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/detail-evidence/rendered.json",
+      "sha256": "6bba0dabb1f61587bdb8d082e9ff7e895dacf533272393e5917338420bfdc773",
+      "bytes": 7399
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/detail-evidence/snapshot.json",
+      "sha256": "32273242f384e33882ce1447ac799677900abfed587057ae09dc16de7dfcadd0",
+      "bytes": 26890
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/detail-id/dom.json",
+      "sha256": "c4c545de78e1dadbb0dfc89167802bd2a1a021dd4f24c960e7aa5f274c39033a",
+      "bytes": 202041
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/detail-id/page.png",
+      "sha256": "6d12ae73a0340e384e549cb6db490d95357ef528f40a131b756883aa5c025581",
+      "bytes": 194106
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/detail-id/provenance.json",
+      "sha256": "7ee344c6dfdaa40cd27a6852018f56f0f4dc0791e50020612438999255aee795",
+      "bytes": 1024
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/detail-id/rendered.json",
+      "sha256": "d596ec89822636ccb0ad7a7c68af2146d0a280f25aa2bb35ed099e77ceb532a6",
+      "bytes": 7071
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/detail-id/snapshot.json",
+      "sha256": "77a7b82d23e8d4dca6528517d78a1f77b1d08f93f48750379af3824c7addf84c",
+      "bytes": 26562
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/downloads/ff8080819b0b50f201a0477964527fe9-劳动人事争议仲裁申请书.doc",
+      "sha256": "9184dcf8f7249b050e70eee023bc23bc392d9f2c4bca9247f87d25d8faae71e3",
+      "bytes": 17920
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/downloads/ff8080819b0b50f201a0477964567ff9-劳动人事争议仲裁申请书.doc",
+      "sha256": "64b9d92ded0bc0ecdc111a00f71b703d3948dfe3dd52b1d3dbf34d6411d04ed1",
+      "bytes": 18432
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/downloads/ff8080819b0b50f201a0477964590005-劳动人事争议仲裁申请-办理流程图.png",
+      "sha256": "41df10d6bbd29651becb29596e28fecd404141fbcb0c2332da8d45c0122ec0ac",
+      "bytes": 36210
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/downloads/manifest.json",
+      "sha256": "bbb092b0489ebd4ce8130adfc3037941831f26d3ac222776cd5572cc286ae344",
+      "bytes": 5370
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/faq/dom.json",
+      "sha256": "002d52dd65f83a97fd6dbddac8669931b69f9caf36f374d15fbfa0c5bbe72d55",
+      "bytes": 199612
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/faq/page.png",
+      "sha256": "d38030a950cd409db9e52bbeaf3cf754a02db9ed108da67e11814195ed9d317b",
+      "bytes": 215056
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/faq/provenance.json",
+      "sha256": "80c43cdeb6433ddd21d3d9f8dff0deb0f8a7c8b2f2843b087c1510cec15c1a45",
+      "bytes": 1001
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/faq/rendered.json",
+      "sha256": "283e9cd0f116ea63a0aeca62b7f2d66c4f2843e1c32c7e183c5af29d248993bf",
+      "bytes": 10162
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/faq/snapshot.json",
+      "sha256": "543f31bbf79215264727aadd9695eacc9c5966c919b700226be2ccb669438b22",
+      "bytes": 26145
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/intermediary/dom.json",
+      "sha256": "e4514d4998a913ecb6318ebcd741b435e032aaa59f15aec83efc8cad9147968d",
+      "bytes": 188986
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/intermediary/page.png",
+      "sha256": "665c81af1cb3677eac5b27a66af0d9807cbb1c3983a16868e99cccd3732159e3",
+      "bytes": 117504
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/intermediary/provenance.json",
+      "sha256": "09c5329b4392d398b0ea9d00ec401dafd1128554d6609dc29a85c04956b31851",
+      "bytes": 1036
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/intermediary/rendered.json",
+      "sha256": "cdd71a61b500c55f5b4537f1cb4c27773fa74f84ec086f20a5d49b442d3cb567",
+      "bytes": 4172
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/intermediary/snapshot.json",
+      "sha256": "8d936c7c7e30e8fcc5b96d3762e1b11c1fb01d97c5e49ef47977e266c8c33bed",
+      "bytes": 16542
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/materials-success/dom.json",
+      "sha256": "2d92427c656e9df9f1c67f3d24d50f6e025e6ed86a39cd5aa9d7311d407c1240",
+      "bytes": 200897
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/materials-success/page.png",
+      "sha256": "4ea13c3c2426556f8ec472809a2d691287794830540937fef50be46230ad632d",
+      "bytes": 180114
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/materials-success/provenance.json",
+      "sha256": "5224c799ee158b043431f8beba8d49d7790ada807f656d7d46985fa64ab2e63b",
+      "bytes": 1056
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/materials-success/rendered.json",
+      "sha256": "29ed9c1d597e0961808f31220f780a7c89ba5b965fb7caf60a96793d25f3e882",
+      "bytes": 6630
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/materials-success/snapshot.json",
+      "sha256": "21a58c000812149e06baadf3fd80818bc8ce32b93c74f3b62c3291c8ef462582",
+      "bytes": 25255
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/normalized-guide.json",
+      "sha256": "dbc817de96ef6646e3c974664919dda62bfdf444e1f79723cfd84d423e0ff35b",
+      "bytes": 60063
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/online-boundary/page.png",
+      "sha256": "d8a5ee48007a8d4f8c60429587844b4921b1bc7a6aae22d8a0e935dd1062a2af",
+      "bytes": 773841
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/online-check-corrected.json",
+      "sha256": "3e5d6c6021ceb81881b5ca8edf807889e50cdf51644ee60461746aa60ca22e63",
+      "bytes": 863
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/process/dom.json",
+      "sha256": "dc85eeaebfe3b9c94d4f663415ec335cca4e3d9f41b2a15b646c7b584b9feace",
+      "bytes": 199032
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/process/page.png",
+      "sha256": "503a97f746418e7f469337612b5e7170ef50b246632a27744f1e438c43b30f40",
+      "bytes": 171297
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/process/provenance.json",
+      "sha256": "3f718d2145a70ecadeb57151713ff99b7b820cada4a818e637179becdaaa6356",
+      "bytes": 1016
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/process/rendered.json",
+      "sha256": "c1742ed84404f2a0d1295906a7d55f70c4dc883dfa7a6d0e5c93c3c218e6834c",
+      "bytes": 6924
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/process/snapshot.json",
+      "sha256": "d049c57e3b1ddefded8467f800029e48749cf79f0456cc2399eb5b57180da816",
+      "bytes": 24407
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/process-image-link-click/page.png",
+      "sha256": "3f4ceb0054b28a1e26f1acf941db88bcb18da79394da1859b254be98a2af2ea4",
+      "bytes": 185175
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/process-image-link-click/provenance.json",
+      "sha256": "de29e50b1769279b62fa357640af2159f85462fc27451b4c0a7f6b34f46205cd",
+      "bytes": 1082
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/process-image-link-click/rendered.json",
+      "sha256": "7c49d3c9fd592a011e6f3a6e42f948407aea73c7018edae4a73225548820c430",
+      "bytes": 6924
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/process-image-link-click/snapshot.json",
+      "sha256": "baa3c9e09a5f516f56d25ba4c7aa8ef7a59cc155366658a14e73aee4a5d69a66",
+      "bytes": 24078
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/promise-explanation-dialog/dom.json",
+      "sha256": "c20a89d996cc0dccec1b5779fa57e93cbc7134be9cc31de558cc24eb67b21ce7",
+      "bytes": 224839
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/promise-explanation-dialog/page.png",
+      "sha256": "f14f9570fa56d80ede271905c828e9b58ccab84603307f068564f6cd9e4fb7d4",
+      "bytes": 163105
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/promise-explanation-dialog/provenance.json",
+      "sha256": "11ad00e6d47f592518e5412c1c9e81ecacb6cfae805ee20d73fbe96a61f980b9",
+      "bytes": 1093
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/promise-explanation-dialog/rendered.json",
+      "sha256": "55778d20d0a1e0e0321f8cf7d0b653f486fef2f4f185030b62fe6eea851b0106",
+      "bytes": 15679
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/promise-explanation-dialog/snapshot.json",
+      "sha256": "108806b02f7b630ea1d9efd0e0bd2d309198a55432039b07a5a9d3ac01c379b5",
+      "bytes": 43652
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/public-component-without-url-queries.json",
+      "sha256": "2b35a2258b896245b35a0a729dccd582ff646227ba915f9e65ea6b41c31e064f",
+      "bytes": 37588
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/sample-link-click/dom.json",
+      "sha256": "f38534ed52cdee1f1288f84ac9b448c6f93669f99096f49cebd7d1b1ea6475bc",
+      "bytes": 201855
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/sample-link-click/page.png",
+      "sha256": "b59b3b98f1461e557a5d543f9581a2bb584d33fe77d9ec3d62cb393161fe90db",
+      "bytes": 180173
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/sample-link-click/provenance.json",
+      "sha256": "f940ccc8ed8dd018fe257bbf1998b29354cb2fb74d948f52396c79872c55c396",
+      "bytes": 1056
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/sample-link-click/rendered.json",
+      "sha256": "a07016fb34b0254074e9a2b056083dccaf4e977638a13eb412250571b4443703",
+      "bytes": 6630
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/sample-link-click/snapshot.json",
+      "sha256": "679fd8b1b400fb8aba8675dc12cd59c975745d36bc6151927ddcb5d248d55b4f",
+      "bytes": 25238
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/search/official-locality-selection.json",
+      "sha256": "856783c98acc4ec6b4b0e6f63a498d871a9d76ad38e9950d2164f6f1f0b05921",
+      "bytes": 15039
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/search/page.png",
+      "sha256": "697707cee3ba5221a13ce290d8e66b4c93dbecdce6315cd64d034b39b195c9b9",
+      "bytes": 345971
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/search/provenance.json",
+      "sha256": "38052705bd688cd87f8e2405c6db2edb31f10bfeeb92464c5c59c0fe8b9c770f",
+      "bytes": 1082
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/search/rendered.json",
+      "sha256": "f6ecdba83b41a765a09b8fdf58f0a9eb08f62087efc5dc0141284de9ca47dcd3",
+      "bytes": 5493
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/search/selection.png",
+      "sha256": "2d23579ea07870e6c0fcba155179a6f33ba03729c5112a170b4aad5b09ca9bda",
+      "bytes": 347037
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/search/snapshot.json",
+      "sha256": "f5b002a44bc561e90b8b95daf6f107cb775075245627202278799553726b864d",
+      "bytes": 22021
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/statutory-explanation-dialog/dom.json",
+      "sha256": "4da6462c7a1ad42da508d4e97522de143cc27765943951e50e2da51b0814611c",
+      "bytes": 225323
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/statutory-explanation-dialog/page.png",
+      "sha256": "97a258eb39de683df925ae10444ec4d48c78f96671658b016434668b30426bd0",
+      "bytes": 173177
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/statutory-explanation-dialog/provenance.json",
+      "sha256": "796c1236db3410bdc1dff20782255c48b732ec5490a0ffb258f17062ec7926b2",
+      "bytes": 1101
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/statutory-explanation-dialog/rendered.json",
+      "sha256": "bad8d52e5c90d60de4262ca1fe4f7d7acfd4fb6103866fbe9cb1fcc90be36f13",
+      "bytes": 16241
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/statutory-explanation-dialog/snapshot.json",
+      "sha256": "4777160c3dd85d1f2b9afaa6c4cf2af4421fb3a59aee4fe7e89d16d685fb7cc0",
+      "bytes": 43939
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/README.md",
+      "sha256": "979a236728172c6fb44d9e8b5b3874b901513d697df9b0fbff4cfac089df2870",
+      "bytes": 6006
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/staging-candidate.json",
+      "sha256": "25e94ea9ced602d193712ab545882a91f6e101ccba0b24155b3a9e1f278ece4e",
+      "bytes": 2219
+    },
+    {
+      "path": "templates/_docx/_regional/340103000000/ff8080819b0b50f201a0477964527fe9-劳动人事争议仲裁申请书.doc",
+      "sha256": "9184dcf8f7249b050e70eee023bc23bc392d9f2c4bca9247f87d25d8faae71e3",
+      "bytes": 17920
+    },
+    {
+      "path": "templates/_docx/_regional/340103000000/ff8080819b0b50f201a0477964567ff9-劳动人事争议仲裁申请书.doc",
+      "sha256": "64b9d92ded0bc0ecdc111a00f71b703d3948dfe3dd52b1d3dbf34d6411d04ed1",
+      "bytes": 18432
+    },
+    {
+      "path": "templates/_docx/_regional/340103000000/ff8080819b0b50f201a0477964590005-劳动人事争议仲裁申请-办理流程图.png",
+      "sha256": "41df10d6bbd29651becb29596e28fecd404141fbcb0c2332da8d45c0122ec0ac",
+      "bytes": 36210
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/EVIDENCE-AUDIT.json",
+      "sha256": "175ec8eb2cd2c6098f07d05a4dd5ecca92eab0fffd852d877bd610cac833c7cd",
+      "bytes": 6534
+    }
+  ],
+  "total_files": 98,
+  "total_bytes": 7881916,
+  "no_private_sealed_files": true,
+  "publication_or_generation_approval": false
+}

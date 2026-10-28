@@ -10,4 +10,7 @@ assert(!regionalExtraFields(jsExtra,own).some(f=>f.key==='evidenceCopyCount'))
 const payload=applicationPayload({nationality:'已修改民族',workAddress:'真实工作地址',secretExample:'不可见默认示例',factsReason:'事情经过'},shown,'请求支付工资')
 assert.equal(payload.workAddress,'真实工作地址');assert.equal(payload.nationality,'已修改民族')
 assert.equal(payload.secretExample,undefined);assert.deepEqual(payload.requests,['请求支付工资'])
+const shangcheng='zhejiang_shangcheng_own_blank_v1'
+assert(regionalApplicationFields(base,true,shangcheng).some(f=>f.key==='nationality'))
+assert(regionalExtraFields(jsExtra,shangcheng).some(f=>f.key==='workAddress'))
 console.log('PASS Zhejiang consumed fields are editable, per-template fields differ, hidden values are excluded')

@@ -1,0 +1,93 @@
+{
+  "province": "zhejiang",
+  "city": "杭州市",
+  "district": "上城区",
+  "region_code": "330102",
+  "source_id": "b5b5727640f8c28377abd27b",
+  "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=01a9e0fa-ab7e-4232-99e1-014d3ad99b45",
+  "service_code": "01a9e0fa-ab7e-4232-99e1-014d3ad99b45",
+  "authority": "杭州市上城区人力资源和社会保障局",
+  "collected_at": "2026-10-28T10:22:27.387Z",
+  "originals": [
+    {
+      "annex_id": "21B24C52D2AC3EB007AA7F55CE0AAD79",
+      "source_url": "https://portal.zjzwfw.gov.cn/media/oss/FILE/META_DATA/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+      "guide_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=01a9e0fa-ab7e-4232-99e1-014d3ad99b45",
+      "canonical_file": "templates/_docx/_regional/330102/21B24C52D2AC3EB007AA7F55CE0AAD79-劳动人事争议仲裁申请书.docx",
+      "sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "bytes": 33949,
+      "table_shapes": [
+        [
+          23,
+          5
+        ],
+        [
+          23,
+          11
+        ]
+      ],
+      "sections": [
+        {
+          "width_twips": 11906,
+          "height_twips": 16838,
+          "margins_twips": [
+            1701,
+            1701,
+            1418,
+            1418
+          ]
+        },
+        {
+          "width_twips": 11906,
+          "height_twips": 16838,
+          "margins_twips": [
+            1701,
+            1701,
+            1418,
+            1418
+          ]
+        }
+      ],
+      "supported_kind": [
+        "application"
+      ],
+      "supported_applicant": "worker"
+    },
+    {
+      "annex_id": "872DFF90A8578907CB947197A784AA48",
+      "source_url": "https://portal.zjzwfw.gov.cn/media/oss/FILE/META_DATA/872DFF90A8578907CB947197A784AA48.docx",
+      "guide_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=01a9e0fa-ab7e-4232-99e1-014d3ad99b45",
+      "canonical_file": "templates/_docx/_regional/330102/872DFF90A8578907CB947197A784AA48-证据清单.docx",
+      "sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+      "bytes": 18837,
+      "table_shapes": [
+        [
+          13,
+          6
+        ]
+      ],
+      "sections": [
+        {
+          "width_twips": 11906,
+          "height_twips": 16838,
+          "margins_twips": [
+            1701,
+            1701,
+            1418,
+            1418
+          ]
+        }
+      ],
+      "supported_kind": [
+        "evidence"
+      ],
+      "supported_applicant": null
+    }
+  ],
+  "publication": "NOT_PUBLISHED",
+  "web": "NOT_RUN_POLICY_REFUSAL_RETAINED",
+  "online_status": "auth_required_post_login_unknown",
+  "material_count": 4,
+  "raw_window_hours": "法定工作日：9：00-12：00 14:00-5:30",
+  "material_notice": "仅保留实际四项公开材料，不推断身份证或委托手续免交；份数冲突仍须机构核实。"
+}

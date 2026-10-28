@@ -32,7 +32,7 @@
 </template>
 <script setup>
 import {computed,ref} from 'vue'
-import {regionalApplicationFields,regionalExtraFields,applicationPayload} from '@/data/regionalDocumentFields'
+import {regionalApplicationFields,regionalExtraFields,applicationPayload,isZhejiangBlankAdapter} from '@/data/regionalDocumentFields'
 import {useRoute,RouterLink} from 'vue-router'
 import {useRegionalGuide,regionalAPI} from '@/composables/useRegionalGuide'
 import {useDialogFocus} from '@/composables/useDialogFocus'
@@ -47,7 +47,7 @@ const back=computed(()=>({path:`/province/${region.value.province}`,query:{city:
 const {guide,loading,error}=props.embedded?{guide:computed(()=>props.selectedGuide),loading:ref(false),error:ref('')}:useRegionalGuide(region)
 const template=computed(()=>guide.value?.templates.find(t=>t.can_generate && t.document_types.includes(kind.value)))
 const isBlank=computed(()=>template.value?.official_kind==='blank')
-const isZhejiangBlank=computed(()=>template.value?.adapter==='zhejiang_own_blank_v1')
+const isZhejiangBlank=computed(()=>isZhejiangBlankAdapter(template.value?.adapter))
 const sourceDescription=computed(()=>isBlank.value?`将根据${region.value.district}官网提供的空白表格辅助填写。`:`将根据${region.value.district}官方参考样表辅助填写。它不是官方空白模板。`)
 // Reuse the province example story, never its committee, identity prefix or addresses.
 const exampleProvince={...findProvince(region.value.province),city:region.value.city,committee:'请填写实际受理的仲裁委员会',exampleCompany:`${region.value.city}示例科技有限公司`}

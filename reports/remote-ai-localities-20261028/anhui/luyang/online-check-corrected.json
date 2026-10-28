@@ -1,0 +1,17 @@
+{
+  "status": "auth_required",
+  "entry_verification": "unverified",
+  "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+  "observation": {
+    "has_password": true,
+    "observed_at": "2026-10-28T12:33:24.546Z",
+    "origin": "https://sso.ahzwfw.gov.cn",
+    "path": "/uccp-server/login",
+    "service_callback_path": "/bog-bsdt/transition.html",
+    "visible_captcha": false,
+    "visible_credential_values_present": false
+  },
+  "callback_is_exact_service": false,
+  "explanation": "Public login callback is generic transition.html. Earlier generic nonhidden-input boolean includes noncredential default values; corrected check restricts visible text/password/tel/email fields. No account, password or CAPTCHA entered.",
+  "web_qa": "NOT_RUN"
+}

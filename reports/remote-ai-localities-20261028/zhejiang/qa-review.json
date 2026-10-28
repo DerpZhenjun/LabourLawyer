@@ -1,0 +1,235 @@
+{
+  "reviewed_at": "2026-10-28T12:39:34.149998+00:00",
+  "region_code": "330102",
+  "district": "杭州市上城区",
+  "status": "PASS_OFFLINE_OWN_SOURCE_ADAPTATION_NOT_PUBLISHED",
+  "source_id": "b5b5727640f8c28377abd27b",
+  "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=01a9e0fa-ab7e-4232-99e1-014d3ad99b45",
+  "tests": {
+    "adapter": 9,
+    "source_parser": 6,
+    "total": 15,
+    "result": "PASS",
+    "seconds": 6.314,
+    "log": "tests-GREEN-with-source.log",
+    "red_logs": [
+      "tests-RED.log",
+      "visual-regression-RED.log"
+    ],
+    "missing_private_capture": "explicit unittest SkipTest; runtime binding disabled"
+  },
+  "accepted_original_pages": 7,
+  "accepted_generated_pages": 6,
+  "manually_reviewed_accepted_pages": [
+    {
+      "file": "render/original-application/page-1.png",
+      "sha256": "3166b3757c51b172d28990e511ce7922f0ed389bae3791e83c39d60d95a85e5e",
+      "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE",
+      "role": "own_official_original",
+      "checks": [
+        "Chinese glyphs readable",
+        "no typed field clipping or overlap",
+        "no blank extra page",
+        "human signatures remain blank"
+      ]
+    },
+    {
+      "file": "render/original-application/page-2.png",
+      "sha256": "02cc812d67de83a6430c9fae74d77c5a483b1bce7e9942dfa49a90f034305472",
+      "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE",
+      "role": "own_official_original",
+      "checks": [
+        "Chinese glyphs readable",
+        "no typed field clipping or overlap",
+        "no blank extra page",
+        "human signatures remain blank"
+      ]
+    },
+    {
+      "file": "render/original-application/page-3.png",
+      "sha256": "403c4d172d762155f21c3150a264fdaa54b9fc388fbbe43b5a12dfc985bb1bf2",
+      "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE",
+      "role": "own_official_original",
+      "checks": [
+        "Chinese glyphs readable",
+        "no typed field clipping or overlap",
+        "no blank extra page",
+        "human signatures remain blank"
+      ]
+    },
+    {
+      "file": "render/original-application/page-4.png",
+      "sha256": "5e7c703486da52df90d470ccab0bb8f0dcbcb8bf8dec0b571b84f1753505934c",
+      "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE",
+      "role": "own_official_original",
+      "checks": [
+        "Chinese glyphs readable",
+        "no typed field clipping or overlap",
+        "no blank extra page",
+        "human signatures remain blank"
+      ]
+    },
+    {
+      "file": "render/original-application/page-5.png",
+      "sha256": "8be25bf9fc7624da60cd4d6ac7f8e05ee45a3d531eadff5f7218c81d57a7b6fa",
+      "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE",
+      "role": "own_official_original",
+      "checks": [
+        "Chinese glyphs readable",
+        "no typed field clipping or overlap",
+        "no blank extra page",
+        "human signatures remain blank"
+      ]
+    },
+    {
+      "file": "render/original-application/page-6.png",
+      "sha256": "62e78795cf9a4c40ca7f94473ce2802536f9cc65215895eb4e61ef0add055066",
+      "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE",
+      "role": "own_official_original",
+      "checks": [
+        "Chinese glyphs readable",
+        "no typed field clipping or overlap",
+        "no blank extra page",
+        "human signatures remain blank"
+      ]
+    },
+    {
+      "file": "render/original-evidence/page-1.png",
+      "sha256": "5cecb8d3af2de739d7ee2b4872da000d0f7573aa59a1c1eaaf18aefb6736dc1b",
+      "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE",
+      "role": "own_official_original",
+      "checks": [
+        "Chinese glyphs readable",
+        "no typed field clipping or overlap",
+        "no blank extra page",
+        "human signatures remain blank"
+      ]
+    },
+    {
+      "file": "render/filled-application/page-1.png",
+      "sha256": "cb784f18e7adbaaa1b6003c5e1301e8c5417e0d7e67451b9a68154d54e5717d5",
+      "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE",
+      "role": "filled_worker_application",
+      "checks": [
+        "Chinese glyphs readable",
+        "no typed field clipping or overlap",
+        "no blank extra page",
+        "human signatures remain blank"
+      ]
+    },
+    {
+      "file": "render/filled-application/page-2.png",
+      "sha256": "9b3b1c56c22ba0d609fa2a0d70d86a64559672835a981157665c57debd64b813",
+      "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE",
+      "role": "filled_worker_application",
+      "checks": [
+        "Chinese glyphs readable",
+        "no typed field clipping or overlap",
+        "no blank extra page",
+        "human signatures remain blank"
+      ]
+    },
+    {
+      "file": "render/filled-application/page-3.png",
+      "sha256": "1df69d4d971be2a4e2348c07788c5ba98c325187e2aeb32868e4555de0d4a6c3",
+      "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE",
+      "role": "filled_worker_application",
+      "checks": [
+        "Chinese glyphs readable",
+        "no typed field clipping or overlap",
+        "no blank extra page",
+        "human signatures remain blank"
+      ]
+    },
+    {
+      "file": "render/fixed-evidence/page-1.png",
+      "sha256": "e5d1b2d9d1362fa172f8a0342f666ab62635e0ad3c41302326afd45cdee6c01e",
+      "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE",
+      "role": "filled_evidence_final",
+      "checks": [
+        "Chinese glyphs readable",
+        "no typed field clipping or overlap",
+        "no blank extra page",
+        "human signatures remain blank"
+      ]
+    },
+    {
+      "file": "render/fixed-evidence/page-2.png",
+      "sha256": "c79b5543cb9bb9e374befc8a90190d822721053524dc34051256cc2da6d9b046",
+      "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE",
+      "role": "filled_evidence_final",
+      "checks": [
+        "Chinese glyphs readable",
+        "no typed field clipping or overlap",
+        "no blank extra page",
+        "human signatures remain blank"
+      ]
+    },
+    {
+      "file": "render/fixed-evidence/page-3.png",
+      "sha256": "e74bfc0ecac4a8eadcf6193a592d5858d02678435965f2d16f3b89bb610f9a31",
+      "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE",
+      "role": "filled_evidence_final",
+      "checks": [
+        "Chinese glyphs readable",
+        "no typed field clipping or overlap",
+        "no blank extra page",
+        "human signatures remain blank"
+      ]
+    }
+  ],
+  "superseded_failed_revision": {
+    "docx": "evidence-synthetic.docx",
+    "pages_viewed": 3,
+    "render": "render/filled-evidence/",
+    "defects": [
+      "Generic helper overwrote the static 案号 label with case number",
+      "Long evidence record split its final character onto a continuation page",
+      "No repeated column headers"
+    ],
+    "fixed_only_in": "backend/regional_shangcheng_documents.py",
+    "regressions_added": 2
+  },
+  "final_documents": [
+    {
+      "file": "application-synthetic.docx",
+      "sha256": "a73312fccfcfd59f795c106e45301a2d4ab4253c871776626f7a3c44aca55415",
+      "data": "fictional software QA only"
+    },
+    {
+      "file": "evidence-synthetic-fixed.docx",
+      "sha256": "6ed2c4f39b27de54a3d2fd1733ee67c1336cb5ee7c4fcc19ac6082e929192cef",
+      "data": "fictional software QA only"
+    }
+  ],
+  "supported_scope": {
+    "application": "Only the worker application table; unchanged original includes employer form but employer filling is not claimed",
+    "evidence": "Own original evidence table; ten long evidence items tested with repeated headers and intact rows",
+    "application_request_capacity": 4
+  },
+  "preservation": {
+    "source_manifest_resigned": false,
+    "source_files_checked": 166,
+    "raw_hash_mismatches": [],
+    "canonical_originals_unchanged": true,
+    "generated_changed_zip_parts": [
+      "word/document.xml"
+    ],
+    "paper_geometry": "original A4 retained"
+  },
+  "source_limitations": [
+    "Guide shows four materials; no claim identity/agency documents are waived",
+    "Window time 14:00-5:30 preserved, no correction to 17:30",
+    "Guide 2份原件 and annex defendant-count copy note retained unresolved",
+    "Binjiang zero-material versus submission-flow conflict remains unchanged"
+  ],
+  "execution": {
+    "word": "coordinated own hidden read-only COM export, no existing Word process stopped",
+    "models": "NOT_CALLED",
+    "database": "NOT_OPENED",
+    "publication": "NOT_PUBLISHED",
+    "candidate_web": "NOT_RUN_POLICY_REFUSAL_RETAINED",
+    "shared_dispatch": "not modified by this worker"
+  },
+  "packaged_renderer": "render_docx.py attempted; no soffice.exe on Windows, retained packaged-render.log; native Word fallback used"
+}

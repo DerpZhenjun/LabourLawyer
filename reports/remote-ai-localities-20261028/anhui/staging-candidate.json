@@ -1,0 +1,48 @@
+{
+  "created_at": "2026-10-28T12:35:42.343074+00:00",
+  "province": "anhui",
+  "province_name": "安徽省",
+  "city": "合肥市",
+  "district": "庐阳区",
+  "region_code": "340103",
+  "official_service_region_code": "340103000000",
+  "source_id": "d52d1fced81cbcacb208b7b0",
+  "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+  "guide_file": "reports/remote-ai-localities-20261028/anhui/luyang/normalized-guide.json",
+  "guide_sha256": "dbc817de96ef6646e3c974664919dda62bfdf444e1f79723cfd84d423e0ff35b",
+  "materials": 3,
+  "templates": [
+    {
+      "id": "ff8080819b0b50f201a0477964527fe9",
+      "file": "templates/_docx/_regional/340103000000/ff8080819b0b50f201a0477964527fe9-劳动人事争议仲裁申请书.doc",
+      "sha256": "9184dcf8f7249b050e70eee023bc23bc392d9f2c4bca9247f87d25d8faae71e3",
+      "bytes": 17920,
+      "official_kind": "blank",
+      "original_name": "劳动人事争议仲裁申请书.doc"
+    },
+    {
+      "id": "ff8080819b0b50f201a0477964567ff9",
+      "file": "templates/_docx/_regional/340103000000/ff8080819b0b50f201a0477964567ff9-劳动人事争议仲裁申请书.doc",
+      "sha256": "64b9d92ded0bc0ecdc111a00f71b703d3948dfe3dd52b1d3dbf34d6411d04ed1",
+      "bytes": 18432,
+      "official_kind": "sample",
+      "original_name": "劳动人事争议仲裁申请书.doc"
+    },
+    {
+      "id": "ff8080819b0b50f201a0477964590005",
+      "file": "templates/_docx/_regional/340103000000/ff8080819b0b50f201a0477964590005-劳动人事争议仲裁申请-办理流程图.png",
+      "sha256": "41df10d6bbd29651becb29596e28fecd404141fbcb0c2332da8d45c0122ec0ac",
+      "bytes": 36210,
+      "official_kind": "instruction",
+      "original_name": "劳动人事争议仲裁申请-办理流程图.png"
+    }
+  ],
+  "can_generate": false,
+  "publication_status": "unpublished",
+  "web_qa": "NOT_RUN",
+  "document_generation": "NOT_RUN",
+  "document_render": "NOT_RUN",
+  "source_site_screenshot_review": "materials/process/login inspected; source evidence only",
+  "runtime_parser": "not_registered",
+  "shared_registry_modified": false
+}

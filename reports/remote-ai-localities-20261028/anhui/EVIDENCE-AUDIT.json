@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "public_json_opaque_context_findings": [],
+  "public_paths": 97,
+  "public_bytes": 7875382,
+  "attachment_records": 3,
+  "distinct_attachment_sha256": 3,
+  "original_copy_hash_mismatches": 0,
+  "materials": 3,
+  "candidate_published": false,
+  "can_generate": false,
+  "source_screenshots_reviewed": [
+    "materials-success/page.png",
+    "process/page.png",
+    "online-boundary/page.png"
+  ],
+  "template_content_review": "NOT_RUN",
+  "document_generation": "NOT_RUN",
+  "document_render": "NOT_RUN",
+  "runtime_parser_registered": false,
+  "private_context_not_public": true,
+  "cookies_authorization_values_persisted": false,
+  "excluded": [
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/.private-sealed/.gitignore",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/.private-sealed/luyang/exact-download-urls.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/.private-sealed/luyang/online-boundary/dom.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/.private-sealed/luyang/online-boundary/provenance.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/.private-sealed/luyang/online-boundary/rendered.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/.private-sealed/luyang/online-boundary/snapshot.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/.private-sealed/luyang/process-image-link-click/dom.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/.private-sealed/luyang/public-guide-viewmodel.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/.private-sealed/luyang/search/dom.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/__pycache__/collect.cpython-311.pyc",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/conditions/dom.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/conditions/page.png",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/conditions/provenance.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/conditions/rendered.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/conditions/snapshot.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/materials/dom.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/materials/page.png",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/materials/provenance.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/materials/rendered.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/materials/snapshot.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/online-check.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/promise-time-explanation/dom.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/promise-time-explanation/page.png",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/promise-time-explanation/provenance.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/promise-time-explanation/rendered.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/promise-time-explanation/snapshot.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/statutory-time-explanation/dom.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/statutory-time-explanation/page.png",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/statutory-time-explanation/provenance.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/statutory-time-explanation/rendered.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/anhui/luyang/statutory-time-explanation/snapshot.json",
+      "reason": "private/session/failed attempt/superseded/generated"
+    }
+  ]
+}

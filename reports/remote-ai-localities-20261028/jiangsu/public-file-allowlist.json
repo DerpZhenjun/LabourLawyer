@@ -1,0 +1,117 @@
+{
+  "scope": "Explicit safe synthetic QA and code files; not a publication approval.",
+  "files": [
+    {
+      "path": "backend/WenShu/exact_template_fill.py",
+      "sha256": "699c11e0ef3bec8812c2e8f25c6ac96757f848cf48a9b9dc3a5816095eea4eef"
+    },
+    {
+      "path": "backend/tests/test_jiangsu_binhai_xiangshui_document_qa.py",
+      "sha256": "302651645d57046603cd2e72cb046d2d31618a92a3206d9ca436f8592b205c2f"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/qa.py",
+      "sha256": "98f05bcecc193242f4ff56331ceea108f1387e04c22e35797fb09860edc3aa77"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/render.ps1",
+      "sha256": "bb328ad571074bf7a12948899a77578194e187d6d6a2f587d5aea7ef83a13eb8"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/artifact.md",
+      "sha256": "70c9f9bc58f52b6b71619644876279fc66e6efda03e53361c0b534854a6d334f"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/visual-review.md",
+      "sha256": "188941f17f24eb481c20c449f1353c347450018d50e367c55dff2378f13c6013"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/document-approval.json",
+      "sha256": "fd03a5f9f5eede62e1d2c965e7099e3d1bf2f79d627a1e6eddbbf9eda53dbb43"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/reference-inventory.json",
+      "sha256": "393ac03949a6d8565e42e1f17b23f378f81f4766bda6c11de25f9bbad0496440"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/reference-render-manifest.json",
+      "sha256": "af635d027c32570397d2061973fca2ba1948d4987d037bd91fdcab20edd33a1b"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/reference-style-audit.json",
+      "sha256": "196b448ff6ca0da91cecece22918960fac959a235befd71fa1426124646c6663"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/reference-section-audit.txt",
+      "sha256": "60084931ca29ee3bb6d4fba4cd1f729b2f9b000656e1e70ef3f98caa5818b384"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/packaged-render-probe.log",
+      "sha256": "f852aa18c1c4ca9919f37e7053811d0fba62ec87b29ac5966048cd9464837639"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/birth-date-red.txt",
+      "sha256": "31f68a5b712ee825d0705616e2fd7adfc3b5a6222e3e001edab758e95acdce0c"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/birth-date-green.txt",
+      "sha256": "a4e5fdad5bd3801f732f7c6c198a2b71b092521856c2ebca42aedce7c5eb47e2"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/jiangsu-tests.txt",
+      "sha256": "f696dcd76c5e6089991f3da4db9bdd09524ec537bf7fcdad46866688e8d38736"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/package-checks.json",
+      "sha256": "0913ca418db803422b65711d8eee18f0eee096ffa1e5b3117f2da921d409e5b9"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/render-manifest.json",
+      "sha256": "5a614e8d48cebf136d312504b07d16ffa0b4156380413d6a7e53c30e44426a59"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/320922-evidence.docx",
+      "sha256": "91fee285962e35c1fba0e75c6e0ad3b1e4fdd294a7f6d843eb44ceff5b6b4373"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/320922-application.docx",
+      "sha256": "7b79b50ad19134312057c478f1ed351c7399b473b80c68932418cf91e0305376"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/320921-evidence.docx",
+      "sha256": "4acff85d5a619d86e8bdef8101c12349104f62e4f3c7da13e75d4301965bb591"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/320921-application.docx",
+      "sha256": "d47dd1266dba155fb7694901304a98e54004bf8fad2db0fe8c391bd7eee56f0e"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/render/320922-evidence/page-1.png",
+      "sha256": "6092bfca32cd7d362d473076b50954981dc0e8e257c39df8d442ce441697cf6f"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/render/320922-application/page-1.png",
+      "sha256": "35f2af7c95c84e4a9966e0a525f854ad6675502ca17f98e392666dea30210768"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/render/320922-application/page-2.png",
+      "sha256": "d8f87e35b7f97a458649bebc49112822e79c9fce5bedb06c4d243435767166bc"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/render/320921-evidence/page-1.png",
+      "sha256": "e1990b15a72091ca006ea6cc0dc1782d4ca753dc7f1119ecf3b8d8b93f0167de"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/render/320921-application/page-1.png",
+      "sha256": "a2b9246ae5ff4145748c9d4376664517b7d209ef774d84bd978de95f878cff0c"
+    },
+    {
+      "path": "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/render/320921-application/page-2.png",
+      "sha256": "d8f87e35b7f97a458649bebc49112822e79c9fce5bedb06c4d243435767166bc"
+    }
+  ],
+  "excluded": [
+    "Initial root-level DOCX/render files contain the superseded date-wrap defect.",
+    "No env/auth/connection configuration or model files are in this list."
+  ]
+}

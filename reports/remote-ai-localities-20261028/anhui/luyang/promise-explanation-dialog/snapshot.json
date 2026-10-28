@@ -1,0 +1,815 @@
+{
+  "lifecycle": {
+    "effectiveLaunch": {
+      "browserLaunched": true,
+      "engine": "chrome",
+      "launchHash": 3511867796762804771
+    },
+    "launched": false,
+    "relaunchedBrowser": false,
+    "restartedBackground": false,
+    "restoreStatus": "not_configured",
+    "reused": true,
+    "saveStatus": "not_attempted"
+  },
+  "origin": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+  "refs": {
+    "e100": {
+      "name": "0551-65699354",
+      "role": "cell"
+    },
+    "e101": {
+      "name": "监督电话",
+      "role": "cell"
+    },
+    "e102": {
+      "name": "0551-65699505",
+      "role": "cell"
+    },
+    "e103": {
+      "name": "承诺时限",
+      "role": "cell"
+    },
+    "e104": {
+      "name": "1个工作日 说明",
+      "role": "cell"
+    },
+    "e105": {
+      "name": "办理时间",
+      "role": "cell"
+    },
+    "e106": {
+      "name": "正常工作日上午9:00~12:00，下午12:00~5:00",
+      "role": "cell"
+    },
+    "e107": {
+      "name": "办理地点",
+      "role": "cell"
+    },
+    "e108": {
+      "name": "常见问题",
+      "role": "cell"
+    },
+    "e109": {
+      "name": "查看常见问题",
+      "role": "cell"
+    },
+    "e110": {
+      "name": "",
+      "role": "list"
+    },
+    "e111": {
+      "name": "网站支持IPv6",
+      "role": "link"
+    },
+    "e112": {
+      "name": "查看材料清单",
+      "role": "link"
+    },
+    "e113": {
+      "name": "查看办理流程",
+      "role": "link"
+    },
+    "e114": {
+      "name": "查看常见问题",
+      "role": "link"
+    },
+    "e115": {
+      "name": "",
+      "role": "listitem"
+    },
+    "e116": {
+      "name": "",
+      "role": "listitem"
+    },
+    "e117": {
+      "name": "",
+      "role": "listitem"
+    },
+    "e118": {
+      "name": "",
+      "role": "listitem"
+    },
+    "e119": {
+      "name": "",
+      "role": "listitem"
+    },
+    "e120": {
+      "name": "",
+      "role": "listitem"
+    },
+    "e121": {
+      "name": "",
+      "role": "listitem"
+    },
+    "e122": {
+      "name": "无障碍",
+      "role": "link"
+    },
+    "e123": {
+      "name": "进入老年模式",
+      "role": "link"
+    },
+    "e124": {
+      "name": "国家政务服务平台",
+      "role": "link"
+    },
+    "e125": {
+      "name": "合肥市人民政府",
+      "role": "link"
+    },
+    "e126": {
+      "name": "",
+      "role": "generic"
+    },
+    "e127": {
+      "name": "",
+      "role": "generic"
+    },
+    "e128": {
+      "name": "",
+      "role": "generic"
+    },
+    "e129": {
+      "name": "",
+      "role": "generic"
+    },
+    "e130": {
+      "name": "基本信息",
+      "role": "link"
+    },
+    "e131": {
+      "name": "受理条件",
+      "role": "link"
+    },
+    "e132": {
+      "name": "申请材料",
+      "role": "link"
+    },
+    "e133": {
+      "name": "办理流程",
+      "role": "link"
+    },
+    "e134": {
+      "name": "中介服务",
+      "role": "link"
+    },
+    "e135": {
+      "name": "常见问题",
+      "role": "link"
+    },
+    "e136": {
+      "name": "办事评价",
+      "role": "link"
+    },
+    "e137": {
+      "name": "登录",
+      "role": "link"
+    },
+    "e138": {
+      "name": "政务服务中心",
+      "role": "cell"
+    },
+    "e139": {
+      "name": "安徽省合肥市庐阳区北二环与大房郢路交口庐阳区政务服务中心人社综合窗口 查看地图",
+      "role": "cell"
+    },
+    "e140": {
+      "name": "目录清单名称",
+      "role": "cell"
+    },
+    "e141": {
+      "name": "劳动人事争议调解仲裁",
+      "role": "cell"
+    },
+    "e142": {
+      "name": "目录子项名称",
+      "role": "cell"
+    },
+    "e143": {
+      "name": "劳动人事争议仲裁申请",
+      "role": "cell"
+    },
+    "e144": {
+      "name": "事项名称",
+      "role": "cell"
+    },
+    "e145": {
+      "name": "劳动人事争议仲裁申请",
+      "role": "cell"
+    },
+    "e146": {
+      "name": "基本编码",
+      "role": "cell"
+    },
+    "e147": {
+      "name": "002014302002",
+      "role": "cell"
+    },
+    "e148": {
+      "name": "事项类型",
+      "role": "cell"
+    },
+    "e149": {
+      "name": "公共服务",
+      "role": "cell"
+    },
+    "e150": {
+      "name": "事项编码",
+      "role": "cell"
+    },
+    "e151": {
+      "name": "1134010376083788274002014302002",
+      "role": "cell"
+    },
+    "e152": {
+      "name": "服务对象",
+      "role": "cell"
+    },
+    "e153": {
+      "name": "自然人,法人",
+      "role": "cell"
+    },
+    "e154": {
+      "name": "实施清单编码",
+      "role": "cell"
+    },
+    "e155": {
+      "name": "113401037608378827400201430200201",
+      "role": "cell"
+    },
+    "e156": {
+      "name": "法定办结时限",
+      "role": "cell"
+    },
+    "e157": {
+      "name": "45个工作日 说明",
+      "role": "cell"
+    },
+    "e158": {
+      "name": "承诺办结时限",
+      "role": "cell"
+    },
+    "e159": {
+      "name": "1个工作日 说明 承诺办结时限说明",
+      "role": "cell"
+    },
+    "e160": {
+      "name": "是否收费",
+      "role": "cell"
+    },
+    "e161": {
+      "name": "否",
+      "role": "cell"
+    },
+    "e162": {
+      "name": "办理深度",
+      "role": "cell"
+    },
+    "e163": {
+      "name": "四级(全程网办)",
+      "role": "cell"
+    },
+    "e164": {
+      "name": "办理形式",
+      "role": "cell"
+    },
+    "e165": {
+      "name": "网上办理,窗口办理",
+      "role": "cell"
+    },
+    "e166": {
+      "name": "到办事现场次数",
+      "role": "cell"
+    },
+    "e167": {
+      "name": "0次",
+      "role": "cell"
+    },
+    "e168": {
+      "name": "网上办理形式",
+      "role": "cell"
+    },
+    "e169": {
+      "name": "互联网咨询,互联网收件,互联网预审,互联网受理,互联网办理,互联网办理结果信息反馈",
+      "role": "cell"
+    },
+    "e170": {
+      "name": "办理地点",
+      "role": "cell"
+    },
+    "e171": {
+      "name": "办理时间",
+      "role": "cell"
+    },
+    "e172": {
+      "name": "正常工作日上午9:00~12:00，下午12:00~5:00",
+      "role": "cell"
+    },
+    "e173": {
+      "name": "所属部门",
+      "role": "cell"
+    },
+    "e174": {
+      "name": "合肥市庐阳区人力资源和社会保障局",
+      "role": "cell"
+    },
+    "e175": {
+      "name": "所属区划",
+      "role": "cell"
+    },
+    "e176": {
+      "name": "庐阳区",
+      "role": "cell"
+    },
+    "e177": {
+      "name": "实施主体",
+      "role": "cell"
+    },
+    "e178": {
+      "name": "合肥市庐阳区人力资源和社会保障局",
+      "role": "cell"
+    },
+    "e179": {
+      "name": "实施主体性质",
+      "role": "cell"
+    },
+    "e180": {
+      "name": "法定机关",
+      "role": "cell"
+    },
+    "e181": {
+      "name": "行使层级",
+      "role": "cell"
+    },
+    "e182": {
+      "name": "县级",
+      "role": "cell"
+    },
+    "e183": {
+      "name": "办件类型",
+      "role": "cell"
+    },
+    "e184": {
+      "name": "即办件",
+      "role": "cell"
+    },
+    "e185": {
+      "name": "委托部门",
+      "role": "cell"
+    },
+    "e186": {
+      "name": "无",
+      "role": "cell"
+    },
+    "e187": {
+      "name": "权力来源",
+      "role": "cell"
+    },
+    "e188": {
+      "name": "法定本级行使",
+      "role": "cell"
+    },
+    "e189": {
+      "name": "行使内容",
+      "role": "cell"
+    },
+    "e190": {
+      "name": "待补。",
+      "role": "cell"
+    },
+    "e191": {
+      "name": "是否属于联办件",
+      "role": "cell"
+    },
+    "e192": {
+      "name": "否",
+      "role": "cell"
+    },
+    "e193": {
+      "name": "是否有联办机构",
+      "role": "cell"
+    },
+    "e194": {
+      "name": "否",
+      "role": "cell"
+    },
+    "e195": {
+      "name": "联办机构",
+      "role": "cell"
+    },
+    "e196": {
+      "name": "无",
+      "role": "cell"
+    },
+    "e197": {
+      "name": "是否有权限划分",
+      "role": "cell"
+    },
+    "e198": {
+      "name": "是",
+      "role": "cell"
+    },
+    "e199": {
+      "name": "划分标准",
+      "role": "cell"
+    },
+    "e200": {
+      "name": "管辖区域和层级。",
+      "role": "cell"
+    },
+    "e201": {
+      "name": "是否属于上报件",
+      "role": "cell"
+    },
+    "e202": {
+      "name": "否",
+      "role": "cell"
+    },
+    "e203": {
+      "name": "下沉办理",
+      "role": "cell"
+    },
+    "e204": {
+      "name": "否",
+      "role": "cell"
+    },
+    "e205": {
+      "name": "通办范围",
+      "role": "cell"
+    },
+    "e206": {
+      "name": "无",
+      "role": "cell"
+    },
+    "e207": {
+      "name": "是否支持网上支付",
+      "role": "cell"
+    },
+    "e208": {
+      "name": "否",
+      "role": "cell"
+    },
+    "e209": {
+      "name": "阶段性办理",
+      "role": "cell"
+    },
+    "e210": {
+      "name": "否",
+      "role": "cell"
+    },
+    "e211": {
+      "name": "办理时间段",
+      "role": "cell"
+    },
+    "e212": {
+      "name": "无",
+      "role": "cell"
+    },
+    "e213": {
+      "name": "是否有特别程序",
+      "role": "cell"
+    },
+    "e214": {
+      "name": "否",
+      "role": "cell"
+    },
+    "e215": {
+      "name": "特别程序",
+      "role": "cell"
+    },
+    "e216": {
+      "name": "无",
+      "role": "cell"
+    },
+    "e217": {
+      "name": "是否支持预约",
+      "role": "cell"
+    },
+    "e218": {
+      "name": "否",
+      "role": "cell"
+    },
+    "e219": {
+      "name": "预约渠道",
+      "role": "cell"
+    },
+    "e220": {
+      "name": "无",
+      "role": "cell"
+    },
+    "e221": {
+      "name": "是否有数量限制",
+      "role": "cell"
+    },
+    "e222": {
+      "name": "无",
+      "role": "cell"
+    },
+    "e223": {
+      "name": "数量限制说明",
+      "role": "cell"
+    },
+    "e224": {
+      "name": "无",
+      "role": "cell"
+    },
+    "e225": {
+      "name": "数量限制依据",
+      "role": "cell"
+    },
+    "e226": {
+      "name": "无",
+      "role": "cell"
+    },
+    "e227": {
+      "name": "是否支持代办",
+      "role": "cell"
+    },
+    "e228": {
+      "name": "否",
+      "role": "cell"
+    },
+    "e229": {
+      "name": "是否进驻大厅",
+      "role": "cell"
+    },
+    "e230": {
+      "name": "是",
+      "role": "cell"
+    },
+    "e231": {
+      "name": "材料收取形式",
+      "role": "cell"
+    },
+    "e232": {
+      "name": "窗口收取,线上收取",
+      "role": "cell"
+    },
+    "e233": {
+      "name": "结果名称",
+      "role": "cell"
+    },
+    "e234": {
+      "name": "无",
+      "role": "cell"
+    },
+    "e235": {
+      "name": "结果样本",
+      "role": "cell"
+    },
+    "e236": {
+      "name": "无",
+      "role": "cell"
+    },
+    "e237": {
+      "name": "结果领取方式",
+      "role": "cell"
+    },
+    "e238": {
+      "name": "窗口领取",
+      "role": "cell"
+    },
+    "e239": {
+      "name": "办理结果领取说明",
+      "role": "cell"
+    },
+    "e240": {
+      "name": "无",
+      "role": "cell"
+    },
+    "e241": {
+      "name": "监督投诉方式",
+      "role": "cell"
+    },
+    "e242": {
+      "name": "0551-65699505",
+      "role": "cell"
+    },
+    "e243": {
+      "name": "咨询方式",
+      "role": "cell"
+    },
+    "e244": {
+      "name": "0551-65699354",
+      "role": "cell"
+    },
+    "e245": {
+      "name": "年审年检",
+      "role": "cell"
+    },
+    "e246": {
+      "name": "无",
+      "role": "cell"
+    },
+    "e247": {
+      "name": "设定依据",
+      "role": "cell"
+    },
+    "e248": {
+      "name": "1.《中华人民共和国劳动争议调解仲裁法》第二条：中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用 本法：（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除 名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议； （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。第五 条：发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、 调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁；对仲裁裁决不服的，除本法另有规定的 外，可以向人民法院提起诉讼。 2.《劳动人事争议仲裁办案规则》（中华人民共和国人力资源和社会保障部令第33号）第二条：本规则适用下列争议的仲 裁：（一）企业、个体经济组织、民办非企业单位等组织与劳动者之间，以及机关、事业单位、社会团体与其建立劳动 关系的劳动者之间，因确认劳动关系，订立、履行、变更、解除和终止劳动合同，工作时间、休息休假、社会保险、福 利、培训以及劳动保护，劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（二）实施公务员法的机关与聘 任制公务员之间、参照公务员法管理的机关（单位）与聘任工作人员之间因履行聘任合同发生的争议；（三）事业单位 与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（四）社会团体与其建立人事关系的 工作人员之间因终止人事关系以及履行聘用合同发生的争议；（五）军队文职人员用人单位与聘用制文职人员之间因履 行聘用合同发生的争议；（六）法律、法规规定由劳动人事争议仲裁委员会处理的其他争议。 3.《劳动人事争议仲裁组织规则》（中华人民共和国人力资源和社会保障部令第34号）第七条：仲裁委员会依法履行下列 职责：（一）聘任、解聘专职或者兼职仲裁员；（二）受理争议案件；（三）讨论重大或者疑难的争议案件；（四）监 督本仲裁委员会的仲裁活动；（五）制定本仲裁委员会的工作规则；（六）其他依法应当履行的职责。",
+      "role": "cell"
+    },
+    "e249": {
+      "name": "展开 ",
+      "role": "cell"
+    },
+    "e250": {
+      "name": "",
+      "role": "generic"
+    },
+    "e251": {
+      "name": "",
+      "role": "generic"
+    },
+    "e252": {
+      "name": "",
+      "role": "generic"
+    },
+    "e253": {
+      "name": "政务服务中心",
+      "role": "cell"
+    },
+    "e254": {
+      "name": "安徽省合肥市庐阳区北二环与大房郢路交口庐阳区政务服务中心人社综合窗口 查看地图",
+      "role": "cell"
+    },
+    "e260": {
+      "name": "",
+      "role": "generic"
+    },
+    "e261": {
+      "name": "Close",
+      "role": "button"
+    },
+    "e59": {
+      "name": "欢迎进入，盲人用户使用无障碍，请按快捷键Ctrl 加 1 键, 阅读详细操作说明请按快捷键Ctrl加Alt加问号键。",
+      "role": "link"
+    },
+    "e60": {
+      "name": "劳动人事争议仲裁申请",
+      "role": "heading"
+    },
+    "e61": {
+      "name": "",
+      "role": "list"
+    },
+    "e62": {
+      "name": "",
+      "role": "generic"
+    },
+    "e63": {
+      "name": "",
+      "role": "listitem"
+    },
+    "e64": {
+      "name": "",
+      "role": "listitem"
+    },
+    "e65": {
+      "name": "",
+      "role": "listitem"
+    },
+    "e66": {
+      "name": "",
+      "role": "listitem"
+    },
+    "e67": {
+      "name": " 在线办理",
+      "role": "link"
+    },
+    "e68": {
+      "name": "",
+      "role": "generic"
+    },
+    "e69": {
+      "name": "",
+      "role": "generic"
+    },
+    "e70": {
+      "name": "",
+      "role": "generic"
+    },
+    "e71": {
+      "name": "",
+      "role": "generic"
+    },
+    "e72": {
+      "name": "",
+      "role": "generic"
+    },
+    "e73": {
+      "name": "",
+      "role": "generic"
+    },
+    "e74": {
+      "name": "",
+      "role": "link"
+    },
+    "e75": {
+      "name": "关于本网",
+      "role": "link"
+    },
+    "e76": {
+      "name": "本站声明",
+      "role": "link"
+    },
+    "e77": {
+      "name": "帮助中心",
+      "role": "link"
+    },
+    "e78": {
+      "name": "反馈建议",
+      "role": "link"
+    },
+    "e79": {
+      "name": "0551-12345",
+      "role": "link"
+    },
+    "e80": {
+      "name": "",
+      "role": "paragraph"
+    },
+    "e81": {
+      "name": "",
+      "role": "paragraph"
+    },
+    "e82": {
+      "name": " 办事指南评价",
+      "role": "link"
+    },
+    "e83": {
+      "name": "",
+      "role": "link"
+    },
+    "e84": {
+      "name": "备案序号：皖ICP备17023147号",
+      "role": "link"
+    },
+    "e85": {
+      "name": "皖公网安备34011102000822号",
+      "role": "link"
+    },
+    "e86": {
+      "name": "安徽政务服务网 全国一体化在线政务服务平台 皖事通办",
+      "role": "link"
+    },
+    "e87": {
+      "name": "",
+      "role": "generic"
+    },
+    "e88": {
+      "name": "",
+      "role": "generic"
+    },
+    "e89": {
+      "name": "事项名称",
+      "role": "cell"
+    },
+    "e90": {
+      "name": "劳动人事争议仲裁申请",
+      "role": "cell"
+    },
+    "e91": {
+      "name": "实施主体",
+      "role": "cell"
+    },
+    "e92": {
+      "name": "合肥市庐阳区人力资源和社会保障局",
+      "role": "cell"
+    },
+    "e93": {
+      "name": "受理条件",
+      "role": "cell"
+    },
+    "e94": {
+      "name": "中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法： （一）因确认劳动关系发生的争议； （二）因订立、履行、变更、解除和终止劳动合同发生的争议； （三）因除名、辞退和辞职、离职发生的争议； （四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议； （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议； （六）法律、法规规定的其他劳动争议。       展开",
+      "role": "cell"
+    },
+    "e95": {
+      "name": "申请材料",
+      "role": "cell"
+    },
+    "e96": {
+      "name": "查看材料清单",
+      "role": "cell"
+    },
+    "e97": {
+      "name": "办理流程",
+      "role": "cell"
+    },
+    "e98": {
+      "name": "查看办理流程",
+      "role": "cell"
+    },
+    "e99": {
+      "name": "咨询电话",
+      "role": "cell"
+    }
+  },
+  "removedRefs": [
+    "@e256",
+    "@e257"
+  ],
+  "snapshot": "- link \"欢迎进入，盲人用户使用无障碍，请按快捷键Ctrl 加 1 键, 阅读详细操作说明请按快捷键Ctrl加Alt加问号键。\" [ref=e59]\n- generic\n  - generic\n    - link \"安徽政务服务网 全国一体化在线政务服务平台 皖事通办\" [ref=e86]\n      - image \"安徽政务服务网\"\n      - generic\n        - StaticText \"全国一体化在线政务服务平台\"\n        - StaticText \"皖事通办\"\n    - generic\n      - list\n        - listitem [level=1]\n          - link \"无障碍\" [ref=e122]\n        - listitem [level=1]\n          - link \"进入老年模式\" [ref=e123]\n            - StaticText \"长者版\"\n      - generic\n        - list \"网站链接导航\"\n          - listitem [level=1]\n            - link \"国家政务服务平台\" [ref=e124]\n            - link \"合肥市人民政府\" [ref=e125]\n        - generic\n          - link \"网站支持IPv6\" [ref=e111]\n          - generic\n            - generic [ref=e126] clickable [cursor:pointer]\n              - link \"登录\" [ref=e137]\n            - generic [ref=e127] clickable [cursor:pointer]\n              - StaticText \"注册\"\n  - generic\n    - heading \"劳动人事争议仲裁申请\" [level=1, ref=e60]\n    - list [ref=e61] focusable [tabindex]\n      - listitem [level=1, ref=e63] clickable [cursor:pointer]\n        - StaticText \"咨询事项\"\n      - listitem [level=1, ref=e64] clickable [cursor:pointer]\n        - StaticText \"收藏事项\"\n      - listitem [level=1, ref=e65] clickable [cursor:pointer]\n        - paragraph [ref=e80] clickable [cursor:pointer, tabindex]\n          - StaticText \"分享事项\"\n      - listitem [level=1, ref=e66] clickable [cursor:pointer]\n        - paragraph [ref=e81] clickable [cursor:pointer, tabindex]\n          - StaticText \"政策法规\"\n    - generic\n      - link \" 在线办理\" [ref=e67]\n        - StaticText \" 在线办理\"\n      - generic\n        - link \" 办事指南评价\" [ref=e82]\n          - StaticText \"办事指南评价\"\n        - generic\n          - generic [ref=e87] focusable [tabindex]\n            - StaticText \"下载办事指南\"\n    - generic\n      - image \"简洁版\"\n      - generic [ref=e68] focusable [tabindex]\n        - table\n          - row\n            - cell \"事项名称\" [ref=e89]\n            - cell \"劳动人事争议仲裁申请\" [ref=e90]\n              - StaticText \"劳动人事争议仲裁申请\"\n            - cell \"实施主体\" [ref=e91]\n            - cell \"合肥市庐阳区人力资源和社会保障局\" [ref=e92]\n              - StaticText \"合肥市庐阳区人力资源和社会保障局\"\n          - row\n            - cell \"受理条件\" [ref=e93]\n            - cell \"中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法： （一）因确认劳动关系发生的争议； （二）因订立、履行、变更、解除和终止劳动合同发生的争议； （三）因除名、辞退和辞职、离职发生的争议； （四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议； （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议； （六）法律、法规规定的其他劳动争议。       展开\" [ref=e94]\n              - generic\n                - StaticText \"中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法： （一）因确认劳动关系发生的争议； （二）因订立、履行、变更、解除和终止劳动合同发生的争议； （三）因除名、辞退和辞职、离职发生的争议； （四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议； （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议； （六）法律、法规规定的其他劳动争议。\"\n                - generic [ref=e128] clickable [cursor:pointer]\n                  - StaticText \"展开\"\n          - row\n            - cell \"申请材料\" [ref=e95]\n            - cell \"查看材料清单\" [ref=e96]\n              - link \"查看材料清单\" [ref=e112]\n            - cell \"办理流程\" [ref=e97]\n            - cell \"查看办理流程\" [ref=e98]\n              - link \"查看办理流程\" [ref=e113]\n          - row\n            - cell \"咨询电话\" [ref=e99]\n            - cell \"0551-65699354\" [ref=e100]\n              - StaticText \"0551-65699354\"\n            - cell \"监督电话\" [ref=e101]\n            - cell \"0551-65699505\" [ref=e102]\n              - StaticText \"0551-65699505\"\n          - row\n            - cell \"承诺时限\" [ref=e103]\n            - cell \"1个工作日 说明\" [ref=e104]\n              - generic\n                - StaticText \"1个工作日\"\n                - generic [ref=e129] clickable [cursor:pointer]\n                  - StaticText \"说明\"\n            - cell \"办理时间\" [ref=e105]\n            - cell \"正常工作日上午9:00~12:00，下午12:00~5:00\" [ref=e106]\n              - StaticText \"正常工作日上午9:00~12:00，下午12:00~5:00\"\n          - row\n            - cell \"办理地点\" [ref=e107]\n            - cell\n              - table\n                - row\n                  - cell \"政务服务中心\" [ref=e138]\n                  - cell \"安徽省合肥市庐阳区北二环与大房郢路交口庐阳区政务服务中心人社综合窗口 查看地图\" [ref=e139]\n                    - StaticText \"安徽省合肥市庐阳区北二环与大房郢路交口庐阳区政务服务中心人社综合窗口\"\n                    - StaticText \"查看地图\"\n          - row\n            - cell \"常见问题\" [ref=e108]\n            - cell \"查看常见问题\" [ref=e109]\n              - link \"查看常见问题\" [ref=e114]\n    - generic\n      - image \"详情版\"\n      - navigation\n        - list [ref=e110] focusable [tabindex]\n          - listitem [level=1, ref=e115] focusable [tabindex]\n            - link \"基本信息\" [ref=e130]\n          - listitem [level=1, ref=e116] focusable [tabindex]\n            - link \"受理条件\" [ref=e131]\n          - listitem [level=1, ref=e117] focusable [tabindex]\n            - link \"申请材料\" [ref=e132]\n          - listitem [level=1, ref=e118] focusable [tabindex]\n            - link \"办理流程\" [ref=e133]\n          - listitem [level=1, ref=e119] focusable [tabindex]\n            - link \"中介服务\" [ref=e134]\n          - listitem [level=1, ref=e120] focusable [tabindex]\n            - link \"常见问题\" [ref=e135]\n          - listitem [level=1, ref=e121] focusable [tabindex]\n            - link \"办事评价\" [ref=e136]\n      - generic [ref=e88] focusable [tabindex]\n        - table\n          - rowgroup\n            - row\n              - cell \"目录清单名称\" [ref=e140]\n              - cell \"劳动人事争议调解仲裁\" [ref=e141]\n                - StaticText \"劳动人事争议调解仲裁\"\n              - cell \"目录子项名称\" [ref=e142]\n              - cell \"劳动人事争议仲裁申请\" [ref=e143]\n                - StaticText \"劳动人事争议仲裁申请\"\n            - row\n              - cell \"事项名称\" [ref=e144]\n              - cell \"劳动人事争议仲裁申请\" [ref=e145]\n                - StaticText \"劳动人事争议仲裁申请\"\n              - cell \"基本编码\" [ref=e146]\n              - cell \"002014302002\" [ref=e147]\n                - StaticText \"002014302002\"\n            - row\n              - cell \"事项类型\" [ref=e148]\n              - cell \"公共服务\" [ref=e149]\n                - StaticText \"公共服务\"\n              - cell \"事项编码\" [ref=e150]\n              - cell \"1134010376083788274002014302002\" [ref=e151]\n                - StaticText \"1134010376083788274002014302002\"\n            - row\n              - cell \"服务对象\" [ref=e152]\n              - cell \"自然人,法人\" [ref=e153]\n                - StaticText \"自然人,法人\"\n              - cell \"实施清单编码\" [ref=e154]\n              - cell \"113401037608378827400201430200201\" [ref=e155]\n                - StaticText \"113401037608378827400201430200201\"\n            - row\n              - cell \"法定办结时限\" [ref=e156]\n              - cell \"45个工作日 说明\" [ref=e157]\n                - generic\n                  - StaticText \"45个工作日\"\n                  - generic [ref=e251] clickable [cursor:pointer]\n                    - StaticText \"说明\"\n              - cell \"承诺办结时限\" [ref=e158]\n              - cell \"1个工作日 说明 承诺办结时限说明\" [ref=e159]\n                - generic\n                  - StaticText \"1个工作日\"\n                  - generic [ref=e252] clickable [cursor:pointer]\n                    - StaticText \"说明\"\n                  - dialog \"承诺办结时限说明\"\n                    - generic\n                      - StaticText \"承诺办结时限说明\"\n                      - button \"Close\" [ref=e261]\n                        - StaticText \"\"\n            - row\n              - cell \"是否收费\" [ref=e160]\n              - cell \"否\" [ref=e161]\n                - StaticText \"否\"\n              - cell \"办理深度\" [ref=e162]\n              - cell \"四级(全程网办)\" [ref=e163]\n                - StaticText \"四级(全程网办)\"\n            - row\n              - cell \"办理形式\" [ref=e164]\n              - cell \"网上办理,窗口办理\" [ref=e165]\n                - StaticText \"网上办理,窗口办理\"\n              - cell \"到办事现场次数\" [ref=e166]\n              - cell \"0次\" [ref=e167]\n                - StaticText \"0次\"\n            - row\n              - cell \"网上办理形式\" [ref=e168]\n              - cell \"互联网咨询,互联网收件,互联网预审,互联网受理,互联网办理,互联网办理结果信息反馈\" [ref=e169]\n                - StaticText \"互联网咨询,互联网收件,互联网预审,互联网受理,互联网办理,互联网办理结果信息反馈\"\n            - row\n              - cell \"办理地点\" [ref=e170]\n              - cell\n                - table\n                  - row\n                    - cell \"政务服务中心\" [ref=e253]\n                    - cell \"安徽省合肥市庐阳区北二环与大房郢路交口庐阳区政务服务中心人社综合窗口 查看地图\" [ref=e254]\n                      - StaticText \"安徽省合肥市庐阳区北二环与大房郢路交口庐阳区政务服务中心人社综合窗口\"\n                      - StaticText \"查看地图\"\n            - row\n              - cell \"办理时间\" [ref=e171]\n              - cell \"正常工作日上午9:00~12:00，下午12:00~5:00\" [ref=e172]\n                - StaticText \"正常工作日上午9:00~12:00，下午12:00~5:00\"\n            - row\n              - cell \"所属部门\" [ref=e173]\n              - cell \"合肥市庐阳区人力资源和社会保障局\" [ref=e174]\n                - StaticText \"合肥市庐阳区人力资源和社会保障局\"\n              - cell \"所属区划\" [ref=e175]\n              - cell \"庐阳区\" [ref=e176]\n                - StaticText \"庐阳区\"\n            - row\n              - cell \"实施主体\" [ref=e177]\n              - cell \"合肥市庐阳区人力资源和社会保障局\" [ref=e178]\n                - StaticText \"合肥市庐阳区人力资源和社会保障局\"\n              - cell \"实施主体性质\" [ref=e179]\n              - cell \"法定机关\" [ref=e180]\n                - StaticText \"法定机关\"\n            - row\n              - cell \"行使层级\" [ref=e181]\n              - cell \"县级\" [ref=e182]\n                - StaticText \"县级\"\n              - cell \"办件类型\" [ref=e183]\n              - cell \"即办件\" [ref=e184]\n                - StaticText \"即办件\"\n            - row\n              - cell \"委托部门\" [ref=e185]\n              - cell \"无\" [ref=e186]\n                - StaticText \"无\"\n              - cell \"权力来源\" [ref=e187]\n              - cell \"法定本级行使\" [ref=e188]\n                - StaticText \"法定本级行使\"\n            - row\n              - cell \"行使内容\" [ref=e189]\n              - cell \"待补。\" [ref=e190]\n                - StaticText \"待补。\"\n              - cell \"是否属于联办件\" [ref=e191]\n              - cell \"否\" [ref=e192]\n                - StaticText \"否\"\n            - row\n              - cell \"是否有联办机构\" [ref=e193]\n              - cell \"否\" [ref=e194]\n                - StaticText \"否\"\n              - cell \"联办机构\" [ref=e195]\n              - cell \"无\" [ref=e196]\n                - StaticText \"无\"\n            - row\n              - cell \"是否有权限划分\" [ref=e197]\n              - cell \"是\" [ref=e198]\n                - StaticText \"是\"\n              - cell \"划分标准\" [ref=e199]\n              - cell \"管辖区域和层级。\" [ref=e200]\n                - StaticText \"管辖区域和层级。\"\n            - row\n              - cell \"是否属于上报件\" [ref=e201]\n              - cell \"否\" [ref=e202]\n                - StaticText \"否\"\n              - cell \"下沉办理\" [ref=e203]\n              - cell \"否\" [ref=e204]\n                - StaticText \"否\"\n            - row\n              - cell \"通办范围\" [ref=e205]\n              - cell \"无\" [ref=e206]\n                - StaticText \"无\"\n              - cell \"是否支持网上支付\" [ref=e207]\n              - cell \"否\" [ref=e208]\n                - StaticText \"否\"\n            - row\n              - cell \"阶段性办理\" [ref=e209]\n              - cell \"否\" [ref=e210]\n                - StaticText \"否\"\n              - cell \"办理时间段\" [ref=e211]\n              - cell \"无\" [ref=e212]\n                - StaticText \"无\"\n            - row\n              - cell \"是否有特别程序\" [ref=e213]\n              - cell \"否\" [ref=e214]\n                - StaticText \"否\"\n              - cell \"特别程序\" [ref=e215]\n              - cell \"无\" [ref=e216]\n                - StaticText \"无\"\n            - row\n              - cell \"是否支持预约\" [ref=e217]\n              - cell \"否\" [ref=e218]\n                - StaticText \"否\"\n              - cell \"预约渠道\" [ref=e219]\n              - cell \"无\" [ref=e220]\n                - StaticText \"无\"\n            - row\n              - cell \"是否有数量限制\" [ref=e221]\n              - cell \"无\" [ref=e222]\n                - StaticText \"无\"\n              - cell \"数量限制说明\" [ref=e223]\n              - cell \"无\" [ref=e224]\n                - StaticText \"无\"\n            - row\n              - cell \"数量限制依据\" [ref=e225]\n              - cell \"无\" [ref=e226]\n                - StaticText \"无\"\n            - row\n              - cell \"是否支持代办\" [ref=e227]\n              - cell \"否\" [ref=e228]\n                - StaticText \"否\"\n            - row\n              - cell \"是否进驻大厅\" [ref=e229]\n              - cell \"是\" [ref=e230]\n                - StaticText \"是\"\n              - cell \"材料收取形式\" [ref=e231]\n              - cell \"窗口收取,线上收取\" [ref=e232]\n                - StaticText \"窗口收取,线上收取\"\n            - row\n              - cell \"结果名称\" [ref=e233]\n              - cell \"无\" [ref=e234]\n                - StaticText \"无\"\n              - cell \"结果样本\" [ref=e235]\n              - cell \"无\" [ref=e236]\n                - StaticText \"无\"\n            - row\n              - cell \"结果领取方式\" [ref=e237]\n              - cell \"窗口领取\" [ref=e238]\n                - StaticText \"窗口领取\"\n              - cell \"办理结果领取说明\" [ref=e239]\n              - cell \"无\" [ref=e240]\n                - StaticText \"无\"\n            - row\n              - cell \"监督投诉方式\" [ref=e241]\n              - cell \"0551-65699505\" [ref=e242]\n                - StaticText \"0551-65699505\"\n              - cell \"咨询方式\" [ref=e243]\n              - cell \"0551-65699354\" [ref=e244]\n                - StaticText \"0551-65699354\"\n            - row\n              - cell \"年审年检\" [ref=e245]\n              - cell \"无\" [ref=e246]\n                - StaticText \"无\"\n            - row\n              - cell \"设定依据\" [ref=e247]\n              - cell \"1.《中华人民共和国劳动争议调解仲裁法》第二条：中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用 本法：（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除 名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议； （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。第五 条：发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、 调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁；对仲裁裁决不服的，除本法另有规定的 外，可以向人民法院提起诉讼。 2.《劳动人事争议仲裁办案规则》（中华人民共和国人力资源和社会保障部令第33号）第二条：本规则适用下列争议的仲 裁：（一）企业、个体经济组织、民办非企业单位等组织与劳动者之间，以及机关、事业单位、社会团体与其建立劳动 关系的劳动者之间，因确认劳动关系，订立、履行、变更、解除和终止劳动合同，工作时间、休息休假、社会保险、福 利、培训以及劳动保护，劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（二）实施公务员法的机关与聘 任制公务员之间、参照公务员法管理的机关（单位）与聘任工作人员之间因履行聘任合同发生的争议；（三）事业单位 与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（四）社会团体与其建立人事关系的 工作人员之间因终止人事关系以及履行聘用合同发生的争议；（五）军队文职人员用人单位与聘用制文职人员之间因履 行聘用合同发生的争议；（六）法律、法规规定由劳动人事争议仲裁委员会处理的其他争议。 3.《劳动人事争议仲裁组织规则》（中华人民共和国人力资源和社会保障部令第34号）第七条：仲裁委员会依法履行下列 职责：（一）聘任、解聘专职或者兼职仲裁员；（二）受理争议案件；（三）讨论重大或者疑难的争议案件；（四）监 督本仲裁委员会的仲裁活动；（五）制定本仲裁委员会的工作规则；（六）其他依法应当履行的职责。\" [ref=e248]\n                - StaticText \"1.《中华人民共和国劳动争议调解仲裁法》第二条：中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用 本法：（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除 名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议； （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。第五 条：发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、 调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁；对仲裁裁决不服的，除本法另有规定的 外，可以向人民法院提起诉讼。 2.《劳动人事争议仲裁办案规则》（中华人民共和国人力资源和社会保障部令第33号）第二条：本规则适用下列争议的仲 裁：（一）企业、个体经济组织、民办非企业单位等组织与劳动者之间，以及机关、事业单位、社会团体与其建立劳动 关系的劳动者之间，因确认劳动关系，订立、履行、变更、解除和终止劳动合同，工作时间、休息休假、社会保险、福 利、培训以及劳动保护，劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（二）实施公务员法的机关与聘 任制公务员之间、参照公务员法管理的机关（单位）与聘任工作人员之间因履行聘任合同发生的争议；（三）事业单位 与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（四）社会团体与其建立人事关系的 工作人员之间因终止人事关系以及履行聘用合同发生的争议；（五）军队文职人员用人单位与聘用制文职人员之间因履 行聘用合同发生的争议；（六）法律、法规规定由劳动人事争议仲裁委员会处理的其他争议。 3.《劳动人事争议仲裁组织规则》（中华人民共和国人力资源和社会保障部令第34号）第七条：仲裁委员会依法履行下列 职责：（一）聘任、解聘专职或者兼职仲裁员；（二）受理争议案件；（三）讨论重大或者疑难的争议案件；（四）监 督本仲裁委员会的仲裁活动；（五）制定本仲裁委员会的工作规则；（六）其他依法应当履行的职责。\"\n          - rowgroup\n            - row\n              - cell \"展开 \" [ref=e249]\n                - generic [ref=e250] clickable [cursor:pointer]\n                  - StaticText \"展开\"\n                  - StaticText \"\"\n  - generic\n    - generic\n      - generic [ref=e69] clickable [cursor:pointer]\n        - image\n        - StaticText \"我的\"\n      - generic [ref=e70] clickable [cursor:pointer]\n        - image\n        - StaticText \"办事互动\"\n      - generic [ref=e71] clickable [cursor:pointer]\n        - image\n        - StaticText \"办件查询\"\n      - generic [ref=e72] clickable [cursor:pointer]\n        - image\n        - StaticText \"智能客服\"\n      - generic [ref=e73] clickable [cursor:pointer]\n        - image\n        - StaticText \"微门户\"\n    - generic [ref=e62] clickable [cursor:pointer]\n      - StaticText \"收起\"\n  - generic\n    - image\n    - link [ref=e74]\n      - image\n    - link [ref=e83]\n      - image\n    - image\n  - generic\n    - link \"关于本网\" [ref=e75]\n    - link \"本站声明\" [ref=e76]\n      - StaticText \"本站声明\"\n    - link \"帮助中心\" [ref=e77]\n      - StaticText \"帮助中心\"\n    - link \"反馈建议\" [ref=e78]\n      - StaticText \"反馈建议\"\n  - paragraph\n    - StaticText \"主办单位：合肥市人民政府办公室\"\n    - StaticText \"建设单位：合肥市数据资源管理局（合肥市政务服务管理局）\"\n    - StaticText \"运行单位：合肥市数据资源管理局（合肥市政务服务管理局）\"\n  - paragraph\n    - link \"备案序号：皖ICP备17023147号\" [ref=e84]\n    - link \"皖公网安备34011102000822号\" [ref=e85]\n    - StaticText \"网站标识码：3400000066\"\n  - paragraph\n    - StaticText \"合肥政务服务总客服：\"\n    - link \"0551-12345\" [ref=e79]\n- generic [ref=e260] focusable [tabindex]"
+}

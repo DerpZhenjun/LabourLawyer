@@ -1,0 +1,29 @@
+{
+  "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+  "captured_at": "2026-10-28T12:27:13.564Z",
+  "records": {
+    "dom": {
+      "status": "public",
+      "path": "luyang/detail-evidence/dom.json",
+      "sha256": "2e2e26cd2382a36665a0ee4a37770c43b0e4f3977e08485a6f288d676cb1b1d4",
+      "bytes": 202701
+    },
+    "rendered": {
+      "status": "public",
+      "path": "luyang/detail-evidence/rendered.json",
+      "sha256": "6bba0dabb1f61587bdb8d082e9ff7e895dacf533272393e5917338420bfdc773",
+      "bytes": 7399
+    },
+    "snapshot": {
+      "status": "public",
+      "path": "luyang/detail-evidence/snapshot.json",
+      "sha256": "32273242f384e33882ce1447ac799677900abfed587057ae09dc16de7dfcadd0",
+      "bytes": 26890
+    },
+    "screenshot": {
+      "path": "luyang/detail-evidence/page.png",
+      "sha256": "f7c71d7ea4e74d78e59455df059a0c83c374f95f5765ddbd078397e306aeb4f2",
+      "bytes": 204369
+    }
+  }
+}

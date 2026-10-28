@@ -1,0 +1,118 @@
+{
+  "status": "PASS_OFFLINE_DOCUMENT_QA_ONLY",
+  "files": [
+    {
+      "region_code": "320922",
+      "kind": "evidence",
+      "source": "templates/_docx/_regional/320922/5008f178-fe89-4f89-9839-4b6b69eef95b-证据清单.docx",
+      "source_url": "https://ycbh.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=96&iddept_ql_inf=11320922014374388A4002014302002&ql_kind=20&iddept_yw_inf=11320922014374388A400201430200201",
+      "annex_id": "5008f178-fe89-4f89-9839-4b6b69eef95b",
+      "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "output": "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/320922-evidence.docx",
+      "output_sha256": "91fee285962e35c1fba0e75c6e0ad3b1e4fdd294a7f6d843eb44ceff5b6b4373",
+      "changed_parts": [
+        "word/document.xml"
+      ],
+      "preserved_package_parts": 11,
+      "synthetic_only": true,
+      "pages": 1,
+      "visual_status": "PASS",
+      "viewed_page_images": [
+        "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/render/320922-evidence/page-1.png"
+      ],
+      "handwritten_signature_blank": true,
+      "handwritten_date_blank": true
+    },
+    {
+      "region_code": "320922",
+      "kind": "application",
+      "source": "templates/_docx/_regional/320922/a0b76715-d491-4a89-8d3d-e08462f1f0f4-劳动人事争议仲裁申请书.docx",
+      "source_url": "https://ycbh.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=96&iddept_ql_inf=11320922014374388A4002014302002&ql_kind=20&iddept_yw_inf=11320922014374388A400201430200201",
+      "annex_id": "a0b76715-d491-4a89-8d3d-e08462f1f0f4",
+      "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "output": "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/320922-application.docx",
+      "output_sha256": "7b79b50ad19134312057c478f1ed351c7399b473b80c68932418cf91e0305376",
+      "changed_parts": [
+        "word/document.xml"
+      ],
+      "preserved_package_parts": 20,
+      "synthetic_only": true,
+      "pages": 2,
+      "visual_status": "PASS",
+      "viewed_page_images": [
+        "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/render/320922-application/page-1.png",
+        "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/render/320922-application/page-2.png"
+      ],
+      "handwritten_signature_blank": true,
+      "handwritten_date_blank": true
+    },
+    {
+      "region_code": "320921",
+      "kind": "evidence",
+      "source": "templates/_docx/_regional/320921/59d0356b-d251-4424-9a29-17f0491edc19-证据清单.docx",
+      "source_url": "https://ycxs.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=95&iddept_ql_inf=1132092157541553004002014302002&ql_kind=20&iddept_yw_inf=113209215754155300400201430200201",
+      "annex_id": "59d0356b-d251-4424-9a29-17f0491edc19",
+      "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "output": "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/320921-evidence.docx",
+      "output_sha256": "4acff85d5a619d86e8bdef8101c12349104f62e4f3c7da13e75d4301965bb591",
+      "changed_parts": [
+        "word/document.xml"
+      ],
+      "preserved_package_parts": 11,
+      "synthetic_only": true,
+      "pages": 1,
+      "visual_status": "PASS",
+      "viewed_page_images": [
+        "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/render/320921-evidence/page-1.png"
+      ],
+      "handwritten_signature_blank": true,
+      "handwritten_date_blank": true
+    },
+    {
+      "region_code": "320921",
+      "kind": "application",
+      "source": "templates/_docx/_regional/320921/cb2d28f4-a4d8-4633-9e89-238ebe8604ac-劳动人事争议仲裁申请书.docx",
+      "source_url": "https://ycxs.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=95&iddept_ql_inf=1132092157541553004002014302002&ql_kind=20&iddept_yw_inf=113209215754155300400201430200201",
+      "annex_id": "cb2d28f4-a4d8-4633-9e89-238ebe8604ac",
+      "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "output": "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/320921-application.docx",
+      "output_sha256": "d47dd1266dba155fb7694901304a98e54004bf8fad2db0fe8c391bd7eee56f0e",
+      "changed_parts": [
+        "word/document.xml"
+      ],
+      "preserved_package_parts": 20,
+      "synthetic_only": true,
+      "pages": 2,
+      "visual_status": "PASS",
+      "viewed_page_images": [
+        "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/render/320921-application/page-1.png",
+        "reports/remote-ai-localities-20261028/jiangsu/birth-date-fixed/render/320921-application/page-2.png"
+      ],
+      "handwritten_signature_blank": true,
+      "handwritten_date_blank": true
+    }
+  ],
+  "reference_pages_viewed": 7,
+  "initial_failed_pages_viewed": 6,
+  "final_pages_viewed": 6,
+  "total_page_images_opened": 19,
+  "corrected_issue": "JiangSuSheng expanded birth date wrapped month/day; compact ISO preserves source run properties.",
+  "original_sha_mismatches": 0,
+  "non_document_package_part_mismatches": 0,
+  "full_suite_run": false,
+  "tests": {
+    "targeted": 8,
+    "jiangsu": 34,
+    "jiangsu_seconds": 1.803
+  },
+  "published": false,
+  "generation_enabled": false,
+  "product_web_qa_status": "NOT_RUN",
+  "online_submission_verified": false,
+  "restrictions": {
+    "db_writes": false,
+    "services_started": false,
+    "model_calls": false,
+    "git_operations": false
+  }
+}

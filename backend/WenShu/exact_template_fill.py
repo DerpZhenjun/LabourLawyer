@@ -263,6 +263,12 @@ def fill_application(data, path, *, profile=None):
     if folder in INLINE:
         fill_paragraph_fields(doc,data,INLINE[folder])
     if folder=='JiangSuSheng':
+        # This source's birth-date slot shares a narrow line with name/sex.
+        # The expanded Chinese date wrapped its month/day onto a new line.
+        # Preserve the run's font/underline and use the same date compactly.
+        year,month,day=date_parts(data.get('birthDate'))
+        if year and month and day:
+            fill_label_slots(doc.paragraphs[1],[('出生日期',f'{year}-{int(month):02d}-{int(day):02d}')],pad=False)
         # The retained worker form offers a second respondent. This frontend
         # explicitly collects one respondent; remove that unused party block.
         for p in list(doc.paragraphs)[13:20]:

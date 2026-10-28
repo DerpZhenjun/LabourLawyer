@@ -4,6 +4,7 @@ from regional_guides import digest
 from regional_blank_documents import blank_binding, ADAPTER as BLANK_ADAPTER
 from regional_rongjiang_documents import rongjiang_source_matches, ADAPTER as RONGJIANG_ADAPTER
 from regional_zhejiang_documents import with_zhejiang_capabilities,checked_zhejiang_adapter,ADAPTER as ZHEJIANG_ADAPTER
+from regional_shangcheng_documents import with_shangcheng_capabilities,checked_shangcheng_adapter,ADAPTER as SHANGCHENG_ADAPTER
 
 REFERENCE_SHA256 = '80d1dc3989e9da1ef2c763cbde54bd474d691a4febba48425fb2cc3471d94562'
 BINDINGS = {
@@ -225,7 +226,7 @@ def reference_binding(guide, template):
 
 def with_reference_capabilities(guide):
     """Publish platform adaptation separately from the retained official content."""
-    result = with_zhejiang_capabilities(guide) if guide.get('province')=='zhejiang' else deepcopy(guide)
+    result = with_shangcheng_capabilities(with_zhejiang_capabilities(guide)) if guide.get('province')=='zhejiang' else deepcopy(guide)
     for template in result.get('templates', []):
         if rongjiang_source_matches(result,template):
             template.update(can_generate=True,adapter=RONGJIANG_ADAPTER,document_types=['application','evidence'],
@@ -245,14 +246,16 @@ def with_reference_capabilities(guide):
         if adapter:
             template.update(can_generate=True, adapter=adapter, document_types=['application', 'evidence'],
                             content_kind='filled_example', generation_label='依据当地官方参考样表辅助填写（非官方空白模板）')
-        elif template.get('adapter') in ADAPTER_NAMES | {BLANK_ADAPTER,RONGJIANG_ADAPTER,ZHEJIANG_ADAPTER}:
-            if template.get('adapter')==ZHEJIANG_ADAPTER and result.get('province')=='zhejiang':
+        elif template.get('adapter') in ADAPTER_NAMES | {BLANK_ADAPTER,RONGJIANG_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER}:
+            if template.get('adapter') in {ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER} and result.get('province')=='zhejiang':
                 continue
             template.update(can_generate=False, document_types=[])
     return result
 
 
 def checked_reference_adapter(guide, template, kind):
+    if template.get('adapter')==SHANGCHENG_ADAPTER:
+        return checked_shangcheng_adapter(guide,template,kind)
     if template.get('adapter')==ZHEJIANG_ADAPTER:
         return checked_zhejiang_adapter(guide,template,kind)
     if (rongjiang_source_matches(guide,template) and template.get('adapter')==RONGJIANG_ADAPTER

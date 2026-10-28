@@ -1,0 +1,736 @@
+{
+  "province": "anhui",
+  "province_name": "安徽省",
+  "city": "合肥市",
+  "district": "庐阳区",
+  "region_code": "340103",
+  "official_service_region_code": "340103000000",
+  "service_name": "劳动人事争议仲裁申请",
+  "original_service_name": "劳动人事争议仲裁申请",
+  "service_code": "113401037608378827400201430200201",
+  "source_id": "d52d1fced81cbcacb208b7b0",
+  "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+  "source_title": "劳动人事争议仲裁申请",
+  "source_type": "official_guide",
+  "authority": "合肥市庐阳区人力资源和社会保障局",
+  "collected_at": "2026-10-28T12:25:54.305Z",
+  "verified_at": null,
+  "verification_status": "unpublished_candidate",
+  "fields": {
+    "目录清单名称": {
+      "raw_value": "劳动人事争议调解仲裁",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "目录子项名称": {
+      "raw_value": "劳动人事争议仲裁申请",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "事项名称": {
+      "raw_value": "劳动人事争议仲裁申请",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "基本编码": {
+      "raw_value": "002014302002",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "事项类型": {
+      "raw_value": "公共服务",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "事项编码": {
+      "raw_value": "1134010376083788274002014302002",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "服务对象": {
+      "raw_value": "自然人,法人",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "实施清单编码": {
+      "raw_value": "113401037608378827400201430200201",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "法定办结时限": {
+      "raw_value": "45个工作日",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "承诺办结时限": {
+      "raw_value": "1个工作日",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "是否收费": {
+      "raw_value": "否",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "办理深度": {
+      "raw_value": "四级(全程网办)",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "办理形式": {
+      "raw_value": "网上办理,窗口办理",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "到办事现场次数": {
+      "raw_value": "0次",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "网上办理形式": {
+      "raw_value": "互联网咨询,互联网收件,互联网预审,互联网受理,互联网办理,互联网办理结果信息反馈",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "办理地点": {
+      "raw_value": "政务服务中心 安徽省合肥市庐阳区北二环与大房郢路交口庐阳区政务服务中心人社综合窗口",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "办理时间": {
+      "raw_value": "正常工作日上午9:00~12:00，下午12:00~5:00",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "所属部门": {
+      "raw_value": "合肥市庐阳区人力资源和社会保障局",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "所属区划": {
+      "raw_value": "庐阳区",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "实施主体": {
+      "raw_value": "合肥市庐阳区人力资源和社会保障局",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "实施主体性质": {
+      "raw_value": "法定机关",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "行使层级": {
+      "raw_value": "县级",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "办件类型": {
+      "raw_value": "即办件",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "委托部门": {
+      "raw_value": "无",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "权力来源": {
+      "raw_value": "法定本级行使",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "行使内容": {
+      "raw_value": "待补。",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "是否属于联办件": {
+      "raw_value": "否",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "是否有联办机构": {
+      "raw_value": "否",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "联办机构": {
+      "raw_value": "无",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "是否有权限划分": {
+      "raw_value": "是",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "划分标准": {
+      "raw_value": "管辖区域和层级。",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "是否属于上报件": {
+      "raw_value": "否",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "下沉办理": {
+      "raw_value": "否",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "通办范围": {
+      "raw_value": "无",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "是否支持网上支付": {
+      "raw_value": "否",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "阶段性办理": {
+      "raw_value": "否",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "办理时间段": {
+      "raw_value": "无",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "是否有特别程序": {
+      "raw_value": "否",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "特别程序": {
+      "raw_value": "无",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "是否支持预约": {
+      "raw_value": "否",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "预约渠道": {
+      "raw_value": "无",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "是否有数量限制": {
+      "raw_value": "无",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "数量限制说明": {
+      "raw_value": "无",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "数量限制依据": {
+      "raw_value": "无",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "是否支持代办": {
+      "raw_value": "否",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "是否进驻大厅": {
+      "raw_value": "是",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "材料收取形式": {
+      "raw_value": "窗口收取,线上收取",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "结果名称": {
+      "raw_value": "无",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "结果样本": {
+      "raw_value": "无",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "结果领取方式": {
+      "raw_value": "窗口领取",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "办理结果领取说明": {
+      "raw_value": "无",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "监督投诉方式": {
+      "raw_value": "0551-65699505",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "咨询方式": {
+      "raw_value": "0551-65699354",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "年审年检": {
+      "raw_value": "无",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    },
+    "设定依据": {
+      "raw_value": "1.《中华人民共和国劳动争议调解仲裁法》第二条：中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用 本法：（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除 名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议； （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。第五 条：发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、 调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁；对仲裁裁决不服的，除本法另有规定的 外，可以向人民法院提起诉讼。 2.《劳动人事争议仲裁办案规则》（中华人民共和国人力资源和社会保障部令第33号）第二条：本规则适用下列争议的仲 裁：（一）企业、个体经济组织、民办非企业单位等组织与劳动者之间，以及机关、事业单位、社会团体与其建立劳动 关系的劳动者之间，因确认劳动关系，订立、履行、变更、解除和终止劳动合同，工作时间、休息休假、社会保险、福 利、培训以及劳动保护，劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（二）实施公务员法的机关与聘 任制公务员之间、参照公务员法管理的机关（单位）与聘任工作人员之间因履行聘任合同发生的争议；（三）事业单位 与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（四）社会团体与其建立人事关系的 工作人员之间因终止人事关系以及履行聘用合同发生的争议；（五）军队文职人员用人单位与聘用制文职人员之间因履 行聘用合同发生的争议；（六）法律、法规规定由劳动人事争议仲裁委员会处理的其他争议。 3.《劳动人事争议仲裁组织规则》（中华人民共和国人力资源和社会保障部令第34号）第七条：仲裁委员会依法履行下列 职责：（一）聘任、解聘专职或者兼职仲裁员；（二）受理争议案件；（三）讨论重大或者疑难的争议案件；（四）监 督本仲裁委员会的仲裁活动；（五）制定本仲裁委员会的工作规则；（六）其他依法应当履行的职责。",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+      "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+      "collected_at": "2026-10-28T12:25:54.305Z"
+    }
+  },
+  "materials": [
+    {
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/materials-success/dom.json",
+      "capture_sha256": "2d92427c656e9df9f1c67f3d24d50f6e025e6ed86a39cd5aa9d7311d407c1240",
+      "collected_at": "2026-10-28T12:26:48.452Z",
+      "region_code": "340103",
+      "id": "5A11C35091040D75E06302C7FE0A6F8B",
+      "name": "劳动人事争议仲裁申请书",
+      "required": "必要",
+      "original_copy": "原件或复印件",
+      "raw_copies": "原件2份,复印件2份",
+      "copies": "原件2份,复印件2份",
+      "format": "纸质或电子",
+      "purpose": "材料规范、清晰、有效，一经提交申请人对申报材料实质内容的真实性负责。窗口办理提供原件，网上办理提供电子件。",
+      "applicable_conditions": null,
+      "details": {
+        "材料依据": "《调解仲裁法》第二十八条 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。",
+        "受理标准": "《调解仲裁法》第二十九条 劳动争议仲裁委员会收到仲裁申请之日起五日内，认为符合受理条件的，应当受理，并通知申请人；认为不符合受理条件的，应当书面通知申请人不予受理，并说明理由。"
+      },
+      "detail_evidence": {
+        "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+        "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/detail-application/dom.json",
+        "capture_sha256": "3723a28c7e4d2266101912f608be8ec6e6ab680000f3941c6f41faed07ff7c60",
+        "collected_at": "2026-10-28T12:26:58.734Z"
+      },
+      "verification_status": "own_official_source_collected"
+    },
+    {
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/materials-success/dom.json",
+      "capture_sha256": "2d92427c656e9df9f1c67f3d24d50f6e025e6ed86a39cd5aa9d7311d407c1240",
+      "collected_at": "2026-10-28T12:26:48.452Z",
+      "region_code": "340103",
+      "id": "5A11C35091030D75E06302C7FE0A6F8B",
+      "name": "中华人民共和国居民身份证",
+      "required": "必要",
+      "original_copy": "原件和复印件",
+      "raw_copies": "原件1份,复印件1份",
+      "copies": "原件1份,复印件1份",
+      "format": "纸质或电子",
+      "purpose": "材料规范、清晰、有效，一经提交申请人对申报材料实质内容的真实性负责。窗口办理提供原件，网上办理提供电子件。",
+      "applicable_conditions": null,
+      "details": {
+        "材料依据": "《调解仲裁法》第二十八条 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。",
+        "受理标准": "《调解仲裁法》第二十九条 劳动争议仲裁委员会收到仲裁申请之日起五日内，认为符合受理条件的，应当受理，并通知申请人；认为不符合受理条件的，应当书面通知申请人不予受理，并说明理由。"
+      },
+      "detail_evidence": {
+        "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+        "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/detail-id/dom.json",
+        "capture_sha256": "c4c545de78e1dadbb0dfc89167802bd2a1a021dd4f24c960e7aa5f274c39033a",
+        "collected_at": "2026-10-28T12:27:12.366Z"
+      },
+      "verification_status": "own_official_source_collected"
+    },
+    {
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/materials-success/dom.json",
+      "capture_sha256": "2d92427c656e9df9f1c67f3d24d50f6e025e6ed86a39cd5aa9d7311d407c1240",
+      "collected_at": "2026-10-28T12:26:48.452Z",
+      "region_code": "340103",
+      "id": "5A11C35091070D75E06302C7FE0A6F8B",
+      "name": "证据",
+      "required": "必要",
+      "original_copy": "原件或复印件",
+      "raw_copies": "原件2份,复印件2份",
+      "copies": "原件2份,复印件2份",
+      "format": "纸质或电子",
+      "purpose": "材料规范、清晰、有效，一经提交申请人对申报材料实质内容的真实性负责。窗口办理提供原件，网上办理提供电子件。",
+      "applicable_conditions": null,
+      "details": {
+        "材料依据": "《调解仲裁法》第二十八条 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。\n仲裁申请书应当载明下列事项：\n（一）劳动者的姓名、性别、年龄、职业、工作单位和住所，用人单位的名称、住所和法定代表人或者主要负责人的姓名、职务；\n（二）仲裁请求和所根据的事实、理由；\n（三）证据和证据来源、证人姓名和住所。",
+        "受理标准": "《调解仲裁法》第二十九条 劳动争议仲裁委员会收到仲裁申请之日起五日内，认为符合受理条件的，应当受理，并通知申请人；认为不符合受理条件的，应当书面通知申请人不予受理，并说明理由。"
+      },
+      "detail_evidence": {
+        "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+        "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/detail-evidence/dom.json",
+        "capture_sha256": "2e2e26cd2382a36665a0ee4a37770c43b0e4f3977e08485a6f288d676cb1b1d4",
+        "collected_at": "2026-10-28T12:27:13.564Z"
+      },
+      "verification_status": "own_official_source_collected"
+    }
+  ],
+  "templates": [
+    {
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/public-component-without-url-queries.json",
+      "capture_sha256": "2b35a2258b896245b35a0a729dccd582ff646227ba915f9e65ea6b41c31e064f",
+      "collected_at": "2026-10-28T12:26:58.347637+00:00",
+      "transformed_public_metadata": true,
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "region_code": "340103",
+      "id": "ff8080819b0b50f201a0477964527fe9",
+      "annex_id": "ff8080819b0b50f201a0477964527fe9",
+      "material_id": "5A11C35091040D75E06302C7FE0A6F8B",
+      "original_name": "劳动人事争议仲裁申请书.doc",
+      "official_kind": "blank",
+      "official_label": "空白表格",
+      "file": "templates/_docx/_regional/340103000000/ff8080819b0b50f201a0477964527fe9-劳动人事争议仲裁申请书.doc",
+      "file_type": "doc",
+      "sha256": "9184dcf8f7249b050e70eee023bc23bc392d9f2c4bca9247f87d25d8faae71e3",
+      "bytes": 17920,
+      "download_url": "https://hf.ahzwfw.gov.cn/intranet/group2/M00/76/59/rB8ITWdfz6eAavG0AABGABvWtNc162.doc",
+      "downloaded_at": "2026-10-28T12:31:04.441076+00:00",
+      "download_status": "downloaded",
+      "document_types": [],
+      "content_verification_status": "NOT_RUN",
+      "content_classification": "official_label_unreviewed_content",
+      "download_manifest": {
+        "file": "reports/remote-ai-localities-20261028/anhui/luyang/downloads/manifest.json",
+        "sha256": "bbb092b0489ebd4ce8130adfc3037941831f26d3ac222776cd5572cc286ae344"
+      },
+      "download_provenance": {
+        "requested_url_sha256": "79c216efd513488cb3b353fb7dd5244cd7d47cf2c95133cb06d85f39c6a22ed2",
+        "final_url_sha256": "79c216efd513488cb3b353fb7dd5244cd7d47cf2c95133cb06d85f39c6a22ed2",
+        "http_status": 200,
+        "downloaded_at": "2026-10-28T12:31:04.441076+00:00",
+        "request_credentials": "none",
+        "response_session_headers": "present_value_not_saved"
+      }
+    },
+    {
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/public-component-without-url-queries.json",
+      "capture_sha256": "2b35a2258b896245b35a0a729dccd582ff646227ba915f9e65ea6b41c31e064f",
+      "collected_at": "2026-10-28T12:26:58.347637+00:00",
+      "transformed_public_metadata": true,
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "region_code": "340103",
+      "id": "ff8080819b0b50f201a0477964567ff9",
+      "annex_id": "ff8080819b0b50f201a0477964567ff9",
+      "material_id": "5A11C35091040D75E06302C7FE0A6F8B",
+      "original_name": "劳动人事争议仲裁申请书.doc",
+      "official_kind": "sample",
+      "official_label": "示例样表",
+      "file": "templates/_docx/_regional/340103000000/ff8080819b0b50f201a0477964567ff9-劳动人事争议仲裁申请书.doc",
+      "file_type": "doc",
+      "sha256": "64b9d92ded0bc0ecdc111a00f71b703d3948dfe3dd52b1d3dbf34d6411d04ed1",
+      "bytes": 18432,
+      "download_url": "https://hf.ahzwfw.gov.cn/intranet/group2/M00/76/59/rB8ITmdfz6eAWoQoAABIACARP4Y516.doc",
+      "downloaded_at": "2026-10-28T12:31:07.791402+00:00",
+      "download_status": "downloaded",
+      "document_types": [],
+      "content_verification_status": "NOT_RUN",
+      "content_classification": "official_label_unreviewed_content",
+      "download_manifest": {
+        "file": "reports/remote-ai-localities-20261028/anhui/luyang/downloads/manifest.json",
+        "sha256": "bbb092b0489ebd4ce8130adfc3037941831f26d3ac222776cd5572cc286ae344"
+      },
+      "download_provenance": {
+        "requested_url_sha256": "774b2a103beefb1b2d8492beab5c7eb6e01a02d3261c47b13f49d84eba587441",
+        "final_url_sha256": "774b2a103beefb1b2d8492beab5c7eb6e01a02d3261c47b13f49d84eba587441",
+        "http_status": 200,
+        "downloaded_at": "2026-10-28T12:31:07.791402+00:00",
+        "request_credentials": "none",
+        "response_session_headers": "present_value_not_saved"
+      }
+    },
+    {
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/public-component-without-url-queries.json",
+      "capture_sha256": "2b35a2258b896245b35a0a729dccd582ff646227ba915f9e65ea6b41c31e064f",
+      "collected_at": "2026-10-28T12:26:58.347637+00:00",
+      "transformed_public_metadata": true,
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+      "region_code": "340103",
+      "id": "ff8080819b0b50f201a0477964590005",
+      "annex_id": "ff8080819b0b50f201a0477964590005",
+      "material_id": null,
+      "original_name": "劳动人事争议仲裁申请-办理流程图.png",
+      "official_kind": "instruction",
+      "official_label": "办理流程图",
+      "file": "templates/_docx/_regional/340103000000/ff8080819b0b50f201a0477964590005-劳动人事争议仲裁申请-办理流程图.png",
+      "file_type": "png",
+      "sha256": "41df10d6bbd29651becb29596e28fecd404141fbcb0c2332da8d45c0122ec0ac",
+      "bytes": 36210,
+      "download_url": "https://hf.ahzwfw.gov.cn/intranet/group2/M00/5B/B2/rB8ITmWo3pyAMV7jAACNci_tSSU498.png",
+      "downloaded_at": "2026-10-28T12:31:10.121026+00:00",
+      "download_status": "downloaded",
+      "document_types": [],
+      "content_verification_status": "NOT_RUN",
+      "content_classification": "workflow_instruction",
+      "download_manifest": {
+        "file": "reports/remote-ai-localities-20261028/anhui/luyang/downloads/manifest.json",
+        "sha256": "bbb092b0489ebd4ce8130adfc3037941831f26d3ac222776cd5572cc286ae344"
+      },
+      "download_provenance": {
+        "requested_url_sha256": "9b489936a0e3396aeb8838112e65738b45b1e20c054b8123c2b8f1b8564802b7",
+        "final_url_sha256": "9b489936a0e3396aeb8838112e65738b45b1e20c054b8123c2b8f1b8564802b7",
+        "http_status": 200,
+        "downloaded_at": "2026-10-28T12:31:10.121026+00:00",
+        "request_credentials": "none",
+        "response_session_headers": "present_value_not_saved"
+      }
+    }
+  ],
+  "sections": {
+    "基本信息": "目录清单名称 劳动人事争议调解仲裁 目录子项名称 劳动人事争议仲裁申请 事项名称 劳动人事争议仲裁申请 基本编码 002014302002 事项类型 公共服务 事项编码 1134010376083788274002014302002 服务对象 自然人,法人 实施清单编码 113401037608378827400201430200201 法定办结时限 45个工作日 说明 法定办结时限说明承诺办结时限 1个工作日 说明 承诺办结时限说明是否收费 否 办理深度 四级(全程网办) 办理形式 网上办理,窗口办理到办事现场次数 0次 网上办理形式 互联网咨询,互联网收件,互联网预审,互联网受理,互联网办理,互联网办理结果信息反馈 办理地点政务服务中心 安徽省合肥市庐阳区北二环与大房郢路交口庐阳区政务服务中心人社综合窗口查看地图 办理时间 正常工作日上午9:00~12:00，下午12:00~5:00 所属部门 合肥市庐阳区人力资源和社会保障局 所属区划 庐阳区 实施主体 合肥市庐阳区人力资源和社会保障局 实施主体性质 法定机关 行使层级县级办件类型 即办件 委托部门 无 权力来源 法定本级行使 行使内容 待补。 是否属于联办件 否 是否有联办机构 否 联办机构 无 是否有权限划分 是 划分标准管辖区域和层级。是否属于上报件 否 下沉办理 否 通办范围 无 是否支持网上支付 否 阶段性办理 否 办理时间段 无 是否有特别程序 否 特别程序 无 特别程序是否支持预约 否 预约渠道 无 是否有数量限制 无 数量限制说明 无 数量限制依据 无 是否支持代办 否 是否进驻大厅 是 材料收取形式 窗口收取,线上收取 结果名称 无 结果样本 无 结果领取方式 窗口领取 办理结果领取说明 无 监督投诉方式0551-65699505 咨询方式0551-65699354年审年检无设定依据1.《中华人民共和国劳动争议调解仲裁法》第二条：中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用 本法：（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除 名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议； （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。第五 条：发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、 调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁；对仲裁裁决不服的，除本法另有规定的 外，可以向人民法院提起诉讼。 2.《劳动人事争议仲裁办案规则》（中华人民共和国人力资源和社会保障部令第33号）第二条：本规则适用下列争议的仲 裁：（一）企业、个体经济组织、民办非企业单位等组织与劳动者之间，以及机关、事业单位、社会团体与其建立劳动 关系的劳动者之间，因确认劳动关系，订立、履行、变更、解除和终止劳动合同，工作时间、休息休假、社会保险、福 利、培训以及劳动保护，劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（二）实施公务员法的机关与聘 任制公务员之间、参照公务员法管理的机关（单位）与聘任工作人员之间因履行聘任合同发生的争议；（三）事业单位 与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（四）社会团体与其建立人事关系的 工作人员之间因终止人事关系以及履行聘用合同发生的争议；（五）军队文职人员用人单位与聘用制文职人员之间因履 行聘用合同发生的争议；（六）法律、法规规定由劳动人事争议仲裁委员会处理的其他争议。 3.《劳动人事争议仲裁组织规则》（中华人民共和国人力资源和社会保障部令第34号）第七条：仲裁委员会依法履行下列 职责：（一）聘任、解聘专职或者兼职仲裁员；（二）受理争议案件；（三）讨论重大或者疑难的争议案件；（四）监 督本仲裁委员会的仲裁活动；（五）制定本仲裁委员会的工作规则；（六）其他依法应当履行的职责。展开",
+    "受理条件": "中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法： （一）因确认劳动关系发生的争议； （二）因订立、履行、变更、解除和终止劳动合同发生的争议； （三）因除名、辞退和辞职、离职发生的争议； （四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议； （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议； （六）法律、法规规定的其他劳动争议。",
+    "申请材料": "材料名称来源渠道材料类型纸质材料份数材料形式材料必要性填报须知材料填写样本其他说明劳动人事争议仲裁申请书 申请人自备原件或复印件原件2份,复印件2份纸质或电子必要材料规范、清晰、有效，一经提交申请人对申报材料实质内容的真实性负责。窗口...空白表格示例样表查看中华人民共和国居民身份证 已关联电子证照申请人自备原件和复印件原件1份,复印件1份纸质或电子必要材料规范、清晰、有效，一经提交申请人对申报材料实质内容的真实性负责。窗口...无查看证据 申请人自备原件或复印件原件2份,复印件2份纸质或电子必要材料规范、清晰、有效，一经提交申请人对申报材料实质内容的真实性负责。窗口...无查看其他说明",
+    "办理流程": "查看流程图1.受理：对申请人提出的申请，依法按照受理、补正告知、不予受理三种情况作出处理，并出具书面凭证； 2.审查：业务审查岗人员对材料的真实性、合法性、有效性进行审查； 3.办结：材料齐全，符合法定形式的，及时予以办结。环节办理时限办理单位办理人办理岗位岗位职责特殊程序受理0.3个工作日合肥市庐阳区人力资源和社会保障局杨家琦业务受理岗1.严格执行窗口管理的各项规章制度，统一受理业务。 2.负责申请材料收件审核。 3.负责受理申请材料的收件登记、打印回执。 4.负责告知申请人补交材料等手续。 无审查0.4个工作日合肥市庐阳区人力资源和社会保障局杨家琦业务审查岗 1.严格执行窗口管理的各项规章制度。 2.负责详细审查材料的真实性、合法性、有效性。 3.负责出具审查意见。无办结0.3个工作日合肥市庐阳区人力资源和社会保障局杨家琦业务办结岗 1.严格执行窗口管理的各项规章制度。 2.负责对申请事项及时办结处理，并将办件结果传达至申请人。 3.负责对办件情况进行整理，形成办件台账。无特殊程序",
+    "中介服务": "本事项不涉及中介服务中介机构",
+    "常见问题": "问题解答申请仲裁时效是多久？劳动争议申请仲裁的时效期间为一年。仲裁时效期间从当事人知道或者应当知道其权利被侵害之日起计算。但对下列情形依法另行计算： 1、因当事人一方向对方当事人主张权利，或者向有关部门请求权利救济，或者对方当事人同意履行义务而中断。从中断时起，仲裁时效期间重新计算。 2、因不可抗力或者有其他正当理由，当事人不能在一年内申请仲裁的，仲裁时效中止。从中止时效的原因消除之日起，仲裁时效期间继续计算。 3、劳动关系存续期间因拖欠劳动报酬发生争议的，劳动者申请仲裁不受一年的仲裁时效期间限制;但是，劳动关系终止的，应当自劳动关系终止之日起一年内提出。需要说明的是，发生劳动争议后当事人应及时维权。申请劳动人事争议调解后，是否可以申请仲裁？您好，发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁。申请劳动仲裁注意事项？一般来说，申请劳动争议仲裁要注意以下事项： 1、应写好申诉书。根据规定，当事人申请劳动争议仲裁时应提交申诉书，并按被诉人数提交副本。申诉书应当写明下列事项： (1)当事人的身份，包括职工当事人的姓名、年龄、性别、工作单位、住址、职务，用人单位的名称、地址及法定代表人的姓名、职务; (2)仲裁请求所根据的事实和理由，申诉人应当将自己与被申诉人如何处理等问题全面、准确、简练地写清; (3)证据和证人的姓名、住址，提供有关争议情况的各种证据和证人，务必确实充分; (4)申请日期。 2、应在申诉期限提出。 当事人一方要求仲裁的，应当自劳动争议发生之日起60日内提出书面申请。在规定的期限内，当事人未提出书面申请的，时效届满后就不再有申请权，仲裁机构也不再受理。但因不可抗力或者有其他正当理由超过60日期限而行使申诉权利的，仲裁机构可以受 理。 3、要向有管辖权的仲裁机构提出申请。 县、市、市辖区仲裁委员会负责本行政区域内发生的劳动争议。但是，按规定应当由设区市的仲裁委员会受理的除外。如果发生劳动争议的单位与职工不在同一个仲裁委员会管辖地区的，当事人应当向职工当事人一方工资关系所在地的仲裁委员申请仲裁。 4、要按规定的期限履行调解书或裁决书确定的义务。一方当事人对生效的调解书或裁决书不履行的，另一方可申请人民法院强制执行。",
+    "时限说明": "法定办结时限说明仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。"
+  },
+  "channel": {
+    "raw_value": "网上办理,窗口办理",
+    "form": "window_and_online",
+    "online_status": "auth_required_unverified",
+    "entry_url": null,
+    "entry_check": {
+      "status": "auth_required",
+      "exact_service_verified": false,
+      "evidence_file": "reports/remote-ai-localities-20261028/anhui/luyang/online-check-corrected.json"
+    }
+  },
+  "source_issues": [
+    {
+      "type": "statutory_time_unit_conflict",
+      "detail": "基本表为45个工作日；实际展开法定说明写受理起四十五日、复杂可延长最多十五日。逐字保留，未自行统一单位。"
+    },
+    {
+      "type": "promise_scope_unexplained",
+      "detail": "承诺1个工作日说明弹窗仅标题、正文为空；流程表为受理0.3/审查0.4/办结0.3工作日，不能认定全仲裁1日完结。"
+    },
+    {
+      "type": "faq_limitation_conflict",
+      "detail": "同一FAQ同时写仲裁时效一年及注意事项60日，保留冲突并待官方核实；未转化为用户期限提示。"
+    },
+    {
+      "type": "online_boundary_unverified",
+      "detail": "实际在线办理停于统一登录，回调为通用transition.html，不证明自身事项可线上提交。"
+    },
+    {
+      "type": "attachment_content_unreviewed",
+      "detail": "两份DOC按官网空白/示例标签分类；未转换、填写或逐页渲染，不断言内部字段空白或样例内容安全。"
+    }
+  ],
+  "official_identity": {
+    "ssqdCode": "da27275dce0645ffb87c9d9423e84452",
+    "ssqdZoneCode": "340103000000",
+    "ssqdZoneName": "庐阳区",
+    "ssqdBaseCode": "113401037608378827400201430200201",
+    "ssqdDeptName": "合肥市庐阳区人力资源和社会保障局",
+    "implementOrgName": "合肥市庐阳区人力资源和社会保障局"
+  },
+  "evidence": {
+    "captures": {
+      "basic": {
+        "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+        "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/basic/dom.json",
+        "capture_sha256": "aa9694ac4aa2843195c201f5e814e699c941d40f2abf50b58633c9402967283d",
+        "collected_at": "2026-10-28T12:25:54.305Z"
+      },
+      "conditions-success": {
+        "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+        "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/conditions-success/dom.json",
+        "capture_sha256": "911a3aad7a0fbb1de879630c6f8430ec7a994068597c7044955de4f8c2a4fff3",
+        "collected_at": "2026-10-28T12:26:47.991Z"
+      },
+      "materials-success": {
+        "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+        "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/materials-success/dom.json",
+        "capture_sha256": "2d92427c656e9df9f1c67f3d24d50f6e025e6ed86a39cd5aa9d7311d407c1240",
+        "collected_at": "2026-10-28T12:26:48.452Z"
+      },
+      "process": {
+        "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+        "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/process/dom.json",
+        "capture_sha256": "dc85eeaebfe3b9c94d4f663415ec335cca4e3d9f41b2a15b646c7b584b9feace",
+        "collected_at": "2026-10-28T12:29:34.325Z"
+      },
+      "intermediary": {
+        "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+        "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/intermediary/dom.json",
+        "capture_sha256": "e4514d4998a913ecb6318ebcd741b435e032aaa59f15aec83efc8cad9147968d",
+        "collected_at": "2026-10-28T12:29:34.785Z"
+      },
+      "faq": {
+        "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+        "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/faq/dom.json",
+        "capture_sha256": "002d52dd65f83a97fd6dbddac8669931b69f9caf36f374d15fbfa0c5bbe72d55",
+        "collected_at": "2026-10-28T12:29:35.183Z"
+      },
+      "detail-application": {
+        "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+        "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/detail-application/dom.json",
+        "capture_sha256": "3723a28c7e4d2266101912f608be8ec6e6ab680000f3941c6f41faed07ff7c60",
+        "collected_at": "2026-10-28T12:26:58.734Z"
+      },
+      "detail-id": {
+        "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+        "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/detail-id/dom.json",
+        "capture_sha256": "c4c545de78e1dadbb0dfc89167802bd2a1a021dd4f24c960e7aa5f274c39033a",
+        "collected_at": "2026-10-28T12:27:12.366Z"
+      },
+      "detail-evidence": {
+        "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+        "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/detail-evidence/dom.json",
+        "capture_sha256": "2e2e26cd2382a36665a0ee4a37770c43b0e4f3977e08485a6f288d676cb1b1d4",
+        "collected_at": "2026-10-28T12:27:13.564Z"
+      },
+      "statutory-explanation-dialog": {
+        "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+        "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/statutory-explanation-dialog/dom.json",
+        "capture_sha256": "4da6462c7a1ad42da508d4e97522de143cc27765943951e50e2da51b0814611c",
+        "collected_at": "2026-10-28T12:26:33.511Z"
+      },
+      "promise-explanation-dialog": {
+        "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+        "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/promise-explanation-dialog/dom.json",
+        "capture_sha256": "c20a89d996cc0dccec1b5779fa57e93cbc7134be9cc31de558cc24eb67b21ce7",
+        "collected_at": "2026-10-28T12:26:47.045Z"
+      },
+      "application-notice-hover": {
+        "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+        "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/application-notice-hover/dom.json",
+        "capture_sha256": "68826cfe33611bcda78b93b95cf9bec0ffa901a6a158acffe6aaec127ca9089a",
+        "collected_at": "2026-10-28T12:29:33.809Z"
+      }
+    },
+    "public_component": {
+      "capture_file": "reports/remote-ai-localities-20261028/anhui/luyang/public-component-without-url-queries.json",
+      "capture_sha256": "2b35a2258b896245b35a0a729dccd582ff646227ba915f9e65ea6b41c31e064f",
+      "collected_at": "2026-10-28T12:26:58.347637+00:00",
+      "transformed_public_metadata": true
+    }
+  },
+  "publication_status": "unpublished",
+  "warnings": [
+    "自身来源采集，不是发布或文书适配通过。",
+    "公开component仅省略附件URL查询，完整原始component私有封存；未保存Cookie或Authorization值。"
+  ]
+}

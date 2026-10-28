@@ -1,0 +1,18 @@
+{
+  "province": "anhui",
+  "city": "合肥市",
+  "district": "庐阳区",
+  "region_code": "340103",
+  "id": "670486922930b5c0d4b2fed0bd85d44f",
+  "type": "ONLINE_CHANNEL_UNVERIFIED",
+  "service": "劳动人事争议仲裁申请",
+  "keyword": "劳动人事争议仲裁申请",
+  "url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+  "occurred_at": null,
+  "screenshot": null,
+  "reason": "网上办理止于通用登录回调，未核实本事项登录后可否提交。",
+  "attempts": 1,
+  "final_status": "pending_manual_verification",
+  "remediation": "保留自身证据和差异；不登录、不代交、不套用邻区或省级要求。",
+  "delivery_status": "PENDING_OPENCLAW"
+}

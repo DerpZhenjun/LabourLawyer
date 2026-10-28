@@ -1,0 +1,29 @@
+{
+  "source_url": "https://www.ahzwfw.gov.cn/bog-search-web/pages/search-results.do?xzqh=340103000000&searchWord=%E5%8A%B3%E5%8A%A8%E4%BA%BA%E4%BA%8B%E4%BA%89%E8%AE%AE%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7",
+  "captured_at": "2026-10-28T12:25:05.556Z",
+  "records": {
+    "dom": {
+      "status": "withheld_private",
+      "sha256": "4fe3b064b71c23ff5d3300e5d11f237883c20a092baa6b4821c01df77256eb36",
+      "bytes": 228350,
+      "reason": "opaque URL/session context"
+    },
+    "rendered": {
+      "status": "public",
+      "path": "luyang/search/rendered.json",
+      "sha256": "f6ecdba83b41a765a09b8fdf58f0a9eb08f62087efc5dc0141284de9ca47dcd3",
+      "bytes": 5493
+    },
+    "snapshot": {
+      "status": "public",
+      "path": "luyang/search/snapshot.json",
+      "sha256": "f5b002a44bc561e90b8b95daf6f107cb775075245627202278799553726b864d",
+      "bytes": 22021
+    },
+    "screenshot": {
+      "path": "luyang/search/page.png",
+      "sha256": "697707cee3ba5221a13ce290d8e66b4c93dbecdce6315cd64d034b39b195c9b9",
+      "bytes": 345971
+    }
+  }
+}

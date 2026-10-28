@@ -1,0 +1,252 @@
+{
+  "lifecycle": {
+    "effectiveLaunch": {
+      "browserLaunched": true,
+      "engine": "chrome",
+      "launchHash": 3511867796762804771
+    },
+    "launched": false,
+    "relaunchedBrowser": false,
+    "restartedBackground": false,
+    "restoreStatus": "not_configured",
+    "reused": true,
+    "saveStatus": "not_attempted"
+  },
+  "origin": "https://www.ahzwfw.gov.cn/bog-search-web/pages/search-results.do?xzqh=340103000000&searchWord=%E5%8A%B3%E5%8A%A8%E4%BA%BA%E4%BA%8B%E4%BA%89%E8%AE%AE%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7",
+  "refs": {
+    "e1": {
+      "name": "",
+      "role": "generic"
+    },
+    "e10": {
+      "name": "反馈建议",
+      "role": "link"
+    },
+    "e11": {
+      "name": "安徽政务服务网 全国一体化在线政务服务平台 皖事通办",
+      "role": "link"
+    },
+    "e12": {
+      "name": "",
+      "role": "generic"
+    },
+    "e13": {
+      "name": "",
+      "role": "generic"
+    },
+    "e14": {
+      "name": "",
+      "role": "generic"
+    },
+    "e15": {
+      "name": " 满意",
+      "role": "button"
+    },
+    "e16": {
+      "name": " 不满意",
+      "role": "button"
+    },
+    "e17": {
+      "name": "",
+      "role": "link"
+    },
+    "e18": {
+      "name": "备案序号：皖ICP备17023147号",
+      "role": "link"
+    },
+    "e19": {
+      "name": "皖公网安备 34011102000822号",
+      "role": "link"
+    },
+    "e2": {
+      "name": "",
+      "role": "generic"
+    },
+    "e20": {
+      "name": "",
+      "role": "textbox"
+    },
+    "e21": {
+      "name": "",
+      "role": "textbox"
+    },
+    "e22": {
+      "name": "",
+      "role": "textbox"
+    },
+    "e23": {
+      "name": "",
+      "role": "textbox"
+    },
+    "e24": {
+      "name": "请输入您要找的服务",
+      "role": "textbox"
+    },
+    "e25": {
+      "name": "高级检索",
+      "role": "link"
+    },
+    "e26": {
+      "name": "搜索帮助",
+      "role": "link"
+    },
+    "e27": {
+      "name": "高职扩招",
+      "role": "link"
+    },
+    "e28": {
+      "name": "租房补贴",
+      "role": "link"
+    },
+    "e29": {
+      "name": "开公司",
+      "role": "link"
+    },
+    "e3": {
+      "name": "",
+      "role": "generic"
+    },
+    "e30": {
+      "name": "食品经营许可证",
+      "role": "link"
+    },
+    "e31": {
+      "name": "没有找到你要的结果？",
+      "role": "heading"
+    },
+    "e32": {
+      "name": "国家政务服务平台",
+      "role": "link"
+    },
+    "e33": {
+      "name": "安徽省人民政府",
+      "role": "link"
+    },
+    "e34": {
+      "name": "无障碍浏览",
+      "role": "link"
+    },
+    "e35": {
+      "name": "登录",
+      "role": "link"
+    },
+    "e36": {
+      "name": "安装",
+      "role": "link"
+    },
+    "e37": {
+      "name": "2",
+      "role": "link"
+    },
+    "e38": {
+      "name": "3",
+      "role": "link"
+    },
+    "e39": {
+      "name": "4",
+      "role": "link"
+    },
+    "e4": {
+      "name": "",
+      "role": "generic"
+    },
+    "e40": {
+      "name": "5",
+      "role": "link"
+    },
+    "e41": {
+      "name": "下一页",
+      "role": "link"
+    },
+    "e42": {
+      "name": "末页",
+      "role": "link"
+    },
+    "e43": {
+      "name": "",
+      "role": "generic"
+    },
+    "e44": {
+      "name": "",
+      "role": "generic"
+    },
+    "e45": {
+      "name": "",
+      "role": "generic"
+    },
+    "e46": {
+      "name": "",
+      "role": "generic"
+    },
+    "e47": {
+      "name": "",
+      "role": "generic"
+    },
+    "e48": {
+      "name": "",
+      "role": "generic"
+    },
+    "e49": {
+      "name": "",
+      "role": "LabelText"
+    },
+    "e5": {
+      "name": "搜索",
+      "role": "button"
+    },
+    "e50": {
+      "name": "",
+      "role": "LabelText"
+    },
+    "e51": {
+      "name": "",
+      "role": "LabelText"
+    },
+    "e52": {
+      "name": "",
+      "role": "LabelText"
+    },
+    "e53": {
+      "name": "",
+      "role": "LabelText"
+    },
+    "e54": {
+      "name": "",
+      "role": "LabelText"
+    },
+    "e55": {
+      "name": "",
+      "role": "LabelText"
+    },
+    "e56": {
+      "name": "",
+      "role": "LabelText"
+    },
+    "e57": {
+      "name": "",
+      "role": "LabelText"
+    },
+    "e58": {
+      "name": "",
+      "role": "LabelText"
+    },
+    "e6": {
+      "name": "",
+      "role": "link"
+    },
+    "e7": {
+      "name": "关于本网",
+      "role": "link"
+    },
+    "e8": {
+      "name": "本站声明",
+      "role": "link"
+    },
+    "e9": {
+      "name": "帮助中心",
+      "role": "link"
+    }
+  },
+  "removedRefs": [],
+  "snapshot": "- generic\n  - generic\n    - link \"安徽政务服务网 全国一体化在线政务服务平台 皖事通办\" [ref=e11]\n      - image \"安徽政务服务网\"\n      - generic\n        - StaticText \"全国一体化在线政务服务平台\"\n        - StaticText \"皖事通办\"\n    - generic\n      - list\n        - listitem [level=1]\n          - link \"国家政务服务平台\" [ref=e32]\n          - link \"安徽省人民政府\" [ref=e33]\n          - link \"无障碍浏览\" [ref=e34]\n            - StaticText \"无障碍浏览\"\n      - generic\n        - link \"登录\" [ref=e35]\n        - StaticText \"/ \"\n        - generic\n          - StaticText \"注册\"\n    - StaticText \"智能云搜索\"\n    - generic\n      - generic\n        - StaticText \"使用帮助\"\n        - generic [ref=e1] clickable [cursor:pointer]\n          - StaticText \"×\"\n        - generic [ref=e2] clickable [cursor:pointer]\n        - generic [ref=e12] focusable [tabindex]\n          - paragraph\n            - StaticText \"您可以使用设备上的麦克风进行语音输入，语音输入前需要进行以下步骤设置。\"\n          - paragraph\n            - StaticText \"首先点击输入框内的话筒按钮\"\n          - image\n          - paragraph\n            - StaticText \"选择“允许”、“记住”、点击“关闭”、点击“确定”之后，点击上图中的话筒就可以对着他说话啦。\"\n          - image\n          - paragraph\n            - StaticText \"语音输入需要flash支持，如果看不到话筒，请安装flash插件。\"\n            - link \"安装\" [ref=e36]\n        - generic [ref=e3] clickable [cursor:pointer]\n      - StaticText \"高级搜索\"\n      - StaticText \"  (若有多个关键词，请以空格区分)\"\n      - generic [ref=e4] clickable [cursor:pointer]\n        - StaticText \"×\"\n      - generic\n        - LayoutTable\n          - LabelText\n            - StaticText \"包含以下\"\n            - StaticText \"全部\"\n            - StaticText \"的关键词\"\n        - textbox [ref=e20]\n      - generic\n        - LayoutTable\n          - LabelText\n            - StaticText \"包含以下\"\n            - StaticText \"完整不拆分\"\n            - StaticText \"的关键词\"\n        - textbox [ref=e21]\n      - generic\n        - LayoutTable\n          - LabelText\n            - StaticText \"包含以下\"\n            - StaticText \"任意一个\"\n            - StaticText \"关键词\"\n        - textbox [ref=e22]\n      - generic\n        - LayoutTable\n          - LabelText\n            - StaticText \"不包括\"\n            - StaticText \"以下关键词\"\n        - textbox [ref=e23]\n      - button \"搜索\" [ref=e5]\n      - generic\n        - generic\n          - textbox \"请输入您要找的服务\" [ref=e24]: 劳动人事争议仲裁申请\n            - StaticText \"劳动人事争议仲裁申请\"\n          - generic [ref=e13] clickable [cursor:pointer]\n          - generic [ref=e14] clickable [cursor:pointer]\n            - StaticText \"搜索\"\n        - generic\n          - paragraph\n            - link \"高级检索\" [ref=e25]\n          - paragraph\n            - link \"搜索帮助\" [ref=e26]\n      - generic\n        - paragraph\n          - StaticText \"热词：\"\n        - list\n          - listitem [level=1]\n            - link \"高职扩招\" [ref=e27]\n          - listitem [level=1]\n            - link \"租房补贴\" [ref=e28]\n          - listitem [level=1]\n            - link \"开公司\" [ref=e29]\n          - listitem [level=1]\n            - link \"食品经营许可证\" [ref=e30]\n      - generic\n        - generic\n          - generic\n            - list\n              - listitem [level=1]\n                - generic [ref=e43] clickable [cursor:pointer]\n                  - StaticText \"办事服务\"\n              - listitem [level=1]\n                - generic [ref=e44] clickable [cursor:pointer]\n                  - StaticText \"办事场所\"\n              - listitem [level=1]\n                - generic [ref=e45] clickable [cursor:pointer]\n                  - StaticText \"办事互动\"\n              - listitem [level=1]\n                - generic [ref=e46] clickable [cursor:pointer]\n                  - StaticText \"政策法规\"\n            - StaticText \"AI 皖美智搜为您推荐以下服务\"\n            - StaticText \"办事服务\"\n            - StaticText \"劳动人事争议仲裁申请\"\n            - generic\n              - StaticText \"内容由AI生成，仅供参考\"\n              - generic\n                - generic [ref=e47] clickable [cursor:pointer]\n                - generic [ref=e48] clickable [cursor:pointer]\n            - list\n              - listitem [level=1]\n                - generic\n                  - LabelText [ref=e49] clickable [cursor:pointer]\n                    - StaticText \"劳动人事争议仲裁申请\"\n                  - generic\n                    - generic\n                      - LabelText\n                        - StaticText \"指导部门：\"\n                      - StaticText \"中华人民共和国人力资源和社会保障部\"\n                    - generic\n                      - LabelText\n                        - StaticText \"办理层级：\"\n                      - StaticText \"县级\"\n                    - generic\n                      - LabelText\n                        - StaticText \"服务对象：\"\n                      - StaticText \"自然人,法人\"\n                    - generic\n                      - LabelText\n                        - StaticText \"事项类型：\"\n                      - StaticText \"公共服务\"\n                    - generic\n                      - LabelText\n                        - StaticText \"受理条件：\"\n                      - StaticText \"劳动争议仲裁委员会负责管辖本区域内发生的劳动争议。\"\n              - listitem [level=1]\n                - generic\n                  - LabelText [ref=e50] clickable [cursor:pointer]\n                    - StaticText \"劳动人事争议仲裁员资格审核认定\"\n                  - generic\n                    - generic\n                      - LabelText\n                        - StaticText \"指导部门：\"\n                      - StaticText \"中华人民共和国人力资源和社会保障部\"\n                    - generic\n                      - LabelText\n                        - StaticText \"办理层级：\"\n                      - StaticText \"省级\"\n                    - generic\n                      - LabelText\n                        - StaticText \"服务对象：\"\n                      - StaticText \"法人\"\n                    - generic\n                      - LabelText\n                        - StaticText \"事项类型：\"\n                      - StaticText \"其他行政权力\"\n                    - generic\n                      - LabelText\n                        - StaticText \"受理条件：\"\n                      - StaticText \"1.符合《劳动争议调解仲裁法》规定的四个条件之一： （一）曾任审判员的； （二）从事法律研究、教学工作并具有中级以上职称的； （三）具有法律知识、从事力资源管理或者工会等专业工作满五年的； （四）律师执业满三年的。 2.在《劳动争议调解仲裁法》颁布之后，参加过省级或省以上力资源社会保障行政部门组织的调解仲裁业务培训，经考试合格并取得培训合格证书； 3.经劳动人...\"\n              - listitem [level=1]\n                - generic\n                  - LabelText [ref=e51] clickable [cursor:pointer]\n                    - StaticText \"劳动人事争议调解申请\"\n                  - generic\n                    - generic\n                      - LabelText\n                        - StaticText \"指导部门：\"\n                      - StaticText \"中华人民共和国人力资源和社会保障部\"\n                    - generic\n                      - LabelText\n                        - StaticText \"办理层级：\"\n                      - StaticText \"县级,乡级\"\n                    - generic\n                      - LabelText\n                        - StaticText \"服务对象：\"\n                      - StaticText \"自然人,法人\"\n                    - generic\n                      - LabelText\n                        - StaticText \"事项类型：\"\n                      - StaticText \"公共服务\"\n                    - generic\n                      - LabelText\n                        - StaticText \"受理条件：\"\n                      - StaticText \"用人单位或劳动者发生劳动人事争议，可以口头或者书面形式向辖区内的调解组织提出调解申请。 不予受理的基本情形： 1.已经仲裁、诉讼程序的； 2. 已经其他调解组织调解的。\"\n              - listitem [level=1]\n                - generic\n                  - LabelText [ref=e52] clickable [cursor:pointer]\n                    - StaticText \"流动人员人事档案转出申请\"\n                  - paragraph\n                    - StaticText \"服务描述：流动人员人事档案转出申请\"\n              - listitem [level=1]\n                - generic\n                  - LabelText [ref=e53] clickable [cursor:pointer]\n                    - StaticText \"流动人员人事档案转入申请\"\n                  - paragraph\n                    - StaticText \"服务描述：流动人员人事档案转入申请\"\n              - listitem [level=1]\n                - generic\n                  - LabelText [ref=e54] clickable [cursor:pointer]\n                    - StaticText \"流动人员人事档案网上报到确认申请\"\n                  - paragraph\n                    - StaticText \"服务描述：流动人员人事档案网上报到确认申请\"\n              - listitem [level=1]\n                - generic\n                  - LabelText [ref=e55] clickable [cursor:pointer]\n                    - StaticText \"企业名称争议裁决\"\n                  - generic\n                    - generic\n                      - LabelText\n                        - StaticText \"指导部门：\"\n                      - StaticText \"国家市场监督管理总局\"\n                    - generic\n                      - LabelText\n                        - StaticText \"办理层级：\"\n                      - StaticText \"省级,市级,县级\"\n                    - generic\n                      - LabelText\n                        - StaticText \"服务对象：\"\n                      - StaticText \"法人\"\n                    - generic\n                      - LabelText\n                        - StaticText \"事项类型：\"\n                      - StaticText \"行政裁决\"\n                    - generic\n                      - LabelText\n                        - StaticText \"受理条件：\"\n                      - StaticText \"1.申请人应当是认为其他企业名称侵犯其企业名称合法权益的企业； 2.有明确的被申请人； 3.有具体的请求、事实、理由、法律依据和证据； 4.提交材料符合《企业名称登记管理规定实施办法》第三十六条规定。\"\n              - listitem [level=1]\n                - generic\n                  - LabelText [ref=e56] clickable [cursor:pointer]\n                    - StaticText \"劳动能力鉴定申请\"\n                  - generic\n                    - generic\n                      - LabelText\n                        - StaticText \"指导部门：\"\n                      - StaticText \"中华人民共和国人力资源和社会保障部\"\n                    - generic\n                      - LabelText\n                        - StaticText \"办理层级：\"\n                      - StaticText \"市级\"\n                    - generic\n                      - LabelText\n                        - StaticText \"服务对象：\"\n                      - StaticText \"自然人\"\n                    - generic\n                      - LabelText\n                        - StaticText \"事项类型：\"\n                      - StaticText \"公共服务\"\n                    - generic\n                      - LabelText\n                        - StaticText \"受理条件：\"\n                      - StaticText \"1.职工发生工伤，经治疗伤情相对稳定后存在残疾、影响劳动能力的，或者停工留薪期满（含劳动能力鉴定委员会确认的延长期限），工伤职工或者其用人单位应当及时设区的市级劳动能力鉴定委员会提出劳动能力鉴定申请。 2.劳动功能障碍程度和生活自理障碍程度鉴定结论作出之日起1年后，在工伤保险关系存续期间，工伤职工、用人单位或者社会保险经办机构认为伤残情况发生变化，可以向...\"\n              - listitem [level=1]\n                - generic\n                  - LabelText [ref=e57] clickable [cursor:pointer]\n                    - StaticText \"林木、林地权属争议裁决\"\n                  - generic\n                    - generic\n                      - LabelText\n                        - StaticText \"指导部门：\"\n                      - StaticText \"中华人民共和国自然资源部\"\n                    - generic\n                      - LabelText\n                        - StaticText \"办理层级：\"\n                      - StaticText \"县级,乡级\"\n                    - generic\n                      - LabelText\n                        - StaticText \"服务对象：\"\n                      - StaticText \"自然人,法人\"\n                    - generic\n                      - LabelText\n                        - StaticText \"事项类型：\"\n                      - StaticText \"行政裁决\"\n                    - generic\n                      - LabelText\n                        - StaticText \"受理条件：\"\n                      - StaticText \"申请人应为争议土地权属利益人\"\n              - listitem [level=1]\n                - generic\n                  - LabelText [ref=e58] clickable [cursor:pointer]\n                    - StaticText \"土地权属争议裁决\"\n                  - generic\n                    - generic\n                      - LabelText\n                        - StaticText \"指导部门：\"\n                      - StaticText \"中华人民共和国自然资源部\"\n                    - generic\n                      - LabelText\n                        - StaticText \"办理层级：\"\n                      - StaticText \"省级\"\n                    - generic\n                      - LabelText\n                        - StaticText \"服务对象：\"\n                      - StaticText \"法人\"\n                    - generic\n                      - LabelText\n                        - StaticText \"事项类型：\"\n                      - StaticText \"行政裁决\"\n                    - generic\n                      - LabelText\n                        - StaticText \"受理条件：\"\n                      - StaticText \"1.申请从与争议的土地有直接利害关系；2.有明确的请求处理对象、具体的处理请求和事实根据。\"\n            - generic\n              - StaticText \"首页\"\n              - StaticText \"上一页\"\n              - StaticText \"1\"\n              - link \"2\" [ref=e37]\n              - link \"3\" [ref=e38]\n              - link \"4\" [ref=e39]\n              - link \"5\" [ref=e40]\n              - link \"下一页\" [ref=e41]\n              - link \"末页\" [ref=e42]\n            - generic\n            - heading \"没有找到你要的结果？\" [level=3, ref=e31]\n            - StaticText \"您还可以通过网站的个人服务/法人服务分类查找、智能客服、拨打12345人工服务热线找到你想要的服务。\"\n        - StaticText \"您对本次搜索结果是否满意?\"\n        - generic\n          - button \" 满意\" [ref=e15]\n            - StaticText \" 满意\"\n          - button \" 不满意\" [ref=e16]\n            - StaticText \" 不满意\"\n    - generic\n      - link [ref=e6]\n      - link [ref=e17]\n        - image\n      - image\n    - generic\n      - link \"关于本网\" [ref=e7]\n      - link \"本站声明\" [ref=e8]\n        - StaticText \"本站声明\"\n      - link \"帮助中心\" [ref=e9]\n        - StaticText \"帮助中心\"\n      - link \"反馈建议\" [ref=e10]\n        - StaticText \"反馈建议\"\n    - paragraph\n      - StaticText \"主办单位：安徽省数据资源管理局\"\n      - StaticText \"运行单位：安徽省数据资源管理局\"\n    - paragraph\n      - link \"备案序号：皖ICP备17023147号\" [ref=e18]\n      - link \"皖公网安备 34011102000822号\" [ref=e19]\n      - StaticText \"网站标识码：3400000066\"\n    - paragraph\n      - StaticText \"服务热线：12345\""
+}
