@@ -24,7 +24,7 @@ from platform_api import router as platform_router
 from routes.province_documents import router as province_documents_router
 from routes.portal_reports import router as portal_reports_router
 from routes.regional_guides import router as regional_guides_router
-from llm_service.QA import generate_lawyer_chat
+from routes.ai import router as ai_router
 
 try:
     from routes.Zhejiang.la import router as zj_la_router
@@ -70,6 +70,7 @@ app.include_router(province_documents_router, prefix="/api/province-documents", 
 app.include_router(portal_reports_router, prefix="/api/portal-reports", tags=["政务门户观察报告"])
 app.include_router(regional_guides_router, prefix="/api/regional-guides", tags=["具体地区办理指南"])
 app.include_router(platform_router)
+app.include_router(ai_router)
 
 @app.middleware("http")
 async def security_headers(request: Request, call_next):
@@ -88,42 +89,6 @@ async def root():
 @app.get("/health", tags=["系统"])
 async def health():
     return {"status": "healthy", "service": "api"}
-
-class ChatMessage(BaseModel):
-    role: Literal["user", "assistant"]
-    content: str = Field(min_length=1, max_length=8000)
-
-
-class QuestionRequest(BaseModel):
-    question: str = Field(min_length=1, max_length=8000)
-    history: list[ChatMessage] = Field(default_factory=list, max_length=12)
-
-@app.post("/api/ask")
-async def qa_endpoint(req: QuestionRequest):
-    chat_history = [message.model_dump() for message in req.history]
-    if not chat_history or chat_history[-1] != {"role": "user", "content": req.question}:
-        chat_history.append({"role": "user", "content": req.question})
-
-    async def generate_stream():
-        try:
-            async for chunk in generate_lawyer_chat(history=chat_history):
-                if chunk:
-                    yield chunk
-        except Exception as e:
-            yield f"⚠️ 服务器内部错误: {str(e)}"
-
-    # ==========================================
-    # 核心修复区：加上禁用缓存的 Headers 和事件流 media_type
-    # ==========================================
-    return StreamingResponse(
-        generate_stream(), 
-        media_type="text/event-stream",  # 明确告诉前端和服务器：这是连绵不断的事件流
-        headers={
-            "Cache-Control": "no-cache", # 严禁浏览器缓存
-            "Connection": "keep-alive",  # 保持连接不断开
-            "X-Accel-Buffering": "no"    # 严禁网关/代理层（如 Nginx）缓冲数据
-        }
-    )
 
 if __name__ == "__main__":
     print("🚀 服务启动中: http://localhost:8000")

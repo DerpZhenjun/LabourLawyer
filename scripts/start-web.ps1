@@ -89,15 +89,10 @@ if (-not $npmCommand) {
     throw "Node.js/npm was not found. Install Node.js 20 or newer."
 }
 
-$env:LABOURLAWYER_LLM_MODEL = 'ollama/qwen3.8:27b'
-$env:OLLAMA_API_BASE = 'http://10.66.66.1:11434'
-try {
-    $ollamaModels = @((Invoke-RestMethod -Uri "$env:OLLAMA_API_BASE/api/tags" -TimeoutSec 10).models.name)
-    if ($ollamaModels -notcontains 'qwen3.8:27b') { throw 'Ubuntu Ollama does not list qwen3.8:27b.' }
-    Write-Host "[OK] Ubuntu AI model: qwen3.8:27b" -ForegroundColor Green
-} catch {
-    Write-Warning "Ubuntu Ollama is unavailable: $_. The web app can still generate documents; AI requests will fail until Ubuntu is reachable."
-}
+if (Test-Path -LiteralPath (Join-Path $runtimeDir 'remote-ai\settings.json')) {
+    try { & (Join-Path $PSScriptRoot 'start-remote-ai.ps1') }
+    catch { Write-Warning "Remote AI is unavailable: $_. Document generation remains available; no local model was started." }
+} else { Write-Host '[INFO] Remote AI is not configured; document generation remains available.' }
 
 if (-not (Test-Path -LiteralPath (Join-Path $frontendDir "node_modules"))) {
     Write-Host "[3/4] Installing frontend dependencies..." -ForegroundColor Cyan
