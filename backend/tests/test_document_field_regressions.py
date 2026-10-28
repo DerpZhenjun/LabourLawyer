@@ -3,6 +3,7 @@ import hashlib
 import json
 from pathlib import Path
 import sys
+import subprocess
 import unittest
 from docx import Document
 from docx.oxml.ns import qn
@@ -16,6 +17,8 @@ from routes.province_documents import ApplicationRequest,EvidenceRequest
 class DocumentFieldRegressions(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
+        subprocess.run(['node', str(ROOT/'scripts/export_document_examples.mjs')],
+                       cwd=ROOT, check=True, capture_output=True, timeout=30)
         cls.examples=json.loads((ROOT/'.runtime/document-audit/frontend-examples.json').read_text(encoding='utf8'))
 
     def example(self,slug):return next(x for x in self.examples if x['slug']==slug)

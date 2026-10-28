@@ -74,7 +74,7 @@ class BrowserRegressionTests(unittest.IsolatedAsyncioTestCase):
         self.assertIn('提交仲裁申请',await self.page.inner_text('body'))
     async def test_capital_then_first_visible_district_then_public_guide(self):
         from portal_guide_navigation import follow_public_guide
-        with tempfile.TemporaryDirectory(dir=ROOT/'.runtime/temp') as temp:
+        with tempfile.TemporaryDirectory() as temp:
             folder=Path(temp)/'jiangsu';folder.mkdir()
             await self.page.set_content('''<div id="city">选择办理区域<button onclick="document.querySelector('#city').remove();document.querySelector('#district').hidden=false">苏州市</button><button onclick="document.querySelector('#city').remove();document.querySelector('#district').hidden=false">南京市</button></div><div id="district" hidden>请选择地区<button onclick="document.querySelector('#district').remove();document.querySelector('#guides').hidden=false">玄武区</button><button>秦淮区</button></div><div id="guides" hidden>区/县<table><tr><td>第一个机构</td><td><button onclick="document.body.innerHTML='劳动人事争议仲裁申请 基本信息 申请材料 办理流程'">查看指南</button></td></tr><tr><td>第二个机构</td><td><button>查看指南</button></td></tr></table></div>''')
             page,selected,actions=await follow_public_guide(self.page,'苏州市',folder)

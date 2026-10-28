@@ -39,7 +39,7 @@
 
 本轮新增滨海县、响水县、杭州市上城区和滨江区的独立资料。滨江区材料栏与流程冲突，保留待核验；临平区搜索落到市本级的结果未作为该区指南。新候选未完成网页验收，未发布。没有任何省份被标记为“全区县完成”。
 
-运行后在 `/admin/regions` 查看实时矩阵。仓库中可核对 [公开数据版本](data/public-regions/manifest.json)、[候选登记](config/regional_candidates.json) 与 [地区接入说明](docs/regional-release.md)。
+运行后在 `/admin/regions` 查看实时矩阵。仓库中可核对 [逐省实际进度](docs/regions-status.md)、[公开数据版本](data/public-regions/manifest.json)、[候选登记](config/regional_candidates.json) 与 [地区接入说明](docs/regional-release.md)。
 
 ## 网页、Android 与小程序
 
