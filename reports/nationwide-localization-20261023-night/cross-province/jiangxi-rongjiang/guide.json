@@ -1,0 +1,425 @@
+{
+  "province": "jiangxi",
+  "province_name": "江西省",
+  "city": "赣州市",
+  "district": "蓉江新区",
+  "region_code": "360798",
+  "official_region_code": null,
+  "official_service_region_code": "360798",
+  "region_code_kind": "official_service_directory_code_not_administrative_division",
+  "service_name": "劳动人事争议仲裁申请",
+  "service_code": null,
+  "source_type": "official_document_notice",
+  "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+  "source_title": "赣州蓉江新区劳动人事争议仲裁申请书、证据目录及模板 | 赣州蓉江新区管理委员会",
+  "authority": "赣州蓉江新区劳动人事争议仲裁委员会",
+  "verification_status": "partial",
+  "collected_at": "2026-10-23T20:13:07.499Z",
+  "verified_at": "2026-10-23T20:13:07.499Z",
+  "fields": {
+    "办理形式": {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "raw_value": "",
+      "normalized_value": null,
+      "verification_status": "missing"
+    },
+    "办理时间": {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "raw_value": "",
+      "normalized_value": null,
+      "verification_status": "missing"
+    },
+    "服务对象": {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "raw_value": "",
+      "normalized_value": null,
+      "verification_status": "missing"
+    },
+    "法定办结时限": {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "raw_value": "",
+      "normalized_value": null,
+      "verification_status": "missing"
+    },
+    "承诺办结时限": {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "raw_value": "",
+      "normalized_value": null,
+      "verification_status": "missing"
+    },
+    "是否收费": {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "raw_value": "",
+      "normalized_value": null,
+      "verification_status": "missing"
+    },
+    "到办事现场次数": {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "raw_value": "",
+      "normalized_value": null,
+      "verification_status": "missing"
+    },
+    "必须到现场原因": {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "raw_value": "",
+      "normalized_value": null,
+      "verification_status": "missing"
+    },
+    "办理地点": {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "raw_value": "赣州蓉江新区潭东镇碧玉南路1号综合执法大队",
+      "normalized_value": "赣州蓉江新区潭东镇碧玉南路1号综合执法大队",
+      "original_label": "办公地址",
+      "verification_status": "verified",
+      "scope_note": "来自本区文书公告，不据此推断仅限窗口或仲裁管辖"
+    },
+    "咨询方式": {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "raw_value": "0797-8168180",
+      "normalized_value": "0797-8168180",
+      "original_label": "咨询电话",
+      "verification_status": "verified",
+      "scope_note": "来自本区文书公告，不据此推断仅限窗口或仲裁管辖"
+    }
+  },
+  "materials": [
+    {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "id": "d1194b2e407d9819e427",
+      "name": "劳动人事争议仲裁申请书",
+      "required": "需要提交",
+      "copies": "被申请人（第三人）人数+1份",
+      "raw_copies": "仲裁申请书一式两份，按照被申请人（第三人）人数+1份提交，用A4纸打印。",
+      "format": "A4纸打印",
+      "original_copy": null,
+      "purpose": null,
+      "applicable_conditions": "按被申请人（第三人）人数准备",
+      "details": {
+        "官方材料原文": "仲裁申请书一式两份，按照被申请人（第三人）人数+1份提交，用A4纸打印。"
+      },
+      "verification_status": "verified"
+    },
+    {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "id": "a52bf34cf3c073469f94",
+      "name": "XX（申请人）身份证复印件",
+      "required": "必须提供",
+      "copies": "被申请人（第三人）人数+1份",
+      "raw_copies": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+      "format": null,
+      "original_copy": "复印件",
+      "purpose": "申请人的主体资格",
+      "applicable_conditions": null,
+      "details": {
+        "官方证据目录示例行": "1 | XX（申请人）身份证复印件 |  | 申请人的主体资格 | 1",
+        "官方份数原文": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+        "示例页码（不是要求）": "1",
+        "证据来源示例": "",
+        "范围说明": "证据名称和页码来自本区示例，按真实材料替换；未将十行全部设为必需"
+      },
+      "verification_status": "verified"
+    },
+    {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "id": "4a6618ad495f51dc99e6",
+      "name": "企业/单位（被申请人）工商登记信息（营业执照或国家企业信用信息公示报告）",
+      "required": "必须提供",
+      "copies": "被申请人（第三人）人数+1份",
+      "raw_copies": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+      "format": null,
+      "original_copy": null,
+      "purpose": "被申请人的主体资格",
+      "applicable_conditions": null,
+      "details": {
+        "官方证据目录示例行": "2 | 企业/单位（被申请人）工商登记信息（营业执照或国家企业信用信息公示报告） |  | 被申请人的主体资格 | 2",
+        "官方份数原文": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+        "示例页码（不是要求）": "2",
+        "证据来源示例": "",
+        "范围说明": "证据名称和页码来自本区示例，按真实材料替换；未将十行全部设为必需"
+      },
+      "verification_status": "verified"
+    },
+    {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "id": "3dacf2b13383f55ab159",
+      "name": "劳动合同",
+      "required": "根据实际情况提供",
+      "copies": "被申请人（第三人）人数+1份",
+      "raw_copies": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+      "format": null,
+      "original_copy": null,
+      "purpose": "证明申请人与被申请人存在劳动关系",
+      "applicable_conditions": "根据实际情况提供",
+      "details": {
+        "官方证据目录示例行": "3 | 劳动合同 |  | 证明申请人与被申请人存在劳动关系 | 3-5",
+        "官方份数原文": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+        "示例页码（不是要求）": "3-5",
+        "证据来源示例": "",
+        "范围说明": "证据名称和页码来自本区示例，按真实材料替换；未将十行全部设为必需"
+      },
+      "verification_status": "verified"
+    },
+    {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "id": "003b6fca2f7bac2480eb",
+      "name": "申请人的工资表、银行流水（离职前12个月）",
+      "required": "根据实际情况提供",
+      "copies": "被申请人（第三人）人数+1份",
+      "raw_copies": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+      "format": null,
+      "original_copy": null,
+      "purpose": "证明申请人与被申请人存在劳动关系/证明申请人薪资水平",
+      "applicable_conditions": "根据实际情况提供",
+      "details": {
+        "官方证据目录示例行": "4 | 申请人的工资表、银行流水（离职前12个月） |  | 证明申请人与被申请人存在劳动关系/证明申请人薪资水平 | 6-8",
+        "官方份数原文": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+        "示例页码（不是要求）": "6-8",
+        "证据来源示例": "",
+        "范围说明": "证据名称和页码来自本区示例，按真实材料替换；未将十行全部设为必需"
+      },
+      "verification_status": "verified"
+    },
+    {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "id": "9535df42d7c1e8eeb3c5",
+      "name": "申请人的考勤表、工牌、打卡记录",
+      "required": "根据实际情况提供",
+      "copies": "被申请人（第三人）人数+1份",
+      "raw_copies": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+      "format": null,
+      "original_copy": null,
+      "purpose": "证明申请人在被申请人处工作/证明申请人的工作时长",
+      "applicable_conditions": "根据实际情况提供",
+      "details": {
+        "官方证据目录示例行": "5 | 申请人的考勤表、工牌、打卡记录 |  | 证明申请人在被申请人处工作/证明申请人的工作时长 | 9-10",
+        "官方份数原文": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+        "示例页码（不是要求）": "9-10",
+        "证据来源示例": "",
+        "范围说明": "证据名称和页码来自本区示例，按真实材料替换；未将十行全部设为必需"
+      },
+      "verification_status": "verified"
+    },
+    {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "id": "1952ad25a28599d7b948",
+      "name": "解除或终止劳动关系证明",
+      "required": "根据实际情况提供",
+      "copies": "被申请人（第三人）人数+1份",
+      "raw_copies": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+      "format": null,
+      "original_copy": null,
+      "purpose": "证明双方劳动关系已解除",
+      "applicable_conditions": "根据实际情况提供",
+      "details": {
+        "官方证据目录示例行": "6 | 解除或终止劳动关系证明 |  | 证明双方劳动关系已解除 | 11-13",
+        "官方份数原文": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+        "示例页码（不是要求）": "11-13",
+        "证据来源示例": "",
+        "范围说明": "证据名称和页码来自本区示例，按真实材料替换；未将十行全部设为必需"
+      },
+      "verification_status": "verified"
+    },
+    {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "id": "6ce9b0ee70d963571c47",
+      "name": "（工伤案件）工伤认定书及送达回证",
+      "required": "根据实际情况提供",
+      "copies": "被申请人（第三人）人数+1份",
+      "raw_copies": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+      "format": null,
+      "original_copy": null,
+      "purpose": "证明申请人被认定为工伤",
+      "applicable_conditions": "工伤案件，根据实际情况提供",
+      "details": {
+        "官方证据目录示例行": "7 | （工伤案件）工伤认定书及送达回证 |  | 证明申请人被认定为工伤 | 14-20",
+        "官方份数原文": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+        "示例页码（不是要求）": "14-20",
+        "证据来源示例": "",
+        "范围说明": "证据名称和页码来自本区示例，按真实材料替换；未将十行全部设为必需"
+      },
+      "verification_status": "verified"
+    },
+    {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "id": "fe8c218a9f8856127ac0",
+      "name": "（工伤案件）劳动能力鉴定书及送达回证",
+      "required": "根据实际情况提供",
+      "copies": "被申请人（第三人）人数+1份",
+      "raw_copies": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+      "format": null,
+      "original_copy": null,
+      "purpose": "证明申请人劳动能力鉴定等级为x级",
+      "applicable_conditions": "工伤案件，根据实际情况提供",
+      "details": {
+        "官方证据目录示例行": "8 | （工伤案件）劳动能力鉴定书及送达回证 |  | 证明申请人劳动能力鉴定等级为x级 | 21-35",
+        "官方份数原文": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+        "示例页码（不是要求）": "21-35",
+        "证据来源示例": "",
+        "范围说明": "证据名称和页码来自本区示例，按真实材料替换；未将十行全部设为必需"
+      },
+      "verification_status": "verified"
+    },
+    {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "id": "0558c8edc55e710c5ba9",
+      "name": "（工伤案件）住院记录、出院小结等住院资料",
+      "required": "根据实际情况提供",
+      "copies": "被申请人（第三人）人数+1份",
+      "raw_copies": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+      "format": null,
+      "original_copy": null,
+      "purpose": "证明申请人的住院情况、医嘱情况等",
+      "applicable_conditions": "工伤案件，根据实际情况提供",
+      "details": {
+        "官方证据目录示例行": "9 | （工伤案件）住院记录、出院小结等住院资料 |  | 证明申请人的住院情况、医嘱情况等 | 36-50",
+        "官方份数原文": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+        "示例页码（不是要求）": "36-50",
+        "证据来源示例": "",
+        "范围说明": "证据名称和页码来自本区示例，按真实材料替换；未将十行全部设为必需"
+      },
+      "verification_status": "verified"
+    },
+    {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "id": "91e0fd50e8fb4f24030d",
+      "name": "xxxxx（其他与案件相关的证据材料）",
+      "required": "根据实际情况提供",
+      "copies": "被申请人（第三人）人数+1份",
+      "raw_copies": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+      "format": null,
+      "original_copy": null,
+      "purpose": "证明xxxx",
+      "applicable_conditions": "根据实际情况提供",
+      "details": {
+        "官方证据目录示例行": "10 | xxxxx（其他与案件相关的证据材料） |  | 证明xxxx | 51-60",
+        "官方份数原文": "证据目录和证据材料，按照被申请人（第三人）人数+1份提交。",
+        "示例页码（不是要求）": "51-60",
+        "证据来源示例": "",
+        "范围说明": "证据名称和页码来自本区示例，按真实材料替换；未将十行全部设为必需"
+      },
+      "verification_status": "verified"
+    }
+  ],
+  "templates": [
+    {
+      "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+      "region_code": "360798",
+      "collected_at": "2026-10-23T20:13:07.499Z",
+      "verified_at": "2026-10-23T20:13:07.499Z",
+      "id": "853097ba8d9f4036b61e806e44314c21",
+      "annex_id": "853097ba8d9f4036b61e806e44314c21",
+      "original_name": "劳动仲裁申请书及证据目录.doc",
+      "original_server_filename": "853097ba8d9f4036b61e806e44314c21.doc",
+      "official_kind": "blank",
+      "file": "templates/_docx/_regional/function-jiangxi-ganzhou-rongjiang/853097ba8d9f4036b61e806e44314c21.doc",
+      "sha256": "3729dc3af6b0289db06a29ee3628f6f1bd7bdb3cdab6813103310d48511260c4",
+      "download_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5/files/853097ba8d9f4036b61e806e44314c21.doc",
+      "download_status": "downloaded",
+      "downloaded_at": "2026-10-23T20:13:53.827454+00:00",
+      "file_type": "doc",
+      "original_pages": 2,
+      "evidence_columns": [
+        "序号",
+        "证据名称",
+        "证据来源",
+        "证明目的",
+        "页数"
+      ],
+      "contained_document_types": [
+        "application",
+        "evidence"
+      ],
+      "can_generate": false,
+      "document_types": [],
+      "classification_note": "下载原件两页均为空白；网页另含填写示例，二者已独立核对。原DOC尚未完成填写适配。"
+    }
+  ],
+  "channel": {
+    "raw_value": "",
+    "form": "unverified",
+    "online_status": "unverified",
+    "entry_url": null,
+    "mentioned_urls": [],
+    "entry_check": {}
+  },
+  "sections": {
+    "申请材料": "劳动人事争议仲裁申请书：需要提交；被申请人（第三人）人数+1份\nXX（申请人）身份证复印件：必须提供；被申请人（第三人）人数+1份\n企业/单位（被申请人）工商登记信息（营业执照或国家企业信用信息公示报告）：必须提供；被申请人（第三人）人数+1份\n劳动合同：根据实际情况提供；被申请人（第三人）人数+1份\n申请人的工资表、银行流水（离职前12个月）：根据实际情况提供；被申请人（第三人）人数+1份\n申请人的考勤表、工牌、打卡记录：根据实际情况提供；被申请人（第三人）人数+1份\n解除或终止劳动关系证明：根据实际情况提供；被申请人（第三人）人数+1份\n（工伤案件）工伤认定书及送达回证：根据实际情况提供；被申请人（第三人）人数+1份\n（工伤案件）劳动能力鉴定书及送达回证：根据实际情况提供；被申请人（第三人）人数+1份\n（工伤案件）住院记录、出院小结等住院资料：根据实际情况提供；被申请人（第三人）人数+1份\nxxxxx（其他与案件相关的证据材料）：根据实际情况提供；被申请人（第三人）人数+1份",
+    "官方文书正文及填写示例": ".b1{white-space-collapsing:preserve;}\n.b2{margin: 1.0in 1.2479167in 0.2125in 1.2479167in;}\n.s1{font-weight:bold;}\n.s2{font-weight:bold;color:black;}\n.s3{color:black;}\n.s4{text-decoration:underline;}\n.s5{font-size:16pt;font-weight:bold;}\n.s6{font-size:16pt;}\n.s7{font-size:16pt;text-decoration:underline;}\n.s8{font-weight:bold;text-decoration:underline;}\n.p1{margin-bottom:0.108333334in;text-align:center;hyphenate:auto;font-family:方正小标宋简体;font-size:18pt;}\n.p2{text-indent:0.22291666in;text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:16pt;}\n.p3{text-indent:0.22222222in;text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:16pt;}\n.p4{margin-left:0.22152779in;text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:16pt;}\n.p5{text-indent:0.4375in;text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:16pt;}\n.p6{text-indent:0.44652778in;text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:16pt;}\n.p7{text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:16pt;}\n.p8{text-indent:0.44444445in;text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:16pt;}\n.p9{text-indent:0.39027777in;text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:14pt;}\n.p10{text-indent:2.4444444in;text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:16pt;}\n.p11{text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:12pt;}\n.p12{text-indent:0.33333334in;text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:12pt;}\n.p13{text-indent:0.6666667in;text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:12pt;}\n.p14{margin-bottom:0.108333334in;text-align:center;hyphenate:auto;font-family:仿宋_GB2312;font-size:12pt;}\n.p15{margin-bottom:0.108333334in;text-align:center;hyphenate:auto;font-family:Times New Roman;font-size:12pt;}\n.p16{text-indent:0.94861114in;margin-bottom:0.108333334in;text-align:start;hyphenate:auto;font-family:Times New Roman;font-size:10pt;}\n.p17{margin-bottom:0.108333334in;text-align:start;hyphenate:auto;font-family:Times New Roman;font-size:10pt;}\n.p18{margin-bottom:0.108333334in;text-align:center;hyphenate:auto;font-family:Times New Roman;font-size:10pt;}\n.p19{text-indent:0.7291667in;margin-bottom:0.108333334in;text-align:start;hyphenate:auto;font-family:Times New Roman;font-size:10pt;}\n.p20{text-align:center;hyphenate:auto;font-family:Times New Roman;font-size:15pt;}\n.p21{text-indent:0.3888889in;text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:14pt;}\n.p22{text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:14pt;}\n.p23{text-indent:0.39027777in;text-align:center;hyphenate:auto;font-family:Times New Roman;font-size:14pt;}\n.p24{text-indent:0.3888889in;text-align:center;hyphenate:auto;font-family:Times New Roman;font-size:14pt;}\n.p25{text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:10pt;}\n.p26{text-indent:0.4375in;text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:10pt;}\n.p27{text-align:center;hyphenate:auto;font-family:方正小标宋简体;font-size:18pt;}\n.p28{margin-right:0.44444445in;text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:16pt;}\n.p29{text-indent:1.6041666in;text-align:justify;hyphenate:auto;font-family:Times New Roman;font-size:10pt;}\n.p30{text-align:start;hyphenate:auto;font-family:Times New Roman;font-size:10pt;}\n.td1{width:0.53333336in;padding-start:0.0in;padding-end:0.0in;border-bottom:thin solid black;border-left:thin solid black;border-right:thin solid black;border-top:thin solid black;}\n.td2{width:1.61875in;padding-start:0.0in;padding-end:0.0in;border-bottom:thin solid black;border-left:thin solid black;border-right:thin solid black;border-top:thin solid black;}\n.td3{width:1.1159723in;padding-start:0.0in;padding-end:0.0in;border-bottom:thin solid black;border-left:thin solid black;border-right:thin solid black;border-top:thin solid black;}\n.td4{width:2.05in;padding-start:0.0in;padding-end:0.0in;border-bottom:thin solid black;border-left:thin solid black;border-right:thin solid black;border-top:thin solid black;}\n.td5{width:0.66597223in;padding-start:0.0in;padding-end:0.0in;border-bottom:thin solid black;border-left:thin solid black;border-right:thin solid black;border-top:thin solid black;}\n.td6{width:0.53194445in;padding-start:0.0in;padding-end:0.0in;border-bottom:thin solid black;border-left:thin solid black;border-right:thin solid black;border-top:thin solid black;}\n.td7{width:2.125in;padding-start:0.0in;padding-end:0.0in;border-bottom:thin solid black;border-left:thin solid black;border-right:thin solid black;border-top:thin solid black;}\n.td8{width:0.9618056in;padding-start:0.0in;padding-end:0.0in;border-bottom:thin solid black;border-left:thin solid black;border-right:thin solid black;border-top:thin solid black;}\n.td9{width:1.6819445in;padding-start:0.0in;padding-end:0.0in;border-bottom:thin solid black;border-left:thin solid black;border-right:thin solid black;border-top:thin solid black;}\n.td10{width:0.6638889in;padding-start:0.0in;padding-end:0.0in;border-bottom:thin solid black;border-left:thin solid black;border-right:thin solid black;border-top:thin solid black;}\n.r1{height:0.6111111in;keep-together:always;}\n.r2{height:0.52013886in;keep-together:always;}\n.r3{keep-together:always;}\n.r4{height:0.57916665in;keep-together:always;}\n.r5{height:0.5277778in;keep-together:always;}\n.r6{height:0.45208332in;keep-together:always;}\n.r7{height:0.74375in;keep-together:always;}\n.r8{height:0.8833333in;keep-together:always;}\n.t1{table-layout:fixed;border-collapse:collapse;border-spacing:0;}\n\n 仲 裁 申 请 书 \n 申请人：                        性别： \n 出生日期：      年 月 日          民族： \n 身份证号码： \n 户籍所在地（或外国人注明国籍）： \n 确认有效的通讯地址：  \n 邮政编码： \n 联系电话： \n 被申请人：            统一社会信用代码： \n 住所地：              实际办公所在地：  \n邮政编码：            联系电话： \n 法定代表人（主要负责人）：     职务： \n 仲裁请求：（如有多项仲裁请求需分项列明） \n                                 ； \n                                 。 \n 事实和理由：（简要写明：申请人与被申请人之间的争议内容，包括发生劳动人事争议的时间、地点、原因、过程，并阐明提起仲裁的理由和依据） \n                                                                         \n\n                                                                         \n\n   \n   \n 此致 \n 赣州蓉江新区劳动人事争议仲裁委员会  \n                     申请人：   \n   年 月  日 \n\n\n 注：1.仲裁申请书一式两份，按照被申请人（第三人）人数+1份提交，用A4纸打印。 \n 2.办公地址：赣州蓉江新区潭东镇碧玉南路1号综合执法大队。 \n 3.咨询电话：0797-8168180。 \n 证据目录 \n\n  \n    \n      \n       序号 \n      \n      \n       证据名称 \n      \n      \n       证据来源 \n      \n      \n       证明目的 \n      \n      \n       页数 \n      \n    \n    \n      \n       1 \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n    \n      \n       2 \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n    \n      \n       3 \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n    \n      \n       4 \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n    \n      \n       5 \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n    \n      \n       6 \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n    \n      \n       7 \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n    \n      \n       8 \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n    \n      \n       9 \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n    \n      \n       10 \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n    \n  \n\n\n 注：所有证据材料按顺序附在证据目录之后，证据目录和证据材料，按照被申请人（第三人）人数+1份提交。\n提交人：                                    提交时间： 年 月 日\n\n\n\n\n\n 仲 裁 申 请 书（示例） \n 申请人：XX，男，1991年1月1日生，汉族，身份证号码：36070219910101****，户籍所在地：江西省赣州市蓉江新区XXX，确认有效的通讯地址：江西省赣州市蓉江新区XXX，邮政编码：341000，联系电话：1352352****。 \n 被申请人：XX科技有限公司，统一社会信用代码：9000080****0LA788F，住所地：江西省赣州市蓉江新区XXXX，实际办公所在地：江西省赣州市蓉江新区XXXX，邮政编码：341000，联系电话：0797-8888888。 \n 法定代表人：XXX，职务：董事长。 \n 仲裁请求：（如有多项仲裁请求需分项列明） \n 1.裁决被申请人向申请人支付2025年10月工资4000元。 \n 事实和理由：（简要写明：申请人与被申请人之间的争议内容，包括发生劳动人事争议的时间、地点、原因、过程，并阐明提起仲裁的理由和依据） \n 2025年1月1日，申请人入职被申请人处，从事文员工作，工作地点位于赣州蓉江新区。双方签订了书面劳动合同，约定月工资为4000元，工资于次月15日发放。2025年10月1日，申请人因个人原因，提前三十日以书面形式向被申请人提出解除劳动合同。2025年10月31日，申请人正式从被申请人处离职。截至2025年11月15日（双方约定次月15日发放），被申请人仍未支付申请人2025年10月的工资共计人民币4000元。期间，申请人曾多次向被申请人催讨，但被申请人均以各种理由推诿，拒不履行支付义务。被申请人的上述行为，违反了《中华人民共和国劳动法》第五十条及《中华人民共和国劳动合同法》第三十条的规定，严重侵害了申请人的合法权益。 \n 为此，申请人特依据相关法律法规提起仲裁，请求贵委依法公正裁决，支持申请人的各项仲裁请求，维护申请人的合法权益。 \n 此致 \n 赣州蓉江新区劳动人事争议仲裁委员会 \n  申请人：XX（手写签名并捺印） \n  年  月  日 \n 附注：1.仲裁申请书，按照被申请人（第三人）人数+1份提交，用A4纸打印。 \n 2.仲裁庭地址：赣州蓉江新区潭东镇碧玉南路1号综合执法大队。 \n 3.联系电话：0797-8168180。 \n\n\n\n 证据目录（示例） \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n      \n       序号 \n      \n      \n      \n      \n       证据名称 \n      \n      \n      \n      \n       证据来源 \n      \n      \n      \n      \n       证明目的 \n      \n      \n      \n      \n       页数 \n      \n      \n    \n    \n      \n      \n       1 \n      \n      \n      \n      \n       XX（申请人）身份证复印件 \n      \n      \n      \n      \n      \n      \n      \n      \n      \n       申请人的主体资格 \n      \n      \n      \n      \n       1 \n      \n      \n    \n    \n      \n      \n       2 \n      \n      \n      \n      \n       企业/单位（被申请人）工商登记信息（营业执照或国家企业信用信息公示报告） \n      \n      \n      \n      \n      \n      \n      \n      \n      \n       被申请人的主体资格 \n      \n      \n      \n      \n       2 \n      \n      \n    \n    \n      \n      \n       3 \n      \n      \n      \n      \n       劳动合同 \n      \n      \n      \n      \n      \n      \n      \n      \n      \n       证明申请人与被申请人存在劳动关系 \n      \n      \n      \n      \n       3-5 \n      \n      \n    \n    \n      \n      \n       4 \n      \n      \n      \n      \n       申请人的工资表、银行流水（离职前12个月） \n      \n      \n      \n      \n      \n      \n      \n      \n      \n       证明申请人与被申请人存在劳动关系/证明申请人薪资水平 \n      \n      \n      \n      \n       6-8 \n      \n      \n    \n    \n      \n      \n       5 \n      \n      \n      \n      \n       申请人的考勤表、工牌、打卡记录 \n      \n      \n      \n      \n      \n      \n      \n      \n      \n       证明申请人在被申请人处工作/证明申请人的工作时长 \n      \n      \n      \n      \n       9-10 \n      \n      \n    \n    \n      \n      \n       6 \n      \n      \n      \n      \n       解除或终止劳动关系证明 \n      \n      \n      \n      \n      \n      \n      \n      \n      \n       证明双方劳动关系已解除 \n      \n      \n      \n      \n       11-13 \n      \n      \n    \n    \n      \n      \n       7 \n      \n      \n      \n      \n       （工伤案件）工伤认定书及送达回证 \n      \n      \n      \n      \n      \n      \n      \n      \n      \n       证明申请人被认定为工伤 \n      \n      \n      \n      \n       14-20 \n      \n      \n    \n    \n      \n      \n       8 \n      \n      \n      \n      \n       （工伤案件）劳动能力鉴定书及送达回证 \n      \n      \n      \n      \n      \n      \n      \n      \n      \n       证明申请人劳动能力鉴定等级为x级 \n      \n      \n      \n      \n       21-35 \n      \n      \n    \n    \n      \n      \n       9 \n      \n      \n      \n      \n       （工伤案件）住院记录、出院小结等住院资料 \n      \n      \n      \n      \n      \n      \n      \n      \n      \n       证明申请人的住院情况、医嘱情况等 \n      \n      \n      \n      \n       36-50 \n      \n      \n    \n    \n      \n      \n       10 \n      \n      \n      \n      \n       xxxxx（其他与案件相关的证据材料） \n      \n      \n      \n      \n      \n      \n      \n      \n      \n       证明xxxx \n      \n      \n      \n      \n       51-60 \n      \n    \n  \n\n 注：1-2项为必须提供的证据材料，3-10项证据材料根据实际情况提供。所有证据材料按顺序附在证据目录之后，证据目录和证据材料，按照被申请人（第三人）人数+1份提交。 \n  提交人：              提交时间： \n\n\n劳动仲裁申请书及证据目录\n\n\n   \n\n   \n\n          \n          .wz_xg{color:#e3393b;font-size:16px;font-weight:bold;border-bottom: 1px solid #e9e9e9;padding-bottom: 10px;margin-bottom: 7px;padding-left: 53px;}\n        \n        \n          相关文章"
+  },
+  "warnings": [
+    "仅适用赣州蓉江新区自身公告，不代表赣州市或南康区；服务目录编码不直接证明行政区划或仲裁管辖。",
+    "本来源是官方文书和材料示例公告，不是完整办事指南；网上办理、办理时间、收费及到场次数尚待核验。",
+    "网页填写示例与下载空白原件已区分；十种证据不是全部必需，示例页码不是规定页数。",
+    "尚未完成原DOC本地填写适配，目前只保留自己的官方原件，不用其他区县模板代替。"
+  ],
+  "evidence": {
+    "capture_file": "reports/nationwide-localization-20261023-night/cross-province/jiangxi-rongjiang/source-0425/dom.json",
+    "capture_sha256": "9fd381099b5e970d8f92c58ef2fc4c86f5f5ad8d56534726af936f0d40152e49",
+    "screenshot": "reports/nationwide-localization-20261023-night/cross-province/jiangxi-rongjiang/source-0425/source.png",
+    "own_identity": "reports/nationwide-localization-20261023-night/cross-province/jiangxi-rongjiang/identity-0430/identity.json",
+    "original_review": "reports/nationwide-localization-20261023-night/cross-province/jiangxi-rongjiang/document-qa/artifact.md"
+  }
+}

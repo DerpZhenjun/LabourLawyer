@@ -1,0 +1,18 @@
+{
+  "province": "zhejiang",
+  "city": "杭州市",
+  "district": "滨江区",
+  "region_code": "330108",
+  "id": "8eecf9e0d7009637a5625ba9c32d3a4e",
+  "type": "OFFICIAL_SOURCE_CONFLICT",
+  "service": "劳动人事争议仲裁申请",
+  "keyword": "劳动人事争议仲裁申请",
+  "url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=a3163f38-bd62-4d18-8374-a79177c440fb",
+  "occurred_at": "2026-10-28T10:20:33.061Z",
+  "screenshot": null,
+  "attempts": 1,
+  "final_status": "pending_manual_verification",
+  "delivery_status": "PENDING_OPENCLAW",
+  "reason": "材料栏与办理流程存在冲突。",
+  "remediation": "保留自身来源；不登录、不代交、不推断其他地区规则。"
+}

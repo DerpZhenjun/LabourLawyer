@@ -211,6 +211,5 @@ def jurisdictions() -> dict[str, Any]:
         "items": [
             {"province": "浙江", "cities": ["杭州", "宁波", "温州", "嘉兴", "绍兴"], "templates": ["仲裁申请书", "证据清单"]},
             {"province": "广东", "cities": ["广州", "深圳", "佛山", "东莞", "珠海"], "templates": ["仲裁申请书", "证据清单"]},
-            {"province": "通用", "cities": [], "templates": ["工伤仲裁申请书"]},
         ]
     }

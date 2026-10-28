@@ -1,0 +1,70 @@
+{
+  "province": "sichuan",
+  "city": "甘孜州",
+  "district": "甘孜县",
+  "region_code": "513328000000",
+  "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=513328000000&itemCode=1151332800900224874512014135001&taskType=20&deptCode=115133280090022487",
+  "summary_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=513328000000&itemCode=1151332800900224874512014135001&taskType=20&deptCode=115133280090022487",
+  "search_file": "reports\\nationwide-localization-20261023-night\\sichuan\\discovery\\513328000000.json",
+  "selected": {
+    "code": "513328000000",
+    "header": "甘孜县",
+    "item": "1151332800900224874512014135001",
+    "url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=513328000000&itemCode=1151332800900224874512014135001&taskType=20&deptCode=115133280090022487"
+  },
+  "sections": [
+    {
+      "section": "基本信息",
+      "file": "attempts\\20261023T145728217257Z\\01.json",
+      "sha256": "6ce39eb184493863167a59791149899abcc51bf2ee9a0c6f6e6683cdfccb95fa",
+      "captured_at": "2026-10-23T14:57:29.628Z"
+    },
+    {
+      "section": "申请材料",
+      "file": "attempts\\20261023T145728217257Z\\02.json",
+      "sha256": "15dff88721611c75ce2cddf38a7e3d16df617ea0135b4cd99fc4d453b1f4f47f",
+      "captured_at": "2026-10-23T14:57:29.947Z"
+    },
+    {
+      "section": "受理条件",
+      "file": "attempts\\20261023T145728217257Z\\03.json",
+      "sha256": "e7570d5fa76a1f51aa9676a164b9cae517864658dd290e9941acdc37e98f6057",
+      "captured_at": "2026-10-23T14:57:30.249Z"
+    },
+    {
+      "section": "办理流程",
+      "file": "attempts\\20261023T145728217257Z\\04.json",
+      "sha256": "dc176bb76244e943be7a2e736e0bc310fff4e6fa5a766182bdae9a59dbed61c1",
+      "captured_at": "2026-10-23T14:57:30.468Z"
+    },
+    {
+      "section": "收费标准",
+      "file": "attempts\\20261023T145728217257Z\\05.json",
+      "sha256": "7769494ceeab7bc7bb76a9544fbd34e37109cd2d2fea94dad57a78e640f6a2c0",
+      "captured_at": "2026-10-23T14:57:30.786Z"
+    },
+    {
+      "section": "设定依据",
+      "file": "attempts\\20261023T145728217257Z\\06.json",
+      "sha256": "25f779e55db571a03a20217a0562a6cc53dd4ec78ff33c40a10d90353442fd58",
+      "captured_at": "2026-10-23T14:57:31.003Z"
+    },
+    {
+      "section": "中介服务",
+      "file": "attempts\\20261023T145728217257Z\\07.json",
+      "sha256": "cc7f4ff67d7359892972d33f97f32c43f8c0617910ad561ce614bd4f39355487",
+      "captured_at": "2026-10-23T14:57:31.226Z"
+    },
+    {
+      "section": "常见问题",
+      "file": "attempts\\20261023T145728217257Z\\08.json",
+      "sha256": "71afca45d0a68ccdfe4dc96182d1332ea2a007a260464df8eabed363636113b7",
+      "captured_at": "2026-10-23T14:57:31.438Z"
+    }
+  ],
+  "captured_at": "2026-10-23T14:57:31.483951+00:00",
+  "state": "raw_browser_capture_requires_v4_parser",
+  "generation_enabled": false,
+  "published": false,
+  "no_login_or_submission": true
+}

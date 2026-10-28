@@ -1,0 +1,18 @@
+{
+  "province": "zhejiang",
+  "city": "杭州市",
+  "district": "上城区",
+  "region_code": "330102",
+  "id": "4aa0cc4fe1873d77a7b2fa96c2af6462",
+  "type": "AUTH_REQUIRED",
+  "service": "劳动人事争议仲裁申请",
+  "keyword": "劳动人事争议仲裁申请",
+  "url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=01a9e0fa-ab7e-4232-99e1-014d3ad99b45",
+  "occurred_at": "2026-10-28T10:22:27.387Z",
+  "screenshot": null,
+  "attempts": 1,
+  "final_status": "pending_manual_verification",
+  "delivery_status": "PENDING_OPENCLAW",
+  "reason": "尚未核实登录后的实际网上提交能力。",
+  "remediation": "保留自身来源；不登录、不代交、不推断其他地区规则。"
+}

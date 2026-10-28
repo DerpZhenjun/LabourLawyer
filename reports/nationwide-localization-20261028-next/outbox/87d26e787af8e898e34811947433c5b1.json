@@ -1,0 +1,18 @@
+{
+  "province": "jiangsu",
+  "city": "盐城市",
+  "district": "响水县",
+  "region_code": "320921",
+  "id": "87d26e787af8e898e34811947433c5b1",
+  "type": "ONLINE_CHANNEL_UNVERIFIED",
+  "service": "劳动人事争议仲裁申请",
+  "keyword": "劳动人事争议仲裁申请",
+  "url": "https://ycxs.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=95&iddept_ql_inf=1132092157541553004002014302002&ql_kind=20&iddept_yw_inf=113209215754155300400201430200201",
+  "occurred_at": "2026-10-28T10:22:52.823Z",
+  "screenshot": null,
+  "attempts": 1,
+  "final_status": "pending_manual_verification",
+  "delivery_status": "PENDING_OPENCLAW",
+  "reason": "尚未核实登录后的实际网上提交能力。",
+  "remediation": "保留自身来源；不登录、不代交、不推断其他地区规则。"
+}

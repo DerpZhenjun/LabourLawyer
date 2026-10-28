@@ -1,0 +1,530 @@
+{
+  "province": "beijing",
+  "province_name": "北京市",
+  "city": "北京市",
+  "district": "通州区",
+  "region_code": "110112",
+  "service_name": "劳动人事争议仲裁申请",
+  "service_code": "11110112000082974B300201430200200",
+  "authority": "北京市通州区人力资源和社会保障局",
+  "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+  "source_title": "劳动人事争议仲裁申请",
+  "source_type": "official_service_guide",
+  "collected_at": "2026-10-23T21:45:45.365Z",
+  "verified_at": "2026-10-23T21:45:45.365Z",
+  "verification_status": "partial",
+  "fields": {
+    "实施机构": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "北京市通州区人力资源和社会保障局",
+      "normalized_value": "北京市通州区人力资源和社会保障局",
+      "verification_status": "verified"
+    },
+    "服务对象": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "自然人、企业法人、事业法人、社会组织法人、非法人企业、行政机关、其他组织",
+      "normalized_value": "自然人、企业法人、事业法人、社会组织法人、非法人企业、行政机关、其他组织",
+      "verification_status": "verified"
+    },
+    "事项类型": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "公共服务",
+      "normalized_value": "公共服务",
+      "verification_status": "verified"
+    },
+    "办理形式": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "窗口办理、网上办理",
+      "normalized_value": "窗口办理、网上办理",
+      "verification_status": "verified"
+    },
+    "受理条件": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "1.仲裁委员会对符合下列条件的仲裁申请应当予以受理，并在收到仲裁申请之日起五日内向申请人出具受理通知书：\n    （一）属于本规则第二条规定的争议范围；\n    （二）有明确的仲裁请求和事实理由；\n    （三）申请人是与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人；\n    （四）属于本仲裁委员会管辖范围。\n（来源：《劳动人事争议仲裁办案规则》（人社部令第33号）第三十条）\n2.劳动争议仲裁委员会负责管辖本区域内发生的劳动争议。\n劳动争议由劳动合同履行地或者用人单位所在地的劳动争议仲裁委员会管辖。双方当事人分别向劳动合同履行地和用人单位所在地的劳动争议仲裁委员会申请仲裁的，由劳动合同履行地的劳动争议仲裁委员会管辖。\n（来源：《中华人民共和国劳动争议调解仲裁法》第二十一条）\n3.市仲裁委员会管辖下列劳动人事争议案件：\n（一）劳动合同履行地与用人单位注册地均位于通州区，注册资本在壹仟万美元以上或者相当于壹仟万美元以上（含壹仟万美元或者相当于壹仟万美元）的，外国及港澳台投资者单独或者与中央、市属单位共同设立的外商及港澳台商投资企业与劳动者发生的劳动争议案件；\n（二）市属事业单位、在市民政部门登记的社会团体与其建立人事关系的工作人员之间，因终止人事关系以及履行聘用合同发生的人事争议案件；\n（三）军队驻京军级以上（含军级）用人单位与聘用制文职人员之间，因履行聘用合同发生的人事争议案件；\n（四）在全市有重大影响的劳动人事争议案件。\n各区（含北京经济技术开发区）仲裁委员会管辖下列劳动人事争议案件：\n（一）市仲裁委员会管辖范围以外的，劳动合同履行地或用人单位所在地位于本辖区的用人单位与劳动者发生的劳动争议案件；\n（二）用人单位所在地位于本辖区的中央或者区属事业单位、在中央或者区民政部门登记的社会团体与其建立人事关系的工作人员之间，因终止人事关系以及履行聘用合同发生的人事争议案件；\n（三）军队驻本辖区师级以下（含师级）用人单位与聘用制文职人员之间，因履行聘用合同发生的人事争议案件。\n(来源：《北京市人力资源和社会保障局 关于调整我市劳动人事争议仲裁案件管辖的通知》第一、二项（京人社仲发〔2022〕5号））\n4.材料齐全，填写完整；\n5.提交的证照证件或批复文件齐全完整，提交的复印件完整清晰并与原件一致；\n6.申请材料所载基本信息与提交的证照证件或批复文件所载内容一致；\n7.申请材料按要求签字、盖章，且签章内容与申请材料所载内容、提交的证照证件或批复文件所载内容一致。",
+      "normalized_value": "1.仲裁委员会对符合下列条件的仲裁申请应当予以受理，并在收到仲裁申请之日起五日内向申请人出具受理通知书：\n    （一）属于本规则第二条规定的争议范围；\n    （二）有明确的仲裁请求和事实理由；\n    （三）申请人是与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人；\n    （四）属于本仲裁委员会管辖范围。\n（来源：《劳动人事争议仲裁办案规则》（人社部令第33号）第三十条）\n2.劳动争议仲裁委员会负责管辖本区域内发生的劳动争议。\n劳动争议由劳动合同履行地或者用人单位所在地的劳动争议仲裁委员会管辖。双方当事人分别向劳动合同履行地和用人单位所在地的劳动争议仲裁委员会申请仲裁的，由劳动合同履行地的劳动争议仲裁委员会管辖。\n（来源：《中华人民共和国劳动争议调解仲裁法》第二十一条）\n3.市仲裁委员会管辖下列劳动人事争议案件：\n（一）劳动合同履行地与用人单位注册地均位于通州区，注册资本在壹仟万美元以上或者相当于壹仟万美元以上（含壹仟万美元或者相当于壹仟万美元）的，外国及港澳台投资者单独或者与中央、市属单位共同设立的外商及港澳台商投资企业与劳动者发生的劳动争议案件；\n（二）市属事业单位、在市民政部门登记的社会团体与其建立人事关系的工作人员之间，因终止人事关系以及履行聘用合同发生的人事争议案件；\n（三）军队驻京军级以上（含军级）用人单位与聘用制文职人员之间，因履行聘用合同发生的人事争议案件；\n（四）在全市有重大影响的劳动人事争议案件。\n各区（含北京经济技术开发区）仲裁委员会管辖下列劳动人事争议案件：\n（一）市仲裁委员会管辖范围以外的，劳动合同履行地或用人单位所在地位于本辖区的用人单位与劳动者发生的劳动争议案件；\n（二）用人单位所在地位于本辖区的中央或者区属事业单位、在中央或者区民政部门登记的社会团体与其建立人事关系的工作人员之间，因终止人事关系以及履行聘用合同发生的人事争议案件；\n（三）军队驻本辖区师级以下（含师级）用人单位与聘用制文职人员之间，因履行聘用合同发生的人事争议案件。\n(来源：《北京市人力资源和社会保障局 关于调整我市劳动人事争议仲裁案件管辖的通知》第一、二项（京人社仲发〔2022〕5号））\n4.材料齐全，填写完整；\n5.提交的证照证件或批复文件齐全完整，提交的复印件完整清晰并与原件一致；\n6.申请材料所载基本信息与提交的证照证件或批复文件所载内容一致；\n7.申请材料按要求签字、盖章，且签章内容与申请材料所载内容、提交的证照证件或批复文件所载内容一致。",
+      "verification_status": "verified"
+    },
+    "办理时间和地点": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "通州区政务服务中心人力社保分中心\n法定工作日:08:30-17:30(延时服务时间:周六08:30-12:30法定节假日除外,需预约)\n北京市通州区玉桥西里4号楼",
+      "normalized_value": "通州区政务服务中心人力社保分中心\n法定工作日:08:30-17:30(延时服务时间:周六08:30-12:30法定节假日除外,需预约)\n北京市通州区玉桥西里4号楼",
+      "verification_status": "verified"
+    },
+    "咨询方式": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "咨询电话：（010）80579377\n                            咨询窗口地址：北京市通州区玉桥西里4号楼通州区人力资源和社会保障服务中心2层1-4号立案窗口",
+      "normalized_value": "咨询电话：（010）80579377\n                            咨询窗口地址：北京市通州区玉桥西里4号楼通州区人力资源和社会保障服务中心2层1-4号立案窗口",
+      "verification_status": "verified"
+    },
+    "投诉监督方式": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "投诉监督电话：（010）12345",
+      "normalized_value": "投诉监督电话：（010）12345",
+      "verification_status": "verified"
+    },
+    "业务办理项编码": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "11110112000082974B300201430200200",
+      "normalized_value": "11110112000082974B300201430200200",
+      "verification_status": "verified"
+    },
+    "进驻大厅类型": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "专业分中心",
+      "normalized_value": "专业分中心",
+      "verification_status": "verified"
+    },
+    "委托部门": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "中介服务": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "办理项行使层级": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "市级、区级",
+      "normalized_value": "市级、区级",
+      "verification_status": "verified"
+    },
+    "物流快递": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "是",
+      "normalized_value": "是",
+      "verification_status": "verified"
+    },
+    "预约办理": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "数量限制": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "通办范围": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "特定程序": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "行使内容": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "",
+      "normalized_value": null,
+      "verification_status": "missing"
+    },
+    "必须现场办理原因说明": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "依据《中华人民共和国劳动争议调解仲裁法》第28条规定， 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。",
+      "normalized_value": "依据《中华人民共和国劳动争议调解仲裁法》第28条规定， 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。",
+      "verification_status": "verified"
+    },
+    "办理地点": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "北京市通州区玉桥西里4号楼",
+      "normalized_value": "北京市通州区玉桥西里4号楼",
+      "verification_status": "verified"
+    },
+    "办理时间": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "法定工作日:08:30-17:30(延时服务时间:周六08:30-12:30法定节假日除外,需预约)",
+      "normalized_value": "法定工作日:08:30-17:30(延时服务时间:周六08:30-12:30法定节假日除外,需预约)",
+      "verification_status": "verified"
+    },
+    "是否收费": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "",
+      "normalized_value": null,
+      "verification_status": "missing"
+    },
+    "办件类型": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "承诺件",
+      "normalized_value": "承诺件",
+      "verification_status": "verified"
+    },
+    "法定办结时限": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "5工作日",
+      "normalized_value": {
+        "value": "5工作日",
+        "scope": "acceptance_review_decision_not_case_award",
+        "official_scope_note": "办件承诺办结时限说明：（承诺时限为办理流程中“审查与决定”环节的计时时限）"
+      },
+      "verification_status": "verified",
+      "scope": "acceptance_review_decision_not_case_award"
+    },
+    "承诺办结时限": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "5工作日",
+      "normalized_value": {
+        "value": "5工作日",
+        "scope": "acceptance_review_decision_not_case_award",
+        "official_scope_note": "办件承诺办结时限说明：（承诺时限为办理流程中“审查与决定”环节的计时时限）"
+      },
+      "verification_status": "verified",
+      "scope": "acceptance_review_decision_not_case_award"
+    },
+    "到办事现场次数": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "1",
+      "normalized_value": "1",
+      "verification_status": "verified"
+    },
+    "认证等级需求": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "",
+      "normalized_value": null,
+      "verification_status": "missing"
+    },
+    "承诺时限办结说明": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "办件承诺办结时限说明：（承诺时限为办理流程中“审查与决定”环节的计时时限）",
+      "normalized_value": "办件承诺办结时限说明：（承诺时限为办理流程中“审查与决定”环节的计时时限）",
+      "verification_status": "verified"
+    },
+    "审查与决定时限": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "5个工作日",
+      "normalized_value": "5个工作日",
+      "verification_status": "verified"
+    },
+    "必须到现场原因": {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "raw_value": "依据《中华人民共和国劳动争议调解仲裁法》第28条规定， 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。",
+      "normalized_value": "依据《中华人民共和国劳动争议调解仲裁法》第28条规定， 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。",
+      "verification_status": "verified"
+    }
+  },
+  "materials": [
+    {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "id": "a70ac9a68cae68b73019",
+      "name": "仲裁申请书",
+      "required": "必要",
+      "copies": "原件3份",
+      "raw_copies": "原件3份",
+      "format": "文本类；纸质",
+      "original_copy": "原件",
+      "purpose": null,
+      "applicable_conditions": null,
+      "details": {
+        "材料来源": "申请人自备",
+        "受理标准": "符合劳动人事争议受案范围、申请材料齐全。按照管辖范围规定，申请人向市级、区级劳动人事争议仲裁委员会提出书面申请。需确认材料是否按照办事指南中所列格式递交。",
+        "提供材料依据": "《中华人民共和国劳动争议调解仲裁法》第二十八条规定：申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。"
+      },
+      "verification_status": "verified"
+    },
+    {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "id": "67faddc94fe24fb18789",
+      "name": "授权委托书",
+      "required": "必要",
+      "copies": "原件1份",
+      "raw_copies": "原件1份",
+      "format": "文本类；纸质",
+      "original_copy": "原件",
+      "purpose": null,
+      "applicable_conditions": "官方标注必要；委托他人参加仲裁时使用，是否免交请向机构确认。",
+      "details": {
+        "材料来源": "申请人自备",
+        "受理标准": "申请人及其委托代理人均需携带居民身份证等身份证件进行现场核验，同时留存身份证件复印件。需确认材料是否按照办事指南中所列格式递交。",
+        "提供材料依据": "《中华人民共和国劳动争议调解仲裁法》第二十四条 当事人可以委托代理人参加仲裁活动。委托他人参加仲裁活动，应当向劳动争议仲裁委员会提交有委托人签名或者盖章的委托书，委托书应当载明委托事项和权限。"
+      },
+      "verification_status": "verified"
+    },
+    {
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "id": "8241bc71c46ab8e0f44b",
+      "name": "身份证件",
+      "required": "必要",
+      "copies": "正本原件1份（正本原件仅供查验）；副本原件1份（副本原件仅供查验）",
+      "raw_copies": "正本原件1份（正本原件仅供查验）；副本原件1份（副本原件仅供查验）",
+      "format": "结果文书类；纸质",
+      "original_copy": "原件，仅供查验",
+      "purpose": null,
+      "applicable_conditions": null,
+      "details": {
+        "材料来源": "政府部门核发",
+        "受理标准": "申请人及其委托代理人均需携带居民身份证等身份证件进行现场核验，同时留存身份证件复印件。申请人为用人单位的，需携带营业执照副本进行现场核验，同时留存营业执照副本复印件。需确认材料是否按照办事指南中所列格式递交。",
+        "提供材料依据": "《劳动人事争议仲裁办案规则》第二十二条第二款：正卷包括：仲裁申请书、受理（不予受理）通知书、答辩书、当事人及其他仲裁参加人的身份证明材料、授权委托书、调查证据、勘验笔录、当事人提供的证据材料、委托鉴定材料、开庭通知、庭审笔录、延期通知书、撤回仲裁申请书、调解书、裁决书、决定书、案件移送函、送达回证等。"
+      },
+      "verification_status": "verified"
+    }
+  ],
+  "templates": [
+    {
+      "id": "705e848d-4775-4fda-8f07-2b8d90003426",
+      "original_name": "授权委托书(样表).docx",
+      "file_type": "docx",
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "download_url": "https://banshi.beijing.gov.cn/pubtask/download/705e848d-4775-4fda-8f07-2b8d90003426.docx",
+      "url_resolution": "own official attachment metadata and own rendered public download path",
+      "official_kind": "sample",
+      "downloaded_at": "2026-10-23T21:46:24.047787+00:00",
+      "can_generate": false,
+      "document_types": [],
+      "file": "templates/_docx/_regional/110112/705e848d-4775-4fda-8f07-2b8d90003426.docx",
+      "sha256": "b399473613078d7f1045ade4f1d10f70d1a2a48182d1e77c02e2db01bab5ffdf",
+      "bytes": 90614,
+      "http_status": 200,
+      "download_status": "downloaded",
+      "final_download_url": "https://banshi.beijing.gov.cn/pubtask/download/705e848d-4775-4fda-8f07-2b8d90003426.docx",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "official_annex_id": "705e848d-4775-4fda-8f07-2b8d90003426",
+      "classification_note": "官方样表，含示例信息；不是空白表格，尚未适配填写生成。"
+    },
+    {
+      "id": "cd9f9b5c-6fcb-4040-b116-cdf752a4e7ef",
+      "original_name": "仲裁申请书(样表).docx",
+      "file_type": "docx",
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "download_url": "https://banshi.beijing.gov.cn/pubtask/download/cd9f9b5c-6fcb-4040-b116-cdf752a4e7ef.docx",
+      "url_resolution": "own official attachment metadata and own rendered public download path",
+      "official_kind": "sample",
+      "downloaded_at": "2026-10-23T21:46:25.678719+00:00",
+      "can_generate": false,
+      "document_types": [],
+      "file": "templates/_docx/_regional/110112/cd9f9b5c-6fcb-4040-b116-cdf752a4e7ef.docx",
+      "sha256": "ba10414a8d5e8dddaf8fd5c3a9477200c308a44a606a15ef0363e829978aa06d",
+      "bytes": 28840,
+      "http_status": 200,
+      "download_status": "downloaded",
+      "final_download_url": "https://banshi.beijing.gov.cn/pubtask/download/cd9f9b5c-6fcb-4040-b116-cdf752a4e7ef.docx",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "official_annex_id": "cd9f9b5c-6fcb-4040-b116-cdf752a4e7ef",
+      "classification_note": "官方样表，含示例信息；不是空白表格，尚未适配填写生成。"
+    },
+    {
+      "id": "f08a123f-4bb8-4d4a-a819-a80d1da16644",
+      "original_name": "身份证件(样表).docx",
+      "file_type": "docx",
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+      "download_url": "https://banshi.beijing.gov.cn/pubtask/download/f08a123f-4bb8-4d4a-a819-a80d1da16644.docx",
+      "url_resolution": "own official attachment metadata and own rendered public download path",
+      "official_kind": "sample",
+      "downloaded_at": "2026-10-23T21:46:26.964050+00:00",
+      "can_generate": false,
+      "document_types": [],
+      "file": "templates/_docx/_regional/110112/f08a123f-4bb8-4d4a-a819-a80d1da16644.docx",
+      "sha256": "ce430936de3c25292538980bc1b6bb53f91dd030298954cedf1e63a6e12e2800",
+      "bytes": 606843,
+      "http_status": 200,
+      "download_status": "downloaded",
+      "final_download_url": "https://banshi.beijing.gov.cn/pubtask/download/f08a123f-4bb8-4d4a-a819-a80d1da16644.docx",
+      "region_code": "110112",
+      "collected_at": "2026-10-23T21:45:45.365Z",
+      "verified_at": "2026-10-23T21:45:45.365Z",
+      "official_annex_id": "f08a123f-4bb8-4d4a-a819-a80d1da16644",
+      "classification_note": "官方样表，含示例信息；不是空白表格，尚未适配填写生成。"
+    }
+  ],
+  "sections": {
+    "基本信息": "基本信息\n                \n                    \n                        实施机构\n                        北京市通州区人力资源和社会保障局    \n                        服务对象\n                        自然人、企业法人、事业法人、社会组织法人、非法人企业、行政机关、其他组织\n\n                    \n                    \n                        事项类型\n                        \n                            公共服务\n                        \n                        办理形式\n                        窗口办理、网上办理\n                        \n                    \n                    \n                        受理条件\n                          1.仲裁委员会对符合下列条件的仲裁申请应当予以受理，并在收到仲裁申请之日起五日内向申请人出具受理通知书：\n    （一）属于本规则第二条规定的争议范围；\n    （二）有明确的仲裁请求和事实理由；\n    （三）申请人是与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人；\n    （四）属于本仲裁委员会管辖范围。\n（来源：《劳动人事争议仲裁办案规则》（人社部令第33号）第三十条）\n2.劳动争议仲裁委员会负责管辖本区域内发生的劳动争议。\n劳动争议由劳动合同履行地或者用人单位所在地的劳动争议仲裁委员会管辖。双方当事人分别向劳动合同履行地和用人单位所在地的劳动争议仲裁委员会申请仲裁的，由劳动合同履行地的劳动争议仲裁委员会管辖。\n（来源：《中华人民共和国劳动争议调解仲裁法》第二十一条）\n3.市仲裁委员会管辖下列劳动人事争议案件：\n（一）劳动合同履行地与用人单位注册地均位于通州区，注册资本在壹仟万美元以上或者相当于壹仟万美元以上（含壹仟万美元或者相当于壹仟万美元）的，外国及港澳台投资者单独或者与中央、市属单位共同设立的外商及港澳台商投资企业与劳动者发生的劳动争议案件；\n（二）市属事业单位、在市民政部门登记的社会团体与其建立人事关系的工作人员之间，因终止人事关系以及履行聘用合同发生的人事争议案件；\n（三）军队驻京军级以上（含军级）用人单位与聘用制文职人员之间，因履行聘用合同发生的人事争议案件；\n（四）在全市有重大影响的劳动人事争议案件。\n各区（含北京经济技术开发区）仲裁委员会管辖下列劳动人事争议案件：\n（一）市仲裁委员会管辖范围以外的，劳动合同履行地或用人单位所在地位于本辖区的用人单位与劳动者发生的劳动争议案件；\n（二）用人单位所在地位于本辖区的中央或者区属事业单位、在中央或者区民政部门登记的社会团体与其建立人事关系的工作人员之间，因终止人事关系以及履行聘用合同发生的人事争议案件；\n（三）军队驻本辖区师级以下（含师级）用人单位与聘用制文职人员之间，因履行聘用合同发生的人事争议案件。\n(来源：《北京市人力资源和社会保障局 关于调整我市劳动人事争议仲裁案件管辖的通知》第一、二项（京人社仲发〔2022〕5号））\n4.材料齐全，填写完整；\n5.提交的证照证件或批复文件齐全完整，提交的复印件完整清晰并与原件一致；\n6.申请材料所载基本信息与提交的证照证件或批复文件所载内容一致；\n7.申请材料按要求签字、盖章，且签章内容与申请材料所载内容、提交的证照证件或批复文件所载内容一致。\n                    \n                    \n                        \n                            \n                    \n                    \n                        办理时间和地点\n                        通州区政务服务中心人力社保分中心\n法定工作日:08:30-17:30(延时服务时间:周六08:30-12:30法定节假日除外,需预约)\n北京市通州区玉桥西里4号楼\n                    \n                    \n                        咨询方式\n                        \n\n                            咨询电话：（010）80579377\n                            咨询窗口地址：北京市通州区玉桥西里4号楼通州区人力资源和社会保障服务中心2层1-4号立案窗口\n\n\n                            \n                    \n                    \n                        投诉监督方式\n                        投诉监督电话：（010）12345\n                    \n                    \n                        业务办理项编码\n                        11110112000082974B300201430200200\n                        进驻大厅类型\n                        专业分中心\n                    \n                    \n                    \n                        委托部门\n                        无\n                        中介服务\n                        无\n                    \n                    \n                        \n                    \n\n                    \n                        \n                            \n                        \n                   \n                    \n                        办理项行使层级\n                        市级、区级\n                        物流快递\n                    是\n                    \n                \n                    预约办理\n                    无\n                        \n                    \n                    \n                    \n                    数量限制\n                    无\n                \n                \n                    \n                    \n                        \n                    \n                    \n                    \n\n                \n                 \n\n                     通办范围\n                     \n                         无\n                     \n                     特定程序\n                     无\n                  \n                 \n                \n                    行使内容\n                    \n                \n                \n                            必须现场办理原因说明\n                            依据《中华人民共和国劳动争议调解仲裁法》第28条规定， 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。\n                \n                \n                    \n                    \n                    \n                \n                \n                    \n                    \n                    \n                \n                \n                \n                收起内容",
+    "申请材料": "请选择情形：\n\t\t\t\t\t\t\t提示：通过情形选择可引导出您办理该事项所需的材料，若要查看全部材料，请点击\"查看全部材料\"\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t查看全部材料\n\t\t\t\t\t\t\t\t情形引导\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t收起\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t 我选好了重选条件\n\t\t\t\t\t\t\n\t\t\t\t\t\n                    \n                    \n                        \n                            \n                                该事项无需提交申请材料\n                            \n                        \n                    \n\t\t\t\t\t\n\t\t\t\t\t\t \n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t序号\n\t\t\t\t\t\t\t\t材料名称\n\t\t\t\t\t\t\t\t材料来源\n\t\t\t\t\t\t\t\t材料必要性\n\t\t\t\t\t\t\t\t数量要求\n\t\t\t\t\t\t\t\t介质要求\n\t\t\t\t\t\t\t\t表格及样例下载\n\t\t\t\t\t\t\t\t受理标准\n\t\t\t\t\t\t\t\t提供材料依据\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n                                                            \n                                                        \n                                                       \n                                                            申请材料总要求信息真实、准确，材料齐全，符合《中华人民共和国劳动争议调解仲裁法》《劳动人事争议仲裁办案规则》（人社部令第33号）等法规规定要求。\n                                                       \n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t线上办理\n\t\t\t\t\t\t\t线下办理\n\t\t\t\t\t\t\n\t\t\t\t\t\n                    \n                        \n                        \n                            序号\n                            材料名称\n                            材料来源\n                            材料必要性\n                            数量要求\n                            介质要求\n                            表格及样例下载\n                            受理标准\n                            提供材料依据\n                            \n                        \n            \n                        \n                        一仲裁申请书申请人自备必要原件3份文本类；纸质样例下载符合劳动人事争议受案范围、申请材料齐全。按照管辖范围规定，申请人向市级、区级劳动人事争议仲裁委员会提出书面申请。需确认材料是否按照办事指南中所列格式递交。《中华人民共和国劳动争议调解仲裁法》第二十八条规定：申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。二授权委托书申请人自备必要原件1份文本类；纸质样例下载申请人及其委托代理人均需携带居民身份证等身份证件进行现场核验，同时留存身份证件复印件。需确认材料是否按照办事指南中所列格式递交。《中华人民共和国劳动争议调解仲裁法》第二十四条 当事人可以委托代理人参加仲裁活动。委托他人参加仲裁活动，应当向劳动争议仲裁委员会提交有委托人签名或者盖章的委托书，委托书应当载明委托事项和权限。三身份证件政府部门核发必要正本原件1份（正本原件仅供查验）；副本原件1份（副本原件仅供查验）结果文书类；纸质样例下载申请人及其委托代理人均需携带居民身份证等身份证件进行现场核验，同时留存身份证件复印件。申请人为用人单位的，需携带营业执照副本进行现场核验，同时留存营业执照副本复印件。需确认材料是否按照办事指南中所列格式递交。《劳动人事争议仲裁办案规则》第二十二条第二款：正卷包括：仲裁申请书、受理（不予受理）通知书、答辩书、当事人及其他仲裁参加人的身份证明材料、授权委托书、调查证据、勘验笔录、当事人提供的证据材料、委托鉴定材料、开庭通知、庭审笔录、延期通知书、撤回仲裁申请书、调解书、裁决书、决定书、案件移送函、送达回证等。\n                            申请材料总要求信息真实、准确，材料齐全，符合《中华人民共和国劳动争议调解仲裁法》《劳动人事争议仲裁办案规则》（人社部令第33号）等法规规定要求。\n                        \n                        \n                       \n                        \n                    \n                    显示更多",
+    "办理流程": "查看流程图\n\t\t\t\t\t无\n\t\t\t\t\t\n\t\t\t\t\t\t申请与受理1 办理步骤办理时限办理结果受理0个工作日接收材料审查标准 1.仲裁委员会对符合下列条件的仲裁申请应当予以受理，并在收到仲裁申请之日起五日内向申请人出具受理通知书：    （一）属于本规则第二条规定的争议范围；    （二）有明确的仲裁请求和事实理由；    （三）申请人是与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人；（四）属于本仲裁委员会管辖范围。（来源：《劳动人事争议仲裁办案规则》（人社部令第33号）第三十条）2.劳动争议仲裁委员会负责管辖本区域内发生的劳动争议。劳动争议由劳动合同履行地或者用人单位所在地的劳动争议仲裁委员会管辖。双方当事人分别向劳动合同履行地和用人单位所在地的劳动争议仲裁委员会申请仲裁的，由劳动合同履行地的劳动争议仲裁委员会管辖。（来源：《中华人民共和国劳动争议调解仲裁法》第二十一条）3.市仲裁委员会管辖下列劳动人事争议案件：（一）劳动合同履行地与用人单位注册地均位于通州区，注册资本在壹仟万美元以上或者相当于壹仟万美元以上（含壹仟万美元或者相当于壹仟万美元）的，外国及港澳台投资者单独或者与中央、市属单位共同设立的外商及港澳台商投资企业与劳动者发生的劳动争议案件；（二）市属事业单位、在市民政部门登记的社会团体与其建立人事关系的工作人员之间，因终止人事关系以及履行聘用合同发生的人事争议案件；（三）军队驻京军级以上（含军级）用人单位与聘用制文职人员之间，因履行聘用合同发生的人事争议案件；（四）在全市有重大影响的劳动人事争议案件。各区（含北京经济技术开发区）仲裁委员会管辖下列劳动人事争议案件：（一）市仲裁委员会管辖范围以外的，劳动合同履行地或用人单位所在地位于本辖区的用人单位与劳动者发生的劳动争议案件；（二）用人单位所在地位于本辖区的中央或者区属事业单位、在中央或者区民政部门登记的社会团体与其建立人事关系的工作人员之间，因终止人事关系以及履行聘用合同发生的人事争议案件；（三）军队驻本辖区师级以下（含师级）用人单位与聘用制文职人员之间，因履行聘用合同发生的人事争议案件。(来源：《北京市人力资源和社会保障局 关于调整我市劳动人事争议仲裁案件管辖的通知》第一、二项（京人社仲发〔2022〕5号））4.材料齐全，填写完整；5.提交的证照证件或批复文件齐全完整，提交的复印件完整清晰并与原件一致；6.申请材料所载基本信息与提交的证照证件或批复文件所载内容一致；7.申请材料按要求签字、盖章，且签章内容与申请材料所载内容、提交的证照证件或批复文件所载内容一致。审查与决定2 办理步骤办理时限办理结果决定5个工作日出具受理（不予受理）通知书审查标准 1.仲裁委员会对符合下列条件的仲裁申请应当予以受理，并在收到仲裁申请之日起五日内向申请人出具受理通知书：    （一）属于本规则第二条规定的争议范围；    （二）有明确的仲裁请求和事实理由；    （三）申请人是与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人；（四）属于本仲裁委员会管辖范围。（来源：《劳动人事争议仲裁办案规则》（人社部令第33号）第三十条）2.劳动争议仲裁委员会负责管辖本区域内发生的劳动争议。劳动争议由劳动合同履行地或者用人单位所在地的劳动争议仲裁委员会管辖。双方当事人分别向劳动合同履行地和用人单位所在地的劳动争议仲裁委员会申请仲裁的，由劳动合同履行地的劳动争议仲裁委员会管辖。（来源：《中华人民共和国劳动争议调解仲裁法》第二十一条）3.市仲裁委员会管辖下列劳动人事争议案件：（一）劳动合同履行地与用人单位注册地均位于通州区，注册资本在壹仟万美元以上或者相当于壹仟万美元以上（含壹仟万美元或者相当于壹仟万美元）的，外国及港澳台投资者单独或者与中央、市属单位共同设立的外商及港澳台商投资企业与劳动者发生的劳动争议案件；（二）市属事业单位、在市民政部门登记的社会团体与其建立人事关系的工作人员之间，因终止人事关系以及履行聘用合同发生的人事争议案件；（三）军队驻京军级以上（含军级）用人单位与聘用制文职人员之间，因履行聘用合同发生的人事争议案件；（四）在全市有重大影响的劳动人事争议案件。各区（含北京经济技术开发区）仲裁委员会管辖下列劳动人事争议案件：（一）市仲裁委员会管辖范围以外的，劳动合同履行地或用人单位所在地位于本辖区的用人单位与劳动者发生的劳动争议案件；（二）用人单位所在地位于本辖区的中央或者区属事业单位、在中央或者区民政部门登记的社会团体与其建立人事关系的工作人员之间，因终止人事关系以及履行聘用合同发生的人事争议案件；（三）军队驻本辖区师级以下（含师级）用人单位与聘用制文职人员之间，因履行聘用合同发生的人事争议案件。(来源：《北京市人力资源和社会保障局 关于调整我市劳动人事争议仲裁案件管辖的通知》第一、二项（京人社仲发〔2022〕5号））4.材料齐全，填写完整；5.提交的证照证件或批复文件齐全完整，提交的复印件完整清晰并与原件一致；6.申请材料所载基本信息与提交的证照证件或批复文件所载内容一致；7.申请材料按要求签字、盖章，且签章内容与申请材料所载内容、提交的证照证件或批复文件所载内容一致。颁证与送达3 办理步骤办理时限发证0个工作日 送达方式窗口领取公告送达邮寄送达",
+    "结果名称及样本": "北京市劳动人事争议仲裁委员会受理通知书结果名称北京市劳动人事争议仲裁委员会受理通知书结果文书类型其他（通知书）结果样本北京市劳动人事争议仲裁委员会受理通知书.jpg有效时间无时限不予受理通知书结果名称不予受理通知书结果文书类型其他（通知书）结果样本不予受理通知书.jpg有效时间无时限",
+    "设定依据": "无\n\t\t\t\t\t中华人民共和国劳动争议调解仲裁法制定机关中华人民共和国全国人民代表大会常务委员会依据名称中华人民共和国劳动争议调解仲裁法发布号令（文号）中华人民共和国主席令第80号法条（具体规定）内容第二条：中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法：（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。第五条：发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、 调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁；对仲裁裁决不服的，除本法另有规定的外，可以向人民法院提起诉讼。",
+    "收费依据及标准": "是否收费否",
+    "常见问题": "1、劳动人事争议仲裁委员会受理的劳动争议有哪些？1、因确认劳动关系发生的争议；2、因订立、履行、变更、解除和终止劳动合同发生的争议；3、因除名、辞退和辞职、离职发生的争议；4、因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；5、因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；6、法律、法规规定的其他劳动争议。"
+  },
+  "channel": {
+    "raw_value": "窗口办理、网上办理",
+    "form": "window_and_online",
+    "online_status": "auth_required",
+    "entry_url": "https://banshi.beijing.gov.cn/pubservice/proAccept/urlCheck?baseUrl=aHR0cHM6Ly9mdXd1LnJzai5iZWlqaW5nLmdvdi5jbi96aHJzL2FwaTQvYXJiaXRyYXRpb24vaHRtbC9ob21lL2luZGV4&serverType=1^2^3^4^5^6^9",
+    "mentioned_urls": [],
+    "entry_check": {
+      "official_link": true,
+      "status": "auth_required",
+      "url": "https://banshi.beijing.gov.cn/pubservice/proAccept/urlCheck?baseUrl=aHR0cHM6Ly9mdXd1LnJzai5iZWlqaW5nLmdvdi5jbi96aHJzL2FwaTQvYXJiaXRyYXRpb24vaHRtbC9ob21lL2luZGV4&serverType=1^2^3^4^5^6^9",
+      "final_url": "https://banshi.beijing.gov.cn/pubservice/user/commonLoginPage?backUrl=/proAccept/urlCheck?baseUrl=aHR0cHM6Ly9mdXd1LnJzai5iZWlqaW5nLmdvdi5jbi96aHJzL2FwaTQvYXJiaXRyYXRpb24vaHRtbC9ob21lL2luZGV4&serverType=1^2^3^4^5^6^9&isNewEvent=1",
+      "checked_at": "2026-10-23T21:45:57.152Z",
+      "post_login_submission_verified": false,
+      "scope_notice": "实际点击仅到达官方个人/法人登录选择页；未登录，未核验登录后的网办范围、到场要求或提交能力。",
+      "before_sha256": "7b79e40fc8d201cd1b871140b4a2b605715b635287982d7dc1e1a9b354136337",
+      "after_sha256": "2f94e70a4bb497b5c506df2316ec1c419f09d226762c2c09b22ad9368b13f50a",
+      "screenshot": "reports/nationwide-localization-20261023-night/cross-province/beijing-tongzhou/sections-0650/online-boundary.png"
+    }
+  },
+  "warnings": [
+    "仅适用于该通州区事项，不代表北京市其他区县；户籍所在地不直接决定仲裁管辖。",
+    "5个工作日是本指南“审查与决定”环节的时限，不是仲裁案件整体结案时限。",
+    "公开指南只列三个材料条目，证据材料及委托情形仍须结合受理条件和机构要求核对，不表示只交三种材料即可受理。",
+    "官方仅提供三个样表，含旧日期、示例姓名及证照图片；不能当作空白模板，本区暂未开放填写生成。",
+    "指南同时列窗口和网上办理，但仍要求按规定提交书面申请；登录后是否需到场请向办理机构核实。",
+    "实际点击仅到达官方个人/法人登录选择页；未登录，未核验登录后的网办范围、到场要求或提交能力。"
+  ],
+  "evidence": {
+    "capture_file": "reports/nationwide-localization-20261023-night/cross-province/beijing-tongzhou/sections-0650/materials-final.json",
+    "capture_sha256": "563c4ae32fd2062ccc30656ab5f243c7f58a30efd91b132895c639b7bdd0cd52",
+    "screenshot": "reports/nationwide-localization-20261023-night/cross-province/beijing-tongzhou/sections-0650/flow-reviewed.png",
+    "directory_evidence": "reports/nationwide-localization-20261023-night/cross-province/beijing-tongzhou/directory-identity.json",
+    "section_captures": {
+      "基本信息": {
+        "file": "reports/nationwide-localization-20261023-night/cross-province/beijing-tongzhou/sections-0650/section-0.json",
+        "sha256": "a6447dd81f85f763139984501eb7a26cd075f7b465c8adb579733df8069e4afb"
+      },
+      "申请材料": {
+        "file": "reports/nationwide-localization-20261023-night/cross-province/beijing-tongzhou/sections-0650/section-1.json",
+        "sha256": "632c37d6b8a9a6aa315c3a35baaddf41f4b0fb101e47abb6dcfbe1dde3a8953b"
+      },
+      "办理流程": {
+        "file": "reports/nationwide-localization-20261023-night/cross-province/beijing-tongzhou/sections-0650/section-2.json",
+        "sha256": "26ae3d3bb95e5f2841b1588954df444049fb245479021d25d30f09646bce1d95"
+      },
+      "结果名称及样本": {
+        "file": "reports/nationwide-localization-20261023-night/cross-province/beijing-tongzhou/sections-0650/section-3.json",
+        "sha256": "47064b7eaf2fa5e903e3a615b83f8d0e160e362453722dfebe93a0234db0aa78"
+      },
+      "设定依据": {
+        "file": "reports/nationwide-localization-20261023-night/cross-province/beijing-tongzhou/sections-0650/section-4.json",
+        "sha256": "df38a75f7b1c33e621bd4321c520b93dc244d37894e62abd09619dc07cf5d7f9"
+      },
+      "收费依据及标准": {
+        "file": "reports/nationwide-localization-20261023-night/cross-province/beijing-tongzhou/sections-0650/section-5.json",
+        "sha256": "6cfeec84543a159ec7319dac672506f6830d88ca5b24ccd80233d046e1c89306"
+      },
+      "常见问题": {
+        "file": "reports/nationwide-localization-20261023-night/cross-province/beijing-tongzhou/sections-0650/section-6.json",
+        "sha256": "2874faf339699c3fe253a5ab3ac148c27b969f1850f7b8f052f9e7e9bc5b36d6"
+      }
+    },
+    "original_review": "reports/nationwide-localization-20261023-night/cross-province/beijing-tongzhou/document-qa/reference-render.json",
+    "flow_image": {
+      "url": "https://banshi.beijing.gov.cn/pubtask/download/bef01726-9f33-4012-895e-909680993a3b.jpg",
+      "final_url": "https://banshi.beijing.gov.cn/pubtask/download/bef01726-9f33-4012-895e-909680993a3b.jpg",
+      "http_status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 86167,
+      "first_16_bytes_hex": "89504e470d0a1a0a0000000d49484452",
+      "sha256": "311ddcfbe63a7041140cee5150ff2e1c57995359ecf02aed448c40280231b2bf",
+      "actual_file_type": "png"
+    }
+  },
+  "region_id": "466cff44671eb6fff6f2fa34",
+  "source_id": "dc45a34eec2aa0526fd71d26",
+  "content_hash": "dc5f64ff67407a4476d6948eb0f43b0b5baae30b4e8bf16a169b21bd2122d980",
+  "version": 191
+}

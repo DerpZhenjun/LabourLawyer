@@ -1,0 +1,127 @@
+[
+  {
+    "source_url": "https://www.eco-city.gov.cn/p1/sqldzc/20171010/461.html",
+    "download_url": "https://www.eco-city.gov.cn/u/cms/www/201710/110943177zze.doc",
+    "official_display_name": "1. 劳动仲裁申请书样式.doc.doc",
+    "original_name": "110943177zze.doc",
+    "filename_source": "official_url_basename",
+    "file": "templates/_docx/_regional/function-tianjin-eco-city/110943177zze.doc",
+    "sha256": "2257fa08781ece314f4d1c595f68478c8495b4882a528501dcf78ff5f1f5c825",
+    "bytes": 29184,
+    "http_status": 200,
+    "response_headers": {
+      "Server": [
+        "nginx"
+      ],
+      "Date": [
+        "Fri, 23 Oct 2026 19:04:36 GMT"
+      ],
+      "Transfer-Encoding": [
+        "chunked"
+      ],
+      "Connection": [
+        "keep-alive"
+      ],
+      "Vary": [
+        "Accept-Encoding",
+        "Accept-Encoding"
+      ],
+      "ETag": [
+        "W/\"61ab557e-7200\""
+      ],
+      "X-Frame-Options": [
+        "SAMEORIGIN",
+        "SAMEORIGIN"
+      ],
+      "X-XSS-Protection": [
+        "1; mode=block",
+        "1; mode=block"
+      ],
+      "X-Content-Type-Options": [
+        "nosniff",
+        "nosniff"
+      ],
+      "Strict-Transport-Security": [
+        "max-age=31536000; includeSubDomains; preload; always;",
+        "max-age=31536000; includeSubDomains; preload; always;"
+      ],
+      "Referrer-Policy": [
+        "no-referrer-when-downgrade",
+        "no-referrer-when-downgrade"
+      ],
+      "Content-Type": [
+        "application/msword"
+      ],
+      "Last-Modified": [
+        "Sat, 04 Dec 2021 11:48:14 GMT"
+      ]
+    },
+    "downloaded_at": "2026-10-23T19:04:36.6565103Z",
+    "download_status": "downloaded",
+    "official_kind": "unverified_form_style",
+    "can_generate": false,
+    "transport": "native .NET HTTPS with normal certificate validation; no TLS/certificate bypass"
+  },
+  {
+    "source_url": "https://www.eco-city.gov.cn/p1/sqldzc/20171010/461.html",
+    "download_url": "https://www.eco-city.gov.cn/u/cms/www/201910/081434099aia.docx",
+    "official_display_name": "5. 证据清单.docx.docx",
+    "original_name": "081434099aia.docx",
+    "filename_source": "official_url_basename",
+    "file": "templates/_docx/_regional/function-tianjin-eco-city/081434099aia.docx",
+    "sha256": "929229327433e0457b4a4fbdf4dc11551dbebc6156278b3e5fd22d025ff8a556",
+    "bytes": 14667,
+    "http_status": 200,
+    "response_headers": {
+      "Server": [
+        "nginx"
+      ],
+      "Date": [
+        "Fri, 23 Oct 2026 19:04:36 GMT"
+      ],
+      "Connection": [
+        "keep-alive"
+      ],
+      "ETag": [
+        "\"61ab564e-394b\""
+      ],
+      "X-Frame-Options": [
+        "SAMEORIGIN",
+        "SAMEORIGIN"
+      ],
+      "X-XSS-Protection": [
+        "1; mode=block",
+        "1; mode=block"
+      ],
+      "X-Content-Type-Options": [
+        "nosniff",
+        "nosniff"
+      ],
+      "Strict-Transport-Security": [
+        "max-age=31536000; includeSubDomains; preload; always;",
+        "max-age=31536000; includeSubDomains; preload; always;"
+      ],
+      "Referrer-Policy": [
+        "no-referrer-when-downgrade",
+        "no-referrer-when-downgrade"
+      ],
+      "Accept-Ranges": [
+        "bytes"
+      ],
+      "Content-Type": [
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      ],
+      "Content-Length": [
+        "14667"
+      ],
+      "Last-Modified": [
+        "Sat, 04 Dec 2021 11:51:42 GMT"
+      ]
+    },
+    "downloaded_at": "2026-10-23T19:04:37.0492268Z",
+    "download_status": "downloaded",
+    "official_kind": "unverified_form_style",
+    "can_generate": false,
+    "transport": "native .NET HTTPS with normal certificate validation; no TLS/certificate bypass"
+  }
+]

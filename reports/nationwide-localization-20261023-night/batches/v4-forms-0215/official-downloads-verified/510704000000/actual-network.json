@@ -1,0 +1,3286 @@
+{
+  "lifecycle": {
+    "effectiveLaunch": {
+      "browserLaunched": true,
+      "engine": "chrome",
+      "launchHash": 3511867796762804771
+    },
+    "launched": false,
+    "relaunchedBrowser": false,
+    "restartedBackground": false,
+    "restoreStatus": "not_configured",
+    "reused": true,
+    "saveStatus": "not_attempted"
+  },
+  "requests": [
+    {
+      "headers": {
+        "Upgrade-Insecure-Requests": "1",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/html",
+      "requestId": "CBF961F66B15CC5C605B633787FF03FA",
+      "resourceType": "Document",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373703,
+      "url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/css",
+      "requestId": "48920.2",
+      "resourceType": "Stylesheet",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/css",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:48 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779373703,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/common/hanweb.css?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/css",
+      "requestId": "48920.3",
+      "resourceType": "Stylesheet",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/css",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:49 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779373703,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/javascript",
+      "requestId": "48920.4",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/javascript",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:48 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779373703,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/common/jquery.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/javascript",
+      "requestId": "48920.5",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/javascript",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:46 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779373703,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/common/yff-scrollbar.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/javascript",
+      "requestId": "48920.6",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/javascript",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:47 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779373703,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/laypage/collect.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.7",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "7244",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"7244-1710395173000\"",
+        "Last-Modified": "Thu, 14 Mar 2024 05:46:13 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779373703,
+      "url": "https://www.sczwfw.gov.cn/script/0/2301160910568401.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.8",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "21850",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"21850-1721653185000\"",
+        "Last-Modified": "Mon, 22 Jul 2024 12:59:45 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779373703,
+      "url": "https://www.sczwfw.gov.cn/script/0/2007211619425383.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/javascript",
+      "requestId": "48920.9",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/javascript",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:46 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779373703,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/bszn.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/javascript",
+      "requestId": "48920.10",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/javascript",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:47 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779373703,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/guide.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/javascript",
+      "requestId": "48920.11",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/javascript",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:49 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779373703,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/custom/mouseRightEvent.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.17",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "43145",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"43145-1774317827000\"",
+        "Last-Modified": "Tue, 24 Mar 2026 02:03:47 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/script/0/2106081014119642.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.19",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "92834",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"92834-1774441637000\"",
+        "Last-Modified": "Wed, 25 Mar 2026 12:27:17 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/script/5/2405291007548747.js?v=20240618_3.1.05"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "Upgrade-Insecure-Requests": "1",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/html",
+      "requestId": "BA80CAEDD3DC2ADEB43999FA5966E8D2",
+      "resourceType": "Document",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/juspace/front/sso/v2024/dlzts?v=20240617_3.1.02"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.21",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"7429-1774317331000\"",
+        "Last-Modified": "Tue, 24 Mar 2026 01:55:31 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/picture/18/2603240955319837196.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.22",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"12004-1716952084000\"",
+        "Last-Modified": "Wed, 29 May 2024 03:08:04 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/picture/18/2405291108051228978.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.23",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"12628-1716953351000\"",
+        "Last-Modified": "Wed, 29 May 2024 03:29:11 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/picture/18/2405291129120366860.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/gif",
+      "requestId": "48920.24",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/gif",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"5208-1602839790000\"",
+        "Last-Modified": "Fri, 16 Oct 2020 09:16:30 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://qjd.sczwfw.gov.cn/picture/0/64adc210e1cf480e97639ce83fafdc31.gif"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.25",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"7642-1716948251000\"",
+        "Last-Modified": "Wed, 29 May 2024 02:04:11 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/picture/18/2405291004118493214.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.26",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"4587-1716968427000\"",
+        "Last-Modified": "Wed, 29 May 2024 07:40:27 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/picture/18/2405291436068223335.png"
+    },
+    {
+      "headers": {
+        "Intervention": "<https://www.chromestatus.com/feature/5718547946799104>; level=\"warning\"",
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.29",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Connection": "close",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/javascript",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"6359e167-8e47\"",
+        "Last-Modified": "Thu, 27 Oct 2022 01:39:51 GMT",
+        "Server": "Unknown/X",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://dcs.conac.cn/js/23/000/0000/40432915/CA230000000404329150005.js"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.31",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"1843-1595504483000\"",
+        "Last-Modified": "Thu, 23 Jul 2020 11:41:23 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/picture/2/e31fd974bd514ae0887f165a76e5768e.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.32",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "646",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"646-1777359098000\"",
+        "Last-Modified": "Tue, 28 Apr 2026 06:51:38 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/load.js"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.33",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"637db4f0-699\"",
+        "Last-Modified": "Wed, 23 Nov 2022 05:51:44 GMT",
+        "Strict-Transport-Security": "max-age=86400",
+        "Transfer-Encoding": "chunked"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.jszwfw.gov.cn/picture/0/2009071047071895628.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.35",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"10954-1701055178000\"",
+        "Last-Modified": "Mon, 27 Nov 2023 03:19:38 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/picture/0/2311271119389128619.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/jpeg",
+      "requestId": "48920.36",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/jpeg",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"34362-1714267524000\"",
+        "Last-Modified": "Sun, 28 Apr 2024 01:25:24 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/picture/2/2404280925245443467.jpg"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/jpeg",
+      "requestId": "48920.37",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/jpeg",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"85285-1715907926000\"",
+        "Last-Modified": "Fri, 17 May 2024 01:05:26 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/picture/0/2405161511169058112.jpg"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.38",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"34675-1715846879000\"",
+        "Last-Modified": "Thu, 16 May 2024 08:07:59 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/picture/2/2405161608002527076.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.39",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"4314-1666849812000\"",
+        "Last-Modified": "Thu, 27 Oct 2022 05:50:12 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/picture/0/2210271350127724237.png?v=5100000101"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.40",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:49 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/xxzn_banner.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.41",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:46 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/download_1.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.42",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "805",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:48 GMT",
+        "Server": "nginx",
+        "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/download_2.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/jpeg",
+      "requestId": "48920.43",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/jpeg",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:46 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/injbzn.jpg"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.44",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:49 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/content3_title_bg.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.45",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "102",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:48 GMT",
+        "Server": "nginx",
+        "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/content3_li.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.46",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "299",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:46 GMT",
+        "Server": "nginx",
+        "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/shouqi.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.47",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "621",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"621-1631499187000\"",
+        "Last-Modified": "Mon, 13 Sep 2021 02:13:07 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://www.sczwfw.gov.cn/picture/2/2109131013078973271.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/css",
+      "requestId": "48920.49",
+      "resourceType": "Stylesheet",
+      "responseHeaders": {
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Headers": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization, X-Requested-With",
+        "Access-Control-Allow-Methods": "GET, POST, GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*, *",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/css",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"66703ce5-77e5\"",
+        "Last-Modified": "Mon, 17 Jun 2024 13:40:53 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding, Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://qjd.sczwfw.gov.cn/pub/jhomesc/jhomes/style/dlzt2024/e26828b341394ee7a6abeb489e21ae5c/images/hanweb.min.css?v=20240617.1.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/css",
+      "requestId": "48920.50",
+      "resourceType": "Stylesheet",
+      "responseHeaders": {
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Headers": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization, X-Requested-With",
+        "Access-Control-Allow-Methods": "GET, POST, GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*, *",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/css",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"69aa9abb-8e3\"",
+        "Last-Modified": "Fri, 06 Mar 2026 09:13:31 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding, Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://qjd.sczwfw.gov.cn/pub/jhomesc/jhomes/style/dlzt2024/e26828b341394ee7a6abeb489e21ae5c/images/login.css?v=20240617.1.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.51",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Headers": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization, X-Requested-With",
+        "Access-Control-Allow-Methods": "GET, POST, GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*, *",
+        "Connection": "keep-alive",
+        "Content-Length": "102931",
+        "Content-Type": "application/javascript",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "\"63a8f0bc-19213\"",
+        "Last-Modified": "Mon, 26 Dec 2022 00:54:20 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373704,
+      "url": "https://qjd.sczwfw.gov.cn/pub/jhomesc/jhomes/common/jquery.js?v=20240617.1.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.55",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Connection": "close",
+        "Content-Length": "7573",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "ETag": "\"5def5640-1d95\"",
+        "Last-Modified": "Tue, 10 Dec 2019 08:24:32 GMT",
+        "Server": "Unknown/X"
+      },
+      "status": 200,
+      "timestamp": 1792779373705,
+      "url": "https://dcs.conac.cn/image/red_error.png"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/html",
+      "requestId": "48920.61",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373705,
+      "url": "https://www.sczwfw.gov.cn/jiq/interface/jitem/find-by-code?code=510704000000&deptType=1&jsonpCallback=jsonpcallback&_=1792779372874"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/html",
+      "requestId": "48920.62",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373705,
+      "url": "https://www.sczwfw.gov.cn/jiq/interface/jitem/look-for-root?areaCode=510704000000&jsonpCallback=jsonpcallback2&_=1792779372875"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.63",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "16633",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "ETag": "W/\"16633-1777359098000\"",
+        "Last-Modified": "Tue, 28 Apr 2026 06:51:38 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779373705,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/js/EasyReader.min.js?_=1792779372876"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.64",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "993",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "ETag": "W/\"993-1777359098000\"",
+        "Last-Modified": "Tue, 28 Apr 2026 06:51:38 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779373705,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/js/jquery.cookie.js?_=1792779372877"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.65",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "42694",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "ETag": "W/\"42694-1777359098000\"",
+        "Last-Modified": "Tue, 28 Apr 2026 06:51:38 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779373705,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/js/jquery.jplayer.min.js?_=1792779372878"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "requestId": "48920.66",
+      "resourceType": "Script",
+      "timestamp": 1792779373705,
+      "url": "https://rzsc.sczwfw.gov.cn/sso.action/checkIsLogonOnLine?callback=checkIsLogonOnLineCallBack&_=1792779373559"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.67",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "5510",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "ETag": "W/\"5510-1777359098000\"",
+        "Last-Modified": "Tue, 28 Apr 2026 06:51:38 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779373705,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/js/jquery.md5.min.js?_=1792779372879"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.68",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "2891",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "ETag": "W/\"2891-1777359098000\"",
+        "Last-Modified": "Tue, 28 Apr 2026 06:51:38 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779373706,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/js/jsbrowser.js?_=1792779372880"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/x-icon",
+      "requestId": "48920.69",
+      "resourceType": "Other",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "9662",
+        "Content-Type": "image/x-icon",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "ETag": "W/\"9662-1600569049000\"",
+        "Last-Modified": "Sun, 20 Sep 2020 02:30:49 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779373706,
+      "url": "https://www.sczwfw.gov.cn/favicon.ico"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36"
+      },
+      "method": "GET",
+      "requestId": "48920.66",
+      "resourceType": "Script",
+      "timestamp": 1792779373740,
+      "url": "https://login.gjzwfw.gov.cn/tacs-uc/sso/loginTrust?backUrl=https://rzsc.sczwfw.gov.cn/checkCountryLogonNode?callback=checkIsLogonOnLineCallBack"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.70",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "2273",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "ETag": "W/\"2273-1777359098000\"",
+        "Last-Modified": "Tue, 28 Apr 2026 06:51:38 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779373777,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/js/mTips.js?_=1792779372881"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.71",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "339941",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "ETag": "W/\"339941-1783677363000\"",
+        "Last-Modified": "Fri, 10 Jul 2026 09:56:03 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779373777,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/js/barrierfree.js?_=1792779372882"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36"
+      },
+      "method": "GET",
+      "mimeType": "text/json",
+      "requestId": "48920.66",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Cache-Control": "no-cache",
+        "Connection": "keep-alive",
+        "Content-Length": "46",
+        "Content-Security-Policy": "frame-ancestors 'self' https://*.sczwfw.gov.cn http://*.sczwfw.gov.cn",
+        "Content-Type": "text/json;charset=UTF-8",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "Pragma": "No-cache",
+        "Referrer-Policy": "no-referrer-when-downgrade",
+        "Server": "nginx",
+        "X-Frame-Options": "ALLOW-FROM *.sczwfw.gov.cn",
+        "X-Protected-By": "CA.GOV.CN",
+        "X-Request-ID": "5faaf0c880624383b221a4b9a7cf89b0",
+        "strict-transport-security": "max-age=0"
+      },
+      "status": 200,
+      "timestamp": 1792779373893,
+      "url": "https://rzsc.sczwfw.gov.cn/checkCountryLogonNode?callback=checkIsLogonOnLineCallBack&flag=false"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "Upgrade-Insecure-Requests": "1",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/html",
+      "requestId": "3795B790486B058E6F05153CCDAB7651",
+      "resourceType": "Document",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779373894,
+      "url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/css",
+      "requestId": "48920.72",
+      "resourceType": "Stylesheet",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/css",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "ETag": "W/\"15986-1777359098000\"",
+        "Last-Modified": "Tue, 28 Apr 2026 06:51:38 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374359,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/css/barrierfree.css"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/css",
+      "requestId": "48920.74",
+      "resourceType": "Stylesheet",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/css",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:48 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779374359,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/common/hanweb.css?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/css",
+      "requestId": "48920.75",
+      "resourceType": "Stylesheet",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/css",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:49 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779374359,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/javascript",
+      "requestId": "48920.76",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/javascript",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:48 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779374359,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/common/jquery.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/javascript",
+      "requestId": "48920.77",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/javascript",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:46 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779374359,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/common/yff-scrollbar.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/javascript",
+      "requestId": "48920.78",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/javascript",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:47 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779374359,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/laypage/collect.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.79",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Length": "7244",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"7244-1710395173000\"",
+        "Last-Modified": "Thu, 14 Mar 2024 05:46:13 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779374359,
+      "url": "https://www.sczwfw.gov.cn/script/0/2301160910568401.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/javascript",
+      "requestId": "48920.80",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/javascript",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:46 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779374359,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/bszn.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/javascript",
+      "requestId": "48920.81",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/javascript",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:47 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/guide.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.82",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Length": "21850",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"21850-1721653185000\"",
+        "Last-Modified": "Mon, 22 Jul 2024 12:59:45 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/script/0/2007211619425383.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/javascript",
+      "requestId": "48920.83",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/javascript",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:49 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/custom/mouseRightEvent.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/javascript",
+      "requestId": "48920.84",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "486",
+        "Content-Type": "text/javascript",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:46 GMT",
+        "Server": "nginx",
+        "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/custom/foot_bury.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.90",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Length": "43145",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"43145-1774317827000\"",
+        "Last-Modified": "Tue, 24 Mar 2026 02:03:47 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/script/0/2106081014119642.js?v=20240924_2.0.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.92",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Length": "92834",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"92834-1774441637000\"",
+        "Last-Modified": "Wed, 25 Mar 2026 12:27:17 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/script/5/2405291007548747.js?v=20240618_3.1.05"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "Upgrade-Insecure-Requests": "1",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/html",
+      "requestId": "5710BDB0067F4D13E4DCE746D4F945A7",
+      "resourceType": "Document",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/juspace/front/sso/v2024/dlzts?v=20240617_3.1.02"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.94",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"7429-1774317331000\"",
+        "Last-Modified": "Tue, 24 Mar 2026 01:55:31 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/picture/18/2603240955319837196.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.95",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"12004-1716952084000\"",
+        "Last-Modified": "Wed, 29 May 2024 03:08:04 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/picture/18/2405291108051228978.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.96",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"12628-1716953351000\"",
+        "Last-Modified": "Wed, 29 May 2024 03:29:11 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/picture/18/2405291129120366860.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/gif",
+      "requestId": "48920.97",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/gif",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"5208-1602839790000\"",
+        "Last-Modified": "Fri, 16 Oct 2020 09:16:30 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://qjd.sczwfw.gov.cn/picture/0/64adc210e1cf480e97639ce83fafdc31.gif"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.98",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"7642-1716948251000\"",
+        "Last-Modified": "Wed, 29 May 2024 02:04:11 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/picture/18/2405291004118493214.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.99",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"4587-1716968427000\"",
+        "Last-Modified": "Wed, 29 May 2024 07:40:27 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/picture/18/2405291436068223335.png"
+    },
+    {
+      "headers": {
+        "Intervention": "<https://www.chromestatus.com/feature/5718547946799104>; level=\"warning\"",
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.104",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/javascript",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"6359e167-8e47\"",
+        "Last-Modified": "Thu, 27 Oct 2022 01:39:51 GMT",
+        "Server": "Unknown/X",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://dcs.conac.cn/js/23/000/0000/40432915/CA230000000404329150005.js"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.106",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"1843-1595504483000\"",
+        "Last-Modified": "Thu, 23 Jul 2020 11:41:23 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/picture/2/e31fd974bd514ae0887f165a76e5768e.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.107",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Length": "646",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"646-1777359098000\"",
+        "Last-Modified": "Tue, 28 Apr 2026 06:51:38 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/load.js"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.108",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"637db4f0-699\"",
+        "Last-Modified": "Wed, 23 Nov 2022 05:51:44 GMT"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.jszwfw.gov.cn/picture/0/2009071047071895628.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.110",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"10954-1701055178000\"",
+        "Last-Modified": "Mon, 27 Nov 2023 03:19:38 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/picture/0/2311271119389128619.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/jpeg",
+      "requestId": "48920.111",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/jpeg",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"34362-1714267524000\"",
+        "Last-Modified": "Sun, 28 Apr 2024 01:25:24 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/picture/2/2404280925245443467.jpg"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/jpeg",
+      "requestId": "48920.112",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/jpeg",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"85285-1715907926000\"",
+        "Last-Modified": "Fri, 17 May 2024 01:05:26 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/picture/0/2405161511169058112.jpg"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.113",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"34675-1715846879000\"",
+        "Last-Modified": "Thu, 16 May 2024 08:07:59 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/picture/2/2405161608002527076.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.114",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"4314-1666849812000\"",
+        "Last-Modified": "Thu, 27 Oct 2022 05:50:12 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/picture/0/2210271350127724237.png?v=5100000101"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.115",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:49 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/xxzn_banner.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.116",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:46 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/download_1.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.117",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Length": "805",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:48 GMT",
+        "Server": "nginx",
+        "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/download_2.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/jpeg",
+      "requestId": "48920.118",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/jpeg",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:46 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/injbzn.jpg"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.119",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:49 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/content3_title_bg.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.120",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Length": "102",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:48 GMT",
+        "Server": "nginx",
+        "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/content3_li.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.121",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Length": "299",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:46 GMT",
+        "Server": "nginx",
+        "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/shouqi.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.122",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "461",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:46 GMT",
+        "Server": "nginx",
+        "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/zhankai.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.123",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Length": "621",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"621-1631499187000\"",
+        "Last-Modified": "Mon, 13 Sep 2021 02:13:07 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/picture/2/2109131013078973271.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.124",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Content-Length": "7573",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "ETag": "\"5def5640-1d95\"",
+        "Last-Modified": "Tue, 10 Dec 2019 08:24:32 GMT",
+        "Server": "Unknown/X"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://dcs.conac.cn/image/red_error.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/plain",
+      "requestId": "48920.129",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/juspace/interface/record/add?title=%E5%8A%9E%E4%BA%8B%E6%8C%87%E5%8D%97%E8%AF%A6%E7%89%88-%E5%9B%9B%E5%B7%9D%E6%94%BF%E5%8A%A1%E6%9C%8D%E5%8A%A1%E7%BD%91&addr=aHR0cHM6Ly93d3cuc2N6d2Z3Lmdvdi5jbi9qaXE0L2Zyb250L3RyYW5zaXRpb24veXdUcmFuc1RvRGV0YWlsP2FyZWFDb2RlPTUxMDcwNDAwMDAwMCZpdGVtQ29kZT0xMTUxMDYwMjQ1MTIyMzc0OEE0NTEyMDE0MTM1MDAxJnRhc2tUeXBlPTIwJmRlcHRDb2RlPTQ1MTIyMzc0OA"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/html",
+      "requestId": "48920.130",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/jiq/interface/jitem/find-by-code?code=510704000000&deptType=1&jsonpCallback=jsonpcallback&_=1792779374244"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/html",
+      "requestId": "48920.131",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/html;charset=UTF-8",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/jiq/interface/jitem/look-for-root?areaCode=510704000000&jsonpCallback=jsonpcallback2&_=1792779374245"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.132",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "16633",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "ETag": "W/\"16633-1777359098000\"",
+        "Last-Modified": "Tue, 28 Apr 2026 06:51:38 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779374360,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/js/EasyReader.min.js?_=1792779374246"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/css",
+      "requestId": "48920.134",
+      "resourceType": "Stylesheet",
+      "responseHeaders": {
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Headers": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization, X-Requested-With",
+        "Access-Control-Allow-Methods": "GET, POST, GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*, *",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/css",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"66703ce5-77e5\"",
+        "Last-Modified": "Mon, 17 Jun 2024 13:40:53 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding, Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374504,
+      "url": "https://qjd.sczwfw.gov.cn/pub/jhomesc/jhomes/style/dlzt2024/e26828b341394ee7a6abeb489e21ae5c/images/hanweb.min.css?v=20240617.1.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/css",
+      "requestId": "48920.135",
+      "resourceType": "Stylesheet",
+      "responseHeaders": {
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Headers": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization, X-Requested-With",
+        "Access-Control-Allow-Methods": "GET, POST, GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*, *",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/css",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "W/\"69aa9abb-8e3\"",
+        "Last-Modified": "Fri, 06 Mar 2026 09:13:31 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding, Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374504,
+      "url": "https://qjd.sczwfw.gov.cn/pub/jhomesc/jhomes/style/dlzt2024/e26828b341394ee7a6abeb489e21ae5c/images/login.css?v=20240617.1.0"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.136",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Headers": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization, X-Requested-With",
+        "Access-Control-Allow-Methods": "GET, POST, GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*, *",
+        "Content-Length": "102931",
+        "Content-Type": "application/javascript",
+        "Date": "Fri, 23 Oct 2026 18:16:12 GMT",
+        "ETag": "\"63a8f0bc-19213\"",
+        "Last-Modified": "Mon, 26 Dec 2022 00:54:20 GMT",
+        "Server": "nginx",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779374504,
+      "url": "https://qjd.sczwfw.gov.cn/pub/jhomesc/jhomes/common/jquery.js?v=20240617.1.0"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.137",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "993",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "ETag": "W/\"993-1777359098000\"",
+        "Last-Modified": "Tue, 28 Apr 2026 06:51:38 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779374504,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/js/jquery.cookie.js?_=1792779374247"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "requestId": "48920.141",
+      "resourceType": "Script",
+      "timestamp": 1792779374505,
+      "url": "https://rzsc.sczwfw.gov.cn/sso.action/checkIsLogonOnLine?callback=checkIsLogonOnLineCallBack&_=1792779374421"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.142",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "42694",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:14 GMT",
+        "ETag": "W/\"42694-1777359098000\"",
+        "Last-Modified": "Tue, 28 Apr 2026 06:51:38 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779374505,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/js/jquery.jplayer.min.js?_=1792779374248"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36"
+      },
+      "method": "GET",
+      "requestId": "48920.141",
+      "resourceType": "Script",
+      "timestamp": 1792779374505,
+      "url": "https://login.gjzwfw.gov.cn/tacs-uc/sso/loginTrust?backUrl=https://rzsc.sczwfw.gov.cn/checkCountryLogonNode?callback=checkIsLogonOnLineCallBack"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36"
+      },
+      "method": "GET",
+      "mimeType": "text/json",
+      "requestId": "48920.141",
+      "resourceType": "Script",
+      "responseHeaders": {
+        "Cache-Control": "no-cache",
+        "Connection": "keep-alive",
+        "Content-Length": "46",
+        "Content-Security-Policy": "frame-ancestors 'self' https://*.sczwfw.gov.cn http://*.sczwfw.gov.cn",
+        "Content-Type": "text/json;charset=UTF-8",
+        "Date": "Fri, 23 Oct 2026 18:16:14 GMT",
+        "Pragma": "No-cache",
+        "Referrer-Policy": "no-referrer-when-downgrade",
+        "Server": "nginx",
+        "X-Frame-Options": "ALLOW-FROM *.sczwfw.gov.cn",
+        "X-Protected-By": "CA.GOV.CN",
+        "X-Request-ID": "003d4b2c8d64447790e59d903e5069a4",
+        "strict-transport-security": "max-age=0"
+      },
+      "status": 200,
+      "timestamp": 1792779374576,
+      "url": "https://rzsc.sczwfw.gov.cn/checkCountryLogonNode?callback=checkIsLogonOnLineCallBack&flag=false"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.143",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "5510",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:14 GMT",
+        "ETag": "W/\"5510-1777359098000\"",
+        "Last-Modified": "Tue, 28 Apr 2026 06:51:38 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779374576,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/js/jquery.md5.min.js?_=1792779374249"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.144",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "2891",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:14 GMT",
+        "ETag": "W/\"2891-1777359098000\"",
+        "Last-Modified": "Tue, 28 Apr 2026 06:51:38 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779375010,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/js/jsbrowser.js?_=1792779374250"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.145",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "2273",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:14 GMT",
+        "ETag": "W/\"2273-1777359098000\"",
+        "Last-Modified": "Tue, 28 Apr 2026 06:51:38 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779375010,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/js/mTips.js?_=1792779374251"
+    },
+    {
+      "headers": {
+        "Accept": "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/javascript",
+      "requestId": "48920.146",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "339941",
+        "Content-Type": "application/javascript;charset=utf-8",
+        "Date": "Fri, 23 Oct 2026 18:16:14 GMT",
+        "ETag": "W/\"339941-1783677363000\"",
+        "Last-Modified": "Fri, 10 Jul 2026 09:56:03 GMT",
+        "Server": "nginx"
+      },
+      "status": 200,
+      "timestamp": 1792779375010,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/js/barrierfree.js?_=1792779374252"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748"
+      },
+      "method": "GET",
+      "mimeType": "text/css",
+      "requestId": "48920.147",
+      "resourceType": "Stylesheet",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/css",
+        "Date": "Fri, 23 Oct 2026 18:16:13 GMT",
+        "ETag": "W/\"15986-1777359098000\"",
+        "Last-Modified": "Tue, 28 Apr 2026 06:51:38 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding"
+      },
+      "status": 200,
+      "timestamp": 1792779375010,
+      "url": "https://www.sczwfw.gov.cn/module/jslib/accessiblereading/css/barrierfree.css"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.148",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:14 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:49 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779375166,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/backTop.png"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/sc_xxzn.css?v=20240924_2.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "image/png",
+      "requestId": "48920.149",
+      "resourceType": "Image",
+      "responseHeaders": {
+        "Accept-Ranges": "bytes",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Length": "355",
+        "Content-Type": "image/png",
+        "Date": "Fri, 23 Oct 2026 18:16:14 GMT",
+        "Last-Modified": "Fri, 21 Feb 2025 07:45:46 GMT",
+        "Server": "nginx",
+        "Vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+      },
+      "status": 200,
+      "timestamp": 1792779375195,
+      "url": "https://www.sczwfw.gov.cn/jpaas-jiq-sczw4/static/intergratedQuery/style/demo/ywblbszn/images1/X.png"
+    },
+    {
+      "headers": {
+        "Accept": "*/*",
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "application/json",
+      "requestId": "48920.150",
+      "resourceType": "XHR",
+      "responseHeaders": {
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Origin": "*",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json;charset=UTF-8",
+        "Date": "Fri, 23 Oct 2026 18:16:15 GMT",
+        "Server": "nginx",
+        "Transfer-Encoding": "chunked"
+      },
+      "status": 200,
+      "timestamp": 1792779405502,
+      "url": "https://www.sczwfw.gov.cn/jiq4/interface/item/annex/encryptUrl?rowguid=4310863847776096256"
+    },
+    {
+      "headers": {
+        "Referer": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510704000000&itemCode=11510602451223748A4512014135001&taskType=20&deptCode=451223748",
+        "Upgrade-Insecure-Requests": "1",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+      },
+      "method": "GET",
+      "mimeType": "text/html",
+      "requestId": "CDC4279608A0C2F17E94D00127C6D089",
+      "resourceType": "Document",
+      "responseHeaders": {
+        "Connection": "keep-alive",
+        "Content-Length": "562",
+        "Content-Type": "text/html",
+        "Date": "Fri, 23 Oct 2026 18:16:45 GMT",
+        "Server": "nginx"
+      },
+      "status": 504,
+      "timestamp": 1792779405502,
+      "url": "https://www.sczwfw.gov.cn/materialibraryui/v4.0/meterialibraryCatFile/openDownload/giveFw?nRyV8ikmjKza4dJNACoxxRHetdOvXntN1WihQ3eNfMHl1CLYqKC+eiJVvFFFXZy16QjgLjjuRPss8Y5wM6/0pa0aWvNVTbWWzdakDR4jq5oav2rvF2kaHUmABQDdjnNSX5w6E5DpG9Rup1y91m0iQhC1/sUGD/TYj9XROxp9FMRdAYOR6VdQ0AzIVF/J2JoT5Ys/aBs72+Z6DoSIc4d6zOdeCIfQeGsNQb+WSfdyw6/xwQl4MU9Z6mFcO+1FlPh+c4HOPt5Q537TmXVkcNfz1+mruGIuLAPrISbWtpghR2AUJrASULVeSZDK0maSm3ApPv9eHQhXyxdmswWB8po6ag=="
+    }
+  ]
+}

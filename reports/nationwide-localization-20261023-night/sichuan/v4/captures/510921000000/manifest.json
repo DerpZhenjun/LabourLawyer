@@ -1,0 +1,70 @@
+{
+  "province": "sichuan",
+  "city": "遂宁市",
+  "district": "蓬溪县",
+  "region_code": "510921000000",
+  "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510921000000&itemCode=11510821567612809P4512014135001&taskType=20&deptCode=11510821567612809P",
+  "summary_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=510921000000&itemCode=11510821567612809P4512014135001&taskType=20&deptCode=11510821567612809P",
+  "search_file": "reports\\nationwide-localization-20261023-night\\sichuan\\discovery\\510921000000.json",
+  "selected": {
+    "code": "510921000000",
+    "header": "蓬溪县",
+    "item": "11510821567612809P4512014135001",
+    "url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510921000000&itemCode=11510821567612809P4512014135001&taskType=20&deptCode=11510821567612809P"
+  },
+  "sections": [
+    {
+      "section": "基本信息",
+      "file": "attempts\\20261023T145705259245Z\\01.json",
+      "sha256": "9e7076b3bbe1d6b88f48e82e9795d7c3ea939a0dc1f1be87ff7c4eb281b264d2",
+      "captured_at": "2026-10-23T14:57:06.923Z"
+    },
+    {
+      "section": "申请材料",
+      "file": "attempts\\20261023T145705259245Z\\02.json",
+      "sha256": "e76a6e88cbe0ad4ae920f65059072282e516b235e11bc7e8a58ed08a61b566d4",
+      "captured_at": "2026-10-23T14:57:07.345Z"
+    },
+    {
+      "section": "受理条件",
+      "file": "attempts\\20261023T145705259245Z\\03.json",
+      "sha256": "efb5fa1feba5920db39bcf721e414dbe6a534b59cc7e7beec113ec9bf89f6079",
+      "captured_at": "2026-10-23T14:57:07.684Z"
+    },
+    {
+      "section": "办理流程",
+      "file": "attempts\\20261023T145705259245Z\\04.json",
+      "sha256": "2097a310c30084b1cccf7f7e1939e2172e6cb63286b6a66a84e8401ee684c0c2",
+      "captured_at": "2026-10-23T14:57:07.938Z"
+    },
+    {
+      "section": "收费标准",
+      "file": "attempts\\20261023T145705259245Z\\05.json",
+      "sha256": "d163c11a42ffff8ba177cc0fe411e054ef68e9ccddca397fa08925538b3cdc30",
+      "captured_at": "2026-10-23T14:57:08.353Z"
+    },
+    {
+      "section": "设定依据",
+      "file": "attempts\\20261023T145705259245Z\\06.json",
+      "sha256": "dd47f68cc408f17dfc4404a2301dfc9079d29d1906f3cb42838e142d5c181ff0",
+      "captured_at": "2026-10-23T14:57:08.702Z"
+    },
+    {
+      "section": "中介服务",
+      "file": "attempts\\20261023T145705259245Z\\07.json",
+      "sha256": "deaefb7a557c28fd996d2934ebfef4a59eae3142db13b7031177fe68e1beac3d",
+      "captured_at": "2026-10-23T14:57:09.003Z"
+    },
+    {
+      "section": "常见问题",
+      "file": "attempts\\20261023T145705259245Z\\08.json",
+      "sha256": "6bbcf38956d14c7875b746e68c6416ccc90e0134e679ad00b0b02bb19681b92b",
+      "captured_at": "2026-10-23T14:57:09.262Z"
+    }
+  ],
+  "captured_at": "2026-10-23T14:57:09.312972+00:00",
+  "state": "raw_browser_capture_requires_v4_parser",
+  "generation_enabled": false,
+  "published": false,
+  "no_login_or_submission": true
+}

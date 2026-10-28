@@ -1,0 +1,18 @@
+{
+  "province": "jiangsu",
+  "city": "盐城市",
+  "district": "滨海县",
+  "region_code": "320922",
+  "id": "42dee3ae04f99c5638fe0ca48f5733da",
+  "type": "ONLINE_CHANNEL_UNVERIFIED",
+  "service": "劳动人事争议仲裁申请",
+  "keyword": "劳动人事争议仲裁申请",
+  "url": "https://ycbh.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=96&iddept_ql_inf=11320922014374388A4002014302002&ql_kind=20&iddept_yw_inf=11320922014374388A400201430200201",
+  "occurred_at": "2026-10-28T10:21:45.665Z",
+  "screenshot": null,
+  "attempts": 1,
+  "final_status": "pending_manual_verification",
+  "delivery_status": "PENDING_OPENCLAW",
+  "reason": "尚未核实登录后的实际网上提交能力。",
+  "remediation": "保留自身来源；不登录、不代交、不推断其他地区规则。"
+}

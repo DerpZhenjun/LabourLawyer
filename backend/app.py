@@ -21,6 +21,9 @@ from dotenv import load_dotenv
 load_dotenv(PROJECT_ROOT / "backend" / ".env")
 
 from platform_api import router as platform_router
+from routes.province_documents import router as province_documents_router
+from routes.portal_reports import router as portal_reports_router
+from routes.regional_guides import router as regional_guides_router
 from llm_service.QA import generate_lawyer_chat
 
 try:
@@ -28,17 +31,23 @@ try:
     from routes.Zhejiang.el import router as zj_el_router
     from routes.Guangdong.la import router as gd_la_router
     from routes.Guangdong.el import router as gd_el_router
-    from routes.others.wia import router as wia_router
 except ImportError as e:
     print(f"⚠️ 路由模块导入失败，跳过注册: {e}")
     from fastapi import APIRouter
-    zj_la_router = zj_el_router = gd_la_router = gd_el_router = wia_router = APIRouter()
+    zj_la_router = zj_el_router = gd_la_router = gd_el_router = APIRouter()
 
 app = FastAPI(
     title="LabourLawyer Platform API",
     description="劳动争议案件、证据、时效、文书与 AI 辅助能力。",
     version="1.0.0",
 )
+
+@app.on_event('startup')
+async def load_initial_public_catalogue():
+    # Explicit test/candidate stores never receive release data implicitly.
+    if not os.getenv('LABOURLAWYER_REGIONAL_DB') and not os.getenv('LABOURLAWYER_DIRECTORY_DB'):
+        from public_seed import bootstrap_public_data
+        bootstrap_public_data(PROJECT_ROOT)
 
 origins = [item.strip() for item in os.getenv(
     "LABOURLAWYER_CORS_ORIGINS",
@@ -57,7 +66,9 @@ app.include_router(zj_la_router, prefix="/api/zhejiang/la", tags=["浙江仲裁"
 app.include_router(zj_el_router, prefix="/api/zhejiang/el", tags=["浙江证据"])
 app.include_router(gd_la_router, prefix="/api/guangdong/la", tags=["广东仲裁"])
 app.include_router(gd_el_router, prefix="/api/guangdong/el", tags=["广东证据"])
-app.include_router(wia_router, prefix="/api/wia", tags=["工伤仲裁"])
+app.include_router(province_documents_router, prefix="/api/province-documents", tags=["各省官方文书"])
+app.include_router(portal_reports_router, prefix="/api/portal-reports", tags=["政务门户观察报告"])
+app.include_router(regional_guides_router, prefix="/api/regional-guides", tags=["具体地区办理指南"])
 app.include_router(platform_router)
 
 @app.middleware("http")

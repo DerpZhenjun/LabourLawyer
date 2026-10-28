@@ -1,0 +1,70 @@
+{
+  "province": "sichuan",
+  "city": "甘孜州",
+  "district": "色达县",
+  "region_code": "513333000000",
+  "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=513333000000&itemCode=1151333300902223044512014135001&taskType=20&deptCode=1151333300902222304",
+  "summary_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail_summary?areaCode=513333000000&itemCode=1151333300902223044512014135001&taskType=20&deptCode=1151333300902222304",
+  "search_file": "reports\\nationwide-localization-20261023-night\\sichuan\\discovery\\513333000000.json",
+  "selected": {
+    "code": "513333000000",
+    "header": "色达县",
+    "item": "1151333300902223044512014135001",
+    "url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=513333000000&itemCode=1151333300902223044512014135001&taskType=20&deptCode=1151333300902222304"
+  },
+  "sections": [
+    {
+      "section": "基本信息",
+      "file": "attempts\\20261023T145733496263Z\\01.json",
+      "sha256": "b99d01ef09c9a038fab037cff26fb548888bbb808a3789cef3159103052abf12",
+      "captured_at": "2026-10-23T14:57:34.911Z"
+    },
+    {
+      "section": "申请材料",
+      "file": "attempts\\20261023T145733496263Z\\02.json",
+      "sha256": "8330db3063c64010aa496c2709242366d84ee5d0f185126a54f9b00e19dd2e9d",
+      "captured_at": "2026-10-23T14:57:35.177Z"
+    },
+    {
+      "section": "受理条件",
+      "file": "attempts\\20261023T145733496263Z\\03.json",
+      "sha256": "4174583930477c42a62cdd632e55bd959d7e456540b5049aece8a89036dc767e",
+      "captured_at": "2026-10-23T14:57:35.468Z"
+    },
+    {
+      "section": "办理流程",
+      "file": "attempts\\20261023T145733496263Z\\04.json",
+      "sha256": "d0cd506cea34265941df5e46d7b971abdc0343570e864e9f8c84d5e80a03ac9e",
+      "captured_at": "2026-10-23T14:57:35.681Z"
+    },
+    {
+      "section": "收费标准",
+      "file": "attempts\\20261023T145733496263Z\\05.json",
+      "sha256": "2fa3f5be93f03bab8e1be9224abf917feecd8cb744d9b2c5e3db468429b1958a",
+      "captured_at": "2026-10-23T14:57:35.979Z"
+    },
+    {
+      "section": "设定依据",
+      "file": "attempts\\20261023T145733496263Z\\06.json",
+      "sha256": "81cb1f55db963db5cdfcc913fb068c7ffea451747973e0a2b23b939a280e848c",
+      "captured_at": "2026-10-23T14:57:36.184Z"
+    },
+    {
+      "section": "中介服务",
+      "file": "attempts\\20261023T145733496263Z\\07.json",
+      "sha256": "44b6f51262040bb6b786c077ff36af70dbc0093fb6d4d5b7044df536c0e3e884",
+      "captured_at": "2026-10-23T14:57:36.400Z"
+    },
+    {
+      "section": "常见问题",
+      "file": "attempts\\20261023T145733496263Z\\08.json",
+      "sha256": "df94ade95b750d964accc119ea01fed7d60569e0be18d3f9fa19ab2a633c8ca7",
+      "captured_at": "2026-10-23T14:57:36.655Z"
+    }
+  ],
+  "captured_at": "2026-10-23T14:57:36.712645+00:00",
+  "state": "raw_browser_capture_requires_v4_parser",
+  "generation_enabled": false,
+  "published": false,
+  "no_login_or_submission": true
+}

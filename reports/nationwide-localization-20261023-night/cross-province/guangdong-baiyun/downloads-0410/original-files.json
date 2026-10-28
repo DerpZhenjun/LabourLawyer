@@ -1,0 +1,124 @@
+[
+  {
+    "source_url": "https://www.by.gov.cn/gzjg/qrlzyhshbzj/zcgg/cjgg/content/post_10451075.html",
+    "official_display_name": "附件1：白云区劳动仲裁立案所需材料.zip",
+    "download_url": "https://www.by.gov.cn/attachment/7/7891/7891723/10451075.zip",
+    "package_kind": "official_material_package",
+    "collected_at": "2026-10-23T20:03:01.804780+00:00",
+    "region_code": "440111",
+    "published": false,
+    "http_status": 200,
+    "final_url": "https://www.by.gov.cn/attachment/7/7891/7891723/10451075.zip",
+    "headers": {
+      "Date": "Fri, 23 Oct 2026 20:03:01 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "47399",
+      "Connection": "close",
+      "Last-Modified": "Mon, 23 Mar 2026 06:13:31 GMT",
+      "ETag": "\"69c0da0b-b927\"",
+      "X-Frame-Options": "SAMEORIGIN",
+      "X-Xss-Protection": "1; mode=block",
+      "Accept-Ranges": "bytes"
+    },
+    "downloaded_at": "2026-10-23T20:03:01.977666+00:00",
+    "file": "templates/_docx/_regional/440111/official-materials.zip",
+    "bytes": 47399,
+    "sha256": "66edc11750f60e32633f99425233e5392c1988139305f3a79c71acb4ac1565a8",
+    "download_status": "downloaded",
+    "members": [
+      {
+        "archive_member_name": "4.仲裁风险告知书（自行下载浏览即可）.doc",
+        "file": "templates/_docx/_regional/440111/package-1/01.doc",
+        "bytes": 26681,
+        "sha256": "a294e5a9870a08748733228cc3a10bc8235b9c9f47cc48b83197b890d7326db9",
+        "file_type": "doc",
+        "classification": "unreviewed"
+      },
+      {
+        "archive_member_name": "2.当事人送达地址确认书.doc",
+        "file": "templates/_docx/_regional/440111/package-1/02.doc",
+        "bytes": 19456,
+        "sha256": "7c4c2ec444cad64dfe22081b97c93df680d6b74d9e49d4ea582e24174db93213",
+        "file_type": "doc",
+        "classification": "unreviewed"
+      },
+      {
+        "archive_member_name": "3.劳动仲裁收件单.doc",
+        "file": "templates/_docx/_regional/440111/package-1/03.doc",
+        "bytes": 24576,
+        "sha256": "fbe58c8870745f5a41f45c55d7aca58f306c729e8b1d56eb4d1bfac8fbb7caae",
+        "file_type": "doc",
+        "classification": "unreviewed"
+      },
+      {
+        "archive_member_name": "材料清单.docx",
+        "file": "templates/_docx/_regional/440111/package-1/04.docx",
+        "bytes": 12675,
+        "sha256": "4fe9999a26a9ffc0092a6c179d5a1b37bdbb8624729173c5c5f0f5c89aef1093",
+        "file_type": "docx",
+        "classification": "unreviewed"
+      },
+      {
+        "archive_member_name": "1.劳动仲裁申请书（个人）.doc",
+        "file": "templates/_docx/_regional/440111/package-1/05.doc",
+        "bytes": 55722,
+        "sha256": "5c3f17bcccdd7b268ce0b74f67f3c43bec8a97d4f1cad448af0d67749147c834",
+        "file_type": "doc",
+        "classification": "unreviewed"
+      }
+    ]
+  },
+  {
+    "source_url": "https://www.by.gov.cn/gzjg/qrlzyhshbzj/zcgg/cjgg/content/post_10451075.html",
+    "official_display_name": "附件2：部分立案材料填写模板（可参考）.zip",
+    "download_url": "https://www.by.gov.cn/attachment/7/7886/7886011/10451075.zip",
+    "package_kind": "official_filled_examples",
+    "collected_at": "2026-10-23T20:03:03.983957+00:00",
+    "region_code": "440111",
+    "published": false,
+    "http_status": 200,
+    "final_url": "https://www.by.gov.cn/attachment/7/7886/7886011/10451075.zip",
+    "headers": {
+      "Date": "Fri, 23 Oct 2026 20:03:03 GMT",
+      "Content-Type": "application/zip",
+      "Content-Length": "25803",
+      "Connection": "close",
+      "Last-Modified": "Mon, 23 Mar 2026 06:13:31 GMT",
+      "ETag": "\"69c0da0b-64cb\"",
+      "X-Frame-Options": "SAMEORIGIN",
+      "X-Xss-Protection": "1; mode=block",
+      "Accept-Ranges": "bytes"
+    },
+    "downloaded_at": "2026-10-23T20:03:04.141871+00:00",
+    "file": "templates/_docx/_regional/440111/official-examples.zip",
+    "bytes": 25803,
+    "sha256": "b07c3df8c905badc72ad4ab6a29a6305d730d60625a632c8bc6c0e72630ab375",
+    "download_status": "downloaded",
+    "members": [
+      {
+        "archive_member_name": "附件2：部分立案材料填写模板（可参考）/1.劳动仲裁申请书（个人）.doc",
+        "file": "templates/_docx/_regional/440111/package-2/01.doc",
+        "bytes": 58834,
+        "sha256": "01cfae28cb8d4325004ba6c4c13111d102e5cb967a0e03925e3ab9ae863e00d6",
+        "file_type": "doc",
+        "classification": "sample"
+      },
+      {
+        "archive_member_name": "附件2：部分立案材料填写模板（可参考）/2.当事人送达地址确认书.doc",
+        "file": "templates/_docx/_regional/440111/package-2/02.doc",
+        "bytes": 20992,
+        "sha256": "bf50fb989c00f3428c04d23d6f78433150a2a4a4757fb90ad899ea783f2914ec",
+        "file_type": "doc",
+        "classification": "sample"
+      },
+      {
+        "archive_member_name": "附件2：部分立案材料填写模板（可参考）/3.劳动仲裁收件单.doc",
+        "file": "templates/_docx/_regional/440111/package-2/03.doc",
+        "bytes": 27136,
+        "sha256": "b28e00ed2cf49fbb8db1f38fa6eb46461fceb299dba54964e96da412a3fce486",
+        "file_type": "doc",
+        "classification": "sample"
+      }
+    ]
+  }
+]

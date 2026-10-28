@@ -1,0 +1,35 @@
+[
+  {
+    "province": "zhejiang",
+    "scope_type": "province_page",
+    "city": null,
+    "district": null,
+    "verification_status": "partial",
+    "source_id": "22ad4a5aed9d9394ef8698aa",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=2510b7af-2402-4502-837c-14eb4a71177d",
+    "source_title": "浙江政务服务网 - 劳动人事争议仲裁申请",
+    "collected_at": "2026-10-08T06:46:14.416Z",
+    "verified_at": "2026-10-08T06:46:14.416Z",
+    "raw_text_file": "zhejiang-cross-check.json",
+    "screenshot": "19-zhejiang-basic-recheck.png",
+    "raw_fields": {
+      "实施主体": "省人力社保厅",
+      "承诺办结时限": "44工作日",
+      "到现场次数": "0次",
+      "法定办结时限": "60天",
+      "是否收费": "不收费"
+    },
+    "materials": [
+      "用人单位登记注册材料",
+      "劳动者身份证",
+      "《劳动人事争议仲裁申请书》",
+      "《证据清单》",
+      "存在劳动关系的证据和可证实申请人主张的证据"
+    ],
+    "material_requirement": "纸质材料2份，A4，原件",
+    "online_status": "auth_required",
+    "entry_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=2510b7af-2402-4502-837c-14eb4a71177d",
+    "login_origin": "https://user.zjzwfw.gov.cn",
+    "limitation": "仅核对省级事项页面，不绑定任何市、区县；没有重新下载或替换已有浙江模板"
+  }
+]
