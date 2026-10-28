@@ -1,7 +1,7 @@
 <template>
   <div v-if="isAdmin" class="app-shell">
     <aside class="sidebar" :class="{ open: sidebarOpen }">
-      <RouterLink class="brand" to="/admin"><span class="brand-mark">法</span><span><strong>LabourLawyer</strong><small>管理后台</small></span></RouterLink>
+      <RouterLink class="brand" to="/admin"><BrandMark :size="36" /><span><strong>LabourLawyer</strong><small>管理后台</small></span></RouterLink>
       <nav class="main-nav" aria-label="后台导航">
         <RouterLink v-for="item in adminNav" :key="item.to" :to="item.to" @click="sidebarOpen=false"><i :class="item.icon"></i><span>{{item.label}}</span></RouterLink>
       </nav>
@@ -22,13 +22,13 @@
     <PublicHeader />
     <RouterView :key="route.path" />
     <footer class="public-footer">
-      <div><div class="footer-brand"><span>法</span><div><strong>LabourLawyer</strong><small>劳动仲裁文书助手</small></div></div><p>帮助普通劳动者了解办理流程、准备申请文书和整理证据。</p></div>
+      <div><div class="footer-brand"><BrandMark :size="32" /><div><strong>LabourLawyer</strong><small>劳动仲裁文书助手</small></div></div><p>帮助普通劳动者了解办理流程、准备申请文书和整理证据。</p></div>
       <div><strong>重要说明</strong><p>本平台提供文书和办事信息辅助，不替代律师法律意见。政务办理以当地仲裁委员会最新要求为准。</p></div>
       <div><strong>官方咨询</strong><p>人力资源和社会保障服务热线：<b>12333</b></p></div>
     </footer>
   </div>
 
-  <button v-if="!assistantOpen && !digitalOpen" class="assistant-fab" @click="assistantOpen=true" aria-label="打开 AI 法律顾问"><i class="fa-solid fa-scale-balanced"></i><span>AI 法律顾问</span></button>
+  <button v-if="!assistantOpen && !digitalOpen" class="assistant-fab" @click="assistantOpen=true" aria-label="打开 AI 法律顾问"><BrandMark variant="assistant" :size="30" /><span>AI 法律顾问</span></button>
   <QA v-if="assistantOpen" :open="assistantOpen" @close="assistantOpen=false" @open-digital-human="openDigitalLawyer" />
   <DigitalLawyer v-if="digitalOpen" @close="digitalOpen=false" />
 </template>
@@ -36,6 +36,7 @@
 <script setup>
 import { computed, defineAsyncComponent, nextTick, ref, watch } from 'vue'
 import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router'
+import BrandMark from '@/components/BrandMark.vue'
 const DigitalLawyer = defineAsyncComponent(() => import('@/components/DigitalLawyer.vue'))
 import PublicHeader from '@/components/PublicHeader.vue'
 const QA = defineAsyncComponent(() => import('@/components/QA.vue'))
@@ -58,5 +59,6 @@ watch(()=>route.path,async()=>{await nextTick();document.querySelector('#main-co
 </script>
 
 <style scoped>
+.assistant-fab{display:inline-flex;align-items:center;gap:10px}
 .back-public{margin-top:auto;padding:12px 13px;border:1px solid rgba(255,255,255,.1);border-radius:9px;color:#aebfd3;font-size:12px}.back-public i{margin-right:7px}.public-footer{max-width:1180px;margin:45px auto 0;padding:32px 24px 42px;display:grid;grid-template-columns:1.2fr 1.4fr .8fr;gap:50px;border-top:1px solid #e3e8eb;color:#6f7e8d}.public-footer>div>strong{color:#3d5064;font-size:13px}.public-footer p{margin:8px 0 0;font-size:12px;line-height:1.7}.public-footer b{color:#0f766e;font-size:16px}.footer-brand{display:flex;align-items:center;gap:9px}.footer-brand>span{width:32px;height:32px;display:grid;place-items:center;border-radius:8px;color:#fff;background:#16665f;font-family:serif}.footer-brand strong,.footer-brand small{display:block}.footer-brand strong{color:#273c51;font-size:14px}.footer-brand small{color:#8995a1;font-size:10px}@media(max-width:700px){.public-footer{margin-top:20px;padding:25px 16px 34px;grid-template-columns:1fr;gap:23px}}
 </style>

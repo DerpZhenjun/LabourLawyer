@@ -37,7 +37,7 @@ export default function Home() {
       const saved = JSON.parse(localStorage.getItem("labourlawyer.digital.chat") || "[]");
       if (Array.isArray(saved)) setChatLog(saved.filter(m => ["user", "assistant"].includes(m?.role) && typeof m.content === "string").slice(-20));
     } catch { /* Ignore damaged local drafts. */ }
-    const check = async () => { try { const r = await fetch("/api/health/", { signal: AbortSignal.timeout(5000) }); if (!r.ok) throw new Error(); const s = await r.json(); setBackend(s.backend); setVoiceMode(s.voice); } catch { setBackend(false); } };
+    const check = async () => { try { const r = await fetch("/api/health/", { signal: AbortSignal.timeout(15000) }); if (!r.ok) throw new Error(); const s = await r.json(); setBackend(s.backend && s.ai?.ready); setVoiceMode(s.voice); } catch { setBackend(false); } };
     check(); const poll = setInterval(check, 20000);
     return () => { clearInterval(poll); request.current?.abort(); recognition.current?.abort(); interruptSpeakCharacter(); };
   }, []);
@@ -45,7 +45,7 @@ export default function Home() {
   const avatarReady = useCallback(() => setAvatar("ready"), []);
   const avatarFailed = useCallback(() => setAvatar("error"), []);
   const send = async (text = input) => {
-    text = text.trim(); if (!text || processing.current) return;
+    text = text.trim(); if (!text || processing.current || backend !== true) return;
     processing.current = true; setBusy(true); setInput(""); setError("");
     const history: Message[] = [...chatLog.slice(-11), { role: "user", content: text }];
     setChatLog([...history, { role: "assistant", content: "" }]);
@@ -59,7 +59,7 @@ export default function Home() {
       setBackend(true);
       if (voiceRef.current) { const screenplay = textsToScreenplay([answer], DEFAULT_PARAM)[0]; if (screenplay) speakCharacter(screenplay, viewer, ""); }
     } catch (e) {
-      if (!request.current.signal.aborted) { setError(e instanceof Error ? e.message : "连接中断，请重试。"); setChatLog([...history, { role: "assistant", content: answer || "暂时无法获取回答，请确认后端和本地模型已启动。" }]); }
+      if (!request.current.signal.aborted) { setError(e instanceof Error ? e.message : "连接中断，请重试。"); setChatLog([...history, { role: "assistant", content: answer || "暂时无法获取回答，请检查项目后端和 Ubuntu 远程连接。" }]); }
     } finally { reader?.releaseLock(); processing.current = false; setBusy(false); }
   };
   const toggleMic = () => {
@@ -75,7 +75,7 @@ export default function Home() {
   };
   return <main className={`digital-app ${embedded ? "embedded" : ""}`}>
     <Meta />
-    <header className="counsel-topbar"><div><span className="counsel-mark">律</span><span><small>LABOUR LAWYER</small><strong>阿律 · 法律数字人</strong></span></div><span className={`service-badge ${backend === false ? "offline" : ""}`}><i />{backend === null ? "检查服务" : backend ? "问答已连接" : "问答未连接"}</span></header>
+    <header className="counsel-topbar"><div><img src="/brand/counsel-mark.svg" width={38} height={38} alt="" /><span><small>LABOUR LAWYER</small><strong>阿律 · 法律数字人</strong></span></div><span className={`service-badge ${backend === false ? "offline" : ""}`}><i />{backend === null ? "检查服务" : backend ? "远程问答已连接" : "远程问答未连接"}</span></header>
     <div className="counsel-workspace">
       <section className="avatar-stage" aria-label="数字人形象">
         <div className="stage-rings" aria-hidden="true" />
@@ -87,12 +87,12 @@ export default function Home() {
       <section className="consultation-panel" aria-label="法律咨询对话">
         <div className="conversation-heading"><div><small>YOUR CONSULTATION</small><h2>劳动争议咨询</h2></div><div className="conversation-actions"><button disabled={!voiceSupported && voiceMode !== "gpt-sovits"} className={voice ? "active" : ""} onClick={() => { voiceRef.current = !voice; setVoice(!voice); if (voice) interruptSpeakCharacter(); }} aria-label={voice ? "关闭语音朗读" : "开启语音朗读"} title={voiceMode === "gpt-sovits" ? "语音合成朗读" : "浏览器语音朗读"}>{voice ? "♫" : "♪"}<span>{voice ? "朗读开" : "朗读关"}</span></button><button disabled={busy || !chatLog.length} onClick={() => { interruptSpeakCharacter(); setChatLog([]); setError(""); }} aria-label="清空对话" title="清空对话">↺</button></div></div>
         <div className="conversation-log" role="log" aria-label="咨询记录" aria-live="polite">
-          {!chatLog.length && <div className="welcome-card"><span className="welcome-symbol">律</span><h3>你好，我是阿律。</h3><p>可以告诉我发生了什么、涉及哪些时间，以及你希望解决的问题。我会帮你梳理需要准备的材料和下一步行动。</p><div className="prompt-list">{prompts.map(text => <button key={text} onClick={() => send(text)}>{text}<span>↗</span></button>)}</div></div>}
+          {!chatLog.length && <div className="welcome-card"><span className="welcome-symbol">律</span><h3>你好，我是阿律。</h3><p>可以告诉我发生了什么、涉及哪些时间，以及你希望解决的问题。我会帮你梳理需要准备的材料和下一步行动。</p><div className="prompt-list">{prompts.map(text => <button key={text} disabled={backend !== true} onClick={() => send(text)}>{text}<span>↗</span></button>)}</div></div>}
           {chatLog.map((m, i) => <article key={i} className={`counsel-message ${m.role}`}><small>{m.role === "user" ? "YOU · 你" : "ALU · 阿律"}</small><div>{m.content ? <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content.replace(/<think>[\s\S]*?(<\/think>|$)/gi, "")}</ReactMarkdown> : <span className="reply-loading">正在梳理你的问题<span>…</span></span>}</div></article>)}
           <div ref={end} />
         </div>
         {error && <p className="consultation-error" role="alert">{error}</p>}
-        <form className="counsel-composer" onSubmit={e => { e.preventDefault(); send(); }}><label htmlFor="counsel-question" className="sr-only">描述你的劳动争议问题</label><textarea id="counsel-question" value={input} maxLength={8000} onChange={e => setInput(e.target.value)} placeholder="例如：公司拖欠了两个月工资，我该准备什么证据？" rows={2} disabled={busy} onKeyDown={e => { if (e.key === "Enter" && !e.shiftKey && !e.nativeEvent.isComposing) { e.preventDefault(); send(); } }} /><div><span>{recording ? "正在听，请描述你的问题" : busy ? "正在生成回答" : "Enter 发送 · Shift + Enter 换行"}</span><div className="composer-buttons"><button type="button" className={`mic-button ${recording ? "recording" : ""}`} aria-label={recording ? "停止语音输入" : "开始语音输入"} title={micSupported ? "语音输入" : "当前浏览器不支持语音输入"} disabled={!micSupported || busy} onClick={toggleMic}>{recording ? "停止" : "语音"}</button><button type="submit" disabled={busy || !input.trim()}>{busy ? "思考中…" : "发送问题 ↗"}</button></div></div></form>
+        <form className="counsel-composer" onSubmit={e => { e.preventDefault(); send(); }}><label htmlFor="counsel-question" className="sr-only">描述你的劳动争议问题</label><textarea id="counsel-question" value={input} maxLength={8000} onChange={e => setInput(e.target.value)} placeholder="例如：公司拖欠了两个月工资，我该准备什么证据？" rows={2} disabled={busy} onKeyDown={e => { if (e.key === "Enter" && !e.shiftKey && !e.nativeEvent.isComposing) { e.preventDefault(); send(); } }} /><div><span>{recording ? "正在听，请描述你的问题" : busy ? "正在生成回答" : "Enter 发送 · Shift + Enter 换行"}</span><div className="composer-buttons"><button type="button" className={`mic-button ${recording ? "recording" : ""}`} aria-label={recording ? "停止语音输入" : "开始语音输入"} title={micSupported ? "语音输入" : "当前浏览器不支持语音输入"} disabled={!micSupported || busy} onClick={toggleMic}>{recording ? "停止" : "语音"}</button><button type="submit" disabled={busy || backend !== true || !input.trim()}>{busy ? "思考中…" : "发送问题 ↗"}</button></div></div></form>
         <p className="counsel-disclaimer">提供法律信息辅助，不代表律师委托或办案结果。</p>
       </section>
     </div>

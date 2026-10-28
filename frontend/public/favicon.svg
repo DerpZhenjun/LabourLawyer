@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="15" fill="#0b1f3a"/>
-  <path d="M32 14v36M19 21h26M24 21l-9 16h18l-9-16Zm16 0-9 16h18l-9-16ZM22 50h20" fill="none" stroke="#71d8cf" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" role="img" aria-label="LabourLawyer">
+  <rect width="32" height="32" rx="8" fill="#17675e"/>
+  <path d="M10 6h9l5 5v13a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z" fill="#fff"/>
+  <path d="M19 6v5h5Z" fill="#acd5c7"/>
+  <path d="M12 13v8h3.5M18 15v6h3" fill="none" stroke="#17675e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

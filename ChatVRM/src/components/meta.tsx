@@ -8,6 +8,7 @@ export const Meta = () => {
   return (
     <Head>
       <title>{title}</title>
+      <link rel="icon" type="image/svg+xml" href="/brand/labourlawyer-mark.svg" />
       <meta name="description" content={description} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
