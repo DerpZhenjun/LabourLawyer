@@ -18,6 +18,8 @@ export class Viewer {
   private _scene: THREE.Scene;
   private _camera?: THREE.PerspectiveCamera;
   private _cameraControls?: OrbitControls;
+  private _frame?: number;
+  private _resizeObserver?: ResizeObserver;
 
   constructor() {
     this.isReady = false;
@@ -39,14 +41,16 @@ export class Viewer {
     this._clock.start();
   }
 
-  public loadVrm(url: string) {
+  public async loadVrm(url: string) {
     if (this.model?.vrm) {
       this.unloadVRM();
     }
 
     // gltf and vrm
-    this.model = new Model(this._camera || new THREE.Object3D());
-    this.model.loadVRM(url).then(async () => {
+    const model = new Model(this._camera || new THREE.Object3D());
+    this.model = model;
+    await model.loadVRM(url);
+    if (this.model !== model || !this.isReady) { model.unLoadVrm(); return; }
       if (!this.model?.vrm) return;
 
       // Disable frustum culling
@@ -56,14 +60,15 @@ export class Viewer {
 
       this._scene.add(this.model.vrm.scene);
 
-      const vrma = await loadVRMAnimation(buildUrl("/idle_loop.vrma"));
-      if (vrma) this.model.loadAnimation(vrma);
+      try {
+        const vrma = await loadVRMAnimation(buildUrl("/idle_loop.vrma"));
+        if (vrma && this.model === model) await model.loadAnimation(vrma);
+      } catch { /* A missing idle animation must not hide a loaded avatar. */ }
 
       // HACK: アニメーションの原点がずれているので再生後にカメラ位置を調整する
       requestAnimationFrame(() => {
         this.resetCamera();
       });
-    });
   }
 
   public unloadVRM(): void {
@@ -88,7 +93,7 @@ export class Viewer {
     });
     this._renderer.outputEncoding = THREE.sRGBEncoding;
     this._renderer.setSize(width, height);
-    this._renderer.setPixelRatio(window.devicePixelRatio);
+    this._renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
     // camera
     this._camera = new THREE.PerspectiveCamera(20.0, width / height, 0.1, 20.0);
@@ -103,9 +108,8 @@ export class Viewer {
     this._cameraControls.screenSpacePanning = true;
     this._cameraControls.update();
 
-    window.addEventListener("resize", () => {
-      this.resize();
-    });
+    this._resizeObserver = new ResizeObserver(() => this.resize());
+    if (parentElement) this._resizeObserver.observe(parentElement);
     this.isReady = true;
     this.update();
   }
@@ -119,7 +123,7 @@ export class Viewer {
     const parentElement = this._renderer.domElement.parentElement;
     if (!parentElement) return;
 
-    this._renderer.setPixelRatio(window.devicePixelRatio);
+    this._renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     this._renderer.setSize(
       parentElement.clientWidth,
       parentElement.clientHeight
@@ -150,7 +154,8 @@ export class Viewer {
   }
 
   public update = () => {
-    requestAnimationFrame(this.update);
+    if (!this.isReady) return;
+    this._frame = requestAnimationFrame(this.update);
     const delta = this._clock.getDelta();
     // update vrm components
     if (this.model) {
@@ -161,4 +166,15 @@ export class Viewer {
       this._renderer.render(this._scene, this._camera);
     }
   };
+
+  public dispose() {
+    this.isReady = false;
+    if (this._frame !== undefined) cancelAnimationFrame(this._frame);
+    this._resizeObserver?.disconnect();
+    this._cameraControls?.dispose();
+    this.unloadVRM();
+    this.model = undefined;
+    this._renderer?.dispose();
+    this._renderer = undefined;
+  }
 }

@@ -1,7 +1,7 @@
 <template>
   <div v-if="isAdmin" class="app-shell">
     <aside class="sidebar" :class="{ open: sidebarOpen }">
-      <div class="brand" @click="go('/admin')"><span class="brand-mark">法</span><span><strong>LabourLawyer</strong><small>管理后台</small></span></div>
+      <RouterLink class="brand" to="/admin"><span class="brand-mark">法</span><span><strong>LabourLawyer</strong><small>管理后台</small></span></RouterLink>
       <nav class="main-nav" aria-label="后台导航">
         <RouterLink v-for="item in adminNav" :key="item.to" :to="item.to" @click="sidebarOpen=false"><i :class="item.icon"></i><span>{{item.label}}</span></RouterLink>
       </nav>
@@ -9,18 +9,18 @@
       <div class="org-switcher"><span class="org-avatar">PL</span><span><strong>管理员</strong><small>产品运营后台</small></span></div>
     </aside>
     <div v-if="sidebarOpen" class="sidebar-mask" @click="sidebarOpen=false"></div>
-    <main class="main-stage">
+    <main class="main-stage" id="main-content" tabindex="-1">
       <header class="topbar">
         <div class="topbar-left"><button class="icon-button mobile-menu" aria-label="打开导航" @click="sidebarOpen=true"><i class="fa-solid fa-bars"></i></button><div><small>{{currentMeta.eyebrow}}</small><strong>{{currentMeta.title}}</strong></div></div>
         <div class="topbar-actions"><button class="primary-action" @click="go('/admin/cases?new=1')"><i class="fa-solid fa-plus"></i> 新建案件</button></div>
       </header>
-      <RouterView />
+      <RouterView :key="route.path" />
     </main>
   </div>
 
   <div v-else class="public-site">
     <PublicHeader />
-    <RouterView />
+    <RouterView :key="route.path" />
     <footer class="public-footer">
       <div><div class="footer-brand"><span>法</span><div><strong>LabourLawyer</strong><small>劳动仲裁文书助手</small></div></div><p>帮助普通劳动者了解办理流程、准备申请文书和整理证据。</p></div>
       <div><strong>重要说明</strong><p>本平台提供文书和办事信息辅助，不替代律师法律意见。政务办理以当地仲裁委员会最新要求为准。</p></div>
@@ -29,16 +29,16 @@
   </div>
 
   <button v-if="!assistantOpen && !digitalOpen" class="assistant-fab" @click="assistantOpen=true" aria-label="打开 AI 法律顾问"><i class="fa-solid fa-scale-balanced"></i><span>AI 法律顾问</span></button>
-  <QA :open="assistantOpen" @close="assistantOpen=false" @open-digital-human="openDigitalLawyer" />
+  <QA v-if="assistantOpen" :open="assistantOpen" @close="assistantOpen=false" @open-digital-human="openDigitalLawyer" />
   <DigitalLawyer v-if="digitalOpen" @close="digitalOpen=false" />
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, defineAsyncComponent, nextTick, ref, watch } from 'vue'
 import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router'
-import DigitalLawyer from '@/components/DigitalLawyer.vue'
+const DigitalLawyer = defineAsyncComponent(() => import('@/components/DigitalLawyer.vue'))
 import PublicHeader from '@/components/PublicHeader.vue'
-import QA from '@/components/QA.vue'
+const QA = defineAsyncComponent(() => import('@/components/QA.vue'))
 
 const route=useRoute();const router=useRouter();const sidebarOpen=ref(false);const assistantOpen=ref(false);const digitalOpen=ref(false)
 const isAdmin=computed(()=>route.meta.layout==='admin')
@@ -50,9 +50,11 @@ const adminNav=[
   {to:'/admin/documents',label:'模板管理',icon:'fa-regular fa-file-lines'},
   {to:'/admin/deadlines',label:'时效管理',icon:'fa-regular fa-calendar-check'},
   {to:'/admin/knowledge',label:'内容管理',icon:'fa-solid fa-book-open'},
+  {to:'/admin/regions',label:'地区核验与问题',icon:'fa-solid fa-map-location-dot'},
 ]
 const go=path=>router.push(path)
 const openDigitalLawyer=()=>{assistantOpen.value=false;digitalOpen.value=true}
+watch(()=>route.path,async()=>{await nextTick();document.querySelector('#main-content')?.focus({preventScroll:true})},{flush:'post'})
 </script>
 
 <style scoped>

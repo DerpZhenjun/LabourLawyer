@@ -71,22 +71,6 @@
           </div>
         </div>
 
-        <div class="text-center mt-5 mb-4 animate__animated animate__fadeInUp">
-          <h2 class="other-title">
-            <i class="fas fa-folder-open me-2"></i> 其余文书
-          </h2>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-4 mb-4">
-            <div class="glass-card simple-card h-100" @click="navigateTo('/wia')">
-              <div class="card-body text-center py-4">
-                <img src="@/assets/img/WIA.png" alt="工伤仲裁" class="mb-3" style="width: 70px;">
-                <h5 class="fw-bold text-dark mb-0">工伤仲裁</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
 
@@ -167,7 +151,6 @@ const handleSearch = () => {
     '申请书': '/zhejiang/la',
     '证据': '/zhejiang/el',
     '清单': '/zhejiang/el',
-    '工伤': '/wia',
     '广东': '/guangdong/la',
     '浙江': '/zhejiang/la'
   };

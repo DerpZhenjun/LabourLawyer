@@ -21,8 +21,10 @@ async def generate_lawyer_chat(
     """
     
     # 确保系统提示词始终在第一位
-    model = model or os.getenv("LABOURLAWYER_LLM_MODEL", "ollama/qwen3.5:4b")
-    api_base = api_base or os.getenv("OLLAMA_API_BASE", "http://127.0.0.1:11434")
+    model = model or os.getenv("LABOURLAWYER_LLM_MODEL", "ollama/qwen3.8:27b")
+    api_base = api_base or os.getenv("OLLAMA_API_BASE", "http://10.66.66.1:11434")
+    if model != 'ollama/qwen3.8:27b' or api_base != 'http://10.66.66.1:11434':
+        raise ValueError('本次只使用 Ubuntu Ollama http://10.66.66.1:11434 / qwen3.8:27b')
     temperature = temperature if temperature is not None else float(os.getenv("LABOURLAWYER_LLM_TEMPERATURE", "0.5"))
     reasoning_effort = reasoning_effort or os.getenv("LABOURLAWYER_LLM_REASONING", "none")
     max_tokens = int(os.getenv("LABOURLAWYER_LLM_MAX_TOKENS", "1200"))

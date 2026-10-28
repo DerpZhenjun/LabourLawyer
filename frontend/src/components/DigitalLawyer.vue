@@ -1,217 +1,53 @@
 <template>
-  <div 
-    class="digital-lawyer-modal"
-    :style="{ width: boxWidth + 'px', height: boxHeight + 'px' }"
-    :class="{ 'is-resizing': isResizing }"
-  >
-    <div class="resize-handle-tl" @mousedown="startResize">
+  <div class="digital-mask" data-dialog-backdrop aria-hidden="true" @click="$emit('close')"></div>
+  <section ref="dialog" class="digital-lawyer-modal" role="dialog" aria-modal="true" aria-label="法律数字人" tabindex="-1" :class="{ 'is-expanded': expanded }">
+    <header class="digital-header">
+      <div class="digital-brand"><span class="brand-icon"><i class="fa-solid fa-user-tie" aria-hidden="true"></i></span><div><small>面对面，聊聊你的问题</small><strong>阿律 · 法律数字人</strong></div></div>
+      <div class="window-actions"><button @click="expanded=!expanded" :aria-label="expanded ? '缩小窗口' : '扩大窗口'"><i :class="expanded ? 'fa-solid fa-compress' : 'fa-solid fa-expand'"></i></button><button @click="$emit('close')" aria-label="关闭数字人"><i class="fa-solid fa-xmark"></i></button></div>
+    </header>
+    <div class="digital-content">
+      <iframe v-if="state==='ready'" :key="frameKey" :src="embeddedUrl" title="阿律法律数字人咨询界面" allow="microphone" class="vrm-iframe"></iframe>
+      <div v-else class="connection-state" role="status">
+        <span class="connection-art"><i :class="state==='loading' ? 'fa-solid fa-circle-notch fa-spin' : 'fa-solid fa-plug-circle-exclamation'"></i></span>
+        <small>法律数字人</small>
+        <h2>{{ state==='loading' ? '正在连接阿律' : '数字人暂未连接' }}</h2>
+        <p>{{ state==='loading' ? '正在检查数字人服务，请稍候。' : '数字人服务尚未启动或连接中断。请在项目启动菜单中启动网页端，再重试。' }}</p>
+        <button v-if="state==='error'" class="retry-btn" @click="connect"><i class="fa-solid fa-arrow-rotate-right"></i>重新连接</button>
+        <a v-if="state==='error'" :href="digitalLawyerUrl" target="_blank" rel="noopener">在独立页面打开 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
       </div>
-
-    <div class="header-bar">
-      <button class="close-btn" @click="$emit('close')">
-        <span>✕</span>
-      </button>
     </div>
-    
-    <iframe 
-      ref="vrmFrame"
-      :src="digitalLawyerUrl"
-      class="vrm-iframe"
-      :style="{ pointerEvents: isResizing ? 'none' : 'auto' }"
-      allow="microphone; camera"
-      frameborder="0"
-    ></iframe>
-    
-    <div class="loading-tips">正在连线阿律律师...</div>
-  </div>
+    <footer><span class="status-dot" :class="state"></span>{{ state==='ready' ? '数字人服务已连接' : state==='loading' ? '正在连接服务' : '连接不可用' }}<span class="footer-note">劳动争议信息辅助</span></footer>
+  </section>
 </template>
-
 <script setup>
-import { ref, onUnmounted } from 'vue';
-
-const emit = defineEmits(['close']);
-const digitalLawyerUrl = import.meta.env.VITE_DIGITAL_LAWYER_URL || 'http://127.0.0.1:3000';
-
-// --- 状态定义 ---
-const boxWidth = ref(360);  // 初始宽度
-const boxHeight = ref(600); // 初始高度
-const isResizing = ref(false);
-
-// 拖拽相关临时变量
-let startX = 0;
-let startY = 0;
-let startW = 0;
-let startH = 0;
-
-// --- 拖拽逻辑 ---
-
-const startResize = (e) => {
-  e.preventDefault(); 
-  isResizing.value = true;
-  
-  // 记录鼠标按下时的位置
-  startX = e.clientX;
-  startY = e.clientY;
-  
-  // 记录当前的宽高
-  startW = boxWidth.value;
-  startH = boxHeight.value;
-
-  // 添加全局监听
-  window.addEventListener('mousemove', handleResize);
-  window.addEventListener('mouseup', stopResize);
-};
-
-const handleResize = (e) => {
-  if (!isResizing.value) return;
-  
-  // --- 核心修改点：计算逻辑反转 ---
-  // 因为是拖动左上角：
-  // 鼠标向左移 (clientX 变小) -> 宽度变大 (diff > 0)
-  // 鼠标向上移 (clientY 变小) -> 高度变大 (diff > 0)
-  const dx = startX - e.clientX; 
-  const dy = startY - e.clientY;
-
-  const newWidth = startW + dx;
-  const newHeight = startH + dy;
-
-  // 限制最小尺寸 (宽300, 高400)
-  if (newWidth > 300) boxWidth.value = newWidth;
-  if (newHeight > 400) boxHeight.value = newHeight;
-};
-
-const stopResize = () => {
-  isResizing.value = false;
-  window.removeEventListener('mousemove', handleResize);
-  window.removeEventListener('mouseup', stopResize);
-};
-
-onUnmounted(() => {
-  window.removeEventListener('mousemove', handleResize);
-  window.removeEventListener('mouseup', stopResize);
-});
+import { ref, onMounted, onUnmounted } from 'vue'
+import { useDialogFocus } from '@/composables/useDialogFocus'
+const emit=defineEmits(['close'])
+const dialog=ref(null)
+useDialogFocus(()=>true,dialog,()=>emit('close'))
+const digitalLawyerUrl = import.meta.env.VITE_DIGITAL_LAWYER_URL || 'http://127.0.0.1:3000'
+const embeddedUrl=new URL(digitalLawyerUrl); embeddedUrl.searchParams.set('embed','1')
+const state=ref('loading'), expanded=ref(false), frameKey=ref(0)
+let controller, poll, disposed=false
+async function connect() {
+  controller?.abort(); controller=new AbortController()
+  state.value='loading'
+  const timeout=setTimeout(()=>controller?.abort(),15000)
+  try {
+    const response=await fetch(new URL('api/health/',digitalLawyerUrl.endsWith('/')?digitalLawyerUrl:digitalLawyerUrl+'/'),{signal:controller.signal,cache:'no-store'})
+    if(!response.ok) throw new Error('Unavailable')
+    const status=await response.json()
+    if(status.service!=='digital-human') throw new Error('Unexpected service')
+    if(!disposed){frameKey.value++;state.value='ready'}
+  } catch { if(!disposed) state.value='error' } finally {clearTimeout(timeout)}
+}
+onMounted(()=>{connect();poll=setInterval(async()=>{if(state.value!=='ready')return;try{const r=await fetch(new URL('api/health/',digitalLawyerUrl.endsWith('/')?digitalLawyerUrl:digitalLawyerUrl+'/'),{signal:AbortSignal.timeout(5000),cache:'no-store'});if(!r.ok)throw new Error('Unavailable')}catch{if(!disposed)state.value='error'}},30000)})
+onUnmounted(()=>{disposed=true;controller?.abort();clearInterval(poll)})
 </script>
-
 <style scoped>
-/* 容器样式 */
-.digital-lawyer-modal {
-  position: fixed;
-  bottom: 20px;
-  right: 20px; /* 固定在右下角 */
-  background: white;
-  border-radius: 12px;
-  /* 左上角圆角设为0，为了让手柄贴合（可选） */
-  border-top-left-radius: 0; 
-  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
-  z-index: 9999;
-  border: 1px solid #e0e0e0;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  transition: box-shadow 0.3s;
-  max-width: calc(100vw - 24px);
-  max-height: calc(100vh - 24px);
-}
-
-.digital-lawyer-modal.is-resizing {
-  box-shadow: 0 15px 50px rgba(0,0,0,0.4);
-  user-select: none;
-}
-
-/* --- 左上角拖拽手柄样式 --- */
-.resize-handle-tl {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 25px;
-  height: 25px;
-  cursor: nwse-resize; /* 鼠标样式：左上-右下箭头 */
-  z-index: 20; 
-  
-  /* 用渐变画一个左上角的三角形 */
-  background: linear-gradient(135deg, rgba(235, 171, 98, 0.9) 50%, transparent 50%);
-  
-  /* 增加一点阴影让它浮起来 */
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-  
-  /* 过渡效果 */
-  transition: width 0.2s, height 0.2s;
-}
-
-/* 鼠标悬停时手柄变大一点，提示可点击 */
-.resize-handle-tl:hover {
-  width: 30px;
-  height: 30px;
-  background: linear-gradient(135deg, #e69138 50%, transparent 50%);
-}
-
-/* 顶部栏样式 */
-.header-bar {
-  position: absolute;
-  top: 0;
-  right: 0; /* 靠右对齐，避开左边的手柄 */
-  width: 100%; 
-  height: 40px;
-  z-index: 10;
-  display: flex;
-  justify-content: flex-end; /* 内容靠右 */
-  align-items: center;
-  padding: 0 10px;
-  pointer-events: none; /* 让鼠标事件穿透 header，除非点到按钮 */
-}
-
-/* 关闭按钮 */
-.close-btn {
-  pointer-events: auto; /* 恢复按钮点击 */
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
-  border: none;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  backdrop-filter: blur(4px);
-  transition: all 0.2s;
-}
-
-.close-btn:hover {
-  background: rgba(200, 50, 50, 0.9);
-}
-
-.vrm-iframe {
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  position: relative;
-  z-index: 2;
-  border: none;
-}
-
-.loading-tips {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #999;
-  font-size: 14px;
-  z-index: 1;
-}
-
-@media (max-width: 560px) {
-  .digital-lawyer-modal {
-    right: 8px;
-    bottom: 8px;
-    width: calc(100vw - 16px) !important;
-    height: calc(100vh - 16px) !important;
-    max-width: none;
-    max-height: none;
-    border-radius: 14px;
-  }
-
-  .resize-handle-tl { display: none; }
-}
+.digital-lawyer-modal{position:fixed;right:18px;bottom:18px;z-index:100;width:min(540px,calc(100vw - 36px));height:min(820px,calc(100dvh - 36px));display:flex;flex-direction:column;overflow:hidden;border:1px solid #bed1d4;border-radius:22px;background:#f2f7f7;box-shadow:0 24px 90px #09273c38}.digital-lawyer-modal.is-expanded{width:min(1050px,calc(100vw - 36px));height:calc(100dvh - 36px)}.digital-header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;background:#102b3b;color:#fff}.digital-brand{display:flex;align-items:center;gap:11px}.brand-icon{width:40px;height:40px;display:grid;place-items:center;border:1px solid #3a7278;border-radius:12px;background:#164650;color:#bdf8ea}.digital-brand small{display:block;font-size:9px;letter-spacing:2px;color:#88bdbd;margin-bottom:5px}.digital-brand strong{font-size:15px}.window-actions{display:flex;gap:5px}.window-actions button{width:32px;height:32px;border:0;border-radius:8px;background:#ffffff0d;color:#c4dadf;cursor:pointer}.window-actions button:hover{background:#ffffff20;color:#fff}.digital-content{position:relative;flex:1;min-height:0}.vrm-iframe{width:100%;height:100%;border:0;display:block}.connection-state{height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:32px;background:radial-gradient(ellipse at 50% 30%,#e0f1ed,transparent 65%),#f5f8f8}.connection-art{display:grid;place-items:center;width:86px;height:86px;border-radius:26px;color:#267974;background:#e6f2ef;border:1px solid #c4dfd8;font-size:28px;margin-bottom:26px}.connection-state small{letter-spacing:2px;font-size:10px;color:#4c8581}.connection-state h3{font-size:22px;color:#143949;margin:12px 0}.connection-state p{max-width:320px;font-size:13px;line-height:1.9;color:#65808b}.retry-btn{margin:18px 0 14px;padding:11px 20px;display:flex;gap:8px;align-items:center;border:0;border-radius:10px;background:#0f766e;color:#fff;font-size:13px;cursor:pointer}.connection-state a{font-size:11px;color:#66868d}footer{display:flex;align-items:center;gap:7px;padding:10px 16px;border-top:1px solid #dce7e8;background:#fff;font-size:10px;color:#607b85}.footer-note{margin-left:auto;color:#8a9da4}.status-dot{width:6px;height:6px;border-radius:50%;background:#bb8956}.status-dot.ready{background:#20a98b}@media(max-width:560px){.digital-lawyer-modal,.digital-lawyer-modal.is-expanded{inset:0;width:100%;height:100dvh;border-radius:0;border:0}.digital-header{padding:12px 14px}.window-actions button:first-child{display:none}}
+</style>
+<style scoped>
+.digital-mask{position:fixed;inset:0;z-index:95;background:#122d3266}.digital-header{background:var(--ll-primary)}.digital-lawyer-modal{border-radius:16px;border-color:var(--ll-border)}.digital-brand small{font-size:12px;letter-spacing:0;color:#e0eee8}.digital-brand strong{font-size:17px}.window-actions button{width:44px;height:44px;color:#fff}.connection-state h2{font-size:24px;color:var(--ll-text);margin:12px 0}.connection-state p{font-size:15px;color:var(--ll-secondary)}.connection-state small{font-size:13px;letter-spacing:0;color:var(--ll-primary)}.connection-state a{font-size:14px;min-height:44px;display:inline-flex;align-items:center;gap:8px}.retry-btn{font-size:15px;min-height:48px;background:var(--ll-primary)}footer{font-size:12px;color:var(--ll-secondary)}.footer-note{color:var(--ll-secondary)}
+@media(max-width:560px){.digital-lawyer-modal{border-radius:0}.digital-brand strong{font-size:16px}}
 </style>

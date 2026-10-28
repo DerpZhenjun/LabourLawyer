@@ -1,10 +1,10 @@
 import { buildUrl } from "@/utils/buildUrl";
 import Head from "next/head";
 export const Meta = () => {
-  const title = "ChatVRM";
+  const title = "阿律 · LabourLawyer 法律数字人";
   const description =
-    "Webブラウザだけで3Dキャラクターとの会話を、マイクやテキスト入力、音声合成を用いて楽しめます。キャラクター（VRM）の変更や性格設定、音声調整もできます。";
-  const imageUrl = "https://pixiv.github.io/ChatVRM/ogp.png";
+    "劳动争议法律信息助手：梳理请求事项、关键证据与仲裁办理准备。";
+  const imageUrl = buildUrl("/ogp.png");
   return (
     <Head>
       <title>{title}</title>

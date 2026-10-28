@@ -1,0 +1,226 @@
+[
+  {
+    "id": "health",
+    "title": "检查环境与模型",
+    "steps": "只检查已有工具、端口、模型和模板；不下载、不启动服务",
+    "group": "tools",
+    "label": "HEALTH",
+    "icon": "[?]"
+  },
+  {
+    "id": "web",
+    "title": "启动网页端",
+    "steps": "scripts/start-web.ps1 -WithDigitalHuman; Web 5173, API 8000, Digital human 3000",
+    "group": "home",
+    "label": "WEB",
+    "icon": "[>]"
+  },
+  {
+    "id": "stop",
+    "title": "停止项目网页服务",
+    "steps": "scripts/stop-web.ps1；仅停止属于本项目的服务",
+    "group": "home",
+    "label": "STOP",
+    "icon": "[x]"
+  },
+  {
+    "id": "android-open",
+    "title": "打开已安装的 Android 软件",
+    "steps": "启动后端；adb reverse；打开 cn.labourlawyer.mobile",
+    "group": "clients",
+    "label": "ANDROID",
+    "icon": "[+]"
+  },
+  {
+    "id": "mini",
+    "title": "打开小程序项目目录",
+    "steps": "启动后端；打开 miniprogram 目录；在微信开发者工具中导入",
+    "group": "clients",
+    "label": "MINI APP",
+    "icon": "[+]"
+  },
+  {
+    "id": "desktop",
+    "title": "启动 Windows 桌面端",
+    "steps": "Start Web/API/digital human; desktop npm run dev",
+    "group": "home",
+    "label": "DESKTOP",
+    "icon": "[>]"
+  },
+  {
+    "id": "digital-human",
+    "title": "启动网页及数字人",
+    "steps": "scripts/start-web.ps1 -WithDigitalHuman；数字人 3000",
+    "group": "clients",
+    "label": "DIGITAL HUMAN",
+    "icon": "[~]"
+  },
+  {
+    "id": "refresh",
+    "title": "重新拉取官方模板",
+    "steps": "四省接口适配器与全国来源目录下载；归档旧版；更新台账和 Word 来源报告",
+    "group": "templates",
+    "label": "DOWNLOAD",
+    "icon": "[v]"
+  },
+  {
+    "id": "check-updates",
+    "title": "检查官方模板变化",
+    "steps": "两套采集入口 --check-only；不替换生产模板；结果在终端和日志",
+    "group": "templates",
+    "label": "CHECK UPDATES",
+    "icon": "[?]"
+  },
+  {
+    "id": "official-render",
+    "title": "渲染官方模板首页",
+    "steps": "validate_acquired_templates.py --render-only --per-sheet 1；隐藏 Office 导出",
+    "group": "quality",
+    "label": "RENDER",
+    "icon": "[=]"
+  },
+  {
+    "id": "official-vision",
+    "title": "OpenClaw 复核官方模板首页",
+    "steps": "validate_acquired_templates.py --reuse-rendered --per-sheet 1；qwen3.8:27b",
+    "group": "quality",
+    "label": "OFFICIAL AI",
+    "icon": "[*]"
+  },
+  {
+    "id": "examples",
+    "title": "生成默认案例并逐页渲染",
+    "steps": "导出真实前端默认值；audit_generated_documents.py --render；全部已启用文书",
+    "group": "quality",
+    "label": "EXAMPLES",
+    "icon": "[+]"
+  },
+  {
+    "id": "example-vision",
+    "title": "OpenClaw 对比模板与生成文书",
+    "steps": "audit_generated_documents.py --existing --vision；全部已生成页",
+    "group": "quality",
+    "label": "COMPARE AI",
+    "icon": "[*]"
+  },
+  {
+    "id": "web-flow",
+    "title": "验证网页填写与下载流程",
+    "steps": "构建前端；独立隐藏预览 4187；verify_document_web_flow.py；结束后关闭本次预览",
+    "group": "quality",
+    "label": "WEB FLOW",
+    "icon": "[v]"
+  },
+  {
+    "id": "portal-report",
+    "title": "重新收集全国门户截图并生成 Word 报告",
+      "steps": "audit_official_portals.py；31 个地区；无头 Chrome；采集地区指南、流程和模板截图",
+    "group": "reports",
+    "label": "PORTAL AUDIT",
+    "icon": "[#]"
+  },
+  {
+    "id": "portal-vision",
+    "title": "全国门户报告加 OpenClaw 图像复核",
+    "steps": "三词检索与材料截图；OpenClaw / Ubuntu qwen3.8:27b；输出观察及 AI 验证两份 Word",
+    "group": "reports",
+    "label": "PORTAL AI",
+    "icon": "[*]"
+  },
+  {
+    "id": "source-report",
+    "title": "生成已获取官方模板的 Word 来源报告",
+    "steps": "更新台账；build_official_template_report.py；读取本地记录，不重新联网",
+    "group": "reports",
+    "label": "SOURCE REPORT",
+    "icon": "[#]"
+  },
+  {
+    "id": "guides-refresh",
+    "title": "更新各省办事指南与省份页面",
+    "steps": "复用已有发现，后台访问官方指南；Ubuntu OpenClaw 复核；同步三端数据并生成两份 Word",
+    "group": "reports",
+    "label": "PROVINCE GUIDES",
+    "icon": "[~]"
+  },
+  {
+    "id": "openclaw-acquire",
+    "title": "OpenClaw 自动补全缺少的指南与模板",
+    "steps": "独立无头浏览器；Ubuntu Qwen 决定点击、搜索和翻页；下载核验；保留逐步日志和续跑状态",
+    "group": "reports",
+    "label": "BROWSER AGENT",
+    "icon": "[>]"
+  },
+  {
+    "id": "openclaw-smoke",
+    "title": "实际测试 OpenClaw 图像连接",
+      "steps": "检查 Ubuntu 10.66.66.1 上的 qwen3.8:27b；通过 OpenClaw 复核现有截图并保存响应",
+    "group": "quality",
+    "label": "AI CONNECT",
+    "icon": "[~]"
+  },
+  {
+    "id": "monitor",
+    "title": "实时查看采集与 OpenClaw 任务",
+    "steps": "命令行实时面板；查看已启动任务和模型等待；不重新采集",
+    "group": "tools",
+    "label": "LIVE MONITOR",
+    "icon": "[~]"
+  },
+  {
+    "id": "summary",
+    "title": "在命令行查看已发布结果",
+    "steps": "逐省指南状态、AI 检查进度、文书能力与 Word 报告位置",
+    "group": "reports",
+    "label": "RESULT BOARD",
+    "icon": "[#]"
+  },
+  {
+    "id": "report-check",
+    "title": "OpenClaw 检查最终 Word 报告",
+    "steps": "检查现有渲染页；复用成功结果；实时展示页数和 Ubuntu 模型等待",
+    "group": "quality",
+    "label": "REPORT AI",
+    "icon": "[*]"
+  },
+  {
+    "id": "results",
+    "title": "打开模板、报告和验证结果",
+    "steps": "打开 templates 和 .runtime/launch-center/logs 目录",
+    "group": "tools",
+    "label": "RESULTS",
+    "icon": "[/]"
+  },
+  {
+    "id": "train-prepare",
+    "title": "准备法律模型训练数据",
+    "steps": "ModelFinetune：uv sync --locked；uv run python train.py --prepare-only",
+    "group": "models",
+    "label": "PREPARE",
+    "icon": "[+]"
+  },
+  {
+    "id": "train",
+    "title": "训练法律模型",
+    "steps": "ModelFinetune：uv sync --locked；uv run python train.py；需要 NVIDIA CUDA",
+    "group": "models",
+    "label": "TRAIN",
+    "icon": "[>]"
+  },
+  {
+    "id": "evaluate",
+    "title": "评测法律模型",
+    "steps": "ModelFinetune：uv sync --locked；uv run python evaluate.py；需要训练产物",
+    "group": "models",
+    "label": "EVALUATE",
+    "icon": "[v]"
+  },
+  {
+    "id": "ask",
+    "title": "使用训练后的模型回答问题",
+    "steps": "输入问题；ModelFinetune：uv run python ask.py；需要训练适配器",
+    "group": "models",
+    "label": "ASK",
+    "icon": "[?]"
+  }
+]

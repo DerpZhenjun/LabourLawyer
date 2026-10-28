@@ -1,108 +1,38 @@
-import { wait } from "@/utils/wait";
 import { Viewer } from "../vrmViewer/viewer";
-import { Screenplay } from "./messages";
-import { Talk } from "./messages";
-
-// === 新增：全局语音打断信号 Token ===
+import { Screenplay, Talk } from "./messages";
 let currentSpeakToken = 0;
-
+let queue: Promise<unknown> = Promise.resolve();
 export const interruptSpeakCharacter = () => {
-  currentSpeakToken++; // 每次调用改变 Token，旧队列的语音就会失效作废
-  console.log("🛑 收到新问题，已清空并打断之前的语音队列！");
+  currentSpeakToken++;
+  queue = Promise.resolve();
+  if (typeof window !== "undefined") window.speechSynthesis?.cancel();
 };
-
-const createSpeakCharacter = () => {
-  let lastTime = 0;
-  let prevFetchPromise: Promise<unknown> = Promise.resolve();
-  let prevSpeakPromise: Promise<unknown> = Promise.resolve();
-
-  return (
-    screenplay: Screenplay,
-    viewer: Viewer,
-    koeiroApiKey: string,
-    onStart?: () => void,
-    onComplete?: () => void
-  ) => {
-    // 记录这句台词进入队列时的身份 Token
-    const myToken = currentSpeakToken;
-
-    const fetchPromise = prevFetchPromise.then(async () => {
-      // 核心打断逻辑：如果 Token 过期（用户问了新问题），直接抛弃这句台词
-      if (myToken !== currentSpeakToken) return null;
-
-      const now = Date.now();
-      if (now - lastTime < 1000) {
-        await wait(1000 - (now - lastTime));
+const clean = (text: string) => text.replace(/<think>[\s\S]*?(<\/think>|$)/gi, "").replace(/<[^>]+>/g, "").replace(/\[(.*?)\]\(.*?\)/g, "$1").replace(/[\*#>`\-]/g, "").trim();
+const browserSpeak = (text: string, token: number) => new Promise<void>(resolve => {
+  if (!("speechSynthesis" in window) || token !== currentSpeakToken) return resolve();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = "zh-CN";
+  const chinese = window.speechSynthesis.getVoices().find(v => v.lang.startsWith("zh"));
+  if (chinese) utterance.voice = chinese;
+  utterance.onend = () => resolve(); utterance.onerror = () => resolve();
+  window.speechSynthesis.speak(utterance);
+});
+export const speakCharacter = (screenplay: Screenplay, viewer: Viewer, _apiKey: string, onStart?: () => void, onComplete?: () => void) => {
+  const token = currentSpeakToken, text = clean(screenplay.talk.message);
+  queue = queue.catch(() => {}).then(async () => {
+    if (!text || token !== currentSpeakToken) return;
+    onStart?.();
+    try {
+      const status = await fetch("/api/health/").then(r => r.json()).catch(() => null);
+      if (status?.voice === "gpt-sovits" && viewer.model) {
+        try { const audio = await fetchAudio({ ...screenplay.talk, message: text }, ""); if (token === currentSpeakToken) await viewer.model.speak(audio, screenplay); return; } catch { /* Browser voice is available when local TTS fails. */ }
       }
-
-      if (myToken !== currentSpeakToken) return null;
-
-      const buffer = await fetchAudio(screenplay.talk, koeiroApiKey).catch(
-        () => null
-      );
-      lastTime = Date.now();
-      return buffer;
-    });
-
-    prevFetchPromise = fetchPromise;
-    prevSpeakPromise = Promise.all([fetchPromise, prevSpeakPromise]).then(
-      ([audioBuffer]) => {
-        onStart?.();
-        // 播放前做最后一次检查，如果被打断则保持沉默
-        if (myToken !== currentSpeakToken || !audioBuffer) {
-          onComplete?.();
-          return;
-        }
-        return viewer.model?.speak(audioBuffer, screenplay);
-      }
-    );
-    prevSpeakPromise.then(() => {
-      onComplete?.();
-    });
-  };
+      await browserSpeak(text, token);
+    } finally { onComplete?.(); }
+  });
 };
-
-export const speakCharacter = createSpeakCharacter();
-
-export const fetchAudio = async (
-  talk: Talk,
-  apiKey: string
-): Promise<ArrayBuffer> => {
-  const apiBaseUrl = "http://127.0.0.1:9880/tts";
-
-  // === 核心修复 1：在正则屏蔽列表里加入了 \- ，彻底消灭“减”字发音 ===
-  const cleanText = talk.message
-    .replace(/<think>[\s\S]*?<\/think>\n*/gi, "") 
-    .replace(/<think>[\s\S]*/gi, "")              
-    .replace(/<[^>]+>/g, "")                      
-    .replace(/[\*\#\>\`\-]/g, "") // <--- 这里加入了 \-
-    .replace(/\[(.*?)\]\(.*?\)/g, "$1")           
-    .replace(/[\n\r]+/g, "，")                    
-    .trim();
-
-  if (!cleanText) {
-    throw new Error("Empty text after cleaning");
-  }
-
-  const params = new URLSearchParams();
-  params.append("text", cleanText);        
-  params.append("text_lang", "zh");        
-  params.append("prompt_lang", "zh");      
-
-  params.append("ref_audio_path", "D:/Desktop/MingChao/reference_audios/randoms/漂泊者_女/中文/zh_vo_zhuiyuejie_second_58_46_F.wav");
-  params.append("prompt_text", "就像帕斯卡一直想要告诉你真相那样，就像你一直没有放弃为帕斯卡正名那样，你们的牵绊其实一直都在。");
-
-  try {
-    const res = await fetch(`${apiBaseUrl}?${params.toString()}`, {
-      method: "GET",
-    });
-    if (!res.ok) {
-      const errorText = await res.text().catch(() => "Unknown error");
-      throw new Error(`GPT-SoVITS API Error: ${res.status} - ${errorText}`);
-    }
-    return await res.arrayBuffer();
-  } catch (error) {
-    console.error("TTS 生成失败:", error);
-    throw error;
-  }
+export const fetchAudio = async (talk: Talk, _apiKey: string): Promise<ArrayBuffer> => {
+  const response = await fetch("/api/tts/", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text: clean(talk.message) }), signal: AbortSignal.timeout(25000) });
+  if (!response.ok) throw new Error("语音合成服务不可用");
+  return response.arrayBuffer();
 };

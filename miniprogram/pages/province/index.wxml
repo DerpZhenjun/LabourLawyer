@@ -1,59 +1,13 @@
-<view class="page province-page">
-  <view class="province-head">
-    <text class="tag">{{province.name}} · 劳动仲裁</text>
-    <text class="head-title">先准备文书，再到官方平台提交</text>
-    <text class="head-desc">按页面提示填写，生成后请逐项核对姓名、金额、日期和仲裁请求。</text>
-  </view>
-
-  <view wx:if="{{province.ready}}" class="generator card">
-    <view class="tabs"><button class="{{mode==='application'?'active':''}}" data-mode="application" bindtap="setMode">仲裁申请书</button><button class="{{mode==='evidence'?'active':''}}" data-mode="evidence" bindtap="setMode">证据清单</button></view>
-    <view class="form">
-      <label>申请人姓名<input value="{{form.applicant}}" data-field="applicant" bindinput="updateField" placeholder="劳动者姓名" /></label>
-      <label>被申请人名称<input value="{{form.respondent}}" data-field="respondent" bindinput="updateField" placeholder="公司完整名称" /></label>
-      <block wx:if="{{mode==='application'}}">
-        <label>仲裁请求<textarea value="{{form.requests}}" data-field="requests" bindinput="updateField" placeholder="每项请求单独一行，并写明金额或期限" /></label>
-        <label>事实和理由<textarea value="{{form.facts}}" data-field="facts" bindinput="updateField" placeholder="按时间顺序说明入职、工资、争议发生经过" /></label>
-      </block>
-      <label wx:else>证据项目<textarea value="{{form.evidence}}" data-field="evidence" bindinput="updateField" placeholder="每行一项，例如：劳动合同｜本人持有｜证明劳动关系" /></label>
-      <button class="generate" bindtap="generate">生成{{mode==='application'?'仲裁申请书':'证据清单'}}</button>
-    </view>
-    <view wx:if="{{generated}}" class="result">
-      <view><text>生成结果</text><button bindtap="copyGenerated">复制全文</button></view>
-      <text user-select="true">{{generated}}</text>
-    </view>
-  </view>
-
-  <view wx:else class="pending card">
-    <text class="pending-title">专用文书模板正在核对</text>
-    <text>不同地区的表格和填写要求可能不同。这里不会套用其他省份模板，请先查看下方官方指南。</text>
-  </view>
-
-  <view class="section-title"><text>官方网上办理</text></view>
-  <view class="portal card">
-    <text class="portal-name">{{province.portal}}</text>
-    <text class="portal-note">{{province.note}}</text>
-    <view class="search-word"><text>站内搜索</text><text>{{province.search}}</text></view>
-    <button bindtap="copyPortal">复制官方办理链接</button>
-  </view>
-
-  <view wx:if="{{province.official}}" class="official-facts card">
-    <view><text>现场办理</text><text>0 次</text></view>
-    <view><text>承诺时间</text><text>44 个工作日</text></view>
-    <view><text>办事咨询</text><text>0571-85119566</text></view>
-  </view>
-  <view wx:if="{{province.guangdong}}" class="official-facts card">
-    <view><text>办理方式</text><text>网上 / 窗口</text></view>
-    <view><text>是否受理</text><text>5 个工作日</text></view>
-    <view><text>办事咨询</text><text>020-12345</text></view>
-  </view>
-  <text wx:if="{{province.guangdong}}" class="material-note">这个链接对应广东省级仲裁院。大多数劳动者应向实际工作地或公司所在地的市、区仲裁委员会申请。</text>
-
-  <view class="section-title"><text>办理流程</text></view>
-  <view class="process card"><view wx:for="{{process}}" wx:key="*this"><text>{{index+1}}</text><text>{{item}}</text></view></view>
-
-  <view class="section-title"><text>通常要准备</text></view>
-  <view class="materials card"><text wx:for="{{materials}}" wx:key="*this">{{item}}</text></view>
-  <text wx:if="{{province.official}}" class="material-note">浙江官方页面显示上述材料均为 A4 纸、原件、2 份，提交前请按具体办理地点再核对。</text>
-  <text wx:if="{{province.guangdong}}" class="material-note">广东官方页面要求申请书本人签名，副本按公司一方人数准备；证据材料标注为 2 份。</text>
-  <text class="foot-note">一般劳动争议仲裁时效为一年，具体起算和例外规则请结合案情核实。</text>
+<view class="page province-page" style="--accent:{{theme.accent}};--wash:{{theme.wash}}">
+  <view class="section-title"><text>填写文书</text></view>
+  <view class="card document-options"><text class="material-note">这份表格用于：{{province.scope}}。填完核对信息，打印后本人手写签名。</text><text class="material-note">在其他地区办理？先查看当地的官方表格。</text><button wx:if="{{province.hasApplication}}" class="button-primary" data-kind="application" bindtap="openDocument">填写仲裁申请书</button><text wx:else>暂时不能在线填写申请书，请下载官方表格。</text><button wx:if="{{province.hasEvidence}}" data-kind="evidence" bindtap="openDocument">填写证据清单</button><text wx:else>暂时不能在线填写证据清单，请按官方要求准备。</text><button bindtap="copyPortal">查看表格来源（复制网址）</button></view>
+  <view class="province-head" style="background:{{theme.wash}}"><text class="tag" style="color:{{theme.accent}}">{{theme.motif}} · {{province.name}}</text><text class="head-title">劳动争议这样办</text><text class="head-desc">先看办理地区，再准备材料。一步一步来。</text><image class="province-art" src="{{theme.miniArt}}" mode="aspectFit"/><button bindtap="copyPreferred" style="background:{{theme.accent}};color:white">复制官方办事指南网址</button></view>
+  <view class="card facts"><text>办理地区：{{experience.scope}}</text><text>这个入口办理：{{serviceLabel}}</text><text>记录时间：{{guideDate}}</text><text wx:if="{{experience.state !== 'fresh'}}">{{experience.state === 'historical' ? '这是之前查到的信息，请打开官网确认有没有变化。' : '还没查到具体步骤，请先打开官网。'}}</text><text wx:if="{{!experience.capital_confirmed}}">先查{{experience.preferred_city}}。不同地区的要求可能不同。</text></view>
+  <view class="section-title"><text>先做什么</text></view>
+  <view class="card simple-steps"><view wx:for="{{experience.steps}}" wx:key="index"><text class="step-number" style="color:{{theme.accent}};background:{{theme.wash}}">{{index+1}}</text><view><text class="step-title">{{item.title}}</text><text class="step-desc">{{item.text}}</text></view></view></view>
+  <view class="section-title"><text>带什么</text></view>
+  <view class="card materials"><text wx:for="{{experience.materials}}" wx:key="*this">{{item}}</text><text>要带哪些材料、各带几份？请看官网的“申请材料”。</text><button wx:for="{{templateLinks}}" wx:key="index" data-index="{{index}}" bindtap="copyTemplate">复制：{{item.name}} {{item.kind==='sample'?'（样例）':''}}</button></view>
+  <view class="section-title"><text>注意什么</text></view><view class="card notes" style="background:{{theme.wash}}"><text wx:for="{{experience.notes}}" wx:key="*this">{{item}}</text></view>
+  <view class="section-title"><text>换个地区？</text></view><view class="card"><text class="material-note">选择其他已取得的官方指南。</text><text wx:if="{{guideError}}">{{guideError}}</text><picker wx:if="{{guides.length}}" range="{{guideLabels}}" bindchange="selectGuide"><button>选择地区与办理机构</button></picker><view wx:if="{{selectedGuide}}"><text>{{selectedGuide.region_name || '页面未标明地区'}} · {{selectedGuide.authority}}</text><button bindtap="copyGuide">复制该地区官方指南网址</button></view></view>
+  <text class="foot-note">请在政府网站提交材料。签名请本人手写。</text>
 </view>

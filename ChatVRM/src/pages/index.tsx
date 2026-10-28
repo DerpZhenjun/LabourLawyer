@@ -1,214 +1,100 @@
-import { useCallback, useContext, useEffect, useState } from "react";
+import { useCallback, useContext, useEffect, useRef, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import VrmViewer from "@/components/vrmViewer";
 import { ViewerContext } from "@/features/vrmViewer/viewerContext";
-import {
-  Message,
-  textsToScreenplay,
-  Screenplay,
-} from "@/features/messages/messages";
-import { speakCharacter } from "@/features/messages/speakCharacter";
-import { MessageInputContainer } from "@/components/messageInputContainer";
-import { SYSTEM_PROMPT } from "@/features/constants/systemPromptConstants";
-import { KoeiroParam, DEFAULT_PARAM } from "@/features/constants/koeiroParam";
+import { Message, textsToScreenplay } from "@/features/messages/messages";
+import { speakCharacter, interruptSpeakCharacter } from "@/features/messages/speakCharacter";
+import { DEFAULT_PARAM } from "@/features/constants/koeiroParam";
 import { getChatResponseStream } from "@/features/chat/openAiChat";
-import { Introduction } from "@/components/introduction";
-import { Menu } from "@/components/menu";
-import { GitHubLink } from "@/components/githubLink";
 import { Meta } from "@/components/meta";
 
+const prompts = ["公司拖欠工资怎么办？", "仲裁需要哪些证据？", "收到辞退通知怎么办？"];
 export default function Home() {
   const { viewer } = useContext(ViewerContext);
-
-  const [systemPrompt, setSystemPrompt] = useState(SYSTEM_PROMPT);
-  const [openAiKey, setOpenAiKey] = useState("local-mock-key");
-  const [koeiromapKey, setKoeiromapKey] = useState("");
-  const [koeiroParam, setKoeiroParam] = useState<KoeiroParam>(DEFAULT_PARAM);
-  const [chatProcessing, setChatProcessing] = useState(false);
   const [chatLog, setChatLog] = useState<Message[]>([]);
-  const [assistantMessage, setAssistantMessage] = useState("");
-
+  const [input, setInput] = useState("");
+  const [busy, setBusy] = useState(false);
+  const [voice, setVoice] = useState(false);
+  const [avatar, setAvatar] = useState("loading");
+  const [error, setError] = useState("");
+  const [backend, setBackend] = useState<boolean | null>(null);
+  const [voiceMode, setVoiceMode] = useState("browser");
+  const [voiceSupported, setVoiceSupported] = useState(false);
+  const [micSupported, setMicSupported] = useState(false);
+  const [recording, setRecording] = useState(false);
+  const recognition = useRef<SpeechRecognition>();
+  const [embedded, setEmbedded] = useState(false);
+  const end = useRef<HTMLDivElement>(null);
+  const voiceRef = useRef(false);
+  const processing = useRef(false);
+  const request = useRef<AbortController>();
   useEffect(() => {
-    if (window.localStorage.getItem("chatVRMParams")) {
-      const params = JSON.parse(
-        window.localStorage.getItem("chatVRMParams") as string
-      );
-      setSystemPrompt(params.systemPrompt ?? SYSTEM_PROMPT);
-      setKoeiroParam(params.koeiroParam ?? DEFAULT_PARAM);
-      setChatLog(params.chatLog ?? []);
-    }
+    setEmbedded(new URLSearchParams(window.location.search).get("embed") === "1");
+    setVoiceSupported("speechSynthesis" in window);
+    setMicSupported(Boolean(window.SpeechRecognition || window.webkitSpeechRecognition));
+    try {
+      const saved = JSON.parse(localStorage.getItem("labourlawyer.digital.chat") || "[]");
+      if (Array.isArray(saved)) setChatLog(saved.filter(m => ["user", "assistant"].includes(m?.role) && typeof m.content === "string").slice(-20));
+    } catch { /* Ignore damaged local drafts. */ }
+    const check = async () => { try { const r = await fetch("/api/health/", { signal: AbortSignal.timeout(5000) }); if (!r.ok) throw new Error(); const s = await r.json(); setBackend(s.backend); setVoiceMode(s.voice); } catch { setBackend(false); } };
+    check(); const poll = setInterval(check, 20000);
+    return () => { clearInterval(poll); request.current?.abort(); recognition.current?.abort(); interruptSpeakCharacter(); };
   }, []);
-
-  useEffect(() => {
-    process.nextTick(() =>
-      window.localStorage.setItem(
-        "chatVRMParams",
-        JSON.stringify({ systemPrompt, koeiroParam, chatLog })
-      )
-    );
-  }, [systemPrompt, koeiroParam, chatLog]);
-
-  const handleChangeChatLog = useCallback(
-    (targetIndex: number, text: string) => {
-      const newChatLog = chatLog.map((v: Message, i) => {
-        return i === targetIndex ? { role: v.role, content: text } : v;
-      });
-
-      setChatLog(newChatLog);
-    },
-    [chatLog]
-  );
-
-  /**
-   * 文ごとに音声を直列でリクエストしながら再生する
-   */
-  const handleSpeakAi = useCallback(
-    async (
-      screenplay: Screenplay,
-      onStart?: () => void,
-      onEnd?: () => void
-    ) => {
-      speakCharacter(screenplay, viewer, koeiromapKey, onStart, onEnd);
-    },
-    [viewer, koeiromapKey]
-  );
-
-  /**
-   * アシスタントとの会話を行う
-   */
-  const handleSendChat = useCallback(
-    async (text: string) => {
-      if (!openAiKey) {
-        setAssistantMessage("APIキーが入力されていません");
-        return;
-      }
-
-      const newMessage = text;
-
-      if (newMessage == null) return;
-
-      setChatProcessing(true);
-      // ユーザーの発言を追加して表示
-      const messageLog: Message[] = [
-        ...chatLog,
-        { role: "user", content: newMessage },
-      ];
-      setChatLog(messageLog);
-
-      // Chat GPTへ
-      const messages: Message[] = [
-        {
-          role: "system",
-          content: systemPrompt,
-        },
-        ...messageLog,
-      ];
-
-      const stream = await getChatResponseStream(messages, openAiKey).catch(
-        (e) => {
-          console.error(e);
-          return null;
-        }
-      );
-      if (stream == null) {
-        setChatProcessing(false);
-        return;
-      }
-
-      const reader = stream.getReader();
-      
-      // === 核心修改区 ===
-      let fullAiText = "";     // 用于实时更新屏幕的完整文字（包含标签、思考等）
-      let receivedMessage = ""; // 原来的逻辑：用于攒完整句子发给语音
-      let tag = "";
-      const sentences = new Array<string>();
-      
-      try {
-        while (true) {
-          const { done, value } = await reader.read();
-          if (done) break;
-
-          // 1. 收到任何字符，立刻拼接到 fullAiText，并瞬间刷新屏幕！这就是打字机效果！
-          fullAiText += value;
-          setChatLog([...messageLog, { role: "assistant", content: fullAiText }]);
-
-          // 2. 依然保留原来的逻辑，把字攒给语音模块
-          receivedMessage += value;
-
-          // 返答内容のタグ部分の検出
-          const tagMatch = receivedMessage.match(/^\[(.*?)\]/);
-          if (tagMatch && tagMatch[0]) {
-            tag = tagMatch[0];
-            receivedMessage = receivedMessage.slice(tag.length);
-          }
-
-          // 返答を一文単位で切り出して処理する
-          const sentenceMatch = receivedMessage.match(
-            /^(.+[。．！？\n]|.{10,}[、,])/
-          );
-          if (sentenceMatch && sentenceMatch[0]) {
-            const sentence = sentenceMatch[0];
-            sentences.push(sentence);
-            receivedMessage = receivedMessage
-              .slice(sentence.length)
-              .trimStart();
-
-            // 発話不要/不可能な文字列だった場合はスキップ
-            if (
-              !sentence.replace(
-                /^[\s\[\(\{「［（【『〈《〔｛«‹〘〚〛〙›»〕》〉』】）］」\}\)\]]+$/g,
-                ""
-              )
-            ) {
-              continue;
-            }
-
-            const aiText = `${tag} ${sentence}`;
-            const aiTalks = textsToScreenplay([aiText], koeiroParam);
-
-            // 文ごとに音声を生成 & 再生、返答を表示
-            const currentAssistantMessage = sentences.join(" ");
-            handleSpeakAi(aiTalks[0], () => {
-              setAssistantMessage(currentAssistantMessage);
-            });
-          }
-        }
-      } catch (e) {
-        setChatProcessing(false);
-        console.error(e);
-      } finally {
-        reader.releaseLock();
-      }
-
-      // 循环结束后，确保最终状态稳定
-      setChatLog([...messageLog, { role: "assistant", content: fullAiText }]);
-      setChatProcessing(false);
-    },
-    [systemPrompt, chatLog, handleSpeakAi, openAiKey, koeiroParam]
-  );
-
-  return (
-    <div style={{ fontFamily: '"Microsoft YaHei", "Heiti SC", sans-serif' }}>
-      <Meta />
-      <VrmViewer />
-      <MessageInputContainer
-        isChatProcessing={chatProcessing}
-        onChatProcessStart={handleSendChat}
-      />
-      <Menu
-        openAiKey={openAiKey}
-        systemPrompt={systemPrompt}
-        chatLog={chatLog}
-        koeiroParam={koeiroParam}
-        assistantMessage={assistantMessage}
-        koeiromapKey={koeiromapKey}
-        onChangeAiKey={setOpenAiKey}
-        onChangeSystemPrompt={setSystemPrompt}
-        onChangeChatLog={handleChangeChatLog}
-        onChangeKoeiromapParam={setKoeiroParam}
-        handleClickResetChatLog={() => setChatLog([])}
-        handleClickResetSystemPrompt={() => setSystemPrompt(SYSTEM_PROMPT)}
-        onChangeKoeiromapKey={setKoeiromapKey}
-      />
+  useEffect(() => { try { localStorage.setItem("labourlawyer.digital.chat", JSON.stringify(chatLog.slice(-20))); } catch {} end.current?.scrollIntoView({ block: "end" }); }, [chatLog, busy]);
+  const avatarReady = useCallback(() => setAvatar("ready"), []);
+  const avatarFailed = useCallback(() => setAvatar("error"), []);
+  const send = async (text = input) => {
+    text = text.trim(); if (!text || processing.current) return;
+    processing.current = true; setBusy(true); setInput(""); setError("");
+    const history: Message[] = [...chatLog.slice(-11), { role: "user", content: text }];
+    setChatLog([...history, { role: "assistant", content: "" }]);
+    request.current = new AbortController();
+    let reader: ReadableStreamDefaultReader<string> | undefined, answer = "";
+    try {
+      const stream = await getChatResponseStream(history, "", request.current.signal);
+      reader = stream.getReader();
+      while (true) { const part = await reader.read(); if (part.done) break; answer += part.value; setChatLog([...history, { role: "assistant", content: answer }]); }
+      if (!answer.trim()) throw new Error("模型没有返回内容，请重试。");
+      setBackend(true);
+      if (voiceRef.current) { const screenplay = textsToScreenplay([answer], DEFAULT_PARAM)[0]; if (screenplay) speakCharacter(screenplay, viewer, ""); }
+    } catch (e) {
+      if (!request.current.signal.aborted) { setError(e instanceof Error ? e.message : "连接中断，请重试。"); setChatLog([...history, { role: "assistant", content: answer || "暂时无法获取回答，请确认后端和本地模型已启动。" }]); }
+    } finally { reader?.releaseLock(); processing.current = false; setBusy(false); }
+  };
+  const toggleMic = () => {
+    if (recording) { recognition.current?.abort(); setRecording(false); return; }
+    const Recognizer = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!Recognizer || processing.current) return;
+    const r = new Recognizer(); recognition.current = r;
+    r.lang = "zh-CN"; r.interimResults = true; r.continuous = false;
+    r.onresult = e => { const text = e.results[0][0].transcript; setInput(text); if (e.results[0].isFinal) send(text); };
+    r.onend = () => setRecording(false);
+    r.onerror = () => { setRecording(false); setError("语音输入未成功，请检查麦克风权限或直接输入文字。"); };
+    try { r.start(); setRecording(true); setError(""); } catch { setError("无法启动麦克风，请直接输入文字。"); }
+  };
+  return <main className={`digital-app ${embedded ? "embedded" : ""}`}>
+    <Meta />
+    <header className="counsel-topbar"><div><span className="counsel-mark">律</span><span><small>LABOUR LAWYER</small><strong>阿律 · 法律数字人</strong></span></div><span className={`service-badge ${backend === false ? "offline" : ""}`}><i />{backend === null ? "检查服务" : backend ? "问答已连接" : "问答未连接"}</span></header>
+    <div className="counsel-workspace">
+      <section className="avatar-stage" aria-label="数字人形象">
+        <div className="stage-rings" aria-hidden="true" />
+        <VrmViewer onReady={avatarReady} onError={avatarFailed} />
+        {avatar !== "ready" && <div className="avatar-notice" role="status">{avatar === "loading" ? "正在加载数字人形象…" : "形象加载失败，仍可使用文字咨询。"}</div>}
+        <div className="stage-label"><span>DIGITAL COUNSEL</span><h1>先把事情说清楚，<br />再一起梳理下一步。</h1><p>请求事项 · 关键证据 · 办理准备</p></div>
+        <button className="camera-reset" onClick={() => viewer.resetCamera()} aria-label="重置数字人视角" title="重置视角">↺</button>
+      </section>
+      <section className="consultation-panel" aria-label="法律咨询对话">
+        <div className="conversation-heading"><div><small>YOUR CONSULTATION</small><h2>劳动争议咨询</h2></div><div className="conversation-actions"><button disabled={!voiceSupported && voiceMode !== "gpt-sovits"} className={voice ? "active" : ""} onClick={() => { voiceRef.current = !voice; setVoice(!voice); if (voice) interruptSpeakCharacter(); }} aria-label={voice ? "关闭语音朗读" : "开启语音朗读"} title={voiceMode === "gpt-sovits" ? "语音合成朗读" : "浏览器语音朗读"}>{voice ? "♫" : "♪"}<span>{voice ? "朗读开" : "朗读关"}</span></button><button disabled={busy || !chatLog.length} onClick={() => { interruptSpeakCharacter(); setChatLog([]); setError(""); }} aria-label="清空对话" title="清空对话">↺</button></div></div>
+        <div className="conversation-log" role="log" aria-label="咨询记录" aria-live="polite">
+          {!chatLog.length && <div className="welcome-card"><span className="welcome-symbol">律</span><h3>你好，我是阿律。</h3><p>可以告诉我发生了什么、涉及哪些时间，以及你希望解决的问题。我会帮你梳理需要准备的材料和下一步行动。</p><div className="prompt-list">{prompts.map(text => <button key={text} onClick={() => send(text)}>{text}<span>↗</span></button>)}</div></div>}
+          {chatLog.map((m, i) => <article key={i} className={`counsel-message ${m.role}`}><small>{m.role === "user" ? "YOU · 你" : "ALU · 阿律"}</small><div>{m.content ? <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content.replace(/<think>[\s\S]*?(<\/think>|$)/gi, "")}</ReactMarkdown> : <span className="reply-loading">正在梳理你的问题<span>…</span></span>}</div></article>)}
+          <div ref={end} />
+        </div>
+        {error && <p className="consultation-error" role="alert">{error}</p>}
+        <form className="counsel-composer" onSubmit={e => { e.preventDefault(); send(); }}><label htmlFor="counsel-question" className="sr-only">描述你的劳动争议问题</label><textarea id="counsel-question" value={input} maxLength={8000} onChange={e => setInput(e.target.value)} placeholder="例如：公司拖欠了两个月工资，我该准备什么证据？" rows={2} disabled={busy} onKeyDown={e => { if (e.key === "Enter" && !e.shiftKey && !e.nativeEvent.isComposing) { e.preventDefault(); send(); } }} /><div><span>{recording ? "正在听，请描述你的问题" : busy ? "正在生成回答" : "Enter 发送 · Shift + Enter 换行"}</span><div className="composer-buttons"><button type="button" className={`mic-button ${recording ? "recording" : ""}`} aria-label={recording ? "停止语音输入" : "开始语音输入"} title={micSupported ? "语音输入" : "当前浏览器不支持语音输入"} disabled={!micSupported || busy} onClick={toggleMic}>{recording ? "停止" : "语音"}</button><button type="submit" disabled={busy || !input.trim()}>{busy ? "思考中…" : "发送问题 ↗"}</button></div></div></form>
+        <p className="counsel-disclaimer">提供法律信息辅助，不代表律师委托或办案结果。</p>
+      </section>
     </div>
-  );
+  </main>;
 }

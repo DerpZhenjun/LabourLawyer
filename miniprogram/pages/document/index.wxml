@@ -1,0 +1,41 @@
+<view class="page document-page">
+  <view class="card" wx:if="{{province}}">
+    <text class="title">{{province.name}} · {{title}}</text>
+    <text class="scope">官方模板适用范围：{{province.scope || '来源页未明确，请向受理机构核对'}}</text>
+    <text class="note">本页只显示官方模板可填写的字段。生成后请核对金额、日期和管辖地区，打印后本人手签。</text>
+    <button bindtap="copySource">复制模板来源网址</button>
+  </view>
+  <view wx:if="{{error}}" class="error card">{{error}}</view>
+  <block wx:if="{{available}}">
+    <view class="actions"><button size="mini" bindtap="example">加载虚构示例</button><button size="mini" bindtap="clear">清空草稿</button></view>
+    <view class="card">
+      <view wx:for="{{fields}}" wx:for-item="field" wx:key="key" class="field">
+        <text>{{field.label}}</text>
+        <picker wx:if="{{field.type === 'date'}}" mode="date" data-key="{{field.key}}" bindchange="input"><view class="picker">{{form[field.key] || '选择日期'}}</view></picker>
+        <picker wx:elif="{{field.type === 'select'}}" range="{{field.options}}" data-key="{{field.key}}" bindchange="pick"><view class="picker">{{form[field.key] || '选择或留空'}}</view></picker>
+        <textarea wx:elif="{{field.type === 'textarea'}}" value="{{form[field.key]}}" maxlength="{{field.maxLength}}" auto-height data-key="{{field.key}}" bindinput="input" placeholder="可留空" />
+        <input wx:else type="{{field.type === 'number' ? 'number' : 'text'}}" value="{{form[field.key]}}" maxlength="{{field.maxLength}}" data-key="{{field.key}}" bindinput="input" placeholder="可留空" />
+      </view>
+    </view>
+    <view wx:if="{{kind === 'application'}}" class="card">
+      <text class="title">仲裁请求 · 最多 {{limits.maxRequests}} 项</text>
+      <view wx:for="{{form.requests}}" wx:key="index" class="field"><text>第 {{index + 1}} 项</text><textarea value="{{item}}" auto-height maxlength="{{limits.requestLength}}" data-key="requests" data-index="{{index}}" bindinput="input" /><button size="mini" data-index="{{index}}" bindtap="removeRequest">删除此项</button></view>
+      <button bindtap="addRequest" disabled="{{form.requests.length >= limits.maxRequests}}">添加请求</button>
+      <view class="field"><text>事实与理由</text><textarea value="{{form.factsReason}}" auto-height maxlength="{{limits.factsLength}}" data-key="factsReason" bindinput="input" placeholder="写明入职、工作、工资和争议发生的事实" /></view>
+    </view>
+    <view wx:if="{{kind === 'evidence'}}">
+      <view class="card" wx:for="{{form.evidenceList}}" wx:for-item="row" wx:for-index="rowIndex" wx:key="index">
+        <text class="title">证据 {{rowIndex + 1}}</text>
+        <view class="field" wx:for="{{itemFields}}" wx:for-item="field" wx:key="key"><text>{{field.label}}</text>
+          <picker wx:if="{{field.type === 'select'}}" range="{{field.options}}" data-key="{{field.key}}" data-index="{{rowIndex}}" bindchange="pick"><view class="picker">{{row[field.key] || '选择或留空'}}</view></picker>
+          <textarea wx:elif="{{field.type === 'textarea'}}" value="{{row[field.key]}}" auto-height maxlength="{{field.maxLength}}" data-key="{{field.key}}" data-index="{{rowIndex}}" bindinput="input" />
+          <input wx:else value="{{row[field.key]}}" maxlength="{{field.maxLength}}" data-key="{{field.key}}" data-index="{{rowIndex}}" bindinput="input" />
+        </view>
+        <button size="mini" data-index="{{rowIndex}}" bindtap="removeEvidence">删除此项证据</button>
+      </view>
+      <button bindtap="addEvidence" disabled="{{form.evidenceList.length >= limits.maxEvidence}}">添加证据</button>
+    </view>
+    <text class="note">草稿保存在当前设备；退出本页时保存。签名与签章不自动代填。</text>
+    <button class="button-primary generate" bindtap="generate" loading="{{busy}}" disabled="{{busy}}">{{busy ? '正在生成' : '生成并打开 Word'}}</button>
+  </block>
+</view>

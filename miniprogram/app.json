@@ -1,12 +1,36 @@
 {
-  "pages": ["pages/dashboard/index", "pages/province/index", "pages/cases/index", "pages/assistant/index", "pages/profile/index"],
-  "window": { "navigationBarTitleText": "LabourLawyer", "navigationBarBackgroundColor": "#16665f", "navigationBarTextStyle": "white", "backgroundColor": "#f3f6f9" },
+  "pages": [
+    "pages/dashboard/index",
+    "pages/province/index",
+    "pages/cases/index",
+    "pages/assistant/index",
+    "pages/profile/index",
+    "pages/document/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "LabourLawyer",
+    "navigationBarBackgroundColor": "#16665f",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f3f6f9"
+  },
   "tabBar": {
-    "color": "#7b8794", "selectedColor": "#0f766e", "backgroundColor": "#ffffff", "borderStyle": "white",
+    "color": "#7b8794",
+    "selectedColor": "#0f766e",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
     "list": [
-      { "pagePath": "pages/dashboard/index", "text": "首页" },
-      { "pagePath": "pages/assistant/index", "text": "AI 助手" },
-      { "pagePath": "pages/profile/index", "text": "我的" }
+      {
+        "pagePath": "pages/dashboard/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/assistant/index",
+        "text": "AI 助手"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的"
+      }
     ]
   },
   "style": "v2",

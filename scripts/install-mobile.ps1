@@ -7,6 +7,16 @@ $gradleWrapper = Join-Path $androidDir "gradlew.bat"
 $apkPath = Join-Path $androidDir "app\build\outputs\apk\debug\app-debug.apk"
 $packageName = "cn.labourlawyer.mobile"
 
+# Keep downloads in the project's existing D-drive runtime. Read an installed
+# JDK 21 when JAVA_HOME still points to Java 17; never install Java implicitly.
+$runtimeCache = Join-Path $projectRoot '.runtime\launch-center\cache'
+$env:NPM_CONFIG_CACHE = Join-Path $runtimeCache 'npm'
+if (-not $env:GRADLE_USER_HOME -or [IO.Path]::GetPathRoot($env:GRADLE_USER_HOME) -ine 'D:\') {
+    $env:GRADLE_USER_HOME = Join-Path $runtimeCache 'gradle'
+}
+$installedJdk = @(Get-ChildItem -LiteralPath (Join-Path $env:ProgramFiles 'Microsoft') -Directory -ErrorAction SilentlyContinue | Where-Object { $_.Name -like 'jdk-21*' })
+if ($installedJdk.Count) { $env:JAVA_HOME = $installedJdk[0].FullName }
+
 $adbCommand = Get-Command adb.exe -ErrorAction SilentlyContinue
 if (-not $adbCommand) {
     throw "adb was not found. Install Android Platform Tools and add adb to PATH."
@@ -17,7 +27,7 @@ $onlineDevices = @($deviceLines | Where-Object { $_ -match "\sdevice$" })
 if ($onlineDevices.Count -eq 0) {
     Write-Host "No authorized Android device is online." -ForegroundColor Red
     Write-Host "Unlock the phone, reconnect USB, enable USB debugging, and accept the computer authorization prompt."
-    Write-Host "Run 'adb devices' until the status is 'device', then double-click install-mobile.bat again."
+    Write-Host "Run 'adb devices' until the status is 'device', then retry the internal mobile build script."
     exit 2
 }
 
@@ -44,7 +54,7 @@ $previousTmp = $env:TMP
 try {
     $env:TEMP = $shortTemp
     $env:TMP = $shortTemp
-    & $gradleWrapper --no-daemon assembleDebug
+    & $gradleWrapper --no-daemon -p $androidDir assembleDebug
     if ($LASTEXITCODE -ne 0) { throw "Android build failed." }
 } finally {
     $env:TEMP = $previousTemp
@@ -69,4 +79,4 @@ if ($LASTEXITCODE -ne 0) { throw "APK installation failed." }
 & $adbCommand.Source shell monkey -p $packageName -c android.intent.category.LAUNCHER 1 | Out-Null
 
 Write-Host "LabourLawyer has been installed and opened on the phone." -ForegroundColor Green
-Write-Host "Keep start-web.bat running while testing through USB."
+Write-Host "Keep the project backend running while testing through USB. Start it with start.bat web."

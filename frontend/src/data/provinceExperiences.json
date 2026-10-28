@@ -1,0 +1,2289 @@
+{
+  "parent_run": "20261007-124612-94bc22b6",
+  "openclaw_run": "20261007-130607-2c6533a3",
+  "version": 1,
+  "run_id": "20261007-163650-95c321a2",
+  "source_run": "20261001-191727-be84e8b9",
+  "provinces": {
+    "beijing": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "怀柔区",
+      "steps": [
+        {
+          "title": "先交材料",
+          "text": "按下面的材料清单准备，交到官方指南指定的办理入口。",
+          "official_name": "申请与受理",
+          "source_text": "申请与受理1 办理步骤 办理时限 办理结果 受理 0个工作日 接收材料 审查标准 1.仲裁委员会对符合下列条件的仲裁申请应当予以受理，并在收到仲裁申请之日起五日内向申请人出具受理通知书： （一）属于本规则第二条规定的争议范围； （二）有明确的仲裁请求和事实理由； （三）申请人是与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人； （四）属于本仲裁委员会管辖范围。 （来源：《劳动人事争议仲裁办案规则》（人社部令第33号）第三十条） 2.劳动争议仲裁委员会负责管辖本区域内发生的劳动争议。 劳动争议由劳动合同履行地或者用人单位所在地的劳动争议仲裁委员会管辖。双方当事人分别向劳动合同履行地和用人单位所在地的劳动争议仲裁委员会申请仲裁的，由劳动合同履行地的劳动争议仲裁委员会管辖。 （来源：《中华人民共和国劳动争议调解仲裁法》第二十一条） 3.市仲裁委员会管辖下列劳动人事争议案件： （一）劳动合同履行地与用人单位注册地均位于通州区，注册资本在壹仟万美元以上或者相当于壹仟万美元以上（含壹仟万美元或者相当于壹仟万美元）的，外国及港澳台投资者单独或者与中央、市属单位共同设立的外商及港澳台商投资企业与劳动者发生的劳动争议案件； （二）市属事业单位、在市民政部门登记的社会团体与其建立人事关系的工作人员之间，因终止人事关系以及履行聘用合同发生的人事争议案件； （三）军队驻京军级以上（含军级）用人单位与聘用制文职人员之间，因履行聘用合同发生的人事争议案件； （四）在全市有重大影响的劳动人事争议案件。 各区（含北京经济技术开发区）仲裁委员会管辖下列劳动人事争议案件： （一）市仲裁委员会管辖范围以外的，劳动合同履行地或用人单位所在地位于本辖区的用人单位与劳动者发生的劳动争议案件； （二）用人单位所在地位于本辖区的中央或者区属事业单位、在中央或者区民政部门登记的社会团体与其建立人事关系的工作人员之间，因终止人事关系以及履行聘用合同发生的人事争议案件； （三）军队驻本辖区师级以下（含师级）用人单位与聘用制文职人员之间，因履行聘用合同发生的人事争议案件。 (来源：《北京市人力资源和社会保障局 关于调整我市劳动人事争议仲裁案件管辖的通知》第一、二项（京人社仲发〔2022〕5号）） 4.材料齐全，填写完整； 5.提交的证照证件或批复文件齐全完整，提交的复印件完整清晰并与原件一致； 6.申请材料所载基本信息与提交的证照证件或批复文件所载内容一致； 7.申请材料按要求签字、盖章，且签章内容与申请材料所载内容、提交的证照证件或批复文件所载内容一致。"
+        },
+        {
+          "title": "配合材料检查",
+          "text": "工作人员核对材料时，按要求说明或补充。",
+          "official_name": "审查与决定",
+          "source_text": "审查与决定2 办理步骤 办理时限 办理结果 决定 5个工作日 出具受理（不予受理）通知书 审查标准 1.仲裁委员会对符合下列条件的仲裁申请应当予以受理，并在收到仲裁申请之日起五日内向申请人出具受理通知书： （一）属于本规则第二条规定的争议范围； （二）有明确的仲裁请求和事实理由； （三）申请人是与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人； （四）属于本仲裁委员会管辖范围。 （来源：《劳动人事争议仲裁办案规则》（人社部令第33号）第三十条） 2.劳动争议仲裁委员会负责管辖本区域内发生的劳动争议。 劳动争议由劳动合同履行地或者用人单位所在地的劳动争议仲裁委员会管辖。双方当事人分别向劳动合同履行地和用人单位所在地的劳动争议仲裁委员会申请仲裁的，由劳动合同履行地的劳动争议仲裁委员会管辖。 （来源：《中华人民共和国劳动争议调解仲裁法》第二十一条） 3.市仲裁委员会管辖下列劳动人事争议案件： （一）劳动合同履行地与用人单位注册地均位于通州区，注册资本在壹仟万美元以上或者相当于壹仟万美元以上（含壹仟万美元或者相当于壹仟万美元）的，外国及港澳台投资者单独或者与中央、市属单位共同设立的外商及港澳台商投资企业与劳动者发生的劳动争议案件； （二）市属事业单位、在市民政部门登记的社会团体与其建立人事关系的工作人员之间，因终止人事关系以及履行聘用合同发生的人事争议案件； （三）军队驻京军级以上（含军级）用人单位与聘用制文职人员之间，因履行聘用合同发生的人事争议案件； （四）在全市有重大影响的劳动人事争议案件。 各区（含北京经济技术开发区）仲裁委员会管辖下列劳动人事争议案件： （一）市仲裁委员会管辖范围以外的，劳动合同履行地或用人单位所在地位于本辖区的用人单位与劳动者发生的劳动争议案件； （二）用人单位所在地位于本辖区的中央或者区属事业单位、在中央或者区民政部门登记的社会团体与其建立人事关系的工作人员之间，因终止人事关系以及履行聘用合同发生的人事争议案件； （三）军队驻本辖区师级以下（含师级）用人单位与聘用制文职人员之间，因履行聘用合同发生的人事争议案件。 (来源：《北京市人力资源和社会保障局 关于调整我市劳动人事争议仲裁案件管辖的通知》第一、二项（京人社仲发〔2022〕5号）） 4.材料齐全，填写完整； 5.提交的证照证件或批复文件齐全完整，提交的复印件完整清晰并与原件一致； 6.申请材料所载基本信息与提交的证照证件或批复文件所载内容一致； 7.申请材料按要求签字、盖章，且签章内容与申请材料所载内容、提交的证照证件或批复文件所载内容一致。"
+        },
+        {
+          "title": "收好结果文书",
+          "text": "按通知收取文书，仔细看文书里的后续事项。",
+          "official_name": "颁证与送达",
+          "source_text": "颁证与送达3 办理步骤 办理时限 发证 0个工作日 送达方式 窗口领取公告送达邮寄送达"
+        }
+      ],
+      "materials": [
+        "仲裁申请书",
+        "授权委托书",
+        "身份证件"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "这份在线表格用于“北京市朝阳区”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110116000000/3b7543c6-4e1b-473a-bbef-4dcf3f9426b4.html?locationCode=110116000000",
+      "captured_at": "2026-10-06T17:57:31+08:00",
+      "workflow_detected": true,
+      "preferred_city": "北京市",
+      "slug": "beijing",
+      "name": "北京市",
+      "state": "fresh",
+      "portal_url": "https://banshi.beijing.gov.cn/",
+      "source_run": null,
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": true,
+      "templates": [
+        {
+          "material_name": "仲裁申请书(样表).docx",
+          "text": "仲裁申请书(样表).docx（样例下载）",
+          "kind": "sample",
+          "url": ""
+        }
+      ],
+      "template_status": "downloads_detected",
+      "checked_at": "2026-10-06T17:57:31+08:00",
+      "theme": {
+        "motif": "京城屋檐",
+        "kind": "宫殿",
+        "accent": "#9e463b",
+        "wash": "#fcf0e6",
+        "art": "/province-art/beijing.svg",
+        "miniArt": "/assets/province-art/beijing.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": [
+        {
+          "name": "仲裁申请书(样表).docx",
+          "kind": "sample",
+          "url": "https://banshi.beijing.gov.cn/pubtask/task/1/110116000000/3b7543c6-4e1b-473a-bbef-4dcf3f9426b4.html?locationCode=110116000000"
+        }
+      ]
+    },
+    "tianjin": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再查看办事指南。"
+        }
+      ],
+      "materials": [
+        "劳动人事争议仲裁申请书",
+        "劳动人事争议仲裁申请书（样表）.docx",
+        "劳动人事争议仲裁申请书.docx"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "材料清单请以官方 PDF 为准。",
+        "这份在线表格用于“天津市中新天津生态城”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "https://zwfw.tj.gov.cn/#/operatingInstruction?taskCode=2c615637-3cc1-444e-a027-860840596b20",
+      "captured_at": "2026-10-07T12:41:33+08:00",
+      "workflow_detected": false,
+      "preferred_city": "天津市",
+      "slug": "tianjin",
+      "name": "天津市",
+      "state": "fresh",
+      "portal_url": "https://zwfw.tj.gov.cn/",
+      "source_run": null,
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [
+        {
+          "material_name": "劳动人事争议仲裁申请书（样表）.docx",
+          "text": "劳动人事争议仲裁申请书（样表）.docx",
+          "kind": "sample",
+          "url": "https://zwfw.tj.gov.cn/sxgl/rest/frame/base/attach/attachAction/getContent?isCommondto=true&attachGuid=fb41b542-f75c-4eca-b49f-6844f752ce58&base_type=1"
+        },
+        {
+          "material_name": "劳动人事争议仲裁申请书.docx",
+          "text": "劳动人事争议仲裁申请书.docx",
+          "kind": "document",
+          "url": "https://zwfw.tj.gov.cn/sxgl/rest/frame/base/attach/attachAction/getContent?isCommondto=true&attachGuid=80f813bf-081e-41f5-b81b-f65480047cd1&base_type=1"
+        }
+      ],
+      "template_status": "downloads_detected",
+      "checked_at": "2026-10-07T12:41:40.614328+08:00",
+      "openclaw_task": "templates\\_reports\\openclaw-tasks\\20261007-121205-676f95c0\\tianjin",
+      "theme": {
+        "motif": "海河桥影",
+        "kind": "桥梁",
+        "accent": "#32688b",
+        "wash": "#edf5fa",
+        "art": "/province-art/tianjin.svg",
+        "miniArt": "/assets/province-art/tianjin.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": [
+        {
+          "name": "劳动人事争议仲裁申请书（样表）.docx",
+          "kind": "sample",
+          "url": "https://zwfw.tj.gov.cn/sxgl/rest/frame/base/attach/attachAction/getContent?isCommondto=true&attachGuid=fb41b542-f75c-4eca-b49f-6844f752ce58&base_type=1"
+        },
+        {
+          "name": "劳动人事争议仲裁申请书.docx",
+          "kind": "document",
+          "url": "https://zwfw.tj.gov.cn/sxgl/rest/frame/base/attach/attachAction/getContent?isCommondto=true&attachGuid=80f813bf-081e-41f5-b81b-f65480047cd1&base_type=1"
+        }
+      ]
+    },
+    "hebei": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "石家庄市",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再查看办事指南。"
+        }
+      ],
+      "materials": [
+        "单位申办人社会保障卡或居民身份证",
+        "申请书",
+        "有关证据材料",
+        "用人单位工商登记信息"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "材料清单请以官方 PDF 为准。"
+      ],
+      "source_url": "https://rsj.sjz.gov.cn/columns/d2f29946-ce35-4eaf-a9eb-f884456c4a37/202308/23/6036866f-cabc-435d-8dae-80a4622afa0b.html",
+      "captured_at": "2026-10-07T16:12:33.201766+08:00",
+      "workflow_detected": false,
+      "preferred_city": "石家庄市",
+      "slug": "hebei",
+      "name": "河北省",
+      "state": "fresh",
+      "portal_url": "http://www.hbzwfw.gov.cn/",
+      "source_run": "20261001-191727-be84e8b9",
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": true,
+      "templates": [],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-07T16:12:33.201766+08:00",
+      "openclaw_task": "templates\\_reports\\openclaw-tasks\\20261007-130607-2c6533a3\\hebei",
+      "openclaw_attempt": {
+        "run": "20261007-130607-2c6533a3",
+        "state": "acquired",
+        "status": {
+          "site_opened": true,
+          "guide_found": true,
+          "template_downloaded": false,
+          "fill_verified": false
+        },
+        "error": "",
+        "model_reason": "当前可见的政务事项多为仲裁委员会登记、职业病鉴定或土地纠纷，没有直接的“劳动人事争议仲裁”办事指南。需要继续向下翻页，查看剩余约42条结果中是否有匹配项。",
+        "url": "https://rsj.sjz.gov.cn/columns/d2f29946-ce35-4eaf-a9eb-f884456c4a37/202308/23/6036866f-cabc-435d-8dae-80a4622afa0b.html",
+        "updated_at": "2026-10-07T16:12:33.201766+08:00",
+        "official_pdf_fallback": null
+      },
+      "theme": {
+        "motif": "长城山色",
+        "kind": "长城",
+        "accent": "#736244",
+        "wash": "#f7f3e9",
+        "art": "/province-art/hebei.svg",
+        "miniArt": "/assets/province-art/hebei.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": []
+    },
+    "shanxi": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再查看办事指南。"
+        }
+      ],
+      "materials": [
+        "仲裁申请书.docx"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "材料清单请以官方 PDF 为准。",
+        "这份在线表格用于“山西省级／直属事项（提交前确认受理机构）”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "https://www.sxzwfw.gov.cn/icity/icity/proinfo_new?url=https://zwfwpt.sxzwfw.gov.cn:10002/aaa/person/DF7DE8D7F26045BDAD8D4DE619877213",
+      "captured_at": "2026-10-07T12:36:55+08:00",
+      "workflow_detected": false,
+      "preferred_city": "太原市",
+      "slug": "shanxi",
+      "name": "山西省",
+      "state": "fresh",
+      "portal_url": "https://www.shanxi.gov.cn/zwfw/",
+      "source_run": "20261001-191727-be84e8b9",
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [
+        {
+          "material_name": "仲裁申请书.docx",
+          "text": "仲裁申请书.docx",
+          "kind": "document",
+          "url": ""
+        }
+      ],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-07T12:37:05.976498+08:00",
+      "openclaw_task": "templates\\_reports\\openclaw-tasks\\20261007-121205-676f95c0\\shanxi",
+      "theme": {
+        "motif": "晋地古塔",
+        "kind": "古塔",
+        "accent": "#8b603e",
+        "wash": "#faf2e7",
+        "art": "/province-art/shanxi.svg",
+        "miniArt": "/assets/province-art/shanxi.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": [
+        {
+          "name": "仲裁申请书.docx",
+          "kind": "document",
+          "url": "https://www.sxzwfw.gov.cn/icity/icity/proinfo_new?url=https://zwfwpt.sxzwfw.gov.cn:10002/aaa/person/DF7DE8D7F26045BDAD8D4DE619877213"
+        }
+      ]
+    },
+    "neimenggu": {
+      "service_kind": "unknown",
+      "service_name": "",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再查看办事指南。"
+        }
+      ],
+      "materials": [
+        "劳动仲裁申请书模版"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "这份在线表格用于“内蒙古自治区鄂尔多斯市”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "http://rsj.ordos.gov.cn/ztzl_146775/xzzx_146783/202503/t20250331_1577917.html",
+      "captured_at": "2026-10-01T19:25:15+08:00",
+      "workflow_detected": false,
+      "preferred_city": "呼和浩特市",
+      "slug": "neimenggu",
+      "name": "内蒙古自治区",
+      "state": "historical",
+      "portal_url": "https://zwfw.nmg.gov.cn/",
+      "source_run": "20261001-191727-be84e8b9",
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [
+        {
+          "material_name": "劳动仲裁申请书",
+          "text": "劳动仲裁申请书（当前位置：首页>>专题专栏>>下载中心）",
+          "kind": "document",
+          "url": ""
+        },
+        {
+          "material_name": "劳动仲裁申请书",
+          "text": "劳动仲裁申请书（下载中心）",
+          "kind": "document",
+          "url": "http://rsj.ordos.gov.cn/ztzl_146775/xzzx_146783/"
+        }
+      ],
+      "template_status": "downloads_detected",
+      "checked_at": "2026-10-06T17:58:11+08:00",
+      "theme": {
+        "motif": "草原毡房",
+        "kind": "毡房",
+        "accent": "#457660",
+        "wash": "#edf6ef",
+        "art": "/province-art/neimenggu.svg",
+        "miniArt": "/assets/province-art/neimenggu.png"
+      },
+      "source_status": "沿用此前记录，需在官方页面核对",
+      "template_links": [
+        {
+          "name": "劳动仲裁申请书",
+          "kind": "document",
+          "url": "http://rsj.ordos.gov.cn/ztzl_146775/xzzx_146783/202503/t20250331_1577917.html"
+        },
+        {
+          "name": "劳动仲裁申请书",
+          "kind": "document",
+          "url": "http://rsj.ordos.gov.cn/ztzl_146775/xzzx_146783/"
+        }
+      ]
+    },
+    "liaoning": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "先交材料",
+          "text": "按下面的材料清单准备，交到官方指南指定的办理入口。",
+          "official_name": "接收申请",
+          "source_text": "流程图 办理环节 环节名称 承办处室 接收申请 辽宁省劳动监察仲裁稽核中心 审核申请 辽宁省劳动监察仲裁稽核中心 办结 辽宁省劳动监察仲裁稽核中心"
+        },
+        {
+          "title": "配合材料检查",
+          "text": "工作人员核对材料时，按要求说明或补充。",
+          "official_name": "审核申请",
+          "source_text": "流程图 办理环节 环节名称 承办处室 接收申请 辽宁省劳动监察仲裁稽核中心 审核申请 辽宁省劳动监察仲裁稽核中心 办结 辽宁省劳动监察仲裁稽核中心"
+        },
+        {
+          "title": "查看案件结果",
+          "text": "保存结果文书，仔细看后续事项。",
+          "official_name": "办结",
+          "source_text": "流程图 办理环节 环节名称 承办处室 接收申请 辽宁省劳动监察仲裁稽核中心 审核申请 辽宁省劳动监察仲裁稽核中心 办结 辽宁省劳动监察仲裁稽核中心"
+        }
+      ],
+      "materials": [
+        "证据清单及证据材料",
+        "仲裁申请人身份证复印件",
+        "仲裁申请书及副本",
+        "材料依据",
+        "出具单位",
+        "来源渠道",
+        "复印件份数",
+        "空表下载",
+        "容缺受理书空表下载",
+        "告知承诺书空表下载",
+        "备注"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "这份在线表格用于“辽宁省”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "https://center.lnzwfw.gov.cn/api/web/matter/getContent?id=65dbb98b-35ef-47a5-b7ff-1a4f5c914e11&gb=1",
+      "captured_at": "2026-10-06T17:58:09+08:00",
+      "workflow_detected": true,
+      "preferred_city": "沈阳市",
+      "slug": "liaoning",
+      "name": "辽宁省",
+      "state": "fresh",
+      "portal_url": "https://www.lnzwfw.gov.cn/",
+      "source_run": null,
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-06T17:58:09+08:00",
+      "theme": {
+        "motif": "盛京红墙",
+        "kind": "宫殿",
+        "accent": "#985348",
+        "wash": "#faefea",
+        "art": "/province-art/liaoning.svg",
+        "miniArt": "/assets/province-art/liaoning.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": []
+    },
+    "jilin": {
+      "service_kind": "unknown",
+      "service_name": "",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再查看办事指南。"
+        }
+      ],
+      "materials": [
+        "与请求事项相关的证据材料原件、复印件和证据清单。"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。"
+      ],
+      "source_url": "https://hrss.jl.gov.cn/ldgx/tjzc/201608/t20160823_2400018.html",
+      "captured_at": "2026-10-01T19:36:52+08:00",
+      "workflow_detected": false,
+      "preferred_city": "长春市",
+      "slug": "jilin",
+      "name": "吉林省",
+      "state": "historical",
+      "portal_url": "https://zwfw.jl.gov.cn/",
+      "source_run": "20261001-191727-be84e8b9",
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-06T18:01:12+08:00",
+      "theme": {
+        "motif": "长白山与雪",
+        "kind": "山峰",
+        "accent": "#386978",
+        "wash": "#edf6f8",
+        "art": "/province-art/jilin.svg",
+        "miniArt": "/assets/province-art/jilin.png"
+      },
+      "source_status": "沿用此前记录，需在官方页面核对",
+      "template_links": []
+    },
+    "heilongjiang": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "哈尔滨市",
+      "steps": [
+        {
+          "title": "留意受理通知",
+          "text": "提交后留意通知；需要补材料时，按通知补齐。",
+          "official_name": "受理",
+          "source_text": "步骤 1 受理 办理时限：5个工作日 办理结果：属于劳动人事争议受理范围的，正常受理。不属于劳动人事争议受理范围的，出具不予受理通知书。 审查标准： 符合《调解仲裁法》规定的申请条件 2 收件 办理时限：5个工作日 办理结果：材料齐全的正常收取材料并出具收件回执 审查标准： 申请人被申请人信息，证据材料等"
+        },
+        {
+          "title": "留意材料接收",
+          "text": "提交后留意材料是否已接收，需要补材料时按通知补齐。",
+          "official_name": "收件",
+          "source_text": "步骤 1 受理 办理时限：5个工作日 办理结果：属于劳动人事争议受理范围的，正常受理。不属于劳动人事争议受理范围的，出具不予受理通知书。 审查标准： 符合《调解仲裁法》规定的申请条件 2 收件 办理时限：5个工作日 办理结果：材料齐全的正常收取材料并出具收件回执 审查标准： 申请人被申请人信息，证据材料等"
+        }
+      ],
+      "materials": [
+        "空白表格"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。"
+      ],
+      "source_url": "https://www.zwfw.hlj.gov.cn/zhcx/bszn?syncItemId=d7a2bd63-98b9-4e0f-8147-f609c73f12b7&areaCode=230100000000",
+      "captured_at": "2026-10-07T15:47:27+08:00",
+      "workflow_detected": true,
+      "preferred_city": "哈尔滨市",
+      "slug": "heilongjiang",
+      "name": "黑龙江省",
+      "state": "fresh",
+      "portal_url": "https://www.zwfw.hlj.gov.cn/",
+      "source_run": "20261001-191727-be84e8b9",
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": true,
+      "templates": [
+        {
+          "material_name": "申请书",
+          "text": "申请书（空白表格）",
+          "kind": "blank",
+          "url": "https://www.zwfw.hlj.gov.cn/api-gateway/jpaas-jiop-web-server/front/matter/attachmentDownload?attachGuid=ec74b068-8b7a-4dc5-803b-3404095a92c3&areaCode=230100000000&dataSource=1"
+        },
+        {
+          "material_name": "申请书",
+          "text": "申请书（示例样表）",
+          "kind": "sample",
+          "url": "https://www.zwfw.hlj.gov.cn/api-gateway/jpaas-jiop-web-server/front/matter/attachmentDownload?attachGuid=54571036-f7fe-41c1-acbf-40a920d9b2db&areaCode=230100000000&dataSource=1"
+        }
+      ],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-07T15:47:28.312302+08:00",
+      "openclaw_task": "templates\\_reports\\openclaw-tasks\\20261007-130607-2c6533a3\\heilongjiang",
+      "openclaw_attempt": {
+        "run": "20261007-130607-2c6533a3",
+        "state": "acquired",
+        "status": {
+          "site_opened": true,
+          "guide_found": true,
+          "template_downloaded": true,
+          "fill_verified": false
+        },
+        "error": "",
+        "model_reason": "已检索到'劳动人事争议仲裁申请'事项，点击办事指南进入详情页查看申请材料/表格下载/办理流程",
+        "url": "https://www.zwfw.hlj.gov.cn/zhcx/bszn?syncItemId=d7a2bd63-98b9-4e0f-8147-f609c73f12b7&areaCode=230100000000",
+        "updated_at": "2026-10-07T15:47:28.312302+08:00",
+        "official_pdf_fallback": null
+      },
+      "theme": {
+        "motif": "冰城穹顶",
+        "kind": "穹顶",
+        "accent": "#586c9f",
+        "wash": "#f0f3fb",
+        "art": "/province-art/heilongjiang.svg",
+        "miniArt": "/assets/province-art/heilongjiang.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": [
+        {
+          "name": "申请书",
+          "kind": "blank",
+          "url": "https://www.zwfw.hlj.gov.cn/api-gateway/jpaas-jiop-web-server/front/matter/attachmentDownload?attachGuid=ec74b068-8b7a-4dc5-803b-3404095a92c3&areaCode=230100000000&dataSource=1"
+        },
+        {
+          "name": "申请书",
+          "kind": "sample",
+          "url": "https://www.zwfw.hlj.gov.cn/api-gateway/jpaas-jiop-web-server/front/matter/attachmentDownload?attachGuid=54571036-f7fe-41c1-acbf-40a920d9b2db&areaCode=230100000000&dataSource=1"
+        }
+      ]
+    },
+    "shanghai": {
+      "service_kind": "mediation",
+      "service_name": "工会劳动争议调解",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "打开官方申请入口",
+          "text": "登录随申办工会维权服务—“劳动争议调解”事项进行申请。",
+          "source_text": "登录随申办工会维权服务—“劳动争议调解”事项进行申请。",
+          "official_name": ""
+        }
+      ],
+      "materials": [
+        "申请人身份证",
+        "用人单位工商登记信息",
+        "本人劳动关系证明材料及权益受损的相关证据"
+      ],
+      "notes": [
+        "这里办理调解。需要申请仲裁，请另找“仲裁申请”入口。",
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。"
+      ],
+      "source_url": "https://zwdt.sh.gov.cn/govPortals/bsfw/item/3a58719a-c772-4b4b-9a13-46a6b9c9b15d",
+      "captured_at": "2026-10-06T17:58:57+08:00",
+      "workflow_detected": true,
+      "preferred_city": "上海市",
+      "slug": "shanghai",
+      "name": "上海市",
+      "state": "fresh",
+      "portal_url": "https://zwdt.sh.gov.cn/",
+      "source_run": null,
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": true,
+      "templates": [],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-06T17:58:57+08:00",
+      "theme": {
+        "motif": "浦江天际线",
+        "kind": "高楼",
+        "accent": "#5063a0",
+        "wash": "#eff2fb",
+        "art": "/province-art/shanghai.svg",
+        "miniArt": "/assets/province-art/shanghai.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": []
+    },
+    "jiangsu": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再查看办事指南。"
+        }
+      ],
+      "materials": [
+        "劳动人事争议仲裁案件证据材料",
+        "劳动人事争议仲裁案件证据清单",
+        "身份证明材料（申请人或代办人双方）",
+        "劳动人事争议仲裁申请书",
+        "材料形式",
+        "表格下载",
+        "来源渠道",
+        "纸质材料份数",
+        "填报须知",
+        "受理标准",
+        "备注"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "这份在线表格用于“江苏省无锡市锡山区”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "http://wxxs.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=35&iddept_ql_inf=11320205014038763X4002014302002&ql_kind=20&iddept_yw_inf=11320205014038763X400201430200201",
+      "captured_at": "2026-10-06T18:00:35+08:00",
+      "workflow_detected": false,
+      "preferred_city": "南京市",
+      "slug": "jiangsu",
+      "name": "江苏省",
+      "state": "fresh",
+      "portal_url": "https://www.jszwfw.gov.cn/",
+      "source_run": null,
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [
+        {
+          "material_name": "劳动人事争议仲裁案件证据清单",
+          "text": "劳动人事争议仲裁案件证据清单（空白表格）",
+          "kind": "blank",
+          "url": ""
+        },
+        {
+          "material_name": "劳动人事争议仲裁案件证据清单",
+          "text": "劳动人事争议仲裁案件证据清单（示例样表）",
+          "kind": "sample",
+          "url": ""
+        },
+        {
+          "material_name": "劳动人事争议仲裁申请书",
+          "text": "劳动人事争议仲裁申请书（空白表格）",
+          "kind": "blank",
+          "url": ""
+        },
+        {
+          "material_name": "劳动人事争议仲裁申请书",
+          "text": "劳动人事争议仲裁申请书（示例样表）",
+          "kind": "sample",
+          "url": ""
+        }
+      ],
+      "template_status": "downloads_detected",
+      "checked_at": "2026-10-06T18:00:35+08:00",
+      "theme": {
+        "motif": "江南园林",
+        "kind": "园林",
+        "accent": "#45796a",
+        "wash": "#eff7f3",
+        "art": "/province-art/jiangsu.svg",
+        "miniArt": "/assets/province-art/jiangsu.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": [
+        {
+          "name": "劳动人事争议仲裁案件证据清单",
+          "kind": "blank",
+          "url": "http://wxxs.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=35&iddept_ql_inf=11320205014038763X4002014302002&ql_kind=20&iddept_yw_inf=11320205014038763X400201430200201"
+        },
+        {
+          "name": "劳动人事争议仲裁案件证据清单",
+          "kind": "sample",
+          "url": "http://wxxs.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=35&iddept_ql_inf=11320205014038763X4002014302002&ql_kind=20&iddept_yw_inf=11320205014038763X400201430200201"
+        },
+        {
+          "name": "劳动人事争议仲裁申请书",
+          "kind": "blank",
+          "url": "http://wxxs.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=35&iddept_ql_inf=11320205014038763X4002014302002&ql_kind=20&iddept_yw_inf=11320205014038763X400201430200201"
+        },
+        {
+          "name": "劳动人事争议仲裁申请书",
+          "kind": "sample",
+          "url": "http://wxxs.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=35&iddept_ql_inf=11320205014038763X4002014302002&ql_kind=20&iddept_yw_inf=11320205014038763X400201430200201"
+        }
+      ]
+    },
+    "zhejiang": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "先交材料",
+          "text": "按下面的材料清单准备，交到官方指南指定的办理入口。",
+          "official_name": "申请",
+          "source_text": "申请－受理－审理－出具结案文书－送达－办结"
+        },
+        {
+          "title": "留意受理通知",
+          "text": "提交后留意通知；需要补材料时，按通知补齐。",
+          "official_name": "受理",
+          "source_text": "申请－受理－审理－出具结案文书－送达－办结"
+        },
+        {
+          "title": "按通知参加审理",
+          "text": "按通知参加审理，准备好要说明的事情和相关证据。",
+          "official_name": "审理",
+          "source_text": "申请－受理－审理－出具结案文书－送达－办结"
+        },
+        {
+          "title": "查看案件结果",
+          "text": "保存结果文书，仔细看后续事项。",
+          "official_name": "出具结案文书",
+          "source_text": "申请－受理－审理－出具结案文书－送达－办结"
+        },
+        {
+          "title": "收好结果文书",
+          "text": "按通知收取文书，仔细看文书里的后续事项。",
+          "official_name": "送达",
+          "source_text": "申请－受理－审理－出具结案文书－送达－办结"
+        },
+        {
+          "title": "查看案件结果",
+          "text": "保存结果文书，仔细看后续事项。",
+          "official_name": "办结",
+          "source_text": "申请－受理－审理－出具结案文书－送达－办结"
+        }
+      ],
+      "materials": [
+        "用人单位登记注册材料",
+        "劳动者身份证",
+        "《劳动人事争议仲裁申请书》",
+        "《证据清单》",
+        "存在劳动关系的证据和可证实申请人主张的证据"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "这份在线表格用于“浙江省”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=2510b7af-2402-4502-837c-14eb4a71177d",
+      "captured_at": "2026-10-06T17:59:19+08:00",
+      "workflow_detected": true,
+      "preferred_city": "杭州市",
+      "slug": "zhejiang",
+      "name": "浙江省",
+      "state": "fresh",
+      "portal_url": "https://www.zjzwfw.gov.cn/",
+      "source_run": null,
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [
+        {
+          "material_name": "仲裁申请书",
+          "text": "仲裁申请书（下载）",
+          "kind": "document",
+          "url": ""
+        },
+        {
+          "material_name": "证据清单",
+          "text": "证据清单（下载）",
+          "kind": "document",
+          "url": ""
+        }
+      ],
+      "template_status": "downloads_detected",
+      "checked_at": "2026-10-06T17:59:19+08:00",
+      "theme": {
+        "motif": "西湖荷影",
+        "kind": "荷花",
+        "accent": "#317b78",
+        "wash": "#ecf8f5",
+        "art": "/province-art/zhejiang.svg",
+        "miniArt": "/assets/province-art/zhejiang.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": [
+        {
+          "name": "仲裁申请书",
+          "kind": "document",
+          "url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=2510b7af-2402-4502-837c-14eb4a71177d"
+        },
+        {
+          "name": "证据清单",
+          "kind": "document",
+          "url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=2510b7af-2402-4502-837c-14eb4a71177d"
+        }
+      ]
+    },
+    "anhui": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "瑶海区",
+      "steps": [
+        {
+          "title": "留意受理通知",
+          "text": "提交后留意通知；需要补材料时，按通知补齐。",
+          "official_name": "受理",
+          "source_text": "1.严格执行窗口管理的各项规章制度，统一受理业务。 2.负责申请材料收件把关。 3.负责受理申请材料的收件登记、打印回执。 4.负责告知申请人补交材料等手续。"
+        },
+        {
+          "title": "配合材料检查",
+          "text": "工作人员核对材料时，按要求说明或补充。",
+          "official_name": "审查",
+          "source_text": "1.严格执行窗口管理各项规章制度。 2.负责详细审查材料的真实性、合法性、有效性。 3.负责出具审查意见。"
+        },
+        {
+          "title": "查看案件结果",
+          "text": "保存结果文书，仔细看后续事项。",
+          "official_name": "办结",
+          "source_text": "1.严格执行窗口管理各项规章制度。 2.负责对申请办件及时办结处理，并将办件结果传达至申请人。 3.负责对办件情况进行整理，形成办件台账。"
+        }
+      ],
+      "materials": [
+        "劳动仲裁申请书",
+        "身份证样表",
+        "证据目录"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。"
+      ],
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=b62d6ac30d27495b817e0b73bc4e3d2e",
+      "captured_at": "2026-10-07T14:41:18+08:00",
+      "workflow_detected": true,
+      "preferred_city": "合肥市",
+      "slug": "anhui",
+      "name": "安徽省",
+      "state": "fresh",
+      "portal_url": "https://www.ahzwfw.gov.cn/",
+      "source_run": "20261001-191727-be84e8b9",
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": true,
+      "templates": [
+        {
+          "material_name": "证据目录",
+          "text": "证据目录（示例样表）",
+          "kind": "sample",
+          "url": ""
+        },
+        {
+          "material_name": "劳动仲裁申请书",
+          "text": "劳动仲裁申请书（空白表格）",
+          "kind": "blank",
+          "url": ""
+        }
+      ],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-07T14:41:18.511715+08:00",
+      "openclaw_task": "templates\\_reports\\openclaw-tasks\\20261007-130607-2c6533a3\\anhui",
+      "openclaw_attempt": {
+        "run": "20261007-130607-2c6533a3",
+        "state": "acquired",
+        "status": {
+          "site_opened": true,
+          "guide_found": true,
+          "template_downloaded": true,
+          "fill_verified": false
+        },
+        "error": "",
+        "model_reason": "",
+        "url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=b62d6ac30d27495b817e0b73bc4e3d2e",
+        "updated_at": "2026-10-07T14:41:18.511715+08:00",
+        "official_pdf_fallback": null
+      },
+      "theme": {
+        "motif": "徽州白墙",
+        "kind": "徽派",
+        "accent": "#586575",
+        "wash": "#f2f4f6",
+        "art": "/province-art/anhui.svg",
+        "miniArt": "/assets/province-art/anhui.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": [
+        {
+          "name": "证据目录",
+          "kind": "sample",
+          "url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=b62d6ac30d27495b817e0b73bc4e3d2e"
+        },
+        {
+          "name": "劳动仲裁申请书",
+          "kind": "blank",
+          "url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=b62d6ac30d27495b817e0b73bc4e3d2e"
+        }
+      ]
+    },
+    "fujian": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再查看办事指南。"
+        }
+      ],
+      "materials": [
+        "查看评价"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "这份在线表格用于“福建省”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=677DC48E123CBADF60D1D5DA15FED8EE",
+      "captured_at": "2026-10-06T18:00:03+08:00",
+      "workflow_detected": false,
+      "preferred_city": "福州市",
+      "slug": "fujian",
+      "name": "福建省",
+      "state": "fresh",
+      "portal_url": "https://zwfw.fujian.gov.cn/",
+      "source_run": null,
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [
+        {
+          "material_name": "[格式文本]仲裁申请书.docx[示范文本]仲裁申请书示例.docx",
+          "text": "[格式文本]仲裁申请书.docx[示范文本]仲裁申请书示例.docx（一键下载材料范本）",
+          "kind": "document",
+          "url": ""
+        },
+        {
+          "material_name": "[格式文本]仲裁申请书.docx",
+          "text": "[格式文本]仲裁申请书.docx",
+          "kind": "blank",
+          "url": ""
+        },
+        {
+          "material_name": "[示范文本]仲裁申请书示例.docx",
+          "text": "[示范文本]仲裁申请书示例.docx",
+          "kind": "sample",
+          "url": ""
+        },
+        {
+          "material_name": "[示范文本]证据清单（示例）.docx",
+          "text": "[示范文本]证据清单（示例）.docx",
+          "kind": "sample",
+          "url": ""
+        },
+        {
+          "material_name": "[格式文本]证据清单（空白）.docx",
+          "text": "[格式文本]证据清单（空白）.docx",
+          "kind": "blank",
+          "url": ""
+        }
+      ],
+      "template_status": "downloads_detected",
+      "checked_at": "2026-10-06T18:00:03+08:00",
+      "theme": {
+        "motif": "闽地土楼",
+        "kind": "土楼",
+        "accent": "#9a6845",
+        "wash": "#fbf3e8",
+        "art": "/province-art/fujian.svg",
+        "miniArt": "/assets/province-art/fujian.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": [
+        {
+          "name": "[格式文本]仲裁申请书.docx[示范文本]仲裁申请书示例.docx",
+          "kind": "document",
+          "url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=677DC48E123CBADF60D1D5DA15FED8EE"
+        },
+        {
+          "name": "[格式文本]仲裁申请书.docx",
+          "kind": "blank",
+          "url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=677DC48E123CBADF60D1D5DA15FED8EE"
+        },
+        {
+          "name": "[示范文本]仲裁申请书示例.docx",
+          "kind": "sample",
+          "url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=677DC48E123CBADF60D1D5DA15FED8EE"
+        },
+        {
+          "name": "[示范文本]证据清单（示例）.docx",
+          "kind": "sample",
+          "url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=677DC48E123CBADF60D1D5DA15FED8EE"
+        },
+        {
+          "name": "[格式文本]证据清单（空白）.docx",
+          "kind": "blank",
+          "url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=677DC48E123CBADF60D1D5DA15FED8EE"
+        }
+      ]
+    },
+    "jiangxi": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁调解",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再查看办事指南。"
+        }
+      ],
+      "materials": [
+        "仲裁申请书",
+        "身份证复印件已关联电子证照",
+        "工资银行流水",
+        "劳动合同"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "这份在线表格用于“江西省赣州市”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "http://jath.jxzwfww.gov.cn/jxzw/bszn/index.do?webId=90&itemCode=360826-000201012000-QT-025-01&flag=gj",
+      "captured_at": "2026-10-06T17:59:32+08:00",
+      "workflow_detected": false,
+      "preferred_city": "南昌市",
+      "slug": "jiangxi",
+      "name": "江西省",
+      "state": "fresh",
+      "portal_url": "https://www.jxzwfww.gov.cn/",
+      "source_run": null,
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-06T17:59:32+08:00",
+      "theme": {
+        "motif": "瓷与山水",
+        "kind": "瓷器",
+        "accent": "#496d9b",
+        "wash": "#f0f5fc",
+        "art": "/province-art/jiangxi.svg",
+        "miniArt": "/assets/province-art/jiangxi.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": []
+    },
+    "shandong": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议调解仲裁",
+      "scope": "济南市",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再查看办事指南。"
+        }
+      ],
+      "materials": [
+        "仲裁申请书",
+        "申请人身份证明",
+        "委托代理人代为申请的，需提交《授权委托书》，并按照下列规定向仲裁委员会提交相关材料"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "材料清单请以官方 PDF 为准。",
+        "这份在线表格用于“山东省淄博市”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "https://jnhrss.jinan.gov.cn/col18388/art/2025/art_18388_4804267.html",
+      "captured_at": "2026-10-07T16:13:07.276742+08:00",
+      "workflow_detected": false,
+      "preferred_city": "济南市",
+      "slug": "shandong",
+      "name": "山东省",
+      "state": "fresh",
+      "portal_url": "https://zwfw.sd.gov.cn/",
+      "source_run": "20261001-191727-be84e8b9",
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": true,
+      "templates": [],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-07T16:13:07.276742+08:00",
+      "openclaw_task": "templates\\_reports\\openclaw-tasks\\20261007-130607-2c6533a3\\shandong",
+      "openclaw_attempt": {
+        "run": "20261007-130607-2c6533a3",
+        "state": "acquired",
+        "status": {
+          "site_opened": true,
+          "guide_found": true,
+          "template_downloaded": false,
+          "fill_verified": false
+        },
+        "error": "GatewayClientRequestError: Error: Element \"e95\" not found or not visible. Run a new snapshot to see current page elements.",
+        "model_reason": "选择当前公开地区列表中的省会",
+        "url": "https://jnhrss.jinan.gov.cn/col18388/art/2025/art_18388_4804267.html",
+        "updated_at": "2026-10-07T16:13:07.276742+08:00",
+        "official_pdf_fallback": null
+      },
+      "theme": {
+        "motif": "岱岳松影",
+        "kind": "山峰",
+        "accent": "#597145",
+        "wash": "#f2f6eb",
+        "art": "/province-art/shandong.svg",
+        "miniArt": "/assets/province-art/shandong.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": []
+    },
+    "henan": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议调解仲裁",
+      "scope": "郑州市",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再查看办事指南。"
+        }
+      ],
+      "materials": [
+        "仲裁申请书",
+        "本人居民身份证复印件",
+        "授权委托书",
+        "工商行政管理部门登记的注册信息"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "材料清单请以官方 PDF 为准。",
+        "这份在线表格用于“河南省平顶山市”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "https://zzrs.zhengzhou.gov.cn/zlxz2/8403999.jhtml",
+      "captured_at": "2026-10-07T16:13:11.911922+08:00",
+      "workflow_detected": false,
+      "preferred_city": "郑州市",
+      "slug": "henan",
+      "name": "河南省",
+      "state": "fresh",
+      "portal_url": "https://www.hnzwfw.gov.cn/",
+      "source_run": "20261001-191727-be84e8b9",
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": true,
+      "templates": [
+        {
+          "material_name": "仲裁申请书格式（官方手册PDF第6页）",
+          "text": "官方手册内申请书格式",
+          "kind": "reference_pdf",
+          "url": "https://zzrs.zhengzhou.gov.cn/attachment/%E5%8A%B3%E5%8A%A8%E4%BA%BA%E4%BA%8B%E4%BA%89%E8%AE%AE%E8%B0%83%E8%A7%A3%E4%BB%B2%E8%A3%81.pdf?8GAuLIiCW2dIUgkuXPHJx65bp54GK7HRMhF-8iHqTtpFh0tsQClGlClh12fUWfn7qP7JslovxbeXqX0MTtEQjdaSog==#page=6"
+        }
+      ],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-07T16:13:11.911922+08:00",
+      "openclaw_task": "templates\\_reports\\openclaw-tasks\\20261007-130607-2c6533a3\\henan",
+      "openclaw_attempt": {
+        "run": "20261007-130607-2c6533a3",
+        "state": "acquired",
+        "status": {
+          "site_opened": true,
+          "guide_found": true,
+          "template_downloaded": false,
+          "fill_verified": false
+        },
+        "error": "",
+        "model_reason": "当前URL已指向劳动人事争议仲裁搜索结果页，但快照未显示任何搜索结果或事项链接，需等待页面加载出结果后再选择郑州市/首个区县的办事指南。",
+        "url": "https://zzrs.zhengzhou.gov.cn/zlxz2/8403999.jhtml",
+        "updated_at": "2026-10-07T16:13:11.911922+08:00",
+        "official_pdf_fallback": null
+      },
+      "theme": {
+        "motif": "古都牡丹",
+        "kind": "花卉",
+        "accent": "#966276",
+        "wash": "#fcf0f4",
+        "art": "/province-art/henan.svg",
+        "miniArt": "/assets/province-art/henan.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": [
+        {
+          "name": "仲裁申请书格式（官方手册PDF第6页）",
+          "kind": "reference_pdf",
+          "url": "https://zzrs.zhengzhou.gov.cn/attachment/%E5%8A%B3%E5%8A%A8%E4%BA%BA%E4%BA%8B%E4%BA%89%E8%AE%AE%E8%B0%83%E8%A7%A3%E4%BB%B2%E8%A3%81.pdf?8GAuLIiCW2dIUgkuXPHJx65bp54GK7HRMhF-8iHqTtpFh0tsQClGlClh12fUWfn7qP7JslovxbeXqX0MTtEQjdaSog==#page=6"
+        }
+      ]
+    },
+    "hubei": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请（劳动者申请立案）",
+      "scope": "武汉市江岸区",
+      "steps": [
+        {
+          "title": "先交材料",
+          "text": "按下面的材料清单准备，交到官方指南指定的办理入口。",
+          "official_name": "申请",
+          "source_text": "查看流程图 1申请 办理人工作人员时限0.2工作日 2收件 办理人工作人员时限0.3工作日 3决定 办理人工作人员时限0.2工作日 4送达 办理人工作人员时限0.3工作日"
+        },
+        {
+          "title": "留意材料接收",
+          "text": "提交后留意材料是否已接收，需要补材料时按通知补齐。",
+          "official_name": "收件",
+          "source_text": "查看流程图 1申请 办理人工作人员时限0.2工作日 2收件 办理人工作人员时限0.3工作日 3决定 办理人工作人员时限0.2工作日 4送达 办理人工作人员时限0.3工作日"
+        },
+        {
+          "title": "查看办理结果",
+          "text": "查看官方发给你的办理结果，有疑问就向办理机构询问。",
+          "official_name": "决定",
+          "source_text": "查看流程图 1申请 办理人工作人员时限0.2工作日 2收件 办理人工作人员时限0.3工作日 3决定 办理人工作人员时限0.2工作日 4送达 办理人工作人员时限0.3工作日"
+        },
+        {
+          "title": "收好结果文书",
+          "text": "按通知收取文书，仔细看文书里的后续事项。",
+          "official_name": "送达",
+          "source_text": "查看流程图 1申请 办理人工作人员时限0.2工作日 2收件 办理人工作人员时限0.3工作日 3决定 办理人工作人员时限0.2工作日 4送达 办理人工作人员时限0.3工作日"
+        }
+      ],
+      "materials": [
+        "仲裁申请书（劳动者申请仲裁）",
+        "中华人民共和国居民身份证",
+        "登记机构出具的用人单位的登记信息",
+        "基本立案证据",
+        "送达地址确认书"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "材料清单请以官方 PDF 为准。",
+        "这份在线表格用于“湖北省”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "https://zwfw.hubei.gov.cn/webview/bszn/bsznpage.html?transactCode=114201027375151643400201430200202&taskType=20",
+      "captured_at": "2026-10-07T15:38:03+08:00",
+      "workflow_detected": true,
+      "preferred_city": "武汉市",
+      "slug": "hubei",
+      "name": "湖北省",
+      "state": "fresh",
+      "portal_url": "https://zwfw.hubei.gov.cn/",
+      "source_run": "20261001-191727-be84e8b9",
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": true,
+      "templates": [
+        {
+          "material_name": "仲裁申请书（劳动者申请仲裁）",
+          "text": "仲裁申请书（劳动者申请仲裁）（查看示例）",
+          "kind": "sample",
+          "url": "https://zwfw.hubei.gov.cn/web/lcfile/group1/M00/00/CD/wKhUBV1jLmyAWzXtAABPR3FPie492.docx"
+        }
+      ],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-07T15:38:03+08:00",
+      "openclaw_task": "templates\\_reports\\openclaw-tasks\\20261007-130607-2c6533a3\\hubei",
+      "openclaw_attempt": {
+        "run": "20261007-130607-2c6533a3",
+        "state": "acquired",
+        "status": {
+          "site_opened": true,
+          "guide_found": true,
+          "template_downloaded": true,
+          "fill_verified": false
+        },
+        "error": "GatewayClientRequestError: Error: Unknown ref \"e22\". Run a new snapshot and use a ref from that snapshot.",
+        "model_reason": "已进入武汉市江岸区劳动人事争议仲裁申请办事指南详情页，下一步需要查看申请材料/表格下载信息。",
+        "url": "https://zwfw.hubei.gov.cn/webview/bszn/bsznpage.html?transactCode=114201027375151643400201430200202&taskType=20",
+        "updated_at": "2026-10-07T15:38:03+08:00",
+        "official_pdf_fallback": null
+      },
+      "theme": {
+        "motif": "江城楼阁",
+        "kind": "古塔",
+        "accent": "#94713b",
+        "wash": "#faf5e9",
+        "art": "/province-art/hubei.svg",
+        "miniArt": "/assets/province-art/hubei.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": [
+        {
+          "name": "仲裁申请书（劳动者申请仲裁）",
+          "kind": "sample",
+          "url": "https://zwfw.hubei.gov.cn/web/lcfile/group1/M00/00/CD/wKhUBV1jLmyAWzXtAABPR3FPie492.docx"
+        }
+      ]
+    },
+    "hunan": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "先登记你的问题",
+          "text": "在官方指定的接待渠道说明你的问题，按要求登记。",
+          "official_name": "接待登记",
+          "source_text": "接待登记-立案登记-案件组庭排庭-案件审理-结案处理"
+        },
+        {
+          "title": "留意立案通知",
+          "text": "留意是否立案的通知，按通知补充材料。",
+          "official_name": "立案登记",
+          "source_text": "接待登记-立案登记-案件组庭排庭-案件审理-结案处理"
+        },
+        {
+          "title": "留意开庭安排",
+          "text": "收到开庭通知后，看清时间、地点和要带的材料。",
+          "official_name": "案件组庭排庭",
+          "source_text": "接待登记-立案登记-案件组庭排庭-案件审理-结案处理"
+        },
+        {
+          "title": "按通知参加审理",
+          "text": "按通知参加审理，准备好要说明的事情和相关证据。",
+          "official_name": "案件审理",
+          "source_text": "接待登记-立案登记-案件组庭排庭-案件审理-结案处理"
+        },
+        {
+          "title": "查看案件结果",
+          "text": "保存结果文书，仔细看后续事项。",
+          "official_name": "结案处理",
+          "source_text": "接待登记-立案登记-案件组庭排庭-案件审理-结案处理"
+        }
+      ],
+      "materials": [
+        "劳动仲裁申请书",
+        "居民身份证",
+        "营业执照",
+        "证据材料"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "这份在线表格用于“湖南省岳阳市”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&rightsCode=002014302002&ywCode=01",
+      "captured_at": "2026-10-06T18:00:09+08:00",
+      "workflow_detected": true,
+      "preferred_city": "长沙市",
+      "slug": "hunan",
+      "name": "湖南省",
+      "state": "fresh",
+      "portal_url": "https://zwfw-new.hunan.gov.cn/",
+      "source_run": null,
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [
+        {
+          "material_name": "劳动仲裁申请书",
+          "text": "劳动仲裁申请书（示例）",
+          "kind": "sample",
+          "url": ""
+        },
+        {
+          "material_name": "劳动仲裁申请书",
+          "text": "劳动仲裁申请书（模板）",
+          "kind": "blank",
+          "url": ""
+        }
+      ],
+      "template_status": "downloads_detected",
+      "checked_at": "2026-10-06T18:00:09+08:00",
+      "theme": {
+        "motif": "湘江楼影",
+        "kind": "古塔",
+        "accent": "#8a6349",
+        "wash": "#fbf3ec",
+        "art": "/province-art/hunan.svg",
+        "miniArt": "/assets/province-art/hunan.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": [
+        {
+          "name": "劳动仲裁申请书",
+          "kind": "sample",
+          "url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&rightsCode=002014302002&ywCode=01"
+        },
+        {
+          "name": "劳动仲裁申请书",
+          "kind": "blank",
+          "url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&rightsCode=002014302002&ywCode=01"
+        }
+      ]
+    },
+    "guangdong": {
+      "service_kind": "mediation",
+      "service_name": "劳动人事争议调解申请",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "按官方流程办理",
+          "text": "受理条件",
+          "source_text": "受理条件",
+          "official_name": ""
+        }
+      ],
+      "materials": [],
+      "notes": [
+        "这里办理调解。需要申请仲裁，请另找“仲裁申请”入口。",
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "这份在线表格用于“广东省”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "https://www.gdzwfw.gov.cn/portal/v2/guide/11440000553612461J2442111598004",
+      "captured_at": "2026-10-01T20:24:50+08:00",
+      "workflow_detected": true,
+      "preferred_city": "广州市",
+      "slug": "guangdong",
+      "name": "广东省",
+      "state": "historical",
+      "portal_url": "https://www.gdzwfw.gov.cn/",
+      "source_run": "20261001-191727-be84e8b9",
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-06T18:02:56+08:00",
+      "theme": {
+        "motif": "木棉与岭南",
+        "kind": "花卉",
+        "accent": "#ad5d41",
+        "wash": "#fff2e8",
+        "art": "/province-art/guangdong.svg",
+        "miniArt": "/assets/province-art/guangdong.png"
+      },
+      "source_status": "沿用此前记录，需在官方页面核对",
+      "template_links": []
+    },
+    "guangxi": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "广西壮族自治区",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再查看办事指南。"
+        }
+      ],
+      "materials": [
+        "仲裁申请书",
+        "证据",
+        "居民身份证",
+        "授权委托书",
+        "营业执照"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "材料清单请以官方 PDF 为准。"
+      ],
+      "source_url": "http://rst.gxzf.gov.cn/zwgk/xxgkzcfg/fgfxlm/P020241210584780009389.pdf",
+      "captured_at": "2026-10-07T13:47:55.769200+08:00",
+      "workflow_detected": false,
+      "preferred_city": "南宁市",
+      "slug": "guangxi",
+      "name": "广西壮族自治区",
+      "state": "fresh",
+      "portal_url": "https://zwfw.gxzf.gov.cn/",
+      "source_run": "20261001-191727-be84e8b9",
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-07T13:47:55.769200+08:00",
+      "openclaw_task": "templates\\_reports\\openclaw-tasks\\20261007-130607-2c6533a3\\guangxi",
+      "openclaw_attempt": {
+        "run": "20261007-130607-2c6533a3",
+        "state": "acquired",
+        "status": {
+          "site_opened": true,
+          "guide_found": true,
+          "template_downloaded": false,
+          "fill_verified": false
+        },
+        "error": "Repeated selecting the current city without pressing the visible confirmation control; attempt preserved before planner context repair.",
+        "model_reason": "地区选择弹窗仍显示南宁市，点击南宁市链接以确认选择并关闭弹窗，便于后续查找劳动仲裁办事指南",
+        "url": "https://wxxcx.zwfw.gxzf.gov.cn/jmopen1/webapp/html5/newyjs/index.html#/?userType=1&type=1&taskName=%E6%95%99%E8%82%B2%E5%85%A5%E5%AD%A6%E2%80%9C%E4%B8%80%E4%BB%B6%E4%BA%8B%E2%80%9D%EF%BC%88%E5%B0%8F%E5%AD%A6%E4%B8%80%E5%B9%B4%E7%BA%A7%EF%BC%89",
+        "updated_at": "2026-10-07T13:47:55.769200+08:00",
+        "official_pdf_fallback": {
+          "state": "verified",
+          "source_kind": "registered_official_pdf_fallback",
+          "pages": [
+            478,
+            479,
+            480
+          ]
+        }
+      },
+      "theme": {
+        "motif": "桂林山水",
+        "kind": "山峰",
+        "accent": "#467e78",
+        "wash": "#eff8f5",
+        "art": "/province-art/guangxi.svg",
+        "miniArt": "/assets/province-art/guangxi.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": []
+    },
+    "hainan": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "海口市美兰区",
+      "steps": [
+        {
+          "title": "留意受理通知",
+          "text": "提交后留意通知；需要补材料时，按通知补齐。",
+          "official_name": "受理",
+          "source_text": "申请材料齐全，符合法定形式，审查通过后在行政审批系统进行受理；"
+        },
+        {
+          "title": "配合材料检查",
+          "text": "工作人员核对材料时，按要求说明或补充。",
+          "official_name": "审核",
+          "source_text": "对材料进行审核，审核通过后进入下一环节；"
+        },
+        {
+          "title": "留意开庭、调解通知",
+          "text": "按通知参加开庭或调解，看清时间、地点和要带的材料。",
+          "official_name": "开庭、调解",
+          "source_text": "开庭、调解；"
+        },
+        {
+          "title": "查看办理结果",
+          "text": "查看官方发给你的办理结果，有疑问就向办理机构询问。",
+          "official_name": "决定",
+          "source_text": "根据复核意见，对办件予以批准决定和不予批准决定；"
+        },
+        {
+          "title": "按通知领取结果",
+          "text": "按官方通知领取并保存结果。",
+          "official_name": "制证/文",
+          "source_text": "根据批准决定意见已经制作对应结果物；"
+        }
+      ],
+      "materials": [
+        "劳动仲裁申请书",
+        "证据及证据目录",
+        "委托书",
+        "中华人民共和国居民身份证",
+        "被申请人注册信息"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "这份在线表格用于“海南省三亚市”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "https://wssp.hainan.gov.cn/hnwt/handlingGuideline?id=2440129&sourcekey=B9F6443F749C485AB18D68A0AFFEA2EE&rowguid=4d5c26a345ea41098408d2fe83472bab&ckTypeKz=&deptName=%E7%BE%8E%E5%85%B0%E5%8C%BA&deptId=HZ54552852ea26a90152ef0163b2097b",
+      "captured_at": "2026-10-07T15:41:07+08:00",
+      "workflow_detected": true,
+      "preferred_city": "海口市",
+      "slug": "hainan",
+      "name": "海南省",
+      "state": "fresh",
+      "portal_url": "https://wssp.hainan.gov.cn/",
+      "source_run": "20261001-191727-be84e8b9",
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": true,
+      "templates": [
+        {
+          "material_name": "劳动仲裁申请书示例样表空白表格",
+          "text": "劳动仲裁申请书示例样表空白表格（空白表格）",
+          "kind": "sample",
+          "url": ""
+        }
+      ],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-07T15:41:07+08:00",
+      "openclaw_task": "templates\\_reports\\openclaw-tasks\\20261007-130607-2c6533a3\\hainan",
+      "openclaw_attempt": {
+        "run": "20261007-130607-2c6533a3",
+        "state": "acquired",
+        "status": {
+          "site_opened": true,
+          "guide_found": true,
+          "template_downloaded": true,
+          "fill_verified": false
+        },
+        "error": "",
+        "model_reason": "已选择海口市，需要确认地区切换以重新检索海口市劳动人事争议仲裁办事指南。",
+        "url": "https://wssp.hainan.gov.cn/hnwt/handlingGuideline?id=2440129&sourcekey=B9F6443F749C485AB18D68A0AFFEA2EE&rowguid=4d5c26a345ea41098408d2fe83472bab&ckTypeKz=&deptName=%E7%BE%8E%E5%85%B0%E5%8C%BA&deptId=HZ54552852ea26a90152ef0163b2097b",
+        "updated_at": "2026-10-07T15:41:07+08:00",
+        "official_pdf_fallback": null
+      },
+      "theme": {
+        "motif": "椰风海岸",
+        "kind": "椰树",
+        "accent": "#287c91",
+        "wash": "#eef9fb",
+        "art": "/province-art/hainan.svg",
+        "miniArt": "/assets/province-art/hainan.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": [
+        {
+          "name": "劳动仲裁申请书示例样表空白表格",
+          "kind": "sample",
+          "url": "https://wssp.hainan.gov.cn/hnwt/handlingGuideline?id=2440129&sourcekey=B9F6443F749C485AB18D68A0AFFEA2EE&rowguid=4d5c26a345ea41098408d2fe83472bab&ckTypeKz=&deptName=%E7%BE%8E%E5%85%B0%E5%8C%BA&deptId=HZ54552852ea26a90152ef0163b2097b"
+        }
+      ]
+    },
+    "chongqing": {
+      "service_kind": "unknown",
+      "service_name": "",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再查看办事指南。"
+        }
+      ],
+      "materials": [
+        "申请材料：1. 劳动人事争议仲裁申请书；"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。"
+      ],
+      "source_url": "https://rlsbj.cq.gov.cn/ztzl/zjskzcfwb/bmlqfwp/ldgxfw/202307/t20230728_12196045.html",
+      "captured_at": "2026-10-01T20:30:23+08:00",
+      "workflow_detected": false,
+      "preferred_city": "重庆市",
+      "slug": "chongqing",
+      "name": "重庆市",
+      "state": "historical",
+      "portal_url": "https://zwykb.cq.gov.cn/",
+      "source_run": "20261001-191727-be84e8b9",
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-06T18:02:59+08:00",
+      "theme": {
+        "motif": "山城桥影",
+        "kind": "桥梁",
+        "accent": "#986049",
+        "wash": "#fbf1eb",
+        "art": "/province-art/chongqing.svg",
+        "miniArt": "/assets/province-art/chongqing.png"
+      },
+      "source_status": "沿用此前记录，需在官方页面核对",
+      "template_links": []
+    },
+    "sichuan": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "留意受理通知",
+          "text": "提交后留意通知；需要补材料时，按通知补齐。",
+          "official_name": "受理",
+          "source_text": "办理流程 办理时长 转外时限 办理流程说明 受理 0个工作日 0个工作日 1. 申请：申请人到政务服务中心综合 窗口提交申请材料； 2. 受理：窗口工作人员收到申请材料当场或者规定工作日内作出受理或不予受理决定。材料不齐全或不符合法定形式的，办理机关应在规定工作日内一次性告知申请人需要补正的全部内容，对不属于受理范围的，出具不予受理通知书； 3. 审查：办理人员对申请人提交的材料进行审查，提出初步审查意见；4. 决定：办理机关负责人依据审查意见签署审批结果。对予批准办理的，由办理机关向申请人核发办理结果，不予批准的，由办理机关书面通知申请人并说明理由，并告知申请人对结果有异议的，可依法申请行政复议或者提起行政诉讼； 5. 制证：制证部门完成制证；6. 颁发和送达：申请人凭个人身份证明（有效的身份证、临时居住证、户口簿等）和受理通知书到申办窗口领取办理结果。 审查 0个工作日 0个工作日 决定 0个工作日 0个工作日 制证 0个工作日 0个工作日 颁发和送达 0个工作日 0个工作日"
+        },
+        {
+          "title": "配合材料检查",
+          "text": "工作人员核对材料时，按要求说明或补充。",
+          "official_name": "审查",
+          "source_text": "办理流程 办理时长 转外时限 办理流程说明 受理 0个工作日 0个工作日 1. 申请：申请人到政务服务中心综合 窗口提交申请材料； 2. 受理：窗口工作人员收到申请材料当场或者规定工作日内作出受理或不予受理决定。材料不齐全或不符合法定形式的，办理机关应在规定工作日内一次性告知申请人需要补正的全部内容，对不属于受理范围的，出具不予受理通知书； 3. 审查：办理人员对申请人提交的材料进行审查，提出初步审查意见；4. 决定：办理机关负责人依据审查意见签署审批结果。对予批准办理的，由办理机关向申请人核发办理结果，不予批准的，由办理机关书面通知申请人并说明理由，并告知申请人对结果有异议的，可依法申请行政复议或者提起行政诉讼； 5. 制证：制证部门完成制证；6. 颁发和送达：申请人凭个人身份证明（有效的身份证、临时居住证、户口簿等）和受理通知书到申办窗口领取办理结果。 审查 0个工作日 0个工作日 决定 0个工作日 0个工作日 制证 0个工作日 0个工作日 颁发和送达 0个工作日 0个工作日"
+        },
+        {
+          "title": "查看办理结果",
+          "text": "查看官方发给你的办理结果，有疑问就向办理机构询问。",
+          "official_name": "决定",
+          "source_text": "办理流程 办理时长 转外时限 办理流程说明 受理 0个工作日 0个工作日 1. 申请：申请人到政务服务中心综合 窗口提交申请材料； 2. 受理：窗口工作人员收到申请材料当场或者规定工作日内作出受理或不予受理决定。材料不齐全或不符合法定形式的，办理机关应在规定工作日内一次性告知申请人需要补正的全部内容，对不属于受理范围的，出具不予受理通知书； 3. 审查：办理人员对申请人提交的材料进行审查，提出初步审查意见；4. 决定：办理机关负责人依据审查意见签署审批结果。对予批准办理的，由办理机关向申请人核发办理结果，不予批准的，由办理机关书面通知申请人并说明理由，并告知申请人对结果有异议的，可依法申请行政复议或者提起行政诉讼； 5. 制证：制证部门完成制证；6. 颁发和送达：申请人凭个人身份证明（有效的身份证、临时居住证、户口簿等）和受理通知书到申办窗口领取办理结果。 审查 0个工作日 0个工作日 决定 0个工作日 0个工作日 制证 0个工作日 0个工作日 颁发和送达 0个工作日 0个工作日"
+        },
+        {
+          "title": "按通知领取结果",
+          "text": "按官方通知领取并保存结果。",
+          "official_name": "制证",
+          "source_text": "办理流程 办理时长 转外时限 办理流程说明 受理 0个工作日 0个工作日 1. 申请：申请人到政务服务中心综合 窗口提交申请材料； 2. 受理：窗口工作人员收到申请材料当场或者规定工作日内作出受理或不予受理决定。材料不齐全或不符合法定形式的，办理机关应在规定工作日内一次性告知申请人需要补正的全部内容，对不属于受理范围的，出具不予受理通知书； 3. 审查：办理人员对申请人提交的材料进行审查，提出初步审查意见；4. 决定：办理机关负责人依据审查意见签署审批结果。对予批准办理的，由办理机关向申请人核发办理结果，不予批准的，由办理机关书面通知申请人并说明理由，并告知申请人对结果有异议的，可依法申请行政复议或者提起行政诉讼； 5. 制证：制证部门完成制证；6. 颁发和送达：申请人凭个人身份证明（有效的身份证、临时居住证、户口簿等）和受理通知书到申办窗口领取办理结果。 审查 0个工作日 0个工作日 决定 0个工作日 0个工作日 制证 0个工作日 0个工作日 颁发和送达 0个工作日 0个工作日"
+        },
+        {
+          "title": "收好结果文书",
+          "text": "按通知收取文书，仔细看文书里的后续事项。",
+          "official_name": "颁发和送达",
+          "source_text": "办理流程 办理时长 转外时限 办理流程说明 受理 0个工作日 0个工作日 1. 申请：申请人到政务服务中心综合 窗口提交申请材料； 2. 受理：窗口工作人员收到申请材料当场或者规定工作日内作出受理或不予受理决定。材料不齐全或不符合法定形式的，办理机关应在规定工作日内一次性告知申请人需要补正的全部内容，对不属于受理范围的，出具不予受理通知书； 3. 审查：办理人员对申请人提交的材料进行审查，提出初步审查意见；4. 决定：办理机关负责人依据审查意见签署审批结果。对予批准办理的，由办理机关向申请人核发办理结果，不予批准的，由办理机关书面通知申请人并说明理由，并告知申请人对结果有异议的，可依法申请行政复议或者提起行政诉讼； 5. 制证：制证部门完成制证；6. 颁发和送达：申请人凭个人身份证明（有效的身份证、临时居住证、户口簿等）和受理通知书到申办窗口领取办理结果。 审查 0个工作日 0个工作日 决定 0个工作日 0个工作日 制证 0个工作日 0个工作日 颁发和送达 0个工作日 0个工作日"
+        }
+      ],
+      "materials": [
+        "材料形式",
+        "材料类型",
+        "来源渠道",
+        "纸质材料份数",
+        "盖章或盖手印方式",
+        "是否减免",
+        "填报须知",
+        "受理标准",
+        "要求提供材料的依据",
+        "备注"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "这份在线表格用于“四川省广元市”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "http://www.sczwfw.gov.cn/jiq/front/transition/ywTransToDetail?areaCode=513228000000&itemCode=51201400800001-513228000000-000-11513228725527897H-1-00&taskType=20&deptCode=11513228725527897H",
+      "captured_at": "2026-10-06T18:03:32+08:00",
+      "workflow_detected": true,
+      "preferred_city": "成都市",
+      "slug": "sichuan",
+      "name": "四川省",
+      "state": "fresh",
+      "portal_url": "https://www.sczwfw.gov.cn/",
+      "source_run": null,
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [
+        {
+          "material_name": "仲裁申请书",
+          "text": "材料名称材料必要性材料类型材料形式纸质材料份数表格下载详情1营业执照必要原件和复印件纸质1示例样表查看更多2有效身份证件（身份证、户口本）必要原件和复印件纸质3空白表格查看更多3法定代表人或者主要负责人的身份证明材料必要原件纸质2空白表格示例样表查看更多4仲裁申请书必要原件纸质3示例样表查看更多",
+          "kind": "sample",
+          "url": ""
+        },
+        {
+          "material_name": "仲裁申请书",
+          "text": "仲裁申请书（示例样表）",
+          "kind": "sample",
+          "url": ""
+        }
+      ],
+      "template_status": "downloads_detected",
+      "checked_at": "2026-10-06T18:03:32+08:00",
+      "theme": {
+        "motif": "竹林茶香",
+        "kind": "茶碗",
+        "accent": "#647c48",
+        "wash": "#f3f7eb",
+        "art": "/province-art/sichuan.svg",
+        "miniArt": "/assets/province-art/sichuan.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": [
+        {
+          "name": "仲裁申请书",
+          "kind": "sample",
+          "url": "http://www.sczwfw.gov.cn/jiq/front/transition/ywTransToDetail?areaCode=513228000000&itemCode=51201400800001-513228000000-000-11513228725527897H-1-00&taskType=20&deptCode=11513228725527897H"
+        },
+        {
+          "name": "仲裁申请书",
+          "kind": "sample",
+          "url": "http://www.sczwfw.gov.cn/jiq/front/transition/ywTransToDetail?areaCode=513228000000&itemCode=51201400800001-513228000000-000-11513228725527897H-1-00&taskType=20&deptCode=11513228725527897H"
+        }
+      ]
+    },
+    "guizhou": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "留意材料接收",
+          "text": "提交后留意材料是否已接收，需要补材料时按通知补齐。",
+          "official_name": "收件",
+          "source_text": "01 收件 收起 审核标准 申请事项是否符合《中华人民共和国劳动人事争议调解仲裁法》、《劳动人事争议仲裁办案规则》（中华人民共和国人力资源和社会保障部令第33号）、《人事争议处理规定》（国人部发〔2007〕109号）适用范围；申请材料是否齐全、规范等。"
+        }
+      ],
+      "materials": [
+        "仲裁申请书"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "这份在线表格用于“贵州省遵义市”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "https://zwfw.guizhou.gov.cn/new_portal/newbszn?itemCode=11520100009400449K300201430200Y02&areacode=520100&regionCode=520100",
+      "captured_at": "2026-10-06T18:03:12+08:00",
+      "workflow_detected": true,
+      "preferred_city": "贵阳市",
+      "slug": "guizhou",
+      "name": "贵州省",
+      "state": "fresh",
+      "portal_url": "https://zwfw.guizhou.gov.cn/",
+      "source_run": null,
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": true,
+      "templates": [
+        {
+          "material_name": "仲裁申请书仲裁申请书（示范文本）.pdf[示范文本下载]仲裁申请书样式.docx[格式文本下载]",
+          "text": "仲裁申请书仲裁申请书（示范文本）.pdf[示范文本下载]仲裁申请书样式.docx[格式文本下载]（仲裁申请书（示范文本）.pdf[示范文本下载]）",
+          "kind": "sample",
+          "url": "https://zwfw.guizhou.gov.cn/portalAdmin/pubApi/webdisk/doc?doc_id=0e2e86b7-a6fb-4345-9739-b8dd7d1a6acc&sig=1cb52253b1bed0cad722a320a242d3008e8cb51c6d53e8bb42798cdd255c3d40&fileName=%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E7%A4%BA%E8%8C%83%E6%96%87%E6%9C%AC%EF%BC%89.pdf"
+        },
+        {
+          "material_name": "仲裁申请书仲裁申请书（示范文本）.pdf[示范文本下载]仲裁申请书样式.docx[格式文本下载]",
+          "text": "仲裁申请书仲裁申请书（示范文本）.pdf[示范文本下载]仲裁申请书样式.docx[格式文本下载]（仲裁申请书样式.docx[格式文本下载]）",
+          "kind": "sample",
+          "url": "https://zwfw.guizhou.gov.cn/portalAdmin/pubApi/webdisk/doc?doc_id=ff0ff9c7-603b-4ac7-bd01-61000097b708&sig=c73324294e13678803b611d53ca46b476b018a5d54605e7d216f8d79ab5f51ae&fileName=%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%E6%A0%B7%E5%BC%8F.docx"
+        }
+      ],
+      "template_status": "downloads_detected",
+      "checked_at": "2026-10-06T18:03:12+08:00",
+      "theme": {
+        "motif": "黔地鼓楼",
+        "kind": "古塔",
+        "accent": "#63748a",
+        "wash": "#f1f5f9",
+        "art": "/province-art/guizhou.svg",
+        "miniArt": "/assets/province-art/guizhou.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": [
+        {
+          "name": "仲裁申请书仲裁申请书（示范文本）.pdf[示范文本下载]仲裁申请书样式.docx[格式文本下载]",
+          "kind": "sample",
+          "url": "https://zwfw.guizhou.gov.cn/portalAdmin/pubApi/webdisk/doc?doc_id=0e2e86b7-a6fb-4345-9739-b8dd7d1a6acc&sig=1cb52253b1bed0cad722a320a242d3008e8cb51c6d53e8bb42798cdd255c3d40&fileName=%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E7%A4%BA%E8%8C%83%E6%96%87%E6%9C%AC%EF%BC%89.pdf"
+        },
+        {
+          "name": "仲裁申请书仲裁申请书（示范文本）.pdf[示范文本下载]仲裁申请书样式.docx[格式文本下载]",
+          "kind": "sample",
+          "url": "https://zwfw.guizhou.gov.cn/portalAdmin/pubApi/webdisk/doc?doc_id=ff0ff9c7-603b-4ac7-bd01-61000097b708&sig=c73324294e13678803b611d53ca46b476b018a5d54605e7d216f8d79ab5f51ae&fileName=%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%E6%A0%B7%E5%BC%8F.docx"
+        }
+      ]
+    },
+    "yunnan": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "先交材料",
+          "text": "按下面的材料清单准备，交到官方指南指定的办理入口。",
+          "official_name": "申请",
+          "source_text": "当事人到仲裁机构现场提出申请或网上提出申请。同一争议事项只能申请一次。（但授权委托书、《仲裁申请书》副本、证据清单及有关证据材料需到仲裁机构现场提交）"
+        },
+        {
+          "title": "留意受理通知",
+          "text": "提交后留意通知；需要补材料时，按通知补齐。",
+          "official_name": "受理",
+          "source_text": "符合以下条件之一的，应当受理：1.企业、个体经济组织、民办非企业单位等组织与劳动者之间，以及机关、事业单位、社会团体与其建立劳动关系的劳动者之间，因确认劳动关系，订立、履行、变更、解除和终止劳动合同，工作时间、休息休假、社会保险、福利、培训以及劳动保护，劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；2.实施公务员法的机关与聘任制公务员之间、参照公务员法管理的机关（单位）与聘任工作人员之间因履行聘任合同发生的争议；3.事业单位与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；4.社会团体与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；5.军队文职人员用人单位与聘用制文职人员之间因履行聘用合同发生的争议；6.法律、法规规定由劳动人事争议仲裁委员会处理的其他争议。"
+        },
+        {
+          "title": "配合材料检查",
+          "text": "工作人员核对材料时，按要求说明或补充。",
+          "official_name": "审查",
+          "source_text": "仲裁员初审是否符合属于管辖范围、是否符合受理条件；仲裁机构主要负责人审批是否受理。"
+        },
+        {
+          "title": "查看办理结果",
+          "text": "查看官方发给你的办理结果，有疑问就向办理机构询问。",
+          "official_name": "决定",
+          "source_text": "发出受理或者不予受理通知书"
+        },
+        {
+          "title": "收好结果文书",
+          "text": "按通知收取文书，仔细看文书里的后续事项。",
+          "official_name": "送达",
+          "source_text": "网上送达或邮政专递送达或当事人到仲裁机构领取受理或者不予受理通知书。"
+        }
+      ],
+      "materials": [],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "材料清单请以官方 PDF 为准。",
+        "这份在线表格用于“云南省昆明市呈贡区”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "https://zwfw.yn.gov.cn/portal/#/work-service/guide-detail?id=88a80bdc8f6849fe9fc7f04a83a32f01&matterId=88a80bdc8f6849fe9fc7f04a83a32f01&flag=false",
+      "captured_at": "2026-10-06T18:03:22+08:00",
+      "workflow_detected": true,
+      "preferred_city": "昆明市",
+      "slug": "yunnan",
+      "name": "云南省",
+      "state": "fresh",
+      "portal_url": "https://zwfw.yn.gov.cn/",
+      "source_run": null,
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": true,
+      "templates": [],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-06T18:03:22+08:00",
+      "theme": {
+        "motif": "山茶花开",
+        "kind": "花卉",
+        "accent": "#a65869",
+        "wash": "#fbf0f3",
+        "art": "/province-art/yunnan.svg",
+        "miniArt": "/assets/province-art/yunnan.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": []
+    },
+    "xizang": {
+      "service_kind": "mediation",
+      "service_name": "劳动人事争议调解申请",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再查看办事指南。"
+        }
+      ],
+      "materials": [
+        "劳动人事争议申请书",
+        "用人单位营业执照",
+        "身份证"
+      ],
+      "notes": [
+        "这里办理调解。需要申请仲裁，请另找“仲裁申请”入口。",
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。"
+      ],
+      "source_url": "https://www.xzzwfw.gov.cn/index/serviceGuide?serviceOid=bb597aa16c1f286f016c1f57d0e012fc",
+      "captured_at": "2026-10-06T18:03:44+08:00",
+      "workflow_detected": false,
+      "preferred_city": "拉萨市",
+      "slug": "xizang",
+      "name": "西藏自治区",
+      "state": "fresh",
+      "portal_url": "https://www.xzzwfw.gov.cn/",
+      "source_run": null,
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [
+        {
+          "material_name": "劳动人事争议申请书",
+          "text": "材料名称必要性规格份数来源渠道材料规格受理标准材料下载劳动人事争议申请书必须原件或复印件2份申请人自备无无材料样表材料空表用人单位营业执照必须原件或复印件2份申请人自备无无材料样表材料空表身份证必须原件或复印件2份申请人自备无无材料样表材料空表",
+          "kind": "sample",
+          "url": ""
+        },
+        {
+          "material_name": "劳动人事争议申请书",
+          "text": "劳动人事争议申请书（材料样表）",
+          "kind": "sample",
+          "url": ""
+        }
+      ],
+      "template_status": "downloads_detected",
+      "checked_at": "2026-10-06T18:03:44+08:00",
+      "theme": {
+        "motif": "雪域宫墙",
+        "kind": "宫殿",
+        "accent": "#845f54",
+        "wash": "#faf3ec",
+        "art": "/province-art/xizang.svg",
+        "miniArt": "/assets/province-art/xizang.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": [
+        {
+          "name": "劳动人事争议申请书",
+          "kind": "sample",
+          "url": "https://www.xzzwfw.gov.cn/index/serviceGuide?serviceOid=bb597aa16c1f286f016c1f57d0e012fc"
+        },
+        {
+          "name": "劳动人事争议申请书",
+          "kind": "sample",
+          "url": "https://www.xzzwfw.gov.cn/index/serviceGuide?serviceOid=bb597aa16c1f286f016c1f57d0e012fc"
+        }
+      ]
+    },
+    "shaanxi": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请（劳动者）",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再查看办事指南。"
+        }
+      ],
+      "materials": [
+        "劳动人事争议仲裁申请书",
+        "身份证",
+        "授权委托书",
+        "劳动（人事）关系证明材料"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "这份在线表格用于“陕西省西安高新区”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1116393136356&siteCode=610000000000",
+      "captured_at": "2026-10-06T18:03:42+08:00",
+      "workflow_detected": false,
+      "preferred_city": "西安市",
+      "slug": "shaanxi",
+      "name": "陕西省",
+      "state": "fresh",
+      "portal_url": "https://zwfw.shaanxi.gov.cn/",
+      "source_run": null,
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [
+        {
+          "material_name": "劳动人事争议仲裁申请书",
+          "text": "劳动人事争议仲裁申请书（样表）",
+          "kind": "sample",
+          "url": ""
+        }
+      ],
+      "template_status": "downloads_detected",
+      "checked_at": "2026-10-06T18:03:42+08:00",
+      "theme": {
+        "motif": "长安城楼",
+        "kind": "宫殿",
+        "accent": "#8e664c",
+        "wash": "#f9f2e8",
+        "art": "/province-art/shaanxi.svg",
+        "miniArt": "/assets/province-art/shaanxi.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": [
+        {
+          "name": "劳动人事争议仲裁申请书",
+          "kind": "sample",
+          "url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1116393136356&siteCode=610000000000"
+        }
+      ]
+    },
+    "gansu": {
+      "service_kind": "unknown",
+      "service_name": "",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再查看办事指南。"
+        }
+      ],
+      "materials": [
+        "劳动人事争议仲裁申请书"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "这份在线表格用于“甘肃省白银市”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "https://zwfw.gansu.gov.cn/szgs/bszn/index.do?taskCode=11620400013911292N3002014302002&taskHandleItem=11620400013911292N300201430200201",
+      "captured_at": "2026-10-01T20:49:27+08:00",
+      "workflow_detected": false,
+      "preferred_city": "兰州市",
+      "slug": "gansu",
+      "name": "甘肃省",
+      "state": "historical",
+      "portal_url": "https://zwfw.gansu.gov.cn/",
+      "source_run": "20261001-191727-be84e8b9",
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [
+        {
+          "material_name": "仲裁申请书",
+          "text": "仲裁申请书（来源渠道材料类型材料形式纸质材料份数材料必要性材料下载纸质材料规格填报须知受理标准要求提供材料的依据备注）",
+          "kind": "document",
+          "url": ""
+        },
+        {
+          "material_name": "仲裁申请书",
+          "text": "仲裁申请书（材料下载）",
+          "kind": "document",
+          "url": ""
+        },
+        {
+          "material_name": "仲裁申请书",
+          "text": "仲裁申请书（申请人自备原件纸质和电子2必要空白表格示例样表A4无信息完整，请求明确，事实清楚，并由本人签字。《中华人民共和国劳动争议调解仲裁法》第二十八条申请人申请仲裁应当提交书面仲裁申请，并按照...无）",
+          "kind": "sample",
+          "url": ""
+        },
+        {
+          "material_name": "仲裁申请书",
+          "text": "仲裁申请书（空白表格示例样表）",
+          "kind": "sample",
+          "url": ""
+        },
+        {
+          "material_name": "仲裁申请书",
+          "text": "仲裁申请书（空白表格）",
+          "kind": "blank",
+          "url": ""
+        },
+        {
+          "material_name": "仲裁申请书",
+          "text": "仲裁申请书（示例样表）",
+          "kind": "sample",
+          "url": ""
+        }
+      ],
+      "template_status": "downloads_detected",
+      "checked_at": "2026-10-06T18:06:02+08:00",
+      "theme": {
+        "motif": "敦煌沙色",
+        "kind": "沙丘",
+        "accent": "#ab773c",
+        "wash": "#fdf5e5",
+        "art": "/province-art/gansu.svg",
+        "miniArt": "/assets/province-art/gansu.png"
+      },
+      "source_status": "沿用此前记录，需在官方页面核对",
+      "template_links": [
+        {
+          "name": "仲裁申请书",
+          "kind": "document",
+          "url": "https://zwfw.gansu.gov.cn/szgs/bszn/index.do?taskCode=11620400013911292N3002014302002&taskHandleItem=11620400013911292N300201430200201"
+        },
+        {
+          "name": "仲裁申请书",
+          "kind": "document",
+          "url": "https://zwfw.gansu.gov.cn/szgs/bszn/index.do?taskCode=11620400013911292N3002014302002&taskHandleItem=11620400013911292N300201430200201"
+        },
+        {
+          "name": "仲裁申请书",
+          "kind": "sample",
+          "url": "https://zwfw.gansu.gov.cn/szgs/bszn/index.do?taskCode=11620400013911292N3002014302002&taskHandleItem=11620400013911292N300201430200201"
+        },
+        {
+          "name": "仲裁申请书",
+          "kind": "sample",
+          "url": "https://zwfw.gansu.gov.cn/szgs/bszn/index.do?taskCode=11620400013911292N3002014302002&taskHandleItem=11620400013911292N300201430200201"
+        },
+        {
+          "name": "仲裁申请书",
+          "kind": "blank",
+          "url": "https://zwfw.gansu.gov.cn/szgs/bszn/index.do?taskCode=11620400013911292N3002014302002&taskHandleItem=11620400013911292N300201430200201"
+        },
+        {
+          "name": "仲裁申请书",
+          "kind": "sample",
+          "url": "https://zwfw.gansu.gov.cn/szgs/bszn/index.do?taskCode=11620400013911292N3002014302002&taskHandleItem=11620400013911292N300201430200201"
+        }
+      ]
+    },
+    "qinghai": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "西宁市城东区",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再查看办事指南。"
+        }
+      ],
+      "materials": [
+        "劳动人事争议仲裁申请书"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。"
+      ],
+      "source_url": "https://ywtb.qhzwfw.gov.cn/matterbszndetail.html?taskcode=11630102710484898Q4002014302002",
+      "captured_at": "2026-10-07T15:03:17+08:00",
+      "workflow_detected": false,
+      "preferred_city": "西宁市",
+      "slug": "qinghai",
+      "name": "青海省",
+      "state": "fresh",
+      "portal_url": "https://ywtb.qhzwfw.gov.cn/",
+      "source_run": "20261001-191727-be84e8b9",
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": true,
+      "templates": [],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-07T14:57:18.599426+08:00",
+      "openclaw_task": "templates\\_reports\\openclaw-tasks\\20261007-130607-2c6533a3\\qinghai",
+      "openclaw_attempt": {
+        "run": "20261007-130607-2c6533a3",
+        "state": "acquired",
+        "status": {
+          "site_opened": true,
+          "guide_found": true,
+          "template_downloaded": false,
+          "fill_verified": false
+        },
+        "error": "",
+        "model_reason": "确认当前公开办理地区选择",
+        "url": "https://ywtb.qhzwfw.gov.cn/matterbszndetail.html?taskcode=11630102710484898Q4002014302002",
+        "updated_at": "2026-10-07T14:57:18.599426+08:00",
+        "official_pdf_fallback": null
+      },
+      "theme": {
+        "motif": "青海湖波",
+        "kind": "湖泊",
+        "accent": "#41779d",
+        "wash": "#eef6fc",
+        "art": "/province-art/qinghai.svg",
+        "miniArt": "/assets/province-art/qinghai.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": []
+    },
+    "ningxia": {
+      "service_kind": "unknown",
+      "service_name": "",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再打开办事指南。",
+          "source_text": "",
+          "official_name": ""
+        }
+      ],
+      "materials": [],
+      "notes": [
+        "这里还没有取得可确认的办理步骤，请先查看官方页面。",
+        "先看清这个入口的办理地区，再填材料。",
+        "签名处留给本人手签。材料份数按当前官方指南准备。",
+        "当前可生成文书来自“宁夏回族自治区”。它不因选择别的办事指南而自动变成全省统一模板。",
+        "优先查询银川市；目前记录的入口未确认是该市的指南。"
+      ],
+      "source_url": null,
+      "captured_at": null,
+      "workflow_detected": false,
+      "preferred_city": "银川市",
+      "slug": "ningxia",
+      "name": "宁夏回族自治区",
+      "state": "not_detected",
+      "portal_url": "https://zwfw.nx.gov.cn/",
+      "source_run": "20261001-191727-be84e8b9",
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [],
+      "template_status": "本次没有检测到文书模板",
+      "checked_at": "2026-10-06T18:05:18+08:00",
+      "openclaw_attempt": {
+        "run": "20261007-130607-2c6533a3",
+        "state": "stalled",
+        "status": {
+          "site_opened": true,
+          "guide_found": false,
+          "template_downloaded": false,
+          "fill_verified": false
+        },
+        "error": "已打开银川市和首个区县兴庆区的门户，检查公开目录及公共服务分页，本次仍未定位劳动仲裁申请指南；登记的官方PDF返回404。此结果不表示当地没有仲裁服务。",
+        "model_reason": "当前页面显示的是“集成办服务”和“办事服务”的搜索结果，但具体事项列表需要向下滚动查看。需要找到劳动人事争议仲裁相关的办事指南，而不是工伤/劳动能力鉴定事项。",
+        "url": "https://zwfw.nx.gov.cn/bmsx.jsp?wbtreeid=6253&searchtext=&deptId=YCS124&sxlx=GF&wsbslistCURURI=5251823986B228B7523EA86BE44F20E5&wsbslistKEYTYPES=12%2C12&actiontype=NextPage&wsbslistORDER=ASC&wsbslistORDERKEY=baseprocode&wsbslistCountNo=20&wsbslistNOWPAGE=&wsbslistPAGE=40&wsbslistrowCount=63",
+        "updated_at": "2026-10-07T16:36:21.975776+08:00",
+        "official_pdf_fallback": {
+          "state": "failed",
+          "evidence": "templates\\_reports\\openclaw-tasks\\20261007-130607-2c6533a3\\official-pdf-recovery\\ningxia"
+        }
+      },
+      "openclaw_task": "templates\\_reports\\openclaw-tasks\\20261007-130607-2c6533a3\\ningxia",
+      "theme": {
+        "motif": "塞上枸杞",
+        "kind": "花卉",
+        "accent": "#8f624c",
+        "wash": "#f9f2ec",
+        "art": "/province-art/ningxia.svg",
+        "miniArt": "/assets/province-art/ningxia.png"
+      },
+      "source_status": "尚未取得可确认的办理步骤",
+      "template_links": []
+    },
+    "xinjiang": {
+      "service_kind": "arbitration",
+      "service_name": "劳动人事争议仲裁申请",
+      "scope": "官方页面未标明地区",
+      "steps": [
+        {
+          "title": "先打开官方入口",
+          "text": "搜索劳动仲裁，选择实际办理地区，再查看办事指南。"
+        }
+      ],
+      "materials": [
+        "劳动人事争议仲裁申请书"
+      ],
+      "notes": [
+        "先确认在哪里办理，再填材料。",
+        "签名请本人手写。材料带几份，请看官方指南。",
+        "材料清单请以官方 PDF 为准。",
+        "这份在线表格用于“新疆维吾尔自治区”。在其他地区办理，请先问当地窗口能否使用。"
+      ],
+      "source_url": "https://zwfw.xinjiang.gov.cn/dgov-service-guide/?itemId=11650000564385946A200201430200201&areaCode=650000000000&loginAccessToken=null#office-materials",
+      "captured_at": "2026-10-06T18:05:48+08:00",
+      "workflow_detected": false,
+      "preferred_city": "乌鲁木齐市",
+      "slug": "xinjiang",
+      "name": "新疆维吾尔自治区",
+      "state": "fresh",
+      "portal_url": "https://zwfw.xinjiang.gov.cn/",
+      "source_run": null,
+      "source_policy": "portal_first_capital_first_first_visible_district",
+      "capital_confirmed": false,
+      "templates": [
+        {
+          "material_name": "劳动人事争议仲裁申请书",
+          "text": "劳动人事争议仲裁申请书（空表下载）",
+          "kind": "blank",
+          "url": ""
+        },
+        {
+          "material_name": "劳动人事争议仲裁申请书",
+          "text": "劳动人事争议仲裁申请书（样表下载）",
+          "kind": "sample",
+          "url": ""
+        }
+      ],
+      "template_status": "downloads_detected",
+      "checked_at": "2026-10-06T18:05:48+08:00",
+      "theme": {
+        "motif": "天山果香",
+        "kind": "果盘",
+        "accent": "#728044",
+        "wash": "#f7f8eb",
+        "art": "/province-art/xinjiang.svg",
+        "miniArt": "/assets/province-art/xinjiang.png"
+      },
+      "source_status": "本次已打开核对",
+      "template_links": [
+        {
+          "name": "劳动人事争议仲裁申请书",
+          "kind": "blank",
+          "url": "https://zwfw.xinjiang.gov.cn/dgov-service-guide/?itemId=11650000564385946A200201430200201&areaCode=650000000000&loginAccessToken=null#office-materials"
+        },
+        {
+          "name": "劳动人事争议仲裁申请书",
+          "kind": "sample",
+          "url": "https://zwfw.xinjiang.gov.cn/dgov-service-guide/?itemId=11650000564385946A200201430200201&areaCode=650000000000&loginAccessToken=null#office-materials"
+        }
+      ]
+    }
+  }
+}
