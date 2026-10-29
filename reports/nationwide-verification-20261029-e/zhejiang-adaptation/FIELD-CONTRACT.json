@@ -1,0 +1,73 @@
+{
+  "adapter": "zhejiang_own_worker_oct29e_v1",
+  "applicant_mode": "worker_only",
+  "data_fields": {
+    "application": [
+      "applicantName",
+      "applicationDate",
+      "birthDate",
+      "committeeName",
+      "companyContact",
+      "companyContactPhone",
+      "copyCount",
+      "factsReason",
+      "gender",
+      "householdType",
+      "idAddress",
+      "idNumber",
+      "legalRepName",
+      "legalRepPhone",
+      "legalRepPosition",
+      "mailingAddress",
+      "nationality",
+      "phone",
+      "registeredAddress",
+      "requests",
+      "respondentName",
+      "socialCreditCode",
+      "workAddress"
+    ],
+    "evidence": [
+      "caseNumber",
+      "committeeName",
+      "copyCount",
+      "evidenceList",
+      "submitDate"
+    ],
+    "evidence_item": [
+      "name",
+      "pageCount",
+      "purpose",
+      "source"
+    ]
+  },
+  "limits": {
+    "ordinary": 300,
+    "factsReason": 12000,
+    "requests": 4,
+    "request": 1200,
+    "evidenceList": 40,
+    "evidence_name": 300,
+    "evidence_source": 300,
+    "evidence_pageCount": 300,
+    "evidence_purpose": 1200,
+    "copyCount_min": 1,
+    "copyCount_max": 30
+  },
+  "household_options": [
+    "本省非农业户口",
+    "本省农业户口",
+    "外省非农业户口",
+    "外省非农业户口",
+    "港澳台人员",
+    "外籍人员"
+  ],
+  "household_ambiguity": "Duplicate original 外省非农业户口 is rejected; blank remains blank; no inferred agricultural option.",
+  "ordinary_type": "string; retained without trimming",
+  "copyCount": "integer1..30 or decimal ASCII string1..30 or empty/None; bool and float rejected",
+  "unknown_keys": "reject",
+  "over_capacity": "reject without clipping",
+  "signatures": "always blank",
+  "employer_section": "removed from filled worker output only; original unchanged",
+  "date_and_copy_omitted": "no invented date or count"
+}

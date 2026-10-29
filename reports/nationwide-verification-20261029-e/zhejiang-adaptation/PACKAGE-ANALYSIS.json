@@ -1,0 +1,1040 @@
+[
+  {
+    "region_code": "330111",
+    "source_id": "16f67bbbcf7b124948381309",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=31ce6363-7379-40c0-8454-f0715785e193",
+    "material_id": "BAFCD2B89394AA02DD2914CA0720DAE0",
+    "kind": "application",
+    "source_file": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/originals/blank/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+    "source_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+    "document_xml_sha256": "8746c000c552afabe0bd7cfb1bfd983c6dadf155571e7d229cafffd42cd40e53",
+    "tables": [
+      {
+        "rows": 23,
+        "columns": 5,
+        "row_structure": [
+          {
+            "row": 0,
+            "cell_text": [
+              "申请人信息"
+            ]
+          },
+          {
+            "row": 1,
+            "cell_text": [
+              "姓   名",
+              "",
+              "出生日期",
+              ""
+            ]
+          },
+          {
+            "row": 2,
+            "cell_text": [
+              "性   别",
+              "",
+              "民    族",
+              ""
+            ]
+          },
+          {
+            "row": 3,
+            "cell_text": [
+              "证件号码",
+              "",
+              "手机号码",
+              ""
+            ]
+          },
+          {
+            "row": 4,
+            "cell_text": [
+              "户籍性质",
+              "本省非农业户口 本省农业户口 外省非农业户口\n外省非农业户口 港澳台人员   外籍人员"
+            ]
+          },
+          {
+            "row": 5,
+            "cell_text": [
+              "身份证住址",
+              ""
+            ]
+          },
+          {
+            "row": 6,
+            "cell_text": [
+              "被申请人信息"
+            ]
+          },
+          {
+            "row": 7,
+            "cell_text": [
+              "单位名称",
+              ""
+            ]
+          },
+          {
+            "row": 8,
+            "cell_text": [
+              "统一社会信用代码",
+              ""
+            ]
+          },
+          {
+            "row": 9,
+            "cell_text": [
+              "注册地址",
+              ""
+            ]
+          },
+          {
+            "row": 10,
+            "cell_text": [
+              "单位通讯地址",
+              ""
+            ]
+          },
+          {
+            "row": 11,
+            "cell_text": [
+              "工作地址\n（合同履行地）",
+              ""
+            ]
+          },
+          {
+            "row": 12,
+            "cell_text": [
+              "法定代表人\n（负责人）",
+              "",
+              "联系电话",
+              ""
+            ]
+          },
+          {
+            "row": 13,
+            "cell_text": [
+              "法定代表人\n（负责人）",
+              "",
+              "职    务",
+              ""
+            ]
+          },
+          {
+            "row": 14,
+            "cell_text": [
+              "单位联系人",
+              "",
+              "联系电话",
+              ""
+            ]
+          },
+          {
+            "row": 15,
+            "cell_text": [
+              "仲裁请求：（仲裁请求应分项列明，有明确的事项、金额（计算公式）和期间）"
+            ]
+          },
+          {
+            "row": 16,
+            "cell_text": [
+              "1．"
+            ]
+          },
+          {
+            "row": 17,
+            "cell_text": [
+              "2．"
+            ]
+          },
+          {
+            "row": 18,
+            "cell_text": [
+              "3．"
+            ]
+          },
+          {
+            "row": 19,
+            "cell_text": [
+              "……"
+            ]
+          },
+          {
+            "row": 20,
+            "cell_text": [
+              "事实及理由：（事实及理由应简明扼要，围绕仲裁请求叙述）"
+            ]
+          },
+          {
+            "row": 21,
+            "cell_text": [
+              ""
+            ]
+          },
+          {
+            "row": 22,
+            "cell_text": [
+              "此致\n敬礼\n                                劳动人事争议仲裁委员会\n　　　　　　　　　　  　　　　  　　　  申请人：\n　　　　　　　　　　   　 　            年   月    日\n附：申请书副本      份。 \n注：1.申请书应用黑色钢笔、中性笔书写或打印。\n2.申请人应同时提交身份证复印件或其他身份证件。\n3.事实与理由部分空格不够用时，可用A4纸续加中页。\n4.申请书副本份数，应按对方当事人人数提交。"
+            ]
+          }
+        ]
+      },
+      {
+        "rows": 23,
+        "columns": 11,
+        "row_structure": [
+          {
+            "row": 0,
+            "cell_text": [
+              "申请人信息"
+            ]
+          },
+          {
+            "row": 1,
+            "cell_text": [
+              "单位名称",
+              ""
+            ]
+          },
+          {
+            "row": 2,
+            "cell_text": [
+              "统一社会信用代码",
+              ""
+            ]
+          },
+          {
+            "row": 3,
+            "cell_text": [
+              "注册地址",
+              ""
+            ]
+          },
+          {
+            "row": 4,
+            "cell_text": [
+              "单位通讯地址",
+              ""
+            ]
+          },
+          {
+            "row": 5,
+            "cell_text": [
+              "法定代表人\n（负责人）",
+              "",
+              "联系电话",
+              ""
+            ]
+          },
+          {
+            "row": 6,
+            "cell_text": [
+              "法定代表人\n（负责人）",
+              "",
+              "职    务",
+              ""
+            ]
+          },
+          {
+            "row": 7,
+            "cell_text": [
+              "委托代理人",
+              "",
+              "联系电话",
+              ""
+            ]
+          },
+          {
+            "row": 8,
+            "cell_text": [
+              "被申请人信息"
+            ]
+          },
+          {
+            "row": 9,
+            "cell_text": [
+              "姓名",
+              "",
+              "出生日期",
+              ""
+            ]
+          },
+          {
+            "row": 10,
+            "cell_text": [
+              "性别",
+              "",
+              "民族",
+              "",
+              "证件号码",
+              ""
+            ]
+          },
+          {
+            "row": 11,
+            "cell_text": [
+              "户籍\n性质",
+              "本省非农业户口 本省农业户口\n外省非农业户口 外省非农业户口\n港澳台人员     外籍人员",
+              "手机\n号码",
+              ""
+            ]
+          },
+          {
+            "row": 12,
+            "cell_text": [
+              "身份证住址",
+              ""
+            ]
+          },
+          {
+            "row": 13,
+            "cell_text": [
+              "通讯地址",
+              ""
+            ]
+          },
+          {
+            "row": 14,
+            "cell_text": [
+              "仲裁请求：（仲裁请求应分项列明，有明确的事项、金额（计算公式）和期间）"
+            ]
+          },
+          {
+            "row": 15,
+            "cell_text": [
+              "1．"
+            ]
+          },
+          {
+            "row": 16,
+            "cell_text": [
+              "2．"
+            ]
+          },
+          {
+            "row": 17,
+            "cell_text": [
+              "3．"
+            ]
+          },
+          {
+            "row": 18,
+            "cell_text": [
+              "……"
+            ]
+          },
+          {
+            "row": 19,
+            "cell_text": [
+              ""
+            ]
+          },
+          {
+            "row": 20,
+            "cell_text": [
+              "事实及理由：（事实及理由应简明扼要，围绕仲裁请求叙述）"
+            ]
+          },
+          {
+            "row": 21,
+            "cell_text": [
+              ""
+            ]
+          },
+          {
+            "row": 22,
+            "cell_text": [
+              "此致\n敬礼\n\n                                   劳动人事争议仲裁委员会\n申请人： （盖章）\n                  年   月   日\n附：申请书副本      份。 \n\n注：1.申请书应用黑色钢笔、中性笔书写或打印。\n2.申请人应同时提交营业执照复印件、法定代表人身份证明等。\n3.事实与理由部分空格不够用时，可用A4纸续加中页。\n4.申请书副本份数，应按对方当事人人数提交。"
+            ]
+          }
+        ]
+      }
+    ],
+    "top_level_paragraphs": [
+      "劳动人事争议仲裁申请书",
+      "（用于劳动者申请）",
+      "",
+      "劳动人事争议仲裁申请书",
+      "（用于用人单位申请）",
+      ""
+    ],
+    "observed_application_modes": [
+      "worker",
+      "employer"
+    ],
+    "fill_mode": "worker_only",
+    "word_visual_review": "PASS"
+  },
+  {
+    "region_code": "330111",
+    "source_id": "16f67bbbcf7b124948381309",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=31ce6363-7379-40c0-8454-f0715785e193",
+    "material_id": "B55E6CC7851FBC4F02F8DB9F4595191B",
+    "kind": "evidence",
+    "source_file": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/originals/blank/872DFF90A8578907CB947197A784AA48.docx",
+    "source_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+    "document_xml_sha256": "fcf17a70c0136d7f2aa203162595cdfb7b267c02fd80303362cda248942d4b19",
+    "tables": [
+      {
+        "rows": 13,
+        "columns": 6,
+        "row_structure": [
+          {
+            "row": 0,
+            "cell_text": [
+              "案号",
+              "浙×劳人仲案（   ）  号",
+              "证据副本数",
+              ""
+            ]
+          },
+          {
+            "row": 1,
+            "cell_text": [
+              "编号",
+              "证据名称",
+              "页 数",
+              "来 源",
+              "证 明 目 的"
+            ]
+          },
+          {
+            "row": 2,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 3,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 4,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 5,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 6,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 7,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 8,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 9,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 10,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 11,
+            "cell_text": [
+              "证据提交人签名",
+              "",
+              "证据提交日期",
+              ""
+            ]
+          },
+          {
+            "row": 12,
+            "cell_text": [
+              "证据接收人签名",
+              "",
+              "证据接收日期",
+              ""
+            ]
+          }
+        ]
+      }
+    ],
+    "top_level_paragraphs": [
+      "×××劳动人事争议仲裁委员会",
+      "证据清单",
+      "",
+      "本表一式     份提交仲裁委。证据原件请提交人妥善保管，在开庭时提交核对。"
+    ],
+    "observed_application_modes": [],
+    "fill_mode": "independent_evidence",
+    "word_visual_review": "PASS"
+  },
+  {
+    "region_code": "330182",
+    "source_id": "f6487b8d118bdc3289baad17",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ed48d6e4-e7ee-433d-97aa-b1352d1fb341",
+    "material_id": "46ACCB2DF05B1F8C1F581602D1F346E8",
+    "kind": "application",
+    "source_file": "reports/nationwide-verification-20261029-e/zhejiang/jiande/originals/blank/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+    "source_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+    "document_xml_sha256": "8746c000c552afabe0bd7cfb1bfd983c6dadf155571e7d229cafffd42cd40e53",
+    "tables": [
+      {
+        "rows": 23,
+        "columns": 5,
+        "row_structure": [
+          {
+            "row": 0,
+            "cell_text": [
+              "申请人信息"
+            ]
+          },
+          {
+            "row": 1,
+            "cell_text": [
+              "姓   名",
+              "",
+              "出生日期",
+              ""
+            ]
+          },
+          {
+            "row": 2,
+            "cell_text": [
+              "性   别",
+              "",
+              "民    族",
+              ""
+            ]
+          },
+          {
+            "row": 3,
+            "cell_text": [
+              "证件号码",
+              "",
+              "手机号码",
+              ""
+            ]
+          },
+          {
+            "row": 4,
+            "cell_text": [
+              "户籍性质",
+              "本省非农业户口 本省农业户口 外省非农业户口\n外省非农业户口 港澳台人员   外籍人员"
+            ]
+          },
+          {
+            "row": 5,
+            "cell_text": [
+              "身份证住址",
+              ""
+            ]
+          },
+          {
+            "row": 6,
+            "cell_text": [
+              "被申请人信息"
+            ]
+          },
+          {
+            "row": 7,
+            "cell_text": [
+              "单位名称",
+              ""
+            ]
+          },
+          {
+            "row": 8,
+            "cell_text": [
+              "统一社会信用代码",
+              ""
+            ]
+          },
+          {
+            "row": 9,
+            "cell_text": [
+              "注册地址",
+              ""
+            ]
+          },
+          {
+            "row": 10,
+            "cell_text": [
+              "单位通讯地址",
+              ""
+            ]
+          },
+          {
+            "row": 11,
+            "cell_text": [
+              "工作地址\n（合同履行地）",
+              ""
+            ]
+          },
+          {
+            "row": 12,
+            "cell_text": [
+              "法定代表人\n（负责人）",
+              "",
+              "联系电话",
+              ""
+            ]
+          },
+          {
+            "row": 13,
+            "cell_text": [
+              "法定代表人\n（负责人）",
+              "",
+              "职    务",
+              ""
+            ]
+          },
+          {
+            "row": 14,
+            "cell_text": [
+              "单位联系人",
+              "",
+              "联系电话",
+              ""
+            ]
+          },
+          {
+            "row": 15,
+            "cell_text": [
+              "仲裁请求：（仲裁请求应分项列明，有明确的事项、金额（计算公式）和期间）"
+            ]
+          },
+          {
+            "row": 16,
+            "cell_text": [
+              "1．"
+            ]
+          },
+          {
+            "row": 17,
+            "cell_text": [
+              "2．"
+            ]
+          },
+          {
+            "row": 18,
+            "cell_text": [
+              "3．"
+            ]
+          },
+          {
+            "row": 19,
+            "cell_text": [
+              "……"
+            ]
+          },
+          {
+            "row": 20,
+            "cell_text": [
+              "事实及理由：（事实及理由应简明扼要，围绕仲裁请求叙述）"
+            ]
+          },
+          {
+            "row": 21,
+            "cell_text": [
+              ""
+            ]
+          },
+          {
+            "row": 22,
+            "cell_text": [
+              "此致\n敬礼\n                                劳动人事争议仲裁委员会\n　　　　　　　　　　  　　　　  　　　  申请人：\n　　　　　　　　　　   　 　            年   月    日\n附：申请书副本      份。 \n注：1.申请书应用黑色钢笔、中性笔书写或打印。\n2.申请人应同时提交身份证复印件或其他身份证件。\n3.事实与理由部分空格不够用时，可用A4纸续加中页。\n4.申请书副本份数，应按对方当事人人数提交。"
+            ]
+          }
+        ]
+      },
+      {
+        "rows": 23,
+        "columns": 11,
+        "row_structure": [
+          {
+            "row": 0,
+            "cell_text": [
+              "申请人信息"
+            ]
+          },
+          {
+            "row": 1,
+            "cell_text": [
+              "单位名称",
+              ""
+            ]
+          },
+          {
+            "row": 2,
+            "cell_text": [
+              "统一社会信用代码",
+              ""
+            ]
+          },
+          {
+            "row": 3,
+            "cell_text": [
+              "注册地址",
+              ""
+            ]
+          },
+          {
+            "row": 4,
+            "cell_text": [
+              "单位通讯地址",
+              ""
+            ]
+          },
+          {
+            "row": 5,
+            "cell_text": [
+              "法定代表人\n（负责人）",
+              "",
+              "联系电话",
+              ""
+            ]
+          },
+          {
+            "row": 6,
+            "cell_text": [
+              "法定代表人\n（负责人）",
+              "",
+              "职    务",
+              ""
+            ]
+          },
+          {
+            "row": 7,
+            "cell_text": [
+              "委托代理人",
+              "",
+              "联系电话",
+              ""
+            ]
+          },
+          {
+            "row": 8,
+            "cell_text": [
+              "被申请人信息"
+            ]
+          },
+          {
+            "row": 9,
+            "cell_text": [
+              "姓名",
+              "",
+              "出生日期",
+              ""
+            ]
+          },
+          {
+            "row": 10,
+            "cell_text": [
+              "性别",
+              "",
+              "民族",
+              "",
+              "证件号码",
+              ""
+            ]
+          },
+          {
+            "row": 11,
+            "cell_text": [
+              "户籍\n性质",
+              "本省非农业户口 本省农业户口\n外省非农业户口 外省非农业户口\n港澳台人员     外籍人员",
+              "手机\n号码",
+              ""
+            ]
+          },
+          {
+            "row": 12,
+            "cell_text": [
+              "身份证住址",
+              ""
+            ]
+          },
+          {
+            "row": 13,
+            "cell_text": [
+              "通讯地址",
+              ""
+            ]
+          },
+          {
+            "row": 14,
+            "cell_text": [
+              "仲裁请求：（仲裁请求应分项列明，有明确的事项、金额（计算公式）和期间）"
+            ]
+          },
+          {
+            "row": 15,
+            "cell_text": [
+              "1．"
+            ]
+          },
+          {
+            "row": 16,
+            "cell_text": [
+              "2．"
+            ]
+          },
+          {
+            "row": 17,
+            "cell_text": [
+              "3．"
+            ]
+          },
+          {
+            "row": 18,
+            "cell_text": [
+              "……"
+            ]
+          },
+          {
+            "row": 19,
+            "cell_text": [
+              ""
+            ]
+          },
+          {
+            "row": 20,
+            "cell_text": [
+              "事实及理由：（事实及理由应简明扼要，围绕仲裁请求叙述）"
+            ]
+          },
+          {
+            "row": 21,
+            "cell_text": [
+              ""
+            ]
+          },
+          {
+            "row": 22,
+            "cell_text": [
+              "此致\n敬礼\n\n                                   劳动人事争议仲裁委员会\n申请人： （盖章）\n                  年   月   日\n附：申请书副本      份。 \n\n注：1.申请书应用黑色钢笔、中性笔书写或打印。\n2.申请人应同时提交营业执照复印件、法定代表人身份证明等。\n3.事实与理由部分空格不够用时，可用A4纸续加中页。\n4.申请书副本份数，应按对方当事人人数提交。"
+            ]
+          }
+        ]
+      }
+    ],
+    "top_level_paragraphs": [
+      "劳动人事争议仲裁申请书",
+      "（用于劳动者申请）",
+      "",
+      "劳动人事争议仲裁申请书",
+      "（用于用人单位申请）",
+      ""
+    ],
+    "observed_application_modes": [
+      "worker",
+      "employer"
+    ],
+    "fill_mode": "worker_only",
+    "word_visual_review": "PASS"
+  },
+  {
+    "region_code": "330182",
+    "source_id": "f6487b8d118bdc3289baad17",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ed48d6e4-e7ee-433d-97aa-b1352d1fb341",
+    "material_id": "F7FF66119F2DDB743C0370239FABF58E",
+    "kind": "evidence",
+    "source_file": "reports/nationwide-verification-20261029-e/zhejiang/jiande/originals/blank/872DFF90A8578907CB947197A784AA48.docx",
+    "source_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+    "document_xml_sha256": "fcf17a70c0136d7f2aa203162595cdfb7b267c02fd80303362cda248942d4b19",
+    "tables": [
+      {
+        "rows": 13,
+        "columns": 6,
+        "row_structure": [
+          {
+            "row": 0,
+            "cell_text": [
+              "案号",
+              "浙×劳人仲案（   ）  号",
+              "证据副本数",
+              ""
+            ]
+          },
+          {
+            "row": 1,
+            "cell_text": [
+              "编号",
+              "证据名称",
+              "页 数",
+              "来 源",
+              "证 明 目 的"
+            ]
+          },
+          {
+            "row": 2,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 3,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 4,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 5,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 6,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 7,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 8,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 9,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 10,
+            "cell_text": [
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          },
+          {
+            "row": 11,
+            "cell_text": [
+              "证据提交人签名",
+              "",
+              "证据提交日期",
+              ""
+            ]
+          },
+          {
+            "row": 12,
+            "cell_text": [
+              "证据接收人签名",
+              "",
+              "证据接收日期",
+              ""
+            ]
+          }
+        ]
+      }
+    ],
+    "top_level_paragraphs": [
+      "×××劳动人事争议仲裁委员会",
+      "证据清单",
+      "",
+      "本表一式     份提交仲裁委。证据原件请提交人妥善保管，在开庭时提交核对。"
+    ],
+    "observed_application_modes": [],
+    "fill_mode": "independent_evidence",
+    "word_visual_review": "PASS"
+  }
+]

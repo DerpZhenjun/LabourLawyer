@@ -1,0 +1,78 @@
+[
+  {
+    "region_code": "330111",
+    "kind": "application",
+    "source_id": "16f67bbbcf7b124948381309",
+    "source_file": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/originals/blank/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+    "source_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+    "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/generated/330111-application.docx",
+    "sha256": "eea5aa044d5d3bb3a36b224344217e244224164b8b5162fe9ecf1782caa9d123",
+    "changed_package_parts": [
+      "word/document.xml"
+    ],
+    "synthetic_only": true,
+    "visual_qa": "PASS",
+    "template_id": "BAFCD2B89394AA02DD2914CA0720DAE0:blank",
+    "service_code": "11330183002506152E4002014302002",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=31ce6363-7379-40c0-8454-f0715785e193",
+    "adapter": "zhejiang_own_worker_oct29e_v1",
+    "source_manifest_sha256": "b260a7385135e471a05d102c052e3eabff1dd8c67f611b94b4d65b0d30e3e0e7"
+  },
+  {
+    "region_code": "330111",
+    "kind": "evidence",
+    "source_id": "16f67bbbcf7b124948381309",
+    "source_file": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/originals/blank/872DFF90A8578907CB947197A784AA48.docx",
+    "source_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+    "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/generated/330111-evidence.docx",
+    "sha256": "430ef631022c586809b131c762f9fd57341a94d231458f8a49ad65d67bb56d4e",
+    "changed_package_parts": [
+      "word/document.xml"
+    ],
+    "synthetic_only": true,
+    "visual_qa": "PASS",
+    "template_id": "B55E6CC7851FBC4F02F8DB9F4595191B:blank",
+    "service_code": "11330183002506152E4002014302002",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=31ce6363-7379-40c0-8454-f0715785e193",
+    "adapter": "zhejiang_own_worker_oct29e_v1",
+    "source_manifest_sha256": "b260a7385135e471a05d102c052e3eabff1dd8c67f611b94b4d65b0d30e3e0e7"
+  },
+  {
+    "region_code": "330182",
+    "kind": "application",
+    "source_id": "f6487b8d118bdc3289baad17",
+    "source_file": "reports/nationwide-verification-20261029-e/zhejiang/jiande/originals/blank/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+    "source_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+    "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/generated/330182-application.docx",
+    "sha256": "eea5aa044d5d3bb3a36b224344217e244224164b8b5162fe9ecf1782caa9d123",
+    "changed_package_parts": [
+      "word/document.xml"
+    ],
+    "synthetic_only": true,
+    "visual_qa": "PASS",
+    "template_id": "46ACCB2DF05B1F8C1F581602D1F346E8:blank",
+    "service_code": "1133018205366747424002014302002",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ed48d6e4-e7ee-433d-97aa-b1352d1fb341",
+    "adapter": "zhejiang_own_worker_oct29e_v1",
+    "source_manifest_sha256": "20f7c2e7b8efa5058c39439f1079e309da2c3922aded10275a4514bf553a542c"
+  },
+  {
+    "region_code": "330182",
+    "kind": "evidence",
+    "source_id": "f6487b8d118bdc3289baad17",
+    "source_file": "reports/nationwide-verification-20261029-e/zhejiang/jiande/originals/blank/872DFF90A8578907CB947197A784AA48.docx",
+    "source_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+    "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/generated/330182-evidence.docx",
+    "sha256": "430ef631022c586809b131c762f9fd57341a94d231458f8a49ad65d67bb56d4e",
+    "changed_package_parts": [
+      "word/document.xml"
+    ],
+    "synthetic_only": true,
+    "visual_qa": "PASS",
+    "template_id": "F7FF66119F2DDB743C0370239FABF58E:blank",
+    "service_code": "1133018205366747424002014302002",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ed48d6e4-e7ee-433d-97aa-b1352d1fb341",
+    "adapter": "zhejiang_own_worker_oct29e_v1",
+    "source_manifest_sha256": "20f7c2e7b8efa5058c39439f1079e309da2c3922aded10275a4514bf553a542c"
+  }
+]

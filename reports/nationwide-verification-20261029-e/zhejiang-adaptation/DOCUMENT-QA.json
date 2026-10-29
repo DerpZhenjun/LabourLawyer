@@ -1,0 +1,245 @@
+{
+  "scope": "Offline own-source Word visual QA only; native product browser acceptance and publication remain separate",
+  "status": "PASS",
+  "checked_at": "2026-10-29T14:32:38.920149+00:00",
+  "adapter": "zhejiang_own_worker_oct29e_v1",
+  "original_documents": 4,
+  "original_pages": 14,
+  "generated_documents": 4,
+  "generated_pages": 8,
+  "pages": 22,
+  "files": [
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330111-generated-application/page-1.png",
+      "sha256": "7c6590d6cc181d743f666b33ae46d6a6eb5620b6047db85668ee311e98db62e6",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330111-generated-application/page-2.png",
+      "sha256": "c08fac32f2642af3cc06ad81bbb8145054b713f11034cc4239404e918602e9a8",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330111-generated-application/page-3.png",
+      "sha256": "502a52ba6ddae039c5f00ba01234feec7eb40d8721e60ac5accfd20dd77710ab",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330111-generated-evidence/page-1.png",
+      "sha256": "807d413c35a37ed5d0e761711ccd7290a2cb55bff10ea57118a0bf14091e0b5c",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330111-original-application/page-1.png",
+      "sha256": "6fe7a8f412aafe8fec9788c8beb88bc6be661d6a780c5d6d0596197bd0026a55",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330111-original-application/page-2.png",
+      "sha256": "7cd28ddbe7dd2f4ecf06f003edb58bddbf7daab99643bc46e5b8e180ac37f36e",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330111-original-application/page-3.png",
+      "sha256": "1186f99d39032b1984d91f7243a0256f8cc81d6a3308c3cc579611df2623c98d",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330111-original-application/page-4.png",
+      "sha256": "1fe16f60c122e134bf6e2fb248ff0dce9ac84c684b9ead9b57e5ff4942763446",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330111-original-application/page-5.png",
+      "sha256": "f9b9a3356a66ce9fea3af8fe68f6b973e30b37167cd6e667b20f631bc47ee76e",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330111-original-application/page-6.png",
+      "sha256": "c3cb07bada61bd8842c44490e7ab367aac775fd719669b1dced51b9379ec0063",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330111-original-evidence/page-1.png",
+      "sha256": "de33f319ca54b4a5190b1c4b302a2d79fa51c57a4f0b0c5ff9db864e2445e4e7",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330182-generated-application/page-1.png",
+      "sha256": "7c6590d6cc181d743f666b33ae46d6a6eb5620b6047db85668ee311e98db62e6",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330182-generated-application/page-2.png",
+      "sha256": "c08fac32f2642af3cc06ad81bbb8145054b713f11034cc4239404e918602e9a8",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330182-generated-application/page-3.png",
+      "sha256": "502a52ba6ddae039c5f00ba01234feec7eb40d8721e60ac5accfd20dd77710ab",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330182-generated-evidence/page-1.png",
+      "sha256": "807d413c35a37ed5d0e761711ccd7290a2cb55bff10ea57118a0bf14091e0b5c",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330182-original-application/page-1.png",
+      "sha256": "6fe7a8f412aafe8fec9788c8beb88bc6be661d6a780c5d6d0596197bd0026a55",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330182-original-application/page-2.png",
+      "sha256": "7cd28ddbe7dd2f4ecf06f003edb58bddbf7daab99643bc46e5b8e180ac37f36e",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330182-original-application/page-3.png",
+      "sha256": "1186f99d39032b1984d91f7243a0256f8cc81d6a3308c3cc579611df2623c98d",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330182-original-application/page-4.png",
+      "sha256": "1fe16f60c122e134bf6e2fb248ff0dce9ac84c684b9ead9b57e5ff4942763446",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330182-original-application/page-5.png",
+      "sha256": "f9b9a3356a66ce9fea3af8fe68f6b973e30b37167cd6e667b20f631bc47ee76e",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330182-original-application/page-6.png",
+      "sha256": "c3cb07bada61bd8842c44490e7ab367aac775fd719669b1dced51b9379ec0063",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/render/330182-original-evidence/page-1.png",
+      "sha256": "de33f319ca54b4a5190b1c4b302a2d79fa51c57a4f0b0c5ff9db864e2445e4e7",
+      "visual_status": "PASS",
+      "review": "page opened and inspected; text readable, no clipping or overlapping; original structure compared with generated worker-only copy"
+    }
+  ],
+  "generated_records": [
+    {
+      "region_code": "330111",
+      "kind": "application",
+      "source_id": "16f67bbbcf7b124948381309",
+      "source_file": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/originals/blank/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+      "source_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/generated/330111-application.docx",
+      "sha256": "eea5aa044d5d3bb3a36b224344217e244224164b8b5162fe9ecf1782caa9d123",
+      "changed_package_parts": [
+        "word/document.xml"
+      ],
+      "synthetic_only": true,
+      "visual_qa": "PASS",
+      "template_id": "BAFCD2B89394AA02DD2914CA0720DAE0:blank",
+      "service_code": "11330183002506152E4002014302002",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=31ce6363-7379-40c0-8454-f0715785e193",
+      "adapter": "zhejiang_own_worker_oct29e_v1",
+      "source_manifest_sha256": "b260a7385135e471a05d102c052e3eabff1dd8c67f611b94b4d65b0d30e3e0e7"
+    },
+    {
+      "region_code": "330111",
+      "kind": "evidence",
+      "source_id": "16f67bbbcf7b124948381309",
+      "source_file": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/originals/blank/872DFF90A8578907CB947197A784AA48.docx",
+      "source_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/generated/330111-evidence.docx",
+      "sha256": "430ef631022c586809b131c762f9fd57341a94d231458f8a49ad65d67bb56d4e",
+      "changed_package_parts": [
+        "word/document.xml"
+      ],
+      "synthetic_only": true,
+      "visual_qa": "PASS",
+      "template_id": "B55E6CC7851FBC4F02F8DB9F4595191B:blank",
+      "service_code": "11330183002506152E4002014302002",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=31ce6363-7379-40c0-8454-f0715785e193",
+      "adapter": "zhejiang_own_worker_oct29e_v1",
+      "source_manifest_sha256": "b260a7385135e471a05d102c052e3eabff1dd8c67f611b94b4d65b0d30e3e0e7"
+    },
+    {
+      "region_code": "330182",
+      "kind": "application",
+      "source_id": "f6487b8d118bdc3289baad17",
+      "source_file": "reports/nationwide-verification-20261029-e/zhejiang/jiande/originals/blank/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+      "source_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/generated/330182-application.docx",
+      "sha256": "eea5aa044d5d3bb3a36b224344217e244224164b8b5162fe9ecf1782caa9d123",
+      "changed_package_parts": [
+        "word/document.xml"
+      ],
+      "synthetic_only": true,
+      "visual_qa": "PASS",
+      "template_id": "46ACCB2DF05B1F8C1F581602D1F346E8:blank",
+      "service_code": "1133018205366747424002014302002",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ed48d6e4-e7ee-433d-97aa-b1352d1fb341",
+      "adapter": "zhejiang_own_worker_oct29e_v1",
+      "source_manifest_sha256": "20f7c2e7b8efa5058c39439f1079e309da2c3922aded10275a4514bf553a542c"
+    },
+    {
+      "region_code": "330182",
+      "kind": "evidence",
+      "source_id": "f6487b8d118bdc3289baad17",
+      "source_file": "reports/nationwide-verification-20261029-e/zhejiang/jiande/originals/blank/872DFF90A8578907CB947197A784AA48.docx",
+      "source_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+      "file": "reports/nationwide-verification-20261029-e/zhejiang-adaptation/generated/330182-evidence.docx",
+      "sha256": "430ef631022c586809b131c762f9fd57341a94d231458f8a49ad65d67bb56d4e",
+      "changed_package_parts": [
+        "word/document.xml"
+      ],
+      "synthetic_only": true,
+      "visual_qa": "PASS",
+      "template_id": "F7FF66119F2DDB743C0370239FABF58E:blank",
+      "service_code": "1133018205366747424002014302002",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ed48d6e4-e7ee-433d-97aa-b1352d1fb341",
+      "adapter": "zhejiang_own_worker_oct29e_v1",
+      "source_manifest_sha256": "20f7c2e7b8efa5058c39439f1079e309da2c3922aded10275a4514bf553a542c"
+    }
+  ],
+  "checks": {
+    "only_document_xml_changed": true,
+    "signatures_blank": true,
+    "official_instructions_preserved": true,
+    "worker_only_no_employer_example_filled": true,
+    "no_original_file_changes": true,
+    "no_model_calls": true,
+    "all_actual_pages_viewed": true
+  },
+  "limits": [
+    "These four outputs use the recorded synthetic payload, not every possible maximum-size payload. Unknown fields and over-capacity values fail rather than truncate.",
+    "Employer application is unsupported; source originals retain both modes, generated applications contain only worker mode.",
+    "Original application page1/2 split within merged legal-representative area is present in the unchanged official blank; generated worker output keeps that row together.",
+    "Candidate webpage/native download and publication have not been performed by this offline task."
+  ],
+  "word_isolation": {
+    "initial_quit_check": "own process still alive immediately after Quit; original summary retained",
+    "followup": "read-only later check confirms own process exited and process count0; no stop or kill",
+    "raw_identity_records": "retained privately; public summaries contain counts and booleans only"
+  },
+  "published": false,
+  "candidate_web_qa": "NOT_RUN"
+}

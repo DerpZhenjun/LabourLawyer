@@ -1,0 +1,50 @@
+{
+  "application": {
+    "applicantName": "虚构验收劳动者",
+    "birthDate": "1990-01-02",
+    "gender": "女",
+    "nationality": "汉族",
+    "idNumber": "000000199001020000",
+    "phone": "00000000000",
+    "householdType": "本省非农业户口",
+    "idAddress": "虚构住所一号",
+    "respondentName": "虚构星禾有限公司",
+    "socialCreditCode": "000000000000000000",
+    "registeredAddress": "虚构单位注册地址二号",
+    "mailingAddress": "虚构单位通讯地址三号",
+    "workAddress": "虚构履行地四号",
+    "legalRepName": "虚构负责人",
+    "legalRepPhone": "00000000000",
+    "legalRepPosition": "虚构经理",
+    "companyContact": "虚构联系人",
+    "companyContactPhone": "00000000000",
+    "committeeName": "虚构验收仲裁委员会",
+    "requests": [
+      "请求支付虚构工资1000元。",
+      "请求支付虚构加班工资200元。"
+    ],
+    "factsReason": "本申请全部为软件验收虚构内容。虚构验收劳动者于2025年3月1日进入虚构星禾有限公司从事虚构文员工作，约定每月工资3000元。虚构单位尚未支付虚构工资，双方协商未果。以上当事人、地址、金额与事件全部为虚构，不能直接用于提交。",
+    "applicationDate": "2026-10-29",
+    "copyCount": 3
+  },
+  "evidence": {
+    "committeeName": "虚构验收仲裁委员会",
+    "caseNumber": "虚构案号2026号",
+    "copyCount": 3,
+    "submitDate": "2026-10-29",
+    "evidenceList": [
+      {
+        "name": "虚构劳动合同",
+        "pageCount": "2页",
+        "source": "虚构申请人保存",
+        "purpose": "说明虚构劳动关系及约定工资。"
+      },
+      {
+        "name": "虚构工资记录",
+        "pageCount": "3",
+        "source": "虚构单位提供",
+        "purpose": "说明虚构工资支付情况。"
+      }
+    ]
+  }
+}
