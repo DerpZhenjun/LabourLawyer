@@ -27,7 +27,32 @@
     "zhejiang_frontend_checks": 16,
     "async_draft_regression": "PASS",
     "vite_build": "PASS",
-    "vite_build_seconds": 4.41
+    "vite_build_seconds": 4.41,
+    "full_backend_suite": {
+      "status": "PASS",
+      "tests": 690,
+      "seconds": 638.51,
+      "skipped": 2,
+      "reason": "Windows symbolic-link permissions; not counted as executed checks"
+    },
+    "candidate_native_browser": {
+      "checks": 15,
+      "actual_downloads": 8,
+      "actual_word_pages_viewed": 14
+    },
+    "final_full_backend_suite": {
+      "status": "PASS",
+      "tests": 691,
+      "seconds": 517.547,
+      "skipped": 2,
+      "reason": "Windows symbolic-link permissions"
+    },
+    "final_public_root_regressions": {
+      "status": "PASS",
+      "tests": 21,
+      "seconds": 83.217,
+      "skipped": 1
+    }
   },
   "source_integrity": {
     "jiangsu/SOURCE-MANIFEST.json": "7f92920807dc4ec74f26ace3be76adf67303cbd4877994777c1a8ca0b1e7bb5e",
@@ -36,6 +61,7 @@
     "zhejiang/fuyang/SOURCE-MANIFEST.json": "b260a7385135e471a05d102c052e3eabff1dd8c67f611b94b4d65b0d30e3e0e7",
     "zhejiang/jiande/SOURCE-MANIFEST.json": "20f7c2e7b8efa5058c39439f1079e309da2c3922aded10275a4514bf553a542c"
   },
-  "main_publication": "NOT_YET",
-  "models_called": false
+  "main_publication": "APPLIED_202_GUIDES_185_GENERATABLE",
+  "models_called": false,
+  "review_fix": "Empty/whitespace root strings now rejected by shared public provenance, Path object explicit roots retain own-source proof. Real RED then GREEN."
 }

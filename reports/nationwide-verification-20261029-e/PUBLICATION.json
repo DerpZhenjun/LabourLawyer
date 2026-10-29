@@ -1,0 +1,76 @@
+{
+  "release_id": "oct29e-own-localities-v1",
+  "applied_at": "2026-10-29T15:05:02.476969+00:00",
+  "marker_url": "http://127.0.0.1:8000/api/regional-guides/release-capabilities",
+  "marker": {
+    "release_id": "oct29e-own-localities-v1",
+    "adapters": [
+      "jiangsu_own_blank_oct29e_v1",
+      "zhejiang_own_worker_oct29e_v1"
+    ],
+    "source_bound": true,
+    "models_required": false,
+    "regional_store": "main_default"
+  },
+  "inserted": 4,
+  "versions": [
+    {
+      "scope": [
+        "jiangsu",
+        "苏州市",
+        "相城区"
+      ],
+      "source_id": "e87b6309ce5f6b51ba0aa5fc",
+      "version": 207,
+      "content_hash": "7ccb4f478b9d51c793461e1c9df4d6090e22a973cc2f4c86eb7407dd90724d21"
+    },
+    {
+      "scope": [
+        "jiangsu",
+        "苏州市",
+        "吴江区"
+      ],
+      "source_id": "17dae350af59963fb0c16dba",
+      "version": 208,
+      "content_hash": "e6039dde705ccb249e6be8725ee6af370dfc0dba11380e86be8cf989094b8bd6"
+    },
+    {
+      "scope": [
+        "zhejiang",
+        "杭州市",
+        "富阳区"
+      ],
+      "source_id": "16f67bbbcf7b124948381309",
+      "version": 209,
+      "content_hash": "6a927e1c0c4fa0492f6b07986171bbb5d632f95d79514375e4e694bc30e4d347"
+    },
+    {
+      "scope": [
+        "zhejiang",
+        "杭州市",
+        "建德市"
+      ],
+      "source_id": "f6487b8d118bdc3289baad17",
+      "version": 210,
+      "content_hash": "e124a9aa67855142f0211c0951978113dfeafd5f284bc0bca1019199d39e44ce"
+    }
+  ],
+  "guides_before": 198,
+  "guides_after": 202,
+  "generatable_localities_after": 185,
+  "history_rows_after": 210,
+  "discovery_jobs_before": 4294,
+  "discovery_jobs_after": 4294,
+  "directory_db_unchanged": true,
+  "candidate_queue_after": 24,
+  "rollback_directory": ".runtime/reviewed-oct29e-release-sealed/rollback-8cef94c5bb3a4152b254255e57a6770b",
+  "after_consistent_sqlite_sha256": "eaf4c6118ece05121e34901221dde93f30b20df34ec2a699e6b69d23a5fe80e7",
+  "public_files_sha256": {
+    "data/public-regions/guides.json": "f34c108b6441fe2647994965583be3b376b0621623ddf14bd373f9b3b6fe698a",
+    "data/public-regions/directory.json": "913daa7dd7bcbec570945fd7cc8ed08ae55b15c50665e5f8f4d967b62fc85ba8",
+    "data/public-regions/manifest.json": "1c547b57a8ca1514ab1cf5e4e646cbdb691428b3780539ae2562e8205a542029",
+    "config/regional_candidates.json": "ef4c423ae8a532b1e03b7d1073a6fd68cea9df7d5f9162c44a8cd2d09d63636f"
+  },
+  "prepared_receipt_sha256": "240a55dc7b68d09463b8cfed64aa308644d231c7688305b42e9e28ea6b559df2",
+  "note": "Four own localities appended only. Actual native main acceptance follows separately. Earlier prepare was superseded after final browser receipt bytes changed; first apply failed before database mutation, and the retained sealed prepare reverified all current input/artifact hashes."
+}

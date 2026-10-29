@@ -1,19 +1,19 @@
 {
-  "phase": "E4_own_sources_registered_next_adaptation_not_started",
-  "main_guides": 198,
-  "main_generatable_localities": 181,
-  "candidate_queue": 28,
+  "phase": "E4_published_main_native_acceptance_running",
+  "main_guides": 202,
+  "main_generatable_localities": 185,
+  "candidate_queue": 24,
   "guides": [
     "reports/nationwide-verification-20261029-e/jiangsu/xiangcheng/guide.json",
     "reports/nationwide-verification-20261029-e/jiangsu/wujiang/guide.json",
     "reports/nationwide-verification-20261029-e/zhejiang/fuyang/guide.json",
     "reports/nationwide-verification-20261029-e/zhejiang/jiande/guide.json"
   ],
-  "generation_granted": false,
+  "generation_granted": true,
   "models_called": false,
-  "next": "Individually inspect own forms and source bindings, implement exact contracts, Word page QA, isolated candidate seven/eight own forms only if source slots verified, then native browser acceptance. Do not reuse D facts or inferred template capability.",
-  "updated_at": "2026-10-29T20:33:38.601974+08:00",
-  "main_release": "reports/nationwide-verification-20261029-d/PUBLICATION.json",
+  "next": "Do not repeat append_e/prepare/apply. Main versions207-210; candidate199-202. Main8 native downloads in progress. SourceF collection only; register after own checks, no guessed scopes. Exact Git whitelist, preserve six user edits.",
+  "updated_at": "2026-10-29T15:05:49.000278+00:00",
+  "main_release": "reports/nationwide-verification-20261029-e/PUBLICATION.json",
   "outbox_pending": 368,
   "openclaw_acknowledged": 0,
   "windows_model_started": false,
@@ -27,5 +27,40 @@
     "published_guides": 198,
     "generatable_localities": 181,
     "report": "reports/nationwide-verification-20261029-e/FINAL-CLEAN-ARCHIVE-RESULT.json"
-  }
+  },
+  "candidate_guides": 202,
+  "candidate_generatable_localities": 185,
+  "candidate_additions": 21,
+  "exact_contracts": {
+    "jiangsu": {
+      "adapter": "jiangsu_own_blank_oct29e_v1",
+      "application_fields": 28,
+      "evidence_fields": 4,
+      "evidence_item_fields": 5,
+      "evidence_copy_count_slot": false
+    },
+    "zhejiang": {
+      "adapter": "zhejiang_own_worker_oct29e_v1",
+      "application_fields": 23,
+      "evidence_fields": 5,
+      "evidence_item_fields": 4
+    }
+  },
+  "current_checks": {
+    "provider_request_tests": {
+      "passed": 27,
+      "seconds": 33.807
+    },
+    "dispatch_and_clean_public_root": {
+      "passed": 3,
+      "seconds": 13.639,
+      "actual_generate_requests": 16
+    },
+    "jiangsu_frontend_checks": 19,
+    "zhejiang_frontend_checks": 16,
+    "separate_async_drafts": "PASS",
+    "vite_build_seconds": 4.41,
+    "models_called": false
+  },
+  "main_history_rows": 210
 }
