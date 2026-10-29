@@ -29,6 +29,20 @@ D_FILES=[f'reports/nationwide-verification-20261029-d/{place}/guide.json' for pl
          ['jiangsu/gusu','jiangsu/wuzhong','zhejiang/xiaoshan','zhejiang/linan']]
 
 
+E_FILES=[f'reports/nationwide-verification-20261029-e/{place}/guide.json' for place in
+         ['jiangsu/xiangcheng','jiangsu/wujiang','zhejiang/fuyang','zhejiang/jiande']]
+
+
+def load_e_guides(root=ROOT):
+    """Rebuild E4 through own source parsers and explicit-root capability proofs."""
+    import regional_jiangsu_oct29e as jiangsu
+    import regional_zhejiang_oct29e as zhejiang
+    root=Path(root).resolve()
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320507','320509']]
+    guides += [zhejiang.parse_capture(name,root=root) for name in ['fuyang','jiande']]
+    return [with_reference_capabilities(g,root=root) for g in guides]
+
+
 def load_d_guides(root=ROOT):
     """Use each D provider canonical parser; raw guide flags never authorize."""
     import regional_jiangsu_oct29d as jiangsu
@@ -99,8 +113,8 @@ def verify(root=ROOT,output=OUTPUT):
     if manifest.get('scope')!='isolated-public-candidate-review-only' or manifest.get('published') is not False:
         raise ValueError('Candidate manifest identity differs')
     for relative,checksum in manifest['source_files'].items():
-        if relative not in SOURCE_FILES+HUNAN_FILES+C_FILES+D_FILES or sha(root/relative)!=checksum:raise ValueError('Candidate source evidence changed')
-    expected_sources={7:SOURCE_FILES,9:SOURCE_FILES+HUNAN_FILES,13:SOURCE_FILES+HUNAN_FILES+C_FILES,17:SOURCE_FILES+HUNAN_FILES+C_FILES+D_FILES}.get(manifest.get('candidate_guides'))
+        if relative not in SOURCE_FILES+HUNAN_FILES+C_FILES+D_FILES+E_FILES or sha(root/relative)!=checksum:raise ValueError('Candidate source evidence changed')
+    expected_sources={7:SOURCE_FILES,9:SOURCE_FILES+HUNAN_FILES,13:SOURCE_FILES+HUNAN_FILES+C_FILES,17:SOURCE_FILES+HUNAN_FILES+C_FILES+D_FILES,21:SOURCE_FILES+HUNAN_FILES+C_FILES+D_FILES+E_FILES}.get(manifest.get('candidate_guides'))
     if expected_sources is None:raise ValueError('Unknown candidate source generation')
     if set(manifest['source_files'])!=set(expected_sources):raise ValueError('Candidate source set differs')
     if manifest.get('candidate_guides')==17:
@@ -108,6 +122,11 @@ def verify(root=ROOT,output=OUTPUT):
             raise ValueError('D4 candidate exact counts/database hash set differs')
         ids=manifest.get('candidate_source_ids',[])
         if len(ids)!=17 or len(set(ids))!=17:raise ValueError('D4 candidate source identities differ')
+    if manifest.get('candidate_guides')==21:
+        if (manifest.get('guides'),manifest.get('generatable_localities'))!=(202,185) or set(manifest.get('database_files',{}))!={'regional-guides.sqlite','regional-directory.sqlite'}:
+            raise ValueError('E4 candidate exact counts/database hash set differs')
+        ids=manifest.get('candidate_source_ids',[])
+        if len(ids)!=21 or len(set(ids))!=21:raise ValueError('E4 candidate source identities differ')
     for name,checksum in manifest['database_files'].items():
         if name not in {'regional-guides.sqlite','regional-directory.sqlite'} or sha(output/name)!=checksum:
             raise ValueError('Candidate store differs from prepared data; do not replace it automatically')
@@ -119,6 +138,12 @@ def verify(root=ROOT,output=OUTPUT):
             if tail!=manifest['candidate_source_ids'][-4:]:raise ValueError('D4 candidate source/version binding differs')
             rows=[json.loads(row[0]) for row in db.execute('SELECT payload FROM regional_guides WHERE sequence IN (SELECT sequence FROM regional_current)')]
             if sum(any(t.get('can_generate') is True for t in g.get('templates',[])) for g in rows)!=181:raise ValueError('D4 candidate stored capability count differs')
+        if manifest.get('candidate_guides')==21:
+            if db.execute('SELECT count(*),max(sequence) FROM regional_guides').fetchone()!=(202,202) or db.execute("SELECT seq FROM sqlite_sequence WHERE name='regional_guides'").fetchone()!=(202,):raise ValueError('E4 candidate history/version sequence differs')
+            tail=[row[0] for row in db.execute('SELECT source_id FROM regional_guides WHERE sequence BETWEEN 199 AND 202 ORDER BY sequence')]
+            if tail!=manifest['candidate_source_ids'][-4:]:raise ValueError('E4 candidate source/version binding differs')
+            rows=[json.loads(row[0]) for row in db.execute('SELECT payload FROM regional_guides WHERE sequence IN (SELECT sequence FROM regional_current)')]
+            if sum(any(t.get('can_generate') is True for t in g.get('templates',[])) for g in rows)!=185:raise ValueError('E4 candidate stored capability count differs')
     expected_count=181+len(expected_sources)
     if count!=expected_count or manifest['guides']!=expected_count:raise ValueError('Prepared candidate count differs')
     return manifest
@@ -279,6 +304,77 @@ def append_d(root=ROOT,output=OUTPUT):
         # standalone bytes so the preserved manifest remains verifiable as well.
         if original_db_bytes is not None and (output/'regional-guides.sqlite').read_bytes()!=original_db_bytes:_replace_bytes(output/'regional-guides.sqlite',original_db_bytes)
         if (output/'manifest.json').read_bytes()!=original_manifest:_replace_bytes(output/'manifest.json',original_manifest)
+        raise
+    finally:
+        if db is not None:db.close()
+
+
+def append_e(root=ROOT,output=OUTPUT):
+    """Append E4 data only; preserve the tested D17 manifest and consistent DBs.
+
+    No service, model, public snapshot or main database is touched. Failed
+    appends keep the original manifest and roll back every SQLite insertion.
+    """
+    from regional_guides import digest,official_content,region_key
+    root=Path(root).resolve();output=Path(output).resolve();previous=verify(root,output)
+    if (previous.get('candidate_guides'),previous.get('guides'),previous.get('generatable_localities'))!=(17,198,181):
+        raise ValueError('E4 append requires the preserved 198/181 D17 candidate')
+    original_manifest=(output/'manifest.json').read_bytes()
+    if json.loads(original_manifest)!=previous:raise ValueError('E4 candidate manifest changed before append lock')
+    additions=load_e_guides(root)
+    from reviewed_oct29e_release import validate_sources,_capabilities
+    validate_sources(additions);_capabilities(additions,root=root)
+    backup=output/'before-e-extension'
+    if backup.exists():raise ValueError('Previous E extension evidence exists; never overwrite it')
+    backup.mkdir()
+    (backup/'manifest.json').write_bytes(original_manifest)
+    db=sqlite3.connect(output/'regional-guides.sqlite',timeout=15);original_db_bytes=None;manifest_install_started=False
+    try:
+        db.execute('BEGIN IMMEDIATE')
+        if (output/'manifest.json').read_bytes()!=original_manifest:raise ValueError('E4 candidate manifest changed before append lock')
+        if db.execute('PRAGMA journal_mode').fetchone()[0].lower()!='delete':raise ValueError('E4 candidate requires a standalone DELETE-journal snapshot')
+        original_db_bytes=(output/'regional-guides.sqlite').read_bytes()
+        if hashlib.sha256(original_db_bytes).hexdigest()!=previous['database_files']['regional-guides.sqlite']:raise ValueError('Candidate changed before append lock')
+        (backup/'regional-guides.exact-before.sqlite').write_bytes(original_db_bytes)
+        if db.execute('SELECT count(*) FROM regional_current').fetchone()[0]!=198 or db.execute('SELECT count(*) FROM regional_guides').fetchone()[0]!=198:raise ValueError('E4 candidate history changed before append lock')
+        if db.execute("SELECT seq FROM sqlite_sequence WHERE name='regional_guides'").fetchone()!=(198,):raise ValueError('E4 candidate version sequence differs')
+        for g in additions:
+            if db.execute('SELECT 1 FROM regional_guides WHERE (province=? AND city=? AND district=?) OR source_id=?',
+                          (g['province'],g['city'],g['district'],digest(g['source_url'])[:24])).fetchone():
+                raise ValueError('Existing exact candidate scope/source history must never be replaced')
+        for name in ['regional-guides.sqlite','regional-directory.sqlite']:
+            with closing(sqlite3.connect((output/name).as_uri()+'?mode=ro',uri=True)) as current,closing(sqlite3.connect(backup/name)) as saved:current.backup(saved)
+        (backup/'backup-checksums.json').write_text(json.dumps({
+            'scope':'E4 pre-append consistent SQLite backups plus exact standalone guide bytes',
+            'files':{p.name:sha(p) for p in backup.iterdir() if p.is_file()},
+            'exact_manifest_restore_guide':'regional-guides.exact-before.sqlite',
+            'directory_database_never_written':True},ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+        ids=[]
+        for g in additions:
+            d=deepcopy(g);d.pop('version',None);sid=digest(d['source_url'])[:24];rid=region_key(d['province'],d['city'],d['district']);checksum=digest(official_content(d))
+            d.update(region_id=rid,source_id=sid,content_hash=checksum)
+            row=db.execute('INSERT INTO regional_guides(region_id,source_id,content_hash,province,city,district,payload) VALUES(?,?,?,?,?,?,?)',
+                           (rid,sid,checksum,d['province'],d['city'],d['district'],json.dumps(d,ensure_ascii=False)))
+
+            if row.lastrowid!=199+len(ids):raise ValueError('E4 candidate version sequence differs')
+            db.execute('INSERT INTO regional_current VALUES(?,?)',(rid,row.lastrowid));ids.append(sid)
+        # Commit all four together, then install the hashed manifest atomically.
+        # Failure after commit restores the consistent pre-append SQLite backup.
+        db.commit()
+        result=deepcopy(previous);result.update(guides=202,candidate_guides=21,generatable_localities=185)
+        result['source_files'].update({p:sha(root/p) for p in E_FILES});result['candidate_source_ids']+=ids
+        result['database_files']['regional-guides.sqlite']=sha(output/'regional-guides.sqlite')
+        result['extension_note']='E4 appended; before-e-extension retains the tested D17 manifest and consistent SQLite snapshots.'
+        if (output/'manifest.json').read_bytes()!=original_manifest:raise ValueError('E4 candidate manifest changed during append lock')
+        manifest_install_started=True
+        _atomic_write(output/'manifest.json',(json.dumps(result,ensure_ascii=False,indent=2)+'\n').encode('utf8'))
+        return verify(root,output)
+    except BaseException:
+        db.rollback();db.close();db=None
+        # SQLite backup restore changes its file header. Restore the exact locked
+        # standalone bytes so the preserved manifest remains verifiable as well.
+        if original_db_bytes is not None and (output/'regional-guides.sqlite').read_bytes()!=original_db_bytes:_replace_bytes(output/'regional-guides.sqlite',original_db_bytes)
+        if manifest_install_started and (output/'manifest.json').read_bytes()!=original_manifest:_replace_bytes(output/'manifest.json',original_manifest)
         raise
     finally:
         if db is not None:db.close()

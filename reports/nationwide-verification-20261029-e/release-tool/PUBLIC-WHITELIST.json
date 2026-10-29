@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "E release tool source and synthetic verification report only",
+  "files": [
+    {
+      "file": "backend/candidate_review.py",
+      "sha256": "8bd2776c36ce3ca5320cf6b88cb2d395ef56a4007c508929038d96a1d86d9c7e",
+      "bytes": 27643
+    },
+    {
+      "file": "backend/reviewed_oct29e_release.py",
+      "sha256": "dec7d3967afd9f8467a2420520af19a9e347125dc5ab4c68834ecca97acc6f08",
+      "bytes": 24282
+    },
+    {
+      "file": "backend/tests/test_reviewed_oct29e_release.py",
+      "sha256": "31296feb6eca9d177b5854afd9afe4f6ae7a5a5dc2beb3d7dd6f8f5a880fdfe5",
+      "bytes": 28302
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/release-tool/README.md",
+      "sha256": "f76710a83c3eef10b5f307e806d3af31def167c358adaa8ccd8eaa9131f95e92",
+      "bytes": 3893
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/release-tool/RESULT.json",
+      "sha256": "eab005f5eb3b50c610263f30fb857127d91155bdb9bed96116be6dcb05240103",
+      "bytes": 3063
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/release-tool/TESTS.log",
+      "sha256": "d22f7f6f9302249dea69cd60936945ef07400ad34fb5275933cad985df921a36",
+      "bytes": 11073
+    }
+  ]
+}

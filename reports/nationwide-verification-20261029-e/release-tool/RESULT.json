@@ -1,0 +1,133 @@
+{
+  "status": "PASS",
+  "scope": "release-tool-only synthetic temporary fixtures",
+  "actual_e_candidate_append_performed": false,
+  "actual_e_live_prepare_performed": false,
+  "actual_e_main_apply_performed": false,
+  "actual_database_mutations": false,
+  "service_operations": false,
+  "model_calls": false,
+  "word_started": false,
+  "git_operations": false,
+  "tests": [
+    {
+      "suite": "backend.tests.test_reviewed_oct29e_release",
+      "count": 26,
+      "seconds": 82.413,
+      "result": "PASS"
+    },
+    {
+      "suite": "C/D reviewed release regression",
+      "count": 32,
+      "seconds": 104.606,
+      "result": "PASS"
+    }
+  ],
+  "tdd": [
+    {
+      "stage": "initial RED",
+      "failures": 20,
+      "cause": "E release module not yet implemented"
+    },
+    {
+      "stage": "hardening RED",
+      "failures": 3,
+      "cause": "Response header enforcement, concurrent manifest protection, exact post-commit SQLite bytes"
+    },
+    {
+      "stage": "explicit-root RED",
+      "failures": 1,
+      "cause": "Shared export helper selected original checkout script"
+    },
+    {
+      "stage": "final GREEN",
+      "tests": 26
+    }
+  ],
+  "expected_candidate_transition": {
+    "before": [
+      17,
+      198,
+      181
+    ],
+    "after": [
+      21,
+      202,
+      185
+    ],
+    "versions": [
+      199,
+      200,
+      201,
+      202
+    ]
+  },
+  "expected_main_transition": {
+    "current_before": 198,
+    "history_before": 206,
+    "public_after": [
+      202,
+      185
+    ],
+    "history_after": 210,
+    "versions": [
+      207,
+      208,
+      209,
+      210
+    ],
+    "discovery_jobs_preserved": 4294,
+    "queue_before": 28,
+    "queue_after": 24
+  },
+  "required_native_document_pairs": [
+    [
+      "320507",
+      "application"
+    ],
+    [
+      "320507",
+      "evidence"
+    ],
+    [
+      "320509",
+      "application"
+    ],
+    [
+      "320509",
+      "evidence"
+    ],
+    [
+      "330111",
+      "application"
+    ],
+    [
+      "330111",
+      "evidence"
+    ],
+    [
+      "330182",
+      "application"
+    ],
+    [
+      "330182",
+      "evidence"
+    ]
+  ],
+  "receipt_gates": [
+    "exact native UI source/version/template binding",
+    "HTTP200 plus own source and official-blank-filled response headers",
+    "no API replay",
+    "actual ZIP CRC and Word document/body XML",
+    "each visual page PNG path,SHA,CRC,pixel decode and PASS status"
+  ],
+  "root_boundary": "All E source/capability/proof arguments explicitly forward the selected root; exporter script comes from the selected root. Fixture tests use boundary doubles, not live provider evidence.",
+  "not_accepted_by_this_report": [
+    "E own-provider original slot checks",
+    "E actual candidate browser acceptance",
+    "E actual native downloads and Word page QA",
+    "independent actual public-root integration",
+    "full shared integration suite",
+    "official authenticated submission"
+  ]
+}
