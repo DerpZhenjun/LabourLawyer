@@ -173,6 +173,9 @@ def public_evidence(guide, root):
     materials, sections, source identity, own scope and original bytes must match.
     Legacy/other profiles have no report-path authorization through this helper.
     """
+    from regional_oct29c_public_provenance import handles, public_evidence as c_public_evidence
+    if handles(guide):
+        return c_public_evidence(guide, root)
     try:
         _, _, _, canonical, _ = _validated(guide, root)
         return deepcopy(canonical['evidence'])
@@ -188,6 +191,9 @@ def approved_report_attachment(guide, template, root):
     requires its fixed, public, own-DOC conversion chain. Arbitrary derived paths
     or templates are not accepted as official originals.
     """
+    from regional_oct29c_public_provenance import handles, approved_report_attachment as c_approved_attachment
+    if handles(guide):
+        return c_approved_attachment(guide, template, root)
     try:
         root, report, name, canonical, white = _validated(guide, root)
         if not isinstance(template, dict):
