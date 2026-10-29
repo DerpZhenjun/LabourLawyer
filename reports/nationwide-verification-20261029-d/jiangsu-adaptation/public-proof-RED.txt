@@ -1,0 +1,14 @@
+E
+======================================================================
+ERROR: test_public_proof_uses_explicit_public_root_and_never_samples (backend.tests.test_jiangsu_oct29d.JiangsuOct29DTests.test_public_proof_uses_explicit_public_root_and_never_samples)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend\tests\test_jiangsu_oct29d.py", line 146, in test_public_proof_uses_explicit_public_root_and_never_samples
+    self.assertEqual(adapter.public_evidence(g, root), g['evidence'])
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'regional_jiangsu_oct29d' has no attribute 'public_evidence'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.430s
+
+FAILED (errors=1)

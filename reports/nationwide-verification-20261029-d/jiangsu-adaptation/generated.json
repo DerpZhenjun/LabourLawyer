@@ -1,0 +1,66 @@
+[
+  {
+    "file": "reports\\nationwide-verification-20261029-d\\jiangsu-adaptation\\generated\\320506-application.docx",
+    "sha256": "388d2ba4971ec556db915dd682b876ab56596000e524f6cd92f6da24bbd3fb50",
+    "source": {
+      "adapter": "jiangsu_own_blank_oct29d_v1",
+      "kind": "application",
+      "annex_id": "50de5e3d-c904-45a5-b077-b2d8a9c2b88a",
+      "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "source_file": "reports/nationwide-verification-20261029-d/jiangsu/wuzhong/originals/blank/50de5e3d-c904-45a5-b077-b2d8a9c2b88a/劳动人事争议仲裁申请书.docx",
+      "source_url": "https://szwz.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=27&iddept_ql_inf=11320506552548402T4002014302002&ql_kind=20&iddept_yw_inf=11320506552548402T400201430200201"
+    },
+    "changed_package_parts": [
+      "word/document.xml"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "file": "reports\\nationwide-verification-20261029-d\\jiangsu-adaptation\\generated\\320506-evidence.docx",
+    "sha256": "0e1a3022010e59d385ee4fd86eafb44cb48104da82c8ec5933ec3b0f29e4df93",
+    "source": {
+      "adapter": "jiangsu_own_blank_oct29d_v1",
+      "kind": "evidence",
+      "annex_id": "9f35ddb0-8c4a-4fdb-96ab-738cc09dab27",
+      "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "source_file": "reports/nationwide-verification-20261029-d/jiangsu/wuzhong/originals/blank/9f35ddb0-8c4a-4fdb-96ab-738cc09dab27/证据清单.docx",
+      "source_url": "https://szwz.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=27&iddept_ql_inf=11320506552548402T4002014302002&ql_kind=20&iddept_yw_inf=11320506552548402T400201430200201"
+    },
+    "changed_package_parts": [
+      "word/document.xml"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "file": "reports\\nationwide-verification-20261029-d\\jiangsu-adaptation\\generated\\320508-application.docx",
+    "sha256": "388d2ba4971ec556db915dd682b876ab56596000e524f6cd92f6da24bbd3fb50",
+    "source": {
+      "adapter": "jiangsu_own_blank_oct29d_v1",
+      "kind": "application",
+      "annex_id": "1b87480c-8cd3-4bfa-8721-7dbe5255db5b",
+      "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "source_file": "reports/nationwide-verification-20261029-d/jiangsu/gusu/originals/blank/1b87480c-8cd3-4bfa-8721-7dbe5255db5b/劳动人事争议仲裁申请书.docx",
+      "source_url": "https://szgs.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=26&iddept_ql_inf=11320508014152478Y4002014302002&ql_kind=20&iddept_yw_inf=11320508014152478Y400201430200201"
+    },
+    "changed_package_parts": [
+      "word/document.xml"
+    ],
+    "synthetic_only": true
+  },
+  {
+    "file": "reports\\nationwide-verification-20261029-d\\jiangsu-adaptation\\generated\\320508-evidence.docx",
+    "sha256": "0e1a3022010e59d385ee4fd86eafb44cb48104da82c8ec5933ec3b0f29e4df93",
+    "source": {
+      "adapter": "jiangsu_own_blank_oct29d_v1",
+      "kind": "evidence",
+      "annex_id": "2d48f730-b996-4ec0-9550-548ad0cd761e",
+      "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "source_file": "reports/nationwide-verification-20261029-d/jiangsu/gusu/originals/blank/2d48f730-b996-4ec0-9550-548ad0cd761e/证据清单.docx",
+      "source_url": "https://szgs.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=26&iddept_ql_inf=11320508014152478Y4002014302002&ql_kind=20&iddept_yw_inf=11320508014152478Y400201430200201"
+    },
+    "changed_package_parts": [
+      "word/document.xml"
+    ],
+    "synthetic_only": true
+  }
+]

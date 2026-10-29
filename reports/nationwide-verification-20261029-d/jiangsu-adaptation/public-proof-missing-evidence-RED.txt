@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_public_proof_uses_explicit_public_root_and_never_samples (backend.tests.test_jiangsu_oct29d.JiangsuOct29DTests.test_public_proof_uses_explicit_public_root_and_never_samples)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend\tests\test_jiangsu_oct29d.py", line 148, in test_public_proof_uses_explicit_public_root_and_never_samples
+    self.assertEqual(adapter.public_evidence(stripped, root), g['evidence'])
+AssertionError: None != {'capture_file': 'reports/nationwide-veri[333 chars]cae'}
+
+----------------------------------------------------------------------
+Ran 1 test in 0.797s
+
+FAILED (failures=1)

@@ -1,0 +1,89 @@
+EEEEEEEE
+======================================================================
+ERROR: test_application_birthdate_copy_counts_signature_and_package (test_jiangsu_oct29d.JiangsuOct29DTests.test_application_birthdate_copy_counts_signature_and_package)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend\tests\test_jiangsu_oct29d.py", line 47, in test_application_birthdate_copy_counts_signature_and_package
+    g = adapter.parse_capture(code)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "backend\regional_jiangsu_oct29d.py", line 12, in parse_capture
+    raise ValueError('D自身指南尚未接入')
+ValueError: D自身指南尚未接入
+
+======================================================================
+ERROR: test_each_own_identity_and_capabilities_survive_publication (test_jiangsu_oct29d.JiangsuOct29DTests.test_each_own_identity_and_capabilities_survive_publication)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend\tests\test_jiangsu_oct29d.py", line 32, in test_each_own_identity_and_capabilities_survive_publication
+    g = adapter.parse_capture(name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "backend\regional_jiangsu_oct29d.py", line 12, in parse_capture
+    raise ValueError('D自身指南尚未接入')
+ValueError: D自身指南尚未接入
+
+======================================================================
+ERROR: test_evidence_six_columns_and_long_input_no_silent_truncation (test_jiangsu_oct29d.JiangsuOct29DTests.test_evidence_six_columns_and_long_input_no_silent_truncation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend\tests\test_jiangsu_oct29d.py", line 68, in test_evidence_six_columns_and_long_input_no_silent_truncation
+    doc = adapter.fill_candidate_document(adapter.parse_capture(code), 'evidence', data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'regional_jiangsu_oct29d' has no attribute 'fill_candidate_document'
+
+======================================================================
+ERROR: test_partial_optional_application_fields_are_not_dropped (test_jiangsu_oct29d.JiangsuOct29DTests.test_partial_optional_application_fields_are_not_dropped)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend\tests\test_jiangsu_oct29d.py", line 75, in test_partial_optional_application_fields_are_not_dropped
+    doc = adapter.fill_candidate_document(adapter.parse_capture('320508'), 'application',
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'regional_jiangsu_oct29d' has no attribute 'fill_candidate_document'
+
+======================================================================
+ERROR: test_public_clean_root_has_no_private_sample_fallback (test_jiangsu_oct29d.JiangsuOct29DTests.test_public_clean_root_has_no_private_sample_fallback)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend\tests\test_jiangsu_oct29d.py", line 125, in test_public_clean_root_has_no_private_sample_fallback
+    g = adapter.parse_capture('320508', capture_root=public)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "backend\regional_jiangsu_oct29d.py", line 12, in parse_capture
+    raise ValueError('D自身指南尚未接入')
+ValueError: D自身指南尚未接入
+
+======================================================================
+ERROR: test_reject_changed_fields_materials_and_capture_binding (test_jiangsu_oct29d.JiangsuOct29DTests.test_reject_changed_fields_materials_and_capture_binding)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend\tests\test_jiangsu_oct29d.py", line 97, in test_reject_changed_fields_materials_and_capture_binding
+    g = adapter.parse_capture('320508'); mutate(g)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "backend\regional_jiangsu_oct29d.py", line 12, in parse_capture
+    raise ValueError('D自身指南尚未接入')
+ValueError: D自身指南尚未接入
+
+======================================================================
+ERROR: test_reject_sample_placeholder_rebinding_and_annex_mutation (test_jiangsu_oct29d.JiangsuOct29DTests.test_reject_sample_placeholder_rebinding_and_annex_mutation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend\tests\test_jiangsu_oct29d.py", line 105, in test_reject_sample_placeholder_rebinding_and_annex_mutation
+    g = adapter.parse_capture('320508')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "backend\regional_jiangsu_oct29d.py", line 12, in parse_capture
+    raise ValueError('D自身指南尚未接入')
+ValueError: D自身指南尚未接入
+
+======================================================================
+ERROR: test_reject_wrong_scope_source_authority_and_task (test_jiangsu_oct29d.JiangsuOct29DTests.test_reject_wrong_scope_source_authority_and_task)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend\tests\test_jiangsu_oct29d.py", line 86, in test_reject_wrong_scope_source_authority_and_task
+    g = adapter.parse_capture('320508'); g[field] = value
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "backend\regional_jiangsu_oct29d.py", line 12, in parse_capture
+    raise ValueError('D自身指南尚未接入')
+ValueError: D自身指南尚未接入
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.347s
+
+FAILED (errors=8)

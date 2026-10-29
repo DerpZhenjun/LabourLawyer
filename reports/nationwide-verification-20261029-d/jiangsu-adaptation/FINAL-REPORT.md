@@ -1,0 +1,15 @@
+# 姑苏吴中自身文书适配验收
+
+姑苏320508、吴中320506各接入自身官方空白申请书（劳动者、单被申请人）与独立六列证据清单，共4项能力。模块ADAPTER为jiangsu_own_blank_oct29d_v1。自身D目录、正式URL、webId26/27、机关、业务事项编码、四材料、全部附件ID和实际SHA独立绑定；原件来自D各区自己的blank路径，没有替换为C文件。相同字节只复用纯OOXML填写引擎，不继承C来源或办理要求。
+
+原SOURCE-MANIFEST固定SHA为3b151169273cde16c4005035820301024a050897e7ebc5e6fb62f469f1a29ae3，PUBLIC-WHITELIST固定SHA为9280f4355e54f1ca500201c65ed306a0f48cf09beb6d21df7e9c9660a9314305。封存D来源124公开文件/120源文件经只读finalize.py --verify全部通过，未改原指南或任何原件。
+
+9项测试先真实RED后GREEN，最终4.014秒：各自source_id、地区/机关/事项/字段/材料/控件路径/SHA；发布生命周期；DOB1991-05-09；申请书副本3和证据副本2独立填写及缺省留空；只填电话/性别时不丢字段；12项长证据完整保留；样例、占位、缺失或损坏原件均拒绝。公开证明额外先RED验证后实现：仅显式root，固定双清单和本区全部公开文件实际字节、大小及root路径包含关系，空root不能回读原仓库；10份blank/flow授权，8sample不授权；严格绑定或材料变更不以平台标记掩盖。导出省略evidence时从同一公开root重建，传入伪造evidence仍拒绝。
+
+两区自身原件申请书各6页、证据各1页，共14页，通过独立Word只读导出并全部逐页view_image。4份全虚构输出各区申请2页、证据1页，共6页，也全部逐页打开：DOB完整、两份数独立、所有请求与理由可读，六列数据齐全；申请人签名/盖章/指模留空，日期在源真实槽中填写；证据提交人、接收人及接收日期留空，仅提交时间填写。未见重叠、截字或丢列。每份ZIP名称序列不变，只有word/document.xml改变，其他部件逐字节相同；原件SHA不变。
+
+打包render_docx实际运行因soffice.exe缺失失败，日志保留。随后使用只属于本任务的新Word实例，证明其独立身份与每个文档Hwnd归属，禁宏/链接更新、只读ExportPDF，以捆绑Poppler渲染。原件与生成件两次各4任务均完成，自己的实例均退出，原有实例保持。公开仅布尔安全摘要，无实际进程标识、SSO、样例字节或真实当事人payload。
+
+接口：parse_capture(code/name,capture_root=封存jiangsu目录)；candidate_contract、blank_binding、with_capabilities、fill_candidate_document均可root=公开仓库根。public_evidence(guide,root)、approved_report_attachment(guide,template,root)必须显式root。能力模板已附标准adapter/content_kind/generation_label及自己的strict_binding，不需额外跨区metadata。新产品Python统一LF，公开白名单记录实际文件SHA，便于发行归档复核。
+
+仅文书适配和离线版式验收完成，两个派生guide仍未发布、候选网页NOT_RUN；指南姑苏承诺1日适用环节未明等原有source_issues原样保留。身份证及证据复印件标题占位没有生成权限，8sample仍reference_sample_not_distributed。未改共享routes/provenance/配置、DB、Git、服务或C文件；没有启动或调用模型、没有实际申请操作。根集成另做真实网页生成下载和发布验收。

@@ -1,0 +1,27 @@
+# 姑苏吴中自身空白原件填写合同
+
+本合同只约束自身官方空白原件的工作副本。封存 `jiangsu/` 文件不可改写；八个样例附件不读取、不分发。四个原件完整路径、SHA、逐段 XML、表格及分节 XML、全部 ZIP 部件 SHA 见 `source-package-audit.json`。两区申请书 SHA 均为 `99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3`，证据清单均为 `c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c`；相同字节允许复用纯 OOXML 填写引擎，不允许继承别区来源、机关、材料要求或附件 ID。
+
+四份原件经独立 Word 只读导出并逐页打开。姑苏、吴中申请书各6页：第1页劳动者身份及两被申请人栏、第2页请求与理由续页、第3页落款及注释、第4至6页用人单位申请。两区证据清单各1页，六列表格与提交、接收栏齐全。原件14页均无截字或覆盖；原件表格高度、书写线与分布保留为设计依据。实际图在 `render/32050{6,8}-original-{application,evidence}/`，导出隔离证据见 `word-original-instance-isolation.json`。打包 renderer 因缺 soffice.exe 失败，保留 `packaged-render-attempt.log`；fallback 为 DispatchEx 独立新PID、逐文档Hwnd校验、禁宏/链接更新、只读ExportPDF与捆绑Poppler，不触碰用户Word。
+
+页面系统均为单节 A4（11906×16838 twip），上下边距1440、左右1800、页眉851、页脚992 twip，单栏、文档行距312。无新增页眉、页脚或装饰。样式、主题、编号和其他包部件按字节保留；唯一可改部件为 `word/document.xml`。申请标题原Normal段落居中黑色16pt粗体；正文原14pt宋体，西文Times New Roman，按源下划线及局部粗体。Normal基础为10.5pt、最小425twip行距；直接格式优先。证据标题原居中16pt，案号右对齐14pt粗体，提交/接收栏14pt。详细行、字体、对齐、边框/网格等以原XML和 `source-package-audit.json` 为准，不套新样式。
+
+申请书槽：`word/document.xml/body/p[0]` 为劳动者申请标题；零基段1至12映射姓名、性别、出生日期、证件、地址、电话、调解/援助、单个被申请人与代表/联系人。生日保持紧凑ISO `1991-05-09`，避免窄行中文年月溢出，日期语义不变。零基13至19是当前单被申请人表单不采集的第二被申请人区，可移除；零基20请求、28事实，按现有段落样式克隆请求续段/自然换行，移除未使用书写空段。57/58事项材料元信息及59起单位申请属于不支持的第二表，可整体剔除。落款“此致/委员会/申请人签名/年月日/附份数/注1至5”整体保留，委员会和真实日期槽允许填写，签名/盖章/指模位置留空。申请副本 `copyCount`、相关证据 `evidenceCopyCount` 分别填入，不互相默认；未填留空。指南申请书4份与原件副本按被申请人人数的语境同时保留。
+
+证据槽：零基段0委员会、3案号、5仅提交时间可填写；提交人、接收人及接收时间留空。首表6列依次序号、证据名称、来源、证明内容、原件/复印件、页数；从表格行1开始克隆源行或移除未使用行，页数剥离尾部“页”避免重复。长证明内容允许原字号换行、行高由exact转atLeast，超过12项克隆行，不截断。申请书最长标准表单请求/事实也不得截断。
+
+适配仅两种文书。身份证明及证据复印件所谓空白只有标题占位，不启用生成；样例始终 `reference_sample_not_distributed`。验收要求四份合成输出逐页打开、真实生日/独立份数/六列内容/签名空槽/日期正确，非document.xml部件字节保持；跨区/来源/机关/事项/字段/材料/控件/路径/SHA/样例及缺失原件均拒绝。网页与发布由根集成独立验收，本合同不代替网页批准。
+
+## 可复现的本地工具配置
+
+公开渲染任务中的source和pdf均为仓库相对路径，render-isolated.ps1从脚本位置确定项目根并拒绝越界路径；运行命令可从仓库根指定对应任务JSON。此处清理没有重新运行文档生成、Word或渲染，也没有改变现有文档、图片及PDF字节。
+
+qa.py通过环境变量明确选择本机工具：PARTLAWYER_QA_PYTHON为安装了docx、pypdf等项目依赖的Python解释器，PARTLAWYER_QA_POPPLER为pdftoppm可执行文件。值可使用绝对工具路径或仓库相对路径，不在公开文件中硬编码安装位置。请用指定的解释器运行qa.py；check-config只核验配置，不导出任何本机路径。originals、generate和rasterize仍是显式执行动作。
+
+```powershell
+$env:PARTLAWYER_QA_PYTHON = (Get-Command python).Source
+$env:PARTLAWYER_QA_POPPLER = (Get-Command pdftoppm).Source
+# 使用上述解释器运行本目录qa.py check-config检查工具，再按需要选择动作。
+```
+
+历史失败类型、调用方法、源字节SHA及视觉结论保留；公开栈路径已归一为相对工具名或仓库路径。每份修改前的完整原件保存在私有publication audit目录。
