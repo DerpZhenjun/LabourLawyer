@@ -1,0 +1,130 @@
+{
+  "scope": "Actual main HTTP verification, separate from browser/native receipts",
+  "passed": 11,
+  "main_base": "http://127.0.0.1:8000",
+  "results": [
+    {
+      "district": "海曙区",
+      "source_id": "d06f0baa1875a403975389c3",
+      "version": 190,
+      "kind": "application",
+      "http_status": 200,
+      "bytes": 27353,
+      "sha256": "28831aed5ffe6598764e112096f9f892a1f2e15804f84dfc3013531281fe3b50",
+      "origin": "official-blank-filled",
+      "method": "actual_main_http_post_not_browser"
+    },
+    {
+      "district": "海曙区",
+      "source_id": "d06f0baa1875a403975389c3",
+      "version": 190,
+      "kind": "evidence",
+      "http_status": 200,
+      "bytes": 15704,
+      "sha256": "a2f8be62efa4688e11d9d21596a1eaf5ec3a3ec202dc2b099b15f141169f3825",
+      "origin": "official-blank-filled",
+      "method": "actual_main_http_post_not_browser"
+    },
+    {
+      "district": "鄞州区",
+      "source_id": "dfa77c6a4ab07a39c9882710",
+      "version": 191,
+      "kind": "application",
+      "http_status": 200,
+      "bytes": 27353,
+      "sha256": "28831aed5ffe6598764e112096f9f892a1f2e15804f84dfc3013531281fe3b50",
+      "origin": "official-blank-filled",
+      "method": "actual_main_http_post_not_browser"
+    },
+    {
+      "district": "鄞州区",
+      "source_id": "dfa77c6a4ab07a39c9882710",
+      "version": 191,
+      "kind": "evidence",
+      "http_status": 200,
+      "bytes": 15704,
+      "sha256": "a2f8be62efa4688e11d9d21596a1eaf5ec3a3ec202dc2b099b15f141169f3825",
+      "origin": "official-blank-filled",
+      "method": "actual_main_http_post_not_browser"
+    },
+    {
+      "district": "肥东县",
+      "source_id": "6a6e5a998809bb0009176648",
+      "version": 193,
+      "kind": "application",
+      "http_status": 200,
+      "bytes": 12314,
+      "sha256": "b785391aefc4cb6faa4ce77b1666839a723b48b32d2a5388e5f6e915c61c9222",
+      "origin": "official-blank-filled",
+      "method": "actual_main_http_post_not_browser"
+    },
+    {
+      "district": "江阴市",
+      "source_id": "3d304f186983f34c4170a398",
+      "version": 194,
+      "kind": "evidence",
+      "http_status": 200,
+      "bytes": 11479,
+      "sha256": "3841d243f7d63aeaf119146c7cb2e6a69292a924d5253f0ecc6f7b6f20f2d4b8",
+      "origin": "official-blank-filled",
+      "method": "actual_main_http_post_not_browser"
+    },
+    {
+      "district": "江阴市",
+      "source_id": "3d304f186983f34c4170a398",
+      "version": 194,
+      "kind": "application",
+      "http_status": 200,
+      "bytes": 12602,
+      "sha256": "67bc9ec2feece45ae5ed7f48716b33e752da17f0cb6121739ec5b7bb738b312b",
+      "origin": "official-blank-filled",
+      "method": "actual_main_http_post_not_browser"
+    },
+    {
+      "district": "宜兴市",
+      "source_id": "509219666f61612819e02f36",
+      "version": 195,
+      "kind": "evidence",
+      "http_status": 200,
+      "bytes": 11479,
+      "sha256": "3841d243f7d63aeaf119146c7cb2e6a69292a924d5253f0ecc6f7b6f20f2d4b8",
+      "origin": "official-blank-filled",
+      "method": "actual_main_http_post_not_browser"
+    },
+    {
+      "district": "宜兴市",
+      "source_id": "509219666f61612819e02f36",
+      "version": 195,
+      "kind": "application",
+      "http_status": 200,
+      "bytes": 12602,
+      "sha256": "67bc9ec2feece45ae5ed7f48716b33e752da17f0cb6121739ec5b7bb738b312b",
+      "origin": "official-blank-filled",
+      "method": "actual_main_http_post_not_browser"
+    },
+    {
+      "district": "天心区",
+      "source_id": "77b8c6dd323c643b5025e13b",
+      "version": 197,
+      "kind": "application",
+      "http_status": 200,
+      "bytes": 16440,
+      "sha256": "61f810bb2a7f12d6976880d1bada1ee7f554ca16b41bba78fd4f4d18892c589c",
+      "origin": "official-blank-converted-filled",
+      "method": "actual_main_http_post_not_browser"
+    },
+    {
+      "district": "岳麓区",
+      "source_id": "45e6cae69c980713f0bfb87a",
+      "version": 198,
+      "kind": "application",
+      "http_status": 200,
+      "bytes": 16452,
+      "sha256": "9d9132c9be671c1d3ab85fe4f0c8ecca086e67528d1c9bb7861a1483c21c1b27",
+      "origin": "official-blank-converted-filled",
+      "method": "actual_main_http_post_not_browser"
+    }
+  ],
+  "models_called": false,
+  "case_data_accessed": false
+}

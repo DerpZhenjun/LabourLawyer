@@ -30,8 +30,11 @@ def prepare(root=ROOT,output=OUTPUT):
     root=Path(root).resolve();output=Path(output).resolve()
     if not output.is_relative_to(root/'.runtime'):raise ValueError('Only an isolated workspace runtime directory is permitted')
     if output.exists():raise ValueError('Existing candidate data is preserved; verify it instead of rebuilding')
-    snapshot=root/'data/public-regions'
+    history=root/'data/public-regions/history/20261028-181'
+    snapshot=history if history.is_dir() else root/'data/public-regions'
     manifest=json.loads((snapshot/'manifest.json').read_text('utf-8'))
+    if (manifest.get('guides'),manifest.get('generatable_localities'))!=(181,166):
+        raise ValueError('This dated candidate review requires its preserved 181/166 public baseline')
     for name,checksum in manifest['files'].items():
         if sha(snapshot/name)!=checksum:raise ValueError('Public source snapshot changed')
     published=json.loads((snapshot/'guides.json').read_text('utf-8'))

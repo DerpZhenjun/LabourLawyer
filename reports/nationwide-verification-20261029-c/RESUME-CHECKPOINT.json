@@ -1,0 +1,16 @@
+{
+  "phase": "four_own_guides_collected_not_adapted",
+  "published_guides": 190,
+  "published_generatable_localities": 173,
+  "unpublished_candidates": 28,
+  "own_sources": [
+    "hunan/yuhua/guide.json",
+    "hunan/wangcheng/guide.json",
+    "jiangsu/xinbei/guide.json",
+    "jiangsu/wujin/guide.json"
+  ],
+  "generation_granted": false,
+  "official_absence_claims": 0,
+  "models_called": false,
+  "next": "逐区核对内容与适配、转换及版式；先复用已验证引擎但不可复用其他地区的来源身份与办理要求。"
+}

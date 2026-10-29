@@ -1,0 +1,21 @@
+{
+  "commit": "94d2e0a8",
+  "method": "git archive HEAD extracted into fresh workspace directory; Python module and test roots printed and checked before execution",
+  "source_root": ".runtime/clean-source-94d2e0a8",
+  "tests": 25,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 1,
+  "seconds": 50.064,
+  "included": "published export -> clean public root bootstrap -> eleven actual ASGI generations, original byte equality, wrong source rejection",
+  "test_names": [
+    "backend.tests.test_public_provenance_integration",
+    "backend.tests.test_regional_public_provenance",
+    "backend.tests.test_hunan_oct29b_dispatch",
+    "backend.tests.test_oct29_candidate_dispatch",
+    "backend.tests.test_ningbo_candidate_dispatch"
+  ],
+  "models_called": false,
+  "main_database_modified": false,
+  "nationwide_complete": false
+}

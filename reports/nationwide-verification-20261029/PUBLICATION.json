@@ -1,0 +1,136 @@
+{
+  "release_id": "oct29-own-localities-v1",
+  "applied_at": "2026-10-29T10:20:04.364696+00:00",
+  "marker_url": "http://127.0.0.1:8000/api/regional-guides/release-capabilities",
+  "marker": {
+    "release_id": "oct29-own-localities-v1",
+    "adapters": [
+      "zhejiang_ningbo_own_blank_oct29_v1",
+      "jiangsu_own_blank_oct29_v1",
+      "anhui-feidong-official-application-20261029",
+      "hunan_own_legacy_worker_oct29b_v1"
+    ],
+    "source_bound": true,
+    "models_required": false,
+    "regional_store": "main_default"
+  },
+  "inserted": 9,
+  "versions": [
+    {
+      "scope": [
+        "zhejiang",
+        "宁波市",
+        "海曙区"
+      ],
+      "source_id": "d06f0baa1875a403975389c3",
+      "version": 190,
+      "content_hash": "1407a70fe6a07f12616cd48d9981e5eeeed4bcd723f27cfe6c69eff96af20083"
+    },
+    {
+      "scope": [
+        "zhejiang",
+        "宁波市",
+        "鄞州区"
+      ],
+      "source_id": "dfa77c6a4ab07a39c9882710",
+      "version": 191,
+      "content_hash": "2e9204ccfbde74c10a266541da6bf3ba8e0e077d89620a10854a6d5115a2432d"
+    },
+    {
+      "scope": [
+        "anhui",
+        "合肥市",
+        "瑶海区"
+      ],
+      "source_id": "4e6b2048e04a95835d3c164b",
+      "version": 192,
+      "content_hash": "3fc90f2488571b538af0d0feb43dfb83d22d4a0eba7c22c3d1454fb1be0c5988"
+    },
+    {
+      "scope": [
+        "anhui",
+        "合肥市",
+        "肥东县"
+      ],
+      "source_id": "6a6e5a998809bb0009176648",
+      "version": 193,
+      "content_hash": "c7e80974370bd74afc8bf5c20aa67475e9f1b3a59d50a1a5c12610993d25f113"
+    },
+    {
+      "scope": [
+        "jiangsu",
+        "无锡市",
+        "江阴市"
+      ],
+      "source_id": "3d304f186983f34c4170a398",
+      "version": 194,
+      "content_hash": "071f0403ab3ae391e2d7c7125b2d084a0c7306e3c101865e75288cbd078c4057"
+    },
+    {
+      "scope": [
+        "jiangsu",
+        "无锡市",
+        "宜兴市"
+      ],
+      "source_id": "509219666f61612819e02f36",
+      "version": 195,
+      "content_hash": "251b7f20e78d218149770f0bc213bc682e14dfc4bc10bbbdea7ee811503a4487"
+    },
+    {
+      "scope": [
+        "sichuan",
+        "成都市",
+        "青羊区"
+      ],
+      "source_id": "4749818268553b0ef09ced18",
+      "version": 196,
+      "content_hash": "3798319dc06191ac034a92de22b88a6e3d52ffeecaf1952fa271d34a33ddf70c"
+    },
+    {
+      "scope": [
+        "hunan",
+        "长沙市",
+        "天心区"
+      ],
+      "source_id": "77b8c6dd323c643b5025e13b",
+      "version": 197,
+      "content_hash": "68c6e623ffc167848dee14bf74c69f4c157c26999da9223043286e7e20e482b7"
+    },
+    {
+      "scope": [
+        "hunan",
+        "长沙市",
+        "岳麓区"
+      ],
+      "source_id": "45e6cae69c980713f0bfb87a",
+      "version": 198,
+      "content_hash": "b6f1edfa91625fbf7b90f2264fa35c1e0d07c3ae9800a0d3abf25c1b732719f9"
+    }
+  ],
+  "guides_before": 181,
+  "guides_after": 190,
+  "generatable_localities_after": 173,
+  "history_rows_after": 198,
+  "discovery_jobs_before": 4294,
+  "discovery_jobs_after": 4294,
+  "directory_db_unchanged": true,
+  "candidate_queue_after": 24,
+  "rollback_directory": ".runtime/reviewed-oct29-release-final/rollback-f7721907266a46168841d4050c02ff10",
+  "after_consistent_sqlite_sha256": "83ad09073ff9fb6155c6a8478dfa48558a1ca8317311cad8212c7dcd64a86725",
+  "public_files_sha256": {
+    "data/public-regions/guides.json": "55dc5c3b59f5fbcd6505a9f689e558bb9539115e542fcca3d2fdc00b332c0a18",
+    "data/public-regions/directory.json": "913daa7dd7bcbec570945fd7cc8ed08ae55b15c50665e5f8f4d967b62fc85ba8",
+    "data/public-regions/manifest.json": "b55bb94c7a5225ea349a4b3cb0cb2a0291ba9a4edd089642cf52564f1cc1c59e",
+    "config/regional_candidates.json": "ef4c423ae8a532b1e03b7d1073a6fd68cea9df7d5f9162c44a8cd2d09d63636f"
+  },
+  "prepared_receipt_sha256": "9aa24644f74f6bbc55f2ebe2f1cdfc3924a2fbc0c355a83f8d87a50570a70d21",
+  "nationwide_complete": false,
+  "models_called": false,
+  "services_restarted_by_agent": false,
+  "main_restart_performed_by_user": true,
+  "post_publication_candidate_updates": {
+    "unpublished_candidates": 28,
+    "reason": "C批新登记雨花、望城、新北、武进四个自身指南候选，均未适配或发布",
+    "configuration_sha256": "ff5551fe1b19c21edefc19111f83126be3a2b05b0e98239a8dc9fa9a656ea3d3"
+  }
+}

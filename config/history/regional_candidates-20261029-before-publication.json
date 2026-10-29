@@ -1,0 +1,350 @@
+[
+  {
+    "province": "tianjin",
+    "city": "天津市",
+    "district": "中新天津生态城",
+    "source_url": "https://www.eco-city.gov.cn/p1/sqldzc/20171010/461.html",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "jiangsu",
+    "city": "盐城市",
+    "district": "大丰区",
+    "region_code": "320904",
+    "source_id": "5725c8df9cb686d0517254e8",
+    "source_url": "https://www.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?iddept_ql_inf=11320982553776482X4002014302002&iddept_yw_inf=11320982553776482X400201430200201&webId=94#floor13",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "guangdong",
+    "city": "广州市",
+    "district": "白云区",
+    "region_code": "440111",
+    "source_id": "453e9a1c8cb2122fe7fa910d",
+    "source_url": "https://www.by.gov.cn/gzjg/qrlzyhshbzj/zcgg/cjgg/content/post_10451075.html",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "jiangxi",
+    "city": "赣州市",
+    "district": "蓉江新区",
+    "region_code": "360798",
+    "source_id": "9324666463f34ff63056367a",
+    "source_url": "https://rjxq.ganzhou.gov.cn/rjxq/tzgg/202606/f931ffb78c85406cbf9636a3489296b5.shtml",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "jiangsu",
+    "city": "连云港市",
+    "district": "海州区",
+    "region_code": "320706",
+    "source_id": "f2208816780787a1a046b91f",
+    "source_url": "https://lyghz.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=79&iddept_ql_inf=11320706014267312C4002014302002&ql_kind=20&iddept_yw_inf=11320706014267312C400201430200201",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "beijing",
+    "city": "北京市",
+    "district": "通州区",
+    "region_code": "110112",
+    "source_id": "dc45a34eec2aa0526fd71d26",
+    "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110112000000/c692cfd3-1a9d-4734-8f16-86b3a0dbafee.html?locationCode=110112000000&serverType=1002",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "beijing",
+    "city": "北京市",
+    "district": "朝阳区",
+    "region_code": "110105",
+    "source_id": "cc5c58104f9b879c75169d73",
+    "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110105000000/75d01c1c-dc66-49fe-93a1-7003eaaedd8a.html",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "guangdong",
+    "city": "广州市",
+    "district": "南沙区",
+    "region_code": "440115",
+    "source_id": "00af611e3d879eb1bade5aa5",
+    "source_url": "https://www.gzns.gov.cn/gzjg/gzsnsq/qzfgzbm/qrlzyhshbzj/ldrszyzc/content/post_5801798.html",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "guangdong",
+    "city": "深圳市",
+    "district": "福田区",
+    "region_code": "440304",
+    "source_id": "d09e8fdcc61cf4d1e83aef21",
+    "source_url": "https://www.szft.gov.cn/msfw/jyefw/cjwt/content/post_3288213.html",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "hunan",
+    "city": "长沙市",
+    "district": "芙蓉区",
+    "region_code": "430102",
+    "source_id": "14f4fa82caef6e452d6c61f2",
+    "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&rightsCode=002014302002&ywCode=01&approve_id=0661f202529745928ad2d4bc532e233a",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "beijing",
+    "city": "北京市",
+    "district": "东城区",
+    "region_code": "110101",
+    "source_id": "99643eb40ede8e6a0e0c46bc",
+    "source_url": "https://banshi.beijing.gov.cn/pubtask/task/1/110101000000/63fb2f78-f61a-434e-a834-ac398cd29417.html?locationCode=110101000000",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "jiangsu",
+    "city": "盐城市",
+    "district": "盐都区",
+    "region_code": "320903",
+    "source_id": "4abd1f31894593b284955389",
+    "source_url": "https://ycyd.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=93&iddept_yw_inf=11320928562941566D400201430200201&ql_kind=20&iddept_ql_inf=11320928562941566D4002014302002&iszx=undefined&g_fw_mode=undefined",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "jiangsu",
+    "city": "盐城市",
+    "district": "亭湖区",
+    "region_code": "320902",
+    "source_id": "15dd894fabf31dd87c1eeff9",
+    "source_url": "https://ycth.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=92&iddept_ql_inf=11320902014360656E4002014302002&ql_kind=20&iddept_yw_inf=11320902014360656E400201430200201",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "jiangsu",
+    "city": "盐城市",
+    "district": "东台市",
+    "region_code": "320981",
+    "source_id": "5e53e6d3179046433e5fdcb8",
+    "source_url": "https://ycdt.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=100&iddept_ql_inf=11320981014396886W4002014302002&ql_kind=20&iddept_yw_inf=11320981014396886W400201430200201",
+    "published": false,
+    "can_generate": false,
+    "document_visual_qa_status": "PASS_OWN_SOURCE_PAGES_REVIEWED_20261029",
+    "offline_qa_report": "reports/regional-release-20261029/jiangsu/320981/document-approval.json",
+    "api_qa_status": "PASS_FOUR_POSTS_ISOLATED_ASGI",
+    "web_qa_status": "NOT_RUN_POLICY_REFUSAL_RETAINED"
+  },
+  {
+    "province": "jiangsu",
+    "city": "盐城市",
+    "district": "射阳县",
+    "region_code": "320924",
+    "source_id": "69952614ad2cf51d91ee7460",
+    "source_url": "https://ycsy.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=98&iddept_ql_inf=11320924737070337G4002014302002&ql_kind=20&iddept_yw_inf=11320924737070337G400201430200201",
+    "published": false,
+    "can_generate": false,
+    "document_visual_qa_status": "PASS_OWN_SOURCE_PAGES_REVIEWED_20261029",
+    "offline_qa_report": "reports/regional-release-20261029/jiangsu/320924/document-approval.json",
+    "api_qa_status": "PASS_FOUR_POSTS_ISOLATED_ASGI",
+    "web_qa_status": "NOT_RUN_POLICY_REFUSAL_RETAINED"
+  },
+  {
+    "province": "zhejiang",
+    "city": "杭州市",
+    "district": "余杭区",
+    "region_code": "330110",
+    "source_id": "b08b6dbd369b40e729e61bdc",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=8f1bc917-6583-4541-be13-231de0b91d0b",
+    "published": false,
+    "can_generate": false,
+    "document_visual_qa_status": "PASS_OWN_SOURCE_PAGES_REVIEWED_20261029",
+    "offline_qa_report": "reports/regional-release-20261029/zhejiang/release-review.json",
+    "api_qa_status": "EXISTING_ADAPTER_REGRESSION_PASS",
+    "web_qa_status": "NOT_RUN_POLICY_REFUSAL_RETAINED"
+  },
+  {
+    "province": "zhejiang",
+    "city": "杭州市",
+    "district": "西湖区",
+    "region_code": "330106",
+    "source_id": "0d87f7ac3dd787c78e007adf",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=2b882c41-1fc2-4689-9f56-631917cf63fe",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "anhui",
+    "city": "合肥市",
+    "district": "蜀山区",
+    "region_code": "340104",
+    "source_id": "1f3c4740578771d2120b69f5",
+    "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=53018b8b19c540cd95ec66e2acdf07d1",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "anhui",
+    "city": "合肥市",
+    "district": "包河区",
+    "region_code": "340111",
+    "source_id": "82cef0762411e8bc5953e1d8",
+    "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=4bff399fd9af44849ea2a5d2f115e7da",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "jiangsu",
+    "city": "盐城市",
+    "district": "滨海县",
+    "region_code": "320922",
+    "source_id": "b9c51355dc6355e19cdd6c34",
+    "source_url": "https://ycbh.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=96&iddept_ql_inf=11320922014374388A4002014302002&ql_kind=20&iddept_yw_inf=11320922014374388A400201430200201",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "jiangsu",
+    "city": "盐城市",
+    "district": "响水县",
+    "region_code": "320921",
+    "source_id": "91b561d2d26a3dd2fa679983",
+    "source_url": "https://ycxs.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=95&iddept_ql_inf=1132092157541553004002014302002&ql_kind=20&iddept_yw_inf=113209215754155300400201430200201",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "zhejiang",
+    "city": "杭州市",
+    "district": "滨江区",
+    "region_code": "330108",
+    "source_id": "c7ce0943a05addb471b88571",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=a3163f38-bd62-4d18-8374-a79177c440fb",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "zhejiang",
+    "city": "杭州市",
+    "district": "上城区",
+    "region_code": "330102",
+    "source_id": "b5b5727640f8c28377abd27b",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=01a9e0fa-ab7e-4232-99e1-014d3ad99b45",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "anhui",
+    "city": "合肥市",
+    "district": "庐阳区",
+    "region_code": "340103",
+    "source_id": "d52d1fced81cbcacb208b7b0",
+    "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "sichuan",
+    "city": "成都市",
+    "district": "青羊区",
+    "region_code": "510105000000",
+    "source_id": "4749818268553b0ef09ced18",
+    "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "zhejiang",
+    "city": "宁波市",
+    "district": "海曙区",
+    "region_code": "330203",
+    "source_id": "d06f0baa1875a403975389c3",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=a57febe6-cd30-4a53-8b4c-f24edaaf7864",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "zhejiang",
+    "city": "宁波市",
+    "district": "鄞州区",
+    "region_code": "330212",
+    "source_id": "dfa77c6a4ab07a39c9882710",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=73f99740-5b23-424a-9ae8-be607cdceaeb",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "anhui",
+    "city": "合肥市",
+    "district": "瑶海区",
+    "region_code": "340102",
+    "source_id": "4e6b2048e04a95835d3c164b",
+    "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=b62d6ac30d27495b817e0b73bc4e3d2e",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "anhui",
+    "city": "合肥市",
+    "district": "肥东县",
+    "region_code": "340122",
+    "source_id": "6a6e5a998809bb0009176648",
+    "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "jiangsu",
+    "city": "无锡市",
+    "district": "江阴市",
+    "region_code": "320281",
+    "source_id": "3d304f186983f34c4170a398",
+    "source_url": "https://wxjy.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=39&iddept_ql_inf=1132028101404259474002014302002&ql_kind=20&iddept_yw_inf=113202810140425947400201430200201",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "jiangsu",
+    "city": "无锡市",
+    "district": "宜兴市",
+    "region_code": "320282",
+    "source_id": "509219666f61612819e02f36",
+    "source_url": "https://wxyx.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=40&iddept_ql_inf=1132028201404667594002014302002&ql_kind=20&iddept_yw_inf=113202820140466759400201430200201",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "hunan",
+    "city": "长沙市",
+    "district": "天心区",
+    "region_code": "430103",
+    "source_id": "77b8c6dd323c643b5025e13b",
+    "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+    "published": false,
+    "can_generate": false,
+    "api_qa_status": "PASS",
+    "document_visual_qa_status": "PASS",
+    "web_qa_status": "NOT_RUN",
+    "offline_qa_report": "reports/nationwide-verification-20261029-b/hunan/TEST-REPORT.md"
+  },
+  {
+    "province": "hunan",
+    "city": "长沙市",
+    "district": "岳麓区",
+    "region_code": "430104",
+    "source_id": "45e6cae69c980713f0bfb87a",
+    "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+    "published": false,
+    "can_generate": false,
+    "api_qa_status": "PASS",
+    "document_visual_qa_status": "PASS",
+    "web_qa_status": "NOT_RUN",
+    "offline_qa_report": "reports/nationwide-verification-20261029-b/hunan/TEST-REPORT.md"
+  }
+]

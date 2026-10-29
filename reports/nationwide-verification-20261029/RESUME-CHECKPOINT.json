@@ -1,9 +1,9 @@
 {
-  "phase": "candidate_browser_accepted_public_release_preparation",
+  "phase": "nine_localities_published_live_browser_recheck",
   "nationwide_complete": false,
-  "published_guides": 181,
-  "published_generatable_localities": 166,
-  "unpublished_candidates": 33,
+  "published_guides": 190,
+  "published_generatable_localities": 173,
+  "unpublished_candidates": 28,
   "first_batch_places_checked": 12,
   "first_batch_new_own_guides": 7,
   "first_batch_discovery_or_access_pending": 5,
@@ -17,15 +17,15 @@
   ],
   "candidate_web_acceptance": "PASS_A7_AND_HUNAN2",
   "backend_tests": {
-    "run": 539,
+    "run": 552,
     "failures": 0,
     "errors": 0,
     "skipped": 1,
-    "seconds": 226.939
+    "seconds": 218.762
   },
   "browser_main_passes": 10,
   "browser_review_passes": 6,
-  "openclaw_events_persisted": 26,
+  "openclaw_events_persisted": 34,
   "openclaw_acknowledgements": 0,
   "openclaw_sync_attempted": false,
   "models_called": false,
@@ -33,10 +33,10 @@
   "public_guide_snapshot_unchanged": true,
   "next_batch": "reports/nationwide-verification-20261029-b",
   "next": [
-    "清洁公开源码根验证已发布生命周期与11种生成能力",
-    "准备精确9地增量升级工具，主目录/任务/历史不替换",
-    "旧主后端没有新路由；交付具体人工重启步骤后再执行增量升级",
-    "继续雨花与望城自身官方来源采集，未核验不当无资料"
+    "完成真实主站11类原生浏览器生成复测",
+    "复测升级后的完整后端与公开发行测试，提交190/173快照与回执",
+    "继续雨花/望城自己的DOC转换与表单，不能因同SHA继承其他区规则",
+    "继续新北/武进各自官方事项采集，不将未知当未提供"
   ],
   "report": "TEST-REPORT.md",
   "candidate_station": {
@@ -46,11 +46,30 @@
     "models_disabled": true,
     "started_by_user": true
   },
-  "browser_candidate_checks": 43,
+  "browser_candidate_checks": 44,
   "actual_generated_documents_downloaded": 11,
   "actual_generated_pages_reviewed": 20,
   "second_batch_places_checked": 6,
   "second_batch_own_guides": 2,
   "second_batch_discovery_only": 4,
-  "main_backend_release_marker": "NOT_LOADED_MANUAL_RESTART_REQUIRED"
+  "main_backend_release_marker": "PASS_USER_RESTARTED_MAIN_DEFAULT",
+  "published_history_rows": 198,
+  "discovery_jobs_preserved": 4294,
+  "publication_receipt": "PUBLICATION.json",
+  "next_batch_c": "reports/nationwide-verification-20261029-c",
+  "third_batch_own_guides_unadapted": [
+    "430111",
+    "430112",
+    "320411",
+    "320412"
+  ],
+  "openclaw_main_outbox_verified": true,
+  "public_clean_source_tests": {
+    "commit": "94d2e0a8",
+    "run": 25,
+    "skipped": 1,
+    "failures": 0,
+    "seconds": 50.064
+  },
+  "review_registry_places": 22
 }

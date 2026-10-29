@@ -1,0 +1,63 @@
+{
+  "scope": "four independently captured C localities; not published",
+  "places": [
+    {
+      "province": "hunan",
+      "city": "长沙市",
+      "district": "雨花区",
+      "region_code": "430111",
+      "source_id": "64a4b3a0d0bbb800bd3309fb",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "published": false,
+      "can_generate": false,
+      "api_qa_status": "NOT_RUN",
+      "document_visual_qa_status": "NOT_RUN",
+      "web_qa_status": "NOT_RUN",
+      "collection_report": "reports/nationwide-verification-20261029-c/hunan/RESULTS.json"
+    },
+    {
+      "province": "hunan",
+      "city": "长沙市",
+      "district": "望城区",
+      "region_code": "430112",
+      "source_id": "e63cea876d59bcd7b306427f",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=f3060b49b9ed4a50b1b300254417b324",
+      "published": false,
+      "can_generate": false,
+      "api_qa_status": "NOT_RUN",
+      "document_visual_qa_status": "NOT_RUN",
+      "web_qa_status": "NOT_RUN",
+      "collection_report": "reports/nationwide-verification-20261029-c/hunan/RESULTS.json"
+    },
+    {
+      "province": "jiangsu",
+      "city": "常州市",
+      "district": "新北区",
+      "region_code": "320411",
+      "source_url": "https://czxb.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=43&iddept_ql_inf=1132040801411296X74002014302002&ql_kind=20&iddept_yw_inf=1132040801411296X7400201430200201",
+      "source_id": "0e3fbeb5a181d89ecffb084f",
+      "published": false,
+      "can_generate": false,
+      "api_qa_status": "NOT_RUN",
+      "document_visual_qa_status": "NOT_RUN",
+      "web_qa_status": "NOT_RUN",
+      "collection_report": "reports/nationwide-verification-20261029-c/jiangsu/FINAL-REPORT.md"
+    },
+    {
+      "province": "jiangsu",
+      "city": "常州市",
+      "district": "武进区",
+      "region_code": "320412",
+      "source_url": "https://czwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=44&iddept_ql_inf=1132048301413435XM4002014302002&ql_kind=20&iddept_yw_inf=1132048301413435XM400201430200201",
+      "source_id": "965b43f4ca2cf8c898b082af",
+      "published": false,
+      "can_generate": false,
+      "api_qa_status": "NOT_RUN",
+      "document_visual_qa_status": "NOT_RUN",
+      "web_qa_status": "NOT_RUN",
+      "collection_report": "reports/nationwide-verification-20261029-c/jiangsu/FINAL-REPORT.md"
+    }
+  ],
+  "generation_granted": false,
+  "official_absence_claims": 0
+}

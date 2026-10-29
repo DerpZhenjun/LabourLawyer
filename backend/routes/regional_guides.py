@@ -32,7 +32,8 @@ def release_capabilities():
     """Identify loaded generation code before a reviewed data-only upgrade."""
     return {'release_id':'oct29-own-localities-v1',
             'adapters':[NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,HUNAN_ADAPTER],
-            'source_bound':True,'models_required':False}
+            'source_bound':True,'models_required':False,
+            'regional_store':'main_default' if Path(os.getenv('LABOURLAWYER_REGIONAL_DB',ROOT/'backend/data/regional-guides.sqlite')).resolve()==(ROOT/'backend/data/regional-guides.sqlite').resolve() else 'alternate'}
 
 def store():
     return RegionalStore(os.getenv('LABOURLAWYER_REGIONAL_DB',ROOT/'backend/data/regional-guides.sqlite'))

@@ -796,5 +796,279 @@
     "application_template_status": "not_found_in_checked_sources",
     "evidence_template_status": "not_found_in_checked_sources",
     "note": "已查自身官方目录；目标词和已知事项对照词均返回0，故检索结果不能证明服务不存在，当前指南和模板仍待核验。"
+  },
+  {
+    "province": "hunan",
+    "city": "长沙市",
+    "district": "雨花区",
+    "region_code": "430111",
+    "authority": "雨花区人社局",
+    "source_id": "64a4b3a0d0bbb800bd3309fb",
+    "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+    "checked_at": "2026-10-29T10:10:23.479248+00:00",
+    "guide_status": "candidate",
+    "generation_enabled": false,
+    "reviewed_sections": [
+      "完整指南",
+      "材料展开",
+      "权利与义务",
+      "结果样本",
+      "常见问题"
+    ],
+    "templates": [
+      {
+        "region_code": "430111",
+        "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+        "kind": "blank",
+        "sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+        "original_name": "1－仲裁申请书（劳动者）.doc",
+        "document_types": [
+          "application"
+        ]
+      },
+      {
+        "region_code": "430111",
+        "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+        "kind": "blank",
+        "sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+        "original_name": "2－仲裁申请书（单位）.doc",
+        "document_types": [
+          "application"
+        ]
+      },
+      {
+        "region_code": "430111",
+        "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+        "kind": "sample",
+        "sha256": "369d38b1bcb1d92e0be6b815d6269967fc7324afbb63cc22a94331bbfcc220cc",
+        "original_name": "仲裁申请书（劳动者）.doc",
+        "document_types": [
+          "application"
+        ]
+      },
+      {
+        "region_code": "430111",
+        "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+        "kind": "sample",
+        "sha256": "00a47b36fa43d89f8c604d66585ac5e191360dd3d546feecc82ea8d6b4307444",
+        "original_name": "仲裁申请书（单位）.doc",
+        "document_types": [
+          "application"
+        ]
+      }
+    ],
+    "application_template_status": "blank_found",
+    "evidence_template_status": "not_found_in_checked_sources",
+    "note": "本区自身指南、4材料和2空白/2样例DOC已原生获取，原件SHA与已检查的同字节官方文书一致。仍未完成本区转换、版式及网页适配，不开放生成；不借用其他区的approve_id或办理要求。"
+  },
+  {
+    "province": "hunan",
+    "city": "长沙市",
+    "district": "望城区",
+    "region_code": "430112",
+    "authority": "望城区人力资源和社会保障局",
+    "source_id": "e63cea876d59bcd7b306427f",
+    "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=f3060b49b9ed4a50b1b300254417b324",
+    "checked_at": "2026-10-29T10:14:54.912449+00:00",
+    "guide_status": "candidate",
+    "generation_enabled": false,
+    "reviewed_sections": [
+      "完整指南",
+      "材料展开",
+      "权利与义务",
+      "结果样本",
+      "常见问题"
+    ],
+    "templates": [
+      {
+        "region_code": "430112",
+        "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=f3060b49b9ed4a50b1b300254417b324",
+        "kind": "blank",
+        "sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+        "original_name": "2－仲裁申请书（单位）.doc",
+        "document_types": [
+          "application"
+        ]
+      },
+      {
+        "region_code": "430112",
+        "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=f3060b49b9ed4a50b1b300254417b324",
+        "kind": "blank",
+        "sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+        "original_name": "1－仲裁申请书（劳动者）.doc",
+        "document_types": [
+          "application"
+        ]
+      },
+      {
+        "region_code": "430112",
+        "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=f3060b49b9ed4a50b1b300254417b324",
+        "kind": "sample",
+        "sha256": "369d38b1bcb1d92e0be6b815d6269967fc7324afbb63cc22a94331bbfcc220cc",
+        "original_name": "仲裁申请书（劳动者）.doc",
+        "document_types": [
+          "application"
+        ]
+      },
+      {
+        "region_code": "430112",
+        "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=f3060b49b9ed4a50b1b300254417b324",
+        "kind": "sample",
+        "sha256": "00a47b36fa43d89f8c604d66585ac5e191360dd3d546feecc82ea8d6b4307444",
+        "original_name": "仲裁申请书（单位）.doc",
+        "document_types": [
+          "application"
+        ]
+      }
+    ],
+    "application_template_status": "blank_found",
+    "evidence_template_status": "not_found_in_checked_sources",
+    "note": "本区自身指南、4材料和2空白/2样例DOC已原生获取，原件SHA与已检查的同字节官方文书一致。仍未完成本区转换、版式及网页适配，不开放生成；不借用其他区的approve_id或办理要求。"
+  },
+  {
+    "province": "jiangsu",
+    "city": "常州市",
+    "district": "新北区",
+    "region_code": "320411",
+    "authority": "常州高新技术产业开发区（新北区）人力资源和社会保障局",
+    "source_url": "https://czxb.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=43&iddept_ql_inf=1132040801411296X74002014302002&ql_kind=20&iddept_yw_inf=1132040801411296X7400201430200201",
+    "source_id": "0e3fbeb5a181d89ecffb084f",
+    "checked_at": "2026-10-29T10:18:54.316Z",
+    "guide_status": "candidate",
+    "generation_enabled": false,
+    "reviewed_sections": [
+      "受理标准",
+      "办理材料",
+      "办理流程",
+      "办理时限",
+      "收费情况",
+      "办理结果",
+      "法律依据",
+      "常见问题",
+      "基本信息",
+      "咨询投诉"
+    ],
+    "templates": [
+      {
+        "region_code": "320411",
+        "source_url": "https://czxb.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=43&iddept_ql_inf=1132040801411296X74002014302002&ql_kind=20&iddept_yw_inf=1132040801411296X7400201430200201",
+        "kind": "blank",
+        "original_name": "证据复印件.docx",
+        "sha256": "8dae42265086696071d6173f162d47c9fdd9bdf4782cf1c70d28779b5894277f",
+        "document_types": []
+      },
+      {
+        "region_code": "320411",
+        "source_url": "https://czxb.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=43&iddept_ql_inf=1132040801411296X74002014302002&ql_kind=20&iddept_yw_inf=1132040801411296X7400201430200201",
+        "kind": "blank",
+        "original_name": "证据清单.docx",
+        "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+        "document_types": [
+          "evidence"
+        ]
+      },
+      {
+        "region_code": "320411",
+        "source_url": "https://czxb.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=43&iddept_ql_inf=1132040801411296X74002014302002&ql_kind=20&iddept_yw_inf=1132040801411296X7400201430200201",
+        "kind": "blank",
+        "original_name": "身份证复印件.docx",
+        "sha256": "f36541d8f1c49a0229d1510ae9f5cc5eb72ff294a17aec69c82b06e7ec571714",
+        "document_types": []
+      },
+      {
+        "region_code": "320411",
+        "source_url": "https://czxb.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=43&iddept_ql_inf=1132040801411296X74002014302002&ql_kind=20&iddept_yw_inf=1132040801411296X7400201430200201",
+        "kind": "blank",
+        "original_name": "劳动人事争议仲裁申请书.docx",
+        "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+        "document_types": [
+          "application"
+        ]
+      },
+      {
+        "region_code": "320411",
+        "source_url": "https://czxb.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=43&iddept_ql_inf=1132040801411296X74002014302002&ql_kind=20&iddept_yw_inf=1132040801411296X7400201430200201",
+        "kind": "instruction",
+        "original_name": "仲裁申请.png",
+        "sha256": "dc407a951d748964846c061b0331167db5c0178a8a7515f6ab933494c74aa8ee",
+        "document_types": []
+      }
+    ],
+    "application_template_status": "blank_found",
+    "evidence_template_status": "blank_found",
+    "note": "已核对自身正式指南和4项材料详情；本区空白下载控件原件已封存，仍待文书内容、填写、版式及网页适配。样例不随公开包分发，不将样例算空白；网办已到登录及验证码，未登录或提交。"
+  },
+  {
+    "province": "jiangsu",
+    "city": "常州市",
+    "district": "武进区",
+    "region_code": "320412",
+    "authority": "常州市武进区人社局",
+    "source_url": "https://czwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=44&iddept_ql_inf=1132048301413435XM4002014302002&ql_kind=20&iddept_yw_inf=1132048301413435XM400201430200201",
+    "source_id": "965b43f4ca2cf8c898b082af",
+    "checked_at": "2026-10-29T10:23:34.448Z",
+    "guide_status": "candidate",
+    "generation_enabled": false,
+    "reviewed_sections": [
+      "受理标准",
+      "办理材料",
+      "办理流程",
+      "办理时限",
+      "收费情况",
+      "办理结果",
+      "法律依据",
+      "常见问题",
+      "基本信息",
+      "咨询投诉"
+    ],
+    "templates": [
+      {
+        "region_code": "320412",
+        "source_url": "https://czwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=44&iddept_ql_inf=1132048301413435XM4002014302002&ql_kind=20&iddept_yw_inf=1132048301413435XM400201430200201",
+        "kind": "blank",
+        "original_name": "证据复印件.docx",
+        "sha256": "8dae42265086696071d6173f162d47c9fdd9bdf4782cf1c70d28779b5894277f",
+        "document_types": []
+      },
+      {
+        "region_code": "320412",
+        "source_url": "https://czwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=44&iddept_ql_inf=1132048301413435XM4002014302002&ql_kind=20&iddept_yw_inf=1132048301413435XM400201430200201",
+        "kind": "blank",
+        "original_name": "证据清单.docx",
+        "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+        "document_types": [
+          "evidence"
+        ]
+      },
+      {
+        "region_code": "320412",
+        "source_url": "https://czwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=44&iddept_ql_inf=1132048301413435XM4002014302002&ql_kind=20&iddept_yw_inf=1132048301413435XM400201430200201",
+        "kind": "blank",
+        "original_name": "身份证复印件.docx",
+        "sha256": "f36541d8f1c49a0229d1510ae9f5cc5eb72ff294a17aec69c82b06e7ec571714",
+        "document_types": []
+      },
+      {
+        "region_code": "320412",
+        "source_url": "https://czwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=44&iddept_ql_inf=1132048301413435XM4002014302002&ql_kind=20&iddept_yw_inf=1132048301413435XM400201430200201",
+        "kind": "blank",
+        "original_name": "劳动人事争议仲裁申请书.docx",
+        "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+        "document_types": [
+          "application"
+        ]
+      },
+      {
+        "region_code": "320412",
+        "source_url": "https://czwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=44&iddept_ql_inf=1132048301413435XM4002014302002&ql_kind=20&iddept_yw_inf=1132048301413435XM400201430200201",
+        "kind": "instruction",
+        "original_name": "仲裁申请.png",
+        "sha256": "dc407a951d748964846c061b0331167db5c0178a8a7515f6ab933494c74aa8ee",
+        "document_types": []
+      }
+    ],
+    "application_template_status": "blank_found",
+    "evidence_template_status": "blank_found",
+    "note": "已核对自身正式指南和4项材料详情；本区空白下载控件原件已封存，仍待文书内容、填写、版式及网页适配。样例不随公开包分发，不将样例算空白；网办已到登录及验证码，未登录或提交。"
   }
 ]
