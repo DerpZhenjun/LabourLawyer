@@ -36,7 +36,7 @@
       <section class="region-panel guide-overview" id="regional-overview">
         <div class="guide-title-row"><span class="ll-eyebrow">{{ province?.name }} · {{ guide.city }} · {{ guide.district }}</span><span class="region-badge" :class="{'caution':guide.verification_status!=='verified'}">{{ guide.verification_status==='conflict'?'部分信息有冲突':guide.verification_status==='partial'?'部分内容待核实':'已核对公开指南' }}</span></div>
         <h2>{{ guide.service_name }}</h2><p class="region-authority">办理机关：{{ guide.authority || '待核实' }}</p>
-        <dl class="guide-facts"><div><dt><i class="fa-solid fa-building" aria-hidden="true"></i> 办理形式</dt><dd data-field="handling-form">{{ field('办理形式') }}</dd></div><div><dt>官网显示的办理时限</dt><dd>{{ field('承诺办结时限') }}</dd></div><div><dt>是否收费</dt><dd>{{ field('是否收费') }}</dd></div><div><dt>到现场次数</dt><dd>{{ field('到办事现场次数')==='待核实'?'待核实':field('到办事现场次数')+' 次' }}</dd></div></dl>
+        <dl class="guide-facts"><div><dt><i class="fa-solid fa-building" aria-hidden="true"></i> 办理形式</dt><dd data-field="handling-form">{{ field('办理形式') }}</dd></div><div><dt>官网显示的办理时限</dt><dd>{{ field('承诺办结时限') }}</dd></div><div><dt>是否收费</dt><dd>{{ field('是否收费') }}</dd></div><div><dt>到现场次数</dt><dd>{{ visitCountLabel(guide) }}</dd></div></dl>
         <p class="region-small">这里的时限是官网事项办理信息，不表示争议案件将在这个时间内裁决。</p>
         <div v-for="warning in guide.warnings" :key="warning" class="region-notice" role="note"><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i><p>{{ plainWarning(warning) }}</p></div>
         <div class="guide-source"><a :href="guide.source_url" target="_blank" rel="noopener noreferrer">核对官方原文 ↗</a><span>核验：{{ date(guide.verified_at) }} · 官网版本 {{ guide.official_version || '未提供' }}</span></div>
@@ -51,12 +51,12 @@
         <dl class="window-details"><div><dt>窗口地点</dt><dd>{{ field('办理地点') }}</dd></div><div><dt>办公时间</dt><dd>{{ field('办理时间') }}</dd></div><div><dt>咨询电话</dt><dd>{{ field('咨询方式') }}</dd></div><div><dt>必须到现场原因</dt><dd>{{ field('必须到现场原因') }}</dd></div><div><dt>服务对象</dt><dd>{{ field('服务对象') }}</dd></div></dl>
       </section>
       <section class="region-panel" id="regional-materials"><span class="ll-eyebrow">02 · 准备材料</span><h2>这份当地指南列出的材料</h2><p>下面保留官网名称和份数。签字、复印和其他情形请同时核对详细说明。</p>
-        <div class="regional-material" v-for="(m,index) in guide.materials" :key="m.id"><div class="material-top"><span class="material-number">{{ index+1 }}</span><div><h3>{{ m.name }}</h3><p>{{ m.required || '是否必需待核实' }} · {{ m.original_copy || '原件/复印件待核实' }} · {{ m.format || '形式待核实' }} · {{ m.copies || '份数待核实' }}{{ m.copies?' 份':'' }}</p><p v-for="badge in m.official_badges || []" :key="badge" class="region-small">官网另有标记“{{ badge }}”，适用条件尚待确认；不要据此自行省略这项材料。</p></div></div><details><summary>查看这项材料的详细要求</summary><p class="region-small">材料用途与适用情形：{{ m.purpose || '官网未单列说明，待核实；不要自行省略必要材料。' }}</p><dl class="window-details"><div v-for="(value,key) in m.details" :key="key"><dt>{{ key }}</dt><dd>{{ value || '官网未填写，待核实' }}</dd></div></dl></details></div>
+        <div class="regional-material" v-for="(m,index) in guide.materials" :key="m.id"><div class="material-top"><span class="material-number">{{ index+1 }}</span><div><h3>{{ m.name }}</h3><p>{{ m.required || '是否必需待核实' }} · {{ originalCopyLabel(m) }} · {{ m.format || '形式待核实' }} · {{ m.copies || '份数待核实' }}{{ m.copies?' 份':'' }}</p><p v-for="badge in m.official_badges || []" :key="badge" class="region-small">官网另有标记“{{ badge }}”，适用条件尚待确认；不要据此自行省略这项材料。</p></div></div><details><summary>查看这项材料的详细要求</summary><p class="region-small">材料用途与适用情形：{{ m.purpose || '官网未单列说明，待核实；不要自行省略必要材料。' }}</p><dl class="window-details"><div v-for="(value,key) in materialDetails(m)" :key="key"><dt>{{ key }}</dt><dd>{{ value || '官网未填写，待核实' }}</dd></div></dl></details></div>
         <p v-if="!guide.materials.length" class="region-notice">材料清单尚未核验，不显示确定的当地要求。</p>
       </section>
       <section class="region-panel" id="regional-documents"><span class="ll-eyebrow">03 · 文书与下载</span><h2>看清来源，再填写</h2><p>“空白表格”和“示例样表”不是一回事。下载保留官网原文件，辅助填写不保证受理。</p>
         <div class="regional-template" v-for="t in guide.templates" :key="t.id"><i class="fa-regular fa-file-lines" aria-hidden="true"></i><div><h3>{{ t.original_name }}</h3><p>{{ t.official_kind==='blank'?'官方空白表格':t.official_kind==='sample'?'官方示例样表（不是空白模板）':'附件类型待核实' }}</p><details><summary>来源与文件校验</summary><p>适用地区编码：{{ t.region_code }}</p><p class="file-hash">SHA256：{{ t.sha256 || '未下载，待核验' }}</p><a :href="t.source_url" target="_blank" rel="noopener noreferrer">官方材料栏目 ↗</a></details></div><a v-if="t.download_status==='downloaded'" class="ll-button secondary" :href="templateURL(region,t.id)">下载原文件</a><span v-else>下载待核验</span></div>
-        <div v-if="generatable" class="reference-fill"><h3>按{{ guide.district }}{{ blankGeneration?'官方空白表格':'参考样表' }}辅助填写</h3><p>{{ blankGeneration?'当前填写使用本地区官网提供、已核对的空白表格。':'官网将申请书附件列为示例样表。' }}页面上方可以直接填写；默认内容为本平台虚构示例，请替换为真实信息。签名位置留空，不自动提交申请。</p><div class="region-actions"><RouterLink :to="documentLink('application')" class="ll-button">填写申请书</RouterLink><RouterLink :to="documentLink('evidence')" class="ll-button secondary">填写证据清单</RouterLink></div></div>
+        <div v-if="generatable" class="reference-fill"><h3>按{{ guide.district }}{{ blankGeneration?'官方空白表格':'参考样表' }}辅助填写</h3><p>{{ blankGeneration?'当前填写使用本地区官网提供、已核对的空白表格。':'官网将申请书附件列为示例样表。' }}页面上方可以直接填写；默认内容为本平台虚构示例，请替换为真实信息。签名位置留空，不自动提交申请。</p><div class="region-actions"><RouterLink v-if="hasGenerationKind(guide,'application')" :to="documentLink('application')" class="ll-button">填写申请书</RouterLink><RouterLink v-if="hasGenerationKind(guide,'evidence')" :to="documentLink('evidence')" class="ll-button secondary">填写证据清单</RouterLink></div></div>
         <p v-else class="region-notice">本地区附件尚未通过自动填写核验，{{ guide.templates.some(t=>t.download_status==='downloaded')?'可下载上方已核实的原文件参考。':'尚未核实可下载文件，请打开官方原文查询或向办理机构确认。' }}不会套用其他地区的文书。</p>
       </section>
       <section class="region-panel" id="regional-original"><span class="ll-eyebrow">04 · 完整原文</span><h2>核对受理条件和其他说明</h2><details v-for="(text,name) in guide.sections" :key="name" class="original-section"><summary>{{ name }}</summary><p class="official-raw">{{ text || '官网未提供，待核实' }}</p></details><p class="region-small">原文来自本次公开页面采集。页面内容更新后，应再次核验；不能替代办理机构对管辖、材料和受理条件的判断。</p></section>
@@ -65,6 +65,7 @@
   </main>
 </template>
 <script setup>
+import {guideField,visitCountLabel,originalCopyLabel,materialDetails,hasGenerationKind} from '@/data/regionalGuidePresentation'
 import {computed,ref,onMounted} from 'vue'
 import {useRoute,useRouter,RouterLink} from 'vue-router'
 import {provinces,findProvince} from '@/data/provinces'
@@ -91,7 +92,7 @@ const chengduAreas=computed(()=>coverage.value.filter(g=>g.province==='sichuan'&
 const generatable=computed(()=>guide.value?.templates.some(t=>t.can_generate))
 const blankGeneration=computed(()=>guide.value?.templates.filter(t=>t.can_generate).every(t=>t.official_kind==='blank'))
 const plainWarning=value=>String(value).replaceAll('not_found_in_checked_sources','本次已查来源未找到').replaceAll('NOT_RUN','尚未核验')
-const field=name=>guide.value?.fields[name]?.raw_value || '待核实'
+const field=name=>guideField(guide.value,name)
 const date=value=>value?new Date(value).toLocaleString('zh-CN',{hour12:false}):'待核实'
 const changeProvince=slug=>router.replace({path:`/province/${slug}`,query:{}})
 const changePlace=(key,value)=>router.replace({query:{...route.query,[key]:value,...(key==='city'?{district:''}:{})}})

@@ -1,0 +1,42 @@
+{
+  "code_only": true,
+  "source_manifests_and_official_originals_unchanged": true,
+  "files": [
+    {
+      "file": "backend/regional_hunan_oct29c.py",
+      "before_sha256": "0018fe0d649dd86169df39bb882b4e2f5f8033b33950e658f131f8f3dd57b8dc",
+      "after_sha256": "d5efef6b0d68984474207d1758e23082fabbfeb807502b68326af39a796b1e3a",
+      "reason": "Product Python LF only; official source and derived DOCX bytes unchanged"
+    },
+    {
+      "file": "backend/reviewed_oct29c_release.py",
+      "before_sha256": "658ddb93f52286570ae4c4fc3e341d90e5083ecda14f145960dc42bba3651c37",
+      "after_sha256": "7ae5407bc4541d826f287def098a0818decab58ba7386e63b37905cc491ea167",
+      "reason": "Product Python LF only; official source and derived DOCX bytes unchanged"
+    },
+    {
+      "file": "backend/regional_adapters.py",
+      "before_sha256": "b38625114c29f58159b2d119b282a53332de9f621870eaa8a4962b602d12fb11",
+      "after_sha256": "9bf905d3528c2a294d05997002c041e7495c4da7c55a31235cc2be99a74c630e",
+      "reason": "Product Python LF only; official source and derived DOCX bytes unchanged"
+    },
+    {
+      "file": "backend/routes/regional_guides.py",
+      "before_sha256": "1bc314f02735e72642bb28cea3d4f951d13c77b8903a210a61d145bc29a919ae",
+      "after_sha256": "536eee66c49fcfa4bcaf1d403281812013301c3c23dcb893d2f130877b837b8b",
+      "reason": "Product Python LF only; official source and derived DOCX bytes unchanged"
+    },
+    {
+      "file": "backend/tests/test_reviewed_oct29c_release.py",
+      "before_sha256": "c6053de9a3cb36cea3dca98ffe1652765fbc74157982fc3eeca130f72e9f8e3c",
+      "after_sha256": "8be7ea0bf04fa824d4bb658b52a83682629551867ae751cfd7f2755dd1d70db8",
+      "reason": "Product Python LF only; official source and derived DOCX bytes unchanged"
+    },
+    {
+      "file": "backend/tests/test_oct29c_public_release.py",
+      "before_sha256": "8ad2758f57c8e1e739914a30be6e7e9493b72c4acb7480d481283a12865e5578",
+      "after_sha256": "4597bbac96b4d77a41467b72e6718fd9491faf9cc8a783f62e2897485152f941",
+      "reason": "Product Python LF only; official source and derived DOCX bytes unchanged"
+    }
+  ]
+}

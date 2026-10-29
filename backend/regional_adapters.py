@@ -13,6 +13,14 @@ from regional_oct29_bindings import (with_capabilities as with_oct29_capabilitie
 from regional_hunan_oct29b import (with_capabilities as with_hunan_capabilities,
     blank_binding as hunan_blank_binding, ADAPTER as HUNAN_ADAPTER, SPECS as HUNAN_SPECS)
 
+from regional_hunan_oct29c import (with_capabilities as with_hunan_c_capabilities, blank_binding as hunan_c_binding, ADAPTER as HUNAN_C_ADAPTER, SPECS as HUNAN_C_SPECS)
+from regional_jiangsu_oct29c import (with_capabilities as with_jiangsu_c_capabilities, blank_binding as jiangsu_c_contract, ADAPTER as JIANGSU_C_ADAPTER, SUPPORTED as JIANGSU_C_CODES)
+
+def jiangsu_c_binding(guide,template):
+    try:return jiangsu_c_contract(guide,template)['kind']
+    except (ValueError,OSError,KeyError,TypeError):return None
+
+
 REFERENCE_SHA256 = '80d1dc3989e9da1ef2c763cbde54bd474d691a4febba48425fb2cc3471d94562'
 BINDINGS = {
     '510110000000': ('天府新区', '1064c9ed5635a0d224e4eee5', 'ec3268e5fda94301ab40a7e086afe07a', 'tianfu_reference_v1'),
@@ -271,10 +279,22 @@ def with_reference_capabilities(guide):
     result=with_oct29_capabilities(result)
     if result.get('province')=='hunan' and result.get('region_code') in {s['code'] for s in HUNAN_SPECS.values()}:
         return with_hunan_capabilities(result)
+    if result.get('province')=='hunan' and result.get('region_code') in {s['code'] for s in HUNAN_C_SPECS.values()}:
+        return with_hunan_c_capabilities(result)
+    if result.get('province')=='jiangsu' and result.get('region_code') in JIANGSU_C_CODES:
+        result=with_jiangsu_c_capabilities(result)
+        for template in result['templates']:
+            if template.get('can_generate'):template.update(adapter=JIANGSU_C_ADAPTER,content_kind='filled_official_blank',generation_label='依据本区自身官方空白表格填写')
+        return result
     return result
 
 
 def checked_reference_adapter(guide, template, kind):
+    if template.get('adapter') in {HUNAN_C_ADAPTER,JIANGSU_C_ADAPTER}:
+        own_kind=hunan_c_binding(guide,template) if template['adapter']==HUNAN_C_ADAPTER else jiangsu_c_binding(guide,template)
+        if own_kind!=kind or template.get('can_generate') is not True or template.get('document_types')!=[kind]:
+            raise ValueError('本区C批自身来源与文书类型未通过核验')
+        return template['adapter']
     if template.get('adapter')==HUNAN_ADAPTER:
         if (hunan_blank_binding(guide,template)!=kind or kind!='application'
             or template.get('can_generate') is not True or template.get('document_types')!=[kind]):

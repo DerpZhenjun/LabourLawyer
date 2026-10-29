@@ -1,0 +1,133 @@
+{
+  "scope": "C4 native candidate acceptance proof, synthetic-only actual DOCX/PDF/PNG; no raw payload, sessions, cookies, actual process identifiers or machine paths.",
+  "files": {
+    "reports/nationwide-verification-20261029-c/acceptance/ACCEPTANCE-REPORT.md": {
+      "sha256": "e73aa012b2745ced440fed99ae8d9a3672d406f8d0a13ba065ba1597b69e8dd2",
+      "bytes": 2326
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/BROWSER-RESULT.json": {
+      "sha256": "42532900f31ed4c9486b1661f2f8a61046916b40bfbab43af35a5bd4e5ab10e5",
+      "bytes": 4838
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json": {
+      "sha256": "9bc9532dc05639cef58cef6722e1abfc6c195c8d6e8bb2697475220fbedf26b0",
+      "bytes": 8165
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/downloads/320411-application.docx": {
+      "sha256": "99a31edb32828fad54d480f4bb815c85b8f1e807e1922c98de263893677868b7",
+      "bytes": 12768
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/downloads/320411-evidence.docx": {
+      "sha256": "fd3a1aeac5ca612b83cd4702e9a8b1ad257614aad427c2110f1bc8c357fcf780",
+      "bytes": 11587
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/downloads/320412-application.docx": {
+      "sha256": "1bd4196c064cf1d22328587ea0c0c524d365b3cf35e5ebd42eff7bce374be4fb",
+      "bytes": 12768
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/downloads/320412-evidence.docx": {
+      "sha256": "8674f16c7b883268347f2c7ffd5c7166d054b7a2179471fdb73b3d74ce4c9aa5",
+      "bytes": 11582
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/downloads/430111-application.docx": {
+      "sha256": "063704933bba530a4752edf778cead293d93890d05420260311aa92d9db3a988",
+      "bytes": 16737
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/downloads/430112-application.docx": {
+      "sha256": "04a60b48449e8ccff65078aff9b2c7462ccb09010862c9292189f571234e1183",
+      "bytes": 16720
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/hn-1440-material.png": {
+      "sha256": "79897d26c1d66161b9318b396cb8e966e51d72205f222d32f90815d50fa84f66",
+      "bytes": 129371
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/hn-375-cta.png": {
+      "sha256": "cdd8d8b4bac88c7d79fa7f14cb5d204a2ffd8147ba7d2295d9d163c61bbee1a0",
+      "bytes": 65011
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/hn-375.png": {
+      "sha256": "158ce95a7d4b4e55871e4bb88a7fd71609f1900560920464e71d1fcda58d1ec6",
+      "bytes": 59180
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/hn-768.png": {
+      "sha256": "8226477291c6e6b1bb7b30d43ce42a3d7e9e72046d799a5acd063f9b199b9ef4",
+      "bytes": 108867
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/js-1440.png": {
+      "sha256": "201e078dcc760c1c73dfedb22973469f70c6f5a3d4d42148e45019fb7c34882e",
+      "bytes": 123748
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/js-768-stable.png": {
+      "sha256": "83341cdcc8104ef3fa72ed0b8b0a837605fac8323429cb884132527240c300f5",
+      "bytes": 104049
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/NATIVE-GENERATION-PROOF.json": {
+      "sha256": "0af58bfcea84307fb973d158925810f8541a7041ca9751370c188ce15a863a2c",
+      "bytes": 4224
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/pages/320411-application/application.pdf": {
+      "sha256": "6a55ad7770d6217bab18a05eefe02e6338a00a7a08cccf64d3d7530fafb917c4",
+      "bytes": 194451
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/pages/320411-application/page-1.png": {
+      "sha256": "dd75e186ed5217f115aaec0b604523e02470d100535890390541fede04bb413a",
+      "bytes": 218645
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/pages/320411-application/page-2.png": {
+      "sha256": "875c6452814401ed68943a12d0bdeb126a59634c742a6ccea9b76a461fbafb94",
+      "bytes": 92097
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/pages/320411-evidence/application.pdf": {
+      "sha256": "16013915bab8d70bf4a88d62e28b0cdf40b82e2b24853733f4e8990417fe3607",
+      "bytes": 216945
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/pages/320411-evidence/page-1.png": {
+      "sha256": "7e5846b693d9f31d75b808cc4fce9f8037590bfc7e7bc77e2b459d0bcfe01352",
+      "bytes": 66356
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/pages/320412-application/application.pdf": {
+      "sha256": "0383086f92682880fb92006a38cb1b14b0f09d05a82bc10040aa8f1464ec372f",
+      "bytes": 194374
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/pages/320412-application/page-1.png": {
+      "sha256": "e12da670514d8d88a39f6334d46583db9e6055f99f17f9e6b5de00addb8de2a1",
+      "bytes": 218710
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/pages/320412-application/page-2.png": {
+      "sha256": "875c6452814401ed68943a12d0bdeb126a59634c742a6ccea9b76a461fbafb94",
+      "bytes": 92097
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/pages/320412-evidence/application.pdf": {
+      "sha256": "11ab94db33a80227653fbf9e61047ec0d729e458794a9bd5cf5049a27bf961f7",
+      "bytes": 216619
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/pages/320412-evidence/page-1.png": {
+      "sha256": "8486d11a8b97b648d936ca004a2438a7df9dd23f70cf7c3fa0d486bff84c5852",
+      "bytes": 64215
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/pages/430111-application/application.pdf": {
+      "sha256": "3d1dd0e7f19bf90bd7e0a40fb8c9fae6b79c7abf8f22905be91c34004e34816b",
+      "bytes": 147043
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/pages/430111-application/page-1.png": {
+      "sha256": "8a9757dfd70a866712dbf8ae85af4543ea9cb7f60ad689833ce3db78287cc548",
+      "bytes": 177585
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/pages/430111-application/page-2.png": {
+      "sha256": "332a5a6d816240cc7cd88bbe090063d1d37f61c36ec03c75d00c5e40529ee93b",
+      "bytes": 83846
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/pages/430112-application/application.pdf": {
+      "sha256": "44e45b6b7c0c1e0e68e62acd6b9a40eecb5af95db8fb327de0abc6090921e656",
+      "bytes": 147104
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/pages/430112-application/page-1.png": {
+      "sha256": "6f5e7ca0de14ea2db133cec1b6e5f36b5c1bc9e7365af7af990e0c7b7c4c0a6f",
+      "bytes": 177908
+    },
+    "reports/nationwide-verification-20261029-c/acceptance/pages/430112-application/page-2.png": {
+      "sha256": "332a5a6d816240cc7cd88bbe090063d1d37f61c36ec03c75d00c5e40529ee93b",
+      "bytes": 83846
+    }
+  }
+}

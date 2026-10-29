@@ -1,0 +1,213 @@
+{
+  "status": "PASS",
+  "completed": 6,
+  "native_ui_generation": true,
+  "api_replay_used": false,
+  "total_pages": 10,
+  "records": [
+    {
+      "region_code": "430111",
+      "kind": "application",
+      "template_id": "39736ae6dc2c4ef8b073a6100f353aae",
+      "candidate_source_context": {
+        "source_id": "64a4b3a0d0bbb800bd3309fb",
+        "version": 191
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "64a4b3a0d0bbb800bd3309fb",
+      "x_document_origin": "official-blank-converted-filled",
+      "bytes": "16737",
+      "file": "reports/nationwide-verification-20261029-c/acceptance/downloads/430111-application.docx",
+      "sha256": "063704933bba530a4752edf778cead293d93890d05420260311aa92d9db3a988",
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "visual_qa": {
+        "status": "PASS",
+        "pages": [
+          {
+            "file": "reports/nationwide-verification-20261029-c/acceptance/pages/430111-application/page-1.png",
+            "sha256": "8a9757dfd70a866712dbf8ae85af4543ea9cb7f60ad689833ce3db78287cc548",
+            "visual_status": "PASS"
+          },
+          {
+            "file": "reports/nationwide-verification-20261029-c/acceptance/pages/430111-application/page-2.png",
+            "sha256": "332a5a6d816240cc7cd88bbe090063d1d37f61c36ec03c75d00c5e40529ee93b",
+            "visual_status": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "region_code": "430112",
+      "kind": "application",
+      "template_id": "0cdf79b0473b42d68bee049ce19c77c3",
+      "candidate_source_context": {
+        "source_id": "e63cea876d59bcd7b306427f",
+        "version": 192
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "e63cea876d59bcd7b306427f",
+      "x_document_origin": "official-blank-converted-filled",
+      "bytes": "16720",
+      "file": "reports/nationwide-verification-20261029-c/acceptance/downloads/430112-application.docx",
+      "sha256": "04a60b48449e8ccff65078aff9b2c7462ccb09010862c9292189f571234e1183",
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "visual_qa": {
+        "status": "PASS",
+        "pages": [
+          {
+            "file": "reports/nationwide-verification-20261029-c/acceptance/pages/430112-application/page-1.png",
+            "sha256": "6f5e7ca0de14ea2db133cec1b6e5f36b5c1bc9e7365af7af990e0c7b7c4c0a6f",
+            "visual_status": "PASS"
+          },
+          {
+            "file": "reports/nationwide-verification-20261029-c/acceptance/pages/430112-application/page-2.png",
+            "sha256": "332a5a6d816240cc7cd88bbe090063d1d37f61c36ec03c75d00c5e40529ee93b",
+            "visual_status": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "region_code": "320411",
+      "kind": "application",
+      "template_id": "cc5fca68-4669-4fc7-8ff9-0d6668d53b68",
+      "candidate_source_context": {
+        "source_id": "0e3fbeb5a181d89ecffb084f",
+        "version": 193
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "0e3fbeb5a181d89ecffb084f",
+      "x_document_origin": "official-blank-filled",
+      "bytes": "12768",
+      "file": "reports/nationwide-verification-20261029-c/acceptance/downloads/320411-application.docx",
+      "sha256": "99a31edb32828fad54d480f4bb815c85b8f1e807e1922c98de263893677868b7",
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "visual_qa": {
+        "status": "PASS",
+        "pages": [
+          {
+            "file": "reports/nationwide-verification-20261029-c/acceptance/pages/320411-application/page-1.png",
+            "sha256": "dd75e186ed5217f115aaec0b604523e02470d100535890390541fede04bb413a",
+            "visual_status": "PASS"
+          },
+          {
+            "file": "reports/nationwide-verification-20261029-c/acceptance/pages/320411-application/page-2.png",
+            "sha256": "875c6452814401ed68943a12d0bdeb126a59634c742a6ccea9b76a461fbafb94",
+            "visual_status": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "region_code": "320411",
+      "kind": "evidence",
+      "template_id": "3f808a2a-7467-4df6-82ba-da6a18a9f73b",
+      "candidate_source_context": {
+        "source_id": "0e3fbeb5a181d89ecffb084f",
+        "version": 193
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "0e3fbeb5a181d89ecffb084f",
+      "x_document_origin": "official-blank-filled",
+      "bytes": "11587",
+      "file": "reports/nationwide-verification-20261029-c/acceptance/downloads/320411-evidence.docx",
+      "sha256": "fd3a1aeac5ca612b83cd4702e9a8b1ad257614aad427c2110f1bc8c357fcf780",
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "visual_qa": {
+        "status": "PASS",
+        "pages": [
+          {
+            "file": "reports/nationwide-verification-20261029-c/acceptance/pages/320411-evidence/page-1.png",
+            "sha256": "7e5846b693d9f31d75b808cc4fce9f8037590bfc7e7bc77e2b459d0bcfe01352",
+            "visual_status": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "region_code": "320412",
+      "kind": "evidence",
+      "template_id": "d52d17ae-f35a-44b2-af42-41745a39e798",
+      "candidate_source_context": {
+        "source_id": "965b43f4ca2cf8c898b082af",
+        "version": 194
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "965b43f4ca2cf8c898b082af",
+      "x_document_origin": "official-blank-filled",
+      "bytes": "11582",
+      "file": "reports/nationwide-verification-20261029-c/acceptance/downloads/320412-evidence.docx",
+      "sha256": "8674f16c7b883268347f2c7ffd5c7166d054b7a2179471fdb73b3d74ce4c9aa5",
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "visual_qa": {
+        "status": "PASS",
+        "pages": [
+          {
+            "file": "reports/nationwide-verification-20261029-c/acceptance/pages/320412-evidence/page-1.png",
+            "sha256": "8486d11a8b97b648d936ca004a2438a7df9dd23f70cf7c3fa0d486bff84c5852",
+            "visual_status": "PASS"
+          }
+        ]
+      }
+    },
+    {
+      "region_code": "320412",
+      "kind": "application",
+      "template_id": "5c41b459-d5f1-413b-af51-a502312d10e3",
+      "candidate_source_context": {
+        "source_id": "965b43f4ca2cf8c898b082af",
+        "version": 194
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "965b43f4ca2cf8c898b082af",
+      "x_document_origin": "official-blank-filled",
+      "bytes": "12768",
+      "file": "reports/nationwide-verification-20261029-c/acceptance/downloads/320412-application.docx",
+      "sha256": "1bd4196c064cf1d22328587ea0c0c524d365b3cf35e5ebd42eff7bce374be4fb",
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "visual_qa": {
+        "status": "PASS",
+        "pages": [
+          {
+            "file": "reports/nationwide-verification-20261029-c/acceptance/pages/320412-application/page-1.png",
+            "sha256": "e12da670514d8d88a39f6334d46583db9e6055f99f17f9e6b5de00addb8de2a1",
+            "visual_status": "PASS"
+          },
+          {
+            "file": "reports/nationwide-verification-20261029-c/acceptance/pages/320412-application/page-2.png",
+            "sha256": "875c6452814401ed68943a12d0bdeb126a59634c742a6ccea9b76a461fbafb94",
+            "visual_status": "PASS"
+          }
+        ]
+      }
+    }
+  ],
+  "word_isolation": {
+    "new_empty_instance_verified": true,
+    "all_document_windows_own": true,
+    "macro_security": 3,
+    "link_updates_disabled": true,
+    "completed": 6,
+    "own_instance_quit": true,
+    "preexisting_instances_preserved": true
+  },
+  "synthetic_only": true
+}

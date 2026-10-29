@@ -3,13 +3,13 @@ import hashlib
 import json
 import os
 from pathlib import Path
-from typing import Literal
+from typing import Annotated, Literal
 from fastapi import APIRouter, BackgroundTasks, HTTPException, Query
 from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field, ValidationError, field_validator
 from regional_guides import RegionalStore, select_template
 from regional_documents import fill_tianfu_reference
-from regional_adapters import checked_reference_adapter
+from regional_adapters import checked_reference_adapter,HUNAN_C_ADAPTER,JIANGSU_C_ADAPTER,jiangsu_c_binding
 from regional_blank_documents import fill_blank_document, ADAPTER as BLANK_ADAPTER
 from regional_jiangsu_candidates import fill_candidate_document, SUPPORTED as JIANGSU_OWN_CANDIDATES
 from regional_rongjiang_documents import fill_rongjiang_document, ADAPTER as RONGJIANG_ADAPTER
@@ -17,6 +17,8 @@ from regional_zhejiang_documents import fill_zhejiang_document,ADAPTER as ZHEJIA
 from regional_zhejiang_oct29 import fill_document as fill_ningbo_document,blank_binding as ningbo_blank_binding,ADAPTER as NINGBO_ADAPTER
 from regional_shangcheng_documents import fill_shangcheng_document,ADAPTER as SHANGCHENG_ADAPTER
 from regional_jiangsu_oct29 import fill_candidate_document as fill_oct29_jiangsu_document
+from regional_hunan_oct29c import fill_document as fill_hunan_c_document,blank_binding as hunan_c_binding
+from regional_jiangsu_oct29c import fill_candidate_document as fill_jiangsu_c_document
 from regional_hunan_oct29b import fill_document as fill_hunan_document, ADAPTER as HUNAN_ADAPTER
 from regional_oct29_bindings import (jiangsu_binding as oct29_jiangsu_binding,feidong_canonical,fill_feidong_bound,
     JIANGSU_ADAPTER as OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER)
@@ -30,8 +32,8 @@ router=APIRouter()
 @router.get('/release-capabilities')
 def release_capabilities():
     """Identify loaded generation code before a reviewed data-only upgrade."""
-    return {'release_id':'oct29-own-localities-v1',
-            'adapters':[NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,HUNAN_ADAPTER],
+    return {'release_id':'oct29c-own-localities-v1',
+            'adapters':[HUNAN_C_ADAPTER,JIANGSU_C_ADAPTER],
             'source_bound':True,'models_required':False,
             'regional_store':'main_default' if Path(os.getenv('LABOURLAWYER_REGIONAL_DB',ROOT/'backend/data/regional-guides.sqlite')).resolve()==(ROOT/'backend/data/regional-guides.sqlite').resolve() else 'alternate'}
 
@@ -133,7 +135,7 @@ def checked_path(template,guide=None):
     # New reviewed blanks retain their original own-source evidence directory.
     # This exception requires the entire pinned guide and template contract, not
     # an arbitrary report path or a claimed adapter flag.
-    own_checked=guide is not None and (approved_report_attachment(guide,template,root)
+    own_checked=guide is not None and (hunan_c_binding(guide,template)=='application' or jiangsu_c_binding(guide,template) in {'application','evidence'} or approved_report_attachment(guide,template,root)
         or oct29_jiangsu_binding(guide,template) in {'application','evidence'})
     if not path.is_relative_to(root) or (not path.is_relative_to((root/'templates/_docx/_regional').resolve()) and not own_checked):
         raise HTTPException(409,'附件文件不在已核验地区目录中')
@@ -194,31 +196,31 @@ class HunanEmbeddedEvidence(BaseModel):
 
 class HunanApplicationRequest(BaseModel):
     """Only fields that have a slot in these two own worker forms."""
-    model_config={'extra':'forbid','str_max_length':160}
-    applicantName: str=''
-    gender: str=''
-    birthDate: str=''
-    occupation: str=''
-    nationality: str=''
-    idAddress: str=''
-    postalCode: str=''
-    phone: str=''
-    workUnit: str=''
-    workUnitPostalCode: str=''
-    workUnitPhone: str=''
-    respondentName: str=''
-    registeredAddress: str=''
-    respondentPostalCode: str=''
-    legalRepName: str=''
-    legalRepPosition: str=''
-    legalRepPhone: str=''
-    hrContactName: str=''
-    hrContactPosition: str=''
-    hrContactPhone: str=''
-    thirdParty: str=''
-    committeeName: str=''
-    applicationDate: str=''
-    copyCount: str | int | float=''
+    model_config={'extra':'forbid'}
+    applicantName: str=Field(default='',max_length=160)
+    gender: str=Field(default='',max_length=160)
+    birthDate: str=Field(default='',max_length=160)
+    occupation: str=Field(default='',max_length=160)
+    nationality: str=Field(default='',max_length=160)
+    idAddress: str=Field(default='',max_length=160)
+    postalCode: str=Field(default='',max_length=160)
+    phone: str=Field(default='',max_length=160)
+    workUnit: str=Field(default='',max_length=160)
+    workUnitPostalCode: str=Field(default='',max_length=160)
+    workUnitPhone: str=Field(default='',max_length=160)
+    respondentName: str=Field(default='',max_length=160)
+    registeredAddress: str=Field(default='',max_length=160)
+    respondentPostalCode: str=Field(default='',max_length=160)
+    legalRepName: str=Field(default='',max_length=160)
+    legalRepPosition: str=Field(default='',max_length=160)
+    legalRepPhone: str=Field(default='',max_length=160)
+    hrContactName: str=Field(default='',max_length=160)
+    hrContactPosition: str=Field(default='',max_length=160)
+    hrContactPhone: str=Field(default='',max_length=160)
+    thirdParty: str=Field(default='',max_length=160)
+    committeeName: str=Field(default='',max_length=160)
+    applicationDate: str=Field(default='',max_length=160)
+    copyCount: Annotated[str,Field(max_length=160)] | int | float=''
     requests: list[str]=Field(default_factory=list,max_length=8)
     factsReason: str=Field(default='',max_length=1800)
     evidenceList: list[HunanEmbeddedEvidence]=Field(default_factory=list,max_length=10)
@@ -234,16 +236,20 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
     try:adapter=checked_reference_adapter(g,t,payload.kind)
     except ValueError as exc:raise HTTPException(409,str(exc)) from exc
     try:
-        model=(BlankApplicationRequest if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER} else ApplicationRequest) if payload.kind=='application' else EvidenceRequest
+        model=(BlankApplicationRequest if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,JIANGSU_C_ADAPTER} else ApplicationRequest) if payload.kind=='application' else EvidenceRequest
         if adapter==FEIDONG_ADAPTER:model=FeidongApplicationRequest
-        if adapter==HUNAN_ADAPTER:model=HunanApplicationRequest
+        if adapter in {HUNAN_ADAPTER,HUNAN_C_ADAPTER}:model=HunanApplicationRequest
         data=model.model_validate(payload.data)
     except ValidationError as exc:
         raise HTTPException(422,'填写内容过长或格式不正确，请缩短后重试') from exc
-    blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER}
-    if adapter in blank_adapters|{RONGJIANG_ADAPTER,HUNAN_ADAPTER} and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
+    blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER}
+    if adapter in blank_adapters|{RONGJIANG_ADAPTER,HUNAN_ADAPTER,HUNAN_C_ADAPTER} and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
     try:
-        if adapter==HUNAN_ADAPTER:
+        if adapter==HUNAN_C_ADAPTER:
+            doc=fill_hunan_c_document(g,t,payload.kind,checked_path(t,g),data.model_dump())
+        elif adapter==JIANGSU_C_ADAPTER:
+            doc=fill_jiangsu_c_document(g,payload.kind,data.model_dump())
+        elif adapter==HUNAN_ADAPTER:
             doc=fill_hunan_document(g,t,payload.kind,checked_path(t,g),data.model_dump())
         elif adapter==OCT29_JIANGSU_ADAPTER:
             doc=fill_oct29_jiangsu_document(g,payload.kind,data.model_dump())
@@ -264,9 +270,9 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
                 doc=fill_blank_document(g,t,payload.kind,checked_path(t),data.model_dump())
         else:doc=fill_tianfu_reference(checked_path(t),payload.kind,data.model_dump())
     except ValueError as exc:raise HTTPException(409,str(exc)) from exc
-    suffix=('-依据官方DOC转换填写.docx' if adapter in {RONGJIANG_ADAPTER,HUNAN_ADAPTER} else '-官方空白表格填写.docx' if adapter in blank_adapters else '-参考样表辅助填写.docx')
+    suffix=('-依据官方DOC转换填写.docx' if adapter in {RONGJIANG_ADAPTER,HUNAN_ADAPTER,HUNAN_C_ADAPTER} else '-官方空白表格填写.docx' if adapter in blank_adapters else '-参考样表辅助填写.docx')
     name=g['district']+('申请书' if payload.kind=='application' else '证据清单')+suffix
     response=_response(doc,name,background_tasks)
-    response.headers['X-Document-Origin']=('official-blank-converted-filled' if adapter in {RONGJIANG_ADAPTER,HUNAN_ADAPTER} else 'official-blank-filled' if adapter in blank_adapters else 'official-sample-adaptation-not-blank')
+    response.headers['X-Document-Origin']=('official-blank-converted-filled' if adapter in {RONGJIANG_ADAPTER,HUNAN_ADAPTER,HUNAN_C_ADAPTER} else 'official-blank-filled' if adapter in blank_adapters else 'official-sample-adaptation-not-blank')
     response.headers['X-Guide-Source-ID']=g['source_id']
     return response

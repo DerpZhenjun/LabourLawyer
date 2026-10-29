@@ -3,6 +3,8 @@ from pathlib import Path
 import hashlib
 import json
 import sqlite3
+import os
+from uuid import uuid4
 from copy import deepcopy
 from contextlib import closing
 from regional_guides import RegionalStore
@@ -21,6 +23,23 @@ SOURCE_FILES=[
  'reports/nationwide-verification-20261029/sichuan/qingyang-guide.json',
 ]
 HUNAN_FILES=[f'reports/nationwide-verification-20261029-b/hunan/{name}/guide.json' for name in ['tianxin','xiangjiang']]
+C_FILES=[f'reports/nationwide-verification-20261029-c/{place}/guide.json' for place in
+         ['hunan/yuhua','hunan/wangcheng','jiangsu/xinbei','jiangsu/wujin']]
+
+
+def load_c_guides(root=ROOT):
+    """Rebuild C4 from each provider's pinned captures, never mutable raw flags.
+
+    The sealed guide files remain source evidence. Canonical parsers verify
+    their complete source bundles and derive the normalized identity/channel
+    fields required by their own adapters without rewriting those originals.
+    """
+    import regional_hunan_oct29c as hunan
+    import regional_jiangsu_oct29c as jiangsu
+    root=Path(root).resolve()
+    guides=[hunan.parse_capture(name,capture_root=root/hunan.REPORT) for name in ['yuhua','wangcheng']]
+    guides += [jiangsu.parse_capture(name,capture_root=root/jiangsu.REPORT) for name in ['xinbei','wujin']]
+    return [with_reference_capabilities(g) for g in guides]
 
 
 def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
@@ -68,8 +87,9 @@ def verify(root=ROOT,output=OUTPUT):
     if manifest.get('scope')!='isolated-public-candidate-review-only' or manifest.get('published') is not False:
         raise ValueError('Candidate manifest identity differs')
     for relative,checksum in manifest['source_files'].items():
-        if relative not in SOURCE_FILES+HUNAN_FILES or sha(root/relative)!=checksum:raise ValueError('Candidate source evidence changed')
-    expected_sources=SOURCE_FILES+HUNAN_FILES if manifest.get('candidate_guides')==9 else SOURCE_FILES
+        if relative not in SOURCE_FILES+HUNAN_FILES+C_FILES or sha(root/relative)!=checksum:raise ValueError('Candidate source evidence changed')
+    expected_sources={7:SOURCE_FILES,9:SOURCE_FILES+HUNAN_FILES,13:SOURCE_FILES+HUNAN_FILES+C_FILES}.get(manifest.get('candidate_guides'))
+    if expected_sources is None:raise ValueError('Unknown candidate source generation')
     if set(manifest['source_files'])!=set(expected_sources):raise ValueError('Candidate source set differs')
     for name,checksum in manifest['database_files'].items():
         if name not in {'regional-guides.sqlite','regional-directory.sqlite'} or sha(output/name)!=checksum:
@@ -107,3 +127,65 @@ def extend_hunan(root=ROOT,output=OUTPUT):
     result['extension_note']='Two own Hunan guides appended; prior A7 manifest and SQLite backup retained; main untouched.'
     (output/'manifest.json').write_bytes((json.dumps(result,ensure_ascii=False,indent=2)+'\n').encode('utf8'))
     return verify(root,output)
+
+
+def _atomic_write(path,body):
+    temporary=path.with_name(path.name+'.'+uuid4().hex+'.tmp')
+    try:
+        with temporary.open('xb') as stream:stream.write(body);stream.flush();os.fsync(stream.fileno())
+        os.replace(temporary,path)
+    finally:
+        if temporary.exists():temporary.unlink()
+
+
+def append_c(root=ROOT,output=OUTPUT):
+    """Append C4 data only; preserve the tested A9 manifest and consistent DBs.
+
+    No service, model, public snapshot or main database is touched. Failed
+    appends keep the original manifest and roll back every SQLite insertion.
+    """
+    from regional_guides import digest,official_content,region_key
+    root=Path(root).resolve();output=Path(output).resolve();previous=verify(root,output)
+    if (previous.get('candidate_guides'),previous.get('guides'),previous.get('generatable_localities'))!=(9,190,173):
+        raise ValueError('C4 append requires the preserved 190/173 A9 candidate')
+    additions=load_c_guides(root)
+    from reviewed_oct29c_release import validate_sources,_capabilities
+    validate_sources(additions);_capabilities(additions)
+    backup=output/'before-c-extension'
+    if backup.exists():raise ValueError('Previous C extension evidence exists; never overwrite it')
+    original_manifest=(output/'manifest.json').read_bytes();backup.mkdir()
+    (backup/'manifest.json').write_bytes(original_manifest)
+    db=sqlite3.connect(output/'regional-guides.sqlite',timeout=15)
+    try:
+        db.execute('BEGIN IMMEDIATE')
+        if db.execute('SELECT count(*) FROM regional_current').fetchone()[0]!=190:raise ValueError('Candidate changed before append lock')
+        for g in additions:
+            if db.execute('SELECT 1 FROM regional_guides WHERE (province=? AND city=? AND district=?) OR source_id=?',
+                          (g['province'],g['city'],g['district'],digest(g['source_url'])[:24])).fetchone():
+                raise ValueError('Existing exact candidate scope/source history must never be replaced')
+        for name in ['regional-guides.sqlite','regional-directory.sqlite']:
+            with closing(sqlite3.connect((output/name).as_uri()+'?mode=ro',uri=True)) as current,closing(sqlite3.connect(backup/name)) as saved:current.backup(saved)
+        ids=[]
+        for g in additions:
+            d=deepcopy(g);d.pop('version',None);sid=digest(d['source_url'])[:24];rid=region_key(d['province'],d['city'],d['district']);checksum=digest(official_content(d))
+            d.update(region_id=rid,source_id=sid,content_hash=checksum)
+            row=db.execute('INSERT INTO regional_guides(region_id,source_id,content_hash,province,city,district,payload) VALUES(?,?,?,?,?,?,?)',
+                           (rid,sid,checksum,d['province'],d['city'],d['district'],json.dumps(d,ensure_ascii=False)))
+            db.execute('INSERT INTO regional_current VALUES(?,?)',(rid,row.lastrowid));ids.append(sid)
+        # Commit all four together, then install the hashed manifest atomically.
+        # Failure after commit restores the consistent pre-append SQLite backup.
+        db.commit()
+        result=deepcopy(previous);result.update(guides=194,candidate_guides=13,generatable_localities=177)
+        result['source_files'].update({p:sha(root/p) for p in C_FILES});result['candidate_source_ids']+=ids
+        result['database_files']['regional-guides.sqlite']=sha(output/'regional-guides.sqlite')
+        result['extension_note']='C4 appended; before-c-extension retains the tested A9 manifest and consistent SQLite snapshots.'
+        _atomic_write(output/'manifest.json',(json.dumps(result,ensure_ascii=False,indent=2)+'\n').encode('utf8'))
+        return verify(root,output)
+    except BaseException:
+        db.rollback();db.close();db=None
+        if (backup/'regional-guides.sqlite').exists():
+            with closing(sqlite3.connect(backup/'regional-guides.sqlite')) as saved,closing(sqlite3.connect(output/'regional-guides.sqlite')) as target:saved.backup(target)
+        if (output/'manifest.json').read_bytes()!=original_manifest:_atomic_write(output/'manifest.json',original_manifest)
+        raise
+    finally:
+        if db is not None:db.close()

@@ -1,16 +1,40 @@
 {
-  "phase": "four_own_guides_collected_not_adapted",
+  "updated_at": "2026-10-29T19:29:03.334491+08:00",
+  "phase": "candidate_C4_verified_prepared_main_restart_required",
   "published_guides": 190,
   "published_generatable_localities": 173,
   "unpublished_candidates": 28,
-  "own_sources": [
-    "hunan/yuhua/guide.json",
-    "hunan/wangcheng/guide.json",
-    "jiangsu/xinbei/guide.json",
-    "jiangsu/wujin/guide.json"
+  "candidate_guides": 194,
+  "candidate_generatable_localities": 177,
+  "candidate_exact_regions": [
+    "430111",
+    "430112",
+    "320411",
+    "320412"
   ],
-  "generation_granted": false,
+  "candidate_native_documents": 6,
+  "candidate_visual_pages": 10,
+  "main_generation_granted_for_C4": false,
+  "main_release_marker_required": "oct29c-own-localities-v1",
+  "prepared_directory": ".runtime/reviewed-oct29c-release-final",
   "official_absence_claims": 0,
   "models_called": false,
-  "next": "逐区核对内容与适配、转换及版式；先复用已验证引擎但不可复用其他地区的来源身份与办理要求。"
+  "windows_ollama_started": false,
+  "next": "User manually restarts existing main backend; verify fixed main8000 new marker, apply exact prepared C4 delta, browser-verify main, register D own-source-only candidates.",
+  "backend_full": {
+    "tests": 591,
+    "seconds": 328.304,
+    "skipped": 2,
+    "status": "PASS"
+  },
+  "post_review_focused": {
+    "tests": 20,
+    "seconds": 13.651,
+    "status": "PASS"
+  },
+  "frontend_build": {
+    "modules": 170,
+    "seconds": 3.31,
+    "status": "PASS"
+  }
 }

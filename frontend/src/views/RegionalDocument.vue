@@ -54,7 +54,7 @@ const {guide,loading,error}=props.embedded?{guide:computed(()=>props.selectedGui
 const template=computed(()=>guide.value?.templates.find(t=>t.can_generate && t.document_types.includes(kind.value)))
 const feidongForm=ref(createFeidongApplicationExample())
 const hunanForm=ref(createHunanApplicationExample())
-const isHunan=computed(()=>kind.value==='application'&&template.value?.adapter==='hunan_own_legacy_worker_oct29b_v1')
+const isHunan=computed(()=>kind.value==='application'&&['hunan_own_legacy_worker_oct29b_v1','hunan_own_legacy_worker_oct29c_v1'].includes(template.value?.adapter))
 const isFeidong=computed(()=>kind.value==='application'&&template.value?.adapter===FEIDONG_ADAPTER_KEY)
 const isBlank=computed(()=>template.value?.official_kind==='blank')
 const isZhejiangBlank=computed(()=>isZhejiangBlankAdapter(template.value?.adapter))

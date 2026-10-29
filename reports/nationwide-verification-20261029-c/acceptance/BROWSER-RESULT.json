@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "candidate_acceptance": true,
+  "candidate_origin": "http://127.0.0.1:5174",
+  "candidate_api": "http://127.0.0.1:8001",
+  "regions": {
+    "430111": {
+      "source_id": "64a4b3a0d0bbb800bd3309fb",
+      "version": 191
+    },
+    "430112": {
+      "source_id": "e63cea876d59bcd7b306427f",
+      "version": 192
+    },
+    "320411": {
+      "source_id": "0e3fbeb5a181d89ecffb084f",
+      "version": 193
+    },
+    "320412": {
+      "source_id": "965b43f4ca2cf8c898b082af",
+      "version": 194
+    }
+  },
+  "checks": [
+    {
+      "id": "four_own_regions_native_select",
+      "passed": true,
+      "evidence": "MCP native province/city/district controls selected Rainflower/Yuhua, Wangcheng, Xinbei, Wujin; own authorities rendered; form precedes guide."
+    },
+    {
+      "id": "hunan_form_contract",
+      "passed": true,
+      "evidence": "27 supported keys, no identity-number field; fictional defaults; one accompanying evidence row initially, native add/remove returns to one."
+    },
+    {
+      "id": "jiangsu_evidence_rows",
+      "passed": true,
+      "evidence": "Initial evidence row one; native add creates two, native remove returns to one in both Agent Browser and MCP."
+    },
+    {
+      "id": "cancel_and_escape_no_post",
+      "passed": true,
+      "evidence": "MCP dialog Escape and native Cancel both closed; zero /generate resources or POST observed in MCP session."
+    },
+    {
+      "id": "wrong_district_no_inheritance",
+      "passed": true,
+      "evidence": "Native switch to Kaifu rendered zero forms and no generate button, explicit unverified/not-opened state."
+    },
+    {
+      "id": "responsive_375_768_1440",
+      "passed": true,
+      "evidence": "MCP device emulation used real innerWidth375/768/1440; scroll widths375/753/1425, no horizontal overflow. Screenshots viewed."
+    },
+    {
+      "id": "floating_advisor_cta",
+      "passed": true,
+      "evidence": "375 CTA intersects fab=false and center owned=true, explicit native focus screenshot. 768 same geometry passed."
+    },
+    {
+      "id": "six_native_downloads",
+      "passed": true,
+      "evidence": "6 explicit native confirm clicks gave HTTP200 actual DOCX files; source/version from browser POST, X-Guide-Source-Id matches; official-blank-converted-filled origin for HN."
+    },
+    {
+      "id": "fixed_hunan_material_phone_presentation",
+      "passed": true,
+      "evidence": "After root HMR, rainflower consultation phone0731-85880234 rendered; material original/copy and copies/instructions independently shown."
+    },
+    {
+      "id": "console_no_model",
+      "passed": true,
+      "evidence": "MCP console error/warn empty and Agent Browser errors empty;128 observed network entries with no model/11434/3000/chat/inference endpoint."
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "reports/nationwide-verification-20261029-c/acceptance/hn-1440-material.png",
+      "sha256": "79897d26c1d66161b9318b396cb8e966e51d72205f222d32f90815d50fa84f66",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/acceptance/hn-375-cta.png",
+      "sha256": "cdd8d8b4bac88c7d79fa7f14cb5d204a2ffd8147ba7d2295d9d163c61bbee1a0",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/acceptance/hn-375.png",
+      "sha256": "158ce95a7d4b4e55871e4bb88a7fd71609f1900560920464e71d1fcda58d1ec6",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/acceptance/hn-768.png",
+      "sha256": "8226477291c6e6b1bb7b30d43ce42a3d7e9e72046d799a5acd063f9b199b9ef4",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/acceptance/js-1440.png",
+      "sha256": "201e078dcc760c1c73dfedb22973469f70c6f5a3d4d42148e45019fb7c34882e",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/acceptance/js-768-stable.png",
+      "sha256": "83341cdcc8104ef3fa72ed0b8b0a837605fac8323429cb884132527240c300f5",
+      "visual_status": "PASS"
+    }
+  ],
+  "limitations": [
+    "Official online channels still stop at authentication; no official login or submission.",
+    "MCP screenshot filePath rejected by configured workspace-root policy; stopped path-writing action, used separately returned image bytes saved normally as explicitly authorized.",
+    "One later optional 768 CTA screenshot stalled; orchestration cell terminated, no retry. Stable 768 screenshot and actual CTA geometry retained.",
+    "Initial stale element refs, unsupported CLI find-select action and early post-emulation DOM inspection failed; fresh snapshots/native select/stable DOM inspections resolved."
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "method": "Own named Agent Browser session native confirm-generation click followed by wait --download, no URL replay, no internal browser pages. Source/version taken from actual browser POST against live candidate.",
+  "records": [
+    {
+      "region_code": "430111",
+      "kind": "application",
+      "template_id": "39736ae6dc2c4ef8b073a6100f353aae",
+      "candidate_source_context": {
+        "source_id": "64a4b3a0d0bbb800bd3309fb",
+        "version": 191
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "64a4b3a0d0bbb800bd3309fb",
+      "x_document_origin": "official-blank-converted-filled",
+      "bytes": "16737",
+      "file": "reports/nationwide-verification-20261029-c/acceptance/downloads/430111-application.docx"
+    },
+    {
+      "region_code": "430112",
+      "kind": "application",
+      "template_id": "0cdf79b0473b42d68bee049ce19c77c3",
+      "candidate_source_context": {
+        "source_id": "e63cea876d59bcd7b306427f",
+        "version": 192
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "e63cea876d59bcd7b306427f",
+      "x_document_origin": "official-blank-converted-filled",
+      "bytes": "16720",
+      "file": "reports/nationwide-verification-20261029-c/acceptance/downloads/430112-application.docx"
+    },
+    {
+      "region_code": "320411",
+      "kind": "application",
+      "template_id": "cc5fca68-4669-4fc7-8ff9-0d6668d53b68",
+      "candidate_source_context": {
+        "source_id": "0e3fbeb5a181d89ecffb084f",
+        "version": 193
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "0e3fbeb5a181d89ecffb084f",
+      "x_document_origin": "official-blank-filled",
+      "bytes": "12768",
+      "file": "reports/nationwide-verification-20261029-c/acceptance/downloads/320411-application.docx"
+    },
+    {
+      "region_code": "320411",
+      "kind": "evidence",
+      "template_id": "3f808a2a-7467-4df6-82ba-da6a18a9f73b",
+      "candidate_source_context": {
+        "source_id": "0e3fbeb5a181d89ecffb084f",
+        "version": 193
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "0e3fbeb5a181d89ecffb084f",
+      "x_document_origin": "official-blank-filled",
+      "bytes": "11587",
+      "file": "reports/nationwide-verification-20261029-c/acceptance/downloads/320411-evidence.docx"
+    },
+    {
+      "region_code": "320412",
+      "kind": "evidence",
+      "template_id": "d52d17ae-f35a-44b2-af42-41745a39e798",
+      "candidate_source_context": {
+        "source_id": "965b43f4ca2cf8c898b082af",
+        "version": 194
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "965b43f4ca2cf8c898b082af",
+      "x_document_origin": "official-blank-filled",
+      "bytes": "11582",
+      "file": "reports/nationwide-verification-20261029-c/acceptance/downloads/320412-evidence.docx"
+    },
+    {
+      "region_code": "320412",
+      "kind": "application",
+      "template_id": "5c41b459-d5f1-413b-af51-a502312d10e3",
+      "candidate_source_context": {
+        "source_id": "965b43f4ca2cf8c898b082af",
+        "version": 194
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "965b43f4ca2cf8c898b082af",
+      "x_document_origin": "official-blank-filled",
+      "bytes": "12768",
+      "file": "reports/nationwide-verification-20261029-c/acceptance/downloads/320412-application.docx"
+    }
+  ],
+  "regions": {
+    "430111": {
+      "source_id": "64a4b3a0d0bbb800bd3309fb",
+      "version": 191
+    },
+    "430112": {
+      "source_id": "e63cea876d59bcd7b306427f",
+      "version": 192
+    },
+    "320411": {
+      "source_id": "0e3fbeb5a181d89ecffb084f",
+      "version": 193
+    },
+    "320412": {
+      "source_id": "965b43f4ca2cf8c898b082af",
+      "version": 194
+    }
+  }
+}

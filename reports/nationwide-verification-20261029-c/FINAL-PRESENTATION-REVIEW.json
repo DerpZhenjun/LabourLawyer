@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "province": "hunan",
+      "city": "长沙市",
+      "district": "雨花区",
+      "source": "64a4b3a0d0bbb800bd3309fb",
+      "actions": [
+        "填写申请书"
+      ],
+      "reason": [
+        "无需到现场办理"
+      ],
+      "passed": true
+    },
+    {
+      "province": "hunan",
+      "city": "长沙市",
+      "district": "望城区",
+      "source": "e63cea876d59bcd7b306427f",
+      "actions": [
+        "填写申请书"
+      ],
+      "reason": [
+        "无需到现场办理"
+      ],
+      "passed": true
+    },
+    {
+      "province": "jiangsu",
+      "city": "常州市",
+      "district": "新北区",
+      "source": "0e3fbeb5a181d89ecffb084f",
+      "actions": [
+        "填写申请书",
+        "填写证据清单"
+      ],
+      "reason": [
+        "仲裁申请需要确认当事人身份，开庭审理需要当事人到场，送达法律文书需要当事人签收。"
+      ],
+      "passed": true
+    },
+    {
+      "province": "jiangsu",
+      "city": "常州市",
+      "district": "武进区",
+      "source": "965b43f4ca2cf8c898b082af",
+      "actions": [
+        "填写申请书",
+        "填写证据清单"
+      ],
+      "reason": [
+        "仲裁申请需要确认当事人身份，开庭审理需要当事人到场，送达法律文书需要当事人签收。"
+      ],
+      "passed": true
+    }
+  ],
+  "method": "Real Chrome DevTools MCP page navigation and DOM reads after final presentation fixes. No model, service operation or request replay."
+}
