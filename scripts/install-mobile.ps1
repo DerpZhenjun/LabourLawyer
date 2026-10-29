@@ -1,3 +1,4 @@
+param([string]$DeviceSerial = $env:ANDROID_SERIAL, [switch]$Offline)
 $ErrorActionPreference = "Stop"
 
 $projectRoot = [System.IO.Path]::GetFullPath((Join-Path $PSScriptRoot ".."))
@@ -30,6 +31,12 @@ if ($onlineDevices.Count -eq 0) {
     Write-Host "Run 'adb devices' until the status is 'device', then retry the internal mobile build script."
     exit 2
 }
+$authorized = @($onlineDevices | ForEach-Object { ($_ -split '\s+')[0] })
+if ($DeviceSerial) {
+    if ($DeviceSerial -notin $authorized) { throw 'The selected Android device is not authorized and online.' }
+} elseif ($authorized.Count -eq 1) { $DeviceSerial = $authorized[0] }
+else { throw 'More than one device is connected. Pass -DeviceSerial or set ANDROID_SERIAL; no device was changed.' }
+$adbArgs = @('-s', $DeviceSerial)
 
 $npmCommand = Get-Command npm.cmd -ErrorAction SilentlyContinue
 if (-not $npmCommand) {
@@ -54,7 +61,9 @@ $previousTmp = $env:TMP
 try {
     $env:TEMP = $shortTemp
     $env:TMP = $shortTemp
-    & $gradleWrapper --no-daemon -p $androidDir assembleDebug
+    $buildArgs = @('--no-daemon', '-p', $androidDir, 'assembleDebug')
+    if ($Offline) { $buildArgs = @('--offline') + $buildArgs }
+    & $gradleWrapper @buildArgs
     if ($LASTEXITCODE -ne 0) { throw "Android build failed." }
 } finally {
     $env:TEMP = $previousTemp
@@ -66,17 +75,18 @@ if (-not (Test-Path -LiteralPath $apkPath)) {
 }
 
 Write-Host "[4/5] Connecting the phone to local services..." -ForegroundColor Cyan
-& $adbCommand.Source reverse tcp:8000 tcp:8000
+& $adbCommand.Source @adbArgs reverse tcp:8000 tcp:8000
 if ($LASTEXITCODE -ne 0) { throw "Could not forward backend port 8000." }
-& $adbCommand.Source reverse tcp:3000 tcp:3000
+& $adbCommand.Source @adbArgs reverse tcp:3000 tcp:3000
 if ($LASTEXITCODE -ne 0) { throw "Could not forward digital-human port 3000." }
 
 Write-Host "[5/5] Installing LabourLawyer on the phone..." -ForegroundColor Cyan
-& $adbCommand.Source install -r $apkPath
+& $adbCommand.Source @adbArgs install -r $apkPath
 if ($LASTEXITCODE -ne 0) { throw "APK installation failed." }
 
-& $adbCommand.Source shell am force-stop $packageName | Out-Null
-& $adbCommand.Source shell monkey -p $packageName -c android.intent.category.LAUNCHER 1 | Out-Null
+& $adbCommand.Source @adbArgs shell am force-stop $packageName | Out-Null
+& $adbCommand.Source @adbArgs shell am start -n "$packageName/.MainActivity" | Out-Null
+if ($LASTEXITCODE -ne 0) { throw 'The APK was installed, but Android did not open the application.' }
 
 Write-Host "LabourLawyer has been installed and opened on the phone." -ForegroundColor Green
 Write-Host "Keep the project backend running while testing through USB. Start it with start.bat web."

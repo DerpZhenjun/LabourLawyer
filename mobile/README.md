@@ -23,6 +23,14 @@
 
 调试 APK 位于 `mobile/android/app/build/outputs/apk/debug/app-debug.apk`。
 
+## 下载预览版
+
+GitHub [v1.1.0-preview.1](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.1.0-preview.1)提供Android USB联调APK，版本号`1.1.0-preview.1`、versionCode 2，使用调试签名。它包含当前完整网页客户端和原生Word保存/分享能力，**不包含后端、官方模板原件库或AI模型，也不表示所有区县已经核验完成**。
+
+使用此包仍需电脑启动现有后端和可选数字人，USB转发8000/3000；AI由后端连接Ubuntu Qwen3.8。USB拔出或电脑服务停止后，远程生成和问答不可用。`install-mobile.ps1 -Offline`可复用已缓存的Gradle依赖，多设备时用`-DeviceSerial`明确选择，升级使用`adb install -r`，不会主动卸载或清空应用数据。
+
+2026-10-29已在连接的Android设备上覆盖安装成功、确认新版本并实际查看首页；设备禁止ADB注入点击，因此本轮没有把手机文书分享或数字人逐项交互标为已通过。网页端已有独立真实浏览器验收，不能替代手机原生验收。
+
 ## 正式发布前
 
 将前端的 `VITE_API_BASE_URL` 和 `VITE_DIGITAL_LAWYER_URL` 设置为已备案的 HTTPS 服务地址，重新构建并使用正式签名生成 release APK/AAB。生产版本不应依赖 USB 端口转发或本机 `127.0.0.1`。
