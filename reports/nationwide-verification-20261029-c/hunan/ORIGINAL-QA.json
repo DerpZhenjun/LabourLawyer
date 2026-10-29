@@ -1,0 +1,90 @@
+{
+  "scope": "Read-only native ZIP/member/CFB signature and stream-name checks; does not assert full DOC parsing or visual QA.",
+  "originals": 8,
+  "checks": [
+    {
+      "file": "reports/nationwide-verification-20261029-c/hunan/yuhua/originals/blank/1－仲裁申请书（劳动者）.doc",
+      "sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+      "bytes": 50688,
+      "official_kind": "blank",
+      "zip_crc": "PASS",
+      "cfb_header_and_word_stream_name": "PASS",
+      "full_content_or_visual_qa": "NOT_RUN",
+      "file_modified_by_qa": false
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/hunan/yuhua/originals/blank/2－仲裁申请书（单位）.doc",
+      "sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+      "bytes": 51712,
+      "official_kind": "blank",
+      "zip_crc": "PASS",
+      "cfb_header_and_word_stream_name": "PASS",
+      "full_content_or_visual_qa": "NOT_RUN",
+      "file_modified_by_qa": false
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/hunan/yuhua/originals/sample/仲裁申请书（劳动者）.doc",
+      "sha256": "369d38b1bcb1d92e0be6b815d6269967fc7324afbb63cc22a94331bbfcc220cc",
+      "bytes": 26624,
+      "official_kind": "sample",
+      "zip_crc": "PASS",
+      "cfb_header_and_word_stream_name": "PASS",
+      "full_content_or_visual_qa": "NOT_RUN",
+      "file_modified_by_qa": false
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/hunan/yuhua/originals/sample/仲裁申请书（单位）.doc",
+      "sha256": "00a47b36fa43d89f8c604d66585ac5e191360dd3d546feecc82ea8d6b4307444",
+      "bytes": 27136,
+      "official_kind": "sample",
+      "zip_crc": "PASS",
+      "cfb_header_and_word_stream_name": "PASS",
+      "full_content_or_visual_qa": "NOT_RUN",
+      "file_modified_by_qa": false
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/hunan/wangcheng/originals/blank/2－仲裁申请书（单位）.doc",
+      "sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+      "bytes": 51712,
+      "official_kind": "blank",
+      "zip_crc": "PASS",
+      "cfb_header_and_word_stream_name": "PASS",
+      "full_content_or_visual_qa": "NOT_RUN",
+      "file_modified_by_qa": false
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/hunan/wangcheng/originals/blank/1－仲裁申请书（劳动者）.doc",
+      "sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+      "bytes": 50688,
+      "official_kind": "blank",
+      "zip_crc": "PASS",
+      "cfb_header_and_word_stream_name": "PASS",
+      "full_content_or_visual_qa": "NOT_RUN",
+      "file_modified_by_qa": false
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/hunan/wangcheng/originals/sample/仲裁申请书（劳动者）.doc",
+      "sha256": "369d38b1bcb1d92e0be6b815d6269967fc7324afbb63cc22a94331bbfcc220cc",
+      "bytes": 26624,
+      "official_kind": "sample",
+      "zip_crc": "PASS",
+      "cfb_header_and_word_stream_name": "PASS",
+      "full_content_or_visual_qa": "NOT_RUN",
+      "file_modified_by_qa": false
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/hunan/wangcheng/originals/sample/仲裁申请书（单位）.doc",
+      "sha256": "00a47b36fa43d89f8c604d66585ac5e191360dd3d546feecc82ea8d6b4307444",
+      "bytes": 27136,
+      "official_kind": "sample",
+      "zip_crc": "PASS",
+      "cfb_header_and_word_stream_name": "PASS",
+      "full_content_or_visual_qa": "NOT_RUN",
+      "file_modified_by_qa": false
+    }
+  ],
+  "all_package_checks": "PASS",
+  "word_started": false,
+  "conversions": 0,
+  "models_called": 0
+}

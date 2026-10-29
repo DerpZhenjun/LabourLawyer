@@ -1,0 +1,41 @@
+{
+  "scope": "Public page screenshots only; original DOC visual QA NOT_RUN",
+  "checks": [
+    {
+      "source": "reports/nationwide-verification-20261029-c/hunan/yuhua/guide/page.png",
+      "source_sha256": "98731811a107354517c724b087c1e6d2e518214af79e9405e9646182e8364ab3",
+      "crop": "reports/nationwide-verification-20261029-c/hunan/yuhua/guide-top-review.png",
+      "pixel_box": [
+        0,
+        0,
+        1258,
+        1600
+      ],
+      "status": "viewed",
+      "observations": "Own district authority, phone, address, 60-workday header and 45-day explanation readable; pixels only cropped, source screenshot unchanged."
+    },
+    {
+      "source": "reports/nationwide-verification-20261029-c/hunan/wangcheng/guide/page.png",
+      "source_sha256": "fa2af40decae193feb6fee2bf1545467d298eaa8a8e3cd5f0cac89626fe52f9b",
+      "crop": "reports/nationwide-verification-20261029-c/hunan/wangcheng/guide-top-review.png",
+      "pixel_box": [
+        0,
+        0,
+        1258,
+        1600
+      ],
+      "status": "viewed",
+      "observations": "Own district authority, phone, address, 60-workday header and 45-day explanation readable; pixels only cropped, source screenshot unchanged."
+    },
+    {
+      "source": "reports/nationwide-verification-20261029-c/hunan/yuhua/native-downloads.png",
+      "status": "viewed",
+      "observations": "Only this own named session official portal ZIP downloads; completed controls visible."
+    },
+    {
+      "source": "reports/nationwide-verification-20261029-c/hunan/wangcheng/native-downloads.png",
+      "status": "viewed",
+      "observations": "Only this own named session official portal ZIP downloads; completed controls visible."
+    }
+  ]
+}

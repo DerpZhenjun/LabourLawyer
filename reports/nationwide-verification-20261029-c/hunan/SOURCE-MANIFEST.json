@@ -1,0 +1,685 @@
+{
+  "scope": "Public own native DOM captures and ZIP/DOC originals; no raw sessions, SSO queries, headers or cookies.",
+  "files": {
+    "discovery/changsha-picker/manifest.json": {
+      "sha256": "85a4ae6214c74f7a0c15868c9298d9022369555d7ee3bbedcdabb49b750830ed",
+      "bytes": 688
+    },
+    "discovery/changsha-picker/page.json": {
+      "sha256": "668a99ef9344a9cbc6df03b9dbe436db2dbf29ff3ba06af51990967fe07e61e6",
+      "bytes": 36771
+    },
+    "discovery/changsha-picker/page.png": {
+      "sha256": "5aabcdd026e720567fc1bc32561a6c98320f11c2940a7294b8fc40d55d241a27",
+      "bytes": 470875
+    },
+    "discovery/changsha-picker/page.txt": {
+      "sha256": "5b8b0ff55227da8d0381b906fd216e51985f5d435ff3c8d74c447d581859a002",
+      "bytes": 4470
+    },
+    "discovery/changsha-picker/snapshot.txt": {
+      "sha256": "0e5f036ab7543d2297c85e68d37bb16d3e73dc2bb3001bd552be5b077d1880b8",
+      "bytes": 11749
+    },
+    "discovery/hunan-picker/manifest.json": {
+      "sha256": "0df425279f643e2d31a1b6e77ecbe05bd673cb7ea6a0c46c1ce3655027820211",
+      "bytes": 688
+    },
+    "discovery/hunan-picker/page.json": {
+      "sha256": "45d33de9386d074d70d69ee8af04a2fcd1ca5648089b56d5a5d7821701ceb2af",
+      "bytes": 34472
+    },
+    "discovery/hunan-picker/page.png": {
+      "sha256": "b71a60a0ccf311da83f2b161d421780828bb95de9fbbfcc4a1c44b72097e0c72",
+      "bytes": 465826
+    },
+    "discovery/hunan-picker/page.txt": {
+      "sha256": "4a404d181def483cf0c91947901dea1a172c023a5d9e06f6a638687064e82c06",
+      "bytes": 4396
+    },
+    "discovery/hunan-picker/snapshot.txt": {
+      "sha256": "c4bcb938358aa5aad1abd1b9efdb642ab8963060b4ad405e3790178527dba915",
+      "bytes": 11605
+    },
+    "SCREENSHOT-REVIEW.json": {
+      "sha256": "e0df7c9ee95d6d2b2015f1e51bd4f827972f746d7bced268f2b07800c285dc43",
+      "bytes": 1751
+    },
+    "wangcheng/all-service-search/manifest.json": {
+      "sha256": "0f92fd4631187535e2f93513e724eebd6668d2bd805fa1f94015265ad639c3aa",
+      "bytes": 742
+    },
+    "wangcheng/all-service-search/page.json": {
+      "sha256": "b626c8e64cbf2c987e56d9c719e1c131e35c0e619ed49069239c64df3f0338a2",
+      "bytes": 26893
+    },
+    "wangcheng/all-service-search/page.png": {
+      "sha256": "663c8413d072eaac3a72f8126006bd63fe2fa4125d792eb2f30fcde331570228",
+      "bytes": 252969
+    },
+    "wangcheng/all-service-search/page.txt": {
+      "sha256": "67f88156ae70f7cee71a5c2aeec2a4e7769ba15819584e810944ad63ab08a205",
+      "bytes": 1683
+    },
+    "wangcheng/all-service-search/snapshot.txt": {
+      "sha256": "c0dc85b5ba3a4c711bce08e75b42668470e66e89e058e2b2d5b5bd8a4e964376",
+      "bytes": 4548
+    },
+    "wangcheng/attachment-observation.json": {
+      "sha256": "28633d793cbd1cd6ab4fbf5d4b2b3d7e44131209d639af866792a2cbd7a49276",
+      "bytes": 1578
+    },
+    "wangcheng/directory-picker/manifest.json": {
+      "sha256": "4a5881dff4ead300fa640e754b7e07b66fc1f12ee5f4ddd5ef6fdca3aea93971",
+      "bytes": 688
+    },
+    "wangcheng/directory-picker/page.json": {
+      "sha256": "02b5ca46eaecd28f059da67d4af1b438193f86beaf510308e3290b153f6b6b40",
+      "bytes": 23120
+    },
+    "wangcheng/directory-picker/page.png": {
+      "sha256": "9225a4fc978fec22c005aec170a28971ab76a762b3e5c0833e6a83fa7f57eac7",
+      "bytes": 419188
+    },
+    "wangcheng/directory-picker/page.txt": {
+      "sha256": "cf5eea0000d79e7212301a1d0165c8f762b8d9ee49ed363d158bc5cec487835b",
+      "bytes": 3549
+    },
+    "wangcheng/directory-picker/snapshot.txt": {
+      "sha256": "0ac5ea1dfdfdb2f882b5d0dfcda41272b6a7851984054fbafcfc815167cb2c87",
+      "bytes": 10074
+    },
+    "wangcheng/faq/manifest.json": {
+      "sha256": "b057034745ae1a4993965088e98722976dceaf9d88af70fa256d1cceb5286df0",
+      "bytes": 807
+    },
+    "wangcheng/faq/page.json": {
+      "sha256": "62aa03a06bd04e013a246d6c46536ec3cd295a6cdc4cf18220fe322338ab9e7c",
+      "bytes": 37330
+    },
+    "wangcheng/faq/page.png": {
+      "sha256": "0aeae9a6ec4b9c6f828f0a8b5f7a94cccc2fd35e2fb7c585168cd4f679838078",
+      "bytes": 712586
+    },
+    "wangcheng/faq/page.txt": {
+      "sha256": "53038eb15e31f7a90ba730676d151e67b2441137858efc2c2d90bd448cad4dd9",
+      "bytes": 9000
+    },
+    "wangcheng/faq/snapshot.txt": {
+      "sha256": "6c0be6406c4eb9b7722c0c422de93523260121c680876e6b9043e9a74c9b8f85",
+      "bytes": 10179
+    },
+    "wangcheng/guide/manifest.json": {
+      "sha256": "498550963eb3ba5b526b8c62b471dfeaf822e16ce6574c716b236291b97516a3",
+      "bytes": 807
+    },
+    "wangcheng/guide/page.json": {
+      "sha256": "aa77dbb58321962534d28b8c064a227cbdb89badc7e6b0d8056198e5edf185c1",
+      "bytes": 37357
+    },
+    "wangcheng/guide/page.png": {
+      "sha256": "fa2af40decae193feb6fee2bf1545467d298eaa8a8e3cd5f0cac89626fe52f9b",
+      "bytes": 644642
+    },
+    "wangcheng/guide/page.txt": {
+      "sha256": "b48032bc0283f92207d53ec2b6b8bcc73225612c1e16a098f85d4679694062b0",
+      "bytes": 9007
+    },
+    "wangcheng/guide/snapshot.txt": {
+      "sha256": "374d1e79dbc108139187bdd4c5ede475ce51b46a1463040bd0f3776980764273",
+      "bytes": 10274
+    },
+    "wangcheng/guide-top-review.png": {
+      "sha256": "f9f59f501496066115bb0b0d54c783a2ac5d268163e97f9ffa1bfa205c8b961d",
+      "bytes": 202139
+    },
+    "wangcheng/home/manifest.json": {
+      "sha256": "29b852c121090f8416f00e5351bb730df431ba83634d4a808a8c347fac8b3457",
+      "bytes": 693
+    },
+    "wangcheng/home/page.json": {
+      "sha256": "a918a62128be5ff3e45641b6e33c99955a6cc5641e9a829aed57eecf5a0b5ca5",
+      "bytes": 32845
+    },
+    "wangcheng/home/page.png": {
+      "sha256": "9e9c5ec62be22ad53a4d3c557c7a46d57a627e4696385f757d09b8a82fbaca5b",
+      "bytes": 1269230
+    },
+    "wangcheng/home/page.txt": {
+      "sha256": "74719cbb8ec3d19b25988f636dc2e53aa499f60dcd5e39871954884a93c878ba",
+      "bytes": 2602
+    },
+    "wangcheng/home/snapshot.txt": {
+      "sha256": "327c73cc42e92d77497796986b78a8a296f1593ff5f17700e9b1d696796cb01e",
+      "bytes": 7911
+    },
+    "wangcheng/materials-expanded/manifest.json": {
+      "sha256": "e4ce63780621a7e848c4b81b49ec33b5a4f4728fa97342d3a3dec89d9a2a1a0d",
+      "bytes": 807
+    },
+    "wangcheng/materials-expanded/page.json": {
+      "sha256": "e92af792406faf47c3a39c20fdffd721d4ed4bcddcbe60acebc4abac28d09f3d",
+      "bytes": 37182
+    },
+    "wangcheng/materials-expanded/page.png": {
+      "sha256": "a3f546b54687a1755ae5b659ca67f4977ff334828ed8f0266ac14c7b53ecaab9",
+      "bytes": 642758
+    },
+    "wangcheng/materials-expanded/page.txt": {
+      "sha256": "99ac250c746d3fdf5f99913fcbaf4499c7da193d0fb58a399bdd7c0bc19af90b",
+      "bytes": 8852
+    },
+    "wangcheng/materials-expanded/snapshot.txt": {
+      "sha256": "6c0be6406c4eb9b7722c0c422de93523260121c680876e6b9043e9a74c9b8f85",
+      "bytes": 10179
+    },
+    "wangcheng/native-download-receipt.json": {
+      "sha256": "7ff43a519e437ff8ffe6950efa2ceeb2d989885ecb2a66e1c18f8e7f1f3b45c6",
+      "bytes": 1011
+    },
+    "wangcheng/native-downloads.png": {
+      "sha256": "bd36c975e4a900e5d2c8ac1ff01a357a2592eebafcf336f97042daedf25894bc",
+      "bytes": 38460
+    },
+    "wangcheng/online-boundary.json": {
+      "sha256": "a6831e056a2960e8de7d204dbbe3828b97f353a7cb7d417bc1d6713b63d5e95e",
+      "bytes": 654
+    },
+    "wangcheng/originals/blank/1－仲裁申请书（劳动者）.doc": {
+      "sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+      "bytes": 50688
+    },
+    "wangcheng/originals/blank/1－仲裁申请书（劳动者）.doc.source.json": {
+      "sha256": "2c818ce04abae4db47d356c6faf3e0b3d71fc347c37d6c3bf55680e36b86a414",
+      "bytes": 1208
+    },
+    "wangcheng/originals/blank/2－仲裁申请书（单位）.doc": {
+      "sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+      "bytes": 51712
+    },
+    "wangcheng/originals/blank/2－仲裁申请书（单位）.doc.source.json": {
+      "sha256": "22be54a613adc8be971bd63ee45b4eadb4a78fa9121d98da12dafd61c98dd59e",
+      "bytes": 1193
+    },
+    "wangcheng/originals/blank/native-bundle.zip": {
+      "sha256": "0c9cbc2c7e5102e2b6488a1e1f9b42cb3b372abb1a6a6d85a5a60cff17e092dd",
+      "bytes": 102902
+    },
+    "wangcheng/originals/sample/native-bundle.zip": {
+      "sha256": "9edd8bbf8f1283abfe395e6b20ade418a04e37c33d7209e8df4e7767c0b9018d",
+      "bytes": 54230
+    },
+    "wangcheng/originals/sample/仲裁申请书（劳动者）.doc": {
+      "sha256": "369d38b1bcb1d92e0be6b815d6269967fc7324afbb63cc22a94331bbfcc220cc",
+      "bytes": 26624
+    },
+    "wangcheng/originals/sample/仲裁申请书（劳动者）.doc.source.json": {
+      "sha256": "b3c3eeab750248563f7b2cc06d1731e04e03ed877e690d7dd4ceb7702abd34b6",
+      "bytes": 1192
+    },
+    "wangcheng/originals/sample/仲裁申请书（单位）.doc": {
+      "sha256": "00a47b36fa43d89f8c604d66585ac5e191360dd3d546feecc82ea8d6b4307444",
+      "bytes": 27136
+    },
+    "wangcheng/originals/sample/仲裁申请书（单位）.doc.source.json": {
+      "sha256": "101950dae86a253d00e05bf3ad850537f8ded17d0fdb931218b969168c1827cf",
+      "bytes": 1177
+    },
+    "wangcheng/originals.json": {
+      "sha256": "3cf57f275d1baae5f3a06ea417d5dc0f4fa9949466bc40235f15f2f2c0c7e9c0",
+      "bytes": 4915
+    },
+    "wangcheng/public-catalogue.json": {
+      "sha256": "fe95315ca4cbc15eac1d62f146dc6abff50a4db056d0e9ddfb3125f8613009fd",
+      "bytes": 22529
+    },
+    "wangcheng/result-sample/manifest.json": {
+      "sha256": "3b6fa303675eae6724bc2c19df016f846331b2cf44f1acd7ba6868051d559e90",
+      "bytes": 807
+    },
+    "wangcheng/result-sample/page.json": {
+      "sha256": "17bc34ce2976582e1d5d19191c4e44edba11be7b399e678dd0053be8061fa98a",
+      "bytes": 35116
+    },
+    "wangcheng/result-sample/page.png": {
+      "sha256": "21fe3cefd6417f5b37fe29da5401ad74328f8d3bfa634bc252d4182fffb2907a",
+      "bytes": 568279
+    },
+    "wangcheng/result-sample/page.txt": {
+      "sha256": "800873a998ee99bc12621329163856fe5e5a80b79511a7d322195f700d98f698",
+      "bytes": 6438
+    },
+    "wangcheng/result-sample/snapshot.txt": {
+      "sha256": "06958d964b6b3674a9a7aca587ffd43f48aadcb0fbe988f824458bbc87905cef",
+      "bytes": 10302
+    },
+    "wangcheng/rights-duties/manifest.json": {
+      "sha256": "ed5c38b44305b5cd295aef222c521873ccd39248b0279475a46bdb61f85c521d",
+      "bytes": 807
+    },
+    "wangcheng/rights-duties/page.json": {
+      "sha256": "145d121f0a44cbee8cac7d8eadcb33230f04eb7a42f4a462a59cd031344eec40",
+      "bytes": 34792
+    },
+    "wangcheng/rights-duties/page.png": {
+      "sha256": "7523c3ed253c7a969052246d240fb14f369a161ecafe05f208df2933e19148bd",
+      "bytes": 567215
+    },
+    "wangcheng/rights-duties/page.txt": {
+      "sha256": "c377f5f8f3defc932eefbe159361b49b72fb0154779fb0caa9e0659d9857861a",
+      "bytes": 6462
+    },
+    "wangcheng/rights-duties/snapshot.txt": {
+      "sha256": "6c0be6406c4eb9b7722c0c422de93523260121c680876e6b9043e9a74c9b8f85",
+      "bytes": 10179
+    },
+    "wangcheng/sample-control/manifest.json": {
+      "sha256": "fda79a6e7e5e2ef0ce8921e023146b817c274177d9043238fdc8dee8965fc17f",
+      "bytes": 807
+    },
+    "wangcheng/sample-control/page.json": {
+      "sha256": "624cebb1d5b7f31c954a562ec77ca7634489adf46dbd9dfb7a3797dbc2d0fcc2",
+      "bytes": 37298
+    },
+    "wangcheng/sample-control/page.png": {
+      "sha256": "4d798167453f24bccd9668b6449412c7f288eed37d5f686d986381b006d0c0f4",
+      "bytes": 637620
+    },
+    "wangcheng/sample-control/page.txt": {
+      "sha256": "dbacc3ef433fbecfbf3b7417125c867c5da73e13b5160c053b8945bc2e932995",
+      "bytes": 8948
+    },
+    "wangcheng/sample-control/snapshot.txt": {
+      "sha256": "6b221fd53eb8b7152d7d7beae642de51c4ecaa2d4a3521883b7ff038f01a16ff",
+      "bytes": 10273
+    },
+    "wangcheng/selected-own-guide/manifest.json": {
+      "sha256": "9ddd81f77bc1f474fe92cea272f8561882564a2a786725b24b592be6161f50ef",
+      "bytes": 763
+    },
+    "wangcheng/selected-own-guide/page.json": {
+      "sha256": "a2344b6df129505f12a67d7dafefe920ac3bdb8555fbef6f3a5eaab82273f283",
+      "bytes": 37267
+    },
+    "wangcheng/selected-own-guide/page.png": {
+      "sha256": "3be347037579448cafcb28b35140d2b5d9725e54015724355926a71a4f6c36ce",
+      "bytes": 645827
+    },
+    "wangcheng/selected-own-guide/page.txt": {
+      "sha256": "b992e91957cdf8ded6bb11a5235c2733b508d3c6450a4850614a2da9e553a35a",
+      "bytes": 8963
+    },
+    "wangcheng/selected-own-guide/snapshot.txt": {
+      "sha256": "352ac4d42fb8903c368b3912ced658071df80ae5147b418024b4c81e3afd6bd6",
+      "bytes": 10222
+    },
+    "wangcheng/template-control/manifest.json": {
+      "sha256": "266373e6e5d39cacb146590b1e6a0ca4bbb1723829a8ee382bbb7eb15405de06",
+      "bytes": 807
+    },
+    "wangcheng/template-control/page.json": {
+      "sha256": "115479b0fab843e8cd0049f0d5b78666ff07aa3744d4747260671ac31f37d435",
+      "bytes": 37255
+    },
+    "wangcheng/template-control/page.png": {
+      "sha256": "761bf012944a4650505a409b0c5c7fb5369cc6cedd16b0b0e0a1ba2f84e9c2d4",
+      "bytes": 637609
+    },
+    "wangcheng/template-control/page.txt": {
+      "sha256": "0d76700000eb43fe386cbaa618ce019afe8c5cd25dd830a1742e7e1ce8a689c6",
+      "bytes": 8905
+    },
+    "wangcheng/template-control/snapshot.txt": {
+      "sha256": "6b221fd53eb8b7152d7d7beae642de51c4ecaa2d4a3521883b7ff038f01a16ff",
+      "bytes": 10273
+    },
+    "wangcheng/unselected-generic-guide/manifest.json": {
+      "sha256": "b5104b5656a5433837f0710848e90e5734813bd3c30b3fcb106dbe5087740ce2",
+      "bytes": 762
+    },
+    "wangcheng/unselected-generic-guide/page.json": {
+      "sha256": "bab12539068c20eb29a15f8280278df366a3a33e32a185aa0ef26d84090e1c39",
+      "bytes": 34997
+    },
+    "wangcheng/unselected-generic-guide/page.png": {
+      "sha256": "162521e051638213713c0d7034c04b9579698e6cac6db2bb6a3233913955a910",
+      "bytes": 520131
+    },
+    "wangcheng/unselected-generic-guide/page.txt": {
+      "sha256": "9342dea2d24e1d6260e77496c730ea4d9f3d1c5c39aa00ae4e64fd1177e52ea8",
+      "bytes": 8224
+    },
+    "wangcheng/unselected-generic-guide/snapshot.txt": {
+      "sha256": "ebb59940abe2fbcd6fa02bc1a1f3e5d4164d30bd96abd64effff5501f7ebe73a",
+      "bytes": 8688
+    },
+    "yuhua/all-service-search/manifest.json": {
+      "sha256": "fdf999872818c7cdc2ae48692c9d438704ccfa9412697db1260089feeac3de14",
+      "bytes": 742
+    },
+    "yuhua/all-service-search/page.json": {
+      "sha256": "3d8f83ea1ff4999ce6b9dfb24e4f69ccebf23bcc2960fcd5484ef6ee94df1984",
+      "bytes": 26455
+    },
+    "yuhua/all-service-search/page.png": {
+      "sha256": "d7712adefc1ce0f35239807ebc289dc8bbf7c1757856508416d23e82fd7f75f9",
+      "bytes": 248565
+    },
+    "yuhua/all-service-search/page.txt": {
+      "sha256": "2293b3aa06c523c0e2f0204e1d354b3ac9209be2f7bd55925b3e086de1ed4e21",
+      "bytes": 1587
+    },
+    "yuhua/all-service-search/snapshot.txt": {
+      "sha256": "bf40d55b0de600b9342445e94b77d1d3886c628662a4f21c63805003dde33f95",
+      "bytes": 4178
+    },
+    "yuhua/attachment-observation.json": {
+      "sha256": "25367df107afbd264780b3381007c4891bfaa99ac924cea6f1173e45d06128a4",
+      "bytes": 1578
+    },
+    "yuhua/directory-picker/manifest.json": {
+      "sha256": "9e8032b2d3e1781fde73edf32f4eb7af3fcc2275ac6c730d6836f3c8eda9e931",
+      "bytes": 688
+    },
+    "yuhua/directory-picker/page.json": {
+      "sha256": "b55343d2eafeffce2032174a726a8567f514e8267714ba5bf3f5a9acc4ae849b",
+      "bytes": 31726
+    },
+    "yuhua/directory-picker/page.png": {
+      "sha256": "87257626466ebf6fe3d35c1bea0ef97650f6421364d7fa437c259810a55aaf37",
+      "bytes": 467725
+    },
+    "yuhua/directory-picker/page.txt": {
+      "sha256": "cba810631dd652155b86edbe9dd483f7eef3c3fdb6bfa2e499f630a4f9d0b6b1",
+      "bytes": 4105
+    },
+    "yuhua/directory-picker/snapshot.txt": {
+      "sha256": "d3edbbf1449bcb913b0fdbc59d67015ee1dc926d83eb06d71c9712fb047e6557",
+      "bytes": 11004
+    },
+    "yuhua/faq/manifest.json": {
+      "sha256": "507ac33c751e685a3a7b37f305b1cc31d1ddeb2432100baceb8d12f98dc2d549",
+      "bytes": 807
+    },
+    "yuhua/faq/page.json": {
+      "sha256": "805890d6fe17a2e80d42bfcf6c00f15f9a81466be861eac60b060401b5af1d58",
+      "bytes": 37124
+    },
+    "yuhua/faq/page.png": {
+      "sha256": "a07ece60cd4b01aed4481c1a030a11ebfa4a5fa524f3cd3ce8a277d406def300",
+      "bytes": 709251
+    },
+    "yuhua/faq/page.txt": {
+      "sha256": "db75c0affcf5f5a85041cb8a725716fb5df27b97332de3d9e627ccdce3dabd89",
+      "bytes": 8952
+    },
+    "yuhua/faq/snapshot.txt": {
+      "sha256": "755af2c18aadb4dba3600b0aa301df7affe60a01ff310dc9fd2a8f1f63cfe0b5",
+      "bytes": 10001
+    },
+    "yuhua/guide/manifest.json": {
+      "sha256": "86ef5676d3b32caf5740bd7ce596fc48488556a40c077fd1b15c763411473bc9",
+      "bytes": 807
+    },
+    "yuhua/guide/page.json": {
+      "sha256": "225ac5b8c72ad8536b60576c402c092c84e6760b8630e0d270cea5e2495d63bf",
+      "bytes": 37151
+    },
+    "yuhua/guide/page.png": {
+      "sha256": "98731811a107354517c724b087c1e6d2e518214af79e9405e9646182e8364ab3",
+      "bytes": 641464
+    },
+    "yuhua/guide/page.txt": {
+      "sha256": "83ecfc34f229a2d0fec8117910a5cf369f939204950249d0fdd50f21f88c70bf",
+      "bytes": 8959
+    },
+    "yuhua/guide/snapshot.txt": {
+      "sha256": "e57ea4dd431084858b1fb6b156067c3eb7d3a1048e2b0730a3461dad374f55b7",
+      "bytes": 10096
+    },
+    "yuhua/guide-top-review.png": {
+      "sha256": "f69556e8d90331f19479236f8d032e767e2a05c5183a1c15cd580c4ab358a825",
+      "bytes": 202273
+    },
+    "yuhua/home/manifest.json": {
+      "sha256": "9c79c045330dc67e4b3b216bc54adf1e32613b40f2789d3df91478a6f83f7609",
+      "bytes": 693
+    },
+    "yuhua/home/page.json": {
+      "sha256": "1a231f707661c23e46344adf035196dc584a63032cda0e8c750083503b5337f8",
+      "bytes": 32845
+    },
+    "yuhua/home/page.png": {
+      "sha256": "0eb00a1459e887680456c537382c13ff94bbaae76b10703d047659419f978ea9",
+      "bytes": 1272968
+    },
+    "yuhua/home/page.txt": {
+      "sha256": "81ec5d4b9920ee5af0fbc27cb0f64ded80c18739ffcd2f01d289c15783cbeda5",
+      "bytes": 2602
+    },
+    "yuhua/home/snapshot.txt": {
+      "sha256": "feaa4873cf67874facb4a46d802a9289953c0d0302ebadd4154da1c5e40fc5c8",
+      "bytes": 7795
+    },
+    "yuhua/materials-expanded/manifest.json": {
+      "sha256": "3e42ee1c78c457955c04876fdf70f09b022c05b9baba084f09e37275d036d3e1",
+      "bytes": 807
+    },
+    "yuhua/materials-expanded/page.json": {
+      "sha256": "68650c4703b3fa339efd94123640b16ca55f0b3d731bb74711a31b151f11db01",
+      "bytes": 36976
+    },
+    "yuhua/materials-expanded/page.png": {
+      "sha256": "a52ee38d4a8b19a7f3438785804fdf5fb0ec538879446e8865afc8b3de0111f2",
+      "bytes": 639562
+    },
+    "yuhua/materials-expanded/page.txt": {
+      "sha256": "cbb326878948ed40831e6a5f36fc9e1f9c5048cac17b8134bbdb0aff2913bebf",
+      "bytes": 8804
+    },
+    "yuhua/materials-expanded/snapshot.txt": {
+      "sha256": "755af2c18aadb4dba3600b0aa301df7affe60a01ff310dc9fd2a8f1f63cfe0b5",
+      "bytes": 10001
+    },
+    "yuhua/native-download-receipt.json": {
+      "sha256": "aa877f97ebb5ae9ab626b43c71d96feb81783b593be73aa166f19afd327e75c8",
+      "bytes": 1003
+    },
+    "yuhua/native-downloads.png": {
+      "sha256": "a4e7cbd60c871098c6dcd67bc53eb407839fd6b4eaddeec625caeac88c68ba82",
+      "bytes": 26363
+    },
+    "yuhua/online-boundary.json": {
+      "sha256": "c1442913b71a1d910b95b4fb475c1d4a89121bb166c88b6e2595c15088dd948a",
+      "bytes": 654
+    },
+    "yuhua/originals/blank/1－仲裁申请书（劳动者）.doc": {
+      "sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+      "bytes": 50688
+    },
+    "yuhua/originals/blank/1－仲裁申请书（劳动者）.doc.source.json": {
+      "sha256": "27868fc3c138059b474f95ad72b655d73b350e9659f0d05993370e6e0aa6d7b1",
+      "bytes": 1204
+    },
+    "yuhua/originals/blank/2－仲裁申请书（单位）.doc": {
+      "sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+      "bytes": 51712
+    },
+    "yuhua/originals/blank/2－仲裁申请书（单位）.doc.source.json": {
+      "sha256": "23c3c07138d77cd9007f245abf90ce8f72053bdbc4e9a7e935d8f43067f3a48b",
+      "bytes": 1189
+    },
+    "yuhua/originals/blank/native-bundle.zip": {
+      "sha256": "fe0c06b2c942fdb8ebecc15202ea2892cf989c15ed2f13b294bff444e15a1459",
+      "bytes": 102902
+    },
+    "yuhua/originals/sample/native-bundle.zip": {
+      "sha256": "101547416ad26322bfbd7b8a6071c673046087b9451ef2bde5a81fbb8e9845d9",
+      "bytes": 54230
+    },
+    "yuhua/originals/sample/仲裁申请书（劳动者）.doc": {
+      "sha256": "369d38b1bcb1d92e0be6b815d6269967fc7324afbb63cc22a94331bbfcc220cc",
+      "bytes": 26624
+    },
+    "yuhua/originals/sample/仲裁申请书（劳动者）.doc.source.json": {
+      "sha256": "6215ec6417699710b42e6188ac7ff4b9722e044c4daf1f4232561d45cd0c00c1",
+      "bytes": 1188
+    },
+    "yuhua/originals/sample/仲裁申请书（单位）.doc": {
+      "sha256": "00a47b36fa43d89f8c604d66585ac5e191360dd3d546feecc82ea8d6b4307444",
+      "bytes": 27136
+    },
+    "yuhua/originals/sample/仲裁申请书（单位）.doc.source.json": {
+      "sha256": "d77574059cc3994076a0a41246edbd82812c25f7bb9b317940c452dcce00a1e6",
+      "bytes": 1173
+    },
+    "yuhua/originals.json": {
+      "sha256": "3974fb03c39ab948f44e9c509b8fe41fcb8d630a6fbd4064b83809b77c337a25",
+      "bytes": 4899
+    },
+    "yuhua/public-catalogue.json": {
+      "sha256": "abb9fc610ffcb13cd6d8091e1fe689e4f9537210b423ce64b8760d4f10e8a535",
+      "bytes": 21165
+    },
+    "yuhua/result-sample/manifest.json": {
+      "sha256": "73370169f878fbd929c0d43b5b808222a0badbcac084679f503ed0f66785a5f9",
+      "bytes": 807
+    },
+    "yuhua/result-sample/page.json": {
+      "sha256": "c4c3cc9cfcbc540d6b8120a756af8bfd922b5f788fe444271e5fc7911e58ac40",
+      "bytes": 34910
+    },
+    "yuhua/result-sample/page.png": {
+      "sha256": "bb7a934b122f0c60a876297c023a611de150259f453c884922d2deb2ba1c335f",
+      "bytes": 564957
+    },
+    "yuhua/result-sample/page.txt": {
+      "sha256": "a4bb64ba476077438e23ad86dc1bb944be59ff0985dd5723ad316d4ad930cb2f",
+      "bytes": 6390
+    },
+    "yuhua/result-sample/snapshot.txt": {
+      "sha256": "3faa54544f9b145343ea8a5f52386e751cc8d7e9885246c92801a4c114bcc944",
+      "bytes": 10124
+    },
+    "yuhua/rights-duties/manifest.json": {
+      "sha256": "29e81381891ddba3db8c510b8ce367c38890ea9ffd98ceec1398c0ea02edf202",
+      "bytes": 807
+    },
+    "yuhua/rights-duties/page.json": {
+      "sha256": "ebe5b2ba2da81d5183c5a58160b5f106d7978ffbfa3190aa3a73b64c03a4a5f0",
+      "bytes": 34586
+    },
+    "yuhua/rights-duties/page.png": {
+      "sha256": "b599f0584186734b0fb1e796c23e72790e8104eee49a3fb94190b81bb64d0bee",
+      "bytes": 563946
+    },
+    "yuhua/rights-duties/page.txt": {
+      "sha256": "2b3107d33eb04a260a34698ae01ab577729190ba6e5eea58ebd241369a7bc6ff",
+      "bytes": 6414
+    },
+    "yuhua/rights-duties/snapshot.txt": {
+      "sha256": "755af2c18aadb4dba3600b0aa301df7affe60a01ff310dc9fd2a8f1f63cfe0b5",
+      "bytes": 10001
+    },
+    "yuhua/sample-control/manifest.json": {
+      "sha256": "4f7ce6a9aa35f7c691dc9b8639ccd48527fb1e3b1361629465577ea48f1124f2",
+      "bytes": 807
+    },
+    "yuhua/sample-control/page.json": {
+      "sha256": "f4f325ce2a87b9141f72582e05c19317b5370dc9452af0701993e96127c31e13",
+      "bytes": 37049
+    },
+    "yuhua/sample-control/page.png": {
+      "sha256": "898b33d3223d6f4958ddccd56d2a242e2e197a439303839b0cb7491611d837e5",
+      "bytes": 634769
+    },
+    "yuhua/sample-control/page.txt": {
+      "sha256": "b6ef437b4dc711a68876c3f61f6d0dea723c3b3012592118306aead7c3fea22b",
+      "bytes": 8857
+    },
+    "yuhua/sample-control/snapshot.txt": {
+      "sha256": "601727779593c9b6a1a7520ff5ae82410c31f50158db366d633fe67a3fec3e33",
+      "bytes": 10095
+    },
+    "yuhua/selected-own-guide/manifest.json": {
+      "sha256": "7db275e0e7176c95cae9ed646e3e013960df783bea9a30a2680953f9c15d0e93",
+      "bytes": 762
+    },
+    "yuhua/selected-own-guide/page.json": {
+      "sha256": "76b2b61c7f37b022150c41756a89c8f873663c89662d7a1252bcdd75fc74841e",
+      "bytes": 37019
+    },
+    "yuhua/selected-own-guide/page.png": {
+      "sha256": "9d6326008740abf58053c9096d9ecf7eeab345a10def6c1b7bc812a9671afec4",
+      "bytes": 641434
+    },
+    "yuhua/selected-own-guide/page.txt": {
+      "sha256": "0b4d770f1ada8c7d1453398e2f9747d513069b7b94719a47f39447ab2b6db5a5",
+      "bytes": 8894
+    },
+    "yuhua/selected-own-guide/snapshot.txt": {
+      "sha256": "763983e82b9b148708ce7e6b0674558613e30a82cebd79df0b2f3988a630b330",
+      "bytes": 9879
+    },
+    "yuhua/template-control/manifest.json": {
+      "sha256": "0e727b2a03dd94ed164ad548621b9f31ea91ace953e60c93dab09a1bfd155e65",
+      "bytes": 807
+    },
+    "yuhua/template-control/page.json": {
+      "sha256": "e8df5d3fd42cb42f0b5fecb5e76422c4d05db98dbf1a38a31d9389db043ff61e",
+      "bytes": 37006
+    },
+    "yuhua/template-control/page.png": {
+      "sha256": "6bae98015eaa8ef6b42d5ce46a0455a925ce353f9a47098efdb54bb68877398c",
+      "bytes": 633056
+    },
+    "yuhua/template-control/page.txt": {
+      "sha256": "df2811f7aa900aefc6c62494b7a22de5a74f5e9711f86ad5641df2464f5616d0",
+      "bytes": 8814
+    },
+    "yuhua/template-control/snapshot.txt": {
+      "sha256": "601727779593c9b6a1a7520ff5ae82410c31f50158db366d633fe67a3fec3e33",
+      "bytes": 10095
+    },
+    "yuhua/theme-search/manifest.json": {
+      "sha256": "6182706c99c7e52877c8227befc2d25a9743820d24acd7a8f4eb009807896ba4",
+      "bytes": 742
+    },
+    "yuhua/theme-search/page.json": {
+      "sha256": "a23c71696b60c22d8236e5b12f3b68a261f25d324332093a215ab1846c1f217f",
+      "bytes": 25876
+    },
+    "yuhua/theme-search/page.png": {
+      "sha256": "ab218bff8aa9a9ff87a97962ce403e247ae68f259ba9413d88d9d3a36c2b9c2e",
+      "bytes": 243863
+    },
+    "yuhua/theme-search/page.txt": {
+      "sha256": "c96c987840619c2bddf83dc6486d4eefaa43db701c7cb792c23d885ca19cf859",
+      "bytes": 1448
+    },
+    "yuhua/theme-search/snapshot.txt": {
+      "sha256": "50d22da4f06c61778047bac17076aeff1b57b1a4cf5c1297bbcc58b9653f769f",
+      "bytes": 3716
+    },
+    "yuhua/unselected-generic-guide/manifest.json": {
+      "sha256": "8b079e44058dd77cce78844c708f118d8701774f493d0043bd1b6cd367779a1a",
+      "bytes": 762
+    },
+    "yuhua/unselected-generic-guide/page.json": {
+      "sha256": "45814f56e17f966885212709c27e93662eca3a702e3d42204b03b819e26e3591",
+      "bytes": 35012
+    },
+    "yuhua/unselected-generic-guide/page.png": {
+      "sha256": "144e642965be4dea0a77f31951c8487d69bc07c9a833c6d05a66eb388c595dc5",
+      "bytes": 606808
+    },
+    "yuhua/unselected-generic-guide/page.txt": {
+      "sha256": "940d4e932efcfaecb404c48450756bffd00678d42ee5064651fab689bcc0d3be",
+      "bytes": 8239
+    },
+    "yuhua/unselected-generic-guide/snapshot.txt": {
+      "sha256": "fc9a3865d3ee1d8e7065c9093e707cbb8308517acc2129de398d91d04f724c6a",
+      "bytes": 8599
+    }
+  }
+}

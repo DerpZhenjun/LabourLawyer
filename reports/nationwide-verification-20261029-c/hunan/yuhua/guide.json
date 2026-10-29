@@ -1,0 +1,502 @@
+{
+  "province": "hunan",
+  "city": "长沙市",
+  "district": "雨花区",
+  "region_code": "430111",
+  "source_type": "official_own_district_guide",
+  "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+  "source_id": "64a4b3a0d0bbb800bd3309fb",
+  "source_title": "劳动人事争议仲裁申请",
+  "service_name": "劳动人事争议仲裁申请",
+  "authority": "雨花区人社局",
+  "service_code": "12430111444932183M4002014302002",
+  "service_ids": {
+    "approve_id": "E499C22DC24A06E7E053671515AC91D4",
+    "official_area_code": "430111999000",
+    "rights_code": "002014302002",
+    "yw_code": "01"
+  },
+  "official_profile_version": 10,
+  "collected_at": "2026-10-29T10:10:23.479248+00:00",
+  "verified_at": "2026-10-29T10:10:23.479248+00:00",
+  "verification_status": "partial",
+  "collection_status": "own_source_captured",
+  "published": false,
+  "publication_status": "unpublished",
+  "can_generate": false,
+  "candidate_web_qa": "NOT_RUN",
+  "fields": {
+    "服务对象": {
+      "raw_value": "个人/法人",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "办理部门": {
+      "raw_value": "雨花区人社局",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "办理渠道": {
+      "raw_value": "互联网咨询，互联网收件",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "是否收费": {
+      "raw_value": "否",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "办理数量限制": {
+      "raw_value": "暂无数量限制",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "线下通办范围": {
+      "raw_value": "全县",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "网上办理深度": {
+      "raw_value": "四级标准",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "必需现场办理原因": {
+      "raw_value": "无需到现场办理",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "法定办结时限说明": {
+      "raw_value": "仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。逾期未作出仲裁裁决的，当事人可以就该劳动争议事项向人民法院提起诉讼。",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "承诺办结时限说明": {
+      "raw_value": "仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。逾期未作出仲裁裁决的，当事人可以就该劳动争议事项向人民法院提起诉讼。",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "办理形式": {
+      "raw_value": "窗口办理、网上办理",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "办理地点": {
+      "raw_value": "湖南省长沙市雨花区朝晖路499号长沙市雨花区人力资源和社会保障局一楼大厅;",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "办理时间": {
+      "raw_value": "法定工作日，夏季（07月01日~09月30日）：上午 09:00~12:00,下午 13:30~17:30;法定工作日，冬季（10月01日~次年06月30日）：上午 09:00~12:00,下午 13:00~17:00;",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "咨询服务": {
+      "raw_value": "0731-85880234",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "监督投诉方式": {
+      "raw_value": "0731-85880513",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "是否支持证明事项告知承诺": {
+      "raw_value": "否",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "是否支持涉企事项告知承诺": {
+      "raw_value": "否",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "来源渠道": {
+      "raw_value": "申请人自备",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "材料类型": {
+      "raw_value": "复印件",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "材料形式": {
+      "raw_value": "纸质 (2份) 和电子",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "提交方式": {
+      "raw_value": "网上现场都可提交",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "受理标准": {
+      "raw_value": "一般参照《民事诉讼法》及民事诉讼相关证据规则的规定，划分书证、物证、视听资料、电子数据、证人证言、当事人的陈述、鉴定结论、勘验笔录八类。《民事诉讼法》第六十三条 证据种类 证据包括：(一)当事人的陈述;(二)书证;(三)物证;(四)视听资料;(五)电子数据;(六)证人证言;(七)鉴定意见;(八)勘验笔录。证据必须查证属实，才能作为认定事实的根据。\n... 【展开全部】",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "填报须知": {
+      "raw_value": "提交份数，根据当事人数量基础上+1",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own rendered table"
+    },
+    "法定办结时限": {
+      "raw_value": "60个工作日",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own anonymous public catalogue approveLimit"
+    },
+    "承诺办结时限": {
+      "raw_value": "60个工作日",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own anonymous public catalogue commitmentLimit"
+    },
+    "事项编码": {
+      "raw_value": "12430111444932183M4002014302002",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_basis": "own anonymous public catalogue approveCode"
+    }
+  },
+  "materials": [
+    {
+      "id": "837c60d3579141ebbd21bafb6f316339",
+      "name": "劳动仲裁申请书",
+      "required": "必要",
+      "source_channel": "申请人自备",
+      "material_type": "原件",
+      "copies": 2,
+      "submission_method": "网上现场都可提交",
+      "instructions": "劳动仲裁申请书提交份数，根据当事人数量基础上+1",
+      "acceptance_standard": "《劳动争议调解仲裁法》第二条 中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法:（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。",
+      "raw": {
+        "acceptStandard": "《劳动争议调解仲裁法》第二条 中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法:（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。",
+        "attachList": [
+          {
+            "attachCode": "000002",
+            "attachId": "39736ae6dc2c4ef8b073a6100f353aae",
+            "attachName": "1－仲裁申请书（劳动者）.doc",
+            "attachPath": "approve/2021-06-29-15/1624951667887$$1－仲裁申请书（劳动者）.doc",
+            "attachSize": 50688,
+            "attachType": ".doc",
+            "bucketName": "zwfw202106",
+            "businessId": "837c60d3579141ebbd21bafb6f316339"
+          },
+          {
+            "attachCode": "000003",
+            "attachId": "37edfb10f54240b28bd9016fcb43ce5c",
+            "attachName": "仲裁申请书（劳动者）.doc",
+            "attachPath": "approve/2024-11-27-16/1732694895374$$仲裁申请书（劳动者）.doc",
+            "attachSize": 26624,
+            "attachType": ".doc",
+            "bucketName": "zwfw202411",
+            "businessId": "837c60d3579141ebbd21bafb6f316339"
+          },
+          {
+            "attachCode": "000003",
+            "attachId": "455fcffafa5141cf9cdfe4dc61178e2c",
+            "attachName": "仲裁申请书（单位）.doc",
+            "attachPath": "approve/2024-11-27-16/1732694895330$$仲裁申请书（单位）.doc",
+            "attachSize": 27136,
+            "attachType": ".doc",
+            "bucketName": "zwfw202411",
+            "businessId": "837c60d3579141ebbd21bafb6f316339"
+          },
+          {
+            "attachCode": "000002",
+            "attachId": "b194fe8b1e364682beb9ec2e217aeeed",
+            "attachName": "2－仲裁申请书（单位）.doc",
+            "attachPath": "approve/2021-06-29-15/1624951667935$$2－仲裁申请书（单位）.doc",
+            "attachSize": 51712,
+            "attachType": ".doc",
+            "bucketName": "zwfw202106",
+            "businessId": "837c60d3579141ebbd21bafb6f316339"
+          }
+        ],
+        "commitWay": "网上现场都可提交",
+        "copiesNum": 2,
+        "freeSubmission": "4",
+        "isMust": "必要",
+        "isNeedSubmit": "Y",
+        "materialApproveType": "申请表",
+        "materialCode": "M0020143020020101",
+        "materialExplain": "劳动仲裁申请书提交份数，根据当事人数量基础上+1",
+        "materialId": "837c60d3579141ebbd21bafb6f316339",
+        "materialStandard": "纸质和电子",
+        "materialTitle": "劳动仲裁申请书",
+        "materialType": "原件",
+        "orderNum": 1,
+        "sourceChannel": "申请人自备"
+      },
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4"
+    },
+    {
+      "id": "d5ed8ccebf8749989abf630c831a1c8e",
+      "name": "居民身份证",
+      "required": "必要",
+      "source_channel": "政府部门核发",
+      "material_type": "复印件",
+      "copies": 1,
+      "submission_method": "网上现场都可提交",
+      "instructions": "如实提交",
+      "acceptance_standard": "材料齐全，真实有效",
+      "raw": {
+        "acceptStandard": "材料齐全，真实有效",
+        "attachList": [
+          {
+            "bucketName": "zwfw"
+          }
+        ],
+        "commitWay": "网上现场都可提交",
+        "copiesNum": 1,
+        "freeSubmission": "2",
+        "isMust": "必要",
+        "isNeedSubmit": "Y",
+        "materialApproveType": "证照",
+        "materialCode": "M0020143020020102",
+        "materialExplain": "如实提交",
+        "materialId": "d5ed8ccebf8749989abf630c831a1c8e",
+        "materialStandard": "纸质和电子",
+        "materialTitle": "居民身份证",
+        "materialType": "复印件",
+        "orderNum": 2,
+        "sourceChannel": "政府部门核发"
+      },
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4"
+    },
+    {
+      "id": "5f16a3884b1e433291dbff047573484e",
+      "name": "营业执照",
+      "required": "必要",
+      "source_channel": "政府部门核发",
+      "material_type": "复印件",
+      "copies": 1,
+      "submission_method": "网上现场都可提交",
+      "instructions": "政府部门核发，也可以通过国家企业信用信息公示系统、天眼查、企查查进行查询打印",
+      "acceptance_standard": "材料齐全，真实有效",
+      "raw": {
+        "acceptStandard": "材料齐全，真实有效",
+        "attachList": [
+          {
+            "bucketName": "zwfw"
+          }
+        ],
+        "commitWay": "网上现场都可提交",
+        "copiesNum": 1,
+        "freeSubmission": "2",
+        "isMust": "必要",
+        "isNeedSubmit": "Y",
+        "materialApproveType": "证照",
+        "materialCode": "M0020143020020103",
+        "materialExplain": "政府部门核发，也可以通过国家企业信用信息公示系统、天眼查、企查查进行查询打印",
+        "materialId": "5f16a3884b1e433291dbff047573484e",
+        "materialStandard": "纸质和电子",
+        "materialTitle": "营业执照",
+        "materialType": "复印件",
+        "orderNum": 3,
+        "sourceChannel": "政府部门核发"
+      },
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4"
+    },
+    {
+      "id": "2905367e1fb748ec8ad69e70d11f5b47",
+      "name": "证据材料",
+      "required": "必要",
+      "source_channel": "申请人自备",
+      "material_type": "复印件",
+      "copies": 2,
+      "submission_method": "网上现场都可提交",
+      "instructions": "提交份数，根据当事人数量基础上+1",
+      "acceptance_standard": "一般参照《民事诉讼法》及民事诉讼相关证据规则的规定，划分书证、物证、视听资料、电子数据、证人证言、当事人的陈述、鉴定结论、勘验笔录八类。《民事诉讼法》第六十三条 证据种类 证据包括：(一)当事人的陈述;(二)书证;(三)物证;(四)视听资料;(五)电子数据;(六)证人证言;(七)鉴定意见;(八)勘验笔录。证据必须查证属实，才能作为认定事实的根据。",
+      "raw": {
+        "acceptStandard": "一般参照《民事诉讼法》及民事诉讼相关证据规则的规定，划分书证、物证、视听资料、电子数据、证人证言、当事人的陈述、鉴定结论、勘验笔录八类。《民事诉讼法》第六十三条 证据种类 证据包括：(一)当事人的陈述;(二)书证;(三)物证;(四)视听资料;(五)电子数据;(六)证人证言;(七)鉴定意见;(八)勘验笔录。证据必须查证属实，才能作为认定事实的根据。",
+        "attachList": [
+          {
+            "bucketName": "zwfw"
+          }
+        ],
+        "commitWay": "网上现场都可提交",
+        "copiesNum": 2,
+        "freeSubmission": "4",
+        "isMust": "必要",
+        "isNeedSubmit": "Y",
+        "materialApproveType": "证明材料",
+        "materialCode": "M0020143020020104",
+        "materialExplain": "提交份数，根据当事人数量基础上+1",
+        "materialId": "2905367e1fb748ec8ad69e70d11f5b47",
+        "materialStandard": "纸质和电子",
+        "materialTitle": "证据材料",
+        "materialType": "复印件",
+        "orderNum": 4,
+        "sourceChannel": "申请人自备"
+      },
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4"
+    }
+  ],
+  "templates": [
+    {
+      "id": "39736ae6dc2c4ef8b073a6100f353aae",
+      "annex_id": "39736ae6dc2c4ef8b073a6100f353aae",
+      "official_annex_id": "39736ae6dc2c4ef8b073a6100f353aae",
+      "region_code": "430111",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "material_id": "837c60d3579141ebbd21bafb6f316339",
+      "original_name": "1－仲裁申请书（劳动者）.doc",
+      "official_kind": "blank",
+      "file_type": "doc",
+      "content_role": "official_blank_legacy_doc",
+      "file": "reports/nationwide-verification-20261029-c/hunan/yuhua/originals/blank/1－仲裁申请书（劳动者）.doc",
+      "sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+      "bytes": 50688,
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667887%24%241%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202106",
+      "download_status": "downloaded",
+      "downloaded_at": "2026-10-29T10:11:44.408521+00:00",
+      "http_status": 200,
+      "can_generate": false,
+      "document_types": []
+    },
+    {
+      "id": "b194fe8b1e364682beb9ec2e217aeeed",
+      "annex_id": "b194fe8b1e364682beb9ec2e217aeeed",
+      "official_annex_id": "b194fe8b1e364682beb9ec2e217aeeed",
+      "region_code": "430111",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "material_id": "837c60d3579141ebbd21bafb6f316339",
+      "original_name": "2－仲裁申请书（单位）.doc",
+      "official_kind": "blank",
+      "file_type": "doc",
+      "content_role": "official_blank_legacy_doc",
+      "file": "reports/nationwide-verification-20261029-c/hunan/yuhua/originals/blank/2－仲裁申请书（单位）.doc",
+      "sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+      "bytes": 51712,
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667935%24%242%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202106",
+      "download_status": "downloaded",
+      "downloaded_at": "2026-10-29T10:11:44.409628+00:00",
+      "http_status": 200,
+      "can_generate": false,
+      "document_types": []
+    },
+    {
+      "id": "37edfb10f54240b28bd9016fcb43ce5c",
+      "annex_id": "37edfb10f54240b28bd9016fcb43ce5c",
+      "official_annex_id": "37edfb10f54240b28bd9016fcb43ce5c",
+      "region_code": "430111",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "material_id": "837c60d3579141ebbd21bafb6f316339",
+      "original_name": "仲裁申请书（劳动者）.doc",
+      "official_kind": "sample",
+      "file_type": "doc",
+      "content_role": "official_sample_legacy_doc",
+      "file": "reports/nationwide-verification-20261029-c/hunan/yuhua/originals/sample/仲裁申请书（劳动者）.doc",
+      "sha256": "369d38b1bcb1d92e0be6b815d6269967fc7324afbb63cc22a94331bbfcc220cc",
+      "bytes": 26624,
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895374%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202411",
+      "download_status": "downloaded",
+      "downloaded_at": "2026-10-29T10:11:44.421657+00:00",
+      "http_status": 200,
+      "can_generate": false,
+      "document_types": []
+    },
+    {
+      "id": "455fcffafa5141cf9cdfe4dc61178e2c",
+      "annex_id": "455fcffafa5141cf9cdfe4dc61178e2c",
+      "official_annex_id": "455fcffafa5141cf9cdfe4dc61178e2c",
+      "region_code": "430111",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "material_id": "837c60d3579141ebbd21bafb6f316339",
+      "original_name": "仲裁申请书（单位）.doc",
+      "official_kind": "sample",
+      "file_type": "doc",
+      "content_role": "official_sample_legacy_doc",
+      "file": "reports/nationwide-verification-20261029-c/hunan/yuhua/originals/sample/仲裁申请书（单位）.doc",
+      "sha256": "00a47b36fa43d89f8c604d66585ac5e191360dd3d546feecc82ea8d6b4307444",
+      "bytes": 27136,
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895330%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202411",
+      "download_status": "downloaded",
+      "downloaded_at": "2026-10-29T10:11:44.422655+00:00",
+      "http_status": 200,
+      "can_generate": false,
+      "document_types": []
+    }
+  ],
+  "sections": {
+    "完整指南": {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_file": "reports/nationwide-verification-20261029-c/hunan/yuhua/guide/page.json",
+      "raw_text": "中国政府网\n湖南省人大网\n湖南省政协网\n繁體中文\n无障碍浏览\n长者版\n湖南省\n个人服务\n法人服务\n便民服务\n中介超市\n好差评\n阳光政务\n当前位置： 首页 法人办事  劳动人事争议仲裁申请\n劳动人事争议仲裁申请\n\n公共服务\n\n0\n次\n\n到现场次数\n\n60\n工作日\n\n法定办结时限\n\n60\n工作日\n\n承诺办结时限\n在线办理\n查看评价\n订阅\n手机查看\n网上咨询\n0分\n\n0条评论\n\n基本信息\n服务对象\n\t\n个人/法人\n\t\n办理部门\n\t\n雨花区人社局\n\n\n办理渠道\n\t\n互联网咨询，互联网收件\n\n是否收费\t否\t\n办理数量限制\n\t\n暂无数量限制\n\n\n线下通办范围\n\t\n全县\n\t\n网上办理深度\n\t\n四级标准\n\n\n必需现场办理原因\n\t\n无需到现场办理\n\t\n法定办结时限说明\n\t\n仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。逾期未作出仲裁裁决的，当事人可以就该劳动争议事项向人民法院提起诉讼。\n\n\n承诺办结时限说明\n\t\n仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。逾期未作出仲裁裁决的，当事人可以就该劳动争议事项向人民法院提起诉讼。\n\t\n办理形式\n\t\n窗口办理、网上办理\n\n\n办理地点\n\t\n湖南省长沙市雨花区朝晖路499号长沙市雨花区人力资源和社会保障局一楼大厅; \n\n\n办理时间\n\t\n法定工作日，夏季（07月01日~09月30日）：上午 09:00~12:00,下午 13:30~17:30;法定工作日，冬季（10月01日~次年06月30日）：上午 09:00~12:00,下午 13:00~17:00;\n\n\n咨询服务\n\t\n0731-85880234\n\t\n监督投诉方式\n\t\n0731-85880513\n\n\n是否支持证明事项告知承诺\n\t\n否\n\t\n是否支持涉企事项告知承诺\n\t\n否\n受理条件\n\n《中华人民共和国劳动争议调解仲裁法》第二条 中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法:（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。\n\n请填写以下信息，为您提供具体办理地点和个性化材料清单等更多详细指引\n*请选择单位登记机关行政所在地\n:\n请确认单位登记机关行政所在地的办理层级\n:\n 省级\n 市级\n 区县级\n确认 重置\n所需材料\n必要\n劳动仲裁申请书\n示例\n模板\n来源渠道：\t申请人自备\t材料类型：\t原件\t材料形式：\t纸质 (2份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n《劳动争议调解仲裁法》第二条 中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法:（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。\n... 【展开全部】\n\n填报须知：\t\n劳动仲裁申请书提交份数，根据当事人数量基础上+1\n必要\n居民身份证\n来源渠道：\t政府部门核发 该材料可免提交\t材料类型：\t复印件\t材料形式：\t纸质 (1份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n材料齐全，真实有效\n\n填报须知：\t\n如实提交\n必要\n营业执照\n来源渠道：\t政府部门核发 该材料可免提交\t材料类型：\t复印件\t材料形式：\t纸质 (1份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n材料齐全，真实有效\n\n填报须知：\t\n政府部门核发，也可以通过国家企业信用信息公示系统、天眼查、企查查进行查询打印\n必要\n证据材料\n来源渠道：\t申请人自备\t材料类型：\t复印件\t材料形式：\t纸质 (2份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n一般参照《民事诉讼法》及民事诉讼相关证据规则的规定，划分书证、物证、视听资料、电子数据、证人证言、当事人的陈述、鉴定结论、勘验笔录八类。《民事诉讼法》第六十三条 证据种类 证据包括：(一)当事人的陈述;(二)书证;(三)物证;(四)视听资料;(五)电子数据;(六)证人证言;(七)鉴定意见;(八)勘验笔录。证据必须查证属实，才能作为认定事实的根据。\n... 【展开全部】\n\n填报须知：\t\n提交份数，根据当事人数量基础上+1\n收费项目\n\n此项不收费\n\n流程图\n展开全部 \n流程说明\n\n接待登记-立案登记-案件组庭排庭-案件审理-结案处理\n\n办理流程\n办理环节\t办理时限\t审核标准\n受理\t5个工作日\t资料齐全\n办结\t5个工作日\t依法裁决后送达结果\n特别程序\n\n类型\n无\n\n时限\n无\n\n更多信息\n法律依据 权利与义务 结果样本 常见问题\n\n1.《中华人民共和国劳动争议调解仲裁法》第二条：中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用 本法：（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除 名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议； （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。第五 条：发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、 调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁；对仲裁裁决不服的，除本法另有规定的 外，可以向人民法院提起诉讼。 2.《劳动人事争议仲裁办案规则》（中华人民共和国人力资源和社会保障部令第33号）第二条：本规则适用下列争议的仲 裁：（一）企业、个体经济组织、民办非企业单位等组织与劳动者之间，以及机关、事业单位、社会团体与其建立劳动 关系的劳动者之间，因确认劳动关系，订立、履行、变更、解除和终止劳动合同，工作时间、休息休假、社会保险、福 利、培训以及劳动保护，劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（二）实施公务员法的机关与聘 任制公务员之间、参照公务员法管理的机关（单位）与聘任工作人员之间因履行聘任合同发生的争议；（三）事业单位 与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（四）社会团体与其建立人事关系的 工作人员之间因终止人事关系以及履行聘用合同发生的争议；（五）军队文职人员用人单位与聘用制文职人员之间因履 行聘用合同发生的争议；（六）法律、法规规定由劳动人事争议仲裁委员会处理的其他争议。 3.《劳动人事争议仲裁组织规则》（中华人民共和国人力资源和社会保障部令第34号）第七条：仲裁委员会依法履行下列 职责：（一）聘任、解聘专职或者兼职仲裁员；（二）受理争议案件；（三）讨论重大或者疑难的争议案件；（四）监 督本仲裁委员会的仲裁活动；（五）制定本仲裁委员会的工作规则；（六）其他依法应当履行的职责。\n\n基本信息\n受理条件\n所需材料\n收费项目\n流程图\n流程说明\n办理流程\n特别程序\n更多信息\n站点地图\n网站分享\n\n12345\n业务咨询和投诉电话\n\n0731-82214464\n省政务服务网技术服务热线\n\n主办单位：湖南省人民政府办公厅     承办单位：湖南省政务服务和大数据中心\n\n备案号：湘ICP备05000618号 公安机关备案号：43010302000524 网站标识码：4300000001"
+    },
+    "材料展开": {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_file": "reports/nationwide-verification-20261029-c/hunan/yuhua/materials-expanded/page.json",
+      "raw_text": "中国政府网\n湖南省人大网\n湖南省政协网\n繁體中文\n无障碍浏览\n长者版\n湖南省\n个人服务\n法人服务\n便民服务\n中介超市\n好差评\n阳光政务\n当前位置： 首页 法人办事  劳动人事争议仲裁申请\n劳动人事争议仲裁申请\n在线办理\n查看评价\n订阅\n手机查看\n网上咨询\n基本信息\n服务对象\n\t\n个人/法人\n\t\n办理部门\n\t\n雨花区人社局\n\n\n办理渠道\n\t\n互联网咨询，互联网收件\n\n是否收费\t否\t\n办理数量限制\n\t\n暂无数量限制\n\n\n线下通办范围\n\t\n全县\n\t\n网上办理深度\n\t\n四级标准\n\n\n必需现场办理原因\n\t\n无需到现场办理\n\t\n法定办结时限说明\n\t\n仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。逾期未作出仲裁裁决的，当事人可以就该劳动争议事项向人民法院提起诉讼。\n\n\n承诺办结时限说明\n\t\n仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。逾期未作出仲裁裁决的，当事人可以就该劳动争议事项向人民法院提起诉讼。\n\t\n办理形式\n\t\n窗口办理、网上办理\n\n\n办理地点\n\t\n湖南省长沙市雨花区朝晖路499号长沙市雨花区人力资源和社会保障局一楼大厅; \n\n\n办理时间\n\t\n法定工作日，夏季（07月01日~09月30日）：上午 09:00~12:00,下午 13:30~17:30;法定工作日，冬季（10月01日~次年06月30日）：上午 09:00~12:00,下午 13:00~17:00;\n\n\n咨询服务\n\t\n0731-85880234\n\t\n监督投诉方式\n\t\n0731-85880513\n\n\n是否支持证明事项告知承诺\n\t\n否\n\t\n是否支持涉企事项告知承诺\n\t\n否\n受理条件\n\n《中华人民共和国劳动争议调解仲裁法》第二条 中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法:（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。\n\n请填写以下信息，为您提供具体办理地点和个性化材料清单等更多详细指引\n*请选择单位登记机关行政所在地\n:\n请确认单位登记机关行政所在地的办理层级\n:\n 省级\n 市级\n 区县级\n确认 重置\n所需材料\n必要\n劳动仲裁申请书\n示例\n模板\n来源渠道：\t申请人自备\t材料类型：\t原件\t材料形式：\t纸质 (2份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n《劳动争议调解仲裁法》第二条 中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法:（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。 【收起全部】\n\n填报须知：\t\n劳动仲裁申请书提交份数，根据当事人数量基础上+1\n必要\n居民身份证\n来源渠道：\t政府部门核发 该材料可免提交\t材料类型：\t复印件\t材料形式：\t纸质 (1份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n材料齐全，真实有效\n\n填报须知：\t\n如实提交\n必要\n营业执照\n来源渠道：\t政府部门核发 该材料可免提交\t材料类型：\t复印件\t材料形式：\t纸质 (1份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n材料齐全，真实有效\n\n填报须知：\t\n政府部门核发，也可以通过国家企业信用信息公示系统、天眼查、企查查进行查询打印\n必要\n证据材料\n来源渠道：\t申请人自备\t材料类型：\t复印件\t材料形式：\t纸质 (2份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n一般参照《民事诉讼法》及民事诉讼相关证据规则的规定，划分书证、物证、视听资料、电子数据、证人证言、当事人的陈述、鉴定结论、勘验笔录八类。《民事诉讼法》第六十三条 证据种类 证据包括：(一)当事人的陈述;(二)书证;(三)物证;(四)视听资料;(五)电子数据;(六)证人证言;(七)鉴定意见;(八)勘验笔录。证据必须查证属实，才能作为认定事实的根据。 【收起全部】\n\n填报须知：\t\n提交份数，根据当事人数量基础上+1\n收费项目\n\n此项不收费\n\n流程图\n展开全部 \n流程说明\n\n接待登记-立案登记-案件组庭排庭-案件审理-结案处理\n\n办理流程\n办理环节\t办理时限\t审核标准\n受理\t5个工作日\t资料齐全\n办结\t5个工作日\t依法裁决后送达结果\n特别程序\n\n类型\n无\n\n时限\n无\n\n更多信息\n法律依据 权利与义务 结果样本 常见问题\n\n1.《中华人民共和国劳动争议调解仲裁法》第二条：中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用 本法：（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除 名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议； （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。第五 条：发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、 调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁；对仲裁裁决不服的，除本法另有规定的 外，可以向人民法院提起诉讼。 2.《劳动人事争议仲裁办案规则》（中华人民共和国人力资源和社会保障部令第33号）第二条：本规则适用下列争议的仲 裁：（一）企业、个体经济组织、民办非企业单位等组织与劳动者之间，以及机关、事业单位、社会团体与其建立劳动 关系的劳动者之间，因确认劳动关系，订立、履行、变更、解除和终止劳动合同，工作时间、休息休假、社会保险、福 利、培训以及劳动保护，劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（二）实施公务员法的机关与聘 任制公务员之间、参照公务员法管理的机关（单位）与聘任工作人员之间因履行聘任合同发生的争议；（三）事业单位 与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（四）社会团体与其建立人事关系的 工作人员之间因终止人事关系以及履行聘用合同发生的争议；（五）军队文职人员用人单位与聘用制文职人员之间因履 行聘用合同发生的争议；（六）法律、法规规定由劳动人事争议仲裁委员会处理的其他争议。 3.《劳动人事争议仲裁组织规则》（中华人民共和国人力资源和社会保障部令第34号）第七条：仲裁委员会依法履行下列 职责：（一）聘任、解聘专职或者兼职仲裁员；（二）受理争议案件；（三）讨论重大或者疑难的争议案件；（四）监 督本仲裁委员会的仲裁活动；（五）制定本仲裁委员会的工作规则；（六）其他依法应当履行的职责。\n\n基本信息\n受理条件\n所需材料\n收费项目\n流程图\n流程说明\n办理流程\n特别程序\n更多信息\n站点地图\n网站分享\n\n12345\n业务咨询和投诉电话\n\n0731-82214464\n省政务服务网技术服务热线\n\n主办单位：湖南省人民政府办公厅     承办单位：湖南省政务服务和大数据中心\n\n备案号：湘ICP备05000618号 公安机关备案号：43010302000524 网站标识码：4300000001"
+    },
+    "权利与义务": {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_file": "reports/nationwide-verification-20261029-c/hunan/yuhua/rights-duties/page.json",
+      "raw_text": "中国政府网\n湖南省人大网\n湖南省政协网\n繁體中文\n无障碍浏览\n长者版\n湖南省\n个人服务\n法人服务\n便民服务\n中介超市\n好差评\n阳光政务\n当前位置： 首页 法人办事  劳动人事争议仲裁申请\n劳动人事争议仲裁申请\n在线办理\n查看评价\n订阅\n手机查看\n网上咨询\n基本信息\n服务对象\n\t\n个人/法人\n\t\n办理部门\n\t\n雨花区人社局\n\n\n办理渠道\n\t\n互联网咨询，互联网收件\n\n是否收费\t否\t\n办理数量限制\n\t\n暂无数量限制\n\n\n线下通办范围\n\t\n全县\n\t\n网上办理深度\n\t\n四级标准\n\n\n必需现场办理原因\n\t\n无需到现场办理\n\t\n法定办结时限说明\n\t\n仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。逾期未作出仲裁裁决的，当事人可以就该劳动争议事项向人民法院提起诉讼。\n\n\n承诺办结时限说明\n\t\n仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。逾期未作出仲裁裁决的，当事人可以就该劳动争议事项向人民法院提起诉讼。\n\t\n办理形式\n\t\n窗口办理、网上办理\n\n\n办理地点\n\t\n湖南省长沙市雨花区朝晖路499号长沙市雨花区人力资源和社会保障局一楼大厅; \n\n\n办理时间\n\t\n法定工作日，夏季（07月01日~09月30日）：上午 09:00~12:00,下午 13:30~17:30;法定工作日，冬季（10月01日~次年06月30日）：上午 09:00~12:00,下午 13:00~17:00;\n\n\n咨询服务\n\t\n0731-85880234\n\t\n监督投诉方式\n\t\n0731-85880513\n\n\n是否支持证明事项告知承诺\n\t\n否\n\t\n是否支持涉企事项告知承诺\n\t\n否\n受理条件\n\n《中华人民共和国劳动争议调解仲裁法》第二条 中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法:（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。\n\n请填写以下信息，为您提供具体办理地点和个性化材料清单等更多详细指引\n*请选择单位登记机关行政所在地\n:\n请确认单位登记机关行政所在地的办理层级\n:\n 省级\n 市级\n 区县级\n确认 重置\n所需材料\n必要\n劳动仲裁申请书\n示例\n模板\n来源渠道：\t申请人自备\t材料类型：\t原件\t材料形式：\t纸质 (2份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n《劳动争议调解仲裁法》第二条 中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法:（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。 【收起全部】\n\n填报须知：\t\n劳动仲裁申请书提交份数，根据当事人数量基础上+1\n必要\n居民身份证\n来源渠道：\t政府部门核发 该材料可免提交\t材料类型：\t复印件\t材料形式：\t纸质 (1份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n材料齐全，真实有效\n\n填报须知：\t\n如实提交\n必要\n营业执照\n来源渠道：\t政府部门核发 该材料可免提交\t材料类型：\t复印件\t材料形式：\t纸质 (1份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n材料齐全，真实有效\n\n填报须知：\t\n政府部门核发，也可以通过国家企业信用信息公示系统、天眼查、企查查进行查询打印\n必要\n证据材料\n来源渠道：\t申请人自备\t材料类型：\t复印件\t材料形式：\t纸质 (2份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n一般参照《民事诉讼法》及民事诉讼相关证据规则的规定，划分书证、物证、视听资料、电子数据、证人证言、当事人的陈述、鉴定结论、勘验笔录八类。《民事诉讼法》第六十三条 证据种类 证据包括：(一)当事人的陈述;(二)书证;(三)物证;(四)视听资料;(五)电子数据;(六)证人证言;(七)鉴定意见;(八)勘验笔录。证据必须查证属实，才能作为认定事实的根据。 【收起全部】\n\n填报须知：\t\n提交份数，根据当事人数量基础上+1\n收费项目\n\n此项不收费\n\n流程图\n展开全部 \n流程说明\n\n接待登记-立案登记-案件组庭排庭-案件审理-结案处理\n\n办理流程\n办理环节\t办理时限\t审核标准\n受理\t5个工作日\t资料齐全\n办结\t5个工作日\t依法裁决后送达结果\n特别程序\n\n类型\n无\n\n时限\n无\n\n更多信息\n法律依据 权利与义务 结果样本 常见问题\n\n申请人权利：依法享有知情权、陈述权、申辩权，有权依法申请行政复议或者提起行政诉讼。\n\n申请人义务：应当如实向行政机关提交有关材料和反映真实情况，并对其申请材料实质内容的真实性负责。\n\n基本信息\n受理条件\n所需材料\n收费项目\n流程图\n流程说明\n办理流程\n特别程序\n更多信息\n站点地图\n网站分享\n\n12345\n业务咨询和投诉电话\n\n0731-82214464\n省政务服务网技术服务热线\n\n主办单位：湖南省人民政府办公厅     承办单位：湖南省政务服务和大数据中心\n\n备案号：湘ICP备05000618号 公安机关备案号：43010302000524 网站标识码：4300000001"
+    },
+    "结果样本": {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_file": "reports/nationwide-verification-20261029-c/hunan/yuhua/result-sample/page.json",
+      "raw_text": "中国政府网\n湖南省人大网\n湖南省政协网\n繁體中文\n无障碍浏览\n长者版\n湖南省\n个人服务\n法人服务\n便民服务\n中介超市\n好差评\n阳光政务\n当前位置： 首页 法人办事  劳动人事争议仲裁申请\n劳动人事争议仲裁申请\n在线办理\n查看评价\n订阅\n手机查看\n网上咨询\n基本信息\n服务对象\n\t\n个人/法人\n\t\n办理部门\n\t\n雨花区人社局\n\n\n办理渠道\n\t\n互联网咨询，互联网收件\n\n是否收费\t否\t\n办理数量限制\n\t\n暂无数量限制\n\n\n线下通办范围\n\t\n全县\n\t\n网上办理深度\n\t\n四级标准\n\n\n必需现场办理原因\n\t\n无需到现场办理\n\t\n法定办结时限说明\n\t\n仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。逾期未作出仲裁裁决的，当事人可以就该劳动争议事项向人民法院提起诉讼。\n\n\n承诺办结时限说明\n\t\n仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。逾期未作出仲裁裁决的，当事人可以就该劳动争议事项向人民法院提起诉讼。\n\t\n办理形式\n\t\n窗口办理、网上办理\n\n\n办理地点\n\t\n湖南省长沙市雨花区朝晖路499号长沙市雨花区人力资源和社会保障局一楼大厅; \n\n\n办理时间\n\t\n法定工作日，夏季（07月01日~09月30日）：上午 09:00~12:00,下午 13:30~17:30;法定工作日，冬季（10月01日~次年06月30日）：上午 09:00~12:00,下午 13:00~17:00;\n\n\n咨询服务\n\t\n0731-85880234\n\t\n监督投诉方式\n\t\n0731-85880513\n\n\n是否支持证明事项告知承诺\n\t\n否\n\t\n是否支持涉企事项告知承诺\n\t\n否\n受理条件\n\n《中华人民共和国劳动争议调解仲裁法》第二条 中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法:（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。\n\n请填写以下信息，为您提供具体办理地点和个性化材料清单等更多详细指引\n*请选择单位登记机关行政所在地\n:\n请确认单位登记机关行政所在地的办理层级\n:\n 省级\n 市级\n 区县级\n确认 重置\n所需材料\n必要\n劳动仲裁申请书\n示例\n模板\n来源渠道：\t申请人自备\t材料类型：\t原件\t材料形式：\t纸质 (2份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n《劳动争议调解仲裁法》第二条 中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法:（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。 【收起全部】\n\n填报须知：\t\n劳动仲裁申请书提交份数，根据当事人数量基础上+1\n必要\n居民身份证\n来源渠道：\t政府部门核发 该材料可免提交\t材料类型：\t复印件\t材料形式：\t纸质 (1份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n材料齐全，真实有效\n\n填报须知：\t\n如实提交\n必要\n营业执照\n来源渠道：\t政府部门核发 该材料可免提交\t材料类型：\t复印件\t材料形式：\t纸质 (1份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n材料齐全，真实有效\n\n填报须知：\t\n政府部门核发，也可以通过国家企业信用信息公示系统、天眼查、企查查进行查询打印\n必要\n证据材料\n来源渠道：\t申请人自备\t材料类型：\t复印件\t材料形式：\t纸质 (2份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n一般参照《民事诉讼法》及民事诉讼相关证据规则的规定，划分书证、物证、视听资料、电子数据、证人证言、当事人的陈述、鉴定结论、勘验笔录八类。《民事诉讼法》第六十三条 证据种类 证据包括：(一)当事人的陈述;(二)书证;(三)物证;(四)视听资料;(五)电子数据;(六)证人证言;(七)鉴定意见;(八)勘验笔录。证据必须查证属实，才能作为认定事实的根据。 【收起全部】\n\n填报须知：\t\n提交份数，根据当事人数量基础上+1\n收费项目\n\n此项不收费\n\n流程图\n展开全部 \n流程说明\n\n接待登记-立案登记-案件组庭排庭-案件审理-结案处理\n\n办理流程\n办理环节\t办理时限\t审核标准\n受理\t5个工作日\t资料齐全\n办结\t5个工作日\t依法裁决后送达结果\n特别程序\n\n类型\n无\n\n时限\n无\n\n更多信息\n法律依据 权利与义务 结果样本 常见问题\n结果物名称\n结果样本\n仲裁裁决书、仲裁调解书、仲裁决定书\n查看结果样本\n仲裁裁决书、仲裁调解书、仲裁决定书\n查看结果样本\n仲裁裁决书、仲裁调解书、仲裁决定书\n查看结果样本\n基本信息\n受理条件\n所需材料\n收费项目\n流程图\n流程说明\n办理流程\n特别程序\n更多信息\n站点地图\n网站分享\n\n12345\n业务咨询和投诉电话\n\n0731-82214464\n省政务服务网技术服务热线\n\n主办单位：湖南省人民政府办公厅     承办单位：湖南省政务服务和大数据中心\n\n备案号：湘ICP备05000618号 公安机关备案号：43010302000524 网站标识码：4300000001"
+    },
+    "常见问题": {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "source_file": "reports/nationwide-verification-20261029-c/hunan/yuhua/faq/page.json",
+      "raw_text": "中国政府网\n湖南省人大网\n湖南省政协网\n繁體中文\n无障碍浏览\n长者版\n湖南省\n个人服务\n法人服务\n便民服务\n中介超市\n好差评\n阳光政务\n当前位置： 首页 法人办事  劳动人事争议仲裁申请\n劳动人事争议仲裁申请\n在线办理\n查看评价\n订阅\n手机查看\n网上咨询\n基本信息\n服务对象\n\t\n个人/法人\n\t\n办理部门\n\t\n雨花区人社局\n\n\n办理渠道\n\t\n互联网咨询，互联网收件\n\n是否收费\t否\t\n办理数量限制\n\t\n暂无数量限制\n\n\n线下通办范围\n\t\n全县\n\t\n网上办理深度\n\t\n四级标准\n\n\n必需现场办理原因\n\t\n无需到现场办理\n\t\n法定办结时限说明\n\t\n仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。逾期未作出仲裁裁决的，当事人可以就该劳动争议事项向人民法院提起诉讼。\n\n\n承诺办结时限说明\n\t\n仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。逾期未作出仲裁裁决的，当事人可以就该劳动争议事项向人民法院提起诉讼。\n\t\n办理形式\n\t\n窗口办理、网上办理\n\n\n办理地点\n\t\n湖南省长沙市雨花区朝晖路499号长沙市雨花区人力资源和社会保障局一楼大厅; \n\n\n办理时间\n\t\n法定工作日，夏季（07月01日~09月30日）：上午 09:00~12:00,下午 13:30~17:30;法定工作日，冬季（10月01日~次年06月30日）：上午 09:00~12:00,下午 13:00~17:00;\n\n\n咨询服务\n\t\n0731-85880234\n\t\n监督投诉方式\n\t\n0731-85880513\n\n\n是否支持证明事项告知承诺\n\t\n否\n\t\n是否支持涉企事项告知承诺\n\t\n否\n受理条件\n\n《中华人民共和国劳动争议调解仲裁法》第二条 中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法:（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。\n\n请填写以下信息，为您提供具体办理地点和个性化材料清单等更多详细指引\n*请选择单位登记机关行政所在地\n:\n请确认单位登记机关行政所在地的办理层级\n:\n 省级\n 市级\n 区县级\n确认 重置\n所需材料\n必要\n劳动仲裁申请书\n示例\n模板\n来源渠道：\t申请人自备\t材料类型：\t原件\t材料形式：\t纸质 (2份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n《劳动争议调解仲裁法》第二条 中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法:（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。 【收起全部】\n\n填报须知：\t\n劳动仲裁申请书提交份数，根据当事人数量基础上+1\n必要\n居民身份证\n来源渠道：\t政府部门核发 该材料可免提交\t材料类型：\t复印件\t材料形式：\t纸质 (1份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n材料齐全，真实有效\n\n填报须知：\t\n如实提交\n必要\n营业执照\n来源渠道：\t政府部门核发 该材料可免提交\t材料类型：\t复印件\t材料形式：\t纸质 (1份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n材料齐全，真实有效\n\n填报须知：\t\n政府部门核发，也可以通过国家企业信用信息公示系统、天眼查、企查查进行查询打印\n必要\n证据材料\n来源渠道：\t申请人自备\t材料类型：\t复印件\t材料形式：\t纸质 (2份) 和电子\t提交方式：\t网上现场都可提交\n受理标准：\t\n一般参照《民事诉讼法》及民事诉讼相关证据规则的规定，划分书证、物证、视听资料、电子数据、证人证言、当事人的陈述、鉴定结论、勘验笔录八类。《民事诉讼法》第六十三条 证据种类 证据包括：(一)当事人的陈述;(二)书证;(三)物证;(四)视听资料;(五)电子数据;(六)证人证言;(七)鉴定意见;(八)勘验笔录。证据必须查证属实，才能作为认定事实的根据。 【收起全部】\n\n填报须知：\t\n提交份数，根据当事人数量基础上+1\n收费项目\n\n此项不收费\n\n流程图\n展开全部 \n流程说明\n\n接待登记-立案登记-案件组庭排庭-案件审理-结案处理\n\n办理流程\n办理环节\t办理时限\t审核标准\n受理\t5个工作日\t资料齐全\n办结\t5个工作日\t依法裁决后送达结果\n特别程序\n\n类型\n无\n\n时限\n无\n\n更多信息\n法律依据 权利与义务 结果样本 常见问题\n\n申请材料有哪些？\n\n劳动仲裁申请书、劳动者身份证、用人单位企业信息、证据副本。法条参考：《中华人民共和国劳动争议调解仲裁法》第二十八条、《中华人民共和国民事诉讼法》第六十三条、第六十四条、第六十五条。\n\n该项目是否收费\n\n不收费\n\n是否需要现场办理\n\n需要\n\n证据清单仲裁委收取原件吗？\n\n不收取\n\n劳动争议仲裁部门不予受理的情形有哪些？\n\n《劳动人事争议仲裁办案规则》第三十条 、第三十一条\n\n到哪里申请仲裁？\n\n《中华人民共和国劳动争议调解仲裁法》第二十一条\n\n劳动争议维权，有什么时限要求？\n\n《中华人民共和国劳动争议调解仲裁法》第二十七条\n\n办理此事件需要身份证吗\n\n需要\n\n申请表格和提交材料中相关人员签名是否必须本人亲笔签名？\n\n委托代理人可以为其代签\n\n需要双方在场吗？\n\n双方可以委托代理人办理\n\n咨询方式\n\n窗口咨询或者电话咨询\n\n劳动争议调解仲裁受案范围？\n\n《中华人民共和国劳动争议调解仲裁法》第二条 中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法:（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。\n\n仲裁申请书是否必须本人签名？\n\n需要\n\n争议案件的审理期限是多长？\n\n《中华人民共和国劳动争议调解仲裁法》 第四十三条 仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。逾期未作出仲裁裁决的，当事人可以就该劳动争议事项向人民法院提起诉讼。\n\n是否劳动者本人要来申请？\n\n可以委托代理人为其办理\n\n当事人对发生法律效力的仲裁调解书、裁决书逾期不履行的，怎么处理？\n\n《中华人民共和国劳动争议调解仲裁法》第五十一条 当事人对发生法律效力的调解书、裁决书，应当依照规定的期限履行。一方当事人逾期不履行的，另一方当事人可以依照民事诉讼法的有关规定向人民法院申请执行。受理申请的人民法院应当依法执行。\n\n基本信息\n受理条件\n所需材料\n收费项目\n流程图\n流程说明\n办理流程\n特别程序\n更多信息\n站点地图\n网站分享\n\n12345\n业务咨询和投诉电话\n\n0731-82214464\n省政务服务网技术服务热线\n\n主办单位：湖南省人民政府办公厅     承办单位：湖南省政务服务和大数据中心\n\n备案号：湘ICP备05000618号 公安机关备案号：43010302000524 网站标识码：4300000001"
+    }
+  },
+  "channel": {
+    "form": "window_and_online",
+    "official_form_text": "窗口办理、网上办理",
+    "online_status": "auth_required",
+    "verified": false,
+    "address": "湖南省长沙市雨花区朝晖路499号长沙市雨花区人力资源和社会保障局一楼大厅;",
+    "office_hours": "法定工作日，夏季（07月01日~09月30日）：上午 09:00~12:00,下午 13:30~17:30;法定工作日，冬季（10月01日~次年06月30日）：上午 09:00~12:00,下午 13:00~17:00;",
+    "consultation_phone": "0731-85880234",
+    "complaint_phone": "0731-85880513",
+    "post_login_capability": "unverified",
+    "submitted": false
+  },
+  "online_evidence": {
+    "login_visible": true,
+    "origin": "https://auth.zwfw.hunan.gov.cn",
+    "password_inputs": 7,
+    "path": "/oauth2/govLogin.html",
+    "title": "湖南政务服务网",
+    "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+    "captured_at": "2026-10-29T10:12:39.807646+00:00",
+    "status": "auth_required",
+    "authenticated": false,
+    "submitted": false,
+    "post_login_capability": "unverified",
+    "redaction": "No SSO query, login DOM, screenshot QR/session code, cookies, headers, or credentials retained"
+  },
+  "template_search_status": "found_in_own_checked_sources",
+  "separate_evidence_list_template_status": "not_found_in_checked_sources",
+  "evidence": {
+    "capture_file": "reports/nationwide-verification-20261029-c/hunan/yuhua/guide/page.json",
+    "capture_sha256": "225ac5b8c72ad8536b60576c402c092c84e6760b8630e0d270cea5e2495d63bf",
+    "catalogue_file": "reports/nationwide-verification-20261029-c/hunan/yuhua/public-catalogue.json",
+    "catalogue_sha256": "abb9fc610ffcb13cd6d8091e1fe689e4f9537210b423ce64b8760d4f10e8a535",
+    "native_download_receipt": "reports/nationwide-verification-20261029-c/hunan/yuhua/native-download-receipt.json"
+  },
+  "source_issues": [
+    {
+      "type": "OFFICIAL_SOURCE_CONFLICT",
+      "reason": "官网时限字段为60个工作日，时限说明为45日且最多延期15日；逐项保留，未统一为平台规则。"
+    },
+    {
+      "type": "OFFICIAL_SOURCE_CONFLICT",
+      "reason": "申请书及证据材料表列2份，填报须知又按当事人数量+1；并列保留，不替申请人选择份数。"
+    },
+    {
+      "type": "ONLINE_CHANNEL_UNVERIFIED",
+      "reason": "官网列网上、窗口及0次到现场；实际网办止于统一认证，未核验登录后能力。"
+    }
+  ],
+  "warnings": [
+    "仅适用本区自己正式事项、材料及原件；不代表全市、全省或全国。",
+    "本批仅完成采集及原件只读包结构检查；尚未转换、填写适配、逐页版式或候选网页验收，不提供生成。",
+    "网办实际进入统一认证，未登录、未提交；登录后能力未核验。"
+  ]
+}

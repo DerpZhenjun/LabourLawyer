@@ -1,0 +1,886 @@
+{
+  "links": [
+    {
+      "href": "/onething/personalcenter/index.jsp",
+      "onclick": null,
+      "text": "",
+      "title": ""
+    },
+    {
+      "href": "/hnzwfw/public/2020/hnszwfw/ywtbxxts.html",
+      "onclick": null,
+      "text": "",
+      "title": "咨询投诉"
+    },
+    {
+      "href": "/onething/servicestatistics/approveiframe_ywtb.jsp?areacode=&flownum=",
+      "onclick": null,
+      "text": "",
+      "title": "查询服务"
+    },
+    {
+      "href": "95/43381/43382/index.htm",
+      "onclick": null,
+      "text": "",
+      "title": ""
+    },
+    {
+      "href": "/hnzwfw/1/95/43381/43388/index.htm",
+      "onclick": null,
+      "text": "",
+      "title": "网办指引"
+    },
+    {
+      "href": "javascript:;",
+      "onclick": null,
+      "text": "",
+      "title": ""
+    },
+    {
+      "href": "http://www.gov.cn",
+      "onclick": null,
+      "text": "中国政府网",
+      "title": ""
+    },
+    {
+      "href": "http://www.hnrd.gov.cn/",
+      "onclick": null,
+      "text": "湖南人大网",
+      "title": ""
+    },
+    {
+      "href": "http://www.hunanzx.gov.cn/",
+      "onclick": null,
+      "text": "湖南省政协网",
+      "title": ""
+    },
+    {
+      "href": "://zwfw-new.hunan.gov.cn/hnvirtualhall/login.jsp",
+      "onclick": null,
+      "text": "登录",
+      "title": ""
+    },
+    {
+      "href": "://auth.zwfw.hunan.gov.cn/oauth2/register/register.html",
+      "onclick": null,
+      "text": "注册",
+      "title": ""
+    },
+    {
+      "href": "javascript:StranBody()",
+      "onclick": null,
+      "text": "繁體中文",
+      "title": "點擊以繁體中文方式瀏覽"
+    },
+    {
+      "href": "javascript:void(0);",
+      "onclick": null,
+      "text": "无障碍浏览",
+      "title": ""
+    },
+    {
+      "href": "/",
+      "onclick": null,
+      "text": "",
+      "title": ""
+    },
+    {
+      "href": "/",
+      "onclick": null,
+      "text": "",
+      "title": ""
+    },
+    {
+      "href": "https://zwfw-new.hunan.gov.cn/onething/personalcenter/index.jsp",
+      "onclick": null,
+      "text": "",
+      "title": ""
+    },
+    {
+      "href": "http://www.hunan.gov.cn",
+      "onclick": null,
+      "text": "",
+      "title": ""
+    },
+    {
+      "href": "/",
+      "onclick": null,
+      "text": "",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "iksearch2()",
+      "text": "继续对话",
+      "title": ""
+    },
+    {
+      "href": "javascript:iksearch()",
+      "onclick": null,
+      "text": "更多结果",
+      "title": ""
+    },
+    {
+      "href": "javascript:delSearchKeywordsCookie();",
+      "onclick": null,
+      "text": "删除历史",
+      "title": ""
+    },
+    {
+      "href": "javascript:setSearchVal('个体工商户')",
+      "onclick": null,
+      "text": "个体工商户",
+      "title": ""
+    },
+    {
+      "href": "javascript:setSearchVal('特种设备')",
+      "onclick": null,
+      "text": "特种设备",
+      "title": ""
+    },
+    {
+      "href": "javascript:setSearchVal('注销登记')",
+      "onclick": null,
+      "text": "注销登记",
+      "title": ""
+    },
+    {
+      "href": "javascript:setSearchVal('经营许可证')",
+      "onclick": null,
+      "text": "经营许可证",
+      "title": ""
+    },
+    {
+      "href": "javascript:setSearchVal('营业执照')",
+      "onclick": null,
+      "text": "营业执照",
+      "title": ""
+    },
+    {
+      "href": "javascript:setSearchVal('残疾人')",
+      "onclick": null,
+      "text": "残疾人",
+      "title": ""
+    },
+    {
+      "href": "https://zwfw-new.hunan.gov.cn/hnywtb/service/index.html?type=gr",
+      "onclick": null,
+      "text": "个人服务",
+      "title": "个人服务"
+    },
+    {
+      "href": null,
+      "onclick": "openGrFwUrl('005','生育收养','439900000000')",
+      "text": "生育收养",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openGrFwUrl('020','教育科研','439900000000')",
+      "text": "教育科研",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openGrFwUrl('030','就业创业','439900000000')",
+      "text": "就业创业",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openGrFwUrl('035','设立变更','439900000000')",
+      "text": "设立变更",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openGrFwUrl('040','准营准办','439900000000')",
+      "text": "准营准办",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openGrFwUrl('050','职业资格','439900000000')",
+      "text": "职业资格",
+      "title": ""
+    },
+    {
+      "href": "https://zwfw-new.hunan.gov.cn/hnywtb/service/index.html?type=fr",
+      "onclick": null,
+      "text": "法人服务",
+      "title": "法人服务"
+    },
+    {
+      "href": null,
+      "onclick": "openFrFwUrl('005','设立变更','439900000000')",
+      "text": "设立变更",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openFrFwUrl('010','准营准办','439900000000')",
+      "text": "准营准办",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openFrFwUrl('015','资质认证','439900000000')",
+      "text": "资质认证",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openFrFwUrl('020','年检年审','439900000000')",
+      "text": "年检年审",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openFrFwUrl('025','税收财务','439900000000')",
+      "text": "税收财务",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openFrFwUrl('030','人力资源','439900000000')",
+      "text": "人力资源",
+      "title": ""
+    },
+    {
+      "href": "/onething/v3/efficientOneThing.jsp",
+      "onclick": null,
+      "text": "高效办成一件事",
+      "title": "高效办成一件事"
+    },
+    {
+      "href": "/onething/v5plus/ztjd_43TC0901100Y.jsp?themeId=43TC0901100Y",
+      "onclick": null,
+      "text": "新生儿出生",
+      "title": ""
+    },
+    {
+      "href": "/hnzwfw/43821/index.htm",
+      "onclick": null,
+      "text": "入学",
+      "title": ""
+    },
+    {
+      "href": "/onething/v5plus/ztjd_tx.jsp",
+      "onclick": null,
+      "text": "退休服务",
+      "title": ""
+    },
+    {
+      "href": "/onething/v5plus/ztjd_24_010_jy.jsp",
+      "onclick": null,
+      "text": "就医服务",
+      "title": ""
+    },
+    {
+      "href": "/onething/v5plus/ztjd_24_011_shbzk.jsp",
+      "onclick": null,
+      "text": "社保卡服务",
+      "title": ""
+    },
+    {
+      "href": "/onething/v5plus/ztjd_24_013_xyxf.jsp",
+      "onclick": null,
+      "text": "信用修复",
+      "title": ""
+    },
+    {
+      "href": "/onething/service/index_ywtb.jsp?type=xndtgr&main=1&areacode=439900000000",
+      "onclick": null,
+      "text": "个人服务",
+      "title": "个人服务"
+    },
+    {
+      "href": null,
+      "onclick": "openGrFwUrl('005','生育收养','439900000000')",
+      "text": "\n                                生育收养",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openGrFwUrl('020','教育科研','439900000000')",
+      "text": "\n                                教育科研",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openGrFwUrl('030','就业创业','439900000000')",
+      "text": "\n                                就业创业",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openGrFwUrl('035','设立变更','439900000000')",
+      "text": "\n                                设立变更",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openGrFwUrl('040','准营准办','439900000000')",
+      "text": "\n                                准营准办",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openGrFwUrl('050','职业资格','439900000000')",
+      "text": "\n                                职业资格",
+      "title": ""
+    },
+    {
+      "href": "/onething/service/index_ywtb.jsp?type=xndtfr&main=1&areacode=439900000000",
+      "onclick": null,
+      "text": "法人服务",
+      "title": "法人服务"
+    },
+    {
+      "href": null,
+      "onclick": "openFrFwUrl('005','设立变更','439900000000')",
+      "text": "\n                                设立变更",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openFrFwUrl('010','准营准办','439900000000')",
+      "text": "\n                                准营准办",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openFrFwUrl('015','资质认证','439900000000')",
+      "text": "\n                                资质认证",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openFrFwUrl('020','年检年审','439900000000')",
+      "text": "\n                                年检年审",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openFrFwUrl('025','税收财务','439900000000')",
+      "text": "\n                                税收财务",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "openFrFwUrl('030','人力资源','439900000000')",
+      "text": "\n                                人力资源",
+      "title": ""
+    },
+    {
+      "href": "/onething/v3/efficientOneThing.jsp",
+      "onclick": null,
+      "text": "高效办成一件事",
+      "title": "高效办成一件事"
+    },
+    {
+      "href": "/onething/v5plus/ztjd_43TC0901100Y.jsp?themeId=43TC0901100Y",
+      "onclick": null,
+      "text": "新生儿出生",
+      "title": ""
+    },
+    {
+      "href": "/hnzwfw/43821/index.htm",
+      "onclick": null,
+      "text": "入学",
+      "title": ""
+    },
+    {
+      "href": "/onething/v5plus/ztjd_tx.jsp",
+      "onclick": null,
+      "text": "退休服务",
+      "title": ""
+    },
+    {
+      "href": "/onething/v5plus/ztjd_24_010_jy.jsp",
+      "onclick": null,
+      "text": "就医服务",
+      "title": ""
+    },
+    {
+      "href": "/onething/v5plus/ztjd_24_011_shbzk.jsp",
+      "onclick": null,
+      "text": "社保卡服务",
+      "title": ""
+    },
+    {
+      "href": "/onething/v5plus/ztjd_24_013_xyxf.jsp",
+      "onclick": null,
+      "text": "信用修复",
+      "title": ""
+    },
+    {
+      "href": "://zwfw-new.hunan.gov.cn/hnvirtualhall/login.jsp",
+      "onclick": null,
+      "text": "请登录",
+      "title": ""
+    },
+    {
+      "href": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=5W4Sy1iESzaI7nY2GrfMFg&rightsCode=432036011W08&ywCode=01",
+      "onclick": null,
+      "text": "门诊费用报销",
+      "title": "门诊费用报销"
+    },
+    {
+      "href": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=0fM3r7K3RzCM6EFKtRpjNA&rightsCode=432017003W00&ywCode=05",
+      "onclick": null,
+      "text": "住房公积金汇缴",
+      "title": "住房公积金汇缴"
+    },
+    {
+      "href": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=R_J9nkj6Te-nUDH2k6b30A&rightsCode=432036011W07&ywCode=01",
+      "onclick": null,
+      "text": "住院费用报销",
+      "title": "住院费用报销"
+    },
+    {
+      "href": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=WEw4-KptR4-pRVez5ryE1g&rightsCode=432017002W00&ywCode=18",
+      "onclick": null,
+      "text": "住房公积金个人住房贷款月对冲还款",
+      "title": "住房公积金个人住房贷款月对冲还款"
+    },
+    {
+      "href": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=60b2df3fe1db410f8992e187fc88a4b6&rightsCode=002014005002&ywCode=02",
+      "onclick": null,
+      "text": "企业职工养老保险个人参保证明查询打印",
+      "title": "企业职工养老保险个人参保证明查询打印"
+    },
+    {
+      "href": "http://gjzwfw.www.gov.cn/col/col806/index.html",
+      "onclick": null,
+      "text": "电子社保卡申领",
+      "title": "电子社保卡申领"
+    },
+    {
+      "href": "https://www.12333.gov.cn/portal/service_catalog/unemploy/unemploy_register?pfaId=202002221600000001",
+      "onclick": null,
+      "text": "失业登记",
+      "title": "失业登记"
+    },
+    {
+      "href": "https://si.12333.gov.cn/184852.jhtml",
+      "onclick": null,
+      "text": "城乡居民养老保险关系转移申请",
+      "title": "城乡居民养老保险关系转移申请"
+    },
+    {
+      "href": "https://si.12333.gov.cn/184777.jhtml",
+      "onclick": null,
+      "text": "个人社保参保证明查询打印",
+      "title": ""
+    },
+    {
+      "href": "/hnzwfw/ywtbygzw/index.html",
+      "onclick": null,
+      "text": "权责清单",
+      "title": ""
+    },
+    {
+      "href": "/hnzwfw/ywtbygzw/index.html?type=2",
+      "onclick": null,
+      "text": "公共服务事项清单",
+      "title": ""
+    },
+    {
+      "href": "/hnzwfw/ywtbygzw/index.html?type=3",
+      "onclick": null,
+      "text": "中介清单",
+      "title": ""
+    },
+    {
+      "href": "/hnzwfw/ywtbygzw/index.html?type=4",
+      "onclick": null,
+      "text": "政务服务事项清单",
+      "title": ""
+    },
+    {
+      "href": "/onething/NewUnifiedEvaluate/index_ywtb.jsp?type=hcp&areacode=439900000000",
+      "onclick": null,
+      "text": "前往评价",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "changeAreaAll('430000000000','1','湖南省')",
+      "text": "湖南省",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "changeAreaAll('430100000000','6','长沙市')",
+      "text": "长沙市",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "changeAreaAll('430111000000','f58371c77aac4eeaa715d00b7c311c02','雨花区')",
+      "text": "雨花区",
+      "title": ""
+    },
+    {
+      "href": "/hnzwfw/1/2/20/index.htm",
+      "onclick": null,
+      "text": "前往",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": "changeAreaAll('430111001000','e93fc3e562844bafaf6c00afef810177','');",
+      "text": "侯家塘街道",
+      "title": "侯家塘街道"
+    },
+    {
+      "href": null,
+      "onclick": "changeAreaAll('430111002000','e93fc3e562844bafaf6c00afef810178','');",
+      "text": "左家塘街道",
+      "title": "左家塘街道"
+    },
+    {
+      "href": null,
+      "onclick": "changeAreaAll('430111003000','e93fc3e562844bafaf6c00afef810179','');",
+      "text": "圭塘街道",
+      "title": "圭塘街道"
+    },
+    {
+      "href": null,
+      "onclick": "changeAreaAll('430111004000','e93fc3e562844bafaf6c00afef810180','');",
+      "text": "砂子塘街道",
+      "title": "砂子塘街道"
+    },
+    {
+      "href": null,
+      "onclick": "changeAreaAll('430111005000','e93fc3e562844bafaf6c00afef810181','');",
+      "text": "东塘街道",
+      "title": "东塘街道"
+    },
+    {
+      "href": null,
+      "onclick": "changeAreaAll('430111006000','e93fc3e562844bafaf6c00afef810182','');",
+      "text": "雨花亭街道",
+      "title": "雨花亭街道"
+    },
+    {
+      "href": null,
+      "onclick": "changeAreaAll('430111007000','e93fc3e562844bafaf6c00afef810183','');",
+      "text": "高桥街道",
+      "title": "高桥街道"
+    },
+    {
+      "href": null,
+      "onclick": "changeAreaAll('430111008000','e93fc3e562844bafaf6c00afef810184','');",
+      "text": "洞井街道",
+      "title": "洞井街道"
+    },
+    {
+      "href": null,
+      "onclick": "changeAreaAll('430111009000','e93fc3e562844bafaf6c00afef810185','');",
+      "text": "黎托街道",
+      "title": "黎托街道"
+    },
+    {
+      "href": null,
+      "onclick": "changeAreaAll('430111010000','yxSktpBGTNy05ick8NxXnMQ','');",
+      "text": "井湾子街道",
+      "title": "井湾子街道"
+    },
+    {
+      "href": null,
+      "onclick": "changeAreaAll('430111011000','yFDHAPAQRkCJicZHzKd2SzA','');",
+      "text": "同升街道",
+      "title": "同升街道"
+    },
+    {
+      "href": null,
+      "onclick": "changeAreaAll('430111012000','HYUxXn56Q8yzNjDjz7xibdQ','');",
+      "text": "东山街道",
+      "title": "东山街道"
+    },
+    {
+      "href": null,
+      "onclick": "changeAreaAll('430111101000','t9Miaib3rfRVOUje6kialr7WA','');",
+      "text": "跳马镇",
+      "title": "跳马镇"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=2cc245ec7fc242b192e3ffd6e1f1dda6&main=1&areacode=430111999000','区发改局')",
+      "text": "区发改局",
+      "title": "区发改局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=7010f9d62b084357869d8273722fcac9&main=1&areacode=430111999000','区教育局')",
+      "text": "区教育局",
+      "title": "区教育局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=c37f3e78322845c9bb6881b85e80225b&main=1&areacode=430111999000','区工信局')",
+      "text": "区工信局",
+      "title": "区工信局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=d353fa42d81140788a07fadf85e3fff2&main=1&areacode=430111999000','区民宗局')",
+      "text": "区民宗局",
+      "title": "区民宗局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=b66da668e0fe43ff956ef95fd31a3dfe&main=1&areacode=430111999000','区公安局')",
+      "text": "区公安局",
+      "title": "区公安局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=609d718ebedc4253b41ec2ef182a603e&main=1&areacode=430111999000','区民政局')",
+      "text": "区民政局",
+      "title": "区民政局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=2286e924f8954d27b6030fb01b4dad9a&main=1&areacode=430111999000','区司法局')",
+      "text": "区司法局",
+      "title": "区司法局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=18c3f9c89357464b8d96e75ebc64af10&main=1&areacode=430111999000','区财政局')",
+      "text": "区财政局",
+      "title": "区财政局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=80009082b6384c3bb8af7ee1d6c312f6&main=1&areacode=430111999000','区人社局')",
+      "text": "区人社局",
+      "title": "区人社局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=f959497ea7d44248a0ae23ff247ba343&main=1&areacode=430111999000','区自然资源和规划分局')",
+      "text": "区自然资源和规划分局",
+      "title": "区自然资源和规划分局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=38ad3a3fb2ba4b289a975e4cfcb4a26a&main=1&areacode=430111999000','市生态环境局雨花分局')",
+      "text": "市生态环境局雨花分局",
+      "title": "市生态环境局雨花分局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=35e9531cf82c47e78642e0db599af303&main=1&areacode=430111999000','区住房城乡建设局（..')",
+      "text": "区住房城乡建设局（..",
+      "title": "区住房城乡建设局（区人防办）"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=0e2d3a6b8723424aba918141fab149d5&main=1&areacode=430111999000','区交通局')",
+      "text": "区交通局",
+      "title": "区交通局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=a62f506ad38c40d9ad8083e325e61896&main=1&areacode=430111999000','区农业农村局')",
+      "text": "区农业农村局",
+      "title": "区农业农村局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=df037be3a00848829f148830e6fd9488&main=1&areacode=430111999000','区商务局')",
+      "text": "区商务局",
+      "title": "区商务局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=8c973b34b40140819cd6c54904f6f16a&main=1&areacode=430111999000','区文旅体局')",
+      "text": "区文旅体局",
+      "title": "区文旅体局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=267c827b5489461c84a2854dd5a02bca&main=1&areacode=430111999000','区卫生健康局')",
+      "text": "区卫生健康局",
+      "title": "区卫生健康局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=WSzsM6gYRTeR5gGT6SFnpw&main=1&areacode=430111999000','区退役军人事务局')",
+      "text": "区退役军人事务局",
+      "title": "区退役军人事务局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=e8c556cf3a8d41998c95b7c3cd8983d9&main=1&areacode=430111999000','区应急局')",
+      "text": "区应急局",
+      "title": "区应急局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=99db5bc6e6b447529e8ffa02a0d5313f&main=1&areacode=430111999000','区市场监管局')",
+      "text": "区市场监管局",
+      "title": "区市场监管局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=VK629r7QR7mEia5jZD6FnFg&main=1&areacode=430111999000','区医保局')",
+      "text": "区医保局",
+      "title": "区医保局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=5d9bf7f56aa841ea96429bc07b7bf581&main=1&areacode=430111999000','区档案局')",
+      "text": "区档案局",
+      "title": "区档案局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=10b5dff24524432483e7c69b80176e32&main=1&areacode=430111999000','区税务局')",
+      "text": "区税务局",
+      "title": "区税务局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=cqn53kQESCewOFqE5HY6kA&main=1&areacode=430111999000','雨花区烟草专卖局')",
+      "text": "雨花区烟草专卖局",
+      "title": "雨花区烟草专卖局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=ew4oWSg3TCmbjWibMncGGJQ&main=1&areacode=430111999000','区新闻出版管理部门')",
+      "text": "区新闻出版管理部门",
+      "title": "区新闻出版管理部门"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=cf20aebea96f4ccd809e921acae037ec&main=1&areacode=430111999000','区消防队')",
+      "text": "区消防队",
+      "title": "区消防队"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=07a7411db29548f0b53249c94ecf5d2d&main=1&areacode=430111999000','区城管执法局')",
+      "text": "区城管执法局",
+      "title": "区城管执法局"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=d157c55c007f44d88aba552477815505&main=1&areacode=430111999000','区残联')",
+      "text": "区残联",
+      "title": "区残联"
+    },
+    {
+      "href": null,
+      "onclick": "bmClick('/onething/service/index.jsp?type=xndtbm&orgId=F9DicQyfcSfWV36hOodxpew&main=1&areacode=430111999000','区侨办')",
+      "text": "区侨办",
+      "title": "区侨办"
+    },
+    {
+      "href": "/",
+      "onclick": null,
+      "text": "首页",
+      "title": ""
+    },
+    {
+      "href": "//zwfw-new.hunan.gov.cn/onething/service/index_ywtb.jsp?type=xndtgr&main=1&areacode=439900000000",
+      "onclick": null,
+      "text": "个人服务",
+      "title": ""
+    },
+    {
+      "href": "//zwfw-new.hunan.gov.cn/onething/service/index_ywtb.jsp?type=xndtfr&main=1&areacode=439900000000",
+      "onclick": null,
+      "text": "法人服务",
+      "title": ""
+    },
+    {
+      "href": "//zwfw-new.hunan.gov.cn/hnzwfw/ywtbbmfw/index.html",
+      "onclick": null,
+      "text": "便民服务",
+      "title": ""
+    },
+    {
+      "href": "http://zwfw-new.hunan.gov.cn/hn-zjcs-qt/home",
+      "onclick": null,
+      "text": "中介超市",
+      "title": ""
+    },
+    {
+      "href": "//zwfw-new.hunan.gov.cn/onething/NewUnifiedEvaluate/index_ywtb.jsp?type=hcp&areacode=439900000000",
+      "onclick": null,
+      "text": "好差评",
+      "title": ""
+    },
+    {
+      "href": "//zwfw-new.hunan.gov.cn/hnzwfw/ywtbygzw/index.html?areacode=439900000000",
+      "onclick": null,
+      "text": "阳光政务",
+      "title": ""
+    },
+    {
+      "href": "http://bszs.conac.cn/sitename?method=show&id=09AF00C813CD41A0E053022819ACB59D",
+      "onclick": null,
+      "text": "",
+      "title": ""
+    },
+    {
+      "href": "https://zfwzgl.www.gov.cn/exposure/jiucuo.html?site_code=4300000001&url=http%3A%2F%2Fwww.hunan.gov.cn%2F",
+      "onclick": null,
+      "text": "",
+      "title": ""
+    },
+    {
+      "href": "http://www.hunan.gov.cn/hnszf/fzlm/zddt/index.html",
+      "onclick": null,
+      "text": "站点地图",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": null,
+      "text": "网站分享",
+      "title": ""
+    },
+    {
+      "href": "http://www.hunan.gov.cn/hnszf/wapfx/wxshare.html?url=//zwfw-new.hunan.gov.cn/&title='分享到微信'",
+      "onclick": null,
+      "text": "",
+      "title": ""
+    },
+    {
+      "href": "https://service.weibo.com/share/share.php?url=http%3A%2F%2Fzwfw-new.hunan.gov.cn%2Fhnzwfw%2F1%2Findex.html&title=%E6%B9%96%E5%8D%97%E7%9C%81%E6%94%BF%E5%8A%A1%E6%9C%8D%E5%8A%A1%E6%AC%A2%E8%BF%8E%E6%82%A8&appkey=2924220432&pic=http%253A%252F%252Fwww.czs.gov.cn%252Fhtml%252Findex.html#_loginLayer_1603438320856",
+      "onclick": null,
+      "text": "",
+      "title": ""
+    },
+    {
+      "href": "https://beian.miit.gov.cn/",
+      "onclick": null,
+      "text": "备案号：湘ICP备05000618号",
+      "title": ""
+    },
+    {
+      "href": "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43010302000524",
+      "onclick": null,
+      "text": "公安机关备案号：43010302000524",
+      "title": ""
+    },
+    {
+      "href": null,
+      "onclick": null,
+      "text": "网站标识码：4300000001",
+      "title": ""
+    }
+  ],
+  "materials": [],
+  "tables": [],
+  "text": "中国政府网\n湖南人大网\n湖南省政协网\n登录\n注册\n繁體中文\n无障碍浏览\n试运行\n长者版\n湖南省\n热门搜索\n个体工商户特种设备注销登记经营许可证营业执照残疾人\n个人服务\n生育收养\n教育科研\n就业创业\n设立变更\n准营准办\n职业资格\n法人服务\n设立变更\n准营准办\n资质认证\n年检年审\n税收财务\n人力资源\n高效办成一件事\n新生儿出生\n入学\n退休服务\n就医服务\n社保卡服务\n信用修复\n中介超市\n\n全面开放，公平竞争，\n公开透明，高效便捷。\n\n老年人综合服务\n\n老有所养，老有所医，\n老有所为，老有所乐。\n\n金融服务\n\n金融服务民生，创新引领\n未来，让生活更便捷。\n\n便民服务\n\n生活更便捷，\n服务更暖心。\n\n大学生创业服务\n\n背上双肩包，\n来湖南创业吧。\n\n助企惠企服务\n\n惠企政策直达快享，\n惠企一件事。\n\n优化营商环境\n\n亲商，安商，扶商，护商营造良好营商环境。\n\n中介超市\n\n全面开放，公平竞争，\n公开透明，高效便捷。\n\n老年人综合服务\n\n老有所养，老有所医，\n老有所为，老有所乐。\n\n金融服务\n\n金融服务民生，创新引领\n未来，让生活更便捷。\n\n便民服务\n\n生活更便捷，\n服务更暖心。\n\n大学生创业服务\n\n背上双肩包，\n来湖南创业吧。\n\n助企惠企服务\n\n惠企政策直达快享，\n惠企一件事。\n\n优化营商环境\n\n亲商，安商，扶商，护商营造良好营商环境。\n\nHI,晚上好！请登录\n热门服务\n换一换\n门诊费用报销\n住房公积金汇缴\n住院费用报销\n住房公积金个人住房贷款月对冲还款\n企业职工养老保险个人参保证明查询打印\n跨省通办\n一地认证、全网通办、异地可办\n电子社保卡申领\n失业登记\n城乡居民养老保险关系转移申请\n个人社保参保证明查询打印\n阳光政务\n透明晒权，让权力在阳光下运行\n权责清单\n公共服务事项清单\n中介清单\n政务服务事项清单\n好差评\n全面接受社会监督，持续改进政务服务能力\n46,503,880条\n本年总评价数\n206 条\n差评数\n100%\n按期整改率\n统计数据截止时间:2026年10月28日\n前往评价\n请选择旗舰店\n当前：\n湖南省\n长沙市\n雨花区\n前往\n政务旗舰店\n侯家塘街道\n左家塘街道\n圭塘街道\n砂子塘街道\n东塘街道\n雨花亭街道\n高桥街道\n洞井街道\n黎托街道\n井湾子街道\n同升街道\n东山街道\n跳马镇\n本级部门旗舰店\n区发改局\n区教育局\n区工信局\n区民宗局\n区公安局\n区民政局\n区司法局\n区财政局\n区人社局\n区自然资源和规划分局\n市生态环境局雨花分局\n区住房城乡建设局（..\n区交通局\n区农业农村局\n区商务局\n区文旅体局\n区卫生健康局\n区退役军人事务局\n区应急局\n区市场监管局\n区医保局\n区档案局\n区税务局\n雨花区烟草专卖局\n区新闻出版管理部门\n区消防队\n区城管执法局\n区残联\n区侨办\n站点地图\n网站分享\n\n12345\n业务咨询和投诉电话\n\n0731-82214464\n省政务服务网技术服务热线\n\n主办单位：湖南省人民政府办公厅     承办单位：湖南省政务服务和大数据中心\n\n备案号：湘ICP备05000618号 公安机关备案号：43010302000524 网站标识码：4300000001\n通知\n\n按照人力资源社会保障部安排部署,湖南省社保一体化系统自2026年5月26日20时起暂停服务,进行信息系统升级,具体恢复时间以省人力资源社会保障厅为准。停机期间,暂停全省包括企业职工养老保险(含灵活就业人员)、机关事业单位养老保险(含职业年金)、城乡居民养老保险、失业保险、工伤保险相关线上线下所有渠道参保登记、人员异动、转移接续、权益记录、待遇领取资格认证、待遇计发、费用结算等业务经办服务。\n\n2026年5月22日",
+  "title": "湖南省政务服务_湖南省人民政府",
+  "url": "https://zwfw-new.hunan.gov.cn/hnzwfw/1/index.htm",
+  "captured_at": "2026-10-29T10:07:11.714845+00:00"
+}

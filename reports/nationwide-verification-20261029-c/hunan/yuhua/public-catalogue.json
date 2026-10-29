@@ -1,0 +1,358 @@
+{
+  "observed_at": "2026-10-29T10:10:12.664982+00:00",
+  "method": "Cookie-free readback of anonymous catalogue endpoint already observed after native own-district selector confirmation; no request headers/cookies/session persisted.",
+  "observed_request": {
+    "url": "https://zwfw-new.hunan.gov.cn/hnywtb/anony?action=toCatalogHttpPost&url=%2Fonlinehall%2FapproveInterface%2FgetApproveinfo%3FapproveId%3DE499C22DC24A06E7E053671515AC91D4%26orgId%3D",
+    "method": "POST",
+    "status": 200
+  },
+  "public_response": {
+    "acceptanceCondition": "《中华人民共和国劳动争议调解仲裁法》第二条 中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法:（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。",
+    "applicantDuty": "应当如实向行政机关提交有关材料和反映真实情况，并对其申请材料实质内容的真实性负责。",
+    "applicantPower": "依法享有知情权、陈述权、申辩权，有权依法申请行政复议或者提起行政诉讼。",
+    "approveCode": "12430111444932183M4002014302002",
+    "approveId": "E499C22DC24A06E7E053671515AC91D4",
+    "approveLimit": "60个工作日",
+    "approveLimitExplain": "仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。逾期未作出仲裁裁决的，当事人可以就该劳动争议事项向人民法院提起诉讼。",
+    "approveName": "劳动人事争议仲裁申请",
+    "approveSource": "县级",
+    "areaCode": "430111999000",
+    "chargeList": [],
+    "commitmentLimit": "60个工作日",
+    "commitmentLimitExplain": "仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。逾期未作出仲裁裁决的，当事人可以就该劳动争议事项向人民法院提起诉讼。",
+    "complaintTel": "0731-85880513",
+    "consultLimit": 5,
+    "consultTel": "0731-85880234",
+    "dataType": "1",
+    "doScope": "4",
+    "faqList": [
+      {
+        "approveId": "E499C22DC24A06E7E053671515AC91D4",
+        "faqContent": "当事人对发生法律效力的仲裁调解书、裁决书逾期不履行的，怎么处理？",
+        "faqId": "a7e53e3b751943bdb32111c90e40c884",
+        "ordernum": 1,
+        "replyContent": "《中华人民共和国劳动争议调解仲裁法》第五十一条 当事人对发生法律效力的调解书、裁决书，应当依照规定的期限履行。一方当事人逾期不履行的，另一方当事人可以依照民事诉讼法的有关规定向人民法院申请执行。受理申请的人民法院应当依法执行。",
+        "rid": 0
+      },
+      {
+        "approveId": "E499C22DC24A06E7E053671515AC91D4",
+        "faqContent": "仲裁申请书是否必须本人签名？",
+        "faqId": "3fb1bc2e1cd0403b8a5b7cde68e6964d",
+        "ordernum": 0,
+        "replyContent": "需要",
+        "rid": 0
+      },
+      {
+        "approveId": "E499C22DC24A06E7E053671515AC91D4",
+        "faqContent": "证据清单仲裁委收取原件吗？",
+        "faqId": "b8348e1ec4844323b45a5a084b8db607",
+        "ordernum": 0,
+        "replyContent": "不收取",
+        "rid": 0
+      },
+      {
+        "approveId": "E499C22DC24A06E7E053671515AC91D4",
+        "faqContent": "咨询方式",
+        "faqId": "7d085ddec9d7418e829317971bf5f4e3",
+        "ordernum": 0,
+        "replyContent": "窗口咨询或者电话咨询",
+        "rid": 0
+      },
+      {
+        "approveId": "E499C22DC24A06E7E053671515AC91D4",
+        "faqContent": "劳动争议调解仲裁受案范围？",
+        "faqId": "6f64ecd746634af98a35d870d66adf9d",
+        "ordernum": 0,
+        "replyContent": "《中华人民共和国劳动争议调解仲裁法》第二条 中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法:（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。",
+        "rid": 0
+      },
+      {
+        "approveId": "E499C22DC24A06E7E053671515AC91D4",
+        "faqContent": "争议案件的审理期限是多长？",
+        "faqId": "6f90439ba2674d32876ab7740e5961dc",
+        "ordernum": 0,
+        "replyContent": "《中华人民共和国劳动争议调解仲裁法》 第四十三条 仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。逾期未作出仲裁裁决的，当事人可以就该劳动争议事项向人民法院提起诉讼。",
+        "rid": 0
+      },
+      {
+        "approveId": "E499C22DC24A06E7E053671515AC91D4",
+        "faqContent": "是否劳动者本人要来申请？",
+        "faqId": "5200d8b152c14accb7884e510c022345",
+        "ordernum": 0,
+        "replyContent": "可以委托代理人为其办理",
+        "rid": 0
+      },
+      {
+        "approveId": "E499C22DC24A06E7E053671515AC91D4",
+        "faqContent": "该项目是否收费",
+        "faqId": "0246dcdcde3a4d719f44dc37d74444b6",
+        "ordernum": 0,
+        "replyContent": "不收费",
+        "rid": 0
+      },
+      {
+        "approveId": "E499C22DC24A06E7E053671515AC91D4",
+        "faqContent": "申请材料有哪些？",
+        "faqId": "1eae9537d58840d28b2e532ad8e7b148",
+        "ordernum": 0,
+        "replyContent": "劳动仲裁申请书、劳动者身份证、用人单位企业信息、证据副本。法条参考：《中华人民共和国劳动争议调解仲裁法》第二十八条、《中华人民共和国民事诉讼法》第六十三条、第六十四条、第六十五条。",
+        "rid": 0
+      },
+      {
+        "approveId": "E499C22DC24A06E7E053671515AC91D4",
+        "faqContent": "需要双方在场吗？",
+        "faqId": "1ba30e010f104d3f871bc0f926873424",
+        "ordernum": 0,
+        "replyContent": "双方可以委托代理人办理",
+        "rid": 0
+      },
+      {
+        "approveId": "E499C22DC24A06E7E053671515AC91D4",
+        "faqContent": "劳动争议维权，有什么时限要求？",
+        "faqId": "acf7b3a935a94b85972b2f6db1a9c5cd",
+        "ordernum": 0,
+        "replyContent": "《中华人民共和国劳动争议调解仲裁法》第二十七条",
+        "rid": 0
+      },
+      {
+        "approveId": "E499C22DC24A06E7E053671515AC91D4",
+        "faqContent": "办理此事件需要身份证吗",
+        "faqId": "abd7b21f14fa4af1889d80a6976a5ff0",
+        "ordernum": 0,
+        "replyContent": "需要",
+        "rid": 0
+      },
+      {
+        "approveId": "E499C22DC24A06E7E053671515AC91D4",
+        "faqContent": "申请表格和提交材料中相关人员签名是否必须本人亲笔签名？",
+        "faqId": "0370215704984a649ba1f2d2cda5f7e7",
+        "ordernum": 0,
+        "replyContent": "委托代理人可以为其代签",
+        "rid": 0
+      },
+      {
+        "approveId": "E499C22DC24A06E7E053671515AC91D4",
+        "faqContent": "到哪里申请仲裁？",
+        "faqId": "cdc0e37e18054d7fba2e45da704daa51",
+        "ordernum": 0,
+        "replyContent": "《中华人民共和国劳动争议调解仲裁法》第二十一条",
+        "rid": 0
+      },
+      {
+        "approveId": "E499C22DC24A06E7E053671515AC91D4",
+        "faqContent": "劳动争议仲裁部门不予受理的情形有哪些？",
+        "faqId": "811851eae58c4bdeb0a2c0904e92d421",
+        "ordernum": 0,
+        "replyContent": "《劳动人事争议仲裁办案规则》第三十条 、第三十一条",
+        "rid": 0
+      },
+      {
+        "approveId": "E499C22DC24A06E7E053671515AC91D4",
+        "faqContent": "是否需要现场办理",
+        "faqId": "6437d704581b42e6a719a7848ba15ef0",
+        "ordernum": 0,
+        "replyContent": "需要",
+        "rid": 0
+      }
+    ],
+    "flowBucketName": "zwfw202411",
+    "flowChartList": [
+      {
+        "alias": 1,
+        "assigne": "一楼大厅受理",
+        "detail": "资料齐全",
+        "durationunit": "个工作日",
+        "id": "lZDLbcUbSn2nLG0RFlyXTQ",
+        "moduleid": "E499C22DC24A06E7E053671515AC91D4",
+        "name": "受理",
+        "time": "5"
+      },
+      {
+        "alias": 2,
+        "assigne": "仲裁员",
+        "detail": "依法裁决后送达结果",
+        "durationunit": "个工作日",
+        "id": "yy-CK7ykS6mZerHMJV5zbA",
+        "moduleid": "E499C22DC24A06E7E053671515AC91D4",
+        "name": "办结",
+        "time": "5"
+      }
+    ],
+    "flowPath": "approve/2021-06-29-15/1624951445795$$微信图片_20210629100434.png",
+    "gzcnAttach": [
+      {
+        "bucketName": "zwfw202208",
+        "fileName": "操作指引.pdf",
+        "filePath": "accept/2022-08-20/1660967387146$$操作指引.pdf",
+        "fileType": "pdf",
+        "materialSubmitDay": "czzy"
+      }
+    ],
+    "isCharge": "0",
+    "isEnterpriseCommitment": "0",
+    "isLogisticsReceipt": "0",
+    "isOnSitePickup": "1",
+    "isProveCommitment": "0",
+    "logisticsExpress": "1",
+    "logisticsReceiptAddressJson": "{\"provinceAreaCode\":\"\",\"provinceAreaName\":\"\",\"cityAreaCode\":\"\",\"cityAreaName\":\"\",\"countyAreaCode\":\"\",\"countyAreaName\":\"\",\"townAreaName\":\"\",\"townAreaCode\":\"\",\"address\":\"\"}",
+    "materialList": [
+      {
+        "acceptStandard": "《劳动争议调解仲裁法》第二条 中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法:（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。",
+        "attachList": [
+          {
+            "attachCode": "000002",
+            "attachId": "39736ae6dc2c4ef8b073a6100f353aae",
+            "attachName": "1－仲裁申请书（劳动者）.doc",
+            "attachPath": "approve/2021-06-29-15/1624951667887$$1－仲裁申请书（劳动者）.doc",
+            "attachSize": 50688,
+            "attachType": ".doc",
+            "bucketName": "zwfw202106",
+            "businessId": "837c60d3579141ebbd21bafb6f316339"
+          },
+          {
+            "attachCode": "000003",
+            "attachId": "37edfb10f54240b28bd9016fcb43ce5c",
+            "attachName": "仲裁申请书（劳动者）.doc",
+            "attachPath": "approve/2024-11-27-16/1732694895374$$仲裁申请书（劳动者）.doc",
+            "attachSize": 26624,
+            "attachType": ".doc",
+            "bucketName": "zwfw202411",
+            "businessId": "837c60d3579141ebbd21bafb6f316339"
+          },
+          {
+            "attachCode": "000003",
+            "attachId": "455fcffafa5141cf9cdfe4dc61178e2c",
+            "attachName": "仲裁申请书（单位）.doc",
+            "attachPath": "approve/2024-11-27-16/1732694895330$$仲裁申请书（单位）.doc",
+            "attachSize": 27136,
+            "attachType": ".doc",
+            "bucketName": "zwfw202411",
+            "businessId": "837c60d3579141ebbd21bafb6f316339"
+          },
+          {
+            "attachCode": "000002",
+            "attachId": "b194fe8b1e364682beb9ec2e217aeeed",
+            "attachName": "2－仲裁申请书（单位）.doc",
+            "attachPath": "approve/2021-06-29-15/1624951667935$$2－仲裁申请书（单位）.doc",
+            "attachSize": 51712,
+            "attachType": ".doc",
+            "bucketName": "zwfw202106",
+            "businessId": "837c60d3579141ebbd21bafb6f316339"
+          }
+        ],
+        "commitWay": "网上现场都可提交",
+        "copiesNum": 2,
+        "freeSubmission": "4",
+        "isMust": "必要",
+        "isNeedSubmit": "Y",
+        "materialApproveType": "申请表",
+        "materialCode": "M0020143020020101",
+        "materialExplain": "劳动仲裁申请书提交份数，根据当事人数量基础上+1",
+        "materialId": "837c60d3579141ebbd21bafb6f316339",
+        "materialStandard": "纸质和电子",
+        "materialTitle": "劳动仲裁申请书",
+        "materialType": "原件",
+        "orderNum": 1,
+        "sourceChannel": "申请人自备"
+      },
+      {
+        "acceptStandard": "材料齐全，真实有效",
+        "attachList": [
+          {
+            "bucketName": "zwfw"
+          }
+        ],
+        "commitWay": "网上现场都可提交",
+        "copiesNum": 1,
+        "freeSubmission": "2",
+        "isMust": "必要",
+        "isNeedSubmit": "Y",
+        "materialApproveType": "证照",
+        "materialCode": "M0020143020020102",
+        "materialExplain": "如实提交",
+        "materialId": "d5ed8ccebf8749989abf630c831a1c8e",
+        "materialStandard": "纸质和电子",
+        "materialTitle": "居民身份证",
+        "materialType": "复印件",
+        "orderNum": 2,
+        "sourceChannel": "政府部门核发"
+      },
+      {
+        "acceptStandard": "材料齐全，真实有效",
+        "attachList": [
+          {
+            "bucketName": "zwfw"
+          }
+        ],
+        "commitWay": "网上现场都可提交",
+        "copiesNum": 1,
+        "freeSubmission": "2",
+        "isMust": "必要",
+        "isNeedSubmit": "Y",
+        "materialApproveType": "证照",
+        "materialCode": "M0020143020020103",
+        "materialExplain": "政府部门核发，也可以通过国家企业信用信息公示系统、天眼查、企查查进行查询打印",
+        "materialId": "5f16a3884b1e433291dbff047573484e",
+        "materialStandard": "纸质和电子",
+        "materialTitle": "营业执照",
+        "materialType": "复印件",
+        "orderNum": 3,
+        "sourceChannel": "政府部门核发"
+      },
+      {
+        "acceptStandard": "一般参照《民事诉讼法》及民事诉讼相关证据规则的规定，划分书证、物证、视听资料、电子数据、证人证言、当事人的陈述、鉴定结论、勘验笔录八类。《民事诉讼法》第六十三条 证据种类 证据包括：(一)当事人的陈述;(二)书证;(三)物证;(四)视听资料;(五)电子数据;(六)证人证言;(七)鉴定意见;(八)勘验笔录。证据必须查证属实，才能作为认定事实的根据。",
+        "attachList": [
+          {
+            "bucketName": "zwfw"
+          }
+        ],
+        "commitWay": "网上现场都可提交",
+        "copiesNum": 2,
+        "freeSubmission": "4",
+        "isMust": "必要",
+        "isNeedSubmit": "Y",
+        "materialApproveType": "证明材料",
+        "materialCode": "M0020143020020104",
+        "materialExplain": "提交份数，根据当事人数量基础上+1",
+        "materialId": "2905367e1fb748ec8ad69e70d11f5b47",
+        "materialStandard": "纸质和电子",
+        "materialTitle": "证据材料",
+        "materialType": "复印件",
+        "orderNum": 4,
+        "sourceChannel": "申请人自备"
+      }
+    ],
+    "minExplain": "四级标准说明：该事项已经实现全程网办，申请人可以通过网络提交和补正相关申请信息和材料，提交的材料全部为已验证信息，受理通过后直接进入办理程序，申请人可网上查询办理状态、咨询问题，作出审批决定后，申请人可以通过网上缴费后物流递送证书结果。整个办事过程无需到现场办理。",
+    "minSeq": 0,
+    "orgId": "80009082b6384c3bb8af7ee1d6c312f6",
+    "orgName": "雨花区人社局",
+    "processDescript": "接待登记-立案登记-案件组庭排庭-案件审理-结案处理",
+    "quantitativeRestriction": "暂无数量限制",
+    "resultList": [
+      {
+        "approveId": "E499C22DC24A06E7E053671515AC91D4",
+        "bucketName": "zwfw202411",
+        "extend": "jpg",
+        "fileName": "仲裁裁决书模版_01.jpg",
+        "resultChart": "approve/2024-11-27-16/1732694867451$$仲裁裁决书模版_01.jpg"
+      }
+    ],
+    "resultSampleName": "仲裁裁决书、仲裁调解书、仲裁决定书",
+    "resulttype": "30",
+    "rightsClassify": "依申请类",
+    "rightsCode": "002014302002",
+    "rightsId": "8794B3AA93629492E053681515ACDDA6",
+    "serveObject": "1^2^3^4^5^6^9",
+    "settingGist": "1.《中华人民共和国劳动争议调解仲裁法》第二条：中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用\n  本法：（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除\n  名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；\n  （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。第五\n  条：发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、\n  调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁；对仲裁裁决不服的，除本法另有规定的\n  外，可以向人民法院提起诉讼。\n2.《劳动人事争议仲裁办案规则》（中华人民共和国人力资源和社会保障部令第33号）第二条：本规则适用下列争议的仲\n  裁：（一）企业、个体经济组织、民办非企业单位等组织与劳动者之间，以及机关、事业单位、社会团体与其建立劳动\n  关系的劳动者之间，因确认劳动关系，订立、履行、变更、解除和终止劳动合同，工作时间、休息休假、社会保险、福\n  利、培训以及劳动保护，劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（二）实施公务员法的机关与聘\n  任制公务员之间、参照公务员法管理的机关（单位）与聘任工作人员之间因履行聘任合同发生的争议；（三）事业单位\n  与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（四）社会团体与其建立人事关系的\n  工作人员之间因终止人事关系以及履行聘用合同发生的争议；（五）军队文职人员用人单位与聘用制文职人员之间因履\n  行聘用合同发生的争议；（六）法律、法规规定由劳动人事争议仲裁委员会处理的其他争议。\n3.《劳动人事争议仲裁组织规则》（中华人民共和国人力资源和社会保障部令第34号）第七条：仲裁委员会依法履行下列\n  职责：（一）聘任、解聘专职或者兼职仲裁员；（二）受理争议案件；（三）讨论重大或者疑难的争议案件；（四）监  \n  督本仲裁委员会的仲裁活动；（五）制定本仲裁委员会的工作规则；（六）其他依法应当履行的职责。",
+    "taskhandleitem": "12430111444932183M400201430200201",
+    "transType": "承诺件",
+    "transactAddress": "湖南省长沙市雨花区朝晖路499号长沙市雨花区人力资源和社会保障局一楼大厅;",
+    "transactLevel": "四级标准",
+    "transactionFrom": "1^2",
+    "typeCode": "公共服务",
+    "tyshxydm": "12430111444932183M",
+    "versionNum2": 10,
+    "workTime": "法定工作日，夏季（07月01日~09月30日）：上午 09:00~12:00,下午 13:30~17:30;法定工作日，冬季（10月01日~次年06月30日）：上午 09:00~12:00,下午 13:00~17:00;",
+    "ywCode": "01"
+  }
+}

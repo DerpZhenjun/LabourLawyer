@@ -1,0 +1,50 @@
+{
+  "scope": "C batch own official capture only; no coverage or generation grant",
+  "districts": [
+    {
+      "district": "雨花区",
+      "region_code": "430111",
+      "source_id": "64a4b3a0d0bbb800bd3309fb",
+      "approve_id": "E499C22DC24A06E7E053671515AC91D4",
+      "authority": "雨花区人社局",
+      "consultation_phone": "0731-85880234",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+      "guide_status": "own_source_captured",
+      "materials": 4,
+      "official_blank_originals": 2,
+      "official_sample_originals": 2,
+      "online_status": "auth_required",
+      "adaptation": "NOT_RUN",
+      "visual_qa": "NOT_RUN",
+      "candidate_web_qa": "NOT_RUN",
+      "published": false,
+      "guide_file": "reports/nationwide-verification-20261029-c/hunan/yuhua/guide.json"
+    },
+    {
+      "district": "望城区",
+      "region_code": "430112",
+      "source_id": "e63cea876d59bcd7b306427f",
+      "approve_id": "f3060b49b9ed4a50b1b300254417b324",
+      "authority": "望城区人力资源和社会保障局",
+      "consultation_phone": "0731-88062246",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=f3060b49b9ed4a50b1b300254417b324",
+      "guide_status": "own_source_captured",
+      "materials": 4,
+      "official_blank_originals": 2,
+      "official_sample_originals": 2,
+      "online_status": "auth_required",
+      "adaptation": "NOT_RUN",
+      "visual_qa": "NOT_RUN",
+      "candidate_web_qa": "NOT_RUN",
+      "published": false,
+      "guide_file": "reports/nationwide-verification-20261029-c/hunan/wangcheng/guide.json"
+    }
+  ],
+  "official_originals": 8,
+  "materials": 8,
+  "published_by_this_batch": 0,
+  "models_called": 0,
+  "shared_files_or_databases_changed": false,
+  "browser_session": "hn-oct29c-verify",
+  "browser_closed": true
+}

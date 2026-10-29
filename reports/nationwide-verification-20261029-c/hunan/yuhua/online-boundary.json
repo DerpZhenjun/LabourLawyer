@@ -1,0 +1,14 @@
+{
+  "login_visible": true,
+  "origin": "https://auth.zwfw.hunan.gov.cn",
+  "password_inputs": 7,
+  "path": "/oauth2/govLogin.html",
+  "title": "湖南政务服务网",
+  "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+  "captured_at": "2026-10-29T10:12:39.807646+00:00",
+  "status": "auth_required",
+  "authenticated": false,
+  "submitted": false,
+  "post_login_capability": "unverified",
+  "redaction": "No SSO query, login DOM, screenshot QR/session code, cookies, headers, or credentials retained"
+}

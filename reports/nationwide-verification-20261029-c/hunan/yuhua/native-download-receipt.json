@@ -1,0 +1,26 @@
+{
+  "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+  "receipts": [
+    {
+      "role": "blank",
+      "browser_downloaded_filename": "劳动仲裁申请书 (4).zip",
+      "state": 2,
+      "bytes": 102902,
+      "sha256": "fe0c06b2c942fdb8ebecc15202ea2892cf989c15ed2f13b294bff444e15a1459",
+      "bundle_file": "yuhua/originals/blank/native-bundle.zip",
+      "member_count": 2,
+      "file_path_and_blob_id_omitted": true
+    },
+    {
+      "role": "sample",
+      "browser_downloaded_filename": "劳动仲裁申请书 (5).zip",
+      "state": 2,
+      "bytes": 54230,
+      "sha256": "101547416ad26322bfbd7b8a6071c673046087b9451ef2bde5a81fbb8e9845d9",
+      "bundle_file": "yuhua/originals/sample/native-bundle.zip",
+      "member_count": 2,
+      "file_path_and_blob_id_omitted": true
+    }
+  ],
+  "user_directory_enumerated": false
+}

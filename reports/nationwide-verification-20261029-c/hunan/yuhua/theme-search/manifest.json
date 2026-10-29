@@ -1,0 +1,22 @@
+{
+  "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/index.html?type=fr&main=1&areacode=430111999000&typeid=030",
+  "captured_at": "2026-10-29T10:07:41.872525+00:00",
+  "files": {
+    "page.json": {
+      "sha256": "a23c71696b60c22d8236e5b12f3b68a261f25d324332093a215ab1846c1f217f",
+      "bytes": 25876
+    },
+    "page.png": {
+      "sha256": "ab218bff8aa9a9ff87a97962ce403e247ae68f259ba9413d88d9d3a36c2b9c2e",
+      "bytes": 243863
+    },
+    "page.txt": {
+      "sha256": "c96c987840619c2bddf83dc6486d4eefaa43db701c7cb792c23d885ca19cf859",
+      "bytes": 1448
+    },
+    "snapshot.txt": {
+      "sha256": "50d22da4f06c61778047bac17076aeff1b57b1a4cf5c1297bbcc58b9653f769f",
+      "bytes": 3716
+    }
+  }
+}
