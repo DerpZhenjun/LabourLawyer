@@ -1,0 +1,14 @@
+{
+  "schema": "public-access-limit-summary-v1",
+  "recorded_at": "2026-10-29T09:26:03.909261+00:00",
+  "province_homepage": "http://www.shandong.gov.cn/",
+  "observed_native_personal_service_url": "http://www.shandong.gov.cn/api-gateway/jpaas-jiq-web-sdywtb/front/item/gr_index",
+  "result": "403 WAF block",
+  "public_message": "当前访问疑似攻击行为，已被网站管理员设置为拦截",
+  "action": "stopped; no authentication, UA change or bypass attempted",
+  "local_only_screenshot": "province-waf-local-only.png",
+  "local_only_reason": "拦截页包含客户端信息；不得公开截图或原始正文。",
+  "observed_at_approximate_utc_from_screenshot_mtime": "2026-10-29T09:17:25.848579+00:00",
+  "earlier_https_homepage_result": "ERR_SSL_VERSION_OR_CIPHER_MISMATCH; later followed actual official footer HTTP link successfully, then native personal-service entry blocked",
+  "tooling_note": "One late doctor run reported daemon configuration/version contention; not attributed to official site. No other task sessions closed."
+}

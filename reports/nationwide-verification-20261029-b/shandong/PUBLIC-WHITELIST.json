@@ -1,0 +1,229 @@
+{
+  "schema": "explicit-public-file-allowlist-v1",
+  "created_at": "2026-10-29T09:26:03.909261+00:00",
+  "manifest_path": "reports/nationwide-verification-20261029-b/shandong/PUBLIC-WHITELIST.json",
+  "scope": "山东历下区370102、市中区370103 discovery-only; 0 own guides, 0 originals, 0 candidates",
+  "files": [
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/all-personal-arbitration-search.json",
+      "bytes": 30864,
+      "sha256": "7c2f8f14714894b4a9413af7e00f25e69b0d21f1923ef2f9ef14f7f1d748d9b2"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/all-personal-arbitration-search.png",
+      "bytes": 294190,
+      "sha256": "25f7ba2da9108f01d72aad982be3fc642cb9cd2ba03aad076c739899d7fc8d81"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/department-arbitration-search.json",
+      "bytes": 23681,
+      "sha256": "6b9ce7f74d240f4ff52b08e1d6cc19d5114ea151601d77fb8ea1409b4eb18b7c"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/department-arbitration-search.png",
+      "bytes": 304402,
+      "sha256": "da77862085ae354b5126d075a7a2dd60573d97dcb83cd3b5e3211a7b49005f42"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/DISCOVERY-STATUS.json",
+      "bytes": 10551,
+      "sha256": "03bfc5c9e85263db98d8b33a89935a907ed1b8a29ad055f2ffd9d872c2de12bd"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/historical-news-no-annex.json",
+      "bytes": 6775,
+      "sha256": "7d1fd366c33fc6f0ac5387128b2bedc0db9d0bc9deb2f165fee5aecec843588f"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/historical-news-no-annex.png",
+      "bytes": 1391247,
+      "sha256": "e1289b892de111cb12ae089c138081738d45053491c6a29fb1144cf26f2d3d71"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/municipal-contact-supplement.json",
+      "bytes": 28295,
+      "sha256": "aae32b5e2034b1950b0c0a382ef9ded4a1fd87717b90b11e400960010624f369"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/municipal-contact-supplement.png",
+      "bytes": 764626,
+      "sha256": "9c4c56a28c5412edb8c806eafc042afa10b1a1a3051d11654df830573f2511c7"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/official-entry.json",
+      "bytes": 36015,
+      "sha256": "97c10ac0b2c15418a4ffb5f70befd31dc6143655bc5e3122b94a6315836e0df4"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/official-entry.png",
+      "bytes": 1079196,
+      "sha256": "598ca9d695db6b5efddde3570bce49c9c25027d6c47bf690d14a7bf0f814442c"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/official-search-application-form.json",
+      "bytes": 13528,
+      "sha256": "97c65f445f56f41ff00db1c15369c43d8faf038049fbf639e0868105985d7b9b"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/official-search-application-form.png",
+      "bytes": 216561,
+      "sha256": "e233d6ac9593e408e87fcedc9a3feffbe21602fe7c8d3d5cfa44d9b2eae10d4d"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/official-search-arbitration-application.json",
+      "bytes": 13689,
+      "sha256": "f33b07af5374384a66207d4fb420c425a20c190b0ba50a6c8395096258e2efb6"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/official-search-arbitration-application.png",
+      "bytes": 216670,
+      "sha256": "bc0341ea3d603a779ecad457da23d89ab76ac7b311a8bbcc5dc3d16a8c77984a"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/official-search-labor-arbitration.json",
+      "bytes": 40635,
+      "sha256": "9a7247668cc3b0f943e83f30a70698634d68995c13324a02d0af1b12044666a3"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/official-search-labor-arbitration.png",
+      "bytes": 755448,
+      "sha256": "a65765fa4449a785126c5288fb3877f3ccde8ce838a303e9dd47d0108588937e"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/official-search-labor-personnel-disputes.json",
+      "bytes": 45719,
+      "sha256": "66f76409fd3ff266a541d7355237b1af0a396c09ea8cab19efbed8311f377aed"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370102/official-search-labor-personnel-disputes.png",
+      "bytes": 800940,
+      "sha256": "89c61705658b6672af4b2c70db7c30348bff4f226b46df5bc76e8c9fd3e14912"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/all-matters-arbitration-search.json",
+      "bytes": 23436,
+      "sha256": "e4925b71d6efcf9938cd46b36472e2929938047a3cd5b202ed0627f36ab7e419"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/all-matters-arbitration-search.png",
+      "bytes": 281290,
+      "sha256": "30e5dd7fedef5e4e4d888cac786aa2e8a450822d19870f85860729b0feff22ce"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/all-matters-control-empty-zero.json",
+      "bytes": 23438,
+      "sha256": "18c3738dbec0142e4903bab176a7014515c2a66127291763a8fc1aeb996bea42"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/all-matters-control-empty-zero.png",
+      "bytes": 268088,
+      "sha256": "aad255fd27b0607938b32e126060b0333181bd61eec0a13ca1bc7777d329b6f9"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/all-matters-control-specific-name-zero.json",
+      "bytes": 23448,
+      "sha256": "76d68c1fd56aef17bde146fab330f8e904ad3b417e29269d6e27ca00302e9d59"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/all-matters-control-specific-name-zero.png",
+      "bytes": 281660,
+      "sha256": "0e3ebf652eff18ebb470f69741a0edd63cc9494c91c26b55addc1c14abbbe4bb"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/all-matters-initial-restored.json",
+      "bytes": 30135,
+      "sha256": "6addb521721999f8d8674d5b6bc48de13da480818828806f3c3a801cbb040779"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/all-matters-initial-restored.png",
+      "bytes": 451513,
+      "sha256": "33e6de12f058a6bce808bef26be22aeae0c796b6730e205fbb7fd76d9b3df914"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/department-arbitration-search.json",
+      "bytes": 23689,
+      "sha256": "680d0dd5a4070724e39fd5ce4ee58f965da836b213064e5424fc03136a0a57c1"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/department-arbitration-search.png",
+      "bytes": 302542,
+      "sha256": "8ffc073ca40443a469849d18a2b2cfa5e6a1053b51839cf2a19652796194dc92"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/DISCOVERY-STATUS.json",
+      "bytes": 10357,
+      "sha256": "c36f10c0ffe685853fbdcc2e0ce9d8d70ee0b83c6d0e5ea1143884197580176f"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/official-entry.json",
+      "bytes": 47674,
+      "sha256": "1ce0aaba5f5e6f0e02de1105cf741e60dc7344809c6e750c8decc4026e85774b"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/official-entry.png",
+      "bytes": 2240984,
+      "sha256": "426afd841f29fb74876302e1c87c8260c9ef57c5ae6ff7539566af797e284c13"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/official-search-apply-arbitration.json",
+      "bytes": 23956,
+      "sha256": "483e188ec943a27150e59c656dcf1030d987ca0b3385f7d44549195cd1227ed7"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/official-search-apply-arbitration.png",
+      "bytes": 689660,
+      "sha256": "44098efc41a1e2c2b466dc7c9b55cfb0ed6bcbc91024ed233bd2ea3aa36a54cb"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/official-search-arbitration-application.json",
+      "bytes": 16296,
+      "sha256": "3144d9e6d028053c133bfe6fbf5e9bf715266b24e756ed094b351a66ec3f18fe"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/official-search-arbitration-application.png",
+      "bytes": 573476,
+      "sha256": "f0da2b58dc6d85935d93d2900370ffb35ad7395f092754c0420232b4bf48bcb5"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/official-search-labor-arbitration.json",
+      "bytes": 20783,
+      "sha256": "9b5eebb2c3e3c6bde9b0260d9822d8603193cce701c401fd804d162f99272d3d"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/370103/official-search-labor-arbitration.png",
+      "bytes": 653982,
+      "sha256": "6becd1755eda49c0a150dfa47a6ec0bacaaa40ef6e4ce7bb66bacfc57f856b25"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/access-limit-summary.json",
+      "bytes": 1069,
+      "sha256": "ae6a78f5448584f40c8ab9b5763b299039592ee19d46f22441a597218995410d"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/HANDOFF.md",
+      "bytes": 2764,
+      "sha256": "fadc2884dc9a22b36b74155a002bdcb23fecc1e34ac3df42bdca5ea683584d99"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/verification-report.json",
+      "bytes": 941,
+      "sha256": "11f3d65a1fb7d3c204e8fdbc79e452bd4a28ec0e7f7fd7bdf1df980cf21f3ac6"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/shandong/visual-review.json",
+      "bytes": 1707,
+      "sha256": "983221a3de1e04980caa47c02037339681c7f1c68f677b2f817c822e332a3279"
+    },
+    {
+      "path": "scripts/collect-shandong-oct29b.py",
+      "bytes": 2980,
+      "sha256": "ae934ed6d00d18683b1dc64b2759acbe8cabfeb741352beb0f1e81d6100fbfca"
+    }
+  ],
+  "count": 43,
+  "original_attachment_files": [],
+  "excluded": [
+    "reports/nationwide-verification-20261029-b/shandong/province-waf-local-only.png"
+  ],
+  "exclusion_policy": "Do not recursively include directory or browser/session diagnostics. Manifest itself is permitted via manifest_path; its own hash is intentionally not recursive."
+}

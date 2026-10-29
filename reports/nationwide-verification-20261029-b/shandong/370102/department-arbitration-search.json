@@ -1,0 +1,964 @@
+{
+  "url": "https://zwfw.jinan.gov.cn/jpaas-jiq-web-jnywtb/front/item/bmft_index?areaCode=370102000000&deptCode=370102008",
+  "title": "部门分厅",
+  "text": "2026-10-29 星期四\n简体版|\n繁体版|\nEnglish|\n无障碍浏览|\n网站群\n历下区人力资源和社会保障局\n切换区域\n一网通办\n政务服务\n个人服务\n法人服务\n事项清单\n阳光政务\n在线客服\n预约取号\n济南市历下区人力资源和社会保障局\n地址：济南市历下区解放东路99号历下大厦\n电话：0531-88152372\n全部主题\n共0个事项,其中0个事项可在线申办\n事项分类\n全部分类\n主题分类\n全部主题\n \n事项名称\n所属部门\n国家部委网站\n省级政府网站\n省内地市级网站\n本市政府网站\n本地常用网站\n\n版权所有：中国·济南 济南市人民政府办公厅主办\n\n网站标识码：3701000001 鲁ICP备05041920号-1  鲁公网安备 37010202001191号\n\n最佳分辨率1920*1080 建议使用IE8.0版本或以上\n\n联系我们\n|\n法律声明\n网站地图\n|\n历年风采",
+  "headings": [
+    "济南市历下区人力资源和社会保障局",
+    "全部主题"
+  ],
+  "visible_queries": [
+    {
+      "placeholder": "",
+      "value": ""
+    },
+    {
+      "placeholder": "输入关键字查找服务事项",
+      "value": "仲裁"
+    }
+  ],
+  "public_links": [
+    {
+      "text": "English",
+      "url": "https://english.jinan.gov.cn/"
+    },
+    {
+      "text": "网站群",
+      "url": "https://www.jinan.gov.cn/col/col29/index.html"
+    },
+    {
+      "text": "",
+      "url": "https://www.jinan.gov.cn/"
+    },
+    {
+      "text": "政务服务",
+      "url": "https://zwfw.jinan.gov.cn/col/col57798/index.html?areaCode=370102000000"
+    },
+    {
+      "text": "个人服务",
+      "url": "https://zwfw.jinan.gov.cn/jpaas-jiq-web-jnywtb/front/item/gr_index?areaCode=370102000000"
+    },
+    {
+      "text": "法人服务",
+      "url": "https://zwfw.jinan.gov.cn/jpaas-jiq-web-jnywtb/front/item/fr_index?areaCode=370102000000"
+    },
+    {
+      "text": "事项清单",
+      "url": "https://zwfw.jinan.gov.cn/jpaas-jiq-web-jnywtb/front/item/sxqd_index?areaCode=370102000000"
+    },
+    {
+      "text": "阳光政务",
+      "url": "https://zwfw.jinan.gov.cn/col/col57730/index.html?areaCode=370102000000"
+    },
+    {
+      "text": "在线客服",
+      "url": "https://zwfw.jinan.gov.cn/col/col63095/index.html?areaCode=370102000000"
+    },
+    {
+      "text": "预约取号",
+      "url": "https://zwfw.jinan.gov.cn/jpaas-juspace-web-jnywtb/front/three/yuyueAddTicket?bz=zxyy"
+    },
+    {
+      "text": "好差评",
+      "url": "https://zwfw.jinan.gov.cn/jpaas-jiq-web-jnywtb/front/info/goodAndBad"
+    },
+    {
+      "text": "中介超市",
+      "url": "http://www.shandong.gov.cn/zwfwzjcs/intermediary/index?site=jinanshilixiaqu"
+    },
+    {
+      "text": "",
+      "url": "http://www.jinan.gov.cn/col/col57776/index.html?areaCode=370100000000"
+    },
+    {
+      "text": "",
+      "url": "https://jnzwfw.jinan.gov.cn/gsiehpc/"
+    },
+    {
+      "text": "",
+      "url": "http://zwfw.jinan.gov.cn/jpaas-jiq-web-jnywtb/front/info/goodAndBad"
+    },
+    {
+      "text": "",
+      "url": "https://jnzwfw.jinan.gov.cn/quanwen/quanwenclient/#/pages/index/chat_pc"
+    },
+    {
+      "text": "",
+      "url": "https://jnzwfw.jinan.gov.cn/quanwen/quanwenclient/#/pages/baidumap/mappc"
+    },
+    {
+      "text": "",
+      "url": "http://www.gov.cn/"
+    },
+    {
+      "text": "",
+      "url": "http://www.shandong.gov.cn/"
+    },
+    {
+      "text": "外交部",
+      "url": "http://www.fmprc.gov.cn/web/"
+    },
+    {
+      "text": "国防部",
+      "url": "http://www.mod.gov.cn/"
+    },
+    {
+      "text": "国家发展和改革委员...",
+      "url": "http://www.ndrc.gov.cn/"
+    },
+    {
+      "text": "教育部",
+      "url": "http://www.moe.gov.cn/"
+    },
+    {
+      "text": "科学技术部",
+      "url": "http://www.most.gov.cn/"
+    },
+    {
+      "text": "工业和信息化部",
+      "url": "http://www.miit.gov.cn/"
+    },
+    {
+      "text": "国家民族事务委员会",
+      "url": "http://www.seac.gov.cn/"
+    },
+    {
+      "text": "公安部",
+      "url": "http://www.mps.gov.cn/"
+    },
+    {
+      "text": "民政部",
+      "url": "http://www.mca.gov.cn/"
+    },
+    {
+      "text": "司法部",
+      "url": "http://www.moj.gov.cn/"
+    },
+    {
+      "text": "财政部",
+      "url": "http://www.mof.gov.cn/"
+    },
+    {
+      "text": "人力资源社会保障部",
+      "url": "http://www.mohrss.gov.cn/"
+    },
+    {
+      "text": "自然资源部",
+      "url": "http://www.mnr.gov.cn/"
+    },
+    {
+      "text": "生态环境部",
+      "url": "http://www.mee.gov.cn/"
+    },
+    {
+      "text": "住房和城乡建设部",
+      "url": "http://www.mohurd.gov.cn/"
+    },
+    {
+      "text": "交通运输部",
+      "url": "http://www.mot.gov.cn/"
+    },
+    {
+      "text": "水利部",
+      "url": "http://www.mwr.gov.cn/"
+    },
+    {
+      "text": "农业农村部",
+      "url": "http://www.moa.gov.cn/"
+    },
+    {
+      "text": "商务部",
+      "url": "http://www.mofcom.gov.cn/"
+    },
+    {
+      "text": "文化和旅游部",
+      "url": "http://www.mct.gov.cn/"
+    },
+    {
+      "text": "国家卫生健康委员会",
+      "url": "http://www.nhc.gov.cn/"
+    },
+    {
+      "text": "退役军人事务部",
+      "url": "http://www.mva.gov.cn/"
+    },
+    {
+      "text": "应急管理部",
+      "url": "http://www.chinasafety.gov.cn/"
+    },
+    {
+      "text": "人民银行",
+      "url": "http://www.pbc.gov.cn/"
+    },
+    {
+      "text": "审计署",
+      "url": "http://www.audit.gov.cn/"
+    },
+    {
+      "text": "国家语言文字工作委...",
+      "url": "http://www.moe.gov.cn/jyb_sy/China_Language/"
+    },
+    {
+      "text": "国家航天局",
+      "url": "http://www.cnsa.gov.cn/"
+    },
+    {
+      "text": "国家原子能机构",
+      "url": "http://www.caea.gov.cn/"
+    },
+    {
+      "text": "国家核安全局",
+      "url": "http://nnsa.mep.gov.cn/"
+    },
+    {
+      "text": "国务院国有资产监督...",
+      "url": "http://www.sasac.gov.cn/"
+    },
+    {
+      "text": "海关总署",
+      "url": "http://www.customs.gov.cn/"
+    },
+    {
+      "text": "国家税务总局",
+      "url": "http://www.chinatax.gov.cn/"
+    },
+    {
+      "text": "国家市场监督管理总...",
+      "url": "http://www.samr.gov.cn/"
+    },
+    {
+      "text": "国家广播电视总局",
+      "url": "http://www.sapprft.gov.cn/"
+    },
+    {
+      "text": "国家体育总局",
+      "url": "http://www.sport.gov.cn/"
+    },
+    {
+      "text": "国家统计局",
+      "url": "http://www.stats.gov.cn/"
+    },
+    {
+      "text": "国务院参事室",
+      "url": "http://www.counsellor.gov.cn/"
+    },
+    {
+      "text": "国家机关事务管理局",
+      "url": "http://www.ggj.gov.cn/"
+    },
+    {
+      "text": "国家认证认可监督管...",
+      "url": "http://www.cnca.gov.cn/"
+    },
+    {
+      "text": "国家标准化管理委员...",
+      "url": "http://www.sac.gov.cn/"
+    },
+    {
+      "text": "国家新闻出版署（国...",
+      "url": "http://www.ncac.gov.cn/"
+    },
+    {
+      "text": "国家宗教事务局",
+      "url": "http://www.sara.gov.cn/"
+    },
+    {
+      "text": "国务院港澳事务办公...",
+      "url": "http://www.hmo.gov.cn/"
+    },
+    {
+      "text": "国务院研究室",
+      "url": "http://www.gov.cn/guoqing/2018-06/22/content_5300522.htm"
+    },
+    {
+      "text": "国务院侨务办公室",
+      "url": "http://www.gqb.gov.cn/"
+    },
+    {
+      "text": "国务院台湾事务办公...",
+      "url": "http://www.gwytb.gov.cn/"
+    },
+    {
+      "text": "国家互联网信息办公...",
+      "url": "http://www.cac.gov.cn/"
+    },
+    {
+      "text": "国务院新闻办公室",
+      "url": "http://www.scio.gov.cn/index.htm"
+    },
+    {
+      "text": "新华通讯社",
+      "url": "http://203.192.6.89/xhs/"
+    },
+    {
+      "text": "中国科学院",
+      "url": "http://www.cas.ac.cn/"
+    },
+    {
+      "text": "中国社会科学院",
+      "url": "http://www.cssn.cn/"
+    },
+    {
+      "text": "中国工程院",
+      "url": "http://www.cae.cn/"
+    },
+    {
+      "text": "国务院发展研究中心",
+      "url": "http://www.drc.gov.cn/"
+    },
+    {
+      "text": "中国气象局",
+      "url": "http://www.cma.gov.cn/"
+    },
+    {
+      "text": "中国银行保险监督管...",
+      "url": "http://www.cbrc.gov.cn/chinese/newIndex.html"
+    },
+    {
+      "text": "中国证券监督管理委...",
+      "url": "http://www.csrc.gov.cn/pub/newsite/"
+    },
+    {
+      "text": "国家行政学院",
+      "url": "http://www.ccps.gov.cn/"
+    },
+    {
+      "text": "国家信访局",
+      "url": "http://www.gjxfj.gov.cn/"
+    },
+    {
+      "text": "国家粮食和物资储备...",
+      "url": "http://www.chinagrain.gov.cn/index.html"
+    },
+    {
+      "text": "国家能源局",
+      "url": "http://www.nea.gov.cn/"
+    },
+    {
+      "text": "国家国防科技工业局",
+      "url": "http://www.sastind.gov.cn/"
+    },
+    {
+      "text": "国家烟草专卖局",
+      "url": "http://www.tobacco.gov.cn/html/"
+    },
+    {
+      "text": "国家移民管理局",
+      "url": "http://www.mps.gov.cn/n2254996/"
+    },
+    {
+      "text": "国家林业和草原局",
+      "url": "http://www.forestry.gov.cn/"
+    },
+    {
+      "text": "国家铁路局",
+      "url": "http://www.nra.gov.cn/"
+    },
+    {
+      "text": "中国民用航空局",
+      "url": "http://www.caac.gov.cn/index.html"
+    },
+    {
+      "text": "国家邮政局",
+      "url": "http://www.spb.gov.cn/"
+    },
+    {
+      "text": "国家文物局",
+      "url": "http://www.ncha.gov.cn/"
+    },
+    {
+      "text": "国家中医药管理局",
+      "url": "http://www.satcm.gov.cn/"
+    },
+    {
+      "text": "国家煤矿安全监察局",
+      "url": "http://www.chinacoal-safety.gov.cn/"
+    },
+    {
+      "text": "国家外汇管理局",
+      "url": "http://www.safe.gov.cn/"
+    },
+    {
+      "text": "国家药品监督管理局",
+      "url": "http://www.nmpa.gov.cn/"
+    },
+    {
+      "text": "国家知识产权局",
+      "url": "http://www.sipo.gov.cn/"
+    },
+    {
+      "text": "国家公园管理局",
+      "url": "http://www.forestry.gov.cn/"
+    },
+    {
+      "text": "国家公务员局",
+      "url": "http://www.scs.gov.cn/"
+    },
+    {
+      "text": "国家档案局",
+      "url": "http://www.saac.gov.cn/"
+    },
+    {
+      "text": "国家密码管理局",
+      "url": "http://www.oscca.gov.cn/"
+    },
+    {
+      "text": "北京",
+      "url": "http://www.beijing.gov.cn/"
+    },
+    {
+      "text": "天津",
+      "url": "http://www.tj.gov.cn/"
+    },
+    {
+      "text": "河北",
+      "url": "http://www.hebei.gov.cn/"
+    },
+    {
+      "text": "山西",
+      "url": "http://www.shanxi.gov.cn/"
+    },
+    {
+      "text": "内蒙古",
+      "url": "http://www.nmg.gov.cn/"
+    },
+    {
+      "text": "辽宁",
+      "url": "http://www.ln.gov.cn/"
+    },
+    {
+      "text": "吉林",
+      "url": "http://www.jl.gov.cn/"
+    },
+    {
+      "text": "黑龙江",
+      "url": "http://www.hlj.gov.cn/"
+    },
+    {
+      "text": "上海",
+      "url": "http://www.shanghai.gov.cn/"
+    },
+    {
+      "text": "江苏",
+      "url": "http://www.jiangsu.gov.cn/"
+    },
+    {
+      "text": "浙江",
+      "url": "http://www.zj.gov.cn/"
+    },
+    {
+      "text": "安徽",
+      "url": "http://www.ah.gov.cn/"
+    },
+    {
+      "text": "福建",
+      "url": "http://www.fujian.gov.cn/"
+    },
+    {
+      "text": "江西",
+      "url": "http://www.jiangxi.gov.cn/"
+    },
+    {
+      "text": "山东",
+      "url": "http://www.shandong.gov.cn/"
+    },
+    {
+      "text": "河南",
+      "url": "http://www.henan.gov.cn/"
+    },
+    {
+      "text": "湖北",
+      "url": "http://www.hubei.gov.cn/"
+    },
+    {
+      "text": "湖南",
+      "url": "http://www.hunan.gov.cn/"
+    },
+    {
+      "text": "广东",
+      "url": "http://www.gd.gov.cn/"
+    },
+    {
+      "text": "广西",
+      "url": "http://www.gxzf.gov.cn/"
+    },
+    {
+      "text": "海南",
+      "url": "http://www.hainan.gov.cn/"
+    },
+    {
+      "text": "重庆",
+      "url": "http://www.cq.gov.cn/"
+    },
+    {
+      "text": "四川",
+      "url": "http://www.sc.gov.cn/"
+    },
+    {
+      "text": "贵州",
+      "url": "http://www.guizhou.gov.cn/"
+    },
+    {
+      "text": "云南",
+      "url": "http://www.yn.gov.cn/"
+    },
+    {
+      "text": "西藏",
+      "url": "http://www.xizang.gov.cn/"
+    },
+    {
+      "text": "陕西",
+      "url": "http://www.shaanxi.gov.cn/"
+    },
+    {
+      "text": "甘肃",
+      "url": "http://www.gansu.gov.cn/"
+    },
+    {
+      "text": "青海",
+      "url": "http://www.qh.gov.cn/"
+    },
+    {
+      "text": "宁夏",
+      "url": "http://www.nx.gov.cn/"
+    },
+    {
+      "text": "新疆",
+      "url": "http://www.xinjiang.gov.cn/"
+    },
+    {
+      "text": "香港",
+      "url": "http://www.gov.hk/"
+    },
+    {
+      "text": "澳门",
+      "url": "http://www.gov.mo/"
+    },
+    {
+      "text": "新疆生产建设兵团",
+      "url": "http://www.xjbt.gov.cn/"
+    },
+    {
+      "text": "青岛市",
+      "url": "http://www.qingdao.gov.cn/n172/"
+    },
+    {
+      "text": "淄博市",
+      "url": "http://www.zibo.gov.cn/"
+    },
+    {
+      "text": "枣庄市",
+      "url": "http://www.zaozhuang.gov.cn/"
+    },
+    {
+      "text": "东营市",
+      "url": "http://www.dongying.gov.cn/"
+    },
+    {
+      "text": "烟台市",
+      "url": "http://www.yantai.gov.cn/"
+    },
+    {
+      "text": "潍坊市",
+      "url": "http://www.weifang.gov.cn/"
+    },
+    {
+      "text": "济宁市",
+      "url": "http://www.jining.gov.cn/"
+    },
+    {
+      "text": "泰安市",
+      "url": "http://www.taian.gov.cn/"
+    },
+    {
+      "text": "威海市",
+      "url": "http://www.weihai.gov.cn/"
+    },
+    {
+      "text": "日照市",
+      "url": "http://www.rizhao.gov.cn/"
+    },
+    {
+      "text": "滨州市",
+      "url": "http://www.binzhou.gov.cn/"
+    },
+    {
+      "text": "德州市",
+      "url": "http://www.dezhou.gov.cn/"
+    },
+    {
+      "text": "聊城市",
+      "url": "http://www.liaocheng.gov.cn/"
+    },
+    {
+      "text": "临沂市",
+      "url": "http://www.linyi.gov.cn/"
+    },
+    {
+      "text": "菏泽市",
+      "url": "http://www.heze.gov.cn/"
+    },
+    {
+      "text": "历下区",
+      "url": "http://www.lixia.gov.cn/"
+    },
+    {
+      "text": "市中区",
+      "url": "http://www.shizhong.gov.cn/"
+    },
+    {
+      "text": "槐荫区",
+      "url": "http://www.huaiyin.gov.cn/"
+    },
+    {
+      "text": "天桥区",
+      "url": "http://www.tianqiao.gov.cn/"
+    },
+    {
+      "text": "历城区",
+      "url": "http://www.licheng.gov.cn/"
+    },
+    {
+      "text": "长清区",
+      "url": "http://www.jncq.gov.cn/"
+    },
+    {
+      "text": "章丘区",
+      "url": "http://www.jnzq.gov.cn/"
+    },
+    {
+      "text": "济阳区",
+      "url": "http://www.jiyang.gov.cn/"
+    },
+    {
+      "text": "莱芜区",
+      "url": "http://www.laiwu.gov.cn/"
+    },
+    {
+      "text": "钢城区",
+      "url": "http://www.gangcheng.gov.cn/"
+    },
+    {
+      "text": "平阴县",
+      "url": "http://www.pingyin.gov.cn/"
+    },
+    {
+      "text": "商河县",
+      "url": "http://www.shanghe.gov.cn/"
+    },
+    {
+      "text": "高新区",
+      "url": "http://innovation.jinan.gov.cn/"
+    },
+    {
+      "text": "自贸区",
+      "url": "http://ftz.jinan.gov.cn/"
+    },
+    {
+      "text": "南山区",
+      "url": "http://jnns.jinan.gov.cn/"
+    },
+    {
+      "text": "新旧动能起步区",
+      "url": "http://jnxxq.jinan.gov.cn/"
+    },
+    {
+      "text": "济南莱芜高新区",
+      "url": "http://lwgxq.jinan.gov.cn/"
+    },
+    {
+      "text": "市发展改革委",
+      "url": "http://jndpc.jinan.gov.cn/"
+    },
+    {
+      "text": "市教育局",
+      "url": "http://jnedu.jinan.gov.cn/"
+    },
+    {
+      "text": "市科技局",
+      "url": "http://jnsti.jinan.gov.cn/"
+    },
+    {
+      "text": "市工业和信息化局",
+      "url": "http://jnjxw.jinan.gov.cn/"
+    },
+    {
+      "text": "市公安局",
+      "url": "http://jnga.jinan.gov.cn/"
+    },
+    {
+      "text": "市民政局",
+      "url": "http://jnmz.jinan.gov.cn/"
+    },
+    {
+      "text": "市司法局",
+      "url": "http://jnssfj.jinan.gov.cn/"
+    },
+    {
+      "text": "市财政局",
+      "url": "http://jncz.jinan.gov.cn/"
+    },
+    {
+      "text": "市人力资源社会保障局",
+      "url": "http://jnhrss.jinan.gov.cn/"
+    },
+    {
+      "text": "市自然资源和规划局",
+      "url": "http://nrp.jinan.gov.cn/"
+    },
+    {
+      "text": "市生态环境局",
+      "url": "http://jnepb.jinan.gov.cn/"
+    },
+    {
+      "text": "市住房城乡建设局",
+      "url": "http://jncc.jinan.gov.cn/"
+    },
+    {
+      "text": "市城管局",
+      "url": "http://jnzf.jinan.gov.cn/"
+    },
+    {
+      "text": "市交通运输局",
+      "url": "http://jnjtj.jinan.gov.cn/"
+    },
+    {
+      "text": "市水务局",
+      "url": "http://jnwater.jinan.gov.cn/"
+    },
+    {
+      "text": "市农业农村局",
+      "url": "http://jnny.jinan.gov.cn/"
+    },
+    {
+      "text": "市园林和林业绿化局",
+      "url": "http://jnly.jinan.gov.cn/"
+    },
+    {
+      "text": "市商务局",
+      "url": "http://jnbusiness.jinan.gov.cn/"
+    },
+    {
+      "text": "市文化和旅游局",
+      "url": "http://jnwl.jinan.gov.cn/index.html"
+    },
+    {
+      "text": "市卫生健康委",
+      "url": "http://jnmhc.jinan.gov.cn/"
+    },
+    {
+      "text": "市退役军人事务局",
+      "url": "http://bva.jinan.gov.cn/index.html"
+    },
+    {
+      "text": "市应急局",
+      "url": "http://jnsafety.jinan.gov.cn/"
+    },
+    {
+      "text": "市审计局",
+      "url": "http://jinanaudit.jinan.gov.cn/"
+    },
+    {
+      "text": "市国资委",
+      "url": "http://jngzw.jinan.gov.cn/"
+    },
+    {
+      "text": "市市场监管局",
+      "url": "http://amr.jinan.gov.cn/"
+    },
+    {
+      "text": "市体育局",
+      "url": "http://jnstyj.jinan.gov.cn/"
+    },
+    {
+      "text": "市统计局",
+      "url": "http://jntj.jinan.gov.cn/"
+    },
+    {
+      "text": "市医保局",
+      "url": "http://ybj.jinan.gov.cn/"
+    },
+    {
+      "text": "市国动办",
+      "url": "http://jnrf.jinan.gov.cn/"
+    },
+    {
+      "text": "市地方金融监管局",
+      "url": "http://jnjr.jinan.gov.cn/"
+    },
+    {
+      "text": "市投资促进局",
+      "url": "http://jntzcjj.jinan.gov.cn/"
+    },
+    {
+      "text": "市行政审批服务局",
+      "url": "http://jnzwfw.jinan.gov.cn/"
+    },
+    {
+      "text": "市信访局",
+      "url": "http://jnxf.jinan.gov.cn/"
+    },
+    {
+      "text": "市大数据局",
+      "url": "http://jndsj.jinan.gov.cn/"
+    },
+    {
+      "text": "市口岸物流办",
+      "url": "http://kawlb.jinan.gov.cn/"
+    },
+    {
+      "text": "市民营经济局",
+      "url": "http://mf.jinan.gov.cn/"
+    },
+    {
+      "text": "市机关事务服务中心",
+      "url": "http://jgswfwzx.jinan.gov.cn/"
+    },
+    {
+      "text": "市地震监测中心",
+      "url": "http://jneq.jinan.gov.cn/"
+    },
+    {
+      "text": "市政府资金结算中心",
+      "url": "http://jnjs.jinan.gov.cn/"
+    },
+    {
+      "text": "住房公积金中心",
+      "url": "http://gjj.jinan.gov.cn/"
+    },
+    {
+      "text": "市仲裁办",
+      "url": "http://zcb.jinan.gov.cn/"
+    },
+    {
+      "text": "市税务局",
+      "url": "http://shandong.chinatax.gov.cn/jinan"
+    },
+    {
+      "text": "市气象局",
+      "url": "http://sd.cma.gov.cn/"
+    },
+    {
+      "text": "济南公共资源交易中心",
+      "url": "http://jnggzy.jinan.gov.cn/"
+    },
+    {
+      "text": "济南市委",
+      "url": "http://www.jnsw.gov.cn/"
+    },
+    {
+      "text": "济南市人大",
+      "url": "http://www.jnrd.gov.cn/"
+    },
+    {
+      "text": "济南市政协",
+      "url": "http://www.jnzx.gov.cn/"
+    },
+    {
+      "text": "济南市纪委",
+      "url": "http://www.jnlz.gov.cn/"
+    },
+    {
+      "text": "济南市中级人民法院",
+      "url": "http://jinanzy.sdcourt.gov.cn/"
+    },
+    {
+      "text": "济南市人民检察院",
+      "url": "http://www.jnjcy.gov.cn/"
+    },
+    {
+      "text": "济南市机构编制网",
+      "url": "http://www.jnbb.gov.cn/"
+    },
+    {
+      "text": "济南市档案馆",
+      "url": "http://www.jndaxxw.gov.cn/"
+    },
+    {
+      "text": "济南市史志办",
+      "url": "http://jnsq.jinan.gov.cn/"
+    },
+    {
+      "text": "济南网络广播电视台",
+      "url": "http://jn.cutv.com/"
+    },
+    {
+      "text": "济南市贸促会",
+      "url": "http://www.ccpitjinan.org/"
+    },
+    {
+      "text": "济南红十字会",
+      "url": "http://www.jnredcross.org.cn/"
+    },
+    {
+      "text": "济南市计划生育协会",
+      "url": "http://jnfpa.jinan.gov.cn/"
+    },
+    {
+      "text": "信用济南",
+      "url": "http://jncredit.jinan.gov.cn/"
+    },
+    {
+      "text": "舜网",
+      "url": "http://www.e23.cn/"
+    },
+    {
+      "text": "济南人才网",
+      "url": "http://rc.jinan.gov.cn/"
+    },
+    {
+      "text": "济南公交网",
+      "url": "http://www.jnbus.com.cn/"
+    },
+    {
+      "text": "济南旅游网",
+      "url": "http://jnwl.jinan.gov.cn/"
+    },
+    {
+      "text": "",
+      "url": "https://bszs.conac.cn/sitename?method=show&id=08313DE5361E449BE053012819AC9285"
+    },
+    {
+      "text": "",
+      "url": "https://zwfw.jinan.gov.cn/jpaas-jiq-web-jnywtb/front/item/bmft_index?areaCode=370102000000&deptCode=370102008"
+    },
+    {
+      "text": "鲁ICP备05041920号-1",
+      "url": "https://beian.miit.gov.cn/"
+    },
+    {
+      "text": "鲁公网安备 37010202001191号",
+      "url": "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37010202001191"
+    },
+    {
+      "text": "联系我们",
+      "url": "https://www.jinan.gov.cn/col/col1730/index.html"
+    },
+    {
+      "text": "法律声明",
+      "url": "https://www.jinan.gov.cn/col/col1731/index.html"
+    },
+    {
+      "text": "网站地图",
+      "url": "https://www.jinan.gov.cn/col/col1732/index.html"
+    },
+    {
+      "text": "历年风采",
+      "url": "https://www.jinan.gov.cn/col/col1735/index.html"
+    }
+  ],
+  "tables": [
+    [
+      [
+        ""
+      ]
+    ],
+    [
+      [
+        ""
+      ]
+    ]
+  ],
+  "region_code": "370102",
+  "captured_at": "2026-10-29T09:12:07.809428+00:00",
+  "method": "Agent Browser rendered public DOM; no HTML or headers saved"
+}

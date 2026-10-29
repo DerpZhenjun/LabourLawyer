@@ -1,0 +1,17 @@
+{
+  "verified_at": "2026-10-29T09:26:03.909261+00:00",
+  "own_districts_checked": 2,
+  "own_formal_guides_acquired": 0,
+  "own_templates_acquired": 0,
+  "public_original_attachments_acquired": 0,
+  "generatable_candidates_added": 0,
+  "published_guides_added": 0,
+  "public_capture_pairs": 18,
+  "script_ast_parse": "passed",
+  "evidence_json_parse": "passed",
+  "region_identity_duplicate_check": "Both national directory entries exist; neither code found in current published guides or regional_candidates at collection check. No shared registry changed.",
+  "document_adapter_tests": "not_applicable_no_adapter_created",
+  "document_render": "not_applicable_no_own_template",
+  "publication_gate": "not_eligible_source_discovery_incomplete",
+  "public_scope": "Exact explicit whitelist only; local WAF screenshot excluded; no raw HTML, HAR, cookies, headers, browser session export or personal matter files collected."
+}

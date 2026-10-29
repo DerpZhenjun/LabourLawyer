@@ -1,0 +1,248 @@
+{
+  "schema": "regional-discovery-status-v1",
+  "province": "山东省",
+  "city": "济南市",
+  "district": "历下区",
+  "region_code": "370102",
+  "directory_id": "national:370102",
+  "directory_parent_code": "370100",
+  "directory_source_url": "https://gjzwfw.www.gov.cn/fwmh/ucGovRegion/findUcGovRegion.do",
+  "directory_collected_at": "2026-10-23T13:47:43.219264+00:00",
+  "directory_identity_note": "目录身份仅用于地区选择，不证明劳动仲裁指南覆盖；不推断街道、功能区调整或案件管辖。",
+  "checked_at": "2026-10-29T09:26:03.909261+00:00",
+  "service_target": "劳动人事争议仲裁申请",
+  "verification_status": "source_discovery_incomplete",
+  "guide_status": "not_found_in_checked_sources",
+  "template_status": "not_found_in_checked_sources",
+  "official_non_provision_asserted": false,
+  "published": false,
+  "can_generate": false,
+  "source_id": null,
+  "adapter_key": null,
+  "guide": null,
+  "materials": null,
+  "copy_counts": null,
+  "application_methods": null,
+  "handling_agency_from_own_formal_guide": null,
+  "original_attachments_acquired": [],
+  "own_government_search_keywords": [
+    "劳动仲裁",
+    "仲裁申请",
+    "劳动人事争议",
+    "仲裁申请书"
+  ],
+  "own_government_search_scope": "已查看留存的结果页；历下区宽关键词多页结果未逐页穷尽。命中新闻、工作/预算报告不视为申请指南。",
+  "directory_query_result": "仲裁显示0；结果不足以证明事项不存在",
+  "directory_query_reliability": "inconclusive_due_to_positive_control_failure_on_same_jinan_platform",
+  "shared_control_evidence": [
+    "370103/all-matters-control-specific-name-zero.json",
+    "370103/all-matters-control-empty-zero.json",
+    "370103/all-matters-initial-restored.json"
+  ],
+  "bureau_portal_contact_not_arbitration_contact": true,
+  "municipal_contact_supplement": {
+    "classification": "municipal_official_contact_supplement_only",
+    "source_url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_c9b40ad6e24d42beabe461ccdb8105a0.html",
+    "source_title": "问：济南市各县区劳动仲裁的联系电话和地址？",
+    "published_at": "2026-08-12 09:49",
+    "publisher": "市人力资源社会保障局",
+    "captured_at": "2026-10-29T09:17:48.487850+00:00",
+    "evidence_file": "370102/municipal-contact-supplement.json",
+    "phones": [
+      "0531-86993090",
+      "0531-86920471"
+    ],
+    "address": "历下区坤顺路1819号中国人力资源产业园2楼",
+    "hours": "8:30–11:30；13:00–17:00",
+    "weekends_excluded": true,
+    "bound_to_local_formal_guide": false,
+    "note": "这是市级官方逐区联系方式，不是本区正式申请指南，不用于材料、份数、模板、办理方式或管辖推断。"
+  },
+  "province_access_status": "public_personal_service_entry_blocked_by_waf_stopped_without_bypass",
+  "captures": [
+    {
+      "evidence_file": "reports/nationwide-verification-20261029-b/shandong/370102/all-personal-arbitration-search.json",
+      "screenshot": "reports/nationwide-verification-20261029-b/shandong/370102/all-personal-arbitration-search.png",
+      "url": "https://zwfw.jinan.gov.cn/jpaas-jiq-web-jnywtb/front/item/gr_index?areaCode=370102000000",
+      "captured_at": "2026-10-29T09:12:36.843769+00:00",
+      "title": "个人服务",
+      "queries": [
+        {
+          "placeholder": "",
+          "value": ""
+        },
+        {
+          "placeholder": "输入关键字查找服务事项",
+          "value": "仲裁"
+        }
+      ]
+    },
+    {
+      "evidence_file": "reports/nationwide-verification-20261029-b/shandong/370102/department-arbitration-search.json",
+      "screenshot": "reports/nationwide-verification-20261029-b/shandong/370102/department-arbitration-search.png",
+      "url": "https://zwfw.jinan.gov.cn/jpaas-jiq-web-jnywtb/front/item/bmft_index?areaCode=370102000000&deptCode=370102008",
+      "captured_at": "2026-10-29T09:12:07.809428+00:00",
+      "title": "部门分厅",
+      "queries": [
+        {
+          "placeholder": "",
+          "value": ""
+        },
+        {
+          "placeholder": "输入关键字查找服务事项",
+          "value": "仲裁"
+        }
+      ]
+    },
+    {
+      "evidence_file": "reports/nationwide-verification-20261029-b/shandong/370102/historical-news-no-annex.json",
+      "screenshot": "reports/nationwide-verification-20261029-b/shandong/370102/historical-news-no-annex.png",
+      "url": "http://www.lixia.gov.cn/col36815/art/2011/art_36815_3231225.html",
+      "captured_at": "2026-10-29T09:18:53.388217+00:00",
+      "title": "区人社局全力打造“阳光仲裁”工程",
+      "queries": [
+        {
+          "placeholder": "",
+          "value": "请输入关键字"
+        }
+      ]
+    },
+    {
+      "evidence_file": "reports/nationwide-verification-20261029-b/shandong/370102/municipal-contact-supplement.json",
+      "screenshot": "reports/nationwide-verification-20261029-b/shandong/370102/municipal-contact-supplement.png",
+      "url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_c9b40ad6e24d42beabe461ccdb8105a0.html",
+      "captured_at": "2026-10-29T09:17:48.487850+00:00",
+      "title": "问：济南市各县区劳动仲裁的联系电话和地址？",
+      "queries": [
+        {
+          "placeholder": "",
+          "value": "请输入您想要搜索的内容"
+        }
+      ]
+    },
+    {
+      "evidence_file": "reports/nationwide-verification-20261029-b/shandong/370102/official-entry.json",
+      "screenshot": "reports/nationwide-verification-20261029-b/shandong/370102/official-entry.png",
+      "url": "http://www.lixia.gov.cn/col/col38543/index.html",
+      "captured_at": "2026-10-29T09:18:15.549851+00:00",
+      "title": "济南市历下区人民政府 首页",
+      "queries": [
+        {
+          "placeholder": "",
+          "value": "劳动仲裁"
+        }
+      ]
+    },
+    {
+      "evidence_file": "reports/nationwide-verification-20261029-b/shandong/370102/official-search-application-form.json",
+      "screenshot": "reports/nationwide-verification-20261029-b/shandong/370102/official-search-application-form.png",
+      "url": "http://www.lixia.gov.cn/api-gateway/jpaas-jsearch-web-server/search?serviceId=BOjWj6V4PL0P6tz00kjyI&q=%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6&submit=",
+      "captured_at": "2026-10-29T09:18:32.026065+00:00",
+      "title": "检索首页",
+      "queries": [
+        {
+          "placeholder": "",
+          "value": "仲裁申请书"
+        },
+        {
+          "placeholder": "开始日期",
+          "value": ""
+        },
+        {
+          "placeholder": "结束日期",
+          "value": ""
+        },
+        {
+          "placeholder": "",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "evidence_file": "reports/nationwide-verification-20261029-b/shandong/370102/official-search-arbitration-application.json",
+      "screenshot": "reports/nationwide-verification-20261029-b/shandong/370102/official-search-arbitration-application.png",
+      "url": "http://www.lixia.gov.cn/api-gateway/jpaas-jsearch-web-server/search?serviceId=BOjWj6V4PL0P6tz00kjyI&websiteid=&cateid=WoPAlXbEHM3uivhm07sbL&q=%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7",
+      "captured_at": "2026-10-29T09:13:34.204944+00:00",
+      "title": "检索首页",
+      "queries": [
+        {
+          "placeholder": "",
+          "value": "仲裁申请"
+        },
+        {
+          "placeholder": "开始日期",
+          "value": ""
+        },
+        {
+          "placeholder": "结束日期",
+          "value": ""
+        },
+        {
+          "placeholder": "",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "evidence_file": "reports/nationwide-verification-20261029-b/shandong/370102/official-search-labor-arbitration.json",
+      "screenshot": "reports/nationwide-verification-20261029-b/shandong/370102/official-search-labor-arbitration.png",
+      "url": "http://www.lixia.gov.cn/api-gateway/jpaas-jsearch-web-server/search?serviceId=BOjWj6V4PL0P6tz00kjyI&q=%E5%8A%B3%E5%8A%A8%E4%BB%B2%E8%A3%81&submit=",
+      "captured_at": "2026-10-29T09:13:14.074255+00:00",
+      "title": "检索首页",
+      "queries": [
+        {
+          "placeholder": "",
+          "value": "劳动仲裁"
+        },
+        {
+          "placeholder": "开始日期",
+          "value": ""
+        },
+        {
+          "placeholder": "结束日期",
+          "value": ""
+        },
+        {
+          "placeholder": "",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "evidence_file": "reports/nationwide-verification-20261029-b/shandong/370102/official-search-labor-personnel-disputes.json",
+      "screenshot": "reports/nationwide-verification-20261029-b/shandong/370102/official-search-labor-personnel-disputes.png",
+      "url": "http://www.lixia.gov.cn/api-gateway/jpaas-jsearch-web-server/search?serviceId=BOjWj6V4PL0P6tz00kjyI&websiteid=&cateid=WoPAlXbEHM3uivhm07sbL&q=%E5%8A%B3%E5%8A%A8%E4%BA%BA%E4%BA%8B%E4%BA%89%E8%AE%AE",
+      "captured_at": "2026-10-29T09:14:00.387162+00:00",
+      "title": "检索首页",
+      "queries": [
+        {
+          "placeholder": "",
+          "value": "劳动人事争议"
+        },
+        {
+          "placeholder": "开始日期",
+          "value": ""
+        },
+        {
+          "placeholder": "结束日期",
+          "value": ""
+        },
+        {
+          "placeholder": "",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "precise_source_constraints": [
+    "只能在取得本区正式服务指南并核实机构与适用范围后生成guide.json。",
+    "不采用市、省或邻区模板替代本区模板。",
+    "不得将目录检索0、搜索未找到或历史新闻提到表式，写成官方未提供模板。",
+    "市级补充联系方式单独标注来源日期，不把部门门户局机关地址当仲裁窗口地址。",
+    "身份认证、验证码、WAF均止步；不得改UA、改协议或会话去绕过403。"
+  ],
+  "next_actions": [
+    "在正常公开入口恢复可靠查询后，继续本区自身事项指南及所有栏目、材料、附件核验。",
+    "若找到原件，记录原名、所属指南、下载URL、UTC时间、SHA256、空白/示例分类，再进行自身严格适配与逐页QA。"
+  ]
+}

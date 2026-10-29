@@ -1,0 +1,32 @@
+{
+  "reviewed_at": "2026-10-29T09:26:03.909261+00:00",
+  "method": "Opened all 18 retained public screenshots with view_image and compared headings, query state and body with DOM captures. Tall result screenshots resized by viewer; full public DOM text retained. No document template acquired, so document rendering is not applicable.",
+  "screenshots": [
+    "370102/all-personal-arbitration-search.png",
+    "370102/department-arbitration-search.png",
+    "370102/historical-news-no-annex.png",
+    "370102/municipal-contact-supplement.png",
+    "370102/official-entry.png",
+    "370102/official-search-application-form.png",
+    "370102/official-search-arbitration-application.png",
+    "370102/official-search-labor-arbitration.png",
+    "370102/official-search-labor-personnel-disputes.png",
+    "370103/all-matters-arbitration-search.png",
+    "370103/all-matters-control-empty-zero.png",
+    "370103/all-matters-control-specific-name-zero.png",
+    "370103/all-matters-initial-restored.png",
+    "370103/department-arbitration-search.png",
+    "370103/official-entry.png",
+    "370103/official-search-apply-arbitration.png",
+    "370103/official-search-arbitration-application.png",
+    "370103/official-search-labor-arbitration.png"
+  ],
+  "count": 18,
+  "findings": [
+    "两区自身部门与地区标识可辨认。",
+    "历下区2011新闻是历史新闻，提到格式但没有取得对应附件。",
+    "市中区初始1277项、精确名称查询0、清空undefined、刷新恢复1277均可见。",
+    "市级FAQ两区联系方式和发布日期可见；不构成本区指南。"
+  ],
+  "document_generation_visual_qa": "not_applicable_no_own_template"
+}
