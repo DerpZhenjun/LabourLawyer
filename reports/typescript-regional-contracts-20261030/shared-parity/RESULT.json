@@ -8,8 +8,8 @@
   "local_shape_vectors": 202,
   "runtime_checks": 16910,
   "fixtures_sha256": "5a89409a55e0f09f91bbc880c204cfde7e2d20d3253978d2ff83beda275239c9",
-  "shared_source_sha256": "3fc3b52e1396c862538496b6ab9768ef14abbed9b501ef524016e92a832606bf",
-  "mini_generated_sha256": "ad6ca35d06aff96285a8b2e516886231ab297d04a78f621b81d977433b126435",
+  "shared_source_sha256": "fa13aa9250e1c3892c54d6db49f56d491f2f66973f87de329d478fe8f88883ad",
+  "mini_generated_sha256": "ffcd1acd2045296af7f0571464c010ec70c39ef454456a253b13bb3d3b6220f8",
   "script_sha256": "9850934457f56aa0a81b0bc681ff17c823e76bd632a5a1eef5c103053e251ece",
   "normalization": "Shared request builders retain raw values; Python may normalize declared integer copy fields. Validity is compared directly; no inferred official requirements.",
   "coverage": [

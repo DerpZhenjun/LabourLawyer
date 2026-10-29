@@ -1,5 +1,5 @@
 // Generated from packages/regional-contracts/src/index.ts. Do not edit.
-// source-sha256: 3fc3b52e1396c862538496b6ab9768ef14abbed9b501ef524016e92a832606bf
+// source-sha256: fa13aa9250e1c3892c54d6db49f56d491f2f66973f87de329d478fe8f88883ad
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.fieldErrors = exports.isPlainRecord = void 0;
