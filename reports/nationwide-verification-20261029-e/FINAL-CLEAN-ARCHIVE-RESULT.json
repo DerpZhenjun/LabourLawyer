@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "commit": "6dcacec8523a3608fb052ff683bcb206f4a8e0fd",
+  "method": "git archive extracted to independent root; modules/own filler loaded from archive only, no private reports/runtime or original source fallback",
+  "archive_sha256": "3f5c645329fcc51bf7d198bf61f4cadc54a45ca1d01d924cca7a80a90f5a042e",
+  "published_guides": 198,
+  "generatable_localities": 181,
+  "missing_attachments": 0,
+  "tests": 70,
+  "seconds": 91.351,
+  "source_checks": [
+    {
+      "script": "reports/nationwide-verification-20261029-e/jiangsu/verify_source.py",
+      "status": "PASS"
+    },
+    {
+      "script": "reports/nationwide-verification-20261029-e/zhejiang/source_checks.py",
+      "status": "PASS"
+    }
+  ],
+  "models_called": false,
+  "service_started": false,
+  "skipped": 1,
+  "skip_reason": "Windows symbolic-link permission; reported by unittest, not treated as executed"
+}

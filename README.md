@@ -61,6 +61,8 @@ Android APK为USB联调包；Windows提供安装版和便携版。安装包包�
 
 ![主站真实地区覆盖矩阵：198份指南、181地生成、28地候选](reports/nationwide-verification-20261029-e/admin-regions-1440.png)
 
+本轮全量634项后端测试通过（2项权限跳过）；独立Git归档再次初始化198/181，附件缺失0，70项归档回归通过（1项权限跳过）。[完整交付与下一批](reports/nationwide-verification-20261029-e/FINAL-REPORT.md)。
+
 运行后在 `/admin/regions` 查看实时矩阵。仓库中可核对 [逐省实际进度](docs/regions-status.md)、[公开数据版本](data/public-regions/manifest.json)、[候选登记](config/regional_candidates.json) 与 [地区接入说明](docs/regional-release.md)。
 
 ## AI 法律顾问与法律数字人

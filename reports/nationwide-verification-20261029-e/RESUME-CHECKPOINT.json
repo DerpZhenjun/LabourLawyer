@@ -1,5 +1,5 @@
 {
-  "phase": "E4_own_sources_registered_not_adapted",
+  "phase": "E4_own_sources_registered_next_adaptation_not_started",
   "main_guides": 198,
   "main_generatable_localities": 181,
   "candidate_queue": 28,
@@ -17,5 +17,15 @@
   "outbox_pending": 368,
   "openclaw_acknowledged": 0,
   "windows_model_started": false,
-  "night_automation_status": "PAUSED"
+  "night_automation_status": "PAUSED",
+  "final_clean_archive": {
+    "status": "PASS",
+    "commit": "6dcacec8523a3608fb052ff683bcb206f4a8e0fd",
+    "tests": 70,
+    "skipped": 1,
+    "missing_attachments": 0,
+    "published_guides": 198,
+    "generatable_localities": 181,
+    "report": "reports/nationwide-verification-20261029-e/FINAL-CLEAN-ARCHIVE-RESULT.json"
+  }
 }
