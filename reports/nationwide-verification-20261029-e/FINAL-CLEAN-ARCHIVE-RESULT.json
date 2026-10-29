@@ -1,25 +1,30 @@
 {
   "status": "PASS",
-  "commit": "6dcacec8523a3608fb052ff683bcb206f4a8e0fd",
-  "method": "git archive extracted to independent root; modules/own filler loaded from archive only, no private reports/runtime or original source fallback",
-  "archive_sha256": "3f5c645329fcc51bf7d198bf61f4cadc54a45ca1d01d924cca7a80a90f5a042e",
-  "published_guides": 198,
-  "generatable_localities": 181,
+  "commit": "fe7afee1",
+  "method": "Independent Git archive extracted to new root; cold public bootstrap202/185, all45 selected regressions run with cwd and PYTHONPATH in that root; no private source fallback",
+  "archive_sha256": "81fd1f94ffcd071ee286cc797964002f8e37faa6b9c6a5fc0d4a5c98a277e1b8",
+  "published_guides": 202,
+  "generatable_localities": 185,
   "missing_attachments": 0,
-  "tests": 70,
-  "seconds": 91.351,
-  "source_checks": [
-    {
-      "script": "reports/nationwide-verification-20261029-e/jiangsu/verify_source.py",
-      "status": "PASS"
-    },
-    {
-      "script": "reports/nationwide-verification-20261029-e/zhejiang/source_checks.py",
-      "status": "PASS"
-    }
-  ],
+  "tests": 45,
+  "seconds": 57.375,
+  "skipped": 1,
+  "skip_reason": "Windows symbolic-link permissions",
   "models_called": false,
   "service_started": false,
-  "skipped": 1,
-  "skip_reason": "Windows symbolic-link permission; reported by unittest, not treated as executed"
+  "test_runtime_setup": "Created only an empty .runtime directory for isolated test scratch space. No private runtime, reports or database copied.",
+  "prior_attempts": [
+    {
+      "status": "FAIL",
+      "reason": "Initial staged public source omitted Zhejiang E provider/tests, detected by import before bootstrap. Exact manifest code pins checked and both files committed before new archive."
+    },
+    {
+      "status": "FAIL",
+      "reason": "First independent selected-test run lacked empty .runtime scratch directory. Setup corrected; no product-source or data fallback."
+    },
+    {
+      "status": "EXCLUDED",
+      "reason": "A retry invoked unittest from original checkout and is excluded from independent acceptance. Final45 run explicitly used archive cwd."
+    }
+  ]
 }

@@ -2,8 +2,8 @@
   "directory_is_not_guide_coverage": true,
   "province_count": 31,
   "targets_total": 3590,
-  "published_guides": 198,
-  "generatable_localities": 181,
+  "published_guides": 202,
+  "generatable_localities": 185,
   "unpublished_candidates": 28,
   "provinces": [
     {
@@ -109,22 +109,22 @@
       "slug": "jiangsu",
       "name": "江苏省",
       "targets_total": 134,
-      "published_guides": 8,
-      "generatable_localities": 8,
+      "published_guides": 10,
+      "generatable_localities": 10,
       "guide_only": 0,
       "candidates": 10,
-      "uncollected": 116,
+      "uncollected": 114,
       "completion_status": "incomplete"
     },
     {
       "slug": "zhejiang",
       "name": "浙江省",
       "targets_total": 120,
-      "published_guides": 4,
-      "generatable_localities": 4,
+      "published_guides": 6,
+      "generatable_localities": 6,
       "guide_only": 0,
       "candidates": 6,
-      "uncollected": 110,
+      "uncollected": 108,
       "completion_status": "incomplete"
     },
     {
@@ -347,6 +347,5 @@
       "uncollected": 112,
       "completion_status": "incomplete"
     }
-  ],
-  "captured_at": "2026-10-29T20:33:38.601974+08:00"
+  ]
 }

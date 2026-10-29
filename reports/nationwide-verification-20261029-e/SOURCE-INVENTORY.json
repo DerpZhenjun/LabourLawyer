@@ -1,5 +1,5 @@
 {
-  "phase": "source_only_not_adapted",
+  "phase": "own_sources_adapted_candidate_and_main_verified_published",
   "regions": [
     {
       "province": "jiangsu",
@@ -8,16 +8,17 @@
       "region_code": "320507",
       "source_url": "https://szxc.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=28&iddept_ql_inf=11320507555810103L4002014302002&ql_kind=20&iddept_yw_inf=11320507555810103L400201430200201",
       "source_id": "e87b6309ce5f6b51ba0aa5fc",
-      "published": false,
-      "can_generate": false,
+      "published": true,
+      "can_generate": true,
       "guide_file": "reports/nationwide-verification-20261029-e/jiangsu/xiangcheng/guide.json",
-      "api_qa_status": "NOT_RUN",
-      "document_visual_qa_status": "NOT_RUN",
-      "web_qa_status": "NOT_RUN",
-      "note": "仅核验本区自身官方指南、材料及原件；尚未填写/版式/网页适配，不以同SHA或邻区资料授予生成能力。",
+      "api_qa_status": "PASS",
+      "document_visual_qa_status": "PASS",
+      "web_qa_status": "PASS",
+      "note": "自身官方原件经独立绑定、离线Word、候选及主站原生下载验收；不以相同字节继承地区规则。",
       "material_count": 4,
       "downloaded_blank_count": 4,
-      "official_absence_claim": false
+      "official_absence_claim": false,
+      "main_version": 207
     },
     {
       "province": "jiangsu",
@@ -26,16 +27,17 @@
       "region_code": "320509",
       "source_url": "https://szwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=29&iddept_ql_inf=1132058401420395XF4002014302002&ql_kind=20&iddept_yw_inf=1132058401420395XF400201430200201",
       "source_id": "17dae350af59963fb0c16dba",
-      "published": false,
-      "can_generate": false,
+      "published": true,
+      "can_generate": true,
       "guide_file": "reports/nationwide-verification-20261029-e/jiangsu/wujiang/guide.json",
-      "api_qa_status": "NOT_RUN",
-      "document_visual_qa_status": "NOT_RUN",
-      "web_qa_status": "NOT_RUN",
-      "note": "仅核验本区自身官方指南、材料及原件；尚未填写/版式/网页适配，不以同SHA或邻区资料授予生成能力。",
+      "api_qa_status": "PASS",
+      "document_visual_qa_status": "PASS",
+      "web_qa_status": "PASS",
+      "note": "自身官方原件经独立绑定、离线Word、候选及主站原生下载验收；不以相同字节继承地区规则。",
       "material_count": 4,
       "downloaded_blank_count": 4,
-      "official_absence_claim": false
+      "official_absence_claim": false,
+      "main_version": 208
     },
     {
       "province": "zhejiang",
@@ -44,16 +46,17 @@
       "region_code": "330111",
       "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=31ce6363-7379-40c0-8454-f0715785e193",
       "source_id": "16f67bbbcf7b124948381309",
-      "published": false,
-      "can_generate": false,
+      "published": true,
+      "can_generate": true,
       "guide_file": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/guide.json",
-      "api_qa_status": "NOT_RUN",
-      "document_visual_qa_status": "NOT_RUN",
-      "web_qa_status": "NOT_RUN",
-      "note": "仅核验本区自身官方指南、材料及原件；尚未填写/版式/网页适配，不以同SHA或邻区资料授予生成能力。",
+      "api_qa_status": "PASS",
+      "document_visual_qa_status": "PASS",
+      "web_qa_status": "PASS",
+      "note": "自身官方原件经独立绑定、离线Word、候选及主站原生下载验收；不以相同字节继承地区规则。",
       "material_count": 4,
       "downloaded_blank_count": 2,
-      "official_absence_claim": false
+      "official_absence_claim": false,
+      "main_version": 209
     },
     {
       "province": "zhejiang",
@@ -62,18 +65,19 @@
       "region_code": "330182",
       "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ed48d6e4-e7ee-433d-97aa-b1352d1fb341",
       "source_id": "f6487b8d118bdc3289baad17",
-      "published": false,
-      "can_generate": false,
+      "published": true,
+      "can_generate": true,
       "guide_file": "reports/nationwide-verification-20261029-e/zhejiang/jiande/guide.json",
-      "api_qa_status": "NOT_RUN",
-      "document_visual_qa_status": "NOT_RUN",
-      "web_qa_status": "NOT_RUN",
-      "note": "仅核验本区自身官方指南、材料及原件；尚未填写/版式/网页适配，不以同SHA或邻区资料授予生成能力。",
+      "api_qa_status": "PASS",
+      "document_visual_qa_status": "PASS",
+      "web_qa_status": "PASS",
+      "note": "自身官方原件经独立绑定、离线Word、候选及主站原生下载验收；不以相同字节继承地区规则。",
       "material_count": 5,
       "downloaded_blank_count": 2,
-      "official_absence_claim": false
+      "official_absence_claim": false,
+      "main_version": 210
     }
   ],
-  "generation_granted": false,
+  "generation_granted": true,
   "official_absence_claims": 0
 }

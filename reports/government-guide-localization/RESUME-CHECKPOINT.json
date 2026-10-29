@@ -1,26 +1,29 @@
 {
-  "updated_at": "2026-10-29T20:33:38.601974+08:00",
+  "updated_at": "2026-10-29T15:17:25.277830+00:00",
   "night_automation_status": "PAUSED",
   "night_final_state": "reports/nationwide-localization-20261023-night/FINAL-STATE.json",
   "latest_regional_update": {
     "date": "2026-10-29",
-    "scope": "C4+D4 exact own-source forms published and native browser verified",
-    "main_guides": 198,
-    "main_generatable_localities": 181,
-    "history_rows": 206,
+    "scope": "E4 exact own-source forms published and native-browser verified; F3 own sources plus Tonglu pending",
+    "main_guides": 202,
+    "main_generatable_localities": 185,
+    "history_rows": 210,
     "discovery_jobs": 4294,
     "unpublished_candidates": 28,
-    "publication": "reports/nationwide-verification-20261029-d/PUBLICATION.json",
-    "verification": "634 backend tests PASS (2 Windows permissions skipped), C6+ D7 native downloads, candidate23pages viewed; 375/768/1440 passed",
+    "publication": "reports/nationwide-verification-20261029-e/PUBLICATION.json",
+    "verification": "Final691 backend tests PASS (2 permissions skips); candidate8 native downloads14pages viewed; main8 sameSHA; independent Git source45 tests57.375s PASS(1skip), cold bootstrap202/185 missing0",
     "next_source_only": [
-      "相城区",
-      "吴江区",
-      "富阳区",
-      "建德市"
+      "常熟市",
+      "张家港市",
+      "淳安县"
     ],
-    "next_checkpoint": "reports/nationwide-verification-20261029-e/RESUME-CHECKPOINT.json",
+    "next_pending_own_source": [
+      "桐庐县"
+    ],
+    "next_checkpoint": "reports/nationwide-verification-20261029-f/RESUME-CHECKPOINT.json",
     "model_action": "No Windows Ollama startup or model inference; existing Ubuntu service connection only",
-    "openclaw": "368 PENDING, no ACK; public events only; no receiver call"
+    "openclaw": "377 PENDING, ACK0; public outbox only, no external receiver call",
+    "git": "Explicit user-authorized batches; no unrelated user edits staged"
   },
   "latest_ui_update": {
     "date": "2026-10-09",

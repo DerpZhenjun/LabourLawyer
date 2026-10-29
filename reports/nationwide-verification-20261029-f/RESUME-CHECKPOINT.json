@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-10-29T15:14:45.140002+00:00",
+  "source_guides_captured": 3,
+  "pending_own_source": 1,
+  "candidate_entries_added": 4,
+  "candidate_total": 28,
+  "published_guides": 202,
+  "generatable_localities": 185,
+  "event_ids": [
+    "oct29f-320581-auth",
+    "oct29f-320581-captcha",
+    "oct29f-320582-auth",
+    "oct29f-320582-captcha",
+    "oct29f-330127-auth",
+    "oct29f-330127-captcha",
+    "oct29f-320581-directory-search",
+    "oct29f-330122-scope-mismatch",
+    "oct29f-330127-search-render"
+  ],
+  "outbox_events_inserted": 9,
+  "outbox_total": 377,
+  "pending": 377,
+  "acknowledged": 0,
+  "external_receiver_called": false,
+  "models_called": false,
+  "guide_history_not_modified": true,
+  "original_frozen_proposal_status_preserved": true,
+  "phase": "F_three_own_guides_not_adapted_Tonglu_pending_own_source",
+  "next": "Adapt Changshu, Zhangjiagang, Chunan against their own frozen sources, strict own blanks and Word/native browser gates. Continue resolving Tonglu own scope; never borrow provincial or city guide. E4 already published, never reapply it. Preserve six user edits; Windows model forbidden; night automation PAUSED.",
+  "main_release": "reports/nationwide-verification-20261029-e/PUBLICATION.json"
+}

@@ -248,5 +248,53 @@
     "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
     "published": false,
     "can_generate": false
+  },
+  {
+    "province": "jiangsu",
+    "city": "苏州市",
+    "district": "常熟市",
+    "region_code": "320581",
+    "source_id": "9a24af792c956feb67bd37c6",
+    "source_url": "https://szcs.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=30&iddept_ql_inf=11320581014173412K4002014302002&ql_kind=20&iddept_yw_inf=11320581014173412K400201430200201",
+    "published": false,
+    "can_generate": false,
+    "verification_status": "own_source_captured_not_adapted",
+    "guide_file": "reports/nationwide-verification-20261029-f/jiangsu/changshu/guide.json"
+  },
+  {
+    "province": "jiangsu",
+    "city": "苏州市",
+    "district": "张家港市",
+    "region_code": "320582",
+    "source_id": "95e826085ed0fec9f410cc86",
+    "source_url": "https://szzjg.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=31&iddept_ql_inf=11320582551232000Y4002014302002&ql_kind=20&iddept_yw_inf=11320582551232000Y400201430200201",
+    "published": false,
+    "can_generate": false,
+    "verification_status": "own_source_captured_not_adapted",
+    "guide_file": "reports/nationwide-verification-20261029-f/jiangsu/zhangjiagang/guide.json"
+  },
+  {
+    "province": "zhejiang",
+    "city": "杭州市",
+    "district": "淳安县",
+    "region_code": "330127",
+    "source_id": "3fb683d473fe253a3a117d46",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ee47fff8-558c-4a85-88e9-8a28d2bddbdc",
+    "published": false,
+    "can_generate": false,
+    "verification_status": "own_source_captured_not_adapted",
+    "guide_file": "reports/nationwide-verification-20261029-f/zhejiang/chunan/guide.json"
+  },
+  {
+    "province": "zhejiang",
+    "city": "杭州市",
+    "district": "桐庐县",
+    "region_code": "330122",
+    "source_url": null,
+    "source_id": null,
+    "published": false,
+    "can_generate": false,
+    "verification_status": "pending_own_source",
+    "discovery_file": "reports/nationwide-verification-20261029-f/zhejiang/tonglu/discovery.json"
   }
 ]
