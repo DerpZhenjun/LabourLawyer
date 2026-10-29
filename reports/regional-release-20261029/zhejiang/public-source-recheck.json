@@ -1,0 +1,69 @@
+{
+  "reviewed_at": "2026-10-29T06:18:34.467451+00:00",
+  "source_id": "b08b6dbd369b40e729e61bdc",
+  "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=8f1bc917-6583-4541-be13-231de0b91d0b",
+  "region_code": "330110",
+  "agency": "杭州市余杭区人力资源和社会保障局",
+  "material_names": [
+    "用人单位登记注册材料",
+    "劳动者身份证",
+    "《劳动人事争议仲裁申请书》",
+    "《证据清单》",
+    "存在劳动关系的证据和可证实申请人主张的证据"
+  ],
+  "blank_controls": 2,
+  "identity_example_separate": true,
+  "paper_copies": "2份，A4，原件",
+  "statutory_time": "60天",
+  "promised_time": "44工作日",
+  "acceptance_phase": "5个工作日",
+  "window": "杭州市余杭区公共法律服务中心（杭州市余杭区仓前街道龙潭路22号（余杭区社会治理中心））一楼9号、10号窗口",
+  "phone": "0571-89391163",
+  "hours": "工作日周一至周五上午：9:00-12:00; 下午：14:00-17:00（法定节假日除外）",
+  "new_downloads": 0,
+  "blank_originals": "Reused own sealed native download provenance and canonical SHA; no refetch",
+  "new_online_action": false,
+  "post_login_flow": "unknown; prior own login boundary retained unchanged",
+  "native_recheck_stages": [
+    {
+      "stage": "conditions-materials",
+      "captured_at": "2026-10-29T05:57:23.542Z",
+      "raw_file": "private/conditions-materials/dom.json",
+      "raw_sha256": "e7c20042cc4b1c3e85d0057ca619b964bacb27223439503da9ff9bcad5c8cb27"
+    },
+    {
+      "stage": "materials-view",
+      "captured_at": "2026-10-29T05:57:34.587Z",
+      "raw_file": "private/materials-view/dom.json",
+      "raw_sha256": "43ae9bbc83c6c525e07b3e53a2e0971f399ae6e39a6beacdfe3cddc0646fed76"
+    },
+    {
+      "stage": "full-flow",
+      "captured_at": "2026-10-29T05:57:51.671Z",
+      "raw_file": "private/full-flow/dom.json",
+      "raw_sha256": "9834e47676b6fef6dcba43806d10cffac1b49c7920022ac767f9792dec8908c0"
+    },
+    {
+      "stage": "basic-information",
+      "captured_at": "2026-10-29T05:57:52.218Z",
+      "raw_file": "private/basic-information/dom.json",
+      "raw_sha256": "80c4d65bd37c6ca8de1eb0cfd2f02bec9de8aa832582e79215ab6491472186f2"
+    },
+    {
+      "stage": "faq",
+      "captured_at": "2026-10-29T05:58:03.081Z",
+      "raw_file": "private/faq/dom.json",
+      "raw_sha256": "2c3297592f55f16058ac02e3d769333854b07ac9981ed64cef36e4c472371949"
+    },
+    {
+      "stage": "window",
+      "captured_at": "2026-10-29T05:58:03.707Z",
+      "raw_file": "private/window/dom.json",
+      "raw_sha256": "613c9fd947b49b8b84bb96f511ff30ef3fbed7a36eb3f8ce99715e3376e710d5"
+    }
+  ],
+  "original_manifest_digest": "1550a0e143244cb4201dea1361a990364204bee2be86ce02b706d6c605a56ef8",
+  "original_manifest_resigned": false,
+  "original_sealed_files_checked": 178,
+  "original_hash_mismatches": 0
+}

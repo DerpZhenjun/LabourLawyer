@@ -1,0 +1,104 @@
+{
+  "entries": [
+    {
+      "file": "backend/regional_zhejiang_documents.py",
+      "sha256": "4dce86d139bf9941fdf11dbb90c56e49fc07a03e8d01aafb077a0d9616f76cad",
+      "bytes": 8871,
+      "group": "code_and_safe_metadata"
+    },
+    {
+      "file": "backend/tests/test_zhejiang_release_layout.py",
+      "sha256": "3b710325e6d744c2c3ad8dba734570fe44cf81e521cdc4198725725b37d05e3b",
+      "bytes": 2597,
+      "group": "code_and_safe_metadata"
+    },
+    {
+      "file": "reports/regional-release-20261029/zhejiang/artifact.md",
+      "sha256": "87a3e9b95c6ca2cd6cc3675b58a73b145da639da09de7949a31d0d4034321026",
+      "bytes": 2256,
+      "group": "code_and_safe_metadata"
+    },
+    {
+      "file": "reports/regional-release-20261029/zhejiang/PROGRESS.md",
+      "sha256": "21a2c9e068e9b2152c5453685f1da8026353fad3b92fde08cd0339a545bf1fed",
+      "bytes": 3377,
+      "group": "code_and_safe_metadata"
+    },
+    {
+      "file": "reports/regional-release-20261029/zhejiang/qa_yuhang.py",
+      "sha256": "be5bf0ea3bade1effaf96484dc45d0b9568e587b552a9a177a0ec928affc3096",
+      "bytes": 6639,
+      "group": "code_and_safe_metadata"
+    },
+    {
+      "file": "reports/regional-release-20261029/zhejiang/render-isolated.ps1",
+      "sha256": "ddcb4140398e416994ec5182c010fd9af1489b4a700ae489c18a422644c5f2e9",
+      "bytes": 5149,
+      "group": "code_and_safe_metadata"
+    },
+    {
+      "file": "reports/regional-release-20261029/zhejiang/source-audit.json",
+      "sha256": "e47e87c0d9cca2ab69117d7d8a3c95d158208f74081e21a8a601e048310eb77d",
+      "bytes": 7867,
+      "group": "code_and_safe_metadata"
+    },
+    {
+      "file": "reports/regional-release-20261029/zhejiang/public-source-recheck.json",
+      "sha256": "122acdae6508936e617136dfd6a982eb5ee236e6c4c44e535ad6d9191c6eb8d7",
+      "bytes": 2966,
+      "group": "code_and_safe_metadata"
+    },
+    {
+      "file": "reports/regional-release-20261029/zhejiang/package-checks.json",
+      "sha256": "ccb2d94850d9bfd802efcdf93740904865ee7888bac3e6cf9a318e78344a4440",
+      "bytes": 866,
+      "group": "code_and_safe_metadata"
+    },
+    {
+      "file": "reports/regional-release-20261029/zhejiang/release-review.json",
+      "sha256": "5637f7716b17da78679d410e728147d3ea3e98454f0854aab3fa05d909bb7804",
+      "bytes": 7228,
+      "group": "code_and_safe_metadata"
+    },
+    {
+      "file": "reports/regional-release-20261029/zhejiang/tests-GREEN.log",
+      "sha256": "cd67c8590ad50784be7c56c6b9dcdd965491b2ef85f5cc06d87e0b0e708d859c",
+      "bytes": 3835,
+      "group": "code_and_safe_metadata"
+    },
+    {
+      "file": "templates/_docx/_regional/330110/21B24C52D2AC3EB007AA7F55CE0AAD79-劳动人事争议仲裁申请书.docx",
+      "sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "bytes": 33949,
+      "group": "own_official_originals"
+    },
+    {
+      "file": "templates/_docx/_regional/330110/872DFF90A8578907CB947197A784AA48-证据清单.docx",
+      "sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+      "bytes": 18837,
+      "group": "own_official_originals"
+    },
+    {
+      "file": "reports/regional-release-20261029/zhejiang/application-synthetic.docx",
+      "sha256": "e0b1d80109bd5743639d9007703320ef47c1456f377d51d1186158ad85bd6b38",
+      "bytes": 27663,
+      "group": "optional_fictional_QA"
+    },
+    {
+      "file": "reports/regional-release-20261029/zhejiang/evidence-synthetic.docx",
+      "sha256": "cedb45a810a8450b6113d7c934be0690c5f60e8710c7125ccb9a5faddc948917",
+      "bytes": 16639,
+      "group": "optional_fictional_QA"
+    }
+  ],
+  "publication_performed": false,
+  "excluded": [
+    "private/",
+    "render/",
+    "render-result.json",
+    "PUBLIC-WHITELIST-PREVISUAL.json",
+    "finalize_release.py",
+    "all prior raw source/auth/session folders"
+  ],
+  "note": "Only these exact paths and SHAs were reviewed; private staged guide contains retained auth boundary and is not public."
+}

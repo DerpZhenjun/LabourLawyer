@@ -1,0 +1,22 @@
+[
+  {
+    "kind": "application",
+    "source": "templates/_docx/_regional/330110/21B24C52D2AC3EB007AA7F55CE0AAD79-劳动人事争议仲裁申请书.docx",
+    "source_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+    "output": "application-synthetic.docx",
+    "output_sha256": "e0b1d80109bd5743639d9007703320ef47c1456f377d51d1186158ad85bd6b38",
+    "changed_parts": [
+      "word/document.xml"
+    ]
+  },
+  {
+    "kind": "evidence",
+    "source": "templates/_docx/_regional/330110/872DFF90A8578907CB947197A784AA48-证据清单.docx",
+    "source_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+    "output": "evidence-synthetic.docx",
+    "output_sha256": "cedb45a810a8450b6113d7c934be0690c5f60e8710c7125ccb9a5faddc948917",
+    "changed_parts": [
+      "word/document.xml"
+    ]
+  }
+]

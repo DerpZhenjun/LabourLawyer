@@ -1,0 +1,186 @@
+{
+  "status": "OFFLINE_OWN_SOURCE_QA_PASS_NOT_PUBLISHED",
+  "source_id": "b08b6dbd369b40e729e61bdc",
+  "region_code": "330110",
+  "adapter": "zhejiang_own_blank_v1",
+  "tests": {
+    "new_regressions": 2,
+    "existing_adapter": 9,
+    "existing_source": 8,
+    "total": 19,
+    "result": "PASS",
+    "seconds": 15.98,
+    "RED": "layout-RED.log",
+    "GREEN": "tests-GREEN.log"
+  },
+  "word": {
+    "tasks": [
+      {
+        "role": "original",
+        "kind": "application",
+        "page_count": 6
+      },
+      {
+        "role": "filled",
+        "kind": "application",
+        "page_count": 3
+      },
+      {
+        "role": "original",
+        "kind": "evidence",
+        "page_count": 1
+      },
+      {
+        "role": "filled",
+        "kind": "evidence",
+        "page_count": 3
+      }
+    ],
+    "all_pages_manually_viewed": [
+      {
+        "file": "render/original-application/page-1.png",
+        "sha256": "3166b3757c51b172d28990e511ce7922f0ed389bae3791e83c39d60d95a85e5e",
+        "role": "original",
+        "kind": "application",
+        "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE"
+      },
+      {
+        "file": "render/original-application/page-2.png",
+        "sha256": "02cc812d67de83a6430c9fae74d77c5a483b1bce7e9942dfa49a90f034305472",
+        "role": "original",
+        "kind": "application",
+        "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE"
+      },
+      {
+        "file": "render/original-application/page-3.png",
+        "sha256": "403c4d172d762155f21c3150a264fdaa54b9fc388fbbe43b5a12dfc985bb1bf2",
+        "role": "original",
+        "kind": "application",
+        "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE"
+      },
+      {
+        "file": "render/original-application/page-4.png",
+        "sha256": "5e7c703486da52df90d470ccab0bb8f0dcbcb8bf8dec0b571b84f1753505934c",
+        "role": "original",
+        "kind": "application",
+        "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE"
+      },
+      {
+        "file": "render/original-application/page-5.png",
+        "sha256": "8be25bf9fc7624da60cd4d6ac7f8e05ee45a3d531eadff5f7218c81d57a7b6fa",
+        "role": "original",
+        "kind": "application",
+        "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE"
+      },
+      {
+        "file": "render/original-application/page-6.png",
+        "sha256": "62e78795cf9a4c40ca7f94473ce2802536f9cc65215895eb4e61ef0add055066",
+        "role": "original",
+        "kind": "application",
+        "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE"
+      },
+      {
+        "file": "render/filled-application/page-1.png",
+        "sha256": "fd1c1e100a9f82fdaf45fccb077b5ee53ff68e010be84d51dc076dd58836f73f",
+        "role": "filled",
+        "kind": "application",
+        "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE"
+      },
+      {
+        "file": "render/filled-application/page-2.png",
+        "sha256": "9b3b1c56c22ba0d609fa2a0d70d86a64559672835a981157665c57debd64b813",
+        "role": "filled",
+        "kind": "application",
+        "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE"
+      },
+      {
+        "file": "render/filled-application/page-3.png",
+        "sha256": "36f50543537e4a0846e07d0c16928118c6fd7f343ebeb63f703c32d64162ee81",
+        "role": "filled",
+        "kind": "application",
+        "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE"
+      },
+      {
+        "file": "render/original-evidence/page-1.png",
+        "sha256": "5cecb8d3af2de739d7ee2b4872da000d0f7573aa59a1c1eaaf18aefb6736dc1b",
+        "role": "original",
+        "kind": "evidence",
+        "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE"
+      },
+      {
+        "file": "render/filled-evidence/page-1.png",
+        "sha256": "5b048509e126d09937c2cbe81b5efcfb425edf23b54d59596dbd789f9f967870",
+        "role": "filled",
+        "kind": "evidence",
+        "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE"
+      },
+      {
+        "file": "render/filled-evidence/page-2.png",
+        "sha256": "d31399ce4478e82ed4be39818f7f81c432c8784e343fff19a34517dd997bda2a",
+        "role": "filled",
+        "kind": "evidence",
+        "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE"
+      },
+      {
+        "file": "render/filled-evidence/page-3.png",
+        "sha256": "1cefa017c838d3433eaa84e4db83d343e3df3e7bba6a42c44d18413877fb13ea",
+        "role": "filled",
+        "kind": "evidence",
+        "review": "PASS_MANUALLY_VIEWED_EVERY_PAGE"
+      }
+    ],
+    "renderer": "Own hidden read-only Microsoft Word export + bundled Poppler",
+    "packaged_renderer": "Attempt failed: no soffice.exe; packaged-render.log retained",
+    "isolated_COM": {
+      "method": "CoCreateInstanceEx/IID_IDispatch (DispatchEx semantics)",
+      "unique_new_pid_verified": true,
+      "document_window_pid_checks": 4,
+      "preexisting_processes_preserved": true,
+      "macro_security": 3,
+      "link_updates_disabled": true,
+      "quit_only_own_distinct_instance": true
+    },
+    "visual_notes": [
+      "Original application contains separate worker and employer forms; source layout is preserved unchanged",
+      "Filled worker application has complete facts, date and blank human signature; no extra blank page",
+      "Evidence case label remains intact, own two header rows repeat, ten long records are whole, both human signatures stay blank"
+    ]
+  },
+  "binding_unchanged": "Own source/local code/agency/service IDs/annex/original SHA/downloadURL/path guards retained",
+  "fixes": [
+    "Preserve static 案号 label and fill its adjacent value cell",
+    "Repeat own first two table rows on continuation pages",
+    "Keep each evidence record whole and signatures blank"
+  ],
+  "document_scope": "Worker application only, up to four requests; evidence ten long items tested; originals unchanged",
+  "source_copies_conflict": "Guide two paper originals and annex defendant-count copies retained; not resolved",
+  "publication": false,
+  "candidate_web": "NOT_RUN_POLICY_REFUSAL_RETAINED",
+  "main_database": "NOT_OPENED",
+  "models_called": false,
+  "other_localities": "Xihu shares inspected bytes/layout fixes but no new Xihu visual acceptance; Binjiang material conflict unchanged",
+  "old_source_files_unchanged": 178,
+  "old_manifest_resigned": false,
+  "final_outputs": [
+    {
+      "kind": "application",
+      "source": "templates/_docx/_regional/330110/21B24C52D2AC3EB007AA7F55CE0AAD79-劳动人事争议仲裁申请书.docx",
+      "source_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "output": "application-synthetic.docx",
+      "output_sha256": "e0b1d80109bd5743639d9007703320ef47c1456f377d51d1186158ad85bd6b38",
+      "changed_parts": [
+        "word/document.xml"
+      ]
+    },
+    {
+      "kind": "evidence",
+      "source": "templates/_docx/_regional/330110/872DFF90A8578907CB947197A784AA48-证据清单.docx",
+      "source_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+      "output": "evidence-synthetic.docx",
+      "output_sha256": "cedb45a810a8450b6113d7c934be0690c5f60e8710c7125ccb9a5faddc948917",
+      "changed_parts": [
+        "word/document.xml"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "identity": {
+    "region_code": "330110",
+    "city": "杭州市",
+    "district": "余杭区",
+    "authority": "杭州市余杭区人力资源和社会保障局",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=8f1bc917-6583-4541-be13-231de0b91d0b",
+    "source_id": "b08b6dbd369b40e729e61bdc",
+    "service_code": "8f1bc917-6583-4541-be13-231de0b91d0b",
+    "service_ids": {
+      "localInnerCode": "8f1bc917-6583-4541-be13-231de0b91d0b",
+      "stdcateguid": "fc266994-f669-4861-acdc-799f3ea2decc",
+      "categorysourcereferno": "8d0494f2-74c9-11e9-b64f-6c92bf669f92"
+    },
+    "collected_at": "2026-10-28T08:57:08.197Z"
+  },
+  "originals": [
+    {
+      "official_annex_id": "21B24C52D2AC3EB007AA7F55CE0AAD79",
+      "file": "templates/_docx/_regional/330110/21B24C52D2AC3EB007AA7F55CE0AAD79-劳动人事争议仲裁申请书.docx",
+      "sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "bytes": 33949,
+      "download_url": "https://portal.zjzwfw.gov.cn/media/oss/FILE/META_DATA/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=8f1bc917-6583-4541-be13-231de0b91d0b",
+      "table_shapes": [
+        [
+          23,
+          5
+        ],
+        [
+          23,
+          11
+        ]
+      ],
+      "parts": {
+        "[Content_Types].xml": "207bfe106e9f6b483cc2f2cf58154d469b750b32afad5ae63b5218ab0d9fc644",
+        "_rels/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "_rels/.rels": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977",
+        "customXml/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "customXml/_rels/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "customXml/_rels/item1.xml.rels": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0",
+        "customXml/item1.xml": "97aeab4589a404a46c75269b7ef428fc417df1f2e7500ea6fa75dd747f6d5cdf",
+        "customXml/itemProps1.xml": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1",
+        "docProps/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "docProps/app.xml": "95e5093b62f3456029a65b21c33ffda25c53241f1fb01069458f8fd4dd31b992",
+        "docProps/core.xml": "d86ba007e3c6cd2b4889520d5a4fd94a30673c8370bb6fc742970011fe5fe31b",
+        "docProps/custom.xml": "e4fcefd8738ddc9434cde988abe3bb33398c73e4ca845428d71bbea58a49cba0",
+        "word/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "word/_rels/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "word/_rels/document.xml.rels": "c010dbf8d8c6450b3eee36ad8bce8471c273c58050784830aa6096cb59af38f5",
+        "word/document.xml": "8746c000c552afabe0bd7cfb1bfd983c6dadf155571e7d229cafffd42cd40e53",
+        "word/fontTable.xml": "ec3d2396089f50fb2be34c294c8b0b5cf32cffc4dad498c90195524a4d640792",
+        "word/footer1.xml": "464a87ca383d71ab574a4168026b9a8d257540ac8951cddcbf8c2b07e6374297",
+        "word/footer2.xml": "f22ff3326260ffb204c0f0b202e95700feaa2b023bac699d4fdd09e642fd6f97",
+        "word/footer3.xml": "f22ff3326260ffb204c0f0b202e95700feaa2b023bac699d4fdd09e642fd6f97",
+        "word/footer4.xml": "f6fc97f576c732af9d853596f80d092df43f15d9dbec4bd90fcb6091f734326f",
+        "word/footer5.xml": "f22ff3326260ffb204c0f0b202e95700feaa2b023bac699d4fdd09e642fd6f97",
+        "word/footer6.xml": "f22ff3326260ffb204c0f0b202e95700feaa2b023bac699d4fdd09e642fd6f97",
+        "word/header1.xml": "b9d55555053b8a4eaeb6522a2e158b3846d4f1b14c7e3d2c6eef372baca77814",
+        "word/header2.xml": "b9d55555053b8a4eaeb6522a2e158b3846d4f1b14c7e3d2c6eef372baca77814",
+        "word/header3.xml": "b9d55555053b8a4eaeb6522a2e158b3846d4f1b14c7e3d2c6eef372baca77814",
+        "word/header4.xml": "b9d55555053b8a4eaeb6522a2e158b3846d4f1b14c7e3d2c6eef372baca77814",
+        "word/header5.xml": "b9d55555053b8a4eaeb6522a2e158b3846d4f1b14c7e3d2c6eef372baca77814",
+        "word/header6.xml": "b9d55555053b8a4eaeb6522a2e158b3846d4f1b14c7e3d2c6eef372baca77814",
+        "word/settings.xml": "7dd22b995f9139153ac87add85954a6f2073ec34bf0fac8c2829384702b5d08b",
+        "word/styles.xml": "e3fa4800703d0ab5917ec2b838931c412488d0eb178017daea0f0bc5cdbdeb81",
+        "word/theme/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "word/theme/theme1.xml": "028386e674bcfd7a2bf1e34f2eab90eafcd171725d607d2404874d70c15b444a"
+      },
+      "sections": [
+        {
+          "width": 11906,
+          "height": 16838,
+          "margins": [
+            1701,
+            1701,
+            1418,
+            1418
+          ]
+        },
+        {
+          "width": 11906,
+          "height": 16838,
+          "margins": [
+            1701,
+            1701,
+            1418,
+            1418
+          ]
+        }
+      ]
+    },
+    {
+      "official_annex_id": "872DFF90A8578907CB947197A784AA48",
+      "file": "templates/_docx/_regional/330110/872DFF90A8578907CB947197A784AA48-证据清单.docx",
+      "sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+      "bytes": 18837,
+      "download_url": "https://portal.zjzwfw.gov.cn/media/oss/FILE/META_DATA/872DFF90A8578907CB947197A784AA48.docx",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=8f1bc917-6583-4541-be13-231de0b91d0b",
+      "table_shapes": [
+        [
+          13,
+          6
+        ]
+      ],
+      "parts": {
+        "[Content_Types].xml": "ed4d7b99cd62a23532f0ac0def37b2e6d7b8fdf8994a1a4faeafa228963be157",
+        "_rels/.rels": "c30fe099dbcfed4ecc4ae544ccf82f432c8d3bb665e2a301df283738b196d803",
+        "word/document.xml": "fcf17a70c0136d7f2aa203162595cdfb7b267c02fd80303362cda248942d4b19",
+        "word/_rels/document.xml.rels": "72b318b561797ad6c748023eeea9b06924c678abe0eef406998ae10d6fb9f154",
+        "word/footnotes.xml": "5aff8c055f34472fb4734cd82ccc53a3f9e24e9e0f12729b19cea45f072143d4",
+        "word/endnotes.xml": "d1546767d36b770be247a37999143c42713fd1d8163f7adeac4b8079a9a25a72",
+        "word/theme/theme1.xml": "d58003cb639de24d5e05ed7e649a4d89a6b8ed6ebd669baef2b858572957bc4f",
+        "word/settings.xml": "cd67fae73638dd6ea918d1aa7560d644793f995aab41364ec185a04db6119263",
+        "word/styles.xml": "8c3533157bb5cbdd5276d3c83092e31d3088f3e1c82ac212b693f0f032f6e974",
+        "word/webSettings.xml": "3346314c93078070b454a95d0485bf9721dade13d89cfaa579cc32645fa7edef",
+        "word/fontTable.xml": "afd6af7cba35cafc702f5a6088a77db2f2559a7b12b816caeedb0e47d82c37b2",
+        "docProps/core.xml": "a281b08773ecfe11116962cb9c8da582b70ad067443ff9aac117fa2cff73475e",
+        "docProps/app.xml": "c5ba7d87122fa6faf98f62eff07b2e59b1ff0ef15582b9db1d4d674ab5596e0c",
+        "docProps/custom.xml": "9b10ff930502323cb29f13b5ee445c1480e65835cfe78b4c430a3259e4733b47"
+      },
+      "sections": [
+        {
+          "width": 11906,
+          "height": 16838,
+          "margins": [
+            1701,
+            1701,
+            1418,
+            1418
+          ]
+        }
+      ]
+    }
+  ],
+  "materials": [
+    "用人单位登记注册材料",
+    "劳动者身份证",
+    "《劳动人事争议仲裁申请书》",
+    "《证据清单》",
+    "存在劳动关系的证据和可证实申请人主张的证据"
+  ],
+  "times": {
+    "法定办结时限": "60天",
+    "承诺办结时限": "44工作日",
+    "办理时间": "工作日周一至周五上午：9:00-12:00; 下午：14:00-17:00（法定节假日除外）"
+  },
+  "online": "prior own native login boundary retained; post-login flow unknown; no new online action in this recheck"
+}

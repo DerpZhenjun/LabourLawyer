@@ -19,6 +19,7 @@ from regional_guides import digest
 from regional_zhejiang import parse_yuhang_capture, parse_xihu_capture, REPORT
 from WenShu.Zhejiang.LAdocx import generate_LAdocx
 from WenShu.exact_template_fill import fill_evidence
+from WenShu.template_fill import set_cell_text
 
 ROOT = Path(__file__).resolve().parents[1]
 ADAPTER = 'zhejiang_own_blank_v1'
@@ -132,7 +133,26 @@ def fill_zhejiang_document(guide, template, kind, path, data):
         rpr=OxmlElement('w:rPr');size=OxmlElement('w:sz');size.set(qn('w:val'),'2');rpr.append(size)
         tail._p.get_or_add_pPr().append(rpr)
     else:
+        # This retained original has a separate label/value pair. The generic
+        # paragraph heuristic also matches the static 案号 label, so fill the
+        # actual value cell only after the inspected Zhejiang profile returns.
+        case_number = values.pop('caseNumber', None)
         values['evidenceList'] = [{**item, 'pageCount': re.sub(r'^\s*(\d+)\s*页\s*$', r'\1', str(item.get('pageCount', '')))}
                                   for item in values.get('evidenceList', [])]
         document = fill_evidence(values, path, profile='ZheJiangSheng')
+        table = document.tables[0]
+        if case_number:
+            set_cell_text(table.rows[0].cells[1], case_number)
+        for row in table.rows[:2]:
+            properties = row._tr.get_or_add_trPr()
+            if properties.find(qn('w:tblHeader')) is None:
+                properties.append(OxmlElement('w:tblHeader'))
+        for row in table.rows:
+            properties = row._tr.get_or_add_trPr()
+            if properties.find(qn('w:cantSplit')) is None:
+                properties.append(OxmlElement('w:cantSplit'))
+        for row in table.rows[-2:]:
+            for cell in row.cells:
+                for paragraph in cell.paragraphs:
+                    paragraph.paragraph_format.keep_with_next = True
     return PreservedPackageDocument(document, original)
