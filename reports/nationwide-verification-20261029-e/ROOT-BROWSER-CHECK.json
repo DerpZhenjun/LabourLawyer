@@ -1,0 +1,39 @@
+{
+  "scope": "Supplementary real Chrome DevTools candidate page checks; native eight-download acceptance is separate",
+  "url": "http://127.0.0.1:5174/province/jiangsu?city=苏州市&district=相城区",
+  "checks": [
+    {
+      "name": "Exact own form in rendered region page",
+      "passed": true,
+      "application_controls": 28,
+      "default_name": "陈虚构"
+    },
+    {
+      "name": "Actual mobile emulation, not minimum desktop window resize",
+      "passed": true,
+      "innerWidth": 375,
+      "document_scrollWidth": 375
+    },
+    {
+      "name": "Every aria-describedby target exists",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "name": "Real native fill preserves 301 Unicode characters, shows linked limit error",
+      "passed": true,
+      "characters": 301,
+      "aria_invalid": "true",
+      "linked_error": "申请人姓名最多300个字符（含空格和换行），请调整后再生成；文字会完整保留。",
+      "restored_fictional_name": true
+    },
+    {
+      "name": "Console error and warning check after own page load",
+      "passed": true,
+      "messages": 0
+    }
+  ],
+  "observation": "resize_page requested375 but actual innerWidth501; this was not counted as375. emulate375 mobile/touch then page reload/settle and fresh snapshot yielded actual375.",
+  "models_called": false,
+  "service_started": false
+}

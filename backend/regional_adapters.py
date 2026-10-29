@@ -29,6 +29,15 @@ def jiangsu_d_binding(guide,template,root=None):
     except (ValueError,OSError,KeyError,TypeError):return None
 
 
+
+from regional_jiangsu_oct29e import (with_capabilities as with_jiangsu_e_capabilities,blank_binding as jiangsu_e_contract,ADAPTER as JIANGSU_E_ADAPTER,SUPPORTED as JIANGSU_E_CODES)
+from regional_zhejiang_oct29e import (with_capabilities as with_zhejiang_e_capabilities,blank_binding as zhejiang_e_binding,ADAPTER as ZHEJIANG_E_ADAPTER,SPECS as ZHEJIANG_E_SPECS)
+
+def jiangsu_e_binding(guide,template,root=None):
+    try:return jiangsu_e_contract(guide,template,root=root)['kind']
+    except (ValueError,OSError,KeyError,TypeError):return None
+
+
 REFERENCE_SHA256 = '80d1dc3989e9da1ef2c763cbde54bd474d691a4febba48425fb2cc3471d94562'
 BINDINGS = {
     '510110000000': ('天府新区', '1064c9ed5635a0d224e4eee5', 'ec3268e5fda94301ab40a7e086afe07a', 'tianfu_reference_v1'),
@@ -294,6 +303,10 @@ def with_reference_capabilities(guide,root=None):
         for template in result['templates']:
             if template.get('can_generate'):template.update(adapter=JIANGSU_C_ADAPTER,content_kind='filled_official_blank',generation_label='依据本区自身官方空白表格填写')
         return result
+    if result.get('province')=='jiangsu' and result.get('region_code') in JIANGSU_E_CODES:
+        return with_jiangsu_e_capabilities(result,root=root)
+    if result.get('province')=='zhejiang' and result.get('region_code') in {v['code'] for v in ZHEJIANG_E_SPECS.values()}:
+        return with_zhejiang_e_capabilities(result,root=root)
     if result.get('province')=='jiangsu' and result.get('region_code') in JIANGSU_D_CODES:
         return with_jiangsu_d_capabilities(result,root=root)
     if result.get('province')=='zhejiang' and result.get('region_code') in {v['code'] for v in ZHEJIANG_D_SPECS.values()}:
@@ -302,6 +315,11 @@ def with_reference_capabilities(guide,root=None):
 
 
 def checked_reference_adapter(guide, template, kind,root=None):
+    if template.get('adapter') in {JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER}:
+        own_kind=jiangsu_e_binding(guide,template,root=root) if template['adapter']==JIANGSU_E_ADAPTER else zhejiang_e_binding(guide,template,root=root)
+        if own_kind!=kind or template.get('can_generate') is not True or template.get('document_types')!=[kind]:
+            raise ValueError('本区自身来源与文书类型未通过核验')
+        return template['adapter']
     if template.get('adapter') in {JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER}:
         own_kind=jiangsu_d_binding(guide,template,root=root) if template['adapter']==JIANGSU_D_ADAPTER else zhejiang_d_binding(guide,template,root=root)
         if own_kind!=kind or template.get('can_generate') is not True or template.get('document_types')!=[kind]:
