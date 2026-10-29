@@ -1,0 +1,23 @@
+{
+  "attempts": [
+    {
+      "stage": "first-rasterize",
+      "status": "FAILED",
+      "reason": "The repository Python environment lacked the PDF parser dependency. Rasterization succeeded with an existing dependency-equipped Python runtime and PDF rasterizer; nothing was installed."
+    },
+    {
+      "stage": "round1-generated-application",
+      "status": "SUPERSEDED",
+      "reason": "Rendered checkbox remained empty with a trailing check mark; RED test added, selected symbol replaced with actual checked box. Round1 files retained."
+    },
+    {
+      "stage": "round2-word-export",
+      "status": "PASS",
+      "documents": 3,
+      "preexisting_process_count": 0,
+      "process_count_after": 0,
+      "isolated_instance_exited": true,
+      "no_other_process_mutation": true
+    }
+  ]
+}

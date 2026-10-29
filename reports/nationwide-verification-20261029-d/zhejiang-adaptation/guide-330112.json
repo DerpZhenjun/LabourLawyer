@@ -1,0 +1,439 @@
+{
+  "province": "zhejiang",
+  "province_name": "浙江省",
+  "city": "杭州市",
+  "district": "临安区",
+  "region_code": "330112",
+  "service_name": "劳动人事争议仲裁申请",
+  "source_title": "劳动人事争议仲裁申请",
+  "source_type": "official_own_district_guide",
+  "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+  "source_id": "f556a6146755db0f84784861",
+  "service_code": "11330185002508182w4002014302002",
+  "local_inner_code": "41c59062-1bee-45d9-a9ff-645b91059195",
+  "authority": "区人力社保局",
+  "fields": {
+    "事项类型": {
+      "raw_value": "属地保留",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "source_field": "rightAttributeword",
+      "source_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/item-response-raw.json"
+    },
+    "实施主体": {
+      "raw_value": "区人力社保局",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "source_field": "qlDept",
+      "source_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/item-response-raw.json"
+    },
+    "办理形式": {
+      "raw_value": "网上申请/现场窗口申请/邮寄申请",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "source_field": "applyType",
+      "source_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/item-response-raw.json"
+    },
+    "法定办结时限": {
+      "raw_value": "60（天）",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "source_field": "deadlinelaw",
+      "source_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/item-response-raw.json"
+    },
+    "承诺办结时限": {
+      "raw_value": "44（工作日）",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "source_field": "promisedays",
+      "source_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/item-response-raw.json"
+    },
+    "承诺时限说明": {
+      "raw_value": "受理仲裁申请之日起 45 日；经延期后，可以延长至 60 日",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "source_field": "anticipatedayexplain",
+      "source_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/item-response-raw.json"
+    },
+    "到现场次数": {
+      "raw_value": "0",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "source_field": "times",
+      "source_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/item-response-raw.json"
+    },
+    "服务对象": {
+      "raw_value": "个人/法人/其他组织",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "source_field": "serviceObject",
+      "source_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/item-response-raw.json"
+    },
+    "咨询电话": {
+      "raw_value": "0571-61071571",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "source_field": "askphone",
+      "source_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/item-response-raw.json"
+    },
+    "投诉电话": {
+      "raw_value": "统一咨询投诉热线0571-63812345",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "source_field": "complaintphone",
+      "source_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/item-response-raw.json"
+    },
+    "申报条件": {
+      "raw_value": "条件组名称\r\n条件名称\r\n描述\r\n\r\n法定受理范围\r\n申请人的仲裁请求属于法律法规规定的受理范围\r\n\r\n请求及事实理由明确\r\n申请人的仲裁请求和事实理由明确\r\n\r\n法定主体范围\r\n申请人与被申请人主体符合法律法规规定；申请人与本案有直接利害关系，有明确的被申请人\r\n\r\n申请材料完备\r\n申请材料规范、齐备\r\n\r\n管辖范围\r\n属于该劳动人事争议仲裁员会管辖范围",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "source_field": "spconditions",
+      "source_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/item-response-raw.json"
+    },
+    "受理机关": {
+      "raw_value": "杭州市临安区劳动人事争议仲裁委员会",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "source_field": "acpInstitution",
+      "source_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/item-response-raw.json"
+    },
+    "申报方式": {
+      "raw_value": "网上申请/现场窗口申请/邮寄申请",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "source_field": "applyType",
+      "source_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/item-response-raw.json"
+    },
+    "收费页面原文": {
+      "raw_value": "不收费",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "source_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/basic-dom.json",
+      "source_basis": "own native basic information tab"
+    },
+    "办理地点": {
+      "raw_value": "杭州市临安区锦城街道衣锦街468号社会矛盾纠纷调处化解中心一楼劳动仲裁窗口",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "source_basis": "own native basic/window tab and own public item response"
+    },
+    "办理时间": {
+      "raw_value": "工作日：上午8:30-11:30，下午14:00-17:00",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "source_basis": "own native basic/window tab and own public item response"
+    },
+    "是否收费": {
+      "raw_value": "不收费",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "source_basis": "own native basic/window tab and own public item response"
+    }
+  },
+  "materials": [
+    {
+      "id": "E022B99BBAF91A524B2C719D57D4F7D5",
+      "name": "用人单位登记注册材料",
+      "required": "必要",
+      "copies": "2",
+      "raw_copies": "纸质材料 2份，A4",
+      "original_copy": "原件",
+      "format": "纸质材料，A4",
+      "source_channel": "政府部门核发",
+      "instructions": "",
+      "acceptance_standard": "真实有效",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "region_code": "330112",
+      "raw": {
+        "acceptCriteria": "真实有效",
+        "bizCode": null,
+        "blankForm": "",
+        "blankFormName": null,
+        "gmtCreate": null,
+        "gmtModified": null,
+        "id": null,
+        "impleCode": "E022B99BBAF91A524B2C719D57D4F7D5",
+        "instructions": "",
+        "localMaterialId": null,
+        "materialDetailRequires": null,
+        "materialExtMap": null,
+        "materialForm": "",
+        "materialName": "用人单位登记注册材料",
+        "materialNecessity": "必要",
+        "materialNecessityDesc": null,
+        "materialType": "原件",
+        "memo": "",
+        "mtIssueUnit": null,
+        "paperMaterialNums": "2",
+        "paperMaterialSpecific": "A4",
+        "requestMaterialBasis": "中华人民共和国劳动争议调解仲裁法  全国人民代表大会常务委员会  2008-05-01",
+        "rq": null,
+        "sampleForm": "",
+        "sampleFormName": null,
+        "sort": null,
+        "sourceChannel": "政府部门核发",
+        "sourceChannelDesc": "市场监管、民政"
+      }
+    },
+    {
+      "id": "15705B5F59523720AE7166D821DEAD73",
+      "name": "劳动者身份证",
+      "required": "必要",
+      "copies": "2",
+      "raw_copies": "纸质材料 2份，A4",
+      "original_copy": "原件",
+      "format": "纸质材料，A4",
+      "source_channel": "政府部门核发",
+      "instructions": "",
+      "acceptance_standard": "真实有效",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "region_code": "330112",
+      "raw": {
+        "acceptCriteria": "真实有效",
+        "bizCode": null,
+        "blankForm": "",
+        "blankFormName": null,
+        "gmtCreate": null,
+        "gmtModified": null,
+        "id": null,
+        "impleCode": "15705B5F59523720AE7166D821DEAD73",
+        "instructions": "",
+        "localMaterialId": null,
+        "materialDetailRequires": null,
+        "materialExtMap": null,
+        "materialForm": "",
+        "materialName": "劳动者身份证",
+        "materialNecessity": "必要",
+        "materialNecessityDesc": null,
+        "materialType": "原件",
+        "memo": "",
+        "mtIssueUnit": null,
+        "paperMaterialNums": "2",
+        "paperMaterialSpecific": "A4",
+        "requestMaterialBasis": "中华人民共和国劳动争议调解仲裁法  全国人民代表大会常务委员会  2008-05-01",
+        "rq": null,
+        "sampleForm": "//portal.zjzwfw.gov.cn/media/oss/image/META_DATA/居民身份证样证2CD6D8BA9380D21B19B90B9292B231402CD6D8BA9380D21B19B90B9292B23140.jpg",
+        "sampleFormName": null,
+        "sort": null,
+        "sourceChannel": "政府部门核发",
+        "sourceChannelDesc": "公安部门"
+      }
+    },
+    {
+      "id": "0103BAC26E734E0EAA86044060CCACDA",
+      "name": "《劳动人事争议仲裁申请书》",
+      "required": "必要",
+      "copies": "2",
+      "raw_copies": "纸质材料 2份，A4",
+      "original_copy": "原件",
+      "format": "纸质材料，A4",
+      "source_channel": "申请人自备",
+      "instructions": "",
+      "acceptance_standard": "填写信息正确无误",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "region_code": "330112",
+      "raw": {
+        "acceptCriteria": "填写信息正确无误",
+        "bizCode": null,
+        "blankForm": "//portal.zjzwfw.gov.cn/media/oss/FILE/META_DATA/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+        "blankFormName": null,
+        "gmtCreate": null,
+        "gmtModified": null,
+        "id": null,
+        "impleCode": "0103BAC26E734E0EAA86044060CCACDA",
+        "instructions": "",
+        "localMaterialId": null,
+        "materialDetailRequires": null,
+        "materialExtMap": null,
+        "materialForm": "",
+        "materialName": "《劳动人事争议仲裁申请书》",
+        "materialNecessity": "必要",
+        "materialNecessityDesc": null,
+        "materialType": "原件",
+        "memo": "",
+        "mtIssueUnit": null,
+        "paperMaterialNums": "2",
+        "paperMaterialSpecific": "A4",
+        "requestMaterialBasis": "中华人民共和国劳动争议调解仲裁法  全国人民代表大会常务委员会  2008-05-01",
+        "rq": null,
+        "sampleForm": "",
+        "sampleFormName": null,
+        "sort": null,
+        "sourceChannel": "申请人自备",
+        "sourceChannelDesc": ""
+      }
+    },
+    {
+      "id": "51E7CE70366866E21AA9BF7777BBAFD2",
+      "name": "存在劳动关系的证据和可证实申请人主张的证据",
+      "required": "必要",
+      "copies": "2",
+      "raw_copies": "纸质材料 2份，A4",
+      "original_copy": "原件",
+      "format": "纸质材料，A4",
+      "source_channel": "申请人自备",
+      "instructions": "",
+      "acceptance_standard": "真实有效",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "region_code": "330112",
+      "raw": {
+        "acceptCriteria": "真实有效",
+        "bizCode": null,
+        "blankForm": "",
+        "blankFormName": null,
+        "gmtCreate": null,
+        "gmtModified": null,
+        "id": null,
+        "impleCode": "51E7CE70366866E21AA9BF7777BBAFD2",
+        "instructions": "",
+        "localMaterialId": null,
+        "materialDetailRequires": null,
+        "materialExtMap": null,
+        "materialForm": "",
+        "materialName": "存在劳动关系的证据和可证实申请人主张的证据",
+        "materialNecessity": "必要",
+        "materialNecessityDesc": null,
+        "materialType": "原件",
+        "memo": "",
+        "mtIssueUnit": null,
+        "paperMaterialNums": "2",
+        "paperMaterialSpecific": "A4",
+        "requestMaterialBasis": "中华人民共和国劳动争议调解仲裁法  全国人民代表大会常务委员会  2008-05-01",
+        "rq": null,
+        "sampleForm": "",
+        "sampleFormName": null,
+        "sort": null,
+        "sourceChannel": "申请人自备",
+        "sourceChannelDesc": ""
+      }
+    }
+  ],
+  "templates": [
+    {
+      "id": "0103BAC26E734E0EAA86044060CCACDA",
+      "region_code": "330112",
+      "material_id": "0103BAC26E734E0EAA86044060CCACDA",
+      "original_name": "《劳动人事争议仲裁申请书》.docx",
+      "official_kind": "blank",
+      "file": "reports/nationwide-verification-20261029-d/zhejiang/linan/originals/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+      "sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "bytes": 33949,
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+      "download_url": "https://portal.zjzwfw.gov.cn/media/oss/FILE/META_DATA/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+      "download_status": "downloaded",
+      "can_generate": true,
+      "document_types": [
+        "application"
+      ],
+      "observed_document_kind": "application",
+      "render_status": "NOT_RUN",
+      "official_annex_id": "21B24C52D2AC3EB007AA7F55CE0AAD79",
+      "file_type": "docx",
+      "applicant_scope": "worker",
+      "adapter": "zhejiang_own_worker_oct29d_v1",
+      "content_kind": "filled_official_blank",
+      "generation_label": "依据本区自身官方空白表格填写（申请仅劳动者部分）"
+    }
+  ],
+  "sections": {
+    "受理条件": "条件组名称\r\n条件名称\r\n描述\r\n\r\n法定受理范围\r\n申请人的仲裁请求属于法律法规规定的受理范围\r\n\r\n请求及事实理由明确\r\n申请人的仲裁请求和事实理由明确\r\n\r\n法定主体范围\r\n申请人与被申请人主体符合法律法规规定；申请人与本案有直接利害关系，有明确的被申请人\r\n\r\n申请材料完备\r\n申请材料规范、齐备\r\n\r\n管辖范围\r\n属于该劳动人事争议仲裁员会管辖范围",
+    "办理流程": "<p style=\"text-align: left; line-height: 37px; text-indent: 37px;\"><span style=\"color: rgb(0, 0, 0); font-size: 16px;\"><span style=\"color: rgb(0, 0, 0); font-family: 仿宋_GB2312;\">申请－受理－审理－出具结案文书－</span><span style=\"color: rgb(0, 0, 0); font-family: 仿宋_GB2312;\">送达</span><span style=\"color: rgb(0, 0, 0); font-family: 仿宋_GB2312;\">－办结</span></span></p><p style=\"text-align: left; line-height: 37px; text-indent: 37px;\"><span style=\"font-size: 16px; color: rgb(0, 0, 0); font-family: 仿宋_GB2312;\">①申请人向省、市、县（市、区）人力资源和社会保障行政部门公布的具体劳动人事争议仲裁委员会现场或邮寄提交申请材料，或通过“浙里办”APP智慧仲裁平台进行线上申请；</span></p><p style=\"text-align: left; line-height: 37px; text-indent: 37px;\"><span style=\"font-size: 16px;\"><span style=\"color: rgb(0, 0, 0); font-family: 宋体; font-size: 16px;\">②</span><span style=\"font-family:; font-size: 16px;\"><span style=\"color: rgb(0, 0, 0); font-family: 仿宋_GB2312; font-size: 16px;\">省、市、县（市、区）劳动人事争议仲裁委员会收到材料</span></span></span><span style=\"font-size: 16px;\"><span style=\"color: rgb(0, 0, 0); font-family: 仿宋_GB2312; font-size: 16px;\">后在5个工作</span></span><span style=\"font-size: 16px;\"><span style=\"font-family:; font-size: 16px;\"><span style=\"color: rgb(0, 0, 0); font-family: 仿宋_GB2312; font-size: 16px;\">日内作出是否受理的决定，并通知申请人；</span></span></span></p><p style=\"text-align: left; line-height: 37px; text-indent: 37px;\"><span style=\"color: rgb(0, 0, 0); font-size: 16px;\"><span style=\"color: rgb(0, 0, 0); font-family: 仿宋_GB2312; font-size: 19px;\">③</span><span style=\"color: rgb(0, 0, 0); font-family: 仿宋_GB2312; font-size: 16px;\">省、市、县（市、区）</span><span style=\"color: rgb(0, 0, 0); font-family: 仿宋_GB2312; font-size: 16px;\">劳动人事争议仲裁委员会</span><span style=\"color: rgb(0, 0, 0); font-family: 仿宋_GB2312; font-size: 16px;\">在承诺时限内</span><span style=\"color: rgb(0, 0, 0); font-family: 仿宋_GB2312; font-size: 16px;\">对受理的劳动人事争议案件进行审理，依法出具仲裁裁决书或调解书或决定书等结案法律文书并送达。</span></span></p>",
+    "窗口办理": "杭州市临安区锦城街道衣锦街468号社会矛盾纠纷调处化解中心一楼劳动仲裁窗口\n工作日：上午8:30-11:30，下午14:00-17:00",
+    "常见问题": "当事人不服仲裁裁决，怎么办？\n劳动者对终局裁决不服的，自收到仲裁裁决书之日起十五日内向人民法院起诉。当事人不服对终局裁决以外的其他劳动争议案件的仲裁裁决不服的，可以自收到仲裁裁决书之日起十五日内向人民法院起诉。期满不起诉的，裁决书发生法律效力。\n\n哪些劳动争议不属于劳动人事争议仲裁受理范围？\n用人单位与劳动者发生的以下劳动争议不属于劳动人事争议调解受理范围：①劳动者请求社会保险经办机构发放社会保险金的纠纷；②劳动者与用人单位因住房制度改革产生的公有住房转让纠纷；③劳动者对劳动能力鉴定委员会的伤残等级鉴定结论或者对职业病诊断鉴定委员会的职业病诊断鉴定结论的异议纠纷；④家庭或者个人与家政服务人员之间的纠纷；⑤个体工匠与帮工、学徒之间的纠纷；⑥农村承包经营户与受雇人之间的纠纷；⑦用人单位与其招用的已经依法享受养老保险待遇或领取退休金的人员发生用工争议。\n\n发生劳动争议后，应该向哪个仲裁委员会申请仲裁？\n发生劳动争议后，当事人可以向劳动合同履行地或者用人单位所在地的劳动人事争议仲裁委员会申请仲裁。双方当事人分别向劳动合同履行地和用人单位所在地的劳动人事争议仲裁委员会申请仲裁的，由劳动合同履行地的劳动人事争议仲裁委员会管辖。\n\n劳动人事争议仲裁委员会具体受理哪些劳动争议？\n劳动人事争议调解组织受理用人单位与其建立劳动关系的劳动者之间发生的以下劳动争议：①因确认劳动关系发生的争议；②因订立、履行、变更、解除和终止劳动合同发生的争议；③因除名、辞退和辞职、离职发生的争议；④因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；⑤因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；⑥法律、法规规定的其他劳动争议。",
+    "法定依据": "<!--guojia-->中华人民共和国劳动争议调解仲裁法省人力社保厅2021-04-09\n第五条发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁；对仲裁裁决不服的，除本法另有规定的外，可以向人民法院提起诉讼。<!--guojia-->\r\n<!--sheng--><!--sheng-->\r\n<!--shi--><!--shi-->\r\n<!--xian--><!--xian-->"
+  },
+  "collected_at": "2026-10-29T11:19:44.476Z",
+  "verified_at": "2026-10-29T11:21:08.789171+00:00",
+  "verification_status": "partial",
+  "collection_status": "own_source_captured",
+  "published": false,
+  "publication_status": "unpublished",
+  "can_generate": true,
+  "candidate_web_qa": "NOT_RUN",
+  "channel": {
+    "raw_value": "网上申请/现场窗口申请/邮寄申请",
+    "form": "window_and_online",
+    "online_status": "auth_required",
+    "entry_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+    "entry_check": {
+      "url": "https://user.zjzwfw.gov.cn/pc/login",
+      "status": "auth_required",
+      "official_link": true,
+      "checked_at": "2026-10-29T11:20:11.216Z",
+      "submitted": false,
+      "post_login_flow": "unknown"
+    }
+  },
+  "evidence": {
+    "capture_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/guide-dom.json",
+    "capture_sha256": "46016aea05ef61f2557a19b07fcbc1df910741325a81b3917a5769e123ce855c",
+    "search_capture_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/search.json",
+    "search_capture_sha256": "7faecdf01f1a9c46a3f31c41754427c4ed8da5b76920c86251b8c4fbb23d8fe6",
+    "manifest_sha256": "c71d92d0d46b59a6708bbb40d75c34eb55f566a3b0b354fde0f6583b4c1c1857",
+    "public_whitelist_sha256": "9ff527502ded47094a161caeacbf3e69660dccc88e7062246d20d978902361f3"
+  },
+  "sample_policy": {
+    "id_card_example": "own control and reference recorded; bytes not downloaded/distributed because personal data safety not confirmed"
+  },
+  "warnings": [
+    "仅适用本区自身正式事项，不代表全市、全省或全国。",
+    "线上实际进入统一登录和验证码，未登录或提交；登录后流程能力未知。",
+    "法定60天、承诺44工作日与说明45日/延期至60日按原字段分别保留，不将5工作日受理审查当全案时限。",
+    "材料栏纸质2份与申请书附件按对方当事人人数提交副本的说明分别保留，未擅自统一份数。",
+    "临安匿名条件响应另有ISPUBLISH=0的证据清单项，原生已发布四材料未列出该控件；不据此开放独立证据下载或生成。",
+    "仅本区自身空白文书完成离线填写；申请默认且仅支持劳动者区段，单位申请未适配。版式及候选网页验收另行记录；不代表已发布。"
+  ],
+  "evidence_template_status": "not_found_in_checked_own_materials_not_official_absence",
+  "pending_verification": [
+    "官方原件逐页版式",
+    "字段填写适配",
+    "候选网页端到端验收",
+    "登录后的真实办案能力"
+  ],
+  "scope_identity": {
+    "selected_region_code": "330112",
+    "official_jurisCode": "330112",
+    "official_taskCode": "11330185002508182w4002014302002",
+    "official_dcode": "41c59062-1bee-45d9-a9ff-645b91059195",
+    "own_window": [
+      {
+        "address": "杭州市临安区锦城街道衣锦街468号社会矛盾纠纷调处化解中心一楼劳动仲裁窗口",
+        "addressKind": "6",
+        "acceptTimeDesc": "工作日：上午8:30-11:30，下午14:00-17:00",
+        "addressPhone": ""
+      }
+    ]
+  },
+  "unpublished_source_materials": [
+    {
+      "ORDERNUM": 4,
+      "IS_SHARE": "",
+      "ISPROVE": 0,
+      "FORMAT": 4,
+      "PAGE_NUM": 2,
+      "EMPTYTABLE": {
+        "FILECONTENT": "",
+        "FILEURL": "//portal.zjzwfw.gov.cn/media/oss/FILE/META_DATA/872DFF90A8578907CB947197A784AA48.docx",
+        "FILENAME": "872DFF90A8578907CB947197A784AA48.docx"
+      },
+      "EXAMPLETABLE": {
+        "FILECONTENT": "",
+        "FILEURL": "",
+        "FILENAME": ""
+      },
+      "PAGE_FORMAT": "A4",
+      "ISPUBLISH": 0,
+      "MATERIAL_PROMISE": 0,
+      "MATERIAL_ROLE": "self",
+      "FILL_EXPLIAN": "",
+      "MATERIAL_TYPE": 1,
+      "SOURCE_TYPE": 1,
+      "IS_MUST": 1,
+      "NECESSITY_DESC": "",
+      "GROUP_SUBMIT_NUM": "",
+      "DETAIL_REQUIREMENT": "",
+      "TYPE": 1,
+      "IS_RQ": 0,
+      "SOURCE_EXPLAIN": "",
+      "ACCEPT_STAND": "真实有效",
+      "MATERIALNAME": "《证据清单》",
+      "MATERIAL_GROUP": "",
+      "BY_LAW": "中华人民共和国劳动争议调解仲裁法  全国人民代表大会常务委员会  2008-05-01",
+      "BAK": "",
+      "MATERIAL_RES": "",
+      "MATERIALALIAS": "《劳动仲裁证据清单》",
+      "PROVETYPE": "",
+      "NECESSITY": 1,
+      "STDMATERIALID": 17811598199981003,
+      "QLINNERCODE": "41c59062-1bee-45d9-a9ff-645b91059195",
+      "MATERIALGUID": "24CAFAA94DCC085FB5422E15231F88AD"
+    }
+  ],
+  "service_ids": {
+    "localInnerCode": "41c59062-1bee-45d9-a9ff-645b91059195",
+    "taskCode": "11330185002508182w4002014302002"
+  }
+}

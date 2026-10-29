@@ -1,0 +1,44 @@
+[
+  {
+    "region_code": "330109",
+    "kind": "application",
+    "source_id": "57f5b9173d3a4f1e559eb4ab",
+    "source_file": "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/originals/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+    "source_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+    "file": "reports/nationwide-verification-20261029-d/zhejiang-adaptation/generated/330109-application.docx",
+    "sha256": "eea5aa044d5d3bb3a36b224344217e244224164b8b5162fe9ecf1782caa9d123",
+    "changed_package_parts": [
+      "word/document.xml"
+    ],
+    "synthetic_only": true,
+    "visual_qa": "NOT_RUN"
+  },
+  {
+    "region_code": "330109",
+    "kind": "evidence",
+    "source_id": "57f5b9173d3a4f1e559eb4ab",
+    "source_file": "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/originals/872DFF90A8578907CB947197A784AA48.docx",
+    "source_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+    "file": "reports/nationwide-verification-20261029-d/zhejiang-adaptation/generated/330109-evidence.docx",
+    "sha256": "430ef631022c586809b131c762f9fd57341a94d231458f8a49ad65d67bb56d4e",
+    "changed_package_parts": [
+      "word/document.xml"
+    ],
+    "synthetic_only": true,
+    "visual_qa": "NOT_RUN"
+  },
+  {
+    "region_code": "330112",
+    "kind": "application",
+    "source_id": "f556a6146755db0f84784861",
+    "source_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/originals/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+    "source_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+    "file": "reports/nationwide-verification-20261029-d/zhejiang-adaptation/generated/330112-application.docx",
+    "sha256": "eea5aa044d5d3bb3a36b224344217e244224164b8b5162fe9ecf1782caa9d123",
+    "changed_package_parts": [
+      "word/document.xml"
+    ],
+    "synthetic_only": true,
+    "visual_qa": "NOT_RUN"
+  }
+]

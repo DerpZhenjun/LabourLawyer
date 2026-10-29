@@ -1,0 +1,321 @@
+{
+  "scope": "public frozen source references, provider/tests and synthetic-only offline QA artifacts; no identity examples or private cases",
+  "files": {
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/ATTEMPTS.json": {
+      "sha256": "b5505e1d8a7fbd3307a4c291c150f2bd82d7da0d34c5219edc1f979c7b502e78",
+      "bytes": 828
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/DOCUMENT-QA.json": {
+      "sha256": "a5e4142e5edda5dcf1a2fed13fd47e6c5265de0aa02bf67aa75be4084046c0cf",
+      "bytes": 6269
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/generated/330109-application.docx": {
+      "sha256": "eea5aa044d5d3bb3a36b224344217e244224164b8b5162fe9ecf1782caa9d123",
+      "bytes": 27635
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/generated/330109-evidence.docx": {
+      "sha256": "430ef631022c586809b131c762f9fd57341a94d231458f8a49ad65d67bb56d4e",
+      "bytes": 15871
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/generated/330112-application.docx": {
+      "sha256": "eea5aa044d5d3bb3a36b224344217e244224164b8b5162fe9ecf1782caa9d123",
+      "bytes": 27635
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/generated.json": {
+      "sha256": "d8e8f01db74ede8c72c619b3a83ce8c6ba8bbbe017087b068c643f8d3a5306c4",
+      "bytes": 1967
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/guide-330109.json": {
+      "sha256": "271d39e14b6a25fa932da64e8d66b1cce5f89aaaaa76c615d0cacb06e5853c7e",
+      "bytes": 26844
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/guide-330112.json": {
+      "sha256": "0883939261922bc412fa0e71aa1773253a51e3de2bfb6e8a62b9c1a3ce6d79b1",
+      "bytes": 25970
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/qa.py": {
+      "sha256": "b7666dc16a5a8f056d30ef5acc312e990e55cd081f0581779ded97936a7a4fcc",
+      "bytes": 5885
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330109-generated-application/document.pdf": {
+      "sha256": "d0ee24a8498d9c5ed795012324bbec9d23e05137ce1811b9987d6ca22b7bff91",
+      "bytes": 174558
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330109-generated-application/page-1.png": {
+      "sha256": "7c6590d6cc181d743f666b33ae46d6a6eb5620b6047db85668ee311e98db62e6",
+      "bytes": 98812
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330109-generated-application/page-2.png": {
+      "sha256": "c08fac32f2642af3cc06ad81bbb8145054b713f11034cc4239404e918602e9a8",
+      "bytes": 109051
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330109-generated-application/page-3.png": {
+      "sha256": "502a52ba6ddae039c5f00ba01234feec7eb40d8721e60ac5accfd20dd77710ab",
+      "bytes": 69916
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330109-generated-evidence/document.pdf": {
+      "sha256": "6c07eede68641639c648bdc92fd9ca4827d898db8d26056a1f8bb009660a40f0",
+      "bytes": 95734
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330109-generated-evidence/page-1.png": {
+      "sha256": "807d413c35a37ed5d0e761711ccd7290a2cb55bff10ea57118a0bf14091e0b5c",
+      "bytes": 87746
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330109-original-application/document.pdf": {
+      "sha256": "8977ccf802b791440c9606760fda34413a1c7ca241f8b9a99ddc31fab912d142",
+      "bytes": 224881
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330109-original-application/page-1.png": {
+      "sha256": "6fe7a8f412aafe8fec9788c8beb88bc6be661d6a780c5d6d0596197bd0026a55",
+      "bytes": 80757
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330109-original-application/page-2.png": {
+      "sha256": "7cd28ddbe7dd2f4ecf06f003edb58bddbf7daab99643bc46e5b8e180ac37f36e",
+      "bytes": 48201
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330109-original-application/page-3.png": {
+      "sha256": "1186f99d39032b1984d91f7243a0256f8cc81d6a3308c3cc579611df2623c98d",
+      "bytes": 68039
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330109-original-application/page-4.png": {
+      "sha256": "1fe16f60c122e134bf6e2fb248ff0dce9ac84c684b9ead9b57e5ff4942763446",
+      "bytes": 79871
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330109-original-application/page-5.png": {
+      "sha256": "f9b9a3356a66ce9fea3af8fe68f6b973e30b37167cd6e667b20f631bc47ee76e",
+      "bytes": 44440
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330109-original-application/page-6.png": {
+      "sha256": "c3cb07bada61bd8842c44490e7ab367aac775fd719669b1dced51b9379ec0063",
+      "bytes": 69832
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330109-original-evidence/document.pdf": {
+      "sha256": "043e52f8bc761bda2320f7fcaaee95a3d864b9eb7ff65e7ef79d1290772aaaf0",
+      "bytes": 64809
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330109-original-evidence/page-1.png": {
+      "sha256": "de33f319ca54b4a5190b1c4b302a2d79fa51c57a4f0b0c5ff9db864e2445e4e7",
+      "bytes": 67372
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330112-generated-application/document.pdf": {
+      "sha256": "57903abf4bb7b0117e9dc8134e0e9a9753ee1d4778af8a4915e59f2513bb2bea",
+      "bytes": 174558
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330112-generated-application/page-1.png": {
+      "sha256": "7c6590d6cc181d743f666b33ae46d6a6eb5620b6047db85668ee311e98db62e6",
+      "bytes": 98812
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330112-generated-application/page-2.png": {
+      "sha256": "c08fac32f2642af3cc06ad81bbb8145054b713f11034cc4239404e918602e9a8",
+      "bytes": 109051
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330112-generated-application/page-3.png": {
+      "sha256": "502a52ba6ddae039c5f00ba01234feec7eb40d8721e60ac5accfd20dd77710ab",
+      "bytes": 69916
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330112-original-application/document.pdf": {
+      "sha256": "6ae0eb4cccf60c2547fb26c3eaba101608fb7368712d90e9fbe14bc958d7f080",
+      "bytes": 224881
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330112-original-application/page-1.png": {
+      "sha256": "6fe7a8f412aafe8fec9788c8beb88bc6be661d6a780c5d6d0596197bd0026a55",
+      "bytes": 80757
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330112-original-application/page-2.png": {
+      "sha256": "7cd28ddbe7dd2f4ecf06f003edb58bddbf7daab99643bc46e5b8e180ac37f36e",
+      "bytes": 48201
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330112-original-application/page-3.png": {
+      "sha256": "1186f99d39032b1984d91f7243a0256f8cc81d6a3308c3cc579611df2623c98d",
+      "bytes": 68039
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330112-original-application/page-4.png": {
+      "sha256": "1fe16f60c122e134bf6e2fb248ff0dce9ac84c684b9ead9b57e5ff4942763446",
+      "bytes": 79871
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330112-original-application/page-5.png": {
+      "sha256": "f9b9a3356a66ce9fea3af8fe68f6b973e30b37167cd6e667b20f631bc47ee76e",
+      "bytes": 44440
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render/330112-original-application/page-6.png": {
+      "sha256": "c3cb07bada61bd8842c44490e7ab367aac775fd719669b1dced51b9379ec0063",
+      "bytes": 69832
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render-inventory.json": {
+      "sha256": "7915c6a5140db540d0dc05ab0da894177c6ce50a53351878b9305713698a6f57",
+      "bytes": 3931
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/render-isolated.ps1": {
+      "sha256": "75b23d15a04e502d412f7555625217ff956453cdad0c296c73ac2f18ab045563",
+      "bytes": 7794
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/generated/330109-application.docx": {
+      "sha256": "fe27d706cc30f771c0d93c0b5305234f56a5d2a883793991748c02e4484632c1",
+      "bytes": 27609
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/generated/330109-evidence.docx": {
+      "sha256": "430ef631022c586809b131c762f9fd57341a94d231458f8a49ad65d67bb56d4e",
+      "bytes": 15871
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/generated/330112-application.docx": {
+      "sha256": "fe27d706cc30f771c0d93c0b5305234f56a5d2a883793991748c02e4484632c1",
+      "bytes": 27609
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/generated.json": {
+      "sha256": "85252e6c75d47acf1ae6e237b953aa887df8e5298f72a8aeaaad342f1d3c468f",
+      "bytes": 1967
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330109-generated-application/document.pdf": {
+      "sha256": "b2bb46188f5124f273a9e82f61aff179f604f9496b8e5cbdbd6985aaeabcec9c",
+      "bytes": 166572
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330109-generated-application/page-1.png": {
+      "sha256": "5d5e9a2f264157242242f1fe948117e1825ed269dfb7445a090cfe6957bdb813",
+      "bytes": 99786
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330109-generated-application/page-2.png": {
+      "sha256": "c08fac32f2642af3cc06ad81bbb8145054b713f11034cc4239404e918602e9a8",
+      "bytes": 109051
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330109-generated-application/page-3.png": {
+      "sha256": "502a52ba6ddae039c5f00ba01234feec7eb40d8721e60ac5accfd20dd77710ab",
+      "bytes": 69916
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330109-generated-evidence/document.pdf": {
+      "sha256": "f349897cdc2c3ae1dff56cb9b17d78ad0d412e269c86157a7ab741334620d3ea",
+      "bytes": 95734
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330109-generated-evidence/page-1.png": {
+      "sha256": "807d413c35a37ed5d0e761711ccd7290a2cb55bff10ea57118a0bf14091e0b5c",
+      "bytes": 87746
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330109-original-application/document.pdf": {
+      "sha256": "8977ccf802b791440c9606760fda34413a1c7ca241f8b9a99ddc31fab912d142",
+      "bytes": 224881
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330109-original-application/page-1.png": {
+      "sha256": "6fe7a8f412aafe8fec9788c8beb88bc6be661d6a780c5d6d0596197bd0026a55",
+      "bytes": 80757
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330109-original-application/page-2.png": {
+      "sha256": "7cd28ddbe7dd2f4ecf06f003edb58bddbf7daab99643bc46e5b8e180ac37f36e",
+      "bytes": 48201
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330109-original-application/page-3.png": {
+      "sha256": "1186f99d39032b1984d91f7243a0256f8cc81d6a3308c3cc579611df2623c98d",
+      "bytes": 68039
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330109-original-application/page-4.png": {
+      "sha256": "1fe16f60c122e134bf6e2fb248ff0dce9ac84c684b9ead9b57e5ff4942763446",
+      "bytes": 79871
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330109-original-application/page-5.png": {
+      "sha256": "f9b9a3356a66ce9fea3af8fe68f6b973e30b37167cd6e667b20f631bc47ee76e",
+      "bytes": 44440
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330109-original-application/page-6.png": {
+      "sha256": "c3cb07bada61bd8842c44490e7ab367aac775fd719669b1dced51b9379ec0063",
+      "bytes": 69832
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330109-original-evidence/document.pdf": {
+      "sha256": "043e52f8bc761bda2320f7fcaaee95a3d864b9eb7ff65e7ef79d1290772aaaf0",
+      "bytes": 64809
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330109-original-evidence/page-1.png": {
+      "sha256": "de33f319ca54b4a5190b1c4b302a2d79fa51c57a4f0b0c5ff9db864e2445e4e7",
+      "bytes": 67372
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330112-generated-application/document.pdf": {
+      "sha256": "efc963c200023698f1eb01cf957d675b91b105fa1a236719e1b443048954d20a",
+      "bytes": 166572
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330112-generated-application/page-1.png": {
+      "sha256": "5d5e9a2f264157242242f1fe948117e1825ed269dfb7445a090cfe6957bdb813",
+      "bytes": 99786
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330112-generated-application/page-2.png": {
+      "sha256": "c08fac32f2642af3cc06ad81bbb8145054b713f11034cc4239404e918602e9a8",
+      "bytes": 109051
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330112-generated-application/page-3.png": {
+      "sha256": "502a52ba6ddae039c5f00ba01234feec7eb40d8721e60ac5accfd20dd77710ab",
+      "bytes": 69916
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330112-original-application/document.pdf": {
+      "sha256": "6ae0eb4cccf60c2547fb26c3eaba101608fb7368712d90e9fbe14bc958d7f080",
+      "bytes": 224881
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330112-original-application/page-1.png": {
+      "sha256": "6fe7a8f412aafe8fec9788c8beb88bc6be661d6a780c5d6d0596197bd0026a55",
+      "bytes": 80757
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330112-original-application/page-2.png": {
+      "sha256": "7cd28ddbe7dd2f4ecf06f003edb58bddbf7daab99643bc46e5b8e180ac37f36e",
+      "bytes": 48201
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330112-original-application/page-3.png": {
+      "sha256": "1186f99d39032b1984d91f7243a0256f8cc81d6a3308c3cc579611df2623c98d",
+      "bytes": 68039
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330112-original-application/page-4.png": {
+      "sha256": "1fe16f60c122e134bf6e2fb248ff0dce9ac84c684b9ead9b57e5ff4942763446",
+      "bytes": 79871
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330112-original-application/page-5.png": {
+      "sha256": "f9b9a3356a66ce9fea3af8fe68f6b973e30b37167cd6e667b20f631bc47ee76e",
+      "bytes": 44440
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render/330112-original-application/page-6.png": {
+      "sha256": "c3cb07bada61bd8842c44490e7ab367aac775fd719669b1dced51b9379ec0063",
+      "bytes": 69832
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/render-inventory.json": {
+      "sha256": "445f10e46947674f5d76173bddeb2543bd7bc6fed335c8def401ef3be9f4c9f5",
+      "bytes": 3433
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/synthetic-payload.json": {
+      "sha256": "f8ee317fba9b32206d29b1e7fa850cdc00663c8cb50185c752bcc4c28dba6118",
+      "bytes": 1932
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/word-instance-isolation.json": {
+      "sha256": "86066f081efaf487d34883b0ebb82c3417d89066500c87db4ac26c36e5a9c131",
+      "bytes": 398
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/round1/word-render-tasks.json": {
+      "sha256": "5892ee06e0bf07dabc678f59ae3bf5411c93527bbec2087ce4b8c98a9b13d180",
+      "bytes": 1538
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/synthetic-payload.json": {
+      "sha256": "f8ee317fba9b32206d29b1e7fa850cdc00663c8cb50185c752bcc4c28dba6118",
+      "bytes": 1932
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/TEST-REPORT.md": {
+      "sha256": "c60cc1bed728650c3d510626c12ae8a0b5e8473b4d7e72009c3a064c035afe01",
+      "bytes": 5536
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/word-instance-isolation.json": {
+      "sha256": "3e7a8cf6babbd8290c61110215aefa71a3be3e029de5086f94be9f9f6c4a278a",
+      "bytes": 398
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/word-render-tasks-round2.json": {
+      "sha256": "436a8417d4a6d1ccc25457b84ca2c3385778cb712a5767b092b02d81f4575277",
+      "bytes": 755
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/word-render-tasks.json": {
+      "sha256": "5892ee06e0bf07dabc678f59ae3bf5411c93527bbec2087ce4b8c98a9b13d180",
+      "bytes": 1538
+    },
+    "backend/regional_zhejiang_oct29d.py": {
+      "sha256": "0b882685586f0ead41f13a2f57d807072d9071a3b16ddda16ffb1fdc99b9d16e",
+      "bytes": 26505
+    },
+    "backend/tests/test_zhejiang_oct29d.py": {
+      "sha256": "8c42f75987be4351f8e130d6f760cb9a7ab5218bd028c2d1bb795915f5362aa3",
+      "bytes": 12306
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang-adaptation/ADAPTATION-MANIFEST.json": {
+      "sha256": "25b4ba6c3c56076e5d47b77b483889bc6556d4d22e5472b6c5fe75c82180e896",
+      "bytes": 18819
+    }
+  }
+}
