@@ -5,7 +5,8 @@
     "pages/cases/index",
     "pages/assistant/index",
     "pages/profile/index",
-    "pages/document/index"
+    "pages/document/index",
+    "pages/regional/index"
   ],
   "window": {
     "navigationBarTitleText": "LabourLawyer",

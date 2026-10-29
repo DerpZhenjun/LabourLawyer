@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "scope": "exact owned miniprogram sources and safe verification artifacts",
+  "files": [
+    {
+      "file": "miniprogram/app.json",
+      "bytes": 870,
+      "sha256": "9a7f0a8976846d53fa878e05e685712a0c3d47ca348901f46e8036eb2ef98bea"
+    },
+    {
+      "file": "miniprogram/pages/province/index.js",
+      "bytes": 3670,
+      "sha256": "041e3b845b055e432555e11b9b50750b67cbd37a4733a844d2a7e2a3be94d242"
+    },
+    {
+      "file": "miniprogram/pages/province/index.wxml",
+      "bytes": 3825,
+      "sha256": "65b2a3f82de7a304537449e8fba4a774ce59b69ca0f84f3ea9629935741f894b"
+    },
+    {
+      "file": "miniprogram/pages/regional/index.js",
+      "bytes": 19827,
+      "sha256": "96bf810c8ec162ab8c385dd9a45359d53cde7ac2336b645245d17c270a90a7f9"
+    },
+    {
+      "file": "miniprogram/pages/regional/index.json",
+      "bytes": 57,
+      "sha256": "1ee42e3a6380b963a1d71c7267e3979a7dcd2073e02e3209df822d5462c42a1c"
+    },
+    {
+      "file": "miniprogram/pages/regional/index.wxml",
+      "bytes": 7037,
+      "sha256": "d56ff9a6abf1fe6a52773c30e3d07d6881ff5a55e66d04aee666b85d4998ec63"
+    },
+    {
+      "file": "miniprogram/pages/regional/index.wxss",
+      "bytes": 1647,
+      "sha256": "c8a0c844393620022f423b7c0867a82aa4a1601641dd74bd7e4b5428a79ef50a"
+    },
+    {
+      "file": "miniprogram/utils/regionalTransport.js",
+      "bytes": 4023,
+      "sha256": "113e7d89d0cd52f61170e8f8d3bd6ec28ff0e4cdb4eea619d196c14f90b0fc20"
+    },
+    {
+      "file": "miniprogram/utils/documents.js",
+      "bytes": 3844,
+      "sha256": "53b771802487fab7e573dceddddc8dfb0bc6cc20b181b73ec9551685c7ba08cb"
+    },
+    {
+      "file": "miniprogram/tests/regional-page.test.cjs",
+      "bytes": 19686,
+      "sha256": "80da1c590890c6de3d5038e0ad31339cd09df021b196499003b4cb77a39e35b3"
+    },
+    {
+      "file": "miniprogram/tests/module-loading.test.cjs",
+      "bytes": 1306,
+      "sha256": "9169fdff8066c59f33a8ba2c7bb762f93d5173f45d9710d7f87cfaa89e47109f"
+    },
+    {
+      "file": "miniprogram/scripts/sync-data.cjs",
+      "bytes": 902,
+      "sha256": "043a62e6281b4506cdaac508dd3004a3c91de8506dd99605147f48c1df23d8f8"
+    },
+    {
+      "file": "miniprogram/package.json",
+      "bytes": 280,
+      "sha256": "69e49494af99d6d3085fd9ac38b2335fd2e53ff7b6c722104a656b39fab7d0f6"
+    },
+    {
+      "file": "miniprogram/data/provinces.js",
+      "bytes": 216704,
+      "sha256": "384045d667593b3b5cffde66f9aa5f7e3f5db549b9a155cd552c9c0edf5db115"
+    },
+    {
+      "file": "miniprogram/data/documentForms.js",
+      "bytes": 26174,
+      "sha256": "670d01bc72e67060d69c4e694522faafd866862e82f7079b1bf49a8a566fed9b"
+    },
+    {
+      "file": "miniprogram/data/provinceExperiences.js",
+      "bytes": 111062,
+      "sha256": "46fb0618d67ff9f863d1c826a36932f0b5b7e0f93d489916f93d13e46bb2ae7c"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/miniprogram/MANIFEST.json",
+      "bytes": 3283,
+      "sha256": "56a24cb4de99bd45ebc356e7937dfeda900c9e109f268754b0bfddf27970c3b5"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/miniprogram/RESULT.json",
+      "bytes": 706,
+      "sha256": "9acfd2767288057998832ee737c5e72b632248b7133c802d9a620f7df16d5fc3"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/miniprogram/TEST-REPORT.md",
+      "bytes": 2551,
+      "sha256": "d57ab2e55c5f4d02a5df4623c53f69210d6075dc368151b3116367c9eaa43766"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/miniprogram-browser/01-fuyang-guide.png",
+      "bytes": 129352,
+      "sha256": "c38f4c0fb241cf9c3421f54baf4f4574870971a97bd9394a613fe203313b7a7a"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/miniprogram-browser/02-pending-tonglu.png",
+      "bytes": 110458,
+      "sha256": "21c5120e6455c45a4302dc66615cf4fdc7a07415d4ef59fc79bc5da4cc2a3adb"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/miniprogram-browser/03-evidence-generated.png",
+      "bytes": 120521,
+      "sha256": "30f3ad2ec45111ba847e4e8112aa94359c3d27afdf9aaf9ba74861c06a6a0a6a"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/miniprogram-browser/blank-download.json",
+      "bytes": 284,
+      "sha256": "74ec7406c8848ee2d22ee5cfcfbb6aaa9e2ef9d2b54130cb5bb208d5e3ef5cff"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/miniprogram-browser/final-state.json",
+      "bytes": 185,
+      "sha256": "f271460edb008f17c239c206cc90c0711c7d5a971142f21504393229445b5bf0"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/miniprogram-browser/fuyang-application-fiction.docx",
+      "bytes": 27431,
+      "sha256": "76a01df18c00908e147267135ba875bea33699321ae757f80820f500ab1a7243"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/miniprogram-browser/fuyang-evidence-fiction.docx",
+      "bytes": 15737,
+      "sha256": "7f4658a05bd600a38999c72a85ef721d0e22298f9e28cd8898e220479e420016"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/miniprogram-browser/generate-checks.json",
+      "bytes": 656,
+      "sha256": "beff8275e9a37dd776e8d01a9bbf3e8039b1a1e9f542d600f4fcfe8d4b9361a2"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/miniprogram-browser/RESULT.json",
+      "bytes": 1351,
+      "sha256": "1519fc1e260a0233673c893619d45133eb262571c81c5d4fba4951501a956848"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/miniprogram-browser/scope-checks.json",
+      "bytes": 542,
+      "sha256": "eadb06b715e61bc9efa004aa06b1c8e3b24ed3576fb990af86d84eca345a0a4c"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/miniprogram-browser/TEST-REPORT.md",
+      "bytes": 4002,
+      "sha256": "ae20a19a1dfdb8a7adcf19fff34a1b03542bd7ae633eca4ce90ebd5e6b832b4e"
+    }
+  ],
+  "whitelist_itself_is_additional": true,
+  "excluded_shared_files": [
+    "miniprogram/README.md",
+    "miniprogram/utils/generated/regional-contracts.js"
+  ]
+}

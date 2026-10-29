@@ -1,5 +1,5 @@
-const provinces = require('../data/provinces.json')
-const schema = require('../data/documentForms.json')
+const provinces = require('../data/provinces')
+const schema = require('../data/documentForms')
 const evidenceKeys = ['name', 'pageCount', 'source', 'purpose', 'kind', 'originalType', 'hasOriginal', 'pageRange', 'itemCount', 'notes']
 const derived = ['contractPeriod', 'proof', 'applicantAddressWithPostalCode', 'respondentAddressWithPostalCode']
 

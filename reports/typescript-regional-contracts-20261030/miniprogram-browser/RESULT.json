@@ -1,0 +1,38 @@
+{
+  "status": "PASS_REAL_WECHAT_SIMULATOR_SCOPED",
+  "tools": {
+    "devtools": "2.02.2608070",
+    "base_library": "3.5.8",
+    "automator": "0.13.0"
+  },
+  "regions": [
+    "富阳区",
+    "建德市"
+  ],
+  "unverified_region": "桐庐县",
+  "actual_generate_count": 2,
+  "actual_blank_download_count": 1,
+  "generated_files": [
+    {
+      "file": "reports/typescript-regional-contracts-20261030/miniprogram-browser/fuyang-application-fiction.docx",
+      "bytes": 27431,
+      "sha256": "76a01df18c00908e147267135ba875bea33699321ae757f80820f500ab1a7243"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/miniprogram-browser/fuyang-evidence-fiction.docx",
+      "bytes": 15737,
+      "sha256": "7f4658a05bd600a38999c72a85ef721d0e22298f9e28cd8898e220479e420016"
+    }
+  ],
+  "source_version_contract_header_match": true,
+  "regional_vm_checks": 18,
+  "legacy_provincial_payloads": 34,
+  "data_source_parity": 3,
+  "shared_typescript_sha256": "fa13aa9250e1c3892c54d6db49f56d491f2f66973f87de329d478fe8f88883ad",
+  "shared_runtime_sha256": "ffcd1acd2045296af7f0571464c010ec70c39ef454456a253b13bb3d3b6220f8",
+  "real_device": false,
+  "published": false,
+  "account_operations": false,
+  "model_calls": false,
+  "final_state": "one project window; 富阳区 evidence empty form; no modal or Word preview; SDK disconnected"
+}

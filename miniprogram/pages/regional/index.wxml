@@ -1,0 +1,58 @@
+<view class="page regional-page">
+  <view class="card intro">
+    <text class="title">先选办理区县，再填写本区表格</text>
+    <text>本页按区县自己的来源核对。省级入口仍可使用，请结合实际受理地区确认。</text>
+    <label for="regional-province">省份</label>
+    <picker id="regional-province" range="{{provinces}}" value="{{provinceIndex}}" bindchange="onProvinceChange" aria-label="选择省份"><view class="picker-value">{{provinces[provinceIndex]}} ▾</view></picker>
+    <label for="regional-city">市</label>
+    <picker id="regional-city" range="{{cities}}" value="{{cityIndex}}" disabled="{{!cities.length}}" bindchange="onCityChange" aria-label="选择市"><view class="picker-value">{{cityIndex >= 0 ? cities[cityIndex] : '请选择市'}} ▾</view></picker>
+    <label for="regional-district">办理区县</label>
+    <picker id="regional-district" range="{{districts}}" value="{{districtIndex}}" disabled="{{!districts.length}}" bindchange="onDistrictChange" aria-label="选择办理区县"><view class="picker-value">{{districtIndex >= 0 ? districts[districtIndex] : '请选择区县'}} ▾</view></picker>
+    <text class="notice" aria-live="polite">{{notice}}</text>
+  </view>
+  <view wx:if="{{guide.source_id}}" class="card">
+    <text class="title">{{guide.city}}{{guide.district}}自己的指南</text>
+    <text wx:for="{{fields}}" wx:key="label" selectable>{{item.label}}：{{item.value}}</text>
+    <text wx:if="{{channelText}}" selectable>办理渠道原文：{{channelText}}</text>
+    <text wx:for="{{warnings}}" wx:key="index" class="warning" selectable>{{item}}</text>
+    <text class="muted" selectable>来源：{{guide.source_id}} · 版本：{{guide.version}}</text>
+    <text selectable>{{guide.source_url}}</text><button bindtap="copySource">复制官方指南网址</button>
+  </view>
+  <view wx:for="{{sections}}" wx:key="label" class="card"><text class="title">{{item.label}}</text><text selectable>{{item.value}}</text></view>
+  <view wx:if="{{materials.length}}" class="card">
+    <text class="title">申请材料</text>
+    <view wx:for="{{materials}}" wx:key="index" class="material">
+      <text class="field-label">{{item.name}}</text>
+      <text wx:if="{{item.required}}">必要性：{{item.required}}</text><text wx:if="{{item.copies}}">原文份数：{{item.copies}}</text>
+      <text wx:if="{{item.description}}" selectable>{{item.description}}</text>
+      <text wx:if="{{item.original_copy}}">原件或复印件：{{item.original_copy}}</text><text wx:if="{{item.paper_size}}">纸张：{{item.paper_size}}</text><text wx:if="{{item.format}}">材料格式：{{item.format}}</text><text wx:if="{{item.source_channel}}">材料来源：{{item.source_channel}} {{item.source_channel_detail}}</text><text wx:if="{{item.instructions}}" selectable>填表说明：{{item.instructions}}</text><text wx:if="{{item.acceptance_standard}}" selectable>受理标准：{{item.acceptance_standard}}</text><text wx:if="{{item.material_basis}}" selectable>材料依据：{{item.material_basis}}</text>
+    </view>
+  </view>
+  <view wx:if="{{blanks.length}}" class="card"><text class="title">本区公开空白原件</text><button wx:for="{{blanks}}" wx:key="id" data-index="{{item.index}}" bindtap="downloadBlank" disabled="{{busy}}">下载空白：{{item.original_name}}</button></view>
+  <view wx:if="{{kinds.length}}" class="card">
+    <label for="regional-kind">文书类型与原件</label><picker id="regional-kind" range="{{kinds}}" value="{{kindIndex}}" bindchange="onKindChange" aria-label="选择文书类型与自己的原件"><view class="picker-value">{{kinds[kindIndex]}} ▾</view></picker>
+    <text>填写容量是技术容量，不能作为官方受理要求。是否必填、材料份数和办理方式请核对上方本区原文。</text>
+  </view>
+  <view wx:if="{{available}}" class="card form-card">
+    <text class="title">填写内容</text>
+    <text>日期、份数及意愿由本人确认；签名处保持空白，打印后由本人手写签名。</text>
+    <view class="actions"><button bindtap="example" disabled="{{busy}}">填入虚构示例</button><button bindtap="clear" disabled="{{busy}}">清空本份草稿</button><button bindtap="saveDraft">保存本份草稿</button></view>
+    <text wx:if="{{draftBlocked}}" class="warning">这份草稿已阻止生成，请清空后按当前来源重新填写。</text>
+    <block wx:for="{{controls}}" wx:key="id">
+      <view wx:if="{{item.viewType === 'list'}}" class="list-heading"><text class="field-label">{{item.label}}（{{item.count}}{{item.maxItems ? ' / ' + item.maxItems : ''}}）</text><button size="mini" data-path="{{item.path}}" bindtap="addItem" disabled="{{!item.canAdd || busy || draftBlocked}}" aria-label="增加{{item.label}}">增加一项</button></view>
+      <view wx:elif="{{item.viewType === 'row'}}" class="list-heading"><text>{{item.label}}</text><button size="mini" data-path="{{item.path}}" data-index="{{item.index}}" bindtap="removeItem" disabled="{{!item.canRemove || busy || draftBlocked}}" aria-label="删除{{item.label}}">删除此项</button></view>
+      <view wx:else class="field">
+        <label for="{{item.id}}" class="field-label">{{item.label}}</label>
+        <picker wx:if="{{item.choices.length}}" id="{{item.id}}" range="{{item.choices}}" data-path="{{item.path}}" bindchange="onChoice" disabled="{{busy || draftBlocked}}" aria-label="{{item.label}}"><view class="picker-value">{{item.value || '请选择；未选择时保持空白'}} ▾</view></picker>
+        <textarea wx:else id="{{item.id}}" value="{{item.value}}" data-path="{{item.path}}" bindinput="onInput" maxlength="-1" auto-height disabled="{{busy || draftBlocked}}" aria-label="{{item.label}}"/>
+        <text wx:if="{{item.maxLength}}" class="muted">已输入 {{item.count}} · 技术容量 {{item.maxLength}} 字符（超出会提示，不会截断）</text>
+        <text wx:if="{{item.format === 'iso-date'}}" class="muted">留空，或按 YYYY-MM-DD 输入实际日期。</text>
+        <text wx:if="{{item.integer}}" class="muted">填写整数；范围 {{item.min}} 至 {{item.max}}。可留空时请保持空白。</text>
+        <button wx:if="{{item.viewType === 'list-item'}}" size="mini" data-path="{{item.parentPath}}" data-index="{{item.index}}" bindtap="removeItem" disabled="{{!item.canRemove || busy || draftBlocked}}" aria-label="删除{{item.label}}">删除此项</button>
+      </view>
+    </block>
+    <view wx:if="{{errors.length}}" class="warning" aria-live="polite"><text wx:for="{{errors}}" wx:key="index">{{item.label || item.field}}：{{item.message}}</text></view>
+    <button class="button-primary" bindtap="generate" disabled="{{busy || !formValid || draftBlocked}}" loading="{{busy}}">核对后生成 Word</button>
+  </view>
+  <view class="status" aria-live="polite"><text wx:if="{{storageNotice}}">{{storageNotice}}</text><text wx:if="{{error}}" class="warning">{{error}}</text><text wx:if="{{result}}">{{result}}</text></view>
+</view>

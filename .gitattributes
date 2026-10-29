@@ -3,6 +3,10 @@
 *.js text eol=lf
 *.ts text eol=lf
 *.mjs text eol=lf
+*.cjs text eol=lf
+*.wxml text eol=lf
+*.wxss text eol=lf
+/miniprogram/app.json text eol=lf
 *.vue text eol=lf
 *.md text eol=lf
 *.bat text eol=crlf

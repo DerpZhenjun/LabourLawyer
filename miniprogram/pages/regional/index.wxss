@@ -1,0 +1,17 @@
+.regional-page { color: #183536; max-width: 1000rpx; margin: 0 auto; box-sizing: border-box; }
+.regional-page .card { display: flex; flex-direction: column; gap: 18rpx; }
+.regional-page text { display: block; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.65; }
+.title { font-size: 36rpx; font-weight: 700; }
+.field-label, .regional-page label { display: block; font-size: 30rpx; font-weight: 600; }
+.picker-value { min-height: 88rpx; display: flex; align-items: center; padding: 12rpx 20rpx; border: 2rpx solid #637b7b; border-radius: 12rpx; box-sizing: border-box; background: #fff; }
+.regional-page button { min-height: 88rpx; width: 100%; white-space: normal; line-height: 1.5; padding: 22rpx 20rpx; margin: 0; }
+.regional-page button[disabled] { color: #526262; background: #edf1f1; }
+.regional-page textarea { width: 100%; min-height: 100rpx; padding: 20rpx; border: 2rpx solid #637b7b; border-radius: 10rpx; box-sizing: border-box; background: #fff; font-size: 30rpx; line-height: 1.6; }
+.field { padding: 18rpx 0; display: flex; flex-direction: column; gap: 12rpx; }
+.list-heading { padding-top: 24rpx; border-top: 2rpx solid #cdd9d8; display: flex; flex-direction: column; gap: 12rpx; }
+.material { border-top: 2rpx solid #d9e2e1; padding-top: 16rpx; }
+.muted { font-size: 26rpx; color: #425e5e; }
+.warning { color: #90361c; background: #fff4e9; padding: 16rpx; border-radius: 8rpx; }
+.notice { background: #e9f4f1; padding: 18rpx; border-radius: 10rpx; }
+.actions, .status { display: flex; flex-direction: column; gap: 14rpx; }
+@media (min-width: 600px) { .actions { flex-direction: row; } .actions button { flex: 1; } }

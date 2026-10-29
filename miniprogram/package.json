@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "prebuild": "node scripts/sync-data.cjs --check",
+    "build": "node tests/module-loading.test.cjs",
+    "sync-data": "node scripts/sync-data.cjs",
+    "test": "node tests/module-loading.test.cjs && node tests/regional-page.test.cjs"
+  }
+}

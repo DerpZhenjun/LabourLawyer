@@ -1,0 +1,24 @@
+{
+  "jiande": {
+    "source": "f6487b8d118bdc3289baad17",
+    "version": 210,
+    "own_draft_restored": true
+  },
+  "fuyang": {
+    "source": "16f67bbbcf7b124948381309",
+    "version": 209,
+    "own_draft_restored": true
+  },
+  "rapid": {
+    "region": "建德市",
+    "source": "f6487b8d118bdc3289baad17",
+    "contract": "建德市",
+    "own_draft_restored": true
+  },
+  "pending": {
+    "region": "桐庐县",
+    "source": null,
+    "available": false,
+    "notice": "该地区办事指南尚未核验，暂不能填写生成。"
+  }
+}

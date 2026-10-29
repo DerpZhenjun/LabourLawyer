@@ -1,5 +1,5 @@
 const docs = require('../../utils/documents')
-const experiences = require('../../data/provinceExperiences.json').provinces
+const experiences = require('../../data/provinceExperiences').provinces
 Page({
   data: { province: {}, experience: { steps: [], materials: [], notes: [] }, theme: {}, templateLinks: [], process: [], materials: [], guides: [], guideLabels: [], selectedGuide: null, guideError: '' },
   onLoad(options) {
@@ -35,6 +35,7 @@ Page({
   copyPreferred() { const p=this.data.experience;wx.setClipboardData({data:p.source_url || p.portal_url}) },
   copyTemplate(event) { wx.setClipboardData({data:this.data.templateLinks[event.currentTarget.dataset.index].url}) },
   selectGuide(event) { this.setData({ selectedGuide: this.data.guides[Number(event.detail.value)] }) },
+  openRegional() { wx.navigateTo({url: `/pages/regional/index?province=${encodeURIComponent(this.slug)}`}) },
   openDocument(event) { wx.navigateTo({ url: `/pages/document/index?slug=${this.slug}&kind=${event.currentTarget.dataset.kind}` }) },
   copyGuide() { if (this.data.selectedGuide) wx.setClipboardData({ data: this.data.selectedGuide.guide_url }) },
   copyPortal() { wx.setClipboardData({ data: this.data.province.source_url }) },

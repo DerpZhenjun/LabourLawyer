@@ -1,0 +1,17 @@
+{
+  "status": "PASS_SYNTHETIC_PAGE_AND_TRANSPORT",
+  "regional_checks": 18,
+  "legacy_provincial_payloads": 34,
+  "shared_runtime": "miniprogram/utils/generated/regional-contracts.js",
+  "shared_runtime_owner": "shared_contract_build",
+  "new_page": "miniprogram/pages/regional/index",
+  "real_network": false,
+  "wechat_developer_tools": false,
+  "real_device": false,
+  "published_claim": false,
+  "database_writes": false,
+  "model_calls": false,
+  "service_operations": false,
+  "followup_simulator_report": "reports/typescript-regional-contracts-20261030/miniprogram-browser/TEST-REPORT.md",
+  "remaining_validation": ["真机页面交互与文件保存预览", "实际部署域名与网络策略"]
+}

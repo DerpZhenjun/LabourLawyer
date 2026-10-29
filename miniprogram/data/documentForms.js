@@ -1,0 +1,1302 @@
+// Generated from documentForms.json by scripts/sync-data.cjs. Do not edit.
+module.exports = {
+  "version": 1,
+  "fields": {
+    "committeeName": {
+      "label": "仲裁委员会",
+      "type": "text",
+      "maxLength": 120
+    },
+    "applicantName": {
+      "label": "申请人姓名",
+      "type": "text",
+      "maxLength": 80
+    },
+    "birthDate": {
+      "label": "出生日期",
+      "type": "date",
+      "maxLength": 300
+    },
+    "age": {
+      "label": "年龄",
+      "type": "number",
+      "maxLength": 10
+    },
+    "gender": {
+      "label": "性别",
+      "type": "select",
+      "maxLength": 20,
+      "options": [
+        "男",
+        "女",
+        "其他"
+      ]
+    },
+    "nationality": {
+      "label": "民族",
+      "type": "text",
+      "maxLength": 30
+    },
+    "idNumber": {
+      "label": "身份证号码",
+      "type": "text",
+      "maxLength": 40
+    },
+    "phone": {
+      "label": "联系电话",
+      "type": "text",
+      "maxLength": 40
+    },
+    "householdType": {
+      "label": "户籍类型",
+      "type": "select",
+      "maxLength": 50,
+      "options": [
+        "本省非农业户口",
+        "本省农业户口",
+        "外省非农业户口",
+        "外省农业户口",
+        "港澳台人员",
+        "外籍人员"
+      ]
+    },
+    "idAddress": {
+      "label": "户籍地址",
+      "type": "text",
+      "maxLength": 300
+    },
+    "applicantMailingAddress": {
+      "label": "申请人通讯地址",
+      "type": "text",
+      "maxLength": 300
+    },
+    "currentAddress": {
+      "label": "现住址",
+      "type": "text",
+      "maxLength": 300
+    },
+    "applicantPostalCode": {
+      "label": "申请人邮编",
+      "type": "text",
+      "maxLength": 20
+    },
+    "respondentPostalCode": {
+      "label": "单位邮编",
+      "type": "text",
+      "maxLength": 20
+    },
+    "nativePlace": {
+      "label": "原籍",
+      "type": "text",
+      "maxLength": 100
+    },
+    "identityDocumentType": {
+      "label": "身份证件类型",
+      "type": "text",
+      "maxLength": 50
+    },
+    "otherDocumentType": {
+      "label": "其他证件类型",
+      "type": "text",
+      "maxLength": 50
+    },
+    "otherDocumentNumber": {
+      "label": "其他证件号码",
+      "type": "text",
+      "maxLength": 80
+    },
+    "acceptMediation": {
+      "label": "是否接受调解",
+      "type": "select",
+      "maxLength": 20,
+      "options": [
+        "是",
+        "否"
+      ]
+    },
+    "legalAid": {
+      "label": "是否申请法律援助",
+      "type": "select",
+      "maxLength": 20,
+      "options": [
+        "是",
+        "否"
+      ]
+    },
+    "respondentType": {
+      "label": "单位性质",
+      "type": "text",
+      "maxLength": 100
+    },
+    "departmentHead": {
+      "label": "所在部门负责人",
+      "type": "text",
+      "maxLength": 80
+    },
+    "departmentHeadPosition": {
+      "label": "部门负责人职务",
+      "type": "text",
+      "maxLength": 80
+    },
+    "officeAtRegisteredAddress": {
+      "label": "办公地与注册地址是否一致",
+      "type": "select",
+      "maxLength": 20,
+      "options": [
+        "是",
+        "否"
+      ]
+    },
+    "actualOfficeAddress": {
+      "label": "实际办公地址",
+      "type": "text",
+      "maxLength": 300
+    },
+    "occupation": {
+      "label": "职业",
+      "type": "text",
+      "maxLength": 100
+    },
+    "employmentType": {
+      "label": "用工性质",
+      "type": "text",
+      "maxLength": 50
+    },
+    "registeredCapital": {
+      "label": "注册资金",
+      "type": "text",
+      "maxLength": 100
+    },
+    "lastWorkingDate": {
+      "label": "最后工作日期",
+      "type": "date",
+      "maxLength": 300
+    },
+    "otherNotes": {
+      "label": "其他说明",
+      "type": "textarea",
+      "maxLength": 2000
+    },
+    "respondentName": {
+      "label": "被申请人单位全称",
+      "type": "text",
+      "maxLength": 200
+    },
+    "socialCreditCode": {
+      "label": "统一社会信用代码",
+      "type": "text",
+      "maxLength": 40
+    },
+    "registeredAddress": {
+      "label": "单位注册地址",
+      "type": "text",
+      "maxLength": 300
+    },
+    "mailingAddress": {
+      "label": "单位通讯地址",
+      "type": "text",
+      "maxLength": 300
+    },
+    "workAddress": {
+      "label": "实际工作地址",
+      "type": "text",
+      "maxLength": 300
+    },
+    "legalRepName": {
+      "label": "法定代表人姓名",
+      "type": "text",
+      "maxLength": 80
+    },
+    "legalRepPhone": {
+      "label": "法定代表人电话",
+      "type": "text",
+      "maxLength": 40
+    },
+    "legalRepPosition": {
+      "label": "法定代表人职务",
+      "type": "text",
+      "maxLength": 80
+    },
+    "companyContact": {
+      "label": "单位联系人",
+      "type": "text",
+      "maxLength": 80
+    },
+    "companyContactPhone": {
+      "label": "单位联系人电话",
+      "type": "text",
+      "maxLength": 40
+    },
+    "claimCalculation": {
+      "label": "请求金额计算方法",
+      "type": "textarea",
+      "maxLength": 2000
+    },
+    "employmentDate": {
+      "label": "入职日期",
+      "type": "date",
+      "maxLength": 300
+    },
+    "jobTitle": {
+      "label": "岗位职务",
+      "type": "text",
+      "maxLength": 100
+    },
+    "signedContract": {
+      "label": "是否签订劳动合同",
+      "type": "select",
+      "maxLength": 20,
+      "options": [
+        "有",
+        "无"
+      ]
+    },
+    "contractStartDate": {
+      "label": "劳动合同开始日期",
+      "type": "date",
+      "maxLength": 300
+    },
+    "contractEndDate": {
+      "label": "劳动合同结束日期",
+      "type": "date",
+      "maxLength": 300
+    },
+    "workSchedule": {
+      "label": "工作时间安排",
+      "type": "textarea",
+      "maxLength": 500
+    },
+    "attendanceRequired": {
+      "label": "是否需要考勤",
+      "type": "select",
+      "maxLength": 20,
+      "options": [
+        "是",
+        "否"
+      ]
+    },
+    "attendanceMethod": {
+      "label": "考勤方式",
+      "type": "text",
+      "maxLength": 100
+    },
+    "salaryPaymentMethod": {
+      "label": "工资支付方式",
+      "type": "text",
+      "maxLength": 100
+    },
+    "salaryReceiptRequired": {
+      "label": "工资签收要求",
+      "type": "text",
+      "maxLength": 100
+    },
+    "startingSalary": {
+      "label": "入职工资标准",
+      "type": "text",
+      "maxLength": 100
+    },
+    "salaryAdjustments": {
+      "label": "工资调整情况",
+      "type": "textarea",
+      "maxLength": 500
+    },
+    "currentlyEmployed": {
+      "label": "是否仍在职",
+      "type": "select",
+      "maxLength": 20,
+      "options": [
+        "是",
+        "否"
+      ]
+    },
+    "departureDate": {
+      "label": "离职日期",
+      "type": "date",
+      "maxLength": 300
+    },
+    "departureReason": {
+      "label": "离职原因",
+      "type": "textarea",
+      "maxLength": 1000
+    },
+    "averageMonthlySalary": {
+      "label": "离职前平均月工资",
+      "type": "text",
+      "maxLength": 100
+    },
+    "requests": {
+      "label": "仲裁请求",
+      "type": "text",
+      "maxLength": 300
+    },
+    "factsReason": {
+      "label": "事实与理由",
+      "type": "textarea",
+      "maxLength": 12000
+    },
+    "copyCount": {
+      "label": "副本份数",
+      "type": "number",
+      "maxLength": 300
+    },
+    "applicationDate": {
+      "label": "申请日期",
+      "type": "date",
+      "maxLength": 300
+    },
+    "caseNumber": {
+      "label": "案件编号",
+      "type": "text",
+      "maxLength": 100
+    },
+    "submitDate": {
+      "label": "提交日期",
+      "type": "date",
+      "maxLength": 300
+    },
+    "name": {
+      "label": "证据名称",
+      "type": "text",
+      "maxLength": 300
+    },
+    "pageCount": {
+      "label": "页数",
+      "type": "text",
+      "maxLength": 30
+    },
+    "source": {
+      "label": "证据来源",
+      "type": "text",
+      "maxLength": 300
+    },
+    "purpose": {
+      "label": "证明目的",
+      "type": "textarea",
+      "maxLength": 1200
+    },
+    "kind": {
+      "label": "证据类型",
+      "type": "text",
+      "maxLength": 100
+    },
+    "originalType": {
+      "label": "原件或复印件",
+      "type": "select",
+      "maxLength": 30,
+      "options": [
+        "原件",
+        "复印件"
+      ]
+    },
+    "hasOriginal": {
+      "label": "是否有原件",
+      "type": "select",
+      "maxLength": 20,
+      "options": [
+        "是",
+        "否"
+      ]
+    },
+    "pageRange": {
+      "label": "页码范围",
+      "type": "text",
+      "maxLength": 50
+    },
+    "itemCount": {
+      "label": "件数",
+      "type": "text",
+      "maxLength": 30
+    },
+    "notes": {
+      "label": "备注",
+      "type": "text",
+      "maxLength": 500
+    },
+    "applicantWorkUnit": {
+      "label": "工作单位（可不填）",
+      "type": "text",
+      "maxLength": 200
+    }
+  },
+  "limits": {
+    "default": {
+      "maxRequests": 4,
+      "requestLength": 300,
+      "factsLength": 8000,
+      "maxEvidence": 30
+    },
+    "guangdong": {
+      "maxRequests": 3,
+      "requestLength": 300,
+      "factsLength": 700,
+      "maxEvidence": 30
+    },
+    "hainan": {
+      "maxRequests": 2,
+      "requestLength": 300,
+      "factsLength": 8000,
+      "maxEvidence": 30
+    },
+    "shanxi": {
+      "maxRequests": 3,
+      "requestLength": 300,
+      "factsLength": 8000,
+      "maxEvidence": 30
+    }
+  },
+  "applicationSupportedFields": {
+    "beijing": [
+      "actualOfficeAddress",
+      "applicantName",
+      "applicationDate",
+      "birthDate",
+      "committeeName",
+      "companyContact",
+      "companyContactPhone",
+      "currentAddress",
+      "factsReason",
+      "gender",
+      "householdType",
+      "idAddress",
+      "idNumber",
+      "identityDocumentType",
+      "legalRepName",
+      "legalRepPhone",
+      "legalRepPosition",
+      "officeAtRegisteredAddress",
+      "phone",
+      "registeredAddress",
+      "requests",
+      "respondentName",
+      "respondentType",
+      "workAddress"
+    ],
+    "tianjin": [
+      "applicantMailingAddress",
+      "applicantName",
+      "applicationDate",
+      "birthDate",
+      "committeeName",
+      "companyContactPhone",
+      "factsReason",
+      "gender",
+      "householdType",
+      "idAddress",
+      "idNumber",
+      "legalRepName",
+      "legalRepPosition",
+      "mailingAddress",
+      "nationality",
+      "phone",
+      "registeredAddress",
+      "registeredCapital",
+      "requests",
+      "respondentName",
+      "respondentType"
+    ],
+    "neimenggu": [
+      "applicantName",
+      "applicationDate",
+      "committeeName",
+      "companyContactPhone",
+      "copyCount",
+      "currentAddress",
+      "factsReason",
+      "gender",
+      "idAddress",
+      "idNumber",
+      "legalRepName",
+      "legalRepPosition",
+      "nationality",
+      "phone",
+      "registeredAddress",
+      "requests",
+      "respondentName",
+      "socialCreditCode"
+    ],
+    "liaoning": [
+      "age",
+      "applicantMailingAddress",
+      "applicantName",
+      "applicantPostalCode",
+      "applicationDate",
+      "committeeName",
+      "companyContactPhone",
+      "factsReason",
+      "gender",
+      "idNumber",
+      "legalRepName",
+      "legalRepPosition",
+      "mailingAddress",
+      "occupation",
+      "phone",
+      "requests",
+      "respondentName",
+      "respondentPostalCode",
+      "respondentType"
+    ],
+    "jiangsu": [
+      "acceptMediation",
+      "applicantMailingAddress",
+      "applicantName",
+      "applicationDate",
+      "birthDate",
+      "committeeName",
+      "companyContact",
+      "companyContactPhone",
+      "copyCount",
+      "departmentHead",
+      "departmentHeadPosition",
+      "factsReason",
+      "gender",
+      "idAddress",
+      "idNumber",
+      "legalAid",
+      "legalRepName",
+      "legalRepPosition",
+      "mailingAddress",
+      "otherDocumentNumber",
+      "otherDocumentType",
+      "phone",
+      "registeredAddress",
+      "requests",
+      "respondentName",
+      "respondentType",
+      "socialCreditCode"
+    ],
+    "zhejiang": [
+      "applicantName",
+      "applicationDate",
+      "birthDate",
+      "committeeName",
+      "companyContact",
+      "companyContactPhone",
+      "copyCount",
+      "factsReason",
+      "gender",
+      "householdType",
+      "idAddress",
+      "idNumber",
+      "legalRepName",
+      "legalRepPhone",
+      "legalRepPosition",
+      "mailingAddress",
+      "nationality",
+      "phone",
+      "registeredAddress",
+      "requests",
+      "respondentName",
+      "socialCreditCode",
+      "workAddress"
+    ],
+    "fujian": [
+      "applicantName",
+      "applicationDate",
+      "birthDate",
+      "committeeName",
+      "companyContactPhone",
+      "copyCount",
+      "factsReason",
+      "gender",
+      "idAddress",
+      "idNumber",
+      "legalRepName",
+      "legalRepPosition",
+      "nationality",
+      "phone",
+      "registeredAddress",
+      "requests",
+      "respondentName"
+    ],
+    "jiangxi": [
+      "applicantName",
+      "applicationDate",
+      "birthDate",
+      "committeeName",
+      "companyContactPhone",
+      "copyCount",
+      "factsReason",
+      "gender",
+      "idAddress",
+      "idNumber",
+      "legalRepName",
+      "legalRepPosition",
+      "nationality",
+      "phone",
+      "registeredAddress",
+      "requests",
+      "respondentName",
+      "respondentPostalCode",
+      "socialCreditCode"
+    ],
+    "shandong": [
+      "applicantName",
+      "applicationDate",
+      "committeeName",
+      "companyContactPhone",
+      "copyCount",
+      "factsReason",
+      "gender",
+      "idAddress",
+      "idNumber",
+      "legalRepName",
+      "legalRepPosition",
+      "nationality",
+      "phone",
+      "registeredAddress",
+      "requests",
+      "respondentName"
+    ],
+    "henan": [
+      "applicantName",
+      "applicationDate",
+      "birthDate",
+      "committeeName",
+      "companyContactPhone",
+      "copyCount",
+      "currentAddress",
+      "factsReason",
+      "gender",
+      "legalRepName",
+      "legalRepPosition",
+      "nationality",
+      "phone",
+      "registeredAddress",
+      "requests",
+      "respondentName"
+    ],
+    "hubei": [
+      "applicantMailingAddress",
+      "applicantName",
+      "applicantPostalCode",
+      "applicationDate",
+      "birthDate",
+      "committeeName",
+      "companyContactPhone",
+      "currentAddress",
+      "factsReason",
+      "gender",
+      "householdType",
+      "idAddress",
+      "idNumber",
+      "legalRepName",
+      "legalRepPosition",
+      "nationality",
+      "phone",
+      "registeredAddress",
+      "requests",
+      "respondentName",
+      "respondentPostalCode"
+    ],
+    "hunan": [
+      "applicantName",
+      "applicationDate",
+      "birthDate",
+      "committeeName",
+      "factsReason",
+      "gender",
+      "idAddress",
+      "legalRepName",
+      "legalRepPhone",
+      "legalRepPosition",
+      "nationality",
+      "phone",
+      "registeredAddress",
+      "requests",
+      "respondentName"
+    ],
+    "guangdong": [
+      "applicantMailingAddress",
+      "applicantName",
+      "applicationDate",
+      "attendanceMethod",
+      "attendanceRequired",
+      "averageMonthlySalary",
+      "birthDate",
+      "claimCalculation",
+      "committeeName",
+      "companyContact",
+      "companyContactPhone",
+      "contractEndDate",
+      "contractStartDate",
+      "currentlyEmployed",
+      "departureDate",
+      "departureReason",
+      "employmentDate",
+      "factsReason",
+      "gender",
+      "idAddress",
+      "idNumber",
+      "jobTitle",
+      "legalRepName",
+      "legalRepPosition",
+      "mailingAddress",
+      "phone",
+      "registeredAddress",
+      "requests",
+      "respondentName",
+      "salaryAdjustments",
+      "salaryPaymentMethod",
+      "salaryReceiptRequired",
+      "signedContract",
+      "startingSalary",
+      "workAddress",
+      "workSchedule"
+    ],
+    "hainan": [
+      "applicantName",
+      "averageMonthlySalary",
+      "birthDate",
+      "claimCalculation",
+      "committeeName",
+      "contractEndDate",
+      "contractStartDate",
+      "currentAddress",
+      "currentlyEmployed",
+      "departureDate",
+      "departureReason",
+      "employmentDate",
+      "factsReason",
+      "gender",
+      "idNumber",
+      "jobTitle",
+      "lastWorkingDate",
+      "legalRepName",
+      "legalRepPhone",
+      "legalRepPosition",
+      "otherNotes",
+      "phone",
+      "registeredAddress",
+      "requests",
+      "respondentName",
+      "salaryPaymentMethod",
+      "signedContract",
+      "startingSalary"
+    ],
+    "sichuan": [
+      "applicantMailingAddress",
+      "applicantName",
+      "applicantPostalCode",
+      "applicationDate",
+      "committeeName",
+      "companyContactPhone",
+      "copyCount",
+      "factsReason",
+      "gender",
+      "idAddress",
+      "idNumber",
+      "legalRepName",
+      "legalRepPosition",
+      "nationality",
+      "phone",
+      "registeredAddress",
+      "requests",
+      "respondentName"
+    ],
+    "guizhou": [
+      "applicantMailingAddress",
+      "applicantName",
+      "applicantPostalCode",
+      "applicationDate",
+      "birthDate",
+      "committeeName",
+      "companyContactPhone",
+      "copyCount",
+      "currentAddress",
+      "factsReason",
+      "gender",
+      "legalRepName",
+      "legalRepPosition",
+      "nationality",
+      "nativePlace",
+      "phone",
+      "registeredAddress",
+      "requests",
+      "respondentName"
+    ],
+    "yunnan": [
+      "applicantAddressWithPostalCode",
+      "applicantMailingAddress",
+      "applicantName",
+      "applicantPostalCode",
+      "applicationDate",
+      "birthDate",
+      "committeeName",
+      "companyContactPhone",
+      "copyCount",
+      "factsReason",
+      "gender",
+      "idAddress",
+      "idNumber",
+      "legalRepName",
+      "legalRepPosition",
+      "mailingAddress",
+      "nationality",
+      "phone",
+      "requests",
+      "respondentAddressWithPostalCode",
+      "respondentName",
+      "respondentPostalCode",
+      "socialCreditCode"
+    ],
+    "shaanxi": [
+      "age",
+      "applicantMailingAddress",
+      "applicantName",
+      "applicantPostalCode",
+      "applicationDate",
+      "committeeName",
+      "companyContactPhone",
+      "employmentType",
+      "factsReason",
+      "gender",
+      "idNumber",
+      "legalRepName",
+      "mailingAddress",
+      "nationality",
+      "phone",
+      "requests",
+      "respondentName",
+      "respondentPostalCode",
+      "respondentType",
+      "socialCreditCode"
+    ],
+    "gansu": [
+      "applicantMailingAddress",
+      "applicantName",
+      "applicationDate",
+      "birthDate",
+      "committeeName",
+      "companyContactPhone",
+      "factsReason",
+      "gender",
+      "legalRepName",
+      "legalRepPosition",
+      "phone",
+      "registeredAddress",
+      "requests",
+      "respondentName"
+    ],
+    "xinjiang": [
+      "applicantMailingAddress",
+      "applicantName",
+      "applicantPostalCode",
+      "applicationDate",
+      "birthDate",
+      "committeeName",
+      "companyContactPhone",
+      "contractEndDate",
+      "contractPeriod",
+      "contractStartDate",
+      "currentAddress",
+      "factsReason",
+      "gender",
+      "legalRepName",
+      "legalRepPosition",
+      "mailingAddress",
+      "nationality",
+      "phone",
+      "requests",
+      "respondentName",
+      "respondentPostalCode",
+      "signedContract"
+    ],
+    "shanxi": [
+      "applicantName",
+      "gender",
+      "birthDate",
+      "nationality",
+      "applicantWorkUnit",
+      "currentAddress",
+      "phone",
+      "applicantMailingAddress",
+      "respondentName",
+      "registeredAddress",
+      "legalRepName",
+      "legalRepPosition",
+      "legalRepPhone",
+      "requests",
+      "factsReason",
+      "copyCount",
+      "committeeName",
+      "applicationDate"
+    ]
+  },
+  "evidenceSupportedFields": {
+    "beijing": [
+      "hasOriginal",
+      "kind",
+      "name",
+      "pageCount",
+      "purpose",
+      "submitDate"
+    ],
+    "tianjin": [
+      "caseNumber",
+      "committeeName",
+      "name",
+      "pageCount",
+      "purpose",
+      "submitDate"
+    ],
+    "jiangsu": [
+      "caseNumber",
+      "committeeName",
+      "name",
+      "originalType",
+      "pageCount",
+      "purpose",
+      "source",
+      "submitDate"
+    ],
+    "zhejiang": [
+      "caseNumber",
+      "committeeName",
+      "copyCount",
+      "name",
+      "pageCount",
+      "purpose",
+      "source",
+      "submitDate"
+    ],
+    "fujian": [
+      "name",
+      "originalType",
+      "pageCount",
+      "pageRange",
+      "purpose",
+      "submitDate"
+    ],
+    "jiangxi": [
+      "name",
+      "purpose",
+      "submitDate"
+    ],
+    "shandong": [
+      "committeeName",
+      "name",
+      "notes",
+      "purpose",
+      "submitDate"
+    ],
+    "hubei": [
+      "name",
+      "pageCount",
+      "proof",
+      "purpose",
+      "source"
+    ],
+    "hunan": [
+      "committeeName",
+      "name",
+      "originalType",
+      "pageRange",
+      "purpose",
+      "source",
+      "submitDate"
+    ],
+    "guangdong": [
+      "name",
+      "pageCount",
+      "proof",
+      "purpose",
+      "source",
+      "submitDate"
+    ],
+    "hainan": [
+      "caseNumber",
+      "committeeName",
+      "hasOriginal",
+      "name",
+      "pageRange",
+      "purpose",
+      "submitDate"
+    ],
+    "sichuan": [
+      "committeeName",
+      "itemCount",
+      "name",
+      "notes",
+      "originalType",
+      "pageCount",
+      "purpose",
+      "submitDate"
+    ],
+    "yunnan": [
+      "name",
+      "pageCount",
+      "proof",
+      "purpose",
+      "source",
+      "submitDate"
+    ]
+  },
+  "applicationExtraFields": {
+    "beijing": [
+      [
+        "respondentType",
+        "单位性质"
+      ],
+      [
+        "identityDocumentType",
+        "证件类型"
+      ],
+      [
+        "currentAddress",
+        "现住址"
+      ],
+      [
+        "officeAtRegisteredAddress",
+        "办公地是否与注册地址一致"
+      ],
+      [
+        "actualOfficeAddress",
+        "实际办公地址"
+      ]
+    ],
+    "henan": [
+      [
+        "currentAddress",
+        "现住址"
+      ]
+    ],
+    "tianjin": [
+      [
+        "respondentType",
+        "企业类型"
+      ],
+      [
+        "registeredCapital",
+        "注册资金"
+      ]
+    ],
+    "liaoning": [
+      [
+        "occupation",
+        "职业"
+      ],
+      [
+        "respondentType",
+        "单位性质"
+      ],
+      [
+        "applicantPostalCode",
+        "申请人邮编"
+      ],
+      [
+        "respondentPostalCode",
+        "单位邮编"
+      ]
+    ],
+    "jiangsu": [
+      [
+        "otherDocumentType",
+        "其他证件类型（没有可留空）"
+      ],
+      [
+        "otherDocumentNumber",
+        "其他证件号码"
+      ],
+      [
+        "acceptMediation",
+        "是否接受调解"
+      ],
+      [
+        "legalAid",
+        "是否申请法律援助"
+      ],
+      [
+        "respondentType",
+        "单位性质"
+      ],
+      [
+        "departmentHead",
+        "所在部门负责人"
+      ],
+      [
+        "departmentHeadPosition",
+        "部门负责人职务"
+      ]
+    ],
+    "jiangxi": [
+      [
+        "respondentPostalCode",
+        "单位邮编"
+      ]
+    ],
+    "hubei": [
+      [
+        "currentAddress",
+        "现住址"
+      ],
+      [
+        "applicantPostalCode",
+        "申请人邮编"
+      ],
+      [
+        "respondentPostalCode",
+        "单位邮编"
+      ]
+    ],
+    "sichuan": [
+      [
+        "applicantPostalCode",
+        "申请人邮编"
+      ]
+    ],
+    "guizhou": [
+      [
+        "nativePlace",
+        "原籍"
+      ],
+      [
+        "currentAddress",
+        "现住址"
+      ],
+      [
+        "applicantPostalCode",
+        "申请人邮编"
+      ]
+    ],
+    "yunnan": [
+      [
+        "applicantPostalCode",
+        "申请人邮编"
+      ],
+      [
+        "respondentPostalCode",
+        "单位邮编"
+      ]
+    ],
+    "shaanxi": [
+      [
+        "respondentType",
+        "单位性质"
+      ],
+      [
+        "employmentType",
+        "用工性质"
+      ],
+      [
+        "applicantPostalCode",
+        "申请人邮编"
+      ],
+      [
+        "respondentPostalCode",
+        "单位邮编"
+      ]
+    ],
+    "xinjiang": [
+      [
+        "currentAddress",
+        "现住址"
+      ],
+      [
+        "applicantPostalCode",
+        "申请人邮编"
+      ],
+      [
+        "respondentPostalCode",
+        "单位邮编"
+      ]
+    ],
+    "hainan": [
+      [
+        "currentAddress",
+        "现住址"
+      ],
+      [
+        "lastWorkingDate",
+        "最后正常工作日期"
+      ],
+      [
+        "otherNotes",
+        "其他补充情况"
+      ]
+    ],
+    "neimenggu": [
+      [
+        "currentAddress",
+        "现住址"
+      ]
+    ],
+    "shanxi": [
+      [
+        "applicantWorkUnit",
+        "工作单位（可不填）"
+      ],
+      [
+        "currentAddress",
+        "现住址"
+      ]
+    ]
+  },
+  "evidenceExtraFields": {
+    "beijing": [
+      [
+        "kind",
+        "证据种类（书证／电子数据等）"
+      ],
+      [
+        "hasOriginal",
+        "是否有原件"
+      ]
+    ],
+    "jiangsu": [
+      [
+        "originalType",
+        "原件或复印件"
+      ]
+    ],
+    "fujian": [
+      [
+        "originalType",
+        "原件或复印件"
+      ],
+      [
+        "pageRange",
+        "页码范围"
+      ]
+    ],
+    "hunan": [
+      [
+        "originalType",
+        "原件或复印件"
+      ],
+      [
+        "pageRange",
+        "页码范围"
+      ]
+    ],
+    "hainan": [
+      [
+        "hasOriginal",
+        "是否有原件"
+      ],
+      [
+        "pageRange",
+        "页码范围"
+      ]
+    ],
+    "sichuan": [
+      [
+        "itemCount",
+        "件数"
+      ],
+      [
+        "originalType",
+        "原件或复印件"
+      ],
+      [
+        "notes",
+        "备注"
+      ]
+    ],
+    "shandong": [
+      [
+        "notes",
+        "备注"
+      ]
+    ]
+  }
+}
