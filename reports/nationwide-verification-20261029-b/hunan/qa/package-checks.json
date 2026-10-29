@@ -1,0 +1,26 @@
+[
+  {
+    "district": "tianxin",
+    "original_doc": "reports/nationwide-verification-20261029-b/hunan/tianxin/originals/blank/1624951667887.doc",
+    "original_sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+    "derived_docx": "derived/tianxin/1624951667887.docx",
+    "derived_sha256": "662c722d87b1383ac14842b34186b217b0d5a9e874317d3b5daa34e93540d1bb",
+    "output": "qa/tianxin/worker-application-synthetic.docx",
+    "output_sha256": "165f29f5f3fac8b692083acfc22d4eb787492471ad08b8c262ba2351deeb3cf2",
+    "changed_derived_package_parts": [
+      "word/document.xml"
+    ]
+  },
+  {
+    "district": "xiangjiang",
+    "original_doc": "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals/blank/1624951667887.doc",
+    "original_sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+    "derived_docx": "derived/xiangjiang/1624951667887.docx",
+    "derived_sha256": "7fbb235b7705f5ee51c877a4ce43f1bbff75273523d43133ad44f68da047ca2f",
+    "output": "qa/xiangjiang/worker-application-synthetic.docx",
+    "output_sha256": "5ab984c41b8e740ff3fc6ea3d5f6196324d358d4c0cff0574e0cafaf327ac144",
+    "changed_derived_package_parts": [
+      "word/document.xml"
+    ]
+  }
+]

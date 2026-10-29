@@ -1,0 +1,50 @@
+{
+  "adapter": "hunan_own_legacy_worker_oct29b_v1",
+  "supported_document": "worker application only; embedded evidence section is part of that application, not an independent evidence-list form",
+  "source_format": "official downloaded .doc",
+  "generation_format": "docx from bound platform conversion",
+  "limits": {
+    "requests": 8,
+    "factsReason_characters": 1800,
+    "embedded_evidence_items": 10,
+    "ordinary_field_characters": 160
+  },
+  "fields": {
+    "applicantName": 0,
+    "gender": 1,
+    "birthDate": 1,
+    "occupation": 1,
+    "nationality": 1,
+    "idAddress": 2,
+    "address": "alias for idAddress",
+    "postalCode": 2,
+    "phone": 2,
+    "workUnit": 3,
+    "workUnitPostalCode": 3,
+    "workUnitPhone": 3,
+    "respondentName": 4,
+    "registeredAddress": 5,
+    "respondentAddress": "alias for registeredAddress",
+    "respondentPostalCode": 5,
+    "legalRepName": 6,
+    "legalRepPosition": 6,
+    "legalRepPhone": 6,
+    "hrContactName": 7,
+    "hrContactPosition": 7,
+    "hrContactPhone": 7,
+    "thirdParty": 8,
+    "requests": "11–18",
+    "factsReason": 20,
+    "committeeName": "destination placeholder in row33, explicit user input only",
+    "applicationDate": "date in row33",
+    "copyCount": "copy count in row33; defaults blank",
+    "evidenceList": "35–56: name/source/purpose"
+  },
+  "signature": "always blank; submitterName is not inserted",
+  "unsupported": [
+    "employer application",
+    "independent evidence list",
+    "idNumber (no source slot)"
+  ],
+  "shared_route_integrated_by_this_task": false
+}

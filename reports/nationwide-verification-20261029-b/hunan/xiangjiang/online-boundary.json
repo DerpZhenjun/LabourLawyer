@@ -1,0 +1,10 @@
+{
+  "origin": "https://auth.zwfw.hunan.gov.cn",
+  "path": "/oauth2/govLogin.html",
+  "text": "个人登录\n法人登录\n注册\n手机号/身份证号码\n密码\n忘记密码?  \n登录\n其他登录方式\n  \n\n登录、注册遇到问题？请进入帮助中心\n\n站点地图\n网站分享\n\n12345\n业务咨询和投诉电话\n\n0731-82214464\n省政务服务网技术服务热线\n\n主办单位：湖南省人民政府办公厅     承办单位：湖南省政务服务和大数据中心\n\n备案号：湘ICP备05000618号 公安机关备案号：43010302000524 网站标识码：4300000001",
+  "passwordInputs": 7,
+  "captured_at": "2026-10-29T09:19:10.987264+00:00",
+  "status": "auth_required",
+  "submitted": false,
+  "redaction": "query, headers, cookies, login DOM and all credentials not retained"
+}

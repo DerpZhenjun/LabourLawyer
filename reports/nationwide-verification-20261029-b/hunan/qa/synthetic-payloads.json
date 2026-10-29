@@ -1,0 +1,74 @@
+{
+  "tianxin": {
+    "applicantName": "虚构天心测试甲",
+    "respondentName": "虚构天心测试公司乙",
+    "gender": "女",
+    "birthDate": "1990-01-02",
+    "nationality": "汉族",
+    "occupation": "虚构测试职员",
+    "idAddress": "虚构测试住所一号",
+    "phone": "",
+    "workUnit": "虚构工作单位",
+    "registeredAddress": "虚构单位住所二号",
+    "legalRepName": "虚构负责人丙",
+    "legalRepPosition": "测试负责人",
+    "hrContactName": "虚构联系人丁",
+    "hrContactPosition": "虚构测试职员",
+    "committeeName": "虚构天心测试仲裁委员会",
+    "applicationDate": "2026-10-29",
+    "requests": [
+      "请求支付虚构测试工资100元。",
+      "请求支付虚构测试补偿200元。"
+    ],
+    "factsReason": "本文件全部内容均为软件排版测试虚构示例，不用于真实仲裁。申请人与被申请人的名称、地址、日期、金额和证据均为虚构，仅用于检查本区自己官方表格转换副本的换行及分页。本文件全部内容均为软件排版测试虚构示例，不用于真实仲裁。申请人与被申请人的名称、地址、日期、金额和证据均为虚构，仅用于检查本区自己官方表格转换副本的换行及分页。",
+    "submitterName": "不得自动填写手签",
+    "evidenceList": [
+      {
+        "name": "虚构测试证据甲",
+        "source": "虚构测试保存材料",
+        "purpose": "仅用于测试本表附随证据说明区域。"
+      },
+      {
+        "name": "虚构测试证据乙",
+        "source": "虚构测试保存材料",
+        "purpose": "用于核对第二条证据的完整换行。"
+      }
+    ]
+  },
+  "xiangjiang": {
+    "applicantName": "虚构湘江新区测试甲",
+    "respondentName": "虚构湘江新区测试公司乙",
+    "gender": "女",
+    "birthDate": "1990-01-02",
+    "nationality": "汉族",
+    "occupation": "虚构测试职员",
+    "idAddress": "虚构测试住所一号",
+    "phone": "",
+    "workUnit": "虚构工作单位",
+    "registeredAddress": "虚构单位住所二号",
+    "legalRepName": "虚构负责人丙",
+    "legalRepPosition": "测试负责人",
+    "hrContactName": "虚构联系人丁",
+    "hrContactPosition": "虚构测试职员",
+    "committeeName": "虚构湘江新区测试仲裁委员会",
+    "applicationDate": "2026-10-29",
+    "requests": [
+      "请求支付虚构测试工资100元。",
+      "请求支付虚构测试补偿200元。"
+    ],
+    "factsReason": "本文件全部内容均为软件排版测试虚构示例，不用于真实仲裁。申请人与被申请人的名称、地址、日期、金额和证据均为虚构，仅用于检查本区自己官方表格转换副本的换行及分页。本文件全部内容均为软件排版测试虚构示例，不用于真实仲裁。申请人与被申请人的名称、地址、日期、金额和证据均为虚构，仅用于检查本区自己官方表格转换副本的换行及分页。",
+    "submitterName": "不得自动填写手签",
+    "evidenceList": [
+      {
+        "name": "虚构测试证据甲",
+        "source": "虚构测试保存材料",
+        "purpose": "仅用于测试本表附随证据说明区域。"
+      },
+      {
+        "name": "虚构测试证据乙",
+        "source": "虚构测试保存材料",
+        "purpose": "用于核对第二条证据的完整换行。"
+      }
+    ]
+  }
+}

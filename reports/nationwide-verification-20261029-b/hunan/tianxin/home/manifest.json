@@ -1,0 +1,22 @@
+{
+  "source_url": "https://zwfw-new.hunan.gov.cn/hnzwfw/1/2/17/index.htm",
+  "captured_at": "2026-10-29T09:11:11.360841+00:00",
+  "files": {
+    "page.json": {
+      "sha256": "d5ea092c9262dbc9f4a29fe5ba06e4b64abf17d671b6fc3a0131d6b7d18cd71e",
+      "bytes": 32840
+    },
+    "page.png": {
+      "sha256": "625ab261b9c817beea655e6933bb9f7f11b5d26ff28e207941bfd931e63e4ead",
+      "bytes": 1191424
+    },
+    "page.txt": {
+      "sha256": "247aad70f6c1f8978acac3e5e44c6da18b58750361720fdeb1b3bb0697e7f971",
+      "bytes": 2602
+    },
+    "snapshot.txt": {
+      "sha256": "71bff3b24b3d4146a7502c7b97dd77f79411042ea88ff836932b36345d738c4a",
+      "bytes": 7794
+    }
+  }
+}

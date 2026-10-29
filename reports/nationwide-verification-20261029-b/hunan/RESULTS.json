@@ -1,0 +1,323 @@
+{
+  "checked_at": "2026-10-29T09:31:12.316142+00:00",
+  "guides": [
+    {
+      "district": "天心区",
+      "region_code": "430103",
+      "portal_area_label": "天心区",
+      "authority": "长沙市天心区人力资源和社会保障局",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "official_approve_id": "8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "implementation_code": "1143010357862420794002014302002",
+      "guide_file": "reports/nationwide-verification-20261029-b/hunan/tianxin/guide.json",
+      "status": "own_official_guide_and_originals_collected_worker_conversion_adapter_verified",
+      "published": false,
+      "materials": 4,
+      "blank_originals": 2,
+      "sample_originals": 2,
+      "offline_generation": [
+        "worker_application_from_platform_conversion"
+      ],
+      "web_acceptance": "NOT_RUN_EXISTING_STARTUP_REJECTION_NOT_RETRIED"
+    },
+    {
+      "district": "岳麓区",
+      "region_code": "430104",
+      "portal_area_label": "湖南湘江新区",
+      "authority": "湖南湘江新区管理委员会民政和社会保障局（退役军人事务局）",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+      "official_approve_id": "515bd3bf94164cf6b295560fb0ba18e3",
+      "implementation_code": "TE430216HNXJXQMZ014002014302002",
+      "guide_file": "reports/nationwide-verification-20261029-b/hunan/xiangjiang/guide.json",
+      "status": "own_official_guide_and_originals_collected_worker_conversion_adapter_verified",
+      "published": false,
+      "materials": 4,
+      "blank_originals": 2,
+      "sample_originals": 2,
+      "offline_generation": [
+        "worker_application_from_platform_conversion"
+      ],
+      "web_acceptance": "NOT_RUN_EXISTING_STARTUP_REJECTION_NOT_RETRIED"
+    }
+  ],
+  "public_originals": [
+    {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "approve_id": "8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "area_code": "430103999000",
+      "material_id": "bac146a7f8124340aa1f57a487e812cb",
+      "official_annex_id": "8f157e7622e54d5e9ca423be6d2a9897",
+      "file": "reports/nationwide-verification-20261029-b/hunan/tianxin/originals/blank/1624951667887.doc",
+      "original_name": "1－仲裁申请书（劳动者）.doc",
+      "official_control": "blank",
+      "attach_code": "000002",
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667887%24%241%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202106",
+      "final_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667887%24%241%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202106",
+      "http_status": 200,
+      "downloaded_at": "2026-10-29T09:15:37.928608+00:00",
+      "sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+      "bytes": 50688,
+      "method": "cookie-free public HTTP after own native material control Fetch",
+      "public_reason": "Own official template/sample control public original; sample facts never reused"
+    },
+    {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "approve_id": "8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "area_code": "430103999000",
+      "material_id": "bac146a7f8124340aa1f57a487e812cb",
+      "official_annex_id": "d75ccf5d5e424a71960c118b6b4558e6",
+      "file": "reports/nationwide-verification-20261029-b/hunan/tianxin/originals/sample/1732694895374.doc",
+      "original_name": "仲裁申请书（劳动者）.doc",
+      "official_control": "sample",
+      "attach_code": "000003",
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895374%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202411",
+      "final_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895374%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202411",
+      "http_status": 200,
+      "downloaded_at": "2026-10-29T09:15:39.113680+00:00",
+      "sha256": "369d38b1bcb1d92e0be6b815d6269967fc7324afbb63cc22a94331bbfcc220cc",
+      "bytes": 26624,
+      "method": "cookie-free public HTTP after own native material control Fetch",
+      "public_reason": "Own official template/sample control public original; sample facts never reused"
+    },
+    {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "approve_id": "8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "area_code": "430103999000",
+      "material_id": "bac146a7f8124340aa1f57a487e812cb",
+      "official_annex_id": "3a1befe9123b4d87bc4405c3403aab66",
+      "file": "reports/nationwide-verification-20261029-b/hunan/tianxin/originals/sample/1732694895330.doc",
+      "original_name": "仲裁申请书（单位）.doc",
+      "official_control": "sample",
+      "attach_code": "000003",
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895330%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202411",
+      "final_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895330%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202411",
+      "http_status": 200,
+      "downloaded_at": "2026-10-29T09:15:41.503285+00:00",
+      "sha256": "00a47b36fa43d89f8c604d66585ac5e191360dd3d546feecc82ea8d6b4307444",
+      "bytes": 27136,
+      "method": "cookie-free public HTTP after own native material control Fetch",
+      "public_reason": "Own official template/sample control public original; sample facts never reused"
+    },
+    {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "approve_id": "8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "area_code": "430103999000",
+      "material_id": "bac146a7f8124340aa1f57a487e812cb",
+      "official_annex_id": "829a8d9416084ab4bff389bc5ff6bbea",
+      "file": "reports/nationwide-verification-20261029-b/hunan/tianxin/originals/blank/1624951667935.doc",
+      "original_name": "2－仲裁申请书（单位）.doc",
+      "official_control": "blank",
+      "attach_code": "000002",
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667935%24%242%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202106",
+      "final_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667935%24%242%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202106",
+      "http_status": 200,
+      "downloaded_at": "2026-10-29T09:15:42.712604+00:00",
+      "sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+      "bytes": 51712,
+      "method": "cookie-free public HTTP after own native material control Fetch",
+      "public_reason": "Own official template/sample control public original; sample facts never reused"
+    },
+    {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+      "approve_id": "515bd3bf94164cf6b295560fb0ba18e3",
+      "area_code": "430104999000",
+      "material_id": "a34282632e644e4daa441ab6d8c5d3c2",
+      "official_annex_id": "2bd11995dd7f417eacdfa3f8de734d45",
+      "file": "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals/sample/1732694895374.doc",
+      "original_name": "仲裁申请书（劳动者）.doc",
+      "official_control": "sample",
+      "attach_code": "000003",
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895374%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202411",
+      "final_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895374%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202411",
+      "http_status": 200,
+      "downloaded_at": "2026-10-29T09:19:01.065194+00:00",
+      "sha256": "369d38b1bcb1d92e0be6b815d6269967fc7324afbb63cc22a94331bbfcc220cc",
+      "bytes": 26624,
+      "method": "cookie-free public HTTP after own native material control Fetch",
+      "public_reason": "Own official template/sample control public original; sample facts never reused"
+    },
+    {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+      "approve_id": "515bd3bf94164cf6b295560fb0ba18e3",
+      "area_code": "430104999000",
+      "material_id": "a34282632e644e4daa441ab6d8c5d3c2",
+      "official_annex_id": "b5c8e3c7397542f48b162aa7fc802277",
+      "file": "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals/sample/1732694895330.doc",
+      "original_name": "仲裁申请书（单位）.doc",
+      "official_control": "sample",
+      "attach_code": "000003",
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895330%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202411",
+      "final_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895330%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202411",
+      "http_status": 200,
+      "downloaded_at": "2026-10-29T09:19:02.265506+00:00",
+      "sha256": "00a47b36fa43d89f8c604d66585ac5e191360dd3d546feecc82ea8d6b4307444",
+      "bytes": 27136,
+      "method": "cookie-free public HTTP after own native material control Fetch",
+      "public_reason": "Own official template/sample control public original; sample facts never reused"
+    },
+    {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+      "approve_id": "515bd3bf94164cf6b295560fb0ba18e3",
+      "area_code": "430104999000",
+      "material_id": "a34282632e644e4daa441ab6d8c5d3c2",
+      "official_annex_id": "b84b431d889f4293aad5b527347cc0fa",
+      "file": "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals/blank/1624951667935.doc",
+      "original_name": "2－仲裁申请书（单位）.doc",
+      "official_control": "blank",
+      "attach_code": "000002",
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667935%24%242%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202106",
+      "final_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667935%24%242%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202106",
+      "http_status": 200,
+      "downloaded_at": "2026-10-29T09:19:03.479262+00:00",
+      "sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+      "bytes": 51712,
+      "method": "cookie-free public HTTP after own native material control Fetch",
+      "public_reason": "Own official template/sample control public original; sample facts never reused"
+    },
+    {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+      "approve_id": "515bd3bf94164cf6b295560fb0ba18e3",
+      "area_code": "430104999000",
+      "material_id": "a34282632e644e4daa441ab6d8c5d3c2",
+      "official_annex_id": "b837a9eba68c4d6eb28cd178549c0fd1",
+      "file": "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals/blank/1624951667887.doc",
+      "original_name": "1－仲裁申请书（劳动者）.doc",
+      "official_control": "blank",
+      "attach_code": "000002",
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667887%24%241%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202106",
+      "final_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667887%24%241%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202106",
+      "http_status": 200,
+      "downloaded_at": "2026-10-29T09:19:04.721744+00:00",
+      "sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+      "bytes": 50688,
+      "method": "cookie-free public HTTP after own native material control Fetch",
+      "public_reason": "Own official template/sample control public original; sample facts never reused"
+    }
+  ],
+  "derived_conversion_copies": [
+    {
+      "district": "tianxin",
+      "source": "tianxin/originals/blank/1624951667887.doc",
+      "source_sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+      "file": "derived/tianxin/1624951667887.docx",
+      "sha256": "662c722d87b1383ac14842b34186b217b0d5a9e874317d3b5daa34e93540d1bb",
+      "bytes": 19612,
+      "kind": "platform_conversion_of_own_official_doc_not_official_docx",
+      "method": "isolated Word SaveAs2 format16 after original PDF export",
+      "table_shapes": [
+        [
+          57,
+          1
+        ]
+      ]
+    },
+    {
+      "district": "tianxin",
+      "source": "tianxin/originals/blank/1624951667935.doc",
+      "source_sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+      "file": "derived/tianxin/1624951667935.docx",
+      "sha256": "7d664060f85e29f282270ab93c3284156e1baf0dd69ae706adc5b798f71d887b",
+      "bytes": 19631,
+      "kind": "platform_conversion_of_own_official_doc_not_official_docx",
+      "method": "isolated Word SaveAs2 format16 after original PDF export",
+      "table_shapes": [
+        [
+          56,
+          1
+        ]
+      ]
+    },
+    {
+      "district": "xiangjiang",
+      "source": "xiangjiang/originals/blank/1624951667935.doc",
+      "source_sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+      "file": "derived/xiangjiang/1624951667935.docx",
+      "sha256": "c7d0691663fac8a09c7506c045ee851d7777ca1e4046c6eb15caee3919f011a3",
+      "bytes": 19667,
+      "kind": "platform_conversion_of_own_official_doc_not_official_docx",
+      "method": "isolated Word SaveAs2 format16 after original PDF export",
+      "table_shapes": [
+        [
+          56,
+          1
+        ]
+      ]
+    },
+    {
+      "district": "xiangjiang",
+      "source": "xiangjiang/originals/blank/1624951667887.doc",
+      "source_sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+      "file": "derived/xiangjiang/1624951667887.docx",
+      "sha256": "7fbb235b7705f5ee51c877a4ce43f1bbff75273523d43133ad44f68da047ca2f",
+      "bytes": 19789,
+      "kind": "platform_conversion_of_own_official_doc_not_official_docx",
+      "method": "isolated Word SaveAs2 format16 after original PDF export",
+      "table_shapes": [
+        [
+          57,
+          1
+        ]
+      ]
+    }
+  ],
+  "layout": {
+    "official_original": {
+      "files": 8,
+      "pages": 28
+    },
+    "fictional_filled_conversion": {
+      "files": 2,
+      "pages": 4
+    }
+  },
+  "total_current_pages_viewed": 32,
+  "tests": {
+    "passed": 7,
+    "failed": 0,
+    "command": ".venv/Scripts/python.exe -m unittest backend.tests.test_hunan_oct29b -v",
+    "log": "tests.log"
+  },
+  "source_manifest_sha256": "550a4539c7f94aeb8749721b2de1a693895753b9dde940c645a2eb5b79907f10",
+  "derived_manifest_sha256": "82a18bd0b08bfe3370b2ef31603f515e82ecaba4580ff228b74391a5ee28fc61",
+  "publication": "not_published",
+  "shared_route_integrated_by_this_task": false,
+  "models_invoked": false,
+  "private_case_databases_accessed": false,
+  "git_used": false,
+  "browser_session": "hn-oct29b (closed)",
+  "scope_mapping": "430104 official homepage label 湖南湘江新区 and selector label 岳麓区 resolve to this exact own approve_id and own implementing authority only; no general inheritance",
+  "limitations": [
+    "两地均为未发布候选；候选站未启动，不绕过旧策略拒绝，候选网页验收NOT_RUN。",
+    "两地在线办理只核验至个人/法人登录页，未输入凭据、登录或提交。",
+    "四DOCX为平台转换副本，不是官方DOCX原件；仅劳动者申请书已适配。",
+    "独立证据清单空白在已核验来源未找到，状态not_found_in_checked_sources，不称官方未提供。",
+    "抬头/正文时限、基本信息/FAQ到场要求及材料份数存在不同口径，原文分别保留。"
+  ],
+  "issues": [
+    {
+      "type": "GENERIC_NATIVE_CARD_TARGET",
+      "status": "resolved_by_own_approve_id",
+      "evidence": [
+        "tianxin/native-guide-target",
+        "xiangjiang/native-guide-target"
+      ],
+      "resolution": "generic ministry guide was not accepted as district evidence; explicit navigation selection exposed own catalogue ID, region and authority; exact own formal guide opened"
+    },
+    {
+      "type": "THEME_SEARCH_NO_RESULT",
+      "status": "resolved_by_all_topics",
+      "resolution": "cleared narrow topic through native All choice while keeping same-district search; no negative service inference"
+    },
+    {
+      "type": "LEGACY_DOC_CONVERSION",
+      "status": "completed_and_bound",
+      "resolution": "read-only original PDF export followed by separate blank-only DOCX SaveAs2, own original SHA unchanged"
+    },
+    {
+      "type": "FIRST_LAYOUT_EXTRA_PAGE",
+      "status": "resolved",
+      "evidence": "attempts/first-layout",
+      "resolution": "removed forced field newlines, retained natural source wrapping; final two pages each"
+    }
+  ]
+}

@@ -1,0 +1,1451 @@
+{
+  "checked_at": "2026-10-29T09:31:12.316142+00:00",
+  "scope": "Explicit public rendered sources, filtered public own-catalogue response bodies, official blank/sample originals, identified platform conversions and fictional accepted QA; no cookies/HAR/SSO queries/login DOM/private cases.",
+  "guides": [
+    {
+      "district": "天心区",
+      "region_code": "430103",
+      "portal_area_label": "天心区",
+      "authority": "长沙市天心区人力资源和社会保障局",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "official_approve_id": "8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "implementation_code": "1143010357862420794002014302002",
+      "guide_file": "reports/nationwide-verification-20261029-b/hunan/tianxin/guide.json",
+      "status": "own_official_guide_and_originals_collected_worker_conversion_adapter_verified",
+      "published": false,
+      "materials": 4,
+      "blank_originals": 2,
+      "sample_originals": 2,
+      "offline_generation": [
+        "worker_application_from_platform_conversion"
+      ],
+      "web_acceptance": "NOT_RUN_EXISTING_STARTUP_REJECTION_NOT_RETRIED"
+    },
+    {
+      "district": "岳麓区",
+      "region_code": "430104",
+      "portal_area_label": "湖南湘江新区",
+      "authority": "湖南湘江新区管理委员会民政和社会保障局（退役军人事务局）",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+      "official_approve_id": "515bd3bf94164cf6b295560fb0ba18e3",
+      "implementation_code": "TE430216HNXJXQMZ014002014302002",
+      "guide_file": "reports/nationwide-verification-20261029-b/hunan/xiangjiang/guide.json",
+      "status": "own_official_guide_and_originals_collected_worker_conversion_adapter_verified",
+      "published": false,
+      "materials": 4,
+      "blank_originals": 2,
+      "sample_originals": 2,
+      "offline_generation": [
+        "worker_application_from_platform_conversion"
+      ],
+      "web_acceptance": "NOT_RUN_EXISTING_STARTUP_REJECTION_NOT_RETRIED"
+    }
+  ],
+  "public_originals": [
+    {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "approve_id": "8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "area_code": "430103999000",
+      "material_id": "bac146a7f8124340aa1f57a487e812cb",
+      "official_annex_id": "8f157e7622e54d5e9ca423be6d2a9897",
+      "file": "reports/nationwide-verification-20261029-b/hunan/tianxin/originals/blank/1624951667887.doc",
+      "original_name": "1－仲裁申请书（劳动者）.doc",
+      "official_control": "blank",
+      "attach_code": "000002",
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667887%24%241%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202106",
+      "final_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667887%24%241%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202106",
+      "http_status": 200,
+      "downloaded_at": "2026-10-29T09:15:37.928608+00:00",
+      "sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+      "bytes": 50688,
+      "method": "cookie-free public HTTP after own native material control Fetch",
+      "public_reason": "Own official template/sample control public original; sample facts never reused"
+    },
+    {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "approve_id": "8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "area_code": "430103999000",
+      "material_id": "bac146a7f8124340aa1f57a487e812cb",
+      "official_annex_id": "d75ccf5d5e424a71960c118b6b4558e6",
+      "file": "reports/nationwide-verification-20261029-b/hunan/tianxin/originals/sample/1732694895374.doc",
+      "original_name": "仲裁申请书（劳动者）.doc",
+      "official_control": "sample",
+      "attach_code": "000003",
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895374%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202411",
+      "final_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895374%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202411",
+      "http_status": 200,
+      "downloaded_at": "2026-10-29T09:15:39.113680+00:00",
+      "sha256": "369d38b1bcb1d92e0be6b815d6269967fc7324afbb63cc22a94331bbfcc220cc",
+      "bytes": 26624,
+      "method": "cookie-free public HTTP after own native material control Fetch",
+      "public_reason": "Own official template/sample control public original; sample facts never reused"
+    },
+    {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "approve_id": "8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "area_code": "430103999000",
+      "material_id": "bac146a7f8124340aa1f57a487e812cb",
+      "official_annex_id": "3a1befe9123b4d87bc4405c3403aab66",
+      "file": "reports/nationwide-verification-20261029-b/hunan/tianxin/originals/sample/1732694895330.doc",
+      "original_name": "仲裁申请书（单位）.doc",
+      "official_control": "sample",
+      "attach_code": "000003",
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895330%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202411",
+      "final_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895330%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202411",
+      "http_status": 200,
+      "downloaded_at": "2026-10-29T09:15:41.503285+00:00",
+      "sha256": "00a47b36fa43d89f8c604d66585ac5e191360dd3d546feecc82ea8d6b4307444",
+      "bytes": 27136,
+      "method": "cookie-free public HTTP after own native material control Fetch",
+      "public_reason": "Own official template/sample control public original; sample facts never reused"
+    },
+    {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "approve_id": "8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "area_code": "430103999000",
+      "material_id": "bac146a7f8124340aa1f57a487e812cb",
+      "official_annex_id": "829a8d9416084ab4bff389bc5ff6bbea",
+      "file": "reports/nationwide-verification-20261029-b/hunan/tianxin/originals/blank/1624951667935.doc",
+      "original_name": "2－仲裁申请书（单位）.doc",
+      "official_control": "blank",
+      "attach_code": "000002",
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667935%24%242%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202106",
+      "final_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667935%24%242%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202106",
+      "http_status": 200,
+      "downloaded_at": "2026-10-29T09:15:42.712604+00:00",
+      "sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+      "bytes": 51712,
+      "method": "cookie-free public HTTP after own native material control Fetch",
+      "public_reason": "Own official template/sample control public original; sample facts never reused"
+    },
+    {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+      "approve_id": "515bd3bf94164cf6b295560fb0ba18e3",
+      "area_code": "430104999000",
+      "material_id": "a34282632e644e4daa441ab6d8c5d3c2",
+      "official_annex_id": "2bd11995dd7f417eacdfa3f8de734d45",
+      "file": "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals/sample/1732694895374.doc",
+      "original_name": "仲裁申请书（劳动者）.doc",
+      "official_control": "sample",
+      "attach_code": "000003",
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895374%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202411",
+      "final_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895374%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202411",
+      "http_status": 200,
+      "downloaded_at": "2026-10-29T09:19:01.065194+00:00",
+      "sha256": "369d38b1bcb1d92e0be6b815d6269967fc7324afbb63cc22a94331bbfcc220cc",
+      "bytes": 26624,
+      "method": "cookie-free public HTTP after own native material control Fetch",
+      "public_reason": "Own official template/sample control public original; sample facts never reused"
+    },
+    {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+      "approve_id": "515bd3bf94164cf6b295560fb0ba18e3",
+      "area_code": "430104999000",
+      "material_id": "a34282632e644e4daa441ab6d8c5d3c2",
+      "official_annex_id": "b5c8e3c7397542f48b162aa7fc802277",
+      "file": "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals/sample/1732694895330.doc",
+      "original_name": "仲裁申请书（单位）.doc",
+      "official_control": "sample",
+      "attach_code": "000003",
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895330%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202411",
+      "final_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2024-11-27-16%2F1732694895330%24%24%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202411",
+      "http_status": 200,
+      "downloaded_at": "2026-10-29T09:19:02.265506+00:00",
+      "sha256": "00a47b36fa43d89f8c604d66585ac5e191360dd3d546feecc82ea8d6b4307444",
+      "bytes": 27136,
+      "method": "cookie-free public HTTP after own native material control Fetch",
+      "public_reason": "Own official template/sample control public original; sample facts never reused"
+    },
+    {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+      "approve_id": "515bd3bf94164cf6b295560fb0ba18e3",
+      "area_code": "430104999000",
+      "material_id": "a34282632e644e4daa441ab6d8c5d3c2",
+      "official_annex_id": "b84b431d889f4293aad5b527347cc0fa",
+      "file": "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals/blank/1624951667935.doc",
+      "original_name": "2－仲裁申请书（单位）.doc",
+      "official_control": "blank",
+      "attach_code": "000002",
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667935%24%242%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202106",
+      "final_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667935%24%242%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89.doc&bucketName=zwfw202106",
+      "http_status": 200,
+      "downloaded_at": "2026-10-29T09:19:03.479262+00:00",
+      "sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+      "bytes": 51712,
+      "method": "cookie-free public HTTP after own native material control Fetch",
+      "public_reason": "Own official template/sample control public original; sample facts never reused"
+    },
+    {
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+      "approve_id": "515bd3bf94164cf6b295560fb0ba18e3",
+      "area_code": "430104999000",
+      "material_id": "a34282632e644e4daa441ab6d8c5d3c2",
+      "official_annex_id": "b837a9eba68c4d6eb28cd178549c0fd1",
+      "file": "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals/blank/1624951667887.doc",
+      "original_name": "1－仲裁申请书（劳动者）.doc",
+      "official_control": "blank",
+      "attach_code": "000002",
+      "download_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667887%24%241%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202106",
+      "final_url": "https://zwfw-new.hunan.gov.cn/picPathMapping?picPath=approve%2F2021-06-29-15%2F1624951667887%24%241%EF%BC%8D%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6%EF%BC%88%E5%8A%B3%E5%8A%A8%E8%80%85%EF%BC%89.doc&bucketName=zwfw202106",
+      "http_status": 200,
+      "downloaded_at": "2026-10-29T09:19:04.721744+00:00",
+      "sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+      "bytes": 50688,
+      "method": "cookie-free public HTTP after own native material control Fetch",
+      "public_reason": "Own official template/sample control public original; sample facts never reused"
+    }
+  ],
+  "derived_conversion_copies": [
+    {
+      "district": "tianxin",
+      "source": "tianxin/originals/blank/1624951667887.doc",
+      "source_sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+      "file": "derived/tianxin/1624951667887.docx",
+      "sha256": "662c722d87b1383ac14842b34186b217b0d5a9e874317d3b5daa34e93540d1bb",
+      "bytes": 19612,
+      "kind": "platform_conversion_of_own_official_doc_not_official_docx",
+      "method": "isolated Word SaveAs2 format16 after original PDF export",
+      "table_shapes": [
+        [
+          57,
+          1
+        ]
+      ]
+    },
+    {
+      "district": "tianxin",
+      "source": "tianxin/originals/blank/1624951667935.doc",
+      "source_sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+      "file": "derived/tianxin/1624951667935.docx",
+      "sha256": "7d664060f85e29f282270ab93c3284156e1baf0dd69ae706adc5b798f71d887b",
+      "bytes": 19631,
+      "kind": "platform_conversion_of_own_official_doc_not_official_docx",
+      "method": "isolated Word SaveAs2 format16 after original PDF export",
+      "table_shapes": [
+        [
+          56,
+          1
+        ]
+      ]
+    },
+    {
+      "district": "xiangjiang",
+      "source": "xiangjiang/originals/blank/1624951667935.doc",
+      "source_sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+      "file": "derived/xiangjiang/1624951667935.docx",
+      "sha256": "c7d0691663fac8a09c7506c045ee851d7777ca1e4046c6eb15caee3919f011a3",
+      "bytes": 19667,
+      "kind": "platform_conversion_of_own_official_doc_not_official_docx",
+      "method": "isolated Word SaveAs2 format16 after original PDF export",
+      "table_shapes": [
+        [
+          56,
+          1
+        ]
+      ]
+    },
+    {
+      "district": "xiangjiang",
+      "source": "xiangjiang/originals/blank/1624951667887.doc",
+      "source_sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+      "file": "derived/xiangjiang/1624951667887.docx",
+      "sha256": "7fbb235b7705f5ee51c877a4ce43f1bbff75273523d43133ad44f68da047ca2f",
+      "bytes": 19789,
+      "kind": "platform_conversion_of_own_official_doc_not_official_docx",
+      "method": "isolated Word SaveAs2 format16 after original PDF export",
+      "table_shapes": [
+        [
+          57,
+          1
+        ]
+      ]
+    }
+  ],
+  "files": {
+    "reports/nationwide-verification-20261029-b/hunan/artifact.md": {
+      "sha256": "65f93b4f5954c896d91281733d22c46fb8389e786ea6991068919a59a16a3214",
+      "bytes": 2403
+    },
+    "reports/nationwide-verification-20261029-b/hunan/derived/tianxin/1624951667887.docx": {
+      "sha256": "662c722d87b1383ac14842b34186b217b0d5a9e874317d3b5daa34e93540d1bb",
+      "bytes": 19612
+    },
+    "reports/nationwide-verification-20261029-b/hunan/derived/tianxin/1624951667935.docx": {
+      "sha256": "7d664060f85e29f282270ab93c3284156e1baf0dd69ae706adc5b798f71d887b",
+      "bytes": 19631
+    },
+    "reports/nationwide-verification-20261029-b/hunan/derived/xiangjiang/1624951667887.docx": {
+      "sha256": "7fbb235b7705f5ee51c877a4ce43f1bbff75273523d43133ad44f68da047ca2f",
+      "bytes": 19789
+    },
+    "reports/nationwide-verification-20261029-b/hunan/derived/xiangjiang/1624951667935.docx": {
+      "sha256": "c7d0691663fac8a09c7506c045ee851d7777ca1e4046c6eb15caee3919f011a3",
+      "bytes": 19667
+    },
+    "reports/nationwide-verification-20261029-b/hunan/DERIVED-MANIFEST.json": {
+      "sha256": "82a18bd0b08bfe3370b2ef31603f515e82ecaba4580ff228b74391a5ee28fc61",
+      "bytes": 17789
+    },
+    "reports/nationwide-verification-20261029-b/hunan/discovery/changsha-picker/manifest.json": {
+      "sha256": "7e5730d872b2dcb35ec523142254c3c5fc889aa9918596f567c6c3bf9f51dff6",
+      "bytes": 686
+    },
+    "reports/nationwide-verification-20261029-b/hunan/discovery/changsha-picker/page.json": {
+      "sha256": "d487618b14a48c1b99373db3148e676155dc48abb5655f657eda9d1c5338a395",
+      "bytes": 36766
+    },
+    "reports/nationwide-verification-20261029-b/hunan/discovery/changsha-picker/page.png": {
+      "sha256": "f09ad5524271f954218f92f207a0873b36ed69059a1687d3cb94350918c0ff3e",
+      "bytes": 486654
+    },
+    "reports/nationwide-verification-20261029-b/hunan/discovery/changsha-picker/page.txt": {
+      "sha256": "61875f86bd4dc567e76ce2fc5c40e556fa3d620ae6566e5f7a9a61a94ef90e2d",
+      "bytes": 4470
+    },
+    "reports/nationwide-verification-20261029-b/hunan/discovery/changsha-picker/snapshot.txt": {
+      "sha256": "9ea463ce297bbcef7650860da6c5fbeda6e4bf07bc8b102dfe9f891eece233df",
+      "bytes": 11773
+    },
+    "reports/nationwide-verification-20261029-b/hunan/discovery/home/manifest.json": {
+      "sha256": "c6a021cf307b8cb222a71bb41f9fea5d4b2ac102308822b37385b18539775f0b",
+      "bytes": 685
+    },
+    "reports/nationwide-verification-20261029-b/hunan/discovery/home/page.json": {
+      "sha256": "d582dfec5a840e6714f26514c296d759337847b6137a2f5321ba01e34f07f5b7",
+      "bytes": 32430
+    },
+    "reports/nationwide-verification-20261029-b/hunan/discovery/home/page.png": {
+      "sha256": "2622f2293b666ff839a5e7bd4b2f9b14207a1536dddf03042e0b786f684b5591",
+      "bytes": 994511
+    },
+    "reports/nationwide-verification-20261029-b/hunan/discovery/home/page.txt": {
+      "sha256": "010dedc8275bceab43d8ec623b767e9b21331845d4a9d4b9bdcf7522f73669c3",
+      "bytes": 3280
+    },
+    "reports/nationwide-verification-20261029-b/hunan/discovery/home/snapshot.txt": {
+      "sha256": "6d1932779bdf45b8a26fbb9c8cc4a62bee741d54103f21052712637fa650ca85",
+      "bytes": 9083
+    },
+    "reports/nationwide-verification-20261029-b/hunan/filled-render-result.json": {
+      "sha256": "6172d7c076e266fcf1ff16b4a199bfe55e0da007404b855e8602a62a58ec2cae",
+      "bytes": 3076
+    },
+    "reports/nationwide-verification-20261029-b/hunan/finalize.py": {
+      "sha256": "d2ddee37439f92af63204d576f1a1d2b2ba668e25fcdd625b42569bf0edb03bd",
+      "bytes": 8961
+    },
+    "reports/nationwide-verification-20261029-b/hunan/FORM-CONTRACT.json": {
+      "sha256": "56de268f0fa25834de2d406ba072de0d81556d2cfc2609db31960cdefc12e5d7",
+      "bytes": 1611
+    },
+    "reports/nationwide-verification-20261029-b/hunan/original-render-result.json": {
+      "sha256": "62caa80fe9e20f7feab1d5967b1b783b86b7af3cb2231032cce155aa72bc2d95",
+      "bytes": 10999
+    },
+    "reports/nationwide-verification-20261029-b/hunan/PAGE-QA.json": {
+      "sha256": "6991811431ffc1ecd805ffaf67bbe9096779d9af37c0730292b865a65c7fb220",
+      "bytes": 13765
+    },
+    "reports/nationwide-verification-20261029-b/hunan/qa/package-checks.json": {
+      "sha256": "207a78ee6546703542e98d7e104c2ef16b384ebda9d8fe5a2b09d4919ec75652",
+      "bytes": 1261
+    },
+    "reports/nationwide-verification-20261029-b/hunan/qa/synthetic-payloads.json": {
+      "sha256": "f43593b4d492809043e56c0fa74d9a9f525ddba76c345a216338656dbe37d3d3",
+      "bytes": 3514
+    },
+    "reports/nationwide-verification-20261029-b/hunan/qa/tianxin/worker-application-synthetic.docx": {
+      "sha256": "165f29f5f3fac8b692083acfc22d4eb787492471ad08b8c262ba2351deeb3cf2",
+      "bytes": 16815
+    },
+    "reports/nationwide-verification-20261029-b/hunan/qa/xiangjiang/worker-application-synthetic.docx": {
+      "sha256": "5ab984c41b8e740ff3fc6ea3d5f6196324d358d4c0cff0574e0cafaf327ac144",
+      "bytes": 16835
+    },
+    "reports/nationwide-verification-20261029-b/hunan/qa_hunan.py": {
+      "sha256": "861fe9f5755f1e752e69dbe09a4ea337702480d171a2b9b3598b3b44faa650b0",
+      "bytes": 8555
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-filled/inputs.json": {
+      "sha256": "09361fbaebc6459ffae17b564c3286f9eb60e9da4576013c61e8abcbbc556e9a",
+      "bytes": 886
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-filled/tianxin/document.pdf": {
+      "sha256": "2feca101b4aa1a57eca69bae129149df2feecf24d1349530e17991fd9017a307",
+      "bytes": 161060
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-filled/tianxin/page-1.png": {
+      "sha256": "6bf2609d36a4ec9d8e7cdc3a71fbf00142eeb3e5cfc73128fa2195fb6e71963b",
+      "bytes": 131720
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-filled/tianxin/page-2.png": {
+      "sha256": "85509e2f64c1f0f023586c18facd162be1511faafd2e6cf400ded30b7a85e10f",
+      "bytes": 155856
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-filled/tianxin/text.txt": {
+      "sha256": "c969fd6fe77c33d7726365b7277adf5fb7b5863f55cc663d3d820ff394a89723",
+      "bytes": 2451
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-filled/word-instance-isolation.json": {
+      "sha256": "7e4b6a74a375d70001a188c0e479a99a4b2167d5636b624b2016f09876ebdea6",
+      "bytes": 1451
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-filled/word-render.log": {
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "bytes": 2
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-filled/xiangjiang/document.pdf": {
+      "sha256": "2ccadbd8f21346c43cb7e5f314898bf21e98a3f423a761ffddf7bdfd8eabe1ee",
+      "bytes": 162523
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-filled/xiangjiang/page-1.png": {
+      "sha256": "54c9e48623a0aef46de8c8b185447c97b5b74ec54b0be68e039e3587d3e584a5",
+      "bytes": 134758
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-filled/xiangjiang/page-2.png": {
+      "sha256": "d02cfa9b3b383ad98059b497703a575678a9adacb847cd74f4042c9ba7d02aea",
+      "bytes": 157782
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-filled/xiangjiang/text.txt": {
+      "sha256": "b29a80f685afdcee1324d8bf749fffbd1ac2b40d0511c5454ccc74f4fd69f234",
+      "bytes": 2467
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-isolated.ps1": {
+      "sha256": "4cdf392de1feae4160e70e9657147408fd63ade138469b7cbceca42625d7ef3c",
+      "bytes": 5818
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/inputs.json": {
+      "sha256": "3a55d9af6a973b2e8b4feba6b052db1e1e0ebc0e611e4b5c7c5889f9fb2c2755",
+      "bytes": 4805
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/blank-1624951667887/document.pdf": {
+      "sha256": "6e3ea7938492650fa0750fd31dd44b1e9b04be92b4cf35be59c305e84b010653",
+      "bytes": 126384
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/blank-1624951667887/page-1.png": {
+      "sha256": "3e1485a84176805954b24549010602e544cd01666fc7db4295547a3ebc436916",
+      "bytes": 75894
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/blank-1624951667887/page-2.png": {
+      "sha256": "57d522a26d3d1f96eadb1960c1c5481ff2b61ae0fdca30a7d3ee8907ba51565f",
+      "bytes": 21654
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/blank-1624951667887/page-3.png": {
+      "sha256": "2ce5061f4aeacccc04b6d581c8ac4d67886fdf2010d34cfe2f1a9e01ae450d08",
+      "bytes": 59498
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/blank-1624951667887/page-4.png": {
+      "sha256": "7fdf03eecba2feb16080348a0eab70d40a9bd8cbbf4aa62e9f5ac65c17c121b2",
+      "bytes": 6195
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/blank-1624951667887/text.txt": {
+      "sha256": "ffbf9eab0f132e4d61a00d90601eb98dcfb5bbbd8710a894f9ee75b422579035",
+      "bytes": 1810
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/blank-1624951667935/document.pdf": {
+      "sha256": "33e7b42eb7fb57a7b98a437625de43d6b10c250f57959eafd0cbb2410971ec8d",
+      "bytes": 131358
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/blank-1624951667935/page-1.png": {
+      "sha256": "64332bd214422f0e2a898a788194ed95e639052c1697724f5fd97df79236d09f",
+      "bytes": 89487
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/blank-1624951667935/page-2.png": {
+      "sha256": "d724f2f38937982849f3a5f1a2245de1d8b704589c53fd068f9417ac3c2c7f25",
+      "bytes": 20603
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/blank-1624951667935/page-3.png": {
+      "sha256": "f472057e4fa088e2bf77bb830ff858403ae52632e79efe5c8a85ee68ef397bcb",
+      "bytes": 61044
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/blank-1624951667935/page-4.png": {
+      "sha256": "b4e2f0308ca76f43baf10fab0b06267a82f3a4bc53da913556940993745a9a95",
+      "bytes": 6204
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/blank-1624951667935/text.txt": {
+      "sha256": "39ebbaf531d821ec6f1ee0a79da43911633120088cd484808b5a846e2002e009",
+      "bytes": 2024
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/sample-1732694895330/document.pdf": {
+      "sha256": "bf568739f2860b5fc7f5f2ade3dd6b33fa0db070c8416acf0bb4adc2026d7b48",
+      "bytes": 146048
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/sample-1732694895330/page-1.png": {
+      "sha256": "72e6f86aea3dff0eccd710ab80bec99bbbae9cedfd6cc34ddbf6d187a71eb8de",
+      "bytes": 135111
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/sample-1732694895330/page-2.png": {
+      "sha256": "4feecf476df191f7b38f5a562d83830850f3f7025235590fe449179a7a361856",
+      "bytes": 62495
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/sample-1732694895330/page-3.png": {
+      "sha256": "5b9734682f78985d3335c547c839b561de69ac815c5845f40deed64d815d1b5b",
+      "bytes": 45010
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/sample-1732694895330/text.txt": {
+      "sha256": "bc549f29f6eca80a06f909f0e2085953abdf774ae15cfa03b9b3d849c253ac95",
+      "bytes": 2163
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/sample-1732694895374/document.pdf": {
+      "sha256": "8ff92de007fecb91a1ca9d1f4d6615306de2ea250d215ec17bf5ca5d9c91f7af",
+      "bytes": 139144
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/sample-1732694895374/page-1.png": {
+      "sha256": "03231be3e6f91155df04324ef443f2107a8675e324e1313e3c5f174ab8097f09",
+      "bytes": 123691
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/sample-1732694895374/page-2.png": {
+      "sha256": "2da07b6df103ebd24e122190d71231270f1f00bf9b96de79c57349a42f6369be",
+      "bytes": 44080
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/sample-1732694895374/page-3.png": {
+      "sha256": "8794428c19539d0f441101aa4b9e28c10f07970856f6582c7386fd54bf6cd967",
+      "bytes": 55130
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/tianxin/sample-1732694895374/text.txt": {
+      "sha256": "345d196e2c268a63e1081275348696eb7a31d6dca26f81116c90e577b1055337",
+      "bytes": 1931
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/word-instance-isolation.json": {
+      "sha256": "38ff45d9fa5462aaf1e3415b6e9c0796c485e208e74026bf88e67e8e2f70f489",
+      "bytes": 4016
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/word-render.log": {
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "bytes": 2
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/blank-1624951667887/document.pdf": {
+      "sha256": "76f75263699bcf0587e9a7faeec63b1593f63761d0cd47cfa3fe40f5b43028c2",
+      "bytes": 126384
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/blank-1624951667887/page-1.png": {
+      "sha256": "3e1485a84176805954b24549010602e544cd01666fc7db4295547a3ebc436916",
+      "bytes": 75894
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/blank-1624951667887/page-2.png": {
+      "sha256": "57d522a26d3d1f96eadb1960c1c5481ff2b61ae0fdca30a7d3ee8907ba51565f",
+      "bytes": 21654
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/blank-1624951667887/page-3.png": {
+      "sha256": "2ce5061f4aeacccc04b6d581c8ac4d67886fdf2010d34cfe2f1a9e01ae450d08",
+      "bytes": 59498
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/blank-1624951667887/page-4.png": {
+      "sha256": "7fdf03eecba2feb16080348a0eab70d40a9bd8cbbf4aa62e9f5ac65c17c121b2",
+      "bytes": 6195
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/blank-1624951667887/text.txt": {
+      "sha256": "ffbf9eab0f132e4d61a00d90601eb98dcfb5bbbd8710a894f9ee75b422579035",
+      "bytes": 1810
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/blank-1624951667935/document.pdf": {
+      "sha256": "8cad1f0db700143ca4edbd64014f8e99e26959394e7ec3f64fa1b8cabb3b288a",
+      "bytes": 131358
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/blank-1624951667935/page-1.png": {
+      "sha256": "64332bd214422f0e2a898a788194ed95e639052c1697724f5fd97df79236d09f",
+      "bytes": 89487
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/blank-1624951667935/page-2.png": {
+      "sha256": "d724f2f38937982849f3a5f1a2245de1d8b704589c53fd068f9417ac3c2c7f25",
+      "bytes": 20603
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/blank-1624951667935/page-3.png": {
+      "sha256": "f472057e4fa088e2bf77bb830ff858403ae52632e79efe5c8a85ee68ef397bcb",
+      "bytes": 61044
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/blank-1624951667935/page-4.png": {
+      "sha256": "b4e2f0308ca76f43baf10fab0b06267a82f3a4bc53da913556940993745a9a95",
+      "bytes": 6204
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/blank-1624951667935/text.txt": {
+      "sha256": "39ebbaf531d821ec6f1ee0a79da43911633120088cd484808b5a846e2002e009",
+      "bytes": 2024
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/sample-1732694895330/document.pdf": {
+      "sha256": "849ceb32ccaff4809184dff824c9ebe38fdb887f51655ff456bbbe0506307348",
+      "bytes": 146048
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/sample-1732694895330/page-1.png": {
+      "sha256": "72e6f86aea3dff0eccd710ab80bec99bbbae9cedfd6cc34ddbf6d187a71eb8de",
+      "bytes": 135111
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/sample-1732694895330/page-2.png": {
+      "sha256": "4feecf476df191f7b38f5a562d83830850f3f7025235590fe449179a7a361856",
+      "bytes": 62495
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/sample-1732694895330/page-3.png": {
+      "sha256": "5b9734682f78985d3335c547c839b561de69ac815c5845f40deed64d815d1b5b",
+      "bytes": 45010
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/sample-1732694895330/text.txt": {
+      "sha256": "bc549f29f6eca80a06f909f0e2085953abdf774ae15cfa03b9b3d849c253ac95",
+      "bytes": 2163
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/sample-1732694895374/document.pdf": {
+      "sha256": "32aaec4a5e178eedc11ec15a1746a40c3fea9eec485718304d78383dd6946914",
+      "bytes": 139144
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/sample-1732694895374/page-1.png": {
+      "sha256": "03231be3e6f91155df04324ef443f2107a8675e324e1313e3c5f174ab8097f09",
+      "bytes": 123691
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/sample-1732694895374/page-2.png": {
+      "sha256": "2da07b6df103ebd24e122190d71231270f1f00bf9b96de79c57349a42f6369be",
+      "bytes": 44080
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/sample-1732694895374/page-3.png": {
+      "sha256": "8794428c19539d0f441101aa4b9e28c10f07970856f6582c7386fd54bf6cd967",
+      "bytes": 55130
+    },
+    "reports/nationwide-verification-20261029-b/hunan/render-originals/xiangjiang/sample-1732694895374/text.txt": {
+      "sha256": "345d196e2c268a63e1081275348696eb7a31d6dca26f81116c90e577b1055337",
+      "bytes": 1931
+    },
+    "reports/nationwide-verification-20261029-b/hunan/RESULTS.json": {
+      "sha256": "96bc6ef037c484507ec4792bbd308e944f7389743f58449ef3e220dc416f6787",
+      "bytes": 19508
+    },
+    "reports/nationwide-verification-20261029-b/hunan/SOURCE-MANIFEST.json": {
+      "sha256": "550a4539c7f94aeb8749721b2de1a693895753b9dde940c645a2eb5b79907f10",
+      "bytes": 33988
+    },
+    "reports/nationwide-verification-20261029-b/hunan/TEST-REPORT.md": {
+      "sha256": "b985427df5b56e36e850c0caf2fb596438443685c8dbaa410dcbc819f61ce517",
+      "bytes": 4970
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tests.log": {
+      "sha256": "66debe413fe810fe7bfa0928fed6071df3fee5100433aca7f46f9d526fe2efc9",
+      "bytes": 1190
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/attachment-observation.json": {
+      "sha256": "ddb48097b36627f8f477707a9684e095749a337a38b985c0c3ffb42c8299b85c",
+      "bytes": 1347
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/faq/manifest.json": {
+      "sha256": "5b417feeb8a9656ebeb71dc5cb3185dc06227e4e9e4bc3294a80719087e7d725",
+      "bytes": 804
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/faq/page.json": {
+      "sha256": "8adb1c36f8c1772228c79b37dac44e04d2633d56b954d5ce0698abd7a8e1aff0",
+      "bytes": 25460
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/faq/page.png": {
+      "sha256": "4307abe52e24b4453d52210e70463e449cbed736a796b5cdc73af3ca480d5ed4",
+      "bytes": 523639
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/faq/page.txt": {
+      "sha256": "ef9c138391d10f8ccad28976eb3cc2bb76cbdb9362b061cda983458dfa4cbce5",
+      "bytes": 9107
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/faq/snapshot.txt": {
+      "sha256": "a93afd0113138beda742a6e569db533511e11212c01e1b0859d0c1decfa0c353",
+      "bytes": 9911
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/formal-initial/manifest.json": {
+      "sha256": "3cc652954a67a78aac919abde45abaf903382bcdd006a79f22d38935d4b1ea02",
+      "bytes": 805
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/formal-initial/page.json": {
+      "sha256": "418e5c91cd6d6be172fe6efe8008b25fc3e314be379924a30a259ec6461d2324",
+      "bytes": 25410
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/formal-initial/page.png": {
+      "sha256": "1f555646b3be9c7e7f9ba8a1e34bb1cde92eba42e2b1bfe835b38f6815270990",
+      "bytes": 463117
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/formal-initial/page.txt": {
+      "sha256": "01e28ddb3a6cb44d34b79bceaf84acd4c96995027665ed1c8989eaf130d61345",
+      "bytes": 9037
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/formal-initial/snapshot.txt": {
+      "sha256": "4ecd69a6c5a809e0a8908851ad6528dc78bccf05dcb05ca6e03c583552d9ab2d",
+      "bytes": 10006
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/guide.json": {
+      "sha256": "5cb541178afb4a82e60dd61205a1e2163b6d498b68b82bebcf281663b278c0ff",
+      "bytes": 42171
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/home/manifest.json": {
+      "sha256": "196f57b5597bce784336c8302fc53712a2da5de158ea634219ac13ec64a153b2",
+      "bytes": 691
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/home/page.json": {
+      "sha256": "d5ea092c9262dbc9f4a29fe5ba06e4b64abf17d671b6fc3a0131d6b7d18cd71e",
+      "bytes": 32840
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/home/page.png": {
+      "sha256": "625ab261b9c817beea655e6933bb9f7f11b5d26ff28e207941bfd931e63e4ead",
+      "bytes": 1191424
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/home/page.txt": {
+      "sha256": "247aad70f6c1f8978acac3e5e44c6da18b58750361720fdeb1b3bb0697e7f971",
+      "bytes": 2602
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/home/snapshot.txt": {
+      "sha256": "71bff3b24b3d4146a7502c7b97dd77f79411042ea88ff836932b36345d738c4a",
+      "bytes": 7794
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/identity-exemption/manifest.json": {
+      "sha256": "3bce084354e7698c5113c26ced1bd3fcb9eff6459d2d372225e21b44c51cfda0",
+      "bytes": 805
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/identity-exemption/page.json": {
+      "sha256": "16bcc4e463546286d4cc0e56f09f3801bccc1e11f8e02a185dda09ac617f2ccf",
+      "bytes": 25312
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/identity-exemption/page.png": {
+      "sha256": "0aa7ecdba6a7421c84e8c8a56ea4002223954fdba6396b45d75da0835a418e80",
+      "bytes": 463679
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/identity-exemption/page.txt": {
+      "sha256": "2bc01b899c3405f477260364066bd00ddea15f09b7156d0cee3455ae9d4b1ae0",
+      "bytes": 8959
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/identity-exemption/snapshot.txt": {
+      "sha256": "be914a0b97fa546313bc8cd310919c46b052c58ef818ceb764ba726edf6e5b27",
+      "bytes": 10033
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/jurisdiction-navigation-selection/manifest.json": {
+      "sha256": "be82985d896d4542d867ad52dea913970b40593f18558a8cb480d8521631eb99",
+      "bytes": 760
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/jurisdiction-navigation-selection/page.json": {
+      "sha256": "da1ad6cf8a155b04665fa7c89bd0582433c03461afe65e78fc91113a88c82886",
+      "bytes": 35049
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/jurisdiction-navigation-selection/page.png": {
+      "sha256": "97a4ae151faa6e815cd3758f5188056b20f6fd56ca62fbc3b5e5988a0171a1fc",
+      "bytes": 600389
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/jurisdiction-navigation-selection/page.txt": {
+      "sha256": "23d1d6c030bb35f1b77c79d8f7740afb7708e442afe7072c238793d95fea150a",
+      "bytes": 8079
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/jurisdiction-navigation-selection/snapshot.txt": {
+      "sha256": "2ac1c1d987cc48b1b578c7aeaf2ad974116756c13bd44dca7b6adf6c5acfb69a",
+      "bytes": 8574
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/law/manifest.json": {
+      "sha256": "7196027e51df324f6ddb15da5b576ffe2c941e940dea2ebb451df6cada443893",
+      "bytes": 804
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/law/page.json": {
+      "sha256": "702452b092b3736d59ee7cced02257cb3c481c58a90014c0c6c6d4164a7fd876",
+      "bytes": 25235
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/law/page.png": {
+      "sha256": "01ce99f2170acdbcba5d490bd9e98ceeec56e0dc0073ec7347d38b6d18189be1",
+      "bytes": 461994
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/law/page.txt": {
+      "sha256": "3326819d910fc9ba0a11a63c56af90a385d37aee20a285cc2ba460451facad41",
+      "bytes": 8882
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/law/snapshot.txt": {
+      "sha256": "a93afd0113138beda742a6e569db533511e11212c01e1b0859d0c1decfa0c353",
+      "bytes": 9911
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/license-exemption/manifest.json": {
+      "sha256": "5f873f1d95a609df7101c9b81a80decfec7bc84877a8fefc16d51903ea0a9214",
+      "bytes": 805
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/license-exemption/page.json": {
+      "sha256": "0bcc22c33cd0d9d9a0a57e764d7bc85db491b0657fbce3862c8cf70e2bab9133",
+      "bytes": 25460
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/license-exemption/page.png": {
+      "sha256": "c67ede4bdf871793842801044a7dab0fc3452d7ab454ffd00f79168ab05f0802",
+      "bytes": 525606
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/license-exemption/page.txt": {
+      "sha256": "ef9c138391d10f8ccad28976eb3cc2bb76cbdb9362b061cda983458dfa4cbce5",
+      "bytes": 9107
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/license-exemption/snapshot.txt": {
+      "sha256": "f09fd299f37ffde9b3a6d070a35bd7c379e18c2cd561da3f37abf7e5663a0dcb",
+      "bytes": 10033
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/materials-expanded/manifest.json": {
+      "sha256": "1636d7d6717b543f391ded08dcac6a0af07a9f46d8f7af1228c962001815e4ad",
+      "bytes": 804
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/materials-expanded/page.json": {
+      "sha256": "9f87142a860ab6041ec1702ee8fc74d5d7cdeaba1c3cb276a6387b4d167ba3af",
+      "bytes": 25235
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/materials-expanded/page.png": {
+      "sha256": "01ce99f2170acdbcba5d490bd9e98ceeec56e0dc0073ec7347d38b6d18189be1",
+      "bytes": 461994
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/materials-expanded/page.txt": {
+      "sha256": "3326819d910fc9ba0a11a63c56af90a385d37aee20a285cc2ba460451facad41",
+      "bytes": 8882
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/materials-expanded/snapshot.txt": {
+      "sha256": "a93afd0113138beda742a6e569db533511e11212c01e1b0859d0c1decfa0c353",
+      "bytes": 9911
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/native-guide-target/manifest.json": {
+      "sha256": "c102a07b723df72aba94a5845bd0180f14eb6d2e5736cfe244469fb9039c6f18",
+      "bytes": 760
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/native-guide-target/page.json": {
+      "sha256": "89a2887b06217b6cdf36a6e9d94b5fc5e5decfb30102c4de923e651b6447c2ca",
+      "bytes": 35194
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/native-guide-target/page.png": {
+      "sha256": "9823a871c8a47c21aa9423437536e72ac61dcf848eb2b66dc95bde6eae6e6609",
+      "bytes": 425833
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/native-guide-target/page.txt": {
+      "sha256": "9342dea2d24e1d6260e77496c730ea4d9f3d1c5c39aa00ae4e64fd1177e52ea8",
+      "bytes": 8224
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/native-guide-target/snapshot.txt": {
+      "sha256": "dfb29b6da43b40663f12b3aa6b957f54fd9fce08d23a0b92d3a9b9f96815453c",
+      "bytes": 8544
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/navigation-selection-confirmed/manifest.json": {
+      "sha256": "f4d81f49bc68b22fcd4cf838d5d4e9a71476871f587989dec74163d599236ccf",
+      "bytes": 760
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/navigation-selection-confirmed/page.json": {
+      "sha256": "ca5092c92a8d7083721e97dc9ee1b1ed59bb0b67a40fdd8d41e63cbd3b14d6e8",
+      "bytes": 35049
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/navigation-selection-confirmed/page.png": {
+      "sha256": "cab5ef02c30f5356e0df1dbb9980a1a25a714bd6f9dda146f02d2397defda8da",
+      "bytes": 600286
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/navigation-selection-confirmed/page.txt": {
+      "sha256": "23d1d6c030bb35f1b77c79d8f7740afb7708e442afe7072c238793d95fea150a",
+      "bytes": 8079
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/navigation-selection-confirmed/snapshot.txt": {
+      "sha256": "eae3f4f4ad3f4e79ce9904ee395e0b19798a64641499de521600a55618353213",
+      "bytes": 8564
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/online-boundary.json": {
+      "sha256": "73ac04b6647c6948cca441bea1e6723854e3240c3a78a1fad45b6bcc1d9a5532",
+      "bytes": 832
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/online-boundary.png": {
+      "sha256": "338523870256cdd623baaeb31ffaec764e9086af2216bc70ff61eaa4017da1d6",
+      "bytes": 536204
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/originals/blank/1624951667887.doc": {
+      "sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+      "bytes": 50688
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/originals/blank/1624951667887.doc.source.json": {
+      "sha256": "9b9494c9330f9992bcc8ce52ab04c7f8ba3504252439f0a2fbb0535d778b64b7",
+      "bytes": 1318
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/originals/blank/1624951667935.doc": {
+      "sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+      "bytes": 51712
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/originals/blank/1624951667935.doc.source.json": {
+      "sha256": "28521f69da290af13caec7c0382fd1e856b07f2815499a14b381f8f0373df9be",
+      "bytes": 1297
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/originals/sample/1732694895330.doc": {
+      "sha256": "00a47b36fa43d89f8c604d66585ac5e191360dd3d546feecc82ea8d6b4307444",
+      "bytes": 27136
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/originals/sample/1732694895330.doc.source.json": {
+      "sha256": "da9f455b2ad4f643c7264b2ba601f890c65e000ae138c393ba5559b71006b34e",
+      "bytes": 1275
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/originals/sample/1732694895374.doc": {
+      "sha256": "369d38b1bcb1d92e0be6b815d6269967fc7324afbb63cc22a94331bbfcc220cc",
+      "bytes": 26624
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/originals/sample/1732694895374.doc.source.json": {
+      "sha256": "a07e7e2f6f2e8d5bc4186ad5b7e40b0e19db3ddaff4f2b4ea31fd5115e040dce",
+      "bytes": 1296
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/originals.json": {
+      "sha256": "58ed8401896bd4c4f825f61837dad4c3b217f3f1b26f756597c69966e81a8010",
+      "bytes": 5345
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/own-list/manifest.json": {
+      "sha256": "0f9af05bbfc3970f77b4fd3d5f83baee449fa8b782ee7bed361cb3ca10add0c5",
+      "bytes": 740
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/own-list/page.json": {
+      "sha256": "3014401ad01899be82c21d1cfeb7e38fb60f8f901a9f6a2d5ac94132d31a7ec2",
+      "bytes": 27572
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/own-list/page.png": {
+      "sha256": "26018d01d17eb0fb3b567851ae5980b79395704c618a16c68df0145a5a7290a6",
+      "bytes": 236136
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/own-list/page.txt": {
+      "sha256": "965be81e0b9679488ecc7704855998d41e9971cd1e5fbc7c4fbfcb807eba4c49",
+      "bytes": 1553
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/own-list/snapshot.txt": {
+      "sha256": "979bcecccc1242246c2c8f311dbd09e954207908b8eed967ab9e3bea46984069",
+      "bytes": 4123
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/picker/manifest.json": {
+      "sha256": "339bcddf8d17fda74e9e850b4577c257fc26f9d46ef5fae36b24aa21b88f3504",
+      "bytes": 685
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/picker/page.json": {
+      "sha256": "fd2321e8f75388182827d3cccf3c87e67efeb36c55bd24e04e841013bf000680",
+      "bytes": 23774
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/picker/page.png": {
+      "sha256": "ddf79d53905aa50d45bdb275805adc0f27a189d6040d190cf659ce00e854826a",
+      "bytes": 458855
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/picker/page.txt": {
+      "sha256": "89c5792449b7cdaab2b1fa8befb588c7696543d085b91d4fe18327798fc0058a",
+      "bytes": 3615
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/picker/snapshot.txt": {
+      "sha256": "3312a9a70ab909ed5749b9ab5bbc44a326266b0f2fa1076981ac503cc862259d",
+      "bytes": 9978
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/public-catalogue.json": {
+      "sha256": "d384f9179a7ed20225d1eb2e9a10b92508caef62ea2c32a69f298326cb0aa9a5",
+      "bytes": 15149
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/result-sample/manifest.json": {
+      "sha256": "e4a2a9d464b9eb8e1387553adb2dbcfb49ca98b21a6e26d936d6706ff62d867f",
+      "bytes": 805
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/result-sample/page.json": {
+      "sha256": "9b8d776778269f3ad69e6c3c8d50cef33d1e6eb12ad9a1f4d0b1366a269066e0",
+      "bytes": 23169
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/result-sample/page.png": {
+      "sha256": "18425182666a8cb291e813c6c9bf1d3ba9fd0a81156405373cc86cbe06e7bd35",
+      "bytes": 387391
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/result-sample/page.txt": {
+      "sha256": "ee04405e9b335742049e19ca54435c2c7475aa50c8f6115dfba3d0fdd5b98d5b",
+      "bytes": 6468
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/result-sample/snapshot.txt": {
+      "sha256": "55bb00ac4d6c7366a51610153cab7c1998c4ac434432c538ce35a4effba7899f",
+      "bytes": 10034
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/rights-duties/manifest.json": {
+      "sha256": "5810bde7b9375f10ba993af245b402196fdf1aa4e7c0c5d055f4a426c7412fb8",
+      "bytes": 804
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/rights-duties/page.json": {
+      "sha256": "19bf0f4e2cc95c1c8c6a366babfbb05b1a7e191fde18834a080d3d08dd433606",
+      "bytes": 22922
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/rights-duties/page.png": {
+      "sha256": "e225976b55d3541fd5be5acc01a3eb88d6ebb1b36c25f4f7f2e3c1f1bd1147e3",
+      "bytes": 374837
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/rights-duties/page.txt": {
+      "sha256": "ee623ec69f9d6d2b8bd1452b45c744f005884a6c144a44fa12e74fa7ffc95db6",
+      "bytes": 6569
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/rights-duties/snapshot.txt": {
+      "sha256": "a93afd0113138beda742a6e569db533511e11212c01e1b0859d0c1decfa0c353",
+      "bytes": 9911
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/sample-control/manifest.json": {
+      "sha256": "a12558b986e6105f37b323844ff82f3a61d1f785ec3491c4b0a6fc412371f2bf",
+      "bytes": 804
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/sample-control/page.json": {
+      "sha256": "dfbae941c88207bc1d31b1de70d991b6d46272b4e909f78ac04fb30c5e467a0f",
+      "bytes": 25235
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/sample-control/page.png": {
+      "sha256": "42509420807e2fa823f20260fb51535523da83392a11e0f546bcf670cc2f7533",
+      "bytes": 462145
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/sample-control/page.txt": {
+      "sha256": "3326819d910fc9ba0a11a63c56af90a385d37aee20a285cc2ba460451facad41",
+      "bytes": 8882
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/sample-control/snapshot.txt": {
+      "sha256": "a93afd0113138beda742a6e569db533511e11212c01e1b0859d0c1decfa0c353",
+      "bytes": 9911
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/selected-own-guide/manifest.json": {
+      "sha256": "787a85c371ce18f38e6d74a4604bb02c5d66563f626c0f16c41d697e631ece57",
+      "bytes": 760
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/selected-own-guide/page.json": {
+      "sha256": "a190fb8de0733cff333c77b97d6fd7da6d0c5cd7f17706df6f582689b6a2acc3",
+      "bytes": 37462
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/selected-own-guide/page.png": {
+      "sha256": "18fb20cdd40364f646df564e4b032295779edb30912d22b3887ddcd5d6c2dfab",
+      "bytes": 644727
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/selected-own-guide/page.txt": {
+      "sha256": "ba557687d381342f7d13aee7f7cb4f7c0001854132c89582dcf1c68df4ab78a6",
+      "bytes": 9017
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/selected-own-guide/snapshot.txt": {
+      "sha256": "b63dcba01a5b8faa88ed18c39f9e4dc7f9fe708ce4ea762c7de29e040b565e1c",
+      "bytes": 9924
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/template-control/manifest.json": {
+      "sha256": "d08d47ea5d2b73d686066686ee23c10fdfc00ad6d6f8f6efc6e9dba15a41c266",
+      "bytes": 804
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/template-control/page.json": {
+      "sha256": "f7a848f8159ca8d86961cfddbd9261ee69e7cd72af59efc7b98aa0549c783536",
+      "bytes": 25235
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/template-control/page.png": {
+      "sha256": "3a8199cf502ba18006e055480e19c453c2dfd39cf5a560777fe1786c3e6ec7c5",
+      "bytes": 462119
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/template-control/page.txt": {
+      "sha256": "3326819d910fc9ba0a11a63c56af90a385d37aee20a285cc2ba460451facad41",
+      "bytes": 8882
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/template-control/snapshot.txt": {
+      "sha256": "a93afd0113138beda742a6e569db533511e11212c01e1b0859d0c1decfa0c353",
+      "bytes": 9911
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/theme-search/manifest.json": {
+      "sha256": "dbc9867a4560a016866ad7c2fa4404b69b95532926e50267c153bb55d3c7373e",
+      "bytes": 740
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/theme-search/page.json": {
+      "sha256": "3c10549d1d5785b0bc63da64d5c7583e1fa448b681ce3dbeb01a30f0a2923872",
+      "bytes": 26531
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/theme-search/page.png": {
+      "sha256": "6b2e7a3611c7db9b142059d11c0c76848f238bc70e8199eb2e571eadff644f87",
+      "bytes": 243903
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/theme-search/page.txt": {
+      "sha256": "298acec67a94c07d27e1624f1878daa69e16e42b7f72f5d0e38d209d2d06863c",
+      "bytes": 1462
+    },
+    "reports/nationwide-verification-20261029-b/hunan/tianxin/theme-search/snapshot.txt": {
+      "sha256": "bda3de0b5074c1e6243fa9b7e955313da844c810f1ae949a41db80e06f637d6d",
+      "bytes": 3750
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/attachment-observation.json": {
+      "sha256": "f5ffb5556b56c2db6e0b3d05cd9d60e28d396db0d466fe0fac00de2f62cdf3d0",
+      "bytes": 1347
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/faq/manifest.json": {
+      "sha256": "004d35c9146ce6f4593a0829bf60f2231afe9fa3aeac0dc983c3cb8e8340767d",
+      "bytes": 805
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/faq/page.json": {
+      "sha256": "0d71bed2f0eab0d3dfc2794b85b892955b41c0bd516b648be6046bdcd35537b7",
+      "bytes": 38009
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/faq/page.png": {
+      "sha256": "b4c7e7087dfe414570291458a919e9cb5f26199fb10500884bd8d6c758bbcee9",
+      "bytes": 704719
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/faq/page.txt": {
+      "sha256": "7bd295e465f014b60ff6f0cec5d95b1729eef567751ccc14198fde144d67c4e8",
+      "bytes": 9252
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/faq/snapshot.txt": {
+      "sha256": "a18098d0c970aceba20595aab42017cc6f4d6422d02ff23bf8cc428aed903803",
+      "bytes": 10419
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/formal-initial/manifest.json": {
+      "sha256": "717fa6ffcecb849c5f6df0df2db0d39f3998831cc428db70afd61f420b97b22c",
+      "bytes": 805
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/formal-initial/page.json": {
+      "sha256": "a3a46b6f2bb377c2e2c9b057bf2a55d8bc147da4d94b8490f78536217f0232f9",
+      "bytes": 37959
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/formal-initial/page.png": {
+      "sha256": "f7876430fe0ca818a1071afda3a8fd74b681313e5c00d48d6c0d86d2406246a5",
+      "bytes": 651708
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/formal-initial/page.txt": {
+      "sha256": "ea1745e9aa770b96f08ee7e797950c0185e5861f66cc5920ad4efdd84989b347",
+      "bytes": 9182
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/formal-initial/snapshot.txt": {
+      "sha256": "1ea79519686c19dd06f3d967100d5a19e88fdf5437d9258c7b9206270ddeeb92",
+      "bytes": 10514
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/guide.json": {
+      "sha256": "9c4a67a495869142c64060e0cd99a625fcb109facfbf1e8fd204ac86005c36e6",
+      "bytes": 42524
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/home/manifest.json": {
+      "sha256": "4f400a361639cf4f6a4b23253021e818ed7cb0d9ce34343a06cb8e4d23899c07",
+      "bytes": 692
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/home/page.json": {
+      "sha256": "7f45a0193f65e9f134fb7b1281aef527a047be778a5c45c6be4cb4c273bc2a38",
+      "bytes": 33756
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/home/page.png": {
+      "sha256": "ddcad4efebaa5e23ce6684a9cea92009cfdf5a3998b63482087f232047d1503c",
+      "bytes": 1130751
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/home/page.txt": {
+      "sha256": "a3cd2baba9bdff19a28f551d22cd43a6e8f634e7cf3f39e045e312ccf214770c",
+      "bytes": 3503
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/home/snapshot.txt": {
+      "sha256": "ade23315abe4a454d2ca1dca0471389d87ca5104aed03579bcc0599167592303",
+      "bytes": 11878
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/identity-exemption/manifest.json": {
+      "sha256": "da6747e32ce2c8b0f7d3ae45185a5af2167bbe115d2a7f9bdf8315aa547a5b49",
+      "bytes": 805
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/identity-exemption/page.json": {
+      "sha256": "0eb5abea7e931a31f0f022bd2be71770ae0fe1c78c8fe04527023659ca480117",
+      "bytes": 37861
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/identity-exemption/page.png": {
+      "sha256": "0bc176b86ac72e4e1ed6f8aedeb33b55f8071d166e71ac9b184183d954df0639",
+      "bytes": 652118
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/identity-exemption/page.txt": {
+      "sha256": "b8cecacff715c0edb2465fd92b74455dd1ad9b8f2d11de612c8b9271f79b30d4",
+      "bytes": 9104
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/identity-exemption/snapshot.txt": {
+      "sha256": "32f7a33983cbf06d180b538edfd25546e7766b900e29263ab8aa0eb5d418eb5e",
+      "bytes": 10541
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/law/manifest.json": {
+      "sha256": "a8d13707d1fbbc34dd2fdad0dd295e4855da5ad415127d67140236154972bc55",
+      "bytes": 805
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/law/page.json": {
+      "sha256": "02253143a174682b6f98ecb16ae51f81d315dcedd2619175fe486ddb21a65ec1",
+      "bytes": 37784
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/law/page.png": {
+      "sha256": "75d3119b568f8beea60b1407534f20ee9e16d4161dce8c65d49c2c0b35eaa0ab",
+      "bytes": 650376
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/law/page.txt": {
+      "sha256": "fb38af3f2d57c2d06e13bc54097d63c5ad41b148529de1153c63f6b9984e9c19",
+      "bytes": 9027
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/law/snapshot.txt": {
+      "sha256": "a18098d0c970aceba20595aab42017cc6f4d6422d02ff23bf8cc428aed903803",
+      "bytes": 10419
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/license-exemption/manifest.json": {
+      "sha256": "756bfa0eb748ef927aa5e2d7ddc5429b0364f2c7905379b75d3185ae1da6c794",
+      "bytes": 805
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/license-exemption/page.json": {
+      "sha256": "a3ae4b53f36c3ca5d41470e494ffe538c725b4ec624fd1681677f2d8268a93af",
+      "bytes": 37938
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/license-exemption/page.png": {
+      "sha256": "2d679e237892704abafef257080be40b8bedd23c9331f73a8fc408acb6ae9593",
+      "bytes": 652107
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/license-exemption/page.txt": {
+      "sha256": "55b00cf02dc81c898aceeb845df96774c3d7ff9e4f0c57462941522dec510172",
+      "bytes": 9181
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/license-exemption/snapshot.txt": {
+      "sha256": "2079c98afa84cfc54ebaac704daacb217a6366101ee7b56b323f072e5153d8d2",
+      "bytes": 10541
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/materials-expanded/manifest.json": {
+      "sha256": "57edc90a9a28335ee7c8539d81c485745fa0d479872aef9fd3293924fe52f862",
+      "bytes": 805
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/materials-expanded/page.json": {
+      "sha256": "7e68cd4114e8ec78ce40833e53b19bf32c2707cad709ba9b331d759cabce9114",
+      "bytes": 37784
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/materials-expanded/page.png": {
+      "sha256": "75d3119b568f8beea60b1407534f20ee9e16d4161dce8c65d49c2c0b35eaa0ab",
+      "bytes": 650376
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/materials-expanded/page.txt": {
+      "sha256": "fb38af3f2d57c2d06e13bc54097d63c5ad41b148529de1153c63f6b9984e9c19",
+      "bytes": 9027
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/materials-expanded/snapshot.txt": {
+      "sha256": "a18098d0c970aceba20595aab42017cc6f4d6422d02ff23bf8cc428aed903803",
+      "bytes": 10419
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/native-guide-target/manifest.json": {
+      "sha256": "b284ffe2676bcf3c125955a68ea73a4a2865e9fdf3b603c5c8f05d069e657cc0",
+      "bytes": 760
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/native-guide-target/page.json": {
+      "sha256": "982c855dd05339e094dcb3edf69d6976c62e96add5365fe2540991f49f0a22cd",
+      "bytes": 35209
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/native-guide-target/page.png": {
+      "sha256": "144e642965be4dea0a77f31951c8487d69bc07c9a833c6d05a66eb388c595dc5",
+      "bytes": 606808
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/native-guide-target/page.txt": {
+      "sha256": "940d4e932efcfaecb404c48450756bffd00678d42ee5064651fab689bcc0d3be",
+      "bytes": 8239
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/native-guide-target/snapshot.txt": {
+      "sha256": "eab78673b21a971db3a0b72d9c92a383104968a963418a14515b511e6b61a1ae",
+      "bytes": 8743
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/navigation-selection/manifest.json": {
+      "sha256": "133ed18185fde49f2ccbd12f7cb29fba6a4f0085d70e871e33cb3ca003864ef9",
+      "bytes": 760
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/navigation-selection/page.json": {
+      "sha256": "97ac180875c1cb77845818e76f85bfe818123f8f7b79d9fc6b7f6645e376a650",
+      "bytes": 35064
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/navigation-selection/page.png": {
+      "sha256": "499ffb6b3826e9dba840149401e3243c46ba172ff69be43718df640151c54d45",
+      "bytes": 598762
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/navigation-selection/page.txt": {
+      "sha256": "981d8c469f89df47f1809c7d724051e5ed1b70fcbb9d711141ff59b8ae7b7845",
+      "bytes": 8094
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/navigation-selection/snapshot.txt": {
+      "sha256": "e8553cf32bc1ecb30bc59cba204c29c7fdef129b6b320ac341a89fdf5b3d4bf4",
+      "bytes": 8783
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/online-boundary.json": {
+      "sha256": "8b6c53bc43c2d83390bffd583eff5cb522401fe18dfd05875d1c11d7b87657b8",
+      "bytes": 832
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/online-boundary.png": {
+      "sha256": "84e7169de21210b593bd3333f81236f2735ac7ad879c92c54ebc26c6423bb86c",
+      "bytes": 562379
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals/blank/1624951667887.doc": {
+      "sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+      "bytes": 50688
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals/blank/1624951667887.doc.source.json": {
+      "sha256": "3c26c1ba2cd22a2bc01b34794b32f7a2b31dbf55c691b50e3bd07ee2508e2f0a",
+      "bytes": 1321
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals/blank/1624951667935.doc": {
+      "sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+      "bytes": 51712
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals/blank/1624951667935.doc.source.json": {
+      "sha256": "5650667beb2b07e7ac15d039083cca7c585c16854d12947945c9894d2d49dd7a",
+      "bytes": 1300
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals/sample/1732694895330.doc": {
+      "sha256": "00a47b36fa43d89f8c604d66585ac5e191360dd3d546feecc82ea8d6b4307444",
+      "bytes": 27136
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals/sample/1732694895330.doc.source.json": {
+      "sha256": "eaf50498d79ccf22af87a01d258d7bc5e80b04c04772154d5612eedc7b4fcb84",
+      "bytes": 1278
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals/sample/1732694895374.doc": {
+      "sha256": "369d38b1bcb1d92e0be6b815d6269967fc7324afbb63cc22a94331bbfcc220cc",
+      "bytes": 26624
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals/sample/1732694895374.doc.source.json": {
+      "sha256": "1ad1a7860a22076095d6901728f39072078639e3a9ba9d459651596f5698b8c1",
+      "bytes": 1299
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/originals.json": {
+      "sha256": "d2d52b091aa83553fbc99571f50a9f5c202f9007d6ce404a9382c653adaeb2d9",
+      "bytes": 5357
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/own-list/manifest.json": {
+      "sha256": "cb7948f3e4045b4daef669c8b1604027493669505bdb53f34b11e3566404f279",
+      "bytes": 740
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/own-list/page.json": {
+      "sha256": "0e8370cacf8368115937ad36c9d208648bc3c7a3e5988daf94bcbee02f6b3bb1",
+      "bytes": 27077
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/own-list/page.png": {
+      "sha256": "581ab21731ee9cd1fc6d1a786b36325f8c6417a5879f110f8f9b3293419e6178",
+      "bytes": 243970
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/own-list/page.txt": {
+      "sha256": "418a9f36273b7b007e406a71d53dd08fae75947de98c6a61b54fc2b8bb1961bd",
+      "bytes": 1544
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/own-list/snapshot.txt": {
+      "sha256": "fa10b24cc3f6d970975443922dabb2faad5b3e20b0c362eea48dc64c7b187f3c",
+      "bytes": 4145
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/own-list-settled/manifest.json": {
+      "sha256": "7b745008fc6f2697ad29a0eae84d4069b1b0fe2d588f6a8fa6eac9d508645285",
+      "bytes": 740
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/own-list-settled/page.json": {
+      "sha256": "d47268ab524f69f4e5f70de06555949a93fc10887f115341313d9c56b5cf885b",
+      "bytes": 27077
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/own-list-settled/page.png": {
+      "sha256": "7038f6e07b01658decc959132627b9a2ac761d42017fea68d8360546a78be64e",
+      "bytes": 244107
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/own-list-settled/page.txt": {
+      "sha256": "418a9f36273b7b007e406a71d53dd08fae75947de98c6a61b54fc2b8bb1961bd",
+      "bytes": 1544
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/own-list-settled/snapshot.txt": {
+      "sha256": "fa10b24cc3f6d970975443922dabb2faad5b3e20b0c362eea48dc64c7b187f3c",
+      "bytes": 4145
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/picker/manifest.json": {
+      "sha256": "18b99b2f905d1b53c981625bfea5e0891fd5a4b7d4097878b4ed7c11b0ebee53",
+      "bytes": 690
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/picker/page.json": {
+      "sha256": "e3d4eef354890071bdd9011aa744d880ce70fce89d52b85a7050f833dd7950c2",
+      "bytes": 27106
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/picker/page.png": {
+      "sha256": "1b1b54e8b6267462124bbc6fb1e55599f289ecdbeaa47a69b3f2157ec192ee4a",
+      "bytes": 452752
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/picker/page.txt": {
+      "sha256": "5da14a37b862d009b373ebf34022e606fc8f66e8a7f6b33e207a0ac08b94cf67",
+      "bytes": 3221
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/picker/snapshot.txt": {
+      "sha256": "dab39829c8acd166b4462e4e57ceed53dc58387a792438b28af149e7202dc613",
+      "bytes": 9301
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/public-catalogue.json": {
+      "sha256": "2b3542b4d52031135c6ad4f84afb01e3bf9d2665553ed6c06a50d823b678c789",
+      "bytes": 15198
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/result-sample/manifest.json": {
+      "sha256": "8ea6930f43028b726c39053d2e8bd5b46e463dbb27b828106edde8026d4bccc1",
+      "bytes": 805
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/result-sample/page.json": {
+      "sha256": "a6d27d8c17853c9fd572795c36dc68da7690f0aaa4303226bd9b30b1019cfe02",
+      "bytes": 35718
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/result-sample/page.png": {
+      "sha256": "403f6e457947f320e93476f2f7fbad2828f2c6c43695bb45b029ff4cff6fe018",
+      "bytes": 575623
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/result-sample/page.txt": {
+      "sha256": "9fcb9c49f8e15e04512d9a4b556934c1ce3d0ca82548eb733f951f9ac50c7d09",
+      "bytes": 6613
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/result-sample/snapshot.txt": {
+      "sha256": "4037544092941970ef74c0ea0a67baa27bbaa8ae1d9492da2b00a66baf82de8b",
+      "bytes": 10542
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/rights-duties/manifest.json": {
+      "sha256": "e6839f7d146c5a5cd415ffd5c1372cb0ff6d8ddceaf9547eb715fdbd3b293da2",
+      "bytes": 805
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/rights-duties/page.json": {
+      "sha256": "092e4dc19379c66be0de360355ecdf8bc272b60303d6a471d900dc0c2fde26db",
+      "bytes": 35394
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/rights-duties/page.png": {
+      "sha256": "b153560750c59c8e58ca4e5669d4934ca0f931c18adb789d9f8946e3e7c02458",
+      "bytes": 574820
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/rights-duties/page.txt": {
+      "sha256": "0c9617f0aa304a5ef9a1fb46c817ef3fcd67e4de3ffa32cbe9baf4f12c89166b",
+      "bytes": 6637
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/rights-duties/snapshot.txt": {
+      "sha256": "a18098d0c970aceba20595aab42017cc6f4d6422d02ff23bf8cc428aed903803",
+      "bytes": 10419
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/sample-control/manifest.json": {
+      "sha256": "735fd255d954c12746a540bd429386786b8b3393bdfdbb688b076ee607e20d0c",
+      "bytes": 805
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/sample-control/page.json": {
+      "sha256": "784ade3909e958b06db501c4baa221604f1b31e932570ea095af433a6547765a",
+      "bytes": 37827
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/sample-control/page.png": {
+      "sha256": "52f715e5d72d52a81e0a051b96a827ced6aea6a49083ec48425ac2c58a5a9547",
+      "bytes": 652470
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/sample-control/page.txt": {
+      "sha256": "ccf55c0afab4dbfb2f22a7d4034f60a5bd45e652dcd46a194644d82fa39424b5",
+      "bytes": 9070
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/sample-control/snapshot.txt": {
+      "sha256": "a18098d0c970aceba20595aab42017cc6f4d6422d02ff23bf8cc428aed903803",
+      "bytes": 10419
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/selected-own-guide/manifest.json": {
+      "sha256": "2f7ca3aaaca97ae5ec1bd5d7eae0aa23be18897d41fbedc232d4ab8fe32adce6",
+      "bytes": 761
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/selected-own-guide/page.json": {
+      "sha256": "b804a4b42db1ec3bd4594a1f324545b0fc09698db8fd62473d0f78a6a2378a15",
+      "bytes": 37959
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/selected-own-guide/page.png": {
+      "sha256": "42d1cc359da3dcaf1aa81a2eee986a8ef72270d69c736bd0c08d6b3f0f08935d",
+      "bytes": 655881
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/selected-own-guide/page.txt": {
+      "sha256": "61954d4bf576c5c8a5c7fbf38aa23d95a69fcc7da9ef195aff1b5f9711619b2c",
+      "bytes": 9183
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/selected-own-guide/snapshot.txt": {
+      "sha256": "43a3c66dee3543a07f54d3ebbc540787eec2ca16f080d648f3ebb2c025e767bb",
+      "bytes": 10458
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/template-control/manifest.json": {
+      "sha256": "df7dcec8d08681bf4624342ce58c39ae8f22b76a4e6c5880bcfd5c01091e47ac",
+      "bytes": 805
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/template-control/page.json": {
+      "sha256": "5611249938a6ca516b77e5048c6134a103e66b721ac4ea1a79e7bc50766c4d05",
+      "bytes": 37784
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/template-control/page.png": {
+      "sha256": "d28aad6c3eb8346aaf990a1b9c46b01bc4919e8e4728d575b9c82df5ff046c70",
+      "bytes": 650593
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/template-control/page.txt": {
+      "sha256": "fb38af3f2d57c2d06e13bc54097d63c5ad41b148529de1153c63f6b9984e9c19",
+      "bytes": 9027
+    },
+    "reports/nationwide-verification-20261029-b/hunan/xiangjiang/template-control/snapshot.txt": {
+      "sha256": "a18098d0c970aceba20595aab42017cc6f4d6422d02ff23bf8cc428aed903803",
+      "bytes": 10419
+    },
+    "backend/regional_hunan_oct29b.py": {
+      "sha256": "f7e2c6054a4029797654ca0c729935b63ed3afb98b17f3dc27df67bc07489214",
+      "bytes": 20069
+    },
+    "backend/tests/test_hunan_oct29b.py": {
+      "sha256": "70e871e24d31935835d347a33f634ba3bc012b501ae455eaed18d9803ee2902c",
+      "bytes": 4629
+    },
+    "scripts/collect-hunan-oct29b.py": {
+      "sha256": "fc083df6baaec3297af0f77f3f1440bb1a03e7f918293168841b2c7f805519ae",
+      "bytes": 5807
+    }
+  },
+  "excluded": [
+    "attempts/** (first layout revision retained locally)",
+    "**/__pycache__/**",
+    "browser auth/session state, raw request/response headers, HAR, SSO query and private case data (not retained in report)"
+  ]
+}

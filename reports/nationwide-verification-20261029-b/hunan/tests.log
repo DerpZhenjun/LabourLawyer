@@ -1,0 +1,12 @@
+test_actual_fill_preserves_packages_signatures_and_downloads (backend.tests.test_hunan_oct29b.HunanOct29bTests.test_actual_fill_preserves_packages_signatures_and_downloads) ... ok
+test_arbitrary_path_and_capacity_refused (backend.tests.test_hunan_oct29b.HunanOct29bTests.test_arbitrary_path_and_capacity_refused) ... ok
+test_generic_or_previous_region_body_not_accepted (backend.tests.test_hunan_oct29b.HunanOct29bTests.test_generic_or_previous_region_body_not_accepted) ... ok
+test_missing_derived_closes_capability (backend.tests.test_hunan_oct29b.HunanOct29bTests.test_missing_derived_closes_capability) ... ok
+test_own_materials_originals_and_boundary (backend.tests.test_hunan_oct29b.HunanOct29bTests.test_own_materials_originals_and_boundary) ... ok
+test_same_original_bytes_do_not_bind_other_district (backend.tests.test_hunan_oct29b.HunanOct29bTests.test_same_original_bytes_do_not_bind_other_district) ... ok
+test_xiangjiang_double_label_is_local_not_inherited (backend.tests.test_hunan_oct29b.HunanOct29bTests.test_xiangjiang_double_label_is_local_not_inherited) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.019s
+
+OK
