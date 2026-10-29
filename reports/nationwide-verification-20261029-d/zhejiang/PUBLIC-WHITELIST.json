@@ -1,0 +1,217 @@
+{
+  "scope": "safe own-source capture and blank-only attachments; original bytes unedited",
+  "files": {
+    "reports/nationwide-verification-20261029-d/zhejiang/COLLECTION-CHECKS.json": {
+      "sha256": "00b176896485ec66fa0299b26b1b2b5031ebf6f151ac85891087480c90a722f0",
+      "bytes": 881
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/COLLECTION-REPORT.md": {
+      "sha256": "6c7d7ab0053c8a7c92b89ad5c1662ec746ecf3908d282fe01692d87cdf3e947a",
+      "bytes": 4110
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/application-package-text.json": {
+      "sha256": "2de7a40a519f874646d0f3f2672d90b64981ea371f936ade70c6724a6e8f5212",
+      "bytes": 3549
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/attachment-observation.json": {
+      "sha256": "c86c56e20e6b75143623668491ebb08f9ac3804295951e79f2ae603d130d28f5",
+      "bytes": 736
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/basic-dom.json": {
+      "sha256": "25902bfb5998202477be344467f4da75309502b4026f8b60371d765a26cf283f",
+      "bytes": 16666
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/condition-response-raw.json": {
+      "sha256": "573d6931b3581b2dae6de63bb20c91fcc30afbc6aff374c2e710f307d0e7ed79",
+      "bytes": 5418
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/condition-response-raw.source.json": {
+      "sha256": "66c18160d810a999b9191c89b9a8f00aef21059df828417c47eaec04b4dab436",
+      "bytes": 669
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/condition-response.json": {
+      "sha256": "bb4fbf24d0f4e826acafd8dd488ab764451ff5cff273fd53f3c209b89ecf4c68",
+      "bytes": 6359
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/faq-dom.json": {
+      "sha256": "4b1c57fcb4fe7ea1018709b65ac700a8783313a444647de3831c0904c327da7a",
+      "bytes": 18615
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/guide-dom.json": {
+      "sha256": "46016aea05ef61f2557a19b07fcbc1df910741325a81b3917a5769e123ce855c",
+      "bytes": 16606
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/guide.json": {
+      "sha256": "27cc5754793e2f5e643a40ef33aea82beed363d92f741f05c8cc62d2f2c46a84",
+      "bytes": 21550
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/guide.png": {
+      "sha256": "d4f686d7a2fdac4ac95ef54967443ad9dc3956fb3c849d61c50bbd6d8d23efa6",
+      "bytes": 557339
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/item-response-raw.json": {
+      "sha256": "611c9fffc0c8a8c7c0008bcc89e442dc9471273d9d10f0440b51ba9c712971c9",
+      "bytes": 29982
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/item-response-raw.source.json": {
+      "sha256": "70eda0991cd378f19a436cfd29573fe44c544c0de10d5413679b0f60a9f94d9a",
+      "bytes": 671
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/item-response.json": {
+      "sha256": "f6aa90c324361fce48e753f276192a83dea6553298eaf0915d29bc679d87724f",
+      "bytes": 31868
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/material-response-raw.json": {
+      "sha256": "d45f4a45d28d99754ca37e0a21a242e1f9f8537ae5430b17db9dc07f1f2def8f",
+      "bytes": 33151
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/material-response-raw.source.json": {
+      "sha256": "d304f67c5793960a092b13b0b8be51e080447f0b6d75fd4d2b5f824352a24778",
+      "bytes": 855
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/material-response.json": {
+      "sha256": "88a6a5294a678428f0f84debb408ff6bc01574b8d65dd408ce7e4224fdb14d6f",
+      "bytes": 35669
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/online-boundary.json": {
+      "sha256": "2c4660c0071b78a7bebcf25cdca39aac860aaf641b39aef3a25d5dca6191288e",
+      "bytes": 328
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/online-boundary.png": {
+      "sha256": "cc591a259e8122e423bda4bb0489fd7d275d3098c7e35f613a24c2f459924375",
+      "bytes": 98905
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/originals/21B24C52D2AC3EB007AA7F55CE0AAD79.docx": {
+      "sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "bytes": 33949
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/originals/21B24C52D2AC3EB007AA7F55CE0AAD79.docx.source.json": {
+      "sha256": "b0f8e7bcf6e16661f732015447b02267198a793a4fdcc04ee01b6947313857f3",
+      "bytes": 1189
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/originals.json": {
+      "sha256": "6cd46ffe97fd0b03279690ebe4f75a07d10fbeae33ace2bbead53b63566a4096",
+      "bytes": 1241
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/search.json": {
+      "sha256": "7faecdf01f1a9c46a3f31c41754427c4ed8da5b76920c86251b8c4fbb23d8fe6",
+      "bytes": 18658
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/search.png": {
+      "sha256": "9a374303769c891662f0115ffb27ef60b8f5974f45a0a7b76356abfd33c4b433",
+      "bytes": 331629
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/application-package-text.json": {
+      "sha256": "682c6459ca1fa834da076eec76b8ed6fb7dc31aae4bb52f47751c0ced30a1226",
+      "bytes": 3552
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/attachment-observation.json": {
+      "sha256": "beebc58b5ade86903b9597f788918a83cd66118c4ff3ff5a4521415e6e0e4289",
+      "bytes": 980
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/basic-dom.json": {
+      "sha256": "15128a6c00cfcc12234d40397ee182b7c5df75491e05b486943d330ced03d2a2",
+      "bytes": 14383
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/condition-response-raw.json": {
+      "sha256": "e2d57d80069ead26f2a8f7c36e3389d92c7e0733b52afa1e06cdd7a4ab6979d9",
+      "bytes": 4842
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/condition-response-raw.source.json": {
+      "sha256": "9393e12101042ba1d249a6e82441bb30e9db673414ea33d62f5af6d68b06e844",
+      "bytes": 669
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/condition-response.json": {
+      "sha256": "8e3277c74b2ea95f309ce2ea4d5a18efb4fcd0c8675eba4f57cd1fcc7eba17d1",
+      "bytes": 5785
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/evidence-package-text.json": {
+      "sha256": "675141e46b8e8baabb5ad9f89e2a2d08b791cb72a6168ef8d3e280a548f74518",
+      "bytes": 902
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/faq-dom.json": {
+      "sha256": "8fe9ead3a2ad63b2af01c23df1e2da4eb6d0ae0927d9e51e54c1d0f62dbd8ebb",
+      "bytes": 16332
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/faq.png": {
+      "sha256": "f1f212e68d79b90d1c106b73453f21009cfab911f66bf81866c8f86b3f7f6f79",
+      "bytes": 111150
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/guide-dom.json": {
+      "sha256": "d487605b9392ce32863174ec8eff4e25b6d489800d635e145b1edb87c915a390",
+      "bytes": 19310
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/guide.json": {
+      "sha256": "87d887fd2102761bb3471607195e8857b9608107c37751c5fa093db360bb80d8",
+      "bytes": 23063
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/guide.png": {
+      "sha256": "0b456c40f89dda8d71b4655b36a7ad404c9ae40f9f4246e27e92e476ef515216",
+      "bytes": 566275
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/item-response-raw.json": {
+      "sha256": "51ccc7d8850e7d607bae5a145264e8b24e573d8d8280f67ea47461c73ced32da",
+      "bytes": 29482
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/item-response-raw.source.json": {
+      "sha256": "df2f183703bb313ab8e4fe076db096d1020b1778c8c52d89f914725a6af68c0e",
+      "bytes": 671
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/item-response.json": {
+      "sha256": "6103c15dbde449121d8f465c47ddade0e842dedb33d634af5a69b612b2980ed3",
+      "bytes": 31452
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/material-response-raw.json": {
+      "sha256": "3c9f130bdd2c0a7a4efc85f54f7c73039c9dc9a98b8d43760507ae912108a59d",
+      "bytes": 32261
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/material-response-raw.source.json": {
+      "sha256": "f4736b415cf53918c17e640ce725d25eeb2c7ca3105874771943f7f6539281a1",
+      "bytes": 855
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/material-response.json": {
+      "sha256": "9302f269eb89609f1d3fc368a6c0b773bc6c163d782adae7cfacc55829a9fa56",
+      "bytes": 35017
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/online-boundary.json": {
+      "sha256": "c78e52443b0f5e1288dab052c0cfa4c4298b624725a8419e5df04a5163a5208b",
+      "bytes": 328
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/online-boundary.png": {
+      "sha256": "6a5922f3bbef32344c2360e632e64bbb186f0fa3205ac9598dd59dcfb1871f18",
+      "bytes": 99790
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/originals/21B24C52D2AC3EB007AA7F55CE0AAD79.docx": {
+      "sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "bytes": 33949
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/originals/21B24C52D2AC3EB007AA7F55CE0AAD79.docx.source.json": {
+      "sha256": "72c5dfbb0196ae412452bb0ca5c9935fab223b75ee15a7c6017b4ed8ee4e7e83",
+      "bytes": 1192
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/originals/872DFF90A8578907CB947197A784AA48.docx": {
+      "sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+      "bytes": 18837
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/originals/872DFF90A8578907CB947197A784AA48.docx.source.json": {
+      "sha256": "2ca0048a43b418454964237ef4f1770c810e600b8d24c350c53871e8d2580fea",
+      "bytes": 1171
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/originals.json": {
+      "sha256": "d236650d7c7a08962033e976e01020bc3970ca7b2b87d7960779909436142294",
+      "bytes": 2462
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/search.json": {
+      "sha256": "21071f3dbfcdaba7058bd2785e71877384351360c3b30600939d27666d78304d",
+      "bytes": 18664
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/search.png": {
+      "sha256": "f5a97b44641ab2e6deffc51f640b129c3b5b3251948bb6270ae3a46dcc8353d6",
+      "bytes": 331292
+    },
+    "reports/nationwide-verification-20261029-d/zhejiang/SOURCE-MANIFEST.json": {
+      "sha256": "c71d92d0d46b59a6708bbb40d75c34eb55f566a3b0b354fde0f6583b4c1c1857",
+      "bytes": 8500
+    }
+  }
+}

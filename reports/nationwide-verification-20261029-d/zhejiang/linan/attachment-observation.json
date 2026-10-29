@@ -1,0 +1,21 @@
+{
+  "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+  "native_controls_clicked": [
+    {
+      "material_id": "0103BAC26E734E0EAA86044060CCACDA",
+      "control": "下载",
+      "observed_get_url": "https://portal.zjzwfw.gov.cn/media/oss/FILE/META_DATA/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+      "status": 200
+    }
+  ],
+  "sample_controls": [
+    {
+      "material_id": "15705B5F59523720AE7166D821DEAD73",
+      "control": "示例",
+      "bytes_downloaded": false,
+      "public_distribution": false,
+      "reason": "身份样例可能含个人资料，未核验前不下载/分发。"
+    }
+  ],
+  "no_case_announcements_used": true
+}

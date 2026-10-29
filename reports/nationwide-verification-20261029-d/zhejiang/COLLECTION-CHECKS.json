@@ -1,0 +1,29 @@
+{
+  "scope": "source collection invariants only, not adaptation/publication acceptance",
+  "checks": [
+    {
+      "region_code": "330109",
+      "own_source_identity": "PASS",
+      "own_material_binding": "PASS",
+      "original_byte_integrity": "PASS",
+      "native_online_auth_boundary": "PASS",
+      "templates": 2,
+      "generation_granted": false,
+      "visual_document_qa": "NOT_RUN",
+      "candidate_web_qa": "NOT_RUN"
+    },
+    {
+      "region_code": "330112",
+      "own_source_identity": "PASS",
+      "own_material_binding": "PASS",
+      "original_byte_integrity": "PASS",
+      "native_online_auth_boundary": "PASS",
+      "templates": 1,
+      "generation_granted": false,
+      "visual_document_qa": "NOT_RUN",
+      "candidate_web_qa": "NOT_RUN"
+    }
+  ],
+  "no_word_used": true,
+  "no_database_or_shared_code_changed": true
+}

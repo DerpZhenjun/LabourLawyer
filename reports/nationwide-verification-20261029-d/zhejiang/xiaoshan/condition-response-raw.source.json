@@ -1,0 +1,10 @@
+{
+  "method": "POST",
+  "url": "https://www.zjzwfw.gov.cn/jpaas-zjservice-server/open-api/item/getCondition",
+  "postData": "localInnerCode=7c940b86-e89e-47e9-9785-292358209e9a",
+  "status": 200,
+  "sha256": "e2d57d80069ead26f2a8f7c36e3389d92c7e0733b52afa1e06cdd7a4ab6979d9",
+  "bytes": 4842,
+  "reason": "Replayed own observed anonymous public form POST, without cookies/auth headers, after console output appeared garbled.",
+  "correction": "The browser-captured responseBody is valid Chinese; the apparent corruption came from Windows Python stdout encoding. Both original capture and additional raw response are retained; do not repeat either request."
+}

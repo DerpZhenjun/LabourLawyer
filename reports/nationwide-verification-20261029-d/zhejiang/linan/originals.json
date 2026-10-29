@@ -1,0 +1,25 @@
+[
+  {
+    "region_code": "330112",
+    "district": "临安区",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+    "local_inner_code": "41c59062-1bee-45d9-a9ff-645b91059195",
+    "service_code": "11330185002508182w4002014302002",
+    "material_id": "0103BAC26E734E0EAA86044060CCACDA",
+    "material_name": "《劳动人事争议仲裁申请书》",
+    "official_kind": "blank",
+    "classification_basis": "own official materialList.blankForm plus native download control",
+    "download_url": "https://portal.zjzwfw.gov.cn/media/oss/FILE/META_DATA/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+    "status": 200,
+    "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "file": "reports/nationwide-verification-20261029-d/zhejiang/linan/originals/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+    "sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+    "bytes": 33949,
+    "downloaded_at": "2026-10-29T11:21:08.789171+00:00",
+    "zip_integrity": "PASS",
+    "document_xml_parse": "PASS",
+    "render_status": "NOT_RUN",
+    "visual_qa": "NOT_RUN",
+    "can_generate": false
+  }
+]
