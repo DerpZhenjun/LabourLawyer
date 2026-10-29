@@ -18,7 +18,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     });
     if (!upstream.ok || !upstream.body) return res.status(502).json({ message: "问答服务暂不可用，请检查项目后端。" });
     res.setHeader("Content-Type", "text/plain; charset=utf-8");
-    res.setHeader("Cache-Control", "no-cache");
+    // Next's compression middleware respects no-transform; do not buffer token chunks in gzip.
+    res.setHeader("Cache-Control", "no-cache, no-transform");
     res.setHeader("X-Accel-Buffering", "no");
     res.flushHeaders();
     reader = upstream.body.getReader();

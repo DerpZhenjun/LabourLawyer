@@ -170,6 +170,18 @@ if ($WithDigitalHuman) {
     Wait-HttpUrl "http://127.0.0.1:3000/api/health/" "Digital human" 90
 }
 
+# A healthy document API may still be an old process without the remote-AI route.
+try {
+    $aiStatus = Invoke-RestMethod -Uri 'http://127.0.0.1:8000/api/ai/status' -TimeoutSec 15
+    if ($aiStatus.ready -eq $true -and $aiStatus.model -eq 'qwen3.8:27b' -and $aiStatus.provider -eq 'Ubuntu Ollama') {
+        Write-Host '[OK] AI advisor and digital human: Ubuntu qwen3.8:27b.' -ForegroundColor Green
+    } else {
+        Write-Warning 'Remote AI is not ready. Check the advisor connection message; documents remain available. No Windows model was started.'
+    }
+} catch {
+    Write-Warning 'Remote AI status is unavailable. An old backend must be restarted normally with its original data directory. No automatic restart or local model fallback was attempted.'
+}
+
 Write-Host ""
 Write-Host "LabourLawyer is ready:" -ForegroundColor Green
 Write-Host "  Web:  http://127.0.0.1:5173"
