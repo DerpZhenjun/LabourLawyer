@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "scope": "backend contract, temporary HTTP fixtures and read-only source coverage",
+  "schema_version": 1,
+  "tests": {
+    "new_suite": {
+      "count": 21,
+      "seconds": 51.733,
+      "status": "PASS"
+    },
+    "legacy_regression": {
+      "count": 19,
+      "seconds": 16.92,
+      "status": "PASS"
+    }
+  },
+  "source_coverage": {
+    "regions": 185,
+    "document_pairs": 364,
+    "adapters": 13,
+    "adapter_kind_profiles": 23,
+    "real_original_sha_containment_and_existing_public_proof_checks": true
+  },
+  "real_asgi_generation": {
+    "regions": 185,
+    "document_pairs": 364,
+    "typical_profiles_first": 23,
+    "seconds": 50.515,
+    "http200": 364,
+    "zip_xml_pass": 364,
+    "source_version_headers_pass": 364,
+    "contract_id_required_in_each_request": true,
+    "temporary_store_versions_only": true,
+    "main_store_opened": false,
+    "rendering": "NOT_RUN",
+    "native_browser": "NOT_RUN",
+    "contract_response_headers_pass": 364
+  },
+  "tdd": {
+    "initial_red": 14,
+    "hardening_red": 3,
+    "empty_root_evidence_red": 1,
+    "root_check_order_red": 1,
+    "huge_integer_red_http": 500,
+    "huge_integer_green_http": 422,
+    "response_contract_header_red_tests": 2
+  },
+  "legacy_requests_unchanged_without_contract_id": true,
+  "strict_unknown_fields_and_xml": true,
+  "technical_limits_are_official_requirements": false,
+  "model_calls": false,
+  "service_operations": false,
+  "git_operations": false,
+  "live_database_mutations": false,
+  "frozen_sources_or_providers_changed": false,
+  "remaining_integration_gates": [
+    "full-project suite",
+    "deployed API and browser acceptance"
+  ],
+  "response_contract_binding": {
+    "header": "X-Form-Contract-ID",
+    "validated_server_contract_id_only": true,
+    "wrong_kind_same_source_version_http": 409,
+    "error_responses_do_not_claim_contract": true,
+    "legacy_request_without_contract_id_has_no_header": true
+  },
+  "shared_parity": {
+    "status": "PASS",
+    "profiles": 23,
+    "json_vectors": 8253,
+    "local_shape_vectors": 202,
+    "shared_source_sha256": "3fc3b52e1396c862538496b6ab9768ef14abbed9b501ef524016e92a832606bf",
+    "mini_generated_sha256": "ad6ca35d06aff96285a8b2e516886231ab297d04a78f621b81d977433b126435"
+  }
+}

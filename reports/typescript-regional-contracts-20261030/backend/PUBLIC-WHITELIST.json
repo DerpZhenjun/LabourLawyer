@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "scope": "Backend implementation and synthetic/read-only verification reports",
+  "files": [
+    {
+      "file": "backend/regional_form_contracts.py",
+      "sha256": "f20a96f73676b58a097a6e9f052f62a7c7f8281b236d008087ab711b05110715",
+      "bytes": 18465
+    },
+    {
+      "file": "backend/tests/test_regional_form_contracts.py",
+      "sha256": "c73f34bad96790647ffe47b7ab37f1057dd950cd1439b864b7ae600139229a9c",
+      "bytes": 25480
+    },
+    {
+      "file": "backend/routes/regional_guides.py",
+      "sha256": "0d6ddbe0d5a532130541e0e98f3ac54433409aa4e3638897502e3a8d8664fb71",
+      "bytes": 21573
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/backend/ASGI-ACCEPTANCE.json",
+      "sha256": "5037ba50424281091ee0d937a0d8ce29d55c847e7cae1f77e83819ea5afeda72",
+      "bytes": 235401
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/backend/PROFILE-METADATA.json",
+      "sha256": "6f065eb81bb3a85809d053e3ee2ac6f25d42707091b039ac0090385c4dfa9689",
+      "bytes": 151686
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/backend/README.md",
+      "sha256": "b86c83ffe86c29bb34413aad9e3f3b20cb7f429b07201b1b9a87f84e4d49a8ef",
+      "bytes": 6333
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/backend/RESULT.json",
+      "sha256": "a9f369f162bcf0d7e830eac0e526c281df7bf43ab1436c60b2b17c95367554a1",
+      "bytes": 2263
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/backend/SOURCE-COVERAGE.json",
+      "sha256": "66b1643f0da9780270a2d345914ed16285222e3f0ae4d1fc1ba2ebe9ab2f7791",
+      "bytes": 1595
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/backend/TESTS.log",
+      "sha256": "b78e6f353fc1fb141a3642e6f6acbd8e484c1fa4e73d29c1e3f09522e183692f",
+      "bytes": 8751
+    }
+  ]
+}

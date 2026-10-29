@@ -60,6 +60,7 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["X-Guide-Source-ID", "X-Guide-Version", "X-Template-SHA256", "X-Document-Origin", "X-Form-Contract-ID", "Content-Disposition"],
 )
 
 app.include_router(zj_la_router, prefix="/api/zhejiang/la", tags=["浙江仲裁"])

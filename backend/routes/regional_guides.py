@@ -31,6 +31,7 @@ from regional_oct29_bindings import (jiangsu_binding as oct29_jiangsu_binding,fe
 from regional_directory import DirectoryStore
 from regional_rollout import build_rollout_status, directory_rows, load_rollout_candidates
 from routes.province_documents import ApplicationRequest, EvidenceRequest, _response
+from regional_form_contracts import build_form_contract,validate_contract_data
 
 ROOT=Path(__file__).resolve().parents[2]
 router=APIRouter()
@@ -151,8 +152,12 @@ def checked_path(template,guide=None):
     return path
 
 @router.get('/templates/{template_id}')
-def download(template_id: str,province: str=Query(max_length=30),city: str=Query(max_length=80),district: str=Query(max_length=80)):
+def download(template_id: str,province: str=Query(max_length=30),city: str=Query(max_length=80),district: str=Query(max_length=80),
+             source_id: Annotated[str | None,Query(max_length=64)]=None,version: int | None=None):
     g=store().lookup(province,city,district)
+    if source_id is not None or version is not None:
+        if source_id is None or version is None or source_id!=g.get('source_id') or type(version) is not int or version!=g.get('version'):
+            raise HTTPException(409,'办理地区或来源版本已改变，请重新查看指南')
     t=next((t for t in g['templates'] if t.get('id')==template_id),None)
     if not t:raise HTTPException(404,'未找到该地区的官方附件')
     if 'region_code' not in t:
@@ -163,7 +168,8 @@ def download(template_id: str,province: str=Query(max_length=30),city: str=Query
         t={**t,'region_code':g['region_code']}
     elif t.get('region_code')!=g.get('region_code'):
         raise HTTPException(404,'未找到该地区的官方附件')
-    return FileResponse(checked_path(t,g),filename=t['original_name'],headers={'Cache-Control':'no-store'})
+    return FileResponse(checked_path(t,g),filename=t['original_name'],headers={'Cache-Control':'no-store',
+        'X-Guide-Source-ID':g.get('source_id',''),'X-Guide-Version':str(g.get('version','')),'X-Template-SHA256':t['sha256']})
 
 class GenerateRequest(BaseModel):
     province: str=Field(max_length=30)
@@ -175,6 +181,7 @@ class GenerateRequest(BaseModel):
     kind: Literal['application','evidence']
     mode: Literal['blank','reference_adaptation']
     data: dict
+    contract_id: str | None=Field(default=None,min_length=64,max_length=64,pattern=r'^[0-9a-f]{64}$')
 
 class BlankApplicationRequest(ApplicationRequest):
     # These are two distinct slots in Xishan's own retained official form.
@@ -231,6 +238,30 @@ class HunanApplicationRequest(BaseModel):
     factsReason: str=Field(default='',max_length=1800)
     evidenceList: list[HunanEmbeddedEvidence]=Field(default_factory=list,max_length=10)
 
+def generation_request_model(adapter,kind):
+    """Preserve the existing adapter-specific request-model selection."""
+    model=(BlankApplicationRequest if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER} else ApplicationRequest) if kind=='application' else EvidenceRequest
+    if adapter==FEIDONG_ADAPTER:model=FeidongApplicationRequest
+    if adapter in {HUNAN_ADAPTER,HUNAN_C_ADAPTER}:model=HunanApplicationRequest
+    if adapter in {ZHEJIANG_D_ADAPTER,ZHEJIANG_E_ADAPTER}:model=ZhejiangDApplicationRequest if kind=='application' else ZhejiangDEvidenceRequest
+    if adapter==JIANGSU_E_ADAPTER:model=JiangsuEApplicationRequest if kind=='application' else JiangsuEEvidenceRequest
+    return model
+
+
+@router.get('/form-contract')
+def form_contract(province: str=Query(max_length=30),city: str=Query(max_length=80),district: str=Query(max_length=80),
+                  source_id: str=Query(max_length=64),version: int=Query(ge=1),template_id: str=Query(max_length=64),
+                  kind: Literal['application','evidence']=Query()):
+    g=store().lookup(province,city,district)
+    if not g.get('source_id'):raise HTTPException(404,'该地区没有已核验文书资料')
+    if tuple(g.get(k) for k in ['province','city','district'])!=tuple(x.strip() for x in [province,city,district]):raise HTTPException(409,'办理地区不匹配，不能使用邻区文书')
+    if g['source_id']!=source_id or g.get('version')!=version:raise HTTPException(409,'办理地区或来源版本已改变，请重新查看指南')
+    matches=[t for t in g.get('templates',[]) if t.get('id')==template_id]
+    if len(matches)!=1:raise HTTPException(409,'该地区没有已核验的填写附件')
+    try:return build_form_contract(g,matches[0],kind,root=ROOT)
+    except ValueError as exc:raise HTTPException(409,str(exc)) from exc
+
+
 @router.post('/generate')
 def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
     # Never log the applicant payload or forward it to OpenClaw.
@@ -241,13 +272,17 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
     except ValueError as exc:raise HTTPException(409,str(exc)) from exc
     try:adapter=checked_reference_adapter(g,t,payload.kind)
     except ValueError as exc:raise HTTPException(409,str(exc)) from exc
+    submitted_data=payload.data
+    validated_contract_id=None
+    if payload.contract_id is not None:
+        try:contract=build_form_contract(g,t,payload.kind,root=ROOT)
+        except ValueError as exc:raise HTTPException(409,str(exc)) from exc
+        if contract['contract_id']!=payload.contract_id:raise HTTPException(409,'填写契约已改变，请重新核对当地文书')
+        try:submitted_data=validate_contract_data(contract,payload.data)
+        except ValueError as exc:raise HTTPException(422,str(exc)) from exc
+        validated_contract_id=contract['contract_id']
     try:
-        model=(BlankApplicationRequest if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER} else ApplicationRequest) if payload.kind=='application' else EvidenceRequest
-        if adapter==FEIDONG_ADAPTER:model=FeidongApplicationRequest
-        if adapter in {HUNAN_ADAPTER,HUNAN_C_ADAPTER}:model=HunanApplicationRequest
-        if adapter in {ZHEJIANG_D_ADAPTER,ZHEJIANG_E_ADAPTER}:model=ZhejiangDApplicationRequest if payload.kind=='application' else ZhejiangDEvidenceRequest
-        if adapter==JIANGSU_E_ADAPTER:model=JiangsuEApplicationRequest if payload.kind=='application' else JiangsuEEvidenceRequest
-        data=model.model_validate(payload.data)
+        data=generation_request_model(adapter,payload.kind).model_validate(submitted_data)
     except ValidationError as exc:
         raise HTTPException(422,'填写内容过长或格式不正确，请缩短后重试') from exc
     blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER}
@@ -291,4 +326,6 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
     response=_response(doc,name,background_tasks)
     response.headers['X-Document-Origin']=('official-blank-converted-filled' if adapter in {RONGJIANG_ADAPTER,HUNAN_ADAPTER,HUNAN_C_ADAPTER} else 'official-blank-filled' if adapter in blank_adapters else 'official-sample-adaptation-not-blank')
     response.headers['X-Guide-Source-ID']=g['source_id']
+    response.headers['X-Guide-Version']=str(g['version'])
+    if validated_contract_id is not None:response.headers['X-Form-Contract-ID']=validated_contract_id
     return response
