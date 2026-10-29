@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "verified_head": "e55ac17be12555674dc73b6bb671dbcf0bc36af7",
+  "independently_tested_commit": "fe7afee1",
+  "application_and_public_snapshot_paths_changed_since_test": [],
+  "required_zhejiang_adapter_and_tests_present_in_git_and_match_sealed_manifest": true,
+  "candidate_only_F_live_lookup_checks": [
+    {
+      "district": "常熟市",
+      "source_id": null,
+      "templates": 0,
+      "message": "该地区办事指南尚未核验",
+      "published": false
+    },
+    {
+      "district": "张家港市",
+      "source_id": null,
+      "templates": 0,
+      "message": "该地区办事指南尚未核验",
+      "published": false
+    },
+    {
+      "district": "淳安县",
+      "source_id": null,
+      "templates": 0,
+      "message": "该地区办事指南尚未核验",
+      "published": false
+    },
+    {
+      "district": "桐庐县",
+      "source_id": null,
+      "templates": 0,
+      "message": "该地区办事指南尚未核验",
+      "published": false
+    }
+  ],
+  "current_rollout": {
+    "published_guides": 202,
+    "generatable_localities": 185,
+    "unpublished_candidates": 28
+  },
+  "models_called": false
+}
