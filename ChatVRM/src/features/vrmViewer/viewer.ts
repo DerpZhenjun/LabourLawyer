@@ -143,12 +143,12 @@ export class Viewer {
 
     if (headNode) {
       const headWPos = headNode.getWorldPosition(new THREE.Vector3());
-      this._camera?.position.set(
-        this._camera.position.x,
-        headWPos.y,
-        this._camera.position.z
-      );
-      this._cameraControls?.target.set(headWPos.x, headWPos.y, headWPos.z);
+      // Frame an upper-body portrait at every viewport, and actually reset orbit/zoom.
+      const targetY = headWPos.y - 0.32;
+      const aspect = this._camera?.aspect || 1;
+      const distance = Math.max(3.1, 2.4 / aspect);
+      this._camera?.position.set(headWPos.x, targetY + 0.08, headWPos.z + distance);
+      this._cameraControls?.target.set(headWPos.x, targetY, headWPos.z);
       this._cameraControls?.update();
     }
   }

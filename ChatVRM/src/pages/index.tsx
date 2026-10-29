@@ -19,6 +19,10 @@ export default function Home() {
   const [avatar, setAvatar] = useState("loading");
   const [error, setError] = useState("");
   const [backend, setBackend] = useState<boolean | null>(null);
+  const [connectionMessage, setConnectionMessage] = useState("正在检查 Ubuntu Qwen3.8 连接…");
+  const [checkingConnection, setCheckingConnection] = useState(false);
+  const healthRequest = useRef<AbortController>();
+  const [avatarAttempt, setAvatarAttempt] = useState(0);
   const [voiceMode, setVoiceMode] = useState("browser");
   const [voiceSupported, setVoiceSupported] = useState(false);
   const [micSupported, setMicSupported] = useState(false);
@@ -29,6 +33,26 @@ export default function Home() {
   const voiceRef = useRef(false);
   const processing = useRef(false);
   const request = useRef<AbortController>();
+  const checkConnection = useCallback(async () => {
+    healthRequest.current?.abort();
+    const controller = new AbortController(); healthRequest.current = controller;
+    setCheckingConnection(true);
+    const timer = setTimeout(() => controller.abort(), 15000);
+    try {
+      const response = await fetch("/api/health/", { signal: controller.signal, cache: "no-store" });
+      if (!response.ok) throw new Error();
+      const state = await response.json();
+      if (healthRequest.current !== controller) return;
+      const ready = state.backend === true && state.ai?.ready === true;
+      setBackend(ready); setVoiceMode(state.voice);
+      setConnectionMessage(ready ? "Ubuntu · qwen3.8:27b，已连接" : state.ai?.message || "Ubuntu 远程问答暂未连接，文书生成仍可使用。");
+    } catch {
+      if (healthRequest.current === controller) { setBackend(false); setConnectionMessage("连接检查未完成，请检查项目后端和 Ubuntu SSH 连接后重试。"); }
+    } finally {
+      clearTimeout(timer);
+      if (healthRequest.current === controller) setCheckingConnection(false);
+    }
+  }, []);
   useEffect(() => {
     setEmbedded(new URLSearchParams(window.location.search).get("embed") === "1");
     setVoiceSupported("speechSynthesis" in window);
@@ -37,10 +61,9 @@ export default function Home() {
       const saved = JSON.parse(localStorage.getItem("labourlawyer.digital.chat") || "[]");
       if (Array.isArray(saved)) setChatLog(saved.filter(m => ["user", "assistant"].includes(m?.role) && typeof m.content === "string").slice(-20));
     } catch { /* Ignore damaged local drafts. */ }
-    const check = async () => { try { const r = await fetch("/api/health/", { signal: AbortSignal.timeout(15000) }); if (!r.ok) throw new Error(); const s = await r.json(); setBackend(s.backend && s.ai?.ready); setVoiceMode(s.voice); } catch { setBackend(false); } };
-    check(); const poll = setInterval(check, 20000);
-    return () => { clearInterval(poll); request.current?.abort(); recognition.current?.abort(); interruptSpeakCharacter(); };
-  }, []);
+    checkConnection(); const poll = setInterval(checkConnection, 20000);
+    return () => { clearInterval(poll); healthRequest.current?.abort(); healthRequest.current = undefined; request.current?.abort(); recognition.current?.abort(); interruptSpeakCharacter(); };
+  }, [checkConnection]);
   useEffect(() => { try { localStorage.setItem("labourlawyer.digital.chat", JSON.stringify(chatLog.slice(-20))); } catch {} end.current?.scrollIntoView({ block: "end" }); }, [chatLog, busy]);
   const avatarReady = useCallback(() => setAvatar("ready"), []);
   const avatarFailed = useCallback(() => setAvatar("error"), []);
@@ -77,15 +100,17 @@ export default function Home() {
     <Meta />
     <header className="counsel-topbar"><div><img src="/brand/counsel-mark.svg" width={38} height={38} alt="" /><span><small>LABOUR LAWYER</small><strong>阿律 · 法律数字人</strong></span></div><span className={`service-badge ${backend === false ? "offline" : ""}`}><i />{backend === null ? "检查服务" : backend ? "远程问答已连接" : "远程问答未连接"}</span></header>
     <div className="counsel-workspace">
-      <section className="avatar-stage" aria-label="数字人形象">
+      <section className="avatar-stage" aria-label="数字人形象" data-avatar-state={avatar}>
         <div className="stage-rings" aria-hidden="true" />
-        <VrmViewer onReady={avatarReady} onError={avatarFailed} />
+        <VrmViewer key={avatarAttempt} onReady={avatarReady} onError={avatarFailed} />
         {avatar !== "ready" && <div className="avatar-notice" role="status">{avatar === "loading" ? "正在加载数字人形象…" : "形象加载失败，仍可使用文字咨询。"}</div>}
+        {avatar === "error" && <button className="avatar-retry" onClick={() => { setAvatar("loading"); setAvatarAttempt(n => n + 1); }}>重新加载形象</button>}
         <div className="stage-label"><span>DIGITAL COUNSEL</span><h1>先把事情说清楚，<br />再一起梳理下一步。</h1><p>请求事项 · 关键证据 · 办理准备</p></div>
         <button className="camera-reset" onClick={() => viewer.resetCamera()} aria-label="重置数字人视角" title="重置视角">↺</button>
       </section>
       <section className="consultation-panel" aria-label="法律咨询对话">
         <div className="conversation-heading"><div><small>YOUR CONSULTATION</small><h2>劳动争议咨询</h2></div><div className="conversation-actions"><button disabled={!voiceSupported && voiceMode !== "gpt-sovits"} className={voice ? "active" : ""} onClick={() => { voiceRef.current = !voice; setVoice(!voice); if (voice) interruptSpeakCharacter(); }} aria-label={voice ? "关闭语音朗读" : "开启语音朗读"} title={voiceMode === "gpt-sovits" ? "语音合成朗读" : "浏览器语音朗读"}>{voice ? "♫" : "♪"}<span>{voice ? "朗读开" : "朗读关"}</span></button><button disabled={busy || !chatLog.length} onClick={() => { interruptSpeakCharacter(); setChatLog([]); setError(""); }} aria-label="清空对话" title="清空对话">↺</button></div></div>
+        <div className={`connection-notice ${backend ? "connected" : ""}`} role="status"><span>{connectionMessage}</span>{backend !== true && <button type="button" onClick={checkConnection} disabled={checkingConnection}>{checkingConnection ? "检查中…" : "重新检查连接"}</button>}</div>
         <div className="conversation-log" role="log" aria-label="咨询记录" aria-live="polite">
           {!chatLog.length && <div className="welcome-card"><span className="welcome-symbol">律</span><h3>你好，我是阿律。</h3><p>可以告诉我发生了什么、涉及哪些时间，以及你希望解决的问题。我会帮你梳理需要准备的材料和下一步行动。</p><div className="prompt-list">{prompts.map(text => <button key={text} disabled={backend !== true} onClick={() => send(text)}>{text}<span>↗</span></button>)}</div></div>}
           {chatLog.map((m, i) => <article key={i} className={`counsel-message ${m.role}`}><small>{m.role === "user" ? "YOU · 你" : "ALU · 阿律"}</small><div>{m.content ? <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content.replace(/<think>[\s\S]*?(<\/think>|$)/gi, "")}</ReactMarkdown> : <span className="reply-loading">正在梳理你的问题<span>…</span></span>}</div></article>)}
