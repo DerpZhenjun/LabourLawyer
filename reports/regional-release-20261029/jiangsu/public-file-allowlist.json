@@ -1,0 +1,128 @@
+{
+  "scope": "Exact commit whitelist; source assets/structured public provenance and code only, no publication approval.",
+  "files": [
+    {
+      "path": "backend/regional_jiangsu_candidates.py",
+      "sha256": "4baef33f521a377ab7b7eb5c7524419878fffece63683ce069a8ef67e8c2c701"
+    },
+    {
+      "path": "backend/tests/test_jiangsu_release_candidates.py",
+      "sha256": "35cf051545062bc8812f557842bff47b9c3f80073e3cb6a4c20a4cf70f283472"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/HANDOFF.md",
+      "sha256": "a73ccc301a22975fe37c15d3cdb1ca40c06cfa3abba7cdc072db35e83856b80e"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/artifact.md",
+      "sha256": "84109291c648613c97d5bbfc93bfd6bc01505a9e6694d136a0a333eb38d364b3"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/document-approval.json",
+      "sha256": "1f729c6cbb1bf5b4f5ef16fa50ef3284ece3ba92f6dc8fc6b58bc4537438383a"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/source-recheck.json",
+      "sha256": "6fb3bcc6f273e789e31f017729b7f543a4589f6ea50071dcce5f3191dca685f4"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/build-public-provenance.py",
+      "sha256": "3fbd25b202009ecacf71591cea3d5b503afe4e021bfee65404721f1d61ff0f9a"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/build-commit-allowlist.py",
+      "sha256": "34238df6089db8fe0d9c0034e94563d746eaec4e751819f2e94f594ffb446a86"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/320981/public-guide.json",
+      "sha256": "44789bb2b240622952f697a7338d28f0961ca38505a9e9bcc277944ae585335f"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/320981/public-provenance.json",
+      "sha256": "f3907edb6ccaa20522aea3c1020a570523fbb43a8a635b4f0dc1ccb75876b92f"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/320981/adaptation-contract.json",
+      "sha256": "fbe83225190da60b87e7468b5c3900e79fcc21f2e8348cdb3f828bb67ae851bd"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/320981/document-approval.json",
+      "sha256": "0232075784cf4dd22f72d2089a3fcc69ecc50edccb8b309260586e3fb14db022"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/320981/official-recheck.png",
+      "sha256": "743efc3b06abfcf62b234cf4e40c405467e51668ce3bae0ca59bbda319ba925d"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/320981/materials-rechecked.png",
+      "sha256": "bcfd357cf28695387f72965c9e660876cd2f3e81101aea1872619a4b55b8a4e8"
+    },
+    {
+      "path": "templates/_docx/_regional/320981/d5a8d1f0-ba28-4fa3-8e0d-0c12fb5e8120-劳动人事争议仲裁申请书.docx",
+      "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3"
+    },
+    {
+      "path": "templates/_docx/_regional/320981/5d848c02-a62a-4686-9f25-2e320b1b32ae-证据清单.docx",
+      "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/320924/public-guide.json",
+      "sha256": "d6e6c22bedd947982229ca3fa6412e3c1c1402760e3cf4ea8c03558ad398a3bb"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/320924/public-provenance.json",
+      "sha256": "296b4bc85afb2648f661c2ce48767f078c28cff803ee3354834b20c1f8022164"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/320924/adaptation-contract.json",
+      "sha256": "f2e02aee983d6ad33670a6f3f291b2bdd737bb6262c7f55b3f51139843d091bb"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/320924/document-approval.json",
+      "sha256": "9d62f24fca0615c0774473fb238ef525a9f0f560943ee44ea17bcb1680308394"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/320924/official-recheck.png",
+      "sha256": "e6b3c3047e6a39b788940a813612a684d12e75c6469cb70ad6e7b7804fc77cd7"
+    },
+    {
+      "path": "reports/regional-release-20261029/jiangsu/320924/materials-rechecked.png",
+      "sha256": "6f98523113b9f380f4d5b0c97a3697b661d97e99f886cac3832078e50f365d7f"
+    },
+    {
+      "path": "templates/_docx/_regional/320924/85e7e12b-18a8-458f-90f5-5a9ea44439a1-劳动人事争议仲裁申请书.docx",
+      "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3"
+    },
+    {
+      "path": "templates/_docx/_regional/320924/c3833b5a-b6ea-40aa-a3ff-905a50e83a4d-证据清单.docx",
+      "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+    }
+  ],
+  "required_runtime_own_blanks": [
+    "templates/_docx/_regional/320981/d5a8d1f0-ba28-4fa3-8e0d-0c12fb5e8120-劳动人事争议仲裁申请书.docx",
+    "templates/_docx/_regional/320981/5d848c02-a62a-4686-9f25-2e320b1b32ae-证据清单.docx",
+    "templates/_docx/_regional/320924/85e7e12b-18a8-458f-90f5-5a9ea44439a1-劳动人事争议仲裁申请书.docx",
+    "templates/_docx/_regional/320924/c3833b5a-b6ea-40aa-a3ff-905a50e83a4d-证据清单.docx"
+  ],
+  "optional_existing_public_sample_assets": [
+    "templates/_docx/_regional/320981/c5080799-8448-47f3-9703-cfe0234c47da-证据复印件.docx",
+    "templates/_docx/_regional/320981/f1053c69-6d91-4a96-a72d-c27088a4a4fa-证据复印件.docx",
+    "templates/_docx/_regional/320981/3218d42d-95ef-4577-a166-812ad890daeb-证据清单1.docx",
+    "templates/_docx/_regional/320981/ca784996-b6c6-4a98-8c2f-b561cfb37268-身份证复印件.docx",
+    "templates/_docx/_regional/320981/7cdd33d4-4411-43d8-8262-a0829b31d1a5-身份证复印件.jpg",
+    "templates/_docx/_regional/320981/f3b8575b-f59d-41e7-9f26-4524b312ca11-劳动人事争议仲裁申请1.docx",
+    "templates/_docx/_regional/320924/949517bc-f3ec-4326-bc3e-17a2636e7f22-证据复印件.docx",
+    "templates/_docx/_regional/320924/af39fc8d-226b-4e91-807e-dc4834253bd7-证据复印件.docx",
+    "templates/_docx/_regional/320924/6497f7b2-8eca-4e6e-825b-31bfae0cfefc-证据清单1.docx",
+    "templates/_docx/_regional/320924/72d5fbc9-7a38-4dbc-8749-b395ef7727fe-身份证复印件.docx",
+    "templates/_docx/_regional/320924/483a1fe5-8c5a-42b5-a5e4-10c598c8ab60-身份证复印件.jpg",
+    "templates/_docx/_regional/320924/81a94fc4-5645-4bc5-92a1-ad572755d63a-劳动人事争议仲裁申请1.docx"
+  ],
+  "excluded": [
+    "All generated synthetic .docx and derived PDF/PNG renders",
+    "All raw HTML/full-DOM JSON/browser-actions/session/cookie files",
+    "All Word process/cleanup/conversion runtime logs",
+    "Private DBs or model configuration",
+    "Unrelated ModelFinetune files"
+  ]
+}

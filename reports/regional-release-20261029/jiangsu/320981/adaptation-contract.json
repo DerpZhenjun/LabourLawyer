@@ -1,0 +1,28 @@
+{
+  "adapter": "jiangsu_own_blank_candidate_v1",
+  "region_code": "320981",
+  "province": "jiangsu",
+  "city": "盐城市",
+  "district": "东台市",
+  "source_id": "5e53e6d3179046433e5fdcb8",
+  "authority": "盐城市东台市人力资源和社会保障局",
+  "service_code": "11320981014396886W400201430200201",
+  "documents": {
+    "application": {
+      "annex_id": "d5a8d1f0-ba28-4fa3-8e0d-0c12fb5e8120",
+      "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "source_file": "templates/_docx/_regional/320981/d5a8d1f0-ba28-4fa3-8e0d-0c12fb5e8120-劳动人事争议仲裁申请书.docx",
+      "source_url": "https://ycdt.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=100&iddept_ql_inf=11320981014396886W4002014302002&ql_kind=20&iddept_yw_inf=11320981014396886W400201430200201"
+    },
+    "evidence": {
+      "annex_id": "5d848c02-a62a-4686-9f25-2e320b1b32ae",
+      "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "source_file": "templates/_docx/_regional/320981/5d848c02-a62a-4686-9f25-2e320b1b32ae-证据清单.docx",
+      "source_url": "https://ycdt.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=100&iddept_ql_inf=11320981014396886W4002014302002&ql_kind=20&iddept_yw_inf=11320981014396886W400201430200201"
+    }
+  },
+  "published": false,
+  "generation_enabled": false,
+  "web_qa_status": "NOT_RUN",
+  "scope": "offline_candidate_only"
+}

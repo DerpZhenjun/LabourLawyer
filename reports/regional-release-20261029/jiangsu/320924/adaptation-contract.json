@@ -1,0 +1,28 @@
+{
+  "adapter": "jiangsu_own_blank_candidate_v1",
+  "region_code": "320924",
+  "province": "jiangsu",
+  "city": "盐城市",
+  "district": "射阳县",
+  "source_id": "69952614ad2cf51d91ee7460",
+  "authority": "射阳县人力资源和社会保障局",
+  "service_code": "11320924737070337G400201430200201",
+  "documents": {
+    "application": {
+      "annex_id": "85e7e12b-18a8-458f-90f5-5a9ea44439a1",
+      "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "source_file": "templates/_docx/_regional/320924/85e7e12b-18a8-458f-90f5-5a9ea44439a1-劳动人事争议仲裁申请书.docx",
+      "source_url": "https://ycsy.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=98&iddept_ql_inf=11320924737070337G4002014302002&ql_kind=20&iddept_yw_inf=11320924737070337G400201430200201"
+    },
+    "evidence": {
+      "annex_id": "c3833b5a-b6ea-40aa-a3ff-905a50e83a4d",
+      "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "source_file": "templates/_docx/_regional/320924/c3833b5a-b6ea-40aa-a3ff-905a50e83a4d-证据清单.docx",
+      "source_url": "https://ycsy.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=98&iddept_ql_inf=11320924737070337G4002014302002&ql_kind=20&iddept_yw_inf=11320924737070337G400201430200201"
+    }
+  },
+  "published": false,
+  "generation_enabled": false,
+  "web_qa_status": "NOT_RUN",
+  "scope": "offline_candidate_only"
+}

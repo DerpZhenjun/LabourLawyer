@@ -11,6 +11,7 @@ from regional_guides import RegionalStore, select_template
 from regional_documents import fill_tianfu_reference
 from regional_adapters import checked_reference_adapter
 from regional_blank_documents import fill_blank_document, ADAPTER as BLANK_ADAPTER
+from regional_jiangsu_candidates import fill_candidate_document, SUPPORTED as JIANGSU_OWN_CANDIDATES
 from regional_rongjiang_documents import fill_rongjiang_document, ADAPTER as RONGJIANG_ADAPTER
 from regional_zhejiang_documents import fill_zhejiang_document,ADAPTER as ZHEJIANG_ADAPTER
 from regional_shangcheng_documents import fill_shangcheng_document,ADAPTER as SHANGCHENG_ADAPTER
@@ -171,7 +172,10 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
         elif adapter==RONGJIANG_ADAPTER:
             doc=fill_rongjiang_document(g,t,payload.kind,checked_path(t),data.model_dump())
         elif adapter==BLANK_ADAPTER:
-            doc=fill_blank_document(g,t,payload.kind,checked_path(t),data.model_dump())
+            if g.get('region_code') in JIANGSU_OWN_CANDIDATES:
+                doc=fill_candidate_document(g,payload.kind,data.model_dump())
+            else:
+                doc=fill_blank_document(g,t,payload.kind,checked_path(t),data.model_dump())
         else:doc=fill_tianfu_reference(checked_path(t),payload.kind,data.model_dump())
     except ValueError as exc:raise HTTPException(409,str(exc)) from exc
     suffix=('-依据官方DOC转换填写.docx' if adapter==RONGJIANG_ADAPTER else '-官方空白表格填写.docx' if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER} else '-参考样表辅助填写.docx')

@@ -1,0 +1,73 @@
+{
+  "status": "PASS_OFFLINE_ONLY",
+  "scope": [
+    "320924"
+  ],
+  "documents": [
+    {
+      "region_code": "320924",
+      "kind": "application",
+      "source": "templates/_docx/_regional/320924/85e7e12b-18a8-458f-90f5-5a9ea44439a1-劳动人事争议仲裁申请书.docx",
+      "source_url": "https://ycsy.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=98&iddept_ql_inf=11320924737070337G4002014302002&ql_kind=20&iddept_yw_inf=11320924737070337G400201430200201",
+      "annex_id": "85e7e12b-18a8-458f-90f5-5a9ea44439a1",
+      "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "output": "reports/regional-release-20261029/jiangsu/320924-application.docx",
+      "output_sha256": "8171ed41c1e3e8bc39bccd2f15965913241bce7c3d79afe7568babbf0fe2a5f6",
+      "changed_parts": [
+        "word/document.xml"
+      ],
+      "preserved_package_parts": 20,
+      "synthetic_only": true,
+      "pages": 2,
+      "page_images": [
+        "reports/regional-release-20261029/jiangsu/render-no-links/320924-application/page-1.png",
+        "reports/regional-release-20261029/jiangsu/render-no-links/320924-application/page-2.png"
+      ],
+      "visual_status": "PASS_CURRENT_SYNTHETIC",
+      "signature_blank": true,
+      "signature_date_blank": true
+    },
+    {
+      "region_code": "320924",
+      "kind": "evidence",
+      "source": "templates/_docx/_regional/320924/c3833b5a-b6ea-40aa-a3ff-905a50e83a4d-证据清单.docx",
+      "source_url": "https://ycsy.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=98&iddept_ql_inf=11320924737070337G4002014302002&ql_kind=20&iddept_yw_inf=11320924737070337G400201430200201",
+      "annex_id": "c3833b5a-b6ea-40aa-a3ff-905a50e83a4d",
+      "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "output": "reports/regional-release-20261029/jiangsu/320924-evidence.docx",
+      "output_sha256": "3c638f9186a0ec7afe31ac42f801d0f128f25810ac10b83ef400126e770e8cd2",
+      "changed_parts": [
+        "word/document.xml"
+      ],
+      "preserved_package_parts": 11,
+      "synthetic_only": true,
+      "pages": 1,
+      "page_images": [
+        "reports/regional-release-20261029/jiangsu/render-no-links/320924-evidence/page-1.png"
+      ],
+      "visual_status": "PASS_CURRENT_SYNTHETIC",
+      "signature_blank": true,
+      "signature_date_blank": true
+    }
+  ],
+  "viewed_final_pages": 6,
+  "reference_layout_reused_only_after_full_sha_match": true,
+  "source_canonical_checked": 16,
+  "source_sha_mismatches": 0,
+  "other_zip_part_mismatches": 0,
+  "product_web_qa_status": "NOT_RUN",
+  "published": false,
+  "generation_enabled": false,
+  "router_asgi_status": "MAIN_AGENT_INTEGRATION_PENDING",
+  "tests": {
+    "new_methods": 5,
+    "targeted_methods": 13,
+    "seconds": 0.976,
+    "full_suite_run": false
+  },
+  "word_isolation": "word-instance-isolation.json",
+  "all_task_word_instances_exited": true,
+  "old_word_process_not_attached_or_stopped": true,
+  "private_raw_capture_required_for_filling": false,
+  "missing_public_original_blocks": true
+}

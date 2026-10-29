@@ -2,6 +2,7 @@
 from copy import deepcopy
 from regional_guides import digest
 from regional_blank_documents import blank_binding, ADAPTER as BLANK_ADAPTER
+from regional_jiangsu_candidates import candidate_contract, SUPPORTED as JIANGSU_OWN_CANDIDATES
 from regional_rongjiang_documents import rongjiang_source_matches, ADAPTER as RONGJIANG_ADAPTER
 from regional_zhejiang_documents import with_zhejiang_capabilities,checked_zhejiang_adapter,ADAPTER as ZHEJIANG_ADAPTER
 from regional_shangcheng_documents import with_shangcheng_capabilities,checked_shangcheng_adapter,ADAPTER as SHANGCHENG_ADAPTER
@@ -227,6 +228,10 @@ def reference_binding(guide, template):
 def with_reference_capabilities(guide):
     """Publish platform adaptation separately from the retained official content."""
     result = with_shangcheng_capabilities(with_zhejiang_capabilities(guide)) if guide.get('province')=='zhejiang' else deepcopy(guide)
+    own_jiangsu_ready=True
+    if result.get('region_code') in JIANGSU_OWN_CANDIDATES:
+        try:candidate_contract(result)
+        except ValueError:own_jiangsu_ready=False
     for template in result.get('templates', []):
         if rongjiang_source_matches(result,template):
             template.update(can_generate=True,adapter=RONGJIANG_ADAPTER,document_types=['application','evidence'],
@@ -239,6 +244,9 @@ def with_reference_capabilities(guide):
             continue
         blank_kind=blank_binding(result,template)
         if blank_kind:
+            if not own_jiangsu_ready:
+                template.update(can_generate=False,document_types=[])
+                continue
             template.update(can_generate=True,adapter=BLANK_ADAPTER,document_types=[blank_kind],
                             content_kind='filled_official_blank',generation_label=f"依据{result['district']}官方空白表格填写")
             continue
