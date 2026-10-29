@@ -1,0 +1,146 @@
+[
+  {
+    "district": "haishu",
+    "kind": "application",
+    "source": "reports\\nationwide-verification-20261029\\zhejiang\\haishu\\originals\\blank\\application.docx",
+    "source_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+    "output": "qa\\haishu\\application-synthetic.docx",
+    "output_sha256": "dca7a0d8e17af0e2cc9ea28be6480fea6422b9516dc8bdaa3566fa66fec0adb7",
+    "changed_parts": [
+      "word/document.xml"
+    ],
+    "table_shapes": [
+      [
+        23,
+        5
+      ],
+      [
+        23,
+        11
+      ]
+    ],
+    "sections": [
+      {
+        "width": 11906,
+        "height": 16838,
+        "margins": [
+          1701,
+          1701,
+          1418,
+          1418
+        ]
+      },
+      {
+        "width": 11906,
+        "height": 16838,
+        "margins": [
+          1701,
+          1701,
+          1418,
+          1418
+        ]
+      }
+    ]
+  },
+  {
+    "district": "haishu",
+    "kind": "evidence",
+    "source": "reports\\nationwide-verification-20261029\\zhejiang\\haishu\\originals\\blank\\evidence-list.docx",
+    "source_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+    "output": "qa\\haishu\\evidence-synthetic.docx",
+    "output_sha256": "003b33650d39a454114e12296823dcaea9b3482a210eccb3b8378a43b3ff3191",
+    "changed_parts": [
+      "word/document.xml"
+    ],
+    "table_shapes": [
+      [
+        13,
+        6
+      ]
+    ],
+    "sections": [
+      {
+        "width": 11906,
+        "height": 16838,
+        "margins": [
+          1701,
+          1701,
+          1418,
+          1418
+        ]
+      }
+    ]
+  },
+  {
+    "district": "yinzhou",
+    "kind": "application",
+    "source": "reports\\nationwide-verification-20261029\\zhejiang\\yinzhou\\originals\\blank\\application.docx",
+    "source_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+    "output": "qa\\yinzhou\\application-synthetic.docx",
+    "output_sha256": "161a47ce67129cab1bd6d1e4529f9e4a8c21d2b9f4c79534cd81586108b3dd76",
+    "changed_parts": [
+      "word/document.xml"
+    ],
+    "table_shapes": [
+      [
+        23,
+        5
+      ],
+      [
+        23,
+        11
+      ]
+    ],
+    "sections": [
+      {
+        "width": 11906,
+        "height": 16838,
+        "margins": [
+          1701,
+          1701,
+          1418,
+          1418
+        ]
+      },
+      {
+        "width": 11906,
+        "height": 16838,
+        "margins": [
+          1701,
+          1701,
+          1418,
+          1418
+        ]
+      }
+    ]
+  },
+  {
+    "district": "yinzhou",
+    "kind": "evidence",
+    "source": "reports\\nationwide-verification-20261029\\zhejiang\\yinzhou\\originals\\blank\\evidence-list.docx",
+    "source_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+    "output": "qa\\yinzhou\\evidence-synthetic.docx",
+    "output_sha256": "40ff6b0640bc8a583a3f1c5c79bd1b24dc7acf65ff72e329d60498d377d8a40c",
+    "changed_parts": [
+      "word/document.xml"
+    ],
+    "table_shapes": [
+      [
+        13,
+        6
+      ]
+    ],
+    "sections": [
+      {
+        "width": 11906,
+        "height": 16838,
+        "margins": [
+          1701,
+          1701,
+          1418,
+          1418
+        ]
+      }
+    ]
+  }
+]

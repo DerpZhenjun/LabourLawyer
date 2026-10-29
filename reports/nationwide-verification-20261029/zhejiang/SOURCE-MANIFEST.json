@@ -1,0 +1,477 @@
+{
+  "scope": "public visible own-district sources only; no cookies/HAR/SSO queries",
+  "files": {
+    "haishu/basic/manifest.json": {
+      "sha256": "66283767fb0c88b257441fda47d3af01d1aee76675fd43e1ddf2e7a5899842f1",
+      "bytes": 739
+    },
+    "haishu/basic/page.json": {
+      "sha256": "f3ea9ca021a6241c5a0d4f37eca52f9a783f1522431413821e664d617526be1f",
+      "bytes": 12126
+    },
+    "haishu/basic/page.png": {
+      "sha256": "8f552c22bb00bcf0216a68fcea5897dc4cdb76e4d2a6ad0b6f539fad40deb6f7",
+      "bytes": 571600
+    },
+    "haishu/basic/page.txt": {
+      "sha256": "d54446b91e1347504da39489d800ed4c6ba4842b5988198c98def0d8c3ef8e53",
+      "bytes": 2773
+    },
+    "haishu/basic/snapshot.txt": {
+      "sha256": "5410174bff315dd73067afb8d1140fa895f7831d894883dccfe05e38f49c7386",
+      "bytes": 2292
+    },
+    "haishu/conditions/manifest.json": {
+      "sha256": "8d0e410e43178a437369134fe20a942b3e8caf80ae2f7e756045a36de6587ee2",
+      "bytes": 739
+    },
+    "haishu/conditions/page.json": {
+      "sha256": "8619034f80a8ad32a1eb88b7a9ba319302cd281939bdc734c04d3d429b1d7915",
+      "bytes": 12135
+    },
+    "haishu/conditions/page.png": {
+      "sha256": "a3280c6446a50132e822f6b4381e96fbc10666b851b58863c1cfad9b52c7dc3f",
+      "bytes": 539614
+    },
+    "haishu/conditions/page.txt": {
+      "sha256": "b50f61c9e4f0a7b8082fb02573d6dfe81fd683d1866932ab198a0d567ee15e0c",
+      "bytes": 2782
+    },
+    "haishu/conditions/snapshot.txt": {
+      "sha256": "70bbbf7283e5e8c6d150797b1dfea908d16f6ba6a5be25f7f6860723686a2f61",
+      "bytes": 2211
+    },
+    "haishu/download-observation.json": {
+      "sha256": "438753a88dfed78135324eeac8e0f1177ba92af2ae96393c047e88df51330504",
+      "bytes": 662
+    },
+    "haishu/faq/manifest.json": {
+      "sha256": "5b29a97914b8f603a53cf9d0c20dc83031b596983bf629588e661c2a2d1c704d",
+      "bytes": 739
+    },
+    "haishu/faq/page.json": {
+      "sha256": "4bd5d17db77c45d17b809ed501137615187821390287173ca046aece024dcfdf",
+      "bytes": 14625
+    },
+    "haishu/faq/page.png": {
+      "sha256": "308b2131bf1597f6260616fc184f014acae605060ae83e05276d88a2600f60f5",
+      "bytes": 675762
+    },
+    "haishu/faq/page.txt": {
+      "sha256": "20f761b880d27a3c98aa1755f415c8e2e9fe6c0320b5f7e208e1b3baef164b7d",
+      "bytes": 4728
+    },
+    "haishu/faq/snapshot.txt": {
+      "sha256": "9c27e076f5fe465442bf475aaea924fb3bde16e0e065575ed2d984ac91bf2818",
+      "bytes": 2323
+    },
+    "haishu/faq-expanded/manifest.json": {
+      "sha256": "35f78bdac798ef42061b3de3bfff53cb2b09adb3673c216d2ea4e120fcb51d4d",
+      "bytes": 739
+    },
+    "haishu/faq-expanded/page.json": {
+      "sha256": "5b124ca4b008039125bcc268f0e913c59fae1a4e446dc3704d12e54797cd29e4",
+      "bytes": 14558
+    },
+    "haishu/faq-expanded/page.png": {
+      "sha256": "183d3d473f5b326b3d58850c34db301a2a959f163ca298dd403b38da5d86e082",
+      "bytes": 802917
+    },
+    "haishu/faq-expanded/page.txt": {
+      "sha256": "5cedd0c68fbbe6655df1a8137e6150329e03eef04c4551cacf6b0f6b15c717e6",
+      "bytes": 4661
+    },
+    "haishu/faq-expanded/snapshot.txt": {
+      "sha256": "39a783c5307707a45dced56c5fbba7af38a6e79ea13b62d0fc8d67f7b6ba015c",
+      "bytes": 2383
+    },
+    "haishu/flow/manifest.json": {
+      "sha256": "82ae5e5e5e1837594fbd77bf99e2e27baaa9e7f6be98e70fc9b77ed3e6557ce0",
+      "bytes": 739
+    },
+    "haishu/flow/page.json": {
+      "sha256": "3c49ca570c4ad8ab8e1da0d4691ef20a2df0f2a10f983e3742609ebbc695efe1",
+      "bytes": 12135
+    },
+    "haishu/flow/page.png": {
+      "sha256": "b40b070c778ccb84bb56c067acc16b2d9b773f2aedae6e9c5b3d5a3b9677dba3",
+      "bytes": 562272
+    },
+    "haishu/flow/page.txt": {
+      "sha256": "16efcc2d68686cebf5084e8129d476408a37a238dae22303fede4e54c3350a75",
+      "bytes": 2782
+    },
+    "haishu/flow/snapshot.txt": {
+      "sha256": "fd4a22efe6175013e0eea7a0a79b43d8d9dbfd653e25970d1ae2d5bd8f97d955",
+      "bytes": 2211
+    },
+    "haishu/law/manifest.json": {
+      "sha256": "97793f420fa0a326e441f0a662f1e2b9ac2ed489c9835333cb1c8d2b44cb5359",
+      "bytes": 739
+    },
+    "haishu/law/page.json": {
+      "sha256": "9828a44ac16af2c050c3f77d72cb819fbe93d326b7623c76044ec4da8addb9e1",
+      "bytes": 13342
+    },
+    "haishu/law/page.png": {
+      "sha256": "1ed406e22a5d0ce649a2aeac1507345ffd2329e6afcb20e38632ed957195a32d",
+      "bytes": 639907
+    },
+    "haishu/law/page.txt": {
+      "sha256": "27585fb0e8329f3fc2c6cca7d59c7c1b77a92b6f634ca229692f075a316a2d43",
+      "bytes": 3989
+    },
+    "haishu/law/snapshot.txt": {
+      "sha256": "e3b84b434ff179686e88aeb66c6e7ec694e9795f4bcd83b675d4d73d8b42357e",
+      "bytes": 2321
+    },
+    "haishu/materials/manifest.json": {
+      "sha256": "2dc6664ac2d33b4e3b2445fd1016774b840256c5f8385a85c2b8e2a94735531e",
+      "bytes": 739
+    },
+    "haishu/materials/page.json": {
+      "sha256": "cc659d951f1a1736640de3914318e2ea7c32fe21bd6a0cff8d5ab978fa615d63",
+      "bytes": 12135
+    },
+    "haishu/materials/page.png": {
+      "sha256": "67750d7970e49c86b9e4fcc9274c3080bf9770ad44072b8fbd47ce7f09e08f1e",
+      "bytes": 531910
+    },
+    "haishu/materials/page.txt": {
+      "sha256": "b50f61c9e4f0a7b8082fb02573d6dfe81fd683d1866932ab198a0d567ee15e0c",
+      "bytes": 2782
+    },
+    "haishu/materials/snapshot.txt": {
+      "sha256": "70bbbf7283e5e8c6d150797b1dfea908d16f6ba6a5be25f7f6860723686a2f61",
+      "bytes": 2211
+    },
+    "haishu/online-boundary.json": {
+      "sha256": "535978fa8181845ecb1747cd6f8f142e4f5aa21c5299bbb85843fe449d7cc790",
+      "bytes": 317
+    },
+    "haishu/online-boundary.png": {
+      "sha256": "3aa84c709bee60f68a526a6ec9bc60bfa431fec6e7a430f6bd0cc7a98be86a4f",
+      "bytes": 98140
+    },
+    "haishu/originals/blank/application.docx": {
+      "sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "bytes": 33949
+    },
+    "haishu/originals/blank/application.docx.source.json": {
+      "sha256": "3e63a27be6e71b72197f6ec16c51216e770c82cdeacafc586cec03e934c8e22f",
+      "bytes": 924
+    },
+    "haishu/originals/blank/evidence-list.docx": {
+      "sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+      "bytes": 18837
+    },
+    "haishu/originals/blank/evidence-list.docx.source.json": {
+      "sha256": "c234756275d5fa62949c73375797c6902fa32f6bd675d8fe1477f731922b3a13",
+      "bytes": 905
+    },
+    "haishu/originals/sample/identity-example.jpg": {
+      "sha256": "1a992bf994963a6a03f7344e9a766246c0b495756eb4877406b052d039272b09",
+      "bytes": 154432
+    },
+    "haishu/originals/sample/identity-example.jpg.source.json": {
+      "sha256": "33486b4479330eac4ec24f68048388fae346ec6a97b364f6cb8702aaa99d7b32",
+      "bytes": 1105
+    },
+    "haishu/sample/manifest.json": {
+      "sha256": "c2f0d987e2089a00448d03fa92c02c0e36c1d3126ecf5e98d18dca507383e260",
+      "bytes": 1018
+    },
+    "haishu/sample/page.json": {
+      "sha256": "663e550e65b6a4dde7a061f78ff4784b78ea507ffaf910c5ddf1d330311c7a80",
+      "bytes": 9939
+    },
+    "haishu/sample/page.png": {
+      "sha256": "4f334bf21ebae0c0a66545806c5919e00ce9432bcf8d0734cae1a8c63db5da3a",
+      "bytes": 858603
+    },
+    "haishu/sample/page.txt": {
+      "sha256": "b9ced48cb075030533be0d42ecac42f2e28fe362fdc14385c75b515beed767ca",
+      "bytes": 669
+    },
+    "haishu/sample/snapshot.txt": {
+      "sha256": "84f3ff07c3590837865873e6bc5e082ad8508023d5b8fd4e53f106ea2b9012a1",
+      "bytes": 1655
+    },
+    "haishu/search/manifest.json": {
+      "sha256": "4009e9341002812c3194d48af0e5f35ea1ca87ec25596b20cc30fe2ad2425641",
+      "bytes": 886
+    },
+    "haishu/search/page.json": {
+      "sha256": "2ed11778c6a3f48eb951058ca7266493f8f48e6d8eb71defe24e9befcbeac3d1",
+      "bytes": 49763
+    },
+    "haishu/search/page.png": {
+      "sha256": "7aba9ae534aea94e88fab9dceb096be013aa7419c0a846ff10f70802e77ae251",
+      "bytes": 566921
+    },
+    "haishu/search/page.txt": {
+      "sha256": "e76c772bc8424b848415aaf4ff29a70d95cca1b865836efa03669e23f3c0ea68",
+      "bytes": 3238
+    },
+    "haishu/search/snapshot.txt": {
+      "sha256": "bfb43b3c1cbc359af1022dbfc3d896ae40988bc84bcf909bd2255ced75c915bd",
+      "bytes": 5383
+    },
+    "haishu/window/manifest.json": {
+      "sha256": "f28b54df19cb1ca0f76480cee7a98b84926249544f15cdf18ddb274e19b27731",
+      "bytes": 739
+    },
+    "haishu/window/page.json": {
+      "sha256": "b2eab1ff23bdebb240aa8cdb1f1d4c731bbcf2cdb05e5e264451df9f3584ab70",
+      "bytes": 12135
+    },
+    "haishu/window/page.png": {
+      "sha256": "48a5e344e7e889450c562642b42ab92b437cbc84d604b6df77aaa81cd9a66c36",
+      "bytes": 558822
+    },
+    "haishu/window/page.txt": {
+      "sha256": "16efcc2d68686cebf5084e8129d476408a37a238dae22303fede4e54c3350a75",
+      "bytes": 2782
+    },
+    "haishu/window/snapshot.txt": {
+      "sha256": "fd4a22efe6175013e0eea7a0a79b43d8d9dbfd653e25970d1ae2d5bd8f97d955",
+      "bytes": 2211
+    },
+    "yinzhou/basic/manifest.json": {
+      "sha256": "a236876b7d6a7d198ae78cf3d1b9eb12ca3f91050040a12e8b7cf9a246e9ac39",
+      "bytes": 739
+    },
+    "yinzhou/basic/page.json": {
+      "sha256": "d3f1ff04b9c54ce9047bd3901b44518223ce5dc04288bb0195e02bbc8b79da81",
+      "bytes": 12136
+    },
+    "yinzhou/basic/page.png": {
+      "sha256": "6dd3670a73667466ec26506f7c16f83ad55ef947b86950c48670520e1cf4784a",
+      "bytes": 568707
+    },
+    "yinzhou/basic/page.txt": {
+      "sha256": "8da63484424b0e28d2343122ee9e1cad0fb6cf4054433baedf1f3cf07d76585f",
+      "bytes": 2783
+    },
+    "yinzhou/basic/snapshot.txt": {
+      "sha256": "aa7e25a97fd98b5a3bcfa7972e52f0b9ae300e9cd7c4e9b8ea270a694456629a",
+      "bytes": 2293
+    },
+    "yinzhou/conditions/manifest.json": {
+      "sha256": "90388a8b62927720b8802718424b5360a7943fae5c9c4046ca82600d5b60cc08",
+      "bytes": 739
+    },
+    "yinzhou/conditions/page.json": {
+      "sha256": "b3b9daef5c46c3b931064a9fbfb2db2c7000f80b8e05fca954c8d8014f74aa3b",
+      "bytes": 12243
+    },
+    "yinzhou/conditions/page.png": {
+      "sha256": "c97be0ceea6f6230a2fd6a9cf376a43d5fe1a8aaa7da2c09d89a9851e76912df",
+      "bytes": 553034
+    },
+    "yinzhou/conditions/page.txt": {
+      "sha256": "7c973bd24b456529d164372d7f3dcf8d681f759be6dae084e7bb9adeb4a8a0f4",
+      "bytes": 2890
+    },
+    "yinzhou/conditions/snapshot.txt": {
+      "sha256": "7a5f6387becac8e333525dc8d6ca66c37ad62707a4702209249f7bff63e30fef",
+      "bytes": 2212
+    },
+    "yinzhou/download-observation.json": {
+      "sha256": "aa7f34cf4b77dc5af216b910d718da8fa0dbcbe2b4b2b947a215936658f038ca",
+      "bytes": 662
+    },
+    "yinzhou/faq/manifest.json": {
+      "sha256": "ee172cf2e4d46e6aace18df1e2ee1617beff0cb1020db9b6d14c5b217ad6efc5",
+      "bytes": 739
+    },
+    "yinzhou/faq/page.json": {
+      "sha256": "4270997ccd8c077bc4496cc0af560b27192378a6ddad4cfa21105dce137eb899",
+      "bytes": 14629
+    },
+    "yinzhou/faq/page.png": {
+      "sha256": "b45d03ff80cc268cc134dc1af69ec293d9c45f67ef39d2ca390f4ae4cce3532a",
+      "bytes": 663040
+    },
+    "yinzhou/faq/page.txt": {
+      "sha256": "7c921816ab52fb4d83e8d70fcb7f1c0ae669e6937cb13241890fa867cbac1387",
+      "bytes": 4732
+    },
+    "yinzhou/faq/snapshot.txt": {
+      "sha256": "76b4eebc24837ca68a81b8216b455b321e5e86a6654f891618793655a4bf6933",
+      "bytes": 2324
+    },
+    "yinzhou/faq-expanded/manifest.json": {
+      "sha256": "e7e9f65df743bb76fda98153dd5413dacc3b7161c44eb39a212a1130a0675156",
+      "bytes": 739
+    },
+    "yinzhou/faq-expanded/page.json": {
+      "sha256": "88f0ab7a59f9ea1734b323ce9398008763fc1f015317fb4022eb0cc23fa3e987",
+      "bytes": 14562
+    },
+    "yinzhou/faq-expanded/page.png": {
+      "sha256": "02e67f4f96d342d4ec30effd0545e52399a647331a8407434b1773a1107b9d23",
+      "bytes": 805086
+    },
+    "yinzhou/faq-expanded/page.txt": {
+      "sha256": "f4d34339ee82e10d115c18fbc5b36f1d9d5936184a76e69d0fdcdafa0df47667",
+      "bytes": 4665
+    },
+    "yinzhou/faq-expanded/snapshot.txt": {
+      "sha256": "8edd7877684c520cde31485442789906dd4e2eb6c1b6e8b79e2390d344bf8e11",
+      "bytes": 2371
+    },
+    "yinzhou/flow/manifest.json": {
+      "sha256": "dbd432d7a6e8b60872b67bc723988381fb8acc59ddacc504709d2dc5bfae798d",
+      "bytes": 739
+    },
+    "yinzhou/flow/page.json": {
+      "sha256": "ae12290bddbab1904d34e06d14a173fbc04368f75a3f9e449ccf3fd25039e43b",
+      "bytes": 12243
+    },
+    "yinzhou/flow/page.png": {
+      "sha256": "efac0e7ef899b6cc12120e0d1c921cfa57e5c70aa5eabb13a6e413ba4e7b7a77",
+      "bytes": 575791
+    },
+    "yinzhou/flow/page.txt": {
+      "sha256": "a440f417841de04a4f56c1530ab619346481977f38ba6890644975a143d5492c",
+      "bytes": 2890
+    },
+    "yinzhou/flow/snapshot.txt": {
+      "sha256": "b342c28b59754b51199ca249b74192883678cbdc31e40db8144eecd0373c6640",
+      "bytes": 2212
+    },
+    "yinzhou/law/manifest.json": {
+      "sha256": "e57b80bf8a62aee11b0c572f60d9816c75c4f0bc68af02cc293a1a1346f75bd3",
+      "bytes": 739
+    },
+    "yinzhou/law/page.json": {
+      "sha256": "7dad6749dd18b3cfa9e3d90ca2d99eba34ab141d7ded1153f9a591d4cf9ec5c7",
+      "bytes": 13352
+    },
+    "yinzhou/law/page.png": {
+      "sha256": "f85672ff110645852f64a0b096c24577228791cacf4093c219b65363ee979127",
+      "bytes": 633297
+    },
+    "yinzhou/law/page.txt": {
+      "sha256": "537179b40a419d4c209bb8146c303df1d79b82e10e69c2fb46b2d98a37c51f69",
+      "bytes": 3999
+    },
+    "yinzhou/law/snapshot.txt": {
+      "sha256": "a9256cf91306fe90d834f464e39e607100bd51d561bb23eb690f6a5a34fd1fe1",
+      "bytes": 2322
+    },
+    "yinzhou/materials/manifest.json": {
+      "sha256": "f4e602dbfa27a640ceb8a5e79e16fac0009c7a0994f1fd9831e45d5978d576f0",
+      "bytes": 739
+    },
+    "yinzhou/materials/page.json": {
+      "sha256": "94871824ec5a529b9c75b59229741d7db6057e6d9098c670bed6e3054ffcbc69",
+      "bytes": 12243
+    },
+    "yinzhou/materials/page.png": {
+      "sha256": "aae9e2c86942979abb078f8d24e0dbdc9bffd3c073e13a5da67f54f6f2ae0fba",
+      "bytes": 552739
+    },
+    "yinzhou/materials/page.txt": {
+      "sha256": "7c973bd24b456529d164372d7f3dcf8d681f759be6dae084e7bb9adeb4a8a0f4",
+      "bytes": 2890
+    },
+    "yinzhou/materials/snapshot.txt": {
+      "sha256": "7a5f6387becac8e333525dc8d6ca66c37ad62707a4702209249f7bff63e30fef",
+      "bytes": 2212
+    },
+    "yinzhou/online-boundary.json": {
+      "sha256": "c20cd05170c0b7e59f24444f4902e14ceee074988af4ba4a7221a684cda7e437",
+      "bytes": 317
+    },
+    "yinzhou/online-boundary.png": {
+      "sha256": "7cb4a719fbd2589ed9d93068f3a3202620f4ea12f54630b2eebcc2a0185ea1be",
+      "bytes": 98925
+    },
+    "yinzhou/originals/blank/application.docx": {
+      "sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "bytes": 33949
+    },
+    "yinzhou/originals/blank/application.docx.source.json": {
+      "sha256": "a742559f37827b4826988718fb3939859d91793bc3261c634b64d141f8143740",
+      "bytes": 821
+    },
+    "yinzhou/originals/blank/evidence-list.docx": {
+      "sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+      "bytes": 18837
+    },
+    "yinzhou/originals/blank/evidence-list.docx.source.json": {
+      "sha256": "9c03e8c2618ebbe5919659474e5f233d88b35b42798823524f9def9c627f018f",
+      "bytes": 802
+    },
+    "yinzhou/originals/sample/identity-example.jpg": {
+      "sha256": "1a992bf994963a6a03f7344e9a766246c0b495756eb4877406b052d039272b09",
+      "bytes": 154432
+    },
+    "yinzhou/originals/sample/identity-example.jpg.source.json": {
+      "sha256": "48de27ae60ad56744c59712f49fcd61b739fd718dd6f7eb5baee10c69523ea3c",
+      "bytes": 1002
+    },
+    "yinzhou/sample/manifest.json": {
+      "sha256": "12036c1d5e753b9e4262591acdb6882bc01d9f67c3bb367d408815e2119d8449",
+      "bytes": 1018
+    },
+    "yinzhou/sample/page.json": {
+      "sha256": "4ed52eac1e0b815e1b8da511a020ccdf2b195eb1f85b287e826af4dfe3ca4c9a",
+      "bytes": 9939
+    },
+    "yinzhou/sample/page.png": {
+      "sha256": "28c8604a31fbf4f46e174709ca86d68639e30324a679357541eac81fff1e2adf",
+      "bytes": 865351
+    },
+    "yinzhou/sample/page.txt": {
+      "sha256": "b9ced48cb075030533be0d42ecac42f2e28fe362fdc14385c75b515beed767ca",
+      "bytes": 669
+    },
+    "yinzhou/sample/snapshot.txt": {
+      "sha256": "e752e4d01d9abdf7c3a8d8cf54ccc08ec81c8514aae371bbf6780894944009d6",
+      "bytes": 1655
+    },
+    "yinzhou/search/manifest.json": {
+      "sha256": "565ce20edafc334ee5653ee482d877b4ac026ceb90068a327067abebfea22977",
+      "bytes": 886
+    },
+    "yinzhou/search/page.json": {
+      "sha256": "ec44877346dcd48c0dbac6eaf06dacec8ca9400be322d81f24f0f2ff639de769",
+      "bytes": 49775
+    },
+    "yinzhou/search/page.png": {
+      "sha256": "bba76c969f8c81cea7ff4c01a516d86535336abfbe7316e2021e29101e9495fa",
+      "bytes": 566737
+    },
+    "yinzhou/search/page.txt": {
+      "sha256": "d942b49395c64ac11e70d8852399eb1ad7a08b2eb594984c27c7caa50d2449dc",
+      "bytes": 3238
+    },
+    "yinzhou/search/snapshot.txt": {
+      "sha256": "01e275aaa9df5b2371e92b53b2dac99fd9de371c2efe34b868f93795bebba0d6",
+      "bytes": 5486
+    },
+    "yinzhou/window/manifest.json": {
+      "sha256": "1576158a87cfeb23402124eeb7bb533ae92add6c60c5dcdf6cc60f99af6166b9",
+      "bytes": 739
+    },
+    "yinzhou/window/page.json": {
+      "sha256": "f85e2d9b2ec295133d06d869d358cd4703b809b2e6f45d1f8debe85368dedafc",
+      "bytes": 12243
+    },
+    "yinzhou/window/page.png": {
+      "sha256": "e97f68978f36b88b7b10951699f4d69d0b8a7f89a528d879954b82c4aeaf7e7f",
+      "bytes": 572403
+    },
+    "yinzhou/window/page.txt": {
+      "sha256": "a440f417841de04a4f56c1530ab619346481977f38ba6890644975a143d5492c",
+      "bytes": 2890
+    },
+    "yinzhou/window/snapshot.txt": {
+      "sha256": "b342c28b59754b51199ca249b74192883678cbdc31e40db8144eecd0373c6640",
+      "bytes": 2212
+    }
+  }
+}

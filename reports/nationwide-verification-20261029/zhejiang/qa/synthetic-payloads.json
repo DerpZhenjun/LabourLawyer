@@ -1,0 +1,214 @@
+{
+  "haishu": {
+    "application": {
+      "committeeName": "宁波市海曙区劳动人事争议仲裁委员会",
+      "applicantName": "虚构海曙区测试甲",
+      "birthDate": "1990-01-02",
+      "gender": "女",
+      "nationality": "汉族",
+      "idNumber": "TEST-ID-ONLY",
+      "phone": "",
+      "householdType": "本省非农业户口",
+      "idAddress": "虚构测试住址一号",
+      "respondentName": "虚构海曙区测试公司乙",
+      "socialCreditCode": "TEST-CREDIT-ONLY",
+      "registeredAddress": "虚构注册地址二号",
+      "mailingAddress": "虚构通讯地址三号",
+      "workAddress": "虚构劳动合同履行地四号",
+      "legalRepName": "虚构负责人丙",
+      "legalRepPosition": "测试负责人",
+      "legalRepPhone": "",
+      "companyContact": "虚构联系人丁",
+      "companyContactPhone": "",
+      "applicationDate": "2026-10-29",
+      "submitDate": "2026-10-29",
+      "caseNumber": "测试案号不用于实际办理",
+      "requests": [
+        "请求支付虚构测试工资100元。",
+        "请求支付虚构测试经济补偿200元。"
+      ],
+      "factsReason": "本文件全部内容均为软件排版测试虚构示例，不用于真实仲裁。测试双方围绕虚构工资及经济补偿发生争议。申请人与被申请人的名称、地址、日期及金额均为虚构，仅用于检查官方表格的换行和分页。申请人与被申请人的名称、地址、日期及金额均为虚构，仅用于检查官方表格的换行和分页。申请人与被申请人的名称、地址、日期及金额均为虚构，仅用于检查官方表格的换行和分页。申请人与被申请人的名称、地址、日期及金额均为虚构，仅用于检查官方表格的换行和分页。"
+    },
+    "evidence": {
+      "committeeName": "宁波市海曙区劳动人事争议仲裁委员会",
+      "applicantName": "虚构海曙区测试甲",
+      "birthDate": "1990-01-02",
+      "gender": "女",
+      "nationality": "汉族",
+      "idNumber": "TEST-ID-ONLY",
+      "phone": "",
+      "householdType": "本省非农业户口",
+      "idAddress": "虚构测试住址一号",
+      "respondentName": "虚构海曙区测试公司乙",
+      "socialCreditCode": "TEST-CREDIT-ONLY",
+      "registeredAddress": "虚构注册地址二号",
+      "mailingAddress": "虚构通讯地址三号",
+      "workAddress": "虚构劳动合同履行地四号",
+      "legalRepName": "虚构负责人丙",
+      "legalRepPosition": "测试负责人",
+      "legalRepPhone": "",
+      "companyContact": "虚构联系人丁",
+      "companyContactPhone": "",
+      "applicationDate": "2026-10-29",
+      "submitDate": "2026-10-29",
+      "caseNumber": "测试案号不用于实际办理",
+      "submitterName": "不可自动填写手签",
+      "evidenceList": [
+        {
+          "name": "虚构测试证据1",
+          "pageCount": "2页",
+          "source": "虚构测试材料，由测试人员保存",
+          "purpose": "第1项仅用于验证本区官方证据表的文字换行和八项证据扩展，不是实际证据。"
+        },
+        {
+          "name": "虚构测试证据2",
+          "pageCount": "2页",
+          "source": "虚构测试材料，由测试人员保存",
+          "purpose": "第2项仅用于验证本区官方证据表的文字换行和八项证据扩展，不是实际证据。"
+        },
+        {
+          "name": "虚构测试证据3",
+          "pageCount": "2页",
+          "source": "虚构测试材料，由测试人员保存",
+          "purpose": "第3项仅用于验证本区官方证据表的文字换行和八项证据扩展，不是实际证据。"
+        },
+        {
+          "name": "虚构测试证据4",
+          "pageCount": "2页",
+          "source": "虚构测试材料，由测试人员保存",
+          "purpose": "第4项仅用于验证本区官方证据表的文字换行和八项证据扩展，不是实际证据。"
+        },
+        {
+          "name": "虚构测试证据5",
+          "pageCount": "2页",
+          "source": "虚构测试材料，由测试人员保存",
+          "purpose": "第5项仅用于验证本区官方证据表的文字换行和八项证据扩展，不是实际证据。"
+        },
+        {
+          "name": "虚构测试证据6",
+          "pageCount": "2页",
+          "source": "虚构测试材料，由测试人员保存",
+          "purpose": "第6项仅用于验证本区官方证据表的文字换行和八项证据扩展，不是实际证据。"
+        },
+        {
+          "name": "虚构测试证据7",
+          "pageCount": "2页",
+          "source": "虚构测试材料，由测试人员保存",
+          "purpose": "第7项仅用于验证本区官方证据表的文字换行和八项证据扩展，不是实际证据。"
+        },
+        {
+          "name": "虚构测试证据8",
+          "pageCount": "2页",
+          "source": "虚构测试材料，由测试人员保存",
+          "purpose": "第8项仅用于验证本区官方证据表的文字换行和八项证据扩展，不是实际证据。"
+        }
+      ]
+    }
+  },
+  "yinzhou": {
+    "application": {
+      "committeeName": "宁波市鄞州区劳动人事争议仲裁委员会",
+      "applicantName": "虚构鄞州区测试甲",
+      "birthDate": "1990-01-02",
+      "gender": "女",
+      "nationality": "汉族",
+      "idNumber": "TEST-ID-ONLY",
+      "phone": "",
+      "householdType": "本省非农业户口",
+      "idAddress": "虚构测试住址一号",
+      "respondentName": "虚构鄞州区测试公司乙",
+      "socialCreditCode": "TEST-CREDIT-ONLY",
+      "registeredAddress": "虚构注册地址二号",
+      "mailingAddress": "虚构通讯地址三号",
+      "workAddress": "虚构劳动合同履行地四号",
+      "legalRepName": "虚构负责人丙",
+      "legalRepPosition": "测试负责人",
+      "legalRepPhone": "",
+      "companyContact": "虚构联系人丁",
+      "companyContactPhone": "",
+      "applicationDate": "2026-10-29",
+      "submitDate": "2026-10-29",
+      "caseNumber": "测试案号不用于实际办理",
+      "requests": [
+        "请求支付虚构测试工资100元。",
+        "请求支付虚构测试经济补偿200元。"
+      ],
+      "factsReason": "本文件全部内容均为软件排版测试虚构示例，不用于真实仲裁。测试双方围绕虚构工资及经济补偿发生争议。申请人与被申请人的名称、地址、日期及金额均为虚构，仅用于检查官方表格的换行和分页。申请人与被申请人的名称、地址、日期及金额均为虚构，仅用于检查官方表格的换行和分页。申请人与被申请人的名称、地址、日期及金额均为虚构，仅用于检查官方表格的换行和分页。申请人与被申请人的名称、地址、日期及金额均为虚构，仅用于检查官方表格的换行和分页。"
+    },
+    "evidence": {
+      "committeeName": "宁波市鄞州区劳动人事争议仲裁委员会",
+      "applicantName": "虚构鄞州区测试甲",
+      "birthDate": "1990-01-02",
+      "gender": "女",
+      "nationality": "汉族",
+      "idNumber": "TEST-ID-ONLY",
+      "phone": "",
+      "householdType": "本省非农业户口",
+      "idAddress": "虚构测试住址一号",
+      "respondentName": "虚构鄞州区测试公司乙",
+      "socialCreditCode": "TEST-CREDIT-ONLY",
+      "registeredAddress": "虚构注册地址二号",
+      "mailingAddress": "虚构通讯地址三号",
+      "workAddress": "虚构劳动合同履行地四号",
+      "legalRepName": "虚构负责人丙",
+      "legalRepPosition": "测试负责人",
+      "legalRepPhone": "",
+      "companyContact": "虚构联系人丁",
+      "companyContactPhone": "",
+      "applicationDate": "2026-10-29",
+      "submitDate": "2026-10-29",
+      "caseNumber": "测试案号不用于实际办理",
+      "submitterName": "不可自动填写手签",
+      "evidenceList": [
+        {
+          "name": "虚构测试证据1",
+          "pageCount": "2页",
+          "source": "虚构测试材料，由测试人员保存",
+          "purpose": "第1项仅用于验证本区官方证据表的文字换行和八项证据扩展，不是实际证据。"
+        },
+        {
+          "name": "虚构测试证据2",
+          "pageCount": "2页",
+          "source": "虚构测试材料，由测试人员保存",
+          "purpose": "第2项仅用于验证本区官方证据表的文字换行和八项证据扩展，不是实际证据。"
+        },
+        {
+          "name": "虚构测试证据3",
+          "pageCount": "2页",
+          "source": "虚构测试材料，由测试人员保存",
+          "purpose": "第3项仅用于验证本区官方证据表的文字换行和八项证据扩展，不是实际证据。"
+        },
+        {
+          "name": "虚构测试证据4",
+          "pageCount": "2页",
+          "source": "虚构测试材料，由测试人员保存",
+          "purpose": "第4项仅用于验证本区官方证据表的文字换行和八项证据扩展，不是实际证据。"
+        },
+        {
+          "name": "虚构测试证据5",
+          "pageCount": "2页",
+          "source": "虚构测试材料，由测试人员保存",
+          "purpose": "第5项仅用于验证本区官方证据表的文字换行和八项证据扩展，不是实际证据。"
+        },
+        {
+          "name": "虚构测试证据6",
+          "pageCount": "2页",
+          "source": "虚构测试材料，由测试人员保存",
+          "purpose": "第6项仅用于验证本区官方证据表的文字换行和八项证据扩展，不是实际证据。"
+        },
+        {
+          "name": "虚构测试证据7",
+          "pageCount": "2页",
+          "source": "虚构测试材料，由测试人员保存",
+          "purpose": "第7项仅用于验证本区官方证据表的文字换行和八项证据扩展，不是实际证据。"
+        },
+        {
+          "name": "虚构测试证据8",
+          "pageCount": "2页",
+          "source": "虚构测试材料，由测试人员保存",
+          "purpose": "第8项仅用于验证本区官方证据表的文字换行和八项证据扩展，不是实际证据。"
+        }
+      ]
+    }
+  }
+}

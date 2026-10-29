@@ -1,0 +1,172 @@
+{
+  "checked_at": "2026-10-29T08:50:49.486329+00:00",
+  "guides": [
+    {
+      "province": "zhejiang",
+      "city": "宁波市",
+      "district": "海曙区",
+      "region_code": "330203",
+      "guide_file": "reports/nationwide-verification-20261029/zhejiang/haishu/guide.json",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=a57febe6-cd30-4a53-8b4c-f24edaaf7864",
+      "status": "own_official_guide_collected_offline_adapter_verified",
+      "published": false,
+      "can_generate_offline": true,
+      "materials": 5,
+      "blank_originals": 2,
+      "sample_originals": 1,
+      "web_acceptance": "NOT_RUN_EXISTING_STARTUP_POLICY_REJECTION_NOT_RETRIED"
+    },
+    {
+      "province": "zhejiang",
+      "city": "宁波市",
+      "district": "鄞州区",
+      "region_code": "330212",
+      "guide_file": "reports/nationwide-verification-20261029/zhejiang/yinzhou/guide.json",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=73f99740-5b23-424a-9ae8-be607cdceaeb",
+      "status": "own_official_guide_collected_offline_adapter_verified",
+      "published": false,
+      "can_generate_offline": true,
+      "materials": 5,
+      "blank_originals": 2,
+      "sample_originals": 1,
+      "web_acceptance": "NOT_RUN_EXISTING_STARTUP_POLICY_REJECTION_NOT_RETRIED"
+    }
+  ],
+  "public_originals": [
+    {
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=a57febe6-cd30-4a53-8b4c-f24edaaf7864",
+      "download_url": "https://portal.zjzwfw.gov.cn/media/oss/FILE/META_DATA/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+      "final_url": "https://portal.zjzwfw.gov.cn/media/oss/FILE/META_DATA/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+      "original_name": "《劳动人事争议仲裁申请书》.docx",
+      "local_path": "haishu/originals/blank/application.docx",
+      "kind": "blank",
+      "downloaded_at": "2026-10-29T08:41:23.627186+00:00",
+      "bytes": 33949,
+      "sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "method": "public_http_after_own_browser_control_and_URL_observed",
+      "browser_download_limit": "native browser download canceled; public source fetched without cookies",
+      "file": "reports/nationwide-verification-20261029/zhejiang/haishu/originals/blank/application.docx",
+      "public_reason": "本区官方公开空白/标注样证，按blank和sample分别保存；无私人上传"
+    },
+    {
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=a57febe6-cd30-4a53-8b4c-f24edaaf7864",
+      "download_url": "https://portal.zjzwfw.gov.cn/media/oss/FILE/META_DATA/872DFF90A8578907CB947197A784AA48.docx",
+      "final_url": "https://portal.zjzwfw.gov.cn/media/oss/FILE/META_DATA/872DFF90A8578907CB947197A784AA48.docx",
+      "original_name": "《证据清单》.docx",
+      "local_path": "haishu/originals/blank/evidence-list.docx",
+      "kind": "blank",
+      "downloaded_at": "2026-10-29T08:41:24.087448+00:00",
+      "bytes": 18837,
+      "sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "method": "public_http_after_own_browser_control_and_URL_observed",
+      "browser_download_limit": "native browser download canceled; public source fetched without cookies",
+      "file": "reports/nationwide-verification-20261029/zhejiang/haishu/originals/blank/evidence-list.docx",
+      "public_reason": "本区官方公开空白/标注样证，按blank和sample分别保存；无私人上传"
+    },
+    {
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=a57febe6-cd30-4a53-8b4c-f24edaaf7864",
+      "download_url": "https://portal.zjzwfw.gov.cn/media/oss/image/META_DATA/%E5%B1%85%E6%B0%91%E8%BA%AB%E4%BB%BD%E8%AF%81%E6%A0%B7%E8%AF%812CD6D8BA9380D21B19B90B9292B231402CD6D8BA9380D21B19B90B9292B23140.jpg",
+      "final_url": "https://portal.zjzwfw.gov.cn/media/oss/image/META_DATA/%E5%B1%85%E6%B0%91%E8%BA%AB%E4%BB%BD%E8%AF%81%E6%A0%B7%E8%AF%812CD6D8BA9380D21B19B90B9292B231402CD6D8BA9380D21B19B90B9292B23140.jpg",
+      "original_name": "居民身份证样证2CD6D8BA9380D21B19B90B9292B231402CD6D8BA9380D21B19B90B9292B23140.jpg",
+      "local_path": "haishu/originals/sample/identity-example.jpg",
+      "kind": "sample",
+      "downloaded_at": "2026-10-29T08:41:24.954367+00:00",
+      "bytes": 154432,
+      "sha256": "1a992bf994963a6a03f7344e9a766246c0b495756eb4877406b052d039272b09",
+      "content_type": "image/jpeg",
+      "method": "public_http_after_own_browser_control_and_URL_observed",
+      "browser_download_limit": "native browser download canceled; public source fetched without cookies",
+      "file": "reports/nationwide-verification-20261029/zhejiang/haishu/originals/sample/identity-example.jpg",
+      "public_reason": "本区官方公开空白/标注样证，按blank和sample分别保存；无私人上传"
+    },
+    {
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=73f99740-5b23-424a-9ae8-be607cdceaeb",
+      "download_url": "https://portal.zjzwfw.gov.cn/media/oss/FILE/META_DATA/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+      "final_url": "https://portal.zjzwfw.gov.cn/media/oss/FILE/META_DATA/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+      "original_name": "《劳动人事争议仲裁申请书》.docx",
+      "local_path": "yinzhou/originals/blank/application.docx",
+      "kind": "blank",
+      "downloaded_at": "2026-10-29T08:43:15.502147+00:00",
+      "bytes": 33949,
+      "sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "method": "public_http_after_own_browser_control_and_URL_observed",
+      "file": "reports/nationwide-verification-20261029/zhejiang/yinzhou/originals/blank/application.docx",
+      "public_reason": "本区官方公开空白/标注样证，按blank和sample分别保存；无私人上传"
+    },
+    {
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=73f99740-5b23-424a-9ae8-be607cdceaeb",
+      "download_url": "https://portal.zjzwfw.gov.cn/media/oss/FILE/META_DATA/872DFF90A8578907CB947197A784AA48.docx",
+      "final_url": "https://portal.zjzwfw.gov.cn/media/oss/FILE/META_DATA/872DFF90A8578907CB947197A784AA48.docx",
+      "original_name": "《证据清单》.docx",
+      "local_path": "yinzhou/originals/blank/evidence-list.docx",
+      "kind": "blank",
+      "downloaded_at": "2026-10-29T08:43:15.891501+00:00",
+      "bytes": 18837,
+      "sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "method": "public_http_after_own_browser_control_and_URL_observed",
+      "file": "reports/nationwide-verification-20261029/zhejiang/yinzhou/originals/blank/evidence-list.docx",
+      "public_reason": "本区官方公开空白/标注样证，按blank和sample分别保存；无私人上传"
+    },
+    {
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=73f99740-5b23-424a-9ae8-be607cdceaeb",
+      "download_url": "https://portal.zjzwfw.gov.cn/media/oss/image/META_DATA/%E5%B1%85%E6%B0%91%E8%BA%AB%E4%BB%BD%E8%AF%81%E6%A0%B7%E8%AF%812CD6D8BA9380D21B19B90B9292B231402CD6D8BA9380D21B19B90B9292B23140.jpg",
+      "final_url": "https://portal.zjzwfw.gov.cn/media/oss/image/META_DATA/%E5%B1%85%E6%B0%91%E8%BA%AB%E4%BB%BD%E8%AF%81%E6%A0%B7%E8%AF%812CD6D8BA9380D21B19B90B9292B231402CD6D8BA9380D21B19B90B9292B23140.jpg",
+      "original_name": "居民身份证样证2CD6D8BA9380D21B19B90B9292B231402CD6D8BA9380D21B19B90B9292B23140.jpg",
+      "local_path": "yinzhou/originals/sample/identity-example.jpg",
+      "kind": "sample",
+      "downloaded_at": "2026-10-29T08:43:16.641577+00:00",
+      "bytes": 154432,
+      "sha256": "1a992bf994963a6a03f7344e9a766246c0b495756eb4877406b052d039272b09",
+      "content_type": "image/jpeg",
+      "method": "public_http_after_own_browser_control_and_URL_observed",
+      "file": "reports/nationwide-verification-20261029/zhejiang/yinzhou/originals/sample/identity-example.jpg",
+      "public_reason": "本区官方公开空白/标注样证，按blank和sample分别保存；无私人上传"
+    }
+  ],
+  "tests": {
+    "command": ".venv/Scripts/python.exe -m unittest backend.tests.test_zhejiang_oct29 -v",
+    "passed": 7,
+    "failed": 0,
+    "log": "tests.log"
+  },
+  "layout": {
+    "original_files": 4,
+    "filled_files": 4,
+    "original_pages": 14,
+    "filled_pages": 10,
+    "total_pages": 24,
+    "status": "PASS_ALL_PAGES_VIEWED"
+  },
+  "source_manifest_sha256": "dc941a9bedc140e9a18eca58b2d2a390209a9016d337e9b16f194f356ffd6c2e",
+  "publication": "not_published",
+  "models_invoked": false,
+  "private_case_databases_accessed": false,
+  "issues": [
+    {
+      "status": "resolved_with_excluded_evidence",
+      "type": "SPA_HASH_NAVIGATION_OLD_BODY",
+      "evidence": "attempts/yinzhou-faq-stale/OUTCOME.txt",
+      "resolution": "reload then own-district phone identity before acceptance; semantic regression test rejects correct URL with previous district body"
+    },
+    {
+      "status": "acquired_via_public_http",
+      "type": "HAISHU_NATIVE_BROWSER_DOWNLOAD_CANCELED",
+      "resolution": "recorded actual material click, public Fetch URL, native suggested name; own exact URL fetched without cookies"
+    },
+    {
+      "status": "fallback_completed",
+      "type": "LIBREOFFICE_NOT_INSTALLED",
+      "resolution": "isolated new Word PID29740, all eight window ownership checks, read-only export, own instance exited"
+    }
+  ],
+  "limitations": [
+    "未发布候选，未启动候选站或绕过旧拒绝，候选网页验收NOT_RUN。",
+    "两区在线办理均止于个人登录边界，未登录、未填账号、未代提交。",
+    "实施机关保留指南原简称；材料必要性当前界面未分别标示，记not_found_in_checked_sources，不解释为可省略。",
+    "仅新增两区自身核验，不代表全省/全国覆盖。"
+  ]
+}

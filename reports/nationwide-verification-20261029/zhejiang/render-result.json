@@ -1,0 +1,193 @@
+{
+  "engine": "isolated Word read-only + bundled Poppler",
+  "tasks": [
+    {
+      "source": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\haishu\\originals\\blank\\application.docx",
+      "source_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "pdf": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\render\\haishu\\original-application\\document.pdf",
+      "district": "haishu",
+      "role": "original",
+      "kind": "application",
+      "pdf_sha256": "cf531f5ded95dd169f67036bef61868174f20ec0eaadf960ab3ebc701bfdfbd4",
+      "pages": [
+        "render/haishu/original-application/page-1.png",
+        "render/haishu/original-application/page-2.png",
+        "render/haishu/original-application/page-3.png",
+        "render/haishu/original-application/page-4.png",
+        "render/haishu/original-application/page-5.png",
+        "render/haishu/original-application/page-6.png"
+      ],
+      "page_count": 6
+    },
+    {
+      "source": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\qa\\haishu\\application-synthetic.docx",
+      "source_sha256": "dca7a0d8e17af0e2cc9ea28be6480fea6422b9516dc8bdaa3566fa66fec0adb7",
+      "pdf": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\render\\haishu\\filled-application\\document.pdf",
+      "district": "haishu",
+      "role": "filled",
+      "kind": "application",
+      "pdf_sha256": "4e88ea3820c130bd414042ba1c74531fc172bcc5e7a15f27c2279c34146beccf",
+      "pages": [
+        "render/haishu/filled-application/page-1.png",
+        "render/haishu/filled-application/page-2.png",
+        "render/haishu/filled-application/page-3.png"
+      ],
+      "page_count": 3
+    },
+    {
+      "source": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\haishu\\originals\\blank\\evidence-list.docx",
+      "source_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+      "pdf": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\render\\haishu\\original-evidence\\document.pdf",
+      "district": "haishu",
+      "role": "original",
+      "kind": "evidence",
+      "pdf_sha256": "a044973f4a4ef168ddbbddf3a40c19b4fc6e867a0df9f02be6805fcbc735cb67",
+      "pages": [
+        "render/haishu/original-evidence/page-1.png"
+      ],
+      "page_count": 1
+    },
+    {
+      "source": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\qa\\haishu\\evidence-synthetic.docx",
+      "source_sha256": "003b33650d39a454114e12296823dcaea9b3482a210eccb3b8378a43b3ff3191",
+      "pdf": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\render\\haishu\\filled-evidence\\document.pdf",
+      "district": "haishu",
+      "role": "filled",
+      "kind": "evidence",
+      "pdf_sha256": "f39cc9f36d078d1713bda3c97069838d5cf9cc4a76e6caf5931986080ed7fef3",
+      "pages": [
+        "render/haishu/filled-evidence/page-1.png",
+        "render/haishu/filled-evidence/page-2.png"
+      ],
+      "page_count": 2
+    },
+    {
+      "source": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\yinzhou\\originals\\blank\\application.docx",
+      "source_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "pdf": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\render\\yinzhou\\original-application\\document.pdf",
+      "district": "yinzhou",
+      "role": "original",
+      "kind": "application",
+      "pdf_sha256": "0e911680ea4c017d1db3003c19fd796b9dd6db47b91b82f8b4123853a739726a",
+      "pages": [
+        "render/yinzhou/original-application/page-1.png",
+        "render/yinzhou/original-application/page-2.png",
+        "render/yinzhou/original-application/page-3.png",
+        "render/yinzhou/original-application/page-4.png",
+        "render/yinzhou/original-application/page-5.png",
+        "render/yinzhou/original-application/page-6.png"
+      ],
+      "page_count": 6
+    },
+    {
+      "source": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\qa\\yinzhou\\application-synthetic.docx",
+      "source_sha256": "161a47ce67129cab1bd6d1e4529f9e4a8c21d2b9f4c79534cd81586108b3dd76",
+      "pdf": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\render\\yinzhou\\filled-application\\document.pdf",
+      "district": "yinzhou",
+      "role": "filled",
+      "kind": "application",
+      "pdf_sha256": "257c873ff049ecae13c2bdf9e45f0f36d2a93029cfc4d2f77bf257b28816cfed",
+      "pages": [
+        "render/yinzhou/filled-application/page-1.png",
+        "render/yinzhou/filled-application/page-2.png",
+        "render/yinzhou/filled-application/page-3.png"
+      ],
+      "page_count": 3
+    },
+    {
+      "source": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\yinzhou\\originals\\blank\\evidence-list.docx",
+      "source_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+      "pdf": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\render\\yinzhou\\original-evidence\\document.pdf",
+      "district": "yinzhou",
+      "role": "original",
+      "kind": "evidence",
+      "pdf_sha256": "064b3f906ed84dbcb6dddabb8bea570cf8edb9d0fce09f2d87148610284d88cd",
+      "pages": [
+        "render/yinzhou/original-evidence/page-1.png"
+      ],
+      "page_count": 1
+    },
+    {
+      "source": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\qa\\yinzhou\\evidence-synthetic.docx",
+      "source_sha256": "40ff6b0640bc8a583a3f1c5c79bd1b24dc7acf65ff72e329d60498d377d8a40c",
+      "pdf": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\render\\yinzhou\\filled-evidence\\document.pdf",
+      "district": "yinzhou",
+      "role": "filled",
+      "kind": "evidence",
+      "pdf_sha256": "a4b2398537de6ba8c21f544d403ec8432bd5ea0c54be7922484abcd9301e2676",
+      "pages": [
+        "render/yinzhou/filled-evidence/page-1.png",
+        "render/yinzhou/filled-evidence/page-2.png"
+      ],
+      "page_count": 2
+    }
+  ],
+  "sources_unchanged": true,
+  "isolation": {
+    "method": "CoCreateInstanceEx/IID_IDispatch (DispatchEx semantics)",
+    "before": [],
+    "during": [
+      29740
+    ],
+    "new_instance_pid": 29740,
+    "new_pid_verified": true,
+    "document_window_pid_checks": [
+      {
+        "matches_new_instance": true,
+        "window_pid": 29740,
+        "document": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\haishu\\originals\\blank\\application.docx"
+      },
+      {
+        "matches_new_instance": true,
+        "window_pid": 29740,
+        "document": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\qa\\haishu\\application-synthetic.docx"
+      },
+      {
+        "matches_new_instance": true,
+        "window_pid": 29740,
+        "document": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\haishu\\originals\\blank\\evidence-list.docx"
+      },
+      {
+        "matches_new_instance": true,
+        "window_pid": 29740,
+        "document": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\qa\\haishu\\evidence-synthetic.docx"
+      },
+      {
+        "matches_new_instance": true,
+        "window_pid": 29740,
+        "document": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\yinzhou\\originals\\blank\\application.docx"
+      },
+      {
+        "matches_new_instance": true,
+        "window_pid": 29740,
+        "document": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\qa\\yinzhou\\application-synthetic.docx"
+      },
+      {
+        "matches_new_instance": true,
+        "window_pid": 29740,
+        "document": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\yinzhou\\originals\\blank\\evidence-list.docx"
+      },
+      {
+        "matches_new_instance": true,
+        "window_pid": 29740,
+        "document": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\qa\\yinzhou\\evidence-synthetic.docx"
+      }
+    ],
+    "macro_security": 3,
+    "link_updates_disabled": true,
+    "option_restored_before_own_quit": true,
+    "completed": 8,
+    "after": [],
+    "original_pids_still_alive": true,
+    "quit_called_only_on_distinct_new_object": true
+  },
+  "visual_status": "PASS_ALL_24_PAGES_INDIVIDUALLY_VIEWED",
+  "visual_checked_at": "2026-10-29T08:50:49.486329+00:00",
+  "scope": "Worker application only; evidence eight-item fictional stress sample. Employer application pages in the original remain unadapted.",
+  "notes": [
+    "Original application has six pages including worker and employer versions; filled application retains worker version only.",
+    "Official original legal-representative merged cell spans pages 1/2; original bytes are not changed. Filled version keeps that merged cell together.",
+    "Original household choice labels repeat an out-of-province non-agricultural option; retained as official source wording.",
+    "The first PDF text assertion did not account for extraction spaces between evidence names and digits; normalized extraction passed without document changes or a second Word run."
+  ]
+}

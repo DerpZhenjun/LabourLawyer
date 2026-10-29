@@ -1,0 +1,62 @@
+﻿{
+    "method":  "CoCreateInstanceEx/IID_IDispatch (DispatchEx semantics)",
+    "before":  [
+
+               ],
+    "during":  [
+                   29740
+               ],
+    "new_instance_pid":  29740,
+    "new_pid_verified":  true,
+    "document_window_pid_checks":  [
+                                       {
+                                           "matches_new_instance":  true,
+                                           "window_pid":  29740,
+                                           "document":  "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\haishu\\originals\\blank\\application.docx"
+                                       },
+                                       {
+                                           "matches_new_instance":  true,
+                                           "window_pid":  29740,
+                                           "document":  "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\qa\\haishu\\application-synthetic.docx"
+                                       },
+                                       {
+                                           "matches_new_instance":  true,
+                                           "window_pid":  29740,
+                                           "document":  "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\haishu\\originals\\blank\\evidence-list.docx"
+                                       },
+                                       {
+                                           "matches_new_instance":  true,
+                                           "window_pid":  29740,
+                                           "document":  "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\qa\\haishu\\evidence-synthetic.docx"
+                                       },
+                                       {
+                                           "matches_new_instance":  true,
+                                           "window_pid":  29740,
+                                           "document":  "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\yinzhou\\originals\\blank\\application.docx"
+                                       },
+                                       {
+                                           "matches_new_instance":  true,
+                                           "window_pid":  29740,
+                                           "document":  "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\qa\\yinzhou\\application-synthetic.docx"
+                                       },
+                                       {
+                                           "matches_new_instance":  true,
+                                           "window_pid":  29740,
+                                           "document":  "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\yinzhou\\originals\\blank\\evidence-list.docx"
+                                       },
+                                       {
+                                           "matches_new_instance":  true,
+                                           "window_pid":  29740,
+                                           "document":  "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\zhejiang\\qa\\yinzhou\\evidence-synthetic.docx"
+                                       }
+                                   ],
+    "macro_security":  3,
+    "link_updates_disabled":  true,
+    "option_restored_before_own_quit":  true,
+    "completed":  8,
+    "after":  [
+
+              ],
+    "original_pids_still_alive":  true,
+    "quit_called_only_on_distinct_new_object":  true
+}

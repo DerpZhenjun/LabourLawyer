@@ -1,0 +1,12 @@
+test_arbitrary_input_path_and_sample_refused (backend.tests.test_zhejiang_oct29.ZhejiangOct29Tests.test_arbitrary_input_path_and_sample_refused) ... ok
+test_changed_material_or_template_identity_refused (backend.tests.test_zhejiang_oct29.ZhejiangOct29Tests.test_changed_material_or_template_identity_refused) ... ok
+test_each_own_guide_materials_channel_and_samples (backend.tests.test_zhejiang_oct29.ZhejiangOct29Tests.test_each_own_guide_materials_channel_and_samples) ... ok
+test_fill_preserves_package_and_signature_and_original (backend.tests.test_zhejiang_oct29.ZhejiangOct29Tests.test_fill_preserves_package_and_signature_and_original) ... ok
+test_same_file_sha_does_not_authorize_other_district (backend.tests.test_zhejiang_oct29.ZhejiangOct29Tests.test_same_file_sha_does_not_authorize_other_district) ... ok
+test_same_guide_url_with_previous_district_body_is_rejected (backend.tests.test_zhejiang_oct29.ZhejiangOct29Tests.test_same_guide_url_with_previous_district_body_is_rejected) ... ok
+test_tampered_capture_is_rejected_without_resigning (backend.tests.test_zhejiang_oct29.ZhejiangOct29Tests.test_tampered_capture_is_rejected_without_resigning) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.173s
+
+OK

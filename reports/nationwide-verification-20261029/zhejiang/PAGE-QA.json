@@ -1,0 +1,223 @@
+{
+  "checked_at": "2026-10-29T08:50:49.486329+00:00",
+  "pages": [
+    {
+      "file": "render/haishu/original-application/page-1.png",
+      "sha256": "6fe7a8f412aafe8fec9788c8beb88bc6be661d6a780c5d6d0596197bd0026a55",
+      "district": "haishu",
+      "role": "original",
+      "kind": "application",
+      "status": "PASS_PRESERVED_OFFICIAL_ORIGINAL",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/haishu/original-application/page-2.png",
+      "sha256": "7cd28ddbe7dd2f4ecf06f003edb58bddbf7daab99643bc46e5b8e180ac37f36e",
+      "district": "haishu",
+      "role": "original",
+      "kind": "application",
+      "status": "PASS_PRESERVED_OFFICIAL_ORIGINAL",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/haishu/original-application/page-3.png",
+      "sha256": "1186f99d39032b1984d91f7243a0256f8cc81d6a3308c3cc579611df2623c98d",
+      "district": "haishu",
+      "role": "original",
+      "kind": "application",
+      "status": "PASS_PRESERVED_OFFICIAL_ORIGINAL",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/haishu/original-application/page-4.png",
+      "sha256": "1fe16f60c122e134bf6e2fb248ff0dce9ac84c684b9ead9b57e5ff4942763446",
+      "district": "haishu",
+      "role": "original",
+      "kind": "application",
+      "status": "PASS_PRESERVED_OFFICIAL_ORIGINAL",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/haishu/original-application/page-5.png",
+      "sha256": "f9b9a3356a66ce9fea3af8fe68f6b973e30b37167cd6e667b20f631bc47ee76e",
+      "district": "haishu",
+      "role": "original",
+      "kind": "application",
+      "status": "PASS_PRESERVED_OFFICIAL_ORIGINAL",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/haishu/original-application/page-6.png",
+      "sha256": "c3cb07bada61bd8842c44490e7ab367aac775fd719669b1dced51b9379ec0063",
+      "district": "haishu",
+      "role": "original",
+      "kind": "application",
+      "status": "PASS_PRESERVED_OFFICIAL_ORIGINAL",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/haishu/filled-application/page-1.png",
+      "sha256": "3caeb931af463cca826295ef076f5782bd374459ca2b6e5efb288fa7c91c21fb",
+      "district": "haishu",
+      "role": "filled",
+      "kind": "application",
+      "status": "PASS",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/haishu/filled-application/page-2.png",
+      "sha256": "2ab7302ce8a8b149bcde4427e026e81d42dd87204006c4722df677cd63648608",
+      "district": "haishu",
+      "role": "filled",
+      "kind": "application",
+      "status": "PASS",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/haishu/filled-application/page-3.png",
+      "sha256": "28f5d379e0ee68123da28112ff1bc7fbb7226432761a262c4ef5a27057b43f0d",
+      "district": "haishu",
+      "role": "filled",
+      "kind": "application",
+      "status": "PASS",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/haishu/original-evidence/page-1.png",
+      "sha256": "de33f319ca54b4a5190b1c4b302a2d79fa51c57a4f0b0c5ff9db864e2445e4e7",
+      "district": "haishu",
+      "role": "original",
+      "kind": "evidence",
+      "status": "PASS_PRESERVED_OFFICIAL_ORIGINAL",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/haishu/filled-evidence/page-1.png",
+      "sha256": "6287b8fa5af282adc934ca1d60e4926708c1809949e6004cfe76ac2df6350cb5",
+      "district": "haishu",
+      "role": "filled",
+      "kind": "evidence",
+      "status": "PASS",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/haishu/filled-evidence/page-2.png",
+      "sha256": "42a0feb7b8e63e2d37a2a6ffcbf567d3e4db55a8bc4402100ce9ee0d09d61197",
+      "district": "haishu",
+      "role": "filled",
+      "kind": "evidence",
+      "status": "PASS",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/yinzhou/original-application/page-1.png",
+      "sha256": "6fe7a8f412aafe8fec9788c8beb88bc6be661d6a780c5d6d0596197bd0026a55",
+      "district": "yinzhou",
+      "role": "original",
+      "kind": "application",
+      "status": "PASS_PRESERVED_OFFICIAL_ORIGINAL",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/yinzhou/original-application/page-2.png",
+      "sha256": "7cd28ddbe7dd2f4ecf06f003edb58bddbf7daab99643bc46e5b8e180ac37f36e",
+      "district": "yinzhou",
+      "role": "original",
+      "kind": "application",
+      "status": "PASS_PRESERVED_OFFICIAL_ORIGINAL",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/yinzhou/original-application/page-3.png",
+      "sha256": "1186f99d39032b1984d91f7243a0256f8cc81d6a3308c3cc579611df2623c98d",
+      "district": "yinzhou",
+      "role": "original",
+      "kind": "application",
+      "status": "PASS_PRESERVED_OFFICIAL_ORIGINAL",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/yinzhou/original-application/page-4.png",
+      "sha256": "1fe16f60c122e134bf6e2fb248ff0dce9ac84c684b9ead9b57e5ff4942763446",
+      "district": "yinzhou",
+      "role": "original",
+      "kind": "application",
+      "status": "PASS_PRESERVED_OFFICIAL_ORIGINAL",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/yinzhou/original-application/page-5.png",
+      "sha256": "f9b9a3356a66ce9fea3af8fe68f6b973e30b37167cd6e667b20f631bc47ee76e",
+      "district": "yinzhou",
+      "role": "original",
+      "kind": "application",
+      "status": "PASS_PRESERVED_OFFICIAL_ORIGINAL",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/yinzhou/original-application/page-6.png",
+      "sha256": "c3cb07bada61bd8842c44490e7ab367aac775fd719669b1dced51b9379ec0063",
+      "district": "yinzhou",
+      "role": "original",
+      "kind": "application",
+      "status": "PASS_PRESERVED_OFFICIAL_ORIGINAL",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/yinzhou/filled-application/page-1.png",
+      "sha256": "9d63ce3d8da8f902969e3eb3225fcc43021a48a9a6d54bcd3a54cf5e6b301521",
+      "district": "yinzhou",
+      "role": "filled",
+      "kind": "application",
+      "status": "PASS",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/yinzhou/filled-application/page-2.png",
+      "sha256": "2ab7302ce8a8b149bcde4427e026e81d42dd87204006c4722df677cd63648608",
+      "district": "yinzhou",
+      "role": "filled",
+      "kind": "application",
+      "status": "PASS",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/yinzhou/filled-application/page-3.png",
+      "sha256": "0101b05041214200c3b0aba53e61966dee7d4d2cc8c57cd7b9446234477d44d1",
+      "district": "yinzhou",
+      "role": "filled",
+      "kind": "application",
+      "status": "PASS",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/yinzhou/original-evidence/page-1.png",
+      "sha256": "de33f319ca54b4a5190b1c4b302a2d79fa51c57a4f0b0c5ff9db864e2445e4e7",
+      "district": "yinzhou",
+      "role": "original",
+      "kind": "evidence",
+      "status": "PASS_PRESERVED_OFFICIAL_ORIGINAL",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/yinzhou/filled-evidence/page-1.png",
+      "sha256": "9889e35080bfb7d6defff20ffde88170ce6abd6e62d80208dc40cdafb3a18a19",
+      "district": "yinzhou",
+      "role": "filled",
+      "kind": "evidence",
+      "status": "PASS",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    },
+    {
+      "file": "render/yinzhou/filled-evidence/page-2.png",
+      "sha256": "42a0feb7b8e63e2d37a2a6ffcbf567d3e4db55a8bc4402100ce9ee0d09d61197",
+      "district": "yinzhou",
+      "role": "filled",
+      "kind": "evidence",
+      "status": "PASS",
+      "inspection": "individual view_image; text, table rows, margins, dates, page breaks and signatures reviewed"
+    }
+  ],
+  "page_count": 24,
+  "status": "PASS"
+}

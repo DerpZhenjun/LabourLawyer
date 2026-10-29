@@ -1,0 +1,7 @@
+# 浙江宁波两区官方空白文书填写验收
+
+Reference files: each district's own `originals/blank/application.docx` (SHA 0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f) and `evidence-list.docx` (SHA 4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c). Source jurisdiction and material action are verified separately even where bytes match. Both districts are un-published candidates.
+
+The originals control table widths, section sizes, font styles, static text and labels. Existing dedicated 23-row Zhejiang worker application profile and inspected Zhejiang evidence profile edit only word/document.xml. Preserve all other ZIP parts byte for byte. Do not auto-populate handwritten signature slots or assume copy count. Preserve static case-number labels and repeat evidence table headings across pages; do not split individual evidence rows. No new design styles or font shrinking.
+
+The fictional content is in qa/synthetic-payloads.json; no real case information is used. Four filled documents are separate outputs. The original documents remain unchanged. qa/package-checks.json records sections, margins, table shapes, source and output SHA and changed ZIP parts. Render all eight files read-only, then inspect every page. Standard packaged renderer failed because Windows has no LibreOffice; the established isolated Word/Poppler fallback is copied locally. It proves a distinct new Word PID and per-document window ownership; never attaches to or quits a preexisting Word instance.

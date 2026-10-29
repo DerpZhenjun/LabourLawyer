@@ -1,0 +1,22 @@
+{
+  "captured_at": "2026-10-29T08:41:09.801370+00:00",
+  "source_url": "https://search.zj.gov.cn/api-gateway/jpaas-jsearch-web-server/search?serviceId=YcTOd1ftgC5dxzJ8RhCBN&websiteid=330212000000&cateid=ShhDNU0SGB3DPrgh3GxyA&p=1&q=%E5%8A%B3%E5%8A%A8%E4%BA%BA%E4%BA%8B%E4%BA%89%E8%AE%AE%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7",
+  "files": {
+    "page.json": {
+      "sha256": "ec44877346dcd48c0dbac6eaf06dacec8ca9400be322d81f24f0f2ff639de769",
+      "bytes": 49775
+    },
+    "page.png": {
+      "sha256": "bba76c969f8c81cea7ff4c01a516d86535336abfbe7316e2021e29101e9495fa",
+      "bytes": 566737
+    },
+    "page.txt": {
+      "sha256": "d942b49395c64ac11e70d8852399eb1ad7a08b2eb594984c27c7caa50d2449dc",
+      "bytes": 3238
+    },
+    "snapshot.txt": {
+      "sha256": "01e275aaa9df5b2371e92b53b2dac99fd9de371c2efe34b868f93795bebba0d6",
+      "bytes": 5486
+    }
+  }
+}
