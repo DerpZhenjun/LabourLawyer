@@ -3,7 +3,9 @@ const path = require('node:path')
 const { spawnSync } = require('node:child_process')
 
 const root = path.resolve(__dirname, '..')
-const output = path.join(root, '.runtime/release-20261029/desktop')
+const version = require('./package.json').version
+if (!/^[0-9]+\.[0-9]+\.[0-9]+(?:-[a-zA-Z0-9.-]+)?$/.test(version)) throw new Error('Invalid release version')
+const output = path.join(root, '.runtime/releases', version, 'desktop')
 const notices = path.join(output, 'notices')
 fs.mkdirSync(notices, { recursive: true })
 const env = { ...process.env, ELECTRON_BUILDER_CACHE: path.join(output, 'cache/electron-builder'), ELECTRON_CACHE: path.join(output, 'cache/electron'), NPM_CONFIG_CACHE: path.join(root, '.runtime/launch-center/cache/npm'), TEMP: path.join(output, 'temp'), TMP: path.join(output, 'temp'), VITE_API_BASE_URL: '/', VITE_DIGITAL_LAWYER_URL: 'http://127.0.0.1:3000', CSC_IDENTITY_AUTO_DISCOVERY: 'false' }
@@ -42,5 +44,11 @@ if (audit.some(item => item.license === 'UNDECLARED' || item.notices.length === 
 fs.writeFileSync(path.join(notices, 'THIRD-PARTY-NOTICES.txt'), combined)
 fs.writeFileSync(path.join(output, 'license-audit.json'), JSON.stringify(audit, null, 2)+'\n')
 if (!process.argv.includes('--web-only')) {
-  run(path.join(__dirname, 'node_modules/electron-builder/cli.js'), ['--win', 'nsis', 'portable', '--x64', '--publish', 'never', '--config.electronDist='+path.join(__dirname, 'node_modules/electron/dist')], __dirname)
+  const config = structuredClone(require('./package.json').build)
+  config.directories.output = path.join(output, 'artifacts')
+  config.extraResources = [{ from: path.join(output, 'web'), to: 'web' }, { from: notices, to: 'notices' }]
+  config.nsis.license = path.join(notices, 'INSTALL-LICENSE.txt')
+  const configPath = path.join(output, 'builder-config.json')
+  fs.writeFileSync(configPath, JSON.stringify(config, null, 2)+'\n')
+  run(path.join(__dirname, 'node_modules/electron-builder/cli.js'), ['--win', 'nsis', 'portable', '--x64', '--publish', 'never', '--config='+configPath, '--config.electronDist='+path.join(__dirname, 'node_modules/electron/dist')], __dirname)
 }

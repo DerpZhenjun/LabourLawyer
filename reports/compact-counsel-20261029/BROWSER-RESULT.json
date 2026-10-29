@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-10-29T08:10:13.048Z",
+  "checks": [
+    {
+      "name": "Standalone digital counsel uses a customer-service card",
+      "passed": true
+    },
+    {
+      "name": "Compact chat retains the real remote conversation",
+      "passed": true
+    },
+    {
+      "name": "Compact card responsive 375",
+      "passed": true
+    },
+    {
+      "name": "Compact card responsive 768",
+      "passed": true
+    },
+    {
+      "name": "Compact card responsive 1440",
+      "passed": true
+    },
+    {
+      "name": "Floating widget leaves the document page available",
+      "passed": true
+    },
+    {
+      "name": "Collapse restores the same conversation iframe",
+      "passed": true
+    },
+    {
+      "name": "Floating widget stays small at 375",
+      "passed": true
+    },
+    {
+      "name": "Floating widget stays small at 768",
+      "passed": true
+    },
+    {
+      "name": "Floating widget stays small at 1440",
+      "passed": true
+    }
+  ]
+}

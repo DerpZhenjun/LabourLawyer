@@ -12,9 +12,9 @@
 
 ## 软件下载（预览版）
 
-[下载 Android 和 Windows 客户端：v1.1.0-preview.1](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.1.0-preview.1)
+[下载 Android 和 Windows 客户端：v1.1.0-preview.2](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.1.0-preview.2)
 
-Android APK为USB联调包；Windows提供安装版和便携版。安装包包含当前完整客户端界面，**后端和官方模板库仍需按本文启动**，AI连接Ubuntu Qwen3.8，不在Windows运行模型。它们不能单独离线生成文书，也不表示全国区县已经接入完成。下载后可用同页`SHA256SUMS.txt`核对文件；详细步骤和实际测试范围见[版本说明](docs/releases/v1.1.0-preview.1.md)。
+Android APK为USB联调包；Windows提供安装版和便携版。安装包包含当前完整客户端界面，**后端和官方模板库仍需按本文启动**，AI连接Ubuntu Qwen3.8，不在Windows运行模型。它们不能单独离线生成文书，也不表示全国区县已经接入完成。下载后可用同页`SHA256SUMS.txt`核对文件；详细步骤和实际测试范围见[版本说明](docs/releases/v1.1.0-preview.2.md)。
 
 ## 从填写到提交
 
@@ -53,11 +53,11 @@ Android APK为USB联调包；Windows提供安装版和便携版。安装包包�
 
 ## AI 法律顾问与法律数字人
 
-文字顾问与阿律数字人共用后端的流式问答，通过 SSH 连接 **Ubuntu Ollama / qwen3.8:27b**。Windows 只做连接转发，不启动本机模型；AI中断时仍可填写、生成文书。数字人提供独立的形象、对话和可选浏览器语音朗读入口。
+文字顾问与阿律数字人共用后端的流式问答，通过 SSH 连接 **Ubuntu Ollama / qwen3.8:27b**。Windows 只做连接转发，不启动本机模型；AI中断时仍可填写、生成文书。数字人以右下角客服小窗出现，只显示上半身，可收起后继续填写文书；展开保留对话，并支持可选的浏览器语音朗读。
 
 **2026-10-29 已完成真实网页问答验收**：文字顾问和数字人均通过现有项目后端连接 Ubuntu 的 `qwen3.8:27b`，完整返回测试回答。页面显示连接状态，支持重新检查；远程连接中断不会影响文书填写和生成。已验证 375 / 768 / 1440px 布局。连接、升级后重启和使用说明见 [Ubuntu 远程 AI](docs/remote-ai.md)。
 
-![法律数字人完成形象加载，连接 Ubuntu Qwen3.8 并返回真实测试回答](docs/images/digital-human.png)
+![客服式数字人小窗：上半身形象、Ubuntu Qwen3.8 真实测试回答](docs/images/digital-human.png)
 
 ![AI 法律顾问通过 Ubuntu Qwen3.8 返回真实测试回答](docs/images/ai-advisor.png)
 
