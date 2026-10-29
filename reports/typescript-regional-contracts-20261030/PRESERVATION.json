@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "unchanged_user_file_count": 6,
+  "guide_database_read_only_check": {
+    "regional_current": 202,
+    "regional_guides": 210,
+    "collection_outbox": 377
+  },
+  "preserved_discovery_jobs": 4294,
+  "public_region_snapshot_changed": false,
+  "official_templates_changed": false,
+  "windows_model_started": false,
+  "model_inference_performed": false,
+  "outbox_sync_claimed": false,
+  "notes": "No new locality publication; 202 guides and 185 generatable localities remain the coverage baseline."
+}

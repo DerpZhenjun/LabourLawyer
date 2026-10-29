@@ -99,7 +99,7 @@ Android APK为USB联调包；Windows提供安装版和便携版。安装包包�
 |---|---|
 | 网页 | Vue 3 + Vite；精确地区选择、当地填写、指南与管理页面 |
 | Android | Capacitor 复用网页前端；需构建和安装，可通过 USB 调试安装 |
-| 微信小程序 | 原生小程序工程；已有省级文书填写、下载和指南，区县能力与网页尚未完全对齐 |
+| 微信小程序 | 原生工程；新增按市、区县查询指南和契约驱动填写生成，保留历史省级入口；正式预览仍需微信开发账号和可访问后端 |
 | Windows 桌面 | 可选 Electron 工程；开发模式不等于已发布安装包 |
 
 <img src="docs/images/mobile-form.png" alt="手机窄屏文书填写，字段单列排列" width="320" />
@@ -156,6 +156,14 @@ npm run dev -- --host 127.0.0.1
 
 **生成文书不依赖大模型。** AI问答与数字人为可选模块，连接按 [远程 AI 配置](docs/remote-ai.md) 设置，不需要为了生成 Word 启动或下载模型。
 
+## TypeScript 与跨端字段
+
+地区 API、表单状态及江苏、浙江专用字段已开始迁移到严格 TypeScript。网页和小程序复用同一份运行时契约，字段从当地已核验模板适配器取得，并绑定地区、来源、版本和文书种类。切区立即清除旧结果，过期契约拒绝生成；旧省级入口保持兼容。
+
+![移动端区县证据清单](reports/typescript-regional-contracts-20261030/browser/form-375.jpg)
+
+这不是全站迁移完成，也没有增加全国覆盖数。开发、同步和测试命令见 [共享契约说明](docs/typescript-regional-contracts.md)，实测结果见 [本轮验收](reports/typescript-regional-contracts-20261030/TEST-REPORT.md)。
+
 ## 开发与验证
 
 ```bash
@@ -172,6 +180,7 @@ npm --prefix frontend run build
 ## 目录
 
 ```text
+packages/regional-contracts/  网页与小程序共用类型和运行时契约
 frontend/            群众网页、地区选择、文书与管理界面
 backend/             FastAPI、文书适配、精确地区库与来源核验
 templates/_docx/     按省份或具体地区保存的官方原始附件

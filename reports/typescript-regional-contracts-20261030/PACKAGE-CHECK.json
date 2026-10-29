@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "archive_commit": "c0b6d056",
+  "source": "git archive; extracted outside live source tree; no untracked project files copied",
+  "dependencies": "Read-only junction to installed frontend dependencies matching committed lockfile; not a fresh network install",
+  "cases": [
+    {
+      "command": "node scripts/build-regional-contracts.mjs --check",
+      "result": "PASS"
+    },
+    {
+      "command": "node scripts/test-regional-contracts.mjs",
+      "result": "12 PASS"
+    },
+    {
+      "command": "node scripts/test-regional-api.mjs",
+      "result": "PASS"
+    },
+    {
+      "command": "node scripts/test-regional-form-integration.mjs",
+      "result": "14 PASS"
+    },
+    {
+      "command": "node scripts/test-regional-document-routing.mjs",
+      "result": "11 PASS"
+    },
+    {
+      "command": "npm --prefix frontend run typecheck",
+      "result": "PASS"
+    },
+    {
+      "command": "python -m unittest backend.tests.test_regional_form_contracts -v",
+      "result": "21 PASS in 63.003s, including 364 real document combinations in isolated temporary store"
+    }
+  ],
+  "mini_archive_check": {
+    "status": "PASS",
+    "commit": "6ae984ff",
+    "method": "git archive of final miniprogram subtree over the tested c0b6d056 source archive; no untracked files copied",
+    "checks": [
+      "18 Page/transport cases",
+      "JS-only module loading",
+      "3 exact JSON/JS data comparisons",
+      "generated data synchronization",
+      "shared runtime --check"
+    ]
+  },
+  "real_user_data_used": false,
+  "model_inference": false
+}

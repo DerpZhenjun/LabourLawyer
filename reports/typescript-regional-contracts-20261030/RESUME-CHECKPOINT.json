@@ -1,0 +1,43 @@
+{
+  "phase": "implementation_and_verification_complete",
+  "baseline": {
+    "regional_current": 202,
+    "regional_guides": 210,
+    "collection_outbox": 377
+  },
+  "protected_user_files": [
+    "ModelFinetune/dataset/download.py",
+    "ModelFinetune/dataset/process_data.py",
+    "ModelFinetune/train/evaluate/evaluate_model.py",
+    "ModelFinetune/train/q.py",
+    "ModelFinetune/train/train.py",
+    "reports/nationwide-localization-20261028-next/RESUME-CHECKPOINT.json"
+  ],
+  "design": "server bound form metadata; shared typed runtime validation and request composition; JS compatibility shims; mini new regional page preserves province page",
+  "model_action": "No Windows model startup or inference",
+  "next": "On resume compare HEAD with origin/main. Push only if still ahead; otherwise this migration batch needs no further service, model or publication action. Region collection remains separate and unfinished.",
+  "completed": [
+    "source-bound contract API",
+    "185 localities /364 actual ASGI document combinations",
+    "strict TypeScript fields/state/API",
+    "8253 cross-runtime vectors",
+    "27 real Chrome UI documents",
+    "375/768/1440 responsive and safe district switch",
+    "WeChat JSON module root-cause fix; real simulator acceptance in progress"
+  ],
+  "commits": [
+    "f05d7a07",
+    "938026dd",
+    "c0b6d056",
+    "6ae984ff"
+  ],
+  "final_verification": {
+    "backend_tests": 712,
+    "backend_skipped": 2,
+    "native_web_documents": 27,
+    "real_wechat_simulator": "PASS two own-source localities and one unverified locality",
+    "archive_check": "PASS",
+    "coverage_unchanged": true,
+    "windows_model_started": false
+  }
+}

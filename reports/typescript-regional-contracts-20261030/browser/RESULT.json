@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "method": "Chrome DevTools MCP; real DOM controls, normal confirmation and live HTTP responses; no mocked server",
+  "site": "http://127.0.0.1:5173/",
+  "api": "http://127.0.0.1:8000/",
+  "actual_generated_downloads": 27,
+  "adapter_profiles": 23,
+  "adapter_families": 13,
+  "response_identity": [
+    "source_id",
+    "version",
+    "contract_id",
+    "document_origin"
+  ],
+  "binary_checks": [
+    "ZIP CRC",
+    "word/document.xml parse"
+  ],
+  "confirm_cancel_no_generation": true,
+  "actual_district_switch": {
+    "from": "相城区",
+    "to": "吴江区",
+    "changed_test_name_inherited": false,
+    "new_name": "陈虚构"
+  },
+  "guide_only_case": {
+    "district": "瑶海区",
+    "form": false,
+    "generation_buttons": 0,
+    "error_alerts": 0
+  },
+  "unverified_case": {
+    "district": "桐庐县",
+    "form": false,
+    "generation_buttons": 0,
+    "shown_as": "尚未核验"
+  },
+  "viewports": [
+    {
+      "width": 375,
+      "height": 900,
+      "horizontal_overflow": false,
+      "error_alerts": 0,
+      "screenshot": "form-375.jpg"
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "horizontal_overflow": false,
+      "error_alerts": 0,
+      "screenshot": "form-768.jpg"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "horizontal_overflow": false,
+      "error_alerts": 0,
+      "screenshot": "form-1440.jpg"
+    }
+  ],
+  "console_errors_or_warnings": 0,
+  "docx_visual_rerender": "NOT_RUN: existing document fillers unchanged; current byte/XML checks are distinct from prior visual adapter acceptance",
+  "model_inference": false,
+  "case_data_used": false
+}
