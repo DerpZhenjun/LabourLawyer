@@ -1,0 +1,15 @@
+{
+  "phase": "D4_own_sources_registered_not_adapted",
+  "new_candidates": 4,
+  "candidate_queue": 28,
+  "main_guides": 194,
+  "main_generatable_localities": 177,
+  "guides": [
+    "reports/nationwide-verification-20261029-d/jiangsu/gusu/guide.json",
+    "reports/nationwide-verification-20261029-d/jiangsu/wuzhong/guide.json",
+    "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/guide.json",
+    "reports/nationwide-verification-20261029-d/zhejiang/linan/guide.json"
+  ],
+  "next": "Adapt own sources; inspect and render each original and generated document before candidate browser acceptance. Unverified is not absent.",
+  "models_called": false
+}

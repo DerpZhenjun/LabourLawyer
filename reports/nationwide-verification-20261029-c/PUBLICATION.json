@@ -1,0 +1,77 @@
+{
+  "release_id": "oct29c-own-localities-v1",
+  "applied_at": "2026-10-29T11:35:30.706643+00:00",
+  "marker_url": "http://127.0.0.1:8000/api/regional-guides/release-capabilities",
+  "marker": {
+    "release_id": "oct29c-own-localities-v1",
+    "adapters": [
+      "hunan_own_legacy_worker_oct29c_v1",
+      "jiangsu_own_blank_oct29c_v1"
+    ],
+    "source_bound": true,
+    "models_required": false,
+    "regional_store": "main_default"
+  },
+  "inserted": 4,
+  "versions": [
+    {
+      "scope": [
+        "hunan",
+        "长沙市",
+        "雨花区"
+      ],
+      "source_id": "64a4b3a0d0bbb800bd3309fb",
+      "version": 199,
+      "content_hash": "9207295ad20a3d8667f2b5ae3ff3ab86eee51a76509d817fa56313576714cbdf"
+    },
+    {
+      "scope": [
+        "hunan",
+        "长沙市",
+        "望城区"
+      ],
+      "source_id": "e63cea876d59bcd7b306427f",
+      "version": 200,
+      "content_hash": "f109f8d8e9f885ed851455692ef8e6333548c97ffda617ddee913095831f8f75"
+    },
+    {
+      "scope": [
+        "jiangsu",
+        "常州市",
+        "新北区"
+      ],
+      "source_id": "0e3fbeb5a181d89ecffb084f",
+      "version": 201,
+      "content_hash": "3e9cfd24894499ed43e847bf16f641e8d23908a6af70fe5225edf53f89b84cce"
+    },
+    {
+      "scope": [
+        "jiangsu",
+        "常州市",
+        "武进区"
+      ],
+      "source_id": "965b43f4ca2cf8c898b082af",
+      "version": 202,
+      "content_hash": "936682861067118cd24ea48b56982a10039e1d5c335e5686817b4efdc81ea2e1"
+    }
+  ],
+  "guides_before": 190,
+  "guides_after": 194,
+  "generatable_localities_after": 177,
+  "history_rows_after": 202,
+  "discovery_jobs_before": 4294,
+  "discovery_jobs_after": 4294,
+  "directory_db_unchanged": true,
+  "after_consistent_sqlite_sha256": "d354fbdc9327e2394f592dda3101f109b7ff295b521b19510ec4d9c6793a8868",
+  "public_files_sha256": {
+    "data/public-regions/guides.json": "5f66e43600e04274354f0488508f4093ae48a777e92085486ee28f339e074162",
+    "data/public-regions/directory.json": "913daa7dd7bcbec570945fd7cc8ed08ae55b15c50665e5f8f4d967b62fc85ba8",
+    "data/public-regions/manifest.json": "099341af70fb6d5352c8efcdcd04cefbe490792493b472bbf0b0c9eedd88002d",
+    "config/regional_candidates.json": "ef4c423ae8a532b1e03b7d1073a6fd68cea9df7d5f9162c44a8cd2d09d63636f"
+  },
+  "prepared_receipt_sha256": "55faeb23d14519eb2fa9decab945fc9735dbf63fe7bf8dcdc367045a9e7d8cac",
+  "rollback_available": true,
+  "rollback_storage": "workspace .runtime, not publicly distributed",
+  "candidate_queue_immediately_after_apply": 24,
+  "candidate_queue_after_next_D4_registration": 28
+}

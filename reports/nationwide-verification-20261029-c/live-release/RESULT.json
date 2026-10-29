@@ -1,0 +1,278 @@
+{
+  "status": "PASS",
+  "main_release_acceptance": true,
+  "origin": "http://127.0.0.1:5173",
+  "api_origin": "http://127.0.0.1:8000",
+  "completed": 6,
+  "regions": {
+    "430111": {
+      "source_id": "64a4b3a0d0bbb800bd3309fb",
+      "version": 199
+    },
+    "430112": {
+      "source_id": "e63cea876d59bcd7b306427f",
+      "version": 200
+    },
+    "320411": {
+      "source_id": "0e3fbeb5a181d89ecffb084f",
+      "version": 201
+    },
+    "320412": {
+      "source_id": "965b43f4ca2cf8c898b082af",
+      "version": 202
+    }
+  },
+  "checks": [
+    {
+      "id": "main_native_six_pair_downloads",
+      "passed": true,
+      "evidence": "Six accepted native UI generation pairs at main8000/5173; HTTP200 and actual workspace DOCX ZIP/XML verified."
+    },
+    {
+      "id": "main_source_versions",
+      "passed": true,
+      "evidence": "Actual main POST source contexts match199/200/201/202 and response X-Guide-Source-Id."
+    },
+    {
+      "id": "hunan_request_200_chars",
+      "passed": true,
+      "evidence": "200-character fictional request sent by real native UI and fully retained in downloaded XML; not restricted to ordinary160."
+    },
+    {
+      "id": "hunan_scope_and_aliases",
+      "passed": true,
+      "evidence": "Both HN main forms show fictional worker examples, no unrepresented ID-number field, no independent local-evidence link; own site-reason alias visible."
+    },
+    {
+      "id": "four_region_switch",
+      "passed": true,
+      "evidence": "MCP native province/city/district controls selected all four own authorities and forms before guide."
+    },
+    {
+      "id": "cancel_escape_no_post",
+      "passed": true,
+      "evidence": "MCP Escape and Cancel closed native confirmation; /generate resource count remained0."
+    },
+    {
+      "id": "wrong_district_no_inheritance",
+      "passed": true,
+      "evidence": "Native Kaifu switch produced0forms and no generate button."
+    },
+    {
+      "id": "responsive_375_768_1440",
+      "passed": true,
+      "evidence": "Actual innerWidth375/768/1440 and scrollWidth375/753/1425; screenshots viewed and retained."
+    },
+    {
+      "id": "floating_fab_cta",
+      "passed": true,
+      "evidence": "375 CTA geometry: no intersection with fab and center ownership true; native focus screenshot retained."
+    },
+    {
+      "id": "no_console_models",
+      "passed": true,
+      "evidence": "MCP error/warn empty, own AgentBrowser errors empty;123 captured network records with zero model endpoints."
+    }
+  ],
+  "records": [
+    {
+      "region_code": "430111",
+      "kind": "application",
+      "template_id": "39736ae6dc2c4ef8b073a6100f353aae",
+      "source_context": {
+        "source_id": "64a4b3a0d0bbb800bd3309fb",
+        "version": 199
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "64a4b3a0d0bbb800bd3309fb",
+      "x_document_origin": "official-blank-converted-filled",
+      "file": "reports/nationwide-verification-20261029-c/live-release/downloads/430111-application.docx",
+      "sha256": "ac94e4287b2f18ad56b96ef8a7f3b0e64ab1f7ab5597aaf387fea89f6eceec38",
+      "bytes": 16742,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_visual_qa": "NOT_RUN",
+      "candidate_template_qa_reference": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json",
+      "prior_candidate_visual_qa": {
+        "file": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json",
+        "template_id": "39736ae6dc2c4ef8b073a6100f353aae",
+        "source_id": "64a4b3a0d0bbb800bd3309fb",
+        "pages": 2,
+        "scope": "same bound source template only; these main downloaded files were not rendered"
+      }
+    },
+    {
+      "region_code": "430112",
+      "kind": "application",
+      "template_id": "0cdf79b0473b42d68bee049ce19c77c3",
+      "source_context": {
+        "source_id": "e63cea876d59bcd7b306427f",
+        "version": 200
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "e63cea876d59bcd7b306427f",
+      "x_document_origin": "official-blank-converted-filled",
+      "file": "reports/nationwide-verification-20261029-c/live-release/downloads/430112-application.docx",
+      "sha256": "43d5ba21ea3202e3488244681ab7c5c137000b475e05bd449e9d3846e38cfe30",
+      "bytes": 16726,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_visual_qa": "NOT_RUN",
+      "candidate_template_qa_reference": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json",
+      "prior_candidate_visual_qa": {
+        "file": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json",
+        "template_id": "0cdf79b0473b42d68bee049ce19c77c3",
+        "source_id": "e63cea876d59bcd7b306427f",
+        "pages": 2,
+        "scope": "same bound source template only; these main downloaded files were not rendered"
+      }
+    },
+    {
+      "region_code": "320411",
+      "kind": "application",
+      "template_id": "cc5fca68-4669-4fc7-8ff9-0d6668d53b68",
+      "source_context": {
+        "source_id": "0e3fbeb5a181d89ecffb084f",
+        "version": 201
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "0e3fbeb5a181d89ecffb084f",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-c/live-release/downloads/320411-application.docx",
+      "sha256": "a2864bf759557a80c733eb85d7d2393156e7dd83f61452aa372b78e3c57f6e06",
+      "bytes": 12774,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_visual_qa": "NOT_RUN",
+      "candidate_template_qa_reference": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json",
+      "prior_candidate_visual_qa": {
+        "file": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json",
+        "template_id": "cc5fca68-4669-4fc7-8ff9-0d6668d53b68",
+        "source_id": "0e3fbeb5a181d89ecffb084f",
+        "pages": 2,
+        "scope": "same bound source template only; these main downloaded files were not rendered"
+      }
+    },
+    {
+      "region_code": "320411",
+      "kind": "evidence",
+      "template_id": "3f808a2a-7467-4df6-82ba-da6a18a9f73b",
+      "source_context": {
+        "source_id": "0e3fbeb5a181d89ecffb084f",
+        "version": 201
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "0e3fbeb5a181d89ecffb084f",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-c/live-release/downloads/320411-evidence.docx",
+      "sha256": "5905c231538ab24c481b3dcee3fd07bcad667aa30c30bb5a9079a032f83613f6",
+      "bytes": 11588,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_visual_qa": "NOT_RUN",
+      "candidate_template_qa_reference": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json",
+      "prior_candidate_visual_qa": {
+        "file": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json",
+        "template_id": "3f808a2a-7467-4df6-82ba-da6a18a9f73b",
+        "source_id": "0e3fbeb5a181d89ecffb084f",
+        "pages": 1,
+        "scope": "same bound source template only; these main downloaded files were not rendered"
+      }
+    },
+    {
+      "region_code": "320412",
+      "kind": "evidence",
+      "template_id": "d52d17ae-f35a-44b2-af42-41745a39e798",
+      "source_context": {
+        "source_id": "965b43f4ca2cf8c898b082af",
+        "version": 202
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "965b43f4ca2cf8c898b082af",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-c/live-release/downloads/320412-evidence.docx",
+      "sha256": "9ca985b6a41d261d1c9db6a618a9d6025d78035ac7db2aef8270fb17e7b1bde5",
+      "bytes": 11587,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_visual_qa": "NOT_RUN",
+      "candidate_template_qa_reference": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json",
+      "prior_candidate_visual_qa": {
+        "file": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json",
+        "template_id": "d52d17ae-f35a-44b2-af42-41745a39e798",
+        "source_id": "965b43f4ca2cf8c898b082af",
+        "pages": 1,
+        "scope": "same bound source template only; these main downloaded files were not rendered"
+      }
+    },
+    {
+      "region_code": "320412",
+      "kind": "application",
+      "template_id": "5c41b459-d5f1-413b-af51-a502312d10e3",
+      "source_context": {
+        "source_id": "965b43f4ca2cf8c898b082af",
+        "version": 202
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "965b43f4ca2cf8c898b082af",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-c/live-release/downloads/320412-application.docx",
+      "sha256": "2349cf674d285229f2141969573200e76152a56022fb1431a3f964994c477f95",
+      "bytes": 12774,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_visual_qa": "NOT_RUN",
+      "candidate_template_qa_reference": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json",
+      "prior_candidate_visual_qa": {
+        "file": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json",
+        "template_id": "5c41b459-d5f1-413b-af51-a502312d10e3",
+        "source_id": "965b43f4ca2cf8c898b082af",
+        "pages": 2,
+        "scope": "same bound source template only; these main downloaded files were not rendered"
+      }
+    }
+  ],
+  "long_hunan_request": {
+    "characters": 200,
+    "http_status": 200,
+    "full_text_in_actual_download_xml": true
+  },
+  "observed_native_post_count": 7,
+  "accepted_pair_count": 6,
+  "recovery": "One early Xinbei default-fiction generation followed city/district change before fields were available; retained privately, then fresh stable snapshot and explicit field fills generated the accepted main file. No HTTP replay.",
+  "screenshots": [
+    {
+      "file": "reports/nationwide-verification-20261029-c/live-release/hn-375-cta.png",
+      "sha256": "4041c5611c0fb1484c176f893d7cb188d045856a5970ef3ce51cbc83f08a88ae",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/live-release/hn-768.png",
+      "sha256": "31290590d4ff9581c97a73a869cb63a8a39609ea88d8e9c4304fa295bf416a96",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/live-release/js-1440.png",
+      "sha256": "d192cff9cd2bb4215e0e81966317b52b85d8602e1a7f77d91a874c53a0035590",
+      "visual_status": "PASS"
+    }
+  ],
+  "main_document_rendering": "NOT_RUN; prior candidate10pages linked by exact template_id/source_id only",
+  "word_started": false,
+  "model_calls": 0,
+  "private_case_data_accessed": false,
+  "service_or_db_changes": false,
+  "git_operations": false
+}

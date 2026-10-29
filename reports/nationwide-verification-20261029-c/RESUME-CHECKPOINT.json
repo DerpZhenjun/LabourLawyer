@@ -1,8 +1,8 @@
 {
   "updated_at": "2026-10-29T19:29:03.334491+08:00",
-  "phase": "candidate_C4_verified_prepared_main_restart_required",
-  "published_guides": 190,
-  "published_generatable_localities": 173,
+  "phase": "C4_main_published_and_verified_D4_own_sources_under_adaptation",
+  "published_guides": 194,
+  "published_generatable_localities": 177,
   "unpublished_candidates": 28,
   "candidate_guides": 194,
   "candidate_generatable_localities": 177,
@@ -14,13 +14,13 @@
   ],
   "candidate_native_documents": 6,
   "candidate_visual_pages": 10,
-  "main_generation_granted_for_C4": false,
+  "main_generation_granted_for_C4": true,
   "main_release_marker_required": "oct29c-own-localities-v1",
   "prepared_directory": ".runtime/reviewed-oct29c-release-final",
   "official_absence_claims": 0,
   "models_called": false,
   "windows_ollama_started": false,
-  "next": "User manually restarts existing main backend; verify fixed main8000 new marker, apply exact prepared C4 delta, browser-verify main, register D own-source-only candidates.",
+  "next": "C4 already published194/177 and main real six-download acceptance PASS. Commit/push final C release snapshot. Continue D own-source adapters with tests/Word QA before candidate/main grant. Main restart is complete; do not ask again.",
   "backend_full": {
     "tests": 591,
     "seconds": 328.304,
@@ -36,5 +36,15 @@
     "modules": 170,
     "seconds": 3.31,
     "status": "PASS"
-  }
+  },
+  "main_versions": {
+    "64a4b3a0d0bbb800bd3309fb": 199,
+    "e63cea876d59bcd7b306427f": 200,
+    "0e3fbeb5a181d89ecffb084f": 201,
+    "965b43f4ca2cf8c898b082af": 202
+  },
+  "history_rows": 202,
+  "discovery_jobs": 4294,
+  "main_native_documents": 6,
+  "main_browser_status": "PASS"
 }

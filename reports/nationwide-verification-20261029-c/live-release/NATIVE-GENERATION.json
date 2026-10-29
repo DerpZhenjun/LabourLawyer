@@ -1,0 +1,156 @@
+{
+  "records": [
+    {
+      "region_code": "430111",
+      "kind": "application",
+      "template_id": "39736ae6dc2c4ef8b073a6100f353aae",
+      "source_context": {
+        "source_id": "64a4b3a0d0bbb800bd3309fb",
+        "version": 199
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "64a4b3a0d0bbb800bd3309fb",
+      "x_document_origin": "official-blank-converted-filled",
+      "file": "reports/nationwide-verification-20261029-c/live-release/downloads/430111-application.docx",
+      "sha256": "ac94e4287b2f18ad56b96ef8a7f3b0e64ab1f7ab5597aaf387fea89f6eceec38",
+      "bytes": 16742,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_visual_qa": "NOT_RUN",
+      "candidate_template_qa_reference": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json"
+    },
+    {
+      "region_code": "430112",
+      "kind": "application",
+      "template_id": "0cdf79b0473b42d68bee049ce19c77c3",
+      "source_context": {
+        "source_id": "e63cea876d59bcd7b306427f",
+        "version": 200
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "e63cea876d59bcd7b306427f",
+      "x_document_origin": "official-blank-converted-filled",
+      "file": "reports/nationwide-verification-20261029-c/live-release/downloads/430112-application.docx",
+      "sha256": "43d5ba21ea3202e3488244681ab7c5c137000b475e05bd449e9d3846e38cfe30",
+      "bytes": 16726,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_visual_qa": "NOT_RUN",
+      "candidate_template_qa_reference": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json"
+    },
+    {
+      "region_code": "320411",
+      "kind": "application",
+      "template_id": "cc5fca68-4669-4fc7-8ff9-0d6668d53b68",
+      "source_context": {
+        "source_id": "0e3fbeb5a181d89ecffb084f",
+        "version": 201
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "0e3fbeb5a181d89ecffb084f",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-c/live-release/downloads/320411-application.docx",
+      "sha256": "a2864bf759557a80c733eb85d7d2393156e7dd83f61452aa372b78e3c57f6e06",
+      "bytes": 12774,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_visual_qa": "NOT_RUN",
+      "candidate_template_qa_reference": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json"
+    },
+    {
+      "region_code": "320411",
+      "kind": "evidence",
+      "template_id": "3f808a2a-7467-4df6-82ba-da6a18a9f73b",
+      "source_context": {
+        "source_id": "0e3fbeb5a181d89ecffb084f",
+        "version": 201
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "0e3fbeb5a181d89ecffb084f",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-c/live-release/downloads/320411-evidence.docx",
+      "sha256": "5905c231538ab24c481b3dcee3fd07bcad667aa30c30bb5a9079a032f83613f6",
+      "bytes": 11588,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_visual_qa": "NOT_RUN",
+      "candidate_template_qa_reference": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json"
+    },
+    {
+      "region_code": "320412",
+      "kind": "evidence",
+      "template_id": "d52d17ae-f35a-44b2-af42-41745a39e798",
+      "source_context": {
+        "source_id": "965b43f4ca2cf8c898b082af",
+        "version": 202
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "965b43f4ca2cf8c898b082af",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-c/live-release/downloads/320412-evidence.docx",
+      "sha256": "9ca985b6a41d261d1c9db6a618a9d6025d78035ac7db2aef8270fb17e7b1bde5",
+      "bytes": 11587,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_visual_qa": "NOT_RUN",
+      "candidate_template_qa_reference": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json"
+    },
+    {
+      "region_code": "320412",
+      "kind": "application",
+      "template_id": "5c41b459-d5f1-413b-af51-a502312d10e3",
+      "source_context": {
+        "source_id": "965b43f4ca2cf8c898b082af",
+        "version": 202
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "965b43f4ca2cf8c898b082af",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-c/live-release/downloads/320412-application.docx",
+      "sha256": "2349cf674d285229f2141969573200e76152a56022fb1431a3f964994c477f95",
+      "bytes": 12774,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_visual_qa": "NOT_RUN",
+      "candidate_template_qa_reference": "reports/nationwide-verification-20261029-c/acceptance/DOCUMENT-RESULT.json"
+    }
+  ],
+  "regions": {
+    "430111": {
+      "source_id": "64a4b3a0d0bbb800bd3309fb",
+      "version": 199
+    },
+    "430112": {
+      "source_id": "e63cea876d59bcd7b306427f",
+      "version": 200
+    },
+    "320411": {
+      "source_id": "0e3fbeb5a181d89ecffb084f",
+      "version": 201
+    },
+    "320412": {
+      "source_id": "965b43f4ca2cf8c898b082af",
+      "version": 202
+    }
+  },
+  "observed_native_post_count": 7,
+  "accepted_pair_count": 6,
+  "long_hunan_request": {
+    "characters": 200,
+    "http_status": 200,
+    "full_text_in_actual_download_xml": true
+  },
+  "recovery": "One early Xinbei default-fiction generation followed city/district change before fields were available; retained privately, then fresh stable snapshot and explicit field fills generated the accepted main file. No HTTP replay."
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "commit": "e5e25fb9218f49acf358de9de3f1e92787f44a75",
+  "method": "git archive HEAD extracted to independent workspace; own-source providers and public-generation test imported from archive only",
+  "tests": 12,
+  "models_called": false
+}

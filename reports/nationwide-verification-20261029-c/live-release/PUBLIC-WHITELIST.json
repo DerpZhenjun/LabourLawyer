@@ -1,0 +1,49 @@
+{
+  "scope": "Main C4 release acceptance; synthetic native DOCX, returned screenshot pixels and source-only proof. No raw payload, machine paths, tokens, sessions or actual process identifiers.",
+  "files": {
+    "reports/nationwide-verification-20261029-c/live-release/downloads/320411-application.docx": {
+      "sha256": "a2864bf759557a80c733eb85d7d2393156e7dd83f61452aa372b78e3c57f6e06",
+      "bytes": 12774
+    },
+    "reports/nationwide-verification-20261029-c/live-release/downloads/320411-evidence.docx": {
+      "sha256": "5905c231538ab24c481b3dcee3fd07bcad667aa30c30bb5a9079a032f83613f6",
+      "bytes": 11588
+    },
+    "reports/nationwide-verification-20261029-c/live-release/downloads/320412-application.docx": {
+      "sha256": "2349cf674d285229f2141969573200e76152a56022fb1431a3f964994c477f95",
+      "bytes": 12774
+    },
+    "reports/nationwide-verification-20261029-c/live-release/downloads/320412-evidence.docx": {
+      "sha256": "9ca985b6a41d261d1c9db6a618a9d6025d78035ac7db2aef8270fb17e7b1bde5",
+      "bytes": 11587
+    },
+    "reports/nationwide-verification-20261029-c/live-release/downloads/430111-application.docx": {
+      "sha256": "ac94e4287b2f18ad56b96ef8a7f3b0e64ab1f7ab5597aaf387fea89f6eceec38",
+      "bytes": 16742
+    },
+    "reports/nationwide-verification-20261029-c/live-release/downloads/430112-application.docx": {
+      "sha256": "43d5ba21ea3202e3488244681ab7c5c137000b475e05bd449e9d3846e38cfe30",
+      "bytes": 16726
+    },
+    "reports/nationwide-verification-20261029-c/live-release/hn-375-cta.png": {
+      "sha256": "4041c5611c0fb1484c176f893d7cb188d045856a5970ef3ce51cbc83f08a88ae",
+      "bytes": 63289
+    },
+    "reports/nationwide-verification-20261029-c/live-release/hn-768.png": {
+      "sha256": "31290590d4ff9581c97a73a869cb63a8a39609ea88d8e9c4304fa295bf416a96",
+      "bytes": 101743
+    },
+    "reports/nationwide-verification-20261029-c/live-release/js-1440.png": {
+      "sha256": "d192cff9cd2bb4215e0e81966317b52b85d8602e1a7f77d91a874c53a0035590",
+      "bytes": 123695
+    },
+    "reports/nationwide-verification-20261029-c/live-release/NATIVE-GENERATION.json": {
+      "sha256": "26f86dbcf48a442acd253c018918306c230a544f50a71f97e5b3b7cdf88f8030",
+      "bytes": 6294
+    },
+    "reports/nationwide-verification-20261029-c/live-release/RESULT.json": {
+      "sha256": "1620b101a57f412c3620703a9303dbe01eff76b031b55a454db303742a0b0813",
+      "bytes": 11662
+    }
+  }
+}
