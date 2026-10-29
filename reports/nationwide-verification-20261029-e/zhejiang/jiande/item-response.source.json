@@ -1,0 +1,14 @@
+{
+  "method": "POST",
+  "url": "https://www.zjzwfw.gov.cn/jpaas-zjservice-server/open-api/item/getItemDetail",
+  "postData": "localInnerCode=ed48d6e4-e7ee-433d-97aa-b1352d1fb341",
+  "status": 200,
+  "captured_at": "2026-10-29T12:21:49.361269+00:00",
+  "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ed48d6e4-e7ee-433d-97aa-b1352d1fb341",
+  "region_code": "330182",
+  "sha256": "cc2f3e47984d8da091cb29ddfbd64d7bfc6fcaed6236c0762c41c311d5ac2387",
+  "bytes": 29540,
+  "original_response_sha256": "cc2f3e47984d8da091cb29ddfbd64d7bfc6fcaed6236c0762c41c311d5ac2387",
+  "sanitized_authentication_url_fields": [],
+  "retrieval_note": "Own browser-observed public response body preserved as UTF-8; no second request."
+}

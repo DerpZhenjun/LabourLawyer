@@ -1,0 +1,143 @@
+{
+  "version": "oct29e-zhejiang-own-source-v1",
+  "scope": "exact-own-source-files",
+  "region_code": "330182",
+  "manifest_sha256": "20f7c2e7b8efa5058c39439f1079e309da2c3922aded10275a4514bf553a542c",
+  "files": [
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/basic-dom.json",
+      "bytes": 9672,
+      "sha256": "a2ae09c318e657e70f9febb152ae8e15c6a7d49d8cb6a1a64d17fc1e87d625b6"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/conditions-dom.json",
+      "bytes": 9598,
+      "sha256": "abb7c7a06dc25feb07c4e6b8b0f471b54575cfb3cbc87f31921243596703e0c9"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/faq-dom.json",
+      "bytes": 11606,
+      "sha256": "cc3aad9d33957b1d69454499ac706d4ab114488e1a61d38640566cf1e414b8ff"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/faq.png",
+      "bytes": 871044,
+      "sha256": "9260e39282e4968a61386e0f5db9e126316324a96281147d75921a2dd88478da"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/flow-dom.json",
+      "bytes": 9598,
+      "sha256": "4eeaf31fd91075ad7abab640bf9baaefc5cc091775132910d3819d68b09dfca8"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/guide-dom.json",
+      "bytes": 9598,
+      "sha256": "787bff7229e2276b8a0025233bfc40e37576212ec56cf7dae4e1448cb6a604e9"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/guide.json",
+      "bytes": 65183,
+      "sha256": "049beddb44c5b1ddc382c0d6dc9e0c8eb18b9b922156851b68a19612f2be3a64"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/guide.png",
+      "bytes": 567698,
+      "sha256": "e4fb6015df38fd3d56bf8c9b838b8637ca970bbe4132e0d24a03c3f56396613e"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/item-response.json",
+      "bytes": 29540,
+      "sha256": "cc2f3e47984d8da091cb29ddfbd64d7bfc6fcaed6236c0762c41c311d5ac2387"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/item-response.source.json",
+      "bytes": 759,
+      "sha256": "3b7fefaf600da9b15172ec7108ade41884188a95859a4132d737f10bb1f95ffa"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/law-dom.json",
+      "bytes": 10888,
+      "sha256": "350b5c3a0643e93c2b7f9211a3f698c350cdc55e88e2dc9111f34e5746abb3ca"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/law.png",
+      "bytes": 639987,
+      "sha256": "b26f210e6c73cc0be8c6e29fbbe4b356b55d1c499e9369e4338c239efd44a9e7"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/materials-dom.json",
+      "bytes": 9598,
+      "sha256": "48305ef4511e2dd2081553bf80f369a903ad1f63a364bb60d25b8bb95f204b5d"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/online-boundary.json",
+      "bytes": 283,
+      "sha256": "11025dada0cfaa6298109cae42719e010dca60840eaca4e47726b320af29bb4e"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/online-boundary.png",
+      "bytes": 159589,
+      "sha256": "9c46bdd48ca2b56d39b7116f606836a8ab2cd169d0d6148a4d1a2beea5d08866"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/originals/blank/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+      "bytes": 33949,
+      "sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/originals/blank/21B24C52D2AC3EB007AA7F55CE0AAD79.docx.source.json",
+      "bytes": 1493,
+      "sha256": "b4ac1dc0f6993a28191b417ec85f081447a216f3b4b8232c9146d0e14be5d130"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/originals/blank/872DFF90A8578907CB947197A784AA48.docx",
+      "bytes": 18837,
+      "sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/originals/blank/872DFF90A8578907CB947197A784AA48.docx.source.json",
+      "bytes": 1471,
+      "sha256": "ccc16b990df70bf5d5b32abd5731938c64a8c6c24990a593eee1ed6516b1c83e"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/originals.json",
+      "bytes": 4631,
+      "sha256": "8196d673de11434046c1f5ea7e8e1bb16eb5d70a07b8f4aa6b772246a141abd7"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/search.json",
+      "bytes": 24107,
+      "sha256": "6516d9699723088bdee6c6a4421617be4304fdeb2f35c9e73d4276a5ed8149ac"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/search.png",
+      "bytes": 331832,
+      "sha256": "7a87f6b63fb2d207ba847b6127f1a57370690ebcb86ce46c3c33bb07b8461acc"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/SOURCE-CHECKS.json",
+      "bytes": 1889,
+      "sha256": "504acffbb7479bc74a9170d64456373f034ab0213a93d42053601637fac04814"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/SOURCE-MANIFEST.json",
+      "bytes": 5990,
+      "sha256": "20f7c2e7b8efa5058c39439f1079e309da2c3922aded10275a4514bf553a542c"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/SOURCE-REPORT.md",
+      "bytes": 2342,
+      "sha256": "6cc46bd3a4a831f7dbf1e30be981a4f2dfba6e3bbd2a64c037acb0b2b9638bec"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/jiande/window-dom.json",
+      "bytes": 9596,
+      "sha256": "f3dc15b350396889c6d227e8d628a4ad92ed43cbbd001abe24f2d3df26c5ee67"
+    }
+  ],
+  "exclusions": [
+    "Sample bytes and any personal information",
+    "Authentication queries and complete private logs",
+    "Document generation or publication claims"
+  ]
+}

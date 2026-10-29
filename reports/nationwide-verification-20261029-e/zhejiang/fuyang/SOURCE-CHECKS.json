@@ -1,0 +1,57 @@
+{
+  "checked_at": "2026-10-29T12:24:51.116458+00:00",
+  "scope": "source-only",
+  "result": {
+    "region_code": "330111",
+    "district": "富阳区",
+    "status": "PASS",
+    "raw_business_field_count": 252,
+    "material_count": 4,
+    "public_blank_count": 2,
+    "sample_distribution": false,
+    "online_boundary": "login_and_captcha_only",
+    "generation_and_page_publication": "NOT_RUN"
+  },
+  "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=31ce6363-7379-40c0-8454-f0715785e193",
+  "source_identity_check": "own selected regional search -> own guide -> own public response -> own material IDs -> own annex URLs -> independently downloaded original SHA256",
+  "screenshot_review": {
+    "count": 5,
+    "files": [
+      "search.png",
+      "guide.png",
+      "law.png",
+      "faq.png",
+      "online-boundary.png"
+    ],
+    "status": "VIEWED",
+    "limits": "Official law modal has internal scrolling; screenshot records the visible modal area, while captured DOM and own full raw laws retain the complete text. This is source visual confirmation, not document layout QA."
+  },
+  "raw_fields": {
+    "count": 252,
+    "preserved": true,
+    "source_file": "item-response.json"
+  },
+  "date_field": {
+    "raw_value": "",
+    "status": "empty_in_checked_source_not_inferred"
+  },
+  "material_detail_fields": {
+    "instructions": "empty values preserved",
+    "acceptCriteria": "empty values preserved",
+    "requestMaterialBasis": "empty values preserved",
+    "interpretation": "Empty fields do not mean no official requirement."
+  },
+  "online": {
+    "login_and_captcha_visible": true,
+    "authenticated": false,
+    "submitted": false,
+    "query_saved": false
+  },
+  "unperformed": [
+    "Word rendering",
+    "form filling adaptation",
+    "provider registration",
+    "candidate application webpage acceptance",
+    "publication"
+  ]
+}

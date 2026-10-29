@@ -1,0 +1,143 @@
+{
+  "version": "oct29e-zhejiang-own-source-v1",
+  "scope": "source-only",
+  "region_code": "330111",
+  "city": "杭州市",
+  "district": "富阳区",
+  "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=31ce6363-7379-40c0-8454-f0715785e193",
+  "localInnerCode": "31ce6363-7379-40c0-8454-f0715785e193",
+  "service_code": "11330183002506152E4002014302002",
+  "source_id": "16f67bbbcf7b124948381309",
+  "raw_business_field_count": 252,
+  "public_blank_count": 2,
+  "sample_bytes_public": false,
+  "published": false,
+  "can_generate": false,
+  "files": [
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/basic-dom.json",
+      "bytes": 8792,
+      "sha256": "ad537517d36f575864b1aa74e2940f7e2dcec02c536fe4dec47e29efa0ab3538"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/conditions-dom.json",
+      "bytes": 10747,
+      "sha256": "d09e2a021461706437aa1f6b6c2118342e1cf85ed05d2b14bd133914d37bd736"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/faq-dom.json",
+      "bytes": 10747,
+      "sha256": "58fac60d652a8b030b875aebcabcfad07bc72e834721ce2e1067df462ddd012d"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/faq.png",
+      "bytes": 856953,
+      "sha256": "5d8126b26443506170569755e841b5a0a7474f70ff6b947cc942ff24ed2754ef"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/flow-dom.json",
+      "bytes": 10747,
+      "sha256": "5ba4257e3cff72b4aa56e3b95380d1712f4fc535608d34f380558b8e1fde42b4"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/guide-dom.json",
+      "bytes": 8686,
+      "sha256": "91e988f3a4da2395b1ff32fe0c1771a6a34532c811039f76f621ae1c85b9e8f5"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/guide.json",
+      "bytes": 60909,
+      "sha256": "601f40703713f2074008e99ce35d0fd2e5247ad333758722d8516e6c26e1922b"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/guide.png",
+      "bytes": 543951,
+      "sha256": "66c26f83010998d65bd094fe3756398630cba5effcb3d0f35b5a3c72fac17c45"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/item-response.json",
+      "bytes": 28570,
+      "sha256": "48cfed18d1e14762a89761c84c7fbc8e5a08716147db3ca2b75f58d2055cca16"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/item-response.source.json",
+      "bytes": 882,
+      "sha256": "5aeb5711ded3faf8286b59bc55f26d81379121da722a0dc8a5246f4eb900af1d"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/law-dom.json",
+      "bytes": 10008,
+      "sha256": "d1396311a37cf84a796618b9602d243ad8a34917e80409a3bde429c58c6b0b2f"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/law.png",
+      "bytes": 141671,
+      "sha256": "485234a14cd56c09ae71d8959fb98a87b90f5fa4d3aee2e967fe42d7e467e08e"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/materials-dom.json",
+      "bytes": 10747,
+      "sha256": "f703f8d86efed760fa6a2c957c2062441b06be7ced78aa03924e362b871c2e92"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/online-boundary.json",
+      "bytes": 284,
+      "sha256": "151154304ae412fffad89f6f3356f816938aa603caf394f437af9e46325085ad"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/online-boundary.png",
+      "bytes": 103705,
+      "sha256": "775ba0c375c7445e8af2848efec208f94c83d7a32e0f80a2a66a7d5c5214d21b"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/originals/blank/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+      "bytes": 33949,
+      "sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/originals/blank/21B24C52D2AC3EB007AA7F55CE0AAD79.docx.source.json",
+      "bytes": 1493,
+      "sha256": "44d7d6bc3b053e6a3654cc3682f421cdf8b79422932f65a871757e9cff3db2cd"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/originals/blank/872DFF90A8578907CB947197A784AA48.docx",
+      "bytes": 18837,
+      "sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/originals/blank/872DFF90A8578907CB947197A784AA48.docx.source.json",
+      "bytes": 1471,
+      "sha256": "198a9313ecfdb24b77b63e91d4435bd59aa6212925231f96bec9c0090f536487"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/originals.json",
+      "bytes": 3073,
+      "sha256": "3ee0972e8f2110546032590a04720b64dd47aeddd2d94e182f7d841c260fe73d"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/search.json",
+      "bytes": 24107,
+      "sha256": "62f1edb62437ecaa4789b4bcb4ccd100743db8e1f6d48dffa3239b509a92608d"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/search.png",
+      "bytes": 331364,
+      "sha256": "ddf92b3df5d061d2463965f3585a22dce6b74b23072a2cd3bdc54a8b205b346f"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/SOURCE-CHECKS.json",
+      "bytes": 1889,
+      "sha256": "1ae19c0f3cab484fce0924010c10663c0fcd95158279c5e23f2719bdbfb47e95"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/SOURCE-REPORT.md",
+      "bytes": 2559,
+      "sha256": "41544e278de6046222cf12d5fcd1cbf46be07b651568c74fa915b0887493ff70"
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/window-dom.json",
+      "bytes": 8685,
+      "sha256": "e9adabe86b94bfc05bdd3dbee8ba4361e8883011bc9dd06764f76f3af10e059e"
+    }
+  ]
+}
