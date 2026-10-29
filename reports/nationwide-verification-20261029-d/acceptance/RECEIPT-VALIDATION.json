@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "verifier": "reviewed_oct29d_release.verify_receipts",
+  "canonical_loader": "candidate_review.load_d_guides(root)",
+  "source_versions": "actual native browser POST candidate contexts, matched canonical source IDs",
+  "verified_receipt_document_page_files": 22,
+  "documents": 7,
+  "pages": 13,
+  "database_opened": false,
+  "prepare_or_apply_executed": false
+}

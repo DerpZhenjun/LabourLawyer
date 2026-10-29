@@ -1,0 +1,26 @@
+test_verify17_requires_exact_capability_count_and_both_database_hashes (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_verify17_requires_exact_capability_count_and_both_database_hashes) ... FAIL
+test_append_failure_restores_verifiable_database_hash (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_append_failure_restores_verifiable_database_hash) ... ERROR
+
+======================================================================
+ERROR: test_append_failure_restores_verifiable_database_hash (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_append_failure_restores_verifiable_database_hash)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 276, in test_append_failure_restores_verifiable_database_hash
+    self.assertEqual(candidate.verify(self.root,self.candidate),json.loads(original))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 108, in verify
+    raise ValueError('Candidate store differs from prepared data; do not replace it automatically')
+ValueError: Candidate store differs from prepared data; do not replace it automatically
+
+======================================================================
+FAIL: test_verify17_requires_exact_capability_count_and_both_database_hashes (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_verify17_requires_exact_capability_count_and_both_database_hashes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 269, in test_verify17_requires_exact_capability_count_and_both_database_hashes
+    with self.assertRaises(ValueError,msg=key):candidate.verify(self.root,self.candidate)
+AssertionError: ValueError not raised : generatable_localities
+
+----------------------------------------------------------------------
+Ran 2 tests in 4.387s
+
+FAILED (failures=1, errors=1)

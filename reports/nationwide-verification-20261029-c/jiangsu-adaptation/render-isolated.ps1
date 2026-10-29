@@ -1,5 +1,13 @@
 param([Parameter(Mandatory=$true)][string]$Manifest)
 $ErrorActionPreference='Stop'
+$projectRoot=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..\..'))
+function Resolve-PublicTaskPath([string]$relative) {
+    if ([IO.Path]::IsPathRooted($relative)) { throw 'Render task paths must be repository relative.' }
+    $resolved=[IO.Path]::GetFullPath((Join-Path $projectRoot $relative))
+    $prefix=$projectRoot.TrimEnd([IO.Path]::DirectorySeparatorChar)+[IO.Path]::DirectorySeparatorChar
+    if (-not $resolved.StartsWith($prefix,[StringComparison]::OrdinalIgnoreCase)) { throw 'Render task path escapes repository root.' }
+    return $resolved
+}
 Add-Type @'
 using System;
 using System.Runtime.InteropServices;
@@ -50,7 +58,7 @@ try {
     foreach ($item in $tasks) {
         $taskDocument=$null
         try {
-            $taskDocument=$taskWord.Documents.Open($item.source,$false,$true,$false)
+            $taskDocument=$taskWord.Documents.Open((Resolve-PublicTaskPath $item.source),$false,$true,$false)
             $documentWindow=[int]$taskDocument.Windows.Item(1).Hwnd
             $documentProcess=[int]([JiangsuTaskWord]::Process($documentWindow))
             if ($documentProcess -ne $taskWordId -or $before -contains $documentProcess) {
@@ -58,7 +66,7 @@ try {
                 throw 'Own read-only document Window.Hwnd does not belong to the proved new PID; no export or application Quit.'
             }
             $windowChecks+=@{document=$item.source;window_pid=$documentProcess;matches_new_instance=$true}
-            $taskDocument.ExportAsFixedFormat($item.pdf,17)
+            $taskDocument.ExportAsFixedFormat((Resolve-PublicTaskPath $item.pdf),17)
             $completed++
         } finally {
             if ($null -ne $taskDocument) { $taskDocument.Close($false);[void][Runtime.InteropServices.Marshal]::ReleaseComObject($taskDocument) }

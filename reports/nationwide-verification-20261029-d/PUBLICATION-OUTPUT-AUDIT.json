@@ -1,0 +1,11 @@
+{
+  "scope": "Only public derived QA metadata; complete originals retained privately. Official source manifests, DOC/DOCX/PDF/PNG and fixed DERIVED-MANIFEST unchanged. Actual failures unchanged.",
+  "changed_files": [
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/tasks.json",
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/tasks.json",
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/STYLE-AUDIT.json",
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/TDD-RED.txt",
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/PACKAGED-RENDER.txt",
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/render-isolated.ps1"
+  ]
+}

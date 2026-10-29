@@ -1,0 +1,77 @@
+{
+  "scope": "D-only release tool code, synthetic fixture tests, sanitized real RED/GREEN logs and tool-only report. No live DB or receipt payload, actual PID, session, token or model output.",
+  "files": {
+    "backend/candidate_review.py": {
+      "sha256": "8217856e9cf1ac6289c10dffa66ef4f33a4698000e0d629494bb14340898cac4",
+      "bytes": 19789
+    },
+    "backend/reviewed_oct29d_release.py": {
+      "sha256": "0d12b7013d26d8a72ba72ca8d1dbdb3a4d21fed67cc39dd0f52e8bbe4f930de5",
+      "bytes": 23463
+    },
+    "backend/tests/test_reviewed_oct29d_release.py": {
+      "sha256": "9e2216dd7b4989eb5a87fa0bed4a8fab611c8d8465d634d01511099256aa02de",
+      "bytes": 23588
+    },
+    "reports/nationwide-verification-20261029-d/release-tool/C-REGRESSION.txt": {
+      "sha256": "38e4bedd7daf1a8f3d9d8d1c89cce474f627882c2ba7542cc431630a2990ab11",
+      "bytes": 2360
+    },
+    "reports/nationwide-verification-20261029-d/release-tool/FINAL-BACKUP-CHECK.txt": {
+      "sha256": "d93cbe5fbcf4dc31e8b694685c8a926b081e014c348a1a4127c30dbb7f0b693f",
+      "bytes": 446
+    },
+    "reports/nationwide-verification-20261029-d/release-tool/RESULT.json": {
+      "sha256": "7c97d8c5a3195523bd70d25d93b8dc679659e79054964b5629898e90d3a34fe8",
+      "bytes": 1096
+    },
+    "reports/nationwide-verification-20261029-d/release-tool/TDD-GREEN-ATTEMPT.txt": {
+      "sha256": "a48ad3a7fe9b09cc4f906d8486b280a558951bd938d00c420697feb3caa993fa",
+      "bytes": 30618
+    },
+    "reports/nationwide-verification-20261029-d/release-tool/TDD-GREEN.txt": {
+      "sha256": "9146bbdc8b0833eeef0056a1679697f3b9e939a6f2c35d7b5c1cc4b0db045a8e",
+      "bytes": 3838
+    },
+    "reports/nationwide-verification-20261029-d/release-tool/TDD-PNG-GREEN.txt": {
+      "sha256": "5619202a43bd553cbcddfabf03eeadd422f18c9990445da57e6df7c9c35beb60",
+      "bytes": 281
+    },
+    "reports/nationwide-verification-20261029-d/release-tool/TDD-PNG-RED.txt": {
+      "sha256": "17734bcd8d0f188f52b15ff3d387d7661c12a28a4eec886b9cbdbb43428d43d0",
+      "bytes": 914
+    },
+    "reports/nationwide-verification-20261029-d/release-tool/TDD-RED.txt": {
+      "sha256": "0b5210b18e8ce210934add5925a69859f12eccbcc63cda8841c672d407c3c1f0",
+      "bytes": 11443
+    },
+    "reports/nationwide-verification-20261029-d/release-tool/TDD-ROOT-GREEN.txt": {
+      "sha256": "a9052d4608e41e5a1e997ea285e66248894f04cbdd02537a0551796d69a98f53",
+      "bytes": 297
+    },
+    "reports/nationwide-verification-20261029-d/release-tool/TDD-ROOT-RED.txt": {
+      "sha256": "9981c67c50b9f43926b9c0127ddcde780c5df96befdb5c95af6dfe834dd36ded",
+      "bytes": 983
+    },
+    "reports/nationwide-verification-20261029-d/release-tool/TDD-TRANSACTION-GREEN.txt": {
+      "sha256": "c408f4da0084570a407ebdc94e5fb5800a83a58c2bec2eaac411ec724921202e",
+      "bytes": 492
+    },
+    "reports/nationwide-verification-20261029-d/release-tool/TDD-TRANSACTION-RED.txt": {
+      "sha256": "ac50a63455d28d4cbc77413ba2dd578528afac320dd4e0b285117de445ce9ffc",
+      "bytes": 1848
+    },
+    "reports/nationwide-verification-20261029-d/release-tool/TDD-VERIFY17-GREEN.txt": {
+      "sha256": "558a66a260f5e5d5046e55ed429ea5f7ba41ceb24703489f1ca450f0ec9dfdc4",
+      "bytes": 480
+    },
+    "reports/nationwide-verification-20261029-d/release-tool/TDD-VERIFY17-RED.txt": {
+      "sha256": "a65da0ee0dea7decdd3efc7bf3d35444bdf79523d200343f60e5cd6e34c0ae8e",
+      "bytes": 2097
+    },
+    "reports/nationwide-verification-20261029-d/release-tool/TEST-REPORT.md": {
+      "sha256": "f2b6de5afc8089494d125089ae048efbc626b2bd2e12b648459f50c00aef5023",
+      "bytes": 3975
+    }
+  }
+}

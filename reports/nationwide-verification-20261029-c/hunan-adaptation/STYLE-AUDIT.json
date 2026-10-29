@@ -1,14 +1,14 @@
 {
-  "input": "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029-c\\hunan-adaptation\\derived\\yuhua\\worker.docx",
+  "input": "reports/nationwide-verification-20261029-c/hunan-adaptation/derived/yuhua/worker.docx",
   "fonts_by_char_count": {
-    "\u4eff\u5b8b_GB2312": 19
+    "仿宋_GB2312": 19
   },
   "direct_run_formatting_runs": 120,
   "direct_paragraph_formatting_paragraphs": 64,
   "heading_like_paragraphs_not_heading_style": [
     {
       "para_index": 39,
-      "text": "\u6ce8\uff1a1.\u7533\u8bf7\u4e66\u5e94\u7528\u94a2\u7b14\u3001\u7b7e\u5b57\u7b14\u3001\u6bdb\u7b14\u4e66\u5199\u6216\u5370\u5237\u3002",
+      "text": "注：1.申请书应用钢笔、签字笔、毛笔书写或印刷。",
       "style": "Normal"
     }
   ],
@@ -16,12 +16,12 @@
     "direct_paragraph_formatting": [
       {
         "para_index": 1,
-        "text": "\u52b3\u52a8\u4e89\u8bae\u4ef2\u88c1\u7533\u8bf7\u4e66",
+        "text": "劳动争议仲裁申请书",
         "style": "Normal"
       },
       {
         "para_index": 2,
-        "text": "\uff08\u7533\u8bf7\u4eba\u4e3a\u52b3\u52a8\u8005\uff09",
+        "text": "（申请人为劳动者）",
         "style": "Normal"
       },
       {
@@ -31,39 +31,39 @@
       },
       {
         "para_index": 4,
-        "text": "\u7533\u8bf7\u4eba\u59d3\u540d\uff1a                  ",
+        "text": "申请人姓名：                  ",
         "style": "Normal"
       },
       {
         "para_index": 5,
-        "text": "\u6027\u522b\uff1a       \u51fa\u751f\u5e74\u6708\u65e5\uff1a        \u804c\u4e1a\uff1a     \u6c11\u65cf\uff1a",
+        "text": "性别：       出生年月日：        职业：     民族：",
         "style": "Normal"
       }
     ],
     "direct_run_formatting": [
       {
         "para_index": 1,
-        "run_text": "\u52b3\u52a8\u4e89\u8bae\u4ef2\u88c1",
+        "run_text": "劳动争议仲裁",
         "style": "Normal"
       },
       {
         "para_index": 1,
-        "run_text": "\u7533\u8bf7",
+        "run_text": "申请",
         "style": "Normal"
       },
       {
         "para_index": 1,
-        "run_text": "\u4e66",
+        "run_text": "书",
         "style": "Normal"
       },
       {
         "para_index": 2,
-        "run_text": "\uff08",
+        "run_text": "（",
         "style": "Normal"
       },
       {
         "para_index": 2,
-        "run_text": "\u7533\u8bf7\u4eba\u4e3a",
+        "run_text": "申请人为",
         "style": "Normal"
       }
     ]

@@ -1,5 +1,6 @@
 """Synthetic-only offline QA. Never reads reference samples or calls a model."""
 import hashlib
+import os
 import json
 from pathlib import Path
 import subprocess
@@ -12,6 +13,30 @@ sys.path.insert(0, str(ROOT / 'backend'))
 import regional_jiangsu_oct29c as adapter
 
 
+def _configured_tool(name):
+    value = os.environ.get(name)
+    if not value:
+        raise ValueError('Set ' + name + ' to the required local executable before running QA')
+    path = Path(value).expanduser()
+    if not path.is_absolute():
+        path = ROOT / path
+    path = path.resolve()
+    if not path.is_file():
+        raise ValueError(name + ' must identify an existing executable')
+    return path
+
+
+def _configured_python():
+    if _configured_tool('PARTLAWYER_QA_PYTHON') != Path(sys.executable).resolve():
+        raise ValueError('Run this script with the interpreter configured in PARTLAWYER_QA_PYTHON')
+
+
+def check_config():
+    _configured_python()
+    _configured_tool('PARTLAWYER_QA_POPPLER')
+    print(json.dumps(dict(python_configured=True, poppler_configured=True)))
+
+
 def originals():
     tasks = []
     for code in sorted(adapter.SUPPORTED):
@@ -19,7 +44,7 @@ def originals():
         for kind, b in adapter.candidate_contract(g)['documents'].items():
             pdf = OUT / 'render' / f'{code}-original-{kind}' / 'document.pdf'
             pdf.parent.mkdir(parents=True, exist_ok=True)
-            tasks.append(dict(source=str((ROOT / b['source_file']).resolve()), pdf=str(pdf)))
+            tasks.append(dict(source=b['source_file'], pdf=pdf.relative_to(ROOT).as_posix()))
     (OUT / 'original-render-tasks.json').write_text(json.dumps(tasks, ensure_ascii=False, indent=2), encoding='utf8')
 
 
@@ -44,7 +69,7 @@ def generate():
                 assert a.namelist() == z.namelist() and changed == ['word/document.xml']
             pdf = OUT / 'render' / f'{code}-generated-{kind}' / 'document.pdf'
             pdf.parent.mkdir(parents=True, exist_ok=True)
-            tasks.append(dict(source=str(path), pdf=str(pdf)))
+            tasks.append(dict(source=path.relative_to(ROOT).as_posix(), pdf=pdf.relative_to(ROOT).as_posix()))
             outputs.append(dict(file=str(path.relative_to(ROOT)), sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
                                 source=b, changed_package_parts=changed, synthetic_only=True))
     (OUT / 'synthetic-payload.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf8')
@@ -54,8 +79,7 @@ def generate():
 
 def rasterize():
     # Bundled Poppler is used after the isolated Word read-only export fallback.
-    runtime = Path('C:/Users/DerpZhenjun/.cache/codex-runtimes/codex-primary-runtime/dependencies')
-    poppler = next(runtime.rglob('pdftoppm.exe'))
+    poppler = _configured_tool('PARTLAWYER_QA_POPPLER')
     from pypdf import PdfReader
     result = []
     for pdf in sorted((OUT / 'render').glob('*/document.pdf')):
@@ -67,4 +91,5 @@ def rasterize():
 
 
 if __name__ == '__main__':
-    {'originals': originals, 'generate': generate, 'rasterize': rasterize}[sys.argv[1]]()
+    _configured_python()
+    {'originals': originals, 'generate': generate, 'rasterize': rasterize, 'check-config': check_config}[sys.argv[1]]()

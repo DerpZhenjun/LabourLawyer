@@ -1,0 +1,14 @@
+test_png_crc_alone_does_not_authorize_invalid_image_pixels (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_png_crc_alone_does_not_authorize_invalid_image_pixels) ... FAIL
+
+======================================================================
+FAIL: test_png_crc_alone_does_not_authorize_invalid_image_pixels (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_png_crc_alone_does_not_authorize_invalid_image_pixels)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 283, in test_png_crc_alone_does_not_authorize_invalid_image_pixels
+    with self.assertRaisesRegex(ValueError,'PNG'):self.r._verify_png(path)
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 1 test in 2.379s
+
+FAILED (failures=1)

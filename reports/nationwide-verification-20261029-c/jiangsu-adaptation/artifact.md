@@ -11,3 +11,17 @@
 证据槽：零基段0委员会、3案号、5仅提交时间可填写；提交人、接收人及接收时间留空。首表6列依次序号、证据名称、来源、证明内容、原件/复印件、页数；从表格行1开始克隆源行或移除未使用行，页数剥离尾部“页”避免重复。长证明内容允许原字号换行、行高由exact转atLeast，超过12项克隆行，不截断。申请书最长标准表单请求/事实也不得截断。
 
 适配仅两种文书。身份证明及证据复印件所谓空白只有标题占位，不启用生成；样例始终 `reference_sample_not_distributed`。验收要求四份合成输出逐页打开、真实生日/独立份数/六列内容/签名空槽/日期正确，非document.xml部件字节保持；跨区/来源/机关/事项/字段/材料/控件/路径/SHA/样例及缺失原件均拒绝。网页与发布由根集成独立验收，本合同不代替网页批准。
+
+## 可复现的本地工具配置
+
+公开渲染任务中的source和pdf均为仓库相对路径，render-isolated.ps1从脚本位置确定项目根并拒绝越界路径；运行命令可从仓库根指定对应任务JSON。此处清理没有重新运行文档生成、Word或渲染，也没有改变现有文档、图片及PDF字节。
+
+qa.py通过环境变量明确选择本机工具：PARTLAWYER_QA_PYTHON为安装了docx、pypdf等项目依赖的Python解释器，PARTLAWYER_QA_POPPLER为pdftoppm可执行文件。值可使用绝对工具路径或仓库相对路径，不在公开文件中硬编码安装位置。请用指定的解释器运行qa.py；check-config只核验配置，不导出任何本机路径。originals、generate和rasterize仍是显式执行动作。
+
+```powershell
+$env:PARTLAWYER_QA_PYTHON = (Get-Command python).Source
+$env:PARTLAWYER_QA_POPPLER = (Get-Command pdftoppm).Source
+# 使用上述解释器运行本目录qa.py check-config检查工具，再按需要选择动作。
+```
+
+历史失败类型、调用方法、源字节SHA及视觉结论保留；公开栈路径已归一为相对工具名或仓库路径。每份修改前的完整原件保存在私有publication audit目录。

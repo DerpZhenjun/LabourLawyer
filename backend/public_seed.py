@@ -66,7 +66,7 @@ def bootstrap_public_data(root=ROOT):
             if t.get('can_generate'):
                 try:
                     if not valid or not t.get('document_types'):raise ValueError('No approved local attachment')
-                    for kind in t['document_types']:checked_reference_adapter(g,t,kind)
+                    for kind in t['document_types']:checked_reference_adapter(g,t,kind,root=root)
                 except ValueError:t.update(can_generate=False,document_types=[])
     for a in payload['directory.json']:
         if not all(a.get(k) for k in ['provider','code','province','source_url','collected_at']) or a.get('level') not in {2,3,4}:

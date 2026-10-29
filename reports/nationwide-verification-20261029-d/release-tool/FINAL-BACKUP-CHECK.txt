@@ -1,0 +1,7 @@
+test_append_preserves_c13_snapshot_and_rejects_repeat (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_append_preserves_c13_snapshot_and_rejects_repeat) ... ok
+test_append_failure_restores_verifiable_database_hash (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_append_failure_restores_verifiable_database_hash) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 4.835s
+
+OK

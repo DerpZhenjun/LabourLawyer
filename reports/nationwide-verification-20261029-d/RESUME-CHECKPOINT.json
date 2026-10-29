@@ -1,5 +1,5 @@
 {
-  "phase": "D4_own_sources_registered_not_adapted",
+  "phase": "D4_candidate_accepted_release_prepared_main_code_reload_next",
   "new_candidates": 4,
   "candidate_queue": 28,
   "main_guides": 194,
@@ -10,6 +10,35 @@
     "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/guide.json",
     "reports/nationwide-verification-20261029-d/zhejiang/linan/guide.json"
   ],
-  "next": "Adapt own sources; inspect and render each original and generated document before candidate browser acceptance. Unverified is not absent.",
-  "models_called": false
+  "next": "Root may restart only project main backend with existing exact data directory per explicit latest user authorization. Verify fixed main8000 D marker/main_default, then apply exact D4 prepared delta. Never use candidate marker. Preserve202 existing guide history and4294 tasks. All D candidate receipts frozen; do not repeat append.",
+  "models_called": false,
+  "updated_at": "2026-10-29T19:58:24.581639+08:00",
+  "candidate_guides": 198,
+  "candidate_generatable_localities": 181,
+  "candidate_versions": {
+    "320508": 195,
+    "320506": 196,
+    "330109": 197,
+    "330112": 198
+  },
+  "native_pairs": 7,
+  "shared_asgi_generations": 7,
+  "clean_public_source_generations": 7,
+  "frontend_own_fields_checks": 16,
+  "main_D_generation_granted": false,
+  "candidate_native_documents": 7,
+  "candidate_document_visual_pages": 13,
+  "candidate_browser_status": "PASS",
+  "backend_full": {
+    "tests": 634,
+    "seconds": 343.798,
+    "skipped": 2,
+    "status": "PASS"
+  },
+  "frontend_build": {
+    "seconds": 2.13,
+    "status": "PASS"
+  },
+  "frontend_async_draft_checks": "PASS",
+  "prepared_directory": ".runtime/reviewed-oct29d-release-final"
 }

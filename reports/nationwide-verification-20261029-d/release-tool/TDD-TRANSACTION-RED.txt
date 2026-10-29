@@ -1,0 +1,23 @@
+test_post_commit_receipt_failure_restores_database_and_public_files (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_post_commit_receipt_failure_restores_database_and_public_files) ... FAIL
+test_candidate_sequence_jump_refused_without_replacing_history (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_candidate_sequence_jump_refused_without_replacing_history) ... FAIL
+
+======================================================================
+FAIL: test_post_commit_receipt_failure_restores_database_and_public_files (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_post_commit_receipt_failure_restores_database_and_public_files)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 253, in test_post_commit_receipt_failure_restores_database_and_public_files
+    self.assertEqual(self.r.sqlite_count(self.root/'backend/data/regional-guides.sqlite','regional_guides'),202)
+AssertionError: 206 != 202
+
+======================================================================
+FAIL: test_candidate_sequence_jump_refused_without_replacing_history (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_candidate_sequence_jump_refused_without_replacing_history)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 262, in test_candidate_sequence_jump_refused_without_replacing_history
+    with self.assertRaisesRegex(ValueError,'version|sequence|history'):candidate.append_d(self.root,self.candidate)
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 2 tests in 4.718s
+
+FAILED (failures=2)

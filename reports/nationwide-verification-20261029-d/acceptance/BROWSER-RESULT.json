@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "candidate_acceptance": true,
+  "regions": {
+    "320508": {
+      "source_id": "9e10ccda19cf00e2f5ad536e",
+      "version": 195
+    },
+    "320506": {
+      "source_id": "185d26b7f845b0da48cd8475",
+      "version": 196
+    },
+    "330109": {
+      "source_id": "57f5b9173d3a4f1e559eb4ab",
+      "version": 197
+    },
+    "330112": {
+      "source_id": "f556a6146755db0f84784861",
+      "version": 198
+    }
+  },
+  "checks": [
+    {
+      "id": "four_exact_localities",
+      "passed": true,
+      "evidence": "MCP and native named browser selected Gusu/Wuzhong/Xiaoshan/Linan, actual candidate195/196/197/198 source contexts captured."
+    },
+    {
+      "id": "form_order_fiction_worker",
+      "passed": true,
+      "evidence": "Editors follow locality selectors and precede guide; fictional defaults explicit; Zhejiang only worker form, dates initially blank, signatures remain blank in actual outputs."
+    },
+    {
+      "id": "jiangsu_dob_independent_copies",
+      "passed": true,
+      "evidence": "Native GusuDOB1991-05-09 with application/evidence copies3/2; WuzhongDOB1993-06-10 and copies4/3; actual XML and rendered pages verified."
+    },
+    {
+      "id": "evidence_add_remove",
+      "passed": true,
+      "evidence": "Native first evidence row one; add/remove restored one in JS and Zhejiang, including MCP Xiaoshan."
+    },
+    {
+      "id": "household_ambiguous_choice_mitigated",
+      "passed": true,
+      "evidence": "Zhejiang duplicated external-household label is explicitly explained and excluded from dropdown; default blank; no forced choice or unsupported-state injection."
+    },
+    {
+      "id": "linan_hidden_evidence_disabled",
+      "passed": true,
+      "evidence": "Linan evidence tab produces zero forms/no generate; only own published application download; no independent evidence link, ISPUBLISH=0 caveat retained."
+    },
+    {
+      "id": "cancel_escape_no_post",
+      "passed": true,
+      "evidence": "MCP native Cancel and Escape closed confirmation; generate resource count0."
+    },
+    {
+      "id": "unknown_district_no_inheritance",
+      "passed": true,
+      "evidence": "Native Fuyang selection yielded zero form and no generate button; no nearby source inherited."
+    },
+    {
+      "id": "responsive_375_768_1440",
+      "passed": true,
+      "evidence": "Actual375/768/1440 with scroll widths375/753/1425; screenshots viewed.375 CTA center belongs to button and no overlap with advisor fab."
+    },
+    {
+      "id": "native_seven_docx_all_pages",
+      "passed": true,
+      "evidence": "7 native confirm clicks, HTTP200, file SHA/ZIP/XML valid; independent Word readonly export and13pages each view_image PASS."
+    },
+    {
+      "id": "spa_existing_navigation_path",
+      "passed": true,
+      "evidence": "Native links followed JS standalone application →back guide→province/city/district→Xiaoshan standalone evidence. Same performance.timeOrigin throughout; evidence editor has no application fields and edited text retained."
+    },
+    {
+      "id": "fresh_workspace_draft_roundtrip",
+      "passed": true,
+      "evidence": "Fresh isolated MCP page6: native app/evidence tabs preserve each separately edited fictional draft, and evidence view has no app fields. Historic HMR page5 stale-tab failure retained as resolved fresh-session evidence."
+    },
+    {
+      "id": "console_no_models",
+      "passed": true,
+      "evidence": "MCP errors/warnings empty on both fresh and prior page; native browser errors empty;101 captured native-network entries with zero model/11434/3000/chat/inference endpoints."
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "reports/nationwide-verification-20261029-d/acceptance/js-375-cta.png",
+      "sha256": "930d2e04405144374048e3de97c07dd884498befc7d69a7d818e72b18a08d9f0",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/acceptance/js-375.png",
+      "sha256": "ad782012ac1cab0081e07b1a4685a4ff08a883fe4c969b2dca8ae3d82fdbda2c",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/acceptance/js-768.png",
+      "sha256": "b4d4497bd220542af73ea7e0a398d8d78815c3188a97c4ba99d16da5449a1d57",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/acceptance/zj-1440.png",
+      "sha256": "6e4c694dd1fdfeb771c6644dda879bc22026642ec224425a3dc40653ce85a6bf",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/acceptance/zj-spa-evidence.png",
+      "sha256": "b40035b3541f9daafffeb266968257f5cfb678ceb8742200a85f6431fe59522d",
+      "visual_status": "PASS"
+    }
+  ],
+  "spa_route_test": {
+    "direct_cross_province_local_document_link_available": false,
+    "tested_path": [
+      "/local-documents/jiangsu/application?city=苏州市&district=姑苏区",
+      "/province/jiangsu?city=苏州市&district=姑苏区",
+      "/province/zhejiang?city=杭州市&district=萧山区",
+      "/local-documents/zhejiang/evidence?city=杭州市&district=萧山区"
+    ],
+    "same_browser_document_time_origin": true,
+    "evidence_only_contract": true,
+    "native_editable": true,
+    "private_router_or_state_injection": false
+  },
+  "recovered_failure": {
+    "context": "Historic isolated page5 spanning frontend HMR",
+    "observed": "Native evidence-tab click returned success but parent tab remained application and evidence-field wait timed out at10seconds. Keyboard Space while body focused did not change it.",
+    "resolution": "New isolated MCP page6 fresh normal URL load; native app/evidence switching and two separate drafts both preserved; console clean. Existing router-link SPA path still navigated correctly on page5.",
+    "failure_evidence_retained": true
+  },
+  "limits": [
+    "Official channels verified only to authentication; no official login/submission.",
+    "No direct JS standalone→ZJ standalone UI link exists; actual provided-link path via locality workspace tested, without router injection.",
+    "Ambiguous household choice is excluded; no forced unsupported DOM value or API replay used."
+  ]
+}

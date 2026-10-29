@@ -26,6 +26,16 @@ public static class YuhangTaskWord {
 '@
 $before=@(Get-Process WINWORD -ErrorAction SilentlyContinue | ForEach-Object { $_.Id })
 $tasks=Get-Content -LiteralPath $Manifest -Raw -Encoding UTF8 | ConvertFrom-Json
+$publicRoot=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..\..'))
+foreach ($item in $tasks) {
+    foreach ($key in @('source','pdf','derived_docx')) {
+        if ($item.$key) {
+            $resolved=if ([IO.Path]::IsPathRooted([string]$item.$key)) { [IO.Path]::GetFullPath([string]$item.$key) } else { [IO.Path]::GetFullPath((Join-Path $publicRoot ([string]$item.$key))) }
+            if (!$resolved.StartsWith($publicRoot+[IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)) {throw 'Task path must stay inside the repository.'}
+            $item.$key=$resolved
+        }
+    }
+}
 $taskWord=$null;$distinct=$false;$taskWordId=0;$during=@();$completed=0;$windowChecks=@();$savedUpdateLinks=$null;$linkUpdatesDisabled=$false
 try {
     $creationStarted=Get-Date

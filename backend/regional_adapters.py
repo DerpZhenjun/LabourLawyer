@@ -21,6 +21,14 @@ def jiangsu_c_binding(guide,template):
     except (ValueError,OSError,KeyError,TypeError):return None
 
 
+from regional_jiangsu_oct29d import (with_capabilities as with_jiangsu_d_capabilities,blank_binding as jiangsu_d_contract,ADAPTER as JIANGSU_D_ADAPTER,SUPPORTED as JIANGSU_D_CODES)
+from regional_zhejiang_oct29d import (with_capabilities as with_zhejiang_d_capabilities,blank_binding as zhejiang_d_binding,ADAPTER as ZHEJIANG_D_ADAPTER,SPECS as ZHEJIANG_D_SPECS)
+
+def jiangsu_d_binding(guide,template,root=None):
+    try:return jiangsu_d_contract(guide,template,root=root)['kind']
+    except (ValueError,OSError,KeyError,TypeError):return None
+
+
 REFERENCE_SHA256 = '80d1dc3989e9da1ef2c763cbde54bd474d691a4febba48425fb2cc3471d94562'
 BINDINGS = {
     '510110000000': ('天府新区', '1064c9ed5635a0d224e4eee5', 'ec3268e5fda94301ab40a7e086afe07a', 'tianfu_reference_v1'),
@@ -239,7 +247,7 @@ def reference_binding(guide, template):
     return adapter
 
 
-def with_reference_capabilities(guide):
+def with_reference_capabilities(guide,root=None):
     """Publish platform adaptation separately from the retained official content."""
     result = with_shangcheng_capabilities(with_zhejiang_capabilities(guide)) if guide.get('province')=='zhejiang' else deepcopy(guide)
     if result.get('province')=='zhejiang' and result.get('region_code') in {s['code'] for s in NINGBO_SPECS.values()}:
@@ -286,10 +294,19 @@ def with_reference_capabilities(guide):
         for template in result['templates']:
             if template.get('can_generate'):template.update(adapter=JIANGSU_C_ADAPTER,content_kind='filled_official_blank',generation_label='依据本区自身官方空白表格填写')
         return result
+    if result.get('province')=='jiangsu' and result.get('region_code') in JIANGSU_D_CODES:
+        return with_jiangsu_d_capabilities(result,root=root)
+    if result.get('province')=='zhejiang' and result.get('region_code') in {v['code'] for v in ZHEJIANG_D_SPECS.values()}:
+        return with_zhejiang_d_capabilities(result,root=root)
     return result
 
 
-def checked_reference_adapter(guide, template, kind):
+def checked_reference_adapter(guide, template, kind,root=None):
+    if template.get('adapter') in {JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER}:
+        own_kind=jiangsu_d_binding(guide,template,root=root) if template['adapter']==JIANGSU_D_ADAPTER else zhejiang_d_binding(guide,template,root=root)
+        if own_kind!=kind or template.get('can_generate') is not True or template.get('document_types')!=[kind]:
+            raise ValueError('本区D批自身来源与文书类型未通过核验')
+        return template['adapter']
     if template.get('adapter') in {HUNAN_C_ADAPTER,JIANGSU_C_ADAPTER}:
         own_kind=hunan_c_binding(guide,template) if template['adapter']==HUNAN_C_ADAPTER else jiangsu_c_binding(guide,template)
         if own_kind!=kind or template.get('can_generate') is not True or template.get('document_types')!=[kind]:

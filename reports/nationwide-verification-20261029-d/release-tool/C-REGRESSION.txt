@@ -1,0 +1,17 @@
+test_alternate_or_stale_marker_cannot_authorize_main (backend.tests.test_reviewed_oct29c_release.CReleaseTests.test_alternate_or_stale_marker_cannot_authorize_main) ... ok
+test_append_failure_restores_original_manifest_and_db (backend.tests.test_reviewed_oct29c_release.CReleaseTests.test_append_failure_restores_original_manifest_and_db) ... ok
+test_append_preserves_a9_snapshot_and_rejects_repeat (backend.tests.test_reviewed_oct29c_release.CReleaseTests.test_append_preserves_a9_snapshot_and_rejects_repeat) ... ok
+test_apply_changed_baseline_facts_and_existing_history_source_refused (backend.tests.test_reviewed_oct29c_release.CReleaseTests.test_apply_changed_baseline_facts_and_existing_history_source_refused) ... ok
+test_apply_install_failure_rolls_back_every_file_and_sqlite (backend.tests.test_reviewed_oct29c_release.CReleaseTests.test_apply_install_failure_rolls_back_every_file_and_sqlite) ... ok
+test_c_loader_and_append_use_canonical_parsers_without_rewriting_raw_sources (backend.tests.test_reviewed_oct29c_release.CReleaseTests.test_c_loader_and_append_use_canonical_parsers_without_rewriting_raw_sources) ... ok
+test_own_source_identity_and_payload_changes_are_rejected (backend.tests.test_reviewed_oct29c_release.CReleaseTests.test_own_source_identity_and_payload_changes_are_rejected) ... ok
+test_prepare_and_apply_preserve_baseline_history_jobs_and_queue_metadata (backend.tests.test_reviewed_oct29c_release.CReleaseTests.test_prepare_and_apply_preserve_baseline_history_jobs_and_queue_metadata) ... ok
+test_prepare_missing_receipt_never_creates_output (backend.tests.test_reviewed_oct29c_release.CReleaseTests.test_prepare_missing_receipt_never_creates_output) ... ok
+test_prepared_and_input_tampering_never_authorize_apply (backend.tests.test_reviewed_oct29c_release.CReleaseTests.test_prepared_and_input_tampering_never_authorize_apply) ... ok
+test_strict_receipts_bind_exact_sources_documents_and_artifact_bytes (backend.tests.test_reviewed_oct29c_release.CReleaseTests.test_strict_receipts_bind_exact_sources_documents_and_artifact_bytes) ... ok
+test_wrong_prepared_counts_or_publication_claim_are_rejected (backend.tests.test_reviewed_oct29c_release.CReleaseTests.test_wrong_prepared_counts_or_publication_claim_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 33.448s
+
+OK

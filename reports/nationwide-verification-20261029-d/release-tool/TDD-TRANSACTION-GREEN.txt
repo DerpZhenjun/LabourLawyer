@@ -1,0 +1,7 @@
+test_post_commit_receipt_failure_restores_database_and_public_files (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_post_commit_receipt_failure_restores_database_and_public_files) ... ok
+test_candidate_sequence_jump_refused_without_replacing_history (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_candidate_sequence_jump_refused_without_replacing_history) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 4.961s
+
+OK

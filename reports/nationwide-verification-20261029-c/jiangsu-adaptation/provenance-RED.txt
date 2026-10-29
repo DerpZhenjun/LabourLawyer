@@ -3,7 +3,7 @@
 FAIL: test_canonical_public_only_evidence_and_exact_originals (test_oct29c_public_provenance.Oct29CPublicProvenanceTests.test_canonical_public_only_evidence_and_exact_originals)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "D:\workspace\DerpZhenjun\Partlawyer-LAA\backend\tests\test_oct29c_public_provenance.py", line 48, in test_canonical_public_only_evidence_and_exact_originals
+  File "backend\tests\test_oct29c_public_provenance.py", line 48, in test_canonical_public_only_evidence_and_exact_originals
     self.assertEqual(public_evidence(g, self.public), g['evidence'], name)
 AssertionError: None != {'capture_file': 'reports/nationwide-veri[517 chars]dbc'} : yuhua
 
@@ -11,7 +11,7 @@ AssertionError: None != {'capture_file': 'reports/nationwide-veri[517 chars]dbc'
 FAIL: test_precise_capability_markers_survive_publishing (test_oct29c_public_provenance.Oct29CPublicProvenanceTests.test_precise_capability_markers_survive_publishing)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "D:\workspace\DerpZhenjun\Partlawyer-LAA\backend\tests\test_oct29c_public_provenance.py", line 63, in test_precise_capability_markers_survive_publishing
+  File "backend\tests\test_oct29c_public_provenance.py", line 63, in test_precise_capability_markers_survive_publishing
     self.assertEqual(public_evidence(g, self.public), raw['evidence'], name)
 AssertionError: None != {'capture_file': 'reports/nationwide-veri[517 chars]dbc'} : yuhua
 

@@ -1,0 +1,131 @@
+test_alternate_or_stale_marker_cannot_authorize_main (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_alternate_or_stale_marker_cannot_authorize_main) ... FAIL
+test_append_failure_restores_original_manifest_and_db (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_append_failure_restores_original_manifest_and_db) ... FAIL
+test_append_preserves_a9_snapshot_and_rejects_repeat (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_append_preserves_a9_snapshot_and_rejects_repeat) ... FAIL
+test_apply_changed_baseline_facts_and_existing_history_source_refused (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_apply_changed_baseline_facts_and_existing_history_source_refused) ... FAIL
+test_apply_install_failure_rolls_back_every_file_and_sqlite (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_apply_install_failure_rolls_back_every_file_and_sqlite) ... FAIL
+test_c_loader_and_append_use_canonical_parsers_without_rewriting_raw_sources (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_c_loader_and_append_use_canonical_parsers_without_rewriting_raw_sources) ... FAIL
+test_candidate_and_main_exact_versions (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_candidate_and_main_exact_versions) ... FAIL
+test_own_source_identity_and_payload_changes_are_rejected (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_own_source_identity_and_payload_changes_are_rejected) ... FAIL
+test_prepare_and_apply_preserve_baseline_history_jobs_and_queue_metadata (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_prepare_and_apply_preserve_baseline_history_jobs_and_queue_metadata) ... FAIL
+test_prepare_missing_receipt_never_creates_output (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_prepare_missing_receipt_never_creates_output) ... FAIL
+test_prepared_and_input_tampering_never_authorize_apply (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_prepared_and_input_tampering_never_authorize_apply) ... FAIL
+test_receipts_reject_fake_png_even_with_matching_sha (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_receipts_reject_fake_png_even_with_matching_sha) ... FAIL
+test_strict_receipts_bind_exact_sources_documents_and_artifact_bytes (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_strict_receipts_bind_exact_sources_documents_and_artifact_bytes) ... FAIL
+test_wrong_prepared_counts_or_publication_claim_are_rejected (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_wrong_prepared_counts_or_publication_claim_are_rejected) ... FAIL
+
+======================================================================
+FAIL: test_alternate_or_stale_marker_cannot_authorize_main (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_alternate_or_stale_marker_cannot_authorize_main)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 26, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('reviewed_oct29d_release'),'D4 release module is required')
+AssertionError: unexpectedly None : D4 release module is required
+
+======================================================================
+FAIL: test_append_failure_restores_original_manifest_and_db (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_append_failure_restores_original_manifest_and_db)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 26, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('reviewed_oct29d_release'),'D4 release module is required')
+AssertionError: unexpectedly None : D4 release module is required
+
+======================================================================
+FAIL: test_append_preserves_a9_snapshot_and_rejects_repeat (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_append_preserves_a9_snapshot_and_rejects_repeat)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 26, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('reviewed_oct29d_release'),'D4 release module is required')
+AssertionError: unexpectedly None : D4 release module is required
+
+======================================================================
+FAIL: test_apply_changed_baseline_facts_and_existing_history_source_refused (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_apply_changed_baseline_facts_and_existing_history_source_refused)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 26, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('reviewed_oct29d_release'),'D4 release module is required')
+AssertionError: unexpectedly None : D4 release module is required
+
+======================================================================
+FAIL: test_apply_install_failure_rolls_back_every_file_and_sqlite (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_apply_install_failure_rolls_back_every_file_and_sqlite)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 26, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('reviewed_oct29d_release'),'D4 release module is required')
+AssertionError: unexpectedly None : D4 release module is required
+
+======================================================================
+FAIL: test_c_loader_and_append_use_canonical_parsers_without_rewriting_raw_sources (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_c_loader_and_append_use_canonical_parsers_without_rewriting_raw_sources)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 26, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('reviewed_oct29d_release'),'D4 release module is required')
+AssertionError: unexpectedly None : D4 release module is required
+
+======================================================================
+FAIL: test_candidate_and_main_exact_versions (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_candidate_and_main_exact_versions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 26, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('reviewed_oct29d_release'),'D4 release module is required')
+AssertionError: unexpectedly None : D4 release module is required
+
+======================================================================
+FAIL: test_own_source_identity_and_payload_changes_are_rejected (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_own_source_identity_and_payload_changes_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 26, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('reviewed_oct29d_release'),'D4 release module is required')
+AssertionError: unexpectedly None : D4 release module is required
+
+======================================================================
+FAIL: test_prepare_and_apply_preserve_baseline_history_jobs_and_queue_metadata (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_prepare_and_apply_preserve_baseline_history_jobs_and_queue_metadata)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 26, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('reviewed_oct29d_release'),'D4 release module is required')
+AssertionError: unexpectedly None : D4 release module is required
+
+======================================================================
+FAIL: test_prepare_missing_receipt_never_creates_output (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_prepare_missing_receipt_never_creates_output)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 26, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('reviewed_oct29d_release'),'D4 release module is required')
+AssertionError: unexpectedly None : D4 release module is required
+
+======================================================================
+FAIL: test_prepared_and_input_tampering_never_authorize_apply (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_prepared_and_input_tampering_never_authorize_apply)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 26, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('reviewed_oct29d_release'),'D4 release module is required')
+AssertionError: unexpectedly None : D4 release module is required
+
+======================================================================
+FAIL: test_receipts_reject_fake_png_even_with_matching_sha (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_receipts_reject_fake_png_even_with_matching_sha)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 26, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('reviewed_oct29d_release'),'D4 release module is required')
+AssertionError: unexpectedly None : D4 release module is required
+
+======================================================================
+FAIL: test_strict_receipts_bind_exact_sources_documents_and_artifact_bytes (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_strict_receipts_bind_exact_sources_documents_and_artifact_bytes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 26, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('reviewed_oct29d_release'),'D4 release module is required')
+AssertionError: unexpectedly None : D4 release module is required
+
+======================================================================
+FAIL: test_wrong_prepared_counts_or_publication_claim_are_rejected (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_wrong_prepared_counts_or_publication_claim_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 26, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('reviewed_oct29d_release'),'D4 release module is required')
+AssertionError: unexpectedly None : D4 release module is required
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.015s
+
+FAILED (failures=14)

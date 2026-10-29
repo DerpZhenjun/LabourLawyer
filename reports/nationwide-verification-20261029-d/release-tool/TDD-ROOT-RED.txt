@@ -1,0 +1,14 @@
+test_root_forwarded_through_d_loader_projection_and_adapter_checks (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_root_forwarded_through_d_loader_projection_and_adapter_checks) ... FAIL
+
+======================================================================
+FAIL: test_root_forwarded_through_d_loader_projection_and_adapter_checks (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_root_forwarded_through_d_loader_projection_and_adapter_checks)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 293, in test_root_forwarded_through_d_loader_projection_and_adapter_checks
+    self.assertTrue(all(c.kwargs.get('root')==self.root for c in calls),name)
+AssertionError: False is not true : with_reference_capabilities
+
+----------------------------------------------------------------------
+Ran 1 test in 2.361s
+
+FAILED (failures=1)

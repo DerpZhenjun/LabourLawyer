@@ -9,7 +9,7 @@ from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field, ValidationError, field_validator
 from regional_guides import RegionalStore, select_template
 from regional_documents import fill_tianfu_reference
-from regional_adapters import checked_reference_adapter,HUNAN_C_ADAPTER,JIANGSU_C_ADAPTER,jiangsu_c_binding
+from regional_adapters import checked_reference_adapter,HUNAN_C_ADAPTER,JIANGSU_C_ADAPTER,jiangsu_c_binding,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER
 from regional_blank_documents import fill_blank_document, ADAPTER as BLANK_ADAPTER
 from regional_jiangsu_candidates import fill_candidate_document, SUPPORTED as JIANGSU_OWN_CANDIDATES
 from regional_rongjiang_documents import fill_rongjiang_document, ADAPTER as RONGJIANG_ADAPTER
@@ -19,6 +19,9 @@ from regional_shangcheng_documents import fill_shangcheng_document,ADAPTER as SH
 from regional_jiangsu_oct29 import fill_candidate_document as fill_oct29_jiangsu_document
 from regional_hunan_oct29c import fill_document as fill_hunan_c_document,blank_binding as hunan_c_binding
 from regional_jiangsu_oct29c import fill_candidate_document as fill_jiangsu_c_document
+from regional_jiangsu_oct29d import fill_candidate_document as fill_jiangsu_d_document
+from regional_zhejiang_oct29d import fill_document as fill_zhejiang_d_document
+from regional_zhejiang_request import ApplicationRequest as ZhejiangDApplicationRequest,EvidenceRequest as ZhejiangDEvidenceRequest
 from regional_hunan_oct29b import fill_document as fill_hunan_document, ADAPTER as HUNAN_ADAPTER
 from regional_oct29_bindings import (jiangsu_binding as oct29_jiangsu_binding,feidong_canonical,fill_feidong_bound,
     JIANGSU_ADAPTER as OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER)
@@ -32,8 +35,8 @@ router=APIRouter()
 @router.get('/release-capabilities')
 def release_capabilities():
     """Identify loaded generation code before a reviewed data-only upgrade."""
-    return {'release_id':'oct29c-own-localities-v1',
-            'adapters':[HUNAN_C_ADAPTER,JIANGSU_C_ADAPTER],
+    return {'release_id':'oct29d-own-localities-v1',
+            'adapters':[JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER],
             'source_bound':True,'models_required':False,
             'regional_store':'main_default' if Path(os.getenv('LABOURLAWYER_REGIONAL_DB',ROOT/'backend/data/regional-guides.sqlite')).resolve()==(ROOT/'backend/data/regional-guides.sqlite').resolve() else 'alternate'}
 
@@ -236,16 +239,21 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
     try:adapter=checked_reference_adapter(g,t,payload.kind)
     except ValueError as exc:raise HTTPException(409,str(exc)) from exc
     try:
-        model=(BlankApplicationRequest if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,JIANGSU_C_ADAPTER} else ApplicationRequest) if payload.kind=='application' else EvidenceRequest
+        model=(BlankApplicationRequest if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER} else ApplicationRequest) if payload.kind=='application' else EvidenceRequest
         if adapter==FEIDONG_ADAPTER:model=FeidongApplicationRequest
         if adapter in {HUNAN_ADAPTER,HUNAN_C_ADAPTER}:model=HunanApplicationRequest
+        if adapter==ZHEJIANG_D_ADAPTER:model=ZhejiangDApplicationRequest if payload.kind=='application' else ZhejiangDEvidenceRequest
         data=model.model_validate(payload.data)
     except ValidationError as exc:
         raise HTTPException(422,'填写内容过长或格式不正确，请缩短后重试') from exc
-    blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER}
+    blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER}
     if adapter in blank_adapters|{RONGJIANG_ADAPTER,HUNAN_ADAPTER,HUNAN_C_ADAPTER} and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
     try:
-        if adapter==HUNAN_C_ADAPTER:
+        if adapter==JIANGSU_D_ADAPTER:
+            doc=fill_jiangsu_d_document(g,payload.kind,data.model_dump())
+        elif adapter==ZHEJIANG_D_ADAPTER:
+            doc=fill_zhejiang_d_document(g,t,payload.kind,checked_path(t,g),data.model_dump())
+        elif adapter==HUNAN_C_ADAPTER:
             doc=fill_hunan_c_document(g,t,payload.kind,checked_path(t,g),data.model_dump())
         elif adapter==JIANGSU_C_ADAPTER:
             doc=fill_jiangsu_c_document(g,payload.kind,data.model_dump())

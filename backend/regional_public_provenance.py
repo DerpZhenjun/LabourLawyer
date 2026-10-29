@@ -173,6 +173,13 @@ def public_evidence(guide, root):
     materials, sections, source identity, own scope and original bytes must match.
     Legacy/other profiles have no report-path authorization through this helper.
     """
+    if not isinstance(guide,dict) or not isinstance(guide.get('province'),str) or not isinstance(guide.get('region_code'),str):return None
+    if guide.get('province')=='jiangsu' and guide.get('region_code') in {'320508','320506'}:
+        from regional_jiangsu_oct29d import public_evidence as own
+        return own(guide,root)
+    if guide.get('province')=='zhejiang' and guide.get('region_code') in {'330109','330112'}:
+        from regional_zhejiang_oct29d import public_evidence as own
+        return own(guide,root)
     from regional_oct29c_public_provenance import handles, public_evidence as c_public_evidence
     if handles(guide):
         return c_public_evidence(guide, root)
@@ -191,6 +198,13 @@ def approved_report_attachment(guide, template, root):
     requires its fixed, public, own-DOC conversion chain. Arbitrary derived paths
     or templates are not accepted as official originals.
     """
+    if not isinstance(guide,dict) or not isinstance(guide.get('province'),str) or not isinstance(guide.get('region_code'),str):return False
+    if guide.get('province')=='jiangsu' and guide.get('region_code') in {'320508','320506'}:
+        from regional_jiangsu_oct29d import approved_report_attachment as own
+        return own(guide,template,root)
+    if guide.get('province')=='zhejiang' and guide.get('region_code') in {'330109','330112'}:
+        from regional_zhejiang_oct29d import approved_report_attachment as own
+        return own(guide,template,root)
     from regional_oct29c_public_provenance import handles, approved_report_attachment as c_approved_attachment
     if handles(guide):
         return c_approved_attachment(guide, template, root)

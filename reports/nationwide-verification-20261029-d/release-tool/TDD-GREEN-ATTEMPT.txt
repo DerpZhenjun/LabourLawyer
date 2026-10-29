@@ -1,0 +1,409 @@
+test_alternate_or_stale_marker_cannot_authorize_main (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_alternate_or_stale_marker_cannot_authorize_main) ... ok
+test_append_failure_restores_original_manifest_and_db (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_append_failure_restores_original_manifest_and_db) ... FAIL
+test_append_preserves_a9_snapshot_and_rejects_repeat (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_append_preserves_a9_snapshot_and_rejects_repeat) ... FAIL
+test_apply_changed_baseline_facts_and_existing_history_source_refused (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_apply_changed_baseline_facts_and_existing_history_source_refused) ... FAIL
+test_apply_install_failure_rolls_back_every_file_and_sqlite (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_apply_install_failure_rolls_back_every_file_and_sqlite) ... FAIL
+test_c_loader_and_append_use_canonical_parsers_without_rewriting_raw_sources (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_c_loader_and_append_use_canonical_parsers_without_rewriting_raw_sources) ... FAIL
+test_candidate_and_main_exact_versions (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_candidate_and_main_exact_versions) ... FAIL
+test_own_source_identity_and_payload_changes_are_rejected (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_own_source_identity_and_payload_changes_are_rejected) ... FAIL
+test_prepare_and_apply_preserve_baseline_history_jobs_and_queue_metadata (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_prepare_and_apply_preserve_baseline_history_jobs_and_queue_metadata) ... FAIL
+test_prepare_missing_receipt_never_creates_output (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_prepare_missing_receipt_never_creates_output) ... FAIL
+test_prepared_and_input_tampering_never_authorize_apply (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_prepared_and_input_tampering_never_authorize_apply) ... FAIL
+test_receipts_reject_fake_png_even_with_matching_sha (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_receipts_reject_fake_png_even_with_matching_sha) ... FAIL
+test_strict_receipts_bind_exact_sources_documents_and_artifact_bytes (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_strict_receipts_bind_exact_sources_documents_and_artifact_bytes) ... FAIL
+test_wrong_prepared_counts_or_publication_claim_are_rejected (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_wrong_prepared_counts_or_publication_claim_are_rejected) ... FAIL
+
+======================================================================
+FAIL: test_append_failure_restores_original_manifest_and_db (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_append_failure_restores_original_manifest_and_db)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 138, in test_append_failure_restores_original_manifest_and_db
+    with self.assertRaisesRegex(OSError,'simulated'):candidate.append_d(self.root,self.candidate)
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 216, in append_d
+    additions=load_d_guides(root)
+              ^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in load_d_guides
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in <listcomp>
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1189, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 73, in parsed_js
+    self.assertEqual(Path(capture_root),self.root/js.REPORT)
+AssertionError: Windo[13 chars]ers/DerpZhenjun/AppData/Local/Temp/tmp0smub0ih[48 chars]gsu') != Windo[13 chars]ers/DERPZH~1/AppData/Local/Temp/tmp0smub0ih/re[45 chars]gsu')
+
+======================================================================
+FAIL: test_append_preserves_a9_snapshot_and_rejects_repeat (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_append_preserves_a9_snapshot_and_rejects_repeat)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 116, in test_append_preserves_a9_snapshot_and_rejects_repeat
+    result=candidate.append_d(self.root,self.candidate)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 216, in append_d
+    additions=load_d_guides(root)
+              ^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in load_d_guides
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in <listcomp>
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1189, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 73, in parsed_js
+    self.assertEqual(Path(capture_root),self.root/js.REPORT)
+AssertionError: Windo[13 chars]ers/DerpZhenjun/AppData/Local/Temp/tmpc4u1qfem[48 chars]gsu') != Windo[13 chars]ers/DERPZH~1/AppData/Local/Temp/tmpc4u1qfem/re[45 chars]gsu')
+
+======================================================================
+FAIL: test_apply_changed_baseline_facts_and_existing_history_source_refused (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_apply_changed_baseline_facts_and_existing_history_source_refused)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 170, in test_apply_changed_baseline_facts_and_existing_history_source_refused
+    self.prepare();main=self.root/'backend/data/regional-guides.sqlite'
+    ^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 112, in prepare
+    candidate.append_d(self.root,self.candidate);self.receipts();return self.r.prepare(self.root,self.output)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 216, in append_d
+    additions=load_d_guides(root)
+              ^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in load_d_guides
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in <listcomp>
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1189, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 73, in parsed_js
+    self.assertEqual(Path(capture_root),self.root/js.REPORT)
+AssertionError: Windo[13 chars]ers/DerpZhenjun/AppData/Local/Temp/tmpyey8_d_f[48 chars]gsu') != Windo[13 chars]ers/DERPZH~1/AppData/Local/Temp/tmpyey8_d_f/re[45 chars]gsu')
+
+======================================================================
+FAIL: test_apply_install_failure_rolls_back_every_file_and_sqlite (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_apply_install_failure_rolls_back_every_file_and_sqlite)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 213, in test_apply_install_failure_rolls_back_every_file_and_sqlite
+    self.prepare();targets=[self.root/p for p in self.r.TARGETS];saved={p:p.read_bytes() for p in targets};original=self.r._atomic_write;calls=[]
+    ^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 112, in prepare
+    candidate.append_d(self.root,self.candidate);self.receipts();return self.r.prepare(self.root,self.output)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 216, in append_d
+    additions=load_d_guides(root)
+              ^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in load_d_guides
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in <listcomp>
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1189, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 73, in parsed_js
+    self.assertEqual(Path(capture_root),self.root/js.REPORT)
+AssertionError: Windo[13 chars]ers/DerpZhenjun/AppData/Local/Temp/tmpzu1ii1dq[48 chars]gsu') != Windo[13 chars]ers/DERPZH~1/AppData/Local/Temp/tmpzu1ii1dq/re[45 chars]gsu')
+
+======================================================================
+FAIL: test_c_loader_and_append_use_canonical_parsers_without_rewriting_raw_sources (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_c_loader_and_append_use_canonical_parsers_without_rewriting_raw_sources)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 128, in test_c_loader_and_append_use_canonical_parsers_without_rewriting_raw_sources
+    loaded=candidate.load_d_guides(self.root)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in load_d_guides
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in <listcomp>
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1189, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 73, in parsed_js
+    self.assertEqual(Path(capture_root),self.root/js.REPORT)
+AssertionError: Windo[13 chars]ers/DerpZhenjun/AppData/Local/Temp/tmpsi428cwr[48 chars]gsu') != Windo[13 chars]ers/DERPZH~1/AppData/Local/Temp/tmpsi428cwr/re[45 chars]gsu')
+
+======================================================================
+FAIL: test_candidate_and_main_exact_versions (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_candidate_and_main_exact_versions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 239, in test_candidate_and_main_exact_versions
+    self.prepare()
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 112, in prepare
+    candidate.append_d(self.root,self.candidate);self.receipts();return self.r.prepare(self.root,self.output)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 216, in append_d
+    additions=load_d_guides(root)
+              ^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in load_d_guides
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in <listcomp>
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1189, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 73, in parsed_js
+    self.assertEqual(Path(capture_root),self.root/js.REPORT)
+AssertionError: Windo[13 chars]ers/DerpZhenjun/AppData/Local/Temp/tmpmd89agbs[48 chars]gsu') != Windo[13 chars]ers/DERPZH~1/AppData/Local/Temp/tmpmd89agbs/re[45 chars]gsu')
+
+======================================================================
+FAIL: test_own_source_identity_and_payload_changes_are_rejected (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_own_source_identity_and_payload_changes_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 204, in test_own_source_identity_and_payload_changes_are_rejected
+    candidate.append_d(self.root,self.candidate);self.receipts()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 216, in append_d
+    additions=load_d_guides(root)
+              ^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in load_d_guides
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in <listcomp>
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1189, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 73, in parsed_js
+    self.assertEqual(Path(capture_root),self.root/js.REPORT)
+AssertionError: Windo[13 chars]ers/DerpZhenjun/AppData/Local/Temp/tmpu3f2ped_[48 chars]gsu') != Windo[13 chars]ers/DERPZH~1/AppData/Local/Temp/tmpu3f2ped_/re[45 chars]gsu')
+
+======================================================================
+FAIL: test_prepare_and_apply_preserve_baseline_history_jobs_and_queue_metadata (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_prepare_and_apply_preserve_baseline_history_jobs_and_queue_metadata)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 159, in test_prepare_and_apply_preserve_baseline_history_jobs_and_queue_metadata
+    plan=self.prepare();self.assertEqual(plan['new_capabilities'],{'localities':4,'documents':7})
+         ^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 112, in prepare
+    candidate.append_d(self.root,self.candidate);self.receipts();return self.r.prepare(self.root,self.output)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 216, in append_d
+    additions=load_d_guides(root)
+              ^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in load_d_guides
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in <listcomp>
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1189, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 73, in parsed_js
+    self.assertEqual(Path(capture_root),self.root/js.REPORT)
+AssertionError: Windo[13 chars]ers/DerpZhenjun/AppData/Local/Temp/tmpvnjj61f7[48 chars]gsu') != Windo[13 chars]ers/DERPZH~1/AppData/Local/Temp/tmpvnjj61f7/re[45 chars]gsu')
+
+======================================================================
+FAIL: test_prepare_missing_receipt_never_creates_output (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_prepare_missing_receipt_never_creates_output)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 143, in test_prepare_missing_receipt_never_creates_output
+    candidate.append_d(self.root,self.candidate)
+  File "<workspace>\backend\candidate_review.py", line 216, in append_d
+    additions=load_d_guides(root)
+              ^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in load_d_guides
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in <listcomp>
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1189, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 73, in parsed_js
+    self.assertEqual(Path(capture_root),self.root/js.REPORT)
+AssertionError: Windo[13 chars]ers/DerpZhenjun/AppData/Local/Temp/tmpv9zi6jdo[48 chars]gsu') != Windo[13 chars]ers/DERPZH~1/AppData/Local/Temp/tmpv9zi6jdo/re[45 chars]gsu')
+
+======================================================================
+FAIL: test_prepared_and_input_tampering_never_authorize_apply (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_prepared_and_input_tampering_never_authorize_apply)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 184, in test_prepared_and_input_tampering_never_authorize_apply
+    self.prepare();plan=json.loads((self.output/'prepare-receipt.json').read_text('utf8'))
+    ^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 112, in prepare
+    candidate.append_d(self.root,self.candidate);self.receipts();return self.r.prepare(self.root,self.output)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 216, in append_d
+    additions=load_d_guides(root)
+              ^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in load_d_guides
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in <listcomp>
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1189, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 73, in parsed_js
+    self.assertEqual(Path(capture_root),self.root/js.REPORT)
+AssertionError: Windo[13 chars]ers/DerpZhenjun/AppData/Local/Temp/tmpnpcijjar[48 chars]gsu') != Windo[13 chars]ers/DERPZH~1/AppData/Local/Temp/tmpnpcijjar/re[45 chars]gsu')
+
+======================================================================
+FAIL: test_receipts_reject_fake_png_even_with_matching_sha (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_receipts_reject_fake_png_even_with_matching_sha)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 231, in test_receipts_reject_fake_png_even_with_matching_sha
+    candidate.append_d(self.root,self.candidate);self.receipts()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 216, in append_d
+    additions=load_d_guides(root)
+              ^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in load_d_guides
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in <listcomp>
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1189, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 73, in parsed_js
+    self.assertEqual(Path(capture_root),self.root/js.REPORT)
+AssertionError: Windo[13 chars]ers/DerpZhenjun/AppData/Local/Temp/tmpmxytql3b[48 chars]gsu') != Windo[13 chars]ers/DERPZH~1/AppData/Local/Temp/tmpmxytql3b/re[45 chars]gsu')
+
+======================================================================
+FAIL: test_strict_receipts_bind_exact_sources_documents_and_artifact_bytes (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_strict_receipts_bind_exact_sources_documents_and_artifact_bytes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 148, in test_strict_receipts_bind_exact_sources_documents_and_artifact_bytes
+    candidate.append_d(self.root,self.candidate);self.receipts()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 216, in append_d
+    additions=load_d_guides(root)
+              ^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in load_d_guides
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in <listcomp>
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1189, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 73, in parsed_js
+    self.assertEqual(Path(capture_root),self.root/js.REPORT)
+AssertionError: Windo[13 chars]ers/DerpZhenjun/AppData/Local/Temp/tmpdpd9tqsk[48 chars]gsu') != Windo[13 chars]ers/DERPZH~1/AppData/Local/Temp/tmpdpd9tqsk/re[45 chars]gsu')
+
+======================================================================
+FAIL: test_wrong_prepared_counts_or_publication_claim_are_rejected (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_wrong_prepared_counts_or_publication_claim_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 196, in test_wrong_prepared_counts_or_publication_claim_are_rejected
+    self.prepare();path=self.output/'prepare-receipt.json';original=path.read_bytes()
+    ^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 112, in prepare
+    candidate.append_d(self.root,self.candidate);self.receipts();return self.r.prepare(self.root,self.output)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 216, in append_d
+    additions=load_d_guides(root)
+              ^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in load_d_guides
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\candidate_review.py", line 37, in <listcomp>
+    guides=[jiangsu.parse_capture(code,capture_root=root/jiangsu.REPORT) for code in ['320508','320506']]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>", line 1189, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>\backend\tests\test_reviewed_oct29d_release.py", line 73, in parsed_js
+    self.assertEqual(Path(capture_root),self.root/js.REPORT)
+AssertionError: Windo[13 chars]ers/DerpZhenjun/AppData/Local/Temp/tmpwhrsanw1[48 chars]gsu') != Windo[13 chars]ers/DERPZH~1/AppData/Local/Temp/tmpwhrsanw1/re[45 chars]gsu')
+
+----------------------------------------------------------------------
+Ran 14 tests in 34.635s
+
+FAILED (failures=13)

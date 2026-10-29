@@ -1,0 +1,64 @@
+{
+  "product_only": [
+    {
+      "file": "backend/public_seed.py",
+      "before_sha256": "3ee02b27b4f4fb63604c0e6f0e00a61f494362d20b3047e2c361d8c15f50d0cf",
+      "after_sha256": "5968d54489aeb6bff554609bca61a50c1a2db59c6590a69522b48f180af002bf",
+      "changed": true
+    },
+    {
+      "file": "backend/regional_adapters.py",
+      "before_sha256": "d8ad1e3e7274834521de19735f60b72291965da564fb60dc841e21609c0e2e4e",
+      "after_sha256": "8875d2d2a239945c32af0ba82e974e4d83ab8a62481515b5cad17596912c0dd6",
+      "changed": true
+    },
+    {
+      "file": "backend/regional_public_provenance.py",
+      "before_sha256": "f99ca08088b43fa9f3fe643e45c935f23583a364a8bbd9021dfe2d5dbef041dd",
+      "after_sha256": "c91d55932849bde0e5f423b90642332ec7e48951d192001327950cf35ed57a10",
+      "changed": true
+    },
+    {
+      "file": "backend/routes/regional_guides.py",
+      "before_sha256": "358409b5ce43cf4a3162c840cb3bc3711d6ec09bf563141ae3e9ad55af5bbc59",
+      "after_sha256": "e0e1986033857d4a4b66ae7e0232bb2884f31962d09c5d16892186ead128406a",
+      "changed": true
+    },
+    {
+      "file": "backend/regional_zhejiang_request.py",
+      "before_sha256": "398d6e9dbedbcdc3805cc5695ac27b32f1048f7341ae4b17434c62bba32f3194",
+      "after_sha256": "5c890e1fd5f9ebe6fa4ac565be7c91c8e7084e80e059306cfd285f2f8353c69d",
+      "changed": true
+    },
+    {
+      "file": "backend/tests/test_oct29d_dispatch.py",
+      "before_sha256": "84692c27c4477cb6733e557c36421c4260387573cc66467def1b216dac791680",
+      "after_sha256": "816022a0c57b946f739c666960b791cc256001191f19d69a67df33c4a4137d9e",
+      "changed": true
+    },
+    {
+      "file": "backend/tests/test_oct29d_public_release.py",
+      "before_sha256": "38bb9b1879eb740a7582012b01041d7fdf20e0f21ac14334db7b822e089009b2",
+      "after_sha256": "22f81e20b230a55441afa36b7ab5a751347d82f814dfbefb6842d644beb69268",
+      "changed": true
+    },
+    {
+      "file": "frontend/src/views/RegionalDocument.vue",
+      "before_sha256": "90ca9fae55d72a1b42b7a004b2c0990c33f48ae0ad7bdbc3105bcd769b16d635",
+      "after_sha256": "6bead0d657db306760acc2f6ce5d78e302ee1f5c8993ce42dc5c135174ce7f96",
+      "changed": true
+    }
+  ],
+  "sealed_sources_unchanged": true,
+  "prior_C_public_delivery_only": {
+    "file": "backend/regional_public_provenance.py",
+    "old": {
+      "bytes": 10010,
+      "sha256": "3831e9b497253890801a004f75082ddcb38057bd848d0e488bcf75fb1aaf31ac"
+    },
+    "new": {
+      "bytes": 11097,
+      "sha256": "c91d55932849bde0e5f423b90642332ec7e48951d192001327950cf35ed57a10"
+    }
+  }
+}

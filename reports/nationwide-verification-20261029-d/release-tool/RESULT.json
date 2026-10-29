@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "scope": "release tool synthetic temporary fixture tests only",
+  "D_tool_tests": 20,
+  "C_history_regression_tests": 12,
+  "final_backup_checks": 2,
+  "real_RED_retained": true,
+  "candidate_append_on_actual_store": "NOT_RUN",
+  "prepare_on_actual_store": "NOT_RUN",
+  "apply_on_actual_store": "NOT_RUN",
+  "real_browser_and_document_receipts": "NOT_AUTHORED_BY_THIS_AGENT",
+  "models_called": 0,
+  "actual_databases_accessed": false,
+  "services_changed": false,
+  "git_operations": false,
+  "fixture_candidate_versions": [
+    195,
+    196,
+    197,
+    198
+  ],
+  "fixture_main_versions": [
+    203,
+    204,
+    205,
+    206
+  ],
+  "fixture_candidate_counts": {
+    "before": [
+      13,
+      194,
+      177
+    ],
+    "after": [
+      17,
+      198,
+      181
+    ]
+  },
+  "fixture_main_counts": {
+    "before": [
+      194,
+      177,
+      202,
+      4294,
+      28
+    ],
+    "after": [
+      198,
+      181,
+      206,
+      4294,
+      24
+    ]
+  },
+  "root_forwarding": "PASS loader/projection/checked-adapter root kwargs all match resolved temporary root"
+}

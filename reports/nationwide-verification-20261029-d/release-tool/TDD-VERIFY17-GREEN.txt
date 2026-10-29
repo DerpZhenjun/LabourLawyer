@@ -1,0 +1,7 @@
+test_verify17_requires_exact_capability_count_and_both_database_hashes (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_verify17_requires_exact_capability_count_and_both_database_hashes) ... ok
+test_append_failure_restores_verifiable_database_hash (backend.tests.test_reviewed_oct29d_release.DReleaseTests.test_append_failure_restores_verifiable_database_hash) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 4.856s
+
+OK

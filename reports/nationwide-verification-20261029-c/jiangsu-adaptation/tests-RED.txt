@@ -3,10 +3,10 @@ EEEEEEE
 ERROR: test_application_birthdate_copy_counts_signature_and_package (test_jiangsu_oct29c.JiangsuOct29CTests.test_application_birthdate_copy_counts_signature_and_package)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "D:\workspace\DerpZhenjun\Partlawyer-LAA\backend\tests\test_jiangsu_oct29c.py", line 47, in test_application_birthdate_copy_counts_signature_and_package
+  File "backend\tests\test_jiangsu_oct29c.py", line 47, in test_application_birthdate_copy_counts_signature_and_package
     g = adapter.parse_capture(code)
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\workspace\DerpZhenjun\Partlawyer-LAA\backend\regional_jiangsu_oct29c.py", line 13, in parse_capture
+  File "backend\regional_jiangsu_oct29c.py", line 13, in parse_capture
     raise ValueError('C own-source parser not yet implemented')
 ValueError: C own-source parser not yet implemented
 
@@ -14,10 +14,10 @@ ValueError: C own-source parser not yet implemented
 ERROR: test_each_own_identity_and_capabilities_survive_publication (test_jiangsu_oct29c.JiangsuOct29CTests.test_each_own_identity_and_capabilities_survive_publication)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "D:\workspace\DerpZhenjun\Partlawyer-LAA\backend\tests\test_jiangsu_oct29c.py", line 32, in test_each_own_identity_and_capabilities_survive_publication
+  File "backend\tests\test_jiangsu_oct29c.py", line 32, in test_each_own_identity_and_capabilities_survive_publication
     g = adapter.parse_capture(name)
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\workspace\DerpZhenjun\Partlawyer-LAA\backend\regional_jiangsu_oct29c.py", line 13, in parse_capture
+  File "backend\regional_jiangsu_oct29c.py", line 13, in parse_capture
     raise ValueError('C own-source parser not yet implemented')
 ValueError: C own-source parser not yet implemented
 
@@ -25,7 +25,7 @@ ValueError: C own-source parser not yet implemented
 ERROR: test_evidence_six_columns_and_long_input_no_silent_truncation (test_jiangsu_oct29c.JiangsuOct29CTests.test_evidence_six_columns_and_long_input_no_silent_truncation)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "D:\workspace\DerpZhenjun\Partlawyer-LAA\backend\tests\test_jiangsu_oct29c.py", line 68, in test_evidence_six_columns_and_long_input_no_silent_truncation
+  File "backend\tests\test_jiangsu_oct29c.py", line 68, in test_evidence_six_columns_and_long_input_no_silent_truncation
     doc = adapter.fill_candidate_document(adapter.parse_capture(code), 'evidence', data)
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: module 'regional_jiangsu_oct29c' has no attribute 'fill_candidate_document'
@@ -34,10 +34,10 @@ AttributeError: module 'regional_jiangsu_oct29c' has no attribute 'fill_candidat
 ERROR: test_public_clean_root_has_no_private_sample_fallback (test_jiangsu_oct29c.JiangsuOct29CTests.test_public_clean_root_has_no_private_sample_fallback)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "D:\workspace\DerpZhenjun\Partlawyer-LAA\backend\tests\test_jiangsu_oct29c.py", line 118, in test_public_clean_root_has_no_private_sample_fallback
+  File "backend\tests\test_jiangsu_oct29c.py", line 118, in test_public_clean_root_has_no_private_sample_fallback
     g = adapter.parse_capture('320411', capture_root=public)
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\workspace\DerpZhenjun\Partlawyer-LAA\backend\regional_jiangsu_oct29c.py", line 13, in parse_capture
+  File "backend\regional_jiangsu_oct29c.py", line 13, in parse_capture
     raise ValueError('C own-source parser not yet implemented')
 ValueError: C own-source parser not yet implemented
 
@@ -45,10 +45,10 @@ ValueError: C own-source parser not yet implemented
 ERROR: test_reject_changed_fields_materials_and_capture_binding (test_jiangsu_oct29c.JiangsuOct29CTests.test_reject_changed_fields_materials_and_capture_binding)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "D:\workspace\DerpZhenjun\Partlawyer-LAA\backend\tests\test_jiangsu_oct29c.py", line 90, in test_reject_changed_fields_materials_and_capture_binding
+  File "backend\tests\test_jiangsu_oct29c.py", line 90, in test_reject_changed_fields_materials_and_capture_binding
     g = adapter.parse_capture('320411'); mutate(g)
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\workspace\DerpZhenjun\Partlawyer-LAA\backend\regional_jiangsu_oct29c.py", line 13, in parse_capture
+  File "backend\regional_jiangsu_oct29c.py", line 13, in parse_capture
     raise ValueError('C own-source parser not yet implemented')
 ValueError: C own-source parser not yet implemented
 
@@ -56,10 +56,10 @@ ValueError: C own-source parser not yet implemented
 ERROR: test_reject_sample_placeholder_rebinding_and_annex_mutation (test_jiangsu_oct29c.JiangsuOct29CTests.test_reject_sample_placeholder_rebinding_and_annex_mutation)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "D:\workspace\DerpZhenjun\Partlawyer-LAA\backend\tests\test_jiangsu_oct29c.py", line 98, in test_reject_sample_placeholder_rebinding_and_annex_mutation
+  File "backend\tests\test_jiangsu_oct29c.py", line 98, in test_reject_sample_placeholder_rebinding_and_annex_mutation
     g = adapter.parse_capture('320411')
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\workspace\DerpZhenjun\Partlawyer-LAA\backend\regional_jiangsu_oct29c.py", line 13, in parse_capture
+  File "backend\regional_jiangsu_oct29c.py", line 13, in parse_capture
     raise ValueError('C own-source parser not yet implemented')
 ValueError: C own-source parser not yet implemented
 
@@ -67,10 +67,10 @@ ValueError: C own-source parser not yet implemented
 ERROR: test_reject_wrong_scope_source_authority_and_task (test_jiangsu_oct29c.JiangsuOct29CTests.test_reject_wrong_scope_source_authority_and_task)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "D:\workspace\DerpZhenjun\Partlawyer-LAA\backend\tests\test_jiangsu_oct29c.py", line 79, in test_reject_wrong_scope_source_authority_and_task
+  File "backend\tests\test_jiangsu_oct29c.py", line 79, in test_reject_wrong_scope_source_authority_and_task
     g = adapter.parse_capture('320411'); g[field] = value
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "D:\workspace\DerpZhenjun\Partlawyer-LAA\backend\regional_jiangsu_oct29c.py", line 13, in parse_capture
+  File "backend\regional_jiangsu_oct29c.py", line 13, in parse_capture
     raise ValueError('C own-source parser not yet implemented')
 ValueError: C own-source parser not yet implemented
 
