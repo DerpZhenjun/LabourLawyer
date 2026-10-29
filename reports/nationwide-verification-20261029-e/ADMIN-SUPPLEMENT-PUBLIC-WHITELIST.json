@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "scope": "E admin screenshot supplement only; independently sealed C/D acceptance reports untouched.",
+  "files": [
+    {
+      "file": "reports/nationwide-verification-20261029-e/ADMIN-SUPPLEMENT-RESULT.json",
+      "sha256": "835347791ad01751dc46b8a31d0ecf29f2f9c94e407b6e82aaf93fcb67a990ef",
+      "bytes": 1089
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/admin-regions-1440.png",
+      "sha256": "9e2c67e2e25be2a56f27743e3e9798de4baa096f4e8d1e1c264c374457af895d",
+      "bytes": 174028
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "phase": "E4_own_sources_registered_not_adapted",
+  "main_guides": 198,
+  "main_generatable_localities": 181,
+  "candidate_queue": 28,
+  "guides": [
+    "reports/nationwide-verification-20261029-e/jiangsu/xiangcheng/guide.json",
+    "reports/nationwide-verification-20261029-e/jiangsu/wujiang/guide.json",
+    "reports/nationwide-verification-20261029-e/zhejiang/fuyang/guide.json",
+    "reports/nationwide-verification-20261029-e/zhejiang/jiande/guide.json"
+  ],
+  "generation_granted": false,
+  "models_called": false,
+  "next": "Individually inspect own forms and source bindings, implement exact contracts, Word page QA, isolated candidate seven/eight own forms only if source slots verified, then native browser acceptance. Do not reuse D facts or inferred template capability.",
+  "updated_at": "2026-10-29T20:33:38.601974+08:00",
+  "main_release": "reports/nationwide-verification-20261029-d/PUBLICATION.json",
+  "outbox_pending": 368,
+  "openclaw_acknowledged": 0,
+  "windows_model_started": false,
+  "night_automation_status": "PAUSED"
+}

@@ -1368,5 +1368,247 @@
       "main_web_qa": "PASS",
       "native_documents": "reports/nationwide-verification-20261029-d/live-release/RESULT.json"
     }
+  },
+  {
+    "province": "jiangsu",
+    "city": "苏州市",
+    "district": "相城区",
+    "region_code": "320507",
+    "source_url": "https://szxc.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=28&iddept_ql_inf=11320507555810103L4002014302002&ql_kind=20&iddept_yw_inf=11320507555810103L400201430200201",
+    "source_id": "e87b6309ce5f6b51ba0aa5fc",
+    "published": false,
+    "can_generate": false,
+    "guide_file": "reports/nationwide-verification-20261029-e/jiangsu/xiangcheng/guide.json",
+    "api_qa_status": "NOT_RUN",
+    "document_visual_qa_status": "NOT_RUN",
+    "web_qa_status": "NOT_RUN",
+    "note": "仅核验本区自身官方指南、材料及原件；尚未填写/版式/网页适配，不以同SHA或邻区资料授予生成能力。",
+    "authority": "苏州市相城区人力资源和社会保障局",
+    "checked_at": "2026-10-29T12:13:15.899Z",
+    "guide_status": "candidate",
+    "generation_enabled": false,
+    "reviewed_sections": [
+      "受理标准",
+      "办理材料",
+      "办理流程",
+      "办理时限",
+      "收费情况",
+      "办理结果",
+      "法律依据",
+      "常见问题",
+      "基本信息",
+      "咨询投诉"
+    ],
+    "templates": [
+      {
+        "region_code": "320507",
+        "source_url": "https://szxc.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=28&iddept_ql_inf=11320507555810103L4002014302002&ql_kind=20&iddept_yw_inf=11320507555810103L400201430200201",
+        "kind": "blank",
+        "original_name": "证据复印件.docx",
+        "sha256": "8dae42265086696071d6173f162d47c9fdd9bdf4782cf1c70d28779b5894277f",
+        "document_types": []
+      },
+      {
+        "region_code": "320507",
+        "source_url": "https://szxc.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=28&iddept_ql_inf=11320507555810103L4002014302002&ql_kind=20&iddept_yw_inf=11320507555810103L400201430200201",
+        "kind": "blank",
+        "original_name": "证据清单.docx",
+        "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+        "document_types": []
+      },
+      {
+        "region_code": "320507",
+        "source_url": "https://szxc.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=28&iddept_ql_inf=11320507555810103L4002014302002&ql_kind=20&iddept_yw_inf=11320507555810103L400201430200201",
+        "kind": "blank",
+        "original_name": "身份证复印件.docx",
+        "sha256": "f36541d8f1c49a0229d1510ae9f5cc5eb72ff294a17aec69c82b06e7ec571714",
+        "document_types": []
+      },
+      {
+        "region_code": "320507",
+        "source_url": "https://szxc.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=28&iddept_ql_inf=11320507555810103L4002014302002&ql_kind=20&iddept_yw_inf=11320507555810103L400201430200201",
+        "kind": "blank",
+        "original_name": "劳动人事争议仲裁申请书.docx",
+        "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+        "document_types": []
+      },
+      {
+        "region_code": "320507",
+        "source_url": "https://szxc.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=28&iddept_ql_inf=11320507555810103L4002014302002&ql_kind=20&iddept_yw_inf=11320507555810103L400201430200201",
+        "kind": "instruction",
+        "original_name": "仲裁申请.png",
+        "sha256": "dc407a951d748964846c061b0331167db5c0178a8a7515f6ab933494c74aa8ee",
+        "document_types": []
+      }
+    ],
+    "application_template_status": "blank_found",
+    "evidence_template_status": "blank_found"
+  },
+  {
+    "province": "jiangsu",
+    "city": "苏州市",
+    "district": "吴江区",
+    "region_code": "320509",
+    "source_url": "https://szwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=29&iddept_ql_inf=1132058401420395XF4002014302002&ql_kind=20&iddept_yw_inf=1132058401420395XF400201430200201",
+    "source_id": "17dae350af59963fb0c16dba",
+    "published": false,
+    "can_generate": false,
+    "guide_file": "reports/nationwide-verification-20261029-e/jiangsu/wujiang/guide.json",
+    "api_qa_status": "NOT_RUN",
+    "document_visual_qa_status": "NOT_RUN",
+    "web_qa_status": "NOT_RUN",
+    "note": "仅核验本区自身官方指南、材料及原件；尚未填写/版式/网页适配，不以同SHA或邻区资料授予生成能力。",
+    "authority": "苏州市吴江区人力资源和社会保障局",
+    "checked_at": "2026-10-29T12:16:48.336Z",
+    "guide_status": "candidate",
+    "generation_enabled": false,
+    "reviewed_sections": [
+      "受理标准",
+      "办理材料",
+      "办理流程",
+      "办理时限",
+      "收费情况",
+      "办理结果",
+      "法律依据",
+      "常见问题",
+      "基本信息",
+      "咨询投诉"
+    ],
+    "templates": [
+      {
+        "region_code": "320509",
+        "source_url": "https://szwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=29&iddept_ql_inf=1132058401420395XF4002014302002&ql_kind=20&iddept_yw_inf=1132058401420395XF400201430200201",
+        "kind": "blank",
+        "original_name": "证据复印件.docx",
+        "sha256": "8dae42265086696071d6173f162d47c9fdd9bdf4782cf1c70d28779b5894277f",
+        "document_types": []
+      },
+      {
+        "region_code": "320509",
+        "source_url": "https://szwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=29&iddept_ql_inf=1132058401420395XF4002014302002&ql_kind=20&iddept_yw_inf=1132058401420395XF400201430200201",
+        "kind": "blank",
+        "original_name": "证据清单.docx",
+        "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+        "document_types": []
+      },
+      {
+        "region_code": "320509",
+        "source_url": "https://szwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=29&iddept_ql_inf=1132058401420395XF4002014302002&ql_kind=20&iddept_yw_inf=1132058401420395XF400201430200201",
+        "kind": "blank",
+        "original_name": "身份证复印件.docx",
+        "sha256": "f36541d8f1c49a0229d1510ae9f5cc5eb72ff294a17aec69c82b06e7ec571714",
+        "document_types": []
+      },
+      {
+        "region_code": "320509",
+        "source_url": "https://szwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=29&iddept_ql_inf=1132058401420395XF4002014302002&ql_kind=20&iddept_yw_inf=1132058401420395XF400201430200201",
+        "kind": "blank",
+        "original_name": "劳动人事争议仲裁申请书.docx",
+        "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+        "document_types": []
+      },
+      {
+        "region_code": "320509",
+        "source_url": "https://szwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=29&iddept_ql_inf=1132058401420395XF4002014302002&ql_kind=20&iddept_yw_inf=1132058401420395XF400201430200201",
+        "kind": "instruction",
+        "original_name": "仲裁申请.png",
+        "sha256": "dc407a951d748964846c061b0331167db5c0178a8a7515f6ab933494c74aa8ee",
+        "document_types": []
+      }
+    ],
+    "application_template_status": "blank_found",
+    "evidence_template_status": "blank_found"
+  },
+  {
+    "province": "zhejiang",
+    "city": "杭州市",
+    "district": "富阳区",
+    "region_code": "330111",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=31ce6363-7379-40c0-8454-f0715785e193",
+    "source_id": "16f67bbbcf7b124948381309",
+    "published": false,
+    "can_generate": false,
+    "guide_file": "reports/nationwide-verification-20261029-e/zhejiang/fuyang/guide.json",
+    "api_qa_status": "NOT_RUN",
+    "document_visual_qa_status": "NOT_RUN",
+    "web_qa_status": "NOT_RUN",
+    "note": "仅核验本区自身官方指南、材料及原件；尚未填写/版式/网页适配，不以同SHA或邻区资料授予生成能力。富阳公开材料未列身份证不等于免交，须核对其他栏目及机构要求。",
+    "authority": "区人社局",
+    "checked_at": "2026-10-29T12:18:08.338494+00:00",
+    "guide_status": "candidate",
+    "generation_enabled": false,
+    "reviewed_sections": [
+      "受理条件",
+      "办理流程",
+      "常见问题",
+      "设定依据",
+      "窗口"
+    ],
+    "templates": [
+      {
+        "region_code": "330111",
+        "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=31ce6363-7379-40c0-8454-f0715785e193",
+        "kind": "blank",
+        "original_name": "《劳动人事争议仲裁申请书》.docx",
+        "sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+        "document_types": []
+      },
+      {
+        "region_code": "330111",
+        "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=31ce6363-7379-40c0-8454-f0715785e193",
+        "kind": "blank",
+        "original_name": "《证据清单》.docx",
+        "sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+        "document_types": []
+      }
+    ],
+    "application_template_status": "blank_found",
+    "evidence_template_status": "blank_found"
+  },
+  {
+    "province": "zhejiang",
+    "city": "杭州市",
+    "district": "建德市",
+    "region_code": "330182",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ed48d6e4-e7ee-433d-97aa-b1352d1fb341",
+    "source_id": "f6487b8d118bdc3289baad17",
+    "published": false,
+    "can_generate": false,
+    "guide_file": "reports/nationwide-verification-20261029-e/zhejiang/jiande/guide.json",
+    "api_qa_status": "NOT_RUN",
+    "document_visual_qa_status": "NOT_RUN",
+    "web_qa_status": "NOT_RUN",
+    "note": "仅核验本区自身官方指南、材料及原件；尚未填写/版式/网页适配，不以同SHA或邻区资料授予生成能力。",
+    "authority": "市人力资源和社会保障局",
+    "checked_at": "2026-10-29T12:21:51.249850+00:00",
+    "guide_status": "candidate",
+    "generation_enabled": false,
+    "reviewed_sections": [
+      "受理条件",
+      "办理流程",
+      "常见问题",
+      "设定依据",
+      "窗口"
+    ],
+    "templates": [
+      {
+        "region_code": "330182",
+        "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ed48d6e4-e7ee-433d-97aa-b1352d1fb341",
+        "kind": "blank",
+        "original_name": "《劳动人事争议仲裁申请书》.docx",
+        "sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+        "document_types": []
+      },
+      {
+        "region_code": "330182",
+        "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ed48d6e4-e7ee-433d-97aa-b1352d1fb341",
+        "kind": "blank",
+        "original_name": "《证据清单》.docx",
+        "sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+        "document_types": []
+      }
+    ],
+    "application_template_status": "blank_found",
+    "evidence_template_status": "blank_found"
   }
 ]

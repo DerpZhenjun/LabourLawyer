@@ -1,7 +1,7 @@
 {
   "phase": "D4_main_published_and_verified_next_E_own_source_collection",
   "new_candidates": 4,
-  "candidate_queue": 24,
+  "candidate_queue": 28,
   "main_guides": 198,
   "main_generatable_localities": 181,
   "guides": [
@@ -10,7 +10,7 @@
     "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/guide.json",
     "reports/nationwide-verification-20261029-d/zhejiang/linan/guide.json"
   ],
-  "next": "D4 actual apply completed, do not repeat. Main backend D marker/main_default already running via authorized project-only restart. Commit exact198/181 public release then clean archive bootstrap. E sources only under collection; register only completed own-source captures, no generation before adaptation/QA.",
+  "next": "D published198/181 and main verification complete. Continue only E own-source adapters after checking E checkpoint; do not repeat D append/apply or restart already current main unnecessarily.",
   "models_called": false,
   "updated_at": "2026-10-29T19:58:24.581639+08:00",
   "candidate_guides": 198,
@@ -51,5 +51,7 @@
   "discovery_jobs": 4294,
   "main_native_documents": 7,
   "main_browser_status": "PASS",
-  "main_candidate_file_sha_match": 7
+  "main_candidate_file_sha_match": 7,
+  "queue_at_D_publication": 24,
+  "next_source_checkpoint": "reports/nationwide-verification-20261029-e/RESUME-CHECKPOINT.json"
 }

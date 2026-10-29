@@ -42,7 +42,7 @@ Android APK为USB联调包；Windows提供安装版和便携版。安装包包�
 | 已发布当地指南 | 198 地：四川 180、江苏 8、浙江 4、安徽 2、湖南 4 |
 | 已发布当地填写生成 | 181 地：四川 164、江苏 8、浙江 4、安徽 1、湖南 4 |
 | 仅指南、未开放当地生成 | 17 地 |
-| 未发布候选 | 24 地，均不计入上线覆盖 |
+| 未发布候选 | 28 地，均不计入上线覆盖 |
 | 历史省级文书 | 保留独立入口，须另核对适用范围，不计入区县完成数 |
 
 近期新增滨海县、响水县、杭州市上城区、滨江区和合肥市庐阳区的独立资料。滨海、响水及上城已完成离线填写与逐页版式检查，仍待网页验收。滨江材料栏与流程冲突，庐阳的时限说明存在差异，均保留待核验。临平搜索落到市本级的结果未作为该区指南。新候选未发布，没有任何省份被标记为“全区县完成”。
@@ -53,11 +53,13 @@ Android APK为USB联调包；Windows提供安装版和便携版。安装包包�
 
 雨花、望城、新北、武进已完成各自模板适配，候选站六类文书实际下载、10页版式和375/768/1440响应式检查通过。雨花、望城使用各自劳动者申请书内的证据栏目；新北、武进分别支持自身申请书及独立证据清单。主站已核对新后端标记并增量发布，**该批发布后为194份当地指南、177个地区可填写生成**，保留全部原有指南历史和4294条采集任务。[发布回执](reports/nationwide-verification-20261029-c/PUBLICATION.json)。[本批验收](reports/nationwide-verification-20261029-c/TEST-REPORT.md)。姑苏、吴中、萧山、临安也已增量发布，**当前合计198份当地指南、181个地区可填写生成**。本批七项原生下载的文件与候选SHA完全一致，关联已检查13页；临安仅开放劳动者申请书，不启用未发布证据项，未查到不等于官方没有提供。[本批发布回执](reports/nationwide-verification-20261029-d/PUBLICATION.json)。[后续四区验收](reports/nationwide-verification-20261029-d/TEST-REPORT.md)。全国尚未完成。
 
+相城、吴江、富阳、建德已分别取得自身指南与公开原件，仅登记为候选，尚未开放当地填写生成；不因原件与其他地区同SHA就继承其能力。富阳材料表与建德材料表实际不同，保留各自原文，未核验不解释为官方没有提供。[下一批来源](reports/nationwide-verification-20261029-e/SOURCE-INVENTORY.json)。
+
 禅城仅找到历史文书，当前适用性待核实；南海、历下、市中及此前5地继续定位或访问复核。管理页区分未查、已查未找到、官方明确未提供，本轮最后一种结论为0。详见[第一批验收](reports/nationwide-verification-20261029/TEST-REPORT.md)与[第二批来源](reports/nationwide-verification-20261029-b/SOURCE-INVENTORY.json)。
 
 <img src="reports/nationwide-verification-20261029-b/candidate-hunan/430103-375.png" width="300" alt="湖南天心区实际填写界面，375px浏览器截图" />
 
-![主站真实地区覆盖矩阵：198份指南、181地生成、24地候选](reports/nationwide-verification-20261029-d/live-release/admin-regions-1440.png)
+![主站真实地区覆盖矩阵：198份指南、181地生成、28地候选](reports/nationwide-verification-20261029-e/admin-regions-1440.png)
 
 运行后在 `/admin/regions` 查看实时矩阵。仓库中可核对 [逐省实际进度](docs/regions-status.md)、[公开数据版本](data/public-regions/manifest.json)、[候选登记](config/regional_candidates.json) 与 [地区接入说明](docs/regional-release.md)。
 

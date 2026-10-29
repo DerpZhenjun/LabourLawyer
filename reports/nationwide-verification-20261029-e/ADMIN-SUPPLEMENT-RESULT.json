@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "scope": "Main admin regions screenshot after E source-only registration; no E publication or document-generation acceptance claimed.",
+  "route": "/admin/regions",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "observed_counts": {
+    "published_guides": 198,
+    "generatable_regions": 181,
+    "candidate_regions": 28,
+    "outbox_pending_confirmation": 358
+  },
+  "screenshot": {
+    "file": "reports/nationwide-verification-20261029-e/admin-regions-1440.png",
+    "sha256": "9e2c67e2e25be2a56f27743e3e9798de4baa096f4e8d1e1c264c374457af895d",
+    "bytes": 174028,
+    "visual_qa": "PASS",
+    "inspection": "Saved screenshot opened with view_image; visible counts198/181/28 confirmed."
+  },
+  "console_error_warn": 0,
+  "model_endpoint_requests": 0,
+  "own_page_closed": true,
+  "service_changes": false,
+  "database_mutations": false,
+  "git_operations": false,
+  "word_started": false,
+  "boundaries": "Pending confirmation358 is the visible UI observation; no external acknowledgement was verified or claimed."
+}
