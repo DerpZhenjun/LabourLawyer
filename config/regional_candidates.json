@@ -135,7 +135,11 @@
     "source_id": "5e53e6d3179046433e5fdcb8",
     "source_url": "https://ycdt.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=100&iddept_ql_inf=11320981014396886W4002014302002&ql_kind=20&iddept_yw_inf=11320981014396886W400201430200201",
     "published": false,
-    "can_generate": false
+    "can_generate": false,
+    "document_visual_qa_status": "PASS_OWN_SOURCE_PAGES_REVIEWED_20261029",
+    "offline_qa_report": "reports/regional-release-20261029/jiangsu/320981/document-approval.json",
+    "api_qa_status": "PASS_FOUR_POSTS_ISOLATED_ASGI",
+    "web_qa_status": "NOT_RUN_POLICY_REFUSAL_RETAINED"
   },
   {
     "province": "jiangsu",
@@ -145,7 +149,11 @@
     "source_id": "69952614ad2cf51d91ee7460",
     "source_url": "https://ycsy.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=98&iddept_ql_inf=11320924737070337G4002014302002&ql_kind=20&iddept_yw_inf=11320924737070337G400201430200201",
     "published": false,
-    "can_generate": false
+    "can_generate": false,
+    "document_visual_qa_status": "PASS_OWN_SOURCE_PAGES_REVIEWED_20261029",
+    "offline_qa_report": "reports/regional-release-20261029/jiangsu/320924/document-approval.json",
+    "api_qa_status": "PASS_FOUR_POSTS_ISOLATED_ASGI",
+    "web_qa_status": "NOT_RUN_POLICY_REFUSAL_RETAINED"
   },
   {
     "province": "zhejiang",
@@ -155,7 +163,11 @@
     "source_id": "b08b6dbd369b40e729e61bdc",
     "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=8f1bc917-6583-4541-be13-231de0b91d0b",
     "published": false,
-    "can_generate": false
+    "can_generate": false,
+    "document_visual_qa_status": "PASS_OWN_SOURCE_PAGES_REVIEWED_20261029",
+    "offline_qa_report": "reports/regional-release-20261029/zhejiang/release-review.json",
+    "api_qa_status": "EXISTING_ADAPTER_REGRESSION_PASS",
+    "web_qa_status": "NOT_RUN_POLICY_REFUSAL_RETAINED"
   },
   {
     "province": "zhejiang",
