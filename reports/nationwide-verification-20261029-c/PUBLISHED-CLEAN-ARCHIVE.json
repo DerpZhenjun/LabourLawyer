@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "commit": "650c6cc8a9ea0c76f41e5b10f3576171e09128c3",
+  "archive_sha256": "a1c992226558153544e1c9da9aa9a9fedf7ba97b18590f20f77e8a249ffb3f8a",
+  "method": "git archive independent root only; fresh empty SQLite bootstrap194/177 with no missing attachments;12 own-source/route/public tests",
+  "tests": 12,
+  "published_guides": 194,
+  "generatable_localities": 177,
+  "missing_attachments": 0,
+  "models_called": false
+}

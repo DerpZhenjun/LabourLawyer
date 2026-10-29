@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scope": "supplemental read-only main admin screenshot",
+  "url": "http://127.0.0.1:5173/admin/regions",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "published_guides": 194,
+  "generatable_regions": 177,
+  "candidates_pending_acceptance": 28,
+  "tracked_precise_places": 3590,
+  "visual_qa": {
+    "status": "PASS",
+    "method": "Native MCP screenshot returned image pixels, ordinary file save, then view_image of saved file; visible count card194/177/28 confirmed.",
+    "file": "reports/nationwide-verification-20261029-c/live-release/admin-regions-1440.png",
+    "sha256": "e06c43ea93eadb5af23c87d2946c3df4b7112c75e798238ab69572626dcebdde"
+  },
+  "prior_live_release_sealed_files_unchanged": true,
+  "no_model_calls": true,
+  "no_db_or_service_mutation": true,
+  "no_git_operations": true
+}

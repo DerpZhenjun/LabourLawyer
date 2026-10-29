@@ -1,0 +1,13 @@
+{
+  "scope": "Only this new main admin screenshot and supplemental result; existing live RESULT and PUBLIC-WHITELIST remain sealed and unchanged.",
+  "files": {
+    "reports/nationwide-verification-20261029-c/live-release/admin-regions-1440.png": {
+      "sha256": "e06c43ea93eadb5af23c87d2946c3df4b7112c75e798238ab69572626dcebdde",
+      "bytes": 174304
+    },
+    "reports/nationwide-verification-20261029-c/live-release/ADMIN-SUPPLEMENT-RESULT.json": {
+      "sha256": "8a23af07444ea80c3caf9a15b327d73b30782311a9992c3d5883912b35ca957b",
+      "bytes": 859
+    }
+  }
+}
