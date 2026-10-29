@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "candidate_acceptance": true,
+  "regions": {
+    "320507": {
+      "source_id": "e87b6309ce5f6b51ba0aa5fc",
+      "version": 199
+    },
+    "320509": {
+      "source_id": "17dae350af59963fb0c16dba",
+      "version": 200
+    },
+    "330111": {
+      "source_id": "16f67bbbcf7b124948381309",
+      "version": 201
+    },
+    "330182": {
+      "source_id": "f6487b8d118bdc3289baad17",
+      "version": 202
+    }
+  },
+  "checks": [
+    {
+      "id": "four_exact_localities",
+      "passed": true,
+      "evidence": "Own DOM province/city/district and authority verified for all four E localities; actual generation source versions199/200/201/202."
+    },
+    {
+      "id": "form_order_fiction_worker",
+      "passed": true,
+      "evidence": "Editor follows locality selectors and precedes own guide; fictional defaults explicit; Zhejiang worker-only, default dates/household choices blank."
+    },
+    {
+      "id": "jiangsu_strict_slots",
+      "passed": true,
+      "evidence": "Actual native application payload28 keys, evidence4header/list keys and five item columns; independent evidence has no copies slot. Other document type/number and mediation/legal aid free text retained."
+    },
+    {
+      "id": "independent_copies_and_dob",
+      "passed": true,
+      "evidence": "XiangchengDOB1991-05-09 application/evidence copies3/2; WujiangDOB1993-06-10 copies4/3. Actual Word pages visually checked."
+    },
+    {
+      "id": "evidence_add_remove_drafts",
+      "passed": true,
+      "evidence": "Native MCP JS1440 and375 plus ZJ768 evidence started one item, added second then deleted second; JS1440 and ZJ768 app/evidence drafts retained separately. Evidence views had no application fields."
+    },
+    {
+      "id": "responsive_375_768_1440",
+      "passed": true,
+      "evidence": "Actual emulate widths375/768/1440, document scroll widths375/753/1425; saved screenshots inspected."
+    },
+    {
+      "id": "fab_does_not_cover_cta",
+      "passed": true,
+      "evidence": "JS375 actual rectangle intersection false and CTA center hit belongs to generation button."
+    },
+    {
+      "id": "cancel_escape_no_post",
+      "passed": true,
+      "evidence": "Native Escape and Cancel closed confirmation; isolated MCP generation request count0."
+    },
+    {
+      "id": "fuyang_source_difference",
+      "passed": true,
+      "evidence": "FY materials4 omit standalone ID material; own warning explicitly says this does not mean ID exemption, because its own application still requires ID copy or other identity evidence."
+    },
+    {
+      "id": "jiande_source_difference",
+      "passed": true,
+      "evidence": "JD materials5 and both source telephone0571-64721626 and consultation0571-64721936 retained; FY-only ID caveat not inherited."
+    },
+    {
+      "id": "household_ambiguity_mitigated",
+      "passed": true,
+      "evidence": "Duplicate external-household source label explained, both ambiguous duplicates excluded from selector, default blank; no unsupported choice injected."
+    },
+    {
+      "id": "unknown_district_no_inheritance",
+      "passed": true,
+      "evidence": "Selecting Qiantang produced zero forms, no own guide source and no generation button."
+    },
+    {
+      "id": "async_evidence_route",
+      "passed": true,
+      "evidence": "Native own guide evidence link opened /local-documents/zhejiang/evidence in same SPA timeOrigin1793284958139.6; evidence editor had no application fields and accepted fictional edit."
+    },
+    {
+      "id": "native_eight_word_fourteen_pages",
+      "passed": true,
+      "evidence": "8 native confirmation clicks yielded8 HTTP200 actual DOCX; ZIP/XML PASS; isolated Word read-only PDFs rasterized and all14 page PNG opened with view_image."
+    },
+    {
+      "id": "console_no_models",
+      "passed": true,
+      "evidence": "MCP preserved console error/warn empty, native browser errors empty,102 actual captured requests had zero model endpoints; MCP generate requests0 and model endpoints0."
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "reports/nationwide-verification-20261029-e/acceptance/js-1440.png",
+      "sha256": "4cb94e075e5f2eeb30297cba43570a7ca365b1589c01c3ca1c51a4fb474d9586",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/acceptance/js-375-cta.png",
+      "sha256": "cb7b4274df0b38e080045c542af0b44db3757806a9bc56bd4844d39a4fa529bf",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/acceptance/noinherit-768.png",
+      "sha256": "baa4cc93c0949fcb7e980cb1381043298c6573d40b683a7d5ac74af7ebae0014",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/acceptance/zj-768.png",
+      "sha256": "f40f4eaf98b5435e2e1713e87b0b99266f6e4c5e82b37c4839b81802f03fe31a",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/acceptance/zj-route-1440.png",
+      "sha256": "176e162bf30bfa9f87c4e7b21be2bd27316f7b86fe588d9807b8d75b5a7b1f6b",
+      "visual_status": "PASS"
+    }
+  ],
+  "tool_click_observation": {
+    "product_fix_claimed": false,
+    "observation": "After field edit, automatic scrolling positioned tabs at y41.5625 beneath sticky header; center hit belonged to header SMALL/DIV. Native PageUp exposed controls and repeated native click selected the expected tab. No application-state or route injection used.",
+    "mobile_emulation": "Viewport changes may reload page; fresh snapshot and stable-viewport edits used afterward."
+  },
+  "boundaries": [
+    "Official authenticated submission was not attempted.",
+    "Only worker application and own independent evidence slots were accepted.",
+    "Browser download files were obtained by native confirmation clicks; no request replay or internal download page was used."
+  ]
+}

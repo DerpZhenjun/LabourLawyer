@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "operation": "verify_receipts only",
+  "canonical_parsers_used": true,
+  "explicit_root_forwarded": true,
+  "new_capabilities": {
+    "localities": 4,
+    "documents": 8
+  },
+  "checked_receipt_artifact_files": 24,
+  "checked_sha256": {
+    "reports/nationwide-verification-20261029-e/acceptance/BROWSER-RESULT.json": "a7c9189e3997c3a1ed58f6736378632b3ecae6ce7282cc49dfecc429914bcb00",
+    "reports/nationwide-verification-20261029-e/acceptance/DOCUMENT-RESULT.json": "744f0c305fedfe8e83a04a76363a68ef9b9ffbf3c3329d8f9ce4c366b317d254",
+    "reports/nationwide-verification-20261029-e/acceptance/downloads/320507-application.docx": "f8462078ceca3af5115bb40038e5c85c8022a087ba247b363c877105c5cf3eaf",
+    "reports/nationwide-verification-20261029-e/acceptance/pages/320507-application/page-1.png": "fd264807db8f8347b4d637b87fc6abb21b48708ba34e467876bfb5b47278504d",
+    "reports/nationwide-verification-20261029-e/acceptance/pages/320507-application/page-2.png": "35d7ab63133dd6403bfe526b9cf72753c30dfa7d3e09633ed739c62952128397",
+    "reports/nationwide-verification-20261029-e/acceptance/downloads/320507-evidence.docx": "75d90fa865bcf196069e343dfcecbd712b8070598fba49eccd88c7bcb8c04084",
+    "reports/nationwide-verification-20261029-e/acceptance/pages/320507-evidence/page-1.png": "41cdfda900a755080ee6960c1b5ec93085f1824382f361500ac9683bb574d09f",
+    "reports/nationwide-verification-20261029-e/acceptance/downloads/320509-evidence.docx": "c2f4a3f31319f9992c711aeeb29767cc71e36744a65af4aea1152e63066eb353",
+    "reports/nationwide-verification-20261029-e/acceptance/pages/320509-evidence/page-1.png": "2c1a9f3fda8ce74d9815904453de21092ca4a51243a0908b19b71d3c51ea316f",
+    "reports/nationwide-verification-20261029-e/acceptance/downloads/320509-application.docx": "39fa442c0a3070f04c0dbedab43aeb0e4a7271db45db053c90bded13229297d1",
+    "reports/nationwide-verification-20261029-e/acceptance/pages/320509-application/page-1.png": "f0ab9c4829823679078a45f3123c651b2ff99ab6cd61dd42d5ab95acd22125bd",
+    "reports/nationwide-verification-20261029-e/acceptance/pages/320509-application/page-2.png": "a38785ab44e7153804fb3613b1eec52f33b9f038acfaa7c9c842c14733c5ba7e",
+    "reports/nationwide-verification-20261029-e/acceptance/downloads/330111-application.docx": "645d4b05bcd9e94c28649e95ae21c3719ad069d603b7435eb1fbf6830237b315",
+    "reports/nationwide-verification-20261029-e/acceptance/pages/330111-application/page-1.png": "ba76e78efa24935286a5153e79e357582b512c55032375507abc50f4f4f072f4",
+    "reports/nationwide-verification-20261029-e/acceptance/pages/330111-application/page-2.png": "6c08f7ac350791fdbf89857e6ca9ff374fa680d5f6f35e84fc51265c2a93345c",
+    "reports/nationwide-verification-20261029-e/acceptance/pages/330111-application/page-3.png": "a2219c1fc597b1088f26154f90572be4f5aa00b0ed33d6159f1f0ef70c16740d",
+    "reports/nationwide-verification-20261029-e/acceptance/downloads/330111-evidence.docx": "cbdfaae3a22db5b4e6520a4232670286b263c45d77b28e01e3a946f69d4205e7",
+    "reports/nationwide-verification-20261029-e/acceptance/pages/330111-evidence/page-1.png": "515d5cc37b3e4bea69d85b4d5ad7badece2e889be7a410da7f5639b2cff48f70",
+    "reports/nationwide-verification-20261029-e/acceptance/downloads/330182-evidence.docx": "d11cd448077f3b7eeb1150f4e8923dae9e49c26a04a23dd023ee4c643987b8bb",
+    "reports/nationwide-verification-20261029-e/acceptance/pages/330182-evidence/page-1.png": "a83d12b8b09cc9a4b2a29da2b2949e70cbfa1b5a01844d163c102fb1e27522ae",
+    "reports/nationwide-verification-20261029-e/acceptance/downloads/330182-application.docx": "9029aa6c704c9735e2b0b696d64c6d741d51f9aecbd0f34c9b3fd4c13424e877",
+    "reports/nationwide-verification-20261029-e/acceptance/pages/330182-application/page-1.png": "effa140989de8de3d52cb1d26808eccb455d27e047c87ff7a6ec6ca5b7d0de89",
+    "reports/nationwide-verification-20261029-e/acceptance/pages/330182-application/page-2.png": "6c08f7ac350791fdbf89857e6ca9ff374fa680d5f6f35e84fc51265c2a93345c",
+    "reports/nationwide-verification-20261029-e/acceptance/pages/330182-application/page-3.png": "a2219c1fc597b1088f26154f90572be4f5aa00b0ed33d6159f1f0ef70c16740d"
+  },
+  "database_opened": false,
+  "prepare_or_apply_called": false
+}
