@@ -46,6 +46,14 @@ class EDispatchTests(unittest.TestCase):
                 self.assertIsNotNone(public_evidence(g,ROOT))
                 self.assertEqual(sum(t.get('can_generate') is True for t in with_reference_capabilities(g)['templates']),2)
 
+    def test_public_proof_rejects_empty_string_root_without_implicitly_using_cwd(self):
+        for g in [js('xiangcheng'),js('wujiang'),zj('fuyang'),zj('jiande')]:
+            t=next(t for t in g['templates'] if t['official_kind']=='blank' and t.get('file'))
+            for invalid in ['', ' ', '\t']:
+                self.assertIsNone(public_evidence(g,invalid),g['district'])
+                self.assertFalse(approved_report_attachment(g,t,invalid),g['district'])
+            self.assertIsNotNone(public_evidence(g,Path('.')),g['district'])
+
     def test_exact_zhejiang_request_models_match_own_slots_and_limits(self):
         from regional_zhejiang_request import ApplicationRequest,EvidenceRequest,EvidenceItem
         self.assertEqual(set(ApplicationRequest.model_fields),set(DATA_FIELDS['application']))
