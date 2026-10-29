@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "own_profiles": 2,
+  "exact_public_files": 140,
+  "source_files": 134,
+  "source_manifest_sha256": "c594c7bc7b352e934e5ea7f71137f9bc22031acee522d7b4eeff82ca7f8445ea",
+  "clean_root": "PASS",
+  "sample_bytes_present_in_report_tree": false,
+  "sample_bytes_present_in_clean_root": false,
+  "sample_originals_retained_only_privately": 8,
+  "public_originals": {"blank": 8, "instruction": 2},
+  "source_only": true,
+  "generation_allowed": false,
+  "published": false,
+  "network_word_model_db_service_calls_during_verification": 0,
+  "read_only_verification": true,
+  "public_text_scan": {
+    "text_files": 102,
+    "machine_path_username_assistant_attribution_actual_process_id_or_auth_query_hits": 0,
+    "CRLF_files": 0,
+    "note": "Actual public flow controls under /jszwfw/annex/findlct.do carry sign/gotoUrl routing values. Their observed source text is retained; these are not SSO or authenticated session links. Login boundary queries are not distributed."
+  },
+  "native_scope_checks": {
+    "changshu_webId": "30",
+    "zhangjiagang_webId": "31",
+    "own_directory_showBszn_controls_and_formal_task_ids_match": true,
+    "changshu_raw_site_visits": "3",
+    "zhangjiagang_raw_site_visits": "0",
+    "all_material_details_match_own_rows": true,
+    "all_18_observed_public_attachment_requests": "HTTP200",
+    "online_boundary": "own_native_entry_to_login_and_captcha_only"
+  },
+  "visual_source_review": {
+    "own_guide_full_page_images_viewed": 2,
+    "own_downloaded_flow_images_viewed": 2,
+    "docx_page_rendering": "NOT_RUN"
+  }
+}

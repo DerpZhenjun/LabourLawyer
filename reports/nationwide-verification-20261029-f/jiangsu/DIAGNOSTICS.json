@@ -1,0 +1,48 @@
+{
+  "recorded_at": "2026-10-29T14:49:04.533887+00:00",
+  "browser": "Agent Browser",
+  "session": "js-oct29f",
+  "closed": true,
+  "private_browser_journal_initialized_before_navigation": true,
+  "observations": [
+    {
+      "action": "Changshu portal aggregate search",
+      "outcome": "initial loading capture had no results; later counts rendered without numerals and no service result. A short keyword entered via keyboard did not change the captured query URL and showed suggestions",
+      "resolution": "kept all observations; switched to the own personal-service directory observed from the own portal and used its native search, which listed the actual arbitration guide. Search behaviour is not evidence that an official service or form is absent"
+    },
+    {
+      "action": "own personal directories",
+      "outcome": "Changshu webId30 and Zhangjiagang webId31 each independently exposed their own arbitration application guide and separate mediation entry",
+      "resolution": "clicked the exact arbitration guide control; never synthesized a task ID or inherited another locality source"
+    },
+    {
+      "action": "material detail selection",
+      "outcome": "own DOM identified four detail cells and their close controls per locality; all four native dialogs checked and captured",
+      "resolution": "selected the corresponding visible close control by index; no DOM modification or synthesized event"
+    },
+    {
+      "action": "Changshu online wait",
+      "outcome": "password selector wait timed out, followed by the official user-login page with two password inputs and captcha",
+      "resolution": "safe boundary summary records the actual login observation. No authentication DOM, screenshot or query was distributed"
+    },
+    {
+      "action": "return to own portal",
+      "outcome": "an assumed existing home tab was absent after earlier navigation; a region lookup failed while still at authentication, and the public-page guard rejected its capture",
+      "resolution": "no auth page capture was written; opened the already-observed own public homepage and continued its native region picker"
+    },
+    {
+      "action": "public attachment acquisition",
+      "outcome": "18 own observed public control/flow HTTPS URLs returned HTTP200 using normal unauthenticated GET; no SSL/port/auth workaround"
+    },
+    {
+      "action": "online native entry",
+      "outcome": "both localities stopped at actual user login with two password inputs and captcha; no input, authentication or submission"
+    },
+    {
+      "action": "sample originals",
+      "outcome": "all eight sample files saved only to private diagnostics storage from the outset; no public local file path and no sample content reading",
+      "resolution": "public records retain own labels, URLs, attachment IDs, status, times, SHA and bytes only; downloadable public originals are only blank or instruction"
+    }
+  ],
+  "public_raw_HAR_cookies_SSO_queries_saved": false
+}

@@ -1,0 +1,115 @@
+{
+  "checked_at": "2026-10-29T14:49:04.533887+00:00",
+  "files": [
+    {
+      "file": "zhangjiagang/originals/blank/949ad5e8-8a1e-4a8b-8232-a7c3ddf4a2b9/证据复印件.docx",
+      "sha256": "8dae42265086696071d6173f162d47c9fdd9bdf4782cf1c70d28779b5894277f",
+      "official_kind": "blank",
+      "render_status": "NOT_RUN",
+      "public_release_status": "included_blank_or_instruction",
+      "generation_allowed": false,
+      "read_status": "docx_text_and_structure_only",
+      "table_shapes": [],
+      "numeric_personal_id_like_count": 0,
+      "phone_like_count": 0,
+      "content_role": "placeholder_heading_only"
+    },
+    {
+      "file": null,
+      "sha256": "8dae42265086696071d6173f162d47c9fdd9bdf4782cf1c70d28779b5894277f",
+      "official_kind": "sample",
+      "render_status": "NOT_RUN",
+      "public_release_status": "not_distributed_reference_sample",
+      "generation_allowed": false,
+      "read_status": "not_read_reference_sample_not_distributed",
+      "content_role": "official_sample_never_default_case_facts"
+    },
+    {
+      "file": "zhangjiagang/originals/blank/fb67c9e4-1f9f-4e6c-bdb0-cc6c04f0966a/证据清单.docx",
+      "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "official_kind": "blank",
+      "render_status": "NOT_RUN",
+      "public_release_status": "included_blank_or_instruction",
+      "generation_allowed": false,
+      "read_status": "docx_text_and_structure_only",
+      "table_shapes": [
+        {
+          "rows": 13,
+          "columns": 6
+        }
+      ],
+      "numeric_personal_id_like_count": 0,
+      "phone_like_count": 0,
+      "content_role": "blank_evidence_list"
+    },
+    {
+      "file": null,
+      "sha256": "1488a991d3b43b1d6ec2d0fabefb6db876fc429602ec79b0588e4f201a29fbfe",
+      "official_kind": "sample",
+      "render_status": "NOT_RUN",
+      "public_release_status": "not_distributed_reference_sample",
+      "generation_allowed": false,
+      "read_status": "not_read_reference_sample_not_distributed",
+      "content_role": "official_sample_never_default_case_facts"
+    },
+    {
+      "file": "zhangjiagang/originals/blank/6cd79377-d08a-42be-a154-ee3d1fb275f4/身份证复印件.docx",
+      "sha256": "f36541d8f1c49a0229d1510ae9f5cc5eb72ff294a17aec69c82b06e7ec571714",
+      "official_kind": "blank",
+      "render_status": "NOT_RUN",
+      "public_release_status": "included_blank_or_instruction",
+      "generation_allowed": false,
+      "read_status": "docx_text_and_structure_only",
+      "table_shapes": [],
+      "numeric_personal_id_like_count": 0,
+      "phone_like_count": 0,
+      "content_role": "placeholder_heading_only"
+    },
+    {
+      "file": null,
+      "sha256": "e43905c0eca499d7a71da98cd3050087717fd62e816f0021fd010210aea8241e",
+      "official_kind": "sample",
+      "render_status": "not_a_docx",
+      "public_release_status": "not_distributed_reference_sample",
+      "generation_allowed": false,
+      "read_status": "not_read_reference_sample_not_distributed",
+      "content_role": "official_sample_never_default_case_facts"
+    },
+    {
+      "file": "zhangjiagang/originals/blank/e7792a1a-fbf0-461d-9574-67196dec0d6b/劳动人事争议仲裁申请书.docx",
+      "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "official_kind": "blank",
+      "render_status": "NOT_RUN",
+      "public_release_status": "included_blank_or_instruction",
+      "generation_allowed": false,
+      "read_status": "docx_text_and_structure_only",
+      "table_shapes": [],
+      "numeric_personal_id_like_count": 0,
+      "phone_like_count": 0,
+      "content_role": "blank_worker_application"
+    },
+    {
+      "file": null,
+      "sha256": "2069cbe9ad9a0410670ab74b9fee388ea209fe100b45104a9f7340e52f254584",
+      "official_kind": "sample",
+      "render_status": "NOT_RUN",
+      "public_release_status": "not_distributed_reference_sample",
+      "generation_allowed": false,
+      "read_status": "not_read_reference_sample_not_distributed",
+      "content_role": "official_sample_never_default_case_facts"
+    },
+    {
+      "file": "zhangjiagang/originals/instruction/8b39a5e3-f133-4435-92c3-794bbcd70dda/仲裁申请.png",
+      "sha256": "dc407a951d748964846c061b0331167db5c0178a8a7515f6ab933494c74aa8ee",
+      "official_kind": "instruction",
+      "render_status": "not_a_docx",
+      "public_release_status": "included_blank_or_instruction",
+      "generation_allowed": false,
+      "read_status": "own_flow_image_viewed",
+      "content_role": "workflow_instruction"
+    }
+  ],
+  "originals_unchanged": true,
+  "docx_rendered": false,
+  "note": "仅文本/结构初查与流程图阅读；不声明DOCX逐页版式已验收，不以同SHA推导地区授权。"
+}
