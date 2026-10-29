@@ -57,6 +57,8 @@ Android APK为USB联调包；Windows提供安装版和便携版。安装包包�
 
 <img src="reports/nationwide-verification-20261029-b/candidate-hunan/430103-375.png" width="300" alt="湖南天心区实际填写界面，375px浏览器截图" />
 
+![主站真实地区覆盖矩阵：190份指南、173地生成、28地候选](reports/nationwide-verification-20261029/live-release/admin-regions-1440.png)
+
 运行后在 `/admin/regions` 查看实时矩阵。仓库中可核对 [逐省实际进度](docs/regions-status.md)、[公开数据版本](data/public-regions/manifest.json)、[候选登记](config/regional_candidates.json) 与 [地区接入说明](docs/regional-release.md)。
 
 ## AI 法律顾问与法律数字人

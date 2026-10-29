@@ -17,5 +17,20 @@
   ],
   "models_called": false,
   "main_database_modified": false,
-  "nationwide_complete": false
+  "nationwide_complete": false,
+  "published_release_archive": {
+    "commit": "03c09cad",
+    "public_bootstrap": {
+      "guides": 190,
+      "generatable_localities": 173,
+      "missing_attachments": 0
+    },
+    "tests": 12,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 70.207,
+    "tests_include": "release independent historical fixture and candidate prepare/append after publication",
+    "private_runtime_copied": false
+  }
 }

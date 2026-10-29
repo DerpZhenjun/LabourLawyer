@@ -1,5 +1,5 @@
 {
-  "phase": "nine_localities_published_live_browser_recheck",
+  "phase": "nine_localities_published_and_live_ui_verified",
   "nationwide_complete": false,
   "published_guides": 190,
   "published_generatable_localities": 173,
@@ -33,10 +33,10 @@
   "public_guide_snapshot_unchanged": true,
   "next_batch": "reports/nationwide-verification-20261029-b",
   "next": [
-    "完成真实主站11类原生浏览器生成复测",
-    "复测升级后的完整后端与公开发行测试，提交190/173快照与回执",
-    "继续雨花/望城自己的DOC转换与表单，不能因同SHA继承其他区规则",
-    "继续新北/武进各自官方事项采集，不将未知当未提供"
+    "雨花/望城：仅自身原DOC已采集，需转换/表单/版式与自己的来源合同",
+    "新北/武进：自身空白DOCX和指南已采集，需逐份内容核验和表单适配",
+    "继续其他省市区县自己的官方入口，不把未核验当官方未提供",
+    "旧全国夜间自动任务继续保持PAUSED，不启动Windows模型"
   ],
   "report": "TEST-REPORT.md",
   "candidate_station": {
@@ -71,5 +71,29 @@
     "failures": 0,
     "seconds": 50.064
   },
-  "review_registry_places": 22
+  "review_registry_places": 22,
+  "main_live_browser": {
+    "status": "PASS_WITH_TOOL_LIMITATION",
+    "native_click_generation_classes": 11,
+    "responsive_widths": [
+      375,
+      768,
+      1440
+    ],
+    "assistant_overlay_fixed": true,
+    "report": "live-release/RESULT.json",
+    "binary_download_capture": "NOT_RUN_TOOL_POLICY",
+    "separate_live_http_zip_crc": 11
+  },
+  "main_publication_committed": "03c09cad",
+  "public_clean_published_release": {
+    "commit": "03c09cad",
+    "bootstrap_guides": 190,
+    "bootstrap_generatable_localities": 173,
+    "missing_attachments": 0,
+    "tests": 12,
+    "failures": 0,
+    "seconds": 70.207
+  },
+  "ui_overlay_fix_commit": "de513eaf"
 }
