@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "district": "yuhua",
+      "file": "reports/nationwide-verification-20261029-c/hunan-adaptation/derived/yuhua/worker.docx",
+      "source": "reports/nationwide-verification-20261029-c/hunan/yuhua/originals/blank/1－仲裁申请书（劳动者）.doc",
+      "source_sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+      "sha256": "3b49cd126460a9a6dbfd0c4c0575113532017576d061206e17c61ff19c0d1280",
+      "kind": "platform_conversion_of_own_official_doc_not_official_docx",
+      "method": "Own C official DOC opened read-only in proved isolated Word; SaveAs2 format16 on separate path. Original unchanged."
+    },
+    {
+      "district": "wangcheng",
+      "file": "reports/nationwide-verification-20261029-c/hunan-adaptation/derived/wangcheng/worker.docx",
+      "source": "reports/nationwide-verification-20261029-c/hunan/wangcheng/originals/blank/1－仲裁申请书（劳动者）.doc",
+      "source_sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+      "sha256": "7fddcecff2c17ac8064383256ff0af284853b86af2a3ff28fd7214e35d562d5b",
+      "kind": "platform_conversion_of_own_official_doc_not_official_docx",
+      "method": "Own C official DOC opened read-only in proved isolated Word; SaveAs2 format16 on separate path. Original unchanged."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+SECTIONS: 1
+
+[Section 1] start_type=NEW_PAGE (2) orientation=PORTRAIT (0)
+  page_size(in): 8.27 x 11.69
+  margins(in): L=1.38 R=0.98 T=0.98 B=0.95
+  header_linked_to_previous=True footer_linked_to_previous=False
+  different_first_page=False odd_even_headers=None
+
+REMINDER
+- If you change orientation mid-document, Word typically creates a new section.
+- If headers/footers look wrong, check 'Link to Previous' per section.

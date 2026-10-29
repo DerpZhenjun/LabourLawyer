@@ -1,0 +1,377 @@
+{
+  "scope": "Only explicitly listed new C own conversions, deterministic provider/test, synthetic inputs, and public document QA. No live sessions, login queries, cookies, actual process identifiers or private applicant data. Original sealed source files unchanged.",
+  "files": {
+    "backend/regional_hunan_oct29c.py": {
+      "sha256": "d5efef6b0d68984474207d1758e23082fabbfeb807502b68326af39a796b1e3a",
+      "bytes": 14588
+    },
+    "backend/tests/test_hunan_oct29c.py": {
+      "sha256": "4aee1f483beb6e0b35f0fa606f5b0b74c933e4711c325bc803278c53420f28fe",
+      "bytes": 4742
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/artifact.md": {
+      "sha256": "0d1ff30ace70cf352d76dcc6c7f189ec6c6dd837fb0dfc3d596987c2a00f1079",
+      "bytes": 471
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/derived/wangcheng/worker.docx": {
+      "sha256": "7fddcecff2c17ac8064383256ff0af284853b86af2a3ff28fd7214e35d562d5b",
+      "bytes": 19827
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/derived/yuhua/worker.docx": {
+      "sha256": "3b49cd126460a9a6dbfd0c4c0575113532017576d061206e17c61ff19c0d1280",
+      "bytes": 19637
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/DERIVED-MANIFEST.json": {
+      "sha256": "05529145274cb0c8d1f630e9f508502e36d1b99d2189cddb65234d7316643a68",
+      "bytes": 1366
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/DOCUMENT-QA.json": {
+      "sha256": "6863fd6d9b03b5841a63a5e5808c5f6ac242a52b6bb68438f57d2b8abcd82e86",
+      "bytes": 26789
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/tasks.json": {
+      "sha256": "cd26c47379c365b5a2a1254e7362977242634a4b17f3ff20537c69daa6087b26",
+      "bytes": 1391
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/application.docx": {
+      "sha256": "25cc88149e77d87c0bc16056b5d21998ff3249423d2e1a0125d7701adf6c9d0e",
+      "bytes": 17188
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/application.pdf": {
+      "sha256": "1c7cb7e7d7a3e1ec0c2dbe760f52d67f0fc4d29b1f48d9dc65c630a859501053",
+      "bytes": 171621
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-1.png": {
+      "sha256": "e48f2866759f683f624f0eb5e2a99d2ca17ced64d32d9f4cf3b0e381563c1e72",
+      "bytes": 69637
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-10.png": {
+      "sha256": "a97a3d25ce3f785093717960c3811b7b2e28fc731863ecb406e234f1fd307a37",
+      "bytes": 48181
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-11.png": {
+      "sha256": "ff09e359dc055e33a7b7d4916522129cecbdae468369fa411da9cef61f388075",
+      "bytes": 49069
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-12.png": {
+      "sha256": "5edc9cd7d9d14d01b21a6fb4a3e4468c3700b0ff779ba34813c33bf321f08052",
+      "bytes": 63457
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-13.png": {
+      "sha256": "eff0829fd8ef58c0ebe85cad8462f5f9af83b555c537adbf65eeda957bb0dbaa",
+      "bytes": 46155
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-14.png": {
+      "sha256": "a3a0d5cf205463f5e8dc3ded6b19c11de7c00865050dbcbca5081faf36830c57",
+      "bytes": 39684
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-15.png": {
+      "sha256": "efd1112337bf24946fb0ac6b1f199ec38af2717d4ec3d5f64f7bcd08a19c9670",
+      "bytes": 39673
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-16.png": {
+      "sha256": "364357ca69e7be97803247976d820aa64fc048c359678eab9fe3719e9de5132c",
+      "bytes": 39656
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-17.png": {
+      "sha256": "fb34387e1cd879702c72911d63eae353267ce76abbac2d7de452a137b9e15302",
+      "bytes": 39683
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-18.png": {
+      "sha256": "27a08d84c99df58ec28df4aff137bc68583c612389224f0c78e531511af884cd",
+      "bytes": 39708
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-19.png": {
+      "sha256": "0561bffc978d57cd4381680b686975021e8d659e53fd5f29b8363efcca523583",
+      "bytes": 39658
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-2.png": {
+      "sha256": "f37490d27ae980f82c958e8494b39606d1928bf299d5a024104400d5b59f8fde",
+      "bytes": 59705
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-20.png": {
+      "sha256": "5a9ce979d23f73b2ff5b5f4a528a2fab4c5385188607aaa7dceb0f7dee9db68f",
+      "bytes": 39705
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-21.png": {
+      "sha256": "747abe7b813275b6d67baf1b487f59a39e2f9e2a07b64cb8a043658874755f78",
+      "bytes": 39712
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-22.png": {
+      "sha256": "ec9ec2f8c302c9d02c2bb2c899dd4e7b9a3f529bacef5bca44f750882b7b1b6c",
+      "bytes": 39547
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-3.png": {
+      "sha256": "94897d54f7e131623a812b93b1ab706dc539f973d5994afc6e5075fc4b4c6623",
+      "bytes": 60184
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-4.png": {
+      "sha256": "0c82e32e7b29cbadd50e6b8499c0ed5a339774a45014e194abd7c07eb27ee3f8",
+      "bytes": 57015
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-5.png": {
+      "sha256": "ce942c6a1d250541729f8c0b86a565e844a718420801d136d55a7c224e686311",
+      "bytes": 61785
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-6.png": {
+      "sha256": "52261defceb151c3db7e83d103506c69441dbbca3bf4bc3c7ae985e2b7b22fb8",
+      "bytes": 66536
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-7.png": {
+      "sha256": "8ffedb344e7e4c4d595e974b0027a7cfb6f0d678f365b4e5cfe4b5ca88dd0ea4",
+      "bytes": 63567
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-8.png": {
+      "sha256": "749236d916b47511b7f089550187e4ed00a224bf3e4fce705e37d0dcbf4e7135",
+      "bytes": 64665
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/maximum/pages/page-9.png": {
+      "sha256": "5144f2b7c24a7ad92b64cbdc021a45ea2e414832e63896b3f56ad4ccebb0266f",
+      "bytes": 65584
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/normal/application.docx": {
+      "sha256": "cc55a6a2c0502ed0f93df4b851f123c2c0a1170f4a400aefb4ae52e0c0be57dd",
+      "bytes": 16699
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/normal/application.pdf": {
+      "sha256": "d255eeeb7db255e31b8d223381c03e368b05d613fa5019e7177e6579e9c92393",
+      "bytes": 159984
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/normal/pages/page-1.png": {
+      "sha256": "9355a38f41adf780602051229f9de46979f393d18410b17cacdeaf087cbc3382",
+      "bytes": 108018
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/wangcheng/normal/pages/page-2.png": {
+      "sha256": "518568c8bf0cf424ef0bcea426f9cebb9843de3c465cb608a973c28e042b51b0",
+      "bytes": 94323
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/application.docx": {
+      "sha256": "8e25040a30eab919ab7d0b624c50ba55c84ededa55aaa0f67e7e53394d3bf7ee",
+      "bytes": 17183
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/application.pdf": {
+      "sha256": "225011cd45cde876776d9a68ecae6093b0871df2fa3d8a1a5075ddd58b313479",
+      "bytes": 171621
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-1.png": {
+      "sha256": "e48f2866759f683f624f0eb5e2a99d2ca17ced64d32d9f4cf3b0e381563c1e72",
+      "bytes": 69637
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-10.png": {
+      "sha256": "a97a3d25ce3f785093717960c3811b7b2e28fc731863ecb406e234f1fd307a37",
+      "bytes": 48181
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-11.png": {
+      "sha256": "ff09e359dc055e33a7b7d4916522129cecbdae468369fa411da9cef61f388075",
+      "bytes": 49069
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-12.png": {
+      "sha256": "5edc9cd7d9d14d01b21a6fb4a3e4468c3700b0ff779ba34813c33bf321f08052",
+      "bytes": 63457
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-13.png": {
+      "sha256": "eff0829fd8ef58c0ebe85cad8462f5f9af83b555c537adbf65eeda957bb0dbaa",
+      "bytes": 46155
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-14.png": {
+      "sha256": "a3a0d5cf205463f5e8dc3ded6b19c11de7c00865050dbcbca5081faf36830c57",
+      "bytes": 39684
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-15.png": {
+      "sha256": "efd1112337bf24946fb0ac6b1f199ec38af2717d4ec3d5f64f7bcd08a19c9670",
+      "bytes": 39673
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-16.png": {
+      "sha256": "364357ca69e7be97803247976d820aa64fc048c359678eab9fe3719e9de5132c",
+      "bytes": 39656
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-17.png": {
+      "sha256": "fb34387e1cd879702c72911d63eae353267ce76abbac2d7de452a137b9e15302",
+      "bytes": 39683
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-18.png": {
+      "sha256": "27a08d84c99df58ec28df4aff137bc68583c612389224f0c78e531511af884cd",
+      "bytes": 39708
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-19.png": {
+      "sha256": "0561bffc978d57cd4381680b686975021e8d659e53fd5f29b8363efcca523583",
+      "bytes": 39658
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-2.png": {
+      "sha256": "f37490d27ae980f82c958e8494b39606d1928bf299d5a024104400d5b59f8fde",
+      "bytes": 59705
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-20.png": {
+      "sha256": "5a9ce979d23f73b2ff5b5f4a528a2fab4c5385188607aaa7dceb0f7dee9db68f",
+      "bytes": 39705
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-21.png": {
+      "sha256": "747abe7b813275b6d67baf1b487f59a39e2f9e2a07b64cb8a043658874755f78",
+      "bytes": 39712
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-22.png": {
+      "sha256": "ec9ec2f8c302c9d02c2bb2c899dd4e7b9a3f529bacef5bca44f750882b7b1b6c",
+      "bytes": 39547
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-3.png": {
+      "sha256": "94897d54f7e131623a812b93b1ab706dc539f973d5994afc6e5075fc4b4c6623",
+      "bytes": 60184
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-4.png": {
+      "sha256": "0c82e32e7b29cbadd50e6b8499c0ed5a339774a45014e194abd7c07eb27ee3f8",
+      "bytes": 57015
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-5.png": {
+      "sha256": "ce942c6a1d250541729f8c0b86a565e844a718420801d136d55a7c224e686311",
+      "bytes": 61785
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-6.png": {
+      "sha256": "52261defceb151c3db7e83d103506c69441dbbca3bf4bc3c7ae985e2b7b22fb8",
+      "bytes": 66536
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-7.png": {
+      "sha256": "8ffedb344e7e4c4d595e974b0027a7cfb6f0d678f365b4e5cfe4b5ca88dd0ea4",
+      "bytes": 63567
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-8.png": {
+      "sha256": "749236d916b47511b7f089550187e4ed00a224bf3e4fce705e37d0dcbf4e7135",
+      "bytes": 64665
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/maximum/pages/page-9.png": {
+      "sha256": "5144f2b7c24a7ad92b64cbdc021a45ea2e414832e63896b3f56ad4ccebb0266f",
+      "bytes": 65584
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/normal/application.docx": {
+      "sha256": "e2f8226a0fd4038cd2af863c43b14e612c2dba06ea9106027637af106473af0d",
+      "bytes": 16712
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/normal/application.pdf": {
+      "sha256": "ff7e60892629615c068754a783a3a205af8436bb0e36b6c15220fbd4a923b047",
+      "bytes": 159984
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/normal/pages/page-1.png": {
+      "sha256": "9355a38f41adf780602051229f9de46979f393d18410b17cacdeaf087cbc3382",
+      "bytes": 108018
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/generated/yuhua/normal/pages/page-2.png": {
+      "sha256": "518568c8bf0cf424ef0bcea426f9cebb9843de3c465cb608a973c28e042b51b0",
+      "bytes": 94323
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/tasks.json": {
+      "sha256": "04f7bd9d94e534002d2c69a9ef175ffbeb0a854168ea0beea4b83af82818b238",
+      "bytes": 2076
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/wangcheng/c6bbebf6eed3.pdf": {
+      "sha256": "3e01799d2cdb0797f3e308514499a3c20506c75669ca552bf18654050d33e4d5",
+      "bytes": 126384
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/00a47b36fa43/page-1.png": {
+      "sha256": "003b5016f5be98f0e988e457b3b2fae7f5b55efe63036b59fc97744c1ee20e92",
+      "bytes": 143378
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/00a47b36fa43/page-2.png": {
+      "sha256": "4d0f0383a9e99c24fe94386abab534803016bf6ebf6a7f19a1b299d9b80d933a",
+      "bytes": 66035
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/00a47b36fa43/page-3.png": {
+      "sha256": "0cb9e7adf9c4fe7ad640254a68a3cadbf0223924126eff6fcab5803943b8bc9f",
+      "bytes": 48921
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/00a47b36fa43.pdf": {
+      "sha256": "6ebe1658c2461989ddcc48a84818c2aad2bd8b021cba8e5f5c9bc7be74a3de1c",
+      "bytes": 146048
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/369d38b1bcb1/page-1.png": {
+      "sha256": "12fc1c5d459a139e3c216c037f21c46dcb94fc6f63ebf230f89e9ffcf84f16fd",
+      "bytes": 127074
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/369d38b1bcb1/page-2.png": {
+      "sha256": "79b14fa12ae6091103c84bcea269ca4f16672f198154a15fdc36a7f6feed3dae",
+      "bytes": 47061
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/369d38b1bcb1/page-3.png": {
+      "sha256": "2dd6df3666ddba2733a85d9bc0799bffa19f34c3682969fbc79ebc3e8abf0d6a",
+      "bytes": 59936
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/369d38b1bcb1.pdf": {
+      "sha256": "1f8aa11358471ddc129d49666a8998648a9e71a43e3c1d76bbae80b400a324da",
+      "bytes": 139144
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/756b7ee8f3d4/page-1.png": {
+      "sha256": "a8d3f7c1b1ecbe65faa112f5b8a0190315c6c4020d8bba5d79cd1148528fee51",
+      "bytes": 94613
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/756b7ee8f3d4/page-2.png": {
+      "sha256": "0e04a55cfefe2b068bd276726ecc4416f44fdd4d07726c4ed946ebd37c3308fe",
+      "bytes": 22604
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/756b7ee8f3d4/page-3.png": {
+      "sha256": "9715e3f1ab1ab195fd7114598818416cfaed5a48d283accdc30949c5c2e6d0a3",
+      "bytes": 66534
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/756b7ee8f3d4/page-4.png": {
+      "sha256": "a14181d6a7964a8dec729ad18709a60cd711bcb4a66e2239faed8e32c61fd2d7",
+      "bytes": 7834
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/756b7ee8f3d4.pdf": {
+      "sha256": "84fa480ac6918616d73eccc465e45cd14da7d7997e57d1273f6766b9b8a8aae1",
+      "bytes": 131358
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/c6bbebf6eed3/page-1.png": {
+      "sha256": "d914f80cfa58d3795731fd39ce2534faf3d8cd0cd81969eb82484c4f7f4ecfae",
+      "bytes": 80793
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/c6bbebf6eed3/page-2.png": {
+      "sha256": "0281b02e7bca99e3808feb7fbff84977241e120971573119073f4e7828087d9c",
+      "bytes": 23992
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/c6bbebf6eed3/page-3.png": {
+      "sha256": "cb7dcc3cf9ff57c23d167e2e890e788969c5adeba45e94e0c666df4568c02f3d",
+      "bytes": 65253
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/c6bbebf6eed3/page-4.png": {
+      "sha256": "da00a0d290d1d4e761c8daee3d44b4001d73170b1d2d7a77a05c2a47f94cf40e",
+      "bytes": 7827
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/original-render/yuhua/c6bbebf6eed3.pdf": {
+      "sha256": "923b530ff5c9562aea19243d36f3aecf35f2eac69b1f9610f56a98b7662587dc",
+      "bytes": 126384
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/PACKAGED-RENDER.txt": {
+      "sha256": "f852aa18c1c4ca9919f37e7053811d0fba62ec87b29ac5966048cd9464837639",
+      "bytes": 1219
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/render-isolated.ps1": {
+      "sha256": "4cdf392de1feae4160e70e9657147408fd63ade138469b7cbceca42625d7ef3c",
+      "bytes": 5818
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/SECTION-AUDIT.txt": {
+      "sha256": "a9e384076b868305368857aa33f66095ad5f7de55cf733aac78dbc875665aa15",
+      "bytes": 435
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/STYLE-AUDIT.json": {
+      "sha256": "c5d9f79ab1f5ff7a34851d70be02a6c4d55e7f03d6b92708df9168dc699f736a",
+      "bytes": 2209
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/SYNTHETIC-CASES.json": {
+      "sha256": "1bad1d634d51860172180094bb57d6832ce338b59dda155a8411fb6ea154763b",
+      "bytes": 50852
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/TDD-GREEN.txt": {
+      "sha256": "507467fcbd3a8e1985d2ed405dbfe933ae35b010655206fdd497602b87043274",
+      "bytes": 1448
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/TDD-RED.txt": {
+      "sha256": "b78defb2f4533e07268895b15793f98cf8a94529c71d0976a347b7c4a5a62f8f",
+      "bytes": 923
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/TEST-REPORT.md": {
+      "sha256": "077222b6704d1e5097f264d2f14814a7ffdc78c120557fc5653d7a2bafd9ea68",
+      "bytes": 4190
+    },
+    "reports/nationwide-verification-20261029-c/hunan-adaptation/WORD-ISOLATION-PUBLIC.json": {
+      "sha256": "357ffb0b072de3e58f1ebf64da431f42e9b9f6784d2c930f077b9c89712d7480",
+      "bytes": 846
+    }
+  }
+}

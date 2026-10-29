@@ -1,0 +1,19 @@
+test_hunan_oct29c (unittest.loader._FailedTest.test_hunan_oct29c) ... ERROR
+
+======================================================================
+ERROR: test_hunan_oct29c (unittest.loader._FailedTest.test_hunan_oct29c)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_hunan_oct29c
+Traceback (most recent call last):
+  File "D:\Program Files\uv\python\cpython-3.11-windows-x86_64-none\Lib\unittest\loader.py", line 162, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\workspace\DerpZhenjun\Partlawyer-LAA\backend\tests\test_hunan_oct29c.py", line 7, in <module>
+    import regional_hunan_oct29c as hn
+ModuleNotFoundError: No module named 'regional_hunan_oct29c'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (errors=1)

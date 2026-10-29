@@ -1,0 +1,14 @@
+test_clean_root_and_no_fallback (backend.tests.test_hunan_oct29c.HunanOct29cTests.test_clean_root_and_no_fallback) ... ok
+test_cross_district_same_bytes_rejected (backend.tests.test_hunan_oct29c.HunanOct29cTests.test_cross_district_same_bytes_rejected) ... ok
+test_exact_contract_rejects_unrepresented_fields (backend.tests.test_hunan_oct29c.HunanOct29cTests.test_exact_contract_rejects_unrepresented_fields) ... ok
+test_missing_or_altered_derived_closes_capability (backend.tests.test_hunan_oct29c.HunanOct29cTests.test_missing_or_altered_derived_closes_capability) ... ok
+test_official_facts_tamper_rejected_lifecycle_ignored (backend.tests.test_hunan_oct29c.HunanOct29cTests.test_official_facts_tamper_rejected_lifecycle_ignored) ... ok
+test_own_source_and_auth_boundary (backend.tests.test_hunan_oct29c.HunanOct29cTests.test_own_source_and_auth_boundary) ... ok
+test_preserved_package_fill_and_original_unchanged (backend.tests.test_hunan_oct29c.HunanOct29cTests.test_preserved_package_fill_and_original_unchanged) ... ok
+test_public_only_root_loads_and_tampered_source_fails (backend.tests.test_hunan_oct29c.HunanOct29cTests.test_public_only_root_loads_and_tampered_source_fails) ... ok
+test_wrong_path_and_evidence_kind_rejected (backend.tests.test_hunan_oct29c.HunanOct29cTests.test_wrong_path_and_evidence_kind_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 2.497s
+
+OK
