@@ -106,6 +106,9 @@ export class Viewer {
       this._renderer.domElement
     );
     this._cameraControls.screenSpacePanning = true;
+    this._cameraControls.enableRotate = false;
+    this._cameraControls.enablePan = false;
+    this._cameraControls.enableZoom = false;
     this._cameraControls.update();
 
     this._resizeObserver = new ResizeObserver(() => this.resize());
@@ -122,6 +125,7 @@ export class Viewer {
 
     const parentElement = this._renderer.domElement.parentElement;
     if (!parentElement) return;
+    if (!parentElement.clientWidth || !parentElement.clientHeight) return;
 
     this._renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     this._renderer.setSize(
@@ -133,6 +137,7 @@ export class Viewer {
     this._camera.aspect =
       parentElement.clientWidth / parentElement.clientHeight;
     this._camera.updateProjectionMatrix();
+    this.resetCamera();
   }
 
   /**
@@ -144,9 +149,9 @@ export class Viewer {
     if (headNode) {
       const headWPos = headNode.getWorldPosition(new THREE.Vector3());
       // Frame an upper-body portrait at every viewport, and actually reset orbit/zoom.
-      const targetY = headWPos.y - 0.32;
+      const targetY = headWPos.y - 0.10;
       const aspect = this._camera?.aspect || 1;
-      const distance = Math.max(3.1, 2.4 / aspect);
+      const distance = Math.max(1.6, 1.15 / aspect);
       this._camera?.position.set(headWPos.x, targetY + 0.08, headWPos.z + distance);
       this._cameraControls?.target.set(headWPos.x, targetY, headWPos.z);
       this._cameraControls?.update();

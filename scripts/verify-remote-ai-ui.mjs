@@ -57,7 +57,7 @@ try {
     await tool('take_screenshot',{filePath:path.join(out,`digital-${width}.png`)})
   })
   await tool('emulate',{viewport:'1440x1000x1'})
-  if(answers) await tool('take_screenshot',{filePath:path.resolve('docs/images/digital-human.png')})
+  if(answers) await tool('take_screenshot',{uid:await uid('main'),filePath:path.resolve('docs/images/digital-human.png')})
   assert(!(await tool('list_console_messages',{types:['error','warn']})).includes('msgid='))
   await tool('new_page',{url:'http://127.0.0.1:5173/',isolatedContext:'remote-ai-advisor-synthetic-only'})
   pageId=3

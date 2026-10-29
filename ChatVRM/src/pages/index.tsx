@@ -65,6 +65,14 @@ export default function Home() {
     return () => { clearInterval(poll); healthRequest.current?.abort(); healthRequest.current = undefined; request.current?.abort(); recognition.current?.abort(); interruptSpeakCharacter(); };
   }, [checkConnection]);
   useEffect(() => { try { localStorage.setItem("labourlawyer.digital.chat", JSON.stringify(chatLog.slice(-20))); } catch {} end.current?.scrollIntoView({ block: "end" }); }, [chatLog, busy]);
+  useEffect(() => {
+    const close = (event: KeyboardEvent) => {
+      if (!embedded || event.key !== "Escape" || !document.referrer || window.parent === window) return;
+      window.parent.postMessage({ type: "labourlawyer:digital-close" }, new URL(document.referrer).origin);
+    };
+    window.addEventListener("keydown", close);
+    return () => window.removeEventListener("keydown", close);
+  }, [embedded]);
   const avatarReady = useCallback(() => setAvatar("ready"), []);
   const avatarFailed = useCallback(() => setAvatar("error"), []);
   const send = async (text = input) => {
@@ -102,18 +110,17 @@ export default function Home() {
     <div className="counsel-workspace">
       <section className="avatar-stage" aria-label="数字人形象" data-avatar-state={avatar}>
         <div className="stage-rings" aria-hidden="true" />
-        <VrmViewer key={avatarAttempt} onReady={avatarReady} onError={avatarFailed} />
+        <div className="avatar-portrait"><VrmViewer key={avatarAttempt} onReady={avatarReady} onError={avatarFailed} /></div>
         {avatar !== "ready" && <div className="avatar-notice" role="status">{avatar === "loading" ? "正在加载数字人形象…" : "形象加载失败，仍可使用文字咨询。"}</div>}
         {avatar === "error" && <button className="avatar-retry" onClick={() => { setAvatar("loading"); setAvatarAttempt(n => n + 1); }}>重新加载形象</button>}
-        <div className="stage-label"><span>DIGITAL COUNSEL</span><h1>先把事情说清楚，<br />再一起梳理下一步。</h1><p>请求事项 · 关键证据 · 办理准备</p></div>
-        <button className="camera-reset" onClick={() => viewer.resetCamera()} aria-label="重置数字人视角" title="重置视角">↺</button>
+        <div className="stage-label"><span>你的劳动法律助手</span><h1>你好，我是阿律</h1><p>先说说你遇到的问题，<br />我们一起梳理下一步。</p></div>
       </section>
       <section className="consultation-panel" aria-label="法律咨询对话">
         <div className="conversation-heading"><div><small>YOUR CONSULTATION</small><h2>劳动争议咨询</h2></div><div className="conversation-actions"><button disabled={!voiceSupported && voiceMode !== "gpt-sovits"} className={voice ? "active" : ""} onClick={() => { voiceRef.current = !voice; setVoice(!voice); if (voice) interruptSpeakCharacter(); }} aria-label={voice ? "关闭语音朗读" : "开启语音朗读"} title={voiceMode === "gpt-sovits" ? "语音合成朗读" : "浏览器语音朗读"}>{voice ? "♫" : "♪"}<span>{voice ? "朗读开" : "朗读关"}</span></button><button disabled={busy || !chatLog.length} onClick={() => { interruptSpeakCharacter(); setChatLog([]); setError(""); }} aria-label="清空对话" title="清空对话">↺</button></div></div>
         <div className={`connection-notice ${backend ? "connected" : ""}`} role="status"><span>{connectionMessage}</span>{backend !== true && <button type="button" onClick={checkConnection} disabled={checkingConnection}>{checkingConnection ? "检查中…" : "重新检查连接"}</button>}</div>
         <div className="conversation-log" role="log" aria-label="咨询记录" aria-live="polite">
-          {!chatLog.length && <div className="welcome-card"><span className="welcome-symbol">律</span><h3>你好，我是阿律。</h3><p>可以告诉我发生了什么、涉及哪些时间，以及你希望解决的问题。我会帮你梳理需要准备的材料和下一步行动。</p><div className="prompt-list">{prompts.map(text => <button key={text} disabled={backend !== true} onClick={() => send(text)}>{text}<span>↗</span></button>)}</div></div>}
-          {chatLog.map((m, i) => <article key={i} className={`counsel-message ${m.role}`}><small>{m.role === "user" ? "YOU · 你" : "ALU · 阿律"}</small><div>{m.content ? <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content.replace(/<think>[\s\S]*?(<\/think>|$)/gi, "")}</ReactMarkdown> : <span className="reply-loading">正在梳理你的问题<span>…</span></span>}</div></article>)}
+          {!chatLog.length && <div className="welcome-card"><p>你遇到了什么问题？也可以从下面的问题开始聊。</p><div className="prompt-list">{prompts.map(text => <button key={text} disabled={backend !== true} onClick={() => send(text)}>{text}<span>↗</span></button>)}</div></div>}
+          {chatLog.map((m, i) => <article key={i} className={`counsel-message ${m.role}`}><small>{m.role === "user" ? "你" : "阿律"}</small><div>{m.content ? <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content.replace(/<think>[\s\S]*?(<\/think>|$)/gi, "")}</ReactMarkdown> : <span className="reply-loading">正在梳理你的问题<span>…</span></span>}</div></article>)}
           <div ref={end} />
         </div>
         {error && <p className="consultation-error" role="alert">{error}</p>}
