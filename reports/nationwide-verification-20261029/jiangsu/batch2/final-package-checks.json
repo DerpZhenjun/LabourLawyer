@@ -1,0 +1,54 @@
+[
+  {
+    "region_code": "320281",
+    "kind": "application",
+    "source": "reports/nationwide-verification-20261029/jiangsu/320281/originals/2213bd5f-676c-4db0-9a4e-d9dd8b851919/劳动人事争议仲裁申请书.docx",
+    "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+    "output": "reports/nationwide-verification-20261029/jiangsu/batch2/320281-application-final.docx",
+    "output_sha256": "c45e94c2714e85534f39fb58e65f72c29012845ed3ba8e255bb1add4d4e5305a",
+    "changed_parts": [
+      "word/document.xml"
+    ],
+    "preserved_parts": 20,
+    "synthetic_only": true
+  },
+  {
+    "region_code": "320281",
+    "kind": "evidence",
+    "source": "reports/nationwide-verification-20261029/jiangsu/320281/originals/32bdbf03-606b-4da1-8c7b-96179129625a/证据清单.docx",
+    "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+    "output": "reports/nationwide-verification-20261029/jiangsu/batch2/320281-evidence-final.docx",
+    "output_sha256": "cee77dc04065780d807b5fddd1c1ef96dd20c7ef893034aec13ce2b7e67914f4",
+    "changed_parts": [
+      "word/document.xml"
+    ],
+    "preserved_parts": 11,
+    "synthetic_only": true
+  },
+  {
+    "region_code": "320282",
+    "kind": "application",
+    "source": "reports/nationwide-verification-20261029/jiangsu/320282/originals/9949cd24-29df-4db9-af04-b4395a22aa61/劳动人事争议仲裁申请书.docx",
+    "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+    "output": "reports/nationwide-verification-20261029/jiangsu/batch2/320282-application-final.docx",
+    "output_sha256": "f93c5baafb374a996c0d7cba99d2e3ffb57efe0a2d38edfa24a04bd20945d658",
+    "changed_parts": [
+      "word/document.xml"
+    ],
+    "preserved_parts": 20,
+    "synthetic_only": true
+  },
+  {
+    "region_code": "320282",
+    "kind": "evidence",
+    "source": "reports/nationwide-verification-20261029/jiangsu/320282/originals/6adb479a-d85d-42e9-9e77-8ec7afb3f622/证据清单.docx",
+    "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+    "output": "reports/nationwide-verification-20261029/jiangsu/batch2/320282-evidence-final.docx",
+    "output_sha256": "e1bd7ba3c1c2ac889954bcba18f690bb50d3a2015881cd244b1c40d84a8bf503",
+    "changed_parts": [
+      "word/document.xml"
+    ],
+    "preserved_parts": 11,
+    "synthetic_only": true
+  }
+]

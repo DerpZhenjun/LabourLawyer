@@ -1,0 +1,28 @@
+{
+  "adapter": "jiangsu_own_blank_oct29_v1",
+  "region_code": "320282",
+  "province": "jiangsu",
+  "city": "无锡市",
+  "district": "宜兴市",
+  "source_id": "509219666f61612819e02f36",
+  "authority": "宜兴市人力资源和社会保障局",
+  "service_code": "113202820140466759400201430200201",
+  "documents": {
+    "application": {
+      "annex_id": "9949cd24-29df-4db9-af04-b4395a22aa61",
+      "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "source_file": "reports/nationwide-verification-20261029/jiangsu/320282/originals/9949cd24-29df-4db9-af04-b4395a22aa61/劳动人事争议仲裁申请书.docx",
+      "source_url": "https://wxyx.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=40&iddept_ql_inf=1132028201404667594002014302002&ql_kind=20&iddept_yw_inf=113202820140466759400201430200201"
+    },
+    "evidence": {
+      "annex_id": "6adb479a-d85d-42e9-9e77-8ec7afb3f622",
+      "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "source_file": "reports/nationwide-verification-20261029/jiangsu/320282/originals/6adb479a-d85d-42e9-9e77-8ec7afb3f622/证据清单.docx",
+      "source_url": "https://wxyx.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=40&iddept_ql_inf=1132028201404667594002014302002&ql_kind=20&iddept_yw_inf=113202820140466759400201430200201"
+    }
+  },
+  "published": false,
+  "generation_enabled": false,
+  "web_qa_status": "NOT_RUN",
+  "scope": "offline_candidate_only"
+}

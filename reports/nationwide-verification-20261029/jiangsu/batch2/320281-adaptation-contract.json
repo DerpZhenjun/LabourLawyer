@@ -1,0 +1,28 @@
+{
+  "adapter": "jiangsu_own_blank_oct29_v1",
+  "region_code": "320281",
+  "province": "jiangsu",
+  "city": "无锡市",
+  "district": "江阴市",
+  "source_id": "3d304f186983f34c4170a398",
+  "authority": "江阴市人力资源和社会保障局",
+  "service_code": "113202810140425947400201430200201",
+  "documents": {
+    "application": {
+      "annex_id": "2213bd5f-676c-4db0-9a4e-d9dd8b851919",
+      "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "source_file": "reports/nationwide-verification-20261029/jiangsu/320281/originals/2213bd5f-676c-4db0-9a4e-d9dd8b851919/劳动人事争议仲裁申请书.docx",
+      "source_url": "https://wxjy.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=39&iddept_ql_inf=1132028101404259474002014302002&ql_kind=20&iddept_yw_inf=113202810140425947400201430200201"
+    },
+    "evidence": {
+      "annex_id": "32bdbf03-606b-4da1-8c7b-96179129625a",
+      "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "source_file": "reports/nationwide-verification-20261029/jiangsu/320281/originals/32bdbf03-606b-4da1-8c7b-96179129625a/证据清单.docx",
+      "source_url": "https://wxjy.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=39&iddept_ql_inf=1132028101404259474002014302002&ql_kind=20&iddept_yw_inf=113202810140425947400201430200201"
+    }
+  },
+  "published": false,
+  "generation_enabled": false,
+  "web_qa_status": "NOT_RUN",
+  "scope": "offline_candidate_only"
+}

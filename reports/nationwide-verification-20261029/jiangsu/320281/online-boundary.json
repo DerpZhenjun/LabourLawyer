@@ -1,0 +1,13 @@
+{
+  "origin": "https://www.jszwfw.gov.cn",
+  "path": "/jsjis/front/login.do",
+  "title": "用户登录",
+  "personal": true,
+  "corporate": true,
+  "region_code": "320281",
+  "checked_at": "2026-10-29T08:51:49.471114+00:00",
+  "status": "auth_required",
+  "credentials_entered": false,
+  "authenticated_submission_verified": false,
+  "raw_sso_url_saved": false
+}

@@ -1,0 +1,53 @@
+{
+  "targeted_unit_tests": {
+    "methods": 7,
+    "result": "PASS",
+    "evidence": "copy-count-green.txt"
+  },
+  "original_package_sha_mismatches": 0,
+  "original_material_downloads": 16,
+  "flow_downloads": 2,
+  "source_and_annex_checks": [
+    {
+      "region_code": "320281",
+      "source_url": "https://wxjy.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=39&iddept_ql_inf=1132028101404259474002014302002&ql_kind=20&iddept_yw_inf=113202810140425947400201430200201",
+      "source_id": "3d304f186983f34c4170a398",
+      "authority": "江阴市人力资源和社会保障局",
+      "service_code": "113202810140425947400201430200201",
+      "own_materials": 4,
+      "own_material_downloads": 8,
+      "own_flow_downloads": 1,
+      "download_sha_mismatches": 0,
+      "offline_adapter": "jiangsu_own_blank_oct29_v1",
+      "offline_qa": "PASS",
+      "web_qa": "NOT_RUN",
+      "published": false
+    },
+    {
+      "region_code": "320282",
+      "source_url": "https://wxyx.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=40&iddept_ql_inf=1132028201404667594002014302002&ql_kind=20&iddept_yw_inf=113202820140466759400201430200201",
+      "source_id": "509219666f61612819e02f36",
+      "authority": "宜兴市人力资源和社会保障局",
+      "service_code": "113202820140466759400201430200201",
+      "own_materials": 4,
+      "own_material_downloads": 8,
+      "own_flow_downloads": 1,
+      "download_sha_mismatches": 0,
+      "offline_adapter": "jiangsu_own_blank_oct29_v1",
+      "offline_qa": "PASS",
+      "web_qa": "NOT_RUN",
+      "published": false
+    }
+  ],
+  "first_batch_files_unchanged": 31,
+  "full_backend_tests": "NOT_RUN_BY_SUBAGENT",
+  "candidate_web_qa": "NOT_RUN",
+  "clean_public_copy_tests": {
+    "result": "PASS",
+    "unit_test_methods": 7,
+    "allowlisted_sha_and_sizes_checked": 50,
+    "private_capture_dependency": false,
+    "only_four_own_blank_originals_available": true,
+    "no_db_or_session_files_copied": true
+  }
+}

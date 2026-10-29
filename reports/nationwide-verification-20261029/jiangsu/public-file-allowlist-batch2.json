@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "scope": "batch2 Jiangyin/Yixing public evidence and own blank originals only",
+  "first_batch_manifest_preserved": "public-file-allowlist.json",
+  "first_batch_files_rechecked_unchanged": 31,
+  "original_file_allowlist": [
+    "reports/nationwide-verification-20261029/jiangsu/320281/originals/25cd0bd0-80ce-4cfb-82e5-495ca600b0ee/仲裁申请.png",
+    "reports/nationwide-verification-20261029/jiangsu/320281/originals/2213bd5f-676c-4db0-9a4e-d9dd8b851919/劳动人事争议仲裁申请书.docx",
+    "reports/nationwide-verification-20261029/jiangsu/320281/originals/32bdbf03-606b-4da1-8c7b-96179129625a/证据清单.docx",
+    "reports/nationwide-verification-20261029/jiangsu/320282/originals/546932a2-c869-4e10-bbe4-67e885a5c37b/仲裁申请.png",
+    "reports/nationwide-verification-20261029/jiangsu/320282/originals/9949cd24-29df-4db9-af04-b4395a22aa61/劳动人事争议仲裁申请书.docx",
+    "reports/nationwide-verification-20261029/jiangsu/320282/originals/6adb479a-d85d-42e9-9e77-8ec7afb3f622/证据清单.docx"
+  ],
+  "excluded": [
+    "Unlisted intermediary captures and initial incorrect outputs",
+    "Identity-photo example JPGs and unnecessary samples/placeholders",
+    "Generated DOCX/PNG/PDF, Word process logs and local rendering inventories",
+    "No HAR/cookies/headers/raw HTML/SSO state was saved"
+  ],
+  "files": [
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/material1.json",
+      "sha256": "ac5f860812b3f3f6cf5c8c265599de62ad81b92dd87869a305a0cab3537962f6",
+      "bytes": 5138
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/material1.png",
+      "sha256": "7a6db8515690444e33ca96d983bdfbe36c01a97b224d4f1ae6107908a2a20e6f",
+      "bytes": 483199
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/material2.json",
+      "sha256": "b65700c4f959b38786fed3a634d4076198af0d06d4ee35db1d395c3edc87b8ea",
+      "bytes": 5156
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/material2.png",
+      "sha256": "22341430235aa92fb8e5f32efe58528df40e1c0c7167bed5b5d159d1362eb7b9",
+      "bytes": 483413
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/material3-final.json",
+      "sha256": "820741f7aac6b7a4632adf5ce653623351cda759d9d8cb0b76fc161d599e7de2",
+      "bytes": 5138
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/material3-final.png",
+      "sha256": "131257bdebde1e5d3ad058b4075b339b343f16a33b9c19a0ba4d64340b124c70",
+      "bytes": 482820
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/material4-final.json",
+      "sha256": "b0ce328bbf334e9e2b415e0945a636b8a5b60ccbcce5a7c7c19e9cfd3a6334c7",
+      "bytes": 5112
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/material4-final.png",
+      "sha256": "d0c69954b5747bf85556cf026eddb5a5e6790c368a02217d2cfead03b108e665",
+      "bytes": 482298
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/online-boundary.json",
+      "sha256": "6158697a26ca54932161d6ff59d00d45e4dc6f5d329c72df928b118093d9a46f",
+      "bytes": 376
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/online-boundary.png",
+      "sha256": "4ee6869d002b3b18584518a1fcb720e27dd744c22e159b63bce5a248c499c332",
+      "bytes": 159520
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/guide.json",
+      "sha256": "e408c2b8ea881880f3e2da144870aad1b9e33e5e17a70ab48fe5ef96e4b1914b",
+      "bytes": 37799
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/official-guide.json",
+      "sha256": "bb73682bba043b2f22e0b0e62882d3fdfcd81e17a646f84954c14710203f5030",
+      "bytes": 4713
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/official-guide.png",
+      "sha256": "87ddf677a14c8b7aed4dc7da8dc8957d5a98741e153887f5461e6e1b04ca9ecf",
+      "bytes": 499112
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/downloads.json",
+      "sha256": "7bc815f95ddbe20510fb41e48c8c6a79ba6d32341a503c4ffe4af5baf5392d56",
+      "bytes": 6514
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/flow.json",
+      "sha256": "2c35bf74f510d97c945f7266177dc776c7a36094e3138b2fa28229f24a54962d",
+      "bytes": 848
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/flow-browser.png",
+      "sha256": "6f6403ca5454a11f6d171657bdfd95e6eabff1fa9d65fe6fcb55b33917f1d9de",
+      "bytes": 31660
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/originals/25cd0bd0-80ce-4cfb-82e5-495ca600b0ee/仲裁申请.png",
+      "sha256": "dc407a951d748964846c061b0331167db5c0178a8a7515f6ab933494c74aa8ee",
+      "bytes": 139623
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/originals/2213bd5f-676c-4db0-9a4e-d9dd8b851919/劳动人事争议仲裁申请书.docx",
+      "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "bytes": 17701
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/originals/32bdbf03-606b-4da1-8c7b-96179129625a/证据清单.docx",
+      "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "bytes": 15273
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/material1.json",
+      "sha256": "5f27a297dcb7d4e71a324c055bdcff8a60cf74e7ae026e6362f8051924014086",
+      "bytes": 5288
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/material1.png",
+      "sha256": "6ffbca0933552e6f5155dbbdedafe2666525207fd1b888134cca20b6634a26a0",
+      "bytes": 485712
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/material2.json",
+      "sha256": "32ecb9621e108ccd7b1da0a9cc1711a74c00d9be69c8cb2d0d3a5d932d38df05",
+      "bytes": 5306
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/material2.png",
+      "sha256": "6dc0de2ceac2909bb2b913aab755f289883dab980a470560a436154f5eebc523",
+      "bytes": 485969
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/material3.json",
+      "sha256": "cade6798e2ad4a6c65333ced74bfaedf90107a6f628f6502ab907d37cdcbb768",
+      "bytes": 5288
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/material3.png",
+      "sha256": "9443558adb6521f743bfb400fb6052eb2a619a98f3c19c3e05c31ca460a1b7c7",
+      "bytes": 485278
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/material4.json",
+      "sha256": "9ee7c3b7ec6a7150f33bb95e891fa3ebbcac6995ac89fc04199c6b87a72f1594",
+      "bytes": 5262
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/material4.png",
+      "sha256": "3c84c522a33f63d2fabe5aef55daa6439f8d9627edecd9ddacb04c8392e5ef18",
+      "bytes": 484737
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/online-entry-check.json",
+      "sha256": "d51437c69024cb67d5d5e6ed33d45bab05d889b87e85c3da39bb40639ec8d1ea",
+      "bytes": 546
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/guide.json",
+      "sha256": "47b9782a4280b1d177cc19b701aa2ce3c6b29a1931956e35667f7835c5eef780",
+      "bytes": 38076
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/official-guide.json",
+      "sha256": "2453d10b498daa91c711e349d50c8581fa4adb20f6cdcc613e02436d605c6fe6",
+      "bytes": 4877
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/official-guide.png",
+      "sha256": "202e0b8db89a6728c7b74930ce97d0a60db748a1cd761d98df330c34d6e48caf",
+      "bytes": 508145
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/downloads.json",
+      "sha256": "b6e7674e2ee2189946f69d1dc30cb165532d80762443c70e1c97393be8f3b8de",
+      "bytes": 6514
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/flow.json",
+      "sha256": "ae2a55373d27a47f83be916c9eca3814e8c9f25156ff19492169f11f5053dd7a",
+      "bytes": 848
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/flow-browser.png",
+      "sha256": "6f6403ca5454a11f6d171657bdfd95e6eabff1fa9d65fe6fcb55b33917f1d9de",
+      "bytes": 31660
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/originals/546932a2-c869-4e10-bbe4-67e885a5c37b/仲裁申请.png",
+      "sha256": "dc407a951d748964846c061b0331167db5c0178a8a7515f6ab933494c74aa8ee",
+      "bytes": 139623
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/originals/9949cd24-29df-4db9-af04-b4395a22aa61/劳动人事争议仲裁申请书.docx",
+      "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "bytes": 17701
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/originals/6adb479a-d85d-42e9-9e77-8ec7afb3f622/证据清单.docx",
+      "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "bytes": 15273
+    },
+    {
+      "file": "backend/regional_jiangsu_oct29.py",
+      "sha256": "e0943d13b4c29a4f0848dcb419564a776f7d90492b7dbc8892bf43e2e8296896",
+      "bytes": 6383
+    },
+    {
+      "file": "backend/tests/test_jiangsu_oct29.py",
+      "sha256": "be7df2e179a190296c7582e9a324371f3b09bc445cd684b862c1ca2307305f30",
+      "bytes": 5957
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/batch2/collect.py",
+      "sha256": "d8f5844a13df5ff49330e196945f7cb2a50dfa07f8ffbd031206051b0206fb75",
+      "bytes": 11334
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/batch2/qa.py",
+      "sha256": "4ff89eaaa4b60e5541e6b0389707088a51b9cdd9f6f5fe5b1bd32c78e7a660d2",
+      "bytes": 8386
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/batch2/finalize.py",
+      "sha256": "3417c063c5cde46ea414bb20737643fd6ac8f13d821b0fe5a6852c71c38a0071",
+      "bytes": 7746
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/batch2/HANDOFF.md",
+      "sha256": "30571e8f7dbb3eaee2bf3a3157c25de201ee59a1b32fe964d14023e0ab5c0e7c",
+      "bytes": 8824
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/batch2/artifact.md",
+      "sha256": "08246ae44b24762bc023023a03fa1512b0991218502ec9dd6fb0ee69ae7634d4",
+      "bytes": 2543
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/batch2/document-approval.json",
+      "sha256": "898e707e551999782d90b0804b0cf1f02970cfe5284647361a5d144b7d1fd2b3",
+      "bytes": 5073
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/batch2/TEST-RESULTS.json",
+      "sha256": "2a79f993a4358b75680ac7f64fea25737ec53821220b4213acc0f46c6b68f06d",
+      "bytes": 2052
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/batch2/final-package-checks.json",
+      "sha256": "1e653aa3b8808c615f07784f65b91d36f6a08cb1b615e710b157dcfaff1e049d",
+      "bytes": 2463
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/batch2/320281-adaptation-contract.json",
+      "sha256": "229bc9bc33a2a3dfb476d0a68fb214be060082b8d4101a181c7cf0f7d5b4406a",
+      "bytes": 1549
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/batch2/320282-adaptation-contract.json",
+      "sha256": "29362819816c0e478bbfa4e2bd62d76b67a572d88b83162b3886ebaa1294063e",
+      "bytes": 1549
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/batch2/copy-count-green.txt",
+      "sha256": "f4a1393f019f3b413eca9331391e7916b1e14c632eaf2c81494317617223d014",
+      "bytes": 1245
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/batch2/public-copy-tests.txt",
+      "sha256": "13ef3224f1d87d1df7669fc7e35ca5f801ed5c10df2f70133e31e5dec6824312",
+      "bytes": 1247
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/batch2/public-copy-result.json",
+      "sha256": "bbaacbffea3e89b576b12327e7d4f6911b2a0305e4840c7819d99f09695aa684",
+      "bytes": 231
+    }
+  ]
+}

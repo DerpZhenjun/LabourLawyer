@@ -1,0 +1,56 @@
+{
+  "province": "jiangsu",
+  "city": "淮安市",
+  "district": "淮安区",
+  "region_code": "320803",
+  "status": "discovery_only",
+  "official_guide_status": "not_found_in_checked_sources",
+  "template_status": "not_found_in_checked_sources",
+  "published": false,
+  "can_generate": false,
+  "candidate_guide_created": false,
+  "source_id": null,
+  "formal_guide_url": null,
+  "authority_binding": null,
+  "templates": [],
+  "downloaded_files": [],
+  "checked_sources": [
+    {
+      "url": "https://haha.jszwfw.gov.cn/",
+      "purpose": "自身门户及公共服务目录入口"
+    },
+    {
+      "url": "https://xzyl.jszwfw.gov.cn/jszwfw/publicservice/itemlist/gg_index.do?webId=86&themid=&deptid=&fwtype=",
+      "purpose": "完整/短关键词及自身区人社局全部页",
+      "department": "区人社局",
+      "pages_checked": 4,
+      "portal_matter_count": 43,
+      "portal_guide_count": 121
+    }
+  ],
+  "supplemental_attempt": {
+    "url": "https://www.zghaq.gov.cn/col/904_568817/art/17487072/1750319580035XG8jiYvx.html",
+    "browser_error": "net::ERR_CERT_AUTHORITY_INVALID",
+    "content_used_for_requirements": false,
+    "bypass_attempted": false
+  },
+  "capture_interval_utc": {
+    "first": "2026-10-29T08:44:22.597286+00:00",
+    "last": "2026-10-29T08:45:27.225818+00:00"
+  },
+  "online_submission_status": "not_verified",
+  "web_qa_status": "NOT_RUN",
+  "layout_qa_status": "NOT_APPLICABLE_NO_OWN_TEMPLATE",
+  "adapter_status": "NOT_APPLICABLE_NO_OWN_TEMPLATE",
+  "next_action": "从本区其他正式官方入口定位本区劳动人事争议仲裁实施指南；取得材料与原件前不注册、不适配。",
+  "limitations": [
+    "目录搜索未找到不证明当地没有服务或模板。",
+    "补充新闻/迁址公告不是正式申请指南。",
+    "不得借用市级、邻区或相同省份模板与要求。"
+  ],
+  "queue_check": {
+    "file": "config/regional_candidates.json",
+    "sha256": "23d9fd317bf0fbc7d301784a2f9ad04200c3b290e7797a394caff4fdb713bae5",
+    "already_candidate": false
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "adapter": "jiangsu_own_blank_oct29_v1",
+  "published": false,
+  "web_qa": "NOT_RUN",
+  "approved_final_outputs": [
+    {
+      "region_code": "320281",
+      "kind": "application",
+      "output": "reports/nationwide-verification-20261029/jiangsu/batch2/320281-application-final.docx",
+      "output_sha256": "c45e94c2714e85534f39fb58e65f72c29012845ed3ba8e255bb1add4d4e5305a",
+      "pages": 2,
+      "page_images": [
+        {
+          "file": "reports/nationwide-verification-20261029/jiangsu/batch2/render-final/320281-application/page-1.png",
+          "sha256": "b2d8886a424576be339d15c02d0e99d81793e24fe797b5bb3ab039ebbbfcc140"
+        },
+        {
+          "file": "reports/nationwide-verification-20261029/jiangsu/batch2/render-final/320281-application/page-2.png",
+          "sha256": "d8f87e35b7f97a458649bebc49112822e79c9fce5bedb06c4d243435767166bc"
+        }
+      ],
+      "visual_review_status": "PASS",
+      "review_method": "Every final page opened with view_image",
+      "checks": [
+        "Own locality/committee",
+        "All synthetic data",
+        "No clipping/overlap/missing glyphs",
+        "Blank signature and handwritten date",
+        "Application copies 3 / evidence copies 2",
+        "Evidence six columns / one item / three pages"
+      ],
+      "limitations": "Only this short synthetic payload; long facts and multi-item stress visual QA not run"
+    },
+    {
+      "region_code": "320281",
+      "kind": "evidence",
+      "output": "reports/nationwide-verification-20261029/jiangsu/batch2/320281-evidence-final.docx",
+      "output_sha256": "cee77dc04065780d807b5fddd1c1ef96dd20c7ef893034aec13ce2b7e67914f4",
+      "pages": 1,
+      "page_images": [
+        {
+          "file": "reports/nationwide-verification-20261029/jiangsu/batch2/render-final/320281-evidence/page-1.png",
+          "sha256": "443ceb82c11dff2461c06506913dfafa0d866d70470e984f890fd67a2f5c0b5b"
+        }
+      ],
+      "visual_review_status": "PASS",
+      "review_method": "Every final page opened with view_image",
+      "checks": [
+        "Own locality/committee",
+        "All synthetic data",
+        "No clipping/overlap/missing glyphs",
+        "Blank signature and handwritten date",
+        "Application copies 3 / evidence copies 2",
+        "Evidence six columns / one item / three pages"
+      ],
+      "limitations": "Only this short synthetic payload; long facts and multi-item stress visual QA not run"
+    },
+    {
+      "region_code": "320282",
+      "kind": "application",
+      "output": "reports/nationwide-verification-20261029/jiangsu/batch2/320282-application-final.docx",
+      "output_sha256": "f93c5baafb374a996c0d7cba99d2e3ffb57efe0a2d38edfa24a04bd20945d658",
+      "pages": 2,
+      "page_images": [
+        {
+          "file": "reports/nationwide-verification-20261029/jiangsu/batch2/render-final/320282-application/page-1.png",
+          "sha256": "d8eef784804f9d72cb59e158d6cb72018d5ef74b1056cd566d5616336b211718"
+        },
+        {
+          "file": "reports/nationwide-verification-20261029/jiangsu/batch2/render-final/320282-application/page-2.png",
+          "sha256": "d8f87e35b7f97a458649bebc49112822e79c9fce5bedb06c4d243435767166bc"
+        }
+      ],
+      "visual_review_status": "PASS",
+      "review_method": "Every final page opened with view_image",
+      "checks": [
+        "Own locality/committee",
+        "All synthetic data",
+        "No clipping/overlap/missing glyphs",
+        "Blank signature and handwritten date",
+        "Application copies 3 / evidence copies 2",
+        "Evidence six columns / one item / three pages"
+      ],
+      "limitations": "Only this short synthetic payload; long facts and multi-item stress visual QA not run"
+    },
+    {
+      "region_code": "320282",
+      "kind": "evidence",
+      "output": "reports/nationwide-verification-20261029/jiangsu/batch2/320282-evidence-final.docx",
+      "output_sha256": "e1bd7ba3c1c2ac889954bcba18f690bb50d3a2015881cd244b1c40d84a8bf503",
+      "pages": 1,
+      "page_images": [
+        {
+          "file": "reports/nationwide-verification-20261029/jiangsu/batch2/render-final/320282-evidence/page-1.png",
+          "sha256": "f9d42d51e9416ca33453f3979802beb9ce6eacc3a43019030ded5d9792ce8534"
+        }
+      ],
+      "visual_review_status": "PASS",
+      "review_method": "Every final page opened with view_image",
+      "checks": [
+        "Own locality/committee",
+        "All synthetic data",
+        "No clipping/overlap/missing glyphs",
+        "Blank signature and handwritten date",
+        "Application copies 3 / evidence copies 2",
+        "Evidence six columns / one item / three pages"
+      ],
+      "limitations": "Only this short synthetic payload; long facts and multi-item stress visual QA not run"
+    }
+  ],
+  "obsolete_outputs": "Initial filled outputs had wrong evidence copies and are excluded",
+  "original_docx_files_rendered": 14,
+  "original_pages_opened": 26,
+  "final_pages_opened": 6
+}

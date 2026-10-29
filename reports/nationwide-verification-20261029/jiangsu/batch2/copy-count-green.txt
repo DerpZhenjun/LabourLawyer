@@ -1,0 +1,12 @@
+test_clean_public_root_missing_or_corrupt_original_closes_generation (test_jiangsu_oct29.JiangsuOwnSourceOct29Tests.test_clean_public_root_missing_or_corrupt_original_closes_generation) ... ok
+test_independent_copy_counts_and_missing_evidence_count (test_jiangsu_oct29.JiangsuOwnSourceOct29Tests.test_independent_copy_counts_and_missing_evidence_count) ... ok
+test_own_forms_fill_preserving_unedited_package (test_jiangsu_oct29.JiangsuOwnSourceOct29Tests.test_own_forms_fill_preserving_unedited_package) ... ok
+test_reject_changed_annex_kind_hash_download_and_path (test_jiangsu_oct29.JiangsuOwnSourceOct29Tests.test_reject_changed_annex_kind_hash_download_and_path) ... ok
+test_reject_changed_locality_source_and_agency (test_jiangsu_oct29.JiangsuOwnSourceOct29Tests.test_reject_changed_locality_source_and_agency) ... ok
+test_reject_duplicate_and_changed_nested_authority (test_jiangsu_oct29.JiangsuOwnSourceOct29Tests.test_reject_duplicate_and_changed_nested_authority) ... ok
+test_unsupported_kind_and_sample_only_not_adapted (test_jiangsu_oct29.JiangsuOwnSourceOct29Tests.test_unsupported_kind_and_sample_only_not_adapted) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.276s
+
+OK
