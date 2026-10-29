@@ -6,6 +6,10 @@ from regional_jiangsu_candidates import candidate_contract, SUPPORTED as JIANGSU
 from regional_rongjiang_documents import rongjiang_source_matches, ADAPTER as RONGJIANG_ADAPTER
 from regional_zhejiang_documents import with_zhejiang_capabilities,checked_zhejiang_adapter,ADAPTER as ZHEJIANG_ADAPTER
 from regional_shangcheng_documents import with_shangcheng_capabilities,checked_shangcheng_adapter,ADAPTER as SHANGCHENG_ADAPTER
+from regional_zhejiang_oct29 import (with_capabilities as with_ningbo_capabilities,
+    blank_binding as ningbo_blank_binding,ADAPTER as NINGBO_ADAPTER,SPECS as NINGBO_SPECS)
+from regional_oct29_bindings import (with_capabilities as with_oct29_capabilities,jiangsu_binding as oct29_jiangsu_binding,
+    feidong_canonical,JIANGSU_ADAPTER as OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER)
 
 REFERENCE_SHA256 = '80d1dc3989e9da1ef2c763cbde54bd474d691a4febba48425fb2cc3471d94562'
 BINDINGS = {
@@ -228,6 +232,10 @@ def reference_binding(guide, template):
 def with_reference_capabilities(guide):
     """Publish platform adaptation separately from the retained official content."""
     result = with_shangcheng_capabilities(with_zhejiang_capabilities(guide)) if guide.get('province')=='zhejiang' else deepcopy(guide)
+    if result.get('province')=='zhejiang' and result.get('region_code') in {s['code'] for s in NINGBO_SPECS.values()}:
+        try:result=with_ningbo_capabilities(result)
+        except (ValueError,OSError,KeyError):
+            for template in result.get('templates',[]):template.update(can_generate=False,document_types=[])
     own_jiangsu_ready=True
     if result.get('region_code') in JIANGSU_OWN_CANDIDATES:
         try:candidate_contract(result)
@@ -258,10 +266,20 @@ def with_reference_capabilities(guide):
             if template.get('adapter') in {ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER} and result.get('province')=='zhejiang':
                 continue
             template.update(can_generate=False, document_types=[])
-    return result
+    return with_oct29_capabilities(result)
 
 
 def checked_reference_adapter(guide, template, kind):
+    if template.get('adapter') in {OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER}:
+        own_kind=oct29_jiangsu_binding(guide,template) if template['adapter']==OCT29_JIANGSU_ADAPTER else 'application' if feidong_canonical(guide,template) else None
+        if own_kind!=kind or template.get('can_generate') is not True or template.get('document_types')!=[kind]:
+            raise ValueError('本地区自身来源、空白文书或文书类型不匹配')
+        return template['adapter']
+    if template.get('adapter')==NINGBO_ADAPTER:
+        if (ningbo_blank_binding(guide,template)!=kind or kind not in {'application','evidence'}
+                or template.get('can_generate') is not True or template.get('document_types')!=[kind]):
+            raise ValueError('宁波本区自身来源或官方空白文书绑定不匹配')
+        return NINGBO_ADAPTER
     if template.get('adapter')==SHANGCHENG_ADAPTER:
         return checked_shangcheng_adapter(guide,template,kind)
     if template.get('adapter')==ZHEJIANG_ADAPTER:

@@ -1,0 +1,41 @@
+{
+  "phase": "first_batch_verified_next_batch_in_progress",
+  "nationwide_complete": false,
+  "published_guides": 181,
+  "published_generatable_localities": 166,
+  "unpublished_candidates": 31,
+  "first_batch_places_checked": 12,
+  "first_batch_new_own_guides": 7,
+  "first_batch_discovery_or_access_pending": 5,
+  "first_batch_officially_not_provided_claims": 0,
+  "new_route_supported_candidates": [
+    "330203",
+    "330212",
+    "340122",
+    "320281",
+    "320282"
+  ],
+  "candidate_web_acceptance": "NOT_RUN_PRIOR_POLICY_REJECTION_NOT_RETRIED",
+  "backend_tests": {
+    "run": 511,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 111.471
+  },
+  "browser_main_passes": 10,
+  "browser_review_passes": 6,
+  "openclaw_events_persisted": 20,
+  "openclaw_acknowledgements": 0,
+  "openclaw_sync_attempted": false,
+  "models_called": false,
+  "windows_ollama_started": false,
+  "public_guide_snapshot_unchanged": true,
+  "next_batch": "reports/nationwide-verification-20261029-b",
+  "next": [
+    "继续湖南天心/湖南湘江新区，严格确认区县/功能区身份",
+    "继续广东禅城/南海自身现行指南；历史DOC不冒充现行",
+    "继续山东历下/市中自身来源，不能继承市本级特殊管辖指南",
+    "候选网页验收合法可用前保持未发布，不绕过既有启动拒绝"
+  ],
+  "report": "TEST-REPORT.md"
+}

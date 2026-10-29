@@ -14,3 +14,7 @@ const shangcheng='zhejiang_shangcheng_own_blank_v1'
 assert(regionalApplicationFields(base,true,shangcheng).some(f=>f.key==='nationality'))
 assert(regionalExtraFields(jsExtra,shangcheng).some(f=>f.key==='workAddress'))
 console.log('PASS Zhejiang consumed fields are editable, per-template fields differ, hidden values are excluded')
+const ningbo='zhejiang_ningbo_own_blank_oct29_v1'
+assert(regionalApplicationFields(base,true,ningbo).some(f=>f.key==='nationality'))
+assert(regionalExtraFields(jsExtra,ningbo).some(f=>f.key==='workAddress'))
+assert(!regionalExtraFields(jsExtra,ningbo).some(f=>f.key==='evidenceCopyCount'))

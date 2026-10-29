@@ -53,7 +53,7 @@ def load_rollout_candidates(root):
     current=root/'reports/nationwide-localization-20261028/CANDIDATES.json'
     historical=root/'reports/nationwide-localization-20261023-night/PENDING-SOURCES.json'
     release=root/'config/regional_candidates.json'
-    path=current if current.is_file() else release if release.is_file() else historical
+    path=release if release.is_file() else current if current.is_file() else historical
     if not path.is_file():return []
     rows=json.loads(path.read_text(encoding='utf8'))
     if not isinstance(rows,list) or any(not isinstance(r,dict) or _place(r) is None for r in rows):

@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-29T09:13:15.447Z",
+  "checks": [
+    {
+      "name": "Actual current collection register is visible without publishing candidates",
+      "passed": true
+    },
+    {
+      "name": "Search miss is bounded to checked sources and grants no generation",
+      "passed": true
+    },
+    {
+      "name": "Unknown district stays unverified and is never labelled officially unavailable",
+      "passed": true
+    },
+    {
+      "name": "Review register responsive 375",
+      "passed": true
+    },
+    {
+      "name": "Review register responsive 768",
+      "passed": true
+    },
+    {
+      "name": "Review register responsive 1440",
+      "passed": true
+    }
+  ]
+}

@@ -111,6 +111,13 @@ class RolloutTests(unittest.TestCase):
             (root/'reports/nationwide-localization-20261028/CANDIDATES.json').unlink()
             self.assertEqual(m.load_rollout_candidates(root)[0]['district'],'旧区')
 
+    def test_canonical_registry_is_not_shadowed_by_old_report(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);self.workspace(root)
+            release=root/'config/regional_candidates.json';release.parent.mkdir()
+            release.write_text(json.dumps([dict(province='sichuan',city='成都市',district='最新候选区')]))
+            self.assertEqual(self.module().load_rollout_candidates(root)[0]['district'],'最新候选区')
+
     # Break caught: API drops directory rows or exposes the full nationwide target payload.
     def test_endpoint_returns_only_compact_province_aggregates(self):
         self.module()

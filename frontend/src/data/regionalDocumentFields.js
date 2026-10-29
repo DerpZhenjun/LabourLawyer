@@ -1,6 +1,6 @@
 /** Editable fields must follow the selected form; hidden examples never submit. */
 const ZHEJIANG='zhejiang_own_blank_v1'
-export const isZhejiangBlankAdapter=adapter=>[ZHEJIANG,'zhejiang_shangcheng_own_blank_v1'].includes(adapter)
+export const isZhejiangBlankAdapter=adapter=>[ZHEJIANG,'zhejiang_shangcheng_own_blank_v1','zhejiang_ningbo_own_blank_oct29_v1'].includes(adapter)
 export function regionalApplicationFields(base,isBlank,adapter){
   if(isZhejiangBlankAdapter(adapter))return base.filter(f=>!['currentAddress','applicantMailingAddress','applicantPostalCode'].includes(f.key))
   return isBlank?base.filter(f=>!['nationality','currentAddress','applicantPostalCode'].includes(f.key)).map(f=>f.key==='idAddress'?{...f,label:'居住地址'}:f):base

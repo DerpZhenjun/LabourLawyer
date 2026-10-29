@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-29T09:13:31.235Z",
+  "base": "http://127.0.0.1:5173",
+  "candidate_acceptance": false,
+  "checks": [
+    {
+      "name": "Published, generatable and candidate counts match actual API independently",
+      "passed": true
+    },
+    {
+      "name": "Search filters provinces, empty result explains recovery, keyboard focus remains",
+      "passed": true
+    },
+    {
+      "name": "Actual admin rollout reflows at 375px",
+      "passed": true
+    },
+    {
+      "name": "Actual admin rollout reflows at 768px",
+      "passed": true
+    },
+    {
+      "name": "Actual admin rollout reflows at 1440px",
+      "passed": true
+    },
+    {
+      "name": "Own Chengdu directory contains all 23 while unknown Qingyang inherits no guide",
+      "passed": true
+    },
+    {
+      "name": "Own Jinjiang form immediately follows location selector and retains default values",
+      "passed": true
+    },
+    {
+      "name": "Existing Jinjiang generation keeps cancellation, own source and a real backend POST",
+      "passed": true
+    },
+    {
+      "name": "Unpublished Yandu does not expose an unaccepted source or template",
+      "passed": true
+    },
+    {
+      "name": "No current-page console warnings or model inference requests",
+      "passed": true
+    }
+  ],
+  "failed": 0
+}

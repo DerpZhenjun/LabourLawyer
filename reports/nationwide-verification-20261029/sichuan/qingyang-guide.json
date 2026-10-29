@@ -1,0 +1,515 @@
+{
+  "province": "sichuan",
+  "province_name": "四川省",
+  "city": "成都市",
+  "district": "青羊区",
+  "region_code": "510105000000",
+  "service_name": "劳动人事争议仲裁申请",
+  "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+  "source_title": "办事指南详版-四川政务服务网",
+  "collected_at": "2026-10-29T08:40:36.451Z",
+  "verified_at": "2026-10-29T08:40:38.419Z",
+  "verification_status": "partial",
+  "authority": "成都市青羊区人力资源和社会保障局",
+  "official_version": "6",
+  "service_code": "11510105009187414X4512014135001",
+  "fields": {
+    "服务对象": {
+      "raw_value": "自然人、企业法人、事业法人、社会组织法人、其他组织、非法人企业、行政机关",
+      "normalized_value": "自然人、企业法人、事业法人、社会组织法人、其他组织、非法人企业、行政机关",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "办理形式": {
+      "raw_value": "窗口办理",
+      "normalized_value": "window",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "办件类型": {
+      "raw_value": "承诺件",
+      "normalized_value": "承诺件",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "通办范围": {
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "法定办结时限": {
+      "raw_value": "5个工作日",
+      "normalized_value": "5个工作日",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "承诺办结时限": {
+      "raw_value": "5个工作日",
+      "normalized_value": "5个工作日",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "是否收费": {
+      "raw_value": "否",
+      "normalized_value": "否",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "认证等级需求": {
+      "raw_value": "实名认证",
+      "normalized_value": "实名认证",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "到办事现场次数": {
+      "raw_value": "1",
+      "normalized_value": "1",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "必须到现场原因": {
+      "raw_value": "1、劳动纠纷多元化解平台线上申请劳动仲裁后，需本人或受委托人到联处中心扫码确认； 2、庭审时间需本人或受委托人到庭参加庭审活动。 3、立案审批材料（申请书、主体材料、证据等）建议到现场提交，避免因材料缺失影响案件办理，案件受理通知书、开庭通知书、案件裁决书、调解书、决定书等可以申请快递送达。",
+      "normalized_value": "1、劳动纠纷多元化解平台线上申请劳动仲裁后，需本人或受委托人到联处中心扫码确认； 2、庭审时间需本人或受委托人到庭参加庭审活动。 3、立案审批材料（申请书、主体材料、证据等）建议到现场提交，避免因材料缺失影响案件办理，案件受理通知书、开庭通知书、案件裁决书、调解书、决定书等可以申请快递送达。",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "实施主体": {
+      "raw_value": "成都市青羊区人力资源和社会保障局",
+      "normalized_value": "成都市青羊区人力资源和社会保障局",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "事项版本": {
+      "raw_value": "6",
+      "normalized_value": "6",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "事项类型": {
+      "raw_value": "公共服务",
+      "normalized_value": "公共服务",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "行使层级": {
+      "raw_value": "县级",
+      "normalized_value": "县级",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "权力来源": {
+      "raw_value": "法定本级行使",
+      "normalized_value": "法定本级行使",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "是否进驻政务大厅": {
+      "raw_value": "否",
+      "normalized_value": "否",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "是否支持自助终端办理": {
+      "raw_value": "否",
+      "normalized_value": "否",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "是否支持网上支付": {
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "委托部门": {
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "联办机构": {
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "基本编码": {
+      "raw_value": "512014135001",
+      "normalized_value": "512014135001",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "实施主体编码": {
+      "raw_value": "11510105009187414X",
+      "normalized_value": "11510105009187414X",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "实施编码": {
+      "raw_value": "11510105009187414X4512014135001",
+      "normalized_value": "11510105009187414X4512014135001",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "业务办理项编码": {
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "是否支持预约办理": {
+      "raw_value": "否",
+      "normalized_value": "否",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "是否支持物流快递": {
+      "raw_value": "是",
+      "normalized_value": "是",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "办理时间": {
+      "raw_value": "星期一至星期五 上午：09:00-12:00 下午：00:13-17:00;",
+      "normalized_value": "星期一至星期五 上午：09:00-12:00 下午：00:13-17:00;",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "办理地点": {
+      "raw_value": "四川省-成都市-青羊区-平安巷街道-10号,详细地址：五号楼809办公室;",
+      "normalized_value": "四川省-成都市-青羊区-平安巷街道-10号,详细地址：五号楼809办公室;",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "咨询方式": {
+      "raw_value": "咨询电话：86240332;",
+      "normalized_value": "咨询电话：86240332;",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "监督投诉方式": {
+      "raw_value": "投诉电话：86274339;",
+      "normalized_value": "投诉电话：86274339;",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "办理行政许可的程序环节": {
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "审批机关是否委托服务机构开展技术性服务": {
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "是否需要现场勘验": {
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "是否需要组织听证": {
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "是否需要招标、拍卖、挂牌交易": {
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "是否需要检验、检测、检疫": {
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "是否需要鉴定": {
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "是否需要专家评审": {
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "是否需要向社会公示": {
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    },
+    "是否实行告知承诺办理": {
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.451Z",
+      "verified_at": "2026-10-29T08:40:36.451Z",
+      "verification_status": "verified"
+    }
+  },
+  "sections": {
+    "基本信息": "扩展信息\n收起\n实施主体\n成都市青羊区人力资源和社会保障局\n事项版本\n6\n事项类型\n公共服务\n行使层级\n县级\n权力来源\n法定本级行使\n是否进驻政务大厅\n否\n是否支持自助终端办理\n否\n是否支持网上支付\n无\n委托部门\n无\n联办机构\n无\n基本编码\n512014135001\n实施主体编码\n11510105009187414X\n实施编码\n11510105009187414X4512014135001\n业务办理项编码\n无\n窗口办理\n是否支持预约办理\n否\n是否支持物流快递\n是\n服务信息\n收起\n办理时间\n星期一至星期五 上午：09:00-12:00 下午：00:13-17:00;\n办理地点\n四川省-成都市-青羊区-平安巷街道-10号,详细地址：五号楼809办公室;\n咨询方式\n咨询电话：86240332;\n监督投诉方式\n投诉电话：86274339;\n行政许可审批程序信息\n展开\n办理行政许可的程序环节\n无\n审批机关是否委托服务机构开展技术性服务\n无\n是否需要现场勘验\n无\n是否需要组织听证\n无\n是否需要招标、拍卖、挂牌交易\n无\n是否需要检验、检测、检疫\n无\n是否需要鉴定\n无\n是否需要专家评审\n无\n是否需要向社会公示\n无\n是否实行告知承诺办理\n无",
+    "申请材料": "材料名称\n材料必要性\n材料类型\n材料形式\n纸质材料份数\n表格下载\n详情\n1\n劳动合同\n必要\n原件和复印件\n纸质\n1\n空白表格\n示例样表\n查看更多\n2\n本人身份证\n必要\n原件和复印件\n纸质\n1\n示例样表\n查看更多\n空白表格\n名称\n操作\n劳动合同.zip\n下载\n示例样表\n名称\n操作\n劳动合同.zip\n下载\n办理材料详情\n材料名称\n劳动合同\n材料形式\n纸质\n材料必要性\n必要\n材料类型\n原件和复印件\n电子材料格式\n无\n来源渠道\n申请人自备\n来源渠道说明\n无\n纸质材料份数\n1\n纸质材料规格\nA4\n填报须知\n无\n受理标准\n无\n备注\n无\n空白表格\n名称\n操作\n示例样表\n名称\n操作\n身份证 (1).jpg\n下载\n办理材料详情\n材料名称\n本人身份证\n材料形式\n纸质\n材料必要性\n必要\n材料类型\n原件和复印件\n电子材料格式\n无\n来源渠道\n申请人自备\n来源渠道说明\n无\n纸质材料份数\n1\n纸质材料规格\nA4\n填报须知\n无\n受理标准\n无\n备注\n无",
+    "受理条件": "符合《中华人民共和国劳动争议调解仲裁法》第二条规定受案范围：\n（一）因确认劳动关系发生的争议；\n（二）因订立、履行、变更、解除和终止劳动合同发生的争议；\n（三）因除名、辞退和辞职、离职发生的争议；\n（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；\n（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；\n（六）法律、法规规定的其他劳动争议。",
+    "办理流程": "办理形式\n窗口办理\n网上办理\n办理流程\n办理时长\n办理人员\n转外时限\n特别程序\n办理流程说明\n下载流程图\n收件\n0个工作日\n无\n无\n无\n1.\t申请：申请人到政务服务中心综合 窗口提交申请材料；\n\t\t\t\t\t\t\t\t\t\t\t\t\t2.\t受理：窗口工作人员收到申请材料当场或者规定工作日内作出受理或不予受理决定。材料不齐全或不符合法定形式的，办理机关应在规定工作日内一次性告知申请人需要补正的全部内容，对不属于受理范围的，出具不予受理通知书；\n\t\t\t\t\t\t\t\t\t\t\t\t\t3.\t审查：办理人员对申请人提交的材料进行审查，提出初步审查意见；\n\t\t\t\t\t\t\t\t\t\t\t\t\t4.\t决定：办理机关负责人依据审查意见签署审批结果。对予批准办理的，由办理机关向申请人核发办理结果，不予批准的，由办理机关书面通知申请人并说明理由，并告知申请人对结果有异议的，可依法申请行政复议或者提起行政诉讼；\n\t\t\t\t\t\t\t\t\t\t\t\t\t5.\t制证：制证部门完成制证；\n\t\t\t\t\t\t\t\t\t\t\t\t\t6.\t颁发和送达：申请人凭个人身份证明（有效的身份证、临时居住证、户口簿等）和受理通知书到申办窗口领取办理结果。\n点击下载\n受理\n5个工作日\n无\n无\n无",
+    "收费标准": "该事项不收费",
+    "设定依据": "条款内容\n事业单位工作人员与所在单位发生人事争议的，依照《中华人民共和国劳动争议调解仲裁法》等有关规定处理。\n条款内容\n发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁；对仲裁裁决不服的，除本法另有规定的外，可以向人民法院提起诉讼。\n条款内容\n文职人员与用人单位发生的人事争议，按照国家和军队有关规定依法处理。\n条款内容\n用人单位与劳动者发生劳动争议，当事人可以依法申请调解、仲裁、提起诉讼，也可以协商解决。\n法律法规名称\n法规类型\n条例\n条款内容\n1\n事业单位人事管理条例\n行政法规\n第三十七条\n查看\n2\n中华人民共和国劳动争议调解仲裁法\n法律\n第五条\n查看\n3\n中国人民解放军文职人员条例\n行政法规\n第四十四条第一款\n查看\n4\n中华人民共和国劳动法\n法律\n第七十七条\n查看",
+    "中介服务": "该事项暂无中介服务",
+    "常见问题": "1.问题：\n本人不能到现场领取材料，该怎么办？\n解答：\n受托人持授权人的授权委托书到现场领取"
+  },
+  "channel": {
+    "raw_value": "窗口办理",
+    "form": "window",
+    "online_status": "unverified",
+    "entry_url": null,
+    "mentioned_urls": [],
+    "entry_check": {}
+  },
+  "materials": [
+    {
+      "id": "6b1ae44fe8037d2e397d",
+      "name": "劳动合同",
+      "required": "必要",
+      "original_copy": "原件和复印件",
+      "format": "纸质",
+      "copies": "1",
+      "details": {
+        "材料名称": "劳动合同",
+        "材料形式": "纸质",
+        "材料必要性": "必要",
+        "材料类型": "原件和复印件",
+        "电子材料格式": "无",
+        "来源渠道": "申请人自备",
+        "来源渠道说明": "无",
+        "纸质材料份数": "1",
+        "纸质材料规格": "A4",
+        "填报须知": "无",
+        "受理标准": "无",
+        "备注": "无"
+      },
+      "purpose": null,
+      "applicable_conditions": null,
+      "official_badges": [],
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "verification_status": "verified",
+      "collected_at": "2026-10-29T08:40:36.842Z",
+      "verified_at": "2026-10-29T08:40:36.842Z",
+      "detail_evidence": "raw_dom_popup_not_interactively_rechecked"
+    },
+    {
+      "id": "1666428b10ed81c19559",
+      "name": "本人身份证",
+      "required": "必要",
+      "original_copy": "原件和复印件",
+      "format": "纸质",
+      "copies": "1",
+      "details": {
+        "材料名称": "本人身份证",
+        "材料形式": "纸质",
+        "材料必要性": "必要",
+        "材料类型": "原件和复印件",
+        "电子材料格式": "无",
+        "来源渠道": "申请人自备",
+        "来源渠道说明": "无",
+        "纸质材料份数": "1",
+        "纸质材料规格": "A4",
+        "填报须知": "无",
+        "受理标准": "无",
+        "备注": "无"
+      },
+      "purpose": null,
+      "applicable_conditions": null,
+      "official_badges": [],
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "verification_status": "verified",
+      "collected_at": "2026-10-29T08:40:36.842Z",
+      "verified_at": "2026-10-29T08:40:36.842Z",
+      "detail_evidence": "raw_dom_popup_not_interactively_rechecked"
+    }
+  ],
+  "templates": [
+    {
+      "id": "4262929011489148928",
+      "annex_id": "4262929011489148928",
+      "original_name": "劳动合同.zip",
+      "official_kind": "blank",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.842Z",
+      "file_type": "zip",
+      "download_status": "not_downloaded",
+      "can_generate": false,
+      "document_types": [],
+      "download_reason": "尚未通过本地区实际下载控件核验，不推测下载地址"
+    },
+    {
+      "id": "4262929045500628992",
+      "annex_id": "4262929045500628992",
+      "original_name": "劳动合同.zip",
+      "official_kind": "sample",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.842Z",
+      "file_type": "zip",
+      "download_status": "not_downloaded",
+      "can_generate": false,
+      "document_types": [],
+      "download_reason": "尚未通过本地区实际下载控件核验，不推测下载地址"
+    },
+    {
+      "id": "4311579489571475456",
+      "annex_id": "4311579489571475456",
+      "original_name": "身份证 (1).jpg",
+      "official_kind": "sample",
+      "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+      "region_code": "510105000000",
+      "collected_at": "2026-10-29T08:40:36.842Z",
+      "file_type": "jpg",
+      "download_status": "not_downloaded",
+      "can_generate": false,
+      "document_types": [],
+      "download_reason": "尚未通过本地区实际下载控件核验，不推测下载地址"
+    }
+  ],
+  "warnings": [
+    "新版指南已按八个栏目读取；附件尚未完成本地区下载、填写适配和版式核验，暂不提供生成。",
+    "网上办理入口尚未核实；流程中的通用网上办理标签不代表可以在线申请。",
+    "材料栏仅列劳动合同和本人身份证；到现场原因又提及申请书、主体材料和证据，不能将材料栏解释为完整申请材料清单。"
+  ],
+  "portal_version": "jiq4",
+  "generation_enabled": false,
+  "region_id": "989cb5feff5c7975b4240ab8",
+  "source_id": "4749818268553b0ef09ced18",
+  "content_hash": "0887ddc8ff025231736f06e329e12291b3ca34a7c72fe01a6e8c6a6de605c409",
+  "version": 1
+}

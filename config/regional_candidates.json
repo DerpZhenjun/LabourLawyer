@@ -248,5 +248,75 @@
     "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=da27275dce0645ffb87c9d9423e84452",
     "published": false,
     "can_generate": false
+  },
+  {
+    "province": "sichuan",
+    "city": "成都市",
+    "district": "青羊区",
+    "region_code": "510105000000",
+    "source_id": "4749818268553b0ef09ced18",
+    "source_url": "https://www.sczwfw.gov.cn/jiq4/front/transition/ywTransToDetail?areaCode=510105000000&itemCode=11510105009187414X4512014135001&taskType=20&deptCode=11510105009187414X",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "zhejiang",
+    "city": "宁波市",
+    "district": "海曙区",
+    "region_code": "330203",
+    "source_id": "d06f0baa1875a403975389c3",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=a57febe6-cd30-4a53-8b4c-f24edaaf7864",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "zhejiang",
+    "city": "宁波市",
+    "district": "鄞州区",
+    "region_code": "330212",
+    "source_id": "dfa77c6a4ab07a39c9882710",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=73f99740-5b23-424a-9ae8-be607cdceaeb",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "anhui",
+    "city": "合肥市",
+    "district": "瑶海区",
+    "region_code": "340102",
+    "source_id": "4e6b2048e04a95835d3c164b",
+    "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=b62d6ac30d27495b817e0b73bc4e3d2e",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "anhui",
+    "city": "合肥市",
+    "district": "肥东县",
+    "region_code": "340122",
+    "source_id": "6a6e5a998809bb0009176648",
+    "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "jiangsu",
+    "city": "无锡市",
+    "district": "江阴市",
+    "region_code": "320281",
+    "source_id": "3d304f186983f34c4170a398",
+    "source_url": "https://wxjy.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=39&iddept_ql_inf=1132028101404259474002014302002&ql_kind=20&iddept_yw_inf=113202810140425947400201430200201",
+    "published": false,
+    "can_generate": false
+  },
+  {
+    "province": "jiangsu",
+    "city": "无锡市",
+    "district": "宜兴市",
+    "region_code": "320282",
+    "source_id": "509219666f61612819e02f36",
+    "source_url": "https://wxyx.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=40&iddept_ql_inf=1132028201404667594002014302002&ql_kind=20&iddept_yw_inf=113202820140466759400201430200201",
+    "published": false,
+    "can_generate": false
   }
 ]
