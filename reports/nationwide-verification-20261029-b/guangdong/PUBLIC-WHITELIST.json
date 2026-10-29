@@ -1,0 +1,408 @@
+{
+  "created_at": "2026-10-29T09:27:50.093536+00:00",
+  "scope": "只允许精确清单文件；未列出项不得自动打包或提交。",
+  "excluded": [
+    "cookies/SSO/rawHAR/auth state（本批未采集）",
+    "目录和首页中无关案件公告的原始捕获",
+    "初始加载中或失败诊断捕获",
+    "原始本机Word操作任务和PID回执"
+  ],
+  "files": [
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/agencies/page.png",
+      "sha256": "c383f4a442505c1ac4f7d526e61dcf2a835b9717aefdd81af66c318efc360c15",
+      "bytes": 497692
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/agencies/page.txt",
+      "sha256": "ba8f4845db80763d9c9a86a52b98dfbcb5c652efde11876b825d6996c7881228",
+      "bytes": 1798
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/agencies/provenance.json",
+      "sha256": "e554e3230497c0aaa43b3f5c68eb9d45947b55cb160a17870a69dead67823d71",
+      "bytes": 430
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/agencies/public-source.json",
+      "sha256": "dd6b303a446db73d556af94c4e5b87134464c9e5600a454668b1cdc336287036",
+      "bytes": 10205
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/branch-search-arbitration/page.png",
+      "sha256": "c846fd89ecb5240d75bae5127c65f60e88e4e15956c69304dba0f66699e9b653",
+      "bytes": 208764
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/branch-search-arbitration/page.txt",
+      "sha256": "0d6d71e4ade319b9e95831843a4bd2dabff99ae22063df558f869c33491e2682",
+      "bytes": 2195
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/branch-search-arbitration/provenance.json",
+      "sha256": "25f3bcfe9e3cb5e10cabc9b1a6ce490b950e6ac1f819284712789772ecd046c7",
+      "bytes": 420
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/branch-search-arbitration/public-source.json",
+      "sha256": "cb499475ef96a6d7df6c13d73f71b82e0dae858b55429a26c758d521af029378",
+      "bytes": 20765
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/content-review.json",
+      "sha256": "4f2f79de21e585bf8b11b43885cff67f22ed07b4d2aaf384571ce834650c2510",
+      "bytes": 4687
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/discovery.json",
+      "sha256": "dc46b1664c3db08c2fa9fd36aff4f810f01f0a7f37e4490f55f7d316f074bb64",
+      "bytes": 6218
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/download-directory/page.png",
+      "sha256": "e85a2931b6d8d1c5ec91870b45cc93fa7355d68a3f11032cc5842a7d3ff775a5",
+      "bytes": 162701
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/download-directory/page.txt",
+      "sha256": "1982a0701de2feeeeff67a5cd6dc6a5bd0889bae23881abc760279c08538e6d3",
+      "bytes": 1983
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/download-directory/provenance.json",
+      "sha256": "6870726376da979b187f08c7e3d20316d71485ad78bead46cc2a512fbe640252",
+      "bytes": 398
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/download-directory/public-source.json",
+      "sha256": "8a8faced8b3f1dbad59ec949a6eb98a52acf16d16e085b22b4a2c663c9705c86",
+      "bytes": 9414
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/download-directory-page2/page.png",
+      "sha256": "7e3dddd519ec3c297261067e24a9fc74dabb220241cabc170dbac3e5ee60d013",
+      "bytes": 131060
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/download-directory-page2/page.txt",
+      "sha256": "4e1771d036397ed82d224bc6a07347ab1f064909aa7d2d142ebb2602719fac35",
+      "bytes": 1484
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/download-directory-page2/provenance.json",
+      "sha256": "7d307ef2fe5297359b8fbf5f29851fb980b608b18778bcab079054d699abedbe",
+      "bytes": 410
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/download-directory-page2/public-source.json",
+      "sha256": "ef9594c7ba0b468b73b3ec033ac783561d44c9fbff2a90e24db47fe31bcbc9da",
+      "bytes": 7325
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/downloads/01-仲裁申请书.doc",
+      "sha256": "885a2d21426da8e3cd62e7e7542066a6f0e1fb6527f8b4d085306cdbebd76cd3",
+      "bytes": 26112
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/downloads/02-仲裁申请书样式.doc",
+      "sha256": "93500b8e7fef52568d9740ee4b85a93cc85d5efd56bb3c396da56602e8aa66cb",
+      "bytes": 17408
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/downloads/03-保证书.doc",
+      "sha256": "d00276abf381df022e5c0282c0d14f9ba14c270df702809000f4035d4e40b3ab",
+      "bytes": 20480
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/downloads/04-保证书样式.doc",
+      "sha256": "2b1234c518aba38119e2ec20dd2cc7bf69ab3bd44b78b415457ef12c861e4e9a",
+      "bytes": 13312
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/downloads/05-授权委托书.doc",
+      "sha256": "604552e049938cebfb0ba383f4a1f7242113e672d4dfa1728ccaa0c78102d863",
+      "bytes": 23040
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/downloads/06-授权委托书样式.doc",
+      "sha256": "6d572c35ac735cc35e814c5be2d5f8a349c557f0ae76dc432fde4a6979c4572c",
+      "bytes": 14848
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/downloads/manifest.json",
+      "sha256": "1b0496b7df5d6c500d49697c61d3714325745a76ea5238d7a3af9137597e060a",
+      "bytes": 6474
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/global-search-own-level/page.png",
+      "sha256": "192343f3f9dd09020e33275765631501adce288f50a9f104b78a7a2587e971d3",
+      "bytes": 339959
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/global-search-own-level/page.txt",
+      "sha256": "b94fae44db402c694d2101555aa41c4c22611969c204a42270f2e239677a8e32",
+      "bytes": 3376
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/global-search-own-level/provenance.json",
+      "sha256": "723dce5895d31bef009eabbb11c2c768a8c52631152e77fcfb4e0aa091f04a61",
+      "bytes": 576
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/global-search-own-level/public-source.json",
+      "sha256": "e8520b9a61c13e32c1b225dd92acc17c7618e82adb3d8fa0efa3cc7fbb0af49c",
+      "bytes": 12231
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/global-search-own-region-loaded/page.png",
+      "sha256": "a85c8131a94a92872d9113855ceab95fbc189370cb71035ac17d66b2d09e0913",
+      "bytes": 341094
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/global-search-own-region-loaded/page.txt",
+      "sha256": "63a627d8675773296eee74263285e64c056ff19a87e25406a7d82baf359476d2",
+      "bytes": 3386
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/global-search-own-region-loaded/provenance.json",
+      "sha256": "1583e09d03a8d8729e94a482e0bd84c010899085f7fce7b7fc04baacf4b4f835",
+      "bytes": 573
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/global-search-own-region-loaded/public-source.json",
+      "sha256": "f5f0a6972387054eafacad7a14bb36563f560fa03e7ce033fde24da11b273aca",
+      "bytes": 12364
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/own-branch-empty-response/page.png",
+      "sha256": "ed1f436caf0b4af11375d934f17c4550f9bf733f8b56b5aa5b41fc4362b31f9e",
+      "bytes": 251356
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/own-branch-empty-response/page.txt",
+      "sha256": "33882fab729369ed1cb9df5e3ea84ed07b4dbcdd21960f0b2174dc7d19bfabcf",
+      "bytes": 3465
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/own-branch-empty-response/provenance.json",
+      "sha256": "9c9893fd7006eaee6388e65322f3948ece7830568659cbff98db83865502ac3f",
+      "bytes": 420
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/own-branch-empty-response/public-source.json",
+      "sha256": "5af1b133637b4b8f4f0bcf94b8b811179b315fa9a2e3cd33f0761cee2802bd07",
+      "bytes": 25857
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/own-material-notice/page.png",
+      "sha256": "de99e9e7e0dec0e95430415527c91f56141812d71d766eb4b7c20710ef43ab82",
+      "bytes": 486988
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/own-material-notice/page.txt",
+      "sha256": "325d1b6dc4003505db981470b5cca7e5aba4c8fe140ae6cf864eecb96abc23d1",
+      "bytes": 1421
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/own-material-notice/provenance.json",
+      "sha256": "13c0c5c1cbcbd038c30c18fa359d5db854836d378aba695617136e5b8bc8da54",
+      "bytes": 422
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/own-material-notice/public-source.json",
+      "sha256": "4408a81d2288fa9e1f4b25e048c41b0ddcaf48d98a838e6837b5decebcfbdae2",
+      "bytes": 10084
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/qa/originals/01-1.png",
+      "sha256": "bdc9e85868edaabeae6ed0a6e1436ce99c5be01fac97985ec3dd2d76e4f52ca6",
+      "bytes": 74113
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/qa/originals/01-2.png",
+      "sha256": "83196735a2294f91b58f7c7cf3db20509067960e9bd2a1a27ac0a514ecc1721a",
+      "bytes": 10105
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/qa/originals/01-3.png",
+      "sha256": "12bd770fe693daf4d4cbc57e232149f6c593af69d1e64931b8e6271e3b6c7fab",
+      "bytes": 19954
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/qa/originals/01.pdf",
+      "sha256": "e4a0011ee830b3c4f44097efef98df9cb99d1aeb8880fd49b3e98fc12b75ac97",
+      "bytes": 77905
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/qa/originals/02-1.png",
+      "sha256": "09cb81dfe62d86ca74c76d35673206e44f8e16888caaad3cc1c8c8eb2ee97a9c",
+      "bytes": 103036
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/qa/originals/02-2.png",
+      "sha256": "6659e8369d0cd7327d65ea895575a09f7d0c382666942e14864fc910940ab68a",
+      "bytes": 25424
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/qa/originals/02-3.png",
+      "sha256": "86a96740f63ad8b376acbbcfc53dcfec0c5aaa10c7fd991f8b71640f14d8e816",
+      "bytes": 22082
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/qa/originals/02.pdf",
+      "sha256": "1d7211b0d6be01da7ffd025d857ecde6008adba723b73262d442e1de60589382",
+      "bytes": 107717
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/qa/originals/03-1.png",
+      "sha256": "23dd6eb01d6787fedb8790642458439a484638d15c09b1e36cd0694076fcd8f5",
+      "bytes": 95526
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/qa/originals/03.pdf",
+      "sha256": "2e0b97d0d34ac8861325e08f2d9475a43ecea8c2eb53a4c621147e6c788e2836",
+      "bytes": 71309
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/qa/originals/04-1.png",
+      "sha256": "31213ee52a6089a485c3f6bcb4249135299be8725a6472fb673eebf328abf0bf",
+      "bytes": 105744
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/qa/originals/04.pdf",
+      "sha256": "668ec7ee8e6fe95f140098594c37333e2869abc7f619100ebbdca9e17b610816",
+      "bytes": 89680
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/qa/originals/05-1.png",
+      "sha256": "bde3d575ce146323273234280185e9979ac8fc93e6544c5b2de185e3fe910709",
+      "bytes": 112839
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/qa/originals/05.pdf",
+      "sha256": "57f8472cbcb0b32db5a202788936ef9607b2491e2febb68424e98d57841cc554",
+      "bytes": 93222
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/qa/originals/06-1.png",
+      "sha256": "0acc0d3d81ed2232ac1c290d689497817f29f92b286f143938676d3b33f08351",
+      "bytes": 143631
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/chancheng/qa/originals/06.pdf",
+      "sha256": "306fbec40765a2dd5926f8d1791c7cf11780b62c101e660cb1c961f5afc444f3",
+      "bytes": 138251
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/FINAL-REPORT.md",
+      "sha256": "febd42684108095f0354796a788de51df84e2b1fd2112aa06ff4aead53bb311b",
+      "bytes": 4200
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/finalize-public.py",
+      "sha256": "22bc79f39c3e9e67e1a3c9f7acc51452100c14a251b253081c5f52ee50b9607a",
+      "bytes": 11377
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/nanhai/branch-search-arbitration/page.png",
+      "sha256": "f5bfea13c0c7f85b0c9921d1d6193a2417b8323b3c89399bcfb5ed65418f8bfc",
+      "bytes": 186048
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/nanhai/branch-search-arbitration/page.txt",
+      "sha256": "9913bedf23b622c03d0314be94b99015c6431cfc96b6cd3e1b9dfd6e868a1691",
+      "bytes": 2159
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/nanhai/branch-search-arbitration/provenance.json",
+      "sha256": "68f94b4aa9298e1020eadfec64ea86aa77a24ec47844cfe8f04044e87ea5226a",
+      "bytes": 420
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/nanhai/branch-search-arbitration/public-source.json",
+      "sha256": "382558b416ad5e1f12110755ee756f96358940f5ce01e8524c3f869da76f3ec3",
+      "bytes": 19578
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/nanhai/discovery.json",
+      "sha256": "c89cd2dc0121403bda9426157d57a2ddb4e6873eaeda49abf497d60a6f46d0b5",
+      "bytes": 4654
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/nanhai/global-search-own-level/page.png",
+      "sha256": "63fe001ef1a2aa5ec8fc1c7fc777cab54079d78e35d0610b518e144507215aaf",
+      "bytes": 321673
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/nanhai/global-search-own-level/page.txt",
+      "sha256": "b6caa605ea3f8d1f1311c82e45aa142c82c7e437beae47f34b1451807edf0995",
+      "bytes": 3264
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/nanhai/global-search-own-level/provenance.json",
+      "sha256": "321fc18f5baaa0c86bef2811cf279425f89bda6591e45e3cefb223de1c5271f1",
+      "bytes": 576
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/nanhai/global-search-own-level/public-source.json",
+      "sha256": "5695a6834fe614a1798860a3d2ad2b8ae85c85d5eadede5f6b76a463974f85f9",
+      "bytes": 11952
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/nanhai/global-search-own-region-loaded/page.png",
+      "sha256": "14e97256a4d15eb4fa0ab8d790bd734a0bf8e5a43c293557d9e2beeea819c61e",
+      "bytes": 325499
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/nanhai/global-search-own-region-loaded/page.txt",
+      "sha256": "a42d3a6f7f333da538a93a957fe6cb1c9f8cf2790b22a2360ca4f9bbbbb63329",
+      "bytes": 3345
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/nanhai/global-search-own-region-loaded/provenance.json",
+      "sha256": "190496e8a83d957d46746c283d8d727cb14c89415597f5a7df7645db68960380",
+      "bytes": 573
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/nanhai/global-search-own-region-loaded/public-source.json",
+      "sha256": "d3321a5c00eb0d6d13c1c38911f587163cc41c822484554765fcda2f36c1b2c5",
+      "bytes": 12275
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/nanhai/own-branch/page.png",
+      "sha256": "93f6e8936204eaebb609ccbbe1865e19412f824ea4463ee5abc34e8c7d1d654d",
+      "bytes": 252162
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/nanhai/own-branch/page.txt",
+      "sha256": "63b4cae8de46b513ee10405d874768bfb91847890630d96ea3bf9f6140cd3e75",
+      "bytes": 4183
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/nanhai/own-branch/provenance.json",
+      "sha256": "9312538a6ee9fa3ebb95ae539a9f4866589ada5d8fb6118a5ea799c17535524e",
+      "bytes": 420
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/nanhai/own-branch/public-source.json",
+      "sha256": "7269c6508c2a92f8eda2dca5b9585f4eedf41b5d0d0aeb82091a9721242371f1",
+      "bytes": 26175
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/qa/public-isolation-summary.json",
+      "sha256": "2889dfa1a97cf09414222d3fd0aa28f5dad947abfc1375c71bd0be5a85b03432",
+      "bytes": 495
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-b/guangdong/render-isolated.ps1",
+      "sha256": "f0bc146914b17cfd76a1366b7fef67d8e43fb7ef0ff19457fd7dba8db8f17ec2",
+      "bytes": 5229
+    },
+    {
+      "path": "scripts/collect-guangdong-oct29b.py",
+      "sha256": "23e7abf91f2f6c20b177a739b34137ee1af3be8417c724542f8c238cc3d18d3f",
+      "bytes": 4872
+    }
+  ],
+  "file_count": 79
+}

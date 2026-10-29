@@ -1,0 +1,102 @@
+{
+  "record_type": "locality_discovery_only",
+  "checked_at": "2026-10-29T09:27:50.093536+00:00",
+  "browser": {
+    "tool": "Agent Browser",
+    "version": "0.38.2",
+    "session": "gd-oct29b"
+  },
+  "target_service": "劳动人事争议仲裁申请",
+  "guide_status": "not_found_in_checked_sources",
+  "verified_guide": false,
+  "service_code": null,
+  "current_materials": {
+    "status": "unverified",
+    "items": null
+  },
+  "current_handling_modes": {
+    "status": "unverified",
+    "items": null
+  },
+  "current_time_limit": {
+    "status": "unverified",
+    "value": null
+  },
+  "current_fee": {
+    "status": "unverified",
+    "value": null
+  },
+  "current_online_auth_requirement": "unverified",
+  "candidate_import_allowed": false,
+  "generation": {
+    "status": "not_implemented",
+    "adapter_key": null,
+    "entrypoint": null
+  },
+  "limits": [
+    "未找到仅限本批已检查入口，不代表官方未提供或当地没有该服务。",
+    "全站搜索展示10条相关结果，无目标条目不证明完整目录中不存在。",
+    "省级同名申请仲裁审查确认、计量仲裁、劳动监察均不能替代本区普通仲裁申请指南。",
+    "部门办事窗口不能自动认定为劳动仲裁收件窗口。",
+    "未进入在线申报、实名认证或验证码；未保存cookies、SSO或raw HAR。"
+  ],
+  "region": {
+    "province": "广东省",
+    "city": "佛山市",
+    "district": "南海区",
+    "code": "440605"
+  },
+  "authority": {
+    "name": "佛山市南海区人力资源和社会保障局",
+    "org_code": "734134585",
+    "org_code_kind": "official_portal_branch_orgCode_not_service_code",
+    "branch_url": "https://www.gdzwfw.gov.cn/portal/v2/branch-hall?orgCode=734134585",
+    "identity_status": "verified_official_department_link_and_branch_heading",
+    "own_website_url": "https://www.nanhai.gov.cn/fsnhq/bmdh/zfbm/qrsj/xxgkml/",
+    "own_website_captured_at": "2026-10-29T09:17:45.600Z",
+    "own_website_capture_sha256": "64d1a2d2fe38fcebfcb573adf06fb4bcec78b9a7c8450c1e43d36fa29008bdca"
+  },
+  "checked_sources": [
+    {
+      "capture": "nanhai/own-branch",
+      "url": "https://www.gdzwfw.gov.cn/portal/v2/branch-hall?orgCode=734134585",
+      "captured_at": "2026-10-29T09:19:14.763Z",
+      "sha256": "7269c6508c2a92f8eda2dca5b9585f4eedf41b5d0d0aeb82091a9721242371f1",
+      "purpose": "各区官网人社部门真实链接到本区办事大厅，核对机关名称"
+    },
+    {
+      "capture": "nanhai/branch-search-arbitration",
+      "url": "https://www.gdzwfw.gov.cn/portal/v2/branch-hall?orgCode=734134585",
+      "captured_at": "2026-10-29T09:19:26.667Z",
+      "sha256": "382558b416ad5e1f12110755ee756f96358940f5ce01e8524c3f869da76f3ec3",
+      "purpose": "本区部门大厅原生搜索仲裁，0事项仅为本次筛选结果"
+    },
+    {
+      "capture": "nanhai/global-search-own-region-loaded",
+      "url": "https://www.gdzwfw.gov.cn/portal/v2/search?region=440000&keyword=%E5%8A%B3%E5%8A%A8%E4%BA%BA%E4%BA%8B%E4%BA%89%E8%AE%AE%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7&areaCode=440605&departmentCode=&onlyCorrespondingLevel=0&type=",
+      "captured_at": "2026-10-29T09:23:48.488Z",
+      "sha256": "d3321a5c00eb0d6d13c1c38911f587163cc41c822484554765fcda2f36c1b2c5",
+      "purpose": "原生区域选择本区，记录省级同名结果的适用地区"
+    },
+    {
+      "capture": "nanhai/global-search-own-level",
+      "url": "https://www.gdzwfw.gov.cn/portal/v2/search?region=440000&keyword=%E5%8A%B3%E5%8A%A8%E4%BA%BA%E4%BA%8B%E4%BA%89%E8%AE%AE%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7&areaCode=440605&departmentCode=&onlyCorrespondingLevel=true&type=",
+      "captured_at": "2026-10-29T09:25:34.505Z",
+      "sha256": "5695a6834fe614a1798860a3d2ad2b8ae85c85d5eadede5f6b76a463974f85f9",
+      "purpose": "原生勾选仅显示本级，目标仲裁申请未在展示10结果内定位"
+    }
+  ],
+  "template_status": "not_found_in_checked_sources",
+  "current_template_applicability": "unverified",
+  "original_attachment_count": 0,
+  "additional_checked_sources": [
+    {
+      "url": "https://www.nanhai.gov.cn/fsnhrsj/gkmlpt/index",
+      "observation": "公开目录有案件送达公告，未将案件公告当作指南或空白模板；相关原始页面不列入公开白名单。"
+    },
+    {
+      "url": "https://www.nanhai.gov.cn/fsnhrsj/gkmlpt/search?keywords=%E4%BB%B2%E8%A3%81&order=0&position=title",
+      "observation": "原生检索页面仅见搜索标题，无结果行或总数，等待后仍如此；不解释成零项。"
+    }
+  ]
+}

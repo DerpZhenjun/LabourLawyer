@@ -1,0 +1,102 @@
+{
+  "reviewed_at": "2026-10-29T09:27:50.093536+00:00",
+  "note": "此复核追加于原始下载清单；原清单下载时visual_qa=pending保留不覆盖。",
+  "files": [
+    {
+      "file": "reports/nationwide-verification-20261029-b/guangdong/chancheng/downloads/01-仲裁申请书.doc",
+      "original_name": "仲裁申请书.doc",
+      "sha256": "885a2d21426da8e3cd62e7e7542066a6f0e1fb6527f8b4d085306cdbebd76cd3",
+      "classification": "blank_application",
+      "historical_publication_date": "2015-02-11",
+      "current_applicability": "unverified",
+      "visual_qa": "all_pages_viewed",
+      "page_count": 3,
+      "observation": "空白当事人（含第三人）、四项请求、事实理由及签名日期副本份数；原件保留三页。",
+      "pdf": "chancheng/qa/originals/01.pdf",
+      "page_images": [
+        "chancheng/qa/originals/01-1.png",
+        "chancheng/qa/originals/01-2.png",
+        "chancheng/qa/originals/01-3.png"
+      ]
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-b/guangdong/chancheng/downloads/02-仲裁申请书样式.doc",
+      "original_name": "仲裁申请书样式.doc",
+      "sha256": "93500b8e7fef52568d9740ee4b85a93cc85d5efd56bb3c396da56602e8aa66cb",
+      "classification": "sample_application",
+      "historical_publication_date": "2015-02-11",
+      "current_applicability": "unverified",
+      "visual_qa": "all_pages_viewed",
+      "page_count": 3,
+      "observation": "红色张三和X占位及请求、事实理由填写指引；样例不作为空白生成模板。",
+      "pdf": "chancheng/qa/originals/02.pdf",
+      "page_images": [
+        "chancheng/qa/originals/02-1.png",
+        "chancheng/qa/originals/02-2.png",
+        "chancheng/qa/originals/02-3.png"
+      ]
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-b/guangdong/chancheng/downloads/03-保证书.doc",
+      "original_name": "保证书.doc",
+      "sha256": "d00276abf381df022e5c0282c0d14f9ba14c270df702809000f4035d4e40b3ab",
+      "classification": "blank_declaration",
+      "historical_publication_date": "2015-02-11",
+      "current_applicability": "unverified",
+      "visual_qa": "all_pages_viewed",
+      "page_count": 1,
+      "observation": "保证书含禅城区劳动人事争议仲裁委员会及联系地址真实性等声明，待填签名联系信息。",
+      "pdf": "chancheng/qa/originals/03.pdf",
+      "page_images": [
+        "chancheng/qa/originals/03-1.png"
+      ]
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-b/guangdong/chancheng/downloads/04-保证书样式.doc",
+      "original_name": "保证书样式.doc",
+      "sha256": "2b1234c518aba38119e2ec20dd2cc7bf69ab3bd44b78b415457ef12c861e4e9a",
+      "classification": "sample_declaration",
+      "historical_publication_date": "2015-02-11",
+      "current_applicability": "unverified",
+      "visual_qa": "all_pages_viewed",
+      "page_count": 1,
+      "observation": "保证书样式含红色张三、X占位地址电话及邮编528000。",
+      "pdf": "chancheng/qa/originals/04.pdf",
+      "page_images": [
+        "chancheng/qa/originals/04-1.png"
+      ]
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-b/guangdong/chancheng/downloads/05-授权委托书.doc",
+      "original_name": "授权委托书.doc",
+      "sha256": "604552e049938cebfb0ba383f4a1f7242113e672d4dfa1728ccaa0c78102d863",
+      "classification": "blank_authorization",
+      "historical_publication_date": "2015-02-11",
+      "current_applicability": "unverified",
+      "visual_qa": "all_pages_viewed",
+      "page_count": 1,
+      "observation": "空白授权委托书含两名代理人，预印日期二○一一年，历史适用性未知。",
+      "pdf": "chancheng/qa/originals/05.pdf",
+      "page_images": [
+        "chancheng/qa/originals/05-1.png"
+      ]
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-b/guangdong/chancheng/downloads/06-授权委托书样式.doc",
+      "original_name": "授权委托书样式.doc",
+      "sha256": "6d572c35ac735cc35e814c5be2d5f8a349c557f0ae76dc432fde4a6979c4572c",
+      "classification": "sample_authorization",
+      "historical_publication_date": "2015-02-11",
+      "current_applicability": "unverified",
+      "visual_qa": "all_pages_viewed",
+      "page_count": 1,
+      "observation": "红色张三、李四和X占位授权样例。",
+      "pdf": "chancheng/qa/originals/06.pdf",
+      "page_images": [
+        "chancheng/qa/originals/06-1.png"
+      ]
+    }
+  ],
+  "total_original_files": 6,
+  "total_pages_viewed": 10
+}

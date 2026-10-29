@@ -1,0 +1,129 @@
+{
+  "record_type": "locality_discovery_only",
+  "checked_at": "2026-10-29T09:27:50.093536+00:00",
+  "browser": {
+    "tool": "Agent Browser",
+    "version": "0.38.2",
+    "session": "gd-oct29b"
+  },
+  "target_service": "劳动人事争议仲裁申请",
+  "guide_status": "not_found_in_checked_sources",
+  "verified_guide": false,
+  "service_code": null,
+  "current_materials": {
+    "status": "unverified",
+    "items": null
+  },
+  "current_handling_modes": {
+    "status": "unverified",
+    "items": null
+  },
+  "current_time_limit": {
+    "status": "unverified",
+    "value": null
+  },
+  "current_fee": {
+    "status": "unverified",
+    "value": null
+  },
+  "current_online_auth_requirement": "unverified",
+  "candidate_import_allowed": false,
+  "generation": {
+    "status": "not_implemented",
+    "adapter_key": null,
+    "entrypoint": null
+  },
+  "limits": [
+    "未找到仅限本批已检查入口，不代表官方未提供或当地没有该服务。",
+    "全站搜索展示10条相关结果，无目标条目不证明完整目录中不存在。",
+    "省级同名申请仲裁审查确认、计量仲裁、劳动监察均不能替代本区普通仲裁申请指南。",
+    "部门办事窗口不能自动认定为劳动仲裁收件窗口。",
+    "未进入在线申报、实名认证或验证码；未保存cookies、SSO或raw HAR。"
+  ],
+  "region": {
+    "province": "广东省",
+    "city": "佛山市",
+    "district": "禅城区",
+    "code": "440604"
+  },
+  "authority": {
+    "name": "佛山市禅城区人力资源和社会保障局",
+    "org_code": "699751106",
+    "org_code_kind": "official_portal_branch_orgCode_not_service_code",
+    "branch_url": "https://www.gdzwfw.gov.cn/portal/v2/branch-hall?orgCode=699751106",
+    "identity_status": "verified_official_department_link_and_branch_heading",
+    "own_website_url": "https://www.chancheng.gov.cn/rsj/",
+    "own_website_captured_at": "2026-10-29T09:13:55.715Z",
+    "own_website_capture_sha256": "352a8220f4e151a4cd3efa5d25e9e3648290ea876f6581d3140c011fbcadc8c1"
+  },
+  "checked_sources": [
+    {
+      "capture": "chancheng/own-branch-empty-response",
+      "url": "https://www.gdzwfw.gov.cn/portal/v2/branch-hall?orgCode=699751106",
+      "captured_at": "2026-10-29T09:21:15.965Z",
+      "sha256": "5af1b133637b4b8f4f0bcf94b8b811179b315fa9a2e3cd33f0761cee2802bd07",
+      "purpose": "各区官网人社部门真实链接到本区办事大厅，核对机关名称"
+    },
+    {
+      "capture": "chancheng/branch-search-arbitration",
+      "url": "https://www.gdzwfw.gov.cn/portal/v2/branch-hall?orgCode=699751106",
+      "captured_at": "2026-10-29T09:21:40.443Z",
+      "sha256": "cb499475ef96a6d7df6c13d73f71b82e0dae858b55429a26c758d521af029378",
+      "purpose": "本区部门大厅原生搜索仲裁，0事项仅为本次筛选结果"
+    },
+    {
+      "capture": "chancheng/global-search-own-region-loaded",
+      "url": "https://www.gdzwfw.gov.cn/portal/v2/search?region=440000&keyword=%E5%8A%B3%E5%8A%A8%E4%BA%BA%E4%BA%8B%E4%BA%89%E8%AE%AE%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7&areaCode=440604&departmentCode=&onlyCorrespondingLevel=0&type=",
+      "captured_at": "2026-10-29T09:23:31.362Z",
+      "sha256": "f5f0a6972387054eafacad7a14bb36563f560fa03e7ce033fde24da11b273aca",
+      "purpose": "原生区域选择本区，记录省级同名结果的适用地区"
+    },
+    {
+      "capture": "chancheng/global-search-own-level",
+      "url": "https://www.gdzwfw.gov.cn/portal/v2/search?region=440000&keyword=%E5%8A%B3%E5%8A%A8%E4%BA%BA%E4%BA%8B%E4%BA%89%E8%AE%AE%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7&areaCode=440604&departmentCode=&onlyCorrespondingLevel=true&type=",
+      "captured_at": "2026-10-29T09:25:50.951Z",
+      "sha256": "e8520b9a61c13e32c1b225dd92acc17c7618e82adb3d8fa0efa3cc7fbb0af49c",
+      "purpose": "原生勾选仅显示本级，目标仲裁申请未在展示10结果内定位"
+    },
+    {
+      "capture": "chancheng/download-directory",
+      "url": "https://www.chancheng.gov.cn/rsj/zxfw/xzzx/",
+      "captured_at": "2026-10-29T09:14:19.098Z",
+      "sha256": "8a8faced8b3f1dbad59ec949a6eb98a52acf16d16e085b22b4a2c663c9705c86",
+      "purpose": "人社下载中心第一页"
+    },
+    {
+      "capture": "chancheng/download-directory-page2",
+      "url": "https://www.chancheng.gov.cn/rsj/zxfw/xzzx/index_2.html",
+      "captured_at": "2026-10-29T09:14:23.983Z",
+      "sha256": "ef9594c7ba0b468b73b3ec033ac783561d44c9fbff2a90e24db47fe31bcbc9da",
+      "purpose": "33条两页目录的第二页，发现历史仲裁附件通知"
+    },
+    {
+      "capture": "chancheng/own-material-notice",
+      "url": "https://www.chancheng.gov.cn/rsj/zxfw/xzzx/content/post_723175.html",
+      "captured_at": "2026-10-29T09:14:32.676Z",
+      "sha256": "4408a81d2288fa9e1f4b25e048c41b0ddcaf48d98a838e6837b5decebcfbdae2",
+      "purpose": "本区历史附件发布正文及六个真实DOC链接"
+    },
+    {
+      "capture": "chancheng/agencies",
+      "url": "https://www.chancheng.gov.cn/rsj/zxfw/ggfw/qybzfw/content/post_7123179.html",
+      "captured_at": "2026-10-29T09:14:06.942Z",
+      "sha256": "dd6b303a446db73d556af94c4e5b87134464c9e5600a454668b1cdc336287036",
+      "purpose": "2026-03-25本区仲裁机构联系方式表，仅作为机构信息"
+    }
+  ],
+  "template_status": "historical_source",
+  "current_template_applicability": "unverified",
+  "original_attachment_count": 6,
+  "historical_source": {
+    "publication_date": "2015-02-11 14:33:51",
+    "title": "仲裁申请书、保证书及授权委托书（含样表）",
+    "classification_review": "content-review.json",
+    "source_url": "https://www.chancheng.gov.cn/rsj/zxfw/xzzx/content/post_723175.html",
+    "current_validity_explicitly_confirmed": false,
+    "note": "公开原件保留历史样式；授权委托书预印二○一一年。未认定为现行要求，未据此制作可生成候选。"
+  },
+  "capture_label_note": "own-branch-empty-response为初次导航错误后的目录名，实际保存的是随后加载成功的本区249事项大厅，不能引用目录名声称官方故障。"
+}
