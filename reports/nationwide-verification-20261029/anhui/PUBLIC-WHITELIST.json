@@ -1,0 +1,634 @@
+[
+  {
+    "file": "backend/regional_anhui_oct29.py",
+    "sha256": "4d8ad0a0e20f7cadd9181c4acd16de10476f4986c8bce8836e4bb0c55523f7fc"
+  },
+  {
+    "file": "backend/tests/test_anhui_oct29.py",
+    "sha256": "8323870e1da1494a8a6e92d1c13758ff60fd8797bbdfd9ff689124198f5e251d"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/ORIGINALS-WHITELIST.json",
+    "sha256": "b02ec142371beccda5f231868e8844847b8fa5edc4ada508b2c53df9a0df329b"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/QA-RESULT.json",
+    "sha256": "a947f373ec654f899109f2b0ddf16e51867891f7427a381b2a41872b6d8ec886"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/TEST-REPORT.md",
+    "sha256": "5b77970184ac6228ac6f7a76ab2aa3fa079c4463b1ec12ced873040f7000464a"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/adapter-tests.txt",
+    "sha256": "1b5b1155d773135fd66e2c566bd27e0d5d4af38918445c97d3cb742761ae8aab"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/page.png",
+    "sha256": "a4e4d52dde97224c5d50887cae1d14e0a7b9c9f603eae5647f4b717a6cdbc67c"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/page.txt",
+    "sha256": "d748445002f9127816f1cb9c378d5b1aee384e8a7ac9bc65e448bb43cb3db540"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/provenance.json",
+    "sha256": "291e21e260e57e5e3216bb6cde2f1c06617e59cdae54ef6cca26d10e9443b0c8"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+    "sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/conditions/page.png",
+    "sha256": "f89f5a4468b8492b15a3df6a503692c3bca9b9d19a54538de8d6fac31e465331"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/conditions/page.txt",
+    "sha256": "68a3fbb2ec2f8ed3efed1c39ff2893e70e0bd61acedb011a8c8d70d740e51761"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/conditions/provenance.json",
+    "sha256": "2f1badc27b81db5cbbf8a7411bed71139bc5a4981ee72bac7144757283c125ea"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/conditions/public-source.json",
+    "sha256": "1d0d31170adda1db8beae33efb54f1f24eca2e964c6dab6e18dda0a8ac2db42d"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/detail-1/page.png",
+    "sha256": "d27b0b891b4ef7c98e102d3d877a992fa5a17e8c6fbab3817058e3ebf68a8e0c"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/detail-1/page.txt",
+    "sha256": "81c5945c4c88cb20034c87ddea3688837b0d4967a37f0f417f6e57dadf34253d"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/detail-1/provenance.json",
+    "sha256": "4a329e4677b55183055414917299d2cdde2f3e5e2ccecc39604dd27e09544f2b"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/detail-1/public-source.json",
+    "sha256": "52628f9905a967da4493f75bab60df4f610d6c8c2826f2c1949dcd812f82bce7"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/detail-2/page.png",
+    "sha256": "cb98377d5de9f2a1244578368386954572d2a5542091b8c924a517be256349b6"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/detail-2/page.txt",
+    "sha256": "71211919ede4b743c0ca985bd676cf18cc2fd9ae96063384848d3732bf422b61"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/detail-2/provenance.json",
+    "sha256": "72512135e9135527948eed99a4e1a26e2a0301a4440216e50ad92fec68651288"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/detail-2/public-source.json",
+    "sha256": "fd98b8683441a3549fed33c80e7290a7462716b975d47ab73fefc80e353195f4"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/detail-3/page.png",
+    "sha256": "f208c29ce7f6a64f9dc8364b65d7a32e34cb745e5d73f70353385824ae3a8a95"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/detail-3/page.txt",
+    "sha256": "6757751ef079dad97c271a35eec80f21a809905385ec106799c307ff44eec910"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/detail-3/provenance.json",
+    "sha256": "e3479914b25d82ca29c23b44a8e3b5777e37437dc3e538b8c2e6b69613dc6b3b"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/detail-3/public-source.json",
+    "sha256": "9f2a48fa4ade732bbee2b995d3322d2f59c028c6f05224be6f4992e485fa245d"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/detail-4/page.png",
+    "sha256": "6f7cfdb5fde340a1a782679e79278fa6ba7fc910d27bd0d7f642cbd33f6e9806"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/detail-4/page.txt",
+    "sha256": "988b753ce90d64314ed8fcc622dd3314cc477703cb3403535195d672b75db02b"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/detail-4/provenance.json",
+    "sha256": "889a9d1713c1ed7c0164f8ef853635c92adc8c294b1af3dffea1026f9c35d29d"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/detail-4/public-source.json",
+    "sha256": "bc136c2d77466d650e298c9ea6c2cc2825c5ef861248b6a5f00939ece2d9103d"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/downloads/ff8080819b0b50f201a036dff7622d33-中华人民共和国居民身份证.png",
+    "sha256": "35fd0217b568f14cac17972814c2ac01fc2ce4c46186fa86f8e3fe2554b98d74"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/downloads/ff8080819b0b50f201a036dff7642d44-仲裁申请书.docx",
+    "sha256": "d06dfdd7f7c0dd0210c8cc7ba4836cf06312558681bd781f0d4fba683ea18373"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/downloads/ff8080819b0b50f201a036dff7662d4d-劳动人事争议仲裁申请流程.png",
+    "sha256": "45702f4293e374f11c69e2a47b44f927c3d4e77b2e1afd9163570cccc8838ad8"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/downloads/ff8080819b0b50f201a036dff7692d54-仲裁申请书.doc",
+    "sha256": "54b6ad3bbeeffdfa3f19d3a36989ed4d0c1f883c213be7b3d64d222f1e9055b0"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/downloads/ff8080819b0b50f201a036dff76b2d59-证据.png",
+    "sha256": "ff8f9cab86b829682b90bafbf809e5e25435f1e7e8dc6daa6b1f79a963e12724"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/downloads/ff8080819b0b50f201a036dff77a2d62-单位注册信息.docx",
+    "sha256": "80ddb90966fb29a1d110ad0a3ec3a7a97bec333254b3c527d4e7557fe488ffee"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/downloads/manifest.json",
+    "sha256": "449a8be5352be44db77dc7641c3072410aff026b124e7f9a270792fe9d0b3cae"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/evaluation/page.png",
+    "sha256": "618954ec19f788b08dae561a761db02fd799f0074ab320f56628d8a7fd27cafb"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/evaluation/page.txt",
+    "sha256": "121a95461a064ba8746007afbbd5397d654a9f9ef80c40f4026fca7731140a20"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/evaluation/provenance.json",
+    "sha256": "81ddb132214da2bb4d11f3ed27eb62e11f125fd8adf4bc7e3ff5c93d480437cc"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/evaluation/public-source.json",
+    "sha256": "21e73356feb2d585b987eb7645d8f50fe95bfaed2a2c6173b9dbc088437d0b13"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/faq/page.png",
+    "sha256": "7c138781b64eb37ea08266d5542a2310978cfd82dba860c463bcc90b8cafd896"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/faq/page.txt",
+    "sha256": "788b6dce46951f5ccc8cf953dbe6f7be63e00dc4e8c7377a31228602543267a6"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/faq/provenance.json",
+    "sha256": "a6e109071e2075c52d8f85e35f3fe5d3f2c95c67087789ec5071e4f0958d5858"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/faq/public-source.json",
+    "sha256": "f07c035aa65fa4f3aaea11bb2ad72016a8a8e78c3ce9a81acb4a56b61136994d"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/filling-notice/page.png",
+    "sha256": "287d6b4e4bdb26bdc52e382cdcb3184fd200c26abc00001c3f7a65ae9b1840ff"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/filling-notice/page.txt",
+    "sha256": "c61fd1ae3d1892a832e97c796fd8abd9f1522b54e314a330be148b80c6ac2412"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/filling-notice/provenance.json",
+    "sha256": "d1acc95b7ba1101b8162896ff94db0aa5b2eb0be3df2186d042b181743e0c40b"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/filling-notice/public-source.json",
+    "sha256": "e0e347a9a174f46b749c39f9954e3a576a93b052a36e3667fffdcd0375e98233"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/guide.json",
+    "sha256": "9845653585d7ad8b4fba1fdb1281541d3814a6ef4e8684fdef5bc4fbf0739602"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/intermediary/page.png",
+    "sha256": "fba064eee222ab63caba7e1a8a26f8ddc8dd1f34db6c0201fd609667bc710173"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/intermediary/page.txt",
+    "sha256": "2db58298af231b5f0a3ada5712a363f0b9b85906905f372909ca113ef1bd762e"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/intermediary/provenance.json",
+    "sha256": "9c471c2b17503cf8537213a369a99111303fc231efc9fb0b452cf9759c2b6529"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/intermediary/public-source.json",
+    "sha256": "dd0ce068c2662696b3076f893e86b8a69a248e8b6c37f8268155e83964a027eb"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/materials/page.png",
+    "sha256": "9ee406418851d7d40d6c94c20ca750a8723f1b20aff4e9cec63c9c76ef0a9cba"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/materials/page.txt",
+    "sha256": "41765acdc8beccb049cb5585b0690e45c866f4c3ce44b17723a4a1d3950e9b21"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/materials/provenance.json",
+    "sha256": "09c85f70d08b41e26af496663fe679eb8504b9f9813a0a2e9a34fad84112f7c6"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/materials/public-source.json",
+    "sha256": "538bbd4d00dd152e4c38eafd7e19ae2366d331cfcf817d729a72b670a567b6ff"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/online-boundary/page.png",
+    "sha256": "28ea4d69304ca18c9fc79fbfa35bba38198c3ff44b763657ce7fe87c7089dc78"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/online-boundary/public-summary.json",
+    "sha256": "0280f706b993e20c0b98146f7caa1c0eda78a5473aec7d9048d5bacf6b476fe4"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/process/page.png",
+    "sha256": "ab414ea33eafdf4e7c846a6af312a2ea18cb33b1e009c29e65bf7b28bdc6cc66"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/process/page.txt",
+    "sha256": "aefc87c9add7a7444e2db53017fc89405bcbbf371d58289e8baefad4c4db69f2"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/process/provenance.json",
+    "sha256": "f5e13cad33ca46bda7d84293ffe06202f646ee78cf8b635a263fdc50ad4d942e"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/process/public-source.json",
+    "sha256": "2692cc70a1402586c4e2d50b27656ff17d8ee5c8dd2d61e083ad8241729ca68d"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/public-guide-viewmodel.json",
+    "sha256": "7b41b2eb05b0d38873e2b083bc05ecd9253e055a9c3ade63b11b856fe55fc671"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/fictional-capacity-final/filled-1.png",
+    "sha256": "0352a03ffda252dcd1a06ebbd320a6bc853e3304326bd39d07b44744a2ed73cf"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/fictional-capacity-final/filled-2.png",
+    "sha256": "9b2125d823e682c8a40e1a6de8df72f376d4d8c757bfd1a623fa35c4d0e2801a"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/fictional-capacity-final/filled.docx",
+    "sha256": "6fc998b4df1bc6a57022afdf40d213cb0ac0da379cdc5a5f4fdc5f9b4fc6fe9b"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/fictional-capacity-final/filled.pdf",
+    "sha256": "baf4f7f34f77ad8082b54071ce0f6a28b9044d99307f1b4f1636c292657ebc62"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/fictional-capacity-final/payload.json",
+    "sha256": "c08bec4bb6860801f71a37b2def08edd1869164145db8b994ee3f805056c1201"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/fictional-short-final/filled-1.png",
+    "sha256": "23bf777397cdb9acd70b5a30eb2f41c62f3845c60ad44f8db5d7c86eb50fa165"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/fictional-short-final/filled-2.png",
+    "sha256": "c52946687ed81b8082d6b7ece25363483e4df5113f68732bcbcedb6481c0f25a"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/fictional-short-final/filled.docx",
+    "sha256": "44db5d38963fbf5c157e1b6ae287c2475f073a6e7f915f305d51c7dc1124c123"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/fictional-short-final/filled.pdf",
+    "sha256": "0c5a65670b45ec6dd1a21f2d1202c20b310853ad2b666462a27dda0c2439a577"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/fictional-short-final/payload.json",
+    "sha256": "853772854bd82952f3b9218dd135b3bf3ddec2004166d4a92f6677ba8374a1bf"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/originals/ff8080819b0b50f201a036dff7642d44-1.png",
+    "sha256": "3bf65cf8a1fdf1d055973bfdb36a9e166f0beae5aab8e10c3ad0879e7308d5bb"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/originals/ff8080819b0b50f201a036dff7642d44-2.png",
+    "sha256": "b5924e04b8dbe04ddf647210f071e9767722b179fc3c922599f0c70b65c36eca"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/originals/ff8080819b0b50f201a036dff7642d44-3.png",
+    "sha256": "fe4a5a41b6069a681d7a1d9099ce8be32ad4a0e8a6bef956d16f7235a134cb79"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/originals/ff8080819b0b50f201a036dff7642d44.pdf",
+    "sha256": "33455321bcc0dea53559a22a4ebd0a36c7604d818dc3bc5f4cc0c052b15c0818"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/originals/ff8080819b0b50f201a036dff7692d54-1.png",
+    "sha256": "f61ce2cbe7a868adb11f39e23f969d738ad0df2d18dfe8a9a98f83c6ea028de2"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/originals/ff8080819b0b50f201a036dff7692d54-2.png",
+    "sha256": "e3a90ff509d2a7d74e16f1746a72e81594fd2aafc328333484ef2bbddffee1f7"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/originals/ff8080819b0b50f201a036dff7692d54-3.png",
+    "sha256": "a9f722fadde09486f910146f473df87350666eb89649f9f05d616c77fa0144ab"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/originals/ff8080819b0b50f201a036dff7692d54-4.png",
+    "sha256": "84cee660d9b8043a5467c31c43a55beb4e907a93ded13f92ee283ad3380a1b79"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/originals/ff8080819b0b50f201a036dff7692d54.pdf",
+    "sha256": "7fd4437941b77d51ec8b0ed9ab8e92318f0613c4ca6d2203d917e5011c5d291c"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/originals/ff8080819b0b50f201a036dff77a2d62-1.png",
+    "sha256": "31cddc6ca7e054e99b4feca9a81eeed25fbb8250cd3272f333179cd3c05003d8"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/qa/originals/ff8080819b0b50f201a036dff77a2d62.pdf",
+    "sha256": "d392ea143db025aeb614d222b1a8bf154395f7c9c9cee26c09755e08c20ef565"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/source-explanation/page.png",
+    "sha256": "f9a3164e8a0d070237dc067004ce183f6b858e74760f8bf7611b097c8ecda8b2"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/source-explanation/page.txt",
+    "sha256": "b5bf9ff6c5d4b3163777d3cba30dda8f5b115c149cce3ce8eac30604b863a6c8"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/source-explanation/provenance.json",
+    "sha256": "bc3f0bdaa49fdd21c303c89ec8caaaf05526190f10dbe1c773efa5a17ba5e590"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/feidong/source-explanation/public-source.json",
+    "sha256": "1ff692fd6b002c8339b21dd745934a3d904014f90246389799837d1a428c2be6"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/finalize-report.py",
+    "sha256": "3ba54d79fc5f2c1bf5447d0f72415406fe754ec4888e10910173f1dae5369fed"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/prepare-offline-qa.py",
+    "sha256": "4574b6821a95f70d682fb116987553585201e6323a3597d5c0e6e6637c7675f2"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/qa/filled-tasks-word-instance-isolation.json",
+    "sha256": "987033684c6faeb127bf3661fb9dd71c5fede468619ff1a3a62c5946c177d863"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/qa/filled-tasks.json",
+    "sha256": "5858254a38dafb4b392160966d799ba6fdbc975384d11a0edd0057014aa47094"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/qa/final-filled-tasks-word-instance-isolation.json",
+    "sha256": "96b1cea7cf0cc144fc83f7be9e750f136a847ed1dd9f38acd860a155c3db806e"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/qa/final-filled-tasks.json",
+    "sha256": "f15fcbaf3c9898cfa152f8e029b2f9eb556a7ca00c650facc02d0940ab932697"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/qa/first-original-render-observed-summary.json",
+    "sha256": "74320df61c7f96c8202b16bfca8487b3a297304f54c31f074e95eedf0f1c7036"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/qa/original-tasks.json",
+    "sha256": "14942eff9c8347ff661b56b9df2c12f66edbf03ccc578ca7b247d37b1211a620"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/qa/word-instance-isolation.json",
+    "sha256": "edb60816e7e75b99a78bf3a3d363a7b7fe957d7819aaab79e1be56b2f6453f76"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/render-isolated.ps1",
+    "sha256": "f0bc146914b17cfd76a1366b7fef67d8e43fb7ef0ff19457fd7dba8db8f17ec2"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/basic-expanded/page.png",
+    "sha256": "88e0efde853087438cd02fa7fa36b0b4d43d5a1526e797b96816ff171db0ea10"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/basic-expanded/page.txt",
+    "sha256": "6241a0c3084b2875eaa0136a0048535101cc0b1ecad298b57f51731b4884bff0"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/basic-expanded/provenance.json",
+    "sha256": "08e36a5cf2ecf51e66a716528d94b9218c707af163feaed1b3ebc972c68203d5"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/basic-expanded/public-source.json",
+    "sha256": "ac5614c8b80a39e6527813bdd29f3c9e693c52a49da50f0cbac9175930d31ea0"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/conditions/page.png",
+    "sha256": "3d2827047be336b8d7a4e540462412f7624b3229a274b464faad55c9757272ba"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/conditions/page.txt",
+    "sha256": "6b821f179a009f27d923a1f323e0528eb09c9beea1365217384a741fbca7bf89"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/conditions/provenance.json",
+    "sha256": "358eff35dff05830a87ea4671e5ce88358d652c60b46b3a7ab9b0980ceadff33"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/conditions/public-source.json",
+    "sha256": "23da3c6b285f73966d167b0009861cc7b469aecad6fe5e974d7ed08cffad94b5"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/detail-application/page.png",
+    "sha256": "09086e7ad59897dde05f22888e4ca93f7c3e7e21f5ea9014557e3c1d9beb6835"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/detail-application/page.txt",
+    "sha256": "ca76644f5c9a28c7421840d9426e1a105a013b957880b4999d39eefe7ce96d49"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/detail-application/provenance.json",
+    "sha256": "34368d1904935db9d6af22c431afee009f0cb9e72b1e969fa55ee41048bc0329"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/detail-application/public-source.json",
+    "sha256": "b73e9ce1e474f01e9d004beb12942adf19765500ef71b426e5cdd699d67c763d"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/detail-evidence-success/page.png",
+    "sha256": "7234f7c812da24b55296c90404872824d8eabe4db9d4ca2b3676b4c2b6b31391"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/detail-evidence-success/page.txt",
+    "sha256": "2cc930f9cbab6fc2c00770c73ea24d27bfd60911fd9579457f5bdda811d49be2"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/detail-evidence-success/provenance.json",
+    "sha256": "e3844865762338451f10f9d4eb9778f776237d429c98103940afe249d2b68b3c"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/detail-evidence-success/public-source.json",
+    "sha256": "ea0574f2cd8c0036c740488d45220b1b94a9062a5474d065223e58f857f70d14"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/detail-id/page.png",
+    "sha256": "d6474a4f9d39c504bd674fc75e1beef9d524d980b90f89301c848ed006a986a3"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/detail-id/page.txt",
+    "sha256": "ca76644f5c9a28c7421840d9426e1a105a013b957880b4999d39eefe7ce96d49"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/detail-id/provenance.json",
+    "sha256": "30d7cfb835cb9abe8d166f09c98cb90c8d40ca94efc2030cc44382156e4a7fd1"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/detail-id/public-source.json",
+    "sha256": "c1b9ab3381ca291a74e31b4a454e68ff5c62909a4f71595055fb0e15d5c96100"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/downloads/ff8080819b0b50f2019e8649c7602eb3-劳动争议仲裁申请书.doc",
+    "sha256": "289778314a8666e2544cf0e9405e545d91ace807b27afeaf18c407d9081574cc"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/downloads/ff8080819b0b50f2019e8649c7622ec2-身份证样表.jpg",
+    "sha256": "d53ef60a28e47199afec61ba9cd3c847b6f2abf1ce00dd0aee683b96790e3b2c"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/downloads/ff8080819b0b50f2019e8649c7652ed1-证据目录.jpg",
+    "sha256": "6e95952c5a8423711854240e6390eb475eb3d123bb5c6fa2e7d55fd8914ef244"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/downloads/ff8080819b0b50f2019e8649c7672ede-7980997ac1e28767d451485741dfb21.jpg",
+    "sha256": "cdf0470e5e26898808796645d5a30a6b46928a4c0f9dca0c3948abc58f3107bb"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/downloads/manifest.json",
+    "sha256": "976ddd124d667fc0c6a42fecf675acfe03ba7bd3b6e8530bf149bb166e7fd986"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/evaluation/page.png",
+    "sha256": "e11c25dc321e9e795b0a6ef555d964efc5b063222f9de6979e8c9ec985ad74c3"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/evaluation/page.txt",
+    "sha256": "6abda28616a73e051b06e126fa2e102a91b3f82a86ac723431d81a959d3808c6"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/evaluation/provenance.json",
+    "sha256": "dddcd3724921a6792468b90afc45d12863edb34a65cb8b34348224da63e0aecc"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/evaluation/public-source.json",
+    "sha256": "bdcd036e6e101c8e790f623c7455e9b33a988fa03fe0a23c648e5d4c7fb7cde6"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/faq/page.png",
+    "sha256": "22f4121351d1c5e2e0e63c93c175cc2ba973189499c5ea4b9243800bd9837bf6"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/faq/page.txt",
+    "sha256": "b2c16dc7dd0b2fe207d9b4c7a35665fdbf84c0eb3c458c9a0049580b26de41e8"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/faq/provenance.json",
+    "sha256": "18fb773a2b108b98f547f3bc42a438f78161d706500409c09b1efc9b4d1b0c12"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/faq/public-source.json",
+    "sha256": "4ee92f0f2cde36d1e1c0d0cbe566ef6e52707ddb818279c0a13baf3afa688937"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/filling-notice-visible/page.png",
+    "sha256": "63ecf1583b07bf078157d4680196afae256fd71636b36742ebebcd6e94c2234e"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/filling-notice-visible/page.txt",
+    "sha256": "e88a77a1efd0dc4f44724625ed1a1317659a1d2de68dee431ae748d6ae3aa71d"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/filling-notice-visible/provenance.json",
+    "sha256": "5ffefbae07b4ae899a6a92584acce416576e260e716b21f37a45ed321698b025"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/filling-notice-visible/public-source.json",
+    "sha256": "9f59a05425b66180c768e2787e1d9f909cf8e65984b38790f18ff6de468bdde3"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/guide.json",
+    "sha256": "213f7fdbd9f260a4936950072c6204334e762453bb401b4a385421da6bd509ff"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/intermediary/page.png",
+    "sha256": "82c3017511ac6fdc07fda7c50e17acd9528563771f3cd25bcd949f94e6c0b919"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/intermediary/page.txt",
+    "sha256": "7e9dc121ba57c895e2fc6e58a94eca47ed757cc7d4c70751ec667e49400421de"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/intermediary/provenance.json",
+    "sha256": "e1eed6debf792619e9360378a41507695f1f093e1b5599e2242f39ceafefebd5"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/intermediary/public-source.json",
+    "sha256": "2469416576dc922dc480546d1a8f7c96953e7fd7742f858769ad95ac999263a2"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/materials/page.png",
+    "sha256": "51f8ce7bc452ce060697ac0e7b3452b45b946b055065ff451605f75a28b0c9cc"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/materials/page.txt",
+    "sha256": "f133ba1011bfe8da58687565c50be962a2bfbfc4f790a234ced1b857ae0585f6"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/materials/provenance.json",
+    "sha256": "12b68f0333a18805f443d5da90fb1e6c87850dcacf3d044a63f5fcf65a9d0f66"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/materials/public-source.json",
+    "sha256": "60c18299e8f2c77b5437bf6e901205db20181d2e1fafb85996e3ea677ed83876"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/online-boundary/page.png",
+    "sha256": "3585fa19795243db4f3e02d5a0edc2397b0fecd3cc3823fa47370c09ffdc9c41"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/online-boundary/public-summary.json",
+    "sha256": "d2fc40e1aeeba5ed85372d53c41362ae11909631cffa5d86c9d267df65a8e94a"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/process/page.png",
+    "sha256": "bfc0768536ad88c14d0e2057eefb13fa03762efa011588e44917f648dd6ad918"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/process/page.txt",
+    "sha256": "f4e82b520e22af915bb9a67f4ad5c333b758bacd8e72e18b960d0abcf0dae283"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/process/provenance.json",
+    "sha256": "89c7be10964a37fd2f01bfaa44855c3c1c203307bd8f3b262a6c3b2c1328a5b0"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/process/public-source.json",
+    "sha256": "3d943bca4ed7ed58904134ece1af2e69348915af425e6869467a06dc254f0371"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/public-guide-viewmodel.json",
+    "sha256": "32c6ced5b81e3e23a3eaf6f82d374b0083289d2bb0b12d589bc346a0da18022f"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/qa/originals/ff8080819b0b50f2019e8649c7602eb3-1.png",
+    "sha256": "55be4e32adaec7ee1a03e656ff6ac3821ab597c1df7c1abf415d2fb087fe2fd9"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/qa/originals/ff8080819b0b50f2019e8649c7602eb3-2.png",
+    "sha256": "5eccba051ebff3a3e44cba31a4b86bdfe2dfca156beb85c93193256283ec5d73"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/yaohai/qa/originals/ff8080819b0b50f2019e8649c7602eb3.pdf",
+    "sha256": "aaf1af66877af71a0af30f6294757d501e58a8cf1b1640ab4f3d513399a3e4c4"
+  },
+  {
+    "file": "reports/nationwide-verification-20261029/anhui/source-lock.json",
+    "sha256": "04b4f92ec378eae38e36d360777c10c78de2b54d9e064b7297ede75a954614b4"
+  },
+  {
+    "file": "scripts/collect-anhui-oct29.py",
+    "sha256": "f894db9410da058221fcb074467365c4a8ac81a797a75dd894710e4babe7fb81"
+  }
+]

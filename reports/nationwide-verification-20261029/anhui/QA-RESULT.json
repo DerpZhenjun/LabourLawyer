@@ -1,0 +1,47 @@
+{
+  "verified_at": "2026-10-29T08:52:41.399570+00:00",
+  "scope": "offline only; candidate browser not run",
+  "official_document_pages_reviewed": 10,
+  "official_image_attachments_reviewed": 6,
+  "synthetic_outputs": [
+    {
+      "folder": "reports/nationwide-verification-20261029/anhui/feidong/qa/fictional-short-final",
+      "page_count": 2,
+      "all_pages_visually_inspected": true,
+      "pdf_all_submitted_text_present": true,
+      "signature_and_date_blank": true,
+      "docx_sha256": "44db5d38963fbf5c157e1b6ae287c2475f073a6e7f915f305d51c7dc1124c123",
+      "pdf_sha256": "0c5a65670b45ec6dd1a21f2d1202c20b310853ad2b666462a27dda0c2439a577",
+      "page_images": [
+        "reports/nationwide-verification-20261029/anhui/feidong/qa/fictional-short-final/filled-1.png",
+        "reports/nationwide-verification-20261029/anhui/feidong/qa/fictional-short-final/filled-2.png"
+      ]
+    },
+    {
+      "folder": "reports/nationwide-verification-20261029/anhui/feidong/qa/fictional-capacity-final",
+      "page_count": 2,
+      "all_pages_visually_inspected": true,
+      "pdf_all_submitted_text_present": true,
+      "signature_and_date_blank": true,
+      "docx_sha256": "6fc998b4df1bc6a57022afdf40d213cb0ac0da379cdc5a5f4fdc5f9b4fc6fe9b",
+      "pdf_sha256": "baf4f7f34f77ad8082b54071ce0f6a28b9044d99307f1b4f1636c292657ebc62",
+      "page_images": [
+        "reports/nationwide-verification-20261029/anhui/feidong/qa/fictional-capacity-final/filled-1.png",
+        "reports/nationwide-verification-20261029/anhui/feidong/qa/fictional-capacity-final/filled-2.png"
+      ]
+    }
+  ],
+  "source_originals_sha256_all_unchanged": true,
+  "original_layout_defects": [
+    "Feidong blank has empty third page; two terminal empty paragraphs removed only in filled derivative.",
+    "Feidong sample DOC employer form heading wraps at right margin; original preserved and not used for generation."
+  ],
+  "iterations": [
+    "Attempt 1 inherited mixed 16/20/22pt blank runs; oversized body and overflow seen. PDF/images retained in qa/attempt-1.",
+    "Attempt 2 normalised only populated runs to official principal 16pt; 22-character respondent first line still wrapped, note 4 moved to third page. qa/fictional-* retains that evidence.",
+    "Final explicit party first-line cap20/second25 full-width characters, request9 lines (first22/later28), facts10x28. All supplied text present, no clipping or lost text, both outputs 2 pages."
+  ],
+  "signature_date_and_attachment_counts": "left blank in source positions",
+  "candidate_web_qa": "NOT_RUN",
+  "publication_status": "unpublished"
+}

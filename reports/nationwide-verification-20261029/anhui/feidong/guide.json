@@ -1,0 +1,885 @@
+{
+  "province": "anhui",
+  "province_name": "安徽省",
+  "city": "合肥市",
+  "district": "肥东县",
+  "region_code": "340122",
+  "official_service_region_code": "340122000000",
+  "service_name": "劳动人事争议仲裁申请",
+  "service_code": "11340122003005878M400201430200201",
+  "authority": "肥东县人力资源和社会保障局",
+  "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+  "source_title": "劳动人事争议仲裁申请",
+  "source_type": "official_service_guide",
+  "collected_at": "2026-10-29T08:40:51.256540+00:00",
+  "verified_at": "2026-10-29T08:40:51.256540+00:00",
+  "verification_status": "conflict",
+  "fields": {
+    "事项名称": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "劳动人事争议仲裁申请",
+      "normalized_value": "劳动人事争议仲裁申请",
+      "verification_status": "verified"
+    },
+    "实施主体": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "肥东县人力资源和社会保障局",
+      "normalized_value": "肥东县人力资源和社会保障局",
+      "verification_status": "verified"
+    },
+    "受理条件": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "肥东县辖区范围内用人单位与职工之间发生的以下劳动人事争议，可以向县劳动人事争议仲裁委员会申请仲裁： （一）因确认劳动关系发生的争议； （二）因订立、履行、变更、解除和终止劳动合同发生的争议； （三）因除名、辞退和辞职、离职发生的争议； （四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议； （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议； （六）法律、法规规定的劳动人事争议。\n     \n展开",
+      "normalized_value": "肥东县辖区范围内用人单位与职工之间发生的以下劳动人事争议，可以向县劳动人事争议仲裁委员会申请仲裁： （一）因确认劳动关系发生的争议； （二）因订立、履行、变更、解除和终止劳动合同发生的争议； （三）因除名、辞退和辞职、离职发生的争议； （四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议； （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议； （六）法律、法规规定的劳动人事争议。\n     \n展开",
+      "verification_status": "verified"
+    },
+    "申请材料": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "查看材料清单",
+      "normalized_value": "查看材料清单",
+      "verification_status": "verified"
+    },
+    "办理流程": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "查看办理流程",
+      "normalized_value": "查看办理流程",
+      "verification_status": "verified"
+    },
+    "咨询电话": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "0551-67735200",
+      "normalized_value": "0551-67735200",
+      "verification_status": "verified"
+    },
+    "监督电话": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "0551-67711016",
+      "normalized_value": "0551-67711016",
+      "verification_status": "verified"
+    },
+    "承诺时限": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "1个工作日",
+      "normalized_value": "1个工作日",
+      "verification_status": "verified"
+    },
+    "办理时间": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "正常工作日：9:00-12:00，13:00-17:00",
+      "normalized_value": "正常工作日：9:00-12:00，13:00-17:00",
+      "verification_status": "verified"
+    },
+    "办理地点": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "政务服务中心\t\n安徽省合肥市肥东县店埠镇深秀路2号政务服务中心一层D区（一层西南角）人社综合窗口",
+      "normalized_value": "政务服务中心\t\n安徽省合肥市肥东县店埠镇深秀路2号政务服务中心一层D区（一层西南角）人社综合窗口",
+      "verification_status": "verified"
+    },
+    "预约方式": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "预约网址(皖事通首页统一预约入口)",
+      "normalized_value": "预约网址(皖事通首页统一预约入口)",
+      "verification_status": "verified"
+    },
+    "常见问题": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "查看常见问题",
+      "normalized_value": "查看常见问题",
+      "verification_status": "verified"
+    },
+    "政务服务中心": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "安徽省合肥市肥东县店埠镇深秀路2号政务服务中心一层D区（一层西南角）人社综合窗口",
+      "normalized_value": "安徽省合肥市肥东县店埠镇深秀路2号政务服务中心一层D区（一层西南角）人社综合窗口",
+      "verification_status": "verified"
+    },
+    "目录清单名称": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "劳动人事争议调解仲裁",
+      "normalized_value": "劳动人事争议调解仲裁",
+      "verification_status": "verified"
+    },
+    "目录子项名称": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "劳动人事争议仲裁申请",
+      "normalized_value": "劳动人事争议仲裁申请",
+      "verification_status": "verified"
+    },
+    "基本编码": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "002014302002",
+      "normalized_value": "002014302002",
+      "verification_status": "verified"
+    },
+    "事项类型": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "公共服务",
+      "normalized_value": "公共服务",
+      "verification_status": "verified"
+    },
+    "事项编码": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "11340122003005878M4002014302002",
+      "normalized_value": "11340122003005878M4002014302002",
+      "verification_status": "verified"
+    },
+    "服务对象": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "自然人,法人",
+      "normalized_value": "自然人,法人",
+      "verification_status": "verified"
+    },
+    "实施清单编码": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "11340122003005878M400201430200201",
+      "normalized_value": "11340122003005878M400201430200201",
+      "verification_status": "verified"
+    },
+    "法定办结时限": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "45个工作日",
+      "normalized_value": "45个工作日",
+      "verification_status": "verified"
+    },
+    "承诺办结时限": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "1个工作日",
+      "normalized_value": "1个工作日",
+      "verification_status": "verified"
+    },
+    "是否收费": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "否",
+      "normalized_value": "否",
+      "verification_status": "verified"
+    },
+    "办理深度": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "四级(全程网办)",
+      "normalized_value": "四级(全程网办)",
+      "verification_status": "verified"
+    },
+    "办理形式": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "网上办理,窗口办理",
+      "normalized_value": "网上办理,窗口办理",
+      "verification_status": "verified"
+    },
+    "到办事现场次数": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "0次",
+      "normalized_value": "0次",
+      "verification_status": "verified"
+    },
+    "网上办理形式": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "互联网咨询,互联网收件,互联网预审,互联网受理,互联网办理,互联网办理结果信息反馈",
+      "normalized_value": "互联网咨询,互联网收件,互联网预审,互联网受理,互联网办理,互联网办理结果信息反馈",
+      "verification_status": "verified"
+    },
+    "所属部门": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "肥东县人力资源和社会保障局",
+      "normalized_value": "肥东县人力资源和社会保障局",
+      "verification_status": "verified"
+    },
+    "所属区划": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "肥东县",
+      "normalized_value": "肥东县",
+      "verification_status": "verified"
+    },
+    "实施主体性质": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "法定机关",
+      "normalized_value": "法定机关",
+      "verification_status": "verified"
+    },
+    "行使层级": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "县级",
+      "normalized_value": "县级",
+      "verification_status": "verified"
+    },
+    "办件类型": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "即办件",
+      "normalized_value": "即办件",
+      "verification_status": "verified"
+    },
+    "委托部门": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "权力来源": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "上级下放",
+      "normalized_value": "上级下放",
+      "verification_status": "verified"
+    },
+    "行使内容": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "待补",
+      "normalized_value": "待补",
+      "verification_status": "verified"
+    },
+    "是否属于联办件": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "否",
+      "normalized_value": "否",
+      "verification_status": "verified"
+    },
+    "是否有联办机构": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "否",
+      "normalized_value": "否",
+      "verification_status": "verified"
+    },
+    "联办机构": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "是否有权限划分": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "是",
+      "normalized_value": "是",
+      "verification_status": "verified"
+    },
+    "划分标准": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "管辖区域和层级",
+      "normalized_value": "管辖区域和层级",
+      "verification_status": "verified"
+    },
+    "是否属于上报件": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "否",
+      "normalized_value": "否",
+      "verification_status": "verified"
+    },
+    "下沉办理": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "否",
+      "normalized_value": "否",
+      "verification_status": "verified"
+    },
+    "通办范围": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "是否支持网上支付": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "否",
+      "normalized_value": "否",
+      "verification_status": "verified"
+    },
+    "阶段性办理": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "否",
+      "normalized_value": "否",
+      "verification_status": "verified"
+    },
+    "办理时间段": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "是否有特别程序": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "否",
+      "normalized_value": "否",
+      "verification_status": "verified"
+    },
+    "特别程序": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "是否支持预约": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "是",
+      "normalized_value": "是",
+      "verification_status": "verified"
+    },
+    "预约渠道": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "预约网址(皖事通首页统一预约入口)",
+      "normalized_value": "预约网址(皖事通首页统一预约入口)",
+      "verification_status": "verified"
+    },
+    "是否有数量限制": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "数量限制说明": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "数量限制依据": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "是否支持代办": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "否",
+      "normalized_value": "否",
+      "verification_status": "verified"
+    },
+    "是否进驻大厅": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "是",
+      "normalized_value": "是",
+      "verification_status": "verified"
+    },
+    "材料收取形式": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "窗口收取,线上收取",
+      "normalized_value": "窗口收取,线上收取",
+      "verification_status": "verified"
+    },
+    "结果名称": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "结果样本": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "结果领取方式": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "窗口领取,结果快递",
+      "normalized_value": "窗口领取,结果快递",
+      "verification_status": "verified"
+    },
+    "办理结果领取说明": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "监督投诉方式": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "0551-67711016",
+      "normalized_value": "0551-67711016",
+      "verification_status": "verified"
+    },
+    "咨询方式": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "0551-67735200",
+      "normalized_value": "0551-67735200",
+      "verification_status": "verified"
+    },
+    "年审年检": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "verification_status": "verified"
+    },
+    "设定依据": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "raw_value": "1.《中华人民共和国劳动争议调解仲裁法》第二条：中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用 本法：（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除 名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议； （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。第五 条：发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、 调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁；对仲裁裁决不服的，除本法另有规定的 外，可以向人民法院提起诉讼。 2.《劳动人事争议仲裁办案规则》（中华人民共和国人力资源和社会保障部令第33号）第二条：本规则适用下列争议的仲 裁：（一）企业、个体经济组织、民办非企业单位等组织与劳动者之间，以及机关、事业单位、社会团体与其建立劳动 关系的劳动者之间，因确认劳动关系，订立、履行、变更、解除和终止劳动合同，工作时间、休息休假、社会保险、福 利、培训以及劳动保护，劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（二）实施公务员法的机关与聘 任制公务员之间、参照公务员法管理的机关（单位）与聘任工作人员之间因履行聘任合同发生的争议；（三）事业单位 与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（四）社会团体与其建立人事关系的 工作人员之间因终止人事关系以及履行聘用合同发生的争议；（五）军队文职人员用人单位与聘用制文职人员之间因履 行聘用合同发生的争议；（六）法律、法规规定由劳动人事争议仲裁委员会处理的其他争议。 3.《劳动人事争议仲裁组织规则》（中华人民共和国人力资源和社会保障部令第34号）第七条：仲裁委员会依法履行下列 职责：（一）聘任、解聘专职或者兼职仲裁员；（二）受理争议案件；（三）讨论重大或者疑难的争议案件；（四）监 督本仲裁委员会的仲裁活动；（五）制定本仲裁委员会的工作规则；（六）其他依法应当履行的职责。",
+      "normalized_value": "1.《中华人民共和国劳动争议调解仲裁法》第二条：中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用 本法：（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除 名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议； （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。第五 条：发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、 调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁；对仲裁裁决不服的，除本法另有规定的 外，可以向人民法院提起诉讼。 2.《劳动人事争议仲裁办案规则》（中华人民共和国人力资源和社会保障部令第33号）第二条：本规则适用下列争议的仲 裁：（一）企业、个体经济组织、民办非企业单位等组织与劳动者之间，以及机关、事业单位、社会团体与其建立劳动 关系的劳动者之间，因确认劳动关系，订立、履行、变更、解除和终止劳动合同，工作时间、休息休假、社会保险、福 利、培训以及劳动保护，劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（二）实施公务员法的机关与聘 任制公务员之间、参照公务员法管理的机关（单位）与聘任工作人员之间因履行聘任合同发生的争议；（三）事业单位 与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（四）社会团体与其建立人事关系的 工作人员之间因终止人事关系以及履行聘用合同发生的争议；（五）军队文职人员用人单位与聘用制文职人员之间因履 行聘用合同发生的争议；（六）法律、法规规定由劳动人事争议仲裁委员会处理的其他争议。 3.《劳动人事争议仲裁组织规则》（中华人民共和国人力资源和社会保障部令第34号）第七条：仲裁委员会依法履行下列 职责：（一）聘任、解聘专职或者兼职仲裁员；（二）受理争议案件；（三）讨论重大或者疑难的争议案件；（四）监 督本仲裁委员会的仲裁活动；（五）制定本仲裁委员会的工作规则；（六）其他依法应当履行的职责。",
+      "verification_status": "verified"
+    }
+  },
+  "materials": [
+    {
+      "id": "59D5F4ED4E9BBA7DE06302C7FE0AC888",
+      "name": "中华人民共和国居民身份证",
+      "required": "必要",
+      "original_copy": "复印件",
+      "copies": "复印件1份",
+      "raw_copies": "复印件1份",
+      "format": "纸质或电子",
+      "verification_status": "conflict",
+      "applicable_conditions": null,
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "details": {
+        "sourceChannelTxt": "申请人自备",
+        "sourceChannelDescription": "",
+        "editNotice": "材料规范清晰有效，一经提交申请人对申报材料实质内容的真实性负责。窗口办理提供原件，网上办理提供电子件。",
+        "materialEvidence": "《调解仲裁法》第二十八条 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。",
+        "acceptStandard": "核对申请人身份信息是否一致、清晰。。"
+      },
+      "detail_evidence": "reports/nationwide-verification-20261029/anhui/feidong/detail-1/public-source.json"
+    },
+    {
+      "id": "59D5F4ED4E94BA7DE06302C7FE0AC888",
+      "name": "单位注册信息",
+      "required": "必要",
+      "original_copy": "复印件",
+      "copies": "复印件2份",
+      "raw_copies": "复印件2份",
+      "format": "纸质或电子",
+      "verification_status": "conflict",
+      "applicable_conditions": null,
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "details": {
+        "sourceChannelTxt": "政府部门核发",
+        "sourceChannelDescription": "市场监督管理局",
+        "editNotice": "材料规范清晰有效，一经提交申请人对申报材料实质内容的真实性负责。窗口办理提供原件，网上办理提供电子件。",
+        "materialEvidence": "《调解仲裁法》第二十八条 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。",
+        "acceptStandard": "材料应为市场监督管理局出具并加盖公章的注册信息证明文件。"
+      },
+      "detail_evidence": "reports/nationwide-verification-20261029/anhui/feidong/detail-2/public-source.json"
+    },
+    {
+      "id": "59D5F4ED4E96BA7DE06302C7FE0AC888",
+      "name": "仲裁申请书",
+      "required": "必要",
+      "original_copy": "原件或复印件",
+      "copies": "原件1份,复印件1份",
+      "raw_copies": "原件1份,复印件1份",
+      "format": "纸质或电子",
+      "verification_status": "conflict",
+      "applicable_conditions": null,
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "details": {
+        "sourceChannelTxt": "申请人自备",
+        "sourceChannelDescription": "",
+        "editNotice": "材料规范清晰有效，一经提交申请人对申报材料实质内容的真实性负责。窗口办理提供原件，网上办理提供电子件。",
+        "materialEvidence": "《调解仲裁法》第二十八条 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。",
+        "acceptStandard": "格式规范，要素齐全（申请人、被申请人基本信息，仲裁请求，事实与理由等），申请人签名或盖章。"
+      },
+      "detail_evidence": "reports/nationwide-verification-20261029/anhui/feidong/detail-3/public-source.json"
+    },
+    {
+      "id": "59D5F4ED4E99BA7DE06302C7FE0AC888",
+      "name": "证据",
+      "required": "必要",
+      "original_copy": "原件或复印件",
+      "copies": "原件1份,复印件1份",
+      "raw_copies": "原件1份,复印件1份",
+      "format": "纸质或电子",
+      "verification_status": "conflict",
+      "applicable_conditions": null,
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "details": {
+        "sourceChannelTxt": "申请人自备",
+        "sourceChannelDescription": "",
+        "editNotice": "材料规范清晰有效，一经提交申请人对申报材料实质内容的真实性负责。窗口办理提供原件，网上办理提供电子件。",
+        "materialEvidence": "《调解仲裁法》第二十八条 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。\n仲裁申请书应当载明下列事项：\n（一）劳动者的姓名、性别、年龄、职业、工作单位和住所，用人单位的名称、住所和法定代表人或者主要负责人的姓名、职务；\n（二）仲裁请求和所根据的事实、理由；\n（三）证据和证据来源、证人姓名和住所。",
+        "acceptStandard": "《劳动争议调解仲裁法》第二十九条 劳动争议仲裁委员会收到仲裁申请之日起五日内，认为符合受理条件的，应当受理，并通知申请人；认为不符合受理条件的，应当书面通知申请人不予受理，并说明理由。"
+      },
+      "detail_evidence": "reports/nationwide-verification-20261029/anhui/feidong/detail-4/public-source.json"
+    }
+  ],
+  "templates": [
+    {
+      "id": "ff8080819b0b50f201a036dff7622d33",
+      "material_id": "59D5F4ED4E9BBA7DE06302C7FE0AC888",
+      "official_kind": "sample",
+      "original_name": "中华人民共和国居民身份证.png",
+      "file_type": "png",
+      "file": "reports/nationwide-verification-20261029/anhui/feidong/downloads/ff8080819b0b50f201a036dff7622d33-中华人民共和国居民身份证.png",
+      "download_url": "https://hf.ahzwfw.gov.cn/intranet/group2/M00/6E/6C/rB8ITmbinvKAfBauAAFeRLlxfXk706.png?accesskey=f184f879516d51ffa47348bfb03aef5e&attrname=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%B1%85%E6%B0%91%E8%BA%AB%E4%BB%BD%E8%AF%81.png",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "sha256": "35fd0217b568f14cac17972814c2ac01fc2ce4c46186fa86f8e3fe2554b98d74",
+      "bytes": 89668,
+      "downloaded_at": "2026-10-29T08:41:02.048925+00:00",
+      "download_status": "downloaded",
+      "document_types": [],
+      "content_classification": "official_sample",
+      "content_verification_status": "original_visually_reviewed"
+    },
+    {
+      "id": "ff8080819b0b50f201a036dff77a2d62",
+      "material_id": "59D5F4ED4E94BA7DE06302C7FE0AC888",
+      "official_kind": "sample",
+      "original_name": "单位注册信息.docx",
+      "file_type": "docx",
+      "file": "reports/nationwide-verification-20261029/anhui/feidong/downloads/ff8080819b0b50f201a036dff77a2d62-单位注册信息.docx",
+      "download_url": "https://hf.ahzwfw.gov.cn/intranet/group2/M00/6E/6C/rB8ITmbinvKAP6T5AAHb6YuhnC456.docx?accesskey=f184f879516d51ffa47348bfb03aef5e&attrname=%E5%8D%95%E4%BD%8D%E6%B3%A8%E5%86%8C%E4%BF%A1%E6%81%AF.docx",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "sha256": "80ddb90966fb29a1d110ad0a3ec3a7a97bec333254b3c527d4e7557fe488ffee",
+      "bytes": 121833,
+      "downloaded_at": "2026-10-29T08:41:04.798324+00:00",
+      "download_status": "downloaded",
+      "document_types": [],
+      "content_classification": "official_sample",
+      "content_verification_status": "original_visually_reviewed"
+    },
+    {
+      "id": "ff8080819b0b50f201a036dff7642d44",
+      "material_id": "59D5F4ED4E96BA7DE06302C7FE0AC888",
+      "official_kind": "blank",
+      "original_name": "仲裁申请书.docx",
+      "file_type": "docx",
+      "file": "reports/nationwide-verification-20261029/anhui/feidong/downloads/ff8080819b0b50f201a036dff7642d44-仲裁申请书.docx",
+      "download_url": "https://hf.ahzwfw.gov.cn/intranet/group2/M00/85/98/rB8ITWhLu3qAV3ZFAAA21VDKUog65.docx?accesskey=f184f879516d51ffa47348bfb03aef5e&attrname=%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6.docx",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "sha256": "d06dfdd7f7c0dd0210c8cc7ba4836cf06312558681bd781f0d4fba683ea18373",
+      "bytes": 14037,
+      "downloaded_at": "2026-10-29T08:41:07.085965+00:00",
+      "download_status": "downloaded",
+      "document_types": [],
+      "content_classification": "blank_application",
+      "content_verification_status": "original_visually_reviewed"
+    },
+    {
+      "id": "ff8080819b0b50f201a036dff7692d54",
+      "material_id": "59D5F4ED4E96BA7DE06302C7FE0AC888",
+      "official_kind": "sample",
+      "original_name": "仲裁申请书.doc",
+      "file_type": "doc",
+      "file": "reports/nationwide-verification-20261029/anhui/feidong/downloads/ff8080819b0b50f201a036dff7692d54-仲裁申请书.doc",
+      "download_url": "https://hf.ahzwfw.gov.cn/intranet/group2/M00/85/98/rB8ITmhLu3qASTltAABgACH427U386.doc?accesskey=f184f879516d51ffa47348bfb03aef5e&attrname=%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6.doc",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "sha256": "54b6ad3bbeeffdfa3f19d3a36989ed4d0c1f883c213be7b3d64d222f1e9055b0",
+      "bytes": 24576,
+      "downloaded_at": "2026-10-29T08:41:09.365430+00:00",
+      "download_status": "downloaded",
+      "document_types": [],
+      "content_classification": "official_sample",
+      "content_verification_status": "original_visually_reviewed"
+    },
+    {
+      "id": "ff8080819b0b50f201a036dff76b2d59",
+      "material_id": "59D5F4ED4E99BA7DE06302C7FE0AC888",
+      "official_kind": "sample",
+      "original_name": "证据.png",
+      "file_type": "png",
+      "file": "reports/nationwide-verification-20261029/anhui/feidong/downloads/ff8080819b0b50f201a036dff76b2d59-证据.png",
+      "download_url": "https://hf.ahzwfw.gov.cn/intranet/group2/M00/A6/71/rB8ITWn8B0WAEo2iAATYUdVXqzM526.png?accesskey=f184f879516d51ffa47348bfb03aef5e&attrname=%E8%AF%81%E6%8D%AE.png",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "sha256": "ff8f9cab86b829682b90bafbf809e5e25435f1e7e8dc6daa6b1f79a963e12724",
+      "bytes": 317521,
+      "downloaded_at": "2026-10-29T08:41:11.672236+00:00",
+      "download_status": "downloaded",
+      "document_types": [],
+      "content_classification": "official_sample",
+      "content_verification_status": "original_visually_reviewed"
+    },
+    {
+      "id": "ff8080819b0b50f201a036dff7662d4d",
+      "material_id": null,
+      "official_kind": "instruction",
+      "original_name": "劳动人事争议仲裁申请流程.png",
+      "file_type": "png",
+      "file": "reports/nationwide-verification-20261029/anhui/feidong/downloads/ff8080819b0b50f201a036dff7662d4d-劳动人事争议仲裁申请流程.png",
+      "download_url": "https://hf.ahzwfw.gov.cn/intranet/group2/M00/39/52/rB8ITmLDo9qAH1ulAAAvxseJqbA013.png?accesskey=f184f879516d51ffa47348bfb03aef5e&attrname=%E5%8A%B3%E5%8A%A8%E4%BA%BA%E4%BA%8B%E4%BA%89%E8%AE%AE%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B.png",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+      "sha256": "45702f4293e374f11c69e2a47b44f927c3d4e77b2e1afd9163570cccc8838ad8",
+      "bytes": 12230,
+      "downloaded_at": "2026-10-29T08:41:14.054929+00:00",
+      "download_status": "downloaded",
+      "document_types": [],
+      "content_classification": "workflow_instruction",
+      "content_verification_status": "original_visually_reviewed"
+    }
+  ],
+  "sections": {
+    "基本信息": "目录清单名称\t\n劳动人事争议调解仲裁\n\t目录子项名称\t\n劳动人事争议仲裁申请\n\n事项名称\t\n劳动人事争议仲裁申请\n\t基本编码\t\n002014302002\n\n事项类型\t\n公共服务\n\t事项编码\t\n11340122003005878M4002014302002\n\n服务对象\t\n自然人,法人\n\t实施清单编码\t\n11340122003005878M400201430200201\n\n法定办结时限\t\n45个工作日说明\n\t承诺办结时限\t\n1个工作日说明\n\n是否收费\t\n否\n\t办理深度\t\n四级(全程网办)\n\n办理形式\t\n网上办理,窗口办理\n\t到办事现场次数\t\n0次\n\n网上办理形式\t\n互联网咨询,互联网收件,互联网预审,互联网受理,互联网办理,互联网办理结果信息反馈\n\n办理地点\t\n政务服务中心\t\n安徽省合肥市肥东县店埠镇深秀路2号政务服务中心一层D区（一层西南角）人社综合窗口\n查看地图\n\n办理时间\t\n正常工作日：9:00-12:00，13:00-17:00\n\n所属部门\t\n肥东县人力资源和社会保障局\n\t所属区划\t\n肥东县\n\n实施主体\t\n肥东县人力资源和社会保障局\n\t实施主体性质\t\n法定机关\n\n行使层级\t\n县级\n\t办件类型\t\n即办件\n\n委托部门\t\n无\n\t权力来源\t\n上级下放\n\n行使内容\t\n待补\n\t是否属于联办件\t\n否\n\n是否有联办机构\t\n否\n\t联办机构\t\n无\n\n是否有权限划分\t\n是\n\t划分标准\t\n管辖区域和层级\n\n是否属于上报件\t\n否\n\t下沉办理\t\n否\n\n通办范围\t\n无\n\t是否支持网上支付\t\n否\n\n阶段性办理\t\n否\n\t办理时间段\t\n无\n\n是否有特别程序\t\n否\n\t特别程序\t\n无\n\n是否支持预约\t\n是\n\t预约渠道\t\n预约网址(皖事通首页统一预约入口)\n\n是否有数量限制\t\n无\n\t数量限制说明\t\n无\n\n数量限制依据\t\n无\n\n是否支持代办\t\n否\n\n是否进驻大厅\t\n是\n\t材料收取形式\t\n窗口收取,线上收取\n\n结果名称\t\n无\n\t结果样本\t\n无\n\n结果领取方式\t\n窗口领取,结果快递\n\t办理结果领取说明\t\n无\n\n监督投诉方式\t\n0551-67711016\n\t咨询方式\t\n0551-67735200\n\n年审年检\t\n无\n\n设定依据\t\n1.《中华人民共和国劳动争议调解仲裁法》第二条：中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用 本法：（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除 名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议； （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。第五 条：发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、 调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁；对仲裁裁决不服的，除本法另有规定的 外，可以向人民法院提起诉讼。 2.《劳动人事争议仲裁办案规则》（中华人民共和国人力资源和社会保障部令第33号）第二条：本规则适用下列争议的仲 裁：（一）企业、个体经济组织、民办非企业单位等组织与劳动者之间，以及机关、事业单位、社会团体与其建立劳动 关系的劳动者之间，因确认劳动关系，订立、履行、变更、解除和终止劳动合同，工作时间、休息休假、社会保险、福 利、培训以及劳动保护，劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（二）实施公务员法的机关与聘 任制公务员之间、参照公务员法管理的机关（单位）与聘任工作人员之间因履行聘任合同发生的争议；（三）事业单位 与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（四）社会团体与其建立人事关系的 工作人员之间因终止人事关系以及履行聘用合同发生的争议；（五）军队文职人员用人单位与聘用制文职人员之间因履 行聘用合同发生的争议；（六）法律、法规规定由劳动人事争议仲裁委员会处理的其他争议。 3.《劳动人事争议仲裁组织规则》（中华人民共和国人力资源和社会保障部令第34号）第七条：仲裁委员会依法履行下列 职责：（一）聘任、解聘专职或者兼职仲裁员；（二）受理争议案件；（三）讨论重大或者疑难的争议案件；（四）监 督本仲裁委员会的仲裁活动；（五）制定本仲裁委员会的工作规则；（六）其他依法应当履行的职责。\n收起",
+    "受理条件": "肥东县辖区范围内用人单位与职工之间发生的以下劳动人事争议，可以向县劳动人事争议仲裁委员会申请仲裁： （一）因确认劳动关系发生的争议； （二）因订立、履行、变更、解除和终止劳动合同发生的争议； （三）因除名、辞退和辞职、离职发生的争议； （四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议； （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议； （六）法律、法规规定的劳动人事争议。",
+    "申请材料": "材料名称\t来源渠道\t材料类型\t纸质材料份数\t材料形式\t材料必要性\t填报须知\t材料填写样本\t其他说明\n\n中华人民共和国居民身份证 已关联电子证照\n\n\t\n申请人自备\n\t\n\n复印件\n\n\t\n\n复印件1份\n\n\t\n\n纸质或电子\n\n\t\n\n必要\n\n\t\n\n材料规范清晰有效，一经提交申请人对申报材料实质内容的真实性负责。窗口办理...\n\n\t\n示例样表\n\t\n查看\n\n\n\n单位注册信息\n\n\t\n政府部门核发\n来源渠道说明\n\t\n\n复印件\n\n\t\n\n复印件2份\n\n\t\n\n纸质或电子\n\n\t\n\n必要\n\n\t\n\n材料规范清晰有效，一经提交申请人对申报材料实质内容的真实性负责。窗口办理...\n\n\t\n示例样表\n\t\n查看\n\n\n\n仲裁申请书\n\n\t\n申请人自备\n\t\n\n原件或复印件\n\n\t\n\n原件1份,复印件1份\n\n\t\n\n纸质或电子\n\n\t\n\n必要\n\n\t\n\n材料规范清晰有效，一经提交申请人对申报材料实质内容的真实性负责。窗口办理...\n\n\t\n空白表格\n示例样表\n\t\n查看\n\n\n\n证据\n\n\t\n申请人自备\n\t\n\n原件或复印件\n\n\t\n\n原件1份,复印件1份\n\n\t\n\n纸质或电子\n\n\t\n\n必要\n\n\t\n\n材料规范清晰有效，一经提交申请人对申报材料实质内容的真实性负责。窗口办理...\n\n\t\n示例样表\n\t\n查看",
+    "办理流程": "查看流程图\n受理：对申请人员在窗口提交的申请材料进行审核，对材料不完整的，当场或以书面形式一次性告知需要补正的材料；对不符合受理条件的作出不予受理决定通知书； 审查：受理仲裁申请后将受理通知书、答辩通知书、申请书副本、仲裁庭组成情况、开庭日期、地点书面通知双方当事人；开庭审理。 办结：根据案件处理结果制作仲裁裁决书或调解书，并向双方当事人书面送达。\n环节\t办理时限\t办理单位\t办理人\t办理岗位\t岗位职责\t特殊程序\n受理\n\t\n\n0.3个工作日\n\n\t\n肥东县人力资源和社会保障局\n\t\n黄梦娇\n\t\n受理岗\n\t\n\n对申请人在窗口提交的申请材料进行审核，对材料不完整的，当场或以书面形式一次性告知需要补正的材料；对不符合受理条件的作出不予受理决定通知书；承担劳动争议仲裁委员会的日常工作。\n\n\t\n无\n\n\n审查\n\t\n\n0.4个工作日\n\n\t\n肥东县人力资源和社会保障局\n\t\n宋月\n\t\n审查岗\n\t\n\n受理仲裁申请后将受理通知书、答辩通知书、申请书副本、仲裁庭组成情况、开庭日期、地点书面通知双方当事人；开庭审理。承担仲裁委日常工作。\n\n\t\n无\n\n\n办结\n\t\n\n0.3个工作日\n\n\t\n肥东县人力资源和社会保障局\n\t\n宋月\n\t\n办结岗\n\t\n\n根据案件处理结果制作仲裁裁决书或调解书，并向双方当事人书面送达。承担仲裁委日常工作\n\n\t\n无",
+    "中介服务": "本事项不涉及中介服务",
+    "常见问题": "问题\t解答\n\n调解书的法律效力如何？\n\n\t\n\n仲裁调解书自双方当事人签字或盖章即发生法律效力，效力和仲裁裁决书相同。如果一方当事人在规定的时间内拒不履行，可以申请法院强制执行。\n\n\n\n\n如对劳动仲裁委员会做出的裁决不服，怎么办？\n\n\t\n\n双方当事人对仲裁委做出的仲裁裁决不服的，可以向法院提起诉讼、申请撤销。\n\n\n\n\n申请劳动仲裁注意事项有哪些？\n\n\t\n\n一般来说，申请劳动争议仲裁要注意以下事项： 1、应写好申请书。根据规定，当事人申请劳动争议仲裁时应提交申请书，并按被诉人数提交副本。申请书应当写明下列事项： (1)当事人的身份，包括劳动者的姓名、年龄、性别、工作单位、住址、职务，用人单位的名称、地址及法定代表人的姓名、职务; (2)仲裁请求所根据的事实和理由，申请人应当将自己与被申请人如何处理等问题全面、准确、简练地写清; (3)证据和证人的姓名、住址，提供有关争议情况的各种证据和证人，务必确实充分; (4)申请日期。 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。 2、要向有管辖权的仲裁机构提出申请。劳动争议由劳动合同履行地或者用人单位所在地的劳动争议仲裁委员会管辖。双方当事人分别向劳动合同履行地和用人单位所在地的劳动争议仲裁委员会申请仲裁的，由劳动合同履行地的劳动争议仲裁委员会管辖。 县、市、市辖区仲裁委员会负责本行政区域内发生的劳动争议。但是，按规定应当由设区市的仲裁委员会受理的除外。如果发生劳动争议的单位与职工不在同一个仲裁委员会管辖地区的，当事人应当向职工当事人一方工资关系所在地的仲裁委员会申请仲裁。 3、要按规定的期限履行调解书或裁决书确定的义务。一方当事人对生效的调解书或裁决书不履行的，另一方可向人民法院申请强制执行。",
+    "办事评价": "满意度: %,   评分 分\n\n次\n\n累计评价\n\n次\n\n非常满意\n\n占比  \n\n次\n\n满意\n\n占比  \n\n次\n\n基本满意\n\n占比  \n\n次\n\n不满意\n\n占比  \n\n次\n\n非常不满意\n\n占比  ",
+    "时限说明": "具体时间视案件具体情况依法办理，详情电话咨询。\n仲裁庭裁决劳动争议案件，应当自劳动争议仲裁委员会受理仲裁申请之日起四十五日内结束。案情复杂需要延期的，经劳动争议仲裁委员会主任批准，可以延期并书面通知当事人，但是延长期限不得超过十五日。逾期未作出仲裁裁决的，当事人可以就该劳动争议事项向人民法院提起诉讼。"
+  },
+  "evidence": {
+    "基本信息": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/basic-expanded/public-source.json",
+      "capture_sha256": "a388502da5f6d3fa448729120abd2402ed0b238a0218fea629b3388258105b32",
+      "collected_at": "2026-10-29T08:42:45.040Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f"
+    },
+    "受理条件": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/conditions/public-source.json",
+      "capture_sha256": "1d0d31170adda1db8beae33efb54f1f24eca2e964c6dab6e18dda0a8ac2db42d",
+      "collected_at": "2026-10-29T08:40:37.444Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f"
+    },
+    "申请材料": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/materials/public-source.json",
+      "capture_sha256": "538bbd4d00dd152e4c38eafd7e19ae2366d331cfcf817d729a72b670a567b6ff",
+      "collected_at": "2026-10-29T08:40:39.733Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f"
+    },
+    "办理流程": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/process/public-source.json",
+      "capture_sha256": "2692cc70a1402586c4e2d50b27656ff17d8ee5c8dd2d61e083ad8241729ca68d",
+      "collected_at": "2026-10-29T08:40:42.048Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f"
+    },
+    "中介服务": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/intermediary/public-source.json",
+      "capture_sha256": "dd0ce068c2662696b3076f893e86b8a69a248e8b6c37f8268155e83964a027eb",
+      "collected_at": "2026-10-29T08:40:44.340Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f"
+    },
+    "常见问题": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/faq/public-source.json",
+      "capture_sha256": "f07c035aa65fa4f3aaea11bb2ad72016a8a8e78c3ce9a81acb4a56b61136994d",
+      "collected_at": "2026-10-29T08:40:46.602Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f"
+    },
+    "办事评价": {
+      "capture_file": "reports/nationwide-verification-20261029/anhui/feidong/evaluation/public-source.json",
+      "capture_sha256": "21e73356feb2d585b987eb7645d8f50fe95bfaed2a2c6173b9dbc088437d0b13",
+      "collected_at": "2026-10-29T08:40:48.883Z",
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f"
+    }
+  },
+  "official_identity": {
+    "ssqdCode": "94e006563cb441c1a2827939cafe265f",
+    "ssqdZoneCode": "340122000000",
+    "ssqdZoneName": "肥东县",
+    "ssqdDeptCode": "34012223010000000000",
+    "ssqdDeptName": "肥东县人力资源和社会保障局",
+    "ssqdBaseCode": "11340122003005878M400201430200201",
+    "ssqdVersion": "35",
+    "updateTime": "20260825104234"
+  },
+  "online_evidence": {
+    "captured_at": "2026-10-29T08:42:23.647Z",
+    "login_visible": true,
+    "origin": "https://sso.ahzwfw.gov.cn",
+    "path": "/uccp-server/login",
+    "title": "安徽政务服务网统一认证中心",
+    "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+    "observed_status": "auth_required",
+    "authenticated": false,
+    "post_login_capability": "unverified",
+    "query_omitted": true
+  },
+  "channel": {
+    "form": "window_and_online",
+    "online_status": "auth_required",
+    "verified": false
+  },
+  "source_issues": [
+    {
+      "type": "OFFICIAL_SOURCE_CONFLICT",
+      "reason": "材料表复印件/原件或固定份数，与填报须知“窗口办理提供原件”及材料依据按被申请人人数提交副本并列保留，未统一推断。"
+    },
+    {
+      "type": "OFFICIAL_SOURCE_CONFLICT",
+      "reason": "法定45个工作日、说明45日及最多延期15日、承诺1工作日分别保留，不表示案件1日裁决。"
+    },
+    {
+      "type": "OFFICIAL_SOURCE_CONFLICT",
+      "reason": "基本信息列网上/窗口且0次到场；流程仅写窗口收件。网办实际到统一认证，登录后能力未核验。"
+    }
+  ],
+  "template_search_status": "found_in_own_checked_source",
+  "publication_status": "unpublished",
+  "can_generate": false,
+  "candidate_web_qa": "NOT_RUN",
+  "warnings": [
+    "仅适用本区自身官方来源；不代表全市或全省。",
+    "实际网办止于统一认证，未登录或提交。",
+    "候选网页未验收，不发布、不增加181/166覆盖计数。"
+  ]
+}

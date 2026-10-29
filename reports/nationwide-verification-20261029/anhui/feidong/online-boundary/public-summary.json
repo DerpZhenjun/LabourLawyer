@@ -1,0 +1,12 @@
+{
+  "captured_at": "2026-10-29T08:42:23.647Z",
+  "login_visible": true,
+  "origin": "https://sso.ahzwfw.gov.cn",
+  "path": "/uccp-server/login",
+  "title": "安徽政务服务网统一认证中心",
+  "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+  "observed_status": "auth_required",
+  "authenticated": false,
+  "post_login_capability": "unverified",
+  "query_omitted": true
+}

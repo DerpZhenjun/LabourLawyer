@@ -1,0 +1,32 @@
+﻿{
+    "method":  "CoCreateInstanceEx/IID_IDispatch (DispatchEx semantics)",
+    "before":  [
+
+               ],
+    "during":  [
+                   51160
+               ],
+    "new_instance_pid":  51160,
+    "new_pid_verified":  true,
+    "document_window_pid_checks":  [
+                                       {
+                                           "matches_new_instance":  true,
+                                           "window_pid":  51160,
+                                           "document":  "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\anhui\\feidong\\qa\\fictional-short\\filled.docx"
+                                       },
+                                       {
+                                           "matches_new_instance":  true,
+                                           "window_pid":  51160,
+                                           "document":  "D:\\workspace\\DerpZhenjun\\Partlawyer-LAA\\reports\\nationwide-verification-20261029\\anhui\\feidong\\qa\\fictional-capacity\\filled.docx"
+                                       }
+                                   ],
+    "macro_security":  3,
+    "link_updates_disabled":  true,
+    "option_restored_before_own_quit":  true,
+    "completed":  2,
+    "after":  [
+
+              ],
+    "original_pids_still_alive":  true,
+    "quit_called_only_on_distinct_new_object":  true
+}
