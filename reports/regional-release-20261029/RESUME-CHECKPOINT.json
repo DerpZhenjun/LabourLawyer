@@ -1,0 +1,64 @@
+{
+  "updated_at": "2026-10-29T14:36:22.758216+08:00",
+  "nationwide_complete": false,
+  "published_guides": 181,
+  "published_generatable_localities": 166,
+  "unpublished_candidates": 24,
+  "district_work": {
+    "320981": "Own guide/strict canonical generation + isolated shared API + 3 rendered output pages PASS; not published",
+    "320924": "Own guide/strict canonical generation + isolated shared API + 3 rendered output pages PASS; not published",
+    "330110": "Own guide and 13 original/generated pages reviewed; table layout fixed; not published"
+  },
+  "candidate_web_acceptance": "NOT_RUN_PREVIOUS_EXECUTION_POLICY_REFUSAL_RETAINED",
+  "full_backend_tests": {
+    "run": 479,
+    "seconds": 100.956,
+    "failures": 0,
+    "errors": 0
+  },
+  "clean_public_source_tests": {
+    "run": 7,
+    "sealed_class_skips": 1,
+    "failures": 0,
+    "errors": 0
+  },
+  "software_release": {
+    "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.1.0-preview.1",
+    "id": 427532632,
+    "tag": "v1.1.0-preview.1",
+    "tag_commit": "8c612d7220bdb4c508e9d749077412921dfc5d6b",
+    "published": true,
+    "prerelease": true,
+    "verified_assets": 5
+  },
+  "android": {
+    "version": "1.1.0-preview.1",
+    "version_code": 2,
+    "upgrade_installed": true,
+    "data_cleared": false,
+    "home_visual": "PASS",
+    "full_native_interactions": "NOT_RUN_OS_INPUT_PERMISSION_AND_EXECUTION_POLICY_BOUNDARIES"
+  },
+  "windows": {
+    "portable_gui": "PASS",
+    "installer_build": "PASS",
+    "installer_executed": "NOT_RUN",
+    "bundled_backend": false,
+    "bundled_model": false
+  },
+  "constraints": {
+    "windows_ollama_started": false,
+    "candidate_server_started": false,
+    "public_guide_db_changed": false,
+    "openclaw_new_acknowledgements": 0,
+    "old_nightly_automation": "PAUSED_UNCHANGED",
+    "unrelated_research_preserved": true
+  },
+  "next": [
+    "候选网页验收仍须合法可用的独立环境；不得绕过此前启动拒绝、借主站或手机发布候选。",
+    "余杭缺私有封存时仍关闭相关适配，不伪造可公开的原始证明；后续设计审核后的公共来源证明再发行。",
+    "庐阳DOC转换/填写尚未批准；滨江自身材料冲突保持。",
+    "继续各区县自身官方指南和附件采集、转换、生成与版式/网页验收，不按省份或同SHA继承。",
+    "Android完整交互仍需设备允许的正常人工/测试环境；不能绕过INJECT_EVENTS/执行审核。"
+  ]
+}
