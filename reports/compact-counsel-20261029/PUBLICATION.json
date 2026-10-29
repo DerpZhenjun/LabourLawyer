@@ -1,0 +1,41 @@
+{
+  "repository": "DerpZhenjun/LabourLawyer",
+  "commit": "5fd3a32aa2c8d0d624fddf247ad80622b55ccf00",
+  "tag": "v1.1.0-preview.2",
+  "id": 427606344,
+  "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.1.0-preview.2",
+  "draft": false,
+  "prerelease": true,
+  "assets": [
+    {
+      "name": "LabourLawyer-1.1.0-preview.2-android-usb.apk",
+      "bytes": 4848832,
+      "sha256": "ecf04ea0fdefea6713eeb8ee2084e46c14031829deba4a8b3cd2b7a03aa5ab7c",
+      "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.1.0-preview.2/LabourLawyer-1.1.0-preview.2-android-usb.apk"
+    },
+    {
+      "name": "LabourLawyer-1.1.0-preview.2-START-HERE.txt",
+      "bytes": 2407,
+      "sha256": "45fbc7089301bfd0268024e3164ea846fd658cccbbc6cfaa3e9a5bf7ee726799",
+      "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.1.0-preview.2/LabourLawyer-1.1.0-preview.2-START-HERE.txt"
+    },
+    {
+      "name": "LabourLawyer-1.1.0-preview.2-windows-x64-portable.exe",
+      "bytes": 111822595,
+      "sha256": "da23d8929f9389d8597d4f90a7a0e0036f328ff77944048e56d66df1551dbfe5",
+      "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.1.0-preview.2/LabourLawyer-1.1.0-preview.2-windows-x64-portable.exe"
+    },
+    {
+      "name": "LabourLawyer-1.1.0-preview.2-windows-x64-setup.exe",
+      "bytes": 112058858,
+      "sha256": "fda70662eaaf3a81fcd31f9d00757b0e813c497075d85e80412336e8d8b88c43",
+      "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.1.0-preview.2/LabourLawyer-1.1.0-preview.2-windows-x64-setup.exe"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 462,
+      "sha256": "962dd55d66859e2e6c0312deacf74a5d58efcd6dd45ebc1089e0cd16d0a57274",
+      "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.1.0-preview.2/SHA256SUMS.txt"
+    }
+  ]
+}

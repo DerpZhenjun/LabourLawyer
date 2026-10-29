@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "task": "compact_upper_body_customer_service_chat",
+  "release_url": "https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.1.0-preview.2",
+  "release_tag": "v1.1.0-preview.2",
+  "release_commit": "5fd3a32aa2c8d0d624fddf247ad80622b55ccf00",
+  "published_assets": 5,
+  "ui_checks_passed": 10,
+  "responsive_widths": [
+    375,
+    768,
+    1440
+  ],
+  "android_installed_version": "1.1.0-preview.2",
+  "android_version_code": 3,
+  "android_native_interactions": "NOT_RUN: previous input and diagnostic restrictions respected",
+  "desktop_installer_executed": false,
+  "windows_model_started": false,
+  "ubuntu_model": "qwen3.8:27b",
+  "regional_database_unchanged": true,
+  "evidence": "reports/compact-counsel-20261029/TEST-REPORT.md"
+}
