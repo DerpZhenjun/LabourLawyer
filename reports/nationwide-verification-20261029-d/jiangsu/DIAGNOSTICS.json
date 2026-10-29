@@ -1,0 +1,40 @@
+{
+  "recorded_at": "2026-10-29T11:21:58.090129+00:00",
+  "browser": "Agent Browser 0.38.2",
+  "session": "js-oct29d",
+  "closed": true,
+  "observations": [
+    {
+      "action": "unquoted PowerShell element reference",
+      "outcome": "first click @e89 was parsed as splatting and CLI reported missing arguments",
+      "resolution": "quoted the observed reference and normal click succeeded"
+    },
+    {
+      "action": "initial loading captures",
+      "outcome": "suzhou-home body empty and wuzhong/search counts not loaded",
+      "resolution": "preserved local diagnostics, captured suzhou-loaded and wuzhong/search-loaded after actual rendered content"
+    },
+    {
+      "action": "material detail close",
+      "locality": "gusu",
+      "outcome": "generic .panel-tool-close matched a hidden first element after the second detail; two wrongly named captures retained locally",
+      "resolution": "doctor observed zero failures and zero warnings; read actual close bounding rectangles, used visible native nth controls; material3/4-detail-recovered are the accepted evidence. No DOM removed or click bypassed"
+    },
+    {
+      "action": "gusu login text wait",
+      "outcome": "text wait timed out; following sanitized observation showed actual user login with two password inputs and captcha",
+      "resolution": "recorded only safe origin/path/status; wuzhong waited for actual password DOM and likewise stopped at login"
+    },
+    {
+      "action": "public attachment acquisition",
+      "outcome": "18 own observed public control/flow HTTPS URLs returned HTTP200 using normal unauthenticated GET; no SSL/port/auth workaround"
+    },
+    {
+      "action": "online native entry",
+      "outcome": "both localities stopped at actual user login with captcha; no input, authentication or submission"
+    }
+  ],
+  "doctor_failures_observed": 0,
+  "doctor_warnings_observed": 0,
+  "raw_HAR_cookies_SSO_queries_saved": false
+}

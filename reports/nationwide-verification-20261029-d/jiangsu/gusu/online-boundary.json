@@ -1,0 +1,16 @@
+{
+  "source_url": "https://szgs.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=26&iddept_ql_inf=11320508014152478Y4002014302002&ql_kind=20&iddept_yw_inf=11320508014152478Y400201430200201",
+  "clicked_native_control": "在线办理",
+  "status": "auth_required",
+  "submitted": false,
+  "post_login_flow": "unknown",
+  "raw_query_or_session_not_saved": true,
+  "captcha_visible": true,
+  "captured_at": "2026-10-29T11:18:52.452Z",
+  "frames": [],
+  "login_visible": true,
+  "origin": "https://www.jszwfw.gov.cn",
+  "password_input_count": 2,
+  "path": "/jsjis/front/login.do",
+  "title": "用户登录"
+}

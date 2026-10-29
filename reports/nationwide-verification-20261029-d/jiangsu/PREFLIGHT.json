@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-29T11:21:57.654158+00:00",
+  "requested": [
+    {
+      "district": "姑苏区",
+      "region_code": "320508"
+    },
+    {
+      "district": "吴中区",
+      "region_code": "320506"
+    }
+  ],
+  "checks": [
+    "Exact region_code/district scan of retained guide.json, candidate and snapshot JSON",
+    "Existing report mentions inspected as province-wide region-picker text only"
+  ],
+  "existing_own_profile_found": false,
+  "scope": "Own official source collection only; no generation adapter, DB or publication",
+  "province_entry": "https://www.jszwfw.gov.cn/"
+}

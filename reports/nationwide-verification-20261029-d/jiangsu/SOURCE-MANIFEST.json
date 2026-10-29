@@ -1,0 +1,485 @@
+{
+  "scope": "Own official public captures, safe summaries and blank/instruction originals only; sample original bytes not distributed.",
+  "files": {
+    "DIAGNOSTICS.json": {
+      "sha256": "16327b015db781eafdc46cd973bf98dd4b95a15a23309c20075fbf1268f2bc71",
+      "bytes": 1978
+    },
+    "PREFLIGHT.json": {
+      "sha256": "644501a791989a7a2387409660350c63358d6de35f8d9c8fe66b20f0d5b65b31",
+      "bytes": 617
+    },
+    "gusu/CONTENT-REVIEW.json": {
+      "sha256": "b8dc643a825ac442331338d4899c023a959e8d70ddc3e322ebbb5260340fa104",
+      "bytes": 5449
+    },
+    "gusu/DOWNLOADS.json": {
+      "sha256": "fd57b95882a00eeca1bbf96cd0e424a8ac4d96bb371ae0bbc9bc7d477448260f",
+      "bytes": 14546
+    },
+    "gusu/flow-image/page.json": {
+      "sha256": "ae71ea9def80c8a496e34d4c85ad6f1741e7baeafe3d404c4c9b3d1e0100041a",
+      "bytes": 617
+    },
+    "gusu/flow-image/page.png": {
+      "sha256": "bbf8b79aab9c87178f6d601b92b098f1b0462fc6c4de559595b317e816cf9cf3",
+      "bytes": 70539
+    },
+    "gusu/flow-image/page.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "gusu/flow-image/provenance.json": {
+      "sha256": "dad4e476e6d05a1ddca9ecfac8d382fbad99dbc36284c29d07e83c91afb833d2",
+      "bytes": 648
+    },
+    "gusu/formal-controls/page.json": {
+      "sha256": "7923b5138652662e4394bfe3d6b5deef38b63d543744de7eaa5022962c26f518",
+      "bytes": 175218
+    },
+    "gusu/formal-controls/page.png": {
+      "sha256": "1e41c7d9dd65514118c0d38803ac0302eadc9ad82760499994523bf32edf071c",
+      "bytes": 495373
+    },
+    "gusu/formal-controls/page.txt": {
+      "sha256": "b21c206df09f274e73ca6d378c28d05ac443cfaa35c26db65fd9a7e85a302d82",
+      "bytes": 3828
+    },
+    "gusu/formal-controls/provenance.json": {
+      "sha256": "dda338f9c12bea24f279902e8cadcc70c1581cd5796410fb30dc5650afee21c5",
+      "bytes": 677
+    },
+    "gusu/formal-initial/page.json": {
+      "sha256": "6bbfc72ababab8b13cf77d8dfe5b006e708ee96d8f7f8a6b46f2fadcafd29a90",
+      "bytes": 175218
+    },
+    "gusu/formal-initial/page.png": {
+      "sha256": "1e41c7d9dd65514118c0d38803ac0302eadc9ad82760499994523bf32edf071c",
+      "bytes": 495373
+    },
+    "gusu/formal-initial/page.txt": {
+      "sha256": "b21c206df09f274e73ca6d378c28d05ac443cfaa35c26db65fd9a7e85a302d82",
+      "bytes": 3828
+    },
+    "gusu/formal-initial/provenance.json": {
+      "sha256": "b8fd2584b960c71f51dc91df62bf56e1acd0d35920df890fe4395a4c7366dcc2",
+      "bytes": 677
+    },
+    "gusu/guide-area-dialog/page.json": {
+      "sha256": "23e039bf9570e2a559f8ce6a3411d7dde90fc4cdf8e067b257af5da328d28b1e",
+      "bytes": 165806
+    },
+    "gusu/guide-area-dialog/page.png": {
+      "sha256": "14a7def00b214df7ad3ecc79b6c9010816da4957971971667b8849f3a618c0ad",
+      "bytes": 231724
+    },
+    "gusu/guide-area-dialog/page.txt": {
+      "sha256": "5d3e293abf51c8213deebe33a8b18fdf2a73611f3b9a974ba4e6e6fd22f64573",
+      "bytes": 2557
+    },
+    "gusu/guide-area-dialog/provenance.json": {
+      "sha256": "57d90ee4ecb99810e9a11f0d313772f5ae99e9fe1a523a9640814c6f385c1e33",
+      "bytes": 765
+    },
+    "gusu/guide.json": {
+      "sha256": "10112e6c6c377bc71e24c3d29646e945a296520b0a2f4e9a7eac722e6d9d6d28",
+      "bytes": 37192
+    },
+    "gusu/home/page.json": {
+      "sha256": "1b938bfc30ef362d347864b474890e3cd9060e224994be013b99abadc81067e7",
+      "bytes": 158182
+    },
+    "gusu/home/page.png": {
+      "sha256": "26e13625f19529895d8b6b287931b658e4968fb2e16aa66c32769cdef3f93900",
+      "bytes": 181818
+    },
+    "gusu/home/page.txt": {
+      "sha256": "ec642b21ce20eea8b6efcbb9c161f49d3f8b044649ca32288eea715957ec215e",
+      "bytes": 1041
+    },
+    "gusu/home/provenance.json": {
+      "sha256": "dd3a5f9268cad04c28ee2ec5cb679d33edf06b6c62af5ffb9f0ccdf39b804b33",
+      "bytes": 520
+    },
+    "gusu/material-1-detail/page.json": {
+      "sha256": "03884b5efc30283aa7676e437fcc78d24dca575eea845239f04a2eed09cf561f",
+      "bytes": 175282
+    },
+    "gusu/material-1-detail/page.png": {
+      "sha256": "6a210a61eb312f7410eaf1ef5933e18552757a666232ff3b51f80edec0c5b500",
+      "bytes": 479726
+    },
+    "gusu/material-1-detail/page.txt": {
+      "sha256": "5ba094c78ca842033632d61821b809e015f7b02180365748222401ab125f3e60",
+      "bytes": 4249
+    },
+    "gusu/material-1-detail/provenance.json": {
+      "sha256": "1dfe2815fae944144a5bad9eb26028f633c688c19983f71bae8a2fe465f9e1c8",
+      "bytes": 677
+    },
+    "gusu/material-2-detail/page.json": {
+      "sha256": "8f8ccc5cbc65fe4032a1856e7a6aacb63bb1af577d6acfd1c0cbc59aadb2836e",
+      "bytes": 175300
+    },
+    "gusu/material-2-detail/page.png": {
+      "sha256": "ce954157434927ba49fd68d1947495f7dc9ecf95bb3e3fd8645c74edf22aaaa4",
+      "bytes": 479945
+    },
+    "gusu/material-2-detail/page.txt": {
+      "sha256": "aac4ce3812c1d99b51db98f39ca95b8c603a8728bf9b81376012c34784237462",
+      "bytes": 4258
+    },
+    "gusu/material-2-detail/provenance.json": {
+      "sha256": "d4487a9585bf2c8a88597f24cd18be2a58e3e9ed0a20c85d6e08e63a51d3792d",
+      "bytes": 677
+    },
+    "gusu/material-3-detail-recovered/page.json": {
+      "sha256": "373ea5c98f77ebf7ce31a854962b902ff9a0695b7afd3d5f3d59c7f14212facb",
+      "bytes": 175282
+    },
+    "gusu/material-3-detail-recovered/page.png": {
+      "sha256": "21274c070010bfe7df188e06778ae85456e88bb966eb70e38851bc4d38f265ff",
+      "bytes": 693685
+    },
+    "gusu/material-3-detail-recovered/page.txt": {
+      "sha256": "9b7afdfcaf2ac7c16fd9cceda2b79fed1045e9da59441f76c30fcabecd5d501f",
+      "bytes": 4249
+    },
+    "gusu/material-3-detail-recovered/provenance.json": {
+      "sha256": "619843c856ac24ecccc8b28247f54d5c41e6786eaa10d6a3fc45dfbce7bb1e67",
+      "bytes": 677
+    },
+    "gusu/material-4-detail-recovered/page.json": {
+      "sha256": "76d575caebaffd8b9461123509db46dcc212272bc08790f3dbb92815c6257985",
+      "bytes": 175256
+    },
+    "gusu/material-4-detail-recovered/page.png": {
+      "sha256": "d09300e77559e7a3fd941244d370d48f8ae239eba5c12e6b7a7b2999c6acc5e4",
+      "bytes": 689041
+    },
+    "gusu/material-4-detail-recovered/page.txt": {
+      "sha256": "bd4e71d1011b5c8e667e5091273e55498f0ef206777009146c9ab54f8185d8bb",
+      "bytes": 4235
+    },
+    "gusu/material-4-detail-recovered/provenance.json": {
+      "sha256": "6c033f86a847f6023a0e64fd5da6141a15b1dbd82afdffcbcddb624b5373e548",
+      "bytes": 677
+    },
+    "gusu/online-boundary.json": {
+      "sha256": "091e45e9b2838b9e851890947861b8f48303ecdec358597c0910016dfa6a99b2",
+      "bytes": 635
+    },
+    "gusu/originals/blank/1b87480c-8cd3-4bfa-8721-7dbe5255db5b/劳动人事争议仲裁申请书.docx": {
+      "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "bytes": 17701
+    },
+    "gusu/originals/blank/2d48f730-b996-4ec0-9550-548ad0cd761e/证据清单.docx": {
+      "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "bytes": 15273
+    },
+    "gusu/originals/blank/b03ec243-b8e2-4ffa-863c-96bde73ab3f1/身份证复印件.docx": {
+      "sha256": "f36541d8f1c49a0229d1510ae9f5cc5eb72ff294a17aec69c82b06e7ec571714",
+      "bytes": 13374
+    },
+    "gusu/originals/blank/d7d0df98-d096-4cad-861e-0b57db2944f9/证据复印件.docx": {
+      "sha256": "8dae42265086696071d6173f162d47c9fdd9bdf4782cf1c70d28779b5894277f",
+      "bytes": 13376
+    },
+    "gusu/originals/instruction/1fd618ae-20bc-425c-bf98-54309d89a198/仲裁申请.png": {
+      "sha256": "dc407a951d748964846c061b0331167db5c0178a8a7515f6ab933494c74aa8ee",
+      "bytes": 139623
+    },
+    "gusu/region-picker/page.json": {
+      "sha256": "5a5ef690dc9537795da2e67f1c9dc23fd7c008bf6a99a463f7abcd2e39d4361d",
+      "bytes": 158528
+    },
+    "gusu/region-picker/page.png": {
+      "sha256": "06245f0f44c4abdbc2189fa53e0894f036f954d01c2b28e2814e9869ac736652",
+      "bytes": 145090
+    },
+    "gusu/region-picker/page.txt": {
+      "sha256": "24017c9773a4c1d125fd87e50e6105fe425e00e3a0ecfb3e4ecd845aa45fd5bd",
+      "bytes": 1387
+    },
+    "gusu/region-picker/provenance.json": {
+      "sha256": "57d193ded82d1434fe685855d93f198e30a359091a2b66dc7686e75865fcc28a",
+      "bytes": 520
+    },
+    "gusu/search/page.json": {
+      "sha256": "34837f8585d8c74a4fc5464c120596ac17cb6b8bac799534db986f8052c06cae",
+      "bytes": 165223
+    },
+    "gusu/search/page.png": {
+      "sha256": "d6b97521c342a06be5f62af0318116008a9d78c134642f3949ddce2b6fded8a7",
+      "bytes": 236593
+    },
+    "gusu/search/page.txt": {
+      "sha256": "44a914ef482bc6f68509325f5fa3793a42207044c31ef54c740224ca550e7eb4",
+      "bytes": 2352
+    },
+    "gusu/search/provenance.json": {
+      "sha256": "6a4922ed49fa101f28aed50fbf14725478b7484365b80354274b5073db0ed0f8",
+      "bytes": 765
+    },
+    "province-home/page.json": {
+      "sha256": "7f0640b461843c084d9a9c67fd5774cab32d39065ddf1961909a918dd6320c76",
+      "bytes": 268466
+    },
+    "province-home/page.png": {
+      "sha256": "fe4c826c7b482b4328865d365b1a2c419cb1868a491e4f87f47328e285066335",
+      "bytes": 1915244
+    },
+    "province-home/page.txt": {
+      "sha256": "2de7ee9375c45dfcce239e5e383d2387df66c21935b076c708e67092ec10d1f9",
+      "bytes": 5406
+    },
+    "province-home/provenance.json": {
+      "sha256": "9a05db7febc669a936f8ad15fb5183e6cca5487e90c0ce742ced0b7196d407be",
+      "bytes": 520
+    },
+    "province-picker/page.json": {
+      "sha256": "a61b0cf4757f48a81a191f442d6c7a3f45b992051e0189e8427b0dfe69edef99",
+      "bytes": 268681
+    },
+    "province-picker/page.png": {
+      "sha256": "916fc671e40aaa65f2eb5736a3bd803125c9b81a473038110fc9ea1b24781648",
+      "bytes": 1897374
+    },
+    "province-picker/page.txt": {
+      "sha256": "524ed24294a74d9662a65613028230ddf15274f6090b9a74547c56ace2a421f5",
+      "bytes": 5621
+    },
+    "province-picker/provenance.json": {
+      "sha256": "d6c483d50ddd4a2b2d9b8bf6a0a6432a7248a9dcbd5c31b296bb932edbc93ce9",
+      "bytes": 520
+    },
+    "suzhou-loaded/page.json": {
+      "sha256": "0e37b6b484a7189ea435f465102555244116587ecf5fc859b63c85dc44e94f0a",
+      "bytes": 161474
+    },
+    "suzhou-loaded/page.png": {
+      "sha256": "209a4c639cdfa9451a629ed7e698604c9424401b9505d44c2bdb84514b4a3c20",
+      "bytes": 1535373
+    },
+    "suzhou-loaded/page.txt": {
+      "sha256": "c6e7b4eda9ebddf963170e86f842f3a78c5f273033c72c9870458bd14cfcc07b",
+      "bytes": 1134
+    },
+    "suzhou-loaded/provenance.json": {
+      "sha256": "5f5d794300f0e91eed14581aa538cecb57ec09afee8c26682168f302e110f840",
+      "bytes": 519
+    },
+    "suzhou-picker/page.json": {
+      "sha256": "8113d6c0a0693737339b8cbbf0a379aaf0dd484116b23825af8490610587d926",
+      "bytes": 161820
+    },
+    "suzhou-picker/page.png": {
+      "sha256": "cddf79e60e1a945a64e466ea422a36a2028893f37445c86135fca98b2ffd3b50",
+      "bytes": 1412806
+    },
+    "suzhou-picker/page.txt": {
+      "sha256": "9e2f63058a4ad8f29fd3b06f986e18ce2f7623b77990ba77142d38af22c2e79e",
+      "bytes": 1480
+    },
+    "suzhou-picker/provenance.json": {
+      "sha256": "228af57b608f45faa21d652732de2b0100f336a0498d2eddf6a29934d7baf6d2",
+      "bytes": 519
+    },
+    "wuzhong/CONTENT-REVIEW.json": {
+      "sha256": "183b3ec2301913e907e5e402b9619cca660b0904622b2aa11426dd67c29105b9",
+      "bytes": 5476
+    },
+    "wuzhong/DOWNLOADS.json": {
+      "sha256": "1e83978fd92c778d56c82cc2665f39f1fba53532f46903fcb7399039068bd804",
+      "bytes": 14600
+    },
+    "wuzhong/flow-image/page.json": {
+      "sha256": "0a4bbb954ec50199d910ba20c92c51b991436e17967ad25d0a76343ba8a1231c",
+      "bytes": 617
+    },
+    "wuzhong/flow-image/page.png": {
+      "sha256": "bbf8b79aab9c87178f6d601b92b098f1b0462fc6c4de559595b317e816cf9cf3",
+      "bytes": 70539
+    },
+    "wuzhong/flow-image/page.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "wuzhong/flow-image/provenance.json": {
+      "sha256": "0613f39d31e407b084ad3a02613a0c409106e571870e9695918ec419e0c9f730",
+      "bytes": 648
+    },
+    "wuzhong/formal-controls/page.json": {
+      "sha256": "2fb6bf08355bacddfe2630e62f3243cb92e132822ab0ef9c8db0469194ab6733",
+      "bytes": 175345
+    },
+    "wuzhong/formal-controls/page.png": {
+      "sha256": "34e311ea884ba394462057fc1caafd7f7789a6667ef1cb15d1c34694678226e4",
+      "bytes": 644353
+    },
+    "wuzhong/formal-controls/page.txt": {
+      "sha256": "bd8e10de648e22c0c2273a147ff5db9feed3ae2d4c643a72268eb9eaf754a3a5",
+      "bytes": 3916
+    },
+    "wuzhong/formal-controls/provenance.json": {
+      "sha256": "e51d4c60a3e2f9e868c7d8fbe66d77a04b28490ba9b1b0460c4a0e155629e61e",
+      "bytes": 677
+    },
+    "wuzhong/formal-initial/page.json": {
+      "sha256": "235dd388499352917fc86b0b60fae2ae216c90dfe97e5ab6da21a25b18369dd7",
+      "bytes": 175345
+    },
+    "wuzhong/formal-initial/page.png": {
+      "sha256": "d82f4b9441322745a61403777c9212455c232fbe5f6951d00756ada18c611cc1",
+      "bytes": 457940
+    },
+    "wuzhong/formal-initial/page.txt": {
+      "sha256": "bd8e10de648e22c0c2273a147ff5db9feed3ae2d4c643a72268eb9eaf754a3a5",
+      "bytes": 3916
+    },
+    "wuzhong/formal-initial/provenance.json": {
+      "sha256": "9525ce50b0fe85ff19e7640ad487c7500b70c680de9cb23067874fe25d96d483",
+      "bytes": 677
+    },
+    "wuzhong/guide-area-dialog/page.json": {
+      "sha256": "bd211d4e0ac2a091b0a6cd8083232227ed18817a6832d747f0d43a9272cc4e0f",
+      "bytes": 166038
+    },
+    "wuzhong/guide-area-dialog/page.png": {
+      "sha256": "ef6b82856e1aac3890d413fe8abb8cd497792774ddb71803baa6602deb0836b9",
+      "bytes": 249536
+    },
+    "wuzhong/guide-area-dialog/page.txt": {
+      "sha256": "529507a9023590c1d30304720aeb8e754161696b4c5cf2824963a4c400c7531c",
+      "bytes": 2789
+    },
+    "wuzhong/guide-area-dialog/provenance.json": {
+      "sha256": "cfb7814a2923e3a7c257d43eb327756eb53ebbedc18bf92b357bc50692ba55f1",
+      "bytes": 765
+    },
+    "wuzhong/guide.json": {
+      "sha256": "3dffd181abd146f83e3fb751a5079424b5a3d3f5d0dcf1df8714140cc4e2c24b",
+      "bytes": 37171
+    },
+    "wuzhong/home/page.json": {
+      "sha256": "1e5b2152e8a257ac02394c1561f8f49194572c273da35fb19d55adef390e720f",
+      "bytes": 158182
+    },
+    "wuzhong/home/page.png": {
+      "sha256": "7e1688229e01a9ddc54849f18986f9208ce11b9a4761f93fe1708cb6d94d8e8f",
+      "bytes": 120004
+    },
+    "wuzhong/home/page.txt": {
+      "sha256": "71c0ca76b602b3a5774fb6be8e6081db09dc71b981475bd3597fa32434550657",
+      "bytes": 1041
+    },
+    "wuzhong/home/provenance.json": {
+      "sha256": "0f359f2c18feb1c7011731e537a14810cc61fe7c0adcd5fd2883af466de82266",
+      "bytes": 520
+    },
+    "wuzhong/material-1-detail/page.json": {
+      "sha256": "44fb6cd7f875e46dd31ad0896d3c51e538ff56f6d03af0a6ab488b2486f4f002",
+      "bytes": 175409
+    },
+    "wuzhong/material-1-detail/page.png": {
+      "sha256": "0667a2c244d55ba098df579cb2f0569097221dd35594b7c814593d2f773aa9ca",
+      "bytes": 683794
+    },
+    "wuzhong/material-1-detail/page.txt": {
+      "sha256": "b7fd09f766ff8764d69c5f296ec7aab90474e2f93b9cf8d4163fe375d5498376",
+      "bytes": 4337
+    },
+    "wuzhong/material-1-detail/provenance.json": {
+      "sha256": "aea8ed90a92a8383c72d2e5b19347be8726068e27159b283e5cb92269763f73a",
+      "bytes": 677
+    },
+    "wuzhong/material-2-detail/page.json": {
+      "sha256": "d2e9472ca8783b76fb0192b789ddf7987716bfd133ba4e444e770e335f856e78",
+      "bytes": 175427
+    },
+    "wuzhong/material-2-detail/page.png": {
+      "sha256": "f297c3cc492feece8e3e3eb03d7bda0fad0c5445e0dcba61b243318dde7f4e85",
+      "bytes": 684025
+    },
+    "wuzhong/material-2-detail/page.txt": {
+      "sha256": "d62359e9241778bb9d0bc5bdc483621591b7568bffd715a11a34a81aab3c4dfb",
+      "bytes": 4346
+    },
+    "wuzhong/material-2-detail/provenance.json": {
+      "sha256": "ad8507d5ff36e195427273a1492d65d43fe37e86f3d4530f3f26fc4c508ea1ed",
+      "bytes": 677
+    },
+    "wuzhong/material-3-detail/page.json": {
+      "sha256": "699b60270242c84665bba850d98e5e503cb579d4db5794374f6961ee81798fbe",
+      "bytes": 175409
+    },
+    "wuzhong/material-3-detail/page.png": {
+      "sha256": "adf980cbc8ca0c775dfca138067a33f645b89270fd39598623419766601ffd09",
+      "bytes": 683296
+    },
+    "wuzhong/material-3-detail/page.txt": {
+      "sha256": "6e088629d4760601fe7a9a522c4e169ffb6fec28dd4fafd281099d93c098089f",
+      "bytes": 4337
+    },
+    "wuzhong/material-3-detail/provenance.json": {
+      "sha256": "7853ab72c1a33375f1bb837bd7b5add0293f8d354bb4e1587bee0e3f60b5dca4",
+      "bytes": 677
+    },
+    "wuzhong/material-4-detail/page.json": {
+      "sha256": "0f5c0ad77301b02ea300fbfd970807cac891b3a819c18d74d6fe60b839d85b24",
+      "bytes": 175383
+    },
+    "wuzhong/material-4-detail/page.png": {
+      "sha256": "d219e20448c04acb2064d72a026dd673820766945e16eb02425ce6a9921b758a",
+      "bytes": 682757
+    },
+    "wuzhong/material-4-detail/page.txt": {
+      "sha256": "51d955a8c3679d0493e63318b07d30104c56b7c7b63771aa141400940cab60c9",
+      "bytes": 4323
+    },
+    "wuzhong/material-4-detail/provenance.json": {
+      "sha256": "a6962a6474928886b8a10ebed8be1fe89fab395fa5dac114fadc2d964b8fc54f",
+      "bytes": 677
+    },
+    "wuzhong/online-boundary.json": {
+      "sha256": "717013f75d5e46c5a7f23ecc02e24d966acfc35234337eee1f4258a6cd1505a1",
+      "bytes": 635
+    },
+    "wuzhong/originals/blank/50de5e3d-c904-45a5-b077-b2d8a9c2b88a/劳动人事争议仲裁申请书.docx": {
+      "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "bytes": 17701
+    },
+    "wuzhong/originals/blank/7db24855-d0f6-4e48-a93c-63d5a6e9b4d4/证据复印件.docx": {
+      "sha256": "8dae42265086696071d6173f162d47c9fdd9bdf4782cf1c70d28779b5894277f",
+      "bytes": 13376
+    },
+    "wuzhong/originals/blank/822f5576-f56b-4adc-a1f7-1493bf1b102e/身份证复印件.docx": {
+      "sha256": "f36541d8f1c49a0229d1510ae9f5cc5eb72ff294a17aec69c82b06e7ec571714",
+      "bytes": 13374
+    },
+    "wuzhong/originals/blank/9f35ddb0-8c4a-4fdb-96ab-738cc09dab27/证据清单.docx": {
+      "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "bytes": 15273
+    },
+    "wuzhong/originals/instruction/4b5ba482-fe47-408a-ac1a-0a77ac64f937/仲裁申请.png": {
+      "sha256": "dc407a951d748964846c061b0331167db5c0178a8a7515f6ab933494c74aa8ee",
+      "bytes": 139623
+    },
+    "wuzhong/search-loaded/page.json": {
+      "sha256": "36c60f7c150107fd0999a296a12828c3d5ed39e25f0f8a41bf202fadc0411160",
+      "bytes": 165306
+    },
+    "wuzhong/search-loaded/page.png": {
+      "sha256": "d3e069e04a23ddedbf5f129ce27d9c53d16c4e597fe14e73b9a4fb2eed93be5f",
+      "bytes": 260641
+    },
+    "wuzhong/search-loaded/page.txt": {
+      "sha256": "2a589f6ab5e1781918658f63972a76f21d50bb2fa28ca210d6fc3e6123242e18",
+      "bytes": 2435
+    },
+    "wuzhong/search-loaded/provenance.json": {
+      "sha256": "055da8f8e042359f21b1850ea24bdf1005bdbf0290b0dea09c4232e28d9bc1c1",
+      "bytes": 765
+    }
+  }
+}
