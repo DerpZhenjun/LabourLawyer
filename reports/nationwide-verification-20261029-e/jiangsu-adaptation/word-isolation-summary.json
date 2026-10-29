@@ -1,0 +1,47 @@
+{
+  "method": "CoCreateInstanceEx/IID_IDispatch (DispatchEx semantics)",
+  "new_pid_verified": true,
+  "completed": 8,
+  "original_pids_still_alive": true,
+  "quit_called_only_on_distinct_new_object": true,
+  "macro_security": 3,
+  "link_updates_disabled": true,
+  "option_restored_before_own_quit": true,
+  "document_window_identity_checks": [
+    {
+      "document": "reports/nationwide-verification-20261029-e/jiangsu/xiangcheng/originals/blank/02a0e257-ba98-41d8-9d93-1f5c70d038f7/劳动人事争议仲裁申请书.docx",
+      "matches_new_instance": true
+    },
+    {
+      "document": "reports/nationwide-verification-20261029-e/jiangsu/xiangcheng/originals/blank/873e8c9a-fb43-466a-9a57-025a4c2629a9/证据清单.docx",
+      "matches_new_instance": true
+    },
+    {
+      "document": "reports/nationwide-verification-20261029-e/jiangsu/wujiang/originals/blank/23baf5d4-a613-4e85-9893-95e556164af1/劳动人事争议仲裁申请书.docx",
+      "matches_new_instance": true
+    },
+    {
+      "document": "reports/nationwide-verification-20261029-e/jiangsu/wujiang/originals/blank/d51313d9-c124-4d31-96de-5e7fde669684/证据清单.docx",
+      "matches_new_instance": true
+    },
+    {
+      "document": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/generated/320507-application.docx",
+      "matches_new_instance": true
+    },
+    {
+      "document": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/generated/320507-evidence.docx",
+      "matches_new_instance": true
+    },
+    {
+      "document": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/generated/320509-application.docx",
+      "matches_new_instance": true
+    },
+    {
+      "document": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/generated/320509-evidence.docx",
+      "matches_new_instance": true
+    }
+  ],
+  "actual_process_ids_distributed": false,
+  "read_only_open": true,
+  "source_save_performed": false
+}

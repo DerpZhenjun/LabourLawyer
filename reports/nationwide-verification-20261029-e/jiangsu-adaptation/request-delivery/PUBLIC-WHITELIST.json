@@ -1,0 +1,32 @@
+{
+  "scope": "Exact Jiangsu E request models, independent test evidence and schema only. No recursive publication.",
+  "files": {
+    "backend/regional_jiangsu_request.py": {
+      "sha256": "688f18eb9871295360914f4dba67a1a03ab7a0c52f013a759eb6d13dff1200d5",
+      "bytes": 2876
+    },
+    "backend/tests/test_regional_jiangsu_request.py": {
+      "sha256": "65361c3cec3de03cf9688e03ff78b9444e1e7f21da9814d897b935de5de15f72",
+      "bytes": 7942
+    },
+    "reports/nationwide-verification-20261029-e/jiangsu-adaptation/request-delivery/tests-RED.txt": {
+      "sha256": "5e024f989fc88c6a23e2fa796d21436c1f772196673f0edc75817146d111580a",
+      "bytes": 5277
+    },
+    "reports/nationwide-verification-20261029-e/jiangsu-adaptation/request-delivery/tests-GREEN.txt": {
+      "sha256": "8642a1ac72c63530bbaa2c1f2526767cc3b14a928c117e4bff18cd4c4a88ad42",
+      "bytes": 106
+    },
+    "reports/nationwide-verification-20261029-e/jiangsu-adaptation/request-delivery/FINAL-REPORT.md": {
+      "sha256": "4c1d1807749d97f564257cb97d5cc610559fbde39bc99da9a6599e3fb46fed6d",
+      "bytes": 2285
+    },
+    "reports/nationwide-verification-20261029-e/jiangsu-adaptation/request-delivery/CONTRACT.json": {
+      "sha256": "2cbf35d00d2b097b2619d001b202d37b88fa1a335366026be67f2e6f9e2c1b4e",
+      "bytes": 1923
+    }
+  },
+  "text_scan_hits": 0,
+  "business_source_or_frozen_adaptation_whitelist_changed": false,
+  "published_by_this_task": false
+}

@@ -1,0 +1,13 @@
+# 江苏E精确请求契约
+
+新增backend/regional_jiangsu_request.py及其独立测试，未改共享路由、registry、数据库、服务或冻结provider。ApplicationRequest、EvidenceRequest、EvidenceItem分别只声明28、4、5个实际槽字段，extra forbid；独立证据清单无份数槽，因此copyCount或evidenceCopyCount即使空值也拒绝。
+
+先运行8项真实RED，均因请求模型尚未实现而失败；实现后8项GREEN。覆盖精确字段及空默认值、未知键（含空值与嵌套证据项）、独立申请书两份数、有效ISO日历日期、Unicode和非法XML、类型强转拒绝、长度与列表边界、自由文本及部分证据项、model_dump与实际provider契约一致。没有真实身份或案件资料。
+
+请求模型的before validator在任何字段强转前调用自身E provider的_validate_data；原始未知键不会被过滤。数字及布尔不能强转普通文本；份数只允许原始整数或provider允许的整数字符串，输出规范化为整数，空为None；日期None规范化为空串，有值时必须是有效YYYY-MM-DD。文本保留有效Unicode、换行和制表符，拒绝非法XML字符与孤立代理字符，不替换、不截断。
+
+默认值只包括本区真实槽：文本为空、列表为空、两份数None，不预填日期、份数、申请人或公司事实；调解、援助、其他证件、原件或复印件槽均保持自由文本。列表中None文本项按provider空槽规则转为空串，不当作新事实。证据项仅填来源而无名称也保留；已校验EvidenceItem实例可组成EvidenceRequest。
+
+使用方法：from regional_jiangsu_request import ApplicationRequest, EvidenceRequest；根据kind执行对应Model.model_validate(raw_data).model_dump()，再传给regional_jiangsu_oct29e.fill_candidate_document。核验命令：python -m unittest backend.tests.test_regional_jiangsu_request。DATA_FIELDS、LIMITS及所依赖provider/SOURCE精确SHA见CONTRACT.json。
+
+本子交付使用独立PUBLIC-WHITELIST，不修改已冻结57文件适配白名单；它不代表候选网页或发布通过。公开报告只含仓库相对路径、安全测试日志及代码，完整机器追踪保留私下，不含实际进程标识、凭据或样例原件。

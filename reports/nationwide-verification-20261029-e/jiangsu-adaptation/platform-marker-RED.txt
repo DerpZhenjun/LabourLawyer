@@ -1,0 +1,13 @@
+F
+======================================================================
+FAIL: test_reject_changed_facts_material_capture_and_platform_markers (backend.tests.test_jiangsu_oct29e.JiangsuOct29ETests.test_reject_changed_facts_material_capture_and_platform_markers)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend/tests/test_jiangsu_oct29e.py", line 119, in test_reject_changed_facts_material_capture_and_platform_markers
+    with self.assertRaises(ValueError): adapter.candidate_contract(g)
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 1 test in 0.751s
+
+FAILED (failures=1)

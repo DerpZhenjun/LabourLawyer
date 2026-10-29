@@ -1,0 +1,152 @@
+{
+  "method": "Each original and synthetic output page opened as a page image",
+  "original_pages_viewed": 14,
+  "generated_pages_viewed": 6,
+  "page_reviews": [
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320507-generated-application/page-1.png",
+      "sha256": "63b56872253a748ef7223cdf47afd49c7e44c50ba2fccd1f893be806be140970",
+      "bytes": 166041,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320507-generated-application/page-2.png",
+      "sha256": "4b35d0d3a321d5067601148f508f3b8548c1e5014047d03458b9d90b5d2ddbc2",
+      "bytes": 90233,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320507-generated-evidence/page-1.png",
+      "sha256": "03f8c613013537a7c88f756a2fe47d1f5bec1d66cf2e5513d01134ca555ea68a",
+      "bytes": 155763,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320507-original-application/page-1.png",
+      "sha256": "56a66f2d110f87ad740ea4eebac58cd9f1609bc1d0cf94499fd609994adcb4f3",
+      "bytes": 131541,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320507-original-application/page-2.png",
+      "sha256": "876fa24192365860160c41c27a4686a6dbb6a67f8ead8e1436b01c437226b565",
+      "bytes": 8578,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320507-original-application/page-3.png",
+      "sha256": "29cdcd31c2022a348583d5fd041666abde2f4fbfb8e46ddab149727a84ed784d",
+      "bytes": 89370,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320507-original-application/page-4.png",
+      "sha256": "9fa6062b28f6279c181e4e182be00ac57144c0265e130f71e426548fcd41911b",
+      "bytes": 131476,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320507-original-application/page-5.png",
+      "sha256": "5e59efdb0d5d8500ecdbab70b93b470252818b9e9f2da67f8f6b40110bc9903a",
+      "bytes": 8597,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320507-original-application/page-6.png",
+      "sha256": "5179d356d87d1a9fb7f5df47efd6e89f04957c225b8a94771d06354096180326",
+      "bytes": 89522,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320507-original-evidence/page-1.png",
+      "sha256": "2ddd1d480635240916975e93cccad211cbf42a24418e4b69da5bec826939055e",
+      "bytes": 43602,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320509-generated-application/page-1.png",
+      "sha256": "63b56872253a748ef7223cdf47afd49c7e44c50ba2fccd1f893be806be140970",
+      "bytes": 166041,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320509-generated-application/page-2.png",
+      "sha256": "4b35d0d3a321d5067601148f508f3b8548c1e5014047d03458b9d90b5d2ddbc2",
+      "bytes": 90233,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320509-generated-evidence/page-1.png",
+      "sha256": "03f8c613013537a7c88f756a2fe47d1f5bec1d66cf2e5513d01134ca555ea68a",
+      "bytes": 155763,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320509-original-application/page-1.png",
+      "sha256": "56a66f2d110f87ad740ea4eebac58cd9f1609bc1d0cf94499fd609994adcb4f3",
+      "bytes": 131541,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320509-original-application/page-2.png",
+      "sha256": "876fa24192365860160c41c27a4686a6dbb6a67f8ead8e1436b01c437226b565",
+      "bytes": 8578,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320509-original-application/page-3.png",
+      "sha256": "29cdcd31c2022a348583d5fd041666abde2f4fbfb8e46ddab149727a84ed784d",
+      "bytes": 89370,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320509-original-application/page-4.png",
+      "sha256": "9fa6062b28f6279c181e4e182be00ac57144c0265e130f71e426548fcd41911b",
+      "bytes": 131476,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320509-original-application/page-5.png",
+      "sha256": "5e59efdb0d5d8500ecdbab70b93b470252818b9e9f2da67f8f6b40110bc9903a",
+      "bytes": 8597,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320509-original-application/page-6.png",
+      "sha256": "5179d356d87d1a9fb7f5df47efd6e89f04957c225b8a94771d06354096180326",
+      "bytes": 89522,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/jiangsu-adaptation/render/320509-original-evidence/page-1.png",
+      "sha256": "2ddd1d480635240916975e93cccad211cbf42a24418e4b69da5bec826939055e",
+      "bytes": 43602,
+      "view_image_review": "PASS",
+      "result": "All visible text readable; no clipping, overlap or missing glyphs observed."
+    }
+  ],
+  "word_source_open": "read_only",
+  "source_originals_changed": false,
+  "synthetic_only": true,
+  "candidate_browser_qa": "NOT_RUN",
+  "published_by_this_task": false
+}

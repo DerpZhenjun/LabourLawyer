@@ -1,0 +1,130 @@
+[
+  {
+    "region_code": "320507",
+    "kind": "application",
+    "source_file": "reports/nationwide-verification-20261029-e/jiangsu/xiangcheng/originals/blank/02a0e257-ba98-41d8-9d93-1f5c70d038f7/劳动人事争议仲裁申请书.docx",
+    "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+    "sections": [
+      {
+        "width_emu": 7560310,
+        "height_emu": 10692130,
+        "top_margin_emu": 914400,
+        "bottom_margin_emu": 914400,
+        "left_margin_emu": 1143000,
+        "right_margin_emu": 1143000
+      }
+    ],
+    "paragraphs": 118,
+    "tables": [],
+    "named_styles": [
+      "Heading 2",
+      "Normal"
+    ],
+    "explicit_fonts": [],
+    "explicit_font_sizes_pt": [
+      12.0,
+      14.0,
+      15.0,
+      16.0
+    ],
+    "content_control_count": 0,
+    "field_count": 0
+  },
+  {
+    "region_code": "320507",
+    "kind": "evidence",
+    "source_file": "reports/nationwide-verification-20261029-e/jiangsu/xiangcheng/originals/blank/873e8c9a-fb43-466a-9a57-025a4c2629a9/证据清单.docx",
+    "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+    "sections": [
+      {
+        "width_emu": 7560310,
+        "height_emu": 10692130,
+        "top_margin_emu": 914400,
+        "bottom_margin_emu": 914400,
+        "left_margin_emu": 1143000,
+        "right_margin_emu": 1143000
+      }
+    ],
+    "paragraphs": 9,
+    "tables": [
+      {
+        "rows": 13,
+        "columns": 6
+      }
+    ],
+    "named_styles": [
+      "Normal"
+    ],
+    "explicit_fonts": [],
+    "explicit_font_sizes_pt": [
+      14.0,
+      16.0
+    ],
+    "content_control_count": 0,
+    "field_count": 0
+  },
+  {
+    "region_code": "320509",
+    "kind": "application",
+    "source_file": "reports/nationwide-verification-20261029-e/jiangsu/wujiang/originals/blank/23baf5d4-a613-4e85-9893-95e556164af1/劳动人事争议仲裁申请书.docx",
+    "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+    "sections": [
+      {
+        "width_emu": 7560310,
+        "height_emu": 10692130,
+        "top_margin_emu": 914400,
+        "bottom_margin_emu": 914400,
+        "left_margin_emu": 1143000,
+        "right_margin_emu": 1143000
+      }
+    ],
+    "paragraphs": 118,
+    "tables": [],
+    "named_styles": [
+      "Heading 2",
+      "Normal"
+    ],
+    "explicit_fonts": [],
+    "explicit_font_sizes_pt": [
+      12.0,
+      14.0,
+      15.0,
+      16.0
+    ],
+    "content_control_count": 0,
+    "field_count": 0
+  },
+  {
+    "region_code": "320509",
+    "kind": "evidence",
+    "source_file": "reports/nationwide-verification-20261029-e/jiangsu/wujiang/originals/blank/d51313d9-c124-4d31-96de-5e7fde669684/证据清单.docx",
+    "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+    "sections": [
+      {
+        "width_emu": 7560310,
+        "height_emu": 10692130,
+        "top_margin_emu": 914400,
+        "bottom_margin_emu": 914400,
+        "left_margin_emu": 1143000,
+        "right_margin_emu": 1143000
+      }
+    ],
+    "paragraphs": 9,
+    "tables": [
+      {
+        "rows": 13,
+        "columns": 6
+      }
+    ],
+    "named_styles": [
+      "Normal"
+    ],
+    "explicit_fonts": [],
+    "explicit_font_sizes_pt": [
+      14.0,
+      16.0
+    ],
+    "content_control_count": 0,
+    "field_count": 0
+  }
+]

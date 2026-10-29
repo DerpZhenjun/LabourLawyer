@@ -1,0 +1,60 @@
+{
+  "application": {
+    "applicantName": "虚构验收甲",
+    "respondentName": "虚构验收单位",
+    "birthDate": "1991-05-09",
+    "gender": "女",
+    "idNumber": "000000199105090000",
+    "phone": "00000000000",
+    "idAddress": "虚构地址一号",
+    "registeredAddress": "虚构单位二号",
+    "committeeName": "虚构仲裁委员会",
+    "requests": [
+      "请求支付虚构工资100元。",
+      "请求支付虚构加班工资200元。"
+    ],
+    "factsReason": "仅为软件验收，全部事实与当事人均为虚构。虚构申请人在虚构单位从事虚构工作，双方存在虚构工资争议。",
+    "applicationDate": "2026-10-29",
+    "copyCount": 3,
+    "evidenceCopyCount": 2,
+    "otherDocumentType": "虚构其他证件",
+    "otherDocumentNumber": "虚构证件号",
+    "applicantMailingAddress": "虚构通讯地址",
+    "acceptMediation": "是",
+    "legalAid": "否",
+    "respondentType": "虚构单位类型",
+    "socialCreditCode": "虚构信用代码",
+    "legalRepName": "虚构负责人",
+    "legalRepPosition": "虚构职务",
+    "departmentHead": "虚构主管",
+    "departmentHeadPosition": "虚构主管职务",
+    "mailingAddress": "虚构单位通讯地址",
+    "companyContact": "虚构联系人",
+    "companyContactPhone": "00000000000"
+  },
+  "evidence": {
+    "committeeName": "虚构仲裁委员会",
+    "submitDate": "2026-10-29",
+    "evidenceList": [
+      {
+        "name": "虚构劳动合同",
+        "source": "虚构保存",
+        "purpose": "虚构证据用途，仅供软件版式验收。虚构证据用途，仅供软件版式验收。虚构证据用途，仅供软件版式验收。虚构证据用途，仅供软件版式验收。虚构证据用途，仅供软件版式验收。虚构证据用途，仅供软件版式验收。虚构证据用途，仅供软件版式验收。虚构证据用途，仅供软件版式验收。虚构证据用途，仅供软件版式验收。虚构证据用途，仅供软件版式验收。虚构证据用途，仅供软件版式验收。虚构证据用途，仅供软件版式验收。虚构证据用途，仅供软件版式验收。虚构证据用途，仅供软件版式验收。虚构证据用途，仅供软件版式验收。",
+        "originalType": "复印件",
+        "pageCount": "3页"
+      },
+      {
+        "name": "虚构工资流水",
+        "source": "虚构保存",
+        "purpose": "证明虚构工资支付",
+        "originalType": "原件",
+        "pageCount": "2页"
+      },
+      {
+        "source": "虚构仅填写来源",
+        "purpose": "虚构部分字段也须保留"
+      }
+    ],
+    "caseNumber": "虚构验收案号"
+  }
+}

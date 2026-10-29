@@ -1,0 +1,44 @@
+{
+  "source_manifest_sha256": "7f92920807dc4ec74f26ace3be76adf67303cbd4877994777c1a8ca0b1e7bb5e",
+  "source_public_whitelist_sha256": "d3227b2755591c2be1375269a033bac6e62653d367b81150f89a0667091f9a8f",
+  "own_bindings": [
+    {
+      "region_code": "320507",
+      "kind": "application",
+      "adapter": "jiangsu_own_blank_oct29e_v1",
+      "annex_id": "02a0e257-ba98-41d8-9d93-1f5c70d038f7",
+      "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "source_file": "reports/nationwide-verification-20261029-e/jiangsu/xiangcheng/originals/blank/02a0e257-ba98-41d8-9d93-1f5c70d038f7/劳动人事争议仲裁申请书.docx",
+      "source_url": "https://szxc.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=28&iddept_ql_inf=11320507555810103L4002014302002&ql_kind=20&iddept_yw_inf=11320507555810103L400201430200201"
+    },
+    {
+      "region_code": "320507",
+      "kind": "evidence",
+      "adapter": "jiangsu_own_blank_oct29e_v1",
+      "annex_id": "873e8c9a-fb43-466a-9a57-025a4c2629a9",
+      "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "source_file": "reports/nationwide-verification-20261029-e/jiangsu/xiangcheng/originals/blank/873e8c9a-fb43-466a-9a57-025a4c2629a9/证据清单.docx",
+      "source_url": "https://szxc.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=28&iddept_ql_inf=11320507555810103L4002014302002&ql_kind=20&iddept_yw_inf=11320507555810103L400201430200201"
+    },
+    {
+      "region_code": "320509",
+      "kind": "application",
+      "adapter": "jiangsu_own_blank_oct29e_v1",
+      "annex_id": "23baf5d4-a613-4e85-9893-95e556164af1",
+      "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "source_file": "reports/nationwide-verification-20261029-e/jiangsu/wujiang/originals/blank/23baf5d4-a613-4e85-9893-95e556164af1/劳动人事争议仲裁申请书.docx",
+      "source_url": "https://szwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=29&iddept_ql_inf=1132058401420395XF4002014302002&ql_kind=20&iddept_yw_inf=1132058401420395XF400201430200201"
+    },
+    {
+      "region_code": "320509",
+      "kind": "evidence",
+      "adapter": "jiangsu_own_blank_oct29e_v1",
+      "annex_id": "d51313d9-c124-4d31-96de-5e7fde669684",
+      "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "source_file": "reports/nationwide-verification-20261029-e/jiangsu/wujiang/originals/blank/d51313d9-c124-4d31-96de-5e7fde669684/证据清单.docx",
+      "source_url": "https://szwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=29&iddept_ql_inf=1132058401420395XF4002014302002&ql_kind=20&iddept_yw_inf=1132058401420395XF400201430200201"
+    }
+  ],
+  "source_pin_verification": "PASS",
+  "reference_samples_read_by_provider": false
+}

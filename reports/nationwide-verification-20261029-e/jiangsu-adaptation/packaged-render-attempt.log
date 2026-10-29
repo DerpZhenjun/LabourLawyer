@@ -1,0 +1,15 @@
+Renderer exit code: 1
+Traceback (most recent call last):
+  File "documents/render_docx.py", line 546, in <module>
+    main()
+  File "documents/render_docx.py", line 538, in main
+    rasterize(render_input_path, out_dir, dpi, verbose=args.verbose, emit_pdf=args.emit_pdf)
+  File "documents/render_docx.py", line 418, in rasterize
+    pdf_path, debug = convert_to_pdf(
+                      ^^^^^^^^^^^^^^^
+  File "documents/render_docx.py", line 270, in convert_to_pdf
+    soffice = _resolve_soffice()
+              ^^^^^^^^^^^^^^^^^^
+  File "documents/render_docx.py", line 79, in _resolve_soffice
+    raise FileNotFoundError(f"LibreOffice {executable_name} was not found on PATH")
+FileNotFoundError: LibreOffice soffice.exe was not found on PATH

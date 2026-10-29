@@ -1,0 +1,21 @@
+# 相城和吴江自身官方空白填写适配验收
+
+完成相城区320507、吴江区320509各自劳动者申请书和独立证据清单填写适配，共4个地区文书组合。未修改冻结来源、共享代码、配置、数据库、服务或Git，未运行模型，未办理真实仲裁申请。本报告仅确认离线来源绑定与文书版式；候选网页、主环境与发布仍需独立验收。
+
+自身来源固定为 SOURCE-MANIFEST SHA 7f92920807dc4ec74f26ace3be76adf67303cbd4877994777c1a8ca0b1e7bb5e、SOURCE PUBLIC-WHITELIST SHA d3227b2755591c2be1375269a033bac6e62653d367b81150f89a0667091f9a8f。自身机关、地区、事项、正式URL、webId、材料详情、控件、下载URL、原件路径和SHA均由本区封存清单重建核对。旧机关编码不改作现行行政区代码，同SHA不替代各自来源身份。
+
+provider为 backend/regional_jiangsu_oct29e.py，ADAPTER为 jiangsu_own_blank_oct29e_v1。接口为 parse_capture(code或区名,capture_root=封存jiangsu目录)、candidate_contract(g,root=发行根)、blank_binding(g,t,root=发行根)返回含kind的dict、with_capabilities(g,root)、fill_candidate_document(g,kind,data,root)。public_evidence(g,root)及approved_report_attachment(g,t,root)要求显式root，空目录、缺件、篡改原件或清单均拒绝，不读旧仓库模板或私有样例兜底。published/PASS/version等生命周期状态可演进，source_issues与正式事实保持核对，已发布后不重新加入未发布提示。
+
+DATA_FIELDS和LIMITS为接口契约：application28键；evidence顶层仅committeeName、caseNumber、submitDate、evidenceList四键；证据项name、source、purpose、originalType、pageCount五键。独立证据原件没有份数槽，故不接受copyCount，即使空值也拒绝。材料表的证据清单两份要求仍留在来源材料说明中；申请书内副本与相关证据是实际两个独立槽，分别使用copyCount、evidenceCopyCount。
+
+application支持committeeName、applicantName、birthDate、gender、idNumber、idAddress、otherDocumentType、otherDocumentNumber、applicantMailingAddress、phone、acceptMediation、legalAid、respondentName、respondentType、registeredAddress、socialCreditCode、legalRepName、legalRepPosition、departmentHead、departmentHeadPosition、mailingAddress、companyContact、companyContactPhone、requests、factsReason、applicationDate、copyCount、evidenceCopyCount。仅劳动者、一个被申请人；原件用人单位申请及空的第二被申请人块在填写件中移除。调解、援助、证件类型、原件或复印件均为自由文本，不捏造官方封闭选项，不自动推断未填事实。签字及接收人、接收日期留空；日期只按明确有效ISO输入填写。
+
+普通字段最多300字，事实理由12000字，请求最多4项、每项1200字，证据最多40项、证明内容1200字、其他证据栏300字。申请书份数留空或1至30整数。未知键（即使空）、超限、不合法XML字符及不合法日期直接拒绝，不过滤草稿键、不静默截断。只填可选电话或证件号、证据项未填名称仍填来源等部分输入均保留。
+
+真实RED先观察9项因尚无E适配失败；另补平台适配器标记篡改测试，观察ValueError未抛出的真实失败，再补严格校验。最终9项测试GREEN，覆盖自身身份、事项、机关、字段、材料与捕获SHA、附件来源与材料绑定、样例及标题占位拒绝、未知字段与长度、日期与份数、部分字段、公开干净根与缺件不兜底。日志中的原始机器诊断只在私有运行目录保留，公开追踪使用仓库相对路径。
+
+原件申请书各6页、独立证据各1页，共14页；虚构填写申请书各2页、证据各1页，共6页。4原件和4虚构填写件全部通过独立DispatchEx语义实例只读导出；逐文档窗口归属与独立新空实例均核对，未保存源件，恢复选项后仅退出自己的实例，原有Word进程仍在。20张逐页PNG均已打开查看，未见遮挡、裁切或缺字；长证据用途、部分字段、生日1991-05-09、两处不同份数及签名留空可见。该实测样本不意味着任意最大长度输入都能维持相同页数。
+
+先尝试配套渲染器，因本机缺少LibreOffice soffice.exe真实失败，公开日志保留该错误；随后使用独立Word导出PDF、配置的Poppler生成逐页图。生成ZIP包部件顺序与原件一致，实际仅word/document.xml改变，其余每个部件字节不变。源原件、118源白名单与112源文件pin只读验证通过，样例不分发也不作任何默认事实。
+
+复核命令为 python -m unittest backend.tests.test_jiangsu_oct29e、python reports/nationwide-verification-20261029-e/jiangsu-adaptation/finalize.py --verify。重现渲染须按artifact.md显式设置PARTLAWYER_QA_PYTHON、PARTLAWYER_QA_POPPLER，任务JSON使用仓库相对路径；脚本不启动模型。DERIVED-MANIFEST和PUBLIC-WHITELIST固定本批精确交付字节，排除所有私有日志、实际进程标识和样例原件。

@@ -1,0 +1,69 @@
+FFFFFFFF
+======================================================================
+FAIL: test_copy_counts_are_independent_and_match_provider_integer_rules (backend.tests.test_regional_jiangsu_request.RegionalJiangsuRequestTests.test_copy_counts_are_independent_and_match_provider_integer_rules)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend/tests/test_regional_jiangsu_request.py", line 24, in setUp
+    self.assertIsNotNone(request, 'Exact Jiangsu E request contract is not implemented')
+AssertionError: unexpectedly None : Exact Jiangsu E request contract is not implemented
+
+======================================================================
+FAIL: test_dates_require_actual_iso_calendar_date_before_type_coercion (backend.tests.test_regional_jiangsu_request.RegionalJiangsuRequestTests.test_dates_require_actual_iso_calendar_date_before_type_coercion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend/tests/test_regional_jiangsu_request.py", line 24, in setUp
+    self.assertIsNotNone(request, 'Exact Jiangsu E request contract is not implemented')
+AssertionError: unexpectedly None : Exact Jiangsu E request contract is not implemented
+
+======================================================================
+FAIL: test_exact_declared_fields_and_blank_defaults_have_no_non_slots (backend.tests.test_regional_jiangsu_request.RegionalJiangsuRequestTests.test_exact_declared_fields_and_blank_defaults_have_no_non_slots)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend/tests/test_regional_jiangsu_request.py", line 24, in setUp
+    self.assertIsNotNone(request, 'Exact Jiangsu E request contract is not implemented')
+AssertionError: unexpectedly None : Exact Jiangsu E request contract is not implemented
+
+======================================================================
+FAIL: test_limits_accept_boundaries_and_reject_overflow_or_wrong_collection_types (backend.tests.test_regional_jiangsu_request.RegionalJiangsuRequestTests.test_limits_accept_boundaries_and_reject_overflow_or_wrong_collection_types)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend/tests/test_regional_jiangsu_request.py", line 24, in setUp
+    self.assertIsNotNone(request, 'Exact Jiangsu E request contract is not implemented')
+AssertionError: unexpectedly None : Exact Jiangsu E request contract is not implemented
+
+======================================================================
+FAIL: test_model_dump_is_accepted_by_actual_provider_validator (backend.tests.test_regional_jiangsu_request.RegionalJiangsuRequestTests.test_model_dump_is_accepted_by_actual_provider_validator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend/tests/test_regional_jiangsu_request.py", line 24, in setUp
+    self.assertIsNotNone(request, 'Exact Jiangsu E request contract is not implemented')
+AssertionError: unexpectedly None : Exact Jiangsu E request contract is not implemented
+
+======================================================================
+FAIL: test_optional_partial_fields_and_free_text_choices_are_lossless (backend.tests.test_regional_jiangsu_request.RegionalJiangsuRequestTests.test_optional_partial_fields_and_free_text_choices_are_lossless)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend/tests/test_regional_jiangsu_request.py", line 24, in setUp
+    self.assertIsNotNone(request, 'Exact Jiangsu E request contract is not implemented')
+AssertionError: unexpectedly None : Exact Jiangsu E request contract is not implemented
+
+======================================================================
+FAIL: test_unicode_xml_and_wrong_types_rejected_without_replacing_or_truncating (backend.tests.test_regional_jiangsu_request.RegionalJiangsuRequestTests.test_unicode_xml_and_wrong_types_rejected_without_replacing_or_truncating)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend/tests/test_regional_jiangsu_request.py", line 24, in setUp
+    self.assertIsNotNone(request, 'Exact Jiangsu E request contract is not implemented')
+AssertionError: unexpectedly None : Exact Jiangsu E request contract is not implemented
+
+======================================================================
+FAIL: test_unknown_keys_even_empty_and_non_slot_evidence_copies_are_rejected (backend.tests.test_regional_jiangsu_request.RegionalJiangsuRequestTests.test_unknown_keys_even_empty_and_non_slot_evidence_copies_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "backend/tests/test_regional_jiangsu_request.py", line 24, in setUp
+    self.assertIsNotNone(request, 'Exact Jiangsu E request contract is not implemented')
+AssertionError: unexpectedly None : Exact Jiangsu E request contract is not implemented
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.002s
+
+FAILED (failures=8)
