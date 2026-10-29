@@ -1,0 +1,18 @@
+{
+  "source_url": "https://sxgl.jszwfw.gov.cn:66/audit-qlk-web/rest/frame/pages/basic/attach/attachAction/getContent?isCommondto=true&attachGuid=74c567a2-d8e4-4235-98d4-a6f77200d239",
+  "captured_at": "2026-10-29T10:23:35.931Z",
+  "files": {
+    "page.json": {
+      "sha256": "2b692f672ec19750aec124bca22b643b61faa2e4243bf92c0918cba7716baaa1",
+      "bytes": 617
+    },
+    "page.png": {
+      "sha256": "6f6403ca5454a11f6d171657bdfd95e6eabff1fa9d65fe6fcb55b33917f1d9de",
+      "bytes": 31660
+    },
+    "page.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  }
+}

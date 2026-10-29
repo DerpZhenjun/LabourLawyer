@@ -1,0 +1,30 @@
+{
+  "recorded_at": "2026-10-29T10:30:09.387950+00:00",
+  "browser": "Agent Browser 0.38.2",
+  "session": "js-oct29c",
+  "closed": true,
+  "observations": [
+    {
+      "action": "initial province portal open",
+      "outcome": "page did load; first Windows client inherited a daemon pipe handle and did not finish returning output",
+      "resolution": "doctor showed zero failures; actual DOM inspected; only the two identified own pending Python launcher/client processes were stopped, not the browser daemon or other sessions"
+    },
+    {
+      "action": "native application attachment download",
+      "locality": "xinbei",
+      "outcome": "Agent Browser client returned os error 10060 and produced no saved file; actual page remained own formal guide, not an auth page",
+      "resolution": "exact already-observed official public URLs were fetched by normal unauthenticated HTTPS GET; 9 of 9 own attachments returned HTTP200, no port/SSL/auth workaround"
+    },
+    {
+      "action": "flow capture guard",
+      "outcome": "first capture rejected an official :66 origin because the guard had compared origin suffix rather than hostname; corrected to hostname; no rejected capture was saved"
+    },
+    {
+      "action": "online native entry",
+      "outcome": "both localities stopped at actual user login with captcha; no input, authentication or submission"
+    }
+  ],
+  "doctor_failures_observed": 0,
+  "doctor_warnings_observed": 0,
+  "raw_HAR_cookies_SSO_queries_saved": false
+}
