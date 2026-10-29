@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "transport": "native UI generation and native browser download",
+  "api_replay_used": false,
+  "records": [
+    {
+      "region_code": "320508",
+      "kind": "application",
+      "template_id": "1b87480c-8cd3-4bfa-8721-7dbe5255db5b",
+      "main_source_context": {
+        "source_id": "9e10ccda19cf00e2f5ad536e",
+        "version": 203
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "9e10ccda19cf00e2f5ad536e",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-d/live-release/downloads/320508-application.docx",
+      "sha256": "c36237a78f46cfb98f55aa8def80a84c598a4737949793209e5cbb1145bb71a3",
+      "bytes": 12769,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_rendering": "NOT_RUN"
+    },
+    {
+      "region_code": "320508",
+      "kind": "evidence",
+      "template_id": "2d48f730-b996-4ec0-9550-548ad0cd761e",
+      "main_source_context": {
+        "source_id": "9e10ccda19cf00e2f5ad536e",
+        "version": 203
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "9e10ccda19cf00e2f5ad536e",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-d/live-release/downloads/320508-evidence.docx",
+      "sha256": "ba922086c1bcbe19966925fb4cc25f23c30249d33d2f591987f7590ccb9d406c",
+      "bytes": 11588,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_rendering": "NOT_RUN"
+    },
+    {
+      "region_code": "320506",
+      "kind": "evidence",
+      "template_id": "9f35ddb0-8c4a-4fdb-96ab-738cc09dab27",
+      "main_source_context": {
+        "source_id": "185d26b7f845b0da48cd8475",
+        "version": 204
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "185d26b7f845b0da48cd8475",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-d/live-release/downloads/320506-evidence.docx",
+      "sha256": "ece9338fc8c8510a8cfe304ab1e90474916c6fe971662c2d9a19e5e6a897a9f5",
+      "bytes": 11582,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_rendering": "NOT_RUN"
+    },
+    {
+      "region_code": "320506",
+      "kind": "application",
+      "template_id": "50de5e3d-c904-45a5-b077-b2d8a9c2b88a",
+      "main_source_context": {
+        "source_id": "185d26b7f845b0da48cd8475",
+        "version": 204
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "185d26b7f845b0da48cd8475",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-d/live-release/downloads/320506-application.docx",
+      "sha256": "9a4e6b1c6407bf600a548e8a3c695f406f034e1bae4a13428733f42bafab9597",
+      "bytes": 12769,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_rendering": "NOT_RUN"
+    },
+    {
+      "region_code": "330109",
+      "kind": "application",
+      "template_id": "34F0BF719BB4A628FF52D29A2CB66C6C",
+      "main_source_context": {
+        "source_id": "57f5b9173d3a4f1e559eb4ab",
+        "version": 205
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "57f5b9173d3a4f1e559eb4ab",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-d/live-release/downloads/330109-application.docx",
+      "sha256": "871981cbe97fc404e48a0700503da5c8a00d237ee47277c152906c743108af64",
+      "bytes": 27495,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_rendering": "NOT_RUN"
+    },
+    {
+      "region_code": "330109",
+      "kind": "evidence",
+      "template_id": "DFA6D0E0FAB7998B51EAA2EF0B11737C",
+      "main_source_context": {
+        "source_id": "57f5b9173d3a4f1e559eb4ab",
+        "version": 205
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "57f5b9173d3a4f1e559eb4ab",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-d/live-release/downloads/330109-evidence.docx",
+      "sha256": "5b1c798395405ed350fbeb1cf6bb6992f252f9c95638331396ea8b4d39fc01b5",
+      "bytes": 15772,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_rendering": "NOT_RUN"
+    },
+    {
+      "region_code": "330112",
+      "kind": "application",
+      "template_id": "0103BAC26E734E0EAA86044060CCACDA",
+      "main_source_context": {
+        "source_id": "f556a6146755db0f84784861",
+        "version": 206
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "f556a6146755db0f84784861",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-d/live-release/downloads/330112-application.docx",
+      "sha256": "d17d74f7a91af8bb3664abe19b8ca5ded3dba0de633bb73ce997f70b87ca6ef3",
+      "bytes": 27494,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_rendering": "NOT_RUN"
+    }
+  ]
+}

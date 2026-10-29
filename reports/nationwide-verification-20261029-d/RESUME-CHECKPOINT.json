@@ -1,16 +1,16 @@
 {
-  "phase": "D4_candidate_accepted_release_prepared_main_code_reload_next",
+  "phase": "D4_main_published_and_verified_next_E_own_source_collection",
   "new_candidates": 4,
-  "candidate_queue": 28,
-  "main_guides": 194,
-  "main_generatable_localities": 177,
+  "candidate_queue": 24,
+  "main_guides": 198,
+  "main_generatable_localities": 181,
   "guides": [
     "reports/nationwide-verification-20261029-d/jiangsu/gusu/guide.json",
     "reports/nationwide-verification-20261029-d/jiangsu/wuzhong/guide.json",
     "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/guide.json",
     "reports/nationwide-verification-20261029-d/zhejiang/linan/guide.json"
   ],
-  "next": "Root may restart only project main backend with existing exact data directory per explicit latest user authorization. Verify fixed main8000 D marker/main_default, then apply exact D4 prepared delta. Never use candidate marker. Preserve202 existing guide history and4294 tasks. All D candidate receipts frozen; do not repeat append.",
+  "next": "D4 actual apply completed, do not repeat. Main backend D marker/main_default already running via authorized project-only restart. Commit exact198/181 public release then clean archive bootstrap. E sources only under collection; register only completed own-source captures, no generation before adaptation/QA.",
   "models_called": false,
   "updated_at": "2026-10-29T19:58:24.581639+08:00",
   "candidate_guides": 198,
@@ -25,7 +25,7 @@
   "shared_asgi_generations": 7,
   "clean_public_source_generations": 7,
   "frontend_own_fields_checks": 16,
-  "main_D_generation_granted": false,
+  "main_D_generation_granted": true,
   "candidate_native_documents": 7,
   "candidate_document_visual_pages": 13,
   "candidate_browser_status": "PASS",
@@ -40,5 +40,16 @@
     "status": "PASS"
   },
   "frontend_async_draft_checks": "PASS",
-  "prepared_directory": ".runtime/reviewed-oct29d-release-final"
+  "prepared_directory": ".runtime/reviewed-oct29d-release-final",
+  "main_versions": {
+    "9e10ccda19cf00e2f5ad536e": 203,
+    "185d26b7f845b0da48cd8475": 204,
+    "57f5b9173d3a4f1e559eb4ab": 205,
+    "f556a6146755db0f84784861": 206
+  },
+  "history_rows": 206,
+  "discovery_jobs": 4294,
+  "main_native_documents": 7,
+  "main_browser_status": "PASS",
+  "main_candidate_file_sha_match": 7
 }

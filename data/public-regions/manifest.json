@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "exported_at": "2026-10-29T11:25:26.461779+00:00",
+  "exported_at": "2026-10-29T12:08:10.187118+00:00",
   "scope": "已发布的公开指南与地区目录；目录不等于指南覆盖，不包含个人案件或浏览器会话。",
-  "guides": 194,
-  "generatable_localities": 177,
+  "guides": 198,
+  "generatable_localities": 181,
   "directory_rows": 3974,
   "files": {
-    "guides.json": "5f66e43600e04274354f0488508f4093ae48a777e92085486ee28f339e074162",
+    "guides.json": "258403319387e510875ea78d1a38d7ddb82680db95d2fb2b66836a3574806cea",
     "directory.json": "913daa7dd7bcbec570945fd7cc8ed08ae55b15c50665e5f8f4d967b62fc85ba8"
   }
 }

@@ -1110,17 +1110,17 @@
     "region_code": "320508",
     "source_url": "https://szgs.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=26&iddept_ql_inf=11320508014152478Y4002014302002&ql_kind=20&iddept_yw_inf=11320508014152478Y400201430200201",
     "source_id": "9e10ccda19cf00e2f5ad536e",
-    "published": false,
+    "published": true,
     "can_generate": false,
     "guide_file": "reports/nationwide-verification-20261029-d/jiangsu/gusu/guide.json",
     "api_qa_status": "NOT_RUN",
     "document_visual_qa_status": "NOT_RUN",
     "web_qa_status": "NOT_RUN",
-    "note": "仅核对本区自身指南和原件，尚未填写/版式/网页适配；不套用其他地区。",
+    "note": "使用本区自身公开空白表格完成填写、逐页版式和真实候选/主站验收后增量发布。临安未发布证据项不下载、不生成；未知不当成官方未提供。",
     "authority": "姑苏区、保护区人力资源和社会保障局",
     "checked_at": "2026-10-29T11:17:14.052Z",
-    "guide_status": "candidate",
-    "generation_enabled": false,
+    "guide_status": "published",
+    "generation_enabled": true,
     "reviewed_sections": [
       "受理标准",
       "办理材料",
@@ -1176,7 +1176,15 @@
       }
     ],
     "application_template_status": "blank_found",
-    "evidence_template_status": "blank_found"
+    "evidence_template_status": "blank_found",
+    "publication": {
+      "release_id": "oct29d-own-localities-v1",
+      "published_at": "2026-10-29T12:12:58.074070+00:00",
+      "version": 203,
+      "candidate_web_qa": "PASS",
+      "main_web_qa": "PASS",
+      "native_documents": "reports/nationwide-verification-20261029-d/live-release/RESULT.json"
+    }
   },
   {
     "province": "jiangsu",
@@ -1185,17 +1193,17 @@
     "region_code": "320506",
     "source_url": "https://szwz.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=27&iddept_ql_inf=11320506552548402T4002014302002&ql_kind=20&iddept_yw_inf=11320506552548402T400201430200201",
     "source_id": "185d26b7f845b0da48cd8475",
-    "published": false,
+    "published": true,
     "can_generate": false,
     "guide_file": "reports/nationwide-verification-20261029-d/jiangsu/wuzhong/guide.json",
     "api_qa_status": "NOT_RUN",
     "document_visual_qa_status": "NOT_RUN",
     "web_qa_status": "NOT_RUN",
-    "note": "仅核对本区自身指南和原件，尚未填写/版式/网页适配；不套用其他地区。",
+    "note": "使用本区自身公开空白表格完成填写、逐页版式和真实候选/主站验收后增量发布。临安未发布证据项不下载、不生成；未知不当成官方未提供。",
     "authority": "苏州市吴中区人力资源和社会保障局",
     "checked_at": "2026-10-29T11:20:03.717Z",
-    "guide_status": "candidate",
-    "generation_enabled": false,
+    "guide_status": "published",
+    "generation_enabled": true,
     "reviewed_sections": [
       "受理标准",
       "办理材料",
@@ -1251,7 +1259,15 @@
       }
     ],
     "application_template_status": "blank_found",
-    "evidence_template_status": "blank_found"
+    "evidence_template_status": "blank_found",
+    "publication": {
+      "release_id": "oct29d-own-localities-v1",
+      "published_at": "2026-10-29T12:12:58.074070+00:00",
+      "version": 204,
+      "candidate_web_qa": "PASS",
+      "main_web_qa": "PASS",
+      "native_documents": "reports/nationwide-verification-20261029-d/live-release/RESULT.json"
+    }
   },
   {
     "province": "zhejiang",
@@ -1260,17 +1276,17 @@
     "region_code": "330109",
     "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=7c940b86-e89e-47e9-9785-292358209e9a",
     "source_id": "57f5b9173d3a4f1e559eb4ab",
-    "published": false,
+    "published": true,
     "can_generate": false,
     "guide_file": "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/guide.json",
     "api_qa_status": "NOT_RUN",
     "document_visual_qa_status": "NOT_RUN",
     "web_qa_status": "NOT_RUN",
-    "note": "仅核对本区自身指南和原件，尚未填写/版式/网页适配；不套用其他地区。",
+    "note": "使用本区自身公开空白表格完成填写、逐页版式和真实候选/主站验收后增量发布。临安未发布证据项不下载、不生成；未知不当成官方未提供。",
     "authority": "区人力社保局",
     "checked_at": "2026-10-29T11:21:08.789171+00:00",
-    "guide_status": "candidate",
-    "generation_enabled": false,
+    "guide_status": "published",
+    "generation_enabled": true,
     "reviewed_sections": [
       "outFlowDesc",
       "qaList",
@@ -1297,7 +1313,15 @@
       }
     ],
     "application_template_status": "blank_found",
-    "evidence_template_status": "blank_found"
+    "evidence_template_status": "blank_found",
+    "publication": {
+      "release_id": "oct29d-own-localities-v1",
+      "published_at": "2026-10-29T12:12:58.074070+00:00",
+      "version": 205,
+      "candidate_web_qa": "PASS",
+      "main_web_qa": "PASS",
+      "native_documents": "reports/nationwide-verification-20261029-d/live-release/RESULT.json"
+    }
   },
   {
     "province": "zhejiang",
@@ -1306,17 +1330,17 @@
     "region_code": "330112",
     "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
     "source_id": "f556a6146755db0f84784861",
-    "published": false,
+    "published": true,
     "can_generate": false,
     "guide_file": "reports/nationwide-verification-20261029-d/zhejiang/linan/guide.json",
     "api_qa_status": "NOT_RUN",
     "document_visual_qa_status": "NOT_RUN",
     "web_qa_status": "NOT_RUN",
-    "note": "仅核对本区自身指南和原件，尚未填写/版式/网页适配；不套用其他地区。临安所查材料未见独立证据清单，不等同官方没有提供。",
+    "note": "使用本区自身公开空白表格完成填写、逐页版式和真实候选/主站验收后增量发布。临安未发布证据项不下载、不生成；未知不当成官方未提供。",
     "authority": "区人力社保局",
     "checked_at": "2026-10-29T11:21:08.789171+00:00",
-    "guide_status": "candidate",
-    "generation_enabled": false,
+    "guide_status": "published",
+    "generation_enabled": true,
     "reviewed_sections": [
       "outFlowDesc",
       "qaList",
@@ -1335,6 +1359,14 @@
       }
     ],
     "application_template_status": "blank_found",
-    "evidence_template_status": "not_found_in_checked_own_materials"
+    "evidence_template_status": "not_found_in_checked_own_materials",
+    "publication": {
+      "release_id": "oct29d-own-localities-v1",
+      "published_at": "2026-10-29T12:12:58.074070+00:00",
+      "version": 206,
+      "candidate_web_qa": "PASS",
+      "main_web_qa": "PASS",
+      "native_documents": "reports/nationwide-verification-20261029-d/live-release/RESULT.json"
+    }
   }
 ]

@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "scope": "D main release ordinary UI acceptance only; synthetic documents and public screenshots.",
+  "files": [
+    {
+      "file": "reports/nationwide-verification-20261029-d/live-release/admin-regions-1440.png",
+      "sha256": "885322faa6e3e28aaafaca6fbc1aa7354655b08a4382cb797f6fbfd611f57afd",
+      "bytes": 173503
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/live-release/downloads/320506-application.docx",
+      "sha256": "9a4e6b1c6407bf600a548e8a3c695f406f034e1bae4a13428733f42bafab9597",
+      "bytes": 12769
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/live-release/downloads/320506-evidence.docx",
+      "sha256": "ece9338fc8c8510a8cfe304ab1e90474916c6fe971662c2d9a19e5e6a897a9f5",
+      "bytes": 11582
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/live-release/downloads/320508-application.docx",
+      "sha256": "c36237a78f46cfb98f55aa8def80a84c598a4737949793209e5cbb1145bb71a3",
+      "bytes": 12769
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/live-release/downloads/320508-evidence.docx",
+      "sha256": "ba922086c1bcbe19966925fb4cc25f23c30249d33d2f591987f7590ccb9d406c",
+      "bytes": 11588
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/live-release/downloads/330109-application.docx",
+      "sha256": "871981cbe97fc404e48a0700503da5c8a00d237ee47277c152906c743108af64",
+      "bytes": 27495
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/live-release/downloads/330109-evidence.docx",
+      "sha256": "5b1c798395405ed350fbeb1cf6bb6992f252f9c95638331396ea8b4d39fc01b5",
+      "bytes": 15772
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/live-release/downloads/330112-application.docx",
+      "sha256": "d17d74f7a91af8bb3664abe19b8ca5ded3dba0de633bb73ce997f70b87ca6ef3",
+      "bytes": 27494
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/live-release/jiangsu-375-cta.png",
+      "sha256": "930d2e04405144374048e3de97c07dd884498befc7d69a7d818e72b18a08d9f0",
+      "bytes": 64378
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/live-release/NATIVE-GENERATION-PROOF.json",
+      "sha256": "d345e2e274d681fdacaa3c9302e08620666c359f1c715e564572c68cce6dcef0",
+      "bytes": 5644
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/live-release/RESULT.json",
+      "sha256": "60da5005fe31d55a0bf1c3cc23beb4a2c962d9257409044d49787e2e2fb260e3",
+      "bytes": 19735
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/live-release/unsupported-region-768.png",
+      "sha256": "08e1188f25944fbd15e73f510ed80614dbfacdb5923a13402de3822b650e63cb",
+      "bytes": 97608
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/live-release/zhejiang-1440-drafts.png",
+      "sha256": "092183857563795d75fd5d5749aacdc46aa066a5097b717d29fe86c5999f16c9",
+      "bytes": 117599
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/live-release/zhejiang-375-evidence-cta.png",
+      "sha256": "2adfe40c463bfa051c89a34061df1234d0544f5ffe392277b72fb12cea660499",
+      "bytes": 58180
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/live-release/zhejiang-768-click-observation.png",
+      "sha256": "34e643923cb025ac77cc0be677a3dfb1f2cb4da3c1e89fd6fc17d87db030ae55",
+      "bytes": 100078
+    }
+  ],
+  "excluded": "Raw network payloads and machine-specific runtime data remain private and are not listed."
+}

@@ -1,0 +1,76 @@
+{
+  "release_id": "oct29d-own-localities-v1",
+  "applied_at": "2026-10-29T12:12:58.074070+00:00",
+  "marker_url": "http://127.0.0.1:8000/api/regional-guides/release-capabilities",
+  "marker": {
+    "release_id": "oct29d-own-localities-v1",
+    "adapters": [
+      "jiangsu_own_blank_oct29d_v1",
+      "zhejiang_own_worker_oct29d_v1"
+    ],
+    "source_bound": true,
+    "models_required": false,
+    "regional_store": "main_default"
+  },
+  "inserted": 4,
+  "versions": [
+    {
+      "scope": [
+        "jiangsu",
+        "苏州市",
+        "姑苏区"
+      ],
+      "source_id": "9e10ccda19cf00e2f5ad536e",
+      "version": 203,
+      "content_hash": "628954d738caae8f5d4367631210e04e680cd285ab515cfedbbafb2d6e17d2d3"
+    },
+    {
+      "scope": [
+        "jiangsu",
+        "苏州市",
+        "吴中区"
+      ],
+      "source_id": "185d26b7f845b0da48cd8475",
+      "version": 204,
+      "content_hash": "d2f536a205d4ac4dad08d5d4f1f9be24c30d01ebbcdafcd62c032ba3b8da1c0b"
+    },
+    {
+      "scope": [
+        "zhejiang",
+        "杭州市",
+        "萧山区"
+      ],
+      "source_id": "57f5b9173d3a4f1e559eb4ab",
+      "version": 205,
+      "content_hash": "c4f017aef1d1e28a0d4692572ce931d1a613407bc3eddc3c7f28b69f5c6bf8bd"
+    },
+    {
+      "scope": [
+        "zhejiang",
+        "杭州市",
+        "临安区"
+      ],
+      "source_id": "f556a6146755db0f84784861",
+      "version": 206,
+      "content_hash": "b8c266cb4733004beca0b6c483b6bde8fc15eb6652bda69d124639314c27a8cd"
+    }
+  ],
+  "guides_before": 194,
+  "guides_after": 198,
+  "generatable_localities_after": 181,
+  "history_rows_after": 206,
+  "discovery_jobs_before": 4294,
+  "discovery_jobs_after": 4294,
+  "directory_db_unchanged": true,
+  "candidate_queue_after": 24,
+  "after_consistent_sqlite_sha256": "cfa0d0f5d970032d491859407631b9e5d68d96616db0e5f6d18aa5e5708d92a5",
+  "public_files_sha256": {
+    "data/public-regions/guides.json": "258403319387e510875ea78d1a38d7ddb82680db95d2fb2b66836a3574806cea",
+    "data/public-regions/directory.json": "913daa7dd7bcbec570945fd7cc8ed08ae55b15c50665e5f8f4d967b62fc85ba8",
+    "data/public-regions/manifest.json": "20ee4cbaf500c4f1997601008bb14affc0e8f40c2f6d7cc87b473e8db3151b95",
+    "config/regional_candidates.json": "ef4c423ae8a532b1e03b7d1073a6fd68cea9df7d5f9162c44a8cd2d09d63636f"
+  },
+  "prepared_receipt_sha256": "c08537dd2970e53c4671bcbdcc279bf93e69b73de0ad2c5fec4e19f38fa9ee2a",
+  "rollback_available": true,
+  "rollback_storage": "workspace private runtime, not distributed"
+}
