@@ -1,0 +1,51 @@
+
+> labourlawyer-web@0.0.0 build
+> vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 170 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                 0.78 kB │ gzip:  0.52 kB
+dist/assets/fa-regular-400-BVHPE7da.woff2      18.99 kB
+dist/assets/fa-brands-400-BfBXV7Mm.woff2      101.22 kB
+dist/assets/fa-solid-900-8GirhLYJ.woff2       113.15 kB
+dist/assets/RegionalGuide-FGJcOTLl.css          2.56 kB │ gzip:  0.86 kB
+dist/assets/DigitalLawyer-BvQQJ3R3.css          2.60 kB │ gzip:  0.88 kB
+dist/assets/DeadlineCenter-DTgPvbeT.css         2.80 kB │ gzip:  0.88 kB
+dist/assets/KnowledgeCenter-CGW6gA3V.css        3.52 kB │ gzip:  0.97 kB
+dist/assets/CaseCenter-DkGNpNc1.css             4.18 kB │ gzip:  1.24 kB
+dist/assets/EvidenceCenter-DxBWRSrw.css         4.38 kB │ gzip:  1.14 kB
+dist/assets/DocumentCenter-DX0LitBm.css         4.90 kB │ gzip:  1.41 kB
+dist/assets/RegionalDocument-CoZ4FzFH.css       5.14 kB │ gzip:  1.15 kB
+dist/assets/QA-D4EKOYGq.css                     5.44 kB │ gzip:  1.43 kB
+dist/assets/Dashboard-CBrT0Byh.css              6.16 kB │ gzip:  1.51 kB
+dist/assets/regional-guide-DHfXPNpo.css         6.75 kB │ gzip:  1.74 kB
+dist/assets/RegionalCollection-bzjKdwUq.css     7.05 kB │ gzip:  1.53 kB
+dist/assets/ProvinceGuide-BZ9Hni1G.css          8.25 kB │ gzip:  1.71 kB
+dist/assets/index-6EXtCH_B.css                344.77 kB │ gzip: 64.89 kB
+dist/assets/web-CPQBhXKX.js                     0.40 kB │ gzip:  0.27 kB
+dist/assets/regional-guide-BDLLUSs9.js          1.01 kB │ gzip:  0.70 kB
+dist/assets/useDialogFocus-BWHRmyH8.js          1.50 kB │ gzip:  0.73 kB
+dist/assets/useWorkspace-Diz3cOAS.js            1.91 kB │ gzip:  1.06 kB
+dist/assets/GenerateConfirmation-DyXUU5v1.js    2.46 kB │ gzip:  1.23 kB
+dist/assets/DeadlineCenter-CTc_Woey.js          2.69 kB │ gzip:  1.37 kB
+dist/assets/KnowledgeCenter-B_bLVBGb.js         3.57 kB │ gzip:  1.99 kB
+dist/assets/DigitalLawyer-DKFK_pte.js           3.69 kB │ gzip:  1.97 kB
+dist/assets/EvidenceCenter-CsBP5rbE.js          3.74 kB │ gzip:  1.78 kB
+dist/assets/Dashboard-DzJ1O97-.js               5.26 kB │ gzip:  2.45 kB
+dist/assets/CaseCenter-DXtxyKYz.js              5.88 kB │ gzip:  2.63 kB
+dist/assets/web-D3IJ0rd9.js                     8.71 kB │ gzip:  2.98 kB
+dist/assets/downloadDocument-DhFmaNGY.js       10.36 kB │ gzip:  4.37 kB
+dist/assets/DocumentCenter-_7L3vkwe.js         11.72 kB │ gzip:  5.09 kB
+dist/assets/EL-CjnCk556.js                     13.10 kB │ gzip:  5.35 kB
+dist/assets/RegionalGuide-DtgcnpN2.js          23.92 kB │ gzip:  9.03 kB
+dist/assets/LA-DnlwqZ32.js                     28.33 kB │ gzip:  9.23 kB
+dist/assets/RegionalDocument-C15aOYut.js       51.14 kB │ gzip: 18.09 kB
+dist/assets/index-BCn5QfZZ.js                  51.44 kB │ gzip: 19.49 kB
+dist/assets/RegionalCollection-VImc6hD4.js     54.79 kB │ gzip: 13.06 kB
+dist/assets/QA-NasWg86K.js                     75.50 kB │ gzip: 26.41 kB
+dist/assets/ProvinceGuide-ePWfbKiB.js          98.49 kB │ gzip: 19.73 kB
+dist/assets/index-CfFZRZQD.js                 263.48 kB │ gzip: 89.53 kB
+✓ built in 2.14s

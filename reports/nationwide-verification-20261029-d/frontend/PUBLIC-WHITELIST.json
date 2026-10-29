@@ -1,0 +1,37 @@
+{
+  "scope": "Only exact new ZJD own frontend files and synthetic mounted/contract test evidence; no sessions or applicant data",
+  "files": {
+    "frontend/src/data/zhejiangOwnFields.js": {
+      "sha256": "7ffc9cf275ee180c7bcc3712d5024c909dab31b83315629344a064876b2aa241",
+      "bytes": 9859
+    },
+    "frontend/src/components/ZhejiangOwnFields.vue": {
+      "sha256": "613bdd878305ae72e23568f0f4de1440ef815c4de385f62625324e4d6e973af6",
+      "bytes": 14561
+    },
+    "scripts/test-zhejiang-own-fields.mjs": {
+      "sha256": "1a5e7d6895edca22f65742e15a0aa17a138d8030e161d79b4c81ee5178914a16",
+      "bytes": 15576
+    },
+    "reports/nationwide-verification-20261029-d/frontend/ZHEJIANG-OWN-FIELDS.md": {
+      "sha256": "c734998b6c90215abe5f148c32bc025004be9f5ffca94e775b062650f79a75cb",
+      "bytes": 3983
+    },
+    "reports/nationwide-verification-20261029-d/frontend/zhejiang-fields-RED.txt": {
+      "sha256": "5a901484db5f72c532de71adc503f9626fcd796874815ebefecdd1069e409910",
+      "bytes": 714
+    },
+    "reports/nationwide-verification-20261029-d/frontend/zhejiang-sparse-RED.txt": {
+      "sha256": "35c54255710da00e98a5b9a6661c978f9f61affa15fa992a61c765138deef2d8",
+      "bytes": 722
+    },
+    "reports/nationwide-verification-20261029-d/frontend/zhejiang-fields-GREEN.txt": {
+      "sha256": "10c13282433ed9875ffd81474029b1041c682b6ccfc3b5d762473b828d1c4363",
+      "bytes": 1363
+    },
+    "reports/nationwide-verification-20261029-d/frontend/zhejiang-build.txt": {
+      "sha256": "4cac696183b24a4ef8e9cb779820893ae78d2c4a23a4a5c15f3d1c43e1d2e226",
+      "bytes": 3229
+    }
+  }
+}
