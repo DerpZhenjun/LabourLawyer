@@ -1,0 +1,453 @@
+{
+  "scope": "Own official public captures, safe summaries and blank/instruction originals only; sample original bytes not distributed.",
+  "files": {
+    "DIAGNOSTICS.json": {
+      "sha256": "b1cb71ae63b249fcf4c66644ea23ff2d8d66e565fbd815d37eafdb8af06dcd4c",
+      "bytes": 2175
+    },
+    "PREFLIGHT.json": {
+      "sha256": "9c6fc17b2d9b7166507b8cde0955fde96391f6f39e82b334632a9bee39f27b87",
+      "bytes": 48063
+    },
+    "province-home/page.json": {
+      "sha256": "cf8c9244c6868c3e82165551c210d07bd4846e13600872365bb67afdcf085032",
+      "bytes": 263051
+    },
+    "province-home/page.png": {
+      "sha256": "8778c644b44e3c73ca888591e1d640f5a469fbfbbe101edfa9fb60d80a85e31f",
+      "bytes": 1905223
+    },
+    "province-home/page.txt": {
+      "sha256": "9eeabb3a3fb4206f9f407a2ed1a0a7fb6922bcf8102f211d2a7dbf8819bef8f3",
+      "bytes": 4779
+    },
+    "province-home/provenance.json": {
+      "sha256": "cccd117af7d25722fc354df4f00436a9eedc619db879177beb8cf610d17cd749",
+      "bytes": 520
+    },
+    "province-picker/page.json": {
+      "sha256": "bdc60a8d8bd13765e513ed7a6fb0740aab1db6bb219fc757beb286b480d6f6bd",
+      "bytes": 263266
+    },
+    "province-picker/page.png": {
+      "sha256": "eaaf3587630dc36eceaa00e6c444efb4b0706e428960784290e21d2abd7b940a",
+      "bytes": 1864915
+    },
+    "province-picker/page.txt": {
+      "sha256": "5f6c9916bf77a5c241d594290d3b9e524eb1276a3c7cd37c0be86bba309c5a54",
+      "bytes": 4994
+    },
+    "province-picker/provenance.json": {
+      "sha256": "87fe6f896fabc0e66b6a8e0c856d366e1284e26f7b714f43b5175dd231608fc2",
+      "bytes": 520
+    },
+    "suzhou-home/page.json": {
+      "sha256": "9e4a7f1c5cb26eca1875b316facfb5860e6f2fae00e2d89f6650d4030f1c7ce8",
+      "bytes": 161474
+    },
+    "suzhou-home/page.png": {
+      "sha256": "e3ef42e6ae12e30c0ae50f28b7687ae951794088a737a2d233fda4d287aac823",
+      "bytes": 581662
+    },
+    "suzhou-home/page.txt": {
+      "sha256": "c6e7b4eda9ebddf963170e86f842f3a78c5f273033c72c9870458bd14cfcc07b",
+      "bytes": 1134
+    },
+    "suzhou-home/provenance.json": {
+      "sha256": "d96ccec1aea9c7dcf74b0495ec4a98694ee3bb9181ff38b35c0029832e7134c6",
+      "bytes": 518
+    },
+    "suzhou-picker/page.json": {
+      "sha256": "c5bb82cf9339547cc3f842a75a553f869cf977c96ab432f8e42c4a4a6b21bd5c",
+      "bytes": 161820
+    },
+    "suzhou-picker/page.png": {
+      "sha256": "c8f75d2ffe27bcca12e357944e08d40bc96fab6438c159618b3b8dfe0dddbd34",
+      "bytes": 1416106
+    },
+    "suzhou-picker/page.txt": {
+      "sha256": "9e2f63058a4ad8f29fd3b06f986e18ce2f7623b77990ba77142d38af22c2e79e",
+      "bytes": 1480
+    },
+    "suzhou-picker/provenance.json": {
+      "sha256": "9ea71aa6aeb2d45a30bae7329839d2d08acdd78cd74a6d4f20d0257e681731a0",
+      "bytes": 519
+    },
+    "wujiang/CONTENT-REVIEW.json": {
+      "sha256": "84380187889ae33eb03af98e6e84552f947c2ce20b8e0588f4e2567f64abcf67",
+      "bytes": 5476
+    },
+    "wujiang/DOWNLOADS.json": {
+      "sha256": "2b86bd7ce119e044e2720cb04ca07a94ea969f15ce512b399af0e68abcc88186",
+      "bytes": 14600
+    },
+    "wujiang/flow-image/page.json": {
+      "sha256": "d1980c83874cca875f7b866fcc46a5309a535378628f61122f087498847120e6",
+      "bytes": 617
+    },
+    "wujiang/flow-image/page.png": {
+      "sha256": "bbf8b79aab9c87178f6d601b92b098f1b0462fc6c4de559595b317e816cf9cf3",
+      "bytes": 70539
+    },
+    "wujiang/flow-image/page.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "wujiang/flow-image/provenance.json": {
+      "sha256": "6840da11df4864d8555661ca29c0dccd5210a0f3aae13f5085e66790b3fa9d02",
+      "bytes": 648
+    },
+    "wujiang/formal-controls/page.json": {
+      "sha256": "8c16b50f6a109459181d8aa288bbf15ff92cdbff0ab22fac0eda1e4f85a6670a",
+      "bytes": 175481
+    },
+    "wujiang/formal-controls/page.png": {
+      "sha256": "39da5b308d6956b446a47b493b8020a31d59d890663c95275e3ff1bb82adf133",
+      "bytes": 647861
+    },
+    "wujiang/formal-controls/page.txt": {
+      "sha256": "fa1db9339f7cac06b7a5bd5570dba449e9bbaf7fd5d5aa874b2d7335a357aefb",
+      "bytes": 3982
+    },
+    "wujiang/formal-controls/provenance.json": {
+      "sha256": "5ee167fcd13d19221a00ff3ba6fd26f4ecbbc2d6dfeb130a31821e25dccb498a",
+      "bytes": 677
+    },
+    "wujiang/guide-area-dialog/page.json": {
+      "sha256": "9641d418d100ec139a9735beafa16c5bc9264ce0152890142a92164dc44d8071",
+      "bytes": 163221
+    },
+    "wujiang/guide-area-dialog/page.png": {
+      "sha256": "50e9adcd98808013437cea8d1e94aaf6ffa53469f00534c6c90597f39450d0ca",
+      "bytes": 198139
+    },
+    "wujiang/guide-area-dialog/page.txt": {
+      "sha256": "99577bed7e4ee0409f509705c6053444d7e013feb8a42009c41749063059abac",
+      "bytes": 2026
+    },
+    "wujiang/guide-area-dialog/provenance.json": {
+      "sha256": "397871ae9bac91ba967c75bee569795d8cbaab86aabaf0ad9e018bcaa150903b",
+      "bytes": 765
+    },
+    "wujiang/guide.json": {
+      "sha256": "9c76ef7b6441e250eccc62167c49dc70438f39466034ad1c792557fac9a087db",
+      "bytes": 37516
+    },
+    "wujiang/home/page.json": {
+      "sha256": "c2cc9f3707113f4a9cfcc34d7828a672a36ad0819cbba67d1d58a3175c3fb082",
+      "bytes": 158235
+    },
+    "wujiang/home/page.png": {
+      "sha256": "bc6b7e6b22706a71b0986ed438d39a815dd23479af5898a4a50a4541faba580a",
+      "bytes": 144544
+    },
+    "wujiang/home/page.txt": {
+      "sha256": "d95aa435dd6ec9633649ef9d5131e00bc16bb08e7a525f8268b4b1ed7295bdae",
+      "bytes": 1061
+    },
+    "wujiang/home/provenance.json": {
+      "sha256": "72b60e857f5cf528f603028d9c2977e5d4aa820b7982cf2a882c5fb0b40ee542",
+      "bytes": 520
+    },
+    "wujiang/material-1-detail/page.json": {
+      "sha256": "b278f9e18bd1088ae9e2f773168323031544b1e0cd925da2caba0bb1957c7f4c",
+      "bytes": 175545
+    },
+    "wujiang/material-1-detail/page.png": {
+      "sha256": "4c78ece4cc5a555e5d443581a918d5852c531d0f705203c7cbfb447bb2e0cecd",
+      "bytes": 686798
+    },
+    "wujiang/material-1-detail/page.txt": {
+      "sha256": "b8eef93eece1cb67b1e77267423d05e4a508a89f442a17b24e62a9d38bd5c40a",
+      "bytes": 4403
+    },
+    "wujiang/material-1-detail/provenance.json": {
+      "sha256": "967381601c0c7bea4f4344d1c3f6c8afe791a0764979a49fbe37186ce9129c34",
+      "bytes": 677
+    },
+    "wujiang/material-2-detail/page.json": {
+      "sha256": "da3227fb2bb361020eb88d412e27f473def31506367991e7c528b53334b94739",
+      "bytes": 175563
+    },
+    "wujiang/material-2-detail/page.png": {
+      "sha256": "c311c47fe36e1bc216b255495939a9dda5fc37dd50f853d4130a50742985bab5",
+      "bytes": 687066
+    },
+    "wujiang/material-2-detail/page.txt": {
+      "sha256": "a1778e7da9a5ce6471f6ed17531eed12b419a53cd2af10f8bffd4243c308324b",
+      "bytes": 4412
+    },
+    "wujiang/material-2-detail/provenance.json": {
+      "sha256": "1e73b460d3fcaa51441b0886597b6e3f9a536bd909ac392012a98354ed4fd147",
+      "bytes": 677
+    },
+    "wujiang/material-3-detail/page.json": {
+      "sha256": "8928f9258491a57ed9498d03eaa7d298ac20a5dbede06ac6eaf274acbd7b2317",
+      "bytes": 175545
+    },
+    "wujiang/material-3-detail/page.png": {
+      "sha256": "3f6568785a317791fcc259d71a80f1344358700a2ac9f61a6a31fd9039addf4f",
+      "bytes": 686299
+    },
+    "wujiang/material-3-detail/page.txt": {
+      "sha256": "2d3994a8dd5b1e2b7a799c1e576499efe1a05af980d23a2914e68bbf936273c8",
+      "bytes": 4403
+    },
+    "wujiang/material-3-detail/provenance.json": {
+      "sha256": "6f73ceec3e241e3274a5ecd4930bcdbefa834c47fcbfb9014178cc459404b0ce",
+      "bytes": 677
+    },
+    "wujiang/material-4-detail/page.json": {
+      "sha256": "2308d5c911af2112341d3819171cadaf3f0c0b0e80322d40dd946e9e93706170",
+      "bytes": 175519
+    },
+    "wujiang/material-4-detail/page.png": {
+      "sha256": "90d088d891be075676b5ac61eca6a0ca17070755e25c5b0fc1cd2764a66e593d",
+      "bytes": 685766
+    },
+    "wujiang/material-4-detail/page.txt": {
+      "sha256": "65f5b23f6ece7d611876e7873ed634508b9c6b9e5849fcd871a5415efed804a6",
+      "bytes": 4389
+    },
+    "wujiang/material-4-detail/provenance.json": {
+      "sha256": "2c2d83e8007c95ac39f3396023abbbad4b342fd1256c39fa0bc0790f5ffd097a",
+      "bytes": 677
+    },
+    "wujiang/online-boundary.json": {
+      "sha256": "e5a3c0c1d38305eee61186474d0afcb750e3830d43212985acd011678e9a81f9",
+      "bytes": 635
+    },
+    "wujiang/originals/blank/23baf5d4-a613-4e85-9893-95e556164af1/劳动人事争议仲裁申请书.docx": {
+      "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "bytes": 17701
+    },
+    "wujiang/originals/blank/aabeed4d-1e10-49e5-a429-131b92be067a/身份证复印件.docx": {
+      "sha256": "f36541d8f1c49a0229d1510ae9f5cc5eb72ff294a17aec69c82b06e7ec571714",
+      "bytes": 13374
+    },
+    "wujiang/originals/blank/c4ad9b2f-6cc2-4cd4-a40c-0f11685191a4/证据复印件.docx": {
+      "sha256": "8dae42265086696071d6173f162d47c9fdd9bdf4782cf1c70d28779b5894277f",
+      "bytes": 13376
+    },
+    "wujiang/originals/blank/d51313d9-c124-4d31-96de-5e7fde669684/证据清单.docx": {
+      "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "bytes": 15273
+    },
+    "wujiang/originals/instruction/61416f30-46e9-4ee4-a842-a3b82dbd0533/仲裁申请.png": {
+      "sha256": "dc407a951d748964846c061b0331167db5c0178a8a7515f6ab933494c74aa8ee",
+      "bytes": 139623
+    },
+    "wujiang/search/page.json": {
+      "sha256": "76e448e6806ed314cb26478d10306e9c4a82e399ef87b79d170c2dc35d7e7f25",
+      "bytes": 162566
+    },
+    "wujiang/search/page.png": {
+      "sha256": "367dd2a04865407ace0d1121429414b74ac0b0709adc4fd0353d21d35afc40cf",
+      "bytes": 211127
+    },
+    "wujiang/search/page.txt": {
+      "sha256": "15f4835255a0ccb7e87902a42577bfbaa75abb785a45e9864b995f90fb883d6a",
+      "bytes": 1749
+    },
+    "wujiang/search/provenance.json": {
+      "sha256": "cb7a3dd7914adc5547cd03a4d05ce499772d503fc5f6267de391988c287881f8",
+      "bytes": 765
+    },
+    "xiangcheng/CONTENT-REVIEW.json": {
+      "sha256": "ee719ac8ac1e85eb0ed2a4c2d116bc3ed774ba894d6e51de521bdc121df9f28c",
+      "bytes": 5503
+    },
+    "xiangcheng/DOWNLOADS.json": {
+      "sha256": "d112a794a33ff61b3795f8f194229d958f4ec0a93bcde1b067e23b517f0e1e9f",
+      "bytes": 14654
+    },
+    "xiangcheng/flow-image/page.json": {
+      "sha256": "05c72e6b5f9ea358b036285719a20d27f445d4cc5af5a87841748f663dc2ef77",
+      "bytes": 617
+    },
+    "xiangcheng/flow-image/page.png": {
+      "sha256": "bbf8b79aab9c87178f6d601b92b098f1b0462fc6c4de559595b317e816cf9cf3",
+      "bytes": 70539
+    },
+    "xiangcheng/flow-image/page.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "xiangcheng/flow-image/provenance.json": {
+      "sha256": "61b1451935d95f6eac1205e2981b315d589a48b1cfd458ac948e2c63dd7dfee7",
+      "bytes": 648
+    },
+    "xiangcheng/formal-controls/page.json": {
+      "sha256": "f3ef0d1c98c1c737b8e707135533611ca1689eb1ff01e2a198a56d0ae204ea27",
+      "bytes": 174300
+    },
+    "xiangcheng/formal-controls/page.png": {
+      "sha256": "bd662ca9101c1920733ee18fd9ac442aff5e97a8eb02f98259cbdb54259bef09",
+      "bytes": 502348
+    },
+    "xiangcheng/formal-controls/page.txt": {
+      "sha256": "44ba828921303168d21b9db5eaa294257336bbf541ea391493998679e61d4c57",
+      "bytes": 3902
+    },
+    "xiangcheng/formal-controls/provenance.json": {
+      "sha256": "ad6d48f3989b151ce00971f1c1bc5de32311f07b495516be685e1fcc0adcdfbf",
+      "bytes": 677
+    },
+    "xiangcheng/guide-area-dialog/page.json": {
+      "sha256": "367a3618e8b0e3bda8d28e8731058f64284ab179957584afbb3db83304fd17d9",
+      "bytes": 163400
+    },
+    "xiangcheng/guide-area-dialog/page.png": {
+      "sha256": "5072adcca2d705a4c28791e32518dcce4a0d991662b66da55c21c1da6ab99923",
+      "bytes": 184394
+    },
+    "xiangcheng/guide-area-dialog/page.txt": {
+      "sha256": "914eb99a3e27017b594c98e5297b5698fedabcf7f04ad073bc5c8c6d8fbef55b",
+      "bytes": 2205
+    },
+    "xiangcheng/guide-area-dialog/provenance.json": {
+      "sha256": "e8a7e454b5267d1cc7d8aefdd52f70a1303e360dcd29c3d878e8e1f73bacc9bb",
+      "bytes": 765
+    },
+    "xiangcheng/guide.json": {
+      "sha256": "1ffff398538093a61ba9e2c87d8c8a803e9b63a121a619d30f5724136c92fa26",
+      "bytes": 37474
+    },
+    "xiangcheng/home/page.json": {
+      "sha256": "a456a3f5b6b2d718b71a02edf0fd0cad0c9fdc23b12d0b342023175f724d9606",
+      "bytes": 158182
+    },
+    "xiangcheng/home/page.png": {
+      "sha256": "c1bd2ea2dbe2df75e17f12b358026eb1bcf502a20bf069294e644c3d23de7c6e",
+      "bytes": 111955
+    },
+    "xiangcheng/home/page.txt": {
+      "sha256": "7b262ec0da1682e878ce00aa76ec4c56aa8f78607ab1dbf127c3384ab0e90adf",
+      "bytes": 1041
+    },
+    "xiangcheng/home/provenance.json": {
+      "sha256": "183a4d44b5e4d14233b9037dd80a8f2ef81cf39fc8187def017b80a448228e21",
+      "bytes": 520
+    },
+    "xiangcheng/material-1-detail/page.json": {
+      "sha256": "e2970d03020878dfd3e01f45cdda0d2f3cec13f750a4807c345f06be43893701",
+      "bytes": 175381
+    },
+    "xiangcheng/material-1-detail/page.png": {
+      "sha256": "c8174f8440aa2fdcc8d4bd9fc15e102b2a811149f7acc2a45cb3cfc68a5d49a2",
+      "bytes": 684330
+    },
+    "xiangcheng/material-1-detail/page.txt": {
+      "sha256": "c0eb072d3f23272a7aca1a4cc4a36b1c045553af3db1baea78a8c57150f02c08",
+      "bytes": 4322
+    },
+    "xiangcheng/material-1-detail/provenance.json": {
+      "sha256": "13b67347563187e174100f39249669a5e6ed7407f8d44ef3c90a1b3425499921",
+      "bytes": 677
+    },
+    "xiangcheng/material-2-detail/page.json": {
+      "sha256": "1e76648ef43c4d9bd405a307fd5a5912e629db5e57fe2d8d7ecb3f516a12753b",
+      "bytes": 175399
+    },
+    "xiangcheng/material-2-detail/page.png": {
+      "sha256": "8101abe79c83697e0a30c4ae2c1c1eb6e7749e27acbdd6d587c82661ccfca614",
+      "bytes": 693424
+    },
+    "xiangcheng/material-2-detail/page.txt": {
+      "sha256": "7cbe11c6d2fa1c38cb3a202eb7cdc4aa15a753041282a948ea1c95ef2c77448f",
+      "bytes": 4331
+    },
+    "xiangcheng/material-2-detail/provenance.json": {
+      "sha256": "8496f95126656211329edc25e0e29e83337e11afd07178471222248876e99b31",
+      "bytes": 677
+    },
+    "xiangcheng/material-3-detail/page.json": {
+      "sha256": "2fb984e28823290dae9ad989e62ce76aa1bb10fc133491b216a3680586e9e8df",
+      "bytes": 175381
+    },
+    "xiangcheng/material-3-detail/page.png": {
+      "sha256": "6ff12255b40a9a971d8c30727c223a45113a7e2e45fa8eaf05ad21e32572b850",
+      "bytes": 698115
+    },
+    "xiangcheng/material-3-detail/page.txt": {
+      "sha256": "9ad1aa27edde8e2acd1292b5db1fe7c6f08f29eeea708b2c1c4145f10892208a",
+      "bytes": 4322
+    },
+    "xiangcheng/material-3-detail/provenance.json": {
+      "sha256": "fb1b39337dee0729ec29965bdf5fde478ee7b6adc26dbe93fc3d60ca55c0e286",
+      "bytes": 677
+    },
+    "xiangcheng/material-4-detail/page.json": {
+      "sha256": "fdd31694b09e546711616b9d32bc7ae39aceaf0b631e60b6ce8b86a76ec592c6",
+      "bytes": 175355
+    },
+    "xiangcheng/material-4-detail/page.png": {
+      "sha256": "efdf201f2bfeee72db400333ca1d5f5f75dab69d04dea3f71b38fa47a49889d5",
+      "bytes": 692329
+    },
+    "xiangcheng/material-4-detail/page.txt": {
+      "sha256": "bd3f00f96c0b1269cec1b0a040967cc0a644266d75a326d4c2cfc0cf7a8a442c",
+      "bytes": 4308
+    },
+    "xiangcheng/material-4-detail/provenance.json": {
+      "sha256": "3964e452ed8efd5ed9440cdffbeaae675683ff3efa10599a08974f02804c3f06",
+      "bytes": 677
+    },
+    "xiangcheng/online-boundary.json": {
+      "sha256": "eb1611adda321a174e933e7f60b69a8bd955b9cf225af0857db58a065d4e2bd3",
+      "bytes": 635
+    },
+    "xiangcheng/originals/blank/02a0e257-ba98-41d8-9d93-1f5c70d038f7/劳动人事争议仲裁申请书.docx": {
+      "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "bytes": 17701
+    },
+    "xiangcheng/originals/blank/873e8c9a-fb43-466a-9a57-025a4c2629a9/证据清单.docx": {
+      "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "bytes": 15273
+    },
+    "xiangcheng/originals/blank/a2f08701-0332-40d5-8fde-a69fb952da65/身份证复印件.docx": {
+      "sha256": "f36541d8f1c49a0229d1510ae9f5cc5eb72ff294a17aec69c82b06e7ec571714",
+      "bytes": 13374
+    },
+    "xiangcheng/originals/blank/dfd6fec2-f68c-4df0-907f-51e6a9240064/证据复印件.docx": {
+      "sha256": "8dae42265086696071d6173f162d47c9fdd9bdf4782cf1c70d28779b5894277f",
+      "bytes": 13376
+    },
+    "xiangcheng/originals/instruction/0822c0e0-2099-45e5-a06b-9e612d5ab52e/仲裁申请.png": {
+      "sha256": "dc407a951d748964846c061b0331167db5c0178a8a7515f6ab933494c74aa8ee",
+      "bytes": 139623
+    },
+    "xiangcheng/region-picker/page.json": {
+      "sha256": "814c2411f252a685e02162586a8d79759007bf6e911f079be53157641752a995",
+      "bytes": 158528
+    },
+    "xiangcheng/region-picker/page.png": {
+      "sha256": "8ae509397d0f218b61449d70db4bbd292e079836b4aa631e396fd1b3e6de54a1",
+      "bytes": 2347866
+    },
+    "xiangcheng/region-picker/page.txt": {
+      "sha256": "f123cf1d8c4827ca57d26454bba36701f4f40c47b82b1a17c9e4be25722bac1e",
+      "bytes": 1387
+    },
+    "xiangcheng/region-picker/provenance.json": {
+      "sha256": "84620563450b9063b8b91bd48e38b46178e085e66630260f8b834eabba000ba7",
+      "bytes": 521
+    },
+    "xiangcheng/search/page.json": {
+      "sha256": "f7b4774cc739ceb91c2a81bd6765e6e16c03e9613c02c2b20d29f9ed4b69e9b4",
+      "bytes": 162702
+    },
+    "xiangcheng/search/page.png": {
+      "sha256": "469049c3704aec614775ad96c4aba7667609d488971bb187586acefa9b3178de",
+      "bytes": 163595
+    },
+    "xiangcheng/search/page.txt": {
+      "sha256": "02875c12b90e19f359854f2967ed8cb131593ea54ca9cd5602a9b7eaf3ac2e62",
+      "bytes": 1885
+    },
+    "xiangcheng/search/provenance.json": {
+      "sha256": "ddfbb569ba27d575466fd11cf70a433cec1b31be8fea1f2015d1ab52495c2691",
+      "bytes": 765
+    }
+  }
+}

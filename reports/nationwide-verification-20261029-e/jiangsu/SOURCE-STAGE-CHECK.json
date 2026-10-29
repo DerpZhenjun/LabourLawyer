@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "own_profiles": 2,
+  "exact_public_files": 118,
+  "source_files": 112,
+  "source_manifest_sha256": "7f92920807dc4ec74f26ace3be76adf67303cbd4877994777c1a8ca0b1e7bb5e",
+  "clean_root": "PASS",
+  "sample_bytes_present_in_clean_root": false,
+  "source_only": true,
+  "network_word_model_db_service_calls": 0,
+  "read_only_verification": true,
+  "public_text_scan": {
+    "text_files": 85,
+    "machine_path_or_username_hits": 0,
+    "assistant_product_attribution_hits": 0,
+    "numeric_process_id_hits": 0,
+    "authentication_query_hits": 0,
+    "note": "Official public flow links at /jszwfw/annex/findlct.do contain sign and gotoUrl routing parameters. These were independently observed public flow controls, not SSO/session links; their original source values are retained. Authentication boundary queries are not distributed."
+  },
+  "visual_source_review": {
+    "own_guide_full_page_images_viewed": 2,
+    "own_downloaded_flow_images_viewed": 2,
+    "docx_page_rendering": "NOT_RUN"
+  }
+}

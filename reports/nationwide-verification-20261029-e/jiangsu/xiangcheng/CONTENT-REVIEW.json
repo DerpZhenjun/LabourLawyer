@@ -1,0 +1,129 @@
+{
+  "checked_at": "2026-10-29T12:20:20.751596+00:00",
+  "files": [
+    {
+      "file": "xiangcheng/originals/blank/dfd6fec2-f68c-4df0-907f-51e6a9240064/证据复印件.docx",
+      "sha256": "8dae42265086696071d6173f162d47c9fdd9bdf4782cf1c70d28779b5894277f",
+      "official_kind": "blank",
+      "render_status": "NOT_RUN",
+      "public_release_status": "included_blank_or_instruction",
+      "generation_allowed": false,
+      "read_status": "docx_text_and_structure_only",
+      "table_shapes": [],
+      "numeric_personal_id_like_count": 0,
+      "phone_like_count": 0,
+      "content_role": "placeholder_heading_only"
+    },
+    {
+      "file": "xiangcheng/originals/sample/1f6a47ca-9fd2-43c3-8684-fb727d9a9313/证据复印件.docx",
+      "sha256": "8dae42265086696071d6173f162d47c9fdd9bdf4782cf1c70d28779b5894277f",
+      "official_kind": "sample",
+      "render_status": "NOT_RUN",
+      "public_release_status": "not_distributed_reference_sample",
+      "generation_allowed": false,
+      "read_status": "docx_text_and_structure_only",
+      "table_shapes": [],
+      "numeric_personal_id_like_count": 0,
+      "phone_like_count": 0,
+      "content_role": "official_sample_never_default_case_facts"
+    },
+    {
+      "file": "xiangcheng/originals/blank/873e8c9a-fb43-466a-9a57-025a4c2629a9/证据清单.docx",
+      "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "official_kind": "blank",
+      "render_status": "NOT_RUN",
+      "public_release_status": "included_blank_or_instruction",
+      "generation_allowed": false,
+      "read_status": "docx_text_and_structure_only",
+      "table_shapes": [
+        {
+          "rows": 13,
+          "columns": 6
+        }
+      ],
+      "numeric_personal_id_like_count": 0,
+      "phone_like_count": 0,
+      "content_role": "blank_evidence_list"
+    },
+    {
+      "file": "xiangcheng/originals/sample/8a18aaa1-fa48-4276-84e7-f0851a863d6a/证据清单1.docx",
+      "sha256": "1488a991d3b43b1d6ec2d0fabefb6db876fc429602ec79b0588e4f201a29fbfe",
+      "official_kind": "sample",
+      "render_status": "NOT_RUN",
+      "public_release_status": "not_distributed_reference_sample",
+      "generation_allowed": false,
+      "read_status": "docx_text_and_structure_only",
+      "table_shapes": [
+        {
+          "rows": 13,
+          "columns": 6
+        }
+      ],
+      "numeric_personal_id_like_count": 0,
+      "phone_like_count": 0,
+      "content_role": "official_sample_never_default_case_facts"
+    },
+    {
+      "file": "xiangcheng/originals/blank/a2f08701-0332-40d5-8fde-a69fb952da65/身份证复印件.docx",
+      "sha256": "f36541d8f1c49a0229d1510ae9f5cc5eb72ff294a17aec69c82b06e7ec571714",
+      "official_kind": "blank",
+      "render_status": "NOT_RUN",
+      "public_release_status": "included_blank_or_instruction",
+      "generation_allowed": false,
+      "read_status": "docx_text_and_structure_only",
+      "table_shapes": [],
+      "numeric_personal_id_like_count": 0,
+      "phone_like_count": 0,
+      "content_role": "placeholder_heading_only"
+    },
+    {
+      "file": "xiangcheng/originals/sample/6acaeed0-e1ee-453f-a4c6-328250b7847c/身份证复印件.jpg",
+      "sha256": "e43905c0eca499d7a71da98cd3050087717fd62e816f0021fd010210aea8241e",
+      "official_kind": "sample",
+      "render_status": "not_a_docx",
+      "public_release_status": "not_distributed_reference_sample",
+      "generation_allowed": false,
+      "read_status": "official_sample_not_distributed",
+      "content_role": "official_sample"
+    },
+    {
+      "file": "xiangcheng/originals/blank/02a0e257-ba98-41d8-9d93-1f5c70d038f7/劳动人事争议仲裁申请书.docx",
+      "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "official_kind": "blank",
+      "render_status": "NOT_RUN",
+      "public_release_status": "included_blank_or_instruction",
+      "generation_allowed": false,
+      "read_status": "docx_text_and_structure_only",
+      "table_shapes": [],
+      "numeric_personal_id_like_count": 0,
+      "phone_like_count": 0,
+      "content_role": "blank_worker_application"
+    },
+    {
+      "file": "xiangcheng/originals/sample/3bfa13e8-9c5d-4673-8570-028433099fde/劳动人事争议仲裁申请1.docx",
+      "sha256": "2069cbe9ad9a0410670ab74b9fee388ea209fe100b45104a9f7340e52f254584",
+      "official_kind": "sample",
+      "render_status": "NOT_RUN",
+      "public_release_status": "not_distributed_reference_sample",
+      "generation_allowed": false,
+      "read_status": "docx_text_and_structure_only",
+      "table_shapes": [],
+      "numeric_personal_id_like_count": 0,
+      "phone_like_count": 0,
+      "content_role": "official_sample_never_default_case_facts"
+    },
+    {
+      "file": "xiangcheng/originals/instruction/0822c0e0-2099-45e5-a06b-9e612d5ab52e/仲裁申请.png",
+      "sha256": "dc407a951d748964846c061b0331167db5c0178a8a7515f6ab933494c74aa8ee",
+      "official_kind": "instruction",
+      "render_status": "not_a_docx",
+      "public_release_status": "included_blank_or_instruction",
+      "generation_allowed": false,
+      "read_status": "own_flow_image_viewed",
+      "content_role": "workflow_instruction"
+    }
+  ],
+  "originals_unchanged": true,
+  "docx_rendered": false,
+  "note": "仅文本/结构初查与流程图阅读；不声明DOCX逐页版式已验收，不以同SHA推导地区授权。"
+}

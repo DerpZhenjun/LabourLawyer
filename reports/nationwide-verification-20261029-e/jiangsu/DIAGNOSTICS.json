@@ -1,0 +1,43 @@
+{
+  "recorded_at": "2026-10-29T12:20:20.751596+00:00",
+  "browser": "Agent Browser",
+  "session": "js-oct29e",
+  "closed": true,
+  "private_browser_journal_initialized_before_navigation": true,
+  "observations": [
+    {
+      "action": "PowerShell reference quoting",
+      "outcome": "an unquoted element reference was interpreted as shell splatting",
+      "resolution": "quoted actual observed references; no bypass"
+    },
+    {
+      "action": "material detail selection",
+      "outcome": "one local assertion selected a hidden earlier detail table; a nonexistent selector and a shell-encoded text selector also failed",
+      "resolution": "retained actual own visible detail captures, selected tables by exact material name and used observed native references/selectors; no DOM modification"
+    },
+    {
+      "action": "Wujiang guide wait",
+      "outcome": "wait used the wrong label 申请材料 and timed out",
+      "resolution": "own guide rendered 办理材料; complete capture and tables verified"
+    },
+    {
+      "action": "Wujiang online stale reference",
+      "outcome": "first reference after tab switch was unknown, so no entry click occurred and the diagnostic boundary was unverified",
+      "resolution": "kept initial diagnostic privately; refreshed snapshot, actual entry click then reached login/password/captcha; accepted boundary records the successful native click"
+    },
+    {
+      "action": "public attachment acquisition",
+      "outcome": "18 own observed public control/flow HTTPS URLs returned HTTP200 using normal unauthenticated GET; no SSL/port/auth workaround"
+    },
+    {
+      "action": "online native entry",
+      "outcome": "both localities stopped at actual user login with captcha; no input, authentication or submission"
+    },
+    {
+      "action": "browser doctor wrapper",
+      "outcome": "doctor response did not have the normal data envelope; wrapper raised KeyError",
+      "resolution": "private journal retains original response; no doctor success/failure total inferred; own session closed normally"
+    }
+  ],
+  "public_raw_HAR_cookies_SSO_queries_saved": false
+}

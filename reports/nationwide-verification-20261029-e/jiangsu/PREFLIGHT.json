@@ -1,0 +1,959 @@
+{
+  "checked_at": "2026-10-29T12:11:42.604454+00:00",
+  "requested": [
+    {
+      "district": "相城区",
+      "region_code": "320507"
+    },
+    {
+      "district": "吴江区",
+      "region_code": "320509"
+    }
+  ],
+  "exact_own_matches": [],
+  "existing_own_profile_found": false,
+  "checked_files": [
+    {
+      "file": "config/regional_candidates.json",
+      "sha256": "ded94934f3fdc385fd892c1d7d2fb6142f6f2f743adfd3e50b83221b8ee7314b"
+    },
+    {
+      "file": "frontend/src/data/regionalVerification.json",
+      "sha256": "a5078fbd64ef2227d26e129bd522f96427da6db4dde8eb598ba336f57ba72d15"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510106000000/guide.json",
+      "sha256": "f45ad73235f876e4abdf098864a004869ed1a8c1f56f5367e42563cb821b47f1"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510108000000/guide.json",
+      "sha256": "bff3cd8c846fcca1c2a396f2e464a68ec6ccbb1c8e2d2476468c239e861077a0"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510109000000/guide.json",
+      "sha256": "e1d3c89ada52dbbfa48c9155c9f7c1ca431a1a47cabf20636713ae6de2f22839"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510112000000/guide.json",
+      "sha256": "c7fc0f88b63e3bad6a26957457cd417123c62d8014566a19c3bbc7a4a97dffa8"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510113000000/guide.json",
+      "sha256": "deecad95c473102e51a356a77189690b0fa6902a729047d556a7803e36dc591c"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510114000000/guide.json",
+      "sha256": "4c2dda4a9e40ef866bda912c5ac940adede45d1ecda8f6a4dfc0ec86da1230cf"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510115000000/guide.json",
+      "sha256": "da4f8cdeed47108adc77554ed02fb6269f1b2755ba225706a785d18c39928217"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510116000000/guide.json",
+      "sha256": "f2e529083642cd1776c5351237dbf900fc36ebc0726a87cbb23f01eb2eef50ff"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510121000000/guide.json",
+      "sha256": "443a37e95ae3a7f3b46163d46b874f3781751b826f80c734cc809e81e024ff7a"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510124000000/guide.json",
+      "sha256": "231e1ff42d482c6a895b917c2a15c92f1ae6766b67b24d933e99e3d7b0c3c65b"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510129000000/guide.json",
+      "sha256": "9e0534f3a628729a3fb5d7e9d662bad616f452cebf394de5eb7b9ec7b77ddd5c"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510131000000/guide.json",
+      "sha256": "eedb74f12f6410ed3015dc1b7d14adf65c528d62dc77841d3b4c533229479004"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510132000000/guide.json",
+      "sha256": "452d20b7db9c83148acebc450d992a0e003cfd4a22527158cfcffec4eb8f3736"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510181000000/guide.json",
+      "sha256": "d5deec6bf0ccd3fcb9c2a59adda37388b941a77ebcc58e17d9c2d755763cdbf0"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510182000000/guide.json",
+      "sha256": "d773667b605da4d6a8b4050a4cf95b11ee44f07581610bf84af936e783803e15"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510183000000/guide.json",
+      "sha256": "6d25c65cd108599696804c3dd174642b21d5553d7a86b5feaf8e6ff60c3a1527"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510184000000/guide.json",
+      "sha256": "1184a4d703618fc7fd2aeb4350ffd238d4f1222579ac8d76cc95fdd585634448"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510185000000/guide.json",
+      "sha256": "6c24682bef1a89c57e00215f6bb8d2fcdc216e66bec72af45a5b8a56646cec0b"
+    },
+    {
+      "file": "reports/chengdu-district-expansion-20261023/captures/510186000000/guide.json",
+      "sha256": "3aefae1da7997a63c51aa4adc557352d8b393eb41ba4f2cd9aeba3110f01474f"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/batches/v4-guides-0205/guides/510626000000/guide.json",
+      "sha256": "31a63ec173a30acac4ce77c46dafd3f1ae1b978901cb6fb8f874135f41ca4541"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/batches/v4-guides-0205/guides/510681000000/guide.json",
+      "sha256": "ce1a07871bde6600c581fae7649786e3ba30c34bba0725a20fb0dbe28671afe2"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/batches/v4-guides-0205/guides/510682000000/guide.json",
+      "sha256": "02d86baa400b9aad2a575e1da58da4143e1739087efe8681327bed968cf3bdcd"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/batches/v4-guides-0205/guides/510683000000/guide.json",
+      "sha256": "b7a528bfaa9f956f8cad2d19bcb6c90c73e14608c7c5ac1b0596d5e1b4bdbdb8"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/batches/v4-guides-0205/guides/510704000000/guide.json",
+      "sha256": "ee98a3e1f8d06b2081e662ce91e487f6edc46ebaa33f1aa310ea5b02726c6c7a"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/batches/v4-guides-0205/guides/510705000000/guide.json",
+      "sha256": "517ae552c2e3a15226bd2823ba403cda860ed4332d18dab04ee08de04b53806c"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/batches/v4-guides-0205/guides/510723000000/guide.json",
+      "sha256": "3a6f374648c07d8f00f0adcaf317ce93c92e48226e5157dd9cc9a30f3493b32a"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/batches/v4-guides-0205/guides/510726000000/guide.json",
+      "sha256": "63bd25179895534bb526d0a3f2564b240ac4e184accc7e4a57b290ed2b3ab3cb"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/batches/v4-guides-0205/guides/510781000000/guide.json",
+      "sha256": "17cd177e8a807f4b8e854b16692aa60a79074bf2bdb6afd48ff5c3a48e19ca86"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/batches/v4-guides-0205/guides/510921000000/guide.json",
+      "sha256": "71647c0ae600b031f805a5bacf21cb373a1243453ecf44aa4e7a70fef12fc6f4"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/batches/v4-guides-0205/guides/511181000000/guide.json",
+      "sha256": "5020c1e56cd43c00fdc8478940000ceb16b5a55b325019fd697f32819b3424e5"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/batches/v4-guides-0205/guides/511723000000/guide.json",
+      "sha256": "5cfb77fc85e5a0dec2fa637c802f0b9a0cde2b14a09a6eabe69ade82bab72b81"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/batches/v4-guides-0205/guides/511724000000/guide.json",
+      "sha256": "7294f42f23c2d42a09ee6362536ebd67a15873caa5172d2bbaa3d04f91fc86c9"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/batches/v4-guides-0205/guides/513328000000/guide.json",
+      "sha256": "f0cefba1eae6b9d297467a21f148b0a86f6d15becaf2937a1657f01ae2f71917"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/batches/v4-guides-0205/guides/513333000000/guide.json",
+      "sha256": "0130939a0286323b5abcc7919febb340a8de7032b0057281e13d83da25cd2e72"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/beijing-chaoyang/guide.json",
+      "sha256": "ffb0be3f79eb41dae55706e9a70e95c21f295e218a93e41e131f66360791da15"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/beijing-chaoyang/staging-round23/guide.json",
+      "sha256": "ffb0be3f79eb41dae55706e9a70e95c21f295e218a93e41e131f66360791da15"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/beijing-dongcheng/guide.json",
+      "sha256": "c63eb39e87e7fc31d2ec976055679c426eb08008907f71ffa3da9ed5ccb1c775"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/beijing-dongcheng/staging-round28/guide.json",
+      "sha256": "c63eb39e87e7fc31d2ec976055679c426eb08008907f71ffa3da9ed5ccb1c775"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/beijing-tongzhou/guide.json",
+      "sha256": "56700c2afb7ffb7070c39ff4a3e8e87bc725198e0ae2a491000898f419a18295"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/beijing-tongzhou/staging-0710/guide.json",
+      "sha256": "56700c2afb7ffb7070c39ff4a3e8e87bc725198e0ae2a491000898f419a18295"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/guangdong-baiyun/guide.json",
+      "sha256": "894bcea9f9b2abe61051a37ea90307f2b6a2d5eef83e4cb1813972b6f70ba0c5"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/guangdong-futian/guide.json",
+      "sha256": "57481c31681a3d104d42454228eeb882e8ecd78988dd1c20f6e294aac924e22d"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/guangdong-futian/staging-round25/guide.json",
+      "sha256": "57481c31681a3d104d42454228eeb882e8ecd78988dd1c20f6e294aac924e22d"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/guangdong-nansha/guide.json",
+      "sha256": "f682dc5c4b0be176e4106fcfe619f655973ac729acb5ad0997adc1ed568e827b"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/guangdong-nansha/staging-round24/guide.json",
+      "sha256": "f682dc5c4b0be176e4106fcfe619f655973ac729acb5ad0997adc1ed568e827b"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/hunan-furong/guide.json",
+      "sha256": "790c4330f40969dfc4059a1f0041d3e4a21266b3121fc2b9f6b754a01d1ba6b2"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/hunan-furong/staging-round26/guide.json",
+      "sha256": "790c4330f40969dfc4059a1f0041d3e4a21266b3121fc2b9f6b754a01d1ba6b2"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/jiangsu-dafeng/guide.json",
+      "sha256": "f627b2811a86385e7fff0c622217826d1e46073d06feb4332de301889adf407b"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/jiangsu-haizhou/guide.json",
+      "sha256": "6947ef7e9d0838e93ca1beda852003ce593ba1db47187448421f5386777103a7"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/jiangsu-haizhou/staging-adapted-0615/guide.json",
+      "sha256": "6526a301b1192dad61fa428eee1eb0ce2fb2f44d5f85fc6ab981b38049e1460a"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/jiangsu-jianhu/guide.json",
+      "sha256": "a7ea69f93f67b53e987896eb444eabf52533d3e7de8b6e6a2272ca5aa75a8f60"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/jiangsu-xishan/guide.json",
+      "sha256": "1cef13daf82fc3a2a28a6435a409f45660add76251d3b0702fedd5fcdcb678a9"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/jiangxi-rongjiang/guide.json",
+      "sha256": "927ced65535fad3bc91667b584230f2fb8db19c8b4677c7c36f99f790789887c"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/tianjin-eco-city/current-path-dom-0330/guide.json",
+      "sha256": "2ada0ebda07e4ddee6031077034b517e11e2e66b16473405ebeee4e56615e6d6"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/cross-province/tianjin-eco-city/guide.json",
+      "sha256": "893026b260538b79b88f73dfc02653d1ddae18e699ae027a3b6cf23c92c3df40"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510302000000/guide.json",
+      "sha256": "ccbf27e92fb413406742bbfc2af31eb3e6c6321a899fd38afff1739fb64f7c80"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510303000000/guide.json",
+      "sha256": "83ca2ef13e46128649085ee9e346864d30058add43cb1295753ae9d391b91ac4"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510304000000/guide.json",
+      "sha256": "9b609320d18642935883ee597dc73170917bdb3d88ad6aa757cffa586b081b74"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510311000000/guide.json",
+      "sha256": "cb11aeb6dd69ab8ef3df8a1c2235cd13fdb7f54d0a243eebe32fcd4546e2032b"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510321000000/guide.json",
+      "sha256": "9fafb8aef56a117b0092525a9149dcb3daf915722d9bb8d7f5fea14118f1b962"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510322000000/guide.json",
+      "sha256": "830eca24c5866ac00688bdc44c11bc10d7f1964cd55231cdcd91b4d5747397ce"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510402000000/guide.json",
+      "sha256": "6e5ff6395fbc273575c5f657eb47c14d06f986f6f51eba981e252b00f60557c6"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510403000000/guide.json",
+      "sha256": "9ef9b62ae83110f1639e35e90719fce46e0883cb7f946e9f3053231b9aa7dea5"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510411000000/guide.json",
+      "sha256": "65cd08029cbf8d0a7c100fe39e34efbc0b2fb1d7269a2c48b0bc4bff3b5f6c92"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510421000000/guide.json",
+      "sha256": "c4344b457f16366f748f4e8ceb0bcece597c9857cace93696256977074d8c813"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510422000000/guide.json",
+      "sha256": "4446afe2f1983f7f34c1b6965218038038e5e8d949b2016d353c90084bc079a2"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510502000000/guide.json",
+      "sha256": "99aa183262dd6710b11f3c9c1f5ced5fbd024f95813a0504c4c38171311c72d2"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510503000000/guide.json",
+      "sha256": "cbda102071ee599d8d97bd03e133c3c0ab116383be883169dfa931413b163653"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510504000000/guide.json",
+      "sha256": "eb4f675be32d8740a4aeaddd8fd9c69656f76372da267950cb1cee03f69c0342"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510521000000/guide.json",
+      "sha256": "baf343eec38e2ccb5a07a615e5efa9c2adcaee02474eff0181ce93877da3c26b"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510522000000/guide.json",
+      "sha256": "39ace14048c18496d592a66017fc5c72af55a6b4474c78b53d445a7cee385a02"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510524000000/guide.json",
+      "sha256": "c10cb8f096c0c5c4c4a2930c41a2e1a7c2592457ba44a6f7737d7d53c6171b07"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510525000000/guide.json",
+      "sha256": "2acdfa0236a4b6d91814bf495daec523e87ede35eeaac5dbd702bbea672c0577"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510802000000/guide.json",
+      "sha256": "6c5c175fad576cf48535b77a377b45440926f9d0c307c59cf34a9a76fabb8579"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510811000000/guide.json",
+      "sha256": "81fd53555615ab57ec5b372e9746a1dfc4ddd8aea37fcab77f5f12a2cb1aba60"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510812000000/guide.json",
+      "sha256": "fa7ef584142878d6286bdce037b7b971a5234dbe8aeab2a460f4950223ca967b"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510821000000/guide.json",
+      "sha256": "146e5ea6df12c807245111456e39c4defcdfba9748bb1f9376053e6becd9266d"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510822000000/guide.json",
+      "sha256": "dbf397d69fde95e04fff0c6c059c357cf8dcc3f240551d009a1209051dea98e8"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510823000000/guide.json",
+      "sha256": "a6aef1655251707bcfd8163a0a2c039884452740833f403d1f157dec0c03cecd"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510824000000/guide.json",
+      "sha256": "ba973e5a3a93aac2a1f8cc8128a2ae04c187f0701bd002471c47dbe6166c9f92"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510903000000/guide.json",
+      "sha256": "d774c8fd871a880649caf46c9272f8d6e0323f7749ffd3b994ee3669cbafbd7a"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510904000000/guide.json",
+      "sha256": "5ea24ea37a2153514ef69ab265b333a5b87d9e1638a21caaafb9f5c28879a744"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510923000000/guide.json",
+      "sha256": "af687b8eb5a8e693ccc879b3f5533aa754b2532e1f86a3cce7e5b548d5baaabe"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/510981000000/guide.json",
+      "sha256": "41c72dd45b7c11ce5614fee28183a26f523f928ebb20a975e9fff2d9064051dc"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511002000000/guide.json",
+      "sha256": "3d6381c838c2628854cf4c43adcebe2d9198102d1d3bd0a77bbea0afe0b4cffe"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511011000000/guide.json",
+      "sha256": "8f8ab3e1a6d8978c16be0cded265ce6fb4ea9aa804b906e77577f4a2c1bec3b0"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511024000000/guide.json",
+      "sha256": "83c34c95220e710cd2dddbbe7c945e9b3d4d83386fffcd6c087cdfb32337eb1e"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511025000000/guide.json",
+      "sha256": "f50709172d856c17940416667b3922110f5758e56396b1a89238aa9c85dd06ed"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511028000000/guide.json",
+      "sha256": "0e545c1403df03a855c69763851ff1864a7ebab52b19c929ae52ab9920be939f"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511102000000/guide.json",
+      "sha256": "b295cf09a36210811fe9e26ffe378277c3b5295cb5f4e3e7e52f9a619a639cb6"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511111000000/guide.json",
+      "sha256": "6ab2902448b345a65413ecc4ac611d2ecdf53b83fe09144ca131f7ef05dc2810"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511112000000/guide.json",
+      "sha256": "52a6d887a6f472312ff1c647afa1d580340099ab605c11fd3f06ac8e28679cb9"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511113000000/guide.json",
+      "sha256": "01d0dd1dd485648e11cab078402152732fd0b53f889ecf72a9e7d6c2d62253f9"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511123000000/guide.json",
+      "sha256": "4e37940d4a7828486a23708174cda3f79fbc4f089655b535b2934831f4d37ac2"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511124000000/guide.json",
+      "sha256": "bf707e62c3661be9686637cc5f106326a884453577e89b3c760643f4c3c6c20d"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511126000000/guide.json",
+      "sha256": "b9d0eaa6087fcc416cb4d1d1fabc0fe364f7aa67dab03f873516c4b55926c522"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511129000000/guide.json",
+      "sha256": "08eaf4a5f8ed580d19dd690ecb90ab66987c2877ee79776d47daf05a78f6a979"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511132000000/guide.json",
+      "sha256": "db220e8bb3d46bcdf4c9a06d367a9920a738bc538f766a5e86c3990394d7ea19"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511133000000/guide.json",
+      "sha256": "635689c161d6b140ad9204fedded7945ab0d11c0ae51bf31195c368a95f2282c"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511302000000/guide.json",
+      "sha256": "3240b5dd174f731816ac9c6d3f72bd6bc13bd363005a4a4e650fff3766fb14e5"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511303000000/guide.json",
+      "sha256": "1a4181fd74e434824deb40091446daa20d4612c57b199e6784bd85ef36c9811c"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511304000000/guide.json",
+      "sha256": "3b2b52c7b8c82780173b0f2cbc68335e9d7c3c85ffa86613e6fd046bbac6a9da"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511321000000/guide.json",
+      "sha256": "df41013c9ca8f2af28438c0145a60aa9b65092dc67bd6135a2e70af386d51eab"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511322000000/guide.json",
+      "sha256": "da1cebe7efe06fc9851312197c5f851796756f7208db41c4ce005b0c5e424a8c"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511323000000/guide.json",
+      "sha256": "60432f59005a4a752b9e764e6fa68820ec4bcdb440ef85a324504932a2bf2f07"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511324000000/guide.json",
+      "sha256": "fdd6ebee8bf9bd5b13c0fbc1eb60035140d497649886fcea6a62595d35d70b51"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511325000000/guide.json",
+      "sha256": "b3c1165ff311e4cb2af29996ed18a096ed84842b9b433e2b98d6cceddb0c67d1"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511381000000/guide.json",
+      "sha256": "35e60fd3cc55752c177ed2f715aca96c5328012a24c9fc68cd8bc529415747bc"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511402000000/guide.json",
+      "sha256": "acf35be16e760ca0fef504fd86343508db9d72b14850715523e2a5a8eb5a3ecb"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511403000000/guide.json",
+      "sha256": "a77b9088aa19c9945b0db48b429d51ab2cf4610ca23a654467dfe12340df7e38"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511411000000/guide.json",
+      "sha256": "af64c88e216c29e9180449bf3d707325ffc26c8e9d35ea5929778ab65d7255d1"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511421000000/guide.json",
+      "sha256": "653b793496e0badf8483509a269c32ecac13635e2ccb43d2add5abc84de96870"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511423000000/guide.json",
+      "sha256": "03bea844b0f5f2f2afc3d38d279b4c1cc345729401a1a7432a652a5f432f56f6"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511424000000/guide.json",
+      "sha256": "62b4fe309708b12a0f378b84fcea31493a182c2c76ac9c432eba9ec2995e5546"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511425000000/guide.json",
+      "sha256": "cef3d518aa8e16feee22c9deeaff2c8c21a32e92f552797d5b3e0d0bdc6cc0f2"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511502000000/guide.json",
+      "sha256": "30107df39dd646b14cc0971f101974f160fed40e70bdadb58dab053568686783"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511503000000/guide.json",
+      "sha256": "d86d3fdfb422581f9023420ad5ad8768478c06be2a55d22d43d8144715b7fd90"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511521000000/guide.json",
+      "sha256": "e67a28033a139553d2285af91829f3ec75f009ba8a1a42ed63c2edda83f2c68d"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511523000000/guide.json",
+      "sha256": "b37e79a6116f0f3c5c3d971fcf9d584af36f8fe815d00325f224b7a375ac5b67"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511524000000/guide.json",
+      "sha256": "3ce92aed18f6e3eae29bcbfa35849d4dc270075375b627d8e737d61c2958bc54"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511525000000/guide.json",
+      "sha256": "38e241fe3c1e596ee77e5ffe5b980fcb0f0c20deb98121c3fd4f2437dfc52cbe"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511526000000/guide.json",
+      "sha256": "822b3a98abff72b8c39d073519d3d1085c91c17cb8d12489f15b8145bfc12446"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511527000000/guide.json",
+      "sha256": "ebefa1ea713b89a178220683732231d4c6812a9f2bcb42d19e1d96a757f153ba"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511528000000/guide.json",
+      "sha256": "fd25c80abadafe5037804a51f9fa4ea814c13a970062808dd498bd4c147c169e"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511529000000/guide.json",
+      "sha256": "0a31890003f73c4c8a84590a9b4b5214e25a543d97e294506b7a4fb9fda79458"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511602000000/guide.json",
+      "sha256": "62832c841fa472ff5d784f88c380eb04a9a3a3d039c4803b4eecf594ab04dec6"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511603000000/guide.json",
+      "sha256": "766a0a106172ffb79de045ef99c83b6524d43a4b77541a3590f86235e1c6241e"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511621000000/guide.json",
+      "sha256": "33be136dae8211e60a9448fe89948ae36f44edf3793c83d49f37240e3d6d17db"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511622000000/guide.json",
+      "sha256": "540633b86610a618a31cc1e8f32b5bfca236e8391bf1cd193b8fff7db5bf8b4f"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511623000000/guide.json",
+      "sha256": "53ac8abeb9e0cb682b152ecddea7d81c35da3657f92ed0512b37c038a01d5fcc"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511681000000/guide.json",
+      "sha256": "d94091b5d911cc0883ada03ca4a8aa8f70eeb267aa3466fc7a729c2a92569907"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511702000000/guide.json",
+      "sha256": "e9201dca6d4140e6b383c0408510464d649d860f5b247cd9717085e07554e2ca"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511703000000/guide.json",
+      "sha256": "f9f293e4de13dfba380b36fbc435eead9e3a573129bd6c73ce9e5301f7f85931"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511722000000/guide.json",
+      "sha256": "05d9b6c0a487df5451ae3450619f5834721075164e51c98be977deccd743e13d"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511725000000/guide.json",
+      "sha256": "6512dadfea35264c3c2485594f7c855123d38df296d8e8b6b7ceb9c5de16a06a"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511781000000/guide.json",
+      "sha256": "9e7bf7b81be1c1ea311db01c092305064dc9beb5ac4ca708dbee1704e7d29275"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511802000000/guide.json",
+      "sha256": "b49cf2df2911e49cf8d47e16142f10b04a3a47110ad75ed3eb408f85c849dceb"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511803000000/guide.json",
+      "sha256": "e38215843bcd68f08570cebbc880975d56b58daad2e4096ca8cd8a5390705f37"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511822000000/guide.json",
+      "sha256": "b7b8b695784ce4dac014e1f2b0ac9fbc68cba096ac462ce9572a416dbe411882"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511823000000/guide.json",
+      "sha256": "796c5e54fb2cab1f87eda6be6631f9e8de89096696c7ac45ca870544b8e59e82"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511824000000/guide.json",
+      "sha256": "8255bc7ad8492db2e81d535055003eb9a1a8e24b09306d2e050dd40e36c34161"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511825000000/guide.json",
+      "sha256": "9aedcfaf817dfc63b4f35cd64a4c239e2b33520284394eaf79bd8470a61f13b4"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511826000000/guide.json",
+      "sha256": "4ae8a9ef5b9a20ba55c77ec877b7f587a5bdd777a2d0f2a74eb18d1d28685afb"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511827000000/guide.json",
+      "sha256": "bd4209078e731482cea54d137fc33c52cc85fa7e92fade7d02934a68725d9870"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511902000000/guide.json",
+      "sha256": "fff8671ac550b79be653756a3f73ef232dcaa091b859ee5dd6cfdc7d5ea08ef7"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511903000000/guide.json",
+      "sha256": "d8c23d9f5df1d7ff5a12641130374ca414ce8a5f53a799801b2992181600dcf5"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511921000000/guide.json",
+      "sha256": "491c252607bd358dc9d0341869f4a266912e35040bc0c95a2d447c10aaf24069"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511922000000/guide.json",
+      "sha256": "7422148940a4084dc09b54b4083b60c5a1b286865b691275225ece2c2e879213"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/511923000000/guide.json",
+      "sha256": "85fb8b55b505faebd1834adcf93dafff85fe33532bbc61e30ddb77cdf8374363"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/512002000000/guide.json",
+      "sha256": "5ab359d0fe54d8bf5875f0f48791b5a8d124860b4ac01e858093bc0993212a29"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/512021000000/guide.json",
+      "sha256": "cd72b964f708bbaf16a2f5ec6d5fb3abffb7d022577c768017be4477462889a8"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/512022000000/guide.json",
+      "sha256": "a7bc4b87ff9cc9b51b3715a7ff1eb4e2f8b79dbe2dffa93598756ee8f7d02838"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513201000000/guide.json",
+      "sha256": "692d6f169a1fe6e4db54237240a752c801ee23824d0322a1a98103728874ba2d"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513221000000/guide.json",
+      "sha256": "821524c627586acaca23bc9374224887f7d8468bc0a2fd952440300283e5e91b"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513222000000/guide.json",
+      "sha256": "bf7a16414ddf9de249326f010357b47232a9d4fe66df2dbee0559763945fb15a"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513223000000/guide.json",
+      "sha256": "9f469ace7265f4c916f6b16a0ff19de0b1cfb0e52e7fea96d48c869a015204c5"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513224000000/guide.json",
+      "sha256": "879bc0f3adf6febc9ffd9fee1fef002fe367d3ed8b8031dc1f025646fe6eb781"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513225000000/guide.json",
+      "sha256": "b0b38b62600bf4ce436bbdccda2fad37ec12fa4b58a69d8395be56e2adca8455"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513226000000/guide.json",
+      "sha256": "3e6f6155064221b414e84e1314a1404fbf45889fabcab6b991b7fa9d568d6b90"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513227000000/guide.json",
+      "sha256": "9c0d30e514133cbf875db27162b27c0ed69f2a29f9122f93be2885b934ea3714"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513228000000/guide.json",
+      "sha256": "f9def29f4d5b5a7658891720d4564d07c1f5c4af1dab89336bd836bc60dd8af4"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513230000000/guide.json",
+      "sha256": "3f059ce0c57c36bc8e786815861059da9dbc65faace8c696cf5f74df12c013c8"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513231000000/guide.json",
+      "sha256": "e93436f1abe306bbb0dbc928b190b1c43ad3ce1435ba3617b00ce608ffabc6ee"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513232000000/guide.json",
+      "sha256": "d91e575409acf8d4bca9366557963569a4808060ac5c91ad668f4da9bc71e5be"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513233000000/guide.json",
+      "sha256": "50d18dd3ab37e137d54fb56609984c93016df064ea7661e0ef52e94d6e8b4ce7"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513301000000/guide.json",
+      "sha256": "0bf2b09c1bcf9e36143f733a04cc26adf14f2935a20ba82087fe377bc42e9fde"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513322000000/guide.json",
+      "sha256": "5f3afe4b41e98b0f2aaef7606baf2dc42ca7434fc179e9ff2e02f6fd32f5fbc2"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513323000000/guide.json",
+      "sha256": "9df8014921b93df0013375d9a1e10183b6fdbea3acd781c5ff180c141b0fdad0"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513324000000/guide.json",
+      "sha256": "d48ac4494e222e50d6d6177e84819e46aa8739e50c377ea0829b11057a4d613e"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513325000000/guide.json",
+      "sha256": "34b4b2107da76078e040a9132aa71eb299426ce0cbb4d8877d98e5ba8a7b968f"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513326000000/guide.json",
+      "sha256": "34cf17fde62294229369158f1e18ec2cf3ce003b4e1897c6f0fa79edf4f31c1d"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513327000000/guide.json",
+      "sha256": "e01833fdbecfab656ebf30bff8fa6a18038077de1eb354f66182b87ddb7b5ce0"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513329000000/guide.json",
+      "sha256": "1c210f78d44762b11c515fc7a5c50773ef374f49bde2146c1ebb9664d418ae53"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513330000000/guide.json",
+      "sha256": "88828bc7db615123200cb35c369034752c615b9b64102701e31f46d1e1f66ea1"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513331000000/guide.json",
+      "sha256": "a3ecfab3c6489e30c7a79ebd3825eef27537342fdefd2a6d9623f04640e3c006"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513332000000/guide.json",
+      "sha256": "ce29b370f6a483909ed248069878e182b80c8fd9bce9699846e7cd4da3f11564"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513334000000/guide.json",
+      "sha256": "d49b7321872f00aed36e464294bc1ed7d94eb1f69b25c49a00d4a933338ea6bd"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513335000000/guide.json",
+      "sha256": "b4ec067f2e397bb197c2d2372a91544183cdc52f54e54bfb336faf33659e13a1"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513336000000/guide.json",
+      "sha256": "a0b5b2a79baf52c5ee50cd8dc5675b23e4cf908dc623328ef086e761267342a9"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513337000000/guide.json",
+      "sha256": "f35acd6af2c9e19c6a2aa706af5b55245768ec8f671c7fd4b3c3086d9fc6865a"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513338000000/guide.json",
+      "sha256": "cc7ecd41bac00bb277183c83a1b60e21d0e142cc0e5c78bce9e9bba034a3d71b"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513401000000/guide.json",
+      "sha256": "e9c64127f4933b0a5fbf57c72dee5ffa1a6330bdb01b05fdf47990d1118f9d37"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513422000000/guide.json",
+      "sha256": "bd5772b59a6b28d088fb53f80de710349a385c2e148a20bf7df662617bdfd574"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513423000000/guide.json",
+      "sha256": "f6ffba6108d581bb01b711fbc9105808927a6282429d02aa747f375b6cda54c7"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513424000000/guide.json",
+      "sha256": "fecac8d35fdc1f52879c223d6e95adc6a37c40ad0be8a014ae92486e1660a6a8"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513425000000/guide.json",
+      "sha256": "78625d5dac2e8d60e0bb02c2a904efd552d44b74114f076f78486f5db6b1ee98"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513426000000/guide.json",
+      "sha256": "ffb62bd7b008dd5164fb2738f7c8b1f934b2f554a4af3443b96a5cf9e2ed1f29"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513427000000/guide.json",
+      "sha256": "ddfd9f60cffa98bb1f409ab75fdaae624cc5d655a0f689af2223854392117849"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513428000000/guide.json",
+      "sha256": "f5f17e4a4146fafb79d58ec00026732d995e792f84948b95ab0b0526153e3f7f"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513429000000/guide.json",
+      "sha256": "2a841a96d18d027df2b93564d7a0ce927053e400581f0f96040614d16c9fc2c8"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513430000000/guide.json",
+      "sha256": "948cffc5bf02aaf5223e4df7fc75a7e28e6622b7e4a013a92d8463cfb532476d"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513432000000/guide.json",
+      "sha256": "ead17bbf75a69ed698207efeb6e7f69f56fbe95dd7ae849f47b0e25a94588126"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513433000000/guide.json",
+      "sha256": "b88837ae50d333db88cab3486ae99defd6af6cc4bc29a7db382abb476783c770"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513434000000/guide.json",
+      "sha256": "e5e0eb50a19a40ec98a5224b1e056425ac4a39844a54b7767a1e32a1f02433b1"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513435000000/guide.json",
+      "sha256": "e6e9fc55e39014e54f2ecbdb4a4d0db4709b6a734fa8a9da69ebe159471f11ea"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513436000000/guide.json",
+      "sha256": "4a01cf0e42eaa52cf14eb04dfc3eb189e3d761e6b12c5d93813d378eeff73f59"
+    },
+    {
+      "file": "reports/nationwide-localization-20261023-night/sichuan/captures/513437000000/guide.json",
+      "sha256": "e26ab07511df5f7299143b8be6fcc1b191aa1a717744806cd2193b9f0c8a4e81"
+    },
+    {
+      "file": "reports/nationwide-localization-20261028/zhejiang/xihu/guide.json",
+      "sha256": "c27b442a5c385d36617d94e3d1fc3cc2414d47590e8afda964ff4801c2a62976"
+    },
+    {
+      "file": "reports/nationwide-localization-20261028/zhejiang/yuhang/guide.json",
+      "sha256": "dff6ed125c053066bd533154358eeac7f7bf9dbec14763d074d2d784ebad9634"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/anhui/feidong/guide.json",
+      "sha256": "9845653585d7ad8b4fba1fdb1281541d3814a6ef4e8684fdef5bc4fbf0739602"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/anhui/yaohai/guide.json",
+      "sha256": "213f7fdbd9f260a4936950072c6204334e762453bb401b4a385421da6bd509ff"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/BROWSER-REVIEW-RESULT.json",
+      "sha256": "ad6b81898345450ae9b0a7d4b07e491741808662626037c6e0f5f8c244b1a81b"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/candidate-jiangsu/VISUAL-REVIEW.json",
+      "sha256": "5d04d373845ce1f5a8b9bccbbe4878d7773fdd342627016c15bb33407c68f875"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320281/guide.json",
+      "sha256": "e408c2b8ea881880f3e2da144870aad1b9e33e5e17a70ab48fe5ef96e4b1914b"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/320282/guide.json",
+      "sha256": "47b9782a4280b1d177cc19b701aa2ce3c6b29a1931956e35667f7835c5eef780"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/batch2/public-copy-root/reports/nationwide-verification-20261029/jiangsu/320281/guide.json",
+      "sha256": "e408c2b8ea881880f3e2da144870aad1b9e33e5e17a70ab48fe5ef96e4b1914b"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/jiangsu/batch2/public-copy-root/reports/nationwide-verification-20261029/jiangsu/320282/guide.json",
+      "sha256": "47b9782a4280b1d177cc19b701aa2ce3c6b29a1931956e35667f7835c5eef780"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/zhejiang/haishu/guide.json",
+      "sha256": "b83ada664328cadd67bec4ed107b64025afc1b2ab9a8f928d9ac1101a5dd9747"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/zhejiang/yinzhou/guide.json",
+      "sha256": "7ae05b69a98372ae3c2b463c104043e1540f899586f31ef69011d4245639d84c"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-b/guangdong/chancheng/content-review.json",
+      "sha256": "4f2f79de21e585bf8b11b43885cff67f22ed07b4d2aaf384571ce834650c2510"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-b/hunan/tianxin/guide.json",
+      "sha256": "5cb541178afb4a82e60dd61205a1e2163b6d498b68b82bebcf281663b278c0ff"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-b/hunan/xiangjiang/guide.json",
+      "sha256": "9c4a67a495869142c64060e0cd99a625fcb109facfbf1e8fd204ac86005c36e6"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-b/shandong/visual-review.json",
+      "sha256": "983221a3de1e04980caa47c02037339681c7f1c68f677b2f817c822e332a3279"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/FINAL-PRESENTATION-REVIEW.json",
+      "sha256": "62d98f0bcfb27247ba009c9478f4fa623b728143b667ec2c6bbbc8f730187b97"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/hunan/SCREENSHOT-REVIEW.json",
+      "sha256": "e0df7c9ee95d6d2b2015f1e51bd4f827972f746d7bced268f2b07800c285dc43"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/hunan/wangcheng/guide.json",
+      "sha256": "a6e253a5fa115f05179d70ad2378b7195fc8db1357a9c8b3f44129c87c5cc5e9"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/hunan/yuhua/guide.json",
+      "sha256": "5c2a2fe5396dec44767281d0d58b86f8a1ab4ce17d2da72af6b9869200b53ef4"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/jiangsu/wujin/CONTENT-REVIEW.json",
+      "sha256": "376cbd6e253852c6a799becf96d26341f52a5497d397f0796e6aca5538152d1f"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/jiangsu/wujin/guide.json",
+      "sha256": "157076d35ace96268ff76d91af3f3ee3b56f68ea4596d96935e3ad3dbca0bdf4"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/jiangsu/xinbei/CONTENT-REVIEW.json",
+      "sha256": "4f1e06e5fb06df12dd4a9b97ad399f7e9e9cf29f4ebb9b46cf9914c85dc5c120"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-c/jiangsu/xinbei/guide.json",
+      "sha256": "46e32fdd3f895cc9998808869a0f9bb1ed6c096099fe74dc4fba994b23294796"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/jiangsu/gusu/CONTENT-REVIEW.json",
+      "sha256": "b8dc643a825ac442331338d4899c023a959e8d70ddc3e322ebbb5260340fa104"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/jiangsu/gusu/guide.json",
+      "sha256": "10112e6c6c377bc71e24c3d29646e945a296520b0a2f4e9a7eac722e6d9d6d28"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/jiangsu/wuzhong/CONTENT-REVIEW.json",
+      "sha256": "183b3ec2301913e907e5e402b9619cca660b0904622b2aa11426dd67c29105b9"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/jiangsu/wuzhong/guide.json",
+      "sha256": "3dffd181abd146f83e3fb751a5079424b5a3d3f5d0dcf1df8714140cc4e2c24b"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/zhejiang/linan/guide.json",
+      "sha256": "27cc5754793e2f5e643a40ef33aea82beed363d92f741f05c8cc62d2f2c46a84"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-d/zhejiang/xiaoshan/guide.json",
+      "sha256": "87d887fd2102761bb3471607195e8857b9608107c37751c5fa093db360bb80d8"
+    },
+    {
+      "file": "reports/regional-release-20261029/jiangsu/320924/official-reviewed.json",
+      "sha256": "e27bf85830143217daff9a0b22f28f95262af63b65f54344b5d1556449deaf21"
+    },
+    {
+      "file": "reports/regional-release-20261029/jiangsu/320981/official-reviewed.json",
+      "sha256": "4f4f5cc069a57c3691a38e532636f46151e302827dbf979ad64841a052c01fda"
+    },
+    {
+      "file": "reports/regional-release-20261029/zhejiang/release-review.json",
+      "sha256": "5637f7716b17da78679d410e728147d3ea3e98454f0854aab3fa05d909bb7804"
+    },
+    {
+      "file": "data/public-regions/manifest.json",
+      "sha256": "099341af70fb6d5352c8efcdcd04cefbe490792493b472bbf0b0c9eedd88002d"
+    },
+    {
+      "file": "data/public-regions/guides.json",
+      "sha256": "5f66e43600e04274354f0488508f4093ae48a777e92085486ee28f339e074162"
+    },
+    {
+      "file": "config/regional_verifications.json",
+      "sha256": "928d471b48658e1cab93307b5f233a568a32484674fb700ffe122974f096a79e"
+    }
+  ],
+  "private_browser_log_initialized": true,
+  "no_database_or_candidate_configuration_changed": true
+}
