@@ -1,0 +1,452 @@
+{
+  "status": "PASS",
+  "main_release_acceptance": true,
+  "completed": 8,
+  "regions": {
+    "320507": {
+      "source_id": "e87b6309ce5f6b51ba0aa5fc",
+      "version": 207
+    },
+    "320509": {
+      "source_id": "17dae350af59963fb0c16dba",
+      "version": 208
+    },
+    "330111": {
+      "source_id": "16f67bbbcf7b124948381309",
+      "version": 209
+    },
+    "330182": {
+      "source_id": "f6487b8d118bdc3289baad17",
+      "version": 210
+    }
+  },
+  "records": [
+    {
+      "region_code": "320507",
+      "kind": "application",
+      "template_id": "02a0e257-ba98-41d8-9d93-1f5c70d038f7",
+      "main_source_context": {
+        "source_id": "e87b6309ce5f6b51ba0aa5fc",
+        "version": 207
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "e87b6309ce5f6b51ba0aa5fc",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-e/live-release/downloads/320507-application.docx",
+      "sha256": "f8462078ceca3af5115bb40038e5c85c8022a087ba247b363c877105c5cf3eaf",
+      "bytes": 12676,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_rendering": "NOT_RUN",
+      "candidate_visual_reference": {
+        "same_bytes": true,
+        "candidate_document": "reports/nationwide-verification-20261029-e/acceptance/downloads/320507-application.docx",
+        "candidate_sha256": "f8462078ceca3af5115bb40038e5c85c8022a087ba247b363c877105c5cf3eaf",
+        "receipt": "reports/nationwide-verification-20261029-e/acceptance/DOCUMENT-RESULT.json",
+        "receipt_sha256": "744f0c305fedfe8e83a04a76363a68ef9b9ffbf3c3329d8f9ce4c366b317d254",
+        "pages": [
+          {
+            "file": "reports/nationwide-verification-20261029-e/acceptance/pages/320507-application/page-1.png",
+            "sha256": "fd264807db8f8347b4d637b87fc6abb21b48708ba34e467876bfb5b47278504d",
+            "visual_status": "PASS"
+          },
+          {
+            "file": "reports/nationwide-verification-20261029-e/acceptance/pages/320507-application/page-2.png",
+            "sha256": "35d7ab63133dd6403bfe526b9cf72753c30dfa7d3e09633ed739c62952128397",
+            "visual_status": "PASS"
+          }
+        ],
+        "scope": "Byte-identical candidate document with actual Word page QA. The main download was not re-rendered."
+      }
+    },
+    {
+      "region_code": "320507",
+      "kind": "evidence",
+      "template_id": "873e8c9a-fb43-466a-9a57-025a4c2629a9",
+      "main_source_context": {
+        "source_id": "e87b6309ce5f6b51ba0aa5fc",
+        "version": 207
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "e87b6309ce5f6b51ba0aa5fc",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-e/live-release/downloads/320507-evidence.docx",
+      "sha256": "75d90fa865bcf196069e343dfcecbd712b8070598fba49eccd88c7bcb8c04084",
+      "bytes": 11569,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_rendering": "NOT_RUN",
+      "candidate_visual_reference": {
+        "same_bytes": true,
+        "candidate_document": "reports/nationwide-verification-20261029-e/acceptance/downloads/320507-evidence.docx",
+        "candidate_sha256": "75d90fa865bcf196069e343dfcecbd712b8070598fba49eccd88c7bcb8c04084",
+        "receipt": "reports/nationwide-verification-20261029-e/acceptance/DOCUMENT-RESULT.json",
+        "receipt_sha256": "744f0c305fedfe8e83a04a76363a68ef9b9ffbf3c3329d8f9ce4c366b317d254",
+        "pages": [
+          {
+            "file": "reports/nationwide-verification-20261029-e/acceptance/pages/320507-evidence/page-1.png",
+            "sha256": "41cdfda900a755080ee6960c1b5ec93085f1824382f361500ac9683bb574d09f",
+            "visual_status": "PASS"
+          }
+        ],
+        "scope": "Byte-identical candidate document with actual Word page QA. The main download was not re-rendered."
+      }
+    },
+    {
+      "region_code": "320509",
+      "kind": "evidence",
+      "template_id": "d51313d9-c124-4d31-96de-5e7fde669684",
+      "main_source_context": {
+        "source_id": "17dae350af59963fb0c16dba",
+        "version": 208
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "17dae350af59963fb0c16dba",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-e/live-release/downloads/320509-evidence.docx",
+      "sha256": "c2f4a3f31319f9992c711aeeb29767cc71e36744a65af4aea1152e63066eb353",
+      "bytes": 11570,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_rendering": "NOT_RUN",
+      "candidate_visual_reference": {
+        "same_bytes": true,
+        "candidate_document": "reports/nationwide-verification-20261029-e/acceptance/downloads/320509-evidence.docx",
+        "candidate_sha256": "c2f4a3f31319f9992c711aeeb29767cc71e36744a65af4aea1152e63066eb353",
+        "receipt": "reports/nationwide-verification-20261029-e/acceptance/DOCUMENT-RESULT.json",
+        "receipt_sha256": "744f0c305fedfe8e83a04a76363a68ef9b9ffbf3c3329d8f9ce4c366b317d254",
+        "pages": [
+          {
+            "file": "reports/nationwide-verification-20261029-e/acceptance/pages/320509-evidence/page-1.png",
+            "sha256": "2c1a9f3fda8ce74d9815904453de21092ca4a51243a0908b19b71d3c51ea316f",
+            "visual_status": "PASS"
+          }
+        ],
+        "scope": "Byte-identical candidate document with actual Word page QA. The main download was not re-rendered."
+      }
+    },
+    {
+      "region_code": "320509",
+      "kind": "application",
+      "template_id": "23baf5d4-a613-4e85-9893-95e556164af1",
+      "main_source_context": {
+        "source_id": "17dae350af59963fb0c16dba",
+        "version": 208
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "17dae350af59963fb0c16dba",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-e/live-release/downloads/320509-application.docx",
+      "sha256": "39fa442c0a3070f04c0dbedab43aeb0e4a7271db45db053c90bded13229297d1",
+      "bytes": 12677,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_rendering": "NOT_RUN",
+      "candidate_visual_reference": {
+        "same_bytes": true,
+        "candidate_document": "reports/nationwide-verification-20261029-e/acceptance/downloads/320509-application.docx",
+        "candidate_sha256": "39fa442c0a3070f04c0dbedab43aeb0e4a7271db45db053c90bded13229297d1",
+        "receipt": "reports/nationwide-verification-20261029-e/acceptance/DOCUMENT-RESULT.json",
+        "receipt_sha256": "744f0c305fedfe8e83a04a76363a68ef9b9ffbf3c3329d8f9ce4c366b317d254",
+        "pages": [
+          {
+            "file": "reports/nationwide-verification-20261029-e/acceptance/pages/320509-application/page-1.png",
+            "sha256": "f0ab9c4829823679078a45f3123c651b2ff99ab6cd61dd42d5ab95acd22125bd",
+            "visual_status": "PASS"
+          },
+          {
+            "file": "reports/nationwide-verification-20261029-e/acceptance/pages/320509-application/page-2.png",
+            "sha256": "a38785ab44e7153804fb3613b1eec52f33b9f038acfaa7c9c842c14733c5ba7e",
+            "visual_status": "PASS"
+          }
+        ],
+        "scope": "Byte-identical candidate document with actual Word page QA. The main download was not re-rendered."
+      }
+    },
+    {
+      "region_code": "330111",
+      "kind": "application",
+      "template_id": "BAFCD2B89394AA02DD2914CA0720DAE0:blank",
+      "main_source_context": {
+        "source_id": "16f67bbbcf7b124948381309",
+        "version": 209
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "16f67bbbcf7b124948381309",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-e/live-release/downloads/330111-application.docx",
+      "sha256": "645d4b05bcd9e94c28649e95ae21c3719ad069d603b7435eb1fbf6830237b315",
+      "bytes": 27495,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_rendering": "NOT_RUN",
+      "candidate_visual_reference": {
+        "same_bytes": true,
+        "candidate_document": "reports/nationwide-verification-20261029-e/acceptance/downloads/330111-application.docx",
+        "candidate_sha256": "645d4b05bcd9e94c28649e95ae21c3719ad069d603b7435eb1fbf6830237b315",
+        "receipt": "reports/nationwide-verification-20261029-e/acceptance/DOCUMENT-RESULT.json",
+        "receipt_sha256": "744f0c305fedfe8e83a04a76363a68ef9b9ffbf3c3329d8f9ce4c366b317d254",
+        "pages": [
+          {
+            "file": "reports/nationwide-verification-20261029-e/acceptance/pages/330111-application/page-1.png",
+            "sha256": "ba76e78efa24935286a5153e79e357582b512c55032375507abc50f4f4f072f4",
+            "visual_status": "PASS"
+          },
+          {
+            "file": "reports/nationwide-verification-20261029-e/acceptance/pages/330111-application/page-2.png",
+            "sha256": "6c08f7ac350791fdbf89857e6ca9ff374fa680d5f6f35e84fc51265c2a93345c",
+            "visual_status": "PASS"
+          },
+          {
+            "file": "reports/nationwide-verification-20261029-e/acceptance/pages/330111-application/page-3.png",
+            "sha256": "a2219c1fc597b1088f26154f90572be4f5aa00b0ed33d6159f1f0ef70c16740d",
+            "visual_status": "PASS"
+          }
+        ],
+        "scope": "Byte-identical candidate document with actual Word page QA. The main download was not re-rendered."
+      }
+    },
+    {
+      "region_code": "330111",
+      "kind": "evidence",
+      "template_id": "B55E6CC7851FBC4F02F8DB9F4595191B:blank",
+      "main_source_context": {
+        "source_id": "16f67bbbcf7b124948381309",
+        "version": 209
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "16f67bbbcf7b124948381309",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-e/live-release/downloads/330111-evidence.docx",
+      "sha256": "cbdfaae3a22db5b4e6520a4232670286b263c45d77b28e01e3a946f69d4205e7",
+      "bytes": 15774,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_rendering": "NOT_RUN",
+      "candidate_visual_reference": {
+        "same_bytes": true,
+        "candidate_document": "reports/nationwide-verification-20261029-e/acceptance/downloads/330111-evidence.docx",
+        "candidate_sha256": "cbdfaae3a22db5b4e6520a4232670286b263c45d77b28e01e3a946f69d4205e7",
+        "receipt": "reports/nationwide-verification-20261029-e/acceptance/DOCUMENT-RESULT.json",
+        "receipt_sha256": "744f0c305fedfe8e83a04a76363a68ef9b9ffbf3c3329d8f9ce4c366b317d254",
+        "pages": [
+          {
+            "file": "reports/nationwide-verification-20261029-e/acceptance/pages/330111-evidence/page-1.png",
+            "sha256": "515d5cc37b3e4bea69d85b4d5ad7badece2e889be7a410da7f5639b2cff48f70",
+            "visual_status": "PASS"
+          }
+        ],
+        "scope": "Byte-identical candidate document with actual Word page QA. The main download was not re-rendered."
+      }
+    },
+    {
+      "region_code": "330182",
+      "kind": "evidence",
+      "template_id": "F7FF66119F2DDB743C0370239FABF58E:blank",
+      "main_source_context": {
+        "source_id": "f6487b8d118bdc3289baad17",
+        "version": 210
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "f6487b8d118bdc3289baad17",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-e/live-release/downloads/330182-evidence.docx",
+      "sha256": "d11cd448077f3b7eeb1150f4e8923dae9e49c26a04a23dd023ee4c643987b8bb",
+      "bytes": 15772,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_rendering": "NOT_RUN",
+      "candidate_visual_reference": {
+        "same_bytes": true,
+        "candidate_document": "reports/nationwide-verification-20261029-e/acceptance/downloads/330182-evidence.docx",
+        "candidate_sha256": "d11cd448077f3b7eeb1150f4e8923dae9e49c26a04a23dd023ee4c643987b8bb",
+        "receipt": "reports/nationwide-verification-20261029-e/acceptance/DOCUMENT-RESULT.json",
+        "receipt_sha256": "744f0c305fedfe8e83a04a76363a68ef9b9ffbf3c3329d8f9ce4c366b317d254",
+        "pages": [
+          {
+            "file": "reports/nationwide-verification-20261029-e/acceptance/pages/330182-evidence/page-1.png",
+            "sha256": "a83d12b8b09cc9a4b2a29da2b2949e70cbfa1b5a01844d163c102fb1e27522ae",
+            "visual_status": "PASS"
+          }
+        ],
+        "scope": "Byte-identical candidate document with actual Word page QA. The main download was not re-rendered."
+      }
+    },
+    {
+      "region_code": "330182",
+      "kind": "application",
+      "template_id": "46ACCB2DF05B1F8C1F581602D1F346E8:blank",
+      "main_source_context": {
+        "source_id": "f6487b8d118bdc3289baad17",
+        "version": 210
+      },
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "http_status": 200,
+      "x_guide_source_id": "f6487b8d118bdc3289baad17",
+      "x_document_origin": "official-blank-filled",
+      "file": "reports/nationwide-verification-20261029-e/live-release/downloads/330182-application.docx",
+      "sha256": "9029aa6c704c9735e2b0b696d64c6d741d51f9aecbd0f34c9b3fd4c13424e877",
+      "bytes": 27494,
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "main_document_rendering": "NOT_RUN",
+      "candidate_visual_reference": {
+        "same_bytes": true,
+        "candidate_document": "reports/nationwide-verification-20261029-e/acceptance/downloads/330182-application.docx",
+        "candidate_sha256": "9029aa6c704c9735e2b0b696d64c6d741d51f9aecbd0f34c9b3fd4c13424e877",
+        "receipt": "reports/nationwide-verification-20261029-e/acceptance/DOCUMENT-RESULT.json",
+        "receipt_sha256": "744f0c305fedfe8e83a04a76363a68ef9b9ffbf3c3329d8f9ce4c366b317d254",
+        "pages": [
+          {
+            "file": "reports/nationwide-verification-20261029-e/acceptance/pages/330182-application/page-1.png",
+            "sha256": "effa140989de8de3d52cb1d26808eccb455d27e047c87ff7a6ec6ca5b7d0de89",
+            "visual_status": "PASS"
+          },
+          {
+            "file": "reports/nationwide-verification-20261029-e/acceptance/pages/330182-application/page-2.png",
+            "sha256": "6c08f7ac350791fdbf89857e6ca9ff374fa680d5f6f35e84fc51265c2a93345c",
+            "visual_status": "PASS"
+          },
+          {
+            "file": "reports/nationwide-verification-20261029-e/acceptance/pages/330182-application/page-3.png",
+            "sha256": "a2219c1fc597b1088f26154f90572be4f5aa00b0ed33d6159f1f0ef70c16740d",
+            "visual_status": "PASS"
+          }
+        ],
+        "scope": "Byte-identical candidate document with actual Word page QA. The main download was not re-rendered."
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "eight_native_main_downloads",
+      "passed": true,
+      "evidence": "8 ordinary UI confirmations and native downloads;8 actualHTTP200; no API replay."
+    },
+    {
+      "id": "main_source_versions",
+      "passed": true,
+      "evidence": "Actual main207/208/209/210 and exact own source/template/response origin bindings match."
+    },
+    {
+      "id": "actual_zip_xml",
+      "passed": true,
+      "evidence": "All8 actual main download bytes pass ZIP CRC and Word document/body XML checks."
+    },
+    {
+      "id": "same_bytes_candidate_visual",
+      "passed": true,
+      "evidence": "All8 main SHA equal candidate SHA;14 actual candidate page PNG SHA rechecked. Main downloads were not re-rendered."
+    },
+    {
+      "id": "main_four_localities",
+      "passed": true,
+      "evidence": "Main DOM own sources and authorities checked for Xiangcheng,Wujiang,Fuyang,Jiande; explicit fictional defaults and published notices present."
+    },
+    {
+      "id": "source_material_differences",
+      "passed": true,
+      "evidence": "FY retains4 materials and no-ID-exemption caveat; JD retains5 materials and both0571-64721626 and0571-64721936; FY-specific caveat not inherited."
+    },
+    {
+      "id": "stable_768_drafts",
+      "passed": true,
+      "evidence": "Actual main768 same timeOrigin1793286453197.6: evidence1→2→1, separately edited app/evidence drafts preserved, no app fields in evidence."
+    },
+    {
+      "id": "responsive_375_768_1440",
+      "passed": true,
+      "evidence": "Actual main viewport/scrollWidth375/375,768/753,1440/1425; screenshots opened and inspected."
+    },
+    {
+      "id": "fab_clear_of_cta",
+      "passed": true,
+      "evidence": "Main375 generation CTA center hit belonged to button and FAB rectangle intersection false."
+    },
+    {
+      "id": "cancel_escape_no_generation",
+      "passed": true,
+      "evidence": "Native main Escape and Cancel closed confirmation; isolated MCP generate request count0."
+    },
+    {
+      "id": "unknown_no_inheritance",
+      "passed": true,
+      "evidence": "Main Qiantang selection gave zero form, no own source and no generate button."
+    },
+    {
+      "id": "published_lifecycle",
+      "passed": true,
+      "evidence": "Main Jiangsu/Zhejiang published notices present; no NOT_RUN observed in current guides."
+    },
+    {
+      "id": "console_no_models",
+      "passed": true,
+      "evidence": "Main MCP and admin console error/warn empty; native errors empty; actual native network and isolated MCP show no model endpoint request."
+    },
+    {
+      "id": "admin_actual_counts",
+      "passed": true,
+      "evidence": "Saved and opened actual1440 admin screenshot:202 published,185 generatable,24 candidates."
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/admin-regions-1440.png",
+      "sha256": "1d73d04519ca8fdd936b3b80d03da1673eee99286c37e249c4de4ea9aa1dff4a",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/jiande-1440.png",
+      "sha256": "07ebce5cf1bc82f675c7dcb3f6d32f39c2afe21ad378647ca185501ab2fa95d0",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/js-375-cta.png",
+      "sha256": "cb7b4274df0b38e080045c542af0b44db3757806a9bc56bd4844d39a4fa529bf",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/noinherit-768.png",
+      "sha256": "baa4cc93c0949fcb7e980cb1381043298c6573d40b683a7d5ac74af7ebae0014",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/zj-768.png",
+      "sha256": "f40f4eaf98b5435e2e1713e87b0b99266f6e4c5e82b37c4839b81802f03fe31a",
+      "visual_status": "PASS"
+    }
+  ],
+  "admin_counts": {
+    "published_guides": 202,
+    "generatable_regions": 185,
+    "candidate_regions": 24
+  },
+  "native_network_requests": 101,
+  "model_endpoint_requests": 0,
+  "word_started": false,
+  "main_documents_rerendered": false,
+  "candidate_visual_pages_referenced": 14,
+  "own_browser_sessions_closed": true,
+  "database_mutations": false,
+  "service_operations": false,
+  "git_operations": false,
+  "limits": [
+    "Official authenticated submission was not attempted.",
+    "Main documents use byte-identical candidate visual proof; no main Word re-render was performed."
+  ]
+}

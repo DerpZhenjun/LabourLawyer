@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "scope": "E4 main ordinary UI native download acceptance and actual screenshots; synthetic document data only",
+  "files": [
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/admin-regions-1440.png",
+      "sha256": "1d73d04519ca8fdd936b3b80d03da1673eee99286c37e249c4de4ea9aa1dff4a",
+      "bytes": 173762
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/downloads/320507-application.docx",
+      "sha256": "f8462078ceca3af5115bb40038e5c85c8022a087ba247b363c877105c5cf3eaf",
+      "bytes": 12676
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/downloads/320507-evidence.docx",
+      "sha256": "75d90fa865bcf196069e343dfcecbd712b8070598fba49eccd88c7bcb8c04084",
+      "bytes": 11569
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/downloads/320509-application.docx",
+      "sha256": "39fa442c0a3070f04c0dbedab43aeb0e4a7271db45db053c90bded13229297d1",
+      "bytes": 12677
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/downloads/320509-evidence.docx",
+      "sha256": "c2f4a3f31319f9992c711aeeb29767cc71e36744a65af4aea1152e63066eb353",
+      "bytes": 11570
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/downloads/330111-application.docx",
+      "sha256": "645d4b05bcd9e94c28649e95ae21c3719ad069d603b7435eb1fbf6830237b315",
+      "bytes": 27495
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/downloads/330111-evidence.docx",
+      "sha256": "cbdfaae3a22db5b4e6520a4232670286b263c45d77b28e01e3a946f69d4205e7",
+      "bytes": 15774
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/downloads/330182-application.docx",
+      "sha256": "9029aa6c704c9735e2b0b696d64c6d741d51f9aecbd0f34c9b3fd4c13424e877",
+      "bytes": 27494
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/downloads/330182-evidence.docx",
+      "sha256": "d11cd448077f3b7eeb1150f4e8923dae9e49c26a04a23dd023ee4c643987b8bb",
+      "bytes": 15772
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/jiande-1440.png",
+      "sha256": "07ebce5cf1bc82f675c7dcb3f6d32f39c2afe21ad378647ca185501ab2fa95d0",
+      "bytes": 109055
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/js-375-cta.png",
+      "sha256": "cb7b4274df0b38e080045c542af0b44db3757806a9bc56bd4844d39a4fa529bf",
+      "bytes": 57768
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/NATIVE-GENERATION-PROOF.json",
+      "sha256": "d7a92906efc1547ffb986cb66806d6108e20e5deca27d0e9f90e7dad6bebd468",
+      "bytes": 6457
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/noinherit-768.png",
+      "sha256": "baa4cc93c0949fcb7e980cb1381043298c6573d40b683a7d5ac74af7ebae0014",
+      "bytes": 97837
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/RESULT.json",
+      "sha256": "f6bc45ae277484243b605dbff486d06be50593d58dfb8886a88a28a81e707fff",
+      "bytes": 20255
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-e/live-release/zj-768.png",
+      "sha256": "f40f4eaf98b5435e2e1713e87b0b99266f6e4c5e82b37c4839b81802f03fe31a",
+      "bytes": 100092
+    }
+  ]
+}
