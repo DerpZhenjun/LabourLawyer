@@ -38,7 +38,7 @@
         <h2>{{ guide.service_name }}</h2><p class="region-authority">办理机关：{{ guide.authority || '待核实' }}</p>
         <dl class="guide-facts"><div><dt><i class="fa-solid fa-building" aria-hidden="true"></i> 办理形式</dt><dd data-field="handling-form">{{ field('办理形式') }}</dd></div><div><dt>官网显示的办理时限</dt><dd>{{ field('承诺办结时限') }}</dd></div><div><dt>是否收费</dt><dd>{{ field('是否收费') }}</dd></div><div><dt>到现场次数</dt><dd>{{ field('到办事现场次数')==='待核实'?'待核实':field('到办事现场次数')+' 次' }}</dd></div></dl>
         <p class="region-small">这里的时限是官网事项办理信息，不表示争议案件将在这个时间内裁决。</p>
-        <div v-for="warning in guide.warnings" :key="warning" class="region-notice" role="note"><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i><p>{{ warning }}</p></div>
+        <div v-for="warning in guide.warnings" :key="warning" class="region-notice" role="note"><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i><p>{{ plainWarning(warning) }}</p></div>
         <div class="guide-source"><a :href="guide.source_url" target="_blank" rel="noopener noreferrer">核对官方原文 ↗</a><span>核验：{{ date(guide.verified_at) }} · 官网版本 {{ guide.official_version || '未提供' }}</span></div>
       </section>
       <nav class="guide-jumps" aria-label="指南内容"><a href="#regional-submit">怎样提交</a><a href="#regional-materials">准备材料</a><a href="#regional-documents">文书与下载</a><a href="#regional-original">完整原文</a></nav>
@@ -90,6 +90,7 @@ const districtChoices=computed(()=>{
 const chengduAreas=computed(()=>coverage.value.filter(g=>g.province==='sichuan'&&g.city==='成都市'))
 const generatable=computed(()=>guide.value?.templates.some(t=>t.can_generate))
 const blankGeneration=computed(()=>guide.value?.templates.filter(t=>t.can_generate).every(t=>t.official_kind==='blank'))
+const plainWarning=value=>String(value).replaceAll('not_found_in_checked_sources','本次已查来源未找到').replaceAll('NOT_RUN','尚未核验')
 const field=name=>guide.value?.fields[name]?.raw_value || '待核实'
 const date=value=>value?new Date(value).toLocaleString('zh-CN',{hour12:false}):'待核实'
 const changeProvince=slug=>router.replace({path:`/province/${slug}`,query:{}})

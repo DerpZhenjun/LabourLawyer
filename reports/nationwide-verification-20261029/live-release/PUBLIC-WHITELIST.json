@@ -1,0 +1,35 @@
+{
+  "scope": "Only explicitly viewed current screenshots and sanitized live UI/HTTP result; no payloads, computer paths, raw diagnostics, browser session, SSO, cookies or model content.",
+  "files": {
+    "reports/nationwide-verification-20261029/live-release/RESULT.json": {
+      "sha256": "6bcca4c54a4e36dff786211aeb04190b0b60acb4252bf3b1bc61aed3157aebc0",
+      "bytes": 19970,
+      "reviewed": true
+    },
+    "reports/nationwide-verification-20261029/live-release/responsive-375.png": {
+      "sha256": "81ec70b21f2bd4154745af664c7551d0943f20a19b6ee58dfb55e979023ccdba",
+      "bytes": 75541,
+      "reviewed": true
+    },
+    "reports/nationwide-verification-20261029/live-release/responsive-768.png": {
+      "sha256": "748a046144f095fbd90717cc97e4f72af6139caf26d7924d167ffcf331103303",
+      "bytes": 94062,
+      "reviewed": true
+    },
+    "reports/nationwide-verification-20261029/live-release/responsive-1440.png": {
+      "sha256": "13bae098d92f9477a6ee874e39f49137bf6dc9a0b60fcb869c64876f35aa5db7",
+      "bytes": 114350,
+      "reviewed": true
+    },
+    "reports/nationwide-verification-20261029/live-release/admin-regions-1440.png": {
+      "sha256": "e53f95aa25bbab22d471a95c3e630134f61766b913564672907fc62797b8e567",
+      "bytes": 163660,
+      "reviewed": true
+    },
+    "reports/nationwide-verification-20261029/live-release/admin-public-status-1440.png": {
+      "sha256": "2caa787aa291ca32f3b5868b0ba51cd567bafd1b6b4faf5c56495adc6bef1135",
+      "bytes": 154474,
+      "reviewed": true
+    }
+  }
+}

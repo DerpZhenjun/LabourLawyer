@@ -28,7 +28,7 @@
     </footer>
   </div>
 
-  <button v-if="!assistantOpen && !digitalOpen" class="assistant-fab" @click="assistantOpen=true" aria-label="打开 AI 法律顾问"><BrandMark variant="assistant" :size="30" /><span>AI 法律顾问</span></button>
+  <button v-if="!assistantOpen && !digitalOpen" ref="assistantButton" class="assistant-fab" :style="assistantDock.style.value" :aria-hidden="assistantDock.hidden.value || undefined" @click="assistantOpen=true" aria-label="打开 AI 法律顾问"><BrandMark variant="assistant" :size="30" /><span>AI 法律顾问</span></button>
   <QA v-if="assistantOpen" :open="assistantOpen" @close="assistantOpen=false" @open-digital-human="openDigitalLawyer" />
   <DigitalLawyer v-if="digitalOpen" @close="digitalOpen=false" />
 </template>
@@ -37,11 +37,14 @@
 import { computed, defineAsyncComponent, nextTick, ref, watch } from 'vue'
 import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router'
 import BrandMark from '@/components/BrandMark.vue'
+import {useAssistantDock} from '@/composables/useAssistantDock'
 const DigitalLawyer = defineAsyncComponent(() => import('@/components/DigitalLawyer.vue'))
 import PublicHeader from '@/components/PublicHeader.vue'
 const QA = defineAsyncComponent(() => import('@/components/QA.vue'))
 
 const route=useRoute();const router=useRouter();const sidebarOpen=ref(false);const assistantOpen=ref(false);const digitalOpen=ref(false)
+const assistantButton=ref(null)
+const assistantDock=useAssistantDock(assistantButton)
 const isAdmin=computed(()=>route.meta.layout==='admin')
 const currentMeta=computed(()=>({eyebrow:route.meta.eyebrow||'管理后台',title:route.meta.title||'LabourLawyer'}))
 const adminNav=[

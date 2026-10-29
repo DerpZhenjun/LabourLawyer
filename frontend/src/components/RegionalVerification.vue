@@ -7,7 +7,7 @@
     <p role="status" class="reviews-result">显示 {{ filtered.length }} 条核验记录</p>
     <ul v-if="filtered.length" class="reviews-list">
       <li v-for="row in filtered" :key="row.review_id" data-review-row>
-        <div class="review-title"><h3>{{ provinceName(row.province) }} · {{ row.city }} · {{ row.district }}</h3><span>{{ row.guide_status==='candidate'?'已找到当地指南 · 待验收':'已查官方目录 · 指南待定位' }}</span></div>
+        <div class="review-title"><h3>{{ provinceName(row.province) }} · {{ row.city }} · {{ row.district }}</h3><span>{{ row.guide_status==='candidate'?'已核对当地指南 · 采集记录':'已查官方目录 · 指南待定位' }}</span></div>
         <dl><div><dt>仲裁申请书</dt><dd>{{ labels[row.application_template_status] }}</dd></div><div><dt>证据清单</dt><dd>{{ labels[row.evidence_template_status] }}</dd></div></dl>
         <p>{{ row.note }}</p>
         <details v-if="row.templates.length"><summary>查看已下载附件及原件校验值 · {{ row.templates.length }} 份</summary><div v-for="t in row.templates" :key="`${t.sha256}-${t.original_name}`" class="review-file"><strong>{{ t.original_name }}</strong><span>{{ {blank:'官方空白表格',sample:'官方填写样例',instruction:'材料说明'}[t.kind] }}</span><code>SHA256：{{ t.sha256 }}</code></div></details>

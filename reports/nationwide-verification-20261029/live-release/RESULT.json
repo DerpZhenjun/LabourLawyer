@@ -1,0 +1,419 @@
+{
+  "checked_at": "2026-10-29T10:47:37.854Z",
+  "scope": "Published live localhost main site; native UI and HTTP headers only",
+  "status": "PASS_WITH_TOOL_LIMITATION",
+  "ui_http_status": "PASS",
+  "ui": "http://127.0.0.1:5173",
+  "api": "http://127.0.0.1:8000",
+  "isolated_browser_context": "oct29-live-release-zj",
+  "native_mouse_generated_document_classes": 11,
+  "records": [
+    {
+      "province": "zhejiang",
+      "city": "宁波市",
+      "district": "海曙区",
+      "kind": "application",
+      "source_id": "d06f0baa1875a403975389c3",
+      "version": 190,
+      "template_id": "e8f3fa9ebcb570cec3494bda",
+      "http_status": 200,
+      "reqid": 81,
+      "document_origin": "official-blank-filled",
+      "content_length": 27595,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "native_click": true,
+      "region_code": "330203",
+      "published": true,
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=a57febe6-cd30-4a53-8b4c-f24edaaf7864"
+    },
+    {
+      "province": "zhejiang",
+      "city": "宁波市",
+      "district": "海曙区",
+      "region_code": "330203",
+      "kind": "evidence",
+      "source_id": "d06f0baa1875a403975389c3",
+      "version": 190,
+      "published": true,
+      "template_id": "da297d0c901d1a13720781b3",
+      "http_status": 200,
+      "reqid": 148,
+      "document_origin": "official-blank-filled",
+      "content_length": 15762,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "native_click": true,
+      "submit_center_check": {
+        "width": 1000,
+        "height": 916,
+        "center_hits_submit": true,
+        "submit_rect": "{\"x\":743.6666870117188,\"y\":433.07293701171875,\"width\":176.33334350585938,\"height\":50.083335876464844,\"top\":433.07293701171875,\"right\":920.0000305175781,\"bottom\":483.1562728881836,\"left\":743.6666870117188}",
+        "fab_rect": "{\"x\":805.2708740234375,\"y\":840,\"width\":155.39584350585938,\"height\":52,\"top\":840,\"right\":960.6667175292969,\"bottom\":892,\"left\":805.2708740234375}"
+      },
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=a57febe6-cd30-4a53-8b4c-f24edaaf7864"
+    },
+    {
+      "province": "zhejiang",
+      "city": "宁波市",
+      "district": "鄞州区",
+      "region_code": "330212",
+      "kind": "application",
+      "source_id": "dfa77c6a4ab07a39c9882710",
+      "version": 191,
+      "published": true,
+      "template_id": "ce4729c0bfa69f36f1d00555",
+      "http_status": 200,
+      "reqid": 215,
+      "document_origin": "official-blank-filled",
+      "content_length": 27588,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "native_click": true,
+      "submit_center_check": {
+        "width": 1000,
+        "height": 916,
+        "center_hits_submit": true,
+        "submit_rect": "{\"x\":728.6666870117188,\"y\":846.6458740234375,\"width\":191.33334350585938,\"height\":50.083335876464844,\"top\":846.6458740234375,\"right\":920.0000305175781,\"bottom\":896.7292098999023,\"left\":728.6666870117188}",
+        "fab_rect": "{\"x\":805.2708740234375,\"y\":782.65625,\"width\":155.39584350585938,\"height\":52,\"top\":782.65625,\"right\":960.6667175292969,\"bottom\":834.65625,\"left\":805.2708740234375}"
+      },
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=73f99740-5b23-424a-9ae8-be607cdceaeb"
+    },
+    {
+      "province": "zhejiang",
+      "city": "宁波市",
+      "district": "鄞州区",
+      "region_code": "330212",
+      "kind": "evidence",
+      "source_id": "dfa77c6a4ab07a39c9882710",
+      "version": 191,
+      "published": true,
+      "template_id": "0f2f0a30f05faec1d992261a",
+      "http_status": 200,
+      "reqid": 282,
+      "document_origin": "official-blank-filled",
+      "content_length": 15757,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "native_click": true,
+      "submit_center_check": {
+        "width": 1000,
+        "height": 916,
+        "center_hits_submit": true,
+        "submit_rect": "{\"x\":743.6666870117188,\"y\":433.07293701171875,\"width\":176.33334350585938,\"height\":50.083335876464844,\"top\":433.07293701171875,\"right\":920.0000305175781,\"bottom\":483.1562728881836,\"left\":743.6666870117188}",
+        "fab_rect": "{\"x\":805.2708740234375,\"y\":840,\"width\":155.39584350585938,\"height\":52,\"top\":840,\"right\":960.6667175292969,\"bottom\":892,\"left\":805.2708740234375}"
+      },
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=73f99740-5b23-424a-9ae8-be607cdceaeb"
+    },
+    {
+      "province": "anhui",
+      "city": "合肥市",
+      "district": "肥东县",
+      "region_code": "340122",
+      "kind": "application",
+      "source_id": "6a6e5a998809bb0009176648",
+      "version": 193,
+      "published": true,
+      "template_id": "ff8080819b0b50f201a036dff7642d44",
+      "http_status": 200,
+      "reqid": 348,
+      "document_origin": "official-blank-filled",
+      "content_length": 12477,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "native_click": true,
+      "submit_center_check": {
+        "width": 1000,
+        "height": 916,
+        "center_hits_submit": true,
+        "submit_rect": "{\"x\":728.6666870117188,\"y\":433.0520935058594,\"width\":191.33334350585938,\"height\":50.083335876464844,\"top\":433.0520935058594,\"right\":920.0000305175781,\"bottom\":483.1354293823242,\"left\":728.6666870117188}",
+        "fab_rect": "{\"x\":805.2708740234375,\"y\":840,\"width\":155.39584350585938,\"height\":52,\"top\":840,\"right\":960.6667175292969,\"bottom\":892,\"left\":805.2708740234375}"
+      },
+      "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f"
+    },
+    {
+      "province": "jiangsu",
+      "city": "无锡市",
+      "district": "江阴市",
+      "region_code": "320281",
+      "kind": "application",
+      "source_id": "3d304f186983f34c4170a398",
+      "version": 194,
+      "published": true,
+      "template_id": "2213bd5f-676c-4db0-9a4e-d9dd8b851919",
+      "http_status": 200,
+      "reqid": 415,
+      "document_origin": "official-blank-filled",
+      "content_length": 12573,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "native_click": true,
+      "submit_center_check": {
+        "width": 1000,
+        "height": 916,
+        "center_hits_submit": true,
+        "submit_rect": "{\"x\":728.6666870117188,\"y\":845.9791870117188,\"width\":191.33334350585938,\"height\":50.083335876464844,\"top\":845.9791870117188,\"right\":920.0000305175781,\"bottom\":896.0625228881836,\"left\":728.6666870117188}",
+        "fab_rect": "{\"x\":805.2708740234375,\"y\":781.9896240234375,\"width\":155.39584350585938,\"height\":52,\"top\":781.9896240234375,\"right\":960.6667175292969,\"bottom\":833.9896240234375,\"left\":805.2708740234375}"
+      },
+      "source_url": "https://wxjy.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=39&iddept_ql_inf=1132028101404259474002014302002&ql_kind=20&iddept_yw_inf=113202810140425947400201430200201"
+    },
+    {
+      "province": "jiangsu",
+      "city": "无锡市",
+      "district": "江阴市",
+      "region_code": "320281",
+      "kind": "evidence",
+      "source_id": "3d304f186983f34c4170a398",
+      "version": 194,
+      "published": true,
+      "template_id": "32bdbf03-606b-4da1-8c7b-96179129625a",
+      "http_status": 200,
+      "reqid": 482,
+      "document_origin": "official-blank-filled",
+      "content_length": 11532,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "native_click": true,
+      "submit_center_check": {
+        "width": 1000,
+        "height": 916,
+        "center_hits_submit": true,
+        "submit_rect": "{\"x\":743.6666870117188,\"y\":433.07293701171875,\"width\":176.33334350585938,\"height\":50.083335876464844,\"top\":433.07293701171875,\"right\":920.0000305175781,\"bottom\":483.1562728881836,\"left\":743.6666870117188}",
+        "fab_rect": "{\"x\":805.2708740234375,\"y\":840,\"width\":155.39584350585938,\"height\":52,\"top\":840,\"right\":960.6667175292969,\"bottom\":892,\"left\":805.2708740234375}"
+      },
+      "source_url": "https://wxjy.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=39&iddept_ql_inf=1132028101404259474002014302002&ql_kind=20&iddept_yw_inf=113202810140425947400201430200201"
+    },
+    {
+      "province": "jiangsu",
+      "city": "无锡市",
+      "district": "宜兴市",
+      "region_code": "320282",
+      "kind": "application",
+      "source_id": "509219666f61612819e02f36",
+      "version": 195,
+      "published": true,
+      "template_id": "9949cd24-29df-4db9-af04-b4395a22aa61",
+      "http_status": 200,
+      "reqid": 549,
+      "document_origin": "official-blank-filled",
+      "content_length": 12573,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "native_click": true,
+      "submit_center_check": {
+        "width": 1000,
+        "height": 916,
+        "center_hits_submit": true,
+        "submit_rect": "{\"x\":728.6666870117188,\"y\":846.6458740234375,\"width\":191.33334350585938,\"height\":50.083335876464844,\"top\":846.6458740234375,\"right\":920.0000305175781,\"bottom\":896.7292098999023,\"left\":728.6666870117188}",
+        "fab_rect": "{\"x\":805.2708740234375,\"y\":782.65625,\"width\":155.39584350585938,\"height\":52,\"top\":782.65625,\"right\":960.6667175292969,\"bottom\":834.65625,\"left\":805.2708740234375}"
+      },
+      "source_url": "https://wxyx.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=40&iddept_ql_inf=1132028201404667594002014302002&ql_kind=20&iddept_yw_inf=113202820140466759400201430200201"
+    },
+    {
+      "province": "jiangsu",
+      "city": "无锡市",
+      "district": "宜兴市",
+      "region_code": "320282",
+      "kind": "evidence",
+      "source_id": "509219666f61612819e02f36",
+      "version": 195,
+      "published": true,
+      "template_id": "6adb479a-d85d-42e9-9e77-8ec7afb3f622",
+      "http_status": 200,
+      "reqid": 616,
+      "document_origin": "official-blank-filled",
+      "content_length": 11531,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "native_click": true,
+      "submit_center_check": {
+        "width": 1000,
+        "height": 916,
+        "center_hits_submit": true,
+        "submit_rect": "{\"x\":743.6666870117188,\"y\":433.07293701171875,\"width\":176.33334350585938,\"height\":50.083335876464844,\"top\":433.07293701171875,\"right\":920.0000305175781,\"bottom\":483.1562728881836,\"left\":743.6666870117188}",
+        "fab_rect": "{\"x\":805.2708740234375,\"y\":840,\"width\":155.39584350585938,\"height\":52,\"top\":840,\"right\":960.6667175292969,\"bottom\":892,\"left\":805.2708740234375}"
+      },
+      "source_url": "https://wxyx.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=40&iddept_ql_inf=1132028201404667594002014302002&ql_kind=20&iddept_yw_inf=113202820140466759400201430200201"
+    },
+    {
+      "province": "hunan",
+      "city": "长沙市",
+      "district": "天心区",
+      "region_code": "430103",
+      "kind": "application",
+      "source_id": "77b8c6dd323c643b5025e13b",
+      "version": 197,
+      "published": true,
+      "template_id": "3e8afa8905ca6377aa1ff4a0",
+      "http_status": 200,
+      "reqid": 682,
+      "document_origin": "official-blank-converted-filled",
+      "content_length": 16638,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "native_click": true,
+      "submit_center_check": {
+        "width": 1000,
+        "height": 916,
+        "center_hits_submit": true,
+        "submit_rect": "{\"x\":728.6666870117188,\"y\":433.07293701171875,\"width\":191.33334350585938,\"height\":50.083335876464844,\"top\":433.07293701171875,\"right\":920.0000305175781,\"bottom\":483.1562728881836,\"left\":728.6666870117188}",
+        "fab_rect": "{\"x\":805.2708740234375,\"y\":840,\"width\":155.39584350585938,\"height\":52,\"top\":840,\"right\":960.6667175292969,\"bottom\":892,\"left\":805.2708740234375}"
+      },
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e"
+    },
+    {
+      "province": "hunan",
+      "city": "长沙市",
+      "district": "岳麓区",
+      "region_code": "430104",
+      "kind": "application",
+      "source_id": "45e6cae69c980713f0bfb87a",
+      "version": 198,
+      "published": true,
+      "template_id": "e2081c5c1d6f8fd0127e7ab4",
+      "http_status": 200,
+      "reqid": 748,
+      "document_origin": "official-blank-converted-filled",
+      "content_length": 16650,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "native_click": true,
+      "submit_center_check": {
+        "width": 1000,
+        "height": 916,
+        "center_hits_submit": true,
+        "submit_rect": "{\"x\":728.6666870117188,\"y\":433.07293701171875,\"width\":191.33334350585938,\"height\":50.083335876464844,\"top\":433.07293701171875,\"right\":920.0000305175781,\"bottom\":483.1562728881836,\"left\":728.6666870117188}",
+        "fab_rect": "{\"x\":805.2708740234375,\"y\":840,\"width\":155.39584350585938,\"height\":52,\"top\":840,\"right\":960.6667175292969,\"bottom\":892,\"left\":805.2708740234375}"
+      },
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3"
+    }
+  ],
+  "live_identity_source": "Actual read-only live lookup responses retained privately; each generated POST source_id/version and response x-guide-source-id checked against those values.",
+  "cancel_and_escape": {
+    "after_fix": true,
+    "native_mouse_opened_dialogs": true,
+    "cancel_closed": true,
+    "escape_closed": true,
+    "generation_post_requests": 0,
+    "ai_requests": 0
+  },
+  "negative_ui_checks": [
+    {
+      "province": "zhejiang",
+      "city": "宁波市",
+      "district": "虚构未采集区",
+      "enabled_generation_buttons": [],
+      "headings": [
+        "该地区暂未开放这类文书生成",
+        "该地区办事指南尚未核验"
+      ],
+      "visible_scope": true
+    },
+    {
+      "province": "anhui",
+      "city": "合肥市",
+      "district": "瑶海区",
+      "enabled_generation_buttons": [],
+      "headings": [
+        "当地文书尚未通过填写核验"
+      ],
+      "visible_scope": false
+    },
+    {
+      "province": "sichuan",
+      "city": "成都市",
+      "district": "青羊区",
+      "enabled_generation_buttons": [],
+      "headings": [
+        "当地文书尚未通过填写核验"
+      ],
+      "visible_scope": false
+    }
+  ],
+  "responsive_checks": [
+    {
+      "width": 375,
+      "height": 1000,
+      "scroll_width": 360,
+      "center_hits_submit": true,
+      "submit_rect": "{\"x\":36.66666793823242,\"y\":474.8333435058594,\"width\":286.66668701171875,\"height\":50.083335876464844,\"top\":474.8333435058594,\"right\":323.3333549499512,\"bottom\":524.9166793823242,\"left\":36.66666793823242}",
+      "fab_rect": "{\"x\":201.98959350585938,\"y\":936,\"width\":142.0104217529297,\"height\":48,\"top\":936,\"right\":344.00001525878906,\"bottom\":984,\"left\":201.98959350585938}",
+      "fab_visible": true,
+      "screenshot": "responsive-375.png"
+    },
+    {
+      "width": 768,
+      "height": 1000,
+      "scroll_width": 753,
+      "center_hits_submit": true,
+      "submit_rect": "{\"x\":504.66668701171875,\"y\":474.6770935058594,\"width\":191.33334350585938,\"height\":50.083335876464844,\"top\":474.6770935058594,\"right\":696.0000305175781,\"bottom\":524.7604293823242,\"left\":504.66668701171875}",
+      "fab_rect": "{\"x\":573.2708740234375,\"y\":924,\"width\":155.39584350585938,\"height\":52,\"top\":924,\"right\":728.6667175292969,\"bottom\":976,\"left\":573.2708740234375}",
+      "fab_visible": true,
+      "screenshot": "responsive-768.png"
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "scroll_width": 1425,
+      "center_hits_submit": true,
+      "submit_rect": "{\"x\":1068.3333740234375,\"y\":482.66668701171875,\"width\":191.33334350585938,\"height\":50.083335876464844,\"top\":482.66668701171875,\"right\":1259.6667175292969,\"bottom\":532.7500228881836,\"left\":1068.3333740234375}",
+      "fab_rect": "{\"x\":1245.2708740234375,\"y\":924,\"width\":155.39584350585938,\"height\":52,\"top\":924,\"right\":1400.6667175292969,\"bottom\":976,\"left\":1245.2708740234375}",
+      "fab_visible": true,
+      "screenshot": "responsive-1440.png"
+    }
+  ],
+  "home_assistant_readonly_check": {
+    "visible": true,
+    "aria_label": "打开 AI 法律顾问",
+    "rect": "{\"x\":1245.2708740234375,\"y\":924,\"width\":155.39584350585938,\"height\":52,\"top\":924,\"right\":1400.6667175292969,\"bottom\":976,\"left\":1245.2708740234375}",
+    "inside_viewport": true
+  },
+  "admin": {
+    "published_guides": 190,
+    "generatable_localities": 173,
+    "unpublished_candidates": 28,
+    "tracked_exact_places": 3590,
+    "province_rows": 31,
+    "pending_public_outbox_total": 342,
+    "outbox_status": "PENDING_OPENCLAW",
+    "pending_is_global_total_not_this_batch_count": true,
+    "details_expanded": 0,
+    "collection_or_sync_clicked": false,
+    "screenshots": [
+      "admin-regions-1440.png",
+      "admin-public-status-1440.png"
+    ]
+  },
+  "post_fix_console_errors_or_warnings_observed": 0,
+  "assistant_overlap_regression": {
+    "status": "PASS",
+    "before_fix": "Native minimal scroll put generate center under fixed assistant-fab; read-only elementFromPoint confirmed interception.",
+    "after_fix": "At the original narrow desktop case, native hover/minimal-scroll placed generate at y845.98..896.06 and fab at y781.99..833.99; generate center hit the actual submit control. Native mouse open and confirm returned req81 HTTP200.",
+    "all_final_11_native_clicks_checked_center": true,
+    "requested_widths": [
+      375,
+      768,
+      1440
+    ],
+    "actual_widths": [
+      375,
+      768,
+      1440
+    ],
+    "initial_misdirected_clicks": 2,
+    "initial_status_gets": 2,
+    "initial_chat_or_inference_posts": 0,
+    "keyboard_supplementary_request": 73,
+    "keyboard_supplement_not_counted_in_11": true
+  },
+  "binary_download_verification": {
+    "status": "NOT_RUN_TOOL_POLICY",
+    "reason": "Chrome DevTools refused chrome://downloads navigation: Navigating to chrome: URLs is not allowed.",
+    "bypassed": false,
+    "live_native_files_read_or_copied": 0,
+    "response_file_zero_bytes_not_used_as_evidence": true,
+    "independent_evidence": "Previously completed candidate native files/20-page QA and root's separate live HTTP ZIP/CRC tests are separate evidence; this browser report does not claim those as live native file-byte verification."
+  },
+  "models_inference_or_chat_calls_by_this_task": 0,
+  "word_started_by_this_task": false,
+  "code_database_git_services_modified_by_this_task": false,
+  "screenshot_output": "Tool-returned native screenshot pixels saved as ordinary task artifacts; no blocked internal-URL or filesystem-read override.",
+  "browser_left_open": true,
+  "private_raw_evidence": "Raw POST payloads, request/response text, pre-fix diagnostics and unreviewed screenshots remain only in .runtime.",
+  "public_screenshots": [
+    "responsive-375.png",
+    "responsive-768.png",
+    "responsive-1440.png",
+    "admin-regions-1440.png",
+    "admin-public-status-1440.png"
+  ]
+}
