@@ -1,13 +1,16 @@
 {
   "name": "labourlawyer-desktop",
-  "version": "1.0.0",
+  "version": "1.1.0-preview.1",
   "private": true,
   "description": "LabourLawyer 劳动仲裁文书助手桌面客户端",
+  "author": "LabourLawyer contributors",
+  "license": "MIT",
   "main": "main.cjs",
   "scripts": {
     "dev": "electron .",
-    "build:frontend": "npm --prefix ../frontend run build",
-    "dist": "npm run build:frontend && electron-builder"
+    "test": "node --test test-server.cjs",
+    "build:frontend": "node build-release.cjs --web-only",
+    "dist": "node build-release.cjs"
   },
   "devDependencies": {
     "electron": "^44.4.1",
@@ -17,16 +20,23 @@
     "appId": "cn.labourlawyer.desktop",
     "productName": "LabourLawyer",
     "directories": {
-      "output": "release"
+      "output": "../.runtime/release-20261029/desktop/artifacts"
     },
     "files": [
       "main.cjs",
-      "preload.cjs"
+      "preload.cjs",
+      "server.cjs",
+      "start.html",
+      "README.md"
     ],
     "extraResources": [
       {
-        "from": "../frontend/dist",
+        "from": "../.runtime/release-20261029/desktop/web",
         "to": "web"
+      },
+      {
+        "from": "../.runtime/release-20261029/desktop/notices",
+        "to": "notices"
       }
     ],
     "win": {
@@ -34,8 +44,20 @@
         "nsis",
         "portable"
       ],
-      "icon": "build/icon.ico"
+      "icon": "build/icon.ico",
+      "artifactName": "LabourLawyer-${version}-windows-${arch}-setup.${ext}",
+      "signExecutable": false
     },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "runAfterFinish": false,
+      "license": "../.runtime/release-20261029/desktop/notices/INSTALL-LICENSE.txt",
+      "shortcutName": "LabourLawyer 文书助手"
+    },
+    "portable": { "artifactName": "LabourLawyer-${version}-windows-${arch}-portable.${ext}" },
+    "publish": null,
     "mac": {
       "target": [
         "dmg"
