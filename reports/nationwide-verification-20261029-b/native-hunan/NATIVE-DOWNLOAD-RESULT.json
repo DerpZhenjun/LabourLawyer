@@ -1,0 +1,111 @@
+{
+  "checked_at": "2026-10-29T10:03:11.426410+00:00",
+  "scope": "Hunan B candidate native generation download; synthetic data only; not publication approval",
+  "browser_session": "oct29-root-native-download",
+  "base": "http://127.0.0.1:5174",
+  "expected": 2,
+  "completed": 2,
+  "status": "PASS",
+  "records": [
+    {
+      "region_code": "430103",
+      "selector_district": "天心区",
+      "official_authority": "长沙市天心区人力资源和社会保障局",
+      "kind": "application",
+      "downloaded_filename": "天心区-仲裁申请书-官方DOC转换填写.docx",
+      "browser_download_state": 2,
+      "browser_reported_bytes": 16690,
+      "bytes": 16690,
+      "sha256": "1324eae4e8aad4b46e53d51d085e00892eabc82c763190ba6ce16cf2a68397d4",
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "synthetic_marker": "虚构天心下载劳动者",
+      "synthetic_marker_preserved": true,
+      "request_facts_and_accompanying_evidence_preserved": true,
+      "independent_evidence_list": false,
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "source_download_format": "doc",
+      "generated_format": "docx",
+      "generated_kind": "filled_platform_conversion_of_own_official_doc",
+      "official_docx_original": false,
+      "candidate_source_context": {
+        "source_id": "77b8c6dd323c643b5025e13b",
+        "version": 189,
+        "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+        "template_id": "3e8afa8905ca6377aa1ff4a0",
+        "official_doc_sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+        "platform_derived_docx_sha256": "662c722d87b1383ac14842b34186b217b0d5a9e874317d3b5daa34e93540d1bb",
+        "context_observation": "candidate_store_readonly and observed native selector, authority and conversion-confirmation UI; not captured response headers"
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "pages": 2,
+        "images": [
+          "reports/nationwide-verification-20261029-b/native-hunan/pages/430103-application-1.png",
+          "reports/nationwide-verification-20261029-b/native-hunan/pages/430103-application-2.png"
+        ],
+        "signature_date_copy_count_blank": true,
+        "note": "Both pages individually opened with view_image; request, facts and accompanying evidence readable; no clipping, overlap, or missing glyphs."
+      }
+    },
+    {
+      "region_code": "430104",
+      "selector_district": "岳麓区",
+      "official_authority": "湖南湘江新区管理委员会民政和社会保障局（退役军人事务局）",
+      "kind": "application",
+      "downloaded_filename": "岳麓区-仲裁申请书-官方DOC转换填写.docx",
+      "browser_download_state": 2,
+      "browser_reported_bytes": 16702,
+      "bytes": 16702,
+      "sha256": "289ac60ed2f624e6bbc61b7ecc7e885eee13043cacc4f8495cf4e26e6c125026",
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "synthetic_marker": "虚构岳麓下载劳动者",
+      "synthetic_marker_preserved": true,
+      "request_facts_and_accompanying_evidence_preserved": true,
+      "independent_evidence_list": false,
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "source_download_format": "doc",
+      "generated_format": "docx",
+      "generated_kind": "filled_platform_conversion_of_own_official_doc",
+      "official_docx_original": false,
+      "candidate_source_context": {
+        "source_id": "45e6cae69c980713f0bfb87a",
+        "version": 190,
+        "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+        "template_id": "e2081c5c1d6f8fd0127e7ab4",
+        "official_doc_sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+        "platform_derived_docx_sha256": "7fbb235b7705f5ee51c877a4ce43f1bbff75273523d43133ad44f68da047ca2f",
+        "context_observation": "candidate_store_readonly and observed native selector, authority and conversion-confirmation UI; not captured response headers"
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "pages": 2,
+        "images": [
+          "reports/nationwide-verification-20261029-b/native-hunan/pages/430104-application-1.png",
+          "reports/nationwide-verification-20261029-b/native-hunan/pages/430104-application-2.png"
+        ],
+        "signature_date_copy_count_blank": true,
+        "note": "Both pages individually opened with view_image; request, facts and accompanying evidence readable; no clipping, overlap, or missing glyphs."
+      }
+    }
+  ],
+  "method": "Native province/city/district controls, synthetic form fill, observed confirm and native click, Chrome own downloads state=2, copy exact observed filePath, ZIP/XML/marker verification. No API replay or directory enumeration.",
+  "identity_note": "岳麓区 selector is tied only to its independently verified specific Hunan Xiangjiang New Area arbitration guide and own authority; no general regional inheritance is asserted.",
+  "word_isolation": {
+    "method": "CoCreateInstanceEx/IID_IDispatch (DispatchEx semantics)",
+    "new_instance_pid": 115520,
+    "both_document_hwnd_match": true,
+    "macro_security": 3,
+    "links_disabled": true,
+    "readonly": true,
+    "only_own_instance_quit": true,
+    "own_instance_exited": true
+  },
+  "models_called_by_this_task": 0,
+  "services_started_or_changed_by_this_task": 0,
+  "published_by_this_task": false,
+  "private_artifacts": "Exact filePath/blob observations, copied DOCX/PDF, render input and isolation proof remain only in .runtime."
+}

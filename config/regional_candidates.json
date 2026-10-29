@@ -318,5 +318,33 @@
     "source_url": "https://wxyx.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=40&iddept_ql_inf=1132028201404667594002014302002&ql_kind=20&iddept_yw_inf=113202820140466759400201430200201",
     "published": false,
     "can_generate": false
+  },
+  {
+    "province": "hunan",
+    "city": "长沙市",
+    "district": "天心区",
+    "region_code": "430103",
+    "source_id": "77b8c6dd323c643b5025e13b",
+    "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+    "published": false,
+    "can_generate": false,
+    "api_qa_status": "PASS",
+    "document_visual_qa_status": "PASS",
+    "web_qa_status": "NOT_RUN",
+    "offline_qa_report": "reports/nationwide-verification-20261029-b/hunan/TEST-REPORT.md"
+  },
+  {
+    "province": "hunan",
+    "city": "长沙市",
+    "district": "岳麓区",
+    "region_code": "430104",
+    "source_id": "45e6cae69c980713f0bfb87a",
+    "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+    "published": false,
+    "can_generate": false,
+    "api_qa_status": "PASS",
+    "document_visual_qa_status": "PASS",
+    "web_qa_status": "NOT_RUN",
+    "offline_qa_report": "reports/nationwide-verification-20261029-b/hunan/TEST-REPORT.md"
   }
 ]

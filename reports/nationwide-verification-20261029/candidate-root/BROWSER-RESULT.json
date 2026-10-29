@@ -1,0 +1,73 @@
+{
+  "checked_at": "2026-10-29T09:47:46.570Z",
+  "candidate_acceptance": true,
+  "checks": [
+    {
+      "name": "海曙区 source, local materials and form-first layout",
+      "passed": true
+    },
+    {
+      "name": "海曙区 cancellation and actual application HTTP request",
+      "passed": true
+    },
+    {
+      "name": "海曙区 one evidence row, add/remove and actual evidence HTTP request",
+      "passed": true
+    },
+    {
+      "name": "鄞州区 source, local materials and form-first layout",
+      "passed": true
+    },
+    {
+      "name": "鄞州区 cancellation and actual application HTTP request",
+      "passed": true
+    },
+    {
+      "name": "鄞州区 one evidence row, add/remove and actual evidence HTTP request",
+      "passed": true
+    },
+    {
+      "name": "肥东县 source, local materials and form-first layout",
+      "passed": true
+    },
+    {
+      "name": "Feidong overflow is explained before confirmation; no text is cropped",
+      "passed": true
+    },
+    {
+      "name": "肥东县 cancellation and actual application HTTP request",
+      "passed": true
+    },
+    {
+      "name": "Ningbo district switch replaces source instead of inheriting the last one",
+      "passed": true
+    },
+    {
+      "name": "瑶海区 own guide does not falsely expose an unadapted generator",
+      "passed": true
+    },
+    {
+      "name": "青羊区 own guide does not falsely expose an unadapted generator",
+      "passed": true
+    },
+    {
+      "name": "Candidate Feidong form responsive 375",
+      "passed": true
+    },
+    {
+      "name": "Candidate Feidong form responsive 768",
+      "passed": true
+    },
+    {
+      "name": "Candidate Feidong form responsive 1440",
+      "passed": true
+    },
+    {
+      "name": "Candidate console and network contain no model inference",
+      "passed": true
+    }
+  ],
+  "mcp_binary_capture": false,
+  "binary_gap_closed_by": "../native-ningbo-feidong/NATIVE-DOWNLOAD-RESULT.json",
+  "no_models_called": true
+}

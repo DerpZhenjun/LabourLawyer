@@ -1,0 +1,50 @@
+{
+  "results": [
+    {
+      "name": "天心区 exact source, form-first, own four materials and no invented ID slot",
+      "passed": true
+    },
+    {
+      "name": "天心区 embedded evidence add/remove, confirmation cancel and converted DOC origin",
+      "passed": true
+    },
+    {
+      "name": "天心区 responsive 375",
+      "passed": true
+    },
+    {
+      "name": "天心区 responsive 768",
+      "passed": true
+    },
+    {
+      "name": "天心区 responsive 1440",
+      "passed": true
+    },
+    {
+      "name": "岳麓区 exact source, form-first, own four materials and no invented ID slot",
+      "passed": true
+    },
+    {
+      "name": "岳麓区 embedded evidence add/remove, confirmation cancel and converted DOC origin",
+      "passed": true
+    },
+    {
+      "name": "岳麓区 responsive 375",
+      "passed": true
+    },
+    {
+      "name": "岳麓区 responsive 768",
+      "passed": true
+    },
+    {
+      "name": "岳麓区 responsive 1440",
+      "passed": true
+    },
+    {
+      "name": "console clean; no model inference",
+      "passed": true
+    }
+  ],
+  "binary_validation": false,
+  "models_called": false
+}

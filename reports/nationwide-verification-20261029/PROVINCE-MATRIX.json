@@ -4,7 +4,7 @@
   "targets_total": 3590,
   "published_guides": 181,
   "generatable_localities": 166,
-  "unpublished_candidates": 31,
+  "unpublished_candidates": 33,
   "provinces": [
     {
       "slug": "beijing",
@@ -200,8 +200,8 @@
       "published_guides": 0,
       "generatable_localities": 0,
       "guide_only": 0,
-      "candidates": 1,
-      "uncollected": 162,
+      "candidates": 3,
+      "uncollected": 160,
       "completion_status": "incomplete"
     },
     {

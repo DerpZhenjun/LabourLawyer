@@ -1,0 +1,202 @@
+{
+  "checked_at": "2026-10-29T10:00:52.843435+00:00",
+  "scope": "A candidate native browser downloads; synthetic data only; not publication approval",
+  "browser_session": "oct29-root-native-download",
+  "base": "http://127.0.0.1:5174",
+  "expected": 5,
+  "completed": 5,
+  "status": "PASS",
+  "records": [
+    {
+      "region_code": "330203",
+      "district": "海曙区",
+      "kind": "application",
+      "downloaded_filename": "海曙区-仲裁申请书-空白表格填写.docx",
+      "browser_download_state": 2,
+      "browser_reported_bytes": 27784,
+      "bytes": 27784,
+      "sha256": "e12ae7e49b119bc5472e5d252d3a6e44d45d4f1256b744d6afeaa5c321b8f31a",
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "synthetic_marker": "虚构浏览器海曙验收",
+      "synthetic_marker_preserved": true,
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "generation_before_handoff_by_root": true,
+      "candidate_source_context": {
+        "source_id": "d06f0baa1875a403975389c3",
+        "version": 182,
+        "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=a57febe6-cd30-4a53-8b4c-f24edaaf7864",
+        "template_id": "e8f3fa9ebcb570cec3494bda",
+        "official_original_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+        "context_observation": "candidate_store_readonly_and_observed_native_UI_locality; not a claim of captured response headers"
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "pages": 3,
+        "images": [
+          "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/330203-application-1.png",
+          "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/330203-application-2.png",
+          "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/330203-application-3.png"
+        ],
+        "signature_and_date_blank": true,
+        "note": "All pages opened individually with view_image; no clipping, overlaps, or missing glyphs observed."
+      }
+    },
+    {
+      "region_code": "330203",
+      "district": "海曙区",
+      "kind": "evidence",
+      "downloaded_filename": "海曙区-证据清单-空白表格填写.docx",
+      "browser_download_state": 2,
+      "browser_reported_bytes": 15753,
+      "bytes": 15753,
+      "sha256": "74efca514b1b81be0b215af2489e2c19f2770fbbe83f79fc92c249cf46665374",
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "synthetic_marker": "虚构海曙原生下载证据",
+      "synthetic_marker_preserved": true,
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "generation_before_handoff_by_root": false,
+      "candidate_source_context": {
+        "source_id": "d06f0baa1875a403975389c3",
+        "version": 182,
+        "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=a57febe6-cd30-4a53-8b4c-f24edaaf7864",
+        "template_id": "da297d0c901d1a13720781b3",
+        "official_original_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+        "context_observation": "candidate_store_readonly_and_observed_native_UI_locality; not a claim of captured response headers"
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "pages": 1,
+        "images": [
+          "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/330203-evidence-1.png"
+        ],
+        "signature_and_date_blank": true,
+        "note": "All pages opened individually with view_image; no clipping, overlaps, or missing glyphs observed."
+      }
+    },
+    {
+      "region_code": "330212",
+      "district": "鄞州区",
+      "kind": "application",
+      "downloaded_filename": "鄞州区-仲裁申请书-空白表格填写.docx",
+      "browser_download_state": 2,
+      "browser_reported_bytes": 27595,
+      "bytes": 27595,
+      "sha256": "ad75a2e07e30add792c24ba27d319ec6c3744f9293d51af34b4a8805aca3a86a",
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "synthetic_marker": "虚构鄞州下载劳动者",
+      "synthetic_marker_preserved": true,
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "generation_before_handoff_by_root": false,
+      "candidate_source_context": {
+        "source_id": "dfa77c6a4ab07a39c9882710",
+        "version": 183,
+        "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=73f99740-5b23-424a-9ae8-be607cdceaeb",
+        "template_id": "ce4729c0bfa69f36f1d00555",
+        "official_original_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+        "context_observation": "candidate_store_readonly_and_observed_native_UI_locality; not a claim of captured response headers"
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "pages": 3,
+        "images": [
+          "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/330212-application-1.png",
+          "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/330212-application-2.png",
+          "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/330212-application-3.png"
+        ],
+        "signature_and_date_blank": true,
+        "note": "All pages opened individually with view_image; no clipping, overlaps, or missing glyphs observed."
+      }
+    },
+    {
+      "region_code": "330212",
+      "district": "鄞州区",
+      "kind": "evidence",
+      "downloaded_filename": "鄞州区-证据清单-空白表格填写.docx",
+      "browser_download_state": 2,
+      "browser_reported_bytes": 15752,
+      "bytes": 15752,
+      "sha256": "6a911f18dc1d2061039be1e3555eb1aba2d4d5a8a254132b3b5ca0c3917e3b3e",
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "synthetic_marker": "虚构鄞州原生下载证据",
+      "synthetic_marker_preserved": true,
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "generation_before_handoff_by_root": false,
+      "candidate_source_context": {
+        "source_id": "dfa77c6a4ab07a39c9882710",
+        "version": 183,
+        "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=73f99740-5b23-424a-9ae8-be607cdceaeb",
+        "template_id": "0f2f0a30f05faec1d992261a",
+        "official_original_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+        "context_observation": "candidate_store_readonly_and_observed_native_UI_locality; not a claim of captured response headers"
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "pages": 1,
+        "images": [
+          "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/330212-evidence-1.png"
+        ],
+        "signature_and_date_blank": true,
+        "note": "All pages opened individually with view_image; no clipping, overlaps, or missing glyphs observed."
+      }
+    },
+    {
+      "region_code": "340122",
+      "district": "肥东县",
+      "kind": "application",
+      "downloaded_filename": "肥东县-仲裁申请书-空白表格填写.docx",
+      "browser_download_state": 2,
+      "browser_reported_bytes": 12503,
+      "bytes": 12503,
+      "sha256": "9173d38286ee05aa2114f615754c820c017b8177df0397c7975a9ce26cb3dc98",
+      "zip_integrity": "PASS",
+      "document_xml_parse": "PASS",
+      "synthetic_marker": "虚构肥东下载劳动者",
+      "synthetic_marker_preserved": true,
+      "native_ui_generation": true,
+      "api_replay_used": false,
+      "generation_before_handoff_by_root": false,
+      "candidate_source_context": {
+        "source_id": "6a6e5a998809bb0009176648",
+        "version": 185,
+        "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+        "template_id": "ff8080819b0b50f201a036dff7642d44",
+        "official_original_sha256": "d06dfdd7f7c0dd0210c8cc7ba4836cf06312558681bd781f0d4fba683ea18373",
+        "context_observation": "candidate_store_readonly_and_observed_native_UI_locality; not a claim of captured response headers"
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "pages": 2,
+        "images": [
+          "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/340122-application-1.png",
+          "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/340122-application-2.png"
+        ],
+        "signature_and_date_blank": true,
+        "note": "All pages opened individually with view_image; no clipping, overlaps, or missing glyphs observed."
+      }
+    }
+  ],
+  "download_method": "Native UI confirm, Chrome own downloads shadow DOM completion state=2, copy exact observed filePath, validate ZIP/XML and marker; no directory enumeration or API replay.",
+  "cli_download_path_limitation": "wait --download destination was not accepted as file evidence; Chrome default-directory real files were verified.",
+  "word_isolation": {
+    "method": "CoCreateInstanceEx/IID_IDispatch (DispatchEx semantics)",
+    "new_instance_pid": 77208,
+    "all_five_document_hwnd_match": true,
+    "macro_security": 3,
+    "links_disabled": true,
+    "readonly": true,
+    "only_own_instance_quit": true,
+    "own_instance_exited": true
+  },
+  "models_called_by_this_task": 0,
+  "services_started_or_changed_by_this_task": 0,
+  "published_by_this_task": false,
+  "private_artifacts": "Exact filePath and blob UUID observations, copied DOCX/PDF, render input and process proof remain only in .runtime."
+}

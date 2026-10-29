@@ -1,0 +1,40 @@
+{
+  "verified_at": "2026-10-29T10:00:41.141213+00:00",
+  "regions": {
+    "320281": {
+      "source_id": "3d304f186983f34c4170a398",
+      "live_version": 186
+    },
+    "320282": {
+      "source_id": "509219666f61612819e02f36",
+      "live_version": 187
+    }
+  },
+  "ui_http_checks_passed": 17,
+  "console_error": 0,
+  "console_warn": 0,
+  "responsive_widths": [
+    375,
+    768,
+    1440
+  ],
+  "actual_native_downloads": 6,
+  "own_original_application_downloads": 2,
+  "actual_generated_application_downloads": 2,
+  "actual_generated_evidence_downloads": 2,
+  "actual_pk_crc_sha_validation_passed": true,
+  "application_birthDate": "1991-05-09",
+  "application_copyCount": 3,
+  "application_evidenceCopyCount": 2,
+  "actual_docx_values_verified": true,
+  "rendered_generated_documents": 4,
+  "rendered_and_viewed_pages": 6,
+  "actual_document_visual_qa_passed": true,
+  "acceptance_passed": true,
+  "mcp_binary_limitation_preserved": "BROWSER-RESULTS.json remains unchanged: MCP response files were zero bytes. Separate Agent Browser native files now close that binary gap; never reinterpret the earlier MCP stage as binary success.",
+  "no_http_replay": true,
+  "no_services_started_or_stopped": true,
+  "no_models_called": true,
+  "no_shared_code_db_or_git_changes": true,
+  "not_published_by_this_task": true
+}

@@ -1,0 +1,222 @@
+{
+  "scope": "two independently captured Hunan guides; four other districts remain discovery only",
+  "places": [
+    {
+      "province": "hunan",
+      "city": "长沙市",
+      "district": "天心区",
+      "region_code": "430103",
+      "authority": "长沙市天心区人力资源和社会保障局",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+      "source_id": "77b8c6dd323c643b5025e13b",
+      "checked_at": "2026-10-29T09:15:43.954691+00:00",
+      "guide_status": "candidate",
+      "generation_enabled": false,
+      "reviewed_sections": [
+        "基本信息",
+        "受理条件",
+        "申请材料",
+        "流程说明",
+        "办理流程",
+        "法律依据",
+        "权利与义务",
+        "结果样本",
+        "常见问题"
+      ],
+      "templates": [
+        {
+          "region_code": "430103",
+          "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+          "kind": "blank",
+          "original_name": "1－仲裁申请书（劳动者）.doc",
+          "sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+          "document_types": [
+            "application"
+          ]
+        },
+        {
+          "region_code": "430103",
+          "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+          "kind": "sample",
+          "original_name": "仲裁申请书（劳动者）.doc",
+          "sha256": "369d38b1bcb1d92e0be6b815d6269967fc7324afbb63cc22a94331bbfcc220cc",
+          "document_types": [
+            "application"
+          ]
+        },
+        {
+          "region_code": "430103",
+          "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+          "kind": "sample",
+          "original_name": "仲裁申请书（单位）.doc",
+          "sha256": "00a47b36fa43d89f8c604d66585ac5e191360dd3d546feecc82ea8d6b4307444",
+          "document_types": [
+            "application"
+          ]
+        },
+        {
+          "region_code": "430103",
+          "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+          "kind": "blank",
+          "original_name": "2－仲裁申请书（单位）.doc",
+          "sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+          "document_types": [
+            "application"
+          ]
+        }
+      ],
+      "application_template_status": "blank_found",
+      "evidence_template_status": "not_found_in_checked_sources",
+      "note": "已核对本事项自身指南、4项材料和4份DOC原件。劳动者申请书以本平台转换副本填写；附随证据属于申请书，不作为独立证据清单。办结时限与现场要求冲突保留；网办只核验至登录边界。"
+    },
+    {
+      "province": "hunan",
+      "city": "长沙市",
+      "district": "岳麓区",
+      "region_code": "430104",
+      "authority": "湖南湘江新区管理委员会民政和社会保障局（退役军人事务局）",
+      "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+      "source_id": "45e6cae69c980713f0bfb87a",
+      "checked_at": "2026-10-29T09:18:59.700826+00:00",
+      "guide_status": "candidate",
+      "generation_enabled": false,
+      "reviewed_sections": [
+        "基本信息",
+        "受理条件",
+        "申请材料",
+        "流程说明",
+        "办理流程",
+        "法律依据",
+        "权利与义务",
+        "结果样本",
+        "常见问题"
+      ],
+      "templates": [
+        {
+          "region_code": "430104",
+          "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+          "kind": "sample",
+          "original_name": "仲裁申请书（劳动者）.doc",
+          "sha256": "369d38b1bcb1d92e0be6b815d6269967fc7324afbb63cc22a94331bbfcc220cc",
+          "document_types": [
+            "application"
+          ]
+        },
+        {
+          "region_code": "430104",
+          "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+          "kind": "sample",
+          "original_name": "仲裁申请书（单位）.doc",
+          "sha256": "00a47b36fa43d89f8c604d66585ac5e191360dd3d546feecc82ea8d6b4307444",
+          "document_types": [
+            "application"
+          ]
+        },
+        {
+          "region_code": "430104",
+          "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+          "kind": "blank",
+          "original_name": "2－仲裁申请书（单位）.doc",
+          "sha256": "756b7ee8f3d4a0d5ad23adaec090b5f1722acc7669c869638b0535dcdf9ae279",
+          "document_types": [
+            "application"
+          ]
+        },
+        {
+          "region_code": "430104",
+          "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+          "kind": "blank",
+          "original_name": "1－仲裁申请书（劳动者）.doc",
+          "sha256": "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97",
+          "document_types": [
+            "application"
+          ]
+        }
+      ],
+      "application_template_status": "blank_found",
+      "evidence_template_status": "not_found_in_checked_sources",
+      "note": "已核对本事项自身指南、4项材料和4份DOC原件。劳动者申请书以本平台转换副本填写；附随证据属于申请书，不作为独立证据清单。办结时限与现场要求冲突保留；网办只核验至登录边界。官网区域名为湖南湘江新区，事项选择器为岳麓区，保留本事项430104999000范围证据，不扩展到新区其他区域。"
+    },
+    {
+      "province": "guangdong",
+      "city": "佛山市",
+      "district": "禅城区",
+      "region_code": "440604",
+      "source_url": "https://www.chancheng.gov.cn/rsj/zxfw/xzzx/content/post_723175.html",
+      "checked_at": "2026-10-29T09:27:50.093536+00:00",
+      "guide_status": "discovery_only",
+      "generation_enabled": false,
+      "reviewed_sections": [
+        "本区官方部门入口",
+        "事项检索",
+        "附件与来源核对"
+      ],
+      "templates": [],
+      "application_template_status": "not_checked",
+      "evidence_template_status": "not_found_in_checked_sources",
+      "note": "本区2015年历史DOC附件已保存和逐页检查，当前适用性待核实，未作为现行模板开放生成。现行正式指南仍待定位，不把搜索0条当成官方未提供。"
+    },
+    {
+      "province": "guangdong",
+      "city": "佛山市",
+      "district": "南海区",
+      "region_code": "440605",
+      "source_url": "https://www.nanhai.gov.cn/",
+      "checked_at": "2026-10-29T09:27:50.093536+00:00",
+      "guide_status": "discovery_only",
+      "generation_enabled": false,
+      "reviewed_sections": [
+        "本区官方部门入口",
+        "事项检索",
+        "附件与来源核对"
+      ],
+      "templates": [],
+      "application_template_status": "not_found_in_checked_sources",
+      "evidence_template_status": "not_found_in_checked_sources",
+      "note": "已查自身人社部门入口及本区搜索，现行指南和模板尚未定位；未继承省级或邻区事项，不声明官方未提供。"
+    },
+    {
+      "province": "shandong",
+      "city": "济南市",
+      "district": "历下区",
+      "region_code": "370102",
+      "source_url": "https://www.lixia.gov.cn/",
+      "checked_at": "2026-10-29T09:26:03.909261+00:00",
+      "guide_status": "discovery_only",
+      "generation_enabled": false,
+      "reviewed_sections": [
+        "本区官方部门入口",
+        "事项检索",
+        "附件与来源核对"
+      ],
+      "templates": [],
+      "application_template_status": "not_found_in_checked_sources",
+      "evidence_template_status": "not_found_in_checked_sources",
+      "note": "自身部门与政务入口已查，正式指南和附件待定位；省入口访问受限。市级联系方式只作补充，不视为本区材料要求。"
+    },
+    {
+      "province": "shandong",
+      "city": "济南市",
+      "district": "市中区",
+      "region_code": "370103",
+      "source_url": "https://www.shizhong.gov.cn/",
+      "checked_at": "2026-10-29T09:26:03.909261+00:00",
+      "guide_status": "discovery_only",
+      "generation_enabled": false,
+      "reviewed_sections": [
+        "本区官方部门入口",
+        "事项检索",
+        "附件与来源核对"
+      ],
+      "templates": [],
+      "application_template_status": "not_found_in_checked_sources",
+      "evidence_template_status": "not_found_in_checked_sources",
+      "note": "已查自身官方目录；目标词和已知事项对照词均返回0，故检索结果不能证明服务不存在，当前指南和模板仍待核验。"
+    }
+  ],
+  "published": false,
+  "official_absence_claims": 0,
+  "openclaw_pending": 6,
+  "openclaw_acknowledged": 0,
+  "models_called": false
+}

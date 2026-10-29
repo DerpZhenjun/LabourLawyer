@@ -1,0 +1,41 @@
+{
+  "scope": "Public synthetic native download receipt and reviewed UI/page screenshots only; no DOCX/PDF, raw session, cookies, SSO, or actual filesystem paths.",
+  "files": {
+    "reports/nationwide-verification-20261029-b/native-hunan/NATIVE-DOWNLOAD-RESULT.json": {
+      "sha256": "fc474a0633cc3b975079da6b2cb5faa299b009350f03d125e11915e9bed83cb0",
+      "bytes": 5928
+    },
+    "reports/nationwide-verification-20261029-b/native-hunan/PAGE-QA.json": {
+      "sha256": "1cb5ade4db51a25f52425f29fc7a886516bcdeae188f2a9a1aa48e082c99d0e1",
+      "bytes": 1248
+    },
+    "reports/nationwide-verification-20261029-b/native-hunan/01-tianxin-confirm.png": {
+      "sha256": "55c9b2e55b37b849fea377cb426517a795751d89544dbbb4427bffca78058298",
+      "bytes": 71563
+    },
+    "reports/nationwide-verification-20261029-b/native-hunan/02-yuelu-confirm.png": {
+      "sha256": "29501877a92a312892f8ce3ba6e1a6205b8efb7b3a27dfeb5e2085961f3d533e",
+      "bytes": 73025
+    },
+    "reports/nationwide-verification-20261029-b/native-hunan/03-two-hunan-completed-downloads.png": {
+      "sha256": "2b24214645816dffcd1b6884139e4c6fc7c9b3c3c94d8343e34d5c0003bd8fb3",
+      "bytes": 49254
+    },
+    "reports/nationwide-verification-20261029-b/native-hunan/pages/430103-application-1.png": {
+      "sha256": "05a9ef5d9b43b9a3f87e24b581b1896daa41e07712823f7446616928f7a50638",
+      "bytes": 115286
+    },
+    "reports/nationwide-verification-20261029-b/native-hunan/pages/430103-application-2.png": {
+      "sha256": "3e0e06875961cd900e4150e48232814c1019c1c32a144e41f883f5605f384605",
+      "bytes": 108082
+    },
+    "reports/nationwide-verification-20261029-b/native-hunan/pages/430104-application-1.png": {
+      "sha256": "51082caf4c60afd0bf382dc2a27c7f59f6561cf5f15d47a90b58c4236d3c0a39",
+      "bytes": 115697
+    },
+    "reports/nationwide-verification-20261029-b/native-hunan/pages/430104-application-2.png": {
+      "sha256": "4c42ea8c669acd44b7418fb11756a77b05b132af1b433769ed3a71166e83d7af",
+      "bytes": 108293
+    }
+  }
+}

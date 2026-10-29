@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "documents": 2,
+  "pages": 4,
+  "method": "Isolated read-only Word export then Poppler 100dpi; every page and three native UI screenshots individually viewed.",
+  "generated_docx_not_official_original": true,
+  "signature_date_copy_count_blank": true,
+  "files": [
+    {
+      "file": "reports/nationwide-verification-20261029-b/native-hunan/pages/430103-application-1.png",
+      "sha256": "05a9ef5d9b43b9a3f87e24b581b1896daa41e07712823f7446616928f7a50638",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-b/native-hunan/pages/430103-application-2.png",
+      "sha256": "3e0e06875961cd900e4150e48232814c1019c1c32a144e41f883f5605f384605",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-b/native-hunan/pages/430104-application-1.png",
+      "sha256": "51082caf4c60afd0bf382dc2a27c7f59f6561cf5f15d47a90b58c4236d3c0a39",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029-b/native-hunan/pages/430104-application-2.png",
+      "sha256": "4c42ea8c669acd44b7418fb11756a77b05b132af1b433769ed3a71166e83d7af",
+      "visual_status": "PASS"
+    }
+  ]
+}

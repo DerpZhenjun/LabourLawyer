@@ -6,16 +6,24 @@ from pathlib import Path
 from urllib.parse import urlsplit
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'backend'))
 from regional_guides import RegionalStore,now
+from regional_public_provenance import public_evidence
 
 def save(path,data):
     path.parent.mkdir(parents=True,exist_ok=True)
     path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
 
-def public_guide(value):
+def public_guide(value,root=None):
     guide=deepcopy(value)
+    proof=public_evidence(guide,ROOT if root is None else root)
     # Public field text and source provenance remain; raw browser artifacts,
     # traces, headers, cookies, screenshots and opaque SSO redirects stay local.
     for key in ['evidence','version','region_id','content_hash']:guide.pop(key,None)
+    if proof is not None:
+        # The six fixed profiles have canonical public proof and static, checked
+        # channel metadata. Generic channel scrubbing would change those facts
+        # and prevent a clean release from rechecking its own provenance.
+        guide['evidence']=proof
+        return guide
     channel=guide.get('channel',{})
     check=channel.get('entry_check',{})
     if check:
@@ -37,7 +45,11 @@ def main():
         'guides':len(guides),'generatable_localities':sum(any(t.get('can_generate') for t in g['templates']) for g in guides),
         'directory_rows':len(directory),'files':{name:hashlib.sha256((out/name).read_bytes()).hexdigest() for name in ['guides.json','directory.json']}}
     save(out/'manifest.json',manifest)
-    candidates=json.loads((ROOT/'reports/nationwide-localization-20261028/CANDIDATES.json').read_text('utf8'))
-    save(ROOT/'config/regional_candidates.json',[{k:c[k] for k in ['province','city','district','region_code','source_id','source_url','published','can_generate'] if k in c} for c in candidates])
+    candidate_config=ROOT/'config/regional_candidates.json'
+    # The canonical queue carries review/source/publication metadata. The old
+    # report is a migration source only, never an authority to overwrite it.
+    if not candidate_config.exists():
+        candidates=json.loads((ROOT/'reports/nationwide-localization-20261028/CANDIDATES.json').read_text('utf8'))
+        save(candidate_config,[{k:c[k] for k in ['province','city','district','region_code','source_id','source_url','published','can_generate'] if k in c} for c in candidates])
     print(json.dumps(manifest,ensure_ascii=False))
 if __name__=='__main__':main()

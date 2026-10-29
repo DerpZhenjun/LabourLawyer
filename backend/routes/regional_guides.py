@@ -17,6 +17,7 @@ from regional_zhejiang_documents import fill_zhejiang_document,ADAPTER as ZHEJIA
 from regional_zhejiang_oct29 import fill_document as fill_ningbo_document,blank_binding as ningbo_blank_binding,ADAPTER as NINGBO_ADAPTER
 from regional_shangcheng_documents import fill_shangcheng_document,ADAPTER as SHANGCHENG_ADAPTER
 from regional_jiangsu_oct29 import fill_candidate_document as fill_oct29_jiangsu_document
+from regional_hunan_oct29b import fill_document as fill_hunan_document, ADAPTER as HUNAN_ADAPTER
 from regional_oct29_bindings import (jiangsu_binding as oct29_jiangsu_binding,feidong_canonical,fill_feidong_bound,
     JIANGSU_ADAPTER as OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER)
 from regional_directory import DirectoryStore
@@ -25,6 +26,13 @@ from routes.province_documents import ApplicationRequest, EvidenceRequest, _resp
 
 ROOT=Path(__file__).resolve().parents[2]
 router=APIRouter()
+
+@router.get('/release-capabilities')
+def release_capabilities():
+    """Identify loaded generation code before a reviewed data-only upgrade."""
+    return {'release_id':'oct29-own-localities-v1',
+            'adapters':[NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,HUNAN_ADAPTER],
+            'source_bound':True,'models_required':False}
 
 def store():
     return RegionalStore(os.getenv('LABOURLAWYER_REGIONAL_DB',ROOT/'backend/data/regional-guides.sqlite'))
@@ -117,13 +125,16 @@ def versions(province: str=Query(max_length=30),city: str=Query(max_length=80),d
     return {'items':store().versions(province,city,district)}
 
 def checked_path(template,guide=None):
-    path=(ROOT/template.get('file','')).resolve()
+    from regional_public_provenance import approved_report_attachment
+    filename=template.get('file') if isinstance(template,dict) else None
+    if not isinstance(filename,str) or not filename:raise HTTPException(409,'附件路径无效')
+    root=ROOT.resolve();path=(root/filename).resolve()
     # New reviewed blanks retain their original own-source evidence directory.
     # This exception requires the entire pinned guide and template contract, not
     # an arbitrary report path or a claimed adapter flag.
-    own_checked=guide is not None and (ningbo_blank_binding(guide,template) in {'application','evidence'}
-        or oct29_jiangsu_binding(guide,template) in {'application','evidence'} or feidong_canonical(guide,template) is not None)
-    if not path.is_relative_to((ROOT/'templates/_docx/_regional').resolve()) and not own_checked:
+    own_checked=guide is not None and (approved_report_attachment(guide,template,root)
+        or oct29_jiangsu_binding(guide,template) in {'application','evidence'})
+    if not path.is_relative_to(root) or (not path.is_relative_to((root/'templates/_docx/_regional').resolve()) and not own_checked):
         raise HTTPException(409,'附件文件不在已核验地区目录中')
     if not path.is_file():raise HTTPException(503,'当地附件暂不可下载，请打开官方来源')
     if hashlib.sha256(path.read_bytes()).hexdigest()!=template.get('sha256'):
@@ -133,8 +144,16 @@ def checked_path(template,guide=None):
 @router.get('/templates/{template_id}')
 def download(template_id: str,province: str=Query(max_length=30),city: str=Query(max_length=80),district: str=Query(max_length=80)):
     g=store().lookup(province,city,district)
-    t=next((t for t in g['templates'] if t['id']==template_id and t['region_code']==g.get('region_code')),None)
+    t=next((t for t in g['templates'] if t.get('id')==template_id),None)
     if not t:raise HTTPException(404,'未找到该地区的官方附件')
+    if 'region_code' not in t:
+        from regional_public_provenance import public_evidence,approved_report_attachment
+        if public_evidence(g,ROOT) is None or not approved_report_attachment(g,t,ROOT):
+            raise HTTPException(404,'未找到本区完整来源证明的官方附件')
+        # A response-local projection, never a store/captured-guide mutation.
+        t={**t,'region_code':g['region_code']}
+    elif t.get('region_code')!=g.get('region_code'):
+        raise HTTPException(404,'未找到该地区的官方附件')
     return FileResponse(checked_path(t,g),filename=t['original_name'],headers={'Cache-Control':'no-store'})
 
 class GenerateRequest(BaseModel):
@@ -166,6 +185,43 @@ class FeidongApplicationRequest(BaseModel):
     requests: list[str]=Field(default_factory=list,max_length=40)
     facts: str=Field(default='',max_length=2000)
 
+class HunanEmbeddedEvidence(BaseModel):
+    model_config={'extra':'forbid'}
+    name: str=Field(default='',max_length=300)
+    source: str=Field(default='',max_length=300)
+    purpose: str=Field(default='',max_length=300)
+
+class HunanApplicationRequest(BaseModel):
+    """Only fields that have a slot in these two own worker forms."""
+    model_config={'extra':'forbid','str_max_length':160}
+    applicantName: str=''
+    gender: str=''
+    birthDate: str=''
+    occupation: str=''
+    nationality: str=''
+    idAddress: str=''
+    postalCode: str=''
+    phone: str=''
+    workUnit: str=''
+    workUnitPostalCode: str=''
+    workUnitPhone: str=''
+    respondentName: str=''
+    registeredAddress: str=''
+    respondentPostalCode: str=''
+    legalRepName: str=''
+    legalRepPosition: str=''
+    legalRepPhone: str=''
+    hrContactName: str=''
+    hrContactPosition: str=''
+    hrContactPhone: str=''
+    thirdParty: str=''
+    committeeName: str=''
+    applicationDate: str=''
+    copyCount: str | int | float=''
+    requests: list[str]=Field(default_factory=list,max_length=8)
+    factsReason: str=Field(default='',max_length=1800)
+    evidenceList: list[HunanEmbeddedEvidence]=Field(default_factory=list,max_length=10)
+
 @router.post('/generate')
 def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
     # Never log the applicant payload or forward it to OpenClaw.
@@ -179,13 +235,16 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
     try:
         model=(BlankApplicationRequest if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER} else ApplicationRequest) if payload.kind=='application' else EvidenceRequest
         if adapter==FEIDONG_ADAPTER:model=FeidongApplicationRequest
+        if adapter==HUNAN_ADAPTER:model=HunanApplicationRequest
         data=model.model_validate(payload.data)
     except ValidationError as exc:
         raise HTTPException(422,'填写内容过长或格式不正确，请缩短后重试') from exc
     blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER}
-    if adapter in blank_adapters|{RONGJIANG_ADAPTER} and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
+    if adapter in blank_adapters|{RONGJIANG_ADAPTER,HUNAN_ADAPTER} and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
     try:
-        if adapter==OCT29_JIANGSU_ADAPTER:
+        if adapter==HUNAN_ADAPTER:
+            doc=fill_hunan_document(g,t,payload.kind,checked_path(t,g),data.model_dump())
+        elif adapter==OCT29_JIANGSU_ADAPTER:
             doc=fill_oct29_jiangsu_document(g,payload.kind,data.model_dump())
         elif adapter==FEIDONG_ADAPTER:
             doc=fill_feidong_bound(g,t,data.model_dump())
@@ -204,9 +263,9 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
                 doc=fill_blank_document(g,t,payload.kind,checked_path(t),data.model_dump())
         else:doc=fill_tianfu_reference(checked_path(t),payload.kind,data.model_dump())
     except ValueError as exc:raise HTTPException(409,str(exc)) from exc
-    suffix=('-依据官方DOC转换填写.docx' if adapter==RONGJIANG_ADAPTER else '-官方空白表格填写.docx' if adapter in blank_adapters else '-参考样表辅助填写.docx')
+    suffix=('-依据官方DOC转换填写.docx' if adapter in {RONGJIANG_ADAPTER,HUNAN_ADAPTER} else '-官方空白表格填写.docx' if adapter in blank_adapters else '-参考样表辅助填写.docx')
     name=g['district']+('申请书' if payload.kind=='application' else '证据清单')+suffix
     response=_response(doc,name,background_tasks)
-    response.headers['X-Document-Origin']=('official-blank-converted-filled' if adapter==RONGJIANG_ADAPTER else 'official-blank-filled' if adapter in blank_adapters else 'official-sample-adaptation-not-blank')
+    response.headers['X-Document-Origin']=('official-blank-converted-filled' if adapter in {RONGJIANG_ADAPTER,HUNAN_ADAPTER} else 'official-blank-filled' if adapter in blank_adapters else 'official-sample-adaptation-not-blank')
     response.headers['X-Guide-Source-ID']=g['source_id']
     return response

@@ -20,7 +20,8 @@ def jiangsu_binding(guide,template):
 def feidong_canonical(guide,template):
     try:
         canonical=load_guide('feidong')
-        if any(guide.get(k)!=v for k,v in canonical.items() if k not in {'templates','warnings'}):return None
+        lifecycle={'published','publication_status','candidate_web_qa','can_generate'}
+        if any(guide.get(k)!=v for k,v in canonical.items() if k not in {'templates','warnings'}|lifecycle):return None
         if guide.get('source_id') not in {None,digest(canonical['source_url'])[:24]}:return None
         original=next(t for t in canonical['templates'] if t['official_kind']=='blank')
         if any(template.get(k)!=v for k,v in original.items() if k not in {'document_types','can_generate'}):return None

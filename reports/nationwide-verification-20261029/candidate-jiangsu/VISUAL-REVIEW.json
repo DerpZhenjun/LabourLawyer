@@ -1,0 +1,20 @@
+{
+  "reviewed_at": "2026-10-29T09:45:05.973152+00:00",
+  "responsive_native_screenshots": [
+    "320281-application-375.png",
+    "320281-application-768.png",
+    "320281-application-1440.png",
+    "320281-evidence-375.png",
+    "320281-evidence-768.png",
+    "320281-evidence-1440.png",
+    "320282-application-375.png",
+    "320282-application-768.png",
+    "320282-application-1440.png",
+    "320282-evidence-375.png",
+    "320282-evidence-768.png",
+    "320282-evidence-1440.png"
+  ],
+  "viewing_method": "Local-only paired crops of top/form/guide portions from unchanged native full-page screenshots, plus native 320281 application confirmation and 320282 evidence confirmation images. Read-only DOM measures in BROWSER-RESULTS.json cover full document and body widths.",
+  "horizontal_overflow_observed": false,
+  "document_binary_or_page_QA": "not_verified_no_actual_browser_binary_available"
+}

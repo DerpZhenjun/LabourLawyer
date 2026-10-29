@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "documents": 5,
+  "pages": 10,
+  "method": "Isolated read-only Word export then Poppler 100dpi; every page individually viewed.",
+  "download_screenshot": "reports/nationwide-verification-20261029/native-ningbo-feidong/09-five-completed-downloads.png",
+  "limitations": [
+    "This is actual native download and generated-document QA. Existing root-owned browser interaction acceptance remains a separate record."
+  ],
+  "generated_docx_not_official_original": true,
+  "files": [
+    {
+      "file": "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/330203-application-1.png",
+      "sha256": "f72470cf0e96760c7f15ce58f1f7b5e09f4c5bd53a7a08e63bafcc050a868681",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/330203-application-2.png",
+      "sha256": "1b65b695ca5ead43d5151f3d3c3ab788357d133c3e7b3f54def9c19a03fd2175",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/330203-application-3.png",
+      "sha256": "c052bc8b6c05bb2dac831f676e2bd15cda56d661bdc859ac9c3e4b001ffa7a09",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/330203-evidence-1.png",
+      "sha256": "f4fb98575aca0d19cfc1aa97ebaa853c23a6556baf193ea9f1643ff95a834087",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/330212-application-1.png",
+      "sha256": "0a502a9ef21ae32ccfe41ce932987e176f588a86e259d65b3e56755dd8b116fe",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/330212-application-2.png",
+      "sha256": "d9286ccf82211aaecf37307ea2a5358efccf5cd7932a6626751eea39959be2fb",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/330212-application-3.png",
+      "sha256": "c052bc8b6c05bb2dac831f676e2bd15cda56d661bdc859ac9c3e4b001ffa7a09",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/330212-evidence-1.png",
+      "sha256": "2adf15dc4e675c174c87de18035cd1b3639b35b2523da1c2d6908a45dccd2c19",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/340122-application-1.png",
+      "sha256": "3f00fe0046cc305c6db65792477cba8aea4d5602562a881a1f350ee8c0ef9517",
+      "visual_status": "PASS"
+    },
+    {
+      "file": "reports/nationwide-verification-20261029/native-ningbo-feidong/pages/340122-application-2.png",
+      "sha256": "fd01e3c1843b811d04001529f6005f3434fed92163add4065d5ec8e7144b0177",
+      "visual_status": "PASS"
+    }
+  ]
+}

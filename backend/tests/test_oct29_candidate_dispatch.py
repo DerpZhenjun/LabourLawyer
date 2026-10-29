@@ -17,6 +17,18 @@ from routes import regional_guides as routes
 
 
 class OctoberDispatchTests(unittest.TestCase):
+    def test_publication_metadata_does_not_change_official_source_authorization(self):
+        from regional_zhejiang_oct29 import parse_capture
+        cases=[parse_capture('haishu'),parse_capture('yinzhou'),load_guide('feidong')]
+        for g in cases:
+            g=with_reference_capabilities(g)
+            expected=sum(t.get('can_generate') is True for t in g['templates'])
+            g.update(published=True,publication_status='published',candidate_web_qa='PASS',can_generate=True)
+            result=with_reference_capabilities(g)
+            self.assertEqual(sum(t.get('can_generate') is True for t in result['templates']),expected,g['district'])
+            changed=__import__('copy').deepcopy(g);changed['authority']='其他机关'
+            self.assertFalse(any(t.get('can_generate') for t in with_reference_capabilities(changed)['templates']))
+
     def test_jiangsu_own_blanks_use_shared_route_and_download_without_cross_county_reuse(self):
         with tempfile.TemporaryDirectory(dir=ROOT/'.runtime') as folder:
             store=RegionalStore(Path(folder)/'guides.sqlite')

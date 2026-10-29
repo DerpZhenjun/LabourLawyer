@@ -1,0 +1,70 @@
+{
+  "reviewed_at": "2026-10-29T10:00:41.141213+00:00",
+  "method": "Existing isolated CoCreateInstanceEx Word helper read-only export -> bundled Poppler pdftoppm110dpi -> opened every page with view_image",
+  "documents": [
+    {
+      "region_code": "320281",
+      "kind": "application",
+      "actual_docx_sha256": "d3a535057c0d05400e30568fff34dd8026a1fed95d31423cef0a02844da2b47d",
+      "pages": 2,
+      "reviewed_each_page": true,
+      "page_image_sha256": [
+        "e7b3df332ec100e891aebdc253ebe7c79d67115338e972ff3ee19ac884271474",
+        "2911155e1c9ce7371587828283e0b172729ba273385ee3583e3e137c78725b47"
+      ],
+      "render_pdf_sha256": "0cda90411a15ffebc197fa1f9ff64218024670ed45c4cef06b101b61c6a3aed4",
+      "visual_findings": "No clipping, overlap, broken table, blank unexpected page or missing glyph observed. Application birthday 1991-05-09 and copies 3/2 visible; signature/date blank. Evidence one data row and blank receipt/signature fields visible."
+    },
+    {
+      "region_code": "320281",
+      "kind": "evidence",
+      "actual_docx_sha256": "a0dfc4f7696258c56fb1fd4b79072af7b1f7862920f150a966c1500149b0b8a0",
+      "pages": 1,
+      "reviewed_each_page": true,
+      "page_image_sha256": [
+        "37b1af3a10ac79c2a1f2c530228c9a502ee4e7c73511833c25e38f2da5df0770"
+      ],
+      "render_pdf_sha256": "dc0160108bbb2c7fb518383c0ee9fe9cf8e9a0be8d8474698f887c598c6114d0",
+      "visual_findings": "No clipping, overlap, broken table, blank unexpected page or missing glyph observed. Application birthday 1991-05-09 and copies 3/2 visible; signature/date blank. Evidence one data row and blank receipt/signature fields visible."
+    },
+    {
+      "region_code": "320282",
+      "kind": "application",
+      "actual_docx_sha256": "d3a535057c0d05400e30568fff34dd8026a1fed95d31423cef0a02844da2b47d",
+      "pages": 2,
+      "reviewed_each_page": true,
+      "page_image_sha256": [
+        "e7b3df332ec100e891aebdc253ebe7c79d67115338e972ff3ee19ac884271474",
+        "2911155e1c9ce7371587828283e0b172729ba273385ee3583e3e137c78725b47"
+      ],
+      "render_pdf_sha256": "5a43e5725ae320015eef2a8dbdfa95d829a3c931e6f9e041f075abb31df15cf3",
+      "visual_findings": "No clipping, overlap, broken table, blank unexpected page or missing glyph observed. Application birthday 1991-05-09 and copies 3/2 visible; signature/date blank. Evidence one data row and blank receipt/signature fields visible."
+    },
+    {
+      "region_code": "320282",
+      "kind": "evidence",
+      "actual_docx_sha256": "a0dfc4f7696258c56fb1fd4b79072af7b1f7862920f150a966c1500149b0b8a0",
+      "pages": 1,
+      "reviewed_each_page": true,
+      "page_image_sha256": [
+        "37b1af3a10ac79c2a1f2c530228c9a502ee4e7c73511833c25e38f2da5df0770"
+      ],
+      "render_pdf_sha256": "857f5df71a5f698d981f72a5e8f1fe2bd468aac557e16df7ea452f785757ccac",
+      "visual_findings": "No clipping, overlap, broken table, blank unexpected page or missing glyph observed. Application birthday 1991-05-09 and copies 3/2 visible; signature/date blank. Evidence one data row and blank receipt/signature fields visible."
+    }
+  ],
+  "total_pages": 6,
+  "passed": true,
+  "isolation": {
+    "new_instance_pid": 8204,
+    "new_pid_verified": true,
+    "completed": 4,
+    "macro_security": 3,
+    "link_updates_disabled": true,
+    "option_restored_before_own_quit": true,
+    "original_pids_still_alive": true,
+    "quit_called_only_on_distinct_new_object": true
+  },
+  "public_render_images": false,
+  "raw_render_directory": ".runtime/candidate-browser-20261029/js/actual-download-render"
+}

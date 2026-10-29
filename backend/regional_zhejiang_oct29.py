@@ -134,7 +134,7 @@ def parse_yinzhou_capture(capture_root=None):return parse_capture('yinzhou',capt
 def blank_binding(guide, template):
     try:
         name=next(n for n,s in SPECS.items() if s['code']==guide.get('region_code')); retained=parse_capture(name)
-        keys=['province','city','district','region_code','source_url','source_id','source_type','authority','service_name','service_code','service_code_type','service_ids','evidence','fields','materials','verification_status','published','collected_at','verified_at']
+        keys=['province','city','district','region_code','source_url','source_id','source_type','authority','service_name','service_code','service_code_type','service_ids','evidence','fields','materials','verification_status','collected_at','verified_at']
         if any(guide.get(k)!=retained[k] for k in keys):return None
         own=next(t for t in retained['templates'] if t['id']==template.get('id'))
         if own['official_kind']!='blank':return None

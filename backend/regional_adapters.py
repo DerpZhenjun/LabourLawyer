@@ -10,6 +10,8 @@ from regional_zhejiang_oct29 import (with_capabilities as with_ningbo_capabiliti
     blank_binding as ningbo_blank_binding,ADAPTER as NINGBO_ADAPTER,SPECS as NINGBO_SPECS)
 from regional_oct29_bindings import (with_capabilities as with_oct29_capabilities,jiangsu_binding as oct29_jiangsu_binding,
     feidong_canonical,JIANGSU_ADAPTER as OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER)
+from regional_hunan_oct29b import (with_capabilities as with_hunan_capabilities,
+    blank_binding as hunan_blank_binding, ADAPTER as HUNAN_ADAPTER, SPECS as HUNAN_SPECS)
 
 REFERENCE_SHA256 = '80d1dc3989e9da1ef2c763cbde54bd474d691a4febba48425fb2cc3471d94562'
 BINDINGS = {
@@ -266,10 +268,18 @@ def with_reference_capabilities(guide):
             if template.get('adapter') in {ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER} and result.get('province')=='zhejiang':
                 continue
             template.update(can_generate=False, document_types=[])
-    return with_oct29_capabilities(result)
+    result=with_oct29_capabilities(result)
+    if result.get('province')=='hunan' and result.get('region_code') in {s['code'] for s in HUNAN_SPECS.values()}:
+        return with_hunan_capabilities(result)
+    return result
 
 
 def checked_reference_adapter(guide, template, kind):
+    if template.get('adapter')==HUNAN_ADAPTER:
+        if (hunan_blank_binding(guide,template)!=kind or kind!='application'
+            or template.get('can_generate') is not True or template.get('document_types')!=[kind]):
+            raise ValueError('湖南本区自身劳动者申请书来源不匹配')
+        return HUNAN_ADAPTER
     if template.get('adapter') in {OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER}:
         own_kind=oct29_jiangsu_binding(guide,template) if template['adapter']==OCT29_JIANGSU_ADAPTER else 'application' if feidong_canonical(guide,template) else None
         if own_kind!=kind or template.get('can_generate') is not True or template.get('document_types')!=[kind]:

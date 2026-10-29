@@ -1,9 +1,9 @@
 {
-  "phase": "first_batch_verified_next_batch_in_progress",
+  "phase": "candidate_browser_accepted_public_release_preparation",
   "nationwide_complete": false,
   "published_guides": 181,
   "published_generatable_localities": 166,
-  "unpublished_candidates": 31,
+  "unpublished_candidates": 33,
   "first_batch_places_checked": 12,
   "first_batch_new_own_guides": 7,
   "first_batch_discovery_or_access_pending": 5,
@@ -15,16 +15,17 @@
     "320281",
     "320282"
   ],
-  "candidate_web_acceptance": "NOT_RUN_PRIOR_POLICY_REJECTION_NOT_RETRIED",
+  "candidate_web_acceptance": "PASS_A7_AND_HUNAN2",
   "backend_tests": {
-    "run": 511,
+    "run": 539,
     "failures": 0,
     "errors": 0,
-    "seconds": 111.471
+    "skipped": 1,
+    "seconds": 226.939
   },
   "browser_main_passes": 10,
   "browser_review_passes": 6,
-  "openclaw_events_persisted": 20,
+  "openclaw_events_persisted": 26,
   "openclaw_acknowledgements": 0,
   "openclaw_sync_attempted": false,
   "models_called": false,
@@ -32,10 +33,24 @@
   "public_guide_snapshot_unchanged": true,
   "next_batch": "reports/nationwide-verification-20261029-b",
   "next": [
-    "继续湖南天心/湖南湘江新区，严格确认区县/功能区身份",
-    "继续广东禅城/南海自身现行指南；历史DOC不冒充现行",
-    "继续山东历下/市中自身来源，不能继承市本级特殊管辖指南",
-    "候选网页验收合法可用前保持未发布，不绕过既有启动拒绝"
+    "清洁公开源码根验证已发布生命周期与11种生成能力",
+    "准备精确9地增量升级工具，主目录/任务/历史不替换",
+    "旧主后端没有新路由；交付具体人工重启步骤后再执行增量升级",
+    "继续雨花与望城自身官方来源采集，未核验不当无资料"
   ],
-  "report": "TEST-REPORT.md"
+  "report": "TEST-REPORT.md",
+  "candidate_station": {
+    "url": "http://127.0.0.1:5174",
+    "guides": 190,
+    "generatable_localities": 173,
+    "models_disabled": true,
+    "started_by_user": true
+  },
+  "browser_candidate_checks": 43,
+  "actual_generated_documents_downloaded": 11,
+  "actual_generated_pages_reviewed": 20,
+  "second_batch_places_checked": 6,
+  "second_batch_own_guides": 2,
+  "second_batch_discovery_only": 4,
+  "main_backend_release_marker": "NOT_LOADED_MANUAL_RESTART_REQUIRED"
 }

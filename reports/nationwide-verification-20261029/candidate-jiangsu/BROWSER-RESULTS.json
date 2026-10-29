@@ -1,0 +1,277 @@
+{
+  "tested_at": "2026-10-29T09:43:23.258Z",
+  "site": "http://127.0.0.1:5174",
+  "api": "http://127.0.0.1:8001/api/regional-guides",
+  "engine": "Installed Chrome DevTools MCP; isolated context; native click/fill/fill_form only; evaluate read-only",
+  "synthetic_only": true,
+  "services_started": false,
+  "models_called": false,
+  "regions": [
+    {
+      "code": "320281",
+      "district": "江阴市",
+      "source_id": "3d304f186983f34c4170a398",
+      "version": 186,
+      "application_template_id": "2213bd5f-676c-4db0-9a4e-d9dd8b851919",
+      "guide_sha256": "81c70da1745749f5fe80bd959260f63a9f054d8a7c96d9508a4688f7ade9abc2",
+      "original": {
+        "http_status": 200,
+        "actual_browser_body_saved": false,
+        "bytes": 0,
+        "sha256": null,
+        "limitation": "Installed MCP did not persist binary response. Real native download request HTTP/headers verified; bytes unverified."
+      },
+      "application": {
+        "http_status": 200,
+        "response_source_id": "3d304f186983f34c4170a398",
+        "response_document_origin": "official-blank-filled",
+        "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "actual_browser_body_saved": false,
+        "bytes": 0,
+        "sha256": null,
+        "request_source_id": "3d304f186983f34c4170a398",
+        "request_version": 186,
+        "birthDate": "1991-05-09",
+        "copyCount": 3,
+        "evidenceCopyCount": 2,
+        "actual_docx_birthday_and_copies_verified": false,
+        "limitation": "Actual UI input and browser POST body verified; installed MCP did not persist response bytes. No replay used; actual DOCX birthday/copy text is unverified."
+      },
+      "evidence": {
+        "http_status": 200,
+        "response_source_id": "3d304f186983f34c4170a398",
+        "response_document_origin": "official-blank-filled",
+        "actual_browser_body_saved": false,
+        "bytes": 0,
+        "sha256": null,
+        "evidence_items": 1,
+        "limitation": "Actual browser POST body/200 verified; MCP writes a zero-byte response file. No replay used."
+      }
+    },
+    {
+      "code": "320282",
+      "district": "宜兴市",
+      "source_id": "509219666f61612819e02f36",
+      "version": 187,
+      "application_template_id": "9949cd24-29df-4db9-af04-b4395a22aa61",
+      "guide_sha256": "2ac08648676bcc3ff34680ea9e4b55f3f188c7505f07bfbb98d11bf4e24c274f",
+      "original": {
+        "http_status": 200,
+        "actual_browser_body_saved": false,
+        "bytes": 0,
+        "sha256": null,
+        "limitation": "Installed MCP did not persist binary response. Real native download request HTTP/headers verified; bytes unverified."
+      },
+      "application": {
+        "http_status": 200,
+        "response_source_id": "509219666f61612819e02f36",
+        "response_document_origin": "official-blank-filled",
+        "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "actual_browser_body_saved": false,
+        "bytes": 0,
+        "sha256": null,
+        "request_source_id": "509219666f61612819e02f36",
+        "request_version": 187,
+        "birthDate": "1991-05-09",
+        "copyCount": 3,
+        "evidenceCopyCount": 2,
+        "actual_docx_birthday_and_copies_verified": false,
+        "limitation": "Actual UI input and browser POST body verified; installed MCP did not persist response bytes. No replay used; actual DOCX birthday/copy text is unverified."
+      },
+      "evidence": {
+        "http_status": 200,
+        "response_source_id": "509219666f61612819e02f36",
+        "response_document_origin": "official-blank-filled",
+        "actual_browser_body_saved": false,
+        "bytes": 0,
+        "sha256": null,
+        "evidence_items": 1,
+        "limitation": "Actual browser POST body/200 verified; MCP writes a zero-byte response file. No replay used."
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "江阴市 native selection / own source and live version",
+      "passed": true,
+      "detail": {
+        "source_id": "3d304f186983f34c4170a398",
+        "version": 186
+      }
+    },
+    {
+      "name": "江阴市 original real browser download",
+      "passed": true
+    },
+    {
+      "name": "江阴市 application native birthday / 3 and 2 copies / modal cancel and Escape / POST",
+      "passed": true
+    },
+    {
+      "name": "江阴市 evidence starts one / add delete / real POST",
+      "passed": true
+    },
+    {
+      "name": "江阴市 responsive 375",
+      "passed": true,
+      "detail": {
+        "evidence": {
+          "width": 375,
+          "scroll": 375,
+          "body": 375
+        },
+        "application": {
+          "width": 375,
+          "scroll": 375,
+          "body": 375
+        }
+      }
+    },
+    {
+      "name": "江阴市 responsive 768",
+      "passed": true,
+      "detail": {
+        "evidence": {
+          "width": 768,
+          "scroll": 768,
+          "body": 768
+        },
+        "application": {
+          "width": 768,
+          "scroll": 768,
+          "body": 768
+        }
+      }
+    },
+    {
+      "name": "江阴市 responsive 1440",
+      "passed": true,
+      "detail": {
+        "evidence": {
+          "width": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        "application": {
+          "width": 1440,
+          "scroll": 1440,
+          "body": 1440
+        }
+      }
+    },
+    {
+      "name": "江阴市 wrong district does not inherit",
+      "passed": true
+    },
+    {
+      "name": "宜兴市 native selection / own source and live version",
+      "passed": true,
+      "detail": {
+        "source_id": "509219666f61612819e02f36",
+        "version": 187
+      }
+    },
+    {
+      "name": "宜兴市 original real browser download",
+      "passed": true
+    },
+    {
+      "name": "宜兴市 application native birthday / 3 and 2 copies / modal cancel and Escape / POST",
+      "passed": true
+    },
+    {
+      "name": "宜兴市 evidence starts one / add delete / real POST",
+      "passed": true
+    },
+    {
+      "name": "宜兴市 responsive 375",
+      "passed": true,
+      "detail": {
+        "evidence": {
+          "width": 375,
+          "scroll": 375,
+          "body": 375
+        },
+        "application": {
+          "width": 375,
+          "scroll": 375,
+          "body": 375
+        }
+      }
+    },
+    {
+      "name": "宜兴市 responsive 768",
+      "passed": true,
+      "detail": {
+        "evidence": {
+          "width": 768,
+          "scroll": 768,
+          "body": 768
+        },
+        "application": {
+          "width": 768,
+          "scroll": 768,
+          "body": 768
+        }
+      }
+    },
+    {
+      "name": "宜兴市 responsive 1440",
+      "passed": true,
+      "detail": {
+        "evidence": {
+          "width": 1440,
+          "scroll": 1440,
+          "body": 1440
+        },
+        "application": {
+          "width": 1440,
+          "scroll": 1440,
+          "body": 1440
+        }
+      }
+    },
+    {
+      "name": "宜兴市 wrong district does not inherit",
+      "passed": true
+    },
+    {
+      "name": "Console zero error/warn; no model requests",
+      "passed": true,
+      "detail": {
+        "error": 0,
+        "warn": 0
+      }
+    }
+  ],
+  "passed": true,
+  "acceptance_scope": "UI and real browser HTTP/request body/response headers. Binary proof only if actual_browser_body_saved=true; zero-byte MCP output is never counted.",
+  "byte_validation_complete": false,
+  "raw_evidence_policy": "Raw transcript, requests, response bodies, DOCX and full guide JSON stay under ignored .runtime/candidate-browser-20261029/js. Never use replay as browser response evidence.",
+  "screenshots": [
+    "320281-guide.png",
+    "320281-application-confirm.png",
+    "320281-application-generated.png",
+    "320281-evidence-confirm.png",
+    "320281-evidence-generated.png",
+    "320281-evidence-375.png",
+    "320281-application-375.png",
+    "320281-evidence-768.png",
+    "320281-application-768.png",
+    "320281-evidence-1440.png",
+    "320281-application-1440.png",
+    "320281-wrong-district.png",
+    "320282-guide.png",
+    "320282-application-confirm.png",
+    "320282-application-generated.png",
+    "320282-evidence-confirm.png",
+    "320282-evidence-generated.png",
+    "320282-evidence-375.png",
+    "320282-application-375.png",
+    "320282-evidence-768.png",
+    "320282-application-768.png",
+    "320282-evidence-1440.png",
+    "320282-application-1440.png",
+    "320282-wrong-district.png"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "checked_at": "2026-10-29T09:45:05.971652+00:00",
+  "scope": "Only actual native browser traffic; no POST replay or independent API-generated document counted. Headers are a selected public summary, raw metadata and request bodies are local only.",
+  "responses": [
+    {
+      "region_code": "320281",
+      "kind": "original",
+      "actual_native_browser_request_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "declared_content_length": 17701,
+      "attachment_header_present": true,
+      "response_source_id": null,
+      "document_origin": null,
+      "actual_body_saved": false,
+      "actual_body_bytes": 0,
+      "body_sha256": null
+    },
+    {
+      "region_code": "320281",
+      "kind": "application",
+      "actual_native_browser_request_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "declared_content_length": 12757,
+      "attachment_header_present": true,
+      "response_source_id": "3d304f186983f34c4170a398",
+      "document_origin": "official-blank-filled",
+      "actual_body_saved": false,
+      "actual_body_bytes": 0,
+      "body_sha256": null,
+      "request_source_id": "3d304f186983f34c4170a398",
+      "request_version": 186,
+      "verified_request_values": {
+        "birthDate": "1991-05-09",
+        "copyCount": 3,
+        "evidenceCopyCount": 2
+      }
+    },
+    {
+      "region_code": "320281",
+      "kind": "evidence",
+      "actual_native_browser_request_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "declared_content_length": 11563,
+      "attachment_header_present": true,
+      "response_source_id": "3d304f186983f34c4170a398",
+      "document_origin": "official-blank-filled",
+      "actual_body_saved": false,
+      "actual_body_bytes": 0,
+      "body_sha256": null,
+      "request_source_id": "3d304f186983f34c4170a398",
+      "request_version": 186,
+      "verified_request_evidence_items": 1
+    },
+    {
+      "region_code": "320282",
+      "kind": "original",
+      "actual_native_browser_request_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "declared_content_length": 17701,
+      "attachment_header_present": true,
+      "response_source_id": null,
+      "document_origin": null,
+      "actual_body_saved": false,
+      "actual_body_bytes": 0,
+      "body_sha256": null
+    },
+    {
+      "region_code": "320282",
+      "kind": "application",
+      "actual_native_browser_request_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "declared_content_length": 12757,
+      "attachment_header_present": true,
+      "response_source_id": "509219666f61612819e02f36",
+      "document_origin": "official-blank-filled",
+      "actual_body_saved": false,
+      "actual_body_bytes": 0,
+      "body_sha256": null,
+      "request_source_id": "509219666f61612819e02f36",
+      "request_version": 187,
+      "verified_request_values": {
+        "birthDate": "1991-05-09",
+        "copyCount": 3,
+        "evidenceCopyCount": 2
+      }
+    },
+    {
+      "region_code": "320282",
+      "kind": "evidence",
+      "actual_native_browser_request_status": 200,
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "declared_content_length": 11563,
+      "attachment_header_present": true,
+      "response_source_id": "509219666f61612819e02f36",
+      "document_origin": "official-blank-filled",
+      "actual_body_saved": false,
+      "actual_body_bytes": 0,
+      "body_sha256": null,
+      "request_source_id": "509219666f61612819e02f36",
+      "request_version": 187,
+      "verified_request_evidence_items": 1
+    }
+  ],
+  "binary_limitation": "Installed MCP reports response saved but actual POST .network-response files are zero bytes; original attachment navigation body unavailable. No PK file, no actual DOCX text/format assertion, and no actual body hash. Header content-length is declared length only."
+}
