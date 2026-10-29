@@ -1,0 +1,45 @@
+{
+  "scope": "F Zhejiang source discovery only",
+  "events": [
+    {
+      "stage": "deduplication",
+      "result": "No own Tonglu or Chunan guide found in public snapshot, candidates or existing guide reports before collection."
+    },
+    {
+      "stage": "initial browser command",
+      "result": "Initial navigation client returned late; independent own-session health check succeeded, later snapshots and page actions worked. Full raw records private; no application service or model operation."
+    },
+    {
+      "stage": "Tonglu own regional discovery",
+      "result": "Native selected county330122; native guide button returned city330101, regional index sourceReferNo returned province330000. Both rejected, original observations retained privately and safe directory responses retained publicly."
+    },
+    {
+      "stage": "Tonglu other official entry checks",
+      "result": "Own county portal, exact county/service queries and application-form query checked. County portal service link passed siteCode330122000000, following search still selected province. Knowledge-card native link was covered twice even after native scroll; no forced or script click. Search entity link had malformed relative href; not treated as own guide."
+    },
+    {
+      "stage": "Chunan source discovery",
+      "result": "Selected county330127; regional search200 but result area did not render in captured DOM. One anonymous exact regional-search read retained body. Its own sourceReferNo resolved to a guide with jurisdiction330127, then actual browser guide API POST200 corroborated the same ID. No successful directory-link click claimed."
+    },
+    {
+      "stage": "Chunan guide and controls",
+      "result": "Own conditions/materials/flow/window/basic/law/4expandedFAQ captured;2blank native controls and1example native control clicked. Independent ownURL downloads200 with SHA and ZIP/XML checks; native full download response statuses not retained, no native200 claim."
+    },
+    {
+      "stage": "Chunan metadata correction",
+      "result": "Initial generic retrieval note mentioned LBS rejection without locality qualifier. Original note preserved privately; corrected note explicitly describes Chunan index path and no claimed successful directory click. Raw API and original DOCX bytes unchanged."
+    },
+    {
+      "stage": "Chunan online boundary",
+      "result": "Native online button reached personal/legal login and image captcha. No credentials, captcha solution, login or submission."
+    },
+    {
+      "stage": "capture viewpoint and refs",
+      "result": "First search screenshot captured footer; private copy retained, later complete-page views recorded. Footer menu remained open in full capture and is retained honestly. A stale hover ref was rejected; fresh snapshot recovered. No fabricated successful closed-menu screenshot."
+    },
+    {
+      "stage": "cleanup",
+      "result": "Own named browser session closed. Delayed initial client completed its snapshot after a cleanup relaunch; own session closed again. All pending command cells completed; no other session closed."
+    }
+  ]
+}

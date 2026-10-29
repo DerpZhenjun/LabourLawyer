@@ -1,0 +1,58 @@
+{
+  "province": "zhejiang",
+  "province_name": "浙江省",
+  "city": "杭州市",
+  "district": "桐庐县",
+  "region_code": "330122",
+  "service_name": "劳动人事争议仲裁申请",
+  "verification_status": "pending_own_source",
+  "collection_status": "discovery_only_scope_mismatch",
+  "source_url": null,
+  "own_localInnerCode": null,
+  "own_service_code": null,
+  "authority": null,
+  "fields": {
+    "窗口": {
+      "raw_value": null,
+      "status": "unverified_own_county"
+    },
+    "网上入口": {
+      "raw_value": null,
+      "status": "unverified_own_county_not_tested"
+    }
+  },
+  "templates": [],
+  "templates_status": "unverified_not_official_absence",
+  "can_generate": false,
+  "published": false,
+  "candidate_web_qa": "NOT_RUN",
+  "discovery_urls": [
+    "https://search.zj.gov.cn/api-gateway/jpaas-jsearch-web-server/search?serviceId=YcTOd1ftgC5dxzJ8RhCBN&websiteid=330122000000&cateid=ShhDNU0SGB3DPrgh3GxyA&p=1&q=%E5%8A%B3%E5%8A%A8%E4%BA%BA%E4%BA%8B%E4%BA%89%E8%AE%AE%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7",
+    "http://www.tonglu.gov.cn/",
+    "https://www.zjzwfw.gov.cn/zjservice-fe/#/home?siteCode=330122000000"
+  ],
+  "rejected": [
+    {
+      "layer": "regional index sourceReferNo",
+      "localInnerCode": "2510b7af-2402-4502-837c-14eb4a71177d",
+      "jurisCode": "330000",
+      "authority": "省人力社保厅",
+      "reason": "not own Tonglu"
+    },
+    {
+      "layer": "native regional guide button / LBS",
+      "localInnerCode": "bece2ae4-f3e3-4749-bdf7-dcde9027a7b7",
+      "regionCode": "330101",
+      "authority": "市人力社保局",
+      "reason": "not own Tonglu"
+    }
+  ],
+  "discovery_only": true,
+  "source_only": true,
+  "checked_at": "2026-10-29T15:11:44.871245+00:00",
+  "warnings": [
+    "本次尚未核验到本县自身正式指南和材料附件链；不能推断官方没有指南、没有模板或不提供服务。",
+    "省级和杭州市级返回结果均不作为桐庐受理规则、窗口、网办状态或模板来源。",
+    "未下载被拒地区的附件，未使用案件公告作为空白模板。"
+  ]
+}

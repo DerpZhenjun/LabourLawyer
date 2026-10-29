@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-29T14:44:00.444316+00:00",
+  "requested_region_code": "330122",
+  "requested_district": "桐庐县",
+  "observed_search_region_code": "330122",
+  "observed_directory_request": {
+    "method": "POST",
+    "url": "https://search.zj.gov.cn/jpaas-zjservice-server/open-api/search/multiSearch/getStandardCategoryMatterListByLbs",
+    "body": {
+      "regionCode": "330122",
+      "categoryCode": "fc266994-f669-4861-acdc-799f3ea2decc",
+      "lbsCode": "",
+      "channel": 1
+    }
+  },
+  "actual_returned_region_code": "330101",
+  "actual_returned_source_id": "bece2ae4-f3e3-4749-bdf7-dcde9027a7b7",
+  "actual_returned_guide_url": "https://portal.zjzwfw.gov.cn/m/portal/apps/h5/workGuideNew/eventDetail?qlInnerCode=bece2ae4-f3e3-4749-bdf7-dcde9027a7b7&categoryCode=fc266994-f669-4861-acdc-799f3ea2decc",
+  "native_opened_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=bece2ae4-f3e3-4749-bdf7-dcde9027a7b7",
+  "status": "REJECTED_SCOPE_MISMATCH",
+  "decision": "Not an own Tonglu source. No blank downloaded or rules inherited. Continue independent official discovery; not proof of official absence.",
+  "directory_response_sha256": "1433cb181f8f0acdb06cc76a1165683fe17466db220fc242c78bd8b44d88dab9",
+  "original_record_location": "Complete original records retained privately."
+}

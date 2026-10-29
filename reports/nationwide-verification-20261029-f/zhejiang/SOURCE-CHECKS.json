@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-10-29T15:11:44.871245+00:00",
+  "scope": "source-only integrity and own-scope guards",
+  "collection_status": "PARTIAL",
+  "own_sources": [
+    {
+      "region_code": "330127",
+      "status": "own_source_captured",
+      "raw_business_field_count": 252,
+      "materials": 5,
+      "public_blank_files": 2,
+      "sample_bytes_distributed": false,
+      "native_online": "login_and_captcha_only"
+    }
+  ],
+  "pending_sources": [
+    {
+      "region_code": "330122",
+      "status": "pending_own_source",
+      "official_absence_inferred": false,
+      "can_generate": false
+    }
+  ],
+  "source_images_viewed": 8,
+  "document_rendering": "NOT_RUN",
+  "adaptation": "NOT_RUN",
+  "candidate_page_acceptance": "NOT_RUN",
+  "publication": "NOT_RUN",
+  "outbox_delivery": "NOT_PERFORMED",
+  "public_metadata_audit": {
+    "machine_paths_and_process_identifiers": "PASS",
+    "authentication_queries": "PASS",
+    "assistant_attribution": "PASS"
+  }
+}

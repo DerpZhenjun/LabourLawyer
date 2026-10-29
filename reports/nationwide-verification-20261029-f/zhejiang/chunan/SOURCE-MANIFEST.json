@@ -1,0 +1,159 @@
+{
+  "version": "oct29f-zhejiang-own-source-v1",
+  "scope": "source-only",
+  "status": "OWN_SOURCE_CAPTURED",
+  "region_code": "330127",
+  "city": "杭州市",
+  "district": "淳安县",
+  "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ee47fff8-558c-4a85-88e9-8a28d2bddbdc",
+  "can_generate": false,
+  "published": false,
+  "official_absence_inferred": false,
+  "files": [
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/basic-dom.json",
+      "sha256": "7cee02d9ae5fdd1222e1edb83dec8a3c8ec6c44f438acd773dab39cb4bb93209",
+      "bytes": 9668
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/conditions-dom.json",
+      "sha256": "755837f3b6b01657c11535c126d3e09c6a423d9e8fe7e7e9694687e18a690797",
+      "bytes": 9725
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/directory-response.json",
+      "sha256": "34182768fdd0a18eb2633ea8a9d9c72484e7018b535ef8150c9b88f3c4186642",
+      "bytes": 11487
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/directory-response.source.json",
+      "sha256": "120eb4a748f8efce8ca2ae83071f2006ec64e1d375f525d3b097265f1d44755c",
+      "bytes": 855
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/faq-dom.json",
+      "sha256": "cde283a8e0eb3d7c373370622fd7f79775911f445bd166f7f99750f4ff323ac9",
+      "bytes": 11624
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/faq.png",
+      "sha256": "081320862c7a9cc78b5ed8d3d5219189f274de8c4b2661df76f53104b64e3272",
+      "bytes": 844239
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/flow-dom.json",
+      "sha256": "f6339af6d48af07662715e196ceea391c164c994eff1daea285c151ce2f8a9f0",
+      "bytes": 9725
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/guide-dom.json",
+      "sha256": "6f60d19fb198c4aaddc3438e77af8eb9214781a59902a0b87babc5574d00fc88",
+      "bytes": 9725
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/guide.json",
+      "sha256": "4d09b736166c094997b3749aeac7b82a4dfe01e039cc0aa5a4de6fc8f134cbf0",
+      "bytes": 62871
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/guide.png",
+      "sha256": "482a9e959fe3879372a65b7702ff758f10fc4fb0bbeeca3dce733e60dae71c36",
+      "bytes": 579167
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/item-response.json",
+      "sha256": "3a59cdaab571ac452fc11be0b5e50003e97e4bfd7707f89e4dba3f2cd3112587",
+      "bytes": 29701
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/item-response.source.json",
+      "sha256": "722567181a44e02bad0e6dfdc88aa07cdad2e3dfeb410055b170bb617a89f375",
+      "bytes": 981
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/law-dom.json",
+      "sha256": "f9391b01f5ad37a2cf9e9e9397104cde65ced2e26f6fbd944600ae45e9beec45",
+      "bytes": 10884
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/law.png",
+      "sha256": "d53f9a8058e23f0eeb1a04a95259b085214070755274c34937a0b683a320b281",
+      "bytes": 643449
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/materials-dom.json",
+      "sha256": "6a0c2940db6a5a83f2f754a5fce1f356c90fc28fd969e405efb15adec8b8cafd",
+      "bytes": 9725
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/native-guide-request.json",
+      "sha256": "4c5098cd61b817e68ed16132cefd51cbca7d89ce0269119adad4dd1edda1dc39",
+      "bytes": 558
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/online-boundary.json",
+      "sha256": "f0dbd8ad5d649a8b4c7012f1372d6ed2e8e80461dab0b9fcb50a3ed0c6982acf",
+      "bytes": 282
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/online-boundary.png",
+      "sha256": "a259c7d3c17e6803132445f22d936db0ffbf3749faa530328a4133a3364bbe60",
+      "bytes": 159293
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/originals/blank/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+      "sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "bytes": 33949
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/originals/blank/21B24C52D2AC3EB007AA7F55CE0AAD79.docx.source.json",
+      "sha256": "24fe55ce3f2afffec36f1434e9ca67fbd8f295fa9034d6926d245c9fbc4755bd",
+      "bytes": 1525
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/originals/blank/872DFF90A8578907CB947197A784AA48.docx",
+      "sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+      "bytes": 18837
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/originals/blank/872DFF90A8578907CB947197A784AA48.docx.source.json",
+      "sha256": "9ea8037e49a547bc16132784a56ffc29220af1246bfe763cfbf1db2764f7e55f",
+      "bytes": 1504
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/originals.json",
+      "sha256": "9b2684f1c5edfe61090f78629254fdfaea8c22fa8d62888bd053c4ffbbc7b8ee",
+      "bytes": 4729
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/search-final.json",
+      "sha256": "3863c006023bff5526744916b1a8f15fdb622556e38543f1badedf79b9bba5b7",
+      "bytes": 29437
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/search-final.png",
+      "sha256": "022030b19bb8e843df9f0c4458b2bca83a429d120392d8ba935ef2d531f75e97",
+      "bytes": 405236
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/search-pending.json",
+      "sha256": "0794c402ecd012a4fb71f580a8c6a73f6d4b41a1cf29cb5cb5192f09471d4396",
+      "bytes": 19712
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/search.json",
+      "sha256": "0e6bc67a8e7f840eb0374ffa7e3ec4127f4c19eb9dc548669e41e0c6eb3c4160",
+      "bytes": 29438
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/search.png",
+      "sha256": "022030b19bb8e843df9f0c4458b2bca83a429d120392d8ba935ef2d531f75e97",
+      "bytes": 405236
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/chunan/window-dom.json",
+      "sha256": "c66498c72695fb30cf01e6e0cf904de582ccc005bd17dff17b1f13b5eb85183d",
+      "bytes": 9725
+    }
+  ]
+}

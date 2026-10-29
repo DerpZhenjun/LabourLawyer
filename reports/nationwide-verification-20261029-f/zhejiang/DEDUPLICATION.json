@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-29T14:39:02.953457+00:00",
+  "targets": [
+    {
+      "province": "浙江省",
+      "city": "杭州市",
+      "district": "桐庐县",
+      "region_code": "330122"
+    },
+    {
+      "province": "浙江省",
+      "city": "杭州市",
+      "district": "淳安县",
+      "region_code": "330127"
+    }
+  ],
+  "checked_inputs": [
+    "data/public-regions/guides.json",
+    "config/regional_candidates.json",
+    "reports/**/*guide*.json"
+  ],
+  "existing_own_guides_found": [],
+  "decision": "Collect both own sources; never overwrite existing sources or infer absence of official service."
+}

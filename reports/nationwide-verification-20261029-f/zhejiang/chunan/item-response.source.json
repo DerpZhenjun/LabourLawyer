@@ -1,0 +1,14 @@
+{
+  "method": "POST",
+  "url": "https://www.zjzwfw.gov.cn/jpaas-zjservice-server/open-api/item/getItemDetail",
+  "postData": "localInnerCode=ee47fff8-558c-4a85-88e9-8a28d2bddbdc",
+  "status": 200,
+  "captured_at": "2026-10-29T14:50:25.363129+00:00",
+  "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ee47fff8-558c-4a85-88e9-8a28d2bddbdc",
+  "region_code": "330127",
+  "sha256": "3a59cdaab571ac452fc11be0b5e50003e97e4bfd7707f89e4dba3f2cd3112587",
+  "bytes": 29701,
+  "original_response_sha256": "3a59cdaab571ac452fc11be0b5e50003e97e4bfd7707f89e4dba3f2cd3112587",
+  "sanitized_authentication_url_fields": [],
+  "retrieval_note": "Selected own Chunan regional mainSearch returned its sourceReferNo; the result area was not rendered in the captured DOM. The own public guide API was read once using that observed ID, without cookies or authentication, then opened and checked in the browser. A successful native directory-link click is not claimed."
+}

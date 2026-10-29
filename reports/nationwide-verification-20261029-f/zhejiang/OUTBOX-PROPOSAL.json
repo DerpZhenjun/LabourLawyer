@@ -1,0 +1,39 @@
+{
+  "kind": "source_issue_proposal",
+  "status": "PROPOSED_ONLY",
+  "queue_status": "NOT_ENQUEUED",
+  "acknowledgement": null,
+  "delivery_performed": false,
+  "created_at": "2026-10-29T15:11:44.871245+00:00",
+  "events": [
+    {
+      "event_id": "f-zhejiang-tonglu-330122-own-source-scope-mismatch",
+      "region_code": "330122",
+      "district": "桐庐县",
+      "issue": "Official county selected search/native guide path returned province330000 or city330101 rather than own county. No accepted own source or templates.",
+      "evidence_files": [
+        "tonglu/discovery.json",
+        "tonglu/discovery-mismatch.json",
+        "tonglu/directory-response.json",
+        "tonglu/search-index-response.json",
+        "tonglu/county-portal.json",
+        "tonglu/county-search-application.json"
+      ],
+      "proposed_next_action": "Verify current county own official catalog/agency link and resolve scope before any provider or publication; do not infer official absence or substitute another region."
+    },
+    {
+      "event_id": "f-zhejiang-chunan-330127-search-render-and-source-capture",
+      "region_code": "330127",
+      "district": "淳安县",
+      "issue": "Regional search response included own source but captured result area did not render; source resolved through exact public response and corroborated in browser.",
+      "evidence_files": [
+        "chunan/search-final.json",
+        "chunan/search-final.png",
+        "chunan/directory-response.json",
+        "chunan/directory-response.source.json",
+        "chunan/native-guide-request.json"
+      ],
+      "proposed_next_action": "Keep successful own source collection separate from unresolved native catalog rendering; future adaptation and product acceptance require independent gates."
+    }
+  ]
+}

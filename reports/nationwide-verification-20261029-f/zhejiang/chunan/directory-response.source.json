@@ -1,0 +1,11 @@
+{
+  "method": "POST",
+  "url": "https://search.zj.gov.cn/api-gateway/jpaas-zjszfapi-server/open-api/zjszf/mainSearch?usePinYinCorrect=true&pageSize=10&word=%E5%8A%B3%E5%8A%A8%E4%BA%BA%E4%BA%8B%E4%BA%89%E8%AE%AE%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7&regionCode=330127&current=1",
+  "postData": null,
+  "status": 200,
+  "sha256": "34182768fdd0a18eb2633ea8a9d9c72484e7018b535ef8150c9b88f3c4186642",
+  "bytes": 11487,
+  "retrieval_note": "Own observed public regional search request returned responseBody=null in the browser detail. One anonymous request to that exact URL and body retained the complete original response; no cookies or authentication supplied.",
+  "actual_own_source_reference": "ee47fff8-558c-4a85-88e9-8a28d2bddbdc",
+  "native_ui_note": "The captured result region was not rendered; no successful native directory-guide click is claimed."
+}

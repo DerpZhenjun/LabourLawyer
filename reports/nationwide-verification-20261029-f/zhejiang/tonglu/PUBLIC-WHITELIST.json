@@ -1,0 +1,74 @@
+{
+  "version": "oct29f-zhejiang-own-source-v1",
+  "scope": "exact-discovery-files-only",
+  "status": "PENDING_OWN_SOURCE",
+  "manifest_sha256": "fdf6251409a9da6c3d6e016234421846a1650787478a1d146e5f17086c33200e",
+  "files": [
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/tonglu/county-portal.json",
+      "sha256": "8d474fafb1cb64617079c478e3932df14558f9e3b3a5f39cc51752f4deecef27",
+      "bytes": 90010
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/tonglu/county-search-application.json",
+      "sha256": "25ce7358c22be94e6a9f6fba6219a54ce7add252dc92fb8ff4ac4f5aeb401b5d",
+      "bytes": 22136
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/tonglu/county-search-application.png",
+      "sha256": "1429c164997255fcdbc600dfb8c01889c63b97ed8e6e4db01dc6aa4e1059f458",
+      "bytes": 546693
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/tonglu/county-search.json",
+      "sha256": "97845059fc5d8e18b68c500600d62815d70b9d1b3469e4a48e0a2e5d7ca20a0f",
+      "bytes": 32512
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/tonglu/directory-response.json",
+      "sha256": "1433cb181f8f0acdb06cc76a1165683fe17466db220fc242c78bd8b44d88dab9",
+      "bytes": 1758
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/tonglu/discovery-mismatch.json",
+      "sha256": "a521fe1a9b99220841058297426df245f12d80b5b9a770525a745e3424fb24fa",
+      "bytes": 1329
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/tonglu/discovery.json",
+      "sha256": "986ef5292795afb40a12c02c0a387e00cc5bc589a8f1bac3114b18daa84a2f94",
+      "bytes": 2090
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/tonglu/own-regional-home.json",
+      "sha256": "b3e7f6c9c4eaabf10f1815cc0e2a036fd809c4ad2dbaa299bfad8afcb1788897",
+      "bytes": 5713
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/tonglu/search-index-response.json",
+      "sha256": "5dd3171a31f302df9dc31733d8698ae0bf77078ad2bea6d839be42ca6cb64b5b",
+      "bytes": 11493
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/tonglu/search-specific.json",
+      "sha256": "cd2215dee3643c9fcd593fab90406fafa82f84b0641e06ff043563efa66f220a",
+      "bytes": 25186
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/tonglu/search.json",
+      "sha256": "ab8f8f75a8fdebd2108daa754371e462ec699058d935fd2d5928e80788f74302",
+      "bytes": 25459
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/tonglu/search.png",
+      "sha256": "f4dad6fdc3c56d34ef74fe364fe9c1abc4ce073277a72b2ba15c9f3d5b036fca",
+      "bytes": 331381
+    },
+    {
+      "path": "reports/nationwide-verification-20261029-f/zhejiang/tonglu/SOURCE-MANIFEST.json",
+      "sha256": "fdf6251409a9da6c3d6e016234421846a1650787478a1d146e5f17086c33200e",
+      "bytes": 2913
+    }
+  ],
+  "sample_bytes_distributed": false
+}

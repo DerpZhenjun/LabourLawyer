@@ -1,0 +1,9 @@
+{
+  "method": "POST",
+  "url": "https://www.zjzwfw.gov.cn/jpaas-zjservice-server/open-api/item/getItemDetail",
+  "postData": "localInnerCode=ee47fff8-558c-4a85-88e9-8a28d2bddbdc",
+  "status": 200,
+  "browser_response_body_retained": false,
+  "guide_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ee47fff8-558c-4a85-88e9-8a28d2bddbdc",
+  "note": "Own guide browser request corroborates exact observed source ID. Complete item bytes were separately preserved from the anonymous public read; a browser response body is not claimed."
+}
