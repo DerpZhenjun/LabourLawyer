@@ -15,6 +15,14 @@ await test('Jiangsu own field API exists',()=>{
     assert.equal(typeof fields[key],'function',`${key} 尚未实现`)
 })
 const {createEmptyJiangsuOwn,createJiangsuOwnExample,validateJiangsuOwn,jiangsuOwnPayload}=fields
+await test('unsupported runtime kinds reject without defaulting to another form',()=>{
+  for(const kind of ['identity','',null,7]){
+    assert.throws(()=>createEmptyJiangsuOwn(kind))
+    assert.throws(()=>createJiangsuOwnExample(kind))
+    assert(!validateJiangsuOwn({},kind).valid)
+    assert.throws(()=>jiangsuOwnPayload({},kind))
+  }
+})
 const appKeys='committeeName applicantName birthDate gender idNumber idAddress otherDocumentType otherDocumentNumber applicantMailingAddress phone acceptMediation legalAid respondentName respondentType registeredAddress socialCreditCode legalRepName legalRepPosition departmentHead departmentHeadPosition mailingAddress companyContact companyContactPhone requests factsReason applicationDate copyCount evidenceCopyCount'.split(' ').sort()
 const evidenceKeys=['committeeName','caseNumber','submitDate','evidenceList'].sort()
 const itemKeys=['name','source','purpose','originalType','pageCount'].sort()
@@ -112,7 +120,9 @@ await test('Vue SFC script/template/styles compile with accessible controls and 
   assert.match(source,/min-height:\s*44px/);assert.match(source,/@media/)
 })
 const vue=require('vue')
-const transformed=compiled.content.replace(/import\s*\{([^}]+)\}\s*from\s*['"]([^'"]+)['"];?/g,(_,names,from)=>`const {${names.replace(/\s+as\s+/g,':')}}=${from==='vue'?'__vue':'__fields'};`).replace('export default','return')
+const typescript=require('typescript')
+const compiledJavaScript=typescript.transpileModule(compiled.content,{compilerOptions:{target:typescript.ScriptTarget.ES2022,module:typescript.ModuleKind.ESNext,verbatimModuleSyntax:true}}).outputText
+const transformed=compiledJavaScript.replace(/import\s*\{([^}]+)\}\s*from\s*['"]([^'"]+)['"];?/g,(_,names,from)=>`const {${names.replace(/\s+as\s+/g,':')}}=${from==='vue'?'__vue':'__fields'};`).replace('export default','return')
 const Component=new Function('__vue','__fields',transformed)(vue,fields)
 const node=(type,text='')=>({type,text,children:[],props:{},parent:null})
 const remove=el=>{if(el.parent){const i=el.parent.children.indexOf(el);if(i>=0)el.parent.children.splice(i,1);el.parent=null}}
@@ -195,6 +205,11 @@ await test('dates and both copy inputs retain invalid text with linked errors, s
   assert(!inputFor('copyCount'));assert(!inputFor('evidenceCopyCount'))
 })
 app.unmount()
+await test('JS compatibility exports the actual TypeScript implementation',async()=>{
+  const typed=await import(new URL('../frontend/src/data/jiangsuOwnFields.ts',import.meta.url))
+  assert.equal(fields.createEmptyJiangsuOwn,typed.createEmptyJiangsuOwn)
+  assert.equal(fields.jiangsuOwnPayload,typed.jiangsuOwnPayload)
+})
 await test('dual drafts survive asynchronous kind changes without overwriting either draft',async()=>{
   const {useJiangsuOwnDrafts}=await import(new URL('../frontend/src/composables/useJiangsuOwnDrafts.js',import.meta.url))
   const selected=vue.ref('application'),draft=useJiangsuOwnDrafts(selected)
@@ -204,5 +219,15 @@ await test('dual drafts survive asynchronous kind changes without overwriting ei
   await Promise.resolve();selected.value='application';await vue.nextTick()
   assert.equal(draft.value.factsReason,'申请草稿保留');assert(!Object.hasOwn(draft.value,'caseNumber'))
   selected.value='evidence';await vue.nextTick();assert.equal(draft.value.caseNumber,'证据草稿保留')
+})
+await test('raw invalid drafts remain stored and rejected through asynchronous switches',async()=>{
+  const {useJiangsuOwnDrafts}=await import(new URL('../frontend/src/composables/useJiangsuOwnDrafts.js',import.meta.url))
+  const selected=vue.ref('application'),draft=useJiangsuOwnDrafts(selected)
+  const invalid={phone:'虚构电话'};Object.defineProperty(invalid,'oldHidden',{value:'',enumerable:false})
+  draft.value=invalid;selected.value='evidence';await vue.nextTick();draft.value=null
+  await Promise.resolve();selected.value='application';await vue.nextTick()
+  assert(Object.hasOwn(draft.value,'oldHidden'));assert(!validateJiangsuOwn(draft.value,'application').valid)
+  selected.value='evidence';await vue.nextTick();assert.equal(draft.value,null)
+  assert.throws(()=>jiangsuOwnPayload(draft.value,'evidence'))
 })
 console.log(`PASS Jiangsu own fields: ${passed} checks; provider parity, mounted controls, lossless payload and SFC compilation`)

@@ -9,6 +9,9 @@ const __dirname = path.dirname(__filename)
 
 export default defineConfig({
   plugins: [vue()],
+  server: {
+    fs: { allow: [__dirname, path.resolve(__dirname, '../config'), path.resolve(__dirname, '../packages/regional-contracts')] }
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')

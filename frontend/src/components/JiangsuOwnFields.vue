@@ -15,7 +15,7 @@
           <input :id="idFor(field.key)" :value="value?.[field.key] ?? ''" type="text" autocomplete="off"
             :disabled="!formShapeValid" :inputmode="field.inputmode || 'text'"
             :aria-invalid="fieldError(field.key) ? 'true' : undefined" :aria-describedby="description(field.key)"
-            @input="updateField(field.key, $event.target.value)">
+            @input="updateField(field.key, eventValue($event))">
           <p :id="idFor(`${field.key}-hint`)" class="region-small jiangsu-capacity">
             {{ field.hint || '' }}
             <template v-if="!['copyCount','evidenceCopyCount'].includes(field.key)"> {{ count(value?.[field.key]) }} / {{ JIANGSU_OWN_LIMITS.ordinary }} 字符（含空格）</template>
@@ -31,9 +31,9 @@
         <p :id="idFor('requests-hint')" class="region-small">逐项写清具体要求和金额，最多4项，每项最多1200字符。已有文字不会自动裁剪。</p>
         <div v-for="(request, index) in requests" :key="index" class="jiangsu-list-item">
           <label :for="idFor(`requests.${index}`)" class="regional-form-label">第{{ index + 1 }}项请求</label>
-          <textarea :id="idFor(`requests.${index}`)" :value="request" rows="3" :disabled="!formShapeValid || !requestShapeValid"
+          <textarea :id="idFor(`requests.${index}`)" :value="displayText(request)" rows="3" :disabled="!formShapeValid || !requestShapeValid"
             :aria-invalid="fieldError(`requests.${index}`) ? 'true' : undefined" :aria-describedby="itemDescription(`requests.${index}`, 'requests')"
-            @input="updateRequest(index, $event.target.value)"></textarea>
+            @input="updateRequest(index, eventValue($event))"></textarea>
           <p class="region-small jiangsu-capacity">{{ count(request) }} / {{ JIANGSU_OWN_LIMITS.request }} 字符</p>
           <p v-if="fieldError(`requests.${index}`)" :id="idFor(`requests.${index}-error`)" class="jiangsu-error">{{ fieldError(`requests.${index}`) }}</p>
           <button type="button" class="ll-button secondary" :aria-label="`删除第${index + 1}项请求`"
@@ -45,9 +45,9 @@
       </fieldset>
       <div class="jiangsu-group">
         <label :for="idFor('factsReason')" class="regional-form-label">事实与理由</label>
-        <textarea :id="idFor('factsReason')" :value="value?.factsReason ?? ''" rows="7" :disabled="!formShapeValid"
+        <textarea :id="idFor('factsReason')" :value="displayText(value?.factsReason)" rows="7" :disabled="!formShapeValid"
           :aria-invalid="fieldError('factsReason') ? 'true' : undefined" :aria-describedby="description('factsReason')"
-          @input="updateField('factsReason', $event.target.value)"></textarea>
+          @input="updateField('factsReason', eventValue($event))"></textarea>
         <p :id="idFor('factsReason-hint')" class="region-small jiangsu-capacity">{{ count(value?.factsReason) }} / {{ JIANGSU_OWN_LIMITS.factsReason }} 字符（含空格和换行）；请写清事情经过及提出请求的理由。</p>
         <p v-if="fieldError('factsReason')" :id="idFor('factsReason-error')" class="jiangsu-error">{{ fieldError('factsReason') }}</p>
       </div>
@@ -61,12 +61,12 @@
         <div class="jiangsu-grid">
           <div v-for="field in JIANGSU_OWN_EVIDENCE_FIELDS" :key="field.key" class="jiangsu-field">
             <label :for="idFor(`evidenceList.${index}.${field.key}`)" class="regional-form-label">{{ field.label }}</label>
-            <textarea :id="idFor(`evidenceList.${index}.${field.key}`)" :value="item?.[field.key] ?? ''" rows="2"
+            <textarea :id="idFor(`evidenceList.${index}.${field.key}`)" :value="displayText(itemValue(item,field.key))" rows="2"
               :disabled="!formShapeValid || !evidenceShapeValid || !isObject(item)"
               :aria-invalid="fieldError(`evidenceList.${index}.${field.key}`) ? 'true' : undefined"
               :aria-describedby="itemDescription(`evidenceList.${index}.${field.key}`, 'evidenceList')"
-              @input="updateEvidence(index, field.key, $event.target.value)"></textarea>
-            <p class="region-small jiangsu-capacity">{{ count(item?.[field.key]) }} / {{ field.limit }} 字符（含空格和换行）</p>
+              @input="updateEvidence(index, field.key, eventValue($event))"></textarea>
+            <p class="region-small jiangsu-capacity">{{ count(itemValue(item,field.key)) }} / {{ field.limit }} 字符（含空格和换行）</p>
             <p v-if="fieldError(`evidenceList.${index}.${field.key}`)" :id="idFor(`evidenceList.${index}.${field.key}-error`)" class="jiangsu-error">{{ fieldError(`evidenceList.${index}.${field.key}`) }}</p>
           </div>
         </div>
@@ -84,41 +84,61 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {computed, onMounted, useId, watch} from 'vue'
 import {JIANGSU_OWN_LIMITS, JIANGSU_OWN_FIELD_GROUPS, JIANGSU_OWN_EVIDENCE_FIELDS,
   createEmptyJiangsuOwn, createJiangsuOwnExample, validateJiangsuOwn, jiangsuOwnPayload, jiangsuOwnCharacterCount,
   jiangsuOwnDraftIsObject, jiangsuOwnCopyObject, jiangsuOwnCopyList} from '@/data/jiangsuOwnFields'
+import type {JiangsuOwnValidation,JiangsuOwnEditableKey,JiangsuOwnEvidenceItem} from '@/data/jiangsuOwnFields'
 
-const props=defineProps({modelValue:{type:Object,default:undefined},kind:{type:String,default:'application',validator:v=>['application','evidence'].includes(v)}})
-const emit=defineEmits(['update:modelValue','validation'])
-const initial=computed(()=>createJiangsuOwnExample(props.kind==='evidence'?'evidence':'application'))
-const value=computed(()=>props.modelValue===undefined?initial.value:props.modelValue)
-const groups=computed(()=>JIANGSU_OWN_FIELD_GROUPS[props.kind]||[])
-const prefix=`jiangsu-own-${useId()}`,idFor=key=>`${prefix}-${key}`
+const props=withDefaults(defineProps<{modelValue?: unknown; kind?: 'application' | 'evidence'}>(),{kind:'application'})
+const emit=defineEmits<{'update:modelValue': [value: unknown]; validation: [result: JiangsuOwnValidation]}>()
 const count=jiangsuOwnCharacterCount,isObject=jiangsuOwnDraftIsObject
-const formShapeValid=computed(()=>isObject(value.value))
-const validation=computed(()=>validateJiangsuOwn(value.value,props.kind))
-const fieldError=key=>validation.value.errors.find(error=>error.field===key)?.message||''
-const description=key=>`${idFor(`${key}-hint`)}${fieldError(key)?` ${idFor(`${key}-error`)}`:''}`
-const itemDescription=(key,group)=>`${idFor(`${group}-hint`)}${fieldError(key)?` ${idFor(`${key}-error`)}`:''}`
-const evidenceDescription=i=>`${idFor('evidenceList-hint')}${fieldError(`evidenceList.${i}`)?` ${idFor(`evidenceList.${i}-error`)}`:''}${fieldError(`evidenceList.${i}.form`)?` ${idFor(`evidenceList.${i}.form-error`)}`:''}`
+const initial=computed(()=>createJiangsuOwnExample(props.kind==='evidence'?'evidence':'application'))
+const rawValue=computed<unknown>(()=>props.modelValue===undefined?initial.value:props.modelValue)
+// Rendering gets a guarded view. Validation and emitted updates retain raw data.
+const value=computed(()=>isObject(rawValue.value)?rawValue.value:undefined)
+const groups=computed(()=>JIANGSU_OWN_FIELD_GROUPS[props.kind]||[])
+const prefix=`jiangsu-own-${useId()}`,idFor=(key: string)=>`${prefix}-${key}`
+const formShapeValid=computed(()=>isObject(rawValue.value))
+const validation=computed(()=>validateJiangsuOwn(rawValue.value,props.kind))
+const fieldError=(key: string)=>validation.value.errors.find(error=>error.field===key)?.message||''
+const description=(key: string)=>`${idFor(`${key}-hint`)}${fieldError(key)?` ${idFor(`${key}-error`)}`:''}`
+const itemDescription=(key: string,group: string)=>`${idFor(`${group}-hint`)}${fieldError(key)?` ${idFor(`${key}-error`)}`:''}`
+const evidenceDescription=(i: number)=>`${idFor('evidenceList-hint')}${fieldError(`evidenceList.${i}`)?` ${idFor(`evidenceList.${i}-error`)}`:''}${fieldError(`evidenceList.${i}.form`)?` ${idFor(`evidenceList.${i}.form-error`)}`:''}`
 const requestShapeValid=computed(()=>value.value?.requests===undefined||Array.isArray(value.value.requests))
 const evidenceShapeValid=computed(()=>value.value?.evidenceList===undefined||Array.isArray(value.value.evidenceList))
-function atLeastOne(list,empty){if(Array.isArray(list)){if(list.length)return list;const next=jiangsuOwnCopyList(list);next.push(empty);return next}return[empty]}
+function atLeastOne(list: unknown,empty: unknown): unknown[]{
+  if(Array.isArray(list)){if(list.length)return list;const next=jiangsuOwnCopyList(list);next.push(empty);return next}
+  return[empty]
+}
 const requests=computed(()=>atLeastOne(value.value?.requests,typeof value.value?.requests==='string'?value.value.requests:''))
 const evidence=computed(()=>atLeastOne(value.value?.evidenceList,{name:'',source:'',purpose:'',originalType:'',pageCount:''}))
-function updateField(key,next){if(formShapeValid.value)emit('update:modelValue',{...jiangsuOwnCopyObject(value.value),[key]:next})}
-const replaceAll=next=>emit('update:modelValue',next)
-function updateRequest(i,text){if(!requestShapeValid.value)return;const next=jiangsuOwnCopyList(requests.value);next[i]=text;updateField('requests',next)}
+function itemValue(item: unknown,key: keyof JiangsuOwnEvidenceItem): unknown{return isObject(item)?item[key]:undefined}
+// Presentation only; the original unknown draft remains the validation input.
+function displayText(value: unknown): string{return typeof value==='string'?value:String(value??'')}
+function eventValue(event: {target: unknown}): string{
+  const target=event.target
+  return target!==null&&typeof target==='object'&&'value' in target&&typeof target.value==='string'?target.value:''
+}
+function updateField(key: JiangsuOwnEditableKey,next: unknown){
+  const current=rawValue.value
+  if(isObject(current))emit('update:modelValue',{...jiangsuOwnCopyObject(current),[key]:next})
+}
+const replaceAll=(next: unknown)=>emit('update:modelValue',next)
+function updateRequest(i: number,text: string){if(!requestShapeValid.value)return;const next=jiangsuOwnCopyList(requests.value);next[i]=text;updateField('requests',next)}
 function addRequest(){if(requestShapeValid.value&&requests.value.length<4){const next=jiangsuOwnCopyList(requests.value);next.push('');updateField('requests',next)}}
-function removeRequest(i){if(requestShapeValid.value&&requests.value.length>1){const next=jiangsuOwnCopyList(requests.value);next.splice(i,1);updateField('requests',next)}}
-function updateEvidence(i,key,text){if(!evidenceShapeValid.value||!isObject(evidence.value[i]))return;const next=jiangsuOwnCopyList(evidence.value);next[i]={...jiangsuOwnCopyObject(next[i]),[key]:text};updateField('evidenceList',next)}
+function removeRequest(i: number){if(requestShapeValid.value&&requests.value.length>1){const next=jiangsuOwnCopyList(requests.value);next.splice(i,1);updateField('requests',next)}}
+function updateEvidence(i: number,key: keyof JiangsuOwnEvidenceItem,text: string){
+  const item=evidence.value[i]
+  if(!evidenceShapeValid.value||!isObject(item))return
+  const next=jiangsuOwnCopyList(evidence.value);next[i]={...jiangsuOwnCopyObject(item),[key]:text};updateField('evidenceList',next)
+}
 function addEvidence(){if(evidenceShapeValid.value&&evidence.value.length<40){const next=jiangsuOwnCopyList(evidence.value);next.push({name:'',source:'',purpose:'',originalType:'',pageCount:''});updateField('evidenceList',next)}}
-function removeEvidence(i){if(evidenceShapeValid.value&&evidence.value.length>1){const next=jiangsuOwnCopyList(evidence.value);next.splice(i,1);updateField('evidenceList',next)}}
+function removeEvidence(i: number){if(evidenceShapeValid.value&&evidence.value.length>1){const next=jiangsuOwnCopyList(evidence.value);next.splice(i,1);updateField('evidenceList',next)}}
 watch(validation,result=>emit('validation',result),{immediate:true,deep:true})
 onMounted(()=>{if(props.modelValue===undefined)emit('update:modelValue',createJiangsuOwnExample(props.kind))})
-defineExpose({validate:()=>validateJiangsuOwn(value.value,props.kind),getPayload:()=>jiangsuOwnPayload(value.value,props.kind)})
+defineExpose({validate:()=>validateJiangsuOwn(rawValue.value,props.kind),getPayload:()=>jiangsuOwnPayload(rawValue.value,props.kind)})
 </script>
 
 <style scoped>

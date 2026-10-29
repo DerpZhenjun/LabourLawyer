@@ -1,0 +1,31 @@
+PASS page waits for its bound contract and aborts a previous pending scope
+PASS generic renderer shows only server fields, choices and capacities without truncating
+PASS unknown raw draft keys and list extras stay visible to rejection after editing
+PASS confirmation supports submit prevention, cancel and Escape without generating
+PASS submitted payload carries the bound contract id and preserves known hidden slots
+PASS old confirmations and late generation responses cannot download across scopes
+PASS contract errors expose retry and never reuse old fields or wrong source results
+PASS server evidence schema controls row columns, a one-row minimum and its own maximum
+PASS specialized components keep their own examples and isolate every full context
+PASS source/version/template/kind changes invalidate confirmation immediately
+PASS state invalidates a direct context change before any render or network completion
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert(state.contract.value)
+
+    at scripts/test-regional-form-integration.mjs:178:3
+    at async test (scripts/test-regional-form-integration.mjs:20:30)
+    at async scripts/test-regional-form-integration.mjs:173:1 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: null,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

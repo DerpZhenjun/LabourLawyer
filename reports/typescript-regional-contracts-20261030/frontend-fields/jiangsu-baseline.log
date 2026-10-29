@@ -1,0 +1,20 @@
+PASS Jiangsu own field API exists
+PASS examples use exactly the own keys, fictional facts, blank date/copies and independent rows
+PASS ordinary 300, request 4 x 1200, facts 12000 and evidence 40 limits preserve overlong drafts
+PASS copy count accepts only blank or ASCII integers 1 through 30
+PASS unknown keys even empty, invalid Unicode/XML, array extras and wrong shapes cannot be discarded
+PASS strict Gregorian dates keep year0001..9999 and reject normalized or partial dates
+PASS payload preserves all whitespace, blank rows and numeric values in a deep copy
+PASS DATA_FIELDS/LIMITS and representative validity match the actual EJS provider
+PASS Vue SFC script/template/styles compile with accessible controls and no input truncation
+PASS mounted default is fictional with labels on every control
+PASS mounted labels identify the worker own department and every aria target exists
+PASS 200 characters survive input and 301 characters remain visible with linked field error
+PASS request controls keep one row, stop at four and preserve existing text
+PASS evidence rows expose exactly five columns and enforce one through forty rows
+PASS evidence overcapacity has a linked row error and retains the full text
+PASS editing never silently drops unknown fields from a draft or list
+PASS evidence clear leaves exact keys and a single row without date or copies
+PASS dates and both copy inputs retain invalid text with linked errors, source stays a textarea
+PASS dual drafts survive asynchronous kind changes without overwriting either draft
+PASS Jiangsu own fields: 19 checks; provider parity, mounted controls, lossless payload and SFC compilation

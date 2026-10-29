@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "scope": "Exact public script and parity evidence; no private runtime trace or fixture payload",
+  "self_excluded": true,
+  "files": [
+    {
+      "file": "scripts/test-regional-contract-parity.mjs",
+      "bytes": 15032,
+      "sha256": "9850934457f56aa0a81b0bc681ff17c823e76bd632a5a1eef5c103053e251ece"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/shared-parity/README.md",
+      "bytes": 3148,
+      "sha256": "e29fc65553fffb7e80ca485a34c60882405c0e07991781c79fbccd7d912cdbfb"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/shared-parity/RED.json",
+      "bytes": 15560,
+      "sha256": "1f703bb3f01ee496f4b815f4df38b58f2a5ef0c8d74c6d01834f3c570856c4ca"
+    },
+    {
+      "file": "reports/typescript-regional-contracts-20261030/shared-parity/RESULT.json",
+      "bytes": 5751,
+      "sha256": "16aae8dfd57d0748dfb2cef1d46cdabe5a3a30a99f7dac3eb17f9189cfcf6a25"
+    }
+  ]
+}

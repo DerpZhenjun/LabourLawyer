@@ -1,0 +1,25 @@
+PASS page waits for its bound contract and aborts a previous pending scope
+PASS generic renderer shows only server fields, choices and capacities without truncating
+PASS unknown raw draft keys and list extras stay visible to rejection after editing
+PASS confirmation supports submit prevention, cancel and Escape without generating
+PASS submitted payload carries the bound contract id and preserves known hidden slots
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+2 !== 1
+
+    at scripts/test-regional-form-integration.mjs:126:10
+    at async test (scripts/test-regional-form-integration.mjs:20:30)
+    at async scripts/test-regional-form-integration.mjs:122:1 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 2,
+  expected: 1,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

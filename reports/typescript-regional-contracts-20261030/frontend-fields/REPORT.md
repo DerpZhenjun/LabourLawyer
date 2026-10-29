@@ -1,0 +1,23 @@
+# 江苏与浙江自身表单 TypeScript 迁移
+
+完成两个字段工具、两个草稿composable和两个OwnFields组件的严格TypeScript迁移，保留四个同名JS re-export入口。未改RegionalDocument、useRegionalGuide、共享客户端、包配置、后端provider、数据库或服务，未改历史来源或封存pin。本轮不操作Git，也不声明发布完成。
+
+江苏22项、浙江20项运行时检查通过，包含迁移前19项和16项原有检查；后端DATA_FIELDS/LIMITS及代表性输入对照仍实际执行，没有删除provider parity。保留未知空键、不可枚举键、符号键、数组附加键与稀疏项的拒绝，编辑不会过滤掉旧草稿内容；200字保留、超限原文可见、Unicode/XML、份数、日期、行错误、label/aria关联、异步切换草稿及深复制均有覆盖。另检查JS shim导出与TS实现函数同一性，两个地区的未知草稿和null值在异步切换后仍原样存储并被校验拒绝。
+
+独立类型检查实际覆盖4个TS模块及2个lang="ts" SFC：strict、noUncheckedIndexedAccess、exactOptionalPropertyTypes、verbatimModuleSyntax及strictTemplates均开启。正例合法，12个反例在指定行被预期类型错误拒绝，包括跨地区或跨文书字段、数值冒充普通文字、无效请求项、错误kind、错误payload返回字段和未经守卫直接读取unknown草稿。测试以AST检查本域源码不存在显式宽泛类型或类型检查禁用注释；没有借类型忽略绕过错误。
+
+先运行现有19+16基线通过，再观察真实RED：缺少TS实现时类型测试失败；组件改为TS后，模板将unknown直接绑定到文字控件及户口选项检查产生编译错误。修复为受守卫的展示读取和事件目标读取，原始草稿仍供validate/getPayload使用。审查发现迁移后的示例工厂曾将非法运行时kind落到申请书，先补运行时拒绝测试并实际观察Missing expected exception，再恢复原有拒绝行为，最终GREEN。原始机器日志私下保留，交付日志只含相对项目路径。
+
+两个helper继续导出现有名称，并新增JiangsuOwn/ZhejiangOwn前缀类型：Kind、Application、Evidence、EvidenceItem、Data、RawDraft、EditableKey、FieldError、Validation，以及ValidationError类。createEmpty与createExample按字面kind返回对应Required结构；payload以unknown接收边界数据，运行时验证后返回对应文书的精确可选槽结构。数据类型中没有为任意字段增加索引签名；跨文书字段仍能被类型反例拒绝。payload中唯一结构断言位于完整运行时校验之后，不把未验证的raw草稿断言为合法数据。
+
+两个composable接受只读value边界并返回WritableComputedRef<unknown>，各自申请书和证据草稿分别保存，保持异步kind变化时的原有行为。组件modelValue与update:modelValue刻意为unknown，以便显示错误并保留旧草稿；仅渲染视图读取使用对象守卫。displayText只服务于DOM显示，不回写或规范化草稿；未知或错误类型依旧无法通过getPayload。现有虚构默认、日期及份数留空、浙江重复户口选项不猜测等业务行为保持。
+
+JS shim由Node24直接加载TS并剥离类型；两个旧mounted测试先用compiler-sfc编译，再用TypeScript.transpileModule去除编译产物中的类型语法，随后使用既有Vue测试渲染器。运行命令为：
+
+```text
+node scripts/test-own-field-types.mjs
+node scripts/test-jiangsu-own-fields.mjs
+node scripts/test-zhejiang-own-fields.mjs
+```
+
+类型测试自行生成私有临时正反例及局部tsconfig，不依赖预存私有文件；包依赖与全局tsconfig由整合任务维护。没有另外运行或启动网页服务；全局前端构建、共享入口类型检查及浏览器发布验收由整合任务确认。精确修改范围和交付SHA见DELIVERY-MANIFEST.json；历史来源清单SHA只读复核见UNCHANGED-SOURCE-PINS.json。

@@ -49,6 +49,12 @@ router.beforeEach(to => {
     const province = findProvince(to.params.province)
     const kind = to.path.endsWith('/evidence') ? 'hasEvidence' : 'hasApplication'
     if (!province) return '/'
+    const ownsScope = Object.hasOwn(to.query, 'city') || Object.hasOwn(to.query, 'district')
+    if (ownsScope) {
+      const complete = ['city', 'district'].every(key => typeof to.query[key] === 'string' && to.query[key].trim())
+      const documentKind = kind === 'hasEvidence' ? 'evidence' : 'application'
+      return { path: complete ? `/local-documents/${province.slug}/${documentKind}` : `/province/${province.slug}`, query: to.query, hash: to.hash }
+    }
     if (!province[kind]) return `/province/${province.slug}`
   }
 })

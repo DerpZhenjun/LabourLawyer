@@ -1,0 +1,125 @@
+{
+  "scope": "Own Jiangsu/Zhejiang TypeScript field modules, raw draft state and SFC migration only",
+  "product_files": [
+    "frontend/src/data/jiangsuOwnFields.ts",
+    "frontend/src/data/jiangsuOwnFields.js",
+    "frontend/src/data/zhejiangOwnFields.ts",
+    "frontend/src/data/zhejiangOwnFields.js",
+    "frontend/src/composables/useJiangsuOwnDrafts.ts",
+    "frontend/src/composables/useJiangsuOwnDrafts.js",
+    "frontend/src/composables/useZhejiangOwnDrafts.ts",
+    "frontend/src/composables/useZhejiangOwnDrafts.js",
+    "frontend/src/components/JiangsuOwnFields.vue",
+    "frontend/src/components/ZhejiangOwnFields.vue",
+    "scripts/test-own-field-types.mjs",
+    "scripts/test-jiangsu-own-fields.mjs",
+    "scripts/test-zhejiang-own-fields.mjs"
+  ],
+  "verification": {
+    "strict_typescript": "PASS",
+    "strict_vue_templates": "PASS",
+    "negative_type_counterexamples": 12,
+    "jiangsu_runtime_checks": 22,
+    "zhejiang_runtime_checks": 20,
+    "provider_parity": "PASS",
+    "shared_build_or_service_started": false
+  },
+  "files": {
+    "frontend/src/data/jiangsuOwnFields.ts": {
+      "sha256": "6089de1c578e75cdc10b38f52f8978000f9e1a1bf0cde7378ed43d00568915b7",
+      "bytes": 15299
+    },
+    "frontend/src/data/jiangsuOwnFields.js": {
+      "sha256": "0a7412305802ba0aca7395a2d5f6d4f777847131e57e65b25de9dc4fe425d372",
+      "bytes": 106
+    },
+    "frontend/src/data/zhejiangOwnFields.ts": {
+      "sha256": "1c872dbb6b1129813aa8931ea86195aa04b160a04cf5b44f9f280a5b9cc74aa7",
+      "bytes": 14443
+    },
+    "frontend/src/data/zhejiangOwnFields.js": {
+      "sha256": "73af6d041bc90f56995d84767e84a6cf35510a76ca23d7e0061be76dd5e6ccb8",
+      "bytes": 107
+    },
+    "frontend/src/composables/useJiangsuOwnDrafts.ts": {
+      "sha256": "1f9a74155c28f126a5df1706492ba4c5e0921242cd458caed799d908c8e7d226",
+      "bytes": 715
+    },
+    "frontend/src/composables/useJiangsuOwnDrafts.js": {
+      "sha256": "b39ee881c16894c04a5525d8ee134f516653c6fa2528781a4af28a6076d5efcf",
+      "bytes": 109
+    },
+    "frontend/src/composables/useZhejiangOwnDrafts.ts": {
+      "sha256": "da6f7ff4585bf75fe541a77ea5955b0aafe4b2dac93bac42cdc51e46b09efb61",
+      "bytes": 720
+    },
+    "frontend/src/composables/useZhejiangOwnDrafts.js": {
+      "sha256": "7f61cd6664d3c57e945dd544ec065879b70ccc018eef1c12eb69f092aaa2b3f4",
+      "bytes": 110
+    },
+    "frontend/src/components/JiangsuOwnFields.vue": {
+      "sha256": "eb1858fa73ae5da0e921e1e88dd7109d8197bd0a3a5c61443316a36b11623eab",
+      "bytes": 14801
+    },
+    "frontend/src/components/ZhejiangOwnFields.vue": {
+      "sha256": "66cb3c90f9dbaa706d3aae1a3260b3289120900c9e40c70262d1d54105dfb34f",
+      "bytes": 15787
+    },
+    "scripts/test-own-field-types.mjs": {
+      "sha256": "6801269b18f0e4a698a7e67d13bb8d3dbd54ef107060b3ff50eff10eaa4d165a",
+      "bytes": 7051
+    },
+    "scripts/test-jiangsu-own-fields.mjs": {
+      "sha256": "83e5a66cf3e6393885c2ddcbbf9bcf1c6a8f5088af3815e0e76577622965c928",
+      "bytes": 20554
+    },
+    "scripts/test-zhejiang-own-fields.mjs": {
+      "sha256": "3d32e4567f71f516d1fe0af7cc738c425c4794b6709ef0ee6fd4d6cfa71ed893",
+      "bytes": 18167
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-fields/REPORT.md": {
+      "sha256": "a589c30d2f029ac2ee685c5483d9e5f44dd8e1856dac4172af0e66f62acd7b8c",
+      "bytes": 3989
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-fields/types-RED.log": {
+      "sha256": "3a09af5b6a6620220dacf01b4c3eb0163f29783720925ff2ccde24c74518bd22",
+      "bytes": 570
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-fields/sfc-types-RED.log": {
+      "sha256": "6268f25db4e91c270f5524a06b831f2b36532bd36e704e51c00fa48a96839277",
+      "bytes": 1628
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-fields/jiangsu-runtime-kind-RED.log": {
+      "sha256": "220a0c17499cd56e78be44cd3560dd920cd61e7a34927ceea445b355bb431a68",
+      "bytes": 476
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-fields/zhejiang-runtime-kind-RED.log": {
+      "sha256": "3fc976a448f5ac5e8254f40a5c82cd703b0fecb2483d917bfd08679f5fadb948",
+      "bytes": 480
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-fields/jiangsu-baseline.log": {
+      "sha256": "9a5bd275636e6c3878acf38e49f4ac534843826dc12f28de62bd88553edde352",
+      "bytes": 1649
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-fields/zhejiang-baseline.log": {
+      "sha256": "10c13282433ed9875ffd81474029b1041c682b6ccfc3b5d762473b828d1c4363",
+      "bytes": 1363
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-fields/types-GREEN.log": {
+      "sha256": "29a6cd72adfc2899c633a48e5b6ccbff81cfb938df83b0df133573bc917a2d37",
+      "bytes": 134
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-fields/jiangsu-GREEN.log": {
+      "sha256": "723155b58414ec8ab2d89ad761fc1628e5c7c9598e675cf3a48f7b215dc3e66b",
+      "bytes": 1870
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-fields/zhejiang-GREEN.log": {
+      "sha256": "dadec17c5ad26a5234b2602f6631fe35e54d3776c764958e967080a4684e23c7",
+      "bytes": 1668
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-fields/UNCHANGED-SOURCE-PINS.json": {
+      "sha256": "b3ea81932aebcfe943da48e15ba3f8df9a7d1acdd33b47b7681d38a535425965",
+      "bytes": 670
+    }
+  }
+}

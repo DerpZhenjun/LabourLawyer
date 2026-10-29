@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "status": "FAIL",
+  "scope": "Pure runtime comparison; actual checked source contracts with synthetic temporary-store versions; no live database or document generation.",
+  "profiles": 23,
+  "json_vectors": 7824,
+  "local_shape_vectors": 156,
+  "runtime_checks": 15960,
+  "fixtures_sha256": "b181c83c0e25669ba13e09de622ce757ea6723ac32be43ddb67b09e15c0e4194",
+  "shared_source_sha256": "c8264e5125a01b01165a2fefe911bff22e5eb9eeab838453843fe80a7cdcfc5f",
+  "mini_generated_sha256": "0871703b8fdcbdfb0bc024eddeb1075b3f09e2d748ae72d5c5df558d46cea788",
+  "script_sha256": "cc3bc313beb8979c95ff399dd9445e9e130799ac2bf067152283083e8bebeb4a",
+  "normalization": "Shared request builders retain raw values; Python may normalize declared integer copy fields. Validity is compared directly; no inferred official requirements.",
+  "coverage": [
+    {
+      "profile": "jiangsu_xishan_blank_v1:evidence",
+      "adapter": "jiangsu_xishan_blank_v1",
+      "kind": "evidence",
+      "json_vectors": 167,
+      "local_shape_vectors": 5
+    },
+    {
+      "profile": "jiangsu_xishan_blank_v1:application",
+      "adapter": "jiangsu_xishan_blank_v1",
+      "kind": "application",
+      "json_vectors": 546,
+      "local_shape_vectors": 8
+    },
+    {
+      "profile": "sichuan_combined_reference_v1:application",
+      "adapter": "sichuan_combined_reference_v1",
+      "kind": "application",
+      "json_vectors": 368,
+      "local_shape_vectors": 4
+    },
+    {
+      "profile": "sichuan_combined_reference_v1:evidence",
+      "adapter": "sichuan_combined_reference_v1",
+      "kind": "evidence",
+      "json_vectors": 123,
+      "local_shape_vectors": 5
+    },
+    {
+      "profile": "tianfu_reference_v1:application",
+      "adapter": "tianfu_reference_v1",
+      "kind": "application",
+      "json_vectors": 368,
+      "local_shape_vectors": 4
+    },
+    {
+      "profile": "tianfu_reference_v1:evidence",
+      "adapter": "tianfu_reference_v1",
+      "kind": "evidence",
+      "json_vectors": 123,
+      "local_shape_vectors": 5
+    },
+    {
+      "profile": "zhejiang_ningbo_own_blank_oct29_v1:application",
+      "adapter": "zhejiang_ningbo_own_blank_oct29_v1",
+      "kind": "application",
+      "json_vectors": 461,
+      "local_shape_vectors": 6
+    },
+    {
+      "profile": "zhejiang_ningbo_own_blank_oct29_v1:evidence",
+      "adapter": "zhejiang_ningbo_own_blank_oct29_v1",
+      "kind": "evidence",
+      "json_vectors": 147,
+      "local_shape_vectors": 5
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "adapter": "anhui-feidong-official-application-20261029",
+      "kind": "application",
+      "json_vectors": 278,
+      "local_shape_vectors": 16
+    },
+    {
+      "profile": "jiangsu_own_blank_oct29_v1:evidence",
+      "adapter": "jiangsu_own_blank_oct29_v1",
+      "kind": "evidence",
+      "json_vectors": 167,
+      "local_shape_vectors": 5
+    },
+    {
+      "profile": "jiangsu_own_blank_oct29_v1:application",
+      "adapter": "jiangsu_own_blank_oct29_v1",
+      "kind": "application",
+      "json_vectors": 546,
+      "local_shape_vectors": 8
+    },
+    {
+      "profile": "hunan_own_legacy_worker_oct29b_v1:application",
+      "adapter": "hunan_own_legacy_worker_oct29b_v1",
+      "kind": "application",
+      "json_vectors": 574,
+      "local_shape_vectors": 10
+    },
+    {
+      "profile": "hunan_own_legacy_worker_oct29c_v1:application",
+      "adapter": "hunan_own_legacy_worker_oct29c_v1",
+      "kind": "application",
+      "json_vectors": 574,
+      "local_shape_vectors": 10
+    },
+    {
+      "profile": "jiangsu_own_blank_oct29c_v1:evidence",
+      "adapter": "jiangsu_own_blank_oct29c_v1",
+      "kind": "evidence",
+      "json_vectors": 167,
+      "local_shape_vectors": 5
+    },
+    {
+      "profile": "jiangsu_own_blank_oct29c_v1:application",
+      "adapter": "jiangsu_own_blank_oct29c_v1",
+      "kind": "application",
+      "json_vectors": 546,
+      "local_shape_vectors": 8
+    },
+    {
+      "profile": "jiangsu_own_blank_oct29d_v1:evidence",
+      "adapter": "jiangsu_own_blank_oct29d_v1",
+      "kind": "evidence",
+      "json_vectors": 167,
+      "local_shape_vectors": 5
+    },
+    {
+      "profile": "jiangsu_own_blank_oct29d_v1:application",
+      "adapter": "jiangsu_own_blank_oct29d_v1",
+      "kind": "application",
+      "json_vectors": 546,
+      "local_shape_vectors": 8
+    },
+    {
+      "profile": "zhejiang_own_worker_oct29d_v1:application",
+      "adapter": "zhejiang_own_worker_oct29d_v1",
+      "kind": "application",
+      "json_vectors": 457,
+      "local_shape_vectors": 6
+    },
+    {
+      "profile": "zhejiang_own_worker_oct29d_v1:evidence",
+      "adapter": "zhejiang_own_worker_oct29d_v1",
+      "kind": "evidence",
+      "json_vectors": 160,
+      "local_shape_vectors": 7
+    },
+    {
+      "profile": "jiangsu_own_blank_oct29e_v1:evidence",
+      "adapter": "jiangsu_own_blank_oct29e_v1",
+      "kind": "evidence",
+      "json_vectors": 168,
+      "local_shape_vectors": 5
+    },
+    {
+      "profile": "jiangsu_own_blank_oct29e_v1:application",
+      "adapter": "jiangsu_own_blank_oct29e_v1",
+      "kind": "application",
+      "json_vectors": 554,
+      "local_shape_vectors": 8
+    },
+    {
+      "profile": "zhejiang_own_worker_oct29e_v1:application",
+      "adapter": "zhejiang_own_worker_oct29e_v1",
+      "kind": "application",
+      "json_vectors": 457,
+      "local_shape_vectors": 6
+    },
+    {
+      "profile": "zhejiang_own_worker_oct29e_v1:evidence",
+      "adapter": "zhejiang_own_worker_oct29e_v1",
+      "kind": "evidence",
+      "json_vectors": 160,
+      "local_shape_vectors": 7
+    }
+  ],
+  "failures": [
+    {
+      "profile": "sichuan_combined_reference_v1:evidence",
+      "vector": "fictional_example",
+      "detail": "Example fell back to the entirely blank default"
+    },
+    {
+      "profile": "tianfu_reference_v1:evidence",
+      "vector": "fictional_example",
+      "detail": "Example fell back to the entirely blank default"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "applicant_lines:layout_python_strip_prefix:85",
+      "detail": "shared_ts=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "applicant_lines:layout_python_strip_prefix:85",
+      "detail": "mini_cjs=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "applicant_lines:layout_python_strip_suffix:85",
+      "detail": "shared_ts=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "applicant_lines:layout_python_strip_suffix:85",
+      "detail": "mini_cjs=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "applicant_lines:layout_python_strip_prefix:feff",
+      "detail": "shared_ts=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "applicant_lines:layout_python_strip_prefix:feff",
+      "detail": "mini_cjs=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "applicant_lines:layout_python_strip_suffix:feff",
+      "detail": "shared_ts=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "applicant_lines:layout_python_strip_suffix:feff",
+      "detail": "mini_cjs=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "agent_lines:layout_python_strip_prefix:85",
+      "detail": "shared_ts=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "agent_lines:layout_python_strip_prefix:85",
+      "detail": "mini_cjs=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "agent_lines:layout_python_strip_suffix:85",
+      "detail": "shared_ts=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "agent_lines:layout_python_strip_suffix:85",
+      "detail": "mini_cjs=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "agent_lines:layout_python_strip_prefix:feff",
+      "detail": "shared_ts=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "agent_lines:layout_python_strip_prefix:feff",
+      "detail": "mini_cjs=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "agent_lines:layout_python_strip_suffix:feff",
+      "detail": "shared_ts=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "agent_lines:layout_python_strip_suffix:feff",
+      "detail": "mini_cjs=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "respondent_lines:layout_python_strip_prefix:85",
+      "detail": "shared_ts=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "respondent_lines:layout_python_strip_prefix:85",
+      "detail": "mini_cjs=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "respondent_lines:layout_python_strip_suffix:85",
+      "detail": "shared_ts=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "respondent_lines:layout_python_strip_suffix:85",
+      "detail": "mini_cjs=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "respondent_lines:layout_python_strip_prefix:feff",
+      "detail": "shared_ts=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "respondent_lines:layout_python_strip_prefix:feff",
+      "detail": "mini_cjs=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "respondent_lines:layout_python_strip_suffix:feff",
+      "detail": "shared_ts=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "respondent_lines:layout_python_strip_suffix:feff",
+      "detail": "mini_cjs=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "representative_lines:layout_python_strip_prefix:85",
+      "detail": "shared_ts=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "representative_lines:layout_python_strip_prefix:85",
+      "detail": "mini_cjs=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "representative_lines:layout_python_strip_suffix:85",
+      "detail": "shared_ts=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "representative_lines:layout_python_strip_suffix:85",
+      "detail": "mini_cjs=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "representative_lines:layout_python_strip_prefix:feff",
+      "detail": "shared_ts=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "representative_lines:layout_python_strip_prefix:feff",
+      "detail": "mini_cjs=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "representative_lines:layout_python_strip_suffix:feff",
+      "detail": "shared_ts=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "representative_lines:layout_python_strip_suffix:feff",
+      "detail": "mini_cjs=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "requests:layout_python_strip_prefix:85",
+      "detail": "shared_ts=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "requests:layout_python_strip_prefix:85",
+      "detail": "mini_cjs=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "requests:layout_python_strip_suffix:85",
+      "detail": "shared_ts=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "requests:layout_python_strip_suffix:85",
+      "detail": "mini_cjs=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "requests:layout_python_strip_prefix:feff",
+      "detail": "shared_ts=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "requests:layout_python_strip_prefix:feff",
+      "detail": "mini_cjs=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "requests:layout_python_strip_suffix:feff",
+      "detail": "shared_ts=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "requests:layout_python_strip_suffix:feff",
+      "detail": "mini_cjs=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "facts:layout_python_strip_prefix:85",
+      "detail": "shared_ts=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "facts:layout_python_strip_prefix:85",
+      "detail": "mini_cjs=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "facts:layout_python_strip_suffix:85",
+      "detail": "shared_ts=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "facts:layout_python_strip_suffix:85",
+      "detail": "mini_cjs=false; Python=true"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "facts:layout_python_strip_prefix:feff",
+      "detail": "shared_ts=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "facts:layout_python_strip_prefix:feff",
+      "detail": "mini_cjs=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "facts:layout_python_strip_suffix:feff",
+      "detail": "shared_ts=true; Python=false"
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "vector": "facts:layout_python_strip_suffix:feff",
+      "detail": "mini_cjs=true; Python=false"
+    }
+  ]
+}

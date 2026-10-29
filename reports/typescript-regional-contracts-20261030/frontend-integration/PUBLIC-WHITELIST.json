@@ -1,0 +1,61 @@
+{
+  "scope": "Exact listed files only; no recursive publication, private diagnostics, dependencies or draft payloads",
+  "files": {
+    "frontend/src/components/RegionalContractFields.vue": {
+      "sha256": "8c8f99213e177b145f5f967713237c14a0c862dcda5b4156459c8848a84fbfa0",
+      "bytes": 12160
+    },
+    "frontend/src/composables/useRegionalForm.ts": {
+      "sha256": "0f15c8ef843b3720dc8ab721e852a8f5c0f0de5e3c876871042e0dad30d78774",
+      "bytes": 8035
+    },
+    "frontend/src/router/index.js": {
+      "sha256": "949dd3ce39de75f0c71f609e26706c86b0211da334b2df5ba8c4e53b60a1d28a",
+      "bytes": 4472
+    },
+    "frontend/src/views/RegionalDocument.vue": {
+      "sha256": "7f8dc5cfd15304b8495aab5477c0b1a55f17d8802dbcf3c46ede7c78df7a1f2d",
+      "bytes": 10143
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-integration/FROZEN-CHECK.log": {
+      "sha256": "aac87d6c7d9d64b97da3c5c1b12499b2935155383d4833891b8ed71c71cc4dfd",
+      "bytes": 65
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-integration/GREEN.log": {
+      "sha256": "5eb1df8b18ff765cb995ef996fc3a43e27aa6750fe6fc6bf46cfc4cb6e5581ed",
+      "bytes": 6645
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-integration/REPORT.md": {
+      "sha256": "52cd4038a6bc3b256c09a9735a6cdbad0082e72a2ced5b4d588e158e65811c73",
+      "bytes": 3649
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-integration/context-order-RED.log": {
+      "sha256": "c649a0e186c1c2ae35ce95a465a37f758f4d36707086eb21e6fd27d7e914d0d8",
+      "bytes": 1431
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-integration/page-RED.log": {
+      "sha256": "81350cfdd2ef50427abadbd3a337fe41b8cd2d87545ce045df9989e03fdff85d",
+      "bytes": 552
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-integration/routing-RED.log": {
+      "sha256": "03538a48dfc92941eb8b6087e26d477041f2355ce4b0fc4c4d8bf4c94fb242d6",
+      "bytes": 536
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-integration/stale-confirm-action-RED.log": {
+      "sha256": "a892ae388c4cd02909774a873f93e7aefc83ae86a7731cd4d3a2f7befdf1f9ed",
+      "bytes": 903
+    },
+    "scripts/test-regional-document-routing.mjs": {
+      "sha256": "b49733dc1a8cc15f33ed59fcec000f3d3d457547f7a36d55928c37716aaebcff",
+      "bytes": 2424
+    },
+    "scripts/test-regional-form-integration.mjs": {
+      "sha256": "e6920fdff421715a9a8a714afaff8a755f92133ebc85a9a71aa30f756509ea41",
+      "bytes": 19842
+    },
+    "reports/typescript-regional-contracts-20261030/frontend-integration/DELIVERY-MANIFEST.json": {
+      "sha256": "727721590d3531c0505519ec9643271d976f4064a6cfad51d2bc2851911935e4",
+      "bytes": 3174
+    }
+  }
+}

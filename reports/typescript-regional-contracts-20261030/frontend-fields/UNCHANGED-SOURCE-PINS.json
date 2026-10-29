@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "files": {
+    "reports/nationwide-verification-20261029-e/jiangsu/SOURCE-MANIFEST.json": "7f92920807dc4ec74f26ace3be76adf67303cbd4877994777c1a8ca0b1e7bb5e",
+    "reports/nationwide-verification-20261029-e/jiangsu/PUBLIC-WHITELIST.json": "d3227b2755591c2be1375269a033bac6e62653d367b81150f89a0667091f9a8f",
+    "reports/nationwide-verification-20261029-d/zhejiang/SOURCE-MANIFEST.json": "c71d92d0d46b59a6708bbb40d75c34eb55f566a3b0b354fde0f6583b4c1c1857",
+    "reports/nationwide-verification-20261029-d/zhejiang/PUBLIC-WHITELIST.json": "9ff527502ded47094a161caeacbf3e69660dccc88e7062246d20d978902361f3"
+  },
+  "historical_pins_rewritten": false
+}

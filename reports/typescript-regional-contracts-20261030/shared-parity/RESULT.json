@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "scope": "Pure runtime comparison; actual checked source contracts with synthetic fixture versions; no database or document generation.",
+  "fixtures_origin": "fresh actual-source build_form_contract with explicit root; no store",
+  "profiles": 23,
+  "json_vectors": 8253,
+  "local_shape_vectors": 202,
+  "runtime_checks": 16910,
+  "fixtures_sha256": "5a89409a55e0f09f91bbc880c204cfde7e2d20d3253978d2ff83beda275239c9",
+  "shared_source_sha256": "3fc3b52e1396c862538496b6ab9768ef14abbed9b501ef524016e92a832606bf",
+  "mini_generated_sha256": "ad6ca35d06aff96285a8b2e516886231ab297d04a78f621b81d977433b126435",
+  "script_sha256": "9850934457f56aa0a81b0bc681ff17c823e76bd632a5a1eef5c103053e251ece",
+  "normalization": "Shared request builders retain raw values; Python may normalize declared integer copy fields. Validity is compared directly; no inferred official requirements.",
+  "coverage": [
+    {
+      "profile": "jiangsu_xishan_blank_v1:evidence",
+      "adapter": "jiangsu_xishan_blank_v1",
+      "kind": "evidence",
+      "json_vectors": 177,
+      "local_shape_vectors": 7
+    },
+    {
+      "profile": "jiangsu_xishan_blank_v1:application",
+      "adapter": "jiangsu_xishan_blank_v1",
+      "kind": "application",
+      "json_vectors": 574,
+      "local_shape_vectors": 10
+    },
+    {
+      "profile": "sichuan_combined_reference_v1:application",
+      "adapter": "sichuan_combined_reference_v1",
+      "kind": "application",
+      "json_vectors": 388,
+      "local_shape_vectors": 6
+    },
+    {
+      "profile": "sichuan_combined_reference_v1:evidence",
+      "adapter": "sichuan_combined_reference_v1",
+      "kind": "evidence",
+      "json_vectors": 130,
+      "local_shape_vectors": 7
+    },
+    {
+      "profile": "tianfu_reference_v1:application",
+      "adapter": "tianfu_reference_v1",
+      "kind": "application",
+      "json_vectors": 388,
+      "local_shape_vectors": 6
+    },
+    {
+      "profile": "tianfu_reference_v1:evidence",
+      "adapter": "tianfu_reference_v1",
+      "kind": "evidence",
+      "json_vectors": 130,
+      "local_shape_vectors": 7
+    },
+    {
+      "profile": "zhejiang_ningbo_own_blank_oct29_v1:application",
+      "adapter": "zhejiang_ningbo_own_blank_oct29_v1",
+      "kind": "application",
+      "json_vectors": 486,
+      "local_shape_vectors": 8
+    },
+    {
+      "profile": "zhejiang_ningbo_own_blank_oct29_v1:evidence",
+      "adapter": "zhejiang_ningbo_own_blank_oct29_v1",
+      "kind": "evidence",
+      "json_vectors": 156,
+      "local_shape_vectors": 7
+    },
+    {
+      "profile": "anhui-feidong-official-application-20261029:application",
+      "adapter": "anhui-feidong-official-application-20261029",
+      "kind": "application",
+      "json_vectors": 302,
+      "local_shape_vectors": 18
+    },
+    {
+      "profile": "jiangsu_own_blank_oct29_v1:evidence",
+      "adapter": "jiangsu_own_blank_oct29_v1",
+      "kind": "evidence",
+      "json_vectors": 177,
+      "local_shape_vectors": 7
+    },
+    {
+      "profile": "jiangsu_own_blank_oct29_v1:application",
+      "adapter": "jiangsu_own_blank_oct29_v1",
+      "kind": "application",
+      "json_vectors": 574,
+      "local_shape_vectors": 10
+    },
+    {
+      "profile": "hunan_own_legacy_worker_oct29b_v1:application",
+      "adapter": "hunan_own_legacy_worker_oct29b_v1",
+      "kind": "application",
+      "json_vectors": 604,
+      "local_shape_vectors": 12
+    },
+    {
+      "profile": "hunan_own_legacy_worker_oct29c_v1:application",
+      "adapter": "hunan_own_legacy_worker_oct29c_v1",
+      "kind": "application",
+      "json_vectors": 604,
+      "local_shape_vectors": 12
+    },
+    {
+      "profile": "jiangsu_own_blank_oct29c_v1:evidence",
+      "adapter": "jiangsu_own_blank_oct29c_v1",
+      "kind": "evidence",
+      "json_vectors": 177,
+      "local_shape_vectors": 7
+    },
+    {
+      "profile": "jiangsu_own_blank_oct29c_v1:application",
+      "adapter": "jiangsu_own_blank_oct29c_v1",
+      "kind": "application",
+      "json_vectors": 574,
+      "local_shape_vectors": 10
+    },
+    {
+      "profile": "jiangsu_own_blank_oct29d_v1:evidence",
+      "adapter": "jiangsu_own_blank_oct29d_v1",
+      "kind": "evidence",
+      "json_vectors": 177,
+      "local_shape_vectors": 7
+    },
+    {
+      "profile": "jiangsu_own_blank_oct29d_v1:application",
+      "adapter": "jiangsu_own_blank_oct29d_v1",
+      "kind": "application",
+      "json_vectors": 574,
+      "local_shape_vectors": 10
+    },
+    {
+      "profile": "zhejiang_own_worker_oct29d_v1:application",
+      "adapter": "zhejiang_own_worker_oct29d_v1",
+      "kind": "application",
+      "json_vectors": 481,
+      "local_shape_vectors": 8
+    },
+    {
+      "profile": "zhejiang_own_worker_oct29d_v1:evidence",
+      "adapter": "zhejiang_own_worker_oct29d_v1",
+      "kind": "evidence",
+      "json_vectors": 170,
+      "local_shape_vectors": 9
+    },
+    {
+      "profile": "jiangsu_own_blank_oct29e_v1:evidence",
+      "adapter": "jiangsu_own_blank_oct29e_v1",
+      "kind": "evidence",
+      "json_vectors": 177,
+      "local_shape_vectors": 7
+    },
+    {
+      "profile": "jiangsu_own_blank_oct29e_v1:application",
+      "adapter": "jiangsu_own_blank_oct29e_v1",
+      "kind": "application",
+      "json_vectors": 582,
+      "local_shape_vectors": 10
+    },
+    {
+      "profile": "zhejiang_own_worker_oct29e_v1:application",
+      "adapter": "zhejiang_own_worker_oct29e_v1",
+      "kind": "application",
+      "json_vectors": 481,
+      "local_shape_vectors": 8
+    },
+    {
+      "profile": "zhejiang_own_worker_oct29e_v1:evidence",
+      "adapter": "zhejiang_own_worker_oct29e_v1",
+      "kind": "evidence",
+      "json_vectors": 170,
+      "local_shape_vectors": 9
+    }
+  ],
+  "failures": []
+}

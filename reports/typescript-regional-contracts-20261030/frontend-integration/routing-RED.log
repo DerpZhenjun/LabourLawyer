@@ -1,0 +1,20 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: /documents/jiangsu/application?city=苏州市&district=相城区
++ actual - expected
+
++ '/documents/jiangsu/application'
+- '/local-documents/jiangsu/application'
+
+    at scripts/test-regional-document-routing.mjs:27:9 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: '/documents/jiangsu/application',
+  expected: '/local-documents/jiangsu/application',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

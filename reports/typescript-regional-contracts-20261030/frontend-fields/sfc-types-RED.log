@@ -1,0 +1,28 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: frontend/src/components/JiangsuOwnFields.vue(34,55): error TS2322: Type 'unknown' is not assignable to type 'string | number | readonly string[] | null | undefined'.
+frontend/src/components/JiangsuOwnFields.vue(48,47): error TS2322: Type '{}' is not assignable to type 'string | number | readonly string[] | null | undefined'.
+frontend/src/components/JiangsuOwnFields.vue(64,74): error TS2322: Type '{}' is not assignable to type 'string | number | readonly string[] | null | undefined'.
+frontend/src/components/ZhejiangOwnFields.vue(20,88): error TS2345: Argument of type '{}' is not assignable to parameter of type 'string'.
+frontend/src/components/ZhejiangOwnFields.vue(42,55): error TS2322: Type 'unknown' is not assignable to type 'string | number | readonly string[] | null | undefined'.
+frontend/src/components/ZhejiangOwnFields.vue(56,47): error TS2322: Type '{}' is not assignable to type 'string | number | readonly string[] | null | undefined'.
+frontend/src/components/ZhejiangOwnFields.vue(72,74): error TS2322: Type '{}' is not assignable to type 'string | number | readonly string[] | null | undefined'.
+
+
+2 !== 0
+
+    at scripts/test-own-field-types.mjs:81:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 2,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

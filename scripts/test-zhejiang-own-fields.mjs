@@ -15,6 +15,14 @@ await test('Zhejiang own field API exists',()=>{
     assert.equal(typeof fields[key],'function',`${key} 尚未实现`)
 })
 const {createEmptyZhejiangOwn,createZhejiangOwnExample,validateZhejiangOwn,zhejiangOwnPayload}=fields
+await test('unsupported runtime kinds reject without defaulting to another form',()=>{
+  for(const kind of ['identity','',null,7]){
+    assert.throws(()=>createEmptyZhejiangOwn(kind))
+    assert.throws(()=>createZhejiangOwnExample(kind))
+    assert(!validateZhejiangOwn({},kind).valid)
+    assert.throws(()=>zhejiangOwnPayload({},kind))
+  }
+})
 const appKeys='committeeName applicantName birthDate gender nationality idNumber phone householdType idAddress respondentName socialCreditCode registeredAddress mailingAddress workAddress legalRepName legalRepPhone legalRepPosition companyContact companyContactPhone factsReason applicationDate copyCount requests'.split(' ').sort()
 const evidenceKeys=['committeeName','caseNumber','copyCount','submitDate','evidenceList'].sort()
 const itemKeys=['name','pageCount','source','purpose'].sort()
@@ -108,7 +116,9 @@ await test('Vue SFC script/template/styles compile with accessible controls and 
   assert.match(source,/min-height:\s*44px/);assert.match(source,/@media/)
 })
 const vue=require('vue')
-const transformed=compiled.content.replace(/import\s*\{([^}]+)\}\s*from\s*['"]([^'"]+)['"];?/g,(_,names,from)=>`const {${names.replace(/\s+as\s+/g,':')}}=${from==='vue'?'__vue':'__fields'};`).replace('export default','return')
+const typescript=require('typescript')
+const compiledJavaScript=typescript.transpileModule(compiled.content,{compilerOptions:{target:typescript.ScriptTarget.ES2022,module:typescript.ModuleKind.ESNext,verbatimModuleSyntax:true}}).outputText
+const transformed=compiledJavaScript.replace(/import\s*\{([^}]+)\}\s*from\s*['"]([^'"]+)['"];?/g,(_,names,from)=>`const {${names.replace(/\s+as\s+/g,':')}}=${from==='vue'?'__vue':'__fields'};`).replace('export default','return')
 const Component=new Function('__vue','__fields',transformed)(vue,fields)
 const node=(type,text='')=>({type,text,children:[],props:{},parent:null})
 const remove=el=>{if(el.parent){const i=el.parent.children.indexOf(el);if(i>=0)el.parent.children.splice(i,1);el.parent=null}}
@@ -174,4 +184,29 @@ await test('evidence clear leaves exact keys and a single row without date or co
   assert.deepEqual(state.value,createEmptyZhejiangOwn('evidence'));assert(instance.value.validate().valid)
 })
 app.unmount()
+await test('JS compatibility exports the actual TypeScript implementation',async()=>{
+  const typed=await import(new URL('../frontend/src/data/zhejiangOwnFields.ts',import.meta.url))
+  assert.equal(fields.createEmptyZhejiangOwn,typed.createEmptyZhejiangOwn)
+  assert.equal(fields.zhejiangOwnPayload,typed.zhejiangOwnPayload)
+})
+await test('dual drafts survive asynchronous kind changes without overwriting either draft',async()=>{
+  const {useZhejiangOwnDrafts}=await import(new URL('../frontend/src/composables/useZhejiangOwnDrafts.js',import.meta.url))
+  const selected=vue.ref('application'),draft=useZhejiangOwnDrafts(selected)
+  draft.value={...createEmptyZhejiangOwn('application'),factsReason:'申请草稿保留'}
+  await vue.nextTick();selected.value='evidence';await vue.nextTick()
+  draft.value={...createEmptyZhejiangOwn('evidence'),caseNumber:'证据草稿保留'}
+  await Promise.resolve();selected.value='application';await vue.nextTick()
+  assert.equal(draft.value.factsReason,'申请草稿保留');assert(!Object.hasOwn(draft.value,'caseNumber'))
+  selected.value='evidence';await vue.nextTick();assert.equal(draft.value.caseNumber,'证据草稿保留')
+})
+await test('raw invalid drafts remain stored and rejected through asynchronous switches',async()=>{
+  const {useZhejiangOwnDrafts}=await import(new URL('../frontend/src/composables/useZhejiangOwnDrafts.js',import.meta.url))
+  const selected=vue.ref('application'),draft=useZhejiangOwnDrafts(selected)
+  const invalid={phone:'虚构电话'};Object.defineProperty(invalid,'oldHidden',{value:'',enumerable:false})
+  draft.value=invalid;selected.value='evidence';await vue.nextTick();draft.value=null
+  await Promise.resolve();selected.value='application';await vue.nextTick()
+  assert(Object.hasOwn(draft.value,'oldHidden'));assert(!validateZhejiangOwn(draft.value,'application').valid)
+  selected.value='evidence';await vue.nextTick();assert.equal(draft.value,null)
+  assert.throws(()=>zhejiangOwnPayload(draft.value,'evidence'))
+})
 console.log(`PASS Zhejiang own fields: ${passed} checks; provider parity, mounted controls, lossless payload and SFC compilation`)

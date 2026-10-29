@@ -1,0 +1,96 @@
+Command: node scripts/test-regional-form-integration.mjs
+PASS page waits for its bound contract and aborts a previous pending scope
+PASS generic renderer shows only server fields, choices and capacities without truncating
+PASS unknown raw draft keys and list extras stay visible to rejection after editing
+PASS confirmation supports submit prevention, cancel and Escape without generating
+PASS submitted payload carries the bound contract id and preserves known hidden slots
+PASS old confirmations and late generation responses cannot download across scopes
+PASS contract errors expose retry and never reuse old fields or wrong source results
+PASS server evidence schema controls row columns, a one-row minimum and its own maximum
+PASS generation failures can reload the contract without discarding the same contract draft
+PASS specialized components keep their own examples and isolate every full context
+PASS source/version/template/kind changes invalidate confirmation immediately
+PASS state invalidates a direct context change before any render or network completion
+PASS context property order does not discard the same bound draft or refetch
+PASS an already started save cannot report success in another selection
+PASS regional form page integration: 14 mounted/cancellation/schema cases and strict state/renderer types
+Exit: 0
+
+Command: node scripts/test-regional-document-routing.mjs
+PASS regional document routing: 11 real memory-router guard cases
+Exit: 0
+
+Command: node scripts/test-jiangsu-own-fields.mjs
+PASS Jiangsu own field API exists
+PASS unsupported runtime kinds reject without defaulting to another form
+PASS examples use exactly the own keys, fictional facts, blank date/copies and independent rows
+PASS ordinary 300, request 4 x 1200, facts 12000 and evidence 40 limits preserve overlong drafts
+PASS copy count accepts only blank or ASCII integers 1 through 30
+PASS unknown keys even empty, invalid Unicode/XML, array extras and wrong shapes cannot be discarded
+PASS strict Gregorian dates keep year0001..9999 and reject normalized or partial dates
+PASS payload preserves all whitespace, blank rows and numeric values in a deep copy
+PASS DATA_FIELDS/LIMITS and representative validity match the actual EJS provider
+PASS Vue SFC script/template/styles compile with accessible controls and no input truncation
+PASS mounted default is fictional with labels on every control
+PASS mounted labels identify the worker own department and every aria target exists
+PASS 200 characters survive input and 301 characters remain visible with linked field error
+PASS request controls keep one row, stop at four and preserve existing text
+PASS evidence rows expose exactly five columns and enforce one through forty rows
+PASS evidence overcapacity has a linked row error and retains the full text
+PASS editing never silently drops unknown fields from a draft or list
+PASS evidence clear leaves exact keys and a single row without date or copies
+PASS dates and both copy inputs retain invalid text with linked errors, source stays a textarea
+PASS JS compatibility exports the actual TypeScript implementation
+PASS dual drafts survive asynchronous kind changes without overwriting either draft
+PASS raw invalid drafts remain stored and rejected through asynchronous switches
+PASS Jiangsu own fields: 22 checks; provider parity, mounted controls, lossless payload and SFC compilation
+Exit: 0
+
+Command: node scripts/test-zhejiang-own-fields.mjs
+PASS Zhejiang own field API exists
+PASS unsupported runtime kinds reject without defaulting to another form
+PASS examples use exactly the own keys, fictional facts, blank date/copies and independent rows
+PASS ordinary 300, request 4 x 1200, facts 12000 and evidence 40 limits preserve overlong drafts
+PASS copy count accepts only blank or ASCII integers 1 through 30
+PASS unknown keys even empty, invalid Unicode/XML, array extras and wrong shapes cannot be discarded
+PASS ambiguous duplicate household option is rejected without guessing
+PASS payload preserves all whitespace, blank rows and numeric values in a deep copy
+PASS DATA_FIELDS/LIMITS and representative validity match the actual ZJD provider
+PASS Vue SFC script/template/styles compile with accessible controls and no clipping
+PASS mounted default is fictional with labels on every control
+PASS 200 characters survive input and 301 characters remain visible with linked field error
+PASS request controls keep one row, stop at four and preserve existing text
+PASS evidence rows expose exactly four columns and enforce one through forty rows
+PASS evidence overcapacity has a linked row error and retains the full text
+PASS editing never silently drops unknown fields from a draft or list
+PASS evidence clear leaves exact keys and a single row without date or copies
+PASS JS compatibility exports the actual TypeScript implementation
+PASS dual drafts survive asynchronous kind changes without overwriting either draft
+PASS raw invalid drafts remain stored and rejected through asynchronous switches
+PASS Zhejiang own fields: 20 checks; provider parity, mounted controls, lossless payload and SFC compilation
+Exit: 0
+
+Command: node scripts/test-hunan-fields.mjs
+PASS public Hunan field functions exist
+PASS example is substantive, fictional, isolated and contains only supported keys
+PASS ordinary limits count Python Unicode characters, including boundary whitespace
+PASS requests, facts and embedded evidence enforce the own provider capacities
+PASS unknown legacy fields, signatures, invalid shapes and XML-invalid text are rejected in Chinese
+PASS unknown properties on lists cannot be silently discarded during serialization
+PASS payload is a lossless deep copy and does not filter blank list items
+PASS capacity decisions match the actual offline Hunan provider without Word or a service
+PASS Vue SFC script, template and scoped styles compile
+PASS mounted default is fictional and every editable control has an associated label
+PASS evidence add copies v-model without mutating the previous object
+PASS evidence removal preserves at least one row
+PASS overlimit input remains visible and its error is linked to the field
+PASS request removal preserves one row
+PASS list additions stop at eight requests and ten evidence items
+PASS explicit clear resets only supported fields and keeps one evidence row
+PASS Hunan fields: 16 checks; own-provider parity, lossless payload, v-model actions, accessibility associations and Vue SFC compilation
+Exit: 0
+
+Command: node scripts/test-feidong-fields.mjs
+PASS Feidong: blank/example, exact capacity, overflow/control rejection, lossless payload, Python parity and Vue SFC compilation
+Exit: 0
+
