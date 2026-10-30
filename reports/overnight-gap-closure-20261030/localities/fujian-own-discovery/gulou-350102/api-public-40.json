@@ -1,0 +1,117 @@
+{
+  "msg": null,
+  "total": null,
+  "code": 200,
+  "data": {
+    "flowNodeCount": {
+      "forthFlow": 0,
+      "threeFlow": 1,
+      "sevFlow": 0,
+      "sixFlow": 0,
+      "overseasStep": "",
+      "firstFlow": 0,
+      "flowCount": 3,
+      "specialStep": ""
+    },
+    "flowNodeList": [
+      {
+        "limitcount": null,
+        "unid": "8D39AC186BA2ABB503E1F984713C49A1",
+        "limittype": "当场",
+        "overseasStep": "Document Receipt",
+        "name": "申请与受理",
+        "transactresult": null,
+        "step": "收件",
+        "sort": "0",
+        "csstandard": null,
+        "nodeoperator": null,
+        "parentid": "76D5D6C31E91AC25E948E44CF0D90043",
+        "limittime": null
+      },
+      {
+        "limitcount": null,
+        "unid": "7C6A2B68C0D61085C263B9CA744BAD5A",
+        "limittype": "当场",
+        "overseasStep": null,
+        "name": "申请与受理",
+        "transactresult": "符合受理条件的，出具《受理通知书》；不符合受理条件的，出具《不予受理通知书》；材料不齐全或不符合法定形式的出具《缺件告知单》",
+        "step": "受理",
+        "sort": "1",
+        "csstandard": "材料符合基本受理条件",
+        "nodeoperator": "窗口经办人员、处室负责人",
+        "parentid": "76D5D6C31E91AC25E948E44CF0D90043",
+        "limittime": null
+      },
+      {
+        "limitcount": null,
+        "unid": "11078511EE9B926E4FF0C7E438A2BBFD",
+        "limittype": "工作日",
+        "overseasStep": null,
+        "name": "审查",
+        "transactresult": null,
+        "step": null,
+        "sort": "2",
+        "csstandard": null,
+        "nodeoperator": null,
+        "parentid": "76D5D6C31E91AC25E948E44CF0D90043",
+        "limittime": null
+      },
+      {
+        "limitcount": "5",
+        "unid": "3CF404B28355CD09044B6339176AAB9C",
+        "limittype": "工作日",
+        "overseasStep": "Review",
+        "name": "审查",
+        "transactresult": "提出审查意见",
+        "step": "审查",
+        "sort": "3",
+        "csstandard": "符合条件",
+        "nodeoperator": "核查人员",
+        "parentid": "76D5D6C31E91AC25E948E44CF0D90043",
+        "limittime": null
+      },
+      {
+        "limitcount": null,
+        "unid": "3938CA88294398C485C9FE5F0697D740",
+        "limittype": "当场",
+        "overseasStep": null,
+        "name": "决定（含制证与送达）",
+        "transactresult": "根据审查结果出具受理通知书或不予受理通知书",
+        "step": "决定",
+        "sort": "4",
+        "csstandard": "审批办结",
+        "nodeoperator": "负责人",
+        "parentid": "76D5D6C31E91AC25E948E44CF0D90043",
+        "limittime": null
+      },
+      {
+        "limitcount": null,
+        "unid": "2FF44153B800A0A83F91C442BEF6E226",
+        "limittype": "当场",
+        "overseasStep": "Certificate Production",
+        "name": "决定（含制证与送达）",
+        "transactresult": null,
+        "step": "制证",
+        "sort": "5",
+        "csstandard": "---------------",
+        "nodeoperator": null,
+        "parentid": "76D5D6C31E91AC25E948E44CF0D90043",
+        "limittime": null
+      },
+      {
+        "limitcount": null,
+        "unid": "2213C35B7565FC438F41F7D741B726D3",
+        "limittype": "当场",
+        "overseasStep": "Service",
+        "name": "决定（含制证与送达）",
+        "transactresult": null,
+        "step": "送达",
+        "sort": "6",
+        "csstandard": "---------------",
+        "nodeoperator": null,
+        "parentid": "76D5D6C31E91AC25E948E44CF0D90043",
+        "limittime": null
+      }
+    ]
+  }
+}

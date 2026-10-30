@@ -41,7 +41,13 @@ const provinceHost=node('root'),provinceApp=renderer.createApp(ProvinceGuide);pr
 experienceQueue[1].resolve({...presentation.readExperience(snapshot.provinces.jiangsu,'jiangsu'),scope:'虚构江苏新记录'});await tick();experienceQueue[0].resolve({...presentation.readExperience(snapshot.provinces.zhejiang,'zhejiang'),scope:'虚构浙江旧记录'});await tick();assert.match(content(provinceHost),/虚构江苏新记录/);assert.doesNotMatch(content(provinceHost),/虚构浙江旧记录/);provinceApp.unmount();assert(experiences[1].signal.aborted)
 console.log('PASS mounted province guide keeps its historical snapshot and rejects a late previous province experience')
 const guides=JSON.parse(readFileSync(new URL('../data/public-regions/guides.json',import.meta.url),'utf8'))
-for(const raw of guides)assert.equal(presentation.readGuideDisplay(raw).source_id,raw.source_id)
+const {assertRegionalGuide}=await import(new URL('../packages/regional-contracts/src/index.ts',import.meta.url))
+for(const raw of guides){
+  // The immutable seed has no database sequence. Exercise the real wire parser
+  // with a test-only live version before checking its rendered projection.
+  const live=assertRegionalGuide({...raw,version:1},raw)
+  assert.equal(presentation.readGuideDisplay(live).source_id,raw.source_id)
+}
 const capturedGuide=guides.find(g=>g.region_code==='320507');assert(capturedGuide)
 // Snapshot files have no live-store sequence; this is a local test-only version.
 const ownGuide={...capturedGuide,version:1}
@@ -80,7 +86,8 @@ console.log('PASS mounted directory clears scope immediately, aborts pending req
 const clientSource=readFileSync(new URL('../frontend/src/api/public.ts',import.meta.url),'utf8'),httpCalls=[];let httpResult
 const publicAPI=evaluate(clientSource.replace('export const publicClient=','const publicClient=')+'\nreturn {publicClient}',{'./http.ts':{readJSON:async(path,options)=>{httpCalls.push({path,options});return httpResult}},'../../../packages/regional-contracts/src/index.ts':await import(new URL('../packages/regional-contracts/src/index.ts',import.meta.url)),'../data/regionalGuidePresentation.ts':presentation}).publicClient
 const abort=new AbortController();httpResult={items:[area('fixture-b','虚构乙市','虚构乙区')]};assert.equal((await publicAPI.areas('fixture-b','虚构乙市',abort.signal))[0].district,'虚构乙区');assert.equal(httpCalls.at(-1).options.signal,abort.signal);assert.match(httpCalls.at(-1).path,/^\/api\/regional-guides\/areas\?province=fixture-b&city=/)
-httpResult={openclaw:{status:'PENDING',pending_count:0,attempted_at:null},regions:[],categories:{},extra_public_field:{preserved:true}};const report=await publicAPI.report();assert.equal(report.raw,httpResult);assert.equal(report.raw.extra_public_field.preserved,true)
+httpResult={openclaw:{status:'PENDING',pending_count:0,attempted_at:null,total_count:0,acknowledged_count:0,exported_count:0,ai_reviewed_count:0},regions:[],categories:{},extra_public_field:{preserved:true}};const report=await publicAPI.report();assert.equal(report.raw,httpResult);assert.equal(report.raw.extra_public_field.preserved,true)
+httpResult={...httpResult,openclaw:{status:'PENDING',pending_count:0,attempted_at:null}};await assert.rejects(()=>publicAPI.report())
 httpResult={slug:'foreign',steps:[]};await assert.rejects(()=>publicAPI.experience('own'))
 console.log('PASS unified public client binds directory/experience scope, forwards cancellation and preserves complete raw report export')
 for(const name of owned){

@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Annotated, Literal
 from fastapi import APIRouter, BackgroundTasks, HTTPException, Query
 from fastapi.responses import FileResponse
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, field_validator, model_validator
 from regional_guides import RegionalStore
 from regional_documents import fill_tianfu_reference
 from regional_adapters import checked_reference_adapter,HUNAN_C_ADAPTER,JIANGSU_C_ADAPTER,jiangsu_c_binding,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER
@@ -26,6 +26,14 @@ from regional_zhejiang_oct29d import fill_document as fill_zhejiang_d_document
 from regional_jiangsu_oct29e import fill_candidate_document as fill_jiangsu_e_document
 from regional_jiangsu_oct30f import (fill_document as fill_jiangsu_f_document, ADAPTER as JIANGSU_F_ADAPTER,
     STAGE_SHA256 as JIANGSU_F_STAGE_SHA256, PUBLICATION_SHA256 as JIANGSU_F_PUBLICATION_SHA256)
+from regional_jiangsu_oct31g import (fill_document as fill_jiangsu_g_document, ADAPTER as JIANGSU_G_ADAPTER,
+    STAGE_SHA256 as JIANGSU_G_STAGE_SHA256, PUBLICATION_SHA256 as JIANGSU_G_PUBLICATION_SHA256,
+    ApplicationRequest as KunshanApplicationRequest, EvidenceRequest as KunshanEvidenceRequest,
+    SOURCE_ID as KUNSHAN_SOURCE_ID)
+from regional_fujian_oct31h import (fill_document as fill_fujian_h_document, ADAPTER as FUJIAN_H_ADAPTER,
+    STAGE_SHA256 as FUJIAN_H_STAGE_SHA256, PUBLICATION_SHA256 as FUJIAN_H_PUBLICATION_SHA256,
+    ApplicationRequest as GulouApplicationRequest, EvidenceRequest as GulouEvidenceRequest,
+    SOURCE_ID as GULOU_SOURCE_ID)
 from regional_zhejiang_oct29e import fill_document as fill_zhejiang_e_document
 from regional_zhejiang_chunan_oct30 import (fill_document as fill_chunan_document, ADAPTER as CHUNAN_ADAPTER,
     PUBLICATION_SHA256 as CHUNAN_PUBLICATION_SHA256)
@@ -50,10 +58,10 @@ router=APIRouter()
 def release_capabilities():
     """Identify loaded generation code before a reviewed data-only upgrade."""
     return {'release_id':'oct30night-own-localities-v1',
-            'adapters':[JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER,JIANGSU_F_ADAPTER],
-            'candidate_stage_receipts':{JIANGSU_F_ADAPTER:JIANGSU_F_STAGE_SHA256},
+            'adapters':[JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER,JIANGSU_F_ADAPTER,JIANGSU_G_ADAPTER,FUJIAN_H_ADAPTER],
+            'candidate_stage_receipts':{JIANGSU_F_ADAPTER:JIANGSU_F_STAGE_SHA256,JIANGSU_G_ADAPTER:JIANGSU_G_STAGE_SHA256,FUJIAN_H_ADAPTER:FUJIAN_H_STAGE_SHA256},
             'publication_receipts':{CHUNAN_ADAPTER:CHUNAN_PUBLICATION_SHA256,
-                                    JIANGSU_F_ADAPTER:JIANGSU_F_PUBLICATION_SHA256},
+                                    JIANGSU_F_ADAPTER:JIANGSU_F_PUBLICATION_SHA256,JIANGSU_G_ADAPTER:JIANGSU_G_PUBLICATION_SHA256,FUJIAN_H_ADAPTER:FUJIAN_H_PUBLICATION_SHA256},
             'source_bound':True,'models_required':False,
             'regional_store':'main_default' if Path(os.getenv('LABOURLAWYER_REGIONAL_DB',ROOT/'backend/data/regional-guides.sqlite')).resolve()==(ROOT/'backend/data/regional-guides.sqlite').resolve() else 'alternate'}
 
@@ -239,6 +247,19 @@ class GenerateRequest(BaseModel):
     data: dict
     contract_id: str | None=Field(default=None,min_length=64,max_length=64,pattern=r'^[0-9a-f]{64}$')
 
+    @model_validator(mode='before')
+    @classmethod
+    def own_kunshan_version(cls,value):
+        if isinstance(value,dict) and value.get('source_id')==GULOU_SOURCE_ID:
+            version=value.get('version')
+            if type(version) is not int or version<1:
+                raise ValueError('鼓楼本源版本必须是正整数')
+        if isinstance(value,dict) and value.get('source_id')==KUNSHAN_SOURCE_ID:
+            version=value.get('version')
+            if type(version) is not int or version<1:
+                raise ValueError('昆山本源版本必须是正整数')
+        return value
+
 class BlankApplicationRequest(ApplicationRequest):
     # These are two distinct slots in Xishan's own retained official form.
     copyCount: int | None=Field(default=None,ge=1,le=30)
@@ -301,6 +322,8 @@ def generation_request_model(adapter,kind):
     if adapter in {HUNAN_ADAPTER,HUNAN_C_ADAPTER}:model=HunanApplicationRequest
     if adapter in {ZHEJIANG_D_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER}:model=ZhejiangDApplicationRequest if kind=='application' else ZhejiangDEvidenceRequest
     if adapter in {JIANGSU_E_ADAPTER,JIANGSU_F_ADAPTER}:model=JiangsuEApplicationRequest if kind=='application' else JiangsuEEvidenceRequest
+    if adapter==JIANGSU_G_ADAPTER:model=KunshanApplicationRequest if kind=='application' else KunshanEvidenceRequest
+    if adapter==FUJIAN_H_ADAPTER:model=GulouApplicationRequest if kind=='application' else GulouEvidenceRequest
     return model
 
 
@@ -335,11 +358,15 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
             request_model_factory=generation_request_model)
     except RegionalValidationError as exc:
         raise HTTPException(exc.status_code, str(exc)) from exc
-    blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER,JIANGSU_F_ADAPTER}
+    blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER,JIANGSU_F_ADAPTER,JIANGSU_G_ADAPTER,FUJIAN_H_ADAPTER}
     if adapter in blank_adapters|{RONGJIANG_ADAPTER,HUNAN_ADAPTER,HUNAN_C_ADAPTER} and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
     try:
-        if adapter==CHUNAN_ADAPTER:
+        if adapter==FUJIAN_H_ADAPTER:
+            doc=fill_fujian_h_document(g,t,payload.kind,checked_path(t,g),data.model_dump(),root=ROOT)
+        elif adapter==CHUNAN_ADAPTER:
             doc=fill_chunan_document(g,t,payload.kind,checked_path(t,g),data.model_dump(),root=ROOT)
+        elif adapter==JIANGSU_G_ADAPTER:
+            doc=fill_jiangsu_g_document(g,t,payload.kind,checked_path(t,g),data.model_dump(),root=ROOT)
         elif adapter==JIANGSU_F_ADAPTER:
             doc=fill_jiangsu_f_document(g,t,payload.kind,checked_path(t,g),data.model_dump(),root=ROOT)
         elif adapter==JIANGSU_E_ADAPTER:

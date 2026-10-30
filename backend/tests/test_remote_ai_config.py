@@ -4,6 +4,11 @@ from unittest.mock import patch
 from llm_service.remote import resolve_remote
 
 class RemoteConfigurationTests(unittest.TestCase):
+    def setUp(self):
+        # Routing fixtures must not inherit the operator's disabled-model flag.
+        # Ownership checks below are mocked; this never starts or calls a model.
+        self.enterContext(patch.dict(os.environ,{'LABOURLAWYER_LLM_MODEL':'ollama/qwen3.8:27b'}))
+
     def test_all_local_ollama_aliases_are_rejected_without_owned_tunnel(self):
         for address in ['http://127.0.0.2:11434','http://[::ffff:127.0.0.1]:11434','http://localhost:11434','http://localhost.:11434']:
             with self.subTest(address=address),patch.dict(os.environ,{'OLLAMA_API_BASE':address,'LABOURLAWYER_AI_TRANSPORT':'direct'}):

@@ -1,0 +1,37 @@
+[
+  {
+    "file": "application-blank.pdf",
+    "pages": 3,
+    "pdf_sha256": "278670ee6dc5e3e0f2727ac7e62c5a152e7e32250125b227d03cd7b1ded18f16",
+    "page_text_lengths": [
+      1160,
+      995,
+      204
+    ]
+  },
+  {
+    "file": "application-filled.pdf",
+    "pages": 2,
+    "pdf_sha256": "8e3c2d0b6a9138e448f70002db4c373bae0bf1dc2dafaff68a3c0cfecd13dc9f",
+    "page_text_lengths": [
+      752,
+      204
+    ]
+  },
+  {
+    "file": "evidence-blank.pdf",
+    "pages": 1,
+    "pdf_sha256": "5f7ad3fe85848b8e80474be1cabc5c7748c520821b9ab3179092d29432452394",
+    "page_text_lengths": [
+      187
+    ]
+  },
+  {
+    "file": "evidence-filled.pdf",
+    "pages": 1,
+    "pdf_sha256": "97abbcebbb9b0903c1e6b0e96c300e9f2c6a31fce6c11809706fd0c7482ad81f",
+    "page_text_lengths": [
+      223
+    ]
+  }
+]

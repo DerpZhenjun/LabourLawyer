@@ -134914,5 +134914,614 @@
       "receipt": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/FINAL-BROWSER-QA.json",
       "sha256": "b37cabc422b4a315e22a5762553269636b821dd8d9b0b3fc46f03602af6febe6"
     }
+  },
+  {
+    "province": "jiangsu",
+    "city": "苏州市",
+    "district": "昆山市",
+    "region_code": "320583",
+    "source_id": "d39444ab7f4bcaea2ea91473",
+    "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+    "service_code": "1132058301418949XF400201430200201",
+    "service_name": "劳动人事争议仲裁申请",
+    "authority": "昆山市人力资源和社会保障局",
+    "source_version": "daa6ecda9f78f398c196ba579a4d870591e02a328aca3d5665ae9177151f2c6d",
+    "verification_status": "verified",
+    "fields": {
+      "事项类型": {
+        "raw_value": "公共服务",
+        "normalized_value": "公共服务",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "基本编码": {
+        "raw_value": "002014302002",
+        "normalized_value": "002014302002",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "业务办理项编码": {
+        "raw_value": "1132058301418949XF400201430200201",
+        "normalized_value": "1132058301418949XF400201430200201",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "行使层级": {
+        "raw_value": "县级",
+        "normalized_value": "县级",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "办理形式": {
+        "raw_value": "窗口办理,网上办理,快递申请",
+        "normalized_value": "窗口办理,网上办理,快递申请",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "中介服务": {
+        "raw_value": "无",
+        "normalized_value": "无",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "到办事现场次数": {
+        "raw_value": "3",
+        "normalized_value": "3",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "特别程序": {
+        "raw_value": "无",
+        "normalized_value": "无",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "必须到现场办理说明": {
+        "raw_value": "仲裁申请需要确认当事人身份，开庭审理需要当事人到场，送达法律文书需要当事人签收。",
+        "normalized_value": "仲裁申请需要确认当事人身份，开庭审理需要当事人到场，送达法律文书需要当事人签收。",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "实施主体": {
+        "raw_value": "昆山市人力资源和社会保障局",
+        "normalized_value": "昆山市人力资源和社会保障局",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "实施主体性质": {
+        "raw_value": "法定机关",
+        "normalized_value": "法定机关",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "是否进驻政务大厅": {
+        "raw_value": "否",
+        "normalized_value": "否",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "办理地点": {
+        "raw_value": "昆山市西街21号;昆山市西街21号劳动保障维权中心监察仲裁综合受理窗口",
+        "normalized_value": "昆山市西街21号;昆山市西街21号劳动保障维权中心监察仲裁综合受理窗口",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "办理时间": {
+        "raw_value": "法定工作日 上午8:30-11:30，下午13:00-16:30",
+        "normalized_value": "法定工作日 上午8:30-11:30，下午13:00-16:30",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "材料名称": {
+        "raw_value": "劳动人事争议仲裁申请书",
+        "normalized_value": "劳动人事争议仲裁申请书",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "材料类型": {
+        "raw_value": " \n\t\t\t\t\t\t\t\t\t\t\t\t\t                        \t原件\n\t\t\t\t\t\t\t\t\t\t\t\t\t                      ",
+        "normalized_value": "原件",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "材料形式": {
+        "raw_value": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t                        \t纸质\n\t\t\t\t\t\t\t\t\t\t\t\t\t                        ",
+        "normalized_value": "纸质",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "材料必要性": {
+        "raw_value": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t必要\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  ",
+        "normalized_value": "必要",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "表格下载": {
+        "raw_value": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t空白表格\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t",
+        "normalized_value": "空白表格",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "示例样表": {
+        "raw_value": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t示例样表\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t",
+        "normalized_value": "示例样表",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "来源渠道": {
+        "raw_value": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t                        \t申请人自备\n\t\t\t\t\t\t\t\t\t\t\t\t\t                      ",
+        "normalized_value": "申请人自备",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "来源渠道说明": {
+        "raw_value": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t申请人自备\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t ",
+        "normalized_value": "申请人自备",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "纸质材料份数": {
+        "raw_value": "4",
+        "normalized_value": "4",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "纸质材料规格": {
+        "raw_value": " A4大小",
+        "normalized_value": "A4大小",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "填报须知": {
+        "raw_value": "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t ",
+        "normalized_value": "",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "受理标准": {
+        "raw_value": "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t ",
+        "normalized_value": "",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "备注": {
+        "raw_value": "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t ",
+        "normalized_value": "",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "办件类型": {
+        "raw_value": "承诺件",
+        "normalized_value": "承诺件",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "法定办结时限": {
+        "raw_value": "45个工作日",
+        "normalized_value": "45个工作日",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "承诺办结时限": {
+        "raw_value": "45个工作日",
+        "normalized_value": "45个工作日",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "办理结果类型": {
+        "raw_value": "无",
+        "normalized_value": "无",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "办理结果名称": {
+        "raw_value": "无",
+        "normalized_value": "无",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "咨询方式": {
+        "raw_value": "0512-57550194",
+        "normalized_value": "0512-57550194",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      "监督投诉方式": {
+        "raw_value": "0512-12333",
+        "normalized_value": "0512-12333",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      }
+    },
+    "materials": [
+      {
+        "id": "18c31052-c1b9-4209-8b90-d56f764e365b",
+        "name": "劳动人事争议仲裁案件证据材料",
+        "paper_copies": "2份",
+        "details": {
+          "材料名称": "劳动人事争议仲裁案件证据材料",
+          "材料类型": "复印件",
+          "材料形式": "纸质",
+          "材料必要性": "必要",
+          "表格下载": "空白表格",
+          "示例样表": "示例样表",
+          "来源渠道": "申请人自备",
+          "来源渠道说明": "申请人自备",
+          "纸质材料份数": "2",
+          "纸质材料规格": "A4大小",
+          "填报须知": "",
+          "受理标准": "",
+          "备注": ""
+        },
+        "copies": 2,
+        "raw_copies": "2份",
+        "required": "必要",
+        "original_copy": "复印件",
+        "format": "纸质",
+        "paper_size": "A4大小",
+        "source_channel": "申请人自备",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      {
+        "id": "de3a0ee9-0827-4f44-b9ad-ba05010a03d9",
+        "name": "劳动人事争议仲裁案件证据清单",
+        "paper_copies": "2份",
+        "details": {
+          "材料名称": "劳动人事争议仲裁案件证据清单",
+          "材料类型": "原件和复印件",
+          "材料形式": "纸质",
+          "材料必要性": "必要",
+          "表格下载": "空白表格",
+          "示例样表": "示例样表",
+          "来源渠道": "申请人自备",
+          "来源渠道说明": "申请人自备",
+          "纸质材料份数": "2",
+          "纸质材料规格": "A4大小",
+          "填报须知": "",
+          "受理标准": "",
+          "备注": ""
+        },
+        "copies": 2,
+        "raw_copies": "2份",
+        "required": "必要",
+        "original_copy": "原件和复印件",
+        "format": "纸质",
+        "paper_size": "A4大小",
+        "source_channel": "申请人自备",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      {
+        "id": "41fffad3-aa64-4d74-877a-94a209c6042c",
+        "name": "身份证明材料（申请人或代办人双方）",
+        "paper_copies": "1份",
+        "details": {
+          "材料名称": "身份证明材料（申请人或代办人双方）",
+          "材料类型": "原件",
+          "材料形式": "纸质",
+          "材料必要性": "必要",
+          "表格下载": "空白表格",
+          "示例样表": "示例样表",
+          "来源渠道": "申请人自备",
+          "来源渠道说明": "申请人自备",
+          "纸质材料份数": "1",
+          "纸质材料规格": "A4",
+          "填报须知": "",
+          "受理标准": "",
+          "备注": ""
+        },
+        "copies": 1,
+        "raw_copies": "1份",
+        "required": "必要",
+        "original_copy": "原件",
+        "format": "纸质",
+        "paper_size": "A4",
+        "source_channel": "申请人自备",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      },
+      {
+        "id": "3c17b2ea-434e-4b29-8fe4-40e88ad11c57",
+        "name": "劳动人事争议仲裁申请书",
+        "paper_copies": "4份",
+        "details": {
+          "材料名称": "劳动人事争议仲裁申请书",
+          "材料类型": "原件",
+          "材料形式": "纸质",
+          "材料必要性": "必要",
+          "表格下载": "空白表格",
+          "示例样表": "示例样表",
+          "来源渠道": "申请人自备",
+          "来源渠道说明": "申请人自备",
+          "纸质材料份数": "4",
+          "纸质材料规格": "A4大小",
+          "填报须知": "",
+          "受理标准": "",
+          "备注": ""
+        },
+        "copies": 4,
+        "raw_copies": "4份",
+        "required": "必要",
+        "original_copy": "原件",
+        "format": "纸质",
+        "paper_size": "A4大小",
+        "source_channel": "申请人自备",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "region_code": "320583",
+        "collected_at": "2026-10-30T16:14:08.326538+00:00",
+        "verified_at": "2026-10-30T16:14:08.326538+00:00",
+        "verification_status": "verified"
+      }
+    ],
+    "templates": [
+      {
+        "id": "18c31052-c1b9-4209-8b90-d56f764e365b",
+        "region_code": "320583",
+        "material_id": "18c31052-c1b9-4209-8b90-d56f764e365b",
+        "official_kind": "blank",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "download_url": "https://sxgl.jszwfw.gov.cn:66/audit-qlk-web/rest/frame/pages/basic/attach/attachAction/getContent?isCommondto=true&attachGuid=18c31052-c1b9-4209-8b90-d56f764e365b",
+        "file": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/01-own-blank-18c31052-c1b9-4209-8b90-d56f764e365b.docx",
+        "sha256": "8dae42265086696071d6173f162d47c9fdd9bdf4782cf1c70d28779b5894277f",
+        "bytes": 13376,
+        "can_generate": false,
+        "candidate_document_types": [],
+        "content_role": "heading_only_copy_placeholder",
+        "original_name": "劳动人事争议仲裁案件证据材料.docx",
+        "file_type": "docx",
+        "download_status": "downloaded",
+        "document_types": [],
+        "public_release_status": "own_source_retained"
+      },
+      {
+        "id": "de3a0ee9-0827-4f44-b9ad-ba05010a03d9",
+        "region_code": "320583",
+        "material_id": "de3a0ee9-0827-4f44-b9ad-ba05010a03d9",
+        "official_kind": "blank",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "download_url": "https://sxgl.jszwfw.gov.cn:66/audit-qlk-web/rest/frame/pages/basic/attach/attachAction/getContent?isCommondto=true&attachGuid=de3a0ee9-0827-4f44-b9ad-ba05010a03d9",
+        "file": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/02-own-blank-de3a0ee9-0827-4f44-b9ad-ba05010a03d9.docx",
+        "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+        "bytes": 15273,
+        "can_generate": true,
+        "candidate_document_types": [
+          "evidence"
+        ],
+        "content_role": "fillable_own_blank",
+        "original_name": "劳动人事争议仲裁案件证据清单.docx",
+        "file_type": "docx",
+        "download_status": "downloaded",
+        "document_types": [
+          "evidence"
+        ],
+        "public_release_status": "own_source_retained",
+        "generation_adapter": "jiangsu_kunshan_own_blank_oct31g_v1",
+        "adapter": "jiangsu_kunshan_own_blank_oct31g_v1",
+        "strict_binding": {
+          "adapter": "jiangsu_kunshan_own_blank_oct31g_v1",
+          "kind": "evidence",
+          "annex_id": "de3a0ee9-0827-4f44-b9ad-ba05010a03d9",
+          "source_file": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/02-own-blank-de3a0ee9-0827-4f44-b9ad-ba05010a03d9.docx",
+          "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+          "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201"
+        },
+        "generation_mode": "blank",
+        "content_kind": "filled_official_blank",
+        "applicant_scope": "evidence_list",
+        "generation_label": "依据昆山市自身官方空白表格填写",
+        "render_status": "PASS"
+      },
+      {
+        "id": "41fffad3-aa64-4d74-877a-94a209c6042c",
+        "region_code": "320583",
+        "material_id": "41fffad3-aa64-4d74-877a-94a209c6042c",
+        "official_kind": "blank",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "download_url": "https://sxgl.jszwfw.gov.cn:66/audit-qlk-web/rest/frame/pages/basic/attach/attachAction/getContent?isCommondto=true&attachGuid=41fffad3-aa64-4d74-877a-94a209c6042c",
+        "file": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/03-own-blank-41fffad3-aa64-4d74-877a-94a209c6042c.docx",
+        "sha256": "f36541d8f1c49a0229d1510ae9f5cc5eb72ff294a17aec69c82b06e7ec571714",
+        "bytes": 13374,
+        "can_generate": false,
+        "candidate_document_types": [],
+        "content_role": "heading_only_copy_placeholder",
+        "original_name": "身份证明材料（申请人或代办人双方）.docx",
+        "file_type": "docx",
+        "download_status": "downloaded",
+        "document_types": [],
+        "public_release_status": "own_source_retained"
+      },
+      {
+        "id": "3c17b2ea-434e-4b29-8fe4-40e88ad11c57",
+        "region_code": "320583",
+        "material_id": "3c17b2ea-434e-4b29-8fe4-40e88ad11c57",
+        "official_kind": "blank",
+        "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+        "download_url": "https://sxgl.jszwfw.gov.cn:66/audit-qlk-web/rest/frame/pages/basic/attach/attachAction/getContent?isCommondto=true&attachGuid=3c17b2ea-434e-4b29-8fe4-40e88ad11c57",
+        "file": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/04-own-blank-3c17b2ea-434e-4b29-8fe4-40e88ad11c57.docx",
+        "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+        "bytes": 17701,
+        "can_generate": true,
+        "candidate_document_types": [
+          "application"
+        ],
+        "content_role": "fillable_own_blank",
+        "original_name": "劳动人事争议仲裁申请书.docx",
+        "file_type": "docx",
+        "download_status": "downloaded",
+        "document_types": [
+          "application"
+        ],
+        "public_release_status": "own_source_retained",
+        "generation_adapter": "jiangsu_kunshan_own_blank_oct31g_v1",
+        "adapter": "jiangsu_kunshan_own_blank_oct31g_v1",
+        "strict_binding": {
+          "adapter": "jiangsu_kunshan_own_blank_oct31g_v1",
+          "kind": "application",
+          "annex_id": "3c17b2ea-434e-4b29-8fe4-40e88ad11c57",
+          "source_file": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/04-own-blank-3c17b2ea-434e-4b29-8fe4-40e88ad11c57.docx",
+          "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+          "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201"
+        },
+        "generation_mode": "blank",
+        "content_kind": "filled_official_blank",
+        "applicant_scope": "worker",
+        "generation_label": "依据昆山市自身官方空白表格填写",
+        "render_status": "PASS"
+      }
+    ],
+    "channel": {
+      "raw_value": "窗口办理,网上办理,快递申请",
+      "online_status": "auth_required",
+      "observed_login_origin": "https://www.jszwfw.gov.cn",
+      "submission_verified": false
+    },
+    "can_generate": true,
+    "published": true,
+    "publication_status": "published",
+    "warnings": [
+      "只支持本区自身劳动者申请书单一被申请人及六列证据清单。",
+      "身份与证据复印件原件仅有标题，不提供填写生成。",
+      "网上办理已到官方登录及验证码边界；未登录、未提交申请。",
+      "源指南申请书4份与证据清单2份要求保留；原件副本栏须本人核对。",
+      "签名、提交人与接收人由本人或经办人手写；调解、法律援助不自动选择。"
+    ],
+    "source_type": "own_official_guide",
+    "source_title": "劳动人事争议仲裁申请",
+    "collected_at": "2026-10-30T16:14:08.326538+00:00",
+    "verified_at": "2026-10-30T16:14:08.326538+00:00",
+    "sections": {
+      "本区公开办事指南原文": "昆山市\n切换区域\n国家政务服务平台\n| 新手指南 |\n无障碍浏览\n注册\n|\n登录\n首页\n个人服务\n法人服务\n主题集成\n一企来办\n好差评\n综合旗舰店\n数据开放\n登记平台\n江要督\n公共资源交易\n劳动人事争议仲裁申请\n 昆山市\n在线办理\n办事咨询\n\n3\n\n到现场次数 \n\n45工作日\n\n法定办结时限\n\n45工作日\n\n承诺办结时限\n\n办件评价\n办事指南评价\n基本信息\n部门信息\n窗口办理\n受理标准\n办理材料\n办理流程\n办理时限\n收费情况\n办理结果\n法律依据\n常见问题\n咨询投诉\n基本信息\n承诺件\n不收费\n事项类型\t公共服务\t基本编码\t002014302002\n业务办理项编码\t1132058301418949XF400201430200201\n行使层级\t县级\t办理形式\t窗口办理,网上办理,快递申请\n中介服务\t无\t到办事现场次数\t3\n特别程序\t无\t必须到现场办理说明\t仲裁申请需要确认当事人身份，开庭审理需要当事人到场，送达法律文书需要当事人签收。\n部门信息\n实施主体\t昆山市人力资源和社会保障局\t实施主体性质\t法定机关\n窗口办理\n是否进驻政务大厅\t否\n办理地点\t昆山市西街21号;昆山市西街21号劳动保障维权中心监察仲裁综合受理窗口\n办理时间\t法定工作日 上午8:30-11:30，下午13:00-16:30\n受理标准\n服务对象：自然人,企业法人,事业法人,社会组织法人,行政机关,其他组织,非法人企业\n受理条件：\n\n符合劳动人事争议仲裁办案规则（人力资源和社会保障部令第17号）第三十条规定，①属于劳动人事争议仲裁办案规则第二条规定的争议范围；②有明确的仲裁请求和事实理由；③申请人与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人；④属于本仲裁委员会管辖范围。\n\n办理材料\n序号\t材料名称\t表格下载\t来源渠道\t纸质材料\t材料必要性\t填报须知\t详情\n1\t\n\n劳动人事争议仲裁案件证据材料\n\n\t\n空白表格\n示例样表\n\t申请人自备\t2份\t必要\t\n\n\t查看更多\n2\t\n\n劳动人事争议仲裁案件证据清单\n\n\t\n空白表格\n示例样表\n\t申请人自备\t2份\t必要\t\n\n\t查看更多\n3\t\n\n身份证明材料（申请人或代办人双方）\n\n\t\n空白表格\n示例样表\n\t申请人自备\t1份\t必要\t\n\n\t查看更多\n4\t\n\n劳动人事争议仲裁申请书\n\n\t\n空白表格\n示例样表\n\t申请人自备\t4份\t必要\t\n\n\t查看更多\n办理流程\n点击查看办理流程图 >\n办理时限\n办件类型\t承诺件\n法定办结时限\t45个工作日\t承诺办结时限\t45个工作日\n\n收费情况\n\n不收费\n\n办理结果\n办理结果类型\t无\t办理结果名称\t无\n法律依据\n设定依据\n\n劳动人事争议仲裁办案规则（人力资源和社会保障部令第17号）第三十条规定，①属于劳动人事争议仲裁办案规则第二条规定的争议范围；②有明确的仲裁请求和事实理由；③申请人与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人；④属于本仲裁委员会管辖范围。\n\n增补依据\n\n常见问题\n咨询投诉\n咨询方式\t0512-57550194\n监督投诉方式\t0512-12333\n办理地点\n昆山市西街21号;昆山市西街21号劳动保障维权中心监察仲裁综合受理窗口\n咨询方式\n0512-57550194\n监督投诉\n0512-12333\n点击收藏\n下载指南\n啄木鸟找茬\n网站信息\n联系我们\n网站地图\n国家政务服务平台\n中华人民共和国中央人民政府\n江苏省人民政府网站\n苏服办APP\n苏服办支付宝小程序\n江苏政务服务微信公众号\n联系12345\n\n主办单位：江苏省数据局（江苏省政务服务管理办公室）\n\n备案序号：苏ICP备15009401号\n\n公安备案号：32010602010331\n\n网站标识码：3200000098"
+    },
+    "evidence": {
+      "capture_file": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/own-guide.json",
+      "capture_sha256": "e6dbd5b263d7a533fda89233f7451d5e4a8eb47ba4614995e7904ca516bfeea6",
+      "source_freeze": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/SOURCE-FREEZE.json",
+      "source_freeze_sha256": "daa6ecda9f78f398c196ba579a4d870591e02a328aca3d5665ae9177151f2c6d",
+      "word_manifest": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/WORD-MANIFEST.json",
+      "word_manifest_sha256": "edddb2840686b10c64fc164a4c5a63f9744e42c8f3fc9a2763b116d9d3eabf8f",
+      "online_boundary": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/online-devtools-login-proof.json"
+    },
+    "candidate_adapter_evidence": {
+      "receipt": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/STAGE-APPROVAL.json",
+      "sha256": "f794e50d5ba7fcc01d520625efeaa60a851fd2c01d5428b1305fd5634e32bc32"
+    },
+    "generation_adapter": "jiangsu_kunshan_own_blank_oct31g_v1",
+    "publication_adapter_evidence": {
+      "receipt": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/FINAL-BROWSER-QA.json",
+      "sha256": "c55b2c697c5a2668b6752ce6ea6bdfcea4670a4be41be11c55f4d23e131d8894"
+    },
+    "candidate_web_qa": "PASS"
   }
 ]

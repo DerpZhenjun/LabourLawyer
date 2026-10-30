@@ -1,0 +1,53 @@
+{
+  "observed_at": "2026-10-30T17:31:32.983738+00:00",
+  "tool": "chrome-devtools MCP; isolated root-kunshan-g-candidate page5",
+  "scope": "candidate8003/5176 only",
+  "version": 2,
+  "source_id": "d39444ab7f4bcaea2ea91473",
+  "form_after_region_picker": true,
+  "default_fictional_fields_visible": true,
+  "one_initial_evidence_row": true,
+  "own_display": {
+    "channel": "窗口办理,网上办理,快递申请",
+    "site_visits": "3 次",
+    "material_copies": [
+      2,
+      2,
+      1,
+      4
+    ],
+    "address": "昆山市西街21号;昆山市西街21号劳动保障维权中心监察仲裁综合受理窗口",
+    "phone": "0512-57550194"
+  },
+  "actual_network": {
+    "lookup": 200,
+    "inventory": 200,
+    "application_contract_version2": 200,
+    "evidence_contract_version2": 200
+  },
+  "cancel_dialog": {
+    "initial_focus": "取消",
+    "closed": true,
+    "focus_returned": "生成并下载仲裁申请书",
+    "draft_retained": "陈虚构"
+  },
+  "responsive": {
+    "375": "scrollWidth375; form present; no alerts",
+    "768": "scrollWidth753; controls fit; one evidence row; no alerts",
+    "1440": "scrollWidth1425; form present; controls fit; no alerts"
+  },
+  "region_switch": {
+    "input": "虚构待核验区",
+    "native_fill_and_tab": true,
+    "editor_removed_immediately": true,
+    "result": "该地区办事指南尚未核验",
+    "kunshan_facts_inherited": false,
+    "synthetic_area_not_real_coverage_claim": true
+  },
+  "console_errors": 0,
+  "screenshots": {
+    "count": 0,
+    "status": "NOT_CAPTURED_TOOL_RESTRICTION"
+  },
+  "models_called": 0
+}

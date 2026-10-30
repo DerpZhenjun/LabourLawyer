@@ -75,13 +75,13 @@
     },
     {
       "path": "data/public-regions/guides.json",
-      "bytes": 10265288,
-      "sha256": "4f98f18682ad3c8b1ef566df413246d7dbcc0bd2709b0c2be833e17c04b2d9ea"
+      "bytes": 10304024,
+      "sha256": "92f84e5201c49ecf6664391a7423f16bcc84a81f8a84c173a805576e49ac0db1"
     },
     {
       "path": "data/public-regions/manifest.json",
       "bytes": 526,
-      "sha256": "c128badb73f7fe35f92e0d746223524938871a62318f77f4b12f0793b08b62b8"
+      "sha256": "88e5f4f691133f2015c6df006831b7df5fa99289f98aeb691cac1663ab2682a7"
     },
     {
       "path": "frontend/src/data/provinceCatalog.json",
@@ -11566,6 +11566,286 @@
       "sha256": "b342c28b59754b51199ca249b74192883678cbdc31e40db8144eecd0373c6640"
     },
     {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/OFFLINE-QA.json",
+      "bytes": 1956,
+      "sha256": "e2658be3ec25ae84067a7001251cfd61b0076db2fe7ae74eaa45cb1421947451"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/STAGE-APPROVAL.json",
+      "bytes": 7288,
+      "sha256": "76b891e7c44261b8a77dc7fbfa190ce06d0b377ad2934b7654181d3de4c9fb34"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/STAGE-PROPOSAL.json",
+      "bytes": 6668,
+      "sha256": "bb424a13a4b078980185548b983401cbc8a99339bb07eba88314c06220cf9940"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/WORD-MANIFEST.json",
+      "bytes": 6653,
+      "sha256": "612fda853f9ad18f6b88271ad0c6af19045463468ab8e5bb756cdf1cb9baa895"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/normal-application-1.png",
+      "bytes": 104745,
+      "sha256": "f90776e8ed07d282837238e55976d1a297f3b2e938e0eb5bdb7bee5fcecfc607"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/normal-application-2.png",
+      "bytes": 5069,
+      "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/normal-evidence-1.png",
+      "bytes": 59217,
+      "sha256": "f3077e59d5b9d55700f48a869c7514b8e260186eabd720764ed576c16ca0fe3c"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-application-1.png",
+      "bytes": 224005,
+      "sha256": "c0bf3c6124f072672f019f3905decd0275df81655502b466db3879a324aaf203"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-application-2.png",
+      "bytes": 266554,
+      "sha256": "66fe68577a3dc72c447058952bc72669e7193cc37027441b4879cb7206b1d355"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-application-3.png",
+      "bytes": 123195,
+      "sha256": "093f86b5a5679fcb8f5b0c6f73b08e7f269120f83ea1c3902de091d58dbe4a27"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-01.png",
+      "bytes": 76943,
+      "sha256": "102dbdecef65d22efdafeb2c6f5156bd1aaee9c4683e572e0db1146abff06432"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-02.png",
+      "bytes": 74106,
+      "sha256": "2b2048469a0360d73cb345b97c171fdd934fd27f9ab23971a17211716f618608"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-03.png",
+      "bytes": 74414,
+      "sha256": "69b884ab493eea705d71b3aff6befcb18dd2e6bc6a08011602a85b19fc38e41d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-04.png",
+      "bytes": 74022,
+      "sha256": "fa7272785130e1eefc3f1cd2d89b81fc2c51bae8eb3791e215ce13e140d694a5"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-05.png",
+      "bytes": 74435,
+      "sha256": "46fd9cd31f7ac7f62de23ff6f58616d937b4fd4d2dfd616f18a85ea19858ce5d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-06.png",
+      "bytes": 74049,
+      "sha256": "6714ca4326f774131972a9f63f7e53a58615ed64340c991a8f96d2bcd3acd71f"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-07.png",
+      "bytes": 74046,
+      "sha256": "b1d532a6b4fbec09ad7987b2c248677d3ceab3a8efe6c89e584bd22322bf4f5d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-08.png",
+      "bytes": 74680,
+      "sha256": "c7f4b7a4d8267ae255eb25cfb3ce925da97365864cc5ea3caa6a07385ef98a2f"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-09.png",
+      "bytes": 74552,
+      "sha256": "671fac90b58c7f6b9fa598c6da71fee840a84eb8505db0f3d09efd151a6a7d88"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-10.png",
+      "bytes": 74703,
+      "sha256": "931ec35b7fd44a8e75a8f8b3b2ad4143b95faa860be72afca0032b0796261eac"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-11.png",
+      "bytes": 73574,
+      "sha256": "2c444c33f7a84c6434b773ac724dc7e5429eadedff35b87350e51b17d83429c4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-12.png",
+      "bytes": 74429,
+      "sha256": "15df2ce27b4d159602c6665c5822e088c1c826929283fd20643fefaad106ce07"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-13.png",
+      "bytes": 75109,
+      "sha256": "9ec5dd42f1dd8d87e4e111058b1ca646d7497b339a8cb17b398e1beaf57dcddb"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-14.png",
+      "bytes": 74627,
+      "sha256": "6f6c768893ba9156f2cc8e23155cc501369cff28ea0e41c8ad3e04d7d72f9edf"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-15.png",
+      "bytes": 87015,
+      "sha256": "f2f45224d1fd2a1f748ff5d68b5ca73c73798cde5d472d4288ca55d2979c2c90"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/word/fictional-fixtures.json",
+      "bytes": 10788,
+      "sha256": "edd49c564e19c9db66bfea649fc457257b681cd338544166c0fcc2dbfccf5e8c"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/word/normal-application.docx",
+      "bytes": 12117,
+      "sha256": "9389b65ae59fcdbdcc79eb9f0a5511b92b0b816e87173199ca6a5939f0c5fdc1"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/word/normal-evidence.docx",
+      "bytes": 16767,
+      "sha256": "39e64186bfcdf92619dbd71bf0a8dc7867cc0fc1a01d8dbe5295d82344fe7f59"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/word/stress-application.docx",
+      "bytes": 12439,
+      "sha256": "8ba5247934628fbd5d48ec1f0671d5790f485d4992aaefd24fb69a186289491b"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/word/stress-evidence.docx",
+      "bytes": 17920,
+      "sha256": "19f8a7fccb4d4c6c4fdfbd0df6f6e490f287fbf8eb0e4169744e22e20f6f836e"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/ROOT-OFFLINE-WORD-REVIEW.json",
+      "bytes": 1880,
+      "sha256": "33f301242bba00761cc5aba26c35643f39844fab7b2c21719029b8de4b17f4c3"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/SOURCE-DISCOVERY-FREEZE.json",
+      "bytes": 7715,
+      "sha256": "6aa0a44017bf60eb39e07f441e31676bf88716b5f69722188c9258ff5e2efc15"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/api-public-34.json",
+      "bytes": 9408,
+      "sha256": "00135407bbaccaee0bfd4042dbbb20f1d44afe9e72fa801259c7170d947c69d6"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/api-public-39.json",
+      "bytes": 2388,
+      "sha256": "a8110726b2238068c3c1159f36e2a0e704bb45d79a6fb48df549ccc69d394303"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/api-public-40.json",
+      "bytes": 3643,
+      "sha256": "08776ad20ff42e35636c156054b098fb7adfb2266d2daa3c281d351ed7f5cf61"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/api-public-60.json",
+      "bytes": 8201,
+      "sha256": "448a8ac985124ee055f4948cce3e0c8fb9c6560c980169d6fea4e42003873b5c"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/application-download-attempt.json",
+      "bytes": 624,
+      "sha256": "f16f8f5c15b2c2cb82fc4dd602c56e873668de493f21f97e6c1aee24c08b840c"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/application-own-blank-public-retrieval.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/application-own-blank-public-retrieval.docx-Word-1.png",
+      "bytes": 44179,
+      "sha256": "41e5de9c70822921a7f375a5cbbd08ca3ec3f2b79646f020eefec23d9c12d807"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/application-own-blank-public-retrieval.docx-Word-2.png",
+      "bytes": 5842,
+      "sha256": "57fd31f6314b7d6c468ef1d6f41dc6f6be9ff3131d52a05435a3ccc31fabdf47"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/application-own-blank-public-retrieval.docx.pdf",
+      "bytes": 124721,
+      "sha256": "50a3dbc2fc15456728f2153d94e2ef7a24df57e545a8bebbe098248329436b64"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/evidence-list-own-blank.docx",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/evidence-list-own-blank.docx-Word-1.png",
+      "bytes": 38916,
+      "sha256": "7503ecd969b49aa8b0e81eeb7ed5e887f39c8c42963f2669de0ce2e6b9edffef"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/evidence-list-own-blank.docx.pdf",
+      "bytes": 120783,
+      "sha256": "51c138925dc8bc0210b1486093c4c3f5d455553efee75f761d7ebb245bd31680"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/evidence-material-own-format-reference.docx",
+      "bytes": 17288,
+      "sha256": "31b98bc4a0ac254e1d819aed66f9d1d211c1aca3b3feea8c258c79a88b2a926e"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/evidence-material-own-format-reference.docx-Word-1.png",
+      "bytes": 92646,
+      "sha256": "c27da86ba3f8e62b173f5eacdd464e4ab8bbcbbc9e2e3c6fbcf815fec90d2ef3"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/evidence-material-own-format-reference.docx.pdf",
+      "bytes": 110924,
+      "sha256": "610add3de23be2f42e8ffed06c7b490b212f85fb8d972c29582ab145d7842c76"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/native-district-discovery-path.json",
+      "bytes": 629,
+      "sha256": "be627ffafdff081162255c2ea82d55526cfce6ffb02c6ab321d0ff5d0dd65ee2"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/native-download-requests.json",
+      "bytes": 1169,
+      "sha256": "b99c813465caf14d5b0ad0079969eae82406835adf66db88ea0226ae541a1987"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/native-material-2.json",
+      "bytes": 2432,
+      "sha256": "ca099b17acc7d236fd654a77c702556853c7b39021d9cfea202d39ef6727a5ac"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/native-material-3.json",
+      "bytes": 3502,
+      "sha256": "af69ed3f47388e6417c5e2bf2e8a4e0a842ef6b6110fd0274d8d4c2fc5502a0c"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/online-native-scan-login-boundary.json",
+      "bytes": 732,
+      "sha256": "9a8af28aa94eb2cfb5e532b789d29a75411d108cf27353584ca9b4378c74efa9"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/online-own-handler.json",
+      "bytes": 991,
+      "sha256": "e38af115069bdbaeddbfe59a81b3fb25bbd05c23fbacd0558cd89b3d914770d4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/other-format-downloads.json",
+      "bytes": 1578,
+      "sha256": "3a41b12481f62afc0032b9729af9e95134eb2bf27c495241810f7059255901b4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/own-guide-native-dom.json",
+      "bytes": 34484,
+      "sha256": "760c557ca2cd4590b4cf81c8733fad1f72da9b4351d7a912b68dd5e6ebc66aad"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/own-original-layout-map.json",
+      "bytes": 4873,
+      "sha256": "6d319270b650d441c97d377d50bb990e75eb6d44df535e82661045db5f126f85"
+    },
+    {
       "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/320581/application-original-layout.json",
       "bytes": 13730,
       "sha256": "9d8212705eb529c306c6473cbed948821f9c969f68c0b1e743ba720b53702d1d"
@@ -11924,6 +12204,401 @@
       "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/word/RENDER.json",
       "bytes": 3746,
       "sha256": "3cb9c48197ae37c15868c61faa479d61b278b50e4af13eb626c35967c991e6e9"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/FINAL-BROWSER-QA.json",
+      "bytes": 13354,
+      "sha256": "c55b2c697c5a2668b6752ce6ea6bdfcea4670a4be41be11c55f4d23e131d8894"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/PUBLICATION.json",
+      "bytes": 1056,
+      "sha256": "ae2e25e4a42cd6b38350872879dfe754be5b9089d8ddf0b704d82d639b30a83d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/PUBLISHED-GUIDE.json",
+      "bytes": 37517,
+      "sha256": "3b91e9a419d7bb2294970d4b9f8067a6edb2d33dd29a00934e9a41761155a521"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/ROOT-OFFLINE-WORD-REVIEW.json",
+      "bytes": 1764,
+      "sha256": "20f75755390b45ba874b540f61bff4a767c44638cf089de8bfe51411ddd88ea3"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/STAGE-APPROVAL.json",
+      "bytes": 9079,
+      "sha256": "f794e50d5ba7fcc01d520625efeaa60a851fd2c01d5428b1305fd5634e32bc32"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/STAGE-PROPOSAL.json",
+      "bytes": 8785,
+      "sha256": "04c45e6c6f0867aedbe10e8a14bfaa4242e3dd1fb02e6c7347eecf0d816c55ad"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/WORD-MANIFEST.json",
+      "bytes": 8327,
+      "sha256": "edddb2840686b10c64fc164a4c5a63f9744e42c8f3fc9a2763b116d9d3eabf8f"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/native-browser-v2/BROWSER-RESULT.json",
+      "bytes": 16545,
+      "sha256": "b6b4b878d53e2232afe78a8fb25323506707d3ca97beb7db9790486518c1ffe1"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/native-browser-v2/DEVTOOLS-RESULT.json",
+      "bytes": 1653,
+      "sha256": "6bd16c089fd6be98b21ed030efa461c5c6a9293e9e3c6d89a4be493363422c88"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/native-browser-v2/NATIVE-WORD-RENDER.json",
+      "bytes": 1629,
+      "sha256": "4bd872c16476a2122028695eea39555c5fa680fb27e34d57597fdd03120819fd"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/native-browser-v2/ORIGINAL-HTTP.json",
+      "bytes": 2240,
+      "sha256": "30521b83d6ff28d9aac1ff087adb3dd139b92e1f5b1ae909621504ca45b016e2"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/native-browser-v2/RENDER-PAGES.json",
+      "bytes": 834,
+      "sha256": "1e174f4665b4775a0989d6cac5a98df39e6012554a36b091f8b93653b31044ec"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/native-browser-v2/ROOT-WORD-REVIEW.json",
+      "bytes": 1572,
+      "sha256": "d6db5d63e32d11e781e73b0114f180f52d1283fc7b87be9c9c8824bc671adca3"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/native-browser-v2/application-blank-1.png",
+      "bytes": 90206,
+      "sha256": "9bf0accd2dc835cc468aa0202bbd086dcafdad012e3dd167ca3569392c620b68"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/native-browser-v2/application-blank-2.png",
+      "bytes": 24962,
+      "sha256": "e83f2676f762a2d56e574585241bafedaab8b2b98896b8078ab791688b6b90a6"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/native-browser-v2/application-blank-3.png",
+      "bytes": 73570,
+      "sha256": "7c920092cc6c306bee85c3965fad04d82600ad5b10c79d98acc879279a18877d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/native-browser-v2/application-blank.docx",
+      "bytes": 12672,
+      "sha256": "1283fa4f6efa123005e33f1fd3917424a7f272e88f7dc016c9d8fa0da30a2c06"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/native-browser-v2/application-filled-1.png",
+      "bytes": 144140,
+      "sha256": "7dbe906f6e5357cae155a79d50083d4f5ac34718678106e0be2e4084667e81c5"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/native-browser-v2/application-filled-2.png",
+      "bytes": 73570,
+      "sha256": "7c920092cc6c306bee85c3965fad04d82600ad5b10c79d98acc879279a18877d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/native-browser-v2/application-filled.docx",
+      "bytes": 12624,
+      "sha256": "e557e20ea479363165256f03df45590b9f397217d527e4ab4f580d51d14d72db"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/native-browser-v2/evidence-blank-1.png",
+      "bytes": 42387,
+      "sha256": "845f4e790ac27a578dca02d71e9d2565e8df642ac52711e3a6ac48053ac3d1c3"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/native-browser-v2/evidence-blank.docx",
+      "bytes": 11460,
+      "sha256": "2aad9b24d3943e98f358aaa4d18e667c672253414dc1c3899bfdf37479a7e7ba"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/native-browser-v2/evidence-filled-1.png",
+      "bytes": 53807,
+      "sha256": "f81f32d02225b3473202b105831baced7d0ae66d166e221ed5f4ec3fe41a137a"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/native-browser-v2/evidence-filled.docx",
+      "bytes": 11522,
+      "sha256": "c2ebf5a21d490a2bc5a356fc83dec3cb9f9b6ca4f39135a32cf575deffd15cdc"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/original-word/320583-official-application-1.png",
+      "bytes": 164817,
+      "sha256": "ea4119d9be4166bbafec78fc4d54de943dee69b99a8d62451364a933da2d70a1"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/original-word/320583-official-application-2.png",
+      "bytes": 11422,
+      "sha256": "2e6e6f716bd020c7bd90ed9c8abfeb794e0695be8ca9fd0884825262225899b2"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/original-word/320583-official-application-3.png",
+      "bytes": 110584,
+      "sha256": "88999624ddfd0e6376ccb782f5829fd80a625cb348b5db2f638c75415ebd24ba"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/original-word/320583-official-application-4.png",
+      "bytes": 165353,
+      "sha256": "9d583f6f65466ee9455858604841d0ac4c07be2ab485655b3fa78e19eca966de"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/original-word/320583-official-application-5.png",
+      "bytes": 11416,
+      "sha256": "116a9cad24b7743cc82aab0ee7d530ef88583fef0f7c62783a9bbedfc4c9cd5c"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/original-word/320583-official-application-6.png",
+      "bytes": 111044,
+      "sha256": "69c5a163c24751af9beaa78b53c21dc997b822ef890c43addab5c684252519e4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/original-word/320583-official-evidence-1.png",
+      "bytes": 56686,
+      "sha256": "4c23c5d2ca1f2b71d46560d686549167d17c045327265aceb1d4e826a0df2a74"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/reviewed-implementation/kunshan_candidate.py",
+      "bytes": 14494,
+      "sha256": "7d21f1f1407be89c7805c7a64ccd762bcff655a5cb9546f1e74e23fbc57cfdbf"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/reviewed-implementation/test_kunshan_candidate.py",
+      "bytes": 7600,
+      "sha256": "bba02e9b5e16f6cce2aea3289feee3b6fe7b27166786ede19efdb835735e0984"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-long.docx",
+      "bytes": 12634,
+      "sha256": "90de83884711a744b442081620bb24280eb4705c0b82b69d0eddfca50b8892c3"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-long.docx-Word-1.png",
+      "bytes": 189706,
+      "sha256": "a73ae42d4703af13d800f8fa9f6c5c1f89ac5278a0c4eb73fa9740919c41f975"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-long.docx-Word-2.png",
+      "bytes": 369322,
+      "sha256": "b747494158fe2d57bbb3476304e48a0438f3a72baaa8e4ca93b137b272b7ae61"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-long.docx-Word-3.png",
+      "bytes": 299552,
+      "sha256": "9ebed551c131bd25eadf36039d1c29de14b4154c4343abc40e963214b8170a81"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-long.docx-Word-4.png",
+      "bytes": 63806,
+      "sha256": "836842e28526af02c351ab2e03492ce1fdd0ed5ec9d9ff026fc0c3ba128bb432"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-long.docx.pdf",
+      "bytes": 182935,
+      "sha256": "dfbfe552bab5f6f78ebaa2ac535718bb56e165ce40d838712d6ab978725ebcaf"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-normal.docx",
+      "bytes": 12605,
+      "sha256": "ffa1d192889500c2d08fadc19755a86308b5cbe659b7fbce4a4774a35c34055a"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-normal.docx-Word-1.png",
+      "bytes": 166075,
+      "sha256": "0bbfab493d08fd5d8a2275d5d4b6373763493a19d374e21849379c047c8fbdbd"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-normal.docx-Word-2.png",
+      "bytes": 80077,
+      "sha256": "a1368296b9ea8273d9925c5cd30b7b902f069e519e745e2aa396efb24ffe0636"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-normal.docx.pdf",
+      "bytes": 181666,
+      "sha256": "62b82ea5a44500e87a5ca52a9e34eedd9497d136b23743ca804591434949cf24"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/candidate-guide.json",
+      "bytes": 10823,
+      "sha256": "b4668bbb77541a876317cc6cf6e7ba5b1f834f7252492835ffee31795080a7cb"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-long.docx",
+      "bytes": 12026,
+      "sha256": "653fdcbf2d9e65652ef1860ca99fd83c1446410388b436ffafa2274995faec7a"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-long.docx-Word-1.png",
+      "bytes": 170616,
+      "sha256": "6b31dc762ab09ec4261fd5ad700853cb689cc9a252582bd5c93bf6f1187a4971"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-long.docx-Word-2.png",
+      "bytes": 192984,
+      "sha256": "67707f50351fe8f779cf0332ded1ba30e390191831d583f65e2568156b5fcea3"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-long.docx-Word-3.png",
+      "bytes": 193371,
+      "sha256": "96962d22a7447235bfa9997663408e5ddedcf427a49b836892b74aed78b86b38"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-long.docx-Word-4.png",
+      "bytes": 61224,
+      "sha256": "6d1495db5a32b5a6ad3374655c8ef4fb9a597e722c5c93197dd17d29c942662c"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-long.docx.pdf",
+      "bytes": 247132,
+      "sha256": "8c812112265cfcbbb808931da85180886269c7f7ced9eaa738fd0a0097aa1755"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-normal.docx",
+      "bytes": 11526,
+      "sha256": "93e8655ec9dcdd7a953d8b5f71fe97b9c4dbba9fbddd279a9717af2411158422"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-normal.docx-Word-1.png",
+      "bytes": 50743,
+      "sha256": "10e9309798401b048ade3dc367fd9ae3dff6f5acaae2de58425223b132818d22"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-normal.docx.pdf",
+      "bytes": 214813,
+      "sha256": "3d017bc349cfcc8dd65eaf81e0e9e87d95da280cf9809a120bfac4141b77353a"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/fictional-fixtures.json",
+      "bytes": 14339,
+      "sha256": "6a6582b330cbed1d9c28c8212aa287d4827c53f8fcdc19f3c1216aec7ca55a64"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/VISUAL-REVIEW.json",
+      "bytes": 2506,
+      "sha256": "3364ef90cf6057feda61461eed5179f262c40949686dd483ac0c9f2f6c05eab3"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/application-own-layout.json",
+      "bytes": 14033,
+      "sha256": "529bd84e52b120913f0ac466b329c365e920c1f56323df66bb41923cb63414fa"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/01-evidence-material-detail.txt",
+      "bytes": 359,
+      "sha256": "820253164f7ecaf90cd18d037e4396f70ea10f25adfc29144b524e1f8cfed103"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/01-heading-Word-1.png",
+      "bytes": 8423,
+      "sha256": "ae2a26417e40b77fb8ef0274306bfcb9b3003a654f6d885d12abf663a1045389"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/01-own-blank-18c31052-c1b9-4209-8b90-d56f764e365b.docx",
+      "bytes": 13376,
+      "sha256": "8dae42265086696071d6173f162d47c9fdd9bdf4782cf1c70d28779b5894277f"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/01-own-blank-18c31052-c1b9-4209-8b90-d56f764e365b.docx.pdf",
+      "bytes": 78365,
+      "sha256": "ea599d69691b2ffaec9356f45a0aec307c0b55b57fb39c99a3b2102e996e8fff"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/02-evidence-list-detail.txt",
+      "bytes": 368,
+      "sha256": "eda414f4e8462c28252e1ca322c33866aa3ec5ab5b0e122eb5e92c665bf39ed9"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/02-own-blank-de3a0ee9-0827-4f44-b9ad-ba05010a03d9.docx",
+      "bytes": 15273,
+      "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/03-heading-Word-1.png",
+      "bytes": 8719,
+      "sha256": "d40c3df23df545e5f6c7ce5d424c8cc3f2231fde355cdb0c6c50d1de25d0eaaf"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/03-identity-detail.txt",
+      "bytes": 359,
+      "sha256": "9d76a2c356dcd2d11e2ee3eeb78b20fa9f87fe5c013e73ec2429318b490cd18c"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/03-own-blank-41fffad3-aa64-4d74-877a-94a209c6042c.docx",
+      "bytes": 13374,
+      "sha256": "f36541d8f1c49a0229d1510ae9f5cc5eb72ff294a17aec69c82b06e7ec571714"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/03-own-blank-41fffad3-aa64-4d74-877a-94a209c6042c.docx.pdf",
+      "bytes": 78651,
+      "sha256": "62eb51a60501197446dceed503a86536437c5edcbfbb6bde7049ad9323112270"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/04-application-detail.txt",
+      "bytes": 347,
+      "sha256": "91cfa99d8c3bb2a497731c4336b4c95428c00e394eb2be7cffc0a1cbf0602746"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/04-own-blank-3c17b2ea-434e-4b29-8fe4-40e88ad11c57.docx",
+      "bytes": 17701,
+      "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/SOURCE-FREEZE.json",
+      "bytes": 8117,
+      "sha256": "daa6ecda9f78f398c196ba579a4d870591e02a328aca3d5665ae9177151f2c6d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/online-boundary.json",
+      "bytes": 364,
+      "sha256": "54f09c1f86369c88276aba3ea03bdab15578fe7775c9739132b52edd1d944fcc"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/online-devtools-login-proof.json",
+      "bytes": 1665,
+      "sha256": "060bda994d93c4505112e13ebbecf7063c0b1102d0d667eae25edc79c5622242"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/online-native-login-controls.txt",
+      "bytes": 1441,
+      "sha256": "ad4289f294487ff4fe5b6aeab61cd8e18f850ef53e32f96a70f61694c10ffe69"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/own-blank-content-map.json",
+      "bytes": 17302,
+      "sha256": "88392da5d29b11c087b9416a4b6b233c4d5155e13a090d27dab073e49bd90674"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/own-native-bindings.json",
+      "bytes": 6918,
+      "sha256": "6dee5915005e2fdde69a4617a1e44e4f2561a9e2620bda1bf0d5cb4bfe229295"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/own-source-downloads.json",
+      "bytes": 5681,
+      "sha256": "2e5418b2cf702b4817a5f393a0dc9db6f64dfe5f97796caac46fc5385ae3f2a0"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/continuation-20261031-native/own-workflow-28f295e7.png",
+      "bytes": 139623,
+      "sha256": "dc407a951d748964846c061b0331167db5c0178a8a7515f6ab933494c74aa8ee"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/evidence-own-layout.json",
+      "bytes": 2653,
+      "sha256": "8dd9d43e9f347dcb8cccb91e18e4c76c1941353a9d718f9c47068b85e7bd1a51"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/own-guide.json",
+      "bytes": 165491,
+      "sha256": "e6dbd5b263d7a533fda89233f7451d5e4a8eb47ba4614995e7904ca516bfeea6"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/personal-search.json",
+      "bytes": 146681,
+      "sha256": "d96260cfc4529eaddecbbff6869b2f03478ec71a4f5f2ea67610ad571820baf3"
     },
     {
       "path": "reports/production-readiness-20261030/localities/chunan/FINAL-BROWSER-QA.json",

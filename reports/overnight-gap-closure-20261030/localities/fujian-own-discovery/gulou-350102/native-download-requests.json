@@ -1,0 +1,12 @@
+{
+  "method": "GET after native own format control clicks; no headers retained",
+  "requests": [
+    "reqid=65 GET https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFile?unid=F4048D8C91E2FF882AC6C62CC0EC4D86&busUnid=&busType= [200]",
+    "reqid=66 GET https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFileStream?unid=F4048D8C91E2FF882AC6C62CC0EC4D86 [200]",
+    "reqid=67 GET https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFile?unid=CC300F5D9DD5DC404D65C68116D50C55&busUnid=&busType= [200]",
+    "reqid=68 GET https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFileStream?unid=CC300F5D9DD5DC404D65C68116D50C55 [200]",
+    "reqid=69 GET https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFile?unid=7C3DBFA82D340B3C50F4DD45E14FE785&busUnid=&busType= [200]",
+    "reqid=70 GET https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFileStream?unid=7C3DBFA82D340B3C50F4DD45E14FE785 [200]"
+  ],
+  "native_file_completion": "NOT_ASSERTED; browser download canceled/ERR_ABORTED, exact public bytes obtained separately without auth/cookie/signature header replay"
+}

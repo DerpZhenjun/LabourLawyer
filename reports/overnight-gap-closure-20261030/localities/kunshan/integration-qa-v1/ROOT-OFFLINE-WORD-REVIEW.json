@@ -1,0 +1,30 @@
+{
+  "scope": "Independent root offline visual review only; not stage/publication capability",
+  "verified_at": "2026-10-30T16:27:14.207468+00:00",
+  "region_code": "320583",
+  "own_source_id": "d39444ab7f4bcaea2ea91473",
+  "source_freeze_sha256": "daa6ecda9f78f398c196ba579a4d870591e02a328aca3d5665ae9177151f2c6d",
+  "source_pinned_files_verified": 24,
+  "candidate_sha256": "7d21f1f1407be89c7805c7a64ccd762bcff655a5cb9546f1e74e23fbc57cfdbf",
+  "fresh_tests": {
+    "run": 10,
+    "passed": 10,
+    "seconds": 0.683
+  },
+  "generated_pages_independently_viewed": 11,
+  "findings": [
+    "Normal application two pages: worker section only, complete requests/facts, coherent closing block, blank applicant signature.",
+    "Long application four pages: full text flows naturally; closing/committee/signature/date stay together; original notes remain readable.",
+    "Normal evidence one page: six own columns, single row, blank submitter/receiver signatures.",
+    "Long evidence four pages: all15 rows readable, headers repeated on all pages, rows remain whole, final signature labels readable."
+  ],
+  "original_layout_note": "Own downloaded original application/evidence hashes match already root-reviewed original Word bytes. This recognizes identical layout only; Kunshan authority and all material requirements remain separately bound to its own native guide/control freeze.",
+  "visual_result": "PASS_FOR_THESE_FOUR_FICTIONAL_FIXTURES",
+  "can_generate": false,
+  "published": false,
+  "remaining": [
+    "integrate exact live version/typed contract and negative bindings",
+    "native candidate browser generation/download and responsive regression",
+    "separate final source/Word/browser review before any publication"
+  ]
+}

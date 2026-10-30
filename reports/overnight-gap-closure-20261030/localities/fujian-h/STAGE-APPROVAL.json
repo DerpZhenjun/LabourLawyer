@@ -1,0 +1,168 @@
+{
+  "status": "approved_for_isolated_candidate_only",
+  "identities": [
+    {
+      "region_code": "350102",
+      "source_id": "3e2246aa2a534d2b37f6c6c5",
+      "service_code": "113501020036093803400201430200201"
+    }
+  ],
+  "source_freeze_sha256": "6aa0a44017bf60eb39e07f441e31676bf88716b5f69722188c9258ff5e2efc15",
+  "offline_review_sha256": "33f301242bba00761cc5aba26c35643f39844fab7b2c21719029b8de4b17f4c3",
+  "word_manifest_sha256": "612fda853f9ad18f6b88271ad0c6af19045463468ab8e5bb756cdf1cb9baa895",
+  "approved_by": "independent_root",
+  "visual_review": "PASS",
+  "can_publish": false,
+  "model_calls": 0,
+  "files": [
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/OFFLINE-QA.json",
+      "sha256": "e2658be3ec25ae84067a7001251cfd61b0076db2fe7ae74eaa45cb1421947451",
+      "bytes": 1956
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/normal-application-1.png",
+      "sha256": "f90776e8ed07d282837238e55976d1a297f3b2e938e0eb5bdb7bee5fcecfc607",
+      "bytes": 104745
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/normal-application-2.png",
+      "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4",
+      "bytes": 5069
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/normal-evidence-1.png",
+      "sha256": "f3077e59d5b9d55700f48a869c7514b8e260186eabd720764ed576c16ca0fe3c",
+      "bytes": 59217
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-application-1.png",
+      "sha256": "c0bf3c6124f072672f019f3905decd0275df81655502b466db3879a324aaf203",
+      "bytes": 224005
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-application-2.png",
+      "sha256": "66fe68577a3dc72c447058952bc72669e7193cc37027441b4879cb7206b1d355",
+      "bytes": 266554
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-application-3.png",
+      "sha256": "093f86b5a5679fcb8f5b0c6f73b08e7f269120f83ea1c3902de091d58dbe4a27",
+      "bytes": 123195
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-01.png",
+      "sha256": "102dbdecef65d22efdafeb2c6f5156bd1aaee9c4683e572e0db1146abff06432",
+      "bytes": 76943
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-02.png",
+      "sha256": "2b2048469a0360d73cb345b97c171fdd934fd27f9ab23971a17211716f618608",
+      "bytes": 74106
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-03.png",
+      "sha256": "69b884ab493eea705d71b3aff6befcb18dd2e6bc6a08011602a85b19fc38e41d",
+      "bytes": 74414
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-04.png",
+      "sha256": "fa7272785130e1eefc3f1cd2d89b81fc2c51bae8eb3791e215ce13e140d694a5",
+      "bytes": 74022
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-05.png",
+      "sha256": "46fd9cd31f7ac7f62de23ff6f58616d937b4fd4d2dfd616f18a85ea19858ce5d",
+      "bytes": 74435
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-06.png",
+      "sha256": "6714ca4326f774131972a9f63f7e53a58615ed64340c991a8f96d2bcd3acd71f",
+      "bytes": 74049
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-07.png",
+      "sha256": "b1d532a6b4fbec09ad7987b2c248677d3ceab3a8efe6c89e584bd22322bf4f5d",
+      "bytes": 74046
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-08.png",
+      "sha256": "c7f4b7a4d8267ae255eb25cfb3ce925da97365864cc5ea3caa6a07385ef98a2f",
+      "bytes": 74680
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-09.png",
+      "sha256": "671fac90b58c7f6b9fa598c6da71fee840a84eb8505db0f3d09efd151a6a7d88",
+      "bytes": 74552
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-10.png",
+      "sha256": "931ec35b7fd44a8e75a8f8b3b2ad4143b95faa860be72afca0032b0796261eac",
+      "bytes": 74703
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-11.png",
+      "sha256": "2c444c33f7a84c6434b773ac724dc7e5429eadedff35b87350e51b17d83429c4",
+      "bytes": 73574
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-12.png",
+      "sha256": "15df2ce27b4d159602c6665c5822e088c1c826929283fd20643fefaad106ce07",
+      "bytes": 74429
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-13.png",
+      "sha256": "9ec5dd42f1dd8d87e4e111058b1ca646d7497b339a8cb17b398e1beaf57dcddb",
+      "bytes": 75109
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-14.png",
+      "sha256": "6f6c768893ba9156f2cc8e23155cc501369cff28ea0e41c8ad3e04d7d72f9edf",
+      "bytes": 74627
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/pages/stress-evidence-15.png",
+      "sha256": "f2f45224d1fd2a1f748ff5d68b5ca73c73798cde5d472d4288ca55d2979c2c90",
+      "bytes": 87015
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/word/fictional-fixtures.json",
+      "sha256": "edd49c564e19c9db66bfea649fc457257b681cd338544166c0fcc2dbfccf5e8c",
+      "bytes": 10788
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/word/normal-application.docx",
+      "sha256": "9389b65ae59fcdbdcc79eb9f0a5511b92b0b816e87173199ca6a5939f0c5fdc1",
+      "bytes": 12117
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/word/normal-evidence.docx",
+      "sha256": "39e64186bfcdf92619dbd71bf0a8dc7867cc0fc1a01d8dbe5295d82344fe7f59",
+      "bytes": 16767
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/word/stress-application.docx",
+      "sha256": "8ba5247934628fbd5d48ec1f0671d5790f485d4992aaefd24fb69a186289491b",
+      "bytes": 12439
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/word/stress-evidence.docx",
+      "sha256": "19f8a7fccb4d4c6c4fdfbd0df6f6e490f287fbf8eb0e4169744e22e20f6f836e",
+      "bytes": 17920
+    }
+  ],
+  "approved_at": "2026-10-30T17:34:46.275905+00:00",
+  "independent_review": {
+    "source_pins": 24,
+    "word_manifest_payloads": 27,
+    "private_manifest_payloads": 67,
+    "root_viewed_pages": 25,
+    "peer_independent_checks": 107,
+    "public_generation_allowed": false
+  },
+  "remaining": [
+    "actual shared-route acceptance",
+    "native candidate forms/download/Word verification",
+    "separate final source/browser approval before seed/live publication"
+  ]
+}

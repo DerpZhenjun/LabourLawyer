@@ -1,0 +1,167 @@
+{
+  "scope": "new province own district official-source discovery only",
+  "province": "fujian",
+  "city": "福州市",
+  "district": "鼓楼区",
+  "region_code": "350102",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=76D5D6C31E91AC25E948E44CF0D90043&infoType=1",
+  "source_id": "3e2246aa2a534d2b37f6c6c5",
+  "service_code": "113501020036093803400201430200201",
+  "authority": "福州市鼓楼区人力资源和社会保障局",
+  "captured_at": "2026-10-30T16:30:04.586613+00:00",
+  "native_path": [
+    "configured province official portal",
+    "native 福州市 selector",
+    "native 鼓楼区 selector",
+    "personal services and 就业创业",
+    "labor dispute mediation/arbitration category",
+    "own arbitration item 鼓楼区人社局",
+    "native 办事指南"
+  ],
+  "native_material_detail_panels_opened": 3,
+  "own_format_controls_clicked": 3,
+  "own_format_files_downloaded": 3,
+  "format_roles": {
+    "application-own-blank-public-retrieval.docx": "own_application_blank",
+    "evidence-list-own-blank.docx": "own_evidence_list_blank",
+    "evidence-material-own-format-reference.docx": "instructions_only_reference_not_a_case_fact_or_generation_form"
+  },
+  "native_browser_download_completion": "NOT_ASSERTED; format control GETs observed200, browser download canceled/ERR_ABORTED; bytes obtained independently from those exact public URLs, normal TLS, no auth/cookie/signature headers replayed",
+  "sample_controls_observed": 3,
+  "sample_files_downloaded": 0,
+  "material_rules_observed": {
+    "application": "原件2份；签字捺印，复印件按被申请人人数确定",
+    "evidence_list": "原件2份；签字捺印，正本一份，副本按照当事人人数提交",
+    "evidence_material": "复印件2份"
+  },
+  "own_original_Word_pages": {
+    "application": 2,
+    "evidence_list": 1,
+    "evidence_material_reference": 1
+  },
+  "all_four_original_pages_viewed": true,
+  "source_layout_observation": "Own original application includes a blank second page. Evidence own six columns: 序号、证据名称、页数、原件/复印件、证明对象、页码. Original bytes unchanged.",
+  "online_native_boundary": "Own 我要申报→officially labeled third-party service dialog→服务地址→福建省智慧调解仲裁平台; actual 闽政通APP扫码登录 UI; stopped without scanning.",
+  "online_status": "auth_required",
+  "qr_scan_or_login_attempted": false,
+  "application_submitted": false,
+  "source_qualification_notes": [
+    "Source literal5workday figure is retained as its guide statement, not inferred as arbitration merits decision period.",
+    "Source literal FAQ includes jurisdiction/registration-capital wording; no legal correctness or applicability decision is asserted.",
+    "Province global search did not retain district scope and was excluded from own-source proof.",
+    "Official samples have only observed labels and own attachment identities; no sample contents or case facts were used."
+  ],
+  "browser_screenshots": "NOT_RUN_TOOL_RESTRICTION_NO_WORKAROUND",
+  "word_render_method": "Microsoft Word readonly original export PDF; Poppler PNG; all4pages viewed",
+  "public_payload_redaction": "Signing/auth/cookie/session fields removed; no request/response headers, user state or QR challenge data saved",
+  "can_generate": false,
+  "published": false,
+  "candidate_module_created": false,
+  "shared_code_seed_or_live_database_changed": false,
+  "model_calls": 0,
+  "remaining": [
+    "Independent own original/guide review before candidate implementation",
+    "Samples not downloaded or inspected; no claim they are absent",
+    "Own field mapping and candidate strict-contract/TDD gates",
+    "Own synthetic Word and native candidate-download stages",
+    "Independent final approval and publication"
+  ],
+  "files": {
+    "api-public-34.json": {
+      "bytes": 9408,
+      "sha256": "00135407bbaccaee0bfd4042dbbb20f1d44afe9e72fa801259c7170d947c69d6"
+    },
+    "api-public-39.json": {
+      "bytes": 2388,
+      "sha256": "a8110726b2238068c3c1159f36e2a0e704bb45d79a6fb48df549ccc69d394303"
+    },
+    "api-public-40.json": {
+      "bytes": 3643,
+      "sha256": "08776ad20ff42e35636c156054b098fb7adfb2266d2daa3c281d351ed7f5cf61"
+    },
+    "api-public-60.json": {
+      "bytes": 8201,
+      "sha256": "448a8ac985124ee055f4948cce3e0c8fb9c6560c980169d6fea4e42003873b5c"
+    },
+    "application-download-attempt.json": {
+      "bytes": 624,
+      "sha256": "f16f8f5c15b2c2cb82fc4dd602c56e873668de493f21f97e6c1aee24c08b840c"
+    },
+    "application-own-blank-public-retrieval.docx": {
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    "application-own-blank-public-retrieval.docx-Word-1.png": {
+      "bytes": 44179,
+      "sha256": "41e5de9c70822921a7f375a5cbbd08ca3ec3f2b79646f020eefec23d9c12d807"
+    },
+    "application-own-blank-public-retrieval.docx-Word-2.png": {
+      "bytes": 5842,
+      "sha256": "57fd31f6314b7d6c468ef1d6f41dc6f6be9ff3131d52a05435a3ccc31fabdf47"
+    },
+    "application-own-blank-public-retrieval.docx.pdf": {
+      "bytes": 124721,
+      "sha256": "50a3dbc2fc15456728f2153d94e2ef7a24df57e545a8bebbe098248329436b64"
+    },
+    "evidence-list-own-blank.docx": {
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    "evidence-list-own-blank.docx-Word-1.png": {
+      "bytes": 38916,
+      "sha256": "7503ecd969b49aa8b0e81eeb7ed5e887f39c8c42963f2669de0ce2e6b9edffef"
+    },
+    "evidence-list-own-blank.docx.pdf": {
+      "bytes": 120783,
+      "sha256": "51c138925dc8bc0210b1486093c4c3f5d455553efee75f761d7ebb245bd31680"
+    },
+    "evidence-material-own-format-reference.docx": {
+      "bytes": 17288,
+      "sha256": "31b98bc4a0ac254e1d819aed66f9d1d211c1aca3b3feea8c258c79a88b2a926e"
+    },
+    "evidence-material-own-format-reference.docx-Word-1.png": {
+      "bytes": 92646,
+      "sha256": "c27da86ba3f8e62b173f5eacdd464e4ab8bbcbbc9e2e3c6fbcf815fec90d2ef3"
+    },
+    "evidence-material-own-format-reference.docx.pdf": {
+      "bytes": 110924,
+      "sha256": "610add3de23be2f42e8ffed06c7b490b212f85fb8d972c29582ab145d7842c76"
+    },
+    "native-district-discovery-path.json": {
+      "bytes": 629,
+      "sha256": "be627ffafdff081162255c2ea82d55526cfce6ffb02c6ab321d0ff5d0dd65ee2"
+    },
+    "native-download-requests.json": {
+      "bytes": 1169,
+      "sha256": "b99c813465caf14d5b0ad0079969eae82406835adf66db88ea0226ae541a1987"
+    },
+    "native-material-2.json": {
+      "bytes": 2432,
+      "sha256": "ca099b17acc7d236fd654a77c702556853c7b39021d9cfea202d39ef6727a5ac"
+    },
+    "native-material-3.json": {
+      "bytes": 3502,
+      "sha256": "af69ed3f47388e6417c5e2bf2e8a4e0a842ef6b6110fd0274d8d4c2fc5502a0c"
+    },
+    "online-native-scan-login-boundary.json": {
+      "bytes": 732,
+      "sha256": "9a8af28aa94eb2cfb5e532b789d29a75411d108cf27353584ca9b4378c74efa9"
+    },
+    "online-own-handler.json": {
+      "bytes": 991,
+      "sha256": "e38af115069bdbaeddbfe59a81b3fb25bbd05c23fbacd0558cd89b3d914770d4"
+    },
+    "other-format-downloads.json": {
+      "bytes": 1578,
+      "sha256": "3a41b12481f62afc0032b9729af9e95134eb2bf27c495241810f7059255901b4"
+    },
+    "own-guide-native-dom.json": {
+      "bytes": 34484,
+      "sha256": "760c557ca2cd4590b4cf81c8733fad1f72da9b4351d7a912b68dd5e6ebc66aad"
+    },
+    "own-original-layout-map.json": {
+      "bytes": 4873,
+      "sha256": "6d319270b650d441c97d377d50bb990e75eb6d44df535e82661045db5f126f85"
+    }
+  }
+}

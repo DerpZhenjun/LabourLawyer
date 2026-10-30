@@ -175,6 +175,12 @@ def public_evidence(guide, root):
     """
     if isinstance(root,str) and not root.strip():return None
     if not isinstance(guide,dict) or not isinstance(guide.get('province'),str) or not isinstance(guide.get('region_code'),str):return None
+    if guide.get('province')=='fujian' and guide.get('region_code')=='350102':
+        from regional_fujian_oct31h import public_evidence as own
+        return own(guide,root)
+    if guide.get('province')=='jiangsu' and guide.get('region_code')=='320583':
+        from regional_jiangsu_oct31g import public_evidence as own
+        return own(guide,root)
     if guide.get('province')=='jiangsu' and guide.get('region_code') in {'320581','320582'}:
         from regional_jiangsu_oct30f import public_evidence as own
         return own(guide,root)
@@ -213,6 +219,12 @@ def approved_report_attachment(guide, template, root):
     """
     if isinstance(root,str) and not root.strip():return False
     if not isinstance(guide,dict) or not isinstance(guide.get('province'),str) or not isinstance(guide.get('region_code'),str):return False
+    if guide.get('province')=='fujian' and guide.get('region_code')=='350102':
+        from regional_fujian_oct31h import approved_report_attachment as own
+        return own(guide,template,root)
+    if guide.get('province')=='jiangsu' and guide.get('region_code')=='320583':
+        from regional_jiangsu_oct31g import approved_report_attachment as own
+        return own(guide,template,root)
     if guide.get('province')=='jiangsu' and guide.get('region_code') in {'320581','320582'}:
         from regional_jiangsu_oct30f import approved_report_attachment as own
         return own(guide,template,root)

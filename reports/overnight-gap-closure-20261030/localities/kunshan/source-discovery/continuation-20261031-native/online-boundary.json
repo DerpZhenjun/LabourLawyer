@@ -1,0 +1,12 @@
+{
+  "native_online_control_clicked": true,
+  "destination_origin": "https://www.jszwfw.gov.cn",
+  "destination_path": "/jsjis/front/login.do",
+  "query_values_redacted": true,
+  "login_ui_observed": true,
+  "captcha_field_observed": true,
+  "credentials_entered": false,
+  "captcha_solved": false,
+  "submission_attempted": false,
+  "model_calls": 0
+}

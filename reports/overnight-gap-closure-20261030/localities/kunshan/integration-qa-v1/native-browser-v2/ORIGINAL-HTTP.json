@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-10-30T17:29:00.653305+00:00",
+  "scope": "isolated_candidate_Gv2",
+  "originals": [
+    {
+      "id": "18c31052-c1b9-4209-8b90-d56f764e365b",
+      "status": 200,
+      "bytes": 13376,
+      "sha256": "8dae42265086696071d6173f162d47c9fdd9bdf4782cf1c70d28779b5894277f",
+      "official_source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+      "source_id": "d39444ab7f4bcaea2ea91473",
+      "version": 2,
+      "original_own_bytes_match": true
+    },
+    {
+      "id": "de3a0ee9-0827-4f44-b9ad-ba05010a03d9",
+      "status": 200,
+      "bytes": 15273,
+      "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "official_source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+      "source_id": "d39444ab7f4bcaea2ea91473",
+      "version": 2,
+      "original_own_bytes_match": true
+    },
+    {
+      "id": "41fffad3-aa64-4d74-877a-94a209c6042c",
+      "status": 200,
+      "bytes": 13374,
+      "sha256": "f36541d8f1c49a0229d1510ae9f5cc5eb72ff294a17aec69c82b06e7ec571714",
+      "official_source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+      "source_id": "d39444ab7f4bcaea2ea91473",
+      "version": 2,
+      "original_own_bytes_match": true
+    },
+    {
+      "id": "3c17b2ea-434e-4b29-8fe4-40e88ad11c57",
+      "status": 200,
+      "bytes": 17701,
+      "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "official_source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+      "source_id": "d39444ab7f4bcaea2ea91473",
+      "version": 2,
+      "original_own_bytes_match": true
+    }
+  ],
+  "model_calls": 0
+}

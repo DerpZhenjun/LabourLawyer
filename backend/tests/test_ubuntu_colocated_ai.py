@@ -6,6 +6,11 @@ from types import SimpleNamespace
 import json
 
 class UbuntuColocatedAITests(unittest.TestCase):
+    def setUp(self):
+        # Use an explicit fixture model so endpoint/ownership negatives exercise
+        # their intended guard even when the enclosing QA run disables models.
+        self.enterContext(patch.dict(os.environ,{'LABOURLAWYER_LLM_MODEL':'ollama/qwen3.8:27b'}))
+
     def test_explicit_verified_ubuntu_installation_can_serve_its_local_app(self):
         with patch.dict(os.environ,{'OLLAMA_API_BASE':'http://127.0.0.1:11434','LABOURLAWYER_AI_TRANSPORT':'ubuntu-local'}),patch('llm_service.remote._owned_ubuntu_ollama',return_value=True,create=True):
             self.assertEqual(resolve_remote().transport,'ubuntu-local')

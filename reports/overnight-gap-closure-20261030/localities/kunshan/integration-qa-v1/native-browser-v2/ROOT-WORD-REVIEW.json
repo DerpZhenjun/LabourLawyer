@@ -1,0 +1,34 @@
+{
+  "scope": "four browser-downloaded fictional/empty documents, independently viewed in native Word render",
+  "pages": 7,
+  "application_filled_pages": 2,
+  "application_blank_pages": 3,
+  "evidence_filled_pages": 1,
+  "evidence_blank_pages": 1,
+  "result": "PASS",
+  "findings": [
+    "Own worker application blanks preserve ruled empty request/facts pages and source notes; no employer form leaked.",
+    "Filled application keeps fictional name/requests/facts in their own slots; dates, signatures, mediation/legal-aid and committee remain intentionally blank.",
+    "Both evidence files have exactly one entry row and six own columns, no copied/sample evidence; submitter/receiver signatures remain blank.",
+    "Native Word package files remain source-bound; no clipping/overlap observed on these seven pages."
+  ],
+  "strict_backend": {
+    "run": 141,
+    "passed": 139,
+    "skipped": 2,
+    "windows_only_skips": [
+      "Linux portable TLS installer",
+      "symlink creation unavailable"
+    ],
+    "failures": 0
+  },
+  "other_validation": {
+    "G_tests": 9,
+    "shared_contract_module": 21,
+    "source_bound_generation_pairs": 370,
+    "public_mounted_types": "PASS_205_guides"
+  },
+  "failed_attempt_preserved": "First browser attempt timed out on a test selector using visible text instead of the button accessible name; files retained privately. Corrected native selector rerun completed all four downloads.",
+  "screenshot_status": "NOT_CAPTURED_TOOL_RESTRICTION",
+  "no_publication_or_database_mutation_yet": true
+}

@@ -15,11 +15,13 @@ import unicodedata
 
 from regional_adapters import checked_reference_adapter
 from regional_public_provenance import public_evidence
+from regional_fujian_oct31h import ADAPTER as FJH, form_fields as fujian_h_fields, defaults as fujian_h_defaults
 
 ROOT=Path(__file__).resolve().parents[1]
 EJS='jiangsu_own_blank_oct29e_v1'
 FJS='jiangsu_own_blank_oct30f_v1'
-EXACT_JS={EJS,FJS}
+GJS='jiangsu_kunshan_own_blank_oct31g_v1'
+EXACT_JS={EJS,FJS,GJS}
 ZJ_OWN={'zhejiang_own_worker_oct29d_v1','zhejiang_own_worker_oct29e_v1','zhejiang_chunan_own_worker_oct30_v1'}
 HN={'hunan_own_legacy_worker_oct29b_v1','hunan_own_legacy_worker_oct29c_v1'}
 JS_BLANK={'jiangsu_xishan_blank_v1','jiangsu_own_blank_oct29_v1',
@@ -27,8 +29,8 @@ JS_BLANK={'jiangsu_xishan_blank_v1','jiangsu_own_blank_oct29_v1',
 REFERENCE={'sichuan_combined_reference_v1','tianfu_reference_v1'}
 NINGBO='zhejiang_ningbo_own_blank_oct29_v1'
 FEIDONG='anhui-feidong-official-application-20261029'
-SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG}|ZJ_OWN|HN|JS_BLANK|REFERENCE)
-PUBLIC_PROOF_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,'jiangsu_own_blank_oct29c_v1','jiangsu_own_blank_oct29d_v1'}|ZJ_OWN|HN)
+SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH}|ZJ_OWN|HN|JS_BLANK|REFERENCE)
+PUBLIC_PROOF_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,'jiangsu_own_blank_oct29c_v1','jiangsu_own_blank_oct29d_v1'}|ZJ_OWN|HN)
 
 JS_APP=('applicantName birthDate gender idNumber idAddress otherDocumentType otherDocumentNumber '
         'applicantMailingAddress phone acceptMediation legalAid respondentName respondentType '
@@ -100,6 +102,7 @@ def _limit(prop,name):
 
 
 def _fields(adapter,kind,schema):
+    if adapter==FJH:return fujian_h_fields(kind)
     if adapter==FEIDONG:
         if kind!='application':raise ValueError('肥东没有已核验独立证据填写槽')
         keys=FD_PARTIES+['requests','facts'];item_keys=[]
@@ -130,7 +133,7 @@ def _fields(adapter,kind,schema):
                 node=_resolve(schema,item['properties'][child]);entry={'key':child,'label':LABELS[child],'type':'text','nullable':False}
                 maximum=_limit(node,'maxLength')
                 if maximum is not None:entry['maxLength']=maximum
-                if adapter in REFERENCE and child=='originalType':entry['choices']=['原件','复印件']
+                if adapter in REFERENCE|{GJS} and child=='originalType':entry['choices']=['原件','复印件']
                 children.append(entry)
             field.update(type='object_list',maxItems=prop['maxItems'],fields=children)
         elif key=='requests' or key in FD_PARTIES:
@@ -149,6 +152,7 @@ def _fields(adapter,kind,schema):
             # bound; publish a conservative editable text capacity, not a rule.
             field['maxLength']=maximum if maximum is not None else 300
             if adapter in EXACT_JS and key in {'birthDate','applicationDate','submitDate'}:field['format']='iso-date'
+            if adapter==GJS and key in {'acceptMediation','legalAid'}:field['choices']=['是','否']
             if adapter in ZJ_OWN and key=='householdType':field['choices']=list(HOUSEHOLD_CHOICES)
             if adapter in JS_BLANK and key in {'acceptMediation','legalAid'}:field['choices']=['是','否']
         result.append(field)
@@ -200,6 +204,8 @@ def build_form_contract(guide,template,kind,root=None):
         mode='blank' if template['official_kind']=='blank' else 'reference_adaptation',adapter=adapter)
     policy={'unknown_fields':'reject','invalid_xml':'reject','capacity_is_official_requirement':False,'text_controls':'xml',
             'trim_text':adapter not in HN|ZJ_OWN|EXACT_JS}
+    if adapter==GJS:policy['trim_text']=True
+    if adapter==FJH:policy.update(text_controls='newline_only',trim_text=True)
     if adapter in JS_BLANK|REFERENCE|{NINGBO} and kind=='application':policy['text_list_total_max_length']={'requests':1200}
     if adapter==FEIDONG:
         policy['text_controls']='newline_only'
@@ -208,6 +214,7 @@ def build_form_contract(guide,template,kind,root=None):
                       'requests':{'first_width':44,'later_width':56,'max_lines':9,'join':'\n','trim':True},
                       'facts':{'first_width':56,'later_width':56,'max_lines':10,'trim':True}}}
     result={'schema_version':1,'context':context,'fields':fields,'defaults':{f['key']:_empty(f) for f in fields},'policy':policy}
+    if adapter==FJH:result['defaults']=fujian_h_defaults(kind)
     result['contract_id']=_contract_id(result)
     return result
 

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "evidence-list-own-blank.docx",
+    "file_id": "CC300F5D9DD5DC404D65C68116D50C55",
+    "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFileStream?unid=CC300F5D9DD5DC404D65C68116D50C55",
+    "final_url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFileStream?unid=CC300F5D9DD5DC404D65C68116D50C55",
+    "status": 200,
+    "content_type": "application/octet-stream;charset=UTF-8",
+    "bytes": 18887,
+    "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "retrieved_at": "2026-10-30T16:27:25.942611+00:00",
+    "method": "Native own format control clicked; exact observed public endpoint retrieval with normal TLS and no auth/cookie/signature headers replayed"
+  },
+  {
+    "file": "evidence-material-own-format-reference.docx",
+    "file_id": "7C3DBFA82D340B3C50F4DD45E14FE785",
+    "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFileStream?unid=7C3DBFA82D340B3C50F4DD45E14FE785",
+    "final_url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFileStream?unid=7C3DBFA82D340B3C50F4DD45E14FE785",
+    "status": 200,
+    "content_type": "application/octet-stream;charset=UTF-8",
+    "bytes": 17288,
+    "sha256": "31b98bc4a0ac254e1d819aed66f9d1d211c1aca3b3feea8c258c79a88b2a926e",
+    "retrieved_at": "2026-10-30T16:27:26.098446+00:00",
+    "method": "Native own format control clicked; exact observed public endpoint retrieval with normal TLS and no auth/cookie/signature headers replayed"
+  }
+]

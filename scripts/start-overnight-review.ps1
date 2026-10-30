@@ -1,6 +1,8 @@
-param([Parameter(Mandatory=$true)][ValidateSet('api','web')][string]$Service,[switch]$Restart)
+param([Parameter(Mandatory=$true)][ValidateSet('api','web')][string]$Service,[switch]$Restart,[ValidateSet('F','G','H')][string]$Candidate='F')
 $ErrorActionPreference='Stop'
 $root=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
+$candidateDb=Join-Path $root ('.runtime/overnight-gap-closure-20261030/review/'+$Candidate+'-guides.sqlite')
+if($Service -eq 'api' -and $Candidate -ne 'F' -and !(Test-Path -LiteralPath $candidateDb -PathType Leaf)){throw 'Prepare the independently approved candidate database first; no process was changed.'}
 $port=if($Service -eq 'api'){8003}else{5176}
 $listeners=@(Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue)
 if($listeners.Count){
@@ -22,7 +24,8 @@ if($listeners.Count){
 $env:PYTHONUTF8='1'
 $env:LABOURLAWYER_DATA_DIR=Join-Path $root '.runtime/overnight-gap-closure-20261030/review/private'
 $env:LABOURLAWYER_AUTH_DB=Join-Path $env:LABOURLAWYER_DATA_DIR 'auth.sqlite3'
-$env:LABOURLAWYER_REGIONAL_DB=Join-Path $root '.runtime/overnight-gap-closure-20261030/review/F-guides.sqlite'
+$env:LABOURLAWYER_REGIONAL_DB=$candidateDb
+$env:LABOURLAWYER_REVIEW_CANDIDATE=$Candidate
 $env:LABOURLAWYER_DIRECTORY_DB=Join-Path $root '.runtime/overnight-gap-closure-20261030/review/public/regional-directory.sqlite'
 $env:LABOURLAWYER_CORS_ORIGINS='http://127.0.0.1:5176'
 $env:LABOURLAWYER_LLM_MODEL='disabled-for-candidate-review'
@@ -42,12 +45,16 @@ from contextlib import closing
 root=Path.cwd();sys.path.insert(0,str(root/'backend'))
 from public_seed import bootstrap_public_data
 out=root/'.runtime/overnight-gap-closure-20261030/review';out.mkdir(parents=True,exist_ok=True)
-bootstrap_public_data(root,data_dir=out/'public')
-source=root/'reports/overnight-gap-closure-20261030/localities/jiangsu-f/candidate-v2/guides.sqlite'
 destination=Path(os.environ['LABOURLAWYER_REGIONAL_DB'])
-if not source.is_file():raise RuntimeError('Verified F candidate database missing')
-if not destination.exists():
- with closing(sqlite3.connect(source.as_uri()+'?mode=ro',uri=True)) as a,closing(sqlite3.connect(destination)) as b:a.backup(b)
+if os.environ['LABOURLAWYER_REVIEW_CANDIDATE'] in {'G','H'}:
+ if not destination.is_file():raise RuntimeError('Prepared own candidate database missing')
+ if not Path(os.environ['LABOURLAWYER_DIRECTORY_DB']).is_file():raise RuntimeError('Prepared review directory missing')
+else:
+ bootstrap_public_data(root,data_dir=out/'public')
+ source=root/'reports/overnight-gap-closure-20261030/localities/jiangsu-f/candidate-v2/guides.sqlite'
+ if not source.is_file():raise RuntimeError('Verified F candidate database missing')
+ if not destination.exists():
+  with closing(sqlite3.connect(source.as_uri()+'?mode=ro',uri=True)) as a,closing(sqlite3.connect(destination)) as b:a.backup(b)
 from auth_store import AuthStore
 store=AuthStore()
 if not store.list_users():

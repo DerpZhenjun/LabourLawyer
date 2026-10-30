@@ -1,0 +1,168 @@
+{
+  "region_code": "320583",
+  "source_id": "d39444ab7f4bcaea2ea91473",
+  "source_freeze_sha256": "daa6ecda9f78f398c196ba579a4d870591e02a328aca3d5665ae9177151f2c6d",
+  "reviewed_candidate_sha256": "7d21f1f1407be89c7805c7a64ccd762bcff655a5cb9546f1e74e23fbc57cfdbf",
+  "independent_root_offline_review": "PASS_FOR_FOUR_FICTIONAL_FIXTURES",
+  "generated_pages": 11,
+  "original_pages": 7,
+  "stage_approved": false,
+  "can_publish": false,
+  "files": [
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/original-word/320583-official-application-1.png",
+      "sha256": "ea4119d9be4166bbafec78fc4d54de943dee69b99a8d62451364a933da2d70a1",
+      "bytes": 164817
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/original-word/320583-official-application-2.png",
+      "sha256": "2e6e6f716bd020c7bd90ed9c8abfeb794e0695be8ca9fd0884825262225899b2",
+      "bytes": 11422
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/original-word/320583-official-application-3.png",
+      "sha256": "88999624ddfd0e6376ccb782f5829fd80a625cb348b5db2f638c75415ebd24ba",
+      "bytes": 110584
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/original-word/320583-official-application-4.png",
+      "sha256": "9d583f6f65466ee9455858604841d0ac4c07be2ab485655b3fa78e19eca966de",
+      "bytes": 165353
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/original-word/320583-official-application-5.png",
+      "sha256": "116a9cad24b7743cc82aab0ee7d530ef88583fef0f7c62783a9bbedfc4c9cd5c",
+      "bytes": 11416
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/original-word/320583-official-application-6.png",
+      "sha256": "69c5a163c24751af9beaa78b53c21dc997b822ef890c43addab5c684252519e4",
+      "bytes": 111044
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/original-word/320583-official-evidence-1.png",
+      "sha256": "4c23c5d2ca1f2b71d46560d686549167d17c045327265aceb1d4e826a0df2a74",
+      "bytes": 56686
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/reviewed-implementation/kunshan_candidate.py",
+      "sha256": "7d21f1f1407be89c7805c7a64ccd762bcff655a5cb9546f1e74e23fbc57cfdbf",
+      "bytes": 14494
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/reviewed-implementation/test_kunshan_candidate.py",
+      "sha256": "bba02e9b5e16f6cce2aea3289feee3b6fe7b27166786ede19efdb835735e0984",
+      "bytes": 7600
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/ROOT-OFFLINE-WORD-REVIEW.json",
+      "sha256": "20f75755390b45ba874b540f61bff4a767c44638cf089de8bfe51411ddd88ea3",
+      "bytes": 1764
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-long.docx",
+      "sha256": "90de83884711a744b442081620bb24280eb4705c0b82b69d0eddfca50b8892c3",
+      "bytes": 12634
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-long.docx-Word-1.png",
+      "sha256": "a73ae42d4703af13d800f8fa9f6c5c1f89ac5278a0c4eb73fa9740919c41f975",
+      "bytes": 189706
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-long.docx-Word-2.png",
+      "sha256": "b747494158fe2d57bbb3476304e48a0438f3a72baaa8e4ca93b137b272b7ae61",
+      "bytes": 369322
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-long.docx-Word-3.png",
+      "sha256": "9ebed551c131bd25eadf36039d1c29de14b4154c4343abc40e963214b8170a81",
+      "bytes": 299552
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-long.docx-Word-4.png",
+      "sha256": "836842e28526af02c351ab2e03492ce1fdd0ed5ec9d9ff026fc0c3ba128bb432",
+      "bytes": 63806
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-long.docx.pdf",
+      "sha256": "dfbfe552bab5f6f78ebaa2ac535718bb56e165ce40d838712d6ab978725ebcaf",
+      "bytes": 182935
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-normal.docx",
+      "sha256": "ffa1d192889500c2d08fadc19755a86308b5cbe659b7fbce4a4774a35c34055a",
+      "bytes": 12605
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-normal.docx-Word-1.png",
+      "sha256": "0bbfab493d08fd5d8a2275d5d4b6373763493a19d374e21849379c047c8fbdbd",
+      "bytes": 166075
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-normal.docx-Word-2.png",
+      "sha256": "a1368296b9ea8273d9925c5cd30b7b902f069e519e745e2aa396efb24ffe0636",
+      "bytes": 80077
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/application-normal.docx.pdf",
+      "sha256": "62b82ea5a44500e87a5ca52a9e34eedd9497d136b23743ca804591434949cf24",
+      "bytes": 181666
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/candidate-guide.json",
+      "sha256": "b4668bbb77541a876317cc6cf6e7ba5b1f834f7252492835ffee31795080a7cb",
+      "bytes": 10823
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-long.docx",
+      "sha256": "653fdcbf2d9e65652ef1860ca99fd83c1446410388b436ffafa2274995faec7a",
+      "bytes": 12026
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-long.docx-Word-1.png",
+      "sha256": "6b31dc762ab09ec4261fd5ad700853cb689cc9a252582bd5c93bf6f1187a4971",
+      "bytes": 170616
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-long.docx-Word-2.png",
+      "sha256": "67707f50351fe8f779cf0332ded1ba30e390191831d583f65e2568156b5fcea3",
+      "bytes": 192984
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-long.docx-Word-3.png",
+      "sha256": "96962d22a7447235bfa9997663408e5ddedcf427a49b836892b74aed78b86b38",
+      "bytes": 193371
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-long.docx-Word-4.png",
+      "sha256": "6d1495db5a32b5a6ad3374655c8ef4fb9a597e722c5c93197dd17d29c942662c",
+      "bytes": 61224
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-long.docx.pdf",
+      "sha256": "8c812112265cfcbbb808931da85180886269c7f7ced9eaa738fd0a0097aa1755",
+      "bytes": 247132
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-normal.docx",
+      "sha256": "93e8655ec9dcdd7a953d8b5f71fe97b9c4dbba9fbddd279a9717af2411158422",
+      "bytes": 11526
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-normal.docx-Word-1.png",
+      "sha256": "10e9309798401b048ade3dc367fd9ae3dff6f5acaae2de58425223b132818d22",
+      "bytes": 50743
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/evidence-normal.docx.pdf",
+      "sha256": "3d017bc349cfcc8dd65eaf81e0e9e87d95da280cf9809a120bfac4141b77353a",
+      "bytes": 214813
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/integration-qa-v1/word/fictional-fixtures.json",
+      "sha256": "6a6582b330cbed1d9c28c8212aa287d4827c53f8fcdc19f3c1216aec7ca55a64",
+      "bytes": 14339
+    }
+  ]
+}

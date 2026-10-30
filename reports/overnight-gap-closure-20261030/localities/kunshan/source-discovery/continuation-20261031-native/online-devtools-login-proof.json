@@ -1,0 +1,76 @@
+{
+  "captured_at": "2026-10-30T16:13:30.836Z",
+  "origin": "https://www.jszwfw.gov.cn",
+  "path": "/jsjis/front/login.do",
+  "title": "用户登录",
+  "login_inputs": [
+    {
+      "type": "text",
+      "placeholder": "请输入您的身份证号码/手机号码/用户名",
+      "empty": true
+    },
+    {
+      "type": "password",
+      "placeholder": "请输入密码",
+      "empty": true
+    },
+    {
+      "type": "text",
+      "placeholder": "请输入验证码,验证码不区分大小写",
+      "empty": true
+    },
+    {
+      "type": "text",
+      "placeholder": "请输入手机账号",
+      "empty": true
+    },
+    {
+      "type": "text",
+      "placeholder": "请输入验证码",
+      "empty": true
+    },
+    {
+      "type": "text",
+      "placeholder": "请输入手机验证码",
+      "empty": true
+    },
+    {
+      "type": "text",
+      "placeholder": "请输入登录名",
+      "empty": true
+    },
+    {
+      "type": "password",
+      "placeholder": "请输入密码",
+      "empty": true
+    },
+    {
+      "type": "text",
+      "placeholder": "请输入验证码,验证码不区分大小写",
+      "empty": true
+    },
+    {
+      "type": "text",
+      "placeholder": "请输入统一社会信用代码",
+      "empty": true
+    },
+    {
+      "type": "text",
+      "placeholder": "请输入手机号",
+      "empty": true
+    },
+    {
+      "type": "text",
+      "placeholder": "请输入验证码",
+      "empty": true
+    },
+    {
+      "type": "text",
+      "placeholder": "请输入手机验证码",
+      "empty": true
+    }
+  ],
+  "credentials_entered": false,
+  "captcha_solved": false,
+  "application_submitted": false
+}

@@ -32,7 +32,9 @@ class ChunanSeedPublicationTests(unittest.TestCase):
             target = root / relative; target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(ROOT / relative, target)
         public = root / 'data/public-regions'
-        historical = [g for g in json.loads((ROOT / 'data/public-regions/guides.json').read_bytes()) if g['region_code'] not in {'320581', '320582'}]
+        # Reconstruct the exact approved historical prefix, not "everything
+        # except F": later append-only releases legitimately add other places.
+        historical = json.loads((ROOT / 'data/public-regions/guides.json').read_bytes())[:203]
         historical_bytes = (json.dumps(historical, ensure_ascii=False, indent=2) + '\n').encode()
         self.assertEqual(len(historical), 203)
         self.assertEqual(sha256(historical_bytes).hexdigest(), '58f42da0707a1a85a9923c212c36a4cc57aa0794a046ca8e3769f6801af8bc4c', 'Historical Chunan publication fixture must retain the exact approved203 prefix')

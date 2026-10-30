@@ -1,0 +1,719 @@
+{
+  "started_at": "2026-10-30T17:23:17.098268+00:00",
+  "scope": "isolated_G_candidate_v2",
+  "source_id": "d39444ab7f4bcaea2ea91473",
+  "version": 2,
+  "screenshots": 0,
+  "model_calls": 0,
+  "downloads": [
+    {
+      "kind": "application",
+      "mode": "filled",
+      "file": "application-filled.docx",
+      "bytes": 12624,
+      "sha256": "e557e20ea479363165256f03df45590b9f397217d527e4ab4f580d51d14d72db",
+      "suggested_filename": "昆山市-仲裁申请书-空白表格填写.docx",
+      "browser_download_completed": true,
+      "zip_crc": "PASS"
+    },
+    {
+      "kind": "application",
+      "mode": "blank",
+      "file": "application-blank.docx",
+      "bytes": 12672,
+      "sha256": "1283fa4f6efa123005e33f1fd3917424a7f272e88f7dc016c9d8fa0da30a2c06",
+      "suggested_filename": "昆山市-仲裁申请书-空白表格填写.docx",
+      "browser_download_completed": true,
+      "zip_crc": "PASS"
+    },
+    {
+      "kind": "evidence",
+      "mode": "filled",
+      "file": "evidence-filled.docx",
+      "bytes": 11522,
+      "sha256": "c2ebf5a21d490a2bc5a356fc83dec3cb9f9b6ca4f39135a32cf575deffd15cdc",
+      "suggested_filename": "昆山市-证据清单-空白表格填写.docx",
+      "browser_download_completed": true,
+      "zip_crc": "PASS"
+    },
+    {
+      "kind": "evidence",
+      "mode": "blank",
+      "file": "evidence-blank.docx",
+      "bytes": 11460,
+      "sha256": "2aad9b24d3943e98f358aaa4d18e667c672253414dc1c3899bfdf37479a7e7ba",
+      "suggested_filename": "昆山市-证据清单-空白表格填写.docx",
+      "browser_download_completed": true,
+      "zip_crc": "PASS"
+    }
+  ],
+  "posts": [
+    {
+      "url": "http://127.0.0.1:8003/api/regional-guides/generate",
+      "data": {
+        "province": "jiangsu",
+        "city": "苏州市",
+        "district": "昆山市",
+        "source_id": "d39444ab7f4bcaea2ea91473",
+        "version": 2,
+        "template_id": "3c17b2ea-434e-4b29-8fe4-40e88ad11c57",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "2fbca4e394d9badfc322e14f115fec916ac0186cbae36339dee9b4f37bbdf68f",
+        "data": {
+          "applicantName": "陈虚构",
+          "birthDate": "",
+          "gender": "",
+          "idNumber": "",
+          "idAddress": "虚构示例路一号",
+          "otherDocumentType": "",
+          "otherDocumentNumber": "",
+          "applicantMailingAddress": "",
+          "phone": "",
+          "acceptMediation": "",
+          "legalAid": "",
+          "respondentName": "虚构青禾有限公司",
+          "respondentType": "",
+          "registeredAddress": "虚构示例路二号",
+          "socialCreditCode": "",
+          "legalRepName": "",
+          "legalRepPosition": "",
+          "departmentHead": "",
+          "departmentHeadPosition": "",
+          "mailingAddress": "",
+          "companyContact": "",
+          "companyContactPhone": "",
+          "committeeName": "",
+          "applicationDate": "",
+          "copyCount": "",
+          "evidenceCopyCount": "",
+          "requests": [
+            "请求支付虚构拖欠工资3000元。"
+          ],
+          "factsReason": "以下全部为软件演示的虚构情况。虚构单位拖欠示例工资3000元，双方协商未果，故提出上述请求。"
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8003/api/regional-guides/generate",
+      "data": {
+        "province": "jiangsu",
+        "city": "苏州市",
+        "district": "昆山市",
+        "source_id": "d39444ab7f4bcaea2ea91473",
+        "version": 2,
+        "template_id": "3c17b2ea-434e-4b29-8fe4-40e88ad11c57",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "2fbca4e394d9badfc322e14f115fec916ac0186cbae36339dee9b4f37bbdf68f",
+        "data": {
+          "applicantName": "",
+          "birthDate": "",
+          "gender": "",
+          "idNumber": "",
+          "idAddress": "",
+          "otherDocumentType": "",
+          "otherDocumentNumber": "",
+          "applicantMailingAddress": "",
+          "phone": "",
+          "acceptMediation": "",
+          "legalAid": "",
+          "respondentName": "",
+          "respondentType": "",
+          "registeredAddress": "",
+          "socialCreditCode": "",
+          "legalRepName": "",
+          "legalRepPosition": "",
+          "departmentHead": "",
+          "departmentHeadPosition": "",
+          "mailingAddress": "",
+          "companyContact": "",
+          "companyContactPhone": "",
+          "committeeName": "",
+          "applicationDate": "",
+          "copyCount": "",
+          "evidenceCopyCount": "",
+          "requests": [
+            ""
+          ],
+          "factsReason": ""
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8003/api/regional-guides/generate",
+      "data": {
+        "province": "jiangsu",
+        "city": "苏州市",
+        "district": "昆山市",
+        "source_id": "d39444ab7f4bcaea2ea91473",
+        "version": 2,
+        "template_id": "de3a0ee9-0827-4f44-b9ad-ba05010a03d9",
+        "kind": "evidence",
+        "mode": "blank",
+        "contract_id": "96c72ff323689ee596e03093ed45657aeb34f899ed1cd6cc00311b6d132518a0",
+        "data": {
+          "committeeName": "",
+          "caseNumber": "",
+          "submitDate": "",
+          "evidenceList": [
+            {
+              "name": "虚构劳动合同",
+              "source": "虚构示例：本人保存",
+              "purpose": "虚构示例：说明双方劳动关系。",
+              "originalType": "复印件",
+              "pageCount": "3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8003/api/regional-guides/generate",
+      "data": {
+        "province": "jiangsu",
+        "city": "苏州市",
+        "district": "昆山市",
+        "source_id": "d39444ab7f4bcaea2ea91473",
+        "version": 2,
+        "template_id": "de3a0ee9-0827-4f44-b9ad-ba05010a03d9",
+        "kind": "evidence",
+        "mode": "blank",
+        "contract_id": "96c72ff323689ee596e03093ed45657aeb34f899ed1cd6cc00311b6d132518a0",
+        "data": {
+          "committeeName": "",
+          "caseNumber": "",
+          "submitDate": "",
+          "evidenceList": [
+            {
+              "name": "",
+              "source": "",
+              "purpose": "",
+              "originalType": "",
+              "pageCount": ""
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "viewports": [
+    {
+      "width": 375,
+      "scrollWidth": 375,
+      "controls": [
+        {
+          "left": 16,
+          "right": 359,
+          "width": 343
+        },
+        {
+          "left": 16,
+          "right": 359,
+          "width": 343
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 139,
+          "width": 102
+        },
+        {
+          "left": 37,
+          "right": 169,
+          "width": 132
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "controls": [
+        {
+          "left": 32,
+          "right": 164,
+          "width": 132
+        },
+        {
+          "left": 176,
+          "right": 308,
+          "width": 132
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 159,
+          "width": 102
+        },
+        {
+          "left": 57,
+          "right": 189,
+          "width": 132
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 519,
+          "right": 711,
+          "width": 192
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "controls": [
+        {
+          "left": 140,
+          "right": 272,
+          "width": 132
+        },
+        {
+          "left": 284,
+          "right": 416,
+          "width": 132
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 275,
+          "width": 102
+        },
+        {
+          "left": 173,
+          "right": 305,
+          "width": 132
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 1075,
+          "right": 1267,
+          "width": 192
+        }
+      ]
+    }
+  ],
+  "console_errors": [],
+  "page_errors": [],
+  "finished_at": "2026-10-30T17:23:36.990461+00:00",
+  "status": "PASS"
+}

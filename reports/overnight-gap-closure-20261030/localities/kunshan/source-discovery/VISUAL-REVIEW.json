@@ -1,0 +1,57 @@
+{
+  "region_code": "320583",
+  "source_id": "d39444ab7f4bcaea2ea91473",
+  "scope": "own original blank documents only; no filled adapter or generation capability",
+  "status": "PASS original pages individually viewed",
+  "pages": {
+    "application": 6,
+    "evidence": 1
+  },
+  "worker_and_employer_original_sections_viewed": true,
+  "observations": [
+    "Worker and employer original sections independently inspected;118paragraphs, no application tables.",
+    "Evidence original has9paragraphs and13rows by6columns, with submitter and recipient signatures blank.",
+    "Own source files and own annex identities obtained from Kunshan official guide; equal bytes never imply another region authority."
+  ],
+  "originals_unchanged": true,
+  "model_calls": 0,
+  "can_generate": false,
+  "published": false,
+  "files": [
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/word/320583-official-application-1.png",
+      "sha256": "ea4119d9be4166bbafec78fc4d54de943dee69b99a8d62451364a933da2d70a1",
+      "bytes": 164817
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/word/320583-official-application-2.png",
+      "sha256": "2e6e6f716bd020c7bd90ed9c8abfeb794e0695be8ca9fd0884825262225899b2",
+      "bytes": 11422
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/word/320583-official-application-3.png",
+      "sha256": "88999624ddfd0e6376ccb782f5829fd80a625cb348b5db2f638c75415ebd24ba",
+      "bytes": 110584
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/word/320583-official-application-4.png",
+      "sha256": "9d583f6f65466ee9455858604841d0ac4c07be2ab485655b3fa78e19eca966de",
+      "bytes": 165353
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/word/320583-official-application-5.png",
+      "sha256": "116a9cad24b7743cc82aab0ee7d530ef88583fef0f7c62783a9bbedfc4c9cd5c",
+      "bytes": 11416
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/word/320583-official-application-6.png",
+      "sha256": "69c5a163c24751af9beaa78b53c21dc997b822ef890c43addab5c684252519e4",
+      "bytes": 111044
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/kunshan/word/320583-official-evidence-1.png",
+      "sha256": "4c23c5d2ca1f2b71d46560d686549167d17c045327265aceb1d4e826a0df2a74",
+      "bytes": 56686
+    }
+  ]
+}

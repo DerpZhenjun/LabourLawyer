@@ -37,6 +37,10 @@ TESTS = (
     'test_jiangsu_oct30f_dispatch',
     'test_jiangsu_oct30f_publication',
     'test_jiangsu_f_seed_publication',
+    'test_jiangsu_oct31g',
+    'test_kunshan_g_seed_publication',
+    'test_fujian_oct31h',
+    'test_fujian_oct31h_dispatch',
     'test_service_capabilities',
     'test_linux_guide_collector',
     'test_tls_deployment.TLSDeploymentTests',
@@ -51,6 +55,8 @@ TESTS = (
 NODE_FIXTURES = {
     (ROOT / 'scripts/test-document-clients.cjs').resolve(),
     (ROOT / 'scripts/export_document_examples.mjs').resolve(),
+    (ROOT / 'scripts/test-kunshan-guide-wire.mjs').resolve(),
+    (ROOT / 'scripts/test-gulou-guide-wire.mjs').resolve(),
 }
 OFFLINE_EXCLUSIONS = {
     'test_linux_guide_collector.CollectorTests.test_os_worker_lock_rejects_second_process_and_releases_on_exit':
@@ -93,7 +99,7 @@ def install_guard(sandbox):
                            and isinstance(argv, (list, tuple)) and len(argv) == 2
                            and Path(argv[1]).resolve() in NODE_FIXTURES)
             if not allowed:
-                raise RuntimeError('CI subprocess is outside the two offline Node fixtures')
+                raise RuntimeError('CI subprocess is outside the named offline Node fixtures')
     sys.addaudithook(audit)
 
 

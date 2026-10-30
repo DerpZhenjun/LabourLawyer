@@ -37,6 +37,10 @@ from regional_zhejiang_chunan_oct30 import (with_capabilities as with_chunan_cap
 from regional_jiangsu_oct30f import (with_capabilities as with_jiangsu_f_capabilities,
     checked_adapter as checked_jiangsu_f_adapter, ADAPTER as JIANGSU_F_ADAPTER,
     SUPPORTED as JIANGSU_F_CODES)
+from regional_jiangsu_oct31g import (with_capabilities as with_jiangsu_g_capabilities,
+    checked_adapter as checked_jiangsu_g_adapter, ADAPTER as JIANGSU_G_ADAPTER)
+from regional_fujian_oct31h import (with_capabilities as with_fujian_h_capabilities,
+    checked_adapter as checked_fujian_h_adapter, ADAPTER as FUJIAN_H_ADAPTER)
 
 def jiangsu_e_binding(guide,template,root=None):
     try:return jiangsu_e_contract(guide,template,root=root)['kind']
@@ -263,6 +267,10 @@ def reference_binding(guide, template):
 
 def with_reference_capabilities(guide,root=None):
     """Publish platform adaptation separately from the retained official content."""
+    if guide.get('province') == 'fujian' and guide.get('region_code') == '350102':
+        return with_fujian_h_capabilities(guide, root=root)
+    if guide.get('province') == 'jiangsu' and guide.get('region_code') == '320583':
+        return with_jiangsu_g_capabilities(guide, root=root)
     if guide.get('province') == 'jiangsu' and guide.get('region_code') in JIANGSU_F_CODES:
         return with_jiangsu_f_capabilities(guide, root=root)
     if guide.get('province') == 'zhejiang' and guide.get('region_code') == '330127':
@@ -324,6 +332,10 @@ def with_reference_capabilities(guide,root=None):
 
 
 def checked_reference_adapter(guide, template, kind,root=None):
+    if template.get('adapter') == FUJIAN_H_ADAPTER:
+        return checked_fujian_h_adapter(guide, template, kind, root=root)
+    if template.get('adapter') == JIANGSU_G_ADAPTER:
+        return checked_jiangsu_g_adapter(guide, template, kind, root=root)
     if template.get('adapter') == JIANGSU_F_ADAPTER:
         return checked_jiangsu_f_adapter(guide, template, kind, root=root)
     if template.get('adapter') == CHUNAN_ADAPTER:

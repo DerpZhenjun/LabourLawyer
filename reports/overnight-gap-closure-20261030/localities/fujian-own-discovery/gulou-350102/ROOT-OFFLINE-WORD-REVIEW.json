@@ -1,0 +1,32 @@
+{
+  "scope": "Independent root offline review only; no stage/publication capability",
+  "verified_at": "2026-10-30T17:15:25.514109+00:00",
+  "region_code": "350102",
+  "source_id": "3e2246aa2a534d2b37f6c6c5",
+  "source_freeze_sha256": "6aa0a44017bf60eb39e07f441e31676bf88716b5f69722188c9258ff5e2efc15",
+  "source_pinned_files_verified": 24,
+  "candidate_manifest_sha256": "e6e67e25332552cc468380c746203fa4fee855761ddbe16871e139c93c880781",
+  "candidate_pinned_files_verified": 67,
+  "candidate_sha256": "c380538bfc3aefb459c001fd9bbc89b0eb10b336b6fc2e821f7d3398a25889a1",
+  "fresh_tests": {
+    "run": 6,
+    "passed": 6,
+    "seconds": 0.224
+  },
+  "all_png_pages_independently_viewed": 25,
+  "findings": [
+    "Own original application2pages, evidence1 and scanning-reference1 all read. Original blank second application page preserved; reference instructions not a generation template.",
+    "Normal application2 including own blank second page; source requests/facts/committee and blank signatures/date coherent. Normal evidence1 contains exactly one entered row and correct1group/2pages total.",
+    "Stress application3 pages flows with coherent closing/signature block and no clipping. Stress evidence15 pages repeats own six-column header; all15 rows stay whole, final15groups/30pages total and blank submitter/date visible. Retained own typography makes long rows use one page each; no compact-print claim."
+  ],
+  "visual_result": "PASS_FOR_THESE_FOUR_FICTIONAL_FIXTURES",
+  "guide_status": "partial",
+  "sample_contents_verified": false,
+  "can_generate": false,
+  "published": false,
+  "remaining": [
+    "source-bound shared API/contracts and blank-mode integration",
+    "strict client parser replay and native candidate browser generation/download",
+    "separate stage and final approval receipts before seed/live publication"
+  ]
+}

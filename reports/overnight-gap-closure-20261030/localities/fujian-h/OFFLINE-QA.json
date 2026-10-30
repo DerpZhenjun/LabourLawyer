@@ -1,0 +1,53 @@
+{
+  "scope": "Selective offline Word QA only, not stage or browser acceptance",
+  "source_pinned_files_verified": 24,
+  "source_freeze_sha256": "6aa0a44017bf60eb39e07f441e31676bf88716b5f69722188c9258ff5e2efc15",
+  "offline_root_review": {
+    "receipt": "reports/overnight-gap-closure-20261030/localities/fujian-own-discovery/gulou-350102/ROOT-OFFLINE-WORD-REVIEW.json",
+    "sha256": "33f301242bba00761cc5aba26c35643f39844fab7b2c21719029b8de4b17f4c3"
+  },
+  "generated_word_count": 4,
+  "generated_png_pages": 21,
+  "original_pages_retained_in_existing_source_freeze": 4,
+  "root_reviewed_document_comparisons": [
+    {
+      "name": "normal-application",
+      "all_zip_members_identical_to_root_reviewed_document": true,
+      "sha256": "9389b65ae59fcdbdcc79eb9f0a5511b92b0b816e87173199ca6a5939f0c5fdc1"
+    },
+    {
+      "name": "normal-evidence",
+      "all_zip_members_identical_to_root_reviewed_document": true,
+      "sha256": "39e64186bfcdf92619dbd71bf0a8dc7867cc0fc1a01d8dbe5295d82344fe7f59"
+    },
+    {
+      "name": "stress-application",
+      "all_zip_members_identical_to_root_reviewed_document": true,
+      "sha256": "8ba5247934628fbd5d48ec1f0671d5790f485d4992aaefd24fb69a186289491b"
+    },
+    {
+      "name": "stress-evidence",
+      "all_zip_members_identical_to_root_reviewed_document": true,
+      "sha256": "19f8a7fccb4d4c6c4fdfbd0df6f6e490f287fbf8eb0e4169744e22e20f6f836e"
+    }
+  ],
+  "provider_test_result": {
+    "scope": "provider source-only tests after fixed-script migration, before public Word manifest pin",
+    "tests": 9,
+    "passed": 9,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 8.086,
+    "browser_qa": false,
+    "publication_approved": false
+  },
+  "guide_status": "partial",
+  "sample_contents_verified": false,
+  "scanning_reference_is_generation_template": false,
+  "stage_approved": false,
+  "browser_qa": "NOT_RUN",
+  "can_publish": false,
+  "published": false,
+  "model_calls": 0
+}

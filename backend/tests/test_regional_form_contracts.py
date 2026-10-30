@@ -148,13 +148,16 @@ class RegionalFormContractTests(unittest.TestCase):
         self.assertFalse(c['policy']['capacity_is_official_requirement'])
         self.assertEqual(c['policy']['unknown_fields'],'reject')
 
-    def test_inventory_all_186_regions_366_document_pairs_have_explicit_profiles(self):
+    def test_entire_published_inventory_has_explicit_profiles(self):
         rows=json.loads((ROOT/'data/public-regions/guides.json').read_text(encoding='utf8'))
+        manifest=json.loads((ROOT/'data/public-regions/manifest.json').read_text(encoding='utf8'))
         active=[g for g in rows if any(t.get('can_generate') for t in g['templates'])]
         adapters={t['adapter'] for g in active for t in g['templates'] if t.get('can_generate')}
-        self.assertEqual(len(active),186)
+        self.assertEqual(len(rows),manifest['guides'])
+        self.assertEqual(len(active),manifest['generatable_localities'])
+        self.assertGreaterEqual(len(active),188)
         self.assertTrue(adapters.issubset(self.c.SUPPORTED_ADAPTERS))
-        self.assertEqual(sum(len(t['document_types']) for g in active for t in g['templates'] if t.get('can_generate')),366)
+        self.assertGreaterEqual(sum(len(t['document_types']) for g in active for t in g['templates'] if t.get('can_generate')),370)
 
     def test_http_contract_source_version_and_missing_template_failclosed(self):
         app=FastAPI();app.include_router(route.router,prefix='/api/regional-guides');client=TestClient(app);g=self.guide()
@@ -269,13 +272,16 @@ class RegionalFormContractTests(unittest.TestCase):
 
 
 class RegionalFormRealSourceAcceptanceTests(unittest.TestCase):
-    def test_all_186_regions_366_contract_bound_generations_from_temporary_store(self):
+    def test_entire_published_inventory_generates_from_bound_temporary_store(self):
         """Real fillers/own proofs; only the DB and response staging are local fixtures."""
         runtime=(ROOT/'.runtime').resolve();runtime.mkdir(exist_ok=True)
         started=time.perf_counter();records=[]
         snapshot=json.loads((ROOT/'data/public-regions/guides.json').read_text(encoding='utf8'))
         active=[g for g in snapshot if any(t.get('can_generate') for t in g['templates'])]
-        self.assertEqual(len(active),186)
+        manifest=json.loads((ROOT/'data/public-regions/manifest.json').read_text(encoding='utf8'))
+        self.assertEqual(len(snapshot),manifest['guides'])
+        self.assertEqual(len(active),manifest['generatable_localities'])
+        self.assertGreaterEqual(len(active),188)
         with tempfile.TemporaryDirectory(prefix='form-contract-http-',dir=runtime) as directory:
             temp_root=Path(directory).resolve();self.assertTrue(temp_root.is_relative_to(runtime))
             store=RegionalStore(temp_root/'regional-guides.sqlite')
@@ -291,7 +297,7 @@ class RegionalFormRealSourceAcceptanceTests(unittest.TestCase):
                 key=(row[1]['adapter'],row[2])
                 if key not in seen:typical.append(row);seen.add(key)
                 else:remaining.append(row)
-            self.assertEqual(len(typical),25);self.assertEqual(len(cases),366)
+            self.assertGreaterEqual(len(typical),27);self.assertGreaterEqual(len(cases),370)
             app=FastAPI();app.include_router(route.router,prefix='/api/regional-guides');client=TestClient(app)
             def stage_response(document,filename,background_tasks):
                 path=temp_root/('generated-'+str(len(records))+'.docx');document.save(path)
@@ -319,8 +325,11 @@ class RegionalFormRealSourceAcceptanceTests(unittest.TestCase):
                         'x_form_contract_id':response.headers.get('x-form-contract-id'),
                         'http_status':200,'zip_integrity':'PASS','document_xml':'PASS','bytes':len(response.content),
                         'sha256':hashlib.sha256(response.content).hexdigest()})
+        self.assertEqual(len(records),len(cases))
+        self.assertEqual({r['region_code'] for r in records},{g['region_code'] for g in active})
+        self.assertEqual(len({(r['region_code'],r['template_id'],r['kind']) for r in records}),len(cases))
         report={'status':'PASS','method':'in-process ASGI, real own-source checks and real document fillers',
-            'regions':186,'document_pairs':366,'typical_profiles_first':25,'seconds':round(time.perf_counter()-started,3),
+            'regions':len(active),'document_pairs':len(cases),'typical_profiles_first':len(typical),'seconds':round(time.perf_counter()-started,3),
             'version_scope':'Sequences belong only to a new temporary SQLite fixture, not live source versions.',
             'main_database_opened':False,'model_network_connections_allowed':False,'word_rendering':'NOT_RUN',
             'native_browser_generation':False,'records':records}
