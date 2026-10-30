@@ -1,5 +1,6 @@
 <template>
   <div class="page">
+    <p class="region-notice" role="status">此页的材料及日程示意尚未接入真实案件服务，仅作功能预览；不会读取其他账号案件，也不会上传或安排真实事项。</p>
     <div class="page-heading"><div><h1>时效与日程</h1><p>对仲裁时效、材料提交和开庭日期进行统一提醒。</p></div><button class="primary-action"><i class="fa-solid fa-plus"></i> 添加日程</button></div>
     <div class="deadline-grid">
       <section class="panel calendar"><div class="calendar-head"><button><i class="fa-solid fa-chevron-left"></i></button><h2>2026 年 9 月</h2><button><i class="fa-solid fa-chevron-right"></i></button></div><div class="week"><span v-for="d in ['一','二','三','四','五','六','日']" :key="d">周{{d}}</span></div><div class="days"><span v-for="d in 35" :key="d" :class="{muted:d<2||d>31,today:d===17,event:[19,22].includes(d),court:d===8}">{{ d===1?'31':d>31?d-31:d }}</span></div><div class="legend"><span><i class="red"></i>紧急节点</span><span><i class="teal"></i>材料任务</span><span><i class="navy"></i>开庭</span></div></section>

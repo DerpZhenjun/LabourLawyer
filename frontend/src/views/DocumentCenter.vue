@@ -55,6 +55,7 @@
 import {computed,ref,onMounted,onBeforeUnmount} from 'vue'
 import {RouterLink} from 'vue-router'
 import axios from 'axios'
+import {authorizationHeaders} from '@/api/http.ts'
 import {provinces} from '@/data/provinces'
 import {downloadDocument} from '@/composables/downloadDocument'
 import {parsePortalReports,parseAgentTasks,responseIdentifier,workspaceError} from '../../../packages/regional-contracts/src/workspace'
@@ -95,7 +96,7 @@ const startAgent=async(resume?:string|MouseEvent)=>{
   agentBusy.value=true;agentMessage.value='正在安排后台采集…'
   try{
     const payload=typeof resume==='string'?{resume}:agentProvince.value?{provinces:[agentProvince.value]}:{}
-    const {data}=await axios.post<unknown>(`${API_BASE}/api/portal-reports/openclaw-tasks`,payload,{timeout:15000})
+    const {data}=await axios.post<unknown>(`${API_BASE}/api/portal-reports/openclaw-tasks`,payload,{timeout:15000,headers:authorizationHeaders()})
     if(disposed)return
     agentMessage.value=`任务 ${responseIdentifier(data)} 已安排，可离开此页。`;await refreshAgent()
   }catch(error:unknown){if(!disposed){agentBusy.value=false;agentMessage.value=workspaceError(error,'OpenClaw 任务启动失败')}}
@@ -115,7 +116,7 @@ const refreshReports=async()=>{
 }
 const createReport=async()=>{
   reportMessage.value='正在开始采集…'
-  try{const {data}=await axios.post<unknown>(`${API_BASE}/api/portal-reports`,{vision:withVision.value});if(disposed)return;reportMessage.value=`报告编号：${responseIdentifier(data)}；可离开本页，后端会继续采集。`;await refreshReports()}
+  try{const {data}=await axios.post<unknown>(`${API_BASE}/api/portal-reports`,{vision:withVision.value},{headers:authorizationHeaders()});if(disposed)return;reportMessage.value=`报告编号：${responseIdentifier(data)}；可离开本页，后端会继续采集。`;await refreshReports()}
   catch(error:unknown){if(!disposed)reportMessage.value=workspaceError(error,'报告任务启动失败')}
 }
 const downloadReport=async(id:string,ai=false)=>{

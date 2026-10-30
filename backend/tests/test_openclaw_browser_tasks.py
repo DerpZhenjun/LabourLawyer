@@ -280,7 +280,15 @@ class BrowserRecoveryTests(unittest.TestCase):
         from fastapi import FastAPI
         from fastapi.testclient import TestClient
         from routes.portal_reports import router
+        from auth_dependencies import require_admin
+        from auth_store import Identity
         app=FastAPI();app.include_router(router,prefix='/api/portal-reports');client=TestClient(app)
+        # The public caller must be rejected before any collection job starts.
+        with patch.object(service,'start') as start:
+            self.assertEqual(client.post('/api/portal-reports/openclaw-tasks',json={'provinces':['tianjin']}).status_code,401)
+            start.assert_not_called()
+        # Isolate the existing input/job checks behind the new admin boundary.
+        app.dependency_overrides[require_admin]=lambda:Identity('fixture-admin','fixture-admin','admin')
         self.assertEqual(client.post('/api/portal-reports/openclaw-tasks',json={'provinces':['invalid']}).status_code,400)
         self.assertEqual(client.post('/api/portal-reports/openclaw-tasks',json={'provinces':[]}).status_code,400)
         self.assertEqual(client.get('/api/portal-reports/openclaw-tasks/bad').status_code,400)

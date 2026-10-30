@@ -19,7 +19,7 @@ if(process.argv.includes('--baseline-storage') || process.argv.includes('--stora
   globalThis.localStorage=storage
   if(process.argv.includes('--storage-getter-denied'))Object.defineProperty(globalThis,'localStorage',{get(){throw new Error('synthetic denied storage getter')},configurable:true})
   const api=await import(new URL('../frontend/src/composables/useWorkspace.js?storage-counterexample',import.meta.url))
-  const workspace=api.useWorkspace()
+  const workspace=api.createWorkspace(globalThis.localStorage)
   assert.equal(typeof workspace.state.cases[0].amount,'number','Untrusted saved case amounts must not reach numeric page rendering')
   assert.doesNotThrow(()=>workspace.totalAmount.value)
   assert.equal(storage.writes,0,'Reading invalid saved content must preserve its original bytes')
@@ -77,7 +77,7 @@ writeFileSync(goodFile,positive);writeFileSync(badFile,negative)
 const options={strict:true,noUncheckedIndexedAccess:true,exactOptionalPropertyTypes:true,noEmit:true,skipLibCheck:true,
   target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext,moduleResolution:ts.ModuleResolutionKind.Bundler,
   allowImportingTsExtensions:true,verbatimModuleSyntax:true,lib:['lib.es2023.d.ts','lib.dom.d.ts']}
-const diagnostics=file=>ts.getPreEmitDiagnostics(ts.createProgram([file],options)).filter(d=>d.category===ts.DiagnosticCategory.Error)
+const diagnostics=file=>ts.getPreEmitDiagnostics(ts.createProgram([file,path.join(root,'frontend/node_modules/vite/client.d.ts')],options)).filter(d=>d.category===ts.DiagnosticCategory.Error)
 const display=list=>list.map(d=>`${d.file?path.relative(root,d.file.fileName):'compiler'} TS${d.code}: ${ts.flattenDiagnosticMessageText(d.messageText,' ')}`).join('\n')
 assert.equal(diagnostics(goodFile).length,0,display(diagnostics(goodFile)))
 const bad=diagnostics(badFile),expected=new Set()
@@ -178,6 +178,7 @@ function component(file,{workspace,axios,downloads=[],route=vue.reactive({query:
     if(id==='vue')return vue
     if(id==='vue-router')return{RouterLink,useRoute:()=>route,useRouter:()=>router}
     if(id==='axios')return{__esModule:true,default:axios??{get:async()=>({data:{items:[],guides:[]}})}}
+    if(id.includes('api/http'))return{authorizationHeaders:()=>({})}
     if(id.includes('useWorkspace'))return{useWorkspace:()=>workspace}
     if(id.includes('downloadDocument'))return{downloadDocument:async(...args)=>{downloads.push(args)}}
     if(id.includes('data/provinces'))return{provinces:[{slug:'fiction',shortName:'虚构',name:'虚构省',hasApplication:true,hasEvidence:true,applicationRoute:'/fiction/app',evidenceRoute:'/fiction/evidence',note:'虚构',materialNote:'虚构',scope:'虚构'}]}

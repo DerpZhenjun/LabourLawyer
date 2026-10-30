@@ -1,5 +1,5 @@
 // Generated from registered FastAPI routes. Do not edit.
-// schema-sha256: bf63f1a167ddd7a734eb3d696482b94dd33a232e1f31155209465548d6b9fccb
+// schema-sha256: 7c4761b1b09ec04170393985e5bda55e1d91dd668096d3414d2ef2f53720071c
 export interface paths {
     "/api/ai/status": {
         parameters: {
@@ -29,6 +29,74 @@ export interface paths {
         put?: never;
         /** Ask */
         post: operations["ask_api_ask_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/auth/login": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Login */
+        post: operations["login_api_auth_login_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/auth/logout": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Logout */
+        post: operations["logout_api_auth_logout_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/auth/me": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Me */
+        get: operations["me_api_auth_me_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/auth/users": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Create User */
+        post: operations["create_user_api_auth_users_post"];
         delete?: never;
         options?: never;
         head?: never;
@@ -446,6 +514,19 @@ export interface components {
              */
             role: "user" | "assistant";
         };
+        /** CreateUserRequest */
+        CreateUserRequest: {
+            /** Password */
+            password: string;
+            /**
+             * Role
+             * @default user
+             * @enum {string}
+             */
+            role?: "user" | "admin";
+            /** Username */
+            username: string;
+        };
         /** DocumentFieldDefinition */
         DocumentFieldDefinition: {
             /** Label */
@@ -575,6 +656,26 @@ export interface components {
             /** Detail */
             detail?: components["schemas"]["ValidationError"][];
         };
+        /** LoginRequest */
+        LoginRequest: {
+            /** Password */
+            password: string;
+            /** Username */
+            username: string;
+        };
+        /** LoginResponse */
+        LoginResponse: {
+            /** Access Token */
+            access_token: string;
+            /** Expires At */
+            expires_at: number;
+            /**
+             * Token Type
+             * @constant
+             */
+            token_type: "bearer";
+            user: components["schemas"]["UserResponse"];
+        };
         /** ProvinceCatalogEntry */
         ProvinceCatalogEntry: {
             /** Documents */
@@ -618,6 +719,18 @@ export interface components {
             history?: components["schemas"]["ChatMessage"][];
             /** Question */
             question: string;
+        };
+        /** UserResponse */
+        UserResponse: {
+            /** Id */
+            id: string;
+            /**
+             * Role
+             * @enum {string}
+             */
+            role: "user" | "admin";
+            /** Username */
+            username: string;
         };
         /** ValidationError */
         ValidationError: {
@@ -677,6 +790,110 @@ export interface operations {
                 };
                 content: {
                     "text/plain": string;
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    login_api_auth_login_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["LoginRequest"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["LoginResponse"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    logout_api_auth_logout_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            204: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+        };
+    };
+    me_api_auth_me_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["UserResponse"];
+                };
+            };
+        };
+    };
+    create_user_api_auth_users_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["CreateUserRequest"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            201: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["UserResponse"];
                 };
             };
             /** @description Validation Error */

@@ -16,6 +16,8 @@ export type AIStatus = Pick<StatusWire, 'ready' | 'provider' | 'model' | 'local_
     message?: NonNullable<StatusWire['message']>;
     status?: NonNullable<StatusWire['status']>;
 };
+/** Explicit user-selected server. HTTP is limited to local/private preview networks. */
+export declare function normalizeServiceAddress(input: string): string;
 export declare function apiURL(base: string, path: string): string;
 export declare function assertAIStatus(raw: unknown): AIStatus;
 export declare const remoteReady: (s: AIStatus) => boolean;

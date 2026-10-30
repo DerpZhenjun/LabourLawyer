@@ -1,0 +1,10 @@
+{
+  "name": "labourlawyer-react-mount-fixture",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dev-only React runtime for mounting the actual digital chat page without WebGL or models.",
+  "devDependencies": {
+    "react": "18.2.0",
+    "react-test-renderer": "18.2.0"
+  }
+}

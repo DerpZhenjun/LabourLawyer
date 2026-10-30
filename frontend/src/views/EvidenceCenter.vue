@@ -1,5 +1,6 @@
 <template>
   <div class="page">
+    <p class="region-notice" role="status">此页的材料及日程示意尚未接入真实案件服务，仅作功能预览；不会读取其他账号案件，也不会上传或安排真实事项。</p>
     <p v-if="storageIssue" role="status">{{ storageIssue }}</p>
     <div class="page-heading"><div><h1>证据中心</h1><p>按“证据—事实—请求”建立关联，避免材料堆积却无法证明关键事实。</p></div><button class="primary-action"><i class="fa-solid fa-cloud-arrow-up"></i> 上传材料</button></div>
     <div class="evidence-layout">
@@ -25,8 +26,9 @@
   </div>
 </template>
 <script setup lang="ts">
+import {computed} from 'vue'
 import { useWorkspace } from '@/composables/useWorkspace'
-const { state, storageIssue } = useWorkspace(); const cases = state.cases.slice(0,3)
+const { state, storageIssue } = useWorkspace(); const cases = computed(()=>state.cases.slice(0,3))
 const files=[
   {name:'劳动合同.pdf',meta:'PDF · 2.4 MB · 今天 09:32',purpose:'证明劳动关系、岗位与工资标准',quality:'已校验',qualityClass:'good',type:'pdf',icon:'fa-solid fa-file-pdf'},
   {name:'2026年工资流水.xlsx',meta:'Excel · 184 KB · 今天 09:36',purpose:'证明工资支付情况与欠付金额',quality:'信息完整',qualityClass:'good',type:'xls',icon:'fa-solid fa-file-excel'},

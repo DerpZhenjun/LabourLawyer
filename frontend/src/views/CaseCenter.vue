@@ -13,7 +13,7 @@
       <button class="filter-button"><i class="fa-solid fa-sliders"></i> 筛选</button>
     </div>
     <div class="summary-strip">
-      <span><b>{{ filtered.length }}</b> 件案件</span><span><b>{{ activeCases.length }}</b> 件进行中</span><span><b>2</b> 件需优先处理</span>
+      <span><b>{{ filtered.length }}</b> 件案件</span><span><b>{{ activeCases.length }}</b> 件进行中</span><span><b>{{ state.cases.filter(item=>item.risk==='danger').length }}</b> 件需优先处理</span>
     </div>
     <div class="panel case-table-wrap">
       <table>
@@ -69,7 +69,7 @@ const filtered = computed(() => state.cases.filter(item => {
 }))
 watch(() => route.query.new, value => { if (value === '1') showCreate.value = true })
 const closeCreate = () => { showCreate.value = false; if (route.query.new) router.replace('/admin/cases') }
-const createCase = () => { const result=addCase(form);if(!result.ok){createError.value=result.error;return};createError.value='';closeCreate(); Object.assign(form, { title:'', client:'', employer:'', region:'浙江·杭州', amount:'', deadline:'' }) }
+const createCase = async () => { const result=await addCase(form);if(!result.ok){createError.value=result.error;return};createError.value='';closeCreate(); Object.assign(form, { title:'', client:'', employer:'', region:'浙江·杭州', amount:'', deadline:'' }) }
 </script>
 
 <style scoped>

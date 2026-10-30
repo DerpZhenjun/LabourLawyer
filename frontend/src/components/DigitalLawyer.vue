@@ -21,10 +21,11 @@
 </template>
 <script setup lang="ts">
 import { ref, nextTick, onMounted, onUnmounted } from 'vue'
+import {savedConnection} from '@/api/connection'
 import BrandMark from '@/components/BrandMark.vue'
 const emit=defineEmits<{close:[]}>()
 const dialog=ref<HTMLElement|null>(null), frame=ref<HTMLIFrameElement|null>(null), collapsed=ref(false)
-const digitalLawyerUrl=import.meta.env.VITE_DIGITAL_LAWYER_URL||'http://127.0.0.1:3000'
+const digitalLawyerUrl=savedConnection()?.digital||import.meta.env.VITE_DIGITAL_LAWYER_URL||'http://127.0.0.1:3000'
 const serviceOrigin=new URL(digitalLawyerUrl).origin
 const embeddedUrl=new URL(digitalLawyerUrl);embeddedUrl.searchParams.set('embed','1')
 const state=ref<'loading'|'ready'|'error'>('loading'),frameKey=ref(0)

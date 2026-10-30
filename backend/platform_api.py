@@ -10,13 +10,15 @@ import json
 import os
 import sqlite3
 import uuid
-from contextlib import contextmanager
+from contextlib import contextmanager, closing
 from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any, Iterator, Literal
 
-from fastapi import APIRouter, HTTPException, Query, status
+from fastapi import APIRouter, Depends, HTTPException, Query, status
 from pydantic import BaseModel, ConfigDict, Field
+from auth_dependencies import current_user
+from auth_store import Identity
 
 
 DATA_DIR = Path(os.getenv("LABOURLAWYER_DATA_DIR", Path(__file__).parent / "data"))
@@ -73,6 +75,15 @@ def init_database() -> None:
             CREATE INDEX IF NOT EXISTS idx_deadlines_due_at ON deadlines(due_at);
             """
         )
+        columns={row[1] for row in db.execute("PRAGMA table_info(cases)")}
+        if 'owner_user_id' not in columns:
+            # Consistent SQLite backup before the only structural legacy change.
+            backup=DB_PATH.with_name(DB_PATH.name+'.pre-ownership-'+uuid.uuid4().hex+'.sqlite3')
+            with closing(sqlite3.connect(DB_PATH)) as source, closing(sqlite3.connect(backup)) as destination:source.backup(destination)
+            db.execute('BEGIN IMMEDIATE')
+            if 'owner_user_id' not in {row[1] for row in db.execute("PRAGMA table_info(cases)")}:
+                db.execute('ALTER TABLE cases ADD COLUMN owner_user_id TEXT')
+        db.execute('CREATE INDEX IF NOT EXISTS idx_cases_owner ON cases(owner_user_id)')
 
 
 init_database()
@@ -120,19 +131,19 @@ def serialize_case(row: sqlite3.Row) -> dict[str, Any]:
 
 
 @router.get("/summary")
-def dashboard_summary() -> dict[str, Any]:
+def dashboard_summary(user: Identity = Depends(current_user)) -> dict[str, Any]:
     today = date.today().isoformat()
     with connection() as db:
-        active = db.execute("SELECT COUNT(*) FROM cases WHERE stage != '已结案'").fetchone()[0]
-        total = db.execute("SELECT COALESCE(SUM(dispute_amount), 0) FROM cases WHERE stage != '已结案'").fetchone()[0]
-        due = db.execute("SELECT COUNT(*) FROM deadlines WHERE completed = 0 AND date(due_at) >= date(?) AND date(due_at) <= date(?, '+7 day')", (today, today)).fetchone()[0]
+        active = db.execute("SELECT COUNT(*) FROM cases WHERE stage != '已结案' AND owner_user_id=?",(user.id,)).fetchone()[0]
+        total = db.execute("SELECT COALESCE(SUM(dispute_amount), 0) FROM cases WHERE stage != '已结案' AND owner_user_id=?",(user.id,)).fetchone()[0]
+        due = db.execute("SELECT COUNT(*) FROM deadlines d JOIN cases c ON c.id=d.case_id WHERE c.owner_user_id=? AND d.completed = 0 AND date(d.due_at) >= date(?) AND date(d.due_at) <= date(?, '+7 day')", (user.id,today, today)).fetchone()[0]
     return {"active_cases": active, "active_dispute_amount": total, "deadlines_next_7_days": due, "generated_at": utc_now()}
 
 
 @router.get("/cases")
-def list_cases(q: str = Query(default="", max_length=80), stage: CaseStage | None = None, limit: int = Query(default=50, ge=1, le=200)) -> dict[str, Any]:
-    clauses: list[str] = []
-    values: list[Any] = []
+def list_cases(q: str = Query(default="", max_length=80), stage: CaseStage | None = None, limit: int = Query(default=50, ge=1, le=200), user: Identity = Depends(current_user)) -> dict[str, Any]:
+    clauses: list[str] = ["owner_user_id=?"]
+    values: list[Any] = [user.id]
     if q:
         clauses.append("(id LIKE ? OR title LIKE ? OR client_name LIKE ? OR employer_name LIKE ?)")
         term = f"%{q}%"
@@ -147,58 +158,58 @@ def list_cases(q: str = Query(default="", max_length=80), stage: CaseStage | Non
 
 
 @router.post("/cases", status_code=status.HTTP_201_CREATED)
-def create_case(payload: CaseCreate) -> dict[str, Any]:
+def create_case(payload: CaseCreate, user: Identity = Depends(current_user)) -> dict[str, Any]:
     now = utc_now()
     case_id = f"PL-{date.today().year}-{uuid.uuid4().hex[:6].upper()}"
     with connection() as db:
         db.execute(
-            "INSERT INTO cases (id,title,client_name,employer_name,region,dispute_amount,deadline,summary,created_at,updated_at) VALUES (?,?,?,?,?,?,?,?,?,?)",
-            (case_id, payload.title, payload.client_name, payload.employer_name, payload.region, payload.dispute_amount, payload.deadline.isoformat() if payload.deadline else None, payload.summary, now, now),
+            "INSERT INTO cases (id,title,client_name,employer_name,region,dispute_amount,deadline,summary,created_at,updated_at,owner_user_id) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+            (case_id, payload.title, payload.client_name, payload.employer_name, payload.region, payload.dispute_amount, payload.deadline.isoformat() if payload.deadline else None, payload.summary, now, now, user.id),
         )
-        row = db.execute("SELECT * FROM cases WHERE id = ?", (case_id,)).fetchone()
+        row = db.execute("SELECT * FROM cases WHERE id = ? AND owner_user_id=?", (case_id,user.id)).fetchone()
     return serialize_case(row)
 
 
 @router.get("/cases/{case_id}")
-def get_case(case_id: str) -> dict[str, Any]:
+def get_case(case_id: str, user: Identity = Depends(current_user)) -> dict[str, Any]:
     with connection() as db:
-        row = db.execute("SELECT * FROM cases WHERE id = ?", (case_id,)).fetchone()
+        row = db.execute("SELECT * FROM cases WHERE id = ? AND owner_user_id=?", (case_id,user.id)).fetchone()
     if not row:
         raise HTTPException(status_code=404, detail="案件不存在")
     return serialize_case(row)
 
 
 @router.patch("/cases/{case_id}")
-def update_case(case_id: str, payload: CaseUpdate) -> dict[str, Any]:
+def update_case(case_id: str, payload: CaseUpdate, user: Identity = Depends(current_user)) -> dict[str, Any]:
     changes = payload.model_dump(exclude_unset=True)
     if "deadline" in changes and changes["deadline"] is not None:
         changes["deadline"] = changes["deadline"].isoformat()
     if not changes:
-        return get_case(case_id)
+        return get_case(case_id,user)
     changes["updated_at"] = utc_now()
     assignments = ", ".join(f"{key} = ?" for key in changes)
     with connection() as db:
-        result = db.execute(f"UPDATE cases SET {assignments} WHERE id = ?", [*changes.values(), case_id])
+        result = db.execute(f"UPDATE cases SET {assignments} WHERE id = ? AND owner_user_id=?", [*changes.values(), case_id,user.id])
         if result.rowcount == 0:
             raise HTTPException(status_code=404, detail="案件不存在")
-        row = db.execute("SELECT * FROM cases WHERE id = ?", (case_id,)).fetchone()
+        row = db.execute("SELECT * FROM cases WHERE id = ? AND owner_user_id=?", (case_id,user.id)).fetchone()
     return serialize_case(row)
 
 
 @router.get("/cases/{case_id}/deadlines")
-def list_deadlines(case_id: str) -> dict[str, Any]:
+def list_deadlines(case_id: str, user: Identity = Depends(current_user)) -> dict[str, Any]:
     with connection() as db:
-        if not db.execute("SELECT 1 FROM cases WHERE id = ?", (case_id,)).fetchone():
+        if not db.execute("SELECT 1 FROM cases WHERE id = ? AND owner_user_id=?", (case_id,user.id)).fetchone():
             raise HTTPException(status_code=404, detail="案件不存在")
         rows = db.execute("SELECT * FROM deadlines WHERE case_id = ? ORDER BY due_at", (case_id,)).fetchall()
     return {"items": [dict(row) for row in rows], "count": len(rows)}
 
 
 @router.post("/cases/{case_id}/deadlines", status_code=status.HTTP_201_CREATED)
-def create_deadline(case_id: str, payload: DeadlineCreate) -> dict[str, Any]:
+def create_deadline(case_id: str, payload: DeadlineCreate, user: Identity = Depends(current_user)) -> dict[str, Any]:
     deadline_id = uuid.uuid4().hex
     with connection() as db:
-        if not db.execute("SELECT 1 FROM cases WHERE id = ?", (case_id,)).fetchone():
+        if not db.execute("SELECT 1 FROM cases WHERE id = ? AND owner_user_id=?", (case_id,user.id)).fetchone():
             raise HTTPException(status_code=404, detail="案件不存在")
         db.execute("INSERT INTO deadlines (id,case_id,title,due_at,kind,created_at) VALUES (?,?,?,?,?,?)", (deadline_id, case_id, payload.title, payload.due_at.isoformat(), payload.kind, utc_now()))
         row = db.execute("SELECT * FROM deadlines WHERE id = ?", (deadline_id,)).fetchone()

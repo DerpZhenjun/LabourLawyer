@@ -11,11 +11,13 @@ from fastapi import FastAPI
 from routes.ai import router as ai_router
 from routes.province_documents import router as province_router
 from system_routes import router as system_router
+from routes.auth import router as auth_router
 
 
 def stable_openapi():
     application = FastAPI(title='LabourLawyer Stable Client API', version='1.0.0')
     application.include_router(system_router)
+    application.include_router(auth_router)
     application.include_router(ai_router)
     application.include_router(province_router, prefix='/api/province-documents')
     return application.openapi()

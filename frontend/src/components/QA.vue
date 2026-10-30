@@ -33,15 +33,16 @@ import BrandMark from '@/components/BrandMark.vue'
 import {useDialogFocus} from '@/composables/useDialogFocus'
 import {createAssistantChat} from '@/composables/useAssistantChat'
 import {assistantStatus,askAssistant} from '@/api/assistant'
-import {APIError} from '@/api/http'
+import {APIError,apiURL} from '@/api/http'
+import {currentUser} from '@/api/auth'
 import {remoteReady} from '../../../packages/client-contracts/src/index.ts'
 const props=withDefaults(defineProps<{open?:boolean}>(),{open:false})
 const emit=defineEmits<{close:[];'open-digital-human':[]}>()
 const dialog=ref<HTMLElement|null>(null),chatRef=ref<HTMLElement|null>(null)
 useDialogFocus(()=>props.open,dialog,()=>emit('close'))
 let storage:Storage|undefined
-try{storage=window.localStorage}catch{ /* Browser storage can be unavailable. */ }
-const chat=createAssistantChat(askAssistant,storage)
+try{storage=window.sessionStorage}catch{ /* Browser storage can be unavailable. */ }
+const chat=createAssistantChat(askAssistant,storage,JSON.stringify([apiURL('/'),currentUser.value?.id??'anonymous']))
 const {inputQuery,messages,isLoading,clearHistory}=chat
 const connectionMessage=ref('正在检查远程助手连接'),canChat=ref(false),checkingConnection=ref(false)
 let statusRequest:AbortController|undefined,statusSequence=0,statusPoll:ReturnType<typeof setInterval>|undefined

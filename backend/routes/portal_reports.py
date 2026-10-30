@@ -1,5 +1,6 @@
 """Asynchronous official-portal evidence report API."""
-from fastapi import APIRouter,HTTPException
+from fastapi import APIRouter,HTTPException,Depends
+from auth_dependencies import require_admin
 from fastapi.responses import FileResponse
 from pydantic import BaseModel,Field
 from portal_audit import start,status,ROOT,run_dir
@@ -12,7 +13,7 @@ class OpenClawRequest(BaseModel):
     provinces:list[str]|None=Field(default=None,max_length=31)
     resume:str|None=None
 
-@router.post('/openclaw-tasks',status_code=202)
+@router.post('/openclaw-tasks',status_code=202,dependencies=[Depends(require_admin)])
 def start_openclaw_task(payload:OpenClawRequest):
     from openclaw_task_service import start
     try:return start(payload.provinces,payload.resume)
@@ -49,7 +50,7 @@ def list_reports():
     data=publish_index(ROOT)
     data['items']=sorted(data['items'],key=lambda r:(r.get('recommended',False),r.get('updated_at','')),reverse=True)[:30]
     return data
-@router.post('',status_code=202)
+@router.post('',status_code=202,dependencies=[Depends(require_admin)])
 def create_report(payload:AuditRequest):
     try:return {'id':start(payload.provinces,payload.vision)}
     except ValueError as exc:raise HTTPException(400,str(exc))

@@ -16,7 +16,7 @@ class StableAPIContracts(unittest.TestCase):
              patch('httpx.AsyncClient', side_effect=AssertionError('network access')):
             first = stable_openapi()
             self.assertEqual(first, stable_openapi())
-        self.assertEqual(len(first['paths']), 6)
+        self.assertEqual(len(first['paths']), 10)
         self.assertNotIn('/api/regional-guides/form-contract', first['paths'])
         self.assertIn('QuestionRequest', first['components']['schemas'])
 

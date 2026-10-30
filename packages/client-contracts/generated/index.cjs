@@ -1,5 +1,5 @@
 // Generated from packages/client-contracts/src/index.ts. Do not edit.
-// source-sha256: ae8d98553d8d7bbae7c1601863092b604cefcac175024128fede639b752286c6
+// source-sha256: 7705132b992406a7531b635f81ed85a561e84f46aa88df41be4ef536f6cd8d6a
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
@@ -26,6 +26,7 @@ __export(index_exports, {
   assertAIStatus: () => assertAIStatus,
   buildAskRequest: () => buildAskRequest,
   createAnswerDecoder: () => createAnswerDecoder,
+  normalizeServiceAddress: () => normalizeServiceAddress,
   parseStoredChat: () => parseStoredChat,
   remoteReady: () => remoteReady
 });
@@ -41,6 +42,22 @@ var API_LIMITS = {
 // packages/client-contracts/src/index.ts
 var record = (v) => v !== null && typeof v === "object" && !Array.isArray(v);
 var length = (s) => Array.from(s).length;
+function normalizeServiceAddress(input) {
+  if (typeof input !== "string") throw new Error("\u8BF7\u586B\u5199\u670D\u52A1\u5730\u5740\u3002");
+  const value = input.trim(), match = /^(https?):\/\/(\[::1\]|[a-z0-9.-]+)(?::([0-9]{1,5}))?\/?$/i.exec(value);
+  if (!match) throw new Error("\u5730\u5740\u5E94\u4E3AHTTPS\u57DF\u540D\u6216\u5C40\u57DF\u7F51\u5730\u5740\uFF0C\u4E0D\u80FD\u5305\u542B\u8D26\u53F7\u3001\u8DEF\u5F84\u6216\u67E5\u8BE2\u53C2\u6570\u3002");
+  const scheme = match[1].toLowerCase(), host = match[2].toLowerCase(), port = match[3];
+  if (port && (!/^[1-9][0-9]*$/.test(port) || Number(port) > 65535)) throw new Error("\u7AEF\u53E3\u53F7\u65E0\u6548\u3002");
+  let privateHost = host === "localhost" || host === "[::1]";
+  if (/^[0-9.]+$/.test(host)) {
+    const parts = host.split(".");
+    if (parts.length !== 4 || parts.some((p) => !/^(0|[1-9][0-9]{0,2})$/.test(p) || Number(p) > 255)) throw new Error("IP\u5730\u5740\u65E0\u6548\u3002");
+    const [a, b] = parts.map(Number);
+    privateHost = a === 127 || a === 10 || a === 192 && b === 168 || a === 172 && b !== void 0 && b >= 16 && b <= 31;
+  } else if (host !== "[::1]" && (host.length > 253 || host.split(".").some((p) => !/^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$/.test(p)))) throw new Error("\u57DF\u540D\u683C\u5F0F\u65E0\u6548\u3002");
+  if (scheme === "http" && !privateHost) throw new Error("\u516C\u7F51\u670D\u52A1\u5FC5\u987B\u4F7F\u7528HTTPS\uFF1BHTTP\u4EC5\u7528\u4E8E\u672C\u673A\u6216\u5C40\u57DF\u7F51\u9884\u89C8\u3002");
+  return `${scheme}://${host}${port ? ":" + port : ""}`;
+}
 function apiURL(base, path) {
   if (!path.startsWith("/") || path.startsWith("//") || path.includes("..") || path.includes("\\") || /[\r\n]/.test(path)) throw new Error("\u63A5\u53E3\u8DEF\u5F84\u65E0\u6548\u3002");
   if (!/^https?:\/\/[^/?#\s@\\]+(?:\/[^?#\s\\]*)?$/.test(base)) throw new Error("\u670D\u52A1\u5730\u5740\u65E0\u6548\u3002");

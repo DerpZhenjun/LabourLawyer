@@ -9,6 +9,23 @@ type StatusWire=components['schemas']['AIStatusResponse']
 export type AIStatus=Pick<StatusWire,'ready'|'provider'|'model'|'local_model_started'>&{message?:NonNullable<StatusWire['message']>;status?:NonNullable<StatusWire['status']>}
 const record=(v:unknown):v is Record<string,unknown>=>v!==null&&typeof v==='object'&&!Array.isArray(v)
 const length=(s:string)=>Array.from(s).length
+/** Explicit user-selected server. HTTP is limited to local/private preview networks. */
+export function normalizeServiceAddress(input:string):string {
+  if(typeof input!=='string')throw new Error('请填写服务地址。')
+  const value=input.trim(),match=/^(https?):\/\/(\[::1\]|[a-z0-9.-]+)(?::([0-9]{1,5}))?\/?$/i.exec(value)
+  if(!match)throw new Error('地址应为HTTPS域名或局域网地址，不能包含账号、路径或查询参数。')
+  const scheme=match[1]!.toLowerCase(),host=match[2]!.toLowerCase(),port=match[3]
+  if(port&&(!/^[1-9][0-9]*$/.test(port)||Number(port)>65535))throw new Error('端口号无效。')
+  let privateHost=host==='localhost'||host==='[::1]'
+  if(/^[0-9.]+$/.test(host)){
+    const parts=host.split('.')
+    if(parts.length!==4||parts.some(p=>! /^(0|[1-9][0-9]{0,2})$/.test(p)||Number(p)>255))throw new Error('IP地址无效。')
+    const [a,b]=parts.map(Number)
+    privateHost=a===127||a===10||a===192&&b===168||a===172&&b!==undefined&&b>=16&&b<=31
+  }else if(host!=='[::1]'&&(host.length>253||host.split('.').some(p=>! /^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$/.test(p))))throw new Error('域名格式无效。')
+  if(scheme==='http'&&!privateHost)throw new Error('公网服务必须使用HTTPS；HTTP仅用于本机或局域网预览。')
+  return `${scheme}://${host}${port?':'+port:''}`
+}
 export function apiURL(base:string,path:string):string {
   if(!path.startsWith('/')||path.startsWith('//')||path.includes('..')||path.includes('\\')||/[\r\n]/.test(path))throw new Error('接口路径无效。')
   // WeChat's script runtime does not provide the browser URL constructor.

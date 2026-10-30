@@ -26,6 +26,7 @@ from routes.portal_reports import router as portal_reports_router
 from routes.regional_guides import router as regional_guides_router
 from routes.ai import router as ai_router
 from system_routes import router as system_router, health
+from routes.auth import router as auth_router
 
 try:
     from routes.Zhejiang.la import router as zj_la_router
@@ -74,12 +75,14 @@ app.include_router(regional_guides_router, prefix="/api/regional-guides", tags=[
 app.include_router(platform_router)
 app.include_router(ai_router)
 app.include_router(system_router)
+app.include_router(auth_router)
 
 @app.middleware("http")
 async def security_headers(request: Request, call_next):
     request_id = request.headers.get("X-Request-ID", uuid.uuid4().hex)
     response = await call_next(request)
     response.headers["X-Request-ID"] = request_id
+    if request.url.path.startswith(("/api/auth/","/api/platform/")):response.headers["Cache-Control"]="no-store"
     response.headers["X-Content-Type-Options"] = "nosniff"
     response.headers["Referrer-Policy"] = "same-origin"
     response.headers["Permissions-Policy"] = "camera=(), geolocation=()"

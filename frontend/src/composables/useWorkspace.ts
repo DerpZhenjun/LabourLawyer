@@ -38,8 +38,6 @@ export function createWorkspace(storage?:WorkspaceStorage){
   return{state,storageIssue,activeCases:computed(()=>state.cases.filter(item=>item.stage!=='已结案')),
     totalAmount:computed(()=>state.cases.filter(item=>item.stage!=='已结案').reduce((sum,item)=>sum+item.amount,0)),addCase}
 }
-let browserStorage:WorkspaceStorage|undefined
-try{if(typeof localStorage!=='undefined')browserStorage=localStorage}
-catch{browserStorage={getItem(){throw new Error('Storage unavailable')},setItem(){throw new Error('Storage unavailable')}}}
-const workspace=createWorkspace(browserStorage)
+import {createServerWorkspace} from './serverWorkspace.ts'
+const workspace=createServerWorkspace()
 export function useWorkspace(){return workspace}

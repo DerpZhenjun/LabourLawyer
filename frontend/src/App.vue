@@ -6,7 +6,7 @@
         <RouterLink v-for="item in adminNav" :key="item.to" :to="item.to" @click="sidebarOpen=false"><i :class="item.icon"></i><span>{{item.label}}</span></RouterLink>
       </nav>
       <RouterLink to="/" class="back-public"><i class="fa-solid fa-arrow-left"></i> 返回群众服务首页</RouterLink>
-      <div class="org-switcher"><span class="org-avatar">PL</span><span><strong>管理员</strong><small>产品运营后台</small></span></div>
+      <button type="button" class="back-public" @click="signOut">退出登录</button><p v-if="logoutError" role="alert">{{logoutError}}</p><div class="org-switcher"><span class="org-avatar">PL</span><span><strong>{{currentUser?.username}}</strong><small>管理账号</small></span></div>
     </aside>
     <div v-if="sidebarOpen" class="sidebar-mask" @click="sidebarOpen=false"></div>
     <main class="main-stage" id="main-content" tabindex="-1">
@@ -14,7 +14,7 @@
         <div class="topbar-left"><button class="icon-button mobile-menu" aria-label="打开导航" @click="sidebarOpen=true"><i class="fa-solid fa-bars"></i></button><div><small>{{currentMeta.eyebrow}}</small><strong>{{currentMeta.title}}</strong></div></div>
         <div class="topbar-actions"><button class="primary-action" @click="go('/admin/cases?new=1')"><i class="fa-solid fa-plus"></i> 新建案件</button></div>
       </header>
-      <RouterView :key="route.path" />
+      <RouterView :key="route.path+':'+(currentUser?.id??'anonymous')" />
     </main>
   </div>
 
@@ -29,8 +29,8 @@
   </div>
 
   <button v-if="!assistantOpen && !digitalOpen" ref="assistantButton" class="assistant-fab" :style="assistantDock.style.value" :aria-hidden="assistantDock.hidden.value || undefined" @click="assistantOpen=true" aria-label="打开 AI 法律顾问"><BrandMark variant="assistant" :size="30" /><span>AI 法律顾问</span></button>
-  <QA v-if="assistantOpen" :open="assistantOpen" @close="assistantOpen=false" @open-digital-human="openDigitalLawyer" />
-  <DigitalLawyer v-if="digitalOpen" @close="digitalOpen=false" />
+  <QA v-if="assistantOpen" :key="currentUser?.id??'anonymous'" :open="assistantOpen" @close="assistantOpen=false" @open-digital-human="openDigitalLawyer" />
+  <DigitalLawyer v-if="digitalOpen" :key="currentUser?.id??'anonymous'" @close="digitalOpen=false" />
 </template>
 
 <script setup lang="ts">
@@ -39,6 +39,7 @@ import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router'
 import BrandMark from '@/components/BrandMark.vue'
 import {useAssistantDock} from '@/composables/useAssistantDock'
 const DigitalLawyer = defineAsyncComponent(() => import('@/components/DigitalLawyer.vue'))
+import {currentUser,logout} from '@/api/auth'
 import PublicHeader from '@/components/PublicHeader.vue'
 const QA = defineAsyncComponent(() => import('@/components/QA.vue'))
 
@@ -56,6 +57,10 @@ const adminNav=[
   {to:'/admin/knowledge',label:'内容管理',icon:'fa-solid fa-book-open'},
   {to:'/admin/regions',label:'地区核验与问题',icon:'fa-solid fa-map-location-dot'},
 ]
+watch(currentUser,user=>{if(!user&&route.meta.layout==='admin')void router.replace({path:'/login',query:{next:route.fullPath}})})
+watch(()=>currentUser.value?.id??'anonymous',()=>{assistantOpen.value=false;digitalOpen.value=false},{flush:'sync'})
+const logoutError=ref('')
+const signOut=async()=>{try{await logout();await router.replace('/login')}catch{await router.replace({path:'/login',query:{logout:'local-only'}})}}
 const go=(path:string)=>router.push(path)
 const openDigitalLawyer=()=>{assistantOpen.value=false;digitalOpen.value=true}
 watch(()=>route.path,async()=>{await nextTick();document.querySelector<HTMLElement>('#main-content')?.focus({preventScroll:true})},{flush:'post'})

@@ -57,14 +57,10 @@ export default function Home() {
     setEmbedded(new URLSearchParams(window.location.search).get("embed") === "1");
     setVoiceSupported("speechSynthesis" in window);
     setMicSupported(Boolean(window.SpeechRecognition || window.webkitSpeechRecognition));
-    try {
-      const saved = JSON.parse(localStorage.getItem("labourlawyer.digital.chat") || "[]");
-      if (Array.isArray(saved)) setChatLog(saved.filter(m => ["user", "assistant"].includes(m?.role) && typeof m.content === "string").slice(-20));
-    } catch { /* Ignore damaged local drafts. */ }
     checkConnection(); const poll = setInterval(checkConnection, 20000);
     return () => { clearInterval(poll); healthRequest.current?.abort(); healthRequest.current = undefined; request.current?.abort(); recognition.current?.abort(); interruptSpeakCharacter(); };
   }, [checkConnection]);
-  useEffect(() => { try { localStorage.setItem("labourlawyer.digital.chat", JSON.stringify(chatLog.slice(-20))); } catch {} end.current?.scrollIntoView({ block: "end" }); }, [chatLog, busy]);
+  useEffect(() => { end.current?.scrollIntoView({ block: "end" }); }, [chatLog, busy]);
   useEffect(() => {
     const close = (event: KeyboardEvent) => {
       if (!embedded || event.key !== "Escape" || !document.referrer || window.parent === window) return;

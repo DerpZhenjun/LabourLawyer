@@ -9,7 +9,7 @@ const root=path.resolve(import.meta.dirname,'..')
 const require=createRequire(path.join(root,'frontend/package.json'))
 const {default:openapiTS,astToString}=require('openapi-typescript')
 const python=process.env.PYTHON || path.join(root,'.venv',process.platform==='win32'?'Scripts/python.exe':'bin/python')
-const schema=JSON.parse(execFileSync(python,['backend/export_api_contracts.py'],{cwd:root,encoding:'utf8',timeout:30000,windowsHide:true,maxBuffer:8*1024*1024}))
+const schema=JSON.parse(execFileSync(python,['backend/export_api_contracts.py'],{cwd:root,env:{...process.env,PYTHONUTF8:'1',PYTHONIOENCODING:'utf-8'},encoding:'utf8',timeout:30000,windowsHide:true,maxBuffer:8*1024*1024}))
 const normalized=JSON.stringify(schema,null,2)+'\n'
 const digest=createHash('sha256').update(normalized).digest('hex')
 const types=astToString(await openapiTS(schema,{alphabetize:true,defaultNonNullable:false})).replace(/\r\n/g,'\n')

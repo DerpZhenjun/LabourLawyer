@@ -65,7 +65,7 @@ const identity=computed(()=>JSON.stringify([template.value?.sha256,template.valu
 const specialization=(contract:FormContract)=>{
   const {adapter,kind}=contract.context
   if(adapter===JIANGSU_OWN_ADAPTER)return'jiangsu'
-  if([ZHEJIANG_OWN_ADAPTER,'zhejiang_own_worker_oct29e_v1'].includes(adapter))return'zhejiang'
+  if([ZHEJIANG_OWN_ADAPTER,'zhejiang_own_worker_oct29e_v1','zhejiang_chunan_own_worker_oct30_v1'].includes(adapter))return'zhejiang'
   if(kind==='application'&&['hunan_own_legacy_worker_oct29b_v1','hunan_own_legacy_worker_oct29c_v1'].includes(adapter))return'hunan'
   if(kind==='application'&&adapter===FEIDONG_ADAPTER_KEY)return'feidong'
   return'generic'

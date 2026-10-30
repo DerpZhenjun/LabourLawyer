@@ -3,9 +3,9 @@ import {buildAskRequest,parseStoredChat} from '../../../packages/client-contract
 import type {ChatMessage} from '../../../packages/client-contracts/src/index.ts'
 interface Transport { (question:string,messages:ChatMessage[],signal:AbortSignal,chunk:(text:string)=>void):Promise<void> }
 interface ChatStorage { getItem(key:string):string|null; setItem(key:string,value:string):void }
-const key='labourlawyer.chat.v1'
 const welcome:ChatMessage={role:'ai',content:'你好，我是你的劳动法律助手。\n\n工资没发、没有签合同，或是不知道怎么申请仲裁？说说发生了什么，我可以帮你理清思路和需要准备的材料。'}
-export function createAssistantChat(transport:Transport,storage:ChatStorage|undefined){
+export function createAssistantChat(transport:Transport,storage:ChatStorage|undefined,namespace='default'){
+  const key='labourlawyer.chat.v2:'+encodeURIComponent(namespace)
   let saved:ChatMessage[]|null=null
   try{saved=parseStoredChat(storage?.getItem(key)??null)}catch{ /* Storage may be disabled. */ }
   const messages=ref<ChatMessage[]>(saved??[{...welcome}]),inputQuery=ref(''),isLoading=ref(false)
