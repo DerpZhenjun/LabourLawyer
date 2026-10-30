@@ -1,0 +1,55 @@
+﻿{
+    "originals_unchanged":  true,
+    "engine":  "Microsoft Word isolated process, hidden read-only export",
+    "own_instance_verified":  true,
+    "tasks":  [
+                  {
+                      "pdf":  "reports/overnight-gap-closure-20261030/localities/jiangsu-f/word/320581-official-application.pdf",
+                      "source_sha256":  "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+                      "source":  "reports/overnight-gap-closure-20261030/localities/jiangsu-f/320581/official-application.docx",
+                      "pages":  6
+                  },
+                  {
+                      "pdf":  "reports/overnight-gap-closure-20261030/localities/jiangsu-f/word/320581-filled-application.pdf",
+                      "source_sha256":  "40787740ecff48fc23ca632143ea6dd7c4a8ba673d62ba026f821322bf94502d",
+                      "source":  "reports/overnight-gap-closure-20261030/localities/jiangsu-f/320581/application-synthetic.docx",
+                      "pages":  2
+                  },
+                  {
+                      "pdf":  "reports/overnight-gap-closure-20261030/localities/jiangsu-f/word/320581-official-evidence.pdf",
+                      "source_sha256":  "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+                      "source":  "reports/overnight-gap-closure-20261030/localities/jiangsu-f/320581/official-evidence.docx",
+                      "pages":  1
+                  },
+                  {
+                      "pdf":  "reports/overnight-gap-closure-20261030/localities/jiangsu-f/word/320581-filled-evidence.pdf",
+                      "source_sha256":  "949c69ae450c9af14bd702e4a4ca8e65e2c43fb394c1d26ebff9117d04766e70",
+                      "source":  "reports/overnight-gap-closure-20261030/localities/jiangsu-f/320581/evidence-synthetic.docx",
+                      "pages":  1
+                  },
+                  {
+                      "pdf":  "reports/overnight-gap-closure-20261030/localities/jiangsu-f/word/320582-official-application.pdf",
+                      "source_sha256":  "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+                      "source":  "reports/overnight-gap-closure-20261030/localities/jiangsu-f/320582/official-application.docx",
+                      "pages":  6
+                  },
+                  {
+                      "pdf":  "reports/overnight-gap-closure-20261030/localities/jiangsu-f/word/320582-filled-application.pdf",
+                      "source_sha256":  "40787740ecff48fc23ca632143ea6dd7c4a8ba673d62ba026f821322bf94502d",
+                      "source":  "reports/overnight-gap-closure-20261030/localities/jiangsu-f/320582/application-synthetic.docx",
+                      "pages":  2
+                  },
+                  {
+                      "pdf":  "reports/overnight-gap-closure-20261030/localities/jiangsu-f/word/320582-official-evidence.pdf",
+                      "source_sha256":  "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+                      "source":  "reports/overnight-gap-closure-20261030/localities/jiangsu-f/320582/official-evidence.docx",
+                      "pages":  1
+                  },
+                  {
+                      "pdf":  "reports/overnight-gap-closure-20261030/localities/jiangsu-f/word/320582-filled-evidence.pdf",
+                      "source_sha256":  "949c69ae450c9af14bd702e4a4ca8e65e2c43fb394c1d26ebff9117d04766e70",
+                      "source":  "reports/overnight-gap-closure-20261030/localities/jiangsu-f/320582/evidence-synthetic.docx",
+                      "pages":  1
+                  }
+              ]
+}

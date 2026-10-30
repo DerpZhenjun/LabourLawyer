@@ -1,0 +1,150 @@
+{
+  "identities": [
+    {
+      "region_code": "320581",
+      "source_id": "9a24af792c956feb67bd37c6",
+      "service_code": "11320581014173412K400201430200201"
+    },
+    {
+      "region_code": "320582",
+      "source_id": "95e826085ed0fec9f410cc86",
+      "service_code": "11320582551232000Y400201430200201"
+    }
+  ],
+  "source_manifest_sha256": "c594c7bc7b352e934e5ea7f71137f9bc22031acee522d7b4eeff82ca7f8445ea",
+  "public_whitelist_sha256": "5ca19bb495971d97e832f3468f577654a730ed99fe5b8e2435254cbaee3eddf6",
+  "stage_receipt_sha256": "1c9bcc069f4b659f55225a988852f81e7888ab66b6e0c46ad4d0a78fbdf38c88",
+  "model_calls": 0,
+  "visual_review": "PASS",
+  "can_publish": false,
+  "root_review": "pending independent final browser/download Word review; no publication approval inferred",
+  "native_confirmation_download_four_forms": true,
+  "render_pages": {
+    "320581": {
+      "application": 2,
+      "evidence": 1
+    },
+    "320582": {
+      "application": 2,
+      "evidence": 1
+    }
+  },
+  "files": [
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser/320581-768-empty-evidence.png",
+      "bytes": 126798,
+      "sha256": "fe0fccfdc94c31f71fddabee97ea92d13f7a5b87080fd6d128f55ac3e513276a"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser/320581-768-evidence-confirm.png",
+      "bytes": 76673,
+      "sha256": "9b682bce240b175bf6a484760692ce0e3969f59ce66f6224293ce06ba684e5cb"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser/320581-application.docx",
+      "bytes": 12624,
+      "sha256": "132eccf19cb38f8782e095c1fd081ef83d5e06e05e51858f61a72bf4fbf7a10c"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser/320581-evidence.docx",
+      "bytes": 11525,
+      "sha256": "0cfdc159723a923d40a59fa5f6cc3cd0dc1e83241962fdd8de9edc06fb84ef44"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser/320581-v3-375-blank-confirm.png",
+      "bytes": 51768,
+      "sha256": "00bea1c798c234f3621ca4570ad215647248623bcc4ba7e874ad414c567f6d05"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser/320582-1440-application-confirm.png",
+      "bytes": 84977,
+      "sha256": "d3218c41e4b15751d897627444788eb414f5b55c3f7649e56cede1849690694e"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser/320582-375-evidence.png",
+      "bytes": 130554,
+      "sha256": "033f30a05686a9c354636b19ebb68e410e17241b7f045c72cf0219487380ddf3"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser/320582-375-online-guide-fallback.png",
+      "bytes": 44769,
+      "sha256": "40bf806defbd36701b7170711c212fbde38ccb082d4eeb11a78576cf8918edfe"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser/320582-application.docx",
+      "bytes": 12624,
+      "sha256": "132eccf19cb38f8782e095c1fd081ef83d5e06e05e51858f61a72bf4fbf7a10c"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser/320582-evidence.docx",
+      "bytes": 11525,
+      "sha256": "0cfdc159723a923d40a59fa5f6cc3cd0dc1e83241962fdd8de9edc06fb84ef44"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/BROWSER-VERIFICATION.json",
+      "bytes": 5595,
+      "sha256": "9eab4c2e3648eb5241fb843d0952aa0bb25e506928ca0f29e245f34f398ac1ca"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser-word/320581-application-1.png",
+      "bytes": 182479,
+      "sha256": "658209fe8f495fe104e7eb10e36e878a5f83ef2d1d39e9427312c174569e1a02"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser-word/320581-application-2.png",
+      "bytes": 89930,
+      "sha256": "54714ae863eea49311888893d33cc425c4945430cdec336884c6606078f3dca8"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser-word/320581-application.pdf",
+      "bytes": 174510,
+      "sha256": "a65dae389c4e809b42d8557af34b729503115c83f831bbd5a3df06826cfc637b"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser-word/320581-evidence-1.png",
+      "bytes": 70582,
+      "sha256": "fd9631cbdb2bc71d88d6bcdf3fc8c7912921155a04a1aaa0ded22b6a8bdf64a8"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser-word/320581-evidence.pdf",
+      "bytes": 207046,
+      "sha256": "b6e592cdd927ad5a1612eeec6ab6dc9de2b5496a82df0e7960cd19cceb2b479f"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser-word/320582-application-1.png",
+      "bytes": 182479,
+      "sha256": "658209fe8f495fe104e7eb10e36e878a5f83ef2d1d39e9427312c174569e1a02"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser-word/320582-application-2.png",
+      "bytes": 89930,
+      "sha256": "54714ae863eea49311888893d33cc425c4945430cdec336884c6606078f3dca8"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser-word/320582-application.pdf",
+      "bytes": 174510,
+      "sha256": "c5b24c968714f90abefc098300e0514e0541f6f84598d515a3d0ba25fb583b6f"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser-word/320582-evidence-1.png",
+      "bytes": 70582,
+      "sha256": "fd9631cbdb2bc71d88d6bcdf3fc8c7912921155a04a1aaa0ded22b6a8bdf64a8"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser-word/320582-evidence.pdf",
+      "bytes": 207046,
+      "sha256": "6144c967f2cdc6fc9b36b2592e1185200e40f49f5c7e8089afe65aa411c6fdf1"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser-word/RENDER.json",
+      "bytes": 1962,
+      "sha256": "678ead558c68a65c9854844643c9b35b5cef7778e5961d50d69a75b5f6d17944"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/stage-v2-tests.txt",
+      "bytes": 2723,
+      "sha256": "f2599d1c1b70d44f00a3b5466128907f885364622d4452ea22c9d3571831ae51"
+    }
+  ],
+  "code_freeze_manifest": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/candidate-v2/MANIFEST.json"
+}

@@ -45,8 +45,7 @@
       <section class="region-panel" id="regional-submit">
         <span class="ll-eyebrow">01 · 怎样提交</span><h2>{{ guide.channel.online_status==='unavailable'?'带材料到窗口办理':'先核对办理渠道' }}</h2>
         <p v-if="guide.channel.online_status==='unavailable'" data-channel-state="unavailable">当前核验的官方办事指南显示，该事项采用窗口办理方式，是否网办为“否”。这不是网站故障。</p>
-        <div v-else-if="guide.channel.online_status==='auth_required'" data-channel-state="auth_required"><p>官网明确列出网上办理。实际点击入口后需要登录，我们已停止操作；请你自行在官网登录，不在本平台提交申请。</p><a class="ll-button" :href="guide.channel.entry_url" target="_blank" rel="noopener noreferrer" data-online-entry>打开官网，登录后选择在线申请 ↗</a></div>
-        <div v-else-if="guide.channel.online_status==='verified'"><p>已核验官网公开网上入口，后续申请由你在官网自行完成。</p><a class="ll-button" :href="guide.channel.entry_url" target="_blank" rel="noopener noreferrer" data-online-entry>打开官方网上入口 ↗</a></div>
+        <div v-else-if="['auth_required','verified'].includes(guide.channel.online_status)" :data-channel-state="guide.channel.online_status"><p v-if="onlineEntry?.direct">{{ guide.channel.online_status==='auth_required'?'官网明确列出网上办理。实际点击入口后需要登录，我们已停止操作；请你自行在官网登录，不在本平台提交申请。':'已核验官网公开网上入口，后续申请由你在官网自行完成。' }}</p><p v-else>本页未提供已核验的直达入口。请核对官方指南中的网上入口、登录要求和后续流程，或向办理机关确认。</p><a v-if="onlineEntry" class="ll-button" :href="onlineEntry.href" target="_blank" rel="noopener noreferrer" data-online-entry>{{ onlineEntry.direct?(guide.channel.online_status==='auth_required'?'打开官网，登录后选择在线申请':'打开官方网上入口'):'打开官方指南，核对在线入口' }} ↗</a></div>
         <p v-else class="region-notice" :data-channel-state="guide.channel.online_status">网上办理情况待核实。{{ guide.channel.online_status==='conflict'?'官网不同栏目说法不一致。':'没有核实到有效入口，不代表当地一定不支持网上办理。' }}{{ guide.channel.entry_check?.status==='http_502'?'流程中的入口本次访问返回 HTTP 502。':'' }}请先向办理机关确认。</p>
         <dl class="window-details"><div><dt>窗口地点</dt><dd>{{ field('办理地点') }}</dd></div><div><dt>办公时间</dt><dd>{{ field('办理时间') }}</dd></div><div><dt>咨询电话</dt><dd>{{ field('咨询方式') }}</dd></div><div><dt>必须到现场原因</dt><dd>{{ field('必须到现场原因') }}</dd></div><div><dt>服务对象</dt><dd>{{ field('服务对象') }}</dd></div></dl>
       </section>
@@ -82,6 +81,17 @@ const province=computed(()=>findProvince(region.value.province))
 const {guide:rawGuide,loading,error:lookupError,reload}=useRegionalGuide(region)
 const presentation=computed(()=>{try{return{guide:readGuideDisplay(rawGuide.value),error:''}}catch(cause:unknown){return{guide:null,error:publicError(cause)}}})
 const guide=computed(()=>presentation.value.guide),error=computed(()=>lookupError.value||presentation.value.error)
+function officialOnlineLink(entry:unknown,source:unknown):{href:string;direct:boolean}|null {
+  const absent=entry===undefined||entry===null||typeof entry==='string'&&!entry.trim()
+  const value=absent?source:entry
+  if(typeof value!=='string'||!value.trim())return null
+  try {
+    const url=new URL(value)
+    if(!['https:','http:'].includes(url.protocol)||!url.hostname.endsWith('.gov.cn')||url.username||url.password)return null
+    return{href:url.href,direct:!absent}
+  }catch{return null}
+}
+const onlineEntry=computed(()=>guide.value?officialOnlineLink(guide.value.channel.entry_url,guide.value.source_url):null)
 const {cityAreas,districtAreas,directoryLoading,directoryError}=useRegionDirectory(region)
 const cities=computed(()=>[...new Set([...cityAreas.value,...inventory.value.filter(g=>g.province===region.value.province)].map(g=>g.city))])
 const districts=computed(()=>[...new Set([...inventory.value,...coverage.value,...districtAreas.value].filter(g=>g.province===region.value.province&&g.city===region.value.city).map(g=>g.district))])

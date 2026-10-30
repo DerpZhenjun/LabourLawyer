@@ -1,0 +1,19 @@
+test_blank_and_filled_packages_preserve_originals_and_signatures (backend.tests.test_jiangsu_oct30f.OwnFTests.test_blank_and_filled_packages_preserve_originals_and_signatures) ... ok
+test_candidate_removes_only_obsolete_source_lifecycle_warnings (backend.tests.test_jiangsu_oct30f.OwnFTests.test_candidate_removes_only_obsolete_source_lifecycle_warnings) ... ok
+test_capacity_unknown_fields_and_unverified_capabilities_are_rejected (backend.tests.test_jiangsu_oct30f.OwnFTests.test_capacity_unknown_fields_and_unverified_capabilities_are_rejected) ... ok
+test_each_own_source_keeps_identity_materials_and_channel (backend.tests.test_jiangsu_oct30f.OwnFTests.test_each_own_source_keeps_identity_materials_and_channel) ... ok
+test_equal_template_bytes_never_allow_foreign_identity_or_template (backend.tests.test_jiangsu_oct30f.OwnFTests.test_equal_template_bytes_never_allow_foreign_identity_or_template) ... ok
+test_json_types_are_strict_recursively_in_own_facts_and_templates (backend.tests.test_jiangsu_oct30f.OwnFTests.test_json_types_are_strict_recursively_in_own_facts_and_templates) ... ok
+test_public_copy_no_checkout_fallback_and_tamper_rejected (backend.tests.test_jiangsu_oct30f.OwnFTests.test_public_copy_no_checkout_fallback_and_tamper_rejected) ... ok
+test_source_flags_cannot_become_candidate_or_published_evidence (backend.tests.test_jiangsu_oct30f.OwnFTests.test_source_flags_cannot_become_candidate_or_published_evidence) ... ok
+test_adapter_registered_with_strict_field_contract_and_raw_sources_stay_disabled (backend.tests.test_jiangsu_oct30f_dispatch.FDispatchTests.test_adapter_registered_with_strict_field_contract_and_raw_sources_stay_disabled) ... ok
+test_explicit_public_root_requires_complete_own_and_stage_proofs (backend.tests.test_jiangsu_oct30f_dispatch.FDispatchTests.test_explicit_public_root_requires_complete_own_and_stage_proofs) ... ok
+test_four_own_forms_blank_filled_original_and_negative_requests (backend.tests.test_jiangsu_oct30f_dispatch.FDispatchTests.test_four_own_forms_blank_filled_original_and_negative_requests) ... C:\Users\DerpZhenjun\.codex\worktrees\production-readiness\Partlawyer-LAA\.venv\Lib\site-packages\starlette\testclient.py:45: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+  _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+ok
+test_release_marker_distinguishes_installed_candidate_from_publication (backend.tests.test_jiangsu_oct30f_dispatch.FDispatchTests.test_release_marker_distinguishes_installed_candidate_from_publication) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 76.307s
+
+OK

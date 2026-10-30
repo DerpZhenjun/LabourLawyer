@@ -34,6 +34,9 @@ from regional_jiangsu_oct29e import (with_capabilities as with_jiangsu_e_capabil
 from regional_zhejiang_oct29e import (with_capabilities as with_zhejiang_e_capabilities,blank_binding as zhejiang_e_binding,ADAPTER as ZHEJIANG_E_ADAPTER,SPECS as ZHEJIANG_E_SPECS)
 from regional_zhejiang_chunan_oct30 import (with_capabilities as with_chunan_capabilities,
     checked_adapter as checked_chunan_adapter, ADAPTER as CHUNAN_ADAPTER)
+from regional_jiangsu_oct30f import (with_capabilities as with_jiangsu_f_capabilities,
+    checked_adapter as checked_jiangsu_f_adapter, ADAPTER as JIANGSU_F_ADAPTER,
+    SUPPORTED as JIANGSU_F_CODES)
 
 def jiangsu_e_binding(guide,template,root=None):
     try:return jiangsu_e_contract(guide,template,root=root)['kind']
@@ -260,6 +263,8 @@ def reference_binding(guide, template):
 
 def with_reference_capabilities(guide,root=None):
     """Publish platform adaptation separately from the retained official content."""
+    if guide.get('province') == 'jiangsu' and guide.get('region_code') in JIANGSU_F_CODES:
+        return with_jiangsu_f_capabilities(guide, root=root)
     if guide.get('province') == 'zhejiang' and guide.get('region_code') == '330127':
         return with_chunan_capabilities(guide, root=root)
     result = with_shangcheng_capabilities(with_zhejiang_capabilities(guide)) if guide.get('province')=='zhejiang' else deepcopy(guide)
@@ -319,6 +324,8 @@ def with_reference_capabilities(guide,root=None):
 
 
 def checked_reference_adapter(guide, template, kind,root=None):
+    if template.get('adapter') == JIANGSU_F_ADAPTER:
+        return checked_jiangsu_f_adapter(guide, template, kind, root=root)
     if template.get('adapter') == CHUNAN_ADAPTER:
         return checked_chunan_adapter(guide, template, kind, root=root)
     if template.get('adapter') in {JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER}:

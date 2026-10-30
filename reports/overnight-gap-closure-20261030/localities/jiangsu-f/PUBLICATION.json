@@ -1,0 +1,23 @@
+{
+  "status": "published_worktree_seed_only",
+  "guides_before": 203,
+  "guides_after": 205,
+  "generatable_localities_before": 186,
+  "generatable_localities_after": 188,
+  "directory_rows": 3974,
+  "source_ids": [
+    "9a24af792c956feb67bd37c6",
+    "95e826085ed0fec9f410cc86"
+  ],
+  "final_evidence_sha256": "b37cabc422b4a315e22a5762553269636b821dd8d9b0b3fc46f03602af6febe6",
+  "previous203_encoded_records_preserved": true,
+  "directory_bytes_preserved": true,
+  "guides_before_sha256": "58f42da0707a1a85a9923c212c36a4cc57aa0794a046ca8e3769f6801af8bc4c",
+  "guides_after_sha256": "4f98f18682ad3c8b1ef566df413246d7dbcc0bd2709b0c2be833e17c04b2d9ea",
+  "manifest_after_sha256": "c128badb73f7fe35f92e0d746223524938871a62318f77f4b12f0793b08b62b8",
+  "directory_sha256": "913daa7dd7bcbec570945fd7cc8ed08ae55b15c50665e5f8f4d967b62fc85ba8",
+  "main_or_worktree_database_written": false,
+  "frozen_source_or_evidence_changed": false,
+  "model_calls": 0,
+  "published_at": "2026-10-30T15:36:13.688630+00:00"
+}

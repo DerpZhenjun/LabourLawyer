@@ -1,0 +1,49 @@
+{
+  "phase": "root_approved_final_evidence14testsPASS_actualpublication_root_owned",
+  "adapter": "jiangsu_own_blank_oct30f_v1",
+  "codes": [
+    "320581",
+    "320582"
+  ],
+  "code_files": [
+    "backend/regional_jiangsu_oct30f.py",
+    "backend/tests/test_jiangsu_oct30f.py",
+    "scripts/verify-jiangsu-oct30f.py"
+  ],
+  "source_manifest_sha256": "c594c7bc7b352e934e5ea7f71137f9bc22031acee522d7b4eeff82ca7f8445ea",
+  "public_whitelist_sha256": "5ca19bb495971d97e832f3468f577654a730ed99fe5b8e2435254cbaee3eddf6",
+  "source_only_guides_unchanged": true,
+  "shared_files_changed_by_this_agent": [
+    "backend/regional_adapters.py",
+    "backend/regional_form_contracts.py",
+    "backend/regional_public_provenance.py",
+    "backend/routes/regional_guides.py"
+  ],
+  "production_db_or_seed_changed_by_this_agent": false,
+  "commits_or_pushes": false,
+  "model_calls": 0,
+  "tests": "stage-v2 own+dispatch12PASS; broader45run44PASS1existingWindows skip; frontendlink+presentation+typecheckPASS",
+  "visual": "20individualWordpagesPASS",
+  "next": "Root publicseed/main increment and release; Kunshan own guide/materials discovered separately, originals/adapter/gates pending.",
+  "candidate_db": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/candidate-v2/guides.sqlite",
+  "stage_receipt_sha256": "1c9bcc069f4b659f55225a988852f81e7888ab66b6e0c46ad4d0a78fbdf38c88",
+  "root_approval": "candidate staging only; no publication",
+  "publication_pin": "b37cabc422b4a315e22a5762553269636b821dd8d9b0b3fc46f03602af6febe6",
+  "candidate_versions": [
+    3,
+    4
+  ],
+  "candidate_history_rows": 4,
+  "native_downloads": 4,
+  "native_download_pages_viewed": 6,
+  "source_and_synthetic_pages_viewed": 20,
+  "viewport_widths": [
+    375,
+    768,
+    1440
+  ],
+  "final_proposal_sha256": "a1c89ae13e90ee04bc702ae0c75efd3f7a09c5ee72f86edbb1bad0d8faddd573",
+  "final_evidence_files": 23,
+  "final_tests": "14PASS73.551s",
+  "code_freeze": "FINAL-CODE-FREEZE.json"
+}

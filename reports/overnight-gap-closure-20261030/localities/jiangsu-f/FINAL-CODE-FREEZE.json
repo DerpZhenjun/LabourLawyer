@@ -1,0 +1,80 @@
+{
+  "scope": "final F source/Word/native browser attestation approved; actual publication root-owned",
+  "source_stage_sha256": "1c9bcc069f4b659f55225a988852f81e7888ab66b6e0c46ad4d0a78fbdf38c88",
+  "final_browser_sha256": "b37cabc422b4a315e22a5762553269636b821dd8d9b0b3fc46f03602af6febe6",
+  "code_files": {
+    "backend/regional_jiangsu_oct30f.py": {
+      "sha256": "c09785ff906b85fa1d2751c4a836b58192f3611a9f29da4961f83e5155d26e2c",
+      "bytes": 18984
+    },
+    "backend/regional_adapters.py": {
+      "sha256": "bb4bc5313f72c918df5fb38d931384d986148eed9d0681e5ab262b9c95b917c0",
+      "bytes": 32952
+    },
+    "backend/regional_form_contracts.py": {
+      "sha256": "e55c1231a02d5daf6b66bf0f9800269667fe680b2b808aecd1b7695eb604c5f6",
+      "bytes": 18585
+    },
+    "backend/regional_public_provenance.py": {
+      "sha256": "aee6910e5d543aa4083b84c097474e98d154cdbafce02a4393616c9ce48f6bb3",
+      "bytes": 12822
+    },
+    "backend/routes/regional_guides.py": {
+      "sha256": "e9aa9354a66c26ec0f56b6867d4d101c015cd4884c1895dfa388cb9fc97df243",
+      "bytes": 24229
+    },
+    "backend/tests/test_jiangsu_oct30f.py": {
+      "sha256": "0202d11d2db3a437f35872298d32cf8a242635554bae02ea42c6d2d3db45a2dc",
+      "bytes": 8695
+    },
+    "backend/tests/test_jiangsu_oct30f_dispatch.py": {
+      "sha256": "197d595f7991c03588730ed2d3f58aaf711b62f466e4d9e07536361765571714",
+      "bytes": 7466
+    },
+    "frontend/src/views/RegionalGuide.vue": {
+      "sha256": "f7ae1ddaf13c889e49228910c3d27667bbd00219f98908db341a5a34f08d44b7",
+      "bytes": 18558
+    },
+    "scripts/test-regional-online-link.mjs": {
+      "sha256": "bf0bedb2cc04f20dba5602692d76fb21522ad451d26d59227b0a23711f9c5851",
+      "bytes": 1931
+    },
+    "backend/tests/test_jiangsu_oct30f_publication.py": {
+      "sha256": "4de8b22eb1b470c0c9b9f1f4ffac48d29c742f38ad775f601f3e0609f9b1b83a",
+      "bytes": 3741
+    },
+    "scripts/verify-jiangsu-oct30f.py": {
+      "sha256": "6e7203c560f53a2f8f90e7588f211f01ab866c16fdec73960c0e049cfb3ed7a0",
+      "bytes": 4698
+    },
+    "scripts/stage-jiangsu-oct30f.py": {
+      "sha256": "de7ef3a01c2bd81b44fae14171f19b5e597ba26d5fc5755d3a0871595e81d9d1",
+      "bytes": 2453
+    }
+  },
+  "candidate_v1_preserved": true,
+  "candidate_v2_database": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/candidate-v2/guides.sqlite",
+  "candidate_versions": [
+    3,
+    4
+  ],
+  "candidate_history_rows": 4,
+  "tests": {
+    "focused_final": "14 PASS",
+    "prior_broader": "45 run:44 PASS1 existing Windows symlink privilege skip; includes186localities366generations",
+    "frontend_link_and_presentation": "PASS",
+    "vue_typecheck": "PASS",
+    "diff_check": "PASS"
+  },
+  "native_downloads": 4,
+  "Word_pages": {
+    "original_and_offline_filled": 20,
+    "actual_native_downloads": 6
+  },
+  "production_db_or_seed_changed_by_locality_agent": false,
+  "model_calls": 0,
+  "commits_or_pushes": false,
+  "next_own_source": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/RESUME-CHECKPOINT.json",
+  "publication_entrypoint": "with_publication_evidence(prepare_candidate(code, root=ROOT), root=ROOT)",
+  "runtime_note": "Restart or redeploy code before loading published projections; existing8003process was started before final pin."
+}

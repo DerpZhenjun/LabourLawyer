@@ -18,6 +18,8 @@ from regional_public_provenance import public_evidence
 
 ROOT=Path(__file__).resolve().parents[1]
 EJS='jiangsu_own_blank_oct29e_v1'
+FJS='jiangsu_own_blank_oct30f_v1'
+EXACT_JS={EJS,FJS}
 ZJ_OWN={'zhejiang_own_worker_oct29d_v1','zhejiang_own_worker_oct29e_v1','zhejiang_chunan_own_worker_oct30_v1'}
 HN={'hunan_own_legacy_worker_oct29b_v1','hunan_own_legacy_worker_oct29c_v1'}
 JS_BLANK={'jiangsu_xishan_blank_v1','jiangsu_own_blank_oct29_v1',
@@ -25,8 +27,8 @@ JS_BLANK={'jiangsu_xishan_blank_v1','jiangsu_own_blank_oct29_v1',
 REFERENCE={'sichuan_combined_reference_v1','tianfu_reference_v1'}
 NINGBO='zhejiang_ningbo_own_blank_oct29_v1'
 FEIDONG='anhui-feidong-official-application-20261029'
-SUPPORTED_ADAPTERS=frozenset({EJS,NINGBO,FEIDONG}|ZJ_OWN|HN|JS_BLANK|REFERENCE)
-PUBLIC_PROOF_ADAPTERS=frozenset({EJS,NINGBO,FEIDONG,'jiangsu_own_blank_oct29c_v1','jiangsu_own_blank_oct29d_v1'}|ZJ_OWN|HN)
+SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG}|ZJ_OWN|HN|JS_BLANK|REFERENCE)
+PUBLIC_PROOF_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,'jiangsu_own_blank_oct29c_v1','jiangsu_own_blank_oct29d_v1'}|ZJ_OWN|HN)
 
 JS_APP=('applicantName birthDate gender idNumber idAddress otherDocumentType otherDocumentNumber '
         'applicantMailingAddress phone acceptMediation legalAid respondentName respondentType '
@@ -105,7 +107,7 @@ def _fields(adapter,kind,schema):
         if kind!='application':raise ValueError('湖南附随证据属于劳动者申请书，不是独立证据清单')
         keys=HN_APP;item_keys=['name','source','purpose']
     elif kind=='application':
-        keys=JS_APP if adapter in JS_BLANK|{EJS} else ZJ_APP if adapter in ZJ_OWN|{NINGBO} else SAMPLE_APP
+        keys=JS_APP if adapter in JS_BLANK|EXACT_JS else ZJ_APP if adapter in ZJ_OWN|{NINGBO} else SAMPLE_APP
         item_keys=[]
     elif adapter in REFERENCE:
         keys=['evidenceList'];item_keys=SAMPLE_ITEM
@@ -119,8 +121,8 @@ def _fields(adapter,kind,schema):
         prop=_resolve(schema,properties[key]);field={'key':key,'label':LABELS[key],'type':'text','nullable':False}
         if key=='copyCount':field['label']='申请书副本份数' if kind=='application' else '证据清单份数'
         if key=='idAddress':
-            field['label']='户籍所在地' if adapter in REFERENCE else '申请人居住地址' if adapter in JS_BLANK|{EJS} else '住所' if adapter in HN else '身份证住址'
-        if key=='idNumber' and adapter in JS_BLANK|{EJS}:field['label']='公民身份号码'
+            field['label']='户籍所在地' if adapter in REFERENCE else '申请人居住地址' if adapter in JS_BLANK|EXACT_JS else '住所' if adapter in HN else '身份证住址'
+        if key=='idNumber' and adapter in JS_BLANK|EXACT_JS:field['label']='公民身份号码'
         if key=='evidenceList' and adapter in HN:field['label']='申请书附随证据'
         if key=='evidenceList':
             item=_resolve(schema,prop['items']);children=[]
@@ -146,7 +148,7 @@ def _fields(adapter,kind,schema):
             # Existing generic date slots and UI input elements have no model
             # bound; publish a conservative editable text capacity, not a rule.
             field['maxLength']=maximum if maximum is not None else 300
-            if adapter==EJS and key in {'birthDate','applicationDate','submitDate'}:field['format']='iso-date'
+            if adapter in EXACT_JS and key in {'birthDate','applicationDate','submitDate'}:field['format']='iso-date'
             if adapter in ZJ_OWN and key=='householdType':field['choices']=list(HOUSEHOLD_CHOICES)
             if adapter in JS_BLANK and key in {'acceptMediation','legalAid'}:field['choices']=['是','否']
         result.append(field)
@@ -197,7 +199,7 @@ def build_form_contract(guide,template,kind,root=None):
     context={k:guide[k] for k in identity};context.update(version=guide['version'],template_id=template['id'],kind=kind,
         mode='blank' if template['official_kind']=='blank' else 'reference_adaptation',adapter=adapter)
     policy={'unknown_fields':'reject','invalid_xml':'reject','capacity_is_official_requirement':False,'text_controls':'xml',
-            'trim_text':adapter not in HN|ZJ_OWN|{EJS}}
+            'trim_text':adapter not in HN|ZJ_OWN|EXACT_JS}
     if adapter in JS_BLANK|REFERENCE|{NINGBO} and kind=='application':policy['text_list_total_max_length']={'requests':1200}
     if adapter==FEIDONG:
         policy['text_controls']='newline_only'

@@ -1,0 +1,152 @@
+{
+  "scope": "two own F localities, four actual native confirmation downloads; no API replay counted",
+  "tools": [
+    "named isolated agent-browser overnight-oct30f",
+    "isolated chrome-devtools context overnight-oct30f-candidate"
+  ],
+  "download_method": "ordinary native confirmation click; exact own four filenames copied from browser default download folder; ZIP/header/length checks",
+  "checks": [
+    {
+      "region_code": "320581",
+      "district": "常熟市",
+      "kind": "application",
+      "source_id": "9a24af792c956feb67bd37c6",
+      "version": 3,
+      "template_id": "9992a58d-12a7-4131-8317-82e2358af86f",
+      "contract_id": "37cc9dc0338cc3eec779cc5f2c6d0995d81ee0b09495fafaea8efca87b6a889c",
+      "http_status": 200,
+      "origin": "official-blank-filled",
+      "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "output_file": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser/320581-application.docx",
+      "bytes": 12624,
+      "output_sha256": "132eccf19cb38f8782e095c1fd081ef83d5e06e05e51858f61a72bf4fbf7a10c",
+      "native_confirmation_click": true,
+      "non_document_xml_parts": "byte_identical",
+      "own_original_unchanged": true
+    },
+    {
+      "region_code": "320581",
+      "district": "常熟市",
+      "kind": "evidence",
+      "source_id": "9a24af792c956feb67bd37c6",
+      "version": 3,
+      "template_id": "0671a152-24d1-4c00-bf92-f281dc2451c0",
+      "contract_id": "cb5b842e8babb70184ae20a15f435b622cd000bc9f6b7320a3283656d24ab674",
+      "http_status": 200,
+      "origin": "official-blank-filled",
+      "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "output_file": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser/320581-evidence.docx",
+      "bytes": 11525,
+      "output_sha256": "0cfdc159723a923d40a59fa5f6cc3cd0dc1e83241962fdd8de9edc06fb84ef44",
+      "native_confirmation_click": true,
+      "non_document_xml_parts": "byte_identical",
+      "own_original_unchanged": true
+    },
+    {
+      "region_code": "320582",
+      "district": "张家港市",
+      "kind": "application",
+      "source_id": "95e826085ed0fec9f410cc86",
+      "version": 4,
+      "template_id": "e7792a1a-fbf0-461d-9574-67196dec0d6b",
+      "contract_id": "e25646634178f9fdf7a6809a2c711511dfd007ce7b2a553cd59741c17548a756",
+      "http_status": 200,
+      "origin": "official-blank-filled",
+      "source_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "output_file": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser/320582-application.docx",
+      "bytes": 12624,
+      "output_sha256": "132eccf19cb38f8782e095c1fd081ef83d5e06e05e51858f61a72bf4fbf7a10c",
+      "native_confirmation_click": true,
+      "non_document_xml_parts": "byte_identical",
+      "own_original_unchanged": true
+    },
+    {
+      "region_code": "320582",
+      "district": "张家港市",
+      "kind": "evidence",
+      "source_id": "95e826085ed0fec9f410cc86",
+      "version": 4,
+      "template_id": "fb67c9e4-1f9f-4e6c-bdb0-cc6c04f0966a",
+      "contract_id": "b8443bb9be1ea8dcaa1fc7fecf6f2e64e7f72fb08dd02851243f27a2f10da1d7",
+      "http_status": 200,
+      "origin": "official-blank-filled",
+      "source_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "output_file": "reports/overnight-gap-closure-20261030/localities/jiangsu-f/browser/320582-evidence.docx",
+      "bytes": 11525,
+      "output_sha256": "0cfdc159723a923d40a59fa5f6cc3cd0dc1e83241962fdd8de9edc06fb84ef44",
+      "native_confirmation_click": true,
+      "non_document_xml_parts": "byte_identical",
+      "own_original_unchanged": true
+    }
+  ],
+  "cancelled_blank_confirmation_generation_posts": 0,
+  "blank_application_names_optional": true,
+  "blank_evidence_rows": 1,
+  "viewport_metrics": [
+    {
+      "engine": "agent-browser",
+      "width": 375,
+      "clientWidth": 375,
+      "scrollWidth": 375
+    },
+    {
+      "engine": "agent-browser",
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768
+    },
+    {
+      "engine": "agent-browser",
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "engine": "MCP explicit viewport",
+      "width": 375,
+      "clientWidth": 360,
+      "scrollWidth": 360
+    },
+    {
+      "engine": "MCP explicit viewport",
+      "width": 768,
+      "clientWidth": 753,
+      "scrollWidth": 753
+    },
+    {
+      "engine": "MCP explicit viewport",
+      "width": 1440,
+      "clientWidth": 1425,
+      "scrollWidth": 1425
+    }
+  ],
+  "source_switch": {
+    "method": "native fill_form applicant then district selector",
+    "from": "320581",
+    "to": "320582",
+    "old_fictitious_draft_retained": false,
+    "new_applicant_default": "陈虚构",
+    "dialog_count": 0,
+    "new_official_source_host": "szzjg.jszwfw.gov.cn"
+  },
+  "online_fallback": {
+    "label": "打开官方指南，核对在线入口",
+    "own_official_guide_urls": true,
+    "local_self_link": false,
+    "stale_source_only_warnings": 0
+  },
+  "downloaded_word_visual_review": "PASS all6pages individually viewed",
+  "production_db_or_seed_changed": false,
+  "model_calls": 0,
+  "render_pages": {
+    "320581": {
+      "application": 2,
+      "evidence": 1
+    },
+    "320582": {
+      "application": 2,
+      "evidence": 1
+    }
+  },
+  "screenshots_reviewed": 6
+}
