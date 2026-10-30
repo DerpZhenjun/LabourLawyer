@@ -60,7 +60,7 @@ class IssueDeliveryTests(unittest.TestCase):
         data = (self.workspace / self.store.events()[0]['receipt']['content_file']).read_text(encoding='utf8')
         for private in ('PRIVATE_DOC', 'PRIVATE_TOKEN', 'PRIVATE_PASSWORD', 'identity.png', 'user_document'):
             self.assertNotIn(private, data)
-        self.assertEqual(json.loads(data)['events'][0]['url'], 'https://example.gov.cn/guide?areaCode=510105')
+        self.assertNotIn('url', json.loads(data)['events'][0])
 
     def test_missing_workspace_leaves_pending_without_creating_fake_workspace(self):
         missing = self.root / 'offline-volume' / 'workspace'
@@ -235,7 +235,7 @@ class IssueDeliveryTests(unittest.TestCase):
                 self.assertEqual(event['url'], url)
         event = self.delivery._public_event(json.dumps({'id': 'oauth', 'type': 'AUTH_REQUIRED',
             'url': 'https://user.zjzwfw.gov.cn/login?code=SECRET&state=SECRET#access_token=SECRET&refresh_token=SECRET'}), 'oauth')
-        self.assertEqual(event['url'], 'https://user.zjzwfw.gov.cn/login')
+        self.assertNotIn('url', event)
 
     def test_service_verification_rejects_global_profile_and_mismatched_workspace(self):
         for profile in [None, 'default', 'main']:

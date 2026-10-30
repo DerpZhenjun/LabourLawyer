@@ -74,6 +74,8 @@ jobs:
         run: node scripts/client-pipeline.mjs build --targets web,mini
       - name: Run isolated backend regressions
         run: python scripts/ci-backend.py
+      - name: Run exact guarded collector crash and restart fixtures
+        run: python scripts/ci-collector-crash.py
       - name: Ensure checks did not regenerate committed files
         run: git diff --exit-code
 

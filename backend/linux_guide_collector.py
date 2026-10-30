@@ -63,6 +63,7 @@ class CollectorConfig:
     navigation_timeout_seconds: float = 45
     max_attachments: int = 6
     max_attachment_bytes: int = 20 * 1024 * 1024
+    issue_outbox: Path | None = None
 
     def __post_init__(self):
         for name in ('data_dir', 'release_dir', 'browser_executable'):
@@ -71,6 +72,16 @@ class CollectorConfig:
             object.__setattr__(self, name, Path(getattr(self, name)).expanduser().resolve())
         if self.data_dir == self.release_dir or self.data_dir.is_relative_to(self.release_dir):
             raise ValueError('Collector state must be outside the immutable release')
+        if self.issue_outbox is not None:
+            issue=Path(self.issue_outbox).expanduser()
+            if (not issue.is_absolute() or issue.resolve()!=issue or issue.is_relative_to(self.release_dir)
+                    or issue==self.data_dir/'queue.sqlite3' or issue.is_relative_to(self.data_dir/'evidence')
+                    or issue.name.lower() in {'regional-guides.sqlite','regional-guides.sqlite3','regional-directory.sqlite','queue.sqlite3','partlawyer.db'}
+                    or any(a.lower()=='backend' and b.lower()=='data' for a,b in zip(issue.parts,issue.parts[1:]))):
+                raise ValueError('Explicit dedicated issue outbox must stay outside the release, queue and evidence')
+            if not issue.parent.is_dir() and not issue.parent.is_relative_to(self.data_dir):
+                raise ValueError('Issue outbox outside collector state needs an existing parent')
+            object.__setattr__(self,'issue_outbox',issue)
         if not self.allowed_hosts or any(not re.fullmatch(r'[a-z0-9.-]+\.gov\.cn', h) for h in self.allowed_hosts):
             raise ValueError('Explicit official allowed_hosts required')
         if not (1 <= self.capacity <= 1000 and 1 <= self.batch_limit <= 32 and
@@ -121,6 +132,11 @@ class GuideQueue:
                 id TEXT PRIMARY KEY, url TEXT NOT NULL, region TEXT NOT NULL,
                 state TEXT NOT NULL, attempt INTEGER NOT NULL DEFAULT 0,
                 created_at TEXT NOT NULL, updated_at TEXT NOT NULL, result TEXT)''')
+            db.execute('''CREATE TABLE IF NOT EXISTS job_observations (
+                job_id TEXT NOT NULL, attempt INTEGER NOT NULL, source_url TEXT NOT NULL,
+                region TEXT NOT NULL, result TEXT NOT NULL, recorded_at TEXT NOT NULL,
+                issue_state TEXT NOT NULL DEFAULT 'pending', issue_error_type TEXT,
+                PRIMARY KEY(job_id,attempt))''')
         if os.name == 'posix': self.database.chmod(0o600)
 
     @contextmanager
@@ -128,6 +144,7 @@ class GuideQueue:
         db = sqlite3.connect(self.database, timeout=10)
         db.row_factory = sqlite3.Row
         try:
+            db.execute('PRAGMA synchronous=FULL')
             with db:yield db
         finally:db.close()
 
@@ -200,19 +217,120 @@ class GuideQueue:
     def finish(self, identifier, result):
         job=self.get(identifier)
         if job['state']!='running':raise ValueError('Job is not running')
-        outbox=self.root/'outbox'
-        outbox.mkdir(exist_ok=True,mode=0o700)
-        # A local review proposal, never an automatically published issue.
-        save_json(outbox/(identifier+'-'+str(job['attempt'])+'.json'),{
-            'schema_version':1,'job_id':identifier,'attempt':job['attempt'],'state':'pending_review',
-            'source_url':job['url'],'region':job['region'],'observed_at':result.get('observed_at',now()),
-            'observation_state':result.get('state','unverified'),'service_absent':False,
-            'review_required':True,'attachment_template_match':'unknown_until_review',
-            'evidence':[{'file':x['file'],'sha256':x['sha256'],'bytes':x['bytes']} for x in result.get('evidence',[])],
-            'notes':'Public browser observation only; failures do not prove absence. No case or account data.'})
+        if not isinstance(result,dict):raise ValueError('Collector result must be an object')
         with self.connect() as db:
-            changed = db.execute("UPDATE jobs SET state='complete',result=?,updated_at=? WHERE id=? AND state='running'",(json.dumps(result,ensure_ascii=False),now(),identifier)).rowcount
+            db.execute('BEGIN IMMEDIATE')
+            stamp=now();encoded=json.dumps(result,ensure_ascii=False)
+            changed = db.execute("UPDATE jobs SET state='complete',result=?,updated_at=? WHERE id=? AND state='running' AND attempt=?",(encoded,stamp,identifier,job['attempt'])).rowcount
             if not changed:raise ValueError('Job is not running')
+            self._journal_observation(db,job,encoded,stamp)
+        # Never call an external writer before durable queue/result history.
+        with self.connect() as db:
+            observation=dict(db.execute('SELECT * FROM job_observations WHERE job_id=? AND attempt=?',(identifier,job['attempt'])).fetchone())
+        report=self._persist_issue_observation(observation)
+        # The historical private review JSON is secondary to both durable ledgers.
+        # Its filesystem failure must never discard a completed observation.
+        try:
+            outbox=self.root/'outbox';outbox.mkdir(exist_ok=True,mode=0o700)
+            save_json(outbox/(identifier+'-'+str(job['attempt'])+'.json'),{
+                'schema_version':1,'job_id':identifier,'attempt':job['attempt'],'state':'pending_review',
+                'source_url':job['url'],'region':job['region'],'observed_at':result.get('observed_at',now()),
+                'observation_state':result.get('state','unverified'),'service_absent':False,
+                'review_required':True,'attachment_template_match':'unknown_until_review',
+                'evidence':[{'file':x['file'],'sha256':x['sha256'],'bytes':x['bytes']} for x in result.get('evidence',[])],
+                'notes':'Public browser observation only; failures do not prove absence. No case or account data.'})
+            report['review_proposal_written']=True
+        except (OSError,ValueError,KeyError,TypeError):
+            report['review_proposal_written']=False
+        return report
+
+    @staticmethod
+    def _journal_observation(db,job,result,stamp):
+        region=job['region'] if isinstance(job['region'],str) else json.dumps(job['region'],ensure_ascii=False)
+        return db.execute('''INSERT INTO job_observations(job_id,attempt,source_url,region,result,recorded_at)
+            VALUES(?,?,?,?,?,?) ON CONFLICT(job_id,attempt) DO NOTHING''',
+            (job['id'],job['attempt'],job['url'],region,result,stamp)).rowcount
+
+    @staticmethod
+    def _issue_region(region):
+        # Exact administrative aliases only. Never rewrite queue/source history
+        # or infer a province, city or district from other places' facts.
+        from collector_issue_events import PROVINCES
+        names=('北京市 天津市 河北省 山西省 内蒙古自治区 辽宁省 吉林省 黑龙江省 上海市 江苏省 浙江省 安徽省 福建省 江西省 山东省 河南省 湖北省 湖南省 广东省 广西壮族自治区 海南省 重庆市 四川省 贵州省 云南省 西藏自治区 陕西省 甘肃省 青海省 宁夏回族自治区 新疆维吾尔自治区').split()
+        aliases=dict(zip(names,PROVINCES))
+        output=dict(region)
+        if type(output.get('province')) is str:output['province']=aliases.get(output['province'],output['province'])
+        return output
+
+    def _issue_store(self):
+        from collector_issue_events import CollectorIssueOutbox
+        path=self.config.issue_outbox
+        if path is None:return None
+        if path.resolve()!=path:raise ValueError('Issue outbox path changed')
+        if not path.parent.is_dir():
+            if not path.parent.is_relative_to(self.root):raise ValueError('Issue outbox parent unavailable')
+            path.parent.mkdir(parents=True,exist_ok=True,mode=0o700)
+        return CollectorIssueOutbox(path)
+
+    def _mark_issue_observation(self,observation,state,error_type=None):
+        with self.connect() as db:
+            db.execute('UPDATE job_observations SET issue_state=?,issue_error_type=? WHERE job_id=? AND attempt=?',
+                       (state,error_type,observation['job_id'],observation['attempt']))
+
+    def _persist_issue_observation(self,observation):
+        report={'enabled':self.config.issue_outbox is not None,'new_events':0,'new_observations':0,
+                'failed':0,'rejected':0,'sync_performed':False,'model_calls':0}
+        if self.config.issue_outbox is None:
+            self._mark_issue_observation(observation,'disabled');return report
+        try:
+            result=json.loads(observation['result']);region=self._issue_region(json.loads(observation['region']))
+            if isinstance(result,dict) and isinstance(result.get('region'),dict):
+                result={**result,'region':self._issue_region(result['region'])}
+            job={'id':observation['job_id'],'attempt':observation['attempt'],'url':observation['source_url'],
+                 'region':region,'updated_at':observation['recorded_at'],'result':result}
+            raw=self.root/'evidence'/job['id']/('attempt-'+str(job['attempt']))
+            folder=raw.resolve()
+            if folder!=raw or not folder.is_relative_to(self.root):raise ValueError('Evidence directory changed')
+            persisted=self._issue_store().record_result(job,allowed_hosts=self.config.allowed_hosts,evidence_root=folder)
+            self._mark_issue_observation(observation,'outbox_persisted')
+            report.update(new_events=persisted['inserted'],new_observations=persisted['observations_inserted'])
+        except Exception as exc:
+            rejected=isinstance(exc,ValueError);kind=type(exc).__name__
+            if not re.fullmatch('[A-Za-z][A-Za-z0-9_]{0,79}',kind):kind='Error'
+            self._mark_issue_observation(observation,'rejected' if rejected else 'error',kind)
+            report.update(failed=1,rejected=int(rejected))
+        return report
+
+    def replay_issue_events(self):
+        """Backfill durable nonrunning results; replay all snapshots idempotently.
+
+        Replaying even persisted snapshots repairs a lost/replaced dedicated
+        outbox, while the immutable issue writer preserves existing service ACKs.
+        No workspace export, gateway, model, browser or task import occurs here.
+        """
+        with self.connect() as db:
+            db.execute('BEGIN IMMEDIATE');backfilled=0
+            for row in db.execute("SELECT * FROM jobs WHERE result IS NOT NULL AND attempt>0 AND state!='running' ORDER BY rowid").fetchall():
+                backfilled+=self._journal_observation(db,dict(row),row['result'],row['updated_at'])
+            upper=db.execute('SELECT COALESCE(MAX(rowid),0) FROM job_observations').fetchone()[0]
+        report={'enabled':self.config.issue_outbox is not None,'backfilled':backfilled,'processed':0,
+                'new_events':0,'new_observations':0,'failed':0,'rejected':0,'sync_performed':False,'model_calls':0}
+        if not report['enabled']:return report
+        after=0
+        while after<upper:
+            with self.connect() as db:
+                rows=db.execute('SELECT rowid AS observation_rowid,* FROM job_observations WHERE rowid>? AND rowid<=? ORDER BY rowid LIMIT 100',(after,upper)).fetchall()
+            if not rows:break
+            for row in rows:
+                outcome=self._persist_issue_observation(dict(row));report['processed']+=1
+                for key in ['new_events','new_observations','failed','rejected']:report[key]+=outcome[key]
+                after=row['observation_rowid']
+        return report
+
+    def issue_event_status(self):
+        with self.connect() as db:counts={r[0]:r[1] for r in db.execute('SELECT issue_state,COUNT(*) FROM job_observations GROUP BY issue_state')}
+        return {'enabled':self.config.issue_outbox is not None,'observations':sum(counts.values()),'states':counts,
+                'sync_performed':False,'model_calls':0}
 
     def retry(self, identifier):
         self.get(identifier)
@@ -234,11 +352,12 @@ class GuideQueue:
     def recover_interrupted(self):
         # Called only while holding the exclusive worker lock, never by readers.
         with self.connect() as db:
-            rows=db.execute("SELECT id,attempt FROM jobs WHERE state='running'").fetchall()
+            rows=db.execute("SELECT * FROM jobs WHERE state='running'").fetchall()
             for row in rows:
                 state='queued' if row['attempt']<self.config.max_attempts else 'complete'
-                result=json.dumps({'state':'interrupted','service_verified':False,'error':'Worker exited before persisting a result'})
-                db.execute('UPDATE jobs SET state=?,result=?,updated_at=? WHERE id=?',(state,result,now(),row['id']))
+                stamp=now();result=json.dumps({'state':'interrupted','service_verified':False,'error':'Worker exited before persisting a result'})
+                db.execute('UPDATE jobs SET state=?,result=?,updated_at=? WHERE id=?',(state,result,stamp,row['id']))
+                self._journal_observation(db,dict(row),result,stamp)
             return len(rows)
 
 
@@ -518,6 +637,9 @@ async def run_worker(config, *, once=False, stop=None):
     queue=GuideQueue(config)
     with worker_lock(queue.root):
         queue.recover_interrupted()
+        # Existing complete results and recovered attempts precede any new visit.
+        # This does not run OpenClaw synchronization or acknowledge events.
+        queue.replay_issue_events()
         token=uuid.uuid4().hex
         start_ticks=Path('/proc/self/stat').read_text().split()[21]
         def heartbeat(state,job=None):save_json(queue.root/'worker.json',{'pid':os.getpid(),'process_start_ticks':start_ticks,'token':token,'updated_at':now(),'state':state,'job':job,'concurrency':1,'model_used':False})

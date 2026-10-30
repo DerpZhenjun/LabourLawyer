@@ -41,8 +41,14 @@ TESTS = (
     'test_kunshan_g_seed_publication',
     'test_fujian_oct31h',
     'test_fujian_oct31h_dispatch',
+    'test_gulou_h_seed_publication',
+    'test_generated_document_storage',
+    'test_regional_issue_public_urls',
     'test_service_capabilities',
     'test_linux_guide_collector',
+    'test_collector_issue_events',
+    'test_collector_issue_wiring',
+    'test_ci_subprocess_guard',
     'test_tls_deployment.TLSDeploymentTests',
     'test_tls_deployment.TLSInstallerTests',
     'test_platform_auth',
@@ -61,10 +67,24 @@ NODE_FIXTURES = {
 OFFLINE_EXCLUSIONS = {
     'test_linux_guide_collector.CollectorTests.test_os_worker_lock_rejects_second_process_and_releases_on_exit':
         'Runs real child processes; execute this named Linux case separately, outside the offline guard.',
+    'test_collector_issue_events.CollectorIssueEventTests.test_process_crash_before_commit_and_after_commit_replay_without_loss':
+        'Runs only in scripts/ci-collector-crash.py with exact child-command and inherited child audit guards.',
+    'test_collector_issue_wiring.CollectorIssueWiringTests.test_process_death_after_queue_commit_is_replayed_on_restart':
+        'Runs only in scripts/ci-collector-crash.py with exact child-command and inherited child audit guards.',
 }
+if os.name == 'nt':
+    # This Windows-only fixture invokes cmd/mklink to construct a real junction
+    # in its fresh Temp root. Keep the ordinary runner shell-free; execute the
+    # named fixture separately on Windows. Linux exercises its native symlink
+    # branch here without any child process or exclusion.
+    OFFLINE_EXCLUSIONS[
+        'test_generated_document_storage.GeneratedDocumentStorageTests.test_symlink_or_junction_generated_is_rejected_without_outside_writes'
+    ] = 'Windows junction construction needs its separately run, exact Temp-only fixture; no shell allowance in the offline gate.'
 
 
-def install_guard(sandbox):
+def make_guard(sandbox, *, python_policy=None, allow_node=True):
+    """Default is Node-only; the dedicated crash runner supplies a narrow policy."""
+    sandbox = Path(sandbox).resolve()
     # Windows implements the stdlib's socketpair using loopback sockets. Only
     # that exact stdlib frame may connect/bind, so asyncio can create its wakeup
     # pair without allowing application connections (including localhost).
@@ -83,7 +103,7 @@ def install_guard(sandbox):
             if not inside_socketpair():
                 raise RuntimeError('CI forbids real network connections and services')
         if event == 'sqlite3.connect':
-            database = os.fspath(args[0])
+            database = os.fsdecode(args[0])
             if database.startswith('file:'):
                 uri = urlsplit(database)
                 if uri.netloc: raise RuntimeError('CI SQLite URI must be a local sandbox path')
@@ -91,16 +111,23 @@ def install_guard(sandbox):
             if database != ':memory:' and not Path(database).resolve().is_relative_to(sandbox):
                 raise RuntimeError('CI SQLite database must be inside its temporary sandbox')
         if event == 'subprocess.Popen':
-            executable, argv, *_ = args
+            executable, argv, cwd, env = args
             if os.name == 'nt' and executable is None and isinstance(argv, str):
                 allowed = argv in {subprocess.list2cmdline(['node', str(f)]) for f in NODE_FIXTURES}
             else:
                 allowed = (executable is not None and Path(executable).stem.lower() == 'node'
                            and isinstance(argv, (list, tuple)) and len(argv) == 2
                            and Path(argv[1]).resolve() in NODE_FIXTURES)
+            allowed = (allow_node and allowed) or (python_policy is not None and python_policy(executable, argv, cwd, env))
             if not allowed:
-                raise RuntimeError('CI subprocess is outside the named offline Node fixtures')
-    sys.addaudithook(audit)
+                raise RuntimeError('CI subprocess is outside the exact named offline fixtures')
+        if event in {'os.system', 'os.posix_spawn', 'os.spawn', 'os.exec', 'os.fork', 'os.forkpty', 'os.startfile', 'os.startfile/2'}:
+            raise RuntimeError('CI forbids shell and alternate process launch paths')
+    return audit
+
+
+def install_guard(sandbox, *, python_policy=None, allow_node=True):
+    sys.addaudithook(make_guard(sandbox, python_policy=python_policy, allow_node=allow_node))
 
 
 def check_guard(sandbox):

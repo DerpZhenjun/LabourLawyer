@@ -1,8 +1,6 @@
 from __future__ import annotations
 
-import os
 import re
-import tempfile
 
 from fastapi import APIRouter, BackgroundTasks, HTTPException
 from fastapi.responses import FileResponse
@@ -12,6 +10,7 @@ from province_documents import PROVINCE_DOCUMENTS, get_province_document
 from document_forms import province_form, validate_content
 from WenShu.generic_template_fill import generate_application, generate_evidence
 from api_contracts import ProvinceCatalogResponse
+from generated_document_storage import save_generated_document
 
 
 router = APIRouter()
@@ -114,27 +113,20 @@ class EvidenceRequest(BaseModel):
     evidenceList: list[EvidenceItem] = Field(default_factory=list, max_length=40)
 
 
-def _remove(path: str):
-    try:
-        os.remove(path)
-    except OSError:
-        pass
-
-
 def _filename(value: str, fallback: str) -> str:
     safe = re.sub(r'[<>:"/\\|?*\x00-\x1f]', "", value).strip(" .")
     return (safe[:60] or fallback) + ".docx"
 
 
 def _response(doc, filename: str, background_tasks: BackgroundTasks):
-    from pathlib import Path
-    output_dir=Path(__file__).resolve().parents[2]/'.runtime'/'generated'
-    output_dir.mkdir(parents=True,exist_ok=True)
-    with tempfile.NamedTemporaryFile(dir=output_dir,delete=False, suffix=".docx") as tmp:
-        doc.save(tmp.name)
-        path = tmp.name
-    background_tasks.add_task(_remove, path)
-    return FileResponse(path, filename=filename, media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document", headers={"Cache-Control": "no-store"})
+    saved=save_generated_document(doc)
+    try:
+        response=FileResponse(saved.path, filename=filename, media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document", headers={"Cache-Control": "no-store"}, background=background_tasks)
+        background_tasks.add_task(saved.cleanup)
+        return response
+    except BaseException:
+        saved.cleanup()
+        raise
 
 
 @router.get("", response_model=ProvinceCatalogResponse, response_model_exclude_unset=True)
