@@ -66,7 +66,7 @@ function defaultInputs(targets) {
   ])].sort()
 }
 
-const npm = (cwd, script, skipLifecycle = false) => ({ bin: 'npm', args: [...(skipLifecycle ? ['--ignore-scripts'] : []), 'run', script], cwd })
+const npm = (cwd, script, skipLifecycle = false, extraArgs = []) => ({ bin: 'npm', args: [...(skipLifecycle ? ['--ignore-scripts'] : []), 'run', script, ...extraArgs], cwd })
 const node = (script, ...args) => ({ bin: 'node', args: [script, ...args], cwd: '.' })
 
 export function createGraph(root, targets) {
@@ -97,7 +97,7 @@ export function createGraph(root, targets) {
       ? { deps: ['android:build'] }
       : { deps: ['web:check'], command: npm('frontend', 'build', true), artifacts: [{ path: 'frontend/dist', fresh: true, staticRoot: 'frontend/public', required: ['index.html'] }] },
     'mini:build': { deps: ['mini:check'], command: npm('miniprogram', 'build'), artifacts: [{ path: 'miniprogram', kind: 'mini', fresh: false, required: ['app.js', 'app.json', 'app.wxss'] }] },
-    'android:build': { deps: ['android:check'], command: npm('mobile', 'android:apk', true), artifacts: [{ path: 'frontend/dist', fresh: true, staticRoot: 'frontend/public', required: ['index.html'] }, { path: 'mobile/android/app/build/outputs/apk/debug/app-debug.apk', fresh: true }] },
+    'android:build': { deps: ['android:check'], command: npm('mobile', 'android:apk', true, ['--', '--rerun-tasks']), artifacts: [{ path: 'frontend/dist', fresh: true, staticRoot: 'frontend/public', required: ['index.html'] }, { path: 'mobile/android/app/build/outputs/apk/debug/app-debug.apk', fresh: true }] },
     'avatar:build': { deps: ['avatar:check'], command: npm('ChatVRM', 'build'), artifacts: [{ path: 'ChatVRM/.next', kind: 'next', fresh: true, required: ['BUILD_ID'] }] },
   }
   if (targets.includes('desktop')) {

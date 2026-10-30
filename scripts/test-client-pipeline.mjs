@@ -223,6 +223,11 @@ if (api) {
     }
   })
 
+  test('release Android command rebuilds Gradle outputs rather than attesting an up-to-date old APK', t => {
+    const f=fixture(t),command=api.createGraph(f.root,['android'])['android:build'].command
+    assert.deepEqual(command.args.slice(-2),['--','--rerun-tasks'],'The forced rebuild flag must reach Gradle through npm run')
+  })
+
   test('unchanged static source copies keep old mtimes and carry independently checked source evidence', async t => {
     const f = fixture(t)
     f.targets = ['web']
