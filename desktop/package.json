@@ -8,7 +8,7 @@
   "main": "main.cjs",
   "scripts": {
     "dev": "electron .",
-    "test": "node --test test-server.cjs",
+    "test": "node --test test-server.cjs test-connection.cjs",
     "build:frontend": "node build-release.cjs --web-only",
     "dist": "node build-release.cjs"
   },
@@ -27,7 +27,8 @@
       "preload.cjs",
       "server.cjs",
       "start.html",
-      "README.md"
+      "README.md",
+      "connection-store.cjs"
     ],
     "extraResources": [
       {

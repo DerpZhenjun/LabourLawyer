@@ -58,6 +58,7 @@ jobs:
       - name: Check release metadata and typed page coverage
         run: |
           node scripts/test-client-release.mjs
+          node --test desktop/test-server.cjs desktop/test-connection.cjs
           node scripts/test-typed-page-coverage.mjs
           node scripts/test-auth-session.mjs
           node scripts/test-server-workspace.mjs

@@ -46,7 +46,7 @@ fs.writeFileSync(path.join(output, 'license-audit.json'), JSON.stringify(audit, 
 if (!process.argv.includes('--web-only')) {
   const config = structuredClone(require('./package.json').build)
   config.directories.output = path.join(output, 'artifacts')
-  config.extraResources = [{ from: path.join(output, 'web'), to: 'web' }, { from: notices, to: 'notices' }]
+  config.extraResources = [{ from: path.join(output, 'web'), to: 'web' }, { from: notices, to: 'notices' },{from:path.join(root,'packages/client-contracts/generated/index.cjs'),to:'client-contracts.cjs'}]
   config.nsis.license = path.join(notices, 'INSTALL-LICENSE.txt')
   const configPath = path.join(output, 'builder-config.json')
   fs.writeFileSync(configPath, JSON.stringify(config, null, 2)+'\n')

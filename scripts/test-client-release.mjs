@@ -16,13 +16,14 @@ const preloadVersion=folder=>{
  runInNewContext(readFileSync(path.join(folder,'desktop/preload.cjs'),'utf8'),{
   require:name=>{
    assert.equal(name,'electron','Actual preload must only import the Electron bridge')
-   return {contextBridge:{exposeInMainWorld:(name,value)=>{assert.equal(name,'labourLawyerDesktop');calls++;bridge=value}}}
+   return {ipcRenderer:{sendSync:(channel,payload)=>{assert.equal(channel,'labourlawyer:connection');assert(['read','write'].includes(payload.action));return{ok:true,value:null}}},contextBridge:{exposeInMainWorld:(name,value)=>{assert.equal(name,'labourLawyerDesktop');calls++;bridge=value}}}
   },process:{platform:'win32'},
  },{timeout:1000})
  assert.equal(calls,1,'Actual preload must expose exactly one bridge')
  assert(Object.isFrozen(bridge),'Actual desktop bridge must remain frozen')
  const {version,...capabilities}=JSON.parse(JSON.stringify(bridge))
- assert.deepEqual(capabilities,{platform:'win32',desktop:true,bundledBackend:false,bundledModel:false},'Version sync must preserve the actual runtime bridge capabilities')
+ assert.deepEqual(capabilities,{platform:'win32',desktop:true,bundledBackend:false,bundledModel:false,connection:{}},'Version sync must preserve the actual runtime bridge capabilities')
+ assert(Object.isFrozen(bridge.connection));assert.equal(bridge.connection.read(),null);assert.equal(bridge.connection.write(null),null)
  return version
 }
 const fixture=mkdtempSync(path.join(tmpdir(),'labourlawyer-release-'))

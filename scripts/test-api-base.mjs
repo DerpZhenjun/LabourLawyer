@@ -80,3 +80,19 @@ for(const selected of ['https://selected-service.example','']){
  scope.stop()
 }
 console.log('PASS actual configured API overrides build address for regional lookup/contract/Word/originals, workflow and authenticated collection; relative same-origin base remains valid')
+
+// Distinct renderer origins cannot share localStorage; the narrow desktop bridge can.
+let persisted=null
+const bridge={read:()=>persisted,write:value=>{persisted=value}}
+const connectionCode=read('frontend/src/api/connection.ts')
+const connectionRuntime=storage=>{
+ const js=ts.transpileModule(connectionCode,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText,module={exports:{}}
+ vm.runInNewContext(js,{module,exports:module.exports,window:{labourLawyerDesktop:{connection:bridge}},localStorage:storage,require:()=>shared})
+ return module.exports
+}
+const memory=()=>{const data=new Map();return{getItem:k=>data.get(k)??null,setItem:(k,v)=>data.set(k,v),removeItem:k=>data.delete(k)}}
+const first=connectionRuntime(memory());first.saveConnection({api:'http://192.168.110.81:8088',digital:''})
+const restarted=connectionRuntime(memory());assert.equal(restarted.savedConnection().api,'http://192.168.110.81:8088','Actual frontend must preserve selection across a new desktop origin')
+restarted.clearConnection();assert.equal(connectionRuntime(memory()).savedConnection(),null)
+assert.throws(()=>first.saveConnection({api:'https://user:secret@server',digital:''}));assert.equal(persisted,null)
+console.log('PASS actual connection module uses origin-independent desktop settings across restart; reset and shared address validation preserved')

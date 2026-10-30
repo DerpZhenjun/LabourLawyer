@@ -1,10 +1,12 @@
-const { app, BrowserWindow, shell } = require('electron')
+const { app, BrowserWindow, shell, ipcMain } = require('electron')
 const http = require('node:http')
 const path = require('node:path')
 const { createHandler } = require('./server.cjs')
+const {createConnectionStore,handleConnectionRequest,trustedConnectionFrame}=require('./connection-store.cjs')
 
 const isDev = !app.isPackaged
 let staticServer
+const trustedWindows=new Map()
 
 function startStaticServer() {
   const webRoot = path.resolve(process.resourcesPath, 'web')
@@ -33,6 +35,7 @@ async function createWindow() {
     },
   })
 
+  const contentsId=win.webContents.id
   win.once('ready-to-show', () => win.show())
   win.webContents.setWindowOpenHandler(({ url }) => {
     if (/^https?:/.test(url)) shell.openExternal(url)
@@ -40,16 +43,22 @@ async function createWindow() {
   })
   if (isDev) {
     const devUrl = process.env.LABOURLAWYER_DEV_URL || 'http://127.0.0.1:5173'
+    trustedWindows.set(win.webContents.id,new URL(devUrl).origin)
     win.webContents.on('will-navigate', (event, url) => { if (new URL(url).origin !== new URL(devUrl).origin) event.preventDefault() })
     await win.loadURL(devUrl)
   } else {
     const appUrl = staticServer ? `http://127.0.0.1:${staticServer.address().port}` : await startStaticServer()
+    trustedWindows.set(win.webContents.id,appUrl)
     win.webContents.on('will-navigate', (event, url) => { if (new URL(url).origin !== appUrl) event.preventDefault() })
     await win.loadURL(appUrl + '/__desktop/start')
   }
+  win.on('closed',()=>trustedWindows.delete(contentsId))
 }
 
 app.whenReady().then(() => {
+  const contracts=require(isDev?'../packages/client-contracts/generated/index.cjs':path.join(process.resourcesPath,'client-contracts.cjs'))
+  const store=createConnectionStore(path.join(app.getPath('userData'),'connection.json'),contracts.normalizeServiceAddress)
+  ipcMain.on('labourlawyer:connection',(event,payload)=>handleConnectionRequest(event,payload,e=>trustedConnectionFrame(e,trustedWindows),store))
   createWindow()
   app.on('activate', () => { if (BrowserWindow.getAllWindows().length === 0) createWindow() })
 })
