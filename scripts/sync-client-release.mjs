@@ -22,6 +22,10 @@ export function syncRelease({root=ROOT,check=true}={}){
  const desktopVersion=/(<p class="tag">Windows 桌面客户端 · v)[^<]+(<\/p>)/g
  if([...start.matchAll(desktopVersion)].length!==1)throw Error('Missing or ambiguous desktop start page release version')
  files[desktopStart]=start.replace(desktopVersion,(_,prefix,suffix)=>prefix+release.version+suffix)
+ const desktopPreload='desktop/preload.cjs',preload=read(desktopPreload)
+ const bridgeVersion=/^(\s*version:\s*)'[^']*'(,?)$/gm
+ if([...preload.matchAll(bridgeVersion)].length!==1)throw Error('Missing or ambiguous desktop preload bridge version')
+ files[desktopPreload]=preload.replace(bridgeVersion,(_,prefix,suffix)=>prefix+"'"+release.version+"'"+suffix)
  const data={version:release.version,channel:release.channel}
  files['miniprogram/utils/generated/release-info.js']='// Generated from config/client-release.json. Do not edit.\nmodule.exports = '+JSON.stringify(data,null,2)+'\n'
  files['miniprogram/utils/generated/release-info.d.ts']='// Generated from config/client-release.json. Do not edit.\ndeclare const release: {readonly version:'+JSON.stringify(release.version)+';readonly channel:'+JSON.stringify(release.channel)+'}\nexport = release\n'

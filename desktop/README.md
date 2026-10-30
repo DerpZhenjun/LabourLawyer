@@ -21,7 +21,7 @@ cd ../desktop && npm install && npm run dev
 
 ## 统一版本与发布检查
 
-产品版本由 `config/client-release.json` 同步到本端和其他客户端。在仓库根目录运行 `node scripts/client-pipeline.mjs build --targets desktop`，构建成功后才可用生成的 receipt 准备 SHA-256 附件白名单。仅有 plan 或历史 EXE 不算本次构建通过。本版同步到 1.2.0-preview.2，同源 API 地址仍经本端本地代理连接后端；不会启动模型。见 [脚本入口](../scripts/README.md)。
+产品版本由 `config/client-release.json` 同步到本端和其他客户端，包括启动页和预加载桥接的实际版本。在仓库根目录运行 `node scripts/client-pipeline.mjs build --targets desktop`，构建成功后才可用生成的 receipt 准备 SHA-256 附件白名单。仅有 plan 或历史 EXE 不算本次构建通过。本版同步到 1.2.0-preview.3，同源 API 地址仍经本端本地代理连接后端，也可通过“连接设置”使用下方 Ubuntu 服务；不会启动模型。见 [脚本入口](../scripts/README.md)。
 
 ## 连接 Ubuntu 服务
 

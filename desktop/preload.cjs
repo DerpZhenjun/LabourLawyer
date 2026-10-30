@@ -3,7 +3,7 @@ const { contextBridge } = require('electron')
 contextBridge.exposeInMainWorld('labourLawyerDesktop', Object.freeze({
   platform: process.platform,
   desktop: true,
-  version: '1.1.0-preview.2',
+  version: '1.2.0-preview.3',
   bundledBackend: false,
   bundledModel: false,
 }))

@@ -47,4 +47,4 @@ npm --prefix miniprogram test
 
 稳定的健康、AI 和省级文书接口由实际 FastAPI 路由导出 OpenAPI，再生成共享 TypeScript 类型及 AI 长度约束；动态区县字段继续使用各自模板契约。`compile` 会同步接口、版本和运行代码，`node ../scripts/client-pipeline.mjs check --targets web,mini` 执行统一检查。详情见 [脚本入口](../scripts/README.md)。
 
-产品版本来自 `config/client-release.json`；请运行 `node scripts/sync-client-release.mjs`，不要分别修改多个端的版本号。新预览版本为 1.2.0-preview.2；本地构建并不代表已上传或发布微信。
+产品版本来自 `config/client-release.json`；请运行 `node scripts/sync-client-release.mjs`，不要分别修改多个端的版本号。新预览版本为 1.2.0-preview.3；本地构建并不代表已上传或发布微信。
