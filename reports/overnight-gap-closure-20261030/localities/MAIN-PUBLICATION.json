@@ -1,0 +1,27 @@
+{
+  "scope": "Windows main incremental F publication",
+  "verified_at": "2026-10-30T16:03:24.773628+00:00",
+  "release_commit": "a79bad96b83ba1442858873a455e4cb2dbe24188",
+  "guides": 205,
+  "generatable": 188,
+  "history_before": 211,
+  "history_after": 213,
+  "new_regions": [
+    {
+      "region_code": "320581",
+      "source_id": "9a24af792c956feb67bd37c6",
+      "version": 212
+    },
+    {
+      "region_code": "320582",
+      "source_id": "95e826085ed0fec9f410cc86",
+      "version": 213
+    }
+  ],
+  "raw_old_rows_current_outbox_schema_preserved": true,
+  "outbox_counts": {
+    "ACKNOWLEDGED_OPENCLAW": 377
+  },
+  "public_backup_uploaded": false,
+  "windows_model_started": false
+}

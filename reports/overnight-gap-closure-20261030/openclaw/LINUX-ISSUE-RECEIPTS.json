@@ -1,0 +1,83 @@
+{
+  "verified_at": "2026-10-30T16:07:15.392623+00:00",
+  "transport": "real OpenClaw gateway tools.invoke/memory_get exact public bundle read-back",
+  "reviewed_public_problem_events": 2,
+  "acknowledged": 2,
+  "pending_in_separate_relay": 0,
+  "ai_reviewed": 0,
+  "model_calls": 0,
+  "existing_main_acknowledged_unchanged": 377,
+  "linux_original_observations_remain_pending_applicability_review": true,
+  "automatic_continuous_relay_implemented": false,
+  "raw_credentials_or_case_data_sent": false,
+  "events": [
+    {
+      "event_id": "6f3cf5a8f3e5594d83554ee72bd1de15",
+      "region_code": "320582",
+      "type": "GUIDE_PAGE_UNAVAILABLE",
+      "collector_job_id": "d4917b0c98b74f2cb2bd0ab681f48dbb",
+      "source_url": "https://szzjg.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=31&iddept_ql_inf=11320582551232000Y4002014302002&ql_kind=20&iddept_yw_inf=11320582551232000Y400201430200201",
+      "evidence": [
+        {
+          "file": "failure.png",
+          "bytes": 21016,
+          "sha256": "f1b8d460bfe9012b60db4773fe0c48d1e0cad8cc9b5c2a0dc04d11d0283331cb"
+        }
+      ],
+      "service_absence_claimed": false,
+      "source_applicability_approved": false,
+      "delivery_status": "ACKNOWLEDGED_OPENCLAW",
+      "receipt": {
+        "kind": "openclaw_service_readback",
+        "ok": true,
+        "accepted_event_ids": [
+          "6f3cf5a8f3e5594d83554ee72bd1de15",
+          "8f2f7dfbd5b95e9633a3ac033f9c0030"
+        ],
+        "service_acknowledged": true,
+        "ai_reviewed": false,
+        "content_sha256": "8e4e871803d8fef101a06c7824da762bd2871465be19cd77253ee325172165f7",
+        "evidence_sha256": "010002585bb59ac8bcaf26291d6232a66492ca1114cef489b53b7de4af842980"
+      }
+    },
+    {
+      "event_id": "8f2f7dfbd5b95e9633a3ac033f9c0030",
+      "region_code": "330127",
+      "type": "TEMPLATE_DOWNLOAD_FAILED",
+      "collector_job_id": "8e65c3d60b944a059751d4b21c5ff140",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ee47fff8-558c-4a85-88e9-8a28d2bddbdc",
+      "evidence": [
+        {
+          "file": "materials.png",
+          "bytes": 143994,
+          "sha256": "db51138fff37d7ccae44d2b5711b678e5afbb30bdabee538da8a7334fe58dc6c"
+        },
+        {
+          "file": "page.png",
+          "bytes": 290952,
+          "sha256": "453dcde2fd81505af3336729923e5d717486e91f01f19d7eba00f2598141e959"
+        },
+        {
+          "file": "page.txt",
+          "bytes": 2761,
+          "sha256": "081b45c4959a299935e3ff6516cf80d760393f3b5759a96d71f5fe1d4d6e6dbf"
+        }
+      ],
+      "service_absence_claimed": false,
+      "source_applicability_approved": false,
+      "delivery_status": "ACKNOWLEDGED_OPENCLAW",
+      "receipt": {
+        "kind": "openclaw_service_readback",
+        "ok": true,
+        "accepted_event_ids": [
+          "6f3cf5a8f3e5594d83554ee72bd1de15",
+          "8f2f7dfbd5b95e9633a3ac033f9c0030"
+        ],
+        "service_acknowledged": true,
+        "ai_reviewed": false,
+        "content_sha256": "8e4e871803d8fef101a06c7824da762bd2871465be19cd77253ee325172165f7",
+        "evidence_sha256": "010002585bb59ac8bcaf26291d6232a66492ca1114cef489b53b7de4af842980"
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "source_commit": "a79bad96b83ba1442858873a455e4cb2dbe24188",
+  "frozen_source_manifest_verified_after_build": true,
+  "source_files_verified": 74,
+  "generated_development_type_file_restored_to_frozen_input": [
+    "ChatVRM/next-env.d.ts"
+  ],
+  "production_build_id": "EfA_TAEyBCpdTrf2Hi4-N",
+  "next_version": "15.5.28",
+  "react_version": "18.2.0",
+  "npm_audit_vulnerabilities": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "clean_npm_ci": true
+}

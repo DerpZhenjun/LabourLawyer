@@ -1,0 +1,17 @@
+{
+  "verified_at": "2026-10-30T16:22:37.324173+00:00",
+  "method": "Chrome DevTools native controls and read-only DOM/network on restarted main5173/API8000",
+  "anonymous_fictional_only": true,
+  "initial_region": "320581",
+  "initial_source_id": "9a24af792c956feb67bd37c6",
+  "initial_version": 212,
+  "application_native_confirm": "HTTP200,12624bytes,correct source/version/contract headers; UI success",
+  "district_native_switch": "常熟市 to 张家港市; own officialhost changed szcs to szzjg; own source/version now95e826085ed0fec9f410cc86/213",
+  "evidence_default_items": 1,
+  "candidate_four_native_downloads_and_Word_review": "Separate sealed FINAL-BROWSER-QA receipt; not relabelled as this main test",
+  "main_download_file_saved_by_root": "NOT_CAPTURED; this pass asserts request/response and UI only",
+  "screenshots": "NOT_TAKEN; tool screenshot restriction respected",
+  "model_calls": 0,
+  "evidence_native_confirm": "HTTP200, correct own source/version; UI generated-success; no alert",
+  "result": "PASS_SCOPED_NATIVE_FLOW"
+}

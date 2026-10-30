@@ -1,0 +1,159 @@
+{
+  "scope": "Final successful committed-source Linux and actual Ubuntu evidence only. Private raw stdout/combined logs are SHA-pinned; projections remove operator paths. Credentials, keys, databases, unreviewed observations and intermediate failures are not published.",
+  "raw": [
+    {
+      "evidence_id": "overnight-ci-final-01",
+      "scope": "linux-ci-night-final.log",
+      "bytes": 93846,
+      "sha256": "b2bcca519e76af80fbd0f196d68655238ff9e5a9b70fcab81c37c63c36010623",
+      "original_retained_privately": true
+    },
+    {
+      "evidence_id": "overnight-ci-final-02",
+      "scope": "linux-install-night-final.log",
+      "bytes": 80,
+      "sha256": "9baca1059abe4722fb088b1e226fb955527ef1df0ee02ad9c122cdfa8ecda8fc",
+      "original_retained_privately": true
+    },
+    {
+      "evidence_id": "overnight-ci-final-03",
+      "scope": "receipt.json",
+      "bytes": 61617,
+      "sha256": "014b17eaa6ac3d2f43fe2989cbafcdda23d3574c370ab89b2685e58c4e61ee8f",
+      "original_retained_privately": true
+    },
+    {
+      "evidence_id": "overnight-ci-final-04",
+      "scope": "bundle-metadata.json",
+      "bytes": 512,
+      "sha256": "986279f23b9331b94952bbf3cc208a292f0f26637c8194d5aa03eb9d2d6c96d3",
+      "original_retained_privately": true
+    },
+    {
+      "evidence_id": "overnight-ci-final-05",
+      "scope": "audit-guard.json",
+      "bytes": 300,
+      "sha256": "d82bb070ef17d1e47aa2464b15fbd94670666abf9857e353f03b306f53710bc2",
+      "original_retained_privately": true
+    },
+    {
+      "evidence_id": "overnight-ci-final-06",
+      "scope": "github-ci.json",
+      "bytes": 199,
+      "sha256": "b3504d38c11e5ff5e906df0b748f8b2d293b3c595208f3eb00b104a5cd469aff",
+      "original_retained_privately": true
+    },
+    {
+      "evidence_id": "overnight-ci-final-07",
+      "scope": "ubuntu-stage.log",
+      "bytes": 220,
+      "sha256": "7802d6134bc9703e639b030fd9269535ce92c73983ab87b76c416fc3dc025ba5",
+      "original_retained_privately": true
+    },
+    {
+      "evidence_id": "overnight-ci-final-08",
+      "scope": "ubuntu-cold-asgi.log",
+      "bytes": 2892,
+      "sha256": "7d59baafcfb77fe42a7d70bbd062a8190fd7d59e17a84157821492772babbb1e",
+      "original_retained_privately": true
+    },
+    {
+      "evidence_id": "overnight-ci-final-09",
+      "scope": "ubuntu-switch.log",
+      "bytes": 279,
+      "sha256": "3d8b20a8341df3e267d549b7c04f9faa8abdf26dfee0eac2de5b7619930edfb2",
+      "original_retained_privately": true
+    },
+    {
+      "evidence_id": "overnight-ci-final-10",
+      "scope": "ubuntu-state-preservation.log",
+      "bytes": 146,
+      "sha256": "1a0610f614f47018833b9367cfd7031b29c681007e627cc635ed5b16867e7eb8",
+      "original_retained_privately": true
+    },
+    {
+      "evidence_id": "overnight-ci-final-11",
+      "scope": "ubuntu-live-before-publication.log",
+      "bytes": 3090,
+      "sha256": "13019f4cc072babbb9e73de7e52c9c46a26c2342afb5404a5aeb683a567d77af",
+      "original_retained_privately": true
+    },
+    {
+      "evidence_id": "overnight-ci-final-12",
+      "scope": "ubuntu-live-after-publication.log",
+      "bytes": 4702,
+      "sha256": "abc529b76dcad316c798c8655b0954764a032bd6eeb8d7214216922108a881a3",
+      "original_retained_privately": true
+    },
+    {
+      "evidence_id": "overnight-ci-final-13",
+      "scope": "ubuntu-post-start.log",
+      "bytes": 335,
+      "sha256": "3c3b7132ceef1a99d1010069e1a6aa87e28d0b8646133f9ec6698f07a70fc18e",
+      "original_retained_privately": true
+    },
+    {
+      "evidence_id": "overnight-ci-final-14",
+      "scope": "ubuntu-final-manifest.log",
+      "bytes": 214,
+      "sha256": "15d3e389cf70115a5b026474efa315bb385808170260cfa20fb6a3a7213f8327",
+      "original_retained_privately": true
+    },
+    {
+      "evidence_id": "overnight-ci-final-15",
+      "scope": "windows-lan.log",
+      "bytes": 197,
+      "sha256": "06af48cb996ecea3ec897e62ce2d6fcbd1febde9db379febeda9245c00819589",
+      "original_retained_privately": true
+    },
+    {
+      "evidence_id": "overnight-ci-final-16",
+      "scope": "publication-validation-root.log",
+      "bytes": 322,
+      "sha256": "f8250c2215330da1dc9f0ed0ab54cba7a113bc8debce47a2bcf4e9c41e99b7dc",
+      "original_retained_privately": true
+    }
+  ],
+  "derived": [
+    {
+      "path": "reports/overnight-gap-closure-20261030/ci/CHANGED-FILES.json",
+      "bytes": 1107,
+      "sha256": "549c0c1612d7480b35f5435ec3518fc2002584e86ab3519d8de3d34689adeca8"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/ci/CI-RESULT.json",
+      "bytes": 1923,
+      "sha256": "8ef4c3802d00cb28974d4556140dcc7bd405bc62de736f860f73ed24e7e6fc6d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/ci/DEPLOYMENT.json",
+      "bytes": 4241,
+      "sha256": "d6742a4dcd6b0924834cb818bc73272e5b4d0cf1d302948d19bc1fbb6ac944de"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/ci/GITHUB-CI.json",
+      "bytes": 199,
+      "sha256": "b3504d38c11e5ff5e906df0b748f8b2d293b3c595208f3eb00b104a5cd469aff"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/ci/LINUX-CI.txt",
+      "bytes": 89632,
+      "sha256": "da375e52e29df95a84d475637aab7bf83dfa5ea31f1d927de783e94ec84793aa"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/ci/UBUNTU-BEFORE-PUBLICATION.json",
+      "bytes": 2992,
+      "sha256": "6e18fc3db706321b5596befa684bbd8de06d7b2fc5b365af6ec58b29be3a8924"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/ci/UBUNTU-COLD.json",
+      "bytes": 2808,
+      "sha256": "3800112da4a1a1163a26aa82246dd0d8ab640365d4acf4296be724d0fc581494"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/ci/UBUNTU-LIVE.json",
+      "bytes": 4564,
+      "sha256": "1c6b275ef64f266497d2d1d7add664cd6e868fc24e5b385e01acfc2c581a27d8"
+    }
+  ]
+}

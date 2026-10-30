@@ -1,0 +1,131 @@
+{
+  "checked_at": "2026-10-30T16:19:35.959Z",
+  "source_commit": "a79bad96b83ba1442858873a455e4cb2dbe24188",
+  "digital_release": "digital-20261031-v5",
+  "main_origin": "http://127.0.0.1:5173",
+  "main_api": "http://127.0.0.1:8000",
+  "main_mode": "Current frozen-source Windows Vite frontend; separate from Ubuntu8088 deployment receipt",
+  "default_service_capability": {
+    "digital": {
+      "status": "configured",
+      "url": "http://192.168.110.81:8089"
+    }
+  },
+  "manual_saved_endpoint_override_used": false,
+  "iframe_avatar_ready": true,
+  "iframe_qwen_metadata_ready": true,
+  "rows": [
+    {
+      "width": 375,
+      "clientWidth": 360,
+      "overflow": false,
+      "window": {
+        "x": 12,
+        "y": 248,
+        "width": 336,
+        "height": 640
+      },
+      "windowVisible": true,
+      "iframe": "http://192.168.110.81:8089/?embed=1",
+      "iframeViewport": {
+        "width": 334,
+        "height": 535
+      },
+      "referrerPolicy": "origin",
+      "crossOriginDocumentBlocked": true,
+      "modal": "false",
+      "actions": [
+        "收起对话",
+        "关闭数字人"
+      ]
+    },
+    {
+      "width": 768,
+      "clientWidth": 753,
+      "overflow": false,
+      "window": {
+        "x": 336.66668701171875,
+        "y": 244,
+        "width": 400,
+        "height": 640
+      },
+      "windowVisible": true,
+      "iframe": "http://192.168.110.81:8089/?embed=1",
+      "iframeViewport": {
+        "width": 398,
+        "height": 535
+      },
+      "referrerPolicy": "origin",
+      "crossOriginDocumentBlocked": true,
+      "modal": "false",
+      "actions": [
+        "收起对话",
+        "关闭数字人"
+      ]
+    },
+    {
+      "width": 1440,
+      "clientWidth": 1425,
+      "overflow": false,
+      "window": {
+        "x": 1008.6666870117188,
+        "y": 244,
+        "width": 400,
+        "height": 640
+      },
+      "windowVisible": true,
+      "iframe": "http://192.168.110.81:8089/?embed=1",
+      "iframeViewport": {
+        "width": 398,
+        "height": 535
+      },
+      "referrerPolicy": "origin",
+      "crossOriginDocumentBlocked": true,
+      "modal": "false",
+      "actions": [
+        "收起对话",
+        "关闭数字人"
+      ]
+    }
+  ],
+  "embedded_viewport_checks": [
+    {
+      "width": 334,
+      "height": 535,
+      "embedded": true,
+      "app": {
+        "width": 334,
+        "height": 535.3333740234375
+      },
+      "overflow": false,
+      "composerVisible": true,
+      "stageHeight": 100,
+      "avatar": "ready"
+    },
+    {
+      "width": 398,
+      "height": 535,
+      "embedded": true,
+      "app": {
+        "width": 398,
+        "height": 535.3333740234375
+      },
+      "overflow": false,
+      "composerVisible": true,
+      "stageHeight": 100,
+      "avatar": "ready"
+    }
+  ],
+  "collapse_height": 68,
+  "collapse_retains_iframe": true,
+  "escape": {
+    "closed": true,
+    "focus": "打开 AI 法律顾问"
+  },
+  "close_reopen_clears_unsent_draft": true,
+  "new_inference_calls": 0,
+  "console_errors": 0,
+  "console_warnings": 0,
+  "expected_text_advisor_metadata_fetch_cancelled_on_digital_open": true,
+  "new_screenshots_taken": false
+}

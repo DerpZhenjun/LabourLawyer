@@ -1,0 +1,45 @@
+{
+  "source_commit": "a79bad96b83ba1442858873a455e4cb2dbe24188",
+  "version": "1.2.0-preview.4",
+  "android_version_code": 7,
+  "source_checkout": "Actual git archive of the exact committed tip, preserving sealed report/template/data bytes.",
+  "linux_environment": {
+    "distribution": "WSL Ubuntu22.04",
+    "node": "22.18.0",
+    "python": "3.11.13",
+    "fresh_locked_npm_ci_installs": true,
+    "cpu_python_hash_lock_and_pip_check": true
+  },
+  "checks": {
+    "guarded_backend_passed": 132,
+    "guarded_backend_skipped": 0,
+    "pipeline_fixtures_passed": 21,
+    "desktop_pure_tests_passed": 6,
+    "web_and_mini_real_builds": true,
+    "mounted_workspace_and_regional_form_regressions": true,
+    "collector_controller_and_digital_config_and_official_link_regressions": true,
+    "strict_types_and_schema11_drift": true,
+    "git_diff_clean_after_checks": true,
+    "actionlint_passed": true
+  },
+  "separate_integration": {
+    "named_linux_worker_lock_test_passed": 1,
+    "included_in_132_guarded_count": false,
+    "real_chrome_and_private_tls_cert_fixtures_not_counted_as_offline_passes": true,
+    "collector_domain_evidence": "../collector/REPORT.md",
+    "tls_domain_evidence": "../tls/"
+  },
+  "audit_guard": {
+    "baseline_commit": "0e8eb56a9bdbbea295b584e9a8037337c79e37e8",
+    "source_commit": "a79bad96b83ba1442858873a455e4cb2dbe24188",
+    "network_sqlite_subprocess_guard_and_self_checks_ast_identical": true,
+    "guard_ast_sha256": "61cf9484c85c7d853032efc75955cb4264b19918f4687d2931864187e303b5a7"
+  },
+  "github_actions": {
+    "source_commit": "a79bad96b83ba1442858873a455e4cb2dbe24188",
+    "url": "https://github.com/DerpZhenjun/LabourLawyer/actions/runs/41086544230",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "provisional_snapshot": "Earlier night-v1 artifact is private historical preparation only; final evidence and release use the normalized committed source."
+}

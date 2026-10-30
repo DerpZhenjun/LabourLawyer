@@ -1,0 +1,96 @@
+{
+  "bundle": "LabourLawyer-20261030-night-final.tar.gz",
+  "bundle_sha256": "63df0ec3a4caa815c3e4dad0c0672dbe4fbfec2ff44273b3f52eaf81cd43f38d",
+  "bundle_bytes": 378649824,
+  "manifest_sha256": "47e5d2ce0bbd1c1596023dce54d04267f4efa6f9c35b8358c3934fc74d1daa62",
+  "manifest_files": 3729,
+  "source_sha256": "693fe29ef4b46b887deb13a6321f50fc1efe752d6aeebc3cf4fa70a63c7400cc",
+  "source_commit": "a79bad96b83ba1442858873a455e4cb2dbe24188",
+  "public_policy_files": 3492,
+  "source_policy_files": 150,
+  "version": "1.2.0-preview.4",
+  "release": "night-20261030-63df0ec3",
+  "source_and_public_allowlists": {
+    "runtime_source_files": 150,
+    "pinned_public_files": 3492,
+    "frontend_artifact_files": 87,
+    "F_existing_source_records_verified": 140,
+    "F_stage_files_verified": 47,
+    "F_final_browser_files_verified": 23,
+    "F_required_receipts": 2,
+    "raw_HAR_candidate_databases_keys_and_runtime_configs_excluded": true
+  },
+  "ubuntu": {
+    "distribution": "Ubuntu24.04",
+    "python": "3.12.3",
+    "url": "http://192.168.110.81:8088",
+    "manifest_verified_before_and_after_start_and_after_publication": true,
+    "full_tar_uploaded_to_host": false,
+    "transfer": "Verified manifest delta from the existing v6 release, followed by complete final-tree verification."
+  },
+  "runtime_configuration": {
+    "digital_origin": "http://192.168.110.81:8089",
+    "collector_config": "var/collector/config.json outside immutable release",
+    "private_data": "var/private",
+    "public_databases": "var/public"
+  },
+  "rollout": {
+    "stopped_only_positively_identified_owned_8088_process": true,
+    "private_backup_retained": true,
+    "six_private_and_public_files_byte_identical_before_smoke": true,
+    "bootstrap_preserved_existing_203_guides": true,
+    "F_append_was_separate_root_owned_atomic_operation": true,
+    "root_publication_evidence": "../localities/UBUNTU-PUBLICATION.json",
+    "post_publication_guides": 205,
+    "post_publication_generatable": 188,
+    "directory_rows": 3974,
+    "old_chunan_version_preserved": 203,
+    "F_versions": {
+      "320581": 204,
+      "320582": 205
+    }
+  },
+  "live_checks": {
+    "health_and_spa": 200,
+    "anonymous_cases_and_collector": 401,
+    "admin_login_logout": true,
+    "admin_collector_status": 200,
+    "existing_collector_evidence_authenticated_bytes_sha256_verified": true,
+    "invalid_collector_submission": 422,
+    "collector_jobs_created": 0,
+    "collector_counts": {
+      "complete": 4
+    },
+    "observations_require_manual_review": true,
+    "legacy_portal_collection_admin_status": 503,
+    "legacy_ubuntu_outbox_count": 0,
+    "windows_existing_acknowledged_events_separate": 377,
+    "original_and_generated_Word_routes_all_six_passed": true,
+    "cross_origin_binding_headers_verified": true
+  },
+  "independent_services": {
+    "digital_owned_replacement_by_digital_agent": "../digital/final-v5-ubuntu-main-embedded-dom.json",
+    "collector_TLS_and_Ollama_not_stopped_by_this_rollout": true,
+    "model_inference_requested_by_this_gate": false,
+    "models_started_by_this_gate": false
+  },
+  "github_actions": {
+    "source_commit": "a79bad96b83ba1442858873a455e4cb2dbe24188",
+    "url": "https://github.com/DerpZhenjun/LabourLawyer/actions/runs/41086544230",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "independent_issue_relay": {
+    "root_reported_acknowledged_events": 2,
+    "included_in_legacy_windows_377_or_ubuntu_0_counts": false,
+    "included_in_collector_complete_4_count": false,
+    "scope": "Separate root-owned service readback; not exercised by this CI or rollout gate and not a template-publication approval."
+  },
+  "limits": [
+    "Publicly trusted Internet TLS requires an appropriate domain/certificate; rootless loopback test CA acceptance is not public TLS.",
+    "Legacy Windows portal POSTs remain authenticated503 on Linux; the separate official-collector API is operational.",
+    "Four collector observations remain review-only and were not imported into published regional records.",
+    "Windows trusted code signing, physical Android installation and WeChat publication require their separately recorded prerequisites."
+  ],
+  "provisional_night_v1_not_a_publication_candidate": true
+}

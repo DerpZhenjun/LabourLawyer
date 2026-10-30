@@ -1,0 +1,25 @@
+{
+  "scope": "This CI/deployment agent ownership only; root committed source batch and performed regional DB publication.",
+  "files": [
+    ".github/workflows/ci.yml",
+    "backend/tests/test_chunan_seed_publication.py",
+    "deploy/public-files.json",
+    "deploy/run.sh",
+    "deploy/source-files.json",
+    "docs/ci.md",
+    "docs/ubuntu-deployment.md",
+    "reports/overnight-gap-closure-20261030/ci/CHANGED-FILES.json",
+    "reports/overnight-gap-closure-20261030/ci/CI-RESULT.json",
+    "reports/overnight-gap-closure-20261030/ci/DEPLOYMENT.json",
+    "reports/overnight-gap-closure-20261030/ci/EVIDENCE.json",
+    "reports/overnight-gap-closure-20261030/ci/GITHUB-CI.json",
+    "reports/overnight-gap-closure-20261030/ci/LINUX-CI.txt",
+    "reports/overnight-gap-closure-20261030/ci/UBUNTU-BEFORE-PUBLICATION.json",
+    "reports/overnight-gap-closure-20261030/ci/UBUNTU-COLD.json",
+    "reports/overnight-gap-closure-20261030/ci/UBUNTU-LIVE.json",
+    "scripts/build-deployment-bundle.py",
+    "scripts/ci-backend.py",
+    "scripts/client-pipeline.mjs",
+    "scripts/test-client-pipeline.mjs"
+  ]
+}

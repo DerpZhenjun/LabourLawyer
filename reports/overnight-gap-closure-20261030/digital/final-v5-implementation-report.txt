@@ -1,0 +1,25 @@
+Final frozen-source digital runtime
+
+The active digital service is digital-20261031-v5 at http://192.168.110.81:8089/. It was built exclusively from Git objects at a79bad96b83ba1442858873a455e4cb2dbe24188 using git archive; no working-tree files or untracked reports were used. The archive includes the strict API-origin guard and the current generated shared contract. This lane changed no frontend, version metadata, Gradle, backend or other service configuration.
+
+Source archive: .runtime/overnight-digital-final-20261031/digital-source-v5.tar.gz
+SHA256: 0fb83cee81f6389bf74a60432588dc9a85c76fc79e0e0c89c4fd6e0abf5c858c
+Bytes: 12130345
+Source manifest SHA256: abef74bb6adc35eda02dcfb25437a0fceabdeacc26d76352f24a852737ecc210
+Generated contract SHA256: 3a7b22b62f5eff59c47d691566e837fb8d8534b4c80def79f4b743fe9c88ca95
+Dependency lock SHA256: c0bd0ed6731b55bbb122a5951447eb6fa24ae341fdb1b2bb7989c67ea7703175
+Production build ID: EfA_TAEyBCpdTrf2Hi4-N
+
+The archive was produced twice with identical bytes. All 74 source members and the separately hashed manifest were verified after transfer and after building. Next.js regenerated its development-only next-env.d.ts during the build; its original frozen Git bytes were restored afterwards, and the complete source manifest was checked again. Compiled production output remains from that successful build. Frozen source files were made read-only before starting the service. Existing releases were not overwritten.
+
+The portable Node 22.23.4 archive passed its official pinned SHA256, and 4750 installed regular files plus archive symlinks matched the official archive. Product dependencies were installed with a clean npm ci using the frozen integrity-locked dependency file and cache. Next 15.5.28 / React 18.2.0 built successfully; npm audit reports zero vulnerabilities at every severity. Existing raw-img lint advisories remain in the private build log; the browser console is clean. The four frozen JavaScript checks pass: seven actual health-handler scenarios, streaming first-chunk behavior, actual React memory-only mount/privacy behavior, and asset URL prefixes. Ubuntu also passes the three runtime checks for active listener refusal, TCP TIME_WAIT restart, and strict API origins.
+
+Only the positively identified application-owned 8089 process was stopped normally and replaced. Identity checks required the expected user, portable Node executable, old release working directory and 8089 listening socket. The previous v4 directory remains available for rollback; rollback was not needed. No other service was stopped or reconfigured by this lane. The main 8088 update was performed independently by its deployment owner. Collector, TLS and Ollama processes were not signalled by this work.
+
+Real Chrome DOM/network verification passes on the new digital runtime at 375 / 768 / 1440 widths: avatar ready, compact portrait, visible composer, no horizontal overflow, matching production build ID and zero console errors/warnings. Reload clears an unsent synthetic draft. The viewer camera and compact digital CSS Git content are unchanged from the earlier captured upper-body UI. No new screenshots were taken.
+
+The new Ubuntu main application at 8088 discovers 8089 through GET /api/services → 200 without a saved endpoint override or any stale port 3000 request. The actual cross-origin iframe loads the ready avatar and Ubuntu Qwen metadata. At 375 / 768 / 1440 widths, the nonmodal window fits fully within the page, including a 375×667 phone check. The iframe layout was also checked at its real 334×535 and 398×535 viewports: portrait height 100px, no horizontal overflow and visible composer. The main response retains Referrer-Policy:same-origin while the trusted iframe explicitly uses origin-only referrers; cross-origin document access is blocked. Collapse retains the iframe and unsent draft at 68px, expansion restores the draft, Escape inside the iframe closes it and returns focus to the launcher, and close/reopen clears the unsent draft. The fresh Windows main application also passes the same integration checks and is recorded separately.
+
+No new inference was invoked. Health reports Ubuntu Ollama / qwen3.8:27b ready with local_model_started=false; no Windows model was started. The earlier two synthetic responses remain the actual provider-response evidence; this final run is explicitly model-free. Voice, legal-answer quality and public TLS/internet deployment are not claimed by these checks.
+
+Public receipts are final-v5-source-manifest.json, final-v5-build-input.json, final-v5-build-verification.json, final-v5-npm-audit.json, final-v5-service-health.json, final-v5-direct-dom.json, final-v5-windows-main-embedded-dom.json and final-v5-ubuntu-main-embedded-dom.json in this directory. Private process identifiers, absolute operator paths and raw logs are excluded. The archive is ready for Root's optional release attachment; this lane did not commit, push or publish it.

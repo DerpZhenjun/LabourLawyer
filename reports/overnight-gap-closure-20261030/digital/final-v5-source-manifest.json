@@ -1,0 +1,302 @@
+{
+  "source_commit": "a79bad96b83ba1442858873a455e4cb2dbe24188",
+  "source_bytes": "git archive of exact frozen Git objects; no working-tree bytes",
+  "files": {
+    "ChatVRM/.eslintrc.json": {
+      "bytes": 43,
+      "sha256": "677f6c4e85c78d47bfcf9796fa13da2b95e16de4ea2b41a5400e5b10f1757750"
+    },
+    "ChatVRM/LICENSE": {
+      "bytes": 1086,
+      "sha256": "3bf8bae1033c61e5ee63c074624fd2ee8126de52ff9e3f554828d8559ec8cd7a"
+    },
+    "ChatVRM/deploy/README.md": {
+      "bytes": 3031,
+      "sha256": "b02a75529b8676be225aabc833240e9bef242b4dc0157796c3fdea5d2d76c4ba"
+    },
+    "ChatVRM/deploy/install-node.sh": {
+      "bytes": 567,
+      "sha256": "a662ebde19d89891d3fdd458eb7a441d37ea79ca3e6195665cdcd610099aa3ac"
+    },
+    "ChatVRM/deploy/prepare.py": {
+      "bytes": 2337,
+      "sha256": "a6b469a287fb1ad518aa08e360406659b7c9aaefc7bdbecbbdaf718b47f376df"
+    },
+    "ChatVRM/deploy/run.py": {
+      "bytes": 2629,
+      "sha256": "0b96fd638388cc0b2ff0d72f7b4a3b8039a2c8995010f4d3e9f0fcdbd2bbc712"
+    },
+    "ChatVRM/next-env.d.ts": {
+      "bytes": 201,
+      "sha256": "9269d492817e359123ac64c8205e5d05dab63d71a3a7a229e68b5d9a0e8150bf"
+    },
+    "ChatVRM/next.config.js": {
+      "bytes": 298,
+      "sha256": "5e8bbbf9424d02b35789120cab0243c4a29547b5deba3f577b20f050a51e3ad7"
+    },
+    "ChatVRM/package-lock.json": {
+      "bytes": 484489,
+      "sha256": "c0bd0ed6731b55bbb122a5951447eb6fa24ae341fdb1b2bb7989c67ea7703175"
+    },
+    "ChatVRM/package.json": {
+      "bytes": 1093,
+      "sha256": "d74bb4c987d25df6a18df874ceea05180cdd5b6d9986bf720259321cf33eb642"
+    },
+    "ChatVRM/postcss.config.js": {
+      "bytes": 82,
+      "sha256": "251ecddd4672c9cf467547e3dc535de00ad2129df26e7e7ae728fa4e5ac45fc5"
+    },
+    "ChatVRM/public/AvatarSample_B.vrm": {
+      "bytes": 16972464,
+      "sha256": "c5347db1d77223e34bb122479a1f8076e1165c391810baedd21f73c9b2b0180a"
+    },
+    "ChatVRM/public/bg-c.png": {
+      "bytes": 85221,
+      "sha256": "6d2909f53dc0e54871c512ea46bd09a7742626680aa0793cb3fe860795c0cb02"
+    },
+    "ChatVRM/public/brand/counsel-mark.svg": {
+      "bytes": 438,
+      "sha256": "3ce8d34c454f627fd53dd910fb08891fd9607b4cf9fb990f63df303e0c40342d"
+    },
+    "ChatVRM/public/brand/labourlawyer-mark.svg": {
+      "bytes": 450,
+      "sha256": "9f422550bd2fe3d04e6df1bacc4f25ed32004be1e43d7b398da3fcbc62913236"
+    },
+    "ChatVRM/public/demo_video-封面.jpg": {
+      "bytes": 218003,
+      "sha256": "37a2df58f19f0e3db160ff892c8208df6db5b1a9a7c5fc7e514a443eccfe2509"
+    },
+    "ChatVRM/public/github-mark-white.svg": {
+      "bytes": 960,
+      "sha256": "fab00c2d598c56cb4838603981b66e3490ebe27ea56fb188120a7e6d4ca46970"
+    },
+    "ChatVRM/public/idle_loop.vrma": {
+      "bytes": 157664,
+      "sha256": "ace95ba6dcc0bdf2ed1081c002332b4184441117c8d543b6f642b3d2c5cf99be"
+    },
+    "ChatVRM/public/logo.png": {
+      "bytes": 754687,
+      "sha256": "92c5d1576afe7d0f127a2031a6b7ade6abca6e41e259ae77dd6154c25f27b00b"
+    },
+    "ChatVRM/public/ogp.png": {
+      "bytes": 1215236,
+      "sha256": "3402482511fef12fed177f0b9408099f4c4526a442107cebf75cf72698431c58"
+    },
+    "ChatVRM/src/components/assistantText.tsx": {
+      "bytes": 660,
+      "sha256": "02dcaf76d8adc8ec656f12f1b0ba9b7ae2ad295b05d935ea3f0abdb9332ae92c"
+    },
+    "ChatVRM/src/components/chatLog.tsx": {
+      "bytes": 4558,
+      "sha256": "6e890551216469db3c4189589b8a3db16137875368c4b4f0bc1574fdc35ba6e1"
+    },
+    "ChatVRM/src/components/githubLink.tsx": {
+      "bytes": 706,
+      "sha256": "92aa6d07f025ba66b81762fd2aa52e1f7a6145dd3b2f4b6ba7bf20c991ed090b"
+    },
+    "ChatVRM/src/components/iconButton.tsx": {
+      "bytes": 867,
+      "sha256": "af764b703a2e19548c3437c8e38db0df3d3da1f9b72e9af48778d74dde421c43"
+    },
+    "ChatVRM/src/components/introduction.tsx": {
+      "bytes": 5836,
+      "sha256": "ea15acedd2d818bf81b51bbfea2a3d901bbc79122c9a7a9424af13817d9c4b92"
+    },
+    "ChatVRM/src/components/link.tsx": {
+      "bytes": 268,
+      "sha256": "11bb3f634fa7a30766206b056ce5bd6f6fc381f1ca5e68084a04d67ce1b5bdcb"
+    },
+    "ChatVRM/src/components/menu.tsx": {
+      "bytes": 3660,
+      "sha256": "df61464e0e1c482a2a1fa8c2a14b19c8d0ec64011b6b8a05b4e2dca0365f347d"
+    },
+    "ChatVRM/src/components/messageInput.tsx": {
+      "bytes": 2215,
+      "sha256": "cdb88b87efbccccb0db0182b3eb9e33a7bb25f6f76bb12d3af9ed6aa33992fcc"
+    },
+    "ChatVRM/src/components/messageInputContainer.tsx": {
+      "bytes": 2853,
+      "sha256": "74985ebd0a9b21c6608010db614e9bf9adbe6b3caa7d7986e73b53f0a4a80464"
+    },
+    "ChatVRM/src/components/meta.tsx": {
+      "bytes": 958,
+      "sha256": "9bafbaafa37aae4245d8a676203c6d4450c758da0af41f7224e7af2323f3245f"
+    },
+    "ChatVRM/src/components/settings.tsx": {
+      "bytes": 8160,
+      "sha256": "2f615064db25aaa04554ea28c23e509e6c4069d5e5dd5dfd174943aeba600850"
+    },
+    "ChatVRM/src/components/textButton.tsx": {
+      "bytes": 429,
+      "sha256": "44b8cf1fb27f66f50c1c4f242336483ba288c360a1446f4a97870ff64c13a1b7"
+    },
+    "ChatVRM/src/components/vrmViewer.tsx": {
+      "bytes": 1630,
+      "sha256": "d8bde1868d1947f30e48c3b1641837fb45a10b3099c4dd025c1e27f72d2bb646"
+    },
+    "ChatVRM/src/features/chat/openAiChat.ts": {
+      "bytes": 1497,
+      "sha256": "91a47d66219c9afdab6663f76e31497aba1cdca44e5ade1c20414391a0850ae1"
+    },
+    "ChatVRM/src/features/constants/koeiroParam.ts": {
+      "bytes": 496,
+      "sha256": "27db5366277d3cef2117a2ca075ab3151e842268bb4211d4187369fb7a5c49b6"
+    },
+    "ChatVRM/src/features/constants/systemPromptConstants.ts": {
+      "bytes": 219,
+      "sha256": "4ee22f3ff8b5697add10001353e9d91318935ca497840b437582f256c49b6e5e"
+    },
+    "ChatVRM/src/features/emoteController/autoBlink.ts": {
+      "bytes": 1611,
+      "sha256": "82b76b471eeb10e823fbac129edd436d1117e070dbc08a7ddb03c7c6e556a0dd"
+    },
+    "ChatVRM/src/features/emoteController/autoLookAt.ts": {
+      "bytes": 532,
+      "sha256": "c4aba88bfb85451b92192453abc00eed0804277c14d0745a2095d2b44720b4cc"
+    },
+    "ChatVRM/src/features/emoteController/emoteConstants.ts": {
+      "bytes": 160,
+      "sha256": "2471f69f8996126a63008287f38fb25a17f88045a881812b8ec292b81ab32dbe"
+    },
+    "ChatVRM/src/features/emoteController/emoteController.ts": {
+      "bytes": 838,
+      "sha256": "6743a50e6d9229568aee00515da1862f7e12d3037396b5a6ed5354daada75349"
+    },
+    "ChatVRM/src/features/emoteController/expressionController.ts": {
+      "bytes": 2214,
+      "sha256": "8c812968fabca822f07221880ee9408c2e65dc52e4f399790deada5d3ed474f3"
+    },
+    "ChatVRM/src/features/koeiromap/koeiromap.ts": {
+      "bytes": 1307,
+      "sha256": "a29cf5b8cfa9b2eb3a830a31d98db2eec8792984e61f4e3ff560fa7d0621d193"
+    },
+    "ChatVRM/src/features/lipSync/lipSync.ts": {
+      "bytes": 1480,
+      "sha256": "13847c74d52d654adb88ff096c07d0ac8efcff9523a44a9b8703e9aeb60dbdc7"
+    },
+    "ChatVRM/src/features/lipSync/lipSyncAnalyzeResult.ts": {
+      "bytes": 60,
+      "sha256": "ca60f81fcd65900cdb891c8590ec3520b45f4395c82c13315bb24f509f9e696e"
+    },
+    "ChatVRM/src/features/messages/messages.ts": {
+      "bytes": 2064,
+      "sha256": "d21f54e0524b0153b385e012e87353e42ca814a5548d7a4bc4a7901ffa983621"
+    },
+    "ChatVRM/src/features/messages/speakCharacter.ts": {
+      "bytes": 2248,
+      "sha256": "b1a0612d939b1a94d6295e5836baaffe0cbd13a37cc1a07e298bbc58c03cf371"
+    },
+    "ChatVRM/src/features/messages/synthesizeVoice.ts": {
+      "bytes": 1007,
+      "sha256": "1d9d2ec39b601008044b937c648bf6eb94fa2dd5afecd23d2656b938af17e89a"
+    },
+    "ChatVRM/src/features/vrmViewer/model.ts": {
+      "bytes": 2732,
+      "sha256": "cd7de682dc6d2030aac41be117eb4860e297d17a3c43cb26757b380804b0b25f"
+    },
+    "ChatVRM/src/features/vrmViewer/viewer.ts": {
+      "bytes": 5684,
+      "sha256": "52224a880c746cc4d8884e381b0e0c7dc722125ef220572d85178b4cd963b6c8"
+    },
+    "ChatVRM/src/features/vrmViewer/viewerContext.ts": {
+      "bytes": 161,
+      "sha256": "9c470495cb22f496d6fe76eccdcd636e13d86426b261a2ec06c562091ccfdaa7"
+    },
+    "ChatVRM/src/lib/VRMAnimation/VRMAnimation.ts": {
+      "bytes": 3302,
+      "sha256": "9d841ca32f2ab18c19ba664eaa9415ea439518cd1dd62cc40b13ae514cceac83"
+    },
+    "ChatVRM/src/lib/VRMAnimation/VRMAnimationLoaderPlugin.ts": {
+      "bytes": 8005,
+      "sha256": "4248c355ca3d00ccb393000e76b2fdcfc88a314a505425dab5bca4843ccc2891"
+    },
+    "ChatVRM/src/lib/VRMAnimation/VRMAnimationLoaderPluginOptions.ts": {
+      "bytes": 53,
+      "sha256": "25e50ce96a78e14092423567ded6f334684630d6e64686d199a3e2dd6a81f0dc"
+    },
+    "ChatVRM/src/lib/VRMAnimation/VRMCVRMAnimation.ts": {
+      "bytes": 485,
+      "sha256": "ed6a65a1e2f1ad058250723292840e41f9a18faacd8609bf28786801ebfecb5a"
+    },
+    "ChatVRM/src/lib/VRMAnimation/loadVRMAnimation.ts": {
+      "bytes": 587,
+      "sha256": "750bdda1c3965b39e1697b034f7119ac4acea10c99f418361e04a7beb24736ec"
+    },
+    "ChatVRM/src/lib/VRMAnimation/utils/arrayChunk.ts": {
+      "bytes": 512,
+      "sha256": "f4720c506cfaf521e3954f9cf79614c87cf6cca32067a423337c68df54659ede"
+    },
+    "ChatVRM/src/lib/VRMAnimation/utils/linearstep.ts": {
+      "bytes": 138,
+      "sha256": "08cc65377b48655be2be08ef7cfb4d2bdfd239c88b2bc751a5d924c0395090fd"
+    },
+    "ChatVRM/src/lib/VRMAnimation/utils/saturate.ts": {
+      "bytes": 72,
+      "sha256": "76cc38d304c250bcad4e3f366390b3b8917b2f0dc9dbfdbc3f9e4e034dc7e037"
+    },
+    "ChatVRM/src/lib/VRMLookAtSmootherLoaderPlugin/VRMLookAtSmoother.ts": {
+      "bytes": 5835,
+      "sha256": "ae214bb23d0d7f2e3fdd3132f33c8a1910c5ab2d5d0ea2f8db4923f344fe94ea"
+    },
+    "ChatVRM/src/lib/VRMLookAtSmootherLoaderPlugin/VRMLookAtSmootherLoaderPlugin.ts": {
+      "bytes": 805,
+      "sha256": "9cfcf0f20332d29327acb0d8f6ed0aded33ec5137ace5a61611b9112dde47d58"
+    },
+    "ChatVRM/src/pages/_app.tsx": {
+      "bytes": 217,
+      "sha256": "603f1564c524e3d597ee7369edc1e71383c6e84e6a26651ba2f7a6b0ab98fd20"
+    },
+    "ChatVRM/src/pages/_document.tsx": {
+      "bytes": 249,
+      "sha256": "ecb973f5be2112cb65acd6cfe5d17bed1b58d526c9b2216be478c3d657d3c7a8"
+    },
+    "ChatVRM/src/pages/api/chat.ts": {
+      "bytes": 2775,
+      "sha256": "3e17cf95eaf9d5edeaa6723f81264abc0a77aa928dca9f75f3a8131407bc9381"
+    },
+    "ChatVRM/src/pages/api/health.ts": {
+      "bytes": 2074,
+      "sha256": "ce930f6179a925d8519486fbf4706ece9317e1205328d15ae28f2d095c5b2ae0"
+    },
+    "ChatVRM/src/pages/api/tts.ts": {
+      "bytes": 1304,
+      "sha256": "bd6b0c7af3524a4893834ac6b67d7abbc8990245a1f684c4bc374b87904529dc"
+    },
+    "ChatVRM/src/pages/index.tsx": {
+      "bytes": 11310,
+      "sha256": "d3223e5058a5e9eedcf75a0285dcd23040744a15212dcfd1697ce6cfcf0ff59c"
+    },
+    "ChatVRM/src/styles/globals.css": {
+      "bytes": 8489,
+      "sha256": "59f84accd575e6f58a6100a9c238ad28acba2eada8090b7377eca44bd8456009"
+    },
+    "ChatVRM/src/utils/buildUrl.ts": {
+      "bytes": 200,
+      "sha256": "7a84ff06cfd54f4a0b5f5ce0d232d8b886f60968010bdf8f7ff77115e15b9bb8"
+    },
+    "ChatVRM/src/utils/reduceTalkStyle.ts": {
+      "bytes": 372,
+      "sha256": "76dd38d7622343831101328655b1694060536da97173712ce676d953351abefb"
+    },
+    "ChatVRM/src/utils/wait.ts": {
+      "bytes": 95,
+      "sha256": "48b836471459acd50c5c42a6e55a8ef663bc12dd4d91fd5e53b904efa183ea12"
+    },
+    "ChatVRM/tailwind.config.js": {
+      "bytes": 979,
+      "sha256": "4db02ca9d5d3bf613af0a92eca0db5fae46913a9368c57d48518198e55073339"
+    },
+    "ChatVRM/tsconfig.json": {
+      "bytes": 582,
+      "sha256": "187b1caa0385b97a860950b192729621fe5b958d613b76b132bd3bbaacdea36a"
+    },
+    "packages/client-contracts/generated/index.cjs": {
+      "bytes": 6032,
+      "sha256": "3a7b22b62f5eff59c47d691566e837fb8d8534b4c80def79f4b743fe9c88ca95"
+    },
+    "packages/client-contracts/generated/index.d.cts": {
+      "bytes": 1448,
+      "sha256": "af8493a71a77cf65a63b02723f1bba0119d049a75b119b419fc3212d9080be0e"
+    }
+  }
+}

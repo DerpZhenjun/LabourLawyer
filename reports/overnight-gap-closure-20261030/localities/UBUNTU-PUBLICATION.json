@@ -1,0 +1,19 @@
+{
+  "scope": "Ubuntu existing public guide DB incremental F append",
+  "runtime_source_commit": "a79bad96b83ba1442858873a455e4cb2dbe24188",
+  "verified_at": "2026-10-30T16:24:13.0306476Z",
+  "source_validation": "3645 exact source Git blobs; provider identical to running release; independent pinned source/seed/final Word-browser receipts",
+  "database_backup_uploaded": false,
+  "result": {
+    "status": "published_two_guides_atomic",
+    "inserted": 2,
+    "old_rows_preserved": true,
+    "outbox_preserved": true,
+    "schema_indexes_preserved": true,
+    "backup_consistent": true,
+    "history_after": 205,
+    "current_after": 205
+  },
+  "windows_model_started": false,
+  "other_services_stopped": false
+}

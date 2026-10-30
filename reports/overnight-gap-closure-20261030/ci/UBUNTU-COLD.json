@@ -1,0 +1,84 @@
+{
+  "scope": "isolated cold public205seed; production databases are not merged",
+  "cold_catalogue": {
+    "guides": 205,
+    "generatable_localities": 188
+  },
+  "directory_rows": 3974,
+  "routes": {
+    "/": 200,
+    "/province/jiangsu": 200,
+    "/health": 200,
+    "/api/platform/cases": 401,
+    "/api/missing": 404,
+    "/api/official-collector": 401
+  },
+  "services": {
+    "digital": {
+      "status": "configured",
+      "url": "http://192.168.110.81:8089"
+    }
+  },
+  "documents": {
+    "330127": {
+      "application": {
+        "status": 200,
+        "bytes": 27317,
+        "sha256": "a47281792a62392c86957e107003c54dfa12a3783c3010ef7fb7977c0a77526d",
+        "source_id": "3fb683d473fe253a3a117d46",
+        "version": 203,
+        "original_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f"
+      },
+      "evidence": {
+        "status": 200,
+        "bytes": 16341,
+        "sha256": "ad804527a3ddc85494ba8378f0661c9320abb440bd23a2bb4672466fe153c6c9",
+        "source_id": "3fb683d473fe253a3a117d46",
+        "version": 203,
+        "original_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c"
+      }
+    },
+    "320581": {
+      "application": {
+        "status": 200,
+        "bytes": 12674,
+        "sha256": "60cc752eaaf1023986fabfb75797106b6b08788df43f9772de0a4c6c0b1b3313",
+        "source_id": "9a24af792c956feb67bd37c6",
+        "version": 204,
+        "original_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3"
+      },
+      "evidence": {
+        "status": 200,
+        "bytes": 11461,
+        "sha256": "8a6fcf90fa72048af0a7ab618210fd7ea61bb34d8966820dd9b83834f08d21f4",
+        "source_id": "9a24af792c956feb67bd37c6",
+        "version": 204,
+        "original_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+      }
+    },
+    "320582": {
+      "application": {
+        "status": 200,
+        "bytes": 12674,
+        "sha256": "60cc752eaaf1023986fabfb75797106b6b08788df43f9772de0a4c6c0b1b3313",
+        "source_id": "95e826085ed0fec9f410cc86",
+        "version": 205,
+        "original_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3"
+      },
+      "evidence": {
+        "status": 200,
+        "bytes": 11461,
+        "sha256": "8a6fcf90fa72048af0a7ab618210fd7ea61bb34d8966820dd9b83834f08d21f4",
+        "source_id": "95e826085ed0fec9f410cc86",
+        "version": 205,
+        "original_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+      }
+    }
+  },
+  "legacy_collection_admin_status": 503,
+  "isolated_unconfigured_new_collector_admin_status": 503,
+  "production_private_and_public_files_unchanged": true,
+  "collector_queue_accessed": false,
+  "network_or_process_calls": false,
+  "service_started": false
+}

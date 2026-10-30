@@ -1,0 +1,107 @@
+{
+  "started_at": "2026-10-30T15:01:46.081381+00:00",
+  "phase": "preview4_delivered_continue_kunshan_and_other_provinces",
+  "base_commit": "0e8eb56a9bdbbea295b584e9a8037337c79e37e8",
+  "baseline": {
+    "guides": 203,
+    "generatable": 186,
+    "history": 211,
+    "windows_openclaw_ack": 377,
+    "ubuntu_outbox": 0
+  },
+  "agents": {
+    "overnight_localities": "owns Fprovider + foursharedregional files, stage/Word/browserevidence. Rootfinalpublish only",
+    "overnight_digital": "owns ChatVRM and digital-specificscripts. Ubuntu8089 ready, actualbrowserpending",
+    "overnight_collector": "owns linuxguidequeue +router+runner+tests, ROOTappfactory/UI integration"
+  },
+  "root_ownership": [
+    "collector frontend admin UI + backendapp router wiring",
+    "TLS/certificate/signing/currentUSB/WeChat prerequisites",
+    "publicseed and rollout publication",
+    "deploy policies/currentUbuntu8088switch",
+    "version/clientbuild/release and commits"
+  ],
+  "constraints": [
+    "No Windows models",
+    "No unrelated service/firewall/proxy changes",
+    "Preserve six dirty userfiles, sealed sources and old databases",
+    "Credentials never printed/uploaded",
+    "No auth/CAPTCHA bypass or real applications"
+  ],
+  "verified_blockers": {
+    "windows_trusted_signing": "CurrentUser codeSigning certificates0/privatekeys0",
+    "usb": "adbdevices empty",
+    "public_domain": "No projectdomainconfigured found; tailnet exists but nodeoffline/controlnetworkunreachable. Not completed TLS."
+  },
+  "next": "Commit preview4 documentation/receipts only. Keep G sources unstaged for independent stage review; await corrected370 shared generation and full835 results. Never relabel unverified as absent.",
+  "updated_at": "2026-10-30T16:55:33.537193+00:00",
+  "public_seed": {
+    "guides": 205,
+    "generatable": 188,
+    "main_live_guides": 203,
+    "ubuntu_live_guides": 203,
+    "publication": "F worktree seed only; live incremental append pending"
+  },
+  "implemented": {
+    "digital": "Ubuntu8089 actual synthetic stream and responsive candidate pass",
+    "collector": "Ubuntu sandboxed Chrome durable worker4observations; attachments failed honestly; admin candidate pass",
+    "tls": "loopback8443 testCA pass; public trusted TLS blocked",
+    "android": "independent release signing build active; compatible debug package preserved",
+    "ui_screenshots": "NOT_ACCEPTED_TOOL_RESTRICTION; excluded and preserved private"
+  },
+  "source_commit": "a79bad96b83ba1442858873a455e4cb2dbe24188",
+  "github_source_ci": {
+    "id": 41086544230,
+    "status": "success"
+  },
+  "main": {
+    "guides": 205,
+    "generatable": 188,
+    "history": 213,
+    "openclaw_ack": 377,
+    "user_dirty_six_preserved": true
+  },
+  "linux_issue_relay": {
+    "reviewed": 2,
+    "real_ack": 2,
+    "ai_analysis": 0,
+    "independent_from_main": true,
+    "automatic_relay": false
+  },
+  "clients": {
+    "four_target_build": "PASS",
+    "run": "2026-10-30T16-03-55-254Z-ca994cd0",
+    "artifact_files": 165,
+    "signed_final": "building; initial PS5 failure preserved, documented PS7 retry active"
+  },
+  "release": {
+    "tag": "v1.2.0-preview.4",
+    "source_commit": "a79bad96b83ba1442858873a455e4cb2dbe24188",
+    "public_url": "https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.4",
+    "assets": 9,
+    "anonymous_all_sha_match": true
+  },
+  "ubuntu": {
+    "guides": 205,
+    "generatable": 188,
+    "history": 205,
+    "legacy_outbox": 0,
+    "collector_jobs": 4,
+    "digital_live": true
+  },
+  "new_work": {
+    "kunshan": "G integrated only in worktree; stage/publication pinsNone. Root offline11pages and7Gtests pass; independent62pass2oldfixturefail. Full835 active; corrected370matrix active. No main/seed edits.",
+    "fujian_gulou": "own source24filefreeze; private owncandidate5tests; nativeWord export retry with short paths, no visualapproval yet.",
+    "shandong": "two exact districts accessed; index403/0/null applicationstatus, not service absence; source-onlyissues being frozen."
+  },
+  "remaining": [
+    "nationwide completion",
+    "Kunshan G stage/native browser/final approval/publication",
+    "Fujian own-template visual/integration/browser gates",
+    "other exact city/county/functionalzone own-source verification",
+    "trusted public HTTPS/domain",
+    "trusted Windows signing",
+    "USB/physical-phone and WeChat release acceptance",
+    "continuous automatic OpenClaw issue relay"
+  ]
+}

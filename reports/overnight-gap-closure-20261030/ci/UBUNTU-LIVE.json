@@ -1,0 +1,138 @@
+{
+  "source_commit": "a79bad96b83ba1442858873a455e4cb2dbe24188",
+  "url": "http://192.168.110.81:8088",
+  "scope": "after root publication",
+  "model_inference_requested": false,
+  "collector_jobs_created": false,
+  "records_published_by_check": false,
+  "routes": {
+    "/": 200,
+    "/province/jiangsu": 200,
+    "/health": 200,
+    "/api/platform/cases": 401,
+    "/api/official-collector": 401,
+    "/api/unknown": 404
+  },
+  "services": {
+    "digital": {
+      "status": "configured",
+      "url": "http://192.168.110.81:8089"
+    }
+  },
+  "loaded_marker": {
+    "release_id": "oct30night-own-localities-v1",
+    "adapters": [
+      "jiangsu_own_blank_oct29e_v1",
+      "zhejiang_own_worker_oct29e_v1",
+      "zhejiang_chunan_own_worker_oct30_v1",
+      "jiangsu_own_blank_oct30f_v1"
+    ],
+    "candidate_stage_receipts": {
+      "jiangsu_own_blank_oct30f_v1": "1c9bcc069f4b659f55225a988852f81e7888ab66b6e0c46ad4d0a78fbdf38c88"
+    },
+    "publication_receipts": {
+      "zhejiang_chunan_own_worker_oct30_v1": "442a6faa2aeae6e15a3b6177e098d42d8545c377d3d8344070dbab8af244671d",
+      "jiangsu_own_blank_oct30f_v1": "b37cabc422b4a315e22a5762553269636b821dd8d9b0b3fc46f03602af6febe6"
+    },
+    "source_bound": true,
+    "models_required": false,
+    "regional_store": "alternate"
+  },
+  "ai_status": {
+    "status": "ready",
+    "ready": true,
+    "transport": "ubuntu-local",
+    "model": "qwen3.8:27b",
+    "local_model_started": false
+  },
+  "admin_login_and_me": 200,
+  "legacy_collection_admin_status": 503,
+  "collector": {
+    "admin_status": 200,
+    "worker_alive": true,
+    "worker_state": "idle",
+    "counts": {
+      "complete": 4
+    },
+    "observations_require_review": true,
+    "model_used": false,
+    "authenticated_evidence_sha_verified": true,
+    "unauthenticated_evidence_status": 401,
+    "invalid_submission_status": 422,
+    "jobs_unchanged": true
+  },
+  "logout_revokes_session": true,
+  "persistent_catalogue": {
+    "guides": 205,
+    "generatable_localities": 188
+  },
+  "legacy_ubuntu_outbox": {
+    "status": "NO_EVENTS",
+    "total_count": 0,
+    "pending_count": 0,
+    "acknowledged_count": 0,
+    "ai_reviewed_count": 0
+  },
+  "documents": {
+    "330127": {
+      "application": {
+        "status": 200,
+        "bytes": 27317,
+        "sha256": "a47281792a62392c86957e107003c54dfa12a3783c3010ef7fb7977c0a77526d",
+        "source_id": "3fb683d473fe253a3a117d46",
+        "version": 203,
+        "cross_origin_binding_headers_exposed": true,
+        "original_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f"
+      },
+      "evidence": {
+        "status": 200,
+        "bytes": 16341,
+        "sha256": "ad804527a3ddc85494ba8378f0661c9320abb440bd23a2bb4672466fe153c6c9",
+        "source_id": "3fb683d473fe253a3a117d46",
+        "version": 203,
+        "cross_origin_binding_headers_exposed": true,
+        "original_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c"
+      }
+    },
+    "320581": {
+      "application": {
+        "status": 200,
+        "bytes": 12674,
+        "sha256": "60cc752eaaf1023986fabfb75797106b6b08788df43f9772de0a4c6c0b1b3313",
+        "source_id": "9a24af792c956feb67bd37c6",
+        "version": 204,
+        "cross_origin_binding_headers_exposed": true,
+        "original_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3"
+      },
+      "evidence": {
+        "status": 200,
+        "bytes": 11461,
+        "sha256": "8a6fcf90fa72048af0a7ab618210fd7ea61bb34d8966820dd9b83834f08d21f4",
+        "source_id": "9a24af792c956feb67bd37c6",
+        "version": 204,
+        "cross_origin_binding_headers_exposed": true,
+        "original_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+      }
+    },
+    "320582": {
+      "application": {
+        "status": 200,
+        "bytes": 12674,
+        "sha256": "60cc752eaaf1023986fabfb75797106b6b08788df43f9772de0a4c6c0b1b3313",
+        "source_id": "95e826085ed0fec9f410cc86",
+        "version": 205,
+        "cross_origin_binding_headers_exposed": true,
+        "original_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3"
+      },
+      "evidence": {
+        "status": 200,
+        "bytes": 11461,
+        "sha256": "8a6fcf90fa72048af0a7ab618210fd7ea61bb34d8966820dd9b83834f08d21f4",
+        "source_id": "95e826085ed0fec9f410cc86",
+        "version": 205,
+        "cross_origin_binding_headers_exposed": true,
+        "original_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+      }
+    }
+  }
+}

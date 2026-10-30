@@ -1,0 +1,149 @@
+{
+  "checked_at": "2026-10-30T16:26:00.325Z",
+  "source_commit": "a79bad96b83ba1442858873a455e4cb2dbe24188",
+  "digital_release": "digital-20261031-v5",
+  "digital_build_id": "EfA_TAEyBCpdTrf2Hi4-N",
+  "main_origin": "http://192.168.110.81:8088",
+  "digital_origin": "http://192.168.110.81:8089",
+  "services_endpoint_status": 200,
+  "services_discovered_digital_url": "http://192.168.110.81:8089",
+  "saved_endpoint_override_used": false,
+  "main_referrer_policy_same_origin": true,
+  "iframe_avatar_ready": true,
+  "iframe_qwen_metadata_ready": true,
+  "rows": [
+    {
+      "width": 375,
+      "clientWidth": 360,
+      "overflow": false,
+      "window": {
+        "x": 12,
+        "y": 248,
+        "width": 336,
+        "height": 640
+      },
+      "windowVisible": true,
+      "iframe": "http://192.168.110.81:8089/?embed=1",
+      "iframeViewport": {
+        "width": 334,
+        "height": 535
+      },
+      "referrerPolicy": "origin",
+      "crossOriginDocumentBlocked": true,
+      "modal": "false",
+      "actions": [
+        "收起对话",
+        "关闭数字人"
+      ]
+    },
+    {
+      "width": 768,
+      "clientWidth": 753,
+      "overflow": false,
+      "window": {
+        "x": 336.66668701171875,
+        "y": 244,
+        "width": 400,
+        "height": 640
+      },
+      "windowVisible": true,
+      "iframe": "http://192.168.110.81:8089/?embed=1",
+      "iframeViewport": {
+        "width": 398,
+        "height": 535
+      },
+      "referrerPolicy": "origin",
+      "crossOriginDocumentBlocked": true,
+      "modal": "false",
+      "actions": [
+        "收起对话",
+        "关闭数字人"
+      ]
+    },
+    {
+      "width": 1440,
+      "clientWidth": 1425,
+      "overflow": false,
+      "window": {
+        "x": 1008.6666870117188,
+        "y": 244,
+        "width": 400,
+        "height": 640
+      },
+      "windowVisible": true,
+      "iframe": "http://192.168.110.81:8089/?embed=1",
+      "iframeViewport": {
+        "width": 398,
+        "height": 535
+      },
+      "referrerPolicy": "origin",
+      "crossOriginDocumentBlocked": true,
+      "modal": "false",
+      "actions": [
+        "收起对话",
+        "关闭数字人"
+      ]
+    }
+  ],
+  "short_phone": {
+    "width": 375,
+    "height": 667,
+    "window": {
+      "x": 12,
+      "y": 84,
+      "width": 336,
+      "height": 571.3333740234375
+    },
+    "visible": true,
+    "iframe": {
+      "width": 334,
+      "height": 467
+    }
+  },
+  "embedded_child_layout_at_real_iframe_sizes": [
+    {
+      "width": 334,
+      "height": 535,
+      "embedded": true,
+      "app": {
+        "width": 334,
+        "height": 535.3333740234375
+      },
+      "overflow": false,
+      "composerVisible": true,
+      "stageHeight": 100,
+      "avatar": "ready"
+    },
+    {
+      "width": 398,
+      "height": 535,
+      "embedded": true,
+      "app": {
+        "width": 398,
+        "height": 535.3333740234375
+      },
+      "overflow": false,
+      "composerVisible": true,
+      "stageHeight": 100,
+      "avatar": "ready"
+    }
+  ],
+  "collapse": {
+    "collapsed": true,
+    "height": 68,
+    "iframeRetained": true
+  },
+  "draft_retained_on_expand": true,
+  "escape": {
+    "closed": true,
+    "focus": "打开 AI 法律顾问"
+  },
+  "close_reopen_clears_unsent_draft": true,
+  "no_stale_3000_requests": true,
+  "no_question_posts": true,
+  "new_inference_calls": 0,
+  "console_errors": 0,
+  "console_warnings": 0,
+  "new_screenshots_taken": false,
+  "method": "Native Chrome DOM/accessibility/network verification only"
+}

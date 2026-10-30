@@ -1,0 +1,82 @@
+{
+  "checked_at": "2026-10-30T16:12:59.499Z",
+  "source_commit": "a79bad96b83ba1442858873a455e4cb2dbe24188",
+  "release": "digital-20261031-v5",
+  "build_id": "EfA_TAEyBCpdTrf2Hi4-N",
+  "new_inference_calls": 0,
+  "direct": [
+    {
+      "width": 375,
+      "clientWidth": 375,
+      "overflow": false,
+      "avatarState": "ready",
+      "app": {
+        "x": 12,
+        "y": 110,
+        "width": 351.3333435058594,
+        "height": 680
+      },
+      "portrait": {
+        "width": 124,
+        "height": 115.33333587646484
+      },
+      "stageHeight": 116,
+      "composerVisible": true,
+      "messageCount": 0,
+      "backendConnected": true,
+      "buildId": "EfA_TAEyBCpdTrf2Hi4-N"
+    },
+    {
+      "width": 768,
+      "clientWidth": 768,
+      "overflow": false,
+      "avatarState": "ready",
+      "app": {
+        "x": 184,
+        "y": 110,
+        "width": 400,
+        "height": 680
+      },
+      "portrait": {
+        "width": 134,
+        "height": 127.33333587646484
+      },
+      "stageHeight": 128,
+      "composerVisible": true,
+      "messageCount": 0,
+      "backendConnected": true,
+      "buildId": "EfA_TAEyBCpdTrf2Hi4-N"
+    },
+    {
+      "width": 1440,
+      "clientWidth": 1440,
+      "overflow": false,
+      "avatarState": "ready",
+      "app": {
+        "x": 520,
+        "y": 110,
+        "width": 400,
+        "height": 680
+      },
+      "portrait": {
+        "width": 134,
+        "height": 127.33333587646484
+      },
+      "stageHeight": 128,
+      "composerVisible": true,
+      "messageCount": 0,
+      "backendConnected": true,
+      "buildId": "EfA_TAEyBCpdTrf2Hi4-N"
+    }
+  ],
+  "reload_clears_unsent_draft": {
+    "question": "",
+    "messages": 0,
+    "buildId": "EfA_TAEyBCpdTrf2Hi4-N"
+  },
+  "console_errors": 0,
+  "console_warnings": 0,
+  "viewer_and_compact_css_unchanged_from_previously_captured_upper_body_ui": true,
+  "new_screenshots_taken": false,
+  "verification_method": "Real Chrome DOM and network; no screenshot capture"
+}

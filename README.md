@@ -12,15 +12,15 @@
 
 ## 软件下载（预览版）
 
-[下载 Android / Windows / Ubuntu：v1.2.0-preview.3](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.3)
+[下载 Android / Windows / Ubuntu：v1.2.0-preview.4](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.4)
 
-新版提供 Android APK、Windows x64 安装版和便携版，以及包含网页/API与已核验公开原件的Ubuntu部署包。客户端通过连接设置选择已部署后端或本机服务，不能单独离线生成文书。AI连接Ubuntu Qwen3.8，不在Windows运行模型；不表示全国区县全部接入。下载后逐项核对 `SHA256SUMS.txt`，详见[新版说明](docs/releases/v1.2.0-preview.3.md)。Android为调试签名、Windows未代码签名；本轮USB列表为空，尚未更新实体手机。
+新版提供 Android APK、Windows x64 安装版和便携版，以及包含网页/API与已核验公开原件的Ubuntu部署包。客户端通过连接设置选择已部署后端或本机服务，不能单独离线生成文书。AI连接Ubuntu Qwen3.8，不在Windows运行模型；不表示全国区县全部接入。下载后逐项核对 `SHA256SUMS.txt`，详见[新版说明](docs/releases/v1.2.0-preview.4.md)及[9附件匿名下载校验](reports/overnight-gap-closure-20261030/release/PUBLIC-DOWNLOADS.json)。Android提供保留原包名和旧调试签名的兼容版，以及包名独立、关闭调试的新签名预览版；两者数据不自动互通，不卸载旧应用。Windows未代码签名；USB未发现设备，未声明实体手机已更新。
 
 ## 账号、隔离与部署
 
 公共文书填写不要求登录。后台案件按账号隔离；没有默认密码，新账号不会自动接管历史案件。密码及会话令牌以哈希保存，浏览器会话只保留在当前标签页。退出、过期或切换账号时清空私人界面，旧草稿保留而不自动上传。[开通账号及历史案件归属](docs/accounts-and-security.md)。
 
-网页、Android和Windows可在“连接设置”填写可信服务地址，检查后保存。Windows桌面将服务地址保存在应用自身设置中，重新打开仍保留；账号会话不会随之持久保存。Ubuntu部署包在独立目录保存账号、案件与公开指南，网页和API使用同一个地址；安装包不含用户数据库或模型。公网仍须配置HTTPS，局域网HTTP只作可信网络预览。[Ubuntu部署和回退](docs/ubuntu-deployment.md) · [锁定依赖及CI](docs/ci.md)。本轮Ubuntu局域网已实际启动，网页/API地址由维护人员提供；尚无公网域名和TLS。Ubuntu上的采集任务创建暂返回已认证的503，数字人仍需单独部署；这些不计为已完成的部署能力。
+网页、Android和Windows可在“连接设置”填写可信服务地址，检查后保存。Windows桌面将服务地址保存在应用自身设置中，重新打开仍保留；账号会话不会随之持久保存。Ubuntu部署包在独立目录保存账号、案件与公开指南，网页和API使用同一个地址；安装包不含用户数据库或模型。公网仍须配置HTTPS，局域网HTTP只作可信网络预览。[Ubuntu部署和回退](docs/ubuntu-deployment.md) · [锁定依赖及CI](docs/ci.md)。本轮Ubuntu局域网已实际启动，网页/API地址由维护人员提供；尚无公网域名和TLS。数字人现有独立Ubuntu运行服务和源码部署包，客户端从所连接的API读取它的地址。新增独立Linux采集队列及管理员页面；它保存公开页面观察和附件证据，须审核后才能成为当地指南或文书。旧门户报告执行器仍有独立平台限制，不能与新采集队列混为一谈。[数字人部署](ChatVRM/deploy/README.md) · [持久采集器](docs/linux-guide-collector.md) · [本机持久连接配置](docs/public-service-settings.md)。
 
 ## 从填写到提交
 
@@ -39,16 +39,16 @@
 
 ![当地办理指南：窗口提示、材料与官方来源](docs/images/local-guide.png)
 
-**公开发行数据更新于 2026-10-30。全国区县尚未完成。**
+**公开发行数据更新于 2026-10-31。全国区县尚未完成。**
 
 | 范围 | 当前实际状态 |
 |---|---|
 | 省级入口 | 中国大陆 31 个省级地区；入口存在不代表指南已核验 |
 | 地区目录 | 3,974 条目录记录（含省市层级）；目录与候选合并追踪 3,590 个精确地区组合，不是全国功能区完整普查 |
-| 已发布当地指南 | 203 地：四川 180、江苏 10、浙江 7、安徽 2、湖南 4 |
-| 已发布当地填写生成 | 186 地：四川 164、江苏 10、浙江 7、安徽 1、湖南 4 |
+| 已发布当地指南 | 205 地：四川 180、江苏 12、浙江 7、安徽 2、湖南 4 |
+| 已发布当地填写生成 | 188 地：四川 164、江苏 12、浙江 7、安徽 1、湖南 4 |
 | 仅指南、未开放当地生成 | 17 地 |
-| 未发布候选 | 27 地，均不计入上线覆盖 |
+| 未发布候选 | 25 地，均不计入上线覆盖 |
 | 历史省级文书 | 保留独立入口，须另核对适用范围，不计入区县完成数 |
 
 近期新增滨海县、响水县、杭州市上城区、滨江区和合肥市庐阳区的独立资料。滨海、响水及上城已完成离线填写与逐页版式检查，仍待网页验收。滨江材料栏与流程冲突，庐阳的时限说明存在差异，均保留待核验。临平搜索落到市本级的结果未作为该区指南。新候选未发布，没有任何省份被标记为“全区县完成”。
@@ -77,6 +77,8 @@
 
 运行后在 `/admin/regions` 查看实时矩阵。仓库中可核对 [逐省实际进度](docs/regions-status.md)、[公开数据版本](data/public-regions/manifest.json)、[候选登记](config/regional_candidates.json) 与 [地区接入说明](docs/regional-release.md)。
 
+2026-10-31继续以常熟、张家港各自官方指南和空白表格接入申请书、证据清单。四份候选网页真实下载及下载件逐页检查通过；Windows主站增量发布到205/188，原指南历史与377条OpenClaw回执保留。材料缺失字段仍待核验，不保证受理。昆山另行采集自身材料和模板，尚不计为已发布。[本轮封存验收](reports/overnight-gap-closure-20261030/localities/jiangsu-f/FINAL-BROWSER-QA.json) · [主站发布](reports/overnight-gap-closure-20261030/localities/MAIN-PUBLICATION.json)。
+
 ### 淳安：自身原件与逐页检查
 
 <img src="reports/production-readiness-20261030/localities/chunan/browser-generation/word/application-1.png" width="340" alt="淳安自身申请书网页生成后的第一页，全部资料为虚构验收信息" />
@@ -89,7 +91,9 @@
 
 **2026-10-29 已完成真实网页问答验收**：文字顾问和数字人均通过现有项目后端连接 Ubuntu 的 `qwen3.8:27b`，完整返回测试回答。页面显示连接状态，支持重新检查；远程连接中断不会影响文书填写和生成。已验证 375 / 768 / 1440px 布局。连接、升级后重启和使用说明见 [Ubuntu 远程 AI](docs/remote-ai.md)。
 
-![客服式数字人小窗：上半身形象、Ubuntu Qwen3.8 真实测试回答](docs/images/digital-human.png)
+<img src="docs/images/digital-human-ubuntu-compact.jpg" width="320" alt="真实网页375px客服小窗：上半身形象与聊天输入，不遮满整页" />
+
+Ubuntu独立数字人服务已完成形象加载、远程合成问答与375/768/1440px布局检查。小窗收起保留当前对话，关闭后重新打开不重放旧对话；iframe内Esc可关闭并恢复焦点。上述截图为本轮真实候选网页，未用设计稿替代运行截图。
 
 ![AI 法律顾问通过 Ubuntu Qwen3.8 返回真实测试回答](docs/images/ai-advisor.png)
 
@@ -104,6 +108,8 @@
 ![地区来源与 OpenClaw 问题投递状态](docs/images/openclaw-regions.png)
 
 上图是历史截图，当时的 `PENDING_OPENCLAW` 表示尚未取得服务确认。2026-10-30 已使用独立 OpenClaw 配置，通过真实 `tools.invoke / memory_get` 核对全部377条公开问题，并将377条回执增量写回项目，待确认0条、AI分析0条。服务读取不等于AI复核；没有调用模型，也没有发送个人文书。原有指南历史和全局 OpenClaw 主配置保留。这377条回执在Windows主站公共库；新Ubuntu部署使用独立空outbox，不复制私有OpenClaw配置，也不伪造已同步状态。[本轮真实结果](reports/production-readiness-20261030/openclaw/FINAL-RESULT.json) · [隔离同步及启动说明](docs/openclaw-issue-delivery.md)。
+
+新增Linux队列的4个任务保存为待审核观察。其中两条公开访问/下载问题经过独立复核后，已通过真实OpenClaw完整内容回读取得2条回执；它们在独立投递库，不与主站377条重复计数。原观察与模板适用性仍待审核，AI分析0，持续自动投递尚未实现。[实际问题回执](reports/overnight-gap-closure-20261030/openclaw/LINUX-ISSUE-RECEIPTS.json)。
 
 ## 网页、Android 与小程序
 

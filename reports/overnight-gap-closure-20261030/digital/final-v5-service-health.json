@@ -1,0 +1,23 @@
+{
+  "source_commit": "a79bad96b83ba1442858873a455e4cb2dbe24188",
+  "release": "digital-20261031-v5",
+  "runtime_origin": "http://192.168.110.81:8089",
+  "health": {
+    "service": "digital-human",
+    "backend": true,
+    "ai": {
+      "ready": true,
+      "status": "ready",
+      "model": "qwen3.8:27b",
+      "message": "Ubuntu 远程服务已连接。",
+      "provider": "Ubuntu Ollama",
+      "local_model_started": false
+    },
+    "voice": "browser"
+  },
+  "owned_service_switched": true,
+  "previous_release_retained_for_rollback": true,
+  "rollback_needed": false,
+  "new_inference_calls": 0,
+  "other_services_stopped_or_reconfigured_by_this_lane": false
+}

@@ -1,0 +1,12 @@
+{
+  "portableExportPasswordFoundInOperationLogs": false,
+  "actualMissingSigningSecretsReleaseTaskRejected": true,
+  "encryptedKeystoreWrongPasswordRejected": true,
+  "sourceHashesRecordedAtVerification": true,
+  "checked_at": "2026-10-30T16:00:55.466403+00:00",
+  "base_receipt": "apk-validation.json (preserved as committed)",
+  "validationOnly": true,
+  "private_identity_reused_without_rotation": true,
+  "guard_checks_passed": 8,
+  "final_frozen_frontend_build_still_required": true
+}

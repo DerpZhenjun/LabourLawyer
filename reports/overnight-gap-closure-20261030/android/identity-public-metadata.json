@@ -1,0 +1,18 @@
+{
+  "applicationId": "cn.labourlawyer.mobile.release",
+  "alias": "labourlawyer-release-preview",
+  "createdAtUtc": "2026-10-30T15:41:01.3555418Z",
+  "certificateSha256": "e5a8710026754f9ffdff9090d67adbda77c0e5817d6aa5951fd2d3e12ed4d0c4",
+  "certificateNotAfterUtc": "2054-03-17T15:40:59.0000000Z",
+  "keyAlgorithm": "RSA",
+  "keyBits": 3072,
+  "keystoreType": "PKCS12",
+  "keystoreSha256": "5fa8daa6969a2bf7769658893ed6ef3300d7b49db1ca37ec87e03bbb7723f8cc",
+  "credentialProtection": "Windows DPAPI CurrentUser",
+  "permanentDirectory": "USERPROFILE/.labourlawyer/signing (outside checkout)",
+  "initialBackupVerified": true,
+  "portableEncryptedExportVerified": true,
+  "existingIdentityReused": true,
+  "keyRotated": false,
+  "privateKeyUploaded": false
+}

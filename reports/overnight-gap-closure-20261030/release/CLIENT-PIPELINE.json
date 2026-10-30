@@ -1,0 +1,158 @@
+{
+  "runId": "2026-10-30T16-03-55-254Z-ca994cd0",
+  "targets": [
+    "web",
+    "mini",
+    "android",
+    "desktop"
+  ],
+  "startedAt": "2026-10-30T16:03:55.256Z",
+  "finishedAt": "2026-10-30T16:09:17.304Z",
+  "status": "passed",
+  "sourceSha256": "ba162482ff86c4491609d275e9ac8dfe375c8f813ac0f6d28ce8cbbb2b4f1a72",
+  "planSha256": "b91ae48facc525c772e1daa6c0ed2d4a523368c9b85e1e82c3eba267e43e6c98",
+  "runtime_source_commit": "a79bad96b83ba1442858873a455e4cb2dbe24188",
+  "artifact_files": 165,
+  "steps": [
+    {
+      "id": "contracts:client",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "chat:session-test",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "chat:privacy-test",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "chat:digital-privacy-test",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "auth:session-test",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "auth:flows-test",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "auth:workspace-test",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "contracts:address-test",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "collector:client-test",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "digital:config-test",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "contracts:regional",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "regional:online-link-test",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "release:metadata",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "contracts:api",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "contracts:api-test",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "contracts:catalog-test",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "contracts:base-test",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "contracts:ai-test",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "contracts:regional-test",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "shared",
+      "status": "passed",
+      "exitCode": null
+    },
+    {
+      "id": "web:check",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "android:check",
+      "status": "passed",
+      "exitCode": null
+    },
+    {
+      "id": "android:build",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "web:build",
+      "status": "passed",
+      "exitCode": null
+    },
+    {
+      "id": "mini:check",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "mini:build",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "desktop:check",
+      "status": "passed",
+      "exitCode": 0
+    },
+    {
+      "id": "desktop:build",
+      "status": "passed",
+      "exitCode": 0
+    }
+  ]
+}
