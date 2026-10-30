@@ -16,6 +16,8 @@ export PYTHONUTF8=1 PYTHONDONTWRITEBYTECODE=1
 "$python" "$release/deploy/verify.py"
 export LABOURLAWYER_DEPLOY_DATA="$app_home/var"
 export LABOURLAWYER_CORS_ORIGINS='http://192.168.110.81:8088,capacitor://localhost,http://localhost,https://localhost'
+# Explicit LABOURLAWYER_DIGITAL_URL and LABOURLAWYER_COLLECTOR_CONFIG values are
+# inherited from the operator. This launcher never guesses or starts either service.
 cd -- "$release"
 if [[ "${LABOURLAWYER_ENABLE_UBUNTU_AI:-0}" == 1 ]]; then
   export LABOURLAWYER_AI_TRANSPORT='ubuntu-local'

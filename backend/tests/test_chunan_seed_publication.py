@@ -32,8 +32,13 @@ class ChunanSeedPublicationTests(unittest.TestCase):
             target = root / relative; target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(ROOT / relative, target)
         public = root / 'data/public-regions'
-        guides = [g for g in json.loads((ROOT / 'data/public-regions/guides.json').read_bytes()) if g['region_code'] != '330127']
+        historical = [g for g in json.loads((ROOT / 'data/public-regions/guides.json').read_bytes()) if g['region_code'] not in {'320581', '320582'}]
+        historical_bytes = (json.dumps(historical, ensure_ascii=False, indent=2) + '\n').encode()
+        self.assertEqual(len(historical), 203)
+        self.assertEqual(sha256(historical_bytes).hexdigest(), '58f42da0707a1a85a9923c212c36a4cc57aa0794a046ca8e3769f6801af8bc4c', 'Historical Chunan publication fixture must retain the exact approved203 prefix')
+        guides = [g for g in historical if g['region_code'] != '330127']
         raw = (json.dumps(guides, ensure_ascii=False, indent=2) + '\n').encode()
+        self.assertEqual(sha256(raw).hexdigest(), self.module.BASE_GUIDES_SHA256)
         (public / 'guides.json').write_bytes(raw)
         manifest = json.loads((ROOT / 'data/public-regions/manifest.json').read_bytes())
         manifest.update(guides=202, generatable_localities=185)
@@ -74,9 +79,12 @@ class ChunanSeedPublicationTests(unittest.TestCase):
     def test_loaded_code_marker_identifies_chunan_and_exact_publication_receipt(self):
         from routes.regional_guides import release_capabilities
         marker = release_capabilities()
-        self.assertEqual(marker['release_id'], 'oct30-chunan-own-locality-v1')
+        self.assertEqual(marker['release_id'], 'oct30night-own-localities-v1')
         self.assertIn(own.ADAPTER, marker['adapters'])
         self.assertEqual(marker['publication_receipts'][own.ADAPTER], own.PUBLICATION_SHA256)
+        self.assertIn('jiangsu_own_blank_oct30f_v1', marker['adapters'])
+        self.assertEqual(marker['candidate_stage_receipts']['jiangsu_own_blank_oct30f_v1'], '1c9bcc069f4b659f55225a988852f81e7888ab66b6e0c46ad4d0a78fbdf38c88')
+        self.assertEqual(marker['publication_receipts']['jiangsu_own_blank_oct30f_v1'], 'b37cabc422b4a315e22a5762553269636b821dd8d9b0b3fc46f03602af6febe6')
 
 
 if __name__ == '__main__':

@@ -52,3 +52,7 @@ React 挂载回归使用 `scripts/react-mount-fixture` 的独立、锁定 React 
 CI 不上传用户数据、发版、部署或签名。实际 GitHub 运行成功后才构成远程 CI 证据；本地通过不能代替 GitHub Actions 运行记录。Android、Windows 安装包、微信开发者工具、真实浏览器和公网服务另行验收，不能从本工作流推断其已通过。
 
 桌面连接设置另有纯Node回归：跨实例保存与清除、共享地址校验、拒绝额外身份字段、拒绝非主窗口/非当前应用来源的IPC。真实安装包的完整重启和Ubuntu文书下载另行验收，不能以这些单元测试代替。
+
+夜间扩展检查覆盖常熟/张家港的自身来源、最终浏览器/Word回执和增量公开快照，服务能力接口、Linux采集队列及TLS配置校验。共享流水线在所有目标之前执行采集响应/认证/SHA、数字人部署地址和官方在线入口检查，并指纹记录各实际测试脚本。历史淳安发布测试从当前快照提取已封存的203条前缀并核对原SHA，不重跑生产发布或放宽旧发布器。
+
+后端离线runner明确排除 `test_linux_guide_collector.CollectorTests.test_os_worker_lock_rejects_second_process_and_releases_on_exit`，输出独立集成门槛；它使用真实子进程，不允许为此放宽audit hook。可在已隔离的Linux测试环境单独运行此具名用例。真实Chrome观察、TLS证书/代理验收和私有证书fixture也独立运行，不计入离线通过数；TLS离线部分仅加载配置/路径校验和损坏缓存拒绝测试类。测试不自动安装浏览器、创建可信证书、启动模型或导入采集观察结果。

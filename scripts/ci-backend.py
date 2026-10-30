@@ -33,6 +33,14 @@ TESTS = (
     'test_chunan_oct30_dispatch',
     'test_chunan_publication_evidence',
     'test_chunan_seed_publication',
+    'test_jiangsu_oct30f',
+    'test_jiangsu_oct30f_dispatch',
+    'test_jiangsu_oct30f_publication',
+    'test_jiangsu_f_seed_publication',
+    'test_service_capabilities',
+    'test_linux_guide_collector',
+    'test_tls_deployment.TLSDeploymentTests',
+    'test_tls_deployment.TLSInstallerTests',
     'test_platform_auth',
     'test_legacy_case_claim',
     'test_openclaw_report_counts',
@@ -43,6 +51,10 @@ TESTS = (
 NODE_FIXTURES = {
     (ROOT / 'scripts/test-document-clients.cjs').resolve(),
     (ROOT / 'scripts/export_document_examples.mjs').resolve(),
+}
+OFFLINE_EXCLUSIONS = {
+    'test_linux_guide_collector.CollectorTests.test_os_worker_lock_rejects_second_process_and_releases_on_exit':
+        'Runs real child processes; execute this named Linux case separately, outside the offline guard.',
 }
 
 
@@ -117,12 +129,30 @@ def main():
             'LABOURLAWYER_AI_CONNECTION_FILE': str(sandbox / 'no-remote-connection.json'),
             'OLLAMA_API_BASE': '',
             'LABOURLAWYER_AI_TRANSPORT': 'direct',
+            'LABOURLAWYER_COLLECTOR_CONFIG': '',
+            'LABOURLAWYER_DIGITAL_URL': '',
             'HF_HUB_OFFLINE': '1',
             'TRANSFORMERS_OFFLINE': '1',
         }))
         install_guard(sandbox)
         check_guard(sandbox)
-        suite = unittest.defaultTestLoader.loadTestsFromNames(TESTS)
+        loaded = unittest.defaultTestLoader.loadTestsFromNames(TESTS)
+        def cases(suite):
+            for case in suite:
+                if isinstance(case, unittest.TestSuite):
+                    yield from cases(case)
+                else:
+                    yield case
+        selected = []; excluded = set()
+        for case in cases(loaded):
+            if case.id() in OFFLINE_EXCLUSIONS:
+                excluded.add(case.id())
+                print('Separate integration gate:', case.id(), '-', OFFLINE_EXCLUSIONS[case.id()], flush=True)
+            else:
+                selected.append(case)
+        if excluded != set(OFFLINE_EXCLUSIONS):
+            raise AssertionError('The explicitly separate integration case changed; review its offline selection')
+        suite = unittest.TestSuite(selected)
         result = unittest.TextTestRunner(verbosity=2).run(suite)
         return 0 if result.wasSuccessful() else 1
 

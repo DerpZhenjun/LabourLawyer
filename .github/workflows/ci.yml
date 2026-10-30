@@ -67,6 +67,9 @@ jobs:
           node scripts/test-assistant-session.mjs
           node scripts/test-chat-privacy.mjs
           node scripts/test-digital-chat-privacy.cjs
+          node scripts/test-official-collector.mjs
+          node scripts/test-digital-service-config.mjs
+          node scripts/test-regional-online-link.mjs
       - name: Build and verify web and mini from the checked contracts
         run: node scripts/client-pipeline.mjs build --targets web,mini
       - name: Run isolated backend regressions

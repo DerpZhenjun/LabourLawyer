@@ -185,8 +185,25 @@ if (api) {
     await assert.rejects(api.prepareArtifacts({ root: f.root, receiptPath: result.receiptPath, graph: f.graph, inputs: f.inputs }), /source/)
   })
 
+  test('Kotlin compiler cache writes do not stale Android receipts while Gradle source remains fingerprinted', async t => {
+    const f=fixture(t)
+    mkdirSync(join(f.root,'mobile/android/.kotlin/sessions'),{recursive:true})
+    const cache=join(f.root,'mobile/android/.kotlin/sessions/compiler.json'),gradle=join(f.root,'mobile/android/build.gradle')
+    writeFileSync(cache,'initial compiler session');writeFileSync(gradle,'real Gradle source v1')
+    const graph={shared:f.graph.shared,'android:build':{deps:['shared'],command:{bin:'node',args:['android'],cwd:'.'},artifacts:[{path:'out/android',fresh:true}]}}
+    const result=await api.runPipeline({...f,graph,inputs:['mobile'],targets:['android'],runner:async command=>{
+      if(command.args[0]==='android'){writeFileSync(cache,'compiler cache changed during build');f.writeArtifact('android')}
+      return{status:0}
+    }})
+    assert.equal(result.receipt.status,'passed','Generated Kotlin cache must not count as changed source')
+    writeFileSync(cache,'another transient compiler session')
+    await api.prepareArtifacts({root:f.root,receiptPath:result.receiptPath,graph,inputs:['mobile']})
+    writeFileSync(gradle,'real Gradle source v2')
+    await assert.rejects(api.prepareArtifacts({root:f.root,receiptPath:result.receiptPath,graph,inputs:['mobile']}),/source/)
+  })
+
   test('editing an executed shared test or release metadata check invalidates build evidence', async t => {
-    for (const changed of ['scripts/test-client-ai-contracts.mjs', 'scripts/test-regional-contracts.mjs', 'scripts/sync-client-release.mjs', 'desktop/start.html', 'desktop/preload.cjs', 'scripts/test-digital-chat-privacy.cjs', 'scripts/react-mount-fixture/package-lock.json', 'ChatVRM/src/pages/index.tsx']) {
+    for (const changed of ['scripts/test-client-ai-contracts.mjs', 'scripts/test-regional-contracts.mjs', 'scripts/test-official-collector.mjs', 'scripts/test-digital-service-config.mjs', 'scripts/test-regional-online-link.mjs', 'scripts/sync-client-release.mjs', 'desktop/start.html', 'desktop/preload.cjs', 'scripts/test-digital-chat-privacy.cjs', 'scripts/react-mount-fixture/package-lock.json', 'ChatVRM/src/pages/index.tsx']) {
       const f = fixture(t)
       for (const directory of ['scripts', 'packages', 'backend', 'config', 'data/public-regions', 'frontend', 'miniprogram', 'desktop', 'scripts/react-mount-fixture', 'ChatVRM/src/pages']) mkdirSync(join(f.root, directory), { recursive: true })
       writeFileSync(join(f.root,'desktop/start.html'),'<p>initial desktop start page</p>')
@@ -195,6 +212,7 @@ if (api) {
       writeFileSync(join(f.root,'scripts/test-digital-chat-privacy.cjs'),'// initial digital privacy check')
       for (const file of ['test-assistant-session.mjs','test-chat-privacy.mjs','test-auth-session.mjs','test-auth-flows.mjs','test-server-workspace.mjs','test-service-address.mjs','client-pipeline.mjs', 'build-api-contracts.mjs', 'build-regional-contracts.mjs', 'build-client-contracts.mjs', 'test-client-ai-contracts.mjs', 'test-regional-contracts.mjs', 'sync-client-release.mjs', 'test-stable-api-types.mjs','test-client-catalog-sync.mjs','test-api-base.mjs','sync-document-clients.mjs']) writeFileSync(join(f.root, 'scripts', file), '// initial check body')
       for(const name of ['frontend/package.json','frontend/package-lock.json'])writeFileSync(join(f.root,name),'{}')
+      for(const name of ['test-official-collector.mjs','test-digital-service-config.mjs','test-regional-online-link.mjs'])writeFileSync(join(f.root,'scripts',name),'// initial overnight check')
       const result = await api.runPipeline({ ...f, inputs: undefined, runner: async command => {
         if (command.args[0] !== 'shared') f.writeArtifact(command.args[0])
         return { status: 0 }
@@ -217,7 +235,7 @@ if (api) {
   test('every client runs session, account flow, isolation and service address checks first', async t => {
     const f=fixture(t)
     const result=await api.runPipeline({root:f.root,action:'check',dryRun:true,targets:['web','mini']})
-    for(const script of ['test-assistant-session.mjs','test-chat-privacy.mjs','test-digital-chat-privacy.cjs','test-auth-session.mjs','test-auth-flows.mjs','test-server-workspace.mjs','test-service-address.mjs']){
+    for(const script of ['test-assistant-session.mjs','test-chat-privacy.mjs','test-digital-chat-privacy.cjs','test-auth-session.mjs','test-auth-flows.mjs','test-server-workspace.mjs','test-service-address.mjs','test-official-collector.mjs','test-digital-service-config.mjs','test-regional-online-link.mjs']){
       const matches=result.receipt.steps.filter(step=>step.command?.args[0]===`scripts/${script}`)
       assert.equal(matches.length,1,script)
       assert(result.receipt.steps.indexOf(matches[0])<result.receipt.steps.findIndex(step=>step.id==='mini:check'))

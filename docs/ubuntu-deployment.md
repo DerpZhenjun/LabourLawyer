@@ -55,4 +55,10 @@ bash deploy/run.sh
 
 ## 同机 Ubuntu AI（显式启用）
 
+数字人与Linux采集器使用各自独立进程及持久目录。启动Web/API时显式传入已验证的地址和外部配置，例如 `LABOURLAWYER_DIGITAL_URL=http://192.168.110.81:8089 LABOURLAWYER_COLLECTOR_CONFIG="$HOME/SJL/LabourLawyer/var/collector/config.json" bash deploy/run.sh`；启动器不会启动或重启这两个服务。`/api/services` 只公开配置的数字人地址，不探测模型。新 `/api/official-collector` 管理员队列由独立worker处理，保留鉴权与证据SHA校验；原 `/api/portal-reports` 的Linux POST503不因此改变。详见 [采集器配置](linux-guide-collector.md)。
+
+已有公开数据库不会由bootstrap覆盖。新公开快照含205条指南、188个可生成地区时，必须通过另行审查的增量发布工具向既有库追加常熟/张家港两条，先备份并核对原203条、历史和outbox；不要删除数据库重建或把Windows历史回执复制进Ubuntu。采集worker的观察及待审outbox不自动成为已核验模板，也不随发布自动导入。
+
+可选的 [rootless TLS代理](../deploy/tls/README.md) 使用显式证书与私有目录，默认配置检查不会启动代理。隔离测试CA、回环8443验收不代表公网可信TLS；不得把测试私钥纳入发布包或改动全局信任库。
+
 本机Windows始终不运行模型。Ubuntu24.04自身部署可设置 `LABOURLAWYER_ENABLE_UBUNTU_AI=1` 再运行 `deploy/run.sh`；启动器只核对已有`$HOME/SJL/Ollama`安装、安装验收记录、进程UID、可执行文件和11434监听socket，不启动/下载/改配Ollama。失败时拒绝该启用方式，不回退Windows或任意localhost进程。服务状态还会核对Qwen3.8 27B/Q4_K_M。默认未启用AI仍可生成文书。

@@ -46,7 +46,7 @@ const excludedPrivateRuntime = value => /^backend\/(data|uploads)(\/|$)/.test(va
   || /\.(db|sqlite|sqlite3)(-(wal|shm|journal))?$/i.test(value)
 
 const excludedInput = value => excludedPrivateRuntime(value)
-  || (!/^desktop\/build(\/|$)/.test(value) && /(^|\/)(node_modules|\.git|\.next|\.gradle|\.idea|\.runtime|dist|build|__pycache__)(\/|$)/.test(value))
+  || (!/^desktop\/build(\/|$)/.test(value) && /(^|\/)(node_modules|\.git|\.next|\.gradle|\.kotlin|\.idea|\.runtime|dist|build|__pycache__)(\/|$)/.test(value))
   || /(^|\/)(\.env(?:\..*)?|project\.private\.config\.json|private\.config\.json)$/.test(value)
   || /\.(tsbuildinfo|pyc)$/.test(value)
   || /^mobile\/android\/app\/src\/main\/assets\/public(\/|$)/.test(value)
@@ -59,6 +59,7 @@ function sourceSnapshot(root, inputs) {
 function defaultInputs(targets) {
   return [...new Set(['frontend', 'ChatVRM/src/pages/index.tsx', 'scripts/test-digital-chat-privacy.cjs', 'scripts/react-mount-fixture/package.json', 'scripts/react-mount-fixture/package-lock.json', 'scripts/test-assistant-session.mjs', 'scripts/test-chat-privacy.mjs', 'scripts/test-auth-session.mjs', 'scripts/test-auth-flows.mjs', 'scripts/test-server-workspace.mjs', 'scripts/test-service-address.mjs', 'scripts/test-stable-api-types.mjs', 'scripts/test-client-catalog-sync.mjs', 'scripts/test-api-base.mjs', 'scripts/sync-document-clients.mjs', 'scripts/client-pipeline.mjs', 'scripts/build-api-contracts.mjs', 'scripts/build-regional-contracts.mjs', 'scripts/build-client-contracts.mjs', 'scripts/test-client-ai-contracts.mjs', 'scripts/test-regional-contracts.mjs', 'scripts/sync-client-release.mjs', 'packages', 'backend', 'config', 'data/public-regions',
     'desktop/start.html', 'desktop/preload.cjs',
+    'scripts/test-official-collector.mjs', 'scripts/test-digital-service-config.mjs', 'scripts/test-regional-online-link.mjs',
     ...(targets.includes('mini') ? ['miniprogram'] : []),
     ...(targets.includes('android') ? ['mobile'] : []),
     ...(targets.includes('desktop') ? ['desktop', 'LICENSE'] : []),
@@ -87,7 +88,10 @@ export function createGraph(root, targets) {
     'auth:flows-test': {deps: ['contracts:client'], command: node('scripts/test-auth-flows.mjs')},
     'auth:workspace-test': {deps: ['contracts:client'], command: node('scripts/test-server-workspace.mjs')},
     'contracts:address-test': {deps: ['contracts:client'], command: node('scripts/test-service-address.mjs')},
-    shared: { deps: ['chat:session-test','chat:privacy-test','chat:digital-privacy-test','auth:session-test','auth:flows-test','auth:workspace-test','contracts:address-test','release:metadata','contracts:api-test','contracts:catalog-test','contracts:base-test', 'contracts:api', 'contracts:regional', 'contracts:client', 'contracts:ai-test', 'contracts:regional-test'] },
+    'collector:client-test': {deps: ['contracts:client'], command: node('scripts/test-official-collector.mjs')},
+    'digital:config-test': {deps: ['contracts:client'], command: node('scripts/test-digital-service-config.mjs')},
+    'regional:online-link-test': {deps: ['contracts:regional'], command: node('scripts/test-regional-online-link.mjs')},
+    shared: { deps: ['chat:session-test','chat:privacy-test','chat:digital-privacy-test','auth:session-test','auth:flows-test','auth:workspace-test','contracts:address-test','collector:client-test','digital:config-test','regional:online-link-test','release:metadata','contracts:api-test','contracts:catalog-test','contracts:base-test', 'contracts:api', 'contracts:regional', 'contracts:client', 'contracts:ai-test', 'contracts:regional-test'] },
     'web:check': { deps: ['shared'], command: npm('frontend', 'typecheck') },
     'mini:check': { deps: ['shared'], command: npm('miniprogram', 'test') },
     'android:check': { deps: ['web:check'] },

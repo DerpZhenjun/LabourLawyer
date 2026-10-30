@@ -79,7 +79,10 @@ def build_bundle(root, output, policy_path, receipt_path):
         allowed = ((relative.startswith(('backend/', 'llm_service/')) and PurePosixPath(relative).suffix == '.py'
                     and not relative.startswith('backend/data/'))
                    or (relative.startswith('deploy/') and PurePosixPath(relative).suffix in DEPLOY_EXTENSIONS)
-                   or relative in {'scripts/manage-users.py', 'scripts/claim-legacy-case.py', 'docs/ubuntu-deployment.md'})
+                   or relative in {'scripts/manage-users.py', 'scripts/claim-legacy-case.py',
+                                   'scripts/run-linux-guide-collector.py', 'scripts/create-tls-test-ca.py',
+                                   'scripts/test-tls-proxy.py', 'docs/ubuntu-deployment.md',
+                                   'docs/linux-guide-collector.md'})
         if not allowed: raise ValueError('Unsupported deployment source path: ' + relative)
         bodies[relative] = bounded(root, relative).read_bytes()
     for row in receipt.get('artifacts', []):
