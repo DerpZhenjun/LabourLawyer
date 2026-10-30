@@ -11,6 +11,7 @@ from pydantic import BaseModel, ConfigDict, Field, field_validator
 from province_documents import PROVINCE_DOCUMENTS, get_province_document
 from document_forms import province_form, validate_content
 from WenShu.generic_template_fill import generate_application, generate_evidence
+from api_contracts import ProvinceCatalogResponse
 
 
 router = APIRouter()
@@ -136,12 +137,12 @@ def _response(doc, filename: str, background_tasks: BackgroundTasks):
     return FileResponse(path, filename=filename, media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document", headers={"Cache-Control": "no-store"})
 
 
-@router.get("")
+@router.get("", response_model=ProvinceCatalogResponse, response_model_exclude_unset=True)
 def list_province_documents():
     return {"items": [{**item, 'forms': province_form(item['slug'])} for item in PROVINCE_DOCUMENTS.values()]}
 
 
-@router.post("/{slug}/application/generate")
+@router.post("/{slug}/application/generate", response_class=FileResponse, responses={200: {'description': 'Generated Word document', 'content': {'application/vnd.openxmlformats-officedocument.wordprocessingml.document': {'schema': {'type': 'string', 'format': 'binary'}}}}})
 def generate_province_application(slug: str, payload: ApplicationRequest, background_tasks: BackgroundTasks):
     try:
         province, path = get_province_document(slug, "application")
@@ -158,7 +159,7 @@ def generate_province_application(slug: str, payload: ApplicationRequest, backgr
         raise HTTPException(status_code=500, detail=f"文书生成失败：{exc}") from exc
 
 
-@router.post("/{slug}/evidence/generate")
+@router.post("/{slug}/evidence/generate", response_class=FileResponse, responses={200: {'description': 'Generated Word document', 'content': {'application/vnd.openxmlformats-officedocument.wordprocessingml.document': {'schema': {'type': 'string', 'format': 'binary'}}}}})
 def generate_province_evidence(slug: str, payload: EvidenceRequest, background_tasks: BackgroundTasks):
     try:
         province, path = get_province_document(slug, "evidence")

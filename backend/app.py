@@ -25,6 +25,7 @@ from routes.province_documents import router as province_documents_router
 from routes.portal_reports import router as portal_reports_router
 from routes.regional_guides import router as regional_guides_router
 from routes.ai import router as ai_router
+from system_routes import router as system_router, health
 
 try:
     from routes.Zhejiang.la import router as zj_la_router
@@ -72,6 +73,7 @@ app.include_router(portal_reports_router, prefix="/api/portal-reports", tags=["�
 app.include_router(regional_guides_router, prefix="/api/regional-guides", tags=["具体地区办理指南"])
 app.include_router(platform_router)
 app.include_router(ai_router)
+app.include_router(system_router)
 
 @app.middleware("http")
 async def security_headers(request: Request, call_next):
@@ -86,10 +88,6 @@ async def security_headers(request: Request, call_next):
 @app.get("/")
 async def root():
     return {"status": "online", "service": "LabourLawyer Platform API", "version": app.version, "docs": "/docs"}
-
-@app.get("/health", tags=["系统"])
-async def health():
-    return {"status": "healthy", "service": "api"}
 
 if __name__ == "__main__":
     print("🚀 服务启动中: http://localhost:8000")

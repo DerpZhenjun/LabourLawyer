@@ -76,7 +76,7 @@ const makeProcess = (item:(typeof officialCatalog)[number]):ProcessStep[] => {
   ]
 }
 
-export const provinces:ProvinceDefinition[] = officialCatalog.map(item => {
+export const buildProvinceDefinitions = (catalog:typeof officialCatalog):ProvinceDefinition[] => catalog.map(item => {
   const shortName=shortNames[item.slug]??item.name
   const ready=item.hasApplication||item.hasEvidence
   const local=localDetails[item.slug]
@@ -92,6 +92,8 @@ export const provinces:ProvinceDefinition[] = officialCatalog.map(item => {
     city:local?.city,committee:local?.committee,exampleCompany:local?.company,
   }
 })
+
+export const provinces:ProvinceDefinition[] = buildProvinceDefinitions(officialCatalog)
 
 export const provinceGroups = ['华东', '华南', '华北', '华中', '东北', '西南', '西北']
 export const commonMaterials = ['仲裁申请书：本人签字，并按被申请人人数准备副本','身份证明：身份证复印件；委托办理还需授权委托书','劳动关系证明：劳动合同、工资流水、社保记录、工牌等','支持仲裁请求的证据，并附上按顺序整理的证据清单','用人单位主体信息：企业名称、统一社会信用代码和注册地址']

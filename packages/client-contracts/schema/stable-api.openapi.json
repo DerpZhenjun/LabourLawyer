@@ -1,0 +1,1047 @@
+{
+  "components": {
+    "schemas": {
+      "AIStatusResponse": {
+        "additionalProperties": true,
+        "properties": {
+          "local_model_started": {
+            "title": "Local Model Started",
+            "type": "boolean"
+          },
+          "message": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Message"
+          },
+          "model": {
+            "title": "Model",
+            "type": "string"
+          },
+          "provider": {
+            "title": "Provider",
+            "type": "string"
+          },
+          "ready": {
+            "title": "Ready",
+            "type": "boolean"
+          },
+          "status": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Status"
+          },
+          "transport": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Transport"
+          }
+        },
+        "required": [
+          "ready",
+          "provider",
+          "model",
+          "local_model_started"
+        ],
+        "title": "AIStatusResponse",
+        "type": "object"
+      },
+      "ApplicationRequest": {
+        "properties": {
+          "acceptMediation": {
+            "default": "",
+            "maxLength": 20,
+            "title": "Acceptmediation",
+            "type": "string"
+          },
+          "actualOfficeAddress": {
+            "default": "",
+            "maxLength": 300,
+            "title": "Actualofficeaddress",
+            "type": "string"
+          },
+          "age": {
+            "default": "",
+            "maxLength": 10,
+            "title": "Age",
+            "type": "string"
+          },
+          "applicantMailingAddress": {
+            "default": "",
+            "maxLength": 300,
+            "title": "Applicantmailingaddress",
+            "type": "string"
+          },
+          "applicantName": {
+            "default": "",
+            "maxLength": 80,
+            "title": "Applicantname",
+            "type": "string"
+          },
+          "applicantPostalCode": {
+            "default": "",
+            "maxLength": 20,
+            "title": "Applicantpostalcode",
+            "type": "string"
+          },
+          "applicantWorkUnit": {
+            "default": "",
+            "maxLength": 200,
+            "title": "Applicantworkunit",
+            "type": "string"
+          },
+          "applicationDate": {
+            "default": "",
+            "title": "Applicationdate",
+            "type": "string"
+          },
+          "attendanceMethod": {
+            "default": "",
+            "maxLength": 100,
+            "title": "Attendancemethod",
+            "type": "string"
+          },
+          "attendanceRequired": {
+            "default": "",
+            "maxLength": 20,
+            "title": "Attendancerequired",
+            "type": "string"
+          },
+          "averageMonthlySalary": {
+            "default": "",
+            "maxLength": 100,
+            "title": "Averagemonthlysalary",
+            "type": "string"
+          },
+          "birthDate": {
+            "default": "",
+            "title": "Birthdate",
+            "type": "string"
+          },
+          "claimCalculation": {
+            "default": "",
+            "maxLength": 2000,
+            "title": "Claimcalculation",
+            "type": "string"
+          },
+          "committeeName": {
+            "default": "",
+            "maxLength": 120,
+            "title": "Committeename",
+            "type": "string"
+          },
+          "companyContact": {
+            "default": "",
+            "maxLength": 80,
+            "title": "Companycontact",
+            "type": "string"
+          },
+          "companyContactPhone": {
+            "default": "",
+            "maxLength": 40,
+            "title": "Companycontactphone",
+            "type": "string"
+          },
+          "contractEndDate": {
+            "default": "",
+            "title": "Contractenddate",
+            "type": "string"
+          },
+          "contractStartDate": {
+            "default": "",
+            "title": "Contractstartdate",
+            "type": "string"
+          },
+          "copyCount": {
+            "default": 1,
+            "maximum": 30,
+            "minimum": 1,
+            "title": "Copycount",
+            "type": "integer"
+          },
+          "currentAddress": {
+            "default": "",
+            "maxLength": 300,
+            "title": "Currentaddress",
+            "type": "string"
+          },
+          "currentlyEmployed": {
+            "default": "",
+            "maxLength": 20,
+            "title": "Currentlyemployed",
+            "type": "string"
+          },
+          "departmentHead": {
+            "default": "",
+            "maxLength": 80,
+            "title": "Departmenthead",
+            "type": "string"
+          },
+          "departmentHeadPosition": {
+            "default": "",
+            "maxLength": 80,
+            "title": "Departmentheadposition",
+            "type": "string"
+          },
+          "departureDate": {
+            "default": "",
+            "title": "Departuredate",
+            "type": "string"
+          },
+          "departureReason": {
+            "default": "",
+            "maxLength": 1000,
+            "title": "Departurereason",
+            "type": "string"
+          },
+          "employmentDate": {
+            "default": "",
+            "title": "Employmentdate",
+            "type": "string"
+          },
+          "employmentType": {
+            "default": "",
+            "maxLength": 50,
+            "title": "Employmenttype",
+            "type": "string"
+          },
+          "factsReason": {
+            "default": "",
+            "maxLength": 12000,
+            "title": "Factsreason",
+            "type": "string"
+          },
+          "gender": {
+            "default": "",
+            "maxLength": 20,
+            "title": "Gender",
+            "type": "string"
+          },
+          "householdType": {
+            "default": "",
+            "maxLength": 50,
+            "title": "Householdtype",
+            "type": "string"
+          },
+          "idAddress": {
+            "default": "",
+            "maxLength": 300,
+            "title": "Idaddress",
+            "type": "string"
+          },
+          "idNumber": {
+            "default": "",
+            "maxLength": 40,
+            "title": "Idnumber",
+            "type": "string"
+          },
+          "identityDocumentType": {
+            "default": "",
+            "maxLength": 50,
+            "title": "Identitydocumenttype",
+            "type": "string"
+          },
+          "jobTitle": {
+            "default": "",
+            "maxLength": 100,
+            "title": "Jobtitle",
+            "type": "string"
+          },
+          "lastWorkingDate": {
+            "default": "",
+            "title": "Lastworkingdate",
+            "type": "string"
+          },
+          "legalAid": {
+            "default": "",
+            "maxLength": 20,
+            "title": "Legalaid",
+            "type": "string"
+          },
+          "legalRepName": {
+            "default": "",
+            "maxLength": 80,
+            "title": "Legalrepname",
+            "type": "string"
+          },
+          "legalRepPhone": {
+            "default": "",
+            "maxLength": 40,
+            "title": "Legalrepphone",
+            "type": "string"
+          },
+          "legalRepPosition": {
+            "default": "",
+            "maxLength": 80,
+            "title": "Legalrepposition",
+            "type": "string"
+          },
+          "mailingAddress": {
+            "default": "",
+            "maxLength": 300,
+            "title": "Mailingaddress",
+            "type": "string"
+          },
+          "nationality": {
+            "default": "",
+            "maxLength": 30,
+            "title": "Nationality",
+            "type": "string"
+          },
+          "nativePlace": {
+            "default": "",
+            "maxLength": 100,
+            "title": "Nativeplace",
+            "type": "string"
+          },
+          "occupation": {
+            "default": "",
+            "maxLength": 100,
+            "title": "Occupation",
+            "type": "string"
+          },
+          "officeAtRegisteredAddress": {
+            "default": "",
+            "maxLength": 20,
+            "title": "Officeatregisteredaddress",
+            "type": "string"
+          },
+          "otherDocumentNumber": {
+            "default": "",
+            "maxLength": 80,
+            "title": "Otherdocumentnumber",
+            "type": "string"
+          },
+          "otherDocumentType": {
+            "default": "",
+            "maxLength": 50,
+            "title": "Otherdocumenttype",
+            "type": "string"
+          },
+          "otherNotes": {
+            "default": "",
+            "maxLength": 2000,
+            "title": "Othernotes",
+            "type": "string"
+          },
+          "phone": {
+            "default": "",
+            "maxLength": 40,
+            "title": "Phone",
+            "type": "string"
+          },
+          "registeredAddress": {
+            "default": "",
+            "maxLength": 300,
+            "title": "Registeredaddress",
+            "type": "string"
+          },
+          "registeredCapital": {
+            "default": "",
+            "maxLength": 100,
+            "title": "Registeredcapital",
+            "type": "string"
+          },
+          "requests": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 10,
+            "title": "Requests",
+            "type": "array"
+          },
+          "respondentName": {
+            "default": "",
+            "maxLength": 200,
+            "title": "Respondentname",
+            "type": "string"
+          },
+          "respondentPostalCode": {
+            "default": "",
+            "maxLength": 20,
+            "title": "Respondentpostalcode",
+            "type": "string"
+          },
+          "respondentType": {
+            "default": "",
+            "maxLength": 100,
+            "title": "Respondenttype",
+            "type": "string"
+          },
+          "salaryAdjustments": {
+            "default": "",
+            "maxLength": 500,
+            "title": "Salaryadjustments",
+            "type": "string"
+          },
+          "salaryPaymentMethod": {
+            "default": "",
+            "maxLength": 100,
+            "title": "Salarypaymentmethod",
+            "type": "string"
+          },
+          "salaryReceiptRequired": {
+            "default": "",
+            "maxLength": 100,
+            "title": "Salaryreceiptrequired",
+            "type": "string"
+          },
+          "signedContract": {
+            "default": "",
+            "maxLength": 20,
+            "title": "Signedcontract",
+            "type": "string"
+          },
+          "socialCreditCode": {
+            "default": "",
+            "maxLength": 40,
+            "title": "Socialcreditcode",
+            "type": "string"
+          },
+          "startingSalary": {
+            "default": "",
+            "maxLength": 100,
+            "title": "Startingsalary",
+            "type": "string"
+          },
+          "workAddress": {
+            "default": "",
+            "maxLength": 300,
+            "title": "Workaddress",
+            "type": "string"
+          },
+          "workSchedule": {
+            "default": "",
+            "maxLength": 500,
+            "title": "Workschedule",
+            "type": "string"
+          }
+        },
+        "title": "ApplicationRequest",
+        "type": "object"
+      },
+      "ChatMessage": {
+        "properties": {
+          "content": {
+            "maxLength": 8000,
+            "minLength": 1,
+            "title": "Content",
+            "type": "string"
+          },
+          "role": {
+            "enum": [
+              "user",
+              "assistant"
+            ],
+            "title": "Role",
+            "type": "string"
+          }
+        },
+        "required": [
+          "role",
+          "content"
+        ],
+        "title": "ChatMessage",
+        "type": "object"
+      },
+      "DocumentFieldDefinition": {
+        "additionalProperties": true,
+        "properties": {
+          "label": {
+            "title": "Label",
+            "type": "string"
+          },
+          "maxLength": {
+            "title": "Maxlength",
+            "type": "integer"
+          },
+          "options": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Options",
+            "type": "array"
+          },
+          "placeholder": {
+            "default": "",
+            "title": "Placeholder",
+            "type": "string"
+          },
+          "rows": {
+            "default": 1,
+            "title": "Rows",
+            "type": "integer"
+          },
+          "type": {
+            "title": "Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "label",
+          "type",
+          "maxLength"
+        ],
+        "title": "DocumentFieldDefinition",
+        "type": "object"
+      },
+      "EvidenceItem": {
+        "properties": {
+          "hasOriginal": {
+            "default": "",
+            "maxLength": 20,
+            "title": "Hasoriginal",
+            "type": "string"
+          },
+          "itemCount": {
+            "default": "",
+            "maxLength": 30,
+            "title": "Itemcount",
+            "type": "string"
+          },
+          "kind": {
+            "default": "",
+            "maxLength": 100,
+            "title": "Kind",
+            "type": "string"
+          },
+          "name": {
+            "default": "",
+            "maxLength": 300,
+            "title": "Name",
+            "type": "string"
+          },
+          "notes": {
+            "default": "",
+            "maxLength": 500,
+            "title": "Notes",
+            "type": "string"
+          },
+          "originalType": {
+            "default": "",
+            "maxLength": 30,
+            "title": "Originaltype",
+            "type": "string"
+          },
+          "pageCount": {
+            "default": "",
+            "maxLength": 30,
+            "title": "Pagecount",
+            "type": "string"
+          },
+          "pageRange": {
+            "default": "",
+            "maxLength": 50,
+            "title": "Pagerange",
+            "type": "string"
+          },
+          "purpose": {
+            "default": "",
+            "maxLength": 1200,
+            "title": "Purpose",
+            "type": "string"
+          },
+          "source": {
+            "default": "",
+            "maxLength": 300,
+            "title": "Source",
+            "type": "string"
+          }
+        },
+        "title": "EvidenceItem",
+        "type": "object"
+      },
+      "EvidenceRequest": {
+        "properties": {
+          "caseNumber": {
+            "default": "",
+            "maxLength": 100,
+            "title": "Casenumber",
+            "type": "string"
+          },
+          "committeeName": {
+            "default": "",
+            "maxLength": 120,
+            "title": "Committeename",
+            "type": "string"
+          },
+          "copyCount": {
+            "default": 2,
+            "maximum": 30,
+            "minimum": 1,
+            "title": "Copycount",
+            "type": "integer"
+          },
+          "evidenceList": {
+            "items": {
+              "$ref": "#/components/schemas/EvidenceItem"
+            },
+            "maxItems": 40,
+            "title": "Evidencelist",
+            "type": "array"
+          },
+          "submitDate": {
+            "default": "",
+            "title": "Submitdate",
+            "type": "string"
+          },
+          "submitterName": {
+            "default": "",
+            "maxLength": 80,
+            "title": "Submittername",
+            "type": "string"
+          }
+        },
+        "title": "EvidenceRequest",
+        "type": "object"
+      },
+      "FormLimits": {
+        "properties": {
+          "factsLength": {
+            "title": "Factslength",
+            "type": "integer"
+          },
+          "maxEvidence": {
+            "title": "Maxevidence",
+            "type": "integer"
+          },
+          "maxRequests": {
+            "title": "Maxrequests",
+            "type": "integer"
+          },
+          "requestLength": {
+            "title": "Requestlength",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "maxRequests",
+          "requestLength",
+          "factsLength",
+          "maxEvidence"
+        ],
+        "title": "FormLimits",
+        "type": "object"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "title": "Detail",
+            "type": "array"
+          }
+        },
+        "title": "HTTPValidationError",
+        "type": "object"
+      },
+      "HealthResponse": {
+        "properties": {
+          "service": {
+            "title": "Service",
+            "type": "string"
+          },
+          "status": {
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status",
+          "service"
+        ],
+        "title": "HealthResponse",
+        "type": "object"
+      },
+      "ProvinceCatalogEntry": {
+        "additionalProperties": true,
+        "properties": {
+          "documents": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "title": "Documents",
+            "type": "object"
+          },
+          "forms": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ProvinceForms"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "slug": {
+            "title": "Slug",
+            "type": "string"
+          },
+          "source_url": {
+            "title": "Source Url",
+            "type": "string"
+          }
+        },
+        "required": [
+          "slug",
+          "name",
+          "source_url",
+          "documents"
+        ],
+        "title": "ProvinceCatalogEntry",
+        "type": "object"
+      },
+      "ProvinceCatalogResponse": {
+        "properties": {
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/ProvinceCatalogEntry"
+            },
+            "title": "Items",
+            "type": "array"
+          }
+        },
+        "required": [
+          "items"
+        ],
+        "title": "ProvinceCatalogResponse",
+        "type": "object"
+      },
+      "ProvinceForms": {
+        "additionalProperties": true,
+        "properties": {
+          "applicationFields": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Applicationfields",
+            "type": "array"
+          },
+          "evidenceFields": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Evidencefields",
+            "type": "array"
+          },
+          "fieldDefinitions": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/DocumentFieldDefinition"
+            },
+            "title": "Fielddefinitions",
+            "type": "object"
+          },
+          "limits": {
+            "$ref": "#/components/schemas/FormLimits"
+          },
+          "version": {
+            "title": "Version",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "version",
+          "applicationFields",
+          "evidenceFields",
+          "limits",
+          "fieldDefinitions"
+        ],
+        "title": "ProvinceForms",
+        "type": "object"
+      },
+      "QuestionRequest": {
+        "properties": {
+          "history": {
+            "items": {
+              "$ref": "#/components/schemas/ChatMessage"
+            },
+            "maxItems": 12,
+            "title": "History",
+            "type": "array"
+          },
+          "question": {
+            "maxLength": 8000,
+            "minLength": 1,
+            "title": "Question",
+            "type": "string"
+          }
+        },
+        "required": [
+          "question"
+        ],
+        "title": "QuestionRequest",
+        "type": "object"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "title": "Location",
+            "type": "array"
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string"
+          },
+          "type": {
+            "title": "Error Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError",
+        "type": "object"
+      }
+    }
+  },
+  "info": {
+    "title": "LabourLawyer Stable Client API",
+    "version": "1.0.0"
+  },
+  "openapi": "3.1.0",
+  "paths": {
+    "/api/ai/status": {
+      "get": {
+        "operationId": "ai_status_api_ai_status_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AIStatusResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Ai Status",
+        "tags": [
+          "Զ�̷�������"
+        ]
+      }
+    },
+    "/api/ask": {
+      "post": {
+        "operationId": "ask_api_ask_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuestionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "description": "UTF-8 streamed answer"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Ask",
+        "tags": [
+          "Զ�̷�������"
+        ]
+      }
+    },
+    "/api/province-documents": {
+      "get": {
+        "operationId": "list_province_documents_api_province_documents_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProvinceCatalogResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "List Province Documents"
+      }
+    },
+    "/api/province-documents/{slug}/application/generate": {
+      "post": {
+        "operationId": "generate_province_application_api_province_documents__slug__application_generate_post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "slug",
+            "required": true,
+            "schema": {
+              "title": "Slug",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApplicationRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.openxmlformats-officedocument.wordprocessingml.document": {
+                "schema": {
+                  "format": "binary",
+                  "type": "string"
+                }
+              }
+            },
+            "description": "Generated Word document"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Generate Province Application"
+      }
+    },
+    "/api/province-documents/{slug}/evidence/generate": {
+      "post": {
+        "operationId": "generate_province_evidence_api_province_documents__slug__evidence_generate_post",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "slug",
+            "required": true,
+            "schema": {
+              "title": "Slug",
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EvidenceRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/vnd.openxmlformats-officedocument.wordprocessingml.document": {
+                "schema": {
+                  "format": "binary",
+                  "type": "string"
+                }
+              }
+            },
+            "description": "Generated Word document"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          }
+        },
+        "summary": "Generate Province Evidence"
+      }
+    },
+    "/health": {
+      "get": {
+        "operationId": "health_health_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Health",
+        "tags": [
+          "ϵͳ"
+        ]
+      }
+    }
+  }
+}

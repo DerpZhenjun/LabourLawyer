@@ -4,22 +4,18 @@ export interface ChatMessage {
     role: 'user' | 'ai';
     content: string;
 }
-export interface AskMessage {
-    role: 'user' | 'assistant';
-    content: string;
-}
-export interface AskRequest {
-    question: string;
+import type { components } from '../src/generated/stable-api';
+import { API_LIMITS } from '../src/generated/api-limits';
+export { API_LIMITS };
+export type AskMessage = components['schemas']['ChatMessage'];
+export type AskRequest = Omit<components['schemas']['QuestionRequest'], 'history'> & {
     history: AskMessage[];
-}
-export interface AIStatus {
-    ready: boolean;
-    provider: string;
-    model: string;
-    local_model_started: boolean;
-    message?: string;
-    status?: string;
-}
+};
+type StatusWire = components['schemas']['AIStatusResponse'];
+export type AIStatus = Pick<StatusWire, 'ready' | 'provider' | 'model' | 'local_model_started'> & {
+    message?: NonNullable<StatusWire['message']>;
+    status?: NonNullable<StatusWire['status']>;
+};
 export declare function apiURL(base: string, path: string): string;
 export declare function assertAIStatus(raw: unknown): AIStatus;
 export declare const remoteReady: (s: AIStatus) => boolean;

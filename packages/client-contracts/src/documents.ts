@@ -1,19 +1,8 @@
 /** Portable wire DTOs for the existing provincial document catalog. */
 export type DocumentKind = 'application' | 'evidence';
-export interface DocumentFieldDefinition {
-    label: string;
-    type: string;
-    maxLength: number;
-    options?: string[];
-    rows?: number;
-    placeholder?: string;
-}
-export interface FormLimits {
-    maxRequests: number;
-    requestLength: number;
-    factsLength: number;
-    maxEvidence: number;
-}
+import type {components} from './generated/stable-api'
+export type DocumentFieldDefinition=components['schemas']['DocumentFieldDefinition']
+export type FormLimits=components['schemas']['FormLimits']
 export interface FormConfig {
     fields: string[];
     limits: FormLimits;
@@ -30,17 +19,12 @@ export interface FormSchema {
     fields: Record<string, DocumentFieldDefinition>;
 }
 export interface CatalogProvince {
-    slug: string;
-    name: string;
+    slug: components['schemas']['ProvinceCatalogEntry']['slug'];
+    name: components['schemas']['ProvinceCatalogEntry']['name'];
     shortName?: string;
-    source_url: string;
-    documents: Partial<Record<DocumentKind, string | null>>;
-    forms?: {
-        applicationFields: string[];
-        evidenceFields: string[];
-        limits: FormLimits;
-        fieldDefinitions: Record<string, DocumentFieldDefinition>;
-    };
+    source_url: components['schemas']['ProvinceCatalogEntry']['source_url'];
+    documents: Partial<components['schemas']['ProvinceCatalogEntry']['documents']>;
+    forms?: Pick<components['schemas']['ProvinceForms'],'applicationFields'|'evidenceFields'|'limits'|'fieldDefinitions'> & {version?:number};
     process?: {
         title: string;
         text: string;

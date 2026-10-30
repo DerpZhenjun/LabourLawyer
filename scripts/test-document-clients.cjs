@@ -46,7 +46,7 @@ const wx = {
 }
 global.wx = wx
 global.getApp = () => ({ globalData: { apiBase: 'http://127.0.0.1:8000' } })
-vm.runInNewContext(fs.readFileSync(path.join(root,'miniprogram/pages/document/index.js'),'utf8'), { require: () => docs, wx, Page: value => { page = value }, Array, Object, JSON, String, Number, Date })
+vm.runInNewContext(fs.readFileSync(path.join(root,'miniprogram/pages/document/index.js'),'utf8'), { require: name => require(path.resolve(root,'miniprogram/pages/document',name)), wx, Page: value => { page = value }, Array, Object, JSON, String, Number, Date })
 page.setData = values => { Object.assign(page.data, values) }
 page.onLoad({ slug: 'jiangsu', kind: 'application' })
 // A late catalog response must preserve information typed while it loaded.

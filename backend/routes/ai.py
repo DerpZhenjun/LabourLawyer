@@ -8,6 +8,7 @@ from fastapi.responses import StreamingResponse
 from pydantic import BaseModel,Field
 from llm_service.QA import generate_lawyer_chat
 from llm_service.remote import resolve_remote
+from api_contracts import ChatMessage, QuestionRequest, AIStatusResponse
 
 router=APIRouter(tags=['远程法律助手'])
 _slot=threading.BoundedSemaphore(1)
@@ -28,15 +29,7 @@ class AnswerResponse(StreamingResponse):
         try:await super().__call__(scope,receive,send)
         finally:await self.body_iterator.aclose()
 
-class ChatMessage(BaseModel):
-    role:Literal['user','assistant']
-    content:str=Field(min_length=1,max_length=8000)
-
-class QuestionRequest(BaseModel):
-    question:str=Field(min_length=1,max_length=8000)
-    history:list[ChatMessage]=Field(default_factory=list,max_length=12)
-
-@router.get('/api/ai/status')
+@router.get('/api/ai/status', response_model=AIStatusResponse, response_model_exclude_unset=True)
 async def ai_status():
     public={'ready':False,'provider':'Ubuntu Ollama','model':'qwen3.8:27b','local_model_started':False}
     try:config=resolve_remote()
@@ -53,7 +46,7 @@ async def ai_status():
     except (httpx.HTTPError,ValueError,TypeError):
         return {**public,'status':'unavailable','message':'远程服务暂未连接，文书填写和生成仍可使用。'}
 
-@router.post('/api/ask')
+@router.post('/api/ask', responses={200: {'description': 'UTF-8 streamed answer', 'content': {'text/plain': {'schema': {'type': 'string'}}}}}, response_class=StreamingResponse)
 async def ask(req:QuestionRequest):
     try:resolve_remote()
     except ValueError as exc:raise HTTPException(503,str(exc)) from None

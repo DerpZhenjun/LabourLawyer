@@ -1,5 +1,5 @@
 // Generated from packages/client-contracts/src/documents.ts. Do not edit.
-// source-sha256: 8deac83b234677c8a7c53c3e99ad4207ca528ae2ccfc3685237b1bf0ba084ceb
+// source-sha256: 495fd46c49367dea4912199331f64ff14c2d092ec5a50b5dd5437dba8e14b44a
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isRecord = void 0;
