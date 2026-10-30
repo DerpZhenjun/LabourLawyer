@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "version": "1.2.0-preview.3",
+  "actual_asar_package_version": "1.2.0-preview.3",
+  "actual_packaged_start_version": "1.2.0-preview.3",
+  "actual_vm_preload_version": "1.2.0-preview.3",
+  "capabilities_preserved": true,
+  "bridge_frozen": true,
+  "asar_sha256": "0f28ccea3bc150c5ed6914d0de69b71297a2ea758a10eaa65d04adefdc295714",
+  "unpacked_runtime_executed": false
+}

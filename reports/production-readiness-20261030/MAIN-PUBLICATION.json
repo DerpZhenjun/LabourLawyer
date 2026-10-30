@@ -1,0 +1,16 @@
+{
+  "status": "PUBLISHED_INCREMENTALLY",
+  "region_code": "330127",
+  "source_id": "3fb683d473fe253a3a117d46",
+  "live_version": 211,
+  "guides": 203,
+  "generatable_localities": 186,
+  "history_rows": 211,
+  "previous210_history_rows_preserved": true,
+  "previous202_current_rows_preserved": true,
+  "outbox377_ack_receipts_unchanged": true,
+  "backup_sha256": "74d794fbc5c200e9262aaa88e82c1dd8a88d8494c8f1501a34cc51b5ade4d81f",
+  "main_database_rebuilt": false,
+  "windows_model_started": false,
+  "time": "2026-10-30T19:25:38+0800"
+}

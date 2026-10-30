@@ -1,0 +1,30 @@
+{
+  "tool": "chrome-devtools MCP",
+  "status": "PASS",
+  "fresh_reload_ignore_cache": true,
+  "scope": "Final live Ubuntu v6 Chunan form DOM, after asynchronous guide and contract loaded; not a native device installation",
+  "widths": [
+    {
+      "target": 375,
+      "width": 375,
+      "overflow": false,
+      "canGenerate": true,
+      "ownBlankNotice": true
+    },
+    {
+      "target": 768,
+      "width": 768,
+      "overflow": false,
+      "canGenerate": true,
+      "ownBlankNotice": true
+    },
+    {
+      "target": 1440,
+      "width": 1440,
+      "overflow": false,
+      "canGenerate": true,
+      "ownBlankNotice": true
+    }
+  ],
+  "model_inference_requested": false
+}

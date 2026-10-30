@@ -1,0 +1,111 @@
+{
+  "scope": "Final successful v6 Linux and Ubuntu verification. Derived output removes operator paths; raw originals, credentials, private databases and historical intermediate logs remain private.",
+  "evidence": [
+    {
+      "evidence_id": "ci-v6-01",
+      "raw_stdout_or_combined_log_bytes": 81119,
+      "raw_sha256": "fb45d338da1e8e0fed50c7cc6c544e74468c5d272890d227c3cd384a5d3f0daa",
+      "raw_retained_privately": true,
+      "derived": {
+        "path": "reports/production-readiness-20261030/ci/LINUX-CI.txt",
+        "bytes": 77095,
+        "sha256": "bc6f632f1e33ed4a2dee4a80aeb9674d826935aa347e376595bf11bf3f25a43e"
+      }
+    },
+    {
+      "evidence_id": "ci-v6-02",
+      "raw_stdout_or_combined_log_bytes": 217,
+      "raw_sha256": "520890061ac70760f62b59cd3f3c9a1d0fa91ae8066798d625f758a1a123e59e",
+      "raw_retained_privately": true,
+      "derived": {
+        "path": "reports/production-readiness-20261030/ci/UBUNTU-STAGE.json",
+        "bytes": 183,
+        "sha256": "4a741acd2a55795fde9eb63a6be53c61c1eacba8193cf386e5cd49f87cf4424c"
+      }
+    },
+    {
+      "evidence_id": "ci-v6-03",
+      "raw_stdout_or_combined_log_bytes": 1587,
+      "raw_sha256": "d63fb47a12fe53989fbfc682ec0f1ed0cc215b890d390fc31a3aecf0474c589c",
+      "raw_retained_privately": true,
+      "derived": {
+        "path": "reports/production-readiness-20261030/ci/UBUNTU-ASGI.json",
+        "bytes": 1587,
+        "sha256": "d63fb47a12fe53989fbfc682ec0f1ed0cc215b890d390fc31a3aecf0474c589c"
+      }
+    },
+    {
+      "evidence_id": "ci-v6-04",
+      "raw_stdout_or_combined_log_bytes": 279,
+      "raw_sha256": "881d4122777024a854c579d953471281050325803763949be7d273830901da06",
+      "raw_retained_privately": true,
+      "derived": {
+        "path": "reports/production-readiness-20261030/ci/UBUNTU-LAUNCH.txt",
+        "bytes": 279,
+        "sha256": "881d4122777024a854c579d953471281050325803763949be7d273830901da06"
+      }
+    },
+    {
+      "evidence_id": "ci-v6-05",
+      "raw_stdout_or_combined_log_bytes": 2484,
+      "raw_sha256": "127f0fb464d2441a6012d4f0260c0d61f911b5f948717198aec794a350cadb00",
+      "raw_retained_privately": true,
+      "derived": {
+        "path": "reports/production-readiness-20261030/ci/UBUNTU-LIVE.json",
+        "bytes": 2484,
+        "sha256": "127f0fb464d2441a6012d4f0260c0d61f911b5f948717198aec794a350cadb00"
+      }
+    },
+    {
+      "evidence_id": "ci-v6-06",
+      "raw_bytes": 80,
+      "raw_sha256": "b7336bc4cc9ff79548abb20d9806a5a7b9d208a66eefc5d9bff8bdbd8b102b67",
+      "raw_retained_privately": true
+    },
+    {
+      "evidence_id": "ci-v6-07",
+      "raw_bytes": 59848,
+      "raw_sha256": "0ea760ae400c32e21aca683e490269db49b0c540911a316056ebe784e0f27206",
+      "raw_retained_privately": true
+    },
+    {
+      "evidence_id": "ci-v6-08",
+      "raw_bytes": 146,
+      "raw_sha256": "1a0610f614f47018833b9367cfd7031b29c681007e627cc635ed5b16867e7eb8",
+      "raw_retained_privately": true
+    },
+    {
+      "evidence_id": "ci-v6-09",
+      "raw_bytes": 335,
+      "raw_sha256": "7538795b522c0030271bc54f3d2152c85f5151ef773bb66b9ab9f35fa2739e85",
+      "raw_retained_privately": true
+    },
+    {
+      "evidence_id": "ci-v6-10",
+      "raw_bytes": 119,
+      "raw_sha256": "ff0cfe2424ec2030fb5d5a2fb12ea3e34676f779eda159f1ea5cd5d5a9ecdcdb",
+      "raw_retained_privately": true
+    },
+    {
+      "derived": {
+        "path": "reports/production-readiness-20261030/ci/DEPLOYMENT.json",
+        "bytes": 3834,
+        "sha256": "e77d972604ca6c839e5b3b45ab2715563c70261fc6abc5a01dff8d62a6bddb44"
+      }
+    },
+    {
+      "derived": {
+        "path": "reports/production-readiness-20261030/ci/HISTORICAL-DEPLOYMENTS.json",
+        "bytes": 2355,
+        "sha256": "1d84b41ccdce9ef8b1f1a7f0014ab8a65025eee8622cb75e97f61370baf8d4de"
+      }
+    },
+    {
+      "derived": {
+        "path": "reports/production-readiness-20261030/ci/FINAL-DESKTOP-DELTA.json",
+        "bytes": 1897,
+        "sha256": "06bbd2e7637ea2cf7c70bb2a44430727850a2e2bbd045175082bef4c7fd60806"
+      }
+    }
+  ]
+}

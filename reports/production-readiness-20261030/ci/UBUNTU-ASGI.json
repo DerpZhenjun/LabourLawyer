@@ -1,0 +1,50 @@
+{
+  "/": 200,
+  "/province/zhejiang": 200,
+  "/health": 200,
+  "/api/province-documents": 200,
+  "/api/platform/cases": 401,
+  "/api/missing": 404,
+  "anonymous_official_word": {
+    "status": 200,
+    "bytes": 26586
+  },
+  "desktop_cors": {
+    "http://127.0.0.1:49152": 200,
+    "capacitor://localhost": 200,
+    "https://attacker.example": 400
+  },
+  "chunan": {
+    "application": {
+      "bytes": 27317,
+      "sha256": "a47281792a62392c86957e107003c54dfa12a3783c3010ef7fb7977c0a77526d",
+      "source_id": "3fb683d473fe253a3a117d46",
+      "contract_id": "8750a18537764cc6af9f007cb84ae942715e4ffb269fce17ff276f06846621a0",
+      "original_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f"
+    },
+    "evidence": {
+      "bytes": 16341,
+      "sha256": "ad804527a3ddc85494ba8378f0661c9320abb440bd23a2bb4672466fe153c6c9",
+      "source_id": "3fb683d473fe253a3a117d46",
+      "contract_id": "b0d18192fe10f7857d02db80a89d7cea647baccb24f602d72515b110d7fccdd4",
+      "original_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c"
+    }
+  },
+  "unconfigured_collection": {
+    "anonymous": 401,
+    "admin_dependency_override": 503
+  },
+  "seed": {
+    "guides_imported": 0,
+    "directory_imported": 0,
+    "missing_attachments": [],
+    "state": "existing_preserved"
+  },
+  "public_catalogue": {
+    "guides": 203,
+    "generatable_localities": 186
+  },
+  "production_app_data_untouched": true,
+  "validation_network_or_process_calls": false,
+  "service_started_by_validation": false
+}

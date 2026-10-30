@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-30",
+  "phase": "completed_scoped_delivery_with_explicit_remaining_work",
+  "base_commit": "742144e3",
+  "commits_this_round": [
+    "91699c4d",
+    "66d7d26f",
+    "8912dfce",
+    "50b3b6c0",
+    "87bfaed6",
+    "ef788376",
+    "e08277dc",
+    "2c2036d7",
+    "725654f2",
+    "11ade54c",
+    "7c8ac3c1",
+    "bcafd4d9"
+  ],
+  "auth": {
+    "focused_backend_passed": 21,
+    "stable_paths": 10,
+    "real_browser": [
+      "wrong_password",
+      "admin_redirect",
+      "server_case_create",
+      "case_survives_reload",
+      "logout_purges_private_state",
+      "anonymous_cases_401",
+      "anonymous_own_source_word_12664_bytes"
+    ],
+    "login_widths_no_overflow": [
+      375,
+      768,
+      1440
+    ],
+    "login_race": "RED then GREEN; newer login wins and logout/unmount invalidates pending login",
+    "chat_context": "PASS actual transport API/account namespace + actual React no persistent history replay; legacy bytes retained"
+  },
+  "backend_test_site": "http://127.0.0.1:8002",
+  "web_test_site": "http://127.0.0.1:5175",
+  "main_site_changed": true,
+  "remote_ai": {
+    "actual_browser_answer": "Ubuntu远程问答已连通。",
+    "provider": "Ubuntu Ollama",
+    "model": "qwen3.8:27b",
+    "transport": "ssh",
+    "windows_model_started": false
+  },
+  "public_review_seed": {
+    "guides": 202,
+    "directory_areas": 3974,
+    "missing_attachments": 0
+  },
+  "openclaw": {
+    "workspace_exported": 377,
+    "actual_service_verified": 377,
+    "acknowledged": 377,
+    "pending": 0,
+    "ai_reviewed": 0,
+    "model_calls": 0,
+    "main_public_db_incrementally_updated": true,
+    "global_profile_preserved": true
+  },
+  "localities": {
+    "chunan": "MAINincrementalpublishedversion211/203guides186generating211history previous210rows+377ACKpreserved, actualmain2filledHTTPWordZIP/originalSHA/stale203409passed. Rootpublic MAIN-PUBLICATION andMAIN-LIVE.",
+    "nationwide_complete": false
+  },
+  "ci": "Released source actual GitHub run41053447222 SUCCESS. Full backend784:740PASS44SKIP; Linux88PASS0SKIP;20pipelinefixtures;6desktopsecuritytests. All4clientbuild andactualfullrestart passed.",
+  "deployment": "Final Ubuntu v6 LIVE http://192.168.110.81:8088:3643 files exact;203guides186generating; private data retained. Existing Ubuntu Qwen3.8 only. PublicLAN only/noTLS; collectionadmin503 and separate digitalhost notdeployed. Ubuntu outbox0 independent fromWindows377ACK.",
+  "release": {
+    "tag": "v1.2.0-preview.3",
+    "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.3",
+    "source_commit": "bcafd4d9676cac39a6c2420ff45c9a71c5dac61d",
+    "assets": 6,
+    "public": true,
+    "anonymous_downloads": "PASS_ALL_SIX_SHA256_AND_BYTES",
+    "actual_full_desktop_restart_and_two_ubuntu_word_downloads": "PASS",
+    "local_artifact_checks": "PASS_APK_SIGNATURE_AND_ZIP85WEB_ASAR_AND_TWO_LAUNCHES",
+    "build_run": "2026-10-30T12-11-22-021Z-0765a025"
+  },
+  "execution_review": "Initial combined startup rejected; explicit user authorization and prepared scoped scripts later accepted by same executor; API/web running; no alternate mechanism bypass",
+  "next": "Continue nationwide own-source queue (Changshu/Zhangjiagang adapter pending; Tonglu own-source pending). Separately configure HTTPS, persistent Linux collector and digital service when authorized. Never mark unverified as absent. No Windows model. Old overnight automation remains PAUSED.",
+  "credentials": "Private ACL-protected main and Ubuntu admin files in MAIN .runtime/production-readiness-release; never print or stage.",
+  "current_commit": "bcafd4d9676cac39a6c2420ff45c9a71c5dac61d",
+  "remaining": [
+    "nationwide incomplete:203guides186generatable27candidates",
+    "Chunan guide missing fields remain unverified",
+    "trusted LAN only; no public domain/TLS",
+    "Linux persistent collector not configured:authenticated503",
+    "digital avatar service not deployed in Ubuntu bundle",
+    "no USB device:physical installation not performed",
+    "Android debug signature; Windows unsigned; WeChat not published"
+  ]
+}

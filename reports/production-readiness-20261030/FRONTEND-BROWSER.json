@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "tool": "chrome-devtools MCP",
+  "scope": "Actual browser DOM, native interactions and observed network responses; screenshots are not asserted",
+  "main": {
+    "login_flow": true,
+    "synthetic_case_survives_reload": true,
+    "logout_clears_private_state": true,
+    "anonymous_cases_status": 401
+  },
+  "ubuntu": {
+    "url": "http://192.168.110.81:8088",
+    "actual_login_logout": true,
+    "actual_application_and_evidence_downloads": true,
+    "guide_source_id": "3fb683d473fe253a3a117d46",
+    "guide_version": 203,
+    "actual_synthetic_qwen_reply": true,
+    "responsive": [
+      {
+        "target": 375,
+        "width": 375,
+        "overflow": false,
+        "title": "按地区查劳动仲裁指南 · LabourLawyer",
+        "generated": true,
+        "ubuntuReply": true
+      },
+      {
+        "target": 768,
+        "width": 768,
+        "overflow": false,
+        "title": "按地区查劳动仲裁指南 · LabourLawyer",
+        "generated": true,
+        "ubuntuReply": true
+      },
+      {
+        "target": 1440,
+        "width": 1440,
+        "overflow": false,
+        "title": "按地区查劳动仲裁指南 · LabourLawyer",
+        "generated": true,
+        "ubuntuReply": true
+      }
+    ]
+  },
+  "models": {
+    "provider": "Ubuntu Ollama",
+    "model": "qwen3.8:27b",
+    "windows_model_started": false
+  },
+  "limitation": "This browser session predates final v5 refresh; actual final v5 selected-server desktop run is recorded separately in DESKTOP-RUNTIME.json."
+}

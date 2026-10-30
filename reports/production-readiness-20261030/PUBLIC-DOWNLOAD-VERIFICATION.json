@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "release": "https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.3",
+  "tag": "v1.2.0-preview.3",
+  "source_commit": "bcafd4d9676cac39a6c2420ff45c9a71c5dac61d",
+  "authenticated": false,
+  "assets": [
+    {
+      "name": "LabourLawyer-1.2.0-preview.3-android.apk",
+      "bytes": 4907293,
+      "sha256": "98f8656c07d1967924a78172f1d8934edbc8f3e1efda55c1ffbcdbabcceebc8d",
+      "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.3/LabourLawyer-1.2.0-preview.3-android.apk",
+      "attempts": 1,
+      "status": "PASS",
+      "authenticated": false
+    },
+    {
+      "name": "LabourLawyer-1.2.0-preview.3-START-HERE.txt",
+      "bytes": 1542,
+      "sha256": "9107d0ceaa4b7eccf9076a1d8b09e418581a49aec89ab638416222352cf2a016",
+      "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.3/LabourLawyer-1.2.0-preview.3-START-HERE.txt",
+      "attempts": 1,
+      "status": "PASS",
+      "authenticated": false
+    },
+    {
+      "name": "LabourLawyer-1.2.0-preview.3-ubuntu.tar.gz",
+      "bytes": 373120408,
+      "sha256": "bdbd6ae773a9f6b3ce9b0250717e5adf55b296979a13ecbe78b93a09f4965aa8",
+      "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.3/LabourLawyer-1.2.0-preview.3-ubuntu.tar.gz",
+      "attempts": 1,
+      "status": "PASS",
+      "authenticated": false
+    },
+    {
+      "name": "LabourLawyer-1.2.0-preview.3-windows-x64-portable.exe",
+      "bytes": 111869889,
+      "sha256": "0bf7873254d2c67b7d0f3140f73fd2e6976a12516dbddf65a9c8eca43b06059a",
+      "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.3/LabourLawyer-1.2.0-preview.3-windows-x64-portable.exe",
+      "attempts": 1,
+      "status": "PASS",
+      "authenticated": false
+    },
+    {
+      "name": "LabourLawyer-1.2.0-preview.3-windows-x64-setup.exe",
+      "bytes": 112106335,
+      "sha256": "cbc071dba0fa49a5573dce997e1cd1023a308dd553bedef0729cb777300df4f5",
+      "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.3/LabourLawyer-1.2.0-preview.3-windows-x64-setup.exe",
+      "attempts": 1,
+      "status": "PASS",
+      "authenticated": false
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 568,
+      "sha256": "efa9a3f162df8fedb666125c1cf943001de9b324d3d25dc56e3f987be4339535",
+      "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.3/SHA256SUMS.txt",
+      "attempts": 1,
+      "status": "PASS",
+      "authenticated": false
+    }
+  ]
+}

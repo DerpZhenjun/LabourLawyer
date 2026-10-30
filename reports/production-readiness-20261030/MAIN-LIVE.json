@@ -1,0 +1,41 @@
+{
+  "owner_case_count": 0,
+  "generated": [
+    {
+      "kind": "application",
+      "source_id": "3fb683d473fe253a3a117d46",
+      "version": 211,
+      "bytes": 27454,
+      "sha256": "db586ef0eeba5e956ab4aa8759743d1b37d03934c5c2dda3ce83a79581f380e3",
+      "zip_crc": "PASS",
+      "own_original_sha": "PASS",
+      "stale203_status": 409
+    },
+    {
+      "kind": "evidence",
+      "source_id": "3fb683d473fe253a3a117d46",
+      "version": 211,
+      "bytes": 15862,
+      "sha256": "4612e6fa4b347665054ba029879f00377a29b0599079330a93083ee29611a387",
+      "zip_crc": "PASS",
+      "own_original_sha": "PASS",
+      "stale203_status": 409
+    }
+  ],
+  "openclaw": {
+    "total_count": 377,
+    "acknowledged_count": 377,
+    "pending_count": 0,
+    "ai_reviewed_count": 0
+  },
+  "ai": {
+    "ready": true,
+    "model": "qwen3.8:27b",
+    "transport": "ssh",
+    "local_model_started": false
+  },
+  "status": "PASS",
+  "auth_real_http_login_logout_revocation": true,
+  "anonymous_cases": 401,
+  "models_inferred": false
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "scope": "Final desktop source delta only. This is not a claim that desktop IPC code was deployed to Ubuntu.",
+  "ubuntu_v6_runtime_source_commit": "7c8ac3c17be1863c48b680711871aade6d62f2af",
+  "final_client_source_commit": "bcafd4d9676cac39a6c2420ff45c9a71c5dac61d",
+  "exact_git_delta": [
+    "desktop/connection-store.cjs",
+    "desktop/test-connection.cjs"
+  ],
+  "delta_present_in_ubuntu_source_policy": [],
+  "delta_present_in_public_policy": [],
+  "delta_present_in_frontend_artifact_manifest": [],
+  "current_runtime_source_files_raw_exact": 138,
+  "current_public_files_exact_or_explicit_policy_lf": 3420,
+  "sealed_frontend_artifact_files": 85,
+  "complete_ubuntu_manifest_files_verified_again": 3643,
+  "frontend_and_backend_source_unchanged_between_commits": true,
+  "ubuntu_service_pid_unchanged": true,
+  "ubuntu_redeployment_required": false,
+  "desktop_fix_deployed_to_ubuntu": false,
+  "windows_packages_require_rebuild_from_final_commit": true,
+  "v6_bundle_sha256_unchanged": "bdbd6ae773a9f6b3ce9b0250717e5adf55b296979a13ecbe78b93a09f4965aa8",
+  "linux_tests": {
+    "node": "22.18.0",
+    "distribution": "WSL Ubuntu 22.04",
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0,
+    "includes_actual_return_value_setter_reply_model": true
+  },
+  "private_raw_evidence": [
+    {
+      "evidence_id": "final-desktop-linux-tests",
+      "bytes": 1766,
+      "sha256": "f4ea84326fa184c92d269f69634aacd4427bf0f2372083d0eb66a2bcece63e03"
+    },
+    {
+      "evidence_id": "final-desktop-live-runtime-manifest",
+      "bytes": 58,
+      "sha256": "866f7ac9007c7eef6fbf28aed1329f130d34000c4e614bfbff85d686fc8a64af"
+    }
+  ],
+  "final_commit_github_actions": {
+    "url": "https://github.com/DerpZhenjun/LabourLawyer/actions/runs/41053447222",
+    "status": "completed",
+    "conclusion": "success",
+    "sha": "bcafd4d9676cac39a6c2420ff45c9a71c5dac61d"
+  }
+}

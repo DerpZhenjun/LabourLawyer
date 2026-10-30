@@ -12,9 +12,15 @@
 
 ## 软件下载（预览版）
 
-[下载 Android / Windows：v1.2.0-preview.2](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.2)
+[下载 Android / Windows / Ubuntu：v1.2.0-preview.3](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.3)
 
-新版提供 Android USB 联调 APK、Windows x64 安装版和便携版。**后端和官方模板库仍需按本文启动**，AI 连接 Ubuntu Qwen3.8，不在 Windows 运行模型；不能单独离线生成文书，也不表示全国区县已全部接入。下载后用同页 `SHA256SUMS.txt` 核对；详细步骤和实际验收范围见 [新版说明](docs/releases/v1.2.0-preview.2.md)。本轮 USB 列表为空，未声称已更新手机应用；Windows 为未代码签名预览版。
+新版提供 Android APK、Windows x64 安装版和便携版，以及包含网页/API与已核验公开原件的Ubuntu部署包。客户端通过连接设置选择已部署后端或本机服务，不能单独离线生成文书。AI连接Ubuntu Qwen3.8，不在Windows运行模型；不表示全国区县全部接入。下载后逐项核对 `SHA256SUMS.txt`，详见[新版说明](docs/releases/v1.2.0-preview.3.md)。Android为调试签名、Windows未代码签名；本轮USB列表为空，尚未更新实体手机。
+
+## 账号、隔离与部署
+
+公共文书填写不要求登录。后台案件按账号隔离；没有默认密码，新账号不会自动接管历史案件。密码及会话令牌以哈希保存，浏览器会话只保留在当前标签页。退出、过期或切换账号时清空私人界面，旧草稿保留而不自动上传。[开通账号及历史案件归属](docs/accounts-and-security.md)。
+
+网页、Android和Windows可在“连接设置”填写可信服务地址，检查后保存。Windows桌面将服务地址保存在应用自身设置中，重新打开仍保留；账号会话不会随之持久保存。Ubuntu部署包在独立目录保存账号、案件与公开指南，网页和API使用同一个地址；安装包不含用户数据库或模型。公网仍须配置HTTPS，局域网HTTP只作可信网络预览。[Ubuntu部署和回退](docs/ubuntu-deployment.md) · [锁定依赖及CI](docs/ci.md)。本轮Ubuntu局域网已实际启动，网页/API地址由维护人员提供；尚无公网域名和TLS。Ubuntu上的采集任务创建暂返回已认证的503，数字人仍需单独部署；这些不计为已完成的部署能力。
 
 ## 从填写到提交
 
@@ -33,16 +39,16 @@
 
 ![当地办理指南：窗口提示、材料与官方来源](docs/images/local-guide.png)
 
-**公开发行数据更新于 2026-10-29。全国区县尚未完成。**
+**公开发行数据更新于 2026-10-30。全国区县尚未完成。**
 
 | 范围 | 当前实际状态 |
 |---|---|
 | 省级入口 | 中国大陆 31 个省级地区；入口存在不代表指南已核验 |
 | 地区目录 | 3,974 条目录记录（含省市层级）；目录与候选合并追踪 3,590 个精确地区组合，不是全国功能区完整普查 |
-| 已发布当地指南 | 202 地：四川 180、江苏 10、浙江 6、安徽 2、湖南 4 |
-| 已发布当地填写生成 | 185 地：四川 164、江苏 10、浙江 6、安徽 1、湖南 4 |
+| 已发布当地指南 | 203 地：四川 180、江苏 10、浙江 7、安徽 2、湖南 4 |
+| 已发布当地填写生成 | 186 地：四川 164、江苏 10、浙江 7、安徽 1、湖南 4 |
 | 仅指南、未开放当地生成 | 17 地 |
-| 未发布候选 | 28 地，均不计入上线覆盖 |
+| 未发布候选 | 27 地，均不计入上线覆盖 |
 | 历史省级文书 | 保留独立入口，须另核对适用范围，不计入区县完成数 |
 
 近期新增滨海县、响水县、杭州市上城区、滨江区和合肥市庐阳区的独立资料。滨海、响水及上城已完成离线填写与逐页版式检查，仍待网页验收。滨江材料栏与流程冲突，庐阳的时限说明存在差异，均保留待核验。临平搜索落到市本级的结果未作为该区指南。新候选未发布，没有任何省份被标记为“全区县完成”。
@@ -53,9 +59,9 @@
 
 雨花、望城、新北、武进已完成各自模板适配，候选站六类文书实际下载、10页版式和375/768/1440响应式检查通过。雨花、望城使用各自劳动者申请书内的证据栏目；新北、武进分别支持自身申请书及独立证据清单。主站已核对新后端标记并增量发布，**该批发布后为194份当地指南、177个地区可填写生成**，保留全部原有指南历史和4294条采集任务。[发布回执](reports/nationwide-verification-20261029-c/PUBLICATION.json)。[本批验收](reports/nationwide-verification-20261029-c/TEST-REPORT.md)。姑苏、吴中、萧山、临安也已增量发布，**该批发布后合计198份当地指南、181个地区可填写生成**。本批七项原生下载的文件与候选SHA完全一致，关联已检查13页；临安仅开放劳动者申请书，不启用未发布证据项，未查到不等于官方没有提供。[本批发布回执](reports/nationwide-verification-20261029-d/PUBLICATION.json)。[后续四区验收](reports/nationwide-verification-20261029-d/TEST-REPORT.md)。全国尚未完成。
 
-相城、吴江、富阳、建德现已按各自官方指南和空白表格接入申请书、证据清单填写，**当前主站合计202份当地指南、185个地区可填写生成**。八份候选原生下载共14页逐页核对，主站八份实际下载SHA逐件相同；保留210行指南历史及4294条采集任务。相城、吴江采用独立的28字段申请表及5项证据填写栏目（另含序号列），独立证据表没有份数栏；富阳4项材料、建德5项材料及两种联系电话分别保留。不因附件同SHA继承地区规则。[本批发布](reports/nationwide-verification-20261029-e/PUBLICATION.json) · [主站验收](reports/nationwide-verification-20261029-e/live-release/RESULT.json)。
+相城、吴江、富阳、建德现已按各自官方指南和空白表格接入申请书、证据清单填写，**该批发布时合计202份当地指南、185个地区可填写生成**。八份候选原生下载共14页逐页核对，主站八份实际下载SHA逐件相同；保留210行指南历史及4294条采集任务。相城、吴江采用独立的28字段申请表及5项证据填写栏目（另含序号列），独立证据表没有份数栏；富阳4项材料、建德5项材料及两种联系电话分别保留。不因附件同SHA继承地区规则。[本批发布](reports/nationwide-verification-20261029-e/PUBLICATION.json) · [主站验收](reports/nationwide-verification-20261029-e/live-release/RESULT.json)。
 
-后续常熟、张家港、淳安已采集自己的指南和公开原件，仍待填写适配和网页验收；桐庐选区返回省、市事项已拒绝接入，本县来源仍待核验。三份指南和一份发现记录合计四个候选条目，登记后候选总数28。**待核验不等于官方没有提供。**[下一批实际状态](reports/nationwide-verification-20261029-f/SOURCE-INVENTORY.json)。
+常熟、张家港已采集自己的指南和公开原件，填写适配仍待完成；桐庐选区返回省、市事项已拒绝接入，本县来源仍待核验。淳安另已完成自身申请书（仅劳动者部分）及证据清单的网页填写、下载和逐页Word检查，当前主站和公开发行快照均为203份指南、186个可生成地区。主站指南历史211条，既有210条保持原值；[增量发布回执](reports/production-readiness-20261030/MAIN-PUBLICATION.json)单独保留。**待核验不等于官方没有提供。**[下一批实际状态](reports/nationwide-verification-20261029-f/SOURCE-INVENTORY.json)。
 
 禅城仅找到历史文书，当前适用性待核实；南海、历下、市中及此前5地继续定位或访问复核。管理页区分未查、已查未找到、官方明确未提供，本轮最后一种结论为0。详见[第一批验收](reports/nationwide-verification-20261029/TEST-REPORT.md)与[第二批来源](reports/nationwide-verification-20261029-b/SOURCE-INVENTORY.json)。
 
@@ -70,6 +76,12 @@
 最终全量691项后端测试通过（其中2项权限跳过）；独立Git归档初始化202/185，附件缺失0，45项归档回归通过（1项权限跳过）。[完整交付与下一批](reports/nationwide-verification-20261029-e/FINAL-REPORT.md)。
 
 运行后在 `/admin/regions` 查看实时矩阵。仓库中可核对 [逐省实际进度](docs/regions-status.md)、[公开数据版本](data/public-regions/manifest.json)、[候选登记](config/regional_candidates.json) 与 [地区接入说明](docs/regional-release.md)。
+
+### 淳安：自身原件与逐页检查
+
+<img src="reports/production-readiness-20261030/localities/chunan/browser-generation/word/application-1.png" width="340" alt="淳安自身申请书网页生成后的第一页，全部资料为虚构验收信息" />
+
+每个地区分别核对指南、材料、空白表格、来源版本和生成字段。淳安的真实网页下载件为申请书3页、证据清单1页；签名留空，正式使用仍须本人核对。[来源及Word验收证据](reports/production-readiness-20261030/localities/chunan/FINAL-BROWSER-QA.json)。不同内容长度仍应检查版式，不保证受理。
 
 ## AI 法律顾问与法律数字人
 
@@ -91,7 +103,7 @@
 
 ![地区来源与 OpenClaw 问题投递状态](docs/images/openclaw-regions.png)
 
-截图中的 `PENDING_OPENCLAW` 表示仍待接收确认；历史任务记录不代表本轮执行了模型视觉复核，也不代表全国完成。截图采集期间没有启动采集或同步。操作入口、CLI与安全边界见 [OpenClaw 功能说明](docs/openclaw.md)。
+上图是历史截图，当时的 `PENDING_OPENCLAW` 表示尚未取得服务确认。2026-10-30 已使用独立 OpenClaw 配置，通过真实 `tools.invoke / memory_get` 核对全部377条公开问题，并将377条回执增量写回项目，待确认0条、AI分析0条。服务读取不等于AI复核；没有调用模型，也没有发送个人文书。原有指南历史和全局 OpenClaw 主配置保留。这377条回执在Windows主站公共库；新Ubuntu部署使用独立空outbox，不复制私有OpenClaw配置，也不伪造已同步状态。[本轮真实结果](reports/production-readiness-20261030/openclaw/FINAL-RESULT.json) · [隔离同步及启动说明](docs/openclaw-issue-delivery.md)。
 
 ## 网页、Android 与小程序
 
@@ -168,7 +180,7 @@ npm run dev -- --host 127.0.0.1
 
 ## 接口类型与构建发布
 
-六个稳定接口路径由实际 FastAPI/Pydantic 离线生成 OpenAPI、TypeScript 和请求约束，三端共享；区县动态填写继续使用各地模板契约。统一地区、来源版本和唯一模板校验，保留既有请求兼容。单一版本配置驱动 Android、网页、小程序和 Windows；构建回执校验源码与制品 SHA，失败、过期或漂移产物不能进入发布准备。
+十个稳定接口路径（含认证）由实际 FastAPI/Pydantic 离线生成 OpenAPI、TypeScript 和请求约束，三端共享；区县动态填写继续使用各地模板契约。统一地区、来源版本和唯一模板校验，保留既有请求兼容。单一版本配置驱动 Android、网页、小程序和 Windows；构建回执校验源码与制品 SHA，失败、过期或漂移产物不能进入发布准备。
 
 使用方法见 [接口与构建说明](docs/api-contracts-build.md)、[脚本入口](scripts/README.md)，实际四端构建、726 项后端回归及下载验收见 [本轮记录](reports/api-contracts-pipeline-20261030/TEST-REPORT.md)。自动生成当前仅覆盖上述稳定路径，尚未覆盖所有管理接口。
 

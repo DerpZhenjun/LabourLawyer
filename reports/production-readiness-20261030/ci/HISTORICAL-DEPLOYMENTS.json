@@ -1,0 +1,61 @@
+{
+  "scope": "Historical evidence only. v4 and v5 are superseded and are not equivalent to v6; upload only the v6 artifact.",
+  "v4": {
+    "bundle_sha256": "87e43bdf2770e636f9eda1941906e02854cbb6f0e23dd9d1d68a4e8dafa274fc",
+    "manifest_sha256": "584f41939a558dc3f7969433d9e53dea8338b5ed38f32115b8d466207fabb279",
+    "known_limitation": "Configured services could be bypassed by regional, workflow and administrative clients. Fixed in v5.",
+    "original_public_files_retained_privately": [
+      {
+        "name": "CHANGED-FILES.json",
+        "bytes": 1688,
+        "sha256": "6939df5046fcfda8142591d53810e0cfd1e1b9b540ec3d7c2ed97d0005039b42"
+      },
+      {
+        "name": "DEPLOYMENT.json",
+        "bytes": 1700,
+        "sha256": "9621016bad21ab303b5c1607156eedd2f99aaf7fd4e833e2c9eacf016d53bec9"
+      },
+      {
+        "name": "DESKTOP-SERVER-EQUIVALENCE.json",
+        "bytes": 464,
+        "sha256": "ee16ebe7941e85ec6374b4796362c993cb8192865efc445b4c09c1fbdce1d94d"
+      },
+      {
+        "name": "EVIDENCE.json",
+        "bytes": 3042,
+        "sha256": "8fba7944d72a9ed26ac05f0791bc26e4f10f2e8bf172eebf3f7894c0b1e741be"
+      },
+      {
+        "name": "LINUX-CI.txt",
+        "bytes": 72405,
+        "sha256": "39e3ef2477b3379667ce94a77a8db5bd3b26cbf434202cbe2c4823df3513a089"
+      },
+      {
+        "name": "UBUNTU-ASGI.json",
+        "bytes": 1536,
+        "sha256": "1817b9797170ab30be6743f12595e2141507e1412797b152bce66fc5f5868ad5"
+      },
+      {
+        "name": "UBUNTU-LAUNCH.txt",
+        "bytes": 153,
+        "sha256": "9c60679cce79fac9281b61160832d5735aa3defcba96833974fd1edfe7c79789"
+      },
+      {
+        "name": "UBUNTU-LIVE.json",
+        "bytes": 1479,
+        "sha256": "df59796fc36d7df7c49f8625eedafebc10d519a0c56f1037820bf468ac074fb5"
+      },
+      {
+        "name": "UBUNTU-STAGE.json",
+        "bytes": 183,
+        "sha256": "3f5fe8ef05926b8f9f88870f5f7a076993237c2561f9247880f90a04d43292f5"
+      }
+    ]
+  },
+  "v5": {
+    "bundle_sha256": "af4eb52ddb2b988267f5ae0118409beca21c609d707752cf607420d6926a0859",
+    "manifest_sha256": "349510d8228fc4d146b800855a4a619d5df5afced928af0343de33bb199b5ec8",
+    "known_limitation": "Desktop settings did not persist across a full restart to a different renderer origin. Fixed in v6.",
+    "raw_linux_and_live_deployment_evidence_retained_privately": true
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "url": "http://192.168.110.81:8088",
+  "model_inference_requested": false,
+  "model_started_by_check": false,
+  "/": 200,
+  "/province/zhejiang": 200,
+  "/health": 200,
+  "/api/platform/cases": 401,
+  "/api/unknown": 404,
+  "ai_status": {
+    "status": "ready",
+    "ready": true,
+    "transport": "ubuntu-local",
+    "model": "qwen3.8:27b",
+    "local_model_started": false
+  },
+  "admin_login_and_me": 200,
+  "linux_collection_admin_status": 503,
+  "logout_revokes_session": true,
+  "public_catalogue": {
+    "guides": 203,
+    "generatable_localities": 186
+  },
+  "ubuntu_outbox": {
+    "status": "NO_EVENTS",
+    "total_count": 0,
+    "pending_count": 0,
+    "acknowledged_count": 0,
+    "ai_reviewed_count": 0
+  },
+  "chunan": {
+    "application": {
+      "status": 200,
+      "bytes": 27317,
+      "sha256": "a47281792a62392c86957e107003c54dfa12a3783c3010ef7fb7977c0a77526d",
+      "source_id": "3fb683d473fe253a3a117d46",
+      "guide_version": 203,
+      "contract_id": "8750a18537764cc6af9f007cb84ae942715e4ffb269fce17ff276f06846621a0",
+      "cross_origin": {
+        "origin": "http://127.0.0.1:49152",
+        "allow_origin": "http://127.0.0.1:49152",
+        "exposed_binding_headers": [
+          "content-disposition",
+          "x-document-origin",
+          "x-form-contract-id",
+          "x-guide-source-id",
+          "x-guide-version",
+          "x-template-sha256"
+        ]
+      },
+      "original_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f"
+    },
+    "evidence": {
+      "status": 200,
+      "bytes": 16341,
+      "sha256": "ad804527a3ddc85494ba8378f0661c9320abb440bd23a2bb4672466fe153c6c9",
+      "source_id": "3fb683d473fe253a3a117d46",
+      "guide_version": 203,
+      "contract_id": "b0d18192fe10f7857d02db80a89d7cea647baccb24f602d72515b110d7fccdd4",
+      "cross_origin": {
+        "origin": "http://127.0.0.1:49152",
+        "allow_origin": "http://127.0.0.1:49152",
+        "exposed_binding_headers": [
+          "content-disposition",
+          "x-document-origin",
+          "x-form-contract-id",
+          "x-guide-source-id",
+          "x-guide-version",
+          "x-template-sha256"
+        ]
+      },
+      "original_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c"
+    }
+  },
+  "cors": {
+    "http://127.0.0.1:49152": 200,
+    "capacitor://localhost": 200,
+    "https://attacker.example": 400
+  }
+}

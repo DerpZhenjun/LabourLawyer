@@ -1,0 +1,94 @@
+{
+  "bundle_sha256": "bdbd6ae773a9f6b3ce9b0250717e5adf55b296979a13ecbe78b93a09f4965aa8",
+  "bundle_bytes": 373120408,
+  "manifest_sha256": "b883f69cd84824b19bf5f9024b3953fc48ef7b23579f5f02f6b3d1d874f12dde",
+  "manifest_files": 3643,
+  "source_sha256": "8653511f2a67ec4dbfa66576cb8c2f386b7f949dfc5b8316257bb37255571243",
+  "public_policy_files": 3420,
+  "source_policy_files": 138,
+  "bundle": "LabourLawyer-20261030-v6.tar.gz",
+  "version": "1.2.0-preview.3",
+  "release": "ci-20261030-bdbd6ae7",
+  "frozen_runtime_source_commit": "7c8ac3c17be1863c48b680711871aade6d62f2af",
+  "linux_receipt_finished_at": "2026-10-30T12:04:59.415Z",
+  "local_linux_gate": {
+    "distribution": "WSL Ubuntu 22.04",
+    "node": "22.18.0",
+    "python": "3.11.13",
+    "fresh_offline_locked_npm_installs": true,
+    "backend_tests": 88,
+    "backend_skips": 0,
+    "pipeline_fixtures": 20,
+    "pure_desktop_tests": 6,
+    "actual_configured_api_and_distinct_renderer_origin_regressions": true,
+    "mounted_workspace_regressions": 12,
+    "regional_form_integration": true,
+    "web_build": true,
+    "mini_build": true,
+    "git_drift_clean": true,
+    "actionlint_passed": true
+  },
+  "github_actions": {
+    "source_commit": "bcafd4d9676cac39a6c2420ff45c9a71c5dac61d",
+    "url": "https://github.com/DerpZhenjun/LabourLawyer/actions/runs/41053447222",
+    "conclusion": "success",
+    "scope": "Final desktop source; unchanged v6 runtime linked by FINAL-DESKTOP-DELTA.json",
+    "evidence": "FINAL-DESKTOP-DELTA.json"
+  },
+  "ubuntu_target": {
+    "distribution": "Ubuntu 24.04",
+    "python": "3.12.3",
+    "exact_manifest_verified_before_and_after_start": true,
+    "transport": "Manifest delta from the verified v5 tree, followed by complete v6 tree verification. The full tar remains the separately hashed release artifact.",
+    "full_tar_uploaded_to_host": false
+  },
+  "public_catalogue": {
+    "guides": 203,
+    "generatable_localities": 186,
+    "directory_rows": 3974
+  },
+  "lan_service_started": true,
+  "lan_url": "http://192.168.110.81:8088",
+  "windows_client_lan_health_verified": true,
+  "listener_bound_only_to_lan_address": true,
+  "persistence": {
+    "files_byte_identical_before_smoke": 6,
+    "private_backup_retained": true,
+    "private_directory_mode": "0700",
+    "credential_file_mode": "0600",
+    "existing_admin_and_cases_preserved": true
+  },
+  "ubuntu_outbox": {
+    "status": "NO_EVENTS",
+    "total_count": 0,
+    "pending_count": 0,
+    "acknowledged_count": 0,
+    "ai_reviewed_count": 0
+  },
+  "windows_history": {
+    "acknowledged_openclaw_events": 377,
+    "separate_existing_database": true,
+    "not_copied_into_ubuntu": true,
+    "evidence": "../MAIN-PUBLICATION.json"
+  },
+  "cross_origin_word_binding_headers_exposed": true,
+  "linux_collection_admin_status": 503,
+  "limits": [
+    "LAN deployment only; no public Internet exposure.",
+    "Linux collection POSTs retain authentication and return503 until an independent persistent acquisition executor is configured.",
+    "Digital avatar service is deployed separately; its memory-only chat page is outside this Ubuntu web/API bundle.",
+    "Local fixtures do not represent physical Android installation or WeChat publication."
+  ],
+  "model_started_by_deployment": false,
+  "model_inference_requested_by_deployment": false,
+  "existing_ollama_pid_unchanged": true,
+  "unrelated_services_changed": false,
+  "previous_v4_and_v5": "Superseded historical artifacts; not equivalent to v6 and not publication candidates.",
+  "final_client_source_commit": "bcafd4d9676cac39a6c2420ff45c9a71c5dac61d",
+  "desktop_only_final_source_delta": {
+    "evidence": "FINAL-DESKTOP-DELTA.json",
+    "ubuntu_runtime_source_commit": "7c8ac3c17be1863c48b680711871aade6d62f2af",
+    "desktop_fix_deployed_to_ubuntu": false,
+    "ubuntu_redeployment_required": false
+  }
+}

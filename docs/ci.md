@@ -29,6 +29,7 @@ npm ci --prefix scripts/react-mount-fixture --ignore-scripts --no-audit --no-fun
 npm --prefix frontend run contracts:check
 node --test scripts/test-client-pipeline.mjs
 node scripts/test-client-release.mjs
+node --test desktop/test-server.cjs desktop/test-connection.cjs
 node scripts/test-typed-page-coverage.mjs
 node scripts/test-auth-session.mjs
 node scripts/test-server-workspace.mjs
@@ -49,3 +50,5 @@ Python依赖的直接输入在 `requirements-ci.in`，更新后重新生成并�
 React 挂载回归使用 `scripts/react-mount-fixture` 的独立、锁定 React 18.2 测试环境，挂载实际数字人页面并替换 WebGL/语音/网络依赖；确认旧聊天存储没有读取或改写。该 fixture 只用于开发验证，不进入部署包。流水线同时指纹记录测试脚本、fixture 配置和实际页面源码。
 
 CI 不上传用户数据、发版、部署或签名。实际 GitHub 运行成功后才构成远程 CI 证据；本地通过不能代替 GitHub Actions 运行记录。Android、Windows 安装包、微信开发者工具、真实浏览器和公网服务另行验收，不能从本工作流推断其已通过。
+
+桌面连接设置另有纯Node回归：跨实例保存与清除、共享地址校验、拒绝额外身份字段、拒绝非主窗口/非当前应用来源的IPC。真实安装包的完整重启和Ubuntu文书下载另行验收，不能以这些单元测试代替。

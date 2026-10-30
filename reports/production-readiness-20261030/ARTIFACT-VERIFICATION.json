@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "version": "1.2.0-preview.3",
+  "build_run": "2026-10-30T12-11-22-021Z-0765a025",
+  "source_sha256": "92bd67ab726859a115c43953799fa9e54ac22e66ae8ede60a68fc47d62b226d1",
+  "android_web_files_byte_equal": 85,
+  "android_zip_crc": "PASS",
+  "android_private_or_model_entries": 0,
+  "android_package": "cn.labourlawyer.mobile",
+  "android_version_code": 6,
+  "android_signing_certificate_sha256": "f3cc31f69511fcf58afe95c3e091aead2e8215497a39c9a32ad5c5242d7ef853",
+  "android_signature": "PASS_DEBUG_SAME_CERTIFICATE",
+  "desktop_web_files_byte_equal": 85,
+  "assets": {
+    "LabourLawyer-1.2.0-preview.3-android.apk": {
+      "bytes": 4907293,
+      "sha256": "98f8656c07d1967924a78172f1d8934edbc8f3e1efda55c1ffbcdbabcceebc8d"
+    },
+    "LabourLawyer-1.2.0-preview.3-START-HERE.txt": {
+      "bytes": 1542,
+      "sha256": "9107d0ceaa4b7eccf9076a1d8b09e418581a49aec89ab638416222352cf2a016"
+    },
+    "LabourLawyer-1.2.0-preview.3-ubuntu.tar.gz": {
+      "bytes": 373120408,
+      "sha256": "bdbd6ae773a9f6b3ce9b0250717e5adf55b296979a13ecbe78b93a09f4965aa8"
+    },
+    "LabourLawyer-1.2.0-preview.3-windows-x64-portable.exe": {
+      "bytes": 111869889,
+      "sha256": "0bf7873254d2c67b7d0f3140f73fd2e6976a12516dbddf65a9c8eca43b06059a"
+    },
+    "LabourLawyer-1.2.0-preview.3-windows-x64-setup.exe": {
+      "bytes": 112106335,
+      "sha256": "cbc071dba0fa49a5573dce997e1cd1023a308dd553bedef0729cb777300df4f5"
+    },
+    "SHA256SUMS.txt": {
+      "bytes": 568,
+      "sha256": "efa9a3f162df8fedb666125c1cf943001de9b324d3d25dc56e3f987be4339535"
+    }
+  },
+  "windows_model_started": false
+}
