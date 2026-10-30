@@ -107,63 +107,66 @@
   <GenerateConfirmation :open="showConfirm" :template-only="templateOnly" :missing-fields="missingFields" :province-name="config.name" document-name="申请书" @cancel="showConfirm=false" @confirm="confirmGeneration" />
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed, onBeforeUnmount, reactive, ref, watch } from 'vue'
-import axios from 'axios'
+import {postProvincialDocument,provincialError,readProvincialDraft,saveProvincialDraft} from '@/api/provincial'
 import { RouterLink } from 'vue-router'
 import GenerateConfirmation from '@/components/GenerateConfirmation.vue'
 import { downloadDocument } from '@/composables/downloadDocument'
 import { findProvince, makeApplicationExample, applicationExtraFields, applicationSupportedFields, documentFormLimits, documentFieldDefinitions } from '@/data/provinces'
 
-const props = defineProps({ province: { type: String, default: 'zhejiang' }, embedded: Boolean })
-const province = findProvince(props.province)
-const hasField=key=>(applicationSupportedFields[props.province]||[]).includes(key)
+const props=withDefaults(defineProps<{province?:string;embedded?:boolean}>(),{province:'zhejiang',embedded:false})
+const foundProvince=findProvince(props.province)
+if(!foundProvince)throw new Error('未找到该省份的办事资料，请返回省份选择页。')
+const province=foundProvince
+const hasField=(key:string)=>(applicationSupportedFields[props.province]||[]).includes(key)
 const config = computed(() => ({...province,backRoute:`/province/${province.slug}`,apiPath:`/api/province-documents/${province.slug}/application/generate`}))
 const factsLimit = computed(() => documentFormLimits(props.province).factsLength)
 const maxRequests = computed(() => documentFormLimits(props.province).maxRequests)
 const showEmploymentDetails = computed(() => ['guangdong','hainan','xinjiang'].includes(props.province))
-const API_BASE = (import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000').replace(/\/$/, '')
 const DRAFT_KEY = `labourlawyer-${props.province}-application-draft-v6`
 const steps = ['你的信息', '公司信息', '你的要求', '事情经过']
 const focusedStep=ref(0)
 const householdOptions = ['本省非农业户口','本省农业户口','外省非农业户口','外省农业户口','港澳台人员','外籍人员']
-const blankDefaults = { committeeName:'',applicantName:'',birthDate:'',gender:'',nationality:'',idNumber:'',phone:'',householdType:'',idAddress:'',applicantMailingAddress:'',respondentName:'',socialCreditCode:'',registeredAddress:'',mailingAddress:'',workAddress:'',legalRepName:'',legalRepPhone:'',legalRepPosition:'',companyContact:'',companyContactPhone:'',requests:[''],claimCalculation:'',employmentDate:'',jobTitle:'',signedContract:'',contractStartDate:'',contractEndDate:'',workSchedule:'',attendanceRequired:'',attendanceMethod:'',salaryPaymentMethod:'',salaryReceiptRequired:'',startingSalary:'',salaryAdjustments:'',currentlyEmployed:'',departureDate:'',departureReason:'',averageMonthlySalary:'',factsReason:'',copyCount:1,applicationDate:'' }
+const blankDefaults = { committeeName:'',applicantName:'',birthDate:'',gender:'',nationality:'',idNumber:'',phone:'',householdType:'',idAddress:'',applicantMailingAddress:'',respondentName:'',socialCreditCode:'',registeredAddress:'',mailingAddress:'',workAddress:'',legalRepName:'',legalRepPhone:'',legalRepPosition:'',companyContact:'',companyContactPhone:'',requests:[''],claimCalculation:'',employmentDate:'',jobTitle:'',signedContract:'',contractStartDate:'',contractEndDate:'',workSchedule:'',attendanceRequired:'',attendanceMethod:'',salaryPaymentMethod:'',salaryReceiptRequired:'',startingSalary:'',salaryAdjustments:'',currentlyEmployed:'',departureDate:'',departureReason:'',averageMonthlySalary:'',factsReason:'',copyCount:1 as string|number,applicationDate:'' }
 const defaults = { ...blankDefaults, ...makeApplicationExample(province) }
-const hasSavedDraft = localStorage.getItem(DRAFT_KEY) !== null
-const loadDraft = () => { try { return hasSavedDraft ? { ...defaults, ...JSON.parse(localStorage.getItem(DRAFT_KEY) || '{}') } : { ...defaults, requests:[...defaults.requests] } } catch { return { ...defaults, requests:[...defaults.requests] } } }
+const loadedDraft=readProvincialDraft(DRAFT_KEY,defaults)
+const hasSavedDraft=loadedDraft.saved
+const draftBlocked=ref(loadedDraft.blocked)
 const extraFields=applicationExtraFields[props.province]||[]
-const form = reactive(loadDraft())
+const form = reactive<typeof defaults & Record<string,unknown>>(loadedDraft.form)
 if (!Array.isArray(form.requests) || !form.requests.length) form.requests = ['']
 const isSubmitting = ref(false)
 const showConfirm = ref(false)
 const templateOnly = ref(false)
 const usingExample = ref(!hasSavedDraft)
-const missingFields = ref([])
-const status = reactive({ type:'', message:'' })
-let saveTimer
-const saveDraft=()=>localStorage.setItem(DRAFT_KEY, JSON.stringify(form))
+const missingFields = ref<string[]>([])
+const status = reactive({ type:loadedDraft.notice?'error':'', message:loadedDraft.notice })
+let saveTimer:ReturnType<typeof setTimeout>|undefined
+const saveDraft=()=>{if(draftBlocked.value)return;const notice=saveProvincialDraft(DRAFT_KEY,form);if(notice){status.type='error';status.message=notice}}
 window.addEventListener('pagehide',saveDraft)
 watch(form, () => { clearTimeout(saveTimer); saveTimer = setTimeout(saveDraft, 350) }, { deep:true })
 onBeforeUnmount(() => { clearTimeout(saveTimer);saveDraft();window.removeEventListener('pagehide',saveDraft) })
 const activeStep = computed(() => !form.applicantName || !form.idNumber || !form.phone || !form.idAddress ? 0 : !form.respondentName || (hasField('registeredAddress')&&!form.registeredAddress) || (hasField('workAddress')&&!form.workAddress) ? 1 : !form.requests.some(item => item.trim()) ? 2 : 3)
-const jumpToStep = index => {
+const jumpToStep = (index:number) => {
   focusedStep.value=index
-  const target=document.getElementById(['applicant-section','company-section','requests-section','facts-section'][index])
+  const section=['applicant-section','company-section','requests-section','facts-section'][index]
+  const target=section?document.getElementById(section):null
   target?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' })
-  target?.querySelector('input, textarea, select')?.focus({ preventScroll:true })
+  target?.querySelector<HTMLElement>('input, textarea, select')?.focus({ preventScroll:true })
 }
-const removeRequest = index => form.requests.splice(index, 1)
-const clearDraft = () => { localStorage.removeItem(DRAFT_KEY); Object.assign(form, { ...defaults, requests:[...defaults.requests] }); usingExample.value=true; status.type='success'; status.message='已清除保存内容，并恢复虚构示例。'; window.scrollTo({ top:0, behavior:'smooth' }) }
+const removeRequest = (index:number) => form.requests.splice(index, 1)
+const clearDraft = () => { localStorage.removeItem(DRAFT_KEY);draftBlocked.value=false; Object.assign(form, { ...defaults, requests:[...defaults.requests] }); usingExample.value=true; status.type='success'; status.message='已清除保存内容，并恢复虚构示例。'; window.scrollTo({ top:0, behavior:'smooth' }) }
 const collectMissingFields = () => {
-  const missing=[]
+  const missing:string[]=[]
   if(!form.committeeName) missing.push('仲裁委员会'); if(!form.applicantName) missing.push('姓名'); if(hasField('idNumber')&&!form.idNumber) missing.push('身份证号码'); if(!form.phone) missing.push('联系电话'); if(hasField('idAddress')&&!form.idAddress) missing.push('身份证住址'); if(!form.respondentName) missing.push('公司全称'); if(hasField('registeredAddress')&&!form.registeredAddress) missing.push('公司注册地址'); if(hasField('workAddress')&&!form.workAddress) missing.push('实际工作地址'); if(!form.requests.some(item=>item.trim())) missing.push('至少一项要求'); if(form.factsReason.length<10) missing.push('事情经过（至少填写 10 个字）')
   return missing
 }
-const parseError = async error => { if(error.response?.data instanceof Blob){try{const data=JSON.parse(await error.response.data.text());return data.detail||'生成失败，请检查填写内容。'}catch{}} return error.response?.data?.detail||(error.code==='ERR_NETWORK'?'无法连接文书生成服务，请确认后端已经启动。':'生成失败，请稍后再试。') }
-const requestGeneration = (blank=false) => { templateOnly.value=blank===true;status.message=''; missingFields.value=templateOnly.value?[]:collectMissingFields(); showConfirm.value=true }
+const parseError=(error:unknown)=>provincialError(error)
+const requestGeneration = (blank:unknown=false) => { templateOnly.value=blank===true;if(draftBlocked.value&&!templateOnly.value){status.type='error';status.message=loadedDraft.notice;return}status.message=''; missingFields.value=templateOnly.value?[]:collectMissingFields(); showConfirm.value=true }
 const confirmGeneration = () => { showConfirm.value=false; submitForm() }
 const submitForm = async () => {
   status.message=''; isSubmitting.value=true
-  try { const payload=templateOnly.value?{}:{...form,requests:form.requests.map(item=>item.trim()).filter(Boolean)}; const response=await axios.post(`${API_BASE}${config.value.apiPath}`,payload,{responseType:'blob',timeout:30000}); const filename=!templateOnly.value&&form.applicantName?`${form.applicantName}的劳动人事争议仲裁申请书.docx`:`${config.value.name}劳动人事争议仲裁申请书.docx`;await downloadDocument(response.data,filename);status.type='success';status.message='申请书已生成。请打开 Word 仔细核对后再签字提交。' } catch(error){status.type='error';status.message=await parseError(error)} finally{isSubmitting.value=false}
+  try { const payload=templateOnly.value?{}:{...form,requests:form.requests.map(item=>item.trim()).filter(Boolean)}; const blob=await postProvincialDocument(config.value.apiPath,payload); const filename=!templateOnly.value&&form.applicantName?`${form.applicantName}的劳动人事争议仲裁申请书.docx`:`${config.value.name}劳动人事争议仲裁申请书.docx`;await downloadDocument(blob,filename);status.type='success';status.message='申请书已生成。请打开 Word 仔细核对后再签字提交。' } catch(error){status.type='error';status.message=await parseError(error)} finally{isSubmitting.value=false}
 }
 </script>

@@ -14,11 +14,11 @@
     </div>
   </Teleport>
 </template>
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
 import { useDialogFocus } from '@/composables/useDialogFocus'
-const props=defineProps({open:Boolean,documentName:String,provinceName:String,templateOnly:Boolean,missingFields:{type:Array,default:()=>[]}})
-const emit=defineEmits(['confirm','cancel'])
-const dialog=ref(null)
+const props=withDefaults(defineProps<{open?:boolean;documentName?:string;provinceName?:string;templateOnly?:boolean;missingFields?:string[]}>(),{open:false,templateOnly:false,missingFields:()=>[]})
+const emit=defineEmits<{confirm:[];cancel:[]}>()
+const dialog=ref<HTMLElement|null>(null)
 useDialogFocus(()=>props.open,dialog,()=>emit('cancel'))
 </script>

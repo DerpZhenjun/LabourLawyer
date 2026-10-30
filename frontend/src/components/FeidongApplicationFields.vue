@@ -19,7 +19,7 @@
             autocomplete="off"
             :aria-invalid="fieldError(`${field.key}.${index}`) ? 'true' : undefined"
             :aria-describedby="`${idFor(`${field.key}-hint`)} ${idFor(`${field.key}-${index}-capacity`)}${fieldError(`${field.key}.${index}`) ? ` ${idFor(`${field.key}-${index}-error`)}` : ''}`"
-            @input="updateParty(field.key, index, $event.target.value)"
+            @input="updateParty(field.key, index, inputText($event))"
           >
           <p :id="idFor(`${field.key}-${index}-capacity`)" class="region-small feidong-capacity">{{ width(partyLine(field.key, index)) }} / {{ index === 0 ? 40 : 50 }} 显示单位；最多{{ index === 0 ? 20 : 25 }}个汉字。</p>
           <p v-if="fieldError(`${field.key}.${index}`)" :id="idFor(`${field.key}-${index}-error`)" class="feidong-error">{{ fieldError(`${field.key}.${index}`) }}</p>
@@ -37,7 +37,7 @@
         rows="5"
         :aria-invalid="fieldError('requests') ? 'true' : undefined"
         :aria-describedby="`${idFor('requests-hint')} ${idFor('requests-usage')}${fieldError('requests') ? ` ${idFor('requests-error')}` : ''}`"
-        @input="updateField('requests', $event.target.value.split('\n'))"
+        @input="updateField('requests', inputText($event).split('\n'))"
       ></textarea>
       <p :id="idFor('requests-usage')" class="region-small feidong-capacity">折行后 {{ lineCount(requestText, 44) }} / 9 行。</p>
       <p v-if="fieldError('requests')" :id="idFor('requests-error')" class="feidong-error">{{ fieldError('requests') }}</p>
@@ -52,7 +52,7 @@
         rows="6"
         :aria-invalid="fieldError('facts') ? 'true' : undefined"
         :aria-describedby="`${idFor('facts-hint')} ${idFor('facts-usage')}${fieldError('facts') ? ` ${idFor('facts-error')}` : ''}`"
-        @input="updateField('facts', $event.target.value)"
+        @input="updateField('facts', inputText($event))"
       ></textarea>
       <p :id="idFor('facts-usage')" class="region-small feidong-capacity">折行后 {{ lineCount(factsText) }} / 10 行。</p>
       <p v-if="fieldError('facts')" :id="idFor('facts-error')" class="feidong-error">{{ fieldError('facts') }}</p>
@@ -65,38 +65,43 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {computed, onMounted, useId, watch} from 'vue'
 import {
   FEIDONG_PARTY_FIELDS, createFeidongApplicationExample, createEmptyFeidongApplication,
   feidongFieldWidth, wrapFeidongText, validateFeidongApplication, feidongApplicationPayload,
 } from '@/data/feidongApplicationFields'
 
-const props=defineProps({modelValue:{type:Object,default:undefined}})
-const emit=defineEmits(['update:modelValue','validation'])
+const props=defineProps<{modelValue?:unknown}>()
+const emit=defineEmits<{ 'update:modelValue':[value:Record<string,unknown>];validation:[value:ReturnType<typeof validateFeidongApplication>] }>()
 const initialExample=createFeidongApplicationExample()
-const value=computed(()=>props.modelValue===undefined?initialExample:props.modelValue)
+const rawValue=computed(()=>props.modelValue===undefined?initialExample:props.modelValue)
+const record=(input:unknown):input is Record<string,unknown>=>input!==null&&typeof input==='object'&&!Array.isArray(input)
+const value=computed(()=>record(rawValue.value)?rawValue.value:{})
+const inputText=(event:Event)=>{const target=event.target;return target&&'value' in target&&typeof target.value==='string'?target.value:''}
+const visible=(input:unknown):string|number=>typeof input==='string'||typeof input==='number'?input:input==null?'':String(input)
+const cloneList=<T,>(list:readonly T[]):T[]=>{const next=list.slice();for(const key of Reflect.ownKeys(list)){if(key==='length')continue;const descriptor=Object.getOwnPropertyDescriptor(list,key);if(descriptor)Object.defineProperty(next,key,{...descriptor,writable:true,configurable:true})}return next}
 const prefix=`feidong-${useId()}`
-const idFor=part=>`${prefix}-${part}`
-const validation=computed(()=>validateFeidongApplication(value.value))
-const fieldError=field=>validation.value.errors.find(error=>error.field===field)?.message||''
-const partyLine=(key,index)=>typeof value.value?.[key]?.[index]==='string'?value.value[key][index]:''
+const idFor=(part:string)=>`${prefix}-${part}`
+const validation=computed(()=>validateFeidongApplication(rawValue.value))
+const fieldError=(field:string)=>validation.value.errors.find(error=>error.field===field)?.message||''
+const partyLine=(key:string,index:number)=>Array.isArray(value.value[key])&&typeof value.value[key][index]==='string'?value.value[key][index]:''
 const requestText=computed(()=>Array.isArray(value.value?.requests)?value.value.requests.filter(request=>typeof request==='string').join('\n'):'')
 const factsText=computed(()=>typeof value.value?.facts==='string'?value.value.facts:'')
-const width=text=>{try{return feidongFieldWidth(text)}catch{return '—'}}
-const lineCount=(text,first=56)=>{try{return wrapFeidongText(text,first,56).length}catch{return '—'}}
-const updateField=(key,next)=>emit('update:modelValue',{...value.value,[key]:next})
-function updateParty(key,index,text){
-  const current=Array.isArray(value.value?.[key])?[...value.value[key]]:['','']
+const width=(text:unknown)=>{try{return feidongFieldWidth(text)}catch{return '—'}}
+const lineCount=(text:unknown,first=56)=>{try{return wrapFeidongText(text,first,56).length}catch{return '—'}}
+const updateField=(key:string,next:unknown)=>{if(record(rawValue.value))emit('update:modelValue',{...value.value,[key]:next})}
+function updateParty(key:string,index:number,text:string){
+  const current=Array.isArray(value.value[key])?cloneList(value.value[key]):['','']
   // Preserve unexpected extra rows for validation rather than quietly deleting them.
   while(current.length<=index)current.push('')
   current[index]=text
   updateField(key,current)
 }
-const replaceAll=next=>emit('update:modelValue',next)
+const replaceAll=(next:Record<string,unknown>)=>emit('update:modelValue',next)
 watch(validation,result=>emit('validation',result),{immediate:true,deep:true})
 onMounted(()=>{if(props.modelValue===undefined)emit('update:modelValue',createFeidongApplicationExample())})
-defineExpose({validate:()=>validateFeidongApplication(value.value),getPayload:()=>feidongApplicationPayload(value.value)})
+defineExpose({validate:()=>validateFeidongApplication(rawValue.value),getPayload:()=>feidongApplicationPayload(rawValue.value)})
 </script>
 
 <style scoped>

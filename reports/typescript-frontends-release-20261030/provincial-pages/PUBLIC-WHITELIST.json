@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "scope": "owned historical provincial pages, field modules, request boundary and safe regression evidence",
+  "files": [
+    {
+      "file": "frontend/src/views/Zhejiang/LA.vue",
+      "bytes": 24659,
+      "sha256": "455751db6d72a5cf02f5d86ebe6d60c6c0315dca4ea4d1d7d2cb0f0fbf89d3d9"
+    },
+    {
+      "file": "frontend/src/views/Zhejiang/EL.vue",
+      "bytes": 13458,
+      "sha256": "03d86e38df23e3437bce136c972d9e82557ce61406a571901dd4b0acd29c7246"
+    },
+    {
+      "file": "frontend/src/views/Guangdong/LA.vue",
+      "bytes": 156,
+      "sha256": "751bcf79f82633404cc4c7504c9e126caaad3ce8d578bc5893689b2d3b135a85"
+    },
+    {
+      "file": "frontend/src/views/Guangdong/EL.vue",
+      "bytes": 150,
+      "sha256": "62b69a0af0640c48107db9ef4959ba940da78e61c0991d940780a97f6c6894af"
+    },
+    {
+      "file": "frontend/src/components/GenerateConfirmation.vue",
+      "bytes": 2254,
+      "sha256": "c781c2ec86384fc9c8a5021fa4bb16522ca0a9e77fda50f8e7c5dc64c2302e1e"
+    },
+    {
+      "file": "frontend/src/components/HunanApplicationFields.vue",
+      "bytes": 13720,
+      "sha256": "5d17965f8d7c619a39b325bd43a55e02d885362ac7ed15cfefb630863b2ec51a"
+    },
+    {
+      "file": "frontend/src/components/FeidongApplicationFields.vue",
+      "bytes": 9654,
+      "sha256": "dd8c3cddc829abdd7a62d29849af1f5336d3f4019859866624072b216415812b"
+    },
+    {
+      "file": "frontend/src/data/hunanApplicationFields.ts",
+      "bytes": 9253,
+      "sha256": "9d5393c6c970af223fe1d66280bcc24462cbe34a43c0ad5a9b20c8636609f0bd"
+    },
+    {
+      "file": "frontend/src/data/hunanApplicationFields.js",
+      "bytes": 44,
+      "sha256": "19b88327b24bfbe67e6c4ce3c62a83c844c0d8b9551106df38e5d59c8a7365f3"
+    },
+    {
+      "file": "frontend/src/data/feidongApplicationFields.ts",
+      "bytes": 17142,
+      "sha256": "0475aa81e9725e79eea13852a909e5457ceae371f35f7c948311a7669b99785d"
+    },
+    {
+      "file": "frontend/src/data/feidongApplicationFields.js",
+      "bytes": 46,
+      "sha256": "a1f70ad7b42edabca23b906209c15263c8b74058b011138bff8d3b2d429b9b13"
+    },
+    {
+      "file": "frontend/src/api/provincial.ts",
+      "bytes": 3786,
+      "sha256": "bf512b3213e42df207eb3eb45e93f3c1626697369416b3c6ccb12f8739d2a2f4"
+    },
+    {
+      "file": "packages/regional-contracts/src/provincial.ts",
+      "bytes": 474,
+      "sha256": "ea19f1de493a2e7a8fc6f63669d19e327d9ab68fa882b4557243c085b72c6b11"
+    },
+    {
+      "file": "scripts/test-provincial-page-types.mjs",
+      "bytes": 13143,
+      "sha256": "68c960be6b6031e0eede7206c6b7bf8ae9b3da6719c7d0092fec21193c6c967f"
+    },
+    {
+      "file": "scripts/test-hunan-fields.mjs",
+      "bytes": 13893,
+      "sha256": "0675ca5de04f320d75f63f97aafd5f32d375a56e0be149adc15b10fce76ceb00"
+    },
+    {
+      "file": "reports/typescript-frontends-release-20261030/provincial-pages/BASELINE-PAYLOADS.json",
+      "bytes": 5572,
+      "sha256": "f0fa571a8fb7dea306d637c27df852c3239ece4d6692f107933b915cf656c6df"
+    },
+    {
+      "file": "reports/typescript-frontends-release-20261030/provincial-pages/RESULT.json",
+      "bytes": 659,
+      "sha256": "06782b2ffb2ebc397d4c678394730a5e67588ada51379bb6f78eeeb33ea5b2f3"
+    },
+    {
+      "file": "reports/typescript-frontends-release-20261030/provincial-pages/TEST-REPORT.md",
+      "bytes": 3531,
+      "sha256": "73bad7dc31aba3a1bf8bfd0a0d5c5ed18f082f64dd5c146e7b0c899acfa1b343"
+    }
+  ],
+  "whitelist_itself_is_additional": true
+}

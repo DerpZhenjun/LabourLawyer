@@ -1,0 +1,21 @@
+{
+  "status": "PASS_STRICT_TYPES_AND_MOUNTED_REGRESSIONS",
+  "owned_sfc_count": 7,
+  "negative_type_cases": 2,
+  "mounted_historical_request_pairs": 34,
+  "baseline_revision": "78903a98",
+  "hunan_checks": 17,
+  "feidong_python_width_and_layout_parity": true,
+  "feidong_mounted_input_handlers": true,
+  "malformed_draft_storage_retained": true,
+  "unknown_evidence_headers_retained": true,
+  "legacy_miniprogram_payloads": 34,
+  "regional_mounted_integration_cases": 14,
+  "real_network": false,
+  "browser_claim": false,
+  "device_claim": false,
+  "model_calls": false,
+  "service_operations": false,
+  "database_writes": false,
+  "git_operations": false
+}

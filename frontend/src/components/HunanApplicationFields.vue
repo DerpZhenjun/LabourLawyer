@@ -13,10 +13,10 @@
         <div v-for="field in group.fields" :key="field.key" class="hunan-field">
           <label :for="idFor(field.key)" class="regional-form-label">{{ field.label }}</label>
           <input
-            :id="idFor(field.key)" :value="value?.[field.key] ?? ''" type="text"
+            :id="idFor(field.key)" :value="visible(value[field.key])" type="text"
             :inputmode="field.inputmode || 'text'" autocomplete="off"
             :aria-invalid="fieldError(field.key) ? 'true' : undefined" :aria-describedby="describedBy(field.key)"
-            @input="updateField(field.key, $event.target.value)"
+            @input="updateField(field.key, inputText($event))"
           >
           <p :id="idFor(`${field.key}-hint`)" class="region-small hunan-capacity">{{ field.hint ? `${field.hint} ` : '' }}{{ count(value?.[field.key]) }} / {{ HUNAN_LIMITS.ordinary }} 字符（含空格）</p>
           <p v-if="fieldError(field.key)" :id="idFor(`${field.key}-error`)" class="hunan-error">{{ fieldError(field.key) }}</p>
@@ -29,9 +29,9 @@
       <p :id="idFor('requests-hint')" class="region-small">逐项写清具体要求和金额，最多{{ HUNAN_LIMITS.requests }}项。已有文字不会自动裁剪。</p>
       <div v-for="(request, index) in requests" :key="index" class="hunan-list-item">
         <label :for="idFor(`requests.${index}`)" class="regional-form-label">第{{ index + 1 }}项请求</label>
-        <textarea :id="idFor(`requests.${index}`)" :value="request" rows="3"
+        <textarea :id="idFor(`requests.${index}`)" :value="visible(request)" rows="3"
           :aria-invalid="fieldError(`requests.${index}`) ? 'true' : undefined" :aria-describedby="itemDescription(`requests.${index}`, 'requests')"
-          @input="updateRequest(index, $event.target.value)"></textarea>
+          @input="updateRequest(index, inputText($event))"></textarea>
         <p v-if="fieldError(`requests.${index}`)" :id="idFor(`requests.${index}-error`)" class="hunan-error">{{ fieldError(`requests.${index}`) }}</p>
         <button type="button" class="ll-button secondary" :aria-label="`删除第${index + 1}项请求`" :disabled="requests.length <= 1" @click="removeRequest(index)">删除此项请求</button>
       </div>
@@ -42,9 +42,9 @@
 
     <div class="hunan-group">
       <label :for="idFor('factsReason')" class="regional-form-label">事实与理由</label>
-      <textarea :id="idFor('factsReason')" :value="value?.factsReason ?? ''" rows="7"
+      <textarea :id="idFor('factsReason')" :value="visible(value.factsReason)" rows="7"
         :aria-invalid="fieldError('factsReason') ? 'true' : undefined" :aria-describedby="describedBy('factsReason')"
-        @input="updateField('factsReason', $event.target.value)"></textarea>
+        @input="updateField('factsReason', inputText($event))"></textarea>
       <p :id="idFor('factsReason-hint')" class="region-small hunan-capacity">{{ count(value?.factsReason) }} / {{ HUNAN_LIMITS.facts }} 字符（含空格和换行）；请写清事情经过及提出请求的理由。</p>
       <p v-if="fieldError('factsReason')" :id="idFor('factsReason-error')" class="hunan-error">{{ fieldError('factsReason') }}</p>
     </div>
@@ -56,11 +56,11 @@
         <legend>第{{ index + 1 }}项附随证据</legend>
         <div v-for="field in HUNAN_EVIDENCE_FIELDS" :key="field.key" class="hunan-field">
           <label :for="idFor(`evidenceList.${index}.${field.key}`)" class="regional-form-label">{{ field.label }}</label>
-          <textarea :id="idFor(`evidenceList.${index}.${field.key}`)" :value="item?.[field.key] ?? ''" rows="2"
+          <textarea :id="idFor(`evidenceList.${index}.${field.key}`)" :value="visible(record(item)?item[field.key]:item)" rows="2"
             :aria-invalid="fieldError(`evidenceList.${index}.${field.key}`) ? 'true' : undefined"
             :aria-describedby="itemDescription(`evidenceList.${index}.${field.key}`, 'evidenceList')"
-            @input="updateEvidence(index, field.key, $event.target.value)"></textarea>
-          <p class="region-small hunan-capacity">{{ count(item?.[field.key]) }} / {{ HUNAN_LIMITS.evidenceField }} 字符（含空格）</p>
+            @input="updateEvidence(index, field.key, inputText($event))"></textarea>
+          <p class="region-small hunan-capacity">{{ count(record(item)?item[field.key]:item) }} / {{ HUNAN_LIMITS.evidenceField }} 字符（含空格）</p>
           <p v-if="fieldError(`evidenceList.${index}.${field.key}`)" :id="idFor(`evidenceList.${index}.${field.key}-error`)" class="hunan-error">{{ fieldError(`evidenceList.${index}.${field.key}`) }}</p>
         </div>
         <p v-if="fieldError(`evidenceList.${index}`)" :id="idFor(`evidenceList.${index}-error`)" class="hunan-error">{{ fieldError(`evidenceList.${index}`) }}</p>
@@ -78,40 +78,55 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {computed, onMounted, useId, watch} from 'vue'
 import {
   HUNAN_LIMITS, HUNAN_FIELD_GROUPS, HUNAN_EVIDENCE_FIELDS, createHunanApplicationExample,
   createEmptyHunanApplication, hunanCharacterCount, validateHunanApplication, hunanApplicationPayload,
 } from '@/data/hunanApplicationFields'
 
-const props=defineProps({modelValue:{type:Object,default:undefined}})
-const emit=defineEmits(['update:modelValue','validation'])
+const props=defineProps<{modelValue?:unknown}>()
+const emit=defineEmits<{ 'update:modelValue':[value:Record<string,unknown>];validation:[value:ReturnType<typeof validateHunanApplication>] }>()
 const initialExample=createHunanApplicationExample()
-const value=computed(()=>props.modelValue===undefined?initialExample:props.modelValue)
+const rawValue=computed(()=>props.modelValue===undefined?initialExample:props.modelValue)
+const record=(input:unknown):input is Record<string,unknown>=>input!==null&&typeof input==='object'&&!Array.isArray(input)
+const value=computed(()=>record(rawValue.value)?rawValue.value:{})
+const inputText=(event:Event)=>{const target=event.target;return target&&'value' in target&&typeof target.value==='string'?target.value:''}
+const visible=(input:unknown):string|number=>typeof input==='string'||typeof input==='number'?input:input==null?'':String(input)
+const cloneList=<T,>(list:readonly T[]):T[]=>{const next=list.slice();for(const key of Reflect.ownKeys(list)){if(key==='length')continue;const descriptor=Object.getOwnPropertyDescriptor(list,key);if(descriptor)Object.defineProperty(next,key,{...descriptor,writable:true,configurable:true})}return next}
 const prefix=`hunan-${useId()}`
-const idFor=key=>`${prefix}-${key}`
+const idFor=(key:string)=>`${prefix}-${key}`
 const count=hunanCharacterCount
-const validation=computed(()=>validateHunanApplication(value.value))
-const fieldError=key=>validation.value.errors.find(error=>error.field===key)?.message||''
-const describedBy=key=>`${idFor(`${key}-hint`)}${fieldError(key)?` ${idFor(`${key}-error`)}`:''}`
-const itemDescription=(key,group)=>`${idFor(`${group}-hint`)}${fieldError(key)?` ${idFor(`${key}-error`)}`:''}`
-const evidenceDescription=index=>`${idFor('evidenceList-hint')}${fieldError(`evidenceList.${index}`)?` ${idFor(`evidenceList.${index}-error`)}`:''}${fieldError(`evidenceList.${index}.form`)?` ${idFor(`evidenceList.${index}.form-error`)}`:''}`
+const validation=computed(()=>validateHunanApplication(rawValue.value))
+const fieldError=(key:string)=>validation.value.errors.find(error=>error.field===key)?.message||''
+const describedBy=(key:string)=>`${idFor(`${key}-hint`)}${fieldError(key)?` ${idFor(`${key}-error`)}`:''}`
+const itemDescription=(key:string,group:string)=>`${idFor(`${group}-hint`)}${fieldError(key)?` ${idFor(`${key}-error`)}`:''}`
+const evidenceDescription=(index:number)=>`${idFor('evidenceList-hint')}${fieldError(`evidenceList.${index}`)?` ${idFor(`evidenceList.${index}-error`)}`:''}${fieldError(`evidenceList.${index}.form`)?` ${idFor(`evidenceList.${index}.form-error`)}`:''}`
 const requestShapeValid=computed(()=>value.value?.requests===undefined||Array.isArray(value.value.requests))
 const evidenceShapeValid=computed(()=>value.value?.evidenceList===undefined||Array.isArray(value.value.evidenceList))
-const requests=computed(()=>Array.isArray(value.value?.requests)&&value.value.requests.length?value.value.requests:[typeof value.value?.requests==='string'?value.value.requests:''])
-const evidence=computed(()=>Array.isArray(value.value?.evidenceList)&&value.value.evidenceList.length?value.value.evidenceList:[{name:'',source:'',purpose:''}])
-const updateField=(key,next)=>emit('update:modelValue',{...value.value,[key]:next})
-const replaceAll=next=>emit('update:modelValue',next)
-function updateRequest(index,text){const next=[...requests.value];next[index]=text;updateField('requests',next)}
-function addRequest(){if(requestShapeValid.value&&requests.value.length<HUNAN_LIMITS.requests)updateField('requests',[...requests.value,''])}
-function removeRequest(index){if(requests.value.length>1){const next=[...requests.value];next.splice(index,1);updateField('requests',next)}}
-function updateEvidence(index,key,text){const next=[...evidence.value];next[index]={...next[index],[key]:text};updateField('evidenceList',next)}
-function addEvidence(){if(evidenceShapeValid.value&&evidence.value.length<HUNAN_LIMITS.evidence)updateField('evidenceList',[...evidence.value,{name:'',source:'',purpose:''}])}
-function removeEvidence(index){if(evidence.value.length>1){const next=[...evidence.value];next.splice(index,1);updateField('evidenceList',next)}}
+const requests=computed<unknown[]>(()=>{
+  const saved:unknown=value.value.requests
+  if(!Array.isArray(saved))return[typeof saved==='string'?saved:'']
+  if(saved.length)return saved
+  const placeholder=cloneList<unknown>(saved);placeholder.push('');return placeholder
+})
+const evidence=computed<unknown[]>(()=>{
+  const saved:unknown=value.value.evidenceList
+  if(!Array.isArray(saved))return[{name:'',source:'',purpose:''}]
+  if(saved.length)return saved
+  const placeholder=cloneList<unknown>(saved);placeholder.push({name:'',source:'',purpose:''});return placeholder
+})
+const updateField=(key:string,next:unknown)=>{if(record(rawValue.value))emit('update:modelValue',{...value.value,[key]:next})}
+const replaceAll=(next:Record<string,unknown>)=>emit('update:modelValue',next)
+function updateRequest(index:number,text:string){const next=cloneList(requests.value);next[index]=text;updateField('requests',next)}
+function addRequest(){if(requestShapeValid.value&&requests.value.length<HUNAN_LIMITS.requests)updateField('requests',Object.assign(cloneList(requests.value),{[requests.value.length]:''}))}
+function removeRequest(index:number){if(requests.value.length>1){const next=cloneList(requests.value);next.splice(index,1);updateField('requests',next)}}
+function updateEvidence(index:number,key:string,text:string){const next=cloneList(evidence.value);if(!record(next[index]))return;next[index]={...next[index],[key]:text};updateField('evidenceList',next)}
+function addEvidence(){if(evidenceShapeValid.value&&evidence.value.length<HUNAN_LIMITS.evidence)updateField('evidenceList',Object.assign(cloneList(evidence.value),{[evidence.value.length]:{name:'',source:'',purpose:''}}))}
+function removeEvidence(index:number){if(evidence.value.length>1){const next=cloneList(evidence.value);next.splice(index,1);updateField('evidenceList',next)}}
 watch(validation,result=>emit('validation',result),{immediate:true,deep:true})
 onMounted(()=>{if(props.modelValue===undefined)emit('update:modelValue',createHunanApplicationExample())})
-defineExpose({validate:()=>validateHunanApplication(value.value),getPayload:()=>hunanApplicationPayload(value.value)})
+defineExpose({validate:()=>validateHunanApplication(rawValue.value),getPayload:()=>hunanApplicationPayload(rawValue.value)})
 </script>
 
 <style scoped>

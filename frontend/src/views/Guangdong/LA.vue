@@ -2,6 +2,6 @@
   <ApplicationForm province="guangdong" />
 </template>
 
-<script setup>
+<script setup lang="ts">
 import ApplicationForm from '@/views/Zhejiang/LA.vue'
 </script>

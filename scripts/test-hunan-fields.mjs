@@ -119,9 +119,10 @@ test('Vue SFC script, template and scoped styles compile',()=>{
 // Mount the compiled component in Vue's in-memory renderer. This exercises
 // v-model/list actions and labels without opening a browser or starting a server.
 const vue=require('vue')
-const transformed=compiled.content.replace(/import\s*\{([^}]+)\}\s*from\s*['"]([^'"]+)['"];?/g,(_,names,source)=>
-  `const {${names.replace(/\s+as\s+/g,':')}}=${source==='vue'?'__vue':'__fields'};`).replace('export default','return')
-const Component=new Function('__vue','__fields',transformed)(vue,data)
+const executable=require('esbuild').transformSync(compiled.content,{loader:'ts',format:'cjs'}).code
+const compiledModule={exports:{}}
+new Function('require','module','exports',executable)(source=>source==='vue'?vue:data,compiledModule,compiledModule.exports)
+const Component=compiledModule.exports.default
 const node=(type,text='')=>({type,text,children:[],props:{},parent:null})
 const remove=el=>{if(el.parent){const i=el.parent.children.indexOf(el);if(i>=0)el.parent.children.splice(i,1);el.parent=null}}
 const insert=(el,parent,anchor)=>{remove(el);const i=anchor?parent.children.indexOf(anchor):-1;parent.children.splice(i<0?parent.children.length:i,0,el);el.parent=parent}
@@ -175,6 +176,13 @@ test('explicit clear resets only supported fields and keeps one evidence row',()
   assert.deepEqual(Object.keys(state.value).sort(),keys)
   assert.equal(state.value.applicantName,'');assert.equal(state.value.requests.length,1);assert.equal(state.value.evidenceList.length,1)
   assert(validateHunanApplication(state.value).valid)
+})
+const invalidEmpty=[];invalidEmpty.legacy='保留旧列表资料'
+state.value={...createHunanApplicationExample(),requests:invalidEmpty};await vue.nextTick()
+await click('添加请求事项')
+test('editing an empty legacy list preserves rejected extra properties',()=>{
+  assert.equal(state.value.requests.legacy,'保留旧列表资料')
+  assert(!validateHunanApplication(state.value).valid)
 })
 app.unmount()
 console.log(`PASS Hunan fields: ${passed} checks; own-provider parity, lossless payload, v-model actions, accessibility associations and Vue SFC compilation`)
