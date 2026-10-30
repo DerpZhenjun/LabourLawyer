@@ -11,20 +11,35 @@
     <section v-if="report" class="region-panel"><h2>可追溯的问题报告</h2><details v-for="(events,name) in report.categories" :key="name" class="original-section"><summary>{{ name }} · {{ events.length }} 条</summary><p v-if="!events.length">本次没有记录此类事件，不代表全国不存在此类问题。</p><article v-for="e in events" :key="e.id" class="regional-material"><h3>{{ e.district || provinces.find(p=>p.slug===e.province)?.name || '公开事项搜索' }} · {{ e.type }}</h3><p>{{ e.reason }}</p><p>处理：{{ e.remediation }} · 尝试 {{ e.attempts }} 次</p><p>最终状态：{{ e.final_status }} · {{ e.delivery_status }}</p><p class="file-hash">事件 ID：{{ e.id }} · {{ e.occurred_at }}</p><div class="region-actions"><a v-if="e.url" :href="e.url" target="_blank" rel="noopener noreferrer" class="ll-button secondary">查看原始来源 ↗</a><a v-if="e.screenshot" :href="`${regionalAPI}/evidence/${e.screenshot}`" target="_blank" rel="noopener noreferrer" class="ll-button secondary">查看真实截图 ↗</a></div></article></details></section>
   </div>
 </template>
-<script setup>
-import {ref,onMounted} from 'vue'
+<script setup lang="ts">
+import {ref,shallowRef,onMounted,onBeforeUnmount} from 'vue'
 import {RouterLink} from 'vue-router'
 import RegionalRollout from '@/components/RegionalRollout.vue'
 import RegionalVerification from '@/components/RegionalVerification.vue'
 import {provinces} from '@/data/provinces'
-import {regionalAPI,regionQuery} from '@/composables/useRegionalGuide'
+import {regionalAPI} from '@/composables/useRegionalGuide'
+import {publicClient} from '@/api/public'
+import {publicError} from '@/data/regionalGuidePresentation'
+import type {CollectionReport,CollectionRegion,VersionDisplay} from '@/data/regionalGuidePresentation'
 import '@/regional-guide.css'
-const report=ref(null),loading=ref(false),error=ref(''),versions=ref({}),rollout=ref(null)
-const channelLabels={unavailable:'仅窗口办理',auth_required:'官方网上入口要求登录',verified:'网上入口已核验',conflict:'来源冲突，待核实',unverified:'尚未核实'}
-function refreshAll(){load();rollout.value?.refresh()}
-async function load(){loading.value=true;error.value='';try{const r=await fetch(`${regionalAPI}/report`);if(!r.ok)throw new Error('无法读取报告，请确认后端已启动');report.value=await r.json()}catch(e){error.value=e.message}finally{loading.value=false}}
-async function showVersions(g){try{const r=await fetch(`${regionalAPI}/versions?${regionQuery(g)}`);if(!r.ok)throw new Error('版本读取失败');versions.value[g.region_id]=(await r.json()).items}catch(e){error.value=e.message}}
-function exportReport(){const blob=new Blob([JSON.stringify(report.value,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='地区指南-公开问题报告.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+const report=ref<CollectionReport|null>(null),rawReport=shallowRef<unknown>(null),loading=ref(false),error=ref(''),versions=ref<Record<string,VersionDisplay[]>>({}),rollout=ref<{refresh:()=>Promise<void>}|null>(null)
+const channelLabels:Record<string,string>={unavailable:'仅窗口办理',auth_required:'官方网上入口要求登录',verified:'网上入口已核验',conflict:'来源冲突，待核实',unverified:'尚未核实'}
+let controller:AbortController|undefined,disposed=false
+const versionControllers=new Map<string,AbortController>()
+function refreshAll(){void load();void rollout.value?.refresh()}
+async function load(){
+ controller?.abort();const own=new AbortController();controller=own;loading.value=true;error.value=''
+ try{const result=await publicClient.report(own.signal);if(controller===own&&!own.signal.aborted){report.value=result.report;rawReport.value=result.raw}}
+ catch(cause:unknown){if(controller===own&&!own.signal.aborted)error.value=publicError(cause,'无法读取报告，请确认后端已启动')}
+ finally{if(controller===own&&!disposed)loading.value=false}
+}
+async function showVersions(g:CollectionRegion){
+ versionControllers.get(g.region_id)?.abort();const own=new AbortController();versionControllers.set(g.region_id,own)
+ try{const result=await publicClient.versions(g,own.signal);if(!own.signal.aborted&&!disposed)versions.value[g.region_id]=result}
+ catch(cause:unknown){if(!own.signal.aborted&&!disposed)error.value=publicError(cause,'版本读取失败')}
+}
+function exportReport(){const blob=new Blob([JSON.stringify(rawReport.value,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='地区指南-公开问题报告.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
 onMounted(load)
+onBeforeUnmount(()=>{disposed=true;controller?.abort();for(const request of versionControllers.values())request.abort()})
 </script>
 <style scoped>.collection-page{padding:28px;max-width:1200px}.coverage-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.coverage-item{display:grid;gap:8px;background:var(--ll-background);border:1px solid var(--ll-border);padding:18px;border-radius:10px}.coverage-item span{color:var(--ll-secondary);font-size:14px}.coverage-item a{color:var(--ll-primary);min-height:44px;padding-top:8px}.collection-page code{overflow-wrap:anywhere;color:var(--ll-primary)}@media(max-width:800px){.coverage-grid{grid-template-columns:1fr 1fr}.collection-page{padding:18px}}@media(max-width:500px){.coverage-grid{grid-template-columns:1fr}.collection-page{padding:12px}}</style>

@@ -30,19 +30,20 @@
   </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import ProvinceCard from '@/components/ProvinceCard.vue'
 import ServiceIllustration from '@/components/ServiceIllustration.vue'
 import { commonProcess, provinces } from '@/data/provinces'
+import type {ProvinceDefinition} from '@/data/provinces'
 const route=useRoute(), router=useRouter()
 const query=ref(typeof route.query.q==='string'?route.query.q:'')
 const showAllProvinces=ref(false)
 watch(query,value=>{if(route.path==='/')router.replace({query:{...route.query,q:value.trim()||undefined},hash:route.hash})})
 watch(()=>route.query.q,value=>{query.value=typeof value==='string'?value:''})
 const plainProcess=commonProcess.map((item,index)=>({...item,title:['确认办理地点','准备好材料','提交申请','留意受理通知','调解或参加开庭'][index]||item.title,text:item.text.replaceAll('有管辖权的','负责受理的').replaceAll('补正','补充材料')}))
-const featuredProvinces=computed(()=>['zhejiang','guangdong','jiangsu','beijing','shandong','sichuan'].map(slug=>provinces.find(item=>item.slug===slug)).filter(Boolean))
+const featuredProvinces=computed(()=>['zhejiang','guangdong','jiangsu','beijing','shandong','sichuan'].map(slug=>provinces.find(item=>item.slug===slug)).filter((item):item is ProvinceDefinition=>item!==undefined))
 const filteredProvinces=computed(()=>provinces.filter(item=>`${item.name}${item.shortName}`.includes(query.value.trim())))
 const orderedProvinces=computed(()=>[...featuredProvinces.value,...provinces.filter(item=>!featuredProvinces.value.some(featured=>featured.slug===item.slug))])
 const visibleProvinces=computed(()=>query.value.trim()?filteredProvinces.value:showAllProvinces.value?orderedProvinces.value:featuredProvinces.value)

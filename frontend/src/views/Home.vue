@@ -84,7 +84,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -132,11 +132,11 @@ const provinces = [
   }
 ];
 
-const getImageUrl = (name) => {
+const getImageUrl = (name:string) => {
   return new URL(`../assets/img/${name}`, import.meta.url).href;
 };
 
-const navigateTo = (path) => {
+const navigateTo = (path:string) => {
   if (path) router.push(path);
   else alert('该功能正在开发中...');
 };
@@ -145,7 +145,7 @@ const handleSearch = () => {
   const query = searchQuery.value.trim().toLowerCase();
   if (!query) return;
 
-  const keywordMap = {
+  const keywordMap:Record<string,string> = {
     '劳动': '/zhejiang/la',
     '仲裁': '/zhejiang/la',
     '申请书': '/zhejiang/la',
@@ -155,7 +155,7 @@ const handleSearch = () => {
     '浙江': '/zhejiang/la'
   };
 
-  let targetPath = null;
+  let targetPath:string|undefined;
   for (const key in keywordMap) {
     if (query.includes(key)) {
       targetPath = keywordMap[key];

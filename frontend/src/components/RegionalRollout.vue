@@ -15,18 +15,20 @@
     </template>
   </section>
 </template>
-<script setup>
+<script setup lang="ts">
 import {computed,onMounted,onUnmounted,ref} from 'vue'
 import {RouterLink} from 'vue-router'
-import {regionalAPI} from '@/composables/useRegionalGuide'
-const status=ref(null),loading=ref(false),error=ref(''),query=ref('')
-let request
-const number=value=>new Intl.NumberFormat('zh-CN').format(value)
+import {publicClient} from '@/api/public'
+import {publicError} from '@/data/regionalGuidePresentation'
+import type {RolloutStatus} from '@/data/regionalGuidePresentation'
+const status=ref<RolloutStatus|null>(null),loading=ref(false),error=ref(''),query=ref('')
+let request:AbortController|undefined
+const number=(value:number)=>new Intl.NumberFormat('zh-CN').format(value)
 const filtered=computed(()=>status.value?.provinces.filter(p=>p.name.includes(query.value.trim()))||[])
 async function load(){
   request?.abort();const own=new AbortController();request=own;loading.value=true;error.value=''
-  try{const response=await fetch(`${regionalAPI}/rollout-status`,{signal:own.signal});if(!response.ok)throw new Error('接入进度暂时无法读取，请确认后端已经更新并启动。');const data=await response.json();if(!Array.isArray(data.provinces)||data.directory_is_not_guide_coverage!==true)throw new Error('进度数据格式已变化，请稍后重试。');status.value=data}
-  catch(e){if(!own.signal.aborted)error.value=e.message}
+  try{const data=await publicClient.rollout(own.signal);if(request===own&&!own.signal.aborted)status.value=data}
+  catch(e:unknown){if(!own.signal.aborted&&request===own)error.value=publicError(e)}
   finally{if(request===own)loading.value=false}
 }
 defineExpose({refresh:load})

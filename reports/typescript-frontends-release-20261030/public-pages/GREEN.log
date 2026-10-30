@@ -1,0 +1,44 @@
+Command: node scripts/test-public-page-types.mjs
+PASS mounted brand keeps native base URLs and header menu closes on navigation with skip link intact
+PASS mounted province guide keeps its historical snapshot and rejects a late previous province experience
+PASS mounted local guide binds original downloads to its exact source/version and exposes no original for unverified scope
+PASS typed presentation decodes all retained local guides and province experiences; malformed/foreign JSON rejects
+PASS mounted public home keeps six featured provinces and route-linked search/empty state
+PASS mounted rollout rejects an aborted late response after refresh
+PASS mounted directory clears scope immediately, aborts pending requests and ignores late foreign areas
+PASS unified public client binds directory/experience scope, forwards cancellation and preserves complete raw report export
+PASS five genuine type counterexamples reject malformed province/field/capacity/directory/region inputs
+PASS public page types: 12 actual lang=ts components and strict Vue templates
+Exit: 0
+
+Command: node scripts/test-regional-guide-presentation.mjs
+PASS real own guide aliases, local material instructions, zero visits and no inferred missing information
+PASS own presence reasons and document CTA kind capabilities
+Exit: 0
+
+Command: node scripts/test-regional-blank-fields.mjs
+PASS Zhejiang consumed fields are editable, per-template fields differ, hidden values are excluded
+Exit: 0
+
+Command: node scripts/test-regional-form-integration.mjs
+PASS page waits for its bound contract and aborts a previous pending scope
+PASS generic renderer shows only server fields, choices and capacities without truncating
+PASS unknown raw draft keys and list extras stay visible to rejection after editing
+PASS confirmation supports submit prevention, cancel and Escape without generating
+PASS submitted payload carries the bound contract id and preserves known hidden slots
+PASS old confirmations and late generation responses cannot download across scopes
+PASS contract errors expose retry and never reuse old fields or wrong source results
+PASS server evidence schema controls row columns, a one-row minimum and its own maximum
+PASS generation failures can reload the contract without discarding the same contract draft
+PASS specialized components keep their own examples and isolate every full context
+PASS source/version/template/kind changes invalidate confirmation immediately
+PASS state invalidates a direct context change before any render or network completion
+PASS context property order does not discard the same bound draft or refetch
+PASS an already started save cannot report success in another selection
+PASS regional form page integration: 14 mounted/cancellation/schema cases and strict state/renderer types
+Exit: 0
+
+Command: node scripts/test-regional-document-routing.mjs
+PASS regional document routing: 11 real memory-router guard cases
+Exit: 0
+

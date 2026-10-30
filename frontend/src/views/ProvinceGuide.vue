@@ -32,32 +32,38 @@
     <footer>请在政府网站提交材料。签名请本人手写。</footer>
   </main><main v-else class="empty"><h1>暂未找到该省份</h1><RouterLink to="/">返回选择省份</RouterLink></main>
 </template>
-<script setup>
-import { computed, ref, watch } from 'vue'
+<script setup lang="ts">
+import { computed, ref, watch, onBeforeUnmount } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
-import axios from 'axios'
+import {publicClient} from '@/api/public'
+import {readExperience} from '@/data/regionalGuidePresentation'
+import type {ProvinceExperience} from '@/data/regionalGuidePresentation'
 import DistrictWorkflow from '@/components/DistrictWorkflow.vue'
 import { findProvince } from '@/data/provinces'
 import snapshot from '@/data/provinceExperiences.json'
 import themes from '../../../config/province_themes.json'
-const route=useRoute(), live=ref(null)
-const province=computed(()=>findProvince(route.params.slug))
-const experience=computed(()=>live.value || snapshot.provinces[route.params.slug] || {})
-const theme=computed(()=>themes[route.params.slug] || themes.zhejiang)
+const route=useRoute(), live=ref<ProvinceExperience|null>(null)
+const slug=computed(()=>typeof route.params.slug==='string'?route.params.slug:'')
+const province=computed(()=>findProvince(slug.value))
+const experienceSnapshots:Record<string,unknown>=snapshot.provinces,themeCatalog:Record<string,typeof themes.zhejiang>=themes
+const experience=computed(()=>live.value || readExperience(experienceSnapshots[slug.value] || {slug:slug.value,steps:[]},slug.value))
+const theme=computed(()=>themeCatalog[slug.value] || themes.zhejiang)
 const palette=computed(()=>({'--accent':theme.value.accent,'--wash':theme.value.wash}))
 const officialLink=computed(()=>experience.value.source_url || experience.value.portal_url || province.value?.officialUrl)
 const serviceLabel=computed(()=>experience.value.service_kind==='mediation' ? '劳动争议调解（不是仲裁申请）' : experience.value.service_kind==='arbitration' ? '劳动人事争议仲裁申请' : '请在官方入口查询')
 const templateLinks=computed(()=>(experience.value.templates || []).map(t=>({name:t.material_name || t.text || '查看文书表格',kind:t.kind,url:t.url || officialLink.value})).filter(t=>/^https?:\/\//.test(t.url || '')))
-let version=0
-watch(()=>route.params.slug,async slug=>{
-  const request=++version;live.value=null
-  if(!findProvince(slug))return
+let version=0,controller:AbortController|undefined,timer:ReturnType<typeof setTimeout>|undefined
+watch(slug,async selected=>{
+  const request=++version;clearTimeout(timer);controller?.abort();live.value=null
+  if(!findProvince(selected))return
+  const own=new AbortController();controller=own
+  const timeout=setTimeout(()=>own.abort(),15000);timer=timeout
   try{
-    const base=(import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000').replace(/\/$/,'')
-    const {data}=await axios.get(`${base}/api/portal-reports/experiences/${slug}`,{timeout:15000})
-    if(request===version && data.slug===slug && Array.isArray(data.steps))live.value=data
-  }catch{}
-},{immediate:true})
+    const data=await publicClient.experience(selected,own.signal)
+    if(request===version&&!own.signal.aborted)live.value=data
+  }catch{}finally{clearTimeout(timeout)}
+},{immediate:true,flush:'sync'})
+onBeforeUnmount(()=>{++version;clearTimeout(timer);controller?.abort()})
 </script>
 <style scoped>
 .province-page{background:var(--ll-background);color:var(--ll-text);padding-bottom:40px}.province-page a{color:var(--ll-primary)}.hero{background:var(--ll-wash);border-bottom:1px solid var(--ll-border)}.hero-inner{max-width:1224px;margin:auto;padding:24px 32px 32px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:center}.hero nav{font-size:14px;color:var(--ll-secondary);margin-bottom:24px;min-height:32px}.hero nav a{display:inline-flex;align-items:center;min-height:36px}.eyebrow{color:var(--ll-primary);font-size:13px;font-weight:650}.hero h1{font-size:40px;margin:12px 0;line-height:1.4;font-weight:700;letter-spacing:-.03em}.hero p{font-size:16px;margin:0;line-height:1.8;color:var(--ll-secondary)}.portal-button{display:inline-flex;align-items:center;min-height:44px;padding:8px 0;margin-top:12px;font-size:14px;font-weight:650;text-decoration:underline;text-underline-offset:5px}.hero figure{margin:0}.hero img{width:100%;height:auto;max-height:210px;object-fit:contain}

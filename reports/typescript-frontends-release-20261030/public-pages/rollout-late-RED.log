@@ -1,0 +1,20 @@
+PASS typed presentation decodes all retained local guides and province experiences; malformed/foreign JSON rejects
+PASS mounted public home keeps six featured provinces and route-linked search/empty state
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /虚构新区/. Input:
+
+'全国区县接入进度名单、指南、填写生成分别统计。候选资料通过验收后才会开放。全国尚未完成已核验并发布指南1 地可填写生成文书1 地候选资料待验收0 地当前追踪 1 个精确地点，来自已收录目录与独立候选；这不是全国区县和功能区的完整普查。查找省份显示 1 个省级地区各省区县指南及文书接入状态，所有省份仍有待完成项目省份追踪地点已发布指南可填写生成候选待验收待查指南查看虚构旧区仍在接入中11100选择地区 →'
+
+    at scripts/test-public-page-types.mjs:47:246 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: '全国区县接入进度名单、指南、填写生成分别统计。候选资料通过验收后才会开放。全国尚未完成已核验并发布指南1 地可填写生成文书1 地候选资料待验收0 地当前追踪 1 个精确地点，来自已收录目录与独立候选；这不是全国区县和功能区的完整普查。查找省份显示 1 个省级地区各省区县指南及文书接入状态，所有省份仍有待完成项目省份追踪地点已发布指南可填写生成候选待验收待查指南查看虚构旧区仍在接入中11100选择地区 →',
+  expected: /虚构新区/,
+  operator: 'match',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

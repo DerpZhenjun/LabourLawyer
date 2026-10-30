@@ -1,0 +1,19 @@
+Command: node scripts/export_document_examples.mjs
+Exported 21 regions from actual frontend defaults
+Exit: 0
+
+Command: .venv/Scripts/python.exe -m unittest backend.tests.test_document_field_regressions -v
+test_actual_frontend_payload_survives_api_validation (backend.tests.test_document_field_regressions.DocumentFieldRegressions.test_actual_frontend_payload_survives_api_validation) ... ok
+test_all_templates_preserve_original_files_and_include_every_claim (backend.tests.test_document_field_regressions.DocumentFieldRegressions.test_all_templates_preserve_original_files_and_include_every_claim) ... ok
+test_birth_dates_are_not_replaced_by_filing_date (backend.tests.test_document_field_regressions.DocumentFieldRegressions.test_birth_dates_are_not_replaced_by_filing_date) ... ok
+test_evidence_semantic_columns_and_receiver_blank (backend.tests.test_document_field_regressions.DocumentFieldRegressions.test_evidence_semantic_columns_and_receiver_blank) ... ok
+test_filing_date_occurs_once_and_claims_use_same_size (backend.tests.test_document_field_regressions.DocumentFieldRegressions.test_filing_date_occurs_once_and_claims_use_same_size) ... ok
+test_jiangsu_slots_underlines_inline_facts_and_blank_signature (backend.tests.test_document_field_regressions.DocumentFieldRegressions.test_jiangsu_slots_underlines_inline_facts_and_blank_signature) ... ok
+test_old_xinjiang_example_dates_do_not_leak_into_output (backend.tests.test_document_field_regressions.DocumentFieldRegressions.test_old_xinjiang_example_dates_do_not_leak_into_output) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.091s
+
+OK
+Exit: 0
+

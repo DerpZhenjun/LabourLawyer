@@ -1,0 +1,14 @@
+evalmachine.<anonymous>:2
+export * from './provinces.ts'
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at new Script (node:vm:117:7)
+    at createScript (node:vm:269:10)
+    at Object.runInContext (node:vm:300:10)
+    at scripts/export_document_examples.mjs:8:4
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.19.0

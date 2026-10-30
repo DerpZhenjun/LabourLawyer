@@ -5,9 +5,9 @@
     <section class="region-panel selector-panel" aria-labelledby="region-select-title">
       <h2 id="region-select-title">在哪里办理？</h2>
       <div class="region-selectors">
-        <label>省份<select aria-label="办理省份" :value="region.province" @change="changeProvince($event.target.value)"><option v-for="p in provinces" :key="p.slug" :value="p.slug">{{ p.name }}</option></select></label>
-        <label>城市<input aria-label="办理城市" list="known-cities" placeholder="输入或选择城市" :value="region.city" @input="changePlace('city',$event.target.value)"></label>
-        <label>区县<input aria-label="办理区县" list="known-districts" placeholder="输入或选择区县" :value="region.district" @input="changePlace('district',$event.target.value)"></label>
+        <label>省份<select aria-label="办理省份" :value="region.province" @change="changeProvince(eventValue($event))"><option v-for="p in provinces" :key="p.slug" :value="p.slug">{{ p.name }}</option></select></label>
+        <label>城市<input aria-label="办理城市" list="known-cities" placeholder="输入或选择城市" :value="region.city" @input="changePlace('city',eventValue($event))"></label>
+        <label>区县<input aria-label="办理区县" list="known-districts" placeholder="输入或选择区县" :value="region.district" @input="changePlace('district',eventValue($event))"></label>
       </div>
       <datalist id="known-cities"><option v-for="city in cities" :key="city" :value="city" /></datalist><datalist id="known-districts"><option v-for="d in districts" :key="d" :value="d" /></datalist>
       <p class="region-small">这里选择的是办理地区，不是户籍所在地。是否由该机构受理，请向机构确认。</p>
@@ -15,13 +15,13 @@
       <p class="region-small" role="status" v-else-if="directoryError">{{ directoryError }}</p>
       <details v-if="region.city && districtChoices.length && !(region.province==='sichuan' && region.city==='成都市')" class="region-directory">
         <summary>查看本市全部区县与功能区 · {{ districtChoices.length }} 个地区</summary>
-        <label>选择本市区县或功能区<select aria-label="选择本市区县或功能区" :value="region.district" @change="changePlace('district',$event.target.value)"><option value="" disabled>选择准备办理的地区</option><option v-for="a in districtChoices" :key="a.district" :value="a.district">{{ a.district }} · {{ a.can_generate?'可填写生成':a.source_id?'已收录指南':'待核验' }}</option></select></label>
+        <label>选择本市区县或功能区<select aria-label="选择本市区县或功能区" :value="region.district" @change="changePlace('district',eventValue($event))"><option value="" disabled>选择准备办理的地区</option><option v-for="a in districtChoices" :key="a.district" :value="a.district">{{ a.district }} · {{ a.can_generate?'可填写生成':a.source_id?'已收录指南':'待核验' }}</option></select></label>
         <p class="region-small">目录收录不代表文书已支持。“待核验”不会套用其他地区的资料；你也可以在上方直接输入地区名称。</p>
       </details>
       <div class="region-examples" v-if="region.province==='sichuan' && (!region.city || region.city==='成都市')"><span>常用成都入口：</span><button v-for="d in ['天府新区','锦江区','武侯区']" :key="d" type="button" :aria-pressed="region.city==='成都市' && region.district===d" @click="selectExample(d)">{{ d }}</button></div>
       <details v-if="region.province==='sichuan' && (!region.city || region.city==='成都市') && chengduAreas.length" class="region-directory">
         <summary>查看成都全部 {{ chengduAreas.length }} 个地区</summary>
-        <label>选择成都区县<select aria-label="选择成都区县" :value="region.city==='成都市'?region.district:''" @change="selectExample($event.target.value)"><option value="" disabled>选择准备办理的区县</option><option v-for="a in chengduAreas" :key="a.region_code" :value="a.district">{{ a.district }} · {{ a.can_generate?'可填写生成':a.source_id?'已收录指南':'待核验' }}</option></select></label>
+        <label>选择成都区县<select aria-label="选择成都区县" :value="region.city==='成都市'?region.district:''" @change="selectExample(eventValue($event))"><option value="" disabled>选择准备办理的区县</option><option v-for="a in chengduAreas" :key="a.region_code" :value="a.district">{{ a.district }} · {{ a.can_generate?'可填写生成':a.source_id?'已收录指南':'待核验' }}</option></select></label>
         <p class="region-small">“可填写生成”依据当地官网参考样表，不保证受理；“待核验”不会套用其他区县资料。功能区名称与编码保留官网标注。</p>
       </details>
     </section>
@@ -55,7 +55,7 @@
         <p v-if="!guide.materials.length" class="region-notice">材料清单尚未核验，不显示确定的当地要求。</p>
       </section>
       <section class="region-panel" id="regional-documents"><span class="ll-eyebrow">03 · 文书与下载</span><h2>看清来源，再填写</h2><p>“空白表格”和“示例样表”不是一回事。下载保留官网原文件，辅助填写不保证受理。</p>
-        <div class="regional-template" v-for="t in guide.templates" :key="t.id"><i class="fa-regular fa-file-lines" aria-hidden="true"></i><div><h3>{{ t.original_name }}</h3><p>{{ t.official_kind==='blank'?'官方空白表格':t.official_kind==='sample'?'官方示例样表（不是空白模板）':'附件类型待核实' }}</p><details><summary>来源与文件校验</summary><p>适用地区编码：{{ t.region_code }}</p><p class="file-hash">SHA256：{{ t.sha256 || '未下载，待核验' }}</p><a :href="t.source_url" target="_blank" rel="noopener noreferrer">官方材料栏目 ↗</a></details></div><a v-if="t.download_status==='downloaded'" class="ll-button secondary" :href="templateURL(region,t.id)">下载原文件</a><span v-else>下载待核验</span></div>
+        <div class="regional-template" v-for="t in guide.templates" :key="t.id"><i class="fa-regular fa-file-lines" aria-hidden="true"></i><div><h3>{{ t.original_name }}</h3><p>{{ t.official_kind==='blank'?'官方空白表格':t.official_kind==='sample'?'官方示例样表（不是空白模板）':'附件类型待核实' }}</p><details><summary>来源与文件校验</summary><p>适用地区编码：{{ t.region_code }}</p><p class="file-hash">SHA256：{{ t.sha256 || '未下载，待核验' }}</p><a :href="t.source_url" target="_blank" rel="noopener noreferrer">官方材料栏目 ↗</a></details></div><a v-if="t.download_status==='downloaded'" class="ll-button secondary" :href="originalTemplateLink(t.id)">下载原文件</a><span v-else>下载待核验</span></div>
         <div v-if="generatable" class="reference-fill"><h3>按{{ guide.district }}{{ blankGeneration?'官方空白表格':'参考样表' }}辅助填写</h3><p>{{ blankGeneration?'当前填写使用本地区官网提供、已核对的空白表格。':'官网将申请书附件列为示例样表。' }}页面上方可以直接填写；默认内容为本平台虚构示例，请替换为真实信息。签名位置留空，不自动提交申请。</p><div class="region-actions"><RouterLink v-if="hasGenerationKind(guide,'application')" :to="documentLink('application')" class="ll-button">填写申请书</RouterLink><RouterLink v-if="hasGenerationKind(guide,'evidence')" :to="documentLink('evidence')" class="ll-button secondary">填写证据清单</RouterLink></div></div>
         <p v-else class="region-notice">本地区附件尚未通过自动填写核验，{{ guide.templates.some(t=>t.download_status==='downloaded')?'可下载上方已核实的原文件参考。':'尚未核实可下载文件，请打开官方原文查询或向办理机构确认。' }}不会套用其他地区的文书。</p>
       </section>
@@ -64,39 +64,51 @@
     <p class="region-disclaimer">LabourLawyer 是劳动仲裁辅助工具，不是政府网站，不收取或代交仲裁申请。已有模板仅在标注的来源范围内使用。</p>
   </main>
 </template>
-<script setup>
-import {guideField,visitCountLabel,originalCopyLabel,materialDetails,hasGenerationKind} from '@/data/regionalGuidePresentation'
-import {computed,ref,onMounted} from 'vue'
+<script setup lang="ts">
+import {guideField,visitCountLabel,originalCopyLabel,materialDetails,hasGenerationKind,readGuideDisplay,publicError} from '@/data/regionalGuidePresentation'
+import type {DirectoryArea} from '@/data/regionalGuidePresentation'
+import type {DocumentKind} from '../../../packages/regional-contracts/src/index.ts'
+import {publicClient} from '@/api/public'
+import {computed,ref,onMounted,onBeforeUnmount} from 'vue'
 import {useRoute,useRouter,RouterLink} from 'vue-router'
 import {provinces,findProvince} from '@/data/provinces'
-import {useRegionalGuide,regionalAPI,templateURL} from '@/composables/useRegionalGuide'
+import {useRegionalGuide,templateURL} from '@/composables/useRegionalGuide'
 import DocumentWorkspace from '@/components/DocumentWorkspace.vue'
 import {useRegionDirectory} from '@/composables/useRegionDirectory'
 import '@/regional-guide.css'
-const route=useRoute(),router=useRouter(),inventory=ref([]),coverage=ref([])
+const route=useRoute(),router=useRouter(),inventory=ref<DirectoryArea[]>([]),coverage=ref<DirectoryArea[]>([])
 const region=computed(()=>({province:String(route.params.slug||''),city:String(route.query.city||''),district:String(route.query.district||'')}))
 const province=computed(()=>findProvince(region.value.province))
-const {guide,loading,error,reload}=useRegionalGuide(region)
+const {guide:rawGuide,loading,error:lookupError,reload}=useRegionalGuide(region)
+const presentation=computed(()=>{try{return{guide:readGuideDisplay(rawGuide.value),error:''}}catch(cause:unknown){return{guide:null,error:publicError(cause)}}})
+const guide=computed(()=>presentation.value.guide),error=computed(()=>lookupError.value||presentation.value.error)
 const {cityAreas,districtAreas,directoryLoading,directoryError}=useRegionDirectory(region)
 const cities=computed(()=>[...new Set([...cityAreas.value,...inventory.value.filter(g=>g.province===region.value.province)].map(g=>g.city))])
 const districts=computed(()=>[...new Set([...inventory.value,...coverage.value,...districtAreas.value].filter(g=>g.province===region.value.province&&g.city===region.value.city).map(g=>g.district))])
 const districtChoices=computed(()=>{
-  const result=new Map()
+  const result=new Map<string,DirectoryArea>()
   for(const area of districtAreas.value){
     const previous=result.get(area.district)
-    result.set(area.district,{...area,can_generate:area.can_generate||previous?.can_generate,source_id:area.source_id||previous?.source_id})
+    result.set(area.district,{...area,can_generate:Boolean(area.can_generate||previous?.can_generate),source_id:area.source_id||previous?.source_id||null})
   }
   return [...result.values()]
 })
 const chengduAreas=computed(()=>coverage.value.filter(g=>g.province==='sichuan'&&g.city==='成都市'))
 const generatable=computed(()=>guide.value?.templates.some(t=>t.can_generate))
 const blankGeneration=computed(()=>guide.value?.templates.filter(t=>t.can_generate).every(t=>t.official_kind==='blank'))
-const plainWarning=value=>String(value).replaceAll('not_found_in_checked_sources','本次已查来源未找到').replaceAll('NOT_RUN','尚未核验')
-const field=name=>guideField(guide.value,name)
-const date=value=>value?new Date(value).toLocaleString('zh-CN',{hour12:false}):'待核实'
-const changeProvince=slug=>router.replace({path:`/province/${slug}`,query:{}})
-const changePlace=(key,value)=>router.replace({query:{...route.query,[key]:value,...(key==='city'?{district:''}:{})}})
-const selectExample=district=>router.replace({query:{city:'成都市',district}})
-const documentLink=kind=>({path:`/local-documents/${region.value.province}/${kind}`,query:{city:region.value.city,district:region.value.district}})
-onMounted(async()=>{try{const r=await fetch(`${regionalAPI}/inventory`);if(r.ok){const result=await r.json();inventory.value=result.items;coverage.value=result.coverage||[]}}catch{/* Lookup presents a retryable error; suggestions are optional. */}})
+const plainWarning=(value:unknown)=>String(value).replaceAll('not_found_in_checked_sources','本次已查来源未找到').replaceAll('NOT_RUN','尚未核验')
+const field=(name:string)=>guideField(guide.value,name)
+const date=(value:string)=>value?new Date(value).toLocaleString('zh-CN',{hour12:false}):'待核实'
+const eventValue=(event:Event)=>event.target instanceof HTMLInputElement||event.target instanceof HTMLSelectElement?event.target.value:''
+const changeProvince=(slug:string)=>router.replace({path:`/province/${slug}`,query:{}})
+const changePlace=(key:'city'|'district',value:string)=>router.replace({query:{...route.query,[key]:value,...(key==='city'?{district:''}:{})}})
+const selectExample=(district:string)=>router.replace({query:{city:'成都市',district}})
+const documentLink=(kind:DocumentKind)=>({path:`/local-documents/${region.value.province}/${kind}`,query:{city:region.value.city,district:region.value.district}})
+const originalTemplateLink=(id:string)=>{
+  const current=guide.value
+  return current?.source_id&&typeof current.version==='number'&&Number.isSafeInteger(current.version)&&current.version>0?templateURL(region.value,id,{source_id:current.source_id,version:current.version}):undefined
+}
+const controller=new AbortController()
+onMounted(async()=>{try{const result=await publicClient.inventory(controller.signal);if(!controller.signal.aborted){inventory.value=result.items;coverage.value=result.coverage}}catch{/* Lookup presents a retryable error; suggestions are optional. */}})
+onBeforeUnmount(()=>controller.abort())
 </script>

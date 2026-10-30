@@ -1,0 +1,162 @@
+{
+  "scope": "Public and regional frontend TypeScript migration, own read-only client and compatibility entries",
+  "products": [
+    "frontend/src/views/PublicHome.vue",
+    "frontend/src/views/ProvinceGuide.vue",
+    "frontend/src/views/RegionalGuide.vue",
+    "frontend/src/views/RegionalDocument.vue",
+    "frontend/src/views/RegionalCollection.vue",
+    "frontend/src/views/Home.vue",
+    "frontend/src/components/ProvinceCard.vue",
+    "frontend/src/components/PublicHeader.vue",
+    "frontend/src/components/BrandMark.vue",
+    "frontend/src/components/ServiceIllustration.vue",
+    "frontend/src/components/RegionalRollout.vue",
+    "frontend/src/components/RegionalVerification.vue",
+    "frontend/src/composables/useRegionDirectory.ts",
+    "frontend/src/composables/useRegionDirectory.js",
+    "frontend/src/data/provinces.ts",
+    "frontend/src/data/provinces.js",
+    "frontend/src/data/regionalGuidePresentation.ts",
+    "frontend/src/data/regionalGuidePresentation.js",
+    "frontend/src/api/public.ts",
+    "scripts/test-public-page-types.mjs",
+    "scripts/export_document_examples.mjs"
+  ],
+  "verification": {
+    "strict_components": 12,
+    "negative_type_examples": 5,
+    "mounted_components": [
+      "BrandMark",
+      "PublicHeader",
+      "PublicHome",
+      "ProvinceGuide",
+      "RegionalGuide",
+      "RegionalRollout"
+    ],
+    "mounted_directory_scope_cancellation": "PASS",
+    "unknown_JSON_guards": "PASS",
+    "raw_public_report_preserved": "PASS",
+    "source_version_original_links": "PASS",
+    "previous_page_integration": 14,
+    "previous_router_cases": 11,
+    "compatibility_example_export_regions": 21,
+    "backend_document_field_regression_tests": 7,
+    "models_services_DB_git_executed": false,
+    "browser_or_Android_executed": false
+  },
+  "files": {
+    "frontend/src/api/public.ts": {
+      "sha256": "cfd31781d1173ddeb42537be675e2db706eb02bc45ad925c7184e6bc525c045d",
+      "bytes": 1517
+    },
+    "frontend/src/components/BrandMark.vue": {
+      "sha256": "0245c6cfa4871257de415b961c70d1718b22010e26467044cbf5e875ccbae1db",
+      "bytes": 1000
+    },
+    "frontend/src/components/ProvinceCard.vue": {
+      "sha256": "b358cf0b3c514dca557d077bf2b61ed58c91fbb866709bc478d1b92666f00d66",
+      "bytes": 2561
+    },
+    "frontend/src/components/PublicHeader.vue": {
+      "sha256": "f66431ae32cd0d7cafab9625560e9c217aec4887d73430e5dcf11e53a595904c",
+      "bytes": 3480
+    },
+    "frontend/src/components/RegionalRollout.vue": {
+      "sha256": "8f41381802038fcf5c5fb2c6745a1c46da1bc43359760ba6b57bb526a97a26f7",
+      "bytes": 6764
+    },
+    "frontend/src/components/RegionalVerification.vue": {
+      "sha256": "b9b4502a29381a58da795189b9cbbe8ff37aec416f2fdbb3c15b38d48a40261e",
+      "bytes": 5806
+    },
+    "frontend/src/components/ServiceIllustration.vue": {
+      "sha256": "d119bc2c8a85f64233161d6f4cad2777d6f05777492dcb2615d2fbaa2fd3bd20",
+      "bytes": 1967
+    },
+    "frontend/src/composables/useRegionDirectory.js": {
+      "sha256": "7caa9bdb66d5a521f7476981e04c112dbb00448b5e6aace63d490ad1a35ae867",
+      "bytes": 98
+    },
+    "frontend/src/composables/useRegionDirectory.ts": {
+      "sha256": "5598570d3fe2bdd0c26468a82d8ab61bc2f5e7a272af161afdb9999b57b25dd0",
+      "bytes": 1721
+    },
+    "frontend/src/data/provinces.js": {
+      "sha256": "9e2104a9c17f7a08e9d4ea4bd0a16e3261d28b3ec9afe1ecb298992d80dda02c",
+      "bytes": 89
+    },
+    "frontend/src/data/provinces.ts": {
+      "sha256": "b611d130bd29d541f6fd14dfdd04d4175d894ae4b8196f1da6d9e490753bd7a1",
+      "bytes": 23252
+    },
+    "frontend/src/data/regionalGuidePresentation.js": {
+      "sha256": "3460b6c39add64e13a20e679ed4e42bacdfdac47ee86b7048a3034be1d6c47cd",
+      "bytes": 105
+    },
+    "frontend/src/data/regionalGuidePresentation.ts": {
+      "sha256": "3cd1dbaadd6a49a5e6b92db3e2847fadb8c8d34860a961f2a86c3b227066d5a0",
+      "bytes": 10443
+    },
+    "frontend/src/views/Home.vue": {
+      "sha256": "0344f8ab7d9163af5e0afb01741ccc98ba19a97ee01d19cb99ddf082f1476648",
+      "bytes": 10554
+    },
+    "frontend/src/views/ProvinceGuide.vue": {
+      "sha256": "626aa8ddca4bf6b53d173d26af2e5a58702d3c3901e9b3147af45145582d16dc",
+      "bytes": 12176
+    },
+    "frontend/src/views/PublicHome.vue": {
+      "sha256": "c4aa0676e003298f8fe2d6600db025545b1322fc5214f004d103426b77051fda",
+      "bytes": 12590
+    },
+    "frontend/src/views/RegionalCollection.vue": {
+      "sha256": "92edc6db01669a067e21b1ec713b315285e0a19425a9dec9fa9d354e10336f71",
+      "bytes": 7672
+    },
+    "frontend/src/views/RegionalDocument.vue": {
+      "sha256": "3f09d6fc4fcc7f9a9a850796a6c94e3550273ef2d478e332608e386506fb8eb9",
+      "bytes": 10517
+    },
+    "frontend/src/views/RegionalGuide.vue": {
+      "sha256": "40977840299fb39eb543aecf119118f1814a8d65080b82ab9d9d95c93596a545",
+      "bytes": 17732
+    },
+    "reports/typescript-frontends-release-20261030/public-pages/GREEN.log": {
+      "sha256": "db8d6146773fddc83bfbab89f9789b86bf426907f9391900d02ef8fdeec69a9b",
+      "bytes": 2934
+    },
+    "reports/typescript-frontends-release-20261030/public-pages/RED.log": {
+      "sha256": "8cdc4b9fbef7286610e628d9c23221104cd0e1d6f8e72c56066d4710b42b65e5",
+      "bytes": 543
+    },
+    "reports/typescript-frontends-release-20261030/public-pages/REPORT.md": {
+      "sha256": "d8ca506affaa896a8d315bb7aaf527f97a12eaad6adcb64ff779479bca4fa90f",
+      "bytes": 4327
+    },
+    "reports/typescript-frontends-release-20261030/public-pages/export-examples-GREEN.log": {
+      "sha256": "5b5730c5c4ffcc7e17553fe451a0e201d34571775c7f77ab0f4f7514e9401c67",
+      "bytes": 1656
+    },
+    "reports/typescript-frontends-release-20261030/public-pages/export-examples-RED.log": {
+      "sha256": "e8921389591ea00c3f609cd508c6fc2a1364dfe4540b4004716b441af8c5c059",
+      "bytes": 489
+    },
+    "reports/typescript-frontends-release-20261030/public-pages/original-binding-RED.log": {
+      "sha256": "051ddbb66b779d2d177100dca1102f326da913e3c062700a013db0c24161be09",
+      "bytes": 712
+    },
+    "reports/typescript-frontends-release-20261030/public-pages/rollout-late-RED.log": {
+      "sha256": "48a387152af76af6c6267bae91a800844702b843c633844d9edbac1a16e38a7f",
+      "bytes": 1732
+    },
+    "scripts/export_document_examples.mjs": {
+      "sha256": "8389dd886c59f1e42cf794041ea44fc51a773c9df4e00cd6e2f9a325b3dfd942",
+      "bytes": 644
+    },
+    "scripts/test-public-page-types.mjs": {
+      "sha256": "d3c6a89a66c73df95c79315cbce1ac5686d2a628dbd7fefe2178a860c1441363",
+      "bytes": 18898
+    }
+  }
+}

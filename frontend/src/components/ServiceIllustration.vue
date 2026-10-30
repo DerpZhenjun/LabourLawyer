@@ -1,3 +1,6 @@
+<script setup lang="ts">
+// Static illustration; no runtime inputs.
+</script>
 <template>
   <div class="service-illustration" aria-hidden="true">
     <svg viewBox="0 0 440 300" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -25,7 +25,7 @@
     <Teleport to="body"><div v-if="confirmOpen" class="reference-dialog" @click.self="cancelConfirmation"><section ref="dialog" role="dialog" aria-modal="true" :aria-labelledby="`${dialogId}-title`" :aria-describedby="`${dialogId}-description`" tabindex="-1"><h2 :id="`${dialogId}-title`">确认生成{{ title }}？</h2><p :id="`${dialogId}-description`">{{ sourceDescription }}默认内容是虚构示例，未替换时只能作参考，不能直接提交；未填写的位置留空。请核对内容、受理机构并本人签字，不会代你提交申请。</p><div class="region-actions"><button type="button" class="ll-button secondary" @click="cancelConfirmation">取消</button><button type="button" class="ll-button" :disabled="generating" v-on="{click: confirmationAction}">确认生成</button></div></section></div></Teleport>
   </component>
 </template>
-<script setup>
+<script setup lang="ts">
 import {computed,ref,useId} from 'vue'
 import {useRoute,RouterLink} from 'vue-router'
 import FeidongApplicationFields from '@/components/FeidongApplicationFields.vue'
@@ -42,23 +42,27 @@ import {useRegionalForm} from '@/composables/useRegionalForm'
 import {useDialogFocus} from '@/composables/useDialogFocus'
 import {downloadDocument} from '@/composables/downloadDocument'
 import {createExampleForm} from '../../../packages/regional-contracts/src/index.ts'
+import type {Region,RegionalGuide,DocumentKind,FormContext,FormContract} from '../../../packages/regional-contracts/src/index.ts'
 import '@/regional-guide.css'
 import '@/document-forms.css'
 
-const props=defineProps({embedded:Boolean,selectedRegion:Object,selectedGuide:Object,documentKind:String})
-const route=useRoute(),region=computed(()=>props.selectedRegion||({province:String(route.params.slug),city:String(route.query.city||''),district:String(route.query.district||'')}))
-const kind=computed(()=>props.documentKind||route.params.kind),title=computed(()=>kind.value==='evidence'?'证据清单':'仲裁申请书')
+const props=defineProps<{embedded?:boolean;selectedRegion?:Region;selectedGuide?:RegionalGuide|null;documentKind?:DocumentKind}>()
+const route=useRoute(),region=computed<Region>(()=>props.selectedRegion||({province:String(route.params.slug),city:String(route.query.city||''),district:String(route.query.district||'')}))
+const kind=computed<DocumentKind|null>(()=>{const value=props.documentKind||route.params.kind;return value==='application'||value==='evidence'?value:null}),title=computed(()=>kind.value==='evidence'?'证据清单':'仲裁申请书')
 const back=computed(()=>({path:`/province/${region.value.province}`,query:{city:region.value.city,district:region.value.district}}))
-const {guide,loading,error}=props.embedded?{guide:computed(()=>props.selectedGuide),loading:ref(false),error:ref('')}:useRegionalGuide(region)
-const template=computed(()=>Array.isArray(guide.value?.templates)?guide.value.templates.find(t=>t&&t.can_generate&&Array.isArray(t.document_types)&&t.document_types.includes(kind.value)):undefined)
-const context=computed(()=>{
+const {guide,loading,error}=props.embedded?{guide:computed(()=>props.selectedGuide??null),loading:ref(false),error:ref('')}:useRegionalGuide(region)
+const template=computed(()=>{
+  const selected=kind.value
+  return selected&&Array.isArray(guide.value?.templates)?guide.value.templates.find(t=>t&&t.can_generate&&Array.isArray(t.document_types)&&t.document_types.includes(selected)):undefined
+})
+const context=computed<FormContext|null>(()=>{
   const g=guide.value,t=template.value,r=region.value,k=kind.value
-  if(!g||!t||!['application','evidence'].includes(k)||!Number.isSafeInteger(g.version)||g.version<1||typeof g.source_id!=='string'||!g.source_id||typeof g.region_code!=='string'||!g.region_code||typeof t.adapter!=='string'||!t.adapter)return null
-  if(['province','city','district'].some(key=>g[key]!==r[key]))return null
+  if(!g||!t||!k||typeof g.version!=='number'||!Number.isSafeInteger(g.version)||g.version<1||typeof g.source_id!=='string'||!g.source_id||typeof g.region_code!=='string'||!g.region_code||typeof t.adapter!=='string'||!t.adapter)return null
+  if((['province','city','district'] as const).some(key=>g[key]!==r[key]))return null
   return{province:r.province,city:r.city,district:r.district,region_code:g.region_code,source_id:g.source_id,version:g.version,template_id:t.id,kind:k,mode:t.official_kind==='blank'?'blank':'reference_adaptation',adapter:t.adapter}
 })
 const identity=computed(()=>JSON.stringify([template.value?.sha256,template.value?.source_url,guide.value?.content_hash]))
-const specialization=contract=>{
+const specialization=(contract:FormContract)=>{
   const {adapter,kind}=contract.context
   if(adapter===JIANGSU_OWN_ADAPTER)return'jiangsu'
   if([ZHEJIANG_OWN_ADAPTER,'zhejiang_own_worker_oct29e_v1'].includes(adapter))return'zhejiang'
@@ -82,7 +86,7 @@ const isJiangsuOwn=computed(()=>special.value==='jiangsu'),isZhejiangOwn=compute
 const isHunan=computed(()=>special.value==='hunan'),isFeidong=computed(()=>special.value==='feidong')
 const isBlank=computed(()=>contract.value?.context.mode==='blank')
 const sourceDescription=computed(()=>isHunan.value?'将依据本区官方 DOC 空白表的平台转换副本填写。下载结果是平台生成的 DOCX，官方原件保留 DOC 格式。':isBlank.value?`将根据${contract.value?.context.district||''}官网提供的空白表格辅助填写。`:`将根据${contract.value?.context.district||''}官方参考样表辅助填写。它不是官方空白模板。`)
-const dialog=ref(null),dialogId=`regional-confirm-${useId()}`
+const dialog=ref<HTMLElement|null>(null),dialogId=`regional-confirm-${useId()}`
 useDialogFocus(()=>confirmOpen.value,dialog,cancelConfirmation)
 </script>
 <style scoped>

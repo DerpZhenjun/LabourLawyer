@@ -1,0 +1,25 @@
+PASS mounted brand keeps native base URLs and header menu closes on navigation with skip link intact
+PASS mounted province guide keeps its historical snapshot and rejects a late previous province experience
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
++ undefined
+- {
+-   source_id: 'e87b6309ce5f6b51ba0aa5fc',
+-   version: 1
+- }
+
+    at scripts/test-public-page-types.mjs:50:174 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: undefined,
+  expected: { source_id: 'e87b6309ce5f6b51ba0aa5fc', version: 1 },
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

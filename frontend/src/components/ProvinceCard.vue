@@ -4,12 +4,14 @@
     <img :src="theme.art" alt="" width="140" height="100" loading="lazy">
   </RouterLink>
 </template>
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue'
 import { RouterLink } from 'vue-router'
 import themes from '../../../config/province_themes.json'
-const props=defineProps({province:{type:Object,required:true}})
-const theme=computed(()=>themes[props.province.slug]||themes.zhejiang)
+import type {ProvinceDefinition} from '@/data/provinces'
+const props=defineProps<{province:ProvinceDefinition}>()
+const themeCatalog:Record<string,typeof themes.zhejiang>=themes
+const theme=computed(()=>themeCatalog[props.province.slug]||themes.zhejiang)
 const services=computed(()=>[props.province.hasApplication?'仲裁申请书':'',props.province.hasEvidence?'证据清单':''].filter(Boolean).join(' · ')||'查看申请入口与材料要求')
 </script>
 <style scoped>

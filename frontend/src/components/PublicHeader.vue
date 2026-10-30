@@ -8,7 +8,7 @@
     </div>
   </header>
 </template>
-<script setup>
+<script setup lang="ts">
 import { ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import BrandMark from './BrandMark.vue'

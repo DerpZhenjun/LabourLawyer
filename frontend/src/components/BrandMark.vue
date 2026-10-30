@@ -11,12 +11,13 @@
   />
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue'
 
+import type {PropType} from 'vue'
 const props = defineProps({
-  variant: { type: String, default: 'brand', validator: value => ['brand', 'assistant'].includes(value) },
-  size: { type: Number, default: 32, validator: value => Number.isFinite(value) && value > 0 },
+  variant: { type: String as PropType<'brand'|'assistant'>, default: 'brand', validator: (value:unknown) => value==='brand'||value==='assistant' },
+  size: { type: Number, default: 32, validator: (value:unknown) => typeof value==='number'&&Number.isFinite(value) && value > 0 },
   label: { type: String, default: '' },
 })
 
