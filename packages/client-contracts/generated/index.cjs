@@ -1,5 +1,5 @@
 // Generated from packages/client-contracts/src/index.ts. Do not edit.
-// source-sha256: 7705132b992406a7531b635f81ed85a561e84f46aa88df41be4ef536f6cd8d6a
+// source-sha256: 2d1f7bca871f3548d5f3faf58a62dc97a3da4751371db12aa212843b4198b746
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;

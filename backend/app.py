@@ -27,6 +27,8 @@ from routes.regional_guides import router as regional_guides_router
 from routes.ai import router as ai_router
 from system_routes import router as system_router, health
 from routes.auth import router as auth_router
+from routes.official_collector import router as official_collector_router
+from service_capabilities import router as service_capabilities_router
 
 try:
     from routes.Zhejiang.la import router as zj_la_router
@@ -76,6 +78,8 @@ app.include_router(platform_router)
 app.include_router(ai_router)
 app.include_router(system_router)
 app.include_router(auth_router)
+app.include_router(official_collector_router,prefix='/api/official-collector',tags=['公开指南采集'])
+app.include_router(service_capabilities_router,tags=['部署服务'])
 
 @app.middleware("http")
 async def security_headers(request: Request, call_next):

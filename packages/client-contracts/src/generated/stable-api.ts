@@ -1,5 +1,5 @@
 // Generated from registered FastAPI routes. Do not edit.
-// schema-sha256: 7c4761b1b09ec04170393985e5bda55e1d91dd668096d3414d2ef2f53720071c
+// schema-sha256: 34bfa216a4bf511e8a288b47322155a60f4c413045121167b1426927cc0e9c17
 export interface paths {
     "/api/ai/status": {
         parameters: {
@@ -148,6 +148,23 @@ export interface paths {
         put?: never;
         /** Generate Province Evidence */
         post: operations["generate_province_evidence_api_province_documents__slug__evidence_generate_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/services": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Services */
+        get: operations["services_api_services_get"];
+        put?: never;
+        post?: never;
         delete?: never;
         options?: never;
         head?: never;
@@ -527,6 +544,16 @@ export interface components {
             /** Username */
             username: string;
         };
+        /** DigitalService */
+        DigitalService: {
+            /**
+             * Status
+             * @enum {string}
+             */
+            status: "configured" | "not_configured" | "invalid_configuration";
+            /** Url */
+            url?: string | null;
+        };
         /** DocumentFieldDefinition */
         DocumentFieldDefinition: {
             /** Label */
@@ -719,6 +746,10 @@ export interface components {
             history?: components["schemas"]["ChatMessage"][];
             /** Question */
             question: string;
+        };
+        /** ServiceCapabilities */
+        ServiceCapabilities: {
+            digital: components["schemas"]["DigitalService"];
         };
         /** UserResponse */
         UserResponse: {
@@ -993,6 +1024,26 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    services_api_services_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ServiceCapabilities"];
                 };
             };
         };

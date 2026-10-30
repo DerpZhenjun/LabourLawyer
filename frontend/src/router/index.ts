@@ -21,6 +21,7 @@ const ZhejiangEL = () => import('@/views/Zhejiang/EL.vue')
 const adminMeta = (eyebrow:string, title:string):RouteMeta => ({ layout: 'admin', eyebrow, title })
 
 const routes:RouteRecordRaw[] = [
+  {path:'/admin/collector',component:()=>import('@/views/OfficialCollector.vue'),meta:adminMeta('公开资料采集','官方指南采集')},
   {path:'/connection',component:ConnectionSettings,meta:{title:'连接服务'}},
   {path:'/login',name:'login',component:Login,meta:{title:'登录工作区'}},
   { path: '/', name: 'public-home', component: PublicHome, meta: { title: '劳动仲裁文书助手' } },

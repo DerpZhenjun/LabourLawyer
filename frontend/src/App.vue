@@ -56,6 +56,7 @@ const adminNav=[
   {to:'/admin/deadlines',label:'时效管理',icon:'fa-regular fa-calendar-check'},
   {to:'/admin/knowledge',label:'内容管理',icon:'fa-solid fa-book-open'},
   {to:'/admin/regions',label:'地区核验与问题',icon:'fa-solid fa-map-location-dot'},
+  {to:'/admin/collector',label:'官方指南采集',icon:'fa-solid fa-globe'},
 ]
 watch(currentUser,user=>{if(!user&&route.meta.layout==='admin')void router.replace({path:'/login',query:{next:route.fullPath}})})
 watch(()=>currentUser.value?.id??'anonymous',()=>{assistantOpen.value=false;digitalOpen.value=false},{flush:'sync'})

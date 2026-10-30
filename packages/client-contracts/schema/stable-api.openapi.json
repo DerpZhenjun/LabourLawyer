@@ -493,6 +493,36 @@
         "title": "CreateUserRequest",
         "type": "object"
       },
+      "DigitalService": {
+        "additionalProperties": false,
+        "properties": {
+          "status": {
+            "enum": [
+              "configured",
+              "not_configured",
+              "invalid_configuration"
+            ],
+            "title": "Status",
+            "type": "string"
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url"
+          }
+        },
+        "required": [
+          "status"
+        ],
+        "title": "DigitalService",
+        "type": "object"
+      },
       "DocumentFieldDefinition": {
         "additionalProperties": true,
         "properties": {
@@ -884,6 +914,19 @@
         "title": "QuestionRequest",
         "type": "object"
       },
+      "ServiceCapabilities": {
+        "additionalProperties": false,
+        "properties": {
+          "digital": {
+            "$ref": "#/components/schemas/DigitalService"
+          }
+        },
+        "required": [
+          "digital"
+        ],
+        "title": "ServiceCapabilities",
+        "type": "object"
+      },
       "UserResponse": {
         "properties": {
           "id": {
@@ -1268,6 +1311,24 @@
           }
         },
         "summary": "Generate Province Evidence"
+      }
+    },
+    "/api/services": {
+      "get": {
+        "operationId": "services_api_services_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ServiceCapabilities"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Services"
       }
     },
     "/health": {

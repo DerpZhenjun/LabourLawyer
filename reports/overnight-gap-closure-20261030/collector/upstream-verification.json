@@ -1,0 +1,14 @@
+{
+  "official_package_url": "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb",
+  "official_key_documentation": "https://www.google.com/linuxrepositories/",
+  "release_url": "https://dl.google.com/linux/chrome/deb/dists/stable/Release",
+  "release_signature_verified": true,
+  "primary_fingerprint": "EB4C1BFD4F042F6DDDCCEC917721F63BD38B4796",
+  "package": "google-chrome-stable",
+  "version": "156.0.8078.79-1",
+  "architecture": "amd64",
+  "sha256": "be1a1e161419f5c8272432f6860912550d8e29985e925913fa800493a0d0c955",
+  "bytes": 145633696,
+  "package_index_sha256": "15e32d7fa74dccab5e0fb1f68925e108f057ce96d6f567763504f49b1ad10c3e",
+  "release_sha256": "246a432fb88ef142bb838738cb6005e32b1ba9f7d7b03dc0fa4df272defc57a2"
+}

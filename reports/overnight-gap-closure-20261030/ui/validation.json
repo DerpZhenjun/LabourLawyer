@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-30",
+  "scope": "Isolated candidate UI; actual Ubuntu deployment repeat remains separate",
+  "ui_origin": "http://127.0.0.1:5176",
+  "api_origin": "http://127.0.0.1:8003",
+  "method": ["Chrome DevTools native interactions", "read-only DOM geometry", "sanitized network request listing", "agent-browser isolated native interactions"],
+  "screenshot_status": "NOT_ACCEPTED_TOOL_RESTRICTION",
+  "checks": {
+    "anonymous_collector_redirect": "PASS: /login?next=/admin/collector",
+    "private_fixture_login": "PASS",
+    "empty_queue_and_worker_offline_truthful": "PASS: initially all counts zero; executor offline; no claim of guide verification",
+    "blank_region": "PASS: native required validation prevented job POST",
+    "malformed_url": "PASS: native URL validation prevented job POST",
+    "explicit_region_enqueue": "PASS: one Zhejiang / Hangzhou / Chunan / 330127 job queued; attempt zero",
+    "reload_persistence": "PASS: queued job survived browser reload; reload made only GET requests",
+    "cancel_queued": "PASS: explicit cancel returned 200; final queued 0, running 0, complete 0, cancelled 1",
+    "logout_guard": "PASS: logout then direct collector navigation redirected to login; collector DOM absent",
+    "responsive_geometry": [
+      {"viewport_width":375,"client_width":360,"scroll_width":360,"form_controls_outside":0},
+      {"viewport_width":768,"client_width":753,"scroll_width":753,"form_controls_outside":0},
+      {"viewport_width":1440,"client_width":1425,"scroll_width":1425,"form_controls_outside":0}
+    ],
+    "backend_digital_capability": "PASS: GET /api/services on selected API, then digital health and iframe at configured LAN digital service; no legacy localhost:3000 request",
+    "saved_digital_precedence": "PASS: explicit saved synthetic digital selection was used; wrong-service health returned 404 and truthful unavailable UI; no fallback to configured backend digital service",
+    "digital_375_geometry": "PASS: popup x12..348, y248..888 within 375x900 viewport; window buttons 44x44",
+    "digital_frame_escape": "PASS: focused iframe question input then Escape closed popup and restored button focus",
+    "digital_referrer_policy": "PASS: origin",
+    "digital_console": "PASS: no warnings or errors during successful configured digital session",
+    "automatic_mutation": "PASS: observed page loads/reload/polling made GET requests; job creation/cancel only followed explicit native clicks",
+    "model_inference": "NOT_RUN: no AI question submitted",
+    "collector_worker_execution": "NOT_RUN: isolated executor remained offline"
+  },
+  "observations": [
+    "localhost:5176 alias failed fixture API CORS; intended 127.0.0.1:5176 origin passed.",
+    "Connection settings optional-digital hint describes original installation configuration; dynamic backend capability now has precedence. Copy fix reported to root.",
+    "No source edits, Git commits, real application submissions, worker runs, or model inference performed. Isolated browser connection selection restored to defaults after testing."
+  ],
+  "limitations": [
+    "Screenshots are excluded after a configured-root tool restriction; assertions rely on independent DOM, native interactions, and sanitized network observations.",
+    "No malicious cross-window message was injected; source review shows both origin and frame source checks, but this is not claimed as an adversarial runtime test.",
+    "No acceptance claim for production Ubuntu deployment, downloaded evidence integrity, completed worker result states, or full accessibility audit."
+  ]
+}

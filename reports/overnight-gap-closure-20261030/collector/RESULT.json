@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-30T15:26:05.346225+00:00",
+  "runtime": {
+    "os": "Ubuntu 24.04.5 LTS",
+    "architecture": "x86_64",
+    "uid": 1000,
+    "python": "3.12.3",
+    "browser": "Google Chrome 156.0.8078.79",
+    "playwright": "1.63.0",
+    "chromium_sandbox": true,
+    "certificate_validation": true,
+    "model_used": false,
+    "windows_model_used": false
+  },
+  "queue": {
+    "counts": {
+      "complete": 4
+    },
+    "worker_state": "idle",
+    "worker_alive": true,
+    "concurrency": 1,
+    "capacity": 128,
+    "batch_limit": 32,
+    "max_attempts": 2,
+    "duplicate_worker_rejected": true,
+    "allowed_hosts": [
+      "szzjg.jszwfw.gov.cn",
+      "www.zjzwfw.gov.cn"
+    ]
+  },
+  "verification": {
+    "linux_collector_tests": {
+      "passed": 18,
+      "skipped": 0,
+      "seconds": 89.559,
+      "host_io_pressure_observed": true
+    },
+    "linux_offline_browser_fixture": {
+      "passed": 1,
+      "seconds": 13.152,
+      "official_evidence": false
+    },
+    "windows_collector_and_deployment_tests": {
+      "run": 27,
+      "skipped": 2,
+      "failures": 0
+    }
+  },
+  "installation": {
+    "new_packages": [
+      "google-chrome-stable"
+    ],
+    "upgraded_packages": 0,
+    "removed_packages": 0,
+    "browser_defaults_and_auto_mode_preserved": true,
+    "apparmor_userns_restriction_after": "1",
+    "normal_package_effects": [
+      "Chrome-specific APT source and signing key",
+      "google-chrome executable alternative",
+      "desktop icons and MIME registration",
+      "Chrome daily repository/key maintenance cron script"
+    ],
+    "unrelated_services_restarted": false
+  },
+  "samples": [
+    {
+      "id": "d4917b0c98b74f2cb2bd0ab681f48dbb",
+      "url": "https://szzjg.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=31&iddept_ql_inf=11320582551232000Y4002014302002&ql_kind=20&iddept_yw_inf=11320582551232000Y400201430200201",
+      "region": {
+        "city": "苏州市",
+        "district": "张家港市",
+        "province": "江苏省",
+        "region_code": "320582"
+      },
+      "state": "complete",
+      "attempt": 1,
+      "created_at": "2026-10-30T15:07:31+00:00",
+      "updated_at": "2026-10-30T15:07:36+00:00",
+      "result": {
+        "state": "network_failed",
+        "requested_url": "https://szzjg.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=31&iddept_ql_inf=11320582551232000Y4002014302002&ql_kind=20&iddept_yw_inf=11320582551232000Y400201430200201",
+        "final_url": "chrome-error://chromewebdata/",
+        "region": {
+          "city": "苏州市",
+          "district": "张家港市",
+          "province": "江苏省",
+          "region_code": "320582"
+        },
+        "title": "www.jszwfw.gov.cn",
+        "http_status": 200,
+        "started_at": "2026-10-30T15:07:31+00:00",
+        "observed_at": "2026-10-30T15:07:36+00:00",
+        "completed_at": "2026-10-30T15:07:36+00:00",
+        "service_verified": false,
+        "model_used": false,
+        "review_required": true,
+        "evidence": [
+          {
+            "file": "failure.png",
+            "bytes": 21016,
+            "sha256": "f1b8d460bfe9012b60db4773fe0c48d1e0cad8cc9b5c2a0dc04d11d0283331cb"
+          }
+        ],
+        "attachments": [],
+        "error": "采集未完成，请由运行管理员检查私有日志。"
+      }
+    },
+    {
+      "id": "8e65c3d60b944a059751d4b21c5ff140",
+      "url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ee47fff8-558c-4a85-88e9-8a28d2bddbdc",
+      "region": {
+        "city": "杭州市",
+        "district": "淳安县",
+        "province": "浙江省",
+        "region_code": "330127"
+      },
+      "state": "complete",
+      "attempt": 1,
+      "created_at": "2026-10-30T15:17:53+00:00",
+      "updated_at": "2026-10-30T15:19:09+00:00",
+      "result": {
+        "state": "guide_observed",
+        "requested_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ee47fff8-558c-4a85-88e9-8a28d2bddbdc",
+        "final_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ee47fff8-558c-4a85-88e9-8a28d2bddbdc",
+        "region": {
+          "city": "杭州市",
+          "district": "淳安县",
+          "province": "浙江省",
+          "region_code": "330127"
+        },
+        "title": "浙江政务服务网 - 劳动人事争议仲裁申请",
+        "http_status": 200,
+        "started_at": "2026-10-30T15:18:01+00:00",
+        "observed_at": "2026-10-30T15:18:11+00:00",
+        "completed_at": "2026-10-30T15:19:09+00:00",
+        "guide_detected": true,
+        "review_state": "pending_human_review",
+        "attachment_template_match": "unknown_until_review",
+        "service_verified": false,
+        "model_used": false,
+        "review_required": true,
+        "evidence": [
+          {
+            "file": "materials.png",
+            "bytes": 143994,
+            "sha256": "db51138fff37d7ccae44d2b5711b678e5afbb30bdabee538da8a7334fe58dc6c"
+          },
+          {
+            "file": "page.png",
+            "bytes": 290952,
+            "sha256": "453dcde2fd81505af3336729923e5d717486e91f01f19d7eba00f2598141e959"
+          },
+          {
+            "file": "page.txt",
+            "bytes": 2761,
+            "sha256": "081b45c4959a299935e3ff6516cf80d760393f3b5759a96d71f5fe1d4d6e6dbf"
+          }
+        ],
+        "attachments": [
+          {
+            "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ee47fff8-558c-4a85-88e9-8a28d2bddbdc",
+            "label": "仲裁申请书（下载）",
+            "state": "failed",
+            "template_kind": "unknown_until_review"
+          },
+          {
+            "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ee47fff8-558c-4a85-88e9-8a28d2bddbdc",
+            "label": "证据清单（下载）",
+            "state": "failed",
+            "template_kind": "unknown_until_review"
+          }
+        ]
+      }
+    }
+  ],
+  "live_official_attachment_bytes_obtained": false,
+  "limitations": [
+    "Chunan guide and material controls observed; clicks yielded no document request or download event. Initial page-load document ORB failure is preserved privately and is not treated as a clicked attachment.",
+    "Zhangjiagang visit encountered a blocked main navigation and retained failure screenshot; no absence claim.",
+    "No automatic jurisdiction/template matching or publication.",
+    "Browser response size is checked after reception; operator retention and total disk monitoring remain required."
+  ]
+}
