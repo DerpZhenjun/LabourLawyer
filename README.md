@@ -110,7 +110,7 @@
 
 ### Windows
 
-准备 Git、Python 3.11 和 Node.js 22.12+（或兼容 Vite 7 的版本）。Android 构建另需 JDK、Android SDK。
+准备 Git、Python 3.11 和 Node.js 22.18+（共享 TypeScript 测试直接运行 TS）。Android 构建另需 JDK、Android SDK。
 
 ```powershell
 git clone https://github.com/DerpZhenjun/LabourLawyer.git

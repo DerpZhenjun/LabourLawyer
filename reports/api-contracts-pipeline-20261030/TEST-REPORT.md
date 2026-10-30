@@ -42,3 +42,7 @@
 - 安装包仍依赖电脑后端、官方模板库和可选数字人服务，不是离线完整后端包。保留Ubuntu远程AI配置，没有实际推理。
 - 六项既有用户dirty文件的原始SHA保持，未纳入提交。未删除用户库、文书、历史来源或旧Release。主后端按既有授权脚本正常重启并加载新schema，未重建库。
 - 私有原日志、完整构建输出、测试Word、进程/账号路径留在.runtime。公开子任务日志仅路径脱敏、换行及末尾空白规范化，原始副本保留，失败结果不变。
+
+## 发布结果
+
+[v1.2.0-preview.2](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.2) 已公开为 prerelease，标签指向114fe4e2。五个附件逐个匿名下载，字节数和SHA256全部与本地一致；见PUBLICATION.json。未重写既有Release。README补充Node 22.18+实际脚本需求。

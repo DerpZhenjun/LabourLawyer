@@ -1,0 +1,48 @@
+{
+  "repository": "DerpZhenjun/LabourLawyer",
+  "commit": "114fe4e235f8308beaa4db647feedf78ad2c23b5",
+  "tag": "v1.2.0-preview.2",
+  "id": 428715842,
+  "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.2",
+  "draft": false,
+  "prerelease": true,
+  "assets": [
+    {
+      "name": "LabourLawyer-1.2.0-preview.2-android-usb.apk",
+      "bytes": 4901232,
+      "sha256": "1f0246a634933af3711af2ff90d1a67757b6f3f11a7d1dd8e37cf4de9916c03e",
+      "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.2/LabourLawyer-1.2.0-preview.2-android-usb.apk",
+      "anonymous_download_verified": true
+    },
+    {
+      "name": "LabourLawyer-1.2.0-preview.2-START-HERE.txt",
+      "bytes": 2710,
+      "sha256": "3767d9abe5b99dbcac58f24fbeaa39c3382cc983f461c3b7aad56b08e56573c5",
+      "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.2/LabourLawyer-1.2.0-preview.2-START-HERE.txt",
+      "anonymous_download_verified": true
+    },
+    {
+      "name": "LabourLawyer-1.2.0-preview.2-windows-x64-portable.exe",
+      "bytes": 111861281,
+      "sha256": "b5d2c94ed4313fc82e2dd07e795d2e1a3bdb4b8ba9331472eb26483cbee90390",
+      "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.2/LabourLawyer-1.2.0-preview.2-windows-x64-portable.exe",
+      "anonymous_download_verified": true
+    },
+    {
+      "name": "LabourLawyer-1.2.0-preview.2-windows-x64-setup.exe",
+      "bytes": 112097564,
+      "sha256": "6dea6d9d93d4e9cd7ab52309f07472df5e4b1e91ca798b5ba42fae645d5cf6eb",
+      "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.2/LabourLawyer-1.2.0-preview.2-windows-x64-setup.exe",
+      "anonymous_download_verified": true
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 458,
+      "sha256": "0e6802b668446647348b74a20a3dbe45cb6f1cb69326722a0f7c8f25393d7924",
+      "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.2/SHA256SUMS.txt",
+      "anonymous_download_verified": true
+    }
+  ],
+  "anonymous_downloads_verified": true,
+  "checked_at": "2026-10-30T06:30:09Z"
+}

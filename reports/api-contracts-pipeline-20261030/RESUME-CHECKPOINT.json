@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "phase": "tested-source-committed-release-pending",
+  "phase": "complete-published-and-anonymous-downloads-verified",
   "source_commit": "7fff8b19",
   "version": "1.2.0-preview.2",
   "backend_tests": {
@@ -21,6 +21,23 @@
   "windows_model_started": false,
   "inference": false,
   "physical_device_installed": false,
-  "publication": "PENDING",
-  "do_not_rebuild_database": true
+  "publication": "PASS",
+  "do_not_rebuild_database": true,
+  "release_url": "https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.2",
+  "release_source_commit": "114fe4e235f8308beaa4db647feedf78ad2c23b5",
+  "source_batches": [
+    "98524305",
+    "14bd5e52",
+    "7fff8b19",
+    "114fe4e2"
+  ],
+  "published_assets": 5,
+  "anonymous_sha256_verified": true,
+  "remaining_scope": [
+    "Other API families are not yet OpenAPI-generated",
+    "USB device unavailable; no physical install",
+    "Windows installer wizard not executed; unsigned preview",
+    "Mini program not uploaded or published",
+    "National coverage unchanged; not complete"
+  ]
 }
