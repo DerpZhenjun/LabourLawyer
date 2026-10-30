@@ -1,32 +1,51 @@
-"""Explicit, public-only OpenClaw issue review. No fabricated delivery ACK."""
-import argparse,json,os,sys
+"""Export public issues durably; never substitute filesystem export for ACK."""
+import argparse
+import json
+import os
+import subprocess
+import sys
+from datetime import datetime, timezone
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'backend'))
-from regional_guides import RegionalStore,now
-from template_acquisition.openclaw_bridge import describe_image
 
-def run(timeout):
-    report=ROOT/'reports/government-guide-localization';report.mkdir(exist_ok=True)
-    store=RegionalStore(os.getenv('LABOURLAWYER_REGIONAL_DB',ROOT/'backend/data/regional-guides.sqlite'))
-    pending=[e for e in store.events() if e['delivery_status']=='PENDING_OPENCLAW']
-    # Only the whitelisted public collection events; never user documents/accounts.
-    bundle=[{k:v for k,v in e.items() if k not in {'receipt','delivery_status'}} for e in pending]
-    (report/'outbox/pending-public-events.json').write_text(json.dumps(bundle,ensure_ascii=False,indent=2),encoding='utf8')
-    prompt='请记录以下公开政府指南采集问题，勿提交仲裁申请。输出JSON：ok、accepted_event_ids（仅实际读到的完整编号）、report（含搜索关键词、网办、模板缺失、访问失败、登录、地区差异摘要）。样表不是空白模板；来源冲突不能断言不支持网办。事件：'+json.dumps(bundle,ensure_ascii=False,separators=(',',':'))
-    status={'attempted_at':now(),'engine':'OpenClaw','pending_count':len(pending),'status':'PENDING_OPENCLAW','receipt_file':'openclaw/issue-review-receipt.json'}
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'backend'))
+from regional_issue_delivery import deliver_pending, delivery_summary, discover_workspace, verify_pending_with_openclaw
+
+
+def run(args):
+    database = Path(args.database).resolve(strict=True)
+    report = Path(args.report).resolve()
+    report.mkdir(parents=True, exist_ok=True)
     try:
-        output=report/'openclaw/issue-review-receipt.json'
-        describe_image(report/'04-tianfu-guide.png',output,report/'openclaw/isolated',timeout_seconds=timeout,prompt=prompt,role='public_regional_collection_issue_review')
-        receipt=json.loads(output.read_text(encoding='utf8'))
-        texts=[x['text'] for x in receipt['result']['outputs'] if x.get('text')]
-        answer=json.loads(texts[0].removeprefix('```json').removesuffix('```').strip())
-        store.acknowledge([e['id'] for e in pending],answer)
-        status.update(status='ACKNOWLEDGED_OPENCLAW',pending_count=0,report=answer.get('report'))
-    except Exception as exc:status['reason']=str(exc)
-    (report/'OPENCLAW-STATUS.json').write_text(json.dumps(status,ensure_ascii=False,indent=2),encoding='utf8')
-    (report/'COLLECTION-ISSUES.json').write_text(json.dumps(store.events(),ensure_ascii=False,indent=2),encoding='utf8')
-    print(json.dumps(status,ensure_ascii=True))
+        workspace = Path(args.workspace) if args.workspace else discover_workspace(args.timeout)
+        if args.verify_service:
+            status = verify_pending_with_openclaw(database, workspace, args.agent, record_receipts=args.record_receipts,
+                                                 profile=args.profile, limit=args.limit, timeout=args.timeout)
+        else:
+            status = deliver_pending(database, workspace, record_receipts=args.record_receipts, limit=args.limit)
+    except (OSError, ValueError, RuntimeError, subprocess.SubprocessError) as exc:
+        status = {'status': 'PENDING_OPENCLAW', 'attempted_at': datetime.now(timezone.utc).isoformat(),
+                  'workspace_exported': 0, 'acknowledged': 0, 'ai_reviewed': 0, 'model_calls': 0,
+                  'error_type': type(exc).__name__, 'reason': str(exc), 'pending': delivery_summary(database)['pending']}
+    status['database'] = str(database)
+    filename = datetime.now(timezone.utc).strftime('workspace-export-%Y%m%dT%H%M%S%fZ.json')
+    (report / filename).write_text(json.dumps(status, ensure_ascii=False, indent=2), encoding='utf8')
+    print(json.dumps({k: v for k, v in status.items() if k != 'receipts'}, ensure_ascii=True))
+    return 1 if status.get('failed', 0) or status.get('error_type') else 0
 
-if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--timeout',type=int,default=45)
-    run(p.parse_args().timeout)
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--database', default=os.getenv('LABOURLAWYER_REGIONAL_DB', ROOT / 'backend/data/regional-guides.sqlite'))
+    parser.add_argument('--workspace', help='Existing OpenClaw agent workspace; omitted asks the real CLI')
+    parser.add_argument('--report', default=ROOT / 'reports/production-readiness-20261030/openclaw')
+    parser.add_argument('--record-receipts', action='store_true', help='Persist evidence; service mode publishes ACK only after exact complete service read-back')
+    parser.add_argument('--verify-service', action='store_true', help='Verify exact bundle via the dedicated public-only OpenClaw agent; --workspace required')
+    parser.add_argument('--agent', default='labourlawyer-public-issues')
+    parser.add_argument('--profile', help='Required isolated OpenClaw profile for --verify-service')
+    parser.add_argument('--limit', type=int, default=1000)
+    parser.add_argument('--timeout', type=int, default=30, help='CLI config lookup timeout; no model is called')
+    args = parser.parse_args()
+    if args.verify_service and (not args.workspace or args.profile != 'labourlawyer-public-issues'):
+        parser.error('--verify-service requires --profile labourlawyer-public-issues and its reviewed --workspace')
+    sys.exit(run(args))

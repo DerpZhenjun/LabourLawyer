@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python",
+    "scripts/start-openclaw-issue-gateway.py",
+    "--check"
+  ],
+  "actual_result": {
+    "status": "healthy",
+    "profile": "labourlawyer-public-issues",
+    "started": false,
+    "model_calls": 0
+  },
+  "scope": "Actual installed service check; no process restart or model call",
+  "source_original_sha256": "5e0c69898005665f28c9a8fe41f4a3b4a2b39127b3cc2dc7ea8aa8e3c8213497"
+}

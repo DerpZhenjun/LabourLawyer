@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-30T10:51:52.229003+00:00",
+  "counts": {
+    "total": 377,
+    "pending": 0,
+    "workspace_exported": 0,
+    "acknowledged": 377,
+    "ai_reviewed": 0
+  },
+  "all_ack_receipts_exact_evidence_hash_verified": true,
+  "guide_history_unchanged": true,
+  "guide_history_fingerprint": "dd44f0d132ad1f232b2fe8997fb247d96a38bcabf201891b7ab56c828cf3d4d3",
+  "guide_versions": 210,
+  "guide_current": 202,
+  "global_roster": {
+    "only_agent": "main",
+    "isDefault": true,
+    "bindings": 0,
+    "workspace_unchanged": true
+  },
+  "model_calls": 0,
+  "jobs_mutated": false,
+  "status": "ACKNOWLEDGED_OPENCLAW",
+  "service_verified": 377,
+  "ai_reviewed": 0,
+  "backup_integrity": "ok",
+  "backup_sha256": "63352740ad93500fe239f5816a753c5556f7407a45d538574e4a2dbe3bffe039",
+  "profile": "labourlawyer-public-issues",
+  "transport": "actual OpenClaw tools.invoke / memory_get",
+  "service_readback_is_not_ai_review": true,
+  "raw_proofs_and_original_reports": "retained in private isolated profile audit/workspace; unchanged",
+  "source_original_sha256": "9bc7a7fa020df7bbe21b4cbee16fd293171e0b529652189848dbefe41cc31944"
+}

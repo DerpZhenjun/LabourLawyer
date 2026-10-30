@@ -1,0 +1,38 @@
+{
+  "at": "2026-10-30T11:04:44.727372+00:00",
+  "commands": [
+    [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "backend/tests",
+      "-p",
+      "test_regional_issue_delivery.py",
+      "-v"
+    ],
+    [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "backend/tests",
+      "-p",
+      "test_regional_public_receipts.py",
+      "-v"
+    ]
+  ],
+  "exit_code": 0,
+  "focused_tests": 26,
+  "result": "PASS",
+  "privacy_tests": 3,
+  "additional_regressions": {
+    "test_openclaw_report_counts": 1,
+    "test_regional_api": 8,
+    "result": "PASS"
+  },
+  "scope": "Public issue delivery, isolated startup, public receipt/status privacy; integrated suite is reported separately",
+  "raw_database_proofs_and_old_capture_changed": false
+}
