@@ -33,7 +33,7 @@
   <DigitalLawyer v-if="digitalOpen" @close="digitalOpen=false" />
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed, defineAsyncComponent, nextTick, ref, watch } from 'vue'
 import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router'
 import BrandMark from '@/components/BrandMark.vue'
@@ -43,7 +43,7 @@ import PublicHeader from '@/components/PublicHeader.vue'
 const QA = defineAsyncComponent(() => import('@/components/QA.vue'))
 
 const route=useRoute();const router=useRouter();const sidebarOpen=ref(false);const assistantOpen=ref(false);const digitalOpen=ref(false)
-const assistantButton=ref(null)
+const assistantButton=ref<HTMLElement|null>(null)
 const assistantDock=useAssistantDock(assistantButton)
 const isAdmin=computed(()=>route.meta.layout==='admin')
 const currentMeta=computed(()=>({eyebrow:route.meta.eyebrow||'管理后台',title:route.meta.title||'LabourLawyer'}))
@@ -56,9 +56,9 @@ const adminNav=[
   {to:'/admin/knowledge',label:'内容管理',icon:'fa-solid fa-book-open'},
   {to:'/admin/regions',label:'地区核验与问题',icon:'fa-solid fa-map-location-dot'},
 ]
-const go=path=>router.push(path)
+const go=(path:string)=>router.push(path)
 const openDigitalLawyer=()=>{assistantOpen.value=false;digitalOpen.value=true}
-watch(()=>route.path,async()=>{await nextTick();document.querySelector('#main-content')?.focus({preventScroll:true})},{flush:'post'})
+watch(()=>route.path,async()=>{await nextTick();document.querySelector<HTMLElement>('#main-content')?.focus({preventScroll:true})},{flush:'post'})
 </script>
 
 <style scoped>

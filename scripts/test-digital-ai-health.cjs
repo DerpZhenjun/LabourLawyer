@@ -5,6 +5,7 @@ const Module = require('node:module');
 const ts = require('../ChatVRM/node_modules/typescript');
 const filename = require('node:path').resolve('ChatVRM/src/pages/api/health.ts');
 const mod = new Module(filename, module);
+mod.filename=filename;mod.paths=Module._nodeModulePaths(require('node:path').dirname(filename));
 mod._compile(ts.transpileModule(fs.readFileSync(filename,'utf8'), {compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText,filename);
 const handler = mod.exports.default;
 async function run(replies) {
@@ -24,13 +25,15 @@ async function run(replies) {
   result=await run([{status:200,body:{service:'api'}},new Error('SSH metadata timed out')]);
   assert.equal(result.backend,true);
   assert.equal(result.ai.status,'unavailable');
-  result=await run([{status:200,body:{service:'api'}},{status:200,body:{ready:true,model:'other-model'}}]);
+  result=await run([{status:200,body:{service:'api'}},{status:200,body:{ready:true,model:'other-model',provider:'Ubuntu Ollama',local_model_started:false}}]);
   assert.equal(result.ai.ready,false);
   assert.equal(result.ai.status,'model_mismatch');
-  result=await run([{status:200,body:{service:'api'}},{status:200,body:{ready:true,model:'qwen3.8:27b',provider:'Ubuntu Ollama'}}]);
+  result=await run([{status:200,body:{service:'api'}},{status:200,body:{ready:true,model:'qwen3.8:27b',provider:'Ubuntu Ollama',local_model_started:false}}]);
   assert.equal(result.ai.ready,true);
   assert.equal(result.ai.model,'qwen3.8:27b');
-  result=await run([{status:200,body:{service:'api'}},{status:200,body:{ready:false,status:'not_connected',message:'请检查 SSH 连接'}}]);
+  result=await run([{status:200,body:{service:'api'}},{status:200,body:{ready:false,status:'not_connected',message:'请检查 SSH 连接',model:'qwen3.8:27b',provider:'Ubuntu Ollama',local_model_started:false}}]);
   assert.equal(result.ai.message,'请检查 SSH 连接');
-  console.log('PASS six real digital health handler scenarios, zero model calls');
+  result=await run([{status:200,body:{service:'api'}},{status:200,body:{ready:true,model:'qwen3.8:27b',provider:'Ubuntu Ollama',local_model_started:true}}]);
+  assert.equal(result.ai.ready,false,'A local model must never be marked as approved remote AI');
+  console.log('PASS seven real digital health handler scenarios, zero model calls');
 })().catch(e=>{console.error(e);process.exitCode=1;});

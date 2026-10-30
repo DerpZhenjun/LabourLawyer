@@ -4,7 +4,9 @@ import {createRequire} from 'node:module'
 const require=createRequire(new URL('../frontend/package.json',import.meta.url))
 const {createRouter,createMemoryHistory}=require('vue-router')
 const provinces=JSON.parse(readFileSync(new URL('../frontend/src/data/provinceCatalog.json',import.meta.url),'utf8'))
-const text=readFileSync(new URL('../frontend/src/router/index.js',import.meta.url),'utf8')
+const source=readFileSync(new URL('../frontend/src/router/index.ts',import.meta.url),'utf8')
+const ts=require('typescript')
+const text=ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext}}).outputText
 const body=text.replace(/^import .*$/gm,'').replace(/const (\w+) = \(\) => import\([^\n]+/g,'const $1 = {}').replace('import.meta.env.BASE_URL',"'/'").replace('export default router','return router')
 globalThis.document={title:''}
 const router=new Function('createRouter','createWebHistory','findProvince','PublicHome',body)(createRouter,createMemoryHistory,slug=>provinces.find(p=>p.slug===slug),{})

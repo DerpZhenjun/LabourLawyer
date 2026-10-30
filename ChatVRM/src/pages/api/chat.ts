@@ -1,10 +1,17 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import {buildAskRequest} from "../../../../packages/client-contracts/generated/index.cjs";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== "POST") { res.setHeader("Allow", "POST"); return res.status(405).json({ message: "请使用 POST 请求。" }); }
-  const messages = Array.isArray(req.body.messages) ? req.body.messages.filter((m: any) => ["user", "assistant"].includes(m?.role) && typeof m?.content === "string").slice(-12) : [];
-  const last = messages[messages.length - 1];
-  if (!last || last.role !== "user" || !last.content.trim()) return res.status(400).json({ message: "请输入问题。" });
+  const body:unknown=req.body;
+  const raw=body!==null&&typeof body==='object'&&'messages' in body?body.messages:[];
+  let payload:ReturnType<typeof buildAskRequest>;
+  try {
+    if(!Array.isArray(raw))throw new Error('Invalid history');
+    const last:unknown=raw[raw.length-1];
+    if(last===null||typeof last!=='object'||!('role' in last)||last.role!=='user'||!('content' in last)||typeof last.content!=='string')throw new Error('Missing question');
+    payload=buildAskRequest(last.content,raw);
+  }catch{return res.status(400).json({message:'请输入有效的问题和对话记录。'});}
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 600000);
   const cancel = () => controller.abort();
@@ -14,7 +21,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const base = process.env.LABOURLAWYER_API_BASE || "http://127.0.0.1:8000";
     const upstream = await fetch(`${base.replace(/\/$/, "")}/api/ask`, {
       method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ question: last.content, history: messages }), signal: controller.signal,
+      body: JSON.stringify(payload), signal: controller.signal,
     });
     if (!upstream.ok || !upstream.body) return res.status(502).json({ message: "问答服务暂不可用，请检查项目后端。" });
     res.setHeader("Content-Type", "text/plain; charset=utf-8");

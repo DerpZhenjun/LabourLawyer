@@ -3,6 +3,7 @@ const {EventEmitter}=require('node:events');
 const ts=require('../ChatVRM/node_modules/typescript');
 const filename=require('node:path').resolve('ChatVRM/src/pages/api/chat.ts');
 const mod=new Module(filename,module);
+mod.filename=filename;mod.paths=Module._nodeModulePaths(require('node:path').dirname(filename));
 mod._compile(ts.transpileModule(fs.readFileSync(filename,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText,filename);
 (async()=>{
   let firstWrite,finishUpstream,finished=false;

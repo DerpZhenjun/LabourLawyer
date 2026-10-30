@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import {assertAIStatus,remoteReady} from "../../../../packages/client-contracts/generated/index.cjs";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -15,11 +16,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       if (status.status === 404) {
         ai = { ...ai, status: "backend_update_required", message: "当前后端尚未加载远程问答接口，需要重启本项目后端。" };
       } else if (status.ok) {
-        const result = await status.json();
-        const correctModel = result.model === "qwen3.8:27b" && result.provider === "Ubuntu Ollama";
+        const result = assertAIStatus(await status.json());
+        const correctModel = result.model === "qwen3.8:27b" && result.provider === "Ubuntu Ollama" && !result.local_model_started;
         ai = result.ready && !correctModel
           ? { ...ai, status: "model_mismatch", message: "远程模型配置不一致，请使用 Ubuntu 上的 qwen3.8:27b。" }
-          : { ...ai, ...result, ready: result.ready === true && correctModel };
+          : { ...ai, ...result, ready: remoteReady(result) };
       } else {
         ai = { ...ai, status: "unavailable", message: "远程问答状态检查失败，请稍后重试。" };
       }

@@ -8,7 +8,7 @@
       </div>
     </header>
     <div id="digital-conversation" v-show="!collapsed" class="digital-content">
-      <iframe v-if="state==='ready'" ref="frame" :key="frameKey" :src="embeddedUrl" title="阿律法律数字人咨询界面" allow="microphone" class="vrm-iframe"></iframe>
+      <iframe v-if="state==='ready'" ref="frame" :key="frameKey" :src="embeddedUrl.toString()" title="阿律法律数字人咨询界面" allow="microphone" class="vrm-iframe"></iframe>
       <div v-else class="connection-state" role="status">
         <BrandMark variant="assistant" :size="48" />
         <h2>{{ state==='loading' ? '正在连接阿律' : '暂时没有连接上' }}</h2>
@@ -19,16 +19,16 @@
     <footer v-show="!collapsed"><span class="status-dot" :class="state"></span>{{ state==='ready' ? '数字人已连接' : state==='loading' ? '正在连接' : '连接不可用' }}<span>劳动争议信息辅助</span></footer>
   </section>
 </template>
-<script setup>
+<script setup lang="ts">
 import { ref, nextTick, onMounted, onUnmounted } from 'vue'
 import BrandMark from '@/components/BrandMark.vue'
-const emit=defineEmits(['close'])
-const dialog=ref(null), frame=ref(null), collapsed=ref(false)
+const emit=defineEmits<{close:[]}>()
+const dialog=ref<HTMLElement|null>(null), frame=ref<HTMLIFrameElement|null>(null), collapsed=ref(false)
 const digitalLawyerUrl=import.meta.env.VITE_DIGITAL_LAWYER_URL||'http://127.0.0.1:3000'
 const serviceOrigin=new URL(digitalLawyerUrl).origin
 const embeddedUrl=new URL(digitalLawyerUrl);embeddedUrl.searchParams.set('embed','1')
-const state=ref('loading'),frameKey=ref(0)
-let controller,poll,disposed=false,previous
+const state=ref<'loading'|'ready'|'error'>('loading'),frameKey=ref(0)
+let controller:AbortController|undefined,poll:ReturnType<typeof setInterval>|undefined,disposed=false,previous:Element|null=null
 async function connect(){
   controller?.abort();const current=new AbortController();controller=current;state.value='loading'
   const timeout=setTimeout(()=>current.abort(),15000)
@@ -38,9 +38,9 @@ async function connect(){
     if(!disposed&&controller===current){frameKey.value++;state.value='ready'}
   }catch{if(!disposed&&controller===current)state.value='error'}finally{clearTimeout(timeout)}
 }
-function keydown(event){if(event.key==='Escape'&&!event.defaultPrevented&&dialog.value?.contains(document.activeElement)){event.preventDefault();emit('close')}}
-function frameMessage(event){
-  if(event.origin===serviceOrigin&&event.source===frame.value?.contentWindow&&event.data?.type==='labourlawyer:digital-close')emit('close')
+function keydown(event:KeyboardEvent){if(event.key==='Escape'&&!event.defaultPrevented&&dialog.value?.contains(document.activeElement)){event.preventDefault();emit('close')}}
+function frameMessage(event:MessageEvent<unknown>){
+  if(event.origin===serviceOrigin&&event.source===frame.value?.contentWindow&&event.data!==null&&typeof event.data==='object'&&'type' in event.data&&event.data.type==='labourlawyer:digital-close')emit('close')
 }
 onMounted(()=>{
   previous=document.activeElement;nextTick(()=>dialog.value?.focus({preventScroll:true}))
@@ -50,7 +50,7 @@ onMounted(()=>{
 onUnmounted(()=>{
   disposed=true;controller?.abort();clearInterval(poll)
   document.removeEventListener('keydown',keydown);window.removeEventListener('message',frameMessage)
-  nextTick(()=>{const target=previous?.isConnected&&previous!==document.body?previous:document.querySelector('.assistant-fab');target?.focus({preventScroll:true})})
+  nextTick(()=>{const target=previous instanceof HTMLElement&&previous.isConnected&&previous!==document.body?previous:document.querySelector<HTMLElement>('.assistant-fab');target?.focus({preventScroll:true})})
 })
 </script>
 <style scoped>
