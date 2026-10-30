@@ -1,0 +1,37 @@
+{
+  "observed_at": "2026-10-30T18:02:01.397458+00:00",
+  "tool": "chrome-devtools MCP isolated root-gulou-h-candidate page6",
+  "version": 4,
+  "source_id": "3e2246aa2a534d2b37f6c6c5",
+  "guide_status": "partial",
+  "form_immediately_after_region_picker": true,
+  "default_fictional_applicant": "陈虚构",
+  "form_fields": 5,
+  "initial_evidence_rows": 1,
+  "own_display": {
+    "channel": "窗口办，网上办",
+    "time": "受理后5个工作日",
+    "fee": "不收费",
+    "visits": "1 次",
+    "material_copies": [
+      2,
+      2,
+      2
+    ]
+  },
+  "official_version": "未提供; capture digest retained separately as source_version",
+  "online_link": "Own gov.cn guide fallback; observed linked third-party scan-login URL retained in provenance; no application submitted.",
+  "375_DOM": {
+    "scroll_width": 375,
+    "inner_width": 375,
+    "form": true,
+    "all_controls_fit": true,
+    "alerts": []
+  },
+  "other_viewports": "Native Chromium download run covers375/768/1440 and real G/H region control switches.",
+  "screenshots": {
+    "count": 0,
+    "status": "NOT_CAPTURED_TOOL_RESTRICTION"
+  },
+  "model_calls": 0
+}

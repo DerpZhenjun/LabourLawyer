@@ -1,0 +1,27 @@
+{
+  "scope": "Four actual browser-downloaded Gulou documents; six native Word pages independently opened",
+  "result": "PASS",
+  "pages": 6,
+  "application_filled_pages": 2,
+  "application_blank_pages": 2,
+  "evidence_filled_pages": 1,
+  "evidence_blank_pages": 1,
+  "findings": [
+    "Filled application preserves own three request slots and ruled facts area; closing/own committee/signature/date stay together on page2. No compact one-page claim.",
+    "Blank application is byte-identical to its own official original including blank second page; blank evidence equals its own official original.",
+    "Filled evidence contains exactly one fictional entered row and correct1group/3pages total; no generated handwritten submitter/date.",
+    "No clipping/overlap or missing text observed on these six pages. Source/sample/scanning roles remain separate."
+  ],
+  "source_freeze_unchanged": true,
+  "sample_contents_verified": false,
+  "guide_status": "partial",
+  "validation": {
+    "provider_tests": 11,
+    "dispatch_tests_before_display_alias_fix": 3,
+    "native_downloads": 4,
+    "independent_display_peer_checks": 163
+  },
+  "screenshots": "NOT_CAPTURED_TOOL_RESTRICTION",
+  "models": 0,
+  "live_database_changed": false
+}

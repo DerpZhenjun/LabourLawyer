@@ -1,0 +1,31 @@
+﻿{
+    "outputs":  [
+                    {
+                        "source_sha256":  "bf8674839a1fad4e74243dcc41c3663d3ed07e802bbc2c14371fec5cbbc82213",
+                        "name":  "application-filled",
+                        "pdf_sha256":  "bd0fbcb23a922e5aed10607d7a1b579671d9db66d971d47490138df72583d4f5",
+                        "pages":  2
+                    },
+                    {
+                        "source_sha256":  "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+                        "name":  "application-blank",
+                        "pdf_sha256":  "b43645967d9289917033fd7bd944fba9a20e5fca3bc31ec79cacea97bd1b1d91",
+                        "pages":  2
+                    },
+                    {
+                        "source_sha256":  "67db2c12ce279bed991dd9d7509fadebd4260a2df1e5d7703945d873747d4818",
+                        "name":  "evidence-filled",
+                        "pdf_sha256":  "c0f8f60e61938c4c7fb38d4f08ef4102752797cb5ddb4d5e7524bf6ace1e7e30",
+                        "pages":  1
+                    },
+                    {
+                        "source_sha256":  "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+                        "name":  "evidence-blank",
+                        "pdf_sha256":  "5540e562e08108a6d450b1b20ab6c02e83255a300f46e56269a7c151056fcd32",
+                        "pages":  1
+                    }
+                ],
+    "source_copies_unchanged":  true,
+    "engine":  "Owned Microsoft Word read-only; short paths; no screenshots",
+    "own_instance_verified":  true
+}

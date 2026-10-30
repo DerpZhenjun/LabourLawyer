@@ -1,0 +1,346 @@
+{
+  "started_at": "2026-10-30T17:51:55.484075+00:00",
+  "scope": "isolated_H_candidate_v4",
+  "source_id": "3e2246aa2a534d2b37f6c6c5",
+  "version": 4,
+  "screenshots": 0,
+  "model_calls": 0,
+  "downloads": [
+    {
+      "kind": "application",
+      "mode": "filled",
+      "file": "application-filled.docx",
+      "bytes": 12061,
+      "sha256": "bf8674839a1fad4e74243dcc41c3663d3ed07e802bbc2c14371fec5cbbc82213",
+      "suggested_filename": "鼓楼区-仲裁申请书-空白表格填写.docx",
+      "browser_download_completed": true,
+      "zip_crc": "PASS"
+    },
+    {
+      "kind": "application",
+      "mode": "blank",
+      "file": "application-blank.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "suggested_filename": "鼓楼区-仲裁申请书-空白表格填写.docx",
+      "browser_download_completed": true,
+      "zip_crc": "PASS"
+    },
+    {
+      "kind": "evidence",
+      "mode": "filled",
+      "file": "evidence-filled.docx",
+      "bytes": 16719,
+      "sha256": "67db2c12ce279bed991dd9d7509fadebd4260a2df1e5d7703945d873747d4818",
+      "suggested_filename": "鼓楼区-证据清单-空白表格填写.docx",
+      "browser_download_completed": true,
+      "zip_crc": "PASS"
+    },
+    {
+      "kind": "evidence",
+      "mode": "blank",
+      "file": "evidence-blank.docx",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "suggested_filename": "鼓楼区-证据清单-空白表格填写.docx",
+      "browser_download_completed": true,
+      "zip_crc": "PASS"
+    }
+  ],
+  "posts": [
+    {
+      "url": "http://127.0.0.1:8003/api/regional-guides/generate",
+      "data": {
+        "province": "fujian",
+        "city": "福州市",
+        "district": "鼓楼区",
+        "source_id": "3e2246aa2a534d2b37f6c6c5",
+        "version": 4,
+        "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "16f4596386ff5235e6ba8e093e6b9ec9422673a655fa9f3be23ed6ed9c316764",
+        "data": {
+          "applicantName": "陈虚构",
+          "agentName": "",
+          "respondentName": "虚构青禾有限公司",
+          "requests": [
+            "请求支付虚构拖欠工资3000元。"
+          ],
+          "factsReason": "以下全部为软件演示的虚构情况。虚构单位拖欠示例工资3000元，双方协商未果，故提出上述请求。"
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8003/api/regional-guides/generate",
+      "data": {
+        "province": "fujian",
+        "city": "福州市",
+        "district": "鼓楼区",
+        "source_id": "3e2246aa2a534d2b37f6c6c5",
+        "version": 4,
+        "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "16f4596386ff5235e6ba8e093e6b9ec9422673a655fa9f3be23ed6ed9c316764",
+        "data": {
+          "applicantName": "",
+          "agentName": "",
+          "respondentName": "",
+          "requests": [
+            ""
+          ],
+          "factsReason": ""
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8003/api/regional-guides/generate",
+      "data": {
+        "province": "fujian",
+        "city": "福州市",
+        "district": "鼓楼区",
+        "source_id": "3e2246aa2a534d2b37f6c6c5",
+        "version": 4,
+        "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+        "kind": "evidence",
+        "mode": "blank",
+        "contract_id": "80056204aee22275ba1f80c15e2223de0e3218f597cc5fd073a154af0bad4395",
+        "data": {
+          "evidenceList": [
+            {
+              "name": "虚构劳动合同",
+              "pageCount": "3",
+              "originalType": "复印件",
+              "purpose": "虚构示例：说明双方劳动关系。",
+              "pageRange": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8003/api/regional-guides/generate",
+      "data": {
+        "province": "fujian",
+        "city": "福州市",
+        "district": "鼓楼区",
+        "source_id": "3e2246aa2a534d2b37f6c6c5",
+        "version": 4,
+        "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+        "kind": "evidence",
+        "mode": "blank",
+        "contract_id": "80056204aee22275ba1f80c15e2223de0e3218f597cc5fd073a154af0bad4395",
+        "data": {
+          "evidenceList": [
+            {
+              "name": "",
+              "pageCount": "",
+              "originalType": "",
+              "purpose": "",
+              "pageRange": ""
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "viewports": [
+    {
+      "width": 375,
+      "scrollWidth": 375,
+      "controls": [
+        {
+          "left": 16,
+          "right": 359,
+          "width": 343
+        },
+        {
+          "left": 16,
+          "right": 359,
+          "width": 343
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 139,
+          "width": 102
+        },
+        {
+          "left": 37,
+          "right": 169,
+          "width": 132
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        },
+        {
+          "left": 37,
+          "right": 338,
+          "width": 301
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "controls": [
+        {
+          "left": 32,
+          "right": 164,
+          "width": 132
+        },
+        {
+          "left": 176,
+          "right": 308,
+          "width": 132
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 57,
+          "right": 159,
+          "width": 102
+        },
+        {
+          "left": 57,
+          "right": 189,
+          "width": 132
+        },
+        {
+          "left": 57,
+          "right": 711,
+          "width": 654
+        },
+        {
+          "left": 519,
+          "right": 711,
+          "width": 192
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "controls": [
+        {
+          "left": 140,
+          "right": 272,
+          "width": 132
+        },
+        {
+          "left": 284,
+          "right": 416,
+          "width": 132
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 173,
+          "right": 275,
+          "width": 102
+        },
+        {
+          "left": 173,
+          "right": 305,
+          "width": 132
+        },
+        {
+          "left": 173,
+          "right": 1267,
+          "width": 1094
+        },
+        {
+          "left": 1075,
+          "right": 1267,
+          "width": 192
+        }
+      ]
+    }
+  ],
+  "console_errors": [],
+  "page_errors": [],
+  "region_switch": {
+    "method": "native province/city/district controls; real lookup responses",
+    "kunshan": {
+      "source_id": "d39444ab7f4bcaea2ea91473",
+      "version": 1,
+      "copies": [
+        2,
+        2,
+        1,
+        4
+      ]
+    },
+    "gulou": {
+      "source_id": "3e2246aa2a534d2b37f6c6c5",
+      "version": 4,
+      "copies": [
+        2,
+        2,
+        2
+      ]
+    },
+    "source_ids_differ": true,
+    "foreign_form_removed": true
+  },
+  "finished_at": "2026-10-30T17:52:14.381786+00:00",
+  "status": "PASS"
+}
