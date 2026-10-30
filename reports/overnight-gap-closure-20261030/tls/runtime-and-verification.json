@@ -1,0 +1,40 @@
+{
+  "caddy_version": "2.11.7",
+  "archive_sha256": "727b91701a392de6ebc5027509f548bf39979e5216340d0faed8fa5e69c84f8b",
+  "binary_sha256": "678ade3bfc088749c81a681adc603333ee0bb023b6a6cfe3c0f58bef8ff854e9",
+  "official_checksum_algorithm": "SHA512",
+  "official_checksum_verified": true,
+  "test_listener": "127.0.0.1:8443",
+  "upstream": "http://192.168.110.81:8088",
+  "certificate_kind": "private temporary test CA; one-day loopback server certificate",
+  "publicly_trusted_tls": false,
+  "internet_deployment": false,
+  "trust_store_modified": false,
+  "model_calls": 0,
+  "unit_tests_ubuntu": {
+    "passed": 11,
+    "failed": 0,
+    "skipped": 0
+  },
+  "unit_tests_windows": {
+    "passed": 5,
+    "failed": 0,
+    "skipped": 6,
+    "skip_reason": "private certificate fixtures and Linux installer intentionally unavailable"
+  },
+  "source_files": {
+    "deploy/tls/runtime.py": "95441bc6d352ee73d847c2e4468800195c64b59c49dc01715708de532cfa7a2f",
+    "deploy/tls/install_caddy.py": "8ac168b76fd31c0f109e939f220a9674dda401bd1efde35c888ece8acf1eeac8",
+    "deploy/tls/README.md": "586cf14e8e338d4a3df685f8b5b69ac05facd737a26ca62595755398c5b7a073",
+    "scripts/test-tls-proxy.py": "119f58bfd048fdeb28ee326298704eae3487f2f2ec6ecfea557283e6cfc89138",
+    "scripts/create-tls-test-ca.py": "9d477a120272dd1f565f23cbc689a20494366f920a258d8e5faab1fa5f56fd83",
+    "backend/tests/test_tls_deployment.py": "c6ce42c1eaf52527b2817f931b2f37f56fbd99e06b32bfb775d2ac2e5989eb75"
+  },
+  "official_sources": [
+    "https://tailscale.com/docs/how-to/set-up-https-certificates",
+    "https://caddyserver.com/docs/install#static-binaries",
+    "https://caddyserver.com/docs/caddyfile/directives/tls",
+    "https://caddyserver.com/docs/caddyfile/directives/reverse_proxy#streaming",
+    "https://github.com/caddyserver/caddy/releases/tag/v2.11.7"
+  ]
+}

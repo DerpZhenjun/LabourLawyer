@@ -1,0 +1,55 @@
+{
+  "test_ca_only": true,
+  "public_trust_deployed": false,
+  "os_trust_modified": false,
+  "origin": "https://127.0.0.1:8443",
+  "synthetic_model_calls": 0,
+  "checks": [
+    {
+      "name": "HTTPS health with explicit test CA and hostname validation",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "Anonymous protected route /api/platform/cases",
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "Anonymous protected route /api/auth/me",
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "HTTPS public HTML and application static JavaScript",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "HTTPS SPA refresh",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "name": "Unknown API and missing static script preserve404",
+      "passed": true
+    },
+    {
+      "name": "Unexpected Host rejected before upstream",
+      "status": 421,
+      "passed": true
+    },
+    {
+      "name": "Default OS trust rejects isolated test certificate",
+      "passed": true
+    },
+    {
+      "name": "Unexpected TLS SNI/hostname rejected with explicit CA",
+      "passed": true
+    },
+    {
+      "name": "Occupied-port preflight refuses takeover and existing proxy stays healthy",
+      "passed": true
+    }
+  ]
+}

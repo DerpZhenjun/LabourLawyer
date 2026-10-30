@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-10-30T15:56:43.279828+00:00",
+  "review_fix": "Strict digital API origin validation",
+  "rejected_inputs": [
+    "empty userinfo",
+    "credentials",
+    "port zero",
+    "out-of-range port",
+    "nonnumeric port",
+    "leading whitespace",
+    "CRLF/control characters",
+    "query or fragment including empty delimiters",
+    "API paths"
+  ],
+  "accepted_inputs": [
+    "plain HTTP/HTTPS origin",
+    "explicit valid port",
+    "IPv4 loopback",
+    "IPv6 literal"
+  ],
+  "tests": {
+    "runtime_cases_passed_windows": 3,
+    "linux_time_wait_case_skipped_windows": true,
+    "package_determinism_passed": true,
+    "new_negative_case_failed_before_fix": true
+  },
+  "deployed_digital_release_changed": false,
+  "deployment_note": "This reviewed source fix awaits the root-owned final digital repackage; existing v4 service is unchanged.",
+  "files": {
+    "ChatVRM/deploy/run.py": "e10a8a374d17103f2de67ea10a93ad98961cc959b5c8d9c2de5ce15b9e87282e",
+    "scripts/test-digital-ubuntu-runtime.py": "d35ad6864541a2418d930ae12faaef147fdd39bf1278a4f47ed1b0322e4b5c76"
+  }
+}

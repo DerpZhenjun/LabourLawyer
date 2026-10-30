@@ -1,0 +1,103 @@
+{
+  "checked_at": "2026-10-30T15:09:43.054Z",
+  "runtime_release": "digital-20261030-v4",
+  "main_release": "ci-20261030-bdbd6ae7",
+  "real_synthetic_questions": 2,
+  "model": "qwen3.8:27b",
+  "direct": [
+    {
+      "width": 375,
+      "overflow": false,
+      "avatar": "ready",
+      "avatarHeight": 116,
+      "windowHeight": 680,
+      "inputVisible": true,
+      "answer": "阿律Ubuntu 数字人合成测试完成。"
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "avatar": "ready",
+      "avatarHeight": 128,
+      "windowWidth": 400,
+      "windowHeight": 680,
+      "inputVisible": true,
+      "answer": "阿律Ubuntu 数字人合成测试完成。"
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "avatar": "ready",
+      "avatarHeight": 128,
+      "windowWidth": 400,
+      "windowHeight": 680,
+      "inputVisible": true,
+      "answer": "阿律Ubuntu 数字人合成测试完成。"
+    }
+  ],
+  "embedded": [
+    {
+      "width": 375,
+      "overflow": false,
+      "iframe": "http://192.168.110.81:8089/?embed=1",
+      "crossOriginDocumentBlocked": true,
+      "window": {
+        "x": -3.3333334922790527,
+        "y": 248,
+        "width": 351.3333435058594,
+        "height": 640
+      },
+      "visible": false,
+      "modal": "false"
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "iframe": "http://192.168.110.81:8089/?embed=1",
+      "crossOriginDocumentBlocked": true,
+      "window": {
+        "x": 336.66668701171875,
+        "y": 244,
+        "width": 400,
+        "height": 640
+      },
+      "visible": true,
+      "modal": "false"
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "iframe": "http://192.168.110.81:8089/?embed=1",
+      "crossOriginDocumentBlocked": true,
+      "window": {
+        "x": 1008.6666870117188,
+        "y": 244,
+        "width": 400,
+        "height": 640
+      },
+      "visible": true,
+      "modal": "false"
+    }
+  ],
+  "privacy": {
+    "direct_reload_message_count": 0,
+    "direct_reload_question": "",
+    "separate_iframe_initially_empty": true,
+    "collapse_retains_frame_and_answer": true,
+    "close_button_removes_iframe": true,
+    "close_button_restores_launcher_focus": true,
+    "cross_origin_document_access_blocked": true,
+    "legacy_storage_read_write_test_passed": true
+  },
+  "browser_console": {
+    "direct_errors": 0,
+    "direct_warnings": 0,
+    "embedded_errors": 0,
+    "embedded_warnings": 0
+  },
+  "pending_main_integration": [
+    "375px widget uses vw and clips 3px left when the page has a scrollbar; main frontend owner notified.",
+    "Escape inside cross-origin iframe cannot resolve parent origin because main response Referrer-Policy is same-origin; main frontend owner notified."
+  ],
+  "voice_tested": false
+}

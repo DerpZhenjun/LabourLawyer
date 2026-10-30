@@ -1,0 +1,19 @@
+{
+  "base_commit": "0e8eb56a9bdbbea295b584e9a8037337c79e37e8",
+  "source_archive_sha256": "d3023a3987d8af55562171cd770ce893151ea737e62ef5f311636efd7d839dd3",
+  "source_state": "reviewed working-tree digital changes; archive manifest records each file digest",
+  "release": "digital-20261030-v4",
+  "node": "22.23.4",
+  "npm": "10.9.9",
+  "next": "15.5.28",
+  "react": "18.2.0",
+  "model": "qwen3.8:27b",
+  "model_provider": "Ubuntu Ollama",
+  "local_model_started": false,
+  "runtime_origin": "http://192.168.110.81:8089",
+  "upstream_api_origin": "http://192.168.110.81:8088",
+  "source_dependencies": {
+    "ChatVRM/package-lock.json": "69e178cf1dc7e11f92560e6ed3fdfde331ca80f86ec987b5d1e6434aa1087d7e",
+    "packages/client-contracts/generated/index.cjs": "fda7b221575d1daf8c8cbb5cf2df438d9f7ad8d4d4c19cef022d73b0ead84938"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-10-30T15:12:03.161Z",
+  "main_origin": "http://127.0.0.1:5176",
+  "main_mode": "Vite review candidate; not the Ubuntu8088 deployed release",
+  "digital_origin": "http://192.168.110.81:8089",
+  "digital_release": "digital-20261030-v4",
+  "synthetic_inference_calls_in_candidate_test": 0,
+  "rows": [
+    {
+      "width": 375,
+      "clientWidth": 360,
+      "overflow": false,
+      "iframe": "http://192.168.110.81:8089/?embed=1",
+      "referrerPolicy": "origin",
+      "crossOriginDocumentBlocked": true,
+      "window": {
+        "x": 12,
+        "y": 248,
+        "width": 336,
+        "height": 640
+      },
+      "visible": true,
+      "modal": "false",
+      "screenshot": "viewport"
+    },
+    {
+      "width": 768,
+      "clientWidth": 753,
+      "overflow": false,
+      "iframe": "http://192.168.110.81:8089/?embed=1",
+      "referrerPolicy": "origin",
+      "crossOriginDocumentBlocked": true,
+      "window": {
+        "x": 336.66668701171875,
+        "y": 244,
+        "width": 400,
+        "height": 640
+      },
+      "visible": true,
+      "modal": "false",
+      "screenshot": "dialog crop"
+    },
+    {
+      "width": 1440,
+      "clientWidth": 1425,
+      "overflow": false,
+      "iframe": "http://192.168.110.81:8089/?embed=1",
+      "referrerPolicy": "origin",
+      "crossOriginDocumentBlocked": true,
+      "window": {
+        "x": 1008.6666870117188,
+        "y": 244,
+        "width": 400,
+        "height": 640
+      },
+      "visible": true,
+      "modal": "false",
+      "screenshot": "dialog crop"
+    }
+  ],
+  "iframe_avatar_ready": true,
+  "iframe_qwen_status_ready": true,
+  "iframe_initial_question_empty_after_close_and_reopen": true,
+  "collapse_preserves_iframe": true,
+  "collapse_preserves_unsent_synthetic_draft": true,
+  "collapsed_height": 68,
+  "iframe_escape_closes": true,
+  "iframe_escape_restores_launcher_focus": true,
+  "direct_reload_clears_history": true,
+  "console_errors": 0,
+  "console_warnings": 0
+}

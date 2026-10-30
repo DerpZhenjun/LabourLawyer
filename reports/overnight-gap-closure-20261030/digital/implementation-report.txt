@@ -1,0 +1,28 @@
+Digital runtime checkpoint, 2026-10-30
+
+Service: http://192.168.110.81:8089/ (Ubuntu, application-owned process)
+Backend: existing http://192.168.110.81:8088/ -> existing Ubuntu Ollama qwen3.8:27b.
+No Windows model was installed or started. No shared service, firewall, systemd, proxy or production database was changed by this lane.
+
+Source: base 0e8eb56a9bdbbea295b584e9a8037337c79e37e8 plus reviewed digital changes; digital-source-v4.tar.gz SHA256 d3023a3987d8af55562171cd770ce893151ea737e62ef5f311636efd7d839dd3. Full per-file digests are in source-manifest.json. This is a dirty-source deployment receipt, not a claim that v4 is an exact clean commit release. Node22.23.4 official Linux archive SHA256 was checked before extraction; all runtime files are under the application-owned digital directory. The existing API and Ollama remained running during the digital release replacement.
+
+Changes:
+- Next13.2.4 -> supported maintenance15.5.28 with matching ESLint config; Node>=22<25; updated React18 types, ESLint8.57.1, charcoal icons6.3.0; PostCSS8.5.23 pinned for upstream fixes.
+- Removed unused OpenAI/node-fetch SDKs and redundant Tailwind line-clamp plugin. Runtime React remains18.2.0 and the VRM/compact upper-body UI is preserved.
+- Replaced deprecated next/config asset prefix with documented build-time public prefix, preserving root and subpath asset URLs. Browser deprecation warnings disappear.
+- npm start no longer builds. Digital-only deterministic source packager includes generated shared contract, explicit deployment helpers and tracked assets, excludes installs/builds/private files, records hashes.
+- Foreground launcher requires an explicit API origin, completed production build, private Node executable and unprivileged free port; never stops another listener. Linux SO_REUSEADDR permits expected TIME_WAIT restart behavior and still rejects an active listener.
+
+Verification:
+- Ubuntu clean npm ci and production build exit0. npm audit reports0 vulnerabilities in every severity; actual receipt is npm-audit.json.
+- Ubuntu actual upgraded dependencies pass7 health-handler cases, streaming first-chunk test, actual React memory-only mount test, root/subpath asset URL test.
+- Runtime tests: Windows3pass/1Linux-only skip; Ubuntu3pass including real TCP TIME_WAIT and active-listener rejection. Deterministic packages have identical bytes for identical inputs.
+- Two browser synthetic questions completed via8089/api/chat/ -> existing8088/api/ask, both HTTP200 with expected Qwen answers. Proxy no-cache,no-transform and chunked/no-gzip verified. No real case data was supplied.
+- Direct375/768/1440: avatar ready, compact upper-body window, composer visible, no horizontal overflow, zero browser errors/warnings.
+- Deployed v6 main integration exposed375px scrollbar clipping and cross-origin Escape/referrer issue; pre-fix screenshots and browser-acceptance-v6-main.json are preserved.
+- Root's5176 review candidate fixes both:375/768/1440 widget fully visible; cross-origin DOM access blocked; iframe referrer policy sends origin only; Escape inside iframe closes and restores launcher focus; collapse retains iframe and synthetic unsent draft; close/reopen starts empty. No extra inference was invoked for the candidate. Distinct candidate receipt/screenshots are browser-acceptance-5176-candidate.json and candidate-5176-*.
+- Direct reload clears conversation. Previous v6 collapse/expand retained the actual synthetic answer. Browser console is clean on digital and candidate.
+
+Remaining integration validation: Root must deploy the corrected main bundle to8088 and recheck its default digital endpoint and iframe behavior. The5176 candidate is not the deployed8088 release.
+
+Limits: HTTP is trusted-LAN acceptance, not public TLS hosting. Reboot autostart/process supervision, speech recognition, read-aloud audio/voice cloning and legal-answer quality were not validated. Build/lint exit0 retain two preexisting raw-img lint warnings; install reports ESLint8 support deprecation, and next lint itself is deprecated for Next16. These do not appear in the live browser console. Raw process/build logs stay in .runtime or the application's private digital/var directory.

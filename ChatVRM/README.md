@@ -2,7 +2,9 @@
 
 ## LabourLawyer integration
 
-This directory now hosts LabourLawyer's digital legal assistant. Start it from the repository launcher (`start.bat web` or `start.bat digital-human`). Chat requests use the project's API and configured local model. See [digital assistant guide](../docs/digital-human.md) for voice options and troubleshooting. The original upstream README below is retained for attribution; its ChatGPT/Koemotion setup does not describe the current application.
+This directory now hosts LabourLawyer's digital legal assistant. Start it from the repository launcher (`start.bat web` or `start.bat digital-human`). Chat requests use the project's API and its explicitly configured Ubuntu model; no Windows model is started. See [digital assistant guide](../docs/digital-human.md) for voice options and troubleshooting. For the separate Ubuntu LAN service, use the [isolated deployment guide](deploy/README.md). `npm run build` creates the production output; `npm start` only starts an existing build.
+
+The original upstream README below is retained for attribution; its ChatGPT/Koemotion setup does not describe the current application.
 
 ChatVRMは、技術共有およびデモンストレーションを主目的としたプロジェクトです。
 

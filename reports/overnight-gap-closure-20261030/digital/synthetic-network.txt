@@ -1,0 +1,57 @@
+Direct digital synthetic request
+
+Emulating viewport: {"deviceScaleFactor":1,"isMobile":false,"hasTouch":false,"isLandscape":false,"width":1440,"height":900}
+## Request http://192.168.110.81:8089/api/chat/
+Status: 200
+### Request Headers
+- user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36
+- content-type:application/json
+- referer:http://192.168.110.81:8089/
+- accept:*/*
+- accept-encoding:gzip, deflate
+- accept-language:zh-CN,zh;q=0.9
+- connection:keep-alive
+- content-length:155
+- host:192.168.110.81:8089
+- origin:http://192.168.110.81:8089
+### Request Body
+{"messages":[{"role":"user","content":"合成连通性测试，不含真实案情或个人资料。请只回复：Ubuntu 数字人合成测试完成。"}]}
+### Response Headers
+- cache-control:no-cache, no-transform
+- connection:keep-alive
+- content-type:text/plain; charset=utf-8
+- date:Fri, 30 Oct 2026 15:05:30 GMT
+- keep-alive:timeout=5
+- transfer-encoding:chunked
+- x-accel-buffering:no
+### Response Body
+Ubuntu 数字人合成测试完成。
+
+Embedded digital synthetic request
+
+Emulating viewport: {"deviceScaleFactor":1,"isMobile":false,"hasTouch":false,"isLandscape":false,"width":1440,"height":900}
+## Request http://192.168.110.81:8089/api/chat/
+Status: 200
+### Request Headers
+- user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36
+- content-type:application/json
+- referer:http://192.168.110.81:8089/?embed=1
+- accept:*/*
+- accept-encoding:gzip, deflate
+- accept-language:zh-CN,zh;q=0.9
+- connection:keep-alive
+- content-length:155
+- host:192.168.110.81:8089
+- origin:http://192.168.110.81:8089
+### Request Body
+{"messages":[{"role":"user","content":"合成嵌入测试，不含真实案情或个人资料。请只回复：Ubuntu 嵌入窗口合成测试完成。"}]}
+### Response Headers
+- cache-control:no-cache, no-transform
+- connection:keep-alive
+- content-type:text/plain; charset=utf-8
+- date:Fri, 30 Oct 2026 15:07:35 GMT
+- keep-alive:timeout=5
+- transfer-encoding:chunked
+- x-accel-buffering:no
+### Response Body
+Ubuntu 嵌入窗口合成测试完成。

@@ -1,0 +1,12 @@
+{
+  "attempted": true,
+  "result": "access_denied",
+  "node_online": false,
+  "certificate_domains_advertised": false,
+  "certificate_created": false,
+  "private_key_created": false,
+  "tailnet_settings_changed": false,
+  "daemon_restarted": false,
+  "private_dns_or_account_information_published": false,
+  "public_trust_deployed": false
+}
