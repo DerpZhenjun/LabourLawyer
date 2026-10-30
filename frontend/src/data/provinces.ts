@@ -1,3 +1,5 @@
+import type {DocumentFieldDefinition,FormLimits,FormSchema} from '../../../packages/client-contracts/src/documents'
+export type {DocumentFieldDefinition,FormLimits} from '../../../packages/client-contracts/src/documents'
 import formSchema from '../../../config/document_forms.json' with {type:'json'}
 import officialCatalog from './provinceCatalog.json' with {type:'json'}
 
@@ -11,9 +13,6 @@ export interface ProvinceDefinition extends Omit<(typeof officialCatalog)[number
  city:string|undefined;committee:string|undefined;exampleCompany:string|undefined
 }
 export type Province=ProvinceDefinition
-export interface DocumentFieldDefinition {label:string;type:string;maxLength:number;options?:string[];rows?:number;placeholder?:string}
-export interface FormLimits {maxRequests:number;requestLength:number;factsLength:number;maxEvidence:number}
-interface FormSchema {applicationExtraFields:Record<string,string[][]>;evidenceExtraFields:Record<string,string[][]>;applicationSupportedFields:Record<string,string[]>;evidenceSupportedFields:Record<string,string[]>;limits:Record<string,FormLimits>&{default:FormLimits};fields:Record<string,DocumentFieldDefinition>}
 const typedSchema:FormSchema=formSchema
 
 const shortNames:Record<string,string> = {

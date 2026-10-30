@@ -18,3 +18,12 @@ for(const [name,content] of files){const output=new URL(name,root)
  else{mkdirSync(new URL('.',output),{recursive:true});writeFileSync(output,content)}
 }
 console.log(process.argv.includes('--check')?'PASS shared client runtimes and declarations match TypeScript':'Built shared client contracts for web, mini and digital proxy')
+
+// Provincial catalog DTO runtime is also compiled from portable TypeScript.
+const catalogSource=readFileSync(new URL('packages/client-contracts/src/documents.ts',root),'utf8').replace(/\r\n/g,'\n')
+const catalogOutput=ts.transpileModule(catalogSource,{compilerOptions:{target:ts.ScriptTarget.ES2020,module:ts.ModuleKind.CommonJS,strict:true}}).outputText.replace(/\r\n/g,'\n')
+const catalogBody='// Generated from packages/client-contracts/src/documents.ts. Do not edit.\n// source-sha256: '+createHash('sha256').update(catalogSource).digest('hex')+'\n'+catalogOutput
+for(const [name,content] of [['miniprogram/utils/generated/document-contracts.js',catalogBody],['miniprogram/utils/generated/document-contracts.d.ts',"export * from '../../../packages/client-contracts/src/documents'\n"]]){
+ const output=new URL(name,root)
+ if(process.argv.includes('--check')){if(!existsSync(output)||readFileSync(output,'utf8').replace(/\r\n/g,'\n')!==content)throw Error('Stale catalog runtime: '+name)}else writeFileSync(output,content)
+}
