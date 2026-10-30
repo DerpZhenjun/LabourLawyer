@@ -1,0 +1,21 @@
+{
+  "applicationId": "cn.labourlawyer.mobile.release",
+  "certificateSha256": "e5a8710026754f9ffdff9090d67adbda77c0e5817d6aa5951fd2d3e12ed4d0c4",
+  "keystoreSha256": "5fa8daa6969a2bf7769658893ed6ef3300d7b49db1ca37ec87e03bbb7723f8cc",
+  "identityCreated": false,
+  "credentialProtection": "Windows DPAPI CurrentUser",
+  "initialEncryptedBackupVerified": true,
+  "privateAclRestricted": true,
+  "storePublished": false,
+  "webContentsDebuggingEnabled": false,
+  "synchronizedWebFilesVerified": 87,
+  "webInputFingerprintSha256": "4a23d428f1a2da7fe7307714b19fa90f16614e5c368eb0ad96968a6bd7e19610",
+  "signingMaterialPackaged": false,
+  "androidVersionCode": 7,
+  "versionName": "1.2.0-preview.4",
+  "apkSha256": "a5060ce6be657e0113e33e525445ab12d30b7141067c1358fce595bdbd35182d",
+  "apkBytes": 3867222,
+  "releaseDebuggable": false,
+  "existingDebugApkUnchanged": true,
+  "validationOnly": true
+}

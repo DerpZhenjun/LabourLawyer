@@ -7,6 +7,8 @@ $dataPath = if ([IO.Path]::IsPathRooted($DataDirectory)) { [IO.Path]::GetFullPat
 # An explicit, existing directory is required; never silently choose another case database.
 if (!(Test-Path -LiteralPath $dataPath -PathType Container)) { throw 'The chosen existing data directory was not found.' }
 if (!(Test-Path -LiteralPath $pythonPath)) { throw 'Project Python environment was not found.' }
+. (Join-Path $PSScriptRoot 'public-service-settings.ps1')
+Import-PublicServiceSettings (Join-Path $projectRoot '.runtime/service-origins.json') $pythonPath | Out-Null
 $connections = @(Get-NetTCPConnection -LocalPort 8000 -State Listen -ErrorAction SilentlyContinue)
 $owners = @($connections.OwningProcess | Sort-Object -Unique)
 if ($owners.Count -ne 1) { throw 'Expected one existing backend on port 8000. No process was changed.' }

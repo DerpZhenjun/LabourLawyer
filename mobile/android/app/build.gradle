@@ -1,4 +1,23 @@
+import groovy.json.JsonSlurper
+import groovy.json.JsonOutput
+
 apply plugin: 'com.android.application'
+
+// Release identity and secrets are provided only by the private signing helper.
+// Debug retains its original package and the Android debug signing identity.
+def independentReleaseSigning = [
+    store: System.getenv('LABOURLAWYER_ANDROID_KEYSTORE'),
+    alias: System.getenv('LABOURLAWYER_ANDROID_KEY_ALIAS'),
+    storePassword: System.getenv('LABOURLAWYER_ANDROID_STORE_PASSWORD'),
+    keyPassword: System.getenv('LABOURLAWYER_ANDROID_KEY_PASSWORD')
+]
+def releaseSigningReady = independentReleaseSigning.values().every { it != null && !it.trim().isEmpty() }
+gradle.taskGraph.whenReady { graph ->
+    if (graph.allTasks.any { it.project == project && it.name.toLowerCase().contains('release') } && !releaseSigningReady) {
+        throw new GradleException('Independent release signing credentials are missing. Use scripts/build-signed-android.ps1; no unsigned or debug-signed release is allowed.')
+    }
+}
+
 
 android {
     namespace = "cn.labourlawyer.mobile"
@@ -7,8 +26,8 @@ android {
         applicationId "cn.labourlawyer.mobile"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 6
-        versionName "1.2.0-preview.3"
+        versionCode 7
+        versionName "1.2.0-preview.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
@@ -16,8 +35,22 @@ android {
             ignoreAssetsPattern = '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
         }
     }
+    signingConfigs {
+        independentRelease {
+            if (releaseSigningReady) {
+                storeFile file(independentReleaseSigning.store)
+                storeType 'PKCS12'
+                storePassword independentReleaseSigning.storePassword
+                keyAlias independentReleaseSigning.alias
+                keyPassword independentReleaseSigning.keyPassword
+            }
+        }
+    }
     buildTypes {
         release {
+            applicationIdSuffix '.release'
+            debuggable false
+            signingConfig signingConfigs.independentRelease
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
@@ -51,4 +84,37 @@ try {
     }
 } catch(Exception e) {
     logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
+}
+
+
+// A generated release-only overlay prevents the debug WebView setting and base
+// app identity in capacitor.config.ts from leaking into the signed variant.
+abstract class GenerateIndependentReleaseCapacitorConfig extends DefaultTask {
+    @InputFile
+    @PathSensitive(PathSensitivity.RELATIVE)
+    abstract RegularFileProperty getSourceConfig()
+
+    @OutputDirectory
+    abstract DirectoryProperty getOutputDirectory()
+
+    @TaskAction
+    void generate() {
+        def config = new JsonSlurper().parse(sourceConfig.get().asFile)
+        config.appId = 'cn.labourlawyer.mobile.release'
+        config.appName = 'LabourLawyer 独立签名预览'
+        config.android = config.android ?: [:]
+        config.android.webContentsDebuggingEnabled = false
+        def directory = outputDirectory.get().asFile
+        directory.mkdirs()
+        new File(directory, 'capacitor.config.json').setText(JsonOutput.prettyPrint(JsonOutput.toJson(config)), 'UTF-8')
+    }
+}
+androidComponents {
+    onVariants(selector().withBuildType('release')) { variant ->
+        def generated = tasks.register('generateIndependentReleaseCapacitorConfig', GenerateIndependentReleaseCapacitorConfig) {
+            sourceConfig.set(layout.projectDirectory.file('src/main/assets/capacitor.config.json'))
+            outputDirectory.set(layout.buildDirectory.dir('generated/independentReleaseCapacitorConfig'))
+        }
+        variant.sources.assets.addGeneratedSourceDirectory(generated, { task -> task.outputDirectory })
+    }
 }

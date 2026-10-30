@@ -1,0 +1,48 @@
+{
+  "deviceInstalled": false,
+  "release": {
+    "certificateSha256": "e5a8710026754f9ffdff9090d67adbda77c0e5817d6aa5951fd2d3e12ed4d0c4",
+    "versionCode": 7,
+    "applicationId": "cn.labourlawyer.mobile.release",
+    "label": "LabourLawyer 独立签名预览",
+    "debuggable": false,
+    "versionName": "1.2.0-preview.4",
+    "signatureSchemes": [
+      "Verified using v1 scheme (JAR signing): false",
+      "Verified using v2 scheme (APK Signature Scheme v2): true",
+      "Verified using v3 scheme (APK Signature Scheme v3): false",
+      "Verified using v3.1 scheme (APK Signature Scheme v3.1): false",
+      "Verified using v4 scheme (APK Signature Scheme v4): false"
+    ],
+    "signatureVerified": true,
+    "apkSha256": "a5060ce6be657e0113e33e525445ab12d30b7141067c1358fce595bdbd35182d"
+  },
+  "debug": {
+    "certificateSha256": "f3cc31f69511fcf58afe95c3e091aead2e8215497a39c9a32ad5c5242d7ef853",
+    "versionCode": 6,
+    "applicationId": "cn.labourlawyer.mobile",
+    "label": "LabourLawyer 劳动仲裁助手",
+    "debuggable": true,
+    "versionName": "1.2.0-preview.3",
+    "signatureSchemes": [
+      "Verified using v1 scheme (JAR signing): false",
+      "Verified using v2 scheme (APK Signature Scheme v2): true",
+      "Verified using v3 scheme (APK Signature Scheme v3): false",
+      "Verified using v3.1 scheme (APK Signature Scheme v3.1): false",
+      "Verified using v4 scheme (APK Signature Scheme v4): false"
+    ],
+    "signatureVerified": true,
+    "apkSha256": "98f8656c07d1967924a78172f1d8934edbc8f3e1efda55c1ffbcdbabcceebc8d"
+  },
+  "authorizedDeviceCount": 0,
+  "storePublished": false,
+  "signingPasswordFoundInOperationLogs": false,
+  "sourceHashes": {
+    "mobile/android/app/build.gradle": "0ce740eca92b7669ffadd83d458c2c2f4dcee70d6f446e98b873f4eb70496cc4",
+    "scripts/build-signed-android.ps1": "533e28336147dcaf85aac1057adaf84799d90c3c65cb79c3ab6cb402fa396a0c",
+    "reports/overnight-gap-closure-20261030/android/test-signing-guards.ps1": "24f9509157940e0e7c8c68f50e5e341203226645d8d3a46ba4f7d22f46bfc511",
+    "mobile/android/app/src/release/res/values/strings.xml": "6045713abd013628792b00d27452445ff8a3ae2c6ccccb7e4c5ae12f074b4ab5"
+  },
+  "validationOnly": true,
+  "originalDebugApkUnchanged": true
+}

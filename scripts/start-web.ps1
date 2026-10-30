@@ -88,6 +88,12 @@ $npmCommand = Get-Command npm.cmd -ErrorAction SilentlyContinue
 if (-not $npmCommand) {
     throw "Node.js/npm was not found. Install Node.js 20 or newer."
 }
+. (Join-Path $PSScriptRoot 'public-service-settings.ps1')
+$configuredDigitalOrigin=Import-PublicServiceSettings (Join-Path $runtimeDir 'service-origins.json') $pythonExe
+if($configuredDigitalOrigin){
+    $WithDigitalHuman=$false
+    Write-Host '[OK] Using configured digital service; no Windows digital service will be started.' -ForegroundColor Green
+}
 
 if (Test-Path -LiteralPath (Join-Path $runtimeDir 'remote-ai\settings.json')) {
     try { & (Join-Path $PSScriptRoot 'start-remote-ai.ps1') }
@@ -187,6 +193,7 @@ Write-Host "LabourLawyer is ready:" -ForegroundColor Green
 Write-Host "  Web:  http://127.0.0.1:5173"
 Write-Host "  API:  http://127.0.0.1:8000/docs"
 if ($WithDigitalHuman) { Write-Host "  Digital human: http://127.0.0.1:3000" }
+elseif($configuredDigitalOrigin){Write-Host "  Digital human: $configuredDigitalOrigin"}
 Write-Host "  Logs: $runtimeDir"
 Write-Host "  Stop: start.bat stop (HOME > 3 STOP)"
 

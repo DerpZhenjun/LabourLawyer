@@ -1,5 +1,5 @@
 // Generated from config/client-release.json. Do not edit.
 module.exports = {
-  "version": "1.2.0-preview.3",
+  "version": "1.2.0-preview.4",
   "channel": "preview"
 }
