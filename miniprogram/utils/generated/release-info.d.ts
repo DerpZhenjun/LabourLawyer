@@ -1,3 +1,3 @@
 // Generated from config/client-release.json. Do not edit.
-declare const release: {readonly version:"1.2.0-preview.4";readonly channel:"preview"}
+declare const release: {readonly version:"1.2.0-preview.5";readonly channel:"preview"}
 export = release

@@ -8,7 +8,7 @@ function connectionRequest(payload){
 contextBridge.exposeInMainWorld('labourLawyerDesktop', Object.freeze({
   platform: process.platform,
   desktop: true,
-  version: '1.2.0-preview.4',
+  version: '1.2.0-preview.5',
   bundledBackend: false,
   bundledModel: false,
   connection: Object.freeze({
