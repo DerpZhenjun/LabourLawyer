@@ -1,5 +1,6 @@
 <template>
   <div class="page dashboard-page">
+    <p v-if="storageIssue" role="status">{{ storageIssue }}</p>
     <section class="welcome-row">
       <div>
         <p class="date-line">{{ today }} · 工作进度已同步</p>
@@ -58,12 +59,12 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue'
 import { RouterLink } from 'vue-router'
 import { useWorkspace } from '@/composables/useWorkspace'
 
-const { activeCases, totalAmount } = useWorkspace()
+const { activeCases, totalAmount, storageIssue } = useWorkspace()
 const today = new Intl.DateTimeFormat('zh-CN', { month: 'long', day: 'numeric', weekday: 'long' }).format(new Date())
 const metrics = computed(() => [
   { label: '进行中案件', value: activeCases.value.length, note: '较上月新增 2 件', icon: 'fa-solid fa-briefcase', tone: 'teal' },

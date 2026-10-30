@@ -1,0 +1,30 @@
+{
+  "status": "OBSERVED_BEFORE_FIX",
+  "observations": [
+    {
+      "case": "saved_amount_unknown_boundary",
+      "actual": "string amount reached numeric rendering",
+      "expected": "only validated numeric saved cases reach page rendering",
+      "green": "PASS"
+    },
+    {
+      "case": "malformed_json_fallback_notice",
+      "actual": "example fallback not explicitly identified in the read-error notice",
+      "expected": "notice states examples are displayed and original bytes unchanged",
+      "green": "PASS"
+    },
+    {
+      "case": "dashboard_fallback_consumer_notice",
+      "actual": "dashboard did not display the protected-storage fallback notice",
+      "expected": "all three case-consuming pages show the notice",
+      "green": "PASS"
+    },
+    {
+      "case": "denied_global_storage_getter",
+      "actual": "empty initial storage notice",
+      "expected": "immediate fallback-example notice without writes",
+      "green": "PASS"
+    }
+  ],
+  "private_traces": "Complete diagnostic traces retained only in local runtime scratch storage."
+}

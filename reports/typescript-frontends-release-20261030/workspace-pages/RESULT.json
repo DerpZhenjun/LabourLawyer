@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "strict_sfc_compilation": "PASS",
+  "sfc_count": 8,
+  "typed_modules": 2,
+  "type_evidence": {
+    "positive": "PASS",
+    "rejected_counterexamples": [
+      {
+        "name": "boolean-amount",
+        "codes": [
+          2322
+        ]
+      },
+      {
+        "name": "numeric-client",
+        "codes": [
+          2322
+        ]
+      },
+      {
+        "name": "unbound-input-key",
+        "codes": [
+          2353
+        ]
+      },
+      {
+        "name": "storage-must-return-text",
+        "codes": [
+          2322
+        ]
+      },
+      {
+        "name": "unchecked-unknown-snapshot",
+        "codes": [
+          2531,
+          2532
+        ]
+      },
+      {
+        "name": "incomplete-report",
+        "codes": [
+          2740
+        ]
+      },
+      {
+        "name": "incomplete-workflow",
+        "codes": [
+          2740
+        ]
+      },
+      {
+        "name": "unknown-stays-unknown",
+        "codes": [
+          18046
+        ]
+      },
+      {
+        "name": "unchecked-case-index",
+        "codes": [
+          2532
+        ]
+      },
+      {
+        "name": "recent-document-stays-unknown",
+        "codes": [
+          2571
+        ]
+      }
+    ]
+  },
+  "runtime_regressions": [
+    "invalid and partially malformed saved JSON never overwrites the original",
+    "valid local cases, examples, totals and unrelated saved keys are preserved",
+    "storage write failure stays in memory without a render exception",
+    "unknown portal and workflow responses are rejected before template iteration",
+    "mounted case search, stage filters, creation and cancel retain the existing workflow",
+    "mounted example pages render without touching a case service",
+    "mounted malformed-storage notice explains that the original saved bytes are preserved",
+    "mounted locality workspace never inherits a neighboring template and handles late guide arrival",
+    "mounted district workflow ignores stale responses and unsafe links",
+    "mounted document lists preserve explicit collection and download payloads with isolated transport",
+    "mounted malformed report lists show the existing recoverable service messages",
+    "mounted document list does not reschedule polling after pending responses resolve following unmount"
+  ],
+  "real_user_storage_read": false,
+  "live_transport_used": false,
+  "script_sha256": "08093e1de55d0c34aa7a4acbdc701f6d05aaba7a6d24d2d5f46e6dc369add3f7",
+  "sources": [
+    {
+      "file": "frontend/src/views/Dashboard.vue",
+      "sha256": "95657bc63ebc491d1e6f892a1ef27dbf6b995770b9bad9e9a6e19defd9cca539"
+    },
+    {
+      "file": "frontend/src/views/CaseCenter.vue",
+      "sha256": "32a8573e7b1a32f244966e4d86b4d090027e7e58250eef218933455f2dfe0616"
+    },
+    {
+      "file": "frontend/src/views/DeadlineCenter.vue",
+      "sha256": "70c975aca2c3468ff4f8ccd0adf67f0e35618a2994c9b0097711b54f497471da"
+    },
+    {
+      "file": "frontend/src/views/DocumentCenter.vue",
+      "sha256": "3d3f7e8dd350037658453f9029e7e4d2c91cf0ce5a096477bcbc120854e7170e"
+    },
+    {
+      "file": "frontend/src/views/EvidenceCenter.vue",
+      "sha256": "0f584751dc0b2ddb1fa821e630035cc98d51e164d03abb72f306f1dae5c458bc"
+    },
+    {
+      "file": "frontend/src/views/KnowledgeCenter.vue",
+      "sha256": "8c659bcf5fb3ae7f357f5323cf42aa41d5dc6560dfb06ee2a71dedc8fd324741"
+    },
+    {
+      "file": "frontend/src/components/DocumentWorkspace.vue",
+      "sha256": "e15ac0e980301bd2bc1de2b7f499490e764fa92b5175d253c7c9bd7d0d865b27"
+    },
+    {
+      "file": "frontend/src/components/DistrictWorkflow.vue",
+      "sha256": "0198c440a4b53f3d85b80ba50edd940e6f77eec2b39eb2c7cde2201383d06bcf"
+    },
+    {
+      "file": "frontend/src/composables/useWorkspace.ts",
+      "sha256": "33ece97bef6bf39f6d9de126f95c7b3b5d9c4daa4e37869c8473290888db5f9c"
+    },
+    {
+      "file": "packages/regional-contracts/src/workspace.ts",
+      "sha256": "a2a06cceb620d8c6bbc08ae7fe1c4f8627a175cd1f785c8752b26b7aa88819a9"
+    },
+    {
+      "file": "frontend/src/composables/useWorkspace.js",
+      "sha256": "7a13dc185de7e855c25c2d754903c2983a6e79e2275f26bf7cc960d0c1a39c00"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Owned administration/workspace strict TypeScript and isolated synthetic storage/transport/mounted checks",
+  "initial_project_baseline": {
+    "status": "PASS",
+    "scope": "Earlier narrow project include only; not proof for all owned SFCs"
+  },
+  "additional_storage_modes": {
+    "malformed_saved_json": "PASS",
+    "denied_global_storage_getter": "PASS"
+  },
+  "blocking_issues": [],
+  "external_gates_not_run": [
+    "real Chrome responsive and interaction acceptance",
+    "Android packaging/signing/device acceptance",
+    "broad release integration and publication"
+  ],
+  "implementation_boundaries": {
+    "backend_case_service_added": false,
+    "invalid_saved_data_cleared": false,
+    "unsupported_saved_data_overwritten": false,
+    "valid_unrelated_saved_metadata_preserved": true,
+    "legacy_js_compatibility": true,
+    "shared_index_or_generated_cjs_changed": false,
+    "project_config_changed": false,
+    "backend_or_source_bundle_changed": false,
+    "live_database_access": false,
+    "service_operations": false,
+    "model_calls": false,
+    "git_operations": false
+  }
+}

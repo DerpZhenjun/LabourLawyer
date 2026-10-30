@@ -15,14 +15,16 @@
     <KeepAlive :max="6"><component v-if="editor" :is="editor" :key="editorKey" v-bind="editorProps" /></KeepAlive>
   </section>
 </template>
-<script setup>
+<script setup lang="ts">
 import {computed,defineAsyncComponent,ref} from 'vue'
 import {RouterLink} from 'vue-router'
-const props=defineProps({region:{type:Object,required:true},province:Object,guide:Object,loading:Boolean,error:String})
+import type {DocumentKind,Region,RegionalGuide} from '../../../packages/regional-contracts/src/index'
+interface WorkspaceProvince {officialName?:string;scope?:string;officialUrl?:string;hasApplication?:boolean;hasEvidence?:boolean}
+const props=withDefaults(defineProps<{region:Region;province?:WorkspaceProvince|null|undefined;guide?:RegionalGuide|null|undefined;loading?:boolean;error?:string}>(),{loading:false,error:''})
 const Application=defineAsyncComponent(()=>import('@/views/Zhejiang/LA.vue'))
 const Evidence=defineAsyncComponent(()=>import('@/views/Zhejiang/EL.vue'))
 const Regional=defineAsyncComponent(()=>import('@/views/RegionalDocument.vue'))
-const kind=ref('application'),kinds=[{kind:'application',label:'仲裁申请书',icon:'fa-regular fa-file-lines'},{kind:'evidence',label:'证据清单',icon:'fa-solid fa-list-check'}]
+const kind=ref<DocumentKind>('application'),kinds:{kind:DocumentKind;label:string;icon:string}[]=[{kind:'application',label:'仲裁申请书',icon:'fa-regular fa-file-lines'},{kind:'evidence',label:'证据清单',icon:'fa-solid fa-list-check'}]
 const localTemplate=computed(()=>props.guide?.templates?.find(t=>t.can_generate&&t.document_types.includes(kind.value)))
 const hasSelectedPlace=computed(()=>Boolean(props.region.city?.trim()||props.region.district?.trim()))
 const legacyAvailable=computed(()=>kind.value==='application'?props.province?.hasApplication:props.province?.hasEvidence)

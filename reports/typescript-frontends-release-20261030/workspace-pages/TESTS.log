@@ -1,0 +1,16 @@
+PASS invalid and partially malformed saved JSON never overwrites the original
+PASS valid local cases, examples, totals and unrelated saved keys are preserved
+PASS storage write failure stays in memory without a render exception
+PASS unknown portal and workflow responses are rejected before template iteration
+PASS mounted case search, stage filters, creation and cancel retain the existing workflow
+PASS mounted example pages render without touching a case service
+PASS mounted malformed-storage notice explains that the original saved bytes are preserved
+PASS mounted locality workspace never inherits a neighboring template and handles late guide arrival
+PASS mounted district workflow ignores stale responses and unsafe links
+PASS mounted document lists preserve explicit collection and download payloads with isolated transport
+PASS mounted malformed report lists show the existing recoverable service messages
+PASS mounted document list does not reschedule polling after pending responses resolve following unmount
+PASS workspace pages: 8 typed SFCs (compilation PASS), 2 typed modules, 10 rejected type counterexamples, 12 isolated runtime/mounted regressions
+
+PASS invalid saved JSON is isolated without overwriting its original bytes
+PASS denied storage getter shows fallback examples without writing

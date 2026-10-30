@@ -4,8 +4,9 @@
       <div><h1>案件中心</h1><p>将案情、证据、诉求和关键时限放在同一个工作区。</p></div>
       <button class="primary-action" @click="showCreate = true"><i class="fa-solid fa-plus"></i> 新建案件</button>
     </div>
+    <p v-if="storageIssue" role="status">{{ storageIssue }}</p>
     <div class="filter-bar panel">
-      <label class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input v-model="query" data-global-search placeholder="搜索案件号、当事人或单位"></label>
+      <label class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input v-model="query" data-global-search="" placeholder="搜索案件号、当事人或单位"></label>
       <div class="filter-tabs">
         <button v-for="item in stages" :key="item" :class="{ active: stage === item }" @click="stage = item">{{ item }}</button>
       </div>
@@ -36,6 +37,7 @@
       <form class="create-modal" @submit.prevent="createCase">
         <div class="modal-head"><div><small>第一步，共三步</small><h2>建立案件档案</h2></div><button type="button" @click="closeCreate"><i class="fa-solid fa-xmark"></i></button></div>
         <p class="modal-note"><i class="fa-solid fa-lock"></i> 先记录最少信息，之后可在案件中继续补充。</p>
+        <p v-if="createError" class="modal-note" role="alert">{{ createError }}</p>
         <div class="form-grid">
           <label class="wide">争议类型<span>*</span><select v-model="form.title" required><option disabled value="">请选择</option><option>工资及加班费争议</option><option>违法解除劳动合同</option><option>未签劳动合同双倍工资</option><option>工伤待遇争议</option><option>社会保险争议</option></select></label>
           <label>申请人<input v-model="form.client" required placeholder="例如：张某"></label>
@@ -50,22 +52,24 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed, reactive, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useWorkspace } from '@/composables/useWorkspace'
-const { state, activeCases, addCase } = useWorkspace()
+import type {NewCaseInput} from '@/composables/useWorkspace'
+const { state, activeCases, addCase, storageIssue } = useWorkspace()
 const route = useRoute(); const router = useRouter()
 const query = ref(''); const stage = ref('全部'); const showCreate = ref(route.query.new === '1')
 const stages = ['全部', '案情梳理', '材料准备', '待提交', '审理中', '已结案']
-const form = reactive({ title: '', client: '', employer: '', region: '浙江·杭州', amount: '', deadline: '' })
+const createError=ref('')
+const form = reactive<Required<NewCaseInput>>({ title: '', client: '', employer: '', region: '浙江·杭州', amount: '', deadline: '' })
 const filtered = computed(() => state.cases.filter(item => {
   const text = `${item.id}${item.title}${item.client}${item.employer}${item.region}`.toLowerCase()
   return (stage.value === '全部' || item.stage === stage.value) && text.includes(query.value.toLowerCase())
 }))
 watch(() => route.query.new, value => { if (value === '1') showCreate.value = true })
 const closeCreate = () => { showCreate.value = false; if (route.query.new) router.replace('/admin/cases') }
-const createCase = () => { addCase(form); closeCreate(); Object.assign(form, { title:'', client:'', employer:'', region:'浙江·杭州', amount:'', deadline:'' }) }
+const createCase = () => { const result=addCase(form);if(!result.ok){createError.value=result.error;return};createError.value='';closeCreate(); Object.assign(form, { title:'', client:'', employer:'', region:'浙江·杭州', amount:'', deadline:'' }) }
 </script>
 
 <style scoped>

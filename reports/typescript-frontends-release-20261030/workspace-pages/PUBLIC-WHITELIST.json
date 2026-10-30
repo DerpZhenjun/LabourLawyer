@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "scope": "Exact owned workspace source and public verification files",
+  "self_excluded": true,
+  "files": [
+    {
+      "file": "frontend/src/views/Dashboard.vue",
+      "sha256": "95657bc63ebc491d1e6f892a1ef27dbf6b995770b9bad9e9a6e19defd9cca539",
+      "bytes": 10696
+    },
+    {
+      "file": "frontend/src/views/CaseCenter.vue",
+      "sha256": "32a8573e7b1a32f244966e4d86b4d090027e7e58250eef218933455f2dfe0616",
+      "bytes": 9202
+    },
+    {
+      "file": "frontend/src/views/DeadlineCenter.vue",
+      "sha256": "70c975aca2c3468ff4f8ccd0adf67f0e35618a2994c9b0097711b54f497471da",
+      "bytes": 4477
+    },
+    {
+      "file": "frontend/src/views/DocumentCenter.vue",
+      "sha256": "3d3f7e8dd350037658453f9029e7e4d2c91cf0ce5a096477bcbc120854e7170e",
+      "bytes": 17191
+    },
+    {
+      "file": "frontend/src/views/EvidenceCenter.vue",
+      "sha256": "0f584751dc0b2ddb1fa821e630035cc98d51e164d03abb72f306f1dae5c458bc",
+      "bytes": 6753
+    },
+    {
+      "file": "frontend/src/views/KnowledgeCenter.vue",
+      "sha256": "8c659bcf5fb3ae7f357f5323cf42aa41d5dc6560dfb06ee2a71dedc8fd324741",
+      "bytes": 6035
+    },
+    {
+      "file": "frontend/src/components/DocumentWorkspace.vue",
+      "sha256": "e15ac0e980301bd2bc1de2b7f499490e764fa92b5175d253c7c9bd7d0d865b27",
+      "bytes": 7330
+    },
+    {
+      "file": "frontend/src/components/DistrictWorkflow.vue",
+      "sha256": "0198c440a4b53f3d85b80ba50edd940e6f77eec2b39eb2c7cde2201383d06bcf",
+      "bytes": 3767
+    },
+    {
+      "file": "frontend/src/composables/useWorkspace.ts",
+      "sha256": "33ece97bef6bf39f6d9de126f95c7b3b5d9c4daa4e37869c8473290888db5f9c",
+      "bytes": 4400
+    },
+    {
+      "file": "packages/regional-contracts/src/workspace.ts",
+      "sha256": "a2a06cceb620d8c6bbc08ae7fe1c4f8627a175cd1f785c8752b26b7aa88819a9",
+      "bytes": 7070
+    },
+    {
+      "file": "frontend/src/composables/useWorkspace.js",
+      "sha256": "7a13dc185de7e855c25c2d754903c2983a6e79e2275f26bf7cc960d0c1a39c00",
+      "bytes": 34
+    },
+    {
+      "file": "scripts/test-workspace-page-types.mjs",
+      "sha256": "08093e1de55d0c34aa7a4acbdc701f6d05aaba7a6d24d2d5f46e6dc369add3f7",
+      "bytes": 24009
+    },
+    {
+      "file": "reports/typescript-frontends-release-20261030/workspace-pages/README.md",
+      "sha256": "362afdedbbba81fcdf94bdaf77f38917b42ee4d7660f120a06391dfdf254c02d",
+      "bytes": 3733
+    },
+    {
+      "file": "reports/typescript-frontends-release-20261030/workspace-pages/RESULT.json",
+      "sha256": "84c6f4865c83eb54b39e96028d0f4bde8c4a51388f67d4343eb3faabb4f74932",
+      "bytes": 5278
+    },
+    {
+      "file": "reports/typescript-frontends-release-20261030/workspace-pages/RED.json",
+      "sha256": "57256e0f627800415b6ca233c86afe8b1d53d205bd47bf42fe61872664a06027",
+      "bytes": 1072
+    },
+    {
+      "file": "reports/typescript-frontends-release-20261030/workspace-pages/TESTS.log",
+      "sha256": "248f7f9df2b1011016998c228c73e23494b330959ad2c23359895f639c0534b5",
+      "bytes": 1310
+    }
+  ]
+}
