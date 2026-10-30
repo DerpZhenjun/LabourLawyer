@@ -62,6 +62,7 @@ TESTS = (
     'test_regional_public_receipts',
     'test_portal_audit_write_json',
     'test_deployment',
+    'test_main_desktop_cors',
 )
 NODE_FIXTURES = {
     (ROOT / 'scripts/test-document-clients.cjs').resolve(),

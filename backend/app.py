@@ -29,6 +29,7 @@ from system_routes import router as system_router, health
 from routes.auth import router as auth_router
 from routes.official_collector import router as official_collector_router
 from service_capabilities import router as service_capabilities_router
+from deployment_app import DESKTOP_LOOPBACK_ORIGIN
 
 try:
     from routes.Zhejiang.la import router as zj_la_router
@@ -61,6 +62,7 @@ origins = [item.strip() for item in os.getenv(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
+    allow_origin_regex=DESKTOP_LOOPBACK_ORIGIN,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
