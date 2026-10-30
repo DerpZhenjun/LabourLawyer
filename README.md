@@ -12,9 +12,9 @@
 
 ## 软件下载（预览版）
 
-[下载 Android / Windows / Ubuntu：v1.2.0-preview.4](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.4)
+[下载 Android / Windows / Ubuntu：v1.2.0-preview.5](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.5)
 
-新版提供 Android APK、Windows x64 安装版和便携版，以及包含网页/API与已核验公开原件的Ubuntu部署包。客户端通过连接设置选择已部署后端或本机服务，不能单独离线生成文书。AI连接Ubuntu Qwen3.8，不在Windows运行模型；不表示全国区县全部接入。下载后逐项核对 `SHA256SUMS.txt`，详见[新版说明](docs/releases/v1.2.0-preview.4.md)及[9附件匿名下载校验](reports/overnight-gap-closure-20261030/release/PUBLIC-DOWNLOADS.json)。Android提供保留原包名和旧调试签名的兼容版，以及包名独立、关闭调试的新签名预览版；两者数据不自动互通，不卸载旧应用。Windows未代码签名；USB未发现设备，未声明实体手机已更新。
+新版提供 Android APK、Windows x64 安装版和便携版，以及包含网页/API与已核验公开原件的Ubuntu部署包。客户端通过连接设置选择已部署后端或本机服务，不能单独离线生成文书。AI连接Ubuntu Qwen3.8，不在Windows运行模型；不表示全国区县全部接入。下载后逐项核对 `SHA256SUMS.txt`，详见[新版说明](docs/releases/v1.2.0-preview.5.md)及[9附件匿名下载校验](reports/overnight-gap-closure-20261030/release-preview5/PUBLIC-DOWNLOADS.json)。Android提供保留原包名和旧调试签名的兼容版，以及包名独立、关闭调试的新签名预览版；两者数据不自动互通，不卸载旧应用。Windows未代码签名；USB未发现设备，未声明实体手机已更新。
 
 ## 账号、隔离与部署
 
@@ -83,7 +83,7 @@
 
 <img src="reports/overnight-gap-closure-20261030/localities/fujian-h/native-browser-v4/application-filled-1.png" width="320" alt="鼓楼自身官方空白表格填写结果，全部为虚构验收信息，签名留空" />
 
-台江、仓山随后分别按自身资料上线，Windows主站及Ubuntu运行站现为 **209份指南、192地填写生成**。两地材料份数分别保留为2份、1份；两处实际16份文书下载与已检查Word逐字节一致，375/768/1440布局、取消和来源切换通过。[台江与仓山验收](reports/overnight-gap-closure-20261030/localities/fujian-i/rollout-20261031/DEPLOYMENT-ACCEPTANCE.json)。其他新采集地区仍需完成独立验收及发布，不计入上线数量。Releases的preview.4初始Ubuntu快照为205/188；客户端连接已更新后端可使用新地区，后续发行包另行更新，不能把运行站更新当作安装包已经重发。
+台江、仓山随后分别按自身资料上线，Windows主站及Ubuntu运行站现为 **209份指南、192地填写生成**。两地材料份数分别保留为2份、1份；两处实际16份文书下载与已检查Word逐字节一致，375/768/1440布局、取消和来源切换通过。[台江与仓山验收](reports/overnight-gap-closure-20261030/localities/fujian-i/rollout-20261031/DEPLOYMENT-ACCEPTANCE.json)。其他新采集地区仍需完成独立验收及发布，不计入上线数量。Releases的preview.4初始Ubuntu快照为205/188；新的preview.5已发布209/192快照及九项软件文件，全部经匿名公开下载核对SHA。发行快照与后续运行站更新分别记录。
 
 ### 淳安：自身原件与逐页检查
 

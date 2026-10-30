@@ -1,6 +1,6 @@
 {
   "verified_at": "2026-10-30T21:55:01.500529+00:00",
-  "status": "PASS_BEFORE_PUBLICATION",
+  "status": "PASS_PUBLISHED_AND_ANONYMOUS_DOWNLOADS_VERIFIED",
   "client_source_commit": "61b712c8349896fbc2720bb7bf336c5fbdf14d70",
   "main_api_cors_fix_commit": "4793a8b8",
   "backend_clean_tests": {
@@ -43,5 +43,7 @@
   "public_trusted_https": false,
   "model_calls": 0,
   "screenshots": "NOT_CAPTURED_TOOL_RESTRICTION",
-  "published_release": false
+  "published_release": true,
+  "anonymous_public_files_verified": 9,
+  "release_tag": "v1.2.0-preview.5"
 }
