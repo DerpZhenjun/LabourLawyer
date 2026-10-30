@@ -1,6 +1,6 @@
 # TypeScript 与区县文书共享契约
 
-本轮是渐进迁移：保留 Vue 页面、Python 文书适配器及历史省级入口。Android 和桌面继续复用网页；没有重打包已经发布的预览安装包。
+迁移采用分批实施：保留 Vue 页面、Python 文书适配器及历史省级入口。Android 和桌面继续复用网页；没有重打包已经发布的预览安装包。
 
 ## 字段如何保持一致
 
@@ -15,9 +15,9 @@
 - 地区 API 客户端及 `useRegionalGuide`、`useRegionalForm`。
 - 江苏、浙江自身模板的字段模型、草稿组合函数和两个 Vue 字段组件。
 - 通用区县表单渲染器；原有湖南和肥东专用版式组件保留。
-- 区县页面仍采用现有 JavaScript 编排，旧模块以兼容入口重导出 TypeScript。其他旧页面后续逐步迁移。
+- 后续批次将区县页面、群众入口、管理页面与历史省级表单的脚本一起迁入 TypeScript。现有 34 个 Vue 文件均以严格类型与模板检查覆盖；旧模块保留兼容入口。
 
-选定 TypeScript 和 Vue 组件启用严格类型、严格模板及索引检查；旧 JavaScript 暂不强制全面检查。错误类型反例须实际被编译器拒绝，不用 `any` 或忽略注解代替迁移。
+选定 TypeScript 和 Vue 组件启用严格类型、严格模板及索引检查；兼容 JavaScript 入口与静态 JSON 保留，未用关闭严格检查代替页面迁移。错误类型反例须实际被编译器拒绝，不用 `any` 或忽略注解代替迁移。
 
 ## 小程序开发
 
@@ -49,3 +49,5 @@ python -m unittest backend.tests.test_regional_form_contracts -v
 ```
 
 契约校验使用虚构内容和独立临时数据库。实际测试范围、真实网页下载及模拟器限制见 [本轮验收](../reports/typescript-regional-contracts-20261030/TEST-REPORT.md)。区县覆盖数量仍为 202 份指南、185 地开放填写生成，本轮没有新增或修改官方来源。
+
+后续页面迁移与 Android 1.2.0-preview.1 的实际结果见 [发布验收](../reports/typescript-frontends-release-20261030/TEST-REPORT.md)。网页、Android 共用构建；AI 请求/远程状态由 `packages/client-contracts` 同源生成供微信与数字人代理使用。直接运行 TypeScript 测试，本轮使用 Node 24.19.0。

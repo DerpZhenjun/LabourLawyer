@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "backend": {
+    "tests": 712,
+    "skipped": 2,
+    "seconds": 524.674,
+    "command": "python -m unittest discover -s backend/tests -q"
+  },
+  "first_backend_run": {
+    "tests": 705,
+    "errors": 1,
+    "skipped": 2,
+    "reason": "Seven field regressions did not initialize because the old VM exporter parsed the new JS compatibility re-export as source. Fixed exporter imports the real typed API; all seven passed separately, then full 712 passed."
+  },
+  "vue_scripts": 34,
+  "strict_vue_typecheck": true,
+  "production_frontend_build": true,
+  "old_web_payload_comparison": 34,
+  "old_mini_payloads": 34,
+  "shared_ai_tests": "PASS: synthetic streams, no inference",
+  "windows_model_started": false,
+  "physical_android_test": "NOT_RUN: no adb device"
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "actual_routes_checked": 12,
+  "actual_document_downloads": 10,
+  "local_source_version_contract_id_checked": 8,
+  "province_downloads_checked": 2,
+  "zip_crc_and_xml": true,
+  "original_download": {
+    "bound_links": 5,
+    "bytes": 13376,
+    "sha256": "8dae42265086696071d6173f162d47c9fdd9bdf4782cf1c70d28779b5894277f",
+    "stale_version_http": 409
+  },
+  "responsive_widths": [
+    375,
+    768,
+    1440
+  ],
+  "horizontal_overflow": false,
+  "form_error_alerts": 0,
+  "assistant_native_click_escape_restores_focus": true,
+  "ai_status": "Ubuntu qwen3.8:27b ready, metadata only; no question sent",
+  "screenshots": [
+    "region-375.jpg",
+    "region-768.jpg"
+  ],
+  "desktop_screenshot": "NOT_SAVED: screenshot persistence call timed out; 1440 layout was inspected through live DOM metrics",
+  "production_user_data_accessed": false
+}

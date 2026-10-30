@@ -1,0 +1,82 @@
+[
+  {
+    "case": "guangdong-evidence",
+    "bytes": 10542,
+    "sha256": "25d4af3093eafe9b0c864d70f413413b8e413137a9af9eaa4b7f76f8bed6127b",
+    "zip_crc": "PASS",
+    "word_xml": "PASS",
+    "bound_source_checked": false
+  },
+  {
+    "case": "zhejiang-application",
+    "bytes": 27071,
+    "sha256": "41553c5255eaebde1f5fe121e6d03d4888d7aae43717cf7022de44b48eeb3bca",
+    "zip_crc": "PASS",
+    "word_xml": "PASS",
+    "bound_source_checked": false
+  },
+  {
+    "case": "吴江区-application",
+    "bytes": 12664,
+    "sha256": "4bbfa2a28560de08a589e3d0f9211df7a34e8d0fc1792b510e7a875a883299df",
+    "zip_crc": "PASS",
+    "word_xml": "PASS",
+    "bound_source_checked": true
+  },
+  {
+    "case": "吴江区-evidence",
+    "bytes": 11547,
+    "sha256": "e96be8d4feff4a3131231dc2f8dcc47ecf460a84d36c7d36bbef803a66ec91ae",
+    "zip_crc": "PASS",
+    "word_xml": "PASS",
+    "bound_source_checked": true
+  },
+  {
+    "case": "富阳区-application",
+    "bytes": 27486,
+    "sha256": "356d3eb7fca5971075c5099bd0b81b7f3c806f8820b9c2008b76d129de743974",
+    "zip_crc": "PASS",
+    "word_xml": "PASS",
+    "bound_source_checked": true
+  },
+  {
+    "case": "富阳区-evidence",
+    "bytes": 15759,
+    "sha256": "9afccba798b41e1c783427eae6efcd99c450b9bc42a272e86535b207c3f924a3",
+    "zip_crc": "PASS",
+    "word_xml": "PASS",
+    "bound_source_checked": true
+  },
+  {
+    "case": "建德市-application",
+    "bytes": 27486,
+    "sha256": "356d3eb7fca5971075c5099bd0b81b7f3c806f8820b9c2008b76d129de743974",
+    "zip_crc": "PASS",
+    "word_xml": "PASS",
+    "bound_source_checked": true
+  },
+  {
+    "case": "建德市-evidence",
+    "bytes": 15759,
+    "sha256": "9afccba798b41e1c783427eae6efcd99c450b9bc42a272e86535b207c3f924a3",
+    "zip_crc": "PASS",
+    "word_xml": "PASS",
+    "bound_source_checked": true
+  },
+  {
+    "case": "相城区-application",
+    "bytes": 12664,
+    "sha256": "4bbfa2a28560de08a589e3d0f9211df7a34e8d0fc1792b510e7a875a883299df",
+    "zip_crc": "PASS",
+    "word_xml": "PASS",
+    "bound_source_checked": true
+  },
+  {
+    "case": "相城区-evidence",
+    "bytes": 11547,
+    "sha256": "e96be8d4feff4a3131231dc2f8dcc47ecf460a84d36c7d36bbef803a66ec91ae",
+    "zip_crc": "PASS",
+    "word_xml": "PASS",
+    "bound_source_checked": true
+  }
+]

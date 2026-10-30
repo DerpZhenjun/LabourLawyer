@@ -12,9 +12,9 @@
 
 ## 软件下载（预览版）
 
-[下载 Android 和 Windows 客户端：v1.1.0-preview.2](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.1.0-preview.2)
+[下载新版 Android：v1.2.0-preview.1](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.1) · [Windows 预览版：v1.1.0-preview.2](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.1.0-preview.2)
 
-Android APK为USB联调包；Windows提供安装版和便携版。安装包包含该预览版的客户端界面，最新区县表单以当前网页源码为准，**后端和官方模板库仍需按本文启动**，AI连接Ubuntu Qwen3.8，不在Windows运行模型。它们不能单独离线生成文书，也不表示全国区县已经接入完成。下载后可用同页`SHA256SUMS.txt`核对文件；详细步骤和实际测试范围见[版本说明](docs/releases/v1.1.0-preview.2.md)。
+新版 Android APK 包含本轮 TypeScript 页面与区县表单，为 USB 联调包，签名与旧预览版相同。Windows 仍为上一版安装版和便携版，**后端和官方模板库仍需按本文启动**，AI连接Ubuntu Qwen3.8，不在Windows运行模型。它们不能单独离线生成文书，也不表示全国区县已经接入完成。下载后可用同页`SHA256SUMS.txt`核对文件；详细步骤和实际测试范围见 [Android 新版说明](docs/releases/v1.2.0-preview.1.md)；本轮 USB 设备列表为空，未声称已覆盖安装或完成手机真机验收。
 
 ## 从填写到提交
 
@@ -158,11 +158,11 @@ npm run dev -- --host 127.0.0.1
 
 ## TypeScript 与跨端字段
 
-地区 API、表单状态及江苏、浙江专用字段已开始迁移到严格 TypeScript。网页和小程序复用同一份运行时契约，字段从当地已核验模板适配器取得，并绑定地区、来源、版本和文书种类。切区立即清除旧结果，过期契约拒绝生成；旧省级入口保持兼容。
+34 个 Vue 文件的脚本及主入口、路由、地区目录、历史文书、管理工作区和助手状态已迁入 TypeScript，并通过全量严格类型及模板检查。网页和小程序复用同一份运行时契约，字段从当地已核验模板适配器取得，并绑定地区、来源、版本和文书种类。切区立即清除旧结果，过期契约拒绝生成；旧省级入口保持兼容。
 
 ![移动端区县证据清单](reports/typescript-regional-contracts-20261030/browser/form-375.jpg)
 
-这不是全站迁移完成，也没有增加全国覆盖数。开发、同步和测试命令见 [共享契约说明](docs/typescript-regional-contracts.md)，实测结果见 [本轮验收](reports/typescript-regional-contracts-20261030/TEST-REPORT.md)。
+保留必要的 JavaScript 兼容入口和静态 JSON，后台仍使用 Python；本轮没有增加全国覆盖数。新版 APK 和实际测试见 [本轮验收](reports/typescript-frontends-release-20261030/TEST-REPORT.md)。开发、同步和测试命令见 [共享契约说明](docs/typescript-regional-contracts.md)，实测结果见 [本轮验收](reports/typescript-regional-contracts-20261030/TEST-REPORT.md)。
 
 ## 开发与验证
 

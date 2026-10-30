@@ -1,0 +1,343 @@
+{
+  "status": "PASS",
+  "apk_bytes": 5005376,
+  "apk_sha256": "8aeec4c1ec078f61d1226f391aaf4b8ac04c1e4a5e5894c18d51517312d80407",
+  "embedded_frontend_files": 83,
+  "all_dist_files_byte_identical": true,
+  "zip_crc": "PASS",
+  "backend_models_or_private_database_packaged": false,
+  "frontend_manifest": [
+    {
+      "file": "favicon.svg",
+      "sha256": "bb051fdf0e7e7ecaed11a4f6a20978d422f1277407363a00535ceb5001ba5710"
+    },
+    {
+      "file": "index.html",
+      "sha256": "7b3b0463f6a81eecde923a3eabd7ab06bbfeb8a11db27c17bb00619b9e58b0f6"
+    },
+    {
+      "file": "llms.txt",
+      "sha256": "5b05e4d8ab77ab84468447e4d3958b67356c486da6dec1db76f6c955a70fa164"
+    },
+    {
+      "file": "manifest.webmanifest",
+      "sha256": "ce526d4989ea674db16016c77962a2bfd5773e4a67f1c7afa3d147cd03e871c6"
+    },
+    {
+      "file": "robots.txt",
+      "sha256": "fdcc55b31fb2185e7a564152f3ea0acff27c824300c8f6a1b18646f9fee11bdc"
+    },
+    {
+      "file": "vite.svg",
+      "sha256": "4a748afd443918bb16591c834c401dae33e87861ab5dbad0811c3a3b4a9214fb"
+    },
+    {
+      "file": "assets/CaseCenter-8M0MVFbV.js",
+      "sha256": "5d5c3a8ff37a29b8bec439ce12548831dc3277adff34365092e006bc3faa99eb"
+    },
+    {
+      "file": "assets/CaseCenter-k06Ulpew.css",
+      "sha256": "f52feef8dfa5c8a3376b35c3d486b296f7e1209042fc876ebeaa63690ffb4ce8"
+    },
+    {
+      "file": "assets/Dashboard-BsYsIAtl.js",
+      "sha256": "5fc803928af6352e672252cd412cca16397ec5c8d0a07c9d08f4769d08bef01e"
+    },
+    {
+      "file": "assets/Dashboard-COaoXjJV.css",
+      "sha256": "30ca3e555feba798c0c8a7ba8e301f550456bf490a6b5fa53805ef1574361cc4"
+    },
+    {
+      "file": "assets/DeadlineCenter-B6ou3dF3.js",
+      "sha256": "8eccab3906e323f8529dff821fe90d2c29d675d07f033e535cec39fe631220c1"
+    },
+    {
+      "file": "assets/DeadlineCenter-BTXqgp9I.css",
+      "sha256": "e5973baef4086e71663a3549cf00fcbb8f62703c1341587757ed93317d9f1cf2"
+    },
+    {
+      "file": "assets/DigitalLawyer-DK0ptaZE.js",
+      "sha256": "97c46e9424a0d03bebd2e898e0e9312a30c77ef8d4856c0afeec51834e5e9918"
+    },
+    {
+      "file": "assets/DigitalLawyer-DZ3JSC0w.css",
+      "sha256": "059a2ca2b67750414c88082cdfe64132e0874ca4a8c61ccbfa29ef007eebb9d0"
+    },
+    {
+      "file": "assets/DocumentCenter-DN3xu20O.js",
+      "sha256": "5c93bbc7b14e3781c97980611649821eb18e4483a298cdd661a55a9339edee03"
+    },
+    {
+      "file": "assets/DocumentCenter-DNJFW3Nj.css",
+      "sha256": "464c0b4f24cbfdccd7c24e34a09b155b70cc616714bb9771c0519521fb7925c9"
+    },
+    {
+      "file": "assets/downloadDocument-CUaiNaqE.js",
+      "sha256": "da68938851104b6e88911e5e344f5d19d38b66d037a4acd1ce98a91d1606ff56"
+    },
+    {
+      "file": "assets/EL-BJ2Ecdl2.js",
+      "sha256": "cc855e182bfa0d42dc264452b8f575fdf6e05987eb642b2f44fdbae76a4bc752"
+    },
+    {
+      "file": "assets/EvidenceCenter-CiRmgDf4.css",
+      "sha256": "ee4213a7908a7125e1e0e96090aa4e7f169edcd1b610bdd116ac1f94ecab28e8"
+    },
+    {
+      "file": "assets/EvidenceCenter-CkOkafHj.js",
+      "sha256": "f126dec85144be5a4a1b42abb42967e71dff7b5d1ffaaced03a2f02b9d8fceaa"
+    },
+    {
+      "file": "assets/fa-brands-400-BfBXV7Mm.woff2",
+      "sha256": "061dd5c333459ea42dba764617793fd6ea2d316b7ab644f157e4d2354dac02af"
+    },
+    {
+      "file": "assets/fa-regular-400-BVHPE7da.woff2",
+      "sha256": "81159a6b36876a5545555ae689144f074e2fc802d57d36f2c21bc6f3a12f4e48"
+    },
+    {
+      "file": "assets/fa-solid-900-8GirhLYJ.woff2",
+      "sha256": "bdd7887ef769948024a5cc37a018f19da6a9b355b4a09973836115e0d31ead55"
+    },
+    {
+      "file": "assets/GenerateConfirmation.vue_vue_type_script_setup_true_lang-Dj8Lpgot.js",
+      "sha256": "6f8d1e0b8876bd9df9955994778d943bcaa8bbdfc1b7f0ab569193452302aff0"
+    },
+    {
+      "file": "assets/http-BJRQlz4c.js",
+      "sha256": "dea72fc860ab73a315624bdb9742f91830925a85e3dcf1d6cc5c4b32b97950e6"
+    },
+    {
+      "file": "assets/index-BCn5QfZZ.js",
+      "sha256": "d940aca1258d91b044056b7af6fb7aaaa08659d1ad1833970834e7403949a86e"
+    },
+    {
+      "file": "assets/index-C5o-ibcs.js",
+      "sha256": "f786ea9cd65d0083b96c5c451930423e3bbaa0ffaccd182bed6546f143390641"
+    },
+    {
+      "file": "assets/index-DwyM-6PK.js",
+      "sha256": "2bf798e84c086ba83a27f991514273013206e66a88946539b451ac5ad6725694"
+    },
+    {
+      "file": "assets/index-RpckND7m.css",
+      "sha256": "2b2ff97b28ab2482d932fb556363931feb0a88fc648564739b8cc6c1c725a7d5"
+    },
+    {
+      "file": "assets/KnowledgeCenter-4Mb2ZP7W.css",
+      "sha256": "7ca97a751f5e1daee7afd7442b2244d16f243fe7f8f9f62fbf86907138caac17"
+    },
+    {
+      "file": "assets/KnowledgeCenter-B8FhaTcV.js",
+      "sha256": "fe1c8301e8d9a5d17c93118f3e86bb27542eb8d0602cbee3ad0b7184f383c4a8"
+    },
+    {
+      "file": "assets/LA-CuoMKdh5.js",
+      "sha256": "5522f872c05bd8fbd71b66454d49fbcf20d4aa5973817fe955e6b28fe16ba6fe"
+    },
+    {
+      "file": "assets/ProvinceGuide-BnQjrlS2.js",
+      "sha256": "671b50a744d7c3d8568397599d4e627ca0788a4eb2dff5a869be20926e7ed69c"
+    },
+    {
+      "file": "assets/ProvinceGuide-CAmMSvvs.css",
+      "sha256": "69f12d11535d58f943d111ce2938388f8c50646cf14b2806a6a6cb74f22b69ce"
+    },
+    {
+      "file": "assets/public-NUdcZmBR.js",
+      "sha256": "40ccce7b0342d2292d3d60c027fb5305aa98b6120b4137a81d93fd1ac313c79d"
+    },
+    {
+      "file": "assets/QA-DiUG6Qx-.js",
+      "sha256": "396a4156453d7840bb5cbed692eaa63ec24e0f19ede96e57712b838abe1726f8"
+    },
+    {
+      "file": "assets/QA-rZ-gNBxk.css",
+      "sha256": "1f19c40f56b0891e895a0a908fc436fd43107a3c17a9437c16c745631b9a6f01"
+    },
+    {
+      "file": "assets/regional-guide-A7yHUGv5.js",
+      "sha256": "a80e8f5283e0a201e90a7363490b07ed02339d31c737afda7f0572ac2a7dafb6"
+    },
+    {
+      "file": "assets/regional-guide-DHfXPNpo.css",
+      "sha256": "eeb08691043b7a2088917a16b3e5448e52ed809a804f54b5a324733b967d969b"
+    },
+    {
+      "file": "assets/RegionalCollection-CXBk1uu2.css",
+      "sha256": "481579b703340c84e20cfd29fa1498ec2bb43f44a3f996d0a28f0efbb09fab4c"
+    },
+    {
+      "file": "assets/RegionalCollection-GI-fXp5h.js",
+      "sha256": "3c6cc5f1c9b9a70513b25520a3aa0beb7f5b019eaa69028c2e4af5b527c38837"
+    },
+    {
+      "file": "assets/RegionalDocument-BI5avQJo.js",
+      "sha256": "6e9f49dad5879fc89860a91605ff0543be54e99544dabc1cc6f41d48f042ede2"
+    },
+    {
+      "file": "assets/RegionalDocument-Bvbrumu0.css",
+      "sha256": "4089fcde544901a59d782bcfed1e2effaa69ee848deabb65ddc73ddc12e5f232"
+    },
+    {
+      "file": "assets/RegionalGuide-6cC44BKX.js",
+      "sha256": "4eee3031685d591f21d9f9eb7121ef695683d9f2995e9379ef5e9ae88d7cad6a"
+    },
+    {
+      "file": "assets/RegionalGuide-FGJcOTLl.css",
+      "sha256": "a6f6fc2c2a8d9a9c5cab4be51d46b410c2970982bb3fb08b6c5ff3569d055fd9"
+    },
+    {
+      "file": "assets/useDialogFocus-yftbGHnl.js",
+      "sha256": "5de343fee7fcca1f3585a2b347ebe18d218eadf349ef45d5c0dd392d11d00f6d"
+    },
+    {
+      "file": "assets/useWorkspace-Dnk8ub1c.js",
+      "sha256": "844bddcfd8e3f80d32ab008c620c5e0751753c352d61ff587614a64465865f55"
+    },
+    {
+      "file": "assets/web-DWSCJi01.js",
+      "sha256": "fa68ac798cbd15808b53c37b79ce7c9ffa3b6394e30940af5a6981be9e063c59"
+    },
+    {
+      "file": "assets/web-m0DcUMkc.js",
+      "sha256": "ebc0e3ea392aca8b0353710df5064998837f1c477802e2bf8c7c77311ee66938"
+    },
+    {
+      "file": "assets/workspace-dRuy1aNY.js",
+      "sha256": "550b305ec590c324690c860f67f2ba56bc5e5673c0ef9233890fb22df6de1d9e"
+    },
+    {
+      "file": "brand/counsel-mark.svg",
+      "sha256": "5b97341f6b10f6abb4cfe0efdb1e7a4cc82162d4999a814881f0f11209930612"
+    },
+    {
+      "file": "brand/labourlawyer-mark.svg",
+      "sha256": "bb051fdf0e7e7ecaed11a4f6a20978d422f1277407363a00535ceb5001ba5710"
+    },
+    {
+      "file": "province-art/anhui.svg",
+      "sha256": "0011a35ce2e55df811ac6e69b9305657bf9a7572ba41e3adbcde5b0e7184866c"
+    },
+    {
+      "file": "province-art/beijing.svg",
+      "sha256": "ff9848f6ec8aefe886ea23d697fe0bf8b11e5e3700588da2cc96b1c347e486d6"
+    },
+    {
+      "file": "province-art/chongqing.svg",
+      "sha256": "d527416861bbfca419ab9709ff7e916fadb43022302dd8ede0172f0b14c57c39"
+    },
+    {
+      "file": "province-art/fujian.svg",
+      "sha256": "014b19a8ba3afcad6b18500529e4a1714e3045c4eab2b76becfe34fb01cca6bd"
+    },
+    {
+      "file": "province-art/gansu.svg",
+      "sha256": "ee5cf810911c4980c93ec5654dd07ebd0c43f0cd51bfff926bd7048171010281"
+    },
+    {
+      "file": "province-art/guangdong.svg",
+      "sha256": "cb42349ba1ff403e6939b6396f90cf87296c483880260ec4e07375b86aef24e6"
+    },
+    {
+      "file": "province-art/guangxi.svg",
+      "sha256": "3c6ae3ce523fcb7458b1991a723ca203c652e4eb1cee4a20687eb7815857771a"
+    },
+    {
+      "file": "province-art/guizhou.svg",
+      "sha256": "5d353a99f79bf850bf0a752dba684e933d8cf9552db39bb7b381072075444bac"
+    },
+    {
+      "file": "province-art/hainan.svg",
+      "sha256": "72aac9336b5337d655eb0560a54e9633ac896410842a00378820e6f394fa04c3"
+    },
+    {
+      "file": "province-art/hebei.svg",
+      "sha256": "97526b568633c4c77b1965c2cb7bae4340d63120c92f57957c9a8f3e72f3f584"
+    },
+    {
+      "file": "province-art/heilongjiang.svg",
+      "sha256": "e26a75d5331a3effc311e86cf8325761348adbbbed629b256183e7940c0e78e1"
+    },
+    {
+      "file": "province-art/henan.svg",
+      "sha256": "9e2ca463fac196fd4f73fa46ee703d6c1d4a411915a74278882a223033fbea7e"
+    },
+    {
+      "file": "province-art/hubei.svg",
+      "sha256": "3178ec0cd4ae60078ec8828be75b95b063f8512c50fcdf3deb33986a4e2efa34"
+    },
+    {
+      "file": "province-art/hunan.svg",
+      "sha256": "683ab5dec2a163b84f41e965c1ebc2a1a890317cedb62f70bc5a7a8552a78ccc"
+    },
+    {
+      "file": "province-art/jiangsu.svg",
+      "sha256": "9a47d67d388bfb3ad75b2b578a4415ca955d37b8f577d2255946eaa428f742ca"
+    },
+    {
+      "file": "province-art/jiangxi.svg",
+      "sha256": "c47629e8dc6039f55b88983e9a0a7c1a9e4cd4eefab7a57bef765d29da6d0716"
+    },
+    {
+      "file": "province-art/jilin.svg",
+      "sha256": "91eb24ca6226676bc7a9e12735bc0bb7ea615ef6c9ab7c67aa6f6941afba7c59"
+    },
+    {
+      "file": "province-art/liaoning.svg",
+      "sha256": "9fc0714193ef4135aebd2be56e95420b6d6e1ad04e674e7de570496ff0067007"
+    },
+    {
+      "file": "province-art/neimenggu.svg",
+      "sha256": "b993f6d8492f07b3a6941bdeaef7708e656143d3f8ddc8ad71b25b193a0202fb"
+    },
+    {
+      "file": "province-art/ningxia.svg",
+      "sha256": "90a03c07818cade09a02b71eeabdce3a9d5fb94119ba0e2452a0c36784697fa5"
+    },
+    {
+      "file": "province-art/qinghai.svg",
+      "sha256": "163af8be2ef1de0e992de772ac4a3f7ec03375af01216df2468bc6ab009a55ac"
+    },
+    {
+      "file": "province-art/shaanxi.svg",
+      "sha256": "baefe3995b16f494199dc54ad59db25b6038f6eba2315749ebc42653cfd710a3"
+    },
+    {
+      "file": "province-art/shandong.svg",
+      "sha256": "542067971f5e32f72ce853e1d859afacb30aeee1a8a1ac7455b9dc89cea566ce"
+    },
+    {
+      "file": "province-art/shanghai.svg",
+      "sha256": "cad611d350ebe969844499c2311bae63ddfd7b5dc5e55866de7ab231433e40b0"
+    },
+    {
+      "file": "province-art/shanxi.svg",
+      "sha256": "9c11cd03113c1bc1b662ffbf9a2784d60200d65977c8db00e1102d1c43fe8300"
+    },
+    {
+      "file": "province-art/sichuan.svg",
+      "sha256": "af1a48f8a5027e92552431ea6326f0c9aff873c8273e1e1e3d723d4380ab1b19"
+    },
+    {
+      "file": "province-art/tianjin.svg",
+      "sha256": "9e0f93f7bfe8b73a4dfa99c86e3cc038bc6dfeff2c33d8a71123ae748b60a0bc"
+    },
+    {
+      "file": "province-art/xinjiang.svg",
+      "sha256": "2a2bf58361c2ae01d37f616d470c5fb32225afa7d39783174e3003f408b7a1ce"
+    },
+    {
+      "file": "province-art/xizang.svg",
+      "sha256": "b0fc72efe37f735a53ecd5f272929bbffd9f55af7b80d0e16b884e891df827dd"
+    },
+    {
+      "file": "province-art/yunnan.svg",
+      "sha256": "63d67cb680d30bd08d948f45a1e7c41f6b4e169309ac525f65636aad35ff90fe"
+    },
+    {
+      "file": "province-art/zhejiang.svg",
+      "sha256": "6d60dc290b0869edc48f7e1e095f11e181709cd6662dc650bfc4ec77b81cd072"
+    }
+  ]
+}

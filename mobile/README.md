@@ -34,3 +34,7 @@ GitHub [v1.1.0-preview.1](https://github.com/DerpZhenjun/LabourLawyer/releases/t
 ## 正式发布前
 
 将前端的 `VITE_API_BASE_URL` 和 `VITE_DIGITAL_LAWYER_URL` 设置为已备案的 HTTPS 服务地址，重新构建并使用正式签名生成 release APK/AAB。生产版本不应依赖 USB 端口转发或本机 `127.0.0.1`。
+
+## 最新预览包
+
+[v1.2.0-preview.1 Android 下载与说明](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.1) 包含当前 TypeScript 页面与区县文书功能，versionCode 4，签名与旧预览版一致。本轮没有连接可用 USB 设备，签名和包内资源检查不替代手机安装或原生分享验收。参见 [本版说明](../docs/releases/v1.2.0-preview.1.md)。

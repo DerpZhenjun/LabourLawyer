@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "archive_source": "4107dcc8",
+  "source": "fresh git archive, without untracked source files",
+  "dependency_resolution": "junctions to installed lockfile dependencies; not a new network dependency installation",
+  "checks": [
+    "full Vue strict typecheck",
+    "34 typed script coverage and four actual compiler counterexamples",
+    "shared client CJS/declaration drift",
+    "shared AI contract vectors",
+    "chat cancellation and persistence",
+    "digital health and streaming handlers",
+    "public, workspace and provincial mounted/type tests"
+  ],
+  "backend_database_rebuilt": false
+}

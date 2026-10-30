@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "package": "cn.labourlawyer.mobile",
+  "version_name": "1.2.0-preview.1",
+  "version_code": 4,
+  "minimum_android_api": 24,
+  "target_android_api": 36,
+  "apk_signature_verified": true,
+  "certificate_matches_previous_preview": true,
+  "certificate_sha256": "f3cc31f69511fcf58afe95c3e091aead2e8215497a39c9a32ad5c5242d7ef853",
+  "usb_device_connected": false,
+  "physical_installation": "NOT_RUN: adb device list empty",
+  "physical_document_share": "NOT_RUN",
+  "build": "Gradle offline using existing cached distribution and documented short ASCII temp directory"
+}

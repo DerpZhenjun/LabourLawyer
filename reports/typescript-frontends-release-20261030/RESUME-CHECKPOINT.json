@@ -1,0 +1,26 @@
+{
+  "phase": "CODE_AND_APK_VERIFIED_RELEASE_PENDING",
+  "code_commits": [
+    "c14b0522",
+    "2263a9ce",
+    "bec366c4",
+    "4107dcc8"
+  ],
+  "vue_files_typed": 34,
+  "backend_tests": {
+    "run": 712,
+    "passed": 710,
+    "skipped": 2
+  },
+  "local_guides": 202,
+  "generatable_localities": 185,
+  "history_rows": 210,
+  "outbox_pending": 377,
+  "discovery_jobs": 4294,
+  "guide_data_changed": false,
+  "release_tag": "v1.2.0-preview.1",
+  "release_status": "PENDING",
+  "physical_android_install": "NOT_RUN_NO_USB_DEVICE",
+  "windows_model_started": false,
+  "next": "Commit exact release files, push, publish verified APK and checksums, verify public asset bytes, commit publication receipt."
+}

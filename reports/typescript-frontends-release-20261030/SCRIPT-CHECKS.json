@@ -1,0 +1,62 @@
+[
+  {
+    "script": "test-client-ai-contracts.mjs",
+    "status": "PASS",
+    "seconds": 0.109
+  },
+  {
+    "script": "test-assistant-session.mjs",
+    "status": "PASS",
+    "seconds": 0.125
+  },
+  {
+    "script": "test-typed-page-coverage.mjs",
+    "status": "PASS",
+    "seconds": 0.578
+  },
+  {
+    "script": "test-public-page-types.mjs",
+    "status": "PASS",
+    "seconds": 4.547
+  },
+  {
+    "script": "test-workspace-page-types.mjs",
+    "status": "PASS",
+    "seconds": 4.812
+  },
+  {
+    "script": "test-provincial-page-types.mjs",
+    "status": "PASS",
+    "seconds": 3.641
+  },
+  {
+    "script": "test-regional-form-integration.mjs",
+    "status": "PASS",
+    "seconds": 2.078
+  },
+  {
+    "script": "test-regional-document-routing.mjs",
+    "status": "PASS",
+    "seconds": 0.328
+  },
+  {
+    "script": "test-assistant-dock.mjs",
+    "status": "PASS",
+    "seconds": 0.11
+  },
+  {
+    "script": "test-digital-ai-health.cjs",
+    "status": "PASS",
+    "seconds": 0.593
+  },
+  {
+    "script": "test-digital-ai-stream.cjs",
+    "status": "PASS",
+    "seconds": 0.266
+  },
+  {
+    "script": "test-document-clients.cjs",
+    "status": "PASS",
+    "seconds": 0.078
+  }
+]
