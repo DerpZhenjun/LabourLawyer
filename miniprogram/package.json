@@ -6,10 +6,11 @@
     "sync-data": "node scripts/sync-data.cjs",
     "test": "node tests/typescript.test.cjs && node tests/module-loading.test.cjs && node tests/regional-page.test.cjs && node tests/assistant-contract.test.cjs && node tests/catalog.test.cjs && node tests/payload-parity.test.cjs",
     "typecheck": "node scripts/build-typescript.cjs --check",
-    "compile": "node ../scripts/build-regional-contracts.mjs && node ../scripts/build-client-contracts.mjs && node scripts/sync-data.cjs && node scripts/build-typescript.cjs"
+    "compile": "node ../scripts/sync-client-release.mjs && node ../scripts/build-api-contracts.mjs && node ../scripts/build-regional-contracts.mjs && node ../scripts/build-client-contracts.mjs && node scripts/sync-data.cjs && node scripts/build-typescript.cjs"
   },
   "devDependencies": {
     "miniprogram-api-typings": "5.2.3",
     "typescript": "5.9.3"
-  }
+  },
+  "version": "1.2.0-preview.2"
 }

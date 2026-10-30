@@ -1,7 +1,8 @@
 // Generated from pages/profile/index.ts. Do not edit.
-// source-sha256: d114779aba0654ee5fe80adb67c2e41daf5d9b9b597195cbc15cc63c1a8cb29f
+// source-sha256: ec1c4282c98319ab0d461eb6c0839cb03e71eb20d92e6f42361bd0a1554e80f3
 "use strict";
-const page = { data: { version: '1.0.0' }, clearData() {
+const release = require("../../utils/generated/release-info");
+const page = { data: { version: release.version }, clearData() {
         wx.showModal({ title: '清除本机数据', content: '将删除小程序中保存的案件草稿，此操作不可撤销。', success: res => {
                 if (res.confirm) {
                     wx.removeStorageSync('labourlawyer_cases');

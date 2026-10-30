@@ -1,0 +1,112 @@
+TAP version 13
+# Subtest: pipeline module supplies the orchestrator
+ok 1 - pipeline module supplies the orchestrator
+  ---
+  duration_ms: 0.7536
+  type: 'test'
+  ...
+# Subtest: shared dependency executes once, manifests hash actual bytes, and artifact stage prepares an exact allowlist
+ok 2 - shared dependency executes once, manifests hash actual bytes, and artifact stage prepares an exact allowlist
+  ---
+  duration_ms: 62.6683
+  type: 'test'
+  ...
+# Subtest: a failed process stops dependents and records non-passing steps
+ok 3 - a failed process stops dependents and records non-passing steps
+  ---
+  duration_ms: 18.4419
+  type: 'test'
+  ...
+# Subtest: dry-run executes zero commands and cannot serve as release evidence
+ok 4 - dry-run executes zero commands and cannot serve as release evidence
+  ---
+  duration_ms: 16.7917
+  type: 'test'
+  ...
+# Subtest: a successful command cannot attest an old, missing, or empty output
+ok 5 - a successful command cannot attest an old, missing, or empty output
+  ---
+  duration_ms: 99.8551
+  type: 'test'
+  ...
+# Subtest: changed source, modified artifacts, expired receipt, or forged passing step is refused
+ok 6 - changed source, modified artifacts, expired receipt, or forged passing step is refused
+  ---
+  duration_ms: 240.5884
+  type: 'test'
+  ...
+# Subtest: output and working-directory traversal is rejected before execution
+ok 7 - output and working-directory traversal is rejected before execution
+  ---
+  duration_ms: 77.228
+  type: 'test'
+  ...
+# Subtest: artifact symlinks cannot escape workspace bounds
+ok 8 - artifact symlinks cannot escape workspace bounds
+  ---
+  duration_ms: 10.05
+  type: 'test'
+  ...
+# Subtest: web and Android plan reuse the APK script frontend build and never execute commands
+ok 9 - web and Android plan reuse the APK script frontend build and never execute commands
+  ---
+  duration_ms: 17.8123
+  type: 'test'
+  ...
+# Subtest: old outputs can only be reused with a verified prior receipt for identical inputs and checksum
+ok 10 - old outputs can only be reused with a verified prior receipt for identical inputs and checksum
+  ---
+  duration_ms: 124.8287
+  type: 'test'
+  ...
+# Subtest: process errors and absent exit status cannot become successful receipts
+ok 11 - process errors and absent exit status cannot become successful receipts
+  ---
+  duration_ms: 55.807
+  type: 'test'
+  ...
+# Subtest: production runner preserves a real child-process failure exit code
+ok 12 - production runner preserves a real child-process failure exit code
+  ---
+  duration_ms: 92.7566
+  type: 'test'
+  ...
+# Subtest: private backend runtime and SQLite files never affect snapshots or artifact allowlists, while app code does
+ok 13 - private backend runtime and SQLite files never affect snapshots or artifact allowlists, while app code does
+  ---
+  duration_ms: 114.5503
+  type: 'test'
+  ...
+# Subtest: editing an executed shared test or release metadata check invalidates build evidence
+ok 14 - editing an executed shared test or release metadata check invalidates build evidence
+  ---
+  duration_ms: 409.0374
+  type: 'test'
+  ...
+# Subtest: the default graph checks release metadata once before client checks
+ok 15 - the default graph checks release metadata once before client checks
+  ---
+  duration_ms: 12.2396
+  type: 'test'
+  ...
+# Subtest: unchanged static source copies keep old mtimes and carry independently checked source evidence
+ok 16 - unchanged static source copies keep old mtimes and carry independently checked source evidence
+  ---
+  duration_ms: 103.2103
+  type: 'test'
+  ...
+# Subtest: static copy evidence cannot bless mismatched assets, stale compiled code, or sources outside the snapshot
+ok 17 - static copy evidence cannot bless mismatched assets, stale compiled code, or sources outside the snapshot
+  ---
+  duration_ms: 90.6727
+  type: 'test'
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1664.1078

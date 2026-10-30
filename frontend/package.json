@@ -1,16 +1,18 @@
 {
   "name": "labourlawyer-web",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.2.0-preview.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "contracts:build": "node ../scripts/build-regional-contracts.mjs && node ../scripts/build-client-contracts.mjs",
-    "contracts:check": "node ../scripts/build-regional-contracts.mjs --check && node ../scripts/build-client-contracts.mjs --check",
+    "contracts:build": "node ../scripts/sync-client-release.mjs --check && node ../scripts/build-api-contracts.mjs && node ../scripts/build-regional-contracts.mjs && node ../scripts/build-client-contracts.mjs",
+    "contracts:check": "node ../scripts/sync-client-release.mjs --check && node ../scripts/build-api-contracts.mjs --check && node ../scripts/build-regional-contracts.mjs --check && node ../scripts/build-client-contracts.mjs --check",
     "typecheck": "vue-tsc --noEmit",
-    "prebuild": "npm run contracts:build"
+    "prebuild": "npm run contracts:build",
+    "clients:check": "node ../scripts/client-pipeline.mjs check --targets web,mini",
+    "clients:build": "node ../scripts/client-pipeline.mjs build --targets web,mini"
   },
   "dependencies": {
     "@capacitor/core": "^8.5.2",
@@ -27,9 +29,9 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",
+    "openapi-typescript": "7.13.0",
     "typescript": "^5.9.3",
     "vite": "^7.2.4",
-    "vue-tsc": "^3.3.13",
-    "openapi-typescript": "7.13.0"
+    "vue-tsc": "^3.3.13"
   }
 }

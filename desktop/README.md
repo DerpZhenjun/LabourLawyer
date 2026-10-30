@@ -18,3 +18,7 @@ cd ../desktop && npm install && npm run dev
 主进程启用上下文隔离、沙箱并禁止Node注入；外部链接交给系统浏览器。同源API代理保留流式回答并拒绝外部Origin；没有通过关闭webSecurity或放开后端CORS实现连接。退出桌面仅关闭自身静态服务，不终止已运行的后端、数字人或模型。
 
 项目为MIT许可证；Electron/Chromium及前端依赖通知随包保留。Font Awesome字体采用SIL OFL 1.1、图标CC BY 4.0、代码MIT；完整通知位于resources/notices及可执行文件旁的LICENSES.chromium.html。发布前核对制品审计与SHA，不将旧release目录中的历史EXE当作本次构建。
+
+## 统一版本与发布检查
+
+产品版本由 `config/client-release.json` 同步到本端和其他客户端。在仓库根目录运行 `node scripts/client-pipeline.mjs build --targets desktop`，构建成功后才可用生成的 receipt 准备 SHA-256 附件白名单。仅有 plan 或历史 EXE 不算本次构建通过。本版同步到 1.2.0-preview.2，同源 API 地址仍经本端本地代理连接后端；不会启动模型。见 [脚本入口](../scripts/README.md)。

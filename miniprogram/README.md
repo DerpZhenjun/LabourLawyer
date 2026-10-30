@@ -42,3 +42,9 @@ npm --prefix miniprogram test
 `compile` 同步共享契约、静态数据并生成 JavaScript；`typecheck` 检查严格类型和产物漂移，`test` 还执行真实类型错误反例、页面行为与 34 类历史请求 SHA 对比。编译器与微信官方 API 类型由本目录的 lockfile 固定。不要只改 JS，也不要让微信上传动作代替本地测试。
 
 本轮 7 页真实模拟器、两份实际 Word 与现有 APK 逐字节比较见 [迁移验收](../reports/miniprogram-typescript-20261030/TEST-REPORT.md)。本轮没有上传、发布小程序或重新发行相同 Android 包。
+
+## 稳定接口与统一构建
+
+稳定的健康、AI 和省级文书接口由实际 FastAPI 路由导出 OpenAPI，再生成共享 TypeScript 类型及 AI 长度约束；动态区县字段继续使用各自模板契约。`compile` 会同步接口、版本和运行代码，`node ../scripts/client-pipeline.mjs check --targets web,mini` 执行统一检查。详情见 [脚本入口](../scripts/README.md)。
+
+产品版本来自 `config/client-release.json`；请运行 `node scripts/sync-client-release.mjs`，不要分别修改多个端的版本号。新预览版本为 1.2.0-preview.2；本地构建并不代表已上传或发布微信。

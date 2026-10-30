@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-30T05:49:47.5871584Z",
+  "scope": "Client build orchestration and receipt/allowlist fixture verification",
+  "commands": [
+    {
+      "exitCode": 0,
+      "tests": 17,
+      "command": "node --test --test-reporter=tap scripts/test-client-pipeline.mjs",
+      "passed": 17
+    },
+    {
+      "exitCode": 0,
+      "command": "node --check scripts/client-pipeline.mjs"
+    },
+    {
+      "exitCode": 0,
+      "command": "node scripts/client-pipeline.mjs plan --targets web,mini,android,desktop",
+      "executedSubprocesses": 0
+    },
+    {
+      "exitCode": 0,
+      "command": "node scripts/client-pipeline.mjs check --dry-run --targets web,mini",
+      "executedSubprocesses": 0
+    }
+  ],
+  "tdd": {
+    "laterRed": [
+      "Missing suppression of duplicate nested frontend lifecycle generation",
+      "Old-output reuse rejected before verified-prior-receipt support",
+      "Empty output files and terminated child status incorrectly accepted",
+      "Private backend runtime data and SQLite changes incorrectly invalidated source evidence and entered generic artifact allowlists",
+      "Edits to executed shared test bodies failed to invalidate build evidence",
+      "Shared release metadata validation was omitted from the default plan",
+      "Vite-preserved static SVG mtimes were rejected despite exact current hashed source copies"
+    ],
+    "firstRed": "Missing pipeline exports; then seven missing-behavior failures before implementation",
+    "final": "17 passing fixture/real-child-process tests"
+  },
+  "files": [
+    {
+      "sha256": "ebcd6f495969658e3b055f6a5873fab46373395e34a1a1f748d9bc63ea069074",
+      "path": "scripts/client-pipeline.mjs",
+      "bytes": 22875
+    },
+    {
+      "sha256": "06c972691a0e770ae080c43f26f176de29ec54797f9dd51a7886f4f54526f819",
+      "path": "scripts/test-client-pipeline.mjs",
+      "bytes": 16589
+    },
+    {
+      "sha256": "223fa48bffe5740dbc807a9624a9c2166aba64e81aa27729409e548b02ef7971",
+      "path": "scripts/README.md",
+      "bytes": 8850
+    }
+  ],
+  "realBuilds": "Not run by this subtask; parent integrates API generator and performs selected real client builds",
+  "published": false,
+  "limitations": [
+    "Local receipts are unsigned and do not prove signing/store review/publication",
+    "Current existing Android and desktop packaging npm scripts require their Windows toolchains",
+    "Mini build validates checked-in generated modules; it is not an upload to WeChat",
+    "Reuse requires identical current inputs and matching prior artifacts within 24 hours"
+  ],
+  "readOnlyReview": {
+    "checks": [
+      {
+        "command": "node scripts/build-api-contracts.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/build-client-contracts.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "command": "node scripts/sync-document-clients.mjs --check",
+        "exitCode": 0
+      },
+      {
+        "exitCode": 0,
+        "passed": 4,
+        "tests": 4,
+        "command": ".venv/Scripts/python.exe -m unittest backend.tests.test_stable_api_contracts -v"
+      }
+    ],
+    "status": "No outstanding concrete findings in reviewed current contract/export/client files after declaration diagnostic fix",
+    "resolvedFinding": "Declaration generator emitted despite TS5097; root enabled allowImportingTsExtensions and rejects getPreEmitDiagnostics before declaration emit"
+  },
+  "staticCopyCorrection": {
+    "recordedFields": [
+      "staticCopy",
+      "sourcePath"
+    ],
+    "realBuildRetest": "Parent owns the subsequent real build rerun",
+    "artifactStage": "Recomputes source mapping independently; forged sourcePath rejects",
+    "timestampsChanged": false,
+    "negativeCases": [
+      "Mismatched old SVG",
+      "Stale compiled JavaScript",
+      "Static source omitted from fingerprint"
+    ],
+    "trigger": "Parent real web+mini build completed Vite but receipt rejected a static public SVG with preserved mtime",
+    "evidence": "Exact relative source under declared staticRoot must occur in current source snapshot and match bytes/SHA256"
+  },
+  "scopeNote": "Earlier scoped verification snapshot; final integration is recorded in ../TEST-REPORT.md and final build receipt. Public line endings/console trailing spaces normalized; raw preserved privately."
+}
