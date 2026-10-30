@@ -16,18 +16,18 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import axios from 'axios'
+import {API_BASE} from '../api/http.ts'
 import {parseDistrictGuides} from '../../../packages/regional-contracts/src/workspace'
 import type {WorkflowGuide} from '../../../packages/regional-contracts/src/workspace'
 const props = defineProps<{slug:string}>()
 const guides = ref<WorkflowGuide[]>([]), selected = ref(''), error = ref('')
 const current = computed(() => guides.value.find(g => g.id === selected.value))
-const base = (import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000').replace(/\/$/, '')
 let revision = 0
 watch(() => props.slug, async slug => {
   const request = ++revision
   guides.value = []; selected.value = ''; error.value = ''
   try {
-    const { data } = await axios.get<unknown>(`${base}/api/portal-reports/workflows/${encodeURIComponent(slug)}`, { timeout: 15000 })
+    const { data } = await axios.get<unknown>(`${API_BASE}/api/portal-reports/workflows/${encodeURIComponent(slug)}`, { timeout: 15000 })
     if (request !== revision) return
     guides.value = parseDistrictGuides(data)
     selected.value = (guides.value.find(g => g.steps?.length) || guides.value[0])?.id || ''

@@ -3,8 +3,9 @@ import type {Ref} from 'vue'
 import type {Region,RegionalGuide} from '../../../packages/regional-contracts/src/index.ts'
 import {regionQuery} from '../../../packages/regional-contracts/src/index.ts'
 import {createRegionalClient} from '../api/regional.ts'
+import {API_BASE} from '../api/http.ts'
 export {regionQuery}
-export const regionalClient=createRegionalClient(import.meta.env.VITE_API_BASE_URL||'http://127.0.0.1:8000')
+export const regionalClient=createRegionalClient(API_BASE)
 export const regionalAPI=regionalClient.base
 export const templateURL=(region:Region,id:string,binding?:{source_id:string;version:number})=>
   `${regionalAPI}/templates/${encodeURIComponent(id)}?${regionQuery(region)}${binding?`&source_id=${encodeURIComponent(binding.source_id)}&version=${binding.version}`:''}`

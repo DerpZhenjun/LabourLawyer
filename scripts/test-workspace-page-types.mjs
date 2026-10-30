@@ -178,7 +178,7 @@ function component(file,{workspace,axios,downloads=[],route=vue.reactive({query:
     if(id==='vue')return vue
     if(id==='vue-router')return{RouterLink,useRoute:()=>route,useRouter:()=>router}
     if(id==='axios')return{__esModule:true,default:axios??{get:async()=>({data:{items:[],guides:[]}})}}
-    if(id.includes('api/http'))return{authorizationHeaders:()=>({})}
+    if(id.includes('api/http'))return{API_BASE:'',authorizationHeaders:()=>({})}
     if(id.includes('useWorkspace'))return{useWorkspace:()=>workspace}
     if(id.includes('downloadDocument'))return{downloadDocument:async(...args)=>{downloads.push(args)}}
     if(id.includes('data/provinces'))return{provinces:[{slug:'fiction',shortName:'虚构',name:'虚构省',hasApplication:true,hasEvidence:true,applicationRoute:'/fiction/app',evidenceRoute:'/fiction/evidence',note:'虚构',materialNote:'虚构',scope:'虚构'}]}

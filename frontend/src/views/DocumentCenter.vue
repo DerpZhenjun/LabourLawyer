@@ -55,7 +55,7 @@
 import {computed,ref,onMounted,onBeforeUnmount} from 'vue'
 import {RouterLink} from 'vue-router'
 import axios from 'axios'
-import {authorizationHeaders} from '@/api/http.ts'
+import {API_BASE,authorizationHeaders} from '@/api/http.ts'
 import {provinces} from '@/data/provinces'
 import {downloadDocument} from '@/composables/downloadDocument'
 import {parsePortalReports,parseAgentTasks,responseIdentifier,workspaceError} from '../../../packages/regional-contracts/src/workspace'
@@ -69,7 +69,6 @@ const templates=provinces.flatMap(p=>[
 const filteredTemplates=computed(()=>region.value==='全部'?templates:templates.filter(i=>i.region===region.value))
 const scrollToTemplates=()=>templatesRef.value?.scrollIntoView({behavior:'smooth'})
 const reports=ref<PortalReport[]>([]),reportMessage=ref(''),reportBusy=ref(false),withVision=ref(true)
-const API_BASE=(import.meta.env.VITE_API_BASE_URL||'http://127.0.0.1:8000').replace(/\/$/,'')
 let reportTimer:ReturnType<typeof setTimeout>|undefined,agentTimer:ReturnType<typeof setTimeout>|undefined,disposed=false
 const agentProvince=ref(''),agentTasks=ref<AgentTask[]>([]),agentBusy=ref(false),agentMessage=ref('')
 const downloadExperience=async(ai:boolean)=>{
