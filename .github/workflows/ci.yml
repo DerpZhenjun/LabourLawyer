@@ -69,6 +69,7 @@ jobs:
           node scripts/test-chat-privacy.mjs
           node scripts/test-digital-chat-privacy.cjs
           node scripts/test-official-collector.mjs
+          node scripts/test-collector-issue-status.mjs
           node scripts/test-digital-service-config.mjs
           node scripts/test-regional-online-link.mjs
       - name: Build and verify web and mini from the checked contracts

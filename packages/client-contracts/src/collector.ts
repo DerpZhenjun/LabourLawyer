@@ -4,7 +4,15 @@ export type CollectorJobState='queued'|'running'|'complete'|'cancelled'
 export type ObservationState='guide_observed'|'blocked'|'auth_required'|'captcha_required'|'network_failed'|'runtime_failed'|'unverified'|'http_failed'|'blank'|'interrupted'
 export interface CollectorEvidence {file:string;bytes:number;sha256:string}
 export interface CollectorJob {id:string;url:string;region:CollectorRegion;state:CollectorJobState;attempt:number;created_at:string;updated_at:string;result?:{state:ObservationState;title:string;evidence:CollectorEvidence[];review_required:true;service_verified:false}}
-export interface CollectorStatus {counts:Record<CollectorJobState,number>;items:CollectorJob[];worker:{state:string;alive:boolean;updated_at:string}|null;capacity:number;concurrency:1;allowed_hosts:string[]}
+export type CollectorIssueJournalState='pending'|'disabled'|'outbox_persisted'|'rejected'|'error'
+export interface CollectorIssueEvents {
+ enabled:boolean
+ journal:{status:'available'|'error';observations:number|null;states:Partial<Record<CollectorIssueJournalState,number>>|null}
+ outbox:{status:'disabled'|'missing'|'available'|'error';events:number|null;pending:number|null;acknowledged:number|null}
+ model_calls:0
+ ai_reviewed:false
+}
+export interface CollectorStatus {counts:Record<CollectorJobState,number>;items:CollectorJob[];worker:{state:string;alive:boolean;updated_at:string}|null;capacity:number;concurrency:1;allowed_hosts:string[];issue_events?:CollectorIssueEvents}
 const jobStates=['queued','running','complete','cancelled'] as const
 const observations=['guide_observed','blocked','auth_required','captcha_required','network_failed','runtime_failed','unverified','http_failed','blank','interrupted'] as const
 const record=(value:unknown):Record<string,unknown>=>{if(!value||typeof value!=='object'||Array.isArray(value))throw Error('采集服务返回的资料格式不正确。');return value as Record<string,unknown>}
@@ -16,6 +24,33 @@ const officialURL=(value:unknown):string=>{
  return raw
 }
 const evidenceName=(value:string)=>/^(?:(?:page|failure|materials)\.(?:png|txt)|attachment-\d+\.(?:docx?|pdf|xlsx?))$/.test(value)
+const exact=(value:Record<string,unknown>,keys:string[])=>{if(Object.keys(value).length!==keys.length||keys.some(key=>!Object.hasOwn(value,key)))throw Error('采集问题状态包含未识别资料。')}
+function parseIssueEvents(input:unknown):CollectorIssueEvents{
+ const raw=record(input),journal=record(raw.journal),outbox=record(raw.outbox)
+ exact(raw,['enabled','journal','outbox','model_calls','ai_reviewed']);exact(journal,['status','observations','states']);exact(outbox,['status','events','pending','acknowledged'])
+ if(typeof raw.enabled!=='boolean'||raw.model_calls!==0||raw.ai_reviewed!==false)throw Error('问题送达不能冒充模型审核。')
+ let parsedJournal:CollectorIssueEvents['journal']
+ if(journal.status==='available'){
+  const states=record(journal.states),known=['pending','disabled','outbox_persisted','rejected','error']
+  if(Object.keys(states).some(key=>!known.includes(key)))throw Error('采集观察日志状态不正确。')
+  const parsed=Object.fromEntries(Object.entries(states).map(([key,value])=>[key,number(value)])),observations=number(journal.observations)
+  if(Object.values(parsed).reduce((sum,value)=>sum+value,0)!==observations)throw Error('采集观察日志数量不一致。')
+  parsedJournal={status:'available',observations,states:parsed}
+ }else{
+  if(journal.status!=='error'||journal.observations!==null||journal.states!==null)throw Error('未读取日志不能视为零条观察。')
+  parsedJournal={status:'error',observations:null,states:null}
+ }
+ let parsedOutbox:CollectorIssueEvents['outbox']
+ if(outbox.status==='available'){
+  const events=number(outbox.events),pending=number(outbox.pending),acknowledged=number(outbox.acknowledged)
+  if(!raw.enabled||events!==pending+acknowledged)throw Error('独立问题库数量不一致。')
+  parsedOutbox={status:'available',events,pending,acknowledged}
+ }else{
+  if(!['disabled','missing','error'].includes(String(outbox.status))||raw.enabled!==(outbox.status!=='disabled')||[outbox.events,outbox.pending,outbox.acknowledged].some(value=>value!==null))throw Error('未读取问题库不能视为成功零条。')
+  parsedOutbox={status:outbox.status as 'disabled'|'missing'|'error',events:null,pending:null,acknowledged:null}
+ }
+ return{enabled:raw.enabled,journal:parsedJournal,outbox:parsedOutbox,model_calls:0,ai_reviewed:false}
+}
 export function collectorEvidencePath(id:string,file:string,attempt:number):string{
  if(!/^[a-f0-9]{32}$/.test(id)||!evidenceName(file)||!Number.isSafeInteger(attempt)||attempt<1||attempt>2)throw Error('采集证据地址不正确。')
  return `/api/official-collector/jobs/${id}/evidence/${file}?attempt=${attempt}`
@@ -41,5 +76,5 @@ export function parseCollectorStatus(input:unknown):CollectorStatus{
  let worker:CollectorStatus['worker']=null
  if(raw.worker!=null){const w=record(raw.worker);if(typeof w.alive!=='boolean')throw Error('执行器状态不正确。');worker={state:text(w.state,80),alive:w.alive,updated_at:text(w.updated_at,80)}}
  const allowed_hosts=raw.allowed_hosts.map(v=>{const h=text(v,253);if(!/^[a-z0-9.-]+\.gov\.cn$/.test(h))throw Error('采集站点范围不正确。');return h})
- return{counts:parsedCounts,items,worker,capacity:number(raw.capacity,1000),concurrency:1,allowed_hosts}
+ return{counts:parsedCounts,items,worker,capacity:number(raw.capacity,1000),concurrency:1,allowed_hosts,...(raw.issue_events===undefined?{}:{issue_events:parseIssueEvents(raw.issue_events)})}
 }

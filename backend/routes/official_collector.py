@@ -3,6 +3,7 @@ import json
 import os
 from pathlib import Path
 import re
+import sqlite3
 
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import FileResponse
@@ -10,6 +11,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from auth_dependencies import require_admin
 from linux_guide_collector import CollectorConfig, GuideQueue, public_url
+from collector_issue_events import CollectorIssueOutbox
 
 router=APIRouter(dependencies=[Depends(require_admin)])
 
@@ -58,6 +60,43 @@ def public_job(job):
     return output
 
 
+def public_issue_status(queue):
+    """Read only the configured dedicated store; unavailable never means zero."""
+    enabled=queue.config.issue_outbox is not None
+    journal={'status':'error','observations':None,'states':None}
+    outbox={'status':'disabled' if not enabled else 'error','events':None,'pending':None,'acknowledged':None}
+    def count(value):
+        if type(value) is not int or not 0<=value<=9007199254740991:raise ValueError('Invalid issue count')
+        return value
+    try:
+        observed=queue.issue_event_status();states=observed['states']
+        if (observed['enabled'] is not enabled or type(observed['model_calls']) is not int or observed['model_calls']!=0
+                or observed['sync_performed'] is not False or type(states) is not dict
+                or not set(states)<={'pending','disabled','outbox_persisted','rejected','error'}):raise ValueError('Invalid issue journal')
+        states={key:count(value) for key,value in states.items()}
+        observations=count(observed['observations'])
+        if sum(states.values())!=observations:raise ValueError('Issue journal counts differ')
+        journal={'status':'available','observations':observations,'states':states}
+    except (OSError,ValueError,TypeError,KeyError,sqlite3.Error):pass
+    if enabled:
+        try:
+            path=Path(queue.config.issue_outbox)
+            if path.is_symlink() or path.resolve()!=path:raise ValueError('Invalid dedicated issue path')
+            if not path.exists():outbox['status']='missing'
+            else:
+                if not path.is_file():raise ValueError('Invalid dedicated issue file')
+                before=path.stat()
+                summary=CollectorIssueOutbox(path).summary()
+                after=path.stat()
+                if path.is_symlink() or path.resolve()!=path or (before.st_dev,before.st_ino)!=(after.st_dev,after.st_ino):raise ValueError('Dedicated issue file changed')
+                if type(summary['model_calls']) is not int or summary['model_calls']!=0:raise ValueError('Invalid issue summary')
+                counts={key:count(summary[key]) for key in ['events','pending','acknowledged']}
+                if counts['events']!=counts['pending']+counts['acknowledged']:raise ValueError('Issue counts differ')
+                outbox={'status':'available',**counts}
+        except (OSError,ValueError,TypeError,KeyError,sqlite3.Error):pass
+    return {'enabled':enabled,'journal':journal,'outbox':outbox,'model_calls':0,'ai_reviewed':False}
+
+
 @router.get('')
 def status(queue:GuideQueue=Depends(configured_queue)):
     data=queue.summary()
@@ -65,7 +104,7 @@ def status(queue:GuideQueue=Depends(configured_queue)):
     return {'counts':data['counts'],'items':[public_job(j) for j in data['items']],
             'worker':{k:worker[k] for k in ('state','alive','updated_at','job','concurrency','model_used') if k in worker} if worker else None,
             'concurrency':1,'capacity':queue.config.capacity,'model_used':False,
-            'allowed_hosts':list(queue.config.allowed_hosts),'review_required':True}
+            'allowed_hosts':list(queue.config.allowed_hosts),'review_required':True,'issue_events':public_issue_status(queue)}
 
 
 @router.post('/jobs',status_code=202)

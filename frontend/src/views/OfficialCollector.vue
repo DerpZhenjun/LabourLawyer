@@ -4,6 +4,20 @@
   <p class="collector-notice">网页访问成功、下载了附件，都不代表已经核验。核对受理机关、材料、空白表格和填写结果后，才能接入当地文书生成。</p>
   <p v-if="error" class="collector-notice danger" role="alert">{{error}}</p><p v-if="message" class="collector-notice" role="status">{{message}}</p>
   <div v-if="data" class="collector-state" aria-live="polite"><strong>{{data.worker?.alive?'执行器在线':'执行器未在线，任务将保留等待'}}</strong><span>等待 {{data.counts.queued}} · 正在访问 {{data.counts.running}} · 访问结束 {{data.counts.complete}} · 已取消 {{data.counts.cancelled}}</span></div>
+  <section v-if="data" class="collector-panel collector-issues" aria-labelledby="collector-issues-title">
+   <h2 id="collector-issues-title">本采集链路的问题投递</h2>
+   <div role="status" aria-live="polite" aria-atomic="true">
+    <p>{{issueOutboxMessage}}</p>
+    <dl v-if="data.issue_events?.outbox.status==='available'" class="collector-issue-metrics">
+     <div><dt>已持久问题</dt><dd>{{data.issue_events.outbox.events}}</dd></div>
+     <div><dt>待 OpenClaw</dt><dd>{{data.issue_events.outbox.pending}}</dd></div>
+     <div><dt>实际送达</dt><dd>{{data.issue_events.outbox.acknowledged}}</dd></div>
+    </dl>
+    <p v-if="data.issue_events?.journal.status==='available'" class="collector-hint">已保留观察记录 {{data.issue_events.journal.observations}} 条。</p>
+    <p v-else-if="data.issue_events" class="collector-hint">观察日志暂不可读取，记录数量未核实。</p>
+   </div>
+   <p class="collector-hint">仅统计本采集器的独立问题库，与历史问题记录分开统计。实际送达表示 OpenClaw 已完整回读问题，不代表 AI 已审核或指南已核验。模型调用：{{data.issue_events?.model_calls??0}}。</p>
+  </section>
   <section class="collector-panel"><h2>添加一条当地指南</h2><form @submit.prevent="add">
    <div class="collector-fields"><label>省份<select v-model="region.province" required><option v-for="p in provinces" :key="p.slug" :value="p.slug">{{p.name}}</option></select></label><label>城市<input v-model.trim="region.city" required maxlength="80" placeholder="例如：苏州市"/></label><label>区县或功能区<input v-model.trim="region.district" required maxlength="80" placeholder="例如：张家港市"/></label><label>已核对的地区代码<input v-model.trim="region.region_code" required pattern="[0-9]{6,12}" inputmode="numeric" maxlength="12" placeholder="例如：320582"/></label></div>
    <label>该地区的官方办事指南链接<input v-model.trim="url" type="url" required maxlength="3000" placeholder="粘贴这个地区自身的官方指南链接"/></label>
@@ -18,11 +32,16 @@
  </div>
 </template>
 <script setup lang="ts">
-import {reactive,ref} from 'vue'
+import {computed,reactive,ref} from 'vue'
 import {provinces} from '@/data/provinces'
 import {useOfficialCollector} from '@/composables/useOfficialCollector'
 import type {CollectorRegion,CollectorJobState,ObservationState} from '../../../packages/client-contracts/src/collector.ts'
 const {data,loading,busy,error,message,refresh,submit,action,download}=useOfficialCollector()
+const issueOutboxMessage=computed(()=>{
+ const issue=data.value?.issue_events
+ if(!issue)return '当前服务尚未提供独立问题投递状态。'
+ return{available:'独立问题库可读取，以下为本采集链路的实际记录。',disabled:'独立问题库未配置，采集任务仍会保留。',missing:'独立问题库尚未建立，问题数量未核实。',error:'独立问题库暂不可读取，问题数量未核实；任务列表仍可查看。'}[issue.outbox.status]
+})
 const url=ref(''),region=reactive<CollectorRegion>({province:'jiangsu',city:'',district:'',region_code:''})
 const jobLabels:Record<CollectorJobState,string>={queued:'等待访问',running:'正在访问',complete:'访问已结束',cancelled:'已取消'}
 const observationLabels:Record<ObservationState,string>={guide_observed:'已看到指南内容',blocked:'访问受到限制',auth_required:'需要官网登录，已停止',captcha_required:'需要验证码，已停止',network_failed:'官网访问未完成',runtime_failed:'执行器运行未完成',unverified:'本次资料仍待核验',http_failed:'官网未返回正常内容',blank:'页面内容未完整加载',interrupted:'执行中断，资料仍保留'}
@@ -30,5 +49,6 @@ const evidenceLabel=(name:string)=>name.endsWith('.png')?'页面截图':name.end
 const add=()=>submit(url.value,{...region})
 </script>
 <style scoped>
+.collector-issue-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:16px 0}.collector-issue-metrics>div{min-width:0;overflow-wrap:anywhere}.collector-issue-metrics dt{font-size:14px;color:var(--ll-secondary)}.collector-issue-metrics dd{font-size:24px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--ll-primary);margin:8px 0}.collector-issues p{margin:8px 0}@media(max-width:650px){.collector-issue-metrics{grid-template-columns:1fr;gap:8px}.collector-issue-metrics>div{display:flex;align-items:baseline;justify-content:space-between;gap:16px}.collector-issue-metrics dd{margin:0}}
 .collector-page{max-width:1100px;padding:28px}.collector-page header{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:20px}.collector-page h1{font-size:28px;color:var(--ll-text);margin:8px 0}.collector-page p{line-height:1.75;color:var(--ll-secondary)}.collector-notice{padding:16px 18px;border:1px solid var(--ll-border);border-radius:10px;background:var(--ll-background)}.collector-notice.danger{border-color:#e3b9b0;color:#963e32;background:#fff4f1}.collector-state{display:flex;flex-wrap:wrap;gap:10px 24px;padding:16px 0;color:var(--ll-primary)}.collector-panel{padding:24px;margin:18px 0;background:var(--ll-surface);border:1px solid var(--ll-border);border-radius:12px}.collector-panel h2{font-size:19px;margin:0 0 20px}.collector-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}label{display:block;color:var(--ll-text);font-size:14px;font-weight:600;margin-bottom:16px}input,select{display:block;width:100%;min-height:44px;padding:10px 12px;border:1px solid var(--ll-border-strong);border-radius:8px;background:var(--ll-surface);color:var(--ll-text);font:inherit;margin-top:8px}.collector-hint{font-size:13px;overflow-wrap:anywhere}.collector-jobs{list-style:none;padding:0;margin:0}.collector-jobs li{padding:20px 0;border-top:1px solid var(--ll-border);overflow-wrap:anywhere}.collector-job-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.collector-job-heading h3{font-size:17px;margin:0}.collector-job-heading span{font-size:13px;color:var(--ll-primary);white-space:nowrap}.collector-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.collector-jobs a{color:var(--ll-primary);display:inline-flex;align-items:center;min-height:44px}@media(max-width:650px){.collector-page{padding:16px}.collector-page header{display:block}.collector-panel{padding:18px}.collector-fields{grid-template-columns:1fr}.collector-actions button{width:100%}}
 </style>

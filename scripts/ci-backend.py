@@ -51,6 +51,7 @@ TESTS = (
     'test_linux_guide_collector',
     'test_collector_issue_events',
     'test_collector_issue_wiring',
+    'test_official_collector_issue_status',
     'test_ci_subprocess_guard',
     'test_tls_deployment.TLSDeploymentTests',
     'test_tls_deployment.TLSInstallerTests',
@@ -66,6 +67,7 @@ NODE_FIXTURES = {
     (ROOT / 'scripts/export_document_examples.mjs').resolve(),
     (ROOT / 'scripts/test-kunshan-guide-wire.mjs').resolve(),
     (ROOT / 'scripts/test-gulou-guide-wire.mjs').resolve(),
+    (ROOT / 'backend/tests/fixtures/test-collector-issue-status-wire.mjs').resolve(),
     (ROOT / 'scripts/test-fujian-i-guide-wire.mjs').resolve(),
     (ROOT / 'backend/tests/fixtures/test-fujian-i-wire.mjs').resolve(),
 }
