@@ -11,6 +11,7 @@
 *.vue text eol=lf
 *.md text eol=lf
 *.bat text eol=crlf
+*.sh text eol=lf
 # Sealed official evidence and release snapshots must retain their SHA256 bytes.
 /reports/** -text
 /templates/** -text
