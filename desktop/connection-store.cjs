@@ -23,12 +23,13 @@ function createConnectionStore(file,normalize){
  return {read,write}
 }
 function handleConnectionRequest(event,payload,trusted,store){
- event.returnValue={ok:false}
+ let reply={ok:false}
  try{
   if(!trusted(event)||!payload||typeof payload!=='object'||Array.isArray(payload))return
-  if(payload.action==='read'&&Object.keys(payload).join(',')==='action')event.returnValue={ok:true,value:store.read()}
-  else if(payload.action==='write'&&Object.keys(payload).sort().join(',')==='action,value'){store.write(payload.value);event.returnValue={ok:true,value:null}}
+  if(payload.action==='read'&&Object.keys(payload).join(',')==='action')reply={ok:true,value:store.read()}
+  else if(payload.action==='write'&&Object.keys(payload).sort().join(',')==='action,value'){store.write(payload.value);reply={ok:true,value:null}}
  }catch{/* Keep filesystem details outside the renderer. No credentials are stored here. */}
+ finally{event.returnValue=reply}
 }
 function trustedConnectionFrame(event,windows){
  try{return windows.get(event.sender.id)===new URL(event.senderFrame.url).origin&&event.senderFrame===event.sender.mainFrame&&windows.has(event.sender.id)}catch{return false}

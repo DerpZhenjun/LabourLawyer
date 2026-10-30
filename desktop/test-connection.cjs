@@ -23,6 +23,10 @@ test('persistence IPC refuses untrusted frames, unknown operations and invalid e
  assert.equal(reads,0);assert.equal(writes,0)
  const read={};handleConnectionRequest(read,{action:'read'},()=>true,store);assert.deepEqual(read.returnValue,{ok:true,value:null})
  const write={};handleConnectionRequest(write,{action:'write',value:null},()=>true,store);assert.deepEqual(write.returnValue,{ok:true,value:null});assert.equal(writes,1)
+ // Electron's returnValue setter sends a synchronous IPC reply immediately.
+ const replies=[],event={set returnValue(value){replies.push(value)}}
+ handleConnectionRequest(event,{action:'write',value:null},()=>true,store)
+ assert.deepEqual(replies,[{ok:true,value:null}],'Electron must receive exactly one reply, after persistence succeeds')
 })
 test('only the pinned main frame of the app window may use connection persistence',()=>{
  const frame={url:'http://127.0.0.1:49152/connection'},sender={id:1,mainFrame:frame},windows=new Map([[1,'http://127.0.0.1:49152']])
