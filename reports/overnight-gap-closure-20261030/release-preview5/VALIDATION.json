@@ -1,0 +1,47 @@
+{
+  "verified_at": "2026-10-30T21:55:01.500529+00:00",
+  "status": "PASS_BEFORE_PUBLICATION",
+  "client_source_commit": "61b712c8349896fbc2720bb7bf336c5fbdf14d70",
+  "main_api_cors_fix_commit": "4793a8b8",
+  "backend_clean_tests": {
+    "run": 300,
+    "skipped": 2,
+    "passed": 298
+  },
+  "desktop_cors_and_auth_regression": {
+    "run": 14,
+    "skipped": 1,
+    "guarded": true,
+    "actual_desktop_retested": true
+  },
+  "four_target_build": "PASS",
+  "assets_prepared": 9,
+  "android_version_code": 8,
+  "apk_certificates_and_web_bytes": "PASS",
+  "native_desktop": {
+    "source_ids_differ": true,
+    "own_material_copies_differ": true,
+    "one_evidence": true,
+    "cancel_generate_posts": 0,
+    "native_download_matches_viewed_word": true,
+    "whole_process_restart_keeps_server_address": true,
+    "direct_main_and_ubuntu_connections": true,
+    "external_http_save_rejected": true,
+    "anonymous_authentication": 401
+  },
+  "isolated_native_account_ui": {
+    "login_logout": true,
+    "anonymous_A_B_drafts_isolated": true,
+    "relogin_restores_own_draft": true,
+    "reset_A_preserves_B_and_anonymous": true,
+    "test_sessions_revoked": true
+  },
+  "physical_usb_install": false,
+  "authorized_usb_devices": 0,
+  "wechat_published": false,
+  "windows_trusted_code_signing": false,
+  "public_trusted_https": false,
+  "model_calls": 0,
+  "screenshots": "NOT_CAPTURED_TOOL_RESTRICTION",
+  "published_release": false
+}

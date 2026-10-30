@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-10-30T21:51:05.648499+00:00",
+  "status": "LIVE_TWO_OWN_LOCALITIES",
+  "scope": [
+    "350103",
+    "350104"
+  ],
+  "source_commit": "61b712c8349896fbc2720bb7bf336c5fbdf14d70",
+  "guide_status": "partial",
+  "guide_source_ids": [
+    "dcf9b71dee1c1cb61a3af637",
+    "9ab36db8d0ff985d9617a944"
+  ],
+  "own_material_copies": [
+    2,
+    1
+  ],
+  "main": {
+    "guides": 209,
+    "generatable": 192,
+    "history": 217,
+    "old_ack_receipts_preserved": 377,
+    "old_guide_rows_jobs_schema_preserved": true,
+    "six_user_file_sha_preserved": true,
+    "native_downloads": 8
+  },
+  "ubuntu": {
+    "guides": 209,
+    "generatable": 192,
+    "history": 209,
+    "old_guide_rows_jobs_schema_preserved": true,
+    "six_persistent_files_preserved_before_incremental_append": true,
+    "three_other_owned_services_not_restarted": true,
+    "native_downloads": 8,
+    "bundle_sha256": "82fcfaaa3fee875b9821594df75cc444e79890feefdd675c1087f9bfe9727d10",
+    "immutable_manifest_files": 3995,
+    "isolated_cold_generated_words": 10,
+    "cross_I_rejections": 8,
+    "separate_native_storage_tests": 12
+  },
+  "browser": {
+    "widths": [
+      375,
+      768,
+      1440
+    ],
+    "cancel_posts": 0,
+    "source_change": true,
+    "default_one_evidence": true,
+    "unsent_foreign_draft_not_inherited": true,
+    "all_download_zip_members_equal_independently_viewed_candidate": true,
+    "candidate_word_pages_independently_viewed": 12,
+    "screenshots": "NOT_CAPTURED_TOOL_RESTRICTION"
+  },
+  "boundaries": {
+    "sample_contents_verified": false,
+    "committee_autofill": false,
+    "direct_online_submission_verified": false,
+    "actual_application_submitted": false,
+    "model_calls": 0
+  },
+  "retained_failures": [
+    "cold checker v1 used a version field absent from inventory; v2 uses the same checked API guide store version, guard unchanged",
+    "storage v1 lacked a test-only inventory fixture excluded from deployment; v2 uses its exact source Git blob",
+    "first publisher used system Python without lxml and failed before DB write; existing application venv execution passed"
+  ]
+}

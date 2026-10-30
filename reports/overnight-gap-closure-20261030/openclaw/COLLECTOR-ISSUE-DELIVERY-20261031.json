@@ -1,0 +1,78 @@
+{
+  "schema": "collector-actual-post-verification/v1",
+  "scope": "Dedicated collector chain only; separate historical totals are not added as unique issues",
+  "worker_online": true,
+  "queue": {
+    "complete": 4,
+    "original_rows_preserved": true,
+    "evidence_files_preserved": 26
+  },
+  "dedicated_issue_outbox": {
+    "events": 4,
+    "pending": 0,
+    "acknowledged": 4,
+    "observations": 10,
+    "mirror_immutable_payload_and_semantic_bytes_equal": true,
+    "receipt_json_semantically_equal": true,
+    "complete_service_receipts_revalidated": 4
+  },
+  "journal": {
+    "observations": 4,
+    "outbox_persisted": 4
+  },
+  "independent_historical_stores": {
+    "main_acknowledged": 377,
+    "old_relay_acknowledged": 2,
+    "kept_separate": true,
+    "logical_hash_unchanged_during_final_QA": true,
+    "old_relay_matches_previously_reviewed_receipt": true
+  },
+  "preservation": {
+    "release_files_sha256_verified": 3995,
+    "protected_processes_unchanged": 3,
+    "original_user_rows_and_case_rows_hash_unchanged_during_QA": true,
+    "original_six_collector_config_values_equal": true,
+    "only_root_added_issue_outbox_pointer": true
+  },
+  "admin_ui": {
+    "native_form_login": true,
+    "widths_dom_pass": [
+      375,
+      768,
+      1440
+    ],
+    "horizontal_overflow": false,
+    "keyboard_refresh": true,
+    "case_api_requests": 0,
+    "new_jobs": 0,
+    "final_session_logout_http": 204,
+    "isolated_browser_closed": true,
+    "all_earlier_QA_sessions_revoked": "NOT_PROVEN",
+    "screenshots": 0
+  },
+  "ai_reviewed": false,
+  "guides_verified_by_delivery": false,
+  "model_calls": 0,
+  "verified_at": "2026-10-30T22:17:15.918440+00:00",
+  "actual_first_round": {
+    "service_verified": 4,
+    "remote_reconciled": 4,
+    "pending_before": 4,
+    "pending_after": 0,
+    "failed": 0
+  },
+  "idempotent_second_round": {
+    "remote_reconciled": 0,
+    "pending_before": 0,
+    "pending_after": 0,
+    "failed": 0
+  },
+  "continuous_broker": {
+    "running": true,
+    "interval_seconds": 120,
+    "operator_host": "Windows maintenance host",
+    "future_events_require_online_maintenance_host_and_gateway": true,
+    "offline_behavior": "New issues remain PENDING_OPENCLAW in the separate Ubuntu outbox; no service acknowledgement fabricated"
+  },
+  "source_commit": "61b712c8349896fbc2720bb7bf336c5fbdf14d70"
+}

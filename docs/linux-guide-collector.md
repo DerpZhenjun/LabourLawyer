@@ -45,3 +45,11 @@ PYTHONDONTWRITEBYTECODE=1 /home/ubuntu2204/SJL/LabourLawyer/collector-venv/bin/p
 证据 API `GET /jobs/{id}/evidence/{filename}?attempt=N` 也需要管理员 Bearer 凭据，只提供截图、正文和已取得文书，不提供原始 HTML、Cookie、进程路径或原始错误日志。客户端须用认证请求下载，不能直接将带鉴权的地址当作匿名图片 URL。
 
 `queue.sqlite3`、`evidence/{job}/attempt-N/`、`worker.json` 和 `outbox/` 全部位于持久目录。outbox 是本地待审问题提案，保存公开来源、明确地区、观察状态和证据摘要，不向外发送消息或自动发布问题；失败不证明没有服务。原始日志、浏览器临时状态和未审核资料不纳入公开部署包。管理员负责备份、磁盘监控和人工审核后的留存管理；程序不会自动删除历史证据。
+
+## 独立问题日志与实际送达
+
+新版把每次已保存的结果同步记入 `job_observations`。明确配置 `issue_outbox` 后，将允许的公开问题写入单独的 `collector-issues*.sqlite3`；与旧 `outbox/` 提案目录、地区指南库及案件库分开。未配置时明确显示未启用，读取失败显示待核实，不能显示成零条。
+
+旧任务可执行 `run-linux-guide-collector.py --config <配置文件> --issue-outbox <新的独立问题库> replay-issues` 补入日志。此命令只重放已经保存的结果，不访问官网、不调用模型，也不产生 OpenClaw 回执；重复运行保留已有问题与回执。不要把其他 SQLite 文件作为这个独立问题库。
+
+实际投递由 `scripts/relay-collector-openclaw.py` 完成，详见[投递说明](openclaw-issue-delivery.md)。当前 Ubuntu 部署的四条历史任务、26个证据文件已保留，十条问题观察去重为四条问题，实际服务回执四条、待投递零条。[运行验收](../reports/overnight-gap-closure-20261030/openclaw/COLLECTOR-ISSUE-DELIVERY-20261031.json)。管理员页面分别显示问题总数、待 OpenClaw 和实际送达；观察成功和服务已读均不等于当地指南或模板已经通过核验。

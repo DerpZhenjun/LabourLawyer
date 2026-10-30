@@ -1,0 +1,85 @@
+{
+  "verified_at": "2026-10-30T19:25:41.657972+00:00",
+  "status": "LIVE_BOTH_ENDPOINTS_VERIFIED",
+  "source_commit": "dd46be09d6f6f4087f8ba388272df65088f9aa7c",
+  "source_id": "3e2246aa2a534d2b37f6c6c5",
+  "region_code": "350102",
+  "guide_status": "partial",
+  "sample_contents_verified": false,
+  "stage_sha256": "76b891e7c44261b8a77dc7fbfa190ce06d0b377ad2934b7654181d3de4c9fb34",
+  "final_sha256": "f2dd9dbb759288f4fbbedcb311ea00fc13c69814374982ba43aa3cce03fa22d1",
+  "windows": {
+    "guides": 207,
+    "generatable": 190,
+    "history": 215,
+    "guide_version": 215,
+    "prior_raw_guides_and_outbox_preserved": true,
+    "six_existing_user_file_sha_preserved": true
+  },
+  "ubuntu": {
+    "guides": 207,
+    "generatable": 190,
+    "history": 207,
+    "guide_version": 207,
+    "cold_asgi": {
+      "guides": 207,
+      "generatable": 190,
+      "directory": 3974,
+      "missing_attachments": 0
+    },
+    "verified_deployment_files": 3885,
+    "deployment_manifest_sha256": "947a48cce17d043986277c357cd499cac0b056750578608f52b243bad9c5904e",
+    "reconstructed_from_verified_G_and_pinned_delta": true,
+    "full_archive_transfer_claimed": false,
+    "existing_six_persistent_files_unchanged_before_single_append": true,
+    "ollama_digital_collector_process_identities_unchanged": true
+  },
+  "native_browser": {
+    "downloads_per_endpoint": 4,
+    "widths": [
+      375,
+      768,
+      1440
+    ],
+    "cancel_no_post": true,
+    "initial_evidence_items": 1,
+    "own_source_current_version_headers": true,
+    "cross_region_native_switch_with_kunshan": true,
+    "all_word_zip_members_equal_independently_viewed_candidate": true,
+    "screenshots": "NOT_CAPTURED_TOOL_RESTRICTION"
+  },
+  "tests": {
+    "H_provider_dispatch": {
+      "passed": 14,
+      "seconds": 96.267
+    },
+    "H_seed_publication": {
+      "passed": 10,
+      "seconds": 99.541
+    },
+    "private_H_single_append": {
+      "passed": 31,
+      "seconds": 58.718
+    },
+    "earlier_frozen_6f_complete_suite": {
+      "run": 867,
+      "passed": 815,
+      "skipped": 52,
+      "seconds": 1842.042,
+      "scope": "exact clean6f source, before H publication activation; fixture AI counters are synthetic, no new real-model/31-province verification claim"
+    }
+  },
+  "cold_checker_first_failure": {
+    "cause": "Git archive exported5 auto-text deployment files asCRLF; first checker incorrectly pinnedLF blobs",
+    "resolved": "Each exact archive input is independently checked against commit blob with only the five knownCRLF export conversions; correct raw archive pins then passed unchanged bundle",
+    "failed_evidence_preserved": true,
+    "original_source_or_official_proof_changed": false
+  },
+  "limits": [
+    "Guide remains partial and official sample contents remain unverified.",
+    "Online guide button reached login boundary; direct entry is not represented as usable anonymous submission.",
+    "No official application submitted.",
+    "No new physical-phone or WeChat release acceptance claim.",
+    "Releases preview4 initial Ubuntu snapshot remains205/188 pending a later release refresh."
+  ]
+}

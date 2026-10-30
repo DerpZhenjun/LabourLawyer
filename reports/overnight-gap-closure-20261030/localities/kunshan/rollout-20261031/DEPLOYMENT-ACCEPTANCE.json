@@ -1,0 +1,67 @@
+{
+  "verified_at": "2026-10-30T19:03:16.569367+00:00",
+  "status": "LIVE_BOTH_ENDPOINTS_VERIFIED",
+  "scope": "Kunshan own-source rollout only; nationwide completion not claimed",
+  "source_commit": "6f6faac36512b287cbd1092a6a45f26ea97579d6",
+  "source_id": "d39444ab7f4bcaea2ea91473",
+  "region_code": "320583",
+  "stage_sha256": "f794e50d5ba7fcc01d520625efeaa60a851fd2c01d5428b1305fd5634e32bc32",
+  "final_sha256": "c55b2c697c5a2668b6752ce6ea6bdfcea4670a4be41be11c55f4d23e131d8894",
+  "windows": {
+    "guides": 206,
+    "generatable": 189,
+    "history": 214,
+    "guide_version": 214,
+    "prior_raw_guides_and_outbox_preserved": true,
+    "six_existing_user_file_sha_preserved": true
+  },
+  "ubuntu": {
+    "guides": 206,
+    "generatable": 189,
+    "history": 206,
+    "guide_version": 206,
+    "cold_asgi": {
+      "guides": 206,
+      "generatable": 189,
+      "directory": 3974,
+      "missing_attachments": 0,
+      "source_pins": 152,
+      "bundle_files": 3866,
+      "network_calls": 0,
+      "model_calls": 0
+    },
+    "existing_six_persistent_files_unchanged_before_single_append": true,
+    "ollama_digital_collector_process_identities_unchanged": true
+  },
+  "native_browser": {
+    "windows_downloads": 4,
+    "ubuntu_downloads": 4,
+    "widths": [
+      375,
+      768,
+      1440
+    ],
+    "cancel_sends_no_post": true,
+    "one_initial_evidence_item": true,
+    "each_post_uses_own_source_and_current_version": true,
+    "zip_crc_and_xml": true,
+    "all_uncompressed_zip_payloads_equal_independently_root_viewed_candidate": true,
+    "screenshots": "NOT_CAPTURED_TOOL_RESTRICTION"
+  },
+  "github_ci": {
+    "run": 41106359280,
+    "conclusion": "success",
+    "url": "https://github.com/DerpZhenjun/LabourLawyer/actions/runs/41106359280"
+  },
+  "clients": {
+    "runtime_source_changed_since_preview4": false,
+    "new_apk_build_claimed": false,
+    "requires_backend_for_new_own_source_forms": true
+  },
+  "limits": [
+    "No nationwide completion claim.",
+    "Guide online path stopped at official login/CAPTCHA; no application submitted.",
+    "Guide fields not supplied or verified remain pending.",
+    "Ubuntu public trusted HTTPS/domain remains unavailable."
+  ]
+}

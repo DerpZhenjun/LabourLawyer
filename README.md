@@ -39,14 +39,14 @@
 
 ![当地办理指南：窗口提示、材料与官方来源](docs/images/local-guide.png)
 
-**公开发行数据更新于 2026-10-31。全国区县尚未完成。**
+**运行站与最新源码数据更新于 2026-10-31。全国区县尚未完成。**
 
 | 范围 | 当前实际状态 |
 |---|---|
 | 省级入口 | 中国大陆 31 个省级地区；入口存在不代表指南已核验 |
 | 地区目录 | 3,974 条目录记录（含省市层级）；目录与候选合并追踪 3,590 个精确地区组合，不是全国功能区完整普查 |
-| 已发布当地指南 | 205 地：四川 180、江苏 12、浙江 7、安徽 2、湖南 4 |
-| 已发布当地填写生成 | 188 地：四川 164、江苏 12、浙江 7、安徽 1、湖南 4 |
+| 已发布当地指南 | 209 地：四川 180、江苏 13、浙江 7、安徽 2、湖南 4、福建 3 |
+| 已发布当地填写生成 | 192 地：四川 164、江苏 13、浙江 7、安徽 1、湖南 4、福建 3 |
 | 仅指南、未开放当地生成 | 17 地 |
 | 未发布候选 | 25 地，均不计入上线覆盖 |
 | 历史省级文书 | 保留独立入口，须另核对适用范围，不计入区县完成数 |
@@ -61,7 +61,7 @@
 
 相城、吴江、富阳、建德现已按各自官方指南和空白表格接入申请书、证据清单填写，**该批发布时合计202份当地指南、185个地区可填写生成**。八份候选原生下载共14页逐页核对，主站八份实际下载SHA逐件相同；保留210行指南历史及4294条采集任务。相城、吴江采用独立的28字段申请表及5项证据填写栏目（另含序号列），独立证据表没有份数栏；富阳4项材料、建德5项材料及两种联系电话分别保留。不因附件同SHA继承地区规则。[本批发布](reports/nationwide-verification-20261029-e/PUBLICATION.json) · [主站验收](reports/nationwide-verification-20261029-e/live-release/RESULT.json)。
 
-常熟、张家港已采集自己的指南和公开原件，填写适配仍待完成；桐庐选区返回省、市事项已拒绝接入，本县来源仍待核验。淳安另已完成自身申请书（仅劳动者部分）及证据清单的网页填写、下载和逐页Word检查，当前主站和公开发行快照均为203份指南、186个可生成地区。主站指南历史211条，既有210条保持原值；[增量发布回执](reports/production-readiness-20261030/MAIN-PUBLICATION.json)单独保留。**待核验不等于官方没有提供。**[下一批实际状态](reports/nationwide-verification-20261029-f/SOURCE-INVENTORY.json)。
+淳安已完成自身申请书（仅劳动者部分）及证据清单的网页填写、下载和逐页Word检查。该批发布时为203份指南、186个可生成地区；历史211条，既有210条保持原值。[增量发布回执](reports/production-readiness-20261030/MAIN-PUBLICATION.json)单独保留。常熟、张家港后续已发布；桐庐选区返回省、市事项已拒绝接入，本县来源仍待核验。**待核验不等于官方没有提供。**[来源状态](reports/nationwide-verification-20261029-f/SOURCE-INVENTORY.json)。
 
 禅城仅找到历史文书，当前适用性待核实；南海、历下、市中及此前5地继续定位或访问复核。管理页区分未查、已查未找到、官方明确未提供，本轮最后一种结论为0。详见[第一批验收](reports/nationwide-verification-20261029/TEST-REPORT.md)与[第二批来源](reports/nationwide-verification-20261029-b/SOURCE-INVENTORY.json)。
 
@@ -77,7 +77,13 @@
 
 运行后在 `/admin/regions` 查看实时矩阵。仓库中可核对 [逐省实际进度](docs/regions-status.md)、[公开数据版本](data/public-regions/manifest.json)、[候选登记](config/regional_candidates.json) 与 [地区接入说明](docs/regional-release.md)。
 
-2026-10-31继续以常熟、张家港各自官方指南和空白表格接入申请书、证据清单。四份候选网页真实下载及下载件逐页检查通过；Windows主站增量发布到205/188，原指南历史与377条OpenClaw回执保留。材料缺失字段仍待核验，不保证受理。昆山另行采集自身材料和模板，尚不计为已发布。[本轮封存验收](reports/overnight-gap-closure-20261030/localities/jiangsu-f/FINAL-BROWSER-QA.json) · [主站发布](reports/overnight-gap-closure-20261030/localities/MAIN-PUBLICATION.json)。
+2026-10-31以常熟、张家港各自官方指南和空白表格接入申请书、证据清单，该批增量发布到205/188，原指南历史与377条OpenClaw回执保留。[封存验收](reports/overnight-gap-closure-20261030/localities/jiangsu-f/FINAL-BROWSER-QA.json) · [该批发布](reports/overnight-gap-closure-20261030/localities/MAIN-PUBLICATION.json)。
+
+随后昆山市、福州市鼓楼区按各自指南、材料和空白原件接入，Windows主站及Ubuntu运行站均达到 **207份指南、190地填写生成**。两处服务分别实际下载申请书、证据清单的填写版与空白版，375/768/1440布局、取消生成及跨地区来源切换通过。鼓楼仍标记部分字段待核实，未核验示例不开放生成。[昆山上线验收](reports/overnight-gap-closure-20261030/localities/kunshan/rollout-20261031/DEPLOYMENT-ACCEPTANCE.json) · [鼓楼上线验收](reports/overnight-gap-closure-20261030/localities/fujian-h/rollout-20261031/DEPLOYMENT-ACCEPTANCE.json)。
+
+<img src="reports/overnight-gap-closure-20261030/localities/fujian-h/native-browser-v4/application-filled-1.png" width="320" alt="鼓楼自身官方空白表格填写结果，全部为虚构验收信息，签名留空" />
+
+台江、仓山随后分别按自身资料上线，Windows主站及Ubuntu运行站现为 **209份指南、192地填写生成**。两地材料份数分别保留为2份、1份；两处实际16份文书下载与已检查Word逐字节一致，375/768/1440布局、取消和来源切换通过。[台江与仓山验收](reports/overnight-gap-closure-20261030/localities/fujian-i/rollout-20261031/DEPLOYMENT-ACCEPTANCE.json)。其他新采集地区仍需完成独立验收及发布，不计入上线数量。Releases的preview.4初始Ubuntu快照为205/188；客户端连接已更新后端可使用新地区，后续发行包另行更新，不能把运行站更新当作安装包已经重发。
 
 ### 淳安：自身原件与逐页检查
 
@@ -93,7 +99,7 @@
 
 <img src="docs/images/digital-human-ubuntu-compact.jpg" width="320" alt="真实网页375px客服小窗：上半身形象与聊天输入，不遮满整页" />
 
-Ubuntu独立数字人服务已完成形象加载、远程合成问答与375/768/1440px布局检查。小窗收起保留当前对话，关闭后重新打开不重放旧对话；iframe内Esc可关闭并恢复焦点。上述截图为本轮真实候选网页，未用设计稿替代运行截图。
+Ubuntu独立数字人服务已完成形象加载、远程合成问答与375/768/1440px布局检查。小窗收起保留当前对话，关闭后重新打开不重放旧对话；iframe内Esc可关闭并恢复焦点。配图为项目此前保存的运行画面。本轮新增验证使用DOM、真实交互和网络记录，未新增浏览器截图。
 
 ![AI 法律顾问通过 Ubuntu Qwen3.8 返回真实测试回答](docs/images/ai-advisor.png)
 
@@ -109,7 +115,7 @@ Ubuntu独立数字人服务已完成形象加载、远程合成问答与375/768/
 
 上图是历史截图，当时的 `PENDING_OPENCLAW` 表示尚未取得服务确认。2026-10-30 已使用独立 OpenClaw 配置，通过真实 `tools.invoke / memory_get` 核对全部377条公开问题，并将377条回执增量写回项目，待确认0条、AI分析0条。服务读取不等于AI复核；没有调用模型，也没有发送个人文书。原有指南历史和全局 OpenClaw 主配置保留。这377条回执在Windows主站公共库；新Ubuntu部署使用独立空outbox，不复制私有OpenClaw配置，也不伪造已同步状态。[本轮真实结果](reports/production-readiness-20261030/openclaw/FINAL-RESULT.json) · [隔离同步及启动说明](docs/openclaw-issue-delivery.md)。
 
-新增Linux队列的4个任务保存为待审核观察。其中两条公开访问/下载问题经过独立复核后，已通过真实OpenClaw完整内容回读取得2条回执；它们在独立投递库，不与主站377条重复计数。原观察与模板适用性仍待审核，AI分析0，持续自动投递尚未实现。[实际问题回执](reports/overnight-gap-closure-20261030/openclaw/LINUX-ISSUE-RECEIPTS.json)。
+新增Linux采集器的4条历史任务已补入持久观察日志，26个证据文件保留；其10条问题观察去重为4条公开问题，均已通过真实OpenClaw完整回读取得回执，待投递0。新的独立问题库、旧手工投递库2条及主站377条分别统计，不能相加作为独立问题数量。管理员页面显示本采集链路的持久问题、待投递及实际送达数量。持续同步进程每120秒检查一次；它目前运行在Windows维护端，维护端或网关离线时，新问题继续保存在Ubuntu的outbox等待重试。回执不代表AI审核、指南核验或模板适用性已确认，模型调用0。[实际采集链路验收](reports/overnight-gap-closure-20261030/openclaw/COLLECTOR-ISSUE-DELIVERY-20261031.json) · [旧两条独立回执](reports/overnight-gap-closure-20261030/openclaw/LINUX-ISSUE-RECEIPTS.json)。
 
 ## 网页、Android 与小程序
 

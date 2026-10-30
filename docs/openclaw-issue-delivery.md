@@ -70,3 +70,15 @@ python -m unittest discover -s backend/tests -p test_regional_issue_delivery.py 
 覆盖真实临时 SQLite 和文件系统：默认只读、部分写入及崩溃重试、坏事件隔离、证据损坏、事件变化、隐私过滤、公开事项 URL、profile/工作区错配拒绝、显式 CLI profile、继承覆盖清除、内层失败和截断拒绝、旧证据不可覆盖。
 
 公开报告仅包含 FINAL-RESULT.json、FINAL-SERVICE-RECEIPTS.json、VERIFY-TESTS.json、STARTUP-CHECK.json 及精确允许入库的 PUBLIC-FILES.json。安装探测、提案/撤销、原始最终清单、进程信息等调查记录已逐字节归档至私有 profile 的 audit/，不纳入公开提交。操作员路径、进程标识和凭据不进入公开导出；原始与脱敏文件哈希关系及审核过的原始清单 SHA256 见 PUBLIC-FILES.json。服务接收证据只代表公开事件内容被 OpenClaw 服务精确读取和存档，不代表模型复核或问题已解决。
+
+## Linux 采集器的独立投递链路
+
+`relay-collector-openclaw.py` 为当前已部署的 Ubuntu 采集器提供专用桥接。它通过已配置的 SSH 别名只取独立 outbox 中允许的公开待投递字段，不复制数据库、账号、原始证据或用户文书。新的本机镜像永久绑定远端文件身份；旧镜像、指南库及其他 SQLite 文件不能自动接管。
+
+先验证上述独立 OpenClaw 网关可用，为本轮镜像新建私有父目录，再显式指定 `--ssh-alias`、`--remote-database`、`--mirror`、`--workspace` 运行该脚本。远端路径和 UID 校验目前针对已安装的项目部署，不是任意 Linux 主机的通用迁移工具；迁移时须按新的路径和拥有者重新审核。不要复制私有网关凭据到 Ubuntu 或版本库。
+
+首次执行依次验证公开内容、调用真实 `memory_get` 全文回读、校验证据，再按事件编号和原 payload SHA 比较写回远端 ACK。文件导出或本机镜像 ACK 都不能单独作为远端已送达证明。SSH 中断、网关不可用或证据不一致时保留待投递，重复执行不重置已有回执。`--interval 120` 可持续重试，不启动模型。
+
+当前持续进程在 Windows 维护端运行，每120秒检查一次，没有安装系统自动启动任务。维护端、SSH 或网关离线时，Ubuntu 仍持久保存新问题，恢复后继续投递；不能宣称此部署完全脱离维护端运行。主站历史377条、旧独立投递库2条、新采集链路4条分别保留，不相加作为去重后的全国问题总数。
+
+[2026-10-31实际服务与管理页验收](../reports/overnight-gap-closure-20261030/openclaw/COLLECTOR-ISSUE-DELIVERY-20261031.json)包括首次四条真实回执、零待投递及重复投递不变。最终管理页测试会话已正常退出；早期失败测试关闭浏览器后的会话撤销未能证明，未清理其他账号会话。此项测试限制在报告中保留。
