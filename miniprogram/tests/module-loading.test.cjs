@@ -17,3 +17,6 @@ for (const name of ['provinces', 'documentForms', 'provinceExperiences']) {
   assert.deepEqual(JSON.parse(JSON.stringify(load(path.join(root, 'data', name + '.js')))), JSON.parse(fs.readFileSync(path.join(root, 'data', name + '.json'), 'utf8')), name + ' CJS data must match its source exactly')
 }
 console.log('PASS simulator-compatible JS module loading and 3 exact source-data parity checks')
+const ignored=JSON.parse(fs.readFileSync(path.join(root,'project.config.json'),'utf8')).packOptions.ignore
+for(const folder of ['node_modules','tests','scripts','types'])assert(ignored.some(rule=>rule.type==='folder'&&rule.value===folder),'Development-only folder must not enter a WeChat package: '+folder)
+console.log('PASS WeChat packaging excludes compiler dependencies and development-only folders')
