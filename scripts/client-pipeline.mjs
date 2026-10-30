@@ -58,6 +58,7 @@ function sourceSnapshot(root, inputs) {
 
 function defaultInputs(targets) {
   return [...new Set(['frontend', 'ChatVRM/src/pages/index.tsx', 'scripts/test-digital-chat-privacy.cjs', 'scripts/react-mount-fixture/package.json', 'scripts/react-mount-fixture/package-lock.json', 'scripts/test-assistant-session.mjs', 'scripts/test-chat-privacy.mjs', 'scripts/test-auth-session.mjs', 'scripts/test-auth-flows.mjs', 'scripts/test-server-workspace.mjs', 'scripts/test-service-address.mjs', 'scripts/test-stable-api-types.mjs', 'scripts/test-client-catalog-sync.mjs', 'scripts/test-api-base.mjs', 'scripts/sync-document-clients.mjs', 'scripts/client-pipeline.mjs', 'scripts/build-api-contracts.mjs', 'scripts/build-regional-contracts.mjs', 'scripts/build-client-contracts.mjs', 'scripts/test-client-ai-contracts.mjs', 'scripts/test-regional-contracts.mjs', 'scripts/sync-client-release.mjs', 'packages', 'backend', 'config', 'data/public-regions',
+    'desktop/start.html',
     ...(targets.includes('mini') ? ['miniprogram'] : []),
     ...(targets.includes('android') ? ['mobile'] : []),
     ...(targets.includes('desktop') ? ['desktop', 'LICENSE'] : []),

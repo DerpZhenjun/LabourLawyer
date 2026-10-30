@@ -186,9 +186,10 @@ if (api) {
   })
 
   test('editing an executed shared test or release metadata check invalidates build evidence', async t => {
-    for (const changed of ['scripts/test-client-ai-contracts.mjs', 'scripts/test-regional-contracts.mjs', 'scripts/sync-client-release.mjs', 'scripts/test-digital-chat-privacy.cjs', 'scripts/react-mount-fixture/package-lock.json', 'ChatVRM/src/pages/index.tsx']) {
+    for (const changed of ['scripts/test-client-ai-contracts.mjs', 'scripts/test-regional-contracts.mjs', 'scripts/sync-client-release.mjs', 'desktop/start.html', 'scripts/test-digital-chat-privacy.cjs', 'scripts/react-mount-fixture/package-lock.json', 'ChatVRM/src/pages/index.tsx']) {
       const f = fixture(t)
-      for (const directory of ['scripts', 'packages', 'backend', 'config', 'data/public-regions', 'frontend', 'miniprogram', 'scripts/react-mount-fixture', 'ChatVRM/src/pages']) mkdirSync(join(f.root, directory), { recursive: true })
+      for (const directory of ['scripts', 'packages', 'backend', 'config', 'data/public-regions', 'frontend', 'miniprogram', 'desktop', 'scripts/react-mount-fixture', 'ChatVRM/src/pages']) mkdirSync(join(f.root, directory), { recursive: true })
+      writeFileSync(join(f.root,'desktop/start.html'),'<p>initial desktop start page</p>')
       for (const name of ['scripts/react-mount-fixture/package.json', 'scripts/react-mount-fixture/package-lock.json', 'ChatVRM/src/pages/index.tsx']) writeFileSync(join(f.root,name),'{}')
       writeFileSync(join(f.root,'scripts/test-digital-chat-privacy.cjs'),'// initial digital privacy check')
       for (const file of ['test-assistant-session.mjs','test-chat-privacy.mjs','test-auth-session.mjs','test-auth-flows.mjs','test-server-workspace.mjs','test-service-address.mjs','client-pipeline.mjs', 'build-api-contracts.mjs', 'build-regional-contracts.mjs', 'build-client-contracts.mjs', 'test-client-ai-contracts.mjs', 'test-regional-contracts.mjs', 'sync-client-release.mjs', 'test-stable-api-types.mjs','test-client-catalog-sync.mjs','test-api-base.mjs','sync-document-clients.mjs']) writeFileSync(join(f.root, 'scripts', file), '// initial check body')

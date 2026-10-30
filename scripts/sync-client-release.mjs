@@ -18,6 +18,10 @@ export function syncRelease({root=ROOT,check=true}={}){
  const gradle='mobile/android/app/build.gradle',source=read(gradle)
  if((source.match(/versionCode\s+\d+/g)||[]).length!==1||(source.match(/versionName\s+"[^"]+"/g)||[]).length!==1)throw Error('Missing or ambiguous Android release version')
  files[gradle]=source.replace(/versionCode\s+\d+/,`versionCode ${release.androidVersionCode}`).replace(/versionName\s+"[^"]+"/,`versionName "${release.version}"`)
+ const desktopStart='desktop/start.html',start=read(desktopStart)
+ const desktopVersion=/(<p class="tag">Windows 桌面客户端 · v)[^<]+(<\/p>)/g
+ if([...start.matchAll(desktopVersion)].length!==1)throw Error('Missing or ambiguous desktop start page release version')
+ files[desktopStart]=start.replace(desktopVersion,(_,prefix,suffix)=>prefix+release.version+suffix)
  const data={version:release.version,channel:release.channel}
  files['miniprogram/utils/generated/release-info.js']='// Generated from config/client-release.json. Do not edit.\nmodule.exports = '+JSON.stringify(data,null,2)+'\n'
  files['miniprogram/utils/generated/release-info.d.ts']='// Generated from config/client-release.json. Do not edit.\ndeclare const release: {readonly version:'+JSON.stringify(release.version)+';readonly channel:'+JSON.stringify(release.channel)+'}\nexport = release\n'
