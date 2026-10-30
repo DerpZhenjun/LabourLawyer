@@ -64,6 +64,7 @@ jobs:
           node scripts/test-server-workspace.mjs
           node scripts/test-service-address.mjs
           node scripts/test-auth-flows.mjs
+          node scripts/test-public-draft-scope.mjs
           node scripts/test-assistant-session.mjs
           node scripts/test-chat-privacy.mjs
           node scripts/test-digital-chat-privacy.cjs

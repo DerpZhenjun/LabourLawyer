@@ -203,7 +203,7 @@ if (api) {
   })
 
   test('editing an executed shared test or release metadata check invalidates build evidence', async t => {
-    for (const changed of ['scripts/test-client-ai-contracts.mjs', 'scripts/test-regional-contracts.mjs', 'scripts/test-official-collector.mjs', 'scripts/test-digital-service-config.mjs', 'scripts/test-regional-online-link.mjs', 'scripts/sync-client-release.mjs', 'desktop/start.html', 'desktop/preload.cjs', 'scripts/test-digital-chat-privacy.cjs', 'scripts/react-mount-fixture/package-lock.json', 'ChatVRM/src/pages/index.tsx']) {
+    for (const changed of ['scripts/test-public-draft-scope.mjs', 'scripts/test-client-ai-contracts.mjs', 'scripts/test-regional-contracts.mjs', 'scripts/test-official-collector.mjs', 'scripts/test-digital-service-config.mjs', 'scripts/test-regional-online-link.mjs', 'scripts/sync-client-release.mjs', 'desktop/start.html', 'desktop/preload.cjs', 'scripts/test-digital-chat-privacy.cjs', 'scripts/react-mount-fixture/package-lock.json', 'ChatVRM/src/pages/index.tsx']) {
       const f = fixture(t)
       for (const directory of ['scripts', 'packages', 'backend', 'config', 'data/public-regions', 'frontend', 'miniprogram', 'desktop', 'scripts/react-mount-fixture', 'ChatVRM/src/pages']) mkdirSync(join(f.root, directory), { recursive: true })
       writeFileSync(join(f.root,'desktop/start.html'),'<p>initial desktop start page</p>')
@@ -212,7 +212,7 @@ if (api) {
       writeFileSync(join(f.root,'scripts/test-digital-chat-privacy.cjs'),'// initial digital privacy check')
       for (const file of ['test-assistant-session.mjs','test-chat-privacy.mjs','test-auth-session.mjs','test-auth-flows.mjs','test-server-workspace.mjs','test-service-address.mjs','client-pipeline.mjs', 'build-api-contracts.mjs', 'build-regional-contracts.mjs', 'build-client-contracts.mjs', 'test-client-ai-contracts.mjs', 'test-regional-contracts.mjs', 'sync-client-release.mjs', 'test-stable-api-types.mjs','test-client-catalog-sync.mjs','test-api-base.mjs','sync-document-clients.mjs']) writeFileSync(join(f.root, 'scripts', file), '// initial check body')
       for(const name of ['frontend/package.json','frontend/package-lock.json'])writeFileSync(join(f.root,name),'{}')
-      for(const name of ['test-official-collector.mjs','test-digital-service-config.mjs','test-regional-online-link.mjs'])writeFileSync(join(f.root,'scripts',name),'// initial overnight check')
+      for(const name of ['test-public-draft-scope.mjs','test-official-collector.mjs','test-digital-service-config.mjs','test-regional-online-link.mjs'])writeFileSync(join(f.root,'scripts',name),'// initial overnight check')
       const result = await api.runPipeline({ ...f, inputs: undefined, runner: async command => {
         if (command.args[0] !== 'shared') f.writeArtifact(command.args[0])
         return { status: 0 }

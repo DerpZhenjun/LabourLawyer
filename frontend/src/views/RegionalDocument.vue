@@ -39,6 +39,7 @@ import {createHunanApplicationExample,validateHunanApplication} from '@/data/hun
 import {FEIDONG_ADAPTER_KEY,createFeidongApplicationExample,validateFeidongApplication} from '@/data/feidongApplicationFields'
 import {useRegionalGuide,regionalClient} from '@/composables/useRegionalGuide'
 import {useRegionalForm} from '@/composables/useRegionalForm'
+import {publicEditorIdentity} from '@/api/publicDraftScope'
 import {useDialogFocus} from '@/composables/useDialogFocus'
 import {downloadDocument} from '@/composables/downloadDocument'
 import {createExampleForm} from '../../../packages/regional-contracts/src/index.ts'
@@ -70,7 +71,7 @@ const specialization=(contract:FormContract)=>{
   if(kind==='application'&&adapter===FEIDONG_ADAPTER_KEY)return'feidong'
   return'generic'
 }
-const formState=useRegionalForm(context,{client:regionalClient,identity,download:downloadDocument,
+const formState=useRegionalForm(context,{client:regionalClient,identity,ownerIdentity:publicEditorIdentity,download:downloadDocument,
   example:contract=>{
     const type=specialization(contract),kind=contract.context.kind
     return type==='jiangsu'?createJiangsuOwnExample(kind):type==='zhejiang'?createZhejiangOwnExample(kind):type==='hunan'?createHunanApplicationExample():type==='feidong'?createFeidongApplicationExample():createExampleForm(contract)

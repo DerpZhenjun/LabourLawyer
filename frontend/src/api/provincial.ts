@@ -12,14 +12,17 @@ export function provincialEventValue(event:Event):string {
   const target=event.target
   return target instanceof HTMLInputElement||target instanceof HTMLTextAreaElement||target instanceof HTMLSelectElement?target.value:''
 }
-export interface ProvincialDraft<T> {form:T;raw:unknown;blocked:boolean;saved:boolean;notice:string}
+export interface ProvincialDraft<T> {form:T;raw:unknown;blocked:boolean;saved:boolean;notice:string;saveBlocked?:boolean}
 const clone=<T>(value:T):T=>structuredClone(value)
 /** Retain unknown legacy keys. Malformed stored text remains untouched until explicit clear. */
-export function readProvincialDraft<T extends Record<string,unknown>>(key:string,defaults:T):ProvincialDraft<T> {
+const CLEARED='{"__labourlawyer_cleared_draft_v7":true}'
+export function readProvincialDraft<T extends Record<string,unknown>>(key:string,defaults:T,legacyKey?:string):ProvincialDraft<T> {
   let raw:unknown=null
   let stored=false
   try {
-    const text=localStorage.getItem(key)
+    const primary=localStorage.getItem(key)
+    const text=primary===null&&legacyKey?localStorage.getItem(legacyKey):primary
+    if(text===CLEARED)return {form:clone(defaults),raw:null,blocked:false,saved:false,notice:''}
     if(text===null)return {form:clone(defaults),raw:null,blocked:false,saved:false,notice:''}
     stored=true
     raw=text
@@ -38,14 +41,18 @@ export function readProvincialDraft<T extends Record<string,unknown>>(key:string
     }
     return {form,raw,blocked:false,saved:true,notice:''}
   } catch {
-    return {form:clone(defaults),raw,blocked:stored,saved:stored,notice:stored?'保存的草稿格式无法读取，原始内容仍保留在本机。请清除草稿后重新填写。':'草稿暂无法读取，仍可填写和生成；请自行保留重要内容。'}
+    return {form:clone(defaults),raw,blocked:stored,saved:stored,saveBlocked:true,notice:stored?'保存的草稿格式无法读取，原始内容仍保留在本机。请重置本次填写后重试。':'草稿暂无法读取，仍可填写和生成；请自行保留重要内容。'}
   }
 }
 export function saveProvincialDraft(key:string,value:unknown):string {
   try {localStorage.setItem(key,JSON.stringify(value));return ''}catch{return '草稿暂未保存，请自行保留内容；仍可生成文书。'}
 }
-export async function postProvincialDocument(path:string,payload:Readonly<Record<string,unknown>>):Promise<Blob> {
-  const response=await axios.post<unknown>(apiURL(path),payload,{responseType:'blob',timeout:30000})
+/** A scoped tombstone suppresses legacy fallback without deleting legacy bytes. */
+export function clearProvincialDraft(key:string):string {
+  try{localStorage.setItem(key,CLEARED);return ''}catch{return '重置状态暂未保存，旧本机内容仍保留；请自行保管重要内容。'}
+}
+export async function postProvincialDocument(path:string,payload:Readonly<Record<string,unknown>>,signal?:AbortSignal):Promise<Blob> {
+  const response=await axios.post<unknown>(apiURL(path),payload,{responseType:'blob',timeout:30000,...(signal?{signal}:{})})
   if(!(response.data instanceof Blob))throw new TypeError('生成服务没有返回文书文件，请重试。')
   return response.data
 }

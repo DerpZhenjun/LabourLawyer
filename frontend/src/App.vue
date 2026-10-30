@@ -20,7 +20,7 @@
 
   <div v-else class="public-site">
     <PublicHeader />
-    <RouterView :key="route.path" />
+    <RouterView :key="route.path+':'+(publicEditorRoute?publicEditorIdentity:'public')" />
     <footer class="public-footer">
       <div><div class="footer-brand"><BrandMark :size="32" /><div><strong>LabourLawyer</strong><small>劳动仲裁文书助手</small></div></div><p>帮助普通劳动者了解办理流程、准备申请文书和整理证据。</p></div>
       <div><strong>重要说明</strong><p>本平台提供文书和办事信息辅助，不替代律师法律意见。政务办理以当地仲裁委员会最新要求为准。</p></div>
@@ -40,6 +40,7 @@ import BrandMark from '@/components/BrandMark.vue'
 import {useAssistantDock} from '@/composables/useAssistantDock'
 const DigitalLawyer = defineAsyncComponent(() => import('@/components/DigitalLawyer.vue'))
 import {currentUser,logout} from '@/api/auth'
+import {publicEditorIdentity} from '@/api/publicDraftScope'
 import PublicHeader from '@/components/PublicHeader.vue'
 const QA = defineAsyncComponent(() => import('@/components/QA.vue'))
 
@@ -47,6 +48,7 @@ const route=useRoute();const router=useRouter();const sidebarOpen=ref(false);con
 const assistantButton=ref<HTMLElement|null>(null)
 const assistantDock=useAssistantDock(assistantButton)
 const isAdmin=computed(()=>route.meta.layout==='admin')
+const publicEditorRoute=computed(()=>/^\/(?:province|documents|local-documents)(?:\/|$)/.test(route.path))
 const currentMeta=computed(()=>({eyebrow:route.meta.eyebrow||'管理后台',title:route.meta.title||'LabourLawyer'}))
 const adminNav=[
   {to:'/admin',label:'工作概览',icon:'fa-solid fa-table-cells-large'},

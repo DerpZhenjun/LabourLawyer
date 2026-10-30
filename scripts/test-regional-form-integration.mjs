@@ -73,6 +73,7 @@ const Page=compile('frontend/src/views/RegionalDocument.vue',{
   '@/components/HunanApplicationFields.vue':special('hunan'),'@/components/FeidongApplicationFields.vue':special('feidong'),
   '@/composables/useRegionalGuide':{regionalClient:client,useRegionalGuide:()=>{throw new Error('Embedded test should not perform guide lookup')}},
   '@/composables/useRegionalForm':{useRegionalForm:(...args)=>(latest=stateAPI.useRegionalForm(...args))},
+  '@/api/publicDraftScope':{publicEditorIdentity:vue.ref('synthetic-fixed-owner')},
   '@/composables/useDialogFocus':{useDialogFocus:(open,element,close)=>{escape=close}},
   '@/composables/downloadDocument':{downloadDocument:async(blob,filename)=>{downloads.push({blob,filename})}},
   '@/data/jiangsuOwnFields':js,'@/data/zhejiangOwnFields':zj,'@/data/hunanApplicationFields':hn,'@/data/feidongApplicationFields':fd,

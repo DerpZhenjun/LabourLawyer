@@ -35,9 +35,10 @@ const vue=require('vue'),esbuild=require('esbuild')
 const provinceData=await import(new URL('../frontend/src/data/provinces.js',import.meta.url))
 const pure=await import(new URL('../packages/regional-contracts/src/provincial.ts',import.meta.url))
 const captures=[],downloads=[]
-const axiosFixture={post:async(url,payload,options)=>{captures.push({url,payload:structuredClone(payload),options});return {data:new Blob(['synthetic Word body'])}},isAxiosError:value=>!!value&&typeof value==='object'&&value.isAxiosError===true}
+const axiosFixture={post:async(url,payload,options)=>{const{signal,...stableOptions}=options;assert(!signal||signal instanceof AbortSignal);captures.push({url,payload:structuredClone(payload),options:stableOptions});return {data:new Blob(['synthetic Word body'])}},isAxiosError:value=>!!value&&typeof value==='object'&&value.isAxiosError===true}
 function execute(source,resolve){const module={exports:{}};new Function('require','module','exports',esbuild.transformSync(source,{loader:'ts',format:'cjs',define:{'import.meta.env.VITE_API_BASE_URL':'"http://synthetic.invalid"'}}).code)(resolve,module,module.exports);return module.exports}
 const api=execute(readFileSync(path.join(root,'frontend/src/api/provincial.ts'),'utf8'),name=>name==='axios'?axiosFixture:name==='./http'?{apiURL:p=>'http://synthetic.invalid'+p}:pure)
+const draftScopes=execute(readFileSync(path.join(root,'frontend/src/api/publicDraftScope.ts'),'utf8'),name=>name==='vue'?vue:name==='./auth'?{currentUser:vue.shallowRef(null)}:{API_BASE:'http://synthetic.invalid'})
 let storage=new Map()
 globalThis.localStorage={getItem:key=>storage.get(key)??null,setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)}
 globalThis.window={addEventListener(){},removeEventListener(){},scrollTo(){},matchMedia:()=>({matches:true})}
@@ -51,7 +52,7 @@ function component(file,inline=false,fieldData={}) {
  const compiled=require('@vue/compiler-sfc').compileScript(descriptor,{id:'provincial-mounted',inlineTemplate:inline})
  const compiledTemplate=require('@vue/compiler-sfc').compileTemplate({source:descriptor.template.content,filename:file,id:'provincial-mounted',compilerOptions:{bindingMetadata:compiled.bindings}})
  assert.deepEqual(compiledTemplate.errors,[])
- const output=execute(compiled.content,name=>name==='vue'?vue:name==='axios'?axiosFixture:name==='vue-router'?{RouterLink:{}}:name==='@/api/provincial'?api:name==='@/data/provinces'?provinceData:name==='@/composables/downloadDocument'?{downloadDocument:async(blob,filename)=>downloads.push({blob,filename})}:name.includes('ApplicationFields')?fieldData:{})
+ const output=execute(compiled.content,name=>name==='vue'?vue:name==='axios'?axiosFixture:name==='vue-router'?{RouterLink:{}}:name==='@/api/provincial'?api:name==='@/api/publicDraftScope'?draftScopes:name==='@/data/provinces'?provinceData:name==='@/composables/downloadDocument'?{downloadDocument:async(blob,filename)=>downloads.push({blob,filename})}:name.includes('ApplicationFields')?fieldData:{})
  const result=output.default
  if(!inline)result.render=()=>vue.h('div')
  return result
@@ -131,4 +132,5 @@ storage=new Map([[evidenceKey,JSON.stringify({...provinceData.makeEvidenceExampl
 const storedEvidence=await mountPage(path.join(root,'frontend/src/views/Zhejiang/EL.vue'),'zhejiang')
 storedEvidence.state.form.caseNumber='虚构验收案号';storedEvidence.state.saveDraft();storedEvidence.app.unmount()
 assert.deepEqual(JSON.parse(storage.get(evidenceKey)).legacy,{retained:true})
+assert.deepEqual(JSON.parse(storage.get(draftScopes.provincialDraftLocation('zhejiang','evidence').key)).legacy,{retained:true})
 console.log('PASS mounted provincial malformed-draft write protection and preservation of unknown saved evidence headers')

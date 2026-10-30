@@ -16,6 +16,7 @@
 
     <div class="page-grid">
       <form class="form-column" :class="{'sample-values':usingExample}" novalidate @input="usingExample=false" @change="usingExample=false" @submit.prevent="requestGeneration">
+        <p class="draft-scope-note" role="note">{{ draftScopeNotice }}</p>
         <div class="sample-note"><i aria-hidden="true" class="fa-solid fa-wand-magic-sparkles"></i><span><strong>已填入虚构示例，请按实际情况修改</strong>可以直接生成案例文书，也可以按你的实际情况逐项修改。</span></div>
         <section class="form-section" id="applicant-section">
           <div class="section-heading"><span><i aria-hidden="true" class="fa-regular fa-user"></i></span><div><small>第 1 步</small><h2>填写你的信息</h2><p>请按身份证上的内容填写。</p></div></div>
@@ -99,7 +100,7 @@
       <aside v-if="!embedded" class="side-column">
         <div class="side-card official-info"><span class="side-label"><i aria-hidden="true" class="fa-solid fa-building-columns"></i> {{ config.shortName }}官方办事信息</span><h2>提交前先准备这些</h2><ul><li><i aria-hidden="true" class="fa-regular fa-id-card"></i><span><strong>身份证明</strong>身份证等有效证件</span></li><li><i aria-hidden="true" class="fa-regular fa-building"></i><span><strong>公司登记信息</strong>公司全称、代码和地址</span></li><li><i aria-hidden="true" class="fa-solid fa-link"></i><span><strong>劳动关系材料</strong>合同、工资流水、社保记录等</span></li><li><i aria-hidden="true" class="fa-regular fa-folder-open"></i><span><strong>支持你要求的证据</strong>{{ config.materialNote }}</span></li></ul><RouterLink v-if="config.evidenceRoute" :to="config.evidenceRoute"><i aria-hidden="true" class="fa-solid fa-list-check"></i> 接着制作证据清单</RouterLink></div>
         <div class="side-card online-card"><div><span>官方信息</span><strong>{{ config.promise }}</strong><small>来源适用范围：{{ config.scope }}</small></div><a :href="config.officialUrl" target="_blank" rel="noopener noreferrer">查看{{ config.shortName }}官方来源页 <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
-        <div class="draft-note"><i aria-hidden="true" class="fa-regular fa-floppy-disk"></i><div><strong>内容已自动保存在这台设备</strong><p>刷新页面后仍可继续填写。下载完成后可用下方按钮清除。</p><button type="button" @click="clearDraft">清除已保存内容</button></div></div>
+        <div class="draft-note"><i aria-hidden="true" class="fa-regular fa-floppy-disk"></i><div><strong>{{ draftScopeNotice }}</strong><p>刷新页面后仍可继续填写。重置本次填写会保留旧版本设备草稿。</p><button type="button" @click="clearDraft">重置本次填写</button></div></div>
       </aside>
     </div>
   </component>
@@ -109,7 +110,8 @@
 
 <script setup lang="ts">
 import { computed, onBeforeUnmount, reactive, ref, watch } from 'vue'
-import {postProvincialDocument,provincialError,readProvincialDraft,saveProvincialDraft} from '@/api/provincial'
+import {postProvincialDocument,provincialError,readProvincialDraft,saveProvincialDraft,clearProvincialDraft} from '@/api/provincial'
+import {provincialDraftLocation,publicEditorIdentity} from '@/api/publicDraftScope'
 import { RouterLink } from 'vue-router'
 import GenerateConfirmation from '@/components/GenerateConfirmation.vue'
 import { downloadDocument } from '@/composables/downloadDocument'
@@ -124,15 +126,20 @@ const config = computed(() => ({...province,backRoute:`/province/${province.slug
 const factsLimit = computed(() => documentFormLimits(props.province).factsLength)
 const maxRequests = computed(() => documentFormLimits(props.province).maxRequests)
 const showEmploymentDetails = computed(() => ['guangdong','hainan','xinjiang'].includes(props.province))
-const DRAFT_KEY = `labourlawyer-${props.province}-application-draft-v6`
+const draftLocation=provincialDraftLocation(props.province,'application'),DRAFT_KEY=draftLocation.key,draftScopeNotice=draftLocation.notice
+const ownerAtMount=publicEditorIdentity.value
+let disposed=false,cleared=false,resetting=false
+let generationController:AbortController|undefined
+const activeOwner=()=>!disposed&&publicEditorIdentity.value===ownerAtMount
 const steps = ['你的信息', '公司信息', '你的要求', '事情经过']
 const focusedStep=ref(0)
 const householdOptions = ['本省非农业户口','本省农业户口','外省非农业户口','外省农业户口','港澳台人员','外籍人员']
 const blankDefaults = { committeeName:'',applicantName:'',birthDate:'',gender:'',nationality:'',idNumber:'',phone:'',householdType:'',idAddress:'',applicantMailingAddress:'',respondentName:'',socialCreditCode:'',registeredAddress:'',mailingAddress:'',workAddress:'',legalRepName:'',legalRepPhone:'',legalRepPosition:'',companyContact:'',companyContactPhone:'',requests:[''],claimCalculation:'',employmentDate:'',jobTitle:'',signedContract:'',contractStartDate:'',contractEndDate:'',workSchedule:'',attendanceRequired:'',attendanceMethod:'',salaryPaymentMethod:'',salaryReceiptRequired:'',startingSalary:'',salaryAdjustments:'',currentlyEmployed:'',departureDate:'',departureReason:'',averageMonthlySalary:'',factsReason:'',copyCount:1 as string|number,applicationDate:'' }
 const defaults = { ...blankDefaults, ...makeApplicationExample(province) }
-const loadedDraft=readProvincialDraft(DRAFT_KEY,defaults)
+const loadedDraft=readProvincialDraft(DRAFT_KEY,defaults,draftLocation.legacyKey)
 const hasSavedDraft=loadedDraft.saved
 const draftBlocked=ref(loadedDraft.blocked)
+const saveBlocked=ref(loadedDraft.saveBlocked??false)
 const extraFields=applicationExtraFields[props.province]||[]
 const form = reactive<typeof defaults & Record<string,unknown>>(loadedDraft.form)
 if (!Array.isArray(form.requests) || !form.requests.length) form.requests = ['']
@@ -143,10 +150,10 @@ const usingExample = ref(!hasSavedDraft)
 const missingFields = ref<string[]>([])
 const status = reactive({ type:loadedDraft.notice?'error':'', message:loadedDraft.notice })
 let saveTimer:ReturnType<typeof setTimeout>|undefined
-const saveDraft=()=>{if(draftBlocked.value)return;const notice=saveProvincialDraft(DRAFT_KEY,form);if(notice){status.type='error';status.message=notice}}
+const saveDraft=()=>{if(draftBlocked.value||saveBlocked.value||cleared)return;const notice=saveProvincialDraft(DRAFT_KEY,form);if(notice){status.type='error';status.message=notice}}
 window.addEventListener('pagehide',saveDraft)
-watch(form, () => { clearTimeout(saveTimer); saveTimer = setTimeout(saveDraft, 350) }, { deep:true })
-onBeforeUnmount(() => { clearTimeout(saveTimer);saveDraft();window.removeEventListener('pagehide',saveDraft) })
+watch(form, () => {if(resetting)return;cleared=false;clearTimeout(saveTimer);saveTimer=setTimeout(saveDraft,350)}, {deep:true,flush:'sync'})
+onBeforeUnmount(() => {disposed=true;generationController?.abort();showConfirm.value=false;clearTimeout(saveTimer);saveDraft();window.removeEventListener('pagehide',saveDraft)})
 const activeStep = computed(() => !form.applicantName || !form.idNumber || !form.phone || !form.idAddress ? 0 : !form.respondentName || (hasField('registeredAddress')&&!form.registeredAddress) || (hasField('workAddress')&&!form.workAddress) ? 1 : !form.requests.some(item => item.trim()) ? 2 : 3)
 const jumpToStep = (index:number) => {
   focusedStep.value=index
@@ -156,17 +163,20 @@ const jumpToStep = (index:number) => {
   target?.querySelector<HTMLElement>('input, textarea, select')?.focus({ preventScroll:true })
 }
 const removeRequest = (index:number) => form.requests.splice(index, 1)
-const clearDraft = () => { localStorage.removeItem(DRAFT_KEY);draftBlocked.value=false; Object.assign(form, { ...defaults, requests:[...defaults.requests] }); usingExample.value=true; status.type='success'; status.message='已清除保存内容，并恢复虚构示例。'; window.scrollTo({ top:0, behavior:'smooth' }) }
+const clearDraft=()=>{cleared=true;resetting=true;clearTimeout(saveTimer);const notice=clearProvincialDraft(DRAFT_KEY);draftBlocked.value=false;saveBlocked.value=false;Object.assign(form,{...defaults,requests:[...defaults.requests]});resetting=false;usingExample.value=true;status.type=notice?'error':'success';status.message=notice||'已重置本次填写，并恢复虚构示例；旧版本设备草稿仍保留。';window.scrollTo({top:0,behavior:'smooth'})}
 const collectMissingFields = () => {
   const missing:string[]=[]
   if(!form.committeeName) missing.push('仲裁委员会'); if(!form.applicantName) missing.push('姓名'); if(hasField('idNumber')&&!form.idNumber) missing.push('身份证号码'); if(!form.phone) missing.push('联系电话'); if(hasField('idAddress')&&!form.idAddress) missing.push('身份证住址'); if(!form.respondentName) missing.push('公司全称'); if(hasField('registeredAddress')&&!form.registeredAddress) missing.push('公司注册地址'); if(hasField('workAddress')&&!form.workAddress) missing.push('实际工作地址'); if(!form.requests.some(item=>item.trim())) missing.push('至少一项要求'); if(form.factsReason.length<10) missing.push('事情经过（至少填写 10 个字）')
   return missing
 }
 const parseError=(error:unknown)=>provincialError(error)
-const requestGeneration = (blank:unknown=false) => { templateOnly.value=blank===true;if(draftBlocked.value&&!templateOnly.value){status.type='error';status.message=loadedDraft.notice;return}status.message=''; missingFields.value=templateOnly.value?[]:collectMissingFields(); showConfirm.value=true }
+const requestGeneration = (blank:unknown=false) => {if(!activeOwner())return;templateOnly.value=blank===true;if(draftBlocked.value&&!templateOnly.value){status.type='error';status.message=loadedDraft.notice;return}status.message=''; missingFields.value=templateOnly.value?[]:collectMissingFields(); showConfirm.value=true }
 const confirmGeneration = () => { showConfirm.value=false; submitForm() }
 const submitForm = async () => {
+  if(!activeOwner())return
+  generationController?.abort();const controller=new AbortController();generationController=controller
   status.message=''; isSubmitting.value=true
-  try { const payload=templateOnly.value?{}:{...form,requests:form.requests.map(item=>item.trim()).filter(Boolean)}; const blob=await postProvincialDocument(config.value.apiPath,payload); const filename=!templateOnly.value&&form.applicantName?`${form.applicantName}的劳动人事争议仲裁申请书.docx`:`${config.value.name}劳动人事争议仲裁申请书.docx`;await downloadDocument(blob,filename);status.type='success';status.message='申请书已生成。请打开 Word 仔细核对后再签字提交。' } catch(error){status.type='error';status.message=await parseError(error)} finally{isSubmitting.value=false}
+  try {const payload=templateOnly.value?{}:{...form,requests:form.requests.map(item=>item.trim()).filter(Boolean)};const blob=await postProvincialDocument(config.value.apiPath,payload,controller.signal);if(!activeOwner()||controller.signal.aborted)return;const filename=!templateOnly.value&&form.applicantName?`${form.applicantName}的劳动人事争议仲裁申请书.docx`:`${config.value.name}劳动人事争议仲裁申请书.docx`;await downloadDocument(blob,filename);if(!activeOwner())return;status.type='success';status.message='申请书已生成。请打开 Word 仔细核对后再签字提交。'}catch(error){if(activeOwner()&&!controller.signal.aborted){status.type='error';status.message=await parseError(error)}}finally{if(activeOwner()&&generationController===controller)isSubmitting.value=false}
 }
 </script>
+<style scoped>.draft-scope-note{color:var(--ll-secondary);font-size:14px;line-height:1.7}</style>
