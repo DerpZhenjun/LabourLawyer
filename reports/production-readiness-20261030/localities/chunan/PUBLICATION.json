@@ -1,0 +1,20 @@
+{
+  "status": "published_worktree_seed_only",
+  "root_review_approval": "Root independently reviewed four actual Word pages and explicitly authorized this seed append",
+  "source_id": "3fb683d473fe253a3a117d46",
+  "guides_before": 202,
+  "guides_after": 203,
+  "generatable_localities_before": 185,
+  "generatable_localities_after": 186,
+  "directory_rows": 3974,
+  "previous202_records_preserved": true,
+  "directory_bytes_preserved": true,
+  "guides_before_sha256": "f34c108b6441fe2647994965583be3b376b0621623ddf14bd373f9b3b6fe698a",
+  "guides_after_sha256": "58f42da0707a1a85a9923c212c36a4cc57aa0794a046ca8e3769f6801af8bc4c",
+  "directory_sha256": "913daa7dd7bcbec570945fd7cc8ed08ae55b15c50665e5f8f4d967b62fc85ba8",
+  "manifest_after_sha256": "780685b7bd5944a9199d555ed165199122aabe5dd84e3ff6fa87856b96ce49b1",
+  "main_or_worktree_database_written": false,
+  "frozen_source_or_final_evidence_changed": false,
+  "models_called": false,
+  "published_at": "2026-10-30T10:55:08.359746+00:00"
+}

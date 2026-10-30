@@ -1,12 +1,13 @@
 {
   "schema_version": 1,
-  "exported_at": "2026-10-29T15:04:56.419677+00:00",
+  "exported_at": "2026-10-30T10:55:08.359746+00:00",
   "scope": "已发布的公开指南与地区目录；目录不等于指南覆盖，不包含个人案件或浏览器会话。",
-  "guides": 202,
-  "generatable_localities": 185,
+  "guides": 203,
+  "generatable_localities": 186,
   "directory_rows": 3974,
   "files": {
-    "guides.json": "f34c108b6441fe2647994965583be3b376b0621623ddf14bd373f9b3b6fe698a",
+    "guides.json": "58f42da0707a1a85a9923c212c36a4cc57aa0794a046ca8e3769f6801af8bc4c",
     "directory.json": "913daa7dd7bcbec570945fd7cc8ed08ae55b15c50665e5f8f4d967b62fc85ba8"
-  }
+  },
+  "release_id": "oct30-chunan-own-locality-v1"
 }

@@ -1,0 +1,19 @@
+{
+  "tasks": [
+    {
+      "source_sha256": "356d3eb7fca5971075c5099bd0b81b7f3c806f8820b9c2008b76d129de743974",
+      "source": "reports/production-readiness-20261030/localities/chunan/browser-generation/application.docx",
+      "pages": 3,
+      "pdf": "reports/production-readiness-20261030/localities/chunan/browser-generation/word/application.pdf"
+    },
+    {
+      "source_sha256": "9afccba798b41e1c783427eae6efcd99c450b9bc42a272e86535b207c3f924a3",
+      "source": "reports/production-readiness-20261030/localities/chunan/browser-generation/evidence.docx",
+      "pages": 1,
+      "pdf": "reports/production-readiness-20261030/localities/chunan/browser-generation/word/evidence.pdf"
+    }
+  ],
+  "originals_unchanged": true,
+  "engine": "Microsoft Word isolated process, hidden read-only export",
+  "own_instance_verified": true
+}

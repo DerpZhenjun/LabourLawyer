@@ -1,0 +1,39 @@
+{
+  "guides_imported": 203,
+  "directory_imported": 3974,
+  "missing_attachments": [],
+  "state": "public_snapshot_initialized",
+  "guides": 203,
+  "generatable_localities": 186,
+  "directory_rows": 3974,
+  "records": [
+    {
+      "kind": "application",
+      "http_status": 200,
+      "source_id": "3fb683d473fe253a3a117d46",
+      "version": "203",
+      "contract_id": "8750a18537764cc6af9f007cb84ae942715e4ffb269fce17ff276f06846621a0",
+      "bytes": 27350,
+      "sha256": "7df0c5c3bd767ed18ece77475ce2cbff84a52311da2115b29ededc8e7e934100",
+      "zip_crc": "PASS",
+      "synthetic_filled_text": "PASS",
+      "bootstrap_templates_exact_canonical": "PASS"
+    },
+    {
+      "kind": "evidence",
+      "http_status": 200,
+      "source_id": "3fb683d473fe253a3a117d46",
+      "version": "203",
+      "contract_id": "b0d18192fe10f7857d02db80a89d7cea647baccb24f602d72515b110d7fccdd4",
+      "bytes": 15724,
+      "sha256": "8bdbf5f2902f37c5ff85ca49f0255ba3a0fa43fd2e61356dbf1fc5cc266e7de2",
+      "zip_crc": "PASS",
+      "synthetic_filled_text": "PASS",
+      "bootstrap_templates_exact_canonical": "PASS"
+    }
+  ],
+  "main_database_written": false,
+  "models_called": false,
+  "method": "real ASGI routes after actual fresh public seed bootstrap into explicit temporary data_dir",
+  "word_visual_qa_for_these_cold_fixtures": "NOT_RUN; independent browser outputs already reviewed separately"
+}

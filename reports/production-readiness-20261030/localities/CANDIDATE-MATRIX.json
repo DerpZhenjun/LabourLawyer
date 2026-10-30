@@ -1,0 +1,89 @@
+{
+  "recorded_at": "2026-10-30T08:46:16.115008+00:00",
+  "scope": "only four explicit F candidates, not nationwide completion",
+  "national_completeness_claimed": false,
+  "rows": [
+    {
+      "region_code": "320581",
+      "district": "常熟市",
+      "source_id": "9a24af792c956feb67bd37c6",
+      "service_code": "11320581014173412K400201430200201",
+      "source_url": "https://szcs.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=30&iddept_ql_inf=11320581014173412K4002014302002&ql_kind=20&iddept_yw_inf=11320581014173412K400201430200201",
+      "guide_file": "reports/nationwide-verification-20261029-f/jiangsu/changshu/guide.json",
+      "guide_sha256": "b3f8cd1e64a1c03b0808d869b5daa03a788f3343e0f237f6a1cf23d57b14f529",
+      "material_count": 4,
+      "stage": "own_source_only_adapter_pending",
+      "production_can_generate": false,
+      "production_published": false,
+      "native_official_guide_rechecked_20261030": true,
+      "this_run_native_official_material_controls_clicked": [
+        "application_blank",
+        "evidence_blank"
+      ],
+      "this_run_native_attachment_network_status": "not_retained_no_requests_captured",
+      "evidence_directory": "reports/production-readiness-20261030/localities/changshu/browser"
+    },
+    {
+      "region_code": "320582",
+      "district": "张家港市",
+      "source_id": "95e826085ed0fec9f410cc86",
+      "service_code": "11320582551232000Y400201430200201",
+      "source_url": "https://szzjg.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=31&iddept_ql_inf=11320582551232000Y4002014302002&ql_kind=20&iddept_yw_inf=11320582551232000Y400201430200201",
+      "guide_file": "reports/nationwide-verification-20261029-f/jiangsu/zhangjiagang/guide.json",
+      "guide_sha256": "f389a9f16651cd64db3b37b897ea049dd670ba21680c83a6d315a44fa42c4efd",
+      "material_count": 4,
+      "stage": "own_source_only_adapter_pending",
+      "production_can_generate": false,
+      "production_published": false,
+      "native_official_guide_rechecked_20261030": true,
+      "this_run_native_official_material_controls_clicked": [
+        "application_blank",
+        "evidence_blank"
+      ],
+      "this_run_native_attachment_network_status": "not_retained_no_requests_captured",
+      "evidence_directory": "reports/production-readiness-20261030/localities/zhangjiagang/browser"
+    },
+    {
+      "region_code": "330127",
+      "district": "淳安县",
+      "source_id": "3fb683d473fe253a3a117d46",
+      "service_code": "11330127593095219M4002014302002",
+      "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ee47fff8-558c-4a85-88e9-8a28d2bddbdc",
+      "guide_file": "reports/nationwide-verification-20261029-f/zhejiang/chunan/guide.json",
+      "guide_sha256": "4d09b736166c094997b3749aeac7b82a4dfe01e039cc0aa5a4de6fc8f134cbf0",
+      "material_count": 5,
+      "stage": "root-approved-public-worktree-seed-published-main-database-unchanged",
+      "production_can_generate": false,
+      "production_published": false,
+      "native_official_guide_rechecked_20261030": true,
+      "this_run_native_official_material_controls_clicked": [
+        "application_blank",
+        "evidence_blank"
+      ],
+      "this_run_native_attachment_network_status": [
+        200,
+        200
+      ],
+      "evidence_directory": "reports/production-readiness-20261030/localities/chunan/browser",
+      "final_browser_receipt": "reports/production-readiness-20261030/localities/chunan/FINAL-BROWSER-QA.json",
+      "worktree_public_seed_published": true,
+      "worktree_public_seed_can_generate": true
+    },
+    {
+      "region_code": "330122",
+      "district": "桐庐县",
+      "source_id": null,
+      "source_url": null,
+      "stage": "pending_own_source",
+      "production_can_generate": false,
+      "production_published": false,
+      "official_absence_inferred": false,
+      "prior_scope_mismatches": [
+        "330101 municipal guide",
+        "330000 provincial guide"
+      ],
+      "this_run": "Own siteCode=330122000000 home requested; onboarding overlay blocked native Search after close/ack controls. No forced click, county guideline or attachment accepted.",
+      "evidence_directory": "reports/production-readiness-20261030/localities/tonglu/browser"
+    }
+  ]
+}

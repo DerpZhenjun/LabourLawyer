@@ -1,0 +1,25 @@
+{
+  "guides_imported": 203,
+  "directory_imported": 3974,
+  "missing_attachments": [],
+  "state": "public_snapshot_initialized",
+  "guides": 203,
+  "generatable_localities": 186,
+  "chunan_source_id": "3fb683d473fe253a3a117d46",
+  "chunan_bootstrap_version": 203,
+  "own_publication_proof": "PASS",
+  "own_contracts": [
+    {
+      "kind": "application",
+      "fields": 23,
+      "contract_id": "8750a18537764cc6af9f007cb84ae942715e4ffb269fce17ff276f06846621a0"
+    },
+    {
+      "kind": "evidence",
+      "fields": 5,
+      "contract_id": "b0d18192fe10f7857d02db80a89d7cea647baccb24f602d72515b110d7fccdd4"
+    }
+  ],
+  "main_database_written": false,
+  "destination": "temporary explicit persistent data_dir, removed after test"
+}

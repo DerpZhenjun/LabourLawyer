@@ -1,0 +1,31 @@
+{
+  "own_instance_verified": true,
+  "originals_unchanged": true,
+  "engine": "Microsoft Word isolated process, hidden read-only export",
+  "tasks": [
+    {
+      "pages": 6,
+      "source": "reports/nationwide-verification-20261029-f/zhejiang/chunan/originals/blank/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+      "source_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "pdf": "reports/production-readiness-20261030/localities/chunan/word/21B24C52D2AC3EB007AA7F55CE0AAD79.pdf"
+    },
+    {
+      "pages": 1,
+      "source": "reports/nationwide-verification-20261029-f/zhejiang/chunan/originals/blank/872DFF90A8578907CB947197A784AA48.docx",
+      "source_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+      "pdf": "reports/production-readiness-20261030/localities/chunan/word/872DFF90A8578907CB947197A784AA48.pdf"
+    },
+    {
+      "pages": 3,
+      "source": "reports/production-readiness-20261030/localities/chunan/fixtures/application-synthetic.docx",
+      "source_sha256": "db586ef0eeba5e956ab4aa8759743d1b37d03934c5c2dda3ce83a79581f380e3",
+      "pdf": "reports/production-readiness-20261030/localities/chunan/word/application-synthetic.pdf"
+    },
+    {
+      "pages": 1,
+      "source": "reports/production-readiness-20261030/localities/chunan/fixtures/evidence-synthetic.docx",
+      "source_sha256": "4612e6fa4b347665054ba029879f00377a29b0599079330a93083ee29611a387",
+      "pdf": "reports/production-readiness-20261030/localities/chunan/word/evidence-synthetic.pdf"
+    }
+  ]
+}

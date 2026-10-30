@@ -1,0 +1,74 @@
+{
+  "scope": "four-explicit-F-candidates-only-not-national-completeness",
+  "phase": "root-approved-Chunan-public-seed203-186-appended-main-DB-unchanged",
+  "root": "reports/production-readiness-20261030/localities",
+  "shared_files_modified": [
+    "backend/regional_adapters.py",
+    "backend/regional_public_provenance.py",
+    "backend/regional_form_contracts.py",
+    "backend/routes/regional_guides.py",
+    "data/public-regions/guides.json",
+    "data/public-regions/manifest.json",
+    "backend/tests/test_regional_form_contracts.py"
+  ],
+  "new_code_files": [
+    "backend/regional_zhejiang_chunan_oct30.py",
+    "backend/tests/test_zhejiang_chunan_oct30.py",
+    "backend/tests/test_chunan_oct30_dispatch.py",
+    "scripts/verify-production-localities.py",
+    "scripts/stage-production-chunan.py",
+    "backend/tests/test_chunan_publication_evidence.py",
+    "scripts/publish-approved-chunan-seed.py",
+    "backend/tests/test_chunan_seed_publication.py"
+  ],
+  "candidate_db": "reports/production-readiness-20261030/localities/chunan/candidate/guides.sqlite",
+  "candidate_version": 1,
+  "source_id": "3fb683d473fe253a3a117d46",
+  "adapter": "zhejiang_chunan_own_worker_oct30_v1",
+  "own_source_records_verified": 30,
+  "source_manifest_sha256": "78ded402d48d559ece5032e3ca6eef6c775073dc48e0d4c2cd97bc7f82b8e1a5",
+  "own_public_whitelist_sha256": "689740ac4a5827f926beafd708840400fbe72f062a52707471666a50e521e292",
+  "stage_approval_sha256": "f6a6de4522b1af6ed509fcfeb465ba90696c833b0794e677203704fb9fb57876",
+  "stage_evidence_files_verified": 24,
+  "word_pages": {
+    "official_application": 6,
+    "official_evidence": 1,
+    "filled_worker_application": 3,
+    "filled_evidence": 1
+  },
+  "own_source_can_generate": false,
+  "derived_candidate_can_generate": true,
+  "production_db_or_seed_modified": false,
+  "frozen_sources_modified": false,
+  "models_called": false,
+  "commits_or_pushes": false,
+  "tests": {
+    "chunan_and_E_dispatch": "11 PASS",
+    "contract_provenance_E_public_release": "33 run, 32 PASS, 1 existing skip",
+    "chunan_offline_dispatch_publication": "12 PASS",
+    "chunan_all_four_modules": "16 PASS"
+  },
+  "pending_source_only": [
+    "320581",
+    "320582"
+  ],
+  "pending_own_source": [
+    "330122"
+  ],
+  "candidate_browser_generation": "PASS_BOTH_NATIVE_DOWNLOADS",
+  "publication": "APPROVED_WORKTREE_PUBLIC_SEED_PUBLISHED_MAIN_DATABASE_UNCHANGED",
+  "next": "Root verifies final cold bootstrap route report and updated guarded CI, then seals deployment artifact. Main production SQLite remains untouched; any live main DB update is a separate root-owned reviewed operation. Continue Changshu/Zhangjiagang own adapters and Tonglu own-source discovery; never claim national completion.",
+  "final_browser_receipt_sha256": "442a6faa2aeae6e15a3b6177e098d42d8545c377d3d8344070dbab8af244671d",
+  "final_browser_evidence_files_verified": 11,
+  "review_browser_version": 203,
+  "root_publication_approval": "Root task independently reviewed four actual browser Word pages and explicitly approved publication",
+  "public_seed_guides": 203,
+  "public_seed_generatable_localities": 186,
+  "public_seed_directory_rows": 3974,
+  "public_seed_guides_sha256": "58f42da0707a1a85a9923c212c36a4cc57aa0794a046ca8e3769f6801af8bc4c",
+  "public_seed_manifest_sha256": "780685b7bd5944a9199d555ed165199122aabe5dd84e3ff6fa87856b96ce49b1",
+  "main_database_modified": false,
+  "worktree_public_seed_modified": true,
+  "published_capture": "chunan/PUBLISHED-GUIDE.json",
+  "loaded_code_release_marker": "oct30-chunan-own-locality-v1"
+}

@@ -1,0 +1,108 @@
+{
+  "alerts": [],
+  "anonymous": true,
+  "files": [
+    {
+      "bytes": 27486,
+      "path": "reports/production-readiness-20261030/localities/chunan/browser-generation/application.docx",
+      "sha256": "356d3eb7fca5971075c5099bd0b81b7f3c806f8820b9c2008b76d129de743974"
+    },
+    {
+      "bytes": 758,
+      "path": "reports/production-readiness-20261030/localities/chunan/browser-generation/DOWNLOADS.json",
+      "sha256": "ccdcba5192ea223775465f18ed5eb26bb664172e9f8f1e51d2c048c0537503e9"
+    },
+    {
+      "bytes": 15759,
+      "path": "reports/production-readiness-20261030/localities/chunan/browser-generation/evidence.docx",
+      "sha256": "9afccba798b41e1c783427eae6efcd99c450b9bc42a272e86535b207c3f924a3"
+    },
+    {
+      "bytes": 2503,
+      "path": "reports/production-readiness-20261030/localities/chunan/browser-generation/render-browser-word.ps1",
+      "sha256": "e49e62d727bb465c7f5c876c483663b1c4edf16c9cd797f4a489aededcf94ca4"
+    },
+    {
+      "bytes": 116682,
+      "path": "reports/production-readiness-20261030/localities/chunan/browser-generation/word/application-1.png",
+      "sha256": "76b6ec7379222bf77318250564f1dc88e885f885d14a024fbf8c5cda5bdf8682"
+    },
+    {
+      "bytes": 108783,
+      "path": "reports/production-readiness-20261030/localities/chunan/browser-generation/word/application-2.png",
+      "sha256": "bcea05e57426f6daf6c15074b67009e2bb8f29862571bd7a6b013c8314de2305"
+    },
+    {
+      "bytes": 90333,
+      "path": "reports/production-readiness-20261030/localities/chunan/browser-generation/word/application-3.png",
+      "sha256": "89dc95463ee088f81201ed6e0245c25eb698cef296e4056d2e92a3876538cff7"
+    },
+    {
+      "bytes": 155693,
+      "path": "reports/production-readiness-20261030/localities/chunan/browser-generation/word/application.pdf",
+      "sha256": "ba0074d1210e5970e3a8bbb4b666cb4a85db4efbccc14033e63235ba9d396097"
+    },
+    {
+      "bytes": 102355,
+      "path": "reports/production-readiness-20261030/localities/chunan/browser-generation/word/evidence-1.png",
+      "sha256": "7513c57bda248f6930a5cc08b628d15758db4b4c66f5e8d28a761ef879bfb79a"
+    },
+    {
+      "bytes": 91751,
+      "path": "reports/production-readiness-20261030/localities/chunan/browser-generation/word/evidence.pdf",
+      "sha256": "f7ae584eb5ded365518685af9d8b05a8836eac071e67bf526661b806ba1498ec"
+    },
+    {
+      "bytes": 857,
+      "path": "reports/production-readiness-20261030/localities/chunan/browser-generation/word/RENDER.json",
+      "sha256": "9a91b3b762c951e3efc52d261503002c75304ef48c3cde701df8f83934c05254"
+    }
+  ],
+  "models_called": false,
+  "native_click_confirmation_download_both_kinds": true,
+  "official_source_files_modified": false,
+  "package_checks": [
+    {
+      "kind": "application",
+      "original_annex_id": "21B24C52D2AC3EB007AA7F55CE0AAD79",
+      "output_sha256": "356d3eb7fca5971075c5099bd0b81b7f3c806f8820b9c2008b76d129de743974",
+      "package_parts_except_document_xml": "PASS"
+    },
+    {
+      "kind": "evidence",
+      "original_annex_id": "872DFF90A8578907CB947197A784AA48",
+      "output_sha256": "9afccba798b41e1c783427eae6efcd99c450b9bc42a272e86535b207c3f924a3",
+      "package_parts_except_document_xml": "PASS"
+    }
+  ],
+  "production_db_or_seed_changed": false,
+  "public_whitelist_sha256": "689740ac4a5827f926beafd708840400fbe72f062a52707471666a50e521e292",
+  "publication_authorization_recorded": false,
+  "published_capture_written": false,
+  "region_code": "330127",
+  "render_pages": {
+    "application": 3,
+    "evidence": 1
+  },
+  "review_version": 203,
+  "schema_version": 1,
+  "scope": "Chunan exact own-source browser generation and final Word visual QA evidence only",
+  "service_code": "11330127593095219M4002014302002",
+  "source_id": "3fb683d473fe253a3a117d46",
+  "source_manifest_sha256": "78ded402d48d559ece5032e3ca6eef6c775073dc48e0d4c2cd97bc7f82b8e1a5",
+  "stage_evidence_files_modified": false,
+  "stage_receipt_sha256": "f6a6de4522b1af6ed509fcfeb465ba90696c833b0794e677203704fb9fb57876",
+  "visual_review": {
+    "findings": "Every output page inspected individually against pinned own-source originals. Worker section only; readable table slots, borders and page numbers; no clipping or extra blank page; optional request rows removed; synthetic facts retained. Applicant, evidence submitter and receiver signatures remain blank. Unfilled dates/copies remain blank; committee placeholders remain when not supplied.",
+    "limits": "Pass covers these actual browser downloads; future data with different length must still be checked.",
+    "page_review_resolution": 1600,
+    "reviewed_pages": [
+      "word/application-1.png",
+      "word/application-2.png",
+      "word/application-3.png",
+      "word/evidence-1.png"
+    ],
+    "status": "PASS"
+  },
+  "word_engine": "Microsoft Word isolated verified new process; hidden read-only; only own documents closed"
+}

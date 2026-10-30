@@ -18,7 +18,7 @@ from regional_public_provenance import public_evidence
 
 ROOT=Path(__file__).resolve().parents[1]
 EJS='jiangsu_own_blank_oct29e_v1'
-ZJ_OWN={'zhejiang_own_worker_oct29d_v1','zhejiang_own_worker_oct29e_v1'}
+ZJ_OWN={'zhejiang_own_worker_oct29d_v1','zhejiang_own_worker_oct29e_v1','zhejiang_chunan_own_worker_oct30_v1'}
 HN={'hunan_own_legacy_worker_oct29b_v1','hunan_own_legacy_worker_oct29c_v1'}
 JS_BLANK={'jiangsu_xishan_blank_v1','jiangsu_own_blank_oct29_v1',
           'jiangsu_own_blank_oct29c_v1','jiangsu_own_blank_oct29d_v1'}

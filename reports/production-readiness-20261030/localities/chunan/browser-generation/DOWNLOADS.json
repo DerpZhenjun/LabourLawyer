@@ -1,0 +1,25 @@
+{
+  "source_id": "3fb683d473fe253a3a117d46",
+  "review_version": 203,
+  "anonymous": true,
+  "actual_native_click_and_confirm": true,
+  "alerts": [],
+  "files": [
+    {
+      "kind": "application",
+      "file": "reports/production-readiness-20261030/localities/chunan/browser-generation/application.docx",
+      "bytes": 27486,
+      "sha256": "356d3eb7fca5971075c5099bd0b81b7f3c806f8820b9c2008b76d129de743974",
+      "zip_crc": true,
+      "xml": true
+    },
+    {
+      "kind": "evidence",
+      "file": "reports/production-readiness-20261030/localities/chunan/browser-generation/evidence.docx",
+      "bytes": 15759,
+      "sha256": "9afccba798b41e1c783427eae6efcd99c450b9bc42a272e86535b207c3f924a3",
+      "zip_crc": true,
+      "xml": true
+    }
+  ]
+}

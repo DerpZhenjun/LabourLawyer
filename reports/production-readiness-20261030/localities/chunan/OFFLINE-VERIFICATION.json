@@ -1,0 +1,40 @@
+{
+  "scope": "Chunan own-source offline adapter only",
+  "region_code": "330127",
+  "source_id": "3fb683d473fe253a3a117d46",
+  "service_code": "11330127593095219M4002014302002",
+  "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ee47fff8-558c-4a85-88e9-8a28d2bddbdc",
+  "source_manifest_sha256": "78ded402d48d559ece5032e3ca6eef6c775073dc48e0d4c2cd97bc7f82b8e1a5",
+  "public_whitelist_sha256": "689740ac4a5827f926beafd708840400fbe72f062a52707471666a50e521e292",
+  "source_records_verified": 30,
+  "guide_can_generate": false,
+  "published": false,
+  "models_called": false,
+  "database_changed": false,
+  "checks": [
+    {
+      "kind": "application",
+      "source_file": "reports/nationwide-verification-20261029-f/zhejiang/chunan/originals/blank/21B24C52D2AC3EB007AA7F55CE0AAD79.docx",
+      "source_sha256": "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "output_file": "reports/production-readiness-20261030/localities/chunan/fixtures/application-synthetic.docx",
+      "output_sha256": "db586ef0eeba5e956ab4aa8759743d1b37d03934c5c2dda3ce83a79581f380e3",
+      "package_parts_except_document_xml": "PASS",
+      "original_unchanged": true
+    },
+    {
+      "kind": "evidence",
+      "source_file": "reports/nationwide-verification-20261029-f/zhejiang/chunan/originals/blank/872DFF90A8578907CB947197A784AA48.docx",
+      "source_sha256": "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c",
+      "output_file": "reports/production-readiness-20261030/localities/chunan/fixtures/evidence-synthetic.docx",
+      "output_sha256": "4612e6fa4b347665054ba029879f00377a29b0599079330a93083ee29611a387",
+      "package_parts_except_document_xml": "PASS",
+      "original_unchanged": true
+    }
+  ],
+  "remaining_gates": [
+    "separate Word all-page visual review",
+    "candidate API/registry integration",
+    "native candidate browser generation/download QA",
+    "publication approval evidence"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "status": "own-sources-and-slot-structure-inspected-adapters-not-written",
+  "province": "jiangsu",
+  "source_root": "reports/nationwide-verification-20261029-f/jiangsu",
+  "manifest_sha256": "c594c7bc7b352e934e5ea7f71137f9bc22031acee522d7b4eeff82ca7f8445ea",
+  "public_whitelist_sha256": "5ca19bb495971d97e832f3468f577654a730ed99fe5b8e2435254cbaee3eddf6",
+  "public_file_count": 140,
+  "sources_unchanged_and_clean_public_copy_verified": true,
+  "profiles": [
+    {
+      "region_code": "320581", "district": "常熟市", "webId": "30",
+      "source_id": "9a24af792c956feb67bd37c6",
+      "guide_sha256": "b3f8cd1e64a1c03b0808d869b5daa03a788f3343e0f237f6a1cf23d57b14f529",
+      "service_code": "11320581014173412K400201430200201",
+      "application_annex": "9992a58d-12a7-4131-8317-82e2358af86f",
+      "evidence_annex": "0671a152-24d1-4c00-bf92-f281dc2451c0",
+      "onsite_visits_raw": "3"
+    },
+    {
+      "region_code": "320582", "district": "张家港市", "webId": "31",
+      "source_id": "95e826085ed0fec9f410cc86",
+      "guide_sha256": "f389a9f16651cd64db3b37b897ea049dd670ba21680c83a6d315a44fa42c4efd",
+      "service_code": "11320582551232000Y400201430200201",
+      "application_annex": "e7792a1a-fbf0-461d-9574-67196dec0d6b",
+      "evidence_annex": "fb67c9e4-1f9f-4e6c-bdb0-cc6c04f0966a",
+      "onsite_visits_raw": "0"
+    }
+  ],
+  "inspected_originals": {
+    "application_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+    "application_paragraphs": 118,
+    "application_tables": 0,
+    "worker_heading_paragraph": 0,
+    "employer_heading_paragraph": 59,
+    "evidence_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+    "evidence_table_rows_columns": [13, 6],
+    "reusable_pure_slot_operations": "regional_jiangsu_oct29e._application,_evidence,_validate_data",
+    "identity_or_scope_inherited_from_equal_bytes": false,
+    "placeholder_annexes_must_remain_disabled": ["身份证复印件", "证据复印件"],
+    "next": "Write failing own-source tests, independent F source adapter with hardcoded own identities and exact140file chain, generate own fixtures, Word/native-browser gates. No source or capability should be borrowed from E districts."
+  }
+}

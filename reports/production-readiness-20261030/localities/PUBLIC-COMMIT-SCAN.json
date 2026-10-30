@@ -1,0 +1,46 @@
+{
+  "source_and_stage_and_final_evidence_edited": false,
+  "read_only_scan_scope": "new localities text reports",
+  "operator_path_files_excluded": [
+    {
+      "path": "reports/production-readiness-20261030/localities/chunan-publication-tests.txt",
+      "finding": "absolute_operator_path_in_test_warning",
+      "action": "exclude_from_public_commit_do_not_rewrite"
+    },
+    {
+      "path": "reports/production-readiness-20261030/localities/chunan-release-tests.txt",
+      "finding": "absolute_operator_path_in_test_warning",
+      "action": "exclude_from_public_commit_do_not_rewrite"
+    },
+    {
+      "path": "reports/production-readiness-20261030/localities/chunan-tests.txt",
+      "finding": "absolute_operator_path_in_test_warning",
+      "action": "exclude_from_public_commit_do_not_rewrite"
+    }
+  ],
+  "authentication_query_findings": [],
+  "credential_literal_findings": [],
+  "tests": {
+    "Chunan_four_modules": {
+      "run": 16,
+      "passed": 16
+    },
+    "post_publication_regression": {
+      "run": 33,
+      "passed": 32,
+      "existing_skipped": 1
+    },
+    "real_source_ASGI_generations": {
+      "regions": 186,
+      "document_pairs": 366,
+      "profiles": 25
+    },
+    "fresh_public_bootstrap": {
+      "guides": 203,
+      "generatable_localities": 186,
+      "directory_rows": 3974,
+      "missing_attachments": [],
+      "real_filled_generations": 2
+    }
+  }
+}

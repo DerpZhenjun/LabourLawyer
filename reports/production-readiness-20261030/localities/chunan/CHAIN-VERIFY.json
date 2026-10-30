@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-10-30T08:46:16.185444+00:00",
+  "source_chain": "PASS",
+  "source_files": 30,
+  "source_manifest_sha256": "78ded402d48d559ece5032e3ca6eef6c775073dc48e0d4c2cd97bc7f82b8e1a5",
+  "public_whitelist_sha256": "689740ac4a5827f926beafd708840400fbe72f062a52707471666a50e521e292",
+  "stage_receipt_sha256": "f6a6de4522b1af6ed509fcfeb465ba90696c833b0794e677203704fb9fb57876",
+  "stage_files": 24,
+  "stage_chain": "PASS",
+  "source_guide_can_generate": false,
+  "derived_candidate_can_generate": true,
+  "candidate_published": false,
+  "production_db_or_seed_changed": false,
+  "adapter": "zhejiang_chunan_own_worker_oct30_v1",
+  "candidate_db": "reports/production-readiness-20261030/localities/chunan/candidate/guides.sqlite",
+  "candidate_db_sha256": "10927e9e5e6efa1567e489d4f8de42150c763a444faaf29baaa9453fcd97a824",
+  "remaining": [
+    "candidate native browser form generation and download, both kinds",
+    "review and explicit production publication step"
+  ],
+  "models_called": false
+}

@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-10-30T10:40:01.722187+00:00",
+  "own_source_chain": "PASS",
+  "source_records": 30,
+  "stage_chain": "PASS",
+  "stage_records": 24,
+  "final_browser_chain": "PASS",
+  "final_browser_records": 11,
+  "source_id": "3fb683d473fe253a3a117d46",
+  "adapter": "zhejiang_chunan_own_worker_oct30_v1",
+  "source_manifest_sha256": "78ded402d48d559ece5032e3ca6eef6c775073dc48e0d4c2cd97bc7f82b8e1a5",
+  "source_public_whitelist_sha256": "689740ac4a5827f926beafd708840400fbe72f062a52707471666a50e521e292",
+  "stage_receipt_sha256": "f6a6de4522b1af6ed509fcfeb465ba90696c833b0794e677203704fb9fb57876",
+  "final_browser_receipt_sha256": "442a6faa2aeae6e15a3b6177e098d42d8545c377d3d8344070dbab8af244671d",
+  "browser_review_version": 203,
+  "actual_download_pages": {
+    "application": 3,
+    "evidence": 1
+  },
+  "all_four_actual_output_pages_individually_checked": true,
+  "raw_source_can_generate": false,
+  "published_projection_tested_in_memory_only": true,
+  "published_capture_written": false,
+  "production_db_or_seed_changed": false,
+  "root_publication_approval": "PENDING",
+  "models_called": false
+}

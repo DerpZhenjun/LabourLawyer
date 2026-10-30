@@ -2,6 +2,8 @@
 import hashlib
 import json
 import os
+import re
+from datetime import datetime
 from pathlib import Path
 from typing import Annotated, Literal
 from fastapi import APIRouter, BackgroundTasks, HTTPException, Query
@@ -23,6 +25,8 @@ from regional_jiangsu_oct29d import fill_candidate_document as fill_jiangsu_d_do
 from regional_zhejiang_oct29d import fill_document as fill_zhejiang_d_document
 from regional_jiangsu_oct29e import fill_candidate_document as fill_jiangsu_e_document
 from regional_zhejiang_oct29e import fill_document as fill_zhejiang_e_document
+from regional_zhejiang_chunan_oct30 import (fill_document as fill_chunan_document, ADAPTER as CHUNAN_ADAPTER,
+    PUBLICATION_SHA256 as CHUNAN_PUBLICATION_SHA256)
 from regional_jiangsu_request import ApplicationRequest as JiangsuEApplicationRequest,EvidenceRequest as JiangsuEEvidenceRequest
 from regional_zhejiang_request import ApplicationRequest as ZhejiangDApplicationRequest,EvidenceRequest as ZhejiangDEvidenceRequest
 from regional_hunan_oct29b import fill_document as fill_hunan_document, ADAPTER as HUNAN_ADAPTER
@@ -43,8 +47,9 @@ router=APIRouter()
 @router.get('/release-capabilities')
 def release_capabilities():
     """Identify loaded generation code before a reviewed data-only upgrade."""
-    return {'release_id':'oct29e-own-localities-v1',
-            'adapters':[JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER],
+    return {'release_id':'oct30-chunan-own-locality-v1',
+            'adapters':[JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER],
+            'publication_receipts':{CHUNAN_ADAPTER:CHUNAN_PUBLICATION_SHA256},
             'source_bound':True,'models_required':False,
             'regional_store':'main_default' if Path(os.getenv('LABOURLAWYER_REGIONAL_DB',ROOT/'backend/data/regional-guides.sqlite')).resolve()==(ROOT/'backend/data/regional-guides.sqlite').resolve() else 'alternate'}
 
@@ -98,16 +103,53 @@ def inventory():
     return {'items':[{k:v for k,v in g.items() if k not in {'sections','fields'}} for g in guides], 'coverage':coverage,
             'scope':'仅列出具体地区核验数据，不代表已覆盖全省或全国'}
 
+def public_receipt(receipt):
+    """Expose delivery facts only; runtime locations/auth remain in the DB."""
+    if not isinstance(receipt,dict):return None
+    public={}
+    for key,allowed in (
+        ('kind',{'openclaw_service_readback','workspace_persistence'}),
+        ('status',{'PENDING_OPENCLAW','EXPORTED_PENDING_OPENCLAW','ACKNOWLEDGED_OPENCLAW','VERIFIED_PENDING_DATABASE'})):
+        value=receipt.get(key)
+        if isinstance(value,str) and value in allowed:public[key]=value
+    for key in ('content_sha256','evidence_sha256'):
+        value=receipt.get(key)
+        if isinstance(value,str) and re.fullmatch(r'[0-9a-f]{64}',value):public[key]=value
+    for key in ('service_acknowledged','ai_reviewed'):
+        if type(receipt.get(key)) is bool:public[key]=receipt[key]
+    return public
+
+
+def public_event_rows(rows):
+    return [{**event,'receipt':public_receipt(event.get('receipt'))} for event in rows]
+
+
+def public_attempt_status(saved):
+    """Old capture failures may contain private paths; retain safe metadata only."""
+    if not isinstance(saved,dict):return {}
+    public={}
+    if saved.get('engine')=='OpenClaw':public['engine']='OpenClaw'
+    attempted=saved.get('attempted_at')
+    if isinstance(attempted,str) and len(attempted)<=64:
+        try:datetime.fromisoformat(attempted.replace('Z','+00:00'))
+        except ValueError:pass
+        else:public['attempted_at']=attempted
+    if type(saved.get('pending_count')) is int and saved['pending_count']>=0:
+        public['pending_count']=saved['pending_count']
+    return public
+
+
 @router.get('/events')
 def events():
-    items=store().events()
+    items=public_event_rows(store().events())
     return {'items':items,'pending':sum(e['delivery_status']=='PENDING_OPENCLAW' for e in items),
             'openclaw_status':'PENDING_OPENCLAW' if any(e['delivery_status']=='PENDING_OPENCLAW' for e in items) else 'NO_PENDING_EVENTS'}
 
 @router.get('/report')
 def report():
     status_file=ROOT/'reports/government-guide-localization/OPENCLAW-STATUS.json'
-    status=json.loads(status_file.read_text(encoding='utf8')) if status_file.is_file() else {'status':'NOT_ATTEMPTED'}
+    saved_status=json.loads(status_file.read_text(encoding='utf8')) if status_file.is_file() else {}
+    status=public_attempt_status(saved_status)
     categories={
         '官方事项搜索失败':['SEARCH_NO_RESULT','WRONG_SERVICE_MATCH','SEARCH_ALIAS_REQUIRED'],
         '搜索关键词有效性':['SEARCH_ALIAS_REQUIRED','SEARCH_NO_RESULT'],
@@ -119,10 +161,16 @@ def report():
     rows=store().events()
     status['last_attempt_pending_count']=status.get('pending_count')
     status['pending_count']=sum(e['delivery_status']=='PENDING_OPENCLAW' for e in rows)
-    if status['pending_count']:status['status']='PENDING_OPENCLAW'
+    receipts=[(e,e.get('receipt') if isinstance(e.get('receipt'),dict) else {}) for e in rows]
+    status['total_count']=len(rows)
+    status['acknowledged_count']=sum(e['delivery_status']=='ACKNOWLEDGED_OPENCLAW' and r.get('service_acknowledged') is True for e,r in receipts)
+    status['exported_count']=sum(r.get('kind')=='workspace_persistence' and r.get('status')=='EXPORTED_PENDING_OPENCLAW' for _,r in receipts)
+    status['ai_reviewed_count']=sum(e['delivery_status']=='ACKNOWLEDGED_OPENCLAW' and r.get('ai_reviewed') is True for e,r in receipts)
+    status['status']='PENDING_OPENCLAW' if status['pending_count'] else ('ACKNOWLEDGED_OPENCLAW' if rows and status['acknowledged_count']==len(rows) else 'NO_EVENTS' if not rows else 'DELIVERY_UNVERIFIED')
     cross_file=ROOT/'reports/government-guide-localization/CROSS-PROVINCE-CHECKS.json'
     cross=json.loads(cross_file.read_text(encoding='utf8')) if cross_file.is_file() else []
-    return {'openclaw':status,'categories':{k:[e for e in rows if e['type'] in types] for k,types in categories.items()},'regions':inventory()['items'],'cross_province_checks':cross}
+    public_rows=public_event_rows(rows)
+    return {'openclaw':status,'categories':{k:[e for e in public_rows if e['type'] in types] for k,types in categories.items()},'regions':inventory()['items'],'cross_province_checks':cross}
 
 @router.get('/evidence/{filename:path}')
 def evidence(filename: str):
@@ -247,7 +295,7 @@ def generation_request_model(adapter,kind):
     model=(BlankApplicationRequest if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER} else ApplicationRequest) if kind=='application' else EvidenceRequest
     if adapter==FEIDONG_ADAPTER:model=FeidongApplicationRequest
     if adapter in {HUNAN_ADAPTER,HUNAN_C_ADAPTER}:model=HunanApplicationRequest
-    if adapter in {ZHEJIANG_D_ADAPTER,ZHEJIANG_E_ADAPTER}:model=ZhejiangDApplicationRequest if kind=='application' else ZhejiangDEvidenceRequest
+    if adapter in {ZHEJIANG_D_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER}:model=ZhejiangDApplicationRequest if kind=='application' else ZhejiangDEvidenceRequest
     if adapter==JIANGSU_E_ADAPTER:model=JiangsuEApplicationRequest if kind=='application' else JiangsuEEvidenceRequest
     return model
 
@@ -283,10 +331,12 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
             request_model_factory=generation_request_model)
     except RegionalValidationError as exc:
         raise HTTPException(exc.status_code, str(exc)) from exc
-    blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER}
+    blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER}
     if adapter in blank_adapters|{RONGJIANG_ADAPTER,HUNAN_ADAPTER,HUNAN_C_ADAPTER} and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
     try:
-        if adapter==JIANGSU_E_ADAPTER:
+        if adapter==CHUNAN_ADAPTER:
+            doc=fill_chunan_document(g,t,payload.kind,checked_path(t,g),data.model_dump(),root=ROOT)
+        elif adapter==JIANGSU_E_ADAPTER:
             doc=fill_jiangsu_e_document(g,payload.kind,data.model_dump())
         elif adapter==ZHEJIANG_E_ADAPTER:
             doc=fill_zhejiang_e_document(g,t,payload.kind,checked_path(t,g),data.model_dump())

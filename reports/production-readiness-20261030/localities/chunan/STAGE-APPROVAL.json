@@ -1,0 +1,155 @@
+{
+  "authenticated": false,
+  "can_publish": false,
+  "candidate_browser_generation_qa": "NOT_RUN",
+  "files": [
+    {
+      "bytes": 242,
+      "path": "reports/production-readiness-20261030/localities/chunan/browser/attachment-network.txt",
+      "sha256": "c0693bb2aa4acd3c9e417d8b023e09dedf8dd2dc65b291001566e4d173c2b948"
+    },
+    {
+      "bytes": 9621,
+      "path": "reports/production-readiness-20261030/localities/chunan/browser/guide-text.txt",
+      "sha256": "267c772e4d7197e52a7fd323f6d9ed727a9ecbea4adceceae4285d63919b9fa1"
+    },
+    {
+      "bytes": 216839,
+      "path": "reports/production-readiness-20261030/localities/chunan/browser/guide.png",
+      "sha256": "24485ef9fcdad1f2b4fdc4421a855d31554b4c2aed63e9ceb0dddc0a4f702d9a"
+    },
+    {
+      "bytes": 106115,
+      "path": "reports/production-readiness-20261030/localities/chunan/browser/login-boundary.png",
+      "sha256": "66659ce69b5b9c4a5c0a8e244118a3e26c948ed76615278621d9a5afe5f70c18"
+    },
+    {
+      "bytes": 58656,
+      "path": "reports/production-readiness-20261030/localities/chunan/browser/materials.png",
+      "sha256": "1abed508ac13312eea02212460c6740a61a093b0f8a9d456b81726f2b3ebdd00"
+    },
+    {
+      "bytes": 27454,
+      "path": "reports/production-readiness-20261030/localities/chunan/fixtures/application-synthetic.docx",
+      "sha256": "db586ef0eeba5e956ab4aa8759743d1b37d03934c5c2dda3ce83a79581f380e3"
+    },
+    {
+      "bytes": 15862,
+      "path": "reports/production-readiness-20261030/localities/chunan/fixtures/evidence-synthetic.docx",
+      "sha256": "4612e6fa4b347665054ba029879f00377a29b0599079330a93083ee29611a387"
+    },
+    {
+      "bytes": 2508,
+      "path": "reports/production-readiness-20261030/localities/chunan/fixtures/synthetic-inputs.json",
+      "sha256": "067d670d955d689b1d79fb91bbf5d1ef26fea93c08b38ff87ddac5e15b2e9eff"
+    },
+    {
+      "bytes": 90039,
+      "path": "reports/production-readiness-20261030/localities/chunan/word/21B24C52D2AC3EB007AA7F55CE0AAD79-1.png",
+      "sha256": "ac6869fe9f56e95736a481ebc113840a65b5222330e9be9ad0119f450fb6be5f"
+    },
+    {
+      "bytes": 54049,
+      "path": "reports/production-readiness-20261030/localities/chunan/word/21B24C52D2AC3EB007AA7F55CE0AAD79-2.png",
+      "sha256": "f9bbbf4cb5c8aeaada8eb107ad69bc959843fe1d708f0779b4c5f5fc2a3d1b57"
+    },
+    {
+      "bytes": 75250,
+      "path": "reports/production-readiness-20261030/localities/chunan/word/21B24C52D2AC3EB007AA7F55CE0AAD79-3.png",
+      "sha256": "7b55035427e3fcbfdc1d88c9ddf8f653ae59776e454de0396235fc268c5e8fd5"
+    },
+    {
+      "bytes": 91761,
+      "path": "reports/production-readiness-20261030/localities/chunan/word/21B24C52D2AC3EB007AA7F55CE0AAD79-4.png",
+      "sha256": "23fb4b70821562f168fa76d6ce0062d51e933102f548d0e3876493e4dd2cdbc6"
+    },
+    {
+      "bytes": 49362,
+      "path": "reports/production-readiness-20261030/localities/chunan/word/21B24C52D2AC3EB007AA7F55CE0AAD79-5.png",
+      "sha256": "69009f8a8cd08dc4c6f031a6eccd47610cd37be84ad2438698ebfbc8a6c082e9"
+    },
+    {
+      "bytes": 76390,
+      "path": "reports/production-readiness-20261030/localities/chunan/word/21B24C52D2AC3EB007AA7F55CE0AAD79-6.png",
+      "sha256": "e0bdf623cc6467dd8dc2e5d84f4b7932d255be4ffbc5821014b9ae0224602814"
+    },
+    {
+      "bytes": 224881,
+      "path": "reports/production-readiness-20261030/localities/chunan/word/21B24C52D2AC3EB007AA7F55CE0AAD79.pdf",
+      "sha256": "afecdced1c32ae96153777d8745d064ac74f056add47795de3836a045cd2576f"
+    },
+    {
+      "bytes": 71487,
+      "path": "reports/production-readiness-20261030/localities/chunan/word/872DFF90A8578907CB947197A784AA48-1.png",
+      "sha256": "cbcf164f3ff19378328398a214e65d833d454fd40c5e82bd91333b68eae896ba"
+    },
+    {
+      "bytes": 64809,
+      "path": "reports/production-readiness-20261030/localities/chunan/word/872DFF90A8578907CB947197A784AA48.pdf",
+      "sha256": "ce255bc985a6d6c51bf2dcaacafd80ea4f4d042b000b630067ee9b5a8190155d"
+    },
+    {
+      "bytes": 97686,
+      "path": "reports/production-readiness-20261030/localities/chunan/word/application-synthetic-1.png",
+      "sha256": "74b047c0c5275d779430c0ae7ae7462722f3319febca10e1281a755fddeee21b"
+    },
+    {
+      "bytes": 204567,
+      "path": "reports/production-readiness-20261030/localities/chunan/word/application-synthetic-2.png",
+      "sha256": "3580c604932739a935d68904a9100445473a1e7abc7bdbff02c7f321ee0aec58"
+    },
+    {
+      "bytes": 77038,
+      "path": "reports/production-readiness-20261030/localities/chunan/word/application-synthetic-3.png",
+      "sha256": "25ec1bbe19b3cf0573bc7147ffd7d4f2dee91d1ec6179abace4d2a89638685aa"
+    },
+    {
+      "bytes": 153977,
+      "path": "reports/production-readiness-20261030/localities/chunan/word/application-synthetic.pdf",
+      "sha256": "54ae208874eb5db949e6639dd0c5fcfd071f1148e00432441ad8bf6f4071165e"
+    },
+    {
+      "bytes": 119144,
+      "path": "reports/production-readiness-20261030/localities/chunan/word/evidence-synthetic-1.png",
+      "sha256": "da44bd20dd2ceed4766b67ef68cba6b83bfb44e8bb26b0ff87603632b4f8774c"
+    },
+    {
+      "bytes": 96635,
+      "path": "reports/production-readiness-20261030/localities/chunan/word/evidence-synthetic.pdf",
+      "sha256": "51fcf6e7ad1b657a07cde218a4d5a4c17fd1ea67bbc96663067fa8e92e8f78ba"
+    },
+    {
+      "bytes": 1585,
+      "path": "reports/production-readiness-20261030/localities/chunan/word/RENDER.json",
+      "sha256": "321418b3deea17e845970c2e8fe94360ec1f76bc21d68f0e43b0a862b3fa8efe"
+    }
+  ],
+  "models_called": false,
+  "native_official_blank_downloads_http": [
+    200,
+    200
+  ],
+  "native_official_guide_checked": true,
+  "official_source_files_modified": false,
+  "online_boundary": "login_and_image_captcha",
+  "package_preservation_except_document_xml": "PASS",
+  "public_whitelist_sha256": "689740ac4a5827f926beafd708840400fbe72f062a52707471666a50e521e292",
+  "region_code": "330127",
+  "schema_version": 1,
+  "scope": "Chunan own-source staged worker forms only",
+  "source_id": "3fb683d473fe253a3a117d46",
+  "source_manifest_sha256": "78ded402d48d559ece5032e3ca6eef6c775073dc48e0d4c2cd97bc7f82b8e1a5",
+  "submitted": false,
+  "visual_review": {
+    "originals": "All seven pages inspected in rendered contact sheet; worker and employer originals remain distinct.",
+    "outputs": "Each of the four output pages inspected individually at 1400px. Readable slots and borders, no clipping, worker-only 3-page output; evidence 1-page output; signatures blank, missing copies/date stay blank.",
+    "status": "PASS_FOR_THIS_SYNTHETIC_FIXTURE"
+  },
+  "word_engine": "Microsoft Word independent hidden read-only instance",
+  "word_pages": {
+    "filled_evidence": 1,
+    "filled_worker_application": 3,
+    "official_application": 6,
+    "official_evidence": 1
+  }
+}
