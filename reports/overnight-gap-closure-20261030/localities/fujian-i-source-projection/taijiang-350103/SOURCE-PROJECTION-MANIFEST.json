@@ -1,0 +1,135 @@
+{
+  "province": "fujian",
+  "city": "福州市",
+  "district": "台江区",
+  "region_code": "350103",
+  "source_id": "dcf9b71dee1c1cb61a3af637",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=442BD04C55F500427A01682CD4325DC4&infoType=1",
+  "derived_sanitized_projection": true,
+  "raw_api_response_included": false,
+  "projected_at": "2026-10-30T18:50:54.611364+00:00",
+  "scope": "Independent own district derived public source metadata and original attachment bytes only",
+  "parent_raw_freeze_path": "reports/overnight-gap-closure-20261030/localities/fujian-own-source-discovery/taijiang-350103/SOURCE-DISCOVERY-FREEZE.json",
+  "parent_raw_freeze_sha256": "ec361d375ae1346b8b454c8c4992da366490afd3c1121512cf204d162554c4b3",
+  "parent_raw_response_is_public_artifact": false,
+  "guide_status": "partial",
+  "committee_full_name": null,
+  "copy_literals": [
+    "原件份数2份",
+    "原件份数2份",
+    "复印件份数2份"
+  ],
+  "can_generate": false,
+  "published": false,
+  "stage_approval": false,
+  "publication_approval": false,
+  "files": {
+    "SOURCE-QUALIFICATIONS.json": {
+      "bytes": 1552,
+      "sha256": "d771e379895ca471b2644a2a4be8e77e64eba1bc863428c0a2e2232a28ee552f",
+      "mode": "allowlisted_derived_projection",
+      "parent_files": {
+        "SOURCE-QUALIFICATIONS.json": "f282784b2d134d455c82651f5ad004ea7f0145a7618dd014e8ba6ab676bf0c3e",
+        "own-guide-native-dom.json": "1045314058a296b8a12a6bd076c80e19788182802fabaaf8f1c04d394bd764ba"
+      }
+    },
+    "api-own-attachment-metadata.json": {
+      "bytes": 1989,
+      "sha256": "71e9b978b1c180c76c1758e73e435022d67555a580b12f938f990d5cfbcb4a0d",
+      "mode": "allowlisted_derived_projection",
+      "parent_files": {
+        "public-own-table-info.json": "a89cdb2f02f32394b96f877a0821e8ba048ddb0fdda36c82be4c93bfa9124843"
+      }
+    },
+    "application-own-format-public-retrieval.docx": {
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "mode": "byte_identical_own_official_original",
+      "parent_files": {
+        "application-own-format-public-retrieval.docx": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+      }
+    },
+    "application-own-sample-public-retrieval.docx": {
+      "bytes": 14508,
+      "sha256": "0e12ef5b38621fdf5e66fe8fe4aa20bf009fc94b9608971ff0eabd7a1ec0c378",
+      "mode": "byte_identical_own_official_original",
+      "parent_files": {
+        "application-own-sample-public-retrieval.docx": "0e12ef5b38621fdf5e66fe8fe4aa20bf009fc94b9608971ff0eabd7a1ec0c378"
+      }
+    },
+    "evidence-list-own-format-public-retrieval.docx": {
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "mode": "byte_identical_own_official_original",
+      "parent_files": {
+        "evidence-list-own-format-public-retrieval.docx": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+      }
+    },
+    "evidence-list-own-sample-public-retrieval.docx": {
+      "bytes": 18300,
+      "sha256": "7222e116960019a3b9072b36475f8736392471567f760763a50be941786a940d",
+      "mode": "byte_identical_own_official_original",
+      "parent_files": {
+        "evidence-list-own-sample-public-retrieval.docx": "7222e116960019a3b9072b36475f8736392471567f760763a50be941786a940d"
+      }
+    },
+    "evidence-material-own-format-public-retrieval.docx": {
+      "bytes": 17288,
+      "sha256": "31b98bc4a0ac254e1d819aed66f9d1d211c1aca3b3feea8c258c79a88b2a926e",
+      "mode": "byte_identical_own_official_original",
+      "parent_files": {
+        "evidence-material-own-format-public-retrieval.docx": "31b98bc4a0ac254e1d819aed66f9d1d211c1aca3b3feea8c258c79a88b2a926e"
+      }
+    },
+    "evidence-material-own-sample-public-retrieval.docx": {
+      "bytes": 17288,
+      "sha256": "31b98bc4a0ac254e1d819aed66f9d1d211c1aca3b3feea8c258c79a88b2a926e",
+      "mode": "byte_identical_own_official_original",
+      "parent_files": {
+        "evidence-material-own-sample-public-retrieval.docx": "31b98bc4a0ac254e1d819aed66f9d1d211c1aca3b3feea8c258c79a88b2a926e"
+      }
+    },
+    "material-statements.json": {
+      "bytes": 4817,
+      "sha256": "f59e48ad0aef65da7f10c343e7bc2a203cda8483991da3f607405b0f92729492",
+      "mode": "allowlisted_derived_projection",
+      "parent_files": {
+        "own-guide-native-dom.json": "1045314058a296b8a12a6bd076c80e19788182802fabaaf8f1c04d394bd764ba"
+      }
+    },
+    "native-discovery-path.json": {
+      "bytes": 907,
+      "sha256": "7922c3c5b36147522f71de1a5f7acf360962eb80e22805e051bdb19526985a48",
+      "mode": "allowlisted_derived_projection",
+      "parent_files": {
+        "native-discovery-path.json": "d2bdc754786cf09561d417bddec0f64772ca712b7f3c5b45f23d28ba49483621"
+      }
+    },
+    "online-boundary.json": {
+      "bytes": 785,
+      "sha256": "658297d03ab392a24ad00f717ab371f9a4e4d01bf35cdbca46105cebd5f0f8fd",
+      "mode": "allowlisted_derived_projection",
+      "parent_files": {
+        "online-native-scan-login-boundary.json": "07278247195dd2dfff49474f26b2dbb4267539851564dfca8c10c58f0ebec29d"
+      }
+    },
+    "own-guide-native-dom.json": {
+      "bytes": 36933,
+      "sha256": "42f678b1a19a7ba54afe27d47bf471153f99f86990564587793abbb86390b4f8",
+      "mode": "allowlisted_derived_projection",
+      "parent_files": {
+        "own-guide-native-dom.json": "1045314058a296b8a12a6bd076c80e19788182802fabaaf8f1c04d394bd764ba"
+      }
+    },
+    "own-official-bindings.json": {
+      "bytes": 6057,
+      "sha256": "8658000e20379c649e7650b3fc674ab205308cef1d81f5605b38f77814958988",
+      "mode": "allowlisted_derived_projection",
+      "parent_files": {
+        "own-attachment-retrievals.json": "587ddf6bd8b8808e07215c8aff5d5765ef6b451e460e22e28a38f321d395a0fa",
+        "public-own-table-info.json": "a89cdb2f02f32394b96f877a0821e8ba048ddb0fdda36c82be4c93bfa9124843",
+        "own-official-bindings.json": "9637d9f795c4e1f927e9de10e305a57fe79db1412c172327ca8c929c3e275d0f"
+      }
+    }
+  }
+}

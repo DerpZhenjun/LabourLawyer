@@ -1,0 +1,47 @@
+{
+  "fixture_scope": "Completely fictional software validation, no real application",
+  "region_code": "350104",
+  "kind": "evidence",
+  "scenario": "normal",
+  "data": {
+    "evidenceList": [
+      {
+        "name": "虚构仓山演示记录",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "全部虚构，仅验证证据字段与合计。",
+        "pageRange": "1—2"
+      }
+    ]
+  },
+  "request": {
+    "province": "fujian",
+    "city": "福州市",
+    "district": "仓山区",
+    "region_code": "350104",
+    "source_id": "9ab36db8d0ff985d9617a944",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=C305CB8E72A47E753A26686C733D3559&infoType=1",
+    "source_version": "3894d8243227389134ac0fbff5524deeee37c30f03295685cc1897eb3bf5f2e2",
+    "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+    "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "template_version": "sha256:d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "schema_id": "fujian-i-350104-evidence-v1",
+    "schema_version": 1,
+    "kind": "evidence",
+    "mode": "blank",
+    "data": {
+      "evidenceList": [
+        {
+          "name": "虚构仓山演示记录",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "全部虚构，仅验证证据字段与合计。",
+          "pageRange": "1—2"
+        }
+      ]
+    }
+  },
+  "reviewed_docx": "reports/overnight-gap-closure-20261030/localities/fujian-i/integration-qa-v1/word/350104-normal-evidence.docx",
+  "reviewed_docx_sha256": "a1fffc7f0050a35c3b814fdfb2a721f2f2defe7eaa9d94a91b80e32b8f7be0f0",
+  "public_generation_approved": false
+}

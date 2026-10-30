@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "independent_root_actual_download_pages_viewed": 12,
+  "files": 8,
+  "filled_application_pages_each": 2,
+  "blank_application_pages_each": 2,
+  "evidence_pages_each": 1,
+  "findings": [
+    "All12 actual native-browser download page PNGs independently viewed.",
+    "Generic platform fictional defaults differ from older offline normal fixtures; fresh native Word rendering was performed instead of claiming byte parity.",
+    "Filled applications retain closing/blank committee prefix/signature/date together on page2; no compact one-page claim.",
+    "Blank applications retain their own original blank page2; all four blank downloads byte-match their own official original.",
+    "Filled evidence has one fictional row and correct1group3pages total, with blank submitter/date.",
+    "No clipping/overlap or missing entered text observed. All nonempty submitted values found in the actual PDF text."
+  ],
+  "source_and_word_stage_pins_unchanged": true,
+  "models": 0,
+  "screenshots": "NOT_CAPTURED_TOOL_RESTRICTION"
+}

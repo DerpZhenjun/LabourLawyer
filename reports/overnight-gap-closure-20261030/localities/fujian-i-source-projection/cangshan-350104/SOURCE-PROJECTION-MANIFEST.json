@@ -1,0 +1,135 @@
+{
+  "province": "fujian",
+  "city": "福州市",
+  "district": "仓山区",
+  "region_code": "350104",
+  "source_id": "9ab36db8d0ff985d9617a944",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=C305CB8E72A47E753A26686C733D3559&infoType=1",
+  "derived_sanitized_projection": true,
+  "raw_api_response_included": false,
+  "projected_at": "2026-10-30T18:50:54.611364+00:00",
+  "scope": "Independent own district derived public source metadata and original attachment bytes only",
+  "parent_raw_freeze_path": "reports/overnight-gap-closure-20261030/localities/fujian-own-source-discovery/cangshan-350104/SOURCE-DISCOVERY-FREEZE.json",
+  "parent_raw_freeze_sha256": "d89c09d5f61f10267348daafcf06f21b535868dbc1bd665ce44803114ceda27a",
+  "parent_raw_response_is_public_artifact": false,
+  "guide_status": "partial",
+  "committee_full_name": null,
+  "copy_literals": [
+    "原件份数1份",
+    "原件份数1份",
+    "复印件份数1份"
+  ],
+  "can_generate": false,
+  "published": false,
+  "stage_approval": false,
+  "publication_approval": false,
+  "files": {
+    "SOURCE-QUALIFICATIONS.json": {
+      "bytes": 1552,
+      "sha256": "fba8f7cfe922818c26b70a7688c3503d7700e02cc792fa5fe34ee2ade690368c",
+      "mode": "allowlisted_derived_projection",
+      "parent_files": {
+        "SOURCE-QUALIFICATIONS.json": "9c8b0ea79e97cf203e1587a70f1629e2cbb54005bef1006f121f40b8b9ccc092",
+        "own-guide-native-dom.json": "a9a1d592318c63eca6df53293bae06f9d4c5d2d2f0d051e809f34aa7ce8d42c4"
+      }
+    },
+    "api-own-attachment-metadata.json": {
+      "bytes": 1989,
+      "sha256": "850e93029dfb01c523b0f857c49b7bcd70c9ab237f13cdb20175d731b390357f",
+      "mode": "allowlisted_derived_projection",
+      "parent_files": {
+        "public-own-table-info.json": "7cadd272d2438fa3a0db2208b77cba67f639736a22a1015261118a2eba77e44c"
+      }
+    },
+    "application-own-format-public-retrieval.docx": {
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "mode": "byte_identical_own_official_original",
+      "parent_files": {
+        "application-own-format-public-retrieval.docx": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+      }
+    },
+    "application-own-sample-public-retrieval.docx": {
+      "bytes": 14508,
+      "sha256": "0e12ef5b38621fdf5e66fe8fe4aa20bf009fc94b9608971ff0eabd7a1ec0c378",
+      "mode": "byte_identical_own_official_original",
+      "parent_files": {
+        "application-own-sample-public-retrieval.docx": "0e12ef5b38621fdf5e66fe8fe4aa20bf009fc94b9608971ff0eabd7a1ec0c378"
+      }
+    },
+    "evidence-list-own-format-public-retrieval.docx": {
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "mode": "byte_identical_own_official_original",
+      "parent_files": {
+        "evidence-list-own-format-public-retrieval.docx": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+      }
+    },
+    "evidence-list-own-sample-public-retrieval.docx": {
+      "bytes": 18300,
+      "sha256": "7222e116960019a3b9072b36475f8736392471567f760763a50be941786a940d",
+      "mode": "byte_identical_own_official_original",
+      "parent_files": {
+        "evidence-list-own-sample-public-retrieval.docx": "7222e116960019a3b9072b36475f8736392471567f760763a50be941786a940d"
+      }
+    },
+    "evidence-material-own-format-public-retrieval.docx": {
+      "bytes": 17288,
+      "sha256": "31b98bc4a0ac254e1d819aed66f9d1d211c1aca3b3feea8c258c79a88b2a926e",
+      "mode": "byte_identical_own_official_original",
+      "parent_files": {
+        "evidence-material-own-format-public-retrieval.docx": "31b98bc4a0ac254e1d819aed66f9d1d211c1aca3b3feea8c258c79a88b2a926e"
+      }
+    },
+    "evidence-material-own-sample-public-retrieval.docx": {
+      "bytes": 17288,
+      "sha256": "31b98bc4a0ac254e1d819aed66f9d1d211c1aca3b3feea8c258c79a88b2a926e",
+      "mode": "byte_identical_own_official_original",
+      "parent_files": {
+        "evidence-material-own-sample-public-retrieval.docx": "31b98bc4a0ac254e1d819aed66f9d1d211c1aca3b3feea8c258c79a88b2a926e"
+      }
+    },
+    "material-statements.json": {
+      "bytes": 4501,
+      "sha256": "4c75dcc2adf87f6c66c532448c276b52b9ef3bca4fbc59e5622757cd0c02210f",
+      "mode": "allowlisted_derived_projection",
+      "parent_files": {
+        "own-guide-native-dom.json": "a9a1d592318c63eca6df53293bae06f9d4c5d2d2f0d051e809f34aa7ce8d42c4"
+      }
+    },
+    "native-discovery-path.json": {
+      "bytes": 754,
+      "sha256": "6475c9102e4bb239e1c46371b084b51081f991952a5922e45839bdf2ddb24d52",
+      "mode": "allowlisted_derived_projection",
+      "parent_files": {
+        "native-discovery-path.json": "56c432005315523339b0a0dc3de9d3eb2a7e84d90f22a175bd9919a5e2282b20"
+      }
+    },
+    "online-boundary.json": {
+      "bytes": 785,
+      "sha256": "4b323bb3551db17cd9dda1c2c3c84566387625153a8e06dea9c0a8a739616490",
+      "mode": "allowlisted_derived_projection",
+      "parent_files": {
+        "online-native-scan-login-boundary.json": "9e8a123cddb6b970cfcaa106dde00bbee5a5a9dcfa8003407696fa6e8840983e"
+      }
+    },
+    "own-guide-native-dom.json": {
+      "bytes": 35965,
+      "sha256": "9c520e21238b28ca256b07cad3d05dc71124b7d763a0e4b0eb10c000c1f4b432",
+      "mode": "allowlisted_derived_projection",
+      "parent_files": {
+        "own-guide-native-dom.json": "a9a1d592318c63eca6df53293bae06f9d4c5d2d2f0d051e809f34aa7ce8d42c4"
+      }
+    },
+    "own-official-bindings.json": {
+      "bytes": 6057,
+      "sha256": "241dbc31f1ae1034d3178edf82a5921368d153c27f110ef9dd86a5a0db27f400",
+      "mode": "allowlisted_derived_projection",
+      "parent_files": {
+        "own-attachment-retrievals.json": "ae87cc1334c903f4daa54effc606ec27ef6cb90d9d8b44bddcac79a652d8a877",
+        "public-own-table-info.json": "7cadd272d2438fa3a0db2208b77cba67f639736a22a1015261118a2eba77e44c",
+        "own-official-bindings.json": "6913495337f029fb6bda643ef9f6e91d51d10da193426a75a845335c258520e8"
+      }
+    }
+  }
+}

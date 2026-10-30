@@ -1,0 +1,243 @@
+{
+  "fixture_scope": "Completely fictional software validation, no real application",
+  "region_code": "350104",
+  "kind": "evidence",
+  "scenario": "stress",
+  "data": {
+    "evidenceList": [
+      {
+        "name": "虚构长名称容量边界测试虚构长名称容量边界测试虚构长名称容量边界测试虚构长名称容量边界测试虚构长名称容量边界测试",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "虚构证明对象容量边界验证，无真实案件资料。虚构证明对象容量边界验证，无真实案件资料。虚构证明对象容量边界验证，无真实案件资料。",
+        "pageRange": "1—2"
+      },
+      {
+        "name": "虚构仓山第2组记录跨行测试",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+        "pageRange": "3—4"
+      },
+      {
+        "name": "虚构仓山第3组记录跨行测试",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+        "pageRange": "5—6"
+      },
+      {
+        "name": "虚构仓山第4组记录跨行测试",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+        "pageRange": "7—8"
+      },
+      {
+        "name": "虚构仓山第5组记录跨行测试",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+        "pageRange": "9—10"
+      },
+      {
+        "name": "虚构仓山第6组记录跨行测试",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+        "pageRange": "11—12"
+      },
+      {
+        "name": "虚构仓山第7组记录跨行测试",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+        "pageRange": "13—14"
+      },
+      {
+        "name": "虚构仓山第8组记录跨行测试",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+        "pageRange": "15—16"
+      },
+      {
+        "name": "虚构仓山第9组记录跨行测试",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+        "pageRange": "17—18"
+      },
+      {
+        "name": "虚构仓山第10组记录跨行测试",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+        "pageRange": "19—20"
+      },
+      {
+        "name": "虚构仓山第11组记录跨行测试",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+        "pageRange": "21—22"
+      },
+      {
+        "name": "虚构仓山第12组记录跨行测试",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+        "pageRange": "23—24"
+      },
+      {
+        "name": "虚构仓山第13组记录跨行测试",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+        "pageRange": "25—26"
+      },
+      {
+        "name": "虚构仓山第14组记录跨行测试",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+        "pageRange": "27—28"
+      },
+      {
+        "name": "虚构仓山第15组记录跨行测试",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+        "pageRange": "29—30"
+      }
+    ]
+  },
+  "request": {
+    "province": "fujian",
+    "city": "福州市",
+    "district": "仓山区",
+    "region_code": "350104",
+    "source_id": "9ab36db8d0ff985d9617a944",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=C305CB8E72A47E753A26686C733D3559&infoType=1",
+    "source_version": "3894d8243227389134ac0fbff5524deeee37c30f03295685cc1897eb3bf5f2e2",
+    "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+    "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "template_version": "sha256:d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "schema_id": "fujian-i-350104-evidence-v1",
+    "schema_version": 1,
+    "kind": "evidence",
+    "mode": "blank",
+    "data": {
+      "evidenceList": [
+        {
+          "name": "虚构长名称容量边界测试虚构长名称容量边界测试虚构长名称容量边界测试虚构长名称容量边界测试虚构长名称容量边界测试",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "虚构证明对象容量边界验证，无真实案件资料。虚构证明对象容量边界验证，无真实案件资料。虚构证明对象容量边界验证，无真实案件资料。",
+          "pageRange": "1—2"
+        },
+        {
+          "name": "虚构仓山第2组记录跨行测试",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+          "pageRange": "3—4"
+        },
+        {
+          "name": "虚构仓山第3组记录跨行测试",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+          "pageRange": "5—6"
+        },
+        {
+          "name": "虚构仓山第4组记录跨行测试",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+          "pageRange": "7—8"
+        },
+        {
+          "name": "虚构仓山第5组记录跨行测试",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+          "pageRange": "9—10"
+        },
+        {
+          "name": "虚构仓山第6组记录跨行测试",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+          "pageRange": "11—12"
+        },
+        {
+          "name": "虚构仓山第7组记录跨行测试",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+          "pageRange": "13—14"
+        },
+        {
+          "name": "虚构仓山第8组记录跨行测试",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+          "pageRange": "15—16"
+        },
+        {
+          "name": "虚构仓山第9组记录跨行测试",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+          "pageRange": "17—18"
+        },
+        {
+          "name": "虚构仓山第10组记录跨行测试",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+          "pageRange": "19—20"
+        },
+        {
+          "name": "虚构仓山第11组记录跨行测试",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+          "pageRange": "21—22"
+        },
+        {
+          "name": "虚构仓山第12组记录跨行测试",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+          "pageRange": "23—24"
+        },
+        {
+          "name": "虚构仓山第13组记录跨行测试",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+          "pageRange": "25—26"
+        },
+        {
+          "name": "虚构仓山第14组记录跨行测试",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+          "pageRange": "27—28"
+        },
+        {
+          "name": "虚构仓山第15组记录跨行测试",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "仅验证虚构材料关联与跨页排版，不对应真实案件。",
+          "pageRange": "29—30"
+        }
+      ]
+    }
+  },
+  "reviewed_docx": "reports/overnight-gap-closure-20261030/localities/fujian-i/integration-qa-v1/word/350104-stress-evidence.docx",
+  "reviewed_docx_sha256": "6ae11772e9e88478723a80c7246b77c26fc46c65ba49a8a05e1c414dbb288880",
+  "public_generation_approved": false
+}

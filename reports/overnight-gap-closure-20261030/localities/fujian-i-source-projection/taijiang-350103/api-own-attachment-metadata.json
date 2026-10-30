@@ -1,0 +1,56 @@
+{
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=442BD04C55F500427A01682CD4325DC4&infoType=1",
+  "request_url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/getTableInfo?serviceId=442BD04C55F500427A01682CD4325DC4",
+  "http_status": 200,
+  "derived_public_metadata_only": true,
+  "attachments": [
+    {
+      "material_id": "95BFC814AC83608699C37332D64064B1",
+      "file_id": "CC300F5D9DD5DC404D65C68116D50C55",
+      "name": "证据清单（空白）.docx",
+      "type": "1",
+      "created_at": "2024-05-15 11:36:29",
+      "updated_at": "2025-12-31 13:46:59"
+    },
+    {
+      "material_id": "95BFC814AC83608699C37332D64064B1",
+      "file_id": "D266D62D3E51B38A3C568B47677C4B09",
+      "name": "证据清单（示例）.docx",
+      "type": "2",
+      "created_at": "2024-05-15 11:36:29",
+      "updated_at": "2025-12-31 13:46:59"
+    },
+    {
+      "material_id": "22F4788FF49DA275A7A629B351324B9A",
+      "file_id": "7C3DBFA82D340B3C50F4DD45E14FE785",
+      "name": "证据材料（供参考）.docx",
+      "type": "1",
+      "created_at": "2024-05-15 11:36:31",
+      "updated_at": "2025-12-31 13:47:04"
+    },
+    {
+      "material_id": "22F4788FF49DA275A7A629B351324B9A",
+      "file_id": "6EFE86A941A038DC1ED88B911A7D5621",
+      "name": "证据材料（供参考）.docx",
+      "type": "2",
+      "created_at": "2024-05-15 11:36:31",
+      "updated_at": "2025-12-31 13:47:04"
+    },
+    {
+      "material_id": "1D19C0BB7B7D32E5FD97087F41BF8997",
+      "file_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+      "name": "仲裁申请书.docx",
+      "type": "1",
+      "created_at": "2023-12-28 17:05:18",
+      "updated_at": "2024-08-21 17:53:50.001"
+    },
+    {
+      "material_id": "1D19C0BB7B7D32E5FD97087F41BF8997",
+      "file_id": "98A0EE44D3D63B3D6A10FE60D4E83776",
+      "name": "仲裁申请书示例.docx",
+      "type": "2",
+      "created_at": "2023-12-28 17:05:18",
+      "updated_at": "2024-08-21 17:53:50.001"
+    }
+  ]
+}

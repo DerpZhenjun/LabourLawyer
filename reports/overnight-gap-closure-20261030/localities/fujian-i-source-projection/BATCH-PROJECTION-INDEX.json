@@ -1,0 +1,20 @@
+{
+  "scope": "Derived source projection only; separate from candidate, stage and publication approval",
+  "projected_at": "2026-10-30T18:50:54.611364+00:00",
+  "can_generate": false,
+  "published": false,
+  "regions": {
+    "350103": {
+      "folder": "taijiang-350103",
+      "source_id": "dcf9b71dee1c1cb61a3af637",
+      "parent_raw_freeze_sha256": "ec361d375ae1346b8b454c8c4992da366490afd3c1121512cf204d162554c4b3",
+      "manifest_sha256": "c607b8c474e722911789ed7c80a0ed6b3e1e1c8dc0aa6fdd1ad78e09cd157368"
+    },
+    "350104": {
+      "folder": "cangshan-350104",
+      "source_id": "9ab36db8d0ff985d9617a944",
+      "parent_raw_freeze_sha256": "d89c09d5f61f10267348daafcf06f21b535868dbc1bd665ce44803114ceda27a",
+      "manifest_sha256": "3894d8243227389134ac0fbff5524deeee37c30f03295685cc1897eb3bf5f2e2"
+    }
+  }
+}

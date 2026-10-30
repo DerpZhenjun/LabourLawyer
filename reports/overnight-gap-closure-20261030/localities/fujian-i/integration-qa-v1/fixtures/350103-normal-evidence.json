@@ -1,0 +1,47 @@
+{
+  "fixture_scope": "Completely fictional software validation, no real application",
+  "region_code": "350103",
+  "kind": "evidence",
+  "scenario": "normal",
+  "data": {
+    "evidenceList": [
+      {
+        "name": "虚构台江演示记录",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "全部虚构，仅验证证据字段与合计。",
+        "pageRange": "1—2"
+      }
+    ]
+  },
+  "request": {
+    "province": "fujian",
+    "city": "福州市",
+    "district": "台江区",
+    "region_code": "350103",
+    "source_id": "dcf9b71dee1c1cb61a3af637",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=442BD04C55F500427A01682CD4325DC4&infoType=1",
+    "source_version": "c607b8c474e722911789ed7c80a0ed6b3e1e1c8dc0aa6fdd1ad78e09cd157368",
+    "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+    "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "template_version": "sha256:d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "schema_id": "fujian-i-350103-evidence-v1",
+    "schema_version": 1,
+    "kind": "evidence",
+    "mode": "blank",
+    "data": {
+      "evidenceList": [
+        {
+          "name": "虚构台江演示记录",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "全部虚构，仅验证证据字段与合计。",
+          "pageRange": "1—2"
+        }
+      ]
+    }
+  },
+  "reviewed_docx": "reports/overnight-gap-closure-20261030/localities/fujian-i/integration-qa-v1/word/350103-normal-evidence.docx",
+  "reviewed_docx_sha256": "887dba6a742f65d965bacbab3404f29101a5a872bb79cd79b82af934a3ae1c35",
+  "public_generation_approved": false
+}

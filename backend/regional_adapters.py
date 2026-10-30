@@ -41,6 +41,9 @@ from regional_jiangsu_oct31g import (with_capabilities as with_jiangsu_g_capabil
     checked_adapter as checked_jiangsu_g_adapter, ADAPTER as JIANGSU_G_ADAPTER)
 from regional_fujian_oct31h import (with_capabilities as with_fujian_h_capabilities,
     checked_adapter as checked_fujian_h_adapter, ADAPTER as FUJIAN_H_ADAPTER)
+from regional_fujian_oct31i import (with_capabilities as with_fujian_i_capabilities,
+    checked_adapter as checked_fujian_i_adapter, ADAPTER as FUJIAN_I_ADAPTER,
+    SUPPORTED as FUJIAN_I_CODES)
 
 def jiangsu_e_binding(guide,template,root=None):
     try:return jiangsu_e_contract(guide,template,root=root)['kind']
@@ -267,6 +270,8 @@ def reference_binding(guide, template):
 
 def with_reference_capabilities(guide,root=None):
     """Publish platform adaptation separately from the retained official content."""
+    if guide.get('province') == 'fujian' and guide.get('region_code') in FUJIAN_I_CODES:
+        return with_fujian_i_capabilities(guide, root=root)
     if guide.get('province') == 'fujian' and guide.get('region_code') == '350102':
         return with_fujian_h_capabilities(guide, root=root)
     if guide.get('province') == 'jiangsu' and guide.get('region_code') == '320583':
@@ -332,6 +337,8 @@ def with_reference_capabilities(guide,root=None):
 
 
 def checked_reference_adapter(guide, template, kind,root=None):
+    if template.get('adapter') == FUJIAN_I_ADAPTER:
+        return checked_fujian_i_adapter(guide, template, kind, root=root)
     if template.get('adapter') == FUJIAN_H_ADAPTER:
         return checked_fujian_h_adapter(guide, template, kind, root=root)
     if template.get('adapter') == JIANGSU_G_ADAPTER:

@@ -16,6 +16,7 @@ import unicodedata
 from regional_adapters import checked_reference_adapter
 from regional_public_provenance import public_evidence
 from regional_fujian_oct31h import ADAPTER as FJH, form_fields as fujian_h_fields, defaults as fujian_h_defaults
+from regional_fujian_oct31i import ADAPTER as FJI, schema_descriptor as fujian_i_schema
 
 ROOT=Path(__file__).resolve().parents[1]
 EJS='jiangsu_own_blank_oct29e_v1'
@@ -29,8 +30,8 @@ JS_BLANK={'jiangsu_xishan_blank_v1','jiangsu_own_blank_oct29_v1',
 REFERENCE={'sichuan_combined_reference_v1','tianfu_reference_v1'}
 NINGBO='zhejiang_ningbo_own_blank_oct29_v1'
 FEIDONG='anhui-feidong-official-application-20261029'
-SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH}|ZJ_OWN|HN|JS_BLANK|REFERENCE)
-PUBLIC_PROOF_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,'jiangsu_own_blank_oct29c_v1','jiangsu_own_blank_oct29d_v1'}|ZJ_OWN|HN)
+SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI}|ZJ_OWN|HN|JS_BLANK|REFERENCE)
+PUBLIC_PROOF_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,'jiangsu_own_blank_oct29c_v1','jiangsu_own_blank_oct29d_v1'}|ZJ_OWN|HN)
 
 JS_APP=('applicantName birthDate gender idNumber idAddress otherDocumentType otherDocumentNumber '
         'applicantMailingAddress phone acceptMediation legalAid respondentName respondentType '
@@ -199,7 +200,8 @@ def build_form_contract(guide,template,kind,root=None):
     if checked_reference_adapter(guide,template,kind,root=root)!=adapter:raise ValueError('本区适配器身份不匹配')
     from routes.regional_guides import generation_request_model
     schema=generation_request_model(adapter,kind).model_json_schema()
-    fields=_fields(adapter,kind,schema)
+    own_schema=fujian_i_schema(guide['region_code'],kind) if adapter==FJI else None
+    fields=deepcopy(own_schema['fields']) if own_schema else _fields(adapter,kind,schema)
     context={k:guide[k] for k in identity};context.update(version=guide['version'],template_id=template['id'],kind=kind,
         mode='blank' if template['official_kind']=='blank' else 'reference_adaptation',adapter=adapter)
     policy={'unknown_fields':'reject','invalid_xml':'reject','capacity_is_official_requirement':False,'text_controls':'xml',
@@ -215,6 +217,10 @@ def build_form_contract(guide,template,kind,root=None):
                       'facts':{'first_width':56,'later_width':56,'max_lines':10,'trim':True}}}
     result={'schema_version':1,'context':context,'fields':fields,'defaults':{f['key']:_empty(f) for f in fields},'policy':policy}
     if adapter==FJH:result['defaults']=fujian_h_defaults(kind)
+    if own_schema:
+        context.update(schema_id=own_schema['schema_id'],schema_version=own_schema['schema_version'],
+            source_version=own_schema['source_version'],template_sha256=template['sha256'],template_version='sha256:'+template['sha256'])
+        result.update(defaults=deepcopy(own_schema['defaults']),policy=deepcopy(own_schema['policy']))
     result['contract_id']=_contract_id(result)
     return result
 

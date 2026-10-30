@@ -1,0 +1,37 @@
+{
+  "province": "fujian",
+  "city": "福州市",
+  "district": "台江区",
+  "region_code": "350103",
+  "source_id": "dcf9b71dee1c1cb61a3af637",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=442BD04C55F500427A01682CD4325DC4&infoType=1",
+  "guide_status": "partial",
+  "official_guide_version": null,
+  "observation_time_is_official_version": false,
+  "copy_literals": [
+    "原件份数2份",
+    "原件份数2份",
+    "复印件份数2份"
+  ],
+  "committee_full_name": null,
+  "committee_autofill_allowed": false,
+  "sample_contents_retrieved": true,
+  "official_sample_visual_reviewed": false,
+  "sample_values_used_as_case_facts": false,
+  "reference_role": "scanning_instructions_only",
+  "native_browser_downloads_completed": 0,
+  "anonymous_public_retrievals": 6,
+  "can_generate": false,
+  "published": false,
+  "stage_approval": false,
+  "publication_approval": false,
+  "candidate_source_migration_review": "PENDING",
+  "qualifications": [
+    "Derived source-only projection; original API response is not included.",
+    "Own material copies are verbatim source information, not automatic submission counts.",
+    "Own reception/review time literals in the guide are not an overall arbitration decision deadline.",
+    "Sample contents are not case facts or blank-generation approval. Reference documents are upload instructions.",
+    "No other district material rule, committee name or approval is inherited.",
+    "Own native online entry stopped at APP scan login; no login, scan or submission."
+  ]
+}
