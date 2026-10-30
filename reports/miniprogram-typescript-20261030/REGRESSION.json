@@ -1,0 +1,32 @@
+{
+  "strict_mini_typecheck": "PASS",
+  "typed_business_sources": 10,
+  "native_pages": 7,
+  "actual_type_error_counterexamples": 4,
+  "shared_dto": "same regional, AI and provincial field/limit sources",
+  "regional_page_vm_cases": 18,
+  "provincial_request_sha_parity": 34,
+  "backend_tests": {
+    "run": 33,
+    "passed": 33,
+    "seconds": 47.244,
+    "command": "python -m unittest backend.tests.test_document_client_contract backend.tests.test_document_field_regressions backend.tests.test_regional_form_contracts -q"
+  },
+  "vue_typecheck_and_build": "PASS",
+  "clean_git_archive": {
+    "source_commit": "b8feda438ed012627bc2d93f304f94fc84a5a804",
+    "scope": "miniprogram and packages",
+    "tests": "full mini npm test PASS",
+    "dependencies": "junction to installed lockfile dependencies; not a fresh install"
+  },
+  "preexisting_dirty_files_preserved": 6,
+  "guide_rows_preserved": {
+    "regional_current": 202,
+    "regional_guides": 210,
+    "collection_outbox": 377
+  },
+  "windows_model_started": false,
+  "model_inference": false,
+  "wechat_packaging": "PASS: node_modules, tests, scripts and types excluded; native modules load without those runtime dependencies",
+  "post_packaging_simulator": "PASS: recompiled home displays 31 province cards"
+}

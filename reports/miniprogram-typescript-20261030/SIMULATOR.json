@@ -1,0 +1,60 @@
+{
+  "status": "PASS_REAL_SIMULATOR_PAGES_AND_SWITCHING",
+  "pages": [
+    {
+      "route": "/pages/dashboard/index",
+      "rendered": true,
+      "error": ""
+    },
+    {
+      "route": "/pages/province/index?slug=zhejiang",
+      "rendered": true,
+      "error": ""
+    },
+    {
+      "route": "/pages/document/index?slug=zhejiang&kind=application",
+      "rendered": true,
+      "error": ""
+    },
+    {
+      "route": "/pages/assistant/index",
+      "rendered": true,
+      "error": ""
+    },
+    {
+      "route": "/pages/profile/index",
+      "rendered": true,
+      "error": ""
+    },
+    {
+      "route": "/pages/cases/index",
+      "rendered": true,
+      "error": ""
+    },
+    {
+      "route": "/pages/regional/index?province=zhejiang",
+      "rendered": true,
+      "error": ""
+    }
+  ],
+  "model_calls": false,
+  "published": false,
+  "physical_device": false,
+  "fuyang": {
+    "source_id": "16f67bbbcf7b124948381309",
+    "version": 209,
+    "fields": 24,
+    "kinds": 2
+  },
+  "jiande": {
+    "source_id": "f6487b8d118bdc3289baad17",
+    "version": 210,
+    "fields": 24
+  },
+  "unverified": {
+    "district": "桐庐县",
+    "available": false,
+    "notice": "该地区办事指南尚未核验，暂不能填写生成。"
+  },
+  "exceptions": []
+}

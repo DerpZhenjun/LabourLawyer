@@ -51,3 +51,5 @@ python -m unittest backend.tests.test_regional_form_contracts -v
 契约校验使用虚构内容和独立临时数据库。实际测试范围、真实网页下载及模拟器限制见 [本轮验收](../reports/typescript-regional-contracts-20261030/TEST-REPORT.md)。区县覆盖数量仍为 202 份指南、185 地开放填写生成，本轮没有新增或修改官方来源。
 
 后续页面迁移与 Android 1.2.0-preview.1 的实际结果见 [发布验收](../reports/typescript-frontends-release-20261030/TEST-REPORT.md)。网页、Android 共用构建；AI 请求/远程状态由 `packages/client-contracts` 同源生成供微信与数字人代理使用。直接运行 TypeScript 测试，本轮使用 Node 24.19.0。
+
+小程序全部 7 页、应用入口及两个业务工具现使用 TypeScript；网页剩余旧业务辅助模块也已迁移。运行 `npm --prefix miniprogram run compile` 后提交 `.ts` 与生成 `.js`，`npm --prefix miniprogram test` 会检查严格类型、生成漂移及 34 类请求与迁移前的 SHA 一致性。省级目录、字段定义与容量 DTO 来自 `packages/client-contracts/src/documents.ts`，本地显示简称与服务端目录字段分开处理。更新的 [小程序开发说明](../miniprogram/README.md) 和 [本轮验收](../reports/miniprogram-typescript-20261030/TEST-REPORT.md) 说明了真实模拟器范围和无需重复打包相同 APK 的依据。

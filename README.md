@@ -164,6 +164,8 @@ npm run dev -- --host 127.0.0.1
 
 保留必要的 JavaScript 兼容入口和静态 JSON，后台仍使用 Python；本轮没有增加全国覆盖数。新版 APK 和实际测试见 [本轮验收](reports/typescript-frontends-release-20261030/TEST-REPORT.md)。开发、同步和测试命令见 [共享契约说明](docs/typescript-regional-contracts.md)，实测结果见 [本轮验收](reports/typescript-regional-contracts-20261030/TEST-REPORT.md)。
 
+小程序的 7 个页面、应用入口与两个业务工具也已迁入 TypeScript，保留自动生成的微信 JavaScript；严格检查会拒绝产物漂移。网页最后一个旧业务辅助模块完成迁移，三端继续使用同源请求和字段契约。7 页真实模拟器、两份实际 Word 和 34 类旧请求 SHA 对照通过。本轮构建的 83 个网页运行资源与现有 Android 1.2.0-preview.1 完全相同，无需重复发行同一安装包。[本轮小程序迁移验收](reports/miniprogram-typescript-20261030/TEST-REPORT.md)
+
 ## 开发与验证
 
 ```bash

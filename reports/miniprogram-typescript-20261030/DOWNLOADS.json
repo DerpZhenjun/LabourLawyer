@@ -1,0 +1,37 @@
+{
+  "status": "PASS_REAL_SIMULATOR_GENERATION",
+  "drafts_restored": true,
+  "fiction_only": true,
+  "modal": "SDK mocked confirmation; cancellation separately tested in VM",
+  "downloads": [
+    {
+      "kind": "application",
+      "bytes": 27266,
+      "sha256": "ffcf4c674a8a7b0c009bddc6dfee5cb5507a706f6835557c7ee82739d5b4f961",
+      "source_id": "16f67bbbcf7b124948381309",
+      "version": 209
+    },
+    {
+      "kind": "evidence",
+      "bytes": 15675,
+      "sha256": "8ef8132424314182bbde21cf1b424be281a4d859947bf58b55a2c56a2cea1658",
+      "source_id": "16f67bbbcf7b124948381309",
+      "version": 209
+    }
+  ],
+  "package_verification": [
+    {
+      "kind": "application",
+      "zip_crc": "PASS",
+      "word_xml": "PASS",
+      "sha256": "ffcf4c674a8a7b0c009bddc6dfee5cb5507a706f6835557c7ee82739d5b4f961"
+    },
+    {
+      "kind": "evidence",
+      "zip_crc": "PASS",
+      "word_xml": "PASS",
+      "sha256": "8ef8132424314182bbde21cf1b424be281a4d859947bf58b55a2c56a2cea1658"
+    }
+  ],
+  "native_preview_ui": "Not separately asserted; actual files were saved and opened by wx.openDocument, but Word UI is not counted as a phone test."
+}

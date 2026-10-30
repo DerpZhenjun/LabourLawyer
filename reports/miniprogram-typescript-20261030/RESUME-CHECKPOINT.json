@@ -1,0 +1,17 @@
+{
+  "phase": "COMPLETE_VERIFIED",
+  "source_commits": [
+    "fe75f99e",
+    "5384492f",
+    "b8feda43"
+  ],
+  "coverage_unchanged": {
+    "guides": 202,
+    "generation_localities": 185
+  },
+  "android_release": "reuse v1.2.0-preview.1: all 83 frontend files match",
+  "mini_uploaded_or_published": false,
+  "windows_model_started": false,
+  "next": "Maintain TS sources and generated mini JS together; compile and test before future changes. District data collection remains a separate unfinished task.",
+  "source_commits_pushed": true
+}

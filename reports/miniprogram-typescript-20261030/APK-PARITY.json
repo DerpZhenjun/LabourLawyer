@@ -1,0 +1,10 @@
+{
+  "existing_release": "v1.2.0-preview.1",
+  "apk_sha256": "8aeec4c1ec078f61d1226f391aaf4b8ac04c1e4a5e5894c18d51517312d80407",
+  "current_frontend_files_compared": 83,
+  "all_byte_identical": true,
+  "mobile_metadata_changed": false,
+  "android_rebuild_required": false,
+  "release_action": "Reuse existing verified APK; no replacement or retagging",
+  "windows_installer_rebuilt": false
+}
