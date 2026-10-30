@@ -1,0 +1,39 @@
+{
+  "status": "published_worktree_seed_only",
+  "guides_before": 209,
+  "guides_after": 215,
+  "generatable_localities_before": 192,
+  "generatable_localities_after": 198,
+  "directory_rows": 3974,
+  "source_ids": [
+    "bca45154d74905b963af83c9",
+    "e6dccff3468cba55aa9b5c09",
+    "4d74f378197bace2e63b05e9",
+    "3bfbebb0f7115a969c3d77be",
+    "9af3a0528483a9bb4fb67de5",
+    "e0b2adc9b9b0b10bc0eb9332"
+  ],
+  "region_codes": [
+    "350122",
+    "350123",
+    "350124",
+    "350125",
+    "350181",
+    "350182"
+  ],
+  "stage_evidence_sha256": "129474f0bba0f7d79363899ab21244fa595f0a356a0bb000c907fc5d62e2126e",
+  "final_evidence_sha256": "9860482c9772783927184e28686fb9779b1cce1a283c0d61902d8cde5dd57c45",
+  "word_manifest_sha256": "346e74b6afee3a6d8366fcc3910aef11e958d06b898c7045b0988b4525cc501d",
+  "previous209_encoded_records_preserved": true,
+  "directory_bytes_preserved": true,
+  "guides_before_sha256": "1db3cc8256d8731ea19b48d3a7734363961be090178a0aa811d82ae17aecb392",
+  "manifest_before_sha256": "1e6ceac14c6240b3756b6675692252ec5d532d9c8ef3840e9bfe32656dc95bdd",
+  "guides_after_sha256": "3af8b592fa488dcfe4a73a691efc633995639a72fc658ae180101b41fc49d187",
+  "manifest_after_sha256": "8334c82d8dcb458906e9f6db82933f33c411f7653c50efdedc298d04af153a89",
+  "directory_sha256": "913daa7dd7bcbec570945fd7cc8ed08ae55b15c50665e5f8f4d967b62fc85ba8",
+  "main_or_worktree_database_written": false,
+  "live_database_written": false,
+  "frozen_source_or_evidence_changed": false,
+  "model_calls": 0,
+  "published_at": "2026-10-30T22:51:31.413866+00:00"
+}

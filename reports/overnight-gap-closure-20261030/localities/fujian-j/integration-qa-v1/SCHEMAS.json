@@ -1,0 +1,743 @@
+[
+  {
+    "schema_id": "fujian-j-350122-application-v1",
+    "schema_version": 1,
+    "region_code": "350122",
+    "source_id": "bca45154d74905b963af83c9",
+    "source_version": "3eb93e75371cc2e1ae75fd60373e055b61834d506618271a3f5bb76d97988493",
+    "fields": [
+      {
+        "key": "applicantName",
+        "label": "申请人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "agentName",
+        "label": "委托代理人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "respondentName",
+        "label": "被申请人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "requests",
+        "label": "仲裁请求",
+        "type": "text_list",
+        "nullable": false,
+        "maxItems": 3,
+        "maxLength": 360
+      },
+      {
+        "key": "factsReason",
+        "label": "事实与理由",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 2400
+      }
+    ],
+    "defaults": {
+      "applicantName": "",
+      "agentName": "",
+      "respondentName": "",
+      "requests": [
+        ""
+      ],
+      "factsReason": ""
+    },
+    "policy": {
+      "unknown_fields": "reject",
+      "invalid_xml": "reject",
+      "text_controls": "newline_only",
+      "trim_text": true,
+      "capacity_is_official_requirement": false
+    }
+  },
+  {
+    "schema_id": "fujian-j-350122-evidence-v1",
+    "schema_version": 1,
+    "region_code": "350122",
+    "source_id": "bca45154d74905b963af83c9",
+    "source_version": "3eb93e75371cc2e1ae75fd60373e055b61834d506618271a3f5bb76d97988493",
+    "fields": [
+      {
+        "key": "evidenceList",
+        "label": "证据内容",
+        "type": "object_list",
+        "nullable": false,
+        "maxItems": 15,
+        "fields": [
+          {
+            "key": "name",
+            "label": "证据名称",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 60
+          },
+          {
+            "key": "pageCount",
+            "label": "页数",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 4
+          },
+          {
+            "key": "originalType",
+            "label": "原件或复印件",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 4,
+            "choices": [
+              "原件",
+              "复印件"
+            ]
+          },
+          {
+            "key": "purpose",
+            "label": "证明对象",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 80
+          },
+          {
+            "key": "pageRange",
+            "label": "页码",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 32
+          }
+        ]
+      }
+    ],
+    "defaults": {
+      "evidenceList": [
+        {
+          "name": "",
+          "pageCount": "",
+          "originalType": "",
+          "purpose": "",
+          "pageRange": ""
+        }
+      ]
+    },
+    "policy": {
+      "unknown_fields": "reject",
+      "invalid_xml": "reject",
+      "text_controls": "newline_only",
+      "trim_text": true,
+      "capacity_is_official_requirement": false
+    }
+  },
+  {
+    "schema_id": "fujian-j-350123-application-v1",
+    "schema_version": 1,
+    "region_code": "350123",
+    "source_id": "e6dccff3468cba55aa9b5c09",
+    "source_version": "4a0bdf4b2abd2c3b8a5a1c3285e26d903aa1bdc91900cd34ddd4bed8b0e87d44",
+    "fields": [
+      {
+        "key": "applicantName",
+        "label": "申请人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "agentName",
+        "label": "委托代理人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "respondentName",
+        "label": "被申请人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "requests",
+        "label": "仲裁请求",
+        "type": "text_list",
+        "nullable": false,
+        "maxItems": 3,
+        "maxLength": 360
+      },
+      {
+        "key": "factsReason",
+        "label": "事实与理由",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 2400
+      }
+    ],
+    "defaults": {
+      "applicantName": "",
+      "agentName": "",
+      "respondentName": "",
+      "requests": [
+        ""
+      ],
+      "factsReason": ""
+    },
+    "policy": {
+      "unknown_fields": "reject",
+      "invalid_xml": "reject",
+      "text_controls": "newline_only",
+      "trim_text": true,
+      "capacity_is_official_requirement": false
+    }
+  },
+  {
+    "schema_id": "fujian-j-350123-evidence-v1",
+    "schema_version": 1,
+    "region_code": "350123",
+    "source_id": "e6dccff3468cba55aa9b5c09",
+    "source_version": "4a0bdf4b2abd2c3b8a5a1c3285e26d903aa1bdc91900cd34ddd4bed8b0e87d44",
+    "fields": [
+      {
+        "key": "evidenceList",
+        "label": "证据内容",
+        "type": "object_list",
+        "nullable": false,
+        "maxItems": 15,
+        "fields": [
+          {
+            "key": "name",
+            "label": "证据名称",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 60
+          },
+          {
+            "key": "pageCount",
+            "label": "页数",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 4
+          },
+          {
+            "key": "originalType",
+            "label": "原件或复印件",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 4,
+            "choices": [
+              "原件",
+              "复印件"
+            ]
+          },
+          {
+            "key": "purpose",
+            "label": "证明对象",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 80
+          },
+          {
+            "key": "pageRange",
+            "label": "页码",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 32
+          }
+        ]
+      }
+    ],
+    "defaults": {
+      "evidenceList": [
+        {
+          "name": "",
+          "pageCount": "",
+          "originalType": "",
+          "purpose": "",
+          "pageRange": ""
+        }
+      ]
+    },
+    "policy": {
+      "unknown_fields": "reject",
+      "invalid_xml": "reject",
+      "text_controls": "newline_only",
+      "trim_text": true,
+      "capacity_is_official_requirement": false
+    }
+  },
+  {
+    "schema_id": "fujian-j-350124-application-v1",
+    "schema_version": 1,
+    "region_code": "350124",
+    "source_id": "4d74f378197bace2e63b05e9",
+    "source_version": "ef2c858082d86489e1c006a82b05202ad0b630d0217304b38616ba77efc5b987",
+    "fields": [
+      {
+        "key": "applicantName",
+        "label": "申请人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "agentName",
+        "label": "委托代理人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "respondentName",
+        "label": "被申请人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "requests",
+        "label": "仲裁请求",
+        "type": "text_list",
+        "nullable": false,
+        "maxItems": 3,
+        "maxLength": 360
+      },
+      {
+        "key": "factsReason",
+        "label": "事实与理由",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 2400
+      }
+    ],
+    "defaults": {
+      "applicantName": "",
+      "agentName": "",
+      "respondentName": "",
+      "requests": [
+        ""
+      ],
+      "factsReason": ""
+    },
+    "policy": {
+      "unknown_fields": "reject",
+      "invalid_xml": "reject",
+      "text_controls": "newline_only",
+      "trim_text": true,
+      "capacity_is_official_requirement": false
+    }
+  },
+  {
+    "schema_id": "fujian-j-350124-evidence-v1",
+    "schema_version": 1,
+    "region_code": "350124",
+    "source_id": "4d74f378197bace2e63b05e9",
+    "source_version": "ef2c858082d86489e1c006a82b05202ad0b630d0217304b38616ba77efc5b987",
+    "fields": [
+      {
+        "key": "evidenceList",
+        "label": "证据内容",
+        "type": "object_list",
+        "nullable": false,
+        "maxItems": 15,
+        "fields": [
+          {
+            "key": "name",
+            "label": "证据名称",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 60
+          },
+          {
+            "key": "pageCount",
+            "label": "页数",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 4
+          },
+          {
+            "key": "originalType",
+            "label": "原件或复印件",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 4,
+            "choices": [
+              "原件",
+              "复印件"
+            ]
+          },
+          {
+            "key": "purpose",
+            "label": "证明对象",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 80
+          },
+          {
+            "key": "pageRange",
+            "label": "页码",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 32
+          }
+        ]
+      }
+    ],
+    "defaults": {
+      "evidenceList": [
+        {
+          "name": "",
+          "pageCount": "",
+          "originalType": "",
+          "purpose": "",
+          "pageRange": ""
+        }
+      ]
+    },
+    "policy": {
+      "unknown_fields": "reject",
+      "invalid_xml": "reject",
+      "text_controls": "newline_only",
+      "trim_text": true,
+      "capacity_is_official_requirement": false
+    }
+  },
+  {
+    "schema_id": "fujian-j-350125-application-v1",
+    "schema_version": 1,
+    "region_code": "350125",
+    "source_id": "3bfbebb0f7115a969c3d77be",
+    "source_version": "3f791f6bd9b0e33c64f0edac507ed66fb39897c4e9a7c43e8014ae7fc2a03dc2",
+    "fields": [
+      {
+        "key": "applicantName",
+        "label": "申请人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "agentName",
+        "label": "委托代理人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "respondentName",
+        "label": "被申请人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "requests",
+        "label": "仲裁请求",
+        "type": "text_list",
+        "nullable": false,
+        "maxItems": 3,
+        "maxLength": 360
+      },
+      {
+        "key": "factsReason",
+        "label": "事实与理由",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 2400
+      }
+    ],
+    "defaults": {
+      "applicantName": "",
+      "agentName": "",
+      "respondentName": "",
+      "requests": [
+        ""
+      ],
+      "factsReason": ""
+    },
+    "policy": {
+      "unknown_fields": "reject",
+      "invalid_xml": "reject",
+      "text_controls": "newline_only",
+      "trim_text": true,
+      "capacity_is_official_requirement": false
+    }
+  },
+  {
+    "schema_id": "fujian-j-350181-application-v1",
+    "schema_version": 1,
+    "region_code": "350181",
+    "source_id": "9af3a0528483a9bb4fb67de5",
+    "source_version": "cb8db6db69fa69a674a7cdb7bc4668a851f9f0e66f07ddfd3e5900ad0de18630",
+    "fields": [
+      {
+        "key": "applicantName",
+        "label": "申请人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "agentName",
+        "label": "委托代理人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "respondentName",
+        "label": "被申请人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "requests",
+        "label": "仲裁请求",
+        "type": "text_list",
+        "nullable": false,
+        "maxItems": 3,
+        "maxLength": 360
+      },
+      {
+        "key": "factsReason",
+        "label": "事实与理由",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 2400
+      }
+    ],
+    "defaults": {
+      "applicantName": "",
+      "agentName": "",
+      "respondentName": "",
+      "requests": [
+        ""
+      ],
+      "factsReason": ""
+    },
+    "policy": {
+      "unknown_fields": "reject",
+      "invalid_xml": "reject",
+      "text_controls": "newline_only",
+      "trim_text": true,
+      "capacity_is_official_requirement": false
+    }
+  },
+  {
+    "schema_id": "fujian-j-350181-evidence-v1",
+    "schema_version": 1,
+    "region_code": "350181",
+    "source_id": "9af3a0528483a9bb4fb67de5",
+    "source_version": "cb8db6db69fa69a674a7cdb7bc4668a851f9f0e66f07ddfd3e5900ad0de18630",
+    "fields": [
+      {
+        "key": "evidenceList",
+        "label": "证据内容",
+        "type": "object_list",
+        "nullable": false,
+        "maxItems": 15,
+        "fields": [
+          {
+            "key": "name",
+            "label": "证据名称",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 60
+          },
+          {
+            "key": "pageCount",
+            "label": "页数",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 4
+          },
+          {
+            "key": "originalType",
+            "label": "原件或复印件",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 4,
+            "choices": [
+              "原件",
+              "复印件"
+            ]
+          },
+          {
+            "key": "purpose",
+            "label": "证明对象",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 80
+          },
+          {
+            "key": "pageRange",
+            "label": "页码",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 32
+          }
+        ]
+      }
+    ],
+    "defaults": {
+      "evidenceList": [
+        {
+          "name": "",
+          "pageCount": "",
+          "originalType": "",
+          "purpose": "",
+          "pageRange": ""
+        }
+      ]
+    },
+    "policy": {
+      "unknown_fields": "reject",
+      "invalid_xml": "reject",
+      "text_controls": "newline_only",
+      "trim_text": true,
+      "capacity_is_official_requirement": false
+    }
+  },
+  {
+    "schema_id": "fujian-j-350182-application-v1",
+    "schema_version": 1,
+    "region_code": "350182",
+    "source_id": "e0b2adc9b9b0b10bc0eb9332",
+    "source_version": "f00d1b33a3179397b6cb42c8e7c587a56c468d0bf3a80d613e0ff8c52f788df4",
+    "fields": [
+      {
+        "key": "applicantName",
+        "label": "申请人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "agentName",
+        "label": "委托代理人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "respondentName",
+        "label": "被申请人信息",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 180
+      },
+      {
+        "key": "requests",
+        "label": "仲裁请求",
+        "type": "text_list",
+        "nullable": false,
+        "maxItems": 3,
+        "maxLength": 360
+      },
+      {
+        "key": "factsReason",
+        "label": "事实与理由",
+        "type": "text",
+        "nullable": false,
+        "maxLength": 2400
+      }
+    ],
+    "defaults": {
+      "applicantName": "",
+      "agentName": "",
+      "respondentName": "",
+      "requests": [
+        ""
+      ],
+      "factsReason": ""
+    },
+    "policy": {
+      "unknown_fields": "reject",
+      "invalid_xml": "reject",
+      "text_controls": "newline_only",
+      "trim_text": true,
+      "capacity_is_official_requirement": false
+    }
+  },
+  {
+    "schema_id": "fujian-j-350182-evidence-v1",
+    "schema_version": 1,
+    "region_code": "350182",
+    "source_id": "e0b2adc9b9b0b10bc0eb9332",
+    "source_version": "f00d1b33a3179397b6cb42c8e7c587a56c468d0bf3a80d613e0ff8c52f788df4",
+    "fields": [
+      {
+        "key": "evidenceList",
+        "label": "证据内容",
+        "type": "object_list",
+        "nullable": false,
+        "maxItems": 15,
+        "fields": [
+          {
+            "key": "name",
+            "label": "证据名称",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 60
+          },
+          {
+            "key": "pageCount",
+            "label": "页数",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 4
+          },
+          {
+            "key": "originalType",
+            "label": "原件或复印件",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 4,
+            "choices": [
+              "原件",
+              "复印件"
+            ]
+          },
+          {
+            "key": "purpose",
+            "label": "证明对象",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 80
+          },
+          {
+            "key": "pageRange",
+            "label": "页码",
+            "type": "text",
+            "nullable": false,
+            "maxLength": 32
+          }
+        ]
+      }
+    ],
+    "defaults": {
+      "evidenceList": [
+        {
+          "name": "",
+          "pageCount": "",
+          "originalType": "",
+          "purpose": "",
+          "pageRange": ""
+        }
+      ]
+    },
+    "policy": {
+      "unknown_fields": "reject",
+      "invalid_xml": "reject",
+      "text_controls": "newline_only",
+      "trim_text": true,
+      "capacity_is_official_requirement": false
+    }
+  }
+]

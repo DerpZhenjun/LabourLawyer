@@ -1,0 +1,35 @@
+{
+  "scope": "Actual browser candidate acceptance",
+  "responsive": {
+    "regions": 6,
+    "actual_widths": [
+      375,
+      768,
+      1440
+    ],
+    "MCP_independent_geometry_checks": 18,
+    "same_Chrome_native_scope_checks": 18,
+    "horizontal_overflow": false
+  },
+  "source_scope": {
+    "six_directory_selections_and_unique_source_ids": true,
+    "yongtai_application_only_and_direct_evidence_route_blocked": true,
+    "changle_canonical_short_district": "长乐区",
+    "changle_IAM_observed_url": "https://iam.e-govt.cn:8901/login",
+    "changle_unique_evidence_sha256": "511d213073af6e25b0f9f8ed2b914b7b31ee47bf6cef2fbb85a0422e3d6a4f56",
+    "non_gov_observed_auth_url_not_misrepresented_as_verified_direct_entry": true,
+    "five_evidence_forms_default_one_add_two_delete_one": true,
+    "source_switch_unknown_place_removes_previous_fields": true,
+    "no_province_or_neighbor_fallback": true
+  },
+  "confirmation": {
+    "viewport": 375,
+    "dialog_fully_visible": true,
+    "native_tab_trap_escape_cancel_focus_return": true,
+    "scope_and_cancel_POSTs": 0
+  },
+  "console_errors": 0,
+  "model_calls": 0,
+  "screenshots": 0,
+  "harness_failures_retained": "Earlier CLI helper cancellations are excluded; accepted22 files came from native Download events on the same existing Chrome with unchanged permissions."
+}

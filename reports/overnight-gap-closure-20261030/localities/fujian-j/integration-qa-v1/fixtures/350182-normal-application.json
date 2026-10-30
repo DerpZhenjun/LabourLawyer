@@ -1,0 +1,53 @@
+{
+  "region_code": "350182",
+  "kind": "application",
+  "scenario": "normal",
+  "data": {
+    "applicantName": "林长乐虚构（软件测试人物，无真实身份资料）",
+    "agentName": "",
+    "respondentName": "虚构长乐演示单位（仅软件验证）",
+    "requests": [
+      "第一项为虚构请求甲，仅验证模板填写。",
+      "第二项为虚构请求乙，不对应真实权利主张。",
+      "第三项为虚构请求丙，仅用于排版测试。"
+    ],
+    "factsReason": "以下全部为软件测试虚构内容，不对应真实案件。"
+  },
+  "request": {
+    "province": "fujian",
+    "city": "福州市",
+    "district": "长乐区",
+    "region_code": "350182",
+    "source_id": "e0b2adc9b9b0b10bc0eb9332",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=CFA1069F9BE910A14774F6F86D48BB3C&infoType=1",
+    "source_version": "f00d1b33a3179397b6cb42c8e7c587a56c468d0bf3a80d613e0ff8c52f788df4",
+    "material_id": "A14415F048410FBAD33BBECC53C5A6DB",
+    "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+    "template_file": "reports/overnight-gap-closure-20261030/localities/fujian-j-source-projection/changle-350182/application-own-format-public-retrieval.docx",
+    "template_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+    "template_version": "sha256:093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+    "schema_id": "fujian-j-350182-application-v1",
+    "schema_version": 1,
+    "kind": "application",
+    "mode": "blank",
+    "data": {
+      "applicantName": "林长乐虚构（软件测试人物，无真实身份资料）",
+      "agentName": "",
+      "respondentName": "虚构长乐演示单位（仅软件验证）",
+      "requests": [
+        "第一项为虚构请求甲，仅验证模板填写。",
+        "第二项为虚构请求乙，不对应真实权利主张。",
+        "第三项为虚构请求丙，仅用于排版测试。"
+      ],
+      "factsReason": "以下全部为软件测试虚构内容，不对应真实案件。"
+    }
+  },
+  "previous_request_sha256": "3f0f02580113df26d6d76197b53f6a6afff8b562d4af504f00e55d9939d8a400",
+  "previous_source_version": "b2f0361505a0176ca9972ec9176a7fbca75014744d6dc1b4933ea813d80359d2",
+  "new_safe_source_version": "f00d1b33a3179397b6cb42c8e7c587a56c468d0bf3a80d613e0ff8c52f788df4",
+  "same_request_as_previous": false,
+  "request_identity_changed_actual_generation_performed": true,
+  "public_generation_enabled": false,
+  "stage_approval": false,
+  "publication_approval": false
+}

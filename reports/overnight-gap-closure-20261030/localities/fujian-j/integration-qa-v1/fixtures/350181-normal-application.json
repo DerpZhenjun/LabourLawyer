@@ -1,0 +1,53 @@
+{
+  "region_code": "350181",
+  "kind": "application",
+  "scenario": "normal",
+  "data": {
+    "applicantName": "林福清虚构（软件测试人物，无真实身份资料）",
+    "agentName": "",
+    "respondentName": "虚构福清演示单位（仅软件验证）",
+    "requests": [
+      "第一项为虚构请求甲，仅验证模板填写。",
+      "第二项为虚构请求乙，不对应真实权利主张。",
+      "第三项为虚构请求丙，仅用于排版测试。"
+    ],
+    "factsReason": "以下全部为软件测试虚构内容，不对应真实案件。"
+  },
+  "request": {
+    "province": "fujian",
+    "city": "福州市",
+    "district": "福清市",
+    "region_code": "350181",
+    "source_id": "9af3a0528483a9bb4fb67de5",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=469958A9BED0E05129E545EFD2E2A759&infoType=1",
+    "source_version": "cb8db6db69fa69a674a7cdb7bc4668a851f9f0e66f07ddfd3e5900ad0de18630",
+    "material_id": "C6D041032B23726615A7FF1ED9F90E67",
+    "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+    "template_file": "reports/overnight-gap-closure-20261030/localities/fujian-j-source-projection/fuqing-350181/application-own-format-public-retrieval.docx",
+    "template_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+    "template_version": "sha256:093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+    "schema_id": "fujian-j-350181-application-v1",
+    "schema_version": 1,
+    "kind": "application",
+    "mode": "blank",
+    "data": {
+      "applicantName": "林福清虚构（软件测试人物，无真实身份资料）",
+      "agentName": "",
+      "respondentName": "虚构福清演示单位（仅软件验证）",
+      "requests": [
+        "第一项为虚构请求甲，仅验证模板填写。",
+        "第二项为虚构请求乙，不对应真实权利主张。",
+        "第三项为虚构请求丙，仅用于排版测试。"
+      ],
+      "factsReason": "以下全部为软件测试虚构内容，不对应真实案件。"
+    }
+  },
+  "previous_request_sha256": "676ddd0e7e00fefad7961b154da507da81c76894a3ab7e1dd2f86ef8777956c2",
+  "previous_source_version": "07767ee192eac4f0918fe925b63dd528487915ce23b1288f7ac14cce28888f19",
+  "new_safe_source_version": "cb8db6db69fa69a674a7cdb7bc4668a851f9f0e66f07ddfd3e5900ad0de18630",
+  "same_request_as_previous": false,
+  "request_identity_changed_actual_generation_performed": true,
+  "public_generation_enabled": false,
+  "stage_approval": false,
+  "publication_approval": false
+}

@@ -1,0 +1,53 @@
+{
+  "region_code": "350182",
+  "kind": "evidence",
+  "scenario": "normal",
+  "data": {
+    "evidenceList": [
+      {
+        "name": "虚构长乐演示记录",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "全部虚构，仅验证字段与合计。",
+        "pageRange": "1—2"
+      }
+    ]
+  },
+  "request": {
+    "province": "fujian",
+    "city": "福州市",
+    "district": "长乐区",
+    "region_code": "350182",
+    "source_id": "e0b2adc9b9b0b10bc0eb9332",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=CFA1069F9BE910A14774F6F86D48BB3C&infoType=1",
+    "source_version": "f00d1b33a3179397b6cb42c8e7c587a56c468d0bf3a80d613e0ff8c52f788df4",
+    "material_id": "F03100CFE99D2A3222F14B9AE02695DD",
+    "template_id": "C0D98561149170947B4366BCA0299DD9",
+    "template_file": "reports/overnight-gap-closure-20261030/localities/fujian-j-source-projection/changle-350182/evidence-list-own-format-public-retrieval.docx",
+    "template_sha256": "511d213073af6e25b0f9f8ed2b914b7b31ee47bf6cef2fbb85a0422e3d6a4f56",
+    "template_version": "sha256:511d213073af6e25b0f9f8ed2b914b7b31ee47bf6cef2fbb85a0422e3d6a4f56",
+    "schema_id": "fujian-j-350182-evidence-v1",
+    "schema_version": 1,
+    "kind": "evidence",
+    "mode": "blank",
+    "data": {
+      "evidenceList": [
+        {
+          "name": "虚构长乐演示记录",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "全部虚构，仅验证字段与合计。",
+          "pageRange": "1—2"
+        }
+      ]
+    }
+  },
+  "previous_request_sha256": "fa8cb6fb73c0e3209e6623f95ff11b85626921d7a94338da97c493f4bf11c7a2",
+  "previous_source_version": "b2f0361505a0176ca9972ec9176a7fbca75014744d6dc1b4933ea813d80359d2",
+  "new_safe_source_version": "f00d1b33a3179397b6cb42c8e7c587a56c468d0bf3a80d613e0ff8c52f788df4",
+  "same_request_as_previous": false,
+  "request_identity_changed_actual_generation_performed": true,
+  "public_generation_enabled": false,
+  "stage_approval": false,
+  "publication_approval": false
+}

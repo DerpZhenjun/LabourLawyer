@@ -1,0 +1,53 @@
+{
+  "region_code": "350122",
+  "kind": "evidence",
+  "scenario": "normal",
+  "data": {
+    "evidenceList": [
+      {
+        "name": "虚构连江演示记录",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "全部虚构，仅验证字段与合计。",
+        "pageRange": "1—2"
+      }
+    ]
+  },
+  "request": {
+    "province": "fujian",
+    "city": "福州市",
+    "district": "连江县",
+    "region_code": "350122",
+    "source_id": "bca45154d74905b963af83c9",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=0AB23B595298D2754FC2B46E318C32FB&infoType=1",
+    "source_version": "3eb93e75371cc2e1ae75fd60373e055b61834d506618271a3f5bb76d97988493",
+    "material_id": "E831BA1D73F16062A761AC54EDFB2EEB",
+    "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+    "template_file": "reports/overnight-gap-closure-20261030/localities/fujian-j-source-projection/lianjiang-350122/evidence-list-own-format-public-retrieval.docx",
+    "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "template_version": "sha256:d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "schema_id": "fujian-j-350122-evidence-v1",
+    "schema_version": 1,
+    "kind": "evidence",
+    "mode": "blank",
+    "data": {
+      "evidenceList": [
+        {
+          "name": "虚构连江演示记录",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "全部虚构，仅验证字段与合计。",
+          "pageRange": "1—2"
+        }
+      ]
+    }
+  },
+  "previous_request_sha256": "dc688f57968e36575817e3bd75e3580387489a71f2dc47d6606bd4cd23a535a9",
+  "previous_source_version": "5384827484043c9b7919068c2aaaf3374d197b007e898852c1ac205df2a889dc",
+  "new_safe_source_version": "3eb93e75371cc2e1ae75fd60373e055b61834d506618271a3f5bb76d97988493",
+  "same_request_as_previous": false,
+  "request_identity_changed_actual_generation_performed": true,
+  "public_generation_enabled": false,
+  "stage_approval": false,
+  "publication_approval": false
+}

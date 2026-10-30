@@ -1,0 +1,2922 @@
+{
+  "scope": "Actual regeneration with new own safe source versions/paths; not the same request or new visual/stage/browser approval",
+  "actual_new_safe_projection_regeneration": true,
+  "same_request_claimed": false,
+  "data_payloads_equal_to_previous": true,
+  "all_twenty_two_complete_bytes_equal": true,
+  "all_uncompressed_zip_members_equal": true,
+  "source_projection_files": 97,
+  "root_previously_viewed_pages": 77,
+  "parent_independent_root_review_sha256": "76b056e724835da671d0300ed31ec0bf8bf76f2b2990f29a3d611e2dc277f011",
+  "parent_candidate_freeze_sha256": "984b98260a03e2087d6663d390cb8ccadca95322bc8d5a5176144ecb1fede42a",
+  "stage_approved": false,
+  "can_publish": false,
+  "outputs": [
+    {
+      "label": "350122-normal-application",
+      "region_code": "350122",
+      "kind": "application",
+      "scenario": "normal",
+      "source_id": "bca45154d74905b963af83c9",
+      "previous_source_version": "5384827484043c9b7919068c2aaaf3374d197b007e898852c1ac205df2a889dc",
+      "new_safe_source_version": "3eb93e75371cc2e1ae75fd60373e055b61834d506618271a3f5bb76d97988493",
+      "previous_request_sha256": "3066018a12e48884abc885b2061213a7d9285919ceb2b21b8e658632cd2c2cea",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350122-normal-application.json",
+      "previous_reviewed_docx_sha256": "27a26eb516dc688223ebc9c783dbda75b5c429c92a7c178b3e8ed7a5df71994d",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350122-normal-application.docx",
+      "regenerated_docx_sha256": "27a26eb516dc688223ebc9c783dbda75b5c429c92a7c178b3e8ed7a5df71994d",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1432,
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 258,
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 624,
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 636,
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 822,
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 21897,
+          "sha256": "5dd115c8d54b86ad906a35d7c8af3acf6aef257921cf2f64b3534c61a9f98a79"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3340,
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 2886,
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 28162,
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350122-stress-application",
+      "region_code": "350122",
+      "kind": "application",
+      "scenario": "stress",
+      "source_id": "bca45154d74905b963af83c9",
+      "previous_source_version": "5384827484043c9b7919068c2aaaf3374d197b007e898852c1ac205df2a889dc",
+      "new_safe_source_version": "3eb93e75371cc2e1ae75fd60373e055b61834d506618271a3f5bb76d97988493",
+      "previous_request_sha256": "6b7c0a8d62f77116b5521623192672dad524d1c150abcedd20450a81ac474035",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350122-stress-application.json",
+      "previous_reviewed_docx_sha256": "194768dc25b7092a457d6f974562b94ff9c9357a1c8888a40486667cd73e6c78",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350122-stress-application.docx",
+      "regenerated_docx_sha256": "194768dc25b7092a457d6f974562b94ff9c9357a1c8888a40486667cd73e6c78",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1432,
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 258,
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 624,
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 636,
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 822,
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 24480,
+          "sha256": "b0976e7742489d343cec5a05c8e4806e285a152d7a00423c4d5e275b821ad516"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3340,
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 2886,
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 28162,
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350122-normal-evidence",
+      "region_code": "350122",
+      "kind": "evidence",
+      "scenario": "normal",
+      "source_id": "bca45154d74905b963af83c9",
+      "previous_source_version": "5384827484043c9b7919068c2aaaf3374d197b007e898852c1ac205df2a889dc",
+      "new_safe_source_version": "3eb93e75371cc2e1ae75fd60373e055b61834d506618271a3f5bb76d97988493",
+      "previous_request_sha256": "dc688f57968e36575817e3bd75e3580387489a71f2dc47d6606bd4cd23a535a9",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350122-normal-evidence.json",
+      "previous_reviewed_docx_sha256": "43bca043b1d8360a57e243c9d4398195a12e6b34499f80938af4e571a8e4adad",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350122-normal-evidence.docx",
+      "regenerated_docx_sha256": "43bca043b1d8360a57e243c9d4398195a12e6b34499f80938af4e571a8e4adad",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1692,
+          "sha256": "9de9c14934c2a6500cd9c3ccfaeb2aee60797f4fa00d200554f39cae73dd5474"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/_rels/item2.xml.rels",
+          "bytes": 296,
+          "sha256": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 340,
+          "sha256": "1055a368a3a05dbeb1c4d9692ad2bafe33a19126a8fa0453a0dedf0f68c62e4c"
+        },
+        {
+          "name": "customXml/item2.xml",
+          "bytes": 289,
+          "sha256": "b30b8fd758aa47aada70ee7d8d8287349d6a21eb03c79bcb2e8930a1789022cc"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "customXml/itemProps2.xml",
+          "bytes": 236,
+          "sha256": "6006fb22c96d0a3b11668eab82eff80ca82bd94d53611c889a08885f42109dcf"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 625,
+          "sha256": "09eb73003d15a4116db88ffe77b7113846b701ad99ba1cb74d62071e66ccb48a"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 641,
+          "sha256": "4f6464ef61dd7b09b7c3582ac99709ca20f64f2dc94f30ac39a7d6a4dd593aac"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 526,
+          "sha256": "75169350f0a941e01d315ece2d5416a31c5d9c6fac8e16b637adfbcfb633050a"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 1092,
+          "sha256": "99b36725e7b90825ac41198f6b37570255b4aae17967ea02538c308410496b9f"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 16588,
+          "sha256": "e3d488f41db080ce6d91902460a170e535d5204a869040b45a6962cda389b198"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3043,
+          "sha256": "d5665956a6a9611d1ed5ad2707485731768a067c3886021bacf6e6721dae2c6f"
+        },
+        {
+          "name": "word/footer1.xml",
+          "bytes": 7643,
+          "sha256": "bb74fdd24d2af8916bb4082667d7619f3c7b8d918814a32e046252522c42bf66"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 3375,
+          "sha256": "2ead81363b7690e0d5e2fcb96b5a206250ccad32b8dd7f7d537e96bef5852d6a"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 27124,
+          "sha256": "b34cc5a41c0bd0901c8ac0a3aa58e71c1a42d61435b9b1241dd641f437189bf9"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350122-stress-evidence",
+      "region_code": "350122",
+      "kind": "evidence",
+      "scenario": "stress",
+      "source_id": "bca45154d74905b963af83c9",
+      "previous_source_version": "5384827484043c9b7919068c2aaaf3374d197b007e898852c1ac205df2a889dc",
+      "new_safe_source_version": "3eb93e75371cc2e1ae75fd60373e055b61834d506618271a3f5bb76d97988493",
+      "previous_request_sha256": "6478b46a1e7017077672cd21c0a03d800cbd7ba2b7723635313def6e32655c2a",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350122-stress-evidence.json",
+      "previous_reviewed_docx_sha256": "438c4ed796a8dd829bfec9ae42fde95a01f26a89708d3a87a8203a4d2301fe2e",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350122-stress-evidence.docx",
+      "regenerated_docx_sha256": "438c4ed796a8dd829bfec9ae42fde95a01f26a89708d3a87a8203a4d2301fe2e",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1692,
+          "sha256": "9de9c14934c2a6500cd9c3ccfaeb2aee60797f4fa00d200554f39cae73dd5474"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/_rels/item2.xml.rels",
+          "bytes": 296,
+          "sha256": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 340,
+          "sha256": "1055a368a3a05dbeb1c4d9692ad2bafe33a19126a8fa0453a0dedf0f68c62e4c"
+        },
+        {
+          "name": "customXml/item2.xml",
+          "bytes": 289,
+          "sha256": "b30b8fd758aa47aada70ee7d8d8287349d6a21eb03c79bcb2e8930a1789022cc"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "customXml/itemProps2.xml",
+          "bytes": 236,
+          "sha256": "6006fb22c96d0a3b11668eab82eff80ca82bd94d53611c889a08885f42109dcf"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 625,
+          "sha256": "09eb73003d15a4116db88ffe77b7113846b701ad99ba1cb74d62071e66ccb48a"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 641,
+          "sha256": "4f6464ef61dd7b09b7c3582ac99709ca20f64f2dc94f30ac39a7d6a4dd593aac"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 526,
+          "sha256": "75169350f0a941e01d315ece2d5416a31c5d9c6fac8e16b637adfbcfb633050a"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 1092,
+          "sha256": "99b36725e7b90825ac41198f6b37570255b4aae17967ea02538c308410496b9f"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 97629,
+          "sha256": "14eaa91e18362c6eba36ca36c0fe1ab4145be70a13d7e67fa48f3847ea7467ee"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3043,
+          "sha256": "d5665956a6a9611d1ed5ad2707485731768a067c3886021bacf6e6721dae2c6f"
+        },
+        {
+          "name": "word/footer1.xml",
+          "bytes": 7643,
+          "sha256": "bb74fdd24d2af8916bb4082667d7619f3c7b8d918814a32e046252522c42bf66"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 3375,
+          "sha256": "2ead81363b7690e0d5e2fcb96b5a206250ccad32b8dd7f7d537e96bef5852d6a"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 27124,
+          "sha256": "b34cc5a41c0bd0901c8ac0a3aa58e71c1a42d61435b9b1241dd641f437189bf9"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350123-normal-application",
+      "region_code": "350123",
+      "kind": "application",
+      "scenario": "normal",
+      "source_id": "e6dccff3468cba55aa9b5c09",
+      "previous_source_version": "8c675d63e87d0985c2da3c2652f1291709ed578a03a77a5755fa40358352b20d",
+      "new_safe_source_version": "4a0bdf4b2abd2c3b8a5a1c3285e26d903aa1bdc91900cd34ddd4bed8b0e87d44",
+      "previous_request_sha256": "7a86050f95929a8634d9d9cafe78101ceb203120fa29c3cf83e3b16acebccd92",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350123-normal-application.json",
+      "previous_reviewed_docx_sha256": "26c80e1816e3a676d6f89ddcd154142277c805731f2fce169e3e4baa1f9694e9",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350123-normal-application.docx",
+      "regenerated_docx_sha256": "26c80e1816e3a676d6f89ddcd154142277c805731f2fce169e3e4baa1f9694e9",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1432,
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 258,
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 624,
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 636,
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 822,
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 21897,
+          "sha256": "e16c64847b984a47f0913a7e2880ea3e417b0de59264b7ac2133443feb2be75b"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3340,
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 2886,
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 28162,
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350123-stress-application",
+      "region_code": "350123",
+      "kind": "application",
+      "scenario": "stress",
+      "source_id": "e6dccff3468cba55aa9b5c09",
+      "previous_source_version": "8c675d63e87d0985c2da3c2652f1291709ed578a03a77a5755fa40358352b20d",
+      "new_safe_source_version": "4a0bdf4b2abd2c3b8a5a1c3285e26d903aa1bdc91900cd34ddd4bed8b0e87d44",
+      "previous_request_sha256": "74afb1279d2f24acca1666b5962363f1191fe31dcc629a00f3d6369202df0fba",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350123-stress-application.json",
+      "previous_reviewed_docx_sha256": "c902c2357d7b7c6a7645a3a3cde4189498c4d8a3fc72c8c7a1d1e71535e4581c",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350123-stress-application.docx",
+      "regenerated_docx_sha256": "c902c2357d7b7c6a7645a3a3cde4189498c4d8a3fc72c8c7a1d1e71535e4581c",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1432,
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 258,
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 624,
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 636,
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 822,
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 24480,
+          "sha256": "05aff8303f9df24cc3b5d616d7cf494d61895ec7a3c1a8a41ac1b8b2b75ab042"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3340,
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 2886,
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 28162,
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350123-normal-evidence",
+      "region_code": "350123",
+      "kind": "evidence",
+      "scenario": "normal",
+      "source_id": "e6dccff3468cba55aa9b5c09",
+      "previous_source_version": "8c675d63e87d0985c2da3c2652f1291709ed578a03a77a5755fa40358352b20d",
+      "new_safe_source_version": "4a0bdf4b2abd2c3b8a5a1c3285e26d903aa1bdc91900cd34ddd4bed8b0e87d44",
+      "previous_request_sha256": "35dcb7efdfa8ad0c6b8e4a4f4e284d7f3a23c96977359ecec24ce8b47b44ef25",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350123-normal-evidence.json",
+      "previous_reviewed_docx_sha256": "6267a399e96ede0c5a86269e253913c4910e5b9a3bd3b17523cadef4c05012f6",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350123-normal-evidence.docx",
+      "regenerated_docx_sha256": "6267a399e96ede0c5a86269e253913c4910e5b9a3bd3b17523cadef4c05012f6",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1692,
+          "sha256": "9de9c14934c2a6500cd9c3ccfaeb2aee60797f4fa00d200554f39cae73dd5474"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/_rels/item2.xml.rels",
+          "bytes": 296,
+          "sha256": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 340,
+          "sha256": "1055a368a3a05dbeb1c4d9692ad2bafe33a19126a8fa0453a0dedf0f68c62e4c"
+        },
+        {
+          "name": "customXml/item2.xml",
+          "bytes": 289,
+          "sha256": "b30b8fd758aa47aada70ee7d8d8287349d6a21eb03c79bcb2e8930a1789022cc"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "customXml/itemProps2.xml",
+          "bytes": 236,
+          "sha256": "6006fb22c96d0a3b11668eab82eff80ca82bd94d53611c889a08885f42109dcf"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 625,
+          "sha256": "09eb73003d15a4116db88ffe77b7113846b701ad99ba1cb74d62071e66ccb48a"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 641,
+          "sha256": "4f6464ef61dd7b09b7c3582ac99709ca20f64f2dc94f30ac39a7d6a4dd593aac"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 526,
+          "sha256": "75169350f0a941e01d315ece2d5416a31c5d9c6fac8e16b637adfbcfb633050a"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 1092,
+          "sha256": "99b36725e7b90825ac41198f6b37570255b4aae17967ea02538c308410496b9f"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 16588,
+          "sha256": "a7cf6c6120d20fb96006c2eaf1b7e71b558d4f3ab32301f075de04038f548c66"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3043,
+          "sha256": "d5665956a6a9611d1ed5ad2707485731768a067c3886021bacf6e6721dae2c6f"
+        },
+        {
+          "name": "word/footer1.xml",
+          "bytes": 7643,
+          "sha256": "bb74fdd24d2af8916bb4082667d7619f3c7b8d918814a32e046252522c42bf66"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 3375,
+          "sha256": "2ead81363b7690e0d5e2fcb96b5a206250ccad32b8dd7f7d537e96bef5852d6a"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 27124,
+          "sha256": "b34cc5a41c0bd0901c8ac0a3aa58e71c1a42d61435b9b1241dd641f437189bf9"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350123-stress-evidence",
+      "region_code": "350123",
+      "kind": "evidence",
+      "scenario": "stress",
+      "source_id": "e6dccff3468cba55aa9b5c09",
+      "previous_source_version": "8c675d63e87d0985c2da3c2652f1291709ed578a03a77a5755fa40358352b20d",
+      "new_safe_source_version": "4a0bdf4b2abd2c3b8a5a1c3285e26d903aa1bdc91900cd34ddd4bed8b0e87d44",
+      "previous_request_sha256": "493347096497807f1e96dfa753aadf76bf52e81580fca85ccdcf08acf237e43d",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350123-stress-evidence.json",
+      "previous_reviewed_docx_sha256": "7b6952113f71013a22d9ab22137a3a1b7c27edb10cd6b5ab08fe82d6d7a90456",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350123-stress-evidence.docx",
+      "regenerated_docx_sha256": "7b6952113f71013a22d9ab22137a3a1b7c27edb10cd6b5ab08fe82d6d7a90456",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1692,
+          "sha256": "9de9c14934c2a6500cd9c3ccfaeb2aee60797f4fa00d200554f39cae73dd5474"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/_rels/item2.xml.rels",
+          "bytes": 296,
+          "sha256": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 340,
+          "sha256": "1055a368a3a05dbeb1c4d9692ad2bafe33a19126a8fa0453a0dedf0f68c62e4c"
+        },
+        {
+          "name": "customXml/item2.xml",
+          "bytes": 289,
+          "sha256": "b30b8fd758aa47aada70ee7d8d8287349d6a21eb03c79bcb2e8930a1789022cc"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "customXml/itemProps2.xml",
+          "bytes": 236,
+          "sha256": "6006fb22c96d0a3b11668eab82eff80ca82bd94d53611c889a08885f42109dcf"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 625,
+          "sha256": "09eb73003d15a4116db88ffe77b7113846b701ad99ba1cb74d62071e66ccb48a"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 641,
+          "sha256": "4f6464ef61dd7b09b7c3582ac99709ca20f64f2dc94f30ac39a7d6a4dd593aac"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 526,
+          "sha256": "75169350f0a941e01d315ece2d5416a31c5d9c6fac8e16b637adfbcfb633050a"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 1092,
+          "sha256": "99b36725e7b90825ac41198f6b37570255b4aae17967ea02538c308410496b9f"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 97629,
+          "sha256": "1b8be6a0579ef645f0f1d4f39e16675db6f57a6c0195f4ca341c054a3726a7ec"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3043,
+          "sha256": "d5665956a6a9611d1ed5ad2707485731768a067c3886021bacf6e6721dae2c6f"
+        },
+        {
+          "name": "word/footer1.xml",
+          "bytes": 7643,
+          "sha256": "bb74fdd24d2af8916bb4082667d7619f3c7b8d918814a32e046252522c42bf66"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 3375,
+          "sha256": "2ead81363b7690e0d5e2fcb96b5a206250ccad32b8dd7f7d537e96bef5852d6a"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 27124,
+          "sha256": "b34cc5a41c0bd0901c8ac0a3aa58e71c1a42d61435b9b1241dd641f437189bf9"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350124-normal-application",
+      "region_code": "350124",
+      "kind": "application",
+      "scenario": "normal",
+      "source_id": "4d74f378197bace2e63b05e9",
+      "previous_source_version": "198ea6dd2a4c0cbf55f2b635a022cfea51795ee66a3d8fa20fa073e6cd31de2a",
+      "new_safe_source_version": "ef2c858082d86489e1c006a82b05202ad0b630d0217304b38616ba77efc5b987",
+      "previous_request_sha256": "47d1614d7b6eebc865bb715edbd267dfacc1f1754cce68fed5620f73c7185f1e",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350124-normal-application.json",
+      "previous_reviewed_docx_sha256": "9cd1e9d96a3ba06fb684b2ed36b0bbaac35a027e6a08147371f51a2912808360",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350124-normal-application.docx",
+      "regenerated_docx_sha256": "9cd1e9d96a3ba06fb684b2ed36b0bbaac35a027e6a08147371f51a2912808360",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1432,
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 258,
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 624,
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 636,
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 822,
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 21897,
+          "sha256": "f315a0617635dc0265547c1c438d5be9200dc57ee20b4fd8c23b096ebca1acdb"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3340,
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 2886,
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 28162,
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350124-stress-application",
+      "region_code": "350124",
+      "kind": "application",
+      "scenario": "stress",
+      "source_id": "4d74f378197bace2e63b05e9",
+      "previous_source_version": "198ea6dd2a4c0cbf55f2b635a022cfea51795ee66a3d8fa20fa073e6cd31de2a",
+      "new_safe_source_version": "ef2c858082d86489e1c006a82b05202ad0b630d0217304b38616ba77efc5b987",
+      "previous_request_sha256": "1ebf7fc6ba55caaf4f8260234ec427954522a9fc4eda696a700559096bc40763",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350124-stress-application.json",
+      "previous_reviewed_docx_sha256": "5f4e48d7c0f13f191a0150aaac5fd179320a805113cb0d27210b2889f0ada2d7",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350124-stress-application.docx",
+      "regenerated_docx_sha256": "5f4e48d7c0f13f191a0150aaac5fd179320a805113cb0d27210b2889f0ada2d7",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1432,
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 258,
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 624,
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 636,
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 822,
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 24480,
+          "sha256": "4dcd80b231087d796373ede14de5ef30db467203eb9532fdd21dda39b52c1d98"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3340,
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 2886,
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 28162,
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350124-normal-evidence",
+      "region_code": "350124",
+      "kind": "evidence",
+      "scenario": "normal",
+      "source_id": "4d74f378197bace2e63b05e9",
+      "previous_source_version": "198ea6dd2a4c0cbf55f2b635a022cfea51795ee66a3d8fa20fa073e6cd31de2a",
+      "new_safe_source_version": "ef2c858082d86489e1c006a82b05202ad0b630d0217304b38616ba77efc5b987",
+      "previous_request_sha256": "23a3a82d9d17ea7156723f677039c9dba2f2d2787071c84dfdc0fd9d931dd444",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350124-normal-evidence.json",
+      "previous_reviewed_docx_sha256": "cd7553e5d4527242b6d37acc7b8da7fe3ea8fb3c116fa524ab89fc7b91b7c640",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350124-normal-evidence.docx",
+      "regenerated_docx_sha256": "cd7553e5d4527242b6d37acc7b8da7fe3ea8fb3c116fa524ab89fc7b91b7c640",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1692,
+          "sha256": "9de9c14934c2a6500cd9c3ccfaeb2aee60797f4fa00d200554f39cae73dd5474"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/_rels/item2.xml.rels",
+          "bytes": 296,
+          "sha256": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 340,
+          "sha256": "1055a368a3a05dbeb1c4d9692ad2bafe33a19126a8fa0453a0dedf0f68c62e4c"
+        },
+        {
+          "name": "customXml/item2.xml",
+          "bytes": 289,
+          "sha256": "b30b8fd758aa47aada70ee7d8d8287349d6a21eb03c79bcb2e8930a1789022cc"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "customXml/itemProps2.xml",
+          "bytes": 236,
+          "sha256": "6006fb22c96d0a3b11668eab82eff80ca82bd94d53611c889a08885f42109dcf"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 625,
+          "sha256": "09eb73003d15a4116db88ffe77b7113846b701ad99ba1cb74d62071e66ccb48a"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 641,
+          "sha256": "4f6464ef61dd7b09b7c3582ac99709ca20f64f2dc94f30ac39a7d6a4dd593aac"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 526,
+          "sha256": "75169350f0a941e01d315ece2d5416a31c5d9c6fac8e16b637adfbcfb633050a"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 1092,
+          "sha256": "99b36725e7b90825ac41198f6b37570255b4aae17967ea02538c308410496b9f"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 16588,
+          "sha256": "9ba838604305bf530c3d0ae6c5874ba9805375ac0f68a131d04ded40bf87e3cd"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3043,
+          "sha256": "d5665956a6a9611d1ed5ad2707485731768a067c3886021bacf6e6721dae2c6f"
+        },
+        {
+          "name": "word/footer1.xml",
+          "bytes": 7643,
+          "sha256": "bb74fdd24d2af8916bb4082667d7619f3c7b8d918814a32e046252522c42bf66"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 3375,
+          "sha256": "2ead81363b7690e0d5e2fcb96b5a206250ccad32b8dd7f7d537e96bef5852d6a"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 27124,
+          "sha256": "b34cc5a41c0bd0901c8ac0a3aa58e71c1a42d61435b9b1241dd641f437189bf9"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350124-stress-evidence",
+      "region_code": "350124",
+      "kind": "evidence",
+      "scenario": "stress",
+      "source_id": "4d74f378197bace2e63b05e9",
+      "previous_source_version": "198ea6dd2a4c0cbf55f2b635a022cfea51795ee66a3d8fa20fa073e6cd31de2a",
+      "new_safe_source_version": "ef2c858082d86489e1c006a82b05202ad0b630d0217304b38616ba77efc5b987",
+      "previous_request_sha256": "cb2d5b76fcb391f6f4384cc3d15d6985990aea9eef1e865a7157a0ab11a9f5ad",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350124-stress-evidence.json",
+      "previous_reviewed_docx_sha256": "3535543a48feecf8988d0caa0519f2f59362b790c78abacd8bb72d3c7984be95",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350124-stress-evidence.docx",
+      "regenerated_docx_sha256": "3535543a48feecf8988d0caa0519f2f59362b790c78abacd8bb72d3c7984be95",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1692,
+          "sha256": "9de9c14934c2a6500cd9c3ccfaeb2aee60797f4fa00d200554f39cae73dd5474"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/_rels/item2.xml.rels",
+          "bytes": 296,
+          "sha256": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 340,
+          "sha256": "1055a368a3a05dbeb1c4d9692ad2bafe33a19126a8fa0453a0dedf0f68c62e4c"
+        },
+        {
+          "name": "customXml/item2.xml",
+          "bytes": 289,
+          "sha256": "b30b8fd758aa47aada70ee7d8d8287349d6a21eb03c79bcb2e8930a1789022cc"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "customXml/itemProps2.xml",
+          "bytes": 236,
+          "sha256": "6006fb22c96d0a3b11668eab82eff80ca82bd94d53611c889a08885f42109dcf"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 625,
+          "sha256": "09eb73003d15a4116db88ffe77b7113846b701ad99ba1cb74d62071e66ccb48a"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 641,
+          "sha256": "4f6464ef61dd7b09b7c3582ac99709ca20f64f2dc94f30ac39a7d6a4dd593aac"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 526,
+          "sha256": "75169350f0a941e01d315ece2d5416a31c5d9c6fac8e16b637adfbcfb633050a"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 1092,
+          "sha256": "99b36725e7b90825ac41198f6b37570255b4aae17967ea02538c308410496b9f"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 97629,
+          "sha256": "991773157be2402d76bc0b50c5213e109d92bb9ae846dcc1048d6675741d12ec"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3043,
+          "sha256": "d5665956a6a9611d1ed5ad2707485731768a067c3886021bacf6e6721dae2c6f"
+        },
+        {
+          "name": "word/footer1.xml",
+          "bytes": 7643,
+          "sha256": "bb74fdd24d2af8916bb4082667d7619f3c7b8d918814a32e046252522c42bf66"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 3375,
+          "sha256": "2ead81363b7690e0d5e2fcb96b5a206250ccad32b8dd7f7d537e96bef5852d6a"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 27124,
+          "sha256": "b34cc5a41c0bd0901c8ac0a3aa58e71c1a42d61435b9b1241dd641f437189bf9"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350125-normal-application",
+      "region_code": "350125",
+      "kind": "application",
+      "scenario": "normal",
+      "source_id": "3bfbebb0f7115a969c3d77be",
+      "previous_source_version": "b4474695c88e6381b4ed38691816724366c4a7b45a45ecbf5a4fceef3907d48b",
+      "new_safe_source_version": "3f791f6bd9b0e33c64f0edac507ed66fb39897c4e9a7c43e8014ae7fc2a03dc2",
+      "previous_request_sha256": "542985e2ee298e563259fa5936a90cdca2032c332d75d097c314d80fa6392a53",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350125-normal-application.json",
+      "previous_reviewed_docx_sha256": "99b40a25f3dd1039e39efd4a865cd8d33acd67021636fce743efed255cc7ae0e",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350125-normal-application.docx",
+      "regenerated_docx_sha256": "99b40a25f3dd1039e39efd4a865cd8d33acd67021636fce743efed255cc7ae0e",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1432,
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 258,
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 624,
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 636,
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 822,
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 21897,
+          "sha256": "d99f0b4f25ebe467dc218bb22aa18a12dd4c25238530f4e18d015232a66472de"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3340,
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 2886,
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 28162,
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350125-stress-application",
+      "region_code": "350125",
+      "kind": "application",
+      "scenario": "stress",
+      "source_id": "3bfbebb0f7115a969c3d77be",
+      "previous_source_version": "b4474695c88e6381b4ed38691816724366c4a7b45a45ecbf5a4fceef3907d48b",
+      "new_safe_source_version": "3f791f6bd9b0e33c64f0edac507ed66fb39897c4e9a7c43e8014ae7fc2a03dc2",
+      "previous_request_sha256": "73fa4702e19aeb2c8677fc770e897f9126cc3939d376173b6063e9ffcea4321b",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350125-stress-application.json",
+      "previous_reviewed_docx_sha256": "d76bcbbe26255a41269c40e544572b3d2f8e46d529e3f20152f1005df4cae5a9",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350125-stress-application.docx",
+      "regenerated_docx_sha256": "d76bcbbe26255a41269c40e544572b3d2f8e46d529e3f20152f1005df4cae5a9",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1432,
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 258,
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 624,
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 636,
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 822,
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 24480,
+          "sha256": "0155815064e078d042d244538b02a7f04694387955d9dc3c8dd4c1ff0c72e83c"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3340,
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 2886,
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 28162,
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350181-normal-application",
+      "region_code": "350181",
+      "kind": "application",
+      "scenario": "normal",
+      "source_id": "9af3a0528483a9bb4fb67de5",
+      "previous_source_version": "07767ee192eac4f0918fe925b63dd528487915ce23b1288f7ac14cce28888f19",
+      "new_safe_source_version": "cb8db6db69fa69a674a7cdb7bc4668a851f9f0e66f07ddfd3e5900ad0de18630",
+      "previous_request_sha256": "676ddd0e7e00fefad7961b154da507da81c76894a3ab7e1dd2f86ef8777956c2",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350181-normal-application.json",
+      "previous_reviewed_docx_sha256": "77acdd85c5247f7f04b857607c55c9e224469a57c23cf42244b715dbcbbd6d38",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350181-normal-application.docx",
+      "regenerated_docx_sha256": "77acdd85c5247f7f04b857607c55c9e224469a57c23cf42244b715dbcbbd6d38",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1432,
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 258,
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 624,
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 636,
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 822,
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 21897,
+          "sha256": "aa8f0f9c871c8fc0bacc797966dd6106b7dcd821e210f40ae13e5467f3576b09"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3340,
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 2886,
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 28162,
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350181-stress-application",
+      "region_code": "350181",
+      "kind": "application",
+      "scenario": "stress",
+      "source_id": "9af3a0528483a9bb4fb67de5",
+      "previous_source_version": "07767ee192eac4f0918fe925b63dd528487915ce23b1288f7ac14cce28888f19",
+      "new_safe_source_version": "cb8db6db69fa69a674a7cdb7bc4668a851f9f0e66f07ddfd3e5900ad0de18630",
+      "previous_request_sha256": "2e00389082ef91e410d5da0d389271b84c4195e14620164dc19d6bff081f1937",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350181-stress-application.json",
+      "previous_reviewed_docx_sha256": "05241178744ad430c4974a50f399f4f573ab2dcc0eb6f391b5beaf8f0477441f",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350181-stress-application.docx",
+      "regenerated_docx_sha256": "05241178744ad430c4974a50f399f4f573ab2dcc0eb6f391b5beaf8f0477441f",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1432,
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 258,
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 624,
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 636,
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 822,
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 24480,
+          "sha256": "b50729d331b8f439c8bd0a5800c7fe16528eb625d7445c3581bcbae39ff906b5"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3340,
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 2886,
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 28162,
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350181-normal-evidence",
+      "region_code": "350181",
+      "kind": "evidence",
+      "scenario": "normal",
+      "source_id": "9af3a0528483a9bb4fb67de5",
+      "previous_source_version": "07767ee192eac4f0918fe925b63dd528487915ce23b1288f7ac14cce28888f19",
+      "new_safe_source_version": "cb8db6db69fa69a674a7cdb7bc4668a851f9f0e66f07ddfd3e5900ad0de18630",
+      "previous_request_sha256": "1f4bae10660c12d28380d918f1b8f8314e7f6c8f6fa503dea5984e7df0aa54e3",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350181-normal-evidence.json",
+      "previous_reviewed_docx_sha256": "7178239544509b13dfcfe75fa1f07b722b1838fa78de17e4c563b8cf73bdad4b",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350181-normal-evidence.docx",
+      "regenerated_docx_sha256": "7178239544509b13dfcfe75fa1f07b722b1838fa78de17e4c563b8cf73bdad4b",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1692,
+          "sha256": "9de9c14934c2a6500cd9c3ccfaeb2aee60797f4fa00d200554f39cae73dd5474"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/_rels/item2.xml.rels",
+          "bytes": 296,
+          "sha256": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 340,
+          "sha256": "1055a368a3a05dbeb1c4d9692ad2bafe33a19126a8fa0453a0dedf0f68c62e4c"
+        },
+        {
+          "name": "customXml/item2.xml",
+          "bytes": 289,
+          "sha256": "b30b8fd758aa47aada70ee7d8d8287349d6a21eb03c79bcb2e8930a1789022cc"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "customXml/itemProps2.xml",
+          "bytes": 236,
+          "sha256": "6006fb22c96d0a3b11668eab82eff80ca82bd94d53611c889a08885f42109dcf"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 625,
+          "sha256": "09eb73003d15a4116db88ffe77b7113846b701ad99ba1cb74d62071e66ccb48a"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 641,
+          "sha256": "4f6464ef61dd7b09b7c3582ac99709ca20f64f2dc94f30ac39a7d6a4dd593aac"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 526,
+          "sha256": "75169350f0a941e01d315ece2d5416a31c5d9c6fac8e16b637adfbcfb633050a"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 1092,
+          "sha256": "99b36725e7b90825ac41198f6b37570255b4aae17967ea02538c308410496b9f"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 16588,
+          "sha256": "5df9994ae324c3f787dfc42cbf7f86b92a61abea83a58854da7ab2afb8657192"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3043,
+          "sha256": "d5665956a6a9611d1ed5ad2707485731768a067c3886021bacf6e6721dae2c6f"
+        },
+        {
+          "name": "word/footer1.xml",
+          "bytes": 7643,
+          "sha256": "bb74fdd24d2af8916bb4082667d7619f3c7b8d918814a32e046252522c42bf66"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 3375,
+          "sha256": "2ead81363b7690e0d5e2fcb96b5a206250ccad32b8dd7f7d537e96bef5852d6a"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 27124,
+          "sha256": "b34cc5a41c0bd0901c8ac0a3aa58e71c1a42d61435b9b1241dd641f437189bf9"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350181-stress-evidence",
+      "region_code": "350181",
+      "kind": "evidence",
+      "scenario": "stress",
+      "source_id": "9af3a0528483a9bb4fb67de5",
+      "previous_source_version": "07767ee192eac4f0918fe925b63dd528487915ce23b1288f7ac14cce28888f19",
+      "new_safe_source_version": "cb8db6db69fa69a674a7cdb7bc4668a851f9f0e66f07ddfd3e5900ad0de18630",
+      "previous_request_sha256": "dffc77f94c1c4879bfa52d2a21ef16f816c854f464436d54aec1e9b52be907e3",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350181-stress-evidence.json",
+      "previous_reviewed_docx_sha256": "cb435f4f01aa76f21950ebbd571b7865ddd849ad7a9303649eb64567bd917bc9",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350181-stress-evidence.docx",
+      "regenerated_docx_sha256": "cb435f4f01aa76f21950ebbd571b7865ddd849ad7a9303649eb64567bd917bc9",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1692,
+          "sha256": "9de9c14934c2a6500cd9c3ccfaeb2aee60797f4fa00d200554f39cae73dd5474"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/_rels/item2.xml.rels",
+          "bytes": 296,
+          "sha256": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 340,
+          "sha256": "1055a368a3a05dbeb1c4d9692ad2bafe33a19126a8fa0453a0dedf0f68c62e4c"
+        },
+        {
+          "name": "customXml/item2.xml",
+          "bytes": 289,
+          "sha256": "b30b8fd758aa47aada70ee7d8d8287349d6a21eb03c79bcb2e8930a1789022cc"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "customXml/itemProps2.xml",
+          "bytes": 236,
+          "sha256": "6006fb22c96d0a3b11668eab82eff80ca82bd94d53611c889a08885f42109dcf"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 625,
+          "sha256": "09eb73003d15a4116db88ffe77b7113846b701ad99ba1cb74d62071e66ccb48a"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 641,
+          "sha256": "4f6464ef61dd7b09b7c3582ac99709ca20f64f2dc94f30ac39a7d6a4dd593aac"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 526,
+          "sha256": "75169350f0a941e01d315ece2d5416a31c5d9c6fac8e16b637adfbcfb633050a"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 1092,
+          "sha256": "99b36725e7b90825ac41198f6b37570255b4aae17967ea02538c308410496b9f"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 97629,
+          "sha256": "0551b1152f63100baa7f74210a8db34869969b17a79df4b95539ac38ab65ac3e"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3043,
+          "sha256": "d5665956a6a9611d1ed5ad2707485731768a067c3886021bacf6e6721dae2c6f"
+        },
+        {
+          "name": "word/footer1.xml",
+          "bytes": 7643,
+          "sha256": "bb74fdd24d2af8916bb4082667d7619f3c7b8d918814a32e046252522c42bf66"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 3375,
+          "sha256": "2ead81363b7690e0d5e2fcb96b5a206250ccad32b8dd7f7d537e96bef5852d6a"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 27124,
+          "sha256": "b34cc5a41c0bd0901c8ac0a3aa58e71c1a42d61435b9b1241dd641f437189bf9"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350182-normal-application",
+      "region_code": "350182",
+      "kind": "application",
+      "scenario": "normal",
+      "source_id": "e0b2adc9b9b0b10bc0eb9332",
+      "previous_source_version": "b2f0361505a0176ca9972ec9176a7fbca75014744d6dc1b4933ea813d80359d2",
+      "new_safe_source_version": "f00d1b33a3179397b6cb42c8e7c587a56c468d0bf3a80d613e0ff8c52f788df4",
+      "previous_request_sha256": "3f0f02580113df26d6d76197b53f6a6afff8b562d4af504f00e55d9939d8a400",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350182-normal-application.json",
+      "previous_reviewed_docx_sha256": "a4d74aa971e066cd9ed4d5c4b284714aa42908acf822097b32d5d467b820b9e5",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350182-normal-application.docx",
+      "regenerated_docx_sha256": "a4d74aa971e066cd9ed4d5c4b284714aa42908acf822097b32d5d467b820b9e5",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1432,
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 258,
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 624,
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 636,
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 822,
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 21897,
+          "sha256": "59de1c79ae3c9265790ed7edbb15533af04ddc77d80a4d2efa644596eda86098"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3340,
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 2886,
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 28162,
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350182-stress-application",
+      "region_code": "350182",
+      "kind": "application",
+      "scenario": "stress",
+      "source_id": "e0b2adc9b9b0b10bc0eb9332",
+      "previous_source_version": "b2f0361505a0176ca9972ec9176a7fbca75014744d6dc1b4933ea813d80359d2",
+      "new_safe_source_version": "f00d1b33a3179397b6cb42c8e7c587a56c468d0bf3a80d613e0ff8c52f788df4",
+      "previous_request_sha256": "86758e1c425ffd4eff0cbcdedc828d03ec71328963be06a7442b07c5ee930767",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350182-stress-application.json",
+      "previous_reviewed_docx_sha256": "5e47537148b60140b8ffb8461e49e6618a6e0fd573c18b082f77dcbd65aa8d08",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350182-stress-application.docx",
+      "regenerated_docx_sha256": "5e47537148b60140b8ffb8461e49e6618a6e0fd573c18b082f77dcbd65aa8d08",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1432,
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 258,
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 624,
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 636,
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 822,
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 24480,
+          "sha256": "61d129a03481d2aa9c63c32af008f4750811af3d71998ec7531c9023f5e6df6a"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3340,
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 2886,
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 28162,
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350182-normal-evidence",
+      "region_code": "350182",
+      "kind": "evidence",
+      "scenario": "normal",
+      "source_id": "e0b2adc9b9b0b10bc0eb9332",
+      "previous_source_version": "b2f0361505a0176ca9972ec9176a7fbca75014744d6dc1b4933ea813d80359d2",
+      "new_safe_source_version": "f00d1b33a3179397b6cb42c8e7c587a56c468d0bf3a80d613e0ff8c52f788df4",
+      "previous_request_sha256": "fa8cb6fb73c0e3209e6623f95ff11b85626921d7a94338da97c493f4bf11c7a2",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350182-normal-evidence.json",
+      "previous_reviewed_docx_sha256": "3447647c3ed78b2598861b1ef8ea0c632249f922d0a219f5e64793cf6ab883e4",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350182-normal-evidence.docx",
+      "regenerated_docx_sha256": "3447647c3ed78b2598861b1ef8ea0c632249f922d0a219f5e64793cf6ab883e4",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1692,
+          "sha256": "9de9c14934c2a6500cd9c3ccfaeb2aee60797f4fa00d200554f39cae73dd5474"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/_rels/item2.xml.rels",
+          "bytes": 296,
+          "sha256": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 340,
+          "sha256": "1055a368a3a05dbeb1c4d9692ad2bafe33a19126a8fa0453a0dedf0f68c62e4c"
+        },
+        {
+          "name": "customXml/item2.xml",
+          "bytes": 289,
+          "sha256": "b30b8fd758aa47aada70ee7d8d8287349d6a21eb03c79bcb2e8930a1789022cc"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "customXml/itemProps2.xml",
+          "bytes": 236,
+          "sha256": "6006fb22c96d0a3b11668eab82eff80ca82bd94d53611c889a08885f42109dcf"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 600,
+          "sha256": "c30649c8daa96dedf0b9b0d4db5c42b80a8f8676bc11e6a22e4625b195f08369"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 631,
+          "sha256": "b03032994801052a35a0ffaf16c688eaea3306015041befa2918001cf13db421"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "11809a3c4129b0a6e6a2e3f59132f8699b856f98599ba2d322abf1dd8e8e391f"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 1092,
+          "sha256": "99b36725e7b90825ac41198f6b37570255b4aae17967ea02538c308410496b9f"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 16409,
+          "sha256": "61ac9ea40e171d5a1fdda5477d1eea980a601ded197026e0a27b0f3edd26ae06"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3308,
+          "sha256": "aff1eb295be3920800faf599f67fe6e716325199f38223f9757dcb26fdcd8bef"
+        },
+        {
+          "name": "word/footer1.xml",
+          "bytes": 7598,
+          "sha256": "12c7b40060f7a4c9ac1bb498422df34d7157740cb5ee810c5ca9be3412d8a4d8"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 3327,
+          "sha256": "6903daa8c7753cbe8bc8602539b8ef13e8d5bb4be2a14e331ac4ac4755c6c007"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 27086,
+          "sha256": "2700b4c18e28d93d67ff0912b194202afc08fc72aff2cdedeafd19a697d578a4"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "label": "350182-stress-evidence",
+      "region_code": "350182",
+      "kind": "evidence",
+      "scenario": "stress",
+      "source_id": "e0b2adc9b9b0b10bc0eb9332",
+      "previous_source_version": "b2f0361505a0176ca9972ec9176a7fbca75014744d6dc1b4933ea813d80359d2",
+      "new_safe_source_version": "f00d1b33a3179397b6cb42c8e7c587a56c468d0bf3a80d613e0ff8c52f788df4",
+      "previous_request_sha256": "d08b14cb05616ba8c105aa3792e924190f8eeba7e5fab007f427e47ef14ddf8a",
+      "new_fixture": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/fixtures/350182-stress-evidence.json",
+      "previous_reviewed_docx_sha256": "4b41b3d0c65fdb8fa7ab8ad869023d42cbe5305624a2ab6980f644b1b656eb02",
+      "regenerated_docx": "reports/overnight-gap-closure-20261030/localities/fujian-j/integration-qa-v1/word/350182-stress-evidence.docx",
+      "regenerated_docx_sha256": "4b41b3d0c65fdb8fa7ab8ad869023d42cbe5305624a2ab6980f644b1b656eb02",
+      "all_complete_bytes_equal": true,
+      "all_uncompressed_zip_members_equal": true,
+      "zip_members": [
+        {
+          "name": "[Content_Types].xml",
+          "bytes": 1692,
+          "sha256": "9de9c14934c2a6500cd9c3ccfaeb2aee60797f4fa00d200554f39cae73dd5474"
+        },
+        {
+          "name": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/_rels/item2.xml.rels",
+          "bytes": 296,
+          "sha256": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "bytes": 340,
+          "sha256": "1055a368a3a05dbeb1c4d9692ad2bafe33a19126a8fa0453a0dedf0f68c62e4c"
+        },
+        {
+          "name": "customXml/item2.xml",
+          "bytes": 289,
+          "sha256": "b30b8fd758aa47aada70ee7d8d8287349d6a21eb03c79bcb2e8930a1789022cc"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "customXml/itemProps2.xml",
+          "bytes": 236,
+          "sha256": "6006fb22c96d0a3b11668eab82eff80ca82bd94d53611c889a08885f42109dcf"
+        },
+        {
+          "name": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "bytes": 600,
+          "sha256": "c30649c8daa96dedf0b9b0d4db5c42b80a8f8676bc11e6a22e4625b195f08369"
+        },
+        {
+          "name": "docProps/core.xml",
+          "bytes": 631,
+          "sha256": "b03032994801052a35a0ffaf16c688eaea3306015041befa2918001cf13db421"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "11809a3c4129b0a6e6a2e3f59132f8699b856f98599ba2d322abf1dd8e8e391f"
+        },
+        {
+          "name": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "bytes": 1092,
+          "sha256": "99b36725e7b90825ac41198f6b37570255b4aae17967ea02538c308410496b9f"
+        },
+        {
+          "name": "word/document.xml",
+          "bytes": 96578,
+          "sha256": "f534ecee80655b8ddbbfe11988301c66da6b56ce0bf81a81859b9488fd4063b3"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "bytes": 3308,
+          "sha256": "aff1eb295be3920800faf599f67fe6e716325199f38223f9757dcb26fdcd8bef"
+        },
+        {
+          "name": "word/footer1.xml",
+          "bytes": 7598,
+          "sha256": "12c7b40060f7a4c9ac1bb498422df34d7157740cb5ee810c5ca9be3412d8a4d8"
+        },
+        {
+          "name": "word/settings.xml",
+          "bytes": 3327,
+          "sha256": "6903daa8c7753cbe8bc8602539b8ef13e8d5bb4be2a14e331ac4ac4755c6c007"
+        },
+        {
+          "name": "word/styles.xml",
+          "bytes": 27086,
+          "sha256": "2700b4c18e28d93d67ff0912b194202afc08fc72aff2cdedeafd19a697d578a4"
+        },
+        {
+          "name": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    }
+  ]
+}

@@ -17,6 +17,7 @@ from regional_adapters import checked_reference_adapter
 from regional_public_provenance import public_evidence
 from regional_fujian_oct31h import ADAPTER as FJH, form_fields as fujian_h_fields, defaults as fujian_h_defaults
 from regional_fujian_oct31i import ADAPTER as FJI, schema_descriptor as fujian_i_schema
+from regional_fujian_oct31j import ADAPTER as FJJ, schema_descriptor as fujian_j_schema
 
 ROOT=Path(__file__).resolve().parents[1]
 EJS='jiangsu_own_blank_oct29e_v1'
@@ -30,8 +31,8 @@ JS_BLANK={'jiangsu_xishan_blank_v1','jiangsu_own_blank_oct29_v1',
 REFERENCE={'sichuan_combined_reference_v1','tianfu_reference_v1'}
 NINGBO='zhejiang_ningbo_own_blank_oct29_v1'
 FEIDONG='anhui-feidong-official-application-20261029'
-SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI}|ZJ_OWN|HN|JS_BLANK|REFERENCE)
-PUBLIC_PROOF_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,'jiangsu_own_blank_oct29c_v1','jiangsu_own_blank_oct29d_v1'}|ZJ_OWN|HN)
+SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ}|ZJ_OWN|HN|JS_BLANK|REFERENCE)
+PUBLIC_PROOF_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,'jiangsu_own_blank_oct29c_v1','jiangsu_own_blank_oct29d_v1'}|ZJ_OWN|HN)
 
 JS_APP=('applicantName birthDate gender idNumber idAddress otherDocumentType otherDocumentNumber '
         'applicantMailingAddress phone acceptMediation legalAid respondentName respondentType '
@@ -200,7 +201,8 @@ def build_form_contract(guide,template,kind,root=None):
     if checked_reference_adapter(guide,template,kind,root=root)!=adapter:raise ValueError('本区适配器身份不匹配')
     from routes.regional_guides import generation_request_model
     schema=generation_request_model(adapter,kind).model_json_schema()
-    own_schema=fujian_i_schema(guide['region_code'],kind) if adapter==FJI else None
+    own_schema=(fujian_j_schema(guide['region_code'],kind) if adapter==FJJ else
+                fujian_i_schema(guide['region_code'],kind) if adapter==FJI else None)
     fields=deepcopy(own_schema['fields']) if own_schema else _fields(adapter,kind,schema)
     context={k:guide[k] for k in identity};context.update(version=guide['version'],template_id=template['id'],kind=kind,
         mode='blank' if template['official_kind']=='blank' else 'reference_adaptation',adapter=adapter)
