@@ -1,5 +1,5 @@
 {
-  "phase": "CODE_AND_APK_VERIFIED_RELEASE_PENDING",
+  "phase": "COMPLETE_PUBLISHED",
   "code_commits": [
     "c14b0522",
     "2263a9ce",
@@ -19,8 +19,11 @@
   "discovery_jobs": 4294,
   "guide_data_changed": false,
   "release_tag": "v1.2.0-preview.1",
-  "release_status": "PENDING",
+  "release_status": "PUBLIC_PRERELEASE",
   "physical_android_install": "NOT_RUN_NO_USB_DEVICE",
   "windows_model_started": false,
-  "next": "Commit exact release files, push, publish verified APK and checksums, verify public asset bytes, commit publication receipt."
+  "next": "Optional physical Android installation when a USB device is available; continue locality source verification separately without changing current coverage claims.",
+  "release_source_commit": "68edcb0241ccc0f0aa755c95c5a2cbfb1bbd0c82",
+  "release_url": "https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.1",
+  "public_assets_downloaded_and_sha256_verified": 3
 }

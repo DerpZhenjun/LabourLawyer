@@ -38,3 +38,7 @@ Android 构建复用已安装的 Gradle 缓存与项目既有短临时目录设�
 本轮 `adb devices` 无授权设备，所以手机覆盖安装、原生分享未执行；新版提供经过签名和内容核验的 USB 预览 APK。Windows 安装包没有重打包。没有上传或发布微信小程序，也没有重新验证全部 Word 视觉版式；本轮模板填充器及官方附件未变。
 
 地区数据保持 202 份当地指南、185 地可生成、210 条历史与 377 条 outbox，用户六项既有未提交修改保留。没有扩大区县覆盖或把未核验地区写成官方没有资料。Release 不包含后端、模型、官方原件库或用户案件数据库。
+
+## 已公开发布
+
+[Android v1.2.0-preview.1](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.1) 已公开为预览版，标签指向 `68edcb0241ccc0f0aa755c95c5a2cbfb1bbd0c82`。三个附件均从匿名公开地址重新下载，字节与 SHA-256 全部匹配；见 [发布回执](PUBLICATION.json)。本轮共六批提交（含本回执批次），没有重新标记或覆盖旧版附件。
