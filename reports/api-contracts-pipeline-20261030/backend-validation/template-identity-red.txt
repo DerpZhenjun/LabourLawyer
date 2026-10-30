@@ -1,0 +1,15 @@
+test_generate_rejects_neighbor_lookup_with_matching_source_and_version (test_unified_regional_validation.UnifiedRegionalValidationTests.test_generate_rejects_neighbor_lookup_with_matching_source_and_version) ... ok
+test_generation_rejects_ambiguous_template_identity (test_unified_regional_validation.UnifiedRegionalValidationTests.test_generation_rejects_ambiguous_template_identity) ... FAIL
+
+======================================================================
+FAIL: test_generation_rejects_ambiguous_template_identity (test_unified_regional_validation.UnifiedRegionalValidationTests.test_generation_rejects_ambiguous_template_identity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<workspace>/backend/tests/test_unified_regional_validation.py", line 64, in test_generation_rejects_ambiguous_template_identity
+    self.assertEqual(response.status_code, 409)
+AssertionError: 200 != 409
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.229s
+
+FAILED (failures=1)

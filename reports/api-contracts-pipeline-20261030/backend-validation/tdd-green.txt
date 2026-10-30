@@ -1,0 +1,15 @@
+test_contract_data_and_legacy_model_errors_reject_before_filling (test_unified_regional_validation.UnifiedRegionalValidationTests.test_contract_data_and_legacy_model_errors_reject_before_filling) ... ok
+test_current_contract_generates_and_stale_contract_rejects_before_filling (test_unified_regional_validation.UnifiedRegionalValidationTests.test_current_contract_generates_and_stale_contract_rejects_before_filling) ... ok
+test_existing_surrounding_whitespace_in_locality_is_accepted (test_unified_regional_validation.UnifiedRegionalValidationTests.test_existing_surrounding_whitespace_in_locality_is_accepted) ... ok
+test_generate_rejects_neighbor_lookup_with_matching_source_and_version (test_unified_regional_validation.UnifiedRegionalValidationTests.test_generate_rejects_neighbor_lookup_with_matching_source_and_version) ... ok
+test_generation_rejects_ambiguous_template_identity (test_unified_regional_validation.UnifiedRegionalValidationTests.test_generation_rejects_ambiguous_template_identity) ... ok
+test_legacy_no_contract_still_ignores_unbound_keys_and_generates_both_kinds (test_unified_regional_validation.UnifiedRegionalValidationTests.test_legacy_no_contract_still_ignores_unbound_keys_and_generates_both_kinds) ... ok
+test_missing_source_keeps_distinct_read_and_generation_errors (test_unified_regional_validation.UnifiedRegionalValidationTests.test_missing_source_keeps_distinct_read_and_generation_errors) ... ok
+test_missing_template_keeps_endpoint_specific_errors (test_unified_regional_validation.UnifiedRegionalValidationTests.test_missing_template_keeps_endpoint_specific_errors) ... ok
+test_stale_source_and_version_keep_both_endpoints_closed (test_unified_regional_validation.UnifiedRegionalValidationTests.test_stale_source_and_version_keep_both_endpoints_closed) ... ok
+test_template_adapter_and_requested_mode_keep_own_binding_errors (test_unified_regional_validation.UnifiedRegionalValidationTests.test_template_adapter_and_requested_mode_keep_own_binding_errors) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.966s
+
+OK

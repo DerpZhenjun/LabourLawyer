@@ -1,0 +1,107 @@
+{
+  "scope": "Backend shared regional validation only; no Git mutations, service restarts, model/inference runs, template/source/database changes.",
+  "changes": [
+    "Shared exact locality, current source/version, unique template selection, delegated own-adapter binding, optional contract and dynamic request-model checks.",
+    "Fail closed on wrong lookup locality even when source/version match.",
+    "Fail closed on ambiguous duplicate template IDs for generation as well as contract reads.",
+    "Existing generation_request_model registry, per-template policy, filler dispatch, valid legacy no-contract behavior and existing error detail strings retained."
+  ],
+  "verification": [
+    {
+      "command": ".venv/Scripts/python.exe -m unittest discover -s backend/tests -p test_unified_regional_validation.py -v",
+      "tests": 10,
+      "result": "PASS",
+      "log": "reports/api-contracts-pipeline-20261030/backend-validation/tdd-green.txt"
+    },
+    {
+      "command": ".venv/Scripts/python.exe -m unittest discover -s backend/tests -p test_regional*.py -v",
+      "tests": 117,
+      "skipped": 1,
+      "result": "PASS",
+      "skip": "test_symlink_to_original_repository_is_not_public_root_proof: Windows WinError 1314, no symlink privilege",
+      "log": "reports/api-contracts-pipeline-20261030/backend-validation/regional-regression.txt"
+    },
+    {
+      "command": "PYTHONPATH=backend .venv/Scripts/python.exe -m unittest discover -s backend/tests -p *dispatch.py -v",
+      "tests": 17,
+      "result": "PASS",
+      "log": "reports/api-contracts-pipeline-20261030/backend-validation/dispatch-regression-with-pythonpath.txt"
+    },
+    {
+      "command": "git diff --check -- backend/routes/regional_guides.py backend/regional_validation.py backend/tests/test_unified_regional_validation.py",
+      "result": "PASS"
+    }
+  ],
+  "tdd_red": [
+    {
+      "log": "reports/api-contracts-pipeline-20261030/backend-validation/tdd-red.txt",
+      "failure": "3 locality mismatches produced HTTP 200 instead of 409 before shared context checks"
+    },
+    {
+      "log": "reports/api-contracts-pipeline-20261030/backend-validation/template-identity-red.txt",
+      "failure": "Duplicate template identity produced HTTP 200 instead of 409 before unique selection guard"
+    }
+  ],
+  "initial_dispatch_invocation": "Without PYTHONPATH, 1 import error in test_hunan_oct29b_dispatch (regional_guides not found). Rerun with backend on PYTHONPATH passed all 17.",
+  "full_suite": "Parent/root will run the complete backend suite per task ownership.",
+  "changed_file_whitelist": [
+    "backend/routes/regional_guides.py",
+    "backend/regional_validation.py",
+    "backend/tests/test_unified_regional_validation.py",
+    "reports/api-contracts-pipeline-20261030/backend-validation/dispatch-regression-with-pythonpath.txt",
+    "reports/api-contracts-pipeline-20261030/backend-validation/dispatch-regression.txt",
+    "reports/api-contracts-pipeline-20261030/backend-validation/regional-regression.txt",
+    "reports/api-contracts-pipeline-20261030/backend-validation/tdd-green.txt",
+    "reports/api-contracts-pipeline-20261030/backend-validation/tdd-red.txt",
+    "reports/api-contracts-pipeline-20261030/backend-validation/template-identity-red.txt",
+    "reports/api-contracts-pipeline-20261030/backend-validation/summary.json"
+  ],
+  "raw_sha256": {
+    "backend/routes/regional_guides.py": "2433bffa57407c5181c481a468d1f10de1f00344a08d6d7e0210428a2cdeea63",
+    "backend/regional_validation.py": "2c99a048a120963bb7eec655580892d564114b088b049699606ec4b096d679b9",
+    "backend/tests/test_unified_regional_validation.py": "b54a88b80e201e050a2c3b3fa1c8e8aede1800e3e152e0b71daa969fd00a0966",
+    "reports/api-contracts-pipeline-20261030/backend-validation/dispatch-regression-with-pythonpath.txt": "375a3617c78622e7404a586ac9cf1a6c54afecc6032bde41027454bafad5771c",
+    "reports/api-contracts-pipeline-20261030/backend-validation/dispatch-regression.txt": "69eb750700a935bf90ddcbe3ee414172d42ec48de5e94c3bce421733d1a20b67",
+    "reports/api-contracts-pipeline-20261030/backend-validation/regional-regression.txt": "4c32fd9071ae24aa3bb262bd11b8eae1236cebd10ce41aca31da7eb5ad0d5145",
+    "reports/api-contracts-pipeline-20261030/backend-validation/tdd-green.txt": "57c3a29a96b40d6c9ffab9d36ee79e9ae3cc46923646da0a56e59ee90f895a92",
+    "reports/api-contracts-pipeline-20261030/backend-validation/tdd-red.txt": "77786a57790cabd6bf2f7790d71938383a7d69f71e8e4a6f0558558fff56cb79",
+    "reports/api-contracts-pipeline-20261030/backend-validation/template-identity-red.txt": "d0393463a4b89f7bbbc6bc051779f28c9bb43055e69694b956a9ea2f4690d010",
+    "reports/api-contracts-pipeline-20261030/backend-validation/summary.json": "dc128c829ca0458cc0e76949141b0e1e371724aacd630cabf4190dfdbd7afc61"
+  },
+  "published_sha256": {
+    "backend/routes/regional_guides.py": "2433bffa57407c5181c481a468d1f10de1f00344a08d6d7e0210428a2cdeea63",
+    "backend/regional_validation.py": "2c99a048a120963bb7eec655580892d564114b088b049699606ec4b096d679b9",
+    "backend/tests/test_unified_regional_validation.py": "b54a88b80e201e050a2c3b3fa1c8e8aede1800e3e152e0b71daa969fd00a0966",
+    "reports/api-contracts-pipeline-20261030/backend-validation/dispatch-regression-with-pythonpath.txt": "5867026629c8016b157dae6b93592e6513a58199b604f11714171bd374d4f1fb",
+    "reports/api-contracts-pipeline-20261030/backend-validation/dispatch-regression.txt": "82235de94a834b683870346a485955d0f6d94b362238df99d9dfb731e514a4ef",
+    "reports/api-contracts-pipeline-20261030/backend-validation/regional-regression.txt": "4f686774b32074604fe0989ec1e819cdff43f41c12dc798331d01e58c5ee1a4d",
+    "reports/api-contracts-pipeline-20261030/backend-validation/tdd-green.txt": "1f2db8007587c58f70cd2642d5cfb47d1feb42afde44fc0a365d74b48fa8a354",
+    "reports/api-contracts-pipeline-20261030/backend-validation/tdd-red.txt": "a79c668832a4c6cd3a6cc8de7b1b2dc5e6740cd13318cc6fd666df108aa300f0",
+    "reports/api-contracts-pipeline-20261030/backend-validation/template-identity-red.txt": "27894742f71e940082fc882da3824ccfc0f953a6f164a00ee341e8a3c55800b2"
+  },
+  "private_raw_directory": ".runtime/api-contracts-pipeline-20261030/backend-validation-raw",
+  "private_raw_file_whitelist": [
+    ".runtime/api-contracts-pipeline-20261030/backend-validation-raw/dispatch-regression-with-pythonpath.txt",
+    ".runtime/api-contracts-pipeline-20261030/backend-validation-raw/dispatch-regression.txt",
+    ".runtime/api-contracts-pipeline-20261030/backend-validation-raw/regional-regression.txt",
+    ".runtime/api-contracts-pipeline-20261030/backend-validation-raw/summary.json",
+    ".runtime/api-contracts-pipeline-20261030/backend-validation-raw/tdd-green.txt",
+    ".runtime/api-contracts-pipeline-20261030/backend-validation-raw/tdd-red.txt",
+    ".runtime/api-contracts-pipeline-20261030/backend-validation-raw/template-identity-red.txt"
+  ],
+  "report_file_whitelist": [
+    "reports/api-contracts-pipeline-20261030/backend-validation/dispatch-regression-with-pythonpath.txt",
+    "reports/api-contracts-pipeline-20261030/backend-validation/dispatch-regression.txt",
+    "reports/api-contracts-pipeline-20261030/backend-validation/regional-regression.txt",
+    "reports/api-contracts-pipeline-20261030/backend-validation/summary.json",
+    "reports/api-contracts-pipeline-20261030/backend-validation/tdd-green.txt",
+    "reports/api-contracts-pipeline-20261030/backend-validation/tdd-red.txt",
+    "reports/api-contracts-pipeline-20261030/backend-validation/template-identity-red.txt"
+  ],
+  "encoding_note": "Original logs are UTF-8 byte streams containing preexisting console-decoding damage. Published copies remain UTF-8. Only machine-specific absolute path prefixes and separators inside those paths were sanitized. Garbled text and original failure/pass outcomes were not repaired or reclassified. Derived public logs additionally normalize CRLF to LF for whitespace checks; private raw logs retain their bytes. Trailing console whitespace is stripped in derived public logs only.",
+  "hash_note": "raw_sha256 records the original bytes, including the original summary preserved privately. published_sha256 records current source and sanitized published log bytes. This updated summary is excluded from published_sha256 to avoid a self-referential digest; its SHA256 is returned separately.",
+  "path_placeholders": {
+    "<workspace>/": "Repository root",
+    "<python-runtime>/": "Machine-specific Python distribution root"
+  }
+}
