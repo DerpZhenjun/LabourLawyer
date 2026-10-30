@@ -1,0 +1,175 @@
+{
+  "source_commit": "67870fbc",
+  "payloads": [
+    {
+      "slug": "beijing",
+      "kind": "application",
+      "sha256": "5f516a04b579b054a8df7fbcdc64052de30dec45632a264faa02fe636d4684d7"
+    },
+    {
+      "slug": "beijing",
+      "kind": "evidence",
+      "sha256": "a379b3490b2f8806d8994d0bcda397ac163d0718f3ea9946f07384615d189298"
+    },
+    {
+      "slug": "tianjin",
+      "kind": "application",
+      "sha256": "2fa403aacc7285764bfd153a6c7ad1251d11c7ca65d69bacac60c46170388f73"
+    },
+    {
+      "slug": "tianjin",
+      "kind": "evidence",
+      "sha256": "561f7776ae3bc28d47f1753e69c07e718715af8d7bf25d14d1a053967a191323"
+    },
+    {
+      "slug": "shanxi",
+      "kind": "application",
+      "sha256": "5a1b8e1ebaa79301a44ccd5d8115b4abc76b2fc6bc30e7eb5f345c99dcc12828"
+    },
+    {
+      "slug": "neimenggu",
+      "kind": "application",
+      "sha256": "6f9b1d1b5e14bdbf6ead1c672ca29a7dbb73136a9da54ee62cb8122e84bcbc1c"
+    },
+    {
+      "slug": "liaoning",
+      "kind": "application",
+      "sha256": "e4152a2d6620ce81dd4acb5aaa9a9a21b05bd4b0a9a671a95b4e482c0f347661"
+    },
+    {
+      "slug": "jiangsu",
+      "kind": "application",
+      "sha256": "c11acdcb6db36626183a5f80c775d8a1a3246a2525705c99c30f7871faff9e96"
+    },
+    {
+      "slug": "jiangsu",
+      "kind": "evidence",
+      "sha256": "25e720848c359f28dee9969e6777893007d5bfc066baf78548e3da4530dfc5a4"
+    },
+    {
+      "slug": "zhejiang",
+      "kind": "application",
+      "sha256": "86b4e5c582a5fca3873125e1277cb82e7300e16f60c87824e64562a765c0b227"
+    },
+    {
+      "slug": "zhejiang",
+      "kind": "evidence",
+      "sha256": "2de70987403782a41d36ea0037478d35f59e7b40a87367dc82b65dda95dfd39c"
+    },
+    {
+      "slug": "fujian",
+      "kind": "application",
+      "sha256": "be106a285f0e3b20e03b90e301e21415bf30e0372ba46c664630a4e080a2eaa8"
+    },
+    {
+      "slug": "fujian",
+      "kind": "evidence",
+      "sha256": "e36fcab0652bde1f69e592c26d65dfbdd52db80f983a58fd6db015053f9cd425"
+    },
+    {
+      "slug": "jiangxi",
+      "kind": "application",
+      "sha256": "b6f4e73bddba276fab7d04cd0dbaea283f06bdcef7e5b8571d52616e050235ad"
+    },
+    {
+      "slug": "jiangxi",
+      "kind": "evidence",
+      "sha256": "d49da3576257b2cda6fc38d9b54a7cc174f96360562f68082e12682100695506"
+    },
+    {
+      "slug": "shandong",
+      "kind": "application",
+      "sha256": "0d7c0cecccf75c615e7a9ca8b1b880f6ae6fd4dcd632136ff36f2b8cb56fadc2"
+    },
+    {
+      "slug": "shandong",
+      "kind": "evidence",
+      "sha256": "ff17e9aed17e8548432125e5ddd17c7758ac24d98677a90c6d4210002b68051d"
+    },
+    {
+      "slug": "henan",
+      "kind": "application",
+      "sha256": "8965fd3eeeee731057125c5c466ac3f3f532318d3071ab734b74e5d6423c143e"
+    },
+    {
+      "slug": "hubei",
+      "kind": "application",
+      "sha256": "4be7714d59a6b12531bf76557f57f8c22afad2e538f036e9627dd6bf6b101b06"
+    },
+    {
+      "slug": "hubei",
+      "kind": "evidence",
+      "sha256": "0ae9b695809c819462cd9b1e797b63f9bfbeb5f4e19974ab305fdf15ed659a63"
+    },
+    {
+      "slug": "hunan",
+      "kind": "application",
+      "sha256": "b89680be0ee95647c34093bcb4fa7dc1e86bdfadf0e34d70adb491db4939edbd"
+    },
+    {
+      "slug": "hunan",
+      "kind": "evidence",
+      "sha256": "6b0f239dafbef4a47af4d5722d2f5cfbea7ac0ba3f47bb540ca1f949c20764b2"
+    },
+    {
+      "slug": "guangdong",
+      "kind": "application",
+      "sha256": "dcc59bb60f74db717fd675763fad85a336b1592409cd07ecbfff30b6a203fe06"
+    },
+    {
+      "slug": "guangdong",
+      "kind": "evidence",
+      "sha256": "8f74935502af2a20468854f38c68989661a73ffe03d823a01e1d4a10a559c75e"
+    },
+    {
+      "slug": "hainan",
+      "kind": "application",
+      "sha256": "a9d549c4edeb7ce350fc13727d1a05ca8f6db19627c609f9951b74002f32e395"
+    },
+    {
+      "slug": "hainan",
+      "kind": "evidence",
+      "sha256": "38f5fb05ac1d8247e94916e418e23846643c0e42ef3dda403a69ca55b079d285"
+    },
+    {
+      "slug": "sichuan",
+      "kind": "application",
+      "sha256": "48f0f3a311dc8bed9bc0a3547d6d4ab853f85779f5e151d15e4a97c15a94fb93"
+    },
+    {
+      "slug": "sichuan",
+      "kind": "evidence",
+      "sha256": "69a27b3e41e6125a3ef3c10fe74be4bb5403f9a64f3578dd05380efacea0acc6"
+    },
+    {
+      "slug": "guizhou",
+      "kind": "application",
+      "sha256": "93f74a2a4392fa5b074dd59adbfce03df4050698115fe508d87d5c5f79e25fc9"
+    },
+    {
+      "slug": "yunnan",
+      "kind": "application",
+      "sha256": "b67b3120db0e61491d5cdbaf84aef0a38600507d30119f720fda7e5069cacb34"
+    },
+    {
+      "slug": "yunnan",
+      "kind": "evidence",
+      "sha256": "8f74935502af2a20468854f38c68989661a73ffe03d823a01e1d4a10a559c75e"
+    },
+    {
+      "slug": "shaanxi",
+      "kind": "application",
+      "sha256": "22305f63460c8e5cfc693b82ef7c45bc3e29f29dc71fccddb9e88654c1061d55"
+    },
+    {
+      "slug": "gansu",
+      "kind": "application",
+      "sha256": "87e17255e87a99b7b50761d277c481eb823dd7f770e66cbd84ba2ac7e31491fa"
+    },
+    {
+      "slug": "xinjiang",
+      "kind": "application",
+      "sha256": "b26faa00198b1c860ea0bdf016325dc594a4ae7ba22aabb5486c442fe44334f6"
+    }
+  ]
+}

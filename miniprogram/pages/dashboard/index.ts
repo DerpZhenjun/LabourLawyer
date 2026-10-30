@@ -1,0 +1,22 @@
+import type { PageSpec, MiniEvent } from '../../types/runtime';
+import type { Province } from '../../../packages/client-contracts/src/documents';
+import * as docs from '../../utils/documents';
+const featuredSlugs = ['zhejiang', 'guangdong', 'jiangsu', 'liaoning', 'fujian'];
+function cards(provinces: Province[]) {
+    return provinces.map(p => ({ ...p, mark: p.shortName.slice(0, 1), ready: !!p.documents.application || !!p.documents.evidence, meta: [p.documents.application ? '申请书' : '', p.documents.evidence ? '证据清单' : ''].filter(Boolean).join(' · ') || '官方办理指南' }));
+}
+type Card = ReturnType<typeof cards>[number];
+const page: PageSpec<{
+    featured: Card[];
+    others: Card[];
+}, {
+    onLoad(): void;
+    update(provinces: Province[]): void;
+    openProvince(event: MiniEvent): void;
+}> = {
+    data: { featured: [], others: [] },
+    onLoad() { this.update(docs.provinces); docs.loadCatalog(items => this.update(docs.mergeCatalog(items))); },
+    update(provinces) { const all = cards(provinces); this.setData({ featured: all.filter(p => featuredSlugs.includes(p.slug)), others: all.filter(p => !featuredSlugs.includes(p.slug)) }); },
+    openProvince(event) { wx.navigateTo({ url: `/pages/province/index?slug=${event.currentTarget.dataset.slug}` }); },
+};
+Page(page);

@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "types": [
+      "miniprogram-api-typings"
+    ],
+    "lib": [
+      "ES2020",
+      "DOM"
+    ],
+    "skipLibCheck": true,
+    "typeRoots": [
+      "./node_modules"
+    ]
+  },
+  "include": [
+    "app.ts",
+    "pages/**/*.ts",
+    "utils/**/*.ts",
+    "types/**/*.ts"
+  ]
+}

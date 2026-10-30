@@ -12,7 +12,7 @@ function load(file) {
   vm.runInNewContext(fs.readFileSync(file, 'utf8'), {module, exports: module.exports, require: ref => load(path.resolve(path.dirname(file), ref)), Page() {}, App() {}, wx: {}, getApp: () => ({globalData: {}})}, {filename: file})
   return module.exports
 }
-for (const entry of ['utils/documents.js', 'pages/dashboard/index.js', 'pages/province/index.js', 'pages/regional/index.js']) load(path.join(root, entry))
+for (const entry of ['app.js','utils/documents.js',...fs.readdirSync(path.join(root,'pages')).map(name=>'pages/'+name+'/index.js')]) load(path.join(root, entry))
 for (const name of ['provinces', 'documentForms', 'provinceExperiences']) {
   assert.deepEqual(JSON.parse(JSON.stringify(load(path.join(root, 'data', name + '.js')))), JSON.parse(fs.readFileSync(path.join(root, 'data', name + '.json'), 'utf8')), name + ' CJS data must match its source exactly')
 }

@@ -1,0 +1,16 @@
+import type { AppState } from './types/runtime';
+App<AppState>({
+    globalData: {
+        apiBase: 'http://127.0.0.1:8000',
+        cases: [
+            { id: 'PL-2026-018', title: '工资及加班费争议', client: '陈*', stage: '材料准备', deadline: '09-22', progress: 75, urgent: false },
+            { id: 'PL-2026-017', title: '违法解除劳动合同', client: '林*', stage: '待提交', deadline: '09-19', progress: 88, urgent: true },
+            { id: 'PL-2026-015', title: '工伤待遇争议', client: '周*', stage: '审理中', deadline: '10-08', progress: 94, urgent: false }
+        ]
+    },
+    onLaunch() {
+        const saved: unknown = wx.getStorageSync('labourlawyer_cases');
+        if (Array.isArray(saved) && saved.length && saved.every((v: unknown) => v !== null && typeof v === 'object' && ['id', 'title', 'client', 'stage', 'deadline'].every(k => typeof Reflect.get(v, k) === 'string') && typeof Reflect.get(v, 'progress') === 'number'))
+            this.globalData.cases = saved as AppState['globalData']['cases'];
+    }
+});
