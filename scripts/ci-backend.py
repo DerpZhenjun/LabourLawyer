@@ -52,6 +52,7 @@ TESTS = (
     'test_collector_issue_events',
     'test_collector_issue_wiring',
     'test_official_collector_issue_status',
+    'test_collector_openclaw_relay',
     'test_ci_subprocess_guard',
     'test_tls_deployment.TLSDeploymentTests',
     'test_tls_deployment.TLSInstallerTests',
