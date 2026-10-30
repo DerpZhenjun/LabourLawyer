@@ -14,6 +14,7 @@ import os
 from pathlib import Path
 import re
 import threading
+import time
 from urllib.parse import urlsplit, urljoin
 import uuid
 from docx import Document
@@ -37,7 +38,13 @@ def write_json(path,payload):
     path.parent.mkdir(parents=True,exist_ok=True)
     temp=path.with_suffix('.tmp')
     temp.write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf8')
-    temp.replace(path)
+    for attempt in range(5):
+        try:
+            temp.replace(path)
+            return
+        except PermissionError as exc:
+            if getattr(exc,'winerror',None) not in {5,32,33} or attempt==4:raise
+            time.sleep((0.025,0.05,0.1,0.2)[attempt])
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def run_dir(run_id):
     if not re.fullmatch(r'[0-9]{8}-[0-9]{6}-[a-f0-9]{8}',run_id):raise ValueError('无效报告编号')

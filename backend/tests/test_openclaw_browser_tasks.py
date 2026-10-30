@@ -188,10 +188,19 @@ class BrowserRecoveryTests(unittest.TestCase):
                 tasks.save(run/'experiences.json',{'parent_run':'previous-valid-batch','openclaw_run':'native-test'})
                 for slug,p in PROVINCE_DOCUMENTS.items():
                     tasks.save(run/slug/'experience.json',{'slug':slug,'name':p['name'],'state':'fresh','selected_guide':{'guide_url':f'https://test.gov.cn/guide/{slug}','service_name':'劳动人事争议仲裁申请','materials':['申请书']},**({'openclaw_task':'native-test/shanxi'} if slug=='shanxi' else {})})
-                browser=MagicMock();browser.close=AsyncMock();pw=MagicMock();pw.chromium.launch=AsyncMock(return_value=browser);manager=MagicMock();manager.__aenter__=AsyncMock(return_value=pw);manager.__aexit__=AsyncMock()
-                def review(profile,*_):return {'state':'failed','parse_state':'invalid'} if failed and profile['slug']=='shanxi' else {'state':'reviewed','parse_state':'valid'}
-                with patch.object(refresh,'ROOT',root),patch.object(refresh,'EXPERIENCE_ROOT',experience),patch.object(refresh,'review',review),patch('playwright.async_api.async_playwright',return_value=manager),patch('subprocess.run') as execute,patch.dict('os.environ',{'LABOURLAWYER_ARTIFACT_PYTHON':str(root/'missing-runtime')}):
+                browser=MagicMock();browser.close=AsyncMock();pw=MagicMock();pw.chromium.launch=AsyncMock(return_value=browser);manager=MagicMock();manager.__aenter__=AsyncMock(return_value=pw);manager.__aexit__=AsyncMock(return_value=False)
+                reviewed=[]
+                def review(profile,context):
+                    reviewed.append((profile['slug'],context))
+                    return {'state':'failed','parse_state':'invalid'} if failed and profile['slug']=='shanxi' else {'state':'reviewed','parse_state':'valid'}
+                synthetic_ua='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+                with patch.object(refresh,'ROOT',root),patch.object(refresh,'EXPERIENCE_ROOT',experience),patch.object(refresh,'review',review),patch('playwright.async_api.async_playwright',return_value=manager),patch('browser_identity.normal_user_agent',return_value=synthetic_ua),patch('subprocess.run') as execute,patch.dict('os.environ',{'LABOURLAWYER_ARTIFACT_PYTHON':str(root/'missing-runtime')}):
                     asyncio.run(refresh.main(SimpleNamespace(resume=str(run),without_browser_agent=True,with_browser_agent=False)))
+                pw.chromium.launch.assert_awaited_once()
+                self.assertEqual(pw.chromium.launch.call_args.kwargs['args'],['--user-agent='+synthetic_ua])
+                manager.__aexit__.assert_awaited_once()
+                self.assertEqual([slug for slug,_ in reviewed],list(PROVINCE_DOCUMENTS))
+                self.assertTrue(all(context==run for _,context in reviewed))
                 latest=json.loads((experience/'latest.json').read_text(encoding='utf8'))
                 self.assertEqual(latest['id'],'previous-valid-batch' if failed else 'new-batch')
                 manifest=json.loads((run/'experiences.json').read_text(encoding='utf8'));self.assertEqual(manifest['parent_run'],'previous-valid-batch')
