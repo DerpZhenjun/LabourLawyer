@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "version": "1.2.0-preview.2",
+  "web_documents": [
+    {
+      "bytes": 12664,
+      "sha256": "4bbfa2a28560de08a589e3d0f9211df7a34e8d0fc1792b510e7a875a883299df",
+      "zip_crc": true,
+      "word_xml": true
+    },
+    {
+      "bytes": 11547,
+      "sha256": "e96be8d4feff4a3131231dc2f8dcc47ecf460a84d36c7d36bbef803a66ec91ae",
+      "zip_crc": true,
+      "word_xml": true
+    }
+  ],
+  "desktop_runtime": {
+    "status": "PASS_PACKAGED_ELECTRON",
+    "version": "1.2.0-preview.2",
+    "same_origin_proxy": true,
+    "catalog_items": 31,
+    "fields": 32,
+    "word_bytes": 12664,
+    "word_sha256": "4bbfa2a28560de08a589e3d0f9211df7a34e8d0fc1792b510e7a875a883299df",
+    "install_exe_executed": false,
+    "model_calls": false,
+    "isolated_profile": true
+  },
+  "android": {
+    "bytes": 4901232,
+    "sha256": "1f0246a634933af3711af2ff90d1a67757b6f3f11a7d1dd8e37cf4de9916c03e",
+    "zip_crc": true,
+    "frontend_files_byte_identical": 83,
+    "signed_v2": true,
+    "version_code": 5,
+    "device_install": false
+  },
+  "windows": {
+    "embedded_web_files_byte_identical": 83,
+    "unsigned_preview": true,
+    "installer_executed": false
+  },
+  "protected_files_unchanged": 6,
+  "model_inference": false,
+  "windows_model_started": false
+}

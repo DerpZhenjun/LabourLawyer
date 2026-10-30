@@ -1,0 +1,1862 @@
+{
+  "schemaVersion": 1,
+  "runId": "2026-10-30T05-58-11-802Z-c9722596",
+  "action": "build",
+  "dryRun": false,
+  "targets": [
+    "web",
+    "mini",
+    "android",
+    "desktop"
+  ],
+  "inputs": [
+    "LICENSE",
+    "backend",
+    "config",
+    "data/public-regions",
+    "desktop",
+    "frontend",
+    "miniprogram",
+    "mobile",
+    "packages",
+    "scripts/build-api-contracts.mjs",
+    "scripts/build-client-contracts.mjs",
+    "scripts/build-regional-contracts.mjs",
+    "scripts/client-pipeline.mjs",
+    "scripts/sync-client-release.mjs",
+    "scripts/sync-document-clients.mjs",
+    "scripts/test-api-base.mjs",
+    "scripts/test-client-ai-contracts.mjs",
+    "scripts/test-client-catalog-sync.mjs",
+    "scripts/test-regional-contracts.mjs",
+    "scripts/test-stable-api-types.mjs"
+  ],
+  "startedAt": "2026-10-30T05:58:11.804Z",
+  "finishedAt": "2026-10-30T06:00:39.202Z",
+  "status": "passed",
+  "publishEvidence": false,
+  "planSha256": "d6f6127bb7f006c8bc80c559c05376d25a7301d22f311b27837c890d63483576",
+  "sourceSha256": "4f33fec3d5b3f8229dad3c899dea5abc0831c612eef8c3cda56a591e90fc55a1",
+  "reusedFrom": null,
+  "artifacts": [
+    {
+      "path": ".runtime/releases/1.2.0-preview.2/desktop/artifacts/LabourLawyer-1.2.0-preview.2-windows-x64-portable.exe",
+      "bytes": 111861281,
+      "sha256": "b5d2c94ed4313fc82e2dd07e795d2e1a3bdb4b8ba9331472eb26483cbee90390",
+      "observedMtimeMs": 1793340034387.8591,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": ".runtime/releases/1.2.0-preview.2/desktop/artifacts/LabourLawyer-1.2.0-preview.2-windows-x64-setup.exe",
+      "bytes": 112097564,
+      "sha256": "6dea6d9d93d4e9cd7ab52309f07472df5e4b1e91ca798b5ba42fae645d5cf6eb",
+      "observedMtimeMs": 1793340026809.737,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/CaseCenter-CcZgFahd.js",
+      "bytes": 6152,
+      "sha256": "12eaa8a2a4ac4b609133fabcb74fdefaacac46d1226b35e6cced031447e1e28e",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/CaseCenter-k06Ulpew.css",
+      "bytes": 4177,
+      "sha256": "f52feef8dfa5c8a3376b35c3d486b296f7e1209042fc876ebeaa63690ffb4ce8",
+      "observedMtimeMs": 1793339910072.698,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/Dashboard-COaoXjJV.css",
+      "bytes": 6160,
+      "sha256": "30ca3e555feba798c0c8a7ba8e301f550456bf490a6b5fa53805ef1574361cc4",
+      "observedMtimeMs": 1793339910072.698,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/Dashboard-Dd9Orddo.js",
+      "bytes": 5387,
+      "sha256": "eac7a754056463dbb399f9bd5a3748cf325886fee7d7910f735951345a4fb7bd",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/DeadlineCenter-BdHDKBVO.js",
+      "bytes": 2695,
+      "sha256": "d4843607f60d8149b7e5aca7b2c82118ee77f9b9351c033316d0f9aafd7c2a7d",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/DeadlineCenter-BTXqgp9I.css",
+      "bytes": 2802,
+      "sha256": "e5973baef4086e71663a3549cf00fcbb8f62703c1341587757ed93317d9f1cf2",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/DigitalLawyer-DZ3JSC0w.css",
+      "bytes": 2600,
+      "sha256": "059a2ca2b67750414c88082cdfe64132e0874ca4a8c61ccbfa29ef007eebb9d0",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/DigitalLawyer-NyYymO6v.js",
+      "bytes": 3796,
+      "sha256": "6624a519dae6405c51540b6c191b1676597f380b25b9464d584da8637bca602a",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/DocumentCenter-CxlL293o.js",
+      "bytes": 11940,
+      "sha256": "a95bb7187be6c99f1db8f1de5c5dddfcf3f2e5c464f766f9eceb5f467badb452",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/DocumentCenter-DNJFW3Nj.css",
+      "bytes": 4902,
+      "sha256": "464c0b4f24cbfdccd7c24e34a09b155b70cc616714bb9771c0519521fb7925c9",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/downloadDocument-R5BWmeFF.js",
+      "bytes": 10358,
+      "sha256": "0f2d99cc0bef154c64c9cb1a3bdcf138ce0ac6e936bd101b923a3f42f022cf37",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/EL-ChHGCnp6.js",
+      "bytes": 12923,
+      "sha256": "c184c4292325c1a1f7df879e621a5a8ef8a07a60d513e62819e1998720e28525",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/EvidenceCenter-BWb-yL2d.js",
+      "bytes": 3852,
+      "sha256": "48e0473e37d4a0795c63f2daab05180a20b2bddcfe6614f75ce6795de6284ba4",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/EvidenceCenter-CiRmgDf4.css",
+      "bytes": 4376,
+      "sha256": "ee4213a7908a7125e1e0e96090aa4e7f169edcd1b610bdd116ac1f94ecab28e8",
+      "observedMtimeMs": 1793339910072.698,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/fa-brands-400-BfBXV7Mm.woff2",
+      "bytes": 101224,
+      "sha256": "061dd5c333459ea42dba764617793fd6ea2d316b7ab644f157e4d2354dac02af",
+      "observedMtimeMs": 1793339910072.698,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/fa-regular-400-BVHPE7da.woff2",
+      "bytes": 18988,
+      "sha256": "81159a6b36876a5545555ae689144f074e2fc802d57d36f2c21bc6f3a12f4e48",
+      "observedMtimeMs": 1793339910072.698,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/fa-solid-900-8GirhLYJ.woff2",
+      "bytes": 113152,
+      "sha256": "bdd7887ef769948024a5cc37a018f19da6a9b355b4a09973836115e0d31ead55",
+      "observedMtimeMs": 1793339910069.102,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/GenerateConfirmation.vue_vue_type_script_setup_true_lang-Cg-Vtx54.js",
+      "bytes": 4442,
+      "sha256": "9c2746e2e03d6486331dc1f80076d0233bc405bdd48aabc633c3855a1b61d51e",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/http-Ce9LsmDF.js",
+      "bytes": 2450,
+      "sha256": "f8a05be1e41719a26be694adbd36e6edbb3f85c46a452b799fc2d55f5deece92",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/index-BCn5QfZZ.js",
+      "bytes": 51442,
+      "sha256": "d940aca1258d91b044056b7af6fb7aaaa08659d1ad1833970834e7403949a86e",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/index-C5o-ibcs.js",
+      "bytes": 9110,
+      "sha256": "f786ea9cd65d0083b96c5c451930423e3bbaa0ffaccd182bed6546f143390641",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/index-CgXE82dE.js",
+      "bytes": 269687,
+      "sha256": "186724e5d8591e8476e630a5973a414ba5533da487cde7571f688b210a5acc5c",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/index-RpckND7m.css",
+      "bytes": 344766,
+      "sha256": "2b2ff97b28ab2482d932fb556363931feb0a88fc648564739b8cc6c1c725a7d5",
+      "observedMtimeMs": 1793339910072.698,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/KnowledgeCenter-4Mb2ZP7W.css",
+      "bytes": 3521,
+      "sha256": "7ca97a751f5e1daee7afd7442b2244d16f243fe7f8f9f62fbf86907138caac17",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/KnowledgeCenter-CQA64lto.js",
+      "bytes": 3575,
+      "sha256": "e8ddd120ee5d71ec8531de810ec5a7c7a00c2502cbaef93ca927ce973709a4d3",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/LA-_s5u7Tp-.js",
+      "bytes": 28147,
+      "sha256": "1a541a29646ce53c1fbaea8286389b11ee5472d7ebfc8b45836c0d06ca3e57d1",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/ProvinceGuide-C_xi19XX.js",
+      "bytes": 98760,
+      "sha256": "2112c2c9ce5c24b37f1942a8f3aa7c0bf0f7be126089c3d8e6fda1b421e3de60",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/ProvinceGuide-CAmMSvvs.css",
+      "bytes": 8248,
+      "sha256": "69f12d11535d58f943d111ce2938388f8c50646cf14b2806a6a6cb74f22b69ce",
+      "observedMtimeMs": 1793339910072.698,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/public-CG3ykuLG.js",
+      "bytes": 6284,
+      "sha256": "082f12e10f4dff6ff93f1aaefbfbcfcfb6fbb888088736e7c420c9c35a7c72ce",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/QA-DiFlTRil.js",
+      "bytes": 77225,
+      "sha256": "7a65a3aa917693d850dcf9dddad59a3d1e1c298527e2e901c464fd5d44ec8784",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/QA-rZ-gNBxk.css",
+      "bytes": 5438,
+      "sha256": "1f19c40f56b0891e895a0a908fc436fd43107a3c17a9437c16c745631b9a6f01",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/regional-guide-BB4QYHCB.js",
+      "bytes": 2812,
+      "sha256": "e92f8c60ee225ead531c8bb845302aeee7d3e9725569c5347b451b811181bbbb",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/regional-guide-DHfXPNpo.css",
+      "bytes": 6746,
+      "sha256": "eeb08691043b7a2088917a16b3e5448e52ed809a804f54b5a324733b967d969b",
+      "observedMtimeMs": 1793339910072.698,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/RegionalCollection-BrxDsPbb.js",
+      "bytes": 54935,
+      "sha256": "c99e0b5dc14785744843774b314bd61be1d85ed2e9f1f3425758952b2132c24c",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/RegionalCollection-CXBk1uu2.css",
+      "bytes": 7051,
+      "sha256": "481579b703340c84e20cfd29fa1498ec2bb43f44a3f996d0a28f0efbb09fab4c",
+      "observedMtimeMs": 1793339910072.698,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/RegionalDocument-Brrhe57k.js",
+      "bytes": 92827,
+      "sha256": "8c0a6b4f21ec3dcc046c5f73cd86e86932c1364be6e5ba1512919ce4cdc70342",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/RegionalDocument-Bvbrumu0.css",
+      "bytes": 10891,
+      "sha256": "4089fcde544901a59d782bcfed1e2effaa69ee848deabb65ddc73ddc12e5f232",
+      "observedMtimeMs": 1793339910072.698,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/RegionalGuide-Bo_5EIFf.js",
+      "bytes": 23512,
+      "sha256": "953bdad40d56e3542f463af0c4f97789f461081a395eb8fa664afc64aaa1afa6",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/RegionalGuide-FGJcOTLl.css",
+      "bytes": 2561,
+      "sha256": "a6f6fc2c2a8d9a9c5cab4be51d46b410c2970982bb3fb08b6c5ff3569d055fd9",
+      "observedMtimeMs": 1793339910072.698,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/useDialogFocus-BpxQIeel.js",
+      "bytes": 1563,
+      "sha256": "57f36b2b0f19b026bab0f9b5f7b55a4e6488799c2f3a60b0316ba7c51e81aefd",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/useWorkspace-ky_u_jVN.js",
+      "bytes": 3152,
+      "sha256": "7c1d1a3c0fbd1a482e6e3f827af128a9d0fa4e6daed3616cd300bd2cc5b437eb",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/web-_oOWxLZp.js",
+      "bytes": 400,
+      "sha256": "c0350a878c599f61119490ecd52d26bdd6a8b62f3e789b26ec3c3e949a01e1bb",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/web-DK-CWTmN.js",
+      "bytes": 8711,
+      "sha256": "73724eabf45ef5597ba840b0f32a01aba0a0357573a429a7e3a6d23fedf8bb6e",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/assets/workspace-dRuy1aNY.js",
+      "bytes": 3477,
+      "sha256": "550b305ec590c324690c860f67f2ba56bc5e5673c0ef9233890fb22df6de1d9e",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/brand/counsel-mark.svg",
+      "bytes": 433,
+      "sha256": "5b97341f6b10f6abb4cfe0efdb1e7a4cc82162d4999a814881f0f11209930612",
+      "observedMtimeMs": 1793191336825.9468,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/brand/counsel-mark.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/brand/labourlawyer-mark.svg",
+      "bytes": 444,
+      "sha256": "bb051fdf0e7e7ecaed11a4f6a20978d422f1277407363a00535ceb5001ba5710",
+      "observedMtimeMs": 1793191336825.9468,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/brand/labourlawyer-mark.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/favicon.svg",
+      "bytes": 444,
+      "sha256": "bb051fdf0e7e7ecaed11a4f6a20978d422f1277407363a00535ceb5001ba5710",
+      "observedMtimeMs": 1793191336826.9475,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/favicon.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/index.html",
+      "bytes": 779,
+      "sha256": "84639767bf887f8d1081e3cdcf55b2945dda83b44fe042986c2fd5b690cb9846",
+      "observedMtimeMs": 1793339910074.1963,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/llms.txt",
+      "bytes": 548,
+      "sha256": "5b05e4d8ab77ab84468447e4d3958b67356c486da6dec1db76f6c955a70fa164",
+      "observedMtimeMs": 1791429883508.0903,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/llms.txt",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/manifest.webmanifest",
+      "bytes": 398,
+      "sha256": "ce526d4989ea674db16016c77962a2bfd5773e4a67f1c7afa3d147cd03e871c6",
+      "observedMtimeMs": 1789552275533.3337,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/manifest.webmanifest",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/anhui.svg",
+      "bytes": 684,
+      "sha256": "0011a35ce2e55df811ac6e69b9305657bf9a7572ba41e3adbcde5b0e7184866c",
+      "observedMtimeMs": 1791280747728.1443,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/anhui.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/beijing.svg",
+      "bytes": 682,
+      "sha256": "ff9848f6ec8aefe886ea23d697fe0bf8b11e5e3700588da2cc96b1c347e486d6",
+      "observedMtimeMs": 1791280747726.2505,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/beijing.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/chongqing.svg",
+      "bytes": 689,
+      "sha256": "d527416861bbfca419ab9709ff7e916fadb43022302dd8ede0172f0b14c57c39",
+      "observedMtimeMs": 1791280747731.156,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/chongqing.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/fujian.svg",
+      "bytes": 703,
+      "sha256": "014b19a8ba3afcad6b18500529e4a1714e3045c4eab2b76becfe34fb01cca6bd",
+      "observedMtimeMs": 1791280747728.965,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/fujian.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/gansu.svg",
+      "bytes": 652,
+      "sha256": "ee5cf810911c4980c93ec5654dd07ebd0c43f0cd51bfff926bd7048171010281",
+      "observedMtimeMs": 1791280747732.3914,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/gansu.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/guangdong.svg",
+      "bytes": 1026,
+      "sha256": "cb42349ba1ff403e6939b6396f90cf87296c483880260ec4e07375b86aef24e6",
+      "observedMtimeMs": 1791280747730.0352,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/guangdong.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/guangxi.svg",
+      "bytes": 617,
+      "sha256": "3c6ae3ce523fcb7458b1991a723ca203c652e4eb1cee4a20687eb7815857771a",
+      "observedMtimeMs": 1791280747730.546,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/guangxi.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/guizhou.svg",
+      "bytes": 714,
+      "sha256": "5d353a99f79bf850bf0a752dba684e933d8cf9552db39bb7b381072075444bac",
+      "observedMtimeMs": 1791280747731.7397,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/guizhou.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/hainan.svg",
+      "bytes": 668,
+      "sha256": "72aac9336b5337d655eb0560a54e9633ac896410842a00378820e6f394fa04c3",
+      "observedMtimeMs": 1791280747730.546,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/hainan.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/hebei.svg",
+      "bytes": 690,
+      "sha256": "97526b568633c4c77b1965c2cb7bae4340d63120c92f57957c9a8f3e72f3f584",
+      "observedMtimeMs": 1791280747726.2505,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/hebei.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/heilongjiang.svg",
+      "bytes": 642,
+      "sha256": "e26a75d5331a3effc311e86cf8325761348adbbbed629b256183e7940c0e78e1",
+      "observedMtimeMs": 1791280747727.602,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/heilongjiang.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/henan.svg",
+      "bytes": 1025,
+      "sha256": "9e2ca463fac196fd4f73fa46ee703d6c1d4a411915a74278882a223033fbea7e",
+      "observedMtimeMs": 1791280747729.487,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/henan.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/hubei.svg",
+      "bytes": 713,
+      "sha256": "3178ec0cd4ae60078ec8828be75b95b063f8512c50fcdf3deb33986a4e2efa34",
+      "observedMtimeMs": 1791280747730.0352,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/hubei.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/hunan.svg",
+      "bytes": 714,
+      "sha256": "683ab5dec2a163b84f41e965c1ebc2a1a890317cedb62f70bc5a7a8552a78ccc",
+      "observedMtimeMs": 1791280747730.0352,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/hunan.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/jiangsu.svg",
+      "bytes": 664,
+      "sha256": "9a47d67d388bfb3ad75b2b578a4415ca955d37b8f577d2255946eaa428f742ca",
+      "observedMtimeMs": 1791280747728.1443,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/jiangsu.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/jiangxi.svg",
+      "bytes": 688,
+      "sha256": "c47629e8dc6039f55b88983e9a0a7c1a9e4cd4eefab7a57bef765d29da6d0716",
+      "observedMtimeMs": 1791280747728.965,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/jiangxi.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/jilin.svg",
+      "bytes": 616,
+      "sha256": "91eb24ca6226676bc7a9e12735bc0bb7ea615ef6c9ab7c67aa6f6941afba7c59",
+      "observedMtimeMs": 1791280747727.602,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/jilin.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/liaoning.svg",
+      "bytes": 682,
+      "sha256": "9fc0714193ef4135aebd2be56e95420b6d6e1ad04e674e7de570496ff0067007",
+      "observedMtimeMs": 1791280747726.2505,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/liaoning.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/neimenggu.svg",
+      "bytes": 644,
+      "sha256": "b993f6d8492f07b3a6941bdeaef7708e656143d3f8ddc8ad71b25b193a0202fb",
+      "observedMtimeMs": 1791280747726.2505,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/neimenggu.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/ningxia.svg",
+      "bytes": 1266,
+      "sha256": "90a03c07818cade09a02b71eeabdce3a9d5fb94119ba0e2452a0c36784697fa5",
+      "observedMtimeMs": 1791280747732.92,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/ningxia.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/qinghai.svg",
+      "bytes": 667,
+      "sha256": "163af8be2ef1de0e992de772ac4a3f7ec03375af01216df2468bc6ab009a55ac",
+      "observedMtimeMs": 1791280747732.3914,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/qinghai.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/shaanxi.svg",
+      "bytes": 683,
+      "sha256": "baefe3995b16f494199dc54ad59db25b6038f6eba2315749ebc42653cfd710a3",
+      "observedMtimeMs": 1791280747731.7397,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/shaanxi.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/shandong.svg",
+      "bytes": 616,
+      "sha256": "542067971f5e32f72ce853e1d859afacb30aeee1a8a1ac7455b9dc89cea566ce",
+      "observedMtimeMs": 1791280747729.487,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/shandong.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/shanghai.svg",
+      "bytes": 666,
+      "sha256": "cad611d350ebe969844499c2311bae63ddfd7b5dc5e55866de7ab231433e40b0",
+      "observedMtimeMs": 1791280747728.1443,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/shanghai.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/shanxi.svg",
+      "bytes": 713,
+      "sha256": "9c11cd03113c1bc1b662ffbf9a2784d60200d65977c8db00e1102d1c43fe8300",
+      "observedMtimeMs": 1791280747726.2505,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/shanxi.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/sichuan.svg",
+      "bytes": 661,
+      "sha256": "af1a48f8a5027e92552431ea6326f0c9aff873c8273e1e1e3d723d4380ab1b19",
+      "observedMtimeMs": 1791280747731.156,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/sichuan.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/tianjin.svg",
+      "bytes": 688,
+      "sha256": "9e0f93f7bfe8b73a4dfa99c86e3cc038bc6dfeff2c33d8a71123ae748b60a0bc",
+      "observedMtimeMs": 1791280747726.2505,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/tianjin.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/xinjiang.svg",
+      "bytes": 713,
+      "sha256": "2a2bf58361c2ae01d37f616d470c5fb32225afa7d39783174e3003f408b7a1ce",
+      "observedMtimeMs": 1791280747732.92,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/xinjiang.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/xizang.svg",
+      "bytes": 683,
+      "sha256": "b0fc72efe37f735a53ecd5f272929bbffd9f55af7b80d0e16b884e891df827dd",
+      "observedMtimeMs": 1791280747731.7397,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/xizang.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/yunnan.svg",
+      "bytes": 1026,
+      "sha256": "63d67cb680d30bd08d948f45a1e7c41f6b4e169309ac525f65636aad35ff90fe",
+      "observedMtimeMs": 1791280747731.7397,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/yunnan.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/province-art/zhejiang.svg",
+      "bytes": 745,
+      "sha256": "6d60dc290b0869edc48f7e1e095f11e181709cd6662dc650bfc4ec77b81cd072",
+      "observedMtimeMs": 1791280747728.1443,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/province-art/zhejiang.svg",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/robots.txt",
+      "bytes": 62,
+      "sha256": "fdcc55b31fb2185e7a564152f3ea0acff27c824300c8f6a1b18646f9fee11bdc",
+      "observedMtimeMs": 1791429456305.3362,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/robots.txt",
+      "reused": false
+    },
+    {
+      "path": "frontend/dist/vite.svg",
+      "bytes": 1497,
+      "sha256": "4a748afd443918bb16591c834c401dae33e87861ab5dbad0811c3a3b4a9214fb",
+      "observedMtimeMs": 1789522669499.0493,
+      "staticCopy": true,
+      "sourcePath": "frontend/public/vite.svg",
+      "reused": false
+    },
+    {
+      "path": "miniprogram/app.js",
+      "bytes": 1085,
+      "sha256": "1449f75d3cdf1dad839b340ff822e412bb78b802cbe1c4554b90da53cf56ceff",
+      "observedMtimeMs": 1793338823057.3286,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/app.json",
+      "bytes": 870,
+      "sha256": "9a7f0a8976846d53fa878e05e685712a0c3d47ca348901f46e8036eb2ef98bea",
+      "observedMtimeMs": 1793294068323.037,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/app.wxss",
+      "bytes": 790,
+      "sha256": "e134366943e1b19d6f6397a70e9f0e46e423a31e02bf3ea1d5d1fc1a46c03cd2",
+      "observedMtimeMs": 1789525591013.6316,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/anhui.png",
+      "bytes": 6632,
+      "sha256": "1595715ef00bf59f0c25538e1b02426aea04f884ed0680810ed2cc046bb6836e",
+      "observedMtimeMs": 1791280749070.2456,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/beijing.png",
+      "bytes": 5366,
+      "sha256": "df42efebeff63320f93a29bb197872c4a2842b783d289fa5591000767df0c6b4",
+      "observedMtimeMs": 1791280749133.3284,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/chongqing.png",
+      "bytes": 6388,
+      "sha256": "49e5bb206a2b4abb93f93f0c29e408ffd05d0e2ac0e9be3d051f2dd6705b3521",
+      "observedMtimeMs": 1791280749184.1675,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/fujian.png",
+      "bytes": 6835,
+      "sha256": "6645c75a5b4c113cea833c78ba2145aef4fcd288504bab2dbc786d6ae9558aa1",
+      "observedMtimeMs": 1791280749221.228,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/gansu.png",
+      "bytes": 6835,
+      "sha256": "7b2dc661b2dd3192dec1f9348b73b4545332095ef4ed9829f9f37e6b8f30151d",
+      "observedMtimeMs": 1791280749275.5823,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/guangdong.png",
+      "bytes": 12321,
+      "sha256": "d0352256b4779861a172093c30d17cb34af59e2732b10e94773d8b6ab0706816",
+      "observedMtimeMs": 1791280749331.7986,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/guangxi.png",
+      "bytes": 7083,
+      "sha256": "d336faba7026ed81155eb1766df5adbddc8405a429e497c599de76a3c5fd48ca",
+      "observedMtimeMs": 1791280749425.227,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/guizhou.png",
+      "bytes": 6233,
+      "sha256": "b3849f426cb14d1388ee4b6af40b670ddf6432279c47d48315143ab4f9e80222",
+      "observedMtimeMs": 1791280749469.7615,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/hainan.png",
+      "bytes": 6781,
+      "sha256": "1d90cfa9e918cd1af6be23a56466d15a3dc67811b2e5c48d07169896aadfd07d",
+      "observedMtimeMs": 1791280749510.6921,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/hebei.png",
+      "bytes": 6674,
+      "sha256": "28066f65fcfb6bb32e9947b94419f517f5df559227b33a4a74cdbbb62e49fd74",
+      "observedMtimeMs": 1791280749551.2556,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/heilongjiang.png",
+      "bytes": 5385,
+      "sha256": "15e1508253631942e2eb8f9c851f07483ba99085435b472bd406032659408195",
+      "observedMtimeMs": 1791280749608.1912,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/henan.png",
+      "bytes": 12348,
+      "sha256": "8946a513fe8cac7170c8c1eae8432bbc7f5e04d8389542b743c94755e3c58194",
+      "observedMtimeMs": 1791280749647.2156,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/hubei.png",
+      "bytes": 6203,
+      "sha256": "6a51538092877dee063b13d6a3d9eef30305eb3b45a53051412fc8c44ed7ff36",
+      "observedMtimeMs": 1791280749681.8447,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/hunan.png",
+      "bytes": 6245,
+      "sha256": "2c8e315f301241787010e7046287543110c6f1096ad8554343a451a814c6a6b9",
+      "observedMtimeMs": 1791280749731.6858,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/jiangsu.png",
+      "bytes": 6407,
+      "sha256": "fc53b4830686ab7385d3f0a70bca238b949c430db0b57718fd0a0cb55d4e1ce3",
+      "observedMtimeMs": 1791280749775.1062,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/jiangxi.png",
+      "bytes": 6993,
+      "sha256": "202be788d232a614f4e6275c8e4c3585b20cbe38697be8303b1b9dba7947673d",
+      "observedMtimeMs": 1791280749817.0168,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/jilin.png",
+      "bytes": 7214,
+      "sha256": "12afd32eb5f1a3264c378d56092c878bafcf02f922d62e2dd4836eb29e13584c",
+      "observedMtimeMs": 1791280749871.0764,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/liaoning.png",
+      "bytes": 5264,
+      "sha256": "0cd47b92269156938fd9fc0f157816fbf398944503bd5f277ee5814f34f68f33",
+      "observedMtimeMs": 1791280749962.4119,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/neimenggu.png",
+      "bytes": 5690,
+      "sha256": "b5ca4aaefe1f8e4788e50edcf338cb7fbdccfc96353872220bebe12526127674",
+      "observedMtimeMs": 1791280749996.4412,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/ningxia.png",
+      "bytes": 13956,
+      "sha256": "da6f8808d357e34b58021f6c9ad0177e632feae72cc5eda19810afa6814e0d26",
+      "observedMtimeMs": 1791280750029.2046,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/qinghai.png",
+      "bytes": 6878,
+      "sha256": "228a464f0f7f4b5453964f4d386a3d2d9e9b0119176803c47700ffad8956b786",
+      "observedMtimeMs": 1791280750083.771,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/shaanxi.png",
+      "bytes": 5339,
+      "sha256": "05a14e1445cfd12ea34c9edf2fc4242e3745d308c29aa31ce95b878d27ac1cdf",
+      "observedMtimeMs": 1791280750116.8977,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/shandong.png",
+      "bytes": 7580,
+      "sha256": "a15864b1a1873e3b2ed3fab8913482dce5193540492e18dd8e1920cc0e28a8cc",
+      "observedMtimeMs": 1791280750161.1416,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/shanghai.png",
+      "bytes": 5760,
+      "sha256": "bbf7d5e45a24a2499f4cb51f25f33c4d0d06f003fc85ac617d0534f4158b045d",
+      "observedMtimeMs": 1791280750188.4124,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/shanxi.png",
+      "bytes": 6197,
+      "sha256": "11364c9e83d8ca9c54789c302bb191e90450bc21905c504d7f3a2ff5e1e6da14",
+      "observedMtimeMs": 1791280750226.7524,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/sichuan.png",
+      "bytes": 6465,
+      "sha256": "a502a5ae1fa8a959b45b16ee33145af83806f1716ba76db04e3579f8ac7d888e",
+      "observedMtimeMs": 1791280750268.7888,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/tianjin.png",
+      "bytes": 6360,
+      "sha256": "58ef061101faf8720d89e9fa7bce6d0097a62b6e0bd687c05e6edac56f7924a1",
+      "observedMtimeMs": 1791280750331.2285,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/xinjiang.png",
+      "bytes": 8713,
+      "sha256": "8ee35185d03f0a9d6c00b33d4ae0b815260179c88bac2675ac0fac91ef35ebc7",
+      "observedMtimeMs": 1791280750377.8562,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/xizang.png",
+      "bytes": 5323,
+      "sha256": "a50e888b1462df62ccc5c10e658961523a2cd8ff9388d6063ac95bc4a314d914",
+      "observedMtimeMs": 1791280750410.553,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/yunnan.png",
+      "bytes": 12349,
+      "sha256": "477c2aa5e87132bb0570832e8c906b55f528d20ff281a1c71c9d1884901cf4b2",
+      "observedMtimeMs": 1791280750442.5303,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/assets/province-art/zhejiang.png",
+      "bytes": 8247,
+      "sha256": "95ae3efb78f9cdb4356c87284d0aff62392fabc8b276f6e13022c538a8cac8dd",
+      "observedMtimeMs": 1791280750474.8186,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/data/documentForms.js",
+      "bytes": 26174,
+      "sha256": "670d01bc72e67060d69c4e694522faafd866862e82f7079b1bf49a8a566fed9b",
+      "observedMtimeMs": 1793292296693.061,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/data/documentForms.json",
+      "bytes": 26081,
+      "sha256": "b9f69fdac3ccaf6e5cb0d9398fd39e987c3694159ebc2f8f478b8c2c2c7b6632",
+      "observedMtimeMs": 1791350402034.641,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/data/provinceExperiences.js",
+      "bytes": 111062,
+      "sha256": "46fb0618d67ff9f863d1c826a36932f0b5b7e0f93d489916f93d13e46bb2ae7c",
+      "observedMtimeMs": 1793292296696.3625,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/data/provinceExperiences.json",
+      "bytes": 113252,
+      "sha256": "9814082b5a33404c0a699abb38c4c7a1e895f243f4f45f7326ea31777ce6d147",
+      "observedMtimeMs": 1791362764074.9258,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/data/provinces.js",
+      "bytes": 216704,
+      "sha256": "384045d667593b3b5cffde66f9aa5f7e3f5db549b9a155cd552c9c0edf5db115",
+      "observedMtimeMs": 1793292296690.4275,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/data/provinces.json",
+      "bytes": 216615,
+      "sha256": "d6cdb5c55ef4dbabc815b5ba7a98780ab55380b6b97d6884851bc80feffb1395",
+      "observedMtimeMs": 1791350402037.0215,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/assistant/index.js",
+      "bytes": 2084,
+      "sha256": "4a8695bf69d995fe3658abbd5ded41b981e05bbff71c52c51b85dc8e99248d29",
+      "observedMtimeMs": 1793338823068.482,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/assistant/index.json",
+      "bytes": 54,
+      "sha256": "3e8b48cb6ad6e966533c59e118917ffb66c902f182618bf6b0213ec525239bed",
+      "observedMtimeMs": 1789525659024.6477,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/assistant/index.wxml",
+      "bytes": 910,
+      "sha256": "6174c53f7110fac7d05cf65e585e073ce7c8a4dd30b74ff435a46f9fbbf17c94",
+      "observedMtimeMs": 1789525659026.1638,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/assistant/index.wxss",
+      "bytes": 1326,
+      "sha256": "237256728a8257cb40b430fd7cb187e33bdd3ee06bd7344311084953e6cdf169",
+      "observedMtimeMs": 1789525659026.1638,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/cases/index.js",
+      "bytes": 1298,
+      "sha256": "4467c75be4f2dd4fa6f60e19e0d3b1e0b879d817693ba3ddd9145e6793a5a9f4",
+      "observedMtimeMs": 1793338823078.6921,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/cases/index.json",
+      "bytes": 45,
+      "sha256": "db8f2648b891d2a8e961d27b8c6994845c27946f7d45f275ad5ebf9637cf2718",
+      "observedMtimeMs": 1789525659021.9775,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/cases/index.wxml",
+      "bytes": 1576,
+      "sha256": "aa7a85722d3e1453050cfb11796528d32322e9717c43e6d5598d0f2fa65593c7",
+      "observedMtimeMs": 1789525659022.9849,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/cases/index.wxss",
+      "bytes": 1568,
+      "sha256": "aed7c4891e86d0af4a9146b61d49009badb5bd3e63f0e5f2f8f1f2d82899be81",
+      "observedMtimeMs": 1789525659022.9849,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/dashboard/index.js",
+      "bytes": 1090,
+      "sha256": "5b87f353018368f04ccfaff5be2110d1cbdb329edd0b4d1f91d492e80858a3ac",
+      "observedMtimeMs": 1793338823083.569,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/dashboard/index.json",
+      "bytes": 51,
+      "sha256": "87b2065a89a2843c92cf20a49579481f3a916a740505dab0639a6aaf6e21af2b",
+      "observedMtimeMs": 1789532068531.0293,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/dashboard/index.wxml",
+      "bytes": 1891,
+      "sha256": "75811574dc4c5602237e30fadf66b7a72bd5d81888b36c7c07f9b829c8314a23",
+      "observedMtimeMs": 1789532109313.924,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/dashboard/index.wxss",
+      "bytes": 2228,
+      "sha256": "3ddc8dc01d8224878d5bd1785025d293bc7060443bac45758d6a9a02ee285c9d",
+      "observedMtimeMs": 1789532109315.4104,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/document/index.js",
+      "bytes": 7649,
+      "sha256": "c785b90d74cf3549184252b5e17e448b87e0810e4b957d46dfda0b22da6e665b",
+      "observedMtimeMs": 1793338823098.513,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/document/index.json",
+      "bytes": 54,
+      "sha256": "306a475313b26b420ad489c95ec3656b5a2fb006549a5a22ac1fba6e8b3b229c",
+      "observedMtimeMs": 1791278083473.3064,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/document/index.wxml",
+      "bytes": 4054,
+      "sha256": "7fcecbbf54e471f823c9a46733e617dfcb4ada53ff2c193cc8ed039782a878a3",
+      "observedMtimeMs": 1791278083474.8154,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/document/index.wxss",
+      "bytes": 734,
+      "sha256": "b41e7ee2a7d072fcaef6a93295c7a85ad6ba4f9ddad3eb8f9c6640075e4a7341",
+      "observedMtimeMs": 1791278083474.8154,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/profile/index.js",
+      "bytes": 646,
+      "sha256": "232a5217088c0999c387d2a163ac31a82a6642e4808c264592064d0941d66d73",
+      "observedMtimeMs": 1793338823100.5115,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/profile/index.json",
+      "bytes": 51,
+      "sha256": "e75b824165548746f48b0ab6128387b98d3cd383a48d2add4f180a62cfe9d0b3",
+      "observedMtimeMs": 1789525659027.1716,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/profile/index.wxml",
+      "bytes": 951,
+      "sha256": "b00401d2f03c34502e284d9d4409645a28861f5d5250c9c9babf81e067a4500c",
+      "observedMtimeMs": 1789552388752.3933,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/profile/index.wxss",
+      "bytes": 1000,
+      "sha256": "bd06168eabc235f3826abdb1d1d6b1b44b117d33f2b1211b60cdb6c7a9f410ff",
+      "observedMtimeMs": 1789525659030.021,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/province/index.js",
+      "bytes": 4905,
+      "sha256": "7a0ead0adfb2cb8a110d70b8e0a488420819ef83324fb6484c55d4a36d3ec46c",
+      "observedMtimeMs": 1793338823108.3662,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/province/index.json",
+      "bytes": 51,
+      "sha256": "2ad693842bddf79169017fabe691d0503ca0c9ebb57a4484e901a0bd05e3bd23",
+      "observedMtimeMs": 1789532178066.6157,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/province/index.wxml",
+      "bytes": 3825,
+      "sha256": "65b2a3f82de7a304537449e8fba4a774ce59b69ca0f84f3ea9629935741f894b",
+      "observedMtimeMs": 1793290800285.0647,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/province/index.wxss",
+      "bytes": 4117,
+      "sha256": "c178091f679bc3a0b649e8e9f07a77bc0ab84f7e7c6d1b1bc310259a9d91349b",
+      "observedMtimeMs": 1791281157786.1416,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/regional/index.js",
+      "bytes": 24948,
+      "sha256": "fdc25d5c44e0cce980afbebcfcf5aeb2288765fb8fbbdbe7a603fb89fa22de21",
+      "observedMtimeMs": 1793338823135.4028,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/regional/index.json",
+      "bytes": 57,
+      "sha256": "1ee42e3a6380b963a1d71c7267e3979a7dcd2073e02e3209df822d5462c42a1c",
+      "observedMtimeMs": 1793290800279.114,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/regional/index.wxml",
+      "bytes": 7037,
+      "sha256": "d56ff9a6abf1fe6a52773c30e3d07d6881ff5a55e66d04aee666b85d4998ec63",
+      "observedMtimeMs": 1793290919951.7656,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/pages/regional/index.wxss",
+      "bytes": 1647,
+      "sha256": "c8a0c844393620022f423b7c0867a82aa4a1601641dd74bd7e4b5428a79ef50a",
+      "observedMtimeMs": 1793290800281.5198,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/sitemap.json",
+      "bytes": 53,
+      "sha256": "5af2e5f0b9f956776ee88705692efc9d83aaee070fd7a4cfa1326a70b846667b",
+      "observedMtimeMs": 1789525591011.6304,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/utils/documents.js",
+      "bytes": 5263,
+      "sha256": "fea49bdb43f0d8d89aa3003d4886ed9491528fc9843c2afff9a07f1c462b4bb7",
+      "observedMtimeMs": 1793338823144.4084,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/utils/generated/client-contracts.js",
+      "bytes": 4400,
+      "sha256": "64a41be0210ce2863dbcd524e9afbdeeafcd7a9a349c4fc7d5c069baaa78748c",
+      "observedMtimeMs": 1793339439683.2517,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/utils/generated/document-contracts.js",
+      "bytes": 2742,
+      "sha256": "fab6eb5bc5fcfdd3626f11a3aa53d0d08c61d626680747600ab594036846d2ac",
+      "observedMtimeMs": 1793339439708.0605,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/utils/generated/regional-contracts.js",
+      "bytes": 16445,
+      "sha256": "ffcd1acd2045296af7f0571464c010ec70c39ef454456a253b13bb3d3b6220f8",
+      "observedMtimeMs": 1793335755350.0159,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/utils/generated/release-info.js",
+      "bytes": 135,
+      "sha256": "56b3beb5b4c6df6ecb6e660038a5dadd00d34b3f2e70e7ef50d968584d69d0d8",
+      "observedMtimeMs": 1793338727664.1199,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "miniprogram/utils/regionalTransport.js",
+      "bytes": 4925,
+      "sha256": "eb84af76a0bf2e654644c91cbf98f2851a7e2c5507c95cbfb0b997e96c2b4de8",
+      "observedMtimeMs": 1793338823160.9214,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    },
+    {
+      "path": "mobile/android/app/build/outputs/apk/debug/app-debug.apk",
+      "bytes": 4901232,
+      "sha256": "1f0246a634933af3711af2ff90d1a67757b6f3f11a7d1dd8e37cf4de9916c03e",
+      "observedMtimeMs": 1793339960346.0525,
+      "staticCopy": false,
+      "sourcePath": null,
+      "reused": false
+    }
+  ],
+  "steps": [
+    {
+      "id": "release:metadata",
+      "deps": [],
+      "command": {
+        "bin": "node",
+        "args": [
+          "scripts/sync-client-release.mjs",
+          "--check"
+        ],
+        "cwd": "."
+      },
+      "artifacts": [],
+      "status": "passed",
+      "exitCode": 0,
+      "signal": null,
+      "startedAt": "2026-10-30T05:58:13.198Z",
+      "finishedAt": "2026-10-30T05:58:13.259Z"
+    },
+    {
+      "id": "contracts:api",
+      "deps": [],
+      "command": {
+        "bin": "node",
+        "args": [
+          "scripts/build-api-contracts.mjs",
+          "--check"
+        ],
+        "cwd": "."
+      },
+      "artifacts": [],
+      "status": "passed",
+      "exitCode": 0,
+      "signal": null,
+      "startedAt": "2026-10-30T05:58:13.259Z",
+      "finishedAt": "2026-10-30T05:58:14.761Z"
+    },
+    {
+      "id": "contracts:api-test",
+      "deps": [
+        "contracts:api"
+      ],
+      "command": {
+        "bin": "node",
+        "args": [
+          "scripts/test-stable-api-types.mjs"
+        ],
+        "cwd": "."
+      },
+      "artifacts": [],
+      "status": "passed",
+      "exitCode": 0,
+      "signal": null,
+      "startedAt": "2026-10-30T05:58:14.761Z",
+      "finishedAt": "2026-10-30T05:58:18.297Z"
+    },
+    {
+      "id": "contracts:catalog-test",
+      "deps": [
+        "contracts:api"
+      ],
+      "command": {
+        "bin": "node",
+        "args": [
+          "scripts/test-client-catalog-sync.mjs"
+        ],
+        "cwd": "."
+      },
+      "artifacts": [],
+      "status": "passed",
+      "exitCode": 0,
+      "signal": null,
+      "startedAt": "2026-10-30T05:58:18.298Z",
+      "finishedAt": "2026-10-30T05:58:18.577Z"
+    },
+    {
+      "id": "contracts:client",
+      "deps": [],
+      "command": {
+        "bin": "node",
+        "args": [
+          "scripts/build-client-contracts.mjs",
+          "--check"
+        ],
+        "cwd": "."
+      },
+      "artifacts": [],
+      "status": "passed",
+      "exitCode": 0,
+      "signal": null,
+      "startedAt": "2026-10-30T05:58:18.577Z",
+      "finishedAt": "2026-10-30T05:58:19.220Z"
+    },
+    {
+      "id": "contracts:base-test",
+      "deps": [
+        "contracts:client"
+      ],
+      "command": {
+        "bin": "node",
+        "args": [
+          "scripts/test-api-base.mjs"
+        ],
+        "cwd": "."
+      },
+      "artifacts": [],
+      "status": "passed",
+      "exitCode": 0,
+      "signal": null,
+      "startedAt": "2026-10-30T05:58:19.221Z",
+      "finishedAt": "2026-10-30T05:58:19.464Z"
+    },
+    {
+      "id": "contracts:regional",
+      "deps": [],
+      "command": {
+        "bin": "node",
+        "args": [
+          "scripts/build-regional-contracts.mjs",
+          "--check"
+        ],
+        "cwd": "."
+      },
+      "artifacts": [],
+      "status": "passed",
+      "exitCode": 0,
+      "signal": null,
+      "startedAt": "2026-10-30T05:58:19.465Z",
+      "finishedAt": "2026-10-30T05:58:19.715Z"
+    },
+    {
+      "id": "contracts:ai-test",
+      "deps": [
+        "contracts:client"
+      ],
+      "command": {
+        "bin": "node",
+        "args": [
+          "scripts/test-client-ai-contracts.mjs"
+        ],
+        "cwd": "."
+      },
+      "artifacts": [],
+      "status": "passed",
+      "exitCode": 0,
+      "signal": null,
+      "startedAt": "2026-10-30T05:58:19.715Z",
+      "finishedAt": "2026-10-30T05:58:19.799Z"
+    },
+    {
+      "id": "contracts:regional-test",
+      "deps": [
+        "contracts:regional"
+      ],
+      "command": {
+        "bin": "node",
+        "args": [
+          "scripts/test-regional-contracts.mjs"
+        ],
+        "cwd": "."
+      },
+      "artifacts": [],
+      "status": "passed",
+      "exitCode": 0,
+      "signal": null,
+      "startedAt": "2026-10-30T05:58:19.800Z",
+      "finishedAt": "2026-10-30T05:58:19.895Z"
+    },
+    {
+      "id": "shared",
+      "deps": [
+        "release:metadata",
+        "contracts:api-test",
+        "contracts:catalog-test",
+        "contracts:base-test",
+        "contracts:api",
+        "contracts:regional",
+        "contracts:client",
+        "contracts:ai-test",
+        "contracts:regional-test"
+      ],
+      "command": null,
+      "artifacts": [],
+      "status": "passed",
+      "exitCode": null,
+      "signal": null,
+      "startedAt": "2026-10-30T05:58:19.895Z",
+      "finishedAt": "2026-10-30T05:58:19.895Z"
+    },
+    {
+      "id": "web:check",
+      "deps": [
+        "shared"
+      ],
+      "command": {
+        "bin": "npm",
+        "args": [
+          "run",
+          "typecheck"
+        ],
+        "cwd": "frontend"
+      },
+      "artifacts": [],
+      "status": "passed",
+      "exitCode": 0,
+      "signal": null,
+      "startedAt": "2026-10-30T05:58:19.896Z",
+      "finishedAt": "2026-10-30T05:58:23.155Z"
+    },
+    {
+      "id": "android:check",
+      "deps": [
+        "web:check"
+      ],
+      "command": null,
+      "artifacts": [],
+      "status": "passed",
+      "exitCode": null,
+      "signal": null,
+      "startedAt": "2026-10-30T05:58:23.156Z",
+      "finishedAt": "2026-10-30T05:58:23.156Z"
+    },
+    {
+      "id": "android:build",
+      "deps": [
+        "android:check"
+      ],
+      "command": {
+        "bin": "npm",
+        "args": [
+          "--ignore-scripts",
+          "run",
+          "android:apk"
+        ],
+        "cwd": "mobile"
+      },
+      "artifacts": [
+        {
+          "path": "frontend/dist",
+          "fresh": true,
+          "staticRoot": "frontend/public",
+          "required": [
+            "index.html"
+          ]
+        },
+        {
+          "path": "mobile/android/app/build/outputs/apk/debug/app-debug.apk",
+          "fresh": true
+        }
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "signal": null,
+      "startedAt": "2026-10-30T05:58:23.156Z",
+      "finishedAt": "2026-10-30T05:59:20.822Z"
+    },
+    {
+      "id": "web:build",
+      "deps": [
+        "android:build"
+      ],
+      "command": null,
+      "artifacts": [],
+      "status": "passed",
+      "exitCode": null,
+      "signal": null,
+      "startedAt": "2026-10-30T05:59:20.822Z",
+      "finishedAt": "2026-10-30T05:59:20.823Z"
+    },
+    {
+      "id": "mini:check",
+      "deps": [
+        "shared"
+      ],
+      "command": {
+        "bin": "npm",
+        "args": [
+          "run",
+          "test"
+        ],
+        "cwd": "miniprogram"
+      },
+      "artifacts": [],
+      "status": "passed",
+      "exitCode": 0,
+      "signal": null,
+      "startedAt": "2026-10-30T05:59:20.823Z",
+      "finishedAt": "2026-10-30T05:59:23.575Z"
+    },
+    {
+      "id": "mini:build",
+      "deps": [
+        "mini:check"
+      ],
+      "command": {
+        "bin": "npm",
+        "args": [
+          "run",
+          "build"
+        ],
+        "cwd": "miniprogram"
+      },
+      "artifacts": [
+        {
+          "path": "miniprogram",
+          "kind": "mini",
+          "fresh": false,
+          "required": [
+            "app.js",
+            "app.json",
+            "app.wxss"
+          ]
+        }
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "signal": null,
+      "startedAt": "2026-10-30T05:59:23.575Z",
+      "finishedAt": "2026-10-30T05:59:25.236Z"
+    },
+    {
+      "id": "desktop:check",
+      "deps": [
+        "web:check"
+      ],
+      "command": {
+        "bin": "npm",
+        "args": [
+          "run",
+          "test"
+        ],
+        "cwd": "desktop"
+      },
+      "artifacts": [],
+      "status": "passed",
+      "exitCode": 0,
+      "signal": null,
+      "startedAt": "2026-10-30T05:59:25.237Z",
+      "finishedAt": "2026-10-30T05:59:25.612Z"
+    },
+    {
+      "id": "desktop:build",
+      "deps": [
+        "desktop:check"
+      ],
+      "command": {
+        "bin": "npm",
+        "args": [
+          "run",
+          "dist"
+        ],
+        "cwd": "desktop"
+      },
+      "artifacts": [
+        {
+          "path": ".runtime/releases/1.2.0-preview.2/desktop/artifacts/LabourLawyer-1.2.0-preview.2-windows-x64-setup.exe",
+          "fresh": true
+        },
+        {
+          "path": ".runtime/releases/1.2.0-preview.2/desktop/artifacts/LabourLawyer-1.2.0-preview.2-windows-x64-portable.exe",
+          "fresh": true
+        }
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "signal": null,
+      "startedAt": "2026-10-30T05:59:25.613Z",
+      "finishedAt": "2026-10-30T06:00:36.886Z"
+    }
+  ]
+}

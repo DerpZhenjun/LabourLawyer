@@ -12,9 +12,9 @@
 
 ## 软件下载（预览版）
 
-[下载新版 Android：v1.2.0-preview.1](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.1) · [Windows 预览版：v1.1.0-preview.2](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.1.0-preview.2)
+[下载 Android / Windows：v1.2.0-preview.2](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.2)
 
-新版 Android APK 包含本轮 TypeScript 页面与区县表单，为 USB 联调包，签名与旧预览版相同。Windows 仍为上一版安装版和便携版，**后端和官方模板库仍需按本文启动**，AI连接Ubuntu Qwen3.8，不在Windows运行模型。它们不能单独离线生成文书，也不表示全国区县已经接入完成。下载后可用同页`SHA256SUMS.txt`核对文件；详细步骤和实际测试范围见 [Android 新版说明](docs/releases/v1.2.0-preview.1.md)；本轮 USB 设备列表为空，未声称已覆盖安装或完成手机真机验收。
+新版提供 Android USB 联调 APK、Windows x64 安装版和便携版。**后端和官方模板库仍需按本文启动**，AI 连接 Ubuntu Qwen3.8，不在 Windows 运行模型；不能单独离线生成文书，也不表示全国区县已全部接入。下载后用同页 `SHA256SUMS.txt` 核对；详细步骤和实际验收范围见 [新版说明](docs/releases/v1.2.0-preview.2.md)。本轮 USB 列表为空，未声称已更新手机应用；Windows 为未代码签名预览版。
 
 ## 从填写到提交
 
@@ -164,7 +164,13 @@ npm run dev -- --host 127.0.0.1
 
 保留必要的 JavaScript 兼容入口和静态 JSON，后台仍使用 Python；本轮没有增加全国覆盖数。新版 APK 和实际测试见 [本轮验收](reports/typescript-frontends-release-20261030/TEST-REPORT.md)。开发、同步和测试命令见 [共享契约说明](docs/typescript-regional-contracts.md)，实测结果见 [本轮验收](reports/typescript-regional-contracts-20261030/TEST-REPORT.md)。
 
-小程序的 7 个页面、应用入口与两个业务工具也已迁入 TypeScript，保留自动生成的微信 JavaScript；严格检查会拒绝产物漂移。网页最后一个旧业务辅助模块完成迁移，三端继续使用同源请求和字段契约。7 页真实模拟器、两份实际 Word 和 34 类旧请求 SHA 对照通过。本轮构建的 83 个网页运行资源与现有 Android 1.2.0-preview.1 完全相同，无需重复发行同一安装包。[本轮小程序迁移验收](reports/miniprogram-typescript-20261030/TEST-REPORT.md)
+小程序的 7 个页面、应用入口与两个业务工具也已迁入 TypeScript，保留自动生成的微信 JavaScript；严格检查会拒绝产物漂移。网页最后一个旧业务辅助模块完成迁移，三端继续使用同源请求和字段契约。7 页真实模拟器、两份实际 Word 和 34 类旧请求 SHA 对照通过。上一轮仅小程序迁移时，83 个网页运行资源与 Android 1.2.0-preview.1 相同；本轮接口与构建改进已另发 1.2.0-preview.2。[本轮小程序迁移验收](reports/miniprogram-typescript-20261030/TEST-REPORT.md)
+
+## 接口类型与构建发布
+
+六个稳定接口路径由实际 FastAPI/Pydantic 离线生成 OpenAPI、TypeScript 和请求约束，三端共享；区县动态填写继续使用各地模板契约。统一地区、来源版本和唯一模板校验，保留既有请求兼容。单一版本配置驱动 Android、网页、小程序和 Windows；构建回执校验源码与制品 SHA，失败、过期或漂移产物不能进入发布准备。
+
+使用方法见 [接口与构建说明](docs/api-contracts-build.md)、[脚本入口](scripts/README.md)，实际四端构建、726 项后端回归及下载验收见 [本轮记录](reports/api-contracts-pipeline-20261030/TEST-REPORT.md)。自动生成当前仅覆盖上述稳定路径，尚未覆盖所有管理接口。
 
 ## 开发与验证
 

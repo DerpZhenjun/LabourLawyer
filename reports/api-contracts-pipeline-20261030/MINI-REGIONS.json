@@ -1,0 +1,27 @@
+{
+  "status": "PASS_REAL_SIMULATOR_REGION_RETRY",
+  "items": [
+    {
+      "name": "富阳区",
+      "available": true,
+      "source_id": "16f67bbbcf7b124948381309",
+      "contract_source": "16f67bbbcf7b124948381309",
+      "fields": 24
+    },
+    {
+      "name": "建德市",
+      "available": true,
+      "source_id": "f6487b8d118bdc3289baad17",
+      "contract_source": "f6487b8d118bdc3289baad17",
+      "fields": 24
+    },
+    {
+      "name": "桐庐县",
+      "available": false,
+      "source_id": null,
+      "fields": 0
+    }
+  ],
+  "model_calls": false,
+  "published": false
+}

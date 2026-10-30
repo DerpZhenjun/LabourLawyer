@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-30",
+  "phase": "tested-source-committed-release-pending",
+  "source_commit": "7fff8b19",
+  "version": "1.2.0-preview.2",
+  "backend_tests": {
+    "total": 726,
+    "passed": 724,
+    "skipped": 2
+  },
+  "pipeline_tests": 18,
+  "real_builds": [
+    "web",
+    "mini",
+    "android",
+    "desktop"
+  ],
+  "stable_paths": 6,
+  "regional_guides": 202,
+  "generatable_regions": 185,
+  "windows_model_started": false,
+  "inference": false,
+  "physical_device_installed": false,
+  "publication": "PENDING",
+  "do_not_rebuild_database": true
+}
