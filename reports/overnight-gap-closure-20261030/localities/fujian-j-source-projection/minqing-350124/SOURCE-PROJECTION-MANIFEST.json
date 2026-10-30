@@ -1,0 +1,91 @@
+{
+  "province": "fujian",
+  "city": "福州市",
+  "district": "闽清县",
+  "region_code": "350124",
+  "source_id": "4d74f378197bace2e63b05e9",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=8145FB57E5488D9301D1A44B780F0AE7&infoType=1",
+  "service_code": "11350124003659775T400201430200202",
+  "authority": "闽清县人力资源和社会保障局",
+  "derived_sanitized_projection": true,
+  "parent_source_freeze_sha256": "198ea6dd2a4c0cbf55f2b635a022cfea51795ee66a3d8fa20fa073e6cd31de2a",
+  "raw_api_response_included": false,
+  "raw_parent_is_runtime_dependency": false,
+  "can_generate": false,
+  "published": false,
+  "stage_approval": false,
+  "publication_approval": false,
+  "guide_status": "partial",
+  "committee_full_name": null,
+  "copy_literals": [
+    "原件份数2份",
+    "原件份数2份",
+    "复印件份数2份"
+  ],
+  "allowed_kinds": [
+    "application",
+    "evidence"
+  ],
+  "files": {
+    "evidence-list-own-sample-public-retrieval.docx": {
+      "bytes": 18300,
+      "sha256": "7222e116960019a3b9072b36475f8736392471567f760763a50be941786a940d"
+    },
+    "evidence-list-own-format-public-retrieval.docx": {
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    "evidence-material-own-format-public-retrieval.docx": {
+      "bytes": 17288,
+      "sha256": "31b98bc4a0ac254e1d819aed66f9d1d211c1aca3b3feea8c258c79a88b2a926e"
+    },
+    "evidence-material-own-sample-public-retrieval.docx": {
+      "bytes": 17288,
+      "sha256": "31b98bc4a0ac254e1d819aed66f9d1d211c1aca3b3feea8c258c79a88b2a926e"
+    },
+    "application-own-format-public-retrieval.docx": {
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    "application-own-sample-public-retrieval.docx": {
+      "bytes": 14508,
+      "sha256": "0e12ef5b38621fdf5e66fe8fe4aa20bf009fc94b9608971ff0eabd7a1ec0c378"
+    },
+    "own-guide-native-dom.json": {
+      "bytes": 35550,
+      "sha256": "fb8a831366ab5e9cb9d2200c9d91daa3a12f0893657a11690f90361f07e2320e"
+    },
+    "api-own-attachment-metadata.json": {
+      "bytes": 1954,
+      "sha256": "5cd9219602be68f4ec4e288845a6bd19c422b92b2e5ee1af0657f811de91c52f"
+    },
+    "own-official-bindings.json": {
+      "bytes": 6036,
+      "sha256": "197937339e53e821c31ea4ad550e8b2962f6046708f56f331c29d972335b4e10"
+    },
+    "material-statements.json": {
+      "bytes": 3619,
+      "sha256": "32e5cb85895daf4d71d216e64aeda8824b5f2471bf9808c675a4e3203dafd05f"
+    },
+    "online-boundary.json": {
+      "bytes": 622,
+      "sha256": "5b2d08f5ab2bcb109ef948e201083ee2fe9914d38f1bf160856f7a914a40250b"
+    },
+    "boundary-qualification.json": {
+      "bytes": 676,
+      "sha256": "a9119f94da04604964835e3b83e2009026fc3a24e71d954a186482aeb4796600"
+    },
+    "type-content-qualification.json": {
+      "bytes": 309,
+      "sha256": "92122a5189cb9e20c3986d7a961b610340de34207df5c4fc510e7c9d2d579f08"
+    },
+    "native-discovery-path.json": {
+      "bytes": 838,
+      "sha256": "303fdff9290471fa9f114e693765b4f0abdee22fe3d61feea23fc67392aec289"
+    },
+    "SOURCE-QUALIFICATIONS.json": {
+      "bytes": 3124,
+      "sha256": "6279d2d70e3cbc88616dbcda524d35ed3a564c0ac94eab7e22c3e7e10f839631"
+    }
+  }
+}

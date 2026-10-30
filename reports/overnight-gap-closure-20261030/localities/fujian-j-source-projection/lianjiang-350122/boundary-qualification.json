@@ -1,0 +1,14 @@
+{
+  "region_code": "350122",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=0AB23B595298D2754FC2B46E318C32FB&infoType=1",
+  "observed_title": "福建省智慧调解仲裁平台",
+  "observed_host": "fjzc.fjzhkj.cn",
+  "boundary_kind": "Minzhengtong_APP_scan_login_required",
+  "parent_source_freeze_sha256": "5384827484043c9b7919068c2aaaf3374d197b007e898852c1ac205df2a889dc",
+  "parent_boundary_sha256": "3e6c782a9e3e96d5ee25719b6ea95b89c86a16062a0d375e8198f21a41a2014a",
+  "actual_iam_qualification_applied": false,
+  "parent_iam_qualification_sha256": null,
+  "login_attempted": false,
+  "qr_scanned": false,
+  "application_submitted": false
+}

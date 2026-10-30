@@ -1,0 +1,64 @@
+{
+  "region_code": "350124",
+  "source_id": "4d74f378197bace2e63b05e9",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=8145FB57E5488D9301D1A44B780F0AE7&infoType=1",
+  "guide_status": "partial",
+  "committee_full_name": null,
+  "committee_autofill_allowed": false,
+  "copy_literals": [
+    "原件份数2份",
+    "原件份数2份",
+    "复印件份数2份"
+  ],
+  "field_literals": {
+    "法定时限": {
+      "raw_value": "受理后5个工作日",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=8145FB57E5488D9301D1A44B780F0AE7&infoType=1",
+      "capture_file": "own-guide-native-dom.json",
+      "capture_sha256": "fb8a831366ab5e9cb9d2200c9d91daa3a12f0893657a11690f90361f07e2320e",
+      "captured_at": "2026-10-30T19:15:45.955Z"
+    },
+    "承诺时限": {
+      "raw_value": "受理后5个工作日",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=8145FB57E5488D9301D1A44B780F0AE7&infoType=1",
+      "capture_file": "own-guide-native-dom.json",
+      "capture_sha256": "fb8a831366ab5e9cb9d2200c9d91daa3a12f0893657a11690f90361f07e2320e",
+      "captured_at": "2026-10-30T19:15:45.955Z"
+    },
+    "实施主体": {
+      "raw_value": "闽清县人力资源和社会保障局",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=8145FB57E5488D9301D1A44B780F0AE7&infoType=1",
+      "capture_file": "own-guide-native-dom.json",
+      "capture_sha256": "fb8a831366ab5e9cb9d2200c9d91daa3a12f0893657a11690f90361f07e2320e",
+      "captured_at": "2026-10-30T19:15:45.955Z"
+    },
+    "主办处室": {
+      "raw_value": "劳动人事争议仲裁院",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=8145FB57E5488D9301D1A44B780F0AE7&infoType=1",
+      "capture_file": "own-guide-native-dom.json",
+      "capture_sha256": "fb8a831366ab5e9cb9d2200c9d91daa3a12f0893657a11690f90361f07e2320e",
+      "captured_at": "2026-10-30T19:15:45.955Z"
+    },
+    "办理形式": {
+      "raw_value": "窗口办，网上办，邮寄办",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=8145FB57E5488D9301D1A44B780F0AE7&infoType=1",
+      "capture_file": "own-guide-native-dom.json",
+      "capture_sha256": "fb8a831366ab5e9cb9d2200c9d91daa3a12f0893657a11690f90361f07e2320e",
+      "captured_at": "2026-10-30T19:15:45.955Z"
+    },
+    "必须现场办理原因": {
+      "raw_value": "需现场核验",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=8145FB57E5488D9301D1A44B780F0AE7&infoType=1",
+      "capture_file": "own-guide-native-dom.json",
+      "capture_sha256": "fb8a831366ab5e9cb9d2200c9d91daa3a12f0893657a11690f90361f07e2320e",
+      "captured_at": "2026-10-30T19:15:45.955Z"
+    }
+  },
+  "official_version": null,
+  "samples_are_case_facts": false,
+  "can_generate": false,
+  "published": false,
+  "stage_approval": false,
+  "publication_approval": false,
+  "scope": "Derived own safe source metadata and original bytes; no account/signing/API response payloads; own observed login boundary only."
+}

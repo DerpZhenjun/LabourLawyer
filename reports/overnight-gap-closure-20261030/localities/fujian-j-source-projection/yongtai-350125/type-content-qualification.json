@@ -1,0 +1,18 @@
+{
+  "region_code": "350125",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=836301B361845E6D866C29E099B63DC9&infoType=1",
+  "eligible_kinds": [
+    "application"
+  ],
+  "conflicts": [
+    {
+      "file_id": "123F85EEE1457D654A7D76CAAF6E9BAF",
+      "material_id": "0189832EAB5A3C6FCC7FDA8D80176A2A",
+      "reported_type": "format",
+      "content_role": "official_format_contains_filled_sample_no_generation",
+      "can_generate": false
+    }
+  ],
+  "sample_to_blank_reclassification": false,
+  "committee_full_name": null
+}

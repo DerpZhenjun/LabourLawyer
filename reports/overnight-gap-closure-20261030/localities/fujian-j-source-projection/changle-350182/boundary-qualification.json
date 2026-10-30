@@ -1,0 +1,14 @@
+{
+  "region_code": "350182",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=CFA1069F9BE910A14774F6F86D48BB3C&infoType=1",
+  "observed_title": "福建省数字身份管理服务平台",
+  "observed_host": "iam.e-govt.cn",
+  "boundary_kind": "Fujian_digital_identity_multi_method_login",
+  "parent_source_freeze_sha256": "b2f0361505a0176ca9972ec9176a7fbca75014744d6dc1b4933ea813d80359d2",
+  "parent_boundary_sha256": "9148718fa924b4a0c66c8518cf0d4ac183ca981b0959344589046dffa1f85b25",
+  "actual_iam_qualification_applied": true,
+  "parent_iam_qualification_sha256": "10b9680dcbcefbe77a700d3aff204d732b32f42b83f2370829d5ac9f33a78865",
+  "login_attempted": false,
+  "qr_scanned": false,
+  "application_submitted": false
+}
