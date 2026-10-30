@@ -1,4 +1,3 @@
-import uvicorn
 import os
 import sys
 import uuid
@@ -99,5 +98,8 @@ async def root():
     return {"status": "online", "service": "LabourLawyer Platform API", "version": app.version, "docs": "/docs"}
 
 if __name__ == "__main__":
+    # The ASGI app can be imported by offline tools without an HTTP server.
+    import uvicorn
+
     print("🚀 服务启动中: http://localhost:8000")
     uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)

@@ -24,7 +24,10 @@ class MainDesktopCorsTests(unittest.TestCase):
         })
         environment.start()
         self.addCleanup(environment.stop)
-        from app import app
+        # Importing the ASGI app does not require the optional server runner.
+        # This also covers CI's locked CPU-only environment, without uvicorn.
+        with patch.dict(sys.modules, {'uvicorn': None}):
+            from app import app
         # Deliberately no lifespan: these middleware checks do not bootstrap any
         # catalogue, start a worker, or connect to a model.
         self.client = TestClient(app)
