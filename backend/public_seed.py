@@ -23,7 +23,7 @@ def _count(path,table):
             raise ValueError('Existing public catalogue has an unexpected schema; leave it untouched')
         return db.execute('SELECT COUNT(*) FROM '+table).fetchone()[0]
 
-def bootstrap_public_data(root=ROOT):
+def bootstrap_public_data(root=ROOT,data_dir=None):
     root=Path(root).resolve();folder=root/'data/public-regions'
     result={'guides_imported':0,'directory_imported':0,'missing_attachments':[]}
     if not (folder/'manifest.json').is_file():return {**result,'state':'no_public_snapshot'}
@@ -72,7 +72,9 @@ def bootstrap_public_data(root=ROOT):
         if not all(a.get(k) for k in ['provider','code','province','source_url','collected_at']) or a.get('level') not in {2,3,4}:
             raise ValueError('Public directory source identity is invalid')
         if a['level']==4 and not all(a.get(k) for k in ['city','district']):raise ValueError('Missing precise locality')
-    guide_path=root/'backend/data/regional-guides.sqlite';directory_path=root/'backend/data/regional-directory.sqlite'
+    destination=Path(data_dir).expanduser().resolve() if data_dir is not None else root/'backend/data'
+    if destination.exists() and not destination.is_dir():raise ValueError('Public data destination must be a directory')
+    guide_path=destination/'regional-guides.sqlite';directory_path=destination/'regional-directory.sqlite'
     guide_count=_count(guide_path,'regional_guides');area_count=_count(directory_path,'directory_areas')
     if not guide_count:
         store=RegionalStore(guide_path)

@@ -57,7 +57,7 @@ function sourceSnapshot(root, inputs) {
 }
 
 function defaultInputs(targets) {
-  return [...new Set(['frontend', 'scripts/test-stable-api-types.mjs', 'scripts/test-client-catalog-sync.mjs', 'scripts/test-api-base.mjs', 'scripts/sync-document-clients.mjs', 'scripts/client-pipeline.mjs', 'scripts/build-api-contracts.mjs', 'scripts/build-regional-contracts.mjs', 'scripts/build-client-contracts.mjs', 'scripts/test-client-ai-contracts.mjs', 'scripts/test-regional-contracts.mjs', 'scripts/sync-client-release.mjs', 'packages', 'backend', 'config', 'data/public-regions',
+  return [...new Set(['frontend', 'ChatVRM/src/pages/index.tsx', 'scripts/test-digital-chat-privacy.cjs', 'scripts/react-mount-fixture/package.json', 'scripts/react-mount-fixture/package-lock.json', 'scripts/test-assistant-session.mjs', 'scripts/test-chat-privacy.mjs', 'scripts/test-auth-session.mjs', 'scripts/test-auth-flows.mjs', 'scripts/test-server-workspace.mjs', 'scripts/test-service-address.mjs', 'scripts/test-stable-api-types.mjs', 'scripts/test-client-catalog-sync.mjs', 'scripts/test-api-base.mjs', 'scripts/sync-document-clients.mjs', 'scripts/client-pipeline.mjs', 'scripts/build-api-contracts.mjs', 'scripts/build-regional-contracts.mjs', 'scripts/build-client-contracts.mjs', 'scripts/test-client-ai-contracts.mjs', 'scripts/test-regional-contracts.mjs', 'scripts/sync-client-release.mjs', 'packages', 'backend', 'config', 'data/public-regions',
     ...(targets.includes('mini') ? ['miniprogram'] : []),
     ...(targets.includes('android') ? ['mobile'] : []),
     ...(targets.includes('desktop') ? ['desktop', 'LICENSE'] : []),
@@ -79,7 +79,14 @@ export function createGraph(root, targets) {
     'contracts:client': { deps: [], command: node('scripts/build-client-contracts.mjs', '--check') },
     'contracts:ai-test': { deps: ['contracts:client'], command: node('scripts/test-client-ai-contracts.mjs') },
     'contracts:regional-test': { deps: ['contracts:regional'], command: node('scripts/test-regional-contracts.mjs') },
-    shared: { deps: ['release:metadata','contracts:api-test','contracts:catalog-test','contracts:base-test', 'contracts:api', 'contracts:regional', 'contracts:client', 'contracts:ai-test', 'contracts:regional-test'] },
+    'chat:session-test': {deps: ['contracts:client'], command: node('scripts/test-assistant-session.mjs')},
+    'chat:privacy-test': {deps: ['contracts:client'], command: node('scripts/test-chat-privacy.mjs')},
+    'chat:digital-privacy-test': {deps: ['contracts:client'], command: node('scripts/test-digital-chat-privacy.cjs')},
+    'auth:session-test': {deps: ['contracts:client'], command: node('scripts/test-auth-session.mjs')},
+    'auth:flows-test': {deps: ['contracts:client'], command: node('scripts/test-auth-flows.mjs')},
+    'auth:workspace-test': {deps: ['contracts:client'], command: node('scripts/test-server-workspace.mjs')},
+    'contracts:address-test': {deps: ['contracts:client'], command: node('scripts/test-service-address.mjs')},
+    shared: { deps: ['chat:session-test','chat:privacy-test','chat:digital-privacy-test','auth:session-test','auth:flows-test','auth:workspace-test','contracts:address-test','release:metadata','contracts:api-test','contracts:catalog-test','contracts:base-test', 'contracts:api', 'contracts:regional', 'contracts:client', 'contracts:ai-test', 'contracts:regional-test'] },
     'web:check': { deps: ['shared'], command: npm('frontend', 'typecheck') },
     'mini:check': { deps: ['shared'], command: npm('miniprogram', 'test') },
     'android:check': { deps: ['web:check'] },

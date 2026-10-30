@@ -22,3 +22,7 @@ cd ../desktop && npm install && npm run dev
 ## 统一版本与发布检查
 
 产品版本由 `config/client-release.json` 同步到本端和其他客户端。在仓库根目录运行 `node scripts/client-pipeline.mjs build --targets desktop`，构建成功后才可用生成的 receipt 准备 SHA-256 附件白名单。仅有 plan 或历史 EXE 不算本次构建通过。本版同步到 1.2.0-preview.2，同源 API 地址仍经本端本地代理连接后端；不会启动模型。见 [脚本入口](../scripts/README.md)。
+
+## 连接 Ubuntu 服务
+
+打开界面上方“连接设置”，填写维护人员提供的 Ubuntu 地址，检查响应后保存。可信局域网预览可用 `http://192.168.110.81:8088`，公网必须部署HTTPS。切换后退出原账号，对话不会自动发送给新服务。界面安装包不含后端、官方原件库或模型。

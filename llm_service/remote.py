@@ -34,6 +34,32 @@ def _owned_ssh_tunnel(receipt):
     _process_cache[key]=(time.monotonic(),valid)
     return valid
 
+def _owned_ubuntu_ollama():
+    """Explicit colocated Ubuntu deployment; never authorizes a Windows model."""
+    if sys.platform!='linux':return False
+    try:
+        release=dict(line.split('=',1) for line in Path('/etc/os-release').read_text().splitlines() if '=' in line)
+        if release.get('ID','').strip('"')!='ubuntu' or release.get('VERSION_ID','').strip('"')!='24.04':return False
+        raw=Path(os.environ.get('LABOURLAWYER_UBUNTU_OLLAMA_ROOT',''))
+        root=raw.resolve()
+        if not raw.is_absolute() or raw!=root or root.name!='Ollama' or root.parent.name!='SJL' or not root.is_relative_to(Path('/home')):return False
+        if root.stat().st_uid!=os.getuid():return False
+        receipt=json.loads((root/'logs/verification.json').read_text())
+        if (not isinstance(receipt,dict) or receipt.get('checks_passed') is not True or receipt.get('root')!=str(root) or receipt.get('model')!='qwen3.8:27b' or receipt.get('listener')!='127.0.0.1:11434'):return False
+        pid=int((root/'serve.pid').read_text().strip());proc=Path('/proc')/str(pid)
+        if proc.stat().st_uid!=os.getuid() or (proc/'exe').resolve()!=(root/'bin/ollama').resolve():return False
+        if b'serve' not in (proc/'cmdline').read_bytes().split(b'\0'):return False
+        sockets=set()
+        for fd in (proc/'fd').iterdir():
+            try:sockets.add(os.readlink(fd))
+            except OSError:continue
+        for line in Path('/proc/net/tcp').read_text().splitlines()[1:]:
+            fields=line.split()
+            if len(fields)>=10 and fields[1]=='0100007F:'+format(11434,'04X') and fields[3]=='0A' and 'socket:['+fields[9]+']' in sockets:return True
+    except (OSError,ValueError,KeyError,TypeError):return False
+    return False
+
+
 def resolve_remote(model=None,api_base=None):
     path=Path(os.getenv('LABOURLAWYER_AI_CONNECTION_FILE',str(ROOT/'.runtime/remote-ai/connection.json')))
     try:receipt=json.loads(path.read_text('utf-8-sig'))
@@ -45,6 +71,10 @@ def resolve_remote(model=None,api_base=None):
     if not api_base and transport=='ssh' and receipt.get('transport')=='ssh' and receipt.get('verified_remote') is True:
         endpoint=(receipt.get('endpoint') or '').rstrip('/')
     if model!=MODEL:raise ValueError('请配置 Ubuntu Ollama qwen3.8:27b，不能回退本机模型。')
+    if transport=='ubuntu-local':
+        if endpoint!='http://127.0.0.1:11434' or not _owned_ubuntu_ollama():
+            raise ValueError('仅允许已核验的 Ubuntu 24.04 自有 Ollama 进程供同机部署使用；Windows 本机模型始终禁用。')
+        return RemoteConfig(endpoint,model,transport)
     try:
         url=urlsplit(endpoint);port=url.port
     except ValueError:raise ValueError('Ubuntu Ollama 远程地址格式无效。') from None

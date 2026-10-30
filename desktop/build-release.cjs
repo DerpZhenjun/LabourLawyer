@@ -19,7 +19,7 @@ run(path.join(root, 'frontend/node_modules/vite/bin/vite.js'), ['build', '--outD
 const projectLicense = fs.readFileSync(path.join(root, 'LICENSE'), 'utf8')
 fs.writeFileSync(path.join(notices, 'LICENSE-LabourLawyer.txt'), projectLicense)
 fs.copyFileSync(path.join(__dirname, 'README.md'), path.join(notices, 'README-Desktop.md'))
-fs.writeFileSync(path.join(notices, 'INSTALL-LICENSE.txt'), 'LabourLawyer Windows 桌面客户端 '+require('./package.json').version+'\n\n本安装包仅含桌面界面，不含 Python 后端、官方模板原件库、个人案件库或AI模型。文书功能需另行运行本项目后端 http://127.0.0.1:8000；AI需后端连接Ubuntu远程模型。安装本包不会启动模型或后端。此包尚未代码签名。\n\n'+projectLicense)
+fs.writeFileSync(path.join(notices, 'INSTALL-LICENSE.txt'), 'LabourLawyer Windows 桌面客户端 '+require('./package.json').version+'\n\n本安装包仅含桌面界面，不含 Python 后端、官方模板原件库、个人案件库或AI模型。文书功能需另行运行本项目后端，默认 http://127.0.0.1:8000；也可通过连接设置使用已部署的 Ubuntu 服务。AI由后端连接Ubuntu模型。安装本包不会启动模型或后端。此包尚未代码签名。\n\n'+projectLicense)
 const lock = JSON.parse(fs.readFileSync(path.join(root, 'frontend/package-lock.json'), 'utf8'))
 const audit = []
 let combined = 'Third-party notices for bundled frontend components\n\nElectron MIT LICENSE and Chromium/Node notices are included beside the executable (LICENSE.electron.txt / LICENSES.chromium.html).\nFont Awesome: Fonticons, Inc.; icons CC BY 4.0, fonts SIL OFL 1.1, code MIT. Full text follows.\n\n'

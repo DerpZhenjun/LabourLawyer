@@ -1,0 +1,77 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  offline-regression:
+    name: Offline contracts, clients and backend
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      CI: 'true'
+      PYTHON: python
+      PYTHONUTF8: '1'
+      PYTHONDONTWRITEBYTECODE: '1'
+      PIP_DISABLE_PIP_VERSION_CHECK: '1'
+      VITE_API_BASE_URL: '/'
+    steps:
+      - name: Check out source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Set up Node
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '22.18.0'
+          cache: npm
+          cache-dependency-path: |
+            frontend/package-lock.json
+            miniprogram/package-lock.json
+            scripts/react-mount-fixture/package-lock.json
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: .github/workflows/requirements-ci.txt
+      - name: Install locked CPU-only test dependencies
+        run: |
+          python -m pip install --require-hashes --only-binary=:all: -r .github/workflows/requirements-ci.txt
+          python -m pip check
+          npm ci --prefix frontend --ignore-scripts --no-audit --no-fund
+          npm ci --prefix miniprogram --ignore-scripts --no-audit --no-fund
+          npm ci --prefix scripts/react-mount-fixture --ignore-scripts --no-audit --no-fund
+      - name: Check committed schema and client runtime drift
+        run: npm --prefix frontend run contracts:check
+      - name: Exercise pipeline receipt and artifact refusal fixtures
+        run: node --test scripts/test-client-pipeline.mjs
+      - name: Check release metadata and typed page coverage
+        run: |
+          node scripts/test-client-release.mjs
+          node scripts/test-typed-page-coverage.mjs
+          node scripts/test-auth-session.mjs
+          node scripts/test-server-workspace.mjs
+          node scripts/test-service-address.mjs
+          node scripts/test-auth-flows.mjs
+          node scripts/test-assistant-session.mjs
+          node scripts/test-chat-privacy.mjs
+          node scripts/test-digital-chat-privacy.cjs
+      - name: Build and verify web and mini from the checked contracts
+        run: node scripts/client-pipeline.mjs build --targets web,mini
+      - name: Run isolated backend regressions
+        run: python scripts/ci-backend.py
+      - name: Ensure checks did not regenerate committed files
+        run: git diff --exit-code
+
+# Build receipts remain local verification evidence. This workflow does not
+# publish releases, upload bundles, deploy, sign installers or access secrets.

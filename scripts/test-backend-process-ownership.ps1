@@ -22,3 +22,9 @@ $wrong.CommandLine = $command.Replace('app:app','another:app')
 Assert-Rejected @($parent,$wrong) 101 'different application'
 $wrong.CommandLine = $command; $wrong.ParentProcessId = 101
 Assert-Rejected @($parent,$wrong) 101 'cyclic ancestry'
+
+$reviewParent = [pscustomobject]@{ProcessId=200;ParentProcessId=50;ExecutablePath="$rootPath\.venv\Scripts\python.exe";CommandLine=$command.Replace('8000','8002')}
+$reviewChild = [pscustomobject]@{ProcessId=201;ParentProcessId=200;ExecutablePath='C:\Python311\python.exe';CommandLine=$command.Replace('8000','8002')}
+$reviewOwned = @(Get-OwnedBackendProcesses -Processes @($reviewParent,$reviewChild) -ListenerPid 201 -ProjectRoot $rootPath -Port 8002)
+if ($reviewOwned.Count -ne 2) { throw 'FAIL explicit review port ancestry' }
+Write-Host 'PASS explicit review port ancestry'
