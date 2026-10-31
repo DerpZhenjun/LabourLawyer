@@ -2,7 +2,7 @@
 from copy import deepcopy
 from hashlib import sha256
 from io import BytesIO
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from zipfile import ZipFile
 import json, shutil, tempfile, unittest
 from unittest.mock import patch
@@ -108,6 +108,27 @@ class PutianOwnProviderTests(unittest.TestCase):
             with self.assertRaises(ValueError):own.envelope('350302',kind,{},root=ROOT)
         for path in ['../x','C:/private/x']:
             with self.assertRaises(ValueError):own.path_at(ROOT,path)
+    def test_portable_path_spellings_refused_with_actual_posix_lexical_rules(self):
+        # Real PurePosixPath parsing, with no host filesystem access. This makes
+        # the Linux C:/ and C:relative bug reproducible even on a Windows host.
+        class LexicalPosixPath(PurePosixPath):
+            def resolve(self):return self
+            def is_symlink(self):return False
+        invalid=['C:/private/x','C:relative',r'C:\private\x',r'\private\x',r'\\server\share\x','//server/share/x','/private/x','../x',r'..\x',r'a\..\x','a/../x',r'\\?\C:\private\x']
+        with patch.object(own,'Path',LexicalPosixPath):
+            for value in invalid:
+                with self.subTest(value=value),self.assertRaises(ValueError):own.path_at('/own-source-root',value)
+            self.assertEqual(own.path_at('/own-source-root',PurePosixPath('reports')/'own.json'),PurePosixPath('/own-source-root/reports/own.json'))
+    def test_native_relative_paths_and_resolved_link_escape_checks_preserved(self):
+        temp=tempfile.TemporaryDirectory(prefix='m-relative-path-');self.addCleanup(temp.cleanup);root=Path(temp.name).resolve();(root/'reports').mkdir();leaf=root/'reports/own.json';leaf.write_bytes(b'SYNTHETIC PUBLIC SOURCE')
+        for value in [Path('reports')/'own.json','reports/own.json']:
+            self.assertEqual(own.path_at(root,value),leaf)
+        class ResolvedPosixPath(PurePosixPath):
+            def resolve(self):return type(self)('/foreign-target') if self.name=='link' else self
+            def is_symlink(self):return self.name=='direct-link'
+        with patch.object(own,'Path',ResolvedPosixPath):
+            for value in ['link','direct-link']:
+                with self.subTest(value=value),self.assertRaises(ValueError):own.path_at('/own-source-root',value)
     def test_public_source_json_no_private_paths_or_sensitive_query(self):
         for rel in own.source_files(ROOT):
             if rel.endswith('.json'):

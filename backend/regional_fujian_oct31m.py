@@ -120,7 +120,7 @@ def _layout_fill(raw, kind, data):
     _layout_assert_protected(raw, result, kind)
     return result
 import json, re
-from pathlib import Path
+from pathlib import Path, PurePosixPath, PureWindowsPath
 SOURCE_SHAS = {'350302': 'f32d80b4e158a8122c8f7469a0a9ca533af838d5dc6327240c7f8ddc3cbb8abf', '350303': '454a1a56e56177d5be63d838b9b6ad97d5a729d4ee639efd99a2cdbb58a1d7b6'}
 SOURCE_BASE = Path('reports/overnight-gap-closure-20261030/localities/fujian-m-source-projection')
 ADAPTER = 'fujian_putian_own_blank_oct31m_v1'
@@ -151,6 +151,9 @@ def path_at(root, relative):
     base = Path(root).resolve()
     rel = Path(relative)
     require(not rel.is_absolute() and (not rel.drive) and ('..' not in rel.parts))
+    windows = PureWindowsPath(relative)
+    posix = PurePosixPath(relative)
+    require(not windows.drive and not windows.root and not posix.is_absolute() and ('..' not in windows.parts) and ('..' not in posix.parts))
     path = base / rel
     require(path.resolve().is_relative_to(base) and path.resolve().relative_to(base).as_posix() == rel.as_posix() and (not path.is_symlink()))
     return path
