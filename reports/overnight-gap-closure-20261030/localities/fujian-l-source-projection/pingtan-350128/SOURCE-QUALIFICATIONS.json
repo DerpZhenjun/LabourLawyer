@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "scope": "Own source only; no generation, stage or publication approval",
+  "canonical_source_id": "511e7f64c9481b5a0b6ff4a1",
+  "canonical_digest_from_exact_own_URL": true,
+  "official_version": null,
+  "guide_status": "partial",
+  "committee_full_name": null,
+  "committee_autofill_allowed": false,
+  "retained_official_FORMAT_kinds": [
+    "application",
+    "evidence"
+  ],
+  "eligible_generation_kinds": [],
+  "own_blank_bytes_retained": 2,
+  "sample_or_reference_metadata_only": 4,
+  "sample_values_used": false,
+  "source_only": true,
+  "schema_mapping_approved": false,
+  "visual_review": false,
+  "root_stage_receipt": null,
+  "root_final_receipt": null,
+  "can_generate": false,
+  "published": false,
+  "native_browser_download_completion_claimed": false,
+  "new_attachment_retrieval_claimed": false,
+  "own_independent_TLS_binding_required_despite_shared_SHA": true,
+  "raw_parent_is_runtime_dependency": false,
+  "source_time_scope": "受理后5个工作日 is a raw reception/review statement, not an arbitration merits deadline.",
+  "submission_status": "UNKNOWN_NOT_ATTEMPTED",
+  "source_conflicts_and_scope_notes": [
+    {
+      "kind": "COMPATIBLE_SCOPE_NOTE",
+      "raw_A": "服务承诺到现场次数\n1 次",
+      "raw_B": "【Ⅱ级（三星）】该事项已经实现申请材料在线预审。申请人可以通过网络提交和补正相关申请信息和材料，审核机构在平台对材料进行预审，预审通过后，申请人仍需携带纸质材料和相关证件到现场提交办理，作出审批决定后，申请人可来现场领取结果，也可选择物流递送形式递送证书结果。整个办理过程应到现场不超过2次。",
+      "resolution": "COMPATIBLE_DIFFERENT_SCOPES",
+      "note": "页面标注到现场1次，通用Ⅱ级说明为不超过2次，两者并不冲突；实际办理流程仍未验证。",
+      "eligible_issue_event": false
+    },
+    {
+      "kind": "SCOPE_REQUIRES_REVIEW",
+      "raw_A": "市级",
+      "raw_B": {
+        "code": "350128",
+        "level": 4,
+        "parent_code": "350000",
+        "directory_terminal": true,
+        "official_name": "平潭综合实验区"
+      },
+      "resolution": null,
+      "note": "Guide service level and directory terminal describe different source scopes. Preserve both; no jurisdiction inference."
+    },
+    {
+      "kind": "MATERIAL_INFORMATION_REQUIRES_REVIEW",
+      "raw_A": [
+        "原件份数2份",
+        "原件份数2份",
+        "复印件份数2份"
+      ],
+      "raw_B": [
+        "签字捺印，复印件按被申请人人数确定。",
+        "签字捺印，正本一份，副本按照当事人人数提交。",
+        null
+      ],
+      "resolution": null,
+      "note": "Retain raw2/2/2 with respondent/party-count remarks; no fixed legal total inferred."
+    }
+  ],
+  "unknowns": [
+    "Exact committee legal full name not established; do not infer from authority or blank committee line.",
+    "Official guide version/date not established.",
+    "Login, online application, authentication and submission behavior untested.",
+    "No native browser download-completion claim; retained bytes came from the separately pinned anonymous normal-TLS retrieval.",
+    "No visual Word/slot/schema/candidate/stage/final/publication approval.",
+    "No full-online eligibility inference from generic II/III/IV explanations."
+  ],
+  "schema": "fujian-pingtan-own-public-source-v1",
+  "operational_issue_events": [],
+  "compatible_scope_note": {
+    "specific_and_generic_visit_counts_compatible": true,
+    "issue_export_or_ACK_authorized": false
+  }
+}

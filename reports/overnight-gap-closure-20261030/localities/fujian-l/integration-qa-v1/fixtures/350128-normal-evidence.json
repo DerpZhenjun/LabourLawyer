@@ -1,0 +1,60 @@
+{
+  "fictional_only": true,
+  "real_case_data": false,
+  "model_calls": 0,
+  "data": {
+    "evidenceList": [
+      {
+        "name": "虚构平潭材料甲",
+        "pageCount": "1",
+        "originalType": "复印件",
+        "purpose": "虚构测试：核对自身证据表字段。",
+        "pageRange": "1"
+      }
+    ]
+  },
+  "request": {
+    "province": "fujian",
+    "city": "平潭综合实验区",
+    "district": "平潭综合实验区",
+    "region_code": "350128",
+    "source_id": "511e7f64c9481b5a0b6ff4a1",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=DB9193FF4D772DB2CDBBA1BCA7369872&infoType=1",
+    "service_code": "1135012806039606XH300201430200201",
+    "authority": "平潭综合实验区社会事业局",
+    "source_version": "85c9f528deb21b5da68c0d5f108c72e5a4f6a7d0ebf2e56da960f87a228b607e",
+    "material_id": "59560ABC219CCB4AF2E8840A20C74607",
+    "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+    "template_file": "reports/overnight-gap-closure-20261030/localities/fujian-l-source-projection/pingtan-350128/evidence-own-format.docx",
+    "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "template_version": "sha256:d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "schema_id": "fujian-l-350128-evidence-v1",
+    "schema_version": 1,
+    "kind": "evidence",
+    "mode": "blank",
+    "data": {
+      "evidenceList": [
+        {
+          "name": "虚构平潭材料甲",
+          "pageCount": "1",
+          "originalType": "复印件",
+          "purpose": "虚构测试：核对自身证据表字段。",
+          "pageRange": "1"
+        }
+      ]
+    }
+  },
+  "source_version": "85c9f528deb21b5da68c0d5f108c72e5a4f6a7d0ebf2e56da960f87a228b607e",
+  "same_request": false,
+  "previous_private_request_sha256": "9d0256699805fd506c65f7f9d1ff3af6395c88dfc1b0aeeb7cf146d522e0b17e",
+  "changed_context_fields": [
+    "mapping_version",
+    "schema_id",
+    "source_version",
+    "template_file"
+  ],
+  "output": "reports/overnight-gap-closure-20261030/localities/fujian-l/integration-qa-v1/word/350128-normal-evidence.docx",
+  "bytes": 16731,
+  "sha256": "41cbe398c9f0fdcd53dc9650af0835a421b091c141747959401a2f1337da31b7",
+  "visual_review": "Prior independently viewed Root bodies reused only after actual whole-byte/all-ZIP parity; no new render"
+}

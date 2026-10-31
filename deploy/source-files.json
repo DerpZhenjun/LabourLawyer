@@ -158,6 +158,8 @@
     "scripts/manage-users.py",
     "scripts/run-linux-guide-collector.py",
     "scripts/test-tls-proxy.py",
-    "backend/regional_fujian_oct31k.py"
+    "backend/regional_fujian_oct31k.py",
+    "backend/regional_fujian_oct31l.py",
+    "backend/regional_pingtan_request.py"
   ]
 }
