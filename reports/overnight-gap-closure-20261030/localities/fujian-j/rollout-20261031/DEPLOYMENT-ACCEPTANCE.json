@@ -1,0 +1,628 @@
+{
+  "schema_version": 1,
+  "status": "PASS_INCREMENTAL_RELEASE_AND_ACTUAL_BROWSER_ACCEPTANCE",
+  "verified_at": "2026-10-31T00:14:54.960683+00:00",
+  "runtime_source_commit": "ab837b304770e5aeaf1c70adcd0d60d11f666412",
+  "source_archive_sha256": "2f623b38054b07af71d89423ff9fab065f237c6500413dff322514f3a063c0b5",
+  "ubuntu_bundle": {
+    "bytes": 396280297,
+    "sha256": "670e35521eb56499c2526b025f288f2539f958aa56654965aaafa5a930a5c232",
+    "manifest_sha256": "ca781f4a7ae26e0989d1a229da0a209a161159b208ae1124ad9cee51db582af7",
+    "verified_files": 4247
+  },
+  "release_pins": {
+    "stage": "129474f0bba0f7d79363899ab21244fa595f0a356a0bb000c907fc5d62e2126e",
+    "final_candidate": "9860482c9772783927184e28686fb9779b1cce1a283c0d61902d8cde5dd57c45",
+    "word_manifest": "346e74b6afee3a6d8366fcc3910aef11e958d06b898c7045b0988b4525cc501d",
+    "seed": "3af8b592fa488dcfe4a73a691efc633995639a72fc658ae180101b41fc49d187",
+    "seed_manifest": "8334c82d8dcb458906e9f6db82933f33c411f7653c50efdedc298d04af153a89"
+  },
+  "regions": [
+    {
+      "region_code": "350122",
+      "province": "fujian",
+      "city": "福州市",
+      "district": "连江县",
+      "source_id": "bca45154d74905b963af83c9",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=0AB23B595298D2754FC2B46E318C32FB&infoType=1",
+      "verification_status": "partial",
+      "collected_at": "2026-10-30T19:07:56.013Z",
+      "verified_at": "2026-10-30T19:07:56.013Z",
+      "handling_form_raw": "窗口办，网上办",
+      "online_status": "auth_required",
+      "verified_direct_online_entry": null,
+      "submission_verified": false,
+      "committee_name_verified": false,
+      "generation_kinds": [
+        "application",
+        "evidence"
+      ],
+      "official_blank_bindings": {
+        "application": {
+          "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+          "material_id": "073FF228AF99034EE0636C0E010A8FDE",
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        "evidence": {
+          "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+          "material_id": "E831BA1D73F16062A761AC54EDFB2EEB",
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        }
+      }
+    },
+    {
+      "region_code": "350123",
+      "province": "fujian",
+      "city": "福州市",
+      "district": "罗源县",
+      "source_id": "e6dccff3468cba55aa9b5c09",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=F9AC961E43C2B1BEF413BE5DBFA96CE2&infoType=1",
+      "verification_status": "partial",
+      "collected_at": "2026-10-30T19:12:23.73Z",
+      "verified_at": "2026-10-30T19:12:23.73Z",
+      "handling_form_raw": "窗口办，网上办",
+      "online_status": "auth_required",
+      "verified_direct_online_entry": null,
+      "submission_verified": false,
+      "committee_name_verified": false,
+      "generation_kinds": [
+        "application",
+        "evidence"
+      ],
+      "official_blank_bindings": {
+        "application": {
+          "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+          "material_id": "F0593EE6F76460FD02F07713E7C6313A",
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        "evidence": {
+          "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+          "material_id": "FE995B2A9FF81FFB12C2C92D20BDC0E3",
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        }
+      }
+    },
+    {
+      "region_code": "350124",
+      "province": "fujian",
+      "city": "福州市",
+      "district": "闽清县",
+      "source_id": "4d74f378197bace2e63b05e9",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=8145FB57E5488D9301D1A44B780F0AE7&infoType=1",
+      "verification_status": "partial",
+      "collected_at": "2026-10-30T19:15:45.955Z",
+      "verified_at": "2026-10-30T19:15:45.955Z",
+      "handling_form_raw": "窗口办，网上办，邮寄办",
+      "online_status": "auth_required",
+      "verified_direct_online_entry": null,
+      "submission_verified": false,
+      "committee_name_verified": false,
+      "generation_kinds": [
+        "application",
+        "evidence"
+      ],
+      "official_blank_bindings": {
+        "application": {
+          "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+          "material_id": "FB58DED77FB2681CCAE248FB07CEEE02",
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        "evidence": {
+          "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+          "material_id": "D01298D0610CA0D256186A34871A5A9C",
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        }
+      }
+    },
+    {
+      "region_code": "350125",
+      "province": "fujian",
+      "city": "福州市",
+      "district": "永泰县",
+      "source_id": "3bfbebb0f7115a969c3d77be",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=836301B361845E6D866C29E099B63DC9&infoType=1",
+      "verification_status": "partial",
+      "collected_at": "2026-10-30T19:18:49.329Z",
+      "verified_at": "2026-10-30T19:18:49.329Z",
+      "handling_form_raw": "窗口办，网上办",
+      "online_status": "auth_required",
+      "verified_direct_online_entry": null,
+      "submission_verified": false,
+      "committee_name_verified": false,
+      "generation_kinds": [
+        "application"
+      ],
+      "official_blank_bindings": {
+        "application": {
+          "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+          "material_id": "C2F148AA7DC189D59113E8E47202E9D0",
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        }
+      }
+    },
+    {
+      "region_code": "350181",
+      "province": "fujian",
+      "city": "福州市",
+      "district": "福清市",
+      "source_id": "9af3a0528483a9bb4fb67de5",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=469958A9BED0E05129E545EFD2E2A759&infoType=1",
+      "verification_status": "partial",
+      "collected_at": "2026-10-30T19:22:49.762Z",
+      "verified_at": "2026-10-30T19:22:49.762Z",
+      "handling_form_raw": "窗口办，网上办",
+      "online_status": "auth_required",
+      "verified_direct_online_entry": null,
+      "submission_verified": false,
+      "committee_name_verified": false,
+      "generation_kinds": [
+        "application",
+        "evidence"
+      ],
+      "official_blank_bindings": {
+        "application": {
+          "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+          "material_id": "C6D041032B23726615A7FF1ED9F90E67",
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        "evidence": {
+          "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+          "material_id": "C3D25788F4625B882DE76F8830DADC4A",
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        }
+      }
+    },
+    {
+      "region_code": "350182",
+      "province": "fujian",
+      "city": "福州市",
+      "district": "长乐区",
+      "source_id": "e0b2adc9b9b0b10bc0eb9332",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=CFA1069F9BE910A14774F6F86D48BB3C&infoType=1",
+      "verification_status": "partial",
+      "collected_at": "2026-10-30T19:25:47.499Z",
+      "verified_at": "2026-10-30T19:25:47.499Z",
+      "handling_form_raw": "窗口办，网上办",
+      "online_status": "auth_required",
+      "verified_direct_online_entry": null,
+      "submission_verified": false,
+      "committee_name_verified": false,
+      "generation_kinds": [
+        "application",
+        "evidence"
+      ],
+      "official_blank_bindings": {
+        "application": {
+          "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+          "material_id": "A14415F048410FBAD33BBECC53C5A6DB",
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        "evidence": {
+          "template_id": "C0D98561149170947B4366BCA0299DD9",
+          "material_id": "F03100CFE99D2A3222F14B9AE02695DD",
+          "sha256": "511d213073af6e25b0f9f8ed2b914b7b31ee47bf6cef2fbb85a0422e3d6a4f56"
+        }
+      }
+    }
+  ],
+  "main": {
+    "published_guides": 215,
+    "generatable": 198,
+    "history_before": 217,
+    "history_after": 223,
+    "actual_tail_versions": [
+      218,
+      219,
+      220,
+      221,
+      222,
+      223
+    ],
+    "outbox_preserved": 377,
+    "root_native_report_sha256": "0c7fc20616443dd9dbc13861d376399b6d3a7dbbb7ab364ecdda3000117a004c"
+  },
+  "ubuntu": {
+    "published_guides": 215,
+    "generatable": 198,
+    "history_before": 209,
+    "history_after": 215,
+    "actual_tail_versions": [
+      210,
+      211,
+      212,
+      213,
+      214,
+      215
+    ],
+    "legacy_outbox_preserved": 0,
+    "other_five_existing_persistent_files_unchanged": true,
+    "all4247_release_files_unchanged": true,
+    "protected_collector_digital_model_processes_unchanged": true,
+    "root_native_report_sha256": "3e64053447aa2ddaf8401d6de8d54811c44ac2b8f143d6df41828d82ab516375"
+  },
+  "browser": {
+    "qualified_native_downloads": 44,
+    "qualified_actual_native_events": 44,
+    "qualified_generation_posts": 44,
+    "filled": 22,
+    "own_original_blank": 22,
+    "every_file_whole_and_all_zip_members_identical": true,
+    "strict_fifteen_field_canonical_contracts": 22,
+    "viewport_widths": [
+      375,
+      768,
+      1440
+    ],
+    "actual_width_measurements": 66,
+    "confirmation_cancel_checks": 22,
+    "six_unique_own_sources_each_host": true,
+    "unknown_scope_clears_old_fields": true,
+    "Yongtai_evidence_rejected_no_fallback": true,
+    "Changle_IAM8901_is_auth_observation_not_submission_entry": true,
+    "console_page_or_blocked_request_errors": 0,
+    "screenshots": 0,
+    "models": 0,
+    "government_http_calls_during_app_acceptance": 0,
+    "new_render_claim": false,
+    "prior_attempts_retained": [
+      {
+        "host": "ubuntu",
+        "harness": "v1",
+        "qualified": false,
+        "actual_posts_and_downloads": 0,
+        "reason": "Harness omitted five existing context fields; corrected to strict15 and canonical body hash"
+      },
+      {
+        "host": "main",
+        "harness": "v2",
+        "qualified": false,
+        "actual_posts_and_downloads": 4,
+        "reason": "Default5s expect while loading; bounded60s v3, other AST unchanged"
+      }
+    ],
+    "actual_total_generation_posts_including_prior_partial": 48,
+    "accepted_downloads_per_host": {
+      "main": [
+        {
+          "code": "350122",
+          "kind": "application",
+          "scenario": "filled",
+          "bytes": 12105,
+          "sha256": "27a26eb516dc688223ebc9c783dbda75b5c429c92a7c178b3e8ed7a5df71994d"
+        },
+        {
+          "code": "350122",
+          "kind": "application",
+          "scenario": "blank",
+          "bytes": 13093,
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350122",
+          "kind": "evidence",
+          "scenario": "filled",
+          "bytes": 16741,
+          "sha256": "43bca043b1d8360a57e243c9d4398195a12e6b34499f80938af4e571a8e4adad"
+        },
+        {
+          "code": "350122",
+          "kind": "evidence",
+          "scenario": "blank",
+          "bytes": 18887,
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        },
+        {
+          "code": "350123",
+          "kind": "application",
+          "scenario": "filled",
+          "bytes": 12106,
+          "sha256": "26c80e1816e3a676d6f89ddcd154142277c805731f2fce169e3e4baa1f9694e9"
+        },
+        {
+          "code": "350123",
+          "kind": "application",
+          "scenario": "blank",
+          "bytes": 13093,
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350123",
+          "kind": "evidence",
+          "scenario": "filled",
+          "bytes": 16742,
+          "sha256": "6267a399e96ede0c5a86269e253913c4910e5b9a3bd3b17523cadef4c05012f6"
+        },
+        {
+          "code": "350123",
+          "kind": "evidence",
+          "scenario": "blank",
+          "bytes": 18887,
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        },
+        {
+          "code": "350124",
+          "kind": "application",
+          "scenario": "filled",
+          "bytes": 12107,
+          "sha256": "9cd1e9d96a3ba06fb684b2ed36b0bbaac35a027e6a08147371f51a2912808360"
+        },
+        {
+          "code": "350124",
+          "kind": "application",
+          "scenario": "blank",
+          "bytes": 13093,
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350124",
+          "kind": "evidence",
+          "scenario": "filled",
+          "bytes": 16741,
+          "sha256": "cd7553e5d4527242b6d37acc7b8da7fe3ea8fb3c116fa524ab89fc7b91b7c640"
+        },
+        {
+          "code": "350124",
+          "kind": "evidence",
+          "scenario": "blank",
+          "bytes": 18887,
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        },
+        {
+          "code": "350125",
+          "kind": "application",
+          "scenario": "filled",
+          "bytes": 12106,
+          "sha256": "99b40a25f3dd1039e39efd4a865cd8d33acd67021636fce743efed255cc7ae0e"
+        },
+        {
+          "code": "350125",
+          "kind": "application",
+          "scenario": "blank",
+          "bytes": 13093,
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350181",
+          "kind": "application",
+          "scenario": "filled",
+          "bytes": 12107,
+          "sha256": "77acdd85c5247f7f04b857607c55c9e224469a57c23cf42244b715dbcbbd6d38"
+        },
+        {
+          "code": "350181",
+          "kind": "application",
+          "scenario": "blank",
+          "bytes": 13093,
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350181",
+          "kind": "evidence",
+          "scenario": "filled",
+          "bytes": 16742,
+          "sha256": "7178239544509b13dfcfe75fa1f07b722b1838fa78de17e4c563b8cf73bdad4b"
+        },
+        {
+          "code": "350181",
+          "kind": "evidence",
+          "scenario": "blank",
+          "bytes": 18887,
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        },
+        {
+          "code": "350182",
+          "kind": "application",
+          "scenario": "filled",
+          "bytes": 12105,
+          "sha256": "a4d74aa971e066cd9ed4d5c4b284714aa42908acf822097b32d5d467b820b9e5"
+        },
+        {
+          "code": "350182",
+          "kind": "application",
+          "scenario": "blank",
+          "bytes": 13093,
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350182",
+          "kind": "evidence",
+          "scenario": "filled",
+          "bytes": 16658,
+          "sha256": "3447647c3ed78b2598861b1ef8ea0c632249f922d0a219f5e64793cf6ab883e4"
+        },
+        {
+          "code": "350182",
+          "kind": "evidence",
+          "scenario": "blank",
+          "bytes": 18805,
+          "sha256": "511d213073af6e25b0f9f8ed2b914b7b31ee47bf6cef2fbb85a0422e3d6a4f56"
+        }
+      ],
+      "ubuntu": [
+        {
+          "code": "350122",
+          "kind": "application",
+          "scenario": "filled",
+          "bytes": 12105,
+          "sha256": "27a26eb516dc688223ebc9c783dbda75b5c429c92a7c178b3e8ed7a5df71994d"
+        },
+        {
+          "code": "350122",
+          "kind": "application",
+          "scenario": "blank",
+          "bytes": 13093,
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350122",
+          "kind": "evidence",
+          "scenario": "filled",
+          "bytes": 16741,
+          "sha256": "43bca043b1d8360a57e243c9d4398195a12e6b34499f80938af4e571a8e4adad"
+        },
+        {
+          "code": "350122",
+          "kind": "evidence",
+          "scenario": "blank",
+          "bytes": 18887,
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        },
+        {
+          "code": "350123",
+          "kind": "application",
+          "scenario": "filled",
+          "bytes": 12106,
+          "sha256": "26c80e1816e3a676d6f89ddcd154142277c805731f2fce169e3e4baa1f9694e9"
+        },
+        {
+          "code": "350123",
+          "kind": "application",
+          "scenario": "blank",
+          "bytes": 13093,
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350123",
+          "kind": "evidence",
+          "scenario": "filled",
+          "bytes": 16742,
+          "sha256": "6267a399e96ede0c5a86269e253913c4910e5b9a3bd3b17523cadef4c05012f6"
+        },
+        {
+          "code": "350123",
+          "kind": "evidence",
+          "scenario": "blank",
+          "bytes": 18887,
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        },
+        {
+          "code": "350124",
+          "kind": "application",
+          "scenario": "filled",
+          "bytes": 12107,
+          "sha256": "9cd1e9d96a3ba06fb684b2ed36b0bbaac35a027e6a08147371f51a2912808360"
+        },
+        {
+          "code": "350124",
+          "kind": "application",
+          "scenario": "blank",
+          "bytes": 13093,
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350124",
+          "kind": "evidence",
+          "scenario": "filled",
+          "bytes": 16741,
+          "sha256": "cd7553e5d4527242b6d37acc7b8da7fe3ea8fb3c116fa524ab89fc7b91b7c640"
+        },
+        {
+          "code": "350124",
+          "kind": "evidence",
+          "scenario": "blank",
+          "bytes": 18887,
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        },
+        {
+          "code": "350125",
+          "kind": "application",
+          "scenario": "filled",
+          "bytes": 12106,
+          "sha256": "99b40a25f3dd1039e39efd4a865cd8d33acd67021636fce743efed255cc7ae0e"
+        },
+        {
+          "code": "350125",
+          "kind": "application",
+          "scenario": "blank",
+          "bytes": 13093,
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350181",
+          "kind": "application",
+          "scenario": "filled",
+          "bytes": 12107,
+          "sha256": "77acdd85c5247f7f04b857607c55c9e224469a57c23cf42244b715dbcbbd6d38"
+        },
+        {
+          "code": "350181",
+          "kind": "application",
+          "scenario": "blank",
+          "bytes": 13093,
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350181",
+          "kind": "evidence",
+          "scenario": "filled",
+          "bytes": 16742,
+          "sha256": "7178239544509b13dfcfe75fa1f07b722b1838fa78de17e4c563b8cf73bdad4b"
+        },
+        {
+          "code": "350181",
+          "kind": "evidence",
+          "scenario": "blank",
+          "bytes": 18887,
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        },
+        {
+          "code": "350182",
+          "kind": "application",
+          "scenario": "filled",
+          "bytes": 12105,
+          "sha256": "a4d74aa971e066cd9ed4d5c4b284714aa42908acf822097b32d5d467b820b9e5"
+        },
+        {
+          "code": "350182",
+          "kind": "application",
+          "scenario": "blank",
+          "bytes": 13093,
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350182",
+          "kind": "evidence",
+          "scenario": "filled",
+          "bytes": 16658,
+          "sha256": "3447647c3ed78b2598861b1ef8ea0c632249f922d0a219f5e64793cf6ab883e4"
+        },
+        {
+          "code": "350182",
+          "kind": "evidence",
+          "scenario": "blank",
+          "bytes": 18805,
+          "sha256": "511d213073af6e25b0f9f8ed2b914b7b31ee47bf6cef2fbb85a0422e3d6a4f56"
+        }
+      ]
+    }
+  },
+  "ci": {
+    "url": "https://github.com/DerpZhenjun/LabourLawyer/actions/runs/41144487028",
+    "locked_backend_tests": 339,
+    "separate_guarded_crash_tests": 2,
+    "web_and_mini_build": "PASS",
+    "committed_drift": "PASS"
+  },
+  "preservation": {
+    "existing_raw_history_current_outbox_jobs_schema_WOR": true,
+    "WAL_consistent_backups_retained": true,
+    "six_preexisting_dirty_user_code_files_sha256_unchanged": true,
+    "real_user_or_case_data_modified": false
+  },
+  "release_preview5": {
+    "tag": "v1.2.0-preview.5",
+    "immutable_client_source": "61b712c8349896fbc2720bb7bf336c5fbdf14d70",
+    "nine_public_assets_unchanged": true,
+    "snapshot_guides": 209,
+    "clients_read_the_selected_backend_current_data": true,
+    "new_APK_required_for_this_backend_only_batch": false
+  },
+  "limitations": [
+    "Nationwide county/functional-zone coverage incomplete",
+    "All six guides remain partial: committee names, samples and authenticated submission not certified",
+    "No real government application submitted",
+    "No screenshot acceptance",
+    "No fresh physical USB install/public TLS/Windows trusted signature/WeChat publication claim",
+    "Warm-start and screenshot-optout code remains uncommitted and undeployed at this acceptance"
+  ]
+}

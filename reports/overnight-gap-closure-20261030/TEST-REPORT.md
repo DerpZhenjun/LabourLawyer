@@ -1,5 +1,13 @@
 # 本轮交付与继续核验记录
 
+最新核验于2026-10-31：本机与Ubuntu均为215份当地指南、198个可填写生成地区；运行源码`ab837b304770e5aeaf1c70adcd0d60d11f666412`。连江、罗源、闽清、永泰、福清、长乐六地已完成增量发布及44份合格原生下载，详见[六地上线验收](localities/fujian-j/rollout-20261031/TEST-REPORT.md)。每地保留自身来源，六地指南仍为部分核实，全国未完成。
+
+最新发行版为[preview.5](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.5)，9附件已实际匿名下载校验。其不可变客户端与Ubuntu快照source61/209份指南保留，运行后端已更新为215份，客户端读取后端当前资料。Linux新增采集链路4条公开问题已取得真实OpenClaw完整回读回执、待投递0、AI分析0；每120秒同步仍依赖Windows维护端及独立网关在线。来源、发布、文件与回归证据见上述新报告和[发行下载证据](release-preview5/PUBLIC-DOWNLOADS.json)。
+
+热启动优化和无截图采集器已有隔离测试，仍待独立提交、完整CI及实际部署，不作为本次运行源码中的能力。公网可信TLS、Windows可信代码签名、实体手机更新及微信发布尚未完成。
+
+## 前批次交付留档
+
 2026-10-31。运行源码为 `a79bad96b83ba1442858873a455e4cb2dbe24188`。这是可运行预览版的增量交付，全国地区与商业上线条件尚未全部完成。
 
 直接查看：[主站](http://127.0.0.1:5173/) · [Ubuntu网页与API](http://192.168.110.81:8088/) · [数字人](http://192.168.110.81:8089/) · [9附件发行版](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.4)。局域网地址不代表公网部署。
