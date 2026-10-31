@@ -53,6 +53,7 @@ TESTS = (
     'test_generated_document_storage',
     'test_regional_issue_public_urls',
     'test_service_capabilities',
+    'test_collector_without_screenshots',
     'test_linux_guide_collector',
     'test_collector_issue_events',
     'test_collector_issue_wiring',

@@ -64,8 +64,11 @@ class CollectorConfig:
     max_attachments: int = 6
     max_attachment_bytes: int = 20 * 1024 * 1024
     issue_outbox: Path | None = None
+    capture_screenshots: bool = True
 
     def __post_init__(self):
+        if type(self.capture_screenshots) is not bool:
+            raise ValueError('capture_screenshots must be a boolean')
         for name in ('data_dir', 'release_dir', 'browser_executable'):
             if not Path(getattr(self,name)).expanduser().is_absolute():
                 raise ValueError('Collector paths must be absolute')
@@ -518,11 +521,29 @@ async def click_document_control(config,page,target,record,folder,index):
         scratch.unlink(missing_ok=True)
 
 
+def _screenshot_omission(config):
+    return {} if config.capture_screenshots else {
+        'screenshot_capture': {'enabled': False, 'state': 'omitted_by_configuration'}}
+
+
+async def _capture_text_snapshot(page, folder, prefix, result):
+    """Bounded DOM evidence only; never substitute an image or retry capture."""
+    for suffix in ('txt', 'html'):
+        name=prefix+'.'+suffix
+        try:
+            operation=page.locator('body').inner_text(timeout=3000) if suffix=='txt' else page.content()
+            content=await asyncio.wait_for(operation,3)
+            (folder/name).write_text(content,encoding='utf8')
+        except Exception as exc:
+            result.setdefault('text_capture_failures',[]).append({'file':name,'error_type':type(exc).__name__})
+
+
 async def capture_official_guide(config, job, folder):
     from playwright.async_api import async_playwright
     folder.mkdir(parents=True, exist_ok=False, mode=0o700)
     result={'requested_url':job['url'], 'region':job['region'], 'started_at':now(),
-            'state':'unverified','service_verified':False,'model_used':False,'attachments':[], 'failures':[]}
+            'state':'unverified','service_verified':False,'model_used':False,'attachments':[], 'failures':[],
+            **_screenshot_omission(config)}
     addresses={}
     document_phase={'active':False}
 
@@ -560,7 +581,8 @@ async def capture_official_guide(config, job, folder):
             text='\n'.join(texts)
             (folder/'page.txt').write_text(text,encoding='utf8')
             (folder/'page.html').write_text(await page.content(),encoding='utf8')
-            await page.screenshot(path=str(folder/'page.png'),full_page=False)
+            if config.capture_screenshots:
+                await page.screenshot(path=str(folder/'page.png'),full_page=False)
             result['state']=classify_observation(text,result.get('http_status'),main_frame_auth=bool(result.get('auth_boundary_url')))
             result['guide_detected']=result['state']=='guide_observed'
             result['review_state']='pending_human_review'
@@ -615,7 +637,10 @@ async def capture_official_guide(config, job, folder):
                             await asyncio.sleep(config.min_interval_seconds)
                             target=page.locator(control['selector'])
                             await target.scroll_into_view_if_needed(timeout=4000)
-                            await page.screenshot(path=str(folder/'materials.png'),full_page=False)
+                            if config.capture_screenshots:
+                                await page.screenshot(path=str(folder/'materials.png'),full_page=False)
+                            else:
+                                await _capture_text_snapshot(page,folder,'materials',result)
                             document_phase['active']=True
                             await click_document_control(config,page,target,record,folder,len(result['attachments']))
                         except Exception as exc:record.update(state='auth_required' if result.get('auth_boundary_url') else 'failed',error=str(exc)[:500])
@@ -623,8 +648,11 @@ async def capture_official_guide(config, job, folder):
                         if result.get('auth_boundary_url'):break
         except Exception as exc:
             result.update(state='auth_required' if result.get('auth_boundary_url') else 'network_failed',error=str(exc)[:1500],final_url=page.url,observed_at=now())
-            try:await page.screenshot(path=str(folder/'failure.png'))
-            except Exception:pass
+            if config.capture_screenshots:
+                try:await page.screenshot(path=str(folder/'failure.png'))
+                except Exception:pass
+            else:
+                await _capture_text_snapshot(page,folder,'failure',result)
         finally:
             await context.close();await browser.close()
     result['completed_at']=now()
@@ -657,7 +685,7 @@ async def run_worker(config, *, once=False, stop=None):
                     result=await asyncio.wait_for(capture_official_guide(config,job,folder),config.job_timeout_seconds)
                 except Exception as exc:
                     folder.mkdir(parents=True,exist_ok=True)
-                    result={'state':'runtime_failed','service_verified':False,'model_used':False,'error':str(exc)[:2000],'observed_at':now(),'evidence':evidence_manifest(folder)}
+                    result={'state':'runtime_failed','service_verified':False,'model_used':False,'error':str(exc)[:2000],'observed_at':now(),'evidence':evidence_manifest(folder),**_screenshot_omission(config)}
                     save_json(folder/'result.json',result)
                 result['evidence_directory']=str(folder.relative_to(queue.root)).replace('\\','/')
                 queue.finish(job['id'],result)

@@ -18,9 +18,12 @@
   "job_timeout_seconds": 120,
   "navigation_timeout_seconds": 45,
   "max_attachments": 6,
-  "max_attachment_bytes": 20971520
+  "max_attachment_bytes": 20971520,
+  "capture_screenshots": false
 }
 ```
+
+`capture_screenshots` 只接受布尔值。设为 `false` 时跳过页面、材料及失败截图，保留可获取的正文、HTML、附件、时间和SHA，并在原始结果中记录 `screenshot_capture.state=omitted_by_configuration`；无法读取正文时记录具体失败类型。它不生成替代图片，也不把未保存截图标为已保存。兼容旧配置的默认值为 `true`。修改配置须使用支持此字段的新worker并保留原有任务和证据；仅修改JSON不会更新正在运行的旧进程。此选项不改变网址、端口、登录、验证码或下载校验边界。
 
 使用应用独占的 `collector-venv` 安装 `deploy/collector-requirements.txt`，以 `--require-hashes --only-binary=:all:` 校验固定的 Ubuntu 24.04 x86_64 / CPython 3.12 wheels。安装可用的受支持 Chrome；启动时始终启用 Chromium sandbox 和证书检查。Ubuntu AppArmor 限制可能阻止用户下载的 Chromium：应安装使用发行版既有 Chrome profile 的正式浏览器，保留系统安全配置。首次安装应核对 Google 官方签名的仓库清单、包 SHA256、apt dry-run 和安装后浏览器默认项。
 
