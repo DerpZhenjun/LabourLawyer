@@ -28,13 +28,13 @@ class PutianOwnProviderTests(unittest.TestCase):
         for root in [None,'']:
             with self.assertRaises(ValueError):own.parse_capture('350302',root=root)
     def test_phase_independent_raw_source_and_missing_approval_refuse(self):
-        self.assertRegex(own.WORD_SHA,r'^[a-f0-9]{64}$');self.assertRegex(own.STAGE_SHA256,r'^[a-f0-9]{64}$');self.assertIsNone(own.PUBLICATION_SHA256)
+        self.assertRegex(own.WORD_SHA,r'^[a-f0-9]{64}$');self.assertRegex(own.STAGE_SHA256,r'^[a-f0-9]{64}$');self.assertEqual(own.PUBLICATION_SHA256,'7a9a65f57253d24588014dd254471f039ac40099cad319706f2ea10afb98c813')
         for code in own.REGIONS:
             g=own.parse_capture(code,root=ROOT);self.assertFalse(own.with_capabilities(g,root=ROOT)['can_generate'])
             stage=own.staged_candidate(code,root=ROOT);self.assertTrue(stage['can_generate']);self.assertFalse(stage['published'])
             self.assertEqual([t['document_types'] for t in stage['templates'] if t['can_generate']],[['application'],['evidence']])
             self.assertTrue(all(t['material_id'] is None for t in stage['templates']))
-            with self.assertRaises(ValueError):own._published(code,ROOT)
+            published=own._published(code,ROOT);self.assertTrue(published['published']);self.assertTrue(published['can_generate']);self.assertEqual(published['verification_status'],'partial')
             with patch.object(own,'STAGE_SHA256',None),patch.object(own,'WORD_SHA',None):
                 with self.assertRaises(ValueError):own.staged_candidate(code,root=ROOT)
                 with self.assertRaises(ValueError):own.checked_adapter(g,g['templates'][0],'application',root=ROOT)

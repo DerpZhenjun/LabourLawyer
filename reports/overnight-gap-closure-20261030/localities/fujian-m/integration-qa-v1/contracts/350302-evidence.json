@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "context": {
+    "province": "fujian",
+    "city": "莆田市",
+    "district": "城厢区",
+    "region_code": "350302",
+    "source_id": "28a4418211ce36fedd8069f6",
+    "version": 1,
+    "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+    "kind": "evidence",
+    "mode": "blank",
+    "adapter": "fujian_putian_own_blank_oct31m_v1",
+    "schema_id": "fujian-m-350302-evidence-v1",
+    "schema_version": 1,
+    "source_version": "f32d80b4e158a8122c8f7469a0a9ca533af838d5dc6327240c7f8ddc3cbb8abf",
+    "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "template_version": "sha256:d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+  },
+  "fields": [
+    {
+      "key": "evidenceList",
+      "label": "证据清单",
+      "type": "object_list",
+      "maxItems": 9,
+      "fields": [
+        {
+          "key": "name",
+          "label": "证据名称",
+          "type": "text",
+          "maxLength": 60,
+          "nullable": false
+        },
+        {
+          "key": "pageCount",
+          "label": "页数",
+          "type": "text",
+          "maxLength": 4,
+          "nullable": false
+        },
+        {
+          "key": "originalType",
+          "label": "原件/复印件",
+          "type": "text",
+          "maxLength": 4,
+          "nullable": false
+        },
+        {
+          "key": "purpose",
+          "label": "证明对象",
+          "type": "text",
+          "maxLength": 80,
+          "nullable": false
+        },
+        {
+          "key": "pageRange",
+          "label": "页码",
+          "type": "text",
+          "maxLength": 32,
+          "nullable": false
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "evidenceList": [
+      {
+        "name": "",
+        "pageCount": "",
+        "originalType": "",
+        "purpose": "",
+        "pageRange": ""
+      }
+    ]
+  },
+  "policy": {
+    "unknown_fields": "reject",
+    "invalid_xml": "reject",
+    "capacity_is_official_requirement": false,
+    "capacity_is_legal_requirement": false,
+    "trim_text": true,
+    "text_controls": "newline_only",
+    "committee_date_signature_copies_fields": "not accepted"
+  },
+  "contract_id": "62da9d0700dfb87ef8e9ee52defb2519cd4c23dd844e9db262334d46ffef6b85"
+}

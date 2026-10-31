@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "context": {
+    "province": "fujian",
+    "city": "莆田市",
+    "district": "城厢区",
+    "region_code": "350302",
+    "source_id": "28a4418211ce36fedd8069f6",
+    "version": 1,
+    "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+    "kind": "application",
+    "mode": "blank",
+    "adapter": "fujian_putian_own_blank_oct31m_v1",
+    "schema_id": "fujian-m-350302-application-v1",
+    "schema_version": 1,
+    "source_version": "f32d80b4e158a8122c8f7469a0a9ca533af838d5dc6327240c7f8ddc3cbb8abf",
+    "template_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+    "template_version": "sha256:093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+  },
+  "fields": [
+    {
+      "key": "applicantName",
+      "label": "申请人",
+      "type": "text",
+      "maxLength": 180,
+      "nullable": false
+    },
+    {
+      "key": "agentName",
+      "label": "委托代理人",
+      "type": "text",
+      "maxLength": 180,
+      "nullable": false
+    },
+    {
+      "key": "respondentName",
+      "label": "被申请人",
+      "type": "text",
+      "maxLength": 180,
+      "nullable": false
+    },
+    {
+      "key": "requests",
+      "label": "仲裁请求",
+      "type": "text_list",
+      "maxItems": 3,
+      "maxLength": 360
+    },
+    {
+      "key": "factsReason",
+      "label": "事实与理由",
+      "type": "text",
+      "maxLength": 2400,
+      "nullable": false
+    }
+  ],
+  "defaults": {
+    "applicantName": "",
+    "agentName": "",
+    "respondentName": "",
+    "requests": [
+      ""
+    ],
+    "factsReason": ""
+  },
+  "policy": {
+    "unknown_fields": "reject",
+    "invalid_xml": "reject",
+    "capacity_is_official_requirement": false,
+    "capacity_is_legal_requirement": false,
+    "trim_text": true,
+    "text_controls": "newline_only",
+    "committee_date_signature_copies_fields": "not accepted"
+  },
+  "contract_id": "f34fedd65d82dbf48ae302b739c62e6012810e459b47a04c4c2493224f884a1c"
+}

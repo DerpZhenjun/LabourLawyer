@@ -1,0 +1,1844 @@
+{
+  "status": "PASS",
+  "scope": "isolated_staged_own_Putian_candidate_not_Main_or_Ubuntu_live",
+  "at": "2026-10-31T05:37:57.079738+00:00",
+  "finished_at": "2026-10-31T05:38:21.721452+00:00",
+  "identities": [
+    {
+      "province": "fujian",
+      "city": "莆田市",
+      "district": "城厢区",
+      "region_code": "350302",
+      "source_id": "28a4418211ce36fedd8069f6",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+      "service_code": "11350302003700205G400201430200Y01",
+      "authority": "城厢区人力资源和社会保障局",
+      "source_version": "f32d80b4e158a8122c8f7469a0a9ca533af838d5dc6327240c7f8ddc3cbb8abf",
+      "candidate_version": 1
+    },
+    {
+      "province": "fujian",
+      "city": "莆田市",
+      "district": "涵江区",
+      "region_code": "350303",
+      "source_id": "27f41dab3a9d19c7d144c8de",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=B9DF60152E3BE1A2BA326311AD809DC3&infoType=1",
+      "service_code": "11350303003706658F400201430200201",
+      "authority": "涵江区人力资源和社会保障局",
+      "source_version": "454a1a56e56177d5be63d838b9b6ad97d5a729d4ee639efd99a2cdbb58a1d7b6",
+      "candidate_version": 2
+    }
+  ],
+  "actual_candidate_native_downloads": 8,
+  "strict_contracts": 4,
+  "distinct_own_sources": 2,
+  "accepted_downloads": [
+    {
+      "at": "2026-10-31T05:38:04.016039+00:00",
+      "code": "350302",
+      "kind": "application",
+      "scenario": "filled",
+      "bytes": 12023,
+      "sha256": "95d691dc1cc3b45a01ea09de1130afae4b333d2c4006f97060024cca5795174f",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "城厢区",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "version": 1,
+        "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "f34fedd65d82dbf48ae302b739c62e6012810e459b47a04c4c2493224f884a1c",
+        "data": {
+          "applicantName": "虚构城厢区申请人甲（仅测试）",
+          "agentName": "",
+          "respondentName": "虚构城厢区乙公司（仅测试）",
+          "requests": [
+            "虚构请求，仅验证自身候选映射，不提出真实申请。"
+          ],
+          "factsReason": "所有内容均为虚构，不涉及真实案件或当事人。"
+        }
+      },
+      "response_headers": {
+        "cache-control": "no-store",
+        "content-disposition": "attachment; filename*=utf-8''%E5%9F%8E%E5%8E%A2%E5%8C%BA%E7%94%B3%E8%AF%B7%E4%B9%A6-%E5%AE%98%E6%96%B9%E7%A9%BA%E7%99%BD%E8%A1%A8%E6%A0%BC%E5%A1%AB%E5%86%99.docx",
+        "content-length": "12023",
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "x-document-origin": "official-blank-filled",
+        "x-form-contract-id": "f34fedd65d82dbf48ae302b739c62e6012810e459b47a04c4c2493224f884a1c",
+        "x-guide-source-id": "28a4418211ce36fedd8069f6",
+        "x-guide-version": "1"
+      },
+      "template_binding": {
+        "verified_via": "own frozen source+live lookup+exact live contract and POST",
+        "material_id": null,
+        "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+        "template_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+      },
+      "native_download_event": true,
+      "native_download_failure": null,
+      "evidence_document": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350302-normal-application.docx",
+      "whole_and_all_ZIP_members_equal": true,
+      "parts": [
+        {
+          "part": "[Content_Types].xml",
+          "bytes": 1432,
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "part": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "part": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "part": "customXml/item1.xml",
+          "bytes": 258,
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "part": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "part": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "docProps/app.xml",
+          "bytes": 624,
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "part": "docProps/core.xml",
+          "bytes": 636,
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "part": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "part": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/_rels/document.xml.rels",
+          "bytes": 822,
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "part": "word/document.xml",
+          "bytes": 21843,
+          "sha256": "b4824462b7c91dea11e335ec46fb28582b45907ee47c6056cdbed1be028a9e95"
+        },
+        {
+          "part": "word/fontTable.xml",
+          "bytes": 3340,
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "part": "word/settings.xml",
+          "bytes": 2886,
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "part": "word/styles.xml",
+          "bytes": 28162,
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "part": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-31T05:38:05.541426+00:00",
+      "code": "350302",
+      "kind": "application",
+      "scenario": "blank",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "城厢区",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "version": 1,
+        "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "f34fedd65d82dbf48ae302b739c62e6012810e459b47a04c4c2493224f884a1c",
+        "data": {
+          "applicantName": "",
+          "agentName": "",
+          "respondentName": "",
+          "requests": [
+            ""
+          ],
+          "factsReason": ""
+        }
+      },
+      "response_headers": {
+        "cache-control": "no-store",
+        "content-disposition": "attachment; filename*=utf-8''%E5%9F%8E%E5%8E%A2%E5%8C%BA%E7%94%B3%E8%AF%B7%E4%B9%A6-%E5%AE%98%E6%96%B9%E7%A9%BA%E7%99%BD%E8%A1%A8%E6%A0%BC%E5%A1%AB%E5%86%99.docx",
+        "content-length": "13093",
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "x-document-origin": "official-blank-filled",
+        "x-form-contract-id": "f34fedd65d82dbf48ae302b739c62e6012810e459b47a04c4c2493224f884a1c",
+        "x-guide-source-id": "28a4418211ce36fedd8069f6",
+        "x-guide-version": "1"
+      },
+      "template_binding": {
+        "verified_via": "own frozen source+live lookup+exact live contract and POST",
+        "material_id": null,
+        "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+        "template_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+      },
+      "native_download_event": true,
+      "native_download_failure": null,
+      "evidence_document": "reports/overnight-gap-closure-20261030/localities/fujian-m-source-projection/chengxiang-350302/application-own-format.docx",
+      "whole_and_all_ZIP_members_equal": true,
+      "parts": [
+        {
+          "part": "[Content_Types].xml",
+          "bytes": 1432,
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "part": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "part": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "part": "customXml/item1.xml",
+          "bytes": 258,
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "part": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "part": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "docProps/app.xml",
+          "bytes": 624,
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "part": "docProps/core.xml",
+          "bytes": 636,
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "part": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "part": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/_rels/document.xml.rels",
+          "bytes": 822,
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "part": "word/document.xml",
+          "bytes": 22023,
+          "sha256": "829ad217cbe0fabc6bd9aa50f7c71c9cb8009585574a5e838d2453d7bbd02fb1"
+        },
+        {
+          "part": "word/fontTable.xml",
+          "bytes": 3340,
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "part": "word/settings.xml",
+          "bytes": 2886,
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "part": "word/styles.xml",
+          "bytes": 28162,
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "part": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-31T05:38:09.563599+00:00",
+      "code": "350302",
+      "kind": "evidence",
+      "scenario": "filled",
+      "bytes": 16731,
+      "sha256": "63d1427f419f1c7f0babab5d24870c83f6ebf64cc7ad7a7f76fa8b49aef8a439",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "城厢区",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "version": 1,
+        "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+        "kind": "evidence",
+        "mode": "blank",
+        "contract_id": "62da9d0700dfb87ef8e9ee52defb2519cd4c23dd844e9db262334d46ffef6b85",
+        "data": {
+          "evidenceList": [
+            {
+              "name": "虚构城厢区材料甲",
+              "pageCount": "1",
+              "originalType": "复印件",
+              "purpose": "虚构测试，仅核对候选表格。",
+              "pageRange": "1"
+            }
+          ]
+        }
+      },
+      "response_headers": {
+        "cache-control": "no-store",
+        "content-disposition": "attachment; filename*=utf-8''%E5%9F%8E%E5%8E%A2%E5%8C%BA%E8%AF%81%E6%8D%AE%E6%B8%85%E5%8D%95-%E5%AE%98%E6%96%B9%E7%A9%BA%E7%99%BD%E8%A1%A8%E6%A0%BC%E5%A1%AB%E5%86%99.docx",
+        "content-length": "16731",
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "x-document-origin": "official-blank-filled",
+        "x-form-contract-id": "62da9d0700dfb87ef8e9ee52defb2519cd4c23dd844e9db262334d46ffef6b85",
+        "x-guide-source-id": "28a4418211ce36fedd8069f6",
+        "x-guide-version": "1"
+      },
+      "template_binding": {
+        "verified_via": "own frozen source+live lookup+exact live contract and POST",
+        "material_id": null,
+        "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+        "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+      },
+      "native_download_event": true,
+      "native_download_failure": null,
+      "evidence_document": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350302-normal-evidence.docx",
+      "whole_and_all_ZIP_members_equal": true,
+      "parts": [
+        {
+          "part": "[Content_Types].xml",
+          "bytes": 1692,
+          "sha256": "9de9c14934c2a6500cd9c3ccfaeb2aee60797f4fa00d200554f39cae73dd5474"
+        },
+        {
+          "part": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "part": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "part": "customXml/_rels/item2.xml.rels",
+          "bytes": 296,
+          "sha256": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5"
+        },
+        {
+          "part": "customXml/item1.xml",
+          "bytes": 340,
+          "sha256": "1055a368a3a05dbeb1c4d9692ad2bafe33a19126a8fa0453a0dedf0f68c62e4c"
+        },
+        {
+          "part": "customXml/item2.xml",
+          "bytes": 289,
+          "sha256": "b30b8fd758aa47aada70ee7d8d8287349d6a21eb03c79bcb2e8930a1789022cc"
+        },
+        {
+          "part": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "part": "customXml/itemProps2.xml",
+          "bytes": 236,
+          "sha256": "6006fb22c96d0a3b11668eab82eff80ca82bd94d53611c889a08885f42109dcf"
+        },
+        {
+          "part": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "docProps/app.xml",
+          "bytes": 625,
+          "sha256": "09eb73003d15a4116db88ffe77b7113846b701ad99ba1cb74d62071e66ccb48a"
+        },
+        {
+          "part": "docProps/core.xml",
+          "bytes": 641,
+          "sha256": "4f6464ef61dd7b09b7c3582ac99709ca20f64f2dc94f30ac39a7d6a4dd593aac"
+        },
+        {
+          "part": "docProps/custom.xml",
+          "bytes": 526,
+          "sha256": "75169350f0a941e01d315ece2d5416a31c5d9c6fac8e16b637adfbcfb633050a"
+        },
+        {
+          "part": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/_rels/document.xml.rels",
+          "bytes": 1092,
+          "sha256": "99b36725e7b90825ac41198f6b37570255b4aae17967ea02538c308410496b9f"
+        },
+        {
+          "part": "word/document.xml",
+          "bytes": 16581,
+          "sha256": "e97ca58684e093b5cc677f1cc2907da9444b9cc3335d37ff1d8bcd63293317b7"
+        },
+        {
+          "part": "word/fontTable.xml",
+          "bytes": 3043,
+          "sha256": "d5665956a6a9611d1ed5ad2707485731768a067c3886021bacf6e6721dae2c6f"
+        },
+        {
+          "part": "word/footer1.xml",
+          "bytes": 7643,
+          "sha256": "bb74fdd24d2af8916bb4082667d7619f3c7b8d918814a32e046252522c42bf66"
+        },
+        {
+          "part": "word/settings.xml",
+          "bytes": 3375,
+          "sha256": "2ead81363b7690e0d5e2fcb96b5a206250ccad32b8dd7f7d537e96bef5852d6a"
+        },
+        {
+          "part": "word/styles.xml",
+          "bytes": 27124,
+          "sha256": "b34cc5a41c0bd0901c8ac0a3aa58e71c1a42d61435b9b1241dd641f437189bf9"
+        },
+        {
+          "part": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-31T05:38:10.765809+00:00",
+      "code": "350302",
+      "kind": "evidence",
+      "scenario": "blank",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "城厢区",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "version": 1,
+        "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+        "kind": "evidence",
+        "mode": "blank",
+        "contract_id": "62da9d0700dfb87ef8e9ee52defb2519cd4c23dd844e9db262334d46ffef6b85",
+        "data": {
+          "evidenceList": [
+            {
+              "name": "",
+              "pageCount": "",
+              "originalType": "",
+              "purpose": "",
+              "pageRange": ""
+            }
+          ]
+        }
+      },
+      "response_headers": {
+        "cache-control": "no-store",
+        "content-disposition": "attachment; filename*=utf-8''%E5%9F%8E%E5%8E%A2%E5%8C%BA%E8%AF%81%E6%8D%AE%E6%B8%85%E5%8D%95-%E5%AE%98%E6%96%B9%E7%A9%BA%E7%99%BD%E8%A1%A8%E6%A0%BC%E5%A1%AB%E5%86%99.docx",
+        "content-length": "18887",
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "x-document-origin": "official-blank-filled",
+        "x-form-contract-id": "62da9d0700dfb87ef8e9ee52defb2519cd4c23dd844e9db262334d46ffef6b85",
+        "x-guide-source-id": "28a4418211ce36fedd8069f6",
+        "x-guide-version": "1"
+      },
+      "template_binding": {
+        "verified_via": "own frozen source+live lookup+exact live contract and POST",
+        "material_id": null,
+        "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+        "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+      },
+      "native_download_event": true,
+      "native_download_failure": null,
+      "evidence_document": "reports/overnight-gap-closure-20261030/localities/fujian-m-source-projection/chengxiang-350302/evidence-list-own-format.docx",
+      "whole_and_all_ZIP_members_equal": true,
+      "parts": [
+        {
+          "part": "[Content_Types].xml",
+          "bytes": 1692,
+          "sha256": "9de9c14934c2a6500cd9c3ccfaeb2aee60797f4fa00d200554f39cae73dd5474"
+        },
+        {
+          "part": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "part": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "part": "customXml/_rels/item2.xml.rels",
+          "bytes": 296,
+          "sha256": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5"
+        },
+        {
+          "part": "customXml/item1.xml",
+          "bytes": 340,
+          "sha256": "1055a368a3a05dbeb1c4d9692ad2bafe33a19126a8fa0453a0dedf0f68c62e4c"
+        },
+        {
+          "part": "customXml/item2.xml",
+          "bytes": 289,
+          "sha256": "b30b8fd758aa47aada70ee7d8d8287349d6a21eb03c79bcb2e8930a1789022cc"
+        },
+        {
+          "part": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "part": "customXml/itemProps2.xml",
+          "bytes": 236,
+          "sha256": "6006fb22c96d0a3b11668eab82eff80ca82bd94d53611c889a08885f42109dcf"
+        },
+        {
+          "part": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "docProps/app.xml",
+          "bytes": 625,
+          "sha256": "09eb73003d15a4116db88ffe77b7113846b701ad99ba1cb74d62071e66ccb48a"
+        },
+        {
+          "part": "docProps/core.xml",
+          "bytes": 641,
+          "sha256": "4f6464ef61dd7b09b7c3582ac99709ca20f64f2dc94f30ac39a7d6a4dd593aac"
+        },
+        {
+          "part": "docProps/custom.xml",
+          "bytes": 526,
+          "sha256": "75169350f0a941e01d315ece2d5416a31c5d9c6fac8e16b637adfbcfb633050a"
+        },
+        {
+          "part": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/_rels/document.xml.rels",
+          "bytes": 1092,
+          "sha256": "99b36725e7b90825ac41198f6b37570255b4aae17967ea02538c308410496b9f"
+        },
+        {
+          "part": "word/document.xml",
+          "bytes": 52388,
+          "sha256": "94c138c79cb85b6bff100665d098a34b26ac30672f6f8d01b378ed03e799ac70"
+        },
+        {
+          "part": "word/fontTable.xml",
+          "bytes": 3043,
+          "sha256": "d5665956a6a9611d1ed5ad2707485731768a067c3886021bacf6e6721dae2c6f"
+        },
+        {
+          "part": "word/footer1.xml",
+          "bytes": 7643,
+          "sha256": "bb74fdd24d2af8916bb4082667d7619f3c7b8d918814a32e046252522c42bf66"
+        },
+        {
+          "part": "word/settings.xml",
+          "bytes": 3375,
+          "sha256": "2ead81363b7690e0d5e2fcb96b5a206250ccad32b8dd7f7d537e96bef5852d6a"
+        },
+        {
+          "part": "word/styles.xml",
+          "bytes": 27124,
+          "sha256": "b34cc5a41c0bd0901c8ac0a3aa58e71c1a42d61435b9b1241dd641f437189bf9"
+        },
+        {
+          "part": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-31T05:38:14.318805+00:00",
+      "code": "350303",
+      "kind": "application",
+      "scenario": "filled",
+      "bytes": 12023,
+      "sha256": "5c9fed94dc4515b26b4966a83d31970da8a69cc5f43e9d3e76e79f990fd995ac",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "涵江区",
+        "source_id": "27f41dab3a9d19c7d144c8de",
+        "version": 2,
+        "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "8b2439e4dc5011ad194aeda03dea3d6bc08fc76b6ee216059ae1e7de4ec4dc5e",
+        "data": {
+          "applicantName": "虚构涵江区申请人甲（仅测试）",
+          "agentName": "",
+          "respondentName": "虚构涵江区乙公司（仅测试）",
+          "requests": [
+            "虚构请求，仅验证自身候选映射，不提出真实申请。"
+          ],
+          "factsReason": "所有内容均为虚构，不涉及真实案件或当事人。"
+        }
+      },
+      "response_headers": {
+        "cache-control": "no-store",
+        "content-disposition": "attachment; filename*=utf-8''%E6%B6%B5%E6%B1%9F%E5%8C%BA%E7%94%B3%E8%AF%B7%E4%B9%A6-%E5%AE%98%E6%96%B9%E7%A9%BA%E7%99%BD%E8%A1%A8%E6%A0%BC%E5%A1%AB%E5%86%99.docx",
+        "content-length": "12023",
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "x-document-origin": "official-blank-filled",
+        "x-form-contract-id": "8b2439e4dc5011ad194aeda03dea3d6bc08fc76b6ee216059ae1e7de4ec4dc5e",
+        "x-guide-source-id": "27f41dab3a9d19c7d144c8de",
+        "x-guide-version": "2"
+      },
+      "template_binding": {
+        "verified_via": "own frozen source+live lookup+exact live contract and POST",
+        "material_id": null,
+        "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+        "template_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+      },
+      "native_download_event": true,
+      "native_download_failure": null,
+      "evidence_document": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350303-normal-application.docx",
+      "whole_and_all_ZIP_members_equal": true,
+      "parts": [
+        {
+          "part": "[Content_Types].xml",
+          "bytes": 1432,
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "part": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "part": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "part": "customXml/item1.xml",
+          "bytes": 258,
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "part": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "part": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "docProps/app.xml",
+          "bytes": 624,
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "part": "docProps/core.xml",
+          "bytes": 636,
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "part": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "part": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/_rels/document.xml.rels",
+          "bytes": 822,
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "part": "word/document.xml",
+          "bytes": 21843,
+          "sha256": "52aed81d6c15363253c0dd61c40c7e79ea51839f275f1509a6229e33725702d7"
+        },
+        {
+          "part": "word/fontTable.xml",
+          "bytes": 3340,
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "part": "word/settings.xml",
+          "bytes": 2886,
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "part": "word/styles.xml",
+          "bytes": 28162,
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "part": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-31T05:38:15.628603+00:00",
+      "code": "350303",
+      "kind": "application",
+      "scenario": "blank",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "涵江区",
+        "source_id": "27f41dab3a9d19c7d144c8de",
+        "version": 2,
+        "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "8b2439e4dc5011ad194aeda03dea3d6bc08fc76b6ee216059ae1e7de4ec4dc5e",
+        "data": {
+          "applicantName": "",
+          "agentName": "",
+          "respondentName": "",
+          "requests": [
+            ""
+          ],
+          "factsReason": ""
+        }
+      },
+      "response_headers": {
+        "cache-control": "no-store",
+        "content-disposition": "attachment; filename*=utf-8''%E6%B6%B5%E6%B1%9F%E5%8C%BA%E7%94%B3%E8%AF%B7%E4%B9%A6-%E5%AE%98%E6%96%B9%E7%A9%BA%E7%99%BD%E8%A1%A8%E6%A0%BC%E5%A1%AB%E5%86%99.docx",
+        "content-length": "13093",
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "x-document-origin": "official-blank-filled",
+        "x-form-contract-id": "8b2439e4dc5011ad194aeda03dea3d6bc08fc76b6ee216059ae1e7de4ec4dc5e",
+        "x-guide-source-id": "27f41dab3a9d19c7d144c8de",
+        "x-guide-version": "2"
+      },
+      "template_binding": {
+        "verified_via": "own frozen source+live lookup+exact live contract and POST",
+        "material_id": null,
+        "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+        "template_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+      },
+      "native_download_event": true,
+      "native_download_failure": null,
+      "evidence_document": "reports/overnight-gap-closure-20261030/localities/fujian-m-source-projection/hanjiang-350303/application-own-format.docx",
+      "whole_and_all_ZIP_members_equal": true,
+      "parts": [
+        {
+          "part": "[Content_Types].xml",
+          "bytes": 1432,
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "part": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "part": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "part": "customXml/item1.xml",
+          "bytes": 258,
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "part": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "part": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "docProps/app.xml",
+          "bytes": 624,
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "part": "docProps/core.xml",
+          "bytes": 636,
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "part": "docProps/custom.xml",
+          "bytes": 525,
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "part": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/_rels/document.xml.rels",
+          "bytes": 822,
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "part": "word/document.xml",
+          "bytes": 22023,
+          "sha256": "829ad217cbe0fabc6bd9aa50f7c71c9cb8009585574a5e838d2453d7bbd02fb1"
+        },
+        {
+          "part": "word/fontTable.xml",
+          "bytes": 3340,
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "part": "word/settings.xml",
+          "bytes": 2886,
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "part": "word/styles.xml",
+          "bytes": 28162,
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "part": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-31T05:38:18.535212+00:00",
+      "code": "350303",
+      "kind": "evidence",
+      "scenario": "filled",
+      "bytes": 16731,
+      "sha256": "c8306ef92310e9092edb7aa5d47251a55d3ce1893ed54263fc4cb7726bebe962",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "涵江区",
+        "source_id": "27f41dab3a9d19c7d144c8de",
+        "version": 2,
+        "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+        "kind": "evidence",
+        "mode": "blank",
+        "contract_id": "1dad9fb512fa70bc82dc266bb6c203d1a9ab2c3fe2ed120feb5df9cf85018fec",
+        "data": {
+          "evidenceList": [
+            {
+              "name": "虚构涵江区材料甲",
+              "pageCount": "1",
+              "originalType": "复印件",
+              "purpose": "虚构测试，仅核对候选表格。",
+              "pageRange": "1"
+            }
+          ]
+        }
+      },
+      "response_headers": {
+        "cache-control": "no-store",
+        "content-disposition": "attachment; filename*=utf-8''%E6%B6%B5%E6%B1%9F%E5%8C%BA%E8%AF%81%E6%8D%AE%E6%B8%85%E5%8D%95-%E5%AE%98%E6%96%B9%E7%A9%BA%E7%99%BD%E8%A1%A8%E6%A0%BC%E5%A1%AB%E5%86%99.docx",
+        "content-length": "16731",
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "x-document-origin": "official-blank-filled",
+        "x-form-contract-id": "1dad9fb512fa70bc82dc266bb6c203d1a9ab2c3fe2ed120feb5df9cf85018fec",
+        "x-guide-source-id": "27f41dab3a9d19c7d144c8de",
+        "x-guide-version": "2"
+      },
+      "template_binding": {
+        "verified_via": "own frozen source+live lookup+exact live contract and POST",
+        "material_id": null,
+        "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+        "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+      },
+      "native_download_event": true,
+      "native_download_failure": null,
+      "evidence_document": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350303-normal-evidence.docx",
+      "whole_and_all_ZIP_members_equal": true,
+      "parts": [
+        {
+          "part": "[Content_Types].xml",
+          "bytes": 1692,
+          "sha256": "9de9c14934c2a6500cd9c3ccfaeb2aee60797f4fa00d200554f39cae73dd5474"
+        },
+        {
+          "part": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "part": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "part": "customXml/_rels/item2.xml.rels",
+          "bytes": 296,
+          "sha256": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5"
+        },
+        {
+          "part": "customXml/item1.xml",
+          "bytes": 340,
+          "sha256": "1055a368a3a05dbeb1c4d9692ad2bafe33a19126a8fa0453a0dedf0f68c62e4c"
+        },
+        {
+          "part": "customXml/item2.xml",
+          "bytes": 289,
+          "sha256": "b30b8fd758aa47aada70ee7d8d8287349d6a21eb03c79bcb2e8930a1789022cc"
+        },
+        {
+          "part": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "part": "customXml/itemProps2.xml",
+          "bytes": 236,
+          "sha256": "6006fb22c96d0a3b11668eab82eff80ca82bd94d53611c889a08885f42109dcf"
+        },
+        {
+          "part": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "docProps/app.xml",
+          "bytes": 625,
+          "sha256": "09eb73003d15a4116db88ffe77b7113846b701ad99ba1cb74d62071e66ccb48a"
+        },
+        {
+          "part": "docProps/core.xml",
+          "bytes": 641,
+          "sha256": "4f6464ef61dd7b09b7c3582ac99709ca20f64f2dc94f30ac39a7d6a4dd593aac"
+        },
+        {
+          "part": "docProps/custom.xml",
+          "bytes": 526,
+          "sha256": "75169350f0a941e01d315ece2d5416a31c5d9c6fac8e16b637adfbcfb633050a"
+        },
+        {
+          "part": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/_rels/document.xml.rels",
+          "bytes": 1092,
+          "sha256": "99b36725e7b90825ac41198f6b37570255b4aae17967ea02538c308410496b9f"
+        },
+        {
+          "part": "word/document.xml",
+          "bytes": 16581,
+          "sha256": "c40cf1502b361e15a8f907c2232a23e79ba6f0e655cb2cf8f6eaa7424a09b341"
+        },
+        {
+          "part": "word/fontTable.xml",
+          "bytes": 3043,
+          "sha256": "d5665956a6a9611d1ed5ad2707485731768a067c3886021bacf6e6721dae2c6f"
+        },
+        {
+          "part": "word/footer1.xml",
+          "bytes": 7643,
+          "sha256": "bb74fdd24d2af8916bb4082667d7619f3c7b8d918814a32e046252522c42bf66"
+        },
+        {
+          "part": "word/settings.xml",
+          "bytes": 3375,
+          "sha256": "2ead81363b7690e0d5e2fcb96b5a206250ccad32b8dd7f7d537e96bef5852d6a"
+        },
+        {
+          "part": "word/styles.xml",
+          "bytes": 27124,
+          "sha256": "b34cc5a41c0bd0901c8ac0a3aa58e71c1a42d61435b9b1241dd641f437189bf9"
+        },
+        {
+          "part": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    },
+    {
+      "at": "2026-10-31T05:38:19.777202+00:00",
+      "code": "350303",
+      "kind": "evidence",
+      "scenario": "blank",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "涵江区",
+        "source_id": "27f41dab3a9d19c7d144c8de",
+        "version": 2,
+        "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+        "kind": "evidence",
+        "mode": "blank",
+        "contract_id": "1dad9fb512fa70bc82dc266bb6c203d1a9ab2c3fe2ed120feb5df9cf85018fec",
+        "data": {
+          "evidenceList": [
+            {
+              "name": "",
+              "pageCount": "",
+              "originalType": "",
+              "purpose": "",
+              "pageRange": ""
+            }
+          ]
+        }
+      },
+      "response_headers": {
+        "cache-control": "no-store",
+        "content-disposition": "attachment; filename*=utf-8''%E6%B6%B5%E6%B1%9F%E5%8C%BA%E8%AF%81%E6%8D%AE%E6%B8%85%E5%8D%95-%E5%AE%98%E6%96%B9%E7%A9%BA%E7%99%BD%E8%A1%A8%E6%A0%BC%E5%A1%AB%E5%86%99.docx",
+        "content-length": "18887",
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "x-document-origin": "official-blank-filled",
+        "x-form-contract-id": "1dad9fb512fa70bc82dc266bb6c203d1a9ab2c3fe2ed120feb5df9cf85018fec",
+        "x-guide-source-id": "27f41dab3a9d19c7d144c8de",
+        "x-guide-version": "2"
+      },
+      "template_binding": {
+        "verified_via": "own frozen source+live lookup+exact live contract and POST",
+        "material_id": null,
+        "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+        "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+      },
+      "native_download_event": true,
+      "native_download_failure": null,
+      "evidence_document": "reports/overnight-gap-closure-20261030/localities/fujian-m-source-projection/hanjiang-350303/evidence-list-own-format.docx",
+      "whole_and_all_ZIP_members_equal": true,
+      "parts": [
+        {
+          "part": "[Content_Types].xml",
+          "bytes": 1692,
+          "sha256": "9de9c14934c2a6500cd9c3ccfaeb2aee60797f4fa00d200554f39cae73dd5474"
+        },
+        {
+          "part": "_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "_rels/.rels",
+          "bytes": 737,
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "part": "customXml/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "customXml/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "customXml/_rels/item1.xml.rels",
+          "bytes": 296,
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "part": "customXml/_rels/item2.xml.rels",
+          "bytes": 296,
+          "sha256": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5"
+        },
+        {
+          "part": "customXml/item1.xml",
+          "bytes": 340,
+          "sha256": "1055a368a3a05dbeb1c4d9692ad2bafe33a19126a8fa0453a0dedf0f68c62e4c"
+        },
+        {
+          "part": "customXml/item2.xml",
+          "bytes": 289,
+          "sha256": "b30b8fd758aa47aada70ee7d8d8287349d6a21eb03c79bcb2e8930a1789022cc"
+        },
+        {
+          "part": "customXml/itemProps1.xml",
+          "bytes": 327,
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "part": "customXml/itemProps2.xml",
+          "bytes": 236,
+          "sha256": "6006fb22c96d0a3b11668eab82eff80ca82bd94d53611c889a08885f42109dcf"
+        },
+        {
+          "part": "docProps/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "docProps/app.xml",
+          "bytes": 625,
+          "sha256": "09eb73003d15a4116db88ffe77b7113846b701ad99ba1cb74d62071e66ccb48a"
+        },
+        {
+          "part": "docProps/core.xml",
+          "bytes": 641,
+          "sha256": "4f6464ef61dd7b09b7c3582ac99709ca20f64f2dc94f30ac39a7d6a4dd593aac"
+        },
+        {
+          "part": "docProps/custom.xml",
+          "bytes": 526,
+          "sha256": "75169350f0a941e01d315ece2d5416a31c5d9c6fac8e16b637adfbcfb633050a"
+        },
+        {
+          "part": "word/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/_rels/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/_rels/document.xml.rels",
+          "bytes": 1092,
+          "sha256": "99b36725e7b90825ac41198f6b37570255b4aae17967ea02538c308410496b9f"
+        },
+        {
+          "part": "word/document.xml",
+          "bytes": 52388,
+          "sha256": "94c138c79cb85b6bff100665d098a34b26ac30672f6f8d01b378ed03e799ac70"
+        },
+        {
+          "part": "word/fontTable.xml",
+          "bytes": 3043,
+          "sha256": "d5665956a6a9611d1ed5ad2707485731768a067c3886021bacf6e6721dae2c6f"
+        },
+        {
+          "part": "word/footer1.xml",
+          "bytes": 7643,
+          "sha256": "bb74fdd24d2af8916bb4082667d7619f3c7b8d918814a32e046252522c42bf66"
+        },
+        {
+          "part": "word/settings.xml",
+          "bytes": 3375,
+          "sha256": "2ead81363b7690e0d5e2fcb96b5a206250ccad32b8dd7f7d537e96bef5852d6a"
+        },
+        {
+          "part": "word/styles.xml",
+          "bytes": 27124,
+          "sha256": "b34cc5a41c0bd0901c8ac0a3aa58e71c1a42d61435b9b1241dd641f437189bf9"
+        },
+        {
+          "part": "word/theme/",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "part": "word/theme/theme1.xml",
+          "bytes": 6436,
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ]
+    }
+  ],
+  "actual_defaults_before_edit": [
+    {
+      "code": "350302",
+      "kind": "application",
+      "source_id": "28a4418211ce36fedd8069f6",
+      "version": 1,
+      "actual": {
+        "applicantName": "陈虚构",
+        "agentName": "",
+        "respondentName": "虚构青禾有限公司",
+        "requests": [
+          "请求支付虚构拖欠工资3000元。"
+        ],
+        "factsReason": "以下全部为软件演示的虚构情况。虚构单位拖欠示例工资3000元，双方协商未果，故提出上述请求。"
+      }
+    },
+    {
+      "code": "350302",
+      "kind": "evidence",
+      "source_id": "28a4418211ce36fedd8069f6",
+      "version": 1,
+      "actual": {
+        "evidenceList": [
+          {
+            "name": "虚构劳动合同",
+            "pageCount": "3",
+            "originalType": "复印件",
+            "purpose": "虚构示例：说明双方劳动关系。",
+            "pageRange": ""
+          }
+        ]
+      }
+    },
+    {
+      "code": "350303",
+      "kind": "application",
+      "source_id": "27f41dab3a9d19c7d144c8de",
+      "version": 2,
+      "actual": {
+        "applicantName": "陈虚构",
+        "agentName": "",
+        "respondentName": "虚构青禾有限公司",
+        "requests": [
+          "请求支付虚构拖欠工资3000元。"
+        ],
+        "factsReason": "以下全部为软件演示的虚构情况。虚构单位拖欠示例工资3000元，双方协商未果，故提出上述请求。"
+      }
+    },
+    {
+      "code": "350303",
+      "kind": "evidence",
+      "source_id": "27f41dab3a9d19c7d144c8de",
+      "version": 2,
+      "actual": {
+        "evidenceList": [
+          {
+            "name": "虚构劳动合同",
+            "pageCount": "3",
+            "originalType": "复印件",
+            "purpose": "虚构示例：说明双方劳动关系。",
+            "pageRange": ""
+          }
+        ]
+      }
+    }
+  ],
+  "viewports": [
+    {
+      "code": "350302",
+      "kind": "application",
+      "width": 375,
+      "scroll": 375
+    },
+    {
+      "code": "350302",
+      "kind": "application",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "code": "350302",
+      "kind": "application",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "code": "350302",
+      "kind": "evidence",
+      "width": 375,
+      "scroll": 375
+    },
+    {
+      "code": "350302",
+      "kind": "evidence",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "code": "350302",
+      "kind": "evidence",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "code": "350303",
+      "kind": "application",
+      "width": 375,
+      "scroll": 375
+    },
+    {
+      "code": "350303",
+      "kind": "application",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "code": "350303",
+      "kind": "application",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "code": "350303",
+      "kind": "evidence",
+      "width": 375,
+      "scroll": 375
+    },
+    {
+      "code": "350303",
+      "kind": "evidence",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "code": "350303",
+      "kind": "evidence",
+      "width": 1440,
+      "scroll": 1440
+    }
+  ],
+  "cancel_checks": [
+    {
+      "code": "350302",
+      "kind": "application",
+      "cancel_and_escape_posts": 0,
+      "focus_returned": true,
+      "tab_trapped": true,
+      "dialog375_visible": true
+    },
+    {
+      "code": "350302",
+      "kind": "evidence",
+      "cancel_and_escape_posts": 0,
+      "focus_returned": true,
+      "tab_trapped": true,
+      "dialog375_visible": true
+    },
+    {
+      "code": "350303",
+      "kind": "application",
+      "cancel_and_escape_posts": 0,
+      "focus_returned": true,
+      "tab_trapped": true,
+      "dialog375_visible": true
+    },
+    {
+      "code": "350303",
+      "kind": "evidence",
+      "cancel_and_escape_posts": 0,
+      "focus_returned": true,
+      "tab_trapped": true,
+      "dialog375_visible": true
+    }
+  ],
+  "unknown_scope_removed_fields": true,
+  "negative_GET_checks": [
+    {
+      "code": "350302",
+      "template_id": "98A0EE44D3D63B3D6A10FE60D4E83776",
+      "check": "metadata_only_original_denied",
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350302",
+      "template_id": "D266D62D3E51B38A3C568B47677C4B09",
+      "check": "metadata_only_original_denied",
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350302",
+      "template_id": "7C3DBFA82D340B3C50F4DD45E14FE785",
+      "check": "metadata_only_original_denied",
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350302",
+      "template_id": "6EFE86A941A038DC1ED88B911A7D5621",
+      "check": "metadata_only_original_denied",
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350302",
+      "check": "cross_K_source_contract_denied",
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350302",
+      "check": "wrong_city_contract_denied",
+      "status": 404,
+      "native_download": false
+    },
+    {
+      "code": "350303",
+      "template_id": "98A0EE44D3D63B3D6A10FE60D4E83776",
+      "check": "metadata_only_original_denied",
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350303",
+      "template_id": "D3CF15E149D0C999A4BBCCFBC8CEB1DE",
+      "check": "metadata_only_original_denied",
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350303",
+      "template_id": "6EFE86A941A038DC1ED88B911A7D5621",
+      "check": "metadata_only_original_denied",
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350303",
+      "template_id": "1975DB7EC205F8082DACD4A44551251F",
+      "check": "metadata_only_original_denied",
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350303",
+      "check": "cross_K_source_contract_denied",
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350303",
+      "check": "wrong_city_contract_denied",
+      "status": 404,
+      "native_download": false
+    }
+  ],
+  "negative_POST_checks": [
+    {
+      "code": "350302",
+      "check": "metadata_only_generation_denied",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "城厢区",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "version": 1,
+        "template_id": "98A0EE44D3D63B3D6A10FE60D4E83776",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "f34fedd65d82dbf48ae302b739c62e6012810e459b47a04c4c2493224f884a1c",
+        "data": {}
+      },
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350302",
+      "check": "metadata_only_generation_denied",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "城厢区",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "version": 1,
+        "template_id": "D266D62D3E51B38A3C568B47677C4B09",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "f34fedd65d82dbf48ae302b739c62e6012810e459b47a04c4c2493224f884a1c",
+        "data": {}
+      },
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350302",
+      "check": "metadata_only_generation_denied",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "城厢区",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "version": 1,
+        "template_id": "7C3DBFA82D340B3C50F4DD45E14FE785",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "f34fedd65d82dbf48ae302b739c62e6012810e459b47a04c4c2493224f884a1c",
+        "data": {}
+      },
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350302",
+      "check": "metadata_only_generation_denied",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "城厢区",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "version": 1,
+        "template_id": "6EFE86A941A038DC1ED88B911A7D5621",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "f34fedd65d82dbf48ae302b739c62e6012810e459b47a04c4c2493224f884a1c",
+        "data": {}
+      },
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350302",
+      "check": "boolean_pageCount_content_denied",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "城厢区",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "version": 1,
+        "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+        "kind": "evidence",
+        "mode": "blank",
+        "contract_id": "62da9d0700dfb87ef8e9ee52defb2519cd4c23dd844e9db262334d46ffef6b85",
+        "data": {
+          "evidenceList": [
+            {
+              "pageCount": true
+            }
+          ]
+        }
+      },
+      "status": 422,
+      "native_download": false
+    },
+    {
+      "code": "350303",
+      "check": "metadata_only_generation_denied",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "涵江区",
+        "source_id": "27f41dab3a9d19c7d144c8de",
+        "version": 2,
+        "template_id": "98A0EE44D3D63B3D6A10FE60D4E83776",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "8b2439e4dc5011ad194aeda03dea3d6bc08fc76b6ee216059ae1e7de4ec4dc5e",
+        "data": {}
+      },
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350303",
+      "check": "metadata_only_generation_denied",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "涵江区",
+        "source_id": "27f41dab3a9d19c7d144c8de",
+        "version": 2,
+        "template_id": "D3CF15E149D0C999A4BBCCFBC8CEB1DE",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "8b2439e4dc5011ad194aeda03dea3d6bc08fc76b6ee216059ae1e7de4ec4dc5e",
+        "data": {}
+      },
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350303",
+      "check": "metadata_only_generation_denied",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "涵江区",
+        "source_id": "27f41dab3a9d19c7d144c8de",
+        "version": 2,
+        "template_id": "6EFE86A941A038DC1ED88B911A7D5621",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "8b2439e4dc5011ad194aeda03dea3d6bc08fc76b6ee216059ae1e7de4ec4dc5e",
+        "data": {}
+      },
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350303",
+      "check": "metadata_only_generation_denied",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "涵江区",
+        "source_id": "27f41dab3a9d19c7d144c8de",
+        "version": 2,
+        "template_id": "1975DB7EC205F8082DACD4A44551251F",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "8b2439e4dc5011ad194aeda03dea3d6bc08fc76b6ee216059ae1e7de4ec4dc5e",
+        "data": {}
+      },
+      "status": 409,
+      "native_download": false
+    },
+    {
+      "code": "350303",
+      "check": "boolean_pageCount_content_denied",
+      "request": {
+        "province": "fujian",
+        "city": "莆田市",
+        "district": "涵江区",
+        "source_id": "27f41dab3a9d19c7d144c8de",
+        "version": 2,
+        "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+        "kind": "evidence",
+        "mode": "blank",
+        "contract_id": "1dad9fb512fa70bc82dc266bb6c203d1a9ab2c3fe2ed120feb5df9cf85018fec",
+        "data": {
+          "evidenceList": [
+            {
+              "pageCount": true
+            }
+          ]
+        }
+      },
+      "status": 422,
+      "native_download": false
+    }
+  ],
+  "native_UI_generation_POSTs": 8,
+  "negative_API_POSTs": 10,
+  "console_errors": 0,
+  "page_errors": 0,
+  "blocked_requests": 0,
+  "models": 0,
+  "screenshots": 0,
+  "HAR": 0,
+  "government_calls": 0,
+  "auth_or_submission": false,
+  "owned_browser_closed": true,
+  "no_new_Word_render": true,
+  "visual_basis": "Whole bytes and every ZIP member equal own original/normal Word already independently viewed by Root.",
+  "source_report_sha256": "5c8660e9e51ea190d4fe1f32eb49745a7d378b1656d7f79e924e3ea4b4e035c2",
+  "failed_prior_harness_attempts": [
+    {
+      "status": "NOT_ACCEPTED",
+      "qualified": false,
+      "downloads_before_failure": 2,
+      "cause": "hardcoded_evidence_add_label"
+    },
+    {
+      "status": "NOT_ACCEPTED",
+      "qualified": false,
+      "downloads_before_failure": 2,
+      "cause": "select_assumption_for_own_text_column"
+    }
+  ]
+}

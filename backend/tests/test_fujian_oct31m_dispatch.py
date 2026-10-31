@@ -32,7 +32,7 @@ class MDispatchTests(unittest.TestCase):
  def test_registry_marker_and_independent_strict_own_models(self):
   from regional_form_contracts import SUPPORTED_ADAPTERS,PUBLIC_PROOF_ADAPTERS
   self.assertIn(own.ADAPTER,SUPPORTED_ADAPTERS);self.assertIn(own.ADAPTER,PUBLIC_PROOF_ADAPTERS)
-  m=routes.release_capabilities();self.assertEqual(m['candidate_stage_receipts'][own.ADAPTER],own.STAGE_SHA256);self.assertIsNone(m['publication_receipts'][own.ADAPTER]);self.assertFalse(m['models_required'])
+  m=routes.release_capabilities();self.assertEqual(m['candidate_stage_receipts'][own.ADAPTER],own.STAGE_SHA256);self.assertEqual(m['publication_receipts'][own.ADAPTER],own.PUBLICATION_SHA256);self.assertFalse(m['models_required'])
   for kind in ['application','evidence']:
    model=routes.generation_request_model(own.ADAPTER,kind);self.assertEqual(model.__module__,'regional_putian_request')
    for data in [{'signature':'禁止代签'},{'committeeName':'不推定'},{'unknown':'x'}]:

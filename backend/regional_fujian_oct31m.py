@@ -125,7 +125,7 @@ SOURCE_SHAS = {'350302': 'f32d80b4e158a8122c8f7469a0a9ca533af838d5dc6327240c7f8d
 SOURCE_BASE = Path('reports/overnight-gap-closure-20261030/localities/fujian-m-source-projection')
 ADAPTER = 'fujian_putian_own_blank_oct31m_v1'
 STAGE_SHA256 = '4ebcd637f852146167c2b9d4ffc34135a53255ba5a2d180d7019f1c08f4a7b3b'
-PUBLICATION_SHA256 = None
+PUBLICATION_SHA256 = '7a9a65f57253d24588014dd254471f039ac40099cad319706f2ea10afb98c813'
 WORD_SHA = 'df75703c23b0b8366b636db1774b9dbb1a061e48ea1b1f8c5b91d048ec114400'
 REGIONS = {'350302': {'folder': 'chengxiang-350302', 'province': 'fujian', 'city': '莆田市', 'district': '城厢区', 'region_code': '350302', 'source_id': '28a4418211ce36fedd8069f6', 'source_url': 'https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1', 'service_code': '11350302003700205G400201430200Y01', 'authority': '城厢区人力资源和社会保障局'}, '350303': {'folder': 'hanjiang-350303', 'province': 'fujian', 'city': '莆田市', 'district': '涵江区', 'region_code': '350303', 'source_id': '27f41dab3a9d19c7d144c8de', 'source_url': 'https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=B9DF60152E3BE1A2BA326311AD809DC3&infoType=1', 'service_code': '11350303003706658F400201430200201', 'authority': '涵江区人力资源和社会保障局'}}
 TEMPLATES = {'application': {'file': 'application-own-format.docx', 'file_id': 'F4048D8C91E2FF882AC6C62CC0EC4D86', 'sha256': '093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365', 'row': 1}, 'evidence': {'file': 'evidence-list-own-format.docx', 'file_id': 'CC300F5D9DD5DC404D65C68116D50C55', 'sha256': 'd70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815', 'row': 2}}
