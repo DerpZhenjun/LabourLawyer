@@ -1,4 +1,4 @@
-"""K own-source candidate tests; Temp/counterfactual data, no public capability."""
+"""K own-source phase gates; Temp/counterfactual data, no public seed writes."""
 from copy import deepcopy
 from hashlib import sha256
 from io import BytesIO
@@ -95,7 +95,7 @@ class FujianKProviderTests(unittest.TestCase):
                 self.assertIn(material['instructions'],own['raw_public_text'])
 
     def test_all_stage_final_and_forged_boolean_claims_fail_closed(self):
-        o=self.o;self.assertIsNone(o.PUBLICATION_SHA256)
+        o=self.o
         from regional_adapters import checked_reference_adapter
         with patch.object(o,'STAGE_SHA256',None),patch.object(o,'PUBLICATION_SHA256',None):
             for code in o.REGIONS:
@@ -111,12 +111,13 @@ class FujianKProviderTests(unittest.TestCase):
 
     def test_real_root_stage_remains_unpublished_and_final_pin_is_independent(self):
         o=self.o;self.assertEqual(o.STAGE_SHA256,'d23c44632e61878f597e74528c949603a868ca471f5c83245be579deb7bc8b19')
-        self.assertIsNone(o.PUBLICATION_SHA256)
+        self.assertEqual(o.PUBLICATION_SHA256,'3f24c81c617733000c85f1c76b4c2e4bcd0a08e82f34b5323dbeea0b6a7154be')
         for code in o.REGIONS:
             g=o.staged_candidate(code,root=ROOT)
             self.assertFalse(g['published']);self.assertEqual(g['publication_status'],'staged_own_word_qa')
             self.assertEqual(g['candidate_adapter_evidence']['sha256'],o.STAGE_SHA256)
-            with self.assertRaises(ValueError):o.with_publication_evidence(g,root=ROOT)
+            self.assertNotIn('publication_adapter_evidence',g)
+            with patch.object(o,'PUBLICATION_SHA256',None),self.assertRaises(ValueError):o.with_publication_evidence(g,root=ROOT)
 
     def test_missing_or_tampered_own_source_has_no_root_fallback(self):
         o=self.o;root=self.isolated();code='350111';meta=o.REGIONS[code]

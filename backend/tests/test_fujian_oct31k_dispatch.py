@@ -1,4 +1,4 @@
-"""Actual isolated staged K API; no public seed, final approval or real service."""
+"""Actual isolated K stage/final API phases; no public seed or real service."""
 from contextlib import contextmanager
 from copy import deepcopy
 from hashlib import sha256
@@ -26,10 +26,13 @@ class KDispatchTests(unittest.TestCase):
         with tempfile.TemporaryDirectory(prefix='fujian-k-dispatch-') as folder:
             root=Path(folder);word=json.loads((ROOT/own.WORD_MANIFEST).read_bytes())
             paths=set(own.source_files(ROOT)+[own.WORD_MANIFEST,own.STAGE_RECEIPT]+[r['path'] for r in word['files']])
+            if phase=='published':
+                final=json.loads((ROOT/own.PUBLICATION_RECEIPT).read_bytes())
+                paths.update([own.PUBLICATION_RECEIPT,*[r['path'] for r in final['files']]])
             for name in paths:
                 target=root/name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(ROOT/name,target)
             store=RegionalStore(root/'candidate.sqlite')
-            prepare={'stage':own.staged_candidate,'source':own.parse_capture,'offline':own.prepare_candidate}[phase]
+            prepare={'stage':own.staged_candidate,'source':own.parse_capture,'offline':own.prepare_candidate,'published':own._published}[phase]
             for code in own.REGIONS:store.put_guide(prepare(code,root=root))
             app=FastAPI();app.include_router(routes.router,prefix='/regional')
             with patch.dict(os.environ,{'LABOURLAWYER_DATA_DIR':str(root/'private-data')}),patch.object(routes,'ROOT',root),patch.object(routes,'store',return_value=store),TestClient(app) as client:
@@ -54,7 +57,7 @@ class KDispatchTests(unittest.TestCase):
         self.assertIn(own.ADAPTER,SUPPORTED_ADAPTERS);self.assertIn(own.ADAPTER,PUBLIC_PROOF_ADAPTERS)
         marker=routes.release_capabilities();self.assertIn(own.ADAPTER,marker['adapters'])
         self.assertEqual(marker['candidate_stage_receipts'][own.ADAPTER],own.STAGE_SHA256)
-        self.assertIsNone(marker['publication_receipts'][own.ADAPTER]);self.assertFalse(marker['models_required'])
+        self.assertEqual(marker['publication_receipts'][own.ADAPTER],own.PUBLICATION_SHA256);self.assertFalse(marker['models_required'])
         for kind in ['application','evidence']:
             model=routes.generation_request_model(own.ADAPTER,kind)
             self.assertIsNot(model,routes.FujianJApplicationRequest if kind=='application' else routes.FujianJEvidenceRequest)
@@ -128,7 +131,7 @@ class KDispatchTests(unittest.TestCase):
             body=json.dumps(receipt,ensure_ascii=False).encode();receipt_path.write_bytes(body)
             with patch.object(own,'STAGE_SHA256',sha256(body).hexdigest()):
                 self.assertEqual(client.get('/regional/form-contract',params=query).status_code,409)
-            self.assertIsNone(own.PUBLICATION_SHA256)
+            self.assertEqual(own.PUBLICATION_SHA256,'3f24c81c617733000c85f1c76b4c2e4bcd0a08e82f34b5323dbeea0b6a7154be')
             with self.assertRaises(ValueError):own.with_publication_evidence(g,root=root)
 
     def test_strict_independent_models_and_legacy_path_reject_bad_values(self):

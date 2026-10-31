@@ -1,0 +1,13 @@
+{
+  "source_commit": "830ce9e6f728e27efb30dd79fe94c62c896bd2e8",
+  "run_id": 41159530174,
+  "job_id": 124413755883,
+  "status": "success",
+  "actual_locked_backend_tests": 389,
+  "actual_locked_backend_seconds": 273.215,
+  "actual_separate_guarded_crash_tests": 2,
+  "actual_separate_guarded_crash_seconds": 0.543,
+  "all_web_mini_drift_pipeline_and_metadata_steps": "success",
+  "actual_log_sha256": "e4c2b62eac3d42d67b13c95bf36eefaa1c4a59db4b8f5abf22580922411bb73a",
+  "does_not_publish_K_regions_or_grant_final": true
+}

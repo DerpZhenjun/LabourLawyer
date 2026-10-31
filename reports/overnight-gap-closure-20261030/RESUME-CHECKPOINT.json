@@ -1,6 +1,6 @@
 {
   "started_at": "2026-10-30T15:01:46.081381+00:00",
-  "phase": "W215_both_core_native8_and_textonly_collector_ACTUAL_PASS_K3_Rootstage_only_shared_integration_under_test",
+  "phase": "K_public_seed218_201_Rootfinalapproved_both_live215_wait_frozen_sourceCI",
   "base_commit": "0e8eb56a9bdbbea295b584e9a8037337c79e37e8",
   "baseline": {
     "guides": 203,
@@ -10,9 +10,9 @@
     "ubuntu_outbox": 0
   },
   "agents": {
-    "overnight_ui_validation": "next ownPingtan350128 real native guide/material sourceonly discovery; no screenshot/model",
-    "overnight_digital": "new server-only W215 release3asset preparation only; no Githubwrites",
-    "production_ci": "K Rootstage d23c approvedcandidateonly; fourshared dispatch/strictmodels andTemp tests inprogress; no final/seed/live"
+    "overnight_ui_validation": "K8nativeandlocalpostverifydone/closed, idle; sourceLdiscoverypreserved",
+    "overnight_digital": "Exact known failed starter cleanup prep92done; Root actual48822 only",
+    "production_ci": "K v2 final-bound helper18+formal28done frozen; Root independent review running"
   },
   "root_ownership": [
     "collector frontend admin UI + backendapp router wiring",
@@ -34,14 +34,14 @@
     "public_domain": "No projectdomainconfigured found; tailnet exists but nodeoffline/controlnetworkunreachable. Not completed TLS.",
     "earlier_Ubuntu_QA_sessions": "Some earlier failed-before-logout opaque sessions revocation NOT_PROVEN; final own logout204 proven. Do not blindly revoke other existing sessions; no credentials uploaded."
   },
-  "next": "Review Ksharedstrictdispatch+allTempcontracts+CI Node fixtureexactallowlist, root isolatednative4forms/blank/cancel/unknown/directmetadata409, finalapproval onlyafterPASS thenexactseed/CI/publisher andownedrollout. Wserver-only3asset releasepreparedbutnotpublished; immutablepreview5nineassets209notchanged. ContinuePingtan ownsourcewithoutborrowing. No Windowsmodels/inference/screenshots/deniedDonghuactionretry, preserve6dirtyuserfiles/existingDBs.",
-  "updated_at": "2026-10-31T01:30:45.422467+00:00",
+  "next": "Root independently rechecks K final/private helpers, then exact final proof/source/policy commit, seed215to218, cleanCI/cold/native preserved rollout. Both live215/198 still Wca9. Server draft remains unpublished; Root exact failed-starter cleanup48822 running after92guardedPASS/actual0attemptdry. No duplicate writer, Windowsmodel, screenshot or global network changes.",
+  "updated_at": "2026-10-31T03:13:45.430682+00:00",
   "public_seed": {
-    "guides": 215,
-    "generatable": 198,
+    "guides": 218,
+    "generatable": 201,
     "main_live_guides": 215,
     "ubuntu_live_guides": 215,
-    "publication": "Six own-source J records atomic on both stores;44qualified actual native downloads Root independently file/ZIP verified"
+    "publication": "Root actual exact own3 seed append, both existing live DBs still215/198; new clean source CI/cold and DB-native acceptance pending"
   },
   "implemented": {
     "digital": "Ubuntu8089 actual synthetic stream and responsive candidate pass",
@@ -144,7 +144,66 @@
     "source_queue": "K Rootindependent source19/Word81/all12external-link-free/8fixtureswholeZIPPASS; Root26actualPNG+18exactduplicate44pagecoverage,15exactCItestsPASS andrealTempstore→actualTSdisplayPASS. Own-onlyaliases/materialtypes/provinceNamefixes. STAGE d23c44632e61878f597e74528c949603a868ca471f5c83245be579deb7bc8b19 approvedonlycandidateQA; finalNone. Foursharedwire+strictKmodels/max9/source70d8 storedversionvalidator/testsinprogress, NOTseed/live. NextPingtan350128 ownnativeguide511e7f64c9481b5a0b6ff4a1 foundviaactualUI; service300201...preserved; sourceonlymaterialpanelsbeingread, notpublished.",
     "public_docs": "J docs97c394c0 previouslypushed. NewW publicdeploymentreceipt/testreport/README/docsexplicitactualFalse ready for exactdocscommit; existingclient9assets unchanged.",
     "warm_start": "COMMITTED2e11bf31 and RUNNINGca9 both. Exact locked15warm testsPASS; sourceCI365+2PASS; exact6334source/4247bundlef01603af/cold-v3 PASS215/198/3974/0missing/21Word11sources44cross. Root21switchguardsPASS; actualUbuntu onlycore923485→981932,6persistent/3protected/collectorpreserved,5.969s whole guarded source switch. Main only28084→39568,publicDBs+6userfiles unchanged. Actualservice startup alone not separately timed. Both8newnativePASS; Rootwholebytes+everyZIPmembersindependentregenerationPASS,36width/cancel/Esc/unknown/401/adminlogin guardsPASS. ExistingJ44notrecounted.",
-    "collector_screenshot_optout": "ACTUALLY_DEPLOYED: sourceca9+explicitconfigFalse6aa926...; ownedworker841615→994619/start100610423. Root51originalCIguardTempPASS44.568s plusnativeUbuntu4flockTempPASS; realdryPASS,execute1.26s+positiveidle/nativeconfigloaderFalse. All6persistent/core981932/digital/model and4jobs4journal4ACK10obs26files exactpreserved; backups retained. Otherconfigbytes/hosts2/defaultports unchanged. No newjobs/browser/screenshots/model invoked; no actualnewtextcaptureclaim."
+    "collector_screenshot_optout": "ACTUALLY_DEPLOYED: sourceca9+explicitconfigFalse6aa926...; ownedworker841615→994619/start100610423. Root51originalCIguardTempPASS44.568s plusnativeUbuntu4flockTempPASS; realdryPASS,execute1.26s+positiveidle/nativeconfigloaderFalse. All6persistent/core981932/digital/model and4jobs4journal4ACK10obs26files exactpreserved; backups retained. Otherconfigbytes/hosts2/defaultports unchanged. No newjobs/browser/screenshots/model invoked; no actualnewtextcaptureclaim.",
+    "K": {
+      "phase": "CANDIDATE_COMMITTED_PUSHED_NOT_FINAL_NOT_LIVE",
+      "regions": [
+        "350111",
+        "350121",
+        "350105"
+      ],
+      "forms": 4,
+      "provider_sha256": "06a9a2f90099e5a143b649f8573cc7621dd2629dd7d52ab4c0595548da47f99e",
+      "stage_sha256": "d23c44632e61878f597e74528c949603a868ca471f5c83245be579deb7bc8b19",
+      "publication_sha256": null,
+      "peer_Python_unique_passed": 48,
+      "Root_exact_CI_own_v2_unit_passed": 15,
+      "Root_actual_TS_to_ASGI_plus_subprocess_guard_passed": 11,
+      "Root_CI_registration": "Only2fixedNodefixtures+3Ktestmodules; arbitraryNode/Python/flagsstillrefused",
+      "candidate_api_pid": 112956,
+      "candidate_ports": [
+        8005,
+        5178
+      ],
+      "candidate_only_users_cases": 0,
+      "actual_native_accepted": 8,
+      "Root_independent_file_regeneration_all_ZIP_and_contract_fullSHA": "PASS",
+      "browser_widths": 12,
+      "negative_GET_409": 16,
+      "old_harness_failure": "NOT_ACCEPTED0POST/0downloads initialdefault==normal overconstraint; v1immutable, v2onlyremoveoverconstraint/persistactualdefaults. Root14v2purePASS thennewnative8PASS. No productchangeforharness.",
+      "Root_full389_before_policy": "RUNNING session74262; do not claimfullPASS; source/policy/publication not changedduringthisrun sofar",
+      "policy_candidates": "Root10guardedPASS3.950s; exact runtime157/public4105 applied andcommitted; oldentries+all118Gitblobbytesverified, nofinal/seed. ExistingWindowsfullrun74262 startedbefore policy-onlyextension; do not callfrozen-source finalacceptance",
+      "formal_seed_and_both_live": "UNCHANGED215/198",
+      "commit": "830ce9e6f728e27efb30dd79fe94c62c896bd2e8",
+      "clean_source_CI": {
+        "id": 41159530174,
+        "job_id": 124413755883,
+        "status": "in_progress",
+        "backend": "running",
+        "web_mini_contract_drift": "PASS"
+      },
+      "Root_independent_native_review": "PASS full8normal/originalwholebytes+allZIP+4fullcontracts15fields/source3; publiccandidatereportc6951342 committed; finalNone"
+    },
+    "Pingtan_L": {
+      "phase": "SOURCE_ONLY_NOT_ADAPTER_NOT_LIVE",
+      "region_code": "350128",
+      "city": "平潭综合实验区",
+      "district": "平潭综合实验区",
+      "source_id": "511e7f64c9481b5a0b6ff4a1",
+      "service_code": "1135012806039606XH300201430200201",
+      "actual_native_materials": 3,
+      "own_bindings": 6,
+      "anonymous_own_FORMAT_downloads": 2,
+      "signed_in_submission_verified": false,
+      "committee_full_name": null,
+      "next": "Private safeprojectionprep only, noformalcode/policy/seed/sourceborrowing",
+      "private_projection_freeze": "6be18cc007cdea635314637168d4bf840565185375de0ef6c51369b7525376a0",
+      "private_projection_manifest": "4ad32fc2f17d40502310a3a1d25b299554254a442cc0a597cedcd358d014ec35",
+      "source_only_files": 7,
+      "peer_guarded_checks": 8,
+      "formal_changes": false
+    },
+    "fujian_k": "Actual publicseed218/201 with preservedold215/directory; final3f24/providerfd45. Root39formal/clientguard+18transaction0skipPASS. Bothlive215/198 untouched. Sourcecommit/build/cleanCI/cold/guarded per-siteappend pending."
   },
   "remaining": [
     "Nationwide exact city/county/functionalzone own-guide/template verification",
@@ -153,7 +212,7 @@
     "PhysicalUSB installation and WeChat real IDE/publishing",
     "Continuous publicissuesOpenClaw relay still depends on Windows maintenancehost/dedicatedgateway; no systemautostartclaim"
   ],
-  "head_commit": "ca9ef3f293c9911765a1752d0c49147b0db4fbb7",
+  "head_commit": "830ce9e6f728e27efb30dd79fe94c62c896bd2e8",
   "regression": {
     "latest_runtime_source_ci": {
       "id": 41150204635,
@@ -204,6 +263,21 @@
       "actual_dryrun_and_switch_and_readiness": "PASS",
       "all_previous_data_and_protected_services_preserved": true,
       "new_capture_jobs": 0
+    },
+    "K_stage_clean_source": {
+      "head": "830ce9e6f728e27efb30dd79fe94c62c896bd2e8",
+      "run_id": 41159530174,
+      "job_id": 124413755883,
+      "backend_tests": 389,
+      "guarded_crash_tests": 2,
+      "status": "PASS",
+      "actual_logs_sha256": "e4c2b62eac3d42d67b13c95bf36eefaa1c4a59db4b8f5abf22580922411bb73a"
+    },
+    "K_Windows_diagnostic": {
+      "tests": 388,
+      "skip": 2,
+      "scope": "pre-policy source mixed diagnostic only; cleanGitHubsource is acceptance",
+      "status": "PASS_WITH_PLATFORM_SKIPS"
     }
   },
   "github_docs_ci": {
@@ -232,7 +306,7 @@
     "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.5",
     "anonymous_assets_verified": 9
   },
-  "head_commit_scope": "Frozen runtime source ca9 both live; read actual GitHEAD separately for later docs/candidates",
+  "head_commit_scope": "Committed+pushed K candidate code/policy only; both running core services remain ca9; read runtime source_commit separately",
   "historical_previous_ubuntu_state": {
     "guides": 209,
     "generatable": 192,
@@ -409,5 +483,18 @@
       "cold_ubuntu_actual": "PASS;21Word11sources44cross-JI409,0externalwrites/network/child/model",
       "future_uncommitted_features": "K candidate only, not registered, not live. Wfeatures nowbothactualruntimeca9; collectorworker actualFalse stillpending."
     }
+  },
+  "server_release_W215": {
+    "tag": "v1.2.1-server-preview.1",
+    "source_commit": "ca9ef3f293c9911765a1752d0c49147b0db4fbb7",
+    "server_only_assets": 3,
+    "Root_local_frozen_tar_validation": "PASS4247files/4248members",
+    "Root_guarded_mock_publisher_tests": 53,
+    "old_preview5_unchanged": true,
+    "new_owned_draft_id": 429656734,
+    "published": false,
+    "upload_status": "Root exact known failed starter694111622 removed once204/readback404; START andold9 unchanged. Same frozen proxy writer48321 now uploading own exact396281775B f016 tar; no publish yet.",
+    "proxy_helper_sha256": "927c0b411d275426abc4059aa4e05222f39e04ef2275f58cd488151b6e058b15",
+    "proxy_config_scope": "ExistingHKCU manual127.0.0.1:7897 only, KEY_READ, no globalconfig/TLSchanges"
   }
 }

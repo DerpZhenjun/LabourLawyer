@@ -1,0 +1,89 @@
+{
+  "status": "ROOT_K_actual8_native_file_contract_and_all_ZIP_PARITY_PASS",
+  "browser_result_sha256": "d08c0f501b5e86abb4b3e2b4d47df4a594ff9fd035b0807b7cc9e6b3a1c64244",
+  "actual_downloads": 8,
+  "contracts_full_canonical_SHA_and_15context": 4,
+  "source_ids": [
+    "09dcedf106cd2fd411a09546",
+    "0aa50441bacd05b2245fb5f1",
+    "70d8f78ba93e94e9afecf7f3"
+  ],
+  "files": [
+    {
+      "code": "350111",
+      "kind": "application",
+      "scenario": "filled",
+      "file": "native-downloads/350111-application-filled.docx",
+      "bytes": 12100,
+      "sha256": "3749d34dd61a3d8a64d659e8ba9ecbafef8457d31c6f20c213dad4d801eacf14",
+      "all_ZIP_members_equal": true
+    },
+    {
+      "code": "350111",
+      "kind": "application",
+      "scenario": "blank",
+      "file": "native-downloads/350111-application-blank.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "all_ZIP_members_equal": true
+    },
+    {
+      "code": "350111",
+      "kind": "evidence",
+      "scenario": "filled",
+      "file": "native-downloads/350111-evidence-filled.docx",
+      "bytes": 16727,
+      "sha256": "753e97610048e6a63da614c397e1ca393a00d856aa5c4fa744f7007e2bd3ecae",
+      "all_ZIP_members_equal": true
+    },
+    {
+      "code": "350111",
+      "kind": "evidence",
+      "scenario": "blank",
+      "file": "native-downloads/350111-evidence-blank.docx",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "all_ZIP_members_equal": true
+    },
+    {
+      "code": "350121",
+      "kind": "application",
+      "scenario": "filled",
+      "file": "native-downloads/350121-application-filled.docx",
+      "bytes": 12100,
+      "sha256": "80210afdd1156db049704d72e6356619d51cb7d645afa8220c206d5846debdc6",
+      "all_ZIP_members_equal": true
+    },
+    {
+      "code": "350121",
+      "kind": "application",
+      "scenario": "blank",
+      "file": "native-downloads/350121-application-blank.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "all_ZIP_members_equal": true
+    },
+    {
+      "code": "350105",
+      "kind": "application",
+      "scenario": "filled",
+      "file": "native-downloads/350105-application-filled.docx",
+      "bytes": 12100,
+      "sha256": "8f930c72cac137e44f5fa36cca1f8e988a7d30d081230fcaa8769e3e04f4a2d7",
+      "all_ZIP_members_equal": true
+    },
+    {
+      "code": "350105",
+      "kind": "application",
+      "scenario": "blank",
+      "file": "native-downloads/350105-application-blank.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "all_ZIP_members_equal": true
+    }
+  ],
+  "visual_proof_reused_only_by_exact_own_normal_or_original_bytes": true,
+  "old_failure_preserved_NOT_ACCEPTED_0POST_0download": true,
+  "Root_count_probe_note": "Native-event and direct-negative records are lists, not numeric counts; independently checked using len after initial harness assertions refused; no evidence modified",
+  "publication_approved": false
+}

@@ -1,0 +1,91 @@
+{
+  "status": "ROOT_ACTUAL_CHROME_DEVTOOLS_MCP_DOM_PASS",
+  "isolated_context": "root-k-stage-dom-20261031",
+  "only_own_page_closed": true,
+  "viewports": [
+    {
+      "url": "http://127.0.0.1:5178/province/fujian?city=%E7%A6%8F%E5%B7%9E%E5%B8%82&district=%E6%99%8B%E5%AE%89%E5%8C%BA",
+      "width": 375,
+      "scroll": 360,
+      "guide_data": {
+        "sourceId": "09dcedf106cd2fd411a09546",
+        "regionCode": "350111"
+      },
+      "fields": [
+        {
+          "tag": "INPUT",
+          "value": "陈虚构",
+          "box": {
+            "left": 36.66666793823242,
+            "right": 323.3333549499512
+          }
+        },
+        {
+          "tag": "INPUT",
+          "value": "",
+          "box": {
+            "left": 36.66666793823242,
+            "right": 323.3333549499512
+          }
+        },
+        {
+          "tag": "INPUT",
+          "value": "虚构青禾有限公司",
+          "box": {
+            "left": 36.66666793823242,
+            "right": 323.3333549499512
+          }
+        },
+        {
+          "tag": "TEXTAREA",
+          "value": "请求支付虚构拖欠工资3000元。",
+          "box": {
+            "left": 36.66666793823242,
+            "right": 323.3333549499512
+          }
+        },
+        {
+          "tag": "TEXTAREA",
+          "value": "以下全部为软件演示的虚构情况。虚构单位拖欠示例工资3000元，双方协商未果，故提出上述请求。",
+          "box": {
+            "left": 36.66666793823242,
+            "right": 323.3333549499512
+          }
+        }
+      ],
+      "own_official_links": [
+        "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=2AE4D76F39D556A71053EF3E78D83397&infoType=1",
+        "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=2AE4D76F39D556A71053EF3E78D83397&infoType=1",
+        "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=2AE4D76F39D556A71053EF3E78D83397&infoType=1",
+        "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=2AE4D76F39D556A71053EF3E78D83397&infoType=1",
+        "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=2AE4D76F39D556A71053EF3E78D83397&infoType=1",
+        "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=2AE4D76F39D556A71053EF3E78D83397&infoType=1",
+        "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=2AE4D76F39D556A71053EF3E78D83397&infoType=1"
+      ],
+      "ready": true
+    },
+    {
+      "width": 768,
+      "scroll": 753,
+      "source": "09dcedf106cd2fd411a09546",
+      "region": "350111",
+      "field_count": 5,
+      "all_fields_in_view": true,
+      "external_resources": []
+    },
+    {
+      "width": 1440,
+      "scroll": 1425,
+      "source": "09dcedf106cd2fd411a09546",
+      "region": "350111",
+      "field_count": 5,
+      "all_fields_in_view": true,
+      "external_resources": []
+    }
+  ],
+  "models": 0,
+  "government_navigation": 0,
+  "browser_screenshots": 0,
+  "generate_POSTs": 0,
+  "publication_approved": false
+}

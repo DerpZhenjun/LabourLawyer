@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "context": {
+    "province": "fujian",
+    "city": "福州市",
+    "district": "晋安区",
+    "region_code": "350111",
+    "source_id": "09dcedf106cd2fd411a09546",
+    "version": 1,
+    "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+    "kind": "evidence",
+    "mode": "blank",
+    "adapter": "fujian_three_own_blank_oct31k_v1",
+    "schema_id": "fujian-k-350111-evidence-v1",
+    "schema_version": 1,
+    "source_version": "454a4eab5d67f9f0e297ac37ae83a052e9e997a86771e6354f3031ae0ff72569",
+    "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "template_version": "sha256:d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+  },
+  "fields": [
+    {
+      "key": "evidenceList",
+      "label": "证据内容",
+      "type": "object_list",
+      "nullable": false,
+      "maxItems": 9,
+      "fields": [
+        {
+          "key": "name",
+          "label": "证据名称",
+          "type": "text",
+          "nullable": false,
+          "maxLength": 60
+        },
+        {
+          "key": "pageCount",
+          "label": "页数",
+          "type": "text",
+          "nullable": false,
+          "maxLength": 4
+        },
+        {
+          "key": "originalType",
+          "label": "原件或复印件",
+          "type": "text",
+          "nullable": false,
+          "maxLength": 4,
+          "choices": [
+            "原件",
+            "复印件"
+          ]
+        },
+        {
+          "key": "purpose",
+          "label": "证明对象",
+          "type": "text",
+          "nullable": false,
+          "maxLength": 80
+        },
+        {
+          "key": "pageRange",
+          "label": "页码",
+          "type": "text",
+          "nullable": false,
+          "maxLength": 32
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "evidenceList": [
+      {
+        "name": "",
+        "pageCount": "",
+        "originalType": "",
+        "purpose": "",
+        "pageRange": ""
+      }
+    ]
+  },
+  "policy": {
+    "unknown_fields": "reject",
+    "invalid_xml": "reject",
+    "text_controls": "newline_only",
+    "trim_text": true,
+    "capacity_is_official_requirement": false
+  },
+  "contract_id": "6975c7bba394a7234c98a8e0eb2178d00b0c9714285c5a5fa71786b4f0ae3d0a"
+}

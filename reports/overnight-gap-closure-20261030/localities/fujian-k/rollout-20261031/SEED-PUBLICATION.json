@@ -1,0 +1,33 @@
+{
+  "status": "published_seed_only",
+  "before": 215,
+  "after": 218,
+  "generating_before": 198,
+  "generating_after": 201,
+  "forms_added": 4,
+  "old215_encoded_records_preserved": true,
+  "directory_bytes_preserved": true,
+  "database_written": false,
+  "guides_sha256": "40166aa7ea4d8e7ecfb68717ea13948df9021b6463f7e7995b7e322ae03352e9",
+  "manifest_sha256": "a3baecdf5e36f86484d446a186abfe777a7f1297a5e2c36576ae83ee5b03147a",
+  "scope": "Public distribution seed only; both existing live databases remain215 until separate guarded publication",
+  "recorded_at": "2026-10-31T03:13:45.430682+00:00",
+  "final_receipt_sha256": "3f24c81c617733000c85f1c76b4c2e4bcd0a08e82f34b5323dbeea0b6a7154be",
+  "provider_sha256": "fd451372536e65fc122b87f0dde8cc04da2d51ed812c5687faf4e1e419a278bc",
+  "own_sources": [
+    "09dcedf106cd2fd411a09546",
+    "70d8f78ba93e94e9afecf7f3",
+    "0aa50441bacd05b2245fb5f1"
+  ],
+  "scope_limits": [
+    "All three official guides are partial; committee name and official document version remain unknown.",
+    "Jinan has own application/evidence blank; Minhou and Mawei have own application only. Their evidence blank adaptation remains unverified, not absent.",
+    "Fourteen example/reference/role-conflict bindings remain metadata only. No online submission ability is asserted."
+  ],
+  "root_independent_tests": {
+    "formal_client_guard": 39,
+    "transaction": 18,
+    "all_zero_failure_zero_skip": true
+  },
+  "live_databases_changed": false
+}

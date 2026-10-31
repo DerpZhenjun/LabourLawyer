@@ -74,7 +74,7 @@ WORD_SHA='52097115c840d8edb04e47cd2fc5c6f2ff87a8b5456ca2d242277935412d8b85'
 STAGE_RECEIPT=QA_REPORT+'/STAGE-APPROVAL.json'
 PUBLICATION_RECEIPT=QA_REPORT+'/FINAL-BROWSER-QA.json'
 STAGE_SHA256='d23c44632e61878f597e74528c949603a868ca471f5c83245be579deb7bc8b19'
-PUBLICATION_SHA256=None
+PUBLICATION_SHA256='3f24c81c617733000c85f1c76b4c2e4bcd0a08e82f34b5323dbeea0b6a7154be'
 APP_FIELDS=('applicantName','agentName','respondentName','requests','factsReason')
 ITEM_FIELDS=('name','pageCount','originalType','purpose','pageRange')
 W='http://schemas.openxmlformats.org/wordprocessingml/2006/main';N={'w':W}
