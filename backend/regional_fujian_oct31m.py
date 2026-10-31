@@ -460,8 +460,19 @@ def _published(code, root):
     return guide
 
 
+def _derived_public_evidence(canonical):
+    return {'source_projection': (SOURCE_BASE / REGIONS[canonical['region_code']]['folder'] / 'SOURCE-PROJECTION-MANIFEST.json').as_posix(),
+            'source_projection_sha256': canonical['source_version']}
+
+
 def _matches(guide, canonical):
-    if type(guide) is not dict or set(guide) - set(canonical) - _METADATA:
+    if type(guide) is not dict:
+        return False
+    if 'evidence' in guide:
+        if not exact(guide['evidence'], _derived_public_evidence(canonical)):
+            return False
+        guide = {key: value for key, value in guide.items() if key != 'evidence'}
+    if set(guide) - set(canonical) - _METADATA:
         return False
     if 'version' in guide and (type(guide['version']) is not int or guide['version'] < 1):
         return False
@@ -511,8 +522,7 @@ def checked_adapter(guide, template, kind, *, root):
 def public_evidence(guide, root):
     try:
         canonical = _bound(guide, root, True)
-        return {'source_projection': (SOURCE_BASE / REGIONS[canonical['region_code']]['folder'] / 'SOURCE-PROJECTION-MANIFEST.json').as_posix(),
-                'source_projection_sha256': canonical['source_version']}
+        return _derived_public_evidence(canonical)
     except _FAILURES:
         return None
 

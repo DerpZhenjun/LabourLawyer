@@ -129,6 +129,48 @@ class PutianOwnProviderTests(unittest.TestCase):
         with patch.object(own,'Path',ResolvedPosixPath):
             for value in ['link','direct-link']:
                 with self.subTest(value=value),self.assertRaises(ValueError):own.path_at('/own-source-root',value)
+    def test_actual_public_seed_bootstrap_two_own_published_keeps_generation(self):
+        cold=self.clone();receipt=json.loads((ROOT/own.PUBLICATION_RECEIPT).read_bytes())
+        names={own.WORD_MANIFEST,own.STAGE_RECEIPT,own.PUBLICATION_RECEIPT}|{r['path'] for r in receipt['files']}
+        for name in names:
+            dst=cold/name;dst.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(ROOT/name,dst)
+        guides=[own._published(code,cold) for code in own.REGIONS]
+        directory=[r for r in json.loads((ROOT/'data/public-regions/directory.json').read_bytes()) if str(r['code']) in own.REGIONS]
+        self.assertEqual(len(directory),2)
+        folder=cold/'data/public-regions';folder.mkdir(parents=True)
+        encoded=lambda value:(json.dumps(value,ensure_ascii=False,indent=2)+'\n').encode('utf8')
+        bodies={'guides.json':encoded(guides),'directory.json':encoded(directory)}
+        for name,body in bodies.items():(folder/name).write_bytes(body)
+        manifest={'schema_version':1,'release_id':'oct30night-own-localities-v1','guides':2,'generatable_localities':2,'directory_rows':2,'files':{n:sha256(b).hexdigest() for n,b in bodies.items()}}
+        (folder/'manifest.json').write_bytes(encoded(manifest))
+        from public_seed import bootstrap_public_data
+        from regional_guides import RegionalStore
+        from regional_adapters import with_reference_capabilities,checked_reference_adapter
+        data=cold/'isolated-catalogues';result=bootstrap_public_data(cold,data_dir=data)
+        self.assertEqual((result['guides_imported'],result['directory_imported'],result['missing_attachments']),(2,2,[]))
+        items=RegionalStore(data/'regional-guides.sqlite').inventory();self.assertEqual(len(items),2)
+        self.assertEqual(sum(any(t.get('can_generate') is True for t in g['templates']) for g in items),2)
+        for guide in items:
+            checked=with_reference_capabilities(guide,root=cold)
+            self.assertEqual(sum(t.get('can_generate') is True for t in checked['templates']),2)
+            for kind in ['application','evidence']:
+                template=next(t for t in checked['templates'] if t.get('document_types')==[kind])
+                self.assertEqual(checked_reference_adapter(checked,template,kind,root=cold),own.ADAPTER)
+        again=bootstrap_public_data(cold,data_dir=data);self.assertEqual((again['guides_imported'],again['directory_imported']),(0,0))
+    def test_exact_own_derived_evidence_accepts_and_forged_shapes_refuse(self):
+        guide=own._published('350302',ROOT);proof=own.public_evidence(guide,ROOT);self.assertEqual(set(proof),{'source_projection','source_projection_sha256'})
+        enriched={**guide,'evidence':proof};self.assertEqual(own.with_capabilities(enriched,root=ROOT),enriched)
+        foreign=own.public_evidence(own._published('350303',ROOT),ROOT)
+        for wrong in [None,True,False,[],{},foreign,{**proof,'source_projection_sha256':'0'*64},{**proof,'source_projection':'reports/foreign.json'},{**proof,'extra':'reject'}]:
+            with self.subTest(wrong=wrong),self.assertRaises(ValueError):own.with_capabilities({**guide,'evidence':wrong},root=ROOT)
+        with self.assertRaises(ValueError):own.with_capabilities({**enriched,'unknown_metadata':'reject'},root=ROOT)
+    def test_derived_evidence_does_not_upgrade_raw_source_or_unapproved_phase(self):
+        raw=own.parse_capture('350302',root=ROOT);enriched={**raw,'evidence':own.public_evidence(raw,ROOT)}
+        self.assertFalse(own.with_capabilities(enriched,root=ROOT)['can_generate']);self.assertFalse(own.with_capabilities(enriched,root=ROOT)['published'])
+        approved=own._published('350302',ROOT);approved['evidence']=own.public_evidence(approved,ROOT)
+        with patch.object(own,'PUBLICATION_SHA256',None):
+            self.assertFalse(own.with_capabilities(enriched,root=ROOT)['can_generate'])
+            with self.assertRaises(ValueError):own.with_capabilities(approved,root=ROOT)
     def test_public_source_json_no_private_paths_or_sensitive_query(self):
         for rel in own.source_files(ROOT):
             if rel.endswith('.json'):
