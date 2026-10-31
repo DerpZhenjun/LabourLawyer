@@ -1,6 +1,6 @@
 {
   "started_at": "2026-10-30T15:01:46.081381+00:00",
-  "phase": "L_FINAL_NATIVE_APPROVED_SEED219_202_NOT_LIVE_CLIENT_PREVIEW6_METADATA_READY",
+  "phase": "L_BOTH219_202_PREVIEW6_ASSETS_FROZEN_DESKTOP_NATIVE_RESTART_PASS_M_FINAL_NOT_SEEDED_N_WORD_PASS",
   "base_commit": "0e8eb56a9bdbbea295b584e9a8037337c79e37e8",
   "baseline": {
     "guides": 203,
@@ -10,9 +10,9 @@
     "ubuntu_outbox": 0
   },
   "agents": {
-    "overnight_ui_validation": "Lstage/nativeprepfinished; Root actual4approvedfinal",
-    "overnight_digital": "MformalownPutian2source/provider18sourcefiles; phasepinsNone, noWordvisual/shared/policy/DB",
-    "production_ci": "Private219/p6 immutablebuildprep sourceunbound; noactualbuild/network"
+    "overnight_ui_validation": "Preview6 native configure+restart actualPASS; ownruntimev3 finalstopPASS; helpersfrozen",
+    "overnight_digital": "N stage receipt interfaces and safe Wordproof preparation; unregistered/noCI/policy/DB",
+    "production_ci": "M phase formal32+6 and atomichelpers20 passed/frozen; Root independent review next"
   },
   "root_ownership": [
     "collector frontend admin UI + backendapp router wiring",
@@ -34,14 +34,14 @@
     "public_domain": "No projectdomainconfigured found; tailnet exists but nodeoffline/controlnetworkunreachable. Not completed TLS.",
     "earlier_Ubuntu_QA_sessions": "Some earlier failed-before-logout opaque sessions revocation NOT_PROVEN; final own logout204 proven. Do not blindly revoke other existing sessions; no credentials uploaded."
   },
-  "next": "Commit exact L final/native/seed219 +preview6 synchronizedmetadata after32+20guard tests; cleanGitHubCI required before preserving Main/Ubuntu switch andsingleL append. Liveboth218/201 retained. Prepare immutable219/preview6 builds/sign usingexistingidentity; USB0 noinstallclaim. MownPutianformalproposal18testsprivate/unregistered noinheritance.",
-  "updated_at": "2026-10-31T04:48:27.706703+00:00",
+  "next": "Independently hash nine preview6 assets and native desktop four files/contracts/restart before binding exact publisher; draft then separate public publish/anonymous nine download verification, no USB install claim. Root review M20 helper and actual source dry, append source-only221/204, update exact seed policy, commit/new real CI before preserving Main+Ubuntu live upgrade. N Word48approved but stage adapter pending; no cross-region reuse. Continue national queue truthfully; all31 provinces incomplete. No Windows models/browser screenshots/HAR.",
+  "updated_at": "2026-10-31T06:12:18.208038+00:00",
   "public_seed": {
     "guides": 219,
     "generatable": 202,
-    "main_live_guides": 218,
-    "ubuntu_live_guides": 218,
-    "publication": "Only canonical source snapshot219/202; old218encodedprefix/directoryunchanged. Main+Ubuntu remain218/201 until newcodeCI/deploy/native acceptance."
+    "main_live_guides": 219,
+    "ubuntu_live_guides": 219,
+    "publication": "Canonical source and both actual live hosts219/202. Eight L native downloads and four canonical contracts independently accepted. MAIN history227/outbox377; Ubuntu history219/outbox0. Existing data preserved; old immutable release snapshots remain unchanged."
   },
   "implemented": {
     "digital": "Ubuntu8089 actual synthetic stream and responsive candidate pass",
@@ -50,29 +50,28 @@
     "android": "independent release signing build active; compatible debug package preserved",
     "ui_screenshots": "NOT_ACCEPTED_TOOL_RESTRICTION; excluded and preserved private"
   },
-  "source_commit": "b439817c3fb2193a24872dfef31224f65cc4f9b3",
+  "source_commit": "980843c52fdebd2555791710bf24e4c2a432a882",
   "github_source_ci": {
-    "source_commit": "b439817c3fb2193a24872dfef31224f65cc4f9b3",
-    "run_id": 41163631171,
-    "job_id": 124426373064,
+    "source_commit": "9978ba563c49b84bc1357d640aa404f8ecc6a398",
+    "run_id": 41170091565,
+    "job_id": 124445980530,
     "status": "success",
     "all_job_steps": "success",
-    "backend_tests": 395,
-    "backend_seconds": 281.24,
+    "backend_tests": 418,
+    "backend_seconds": 226.284,
     "guarded_crash_tests": 2,
-    "guarded_crash_seconds": 0.528,
-    "archived_decoded_log_sha256": "87125f439e310fcf637915c360ff1f47d2d8f93bf005f2db0d141b7afce581e3",
-    "archived_decoded_log_normalized_LF": true,
-    "real_source_frozen": true
+    "guarded_crash_seconds": 0.41,
+    "fresh_clean_source": true
   },
   "main": {
-    "guides": 218,
-    "generatable": 201,
-    "history": 226,
+    "guides": 219,
+    "generatable": 202,
+    "history": 227,
     "openclaw_ack": 377,
     "user_dirty_six_preserved": true,
-    "core_pid": 105700,
-    "native_K_downloads": 8
+    "core_pid": 85468,
+    "native_K_downloads": 8,
+    "native_L_downloads": 4
   },
   "linux_issue_relay": {
     "reviewed": 2,
@@ -253,6 +252,50 @@
         "web_mini_contract_drift": "PASS"
       },
       "Root_independent_native_review": "PASS full8normal/originalwholebytes+allZIP+4fullcontracts15fields/source3; publiccandidatereportc6951342 committed; finalNone"
+    },
+    "Putian_M": {
+      "phase": "ROOT_FINAL_APPROVED_COPIED_NOT_SEEDED_OR_LIVE",
+      "regions": [
+        "350302",
+        "350303"
+      ],
+      "source_versions": {
+        "350302": "f32d80b4e158a8122c8f7469a0a9ca533af838d5dc6327240c7f8ddc3cbb8abf",
+        "350303": "454a1a56e56177d5be63d838b9b6ad97d5a729d4ee639efd99a2cdbb58a1d7b6"
+      },
+      "stage_sha256": "4ebcd637f852146167c2b9d4ffc34135a53255ba5a2d180d7019f1c08f4a7b3b",
+      "publication_sha256": "7a9a65f57253d24588014dd254471f039ac40099cad319706f2ea10afb98c813",
+      "canonical_provider_sha256": "0f60ebab5e12e4124403f83aefcd17e7f71361f48bd23905e48a5f3f6114b31f",
+      "candidate_native_words": 8,
+      "full_contracts": 4,
+      "root_original_guard_tests": 7,
+      "Root_independent_final_gate_tests": 8,
+      "public_source_and_QA_files": 99,
+      "source_only_generation": false,
+      "live_guides_added": 0,
+      "private_seed_helper20tests": "Agent_pass_Root_review_pending",
+      "registered_stage_commit": "04eed30754c2a82f2945307cbc612160bfb15ff7"
+    },
+    "Putian_N": {
+      "phase": "UNREGISTERED_OWN_SOURCE_WORD_VISUAL_PASS_STAGE_ADAPTER_PREPARATION",
+      "regions": [
+        "350304",
+        "350305"
+      ],
+      "source_files": 18,
+      "source_versions": {
+        "350304": "d14f537bfd0137533112f380bf3e162f0207e23fe5aef75510db1a914a00cb91",
+        "350305": "9e3b53ede88fc12346504c94725d6a7987b8f263ac3caf3df51a1b1e2b11c96f"
+      },
+      "Word_documents": 12,
+      "logical_Word_pages": 48,
+      "Root_actual_new_unique_image_opens": 26,
+      "known_Root_exact_SHA_pages": 22,
+      "Root_actual_original_CI_tests": 22,
+      "stage_adapter": "Preparation_only",
+      "publication": null,
+      "source_only_generation": false,
+      "live_guides_added": 0
     }
   },
   "remaining": [
@@ -556,5 +599,39 @@
     "web_mini_checks": "PASS",
     "Ubuntu_static_copy_updated": false,
     "new_client_package_published": false
+  },
+  "ubuntu_L219": {
+    "guides": 219,
+    "generatable": 202,
+    "history": 219,
+    "legacy_outbox": 0,
+    "source_commit": "9978ba563c49b84bc1357d640aa404f8ecc6a398",
+    "actual_cold": "PASS",
+    "manifest_files": 4416,
+    "core_pid": 1172828,
+    "native_downloads": 4,
+    "persistent_non_guides_files_unchanged": 5,
+    "protected_processes_unchanged": 3,
+    "collector_jobs_preserved": 4,
+    "collector_capture_screenshots": false,
+    "model_calls": 0
+  },
+  "preview6_actual_build": {
+    "source_commit": "9978ba563c49b84bc1357d640aa404f8ecc6a398",
+    "first_junction_clients_build": "FAILED_SOURCE_GUARD_PRESERVED",
+    "c2_first_sync_build": "FAILED_EIGHT_NEW_GENERATED_INPUTS_PRESERVED_6526_COMMITTED_FILES_UNCHANGED",
+    "warm_retry": "PASS_ORIGINAL_PIPELINE_SOURCE_GUARD_UNCHANGED_EIGHT_GENERATED_CONFIGS_STABLE",
+    "source_files": 6526,
+    "four_target_build": "PASS",
+    "receipt_sha256": "f19360f28c4956b1f327e6325e3d51a3596b8404708a0b370dae6e293d88c65b",
+    "signing": "PASS_EXISTING_IDENTITY_CREATED_FALSE_CODE9",
+    "assets": 9,
+    "package_freeze_sha256": "45195cc1468836d1d0be0fbd8b05a815a50e1ea8835ce7f1ec733626ac3aa8cf",
+    "public_release": "NOT_PUBLISHED",
+    "native_desktop": "PASS_CONFIGURE_4_NATIVE_WORDS_AND_FULL_RESTART_SAVED_CONNECTION_0_POSTS",
+    "desktop_own_processes": "CLOSED_QUALIFIED_V3",
+    "desktop_helper_failures": "Two original gone/teardown predicates preserved, readonly recovery proven; fixed helpers15puretests and actualrestart/close pass",
+    "USB": "ZERO_AUTHORIZED_DEVICES_NO_INSTALL_CLAIM",
+    "new_pipeline_and_display_source_fixes_in_this_package": false
   }
 }
