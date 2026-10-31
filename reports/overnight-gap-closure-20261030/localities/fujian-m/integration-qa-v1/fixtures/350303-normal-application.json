@@ -1,0 +1,51 @@
+{
+  "fictional_only": true,
+  "real_case_data": false,
+  "model_calls": 0,
+  "data": {
+    "applicantName": "虚构涵江区申请人甲（仅测试）",
+    "agentName": "",
+    "respondentName": "虚构涵江区乙公司（仅测试）",
+    "requests": [
+      "虚构请求，仅验证自身候选映射，不提出真实申请。"
+    ],
+    "factsReason": "所有内容均为虚构，不涉及真实案件或当事人。"
+  },
+  "request": {
+    "province": "fujian",
+    "city": "莆田市",
+    "district": "涵江区",
+    "region_code": "350303",
+    "source_id": "27f41dab3a9d19c7d144c8de",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=B9DF60152E3BE1A2BA326311AD809DC3&infoType=1",
+    "service_code": "11350303003706658F400201430200201",
+    "authority": "涵江区人力资源和社会保障局",
+    "source_version": "454a1a56e56177d5be63d838b9b6ad97d5a729d4ee639efd99a2cdbb58a1d7b6",
+    "material_id": null,
+    "local_material_key": "27f41dab3a9d19c7d144c8de:dom-material:1",
+    "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+    "template_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+    "template_version": "sha256:093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+    "schema_id": "fujian-m-350303-application-v1",
+    "schema_version": 1,
+    "schema_sha256": "ffc499f7cf5cbb3a6c06de575c9c076efc6cc6d5dcafa4572352b58559db4450",
+    "kind": "application",
+    "mode": "blank",
+    "data": {
+      "applicantName": "虚构涵江区申请人甲（仅测试）",
+      "agentName": "",
+      "respondentName": "虚构涵江区乙公司（仅测试）",
+      "requests": [
+        "虚构请求，仅验证自身候选映射，不提出真实申请。"
+      ],
+      "factsReason": "所有内容均为虚构，不涉及真实案件或当事人。"
+    }
+  },
+  "source_version": "454a1a56e56177d5be63d838b9b6ad97d5a729d4ee639efd99a2cdbb58a1d7b6",
+  "official_material_id": null,
+  "local_material_key_is_not_official_ID": true,
+  "same_request_as_frozen_public_context_M_queue": true,
+  "output": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350303-normal-application.docx",
+  "bytes": 12023,
+  "sha256": "5c9fed94dc4515b26b4966a83d31970da8a69cc5f43e9d3e76e79f990fd995ac"
+}

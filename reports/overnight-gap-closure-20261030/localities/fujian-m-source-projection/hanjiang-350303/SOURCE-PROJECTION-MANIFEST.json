@@ -1,0 +1,60 @@
+{
+  "source_id": "27f41dab3a9d19c7d144c8de",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=B9DF60152E3BE1A2BA326311AD809DC3&infoType=1",
+  "region_code": "350303",
+  "authority_raw": "涵江区人力资源和社会保障局",
+  "service_code": "11350303003706658F400201430200201",
+  "observed_at_utc": "2026-10-31T03:31:35.367679+00:00",
+  "schema": "fujian-putian-own-public-source-v1",
+  "files": {
+    "application-own-format.docx": {
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    "attachments.json": {
+      "bytes": 7087,
+      "sha256": "09c7f71a145c912eedc406f5be673fec76c3ebc448715feb647228089aac7b8d"
+    },
+    "evidence-list-own-format.docx": {
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    "materials.json": {
+      "bytes": 3921,
+      "sha256": "7b0709515732c3bfc2df4eaf32fdeb8aa40d350a0fd3565d8aa64c9d8ca57b87"
+    },
+    "own-guide.json": {
+      "bytes": 23042,
+      "sha256": "7b0b9f5bf61a8f5db17ebd2142c6b5c15e971547e137059061d2f344a4a1e11e"
+    },
+    "qualifications.json": {
+      "bytes": 1866,
+      "sha256": "538c443bb48fb161f842bdbec10bf9c0d9606a9fd943d1d6fc820b00b1784d5f"
+    },
+    "source-lineage.json": {
+      "bytes": 996,
+      "sha256": "fa78f78f6aac44721b3715643d2e0c696b77ff2023e0a0c2d3d9315fc02689c1"
+    },
+    "SOURCE-PROOF-SUPPLEMENT.json": {
+      "bytes": 21554,
+      "sha256": "4ce23685ceee0f2b627d4ad32278c53db8b2f7276a8ec913d02739da7f571d4a"
+    }
+  },
+  "private_parent_runtime_fallback": false,
+  "committee_name": null,
+  "official_version": null,
+  "official_material_IDs": null,
+  "generation_permission": null,
+  "can_generate": false,
+  "published": false,
+  "stage_approval": null,
+  "publication_approval": null,
+  "source_v2_manifest_audit_sha256": "0922482464e76ef04f1ced6188db5966d12970666d2c68810c8eb081d45382bc",
+  "projected_at_utc": "2026-10-31T04:46:31.054370+00:00",
+  "projection_kind": "derived_allowlisted_native_source_metadata_with_raw_replay",
+  "private_proposal_audit_sha256": "bf2b49c6cbad26562bf9a2c816836f7d308e60688bfa63a605604e0765794141",
+  "raw_parent_is_runtime_dependency": false,
+  "source_review": "PENDING_ROOT_FORMAL_REVIEW",
+  "Word_visual_review": "PENDING_ROOT",
+  "committee_autofill_allowed": false
+}

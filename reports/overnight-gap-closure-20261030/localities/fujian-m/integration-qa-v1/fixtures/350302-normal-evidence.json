@@ -1,0 +1,55 @@
+{
+  "fictional_only": true,
+  "real_case_data": false,
+  "model_calls": 0,
+  "data": {
+    "evidenceList": [
+      {
+        "name": "虚构城厢区材料甲",
+        "pageCount": "1",
+        "originalType": "复印件",
+        "purpose": "虚构测试，仅核对候选表格。",
+        "pageRange": "1"
+      }
+    ]
+  },
+  "request": {
+    "province": "fujian",
+    "city": "莆田市",
+    "district": "城厢区",
+    "region_code": "350302",
+    "source_id": "28a4418211ce36fedd8069f6",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+    "service_code": "11350302003700205G400201430200Y01",
+    "authority": "城厢区人力资源和社会保障局",
+    "source_version": "f32d80b4e158a8122c8f7469a0a9ca533af838d5dc6327240c7f8ddc3cbb8abf",
+    "material_id": null,
+    "local_material_key": "28a4418211ce36fedd8069f6:dom-material:2",
+    "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+    "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "template_version": "sha256:d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "schema_id": "fujian-m-350302-evidence-v1",
+    "schema_version": 1,
+    "schema_sha256": "33997c7df93ea520651c6c1c53bd60531856cef1f3742cee3c9c015818453912",
+    "kind": "evidence",
+    "mode": "blank",
+    "data": {
+      "evidenceList": [
+        {
+          "name": "虚构城厢区材料甲",
+          "pageCount": "1",
+          "originalType": "复印件",
+          "purpose": "虚构测试，仅核对候选表格。",
+          "pageRange": "1"
+        }
+      ]
+    }
+  },
+  "source_version": "f32d80b4e158a8122c8f7469a0a9ca533af838d5dc6327240c7f8ddc3cbb8abf",
+  "official_material_id": null,
+  "local_material_key_is_not_official_ID": true,
+  "same_request_as_frozen_public_context_M_queue": true,
+  "output": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350302-normal-evidence.docx",
+  "bytes": 16731,
+  "sha256": "63d1427f419f1c7f0babab5d24870c83f6ebf64cc7ad7a7f76fa8b49aef8a439"
+}

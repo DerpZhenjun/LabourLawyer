@@ -1,0 +1,492 @@
+{
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+  "source_id": "28a4418211ce36fedd8069f6",
+  "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+  "observed_at_utc": "2026-10-31T03:26:12.924331+00:00",
+  "province": "fujian",
+  "city": "莆田市",
+  "district": "城厢区",
+  "region_code": "350302",
+  "guide_unid": "FA08DD1B47657A342A4574961F7BAC35",
+  "service_name": "劳动人事争议仲裁申请",
+  "service_code": "11350302003700205G400201430200Y01",
+  "authority_raw": "城厢区人力资源和社会保障局",
+  "department_raw": "城厢区劳动人事争议仲裁院",
+  "raw_fields": {
+    "一件事集成套餐": {
+      "raw_value": "无",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "上级标准化事项目录": {
+      "raw_value": "劳动人事争议调解仲裁",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "业务办理项编码": {
+      "raw_value": "11350302003700205G400201430200Y01",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "个人办事主题": {
+      "raw_value": "社会保障",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "中介服务": {
+      "raw_value": "无",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "主办处室": {
+      "raw_value": "城厢区劳动人事争议仲裁院",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "事项状态": {
+      "raw_value": "在用",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "事项类型": {
+      "raw_value": "公共服务",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "事项编码": {
+      "raw_value": "11350302003700205GGF200150",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "企业办事主题": {
+      "raw_value": "社会保障",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "办件类型": {
+      "raw_value": "无",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "办理形式": {
+      "raw_value": "窗口办，网上办，邮寄办",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "基本编码": {
+      "raw_value": "00201430200Y",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "委托部门": {
+      "raw_value": "无",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "实施主体": {
+      "raw_value": "城厢区人力资源和社会保障局",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "实施主体性质": {
+      "raw_value": "法定机关",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "实施编码": {
+      "raw_value": "11350302003700205G400201430200Y",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "审批结果共享": {
+      "raw_value": "是",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "审批结果名称": {
+      "raw_value": "无",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "审批结果样本": {
+      "raw_value": "不予受理通知书（适用于仲裁申请）或受理通知书（适用于一般程序）.docx（点击下载）",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "审批结果类型": {
+      "raw_value": "批文",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "必须现场办理原因": {
+      "raw_value": "需要本人签订三方协议。",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "承诺时限": {
+      "raw_value": "受理后5个工作日",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "数量限制": {
+      "raw_value": "无限制",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "是否全国高频“跨省通办”事项": {
+      "raw_value": "否",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "是否支持物流快递": {
+      "raw_value": "是",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "是否进驻政务大厅": {
+      "raw_value": "否",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "权力来源": {
+      "raw_value": "法定本级行使",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "权责清单": {
+      "raw_value": "劳动人事争议仲裁申请",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "法定时限": {
+      "raw_value": "受理后5个工作日",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "法定时限说明": {
+      "raw_value": "60",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "特殊环节": {
+      "raw_value": "无",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "申报对象": {
+      "raw_value": "个人,企业,事业单位,行政机关,民办非企业单位,社团组织,其他组织",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "监督和投诉电话": {
+      "raw_value": "0594-12345",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "结果领取方式": {
+      "raw_value": "申请对象窗口领取，邮递办理结果",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "结果领取说明": {
+      "raw_value": "无",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "网上办理深度": {
+      "raw_value": "材料预审（Ⅱ级）",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "联办机构": {
+      "raw_value": "无",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "联系电话": {
+      "raw_value": "0594-2670178",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "行使层级": {
+      "raw_value": "县级",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "通办范围": {
+      "raw_value": "无",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    },
+    "通办范围说明": {
+      "raw_value": "无",
+      "normalization": null,
+      "status": "observed_raw_unverified",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+        "source_id": "28a4418211ce36fedd8069f6",
+        "source_manifest_sha256": "a45117a3ac071223570b354ba9d4cb3c8f882495d3cdc76d9e1714219acf03cf",
+        "observed_at_utc": "2026-10-31T03:26:12.924331+00:00"
+      }
+    }
+  },
+  "raw_sections": {
+    "conditions": "受理条件\n1、属于《劳动人事争议仲裁办案规则》第二条规定的争议范围\n2、有明确的仲裁请求和事实理由\n3、申请人为与本案有直接利害关系的自然人、法人或者其他组织\n4、有明确的被申请人\n5、属于本仲裁委员会管辖范围",
+    "window": "窗口办理\n办理时间：工作日上午：8:00-12:00，下午：14:30-17:30（法定节假日除外，夏令时（6月1日到9月30日）调整为下午：15:00-18:00）\n办理地点：莆田市城厢区霞林街道荔华东大道999号九龙小区写字楼C幢3层城厢区劳动人事争议仲裁院窗口\n交通指引：市内可乘坐2路、6路、7路、10路、21路、28路、55路公交车至车辆检测站公交站下车。"
+  },
+  "fee_raw": "不收费",
+  "committee_name": null,
+  "official_version": null,
+  "login_entry": null,
+  "guide_status": "partial",
+  "generation_permission": null,
+  "can_generate": false,
+  "stage_approval": null,
+  "publication_approval": null
+}

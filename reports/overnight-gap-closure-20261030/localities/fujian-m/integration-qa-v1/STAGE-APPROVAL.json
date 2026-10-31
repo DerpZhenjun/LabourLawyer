@@ -1,0 +1,388 @@
+{
+  "identities": [
+    {
+      "region_code": "350302",
+      "source_id": "28a4418211ce36fedd8069f6",
+      "service_code": "11350302003700205G400201430200Y01",
+      "manifest_sha256": "f32d80b4e158a8122c8f7469a0a9ca533af838d5dc6327240c7f8ddc3cbb8abf"
+    },
+    {
+      "region_code": "350303",
+      "source_id": "27f41dab3a9d19c7d144c8de",
+      "service_code": "11350303003706658F400201430200201",
+      "manifest_sha256": "454a1a56e56177d5be63d838b9b6ad97d5a729d4ee639efd99a2cdbb58a1d7b6"
+    }
+  ],
+  "word_manifest_sha256": "df75703c23b0b8366b636db1774b9dbb1a061e48ea1b1f8c5b91d048ec114400",
+  "eligible_originals": 4,
+  "approved_by": "independent_root",
+  "visual_review": "PASS",
+  "source_projection_review": "PASS",
+  "can_publish": false,
+  "model_calls": 0,
+  "approval_basis": "Explicit independent Root source20originalCI allow_nodeFalse, own12input safety and actual48page Word body review; stage only",
+  "root_visual_review_sha256": "2313aacd30ad9cfaeb4b2f77f90d3487cba9cfd74af5e47a3c3637d69498adb7",
+  "page_coverage_proof_sha256": "740773ea9852ad792851079c58b229df319d01235b49dedcde27fb82c39e0ca9",
+  "files": [
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/fixtures/350302-normal-application.json",
+      "bytes": 2368,
+      "sha256": "c86f32537da484783ac9fb74ecb2c647de1b19eb4e9866148432cd40e70bd53a"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/fixtures/350302-normal-evidence.json",
+      "bytes": 2161,
+      "sha256": "570cd23bee2abf418656824e1f91ae5c37b0c728a1f19fcae735ac1dce08433a"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/fixtures/350302-stress-application.json",
+      "bytes": 25906,
+      "sha256": "d12193fb4e9385e9520955f6096da8f5a742dc2c773331094ce6330b46f216d4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/fixtures/350302-stress-evidence.json",
+      "bytes": 13837,
+      "sha256": "ce48cabcf8343b2ca72ea418685ff44248c0d222cf5892269ca96125ed50daa5"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/fixtures/350303-normal-application.json",
+      "bytes": 2368,
+      "sha256": "ac6f7ab05f266e55d08292c3ec704206afc60a3a64c7f48f2a79f4bd6eef8ef4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/fixtures/350303-normal-evidence.json",
+      "bytes": 2161,
+      "sha256": "6525f3b271c588771f6651f62e278bbb6247d7db4b35332bbd12d7fb2c870667"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/fixtures/350303-stress-application.json",
+      "bytes": 25906,
+      "sha256": "3698b10bc2656ab310543b666774e3c303a30e7e10b1bb16e84c4562aeabccd8"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/fixtures/350303-stress-evidence.json",
+      "bytes": 13837,
+      "sha256": "35919beef255e19f1f60ce954a0d0468b70acc35ad70fb4747f9647e3b07df6a"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-application-normal-1.png",
+      "bytes": 79924,
+      "sha256": "2475cc63f69e6b21afc9194bb4f473dfb606064120f349aa980745efc4a26408"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-application-normal-2.png",
+      "bytes": 6132,
+      "sha256": "6f480717ff4e7cb9364ca6bb0a17e7a0627ee1de3b97f57f5bfba5dab30ef6aa"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-application-original-1.png",
+      "bytes": 40033,
+      "sha256": "7ccf9d2414ce1781a86630b2fac16d60c2807351c16f563c5c73edaf8f16d950"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-application-original-2.png",
+      "bytes": 5069,
+      "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-application-stress-1.png",
+      "bytes": 72345,
+      "sha256": "3b739bdb5728ba281b046d60d03ae2f417216b88a942e43564b7d50f4ccd5cd1"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-application-stress-2.png",
+      "bytes": 185176,
+      "sha256": "86ba68e0520394b2804efaa63f89f031f04f70c4c0252de5f1814ad07f9f9cec"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-application-stress-3.png",
+      "bytes": 212963,
+      "sha256": "821a2ed4a026824e342e4f5f47da8e622f77f8925525a60baa1d4c999a1218b8"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-application-stress-4.png",
+      "bytes": 235889,
+      "sha256": "4c8c1bfa0e65fe60444ef22eafd11f5126e2899748015cb778fd0f9e28de1e2b"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-application-stress-5.png",
+      "bytes": 278441,
+      "sha256": "48f6f865e9276832b80b301872d26d268ca9f71dd5f58d92b7fa864b1d2b25eb"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-application-stress-6.png",
+      "bytes": 278441,
+      "sha256": "48f6f865e9276832b80b301872d26d268ca9f71dd5f58d92b7fa864b1d2b25eb"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-application-stress-7.png",
+      "bytes": 278441,
+      "sha256": "48f6f865e9276832b80b301872d26d268ca9f71dd5f58d92b7fa864b1d2b25eb"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-application-stress-8.png",
+      "bytes": 275150,
+      "sha256": "5b5d6eb0b14ecf4802c555075f5a8a93c7e986c0a39018ba241c20a95e0758d2"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-application-stress-9.png",
+      "bytes": 18011,
+      "sha256": "af374b9312fe5d61f1dcfd95b88da6b132bd5ed2db1e6130c62cca1f978114f5"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-evidence-normal-1.png",
+      "bytes": 53068,
+      "sha256": "a24bf78187218d379adadeb80b39df9164ad5d812cacdc5e39893f9f4d7f0bc7"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-evidence-original-1.png",
+      "bytes": 35874,
+      "sha256": "65362d420216052c69a3276f236ec48792ce25b3d719faa29b642b84fb3c8ae4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-evidence-stress-1.png",
+      "bytes": 131632,
+      "sha256": "bb88fa27beff2ed3c81e0853f765a6ba07fa1901db2c72fbd9eb4f85d7606abe"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-evidence-stress-2.png",
+      "bytes": 128206,
+      "sha256": "0de15d513007d34b59030aa47a28721081eb0e491b77fb00c83c28dcc525d9de"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-evidence-stress-3.png",
+      "bytes": 128934,
+      "sha256": "71418bb09d70f0d1bb2dd028979ed03e6a84167ab3c03416964e172cb7cec8b2"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-evidence-stress-4.png",
+      "bytes": 127857,
+      "sha256": "3a21ae31aad10bf7b6853dc0bc5551be233acbd9cd1a4e1ac1e2af3fe3cea292"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-evidence-stress-5.png",
+      "bytes": 128758,
+      "sha256": "16a2516ee9ff857c22a503a59ba093386cce0ff2902d36d5d4114b610aa26729"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-evidence-stress-6.png",
+      "bytes": 128413,
+      "sha256": "0313d4dad045f2c07fe08d183d9177b489aa406dd534b0551179a00018bbe4b6"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-evidence-stress-7.png",
+      "bytes": 128397,
+      "sha256": "0fe15c72b35d510d29b8c198e1609af6348f652b6a4a47d0516a621415d9c66d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-evidence-stress-8.png",
+      "bytes": 128617,
+      "sha256": "ffa93fd41d235cde3441858eaaa7aff20431607905b0d8cf1f2a7dd4886b8304"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350302-evidence-stress-9.png",
+      "bytes": 140574,
+      "sha256": "63c936dd9f3c520a80cd43687220cb9090fe276cdf0087ceeeaeead26dcda560"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-application-normal-1.png",
+      "bytes": 79674,
+      "sha256": "37a88053ed60b9f3ed51cc3e22f823992e3c5f2cddd86747b54b0547f37a6ac8"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-application-normal-2.png",
+      "bytes": 6132,
+      "sha256": "6f480717ff4e7cb9364ca6bb0a17e7a0627ee1de3b97f57f5bfba5dab30ef6aa"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-application-original-1.png",
+      "bytes": 40033,
+      "sha256": "7ccf9d2414ce1781a86630b2fac16d60c2807351c16f563c5c73edaf8f16d950"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-application-original-2.png",
+      "bytes": 5069,
+      "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-application-stress-1.png",
+      "bytes": 71734,
+      "sha256": "a10b90dd30c51da648b7b5f87b0750be5191237bc395c3e1706666c52d6876b9"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-application-stress-2.png",
+      "bytes": 185176,
+      "sha256": "86ba68e0520394b2804efaa63f89f031f04f70c4c0252de5f1814ad07f9f9cec"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-application-stress-3.png",
+      "bytes": 212963,
+      "sha256": "821a2ed4a026824e342e4f5f47da8e622f77f8925525a60baa1d4c999a1218b8"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-application-stress-4.png",
+      "bytes": 235581,
+      "sha256": "1322e3a4eeffe77e220addc2f8b40b81be9ec429e4c37ab12636bb5a87ad4907"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-application-stress-5.png",
+      "bytes": 278441,
+      "sha256": "48f6f865e9276832b80b301872d26d268ca9f71dd5f58d92b7fa864b1d2b25eb"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-application-stress-6.png",
+      "bytes": 278441,
+      "sha256": "48f6f865e9276832b80b301872d26d268ca9f71dd5f58d92b7fa864b1d2b25eb"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-application-stress-7.png",
+      "bytes": 278441,
+      "sha256": "48f6f865e9276832b80b301872d26d268ca9f71dd5f58d92b7fa864b1d2b25eb"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-application-stress-8.png",
+      "bytes": 275150,
+      "sha256": "5b5d6eb0b14ecf4802c555075f5a8a93c7e986c0a39018ba241c20a95e0758d2"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-application-stress-9.png",
+      "bytes": 18011,
+      "sha256": "af374b9312fe5d61f1dcfd95b88da6b132bd5ed2db1e6130c62cca1f978114f5"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-evidence-normal-1.png",
+      "bytes": 52862,
+      "sha256": "f43305814c38187a5fb8606e32f8a45a4824b454d9912ee937e3da7a84fdae71"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-evidence-original-1.png",
+      "bytes": 35874,
+      "sha256": "65362d420216052c69a3276f236ec48792ce25b3d719faa29b642b84fb3c8ae4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-evidence-stress-1.png",
+      "bytes": 131412,
+      "sha256": "2d95b09bd1bd70647671987df75cfb37cbca26afad6212bc6fe14df1ed523c62"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-evidence-stress-2.png",
+      "bytes": 127994,
+      "sha256": "9a485e50cb9d5d69d722f600865a1b1c35f3507f0c461ed391ee94c9fbdfcec5"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-evidence-stress-3.png",
+      "bytes": 128729,
+      "sha256": "e9c47fbb7e1782b31a35d8837f0f04617f3b0da1ecf154113f6084cd5bd737b1"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-evidence-stress-4.png",
+      "bytes": 127640,
+      "sha256": "81eee2dd59742002ae23ef5acdeeff2377db1e5eddb6544f78541d22b005c7c2"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-evidence-stress-5.png",
+      "bytes": 128553,
+      "sha256": "9cabbe5377e3eb83a86bd56466e428df59a273b35da2015c40c1f166a80fd788"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-evidence-stress-6.png",
+      "bytes": 128210,
+      "sha256": "9e372c0737ccad18f9b03ce17edf47f6baf2d2f76f8194d796cfa2772b30680e"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-evidence-stress-7.png",
+      "bytes": 128194,
+      "sha256": "5517e4f0c7ef36356d57cdb42a7bc7b53039f4d8cea7187f80f92e5d764b0a73"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-evidence-stress-8.png",
+      "bytes": 128404,
+      "sha256": "ef6d5eb69a91f5e9baa49d80afb7f0245bf98915061e354777ce945b0e955751"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/pages/350303-evidence-stress-9.png",
+      "bytes": 140347,
+      "sha256": "064dd20225b8ef02f62f2f8c139bedd7b5beda7ce2eee9d000b89ffe80c553aa"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/README.md",
+      "bytes": 441,
+      "sha256": "351a829f826cd849b107f1224d6b7d6375260230e1474aaaf31d61f4bca2887f"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/ROOT-PAGE-REVIEW-INDEX.json",
+      "bytes": 15992,
+      "sha256": "740773ea9852ad792851079c58b229df319d01235b49dedcde27fb82c39e0ca9"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/ROOT-VISUAL-REVIEW.json",
+      "bytes": 3093,
+      "sha256": "2313aacd30ad9cfaeb4b2f77f90d3487cba9cfd74af5e47a3c3637d69498adb7"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/SOURCE-WORD-PARITY.json",
+      "bytes": 58355,
+      "sha256": "e06f8747bac324a2c9929e5c1160a899e740f65d6f97088fdfe954eee2ec4eea"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350302-normal-application.docx",
+      "bytes": 12023,
+      "sha256": "95d691dc1cc3b45a01ea09de1130afae4b333d2c4006f97060024cca5795174f"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350302-normal-evidence.docx",
+      "bytes": 16731,
+      "sha256": "63d1427f419f1c7f0babab5d24870c83f6ebf64cc7ad7a7f76fa8b49aef8a439"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350302-original-application.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350302-original-evidence.docx",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350302-stress-application.docx",
+      "bytes": 12134,
+      "sha256": "cb3c1465cd95574a875060691c2357cabef832e35e3c8531caf5142a993130bf"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350302-stress-evidence.docx",
+      "bytes": 17401,
+      "sha256": "141316d2b30aed8353e1fa166e7c2481ecb655de6c6bcf6e429e91677e73f87c"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350303-normal-application.docx",
+      "bytes": 12023,
+      "sha256": "5c9fed94dc4515b26b4966a83d31970da8a69cc5f43e9d3e76e79f990fd995ac"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350303-normal-evidence.docx",
+      "bytes": 16731,
+      "sha256": "c8306ef92310e9092edb7aa5d47251a55d3ce1893ed54263fc4cb7726bebe962"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350303-original-application.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350303-original-evidence.docx",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350303-stress-application.docx",
+      "bytes": 12134,
+      "sha256": "8c8e4790f1c75d21f04f50382ab0f5f18fe2e47cea480399aecf032ab4a326d4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-m/integration-qa-v1/word/350303-stress-evidence.docx",
+      "bytes": 17401,
+      "sha256": "1992a92f22fbce6ecb87de580760f99975a0965f7a63958b28d6b75c979fb7b2"
+    }
+  ]
+}

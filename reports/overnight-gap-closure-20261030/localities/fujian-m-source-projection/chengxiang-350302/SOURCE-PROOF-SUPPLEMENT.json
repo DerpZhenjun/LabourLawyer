@@ -1,0 +1,417 @@
+{
+  "schema": "putian-own-source-supplement-v3",
+  "region_code": "350302",
+  "source_id": "28a4418211ce36fedd8069f6",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+  "service_code": "11350302003700205G400201430200Y01",
+  "official_material_IDs": null,
+  "committee_name": null,
+  "official_version": null,
+  "field_raw_line_replay": {
+    "一件事集成套餐": {
+      "line_number_0based": 66,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "一件事集成套餐：\t无",
+      "raw_label_cell": "一件事集成套餐：",
+      "raw_value_cell": "无"
+    },
+    "上级标准化事项目录": {
+      "line_number_0based": 54,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "上级标准化事项目录：\t劳动人事争议调解仲裁",
+      "raw_label_cell": "上级标准化事项目录：",
+      "raw_value_cell": "劳动人事争议调解仲裁"
+    },
+    "业务办理项编码": {
+      "line_number_0based": 56,
+      "pair_column_0based": 2,
+      "raw_rendered_line": "实施编码：\t11350302003700205G400201430200Y\t业务办理项编码：\t11350302003700205G400201430200Y01",
+      "raw_label_cell": "业务办理项编码：",
+      "raw_value_cell": "11350302003700205G400201430200Y01"
+    },
+    "个人办事主题": {
+      "line_number_0based": 74,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "个人办事主题：\t社会保障",
+      "raw_label_cell": "个人办事主题：",
+      "raw_value_cell": "社会保障"
+    },
+    "中介服务": {
+      "line_number_0based": 67,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "中介服务：\t无\t权责清单：\t劳动人事争议仲裁申请",
+      "raw_label_cell": "中介服务：",
+      "raw_value_cell": "无"
+    },
+    "主办处室": {
+      "line_number_0based": 62,
+      "pair_column_0based": 2,
+      "raw_rendered_line": "联办机构：\t无\t主办处室：\t城厢区劳动人事争议仲裁院",
+      "raw_label_cell": "主办处室：",
+      "raw_value_cell": "城厢区劳动人事争议仲裁院"
+    },
+    "事项状态": {
+      "line_number_0based": 87,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "事项状态：\t在用\t是否全程代办：\t否",
+      "raw_label_cell": "事项状态：",
+      "raw_value_cell": "在用"
+    },
+    "事项类型": {
+      "line_number_0based": 57,
+      "pair_column_0based": 2,
+      "raw_rendered_line": "办件类型：\t无\t事项类型：\t公共服务",
+      "raw_label_cell": "事项类型：",
+      "raw_value_cell": "公共服务"
+    },
+    "事项编码": {
+      "line_number_0based": 55,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "事项编码：\t11350302003700205GGF200150\t基本编码：\t00201430200Y",
+      "raw_label_cell": "事项编码：",
+      "raw_value_cell": "11350302003700205GGF200150"
+    },
+    "企业办事主题": {
+      "line_number_0based": 75,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "企业办事主题：\t社会保障",
+      "raw_label_cell": "企业办事主题：",
+      "raw_value_cell": "社会保障"
+    },
+    "办件类型": {
+      "line_number_0based": 57,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "办件类型：\t无\t事项类型：\t公共服务",
+      "raw_label_cell": "办件类型：",
+      "raw_value_cell": "无"
+    },
+    "办理形式": {
+      "line_number_0based": 72,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "办理形式：\t窗口办，网上办，邮寄办",
+      "raw_label_cell": "办理形式：",
+      "raw_value_cell": "窗口办，网上办，邮寄办"
+    },
+    "基本编码": {
+      "line_number_0based": 55,
+      "pair_column_0based": 2,
+      "raw_rendered_line": "事项编码：\t11350302003700205GGF200150\t基本编码：\t00201430200Y",
+      "raw_label_cell": "基本编码：",
+      "raw_value_cell": "00201430200Y"
+    },
+    "委托部门": {
+      "line_number_0based": 61,
+      "pair_column_0based": 2,
+      "raw_rendered_line": "实施主体性质：\t法定机关\t委托部门：\t无",
+      "raw_label_cell": "委托部门：",
+      "raw_value_cell": "无"
+    },
+    "实施主体": {
+      "line_number_0based": 59,
+      "pair_column_0based": 2,
+      "raw_rendered_line": "承诺时限：\t受理后5个工作日\t实施主体：\t城厢区人力资源和社会保障局",
+      "raw_label_cell": "实施主体：",
+      "raw_value_cell": "城厢区人力资源和社会保障局"
+    },
+    "实施主体性质": {
+      "line_number_0based": 61,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "实施主体性质：\t法定机关\t委托部门：\t无",
+      "raw_label_cell": "实施主体性质：",
+      "raw_value_cell": "法定机关"
+    },
+    "实施编码": {
+      "line_number_0based": 56,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "实施编码：\t11350302003700205G400201430200Y\t业务办理项编码：\t11350302003700205G400201430200Y01",
+      "raw_label_cell": "实施编码：",
+      "raw_value_cell": "11350302003700205G400201430200Y"
+    },
+    "审批结果共享": {
+      "line_number_0based": 69,
+      "pair_column_0based": 2,
+      "raw_rendered_line": "审批结果样本：\t不予受理通知书（适用于仲裁申请）或受理通知书（适用于一般程序）.docx（点击下载）\t审批结果共享：\t是",
+      "raw_label_cell": "审批结果共享：",
+      "raw_value_cell": "是"
+    },
+    "审批结果名称": {
+      "line_number_0based": 68,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "审批结果名称：\t无\t审批结果类型：\t批文",
+      "raw_label_cell": "审批结果名称：",
+      "raw_value_cell": "无"
+    },
+    "审批结果样本": {
+      "line_number_0based": 69,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "审批结果样本：\t不予受理通知书（适用于仲裁申请）或受理通知书（适用于一般程序）.docx（点击下载）\t审批结果共享：\t是",
+      "raw_label_cell": "审批结果样本：",
+      "raw_value_cell": "不予受理通知书（适用于仲裁申请）或受理通知书（适用于一般程序）.docx（点击下载）"
+    },
+    "审批结果类型": {
+      "line_number_0based": 68,
+      "pair_column_0based": 2,
+      "raw_rendered_line": "审批结果名称：\t无\t审批结果类型：\t批文",
+      "raw_label_cell": "审批结果类型：",
+      "raw_value_cell": "批文"
+    },
+    "必须现场办理原因": {
+      "line_number_0based": 73,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "必须现场办理原因：\t需要本人签订三方协议。",
+      "raw_label_cell": "必须现场办理原因：",
+      "raw_value_cell": "需要本人签订三方协议。"
+    },
+    "承诺时限": {
+      "line_number_0based": 59,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "承诺时限：\t受理后5个工作日\t实施主体：\t城厢区人力资源和社会保障局",
+      "raw_label_cell": "承诺时限：",
+      "raw_value_cell": "受理后5个工作日"
+    },
+    "数量限制": {
+      "line_number_0based": 77,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "数量限制：\t无限制",
+      "raw_label_cell": "数量限制：",
+      "raw_value_cell": "无限制"
+    },
+    "是否全国高频“跨省通办”事项": {
+      "line_number_0based": 78,
+      "pair_column_0based": 2,
+      "raw_rendered_line": "通办范围说明：\t无\t是否全国高频“跨省通办”事项\t否",
+      "raw_label_cell": "是否全国高频“跨省通办”事项",
+      "raw_value_cell": "否"
+    },
+    "是否支持物流快递": {
+      "line_number_0based": 86,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "是否支持物流快递：\t是\t是否支持网上支付：\t否",
+      "raw_label_cell": "是否支持物流快递：",
+      "raw_value_cell": "是"
+    },
+    "是否进驻政务大厅": {
+      "line_number_0based": 71,
+      "pair_column_0based": 2,
+      "raw_rendered_line": "申报对象：\t个人,企业,事业单位,行政机关,民办非企业单位,社团组织,其他组织\t是否进驻政务大厅：\t否",
+      "raw_label_cell": "是否进驻政务大厅：",
+      "raw_value_cell": "否"
+    },
+    "权力来源": {
+      "line_number_0based": 63,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "权力来源：\t法定本级行使\t联系电话：\t0594-2670178",
+      "raw_label_cell": "权力来源：",
+      "raw_value_cell": "法定本级行使"
+    },
+    "权责清单": {
+      "line_number_0based": 67,
+      "pair_column_0based": 2,
+      "raw_rendered_line": "中介服务：\t无\t权责清单：\t劳动人事争议仲裁申请",
+      "raw_label_cell": "权责清单：",
+      "raw_value_cell": "劳动人事争议仲裁申请"
+    },
+    "法定时限": {
+      "line_number_0based": 58,
+      "pair_column_0based": 2,
+      "raw_rendered_line": "行使层级：\t县级\t法定时限：\t受理后5个工作日",
+      "raw_label_cell": "法定时限：",
+      "raw_value_cell": "受理后5个工作日"
+    },
+    "法定时限说明": {
+      "line_number_0based": 60,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "法定时限说明：\t60",
+      "raw_label_cell": "法定时限说明：",
+      "raw_value_cell": "60"
+    },
+    "特殊环节": {
+      "line_number_0based": 65,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "特殊环节：\t无",
+      "raw_label_cell": "特殊环节：",
+      "raw_value_cell": "无"
+    },
+    "申报对象": {
+      "line_number_0based": 71,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "申报对象：\t个人,企业,事业单位,行政机关,民办非企业单位,社团组织,其他组织\t是否进驻政务大厅：\t否",
+      "raw_label_cell": "申报对象：",
+      "raw_value_cell": "个人,企业,事业单位,行政机关,民办非企业单位,社团组织,其他组织"
+    },
+    "监督和投诉电话": {
+      "line_number_0based": 64,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "监督和投诉电话：\t0594-12345",
+      "raw_label_cell": "监督和投诉电话：",
+      "raw_value_cell": "0594-12345"
+    },
+    "结果领取方式": {
+      "line_number_0based": 70,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "结果领取方式：\t申请对象窗口领取，邮递办理结果\t结果领取说明:\t无",
+      "raw_label_cell": "结果领取方式：",
+      "raw_value_cell": "申请对象窗口领取，邮递办理结果"
+    },
+    "结果领取说明": {
+      "line_number_0based": 70,
+      "pair_column_0based": 2,
+      "raw_rendered_line": "结果领取方式：\t申请对象窗口领取，邮递办理结果\t结果领取说明:\t无",
+      "raw_label_cell": "结果领取说明:",
+      "raw_value_cell": "无"
+    },
+    "网上办理深度": {
+      "line_number_0based": 76,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "网上办理深度：\t材料预审（Ⅱ级）\t通办范围：\t无",
+      "raw_label_cell": "网上办理深度：",
+      "raw_value_cell": "材料预审（Ⅱ级）"
+    },
+    "联办机构": {
+      "line_number_0based": 62,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "联办机构：\t无\t主办处室：\t城厢区劳动人事争议仲裁院",
+      "raw_label_cell": "联办机构：",
+      "raw_value_cell": "无"
+    },
+    "联系电话": {
+      "line_number_0based": 63,
+      "pair_column_0based": 2,
+      "raw_rendered_line": "权力来源：\t法定本级行使\t联系电话：\t0594-2670178",
+      "raw_label_cell": "联系电话：",
+      "raw_value_cell": "0594-2670178"
+    },
+    "行使层级": {
+      "line_number_0based": 58,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "行使层级：\t县级\t法定时限：\t受理后5个工作日",
+      "raw_label_cell": "行使层级：",
+      "raw_value_cell": "县级"
+    },
+    "通办范围": {
+      "line_number_0based": 76,
+      "pair_column_0based": 2,
+      "raw_rendered_line": "网上办理深度：\t材料预审（Ⅱ级）\t通办范围：\t无",
+      "raw_label_cell": "通办范围：",
+      "raw_value_cell": "无"
+    },
+    "通办范围说明": {
+      "line_number_0based": 78,
+      "pair_column_0based": 0,
+      "raw_rendered_line": "通办范围说明：\t无\t是否全国高频“跨省通办”事项\t否",
+      "raw_label_cell": "通办范围说明：",
+      "raw_value_cell": "无"
+    }
+  },
+  "projection_whitespace_handling": "display_trim_only_not_legal_normalization",
+  "material_panels": {
+    "1": {
+      "name": "仲裁申请书",
+      "raw_rendered_panel": "仲裁申请书\n材料形式\t纸质，电子（上传） （说明：材料提交方式任选其一即可。）\n材料要求\t\n材料类型：原件\n纸质材料份数：原件份数2份\n\n材料必要性\t必要\n来源渠道\t\n申请人自备\n\n设立依据\t\n[法律]《中华人民共和国劳动争议调解仲裁法》（主席令第八十号）第二十八条： 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。仲裁申请书应当载明下列事项：（一）劳动者的姓名、性别、年龄、职业、工作单位和住所，用人单位的名称、住所和法定代表人或者主要负责人的姓名、…展开\n\n材料核查标准\t查看\n填报须知\t签字捺印，复印件按被申请人人数确定。\n附件下载\t\n [格式文本]仲裁申请书.docx\n [示范文本]仲裁申请书示例.docx"
+    },
+    "2": {
+      "name": "证据清单",
+      "raw_rendered_panel": "证据清单\n材料形式\t纸质，电子（上传） （说明：材料提交方式任选其一即可。）\n材料要求\t\n材料类型：原件\n纸质材料份数：原件份数2份\n\n材料必要性\t必要\n来源渠道\t\n申请人自备\n\n设立依据\t\n[法律]《中华人民共和国劳动争议调解仲裁法》（主席令第八十号）第二十八条： 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。仲裁申请书应当载明下列事项：（一）劳动者的姓名、性别、年龄、职业、工作单位和住所，用人单位的名称、住所和法定代表人或者主要负责人的姓名、…展开\n\n填报须知\t签字捺印，正本一份，副本按照当事人人数提交。\n附件下载\t\n [格式文本]证据清单（空白）.docx\n [示范文本]证据清单（示例）.docx"
+    },
+    "3": {
+      "name": "证据材料",
+      "raw_rendered_panel": "证据材料\n材料形式\t纸质，电子（上传） （说明：材料提交方式任选其一即可。）\n材料要求\t\n材料类型：复印件\n纸质材料份数：复印件份数2份\n\n材料必要性\t必要\n来源渠道\t\n申请人自备\n\n设立依据\t\n[法律]《中华人民共和国劳动争议调解仲裁法》（主席令第八十号）第二十八条： 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。仲裁申请书应当载明下列事项：（一）劳动者的姓名、性别、年龄、职业、工作单位和住所，用人单位的名称、住所和法定代表人或者主要负责人的姓名、…展开\n\n附件下载\t\n [格式文本]证据材料（供参考）.docx\n [示范文本]证据材料（供参考）.docx"
+    }
+  },
+  "online_boundary": {
+    "state": "auth_required",
+    "origin_path": "https://iam.e-govt.cn:8901/login",
+    "query_retained": false,
+    "login_attempted": false,
+    "QR_scanned": false,
+    "application_submitted": false
+  },
+  "online_entry": null,
+  "own_ZIP_and_blank_structure": {
+    "application": {
+      "paragraphs": 22,
+      "request_slots": 3,
+      "CRC": true,
+      "member_sha256": {
+        "[Content_Types].xml": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0",
+        "_rels/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "_rels/.rels": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977",
+        "customXml/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "customXml/_rels/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "customXml/_rels/item1.xml.rels": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0",
+        "customXml/item1.xml": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa",
+        "customXml/itemProps1.xml": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1",
+        "docProps/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "docProps/app.xml": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561",
+        "docProps/core.xml": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef",
+        "docProps/custom.xml": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c",
+        "word/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "word/_rels/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "word/_rels/document.xml.rels": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c",
+        "word/document.xml": "829ad217cbe0fabc6bd9aa50f7c71c9cb8009585574a5e838d2453d7bbd02fb1",
+        "word/fontTable.xml": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9",
+        "word/settings.xml": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97",
+        "word/styles.xml": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337",
+        "word/theme/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "word/theme/theme1.xml": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+      },
+      "visual_review": false,
+      "filling_approved": false
+    },
+    "evidence": {
+      "paragraphs": 2,
+      "evidence_rows_capacity": 9,
+      "CRC": true,
+      "member_sha256": {
+        "[Content_Types].xml": "9de9c14934c2a6500cd9c3ccfaeb2aee60797f4fa00d200554f39cae73dd5474",
+        "_rels/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "_rels/.rels": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977",
+        "customXml/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "customXml/_rels/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "customXml/_rels/item1.xml.rels": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0",
+        "customXml/_rels/item2.xml.rels": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5",
+        "customXml/item1.xml": "1055a368a3a05dbeb1c4d9692ad2bafe33a19126a8fa0453a0dedf0f68c62e4c",
+        "customXml/item2.xml": "b30b8fd758aa47aada70ee7d8d8287349d6a21eb03c79bcb2e8930a1789022cc",
+        "customXml/itemProps1.xml": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1",
+        "customXml/itemProps2.xml": "6006fb22c96d0a3b11668eab82eff80ca82bd94d53611c889a08885f42109dcf",
+        "docProps/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "docProps/app.xml": "09eb73003d15a4116db88ffe77b7113846b701ad99ba1cb74d62071e66ccb48a",
+        "docProps/core.xml": "4f6464ef61dd7b09b7c3582ac99709ca20f64f2dc94f30ac39a7d6a4dd593aac",
+        "docProps/custom.xml": "75169350f0a941e01d315ece2d5416a31c5d9c6fac8e16b637adfbcfb633050a",
+        "word/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "word/_rels/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "word/_rels/document.xml.rels": "99b36725e7b90825ac41198f6b37570255b4aae17967ea02538c308410496b9f",
+        "word/document.xml": "94c138c79cb85b6bff100665d098a34b26ac30672f6f8d01b378ed03e799ac70",
+        "word/fontTable.xml": "d5665956a6a9611d1ed5ad2707485731768a067c3886021bacf6e6721dae2c6f",
+        "word/footer1.xml": "bb74fdd24d2af8916bb4082667d7619f3c7b8d918814a32e046252522c42bf66",
+        "word/settings.xml": "2ead81363b7690e0d5e2fcb96b5a206250ccad32b8dd7f7d537e96bef5852d6a",
+        "word/styles.xml": "b34cc5a41c0bd0901c8ac0a3aa58e71c1a42d61435b9b1241dd641f437189bf9",
+        "word/theme/": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "word/theme/theme1.xml": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+      },
+      "visual_review": false,
+      "filling_approved": false
+    }
+  },
+  "Word_visual_review": "NOT_RUN",
+  "source_review": "PENDING_ROOT",
+  "generation_permission": null,
+  "can_generate": false,
+  "private_parent_runtime_fallback": false,
+  "additional_native_statements": {
+    "fee": {
+      "line_number_0based": 156,
+      "raw_rendered_line": "是否收费：\t不收费",
+      "raw_label_cell": "是否收费：",
+      "raw_value_cell": "不收费"
+    },
+    "visit": {
+      "line_number_0based": 40,
+      "raw_rendered_lines": [
+        "服务承诺到现场次数",
+        "1 次"
+      ],
+      "service_scope": "own_service_promise"
+    }
+  }
+}

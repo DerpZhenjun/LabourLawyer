@@ -1,0 +1,136 @@
+{
+  "provenance": {
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=B9DF60152E3BE1A2BA326311AD809DC3&infoType=1",
+    "source_id": "27f41dab3a9d19c7d144c8de",
+    "source_manifest_sha256": "5740a3468cddfbc4d56a1f8dafdf2b4f4a6ffd66353a7485a661220df127c5aa",
+    "observed_at_utc": "2026-10-31T03:31:35.367679+00:00"
+  },
+  "attachments": [
+    {
+      "material_role": "application-own-format",
+      "official_control_label": "[格式文本]仲裁申请书.docx",
+      "control_role": "format",
+      "content_role": "unfilled_format_candidate_XML_only",
+      "public_file_unid": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+      "public_download_url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFileStream?unid=F4048D8C91E2FF882AC6C62CC0EC4D86",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "local_original": "application-own-format.docx",
+      "candidate_kind": "application",
+      "generation_permission": null,
+      "can_generate": false,
+      "Word_visual_review": "NOT_RUN_ROOT_REVIEW_REQUIRED",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=B9DF60152E3BE1A2BA326311AD809DC3&infoType=1",
+        "source_id": "27f41dab3a9d19c7d144c8de",
+        "source_manifest_sha256": "5740a3468cddfbc4d56a1f8dafdf2b4f4a6ffd66353a7485a661220df127c5aa",
+        "observed_at_utc": "2026-10-31T03:31:35.367679+00:00"
+      }
+    },
+    {
+      "material_role": "application-own-sample",
+      "official_control_label": "[示范文本]仲裁申请书示例.docx",
+      "control_role": "sample",
+      "content_role": "sample_reference_not_blank",
+      "public_file_unid": "98A0EE44D3D63B3D6A10FE60D4E83776",
+      "public_download_url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFileStream?unid=98A0EE44D3D63B3D6A10FE60D4E83776",
+      "bytes": 14508,
+      "sha256": "0e12ef5b38621fdf5e66fe8fe4aa20bf009fc94b9608971ff0eabd7a1ec0c378",
+      "local_original": null,
+      "candidate_kind": null,
+      "generation_permission": null,
+      "can_generate": false,
+      "Word_visual_review": "NOT_RUN_ROOT_REVIEW_REQUIRED",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=B9DF60152E3BE1A2BA326311AD809DC3&infoType=1",
+        "source_id": "27f41dab3a9d19c7d144c8de",
+        "source_manifest_sha256": "5740a3468cddfbc4d56a1f8dafdf2b4f4a6ffd66353a7485a661220df127c5aa",
+        "observed_at_utc": "2026-10-31T03:31:35.367679+00:00"
+      }
+    },
+    {
+      "material_role": "evidence-list-own-format",
+      "official_control_label": "[格式文本]证据清单（空白）.docx",
+      "control_role": "format",
+      "content_role": "unfilled_format_candidate_XML_only",
+      "public_file_unid": "CC300F5D9DD5DC404D65C68116D50C55",
+      "public_download_url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFileStream?unid=CC300F5D9DD5DC404D65C68116D50C55",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "local_original": "evidence-list-own-format.docx",
+      "candidate_kind": "evidence_list",
+      "generation_permission": null,
+      "can_generate": false,
+      "Word_visual_review": "NOT_RUN_ROOT_REVIEW_REQUIRED",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=B9DF60152E3BE1A2BA326311AD809DC3&infoType=1",
+        "source_id": "27f41dab3a9d19c7d144c8de",
+        "source_manifest_sha256": "5740a3468cddfbc4d56a1f8dafdf2b4f4a6ffd66353a7485a661220df127c5aa",
+        "observed_at_utc": "2026-10-31T03:31:35.367679+00:00"
+      }
+    },
+    {
+      "material_role": "evidence-list-own-sample",
+      "official_control_label": "[示范文本]证据清单（示例）.docx",
+      "control_role": "sample",
+      "content_role": "sample_reference_not_blank",
+      "public_file_unid": "D3CF15E149D0C999A4BBCCFBC8CEB1DE",
+      "public_download_url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFileStream?unid=D3CF15E149D0C999A4BBCCFBC8CEB1DE",
+      "bytes": 18300,
+      "sha256": "7222e116960019a3b9072b36475f8736392471567f760763a50be941786a940d",
+      "local_original": null,
+      "candidate_kind": null,
+      "generation_permission": null,
+      "can_generate": false,
+      "Word_visual_review": "NOT_RUN_ROOT_REVIEW_REQUIRED",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=B9DF60152E3BE1A2BA326311AD809DC3&infoType=1",
+        "source_id": "27f41dab3a9d19c7d144c8de",
+        "source_manifest_sha256": "5740a3468cddfbc4d56a1f8dafdf2b4f4a6ffd66353a7485a661220df127c5aa",
+        "observed_at_utc": "2026-10-31T03:31:35.367679+00:00"
+      }
+    },
+    {
+      "material_role": "evidence-material-own-format",
+      "official_control_label": "[格式文本]证据材料（供参考）.docx",
+      "control_role": "format",
+      "content_role": "scanning_instruction_not_blank",
+      "public_file_unid": "6EFE86A941A038DC1ED88B911A7D5621",
+      "public_download_url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFileStream?unid=6EFE86A941A038DC1ED88B911A7D5621",
+      "bytes": 17288,
+      "sha256": "31b98bc4a0ac254e1d819aed66f9d1d211c1aca3b3feea8c258c79a88b2a926e",
+      "local_original": null,
+      "candidate_kind": null,
+      "generation_permission": null,
+      "can_generate": false,
+      "Word_visual_review": "NOT_RUN_ROOT_REVIEW_REQUIRED",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=B9DF60152E3BE1A2BA326311AD809DC3&infoType=1",
+        "source_id": "27f41dab3a9d19c7d144c8de",
+        "source_manifest_sha256": "5740a3468cddfbc4d56a1f8dafdf2b4f4a6ffd66353a7485a661220df127c5aa",
+        "observed_at_utc": "2026-10-31T03:31:35.367679+00:00"
+      }
+    },
+    {
+      "material_role": "evidence-material-own-sample",
+      "official_control_label": "[示范文本]证据材料（供参考）.docx",
+      "control_role": "sample",
+      "content_role": "scanning_instruction_not_blank",
+      "public_file_unid": "1975DB7EC205F8082DACD4A44551251F",
+      "public_download_url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFileStream?unid=1975DB7EC205F8082DACD4A44551251F",
+      "bytes": 17288,
+      "sha256": "31b98bc4a0ac254e1d819aed66f9d1d211c1aca3b3feea8c258c79a88b2a926e",
+      "local_original": null,
+      "candidate_kind": null,
+      "generation_permission": null,
+      "can_generate": false,
+      "Word_visual_review": "NOT_RUN_ROOT_REVIEW_REQUIRED",
+      "provenance": {
+        "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=B9DF60152E3BE1A2BA326311AD809DC3&infoType=1",
+        "source_id": "27f41dab3a9d19c7d144c8de",
+        "source_manifest_sha256": "5740a3468cddfbc4d56a1f8dafdf2b4f4a6ffd66353a7485a661220df127c5aa",
+        "observed_at_utc": "2026-10-31T03:31:35.367679+00:00"
+      }
+    }
+  ]
+}

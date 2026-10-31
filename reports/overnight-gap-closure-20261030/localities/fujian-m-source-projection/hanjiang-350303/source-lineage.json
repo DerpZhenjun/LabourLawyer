@@ -1,0 +1,21 @@
+{
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=B9DF60152E3BE1A2BA326311AD809DC3&infoType=1",
+  "source_id": "27f41dab3a9d19c7d144c8de",
+  "source_manifest_sha256": "5740a3468cddfbc4d56a1f8dafdf2b4f4a6ffd66353a7485a661220df127c5aa",
+  "observed_at_utc": "2026-10-31T03:31:35.367679+00:00",
+  "projection_kind": "derived_allowlisted_native_source_metadata",
+  "projected_at_utc": "2026-10-31T03:56:23.445559+00:00",
+  "private_parent_audit_reference": {
+    "task_manifest_sha256": "cca61f92fdc8749155080e8990aa33a1dd7a24fdca76b679629a405891594b1a",
+    "own_source_manifest_sha256": "5740a3468cddfbc4d56a1f8dafdf2b4f4a6ffd66353a7485a661220df127c5aa",
+    "role": "audit_reference_only_not_runtime_dependency",
+    "runtime_fallback": false
+  },
+  "raw_API_response_copied": false,
+  "temporary_signatures_copied": false,
+  "parent_paths_copied": false,
+  "official_version": null,
+  "can_generate": false,
+  "stage_approval": null,
+  "publication_approval": null
+}
