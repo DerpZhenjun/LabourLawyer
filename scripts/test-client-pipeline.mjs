@@ -202,6 +202,103 @@ if (api) {
     await assert.rejects(api.prepareArtifacts({root:f.root,receiptPath:result.receiptPath,graph,inputs:['mobile']}),/source/)
   })
 
+  const capacitorSyncOutputs = [
+    'mobile/android/app/src/main/assets/capacitor.config.json',
+    'mobile/android/app/src/main/assets/capacitor.plugins.json',
+    'mobile/android/app/src/main/res/xml/config.xml',
+    'mobile/android/capacitor-cordova-android-plugins/build.gradle',
+    'mobile/android/capacitor-cordova-android-plugins/cordova.variables.gradle',
+    'mobile/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml',
+    'mobile/android/capacitor-cordova-android-plugins/src/main/java/.gitkeep',
+    'mobile/android/capacitor-cordova-android-plugins/src/main/res/.gitkeep',
+  ]
+  function androidSyncFixture(t) {
+    const f = fixture(t)
+    const write = (path, body) => {
+      mkdirSync(join(f.root, path, '..'), { recursive: true })
+      writeFileSync(join(f.root, path), body)
+    }
+    write('mobile/capacitor.config.ts', '// authored Capacitor config')
+    write('mobile/android/build.gradle', '// authored Gradle config')
+    const apk = 'mobile/android/app/build/outputs/apk/debug/app-debug.apk'
+    const graph = { shared: f.graph.shared, 'android:build': {
+      deps: ['shared'], command: { bin: 'node', args: ['android'], cwd: '.' },
+      artifacts: [{ path: apk, fresh: true }],
+    } }
+    const run = async (extra = () => {}) => api.runPipeline({ ...f, graph, inputs: ['mobile'], targets: ['android'], runner: async command => {
+      if (command.args[0] === 'android') {
+        for (const path of capacitorSyncOutputs) write(path, 'sync-generated ' + path)
+        write(apk, 'fixture APK full bytes')
+        extra(write)
+      }
+      return { status: 0 }
+    } })
+    return { ...f, graph, inputs: ['mobile'], targets: ['android'], write, apk, run }
+  }
+
+  test('exact eight Capacitor sync outputs may appear or change without staling source evidence; APK bytes stay verified', async t => {
+    const f = androidSyncFixture(t)
+    assert(capacitorSyncOutputs.every(path => !existsSync(join(f.root, path))))
+    const result = await f.run()
+    assert.equal(result.receipt.status, 'passed', result.receipt.error)
+    assert.deepEqual(result.receipt.artifacts.map(file => file.path), [f.apk])
+    for (const path of capacitorSyncOutputs) f.write(path, 'another native sync generation')
+    await api.prepareArtifacts({ ...f, receiptPath: result.receiptPath })
+    f.write(f.apk, 'modified APK full bytes')
+    await assert.rejects(api.prepareArtifacts({ ...f, receiptPath: result.receiptPath }), /artifact/)
+  })
+
+  test('Capacitor exclusions do not cover new siblings, other config files, or authored source edits', async t => {
+    for (const path of [
+      'mobile/android/app/src/main/assets/capacitor.extra.json',
+      'mobile/android/app/src/main/assets/capacitor.config.json.bak',
+      'mobile/android/app/src/main/res/xml/other.xml',
+      'mobile/android/capacitor-cordova-android-plugins/custom.gradle',
+      'mobile/android/capacitor-cordova-android-plugins/.gitignore',
+      'mobile/android/capacitor-cordova-android-plugins/src/main/java/Other.java',
+      'mobile/android/capacitor-cordova-android-plugins/src/main/java/.gitkeep.extra',
+      'mobile/android/capacitor-cordova-android-plugins/src/main/res/other.xml',
+      'mobile/capacitor.config.ts', 'mobile/android/build.gradle',
+    ]) {
+      const during = androidSyncFixture(t)
+      const changed = await during.run(write => write(path, 'changed source during sync'))
+      assert.equal(changed.receipt.status, 'failed', path)
+      assert.match(changed.receipt.error, /Source changed/, path)
+      const after = androidSyncFixture(t), passed = await after.run()
+      assert.equal(passed.receipt.status, 'passed', passed.receipt.error)
+      after.write(path, 'new or changed source after build')
+      await assert.rejects(api.prepareArtifacts({ ...after, receiptPath: passed.receiptPath }), /source/, path)
+    }
+  })
+
+  test('sync output exclusion applies only to source snapshots, never an explicit artifact manifest', async t => {
+    const f = androidSyncFixture(t)
+    f.graph['android:build'].artifacts.push({ path: capacitorSyncOutputs[0], fresh: true })
+    const result = await f.run()
+    assert.equal(result.receipt.status, 'passed', result.receipt.error)
+    assert(result.receipt.artifacts.some(file => file.path === capacitorSyncOutputs[0]))
+    f.write(capacitorSyncOutputs[0], 'modified explicit artifact')
+    await assert.rejects(api.prepareArtifacts({ ...f, receiptPath: result.receiptPath }), /artifact/)
+  })
+
+  test('a named generated file cannot hide a directory, symlink or junction from source validation', async t => {
+    for (const state of ['directory', 'junction']) {
+      const f = androidSyncFixture(t), path = join(f.root, capacitorSyncOutputs[0])
+      mkdirSync(join(path, '..'), { recursive: true })
+      if (state === 'directory') {
+        mkdirSync(path)
+        writeFileSync(join(path, 'unknown.txt'), 'source must not disappear behind a file allowlist')
+      } else {
+        const outside = mkdtempSync(join(tmpdir(), 'capacitor-link-'))
+        t.after(() => rmSync(outside, { recursive: true, force: true }))
+        symlinkSync(outside, path, process.platform === 'win32' ? 'junction' : 'dir')
+      }
+      const result = await api.runPipeline({ ...f, runner: () => assert.fail('invalid generated path executed') })
+      assert.equal(result.receipt.status, 'failed')
+      assert.match(result.receipt.error, /Symlink|junction|regular file|generated/i)
+    }
+  })
+
   test('editing an executed shared test or release metadata check invalidates build evidence', async t => {
     for (const changed of ['scripts/test-collector-issue-status.mjs', 'scripts/test-public-draft-scope.mjs', 'scripts/test-client-ai-contracts.mjs', 'scripts/test-regional-contracts.mjs', 'scripts/test-official-collector.mjs', 'scripts/test-digital-service-config.mjs', 'scripts/test-regional-online-link.mjs', 'scripts/sync-client-release.mjs', 'desktop/start.html', 'desktop/preload.cjs', 'scripts/test-digital-chat-privacy.cjs', 'scripts/react-mount-fixture/package-lock.json', 'ChatVRM/src/pages/index.tsx']) {
       const f = fixture(t)

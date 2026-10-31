@@ -51,8 +51,27 @@ const excludedInput = value => excludedPrivateRuntime(value)
   || /\.(tsbuildinfo|pyc)$/.test(value)
   || /^mobile\/android\/app\/src\/main\/assets\/public(\/|$)/.test(value)
 
+// cap sync creates these exact files. Authored config and unknown siblings remain inputs.
+// This exception is source-only: artifact manifests still hash their complete bytes.
+const CAPACITOR_SYNC_SOURCE_OUTPUTS = new Set([
+  'mobile/android/app/src/main/assets/capacitor.config.json',
+  'mobile/android/app/src/main/assets/capacitor.plugins.json',
+  'mobile/android/app/src/main/res/xml/config.xml',
+  'mobile/android/capacitor-cordova-android-plugins/build.gradle',
+  'mobile/android/capacitor-cordova-android-plugins/cordova.variables.gradle',
+  'mobile/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml',
+  'mobile/android/capacitor-cordova-android-plugins/src/main/java/.gitkeep',
+  'mobile/android/capacitor-cordova-android-plugins/src/main/res/.gitkeep',
+])
+
 function sourceSnapshot(root, inputs) {
-  const files=inputs.flatMap(input => filesUnder(root,input,excludedInput)).map(({mtimeMs,...file})=>file)
+  const excluded = value => {
+    if (!CAPACITOR_SYNC_SOURCE_OUTPUTS.has(value)) return excludedInput(value)
+    const stat = lstatSync(bounded(root, value), { throwIfNoEntry: false })
+    if (stat && !stat.isFile()) throw new Error(`Generated Android source output must be a regular file: ${value}`)
+    return true
+  }
+  const files=inputs.flatMap(input => filesUnder(root,input,excluded)).map(({mtimeMs,...file})=>file)
   return [...new Map(files.map(file=>[file.path,file])).values()].sort((a,b)=>a.path.localeCompare(b.path,'en'))
 }
 
