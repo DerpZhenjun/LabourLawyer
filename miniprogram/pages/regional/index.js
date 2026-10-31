@@ -1,5 +1,5 @@
 // Generated from pages/regional/index.ts. Do not edit.
-// source-sha256: e01a820860a84bc30102e238e63aeac49667e8c92573c166b47aa7aaa8861850
+// source-sha256: 8450f7460e33a6a6bedcab7bd28900594f5438fe4f7f1bb5a469747e39e6e15c
 "use strict";
 const shared = require("../../utils/generated/regional-contracts");
 const files = require("../../utils/regionalTransport");
@@ -150,7 +150,7 @@ const page = {
             const blanks = g.templates.map((t, index) => ({ ...t, index })).filter(t => t.official_kind === 'blank' && t.download_status === 'downloaded' && t.file && /^[a-f0-9]{64}$/i.test(typeof t.sha256 === 'string' ? t.sha256 : ''));
             const sections = Object.keys(g.sections).map(label => ({ label, value: guideText(g.sections[label]) }));
             const channelText = guideText(g.channel.raw_value) + (g.channel.online_status === 'auth_required' ? '\n网上入口需要登录或验证码；本页不会代办提交。' : '');
-            this.setData({ guide: g, fields, sections, channelText, materials: g.materials, warnings: Array.isArray(g.warnings) ? g.warnings : [], blanks, kinds: this._kinds.map(k => `${k.kind === 'application' ? '申请书' : '证据清单'} · ${k.t.original_name || k.t.id}`), notice: this._kinds.length ? '请核对本区指南、材料和表格来源。' : '本区表格填写尚待核验，可查看已核验的原件。' });
+            this.setData({ guide: g, fields, sections, channelText, materials: g.materials, warnings: Array.isArray(g.warnings) ? g.warnings.map((warning) => typeof warning === 'string' ? shared.plainGuideWarning(warning) : warning) : [], blanks, kinds: this._kinds.map(k => `${k.kind === 'application' ? '申请书' : '证据清单'} · ${k.t.original_name || k.t.id}`), notice: this._kinds.length ? '请核对本区指南、材料和表格来源。' : '本区表格填写尚待核验，可查看已核验的原件。' });
             if (this._kinds.length)
                 this.loadContract(0);
         });

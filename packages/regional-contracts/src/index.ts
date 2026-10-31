@@ -216,6 +216,15 @@ export function validateForm(contract: FormContract, value: unknown): Validation
   }
   return {valid:errors.length===0,errors}
 }
+/** Known guide notices, display only; source and eligibility stay unchanged. */
+export function plainGuideWarning(value: string): string {
+  switch(value) {
+    case "自身partial来源；官方版本未知；预约组织标签不是委员会自动填写授权。": return "已核对本地区公开办事资料；资料版本和仲裁委员会全称仍需向办理机构确认。"
+    case "显示份数与按人数副本备注均保留，不自动推断法律提交份数。": return "材料份数和按人数准备副本的说明均按官网保留，请在提交前向办理机构确认所需份数。"
+    case "非适配证据状态UNKNOWN，不声称官网不提供；示范或扫描说明不生成。": return "尚未完成填写核验的附件暂不用于生成，不代表官网没有提供相关表格。示例样表和材料说明仅供参考，不能当作空白表格填写。"
+    default: return value
+  }
+}
 export function createEmptyForm(contract: FormContract): FormData { return clone(contract.defaults) as FormData }
 export function createExampleForm(contract: FormContract): FormData {
   const form=createEmptyForm(contract)

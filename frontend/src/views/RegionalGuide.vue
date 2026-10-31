@@ -66,6 +66,7 @@
 <script setup lang="ts">
 import {guideField,visitCountLabel,originalCopyLabel,materialDetails,hasGenerationKind,readGuideDisplay,publicError} from '@/data/regionalGuidePresentation'
 import type {DirectoryArea} from '@/data/regionalGuidePresentation'
+import {plainGuideWarning} from '../../../packages/regional-contracts/src/index.ts'
 import type {DocumentKind} from '../../../packages/regional-contracts/src/index.ts'
 import {publicClient} from '@/api/public'
 import {computed,ref,onMounted,onBeforeUnmount} from 'vue'
@@ -106,7 +107,7 @@ const districtChoices=computed(()=>{
 const chengduAreas=computed(()=>coverage.value.filter(g=>g.province==='sichuan'&&g.city==='成都市'))
 const generatable=computed(()=>guide.value?.templates.some(t=>t.can_generate))
 const blankGeneration=computed(()=>guide.value?.templates.filter(t=>t.can_generate).every(t=>t.official_kind==='blank'))
-const plainWarning=(value:unknown)=>String(value).replaceAll('not_found_in_checked_sources','本次已查来源未找到').replaceAll('NOT_RUN','尚未核验')
+const plainWarning=(value:unknown)=>plainGuideWarning(String(value)).replaceAll('not_found_in_checked_sources','本次已查来源未找到').replaceAll('NOT_RUN','尚未核验')
 const field=(name:string)=>guideField(guide.value,name)
 const date=(value:string)=>value?new Date(value).toLocaleString('zh-CN',{hour12:false}):'待核实'
 const eventValue=(event:Event)=>event.target instanceof HTMLInputElement||event.target instanceof HTMLSelectElement?event.target.value:''
