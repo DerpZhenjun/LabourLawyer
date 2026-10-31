@@ -1,0 +1,103 @@
+{
+  "status": "ROOT_ACTUAL_CHROME_DEVTOOLS_UI_PASS",
+  "site": "http://127.0.0.1:5179/",
+  "source_id": "511e7f64c9481b5a0b6ff4a1",
+  "region_code": "350128",
+  "widths": [
+    {
+      "width": 375,
+      "source": "511e7f64c9481b5a0b6ff4a1",
+      "overflow": false,
+      "fields": [
+        {
+          "value": "陈虚构",
+          "inside": true
+        },
+        {
+          "value": "",
+          "inside": true
+        },
+        {
+          "value": "虚构青禾有限公司",
+          "inside": true
+        },
+        {
+          "value": "请求支付虚构拖欠工资3000元。",
+          "inside": true
+        },
+        {
+          "value": "以下全部为软件演示的虚构情况。虚构单位拖欠示例工资3000元，双方协商未果，故提出上述请求。",
+          "inside": true
+        }
+      ],
+      "workspaceBeforeGuide": true,
+      "onlineApplyLink": false
+    },
+    {
+      "width": 768,
+      "source": "511e7f64c9481b5a0b6ff4a1",
+      "overflow": false,
+      "fields": [
+        {
+          "value": "陈虚构",
+          "inside": true
+        },
+        {
+          "value": "",
+          "inside": true
+        },
+        {
+          "value": "虚构青禾有限公司",
+          "inside": true
+        },
+        {
+          "value": "请求支付虚构拖欠工资3000元。",
+          "inside": true
+        },
+        {
+          "value": "以下全部为软件演示的虚构情况。虚构单位拖欠示例工资3000元，双方协商未果，故提出上述请求。",
+          "inside": true
+        }
+      ],
+      "workspaceBeforeGuide": true,
+      "onlineApplyLink": false
+    },
+    {
+      "width": 1440,
+      "source": "511e7f64c9481b5a0b6ff4a1",
+      "overflow": false,
+      "fields": [
+        {
+          "value": "陈虚构",
+          "inside": true
+        },
+        {
+          "value": "",
+          "inside": true
+        },
+        {
+          "value": "虚构青禾有限公司",
+          "inside": true
+        },
+        {
+          "value": "请求支付虚构拖欠工资3000元。",
+          "inside": true
+        },
+        {
+          "value": "以下全部为软件演示的虚构情况。虚构单位拖欠示例工资3000元，双方协商未果，故提出上述请求。",
+          "inside": true
+        }
+      ],
+      "workspaceBeforeGuide": true,
+      "onlineApplyLink": false
+    }
+  ],
+  "first_actual_network_GETs": 5,
+  "generation_POSTs_on_read": 0,
+  "actual_evidence_tab_click": true,
+  "evidence_default_rows": 1,
+  "visible_original_types_and_copies": true,
+  "screenshots": 0,
+  "models": 0,
+  "publication_changed": false
+}

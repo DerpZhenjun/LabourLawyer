@@ -5,7 +5,7 @@
     {
       "path": "config/client-release.json",
       "bytes": 137,
-      "sha256": "ab8c41ec269fbed3cfef3d506a3c8da290e303f0ac45afe86dc274cd12831654",
+      "sha256": "9be6f35609ae6d67d9a1ef90b8a6eb5a14a03926aa538b304825968d5209b27b",
       "newline": "lf"
     },
     {
@@ -75,13 +75,13 @@
     },
     {
       "path": "data/public-regions/guides.json",
-      "bytes": 11403527,
-      "sha256": "40166aa7ea4d8e7ecfb68717ea13948df9021b6463f7e7995b7e322ae03352e9"
+      "bytes": 11499011,
+      "sha256": "23c1fe05d9b419644f176d59b63d4a6821c150e354669067cac561c19d92e012"
     },
     {
       "path": "data/public-regions/manifest.json",
       "bytes": 526,
-      "sha256": "a3baecdf5e36f86484d446a186abfe777a7f1297a5e2c36576ae83ee5b03147a"
+      "sha256": "f93efea38fa542bbc264ff403d616eb2b95b2136878f0c054d9bbc288bf5f78c"
     },
     {
       "path": "frontend/src/data/provinceCatalog.json",
@@ -20829,6 +20829,31 @@
       "path": "reports/overnight-gap-closure-20261030/localities/fujian-l/integration-qa-v1/WORD-MANIFEST.json",
       "bytes": 10777,
       "sha256": "33a5d258b6d1e857074b5d4732db753e7cd4b796445c48300e337c28e3f283e3"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-l/integration-qa-v1/contracts/350128-application.json",
+      "bytes": 1949,
+      "sha256": "b1440c73f074cc64c4d6f09cc4344c6149a75d3f9195303c33e1b8add363ebd9"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-l/integration-qa-v1/contracts/350128-evidence.json",
+      "bytes": 2299,
+      "sha256": "b2e779a9ce25b41067b03239b75eb050b084254c2fde314f3fbf7c1dd19f93e8"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-l/integration-qa-v1/ROOT-NATIVE-INDEPENDENT-REVIEW.json",
+      "bytes": 20882,
+      "sha256": "103f2ac597ca3f238bc7c77dede46ef6ac7cc78ab48baf10f0f1e62f0224c7c2"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-l/integration-qa-v1/NATIVE-CANDIDATE-QA.json",
+      "bytes": 23367,
+      "sha256": "8ae5ac486772c347f7450a4c13b0c72ed00efb2de163618e501f57216cfb09d4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-l/integration-qa-v1/FINAL-BROWSER-QA.json",
+      "bytes": 11946,
+      "sha256": "8e07c7f4bf1de2060a8af9515c3158ae97bb8fea0d4b69f382cd4b1fd723652a"
     }
   ]
 }

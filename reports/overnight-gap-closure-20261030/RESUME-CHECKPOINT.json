@@ -1,6 +1,6 @@
 {
   "started_at": "2026-10-30T15:01:46.081381+00:00",
-  "phase": "L_STAGE_SHARED_API_TS_PASS_NATIVE_CANDIDATE_RUNNING_K_BOTH218_201",
+  "phase": "L_FINAL_NATIVE_APPROVED_SEED219_202_NOT_LIVE_CLIENT_PREVIEW6_METADATA_READY",
   "base_commit": "0e8eb56a9bdbbea295b584e9a8037337c79e37e8",
   "baseline": {
     "guides": 203,
@@ -10,9 +10,9 @@
     "ubuntu_outbox": 0
   },
   "agents": {
-    "overnight_ui_validation": "L stage49proof leaves done, nativefixedhostprep10passed; Root actualexecutionpending",
-    "overnight_digital": "Private Putian2ownproviderproposal source proof supplements; noformal/phase/DB",
-    "production_ci": "Preview6minimalPREPonly done8tests/sourceunbound, actualUSB0"
+    "overnight_ui_validation": "Lstage/nativeprepfinished; Root actual4approvedfinal",
+    "overnight_digital": "MformalownPutian2source/provider18sourcefiles; phasepinsNone, noWordvisual/shared/policy/DB",
+    "production_ci": "Private219/p6 immutablebuildprep sourceunbound; noactualbuild/network"
   },
   "root_ownership": [
     "collector frontend admin UI + backendapp router wiring",
@@ -34,14 +34,14 @@
     "public_domain": "No projectdomainconfigured found; tailnet exists but nodeoffline/controlnetworkunreachable. Not completed TLS.",
     "earlier_Ubuntu_QA_sessions": "Some earlier failed-before-logout opaque sessions revocation NOT_PROVEN; final own logout204 proven. Do not blindly revoke other existing sessions; no credentials uploaded."
   },
-  "next": "Complete L actual4native and Root whole/allZIP/fullcontract check; candidate exactpaths commit/CI then only independent final/seed219 and preserving rollout. Preview6source unbound; Putian privateprovider proposal only. No Windows models/screenshots/Govsubmission.",
-  "updated_at": "2026-10-31T04:36:42.822756+00:00",
+  "next": "Commit exact L final/native/seed219 +preview6 synchronizedmetadata after32+20guard tests; cleanGitHubCI required before preserving Main/Ubuntu switch andsingleL append. Liveboth218/201 retained. Prepare immutable219/preview6 builds/sign usingexistingidentity; USB0 noinstallclaim. MownPutianformalproposal18testsprivate/unregistered noinheritance.",
+  "updated_at": "2026-10-31T04:48:27.706703+00:00",
   "public_seed": {
-    "guides": 218,
-    "generatable": 201,
+    "guides": 219,
+    "generatable": 202,
     "main_live_guides": 218,
     "ubuntu_live_guides": 218,
-    "publication": "K both actual218/201 accepted16native+allZIP+8fullcontracts; docs557pushed. L stage only notcounted."
+    "publication": "Only canonical source snapshot219/202; old218encodedprefix/directoryunchanged. Main+Ubuntu remain218/201 until newcodeCI/deploy/native acceptance."
   },
   "implemented": {
     "digital": "Ubuntu8089 actual synthetic stream and responsive candidate pass",
@@ -113,7 +113,17 @@
       "published": true,
       "public_status": "PUBLISHED; all nine actual anonymous downloads bytes/SHA/CRC verified; immutable clientsource61; backend-onlyJ reads215currentdata"
     },
-    "native_account_ui": "PASS isolated8003 anonymous/A/B/relogin/resetOtherPreserved/allownsessionlogout. Ubuntucollectoradmin3width+4ACKUIpass; earlierfailedharnesssessionsrevocationNOTPROVEN, no broadDBcleanup."
+    "native_account_ui": "PASS isolated8003 anonymous/A/B/relogin/resetOtherPreserved/allownsessionlogout. Ubuntucollectoradmin3width+4ACKUIpass; earlierfailedharnesssessionsrevocationNOTPROVEN, no broadDBcleanup.",
+    "preview6": {
+      "phase": "METADATA_SYNCHRONIZED_NOT_BUILT_OR_PUBLISHED",
+      "version": "1.2.0-preview.6",
+      "androidVersionCode": 9,
+      "source_commit": null,
+      "usb_authorized_devices": 0,
+      "installed": false,
+      "published": false,
+      "previous_preview5_assets_unchanged": true
+    }
   },
   "release": {
     "tag": "v1.2.0-preview.5",
@@ -172,7 +182,7 @@
       }
     },
     "Pingtan_L": {
-      "phase": "STAGED_OWN_WORD_AND_SHARED_API_TS_NOT_SEEDED_OR_PUBLISHED",
+      "phase": "ROOT_NATIVE_FINAL_APPROVED_SOURCE_SNAPSHOT_ONLY_NOT_LIVE",
       "region_code": "350128",
       "city": "平潭综合实验区",
       "district": "平潭综合实验区",
@@ -181,7 +191,7 @@
       "source_sha256": "85c9f528deb21b5da68c0d5f108c72e5a4f6a7d0ebf2e56da960f87a228b607e",
       "WORD_SHA": "33a5d258b6d1e857074b5d4732db753e7cd4b796445c48300e337c28e3f283e3",
       "STAGE_SHA256": "03d20d8b80848d199ddd843d9c968470cfaea868b7ebfe43c51a80bbbadc20d9",
-      "PUBLICATION_SHA256": null,
+      "PUBLICATION_SHA256": "8e07c7f4bf1de2060a8af9515c3158ae97bb8fea0d4b69f382cd4b1fd723652a",
       "own_originals": 2,
       "metadata_only_attachments": 4,
       "Root_actual_Word_pages": 26,
@@ -191,9 +201,16 @@
         8006,
         5179
       ],
-      "native_result": "RUNNING; no acceptance count yet",
+      "native_result": "PASS4native/2fullcontracts/6width/2cancelEscTabfocus/unknownscope/4metadata409+crosssource409+wrongcity404",
       "source_only_generation": false,
-      "signed_in_submission_verified": false
+      "signed_in_submission_verified": false,
+      "provider_sha256": "335e1fbcedfb79491d551a3f04697760f90c3918222e261239c685fdfeb19100",
+      "Root_independent_all_whole_ZIP_regeneration": true,
+      "Root_final_tests": 32,
+      "Root_publication_transaction_tests": 20,
+      "source_seed_guides_sha256": "23c1fe05d9b419644f176d59b63d4a6821c150e354669067cac561c19d92e012",
+      "source_seed_manifest_sha256": "f93efea38fa542bbc264ff403d616eb2b95b2136878f0c054d9bbc288bf5f78c",
+      "both_live": false
     },
     "fujian_k": "COMPLETE_BOTH_LIVE218_201. Own3sources4formats/14metadata_only/evi2unadapted; final3f24/providerfd45; sourceb439CI395+2PASS; exact6457canonicalarchive54ed/403583952B5f02/4360manifest1fa9. ActualUbuntu coldPASS218/201/3974/0missing/oldJ21Word11sources44cross +K4Word3sources14meta2evi9cross,0models/network/child/externalwrites. Root31ownerTestsPASS afterRootTempHarnessfix. Actualswitch981932→1105522 sixfiles3services/collectorunchanged thenUbuntu3SQL215→218 history/current/outbox0 consistentbackup. Maincore105700/215→218/history223→226/outbox377/private3+6userfilesunchanged. Actualnative8each =16 andRootindependentallwholeZIP/4contracts eachPASS. MainMCP3width/source/defaultsPASS buttechnicalwarningcopydefectconfirmed; privateproposalnotapplied. Publicrolloutdocsandlatest31provincematrix updatepending.",
     "pingtan_l": "PrivateL3 Word realreadonly6docs26pages/23unique+3SHAduplicates RootfullyviewedPASS. Root14source+14mappingtests/safety/unchangedinputs/ownWord53944absent. No stage/final/onlinegenyet. NewformalownLsource/provider/testONLY authorizedUIagent, publicsanitizationderivedfalseconflictcorrected inbothnormalizedandqualifications preservingofficialraw; noexistingK/shared/seed/DB edits.",

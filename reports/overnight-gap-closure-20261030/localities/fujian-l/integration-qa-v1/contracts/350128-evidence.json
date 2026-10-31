@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "context": {
+    "province": "fujian",
+    "city": "平潭综合实验区",
+    "district": "平潭综合实验区",
+    "region_code": "350128",
+    "source_id": "511e7f64c9481b5a0b6ff4a1",
+    "version": 1,
+    "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+    "kind": "evidence",
+    "mode": "blank",
+    "adapter": "fujian_pingtan_own_blank_oct31l_v1",
+    "schema_id": "fujian-l-350128-evidence-v1",
+    "schema_version": 1,
+    "source_version": "85c9f528deb21b5da68c0d5f108c72e5a4f6a7d0ebf2e56da960f87a228b607e",
+    "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "template_version": "sha256:d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+  },
+  "fields": [
+    {
+      "key": "evidenceList",
+      "label": "证据内容",
+      "type": "object_list",
+      "nullable": false,
+      "maxItems": 9,
+      "fields": [
+        {
+          "key": "name",
+          "label": "证据名称",
+          "type": "text",
+          "nullable": false,
+          "maxLength": 60
+        },
+        {
+          "key": "pageCount",
+          "label": "页数",
+          "type": "text",
+          "nullable": false,
+          "maxLength": 4
+        },
+        {
+          "key": "originalType",
+          "label": "原件或复印件",
+          "type": "text",
+          "nullable": false,
+          "maxLength": 4,
+          "choices": [
+            "原件",
+            "复印件"
+          ]
+        },
+        {
+          "key": "purpose",
+          "label": "证明对象",
+          "type": "text",
+          "nullable": false,
+          "maxLength": 80
+        },
+        {
+          "key": "pageRange",
+          "label": "页码",
+          "type": "text",
+          "nullable": false,
+          "maxLength": 32
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "evidenceList": [
+      {
+        "name": "",
+        "pageCount": "",
+        "originalType": "",
+        "purpose": "",
+        "pageRange": ""
+      }
+    ]
+  },
+  "policy": {
+    "unknown_fields": "reject",
+    "invalid_xml": "reject",
+    "text_controls": "newline_only",
+    "trim_text": true,
+    "capacity_is_official_requirement": false
+  },
+  "contract_id": "abe513b3830e6f14bfd0cd0e7a66f2566a67233de43186afaf8330e532e70e45"
+}

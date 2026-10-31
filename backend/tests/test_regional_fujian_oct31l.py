@@ -29,13 +29,14 @@ class PingtanOwnProviderTests(unittest.TestCase):
   for root in [None,'']:
    with self.assertRaises(ValueError):own.parse_capture('350128',root=root)
  def test_no_public_generation_or_unpinned_approval(self):
-  self.assertRegex(own.WORD_SHA,r'^[a-f0-9]{64}$');self.assertRegex(own.STAGE_SHA256,r'^[a-f0-9]{64}$');self.assertIsNone(own.PUBLICATION_SHA256)
+  self.assertRegex(own.WORD_SHA,r'^[a-f0-9]{64}$');self.assertRegex(own.STAGE_SHA256,r'^[a-f0-9]{64}$');self.assertRegex(own.PUBLICATION_SHA256,r'^[a-f0-9]{64}$')
   g=own.parse_capture('350128',root=ROOT);self.assertFalse(g['can_generate']);self.assertTrue(all(not t['can_generate'] for t in g['templates']))
   self.assertFalse(own.with_capabilities(g,root=ROOT)['can_generate'])
   stage=own.staged_candidate('350128',root=ROOT);self.assertTrue(stage['can_generate']);self.assertFalse(stage['published'])
   self.assertEqual([t['document_types'] for t in stage['templates'] if t['can_generate']],[['application'],['evidence']])
-  with self.assertRaises(ValueError):own._published('350128',root=ROOT)
-  with self.assertRaises(ValueError):own.with_publication_evidence(stage,root=ROOT)
+  with patch.object(own,'PUBLICATION_SHA256',None):
+   with self.assertRaises(ValueError):own._published('350128',root=ROOT)
+   with self.assertRaises(ValueError):own.with_publication_evidence(stage,root=ROOT)
   with patch.object(own,'WORD_SHA',None),patch.object(own,'STAGE_SHA256',None):
    with self.assertRaises(ValueError):own.staged_candidate('350128',root=ROOT)
   with self.assertRaises(ValueError):own.with_publication_evidence(g,root=ROOT)

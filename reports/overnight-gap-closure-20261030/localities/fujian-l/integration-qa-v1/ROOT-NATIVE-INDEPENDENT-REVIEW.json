@@ -1,0 +1,552 @@
+{
+  "status": "ROOT_INDEPENDENT_NATIVE_L_ALL_FOUR_FILES_AND_TWO_CONTRACTS_PASS",
+  "at": "2026-10-31T04:41:37.028213+00:00",
+  "source_id": "511e7f64c9481b5a0b6ff4a1",
+  "candidate_browser_report_sha256": "f9bcae18b8632749f7d9dce082a461296b92531fe68a783f90c997163c0b8cc4",
+  "candidate_harness_sha256": "1dbaab56bf0b957c8ffc233e966d8ac3e28855a63d24a88adacc0acdfa3352cf",
+  "files": [
+    {
+      "kind": "application",
+      "scenario": "filled",
+      "bytes": 12045,
+      "sha256": "ab6e62f806dfac4f6455a315538980421ee56c72d9deb759a7a7614f6fbf84c1",
+      "whole_and_every_ZIP_equal": true,
+      "parts": [
+        {
+          "name": "[Content_Types].xml",
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "name": "_rels/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "docProps/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "name": "docProps/core.xml",
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "name": "word/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "name": "word/document.xml",
+          "sha256": "03a0aa58f15f75178f3a350c6bf40fba70501df805cfe9e678263cf0893038f3"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "name": "word/settings.xml",
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "name": "word/styles.xml",
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "name": "word/theme/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ],
+      "native_download_event": true,
+      "request": {
+        "province": "fujian",
+        "city": "平潭综合实验区",
+        "district": "平潭综合实验区",
+        "source_id": "511e7f64c9481b5a0b6ff4a1",
+        "version": 1,
+        "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "ba51c3af032e3be801b2f31f23ccc989c55e51d85200bbbdde5e7151dd0d65cc",
+        "data": {
+          "applicantName": "虚构平潭申请人甲（仅测试）",
+          "agentName": "",
+          "respondentName": "虚构平潭乙公司（仅测试）",
+          "requests": [
+            "虚构请求：仅测试自身空表字段，不提出真实仲裁申请。"
+          ],
+          "factsReason": "所有内容均为虚构，仅用于自身候选表格验证，不涉及真实当事人或争议。"
+        }
+      },
+      "headers": {
+        "cache-control": "no-store",
+        "content-disposition": "attachment; filename*=utf-8''%E5%B9%B3%E6%BD%AD%E7%BB%BC%E5%90%88%E5%AE%9E%E9%AA%8C%E5%8C%BA%E7%94%B3%E8%AF%B7%E4%B9%A6-%E5%AE%98%E6%96%B9%E7%A9%BA%E7%99%BD%E8%A1%A8%E6%A0%BC%E5%A1%AB%E5%86%99.docx",
+        "content-length": "12045",
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "x-document-origin": "official-blank-filled",
+        "x-form-contract-id": "ba51c3af032e3be801b2f31f23ccc989c55e51d85200bbbdde5e7151dd0d65cc",
+        "x-guide-source-id": "511e7f64c9481b5a0b6ff4a1",
+        "x-guide-version": "1"
+      },
+      "new_render": false
+    },
+    {
+      "kind": "application",
+      "scenario": "blank",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "whole_and_every_ZIP_equal": true,
+      "parts": [
+        {
+          "name": "[Content_Types].xml",
+          "sha256": "9c7533f224ef42ff5c9fe35198c56c332316f5ca08cc84a65071cee5ac4063c0"
+        },
+        {
+          "name": "_rels/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "sha256": "82e730c9f15c76ce2ae94b00f958cb98373c60a8f757d090fbcf2f3fecd40eaa"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "docProps/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "sha256": "5f807369a8a15f4a8f5c3d7a096208c5d6e57be9e32dd7f4dcbba380787ea561"
+        },
+        {
+          "name": "docProps/core.xml",
+          "sha256": "2f67efbb11ba997ff5ee5b61f67fafdd8e273f82e1e26491d41206eff76609ef"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "sha256": "dc129ba2bed39ecbbabe38b992ae373f75712317515baeb0993a7599e53d0d2c"
+        },
+        {
+          "name": "word/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "sha256": "5d819996a1e83d29bd60c7662b8056e1b34c41e18782f78c57761707ec3c1d5c"
+        },
+        {
+          "name": "word/document.xml",
+          "sha256": "829ad217cbe0fabc6bd9aa50f7c71c9cb8009585574a5e838d2453d7bbd02fb1"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "sha256": "e00611a6e708acdcb2696fbf1a17a8bdcfdb3c681e7422d07a98c48b127d2ba9"
+        },
+        {
+          "name": "word/settings.xml",
+          "sha256": "232c476b2bc463de086343ba90b10fb9eccfaefef487d193674e56455f4d6e97"
+        },
+        {
+          "name": "word/styles.xml",
+          "sha256": "c4ad792fde3f3e19853fb6419062cac493a8b19150b4c1a2c1da39d46f507337"
+        },
+        {
+          "name": "word/theme/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ],
+      "native_download_event": true,
+      "request": {
+        "province": "fujian",
+        "city": "平潭综合实验区",
+        "district": "平潭综合实验区",
+        "source_id": "511e7f64c9481b5a0b6ff4a1",
+        "version": 1,
+        "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+        "kind": "application",
+        "mode": "blank",
+        "contract_id": "ba51c3af032e3be801b2f31f23ccc989c55e51d85200bbbdde5e7151dd0d65cc",
+        "data": {
+          "applicantName": "",
+          "agentName": "",
+          "respondentName": "",
+          "requests": [
+            ""
+          ],
+          "factsReason": ""
+        }
+      },
+      "headers": {
+        "cache-control": "no-store",
+        "content-disposition": "attachment; filename*=utf-8''%E5%B9%B3%E6%BD%AD%E7%BB%BC%E5%90%88%E5%AE%9E%E9%AA%8C%E5%8C%BA%E7%94%B3%E8%AF%B7%E4%B9%A6-%E5%AE%98%E6%96%B9%E7%A9%BA%E7%99%BD%E8%A1%A8%E6%A0%BC%E5%A1%AB%E5%86%99.docx",
+        "content-length": "13093",
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "x-document-origin": "official-blank-filled",
+        "x-form-contract-id": "ba51c3af032e3be801b2f31f23ccc989c55e51d85200bbbdde5e7151dd0d65cc",
+        "x-guide-source-id": "511e7f64c9481b5a0b6ff4a1",
+        "x-guide-version": "1"
+      },
+      "new_render": false
+    },
+    {
+      "kind": "evidence",
+      "scenario": "filled",
+      "bytes": 16731,
+      "sha256": "41cbe398c9f0fdcd53dc9650af0835a421b091c141747959401a2f1337da31b7",
+      "whole_and_every_ZIP_equal": true,
+      "parts": [
+        {
+          "name": "[Content_Types].xml",
+          "sha256": "9de9c14934c2a6500cd9c3ccfaeb2aee60797f4fa00d200554f39cae73dd5474"
+        },
+        {
+          "name": "_rels/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/_rels/item2.xml.rels",
+          "sha256": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "sha256": "1055a368a3a05dbeb1c4d9692ad2bafe33a19126a8fa0453a0dedf0f68c62e4c"
+        },
+        {
+          "name": "customXml/item2.xml",
+          "sha256": "b30b8fd758aa47aada70ee7d8d8287349d6a21eb03c79bcb2e8930a1789022cc"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "customXml/itemProps2.xml",
+          "sha256": "6006fb22c96d0a3b11668eab82eff80ca82bd94d53611c889a08885f42109dcf"
+        },
+        {
+          "name": "docProps/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "sha256": "09eb73003d15a4116db88ffe77b7113846b701ad99ba1cb74d62071e66ccb48a"
+        },
+        {
+          "name": "docProps/core.xml",
+          "sha256": "4f6464ef61dd7b09b7c3582ac99709ca20f64f2dc94f30ac39a7d6a4dd593aac"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "sha256": "75169350f0a941e01d315ece2d5416a31c5d9c6fac8e16b637adfbcfb633050a"
+        },
+        {
+          "name": "word/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "sha256": "99b36725e7b90825ac41198f6b37570255b4aae17967ea02538c308410496b9f"
+        },
+        {
+          "name": "word/document.xml",
+          "sha256": "8035e7fb7ea1e604478bec3902417f5cbfbb0e93fd08d44b36b827dcea00e97e"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "sha256": "d5665956a6a9611d1ed5ad2707485731768a067c3886021bacf6e6721dae2c6f"
+        },
+        {
+          "name": "word/footer1.xml",
+          "sha256": "bb74fdd24d2af8916bb4082667d7619f3c7b8d918814a32e046252522c42bf66"
+        },
+        {
+          "name": "word/settings.xml",
+          "sha256": "2ead81363b7690e0d5e2fcb96b5a206250ccad32b8dd7f7d537e96bef5852d6a"
+        },
+        {
+          "name": "word/styles.xml",
+          "sha256": "b34cc5a41c0bd0901c8ac0a3aa58e71c1a42d61435b9b1241dd641f437189bf9"
+        },
+        {
+          "name": "word/theme/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ],
+      "native_download_event": true,
+      "request": {
+        "province": "fujian",
+        "city": "平潭综合实验区",
+        "district": "平潭综合实验区",
+        "source_id": "511e7f64c9481b5a0b6ff4a1",
+        "version": 1,
+        "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+        "kind": "evidence",
+        "mode": "blank",
+        "contract_id": "abe513b3830e6f14bfd0cd0e7a66f2566a67233de43186afaf8330e532e70e45",
+        "data": {
+          "evidenceList": [
+            {
+              "name": "虚构平潭材料甲",
+              "pageCount": "1",
+              "originalType": "复印件",
+              "purpose": "虚构测试：核对自身证据表字段。",
+              "pageRange": "1"
+            }
+          ]
+        }
+      },
+      "headers": {
+        "cache-control": "no-store",
+        "content-disposition": "attachment; filename*=utf-8''%E5%B9%B3%E6%BD%AD%E7%BB%BC%E5%90%88%E5%AE%9E%E9%AA%8C%E5%8C%BA%E8%AF%81%E6%8D%AE%E6%B8%85%E5%8D%95-%E5%AE%98%E6%96%B9%E7%A9%BA%E7%99%BD%E8%A1%A8%E6%A0%BC%E5%A1%AB%E5%86%99.docx",
+        "content-length": "16731",
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "x-document-origin": "official-blank-filled",
+        "x-form-contract-id": "abe513b3830e6f14bfd0cd0e7a66f2566a67233de43186afaf8330e532e70e45",
+        "x-guide-source-id": "511e7f64c9481b5a0b6ff4a1",
+        "x-guide-version": "1"
+      },
+      "new_render": false
+    },
+    {
+      "kind": "evidence",
+      "scenario": "blank",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "whole_and_every_ZIP_equal": true,
+      "parts": [
+        {
+          "name": "[Content_Types].xml",
+          "sha256": "9de9c14934c2a6500cd9c3ccfaeb2aee60797f4fa00d200554f39cae73dd5474"
+        },
+        {
+          "name": "_rels/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "_rels/.rels",
+          "sha256": "514e1846381cb6bcfff105a4b0a17d666cf0ed1f0c120bff73b82226ab7ed977"
+        },
+        {
+          "name": "customXml/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "customXml/_rels/item1.xml.rels",
+          "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0"
+        },
+        {
+          "name": "customXml/_rels/item2.xml.rels",
+          "sha256": "2a6aee4c8a9714223a3568077411a0c82d11b484b1c9ab93a19d50b99c57baa5"
+        },
+        {
+          "name": "customXml/item1.xml",
+          "sha256": "1055a368a3a05dbeb1c4d9692ad2bafe33a19126a8fa0453a0dedf0f68c62e4c"
+        },
+        {
+          "name": "customXml/item2.xml",
+          "sha256": "b30b8fd758aa47aada70ee7d8d8287349d6a21eb03c79bcb2e8930a1789022cc"
+        },
+        {
+          "name": "customXml/itemProps1.xml",
+          "sha256": "16c9a9ab07e137bbf93dbcfe36c21a778cdccdd1d2b152085354b53a2f17d1c1"
+        },
+        {
+          "name": "customXml/itemProps2.xml",
+          "sha256": "6006fb22c96d0a3b11668eab82eff80ca82bd94d53611c889a08885f42109dcf"
+        },
+        {
+          "name": "docProps/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "docProps/app.xml",
+          "sha256": "09eb73003d15a4116db88ffe77b7113846b701ad99ba1cb74d62071e66ccb48a"
+        },
+        {
+          "name": "docProps/core.xml",
+          "sha256": "4f6464ef61dd7b09b7c3582ac99709ca20f64f2dc94f30ac39a7d6a4dd593aac"
+        },
+        {
+          "name": "docProps/custom.xml",
+          "sha256": "75169350f0a941e01d315ece2d5416a31c5d9c6fac8e16b637adfbcfb633050a"
+        },
+        {
+          "name": "word/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/_rels/document.xml.rels",
+          "sha256": "99b36725e7b90825ac41198f6b37570255b4aae17967ea02538c308410496b9f"
+        },
+        {
+          "name": "word/document.xml",
+          "sha256": "94c138c79cb85b6bff100665d098a34b26ac30672f6f8d01b378ed03e799ac70"
+        },
+        {
+          "name": "word/fontTable.xml",
+          "sha256": "d5665956a6a9611d1ed5ad2707485731768a067c3886021bacf6e6721dae2c6f"
+        },
+        {
+          "name": "word/footer1.xml",
+          "sha256": "bb74fdd24d2af8916bb4082667d7619f3c7b8d918814a32e046252522c42bf66"
+        },
+        {
+          "name": "word/settings.xml",
+          "sha256": "2ead81363b7690e0d5e2fcb96b5a206250ccad32b8dd7f7d537e96bef5852d6a"
+        },
+        {
+          "name": "word/styles.xml",
+          "sha256": "b34cc5a41c0bd0901c8ac0a3aa58e71c1a42d61435b9b1241dd641f437189bf9"
+        },
+        {
+          "name": "word/theme/",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "name": "word/theme/theme1.xml",
+          "sha256": "2157ebaa401af49c0c9b80ad88ccbad4dbe486136a0b3f4bddc77de976340c33"
+        }
+      ],
+      "native_download_event": true,
+      "request": {
+        "province": "fujian",
+        "city": "平潭综合实验区",
+        "district": "平潭综合实验区",
+        "source_id": "511e7f64c9481b5a0b6ff4a1",
+        "version": 1,
+        "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+        "kind": "evidence",
+        "mode": "blank",
+        "contract_id": "abe513b3830e6f14bfd0cd0e7a66f2566a67233de43186afaf8330e532e70e45",
+        "data": {
+          "evidenceList": [
+            {
+              "name": "",
+              "pageCount": "",
+              "originalType": "",
+              "purpose": "",
+              "pageRange": ""
+            }
+          ]
+        }
+      },
+      "headers": {
+        "cache-control": "no-store",
+        "content-disposition": "attachment; filename*=utf-8''%E5%B9%B3%E6%BD%AD%E7%BB%BC%E5%90%88%E5%AE%9E%E9%AA%8C%E5%8C%BA%E8%AF%81%E6%8D%AE%E6%B8%85%E5%8D%95-%E5%AE%98%E6%96%B9%E7%A9%BA%E7%99%BD%E8%A1%A8%E6%A0%BC%E5%A1%AB%E5%86%99.docx",
+        "content-length": "18887",
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "x-document-origin": "official-blank-filled",
+        "x-form-contract-id": "abe513b3830e6f14bfd0cd0e7a66f2566a67233de43186afaf8330e532e70e45",
+        "x-guide-source-id": "511e7f64c9481b5a0b6ff4a1",
+        "x-guide-version": "1"
+      },
+      "new_render": false
+    }
+  ],
+  "strict_full_contracts": 2,
+  "logical_Word_pages_previously_viewed": 26,
+  "real_downloads": 4,
+  "new_screenshots": 0,
+  "models": 0,
+  "government_requests": 0,
+  "data_published": false
+}

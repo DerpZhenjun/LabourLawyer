@@ -18,13 +18,16 @@ class LDispatchTests(unittest.TestCase):
  def isolated(self,phase='stage'):
   with tempfile.TemporaryDirectory(prefix='pingtan-own-api-') as folder:
    root=Path(folder);paths=set(own.source_files(ROOT))
-   if phase=='stage':
+   if phase in ['stage','published']:
     word=json.loads((ROOT/own.WORD_MANIFEST).read_bytes())
     paths.update([own.WORD_MANIFEST,own.STAGE_RECEIPT,*[r['path'] for r in word['files']]])
+   if phase=='published':
+    final=json.loads((ROOT/own.PUBLICATION_RECEIPT).read_bytes())
+    paths.update([own.PUBLICATION_RECEIPT,*[r['path'] for r in final['files']]])
    for name in paths:
     dest=root/name;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(ROOT/name,dest)
    store=RegionalStore(root/'candidate.sqlite')
-   prepare=own.staged_candidate if phase=='stage' else own.parse_capture
+   prepare={'stage':own.staged_candidate,'published':own._published,'source':own.parse_capture}[phase]
    store.put_guide(prepare('350128',root=root))
    app=FastAPI();app.include_router(routes.router,prefix='/regional')
    with patch.dict(os.environ,{'LABOURLAWYER_DATA_DIR':str(root/'private')}),patch.object(routes,'ROOT',root),patch.object(routes,'store',return_value=store),TestClient(app) as client:
