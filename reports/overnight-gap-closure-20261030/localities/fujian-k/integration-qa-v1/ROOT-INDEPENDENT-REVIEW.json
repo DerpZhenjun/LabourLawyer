@@ -1,0 +1,56 @@
+{
+  "status": "ROOT_K_v2_independent_frozen_sources_Word_and_candidate_PASS",
+  "checked_at": "2026-10-31T01:21:08.645716+00:00",
+  "public_allowlist_sha256": "c07ffbb760a5ecc8e62b426122e72c39a096e17711236fa7924131e2dec854df",
+  "allowlisted_files": 106,
+  "source_projection_files": 19,
+  "sources": [
+    {
+      "region_code": "350111",
+      "source_id": "09dcedf106cd2fd411a09546",
+      "manifest_sha256": "454a4eab5d67f9f0e297ac37ae83a052e9e997a86771e6354f3031ae0ff72569",
+      "leaf_files": 6
+    },
+    {
+      "region_code": "350105",
+      "source_id": "0aa50441bacd05b2245fb5f1",
+      "manifest_sha256": "ea79a1e90cc56fc9c8914752933f70c3fff37df518da2dfe327bbc8eb8297caa",
+      "leaf_files": 5
+    },
+    {
+      "region_code": "350121",
+      "source_id": "70d8f78ba93e94e9afecf7f3",
+      "manifest_sha256": "942bbb67e20627e02fcb30d72b8fef9c8e022ae9b0bf640383ef04b5704dc440",
+      "leaf_files": 5
+    }
+  ],
+  "word_manifest_sha256": "52097115c840d8edb04e47cd2fc5c6f2ff87a8b5456ca2d242277935412d8b85",
+  "word_manifest_leaves": 81,
+  "original_and_generated_docx_no_external_links": 12,
+  "fictional_fixtures_exact_regenerated": 8,
+  "visual_unique_images_opened": 26,
+  "byte_equal_duplicate_page_coverage": 18,
+  "earlier_Root_canonical_probe": "NOT_ACCEPTED: used raw-URL hash instead of existing system JSON-canonical digest; corrected exact-system canonical independently, no source modified",
+  "stage_approved": true,
+  "final_approved": false,
+  "root_guarded_unit_tests": 15,
+  "root_actual_TS_replay": "PASS; real isolated RegionalStore versions and production strict parser/display helpers",
+  "visual_review": {
+    "actual_unique_images_opened": 26,
+    "exact_duplicate_pages_byte_verified": 18,
+    "total_page_coverage": 44,
+    "findings": "No clipping/overlap/lost glyphs observed; original trailing blank application page preserved; normal and stress request/facts/evidence rows flow and closings visible. Fixture text endings and source Letter paper preserved, not rewritten.",
+    "browser_screenshots": false
+  },
+  "code_review": "Own source/region/material/file/type/sha bindings; canonical Minhou JSON digest; raw conflicts preserved; evidence role conflict not promoted; no source borrowing; no committee/signature/date inference",
+  "known_limitations": [
+    "No K shared dispatch, native filling UI or publication acceptance yet",
+    "Official guide partial; official version/committee legal full name/online submission not established",
+    "Minhou and Mawei evidence remain UNKNOWN_NOT_ADAPTED, not absence",
+    "Native Word source trailing blank page preserved; first unknown Word automation instance not claimed cleaned; UpdateLinksAtOpen flag not set but all12 inputs have no external links/fields"
+  ],
+  "root_test_logs_sha256": {
+    "ROOT-15-GUARDED.log": "6d9a6b3580c4c4050c4a6a34c00a878e216c67e6d8daa101901faf279546d0c8",
+    "ROOT-ACTUAL-TS-DISPLAY-v2.log": "f311e129632265dd0ae1b7eff6cba2b0cde8aa5efe3220d13e335920cc580285"
+  }
+}

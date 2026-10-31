@@ -1,0 +1,121 @@
+{
+  "scope": "Actual owned Word read-only export; no real case data",
+  "documents": [
+    {
+      "label": "350111-original-application",
+      "pages": 2,
+      "visible_glyph_boxes_outside_page": [],
+      "text_boxes_outside_page": [],
+      "original_whitespace_glyphs_outside_page": 5,
+      "pdf_sha256": "d8873743f98f0f5c20b5ba419f5c99dfdb593711111eebaf13131046a7f40302",
+      "docx_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    {
+      "label": "350111-normal-application",
+      "pages": 2,
+      "visible_glyph_boxes_outside_page": [],
+      "text_boxes_outside_page": [],
+      "original_whitespace_glyphs_outside_page": 5,
+      "pdf_sha256": "26a0fffbd4aae319ff0321adb6f69809ac26818b1de2e3c3e89b2c1fe2c67a3c",
+      "docx_sha256": "3749d34dd61a3d8a64d659e8ba9ecbafef8457d31c6f20c213dad4d801eacf14"
+    },
+    {
+      "label": "350111-stress-application",
+      "pages": 7,
+      "visible_glyph_boxes_outside_page": [],
+      "text_boxes_outside_page": [],
+      "original_whitespace_glyphs_outside_page": 5,
+      "pdf_sha256": "d451f072ffe9922ac3f6275a31094fb472ceba0f9533406e5818cc4349c8bf77",
+      "docx_sha256": "93fcf7e87dd86f698c7355e2216f9a26d6fb8651f1e1aa4c314e44c5c72c3bb6"
+    },
+    {
+      "label": "350111-original-evidence",
+      "pages": 1,
+      "visible_glyph_boxes_outside_page": [],
+      "text_boxes_outside_page": [],
+      "original_whitespace_glyphs_outside_page": 0,
+      "pdf_sha256": "4c44e19eec6c57401399a2deae8a59dce974458b77f30dc0d08075f03f6188c6",
+      "docx_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    {
+      "label": "350111-normal-evidence",
+      "pages": 1,
+      "visible_glyph_boxes_outside_page": [],
+      "text_boxes_outside_page": [],
+      "original_whitespace_glyphs_outside_page": 0,
+      "pdf_sha256": "5d6c084d0d9c36dc820e59c5abdd5dda2409ad08e60c03255eb23d170ee1390c",
+      "docx_sha256": "753e97610048e6a63da614c397e1ca393a00d856aa5c4fa744f7007e2bd3ecae"
+    },
+    {
+      "label": "350111-stress-evidence",
+      "pages": 9,
+      "visible_glyph_boxes_outside_page": [],
+      "text_boxes_outside_page": [],
+      "original_whitespace_glyphs_outside_page": 0,
+      "pdf_sha256": "dacac3566acb1db819a6fb6e674cbaa6df2714146d701cbf829f0540f70a1f2d",
+      "docx_sha256": "8c12bbaf7e1479c1e2b7827e8af9d244ad5c7cb982ebfb66640c05bfe517955c"
+    },
+    {
+      "label": "350121-original-application",
+      "pages": 2,
+      "visible_glyph_boxes_outside_page": [],
+      "text_boxes_outside_page": [],
+      "original_whitespace_glyphs_outside_page": 5,
+      "pdf_sha256": "bc7019b630f4d35e59dc187dde49caea63a03e79422bd25cd33f7f87aa7704b8",
+      "docx_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    {
+      "label": "350121-normal-application",
+      "pages": 2,
+      "visible_glyph_boxes_outside_page": [],
+      "text_boxes_outside_page": [],
+      "original_whitespace_glyphs_outside_page": 5,
+      "pdf_sha256": "59919d62dc5ff8c4116d56f014e1c1127d6dcc7fc1e61b81326c989536094db4",
+      "docx_sha256": "80210afdd1156db049704d72e6356619d51cb7d645afa8220c206d5846debdc6"
+    },
+    {
+      "label": "350121-stress-application",
+      "pages": 7,
+      "visible_glyph_boxes_outside_page": [],
+      "text_boxes_outside_page": [],
+      "original_whitespace_glyphs_outside_page": 5,
+      "pdf_sha256": "6e7a9d3b4c89cbfd82d11426beb255bea6d3d9ce3407b372da6e884e02ce846e",
+      "docx_sha256": "40a8eee5a6a1dc6f966237280af07c82abe4269e0ac2bd90c1ea489de0e2e045"
+    },
+    {
+      "label": "350105-original-application",
+      "pages": 2,
+      "visible_glyph_boxes_outside_page": [],
+      "text_boxes_outside_page": [],
+      "original_whitespace_glyphs_outside_page": 5,
+      "pdf_sha256": "a371a000bc2aacc735de6d388f05cefa4ee609798dae2f6caeebc7f96e30aaf6",
+      "docx_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    {
+      "label": "350105-normal-application",
+      "pages": 2,
+      "visible_glyph_boxes_outside_page": [],
+      "text_boxes_outside_page": [],
+      "original_whitespace_glyphs_outside_page": 5,
+      "pdf_sha256": "4fd5ca775a2cbfb8aee0c3f714ac787eef7ebd131dfacc336dd8d4a44eef1333",
+      "docx_sha256": "8f930c72cac137e44f5fa36cca1f8e988a7d30d081230fcaa8769e3e04f4a2d7"
+    },
+    {
+      "label": "350105-stress-application",
+      "pages": 7,
+      "visible_glyph_boxes_outside_page": [],
+      "text_boxes_outside_page": [],
+      "original_whitespace_glyphs_outside_page": 5,
+      "pdf_sha256": "9a80844278c28b024565634d24bb9573098686e9b587928ab9aad093cc93dfa7",
+      "docx_sha256": "c57069db8e7ea07bd1865731010e9c963d38a9c4923f3579b81bf7a27e25547d"
+    }
+  ],
+  "all_four_originals_and_eight_filled_external_relationship_or_link_fields": [],
+  "missing_fictional_field_values_in_actual_PDF": [],
+  "UpdateLinksAtOpen_explicitly_disabled": false,
+  "qualification": "Options.UpdateLinksAtOpen was not set; no external relationships/INCLUDETEXT/INCLUDEPICTURE/DDEAUTO/LINK fields exist in any of12 inputs. No further Word launch performed.",
+  "new_owned_instance_closed": true,
+  "first_unconfirmed_attempt_NOT_ACCEPTED_and_not_claimed_cleaned": true,
+  "model_calls": 0,
+  "browser_screenshots": 0
+}

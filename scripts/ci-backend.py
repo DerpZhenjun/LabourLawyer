@@ -50,6 +50,9 @@ TESTS = (
     'test_regional_fujian_oct31j',
     'test_fujian_oct31j_dispatch',
     'test_fujian_j_seed_publication',
+    'test_regional_fujian_oct31k',
+    'test_fujian_oct31k_dispatch',
+    'test_fujian_k_client_contract',
     'test_generated_document_storage',
     'test_regional_issue_public_urls',
     'test_service_capabilities',
@@ -80,6 +83,8 @@ NODE_FIXTURES = {
     (ROOT / 'backend/tests/fixtures/test-fujian-i-wire.mjs').resolve(),
     (ROOT / 'scripts/test-fujian-j-guide-wire.mjs').resolve(),
     (ROOT / 'backend/tests/fixtures/test-fujian-j-wire.mjs').resolve(),
+    (ROOT / 'backend/tests/fixtures/test-fujian-k-display.mjs').resolve(),
+    (ROOT / 'backend/tests/fixtures/test-fujian-k-wire.mjs').resolve(),
 }
 OFFLINE_EXCLUSIONS = {
     'test_linux_guide_collector.CollectorTests.test_os_worker_lock_rejects_second_process_and_releases_on_exit':

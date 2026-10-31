@@ -1,0 +1,48 @@
+{
+  "fictional_only": true,
+  "real_case_data": false,
+  "model_calls": 0,
+  "data": {
+    "evidenceList": [
+      {
+        "name": "虚构合同（仅测试）",
+        "pageCount": "2",
+        "originalType": "复印件",
+        "purpose": "仅作版式测试，无实际证明力",
+        "pageRange": "1-2"
+      }
+    ]
+  },
+  "request": {
+    "province": "fujian",
+    "city": "福州市",
+    "district": "晋安区",
+    "region_code": "350111",
+    "source_id": "09dcedf106cd2fd411a09546",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=2AE4D76F39D556A71053EF3E78D83397&infoType=1",
+    "source_version": "454a4eab5d67f9f0e297ac37ae83a052e9e997a86771e6354f3031ae0ff72569",
+    "material_id": "CCD67DD595A67E389AC2EBFAB5409943",
+    "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+    "template_file": "reports/overnight-gap-closure-20261030/localities/fujian-k-source-projection/jinan-350111/evidence-list-own-format-public-retrieval.docx",
+    "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "template_version": "sha256:d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "schema_id": "fujian-k-350111-evidence-v1",
+    "schema_version": 1,
+    "kind": "evidence",
+    "mode": "blank",
+    "data": {
+      "evidenceList": [
+        {
+          "name": "虚构合同（仅测试）",
+          "pageCount": "2",
+          "originalType": "复印件",
+          "purpose": "仅作版式测试，无实际证明力",
+          "pageRange": "1-2"
+        }
+      ]
+    }
+  },
+  "output": "reports/overnight-gap-closure-20261030/localities/fujian-k/integration-qa-v1/word/350111-normal-evidence.docx",
+  "bytes": 16727,
+  "sha256": "753e97610048e6a63da614c397e1ca393a00d856aa5c4fa744f7007e2bd3ecae"
+}

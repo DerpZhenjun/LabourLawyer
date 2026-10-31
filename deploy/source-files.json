@@ -157,6 +157,7 @@
     "scripts/create-tls-test-ca.py",
     "scripts/manage-users.py",
     "scripts/run-linux-guide-collector.py",
-    "scripts/test-tls-proxy.py"
+    "scripts/test-tls-proxy.py",
+    "backend/regional_fujian_oct31k.py"
   ]
 }

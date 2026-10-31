@@ -1,0 +1,44 @@
+{
+  "fictional_only": true,
+  "real_case_data": false,
+  "model_calls": 0,
+  "data": {
+    "applicantName": "虚构申请人甲350121（仅测试）",
+    "agentName": "",
+    "respondentName": "虚构乙公司350121（仅测试）",
+    "requests": [
+      "虚构请求：仅验证自身空白表格填写效果，不提出真实申请。"
+    ],
+    "factsReason": "本样本全部内容均为虚构，仅验证表格版式、字段位置和来源绑定，不涉及真实当事人、争议或金额。"
+  },
+  "request": {
+    "province": "fujian",
+    "city": "福州市",
+    "district": "闽侯县",
+    "region_code": "350121",
+    "source_id": "70d8f78ba93e94e9afecf7f3",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=91F7E51AA93120174C111809DD6CB410&infoType=1",
+    "source_version": "942bbb67e20627e02fcb30d72b8fef9c8e022ae9b0bf640383ef04b5704dc440",
+    "material_id": "E995DF176916B9D20080AE72C5CE7708",
+    "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+    "template_file": "reports/overnight-gap-closure-20261030/localities/fujian-k-source-projection/minhou-350121/application-own-format-public-retrieval.docx",
+    "template_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+    "template_version": "sha256:093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+    "schema_id": "fujian-k-350121-application-v1",
+    "schema_version": 1,
+    "kind": "application",
+    "mode": "blank",
+    "data": {
+      "applicantName": "虚构申请人甲350121（仅测试）",
+      "agentName": "",
+      "respondentName": "虚构乙公司350121（仅测试）",
+      "requests": [
+        "虚构请求：仅验证自身空白表格填写效果，不提出真实申请。"
+      ],
+      "factsReason": "本样本全部内容均为虚构，仅验证表格版式、字段位置和来源绑定，不涉及真实当事人、争议或金额。"
+    }
+  },
+  "output": "reports/overnight-gap-closure-20261030/localities/fujian-k/integration-qa-v1/word/350121-normal-application.docx",
+  "bytes": 12100,
+  "sha256": "80210afdd1156db049704d72e6356619d51cb7d645afa8220c206d5846debdc6"
+}

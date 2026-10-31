@@ -1,0 +1,315 @@
+{
+  "status": "PASS_PRIVATE_CANDIDATE_NOT_LIVE",
+  "accepted_at": "2026-10-31T02:15:48.378416+00:00",
+  "stage_sha256": "d23c44632e61878f597e74528c949603a868ca471f5c83245be579deb7bc8b19",
+  "publication_sha256": null,
+  "eligible_forms": {
+    "350111": [
+      "application",
+      "evidence"
+    ],
+    "350121": [
+      "application"
+    ],
+    "350105": [
+      "application"
+    ]
+  },
+  "source_ids": {
+    "350111": "09dcedf106cd2fd411a09546",
+    "350121": "70d8f78ba93e94e9afecf7f3",
+    "350105": "0aa50441bacd05b2245fb5f1"
+  },
+  "guide_qualification": "partial; official version/committee full legal name/submission not established",
+  "actual_native_downloads": 8,
+  "actual_native_events": 8,
+  "actual_generation_POSTs": 8,
+  "all_whole_files_and_ZIP_members_independently_regenerated": true,
+  "contracts_full_canonical_SHA_and_all15context_fields": 4,
+  "actual_initial_defaults": [
+    {
+      "code": "350111",
+      "kind": "application",
+      "source_id": "09dcedf106cd2fd411a09546",
+      "version": 1,
+      "actual": {
+        "applicantName": "陈虚构",
+        "agentName": "",
+        "respondentName": "虚构青禾有限公司",
+        "requests": [
+          "请求支付虚构拖欠工资3000元。"
+        ],
+        "factsReason": "以下全部为软件演示的虚构情况。虚构单位拖欠示例工资3000元，双方协商未果，故提出上述请求。"
+      }
+    },
+    {
+      "code": "350111",
+      "kind": "evidence",
+      "source_id": "09dcedf106cd2fd411a09546",
+      "version": 1,
+      "actual": {
+        "evidenceList": [
+          {
+            "name": "虚构劳动合同",
+            "pageCount": "3",
+            "originalType": "复印件",
+            "purpose": "虚构示例：说明双方劳动关系。",
+            "pageRange": ""
+          }
+        ]
+      }
+    },
+    {
+      "code": "350121",
+      "kind": "application",
+      "source_id": "70d8f78ba93e94e9afecf7f3",
+      "version": 2,
+      "actual": {
+        "applicantName": "陈虚构",
+        "agentName": "",
+        "respondentName": "虚构青禾有限公司",
+        "requests": [
+          "请求支付虚构拖欠工资3000元。"
+        ],
+        "factsReason": "以下全部为软件演示的虚构情况。虚构单位拖欠示例工资3000元，双方协商未果，故提出上述请求。"
+      }
+    },
+    {
+      "code": "350105",
+      "kind": "application",
+      "source_id": "0aa50441bacd05b2245fb5f1",
+      "version": 3,
+      "actual": {
+        "applicantName": "陈虚构",
+        "agentName": "",
+        "respondentName": "虚构青禾有限公司",
+        "requests": [
+          "请求支付虚构拖欠工资3000元。"
+        ],
+        "factsReason": "以下全部为软件演示的虚构情况。虚构单位拖欠示例工资3000元，双方协商未果，故提出上述请求。"
+      }
+    }
+  ],
+  "initial_examples_are_fictional_UI_data_not_official_instructions": true,
+  "initial_default_equals_QA_fixture_required": false,
+  "after_visible_UI_fill_and_captured_POST_equals_own_normal_fixture_required": true,
+  "viewports": [
+    {
+      "code": "350111",
+      "kind": "application",
+      "width": 375,
+      "scroll": 375
+    },
+    {
+      "code": "350111",
+      "kind": "application",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "code": "350111",
+      "kind": "application",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "code": "350111",
+      "kind": "evidence",
+      "width": 375,
+      "scroll": 375
+    },
+    {
+      "code": "350111",
+      "kind": "evidence",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "code": "350111",
+      "kind": "evidence",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "code": "350121",
+      "kind": "application",
+      "width": 375,
+      "scroll": 375
+    },
+    {
+      "code": "350121",
+      "kind": "application",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "code": "350121",
+      "kind": "application",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "code": "350105",
+      "kind": "application",
+      "width": 375,
+      "scroll": 375
+    },
+    {
+      "code": "350105",
+      "kind": "application",
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "code": "350105",
+      "kind": "application",
+      "width": 1440,
+      "scroll": 1440
+    }
+  ],
+  "cancel_checks": [
+    {
+      "code": "350111",
+      "kind": "application",
+      "cancel_and_escape_posts": 0,
+      "focus_returned": true,
+      "tab_trapped": true,
+      "dialog375_visible": true
+    },
+    {
+      "code": "350111",
+      "kind": "evidence",
+      "cancel_and_escape_posts": 0,
+      "focus_returned": true,
+      "tab_trapped": true,
+      "dialog375_visible": true
+    },
+    {
+      "code": "350121",
+      "kind": "application",
+      "cancel_and_escape_posts": 0,
+      "focus_returned": true,
+      "tab_trapped": true,
+      "dialog375_visible": true
+    },
+    {
+      "code": "350105",
+      "kind": "application",
+      "cancel_and_escape_posts": 0,
+      "focus_returned": true,
+      "tab_trapped": true,
+      "dialog375_visible": true
+    }
+  ],
+  "unknown_scope_removed_fields": true,
+  "unadapted_evidence_direct_pages_blocked": 2,
+  "metadata_only_download_409": 14,
+  "unadapted_evidence_contract_409": 2,
+  "no_other_region_template_fallback": true,
+  "download_files": [
+    {
+      "code": "350111",
+      "kind": "application",
+      "scenario": "filled",
+      "file": "native-downloads/350111-application-filled.docx",
+      "bytes": 12100,
+      "sha256": "3749d34dd61a3d8a64d659e8ba9ecbafef8457d31c6f20c213dad4d801eacf14",
+      "all_ZIP_members_equal": true,
+      "private_relative_file": "native-downloads/350111-application-filled.docx"
+    },
+    {
+      "code": "350111",
+      "kind": "application",
+      "scenario": "blank",
+      "file": "native-downloads/350111-application-blank.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "all_ZIP_members_equal": true,
+      "private_relative_file": "native-downloads/350111-application-blank.docx"
+    },
+    {
+      "code": "350111",
+      "kind": "evidence",
+      "scenario": "filled",
+      "file": "native-downloads/350111-evidence-filled.docx",
+      "bytes": 16727,
+      "sha256": "753e97610048e6a63da614c397e1ca393a00d856aa5c4fa744f7007e2bd3ecae",
+      "all_ZIP_members_equal": true,
+      "private_relative_file": "native-downloads/350111-evidence-filled.docx"
+    },
+    {
+      "code": "350111",
+      "kind": "evidence",
+      "scenario": "blank",
+      "file": "native-downloads/350111-evidence-blank.docx",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "all_ZIP_members_equal": true,
+      "private_relative_file": "native-downloads/350111-evidence-blank.docx"
+    },
+    {
+      "code": "350121",
+      "kind": "application",
+      "scenario": "filled",
+      "file": "native-downloads/350121-application-filled.docx",
+      "bytes": 12100,
+      "sha256": "80210afdd1156db049704d72e6356619d51cb7d645afa8220c206d5846debdc6",
+      "all_ZIP_members_equal": true,
+      "private_relative_file": "native-downloads/350121-application-filled.docx"
+    },
+    {
+      "code": "350121",
+      "kind": "application",
+      "scenario": "blank",
+      "file": "native-downloads/350121-application-blank.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "all_ZIP_members_equal": true,
+      "private_relative_file": "native-downloads/350121-application-blank.docx"
+    },
+    {
+      "code": "350105",
+      "kind": "application",
+      "scenario": "filled",
+      "file": "native-downloads/350105-application-filled.docx",
+      "bytes": 12100,
+      "sha256": "8f930c72cac137e44f5fa36cca1f8e988a7d30d081230fcaa8769e3e04f4a2d7",
+      "all_ZIP_members_equal": true,
+      "private_relative_file": "native-downloads/350105-application-filled.docx"
+    },
+    {
+      "code": "350105",
+      "kind": "application",
+      "scenario": "blank",
+      "file": "native-downloads/350105-application-blank.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "all_ZIP_members_equal": true,
+      "private_relative_file": "native-downloads/350105-application-blank.docx"
+    }
+  ],
+  "first_attempt": {
+    "status": "NOT_ACCEPTED",
+    "native_events": 0,
+    "generation_POSTs": 0,
+    "file_downloads": 0,
+    "reason": "Test harness incorrectly equated initial fictional UI examples with separately filled QA data; product code unchanged",
+    "retained_report_sha256": "d852feec657fd6d7b1dae191ff2a1318a9d695d4b6ff8ed1f1ec3ff8f8deb8eb"
+  },
+  "corrected_harness": {
+    "sha256": "3f9063ab60a217fc30695473eb7f46306ea74dae7a61f5f991f1b594a9fdef56",
+    "only_change": "Persist actual initial values before checks; remove initial fixture-equality overconstraint. Exact later UI/POST/contract/Word checks retained.",
+    "Root_guarded_pure_checks": 14
+  },
+  "console_page_errors": 0,
+  "blocked_requests": 0,
+  "model_calls": 0,
+  "government_navigation": 0,
+  "browser_screenshots": 0,
+  "HAR": 0,
+  "authentication_or_application_submission": false,
+  "owned_browser_closed": true,
+  "can_publish": false,
+  "Root_independent_file_review_sha256": "6dd68168923e6e3f42ffbcfe51f79157c8e66c52fee5870d6606d93fd8e3b319",
+  "actual_browser_report_sha256": "d08c0f501b5e86abb4b3e2b4d47df4a594ff9fd035b0807b7cc9e6b3a1c64244"
+}

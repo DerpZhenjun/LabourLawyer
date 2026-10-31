@@ -1,0 +1,55 @@
+{
+  "province": "fujian",
+  "city": "福州市",
+  "district": "马尾区",
+  "region_code": "350105",
+  "source_id": "0aa50441bacd05b2245fb5f1",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+  "service_code": "11350105003628311J400201430200201",
+  "authority": "福州经济技术开发区人力资源和社会保障局",
+  "folder": "mawei-350105",
+  "allowed_kinds": [
+    "application"
+  ],
+  "templates": {
+    "application": {
+      "file_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+      "material_id": "0B1E30097A841DB55BF139918A072106",
+      "official_label": "仲裁申请书.docx",
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "bytes": 13093,
+      "source_file": "reports/overnight-gap-closure-20261030/localities/fujian-k-source-projection/mawei-350105/application-own-format-public-retrieval.docx"
+    }
+  },
+  "schema_version": 1,
+  "derived_sanitized_projection": true,
+  "parent_MCP_normalized_sha256": "acce7cf79efd7f4ce3a62a81a90e5fc33f2329eaba5379cc635246536e76ecf1",
+  "parent_MCP_scrubbed_DOM_sha256": "8d624272cf67dceeb46d27f449d45da5839e68d1be19bd49acd29238fa08de6c",
+  "parent_own_TLS_source_freeze_sha256": "cc2edfe9c11d8ba9d22ef5c66a759e859176a8b5981dc8c6ac77f6d57ae7fd12",
+  "raw_parent_is_runtime_dependency": false,
+  "committee_full_name": null,
+  "can_generate": false,
+  "published": false,
+  "files": {
+    "application-own-format-public-retrieval.docx": {
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    "NORMALIZED-OWN-SOURCE.json": {
+      "bytes": 40327,
+      "sha256": "acce7cf79efd7f4ce3a62a81a90e5fc33f2329eaba5379cc635246536e76ecf1"
+    },
+    "own-guide-native-dom.json": {
+      "bytes": 34713,
+      "sha256": "8d624272cf67dceeb46d27f449d45da5839e68d1be19bd49acd29238fa08de6c"
+    },
+    "own-official-bindings.json": {
+      "bytes": 6178,
+      "sha256": "3387cd538fcf75e5511007d33e687bd151307eef2a3fded6f6dbbf8d677789e9"
+    },
+    "SOURCE-QUALIFICATIONS.json": {
+      "bytes": 1581,
+      "sha256": "bb70fcda769f29ae30c76028d603dfc3fddccb7be8ac6e71e8a994349521df89"
+    }
+  }
+}

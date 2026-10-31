@@ -1,0 +1,68 @@
+{
+  "province": "fujian",
+  "city": "福州市",
+  "district": "晋安区",
+  "region_code": "350111",
+  "source_id": "09dcedf106cd2fd411a09546",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=2AE4D76F39D556A71053EF3E78D83397&infoType=1",
+  "service_code": "11350111768596390D400201430200201",
+  "authority": "福州市晋安区人力资源和社会保障局",
+  "folder": "jinan-350111",
+  "allowed_kinds": [
+    "application",
+    "evidence"
+  ],
+  "templates": {
+    "application": {
+      "file_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+      "material_id": "743F21F90A88857531C1B7321E35AD5B",
+      "official_label": "仲裁申请书.docx",
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "bytes": 13093,
+      "source_file": "reports/overnight-gap-closure-20261030/localities/fujian-k-source-projection/jinan-350111/application-own-format-public-retrieval.docx"
+    },
+    "evidence": {
+      "file_id": "CC300F5D9DD5DC404D65C68116D50C55",
+      "material_id": "CCD67DD595A67E389AC2EBFAB5409943",
+      "official_label": "证据清单（空白）.docx",
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "bytes": 18887,
+      "source_file": "reports/overnight-gap-closure-20261030/localities/fujian-k-source-projection/jinan-350111/evidence-list-own-format-public-retrieval.docx"
+    }
+  },
+  "schema_version": 1,
+  "derived_sanitized_projection": true,
+  "parent_MCP_normalized_sha256": "1029bddb98fa0f64febc3befb7968355c1743282041b13b46ba8762710753842",
+  "parent_MCP_scrubbed_DOM_sha256": "63e4cc297ab904239968d214728d040f0f355881c82f9e2908f0775c62a15496",
+  "parent_own_TLS_source_freeze_sha256": "b91564198151ab23fef27a700e048da20f662d418bfb8ed885c2b2dcc108c28b",
+  "raw_parent_is_runtime_dependency": false,
+  "committee_full_name": null,
+  "can_generate": false,
+  "published": false,
+  "files": {
+    "application-own-format-public-retrieval.docx": {
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    "evidence-list-own-format-public-retrieval.docx": {
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    "NORMALIZED-OWN-SOURCE.json": {
+      "bytes": 41165,
+      "sha256": "1029bddb98fa0f64febc3befb7968355c1743282041b13b46ba8762710753842"
+    },
+    "own-guide-native-dom.json": {
+      "bytes": 39982,
+      "sha256": "63e4cc297ab904239968d214728d040f0f355881c82f9e2908f0775c62a15496"
+    },
+    "own-official-bindings.json": {
+      "bytes": 6218,
+      "sha256": "4cf2d358952334d5190fd624a4f2ab4e8dae34c0d1db90e74cda755d92efd7b8"
+    },
+    "SOURCE-QUALIFICATIONS.json": {
+      "bytes": 1638,
+      "sha256": "8931a113357996202803ca0c863a423edebf95ed19436faa8add4237f39fec31"
+    }
+  }
+}

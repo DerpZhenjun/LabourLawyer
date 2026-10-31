@@ -1,0 +1,668 @@
+{
+  "status": "NATIVE_OWN_GUIDE_THREE_MATERIALS_AND_SIX_BINDINGS_REVERIFIED_SOURCE_ONLY",
+  "region": {
+    "province": "fujian",
+    "city": "福州市",
+    "district": "马尾区",
+    "region_code": "350105",
+    "source_id": "0aa50441bacd05b2245fb5f1",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1"
+  },
+  "legacy_declared_source_id": "0aa50441bacd05b2245fb5f1",
+  "source_id_compatibility": "Legacy identity agrees with exact canonical URL digest.",
+  "observed_at": "2026-10-31T00:44:09.960Z",
+  "official_title": "福建省网上办事大厅-福建政务服务网-马上就办 · 全程网办 · 一网通办",
+  "service_name_literal": "劳动人事争议仲裁申请",
+  "service_code_literal": "11350105003628311J400201430200201",
+  "raw_fields": {
+    "上级标准化事项目录": {
+      "raw_label": "上级标准化事项目录：",
+      "raw_value": "劳动人事争议调解仲裁",
+      "normalized_value": "劳动人事争议调解仲裁",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][0]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "事项编码": {
+      "raw_label": "事项编码：",
+      "raw_value": "11350105003628311J20200136",
+      "normalized_value": "11350105003628311J20200136",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][1]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "基本编码": {
+      "raw_label": "基本编码：",
+      "raw_value": "002014302002",
+      "normalized_value": "002014302002",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][2]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "实施编码": {
+      "raw_label": "实施编码：",
+      "raw_value": "11350105003628311J4002014302002",
+      "normalized_value": "11350105003628311J4002014302002",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][3]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "业务办理项编码": {
+      "raw_label": "业务办理项编码：",
+      "raw_value": "11350105003628311J400201430200201",
+      "normalized_value": "11350105003628311J400201430200201",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][4]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "事项类型": {
+      "raw_label": "事项类型：",
+      "raw_value": "公共服务\n\t\t\t\t",
+      "normalized_value": "公共服务",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][5]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "办件类型": {
+      "raw_label": "办件类型：",
+      "raw_value": "无\n\t\t\t\t",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][6]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "行使层级": {
+      "raw_label": "行使层级：",
+      "raw_value": "县级",
+      "normalized_value": "县级",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][7]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "法定时限": {
+      "raw_label": "法定时限：",
+      "raw_value": "受理后5个工作日\n\t\t\t\t",
+      "normalized_value": "受理后5个工作日",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][8]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "承诺时限": {
+      "raw_label": "承诺时限：",
+      "raw_value": "受理后5个工作日\n\t\t\t\t",
+      "normalized_value": "受理后5个工作日",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][9]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "实施主体": {
+      "raw_label": "实施主体：",
+      "raw_value": "福州经济技术开发区人力资源和社会保障局\n\t\t\t\t",
+      "normalized_value": "福州经济技术开发区人力资源和社会保障局",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][10]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "法定时限说明": {
+      "raw_label": "法定时限说明：",
+      "raw_value": "《劳动人事争议仲裁办案规则》第三十七条仲裁委员会应当在受理仲裁申请之日起五日内组成仲裁情况书面通知当事人。",
+      "normalized_value": "《劳动人事争议仲裁办案规则》第三十七条仲裁委员会应当在受理仲裁申请之日起五日内组成仲裁情况书面通知当事人。",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][11]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "承诺时限说明": {
+      "raw_label": "承诺时限说明：",
+      "raw_value": "符合申请条件，材料齐全合规的申请件在承诺时限内办结。若办理流程含有专家评审、公示公告等特殊环节的，承诺时限不包含此类环节的时限。",
+      "normalized_value": "符合申请条件，材料齐全合规的申请件在承诺时限内办结。若办理流程含有专家评审、公示公告等特殊环节的，承诺时限不包含此类环节的时限。",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][12]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "实施主体性质": {
+      "raw_label": "实施主体性质：",
+      "raw_value": "法定机关\n\t\t\t\t",
+      "normalized_value": "法定机关",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][13]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "委托部门": {
+      "raw_label": "委托部门：",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][14]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "联办机构": {
+      "raw_label": "联办机构：",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][15]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "主办处室": {
+      "raw_label": "主办处室：",
+      "raw_value": "福州经济技术开发区劳动人事争议仲裁院\n\t\t\t\t",
+      "normalized_value": "福州经济技术开发区劳动人事争议仲裁院",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][16]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "权力来源": {
+      "raw_label": "权力来源：",
+      "raw_value": "法定本级行使\n\t\t\t\t",
+      "normalized_value": "法定本级行使",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][17]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "联系电话": {
+      "raw_label": "联系电话：",
+      "raw_value": "0591-83682592",
+      "normalized_value": "0591-83682592",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][18]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "监督和投诉电话": {
+      "raw_label": "监督和投诉电话：",
+      "raw_value": "\n\t\t\t\t\t办理监督电话：0591-63153863；投诉电话：0591-12345\n\t\t\t\t",
+      "normalized_value": "办理监督电话：0591-63153863；投诉电话：0591-12345",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][19]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "特殊环节": {
+      "raw_label": "特殊环节：",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][20]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "一件事集成套餐": {
+      "raw_label": "一件事集成套餐：",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][21]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "中介服务": {
+      "raw_label": "中介服务：",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][22]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "权责清单": {
+      "raw_label": "权责清单：",
+      "raw_value": "劳动人事争议仲裁申请",
+      "normalized_value": "劳动人事争议仲裁申请",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][23]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "审批结果名称": {
+      "raw_label": "审批结果名称：",
+      "raw_value": "无\n\t\t\t\t",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][24]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "审批结果类型": {
+      "raw_label": "审批结果类型：",
+      "raw_value": "批文，其它\n\t\t\t\t",
+      "normalized_value": "批文，其它",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][25]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "审批结果样本": {
+      "raw_label": "审批结果样本：",
+      "raw_value": "不予受理通知书（适用于仲裁申请）或受理通知书（适用于一般程序）.docx（点击下载）",
+      "normalized_value": "不予受理通知书（适用于仲裁申请）或受理通知书（适用于一般程序）.docx（点击下载）",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][26]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "审批结果共享": {
+      "raw_label": "审批结果共享：",
+      "raw_value": "是",
+      "normalized_value": "是",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][27]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "结果领取方式": {
+      "raw_label": "结果领取方式：",
+      "raw_value": "申请对象窗口领取\n\t\t\t\t",
+      "normalized_value": "申请对象窗口领取",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][28]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "结果领取说明": {
+      "raw_label": "结果领取说明：",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][29]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "申报对象": {
+      "raw_label": "申报对象：",
+      "raw_value": "个人,企业,事业单位,行政机关,民办非企业单位,社团组织,其他组织",
+      "normalized_value": "个人,企业,事业单位,行政机关,民办非企业单位,社团组织,其他组织",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][30]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "是否进驻政务大厅": {
+      "raw_label": "是否进驻政务大厅：",
+      "raw_value": "是",
+      "normalized_value": "是",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][31]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "办理形式": {
+      "raw_label": "办理形式：",
+      "raw_value": "窗口办，网上办",
+      "normalized_value": "窗口办，网上办",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][32]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "必须现场办理原因": {
+      "raw_label": "必须现场办理原因：",
+      "raw_value": "需要现场审核资料，需核实业务为本人申请",
+      "normalized_value": "需要现场审核资料，需核实业务为本人申请",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][33]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "个人办事主题": {
+      "raw_label": "个人办事主题：",
+      "raw_value": "就业创业，社会保障",
+      "normalized_value": "就业创业，社会保障",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][34]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "企业办事主题": {
+      "raw_label": "企业办事主题：",
+      "raw_value": "社会保障，人力资源",
+      "normalized_value": "社会保障，人力资源",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][35]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "网上办理深度": {
+      "raw_label": "网上办理深度：",
+      "raw_value": "材料预审（Ⅱ级）\n\t\t\t\t",
+      "normalized_value": "材料预审（Ⅱ级）",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][36]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "通办范围": {
+      "raw_label": "通办范围：",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][37]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "数量限制": {
+      "raw_label": "数量限制：",
+      "raw_value": "\n\t\t\t\t\t无限制\n\t\t\t\t",
+      "normalized_value": "无限制",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][38]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "通办范围说明": {
+      "raw_label": "通办范围说明：",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][39]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "是否全国高频“跨省通办”事项": {
+      "raw_label": "是否全国高频“跨省通办”事项",
+      "raw_value": "否",
+      "normalized_value": "否",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][40]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "跨省通办模式": {
+      "raw_label": "跨省通办模式：",
+      "raw_value": " 无 ",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][41]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "计划生效日期": {
+      "raw_label": "计划生效日期：",
+      "raw_value": "无\n\t\t\t\t",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][42]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "计划取消日期": {
+      "raw_label": "计划取消日期：",
+      "raw_value": "无\n\t\t\t\t",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][43]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "是否开通预约服务": {
+      "raw_label": "是否开通预约服务：",
+      "raw_value": "否",
+      "normalized_value": "否",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][44]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "是否支持自助终端办理": {
+      "raw_label": "是否支持自助终端办理：",
+      "raw_value": "否",
+      "normalized_value": "否",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][45]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "面向自然人地方特色主题分类": {
+      "raw_label": "面向自然人地方特色主题分类：",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][46]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "面向法人地方特色主题分类": {
+      "raw_label": "面向法人地方特色主题分类：",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][47]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "移动端是否对接单点登录": {
+      "raw_label": "移动端是否对接单点登录：",
+      "raw_value": "是",
+      "normalized_value": "是",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][48]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "计算机端是否对接单点登录": {
+      "raw_label": "计算机端是否对接单点登录：",
+      "raw_value": "是",
+      "normalized_value": "是",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][49]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "乡镇街道名称": {
+      "raw_label": "乡镇街道名称：",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][50]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "乡镇街道代码": {
+      "raw_label": "乡镇街道代码：",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][51]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "村镇社区名称": {
+      "raw_label": "村镇社区名称：",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][52]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "村镇社区代码": {
+      "raw_label": "村镇社区代码：",
+      "raw_value": "无",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][53]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "是否支持物流快递": {
+      "raw_label": "是否支持物流快递：",
+      "raw_value": "否",
+      "normalized_value": "否",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][54]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "是否支持网上支付": {
+      "raw_label": "是否支持网上支付：",
+      "raw_value": "否",
+      "normalized_value": "否",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][55]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "事项状态": {
+      "raw_label": "事项状态：",
+      "raw_value": "在用",
+      "normalized_value": "在用",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][56]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "是否全程代办": {
+      "raw_label": "是否全程代办：",
+      "raw_value": "否\n\t\t\t\t\t",
+      "normalized_value": "否",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][57]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "备注": {
+      "raw_label": "备注：",
+      "raw_value": "\n\t\t\t\t\t无\n\t\t\t\t",
+      "normalized_value": "无",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "tables[1][58]",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Outer whitespace only; literal source statement, no legal inference"
+    },
+    "到办事现场次数": {
+      "raw_value": "服务承诺到现场次数\n1 次",
+      "normalized_value": "1",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "raw_public_text/到办事现场次数",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Source text extraction only"
+    },
+    "是否收费": {
+      "raw_value": "收费情况\n是否收费：\t不收费",
+      "normalized_value": "不收费",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "source_pointer": "raw_public_text/是否收费",
+      "observed_at": "2026-10-31T00:44:09.960Z",
+      "normalization": "Source text extraction only"
+    }
+  },
+  "materials": [
+    {
+      "header": "1\n*\n仲裁申请书",
+      "material_id": "0B1E30097A841DB55BF139918A072106",
+      "raw_public_text": "1\n*\n仲裁申请书\n材料形式\t纸质，电子（上传） （说明：材料提交方式任选其一即可。）\n材料要求\t\n材料类型：原件\n纸质材料份数：原件份数2份\n\n材料必要性\t必要\n来源渠道\t\n申请人自备\n\n设立依据\t\n[法律]《中华人民共和国劳动争议调解仲裁法》（主席令第八十号）第二十八条： 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。仲裁申请书应当载明下列事项：（一）劳动者的姓名、性别、年龄、职业、工作单位和住所，用人单位的名称、住所和法定代表人或者主要负责人的姓名、职务；（二）仲裁请求和所根据的事…展开\n\n材料核查标准\t查看\n填报须知\t签字捺印，复印件按被申请人人数确定。\n附件下载\t\n [示范文本]仲裁申请书示例.docx\n [格式文本]仲裁申请书.docx",
+      "copies_literal": "原件份数2份",
+      "attachments": [
+        {
+          "material_id": "0B1E30097A841DB55BF139918A072106",
+          "file_id": "98A0EE44D3D63B3D6A10FE60D4E83776",
+          "label": "仲裁申请书示例.docx",
+          "official_type_raw": "2",
+          "observed_control_label": " [示范文本]仲裁申请书示例.docx",
+          "official_role": "SAMPLE",
+          "ID_provenance": "Current same-page rendered public tableInfo allowlist; not a direct href; no signing/auth fields"
+        },
+        {
+          "material_id": "0B1E30097A841DB55BF139918A072106",
+          "file_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+          "label": "仲裁申请书.docx",
+          "official_type_raw": "1",
+          "observed_control_label": " [格式文本]仲裁申请书.docx",
+          "official_role": "FORMAT",
+          "ID_provenance": "Current same-page rendered public tableInfo allowlist; not a direct href; no signing/auth fields"
+        }
+      ],
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "observed_at": "2026-10-31T00:44:09.960Z"
+    },
+    {
+      "header": "2\n*\n证据清单",
+      "material_id": "815656732125192EB3F77FC3CF161801",
+      "raw_public_text": "2\n*\n证据清单\n材料形式\t纸质，电子（上传） （说明：材料提交方式任选其一即可。）\n材料要求\t\n材料类型：原件\n纸质材料份数：原件份数2份\n\n材料必要性\t必要\n来源渠道\t\n申请人自备\n\n设立依据\t\n[法律]《中华人民共和国劳动争议调解仲裁法》（主席令第八十号）第六条当事人对自己提出的主张，有责任提供证据；与争议事项有关的证据属用人单位掌握管理的，用人单位应提供，不提供则承担不利后果。第二十八条申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。仲裁申请书应当载明下列事项：（一）劳动者的姓…展开\n\n填报须知\t签字捺印，正本一份，副本按照当事人人数提交。\n附件下载\t\n [示范文本]证据清单（示例）.docx\n [格式文本]证据清单（示例）.docx",
+      "copies_literal": "原件份数2份",
+      "attachments": [
+        {
+          "material_id": "815656732125192EB3F77FC3CF161801",
+          "file_id": "062D5E059A69AE78CFB04F4B133C84F4",
+          "label": "证据清单（示例）.docx",
+          "official_type_raw": "2",
+          "observed_control_label": " [示范文本]证据清单（示例）.docx",
+          "official_role": "SAMPLE",
+          "ID_provenance": "Current same-page rendered public tableInfo allowlist; not a direct href; no signing/auth fields"
+        },
+        {
+          "material_id": "815656732125192EB3F77FC3CF161801",
+          "file_id": "7601ACDAAB985D916DA0A62A5DA35C44",
+          "label": "证据清单（示例）.docx",
+          "official_type_raw": "1",
+          "observed_control_label": " [格式文本]证据清单（示例）.docx",
+          "official_role": "FORMAT",
+          "ID_provenance": "Current same-page rendered public tableInfo allowlist; not a direct href; no signing/auth fields"
+        }
+      ],
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "observed_at": "2026-10-31T00:44:09.960Z"
+    },
+    {
+      "header": "3\n*\n证据材料",
+      "material_id": "F27831FD15ED7F732908366701FF6328",
+      "raw_public_text": "3\n*\n证据材料\n材料形式\t纸质，电子（上传） （说明：材料提交方式任选其一即可。）\n材料要求\t\n材料类型：复印件\n纸质材料份数：复印件份数2份\n\n材料必要性\t必要\n来源渠道\t\n申请人自备\n\n设立依据\t\n[法律]《中华人民共和国劳动争议调解仲裁法》（主席令第八十号）第六条当事人对自己提出的主张，有责任提供证据；与争议事项有关的证据属用人单位掌握管理的，用人单位应提供，不提供则承担不利后果。第二十八条申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。仲裁申请书应当载明下列事项：（一）劳动者的姓…展开\n\n附件下载\t\n [格式文本]证据材料（供参考）.docx\n [示范文本]证据材料（供参考）.docx",
+      "copies_literal": "复印件份数2份",
+      "attachments": [
+        {
+          "material_id": "F27831FD15ED7F732908366701FF6328",
+          "file_id": "6EFE86A941A038DC1ED88B911A7D5621",
+          "label": "证据材料（供参考）.docx",
+          "official_type_raw": "1",
+          "observed_control_label": " [格式文本]证据材料（供参考）.docx",
+          "official_role": "FORMAT",
+          "ID_provenance": "Current same-page rendered public tableInfo allowlist; not a direct href; no signing/auth fields"
+        },
+        {
+          "material_id": "F27831FD15ED7F732908366701FF6328",
+          "file_id": "EAAFE5828EAFDEB3A70B3B27F287CA97",
+          "label": "证据材料（供参考）.docx",
+          "official_type_raw": "2",
+          "observed_control_label": " [示范文本]证据材料（供参考）.docx",
+          "official_role": "SAMPLE",
+          "ID_provenance": "Current same-page rendered public tableInfo allowlist; not a direct href; no signing/auth fields"
+        }
+      ],
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "observed_at": "2026-10-31T00:44:09.960Z"
+    }
+  ],
+  "source_workflow_and_window_literal": "\n办理流程\n1\n申请与受理\n步骤： 受理\n办理人：窗口经办人员    办理时限：当场\n审查标准：\n《中华人民共和国劳动争议调解仲裁法》主席令第八十号第五条 发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；\n办理结果：\n材料齐全且符合要求的，当场受理并出具《受理承诺单》；申请材料不齐全或不符合要求的，一次性告知，当场出具《缺件告知单》\n2\n审查\n步骤： 审查\n办理人：核查人员    办理时限：5工作日\n审查标准：\n《中华人民共和国劳动争议调解仲裁法》主席令第八十号第五条 发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；\n办理结果：\n不符合审批要件的，出具《补齐补正通知书》，一次性告知报件单位需要整改或补齐补正的内容；符合审批条件的，进入下一环节。\n3\n决定\n步骤： 决定\n办理人：负责人    办理时限：当场\n审查标准：\n《中华人民共和国劳动争议调解仲裁法》主席令第八十号第五条 发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；\n办理结果：\n根据审批意见出具准予许可决定；不予许可的出具《不予许可决定书》；申请人申请退件的出具《退件通知书》\n窗口办理\n办理时间：上午：9:00-12：00，下午：13:30-17:30（法定节假日除外，服务时间全年统一）\n办理地点：福州市马尾区罗星西路30号时代广场三楼\n交通指引：乘坐116路、180路、73路、M2路至海军医院站",
+  "workflow_source_pointer": "raw_public_text; entire original public body retained",
+  "online_organization_selection_literal": null,
+  "organization_literal_scope": "Raw appointment label only; never inferred as legal committee/autofill authority.",
+  "committee_autofill_approved": false,
+  "official_version": null,
+  "official_version_status": "Not explicitly observed; collection time is not official version",
+  "source_time_scope": "受理后5个工作日 is the portal reception/review statement, not an arbitration merits deadline",
+  "online_channel_scope": "Own raw handling/depth/window/workflow observed. No login or submission boundary exercised; generic grade tables do not establish all-level online capability.",
+  "evidence_generation_state": "CONFLICT_HOLD",
+  "evidence_conflict": "Native FORMAT type1 and SAMPLE type2 evidence are both labelled example; retained own evidence bytes are filled. FORMAT label never grants blank eligibility.",
+  "template_absence_claimed": false,
+  "sample_or_reference_generation_approved": false,
+  "can_generate": false,
+  "published": false,
+  "source_is_current_own_only": true
+}
