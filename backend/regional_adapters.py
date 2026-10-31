@@ -55,6 +55,9 @@ from regional_fujian_oct31l import (with_capabilities as with_pingtan_capabiliti
 from regional_fujian_oct31m import (with_capabilities as with_putian_capabilities,
     checked_adapter as checked_putian_adapter, ADAPTER as PUTIAN_ADAPTER,
     REGIONS as PUTIAN_REGIONS)
+from regional_fujian_oct31n import (with_capabilities as with_putian_n_capabilities,
+    checked_adapter as checked_putian_n_adapter, ADAPTER as PUTIAN_N_ADAPTER,
+    REGIONS as PUTIAN_N_REGIONS)
 
 def jiangsu_e_binding(guide,template,root=None):
     try:return jiangsu_e_contract(guide,template,root=root)['kind']
@@ -281,6 +284,8 @@ def reference_binding(guide, template):
 
 def with_reference_capabilities(guide,root=None):
     """Publish platform adaptation separately from the retained official content."""
+    if guide.get('province') == 'fujian' and guide.get('region_code') in PUTIAN_N_REGIONS:
+        return with_putian_n_capabilities(guide, root=root)
     if guide.get('province') == 'fujian' and guide.get('region_code') in PUTIAN_REGIONS:
         return with_putian_capabilities(guide, root=root)
     if guide.get('province') == 'fujian' and guide.get('region_code') == '350128':
@@ -356,6 +361,8 @@ def with_reference_capabilities(guide,root=None):
 
 
 def checked_reference_adapter(guide, template, kind,root=None):
+    if template.get('adapter') == PUTIAN_N_ADAPTER:
+        return checked_putian_n_adapter(guide, template, kind, root=root)
     if template.get('adapter') == PUTIAN_ADAPTER:
         return checked_putian_adapter(guide, template, kind, root=root)
     if template.get('adapter') == PINGTAN_ADAPTER:

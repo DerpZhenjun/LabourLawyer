@@ -1,0 +1,33 @@
+{
+  "source_id": "758cc6043c5d57e5574a766e",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=EC90D061D8C4ECCCBF8F1E48EE8693E8&infoType=1",
+  "observed_at_utc": "2026-10-31T05:14:13.731Z",
+  "raw_legal_time": "受理后5个工作日\n\t\t\t\t",
+  "raw_promised_time": "受理后5个工作日\n\t\t\t\t",
+  "normalized_legal_deadline": null,
+  "own_visit_badge_raw": "服务承诺到现场次数\n1 次",
+  "generic_II_raw": "【Ⅱ级（三星）】该事项已经实现申请材料在线预审。申请人可以通过网络提交和补正相关申请信息和材料，审核机构在平台对材料进行预审，预审通过后，申请人仍需携带纸质材料和相关证件到现场提交办理，作出审批决定后，申请人可来现场领取结果，也可选择物流递送形式递送证书结果。整个办理过程应到现场不超过2次。",
+  "visit_scope_relationship": "compatible_different_scopes",
+  "operational_issue_events": [],
+  "online_boundary": {
+    "origin_path": "https://iam.e-govt.cn:8901/login",
+    "title": "福建省数字身份管理服务平台",
+    "observed_at_utc": "2026-10-31T05:15:28.215Z",
+    "login_marker": true,
+    "QR_marker": true,
+    "query_retained": false,
+    "login_attempted": false,
+    "QR_scanned": false,
+    "application_submitted": false
+  },
+  "online_entry": null,
+  "official_material_IDs": null,
+  "committee_full_name": null,
+  "official_version": null,
+  "source_review": "PENDING_ROOT",
+  "Word_visual_review": "NOT_RUN",
+  "generation_permission": null,
+  "can_generate": false,
+  "stage_approval": null,
+  "publication_approval": null
+}

@@ -1,0 +1,145 @@
+{
+  "status": "ROOT_PRIVATE_OWN_N_WORD_VISUAL_PASS_NOT_PUBLISHED",
+  "source_provider_sha256": "396e60d2e4906f5613d18b8b94a92956b7e5e483f8aa2028e8b789211c71b084",
+  "source_versions": {
+    "350304": "d14f537bfd0137533112f380bf3e162f0207e23fe5aef75510db1a914a00cb91",
+    "350305": "9e3b53ede88fc12346504c94725d6a7987b8f263ac3caf3df51a1b1e2b11c96f"
+  },
+  "documents": 12,
+  "original_pages": 6,
+  "generated_pages": 42,
+  "logical_pages": 48,
+  "actual_new_unique_image_opens": [
+    "350304-application-normal-1.png",
+    "350304-application-stress-1.png",
+    "350304-application-stress-4.png",
+    "350304-evidence-normal-1.png",
+    "350304-evidence-stress-1.png",
+    "350304-evidence-stress-2.png",
+    "350304-evidence-stress-3.png",
+    "350304-evidence-stress-4.png",
+    "350304-evidence-stress-5.png",
+    "350304-evidence-stress-6.png",
+    "350304-evidence-stress-7.png",
+    "350304-evidence-stress-8.png",
+    "350304-evidence-stress-9.png",
+    "350305-application-normal-1.png",
+    "350305-application-stress-1.png",
+    "350305-application-stress-4.png",
+    "350305-evidence-normal-1.png",
+    "350305-evidence-stress-1.png",
+    "350305-evidence-stress-2.png",
+    "350305-evidence-stress-3.png",
+    "350305-evidence-stress-4.png",
+    "350305-evidence-stress-5.png",
+    "350305-evidence-stress-6.png",
+    "350305-evidence-stress-7.png",
+    "350305-evidence-stress-8.png",
+    "350305-evidence-stress-9.png"
+  ],
+  "actual_new_unique_count": 26,
+  "previously_Root_viewed_exact_SHA_pages": 22,
+  "pages_covered": 48,
+  "own_Word_exited": true,
+  "originals_unchanged": true,
+  "fresh_Root_whole_ZIP_regenerations": 12,
+  "Root_original_CI_guard_tests": 22,
+  "findings": {
+    "text_wrap": "PASS; ordinary and stress contents stay within original page/table margins",
+    "table_headers": "Repeat on all nine evidence pages",
+    "totals": "9 groups, 45 pages; normal1group1page",
+    "signature_and_date": "Left blank as in own original; normal application retains original second page",
+    "committee": "Original generic blank, no inferred committee",
+    "capacity": "Technical capacity only, not a local legal condition"
+  },
+  "checked_documents": [
+    {
+      "label": "350304-application-original",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "pages": 2,
+      "whole_and_all_ZIP_equal": true
+    },
+    {
+      "label": "350304-application-normal",
+      "bytes": 12023,
+      "sha256": "daa5f5993da561a8313f404070ee6cc1b6290239205f04f2e4fc40012082665e",
+      "pages": 2,
+      "whole_and_all_ZIP_equal": true
+    },
+    {
+      "label": "350304-application-stress",
+      "bytes": 12135,
+      "sha256": "b3ced2182286f4d92b73e75ab26a42ce65e1b31e394698bf905bbdc6f7da898c",
+      "pages": 9,
+      "whole_and_all_ZIP_equal": true
+    },
+    {
+      "label": "350304-evidence-original",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "pages": 1,
+      "whole_and_all_ZIP_equal": true
+    },
+    {
+      "label": "350304-evidence-normal",
+      "bytes": 16732,
+      "sha256": "5265eadb0f20222037bd071405765bb9f848eeb1b054c8dd51f5b1844b986753",
+      "pages": 1,
+      "whole_and_all_ZIP_equal": true
+    },
+    {
+      "label": "350304-evidence-stress",
+      "bytes": 17401,
+      "sha256": "ebf40b34cefcdabb50f20758a02eb4f8e3c3e825b80c1e2c9eab31669aabc121",
+      "pages": 9,
+      "whole_and_all_ZIP_equal": true
+    },
+    {
+      "label": "350305-application-original",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "pages": 2,
+      "whole_and_all_ZIP_equal": true
+    },
+    {
+      "label": "350305-application-normal",
+      "bytes": 12023,
+      "sha256": "b6961aaf3513431e4a6ec5e4bdb2d67c741423b4a9f5134e31dcef8355651e07",
+      "pages": 2,
+      "whole_and_all_ZIP_equal": true
+    },
+    {
+      "label": "350305-application-stress",
+      "bytes": 12134,
+      "sha256": "0f932c4a308595d934d406fe9795f06a51eb45cd500c3fe3f83b48eea7b0f504",
+      "pages": 9,
+      "whole_and_all_ZIP_equal": true
+    },
+    {
+      "label": "350305-evidence-original",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "pages": 1,
+      "whole_and_all_ZIP_equal": true
+    },
+    {
+      "label": "350305-evidence-normal",
+      "bytes": 16732,
+      "sha256": "f065f06940847e85cf4e0530c677f5e270d68ea2e69978a9ea4afeb9d3cd86b5",
+      "pages": 1,
+      "whole_and_all_ZIP_equal": true
+    },
+    {
+      "label": "350305-evidence-stress",
+      "bytes": 17401,
+      "sha256": "90add9f054a8c0b728437cb95479586e3a5e67e9d9ec81db97ac993499bbf364",
+      "pages": 9,
+      "whole_and_all_ZIP_equal": true
+    }
+  ],
+  "source_only_generation": false,
+  "WORD_STAGE_PUBLICATION": null,
+  "private_parent_root_review_audit_sha256": "1f4abef47f643743b58196ae9427082caeb9bfbf1b298d6fbbfca441fc41dff8",
+  "publication": false
+}

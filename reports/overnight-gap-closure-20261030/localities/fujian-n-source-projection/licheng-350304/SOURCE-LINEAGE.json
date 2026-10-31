@@ -1,0 +1,11 @@
+{
+  "projection_kind": "derived_allowlisted_own_native_source_projection",
+  "projected_at_utc": "2026-10-31T05:21:38.194397+00:00",
+  "private_raw_parent_audit_sha256": "cb224bfc1f41a83b5f3996a40fdd8f97dfcf31087bbf1ec0a2244f9e2ef5ea0a",
+  "own_raw_source_freeze_audit_sha256": "2d866fc540e194d2b2d0834576f07715bf3c900f19a0f3e4204f6f044456267a",
+  "parent_runtime_dependency": false,
+  "private_paths_copied": false,
+  "raw_API_responses_copied": false,
+  "headers_or_signatures_copied": false,
+  "same_bytes_authorize_other_locality": false
+}

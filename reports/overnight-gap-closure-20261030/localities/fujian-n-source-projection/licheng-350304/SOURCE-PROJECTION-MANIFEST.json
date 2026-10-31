@@ -1,0 +1,55 @@
+{
+  "schema": "private-putian-lx-own-safe-projection-v1",
+  "province": "fujian",
+  "city": "莆田市",
+  "district": "荔城区",
+  "region_code": "350304",
+  "source_id": "c2f441391f073f71f55ce9de",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=BDE5EC9DAD4CFE0ADED039A84F96B29B&infoType=1",
+  "service_code": "113503210037128046400201430200Y01",
+  "observed_at_utc": "2026-10-31T05:11:03.027Z",
+  "authority": "莆田市荔城区人力资源和社会保障局",
+  "files": {
+    "application-own-format.docx": {
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    "evidence-list-own-format.docx": {
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    "OOXML-CONTENT-AUDIT.json": {
+      "bytes": 16312,
+      "sha256": "cd4be91cc449ea4168e4ac9e68d2f10756710a7f7ffd1d45d9c6ae76b2d0a71a"
+    },
+    "own-materials-native-dom.json": {
+      "bytes": 27960,
+      "sha256": "18770d8d8106da7828714379664f0170a84731567465b8b3d44e89826c63012d"
+    },
+    "own-official-bindings.json": {
+      "bytes": 8227,
+      "sha256": "46c471553605af28f550215f993dc14b9c5a712777209e5144f56af8a5553a03"
+    },
+    "OWN-SOURCE.json": {
+      "bytes": 45460,
+      "sha256": "7a9c95c176ec5bfbd739d4102e7479847a89150f1b8db4b1cfc3977c838bb6a4"
+    },
+    "SOURCE-LINEAGE.json": {
+      "bytes": 555,
+      "sha256": "071410a45214ab8775a67c4d3639fb70c9200e7f7deb734ca03e324a263df94f"
+    },
+    "SOURCE-QUALIFICATIONS.json": {
+      "bytes": 1681,
+      "sha256": "c6c43cda431aa89e41195dd1341bcc27a7aba3d190c7f585cbb0f80aecfba96a"
+    }
+  },
+  "official_material_IDs": null,
+  "committee_full_name": null,
+  "official_version": null,
+  "private_parent_runtime_dependency": false,
+  "can_generate": false,
+  "published": false,
+  "Word_approval": null,
+  "stage_approval": null,
+  "publication_approval": null
+}
