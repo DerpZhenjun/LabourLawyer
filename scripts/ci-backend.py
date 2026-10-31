@@ -26,6 +26,8 @@ TESTS = (
     'test_remote_ai_stream',
     'test_remote_ai_disconnect',
     'test_template_only_generation',
+    'test_public_seed',
+    'test_public_seed_warm_start',
     'test_document_client_contract',
     'test_document_field_regressions',
     'test_unified_regional_validation',

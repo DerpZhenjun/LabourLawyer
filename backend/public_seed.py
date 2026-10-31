@@ -1,7 +1,9 @@
 """Initialize empty public catalogues from a versioned, integrity-checked snapshot.
 
-Existing catalogues are never merged, reset or overwritten. Case/user databases,
-network requests and model services are outside this module.
+Existing catalogues are never merged, reset or overwritten. When both are
+nonempty, only the snapshot envelope is checked; no seed records are imported
+or revalidated. Case/user databases, network requests and model services are
+outside this module.
 """
 from contextlib import closing
 from copy import deepcopy
@@ -30,12 +32,20 @@ def bootstrap_public_data(root=ROOT,data_dir=None):
     manifest=json.loads((folder/'manifest.json').read_text('utf8'))
     if manifest.get('schema_version')!=1:raise ValueError('Unsupported public snapshot version')
     payload={}
-    # Verify the complete release before creating or changing either database.
+    # Retain snapshot schema/hash/list checks even when no import is needed.
     for filename in ['guides.json','directory.json']:
         body=(folder/filename).read_bytes()
         if hashlib.sha256(body).hexdigest()!=manifest.get('files',{}).get(filename):raise ValueError('Public snapshot checksum differs: '+filename)
         payload[filename]=json.loads(body)
         if not isinstance(payload[filename],list):raise ValueError('Public snapshot must be a record list')
+    destination=Path(data_dir).expanduser().resolve() if data_dir is not None else root/'backend/data'
+    if destination.exists() and not destination.is_dir():raise ValueError('Public data destination must be a directory')
+    guide_path=destination/'regional-guides.sqlite';directory_path=destination/'regional-directory.sqlite'
+    # Probe read-only, without store constructors (which create/migrate tables).
+    guide_count=_count(guide_path,'regional_guides');area_count=_count(directory_path,'directory_areas')
+    if guide_count and area_count:return {**result,'state':'existing_preserved'}
+    # Any initialization still requires the complete release proof gate before
+    # creating or changing either database. Existing data is never downgraded.
     guides=deepcopy(payload['guides.json'])
     for g in guides:
         source=urlsplit(g.get('source_url',''));host=source.hostname or ''
@@ -72,14 +82,10 @@ def bootstrap_public_data(root=ROOT,data_dir=None):
         if not all(a.get(k) for k in ['provider','code','province','source_url','collected_at']) or a.get('level') not in {2,3,4}:
             raise ValueError('Public directory source identity is invalid')
         if a['level']==4 and not all(a.get(k) for k in ['city','district']):raise ValueError('Missing precise locality')
-    destination=Path(data_dir).expanduser().resolve() if data_dir is not None else root/'backend/data'
-    if destination.exists() and not destination.is_dir():raise ValueError('Public data destination must be a directory')
-    guide_path=destination/'regional-guides.sqlite';directory_path=destination/'regional-directory.sqlite'
-    guide_count=_count(guide_path,'regional_guides');area_count=_count(directory_path,'directory_areas')
     if not guide_count:
         store=RegionalStore(guide_path)
         for g in guides:store.put_guide(g);result['guides_imported']+=1
     if not area_count:
         store=DirectoryStore(directory_path)
         for a in payload['directory.json']:store.put_area(a);result['directory_imported']+=1
-    return {**result,'state':'existing_preserved' if guide_count and area_count else 'public_snapshot_initialized'}
+    return {**result,'state':'public_snapshot_initialized'}
