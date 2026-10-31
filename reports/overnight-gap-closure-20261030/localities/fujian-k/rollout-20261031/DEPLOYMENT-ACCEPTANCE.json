@@ -1,0 +1,193 @@
+{
+  "status": "PASS_BOTH_LIVE_218_201_OWN_THREE_REGIONS",
+  "recorded_at": "2026-10-31T04:14:36.945714+00:00",
+  "source_commit": "b439817c3fb2193a24872dfef31224f65cc4f9b3",
+  "stage_sha256": "d23c44632e61878f597e74528c949603a868ca471f5c83245be579deb7bc8b19",
+  "final_sha256": "3f24c81c617733000c85f1c76b4c2e4bcd0a08e82f34b5323dbeea0b6a7154be",
+  "Word_manifest_sha256": "52097115c840d8edb04e47cd2fc5c6f2ff87a8b5456ca2d242277935412d8b85",
+  "own_sources": [
+    {
+      "region_code": "350111",
+      "province": "fujian",
+      "city": "福州市",
+      "district": "晋安区",
+      "source_id": "09dcedf106cd2fd411a09546",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=2AE4D76F39D556A71053EF3E78D83397&infoType=1",
+      "service_code": "11350111768596390D400201430200201",
+      "authority": "福州市晋安区人力资源和社会保障局",
+      "manifest_sha256": "454a4eab5d67f9f0e297ac37ae83a052e9e997a86771e6354f3031ae0ff72569",
+      "allowed_kinds": [
+        "application",
+        "evidence"
+      ]
+    },
+    {
+      "region_code": "350121",
+      "province": "fujian",
+      "city": "福州市",
+      "district": "闽侯县",
+      "source_id": "70d8f78ba93e94e9afecf7f3",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=91F7E51AA93120174C111809DD6CB410&infoType=1",
+      "service_code": "11350121003640951K400201430200201",
+      "authority": "闽侯县人力资源和社会保障局",
+      "manifest_sha256": "942bbb67e20627e02fcb30d72b8fef9c8e022ae9b0bf640383ef04b5704dc440",
+      "allowed_kinds": [
+        "application"
+      ]
+    },
+    {
+      "region_code": "350105",
+      "province": "fujian",
+      "city": "福州市",
+      "district": "马尾区",
+      "source_id": "0aa50441bacd05b2245fb5f1",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+      "service_code": "11350105003628311J400201430200201",
+      "authority": "福州经济技术开发区人力资源和社会保障局",
+      "manifest_sha256": "ea79a1e90cc56fc9c8914752933f70c3fff37df518da2dfe327bbc8eb8297caa",
+      "allowed_kinds": [
+        "application"
+      ]
+    }
+  ],
+  "own_blank_forms_added": 4,
+  "metadata_only_unadapted_attachments": 14,
+  "guides": "partial; unknown committee/full online submission/official form version retained",
+  "source_archive_sha256": "54edb43435e53360e00b2782dc2cbb45c4cf84a11ef24f3354319a174e4d3116",
+  "bundle_sha256": "5f026ec1d0d7379bc985db4ec2fcd8774017161b3cbf17ae52e0a4df43c5511e",
+  "bundle_bytes": 403583952,
+  "manifest_sha256": "1fa9282a075d7e9fd8e48b0adb5d2a753cbc7d81d13643b97fd6a634e7299880",
+  "manifest_files": 4360,
+  "actual_source_CI": {
+    "source_commit": "b439817c3fb2193a24872dfef31224f65cc4f9b3",
+    "run_id": 41163631171,
+    "job_id": 124426373064,
+    "status": "success",
+    "all_job_steps": "success",
+    "backend_tests": 395,
+    "backend_seconds": 281.24,
+    "guarded_crash_tests": 2,
+    "guarded_crash_seconds": 0.528,
+    "archived_decoded_log_sha256": "87125f439e310fcf637915c360ff1f47d2d8f93bf005f2db0d141b7afce581e3",
+    "archived_decoded_log_normalized_LF": true,
+    "real_source_frozen": true
+  },
+  "main": {
+    "current": 218,
+    "generatable": 201,
+    "history_before": 223,
+    "history_after": 226,
+    "existing_outbox_preserved": 377,
+    "private_three_SHA_unchanged": true,
+    "protected_user_code_six_SHA_unchanged": true,
+    "old_public_history_schema_jobs_WOR_preserved": true
+  },
+  "ubuntu": {
+    "current": 218,
+    "generatable": 201,
+    "history_before": 215,
+    "history_after": 218,
+    "outbox": 0,
+    "other_five_persistent_SHA_unchanged": true,
+    "old_public_history_schema_jobs_WOR_preserved": true,
+    "collector_digital_model_processes_unchanged": true,
+    "collector_capture_screenshots": false,
+    "collector_actual_ACK_preserved": 4,
+    "core_code_switch_before_data_append": true
+  },
+  "native": {
+    "main": {
+      "native_browser_result_sha256": "2462b800201dd5642a52ca0fc488acf3ee3ada08cd070372285aa4281ff2b13c",
+      "Root_independent_parity_sha256": "667a9528fbc8d1249638ee5bda2b92a6a41a57f376910b16932a7219649bb223",
+      "native_downloads": 8,
+      "strict_contracts": 4,
+      "viewport_checks": 12,
+      "viewports": [
+        375,
+        768,
+        1440
+      ],
+      "cancel_Escape_and_Tab_focus_checks": 4,
+      "negative_metadata_or_unknown_evidence_GET_checks": 16,
+      "source_ids": [
+        "09dcedf106cd2fd411a09546",
+        "70d8f78ba93e94e9afecf7f3",
+        "0aa50441bacd05b2245fb5f1"
+      ],
+      "versions": {
+        "350111": 224,
+        "350121": 225,
+        "350105": 226
+      },
+      "owned_browser_closed": true,
+      "console_page_errors": 0,
+      "models_or_government_calls_or_screenshots": 0
+    },
+    "ubuntu": {
+      "native_browser_result_sha256": "fa0237b7315c8b0993cc9cdd7ad775d43c4da2d5dd4e1189b75c4ec530979152",
+      "Root_independent_parity_sha256": "ed354730a49a2c8f3f10b76a07c4175ca687e9b97dfae4842e6d4cb04fd19751",
+      "native_downloads": 8,
+      "strict_contracts": 4,
+      "viewport_checks": 12,
+      "viewports": [
+        375,
+        768,
+        1440
+      ],
+      "cancel_Escape_and_Tab_focus_checks": 4,
+      "negative_metadata_or_unknown_evidence_GET_checks": 16,
+      "source_ids": [
+        "09dcedf106cd2fd411a09546",
+        "70d8f78ba93e94e9afecf7f3",
+        "0aa50441bacd05b2245fb5f1"
+      ],
+      "versions": {
+        "350111": 216,
+        "350121": 217,
+        "350105": 218
+      },
+      "owned_browser_closed": true,
+      "console_page_errors": 0,
+      "models_or_government_calls_or_screenshots": 0
+    }
+  },
+  "native_accepted_total": 16,
+  "Root_actual_MCP_source_defaults_responsive_on_both": true,
+  "anonymous_private_case_and_me_endpoints": [
+    {
+      "host": "main",
+      "route": "/api/platform/cases",
+      "status": 401
+    },
+    {
+      "host": "main",
+      "route": "/api/auth/me",
+      "status": 401
+    },
+    {
+      "host": "ubuntu",
+      "route": "/api/platform/cases",
+      "status": 401
+    },
+    {
+      "host": "ubuntu",
+      "route": "/api/auth/me",
+      "status": 401
+    }
+  ],
+  "models_called": 0,
+  "Windows_models_started": false,
+  "browser_screenshots": 0,
+  "live_real_cases_or_account_content_read": false,
+  "known_followups": [
+    "Ordinary-user warning wording still exposes partial/UNKNOWN. Display-only fix is prepared separately, not claimed deployed by this receipt.",
+    "No nationwide completion, trusted public HTTPS, Windows trusted code signing or new physical-phone installation is claimed.",
+    "Pingtan/Chengxiang/Hanjiang new sources are candidates only, not included in218."
+  ],
+  "immutable_release_snapshots": {
+    "client_preview5_guides": 209,
+    "server_preview1_guides": 215,
+    "current_source_and_live_guides": 218,
+    "old_release_assets_unchanged": true
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "source_commit": "b439817c3fb2193a24872dfef31224f65cc4f9b3",
+  "actual_result_sha256": "f77b6494a8dccb56bc97ccd3f6e651e9b86e0b5d0a3b01c991a831db708cf892",
+  "catalogue": {
+    "guides": 218,
+    "generatable": 201,
+    "directory": 3974,
+    "missing_attachments": 0
+  },
+  "input_binding": {
+    "deployment_source_pins": 157,
+    "copied_public_and_source_and_dist_files": 4360,
+    "bundle_manifest_verified": true,
+    "copied_files_sha256": "5d6db418e457fc4275bf120996ee401397a4b282f6f6bc0ee38ad350eac87afe"
+  },
+  "old_J_cohort": {
+    "generated_words": 21,
+    "distinct_sources": 11,
+    "J_generated_words": 11,
+    "cross_J_and_I_rejections": 44
+  },
+  "new_K_cohort": {
+    "generated_words": 4,
+    "distinct_sources": 3,
+    "metadata_only_blocked": 14,
+    "unsupported_evidence_blocked": 2,
+    "cross_source_rejections": 9
+  },
+  "all_writes_in_new_sandbox": true,
+  "immutable_inputs_unchanged": true,
+  "real_network_child_models_or_production_data_access": false,
+  "optional_storage_tests": "NOT_RUN_IN_THIS_COLD_RUN; locked clean-source CI covers its registered Linux tests"
+}

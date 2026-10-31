@@ -1,8 +1,10 @@
 # 各省精确地区进度
 
-2026-10-31更新，来自主站实际地区矩阵。全国尚未完成；目录不等于指南覆盖，所有省份状态均为 incomplete。未核验不能当作官方未提供。
+2026-10-31更新。本机站与Ubuntu运行站实际矩阵相同：**218份当地指南、201地可填写生成、17地仅指南**。全国尚未完成；所有省份均未完成全部地区核验。未核验不能写成官方没有提供。
 
-| 省份 | 已知追踪地区 | 已发布指南 | 可填写生成 | 候选未发布 | 待查指南 |
+3,974条原始目录包含省、市层级；矩阵合并追踪3,590个精确地区组合，不是全国功能区完整普查。25个已登记候选尚未发布；新取得但尚未完成正式登记的资料也不计入上线覆盖。
+
+| 省份 | 追踪地区 | 已发布指南 | 可填写生成 | 已登记候选未发布 | 待查指南 |
 |---|---:|---:|---:|---:|---:|
 | 北京市 | 16 | 0 | 0 | 3 | 13 |
 | 天津市 | 17 | 0 | 0 | 1 | 16 |
@@ -16,7 +18,7 @@
 | 江苏省 | 134 | 13 | 13 | 8 | 113 |
 | 浙江省 | 120 | 7 | 7 | 5 | 108 |
 | 安徽省 | 138 | 2 | 1 | 3 | 133 |
-| 福建省 | 98 | 3 | 3 | 0 | 95 |
+| 福建省 | 98 | 12 | 12 | 0 | 86 |
 | 江西省 | 139 | 0 | 0 | 1 | 138 |
 | 山东省 | 191 | 0 | 0 | 0 | 191 |
 | 河南省 | 191 | 0 | 0 | 0 | 191 |
@@ -36,15 +38,10 @@
 | 宁夏回族自治区 | 22 | 0 | 0 | 0 | 22 |
 | 新疆维吾尔自治区 | 112 | 0 | 0 | 0 | 112 |
 
-当前209份当地指南、192个地区可填写生成、25个未发布候选；3,590个精确追踪组合不是全国功能区完整普查。
+数字来自两站实际`/api/regional-guides/rollout-status`，可核对[本次公开矩阵](../reports/overnight-gap-closure-20261030/localities/fujian-k/rollout-20261031/PUBLIC-MATRIX.json)与[双站发布验收](../reports/overnight-gap-closure-20261030/localities/fujian-k/rollout-20261031/DEPLOYMENT-ACCEPTANCE.json)。已发布指南可能仍有待核验字段；模板适配、网办核验、官方版本及受理机构全称分别记录。
 
-淳安已用本县自身原件接入劳动者申请书和独立证据清单，真实网页下载及4页Word检查通过，主站增量发布后历史211条，原210条及377条OpenClaw回执保留。[本轮发布](../reports/production-readiness-20261030/MAIN-PUBLICATION.json)。指南部分空字段继续待核验。
+本次晋安可填写自身申请书、证据清单；闽侯、马尾仅开放自身申请书。其余附件及证据空表角色待核验，不借用相邻地区材料。平潭、城厢、涵江的新资料仍在独立审核中。
 
-常熟、张家港已按各自官方指南与空白表格接入申请书和独立证据清单，通过候选网页下载、逐页检查并增量发布；主站历史213条，旧记录和377条OpenClaw回执保留。昆山后续已完成自身原件、填写适配与两处运行站验收；桐庐返回省、市事项被拒绝，不标作本县来源，不标作官方没有提供。
+发行快照与运行站分开：客户端preview.5的Ubuntu包固定为209/192；服务端preview.1固定为215/198；运行站和新源码为218/201。已有数据库不自动合并或重建。[软件下载](../README.md#软件下载预览版)。
 
-相城、吴江、富阳、建德的202/185及210条历史为上一批发布时点，详见[历史发布回执](../reports/nationwide-verification-20261029-e/PUBLICATION.json)。本轮覆盖、测试及尚未完成事项见[验收记录](../reports/production-readiness-20261030/TEST-REPORT.md)。
-
-
-昆山、福州市鼓楼区后续按各自来源增量发布，Windows主站与Ubuntu运行站均为207/190，历史分别215/207条。每处8个本批文书实际下载（两地区各4个），取消与375/768/1440布局及跨地区来源切换通过；旧原始指南、outbox和用户文件保持。鼓楼部分字段继续待核实、示例内容未核验，未开放示例生成。[昆山验收](../reports/overnight-gap-closure-20261030/localities/kunshan/rollout-20261031/DEPLOYMENT-ACCEPTANCE.json) · [鼓楼验收](../reports/overnight-gap-closure-20261030/localities/fujian-h/rollout-20261031/DEPLOYMENT-ACCEPTANCE.json)。
-
-台江、仓山已按各自资料增量上线，主站与Ubuntu均209/192，历史分别217/209；两地各4种下载在两处共16次实际通过。其他福建新采集地区仍需独立发布；福建其他新采集地区的自身材料和附件仍处于来源/版式复核阶段，不能把它们计作已上线，也不能把待查归为官方没有提供。公开Releases preview.4保留205/188初始快照，preview.5新增209/192快照及九项已匿名下载核验的软件文件；运行站更新与发行快照分别记录。
+历史分批记录继续保留：[淳安](../reports/production-readiness-20261030/MAIN-PUBLICATION.json)、[常熟张家港](../reports/overnight-gap-closure-20261030/localities/MAIN-PUBLICATION.json)、[昆山](../reports/overnight-gap-closure-20261030/localities/kunshan/rollout-20261031/DEPLOYMENT-ACCEPTANCE.json)、[鼓楼](../reports/overnight-gap-closure-20261030/localities/fujian-h/rollout-20261031/DEPLOYMENT-ACCEPTANCE.json)、[台江仓山](../reports/overnight-gap-closure-20261030/localities/fujian-i/rollout-20261031/DEPLOYMENT-ACCEPTANCE.json)、[连江等六地](../reports/overnight-gap-closure-20261030/localities/fujian-j/rollout-20261031/DEPLOYMENT-ACCEPTANCE.json)。历史批次中的数字是当时的验收时点，不代表当前总数。

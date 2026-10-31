@@ -1,6 +1,6 @@
 {
   "started_at": "2026-10-30T15:01:46.081381+00:00",
-  "phase": "K_public_seed218_201_Rootfinalapproved_both_live215_wait_frozen_sourceCI",
+  "phase": "K_BOTH218_201_ACCEPTANCE_DOCS_READY_L26_WordVisual_PASS_Lformalprovider_inprogress",
   "base_commit": "0e8eb56a9bdbbea295b584e9a8037337c79e37e8",
   "baseline": {
     "guides": 203,
@@ -10,9 +10,9 @@
     "ubuntu_outbox": 0
   },
   "agents": {
-    "overnight_ui_validation": "K8nativeandlocalpostverifydone/closed, idle; sourceLdiscoverypreserved",
-    "overnight_digital": "Exact known failed starter cleanup prep92done; Root actual48822 only",
-    "production_ci": "K v2 final-bound helper18+formal28done frozen; Root independent review running"
+    "overnight_ui_validation": "BothKnative8acceptedclosed; L3privateWordmapping frozen/read-only Rootrenderdone; noactive task",
+    "overnight_digital": "Putian2privateprojectionsdone17tests; noformal/provider/networkcurrently",
+    "production_ci": "frozenKdeploymentkitdone; Root actualstage/cold/switch/liveSQLcompleted"
   },
   "root_ownership": [
     "collector frontend admin UI + backendapp router wiring",
@@ -34,14 +34,14 @@
     "public_domain": "No projectdomainconfigured found; tailnet exists but nodeoffline/controlnetworkunreachable. Not completed TLS.",
     "earlier_Ubuntu_QA_sessions": "Some earlier failed-before-logout opaque sessions revocation NOT_PROVEN; final own logout204 proven. Do not blindly revoke other existing sessions; no credentials uploaded."
   },
-  "next": "Root independently rechecks K final/private helpers, then exact final proof/source/policy commit, seed215to218, cleanCI/cold/native preserved rollout. Both live215/198 still Wca9. Server draft remains unpublished; Root exact failed-starter cleanup48822 running after92guardedPASS/actual0attemptdry. No duplicate writer, Windowsmodel, screenshot or global network changes.",
-  "updated_at": "2026-10-31T03:13:45.430682+00:00",
+  "next": "Root verifyK publicsanitized5reports+README+31provincematrix/checkpoint thenexact8pathdoccommit/FF/pushprotect6userfiles. BothKnative16/rootallZIP+8contracts acceptedno repeat. Minimalwarningcopyproposal77da nextbatch afterdoccommit, sameAPI/source/contracts. Lformalnewprovider onlyagentno shared untilreview; Putianprivateprojectionnotpublished. Serverpreview1 three immutableassets/W215snapshot verified. ActualruntimeK b439/Ubuntu1105522 Main105700,3protectedunchanged.",
+  "updated_at": "2026-10-31T04:15:27.996860+00:00",
   "public_seed": {
     "guides": 218,
     "generatable": 201,
-    "main_live_guides": 215,
-    "ubuntu_live_guides": 215,
-    "publication": "Root actual exact own3 seed append, both existing live DBs still215/198; new clean source CI/cold and DB-native acceptance pending"
+    "main_live_guides": 218,
+    "ubuntu_live_guides": 218,
+    "publication": "K own3 exact publicseed and bothlive appended;16native whole/allZIP plus8strictcontracts Rootindependentlyregenerated. Publicdocs acceptance commitpending."
   },
   "implemented": {
     "digital": "Ubuntu8089 actual synthetic stream and responsive candidate pass",
@@ -50,22 +50,29 @@
     "android": "independent release signing build active; compatible debug package preserved",
     "ui_screenshots": "NOT_ACCEPTED_TOOL_RESTRICTION; excluded and preserved private"
   },
-  "source_commit": "ca9ef3f293c9911765a1752d0c49147b0db4fbb7",
+  "source_commit": "b439817c3fb2193a24872dfef31224f65cc4f9b3",
   "github_source_ci": {
-    "id": 41150204635,
+    "source_commit": "b439817c3fb2193a24872dfef31224f65cc4f9b3",
+    "run_id": 41163631171,
+    "job_id": 124426373064,
     "status": "success",
-    "head": "ca9ef3f293c9911765a1752d0c49147b0db4fbb7",
-    "locked_backend_tests": 365,
-    "separate_guarded_crash_tests": 2,
-    "source_web_mini_and_committed_drift": "PASS"
+    "all_job_steps": "success",
+    "backend_tests": 395,
+    "backend_seconds": 281.24,
+    "guarded_crash_tests": 2,
+    "guarded_crash_seconds": 0.528,
+    "archived_decoded_log_sha256": "87125f439e310fcf637915c360ff1f47d2d8f93bf005f2db0d141b7afce581e3",
+    "archived_decoded_log_normalized_LF": true,
+    "real_source_frozen": true
   },
   "main": {
-    "guides": 215,
-    "generatable": 198,
-    "history": 223,
+    "guides": 218,
+    "generatable": 201,
+    "history": 226,
     "openclaw_ack": 377,
     "user_dirty_six_preserved": true,
-    "core_pid": 39568
+    "core_pid": 105700,
+    "native_K_downloads": 8
   },
   "linux_issue_relay": {
     "reviewed": 2,
@@ -118,15 +125,15 @@
     "J_batch_requires_client_reinstall": false
   },
   "ubuntu": {
-    "source_commit": "ca9ef3f293c9911765a1752d0c49147b0db4fbb7",
-    "release": "releases/W215-20261031-f01603af",
-    "core_pid": 981932,
-    "core_start_ticks": "100508100",
-    "guides": 215,
-    "generatable": 198,
-    "history": 215,
+    "source_commit": "b439817c3fb2193a24872dfef31224f65cc4f9b3",
+    "release": "releases/K218-20261031-5f026ec1",
+    "core_pid": 1105522,
+    "core_start_ticks": "101543723",
+    "guides": 218,
+    "generatable": 201,
+    "history": 218,
     "legacy_regional_outbox": 0,
-    "source_manifest_files": 4247,
+    "source_manifest_files": 4360,
     "other_five_persistent_files_preserved": true,
     "collector_pid": 994619,
     "digital_pid": 481171,
@@ -135,7 +142,8 @@
     "Windows_model_started": false,
     "collector_start_ticks": "100610423",
     "collector_capture_screenshots": false,
-    "collector_config_sha256": "6aa926098275bba1e06565c87ad047c3f61e4521056f590519ae05fee78b5437"
+    "collector_config_sha256": "6aa926098275bba1e06565c87ad047c3f61e4521056f590519ae05fee78b5437",
+    "native_K_downloads": 8
   },
   "new_work": {
     "J": "HistoricalJpublicationacceptance: COMPLETE_BOTH_LIVE215/198; stage129474/final986048/Word346e unchanged. Sourceab CI339+2PASS; exact396280297B bundle670e/4247files, actualcold215/198/3974/0missing/21Word11sources/44cross409. Rootowned core923485; Main28084. Mainhistory217→223/outbox377,Ubuntu209→215/outbox0 exactoldraw/WOR/jobs/schema; backups retained.44qualified native (22normal+22ownblank) fullbytes/everyZIP independentlyRootchecked,66width22cancel, sixsourceeach. PriorUbuntu0/main4NOT_ACCEPTED retained, actualtotal48. Sourceguidespartial/YTappOnly/no verifiedsubmission. Public rolloutreport linked. RuntimeafterwardsWca9; currentPIDs/state inubuntu/main fields.",
@@ -203,7 +211,9 @@
       "peer_guarded_checks": 8,
       "formal_changes": false
     },
-    "fujian_k": "Actual publicseed218/201 with preservedold215/directory; final3f24/providerfd45. Root39formal/clientguard+18transaction0skipPASS. Bothlive215/198 untouched. Sourcecommit/build/cleanCI/cold/guarded per-siteappend pending."
+    "fujian_k": "COMPLETE_BOTH_LIVE218_201. Own3sources4formats/14metadata_only/evi2unadapted; final3f24/providerfd45; sourceb439CI395+2PASS; exact6457canonicalarchive54ed/403583952B5f02/4360manifest1fa9. ActualUbuntu coldPASS218/201/3974/0missing/oldJ21Word11sources44cross +K4Word3sources14meta2evi9cross,0models/network/child/externalwrites. Root31ownerTestsPASS afterRootTempHarnessfix. Actualswitch981932→1105522 sixfiles3services/collectorunchanged thenUbuntu3SQL215→218 history/current/outbox0 consistentbackup. Maincore105700/215→218/history223→226/outbox377/private3+6userfilesunchanged. Actualnative8each =16 andRootindependentallwholeZIP/4contracts eachPASS. MainMCP3width/source/defaultsPASS buttechnicalwarningcopydefectconfirmed; privateproposalnotapplied. Publicrolloutdocsandlatest31provincematrix updatepending.",
+    "pingtan_l": "PrivateL3 Word realreadonly6docs26pages/23unique+3SHAduplicates RootfullyviewedPASS. Root14source+14mappingtests/safety/unchangedinputs/ownWord53944absent. No stage/final/onlinegenyet. NewformalownLsource/provider/testONLY authorizedUIagent, publicsanitizationderivedfalseconflictcorrected inbothnormalizedandqualifications preservingofficialraw; noexistingK/shared/seed/DB edits.",
+    "putian_sources": "PRIVATE source-only城厢350302/涵江350303 actualnativeofficialpaths and12normalTLSbytes; sourceIDs28a441/27f41, serviceY01vs201 retained. Privateprojectionv2freeze b684/17tests; officialmaterialIDsNone/localkeysexplicit; visit1vsII<=2compatible,60vs5/adminwordingrawunverified; noprovider/Word/publicdata/ACK. Rootindependentreviewpending."
   },
   "remaining": [
     "Nationwide exact city/county/functionalzone own-guide/template verification",
@@ -492,9 +502,11 @@
     "Root_guarded_mock_publisher_tests": 53,
     "old_preview5_unchanged": true,
     "new_owned_draft_id": 429656734,
-    "published": false,
-    "upload_status": "Root exact known failed starter694111622 removed once204/readback404; START andold9 unchanged. Same frozen proxy writer48321 now uploading own exact396281775B f016 tar; no publish yet.",
+    "published": true,
+    "upload_status": "PUBLIC_VERIFIED exact429656734;3actualanonymousfullSHAand4247innerfilesPASS. Sourceca9/W215snapshotimmutable; oldpreview5nine unchanged.",
     "proxy_helper_sha256": "927c0b411d275426abc4059aa4e05222f39e04ef2275f58cd488151b6e058b15",
-    "proxy_config_scope": "ExistingHKCU manual127.0.0.1:7897 only, KEY_READ, no globalconfig/TLSchanges"
+    "proxy_config_scope": "ExistingHKCU manual127.0.0.1:7897 only, KEY_READ, no globalconfig/TLSchanges",
+    "anonymous_downloads_verified": 3,
+    "archive_manifest_files_verified": 4247
   }
 }
