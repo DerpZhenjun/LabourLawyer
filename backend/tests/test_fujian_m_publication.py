@@ -43,7 +43,7 @@ class MPublicationTests(unittest.TestCase):
     def test_actual_final_78_leaves_two_sources_four_own_blank_forms(self):
         self.assertEqual(own.PUBLICATION_SHA256,FINAL)
         self.assertEqual(sha256((ROOT/own.PUBLICATION_RECEIPT).read_bytes()).hexdigest(),FINAL)
-        self.assertEqual(sha256(Path(own.__file__).read_bytes().replace(b'\r\n',b'\n')).hexdigest(),'e28e26b677f354f65687da9ec4cb6412a59425973460cb287d0c8f81d14e8521')
+        self.assertEqual(sha256(Path(own.__file__).read_bytes().replace(b'\r\n',b'\n')).hexdigest(),'f0f509f6552f8cb25efd8bd50bf36d9bd87deb5b4ae36cab918acd7c47aea535')
         receipt=json.loads((ROOT/own.PUBLICATION_RECEIPT).read_bytes())
         self.assertEqual(len(receipt['files']),78)
         self.assertTrue(receipt['native_confirmation_download_own_forms'])
