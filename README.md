@@ -12,11 +12,11 @@
 
 ## 软件下载（预览版）
 
-[下载 Android / Windows / Ubuntu：v1.2.0-preview.5](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.5)
+[下载 Android / Windows / Ubuntu：v1.2.0-preview.6](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.6)
 
-新版提供 Android APK、Windows x64 安装版和便携版，以及包含网页/API与已核验公开原件的Ubuntu部署包。客户端通过连接设置选择已部署后端或本机服务，不能单独离线生成文书。AI连接Ubuntu Qwen3.8，不在Windows运行模型；不表示全国区县全部接入。下载后逐项核对 `SHA256SUMS.txt`，详见[新版说明](docs/releases/v1.2.0-preview.5.md)及[9附件匿名下载校验](reports/overnight-gap-closure-20261030/release-preview5/PUBLIC-DOWNLOADS.json)。Android提供保留原包名和旧调试签名的兼容版，以及包名独立、关闭调试的新签名预览版；两者数据不自动互通，不卸载旧应用。Windows未代码签名；USB未发现设备，未声明实体手机已更新。
+新版提供 Android APK、Windows x64 安装版和便携版，以及包含网页/API与已核验公开原件的Ubuntu部署包。客户端通过连接设置选择已部署后端或本机服务，不能单独离线生成文书。AI连接Ubuntu Qwen3.8，不在Windows运行模型；不表示全国区县全部接入。下载后逐项核对 `SHA256SUMS.txt`，详见[新版说明](docs/releases/v1.2.0-preview.6.md)及[9附件匿名下载校验](reports/overnight-gap-closure-20261030/release-preview6/PUBLIC-DOWNLOADS.json)。Android提供保留原包名和旧调试签名的兼容版，以及包名独立、关闭调试的新签名预览版；两者数据不自动互通，不卸载旧应用。Windows未代码签名；USB未发现设备，未声明实体手机已更新。
 
-[Ubuntu 服务端更新：v1.2.1-server-preview.1](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.1-server-preview.1) 已单独发布，提供网页/API部署包、安装说明和校验清单。三项附件均经匿名实际下载核对；包内4,247个文件逐项校验通过。该不可变安装包的公开快照为215份指南、198地填写生成；已有数据库不会自动升级。Android、Windows和小程序仍使用上方preview.5，服务端版本不会虚增客户端版本号。[服务端发行与安装边界](docs/releases/v1.2.1-server-preview.1.md) · [公开下载验收](reports/overnight-gap-closure-20261030/release-server-preview1/PUBLIC-DOWNLOADS.json)。
+[Ubuntu 服务端更新：v1.2.1-server-preview.1](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.1-server-preview.1) 已单独发布，提供网页/API部署包、安装说明和校验清单。三项附件均经匿名实际下载核对；包内4,247个文件逐项校验通过。该不可变安装包的公开快照为215份指南、198地填写生成；已有数据库不会自动升级。上方preview.6已提供219/202的新快照及客户端；此215/198历史服务端包保留原字节，已有数据库不会因下载新包自动升级。[服务端发行与安装边界](docs/releases/v1.2.1-server-preview.1.md) · [公开下载验收](reports/overnight-gap-closure-20261030/release-server-preview1/PUBLIC-DOWNLOADS.json)。
 
 ## 账号、隔离与部署
 
@@ -57,9 +57,9 @@
 
 晋安、闽侯、马尾随后也按各自事项、材料和空白原件上线：晋安开放申请书、证据清单，闽侯和马尾仅开放自身申请书；14个未适配附件继续保留元数据，未将样表或待核验角色当作空白模板。两站本批共16份原生下载通过整包及全部ZIP成员独立核对，375/768/1440、取消/Esc/焦点和地区切换通过。三地指南仍为部分核验，不保证受理，也没有代交申请。[三地上线与回归验收](reports/overnight-gap-closure-20261030/localities/fujian-k/rollout-20261031/TEST-REPORT.md) · [31省实际矩阵](reports/overnight-gap-closure-20261030/localities/fujian-k/rollout-20261031/PUBLIC-MATRIX.json)。
 
-`preview.5`的9个发行附件保留原始字节，其Ubuntu快照为209份指南；服务端`preview.1`的快照为215份。两处运行后端及最新源码公开快照现为219/202。Android、Windows和小程序读取所连接后端的当前资料，本批K地区适配只更新后端及地区数据，无需重复安装客户端。莆田城厢和涵江的新资料继续独立审核，未计入上线数量；待核验不等于官方没有提供。
+`preview.5`的9个发行附件保留原始字节，其Ubuntu快照为209份指南；服务端`preview.1`的快照为215份。两处已验收运行后端为219/202；最新源码种子新增城厢、涵江后为221/204，仍待新源码CI与两站增量上线验收。Android、Windows和小程序读取所连接后端的当前资料，本批K地区适配只更新后端及地区数据，无需重复安装客户端。莆田城厢和涵江已通过各自候选站及32项发布回归，源库已追加，尚未计入两站上线数量；待核验不等于官方没有提供。
 
-平潭综合实验区现按自身事项、材料和官方空白原件开放申请书、证据清单，两站增量发布至219/202，福建已有13份指南、13地填写生成；8份实际原生下载通过整包及全部ZIP成员独立核对。指南仍为部分核实，委员会全称、官方版本及实际网上申报未确认；4个样例或参考附件不作为空白模板生成。具体到场次数与通用预审等级分别保留，不把不同口径误报为冲突。本轮9978ba56源码通过418项后端及2项隔离崩溃检查。[平潭双站验收](reports/overnight-gap-closure-20261030/localities/fujian-l/rollout-20261031/TEST-REPORT.md) · [源码CI](https://github.com/DerpZhenjun/LabourLawyer/actions/runs/41170091565)。preview.6客户端仍在构建核验，尚未发布；上方preview.5九项及服务端preview.1三项下载保持原文件，不把版本元数据当作新安装验收。
+平潭综合实验区现按自身事项、材料和官方空白原件开放申请书、证据清单，两站增量发布至219/202，福建已有13份指南、13地填写生成；8份实际原生下载通过整包及全部ZIP成员独立核对。指南仍为部分核实，委员会全称、官方版本及实际网上申报未确认；4个样例或参考附件不作为空白模板生成。具体到场次数与通用预审等级分别保留，不把不同口径误报为冲突。本轮9978ba56源码通过418项后端及2项隔离崩溃检查。[平潭双站验收](reports/overnight-gap-closure-20261030/localities/fujian-l/rollout-20261031/TEST-REPORT.md) · [源码CI](https://github.com/DerpZhenjun/LabourLawyer/actions/runs/41170091565)。preview.6现已实际发布，九项附件均经匿名下载核对，打包桌面程序的下载和重开验证通过；Android未发现USB设备，未声明实体手机已安装。preview.5九项及服务端preview.1三项仍保留原文件。[新版实际验收](reports/overnight-gap-closure-20261030/release-preview6/TEST-REPORT.md)。
 
 当前后端已部署已有公开目录的启动优化，初始化缺失目录时仍执行完整来源与模板校验。Ubuntu采集器已显式关闭页面截图，保留文字、HTML及已取得附件的证据能力；原4个任务、26个证据文件和4条OpenClaw实际回执均保留，未自动发布采集结果。此次两站新增8份原生文书下载、375/768/1440界面和匿名案件访问401检查通过，地区覆盖数量未增加。[部署及回归验收](reports/overnight-gap-closure-20261030/deployment/W215-20261031/TEST-REPORT.md)。
 

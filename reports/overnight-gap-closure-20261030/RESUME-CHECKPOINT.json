@@ -1,6 +1,6 @@
 {
   "started_at": "2026-10-30T15:01:46.081381+00:00",
-  "phase": "L_BOTH219_202_PREVIEW6_ASSETS_FROZEN_DESKTOP_NATIVE_RESTART_PASS_M_FINAL_NOT_SEEDED_N_WORD_PASS",
+  "phase": "PREVIEW6_PUBLIC_9_ANONYMOUS_PASS_M_SOURCE221_LIVE219_N_STAGE_REVIEW",
   "base_commit": "0e8eb56a9bdbbea295b584e9a8037337c79e37e8",
   "baseline": {
     "guides": 203,
@@ -10,9 +10,9 @@
     "ubuntu_outbox": 0
   },
   "agents": {
-    "overnight_ui_validation": "Preview6 native configure+restart actualPASS; ownruntimev3 finalstopPASS; helpersfrozen",
-    "overnight_digital": "N stage receipt interfaces and safe Wordproof preparation; unregistered/noCI/policy/DB",
-    "production_ci": "M phase formal32+6 and atomichelpers20 passed/frozen; Root independent review next"
+    "overnight_ui_validation": "N private candidate8008/5181 preparation only after shared freeze8015",
+    "overnight_digital": "Own actual official-source discovery Xianyou+Quanzhou Licheng private only",
+    "production_ci": "M221 future isolated deployment kit UNBOUND preparation"
   },
   "root_ownership": [
     "collector frontend admin UI + backendapp router wiring",
@@ -34,14 +34,14 @@
     "public_domain": "No projectdomainconfigured found; tailnet exists but nodeoffline/controlnetworkunreachable. Not completed TLS.",
     "earlier_Ubuntu_QA_sessions": "Some earlier failed-before-logout opaque sessions revocation NOT_PROVEN; final own logout204 proven. Do not blindly revoke other existing sessions; no credentials uploaded."
   },
-  "next": "Independently hash nine preview6 assets and native desktop four files/contracts/restart before binding exact publisher; draft then separate public publish/anonymous nine download verification, no USB install claim. Root review M20 helper and actual source dry, append source-only221/204, update exact seed policy, commit/new real CI before preserving Main+Ubuntu live upgrade. N Word48approved but stage adapter pending; no cross-region reuse. Continue national queue truthfully; all31 provinces incomplete. No Windows models/browser screenshots/HAR.",
-  "updated_at": "2026-10-31T06:12:18.208038+00:00",
+  "next": "Exact ebb233 source CI451+2 pending; preserving live Main219 and Ubuntu219 rollout toM221 after fresh accepted CI. Root N64 guarded independent review running; private browser candidate preparation only, no N policy/seed/publication yet. preview6 actually public/all9anonymousPASS, no USB device/install claim. Continue own source discovery and truthful national incompleteness; no Windows models, screenshot writes or denied HAR.",
+  "updated_at": "2026-10-31T06:36:14.276435+00:00",
   "public_seed": {
-    "guides": 219,
-    "generatable": 202,
+    "guides": 221,
+    "generatable": 204,
     "main_live_guides": 219,
     "ubuntu_live_guides": 219,
-    "publication": "Canonical source and both actual live hosts219/202. Eight L native downloads and four canonical contracts independently accepted. MAIN history227/outbox377; Ubuntu history219/outbox0. Existing data preserved; old immutable release snapshots remain unchanged."
+    "publication": "Source221/204; actual Main+Ubuntu219/202. M new own localities remain pending exact new source CI and live rollout."
   },
   "implemented": {
     "digital": "Ubuntu8089 actual synthetic stream and responsive candidate pass",
@@ -50,7 +50,7 @@
     "android": "independent release signing build active; compatible debug package preserved",
     "ui_screenshots": "NOT_ACCEPTED_TOOL_RESTRICTION; excluded and preserved private"
   },
-  "source_commit": "980843c52fdebd2555791710bf24e4c2a432a882",
+  "source_commit": "ebb233e90faf50aa051e3dcff371003556283356",
   "github_source_ci": {
     "source_commit": "9978ba563c49b84bc1357d640aa404f8ecc6a398",
     "run_id": 41170091565,
@@ -254,7 +254,7 @@
       "Root_independent_native_review": "PASS full8normal/originalwholebytes+allZIP+4fullcontracts15fields/source3; publiccandidatereportc6951342 committed; finalNone"
     },
     "Putian_M": {
-      "phase": "ROOT_FINAL_APPROVED_COPIED_NOT_SEEDED_OR_LIVE",
+      "phase": "SOURCE221_204_COMMITTED_MAIN_FF_PUSHED_LIVE_BOTH219",
       "regions": [
         "350302",
         "350303"
@@ -273,11 +273,17 @@
       "public_source_and_QA_files": 99,
       "source_only_generation": false,
       "live_guides_added": 0,
-      "private_seed_helper20tests": "Agent_pass_Root_review_pending",
-      "registered_stage_commit": "04eed30754c2a82f2945307cbc612160bfb15ff7"
+      "private_seed_helper20tests": "ROOT_20_GUARDED_PASS_BEFORE_SOURCE_APPEND",
+      "registered_stage_commit": "04eed30754c2a82f2945307cbc612160bfb15ff7",
+      "Root_post_seed32": "PASS_0_SKIP",
+      "source_guides_sha256": "2ba2239e6ee548a7614c03f6bddce718eace6cee8b597a4ea312ddd72ff4b790",
+      "source_manifest_sha256": "0a2b0fc408f5bff59813237f8627b7436ea6ef54fef74be84a7f06caa08694c5",
+      "source_commit": "ebb233e90faf50aa051e3dcff371003556283356",
+      "github_run_id": 41177184909,
+      "github_CI": "IN_PROGRESS_NOT_ACCEPTED"
     },
     "Putian_N": {
-      "phase": "UNREGISTERED_OWN_SOURCE_WORD_VISUAL_PASS_STAGE_ADAPTER_PREPARATION",
+      "phase": "OWN_WORD48_STAGE92_SHARED_INTEGRATION64_AGENT_PASS_ROOT_REVIEW_RUNNING",
       "regions": [
         "350304",
         "350305"
@@ -292,10 +298,11 @@
       "Root_actual_new_unique_image_opens": 26,
       "known_Root_exact_SHA_pages": 22,
       "Root_actual_original_CI_tests": 22,
-      "stage_adapter": "Preparation_only",
+      "stage_adapter": "REGISTERED_WORKING_NOT_COMMITTED",
       "publication": null,
       "source_only_generation": false,
-      "live_guides_added": 0
+      "live_guides_added": 0,
+      "stage_sha256": "1defd082be8040f33ae560c94124411bbac4b122af86fa83e7c71c6a33ab6908"
     }
   },
   "remaining": [
@@ -627,11 +634,14 @@
     "signing": "PASS_EXISTING_IDENTITY_CREATED_FALSE_CODE9",
     "assets": 9,
     "package_freeze_sha256": "45195cc1468836d1d0be0fbd8b05a815a50e1ea8835ce7f1ec733626ac3aa8cf",
-    "public_release": "NOT_PUBLISHED",
+    "public_release": "PUBLIC_VERIFIED_429760070_ALL9_ANONYMOUS_DOWNLOAD_PASS",
     "native_desktop": "PASS_CONFIGURE_4_NATIVE_WORDS_AND_FULL_RESTART_SAVED_CONNECTION_0_POSTS",
     "desktop_own_processes": "CLOSED_QUALIFIED_V3",
     "desktop_helper_failures": "Two original gone/teardown predicates preserved, readonly recovery proven; fixed helpers15puretests and actualrestart/close pass",
     "USB": "ZERO_AUTHORIZED_DEVICES_NO_INSTALL_CLAIM",
-    "new_pipeline_and_display_source_fixes_in_this_package": false
+    "new_pipeline_and_display_source_fixes_in_this_package": false,
+    "public_release_url": "https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.6",
+    "anonymous_downloads_finished_at": "2026-10-31T06:33:02.613745+00:00",
+    "anonymous_downloads_sha256": "8c31b7bb706be985903701513070abeeedc2a00fdb311465a3287994fec5aa5a"
   }
 }

@@ -1,0 +1,112 @@
+{
+  "status": "PUBLIC_PREVIEW_VERIFIED",
+  "repository": "DerpZhenjun/LabourLawyer",
+  "release_id": 429760070,
+  "tag": "v1.2.0-preview.6",
+  "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.6",
+  "source_commit": "9978ba563c49b84bc1357d640aa404f8ecc6a398",
+  "snapshot": {
+    "guides": 219,
+    "generatable_localities": 202,
+    "directory_entries": 3974
+  },
+  "assets": [
+    {
+      "id": 694561666,
+      "name": "LabourLawyer-1.2.0-preview.6-android-independent-signed.apk",
+      "size": 3880095,
+      "state": "uploaded",
+      "digest": "sha256:9f06209035ea10d28e6f3c507c108d3929868a188698aad5139b8a777cec5bca",
+      "browser_download_url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.6/LabourLawyer-1.2.0-preview.6-android-independent-signed.apk"
+    },
+    {
+      "id": 694562023,
+      "name": "LabourLawyer-1.2.0-preview.6-android.apk",
+      "size": 4920882,
+      "state": "uploaded",
+      "digest": "sha256:3b54036b774fd69df0e2abe622a4219567c787f86a4bf09a76dda756a27efffb",
+      "browser_download_url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.6/LabourLawyer-1.2.0-preview.6-android.apk"
+    },
+    {
+      "id": 694562465,
+      "name": "LabourLawyer-1.2.0-preview.6-digital-source.tar.gz",
+      "size": 12129880,
+      "state": "uploaded",
+      "digest": "sha256:3dc9db97c7cce8bd43d8d382c59868ee9c5ae33a68dfa945302f834746e6f824",
+      "browser_download_url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.6/LabourLawyer-1.2.0-preview.6-digital-source.tar.gz"
+    },
+    {
+      "id": 694562782,
+      "name": "LabourLawyer-1.2.0-preview.6-miniprogram.zip",
+      "size": 344738,
+      "state": "uploaded",
+      "digest": "sha256:d25a8108bdf48eada45ad29b600435028eb6cdbcec0d4d415c663eb9cc60937d",
+      "browser_download_url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.6/LabourLawyer-1.2.0-preview.6-miniprogram.zip"
+    },
+    {
+      "id": 694561458,
+      "name": "LabourLawyer-1.2.0-preview.6-START-HERE.txt",
+      "size": 3403,
+      "state": "uploaded",
+      "digest": "sha256:fe5c6339dd1a0eb94c3e444dea945809d8eeab11a10990065bfe8d06d9e5cd74",
+      "browser_download_url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.6/LabourLawyer-1.2.0-preview.6-START-HERE.txt"
+    },
+    {
+      "id": 694563016,
+      "name": "LabourLawyer-1.2.0-preview.6-ubuntu.tar.gz",
+      "size": 406724305,
+      "state": "uploaded",
+      "digest": "sha256:b1e73cc8c3be07827529bb435a3fcbabced6e2c2b9249ac696ad3dd302fdcbc7",
+      "browser_download_url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.6/LabourLawyer-1.2.0-preview.6-ubuntu.tar.gz"
+    },
+    {
+      "id": 694565070,
+      "name": "LabourLawyer-1.2.0-preview.6-windows-x64-portable.exe",
+      "size": 111881208,
+      "state": "uploaded",
+      "digest": "sha256:1eeb7c2ae54da24204ada544929fa6f60498c257dd14ac3f3bf15e944b6177b5",
+      "browser_download_url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.6/LabourLawyer-1.2.0-preview.6-windows-x64-portable.exe"
+    },
+    {
+      "id": 694565857,
+      "name": "LabourLawyer-1.2.0-preview.6-windows-x64-setup.exe",
+      "size": 112117568,
+      "state": "uploaded",
+      "digest": "sha256:59bbcf7eea7e39b2c0201d796316af84a1086d067af915883fb599c9c63ad335",
+      "browser_download_url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.6/LabourLawyer-1.2.0-preview.6-windows-x64-setup.exe"
+    },
+    {
+      "id": 694566595,
+      "name": "SHA256SUMS.txt",
+      "size": 917,
+      "state": "uploaded",
+      "digest": "sha256:e5b3b0305a4704ef4e94364e3d1b2bb83fb5ff5efac2263bc638dcbe84d10a1d",
+      "browser_download_url": "https://github.com/DerpZhenjun/LabourLawyer/releases/download/v1.2.0-preview.6/SHA256SUMS.txt"
+    }
+  ],
+  "notes_sha256": "b90864808eca74ee9f57b26124f72e50005b843e93903bf8dfe0e95973306955",
+  "old_preview5_and_server_preview1_preserved": true,
+  "public_downloads_sha256": "8c31b7bb706be985903701513070abeeedc2a00fdb311465a3287994fec5aa5a",
+  "native_desktop": {
+    "four_actual_DOCX_and_full_contracts": "PASS",
+    "restart_saved_connection_no_generation_POST": "PASS",
+    "owned_processes_after_test": "ALL_CLOSED"
+  },
+  "android": {
+    "independent_application_id": "cn.labourlawyer.mobile.release",
+    "version_code": 9,
+    "version_name": "1.2.0-preview.6",
+    "debuggable": false,
+    "existing_signing_identity_preserved": true,
+    "USB_devices_seen": 0,
+    "physical_phone_installation": "NOT_COMPLETED_NO_CONNECTED_DEVICE"
+  },
+  "limits": [
+    "Preview, not nationwide coverage or production-complete",
+    "M/N additions and subsequent source fixes are not in this immutable package",
+    "No trusted Windows code-signing certificate",
+    "Public domain and trusted TLS not configured",
+    "Mini program bundle is not a WeChat publication",
+    "No Windows model started"
+  ]
+}
