@@ -17,6 +17,15 @@ export function guideField(guide:unknown,name:string):string {
 }
 export function visitCountLabel(guide:unknown):string {const value=guideField(guide,'到办事现场次数');return value==='待核实'||value.includes('次')?value:value+' 次'}
 export function originalCopyLabel(material:unknown):string {const m=isPlainRecord(material)?material:{};return typeof m.original_copy==='string'&&m.original_copy?m.original_copy:/原件|复印件/.test(typeof m.material_type==='string'?m.material_type:'')?String(m.material_type):'原件/复印件待核实'}
+export function materialCopiesLabel(value:unknown):string {
+ const pending='份数待核实'
+ if(typeof value==='number')return Number.isFinite(value)&&value>0?`${value} 份`:pending
+ if(typeof value!=='string'||!value.trim()||/^[+-]?(NaN|Infinity)$/i.test(value.trim()))return pending
+ const numeric=Number(value.trim())
+ if(!Number.isNaN(numeric))return Number.isFinite(numeric)&&numeric>0?`${numeric} 份`:pending
+ return value
+}
+export function guideSectionLabel(key:string):string {return key==='conditions'?'受理条件':key==='window'?'窗口办理说明':key}
 export function materialDetails(material:unknown):Record<string,unknown> {
  const m=isPlainRecord(material)?material:{},result={...(isPlainRecord(m.details)?m.details:{})}
  for(const [key,label] of [['instructions','填写与份数说明'],['submission_method','提交方式'],['source_channel','材料从哪里取得'],['acceptance_standard','官网受理说明']] as const)if(m[key]!==undefined&&m[key]!==null&&m[key]!==''&&result[label]===undefined)result[label]=m[key]

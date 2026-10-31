@@ -50,7 +50,7 @@
         <dl class="window-details"><div><dt>窗口地点</dt><dd>{{ field('办理地点') }}</dd></div><div><dt>办公时间</dt><dd>{{ field('办理时间') }}</dd></div><div><dt>咨询电话</dt><dd>{{ field('咨询方式') }}</dd></div><div><dt>必须到现场原因</dt><dd>{{ field('必须到现场原因') }}</dd></div><div><dt>服务对象</dt><dd>{{ field('服务对象') }}</dd></div></dl>
       </section>
       <section class="region-panel" id="regional-materials"><span class="ll-eyebrow">02 · 准备材料</span><h2>这份当地指南列出的材料</h2><p>下面保留官网名称和份数。签字、复印和其他情形请同时核对详细说明。</p>
-        <div class="regional-material" v-for="(m,index) in guide.materials" :key="m.id"><div class="material-top"><span class="material-number">{{ index+1 }}</span><div><h3>{{ m.name }}</h3><p>{{ m.required || '是否必需待核实' }} · {{ originalCopyLabel(m) }} · {{ m.format || '形式待核实' }} · {{ m.copies || '份数待核实' }}{{ m.copies?' 份':'' }}</p><p v-for="badge in m.official_badges || []" :key="badge" class="region-small">官网另有标记“{{ badge }}”，适用条件尚待确认；不要据此自行省略这项材料。</p></div></div><details><summary>查看这项材料的详细要求</summary><p class="region-small">材料用途与适用情形：{{ m.purpose || '官网未单列说明，待核实；不要自行省略必要材料。' }}</p><dl class="window-details"><div v-for="(value,key) in materialDetails(m)" :key="key"><dt>{{ key }}</dt><dd>{{ value || '官网未填写，待核实' }}</dd></div></dl></details></div>
+        <div class="regional-material" v-for="(m,index) in guide.materials" :key="m.id"><div class="material-top"><span class="material-number">{{ index+1 }}</span><div><h3>{{ m.name }}</h3><p>{{ m.required || '是否必需待核实' }} · {{ originalCopyLabel(m) }} · {{ m.format || '形式待核实' }} · {{ materialCopiesLabel(m.copies) }}</p><p v-for="badge in m.official_badges || []" :key="badge" class="region-small">官网另有标记“{{ badge }}”，适用条件尚待确认；不要据此自行省略这项材料。</p></div></div><details><summary>查看这项材料的详细要求</summary><p class="region-small">材料用途与适用情形：{{ m.purpose || '官网未单列说明，待核实；不要自行省略必要材料。' }}</p><dl class="window-details"><div v-for="(value,key) in materialDetails(m)" :key="key"><dt>{{ key }}</dt><dd>{{ value || '官网未填写，待核实' }}</dd></div></dl></details></div>
         <p v-if="!guide.materials.length" class="region-notice">材料清单尚未核验，不显示确定的当地要求。</p>
       </section>
       <section class="region-panel" id="regional-documents"><span class="ll-eyebrow">03 · 文书与下载</span><h2>看清来源，再填写</h2><p>“空白表格”和“示例样表”不是一回事。下载保留官网原文件，辅助填写不保证受理。</p>
@@ -58,13 +58,13 @@
         <div v-if="generatable" class="reference-fill"><h3>按{{ guide.district }}{{ blankGeneration?'官方空白表格':'参考样表' }}辅助填写</h3><p>{{ blankGeneration?'当前填写使用本地区官网提供、已核对的空白表格。':'官网将申请书附件列为示例样表。' }}页面上方可以直接填写；默认内容为本平台虚构示例，请替换为真实信息。签名位置留空，不自动提交申请。</p><div class="region-actions"><RouterLink v-if="hasGenerationKind(guide,'application')" :to="documentLink('application')" class="ll-button">填写申请书</RouterLink><RouterLink v-if="hasGenerationKind(guide,'evidence')" :to="documentLink('evidence')" class="ll-button secondary">填写证据清单</RouterLink></div></div>
         <p v-else class="region-notice">本地区附件尚未通过自动填写核验，{{ guide.templates.some(t=>t.download_status==='downloaded')?'可下载上方已核实的原文件参考。':'尚未核实可下载文件，请打开官方原文查询或向办理机构确认。' }}不会套用其他地区的文书。</p>
       </section>
-      <section class="region-panel" id="regional-original"><span class="ll-eyebrow">04 · 完整原文</span><h2>核对受理条件和其他说明</h2><details v-for="(text,name) in guide.sections" :key="name" class="original-section"><summary>{{ name }}</summary><p class="official-raw">{{ text || '官网未提供，待核实' }}</p></details><p class="region-small">原文来自本次公开页面采集。页面内容更新后，应再次核验；不能替代办理机构对管辖、材料和受理条件的判断。</p></section>
+      <section class="region-panel" id="regional-original"><span class="ll-eyebrow">04 · 完整原文</span><h2>核对受理条件和其他说明</h2><details v-for="(text,name) in guide.sections" :key="name" class="original-section"><summary>{{ guideSectionLabel(name) }}</summary><p class="official-raw">{{ text || '官网未提供，待核实' }}</p></details><p class="region-small">原文来自本次公开页面采集。页面内容更新后，应再次核验；不能替代办理机构对管辖、材料和受理条件的判断。</p></section>
     </div>
     <p class="region-disclaimer">LabourLawyer 是劳动仲裁辅助工具，不是政府网站，不收取或代交仲裁申请。已有模板仅在标注的来源范围内使用。</p>
   </main>
 </template>
 <script setup lang="ts">
-import {guideField,visitCountLabel,originalCopyLabel,materialDetails,hasGenerationKind,readGuideDisplay,publicError} from '@/data/regionalGuidePresentation'
+import {guideField,visitCountLabel,originalCopyLabel,materialCopiesLabel,guideSectionLabel,materialDetails,hasGenerationKind,readGuideDisplay,publicError} from '@/data/regionalGuidePresentation'
 import type {DirectoryArea} from '@/data/regionalGuidePresentation'
 import {plainGuideWarning} from '../../../packages/regional-contracts/src/index.ts'
 import type {DocumentKind} from '../../../packages/regional-contracts/src/index.ts'
