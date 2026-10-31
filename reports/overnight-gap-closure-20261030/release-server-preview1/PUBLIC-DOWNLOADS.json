@@ -1,0 +1,40 @@
+{
+  "status": "ROOT_ACTUAL_ANONYMOUS_THREE_ASSETS_PASS",
+  "release_id": 429656734,
+  "tag": "v1.2.1-server-preview.1",
+  "source_commit": "ca9ef3f293c9911765a1752d0c49147b0db4fbb7",
+  "assets": [
+    {
+      "name": "LabourLawyer-1.2.1-server-preview.1-START-HERE.txt",
+      "bytes": 5519,
+      "sha256": "61bbff3bd886ae75782e27f671d867a6067505c66610574e6006b986662101f4",
+      "anonymous": true,
+      "TLS_verified": true,
+      "redirect_hosts_allowlisted": true
+    },
+    {
+      "name": "LabourLawyer-1.2.1-server-preview.1-ubuntu.tar.gz",
+      "bytes": 396281775,
+      "sha256": "f01603afd78b4af80dc7d87f412bccf7d1b6b0d081007409e69a99900d36420c",
+      "anonymous": true,
+      "TLS_verified": true,
+      "redirect_hosts_allowlisted": true
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 233,
+      "sha256": "64551a88f8922825367a1eec05d9c044afb5468ac39590b2b3e412fbc7efa6fa",
+      "anonymous": true,
+      "TLS_verified": true,
+      "redirect_hosts_allowlisted": true
+    }
+  ],
+  "archive_verified_members": 4248,
+  "all_manifest_file_bytes_and_SHA256_verified": 4247,
+  "credentials_used": false,
+  "models": 0,
+  "release_or_user_files_mutated": false,
+  "data_snapshot_guides": 215,
+  "data_snapshot_generatable": 198,
+  "next_K218_not_in_this_immutable_package": true
+}

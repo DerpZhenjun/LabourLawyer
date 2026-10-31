@@ -16,6 +16,8 @@
 
 新版提供 Android APK、Windows x64 安装版和便携版，以及包含网页/API与已核验公开原件的Ubuntu部署包。客户端通过连接设置选择已部署后端或本机服务，不能单独离线生成文书。AI连接Ubuntu Qwen3.8，不在Windows运行模型；不表示全国区县全部接入。下载后逐项核对 `SHA256SUMS.txt`，详见[新版说明](docs/releases/v1.2.0-preview.5.md)及[9附件匿名下载校验](reports/overnight-gap-closure-20261030/release-preview5/PUBLIC-DOWNLOADS.json)。Android提供保留原包名和旧调试签名的兼容版，以及包名独立、关闭调试的新签名预览版；两者数据不自动互通，不卸载旧应用。Windows未代码签名；USB未发现设备，未声明实体手机已更新。
 
+[Ubuntu 服务端更新：v1.2.1-server-preview.1](https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.1-server-preview.1) 已单独发布，提供网页/API部署包、安装说明和校验清单。三项附件均经匿名实际下载核对；包内4,247个文件逐项校验通过。该不可变安装包的公开快照为215份指南、198地填写生成；已有数据库不会自动升级。Android、Windows和小程序仍使用上方preview.5，服务端版本不会虚增客户端版本号。[服务端发行与安装边界](docs/releases/v1.2.1-server-preview.1.md) · [公开下载验收](reports/overnight-gap-closure-20261030/release-server-preview1/PUBLIC-DOWNLOADS.json)。
+
 ## 账号、隔离与部署
 
 公共文书填写不要求登录。后台案件按账号隔离；没有默认密码，新账号不会自动接管历史案件。密码及会话令牌以哈希保存，浏览器会话只保留在当前标签页。退出、过期或切换账号时清空私人界面，旧草稿保留而不自动上传。[开通账号及历史案件归属](docs/accounts-and-security.md)。
