@@ -1,0 +1,147 @@
+{
+  "status": "PASS_BOTH_CORE_AND_OWNED_COLLECTOR_NO_GUIDE_DATA_IMPORT",
+  "accepted_at": "2026-10-31T01:29:33.058383+00:00",
+  "source_commit": "ca9ef3f293c9911765a1752d0c49147b0db4fbb7",
+  "source_ci": {
+    "run_id": 41150204635,
+    "url": "https://github.com/DerpZhenjun/LabourLawyer/actions/runs/41150204635",
+    "locked_backend_tests": 365,
+    "guarded_process_tests": 2,
+    "all_steps": "success"
+  },
+  "exact_package": {
+    "source_archive_bytes": 674867200,
+    "source_archive_sha256": "80a3759c0867aa86ed2194749a83ed9d4eb10e84b4b79fc7676aa56f51ed9c61",
+    "git_source_files": 6334,
+    "bundle_bytes": 396281775,
+    "bundle_sha256": "f01603afd78b4af80dc7d87f412bccf7d1b6b0d081007409e69a99900d36420c",
+    "manifest_sha256": "f51eccdb397db8e1abe854ed4b6b5341135a72f533e44e17998c2097eddc9e62",
+    "manifest_files": 4247,
+    "only_runtime_changed_files": [
+      "backend/public_seed.py",
+      "backend/linux_guide_collector.py",
+      "docs/linux-guide-collector.md"
+    ],
+    "unchanged_public_source_files": 4002,
+    "unchanged_built_web_files": 89
+  },
+  "cold_isolation": {
+    "catalogue": {
+      "guides": 215,
+      "generatable": 198,
+      "directory": 3974,
+      "missing_attachments": 0
+    },
+    "source_pins": 156,
+    "generated_words": 21,
+    "own_source_bindings": 11,
+    "cross_J_I_rejections": 44,
+    "route_privacy_CORS_checks": "PASS",
+    "external_writes_network_child_model": 0,
+    "existing_catalogues_preserved": true
+  },
+  "actual_core_rollout": {
+    "Ubuntu": {
+      "old_own_pid": 923485,
+      "own_pid": 981932,
+      "release": "W215-20261031-f01603af",
+      "whole_guarded_switch_seconds": 5.9694912,
+      "includes_hash_checks_backup_and_readiness": true,
+      "six_persistent_files_byte_unchanged": true,
+      "digital_model_collector_processes_preserved_during_core_switch": true
+    },
+    "Windows_main": {
+      "old_own_pid": 28084,
+      "own_pid": 39568,
+      "actual_source": "ca9ef3f293c9911765a1752d0c49147b0db4fbb7",
+      "existing_data_directory_reused": true,
+      "two_public_databases_byte_unchanged": true,
+      "six_prior_user_dirty_files_byte_unchanged": true,
+      "service_startup_duration_separately_measured": false
+    },
+    "current_guides": 215,
+    "current_generatable_regions": 198,
+    "main_history": 223,
+    "ubuntu_history": 215,
+    "guide_import_performed": false,
+    "both_health": 200,
+    "both_private_cases_unauthenticated": 401
+  },
+  "actual_native_browser_regression": {
+    "qualified_downloads": 8,
+    "hosts": 2,
+    "each_host": "Lianjiang application/evidence, filled and own exact blank, four native downloads",
+    "all_files_regenerated_and_all_ZIP_members_independently_checked": true,
+    "existing_J44_full_matrix_not_recounted": true,
+    "strict_contract": "all15 context fields and canonical contract hash",
+    "source_versions": {
+      "main": 218,
+      "Ubuntu": 210
+    },
+    "viewports": [
+      375,
+      768,
+      1440
+    ],
+    "checks": [
+      "Yongtai application-only and evidence rejection",
+      "Changle own evidence and official fallback without activating IAM",
+      "Jinan still unpublished without generation inheritance",
+      "unknown district settled clearing",
+      "Cancel/Esc/Tab/focus with zero generation POST",
+      "anonymous cases401 without reading private bodies",
+      "native admin guard redirects to login without authenticating"
+    ],
+    "console_page_errors": 0,
+    "model_calls": 0,
+    "government_navigation": 0,
+    "browser_screenshots": 0
+  },
+  "collector_text_only": {
+    "actual_worker_old_pid": 841615,
+    "actual_worker_pid": 994619,
+    "actual_state": "idle",
+    "runtime_source": "ca9ef3f293c9911765a1752d0c49147b0db4fbb7",
+    "config_capture_screenshots": false,
+    "code_default_capture_screenshots": true,
+    "only_config_delta": "one explicit capture_screenshots:false member; all prior config bytes preserved",
+    "current_config_sha256": "6aa926098275bba1e06565c87ad047c3f61e4521056f590519ae05fee78b5437",
+    "allowed_hosts_unchanged": 2,
+    "http_https_default_port_policy_unchanged": true,
+    "root_guarded_Temp_tests": 51,
+    "native_Linux_flock_Temp_primitives": 4,
+    "queue_jobs_preserved": 4,
+    "journal_preserved": 4,
+    "outbox_actual_ACK": 4,
+    "outbox_pending": 0,
+    "observations_preserved": 10,
+    "evidence_files_byte_preserved": 26,
+    "all_original_queue_outbox_rows_byte_preserved": true,
+    "six_persistent_files_and_core_digital_model_preserved": true,
+    "coherent_SQLite_and_evidence_config_backup_retained": true,
+    "new_capture_jobs_enqueued": 0,
+    "new_textonly_capture_job_actual_acceptance": "NOT_RUN",
+    "new_screenshots": 0,
+    "real_model_calls": 0
+  },
+  "known_limits": [
+    "This update does not increase national locality coverage;215/198 remain the same",
+    "K Jinan/Minhou/Mawei separate candidate-stage work is not published",
+    "The immutable preview5 server snapshot remains209; no replacement or retagging",
+    "Public trusted HTTPS/domain and Windows trusted signing remain incomplete",
+    "No connected physical USB installation or WeChat publication claim",
+    "Continuous public issue relay depends on the maintenance host and its dedicated gateway",
+    "Earlier opaque failed-before-logout admin QA session revocation remains NOT_PROVEN; no broad user session cleanup"
+  ],
+  "private_evidence_hashes": {
+    "ROOT-W215-ACTUAL-COLD-RESULT.json": "d48a9e4677c70742b362b132b0d369bdb96d118dda86e1a9f9cf8e38a333fc5f",
+    "ROOT-W215-ACTUAL-LIVE-PRESERVATION.json": "3d9425496a4d566431f37888422e745dc62a75864fad027905d04e8b64857a1e",
+    "ROOT-W215-BOTH-LIVE-HEALTH.json": "e8e6cb95c87ecb2882965d4fee449aad04c2113e2fc1bc2e2da3bbfa827f6438",
+    "ROOT-51-GUARDED-v2.log": "a32434a62f4bdd826a26a129df2597c8e6151438005d94e6bafa099483a316d8",
+    "ROOT-NATIVE-LINUX-FLOCK.log": "33cd6c03af0b0868b96ee8a4de949a91bf46e98b27ce314c277995dfc772f654",
+    "ROOT-ACTUAL-POSTVERIFY.json": "93c3a4c607ab9b7be668e11aab82cca87246c4970e7c45bd2b61e9827363ac30",
+    "W215-BOTH-NATIVE-POSTVERIFY.json": "591d1f8a549d1a409e25c11212975a24477b112df148c0c409c56622ddda18b6",
+    "W215-native-ubuntu-20261031T011208807012Z/W215-BROWSER-RESULT.json": "aff63c6b94fe632fb905b7faa97b2241fc6cad7b9e7273d3d09b7476afd01e7c",
+    "W215-native-main-20261031T011328661906Z/W215-BROWSER-RESULT.json": "351f2ac00558de30123cf871ac8ff6a9c317e9b362d76b29de893d01b53ba730"
+  }
+}

@@ -43,7 +43,7 @@ PYTHONDONTWRITEBYTECODE=1 /home/ubuntu2204/SJL/LabourLawyer/collector-venv/bin/p
 
 入口限配置内的 `.gov.cn` 主机；浏览器导航、重定向及资源请求均检查公开 DNS 地址，拒绝回环、内网、凭据和常见认证参数。认证导航被阻止，隐藏 SSO 子框架失败不会抹掉实际可见的公开指南。只有在明确的公开文书下载控件收集期间，才允许跨主机打开公开 `.gov.cn` 文档地址。没有登录、验证码破解、证书绕过或网站内部端点猜测。
 
-每次尝试独立保存 URL、标题、观察时间、正文、截图、真实失败和文件 SHA256。下载文书通过实际浏览器事件保存；Blob 下载尽量与观察到的响应字节对应，不把网页控件文本当作文书类型证明。`template_kind` 始终为 `unknown_until_review`，不自动认定空白表、示例、申请书或证据清单适用。附件上限限制保留的文件大小；浏览器在检查大小前可能已接收完整响应。总任务超时限制单次传输时间。
+每次尝试独立保存 URL、标题、观察时间、正文、真实失败和文件 SHA256；只有 `capture_screenshots:true` 时才保存页面截图，False时明确记录截图未采集并保留文字/HTML能力。下载文书通过实际浏览器事件保存；Blob 下载尽量与观察到的响应字节对应，不把网页控件文本当作文书类型证明。`template_kind` 始终为 `unknown_until_review`，不自动认定空白表、示例、申请书或证据清单适用。附件上限限制保留的文件大小；浏览器在检查大小前可能已接收完整响应。总任务超时限制单次传输时间。
 
 证据 API `GET /jobs/{id}/evidence/{filename}?attempt=N` 也需要管理员 Bearer 凭据，只提供截图、正文和已取得文书，不提供原始 HTML、Cookie、进程路径或原始错误日志。客户端须用认证请求下载，不能直接将带鉴权的地址当作匿名图片 URL。
 
@@ -56,3 +56,5 @@ PYTHONDONTWRITEBYTECODE=1 /home/ubuntu2204/SJL/LabourLawyer/collector-venv/bin/p
 旧任务可执行 `run-linux-guide-collector.py --config <配置文件> --issue-outbox <新的独立问题库> replay-issues` 补入日志。此命令只重放已经保存的结果，不访问官网、不调用模型，也不产生 OpenClaw 回执；重复运行保留已有问题与回执。不要把其他 SQLite 文件作为这个独立问题库。
 
 实际投递由 `scripts/relay-collector-openclaw.py` 完成，详见[投递说明](openclaw-issue-delivery.md)。当前 Ubuntu 部署的四条历史任务、26个证据文件已保留，十条问题观察去重为四条问题，实际服务回执四条、待投递零条。[运行验收](../reports/overnight-gap-closure-20261030/openclaw/COLLECTOR-ISSUE-DELIVERY-20261031.json)。管理员页面分别显示问题总数、待 OpenClaw 和实际送达；观察成功和服务已读均不等于当地指南或模板已经通过核验。
+
+2026-10-31运行worker已升级并显式配置 `capture_screenshots:false`。已有任务、日志、问题回执及证据逐行/逐文件保留；两项主机白名单及HTTP/HTTPS默认端口限制没有放宽。此次部署没有新入队或执行官网采集任务，不宣称完成新的文字采集。[实际升级与回归验收](../reports/overnight-gap-closure-20261030/deployment/W215-20261031/TEST-REPORT.md)。

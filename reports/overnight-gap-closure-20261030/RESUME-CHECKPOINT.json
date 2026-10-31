@@ -1,6 +1,6 @@
 {
   "started_at": "2026-10-30T15:01:46.081381+00:00",
-  "phase": "J215_both_live_native44_PASS_warm_start_and_textonly_collector_pending_root_review",
+  "phase": "W215_both_core_native8_and_textonly_collector_ACTUAL_PASS_K3_Rootstage_only_shared_integration_under_test",
   "base_commit": "0e8eb56a9bdbbea295b584e9a8037337c79e37e8",
   "baseline": {
     "guides": 203,
@@ -10,9 +10,9 @@
     "ubuntu_outbox": 0
   },
   "agents": {
-    "overnight_ui_validation": "idle; Jboth44accepted, K3TLSdownloads/nativeDOMpartial preserved",
-    "overnight_digital": "idle; sourceab bundle/cold31parity/switch19 prep complete; ROOTexecutedactual",
-    "production_ci": "idle; warm15 andcapture80 frozenWIP, nextownKlocalplan prepared"
+    "overnight_ui_validation": "next ownPingtan350128 real native guide/material sourceonly discovery; no screenshot/model",
+    "overnight_digital": "new server-only W215 release3asset preparation only; no Githubwrites",
+    "production_ci": "K Rootstage d23c approvedcandidateonly; fourshared dispatch/strictmodels andTemp tests inprogress; no final/seed/live"
   },
   "root_ownership": [
     "collector frontend admin UI + backendapp router wiring",
@@ -34,8 +34,8 @@
     "public_domain": "No projectdomainconfigured found; tailnet exists but nodeoffline/controlnetworkunreachable. Not completed TLS.",
     "earlier_Ubuntu_QA_sessions": "Some earlier failed-before-logout opaque sessions revocation NOT_PROVEN; final own logout204 proven. Do not blindly revoke other existing sessions; no credentials uploaded."
   },
-  "next": "Commit Jpublicrollout/README/checkpoint exactpaths. Rootindependentlyvalidate warm15+capture80 and unchangedcoldguard; add3explicitCImodules in separate meaningfully named commits, preserve6dirtyuserfiles; fullsourceCI thennewcanonicalarchive/bundle/cold review before actualwarmstart/core+collectorFalse deployment. Sourceab J215/198 remains live until then, not modified in place. Jinan nextownsource onlyafter actualmaterialDOM accepted; no neighbor/province inheritance. No screenshotwrite/retry, deniedDonghuaction not retried, no Windowsmodels/inference.",
-  "updated_at": "2026-10-31T00:19:22.969048+00:00",
+  "next": "Review Ksharedstrictdispatch+allTempcontracts+CI Node fixtureexactallowlist, root isolatednative4forms/blank/cancel/unknown/directmetadata409, finalapproval onlyafterPASS thenexactseed/CI/publisher andownedrollout. Wserver-only3asset releasepreparedbutnotpublished; immutablepreview5nineassets209notchanged. ContinuePingtan ownsourcewithoutborrowing. No Windowsmodels/inference/screenshots/deniedDonghuactionretry, preserve6dirtyuserfiles/existingDBs.",
+  "updated_at": "2026-10-31T01:30:45.422467+00:00",
   "public_seed": {
     "guides": 215,
     "generatable": 198,
@@ -45,17 +45,17 @@
   },
   "implemented": {
     "digital": "Ubuntu8089 actual synthetic stream and responsive candidate pass",
-    "collector": "Ubuntu sandboxed Chrome durable worker4observations; attachments failed honestly; admin candidate pass",
+    "collector": "ACTUAL W215textonlyworker994619/configFalse; old4jobs4ACK10obs26evidencepreserved, no new capturejob/auto-publication",
     "tls": "loopback8443 testCA pass; public trusted TLS blocked",
     "android": "independent release signing build active; compatible debug package preserved",
     "ui_screenshots": "NOT_ACCEPTED_TOOL_RESTRICTION; excluded and preserved private"
   },
-  "source_commit": "ab837b304770e5aeaf1c70adcd0d60d11f666412",
+  "source_commit": "ca9ef3f293c9911765a1752d0c49147b0db4fbb7",
   "github_source_ci": {
-    "id": 41144487028,
+    "id": 41150204635,
     "status": "success",
-    "head": "ab837b304770e5aeaf1c70adcd0d60d11f666412",
-    "locked_backend_tests": 339,
+    "head": "ca9ef3f293c9911765a1752d0c49147b0db4fbb7",
+    "locked_backend_tests": 365,
     "separate_guarded_crash_tests": 2,
     "source_web_mini_and_committed_drift": "PASS"
   },
@@ -65,7 +65,7 @@
     "history": 223,
     "openclaw_ack": 377,
     "user_dirty_six_preserved": true,
-    "core_pid": 28084
+    "core_pid": 39568
   },
   "linux_issue_relay": {
     "reviewed": 2,
@@ -118,47 +118,48 @@
     "J_batch_requires_client_reinstall": false
   },
   "ubuntu": {
-    "source_commit": "ab837b304770e5aeaf1c70adcd0d60d11f666412",
-    "release": "releases/J215-20261031-670e3552",
-    "core_pid": 923485,
-    "core_start_ticks": "100030819",
+    "source_commit": "ca9ef3f293c9911765a1752d0c49147b0db4fbb7",
+    "release": "releases/W215-20261031-f01603af",
+    "core_pid": 981932,
+    "core_start_ticks": "100508100",
     "guides": 215,
     "generatable": 198,
     "history": 215,
     "legacy_regional_outbox": 0,
     "source_manifest_files": 4247,
     "other_five_persistent_files_preserved": true,
-    "collector_pid": 841615,
+    "collector_pid": 994619,
     "digital_pid": 481171,
     "ollama_pid": 3952524,
     "protected_services_and_queue_issues_evidence_unchanged": true,
-    "Windows_model_started": false
+    "Windows_model_started": false,
+    "collector_start_ticks": "100610423",
+    "collector_capture_screenshots": false,
+    "collector_config_sha256": "6aa926098275bba1e06565c87ad047c3f61e4521056f590519ae05fee78b5437"
   },
   "new_work": {
-    "J": "COMPLETE_BOTH_LIVE215/198; stage129474/final986048/Word346e unchanged. Sourceab CI339+2PASS; exact396280297B bundle670e/4247files, actualcold215/198/3974/0missing/21Word11sources/44cross409. Rootowned core923485; Main28084. Mainhistory217→223/outbox377,Ubuntu209→215/outbox0 exactoldraw/WOR/jobs/schema; backups retained.44qualified native (22normal+22ownblank) fullbytes/everyZIP independentlyRootchecked,66width22cancel, sixsourceeach. PriorUbuntu0/main4NOT_ACCEPTED retained, actualtotal48. Sourceguidespartial/YTappOnly/no verifiedsubmission. Public rolloutreport linked.",
-    "fujian_j": "COMPLETE_BOTH_LIVE215/198; stage129474/final986048/Word346e unchanged. Sourceab CI339+2PASS; exact396280297B bundle670e/4247files, actualcold215/198/3974/0missing/21Word11sources/44cross409. Rootowned core923485; Main28084. Mainhistory217→223/outbox377,Ubuntu209→215/outbox0 exactoldraw/WOR/jobs/schema; backups retained.44qualified native (22normal+22ownblank) fullbytes/everyZIP independentlyRootchecked,66width22cancel, sixsourceeach. PriorUbuntu0/main4NOT_ACCEPTED retained, actualtotal48. Sourceguidespartial/YTappOnly/no verifiedsubmission. Public rolloutreport linked.",
+    "J": "HistoricalJpublicationacceptance: COMPLETE_BOTH_LIVE215/198; stage129474/final986048/Word346e unchanged. Sourceab CI339+2PASS; exact396280297B bundle670e/4247files, actualcold215/198/3974/0missing/21Word11sources/44cross409. Rootowned core923485; Main28084. Mainhistory217→223/outbox377,Ubuntu209→215/outbox0 exactoldraw/WOR/jobs/schema; backups retained.44qualified native (22normal+22ownblank) fullbytes/everyZIP independentlyRootchecked,66width22cancel, sixsourceeach. PriorUbuntu0/main4NOT_ACCEPTED retained, actualtotal48. Sourceguidespartial/YTappOnly/no verifiedsubmission. Public rolloutreport linked. RuntimeafterwardsWca9; currentPIDs/state inubuntu/main fields.",
+    "fujian_j": "HistoricalJpublicationacceptance: COMPLETE_BOTH_LIVE215/198; stage129474/final986048/Word346e unchanged. Sourceab CI339+2PASS; exact396280297B bundle670e/4247files, actualcold215/198/3974/0missing/21Word11sources/44cross409. Rootowned core923485; Main28084. Mainhistory217→223/outbox377,Ubuntu209→215/outbox0 exactoldraw/WOR/jobs/schema; backups retained.44qualified native (22normal+22ownblank) fullbytes/everyZIP independentlyRootchecked,66width22cancel, sixsourceeach. PriorUbuntu0/main4NOT_ACCEPTED retained, actualtotal48. Sourceguidespartial/YTappOnly/no verifiedsubmission. Public rolloutreport linked. RuntimeafterwardsWca9; currentPIDs/state inubuntu/main fields.",
     "draft_identity": "DEPLOYED source61/preview5; scopedv7 account/API/province/kind, stale in-flight responsescancelled. Root real isolated A/B/anonymous login/logout/draft/reset checksPASS; no productionaccounts/cases used.",
-    "source_queue": "OwnFuzhou16discovery retained. NineFujianregions published (H1+I2+J6). NextJinan350111 source09dced ownblankapplication+evidence, Klatest3own732anonymousTLSGET/SHA/CRC PASS but newnativepanelDOMincomplete (delayedCLI target); notpublished. Minhou evidence role conflict, Mawei sample+authorityalias, Fuzhoucityscopeonly remainhold. No genericcollectorport policy relaxation; no officialabsence inference.",
-    "public_docs": "READMEupdated215/198福建9 and truthful preview5snapshot209/runtime215 distinction. NewJrollout publicproof44native; docsnotyetcommitted.",
-    "warm_start": "PREPARED_ONLY: public_seed OptionB manifest/schema/twoJSONSHA/listgate retained; bothnonempty rocounts skipheavyproof; anyinit originalfullproofbeforewrites. Peer15TempPASS frozenbb6/ee9; Rootindependentreview/15tests/CIregistration/commit/deployment pending. Mainstartup about5minutes observed, no claimedruntimeimprovementyet.",
-    "collector_screenshot_optout": "PREPARED_ONLY: strictboolcapture_screenshots defaultTrue/False explicitomission+textHTML; originalnetwork/port/auth/attachment guards unchanged. Peer80Fake/TempPASS andRoot80PASS9.968; original3realprocesscasesseparate. Source94c/test671 uncommitted, actualconfig unchanged, worker841615 idle4jobs; no newrealjobs."
+    "source_queue": "K Rootindependent source19/Word81/all12external-link-free/8fixtureswholeZIPPASS; Root26actualPNG+18exactduplicate44pagecoverage,15exactCItestsPASS andrealTempstore→actualTSdisplayPASS. Own-onlyaliases/materialtypes/provinceNamefixes. STAGE d23c44632e61878f597e74528c949603a868ca471f5c83245be579deb7bc8b19 approvedonlycandidateQA; finalNone. Foursharedwire+strictKmodels/max9/source70d8 storedversionvalidator/testsinprogress, NOTseed/live. NextPingtan350128 ownnativeguide511e7f64c9481b5a0b6ff4a1 foundviaactualUI; service300201...preserved; sourceonlymaterialpanelsbeingread, notpublished.",
+    "public_docs": "J docs97c394c0 previouslypushed. NewW publicdeploymentreceipt/testreport/README/docsexplicitactualFalse ready for exactdocscommit; existingclient9assets unchanged.",
+    "warm_start": "COMMITTED2e11bf31 and RUNNINGca9 both. Exact locked15warm testsPASS; sourceCI365+2PASS; exact6334source/4247bundlef01603af/cold-v3 PASS215/198/3974/0missing/21Word11sources44cross. Root21switchguardsPASS; actualUbuntu onlycore923485→981932,6persistent/3protected/collectorpreserved,5.969s whole guarded source switch. Main only28084→39568,publicDBs+6userfiles unchanged. Actualservice startup alone not separately timed. Both8newnativePASS; Rootwholebytes+everyZIPmembersindependentregenerationPASS,36width/cancel/Esc/unknown/401/adminlogin guardsPASS. ExistingJ44notrecounted.",
+    "collector_screenshot_optout": "ACTUALLY_DEPLOYED: sourceca9+explicitconfigFalse6aa926...; ownedworker841615→994619/start100610423. Root51originalCIguardTempPASS44.568s plusnativeUbuntu4flockTempPASS; realdryPASS,execute1.26s+positiveidle/nativeconfigloaderFalse. All6persistent/core981932/digital/model and4jobs4journal4ACK10obs26files exactpreserved; backups retained. Otherconfigbytes/hosts2/defaultports unchanged. No newjobs/browser/screenshots/model invoked; no actualnewtextcaptureclaim."
   },
   "remaining": [
-    "Nationwide exact city/county/functionalzone guide/template verification",
-    "Jinan fresh own materialsDOM and independent candidate/Word/form/browser gates; Minhou/Maweiown conflicts",
-    "Warm-start optimization Root review/fullCI/actual deployment measurements",
-    "Text-only collector Root commit/explicitFalse config/positive-owned worker rollout before new queue jobs",
+    "Nationwide exact city/county/functionalzone own-guide/template verification",
+    "K3 strictdispatch/nativecandidatebrowser/final/publication; nextPingtan own-source only",
     "Trusted public HTTPS domain and Windows code signing",
     "PhysicalUSB installation and WeChat real IDE/publishing",
-    "Continuous OpenClaw broker still depends on Windows maintenance host and dedicated gateway; no systemautostart claim"
+    "Continuous publicissuesOpenClaw relay still depends on Windows maintenancehost/dedicatedgateway; no systemautostartclaim"
   ],
-  "head_commit": "ab837b304770e5aeaf1c70adcd0d60d11f666412",
+  "head_commit": "ca9ef3f293c9911765a1752d0c49147b0db4fbb7",
   "regression": {
     "latest_runtime_source_ci": {
-      "id": 41144487028,
+      "id": 41150204635,
       "status": "success",
-      "head": "ab837b304770e5aeaf1c70adcd0d60d11f666412",
-      "locked_backend_tests": 339,
+      "head": "ca9ef3f293c9911765a1752d0c49147b0db4fbb7",
+      "locked_backend_tests": 365,
       "separate_guarded_crash_tests": 2,
       "source_web_mini_and_committed_drift": "PASS"
     },
@@ -183,7 +184,27 @@
       "root_independent_files_and_all_zip_parts": true
     },
     "cold_ubuntu_actual": "PASS;21Word11sources44cross-JI409,0externalwrites/network/child/model",
-    "future_uncommitted_features": "Not included in runtimeCI sourceab; require new explicit CI and exactsourcefreeze before deployment"
+    "future_uncommitted_features": "OnlyK candidate dispatch integration, stage d23c/finalNone/unpublished. W bothcore andownedtextonlyworker are actual runningca9.",
+    "warm_runtime_native": {
+      "qualified_downloads": 8,
+      "status": "PASS",
+      "Root_independent_regeneration_all_ZIP_members": true,
+      "older_J44_not_recounted": true,
+      "viewports": [
+        375,
+        768,
+        1440
+      ],
+      "anonymous_cases": 401,
+      "models_screenshots_government_navigation": 0
+    },
+    "collector_worker_upgrade": {
+      "Root_original_guarded_Temp_tests": 51,
+      "native_Ubuntu_Temp_flock_primitives": 4,
+      "actual_dryrun_and_switch_and_readiness": "PASS",
+      "all_previous_data_and_protected_services_preserved": true,
+      "new_capture_jobs": 0
+    }
   },
   "github_docs_ci": {
     "id": 41094550417,
@@ -211,7 +232,7 @@
     "url": "https://github.com/DerpZhenjun/LabourLawyer/releases/tag/v1.2.0-preview.5",
     "anonymous_assets_verified": 9
   },
-  "head_commit_scope": "Frozen runtime source, documentation changes not yet committed; read actual GitHEAD separately",
+  "head_commit_scope": "Frozen runtime source ca9 both live; read actual GitHEAD separately for later docs/candidates",
   "historical_previous_ubuntu_state": {
     "guides": 209,
     "generatable": 192,
@@ -319,5 +340,74 @@
     "fujian_queue": "Author continues own discovery: taijiang350103 freezeec361...16pins; cangshan350104 freezed89c...16pins with own material1/1/1 unlikeTaijiang2; mawei350105 freezecc2ed...17pins, actualauthorityeconomicdevelopmentzone alias and evidenceformat actuallysame filled sample19cells: no blank/template inheritance. All SOURCE-ONLY; Jinan350111 discovery continues.",
     "operations": "b2a10245 exact17paths committed+pushed. Fresh243 offline241PASS2skip593.346s;12storage actualWindowsjunctionPASS;2crash3realguardedchildrenPASS. Initial244onlymklink-shell fixture rejected; guard notweakened, exactWindowscase nowseparate/LinuxnativeinCI. Runtime stillH207 untilnext source switch. Relay18RootPASS5.097s/sourcefrozen, UI11RootPASS2.031s/NodePASS, actualnew4ACK NOTyetdone.",
     "fujian_i": "LIVEBOTH209/192, historymain217 Ubuntu209. I61 bundle3995files82fc... coldv2PASS10Word5sources8cross-I409, unchangedfullguards; separateLinuxstorage12PASS. Core831078 ownHrollback6persistentfileSHA+3protectedservicesunchangedbeforeappend. ExactIhelperdry/execute/idempotentPASS; main377ACK+6dirtyfiles preserved. Actual16nativeWorddownloads allZIPmembers match Rootviewed12candidateWordpages; widths375/768/1440/cancel/sourcecopies2vs1 PASS. Firstchecker/systemPythonfailuresretained honestly."
+  },
+  "historical_J215_acceptance_state": {
+    "source_commit": "ab837b304770e5aeaf1c70adcd0d60d11f666412",
+    "github_source_ci": {
+      "id": 41144487028,
+      "status": "success",
+      "head": "ab837b304770e5aeaf1c70adcd0d60d11f666412",
+      "locked_backend_tests": 339,
+      "separate_guarded_crash_tests": 2,
+      "source_web_mini_and_committed_drift": "PASS"
+    },
+    "ubuntu": {
+      "source_commit": "ca9ef3f293c9911765a1752d0c49147b0db4fbb7",
+      "release": "releases/W215-20261031-f01603af",
+      "core_pid": 981932,
+      "core_start_ticks": "100508100",
+      "guides": 215,
+      "generatable": 198,
+      "history": 215,
+      "legacy_regional_outbox": 0,
+      "source_manifest_files": 4247,
+      "other_five_persistent_files_preserved": true,
+      "collector_pid": 841615,
+      "digital_pid": 481171,
+      "ollama_pid": 3952524,
+      "protected_services_and_queue_issues_evidence_unchanged": true,
+      "Windows_model_started": false
+    },
+    "new_work": {
+      "J": "COMPLETE_BOTH_LIVE215/198; stage129474/final986048/Word346e unchanged. Sourceab CI339+2PASS; exact396280297B bundle670e/4247files, actualcold215/198/3974/0missing/21Word11sources/44cross409. Rootowned core923485; Main28084. Mainhistory217→223/outbox377,Ubuntu209→215/outbox0 exactoldraw/WOR/jobs/schema; backups retained.44qualified native (22normal+22ownblank) fullbytes/everyZIP independentlyRootchecked,66width22cancel, sixsourceeach. PriorUbuntu0/main4NOT_ACCEPTED retained, actualtotal48. Sourceguidespartial/YTappOnly/no verifiedsubmission. Public rolloutreport linked.",
+      "fujian_j": "COMPLETE_BOTH_LIVE215/198; stage129474/final986048/Word346e unchanged. Sourceab CI339+2PASS; exact396280297B bundle670e/4247files, actualcold215/198/3974/0missing/21Word11sources/44cross409. Rootowned core923485; Main28084. Mainhistory217→223/outbox377,Ubuntu209→215/outbox0 exactoldraw/WOR/jobs/schema; backups retained.44qualified native (22normal+22ownblank) fullbytes/everyZIP independentlyRootchecked,66width22cancel, sixsourceeach. PriorUbuntu0/main4NOT_ACCEPTED retained, actualtotal48. Sourceguidespartial/YTappOnly/no verifiedsubmission. Public rolloutreport linked.",
+      "draft_identity": "DEPLOYED source61/preview5; scopedv7 account/API/province/kind, stale in-flight responsescancelled. Root real isolated A/B/anonymous login/logout/draft/reset checksPASS; no productionaccounts/cases used.",
+      "source_queue": "K3own native3materials/6bindings each PASS and 3originalTLSfiles732200SHA/CRC. CanonicalMinhou70d8f78ba93e94e9afecf7f3, old3b6 ID not silently reused. Candidateapp3+Jinanevi1, twoother evidence roleconflicts UNKNOWNnotabsence. Root26distinctPNG opens +18exactduplicateSHA covers44Wordpages; source19/Word81 fullindependentpinreview pending. Rootfoundactualdisplayaliases/materialformatgaps, agentonlyKrevisionTDD; NOstage/final/shared/seed/live publication. Fuzhoucitycannotserveascounty.",
+      "public_docs": "J docs97c394c0 pushed; README215/198 truthful. CurrentW rollout documentation pending browser/collector actual acceptance.",
+      "warm_start": "COMMITTED2e11bf31 and RUNNINGca9 both. Exact locked15warm testsPASS; sourceCI365+2PASS; exact6334source/4247bundlef01603af/cold-v3 PASS215/198/3974/0missing/21Word11sources44cross. Root21switchguardsPASS; actualUbuntu onlycore923485→981932,6persistent/3protected/collectorpreserved,5.969s whole guarded source switch. Main only28084→39568,publicDBs+6userfiles unchanged. Actualservice startup alone not separately timed. Ubuntu4newnativePASS, MAIN pending.",
+      "collector_screenshot_optout": "COMMITTEDca9 strictbool defaultTrue. Root80sdk-freeguardedPASS, GitHub365+2PASS. Newcore knowsflag, but actualworker841615 stillI209 andactualconfig326f defaultTrue; fourcomplete/zeroqueued, no newjobs. Dedicatedworker-onlypreservingrollout PREP ONLY, will explicitlysetFalse before newjobs. No screenshotwrite/retry."
+    },
+    "regression": {
+      "latest_runtime_source_ci": {
+        "id": 41150204635,
+        "status": "success",
+        "head": "ca9ef3f293c9911765a1752d0c49147b0db4fbb7",
+        "locked_backend_tests": 365,
+        "separate_guarded_crash_tests": 2,
+        "source_web_mini_and_committed_drift": "PASS"
+      },
+      "root_guarded_switch": {
+        "tests": 19,
+        "seconds": 20.158,
+        "status": "PASS",
+        "actual_process_signals_forbidden_in_unitrun": true
+      },
+      "root_live_harness_v2": {
+        "tests": 12,
+        "status": "PASS"
+      },
+      "root_live_harness_v3": {
+        "tests": 13,
+        "status": "PASS"
+      },
+      "actual_native_live": {
+        "qualified_downloads": 44,
+        "total_with_prior_partial": 48,
+        "status": "PASS",
+        "root_independent_files_and_all_zip_parts": true
+      },
+      "cold_ubuntu_actual": "PASS;21Word11sources44cross-JI409,0externalwrites/network/child/model",
+      "future_uncommitted_features": "K candidate only, not registered, not live. Wfeatures nowbothactualruntimeca9; collectorworker actualFalse stillpending."
+    }
   }
 }
