@@ -1,0 +1,250 @@
+[
+  {
+    "province": "beijing",
+    "name": "北京",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "tianjin",
+    "name": "天津",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "hebei",
+    "name": "河北",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "shanxi",
+    "name": "山西",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "neimenggu",
+    "name": "内蒙古",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "liaoning",
+    "name": "辽宁",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "jilin",
+    "name": "吉林",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "heilongjiang",
+    "name": "黑龙江",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "shanghai",
+    "name": "上海",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "jiangsu",
+    "name": "江苏",
+    "published_guides": 13,
+    "generatable": 13,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "zhejiang",
+    "name": "浙江",
+    "published_guides": 7,
+    "generatable": 7,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "anhui",
+    "name": "安徽",
+    "published_guides": 2,
+    "generatable": 1,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "fujian",
+    "name": "福建",
+    "published_guides": 21,
+    "generatable": 21,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "jiangxi",
+    "name": "江西",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "shandong",
+    "name": "山东",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "henan",
+    "name": "河南",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "hubei",
+    "name": "湖北",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "hunan",
+    "name": "湖南",
+    "published_guides": 4,
+    "generatable": 4,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "guangdong",
+    "name": "广东",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "guangxi",
+    "name": "广西",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "hainan",
+    "name": "海南",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "chongqing",
+    "name": "重庆",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "sichuan",
+    "name": "四川",
+    "published_guides": 180,
+    "generatable": 164,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "guizhou",
+    "name": "贵州",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "yunnan",
+    "name": "云南",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "xizang",
+    "name": "西藏",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "shaanxi",
+    "name": "陕西",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "gansu",
+    "name": "甘肃",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "qinghai",
+    "name": "青海",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "ningxia",
+    "name": "宁夏",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  },
+  {
+    "province": "xinjiang",
+    "name": "新疆",
+    "published_guides": 0,
+    "generatable": 0,
+    "all_counties_verified": false,
+    "remaining_status": "UNVERIFIED_OR_NOT_YET_PUBLISHED; NOT_OFFICIALLY_ABSENT"
+  }
+]
