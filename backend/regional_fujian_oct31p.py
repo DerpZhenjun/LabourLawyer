@@ -137,7 +137,7 @@ import json,re
 SOURCE_PINS_SHA256='591a682a3054ffb0a59f4e2814fc926049f17425c6a653c7f23d29ec02d96a1e'
 WORD_SHA256='95c2cf5db0a8fb7ec417b347178b8fc9b44d6f810343cd0aec594b27c5a70e63'
 STAGE_SHA256='91ac4fc2f88cf8716b5075ce19ea590491b7114ffc2331c7f836c89151e5b244'
-PUBLICATION_SHA256=None
+PUBLICATION_SHA256 = '3e9edd3b57163f8c5997e58ad524db2ea270e176f103b8c6b952fc8f529b246e'
 REGIONS={
  '350503':('fengze-350503','89a6739d1a513a7c5a77717a','113505030038213221400201430200201','https://fjzc.fjzhkj.cn:7881/'),
  '350504':('luojiang-350504','4a34ce0e167250f122410ffc','113505040038235128400201430200Y01','https://iam.e-govt.cn:8901/login')}
@@ -256,7 +256,9 @@ def candidate_fill(payload,*,root,private_review=False):
  if private_review is not True:raise PermissionError('No approval: explicit private review only')
  code,kind,data=validate_request(payload,root=root);return _layout_fill(original_bytes(code,kind,root=root),kind,data)
 def staged_candidate(code,*,root):_code(code);raise PermissionError('No own source/Word/stage approval')
-def published_guide(code,*,root):_code(code);raise PermissionError('No own publication approval')
+def published_guide(code, *, root):
+    return _published(code,root)
+
 def checked_reference_adapter(guide,template,kind,*,root):raise PermissionError('Unregistered source-only proposal')
 
 
@@ -305,6 +307,7 @@ PUBLICATION_RECEIPT=QA_REPORT+'/FINAL-BROWSER-QA.json'
 SOURCE_VERSIONS={'350503': '0806ccef8ab4037d1f9a1f3bba41ea805c19c26ba247e920310db45757838a86', '350504': 'd4faf4fbd11248451329370d55722f665bd09c9bd0144953c768360dc0517313'}
 ROOT_WORD_REVIEW_SHA256='81729e3264d43e2f943be6d29817e5d9ee0f6338875044a1528d6ebe7046e226'
 ROOT_SOURCE_REVIEW_SHA256='67b25ec39f4a000966b1885373b67d0bb8ef8a8608ad2cebcfb6b90c2cc78775'
+BROWSER_KIT_FREEZE_SHA256='1f185d7e6ca01ffe0fb0275f977ecd1d004baf871b1dffed2b351682c7dc6f7c'
 _METADATA={'version','region_id','content_hash'}
 _FAILURES=(ValueError,OSError,KeyError,TypeError,AttributeError,StopIteration)
 
@@ -326,14 +329,17 @@ def _matches(guide,canonical):
     return all(key in guide and exact(guide[key],value) for key,value in canonical.items())
 
 def approval_requirements(*,stage=True):
+    require(type(stage) is bool)
     result={'scope':'PRIVATE_STAGE_PROPOSAL_NOT_REGISTERED','identities':[{'region_code':c,'source_id':REGIONS[c][1],'service_code':REGIONS[c][2],'manifest_sha256':SOURCE_VERSIONS[c]} for c in REGIONS],
             'word_manifest_sha256':WORD_SHA256,'eligible_originals':4,'approved_by':'independent_root_word_gate','visual_review':'PASS','source_projection_review':'P_OWN_SOURCE_BYTE_PARITY_CHECKED',
             'can_publish':False,'model_calls':0,'Root_source_review_sha256':ROOT_SOURCE_REVIEW_SHA256,'Root_Word_review_sha256':ROOT_WORD_REVIEW_SHA256,
             'stress_evidence_signature_continues_on_tenth_page':True,'browser_QA':'NOT_RUN','native_final_QA':'NOT_RUN','publication_approval':None}
     if not stage:
-        # No final receipt is supplied or accepted by this private stage proposal.
-        raise ValueError('Own P final/publication gate has no approval')
+        result.update(scope='OWN_P_FINAL_PUBLICATION',can_publish=True,
+                      stage_receipt_sha256=STAGE_SHA256,browser_QA='PASS',native_final_QA='PASS',
+                      publication_approval='APPROVED',browser_kit_freeze_sha256=BROWSER_KIT_FREEZE_SHA256)
     return result
+
 
 def _word_manifest(root):
     require(type(WORD_SHA256) is str and re.fullmatch('[a-f0-9]{64}',WORD_SHA256))
@@ -374,38 +380,59 @@ def _word_manifest(root):
     return word
 
 def _receipt(root,stage=True):
+    require(type(stage) is bool)
     pin=STAGE_SHA256 if stage else PUBLICATION_SHA256
     require(type(pin) is str and re.fullmatch('[a-f0-9]{64}',pin))
-    source_files(root);word=_word_manifest(root);requirements=approval_requirements(stage=stage)
+    if stage:
+        source_files(root);word=_word_manifest(root)
+    else:
+        word_raw=_raw(root,WORD_MANIFEST);require(sha256(word_raw).hexdigest()==WORD_SHA256);word=json.loads(word_raw)
+    requirements=approval_requirements(stage=stage)
     filename=STAGE_RECEIPT if stage else PUBLICATION_RECEIPT;raw=_raw(root,filename);require(sha256(raw).hexdigest()==pin);receipt=json.loads(raw)
-    require(type(receipt) is dict and receipt.keys()==requirements.keys()|{'files'} and all(exact(receipt[k],v) for k,v in requirements.items()) and exact(receipt['files'],word['files']))
-    return {'receipt':filename,'sha256':pin,'scope':'PRIVATE_STAGE_PROPOSAL_NOT_REGISTERED'}
+    require(type(receipt) is dict and receipt.keys()==requirements.keys()|{'files'} and all(exact(receipt[k],v) for k,v in requirements.items()))
+    if stage:require(exact(receipt['files'],word['files']))
+    else:
+        leaves=receipt['files'];require(type(leaves) is list and len(leaves)==78)
+        for leaf in leaves:
+            require(type(leaf) is dict and set(leaf)=={'path','bytes','sha256'} and type(leaf['path']) is str
+                    and type(leaf['bytes']) is int and leaf['bytes']>0 and type(leaf['sha256']) is str and re.fullmatch('[a-f0-9]{64}',leaf['sha256']))
+        leafmap={leaf['path']:leaf for leaf in leaves}
+        require(len(leafmap)==78 and set(leafmap)=={leaf['path'] for leaf in word['files']}|set(_native_names()))
+        require(all(exact(leafmap[leaf['path']],leaf) for leaf in word['files']))
+        for leaf in leaves:
+            body=_raw(root,leaf['path']);require(len(body)==leaf['bytes'] and sha256(body).hexdigest()==leaf['sha256'])
+        # Reject malformed outer proof before the expensive stage replay. Every
+        # accepted final operation still revalidates the complete stage once.
+        _receipt(root,True)
+        _native_proof(root)
+    return {'receipt':filename,'sha256':pin,'scope':requirements['scope']}
+
 
 def approval_files(root):
     _receipt(root);word=_word_manifest(root)
     return [WORD_MANIFEST,STAGE_RECEIPT,*[f['path'] for f in word['files']]]
 
 def staged_candidate(code,*,root):
-    guide=prepare_candidate(code,root=root);guide['candidate_adapter_evidence']=_receipt(root)
-    guide.update(can_generate=True,offline_candidate=False,generation_adapter=ADAPTER,publication_status='staged_own_word_qa_private_proposal')
-    for kind,(_,file_id,_,_) in KINDS.items():
-        template=next(row for row in guide['templates'] if row['id']==file_id)
-        require(template['official_control_type']=='format' and template['local_original']==KINDS[kind][0])
-        template.update(can_generate=True,document_types=[kind],adapter=ADAPTER,generation_mode='blank',official_kind='blank',eligible_own_kind=kind)
-    return guide
+    guide=prepare_candidate(code,root=root)
+    return _stage_projection(guide,_receipt(root))
+
 
 def _bound(guide,root,allow_source=False):
     require(type(guide) is dict);code=guide.get('region_code');raw=parse_capture(code,root=root)
     if allow_source and _matches(guide,raw):return raw
-    require(guide.get('published') is not True and 'publication_adapter_evidence' not in guide)
-    canonical=staged_candidate(code,root=root);require(_matches(guide,canonical));return canonical
+    canonical=_published(code,root) if guide.get('published') is True or 'publication_adapter_evidence' in guide else staged_candidate(code,root=root)
+    require(_matches(guide,canonical));return canonical
+
 
 def with_capabilities(guide,*,root):
     _bound(guide,root,allow_source=True);return deepcopy(guide)
 
 def with_publication_evidence(guide,*,root):
-    _bound(guide,root);_receipt(root,False)
-    raise ValueError('Own P private stage proposal has no final/publication approval')
+    require(type(guide) is dict and _matches(guide,staged_candidate(guide.get('region_code'),root=root)))
+    result=_published(guide['region_code'],root)
+    for key in _METADATA & set(guide):result[key]=deepcopy(guide[key])
+    return result
+
 
 def checked_adapter(guide,template,kind,*,root):
     canonical=_bound(guide,root);_,file_id,_,_=_kind(kind);expected=next(row for row in canonical['templates'] if row['id']==file_id)
@@ -441,3 +468,167 @@ def fill_document(guide,template,kind,path,data,*,root):
     return _PatchedDocument(candidate_fill(request,root=root,private_review=True),root)
 
 SOURCE_BASE=PurePosixPath('reports/overnight-gap-closure-20261030/localities/fujian-p-source-projection')
+
+
+def _native_names():
+    return [QA_REPORT+'/'+name for name in ['BROWSER-RESULT.json','ROOT-NATIVE-REVIEW.json',
+            *[f'{code}-{kind}-CONTRACT.json' for code in REGIONS for kind in KINDS]]]
+
+
+
+def native_review_requirements(browser_result_sha256):
+    require(type(browser_result_sha256) is str and re.fullmatch('[a-f0-9]{64}',browser_result_sha256))
+    return {'status':'ROOT_P_OWN_NATIVE_BROWSER_PASS','source_versions':deepcopy(SOURCE_VERSIONS),
+            'browser_result_sha256':browser_result_sha256,'browser_kit_freeze_sha256':BROWSER_KIT_FREEZE_SHA256,
+            'native_downloads':8,'contracts':4,'whole_and_all_ZIP_equal':True,'screenshots':0,'model_calls':0,
+            'government_http_calls':0,'auth_or_submission':False,'approved_by':'independent_root_native_gate',
+            'actual_browser_review':True,'publication_approval':'APPROVED'}
+
+
+
+def _native_parts(body):
+    with ZipFile(BytesIO(body)) as archive:
+        require(archive.testzip() is None)
+        return [{'part':name,'bytes':len(archive.read(name)),'sha256':sha256(archive.read(name)).hexdigest()} for name in archive.namelist()]
+
+
+
+def _native_contract(contract,code,kind,guide,version):
+    require(type(contract) is dict and set(contract)=={'schema_version','context','fields','defaults','policy','contract_id'})
+    schema=production_schema_descriptor(code,kind);spec=KINDS[kind]
+    context={k:guide[k] for k in ['province','city','district','region_code','source_id']}
+    context.update(version=version,template_id=spec[1],kind=kind,mode='blank',adapter=ADAPTER,
+                   schema_id=schema['schema_id'],schema_version=1,source_version=SOURCE_VERSIONS[code],
+                   template_sha256=spec[2],template_version='sha256:'+spec[2])
+    expected={'schema_version':1,'context':context,'fields':schema['fields'],'defaults':schema['defaults'],'policy':schema['policy']}
+    expected['contract_id']=sha256(json.dumps(expected,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+    require(exact(contract,expected));return contract
+
+
+
+def _native_marker(marker):
+    require(type(marker) is dict and marker.get('release_id')=='oct30night-own-localities-v1'
+            and type(marker.get('adapters')) is list and ADAPTER in marker['adapters']
+            and type(marker.get('candidate_stage_receipts')) is dict and marker['candidate_stage_receipts'].get(ADAPTER)==STAGE_SHA256
+            and type(marker.get('publication_receipts')) is dict and ADAPTER in marker['publication_receipts'] and marker['publication_receipts'][ADAPTER] is None
+            and marker.get('source_bound') is True and marker.get('models_required') is False and marker.get('regional_store')=='alternate')
+    expected={'guides':2,'history':2,'outbox':0,'directory':3974,'versions':[1,2],'models_disabled':True,
+              'worker_enabled':False,'bootstrap_enabled':False,'user_or_case_routes':False,'scope':'private-own-p-stage'}
+    require(exact(marker.get('candidate_safety'),expected))
+
+
+
+def _native_proof(root):
+    """Recheck six own native leaves; actual browser authenticity is Root's pinned review."""
+    raw=_raw(root,QA_REPORT+'/BROWSER-RESULT.json');report=json.loads(raw)
+    review=_json(root,QA_REPORT+'/ROOT-NATIVE-REVIEW.json')
+    require(exact(review,native_review_requirements(sha256(raw).hexdigest())))
+    require(type(report) is dict and report.get('status')=='PASS' and report.get('scope')=='PRIVATE_OWN_P_STAGE_ONLY')
+    for key in ['screenshots','HAR','models','government_http_calls']:require(exact(report.get(key),0))
+    for key in ['owned_browser_closed','fresh_owned_browser_context','cross_district_draft_reset','unknown_scope_removed_fields']:require(report.get(key) is True)
+    require(report.get('auth_or_submission') is False)
+    for key in ['console_errors','page_errors','blocked_requests']:require(exact(report.get(key),[]))
+    counts={'downloads':8,'native_download_events':8,'posts':8,'lookups':2,'contracts':4,'viewports':12,
+            'defaults':4,'cancel_checks':4,'negative_GET_checks':18,'negative_POST_checks':40,'original_HTTP_checks':4}
+    for key,count in counts.items():require(type(report.get(key)) is list and len(report[key])==count)
+    _native_marker(report.get('marker_before_browser'));_native_marker(report.get('marker_after_browser'))
+    guides={};contracts={};pairs={(code,kind) for code in REGIONS for kind in KINDS}
+    for version,code in enumerate(REGIONS,1):
+        # The caller already validated the stage receipt and its entire Word proof.
+        # Rebuild the stage DTO without recursively repeating that proof per lookup.
+        guide=_stage_projection(prepare_candidate(code,root=root),_stage_evidence());guides[code]=guide;lookup=report['lookups'][version-1]
+        expected_case={'code':code,'district':guide['district'],'source_id':guide['source_id'],'city':guide['city'],
+                       'version':version,'kinds':list(KINDS),'source_version':guide['source_version'],'authority':guide['authority'],
+                       'observed_auth_boundary':REGIONS[code][3],'material_copies':[m['copies'] for m in guide['materials']],
+                       'material_keys':[m['id'] for m in guide['materials']],'official_material_ids':[m['official_material_id'] for m in guide['materials']],
+                       'material_instructions':[m['instructions'] for m in guide['materials']],'template_ids':[t['id'] for t in guide['templates']]}
+        require(type(lookup) is dict and exact(lookup.get('case'),expected_case))
+        for key in ['source_url','source_version','materials','fields','templates','channel']:require(exact(lookup.get(key),guide[key]))
+        require(lookup.get('observed_auth_boundary')==REGIONS[code][3] and lookup.get('submission_verified') is False)
+        require(exact(lookup.get('selected_controls'),{'city':guide['city'],'district':guide['district'],'source':guide['source_id'],'online_link':guide['source_url']}))
+        for kind in KINDS:
+            contract=_native_contract(_json(root,f'{QA_REPORT}/{code}-{kind}-CONTRACT.json'),code,kind,guide,version)
+            contracts[(code,kind)]=contract
+    require(len({contract['contract_id'] for contract in contracts.values()})==4 and exact(report['contracts'],list(contracts.values())))
+    seen=set();requests=[]
+    for row in report['downloads']:
+        require(type(row) is dict);code=row.get('code');kind=row.get('kind');scenario=row.get('scenario')
+        require(type(code) is str and type(kind) is str and (code,kind) in pairs and type(scenario) is str and scenario in {'filled','blank'})
+        key=(code,kind,scenario);require(key not in seen);seen.add(key);guide=guides[code];contract=contracts[(code,kind)];context=contract['context'];spec=KINDS[kind]
+        data=_json(root,f'{QA_REPORT}/fixtures/{code}-{kind}-normal.json')['data'] if scenario=='filled' else defaults(code,kind)
+        expected={k:context[k] for k in ['province','city','district','source_id','version','template_id','kind','mode']}
+        expected.update(contract_id=contract['contract_id'],data=data);require(exact(row.get('request'),expected));requests.append(expected)
+        require(row.get('file')==f'native-downloads/{code}-{kind}-{scenario}.docx' and row.get('native_download_event') is True and row.get('native_download_failure') is None
+                and row.get('whole_and_all_zip_members_equal') is True and row.get('zip_crc')=='PASS' and type(row.get('suggested_filename')) is str and bool(row['suggested_filename']))
+        body=_raw(root,f'{QA_REPORT}/word/{code}-{kind}-normal.docx') if scenario=='filled' else original_bytes(code,kind,root=root)
+        require(exact(row.get('bytes'),len(body)) and row.get('sha256')==sha256(body).hexdigest() and exact(row.get('parts'),_native_parts(body)))
+        require(exact(row.get('template_binding'),{'verified_via':'own source+lookup+full15 contract+POST','material_id':None,'template_id':spec[1],'template_sha256':spec[2]}))
+        headers=row.get('response_headers');require(type(headers) is dict)
+        for k,v in {'x-guide-source-id':guide['source_id'],'x-guide-version':str(context['version']),'x-form-contract-id':contract['contract_id'],
+                    'x-document-origin':'official-blank-filled','cache-control':'no-store'}.items():require(exact(headers.get(k),v))
+        require(type(headers.get('content-type')) is str and headers['content-type'].startswith('application/vnd.openxmlformats-officedocument.wordprocessingml.document')
+                and type(headers.get('content-disposition')) is str and 'attachment;' in headers['content-disposition'])
+        if 'x-template-sha256' in headers:require(headers['x-template-sha256']==spec[2])
+    require(seen=={(code,kind,scenario) for code,kind in pairs for scenario in ['filled','blank']} and exact(report['posts'],requests))
+    require(exact(report['native_download_events'],[{'suggested_filename':row['suggested_filename']} for row in report['downloads']]))
+    viewport_keys=set()
+    for row in report['viewports']:
+        require(type(row) is dict and type(row.get('code')) is str and type(row.get('kind')) is str and (row['code'],row['kind']) in pairs
+                and type(row.get('width')) is int and row['width'] in {375,768,1440} and type(row.get('scroll')) is int and 0<=row['scroll']<=row['width'])
+        viewport_keys.add((row['code'],row['kind'],row['width']))
+    require(viewport_keys=={(code,kind,width) for code,kind in pairs for width in [375,768,1440]})
+    cancel_keys=set();default_keys=set();original_keys=set()
+    for row in report['cancel_checks']:
+        require(type(row) is dict and type(row.get('code')) is str and type(row.get('kind')) is str and (row['code'],row['kind']) in pairs)
+        key=(row['code'],row['kind']);cancel_keys.add(key)
+        require(exact(row,{'code':key[0],'kind':key[1],'cancel_and_escape_posts':0,'focus_returned':True,'tab_trapped':True,'dialog375_visible':True}))
+    for row in report['defaults']:
+        require(type(row) is dict and type(row.get('code')) is str and type(row.get('kind')) is str and (row['code'],row['kind']) in pairs)
+        key=(row['code'],row['kind']);default_keys.add(key);context=contracts[key]['context']
+        require(row.get('source_id')==context['source_id'] and exact(row.get('version'),context['version']) and '虚构' in json.dumps(row.get('actual'),ensure_ascii=False))
+        validate_request(envelope(key[0],key[1],row['actual'],root=root),root=root)
+        actual=row['actual']
+        if key[1]=='evidence':require(len(actual.get('evidenceList',[]))==1 and bool(actual['evidenceList'][0].get('name')))
+        else:require(bool(actual.get('applicantName')) and bool(actual.get('respondentName')) and bool(actual.get('factsReason')) and any(actual.get('requests',[])))
+    for row in report['original_HTTP_checks']:
+        require(type(row) is dict and type(row.get('code')) is str and type(row.get('kind')) is str and (row['code'],row['kind']) in pairs)
+        key=(row['code'],row['kind']);original_keys.add(key);context=contracts[key]['context'];body=original_bytes(*key,root=root)
+        require(exact(row,{'code':key[0],'kind':key[1],'status':200,'bytes':len(body),'sha256':sha256(body).hexdigest(),
+                           'parts':_native_parts(body),'native_download':False,'source_id':context['source_id'],'version':context['version']}))
+    require(cancel_keys==default_keys==original_keys==pairs)
+    for key,statuses in [('negative_GET_checks',{404,409}),('negative_POST_checks',{409,422})]:
+        for row in report[key]:require(type(row) is dict and type(row.get('code')) is str and row['code'] in REGIONS
+                                      and type(row.get('status')) is int and row['status'] in statuses and row.get('native_download') is False)
+    require([row['status'] for row in report['negative_POST_checks']].count(409)==18 and [row['status'] for row in report['negative_POST_checks']].count(422)==22)
+    return report
+
+
+
+def publication_files(root):
+    _receipt(root,False)
+    return [*approval_files(root),PUBLICATION_RECEIPT,*_native_names()]
+
+
+
+def _stage_evidence():
+    return {'receipt':STAGE_RECEIPT,'sha256':STAGE_SHA256,'scope':'PRIVATE_STAGE_PROPOSAL_NOT_REGISTERED'}
+
+
+
+def _stage_projection(guide,evidence):
+    guide['candidate_adapter_evidence']=evidence
+    guide.update(can_generate=True,offline_candidate=False,generation_adapter=ADAPTER,publication_status='staged_own_word_qa_private_proposal')
+    for kind,(_,file_id,_,_) in KINDS.items():
+        template=next(row for row in guide['templates'] if row['id']==file_id)
+        require(template['official_control_type']=='format' and template['local_original']==KINDS[kind][0])
+        template.update(can_generate=True,document_types=[kind],adapter=ADAPTER,generation_mode='blank',official_kind='blank',eligible_own_kind=kind)
+    return guide
+
+
+
+def _published(code,root):
+    final_evidence=_receipt(root,False)
+    guide=_stage_projection(prepare_candidate(code,root=root),_stage_evidence())
+    guide['publication_adapter_evidence']=final_evidence
+    guide.update(published=True,publication_status='published')
+    return guide

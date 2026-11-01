@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "exported_at": "2026-10-31T08:46:40.187391+00:00",
+  "exported_at": "2026-11-01T06:35:34.716529+00:00",
   "scope": "已发布的公开指南与地区目录；目录不等于指南覆盖，不包含个人案件或浏览器会话。",
-  "guides": 223,
-  "generatable_localities": 206,
+  "guides": 227,
+  "generatable_localities": 210,
   "directory_rows": 3974,
   "files": {
-    "guides.json": "2adf8440082180cb1e1d709ea93286d2238adaae9f052a37b81d9dc11fadf5e9",
+    "guides.json": "62357aa4a6d32e5c4693ece2f2014e3752d5aa3a4a39bda0f3957b763ef43da4",
     "directory.json": "913daa7dd7bcbec570945fd7cc8ed08ae55b15c50665e5f8f4d967b62fc85ba8"
   },
   "release_id": "oct30night-own-localities-v1"

@@ -1,0 +1,19 @@
+{
+  "status": "ROOT_P_OWN_NATIVE_BROWSER_PASS",
+  "source_versions": {
+    "350503": "0806ccef8ab4037d1f9a1f3bba41ea805c19c26ba247e920310db45757838a86",
+    "350504": "d4faf4fbd11248451329370d55722f665bd09c9bd0144953c768360dc0517313"
+  },
+  "browser_result_sha256": "ed17d7e34d6667d70ae3c1376d6d4fb9bd926eebd4a0d37d79b063cc08c31493",
+  "browser_kit_freeze_sha256": "1f185d7e6ca01ffe0fb0275f977ecd1d004baf871b1dffed2b351682c7dc6f7c",
+  "native_downloads": 8,
+  "contracts": 4,
+  "whole_and_all_ZIP_equal": true,
+  "screenshots": 0,
+  "model_calls": 0,
+  "government_http_calls": 0,
+  "auth_or_submission": false,
+  "approved_by": "independent_root_native_gate",
+  "actual_browser_review": true,
+  "publication_approval": "APPROVED"
+}

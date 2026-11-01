@@ -17,6 +17,7 @@ class OwnProposalTests(unittest.TestCase):
 
     def setUp(self):
         self.assertIsNotNone(P, 'Own source-only parser/adapter proposal is not implemented')
+        self.enterContext(patch.object(P,'PUBLICATION_SHA256',None))
 
     def test_own_identities_and_metadata_raw_no_promotion(self):
         for code in P.REGIONS:
@@ -190,6 +191,7 @@ class POwnMetadataTests(unittest.TestCase):
 
     def setUp(self):
         self.assertIsNotNone(P, 'Own P parser not implemented')
+        self.enterContext(patch.object(P,'PUBLICATION_SHA256',None))
 
     def test_real_public_evidence_roundtrip_does_not_promote_raw_generation(self):
         for code in P.REGIONS:
@@ -222,7 +224,7 @@ class POwnMetadataTests(unittest.TestCase):
         for code in P.REGIONS:
             with patch.object(P,'STAGE_SHA256',None):
                 with self.assertRaises(ValueError):P.staged_candidate(code, root=HERE)
-            with self.assertRaises(PermissionError):
+            with self.assertRaises((ValueError, PermissionError)):
                 P.published_guide(code, root=HERE)
 
     def test_source21_partial_handling_and_scanning_roles_are_own(self):
@@ -246,6 +248,7 @@ class POwnMetadataTests(unittest.TestCase):
 class StageProposalTests(unittest.TestCase):
     def setUp(self):
         self.assertTrue(callable(getattr(P,'checked_adapter',None)),'Own stage receipt/canonical binding interface is not implemented')
+        self.enterContext(patch.object(P,'PUBLICATION_SHA256',None))
     def clone(self):
         temp=tempfile.TemporaryDirectory(prefix='p-own-stage-');self.addCleanup(temp.cleanup);root=Path(temp.name)
         for part in [P.SOURCE_BASE,Path(P.QA_REPORT)]:shutil.copytree(HERE/part,root/part)

@@ -1,4 +1,4 @@
-"""Two independently pinned O districts: real Temp ASGI and bootstrap only."""
+"""Two independently pinned P districts: real Temp ASGI and bootstrap only."""
 from contextlib import contextmanager
 from copy import deepcopy
 from hashlib import sha256
@@ -17,7 +17,7 @@ IDENTITIES=[('350503','泉州市','丰泽区','89a6739d1a513a7c5a77717a'),('3505
 class PDispatchTests(unittest.TestCase):
  @contextmanager
  def isolated(self,phase='stage',bootstrap=False):
-  with tempfile.TemporaryDirectory(prefix='own-p-asgi-') as temp:
+  with tempfile.TemporaryDirectory(prefix='own-p-asgi-') as temp,patch.object(own,'PUBLICATION_SHA256',None):
    root=Path(temp);names=set(own.source_files(ROOT))
    if phase=='stage':names.update(own.approval_files(ROOT))
    for name in names:
@@ -48,8 +48,9 @@ class PDispatchTests(unittest.TestCase):
   from regional_form_contracts import SUPPORTED_ADAPTERS,PUBLIC_PROOF_ADAPTERS
   self.assertIn(own.ADAPTER,SUPPORTED_ADAPTERS);self.assertIn(own.ADAPTER,PUBLIC_PROOF_ADAPTERS)
   caps=routes.release_capabilities();self.assertEqual(caps['candidate_stage_receipts'][own.ADAPTER],own.STAGE_SHA256)
-  self.assertIsNone(caps['publication_receipts'][own.ADAPTER]);self.assertIsNone(own.PUBLICATION_SHA256);self.assertFalse(caps['models_required'])
+  self.assertEqual(caps['publication_receipts'][own.ADAPTER],own.PUBLICATION_SHA256);self.assertEqual(routes.FUJIAN_P_PUBLICATION_SHA256,own.PUBLICATION_SHA256);self.assertFalse(caps['models_required'])
   for kind in own.KINDS:self.assertEqual(routes.generation_request_model(own.ADAPTER,kind).__module__,'regional_fujian_p_request')
+ @patch.object(own,'PUBLICATION_SHA256',None)
  def test_actual_stage_output_production_shape_retains_raw_classification_and_own_binding(self):
   for code,city,district,sid in IDENTITIES:
    try:g=own.staged_candidate(code,root=ROOT)
@@ -92,7 +93,7 @@ class PDispatchTests(unittest.TestCase):
     r=c.get('/regional/lookup',params={'province':'fujian','city':city,'district':district});self.assertEqual(r.status_code,200);self.assertIsNone(r.json()['source_id']);self.assertEqual(r.json()['templates'],[])
   for code,*_ in IDENTITIES:
    with patch.object(own,'STAGE_SHA256',None),self.assertRaises(ValueError):own.staged_candidate(code,root=ROOT)
-   with self.assertRaises((ValueError,PermissionError)):own.published_guide(code,root=ROOT)
+   with patch.object(own,'PUBLICATION_SHA256',None),self.assertRaises((ValueError,PermissionError)):own.published_guide(code,root=ROOT)
  def test_cross_district_same_SHA_foreign_stale_version_and_metadata_refused(self):
   with self.isolated() as (_,store,c):
    a,b=self.guides(store);contracts=[self.contract(c,g,'application') for g in [a,b]]

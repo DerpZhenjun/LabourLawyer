@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "context": {
+    "province": "fujian",
+    "city": "泉州市",
+    "district": "丰泽区",
+    "region_code": "350503",
+    "source_id": "89a6739d1a513a7c5a77717a",
+    "version": 1,
+    "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+    "kind": "evidence",
+    "mode": "blank",
+    "adapter": "fujian_fengze_luojiang_own_blank_oct31p_v1",
+    "schema_id": "private-quanzhou-p-own-350503-evidence-v1",
+    "schema_version": 1,
+    "source_version": "0806ccef8ab4037d1f9a1f3bba41ea805c19c26ba247e920310db45757838a86",
+    "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "template_version": "sha256:d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+  },
+  "fields": [
+    {
+      "key": "evidenceList",
+      "type": "object_list",
+      "maxItems": 9,
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "maxLength": 60,
+          "label": "证据名称"
+        },
+        {
+          "key": "pageCount",
+          "type": "text",
+          "maxLength": 4,
+          "label": "页数"
+        },
+        {
+          "key": "originalType",
+          "type": "text",
+          "maxLength": 4,
+          "label": "原件或复印件",
+          "choices": [
+            "原件",
+            "复印件"
+          ]
+        },
+        {
+          "key": "purpose",
+          "type": "text",
+          "maxLength": 80,
+          "label": "证明目的"
+        },
+        {
+          "key": "pageRange",
+          "type": "text",
+          "maxLength": 32,
+          "label": "页码范围"
+        }
+      ],
+      "label": "证据清单"
+    }
+  ],
+  "defaults": {
+    "evidenceList": [
+      {
+        "name": "",
+        "pageCount": "",
+        "originalType": "",
+        "purpose": "",
+        "pageRange": ""
+      }
+    ]
+  },
+  "policy": {
+    "unknown_fields": "reject",
+    "capacity_is_legal_requirement": false,
+    "capacity_is_official_requirement": false,
+    "signature_date_committee_copies": "not_accepted",
+    "invalid_xml": "reject",
+    "text_controls": "newline_only",
+    "trim_text": true
+  },
+  "contract_id": "4a4321b921de04f4896c4380c037e9138c209af105252e0a000fc1f7fe05e7ca"
+}

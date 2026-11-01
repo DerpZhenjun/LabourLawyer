@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "context": {
+    "province": "fujian",
+    "city": "泉州市",
+    "district": "丰泽区",
+    "region_code": "350503",
+    "source_id": "89a6739d1a513a7c5a77717a",
+    "version": 1,
+    "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+    "kind": "application",
+    "mode": "blank",
+    "adapter": "fujian_fengze_luojiang_own_blank_oct31p_v1",
+    "schema_id": "private-quanzhou-p-own-350503-application-v1",
+    "schema_version": 1,
+    "source_version": "0806ccef8ab4037d1f9a1f3bba41ea805c19c26ba247e920310db45757838a86",
+    "template_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+    "template_version": "sha256:093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+  },
+  "fields": [
+    {
+      "key": "applicantName",
+      "type": "text",
+      "maxLength": 180,
+      "label": "申请人"
+    },
+    {
+      "key": "agentName",
+      "type": "text",
+      "maxLength": 180,
+      "label": "委托代理人"
+    },
+    {
+      "key": "respondentName",
+      "type": "text",
+      "maxLength": 180,
+      "label": "被申请人"
+    },
+    {
+      "key": "requests",
+      "type": "text_list",
+      "maxItems": 3,
+      "maxLength": 360,
+      "label": "仲裁请求"
+    },
+    {
+      "key": "factsReason",
+      "type": "text",
+      "maxLength": 2400,
+      "label": "事实和理由"
+    }
+  ],
+  "defaults": {
+    "applicantName": "",
+    "agentName": "",
+    "respondentName": "",
+    "requests": [
+      ""
+    ],
+    "factsReason": ""
+  },
+  "policy": {
+    "unknown_fields": "reject",
+    "capacity_is_legal_requirement": false,
+    "capacity_is_official_requirement": false,
+    "signature_date_committee_copies": "not_accepted",
+    "invalid_xml": "reject",
+    "text_controls": "newline_only",
+    "trim_text": true
+  },
+  "contract_id": "491a17b3c4a5c62ebcd626e45b7a0604c45212cf16797d1970d0cf33ebb2117d"
+}
