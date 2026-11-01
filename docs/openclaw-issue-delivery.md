@@ -82,3 +82,7 @@ python -m unittest discover -s backend/tests -p test_regional_issue_delivery.py 
 当前持续进程在 Windows 维护端运行，每120秒检查一次，没有安装系统自动启动任务。维护端、SSH 或网关离线时，Ubuntu 仍持久保存新问题，恢复后继续投递；不能宣称此部署完全脱离维护端运行。主站历史377条、旧独立投递库2条、新采集链路4条分别保留，不相加作为去重后的全国问题总数。
 
 [2026-10-31实际服务与管理页验收](../reports/overnight-gap-closure-20261030/openclaw/COLLECTOR-ISSUE-DELIVERY-20261031.json)包括首次四条真实回执、零待投递及重复投递不变。最终管理页测试会话已正常退出；早期失败测试关闭浏览器后的会话撤销未能证明，未清理其他账号会话。此项测试限制在报告中保留。
+
+## 2026-11-01运行恢复
+
+维护端原网关和持续桥接停止后，已检查同一私有profile的cron均关闭、仅允许memory_get、无嵌入和心跳，再恢复原网关及绑定原Ubuntu公开问题库的镜像进程。没有更改全局或私有profile配置。首轮0待投递、0新增ACK；四条完整历史回执文件重新校验通过，不冒充本次新增服务回读。仍依赖维护端运行，没有安装系统服务或开机任务；未调用模型。详见[实际恢复结果](../reports/overnight-gap-closure-20261030/openclaw/COLLECTOR-RELAY-RECOVERY-20261101.json)。

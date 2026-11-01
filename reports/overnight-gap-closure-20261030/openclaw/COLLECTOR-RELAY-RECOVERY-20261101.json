@@ -1,0 +1,17 @@
+{
+  "status": "GATEWAY_AND_BOUND_COLLECTOR_RELAY_RECOVERED",
+  "verified_at": "2026-11-01T05:07:34.627846+00:00",
+  "gateway_healthy_at_start": true,
+  "own_gateway_and_relay_alive": true,
+  "interval_seconds": 120,
+  "continuous_successful_rounds": 1,
+  "pending": 0,
+  "new_service_ACKs": 0,
+  "historical_complete_receipt_files_revalidated": 4,
+  "historical_ACKs_are_not_new_reads": true,
+  "profile_cron_jobs_disabled": true,
+  "private_and_global_config_unchanged": true,
+  "models": 0,
+  "screenshots": 0,
+  "still_requires_Windows_maintenance_host": true
+}

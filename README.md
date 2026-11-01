@@ -41,14 +41,14 @@
 
 ![当地办理指南：窗口提示、材料与官方来源](docs/images/local-guide.png)
 
-**运行站与最新源码数据更新于 2026-10-31。全国区县尚未完成。**
+**运行站与最新源码数据更新于 2026-11-01。全国区县尚未完成。**
 
 | 范围 | 当前实际状态 |
 |---|---|
 | 省级入口 | 中国大陆 31 个省级地区；入口存在不代表指南已核验 |
 | 地区目录 | 3,974 条目录记录（含省市层级）；目录与候选合并追踪 3,590 个精确地区组合，不是全国功能区完整普查 |
-| 已发布当地指南 | 两处运行站均为 221 地：四川 180、江苏 13、浙江 7、安徽 2、湖南 4、福建 15 |
-| 已发布当地填写生成 | 两处运行站均为 204 地：四川 164、江苏 13、浙江 7、安徽 1、湖南 4、福建 15 |
+| 已发布当地指南 | 两处运行站均为 223 地：四川 180、江苏 13、浙江 7、安徽 2、湖南 4、福建 17 |
+| 已发布当地填写生成 | 两处运行站均为 206 地：四川 164、江苏 13、浙江 7、安徽 1、湖南 4、福建 17 |
 | 仅指南、未开放当地生成 | 17 地 |
 | 其余市、区县及功能区 | 按自身官方资料继续核验；候选与未核验地区均不计入上线覆盖 |
 | 历史省级文书 | 保留独立入口，须另核对适用范围，不计入区县完成数 |
@@ -57,7 +57,7 @@
 
 晋安、闽侯、马尾随后也按各自事项、材料和空白原件上线：晋安开放申请书、证据清单，闽侯和马尾仅开放自身申请书；14个未适配附件继续保留元数据，未将样表或待核验角色当作空白模板。两站本批共16份原生下载通过整包及全部ZIP成员独立核对，375/768/1440、取消/Esc/焦点和地区切换通过。三地指南仍为部分核验，不保证受理，也没有代交申请。[三地上线与回归验收](reports/overnight-gap-closure-20261030/localities/fujian-k/rollout-20261031/TEST-REPORT.md) · [31省实际矩阵](reports/overnight-gap-closure-20261030/localities/fujian-k/rollout-20261031/PUBLIC-MATRIX.json)。
 
-`preview.5`与`preview.6`的9个附件分别保留原字节，Ubuntu快照分别为209份、219份指南；历史服务端`preview.1`为215份。当前两个运行后端已验收至221/204。新增莆田城厢、涵江使用各自资料，双站16份原生Word和8个完整契约通过独立核对，新源码CI456+2通过。荔城、秀屿的源码种子已另增至223/206，仍待该批提交的CI、部署及增量发布，不计入运行站覆盖；仙游、泉州鲤城、丰泽和洛江继续候选验收。Android、Windows和小程序读取所连接后端的当前资料，本次后端及地区数据更新无需重复安装客户端。待核验不等于官方没有提供。[城厢、涵江双站验收](reports/overnight-gap-closure-20261030/localities/fujian-m/rollout-20261031/TEST-REPORT.md)。
+`preview.5`与`preview.6`的9个附件分别保留原字节，Ubuntu快照分别为209份、219份指南；历史服务端`preview.1`为215份。当前两个运行后端已验收至223/206。新增莆田荔城、秀屿使用各自资料，双站16份原生Word和8个完整契约通过独立核对，实际GitHub Linux CI为507项后端及2项崩溃检查通过。指南仍为部分核实，不把认证入口当作已验证的网上申报。仙游、泉州鲤城、丰泽和洛江继续候选验收。Android、Windows和小程序读取所连接后端的当前资料，本次后端及地区数据更新无需重复安装客户端。待核验不等于官方没有提供。[荔城、秀屿双站验收](reports/overnight-gap-closure-20261030/localities/fujian-n/rollout-20261101/TEST-REPORT.md) · [前批城厢、涵江验收](reports/overnight-gap-closure-20261030/localities/fujian-m/rollout-20261031/TEST-REPORT.md)。
 
 平潭综合实验区现按自身事项、材料和官方空白原件开放申请书、证据清单，两站增量发布至219/202，福建已有13份指南、13地填写生成；8份实际原生下载通过整包及全部ZIP成员独立核对。指南仍为部分核实，委员会全称、官方版本及实际网上申报未确认；4个样例或参考附件不作为空白模板生成。具体到场次数与通用预审等级分别保留，不把不同口径误报为冲突。本轮9978ba56源码通过418项后端及2项隔离崩溃检查。[平潭双站验收](reports/overnight-gap-closure-20261030/localities/fujian-l/rollout-20261031/TEST-REPORT.md) · [源码CI](https://github.com/DerpZhenjun/LabourLawyer/actions/runs/41170091565)。preview.6现已实际发布，九项附件均经匿名下载核对，打包桌面程序的下载和重开验证通过；Android未发现USB设备，未声明实体手机已安装。preview.5九项及服务端preview.1三项仍保留原文件。[新版实际验收](reports/overnight-gap-closure-20261030/release-preview6/TEST-REPORT.md)。
 
@@ -85,7 +85,7 @@
 
 截图为发布验收时点；实时候选数以管理页面为准。
 
-2026-10-29阶段的全量691项后端测试通过（其中2项权限跳过）；当时独立Git归档初始化202/185，附件缺失0，45项归档回归通过（1项权限跳过）。[该阶段交付](reports/nationwide-verification-20261029-e/FINAL-REPORT.md)。最新K源码已通过[锁定依赖的395项后端及2项隔离崩溃检查](https://github.com/DerpZhenjun/LabourLawyer/actions/runs/41163631171)，并另行完成两站真实网页验收；两类测试范围分别记录。
+2026-10-29阶段的全量691项后端测试通过（其中2项权限跳过）；当时独立Git归档初始化202/185，附件缺失0，45项归档回归通过（1项权限跳过）。[该阶段交付](reports/nationwide-verification-20261029-e/FINAL-REPORT.md)。当时K源码已通过[锁定依赖的395项后端及2项隔离崩溃检查](https://github.com/DerpZhenjun/LabourLawyer/actions/runs/41163631171)，并另行完成两站真实网页验收；两类测试范围分别记录。
 
 运行后在 `/admin/regions` 查看实时矩阵。仓库中可核对 [逐省实际进度](docs/regions-status.md)、[公开数据版本](data/public-regions/manifest.json)、[候选登记](config/regional_candidates.json) 与 [地区接入说明](docs/regional-release.md)。
 
@@ -117,7 +117,7 @@ Ubuntu独立数字人服务已完成形象加载、远程合成问答与375/768/
 
 ## OpenClaw：公开资料补采与问题追踪
 
-在后台的 **OpenClaw 浏览器补采** 中选择省份，查看或续跑公开指南任务。系统分别记录网页已打开、指南已找到、模板已下载、已验证可填写，保留来源与截图，避免把“下载成功”当成“可以生成”。
+在后台的 **OpenClaw 浏览器补采** 中选择省份，查看或续跑公开指南任务。系统分别记录网页已打开、指南已找到、模板已下载、已验证可填写，保留来源、文字与已取得附件证据，避免把“下载成功”当成“可以生成”。本轮关闭浏览器截图采集。
 
 ![OpenClaw 实际浏览器补采面板](docs/images/openclaw-collection.png)
 
@@ -127,7 +127,7 @@ Ubuntu独立数字人服务已完成形象加载、远程合成问答与375/768/
 
 上图是历史截图，当时的 `PENDING_OPENCLAW` 表示尚未取得服务确认。2026-10-30 已使用独立 OpenClaw 配置，通过真实 `tools.invoke / memory_get` 核对全部377条公开问题，并将377条回执增量写回项目，待确认0条、AI分析0条。服务读取不等于AI复核；没有调用模型，也没有发送个人文书。原有指南历史和全局 OpenClaw 主配置保留。这377条回执在Windows主站公共库；新Ubuntu部署使用独立空outbox，不复制私有OpenClaw配置，也不伪造已同步状态。[本轮真实结果](reports/production-readiness-20261030/openclaw/FINAL-RESULT.json) · [隔离同步及启动说明](docs/openclaw-issue-delivery.md)。
 
-新增Linux采集器的4条历史任务已补入持久观察日志，26个证据文件保留；其10条问题观察去重为4条公开问题，均已通过真实OpenClaw完整回读取得回执，待投递0。新的独立问题库、旧手工投递库2条及主站377条分别统计，不能相加作为独立问题数量。管理员页面显示本采集链路的持久问题、待投递及实际送达数量。持续同步进程每120秒检查一次；它目前运行在Windows维护端，维护端或网关离线时，新问题继续保存在Ubuntu的outbox等待重试。回执不代表AI审核、指南核验或模板适用性已确认，模型调用0。[实际采集链路验收](reports/overnight-gap-closure-20261030/openclaw/COLLECTOR-ISSUE-DELIVERY-20261031.json) · [旧两条独立回执](reports/overnight-gap-closure-20261030/openclaw/LINUX-ISSUE-RECEIPTS.json)。
+新增Linux采集器的4条历史任务已补入持久观察日志，26个证据文件保留；其10条问题观察去重为4条公开问题，均已通过真实OpenClaw完整回读取得回执，待投递0。新的独立问题库、旧手工投递库2条及主站377条分别统计，不能相加作为独立问题数量。管理员页面显示本采集链路的持久问题、待投递及实际送达数量。2026-11-01发现维护端进程已停止，现已恢复独立网关和绑定原镜像的持续同步进程，每120秒检查一次；恢复首轮待投递0条、未新增ACK，原4条完整历史回执重新核对通过。同步仍依赖Windows维护端，维护端或网关离线时，新问题继续保存在Ubuntu的outbox等待重试。[本次恢复核验](reports/overnight-gap-closure-20261030/openclaw/COLLECTOR-RELAY-RECOVERY-20261101.json)。回执不代表AI审核、指南核验或模板适用性已确认，模型调用0。[实际采集链路验收](reports/overnight-gap-closure-20261030/openclaw/COLLECTOR-ISSUE-DELIVERY-20261031.json) · [旧两条独立回执](reports/overnight-gap-closure-20261030/openclaw/LINUX-ISSUE-RECEIPTS.json)。
 
 ## 网页、Android 与小程序
 
