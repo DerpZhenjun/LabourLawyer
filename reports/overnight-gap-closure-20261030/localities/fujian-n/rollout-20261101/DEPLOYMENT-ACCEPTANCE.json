@@ -1,0 +1,212 @@
+{
+  "status": "BOTH_HOSTS_N223_206_ACCEPTED",
+  "verified_at": "2026-11-01T05:06:54.107441+00:00",
+  "source_commit": "2463ae8e9cbf34f7222e85a5251420cfe6cf9b5b",
+  "source_CI": {
+    "url": "https://github.com/DerpZhenjun/LabourLawyer/actions/runs/41272988867",
+    "backend_tests": 507,
+    "guarded_crash_tests": 2,
+    "status": "success"
+  },
+  "sources": [
+    {
+      "province": "fujian",
+      "city": "莆田市",
+      "district": "荔城区",
+      "region_code": "350304",
+      "source_id": "c2f441391f073f71f55ce9de",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=BDE5EC9DAD4CFE0ADED039A84F96B29B&infoType=1",
+      "service_code": "113503210037128046400201430200Y01",
+      "observed_at_utc": "2026-10-31T05:11:03.027Z"
+    },
+    {
+      "province": "fujian",
+      "city": "莆田市",
+      "district": "秀屿区",
+      "region_code": "350305",
+      "source_id": "758cc6043c5d57e5574a766e",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=EC90D061D8C4ECCCBF8F1E48EE8693E8&infoType=1",
+      "service_code": "1135030448877165XX400201430200Y01",
+      "observed_at_utc": "2026-10-31T05:14:13.731Z"
+    }
+  ],
+  "hosts": {
+    "main": {
+      "guides": 223,
+      "generatable": 206,
+      "native_downloads": 8,
+      "strict_contracts": 4,
+      "viewports": [
+        375,
+        768,
+        1440
+      ],
+      "form_width_checks": 12,
+      "cancel_checks": 4,
+      "negative_GET_checks": 18,
+      "negative_POST_checks": 34,
+      "report_sha256": "4b3d218aaea1fac83e50f200c97b0eae99767725460925c34ad873bdac5154b8",
+      "whole_and_all_ZIP_and_prior_own_Word": true,
+      "screenshots": 0,
+      "models": 0,
+      "old_data_preserved": true,
+      "files": [
+        {
+          "code": "350304",
+          "kind": "application",
+          "scenario": "filled",
+          "sha256": "daa5f5993da561a8313f404070ee6cc1b6290239205f04f2e4fc40012082665e"
+        },
+        {
+          "code": "350304",
+          "kind": "application",
+          "scenario": "blank",
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350304",
+          "kind": "evidence",
+          "scenario": "filled",
+          "sha256": "5265eadb0f20222037bd071405765bb9f848eeb1b054c8dd51f5b1844b986753"
+        },
+        {
+          "code": "350304",
+          "kind": "evidence",
+          "scenario": "blank",
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        },
+        {
+          "code": "350305",
+          "kind": "application",
+          "scenario": "filled",
+          "sha256": "b6961aaf3513431e4a6ec5e4bdb2d67c741423b4a9f5134e31dcef8355651e07"
+        },
+        {
+          "code": "350305",
+          "kind": "application",
+          "scenario": "blank",
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350305",
+          "kind": "evidence",
+          "scenario": "filled",
+          "sha256": "f065f06940847e85cf4e0530c677f5e270d68ea2e69978a9ea4afeb9d3cd86b5"
+        },
+        {
+          "code": "350305",
+          "kind": "evidence",
+          "scenario": "blank",
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        }
+      ]
+    },
+    "ubuntu": {
+      "guides": 223,
+      "generatable": 206,
+      "native_downloads": 8,
+      "strict_contracts": 4,
+      "viewports": [
+        375,
+        768,
+        1440
+      ],
+      "form_width_checks": 12,
+      "cancel_checks": 4,
+      "negative_GET_checks": 18,
+      "negative_POST_checks": 34,
+      "report_sha256": "8ea372ca08bf3134bfcfa870c447309d34b403676fe588cb8e76a6e2ba6b727f",
+      "whole_and_all_ZIP_and_prior_own_Word": true,
+      "screenshots": 0,
+      "models": 0,
+      "old_data_preserved": true,
+      "files": [
+        {
+          "code": "350304",
+          "kind": "application",
+          "scenario": "filled",
+          "sha256": "daa5f5993da561a8313f404070ee6cc1b6290239205f04f2e4fc40012082665e"
+        },
+        {
+          "code": "350304",
+          "kind": "application",
+          "scenario": "blank",
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350304",
+          "kind": "evidence",
+          "scenario": "filled",
+          "sha256": "5265eadb0f20222037bd071405765bb9f848eeb1b054c8dd51f5b1844b986753"
+        },
+        {
+          "code": "350304",
+          "kind": "evidence",
+          "scenario": "blank",
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        },
+        {
+          "code": "350305",
+          "kind": "application",
+          "scenario": "filled",
+          "sha256": "b6961aaf3513431e4a6ec5e4bdb2d67c741423b4a9f5134e31dcef8355651e07"
+        },
+        {
+          "code": "350305",
+          "kind": "application",
+          "scenario": "blank",
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350305",
+          "kind": "evidence",
+          "scenario": "filled",
+          "sha256": "f065f06940847e85cf4e0530c677f5e270d68ea2e69978a9ea4afeb9d3cd86b5"
+        },
+        {
+          "code": "350305",
+          "kind": "evidence",
+          "scenario": "blank",
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        }
+      ]
+    }
+  },
+  "ubuntu_deployment": {
+    "bundle_sha256": "9bbd4701b7a667a40e33b40dfe0314acad39f806b6f130fda76ec46fe04f9740",
+    "bundle_bytes": 418620942,
+    "manifest_sha256": "b3a18849274644bfdebf826287330ef79a42a1a600ca742d4e1a73f97a814872",
+    "manifest_files": 4618,
+    "cold_bootstrap": {
+      "guides": 223,
+      "generatable": 206,
+      "directory": 3974,
+      "missing_attachments": 0
+    },
+    "cold_receipt_sha256": "208ef3e7dc3c7d18e0288a3ffc9f2cd4e4e1028e8e5d7cd19483e8ebaf02145d",
+    "persistent_non_guide_files_preserved": 5,
+    "protected_services_preserved": 3,
+    "collector_jobs_preserved": 4
+  },
+  "history": {
+    "main": 231,
+    "ubuntu": 223,
+    "old_rows_and_pointers_retained": true
+  },
+  "separate_outboxes": {
+    "main_historical_ack": 377,
+    "ubuntu_guide_outbox": 0,
+    "dedicated_collector_historical_ack": 4,
+    "new_ACKs_this_rollout": 0,
+    "do_not_sum_as_unique": true
+  },
+  "limitations": [
+    "Both own guides remain partially verified",
+    "Official material IDs, official guide version and committee full name unknown",
+    "Eight metadata-only sample/reference attachments cannot generate",
+    "Official authentication boundary does not prove online application availability",
+    "No new client package or phone installation claimed; immutable preview6 snapshot remains219/202",
+    "No nationwide-completion claim",
+    "No Windows models or automatic inference"
+  ]
+}
