@@ -1,0 +1,15 @@
+{
+  "msg": null,
+  "total": null,
+  "code": 200,
+  "data": {
+    "serviceClassify": [
+      {
+        "unid": "A082C9DCA757235B5BCB5BF73AAF6ECF",
+        "name": "劳动人事争议仲裁申请"
+      }
+    ],
+    "situationStype": "checkbox",
+    "checkClassify": []
+  }
+}

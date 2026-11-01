@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "status": "PRIVATE_OWN_SOURCE_ONLY_NOT_REGISTERED_NOT_GENERATING",
+  "discovery_freeze_sha256": "2bc2178b0db523c83d9c346ff79f9bf2481308f22ee965d004fe93e51c863e75",
+  "WORD": null,
+  "STAGE": null,
+  "PUBLICATION": null,
+  "directory_mapping": {
+    "bytes": 7472,
+    "sha256": "7e5568e8d62bf9b70c92ac9f3fb8e986347ff66d0932ddba965104d67026d4ca"
+  },
+  "regions": {
+    "350582": {
+      "region_code": "350582",
+      "district": "晋江市",
+      "source_id": "d8353a4bb91532863fb03802",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=6B50860321729653E0E11525DFCFA69D",
+      "service_unid": "6B50860321729653E0E11525DFCFA69D",
+      "service_code": "113505820038316517400201430200201",
+      "authority": "晋江市人力资源和社会保障局",
+      "official_version": "1",
+      "directory_city": "泉州市",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "7a4b19e40bd16f66b256d7fc7d0b88d7c05289827feae7df4eb2a05a2048a503"
+    },
+    "350581": {
+      "region_code": "350581",
+      "district": "石狮市",
+      "source_id": "b954b9477907608d6cf530ed",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=BFCF93F4DD9C5FE3AAC31AC06EABE3CB",
+      "service_unid": "BFCF93F4DD9C5FE3AAC31AC06EABE3CB",
+      "service_code": "11350581003865798C400201430200201",
+      "authority": "石狮市人力资源和社会保障局",
+      "official_version": "1",
+      "directory_city": "泉州市",
+      "original_kinds": [
+        "application"
+      ],
+      "source_manifest_sha256": "8a63a89cf7048a359eb43495281378da5bd3d00885eedd1bc2e78eba95ec3e2d"
+    },
+    "350583": {
+      "region_code": "350583",
+      "district": "南安市",
+      "source_id": "02b8e589e4891bdcbdacdc09",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=659140D913D5002281510E9A7549B0F6",
+      "service_unid": "659140D913D5002281510E9A7549B0F6",
+      "service_code": "11350583003837826Q400201430200Y01",
+      "authority": "南安市人力资源和社会保障局",
+      "official_version": "1",
+      "directory_city": "泉州市",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "9dd8f9fdf8f88fc781301124ea58d0f67e8f4a4862b2b27bd8a6106f07630213"
+    },
+    "350524": {
+      "region_code": "350524",
+      "district": "安溪县",
+      "source_id": "ecd5bfaec46d03d4f6ae3860",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=2104A2B4A186E572580E9388426D4548",
+      "service_unid": "2104A2B4A186E572580E9388426D4548",
+      "service_code": "11350524003844268L400201430200Y01",
+      "authority": "安溪县人力资源和社会保障局",
+      "official_version": "1",
+      "directory_city": "泉州市",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "a3713d78625cc4267c628b5fb70ce3ecdce46005c4314d840560974449601d13"
+    }
+  }
+}

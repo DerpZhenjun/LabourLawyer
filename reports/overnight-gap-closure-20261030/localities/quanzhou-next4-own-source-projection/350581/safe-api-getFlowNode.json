@@ -1,0 +1,117 @@
+{
+  "msg": null,
+  "total": null,
+  "code": 200,
+  "data": {
+    "flowNodeCount": {
+      "forthFlow": 0,
+      "threeFlow": 0,
+      "sevFlow": 0,
+      "sixFlow": 0,
+      "overseasStep": "",
+      "firstFlow": 0,
+      "flowCount": 2,
+      "specialStep": ""
+    },
+    "flowNodeList": [
+      {
+        "limitcount": null,
+        "unid": "53E50BFA8406C03D907527A9CBECBC7A",
+        "limittype": "当场",
+        "overseasStep": "Document Receipt",
+        "name": "申请与受理",
+        "transactresult": null,
+        "step": "收件",
+        "sort": "0",
+        "csstandard": null,
+        "nodeoperator": null,
+        "parentid": "BFCF93F4DD9C5FE3AAC31AC06EABE3CB",
+        "limittime": null
+      },
+      {
+        "limitcount": "3",
+        "unid": "AE7135D233E2BF325D15CD88703E4FF5",
+        "limittype": "工作日",
+        "overseasStep": null,
+        "name": "申请与受理",
+        "transactresult": "1、 能当场受理或通过当场补正达到受理条件的，直接受理；2、根据一次性告知通知书内容进行补正后达到受理条件的，当日受理；3、申请事项依法不在本部门职权范围的及时告知申请人不受理或出具不予受理通知书，并告知申请人向有关部门申请",
+        "step": "受理",
+        "sort": "1",
+        "csstandard": "1. 核对申请人是否符合申请条件；2.依据办事指南中的材料清单逐一核对申报材料是否齐全；3、核对每份材料是否涵盖要求中涉及的内容和要素",
+        "nodeoperator": "窗口工作人员",
+        "parentid": "BFCF93F4DD9C5FE3AAC31AC06EABE3CB",
+        "limittime": null
+      },
+      {
+        "limitcount": null,
+        "unid": "9072202B5A70CB8401F57C17338B4621",
+        "limittype": "工作日",
+        "overseasStep": null,
+        "name": "审查",
+        "transactresult": null,
+        "step": null,
+        "sort": "2",
+        "csstandard": null,
+        "nodeoperator": null,
+        "parentid": "BFCF93F4DD9C5FE3AAC31AC06EABE3CB",
+        "limittime": null
+      },
+      {
+        "limitcount": null,
+        "unid": "15FC05266C1ACE334BD7B4517D6AD972",
+        "limittype": "工作日",
+        "overseasStep": "Review",
+        "name": "审查",
+        "transactresult": null,
+        "step": "审查",
+        "sort": "3",
+        "csstandard": null,
+        "nodeoperator": null,
+        "parentid": "BFCF93F4DD9C5FE3AAC31AC06EABE3CB",
+        "limittime": null
+      },
+      {
+        "limitcount": "2",
+        "unid": "F9300E85290C57A3574C89E7811F6981",
+        "limittype": "工作日",
+        "overseasStep": null,
+        "name": "决定（含制证与送达）",
+        "transactresult": "向申请人送达办理结果",
+        "step": "决定",
+        "sort": "4",
+        "csstandard": "审核申报材料是否齐全且符合法定形式及要求，申请符合法定条件、标准的，依法作出准予申请的决定",
+        "nodeoperator": "仲裁委主任",
+        "parentid": "BFCF93F4DD9C5FE3AAC31AC06EABE3CB",
+        "limittime": null
+      },
+      {
+        "limitcount": null,
+        "unid": "9855304EBE332E1EC412C1612663A523",
+        "limittype": "当场",
+        "overseasStep": "Certificate Production",
+        "name": "决定（含制证与送达）",
+        "transactresult": null,
+        "step": "制证",
+        "sort": "5",
+        "csstandard": "---------------",
+        "nodeoperator": null,
+        "parentid": "BFCF93F4DD9C5FE3AAC31AC06EABE3CB",
+        "limittime": null
+      },
+      {
+        "limitcount": null,
+        "unid": "DE68BB555C634F786A5163135CFEF729",
+        "limittype": "当场",
+        "overseasStep": "Service",
+        "name": "制证与送达",
+        "transactresult": null,
+        "step": "送达",
+        "sort": "6",
+        "csstandard": "---------------",
+        "nodeoperator": null,
+        "parentid": "BFCF93F4DD9C5FE3AAC31AC06EABE3CB",
+        "limittime": null
+      }
+    ]
+  }
+}

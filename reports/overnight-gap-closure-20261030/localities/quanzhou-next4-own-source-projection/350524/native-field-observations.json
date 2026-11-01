@@ -1,0 +1,25 @@
+{
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=2104A2B4A186E572580E9388426D4548",
+  "observed_at": "2026-11-01T11:09:44.770477+00:00",
+  "raw_native_capture_pin": {
+    "bytes": 48255,
+    "sha256": "783360a3fc5e6da9fd53a1b4f6f637fe8d6a9341911383c02fc65098d2f5be99"
+  },
+  "observations": {
+    "法定时限": {
+      "value": "受理后5个工作日\n\t\t\t\t",
+      "raw_label": "法定时限：",
+      "raw_capture_pointer": "/value/rows/42/cells/1"
+    },
+    "承诺时限": {
+      "value": "受理后5个工作日\n\t\t\t\t",
+      "raw_label": "承诺时限：",
+      "raw_capture_pointer": "/value/rows/43/cells/1"
+    },
+    "是否收费": {
+      "value": "不收费",
+      "raw_label": "是否收费：",
+      "raw_capture_pointer": "/value/rows/115/cells/1"
+    }
+  }
+}

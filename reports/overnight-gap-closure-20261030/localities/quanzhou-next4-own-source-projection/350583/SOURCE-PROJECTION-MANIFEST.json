@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "status": "OWN_SOURCE_ONLY_NOT_REGISTERED_NOT_GENERATING",
+  "region_code": "350583",
+  "source_id": "02b8e589e4891bdcbdacdc09",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=659140D913D5002281510E9A7549B0F6",
+  "official_version": "1",
+  "WORD": null,
+  "STAGE": null,
+  "PUBLICATION": null,
+  "discovery_freeze_sha256": "2bc2178b0db523c83d9c346ff79f9bf2481308f22ee965d004fe93e51c863e75",
+  "files": {
+    "safe-api-getMatterBasicInfo.json": {
+      "bytes": 8829,
+      "sha256": "7a6731a4f6352718c9882965d1e34092210df5e05bc107bdff4a6e499a31c74f"
+    },
+    "safe-api-getAcceptList.json": {
+      "bytes": 3096,
+      "sha256": "22b53bc554193501179811caf6a9e4fb0935a830cbaff51ed046817d50f14c1f"
+    },
+    "safe-api-getServiceSituation.json": {
+      "bytes": 274,
+      "sha256": "8fe6bc0dda5b3ed9f3a58cfbb77a11be0c58db53771e6b1d8b2621c5d1888d0f"
+    },
+    "safe-api-getTableInfo.json": {
+      "bytes": 2396,
+      "sha256": "19ef90accf8610bce3afd7e5e138deee070c42ce8eb9c658ff38593059925936"
+    },
+    "safe-api-getFlowNode.json": {
+      "bytes": 3639,
+      "sha256": "81ab624aa5308ae50a4ccd77cc0d3f6e6dc5489d8765d11848603c199b6b4a93"
+    },
+    "safe-api-getMaterialList.json": {
+      "bytes": 8753,
+      "sha256": "605ab427529a024e81253bd6a268b2060513feda80bbec030ee8b07a688a8822"
+    },
+    "safe-api-getMatterAccording.json": {
+      "bytes": 298,
+      "sha256": "0ac66e02cbf57cb9db1d52cd6a675b701cff69329ebc0290b6fb96f4e190ee72"
+    },
+    "safe-api-getLegalBasis.json": {
+      "bytes": 2530,
+      "sha256": "dfc70a543e76100fa17c03e445ef36fb5f664f3011eaa874818cf2c4a4001d62"
+    },
+    "native-field-observations.json": {
+      "bytes": 833,
+      "sha256": "7f32145eb3222b0bb499ed9b0280bf49a550dc4644285ea8a628c05f9c465665"
+    },
+    "native-role-proof.json": {
+      "bytes": 2691,
+      "sha256": "11a2a3623897585a8ea5fcca34b435b197ee00c998161342d801d77203e5f684"
+    },
+    "application-format-public-retrieval.docx": {
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    "evidence-format-public-retrieval.docx": {
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    "PUBLIC-RETRIEVALS.json": {
+      "bytes": 3465,
+      "sha256": "906627e55e9ae1274c8a3a573d5d2f204220aa8f5253b2a9acc16751eb859dce"
+    },
+    "CAPTURE-PROVENANCE.json": {
+      "bytes": 8918,
+      "sha256": "389792041256161d5f7361be59031d0ec87de81013b01d2a6da09f1703c3e925"
+    },
+    "guide.json": {
+      "bytes": 20740,
+      "sha256": "f163d58fa459b673a7d1f44749c6cfe4cb3f8f513ed62f32ee2f5479519cd052"
+    }
+  }
+}

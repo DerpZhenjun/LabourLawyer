@@ -1,0 +1,35 @@
+{
+  "application": {
+    "source_id": "b954b9477907608d6cf530ed",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=BFCF93F4DD9C5FE3AAC31AC06EABE3CB",
+    "region_code": "350581",
+    "service_unid": "BFCF93F4DD9C5FE3AAC31AC06EABE3CB",
+    "kind": "application",
+    "official_attachment_id": "66B47D8E13394D3AE7E1E89169C8FAF4",
+    "official_material_id": "94C292F078FA2F39AEA7A569C7AA2D44",
+    "public_file_unid": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+    "official_name": "仲裁申请书.docx",
+    "official_role": "格式文本",
+    "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFileStream?unid=F4048D8C91E2FF882AC6C62CC0EC4D86",
+    "observed_browser_request_id": "705262057AAF245E3C1C04990CDC328D",
+    "observed_browser_status": 200,
+    "native_download_completed": false,
+    "native_attempt_result": "agent-browser download returned Download was canceled; no native success claimed",
+    "retrieved_at": "2026-11-01T11:08:27.927067+00:00",
+    "method": "separate anonymous HTTP retrieval of exact native-observed own format URL, not native download",
+    "status": 200,
+    "content_type": "application/octet-stream;charset=UTF-8",
+    "zip_crc": "PASS",
+    "zip_parts": 21,
+    "bytes": 13093,
+    "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+    "retrieval_status": "PUBLIC_TLS_BYTES_RETRIEVED_WORD_LAYOUT_NOT_REVIEWED",
+    "file": "application-format-public-retrieval.docx",
+    "TLS_verification": "DEFAULT_ENABLED",
+    "raw_own_retrieval_receipt_pin": {
+      "bytes": 1779,
+      "sha256": "7f35f11a0905ce6c4ef662a34c5ab498369354ff32356ae19d2bfd84a4804790"
+    },
+    "copied_from_other_source": false
+  }
+}
