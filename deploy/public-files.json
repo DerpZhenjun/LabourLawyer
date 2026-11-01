@@ -15506,9 +15506,44 @@
       "sha256": "34244c4a1583e977cb02f37eadcabd22a75b8295f5382f0cf196ce4448907d1a"
     },
     {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-o/integration-qa-v1/350322-application-CONTRACT.json",
+      "bytes": 1990,
+      "sha256": "607599c66078d0daaebcaada45aeb1bc84bf6c24d14f5546cde4308992673d46"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-o/integration-qa-v1/350322-evidence-CONTRACT.json",
+      "bytes": 2332,
+      "sha256": "91988efa4ec0eae9f376b32ed9ea7d58eaa11e55424968882cd24d6bb4b538e9"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-o/integration-qa-v1/350502-application-CONTRACT.json",
+      "bytes": 1990,
+      "sha256": "3a63c73b3d29788ea708efe2b65ab60baf8d82a52eca008ee1f030d93baa9509"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-o/integration-qa-v1/350502-evidence-CONTRACT.json",
+      "bytes": 2332,
+      "sha256": "be581e781deec401453bdebf85f03d4ddd67bc11424b1b13fd5d774673b7b038"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-o/integration-qa-v1/BROWSER-RESULT.json",
+      "bytes": 304826,
+      "sha256": "7b6c95aba093f79ce15cee9c366cc3b0089e54ad0b942744679ba7a4a7ed68f9"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-o/integration-qa-v1/FINAL-BROWSER-QA.json",
+      "bytes": 20722,
+      "sha256": "7c34b021e636e62d709d1ae1ab622447b12b48ff38c9470657836eefa6db17d8"
+    },
+    {
       "path": "reports/overnight-gap-closure-20261030/localities/fujian-o/integration-qa-v1/README.md",
       "bytes": 1615,
       "sha256": "28522af8cae017478f0dbc368b903b96cf66f1143d516d22d2f0948123a81458"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-o/integration-qa-v1/ROOT-NATIVE-REVIEW.json",
+      "bytes": 733,
+      "sha256": "96b90080600053ad19c05ab7dbd529f507cad0316b1535930e501362e12432cd"
     },
     {
       "path": "reports/overnight-gap-closure-20261030/localities/fujian-o/integration-qa-v1/ROOT-PAGE-REVIEW-INDEX.json",

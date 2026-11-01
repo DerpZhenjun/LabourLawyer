@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "context": {
+    "province": "fujian",
+    "city": "莆田市",
+    "district": "仙游县",
+    "region_code": "350322",
+    "source_id": "6918d8e34e1206673434fbc9",
+    "version": 1,
+    "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+    "kind": "evidence",
+    "mode": "blank",
+    "adapter": "fujian_xianyou_quanzhou_licheng_own_blank_oct31o_v1",
+    "schema_id": "private-own-xianyou-quanzhou-350322-evidence-v1",
+    "schema_version": 1,
+    "source_version": "7aa1301b1a520ac1a34803afe72cd96ef3378e40d0aea90ec4ea81113c3a1e59",
+    "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "template_version": "sha256:d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+  },
+  "fields": [
+    {
+      "key": "evidenceList",
+      "type": "object_list",
+      "maxItems": 9,
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "maxLength": 60,
+          "label": "证据名称"
+        },
+        {
+          "key": "pageCount",
+          "type": "text",
+          "maxLength": 4,
+          "label": "页数"
+        },
+        {
+          "key": "originalType",
+          "type": "text",
+          "maxLength": 4,
+          "label": "原件或复印件",
+          "choices": [
+            "原件",
+            "复印件"
+          ]
+        },
+        {
+          "key": "purpose",
+          "type": "text",
+          "maxLength": 80,
+          "label": "证明目的"
+        },
+        {
+          "key": "pageRange",
+          "type": "text",
+          "maxLength": 32,
+          "label": "页码范围"
+        }
+      ],
+      "label": "证据清单"
+    }
+  ],
+  "defaults": {
+    "evidenceList": [
+      {
+        "name": "",
+        "pageCount": "",
+        "originalType": "",
+        "purpose": "",
+        "pageRange": ""
+      }
+    ]
+  },
+  "policy": {
+    "unknown_fields": "reject",
+    "capacity_is_legal_requirement": false,
+    "capacity_is_official_requirement": false,
+    "signature_date_committee_copies": "not_accepted",
+    "invalid_xml": "reject",
+    "text_controls": "newline_only",
+    "trim_text": true
+  },
+  "contract_id": "87349df08cf1aebdbd4d628fb1eee6bedeeef0da155ba6395b397ff85dcaf7e9"
+}

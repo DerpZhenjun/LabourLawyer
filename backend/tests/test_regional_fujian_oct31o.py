@@ -17,6 +17,7 @@ class OwnProposalTests(unittest.TestCase):
 
     def setUp(self):
         self.assertIsNotNone(P, 'Own source-only parser/adapter proposal is not implemented')
+        self.enterContext(patch.object(P, 'PUBLICATION_SHA256', None))
 
     def test_own_identities_and_metadata_raw_no_promotion(self):
         for code in P.REGIONS:
@@ -189,6 +190,7 @@ class OwnProposalTests(unittest.TestCase):
 class StageProposalTests(unittest.TestCase):
     def setUp(self):
         self.assertTrue(callable(getattr(P,'checked_adapter',None)),'Own stage receipt/canonical binding interface is not implemented')
+        self.enterContext(patch.object(P, 'PUBLICATION_SHA256', None))
     def clone(self):
         temp=tempfile.TemporaryDirectory(prefix='o-own-stage-');self.addCleanup(temp.cleanup);root=Path(temp.name)
         for part in [P.SOURCE_BASE,Path(P.QA_REPORT)]:shutil.copytree(HERE/part,root/part)
@@ -264,6 +266,9 @@ class StageProposalTests(unittest.TestCase):
 
 
 class EvidenceMetadataTests(unittest.TestCase):
+    def setUp(self):
+        self.enterContext(patch.object(P, 'PUBLICATION_SHA256', None))
+
     def test_real_own_public_evidence_roundtrip_and_four_stage_forms(self):
         for code in P.REGIONS:
             guide=P.staged_candidate(code,root=HERE);proof=P.public_evidence(guide,HERE)
