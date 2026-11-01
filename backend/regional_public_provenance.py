@@ -178,6 +178,9 @@ def public_evidence(guide, root):
     if guide.get('province')=='fujian' and guide.get('region_code') in {'350322','350502'}:
         from regional_fujian_oct31o import public_evidence as own
         return own(guide,root)
+    if guide.get('province')=='fujian' and guide.get('region_code') in {'350503','350504'}:
+        from regional_fujian_oct31p import public_evidence as own
+        return own(guide,root)
     if guide.get('province')=='fujian' and guide.get('region_code') in {'350304','350305'}:
         from regional_fujian_oct31n import public_evidence as own
         return own(guide,root)
@@ -244,6 +247,9 @@ def approved_report_attachment(guide, template, root):
     if not isinstance(guide,dict) or not isinstance(guide.get('province'),str) or not isinstance(guide.get('region_code'),str):return False
     if guide.get('province')=='fujian' and guide.get('region_code') in {'350322','350502'}:
         from regional_fujian_oct31o import approved_report_attachment as own
+        return own(guide,template,root)
+    if guide.get('province')=='fujian' and guide.get('region_code') in {'350503','350504'}:
+        from regional_fujian_oct31p import approved_report_attachment as own
         return own(guide,template,root)
     if guide.get('province')=='fujian' and guide.get('region_code') in {'350304','350305'}:
         from regional_fujian_oct31n import approved_report_attachment as own

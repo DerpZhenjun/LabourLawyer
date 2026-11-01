@@ -1,0 +1,32 @@
+{
+  "350503": {
+    "folder": "fengze-350503",
+    "source_manifest_sha256": "0806ccef8ab4037d1f9a1f3bba41ea805c19c26ba247e920310db45757838a86",
+    "identity": {
+      "province": "fujian",
+      "city": "泉州市",
+      "district": "丰泽区",
+      "region_code": "350503",
+      "source_id": "89a6739d1a513a7c5a77717a",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=AAB14D9CD5CB5150831332F702B33559&infoType=1",
+      "service_code": "113505030038213221400201430200201",
+      "authority": "泉州市丰泽区人力资源和社会保障局",
+      "observed_at_utc": "2026-10-31T07:54:38.082Z"
+    }
+  },
+  "350504": {
+    "folder": "luojiang-350504",
+    "source_manifest_sha256": "d4faf4fbd11248451329370d55722f665bd09c9bd0144953c768360dc0517313",
+    "identity": {
+      "province": "fujian",
+      "city": "泉州市",
+      "district": "洛江区",
+      "region_code": "350504",
+      "source_id": "4a34ce0e167250f122410ffc",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=2C9DC060006344D5C8F159A9869A60D5&infoType=1",
+      "service_code": "113505040038235128400201430200Y01",
+      "authority": "泉州市洛江区人力资源和社会保障局",
+      "observed_at_utc": "2026-10-31T07:58:59.208Z"
+    }
+  }
+}

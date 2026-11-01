@@ -1,0 +1,31 @@
+{
+  "province": "fujian",
+  "city": "泉州市",
+  "district": "丰泽区",
+  "region_code": "350503",
+  "source_id": "89a6739d1a513a7c5a77717a",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=AAB14D9CD5CB5150831332F702B33559&infoType=1",
+  "service_code": "113505030038213221400201430200201",
+  "authority": "泉州市丰泽区人力资源和社会保障局",
+  "observed_at_utc": "2026-10-31T07:54:38.082Z",
+  "source_version": "0806ccef8ab4037d1f9a1f3bba41ea805c19c26ba247e920310db45757838a86",
+  "material_id": null,
+  "local_material_key": "89a6739d1a513a7c5a77717a:dom-material:1",
+  "template_id": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+  "template_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+  "template_version": "sha256:093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+  "schema_id": "private-quanzhou-p-own-350503-application-v1",
+  "schema_version": 1,
+  "schema_sha256": "6c5dadb9162dc08345e8e8c366e9b18e6c5240fe77dbf902f5b3eb1942b1a592",
+  "kind": "application",
+  "mode": "blank",
+  "data": {
+    "applicantName": "虚构申请人甲（仅测试）",
+    "agentName": "",
+    "respondentName": "虚构乙公司（仅测试）",
+    "requests": [
+      "虚构请求，仅核对自身候选映射。"
+    ],
+    "factsReason": "全部内容虚构，不涉及真实案件。"
+  }
+}
