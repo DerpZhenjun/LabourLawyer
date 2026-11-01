@@ -120,7 +120,7 @@ def _layout_fill(raw, kind, data):
     _layout_assert_protected(raw, result, kind)
     return result
 import json, re
-from pathlib import Path
+from pathlib import Path, PurePosixPath, PureWindowsPath
 TEMPLATES = {'application': {'file': 'application-own-format.docx', 'file_id': 'F4048D8C91E2FF882AC6C62CC0EC4D86', 'sha256': '093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365', 'row': 1}, 'evidence': {'file': 'evidence-list-own-format.docx', 'file_id': 'CC300F5D9DD5DC404D65C68116D50C55', 'sha256': 'd70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815', 'row': 2}}
 APP = ('applicantName', 'agentName', 'respondentName', 'requests', 'factsReason')
 ITEM = ('name', 'pageCount', 'originalType', 'purpose', 'pageRange')
@@ -139,6 +139,9 @@ def path_at(root, relative):
     base = Path(root).resolve()
     rel = Path(relative)
     require(not rel.is_absolute() and (not rel.drive) and ('..' not in rel.parts))
+    windows = PureWindowsPath(relative)
+    posix = PurePosixPath(relative)
+    require(not windows.drive and not windows.root and not posix.is_absolute() and ('..' not in windows.parts) and ('..' not in posix.parts))
     path = base / rel
     require(path.resolve().is_relative_to(base) and path.resolve().relative_to(base).as_posix() == rel.as_posix() and (not path.is_symlink()))
     return path
@@ -234,8 +237,27 @@ def inspect_blank(code, kind, *, root):
     return _layout_inspect(original_bytes(code, kind, root=root), kind)
 _METADATA = {'version', 'region_id', 'content_hash'}
 
+def _source_projection_evidence(canonical):
+    require(type(canonical) is dict)
+    code = canonical.get('region_code')
+    require(type(code) is str and code in REGIONS)
+    require(type(canonical.get('source_version')) is str and canonical['source_version'] == SOURCE_SHAS[code])
+    return {'source_projection': (SOURCE_BASE / REGIONS[code]['folder'] / 'SOURCE-PROJECTION-MANIFEST.json').as_posix(),
+            'source_projection_sha256': canonical['source_version']}
+
+
 def _matches(guide, canonical):
-    if type(guide) is not dict or set(guide) - set(canonical) - _METADATA:
+    if type(guide) is not dict:
+        return False
+    if 'evidence' in guide:
+        try:
+            expected_evidence = _source_projection_evidence(canonical)
+        except (ValueError, KeyError, TypeError):
+            return False
+        if not exact(guide['evidence'], expected_evidence):
+            return False
+        guide = {key: value for key, value in guide.items() if key != 'evidence'}
+    if set(guide) - set(canonical) - _METADATA:
         return False
     if 'version' in guide and (type(guide['version']) is not int or guide['version'] < 1):
         return False
@@ -249,7 +271,7 @@ SOURCE_BASE=Path('reports/overnight-gap-closure-20261030/localities/fujian-n-sou
 ADAPTER='fujian_putian_licheng_xiuyu_own_blank_oct31n_v1'
 WORD_SHA='d69237a1afedf9eecf5fc8e66d539bb9e3bfe4e3678ed15856b891c2b8edae37'
 STAGE_SHA256='1defd082be8040f33ae560c94124411bbac4b122af86fa83e7c71c6a33ab6908'
-PUBLICATION_SHA256=None
+PUBLICATION_SHA256='38658d121da435652f0a79adee3048a14e189f293dac9bc47717eb70bf9444ac'
 REGIONS={'350304': {'folder': 'licheng-350304', 'province': 'fujian', 'city': '莆田市', 'district': '荔城区', 'region_code': '350304', 'source_id': 'c2f441391f073f71f55ce9de', 'source_url': 'https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=BDE5EC9DAD4CFE0ADED039A84F96B29B&infoType=1', 'service_code': '113503210037128046400201430200Y01', 'observed_at_utc': '2026-10-31T05:11:03.027Z', 'authority': '莆田市荔城区人力资源和社会保障局'}, '350305': {'folder': 'xiuyu-350305', 'province': 'fujian', 'city': '莆田市', 'district': '秀屿区', 'region_code': '350305', 'source_id': '758cc6043c5d57e5574a766e', 'source_url': 'https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=EC90D061D8C4ECCCBF8F1E48EE8693E8&infoType=1', 'service_code': '1135030448877165XX400201430200Y01', 'observed_at_utc': '2026-10-31T05:14:13.731Z', 'authority': '莆田市秀屿区人力资源和社会保障局'}}
 SOURCE_SHAS={'350304': 'd14f537bfd0137533112f380bf3e162f0207e23fe5aef75510db1a914a00cb91', '350305': '9e3b53ede88fc12346504c94725d6a7987b8f263ac3caf3df51a1b1e2b11c96f'}
 _METADATA={'version','region_id','content_hash'}
@@ -598,8 +620,7 @@ def _bound(guide, root, allow_source=False):
 def public_evidence(guide, root):
     try:
         canonical = _bound(guide, root, allow_source=True)
-        return {'source_projection': (SOURCE_BASE / REGIONS[canonical['region_code']]['folder'] / 'SOURCE-PROJECTION-MANIFEST.json').as_posix(),
-                'source_projection_sha256': canonical['source_version']}
+        return _source_projection_evidence(canonical)
     except _FAILURES:
         return None
 

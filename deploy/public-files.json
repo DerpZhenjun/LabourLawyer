@@ -75,13 +75,13 @@
     },
     {
       "path": "data/public-regions/guides.json",
-      "bytes": 11634997,
-      "sha256": "2ba2239e6ee548a7614c03f6bddce718eace6cee8b597a4ea312ddd72ff4b790"
+      "bytes": 11809041,
+      "sha256": "2adf8440082180cb1e1d709ea93286d2238adaae9f052a37b81d9dc11fadf5e9"
     },
     {
       "path": "data/public-regions/manifest.json",
       "bytes": 526,
-      "sha256": "0a2b0fc408f5bff59813237f8627b7436ea6ef54fef74be84a7f06caa08694c5"
+      "sha256": "124881694e1060cce67c5ed70067b28e91c8978b4d58ea45ac2d7ee76089c581"
     },
     {
       "path": "frontend/src/data/provinceCatalog.json",
@@ -21809,6 +21809,41 @@
       "path": "reports/overnight-gap-closure-20261030/localities/fujian-n-source-projection/xiuyu-350305/SOURCE-QUALIFICATIONS.json",
       "bytes": 1681,
       "sha256": "e2f42f6b791008b13205895f09dda1c8eb320828921bf5fbc573ce32ef69cc92"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-n/integration-qa-v1/contracts/350304-application.json",
+      "bytes": 2001,
+      "sha256": "928d5ba81f39ec5fe7be1589c40a495020c18e92016c94f42275bd79f5fc0e52"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-n/integration-qa-v1/contracts/350304-evidence.json",
+      "bytes": 2285,
+      "sha256": "f1344cca000d16327b36457cdcc7ac11141c3e61d34ebcb9970c6cd1cd1c2938"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-n/integration-qa-v1/contracts/350305-application.json",
+      "bytes": 2001,
+      "sha256": "1fde4198555fc69239735e6e878bebd07614293163e7ae475cbb189ee2269aa0"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-n/integration-qa-v1/contracts/350305-evidence.json",
+      "bytes": 2285,
+      "sha256": "8f42fda8db42fcf9c30cbe0ce7f2691c43c9243ed2e5e40478c35d49772f084b"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-n/integration-qa-v1/FINAL-BROWSER-QA.json",
+      "bytes": 20686,
+      "sha256": "38658d121da435652f0a79adee3048a14e189f293dac9bc47717eb70bf9444ac"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-n/integration-qa-v1/NATIVE-CANDIDATE-QA.json",
+      "bytes": 94656,
+      "sha256": "2056bfc7e9d0544667c2b9136d44d2ec64e69b883d525400835332d918f9d6a8"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-n/integration-qa-v1/ROOT-NATIVE-INDEPENDENT-REVIEW.json",
+      "bytes": 35604,
+      "sha256": "3459dc377215b06a9d0851c08c0eb65a2934ced0462e0661a256adbf2b859c08"
     }
   ]
 }

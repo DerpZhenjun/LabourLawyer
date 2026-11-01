@@ -32,7 +32,7 @@ class NDispatchTests(unittest.TestCase):
  def test_registry_marker_and_independent_strict_own_models(self):
   from regional_form_contracts import SUPPORTED_ADAPTERS,PUBLIC_PROOF_ADAPTERS
   self.assertIn(own.ADAPTER,SUPPORTED_ADAPTERS);self.assertIn(own.ADAPTER,PUBLIC_PROOF_ADAPTERS)
-  m=routes.release_capabilities();self.assertEqual(m['publication_receipts']['fujian_putian_own_blank_oct31m_v1'],'7a9a65f57253d24588014dd254471f039ac40099cad319706f2ea10afb98c813');self.assertEqual(m['candidate_stage_receipts'][own.ADAPTER],own.STAGE_SHA256);self.assertEqual(m['publication_receipts'][own.ADAPTER],own.PUBLICATION_SHA256);self.assertFalse(m['models_required'])
+  m=routes.release_capabilities();self.assertEqual(m['publication_receipts']['fujian_putian_own_blank_oct31m_v1'],'7a9a65f57253d24588014dd254471f039ac40099cad319706f2ea10afb98c813');self.assertEqual(m['candidate_stage_receipts'][own.ADAPTER],own.STAGE_SHA256);self.assertEqual(own.PUBLICATION_SHA256,'38658d121da435652f0a79adee3048a14e189f293dac9bc47717eb70bf9444ac');self.assertEqual(m['publication_receipts'][own.ADAPTER],own.PUBLICATION_SHA256);self.assertFalse(m['models_required'])
   for kind in ['application','evidence']:
    model=routes.generation_request_model(own.ADAPTER,kind);self.assertEqual(model.__module__,'regional_putian_n_request')
    for data in [{'signature':'禁止代签'},{'committeeName':'不推定'},{'unknown':'x'}]:
@@ -115,7 +115,7 @@ class NDispatchTests(unittest.TestCase):
    for code in own.REGIONS:
     self.assertFalse(own.parse_capture(code,root=ROOT)['can_generate'])
     with self.assertRaises(PermissionError):own.candidate_fill(own.envelope(code,'application',{},root=ROOT),root=ROOT)
-    with self.assertRaises(ValueError):own._published(code,ROOT)
+    with patch.object(own,'PUBLICATION_SHA256',None),self.assertRaises(ValueError):own._published(code,ROOT)
  def test_samples_and_scanning_never_get_contract_original_or_generation(self):
   with self.isolated() as (_,store,c):
    for g in self.guides(store):

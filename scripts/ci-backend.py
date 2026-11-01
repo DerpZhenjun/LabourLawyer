@@ -64,6 +64,7 @@ TESTS = (
     'test_regional_fujian_oct31n',
     'test_fujian_oct31n_dispatch',
     'test_fujian_n_client_contract',
+    'test_fujian_n_publication',
     'test_fujian_m_publication',
     'test_generated_document_storage',
     'test_regional_issue_public_urls',

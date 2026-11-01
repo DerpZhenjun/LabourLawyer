@@ -1,5 +1,5 @@
 """Private N own-source/provider proposal; pure local qualification only."""
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from hashlib import sha256
 from copy import deepcopy
 from zipfile import ZipFile
@@ -74,13 +74,16 @@ class ProposalNTests(unittest.TestCase):
         for code in own.REGIONS:
             g=own.parse_capture(code,root=ROOT);self.assertEqual(g['channel']['online_status'],'auth_required');self.assertIsNone(g['channel']['entry_url']);self.assertFalse(g['channel']['submission_verified']);self.assertEqual(g['qualifications']['visit_scope_relationship'],'compatible_different_scopes');self.assertEqual(g['qualifications']['operational_issue_events'],[])
     def test_raw_source_and_missing_stage_or_final_approval_always_refuse(self):
-        self.assertIsNone(own.PUBLICATION_SHA256)
+        self.assertEqual(own.PUBLICATION_SHA256,'38658d121da435652f0a79adee3048a14e189f293dac9bc47717eb70bf9444ac')
         for code in own.REGIONS:
             g=own.parse_capture(code,root=ROOT);self.assertFalse(own.with_capabilities(g,root=ROOT)['can_generate'])
             with patch.object(own,'WORD_SHA',None),patch.object(own,'STAGE_SHA256',None):
                 with self.assertRaises(ValueError):own.staged_candidate(code,root=ROOT)
             with self.assertRaises(ValueError):own.with_publication_evidence(g,root=ROOT)
             with self.assertRaises(ValueError):own.checked_adapter(g,g['templates'][0],'application',root=ROOT)
+            with patch.object(own,'PUBLICATION_SHA256',None):
+                with self.assertRaises(ValueError):own._published(code,ROOT)
+                self.assertFalse(own.with_capabilities(g,root=ROOT)['can_generate'])
     def test_independent_own_stage_exposes_only_four_blank_forms_not_publication(self):
         self.assertRegex(own.WORD_SHA,r'^[a-f0-9]{64}$');self.assertRegex(own.STAGE_SHA256,r'^[a-f0-9]{64}$')
         count=0
@@ -127,8 +130,12 @@ class ProposalNTests(unittest.TestCase):
                 with self.assertRaises(ValueError):own.staged_candidate('350304',root=root)
     def test_stage_final_None_and_original_source_overwrite_refuse(self):
         g=own.staged_candidate('350304',root=ROOT);t=next(t for t in g['templates'] if t['document_types']==['application'])
-        with self.assertRaises(ValueError):own.with_publication_evidence(g,root=ROOT)
-        with self.assertRaises(ValueError):own.checked_adapter({**g,'published':True},t,'application',root=ROOT)
+        with patch.object(own,'PUBLICATION_SHA256',None):
+            with self.assertRaises(ValueError):own.with_publication_evidence(g,root=ROOT)
+            with self.assertRaises(ValueError):own.checked_adapter({**g,'published':True},t,'application',root=ROOT)
+        published=own.with_publication_evidence(g,root=ROOT)
+        self.assertTrue(published['published']);self.assertEqual(published['publication_adapter_evidence']['sha256'],own.PUBLICATION_SHA256)
+        self.assertFalse(own.parse_capture('350304',root=ROOT)['can_generate'])
         doc=own.fill_document(g,t,'application',own.template_path('350304','application',root=ROOT),own.example_data('350304','application',root=ROOT),root=ROOT)
         with self.assertRaises(ValueError):doc.save(own.template_path('350304','application',root=ROOT))
     def test_private_candidate_requires_explicit_review(self):
@@ -181,4 +188,67 @@ class ProposalNTests(unittest.TestCase):
         for rel in own.source_files(ROOT):
             if rel.endswith('.json'):
                 text=(ROOT/rel).read_text('utf8');self.assertNotIn('.runtime/',text);self.assertNotIn('DerpZhenjun',text);self.assertNotIn('x-wbsign-fileunid',text.lower());self.assertNotIn('access_token=',text.lower())
+    def test_portable_path_spellings_refused_with_actual_posix_lexical_rules(self):
+        # Real PurePosixPath parsing, with no host filesystem access. This makes
+        # the Linux C:/ and C:relative bug reproducible even on a Windows host.
+        class LexicalPosixPath(PurePosixPath):
+            def resolve(self):return self
+            def is_symlink(self):return False
+        invalid=['C:/private/x','C:relative',r'C:\private\x',r'\private\x',r'\\server\share\x','//server/share/x','/private/x','../x',r'..\x',r'a\..\x','a/../x',r'\\?\C:\private\x']
+        with patch.object(own,'Path',LexicalPosixPath):
+            for value in invalid:
+                with self.subTest(value=value),self.assertRaises(ValueError):own.path_at('/own-source-root',value)
+            self.assertEqual(own.path_at('/own-source-root',PurePosixPath('reports')/'own.json'),PurePosixPath('/own-source-root/reports/own.json'))
+    def test_native_relative_paths_and_resolved_link_escape_checks_preserved(self):
+        temp=tempfile.TemporaryDirectory(prefix='n-relative-path-');self.addCleanup(temp.cleanup);root=Path(temp.name).resolve();(root/'reports').mkdir();leaf=root/'reports/own.json';leaf.write_bytes(b'SYNTHETIC PUBLIC SOURCE')
+        for value in [Path('reports')/'own.json','reports/own.json']:
+            self.assertEqual(own.path_at(root,value),leaf)
+        class ResolvedPosixPath(PurePosixPath):
+            def resolve(self):return type(self)('/foreign-target') if self.name=='link' else self
+            def is_symlink(self):return self.name=='direct-link'
+        with patch.object(own,'Path',ResolvedPosixPath):
+            for value in ['link','direct-link']:
+                with self.subTest(value=value),self.assertRaises(ValueError):own.path_at('/own-source-root',value)
+
+    def test_actual_empty_bootstrap_keeps_both_own_published_guides_generatable(self):
+        import public_seed
+        from regional_guides import RegionalStore
+        root=self.clone_stage();folder=root/'data/public-regions';folder.mkdir(parents=True)
+        guides=[own._published(code,root) for code in own.REGIONS]
+        rows=json.loads((ROOT/'data/public-regions/directory.json').read_bytes())
+        directory=[a for a in rows if a['code'] in own.REGIONS and a['province']=='fujian' and a['level']==4]
+        self.assertEqual(len(directory),2)
+        payload={'guides.json':guides,'directory.json':directory};hashes={}
+        for name,value in payload.items():
+            body=json.dumps(value,ensure_ascii=False).encode();(folder/name).write_bytes(body);hashes[name]=sha256(body).hexdigest()
+        (folder/'manifest.json').write_text(json.dumps({'schema_version':1,'files':hashes}),encoding='utf-8')
+        result=public_seed.bootstrap_public_data(root=root,data_dir=root/'bootstrapped')
+        self.assertEqual((result['guides_imported'],result['directory_imported'],result['missing_attachments']),(2,2,[]))
+        store=RegionalStore(root/'bootstrapped/regional-guides.sqlite');stored=store.inventory()
+        self.assertEqual(sum(any(t.get('can_generate') is True for t in g['templates']) for g in stored),2)
+        for g in stored:
+            expected=own.public_evidence(own._published(g['region_code'],root),root)
+            self.assertEqual(g['evidence'],expected);self.assertTrue(own.with_capabilities(g,root=root)['can_generate'])
+            for t in g['templates']:
+                if t['can_generate']:self.assertEqual(own.checked_adapter(g,t,t['document_types'][0],root=root),own.ADAPTER)
+    def test_only_exact_own_two_field_derived_evidence_is_accepted(self):
+        a,b=list(own.REGIONS);g=own._published(a,ROOT);proof=own.public_evidence(g,ROOT);foreign=own.public_evidence(own._published(b,ROOT),ROOT)
+        self.assertEqual(set(proof),{'source_projection','source_projection_sha256'});self.assertEqual(own._METADATA,{'version','region_id','content_hash'})
+        for bad in [None,True,False,1,'x',[],{},foreign,{**proof,'extra':True},{'source_projection':proof['source_projection']},{**proof,'source_projection':True},{**proof,'source_projection_sha256':True},{**proof,'source_projection_sha256':'0'*64},{**proof,'source_projection':'reports/other/SOURCE-PROJECTION-MANIFEST.json'}]:
+            with self.subTest(proof=bad),self.assertRaises(ValueError):own.with_capabilities({**g,'evidence':bad},root=ROOT)
+        accepted={**g,'evidence':proof};self.assertTrue(own.with_capabilities(accepted,root=ROOT)['can_generate'])
+        for patch_data in [{'extra':True},{'version':True},{'region_id':'wrong'},{'content_hash':False}]:
+            with self.subTest(metadata=patch_data),self.assertRaises(ValueError):own.with_capabilities({**accepted,**patch_data},root=ROOT)
+    def test_validated_derived_evidence_never_grants_raw_or_missing_final_permission(self):
+        for code in own.REGIONS:
+            raw=own.parse_capture(code,root=ROOT);proof=own.public_evidence(raw,ROOT);raw['evidence']=proof
+            self.assertFalse(own.with_capabilities(raw,root=ROOT)['can_generate'])
+            with self.assertRaises(ValueError):own.with_capabilities({**raw,'can_generate':True},root=ROOT)
+            published=own._published(code,ROOT);published['evidence']=proof
+            with patch.object(own,'PUBLICATION_SHA256',None),self.assertRaises(ValueError):own.with_capabilities(published,root=ROOT)
+    def test_derived_evidence_validation_is_pure_and_does_not_recurse(self):
+        g=own._published('350304',ROOT);proof=own.public_evidence(g,ROOT)
+        with patch.object(own,'public_evidence',side_effect=AssertionError('No recursive public evidence call')):
+            self.assertTrue(own._matches({**g,'evidence':proof},g))
+
 if __name__=='__main__':unittest.main(verbosity=2)
