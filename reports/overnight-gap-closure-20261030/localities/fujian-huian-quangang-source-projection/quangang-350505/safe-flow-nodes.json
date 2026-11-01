@@ -1,0 +1,117 @@
+{
+  "msg": null,
+  "total": null,
+  "code": 200,
+  "data": {
+    "flowNodeCount": {
+      "forthFlow": 0,
+      "threeFlow": 0,
+      "sevFlow": 0,
+      "sixFlow": 0,
+      "overseasStep": "",
+      "firstFlow": 0,
+      "flowCount": 2,
+      "specialStep": ""
+    },
+    "flowNodeList": [
+      {
+        "limitcount": null,
+        "unid": "E2419BB8571F736A4CDF090AB136B8B1",
+        "limittype": "当场",
+        "overseasStep": "Document Receipt",
+        "name": "申请与受理",
+        "transactresult": null,
+        "step": "收件",
+        "sort": "0",
+        "csstandard": null,
+        "nodeoperator": null,
+        "parentid": "746DE402C70F4CCCDFFDB52EA51A431A",
+        "limittime": null
+      },
+      {
+        "limitcount": "1",
+        "unid": "745DAAEF35770F8FB680B529BD592EB3",
+        "limittype": "工作日",
+        "overseasStep": null,
+        "name": "申请与受理",
+        "transactresult": "同意受理或不予受理。",
+        "step": "受理",
+        "sort": "1",
+        "csstandard": "初审申请依据是否合法合规，申请材料是否规范、是否齐全、是否完整。",
+        "nodeoperator": "庄颖茜",
+        "parentid": "746DE402C70F4CCCDFFDB52EA51A431A",
+        "limittime": null
+      },
+      {
+        "limitcount": null,
+        "unid": "D31EABF0B23574C49837D152CFE6C647",
+        "limittype": "工作日",
+        "overseasStep": null,
+        "name": "审查",
+        "transactresult": null,
+        "step": null,
+        "sort": "2",
+        "csstandard": null,
+        "nodeoperator": null,
+        "parentid": "746DE402C70F4CCCDFFDB52EA51A431A",
+        "limittime": null
+      },
+      {
+        "limitcount": null,
+        "unid": "C9E6065EBDFA0C344753A88A32C78F63",
+        "limittype": "工作日",
+        "overseasStep": "Review",
+        "name": "审查",
+        "transactresult": null,
+        "step": "审查",
+        "sort": "3",
+        "csstandard": null,
+        "nodeoperator": null,
+        "parentid": "746DE402C70F4CCCDFFDB52EA51A431A",
+        "limittime": null
+      },
+      {
+        "limitcount": "4",
+        "unid": "2ACEAD2990FFB1053E8D7841DD64CCC8",
+        "limittype": "工作日",
+        "overseasStep": null,
+        "name": "决定（含制证与送达）",
+        "transactresult": "同意受理或不予受理。",
+        "step": "决定",
+        "sort": "4",
+        "csstandard": "终审申请依据是否合法合规，申请材料是否规范、是否齐全、是否完整。",
+        "nodeoperator": "庄颖茜",
+        "parentid": "746DE402C70F4CCCDFFDB52EA51A431A",
+        "limittime": null
+      },
+      {
+        "limitcount": null,
+        "unid": "12698A2C9EBEAE86CAA8A49F3C24BE84",
+        "limittype": "当场",
+        "overseasStep": "Certificate Production",
+        "name": "决定（含制证与送达）",
+        "transactresult": null,
+        "step": "制证",
+        "sort": "5",
+        "csstandard": "---------------",
+        "nodeoperator": null,
+        "parentid": "746DE402C70F4CCCDFFDB52EA51A431A",
+        "limittime": null
+      },
+      {
+        "limitcount": null,
+        "unid": "E5542B90CDA64B5030EB96589F65F289",
+        "limittype": "当场",
+        "overseasStep": "Service",
+        "name": "决定（含制证与送达）",
+        "transactresult": null,
+        "step": "送达",
+        "sort": "6",
+        "csstandard": "---------------",
+        "nodeoperator": null,
+        "parentid": "746DE402C70F4CCCDFFDB52EA51A431A",
+        "limittime": null
+      }
+    ]
+  }
+}

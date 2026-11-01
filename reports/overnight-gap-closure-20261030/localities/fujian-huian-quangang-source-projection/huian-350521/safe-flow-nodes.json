@@ -1,0 +1,117 @@
+{
+  "msg": null,
+  "total": null,
+  "code": 200,
+  "data": {
+    "flowNodeCount": {
+      "forthFlow": 0,
+      "threeFlow": 0,
+      "sevFlow": 0,
+      "sixFlow": 0,
+      "overseasStep": "",
+      "firstFlow": 0,
+      "flowCount": 2,
+      "specialStep": ""
+    },
+    "flowNodeList": [
+      {
+        "limitcount": null,
+        "unid": "8C6AAE9F6BE2F3950D5704832CB64D89",
+        "limittype": "当场",
+        "overseasStep": "Document Receipt",
+        "name": "申请与受理",
+        "transactresult": null,
+        "step": "收件",
+        "sort": "0",
+        "csstandard": null,
+        "nodeoperator": null,
+        "parentid": "A917E510341EA05C46948B616C3BE489",
+        "limittime": null
+      },
+      {
+        "limitcount": "3",
+        "unid": "E6E589D8FD347A1503DE5745BF7005BF",
+        "limittype": "工作日",
+        "overseasStep": null,
+        "name": "申请与受理",
+        "transactresult": "若材料不规范或不齐备，一次性告知补正；若材料规范、齐全、准确，提交审查决定。",
+        "step": "受理",
+        "sort": "1",
+        "csstandard": "审核材料的完整性、合法性和真实性。",
+        "nodeoperator": "陈梅芳、李燕红、许晓禧、张瑞鑫",
+        "parentid": "A917E510341EA05C46948B616C3BE489",
+        "limittime": null
+      },
+      {
+        "limitcount": null,
+        "unid": "24946AAE355B92CC136D77C0292FD21E",
+        "limittype": "工作日",
+        "overseasStep": null,
+        "name": "审查",
+        "transactresult": null,
+        "step": null,
+        "sort": "2",
+        "csstandard": null,
+        "nodeoperator": null,
+        "parentid": "A917E510341EA05C46948B616C3BE489",
+        "limittime": null
+      },
+      {
+        "limitcount": null,
+        "unid": "E13E02F949FA8B15FD91AC4323298C2D",
+        "limittype": "工作日",
+        "overseasStep": "Review",
+        "name": "审查",
+        "transactresult": null,
+        "step": "审查",
+        "sort": "3",
+        "csstandard": null,
+        "nodeoperator": null,
+        "parentid": "A917E510341EA05C46948B616C3BE489",
+        "limittime": null
+      },
+      {
+        "limitcount": "2",
+        "unid": "ACF833BA0EA22DF3719C43FB716A6DC7",
+        "limittype": "工作日",
+        "overseasStep": null,
+        "name": "决定（含制证与送达）",
+        "transactresult": "符合受理条件的，出具受理通知书；不符合受理条件的，出具不予受理通知书。",
+        "step": "决定",
+        "sort": "4",
+        "csstandard": "复核材料的完整性、合法性和真实性。",
+        "nodeoperator": "潘嵘峰",
+        "parentid": "A917E510341EA05C46948B616C3BE489",
+        "limittime": null
+      },
+      {
+        "limitcount": null,
+        "unid": "BA4FAFAA25AE3594D70668B2FE42CAF8",
+        "limittype": "当场",
+        "overseasStep": "Certificate Production",
+        "name": "决定（含制证与送达）",
+        "transactresult": null,
+        "step": "制证",
+        "sort": "5",
+        "csstandard": "---------------",
+        "nodeoperator": null,
+        "parentid": "A917E510341EA05C46948B616C3BE489",
+        "limittime": null
+      },
+      {
+        "limitcount": null,
+        "unid": "AA775E0A46B8A4A99C299C1595494ED0",
+        "limittype": "当场",
+        "overseasStep": "Service",
+        "name": "决定（含制证与送达）",
+        "transactresult": null,
+        "step": "送达",
+        "sort": "6",
+        "csstandard": "---------------",
+        "nodeoperator": null,
+        "parentid": "A917E510341EA05C46948B616C3BE489",
+        "limittime": null
+      }
+    ]
+  }
+}

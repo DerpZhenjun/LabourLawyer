@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "region_code": "350505",
+  "source_id": "4f9f8144ec2ae19a7f2e70cf",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=746DE402C70F4CCCDFFDB52EA51A431A",
+  "service_unid": "746DE402C70F4CCCDFFDB52EA51A431A",
+  "official_version": "1",
+  "source_role": "OWN_API_PROJECTION_PRIVATE_ROOT_REVIEW_PENDING",
+  "files": {
+    "application-format-public-retrieval.docx": {
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    "evidence-format-public-retrieval.docx": {
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    "guide.json": {
+      "bytes": 34815,
+      "sha256": "20f2269130d96d7a252a77418dd885f597dc3049dc81c8c81228cc854ba8396e"
+    },
+    "PUBLIC-RETRIEVALS.json": {
+      "bytes": 1737,
+      "sha256": "92765174df8d95674fbc946b51bb45acd3c174ed97a0dfb7a7b114de630890f9"
+    },
+    "safe-accept-list.json": {
+      "bytes": 2996,
+      "sha256": "908b5ff8ae6300e75eb2324b1c97dedd5d6878d03b376e5df8b4927c51abe7d1"
+    },
+    "safe-flow-nodes.json": {
+      "bytes": 3546,
+      "sha256": "3559cf6699998e96cbfd540d0c27a380dc47635ef0602cace87c1705d44648ab"
+    },
+    "safe-legal-basis.json": {
+      "bytes": 2530,
+      "sha256": "dfc70a543e76100fa17c03e445ef36fb5f664f3011eaa874818cf2c4a4001d62"
+    },
+    "safe-material-list.json": {
+      "bytes": 8364,
+      "sha256": "9f361300f7f8fbd6c20ca274ae51d842c4acc811e70c348e2f49f855b682b78a"
+    },
+    "safe-matter-according.json": {
+      "bytes": 298,
+      "sha256": "0ac66e02cbf57cb9db1d52cd6a675b701cff69329ebc0290b6fb96f4e190ee72"
+    },
+    "safe-matter-basic.json": {
+      "bytes": 9290,
+      "sha256": "9c343225782fa69007395e5da519defb4958f2ff7b7c9492596f26f1460f9f10"
+    },
+    "safe-notice-list.json": {
+      "bytes": 680,
+      "sha256": "f1c58fec37897f3764f54fff30dcdcd36885b87c4bd7fd97dbd63be1411e2ea5"
+    },
+    "safe-table-info.json": {
+      "bytes": 2396,
+      "sha256": "45a591704347108508cc87bc84164773ccd606d845d437e8b8336b68cf94583a"
+    }
+  },
+  "raw_API_SHA256": {
+    "accept-list.json": "c9c1a61fd3c3c4a2da70e03d3f069c76c597111ed28e7dd6a9363eb6540d3a2d",
+    "flow-nodes.json": "2a91b43e4e29912b074b6d872f08f6edcf15f8c5a297aa126a07585003890fc8",
+    "legal-basis.json": "269e040be72214c73ad2bf68278c91c31313dd6b90b7a5b77eaf72de28cf5945",
+    "material-list.json": "b6fa60d5e73d06cc57ae7c884506f5bef0bbadef9bae2daea876b2a312932048",
+    "matter-according.json": "75f06886b162cb3bef26887236daa0d6ad7dd2da32200ee63d0adf31a64e2e29",
+    "matter-basic.json": "e3cd7e7514157cc98cb877856ffc8053828c7bc0c5c170baf15bbbe19db6a6d1",
+    "notice-list.json": "a4c39a670bbc0f62bed00329fe1d0dbe9ec0d1696a790fed2dd21798df293792",
+    "table-info.json": "96ade7d07cbb5a49e0782d1670a19f361ed5b1e0f8fe2d5b209c84a4ed24079b"
+  },
+  "dynamic_public_signatures": "STRIPPED_NOT_PROJECTED",
+  "WORD": null,
+  "STAGE": null,
+  "PUBLICATION": null
+}

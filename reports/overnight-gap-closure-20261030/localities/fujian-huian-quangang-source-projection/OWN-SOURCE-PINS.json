@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "private_source_review": "ROOT_REVIEW_PENDING",
+  "WORD": null,
+  "STAGE": null,
+  "PUBLICATION": null,
+  "regions": {
+    "350521": {
+      "folder": "huian-350521",
+      "source_id": "5a2049b6dd7a240d496c29d7",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=A917E510341EA05C46948B616C3BE489",
+      "service_unid": "A917E510341EA05C46948B616C3BE489",
+      "service_code": "11350521003825518W400201430200Y01",
+      "authority": "惠安县人力资源和社会保障局",
+      "district": "惠安县",
+      "official_version": "1",
+      "source_manifest_sha256": "4a9697f5ea943d6dc02b5a9361da7bf6639a50cd6c76f357aa01d68686d4178b"
+    },
+    "350505": {
+      "folder": "quangang-350505",
+      "source_id": "4f9f8144ec2ae19a7f2e70cf",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=746DE402C70F4CCCDFFDB52EA51A431A",
+      "service_unid": "746DE402C70F4CCCDFFDB52EA51A431A",
+      "service_code": "11350505726453922H400201430200Y01",
+      "authority": "泉州市泉港区人力资源和社会保障局",
+      "district": "泉港区",
+      "official_version": "1",
+      "source_manifest_sha256": "c3d3dc26535ed2df27d53d4ad4f3fb723e1bfb740fa2ee6926c4a550783a6267"
+    }
+  }
+}
