@@ -1,0 +1,197 @@
+{
+  "status": "BOTH_HOSTS_M221_204_ACCEPTED",
+  "verified_at": "2026-10-31T09:00:13.428743+00:00",
+  "source_commit": "48bb612bbba0a21bc7a7433e8afdda991ac02612",
+  "source_CI": {
+    "url": "https://github.com/DerpZhenjun/LabourLawyer/actions/runs/41184374822",
+    "backend_tests": 456,
+    "guarded_crash_tests": 2,
+    "status": "success"
+  },
+  "sources": [
+    {
+      "region": "福建省/莆田市/城厢区",
+      "code": "350302",
+      "source_id": "28a4418211ce36fedd8069f6"
+    },
+    {
+      "region": "福建省/莆田市/涵江区",
+      "code": "350303",
+      "source_id": "27f41dab3a9d19c7d144c8de"
+    }
+  ],
+  "hosts": {
+    "main": {
+      "guides": 221,
+      "generatable": 204,
+      "native_downloads": 8,
+      "strict_contracts": 4,
+      "viewports": [
+        375,
+        768,
+        1440
+      ],
+      "form_width_checks": 12,
+      "cancel_checks": 4,
+      "negative_GET_checks": 12,
+      "negative_POST_checks": 10,
+      "report_sha256": "69af820a422feff2bf01ee65d373032a80068a48a0110abbb6116a7452bc43c4",
+      "screenshots": 0,
+      "models": 0,
+      "old_data_preserved": true,
+      "files": [
+        {
+          "code": "350302",
+          "kind": "application",
+          "scenario": "filled",
+          "sha256": "95d691dc1cc3b45a01ea09de1130afae4b333d2c4006f97060024cca5795174f"
+        },
+        {
+          "code": "350302",
+          "kind": "application",
+          "scenario": "blank",
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350302",
+          "kind": "evidence",
+          "scenario": "filled",
+          "sha256": "63d1427f419f1c7f0babab5d24870c83f6ebf64cc7ad7a7f76fa8b49aef8a439"
+        },
+        {
+          "code": "350302",
+          "kind": "evidence",
+          "scenario": "blank",
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        },
+        {
+          "code": "350303",
+          "kind": "application",
+          "scenario": "filled",
+          "sha256": "5c9fed94dc4515b26b4966a83d31970da8a69cc5f43e9d3e76e79f990fd995ac"
+        },
+        {
+          "code": "350303",
+          "kind": "application",
+          "scenario": "blank",
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350303",
+          "kind": "evidence",
+          "scenario": "filled",
+          "sha256": "c8306ef92310e9092edb7aa5d47251a55d3ce1893ed54263fc4cb7726bebe962"
+        },
+        {
+          "code": "350303",
+          "kind": "evidence",
+          "scenario": "blank",
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        }
+      ]
+    },
+    "ubuntu": {
+      "guides": 221,
+      "generatable": 204,
+      "native_downloads": 8,
+      "strict_contracts": 4,
+      "viewports": [
+        375,
+        768,
+        1440
+      ],
+      "form_width_checks": 12,
+      "cancel_checks": 4,
+      "negative_GET_checks": 12,
+      "negative_POST_checks": 10,
+      "report_sha256": "ae8fc65ac34d2c361d0e178ff2cec549e5e90466c2bcc456752f74233a65df8d",
+      "screenshots": 0,
+      "models": 0,
+      "old_data_preserved": true,
+      "files": [
+        {
+          "code": "350302",
+          "kind": "application",
+          "scenario": "filled",
+          "sha256": "95d691dc1cc3b45a01ea09de1130afae4b333d2c4006f97060024cca5795174f"
+        },
+        {
+          "code": "350302",
+          "kind": "application",
+          "scenario": "blank",
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350302",
+          "kind": "evidence",
+          "scenario": "filled",
+          "sha256": "63d1427f419f1c7f0babab5d24870c83f6ebf64cc7ad7a7f76fa8b49aef8a439"
+        },
+        {
+          "code": "350302",
+          "kind": "evidence",
+          "scenario": "blank",
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        },
+        {
+          "code": "350303",
+          "kind": "application",
+          "scenario": "filled",
+          "sha256": "5c9fed94dc4515b26b4966a83d31970da8a69cc5f43e9d3e76e79f990fd995ac"
+        },
+        {
+          "code": "350303",
+          "kind": "application",
+          "scenario": "blank",
+          "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+        },
+        {
+          "code": "350303",
+          "kind": "evidence",
+          "scenario": "filled",
+          "sha256": "c8306ef92310e9092edb7aa5d47251a55d3ce1893ed54263fc4cb7726bebe962"
+        },
+        {
+          "code": "350303",
+          "kind": "evidence",
+          "scenario": "blank",
+          "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+        }
+      ]
+    }
+  },
+  "cold": {
+    "guides": 221,
+    "generatable": 204,
+    "directory": 3974,
+    "missing_attachments": 0,
+    "M_own_forms": 4,
+    "strict_derived_evidence_verified": true,
+    "no_production_database_access": true,
+    "application_network_and_child_and_model_calls": 0
+  },
+  "preservation": {
+    "Ubuntu_prior219_raw_rows_and_pointers": true,
+    "Ubuntu_protected_processes": 3,
+    "collector_jobs": 4,
+    "collector_issue_rows_events_observations": [
+      4,
+      4,
+      10
+    ],
+    "capture_screenshots": false,
+    "Main_existing_ACK_rows": 377,
+    "user_uncommitted_six_files": true
+  },
+  "limits": {
+    "guide_status": "partially_verified",
+    "official_material_IDs": null,
+    "committee_full_name": null,
+    "official_version": null,
+    "online_application": "authentication_boundary_only_no_application_CTA",
+    "metadata_only_attachments_per_region": 4,
+    "nationwide_complete": false,
+    "N_O_P_live_in_this_report": false
+  },
+  "old_failed_cold": "FAILED_221_202_RETAINED; superseded only by a new immutable package and fresh 221/204 sandbox"
+}
