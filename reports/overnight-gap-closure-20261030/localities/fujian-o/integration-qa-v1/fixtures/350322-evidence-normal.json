@@ -1,0 +1,33 @@
+{
+  "province": "fujian",
+  "city": "莆田市",
+  "district": "仙游县",
+  "region_code": "350322",
+  "source_id": "6918d8e34e1206673434fbc9",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=D17248EFB5EF8E8BDCACDEEEC1B4DD62&infoType=1",
+  "service_code": "113503220037190969400201430200Y01",
+  "authority": "仙游县人力资源和社会保障局",
+  "observed_at_utc": "2026-10-31T06:31:50.848Z",
+  "source_version": "7aa1301b1a520ac1a34803afe72cd96ef3378e40d0aea90ec4ea81113c3a1e59",
+  "material_id": null,
+  "local_material_key": "6918d8e34e1206673434fbc9:dom-material:2",
+  "template_id": "CC300F5D9DD5DC404D65C68116D50C55",
+  "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+  "template_version": "sha256:d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+  "schema_id": "private-own-xianyou-quanzhou-350322-evidence-v1",
+  "schema_version": 1,
+  "schema_sha256": "7aec566d12e0cc4e8c269df9d155e39108351cc2bfe3cbc696111064b771cd2c",
+  "kind": "evidence",
+  "mode": "blank",
+  "data": {
+    "evidenceList": [
+      {
+        "name": "虚构证据甲",
+        "pageCount": "1",
+        "originalType": "复印件",
+        "purpose": "虚构测试用途",
+        "pageRange": "1"
+      }
+    ]
+  }
+}

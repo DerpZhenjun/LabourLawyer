@@ -55,6 +55,10 @@ from regional_fujian_oct31n import (fill_document as fill_putian_n_document, ADA
     STAGE_SHA256 as PUTIAN_N_STAGE_SHA256, PUBLICATION_SHA256 as PUTIAN_N_PUBLICATION_SHA256,
     REGIONS as PUTIAN_N_REGIONS)
 from regional_putian_n_request import PutianNApplicationRequest, PutianNEvidenceRequest
+from regional_fujian_oct31o import (fill_document as fill_fujian_o_document, ADAPTER as FUJIAN_O_ADAPTER,
+    STAGE_SHA256 as FUJIAN_O_STAGE_SHA256, PUBLICATION_SHA256 as FUJIAN_O_PUBLICATION_SHA256,
+    REGIONS as FUJIAN_O_REGIONS)
+from regional_fujian_o_request import FujianOApplicationRequest, FujianOEvidenceRequest
 from regional_zhejiang_oct29e import fill_document as fill_zhejiang_e_document
 from regional_zhejiang_chunan_oct30 import (fill_document as fill_chunan_document, ADAPTER as CHUNAN_ADAPTER,
     PUBLICATION_SHA256 as CHUNAN_PUBLICATION_SHA256)
@@ -79,10 +83,10 @@ router=APIRouter()
 def release_capabilities():
     """Identify loaded generation code before a reviewed data-only upgrade."""
     return {'release_id':'oct30night-own-localities-v1',
-            'adapters':[JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER,JIANGSU_F_ADAPTER,JIANGSU_G_ADAPTER,FUJIAN_H_ADAPTER,FUJIAN_I_ADAPTER,FUJIAN_J_ADAPTER,FUJIAN_K_ADAPTER,PINGTAN_ADAPTER,PUTIAN_ADAPTER,PUTIAN_N_ADAPTER],
-            'candidate_stage_receipts':{JIANGSU_F_ADAPTER:JIANGSU_F_STAGE_SHA256,JIANGSU_G_ADAPTER:JIANGSU_G_STAGE_SHA256,FUJIAN_H_ADAPTER:FUJIAN_H_STAGE_SHA256,FUJIAN_I_ADAPTER:FUJIAN_I_STAGE_SHA256,FUJIAN_J_ADAPTER:FUJIAN_J_STAGE_SHA256,FUJIAN_K_ADAPTER:FUJIAN_K_STAGE_SHA256,PINGTAN_ADAPTER:PINGTAN_STAGE_SHA256,PUTIAN_ADAPTER:PUTIAN_STAGE_SHA256,PUTIAN_N_ADAPTER:PUTIAN_N_STAGE_SHA256},
+            'adapters':[JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER,JIANGSU_F_ADAPTER,JIANGSU_G_ADAPTER,FUJIAN_H_ADAPTER,FUJIAN_I_ADAPTER,FUJIAN_J_ADAPTER,FUJIAN_K_ADAPTER,PINGTAN_ADAPTER,PUTIAN_ADAPTER,PUTIAN_N_ADAPTER,FUJIAN_O_ADAPTER],
+            'candidate_stage_receipts':{JIANGSU_F_ADAPTER:JIANGSU_F_STAGE_SHA256,JIANGSU_G_ADAPTER:JIANGSU_G_STAGE_SHA256,FUJIAN_H_ADAPTER:FUJIAN_H_STAGE_SHA256,FUJIAN_I_ADAPTER:FUJIAN_I_STAGE_SHA256,FUJIAN_J_ADAPTER:FUJIAN_J_STAGE_SHA256,FUJIAN_K_ADAPTER:FUJIAN_K_STAGE_SHA256,PINGTAN_ADAPTER:PINGTAN_STAGE_SHA256,PUTIAN_ADAPTER:PUTIAN_STAGE_SHA256,PUTIAN_N_ADAPTER:PUTIAN_N_STAGE_SHA256,FUJIAN_O_ADAPTER:FUJIAN_O_STAGE_SHA256},
             'publication_receipts':{CHUNAN_ADAPTER:CHUNAN_PUBLICATION_SHA256,
-                                    JIANGSU_F_ADAPTER:JIANGSU_F_PUBLICATION_SHA256,JIANGSU_G_ADAPTER:JIANGSU_G_PUBLICATION_SHA256,FUJIAN_H_ADAPTER:FUJIAN_H_PUBLICATION_SHA256,FUJIAN_I_ADAPTER:FUJIAN_I_PUBLICATION_SHA256,FUJIAN_J_ADAPTER:FUJIAN_J_PUBLICATION_SHA256,FUJIAN_K_ADAPTER:FUJIAN_K_PUBLICATION_SHA256,PINGTAN_ADAPTER:PINGTAN_PUBLICATION_SHA256,PUTIAN_ADAPTER:PUTIAN_PUBLICATION_SHA256,PUTIAN_N_ADAPTER:PUTIAN_N_PUBLICATION_SHA256},
+                                    JIANGSU_F_ADAPTER:JIANGSU_F_PUBLICATION_SHA256,JIANGSU_G_ADAPTER:JIANGSU_G_PUBLICATION_SHA256,FUJIAN_H_ADAPTER:FUJIAN_H_PUBLICATION_SHA256,FUJIAN_I_ADAPTER:FUJIAN_I_PUBLICATION_SHA256,FUJIAN_J_ADAPTER:FUJIAN_J_PUBLICATION_SHA256,FUJIAN_K_ADAPTER:FUJIAN_K_PUBLICATION_SHA256,PINGTAN_ADAPTER:PINGTAN_PUBLICATION_SHA256,PUTIAN_ADAPTER:PUTIAN_PUBLICATION_SHA256,PUTIAN_N_ADAPTER:PUTIAN_N_PUBLICATION_SHA256,FUJIAN_O_ADAPTER:FUJIAN_O_PUBLICATION_SHA256},
             'source_bound':True,'models_required':False,
             'regional_store':'main_default' if Path(os.getenv('LABOURLAWYER_REGIONAL_DB',ROOT/'backend/data/regional-guides.sqlite')).resolve()==(ROOT/'backend/data/regional-guides.sqlite').resolve() else 'alternate'}
 
@@ -271,6 +275,11 @@ class GenerateRequest(BaseModel):
     @model_validator(mode='before')
     @classmethod
     def own_kunshan_version(cls,value):
+        if isinstance(value,dict) and value.get('source_id') in {m[1] for m in FUJIAN_O_REGIONS.values()}:
+            if type(value.get('version')) is not int or value['version']<1:
+                raise ValueError('本地区来源版本必须是正整数')
+            if set(value)-set(cls.model_fields):
+                raise ValueError('本地区请求包含未识别字段')
         if isinstance(value,dict) and value.get('source_id') in {m['source_id'] for m in PUTIAN_N_REGIONS.values()}:
             if type(value.get('version')) is not int or value['version']<1:
                 raise ValueError('本地区来源版本必须是正整数')
@@ -520,7 +529,8 @@ def generation_request_model(adapter,kind):
     if adapter==FUJIAN_K_ADAPTER:model=FujianKApplicationRequest if kind=='application' else FujianKEvidenceRequest
     if adapter==PINGTAN_ADAPTER:model=PingtanApplicationRequest if kind=='application' else PingtanEvidenceRequest
     if adapter==PUTIAN_ADAPTER:model=PutianApplicationRequest if kind=='application' else PutianEvidenceRequest
-    if adapter==PUTIAN_N_ADAPTER:model=PutianNApplicationRequest if kind=='application' else PutianNEvidenceRequest
+    if adapter==FUJIAN_O_ADAPTER:model=FujianOApplicationRequest if kind=='application' else FujianOEvidenceRequest
+    elif adapter==PUTIAN_N_ADAPTER:model=PutianNApplicationRequest if kind=='application' else PutianNEvidenceRequest
     return model
 
 
@@ -555,10 +565,12 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
             request_model_factory=generation_request_model)
     except RegionalValidationError as exc:
         raise HTTPException(exc.status_code, str(exc)) from exc
-    blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER,JIANGSU_F_ADAPTER,JIANGSU_G_ADAPTER,FUJIAN_H_ADAPTER,FUJIAN_I_ADAPTER,FUJIAN_J_ADAPTER,FUJIAN_K_ADAPTER,PINGTAN_ADAPTER,PUTIAN_ADAPTER,PUTIAN_N_ADAPTER}
+    blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER,JIANGSU_F_ADAPTER,JIANGSU_G_ADAPTER,FUJIAN_H_ADAPTER,FUJIAN_I_ADAPTER,FUJIAN_J_ADAPTER,FUJIAN_K_ADAPTER,PINGTAN_ADAPTER,PUTIAN_ADAPTER,PUTIAN_N_ADAPTER,FUJIAN_O_ADAPTER}
     if adapter in blank_adapters|{RONGJIANG_ADAPTER,HUNAN_ADAPTER,HUNAN_C_ADAPTER} and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
     try:
-        if adapter==PUTIAN_N_ADAPTER:
+        if adapter==FUJIAN_O_ADAPTER:
+            doc=fill_fujian_o_document(g,t,payload.kind,checked_path(t,g),data.model_dump(),root=ROOT)
+        elif adapter==PUTIAN_N_ADAPTER:
             doc=fill_putian_n_document(g,t,payload.kind,checked_path(t,g),data.model_dump(),root=ROOT)
         elif adapter==PUTIAN_ADAPTER:
             doc=fill_putian_document(g,t,payload.kind,checked_path(t,g),data.model_dump(),root=ROOT)

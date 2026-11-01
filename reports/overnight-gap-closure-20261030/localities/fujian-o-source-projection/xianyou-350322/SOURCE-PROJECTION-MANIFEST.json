@@ -1,0 +1,46 @@
+{
+  "region_code": "350322",
+  "source_id": "6918d8e34e1206673434fbc9",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=D17248EFB5EF8E8BDCACDEEEC1B4DD62&infoType=1",
+  "service_code": "113503220037190969400201430200Y01",
+  "authority": "仙游县人力资源和社会保障局\n\t\t\t\t",
+  "observed_at_utc": "2026-10-31T06:31:50.848Z",
+  "schema": "two-own-source-projection-proposal-v1",
+  "files": {
+    "application-format.docx": {
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    "attachments.json": {
+      "bytes": 21095,
+      "sha256": "8e34174feb5183f92aab3dce15acb57a8e3c35c05c5485bb15657562fb3df79c"
+    },
+    "evidence-list-format.docx": {
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    "own-guide.json": {
+      "bytes": 45135,
+      "sha256": "5e4b7e81e75ca7c41c4ec027e53d744a873e37821d39ab5d7180ddb55911ba82"
+    },
+    "own-layout.json": {
+      "bytes": 5628,
+      "sha256": "54cbbbfc4f5cd8363c16a9b875bddcab400f8e4261f04bc88955daaa923d829b"
+    },
+    "own-materials-native-dom.json": {
+      "bytes": 27829,
+      "sha256": "9eb343dc55ffd54ae3f97bc5377b361d0814ab2a68f9f945ea26a5d9512dbe9d"
+    },
+    "qualifications.json": {
+      "bytes": 432,
+      "sha256": "49e358508c8932d245980f6fa63f02020e93282198cf67567c6327381ee07bbd"
+    },
+    "source-lineage.json": {
+      "bytes": 593,
+      "sha256": "34244c4a1583e977cb02f37eadcabd22a75b8295f5382f0cf196ce4448907d1a"
+    }
+  },
+  "can_generate": false,
+  "approval": null,
+  "private_parent_runtime_fallback": false
+}

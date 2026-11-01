@@ -61,6 +61,9 @@ TESTS = (
     'test_regional_fujian_oct31m',
     'test_fujian_oct31m_dispatch',
     'test_fujian_m_client_contract',
+    'test_regional_fujian_oct31o',
+    'test_fujian_oct31o_dispatch',
+    'test_fujian_o_client_contract',
     'test_regional_fujian_oct31n',
     'test_fujian_oct31n_dispatch',
     'test_fujian_n_client_contract',
@@ -101,6 +104,7 @@ NODE_FIXTURES = {
     (ROOT / 'backend/tests/fixtures/test-pingtan-l-wire.mjs').resolve(),
     (ROOT / 'backend/tests/fixtures/test-putian-m-wire.mjs').resolve(),
     (ROOT / 'backend/tests/fixtures/test-putian-n-wire.mjs').resolve(),
+    (ROOT / 'backend/tests/fixtures/test-fujian-o-wire.mjs').resolve(),
 }
 OFFLINE_EXCLUSIONS = {
     'test_linux_guide_collector.CollectorTests.test_os_worker_lock_rejects_second_process_and_releases_on_exit':

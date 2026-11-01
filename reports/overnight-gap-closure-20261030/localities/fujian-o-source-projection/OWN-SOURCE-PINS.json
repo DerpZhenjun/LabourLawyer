@@ -1,0 +1,32 @@
+{
+  "350322": {
+    "folder": "xianyou-350322",
+    "source_manifest_sha256": "7aa1301b1a520ac1a34803afe72cd96ef3378e40d0aea90ec4ea81113c3a1e59",
+    "identity": {
+      "province": "fujian",
+      "city": "莆田市",
+      "district": "仙游县",
+      "region_code": "350322",
+      "source_id": "6918d8e34e1206673434fbc9",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=D17248EFB5EF8E8BDCACDEEEC1B4DD62&infoType=1",
+      "service_code": "113503220037190969400201430200Y01",
+      "authority": "仙游县人力资源和社会保障局",
+      "observed_at_utc": "2026-10-31T06:31:50.848Z"
+    }
+  },
+  "350502": {
+    "folder": "quanzhou-licheng-350502",
+    "source_manifest_sha256": "bb7dc30c5ec4fe6185777fc6b44ddd139c52eda1f3f36bd8023eaf0f6cf576f6",
+    "identity": {
+      "province": "fujian",
+      "city": "泉州市",
+      "district": "鲤城区",
+      "region_code": "350502",
+      "source_id": "c95aa7b9d6cf3798036de103",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=F755D399CB53FB9466E78283AD8261BD&infoType=1",
+      "service_code": "113505020038190387400201430200201",
+      "authority": "泉州市鲤城区人力资源和社会保障局",
+      "observed_at_utc": "2026-10-31T06:36:39.469Z"
+    }
+  }
+}

@@ -22,6 +22,7 @@ from regional_fujian_oct31k import ADAPTER as FJK, schema_descriptor as fujian_k
 from regional_fujian_oct31l import ADAPTER as FJL, schema_descriptor as pingtan_schema
 from regional_fujian_oct31m import ADAPTER as FJM, schema_descriptor as putian_schema
 from regional_fujian_oct31n import ADAPTER as FJN, schema_descriptor as putian_n_schema
+from regional_fujian_oct31o import ADAPTER as FJO, production_schema_descriptor as fujian_o_schema
 
 ROOT=Path(__file__).resolve().parents[1]
 EJS='jiangsu_own_blank_oct29e_v1'
@@ -35,8 +36,8 @@ JS_BLANK={'jiangsu_xishan_blank_v1','jiangsu_own_blank_oct29_v1',
 REFERENCE={'sichuan_combined_reference_v1','tianfu_reference_v1'}
 NINGBO='zhejiang_ningbo_own_blank_oct29_v1'
 FEIDONG='anhui-feidong-official-application-20261029'
-SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN}|ZJ_OWN|HN|JS_BLANK|REFERENCE)
-PUBLIC_PROOF_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,'jiangsu_own_blank_oct29c_v1','jiangsu_own_blank_oct29d_v1'}|ZJ_OWN|HN)
+SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO}|ZJ_OWN|HN|JS_BLANK|REFERENCE)
+PUBLIC_PROOF_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,'jiangsu_own_blank_oct29c_v1','jiangsu_own_blank_oct29d_v1'}|ZJ_OWN|HN)
 
 JS_APP=('applicantName birthDate gender idNumber idAddress otherDocumentType otherDocumentNumber '
         'applicantMailingAddress phone acceptMediation legalAid respondentName respondentType '
@@ -205,7 +206,8 @@ def build_form_contract(guide,template,kind,root=None):
     if checked_reference_adapter(guide,template,kind,root=root)!=adapter:raise ValueError('本区适配器身份不匹配')
     from routes.regional_guides import generation_request_model
     schema=generation_request_model(adapter,kind).model_json_schema()
-    own_schema=(putian_n_schema(guide['region_code'],kind) if adapter==FJN else
+    own_schema=(fujian_o_schema(guide['region_code'],kind) if adapter==FJO else
+                putian_n_schema(guide['region_code'],kind) if adapter==FJN else
                 putian_schema(guide['region_code'],kind) if adapter==FJM else
                 pingtan_schema(guide['region_code'],kind) if adapter==FJL else
                 fujian_k_schema(guide['region_code'],kind) if adapter==FJK else
