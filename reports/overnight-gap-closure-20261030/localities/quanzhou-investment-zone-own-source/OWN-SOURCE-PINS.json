@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "7b752522ecfe5ca30a4ea2a81f6f266777b1f94126b9c45ceea5808fc8fcbba3",
+  "regions": {
+    "350599": {
+      "region_code": "350599",
+      "district": "台商投资区",
+      "directory_city": "泉州市",
+      "source_id": "cf089c0b9ee9b764b564e269",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=DBAAC265FB53474266169798F1D95FA5",
+      "service_unid": "DBAAC265FB53474266169798F1D95FA5",
+      "service_code": "11350500345156537H400201430200Y01",
+      "authority": "泉州台商投资区管理委员会民生保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "297b56b936b8c43d5598c4fc115c26b881936d21fcd3da08722523ca74319fc2"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

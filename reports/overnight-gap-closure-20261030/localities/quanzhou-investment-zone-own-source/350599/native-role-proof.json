@@ -1,0 +1,65 @@
+{
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=DBAAC265FB53474266169798F1D95FA5",
+  "source_id": "cf089c0b9ee9b764b564e269",
+  "observed_at": "2026-11-08T04:14:30.709953+00:00",
+  "raw_native_capture_pin": {
+    "bytes": 26712,
+    "sha256": "a23ebfe108e99cd5d73245fa7beb5af2cf74360fb1092d2a169e9543afda8e24"
+  },
+  "roles": [
+    {
+      "attachment_id": "E6B5C5E3BE1B13C05F3BE0F9873713A5",
+      "material_id": "D29C8A25967A9C27E0536C0E010A2824",
+      "public_file_unid": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+      "official_label": "仲裁申请书.docx",
+      "official_role": "格式文本",
+      "type_raw": "1",
+      "observed_control_label": "[格式文本]仲裁申请书.docx"
+    },
+    {
+      "attachment_id": "7CA71FCEE667630F5AFC84216C294060",
+      "material_id": "D29C8A25967A9C27E0536C0E010A2824",
+      "public_file_unid": "98A0EE44D3D63B3D6A10FE60D4E83776",
+      "official_label": "仲裁申请书示例.docx",
+      "official_role": "示范文本",
+      "type_raw": "2",
+      "observed_control_label": "[示范文本]仲裁申请书示例.docx"
+    },
+    {
+      "attachment_id": "F4B22C6FA38A53B850C9D12F98CE0200",
+      "material_id": "3BEA07104F0C963458BA0DC0D7E60B45",
+      "public_file_unid": "CC300F5D9DD5DC404D65C68116D50C55",
+      "official_label": "证据清单（空白）.docx",
+      "official_role": "格式文本",
+      "type_raw": "1",
+      "observed_control_label": "[格式文本]证据清单（空白）.docx"
+    },
+    {
+      "attachment_id": "66278397495BB245F544F44F42F4A1E9",
+      "material_id": "3BEA07104F0C963458BA0DC0D7E60B45",
+      "public_file_unid": "D266D62D3E51B38A3C568B47677C4B09",
+      "official_label": "证据清单（示例）.docx",
+      "official_role": "示范文本",
+      "type_raw": "2",
+      "observed_control_label": "[示范文本]证据清单（示例）.docx"
+    },
+    {
+      "attachment_id": "64EAFC638DCEE22D49910FFA5DFA1F01",
+      "material_id": "67492B21C966817A4C79D86235ED1E7C",
+      "public_file_unid": "7C3DBFA82D340B3C50F4DD45E14FE785",
+      "official_label": "证据材料（供参考）.docx",
+      "official_role": "格式文本",
+      "type_raw": "1",
+      "observed_control_label": "[格式文本]证据材料（供参考）.docx"
+    },
+    {
+      "attachment_id": "BDC41D2E798776EAEC379E3BA6D6F216",
+      "material_id": "67492B21C966817A4C79D86235ED1E7C",
+      "public_file_unid": "6EFE86A941A038DC1ED88B911A7D5621",
+      "official_label": "证据材料（供参考）.docx",
+      "official_role": "示范文本",
+      "type_raw": "2",
+      "observed_control_label": "[示范文本]证据材料（供参考）.docx"
+    }
+  ]
+}
