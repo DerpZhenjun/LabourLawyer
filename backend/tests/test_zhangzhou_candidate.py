@@ -113,3 +113,43 @@ class LonghaiCandidateTests(_ZhangzhouCandidateChecks, TestCase):
     region = {'province': 'fujian', 'city': '漳州市', 'district': '龙海区'}
     source_folder = 'zhangzhou-longhai-own-source'
     foreign_code = '350602'
+
+
+class PingheCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+    code = '350628'
+    source_id = '1c435a8e909867d2119efe16'
+    source_version = '798eba503cadb717fb74727aaff074c1389a69feed03c577f63642325f36c70d'
+    authority = '平和县人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '漳州市', 'district': '平和县'}
+    source_folder = 'zhangzhou-four-own-source/350628'
+    foreign_code = '350625'
+
+
+class ChangtaiCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+    code = '350625'
+    source_id = '2ea92c5adb81421b892f2994'
+    source_version = '74786aec7221088ada6a7923a38e13b9d74cb9ba042ac877db57211e35f3ae50'
+    authority = '漳州市长泰区人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '漳州市', 'district': '长泰区'}
+    source_folder = 'zhangzhou-four-own-source/350625'
+    foreign_code = '350628'
+
+
+class ZhangpuCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+    code = '350623'
+    source_id = '48e65b2c27fc105366706caa'
+    source_version = 'de8110bb1a971d508bffb8d94c8545d5bef504dee090b55955736105f7ac91ac'
+    authority = '漳浦县人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '漳州市', 'district': '漳浦县'}
+    source_folder = 'zhangzhou-four-own-source/350623'
+    foreign_code = '350628'
+
+
+class HuaanCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+    code = '350629'
+    source_id = 'd61089df6a682a0affd5d18c'
+    source_version = 'd21b0110552ff1568fe6a7b7049faf9df6939f55f651d24191f8b472d1f3dc44'
+    authority = '华安县人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '漳州市', 'district': '华安县'}
+    source_folder = 'zhangzhou-four-own-source/350629'
+    foreign_code = '350628'
