@@ -571,6 +571,17 @@ class PutianMunicipalCandidateTests(_MunicipalCandidateChecks, TestCase):
     foreign_code = '350902'
 
 
+class ZhangzhouMunicipalCandidateTests(_MunicipalCandidateChecks, TestCase):
+    code = '350600'
+    source_id = 'ad8d3c9efd0a04604c518bde'
+    source_version = '17f6f78c0c521d22e079c0eb917f7f8713f02cf5d97dc800c733e322bc642f0f'
+    authority = '漳州市劳动人事争议仲裁院'
+    handling_form = '窗口办，网上办'
+    region = {'province': 'fujian', 'city': '漳州市', 'district': '市本级'}
+    source_folder = 'zhangzhou-municipal-own-source/350600'
+    foreign_code = '350602'
+
+
 class YouxiCandidateTests(_FujianCandidateChecks, TestCase):
     code = '350426'
     source_id = 'c4a1025ea6a8038fcb55baa3'

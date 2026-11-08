@@ -421,6 +421,16 @@ FUJIAN_MUNICIPAL_REGIONS = {
         'source_freeze_sha256': '8d685d5c892e93e1e4061b9a08bb3957591e28bbb73103f6cc0337797d4e535d',
         'original_kinds': ('application',),
     },
+    '350600': {
+        'district': '',
+        'city': '漳州市',
+        'source_base': LOCALITIES + '/zhangzhou-municipal-own-source',
+        'source_id': 'ad8d3c9efd0a04604c518bde',
+        'source_manifest_sha256': '17f6f78c0c521d22e079c0eb917f7f8713f02cf5d97dc800c733e322bc642f0f',
+        'stage_sha256': '320462297f0de602ad13cfeed7fd729134ff89f9047634a4b39e59779668399d',
+        'source_freeze_sha256': 'c6dfba39ed07dec0c193336586714036016d67650de43719f74b03a0da83c42a',
+        'original_kinds': ('application', 'evidence'),
+    },
     '350900': {
         'district': '',
         'city': '宁德市',
