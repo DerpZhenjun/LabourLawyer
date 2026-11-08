@@ -123,4 +123,28 @@ test('actual own HQ source sections display readable text and own office hours w
  }
 })
 
+
+test('collective documents require explicit selection and preserve case scope for every request',()=>{
+ const h=harness();h.start();h.page.onDistrictChange(event('0'))
+ const normal={...guide(),case_scopes:['collective'],materials:[],templates:[]}
+ h.respond(h.last('/lookup'),normal);assert(!h.last('/form-contract'));assert.equal(h.page.data.kinds.length,0)
+ h.page.toggleCaseScope()
+ assert.match(h.last('/lookup').url,/case_scope=collective/)
+ const selected={...normal,case_scope:'collective',templates:guide().templates.map(t=>({...t,case_scope:'collective'}))}
+ h.respond(h.last('/lookup'),selected)
+ const contractRequest=h.last('/form-contract');assert.match(contractRequest.url,/case_scope=collective/)
+ const stale=contract();h.respond(contractRequest,stale);assert.equal(h.page.data.contract,null)
+ h.page.loadContract(0)
+ const c=contract();c.context.case_scope='collective'
+ h.respond(h.last('/form-contract'),c);assert(h.page.data.available)
+ h.page.downloadBlank(event('',{index:0}));h.modals.at(-1).success({confirm:true})
+ assert.match(h.last('/templates/').url,/case_scope=collective/)
+ h.respond(h.last('/templates/'),zip(),200,headers(c));h.writes.at(-1).success();h.opens.at(-1).success()
+ h.page.generate();h.modals.at(-1).success({confirm:true});assert.equal(h.last('/generate').data.case_scope,'collective')
+ h.respond(h.last('/generate'),zip(),200,headers(c));h.writes.at(-1).success();h.opens.at(-1).success()
+ const lastLookup=h.last('/lookup')
+ h.page.toggleCaseScope();assert.notEqual(h.last('/lookup'),lastLookup);assert.doesNotMatch(h.last('/lookup').url,/case_scope=/)
+ h.respond(h.last('/lookup'),normal);assert.equal(h.page.data.contract,null);assert.equal(h.page.data.kinds.length,0)
+})
+
 console.log(`PASS miniprogram regional: ${passed} Page/transport checks; synthetic only; no network or device claims`)

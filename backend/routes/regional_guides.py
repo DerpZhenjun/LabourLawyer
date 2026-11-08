@@ -16,6 +16,10 @@ from regional_blank_documents import fill_blank_document, is_jiangsu_municipal_c
 from regional_jiangsu_candidates import fill_candidate_document, SUPPORTED as JIANGSU_OWN_CANDIDATES
 from regional_rongjiang_documents import fill_rongjiang_document, ADAPTER as RONGJIANG_ADAPTER
 from regional_xiangan_evidence import ADAPTER as XIANGAN_EVIDENCE_ADAPTER, XianganEvidenceRequest
+from regional_luohu_collective import (
+    ADAPTER as LUOHU_ADAPTER, MODELS as LUOHU_MODELS, LAYOUTS as LUOHU_LAYOUTS,
+    checked_adapter as checked_luohu_adapter, fill_document as fill_luohu_document,
+)
 from regional_zhongshan_municipal import (
     ADAPTER as ZHONGSHAN_ADAPTER, CONVERTED_ORIGIN as ZHONGSHAN_CONVERTED_ORIGIN,
     LAYOUT as ZHONGSHAN_LAYOUT, ZhongshanApplicationRequest,
@@ -115,8 +119,27 @@ def release_capabilities():
 def store():
     return RegionalStore(os.getenv('LABOURLAWYER_REGIONAL_DB',ROOT/'backend/data/regional-guides.sqlite'))
 
-def lookup(province: str=Query(max_length=30),city: str=Query(max_length=80),district: str=Query(max_length=80)):
-    return store().lookup(province,city,district)
+CaseScope = Literal['collective']
+
+
+def lookup(province: str=Query(max_length=30),city: str=Query(max_length=80),district: str=Query(max_length=80),
+           case_scope: CaseScope | None = None):
+    guide = store().lookup(province,city,district)
+    templates = guide['templates']
+    collective = any(template.get('case_scope') == 'collective' for template in templates)
+    if case_scope and not collective:
+        raise HTTPException(404, '该地区的集体案资料尚未核验')
+    if not collective:
+        return guide
+    result = {**guide, 'case_scopes': ['collective'],
+              'templates': [template for template in templates if template.get('case_scope') == case_scope]}
+    if case_scope:
+        result['case_scope'] = case_scope
+    else:
+        result.pop('case_scope', None)
+        if guide.get('case_scope') == 'collective':
+            result.update(materials=[], sections={})
+    return result
 router.add_api_route('/lookup',lookup,methods=['GET'])
 
 
@@ -146,8 +169,11 @@ def areas(province: str=Query(max_length=30),city: str=Query(default='',max_leng
                                 'region_code': code, 'scope_level': 'municipal'})
     for row in rows:
         g=guides.get((province,city,row['district']),{}) if city else {}
-        row.update(source_id=g.get('source_id'),verification_status=g.get('verification_status','unverified'),
-                   can_generate=any(t.get('can_generate') for t in g.get('templates',[])))
+        eligible = [template for template in g.get('templates', []) if template.get('can_generate')]
+        row.update(source_id=g.get('source_id'), verification_status=g.get('verification_status','unverified'),
+                   can_generate=any(not template.get('case_scope') for template in eligible))
+        if any(template.get('case_scope') == 'collective' for template in eligible):
+            row['case_scopes'] = ['collective']
     return {'items':rows,'scope':'官方地区目录，不等于当地指南或文书已经核验',
             'directory_is_not_guide_coverage':True}
 
@@ -280,13 +306,15 @@ def checked_path(template,guide=None):
 
 @router.get('/templates/{template_id}')
 def download(template_id: str,province: str=Query(max_length=30),city: str=Query(max_length=80),district: str=Query(max_length=80),
-             source_id: Annotated[str | None,Query(max_length=64)]=None,version: int | None=None):
+             source_id: Annotated[str | None,Query(max_length=64)]=None,version: int | None=None,
+             case_scope: CaseScope | None = None):
     g=store().lookup(province,city,district)
     if source_id is not None or version is not None:
         if source_id is None or version is None or source_id!=g.get('source_id') or type(version) is not int or version!=g.get('version'):
             raise HTTPException(409,'办理地区或来源版本已改变，请重新查看指南')
     t=next((t for t in g['templates'] if t.get('id')==template_id),None)
-    if not t:raise HTTPException(404,'未找到该地区的官方附件')
+    if not t or t.get('case_scope') != case_scope:
+        raise HTTPException(404,'未找到该地区与案件类型的官方附件')
     if 'region_code' not in t:
         from regional_public_provenance import public_evidence,approved_report_attachment
         if public_evidence(g,ROOT) is None or not approved_report_attachment(g,t,ROOT):
@@ -295,11 +323,18 @@ def download(template_id: str,province: str=Query(max_length=30),city: str=Query
         t={**t,'region_code':g['region_code']}
     elif t.get('region_code')!=g.get('region_code'):
         raise HTTPException(404,'未找到该地区的官方附件')
-    converted = (t.get('adapter') == ZHONGSHAN_ADAPTER or t.get('file_origin') == ZHONGSHAN_CONVERTED_ORIGIN
-                 or t.get('file') == ZHONGSHAN_LAYOUT.as_posix())
+    luohu_layout = t.get('adapter') == LUOHU_ADAPTER or any(
+        t.get('file') == path for path, _ in LUOHU_LAYOUTS.values())
+    converted = (luohu_layout or t.get('adapter') == ZHONGSHAN_ADAPTER
+                 or t.get('file_origin') == ZHONGSHAN_CONVERTED_ORIGIN or t.get('file') == ZHONGSHAN_LAYOUT.as_posix())
     if converted:
         try:
-            checked_zhongshan_adapter(g, t, 'application', root=ROOT)
+            if luohu_layout:
+                kinds = t.get('document_types', [])
+                kind = kinds[0] if len(kinds) == 1 else None
+                checked_luohu_adapter(g, t, kind, root=ROOT)
+            else:
+                checked_zhongshan_adapter(g, t, 'application', root=ROOT)
         except ValueError as exc:
             raise HTTPException(409, str(exc)) from exc
     path = checked_path(t,g)
@@ -311,6 +346,7 @@ def download(template_id: str,province: str=Query(max_length=30),city: str=Query
 
 
 class GenerateRequest(BaseModel):
+    case_scope: CaseScope | None = None
     province: str=Field(max_length=30)
     city: str=Field(max_length=80)
     district: str=Field(max_length=80)
@@ -577,6 +613,8 @@ class FujianKEvidenceRequest(BaseModel):
 
 def generation_request_model(adapter,kind):
     """Preserve the existing adapter-specific request-model selection."""
+    if adapter == LUOHU_ADAPTER:
+        return LUOHU_MODELS[kind]
     if adapter == ZHONGSHAN_ADAPTER and kind == 'application':
         return ZhongshanApplicationRequest
     if adapter == XIANGAN_EVIDENCE_ADAPTER and kind == 'evidence':
@@ -603,13 +641,13 @@ def generation_request_model(adapter,kind):
 @router.get('/form-contract')
 def form_contract(province: str=Query(max_length=30),city: str=Query(max_length=80),district: str=Query(max_length=80),
                   source_id: str=Query(max_length=64),version: int=Query(ge=1),template_id: str=Query(max_length=64),
-                  kind: Literal['application','evidence']=Query()):
+                  kind: Literal['application','evidence']=Query(),case_scope: CaseScope | None = None):
     g=store().lookup(province,city,district)
     try:
         validate_guide_context(
             g, province=province, city=city, district=district,
             source_id=source_id, version=version, missing_source_status=404)
-        template = select_regional_template(g, template_id, kind)
+        template = select_regional_template(g, template_id, kind, case_scope=case_scope)
         return current_form_contract(
             g, template, kind, root=ROOT, contract_builder=build_form_contract)
     except RegionalValidationError as exc:
@@ -624,8 +662,8 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
         validate_guide_context(
             g, province=payload.province, city=payload.city, district=payload.district,
             source_id=payload.source_id, version=payload.version)
-        t = select_regional_template(g, payload.template_id, payload.kind, mode=payload.mode)
-        if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER} and payload.contract_id is None:
+        t = select_regional_template(g, payload.template_id, payload.kind, mode=payload.mode, case_scope=payload.case_scope)
+        if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER} and payload.contract_id is None:
             raise RegionalValidationError(409, '请重新打开当前地区的填写表单后生成')
         adapter, data, validated_contract_id = validate_generation_request(
             g, t, payload.kind, payload.data, payload.contract_id, root=ROOT,
@@ -635,10 +673,12 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
         raise HTTPException(exc.status_code, str(exc)) from exc
     blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER,JIANGSU_F_ADAPTER,JIANGSU_G_ADAPTER,FUJIAN_H_ADAPTER,FUJIAN_I_ADAPTER,FUJIAN_J_ADAPTER,FUJIAN_K_ADAPTER,PINGTAN_ADAPTER,PUTIAN_ADAPTER,PUTIAN_N_ADAPTER,FUJIAN_O_ADAPTER,FUJIAN_P_ADAPTER,HQ_ADAPTER}
     blank_adapters.add(QZ_ADAPTER)
-    converted_adapters = {RONGJIANG_ADAPTER, HUNAN_ADAPTER, HUNAN_C_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER}
+    converted_adapters = {RONGJIANG_ADAPTER, HUNAN_ADAPTER, HUNAN_C_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER}
     if adapter in blank_adapters | converted_adapters and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
     try:
-        if adapter == ZHONGSHAN_ADAPTER:
+        if adapter == LUOHU_ADAPTER:
+            doc=fill_luohu_document(payload.kind,checked_path(t,g),data.model_dump())
+        elif adapter == ZHONGSHAN_ADAPTER:
             doc=fill_zhongshan_application(checked_path(t,g), data.model_dump())
         elif adapter in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER}:
             doc=fill_qz_document(g,t,payload.kind,checked_path(t,g),data.model_dump(),root=ROOT)

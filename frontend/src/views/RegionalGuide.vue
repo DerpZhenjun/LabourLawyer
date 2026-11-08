@@ -15,7 +15,7 @@
       <p class="region-small" role="status" v-else-if="directoryError">{{ directoryError }}</p>
       <details v-if="region.city && districtChoices.length && !(region.province==='sichuan' && region.city==='成都市')" class="region-directory">
         <summary>查看本市全部区县与功能区 · {{ districtChoices.length }} 个地区</summary>
-        <label>选择本市区县或功能区<select aria-label="选择本市区县或功能区" :value="region.district" @change="changePlace('district',eventValue($event))"><option value="" disabled>选择准备办理的地区</option><option v-for="a in districtChoices" :key="a.district" :value="a.district">{{ a.district }} · {{ a.can_generate?'可填写生成':a.source_id?'已收录指南':'待核验' }}</option></select></label>
+        <label>选择本市区县或功能区<select aria-label="选择本市区县或功能区" :value="region.district" @change="changePlace('district',eventValue($event))"><option value="" disabled>选择准备办理的地区</option><option v-for="a in districtChoices" :key="a.district" :value="a.district">{{ a.district }} · {{ a.can_generate?'可填写生成':a.case_scopes?.includes('collective')?'集体案可填写':a.source_id?'已收录指南':'待核验' }}</option></select></label>
         <p class="region-small">目录收录不代表文书已支持。“待核验”不会套用其他地区的资料；你也可以在上方直接输入地区名称。</p>
       </details>
       <div class="region-examples" v-if="region.province==='sichuan' && (!region.city || region.city==='成都市')"><span>常用成都入口：</span><button v-for="d in ['天府新区','锦江区','武侯区']" :key="d" type="button" :aria-pressed="region.city==='成都市' && region.district===d" @click="selectExample(d)">{{ d }}</button></div>
@@ -24,6 +24,10 @@
         <label>选择成都区县<select aria-label="选择成都区县" :value="region.city==='成都市'?region.district:''" @change="selectExample(eventValue($event))"><option value="" disabled>选择准备办理的区县</option><option v-for="a in chengduAreas" :key="a.region_code" :value="a.district">{{ a.district }} · {{ a.can_generate?'可填写生成':a.source_id?'已收录指南':'待核验' }}</option></select></label>
         <p class="region-small">“可填写生成”依据当地官网参考样表，不保证受理；“待核验”不会套用其他区县资料。功能区名称与编码保留官网标注。</p>
       </details>
+    </section>
+    <section v-if="guide?.case_scopes?.includes('collective')" class="region-panel" aria-label="案件类型">
+      <p>{{ region.case_scope ? '已选择集体案。下方表格仅适用本区集体案。' : '普通案件的本区空白表格待核验。办理集体案可选择下方入口。' }}</p>
+      <button type="button" class="ll-button secondary" @click="toggleCaseScope">{{ region.case_scope ? '返回普通案件' : '选择集体案' }}</button>
     </section>
     <DocumentWorkspace :region="region" :province="province" :guide="guide" :loading="loading" :error="error" />
     <p v-if="loading" class="region-panel" role="status">正在读取这个地区的指南…</p>
@@ -54,7 +58,7 @@
         <p v-if="!guide.materials.length" class="region-notice">材料清单尚未核验，不显示确定的当地要求。</p>
       </section>
       <section class="region-panel" id="regional-documents"><span class="ll-eyebrow">03 · 文书与下载</span><h2>看清来源，再填写</h2><p>“空白表格”和“示例样表”不是一回事。请核对文件来源与适用范围，辅助填写不保证受理。</p>
-        <div class="regional-template" v-for="t in guide.templates" :key="t.id"><i class="fa-regular fa-file-lines" aria-hidden="true"></i><div><h3>{{ t.original_name }}</h3><p>{{ t.file_origin==='official-blank-converted-layout'?'官方 DOC 的空白转换版':t.official_kind==='blank'?'官方空白表格':t.official_kind==='sample'?'官方示例样表（不是空白模板）':'附件类型待核实' }}</p><details><summary>来源与文件校验</summary><p>适用地区编码：{{ t.region_code }}</p><p class="file-hash">SHA256：{{ t.sha256 || '未下载，待核验' }}</p><p v-if="t.official_sha256" class="file-hash">官方 DOC 原件 SHA256：{{ t.official_sha256 }}</p><a :href="t.source_url" target="_blank" rel="noopener noreferrer">{{ t.file_origin==='official-blank-converted-layout'?'下载官网 DOC 原件':'官方材料栏目' }} ↗</a></details></div><a v-if="t.download_status==='downloaded'" class="ll-button secondary" :href="originalTemplateLink(t.id)">{{ t.file_origin==='official-blank-converted-layout'?'下载空白转换版':'下载原文件' }}</a><span v-else>下载待核验</span></div>
+        <div class="regional-template" v-for="t in guide.templates" :key="t.id"><i class="fa-regular fa-file-lines" aria-hidden="true"></i><div><h3>{{ t.original_name }}</h3><p>{{ t.file_origin==='official-blank-converted-layout'?('官方 '+(t.original_format==='WPS'?'WPS':'DOC')+' 的空白转换版'):t.official_kind==='blank'?'官方空白表格':t.official_kind==='sample'?'官方示例样表（不是空白模板）':'附件类型待核实' }}</p><details><summary>来源与文件校验</summary><p>适用地区编码：{{ t.region_code }}</p><p class="file-hash">SHA256：{{ t.sha256 || '未下载，待核验' }}</p><p v-if="t.official_sha256" class="file-hash">官方原件 SHA256：{{ t.official_sha256 }}</p><a :href="t.source_url" target="_blank" rel="noopener noreferrer">{{ t.file_origin==='official-blank-converted-layout'?('下载官网 '+(t.original_format==='WPS'?'WPS':'DOC')+' 原件'):'官方材料栏目' }} ↗</a></details></div><a v-if="t.download_status==='downloaded'" class="ll-button secondary" :href="originalTemplateLink(t.id)">{{ t.file_origin==='official-blank-converted-layout'?'下载空白转换版':'下载原文件' }}</a><span v-else>下载待核验</span></div>
         <div v-if="generatable" class="reference-fill"><h3>按{{ guide.district }}{{ blankGeneration?'官方空白表格':'参考样表' }}辅助填写</h3><p>{{ blankGeneration?'当前填写使用本地区官网提供、已核对的空白表格。':'官网将申请书附件列为示例样表。' }}页面上方可以直接填写；默认内容为本平台虚构示例，请替换为真实信息。签名位置留空，不自动提交申请。</p><div class="region-actions"><RouterLink v-if="hasGenerationKind(guide,'application')" :to="documentLink('application')" class="ll-button">填写申请书</RouterLink><RouterLink v-if="hasGenerationKind(guide,'evidence')" :to="documentLink('evidence')" class="ll-button secondary">填写证据清单</RouterLink></div></div>
         <p v-else class="region-notice">本地区附件尚未通过自动填写核验，{{ guide.templates.some(t=>t.download_status==='downloaded')?'可下载上方已核实的原文件参考。':'尚未核实可下载文件，请打开官方原文查询或向办理机构确认。' }}不会套用其他地区的文书。</p>
       </section>
@@ -67,7 +71,7 @@
 import {guideField,visitCountLabel,originalCopyLabel,materialCopiesLabel,materialDetails,hasGenerationKind,readGuideDisplay,publicError} from '@/data/regionalGuidePresentation'
 import type {DirectoryArea} from '@/data/regionalGuidePresentation'
 import {plainGuideWarning} from '../../../packages/regional-contracts/src/index.ts'
-import type {DocumentKind} from '../../../packages/regional-contracts/src/index.ts'
+import type {DocumentKind,Region} from '../../../packages/regional-contracts/src/index.ts'
 import {publicClient} from '@/api/public'
 import {computed,ref,onMounted,onBeforeUnmount} from 'vue'
 import {useRoute,useRouter,RouterLink} from 'vue-router'
@@ -77,7 +81,7 @@ import DocumentWorkspace from '@/components/DocumentWorkspace.vue'
 import {useRegionDirectory} from '@/composables/useRegionDirectory'
 import '@/regional-guide.css'
 const route=useRoute(),router=useRouter(),inventory=ref<DirectoryArea[]>([]),coverage=ref<DirectoryArea[]>([])
-const region=computed(()=>({province:String(route.params.slug||''),city:String(route.query.city||''),district:String(route.query.district||'')}))
+const region=computed<Region>(()=>({province:String(route.params.slug||''),city:String(route.query.city||''),district:String(route.query.district||''),...(route.query.case_scope==='collective'?{case_scope:'collective' as const}:{})}))
 const province=computed(()=>findProvince(region.value.province))
 const {guide:rawGuide,loading,error:lookupError,reload}=useRegionalGuide(region)
 const presentation=computed(()=>{try{return{guide:readGuideDisplay(rawGuide.value),error:''}}catch(cause:unknown){return{guide:null,error:publicError(cause)}}})
@@ -112,9 +116,10 @@ const field=(name:string)=>guideField(guide.value,name)
 const date=(value:string)=>value?new Date(value).toLocaleString('zh-CN',{hour12:false}):'待核实'
 const eventValue=(event:Event)=>event.target instanceof HTMLInputElement||event.target instanceof HTMLSelectElement?event.target.value:''
 const changeProvince=(slug:string)=>router.replace({path:`/province/${slug}`,query:{}})
-const changePlace=(key:'city'|'district',value:string)=>router.replace({query:{...route.query,[key]:value,...(key==='city'?{district:''}:{})}})
+const changePlace=(key:'city'|'district',value:string)=>router.replace({query:{...route.query,[key]:value,case_scope:undefined,...(key==='city'?{district:''}:{})}})
 const selectExample=(district:string)=>router.replace({query:{city:'成都市',district}})
-const documentLink=(kind:DocumentKind)=>({path:`/local-documents/${region.value.province}/${kind}`,query:{city:region.value.city,district:region.value.district}})
+const toggleCaseScope=()=>router.replace({query:{...route.query,case_scope:region.value.case_scope?undefined:'collective'}})
+const documentLink=(kind:DocumentKind)=>({path:`/local-documents/${region.value.province}/${kind}`,query:{city:region.value.city,district:region.value.district,case_scope:region.value.case_scope}})
 const originalTemplateLink=(id:string)=>{
   const current=guide.value
   return current?.source_id&&typeof current.version==='number'&&Number.isSafeInteger(current.version)&&current.version>0?templateURL(region.value,id,{source_id:current.source_id,version:current.version}):undefined

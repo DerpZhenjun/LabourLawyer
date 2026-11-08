@@ -1,5 +1,5 @@
 // Generated from packages/regional-contracts/src/index.ts. Do not edit.
-// source-sha256: 4e5a921f9fccdc6a58ec4651550d11b4915ace6dc1c4533f28e07f2f9be54778
+// source-sha256: ec0e941a70db64cdc3706c34c63ede73d9d28c740a6c21469a0a217a7c006553
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.fieldErrors = exports.isPlainRecord = void 0;
@@ -35,7 +35,8 @@ const problem = () => { throw new Error('地区或表单资料格式不正确，
 const clone = (v) => Array.isArray(v) ? v.map(clone) : (0, exports.isPlainRecord)(v) ?
     Object.fromEntries(Reflect.ownKeys(v).map(k => [k, clone(Reflect.get(v, k))])) : v;
 function regionQuery(region) {
-    return ['province', 'city', 'district'].map(k => `${k}=${encodeURIComponent(region[k] || '')}`).join('&');
+    const query = ['province', 'city', 'district'].map(k => `${k}=${encodeURIComponent(region[k] || '')}`).join('&');
+    return region.case_scope === 'collective' ? query + '&case_scope=collective' : query;
 }
 function parseApiError(value, fallback = '无法完成操作，请重新核对内容和服务连接。') {
     return (0, exports.isPlainRecord)(value) && typeof value.detail === 'string' ? value.detail : fallback;
@@ -54,8 +55,13 @@ function assertRegionalGuide(value, expected) {
         return problem();
     if (value.source_id !== null && (!positive(value.version) || !nonempty(value.region_code)))
         return problem();
+    if (value.case_scope !== expected.case_scope ||
+        (value.case_scopes !== undefined && (!Array.isArray(value.case_scopes) || value.case_scopes.length !== 1 || value.case_scopes[0] !== 'collective')) ||
+        (expected.case_scope && value.case_scopes === undefined))
+        return problem();
     for (const t of value.templates) {
-        if (!(0, exports.isPlainRecord)(t) || !nonempty(t.id) || (t.can_generate !== undefined && typeof t.can_generate !== 'boolean') ||
+        if (!(0, exports.isPlainRecord)(t) || !nonempty(t.id) || t.case_scope !== expected.case_scope ||
+            (t.can_generate !== undefined && typeof t.can_generate !== 'boolean') ||
             !Array.isArray(t.document_types) || !t.document_types.every(kind) ||
             (t.can_generate && (!value.source_id || !t.document_types.length)))
             return problem();
@@ -119,6 +125,8 @@ function assertFormContract(value, expected) {
         !(0, exports.isPlainRecord)(value.defaults) || !(0, exports.isPlainRecord)(value.policy))
         return problem();
     const c = value.context, p = value.policy;
+    if (c.case_scope !== expected.case_scope || (c.case_scope !== undefined && c.case_scope !== 'collective'))
+        return problem();
     for (const key of ['province', 'city', 'district', 'region_code', 'source_id', 'template_id', 'adapter'])
         if (!nonempty(c[key]))
             return problem();
@@ -312,7 +320,7 @@ function buildGenerateRequest(contract, form) {
     if (!validation.valid)
         throw new Error(validation.errors[0]?.message ?? '请核对填写内容。');
     const c = contract.context;
-    return { province: c.province, city: c.city, district: c.district, source_id: c.source_id, version: c.version, template_id: c.template_id, kind: c.kind, mode: c.mode, contract_id: contract.contract_id, data: clone(form) };
+    return { province: c.province, city: c.city, district: c.district, ...(c.case_scope ? { case_scope: c.case_scope } : {}), source_id: c.source_id, version: c.version, template_id: c.template_id, kind: c.kind, mode: c.mode, contract_id: contract.contract_id, data: clone(form) };
 }
 const sectionPending = '相关说明待核实';
 /** Convert official HTML to inert text. Neither browser DOM nor HTML execution is used. */

@@ -34,7 +34,7 @@ const editor=computed(()=>{
   if(hasSelectedPlace.value)return null
   return legacyAvailable.value?(kind.value==='application'?Application:Evidence):null
 })
-const editorKey=computed(()=>`${props.guide?.source_id?`${props.guide.source_id}:${props.guide.version}`:`province:${props.region.province}`}:${kind.value}`)
+const editorKey=computed(()=>`${props.guide?.source_id?`${props.guide.source_id}:${props.guide.version}:${props.region.case_scope??''}`:`province:${props.region.province}`}:${kind.value}`)
 const editorProps=computed(()=>props.guide?.source_id?{embedded:true,selectedRegion:props.region,selectedGuide:props.guide,documentKind:kind.value}:{embedded:true,province:props.region.province})
 </script>
 <style>

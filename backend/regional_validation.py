@@ -49,7 +49,7 @@ def current_form_contract(
 
 
 def select_regional_template(
-    guide: dict, template_id: str, kind: str, *, mode: str | None = None,
+    guide: dict, template_id: str, kind: str, *, mode: str | None = None, case_scope: str | None = None,
 ) -> dict:
     """Resolve one exact template, retaining each endpoint's existing errors.
 
@@ -58,6 +58,8 @@ def select_regional_template(
     Neither path may resolve an ambiguous template ID by picking the first row.
     """
     matches = [t for t in guide.get('templates', []) if t.get('id') == template_id]
+    if len(matches) == 1 and matches[0].get('case_scope') != case_scope:
+        raise RegionalValidationError(409, '请先选择该文书所适用的案件类型')
     if mode is None:
         if len(matches) != 1:
             raise RegionalValidationError(409, '该地区没有已核验的填写附件')

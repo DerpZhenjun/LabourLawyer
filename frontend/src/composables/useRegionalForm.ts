@@ -44,7 +44,7 @@ export function useRegionalForm(context: Readonly<Ref<FormContext|null>>,options
   let loadingController: AbortController|undefined,generationController: AbortController|undefined
   const scope=computed(()=>{
     const c=context.value
-    return JSON.stringify([c?[c.province,c.city,c.district,c.region_code,c.source_id,c.version,c.template_id,c.kind,c.mode,c.adapter]:null,options.identity?.value??'',options.ownerIdentity?.value??''])
+    return JSON.stringify([c?[c.province,c.city,c.district,c.region_code,c.source_id,c.version,c.template_id,c.kind,c.mode,c.adapter,...(c.case_scope?[c.case_scope]:[])]:null,options.identity?.value??'',options.ownerIdentity?.value??''])
   })
 
   function cancelConfirmation() { confirmation=null;confirmationAction.value=undefined;confirmOpen.value=false }

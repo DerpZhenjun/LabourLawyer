@@ -1,0 +1,65 @@
+{
+  "state": "PASS",
+  "source_id": "992d5a8d5836b78531089deb",
+  "viewports": [
+    [
+      "application",
+      375
+    ],
+    [
+      "application",
+      768
+    ],
+    [
+      "application",
+      1440
+    ],
+    [
+      "evidence",
+      375
+    ],
+    [
+      "evidence",
+      768
+    ],
+    [
+      "evidence",
+      1440
+    ]
+  ],
+  "cancels": 2,
+  "downloads": [
+    {
+      "kind": "application",
+      "template_id": "luohu-collective-application",
+      "layout_sha256": "0b9bd9e22c926c0c76f5dbaaf8eb2027eaef1c938ee24c2a82b2a789e4dda405",
+      "filled_sha256": "b2297ef88f0c4b095ac0e6711648a67b59240d8ffd2dc2c233a77fdc0fec71c4",
+      "bytes": 15123
+    },
+    {
+      "kind": "evidence",
+      "template_id": "luohu-collective-evidence",
+      "layout_sha256": "47b2d951b37cda01c02764ad810dacfd8e4e50e74f08bf0c33722a538b275f41",
+      "filled_sha256": "f1f777947077ffae8ec30afab4f916e0a05edae4be57c6fd4808bfe30ce56eef",
+      "bytes": 13720
+    }
+  ],
+  "errors": [],
+  "blocked": [],
+  "ordinary_without_contract": true,
+  "ordinary_restore_and_neighbor_isolated": true,
+  "region_code": "440303",
+  "case_scope": "collective",
+  "published": false,
+  "guide_sha256": "db45a74e0bf7cae4c7002cce975134cbd7c6699592ec7c3584cdb3ea5880807c",
+  "word_pages": {
+    "application": 2,
+    "evidence": 1
+  },
+  "browser_blank_downloads": 2,
+  "backend_focused_tests": 27,
+  "backend_compatibility_tests": 66,
+  "backend_compatibility_skips": 1,
+  "miniprogram_page_transport_checks": 20,
+  "web_build": "PASS"
+}

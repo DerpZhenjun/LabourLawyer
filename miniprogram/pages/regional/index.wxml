@@ -12,6 +12,10 @@
   </view>
   <view wx:if="{{guide.source_id}}" class="card">
     <text class="title">{{guide.city}}{{guide.district}}自己的指南</text>
+    <view wx:if="{{guide.case_scopes.length}}">
+      <text>{{guide.case_scope ? '已选择集体案。下方表格仅适用本区集体案。' : '普通案件的本区空白表格待核验。'}}</text>
+      <button bindtap="toggleCaseScope" disabled="{{busy}}">{{guide.case_scope ? '返回普通案件' : '选择集体案'}}</button>
+    </view>
     <text wx:for="{{fields}}" wx:key="label" selectable>{{item.label}}：{{item.value}}</text>
     <text wx:if="{{channelText}}" selectable>办理渠道原文：{{channelText}}</text>
     <text wx:for="{{warnings}}" wx:key="index" class="warning" selectable>{{item}}</text>

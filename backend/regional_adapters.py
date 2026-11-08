@@ -1,6 +1,7 @@
 """Audited, explicit locality bindings. Equal bytes never imply equal jurisdiction."""
 from copy import deepcopy
 from regional_guides import digest
+from regional_luohu_collective import ADAPTER as LUOHU_ADAPTER, checked_adapter as checked_luohu_adapter
 from regional_zhongshan_municipal import ADAPTER as ZHONGSHAN_ADAPTER, checked_adapter as checked_zhongshan_adapter
 from regional_blank_documents import blank_binding, ADAPTER as BLANK_ADAPTER
 from regional_jiangsu_candidates import candidate_contract, SUPPORTED as JIANGSU_OWN_CANDIDATES
@@ -385,6 +386,8 @@ def with_reference_capabilities(guide,root=None):
 
 
 def checked_reference_adapter(guide, template, kind,root=None):
+    if template.get('adapter') == LUOHU_ADAPTER:
+        return checked_luohu_adapter(guide, template, kind, root=root)
     if template.get('adapter') == ZHONGSHAN_ADAPTER:
         return checked_zhongshan_adapter(guide, template, kind, root=root)
     if template.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER}:

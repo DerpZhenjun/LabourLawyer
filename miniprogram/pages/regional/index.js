@@ -1,5 +1,5 @@
 // Generated from pages/regional/index.ts. Do not edit.
-// source-sha256: b93e5a6020188e21151f157bec49bf598511579e375caac098ba3da933693c85
+// source-sha256: cb49a1d5523c814388c6bea50b08724815d0ed92a4411d38e705a674244d9378
 "use strict";
 const shared = require("../../utils/generated/regional-contracts");
 const files = require("../../utils/regionalTransport");
@@ -15,7 +15,7 @@ const copy = (value) => {
     return out;
 };
 const at = (value, path) => path.reduce((v, k) => v !== null && typeof v === 'object' ? Reflect.get(v, k) : undefined, value);
-const identity = (c) => JSON.stringify([c.schema_version, c.contract_id, c.context.province, c.context.city, c.context.district, c.context.source_id, c.context.version, c.context.template_id, c.context.kind]);
+const identity = (c) => JSON.stringify([c.schema_version, c.contract_id, c.context.province, c.context.city, c.context.district, c.context.source_id, c.context.version, c.context.template_id, c.context.kind, ...(c.context.case_scope ? [c.context.case_scope] : [])]);
 const display = (value) => typeof value === 'string' ? value : value == null ? '' : typeof value === 'object' ? JSON.stringify(value) : String(value);
 const page = {
     data: { provinces: provinces.map(p => p.name), provinceIndex: 0, cities: [], districts: [], cityIndex: -1, districtIndex: -1, guide: null, contract: null, fields: [], sections: [], channelText: '', warnings: [], materials: [], blanks: [], kinds: [], kindIndex: 0, controls: [], errors: [], formValid: false, available: false, busy: false, notice: '请选择办理区县，核对本区自己的指南和表格。', error: '', result: '', storageNotice: '', draftBlocked: false },
@@ -118,9 +118,21 @@ const page = {
         this.saveDraft();
         this.invalidate();
         this._region = { province: row.province, city: row.city, district: row.district };
-        this.setData({ districtIndex: Number(e.detail.value), notice: '正在核对本区指南…' });
+        this.setData({ districtIndex: Number(e.detail.value) });
+        this.loadGuide();
+    },
+    toggleCaseScope() {
+        if (!this._guide?.case_scopes?.includes('collective'))
+            return;
+        this.saveDraft();
+        this.invalidate();
+        this._region = { ...this._region, case_scope: this._region.case_scope ? undefined : 'collective' };
+        this.loadGuide();
+    },
+    loadGuide() {
+        this.setData({ notice: '正在核对本区指南…' });
         this.request('lookup', this._region, res => {
-            const g = shared.assertRegionalGuide(res.data, { province: this._region.province, city: this._region.city || '', district: this._region.district || '' });
+            const g = shared.assertRegionalGuide(res.data, { province: this._region.province, city: this._region.city || '', district: this._region.district || '', case_scope: this._region.case_scope });
             this._guide = g;
             if (!g.source_id || g.verification_status === 'unverified') {
                 this.setData({ guide: g, notice: '该地区办事指南尚未核验，暂不能填写生成。' });

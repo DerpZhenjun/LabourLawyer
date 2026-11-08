@@ -20,7 +20,7 @@ export function useRegionalGuide(region:Readonly<Ref<Region>>) {
     catch(e:unknown){if(ticket===sequence && !(e instanceof Error&&e.name==='AbortError'))error.value=e instanceof TypeError?'无法连接指南服务，请确认后端已启动后重试。':e instanceof Error?e.message:'无法读取当地指南，请稍后重试。'}
     finally{if(ticket===sequence)loading.value=false}
   }
-  watch([()=>region.value.province,()=>region.value.city,()=>region.value.district],load,{immediate:true})
+  watch([()=>region.value.province,()=>region.value.city,()=>region.value.district,()=>region.value.case_scope],load,{immediate:true})
   onBeforeUnmount(()=>{++sequence;controller?.abort()})
   return {guide,loading,error,reload:load}
 }

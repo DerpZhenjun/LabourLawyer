@@ -1,20 +1,21 @@
 /** Portable wire types and lossless validation. No framework, network or model dependencies. */
 export type DocumentKind = 'application' | 'evidence'
 export type GenerationMode = 'blank' | 'reference_adaptation'
-export interface Region { province: string; city: string; district: string }
+export type CaseScope = 'collective'
+export interface Region { province: string; city: string; district: string; case_scope?: CaseScope }
 export interface FormContext extends Region {
   region_code: string; source_id: string; version: number; template_id: string
   kind: DocumentKind; mode: GenerationMode; adapter: string
 }
 export interface RegionalTemplate {
   id: string; can_generate?: boolean; document_types: DocumentKind[]
-  adapter?: string; official_kind?: string; original_name?: string; sha256?: string
+  adapter?: string; official_kind?: string; original_name?: string; sha256?: string; case_scope?: CaseScope
   [key: string]: unknown
 }
 export interface RegionalGuide extends Region {
   source_id: string | null; version?: number; region_code?: string; source_url?: string
   verification_status?: string; service_name?: string; authority?: string; message?: string
-  templates: RegionalTemplate[]; materials: Record<string, unknown>[]
+  templates: RegionalTemplate[]; materials: Record<string, unknown>[]; case_scopes?: CaseScope[]
   fields: Record<string, unknown>; sections: Record<string, unknown>; channel: Record<string, unknown>
   [key: string]: unknown
 }
@@ -71,7 +72,8 @@ const clone = (v: unknown): unknown => Array.isArray(v) ? v.map(clone) : isPlain
   Object.fromEntries(Reflect.ownKeys(v).map(k=>[k,clone(Reflect.get(v,k))])) : v
 
 export function regionQuery(region: Region): string {
-  return (['province','city','district'] as const).map(k=>`${k}=${encodeURIComponent(region[k] || '')}`).join('&')
+  const query=(['province','city','district'] as const).map(k=>`${k}=${encodeURIComponent(region[k] || '')}`).join('&')
+  return region.case_scope==='collective'?query+'&case_scope=collective':query
 }
 export function parseApiError(value: unknown, fallback='无法完成操作，请重新核对内容和服务连接。'): string {
   return isPlainRecord(value) && typeof value.detail==='string' ? value.detail : fallback
@@ -86,8 +88,12 @@ export function assertRegionalGuide(value: unknown, expected: Region): RegionalG
       !Array.isArray(value.materials) || !value.materials.every(isPlainRecord) ||
       !isPlainRecord(value.fields) || !isPlainRecord(value.sections) || !isPlainRecord(value.channel)) return problem()
   if (value.source_id!==null && (!positive(value.version) || !nonempty(value.region_code))) return problem()
+  if (value.case_scope!==expected.case_scope ||
+      (value.case_scopes!==undefined && (!Array.isArray(value.case_scopes) || value.case_scopes.length!==1 || value.case_scopes[0]!=='collective')) ||
+      (expected.case_scope && value.case_scopes===undefined)) return problem()
   for (const t of value.templates) {
-    if (!isPlainRecord(t) || !nonempty(t.id) || (t.can_generate!==undefined && typeof t.can_generate!=='boolean') ||
+    if (!isPlainRecord(t) || !nonempty(t.id) || t.case_scope!==expected.case_scope ||
+        (t.can_generate!==undefined && typeof t.can_generate!=='boolean') ||
         !Array.isArray(t.document_types) || !t.document_types.every(kind) ||
         (t.can_generate && (!value.source_id || !t.document_types.length))) return problem()
   }
@@ -131,6 +137,7 @@ export function assertFormContract(value: unknown, expected: Partial<FormContext
       !/^[a-f0-9]{64}$/.test(value.contract_id) || !isPlainRecord(value.context) ||
       !isPlainRecord(value.defaults) || !isPlainRecord(value.policy)) return problem()
   const c=value.context,p=value.policy
+  if(c.case_scope!==expected.case_scope || (c.case_scope!==undefined && c.case_scope!=='collective')) return problem()
   for(const key of ['province','city','district','region_code','source_id','template_id','adapter']) if(!nonempty(c[key])) return problem()
   if(!positive(c.version) || !kind(c.kind) || !['blank','reference_adaptation'].includes(String(c.mode))) return problem()
   for(const [key,v] of Object.entries(expected)) if(c[key]!==v) return problem()
@@ -248,7 +255,7 @@ export function buildGenerateRequest(contract: FormContract, form: unknown): Reg
   const validation=validateForm(contract,form)
   if(!validation.valid)throw new Error(validation.errors[0]?.message ?? '请核对填写内容。')
   const c=contract.context
-  return {province:c.province,city:c.city,district:c.district,source_id:c.source_id,version:c.version,template_id:c.template_id,kind:c.kind,mode:c.mode,contract_id:contract.contract_id,data:clone(form) as FormData}
+  return {province:c.province,city:c.city,district:c.district,...(c.case_scope?{case_scope:c.case_scope}:{}),source_id:c.source_id,version:c.version,template_id:c.template_id,kind:c.kind,mode:c.mode,contract_id:contract.contract_id,data:clone(form) as FormData}
 }
 
 

@@ -13,7 +13,7 @@ export type Callbacks = {
 export type Transport = ReturnType<typeof createRegionalTransport>;
 function createRegionalTransport(api: Pick<WechatMiniprogram.Wx, 'request'>, base: () => string) {
     const query = (region: RequestInput, extra?: Record<string, unknown>) => {
-        const scope = shared.regionQuery({ province: region.province, city: region.city || '', district: region.district || '' });
+        const scope = shared.regionQuery({ province: region.province, city: region.city || '', district: region.district || '', case_scope: region.case_scope });
         const suffix = Object.keys(extra || {}).filter(k => extra![k] !== undefined).map(k => `${encodeURIComponent(k)}=${encodeURIComponent(String(extra![k]))}`).join('&');
         return scope + (suffix ? (scope ? '&' : '') + suffix : '');
     };

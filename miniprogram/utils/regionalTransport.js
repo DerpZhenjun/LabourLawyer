@@ -1,5 +1,5 @@
 // Generated from utils/regionalTransport.ts. Do not edit.
-// source-sha256: 3096e6cb7ffa15c7e344b0e2a33fc67462eb5c09f9fa0f58206fb8c278e63d67
+// source-sha256: db4b905a9f63d80d67f2b0dec47931b0942f2855c2483ef930234eac046870a0
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createRegionalTransport = createRegionalTransport;
@@ -9,7 +9,7 @@ exports.decodeError = decodeError;
 const shared = require("./generated/regional-contracts");
 function createRegionalTransport(api, base) {
     const query = (region, extra) => {
-        const scope = shared.regionQuery({ province: region.province, city: region.city || '', district: region.district || '' });
+        const scope = shared.regionQuery({ province: region.province, city: region.city || '', district: region.district || '', case_scope: region.case_scope });
         const suffix = Object.keys(extra || {}).filter(k => extra[k] !== undefined).map(k => `${encodeURIComponent(k)}=${encodeURIComponent(String(extra[k]))}`).join('&');
         return scope + (suffix ? (scope ? '&' : '') + suffix : '');
     };
