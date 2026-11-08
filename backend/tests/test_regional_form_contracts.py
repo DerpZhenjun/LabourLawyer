@@ -274,7 +274,6 @@ class RegionalFormContractTests(unittest.TestCase):
 class RegionalFormRealSourceAcceptanceTests(unittest.TestCase):
     def test_entire_published_inventory_generates_from_bound_temporary_store(self):
         """Real fillers/own proofs; only the DB and response staging are local fixtures."""
-        runtime=(ROOT/'.runtime').resolve();runtime.mkdir(exist_ok=True)
         started=time.perf_counter();records=[]
         snapshot=json.loads((ROOT/'data/public-regions/guides.json').read_text(encoding='utf8'))
         active=[g for g in snapshot if any(t.get('can_generate') for t in g['templates'])]
@@ -282,8 +281,9 @@ class RegionalFormRealSourceAcceptanceTests(unittest.TestCase):
         self.assertEqual(len(snapshot),manifest['guides'])
         self.assertEqual(len(active),manifest['generatable_localities'])
         self.assertGreaterEqual(len(active),188)
-        with tempfile.TemporaryDirectory(prefix='form-contract-http-',dir=runtime) as directory:
-            temp_root=Path(directory).resolve();self.assertTrue(temp_root.is_relative_to(runtime))
+        with tempfile.TemporaryDirectory(prefix='form-contract-http-') as directory:
+            temp_root = Path(directory).resolve()
+            self.assertFalse(temp_root.is_relative_to(ROOT))
             store=RegionalStore(temp_root/'regional-guides.sqlite')
             for g in active:store.put_guide(g)
             cases=[]
@@ -333,6 +333,8 @@ class RegionalFormRealSourceAcceptanceTests(unittest.TestCase):
             'version_scope':'Sequences belong only to a new temporary SQLite fixture, not live source versions.',
             'main_database_opened':False,'model_network_connections_allowed':False,'word_rendering':'NOT_RUN',
             'native_browser_generation':False,'records':records}
+        runtime = ROOT / '.runtime'
+        runtime.mkdir(exist_ok=True)
         (runtime/'regional-form-contracts-asgi-acceptance.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
 
 
