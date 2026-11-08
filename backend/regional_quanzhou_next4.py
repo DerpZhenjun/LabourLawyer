@@ -51,6 +51,7 @@ NINGDE_FIRST_FOUR_BASE = LOCALITIES + '/ningde-first-four-own-source'
 NINGDE_NEXT_FIVE_BASE = LOCALITIES + '/ningde-next-five-own-source'
 NANPING_FIRST_THREE_BASE = LOCALITIES + '/nanping-first-three-own-source'
 NANPING_NEXT_FOUR_BASE = LOCALITIES + '/nanping-next-four-own-source'
+NANPING_APPLICATION_ONLY_BASE = LOCALITIES + '/nanping-application-only-own-source'
 REGIONS = {
     '350582': {
         'district': '晋江市', 'source_id': 'd8353a4bb91532863fb03802',
@@ -299,6 +300,24 @@ NANPING_NEXT_FOUR_REGIONS = {
         'original_kinds': ('application', 'evidence'),
     },
 }
+NANPING_APPLICATION_ONLY_REGIONS = {
+    '350722': {
+        'district': '浦城县',
+        'source_id': 'a5f6eb9afcdba92231eccec3',
+        'source_manifest_sha256': 'c67a884ab39a3567ac59a367956016005f7d7d23ab29c73b8415857b92629ffc',
+        'stage_sha256': 'd2525bd268748321552e41756e95480bae05e41c8aebed27eddbc685910bfc3d',
+        'source_freeze_sha256': '9b998011fcded9622fdabbfc07aa4436b4b0b857d73958850bbca7f47c7771af',
+        'original_kinds': ('application',),
+    },
+    '350725': {
+        'district': '政和县',
+        'source_id': '8cbb28e92dec4b9e84175e26',
+        'source_manifest_sha256': '7933966b1ba6e4315aa7dfbb556827aeba69f6c6146d1f33e51d5b5348f0b07e',
+        'stage_sha256': 'e7b5d8c1169d57d971d13f818347d390ad5bed38d49e878e72d9a09550dea502',
+        'source_freeze_sha256': '0d268279a2ced36a4d00af13dab4a549b7684252b5cd970e054462b922e6d2ee',
+        'original_kinds': ('application',),
+    },
+}
 SUPPORTED_REGIONS = {
     **REGIONS,
     **DY_REGIONS,
@@ -309,6 +328,7 @@ SUPPORTED_REGIONS = {
     **NINGDE_NEXT_FIVE_REGIONS,
     **NANPING_FIRST_THREE_REGIONS,
     **NANPING_NEXT_FOUR_REGIONS,
+    **NANPING_APPLICATION_ONLY_REGIONS,
     INVESTMENT_CODE: {
         'district': '台商投资区', 'source_id': 'cf089c0b9ee9b764b564e269',
         'source_manifest_sha256': '297b56b936b8c43d5598c4fc115c26b881936d21fcd3da08722523ca74319fc2',
@@ -342,6 +362,7 @@ _CANDIDATE_PREFLIGHTS = {
             (NINGDE_NEXT_FIVE_BASE, NINGDE_NEXT_FIVE_REGIONS),
             (NANPING_FIRST_THREE_BASE, NANPING_FIRST_THREE_REGIONS),
             (NANPING_NEXT_FOUR_BASE, NANPING_NEXT_FOUR_REGIONS),
+            (NANPING_APPLICATION_ONLY_BASE, NANPING_APPLICATION_ONLY_REGIONS),
         )
         for code, profile in regions.items()
     },
@@ -444,7 +465,8 @@ def _staged_guide(code, *, root):
         )
     if code in _CANDIDATE_PREFLIGHTS:
         _, receipt, stage_sha, source_sha = _CANDIDATE_PREFLIGHTS[code]
-        return _word_preflight_guide(guide, receipt, stage_sha, source_sha, 6, root=root)
+        case_count = 3 * len(SUPPORTED_REGIONS[code]['original_kinds'])
+        return _word_preflight_guide(guide, receipt, stage_sha, source_sha, case_count, root=root)
     raw = _read(root, REVIEW_RECEIPT)
     _require(sha256(raw).hexdigest() == STAGE_SHA256)
     receipt = strict_json(raw)

@@ -19,6 +19,7 @@ LOCALITIES = ROOT / 'reports/overnight-gap-closure-20261030/localities'
 
 
 class _FujianCandidateChecks:
+    expected_kinds = {'application', 'evidence'}
     handling_form = '窗口办，网上办，邮寄办'
 
     def test_candidate_contracts_and_downloads_use_exact_local_lineage(self):
@@ -48,7 +49,15 @@ class _FujianCandidateChecks:
                 self.assertEqual(len(guide['materials']), 3)
                 self.assertEqual(len(guide['templates']), 6)
                 eligible = {t['eligible_own_kind']: t for t in guide['templates'] if t['can_generate']}
-                self.assertEqual(set(eligible), {'application', 'evidence'})
+                self.assertEqual(set(eligible), self.expected_kinds)
+                if 'evidence' not in self.expected_kinds:
+                    blocked_evidence = [t for t in guide['templates'] if t['official_label'].startswith('证据清单')]
+                    self.assertEqual(len(blocked_evidence), 2)
+                    for blocked in blocked_evidence:
+                        evidence_query = {**self.region, 'source_id': self.source_id, 'version': guide['version'],
+                                          'kind': 'evidence', 'template_id': blocked['id']}
+                        self.assertFalse(blocked['can_generate'])
+                        self.assertEqual(client.get('/regional/form-contract', params=evidence_query).status_code, 409)
                 for kind, template in eligible.items():
                     with self.subTest(kind=kind):
                         query = {**self.region, 'source_id': self.source_id, 'version': guide['version'],
@@ -369,4 +378,28 @@ class SongxiCandidateTests(_FujianCandidateChecks, TestCase):
     handling_form = '窗口办，网上办，邮寄办'
     region = {'province': 'fujian', 'city': '南平市', 'district': '松溪县'}
     source_folder = 'nanping-next-four-own-source/350724'
+    foreign_code = '350702'
+
+
+class PuchengCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350722'
+    source_id = 'a5f6eb9afcdba92231eccec3'
+    source_version = 'c67a884ab39a3567ac59a367956016005f7d7d23ab29c73b8415857b92629ffc'
+    authority = '浦城县人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    expected_kinds = {'application'}
+    region = {'province': 'fujian', 'city': '南平市', 'district': '浦城县'}
+    source_folder = 'nanping-application-only-own-source/350722'
+    foreign_code = '350702'
+
+
+class ZhengheCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350725'
+    source_id = '8cbb28e92dec4b9e84175e26'
+    source_version = '7933966b1ba6e4315aa7dfbb556827aeba69f6c6146d1f33e51d5b5348f0b07e'
+    authority = '政和县人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    expected_kinds = {'application'}
+    region = {'province': 'fujian', 'city': '南平市', 'district': '政和县'}
+    source_folder = 'nanping-application-only-own-source/350725'
     foreign_code = '350702'
