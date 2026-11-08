@@ -1,0 +1,70 @@
+{
+  "region_code": "320700",
+  "official_scope": "municipal",
+  "source_url": "https://lyg.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?iddept_ql_inf=11320700014252938G3002014302002&iddept_yw_inf=11320700014252938G300201430200201&ql_kind=20&webId=10",
+  "source_title": "劳动人事争议仲裁申请",
+  "authority": "连云港市人力资源和社会保障局",
+  "material_rows": [
+    {
+      "name": "劳动人事争议仲裁案件证据材料",
+      "labels": [
+        {
+          "text": "空白表格",
+          "action": "downloadClyb('https://sxgl.jszwfw.gov.cn:66/audit-qlk-web/rest/frame/pages/basic/attach/attachAction/getContent?isCommondto=true&attachGuid=38c46f6d-f2d7-42f7-b297-e5b57a33a0e5','');"
+        },
+        {
+          "text": "示例样表",
+          "action": "downloadClyb('https://sxgl.jszwfw.gov.cn:66/audit-qlk-web/rest/frame/pages/basic/attach/attachAction/getContent?isCommondto=true&attachGuid=10e8b12b-e661-4d9e-ae66-f00fca7fa558','');"
+        }
+      ]
+    },
+    {
+      "name": "劳动人事争议仲裁案件证据清单",
+      "labels": [
+        {
+          "text": "空白表格",
+          "action": "downloadClyb('https://sxgl.jszwfw.gov.cn:66/audit-qlk-web/rest/frame/pages/basic/attach/attachAction/getContent?isCommondto=true&attachGuid=eb850eb4-d57a-47e3-9fc9-45f719d582be','');"
+        },
+        {
+          "text": "示例样表",
+          "action": "downloadClyb('https://sxgl.jszwfw.gov.cn:66/audit-qlk-web/rest/frame/pages/basic/attach/attachAction/getContent?isCommondto=true&attachGuid=70b62afe-ac05-4f95-ba77-1afdeb6638aa','');"
+        }
+      ]
+    },
+    {
+      "name": "身份证明材料（申请人或代办人双方）",
+      "labels": [
+        {
+          "text": "空白表格",
+          "action": "downloadClyb('https://sxgl.jszwfw.gov.cn:66/audit-qlk-web/rest/frame/pages/basic/attach/attachAction/getContent?isCommondto=true&attachGuid=9417b07c-1a8c-4d77-aa68-c56da52c92f1','');"
+        },
+        {
+          "text": "示例样表",
+          "action": "downloadClyb('https://sxgl.jszwfw.gov.cn:66/audit-qlk-web/rest/frame/pages/basic/attach/attachAction/getContent?isCommondto=true&attachGuid=4329714d-877a-49fd-90c1-5ebbff412b69','');"
+        }
+      ]
+    },
+    {
+      "name": "劳动人事争议仲裁申请书",
+      "labels": [
+        {
+          "text": "空白表格",
+          "action": "downloadClyb('https://sxgl.jszwfw.gov.cn:66/audit-qlk-web/rest/frame/pages/basic/attach/attachAction/getContent?isCommondto=true&attachGuid=bcc67aa2-7b47-4cc2-92e6-3aaf581aa901','');"
+        },
+        {
+          "text": "示例样表",
+          "action": "downloadClyb('https://sxgl.jszwfw.gov.cn:66/audit-qlk-web/rest/frame/pages/basic/attach/attachAction/getContent?isCommondto=true&attachGuid=e9b58ca5-5657-4491-a0a5-25ea78871d00','');"
+        }
+      ]
+    }
+  ],
+  "visible_identity": [
+    "连云港市",
+    "连云港市",
+    "行使层级\t市级\t办理形式\t窗口办理,网上办理,快递申请",
+    "实施主体\t连云港市人力资源和社会保障局\t实施主体性质\t法定机关",
+    "办理地点\t连云港市海州区花果山大道19-5、19-6号人社综合服务中心一楼C区窗口",
+    "空白表格"
+  ],
+  "observed_at_utc": "2026-11-08 08:35:30 UTC"
+}
