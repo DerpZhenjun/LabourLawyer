@@ -55,6 +55,7 @@ NANPING_APPLICATION_ONLY_BASE = LOCALITIES + '/nanping-application-only-own-sour
 NANPING_JIANYANG_BASE = LOCALITIES + '/nanping-jianyang-own-source'
 LONGYAN_FIRST_TWO_BASE = LOCALITIES + '/longyan-first-two-own-source'
 LONGYAN_NEXT_TWO_BASE = LOCALITIES + '/longyan-next-two-own-source'
+LONGYAN_NEXT_THREE_BASE = LOCALITIES + '/longyan-next-three-own-source'
 REGIONS = {
     '350582': {
         'district': '晋江市', 'source_id': 'd8353a4bb91532863fb03802',
@@ -367,6 +368,32 @@ LONGYAN_NEXT_TWO_REGIONS = {
         'original_kinds': ('application', 'evidence'),
     },
 }
+LONGYAN_NEXT_THREE_REGIONS = {
+    '350823': {
+        'district': '上杭县',
+        'source_id': '7c8b83a0120243ba4bf74d4a',
+        'source_manifest_sha256': '4f90e0f66d5fd28b0f5d9db9d33264df0d48c371fdfd35ecb1f4639224429527',
+        'stage_sha256': '20f2b6d58763d1b7a57884f3eeea10b28b9ecedc0360de47b22ada17c11305e1',
+        'source_freeze_sha256': '7657a3921be47c32a6b24aaa145ccb62f9c59e16b897ffcf4cd192cb9845dbb3',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350824': {
+        'district': '武平县',
+        'source_id': 'e83e81785d88fec226301f13',
+        'source_manifest_sha256': 'e1a5bbb57a5038f572b4bfbf7ac554961f2f190080a12ce22b0f36fbb4c415a3',
+        'stage_sha256': 'f357ad762fda13414b7597c8eae03e65f85624ade56be0f8c26a2028668f49cf',
+        'source_freeze_sha256': '1b6faaec185eee432e7f4b960445f9e12095ebdf3e25efb3a90d2ea9006dd97d',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350825': {
+        'district': '连城县',
+        'source_id': '9d72686d21ca8390335e0261',
+        'source_manifest_sha256': 'ab56b74e06274ec4abfea00f5305c91910fe3c66cb71317757db829b3696b372',
+        'stage_sha256': '23a54480f1218ca3bb35f9091a5d2bbc239b33f93f5ddc3793a6ba2345e47349',
+        'source_freeze_sha256': 'a267803f3ab1f7a87a9ec06301a706bdd2a635e031d292fa83ddaead569922b6',
+        'original_kinds': ('application', 'evidence'),
+    },
+}
 SUPPORTED_REGIONS = {
     **REGIONS,
     **DY_REGIONS,
@@ -381,6 +408,7 @@ SUPPORTED_REGIONS = {
     **NANPING_JIANYANG_REGIONS,
     **LONGYAN_FIRST_TWO_REGIONS,
     **LONGYAN_NEXT_TWO_REGIONS,
+    **LONGYAN_NEXT_THREE_REGIONS,
     INVESTMENT_CODE: {
         'district': '台商投资区', 'source_id': 'cf089c0b9ee9b764b564e269',
         'source_manifest_sha256': '297b56b936b8c43d5598c4fc115c26b881936d21fcd3da08722523ca74319fc2',
@@ -418,6 +446,7 @@ _CANDIDATE_PREFLIGHTS = {
             (NANPING_JIANYANG_BASE, NANPING_JIANYANG_REGIONS),
             (LONGYAN_FIRST_TWO_BASE, LONGYAN_FIRST_TWO_REGIONS),
             (LONGYAN_NEXT_TWO_BASE, LONGYAN_NEXT_TWO_REGIONS),
+            (LONGYAN_NEXT_THREE_BASE, LONGYAN_NEXT_THREE_REGIONS),
         )
         for code, profile in regions.items()
     },

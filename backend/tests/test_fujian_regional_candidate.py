@@ -458,3 +458,36 @@ class ChangtingCandidateTests(_FujianCandidateChecks, TestCase):
     region = {'province': 'fujian', 'city': '龙岩市', 'district': '长汀县'}
     source_folder = 'longyan-next-two-own-source/350821'
     foreign_code = '350803'
+
+
+class ShanghangCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350823'
+    source_id = '7c8b83a0120243ba4bf74d4a'
+    source_version = '4f90e0f66d5fd28b0f5d9db9d33264df0d48c371fdfd35ecb1f4639224429527'
+    authority = '上杭县人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '龙岩市', 'district': '上杭县'}
+    source_folder = 'longyan-next-three-own-source/350823'
+    foreign_code = '350802'
+
+
+class WupingCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350824'
+    source_id = 'e83e81785d88fec226301f13'
+    source_version = 'e1a5bbb57a5038f572b4bfbf7ac554961f2f190080a12ce22b0f36fbb4c415a3'
+    authority = '龙岩市武平县人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '龙岩市', 'district': '武平县'}
+    source_folder = 'longyan-next-three-own-source/350824'
+    foreign_code = '350802'
+
+
+class LianchengCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350825'
+    source_id = '9d72686d21ca8390335e0261'
+    source_version = 'ab56b74e06274ec4abfea00f5305c91910fe3c66cb71317757db829b3696b372'
+    authority = '连城县人力资源和社会保障局'
+    handling_form = '窗口办，网上办'
+    region = {'province': 'fujian', 'city': '龙岩市', 'district': '连城县'}
+    source_folder = 'longyan-next-three-own-source/350825'
+    foreign_code = '350802'
