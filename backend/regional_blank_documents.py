@@ -145,6 +145,7 @@ LOCAL_PROOFS = {
  '320115':('nanjing-jiangning-own-source','district','c9d327ae3b65e1adfd2322bf812a9f14a315a4798f1f460e1951da89740ca7f8','9c6ccaeebb504f1a172a29b7ebb4535745013318ae3fc9f59471492b2702b5cb'),
  '320117':('nanjing-lishui-own-source','district','d59be6ffe6c8b9bb6b0ae7c471369fd506244b98949a718c6219703903581926','d0053dc3192ce52f4fc14ad4eb3c712a49b224f4ebff647294def2f08d3867c4'),
  '320118':('nanjing-gaochun-own-source','district','d84d7a25d1d42c1ede25428802ee0634dbf1f98671ddaf19ab01e4c0378d67cb','e1e92a55cc89596290f193e714e33665d9270e74aba79293e112d2ee27e6665f'),
+ '320195':('nanjing-jiangbei-own-source','functional_area','72c4d87855b3021f0b223ffaa59496baef9d4e80dc71ef18fc8fab2e61ae60e0','74d722359065ff0ed684aef414b3a3ae815d844849d72edf630a0d8864652c02'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -483,6 +484,9 @@ EXACT_SOURCES={
  '320118':('南京市','高淳区','d1c79a2e8e0ef7eaa086b36c',{
     '289722ff-3a57-40e0-8399-ee971579425e':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
     '689e53e3-0538-4d72-b175-682424c9853d':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320195':('南京市','江北新区','874bacc8733ee197b80fae3e',{
+    'cdb94b0f-486f-4477-92b6-98e0ffffe1ab':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'c72ca5ec-f2b8-4c69-8e02-6fbaa87090e4':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -581,6 +585,7 @@ EXACT_IDENTITIES={
  '320115':('南京市江宁区人力资源和社会保障局','11320115558867092Y400201430200201'),
  '320117':('南京市溧水区人力资源和社会保障局','113201240130892785400201430200201'),
  '320118':('南京市高淳区人力资源和社会保障局','11320125013101345P400201430200201'),
+ '320195':('江北新区民生保障局','11320195MB1W45349Q400201430200201'),
 }
 
 

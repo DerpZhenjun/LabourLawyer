@@ -172,6 +172,8 @@ AREAS = {
                '56d3bf6d-64a8-4b94-a2c6-6a8bd31a0f6d', 'a8050d0e-9afa-4486-824c-2be060248008'),
     '320118': ('南京市', '高淳区', 'nanjing-gaochun', 'd1c79a2e8e0ef7eaa086b36c', '320118',
                '289722ff-3a57-40e0-8399-ee971579425e', '689e53e3-0538-4d72-b175-682424c9853d'),
+    '320195': ('南京市', '江北新区', 'nanjing-jiangbei', '874bacc8733ee197b80fae3e', '320195',
+               'cdb94b0f-486f-4477-92b6-98e0ffffe1ab', 'c72ca5ec-f2b8-4c69-8e02-6fbaa87090e4'),
 }
 
 
@@ -212,6 +214,8 @@ class HuaianOwnCandidatesTests(TestCase):
                 store.put_guide(forms.staged_jiangsu_municipal(ROOT, city_code))
             directory.put_area(next(r for r in rows if r['code'] == '320685' and r['city'] == '南通市'
                                     and r['district'] == '经济开发区'))
+            for alias in ('320111', '320196'):
+                directory.put_area(next(r for r in rows if r['code'] == alias and r['city'] == '南京市'))
             for code, (city, district, slug, source, provider, app_id, evidence_id) in AREAS.items():
                 directory.put_area(next(r for r in rows if r['code'] == provider and r['city'] == city and r['district'] == district))
                 base = ROOT / f'reports/overnight-gap-closure-20261030/localities/{slug}-own-source'
@@ -275,6 +279,13 @@ class HuaianOwnCandidatesTests(TestCase):
                             for wrong in ('市本级', '清江浦区', ''):
                                 mismatch = client.post('/regional/generate', json={**payload, 'district': wrong})
                                 self.assertEqual(mismatch.status_code, 409)
+                            if code == '320195':
+                                for alias in ('浦口区', '江北新区（浦口区）'):
+                                    other, = (row for row in options if row['district'] == alias)
+                                    self.assertIsNone(other['source_id'])
+                                    self.assertFalse(other['can_generate'])
+                                    mismatch = client.post('/regional/generate', json={**payload, 'district': alias})
+                                    self.assertEqual(mismatch.status_code, 409)
                             if code == '320685':
                                 other, = (row for row in options if row['district'] == '经济开发区')
                                 self.assertEqual(other['provider_code'], code)
