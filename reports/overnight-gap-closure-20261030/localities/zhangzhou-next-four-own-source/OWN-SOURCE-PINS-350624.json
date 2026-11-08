@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "301c204373f6aeef9c9ec9335b768cdb82ddad221815f1e675aaa26d6bbc722a",
+  "regions": {
+    "350624": {
+      "region_code": "350624",
+      "district": "诏安县",
+      "directory_city": "漳州市",
+      "source_id": "32f582f436d0fcb48afeb66f",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=D164675AFF985AB699F92F5DB908BFD3",
+      "service_unid": "D164675AFF985AB699F92F5DB908BFD3",
+      "service_code": "11350624003904435C400201430200Y01",
+      "authority": "诏安县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "04159ca519d958593a71b8147c0d517268bbbb7f9a82f535b4230a0be31ff7fe"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "ae452dd47d228b7966fadbad8fb8a1a0feb5776d5b7159c6ec23fc6cf62678b4",
+  "regions": {
+    "350626": {
+      "region_code": "350626",
+      "district": "东山县",
+      "directory_city": "漳州市",
+      "source_id": "2a8fc5dd930c86940a551377",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=D3A140279461F3AB7F481EE331C2B078",
+      "service_unid": "D3A140279461F3AB7F481EE331C2B078",
+      "service_code": "11350626003916276B400201430200Y02",
+      "authority": "东山县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "bce4b0e47eaad6a9508e295e64da4a720ca9d8d06e7252cf46e92be51b1646e3"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

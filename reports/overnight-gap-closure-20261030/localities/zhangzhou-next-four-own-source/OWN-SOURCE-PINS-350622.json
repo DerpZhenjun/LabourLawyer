@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "79abef3428fc5bbd6e289ee25ee1a9ba34a1d49e0a7454b7771bce6ae74dd6a3",
+  "regions": {
+    "350622": {
+      "region_code": "350622",
+      "district": "云霄县",
+      "directory_city": "漳州市",
+      "source_id": "41be287d59db2eae92eac0f1",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=B12FAFD3B2E51675521644CD346BC7C1",
+      "service_unid": "B12FAFD3B2E51675521644CD346BC7C1",
+      "service_code": "113506220038910721400201430200201",
+      "authority": "云霄县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "5edc06c82bc94fa0452c3ea8edc3d8d1d9d6ef586bf19f55f5ded5786d860be5"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

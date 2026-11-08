@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "4ed06850ecb05fee7008685245affe3172402beffed8fd9d1b6aa4c8f0dabff0",
+  "regions": {
+    "350627": {
+      "region_code": "350627",
+      "district": "南靖县",
+      "directory_city": "漳州市",
+      "source_id": "6af5580aaa3c66970cd8c61b",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=18CF3B95C7551A24FF67A0F75B6B79F0",
+      "service_unid": "18CF3B95C7551A24FF67A0F75B6B79F0",
+      "service_code": "11350627003922668G400201430200201",
+      "authority": "南靖县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "e2a8449a5f26bed7477dd706167ebcce2137f69fe711eb6335a26f2532ef4477"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
