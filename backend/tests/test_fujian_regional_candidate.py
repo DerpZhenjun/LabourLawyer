@@ -243,3 +243,53 @@ class XiapuCandidateTests(_FujianCandidateChecks, TestCase):
     region = {'province': 'fujian', 'city': '宁德市', 'district': '霞浦县'}
     source_folder = 'ningde-first-four-own-source/350921'
     foreign_code = '350902'
+
+
+class GutianCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350922'
+    source_id = 'b001fa88aecf2dca266120e3'
+    source_version = 'd72a825eb8cac6f049ca64b76fe6ff824a222325fecfea5bfa6b58d7e3cab65f'
+    authority = '古田县人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '宁德市', 'district': '古田县'}
+    source_folder = 'ningde-next-five-own-source/350922'
+    foreign_code = '350902'
+
+
+class PingnanCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350923'
+    source_id = '272f1398c7c84fdbcb241d55'
+    source_version = '4cca508c10e685dcc0cc2db5167450f1313a8d354036fc135e73c43119486dbc'
+    authority = '屏南县人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '宁德市', 'district': '屏南县'}
+    source_folder = 'ningde-next-five-own-source/350923'
+    foreign_code = '350902'
+
+
+class ShouningCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350924'
+    source_id = '1ebfe0ec7e5a13953ed7b26c'
+    source_version = '1846eddaab2674891da8eca114cc28d45e952f1d7e641d7de0d2f6a009d23285'
+    authority = '寿宁县人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '宁德市', 'district': '寿宁县'}
+    source_folder = 'ningde-next-five-own-source/350924'
+    foreign_code = '350902'
+
+
+class ZhouningCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350925'
+    source_id = '93c89d232bac720d254d951b'
+    source_version = '2925904df42021fa7392b580b9d02d8d7193ff5daca4ee87985c1bf64ddb537b'
+    authority = '周宁县人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '宁德市', 'district': '周宁县'}
+    source_folder = 'ningde-next-five-own-source/350925'
+    foreign_code = '350902'
+
+
+class ZherongCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350926'
+    source_id = 'b5dede071093f619366f7212'
+    source_version = 'cb08426c5bebc559997940c644845c5a29b06c3fd0c60b69d601570a5a3bc04f'
+    authority = '柘荣县民政和人力资源社会保障局'
+    region = {'province': 'fujian', 'city': '宁德市', 'district': '柘荣县'}
+    source_folder = 'ningde-next-five-own-source/350926'
+    foreign_code = '350902'
