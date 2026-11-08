@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "3b16c0caeb5f6a23afdd2a9af26654f15630278f2e4c662e1c1ec81ebca2d55f",
+  "regions": {
+    "350900": {
+      "region_code": "350900",
+      "district": "",
+      "directory_city": "宁德市",
+      "source_id": "015fbbb3a4bf80fcb5d8d065",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=E2A320D7CE3ED08A46C5D159C5A2F587",
+      "service_unid": "E2A320D7CE3ED08A46C5D159C5A2F587",
+      "service_code": "11352200004016974A300201430200Y01",
+      "authority": "宁德市人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "scope_level": "municipal",
+      "official_area_name": "宁德市",
+      "source_manifest_sha256": "7acf19fe027acd5e93e93e5e21e65c0802527758b1e9dcf90c4364434a6d9a2a"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
