@@ -218,7 +218,7 @@ class StageProposalTests(unittest.TestCase):
             root=self.clone();path=root/P.QA_REPORT/relative;path.write_bytes(path.read_bytes()+b' changed')
             with self.subTest(relative=relative),self.assertRaises((ValueError,OSError)):P.staged_candidate('350322',root=root)
     def test_foreign_M_N_receipts_never_authorize_despite_repin(self):
-        project=HERE.parents[4]
+        project=HERE
         for namespace in ['fujian-m','fujian-n']:
             for filename,pin in [('WORD-MANIFEST.json','WORD_SHA256'),('STAGE-APPROVAL.json','STAGE_SHA256')]:
                 root=self.clone();foreign=project/'reports/overnight-gap-closure-20261030/localities'/namespace/'integration-qa-v1'/filename
