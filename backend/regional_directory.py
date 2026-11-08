@@ -90,6 +90,30 @@ def sichuan_city_areas(capture):
     return rows
 
 
+def _is_national_jianyang(row):
+    return (
+        row.get('provider') == 'national'
+        and row.get('province') == 'fujian'
+        and row.get('city') == '南平市'
+        and row.get('district') == '建阳区'
+        and row.get('level') == 4
+        and row.get('parent_code') == '350700'
+        and row.get('source_url') == 'https://gjzwfw.www.gov.cn/fwmh/ucGovRegion/findUcGovRegion.do'
+    )
+
+
+def _is_legacy_jianyang(row):
+    return row['code'] == '350784' and _is_national_jianyang(row)
+
+
+def _jianyang_display_area(row):
+    # Keep the stored provider record and identifier for provenance and existing callers.
+    return {
+        **row, 'code': '350703', 'region_code': '350703', 'provider_code': row['code'],
+        'code_source_url': 'https://mzt.fujian.gov.cn/gk/tzgg/202607/t20260710_7176497.htm',
+    }
+
+
 class DirectoryStore:
     def __init__(self, path):
         self.path = Path(path)
@@ -139,6 +163,14 @@ class DirectoryStore:
             else:
                 rows = db.execute('SELECT payload FROM directory_areas WHERE province=? AND level IN (3,4) ORDER BY level,id',(province,))
             result=[json.loads(row['payload']) for row in rows]
+            if province == 'fujian' and city == '南平市':
+                current_jianyang = any(
+                    row['code'] == '350703' and _is_national_jianyang(row) for row in result
+                )
+                result = [
+                    _jianyang_display_area(row) if _is_legacy_jianyang(row) else row
+                    for row in result if not (current_jianyang and _is_legacy_jianyang(row))
+                ]
             if not city:
                 # Include terminal stations and district-only supplementary sources.
                 result=list({item['city']:item for item in reversed(result) if item['city']}.values())

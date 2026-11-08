@@ -38,6 +38,44 @@ class RegionalDirectoryTests(unittest.TestCase):
             national_children({'success':False,'data':None,'message':'返回结果为null'},'510100')
         self.assertEqual(self.store.areas('sichuan','成都市')[0]['district'],'金牛区')
 
+    def test_jianyang_exposes_current_code_and_preserves_the_provider_record(self):
+        source_url = 'https://gjzwfw.www.gov.cn/fwmh/ucGovRegion/findUcGovRegion.do'
+        old = {
+            'provider': 'national', 'code': '350784', 'province': 'fujian', 'city': '\u5357\u5e73\u5e02',
+            'district': '\u5efa\u9633\u533a', 'level': 4, 'parent_code': '350700',
+            'source_url': source_url, 'collected_at': '2026-10-23T14:00:00Z',
+            'raw_record': {'regionCode': '350784', 'regionName': '\u5efa\u9633\u533a', 'parentId': '350700'},
+        }
+        saved = self.store.put_area(old)
+        row, = self.store.areas('fujian', '\u5357\u5e73\u5e02')
+        self.assertEqual(row['id'], saved['id'])
+        self.assertEqual((row['code'], row['region_code'], row['provider_code']), ('350703', '350703', '350784'))
+        self.assertEqual(row['raw_record'], old['raw_record'])
+        self.assertEqual(row['code_source_url'], 'https://mzt.fujian.gov.cn/gk/tzgg/202607/t20260710_7176497.htm')
+        self.assertFalse(row['can_generate'])
+        with self.store.connection() as db:
+            import json
+            raw = db.execute('SELECT payload FROM directory_areas WHERE id=?', (saved['id'],)).fetchone()
+            self.assertEqual(json.loads(raw['payload']), saved)
+        self.store.put_area({
+            **old, 'code': '350703', 'raw_record': {**old['raw_record'], 'regionCode': '350703'},
+        })
+        current, = self.store.areas('fujian', '\u5357\u5e73\u5e02')
+        self.assertEqual((current['id'], current['code']), ('national:350703', '350703'))
+
+    def test_jianyang_code_rule_does_not_relabel_other_authorities_or_districts(self):
+        base = {
+            'code': '350784', 'province': 'fujian', 'city': '\u5357\u5e73\u5e02', 'district': '\u5efa\u9633\u533a',
+            'level': 4, 'parent_code': '350700', 'collected_at': '2026-10-23T14:00:00Z',
+            'raw_record': {'regionCode': '350784', 'regionName': '\u5efa\u9633\u533a', 'parentId': '350700'},
+        }
+        self.store.put_area({**base, 'provider': 'other', 'source_url': 'https://example.test/'})
+        self.store.put_area({
+            **base, 'provider': 'national', 'district': '\u5ef6\u5e73\u533a',
+            'source_url': 'https://gjzwfw.www.gov.cn/fwmh/ucGovRegion/findUcGovRegion.do',
+        })
+        self.assertEqual([row['code'] for row in self.store.areas('fujian', '\u5357\u5e73\u5e02')], ['350784', '350784'])
+
     def test_queue_resumes_interrupted_job_without_duplicate_enqueue(self):
         key = self.store.enqueue('directory', {'provider':'national','parent':'510000'})
         self.assertEqual(self.store.enqueue('directory', {'provider':'national','parent':'510000'}),key)
