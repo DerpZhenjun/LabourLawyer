@@ -132,6 +132,14 @@ AREAS = {
                '63042073-5235-4d52-91f3-335b802508a4', 'ab85e126-a6a5-4eb1-ae0c-a1b0498a6687'),
     '321283': ('泰州市', '泰兴市', 'taizhou-taixing', '896936fec0edc7f820d3d1f8', '321283',
                'a0509eef-f50d-411c-9760-1031f4a7a455', '98afe763-7824-4414-9e44-1ea4750d6bcd'),
+    '320402': ('常州市', '天宁区', 'changzhou-tianning', 'e39c9ffd79563821016f0bac', '320402',
+               'ce7347c3-9e8b-4c10-b295-97999321f710', 'd0d0588b-0586-4e9b-9bba-4291b2d9636a'),
+    '320404': ('常州市', '钟楼区', 'changzhou-zhonglou', '81386cd870bc1302c9be58b6', '320404',
+               '3cfba7f8-d1e9-4f29-a4d9-d68b0aae1470', 'ea51d49d-454c-4a75-960a-be34a3f7a9f1'),
+    '320481': ('常州市', '溧阳市', 'changzhou-liyang', '9c6fe7efa0a96db41d1ba41e', '320481',
+               '265ec962-29f4-4cd7-80af-728e7d339a2b', '6ece6338-906f-420d-b401-db0082a6001e'),
+    '320413': ('常州市', '金坛区', 'changzhou-jintan', '73ccdcd47f33754e4fba164c', '320482',
+               '7c921ce6-43ed-43fe-8c02-ee584dfece7a', 'a5296113-81cb-438b-86f2-9e85761a39da'),
 }
 
 
@@ -149,12 +157,25 @@ class HuaianOwnCandidatesTests(TestCase):
                 stored = json.loads(db.execute('SELECT payload FROM directory_areas').fetchone()['payload'])
             self.assertEqual(stored['code'], '320829')
 
+    def test_jintan_current_code_preserves_original_directory_record(self):
+        rows = json.loads((ROOT / 'data/public-regions/directory.json').read_bytes())
+        legacy = next(r for r in rows if (r['city'], r['district'], r['code']) == ('常州市', '金坛区', '320482'))
+        with TemporaryDirectory(prefix='jintan-directory-') as tmp:
+            directory = DirectoryStore(Path(tmp) / 'directory.sqlite')
+            directory.put_area(legacy)
+            row, = directory.areas('jiangsu', '常州市')
+            self.assertEqual((row['code'], row['region_code'], row['provider_code']),
+                             ('320413', '320413', '320482'))
+            with directory.connection() as db:
+                original = json.loads(db.execute('SELECT payload FROM directory_areas').fetchone()['payload'])
+            self.assertEqual(original['code'], '320482')
+
     def test_exact_local_originals_contracts_and_downloads(self):
         rows = json.loads((ROOT / 'data/public-regions/directory.json').read_bytes())
         with TemporaryDirectory(prefix='jiangsu-own-candidates-') as tmp:
             store = RegionalStore(Path(tmp) / 'guides.sqlite')
             directory = DirectoryStore(Path(tmp) / 'directory.sqlite')
-            for city_code in ('320700', '320800', '320300', '320900', '321300', '321000', '320600', '321100', '321200'):
+            for city_code in ('320700', '320800', '320300', '320900', '321300', '321000', '320600', '321100', '321200', '320400'):
                 directory.put_area(next(r for r in rows if r['code'] == city_code and r['level'] == 3))
                 store.put_guide(forms.staged_jiangsu_municipal(ROOT, city_code))
             directory.put_area(next(r for r in rows if r['code'] == '320685' and r['city'] == '南通市'

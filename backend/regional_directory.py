@@ -99,6 +99,10 @@ _CURRENT_DIRECTORY_CODES = {
     ('fujian', '南平市'): (('建阳区', '350700', '350784', '350703', _FUJIAN_CODE_SOURCE),),
     ('fujian', '龙岩市'): (('永定区', '350800', '350822', '350803', _FUJIAN_CODE_SOURCE),),
     ('jiangsu', '淮安市'): (('洪泽区', '320800', '320829', '320813', _JIANGSU_CODE_SOURCE),),
+    ('jiangsu', '常州市'): (
+        ('金坛区', '320400', '320482', '320413',
+         'https://mzt.jiangsu.gov.cn/art/2026/7/2/art_78635_11723214.html'),
+    ),
     ('jiangsu', '南通市'): (
         ('海安市', '320600', '320621', '320685', _JIANGSU_CODE_SOURCE),
         ('海门区', '320600', '320684', '320614', _JIANGSU_CODE_SOURCE),

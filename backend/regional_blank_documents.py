@@ -125,6 +125,10 @@ LOCAL_PROOFS = {
  '321281':('taizhou-xinghua-own-source','district','a18482b0a760b04a1d2da29486f507fdd7c5d0d532a12a1dd9af09a305b6a931','7be32d8f347985753e1e66575f557a4d42236f5e661e465797013c924e86b7d2'),
  '321282':('taizhou-jingjiang-own-source','district','d1838564d0c25adcec6044b78450fde2f8e9ac91a078439ba856e583600cd47d','b3048a849bdced08eaf69a081f2e1be330866c1a583079aa4348da2af69c8f74'),
  '321283':('taizhou-taixing-own-source','district','b3193bd4b1d693620f34a10bc09e4eeac660b342af7b774567643153d0d02a46','d180dff7f5ab84000eaf68ff7fafd62134c529c9ed9cfad673cf2f623d325466'),
+ '320402':('changzhou-tianning-own-source','district','08fb45261a4a717d38b0a77f4d54bc35a58206a9a5f28fccdefb7e7eb289ebcd','20467c250126bd9287912e6adabc29bda3c36629a5878044acc7fd33e87bd985'),
+ '320404':('changzhou-zhonglou-own-source','district','7cac02ad4712e8e9ddef30ab2043252b6b34cff3b87b0b1b68d037b3aea41fd3','e30b6f1fdd7edfe9cb2240459812dcedcb6a97be0a158ff67852d7a5bdd4eb6b'),
+ '320481':('changzhou-liyang-own-source','district','0710f7c51f82d90bc43b3710877be697297bed825b5ed7eb668f9c49aca4afa3','b478cb6c0c814976888e955015d2425d0d0ef99db11cfbb957ff93d631525bb2'),
+ '320413':('changzhou-jintan-own-source','district','c91910ee04ad83fdbb0c99303946b98cbb5f167735cc66d236f50babad60f79e','a3804539b86e0159b0d0d044c08e5cc8a908c1bd3e70b537fd937781ac2f35bb'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -404,6 +408,18 @@ EXACT_SOURCES={
  '321283':('泰州市','泰兴市','896936fec0edc7f820d3d1f8',{
     'a0509eef-f50d-411c-9760-1031f4a7a455':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
     '98afe763-7824-4414-9e44-1ea4750d6bcd':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320402':('常州市','天宁区','e39c9ffd79563821016f0bac',{
+    'ce7347c3-9e8b-4c10-b295-97999321f710':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'd0d0588b-0586-4e9b-9bba-4291b2d9636a':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320404':('常州市','钟楼区','81386cd870bc1302c9be58b6',{
+    '3cfba7f8-d1e9-4f29-a4d9-d68b0aae1470':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'ea51d49d-454c-4a75-960a-be34a3f7a9f1':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320481':('常州市','溧阳市','9c6fe7efa0a96db41d1ba41e',{
+    '265ec962-29f4-4cd7-80af-728e7d339a2b':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '6ece6338-906f-420d-b401-db0082a6001e':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320413':('常州市','金坛区','73ccdcd47f33754e4fba164c',{
+    '7c921ce6-43ed-43fe-8c02-ee584dfece7a':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'a5296113-81cb-438b-86f2-9e85761a39da':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -482,6 +498,10 @@ EXACT_IDENTITIES={
  '321281':('兴化市人力资源和社会保障局','113212810144222044400201430200201'),
  '321282':('靖江市人力资源和社会保障局','113212825546012547400201430200201'),
  '321283':('泰兴市人力资源和社会保障局','11321283014441886R400201430200201'),
+ '320402':('天宁区人力资源和社会保障局','11320402014115036Q400201430200201'),
+ '320404':('常州市钟楼区人力资源和社会保障局','11320404014119504M400201430200201'),
+ '320481':('常州市溧阳市人力资源和社会保障局','123204814674542847400201430200201'),
+ '320413':('常州市金坛区人力资源和社会保障局','11320482014138916T400201430200201'),
 }
 
 
