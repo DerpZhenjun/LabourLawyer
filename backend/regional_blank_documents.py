@@ -94,6 +94,13 @@ LOCAL_PROOFS = {
  '320924':('yancheng-sheyang-own-source','district','db6f18f5eb7c5b2d19aecc2aabac8ef1480f81379a1a9a3421765ec181702c3f','f493a588353292ed55a8b583dd4f001295622f290087f5ca3e49a710101c4235'),
  '320981':('yancheng-dongtai-own-source','district','abce7cacfb828cc69b7ea6d54d217b70d1e559b536f7b89139b2fb464210d9b2','e73cf9ab865a2c8c5fd464efcd62e45d4067caddc91ebd7d96d854183e2d064d'),
  '320971':('yancheng-edz-own-source','functional_area','57af93268de0a393a452973ab08a4264f54dfda726a4943529b187a97d4f035b','93f503efbac6c2c6b0c943ddb40a2c3a8f6c2855e89d11130bbb991ae28c1245'),
+ '321302':('suqian-sucheng-own-source','district','3deaf922db96552aafb49396afd01d3fa494226ba1e68ad87b7323a5ab5eebac','6197bae6feb4030d6eb6e6607fcd6d94174d7c8f9cae289c5717b794d48df1cf'),
+ '321311':('suqian-suyu-own-source','district','95091e9c962524b12eba3f63269605a42c340a2fcf5a52effa5f4fccbf1617c0','b9518499f99b12935a65c346e0dcc2ba9335566f80a32c428d4095e3d01a237b'),
+ '321322':('suqian-shuyang-own-source','district','1de2bc92345016fce1ca06177857614c4402defbe4029952bf1ba6be02ae22bb','47ea55eef92a83e6beada49dc28eb33ff13a42fdfc3d5763d2cee331e601d7f9'),
+ '321323':('suqian-siyang-own-source','district','e811f1bbddffd4f797e07c844ec55ae04f92be30768708d87924c106b62776c9','5812a53fbf794f36bafe044aab4f0d49280e3fc510c44c2c964ee9cd057cf72e'),
+ '321324':('suqian-sihong-own-source','district','a1d4d4faeda9e9f4dc5a94120982816c95cb84bc0ef1511ce82a336744af21cc','1161e7ba8cba428f52325cd3dea1172b7ed54a74006159e891e937d777e08967'),
+ '321325':('suqian-lake-own-source','functional_area','472fdbc4ee0c4aca0d1495f34ad31ad8de3d207d71f8c91fccf59b29d98a36d4','a5aa9593c673b129ed0ce1568c47431a60f605f7d94740e2a5b512f354052ed0'),
+ '321392':('suqian-ssip-own-source','functional_area','1a418811d2bc2a08106400fcde89d82a09f304f77498dee3fafae7dc1c504b99','3ce4bf27aebeaa989b97b0d129af7b09a3bd086e3326f04d9236b6649fe97bbf'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -281,6 +288,27 @@ EXACT_SOURCES={
  '320971':('盐城市','盐城开发区','cfdea0ddc6c9122dd461f617',{
     '7b18187c-ed1a-4b52-917f-d46bb1850af6':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
     'db8d22b6-69d6-429b-8a7e-1b6c65b8eff8':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321302':('宿迁市','宿城区','7fb7dc52dbd885bd96986222',{
+    'ff3e6b45-0e9a-40a3-b3ce-d726c559b76d':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '613a5382-bee5-4fca-a3eb-d15444d222d0':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321311':('宿迁市','宿豫区','3651193e96ffa65fcbbdd653',{
+    '5990c48c-6204-433d-9b10-e382b38889a3':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '32d04f5e-cf97-4ea5-9f81-3717ef74d558':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321322':('宿迁市','沭阳县','3ccf422d02539ed77d426823',{
+    '08873dcb-d051-45ca-9277-f6923c2c0df0':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '5202a3a3-78af-4e85-9968-7c5994b31624':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321323':('宿迁市','泗阳县','af0c7311cc4d8d7e65d2349c',{
+    '5a3a4f0b-a665-49bf-b12f-3d9ce6c08239':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'f981c5e8-237d-4eec-be77-085706efad35':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321324':('宿迁市','泗洪县','f4129dbab8e0725575533aee',{
+    '85458054-1daf-41d1-86b1-acb05993c2ad':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'd0186fb3-94db-467c-b6a0-423402654089':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321325':('宿迁市','市湖滨新城','1666941b0227accabfd693bc',{
+    'f7852470-a737-4c9f-be71-b237a494b7d1':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'fb30f08f-d847-4bca-a05b-013c09e77e5c':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321392':('宿迁市','苏州宿迁工业园区','99b9ee49afeb34982c4cba87',{
+    'fd50790b-1455-4cf2-ae3f-6810ed58c3fb':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '3e9bf615-0fa2-4279-a43d-7d0e58419b10':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -328,6 +356,13 @@ EXACT_IDENTITIES={
  '320924':('射阳县人力资源和社会保障局','11320924737070337G400201430200201'),
  '320981':('盐城市东台市人力资源和社会保障局','11320981014396886W400201430200201'),
  '320971':('盐城经济技术开发区组织部（人力资源和社会保障社局）','11320900MB03383358400201430200201'),
+ '321302':('宿城区人力资源和社会保障局','11321302014320013D400201430200201'),
+ '321311':('宿豫区人力资源和社会保障局','11321321014320523B400201430200201'),
+ '321322':('沭阳县人力资源和社会保障局','113213220143140787400201430200201'),
+ '321323':('泗阳县人社局','11321323014322932B400201430200201'),
+ '321324':('泗洪县人力资源和社会保障局','11321324557085689K400201430200201'),
+ '321325':('宿迁市湖滨新区政法和社会管理办公室','TE321325XXX8001032400201430200201'),
+ '321392':('苏州宿迁工业园区劳动保障和社会事业局','11321300016184991A400201430200201'),
 }
 
 
