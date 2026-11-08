@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "c6dfba39ed07dec0c193336586714036016d67650de43719f74b03a0da83c42a",
+  "regions": {
+    "350600": {
+      "region_code": "350600",
+      "district": "",
+      "directory_city": "漳州市",
+      "source_id": "ad8d3c9efd0a04604c518bde",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=616BDDE397EEEB1B0C8A4890D9ED9675",
+      "service_unid": "616BDDE397EEEB1B0C8A4890D9ED9675",
+      "service_code": "12350600MB0464809L300201430200201",
+      "authority": "漳州市劳动人事争议仲裁院",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "scope_level": "municipal",
+      "official_area_name": "漳州市",
+      "source_manifest_sha256": "17f6f78c0c521d22e079c0eb917f7f8713f02cf5d97dc800c733e322bc642f0f"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
