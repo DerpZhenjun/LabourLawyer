@@ -119,6 +119,12 @@ LOCAL_PROOFS = {
  '321112':('zhenjiang-dantu-own-source','district','10ca1feedcf8b5fff6618a46abf5f8074f9a349f72f72134d18eba10e94cb565','9f29e239b08789a89e72192f6332853c7a856d6c4c2df0d725441e141415a24e'),
  '321181':('zhenjiang-danyang-own-source','district','8dec73ecc07242213ea5ff90cce04cb4cc6e1f91877a1c6537bb4ca48abfd91f','7fe41a1c7c8bd674d56e4e9b33167884ff1cb0fba06e5ef04f80adb9fff56046'),
  '321182':('zhenjiang-yangzhong-own-source','district','b160d446423320f51c87c60f2804b8d867acd5b2dd2adda718825289326ecf24','02903b1ccb1675b294ceee4052293f157b8b0c817b77283ccddc9479e0e3b575'),
+ '321202':('taizhou-hailing-own-source','district','cacf7597648dc9cd6a3c002adc24344b373c61f75b57e7b1363b5dcd28ae8e53','1d90938b6bda4d68d9513a6143bfcd9c14ed1ab0c070f4653a73e71298eb98e7'),
+ '321203':('taizhou-gaogang-own-source','district','9c37ba6e1b26fceecfb068b0155c49aaab3659104362cdc4f01f89218019d88e','f63e2a71488e4d7a92f498b89a731ddaa52e9a278202f5668c47ac1f1182d7bc'),
+ '321204':('taizhou-jiangyan-own-source','district','748aa7e03a42e3ac6c715fcaf67393f6f5cc59b9fd9d67a410d0563a594c4e45','ef8452836821fd4fc5701a938ac2a00ed13299be1a544deb5670265462e03a51'),
+ '321281':('taizhou-xinghua-own-source','district','a18482b0a760b04a1d2da29486f507fdd7c5d0d532a12a1dd9af09a305b6a931','7be32d8f347985753e1e66575f557a4d42236f5e661e465797013c924e86b7d2'),
+ '321282':('taizhou-jingjiang-own-source','district','d1838564d0c25adcec6044b78450fde2f8e9ac91a078439ba856e583600cd47d','b3048a849bdced08eaf69a081f2e1be330866c1a583079aa4348da2af69c8f74'),
+ '321283':('taizhou-taixing-own-source','district','b3193bd4b1d693620f34a10bc09e4eeac660b342af7b774567643153d0d02a46','d180dff7f5ab84000eaf68ff7fafd62134c529c9ed9cfad673cf2f623d325466'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -381,6 +387,23 @@ EXACT_SOURCES={
  '321182':('镇江市','扬中市','6faa24fecb0f43577eb71b76',{
     '5aa121be-5f9c-410b-ba5d-623102c98a04':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
     '853c7d53-dd54-4b50-863c-c23ec84baefe':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321202':('泰州市','海陵区','75350ea6969cb0b55633fffa',{
+    '04cd6da4-4a0f-4963-a2c5-566646f1202e':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'f2ea5304-5dd6-481c-aca7-7b6a006c1ccd':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321203':('泰州市','高港区','4779366e0fc515afee109eb2',{
+    'e1c771ad-8591-4712-8bfb-7b4b0249a319':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '32f732a0-a6c3-4b7d-a7fe-9bd810762624':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321204':('泰州市','姜堰区','0e793fcf14a99306d4a8150d',{
+    '326a25a4-b666-4bb9-906d-77bda0902745':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3')}),
+ '321281':('泰州市','兴化市','d60aa7fc858807793aacd5fc',{
+    'eb3965fc-4b99-43b8-9468-0a6ae2dc408c':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'b20aab9e-9914-45df-a0a2-638ad8d80e46':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321282':('泰州市','靖江市','b013e0a468eedaa0271af6b3',{
+    '63042073-5235-4d52-91f3-335b802508a4':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'ab85e126-a6a5-4eb1-ae0c-a1b0498a6687':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321283':('泰州市','泰兴市','896936fec0edc7f820d3d1f8',{
+    'a0509eef-f50d-411c-9760-1031f4a7a455':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '98afe763-7824-4414-9e44-1ea4750d6bcd':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -453,6 +476,12 @@ EXACT_IDENTITIES={
  '321112':('镇江市丹徒区人力资源和社会保障局','11321121553805554K400201430200201'),
  '321181':('丹阳市人力资源和社会保障局','113211810144872785400201430200201'),
  '321182':('扬中市人力资源和社会保障局','11321182554623867C400201430200201'),
+ '321202':('海陵区人力资源和社会保障局','113212020144194353400201430200201'),
+ '321203':('泰州医药高新区（高港区）社会事业和退役军人事务局','11321203014420962E400201430200201'),
+ '321204':('泰州市姜堰区人力资源和社会保障局','1132128401445680X3400201430200201'),
+ '321281':('兴化市人力资源和社会保障局','113212810144222044400201430200201'),
+ '321282':('靖江市人力资源和社会保障局','113212825546012547400201430200201'),
+ '321283':('泰兴市人力资源和社会保障局','11321283014441886R400201430200201'),
 }
 
 
@@ -511,7 +540,8 @@ def staged_jiangsu_locality(root, code):
             template.update(can_generate=True, adapter=ADAPTER, document_types=[kind],
                             content_kind='filled_official_blank',
                             generation_label=f'依据{area}官方空白表格填写')
-    if sum(t['can_generate'] for t in guide['templates']) != 2:
+    enabled = [t['id'] for t in guide['templates'] if t['can_generate']]
+    if not enabled or sorted(enabled) != sorted(EXACT_SOURCES[code][3]):
         raise ValueError('地区空白文书适配不完整')
     guide['can_generate'] = True
     return guide

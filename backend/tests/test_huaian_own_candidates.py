@@ -120,6 +120,18 @@ AREAS = {
                '0ddb0e56-9ebf-438c-8f4f-4aba1dd901cd', '2b489fa8-be63-4fb6-99c7-04948b3f866f'),
     '321182': ('镇江市', '扬中市', 'zhenjiang-yangzhong', '6faa24fecb0f43577eb71b76', '321182',
                '5aa121be-5f9c-410b-ba5d-623102c98a04', '853c7d53-dd54-4b50-863c-c23ec84baefe'),
+    '321202': ('泰州市', '海陵区', 'taizhou-hailing', '75350ea6969cb0b55633fffa', '321202',
+               '04cd6da4-4a0f-4963-a2c5-566646f1202e', 'f2ea5304-5dd6-481c-aca7-7b6a006c1ccd'),
+    '321203': ('泰州市', '高港区', 'taizhou-gaogang', '4779366e0fc515afee109eb2', '321203',
+               'e1c771ad-8591-4712-8bfb-7b4b0249a319', '32f732a0-a6c3-4b7d-a7fe-9bd810762624'),
+    '321204': ('泰州市', '姜堰区', 'taizhou-jiangyan', '0e793fcf14a99306d4a8150d', '321204',
+               '326a25a4-b666-4bb9-906d-77bda0902745', '33601a57-84f5-4f24-80c0-95f901f0dde8'),
+    '321281': ('泰州市', '兴化市', 'taizhou-xinghua', 'd60aa7fc858807793aacd5fc', '321281',
+               'eb3965fc-4b99-43b8-9468-0a6ae2dc408c', 'b20aab9e-9914-45df-a0a2-638ad8d80e46'),
+    '321282': ('泰州市', '靖江市', 'taizhou-jingjiang', 'b013e0a468eedaa0271af6b3', '321282',
+               '63042073-5235-4d52-91f3-335b802508a4', 'ab85e126-a6a5-4eb1-ae0c-a1b0498a6687'),
+    '321283': ('泰州市', '泰兴市', 'taizhou-taixing', '896936fec0edc7f820d3d1f8', '321283',
+               'a0509eef-f50d-411c-9760-1031f4a7a455', '98afe763-7824-4414-9e44-1ea4750d6bcd'),
 }
 
 
@@ -142,7 +154,7 @@ class HuaianOwnCandidatesTests(TestCase):
         with TemporaryDirectory(prefix='jiangsu-own-candidates-') as tmp:
             store = RegionalStore(Path(tmp) / 'guides.sqlite')
             directory = DirectoryStore(Path(tmp) / 'directory.sqlite')
-            for city_code in ('320700', '320800', '320300', '320900', '321300', '321000', '320600', '321100'):
+            for city_code in ('320700', '320800', '320300', '320900', '321300', '321000', '320600', '321100', '321200'):
                 directory.put_area(next(r for r in rows if r['code'] == city_code and r['level'] == 3))
                 store.put_guide(forms.staged_jiangsu_municipal(ROOT, city_code))
             directory.put_area(next(r for r in rows if r['code'] == '320685' and r['city'] == '南通市'
@@ -174,6 +186,16 @@ class HuaianOwnCandidatesTests(TestCase):
                         for kind, annex in (('application', app_id), ('evidence', evidence_id)):
                             q = {**scope, 'source_id': source, 'version': guide['version'],
                                  'kind': kind, 'template_id': annex}
+                            if code == '321204' and kind == 'evidence':
+                                unavailable = next(t for t in guide['templates'] if t['id'] == annex)
+                                self.assertFalse(unavailable['can_generate'])
+                                self.assertNotEqual(unavailable['download_status'], 'downloaded')
+                                self.assertEqual(client.get('/regional/form-contract', params=q).status_code, 409)
+                                self.assertEqual(client.get(f'/regional/templates/{annex}', params=q).status_code, 409)
+                                self.assertEqual(client.post('/regional/generate', json={
+                                    **q, 'mode': 'blank', 'data': {},
+                                }).status_code, 409)
+                                continue
                             response = client.get('/regional/form-contract', params=q)
                             self.assertEqual(response.status_code, 200, response.text)
                             contract = response.json()
