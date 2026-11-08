@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "bc72e242e0da64e8a5a69c7588e56acea926dcdf5d1b5d1038f55670b9505e0a",
+  "regions": {
+    "350629": {
+      "region_code": "350629",
+      "district": "华安县",
+      "directory_city": "漳州市",
+      "source_id": "d61089df6a682a0affd5d18c",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=D15F3A5F9CEFE2AE78AD73E1C37B5518",
+      "service_unid": "D15F3A5F9CEFE2AE78AD73E1C37B5518",
+      "service_code": "113506290039352583400201430200Y01",
+      "authority": "华安县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "d21b0110552ff1568fe6a7b7049faf9df6939f55f651d24191f8b472d1f3dc44"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

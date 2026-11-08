@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "443a18ad6d4e564fe0ea82ac0782430090d26d4be7a64fc38171994b330fda4a",
+  "regions": {
+    "350623": {
+      "region_code": "350623",
+      "district": "漳浦县",
+      "directory_city": "漳州市",
+      "source_id": "48e65b2c27fc105366706caa",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=D097D656C5BF76D3B63F040B102F4D89",
+      "service_unid": "D097D656C5BF76D3B63F040B102F4D89",
+      "service_code": "113506230038974582400201430200Y01",
+      "authority": "漳浦县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "de8110bb1a971d508bffb8d94c8545d5bef504dee090b55955736105f7ac91ac"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

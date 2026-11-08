@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "de643907f2f6aa78ed38b1e116cba9568e28a56e59a83d4fd9fe88b6b1ac9314",
+  "regions": {
+    "350625": {
+      "region_code": "350625",
+      "district": "长泰区",
+      "directory_city": "漳州市",
+      "source_id": "2ea92c5adb81421b892f2994",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=114330BB6EF77542FCEBCCB1F6ABB6C9",
+      "service_unid": "114330BB6EF77542FCEBCCB1F6ABB6C9",
+      "service_code": "11350625003909949Q400201430200Y01",
+      "authority": "漳州市长泰区人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "74786aec7221088ada6a7923a38e13b9d74cb9ba042ac877db57211e35f3ae50"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "d649f37190852fc8c2ead529a3ddf784452d42bb3fff55208360917d2f046a0d",
+  "regions": {
+    "350628": {
+      "region_code": "350628",
+      "district": "平和县",
+      "directory_city": "漳州市",
+      "source_id": "1c435a8e909867d2119efe16",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=2CD1936FE0F741F96FD8573477AC09EF",
+      "service_unid": "2CD1936FE0F741F96FD8573477AC09EF",
+      "service_code": "11350628003928939B400201430200201",
+      "authority": "平和县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "798eba503cadb717fb74727aaff074c1389a69feed03c577f63642325f36c70d"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
