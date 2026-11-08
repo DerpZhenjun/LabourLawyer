@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "50d4997ea73149f8de879ee85509db8f8092f5a28fe2dd0f7fd4d28abcf74538",
+  "regions": {
+    "350421": {
+      "region_code": "350421",
+      "district": "明溪县",
+      "directory_city": "三明市",
+      "source_id": "0344451e5d72c7ff36543fe9",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=34A810BE7DE07E3A0E71ECA659D81C43",
+      "service_unid": "34A810BE7DE07E3A0E71ECA659D81C43",
+      "service_code": "11350421003747177F400201430200201",
+      "authority": "明溪县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "a49fbaba629c04954b07d1ea4923b03ba2269f16ca6e98183266c4609300f403"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

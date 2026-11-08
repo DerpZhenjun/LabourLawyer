@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "16b18ed72ecf56329fcc8eec6c80363ee92aee6d99d987e1b3437f633da7d706",
+  "regions": {
+    "350428": {
+      "region_code": "350428",
+      "district": "将乐县",
+      "directory_city": "三明市",
+      "source_id": "23bd108d76ca3647bfc597c8",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=37B41A008BC14E64CAA251BFAD7198AD",
+      "service_unid": "37B41A008BC14E64CAA251BFAD7198AD",
+      "service_code": "1135042800378551XR400201430200Y01",
+      "authority": "将乐县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "b8978e2977dfe8b8ff88fa3e76a341de64444110620140902dce04c389a041b9"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

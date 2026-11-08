@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "73b79b5b214be8a1e0284a5cfbf4e394a23e72da9a03630b60a3510d19cd3462",
+  "regions": {
+    "350424": {
+      "region_code": "350424",
+      "district": "宁化县",
+      "directory_city": "三明市",
+      "source_id": "2e7221316b15f1d1b0fcf034",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=57CDA64F5F4056AA54B564ED2C2562B0",
+      "service_unid": "57CDA64F5F4056AA54B564ED2C2562B0",
+      "service_code": "11350424003759565G400201430200201",
+      "authority": "宁化县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "c9ce260340747c75b7271f069088c27a4a912609e971d340af03325c318d408a"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
