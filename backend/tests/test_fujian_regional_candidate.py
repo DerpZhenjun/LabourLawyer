@@ -491,3 +491,66 @@ class LianchengCandidateTests(_FujianCandidateChecks, TestCase):
     region = {'province': 'fujian', 'city': '龙岩市', 'district': '连城县'}
     source_folder = 'longyan-next-three-own-source/350825'
     foreign_code = '350802'
+
+
+class _MunicipalCandidateChecks(_FujianCandidateChecks):
+    def test_city_level_is_offered_only_for_an_exact_guide_and_explicitly_selected(self):
+        directory_rows = json.loads((ROOT / 'data/public-regions/directory.json').read_bytes())
+        city_row = next(row for row in directory_rows if row['code'] == self.code and row['level'] == 3)
+        with TemporaryDirectory(prefix='municipal-candidate-') as folder:
+            store = RegionalStore(Path(folder) / 'guides.sqlite')
+            directory = routes.DirectoryStore(Path(folder) / 'directory.sqlite')
+            directory.put_area(city_row)
+            app = FastAPI()
+            app.include_router(routes.router, prefix='/regional')
+            with patch.object(routes, 'ROOT', ROOT), patch.object(routes, 'store', return_value=store), \
+                    patch.object(routes, 'directory_store', return_value=directory), TestClient(app) as client:
+                selection = {key: self.region[key] for key in ('province', 'city')}
+                self.assertEqual(client.get('/regional/areas', params=selection).json()['items'], [])
+                staged = own.staged_candidate(self.code, root=ROOT)
+                self.assertEqual(staged['scope_level'], 'municipal')
+                store.put_guide(staged)
+                row, = client.get('/regional/areas', params=selection).json()['items']
+                self.assertEqual((row['district'], row['region_code'], row['level']), ('市本级', self.code, 3))
+                self.assertTrue(row['can_generate'])
+                self.assertEqual(row['source_id'], self.source_id)
+                self.assertEqual(client.get('/regional/lookup', params=self.region).json()['source_id'], self.source_id)
+                for district in ('', '未核验的区县'):
+                    other = client.get('/regional/lookup', params={**selection, 'district': district}).json()
+                    self.assertIsNone(other['source_id'])
+                    self.assertFalse(any(t['can_generate'] for t in other['templates']))
+                wrong_city = client.get('/regional/lookup', params={**self.region, 'city': '其他城市'}).json()
+                self.assertIsNone(wrong_city['source_id'])
+
+
+class NingdeMunicipalCandidateTests(_MunicipalCandidateChecks, TestCase):
+    code = '350900'
+    source_id = '015fbbb3a4bf80fcb5d8d065'
+    source_version = '7acf19fe027acd5e93e93e5e21e65c0802527758b1e9dcf90c4364434a6d9a2a'
+    authority = '宁德市人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '宁德市', 'district': '市本级'}
+    source_folder = 'ningde-municipal-own-source/350900'
+    foreign_code = '350902'
+
+
+class NanpingMunicipalCandidateTests(_MunicipalCandidateChecks, TestCase):
+    code = '350700'
+    source_id = 'f94ef9ec2ad2020932331f5a'
+    source_version = '706c1574ab63bbe59b2e3fd320a8fdab0191d2864fd5411a953f18bdee11ef8f'
+    authority = '南平市人力资源和社会保障局'
+    handling_form = '窗口办，网上办'
+    region = {'province': 'fujian', 'city': '南平市', 'district': '市本级'}
+    source_folder = 'nanping-municipal-own-source/350700'
+    foreign_code = '350702'
+
+
+class LongyanMunicipalCandidateTests(_MunicipalCandidateChecks, TestCase):
+    code = '350800'
+    source_id = 'eeda6db9dc8414446292f9c0'
+    source_version = '79c90f32395f126733067e274ece79bb06f00704144fd402543c356e4e82e317'
+    authority = '龙岩市人力资源和社会保障局'
+    handling_form = '窗口办，网上办'
+    region = {'province': 'fujian', 'city': '龙岩市', 'district': '市本级'}
+    source_folder = 'longyan-municipal-own-source/350800'
+    foreign_code = '350802'

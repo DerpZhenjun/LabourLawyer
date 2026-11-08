@@ -394,6 +394,39 @@ LONGYAN_NEXT_THREE_REGIONS = {
         'original_kinds': ('application', 'evidence'),
     },
 }
+FUJIAN_MUNICIPAL_SELECTION = "市本级"
+FUJIAN_MUNICIPAL_REGIONS = {
+    '350900': {
+        'district': '',
+        'city': '宁德市',
+        'source_base': LOCALITIES + '/ningde-municipal-own-source',
+        'source_id': '015fbbb3a4bf80fcb5d8d065',
+        'source_manifest_sha256': '7acf19fe027acd5e93e93e5e21e65c0802527758b1e9dcf90c4364434a6d9a2a',
+        'stage_sha256': '137e000ee2dc8b2d1699556f719e661434ece3f596167f8ec4c5363b17580af0',
+        'source_freeze_sha256': '3b16c0caeb5f6a23afdd2a9af26654f15630278f2e4c662e1c1ec81ebca2d55f',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350700': {
+        'district': '',
+        'city': '南平市',
+        'source_base': LOCALITIES + '/nanping-municipal-own-source',
+        'source_id': 'f94ef9ec2ad2020932331f5a',
+        'source_manifest_sha256': '706c1574ab63bbe59b2e3fd320a8fdab0191d2864fd5411a953f18bdee11ef8f',
+        'stage_sha256': '34a1dfb349b2a3a674b9c454814e3ec8904797cb88c58affa6ae12e51e0b088e',
+        'source_freeze_sha256': 'e4dfe82e68f06d0affb5627e479325a585d3d0101d7f616430043c4917b68168',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350800': {
+        'district': '',
+        'city': '龙岩市',
+        'source_base': LOCALITIES + '/longyan-municipal-own-source',
+        'source_id': 'eeda6db9dc8414446292f9c0',
+        'source_manifest_sha256': '79c90f32395f126733067e274ece79bb06f00704144fd402543c356e4e82e317',
+        'stage_sha256': 'dbcfff4e014aecf15227ad85f6ea006e76bee5a927b95ca73adf02d7a43a0c61',
+        'source_freeze_sha256': '69975e91bd9ab99106ef619f0ca73a7cbe1bd92b6c2078d2287ba691adcacc45',
+        'original_kinds': ('application', 'evidence'),
+    },
+}
 SUPPORTED_REGIONS = {
     **REGIONS,
     **DY_REGIONS,
@@ -409,6 +442,7 @@ SUPPORTED_REGIONS = {
     **LONGYAN_FIRST_TWO_REGIONS,
     **LONGYAN_NEXT_TWO_REGIONS,
     **LONGYAN_NEXT_THREE_REGIONS,
+    **FUJIAN_MUNICIPAL_REGIONS,
     INVESTMENT_CODE: {
         'district': '台商投资区', 'source_id': 'cf089c0b9ee9b764b564e269',
         'source_manifest_sha256': '297b56b936b8c43d5598c4fc115c26b881936d21fcd3da08722523ca74319fc2',
@@ -426,6 +460,13 @@ SUPPORTED_REGIONS = {
     },
 }
 _CANDIDATE_PREFLIGHTS = {
+    **{
+        code: (
+            profile['source_base'], f"{profile['source_base']}/{code}/WORD-PREFLIGHT.json",
+            profile['stage_sha256'], profile['source_freeze_sha256'],
+        )
+        for code, profile in FUJIAN_MUNICIPAL_REGIONS.items()
+    },
     INVESTMENT_CODE: (INVESTMENT_BASE, INVESTMENT_STAGE_RECEIPT, INVESTMENT_STAGE_SHA256, INVESTMENT_SOURCE_FREEZE_SHA256),
     XIANGCHENG_CODE: (XIANGCHENG_BASE, XIANGCHENG_STAGE_RECEIPT, XIANGCHENG_STAGE_SHA256, XIANGCHENG_SOURCE_FREEZE_SHA256),
     LONGHAI_CODE: (LONGHAI_BASE, LONGHAI_STAGE_RECEIPT, LONGHAI_STAGE_SHA256, LONGHAI_SOURCE_FREEZE_SHA256),
@@ -506,6 +547,14 @@ def production_source(code, *, root):
              and guide['source_id'] == digest(guide['source_url'])[:24]
              and guide['source_url'] == manifest['source_url']
              and guide['published'] is False and guide['can_generate'] is False)
+    if code in FUJIAN_MUNICIPAL_REGIONS:
+        service = strict_json(files['safe-api-getMatterBasicInfo.json'])['data']['apasService']
+        _require(guide['scope_level'] == 'municipal'
+                 and guide['city'] == guide['official_area_name'] == profile['city']
+                 and service['areacode'] == code and service['areaname'] == profile['city'])
+        # Existing region contracts use three strings. This explicit choice is a
+        # routing value, while the captured district stays empty for a city-level source.
+        guide['district'] = FUJIAN_MUNICIPAL_SELECTION
     guide.update(source_version=version, online_entry=None)
     guide['sections'] = {
         'apply_method_raw': strict_json(files['safe-api-getMatterBasicInfo.json'])['data']['applyMethod'],

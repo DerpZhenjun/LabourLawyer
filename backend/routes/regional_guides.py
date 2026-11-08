@@ -71,7 +71,8 @@ from regional_huian_quangang_request import (
 from regional_quanzhou_next4 import (
     ADAPTER as QZ_ADAPTER, SUPPORTED_REGIONS as QZ_REGIONS, fill_document as fill_qz_document,
     STAGE_SHA256 as QZ_STAGE_SHA256, PUBLICATION_SHA256 as QZ_PUBLICATION_SHA256,
-    DY_REGIONS as QZ_DY_REGIONS, DY_PUBLICATION_SHA256 as QZ_DY_PUBLICATION_SHA256)
+    DY_REGIONS as QZ_DY_REGIONS, DY_PUBLICATION_SHA256 as QZ_DY_PUBLICATION_SHA256,
+    FUJIAN_MUNICIPAL_REGIONS, FUJIAN_MUNICIPAL_SELECTION)
 from regional_zhejiang_oct29e import fill_document as fill_zhejiang_e_document
 from regional_zhejiang_chunan_oct30 import (fill_document as fill_chunan_document, ADAPTER as CHUNAN_ADAPTER,
     PUBLICATION_SHA256 as CHUNAN_PUBLICATION_SHA256)
@@ -118,8 +119,23 @@ def directory_store():
 
 @router.get('/areas')
 def areas(province: str=Query(max_length=30),city: str=Query(default='',max_length=80)):
-    rows=directory_store().areas(province,city)
+    directory = directory_store()
+    rows = directory.areas(province, city)
     guides={(g['province'],g['city'],g['district']):g for g in store().inventory()}
+    municipal = guides.get((province, city, FUJIAN_MUNICIPAL_SELECTION))
+    if province == 'fujian' and city and municipal and municipal.get('scope_level') == 'municipal':
+        code = municipal.get('region_code')
+        profile = FUJIAN_MUNICIPAL_REGIONS.get(code)
+        if profile and (profile['city'], profile['source_id'], profile['source_manifest_sha256']) == (
+            city, municipal.get('source_id'), municipal.get('source_version'),
+        ):
+            city_row = next((
+                row for row in directory.areas(province) if row['city'] == city and row['level'] == 3
+                and row['code'] == code and not row['district']
+            ), None)
+            if city_row:
+                rows.insert(0, {**city_row, 'district': FUJIAN_MUNICIPAL_SELECTION,
+                                'region_code': code, 'scope_level': 'municipal'})
     for row in rows:
         g=guides.get((province,city,row['district']),{}) if city else {}
         row.update(source_id=g.get('source_id'),verification_status=g.get('verification_status','unverified'),
