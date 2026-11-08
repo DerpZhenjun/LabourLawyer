@@ -571,6 +571,17 @@ class PutianMunicipalCandidateTests(_MunicipalCandidateChecks, TestCase):
     foreign_code = '350902'
 
 
+class QuanzhouMunicipalCandidateTests(_MunicipalCandidateChecks, TestCase):
+    code = '350500'
+    source_id = 'd28ace5cf9a8bc48a37ec8dc'
+    source_version = 'e2e6b71b28bbdacfb1594d207084c92a699627cf50cd69f01703a849e4502255'
+    authority = '泉州市人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '泉州市', 'district': '市本级'}
+    source_folder = 'quanzhou-municipal-own-source/350500'
+    foreign_code = '350526'
+
+
 class ZhangzhouMunicipalCandidateTests(_MunicipalCandidateChecks, TestCase):
     code = '350600'
     source_id = 'ad8d3c9efd0a04604c518bde'

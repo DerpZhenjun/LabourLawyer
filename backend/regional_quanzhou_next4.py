@@ -421,6 +421,16 @@ FUJIAN_MUNICIPAL_REGIONS = {
         'source_freeze_sha256': '8d685d5c892e93e1e4061b9a08bb3957591e28bbb73103f6cc0337797d4e535d',
         'original_kinds': ('application',),
     },
+    '350500': {
+        'district': '',
+        'city': '泉州市',
+        'source_base': LOCALITIES + '/quanzhou-municipal-own-source',
+        'source_id': 'd28ace5cf9a8bc48a37ec8dc',
+        'source_manifest_sha256': 'e2e6b71b28bbdacfb1594d207084c92a699627cf50cd69f01703a849e4502255',
+        'stage_sha256': '18b41ed16585e865fad5c50eaa65ddd89968b76283d406b1de924c492d870514',
+        'source_freeze_sha256': '25f905cd659d130d9040feaeed64a4332656786de76fdff697963238e9879f81',
+        'original_kinds': ('application', 'evidence'),
+    },
     '350600': {
         'district': '',
         'city': '漳州市',
