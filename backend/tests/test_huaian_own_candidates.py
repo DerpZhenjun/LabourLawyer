@@ -160,6 +160,8 @@ AREAS = {
                'e70300d8-f5db-41b7-8335-7fb96dcec831', '8c2b5f25-f760-4d58-a5dc-3513875637da'),
     '320106': ('南京市', '鼓楼区', 'nanjing-gulou', 'f7a64fa92a3851f56a9b89e8', '320106',
                '22330733-e351-486e-9f4a-af67e2e04e5c', '1d208301-c481-486d-abb9-57fed2299d89'),
+    '320102': ('南京市', '玄武区', 'nanjing-xuanwu', '61b9be6ddf4ffaa18dffa799', '320102',
+               '6213e5bb-700e-40e8-a830-947ca78aa6f9', '0e020276-82f5-4ed7-b853-e0c0b091431c'),
 }
 
 
@@ -227,7 +229,7 @@ class HuaianOwnCandidatesTests(TestCase):
                         for kind, annex in (('application', app_id), ('evidence', evidence_id)):
                             q = {**scope, 'source_id': source, 'version': guide['version'],
                                  'kind': kind, 'template_id': annex}
-                            if code == '321204' and kind == 'evidence':
+                            if code in {'321204', '320102'} and kind == 'evidence':
                                 unavailable = next(t for t in guide['templates'] if t['id'] == annex)
                                 self.assertFalse(unavailable['can_generate'])
                                 self.assertNotEqual(unavailable['download_status'], 'downloaded')

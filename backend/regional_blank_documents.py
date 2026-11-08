@@ -139,6 +139,7 @@ LOCAL_PROOFS = {
  '320104':('nanjing-qinhuai-own-source','district','8d97ae2dfc07f52dd8058a7fc904b0248471c46496b02ea549775676668e72d4','ea731a7a958b938aa2e28a4c19099d40e185ddb2a06ff722423806fb5dc9c51d'),
  '320105':('nanjing-jianye-own-source','district','5900d5d4b2d404e62ba8ff68ba8c64976cee1ec3932709c9ebaae4e88be77cea','a21114dcb5f149a3f5fafae921d262dec9a1c4de2ac482cc9d8eedd33ca2ac3f'),
  '320106':('nanjing-gulou-own-source','district','9d167f15e179e903b7a44091082eea7312a8f41b438a2a4a2e726a87235c905b','ae8a1e7795f297944c96dc1ead405269a994d9f41a49803aa0a5b9fd5a567614'),
+ '320102':('nanjing-xuanwu-own-source','district','65b8f6ca542563fce642fac03a7287b1d09f99259b0898b19e0dca0c65c35394','6a018be169c15a042cf16262155632623160612c185762407f9ca0d65182c866'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -460,6 +461,8 @@ EXACT_SOURCES={
  '320106':('南京市','鼓楼区','f7a64fa92a3851f56a9b89e8',{
     '22330733-e351-486e-9f4a-af67e2e04e5c':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
     '1d208301-c481-486d-abb9-57fed2299d89':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320102':('南京市','玄武区','61b9be6ddf4ffaa18dffa799',{
+    '6213e5bb-700e-40e8-a830-947ca78aa6f9':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3')}),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -552,6 +555,7 @@ EXACT_IDENTITIES={
  '320104':('南京市秦淮区人力资源和社会保障局','113201045588672603400201430200201'),
  '320105':('南京市建邺区人力资源和社会保障局','11320105012989370J400201430200201'),
  '320106':('南京市鼓楼区人力资源和社会保障局','1132010601299804X7400201430200201'),
+ '320102':('南京市玄武区人力资源和社会保障局','113201020129658707400201430200201'),
 }
 
 
