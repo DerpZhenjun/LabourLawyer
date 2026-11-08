@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "9cd1c60d90fd18d0a5c0485cf3803106c0aca2e3a632b0cc3ef3c9f3bfc6adb5",
+  "regions": {
+    "350300": {
+      "region_code": "350300",
+      "district": "",
+      "directory_city": "莆田市",
+      "source_id": "954a26fbeead1a7b89dd0d5c",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=B35F82DC8E19B4B2B7664F13C034FCAA",
+      "service_unid": "B35F82DC8E19B4B2B7664F13C034FCAA",
+      "service_code": "11350300003694984G300201430200Y01",
+      "authority": "莆田市人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "scope_level": "municipal",
+      "official_area_name": "莆田市",
+      "source_manifest_sha256": "3ed051a69acc9ba772f9694f19f812c48451e7b9d47c2040d804cdb9f61a7121"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
