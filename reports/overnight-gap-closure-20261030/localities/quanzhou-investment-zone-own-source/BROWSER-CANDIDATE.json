@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "lookups": [
+    {
+      "code": "350599",
+      "source_id": "cf089c0b9ee9b764b564e269",
+      "version": 1
+    },
+    {
+      "code": "350598",
+      "source_id": null,
+      "unverified": true
+    }
+  ],
+  "contracts": [
+    {
+      "code": "350599",
+      "kind": "application",
+      "id": "694a61013d4afda78f3d198aa52cec34af2e171ff2f6567c79c5b47714feb051",
+      "template_id": "E6B5C5E3BE1B13C05F3BE0F9873713A5"
+    },
+    {
+      "code": "350599",
+      "kind": "evidence",
+      "id": "0dc2e5e5e825337200519a6f32d965f5c4d8fc92d5bd1a3cd78d67bbe305d582",
+      "template_id": "F4B22C6FA38A53B850C9D12F98CE0200"
+    }
+  ],
+  "viewports": [
+    [
+      "350599",
+      "application",
+      375
+    ],
+    [
+      "350599",
+      "application",
+      768
+    ],
+    [
+      "350599",
+      "application",
+      1440
+    ],
+    [
+      "350599",
+      "evidence",
+      375
+    ],
+    [
+      "350599",
+      "evidence",
+      768
+    ],
+    [
+      "350599",
+      "evidence",
+      1440
+    ]
+  ],
+  "cancels": [
+    [
+      "350599",
+      "application"
+    ],
+    [
+      "350599",
+      "evidence"
+    ]
+  ],
+  "downloads": [
+    {
+      "code": "350599",
+      "kind": "application",
+      "case": "original",
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "zip_parts": 21,
+      "bytes": 13093
+    },
+    {
+      "code": "350599",
+      "kind": "application",
+      "case": "normal",
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+      "zip_parts": 21,
+      "bytes": 11987
+    },
+    {
+      "code": "350599",
+      "kind": "evidence",
+      "case": "original",
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "zip_parts": 25,
+      "bytes": 18887
+    },
+    {
+      "code": "350599",
+      "kind": "evidence",
+      "case": "normal",
+      "sha256": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a",
+      "zip_parts": 25,
+      "bytes": 16699
+    }
+  ],
+  "blocked": [],
+  "errors": [],
+  "verified_at": "2026-11-08T04:33:00.874454+00:00",
+  "stage_sha256": "60bd331d59be45e072b112a4c63785e98fd293b9e6aa962b8a3646b3c35b9990",
+  "source_manifest_sha256": "297b56b936b8c43d5598c4fc115c26b881936d21fcd3da08722523ca74319fc2",
+  "native_browser_receipt_sha256": "9069e059f6ec896e8beb07c47a6b5eb33640b1facc7c96d8388f5e6e34e02cc0",
+  "publication_approved": false
+}

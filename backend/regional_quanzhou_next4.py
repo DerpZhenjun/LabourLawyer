@@ -1,4 +1,4 @@
-"""Document adaptation for four individually captured Quanzhou sources."""
+"""Document adaptation for individually captured Quanzhou sources."""
 from hashlib import sha256
 from pathlib import Path, PurePosixPath
 import stat
@@ -29,6 +29,11 @@ DY_BROWSER_RECEIPT = DY_BASE + '/BROWSER-CANDIDATE.json'
 DY_BROWSER_SHA256 = '9669479f5e1e0a7f6f3e5ffef23dbc458efc57bb13080177188b5973ef831f54'
 DY_PUBLICATION_RECEIPT = DY_BASE + '/FINAL-PUBLICATION.json'
 DY_PUBLICATION_SHA256 = 'c88b22b572422a4630eff6be9c1403eae6296f3daf55b1b377952c4ec18b279c'
+INVESTMENT_CODE = '350599'
+INVESTMENT_BASE = LOCALITIES + '/quanzhou-investment-zone-own-source'
+INVESTMENT_STAGE_RECEIPT = INVESTMENT_BASE + '/WORD-PREFLIGHT.json'
+INVESTMENT_STAGE_SHA256 = '60bd331d59be45e072b112a4c63785e98fd293b9e6aa962b8a3646b3c35b9990'
+INVESTMENT_SOURCE_FREEZE_SHA256 = '7b752522ecfe5ca30a4ea2a81f6f266777b1f94126b9c45ceea5808fc8fcbba3'
 REGIONS = {
     '350582': {
         'district': '晋江市', 'source_id': 'd8353a4bb91532863fb03802',
@@ -63,7 +68,15 @@ DY_REGIONS = {
         'original_kinds': ('application', 'evidence'),
     },
 }
-SUPPORTED_REGIONS = {**REGIONS, **DY_REGIONS}
+SUPPORTED_REGIONS = {
+    **REGIONS,
+    **DY_REGIONS,
+    INVESTMENT_CODE: {
+        'district': '台商投资区', 'source_id': 'cf089c0b9ee9b764b564e269',
+        'source_manifest_sha256': '297b56b936b8c43d5598c4fc115c26b881936d21fcd3da08722523ca74319fc2',
+        'original_kinds': ('application', 'evidence'),
+    },
+}
 _MODELS = {'application': Application, 'evidence': Evidence}
 _FAILURES = (ValueError, OSError, TypeError, KeyError)
 
@@ -90,6 +103,8 @@ def _read(root, name):
 
 def _source_folder(code):
     _require(type(code) is str and code in SUPPORTED_REGIONS)
+    if code == INVESTMENT_CODE:
+        return f'{INVESTMENT_BASE}/{code}'
     return f'{DY_BASE if code in DY_REGIONS else BASE}/{code}'
 
 
@@ -154,7 +169,14 @@ def staged_candidate(code, *, root):
 def _staged_guide(code, *, root):
     guide = production_source(code, root=root)
     if code in DY_REGIONS:
-        return _dy_staged_guide(guide, root=root)
+        return _word_preflight_guide(
+            guide, DY_STAGE_RECEIPT, DY_STAGE_SHA256, DY_SOURCE_FREEZE_SHA256, 12, root=root,
+        )
+    if code == INVESTMENT_CODE:
+        return _word_preflight_guide(
+            guide, INVESTMENT_STAGE_RECEIPT, INVESTMENT_STAGE_SHA256,
+            INVESTMENT_SOURCE_FREEZE_SHA256, 6, root=root,
+        )
     raw = _read(root, REVIEW_RECEIPT)
     _require(sha256(raw).hexdigest() == STAGE_SHA256)
     receipt = strict_json(raw)
@@ -191,14 +213,14 @@ def _mark_candidate(guide, receipt, pin, verified_at):
                  candidate_adapter_evidence={'file': receipt, 'sha256': pin})
 
 
-def _dy_staged_guide(guide, *, root):
-    raw = _read(root, DY_STAGE_RECEIPT)
-    _require(sha256(raw).hexdigest() == DY_STAGE_SHA256)
+def _word_preflight_guide(guide, receipt_path, receipt_sha, source_freeze_sha, case_count, *, root):
+    raw = _read(root, receipt_path)
+    _require(sha256(raw).hexdigest() == receipt_sha)
     receipt = strict_json(raw)
     _require(receipt['state'] == 'OWN_ORIGINALS_AND_TEST_LAYOUTS_BYTE_EQUIVALENT'
-             and receipt['source_freeze_sha256'] == DY_SOURCE_FREEZE_SHA256
+             and receipt['source_freeze_sha256'] == source_freeze_sha
              and receipt['published'] is False and receipt['adapter_registered'] is False
-             and receipt['web_accepted'] is False and len(receipt['records']) == 12)
+             and receipt['web_accepted'] is False and len(receipt['records']) == case_count)
     forms = []
     for template in guide['templates']:
         if not template['source_original_eligible']:
@@ -213,12 +235,12 @@ def _dy_staged_guide(guide, *, root):
         template.update(can_generate=True, adapter=ADAPTER, document_types=[kind], generation_mode='blank')
         forms.append({'region_code': guide['region_code'], 'kind': kind, 'source_id': guide['source_id'],
                       'template_id': template['id'], 'sha256': {row['case']: row['sha256'] for row in matches}})
-    _mark_candidate(guide, DY_STAGE_RECEIPT, DY_STAGE_SHA256, receipt['verified_at'])
+    _mark_candidate(guide, receipt_path, receipt_sha, receipt['verified_at'])
     return guide, forms
 
 
 def published_guide(code, *, root):
-    _require(type(code) is str and code in SUPPORTED_REGIONS)
+    _require(type(code) is str and (code in REGIONS or code in DY_REGIONS))
     if code in DY_REGIONS:
         return _dy_published_guide(code, root=root)
     _require(PUBLICATION_SHA256 is not None)
