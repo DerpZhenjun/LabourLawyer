@@ -1,0 +1,51 @@
+{
+  "region_code": "370200",
+  "scope": "municipal_only",
+  "issuing_office": "青岛市劳动人事争议仲裁委员会",
+  "published_by": "青岛市人力资源和社会保障局",
+  "published_source": "https://hrss.qingdao.gov.cn/zq_47/ldgx_47/zczn_47/202206/t20220613_6139849.shtml",
+  "original_url": "https://hrss.qingdao.gov.cn/zq_47/ldgx_47/zczn_47/202206/P020220613802909816207.pdf",
+  "downloaded_at_utc": "2026-11-08T08:41:37.683289+00:00",
+  "original_pdf_sha256": "aa4d06e8547c59e4d7ab4eb17187b53a74a29fc05f2904716947d165cd8842f4",
+  "original_bytes": 113928,
+  "pages": 5,
+  "application": {
+    "source_pages": [
+      1,
+      2
+    ],
+    "classification": "OFFICIAL_BLANK_STATIC_PDF",
+    "manual_writing_note_preserved": true,
+    "two_page_extraction_pixel_identical": true,
+    "extraction_sha256": "c7b3ccdf3e5f3b59bc1890c1785d8b4cc4ec7d3bbfba577905efdad63b408cf7"
+  },
+  "other_forms": {
+    "3": "法定代表人（或主要负责人）身份证明书",
+    "4": "授权委托书",
+    "5": "撤诉申请书"
+  },
+  "evidence": {
+    "in_this_compilation": false,
+    "own_blank_status": "UNVERIFIED"
+  },
+  "visual_review": {
+    "all_original_pages_inspected": true,
+    "rendered_page_sha256": [
+      "39623370cdaa382bf0492aff014839be0c7dc027ac5c8f1528437ef0bdb4bda9",
+      "daf8d8dde2cdf684802eca9ced20242cb558940c55584ad6e7c87cf76d170c62",
+      "a3f042b1fd7cb9af6e47e976f152ab4992be6aa43f741b33bc4c9cdb82bafee8",
+      "09f7eb4d6ad8c023450b91a0552c937db78b0f803b6f75ac4f618dd941bef4af",
+      "1818dd8823d18e4160763c1449b80739d92729cf5ce50ad83720e66a5c3771eb"
+    ]
+  },
+  "adapter": {
+    "word_pdf_import": "NO_OUTPUT_STALLED",
+    "registration": false,
+    "can_generate": false
+  },
+  "portal_observation": {
+    "url": "https://qdzwfw.sd.gov.cn/qd/public/index/statichtml/index_qd",
+    "tls": "ERR_CERT_COMMON_NAME_INVALID"
+  },
+  "observed_at_utc": "2026-11-08T09:00:28.558004+00:00"
+}

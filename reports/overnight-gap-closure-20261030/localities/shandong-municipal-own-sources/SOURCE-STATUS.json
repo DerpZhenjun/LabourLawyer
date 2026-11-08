@@ -1,0 +1,47 @@
+{
+  "scope": "municipal_only",
+  "observed_at_utc": "2026-11-08T09:02:18.981Z",
+  "records": [
+    {
+      "region_code": "370100",
+      "city": "济南市",
+      "state": "OWN_GUIDE_AND_LOGIN_REQUIRED_CHANNEL_OBSERVED_BLANKS_UNVERIFIED",
+      "guide_url": "https://jnhrss.jinan.gov.cn/col18388/art/2025/art_18388_4804267.html",
+      "source_url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_848c40f2c4564031951da08e54042049.html",
+      "evidence_sha256": "1a2205325c0e8cfab89fbf96e86d27a89080c4e556fc6f8e6e703ede4e2d7794",
+      "observation": "市人社局确认窗口办理和登录后的网办路径。市仲裁委另有告知书 PDF 与 DOCX，已识别为告知书。申请书及证据清单空白件待核验。",
+      "can_generate": false
+    },
+    {
+      "region_code": "370200",
+      "city": "青岛市",
+      "state": "OWN_APPLICATION_BLANK_STATIC_PDF_CONFIRMED_WORD_ADAPTER_UNVERIFIED",
+      "guide_url": "https://hrss.qingdao.gov.cn/zq_47/ldgx_47/zczn_47/202206/t20220613_6139848.shtml",
+      "source_url": "https://hrss.qingdao.gov.cn/zq_47/ldgx_47/zczn_47/202206/t20220613_6139849.shtml",
+      "evidence_sha256": "17334b8775e36e008b13fd48f56d4b55db1a5dba677f97a4192e5cb8dccb4818",
+      "observation": "市仲裁委空白申请书位于汇编前两页，拆页渲染逐像素一致。官方原件要求用笔书写，保留说明；未取得合格 Word 转换稿。汇编不含证据清单，独立空白件待核验。",
+      "can_generate": false
+    },
+    {
+      "region_code": "370900",
+      "city": "泰安市",
+      "state": "OWN_GUIDE_ATTACHMENT_LINKS_VISIBLE_DOWNLOAD_BROWSER_403_ON_GUIDE",
+      "guide_url": "https://rsj.taian.gov.cn/art/2020/4/3/art_213895_10290732.html",
+      "source_url": "https://rsj.taian.gov.cn/art/2020/4/3/art_213895_10290732.html",
+      "evidence_sha256": "bf919a5a5de09dabae920471b9570180b38500cab813db81f44c541f3d895654",
+      "observation": "正式指南公开附件 1 申请书样式和附件 2 证据清单。下载浏览器访问指南返回 403，未到附件请求阶段，空白件属性待核验。",
+      "can_generate": false
+    },
+    {
+      "region_code": "371000",
+      "city": "威海市",
+      "state": "OWN_GUIDE_WITH_EXPLICIT_APPLICATION_WRITING_EXAMPLE_BLANKS_UNVERIFIED",
+      "guide_url": "https://rsj.weihai.gov.cn/art/2021/6/22/art_45709_1439952.html",
+      "source_url": "https://rsj.weihai.gov.cn/art/2021/6/22/art_45709_1439952.html",
+      "evidence_sha256": "1629760844b00f6fedcce5e5ab2a6caa2af611a328ad2ebacc8b0358f5c12553",
+      "observation": "已查市级指南的受理材料和书写要求。正文示例含示范申请人、公司与案情；该页无可见空白附件。",
+      "can_generate": false
+    }
+  ],
+  "production_changes": false
+}
