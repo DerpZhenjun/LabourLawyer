@@ -414,3 +414,25 @@ class JianyangCandidateTests(_FujianCandidateChecks, TestCase):
     region = {'province': 'fujian', 'city': '南平市', 'district': '建阳区'}
     source_folder = 'nanping-jianyang-own-source/350703'
     foreign_code = '350702'
+
+
+class XinluoCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350802'
+    source_id = 'fdc6a88b3a22440ff0b7c40f'
+    source_version = 'faf214ad5a505bf5d6be8d65e544db55fb9b9a4a999fb00ff7acaf7a2665e58a'
+    authority = '新罗区人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '龙岩市', 'district': '新罗区'}
+    source_folder = 'longyan-first-two-own-source/350802'
+    foreign_code = '350881'
+
+
+class ZhangpingCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350881'
+    source_id = '8ddc5833de93302535e84616'
+    source_version = '84b0bcb512748a2f60f8de3548366059de81b32abf0f4dd2aa39ab8f2ed44616'
+    authority = '漳平市人力资源和社会保障局'
+    handling_form = '窗口办，网上办'
+    region = {'province': 'fujian', 'city': '龙岩市', 'district': '漳平市'}
+    source_folder = 'longyan-first-two-own-source/350881'
+    foreign_code = '350802'

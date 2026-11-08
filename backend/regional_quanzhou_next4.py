@@ -53,6 +53,7 @@ NANPING_FIRST_THREE_BASE = LOCALITIES + '/nanping-first-three-own-source'
 NANPING_NEXT_FOUR_BASE = LOCALITIES + '/nanping-next-four-own-source'
 NANPING_APPLICATION_ONLY_BASE = LOCALITIES + '/nanping-application-only-own-source'
 NANPING_JIANYANG_BASE = LOCALITIES + '/nanping-jianyang-own-source'
+LONGYAN_FIRST_TWO_BASE = LOCALITIES + '/longyan-first-two-own-source'
 REGIONS = {
     '350582': {
         'district': '晋江市', 'source_id': 'd8353a4bb91532863fb03802',
@@ -329,6 +330,24 @@ NANPING_JIANYANG_REGIONS = {
         'original_kinds': ('application', 'evidence'),
     },
 }
+LONGYAN_FIRST_TWO_REGIONS = {
+    '350802': {
+        'district': '新罗区',
+        'source_id': 'fdc6a88b3a22440ff0b7c40f',
+        'source_manifest_sha256': 'faf214ad5a505bf5d6be8d65e544db55fb9b9a4a999fb00ff7acaf7a2665e58a',
+        'stage_sha256': '51d343114fbf920ffcbabd2d3a8912179c857473ff479363ed789cdcd0b9e984',
+        'source_freeze_sha256': '96edf353f6106eb36271b69adc9835f090786337a65792c8a27e8869258dcf22',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350881': {
+        'district': '漳平市',
+        'source_id': '8ddc5833de93302535e84616',
+        'source_manifest_sha256': '84b0bcb512748a2f60f8de3548366059de81b32abf0f4dd2aa39ab8f2ed44616',
+        'stage_sha256': '58b8f7299f35dded945c5601dd7592f83ff16399b30d9be833f19b0efbefa0b4',
+        'source_freeze_sha256': '1e3af4ae09f8b3b0e790a9deadfcfe6489b7424c7baf173aad363d4e301972cb',
+        'original_kinds': ('application', 'evidence'),
+    },
+}
 SUPPORTED_REGIONS = {
     **REGIONS,
     **DY_REGIONS,
@@ -341,6 +360,7 @@ SUPPORTED_REGIONS = {
     **NANPING_NEXT_FOUR_REGIONS,
     **NANPING_APPLICATION_ONLY_REGIONS,
     **NANPING_JIANYANG_REGIONS,
+    **LONGYAN_FIRST_TWO_REGIONS,
     INVESTMENT_CODE: {
         'district': '台商投资区', 'source_id': 'cf089c0b9ee9b764b564e269',
         'source_manifest_sha256': '297b56b936b8c43d5598c4fc115c26b881936d21fcd3da08722523ca74319fc2',
@@ -376,6 +396,7 @@ _CANDIDATE_PREFLIGHTS = {
             (NANPING_NEXT_FOUR_BASE, NANPING_NEXT_FOUR_REGIONS),
             (NANPING_APPLICATION_ONLY_BASE, NANPING_APPLICATION_ONLY_REGIONS),
             (NANPING_JIANYANG_BASE, NANPING_JIANYANG_REGIONS),
+            (LONGYAN_FIRST_TWO_BASE, LONGYAN_FIRST_TWO_REGIONS),
         )
         for code, profile in regions.items()
     },
