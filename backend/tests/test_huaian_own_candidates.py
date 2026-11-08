@@ -38,6 +38,12 @@ AREAS = {
                '526eb9d5-f756-4c3d-a2d5-50abcff3dc2b', 'c62b7731-21df-43cf-883a-907d1fa3ac68'),
     '320771': ('连云港市', '经济开发区', 'lianyungang-edz', '358a2d7a25da49bd5e51dea0', '320771',
                '27a93b11-b2d2-4668-a1d3-6d43903bb787', 'a457b10c-74fe-4d3c-ae83-f3dedcc419f1'),
+    '320302': ('徐州市', '鼓楼区', 'xuzhou-gulou', 'e1342562632579ac5f32aaa0', '320302',
+               'ca661200-f1f2-4b96-8ffd-599582d67bb3', 'c53b1d76-ace8-4cfb-be16-55b5c0195457'),
+    '320303': ('徐州市', '云龙区', 'xuzhou-yunlong', '343d1bc839fee96beefbe2e3', '320303',
+               '5fe62cc7-974d-4731-8a9e-6ab4cc00f549', 'e0cdb850-aea7-4189-b982-b563c08ff372'),
+    '320305': ('徐州市', '贾汪区', 'xuzhou-jiawang', 'b3eb9f21c007ba0b14abef76', '320305',
+               '7c8d87a6-9978-4c1d-a9bd-c258ffc7edd7', '24ada876-fe3a-4e29-9ea4-c6639149efd0'),
 }
 
 
@@ -60,7 +66,7 @@ class HuaianOwnCandidatesTests(TestCase):
         with TemporaryDirectory(prefix='jiangsu-own-candidates-') as tmp:
             store = RegionalStore(Path(tmp) / 'guides.sqlite')
             directory = DirectoryStore(Path(tmp) / 'directory.sqlite')
-            for city_code in ('320700', '320800'):
+            for city_code in ('320700', '320800', '320300'):
                 directory.put_area(next(r for r in rows if r['code'] == city_code and r['level'] == 3))
                 store.put_guide(forms.staged_jiangsu_municipal(ROOT, city_code))
             for code, (city, district, slug, source, provider, app_id, evidence_id) in AREAS.items():

@@ -78,6 +78,9 @@ LOCAL_PROOFS = {
     '320771': ('lianyungang-edz-own-source', 'functional_area',
                '7e8d044475941112eb4632237f6051dbd5699081fc343b12c02ff4d9f067a70b',
                '48a8281e697a71888373e5c6b2f24e99f22e3c270d8e5f6a7f90593cb3fde6d9'),
+ '320302':('xuzhou-gulou-own-source','district','45cd224a0f524784f7235be6e99fc54ebcee82c67d9acb6e27dfac4f7ba9ca2f','950d444824a51b04a721e99105fbe6ab5931d6dd504fe2d00544a208b65e3fe8'),
+ '320303':('xuzhou-yunlong-own-source','district','9c3b33917fad0dafeae996833eb534456fd44ac8b0780347ce1175a97e50b539','16cd8629d41523776fff14e2a3215d9e36e133cbd5ae981e102fc8ef8e1f5b90'),
+ '320305':('xuzhou-jiawang-own-source','district','a155d0a22e5c0752286d4d51f58f390ce74541473755e3167f8f9a6a8c4f1ff1','adfaac591bb6a268a79fc06fc85dd05fdd272909e77a6f72bfcdce99f49e5fb2'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -217,6 +220,15 @@ EXACT_SOURCES={
         '27a93b11-b2d2-4668-a1d3-6d43903bb787':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
         'a457b10c-74fe-4d3c-ae83-f3dedcc419f1':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
     }),
+ '320302':('徐州市','鼓楼区','e1342562632579ac5f32aaa0',{
+    'ca661200-f1f2-4b96-8ffd-599582d67bb3':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'c53b1d76-ace8-4cfb-be16-55b5c0195457':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320303':('徐州市','云龙区','343d1bc839fee96beefbe2e3',{
+    '5fe62cc7-974d-4731-8a9e-6ab4cc00f549':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'e0cdb850-aea7-4189-b982-b563c08ff372':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320305':('徐州市','贾汪区','b3eb9f21c007ba0b14abef76',{
+    '7c8d87a6-9978-4c1d-a9bd-c258ffc7edd7':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '24ada876-fe3a-4e29-9ea4-c6639149efd0':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -248,6 +260,9 @@ EXACT_IDENTITIES={
     '320723':('连云港灌云县人社局','11320723014288930L400201430200201'),
     '320724':('灌南县人力资源和社会保障局','113207240143092872400201430200201'),
     '320771':('连云港经济技术开发区人力资源和社会保障局','11320708MB1A74924R400201430200201'),
+ '320302':('徐州市鼓楼区人力资源和社会保障局','11320302014058019W400201430200201'),
+ '320303':('徐州市云龙区人力资源和社会保障局','11320303014062499N400201430200201'),
+ '320305':('徐州市贾汪区人力资源和社会保障局','113203050140711415400201430200201'),
 }
 
 
