@@ -134,6 +134,8 @@ LOCAL_PROOFS = {
  '320213':('wuxi-liangxi-own-source','district','99252fdc0c19337ca951da479b217407d3e1c4b95f87021106c8cc77d8d3d90c','31fa5a6699e80e6211e8af4af90b854770c324ac5005e8f6e089564084116bae'),
  '320214':('wuxi-xinwu-own-source','district','05b5dbc75ee3c33f896046a9ab1205b30122a1c56314f8ec828886cbc998b6ff','745dcb371dd90be2c84dfdef73c31d284815f1659ad47563b6638a7d473d6668'),
  '320292':('wuxi-edz-own-source','functional_area','d547975bfa08f5dc16667910f2984b876b81d6e56ad8c2190cc669e522e53508','5386a7e17da9e0e2f25808ed2df8f5c46486fc2a54fdb39a0b86a92c9d8475b4'),
+ '320585':('suzhou-taicang-own-source','district','070a60c3ce71d02ba606f22a5352fe7869dbd9a306779ac40ffd0f4cfdcf4a84','f779b268a4e476e81066c538e112a415655004a941f6df41aa90653b898af184'),
+ '320590':('suzhou-industrial-park-own-source','functional_area','8e1147b6c998732e64e519c08b821db459fd13ac8c2d88e0296e8ea1f91add8c','791888911781c1cef54c9bd85b50eb5b8524a8b62f0948264254c598b349afbb'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -440,6 +442,12 @@ EXACT_SOURCES={
  '320292':('无锡市','经济开发区','8b7685fe81e6e7e82758b218',{
     'c01bf318-d976-4d60-89a0-b0e87945c6b0':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
     '95774b46-0f4e-4b96-b0a5-1c0c841bc57a':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320585':('苏州市','太仓市','5a7d8504ff500321b04e076f',{
+    '3962a0b5-9808-48fc-8c6b-a635cdd7d644':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '02c2d0d4-b08e-4071-a273-6baed007532c':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320590':('苏州市','工业园区','866205b79a0218e31aa4812d',{
+    '5b8d38c4-49b6-4de8-adad-549f5c79ae7b':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '19e8b533-37a9-41f8-889b-886a4cf9781d':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -527,6 +535,8 @@ EXACT_IDENTITIES={
  '320213':('无锡市梁溪区人力资源和社会保障局','11320213MB046223X2400201430200201'),
  '320214':('无锡国家高新技术产业开发区（无锡市新吴区）人力资源和社会保障局','11320214MB0376841Y400201430200201'),
  '320292':('江苏无锡经济开发区社会事业局','11320200MB1911084Q400201430200201'),
+ '320585':('苏州太仓市人社局','113205850141850345400201430200201'),
+ '320590':('苏州工业园区人力资源和社会保障局','12320500X08243760H400201430200201'),
 }
 
 
