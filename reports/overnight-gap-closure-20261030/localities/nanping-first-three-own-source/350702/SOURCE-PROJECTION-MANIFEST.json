@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "status": "OWN_SOURCE_ONLY_NOT_REGISTERED_NOT_GENERATING",
+  "region_code": "350702",
+  "source_id": "f780a2e27a9ef10965a9a398",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=D54D0512A2296BCCB00050B89DA2DB99",
+  "official_version": "1",
+  "WORD": null,
+  "STAGE": null,
+  "PUBLICATION": null,
+  "discovery_freeze_sha256": "31f64e7721db5d72a3d76bfc00b092af66bebe83e1e0ad5969c537788e954533",
+  "files": {
+    "CAPTURE-PROVENANCE.json": {
+      "bytes": 6956,
+      "sha256": "834cdc4e5fb94e64f241e9ba35048e68808c48a81a64fc02efd9af839a190957"
+    },
+    "PUBLIC-RETRIEVALS.json": {
+      "bytes": 2133,
+      "sha256": "579f6b7d922270bf5d70b1bc30177a537a083f01466606123b88214f21872fae"
+    },
+    "application-format-public-retrieval.docx": {
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    "evidence-format-public-retrieval.docx": {
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    "guide.json": {
+      "bytes": 20629,
+      "sha256": "f959a2013eb8758a968b1616bb79eff4522a2ebf6d4f3e525eb98190b81e63ff"
+    },
+    "native-field-observations.json": {
+      "bytes": 867,
+      "sha256": "603846d10f6cc231dea5313897a96ec9d0429074c683bbebbb7144ef766292da"
+    },
+    "native-role-proof.json": {
+      "bytes": 2691,
+      "sha256": "b8a31a0e7e7fbbe90b205ab4fdfb83a330ffeda874a3fcb58413c1311d1c7218"
+    },
+    "safe-api-getAcceptList.json": {
+      "bytes": 2497,
+      "sha256": "1f351ce845a737481760359fc225b463d35a3ca2cf36c2930c8542a8ee35b2f8"
+    },
+    "safe-api-getFlowNode.json": {
+      "bytes": 2780,
+      "sha256": "98ff2ed7d7396a110132a19819f29f8ba5632bff580f2e4a93ab3d9e8623d8c9"
+    },
+    "safe-api-getLegalBasis.json": {
+      "bytes": 2249,
+      "sha256": "4613590f17025071a30785cb4ea5f2d44551cb528ec58dae66594f599f55dde7"
+    },
+    "safe-api-getMaterialList.json": {
+      "bytes": 6747,
+      "sha256": "6d7c37b1f3140b59792726a1f09786bef2a8207b12f593b58fd3e210bed41bb7"
+    },
+    "safe-api-getMatterAccording.json": {
+      "bytes": 265,
+      "sha256": "fe3d5acd2bcbcef2313148f0e1bb85e177abf1cd3ef9804efd9f7e76f134f2c6"
+    },
+    "safe-api-getMatterBasicInfo.json": {
+      "bytes": 6993,
+      "sha256": "bd5601463440debe6f414687ddbf2e33f3dfc248656cb16410fe2e0d8acb1f0d"
+    },
+    "safe-api-getServiceSituation.json": {
+      "bytes": 196,
+      "sha256": "12f081a5fc067d93fd9e48ba77f2abb799aa9d4a03e99c7d041120aa999ebdec"
+    },
+    "safe-api-getTableInfo.json": {
+      "bytes": 2388,
+      "sha256": "c1736bdc1da5089cb1362cd4916cf96a80721b90d486d93f4be98a15febc9065"
+    }
+  }
+}

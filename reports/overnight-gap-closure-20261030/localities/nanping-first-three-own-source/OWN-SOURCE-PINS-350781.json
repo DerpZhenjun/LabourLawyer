@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "ab55f43962ea9eb31ec031e19fadb6abbffce9219fec0b59acf0839e63be0498",
+  "regions": {
+    "350781": {
+      "region_code": "350781",
+      "district": "邵武市",
+      "directory_city": "南平市",
+      "source_id": "7b2e6d218619d6a4b7dd3b18",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=842A01DEBFF0079D5C5A666FBA4AD59E",
+      "service_unid": "842A01DEBFF0079D5C5A666FBA4AD59E",
+      "service_code": "11350781003956841K400201430200Y01",
+      "authority": "邵武市人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "cb5892f69d77ab6342a21a912b5c342d94cd7a17c9df75c2fc14332f4fbffe6a"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

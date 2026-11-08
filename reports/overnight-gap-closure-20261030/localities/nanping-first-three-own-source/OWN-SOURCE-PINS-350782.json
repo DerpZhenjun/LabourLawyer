@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "3d7607fa39c8e0623aa72d47d707e5901ef37b5f899c7066dcef0edcb7c0b857",
+  "regions": {
+    "350782": {
+      "region_code": "350782",
+      "district": "武夷山市",
+      "directory_city": "南平市",
+      "source_id": "f07923c1454cce539678a805",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=82912127188DFBC2E743343F74F91187",
+      "service_unid": "82912127188DFBC2E743343F74F91187",
+      "service_code": "1135078200396338XJ400201430200201",
+      "authority": "武夷山市人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "19b7ea84bc6d1c272ae491705a87f22657b43e65729ef57b79d01ac1a60b95e1"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
