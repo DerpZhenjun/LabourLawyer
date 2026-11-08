@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "25f905cd659d130d9040feaeed64a4332656786de76fdff697963238e9879f81",
+  "regions": {
+    "350500": {
+      "region_code": "350500",
+      "district": "",
+      "directory_city": "泉州市",
+      "source_id": "d28ace5cf9a8bc48a37ec8dc",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=4701FA2738C57B4FEC2CDB114185EB6A",
+      "service_unid": "4701FA2738C57B4FEC2CDB114185EB6A",
+      "service_code": "113505000038136482300201430200Y01",
+      "authority": "泉州市人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "scope_level": "municipal",
+      "official_area_name": "泉州市",
+      "source_manifest_sha256": "e2e6b71b28bbdacfb1594d207084c92a699627cf50cd69f01703a849e4502255"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

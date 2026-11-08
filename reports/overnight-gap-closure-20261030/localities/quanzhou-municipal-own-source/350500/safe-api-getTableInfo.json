@@ -1,0 +1,76 @@
+{
+  "msg": null,
+  "total": null,
+  "code": 200,
+  "data": {
+    "tableList": [
+      {
+        "unid": "A586574FB1AD02A0BCA513AEC6ABE930",
+        "createtime": "2021-12-20 16:10:36",
+        "code": null,
+        "punid": "D5796A5429FDF69435DA6BE151CC391D",
+        "fileunid": "98A0EE44D3D63B3D6A10FE60D4E83776",
+        "name": "仲裁申请书示例.docx",
+        "memo": null,
+        "type": "2",
+        "timestamp": "2024-08-21 17:53:50.001"
+      },
+      {
+        "unid": "7B9456310C770998DA991445B590A419",
+        "createtime": "2021-12-20 16:10:33",
+        "code": null,
+        "punid": "D5796A5429FDF69435DA6BE151CC391D",
+        "fileunid": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+        "name": "仲裁申请书.docx",
+        "memo": null,
+        "type": "1",
+        "timestamp": "2024-08-21 17:53:50.001"
+      },
+      {
+        "unid": "C99CD1A5D3DDBB553A17403B539ACF78",
+        "createtime": "2024-09-02 16:49:14",
+        "code": null,
+        "punid": "EAF00DBB15B09277881AC8B7B31A5B85",
+        "fileunid": "CD9A08211623FAB0BA6A24DF34797433",
+        "name": "证据清单（空白）.docx",
+        "memo": null,
+        "type": "1",
+        "timestamp": null
+      },
+      {
+        "unid": "51ADA5BE9C000D66A2E39FDD8BCC4B5B",
+        "createtime": "2024-09-02 16:49:01",
+        "code": null,
+        "punid": "EAF00DBB15B09277881AC8B7B31A5B85",
+        "fileunid": "0F3F36B89C4B85511DAF8C382107247D",
+        "name": "证据清单（示例）.docx",
+        "memo": null,
+        "type": "2",
+        "timestamp": null
+      },
+      {
+        "unid": "9E5E2E1C18989561D3C0B6CA3823C0B9",
+        "createtime": "2024-09-02 16:49:48",
+        "code": null,
+        "punid": "FB419B85982BB4768718F3D2E1403D00",
+        "fileunid": "1E2D2793F0F63EB7182A0F6FA64902D1",
+        "name": "证据材料（供参考） (1).docx",
+        "memo": null,
+        "type": "1",
+        "timestamp": null
+      },
+      {
+        "unid": "502C9710DB0B21B67D6F8321E0F96ED3",
+        "createtime": "2024-09-02 16:49:52",
+        "code": null,
+        "punid": "FB419B85982BB4768718F3D2E1403D00",
+        "fileunid": "8CDFA06F72FE2DE47338804DE7CBA994",
+        "name": "证据材料（供参考）.docx",
+        "memo": null,
+        "type": "2",
+        "timestamp": null
+      }
+    ],
+    "paddingList": []
+  }
+}
