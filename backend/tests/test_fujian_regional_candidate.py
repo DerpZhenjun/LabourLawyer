@@ -436,3 +436,25 @@ class ZhangpingCandidateTests(_FujianCandidateChecks, TestCase):
     region = {'province': 'fujian', 'city': '龙岩市', 'district': '漳平市'}
     source_folder = 'longyan-first-two-own-source/350881'
     foreign_code = '350802'
+
+
+class YongdingCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350803'
+    source_id = '1e23aca032c08ea09d8de2e2'
+    source_version = 'aaf624f1e6ddaa91b58d5b50853fe9344882ba0ad3b1543d704e6fef123e337e'
+    authority = '龙岩市永定区人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '龙岩市', 'district': '永定区'}
+    source_folder = 'longyan-next-two-own-source/350803'
+    foreign_code = '350821'
+
+
+class ChangtingCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350821'
+    source_id = 'd74f09e4c5b1c5c09225add6'
+    source_version = '049e3655e0b88c3fe66fbf5dd309c14baf80f93705f6255729feff84447acd45'
+    authority = '长汀县人社局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '龙岩市', 'district': '长汀县'}
+    source_folder = 'longyan-next-two-own-source/350821'
+    foreign_code = '350803'
