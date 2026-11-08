@@ -1,0 +1,35 @@
+{
+  "published": false,
+  "items": [
+    {
+      "region_code": "610323",
+      "source_url": "https://zwfwzx.baoji.gov.cn/icity/icity/proinfo/index?code=b81555c85a3e818625fa26d51e425698",
+      "official_sha256": "200e2034d7c644821fe9978017624f33360e34b4ce9e88a8816abb31c0c913eb",
+      "official_bytes": 13178,
+      "layout_sha256": "a9abffd8a2714f636689727f0113f2d19f22c76ba1a7809792ac029ce64295da",
+      "pages": 2,
+      "verified": true,
+      "fetched_at": "2026-11-08T13:56:51.370948+00:00"
+    },
+    {
+      "region_code": "610326",
+      "source_url": "https://zwfwzx.baoji.gov.cn/icity/icity/proinfo/index?code=cd11bdf0771605cce84e282f60f49645",
+      "official_sha256": "e728077c002cae63eb73081bbbd4b4a9affd447c7d992690550fd0abd6db33df",
+      "official_bytes": 11715,
+      "layout_sha256": "d3b1d4fe23d4578a2b323cf2e7f500eadaa8b22e832f627b751e77ba6af5116f",
+      "pages": 1,
+      "verified": true,
+      "fetched_at": "2026-11-08T13:56:04.462763+00:00"
+    },
+    {
+      "region_code": "610327",
+      "source_url": "https://zwfwzx.baoji.gov.cn/icity/icity/proinfo/index?code=e209309fdb6ab25b05093b6c4ce529ab",
+      "official_sha256": "200e2034d7c644821fe9978017624f33360e34b4ce9e88a8816abb31c0c913eb",
+      "official_bytes": 13178,
+      "layout_sha256": "a9abffd8a2714f636689727f0113f2d19f22c76ba1a7809792ac029ce64295da",
+      "pages": 2,
+      "verified": true,
+      "fetched_at": "2026-11-08T13:56:04.506912+00:00"
+    }
+  ]
+}
