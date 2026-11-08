@@ -12,7 +12,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 from regional_guides import RegionalStore,digest
 from regional_directory import DirectoryStore
-from regional_adapters import checked_reference_adapter
+from regional_adapters import QZ_ADAPTER, checked_reference_adapter
 from regional_public_provenance import public_evidence,approved_report_attachment
 from regional_oct29_bindings import jiangsu_binding as oct29_jiangsu_binding
 
@@ -48,7 +48,9 @@ def bootstrap_public_data(root=ROOT,data_dir=None):
     # creating or changing either database. Existing data is never downgraded.
     guides=deepcopy(payload['guides.json'])
     for g in guides:
-        if g.get('candidate_adapter_evidence') is not None and g.get('published') is not True:
+        # Quanzhou previews use explicit candidate stores. Other adapters still
+        # support their existing isolated catalogue bootstrap for review.
+        if g.get('generation_adapter') == QZ_ADAPTER and g.get('published') is not True:
             raise ValueError('Candidate guide cannot initialize a public catalogue')
         source=urlsplit(g.get('source_url',''));host=source.hostname or ''
         if (source.scheme not in {'http','https'} or not host.endswith('.gov.cn')
