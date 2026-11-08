@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "fc73c14411257140d70eda4e16427145942fe9b0050ecff83d0fc9d1fc68dd76",
+  "regions": {
+    "350803": {
+      "region_code": "350803",
+      "district": "永定区",
+      "directory_city": "龙岩市",
+      "source_id": "1e23aca032c08ea09d8de2e2",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=F38F91DEA9DCD427FBD3ECD5A17AD931",
+      "service_unid": "F38F91DEA9DCD427FBD3ECD5A17AD931",
+      "service_code": "11350822004107075E400201430200Y01",
+      "authority": "龙岩市永定区人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "aaf624f1e6ddaa91b58d5b50853fe9344882ba0ad3b1543d704e6fef123e337e"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "408608a67e50eea744e0b5f9352d96148393205edb70c8b3198dff65a34e7551",
+  "regions": {
+    "350821": {
+      "region_code": "350821",
+      "district": "长汀县",
+      "directory_city": "龙岩市",
+      "source_id": "d74f09e4c5b1c5c09225add6",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=4BCDA0765C7ECC920BC27A6F9D5E42C4",
+      "service_unid": "4BCDA0765C7ECC920BC27A6F9D5E42C4",
+      "service_code": "11350821004100703P400201430200Y01",
+      "authority": "长汀县人社局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "049e3655e0b88c3fe66fbf5dd309c14baf80f93705f6255729feff84447acd45"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

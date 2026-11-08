@@ -1,0 +1,195 @@
+{
+  "region_code": "350803",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=F38F91DEA9DCD427FBD3ECD5A17AD931",
+  "source_id": "1e23aca032c08ea09d8de2e2",
+  "official_version": "1",
+  "collected_at": "2026-11-08T06:06:13.198601+00:00",
+  "discovery_freeze_sha256": "fc73c14411257140d70eda4e16427145942fe9b0050ecff83d0fc9d1fc68dd76",
+  "safe_files": {
+    "safe-api-getAcceptList.json": {
+      "bytes": 2503,
+      "sha256": "8c4aa2bf20764ab6e8594e41c9f592f352f69a806c8f76e6bf6f26a5ad604830"
+    },
+    "safe-api-getFlowNode.json": {
+      "bytes": 2408,
+      "sha256": "19b274f6c4da53d8955ef2ffc616856f27f1c5d6f5e730e6255b7511f47d8f27"
+    },
+    "safe-api-getLegalBasis.json": {
+      "bytes": 2249,
+      "sha256": "4613590f17025071a30785cb4ea5f2d44551cb528ec58dae66594f599f55dde7"
+    },
+    "safe-api-getMaterialList.json": {
+      "bytes": 6686,
+      "sha256": "92a5653df59681189f8a39a7be482645504ff3662fb16f53d1f4539734686f42"
+    },
+    "safe-api-getMatterAccording.json": {
+      "bytes": 265,
+      "sha256": "fe3d5acd2bcbcef2313148f0e1bb85e177abf1cd3ef9804efd9f7e76f134f2c6"
+    },
+    "safe-api-getMatterBasicInfo.json": {
+      "bytes": 7256,
+      "sha256": "6b13b40a2218d03b81f013871e32cef41dc5fc6ad4e6aa58b1902db4953a9140"
+    },
+    "safe-api-getServiceSituation.json": {
+      "bytes": 196,
+      "sha256": "22fd6f0cf44eed48294805a56eca5867d720a4918e09b51afcf2399955be6068"
+    },
+    "safe-api-getTableInfo.json": {
+      "bytes": 2388,
+      "sha256": "d7cd389348e15f702596282397da2fe8d6d4d2fa5f9b4fe1a38314440492bd83"
+    },
+    "native-field-observations.json": {
+      "bytes": 867,
+      "sha256": "211c866a3deffd358bc8b4642f4fe5f581f3f98f43ba5f6b105cee11cc825a4e"
+    }
+  },
+  "actual_native_API_receipts": [
+    {
+      "endpoint": "getAcceptList",
+      "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/getAcceptList?unid=F38F91DEA9DCD427FBD3ECD5A17AD931",
+      "method": "GET",
+      "status": 200,
+      "request_id": "66660.104",
+      "observed_timestamp_ms": 1794117972411,
+      "captured_at": "2026-11-08T06:06:12.940321+00:00",
+      "file": "api-getAcceptList.json",
+      "bytes": 2503,
+      "sha256": "8c4aa2bf20764ab6e8594e41c9f592f352f69a806c8f76e6bf6f26a5ad604830",
+      "browser_response_sha256": "8c4aa2bf20764ab6e8594e41c9f592f352f69a806c8f76e6bf6f26a5ad604830",
+      "sanitized_body": false
+    },
+    {
+      "endpoint": "getFlowNode",
+      "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/getFlowNode?serviceId=F38F91DEA9DCD427FBD3ECD5A17AD931",
+      "method": "GET",
+      "status": 200,
+      "request_id": "66660.112",
+      "observed_timestamp_ms": 1794117972416,
+      "captured_at": "2026-11-08T06:06:12.977736+00:00",
+      "file": "api-getFlowNode.json",
+      "bytes": 2408,
+      "sha256": "19b274f6c4da53d8955ef2ffc616856f27f1c5d6f5e730e6255b7511f47d8f27",
+      "browser_response_sha256": "19b274f6c4da53d8955ef2ffc616856f27f1c5d6f5e730e6255b7511f47d8f27",
+      "sanitized_body": false
+    },
+    {
+      "endpoint": "getLegalBasis",
+      "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/getLegalBasis?serviceUnid=F38F91DEA9DCD427FBD3ECD5A17AD931",
+      "method": "GET",
+      "status": 200,
+      "request_id": "66660.128",
+      "observed_timestamp_ms": 1794117972417,
+      "captured_at": "2026-11-08T06:06:13.013002+00:00",
+      "file": "api-getLegalBasis.json",
+      "bytes": 2249,
+      "sha256": "4613590f17025071a30785cb4ea5f2d44551cb528ec58dae66594f599f55dde7",
+      "browser_response_sha256": "4613590f17025071a30785cb4ea5f2d44551cb528ec58dae66594f599f55dde7",
+      "sanitized_body": false
+    },
+    {
+      "endpoint": "getMaterialList",
+      "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/getMaterialList?unid=F38F91DEA9DCD427FBD3ECD5A17AD931&isMatmultiple=Y",
+      "method": "GET",
+      "status": 200,
+      "request_id": "66660.131",
+      "observed_timestamp_ms": 1794117972417,
+      "captured_at": "2026-11-08T06:06:13.052380+00:00",
+      "file": "api-getMaterialList.json",
+      "bytes": 6686,
+      "sha256": "92a5653df59681189f8a39a7be482645504ff3662fb16f53d1f4539734686f42",
+      "browser_response_sha256": "92a5653df59681189f8a39a7be482645504ff3662fb16f53d1f4539734686f42",
+      "sanitized_body": false
+    },
+    {
+      "endpoint": "getMatterAccording",
+      "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/getMatterAccording?serviceId=F38F91DEA9DCD427FBD3ECD5A17AD931",
+      "method": "GET",
+      "status": 200,
+      "request_id": "66660.127",
+      "observed_timestamp_ms": 1794117972417,
+      "captured_at": "2026-11-08T06:06:13.085362+00:00",
+      "file": "api-getMatterAccording.json",
+      "bytes": 265,
+      "sha256": "fe3d5acd2bcbcef2313148f0e1bb85e177abf1cd3ef9804efd9f7e76f134f2c6",
+      "browser_response_sha256": "fe3d5acd2bcbcef2313148f0e1bb85e177abf1cd3ef9804efd9f7e76f134f2c6",
+      "sanitized_body": false
+    },
+    {
+      "endpoint": "getMatterBasicInfo",
+      "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/getMatterBasicInfo?unid=F38F91DEA9DCD427FBD3ECD5A17AD931&infoType=1",
+      "method": "GET",
+      "status": 200,
+      "request_id": "66660.103",
+      "observed_timestamp_ms": 1794117972411,
+      "captured_at": "2026-11-08T06:06:13.120063+00:00",
+      "file": "api-getMatterBasicInfo.json",
+      "bytes": 7256,
+      "sha256": "6b13b40a2218d03b81f013871e32cef41dc5fc6ad4e6aa58b1902db4953a9140",
+      "browser_response_sha256": "6b13b40a2218d03b81f013871e32cef41dc5fc6ad4e6aa58b1902db4953a9140",
+      "sanitized_body": false
+    },
+    {
+      "endpoint": "getServiceSituation",
+      "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/getServiceSituation?unid=F38F91DEA9DCD427FBD3ECD5A17AD931",
+      "method": "GET",
+      "status": 200,
+      "request_id": "66660.110",
+      "observed_timestamp_ms": 1794117972416,
+      "captured_at": "2026-11-08T06:06:13.159661+00:00",
+      "file": "api-getServiceSituation.json",
+      "bytes": 196,
+      "sha256": "22fd6f0cf44eed48294805a56eca5867d720a4918e09b51afcf2399955be6068",
+      "browser_response_sha256": "22fd6f0cf44eed48294805a56eca5867d720a4918e09b51afcf2399955be6068",
+      "sanitized_body": false
+    },
+    {
+      "endpoint": "getTableInfo",
+      "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/getTableInfo?serviceId=F38F91DEA9DCD427FBD3ECD5A17AD931",
+      "method": "GET",
+      "status": 200,
+      "request_id": "66660.111",
+      "observed_timestamp_ms": 1794117972416,
+      "captured_at": "2026-11-08T06:06:13.197310+00:00",
+      "file": "api-getTableInfo.json",
+      "bytes": 2388,
+      "sha256": "d7cd389348e15f702596282397da2fe8d6d4d2fa5f9b4fe1a38314440492bd83",
+      "browser_response_sha256": "a6e49945fa05fb67809a43a0c4a432906c8bb6d49684cd3005275025c644c15a",
+      "sanitized_body": true
+    }
+  ],
+  "scope": "own public source, no generation registration",
+  "directory_code_provenance": {
+    "checked_at": "2026-11-08T06:11:10.467387+00:00",
+    "scope": {
+      "province": "fujian",
+      "city": "龙岩市",
+      "district": "永定区",
+      "parent_code": "350800"
+    },
+    "existing_directory": {
+      "provider": "national",
+      "code": "350822",
+      "source_url": "https://gjzwfw.www.gov.cn/fwmh/ucGovRegion/findUcGovRegion.do",
+      "directory_sha256": "913daa7dd7bcbec570945fd7cc8ed08ae55b15c50665e5f8f4d967b62fc85ba8",
+      "raw_response_sha256": "682072e770fa97b633b7481a8edecae18cb345b18bd1feb09d089c28cb283eda"
+    },
+    "current_official_directory": {
+      "code": "350803",
+      "source_url": "https://mzt.fujian.gov.cn/gk/tzgg/202607/t20260710_7176497.htm",
+      "observed_row": [
+        "永定区",
+        "350803"
+      ],
+      "dom_row_sha256": "d09688f7d4bf343eea711bed106300611f90b20626ebd182b08486c513d9a5d8",
+      "as_of": "2026-06-30"
+    },
+    "own_service": {
+      "code": "350803",
+      "area_name": "永定区",
+      "service_unid": "F38F91DEA9DCD427FBD3ECD5A17AD931",
+      "authority": "龙岩市永定区人力资源和社会保障局"
+    },
+    "state": "VERIFIED_SOURCE_DIRECTORY_CORRECTION_REQUIRED_BEFORE_PUBLICATION",
+    "production_directory_changed": false
+  }
+}
