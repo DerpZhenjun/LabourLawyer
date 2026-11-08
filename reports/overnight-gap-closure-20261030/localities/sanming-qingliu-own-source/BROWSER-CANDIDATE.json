@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "lookups": [
+    {
+      "code": "350423",
+      "source_id": "e1fcf92db221a6feebb6a287",
+      "version": 1
+    }
+  ],
+  "contracts": [
+    {
+      "code": "350423",
+      "kind": "application",
+      "id": "78cd81da722d933ada888292fdece8859e47f7f1c5d5141f107d5b7d5dc76e92",
+      "template_id": "8E867537A791791398E1E4F0454B5746"
+    }
+  ],
+  "viewports": [
+    [
+      "350423",
+      "application",
+      375
+    ],
+    [
+      "350423",
+      "application",
+      768
+    ],
+    [
+      "350423",
+      "application",
+      1440
+    ]
+  ],
+  "cancels": [
+    [
+      "350423",
+      "application"
+    ]
+  ],
+  "downloads": [
+    {
+      "code": "350423",
+      "kind": "application",
+      "case": "original",
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "zip_parts": 21,
+      "bytes": 13093
+    },
+    {
+      "code": "350423",
+      "kind": "application",
+      "case": "normal",
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+      "zip_parts": 21,
+      "bytes": 11987
+    }
+  ],
+  "blocked": [],
+  "errors": [],
+  "verified_at": "2026-11-08T06:48:20.992451+00:00",
+  "pins": {
+    "350423": {
+      "stage_sha256": "1a6e0d77e77440b6725d0dc9e3495ffef5b24807b4d6760fdb8a5b4dac0f4167",
+      "source_manifest_sha256": "28be1c6fcf51bb3688f57ab5354eefbeac604b4eae5186a1805951587d1a5ab6"
+    }
+  },
+  "native_browser_receipt_sha256": "fbb54af468d350730b5400a067c3db8b499fec89f809dfcb5128395723dad2d5",
+  "publication_approved": false
+}

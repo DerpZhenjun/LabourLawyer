@@ -479,6 +479,18 @@ SANMING_NEXT_THREE_REGIONS = {
         'original_kinds': ('application', 'evidence'),
     },
 }
+SANMING_QINGLIU_REGIONS = {
+    '350423': {
+        'district': '清流县',
+        'city': '三明市',
+        'source_base': LOCALITIES + '/sanming-qingliu-own-source',
+        'source_id': 'e1fcf92db221a6feebb6a287',
+        'source_manifest_sha256': '28be1c6fcf51bb3688f57ab5354eefbeac604b4eae5186a1805951587d1a5ab6',
+        'stage_sha256': '1a6e0d77e77440b6725d0dc9e3495ffef5b24807b4d6760fdb8a5b4dac0f4167',
+        'source_freeze_sha256': 'fedb0e57a60ffe9f7bae07a3110dc8b5ba3ce4daf1060191d10bab452c9b695f',
+        'original_kinds': ('application',),
+    },
+}
 SUPPORTED_REGIONS = {
     **REGIONS,
     **DY_REGIONS,
@@ -497,6 +509,7 @@ SUPPORTED_REGIONS = {
     **FUJIAN_MUNICIPAL_REGIONS,
     **SANMING_YOUXI_REGIONS,
     **SANMING_NEXT_THREE_REGIONS,
+    **SANMING_QINGLIU_REGIONS,
     INVESTMENT_CODE: {
         'district': '台商投资区', 'source_id': 'cf089c0b9ee9b764b564e269',
         'source_manifest_sha256': '297b56b936b8c43d5598c4fc115c26b881936d21fcd3da08722523ca74319fc2',
@@ -544,6 +557,7 @@ _CANDIDATE_PREFLIGHTS = {
             (LONGYAN_NEXT_THREE_BASE, LONGYAN_NEXT_THREE_REGIONS),
             (LOCALITIES + '/sanming-youxi-own-source', SANMING_YOUXI_REGIONS),
             (SANMING_NEXT_THREE_BASE, SANMING_NEXT_THREE_REGIONS),
+            (LOCALITIES + '/sanming-qingliu-own-source', SANMING_QINGLIU_REGIONS),
         )
         for code, profile in regions.items()
     },

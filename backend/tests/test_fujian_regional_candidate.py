@@ -606,3 +606,15 @@ class JiangleCandidateTests(_FujianCandidateChecks, TestCase):
     region = {'province': 'fujian', 'city': '三明市', 'district': '将乐县'}
     source_folder = 'sanming-next-three-own-source/350428'
     foreign_code = '350426'
+
+
+class QingliuCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350423'
+    source_id = 'e1fcf92db221a6feebb6a287'
+    source_version = '28be1c6fcf51bb3688f57ab5354eefbeac604b4eae5186a1805951587d1a5ab6'
+    authority = '清流县人力资源和社会保障局'
+    handling_form = '窗口办，网上办'
+    expected_kinds = {'application'}
+    region = {'province': 'fujian', 'city': '三明市', 'district': '清流县'}
+    source_folder = 'sanming-qingliu-own-source/350423'
+    foreign_code = '350426'
