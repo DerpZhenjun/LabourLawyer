@@ -36,6 +36,16 @@ MUNICIPAL_PROOFS = {
                '0973ffca960b6531140f3f1cb48417c7735df61c77eef3c5db42d0a83b2346fa'),
     '321300': ('suqian', 'f9a85425c18fba9a8f931877ac3149c825df872faf77dda023f3519a9348fbcb',
                '0209c0b4f562dd2a77b748a94fa2972ee50dca88adf8343e227f142249a028d3'),
+    '320100': ('nanjing', '28300a49320ab9d37c1ea86fb90685e6a75781975a9db7d1786e3ed975ebe9a1',
+               '6fdfd3a04c946146e83814c782e97a9373e9cc97ca766a8a9343e68b796717cc'),
+    '320200': ('wuxi', 'd4f79c49f561b21a744c8109216ad7b3e1cad1b75cf7284c3f2b1525dc6e5f6d',
+               'd513ba96f527f071b6435105bf899942dc53dd7e946b0eff562333ff6d383685'),
+    '320400': ('changzhou', '8805e8335bcfdceca46647613d50d615392b17af575afda8a389a21385e3f607',
+               'de3f29cb3cdda7169dae5e08a386cbb6a966554aaec06b413c38e6fd132add39'),
+    '320500': ('suzhou', 'c20af0af3618a92516a5d59773bdb51b2e460c1449d1e8bfc94b290aa44a01eb',
+               'd658606d6664ef843875f085a91563113b579024502ddef8907831d1a9820bb8'),
+    '320600': ('nantong', '7c857ebc72bae9298a98a86b84169b3589b9ef999a7293551b9bb607c961d9c1',
+               '97fad4437bdbbc86693c93077cf082ebb625c533787a8e346374a2608f12d8f0'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -115,6 +125,26 @@ EXACT_SOURCES={
         'b882276a-02d6-49cb-80f6-3b8e26c704fd':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
         '224056b1-b2b2-4abf-9ac4-63c1e700e0aa':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
     }),
+    '320100':('南京市','市本级','d93582141e3316c4c481ffbc',{
+        '726e5815-4417-4e53-8e9e-1f68acbe748a':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        '8b762eb1-770a-47f5-bba3-659ccb4b4df6':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
+    '320200':('无锡市','市本级','7ae202cc5af7b2b8db835c1d',{
+        '597afb1e-1da3-4004-a863-3ce44db8ca2f':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        'ac2cbf44-10a8-4424-a097-97d8aebb85aa':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
+    '320400':('常州市','市本级','9e8d445cba18341a2a84a74a',{
+        '5fbef6ff-26cc-41a3-ba18-ae93a402892d':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        '24b6ad01-aafd-4ce6-b6e2-cd625bad7638':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
+    '320500':('苏州市','市本级','6ee84910096097334c275d64',{
+        'ff27ba51-7f54-4e23-ab80-f0037ba11367':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        'f04db924-03ea-463a-918f-21c926bb23f2':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
+    '320600':('南通市','市本级','c3bef84e98a9d6ca2afe986a',{
+        '5b040d4e-663b-4860-bcef-d8c12cf54741':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        'c8260c13-5490-40f7-9be7-3071bb957c58':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -131,6 +161,11 @@ EXACT_IDENTITIES={
     '321100':('镇江市人力资源和社会保障局','11321100014467082E300201430200201'),
     '321200':('泰州市人力资源和社会保障局','113212000144165255300201430200201'),
     '321300':('宿迁市人力资源和社会保障局','1132130055462291XB300201430200201'),
+    '320100':('南京市人力资源和社会保障局','113201005555063120300201430200201'),
+    '320200':('无锡市人力资源和社会保障局','11320200014008089B300201430200201'),
+    '320400':('常州市人力资源社会保障局','11320400014110315K300201430200201'),
+    '320500':('苏州市人力资源和社会保障局','11320500014152347F300201430200201'),
+    '320600':('南通市人力资源和社会保障局','11320600014207133U300201430200201'),
 }
 
 
