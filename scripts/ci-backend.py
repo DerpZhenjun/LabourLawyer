@@ -76,7 +76,7 @@ TESTS = (
     'test_quanzhou_next4_candidate',
     'test_quanzhou_dehua_yongchun_candidate',
     'test_quanzhou_investment_candidate',
-    'test_zhangzhou_candidate',
+    'test_fujian_regional_candidate',
     'test_regional_fujian_oct31n',
     'test_fujian_oct31n_dispatch',
     'test_fujian_n_client_contract',

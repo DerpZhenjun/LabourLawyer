@@ -1,4 +1,4 @@
-"""Zhangzhou candidates generate only from separately observed local files."""
+"""Fujian candidates generate only from separately observed local files."""
 from hashlib import sha256
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[2]
 LOCALITIES = ROOT / 'reports/overnight-gap-closure-20261030/localities'
 
 
-class _ZhangzhouCandidateChecks:
+class _FujianCandidateChecks:
     def test_candidate_contracts_and_downloads_use_exact_local_lineage(self):
         source = own.production_source(self.code, root=ROOT)
         self.assertEqual(source['source_id'], self.source_id)
@@ -95,7 +95,7 @@ class _ZhangzhouCandidateChecks:
             own.staged_candidate(self.code, root=ROOT)
 
 
-class XiangchengCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+class XiangchengCandidateTests(_FujianCandidateChecks, TestCase):
     code = '350602'
     source_id = 'f8e8351e86b1c41530f16dec'
     source_version = 'f00f84d5e6ed1a90e7d064760966c36735950d2e734c2fa6493db2186956ab41'
@@ -105,7 +105,7 @@ class XiangchengCandidateTests(_ZhangzhouCandidateChecks, TestCase):
     foreign_code = '350526'
 
 
-class LonghaiCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+class LonghaiCandidateTests(_FujianCandidateChecks, TestCase):
     code = '350681'
     source_id = 'ed191bcdf82538767ff7bc25'
     source_version = '60cb15eedb5f3d3fa70c2cd38037c93ab972e3866f530cf9fb65f6c6251bdafc'
@@ -115,7 +115,7 @@ class LonghaiCandidateTests(_ZhangzhouCandidateChecks, TestCase):
     foreign_code = '350602'
 
 
-class PingheCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+class PingheCandidateTests(_FujianCandidateChecks, TestCase):
     code = '350628'
     source_id = '1c435a8e909867d2119efe16'
     source_version = '798eba503cadb717fb74727aaff074c1389a69feed03c577f63642325f36c70d'
@@ -125,7 +125,7 @@ class PingheCandidateTests(_ZhangzhouCandidateChecks, TestCase):
     foreign_code = '350625'
 
 
-class ChangtaiCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+class ChangtaiCandidateTests(_FujianCandidateChecks, TestCase):
     code = '350625'
     source_id = '2ea92c5adb81421b892f2994'
     source_version = '74786aec7221088ada6a7923a38e13b9d74cb9ba042ac877db57211e35f3ae50'
@@ -135,7 +135,7 @@ class ChangtaiCandidateTests(_ZhangzhouCandidateChecks, TestCase):
     foreign_code = '350628'
 
 
-class ZhangpuCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+class ZhangpuCandidateTests(_FujianCandidateChecks, TestCase):
     code = '350623'
     source_id = '48e65b2c27fc105366706caa'
     source_version = 'de8110bb1a971d508bffb8d94c8545d5bef504dee090b55955736105f7ac91ac'
@@ -145,7 +145,7 @@ class ZhangpuCandidateTests(_ZhangzhouCandidateChecks, TestCase):
     foreign_code = '350628'
 
 
-class HuaanCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+class HuaanCandidateTests(_FujianCandidateChecks, TestCase):
     code = '350629'
     source_id = 'd61089df6a682a0affd5d18c'
     source_version = 'd21b0110552ff1568fe6a7b7049faf9df6939f55f651d24191f8b472d1f3dc44'
@@ -155,7 +155,7 @@ class HuaanCandidateTests(_ZhangzhouCandidateChecks, TestCase):
     foreign_code = '350628'
 
 
-class YunxiaoCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+class YunxiaoCandidateTests(_FujianCandidateChecks, TestCase):
     code = '350622'
     source_id = '41be287d59db2eae92eac0f1'
     source_version = '5edc06c82bc94fa0452c3ea8edc3d8d1d9d6ef586bf19f55f5ded5786d860be5'
@@ -165,7 +165,7 @@ class YunxiaoCandidateTests(_ZhangzhouCandidateChecks, TestCase):
     foreign_code = '350624'
 
 
-class ZhaoanCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+class ZhaoanCandidateTests(_FujianCandidateChecks, TestCase):
     code = '350624'
     source_id = '32f582f436d0fcb48afeb66f'
     source_version = '04159ca519d958593a71b8147c0d517268bbbb7f9a82f535b4230a0be31ff7fe'
@@ -175,7 +175,7 @@ class ZhaoanCandidateTests(_ZhangzhouCandidateChecks, TestCase):
     foreign_code = '350622'
 
 
-class NanjingCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+class NanjingCandidateTests(_FujianCandidateChecks, TestCase):
     code = '350627'
     source_id = '6af5580aaa3c66970cd8c61b'
     source_version = 'e2a8449a5f26bed7477dd706167ebcce2137f69fe711eb6335a26f2532ef4477'
@@ -185,7 +185,7 @@ class NanjingCandidateTests(_ZhangzhouCandidateChecks, TestCase):
     foreign_code = '350622'
 
 
-class DongshanCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+class DongshanCandidateTests(_FujianCandidateChecks, TestCase):
     code = '350626'
     source_id = '2a8fc5dd930c86940a551377'
     source_version = 'bce4b0e47eaad6a9508e295e64da4a720ca9d8d06e7252cf46e92be51b1646e3'
@@ -195,7 +195,7 @@ class DongshanCandidateTests(_ZhangzhouCandidateChecks, TestCase):
     foreign_code = '350622'
 
 
-class InvestmentZoneCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+class InvestmentZoneCandidateTests(_FujianCandidateChecks, TestCase):
     code = '350692'
     source_id = 'ba43712a330a421eb5306aed'
     source_version = 'c657a98361f5d3e69af383ffe4a57afc401f5930c729a4227eda52d7e83a263d'
@@ -203,3 +203,43 @@ class InvestmentZoneCandidateTests(_ZhangzhouCandidateChecks, TestCase):
     region = {'province': 'fujian', 'city': '漳州市', 'district': '漳州台商投资区'}
     source_folder = 'zhangzhou-functional-own-source/350692'
     foreign_code = '350599'
+
+
+class JiaochengCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350902'
+    source_id = '0b4a45eb9c9f0624c92bc3dc'
+    source_version = '2612dfc3a4102f564e2cdbe167021ed4e3319804f9a244f8464eca81622bc79c'
+    authority = '蕉城区人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '宁德市', 'district': '蕉城区'}
+    source_folder = 'ningde-first-four-own-source/350902'
+    foreign_code = '350981'
+
+
+class FuanCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350981'
+    source_id = 'aa1e6889629caa4ec08b894b'
+    source_version = 'ff0afc8c38f5fa8dc26f9ad2212a60c5d3f58189b138e93a51510811d90dfd0e'
+    authority = '福安市人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '宁德市', 'district': '福安市'}
+    source_folder = 'ningde-first-four-own-source/350981'
+    foreign_code = '350902'
+
+
+class FudingCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350982'
+    source_id = '837907d624340a4f4b36ea71'
+    source_version = '3a6e28b0cfd9d5b4939720e230e2252b34884e5ac764d2bbd4b4823b382ab3f9'
+    authority = '福鼎市人力资源与社会保障局'
+    region = {'province': 'fujian', 'city': '宁德市', 'district': '福鼎市'}
+    source_folder = 'ningde-first-four-own-source/350982'
+    foreign_code = '350902'
+
+
+class XiapuCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350921'
+    source_id = 'ae035da9c2109496258da1f7'
+    source_version = 'da32d388bf65ec1a2c8b275647c99afcc706a88fe4443d63927fe7fd59442e6d'
+    authority = '霞浦县人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '宁德市', 'district': '霞浦县'}
+    source_folder = 'ningde-first-four-own-source/350921'
+    foreign_code = '350902'

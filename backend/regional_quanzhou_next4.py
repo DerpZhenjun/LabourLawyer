@@ -47,6 +47,7 @@ LONGHAI_SOURCE_FREEZE_SHA256 = '12d06ae95b62ae8482f905e05e79b01cf832f527d308cdaf
 ZHANGZHOU_FOUR_BASE = LOCALITIES + '/zhangzhou-four-own-source'
 ZHANGZHOU_NEXT_FOUR_BASE = LOCALITIES + '/zhangzhou-next-four-own-source'
 ZHANGZHOU_FUNCTIONAL_BASE = LOCALITIES + '/zhangzhou-functional-own-source'
+NINGDE_FIRST_FOUR_BASE = LOCALITIES + '/ningde-first-four-own-source'
 REGIONS = {
     '350582': {
         'district': '晋江市', 'source_id': 'd8353a4bb91532863fb03802',
@@ -159,12 +160,47 @@ ZHANGZHOU_FUNCTIONAL_REGIONS = {
         'original_kinds': ('application', 'evidence'),
     },
 }
+NINGDE_FIRST_FOUR_REGIONS = {
+    '350902': {
+        'district': '蕉城区',
+        'source_id': '0b4a45eb9c9f0624c92bc3dc',
+        'source_manifest_sha256': '2612dfc3a4102f564e2cdbe167021ed4e3319804f9a244f8464eca81622bc79c',
+        'stage_sha256': '3471e2b92c2b08ffae8d8a415f7f4ecf2da778d19e926c1a637763370222efc1',
+        'source_freeze_sha256': '3ebafabde5fd5b0c028fd5d08acec6d2115a2e1ab67ed4787521a301dbd9e891',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350981': {
+        'district': '福安市',
+        'source_id': 'aa1e6889629caa4ec08b894b',
+        'source_manifest_sha256': 'ff0afc8c38f5fa8dc26f9ad2212a60c5d3f58189b138e93a51510811d90dfd0e',
+        'stage_sha256': '52d198f7f88dfe163f72960847fd3120bacbe95d674d2fadbeca436b529619d0',
+        'source_freeze_sha256': 'eeca8b347aff17826dd5e41c3a1413ef6cc2fa2bbde283de4ff93e9a7bf835e7',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350982': {
+        'district': '福鼎市',
+        'source_id': '837907d624340a4f4b36ea71',
+        'source_manifest_sha256': '3a6e28b0cfd9d5b4939720e230e2252b34884e5ac764d2bbd4b4823b382ab3f9',
+        'stage_sha256': 'b7598093c667578a5dcdcc64b09d46482657173f2dad0f0b077c7a4fd76facfc',
+        'source_freeze_sha256': 'bd6bdb9d9f33b6543e21d3c6ac864c0bc49e86c3cef99c231facf3825e9d4832',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350921': {
+        'district': '霞浦县',
+        'source_id': 'ae035da9c2109496258da1f7',
+        'source_manifest_sha256': 'da32d388bf65ec1a2c8b275647c99afcc706a88fe4443d63927fe7fd59442e6d',
+        'stage_sha256': '81a6c4ec9e272fc26e20f3e7c18a54f099042780d586091b66f84adc13fce7ce',
+        'source_freeze_sha256': '150f9120579de439fba621443ed80475e29e5541989ac7b0426469eb1288ce20',
+        'original_kinds': ('application', 'evidence'),
+    },
+}
 SUPPORTED_REGIONS = {
     **REGIONS,
     **DY_REGIONS,
     **ZHANGZHOU_FOUR_REGIONS,
     **ZHANGZHOU_NEXT_FOUR_REGIONS,
     **ZHANGZHOU_FUNCTIONAL_REGIONS,
+    **NINGDE_FIRST_FOUR_REGIONS,
     INVESTMENT_CODE: {
         'district': '台商投资区', 'source_id': 'cf089c0b9ee9b764b564e269',
         'source_manifest_sha256': '297b56b936b8c43d5598c4fc115c26b881936d21fcd3da08722523ca74319fc2',
@@ -194,6 +230,7 @@ _CANDIDATE_PREFLIGHTS = {
             (ZHANGZHOU_FOUR_BASE, ZHANGZHOU_FOUR_REGIONS),
             (ZHANGZHOU_NEXT_FOUR_BASE, ZHANGZHOU_NEXT_FOUR_REGIONS),
             (ZHANGZHOU_FUNCTIONAL_BASE, ZHANGZHOU_FUNCTIONAL_REGIONS),
+            (NINGDE_FIRST_FOUR_BASE, NINGDE_FIRST_FOUR_REGIONS),
         )
         for code, profile in regions.items()
     },

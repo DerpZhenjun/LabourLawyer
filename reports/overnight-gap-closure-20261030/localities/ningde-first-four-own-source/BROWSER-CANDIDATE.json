@@ -1,0 +1,384 @@
+{
+  "status": "PASS",
+  "lookups": [
+    {
+      "code": "350902",
+      "source_id": "0b4a45eb9c9f0624c92bc3dc",
+      "version": 1
+    },
+    {
+      "code": "350981",
+      "source_id": "aa1e6889629caa4ec08b894b",
+      "version": 2
+    },
+    {
+      "code": "350982",
+      "source_id": "837907d624340a4f4b36ea71",
+      "version": 3
+    },
+    {
+      "code": "350921",
+      "source_id": "ae035da9c2109496258da1f7",
+      "version": 4
+    }
+  ],
+  "contracts": [
+    {
+      "code": "350902",
+      "kind": "application",
+      "id": "ba6ef2ff716726ad731ab0d46fcc8697fc0be5672ec785217677e208363d5f4d",
+      "template_id": "DEBE1811BC013E0B9BCE3013FFE4FB11"
+    },
+    {
+      "code": "350902",
+      "kind": "evidence",
+      "id": "57ba655a2d683ae6dece26e5259290e2ef5b8cc2d9d84d9323606c54ec79ed80",
+      "template_id": "AB39681593DDA9536726F4ED7AE9CD8C"
+    },
+    {
+      "code": "350981",
+      "kind": "application",
+      "id": "38b79c08935708b0507720bbade4cf18645c4eea236f6ff75a6f7a97751f06ba",
+      "template_id": "69B82A8DF3DDB86F5B95FAECA19C694D"
+    },
+    {
+      "code": "350981",
+      "kind": "evidence",
+      "id": "4d52b52a42e0bd70c1e85ddaca5c98eae6be9d958a542f9423bcc3b2c45596a9",
+      "template_id": "97C4924BE251D57C2C8B0AFA412068E2"
+    },
+    {
+      "code": "350982",
+      "kind": "application",
+      "id": "e54c32c7f7e14bfc0c94a629e9b673ef0db64d83a3c8b0a0eabde66a4af3def9",
+      "template_id": "1705FDFDBF49F196C1254C6E24B786CE"
+    },
+    {
+      "code": "350982",
+      "kind": "evidence",
+      "id": "73648b81f45be4252dddf70661b4d8663c864572344969ad8285dd899d4ee2d5",
+      "template_id": "56471F7EC0C6096B1FBB8605D9492B34"
+    },
+    {
+      "code": "350921",
+      "kind": "application",
+      "id": "c1ad96e0b295c744f14ce0e620427e6b4991f7ccec616914ccf9bb53a4952d3a",
+      "template_id": "DC8409D477BFAD6F909B821A0D02DCE9"
+    },
+    {
+      "code": "350921",
+      "kind": "evidence",
+      "id": "b4f7e9a3b56cd99c398506986aa2ee082879d20d93b5d776cb7844896101336d",
+      "template_id": "66A8E14822F907AE9DC447A13BB0381D"
+    }
+  ],
+  "viewports": [
+    [
+      "350902",
+      "application",
+      375
+    ],
+    [
+      "350902",
+      "application",
+      768
+    ],
+    [
+      "350902",
+      "application",
+      1440
+    ],
+    [
+      "350902",
+      "evidence",
+      375
+    ],
+    [
+      "350902",
+      "evidence",
+      768
+    ],
+    [
+      "350902",
+      "evidence",
+      1440
+    ],
+    [
+      "350981",
+      "application",
+      375
+    ],
+    [
+      "350981",
+      "application",
+      768
+    ],
+    [
+      "350981",
+      "application",
+      1440
+    ],
+    [
+      "350981",
+      "evidence",
+      375
+    ],
+    [
+      "350981",
+      "evidence",
+      768
+    ],
+    [
+      "350981",
+      "evidence",
+      1440
+    ],
+    [
+      "350982",
+      "application",
+      375
+    ],
+    [
+      "350982",
+      "application",
+      768
+    ],
+    [
+      "350982",
+      "application",
+      1440
+    ],
+    [
+      "350982",
+      "evidence",
+      375
+    ],
+    [
+      "350982",
+      "evidence",
+      768
+    ],
+    [
+      "350982",
+      "evidence",
+      1440
+    ],
+    [
+      "350921",
+      "application",
+      375
+    ],
+    [
+      "350921",
+      "application",
+      768
+    ],
+    [
+      "350921",
+      "application",
+      1440
+    ],
+    [
+      "350921",
+      "evidence",
+      375
+    ],
+    [
+      "350921",
+      "evidence",
+      768
+    ],
+    [
+      "350921",
+      "evidence",
+      1440
+    ]
+  ],
+  "cancels": [
+    [
+      "350902",
+      "application"
+    ],
+    [
+      "350902",
+      "evidence"
+    ],
+    [
+      "350981",
+      "application"
+    ],
+    [
+      "350981",
+      "evidence"
+    ],
+    [
+      "350982",
+      "application"
+    ],
+    [
+      "350982",
+      "evidence"
+    ],
+    [
+      "350921",
+      "application"
+    ],
+    [
+      "350921",
+      "evidence"
+    ]
+  ],
+  "downloads": [
+    {
+      "code": "350902",
+      "kind": "application",
+      "case": "original",
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "zip_parts": 21,
+      "bytes": 13093
+    },
+    {
+      "code": "350902",
+      "kind": "application",
+      "case": "normal",
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+      "zip_parts": 21,
+      "bytes": 11987
+    },
+    {
+      "code": "350902",
+      "kind": "evidence",
+      "case": "original",
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "zip_parts": 25,
+      "bytes": 18887
+    },
+    {
+      "code": "350902",
+      "kind": "evidence",
+      "case": "normal",
+      "sha256": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a",
+      "zip_parts": 25,
+      "bytes": 16699
+    },
+    {
+      "code": "350981",
+      "kind": "application",
+      "case": "original",
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "zip_parts": 21,
+      "bytes": 13093
+    },
+    {
+      "code": "350981",
+      "kind": "application",
+      "case": "normal",
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+      "zip_parts": 21,
+      "bytes": 11987
+    },
+    {
+      "code": "350981",
+      "kind": "evidence",
+      "case": "original",
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "zip_parts": 25,
+      "bytes": 18887
+    },
+    {
+      "code": "350981",
+      "kind": "evidence",
+      "case": "normal",
+      "sha256": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a",
+      "zip_parts": 25,
+      "bytes": 16699
+    },
+    {
+      "code": "350982",
+      "kind": "application",
+      "case": "original",
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "zip_parts": 21,
+      "bytes": 13093
+    },
+    {
+      "code": "350982",
+      "kind": "application",
+      "case": "normal",
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+      "zip_parts": 21,
+      "bytes": 11987
+    },
+    {
+      "code": "350982",
+      "kind": "evidence",
+      "case": "original",
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "zip_parts": 25,
+      "bytes": 18887
+    },
+    {
+      "code": "350982",
+      "kind": "evidence",
+      "case": "normal",
+      "sha256": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a",
+      "zip_parts": 25,
+      "bytes": 16699
+    },
+    {
+      "code": "350921",
+      "kind": "application",
+      "case": "original",
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "zip_parts": 21,
+      "bytes": 13093
+    },
+    {
+      "code": "350921",
+      "kind": "application",
+      "case": "normal",
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+      "zip_parts": 21,
+      "bytes": 11987
+    },
+    {
+      "code": "350921",
+      "kind": "evidence",
+      "case": "original",
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "zip_parts": 25,
+      "bytes": 18887
+    },
+    {
+      "code": "350921",
+      "kind": "evidence",
+      "case": "normal",
+      "sha256": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a",
+      "zip_parts": 25,
+      "bytes": 16699
+    }
+  ],
+  "blocked": [],
+  "errors": [],
+  "verified_at": "2026-11-08T05:31:21.443053+00:00",
+  "pins": {
+    "350902": {
+      "stage_sha256": "3471e2b92c2b08ffae8d8a415f7f4ecf2da778d19e926c1a637763370222efc1",
+      "source_manifest_sha256": "2612dfc3a4102f564e2cdbe167021ed4e3319804f9a244f8464eca81622bc79c"
+    },
+    "350981": {
+      "stage_sha256": "52d198f7f88dfe163f72960847fd3120bacbe95d674d2fadbeca436b529619d0",
+      "source_manifest_sha256": "ff0afc8c38f5fa8dc26f9ad2212a60c5d3f58189b138e93a51510811d90dfd0e"
+    },
+    "350982": {
+      "stage_sha256": "b7598093c667578a5dcdcc64b09d46482657173f2dad0f0b077c7a4fd76facfc",
+      "source_manifest_sha256": "3a6e28b0cfd9d5b4939720e230e2252b34884e5ac764d2bbd4b4823b382ab3f9"
+    },
+    "350921": {
+      "stage_sha256": "81a6c4ec9e272fc26e20f3e7c18a54f099042780d586091b66f84adc13fce7ce",
+      "source_manifest_sha256": "da32d388bf65ec1a2c8b275647c99afcc706a88fe4443d63927fe7fd59442e6d"
+    }
+  },
+  "native_browser_receipt_sha256": "38b1e5c8053bc8556c9d7eab1206d5fed4322ce9b5368c32d8464c596e805505",
+  "publication_approved": false
+}
