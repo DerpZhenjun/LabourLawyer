@@ -1,0 +1,343 @@
+{
+  "status": "PASS",
+  "lookups": [
+    {
+      "code": "350203",
+      "source_id": "344a290c8ef651a27389ed99",
+      "version": 1
+    },
+    {
+      "code": "350206",
+      "source_id": "72f29a0f432cbb59fe6e1eb3",
+      "version": 2
+    },
+    {
+      "code": "350211",
+      "source_id": "6f719c328875cd3cd16646ff",
+      "version": 3
+    },
+    {
+      "code": "350205",
+      "source_id": "59e32cc0aee11a28de7c607f",
+      "version": 4
+    }
+  ],
+  "contracts": [
+    {
+      "code": "350203",
+      "kind": "application",
+      "id": "f66903ff35d62bbfe5b330f0a382d3b1a61ee8a97bec47764fed5643cb2e2376",
+      "template_id": "03CB4CADC6648FB630F0E730BAE871DD"
+    },
+    {
+      "code": "350203",
+      "kind": "evidence",
+      "id": "972e15a1ddbd2c22a5ef4bf2159afc1bfd404729a63023e665add0056dc5f816",
+      "template_id": "09BBA73D92B7A3507E9ED69FE1A1F34A"
+    },
+    {
+      "code": "350206",
+      "kind": "application",
+      "id": "b4462f628bcc879a75c07765db1ed925fb6960dbc8fc993bf9c84dc9bb69fbd0",
+      "template_id": "FE60E3B2BE4EEA344B11B2A7F9524947"
+    },
+    {
+      "code": "350206",
+      "kind": "evidence",
+      "id": "0af244a6c9236867c85ff5f0089a6f20406973b78005fba88e69eca33499b641",
+      "template_id": "BF13A2C485BAE1466DB0A518C9263915"
+    },
+    {
+      "code": "350211",
+      "kind": "application",
+      "id": "9e099c7e1571903075003560e589dc12a9e100602c3ca59251f5dd59c90cf2f0",
+      "template_id": "A66180CFD47A5914440ACCB954677530"
+    },
+    {
+      "code": "350211",
+      "kind": "evidence",
+      "id": "87fd5c31d35112351557e2a8589ec26c92c12c7ac4421755af28b524551b0a63",
+      "template_id": "9DC6700FA78C3C5E9CBA88CB16F0B767"
+    },
+    {
+      "code": "350205",
+      "kind": "application",
+      "id": "566b0b33de0e080d8970cdf9e9b8ed8b9e56ec984b2c48f84d7f944e51fd03f4",
+      "template_id": "ABC9CCD9C87C28BC8FE14FE0A9F87D11"
+    }
+  ],
+  "viewports": [
+    [
+      "350203",
+      "application",
+      375
+    ],
+    [
+      "350203",
+      "application",
+      768
+    ],
+    [
+      "350203",
+      "application",
+      1440
+    ],
+    [
+      "350203",
+      "evidence",
+      375
+    ],
+    [
+      "350203",
+      "evidence",
+      768
+    ],
+    [
+      "350203",
+      "evidence",
+      1440
+    ],
+    [
+      "350206",
+      "application",
+      375
+    ],
+    [
+      "350206",
+      "application",
+      768
+    ],
+    [
+      "350206",
+      "application",
+      1440
+    ],
+    [
+      "350206",
+      "evidence",
+      375
+    ],
+    [
+      "350206",
+      "evidence",
+      768
+    ],
+    [
+      "350206",
+      "evidence",
+      1440
+    ],
+    [
+      "350211",
+      "application",
+      375
+    ],
+    [
+      "350211",
+      "application",
+      768
+    ],
+    [
+      "350211",
+      "application",
+      1440
+    ],
+    [
+      "350211",
+      "evidence",
+      375
+    ],
+    [
+      "350211",
+      "evidence",
+      768
+    ],
+    [
+      "350211",
+      "evidence",
+      1440
+    ],
+    [
+      "350205",
+      "application",
+      375
+    ],
+    [
+      "350205",
+      "application",
+      768
+    ],
+    [
+      "350205",
+      "application",
+      1440
+    ]
+  ],
+  "cancels": [
+    [
+      "350203",
+      "application"
+    ],
+    [
+      "350203",
+      "evidence"
+    ],
+    [
+      "350206",
+      "application"
+    ],
+    [
+      "350206",
+      "evidence"
+    ],
+    [
+      "350211",
+      "application"
+    ],
+    [
+      "350211",
+      "evidence"
+    ],
+    [
+      "350205",
+      "application"
+    ]
+  ],
+  "downloads": [
+    {
+      "code": "350203",
+      "kind": "application",
+      "case": "original",
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "zip_parts": 21,
+      "bytes": 13093
+    },
+    {
+      "code": "350203",
+      "kind": "application",
+      "case": "normal",
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+      "zip_parts": 21,
+      "bytes": 11987
+    },
+    {
+      "code": "350203",
+      "kind": "evidence",
+      "case": "original",
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "zip_parts": 25,
+      "bytes": 18887
+    },
+    {
+      "code": "350203",
+      "kind": "evidence",
+      "case": "normal",
+      "sha256": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a",
+      "zip_parts": 25,
+      "bytes": 16699
+    },
+    {
+      "code": "350206",
+      "kind": "application",
+      "case": "original",
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "zip_parts": 21,
+      "bytes": 13093
+    },
+    {
+      "code": "350206",
+      "kind": "application",
+      "case": "normal",
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+      "zip_parts": 21,
+      "bytes": 11987
+    },
+    {
+      "code": "350206",
+      "kind": "evidence",
+      "case": "original",
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "zip_parts": 25,
+      "bytes": 18887
+    },
+    {
+      "code": "350206",
+      "kind": "evidence",
+      "case": "normal",
+      "sha256": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a",
+      "zip_parts": 25,
+      "bytes": 16699
+    },
+    {
+      "code": "350211",
+      "kind": "application",
+      "case": "original",
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "zip_parts": 21,
+      "bytes": 13093
+    },
+    {
+      "code": "350211",
+      "kind": "application",
+      "case": "normal",
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+      "zip_parts": 21,
+      "bytes": 11987
+    },
+    {
+      "code": "350211",
+      "kind": "evidence",
+      "case": "original",
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "zip_parts": 25,
+      "bytes": 18887
+    },
+    {
+      "code": "350211",
+      "kind": "evidence",
+      "case": "normal",
+      "sha256": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a",
+      "zip_parts": 25,
+      "bytes": 16699
+    },
+    {
+      "code": "350205",
+      "kind": "application",
+      "case": "original",
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "zip_parts": 21,
+      "bytes": 13093
+    },
+    {
+      "code": "350205",
+      "kind": "application",
+      "case": "normal",
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+      "zip_parts": 21,
+      "bytes": 11987
+    }
+  ],
+  "blocked": [],
+  "errors": [],
+  "verified_at": "2026-11-08T07:19:51.605746+00:00",
+  "pins": {
+    "350203": {
+      "stage_sha256": "4dd076bd1a2fe5548c4b83ff61d21c497365598309bd09dead22f46d70740cab",
+      "source_manifest_sha256": "a38b0e084d3bdd4164b811c406af8866312256c2eb4aa4731618090f98efbb8a"
+    },
+    "350206": {
+      "stage_sha256": "755cfda4efa87624bb09379a98f48a0a0693ae92ba5b6c02dedff0da511e7284",
+      "source_manifest_sha256": "410d2985e0d923b65ec362a8856df41f6a1d71b9050b71e1c2b87b95601c2955"
+    },
+    "350211": {
+      "stage_sha256": "513eaa29b509761e09887a1e5e4e0ded0ab4552b608e86fbba10ffbb57fd1c8d",
+      "source_manifest_sha256": "752f2cdb03e972f0eacc2eac96052fc79fb7914d7b28263887e7fcd0338834be"
+    },
+    "350205": {
+      "stage_sha256": "c6a3ae87faec28a733c9b413e3c67fcac257d1c7b87fb5a5ac583ecaa89f3259",
+      "source_manifest_sha256": "bd61ba685b94c9e1197f24a28a630364e50934dadb0449dc29c0aefa49abe5e8"
+    }
+  },
+  "native_browser_receipt_sha256": "20a20eccb184406149457a094fc679fc6b111fad7dacc84c6585ba1be42cfd1a",
+  "publication_approved": false
+}

@@ -51,7 +51,8 @@ class _FujianCandidateChecks:
                 eligible = {t['eligible_own_kind']: t for t in guide['templates'] if t['can_generate']}
                 self.assertEqual(set(eligible), self.expected_kinds)
                 if 'evidence' not in self.expected_kinds:
-                    blocked_evidence = [t for t in guide['templates'] if t['official_label'].startswith('证据清单')]
+                    evidence_material, = [m['material_id'] for m in guide['materials'] if m['name'] == '证据清单']
+                    blocked_evidence = [t for t in guide['templates'] if t['material_id'] == evidence_material]
                     self.assertEqual(len(blocked_evidence), 2)
                     for blocked in blocked_evidence:
                         evidence_query = {**self.region, 'source_id': self.source_id, 'version': guide['version'],
@@ -628,3 +629,48 @@ class JianningCandidateTests(_FujianCandidateChecks, TestCase):
     region = {'province': 'fujian', 'city': '三明市', 'district': '建宁县'}
     source_folder = 'sanming-jianning-own-source/350430'
     foreign_code = '350426'
+
+
+class SimingCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350203'
+    source_id = '344a290c8ef651a27389ed99'
+    source_version = 'a38b0e084d3bdd4164b811c406af8866312256c2eb4aa4731618090f98efbb8a'
+    authority = '厦门市思明区人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '厦门市', 'district': '思明区'}
+    source_folder = 'xiamen-first-four-own-source/350203'
+    foreign_code = '350430'
+
+
+class HuliCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350206'
+    source_id = '72f29a0f432cbb59fe6e1eb3'
+    source_version = '410d2985e0d923b65ec362a8856df41f6a1d71b9050b71e1c2b87b95601c2955'
+    authority = '厦门市湖里区人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '厦门市', 'district': '湖里区'}
+    source_folder = 'xiamen-first-four-own-source/350206'
+    foreign_code = '350430'
+
+
+class JimeiCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350211'
+    source_id = '6f719c328875cd3cd16646ff'
+    source_version = '752f2cdb03e972f0eacc2eac96052fc79fb7914d7b28263887e7fcd0338834be'
+    authority = '厦门市集美区人力资源和社会保障局'
+    handling_form = '窗口办，网上办'
+    region = {'province': 'fujian', 'city': '厦门市', 'district': '集美区'}
+    source_folder = 'xiamen-first-four-own-source/350211'
+    foreign_code = '350430'
+
+
+class HaicangCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350205'
+    source_id = '59e32cc0aee11a28de7c607f'
+    source_version = 'bd61ba685b94c9e1197f24a28a630364e50934dadb0449dc29c0aefa49abe5e8'
+    authority = '厦门市海沧区人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '厦门市', 'district': '海沧区'}
+    source_folder = 'xiamen-haicang-own-source/350205'
+    foreign_code = '350430'
+    expected_kinds = {'application'}

@@ -503,6 +503,48 @@ SANMING_JIANNING_REGIONS = {
         'original_kinds': ('application', 'evidence'),
     },
 }
+XIAMEN_FIRST_FOUR_REGIONS = {
+    '350203': {
+        'district': '思明区',
+        'city': '厦门市',
+        'source_base': LOCALITIES + '/xiamen-first-four-own-source',
+        'source_id': '344a290c8ef651a27389ed99',
+        'source_manifest_sha256': 'a38b0e084d3bdd4164b811c406af8866312256c2eb4aa4731618090f98efbb8a',
+        'stage_sha256': '4dd076bd1a2fe5548c4b83ff61d21c497365598309bd09dead22f46d70740cab',
+        'source_freeze_sha256': '8d9dfce6ee50d887bfd180337af665480b78ec0a41ada36cdf3e2112919864d7',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350206': {
+        'district': '湖里区',
+        'city': '厦门市',
+        'source_base': LOCALITIES + '/xiamen-first-four-own-source',
+        'source_id': '72f29a0f432cbb59fe6e1eb3',
+        'source_manifest_sha256': '410d2985e0d923b65ec362a8856df41f6a1d71b9050b71e1c2b87b95601c2955',
+        'stage_sha256': '755cfda4efa87624bb09379a98f48a0a0693ae92ba5b6c02dedff0da511e7284',
+        'source_freeze_sha256': '25ac327bbe9f3eaae6fd01c10735c0687559ea30462d1ae4a749ae145c89dc35',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350211': {
+        'district': '集美区',
+        'city': '厦门市',
+        'source_base': LOCALITIES + '/xiamen-first-four-own-source',
+        'source_id': '6f719c328875cd3cd16646ff',
+        'source_manifest_sha256': '752f2cdb03e972f0eacc2eac96052fc79fb7914d7b28263887e7fcd0338834be',
+        'stage_sha256': '513eaa29b509761e09887a1e5e4e0ded0ab4552b608e86fbba10ffbb57fd1c8d',
+        'source_freeze_sha256': '5c2688657a77119961fe0f77c5a4875cd060410e986198fc894a6edb6ab2264e',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350205': {
+        'district': '海沧区',
+        'city': '厦门市',
+        'source_base': LOCALITIES + '/xiamen-haicang-own-source',
+        'source_id': '59e32cc0aee11a28de7c607f',
+        'source_manifest_sha256': 'bd61ba685b94c9e1197f24a28a630364e50934dadb0449dc29c0aefa49abe5e8',
+        'stage_sha256': 'c6a3ae87faec28a733c9b413e3c67fcac257d1c7b87fb5a5ac583ecaa89f3259',
+        'source_freeze_sha256': '6542ff9c2e6a4e587d90cf7d4612ded5cec792cfce736b67457871afabf1d417',
+        'original_kinds': ('application',),
+    },
+}
 SUPPORTED_REGIONS = {
     **REGIONS,
     **DY_REGIONS,
@@ -523,6 +565,7 @@ SUPPORTED_REGIONS = {
     **SANMING_NEXT_THREE_REGIONS,
     **SANMING_QINGLIU_REGIONS,
     **SANMING_JIANNING_REGIONS,
+    **XIAMEN_FIRST_FOUR_REGIONS,
     INVESTMENT_CODE: {
         'district': '台商投资区', 'source_id': 'cf089c0b9ee9b764b564e269',
         'source_manifest_sha256': '297b56b936b8c43d5598c4fc115c26b881936d21fcd3da08722523ca74319fc2',
@@ -545,7 +588,7 @@ _CANDIDATE_PREFLIGHTS = {
             profile['source_base'], f"{profile['source_base']}/{code}/WORD-PREFLIGHT.json",
             profile['stage_sha256'], profile['source_freeze_sha256'],
         )
-        for code, profile in FUJIAN_MUNICIPAL_REGIONS.items()
+        for code, profile in {**FUJIAN_MUNICIPAL_REGIONS, **XIAMEN_FIRST_FOUR_REGIONS}.items()
     },
     INVESTMENT_CODE: (INVESTMENT_BASE, INVESTMENT_STAGE_RECEIPT, INVESTMENT_STAGE_SHA256, INVESTMENT_SOURCE_FREEZE_SHA256),
     XIANGCHENG_CODE: (XIANGCHENG_BASE, XIANGCHENG_STAGE_RECEIPT, XIANGCHENG_STAGE_SHA256, XIANGCHENG_SOURCE_FREEZE_SHA256),
