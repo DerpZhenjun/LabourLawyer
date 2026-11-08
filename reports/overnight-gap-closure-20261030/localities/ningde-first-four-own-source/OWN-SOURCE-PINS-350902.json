@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "3ebafabde5fd5b0c028fd5d08acec6d2115a2e1ab67ed4787521a301dbd9e891",
+  "regions": {
+    "350902": {
+      "region_code": "350902",
+      "district": "蕉城区",
+      "directory_city": "宁德市",
+      "source_id": "0b4a45eb9c9f0624c92bc3dc",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=540F3CDBBEBF2B06B36FF5906283FE8F",
+      "service_unid": "540F3CDBBEBF2B06B36FF5906283FE8F",
+      "service_code": "11352201004022418D400201430200201",
+      "authority": "蕉城区人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "2612dfc3a4102f564e2cdbe167021ed4e3319804f9a244f8464eca81622bc79c"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

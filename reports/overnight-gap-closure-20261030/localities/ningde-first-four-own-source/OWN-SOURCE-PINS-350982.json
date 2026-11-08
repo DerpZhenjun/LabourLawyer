@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "bd6bdb9d9f33b6543e21d3c6ac864c0bc49e86c3cef99c231facf3825e9d4832",
+  "regions": {
+    "350982": {
+      "region_code": "350982",
+      "district": "福鼎市",
+      "directory_city": "宁德市",
+      "source_id": "837907d624340a4f4b36ea71",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=4D9B9369666610E7F4ADD4BBD4ABB9D4",
+      "service_unid": "4D9B9369666610E7F4ADD4BBD4ABB9D4",
+      "service_code": "11352203004035163C400201430200201",
+      "authority": "福鼎市人力资源与社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "3a6e28b0cfd9d5b4939720e230e2252b34884e5ac764d2bbd4b4823b382ab3f9"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "eeca8b347aff17826dd5e41c3a1413ef6cc2fa2bbde283de4ff93e9a7bf835e7",
+  "regions": {
+    "350981": {
+      "region_code": "350981",
+      "district": "福安市",
+      "directory_city": "宁德市",
+      "source_id": "aa1e6889629caa4ec08b894b",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=A01E9E60CD04988066D976AA72CBD8E1",
+      "service_unid": "A01E9E60CD04988066D976AA72CBD8E1",
+      "service_code": "11352202004028799K400201430200Y01",
+      "authority": "福安市人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "ff0afc8c38f5fa8dc26f9ad2212a60c5d3f58189b138e93a51510811d90dfd0e"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
