@@ -25,6 +25,10 @@ DY_BASE = LOCALITIES + '/quanzhou-dehua-yongchun-own-source'
 DY_STAGE_RECEIPT = DY_BASE + '/WORD-PREFLIGHT.json'
 DY_STAGE_SHA256 = 'e5c0a48a53e0b4b96b30f9e8acfd7dc545654e274e9b22a5e5eefa766dc3fa40'
 DY_SOURCE_FREEZE_SHA256 = '3eb5d587708c2e420bf91e7320ac4e661215ce6ab26fa7bd3fe1ad8505a57781'
+DY_BROWSER_RECEIPT = DY_BASE + '/BROWSER-CANDIDATE.json'
+DY_BROWSER_SHA256 = '9669479f5e1e0a7f6f3e5ffef23dbc458efc57bb13080177188b5973ef831f54'
+DY_PUBLICATION_RECEIPT = DY_BASE + '/FINAL-PUBLICATION.json'
+DY_PUBLICATION_SHA256 = 'c88b22b572422a4630eff6be9c1403eae6296f3daf55b1b377952c4ec18b279c'
 REGIONS = {
     '350582': {
         'district': '晋江市', 'source_id': 'd8353a4bb91532863fb03802',
@@ -195,6 +199,7 @@ def _dy_staged_guide(guide, *, root):
              and receipt['source_freeze_sha256'] == DY_SOURCE_FREEZE_SHA256
              and receipt['published'] is False and receipt['adapter_registered'] is False
              and receipt['web_accepted'] is False and len(receipt['records']) == 12)
+    forms = []
     for template in guide['templates']:
         if not template['source_original_eligible']:
             continue
@@ -206,12 +211,17 @@ def _dy_staged_guide(guide, *, root):
                      and row['template_sha256'] == template['sha256'] for row in matches))
         _require(next(row['sha256'] for row in matches if row['case'] == 'original') == template['sha256'])
         template.update(can_generate=True, adapter=ADAPTER, document_types=[kind], generation_mode='blank')
+        forms.append({'region_code': guide['region_code'], 'kind': kind, 'source_id': guide['source_id'],
+                      'template_id': template['id'], 'sha256': {row['case']: row['sha256'] for row in matches}})
     _mark_candidate(guide, DY_STAGE_RECEIPT, DY_STAGE_SHA256, receipt['verified_at'])
-    return guide, []
+    return guide, forms
 
 
 def published_guide(code, *, root):
-    _require(type(code) is str and code in REGIONS and PUBLICATION_SHA256 is not None)
+    _require(type(code) is str and code in SUPPORTED_REGIONS)
+    if code in DY_REGIONS:
+        return _dy_published_guide(code, root=root)
+    _require(PUBLICATION_SHA256 is not None)
     raw = _read(root, PUBLICATION_RECEIPT)
     _require(sha256(raw).hexdigest() == PUBLICATION_SHA256)
     _require(sha256(_read(root, BROWSER_RECEIPT)).hexdigest() == BROWSER_SHA256)
@@ -223,13 +233,32 @@ def published_guide(code, *, root):
              and receipt['browser_downloads'] == 14 and receipt['word_cases'] == 21
              and receipt['viewports'] == 21 and receipt['cancellations'] == 7
              and receipt['stone_evidence_enabled'] is False and len(receipt['forms']) == 7)
+    return _promote_reviewed(code, receipt, PUBLICATION_RECEIPT, PUBLICATION_SHA256, root=root)
+
+
+def _dy_published_guide(code, *, root):
+    _require(DY_PUBLICATION_SHA256 is not None)
+    raw = _read(root, DY_PUBLICATION_RECEIPT)
+    _require(sha256(raw).hexdigest() == DY_PUBLICATION_SHA256)
+    _require(sha256(_read(root, DY_BROWSER_RECEIPT)).hexdigest() == DY_BROWSER_SHA256)
+    receipt = strict_json(raw)
+    _require(receipt['state'] == 'INDEPENDENT_NATIVE_AND_WORD_PARITY_APPROVED'
+             and receipt['schema_version'] == 1 and receipt['stage_sha256'] == DY_STAGE_SHA256
+             and receipt['browser_sha256'] == DY_BROWSER_SHA256
+             and receipt['source_manifests'] == {c: p['source_manifest_sha256'] for c, p in DY_REGIONS.items()}
+             and receipt['browser_downloads'] == 8 and receipt['word_cases'] == 12
+             and receipt['viewports'] == 12 and receipt['cancellations'] == 4 and len(receipt['forms']) == 4)
+    return _promote_reviewed(code, receipt, DY_PUBLICATION_RECEIPT, DY_PUBLICATION_SHA256, root=root)
+
+
+def _promote_reviewed(code, receipt, file, pin, *, root):
     guide, verified_forms = _staged_guide(code, root=root)
     approved_forms = [form for form in receipt['forms'] if form['region_code'] == code]
     _require(exact(sorted(approved_forms, key=lambda form: form['kind']),
                    sorted(verified_forms, key=lambda form: form['kind'])))
     guide.update(published=True, publication_status='published', registration_status='OWN_FORM_APPROVED',
                  verified_at=receipt['reviewed_at'],
-                 publication_adapter_evidence={'file': PUBLICATION_RECEIPT, 'sha256': PUBLICATION_SHA256})
+                 publication_adapter_evidence={'file': file, 'sha256': pin})
     return guide
 
 

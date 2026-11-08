@@ -85,7 +85,7 @@ class DehuaYongchunCandidateTests(TestCase):
         for code in CASES:
             source = own.production_source(code, root=ROOT)
             self.assertFalse(source['can_generate'])
-            with self.assertRaises(ValueError):
+            with patch.object(own, 'DY_PUBLICATION_SHA256', None), self.assertRaises(ValueError):
                 own.published_guide(code, root=ROOT)
             with self.assertRaises(ValueError):
                 own.with_capabilities({**source, 'can_generate': True}, root=ROOT)
@@ -98,3 +98,21 @@ class DehuaYongchunCandidateTests(TestCase):
                 return content + b' ' if name.endswith('/WORD-PREFLIGHT.json') else content
             with patch.object(own, '_read', side_effect=tamper), self.assertRaises(ValueError):
                 own.staged_candidate(code, root=ROOT)
+
+    def test_published_guide_requires_its_own_review_and_browser_receipts(self):
+        for code, (_, sid, _) in CASES.items():
+            with self.subTest(region=code):
+                approved = own.published_guide(code, root=ROOT)
+                self.assertTrue(approved['published'])
+                self.assertEqual(approved['source_id'], sid)
+                self.assertEqual(approved['publication_adapter_evidence']['sha256'], own.DY_PUBLICATION_SHA256)
+                self.assertEqual(routes.release_capabilities()['locality_publication_receipts'][code],
+                                 own.DY_PUBLICATION_SHA256)
+                self.assertEqual(sum(t['can_generate'] for t in approved['templates']), 2)
+                with patch.object(own, 'DY_PUBLICATION_SHA256', own.PUBLICATION_SHA256), self.assertRaises(ValueError):
+                    own.published_guide(code, root=ROOT)
+                for name in (own.DY_PUBLICATION_RECEIPT, own.DY_BROWSER_RECEIPT):
+                    read = own._read
+                    with patch.object(own, '_read', side_effect=lambda root, file: read(root, file) + (b' ' if file == name else b'')):
+                        with self.assertRaises(ValueError):
+                            own.published_guide(code, root=ROOT)

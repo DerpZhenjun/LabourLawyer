@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-08T04:09:20.296452+00:00",
+  "state": "INDEPENDENT_NATIVE_AND_WORD_PARITY_APPROVED",
+  "stage_sha256": "e5c0a48a53e0b4b96b30f9e8acfd7dc545654e274e9b22a5e5eefa766dc3fa40",
+  "browser_sha256": "9669479f5e1e0a7f6f3e5ffef23dbc458efc57bb13080177188b5973ef831f54",
+  "reference_word_manifest_sha256": "113e12ddec99ef1c528f65618c2b2bbf32b1c642e424c540e525af29b539246f",
+  "source_manifests": {
+    "350526": "983353486646af7070909393be75730aa7de42a127dec79e464695878f4605da",
+    "350525": "c535d2d00bb7e8a47dfad8d0c368774e607ac4897bd20cfaf04b55d7c162fb30"
+  },
+  "forms": [
+    {
+      "region_code": "350526",
+      "kind": "application",
+      "source_id": "286f2f5801a4ad101b464ff7",
+      "template_id": "F71F933E2FCA5AB203105260AC0D93DF",
+      "sha256": {
+        "original": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+        "normal": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+        "stress": "0f399cfd9f5dc4d5fa9d2ba56c2f56719ae95902283cc41572634c4fd5f8c6bf"
+      }
+    },
+    {
+      "region_code": "350526",
+      "kind": "evidence",
+      "source_id": "286f2f5801a4ad101b464ff7",
+      "template_id": "C32A00573D9A3484CF46E4890EA2B02E",
+      "sha256": {
+        "original": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+        "normal": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a",
+        "stress": "d037c6d322e57604595a7671060767c990d1409898e868834bd09da7b0bcd274"
+      }
+    },
+    {
+      "region_code": "350525",
+      "kind": "application",
+      "source_id": "dce92327ed30b9ea92994e08",
+      "template_id": "AD3F8A3434D951267A95B83CD235807A",
+      "sha256": {
+        "original": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+        "normal": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+        "stress": "0f399cfd9f5dc4d5fa9d2ba56c2f56719ae95902283cc41572634c4fd5f8c6bf"
+      }
+    },
+    {
+      "region_code": "350525",
+      "kind": "evidence",
+      "source_id": "dce92327ed30b9ea92994e08",
+      "template_id": "37DD350FC0D2CCFB0068120B194D6729",
+      "sha256": {
+        "original": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+        "normal": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a",
+        "stress": "d037c6d322e57604595a7671060767c990d1409898e868834bd09da7b0bcd274"
+      }
+    }
+  ],
+  "browser_downloads": 8,
+  "word_cases": 12,
+  "viewports": 12,
+  "cancellations": 4
+}

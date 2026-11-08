@@ -75,13 +75,13 @@
     },
     {
       "path": "data/public-regions/guides.json",
-      "bytes": 12396597,
-      "sha256": "0ffbc9cd958b9c3a7f2c76f6e6c7ff6617aef1aef7dd5f98282790e4016d8453"
+      "bytes": 12463042,
+      "sha256": "b8daff3ad6155a5e3a04c5377fe8f25338fe6eaa6bf48e08c10880fd7a0e947e"
     },
     {
       "path": "data/public-regions/manifest.json",
       "bytes": 526,
-      "sha256": "643e49602591ff1c2601eb96fe98291b727fbe4c8f558b98718d48af2140f1f9"
+      "sha256": "80958117a95ef27e390c5d4ffec2b1efb03fd657c23c4d8164506f380ecf3ea5"
     },
     {
       "path": "frontend/src/data/provinceCatalog.json",
@@ -17834,6 +17834,186 @@
       "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/personal-search.json",
       "bytes": 146681,
       "sha256": "d96260cfc4529eaddecbbff6869b2f03478ec71a4f5f2ea67610ad571820baf3"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350525/CAPTURE-PROVENANCE.json",
+      "bytes": 6956,
+      "sha256": "fb7f69a265aa73ba32bb8df10c9a2c886828870b9e23b83ba972bde00ebd6d8f"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350525/PUBLIC-RETRIEVALS.json",
+      "bytes": 2133,
+      "sha256": "ce942b6ce87a4ba9d88e9a3ff4f3f1f4ff75ee15a79cb9b30006c2813da18bbf"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350525/SOURCE-PROJECTION-MANIFEST.json",
+      "bytes": 2707,
+      "sha256": "c535d2d00bb7e8a47dfad8d0c368774e607ac4897bd20cfaf04b55d7c162fb30"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350525/application-format-public-retrieval.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350525/evidence-format-public-retrieval.docx",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350525/guide.json",
+      "bytes": 20735,
+      "sha256": "15b2f9e33a69187332ad3625680a1f0fe3786a1c88ea4c690219dde5f22c2d14"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350525/native-field-observations.json",
+      "bytes": 867,
+      "sha256": "7f684ff8c5dab1b578dff11b7da1b2145709f45c2648f700108bcad34025e3e6"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350525/native-role-proof.json",
+      "bytes": 2691,
+      "sha256": "97f6745a3fed46b5923fc6ae97848453e10e44806fd4b704c4f53491940fb1a7"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350525/safe-api-getAcceptList.json",
+      "bytes": 2445,
+      "sha256": "36a921cc2ab19841d0149d6024757ceeb61f275bd3f695a37dfd1b9957125c49"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350525/safe-api-getFlowNode.json",
+      "bytes": 2624,
+      "sha256": "e35570eee5f53eacf0e4cd191aa0e7ce1363fc15e10f65fed80f6aaeb688e77d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350525/safe-api-getLegalBasis.json",
+      "bytes": 2249,
+      "sha256": "4613590f17025071a30785cb4ea5f2d44551cb528ec58dae66594f599f55dde7"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350525/safe-api-getMaterialList.json",
+      "bytes": 6724,
+      "sha256": "b459be84eaec94fec0cf690139f4e4c069902f7cf58f1e73c30e67e8a30283fc"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350525/safe-api-getMatterAccording.json",
+      "bytes": 265,
+      "sha256": "fe3d5acd2bcbcef2313148f0e1bb85e177abf1cd3ef9804efd9f7e76f134f2c6"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350525/safe-api-getMatterBasicInfo.json",
+      "bytes": 6919,
+      "sha256": "139a6ab433c40ad661bd75c20177af201ead956969bb54696b4aac5a6fa11b5d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350525/safe-api-getServiceSituation.json",
+      "bytes": 196,
+      "sha256": "2213b020b7a6228587e269b559a44103fcc5bb2ec318501f88af3a8db39d2169"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350525/safe-api-getTableInfo.json",
+      "bytes": 2388,
+      "sha256": "63ae882dc311f2bb90325d191c5cbe315e896072611be81aad17fb788d7d9902"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350526/CAPTURE-PROVENANCE.json",
+      "bytes": 6956,
+      "sha256": "d4f2a084abc2b09e653413b53cba6d218a347fbe2372a86628d466c47ce0a284"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350526/PUBLIC-RETRIEVALS.json",
+      "bytes": 2133,
+      "sha256": "0f1a16da4fb1e6d0fe5ec0de07bb61385e23c6f05587fe63cf0aaa735ea85b3d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350526/SOURCE-PROJECTION-MANIFEST.json",
+      "bytes": 2707,
+      "sha256": "983353486646af7070909393be75730aa7de42a127dec79e464695878f4605da"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350526/application-format-public-retrieval.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350526/evidence-format-public-retrieval.docx",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350526/guide.json",
+      "bytes": 20678,
+      "sha256": "46b207eadb8b6da325ea67c4c2c0523ae43642c1b641a77f5ad9e309360b2712"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350526/native-field-observations.json",
+      "bytes": 867,
+      "sha256": "b5fee544b8549b21e8a1e58a8531837f53924f2afe8636014a4c49712a70ae10"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350526/native-role-proof.json",
+      "bytes": 2691,
+      "sha256": "8cc3c335aea8e7a515c5c8370663dc044f51a51140ee032ebe3d82e489af77b7"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350526/safe-api-getAcceptList.json",
+      "bytes": 2490,
+      "sha256": "77ed71726c3d6d27310a1698f15a962b188ffc7a6f00549419540a0b690dfc26"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350526/safe-api-getFlowNode.json",
+      "bytes": 2382,
+      "sha256": "96702e71275619ccebb4324671137ab756023080171af18650609c366a615705"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350526/safe-api-getLegalBasis.json",
+      "bytes": 2249,
+      "sha256": "4613590f17025071a30785cb4ea5f2d44551cb528ec58dae66594f599f55dde7"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350526/safe-api-getMaterialList.json",
+      "bytes": 6730,
+      "sha256": "69b6db1c5ba8ea166d3f79793d34c9e52e931965ff2e6e076caccd60c5070f4b"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350526/safe-api-getMatterAccording.json",
+      "bytes": 265,
+      "sha256": "fe3d5acd2bcbcef2313148f0e1bb85e177abf1cd3ef9804efd9f7e76f134f2c6"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350526/safe-api-getMatterBasicInfo.json",
+      "bytes": 6820,
+      "sha256": "267ef448861e10e8226411c7bb9af524ee950a4f326d59324a1562232bb74669"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350526/safe-api-getServiceSituation.json",
+      "bytes": 196,
+      "sha256": "200adedadd15d227a63ce8482fa1be477086105514ac005ad42f25d45f4a758e"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/350526/safe-api-getTableInfo.json",
+      "bytes": 2396,
+      "sha256": "78bbb9c947f3f875dbeeb49186746450c42c5887ec4c941da5889c540c6a03f7"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/BROWSER-CANDIDATE.json",
+      "bytes": 3990,
+      "sha256": "9669479f5e1e0a7f6f3e5ffef23dbc458efc57bb13080177188b5973ef831f54"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/FINAL-PUBLICATION.json",
+      "bytes": 2553,
+      "sha256": "c88b22b572422a4630eff6be9c1403eae6296f3daf55b1b377952c4ec18b279c"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/OWN-SOURCE-PINS.json",
+      "bytes": 1576,
+      "sha256": "5415e426d300c0de2fd67c4fdf4774957d181e55d606b4af616e79f087027e43"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-dehua-yongchun-own-source/WORD-PREFLIGHT.json",
+      "bytes": 5660,
+      "sha256": "e5c0a48a53e0b4b96b30f9e8acfd7dc545654e274e9b22a5e5eefa766dc3fa40"
     },
     {
       "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350524/CAPTURE-PROVENANCE.json",
