@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "a267803f3ab1f7a87a9ec06301a706bdd2a635e031d292fa83ddaead569922b6",
+  "regions": {
+    "350825": {
+      "region_code": "350825",
+      "district": "连城县",
+      "directory_city": "龙岩市",
+      "source_id": "9d72686d21ca8390335e0261",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=4A317B8A7B6B569648A707ED2C94513E",
+      "service_unid": "4A317B8A7B6B569648A707ED2C94513E",
+      "service_code": "11350825004125871U400201430200Y01",
+      "authority": "连城县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "ab56b74e06274ec4abfea00f5305c91910fe3c66cb71317757db829b3696b372"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

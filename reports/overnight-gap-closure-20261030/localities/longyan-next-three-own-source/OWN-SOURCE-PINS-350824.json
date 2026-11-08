@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "1b6faaec185eee432e7f4b960445f9e12095ebdf3e25efb3a90d2ea9006dd97d",
+  "regions": {
+    "350824": {
+      "region_code": "350824",
+      "district": "武平县",
+      "directory_city": "龙岩市",
+      "source_id": "e83e81785d88fec226301f13",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=413F32D8C129C3E8395693B12F974D5C",
+      "service_unid": "413F32D8C129C3E8395693B12F974D5C",
+      "service_code": "1135082400411980X2400201430200201",
+      "authority": "龙岩市武平县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "e1a5bbb57a5038f572b4bfbf7ac554961f2f190080a12ce22b0f36fbb4c415a3"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

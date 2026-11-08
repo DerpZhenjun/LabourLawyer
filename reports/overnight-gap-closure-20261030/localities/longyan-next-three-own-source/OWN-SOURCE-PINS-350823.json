@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "7657a3921be47c32a6b24aaa145ccb62f9c59e16b897ffcf4cd192cb9845dbb3",
+  "regions": {
+    "350823": {
+      "region_code": "350823",
+      "district": "上杭县",
+      "directory_city": "龙岩市",
+      "source_id": "7c8b83a0120243ba4bf74d4a",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=74CDA3B139FDB5674A63297D5C87FCA5",
+      "service_unid": "74CDA3B139FDB5674A63297D5C87FCA5",
+      "service_code": "113508230992505438400201430200Y01",
+      "authority": "上杭县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "4f90e0f66d5fd28b0f5d9db9d33264df0d48c371fdfd35ecb1f4639224429527"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
