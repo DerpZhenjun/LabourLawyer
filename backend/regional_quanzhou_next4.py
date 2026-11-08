@@ -401,6 +401,16 @@ LONGYAN_NEXT_THREE_REGIONS = {
 }
 FUJIAN_MUNICIPAL_SELECTION = "市本级"
 FUJIAN_MUNICIPAL_REGIONS = {
+    '350200': {
+        'district': '',
+        'city': '厦门市',
+        'source_base': LOCALITIES + '/xiamen-municipal-own-source',
+        'source_id': 'a5caaf5ad3f5a6e27c0c3603',
+        'source_manifest_sha256': 'c1798b1a541fb46db1dea860764fb32af26227c68d690de22b8fe6d716f6b708',
+        'stage_sha256': '7ece65b87134acdb033e07b1bfc583202af9e8fac1149ac5de3a7a91d390e372',
+        'source_freeze_sha256': '6f30d4641f4438527955969ce96aa12911e8346c9440d78fe527d35d75508587',
+        'original_kinds': ('application', 'evidence'),
+    },
     '350300': {
         'district': '',
         'city': '莆田市',

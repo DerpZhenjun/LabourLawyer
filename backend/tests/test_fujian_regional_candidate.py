@@ -560,6 +560,17 @@ class LongyanMunicipalCandidateTests(_MunicipalCandidateChecks, TestCase):
     foreign_code = '350802'
 
 
+class XiamenMunicipalCandidateTests(_MunicipalCandidateChecks, TestCase):
+    code = '350200'
+    source_id = 'a5caaf5ad3f5a6e27c0c3603'
+    source_version = 'c1798b1a541fb46db1dea860764fb32af26227c68d690de22b8fe6d716f6b708'
+    authority = '厦门市人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '厦门市', 'district': '市本级'}
+    source_folder = 'xiamen-municipal-own-source/350200'
+    foreign_code = '350203'
+
+
 class PutianMunicipalCandidateTests(_MunicipalCandidateChecks, TestCase):
     code = '350300'
     source_id = '954a26fbeead1a7b89dd0d5c'
