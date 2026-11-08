@@ -403,3 +403,14 @@ class ZhengheCandidateTests(_FujianCandidateChecks, TestCase):
     region = {'province': 'fujian', 'city': '南平市', 'district': '政和县'}
     source_folder = 'nanping-application-only-own-source/350725'
     foreign_code = '350702'
+
+
+class JianyangCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350703'
+    source_id = '27b3bacad17d7069dfd7ff81'
+    source_version = 'c0d126eca85333839449c7ae1957a6d7b3d1a20eb2ee10eadfd3e9a9c5a80d83'
+    authority = '南平市建阳区人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '南平市', 'district': '建阳区'}
+    source_folder = 'nanping-jianyang-own-source/350703'
+    foreign_code = '350702'
