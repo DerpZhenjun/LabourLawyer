@@ -1,4 +1,4 @@
-"""Isolated candidate adaptation for four individually captured Quanzhou sources."""
+"""Document adaptation for four individually captured Quanzhou sources."""
 from hashlib import sha256
 from pathlib import Path, PurePosixPath
 import stat
@@ -11,12 +11,15 @@ from regional_huian_quangang_request import Application, Evidence
 
 
 ADAPTER = 'fujian_quanzhou_next4_own_api_v1'
-PUBLICATION_SHA256 = None
+PUBLICATION_SHA256 = '5099dede84960def038d59c15ed6bd71bd95e3231eb6733985d563a9713e5149'
 STAGE_SHA256 = '6473592bd0f24498e499b1c94da2f224498372bd63de723cf90eb5d4684d12b3'
+BROWSER_SHA256 = '71ba37232b2077ce0927f61c64809ca32c51773865424c13cfb2ed4d6d60713a'
 STAGE_VERIFIED_AT = '2026-11-08T02:57:48Z'
 LOCALITIES = 'reports/overnight-gap-closure-20261030/localities'
 BASE = LOCALITIES + '/quanzhou-next4-own-source-projection'
 REVIEW_RECEIPT = LOCALITIES + '/quanzhou-next4-word-review/WORD-REVIEW-QUEUE.json'
+BROWSER_RECEIPT = LOCALITIES + '/quanzhou-next4-word-review/BROWSER-CANDIDATE.json'
+PUBLICATION_RECEIPT = LOCALITIES + '/quanzhou-next4-word-review/FINAL-PUBLICATION.json'
 FIXTURES = LOCALITIES + '/fujian-huian-quangang/word-qa-nov1-v1/fixtures'
 REGIONS = {
     '350582': {
@@ -119,12 +122,18 @@ def production_source(code, *, root):
 
 
 def staged_candidate(code, *, root):
+    guide, _ = _staged_guide(code, root=root)
+    return guide
+
+
+def _staged_guide(code, *, root):
     guide = production_source(code, root=root)
     raw = _read(root, REVIEW_RECEIPT)
     _require(sha256(raw).hexdigest() == STAGE_SHA256)
     receipt = strict_json(raw)
     _require(receipt['state'] == 'OFFLINE_PARITY_VERIFIED_REGISTRATION_PENDING'
              and receipt['published'] is False and len(receipt['records']) == 21)
+    verified_forms = []
     for template in guide['templates']:
         if not template['source_original_eligible']:
             continue
@@ -143,9 +152,34 @@ def staged_candidate(code, *, root):
                      and binding['material_id'] == template['material_id']
                      and binding['public_file_unid'] == template['public_file_unid'])
         template.update(can_generate=True, adapter=ADAPTER, document_types=[kind], generation_mode='blank')
+        verified_forms.append({'region_code': code, 'kind': kind, 'source_id': guide['source_id'],
+                               'template_id': template['id'], 'sha256': {row['case']: row['sha256'] for row in matching}})
     guide.update(registration_status='CANDIDATE_ONLY', can_generate=True, generation_adapter=ADAPTER,
                  verified_at=STAGE_VERIFIED_AT,
                  publication_status='candidate', candidate_adapter_evidence={'file': REVIEW_RECEIPT, 'sha256': STAGE_SHA256})
+    return guide, verified_forms
+
+
+def published_guide(code, *, root):
+    _require(PUBLICATION_SHA256 is not None)
+    raw = _read(root, PUBLICATION_RECEIPT)
+    _require(sha256(raw).hexdigest() == PUBLICATION_SHA256)
+    _require(sha256(_read(root, BROWSER_RECEIPT)).hexdigest() == BROWSER_SHA256)
+    receipt = strict_json(raw)
+    _require(receipt['state'] == 'INDEPENDENT_NATIVE_AND_WORD_PARITY_APPROVED'
+             and receipt['schema_version'] == 1 and receipt['stage_sha256'] == STAGE_SHA256
+             and receipt['browser_sha256'] == BROWSER_SHA256
+             and receipt['source_manifests'] == {c: p['source_manifest_sha256'] for c, p in REGIONS.items()}
+             and receipt['browser_downloads'] == 14 and receipt['word_cases'] == 21
+             and receipt['viewports'] == 21 and receipt['cancellations'] == 7
+             and receipt['stone_evidence_enabled'] is False and len(receipt['forms']) == 7)
+    guide, verified_forms = _staged_guide(code, root=root)
+    approved_forms = [form for form in receipt['forms'] if form['region_code'] == code]
+    _require(exact(sorted(approved_forms, key=lambda form: form['kind']),
+                   sorted(verified_forms, key=lambda form: form['kind'])))
+    guide.update(published=True, publication_status='published', registration_status='OWN_FORM_APPROVED',
+                 verified_at=receipt['reviewed_at'],
+                 publication_adapter_evidence={'file': PUBLICATION_RECEIPT, 'sha256': PUBLICATION_SHA256})
     return guide
 
 
@@ -155,11 +189,13 @@ def _evidence(code):
 
 
 def _bound(guide, *, root, stage_required):
-    _require(type(guide) is dict and guide.get('published') is False)
+    _require(type(guide) is dict)
     code = guide.get('region_code')
     if stage_required:
         _require(guide.get('can_generate') is True)
-    if guide.get('can_generate') is True:
+    if guide.get('published') is True:
+        canonical = published_guide(code, root=root)
+    elif guide.get('can_generate') is True:
         canonical = staged_candidate(code, root=root)
     else:
         canonical = production_source(code, root=root)

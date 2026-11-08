@@ -93,6 +93,7 @@
     "backend/regional_public_provenance.py",
     "backend/regional_putian_n_request.py",
     "backend/regional_putian_request.py",
+    "backend/regional_quanzhou_next4.py",
     "backend/regional_rollout.py",
     "backend/regional_rongjiang_documents.py",
     "backend/regional_shangcheng_documents.py",

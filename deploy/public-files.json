@@ -75,13 +75,13 @@
     },
     {
       "path": "data/public-regions/guides.json",
-      "bytes": 12263507,
-      "sha256": "7a04a23b7481de7dff40a892a4b80dd21462c103f3298d78c26ef4493b0cced6"
+      "bytes": 12396597,
+      "sha256": "0ffbc9cd958b9c3a7f2c76f6e6c7ff6617aef1aef7dd5f98282790e4016d8453"
     },
     {
       "path": "data/public-regions/manifest.json",
       "bytes": 526,
-      "sha256": "fb09faea6dcef4f0c9b35902821f52a71ccf95d54392357121f86d037a4705ce"
+      "sha256": "643e49602591ff1c2601eb96fe98291b727fbe4c8f558b98718d48af2140f1f9"
     },
     {
       "path": "frontend/src/data/provinceCatalog.json",
@@ -17834,6 +17834,336 @@
       "path": "reports/overnight-gap-closure-20261030/localities/kunshan/source-discovery/personal-search.json",
       "bytes": 146681,
       "sha256": "d96260cfc4529eaddecbbff6869b2f03478ec71a4f5f2ea67610ad571820baf3"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350524/CAPTURE-PROVENANCE.json",
+      "bytes": 8918,
+      "sha256": "76744d3d4360d753218fd109846c43e8575ad1b3ae1d417b203281156642cc80"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350524/PUBLIC-RETRIEVALS.json",
+      "bytes": 3465,
+      "sha256": "d71eb409e17d54b4364ef9c91a7f65023d26d88a62be45f4e02da3918fef2994"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350524/SOURCE-PROJECTION-MANIFEST.json",
+      "bytes": 2707,
+      "sha256": "a3713d78625cc4267c628b5fb70ce3ecdce46005c4314d840560974449601d13"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350524/application-format-public-retrieval.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350524/evidence-format-public-retrieval.docx",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350524/guide.json",
+      "bytes": 20656,
+      "sha256": "8c6b7e779cc56582a648f6b898750282984a3da88f83ab3422d9bc51d12dc628"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350524/native-field-observations.json",
+      "bytes": 833,
+      "sha256": "4660af0d70b399fc54fc0acf89b7067c01ad1eb5036d067b58a349c1b99092d2"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350524/native-role-proof.json",
+      "bytes": 2691,
+      "sha256": "e516af6fd0bb1009ef9cea3f9fd009b104aa29188511d433fdaca5b8a3c8cc93"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350524/safe-api-getAcceptList.json",
+      "bytes": 2996,
+      "sha256": "8b74147f080f9313e18f7036de3a3b295546a24ca5f2f677d15b4393c6743dbf"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350524/safe-api-getFlowNode.json",
+      "bytes": 3384,
+      "sha256": "5ce87851670540741b748234233f7cfaccaecbf3bb2399507f3fc36a3bdfaeb0"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350524/safe-api-getLegalBasis.json",
+      "bytes": 2530,
+      "sha256": "dfc70a543e76100fa17c03e445ef36fb5f664f3011eaa874818cf2c4a4001d62"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350524/safe-api-getMaterialList.json",
+      "bytes": 8362,
+      "sha256": "820efd380140782f8476bb05624348659d02f0598b932685d25617c189b652af"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350524/safe-api-getMatterAccording.json",
+      "bytes": 298,
+      "sha256": "0ac66e02cbf57cb9db1d52cd6a675b701cff69329ebc0290b6fb96f4e190ee72"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350524/safe-api-getMatterBasicInfo.json",
+      "bytes": 8729,
+      "sha256": "ef70826228764c23d31c903fc4d331292573ae63dc41926aeff2882516af5a4c"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350524/safe-api-getServiceSituation.json",
+      "bytes": 274,
+      "sha256": "db5c56b60b8e042e1d6ed5bdcf92364188797ed7cd43bb67fae0390e3707117e"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350524/safe-api-getTableInfo.json",
+      "bytes": 2396,
+      "sha256": "0ea1c1a0691e992bdab9fead424d18a61b4a2ee6dec727bbcfacd841e2e53bd2"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350581/CAPTURE-PROVENANCE.json",
+      "bytes": 8918,
+      "sha256": "b9a355a06e315d9e0c398ae17aca86832e6ff3a641e77873c21d752f6f524654"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350581/PUBLIC-RETRIEVALS.json",
+      "bytes": 1734,
+      "sha256": "fd09b5f9140685c2eb161c24290c79222c464177fd10bbff3965f0e440679231"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350581/SOURCE-PROJECTION-MANIFEST.json",
+      "bytes": 2548,
+      "sha256": "8a63a89cf7048a359eb43495281378da5bd3d00885eedd1bc2e78eba95ec3e2d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350581/application-format-public-retrieval.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350581/guide.json",
+      "bytes": 20609,
+      "sha256": "7263a2743e3c650737b2473ba10ef70bf71f8e406579bab797ae30e729931d07"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350581/native-field-observations.json",
+      "bytes": 833,
+      "sha256": "50856399be5389dd75859769278a599203746852ddb2f31fa3c69f41b15a65bd"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350581/native-role-proof.json",
+      "bytes": 2691,
+      "sha256": "4c35f4c34aa57e46dafa418ae920677a3ff1f4b064f0a05b172f321bbfe6fe5c"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350581/safe-api-getAcceptList.json",
+      "bytes": 3041,
+      "sha256": "f2f7cbccee4216040e4f9617add374475567fee130d961aa869295c94a2f6593"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350581/safe-api-getFlowNode.json",
+      "bytes": 3976,
+      "sha256": "3abe4955688c85322fc012d0ddd5a0badb9659f64eda91f4dac1a2b8996e8001"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350581/safe-api-getLegalBasis.json",
+      "bytes": 2530,
+      "sha256": "dfc70a543e76100fa17c03e445ef36fb5f664f3011eaa874818cf2c4a4001d62"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350581/safe-api-getMaterialList.json",
+      "bytes": 8364,
+      "sha256": "902794b35aedc4d1534d3dfe3c21fd4b5e01ed160d4613933f89a2d387925ba9"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350581/safe-api-getMatterAccording.json",
+      "bytes": 298,
+      "sha256": "0ac66e02cbf57cb9db1d52cd6a675b701cff69329ebc0290b6fb96f4e190ee72"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350581/safe-api-getMatterBasicInfo.json",
+      "bytes": 8873,
+      "sha256": "3d8a16e4bcea314520fecd1bdc4f4ae2fa90cfdf1d7338cacb3f8d2429286e1b"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350581/safe-api-getServiceSituation.json",
+      "bytes": 274,
+      "sha256": "6051a979735c645ef2f8d0175fe447c8b1c61cc312857256d0d0c6e61dab14f1"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350581/safe-api-getTableInfo.json",
+      "bytes": 2396,
+      "sha256": "694b94048cac61befff39310b61efc68974a98a8b8e74c55f44b8a76958c986b"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350582/CAPTURE-PROVENANCE.json",
+      "bytes": 8918,
+      "sha256": "2be5714abae03faa0daab5c1579f7475d0eb620e76ce0f5a88cec7af34a893b1"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350582/PUBLIC-RETRIEVALS.json",
+      "bytes": 3465,
+      "sha256": "aba6e740b3de15cdb8c0d40fa031272e192b3d45dd7fb4fbcce273e964b5a9a7"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350582/SOURCE-PROJECTION-MANIFEST.json",
+      "bytes": 2707,
+      "sha256": "7a4b19e40bd16f66b256d7fc7d0b88d7c05289827feae7df4eb2a05a2048a503"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350582/application-format-public-retrieval.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350582/evidence-format-public-retrieval.docx",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350582/guide.json",
+      "bytes": 20781,
+      "sha256": "c9a8d0887f33aa05139caf526ecf3048f8b3ee819360e1247345cdd28e3dfae2"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350582/native-field-observations.json",
+      "bytes": 833,
+      "sha256": "494fbed39717ddbfe9942e5217e57854b8a9588afe8e8650817d950fb880ecca"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350582/native-role-proof.json",
+      "bytes": 2691,
+      "sha256": "bec6e836530e8b5072e8344699ce71e0a04602504d42f720311292ea856d82e8"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350582/safe-api-getAcceptList.json",
+      "bytes": 3063,
+      "sha256": "740e820e3e5e2459d381381cd89c5ca7731138ac69864d81f990025b4c81faf8"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350582/safe-api-getFlowNode.json",
+      "bytes": 3705,
+      "sha256": "dc96b742afe7e94e024950890098544a48193404b9bf1496db7d426c545bbbd0"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350582/safe-api-getLegalBasis.json",
+      "bytes": 2530,
+      "sha256": "dfc70a543e76100fa17c03e445ef36fb5f664f3011eaa874818cf2c4a4001d62"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350582/safe-api-getMaterialList.json",
+      "bytes": 8364,
+      "sha256": "b9113139c386eb4acca536aaba0067cb560802c7b9bf5973addf44ca2d7bb3b1"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350582/safe-api-getMatterAccording.json",
+      "bytes": 298,
+      "sha256": "0ac66e02cbf57cb9db1d52cd6a675b701cff69329ebc0290b6fb96f4e190ee72"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350582/safe-api-getMatterBasicInfo.json",
+      "bytes": 8912,
+      "sha256": "5a1680e2b430492d01288067c84dc703f3ef7307ca1cf71b44f03426e538f47f"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350582/safe-api-getServiceSituation.json",
+      "bytes": 274,
+      "sha256": "777d6725cb765ecc78fe468d437a860ba1519f637ee79d4620b21f7e5dad2401"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350582/safe-api-getTableInfo.json",
+      "bytes": 2396,
+      "sha256": "3024d8a8a2bbdef2b93f227ee1b92ae739f3a1d87afd0ef9f206366eafd83b10"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350583/CAPTURE-PROVENANCE.json",
+      "bytes": 8918,
+      "sha256": "389792041256161d5f7361be59031d0ec87de81013b01d2a6da09f1703c3e925"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350583/PUBLIC-RETRIEVALS.json",
+      "bytes": 3465,
+      "sha256": "906627e55e9ae1274c8a3a573d5d2f204220aa8f5253b2a9acc16751eb859dce"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350583/SOURCE-PROJECTION-MANIFEST.json",
+      "bytes": 2707,
+      "sha256": "9dd8f9fdf8f88fc781301124ea58d0f67e8f4a4862b2b27bd8a6106f07630213"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350583/application-format-public-retrieval.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350583/evidence-format-public-retrieval.docx",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350583/guide.json",
+      "bytes": 20740,
+      "sha256": "f163d58fa459b673a7d1f44749c6cfe4cb3f8f513ed62f32ee2f5479519cd052"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350583/native-field-observations.json",
+      "bytes": 833,
+      "sha256": "7f32145eb3222b0bb499ed9b0280bf49a550dc4644285ea8a628c05f9c465665"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350583/native-role-proof.json",
+      "bytes": 2691,
+      "sha256": "11a2a3623897585a8ea5fcca34b435b197ee00c998161342d801d77203e5f684"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350583/safe-api-getAcceptList.json",
+      "bytes": 3096,
+      "sha256": "22b53bc554193501179811caf6a9e4fb0935a830cbaff51ed046817d50f14c1f"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350583/safe-api-getFlowNode.json",
+      "bytes": 3639,
+      "sha256": "81ab624aa5308ae50a4ccd77cc0d3f6e6dc5489d8765d11848603c199b6b4a93"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350583/safe-api-getLegalBasis.json",
+      "bytes": 2530,
+      "sha256": "dfc70a543e76100fa17c03e445ef36fb5f664f3011eaa874818cf2c4a4001d62"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350583/safe-api-getMaterialList.json",
+      "bytes": 8753,
+      "sha256": "605ab427529a024e81253bd6a268b2060513feda80bbec030ee8b07a688a8822"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350583/safe-api-getMatterAccording.json",
+      "bytes": 298,
+      "sha256": "0ac66e02cbf57cb9db1d52cd6a675b701cff69329ebc0290b6fb96f4e190ee72"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350583/safe-api-getMatterBasicInfo.json",
+      "bytes": 8829,
+      "sha256": "7a6731a4f6352718c9882965d1e34092210df5e05bc107bdff4a6e499a31c74f"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350583/safe-api-getServiceSituation.json",
+      "bytes": 274,
+      "sha256": "8fe6bc0dda5b3ed9f3a58cfbb77a11be0c58db53771e6b1d8b2621c5d1888d0f"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-own-source-projection/350583/safe-api-getTableInfo.json",
+      "bytes": 2396,
+      "sha256": "19ef90accf8610bce3afd7e5e138deee070c42ce8eb9c658ff38593059925936"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-word-review/BROWSER-CANDIDATE.json",
+      "bytes": 6952,
+      "sha256": "71ba37232b2077ce0927f61c64809ca32c51773865424c13cfb2ed4d6d60713a"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-word-review/FINAL-PUBLICATION.json",
+      "bytes": 4136,
+      "sha256": "5099dede84960def038d59c15ed6bd71bd95e3231eb6733985d563a9713e5149"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/quanzhou-next4-word-review/WORD-REVIEW-QUEUE.json",
+      "bytes": 24811,
+      "sha256": "6473592bd0f24498e499b1c94da2f224498372bd63de723cf90eb5d4684d12b3"
     },
     {
       "path": "reports/production-readiness-20261030/localities/chunan/FINAL-BROWSER-QA.json",

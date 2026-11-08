@@ -128,3 +128,22 @@ class QuanzhouCandidateTests(TestCase):
             with self.assertRaisesRegex(ValueError, 'Candidate guide'):
                 bootstrap_public_data(root=root, data_dir=dest)
             self.assertFalse(dest.exists())
+
+    def test_published_guide_requires_exact_separate_browser_and_word_approval(self):
+        code = '350581'
+        approved = own.published_guide(code, root=ROOT)
+        self.assertTrue(approved['published'])
+        self.assertEqual(approved['publication_status'], 'published')
+        self.assertEqual(approved['publication_adapter_evidence']['sha256'], own.PUBLICATION_SHA256)
+        original = next(t for t in approved['templates'] if t['can_generate'])
+        self.assertEqual(original['document_types'], ['application'])
+        self.assertEqual(own.checked_adapter(approved, original, 'application', root=ROOT), own.ADAPTER)
+        with self.assertRaises(ValueError):
+            own.checked_adapter(approved, original, 'evidence', root=ROOT)
+        with patch.object(own, 'PUBLICATION_SHA256', None), self.assertRaises(ValueError):
+            own.published_guide(code, root=ROOT)
+        for rejected_path in (own.PUBLICATION_RECEIPT, own.BROWSER_RECEIPT):
+            read = own._read
+            with self.subTest(path=rejected_path), patch.object(own, '_read', side_effect=lambda root, name: read(root, name) + (b' ' if name == rejected_path else b'')):
+                with self.assertRaises(ValueError):
+                    own.published_guide(code, root=ROOT)
