@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "4c41d8d1717ffa7d34ba01d2ae7bf6757b169f1d48474d155121aac1a976f21a",
+  "regions": {
+    "350602": {
+      "region_code": "350602",
+      "district": "芗城区",
+      "directory_city": "漳州市",
+      "source_id": "f8e8351e86b1c41530f16dec",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=DB416804CE77EEE38BC9BAF4A9553D28",
+      "service_unid": "DB416804CE77EEE38BC9BAF4A9553D28",
+      "service_code": "11350602003878388R400201430200101",
+      "authority": "漳州市芗城区人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "f00f84d5e6ed1a90e7d064760966c36735950d2e734c2fa6493db2186956ab41"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
