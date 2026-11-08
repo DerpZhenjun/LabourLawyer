@@ -1,0 +1,26 @@
+{
+  "state": "OWN_LEGACY_WORD_VISUALLY_REVIEWED",
+  "reviewed_at": "2026-11-08T07:37:21.616064+00:00",
+  "region_code": "350213",
+  "source_id": "1f622c6bd454f5515906f8c3",
+  "source_version": "279bc36eb43e9b09e6dfe35a471cd4cdc64a9a621266b7934f28bf053c76cbaf",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=C441788F52CEBC803F49D57FACE0C4B3",
+  "attachment_id": "A637EF6EAD573C2578CA358269DED78A",
+  "official_name": "28劳动争议仲裁证据清单.doc",
+  "material_id": "EF06ECCF3AF294EC2BC13D0207383303",
+  "public_file_unid": "6E3F2B70B248EB2169F92B36516AF1EA",
+  "original_url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFileStream?unid=6E3F2B70B248EB2169F92B36516AF1EA",
+  "original_sha256": "57e6ecded6e510d5adfa320c4ef82887ad5aa37d4f895f191ad78ace239b6613",
+  "layout_sha256": "8bff7ad229e0b515e48f51fd97757953af6989937976ec39be6c962f771a2fae",
+  "blank_render_sha256": "9546ccc7f33d9da32e552ffe2516e11acbe8da861f640ba63e063d82470f5c9d",
+  "filled_sha256": {
+    "normal": "4aeb0714249c54f03ae4f460af2fb10ba6eca1f9509d2e83ef0c8d3c0f5e1115",
+    "stress": "b3230e03c217654e2e4140fdbda4dc815f697972a0c4953bbff5886982e1246a"
+  },
+  "filled_render_sha256": {
+    "normal": "dd853f5dd3a7da81a5284c2a02f72f5f288ceabccf1908ed5a47b2dc3a89e147",
+    "stress": "77a77d333b989c3186132bb7ab57c09abe32e2bf97437674e89d81464a745f04"
+  },
+  "observed": "Original and empty conversion render identically. Normal and capacity-limit synthetic fills visually verified on one page each, including row ten and manual signature.",
+  "publication_approved": false
+}
