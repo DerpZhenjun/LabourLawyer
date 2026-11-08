@@ -12,7 +12,7 @@ from pydantic import BaseModel, Field, field_validator, model_validator
 from regional_guides import RegionalStore
 from regional_documents import fill_tianfu_reference
 from regional_adapters import checked_reference_adapter,HUNAN_C_ADAPTER,JIANGSU_C_ADAPTER,jiangsu_c_binding,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER
-from regional_blank_documents import fill_blank_document, is_lianyungang_municipal_candidate, ADAPTER as BLANK_ADAPTER
+from regional_blank_documents import fill_blank_document, is_jiangsu_municipal_candidate, ADAPTER as BLANK_ADAPTER
 from regional_jiangsu_candidates import fill_candidate_document, SUPPORTED as JIANGSU_OWN_CANDIDATES
 from regional_rongjiang_documents import fill_rongjiang_document, ADAPTER as RONGJIANG_ADAPTER
 from regional_xiangan_evidence import ADAPTER as XIANGAN_EVIDENCE_ADAPTER, XianganEvidenceRequest
@@ -130,7 +130,7 @@ def areas(province: str=Query(max_length=30),city: str=Query(default='',max_leng
         fujian_exact = profile and (profile['city'], profile['source_id'], profile['source_manifest_sha256']) == (
             city, municipal.get('source_id'), municipal.get('source_version'),
         )
-        if fujian_exact or is_lianyungang_municipal_candidate(municipal):
+        if fujian_exact or is_jiangsu_municipal_candidate(municipal):
             city_row = next((
                 row for row in directory.areas(province) if row['city'] == city and row['level'] == 3
                 and row['code'] == code and not row['district']
