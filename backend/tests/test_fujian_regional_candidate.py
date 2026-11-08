@@ -578,3 +578,31 @@ class SanmingMunicipalCandidateTests(_MunicipalCandidateChecks, TestCase):
     region = {'province': 'fujian', 'city': '三明市', 'district': '市本级'}
     source_folder = 'sanming-municipal-own-source/350400'
     foreign_code = '350426'
+
+
+class NinghuaCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350424'
+    source_id = '2e7221316b15f1d1b0fcf034'
+    source_version = 'c9ce260340747c75b7271f069088c27a4a912609e971d340af03325c318d408a'
+    authority = '宁化县人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '三明市', 'district': '宁化县'}
+    source_folder = 'sanming-next-three-own-source/350424'
+    foreign_code = '350426'
+
+class MingxiCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350421'
+    source_id = '0344451e5d72c7ff36543fe9'
+    source_version = 'a49fbaba629c04954b07d1ea4923b03ba2269f16ca6e98183266c4609300f403'
+    authority = '明溪县人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '三明市', 'district': '明溪县'}
+    source_folder = 'sanming-next-three-own-source/350421'
+    foreign_code = '350426'
+
+class JiangleCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350428'
+    source_id = '23bd108d76ca3647bfc597c8'
+    source_version = 'b8978e2977dfe8b8ff88fa3e76a341de64444110620140902dce04c389a041b9'
+    authority = '将乐县人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '三明市', 'district': '将乐县'}
+    source_folder = 'sanming-next-three-own-source/350428'
+    foreign_code = '350426'

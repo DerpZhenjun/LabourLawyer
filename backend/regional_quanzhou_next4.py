@@ -56,6 +56,7 @@ NANPING_JIANYANG_BASE = LOCALITIES + '/nanping-jianyang-own-source'
 LONGYAN_FIRST_TWO_BASE = LOCALITIES + '/longyan-first-two-own-source'
 LONGYAN_NEXT_TWO_BASE = LOCALITIES + '/longyan-next-two-own-source'
 LONGYAN_NEXT_THREE_BASE = LOCALITIES + '/longyan-next-three-own-source'
+SANMING_NEXT_THREE_BASE = LOCALITIES + '/sanming-next-three-own-source'
 REGIONS = {
     '350582': {
         'district': '晋江市', 'source_id': 'd8353a4bb91532863fb03802',
@@ -449,6 +450,35 @@ SANMING_YOUXI_REGIONS = {
         'original_kinds': ('application', 'evidence'),
     },
 }
+SANMING_NEXT_THREE_REGIONS = {
+    '350424': {
+        'district': '宁化县',
+        'city': '三明市',
+        'source_id': '2e7221316b15f1d1b0fcf034',
+        'source_manifest_sha256': 'c9ce260340747c75b7271f069088c27a4a912609e971d340af03325c318d408a',
+        'stage_sha256': '9b0b48ddd2f95683d4124777232099ce0141db3ce26b05a4e760237b568f09ab',
+        'source_freeze_sha256': '73b79b5b214be8a1e0284a5cfbf4e394a23e72da9a03630b60a3510d19cd3462',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350421': {
+        'district': '明溪县',
+        'city': '三明市',
+        'source_id': '0344451e5d72c7ff36543fe9',
+        'source_manifest_sha256': 'a49fbaba629c04954b07d1ea4923b03ba2269f16ca6e98183266c4609300f403',
+        'stage_sha256': '6f2f8adbfa4f4501690551ef71929a32c8f6292eb9a0b777df02a0bfbddab60d',
+        'source_freeze_sha256': '50d4997ea73149f8de879ee85509db8f8092f5a28fe2dd0f7fd4d28abcf74538',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350428': {
+        'district': '将乐县',
+        'city': '三明市',
+        'source_id': '23bd108d76ca3647bfc597c8',
+        'source_manifest_sha256': 'b8978e2977dfe8b8ff88fa3e76a341de64444110620140902dce04c389a041b9',
+        'stage_sha256': 'a81e6f81e7f32c2075934fcb7cdaff79263d0c0aa3484403d348d00b2883552f',
+        'source_freeze_sha256': '16b18ed72ecf56329fcc8eec6c80363ee92aee6d99d987e1b3437f633da7d706',
+        'original_kinds': ('application', 'evidence'),
+    },
+}
 SUPPORTED_REGIONS = {
     **REGIONS,
     **DY_REGIONS,
@@ -466,6 +496,7 @@ SUPPORTED_REGIONS = {
     **LONGYAN_NEXT_THREE_REGIONS,
     **FUJIAN_MUNICIPAL_REGIONS,
     **SANMING_YOUXI_REGIONS,
+    **SANMING_NEXT_THREE_REGIONS,
     INVESTMENT_CODE: {
         'district': '台商投资区', 'source_id': 'cf089c0b9ee9b764b564e269',
         'source_manifest_sha256': '297b56b936b8c43d5598c4fc115c26b881936d21fcd3da08722523ca74319fc2',
@@ -512,6 +543,7 @@ _CANDIDATE_PREFLIGHTS = {
             (LONGYAN_NEXT_TWO_BASE, LONGYAN_NEXT_TWO_REGIONS),
             (LONGYAN_NEXT_THREE_BASE, LONGYAN_NEXT_THREE_REGIONS),
             (LOCALITIES + '/sanming-youxi-own-source', SANMING_YOUXI_REGIONS),
+            (SANMING_NEXT_THREE_BASE, SANMING_NEXT_THREE_REGIONS),
         )
         for code, profile in regions.items()
     },
