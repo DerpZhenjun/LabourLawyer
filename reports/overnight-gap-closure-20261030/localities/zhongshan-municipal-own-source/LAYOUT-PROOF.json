@@ -1,0 +1,30 @@
+{
+  "original_sha256": "674dae021de29fa3caff11d63d25acdd04d114501a9590b8f8db62d3ccb71a6a",
+  "converted_before_sanitization_sha256": "b7480f263783ecfe1a2352ccdebdb9cc526bb7acc94ac93fa02504e5848124b9",
+  "layout_sha256": "de465523e521717b8f072c4783dbe69fc7954170015bd6fb77c6e9cf3a3a3d45",
+  "page_comparison": [
+    {
+      "same_dimensions": true,
+      "different_area": null,
+      "pixel_sha256": "30b2c9e2d46ed0ee8139b6309eb190acb8535f5cecec4a3047b57ad2258a5f41"
+    },
+    {
+      "same_dimensions": true,
+      "different_area": null,
+      "pixel_sha256": "11115c073f176f639fde6b39b0180b463eb20e6db5d84123f9919c93c496cc51"
+    },
+    {
+      "same_dimensions": true,
+      "different_area": null,
+      "pixel_sha256": "aa5a542ce9fc59eaf57f6767af0a04d7d90b1d419198080dd381d8fc641e18de"
+    }
+  ],
+  "verified_pages": 3,
+  "changed_metadata_parts": [
+    "docProps/core.xml",
+    "docProps/custom.xml",
+    "docProps/app.xml"
+  ],
+  "layout_parts_equal": true,
+  "external_relationships": false
+}

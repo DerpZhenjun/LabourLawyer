@@ -1,0 +1,186 @@
+{
+  "province": "guangdong",
+  "province_name": "广东省",
+  "city": "中山市",
+  "district": "市本级",
+  "region_code": "442000",
+  "scope_level": "municipal",
+  "service_name": "劳动人事争议仲裁申请",
+  "authority": "中山市劳动人事争议仲裁委员会",
+  "source_url": "https://hrss.zs.gov.cn/zcy/zczn/sqzc/content/post_1899769.html",
+  "source_title": "劳动人事争议仲裁申请书文本及填写范例",
+  "collected_at": "2026-11-08T12:03:42.499623+00:00",
+  "verified_at": "2026-11-08T12:09:29.9072277+00:00",
+  "verification_status": "partial",
+  "official_version": "2021-01-27（表格发布）",
+  "published": false,
+  "fields": {
+    "管辖范围": {
+      "source_url": "https://hrss.zs.gov.cn/tp/gab/gsgg/content/post_2501550.html",
+      "region_code": "442000",
+      "raw_value": "市仲裁院和镇街派出庭分工以 2025 年 4 月 1 日公告为准。",
+      "normalized_value": "市仲裁院和镇街派出庭分工以 2025 年 4 月 1 日公告为准。",
+      "collected_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verified_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verification_status": "verified"
+    },
+    "咨询方式": {
+      "source_url": "https://hrss.zs.gov.cn/tp/gab/gsgg/content/post_2501550.html",
+      "region_code": "442000",
+      "raw_value": "0760-12333（市人社局网站咨询电话）",
+      "normalized_value": "0760-12333（市人社局网站咨询电话）",
+      "collected_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verified_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verification_status": "verified"
+    }
+  },
+  "materials": [
+    {
+      "name": "仲裁申请书",
+      "source_url": "https://hrss.zs.gov.cn/zcy/zczn/bmcs/content/post_2170598.html",
+      "region_code": "442000",
+      "raw_value": "提交正本一份，副本按被申请人数量准备。",
+      "normalized_value": "提交正本一份，副本按被申请人数量准备。",
+      "collected_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verified_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verification_status": "verified",
+      "id": "zhongshan-worker-1",
+      "instructions": "提交正本一份，副本按被申请人数量准备。",
+      "required": "职工申请所需"
+    },
+    {
+      "name": "职工身份证明",
+      "source_url": "https://hrss.zs.gov.cn/zcy/zczn/bmcs/content/post_2170598.html",
+      "region_code": "442000",
+      "raw_value": "准备复印件。",
+      "normalized_value": "准备复印件。",
+      "collected_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verified_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verification_status": "verified",
+      "id": "zhongshan-worker-2",
+      "instructions": "准备复印件。",
+      "required": "职工申请所需"
+    },
+    {
+      "name": "委托代理材料",
+      "source_url": "https://hrss.zs.gov.cn/zcy/zczn/bmcs/content/post_2170598.html",
+      "region_code": "442000",
+      "raw_value": "委托代理的，准备授权委托书原件和代理人身份证明复印件。",
+      "normalized_value": "委托代理的，准备授权委托书原件和代理人身份证明复印件。",
+      "collected_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verified_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verification_status": "verified",
+      "id": "zhongshan-worker-3",
+      "instructions": "委托代理的，准备授权委托书原件和代理人身份证明复印件。",
+      "required": "按适用情形准备"
+    },
+    {
+      "name": "用人单位注册登记资料",
+      "source_url": "https://hrss.zs.gov.cn/zcy/zczn/bmcs/content/post_2170598.html",
+      "region_code": "442000",
+      "raw_value": "按单位类型准备相应登记资料。",
+      "normalized_value": "按单位类型准备相应登记资料。",
+      "collected_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verified_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verification_status": "verified",
+      "id": "zhongshan-worker-4",
+      "instructions": "按单位类型准备相应登记资料。",
+      "required": "职工申请所需"
+    },
+    {
+      "name": "劳动关系及其他证据",
+      "source_url": "https://hrss.zs.gov.cn/zcy/zczn/bmcs/content/post_2170598.html",
+      "region_code": "442000",
+      "raw_value": "备好劳动关系证明、证据和清单。正本一份，副本按被申请人数量准备。",
+      "normalized_value": "备好劳动关系证明、证据和清单。正本一份，副本按被申请人数量准备。",
+      "collected_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verified_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verification_status": "verified",
+      "id": "zhongshan-worker-5",
+      "instructions": "备好劳动关系证明、证据和清单。正本一份，副本按被申请人数量准备。",
+      "required": "职工申请所需"
+    },
+    {
+      "name": "送达地址确认书",
+      "source_url": "https://hrss.zs.gov.cn/zcy/zczn/bmcs/content/post_2170598.html",
+      "region_code": "442000",
+      "raw_value": "准备一份原件。",
+      "normalized_value": "准备一份原件。",
+      "collected_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verified_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verification_status": "verified",
+      "id": "zhongshan-worker-6",
+      "instructions": "准备一份原件。",
+      "required": "职工申请所需"
+    },
+    {
+      "name": "劳动争议调解意见书",
+      "source_url": "https://hrss.zs.gov.cn/zcy/zczn/bmcs/content/post_2170598.html",
+      "region_code": "442000",
+      "raw_value": "经基层调解并取得的，可按官方说明提交复印件。",
+      "normalized_value": "经基层调解并取得的，可按官方说明提交复印件。",
+      "collected_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verified_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verification_status": "verified",
+      "id": "zhongshan-worker-7",
+      "instructions": "经基层调解并取得的，可按官方说明提交复印件。",
+      "required": "按适用情形准备"
+    }
+  ],
+  "sections": {
+    "本级管辖": {
+      "source_url": "https://hrss.zs.gov.cn/tp/gab/gsgg/content/post_2501550.html",
+      "region_code": "442000",
+      "raw_value": "请按市人社局管辖公告核对是否由市仲裁院受理。",
+      "normalized_value": "请按市人社局管辖公告核对是否由市仲裁院受理。",
+      "collected_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verified_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verification_status": "verified"
+    },
+    "办理渠道": {
+      "source_url": "https://hrss.zs.gov.cn/zcy/zczn/bmcs/content/post_2508808.html",
+      "region_code": "442000",
+      "raw_value": "市人社局公开接收窗口表列出镇街派出庭，市本级受理地点和线上提交入口待核验。",
+      "normalized_value": "市人社局公开接收窗口表列出镇街派出庭，市本级受理地点和线上提交入口待核验。",
+      "collected_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verified_at": "2026-11-08T12:09:29.9072277+00:00",
+      "verification_status": "verified"
+    }
+  },
+  "channel": {
+    "raw_value": "市本级办理渠道待核验",
+    "form": "unverified",
+    "online_status": "unverified",
+    "entry_url": null
+  },
+  "warnings": [
+    "仅中山市本级。镇街案件请按市人社局公告核对各自管辖。",
+    "证据清单空白件仍待核验。 目前仅提供仲裁申请书填写。",
+    "申请书依据官方 DOC 空白表转换。地址类别、附件勾选与份数、日期和签名请在下载后补填。"
+  ],
+  "templates": [
+    {
+      "id": "zhongshan-municipal-application",
+      "region_code": "442000",
+      "official_kind": "blank",
+      "source_url": "https://hrss.zs.gov.cn/attachment/0/536/536012/1899769.doc",
+      "official_sha256": "674dae021de29fa3caff11d63d25acdd04d114501a9590b8f8db62d3ccb71a6a",
+      "official_bytes": 52224,
+      "file": "templates/_docx/_regional/guangdong/zhongshan-municipal-application.docx",
+      "file_type": "docx",
+      "file_origin": "official-blank-converted-layout",
+      "original_name": "中山市劳动人事争议仲裁申请书（官方 DOC 转换版）.docx",
+      "download_status": "downloaded",
+      "sha256": "de465523e521717b8f072c4783dbe69fc7954170015bd6fb77c6e9cf3a3a3d45",
+      "document_types": [
+        "application"
+      ],
+      "can_generate": false
+    }
+  ],
+  "supporting_sources": {
+    "本级管辖": "https://hrss.zs.gov.cn/tp/gab/gsgg/content/post_2501550.html",
+    "办理渠道": "https://hrss.zs.gov.cn/zcy/zczn/bmcs/content/post_2508808.html",
+    "职工申请材料": "https://hrss.zs.gov.cn/zcy/zczn/bmcs/content/post_2170598.html"
+  }
+}
