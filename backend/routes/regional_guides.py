@@ -69,7 +69,7 @@ from regional_fujian_huian_quangang_nov1 import (
 from regional_huian_quangang_request import (
     HuianQuangangApplicationRequest, HuianQuangangEvidenceRequest)
 from regional_quanzhou_next4 import (
-    ADAPTER as QZ_ADAPTER, REGIONS as QZ_REGIONS, fill_document as fill_qz_document,
+    ADAPTER as QZ_ADAPTER, SUPPORTED_REGIONS as QZ_REGIONS, fill_document as fill_qz_document,
     STAGE_SHA256 as QZ_STAGE_SHA256, PUBLICATION_SHA256 as QZ_PUBLICATION_SHA256)
 from regional_zhejiang_oct29e import fill_document as fill_zhejiang_e_document
 from regional_zhejiang_chunan_oct30 import (fill_document as fill_chunan_document, ADAPTER as CHUNAN_ADAPTER,

@@ -21,6 +21,10 @@ REVIEW_RECEIPT = LOCALITIES + '/quanzhou-next4-word-review/WORD-REVIEW-QUEUE.jso
 BROWSER_RECEIPT = LOCALITIES + '/quanzhou-next4-word-review/BROWSER-CANDIDATE.json'
 PUBLICATION_RECEIPT = LOCALITIES + '/quanzhou-next4-word-review/FINAL-PUBLICATION.json'
 FIXTURES = LOCALITIES + '/fujian-huian-quangang/word-qa-nov1-v1/fixtures'
+DY_BASE = LOCALITIES + '/quanzhou-dehua-yongchun-own-source'
+DY_STAGE_RECEIPT = DY_BASE + '/WORD-PREFLIGHT.json'
+DY_STAGE_SHA256 = 'e5c0a48a53e0b4b96b30f9e8acfd7dc545654e274e9b22a5e5eefa766dc3fa40'
+DY_SOURCE_FREEZE_SHA256 = '3eb5d587708c2e420bf91e7320ac4e661215ce6ab26fa7bd3fe1ad8505a57781'
 REGIONS = {
     '350582': {
         'district': '晋江市', 'source_id': 'd8353a4bb91532863fb03802',
@@ -43,6 +47,19 @@ REGIONS = {
         'original_kinds': ('application', 'evidence'),
     },
 }
+DY_REGIONS = {
+    '350526': {
+        'district': '德化县', 'source_id': '286f2f5801a4ad101b464ff7',
+        'source_manifest_sha256': '983353486646af7070909393be75730aa7de42a127dec79e464695878f4605da',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350525': {
+        'district': '永春县', 'source_id': 'dce92327ed30b9ea92994e08',
+        'source_manifest_sha256': 'c535d2d00bb7e8a47dfad8d0c368774e607ac4897bd20cfaf04b55d7c162fb30',
+        'original_kinds': ('application', 'evidence'),
+    },
+}
+SUPPORTED_REGIONS = {**REGIONS, **DY_REGIONS}
 _MODELS = {'application': Application, 'evidence': Evidence}
 _FAILURES = (ValueError, OSError, TypeError, KeyError)
 
@@ -67,19 +84,23 @@ def _read(root, name):
     return path.read_bytes()
 
 
+def _source_folder(code):
+    _require(type(code) is str and code in SUPPORTED_REGIONS)
+    return f'{DY_BASE if code in DY_REGIONS else BASE}/{code}'
+
+
 def _manifest_path(code):
-    return f'{BASE}/{code}/SOURCE-PROJECTION-MANIFEST.json'
+    return f'{_source_folder(code)}/SOURCE-PROJECTION-MANIFEST.json'
 
 
 def production_source(code, *, root):
-    _require(type(code) is str and code in REGIONS)
-    profile = REGIONS[code]
+    folder = _source_folder(code)
+    profile = SUPPORTED_REGIONS[code]
     manifest_raw = _read(root, _manifest_path(code))
     version = profile['source_manifest_sha256']
     _require(sha256(manifest_raw).hexdigest() == version)
     manifest = strict_json(manifest_raw)
     _require(manifest['region_code'] == code and manifest['source_id'] == profile['source_id'])
-    folder = f'{BASE}/{code}'
     files = {}
     for name, pin in manifest['files'].items():
         raw = _read(root, f'{folder}/{name}')
@@ -128,6 +149,8 @@ def staged_candidate(code, *, root):
 
 def _staged_guide(code, *, root):
     guide = production_source(code, root=root)
+    if code in DY_REGIONS:
+        return _dy_staged_guide(guide, root=root)
     raw = _read(root, REVIEW_RECEIPT)
     _require(sha256(raw).hexdigest() == STAGE_SHA256)
     receipt = strict_json(raw)
@@ -154,14 +177,41 @@ def _staged_guide(code, *, root):
         template.update(can_generate=True, adapter=ADAPTER, document_types=[kind], generation_mode='blank')
         verified_forms.append({'region_code': code, 'kind': kind, 'source_id': guide['source_id'],
                                'template_id': template['id'], 'sha256': {row['case']: row['sha256'] for row in matching}})
-    guide.update(registration_status='CANDIDATE_ONLY', can_generate=True, generation_adapter=ADAPTER,
-                 verified_at=STAGE_VERIFIED_AT,
-                 publication_status='candidate', candidate_adapter_evidence={'file': REVIEW_RECEIPT, 'sha256': STAGE_SHA256})
+    _mark_candidate(guide, REVIEW_RECEIPT, STAGE_SHA256, STAGE_VERIFIED_AT)
     return guide, verified_forms
 
 
+def _mark_candidate(guide, receipt, pin, verified_at):
+    guide.update(registration_status='CANDIDATE_ONLY', can_generate=True, generation_adapter=ADAPTER,
+                 verified_at=verified_at, publication_status='candidate',
+                 candidate_adapter_evidence={'file': receipt, 'sha256': pin})
+
+
+def _dy_staged_guide(guide, *, root):
+    raw = _read(root, DY_STAGE_RECEIPT)
+    _require(sha256(raw).hexdigest() == DY_STAGE_SHA256)
+    receipt = strict_json(raw)
+    _require(receipt['state'] == 'OWN_ORIGINALS_AND_TEST_LAYOUTS_BYTE_EQUIVALENT'
+             and receipt['source_freeze_sha256'] == DY_SOURCE_FREEZE_SHA256
+             and receipt['published'] is False and receipt['adapter_registered'] is False
+             and receipt['web_accepted'] is False and len(receipt['records']) == 12)
+    for template in guide['templates']:
+        if not template['source_original_eligible']:
+            continue
+        kind = template['eligible_own_kind']
+        matches = [row for row in receipt['records']
+                   if row['region_code'] == guide['region_code'] and row['kind'] == kind]
+        _require(len(matches) == 3 and {row['case'] for row in matches} == {'original', 'normal', 'stress'})
+        _require(all(row['source_id'] == guide['source_id'] and row['attachment_id'] == template['id']
+                     and row['template_sha256'] == template['sha256'] for row in matches))
+        _require(next(row['sha256'] for row in matches if row['case'] == 'original') == template['sha256'])
+        template.update(can_generate=True, adapter=ADAPTER, document_types=[kind], generation_mode='blank')
+    _mark_candidate(guide, DY_STAGE_RECEIPT, DY_STAGE_SHA256, receipt['verified_at'])
+    return guide, []
+
+
 def published_guide(code, *, root):
-    _require(PUBLICATION_SHA256 is not None)
+    _require(type(code) is str and code in REGIONS and PUBLICATION_SHA256 is not None)
     raw = _read(root, PUBLICATION_RECEIPT)
     _require(sha256(raw).hexdigest() == PUBLICATION_SHA256)
     _require(sha256(_read(root, BROWSER_RECEIPT)).hexdigest() == BROWSER_SHA256)
@@ -185,7 +235,7 @@ def published_guide(code, *, root):
 
 def _evidence(code):
     return {'source_projection': _manifest_path(code),
-            'source_projection_sha256': REGIONS[code]['source_manifest_sha256']}
+            'source_projection_sha256': SUPPORTED_REGIONS[code]['source_manifest_sha256']}
 
 
 def _bound(guide, *, root, stage_required):
@@ -241,7 +291,7 @@ def checked_adapter(guide, template, kind, *, root):
 
 
 def production_schema_descriptor(code, kind):
-    _require(type(code) is str and code in REGIONS and kind in REGIONS[code]['original_kinds'])
+    _require(type(code) is str and code in SUPPORTED_REGIONS and kind in SUPPORTED_REGIONS[code]['original_kinds'])
     # Only the independently verified geometry is shared across the official originals.
     labels = {
         'applicantName': '申请人', 'agentName': '委托代理人', 'respondentName': '被申请人',
@@ -257,7 +307,7 @@ def production_schema_descriptor(code, kind):
     return {
         'schema_id': f'fujian-quanzhou-own-{code}-{kind}-v1',
         'schema_version': 1,
-        'source_version': REGIONS[code]['source_manifest_sha256'],
+        'source_version': SUPPORTED_REGIONS[code]['source_manifest_sha256'],
         'fields': fields,
         'defaults': _MODELS[kind]().model_dump(),
         'policy': {

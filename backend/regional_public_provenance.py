@@ -176,7 +176,7 @@ def public_evidence(guide, root):
     """
     if isinstance(root,str) and not root.strip():return None
     if not isinstance(guide,dict) or not isinstance(guide.get('province'),str) or not isinstance(guide.get('region_code'),str):return None
-    if guide.get('province')=='fujian' and guide.get('region_code') in quanzhou.REGIONS:
+    if guide.get('province')=='fujian' and guide.get('region_code') in quanzhou.SUPPORTED_REGIONS:
         return quanzhou.public_evidence(guide,root)
     if guide.get('province')=='fujian' and guide.get('region_code') in {'350521','350505'}:
         from regional_fujian_huian_quangang_nov1 import public_evidence as own
@@ -251,7 +251,7 @@ def approved_report_attachment(guide, template, root):
     """
     if isinstance(root,str) and not root.strip():return False
     if not isinstance(guide,dict) or not isinstance(guide.get('province'),str) or not isinstance(guide.get('region_code'),str):return False
-    if guide.get('province')=='fujian' and guide.get('region_code') in quanzhou.REGIONS:
+    if guide.get('province')=='fujian' and guide.get('region_code') in quanzhou.SUPPORTED_REGIONS:
         return quanzhou.approved_report_attachment(guide,template,root)
     if guide.get('province')=='fujian' and guide.get('region_code') in {'350521','350505'}:
         from regional_fujian_huian_quangang_nov1 import approved_report_attachment as own

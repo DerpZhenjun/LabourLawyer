@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "3eb5d587708c2e420bf91e7320ac4e661215ce6ab26fa7bd3fe1ad8505a57781",
+  "regions": {
+    "350526": {
+      "region_code": "350526",
+      "district": "德化县",
+      "source_id": "286f2f5801a4ad101b464ff7",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=759AF2BE71ECC27376AFC30823875205",
+      "service_unid": "759AF2BE71ECC27376AFC30823875205",
+      "service_code": "113505260038567873400201430200201",
+      "authority": "德化县人力资源和社会保障局",
+      "official_version": "1",
+      "directory_city": "泉州市",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "983353486646af7070909393be75730aa7de42a127dec79e464695878f4605da"
+    },
+    "350525": {
+      "region_code": "350525",
+      "district": "永春县",
+      "source_id": "dce92327ed30b9ea92994e08",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=2EC12DD37CDBF2977963C381B3A509A8",
+      "service_unid": "2EC12DD37CDBF2977963C381B3A509A8",
+      "service_code": "113505250038505881400201430200201",
+      "authority": "永春县人力资源和社会保障局",
+      "official_version": "1",
+      "directory_city": "泉州市",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "c535d2d00bb7e8a47dfad8d0c368774e607ac4897bd20cfaf04b55d7c162fb30"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

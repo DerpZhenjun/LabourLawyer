@@ -71,7 +71,7 @@ from regional_fujian_huian_quangang_nov1 import (
     ADAPTER as HQ_ADAPTER, REGIONS as HQ_REGIONS)
 from regional_quanzhou_next4 import (
     with_capabilities as with_qz_capabilities, checked_adapter as checked_qz_adapter,
-    ADAPTER as QZ_ADAPTER, REGIONS as QZ_REGIONS)
+    ADAPTER as QZ_ADAPTER, SUPPORTED_REGIONS as QZ_REGIONS)
 
 def jiangsu_e_binding(guide,template,root=None):
     try:return jiangsu_e_contract(guide,template,root=root)['kind']
