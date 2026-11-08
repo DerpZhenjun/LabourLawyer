@@ -39,6 +39,11 @@ XIANGCHENG_BASE = LOCALITIES + '/zhangzhou-own-source'
 XIANGCHENG_STAGE_RECEIPT = XIANGCHENG_BASE + '/WORD-PREFLIGHT.json'
 XIANGCHENG_STAGE_SHA256 = '2031524a853e6c2c478478c8314e3d05650778eb340577844fe18030abc85f92'
 XIANGCHENG_SOURCE_FREEZE_SHA256 = '4c41d8d1717ffa7d34ba01d2ae7bf6757b169f1d48474d155121aac1a976f21a'
+LONGHAI_CODE = '350681'
+LONGHAI_BASE = LOCALITIES + '/zhangzhou-longhai-own-source'
+LONGHAI_STAGE_RECEIPT = LONGHAI_BASE + '/WORD-PREFLIGHT.json'
+LONGHAI_STAGE_SHA256 = '651c28d38274c3837b1f0573fe26143c14f438bdbb36d23decff8a92c093c2a1'
+LONGHAI_SOURCE_FREEZE_SHA256 = '12d06ae95b62ae8482f905e05e79b01cf832f527d308cdaf8a2d3ff618009bac'
 REGIONS = {
     '350582': {
         'district': '晋江市', 'source_id': 'd8353a4bb91532863fb03802',
@@ -86,6 +91,16 @@ SUPPORTED_REGIONS = {
         'source_manifest_sha256': 'f00f84d5e6ed1a90e7d064760966c36735950d2e734c2fa6493db2186956ab41',
         'original_kinds': ('application', 'evidence'),
     },
+    LONGHAI_CODE: {
+        'district': '龙海区', 'source_id': 'ed191bcdf82538767ff7bc25',
+        'source_manifest_sha256': '60cb15eedb5f3d3fa70c2cd38037c93ab972e3866f530cf9fb65f6c6251bdafc',
+        'original_kinds': ('application', 'evidence'),
+    },
+}
+_CANDIDATE_PREFLIGHTS = {
+    INVESTMENT_CODE: (INVESTMENT_BASE, INVESTMENT_STAGE_RECEIPT, INVESTMENT_STAGE_SHA256, INVESTMENT_SOURCE_FREEZE_SHA256),
+    XIANGCHENG_CODE: (XIANGCHENG_BASE, XIANGCHENG_STAGE_RECEIPT, XIANGCHENG_STAGE_SHA256, XIANGCHENG_SOURCE_FREEZE_SHA256),
+    LONGHAI_CODE: (LONGHAI_BASE, LONGHAI_STAGE_RECEIPT, LONGHAI_STAGE_SHA256, LONGHAI_SOURCE_FREEZE_SHA256),
 }
 _MODELS = {'application': Application, 'evidence': Evidence}
 _FAILURES = (ValueError, OSError, TypeError, KeyError)
@@ -113,10 +128,9 @@ def _read(root, name):
 
 def _source_folder(code):
     _require(type(code) is str and code in SUPPORTED_REGIONS)
-    if code == XIANGCHENG_CODE:
-        return f'{XIANGCHENG_BASE}/{code}'
-    if code == INVESTMENT_CODE:
-        return f'{INVESTMENT_BASE}/{code}'
+    if code in _CANDIDATE_PREFLIGHTS:
+        base, *_ = _CANDIDATE_PREFLIGHTS[code]
+        return f'{base}/{code}'
     return f'{DY_BASE if code in DY_REGIONS else BASE}/{code}'
 
 
@@ -184,16 +198,9 @@ def _staged_guide(code, *, root):
         return _word_preflight_guide(
             guide, DY_STAGE_RECEIPT, DY_STAGE_SHA256, DY_SOURCE_FREEZE_SHA256, 12, root=root,
         )
-    if code == INVESTMENT_CODE:
-        return _word_preflight_guide(
-            guide, INVESTMENT_STAGE_RECEIPT, INVESTMENT_STAGE_SHA256,
-            INVESTMENT_SOURCE_FREEZE_SHA256, 6, root=root,
-        )
-    if code == XIANGCHENG_CODE:
-        return _word_preflight_guide(
-            guide, XIANGCHENG_STAGE_RECEIPT, XIANGCHENG_STAGE_SHA256,
-            XIANGCHENG_SOURCE_FREEZE_SHA256, 6, root=root,
-        )
+    if code in _CANDIDATE_PREFLIGHTS:
+        _, receipt, stage_sha, source_sha = _CANDIDATE_PREFLIGHTS[code]
+        return _word_preflight_guide(guide, receipt, stage_sha, source_sha, 6, root=root)
     raw = _read(root, REVIEW_RECEIPT)
     _require(sha256(raw).hexdigest() == STAGE_SHA256)
     receipt = strict_json(raw)
