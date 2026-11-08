@@ -554,3 +554,27 @@ class LongyanMunicipalCandidateTests(_MunicipalCandidateChecks, TestCase):
     region = {'province': 'fujian', 'city': '龙岩市', 'district': '市本级'}
     source_folder = 'longyan-municipal-own-source/350800'
     foreign_code = '350802'
+
+
+class YouxiCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350426'
+    source_id = 'c4a1025ea6a8038fcb55baa3'
+    source_version = '2ef0c5c3cec90a841d088dea938e4addb098852b97f9bcaefaaf9b6c18fe4227'
+    authority = '尤溪县人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    expected_kinds = {'evidence', 'application'}
+    region = {'province': 'fujian', 'city': '三明市', 'district': '尤溪县'}
+    source_folder = 'sanming-youxi-own-source/350426'
+    foreign_code = '350825'
+
+
+class SanmingMunicipalCandidateTests(_MunicipalCandidateChecks, TestCase):
+    code = '350400'
+    source_id = 'da959113b9c50e887043f638'
+    source_version = 'c796921f5893dcce538f51a44393332cdb8b2e95f426a0476ea965dad9e03390'
+    authority = '三明市人力资源和社会保障局'
+    handling_form = '窗口办，网上办'
+    expected_kinds = {'application'}
+    region = {'province': 'fujian', 'city': '三明市', 'district': '市本级'}
+    source_folder = 'sanming-municipal-own-source/350400'
+    foreign_code = '350426'

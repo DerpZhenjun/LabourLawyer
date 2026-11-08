@@ -396,6 +396,16 @@ LONGYAN_NEXT_THREE_REGIONS = {
 }
 FUJIAN_MUNICIPAL_SELECTION = "市本级"
 FUJIAN_MUNICIPAL_REGIONS = {
+    '350400': {
+        'district': '',
+        'city': '三明市',
+        'source_base': LOCALITIES + '/sanming-municipal-own-source',
+        'source_id': 'da959113b9c50e887043f638',
+        'source_manifest_sha256': 'c796921f5893dcce538f51a44393332cdb8b2e95f426a0476ea965dad9e03390',
+        'stage_sha256': 'fc29ca02fbe3ab6888acc6463bd046a500564397d5b6749e0203ca8fbf716b48',
+        'source_freeze_sha256': '8d685d5c892e93e1e4061b9a08bb3957591e28bbb73103f6cc0337797d4e535d',
+        'original_kinds': ('application',),
+    },
     '350900': {
         'district': '',
         'city': '宁德市',
@@ -427,6 +437,18 @@ FUJIAN_MUNICIPAL_REGIONS = {
         'original_kinds': ('application', 'evidence'),
     },
 }
+SANMING_YOUXI_REGIONS = {
+    '350426': {
+        'district': '尤溪县',
+        'city': '三明市',
+        'source_base': LOCALITIES + '/sanming-youxi-own-source',
+        'source_id': 'c4a1025ea6a8038fcb55baa3',
+        'source_manifest_sha256': '2ef0c5c3cec90a841d088dea938e4addb098852b97f9bcaefaaf9b6c18fe4227',
+        'stage_sha256': 'c7a60a4f2d9fad5ea7ba8cc5bba75d359c08f911e0a94812b0bb9f0d56489b69',
+        'source_freeze_sha256': '9dd7b343fe02951a902afae25bb403f6df9bcf8440e01fa68c70349a9e6a8f9e',
+        'original_kinds': ('application', 'evidence'),
+    },
+}
 SUPPORTED_REGIONS = {
     **REGIONS,
     **DY_REGIONS,
@@ -443,6 +465,7 @@ SUPPORTED_REGIONS = {
     **LONGYAN_NEXT_TWO_REGIONS,
     **LONGYAN_NEXT_THREE_REGIONS,
     **FUJIAN_MUNICIPAL_REGIONS,
+    **SANMING_YOUXI_REGIONS,
     INVESTMENT_CODE: {
         'district': '台商投资区', 'source_id': 'cf089c0b9ee9b764b564e269',
         'source_manifest_sha256': '297b56b936b8c43d5598c4fc115c26b881936d21fcd3da08722523ca74319fc2',
@@ -488,6 +511,7 @@ _CANDIDATE_PREFLIGHTS = {
             (LONGYAN_FIRST_TWO_BASE, LONGYAN_FIRST_TWO_REGIONS),
             (LONGYAN_NEXT_TWO_BASE, LONGYAN_NEXT_TWO_REGIONS),
             (LONGYAN_NEXT_THREE_BASE, LONGYAN_NEXT_THREE_REGIONS),
+            (LOCALITIES + '/sanming-youxi-own-source', SANMING_YOUXI_REGIONS),
         )
         for code, profile in regions.items()
     },
