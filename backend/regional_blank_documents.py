@@ -140,6 +140,11 @@ LOCAL_PROOFS = {
  '320105':('nanjing-jianye-own-source','district','5900d5d4b2d404e62ba8ff68ba8c64976cee1ec3932709c9ebaae4e88be77cea','a21114dcb5f149a3f5fafae921d262dec9a1c4de2ac482cc9d8eedd33ca2ac3f'),
  '320106':('nanjing-gulou-own-source','district','9d167f15e179e903b7a44091082eea7312a8f41b438a2a4a2e726a87235c905b','ae8a1e7795f297944c96dc1ead405269a994d9f41a49803aa0a5b9fd5a567614'),
  '320102':('nanjing-xuanwu-own-source','district','65b8f6ca542563fce642fac03a7287b1d09f99259b0898b19e0dca0c65c35394','6a018be169c15a042cf16262155632623160612c185762407f9ca0d65182c866'),
+ '320113':('nanjing-qixia-own-source','district','7f047779de042ebfc20ff57547ab2c3fe19fb01aaebaa0839d3016cd93641465','5f4ee06be030bf0d4803c41f05bae4db7e499c7e9a13c5126ea9d4867c44452a'),
+ '320114':('nanjing-yuhuatai-own-source','district','5f79ff1833dffd70628e4fd63e23b94cf4262ebac4ddb9b07a12c2f556fef03e','a8b5bea8da17a897b9e26acb1d2b8a29c17e08b132a8702a52f4cef3cebd14c9'),
+ '320115':('nanjing-jiangning-own-source','district','c9d327ae3b65e1adfd2322bf812a9f14a315a4798f1f460e1951da89740ca7f8','9c6ccaeebb504f1a172a29b7ebb4535745013318ae3fc9f59471492b2702b5cb'),
+ '320117':('nanjing-lishui-own-source','district','d59be6ffe6c8b9bb6b0ae7c471369fd506244b98949a718c6219703903581926','d0053dc3192ce52f4fc14ad4eb3c712a49b224f4ebff647294def2f08d3867c4'),
+ '320118':('nanjing-gaochun-own-source','district','d84d7a25d1d42c1ede25428802ee0634dbf1f98671ddaf19ab01e4c0378d67cb','e1e92a55cc89596290f193e714e33665d9270e74aba79293e112d2ee27e6665f'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -463,6 +468,21 @@ EXACT_SOURCES={
     '1d208301-c481-486d-abb9-57fed2299d89':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
  '320102':('南京市','玄武区','61b9be6ddf4ffaa18dffa799',{
     '6213e5bb-700e-40e8-a830-947ca78aa6f9':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3')}),
+ '320113':('南京市','栖霞区','b42fc4cfe005e506354b7f48',{
+    'e9a6fb10-0302-4817-9538-318a739f83be':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '4dc0c076-fed7-4221-a2a3-537d39bf7f7a':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320114':('南京市','雨花台区','c07ce7c97715dd6319f2614e',{
+    '0ed5fd93-b609-4add-adf0-86789ae549eb':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'f0e6b711-159c-434d-acc2-a2dc68e0ca64':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320115':('南京市','江宁区','a9703795e53724dfc0d2f860',{
+    '227f4213-20bd-46dd-9f8a-881792bb48ff':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '396f76f5-38d7-488f-8911-e5118b075fd3':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320117':('南京市','溧水区','5447c1fb96d1d6594aa857e8',{
+    '56d3bf6d-64a8-4b94-a2c6-6a8bd31a0f6d':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'a8050d0e-9afa-4486-824c-2be060248008':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320118':('南京市','高淳区','d1c79a2e8e0ef7eaa086b36c',{
+    '289722ff-3a57-40e0-8399-ee971579425e':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '689e53e3-0538-4d72-b175-682424c9853d':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -556,6 +576,11 @@ EXACT_IDENTITIES={
  '320105':('南京市建邺区人力资源和社会保障局','11320105012989370J400201430200201'),
  '320106':('南京市鼓楼区人力资源和社会保障局','1132010601299804X7400201430200201'),
  '320102':('南京市玄武区人力资源和社会保障局','113201020129658707400201430200201'),
+ '320113':('栖霞区人力资源和社会保障局','1132011301303324X3400201430200201'),
+ '320114':('南京市雨花台区人力资源和社会保障局','11320114558892685X400201430200201'),
+ '320115':('南京市江宁区人力资源和社会保障局','11320115558867092Y400201430200201'),
+ '320117':('南京市溧水区人力资源和社会保障局','113201240130892785400201430200201'),
+ '320118':('南京市高淳区人力资源和社会保障局','11320125013101345P400201430200201'),
 }
 
 
