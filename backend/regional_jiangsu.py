@@ -217,6 +217,7 @@ def _parse_exact_capture(capture,entry_check,spec):
     channel=resolve_channel(raw,sections['办理流程'],entry_check)
     if '办理形式' in fields:fields['办理形式']['normalized_value']=channel['form']
     materials=[];templates=[]
+    material_ids=set()
     for row in dom.xpath('//*[@id="floor10"]//tr[contains(concat(" ",normalize-space(@class)," ")," tsize ")]'):
         cells=row.xpath('./td')
         if len(cells)!=8:raise ValueError('材料列表列结构已变化')
@@ -224,6 +225,10 @@ def _parse_exact_capture(capture,entry_check,spec):
         details=table_pairs(detail_tables[0]) if detail_tables else {}
         if details.get('材料名称')!=name:raise ValueError('材料详情与当前材料不匹配')
         material_id=digest([code,name])[:20]
+        if material_id in material_ids:
+            material_id=digest([code,name,text(cells[0])])[:20]
+            if material_id in material_ids:raise ValueError('同名材料的官网序号重复，需重新核验')
+        material_ids.add(material_id)
         materials.append({**provenance,'id':material_id,'name':name,'required':text(cells[5]),
                           'copies':re.sub(r'份$','',text(cells[4])),'raw_copies':text(cells[4]),
                           'original_copy':details.get('材料类型') or None,
@@ -241,7 +246,7 @@ def _parse_exact_capture(capture,entry_check,spec):
                               'original_name':name+'（'+label+'）','official_kind':kind,
                               'download_url':download,'download_status':'not_downloaded',
                               'can_generate':False,'document_types':[],'file_type':None})
-    if len(materials)!=4:raise ValueError('材料数量已变化，请重新核验页面')
+    if len(materials)!=spec.get('expected_material_count',4):raise ValueError('材料数量已变化，请重新核验页面')
     return {'province':'jiangsu','province_name':'江苏省','city':spec['city'],'district':district,
             'region_code':code,'service_name':'劳动人事争议仲裁申请','service_code':task,
             'source_url':url,'source_title':capture['title'],'authority':raw['实施主体'],

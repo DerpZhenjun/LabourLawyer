@@ -8,6 +8,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 from fastapi import FastAPI
+from lxml import html
 from fastapi.testclient import TestClient
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
@@ -44,6 +45,40 @@ class HaizhouCaptureTests(unittest.TestCase):
         self.assertIsNone(g['channel']['entry_url'])
         self.assertTrue(all(t['source_url']==g['source_url'] and t['region_code']=='320706' for t in g['templates']))
         self.assertFalse(any(t['can_generate'] for t in with_reference_capabilities(g)['templates']))
+
+    def test_reviewed_repeat_material_rows_keep_separate_template_links(self):
+        capture = self.capture()
+        spec = {
+            'region_code': '320706', 'task': '11320706014267312C400201430200201',
+            'district': '海州区', 'city': '连云港市', 'host': 'lyghz.jszwfw.gov.cn',
+            'path': '/jszwfw/publicservice/itemlist/showDetail.do', 'item': '11320706014267312C4002014302002',
+            'params': {}, 'authority': '连云港市海州区人力资源和社会保障局',
+            'expected_material_count': 5,
+        }
+        source = self.parse(capture)
+        doc = html.fromstring(capture['html'])
+        row = doc.xpath('//*[@id="floor10"]//tr[contains(concat(" ", normalize-space(@class), " "), " tsize ")]')[2]
+        repeated = copy.deepcopy(row)
+        annexes = [t['id'] for t in source['templates'] if t['material_id'] == source['materials'][2]['id']]
+        replacement_ids = ['11111111-1111-4111-8111-111111111111', '22222222-2222-4222-8222-222222222222']
+        repeated.xpath('./td')[0].text = '5'
+        for anchor in repeated.xpath('./td[3]//a[@onclick]'):
+            handler = anchor.get('onclick')
+            for old, new in zip(annexes, replacement_ids):
+                handler = handler.replace(old, new)
+            anchor.set('onclick', handler)
+        row.getparent().append(repeated)
+        capture['html'] = html.tostring(doc, encoding='unicode')
+        with self.assertRaisesRegex(ValueError, '材料数量'):
+            regional_jiangsu._parse_exact_capture(capture, None, {**spec, 'expected_material_count': 4})
+        guide = regional_jiangsu._parse_exact_capture(capture, None, spec)
+        self.assertEqual(len(guide['materials']), 5)
+        first, duplicate = guide['materials'][2], guide['materials'][4]
+        self.assertEqual(first['name'], duplicate['name'])
+        self.assertEqual(first['id'], source['materials'][2]['id'])
+        self.assertNotEqual(first['id'], duplicate['id'])
+        self.assertEqual({t['id'] for t in guide['templates'] if t['material_id'] == duplicate['id']},
+                         set(replacement_ids))
 
     def test_wrong_portal_authority_task_or_visible_district_is_rejected(self):
         self.parse()

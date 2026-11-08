@@ -44,6 +44,18 @@ AREAS = {
                '5fe62cc7-974d-4731-8a9e-6ab4cc00f549', 'e0cdb850-aea7-4189-b982-b563c08ff372'),
     '320305': ('徐州市', '贾汪区', 'xuzhou-jiawang', 'b3eb9f21c007ba0b14abef76', '320305',
                '7c8d87a6-9978-4c1d-a9bd-c258ffc7edd7', '24ada876-fe3a-4e29-9ea4-c6639149efd0'),
+    '320312': ('徐州市', '铜山区', 'xuzhou-tongshan', '2d647bb6acf5a4a6f1d6c81a', '320312',
+               '787e934f-1526-4081-ba1b-c787801f54f6', '8b0ceaf3-0696-48ca-a02c-5f7345792649'),
+    '320321': ('徐州市', '丰县', 'xuzhou-feng', '6523327f018a58fffc5f1e5e', '320321',
+               '10a8ef9b-dff0-4fb2-8d85-902d8f42e6cf', 'bb897fd3-e822-43f5-9074-e50cbd56d12a'),
+    '320322': ('徐州市', '沛县', 'xuzhou-pei', 'b79b5838dfd99e297b127f05', '320322',
+               '249c5be1-ddbe-4dd1-b7a3-e30a6a8e1bdf', '1594c8ba-1c01-400b-9f0d-d5663877f61d'),
+    '320324': ('徐州市', '睢宁县', 'xuzhou-suining', '5d71b17ee619a49ab0b3e47a', '320324',
+               'eb891ead-804a-4718-ad78-28109de610a3', 'bd2224b9-7a18-4436-9fc1-325dfbb94e9b'),
+    '320381': ('徐州市', '新沂市', 'xuzhou-xinyi', '020c3850ed4cd886ff0d2739', '320381',
+               '4b37d83f-2bc2-4bb9-aaa3-e4fb69c76bab', '8a03c432-a9fc-46c6-8652-3f62d9eb6dde'),
+    '320382': ('徐州市', '邳州市', 'xuzhou-pizhou', 'd2a0a2956e6a022d7bef2cf7', '320382',
+               'b02a3340-4ef3-4230-84f0-39b595fd94b0', 'fd36a7f6-e516-4d36-bbab-62b09fef3538'),
 }
 
 

@@ -81,6 +81,12 @@ LOCAL_PROOFS = {
  '320302':('xuzhou-gulou-own-source','district','45cd224a0f524784f7235be6e99fc54ebcee82c67d9acb6e27dfac4f7ba9ca2f','950d444824a51b04a721e99105fbe6ab5931d6dd504fe2d00544a208b65e3fe8'),
  '320303':('xuzhou-yunlong-own-source','district','9c3b33917fad0dafeae996833eb534456fd44ac8b0780347ce1175a97e50b539','16cd8629d41523776fff14e2a3215d9e36e133cbd5ae981e102fc8ef8e1f5b90'),
  '320305':('xuzhou-jiawang-own-source','district','a155d0a22e5c0752286d4d51f58f390ce74541473755e3167f8f9a6a8c4f1ff1','adfaac591bb6a268a79fc06fc85dd05fdd272909e77a6f72bfcdce99f49e5fb2'),
+ '320312':('xuzhou-tongshan-own-source','district','353d8a27d66c0ea033d82dc37cc3c79bb863fd31113e48048e915e1f5ef3ca34','63f65a69972e259dd1f5763e889c20cd3f62be4a2618b00c51627a43438d5219'),
+ '320321':('xuzhou-feng-own-source','district','00fe7d5e095e2b5caa82a22a634e0d9d4caa9dc1dd89f1e968c88224275a0ffb','7757fb990fa09e0e1e0e699479f8eca5fb7a40c4f2146fb6805637b4351804a5'),
+ '320322':('xuzhou-pei-own-source','district','d78fd8fefa50c5dbe7d5229d821f43a3c7fa3d55ef28f322d8e1155e35108eaa','e0dcec8e7702f30a672315a7e01abdc64c521e0e41e7ad7ecac05f7273e7b11f'),
+ '320324':('xuzhou-suining-own-source','district','c57be529a40f834a135b8b389a501ec732b203e48af6fb64198e253dc6c3df3e','823c2abf97bc182358b665a109391fe9f704f2318fc0da7c24c12d8ed95d437b'),
+ '320381':('xuzhou-xinyi-own-source','district','96bcc337bbfe75ae94475c630e6c2aef86a7604dc34fa4a4ae310783a4bfe9a8','311b2335975be4b0fdc9775d9106e252fa3973853c2f350ed3df50b1d33c39b6'),
+ '320382':('xuzhou-pizhou-own-source','district','cc2be80db9e79c3bdf4e37525d1c554bb939f5aaf7667666a36d64b9de700d39','b067167cf9ba3e9cf1c2da42d95e485f886571aebaeb06862cdb46a4ff9ce5e6'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -229,6 +235,24 @@ EXACT_SOURCES={
  '320305':('徐州市','贾汪区','b3eb9f21c007ba0b14abef76',{
     '7c8d87a6-9978-4c1d-a9bd-c258ffc7edd7':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
     '24ada876-fe3a-4e29-9ea4-c6639149efd0':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320312':('徐州市','铜山区','2d647bb6acf5a4a6f1d6c81a',{
+    '787e934f-1526-4081-ba1b-c787801f54f6':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '8b0ceaf3-0696-48ca-a02c-5f7345792649':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320321':('徐州市','丰县','6523327f018a58fffc5f1e5e',{
+    '10a8ef9b-dff0-4fb2-8d85-902d8f42e6cf':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'bb897fd3-e822-43f5-9074-e50cbd56d12a':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320322':('徐州市','沛县','b79b5838dfd99e297b127f05',{
+    '249c5be1-ddbe-4dd1-b7a3-e30a6a8e1bdf':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '1594c8ba-1c01-400b-9f0d-d5663877f61d':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320324':('徐州市','睢宁县','5d71b17ee619a49ab0b3e47a',{
+    'eb891ead-804a-4718-ad78-28109de610a3':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'bd2224b9-7a18-4436-9fc1-325dfbb94e9b':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320381':('徐州市','新沂市','020c3850ed4cd886ff0d2739',{
+    '4b37d83f-2bc2-4bb9-aaa3-e4fb69c76bab':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '8a03c432-a9fc-46c6-8652-3f62d9eb6dde':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320382':('徐州市','邳州市','d2a0a2956e6a022d7bef2cf7',{
+    'b02a3340-4ef3-4230-84f0-39b595fd94b0':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'fd36a7f6-e516-4d36-bbab-62b09fef3538':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -263,6 +287,12 @@ EXACT_IDENTITIES={
  '320302':('徐州市鼓楼区人力资源和社会保障局','11320302014058019W400201430200201'),
  '320303':('徐州市云龙区人力资源和社会保障局','11320303014062499N400201430200201'),
  '320305':('徐州市贾汪区人力资源和社会保障局','113203050140711415400201430200201'),
+ '320312':('徐州市铜山区人力资源和社会保障局','11320323014088744W400201430200201'),
+ '320321':('丰县人力资源和社会保障局','11320321561801182G400201430200201'),
+ '320322':('沛县人力资源和社会保障局','11320322014085105M400201430200201'),
+ '320324':('睢宁县人力资源和社会保障局','11320324014093076G400201430200201'),
+ '320381':('新沂市人力资源与社会保障局','113203810141088056400201430200201'),
+ '320382':('邳州市人力资源和社会保障局','11320382014097421F400201430200201'),
 }
 
 
