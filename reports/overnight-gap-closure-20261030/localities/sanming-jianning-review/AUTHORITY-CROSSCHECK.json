@@ -1,0 +1,29 @@
+{
+  "reviewed_at": "2026-11-08T07:07:39.414084+00:00",
+  "region_code": "350430",
+  "source_id": "64ad9887fd1677ef049bac0b",
+  "official_guide": {
+    "url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=FBCE623E95C81F33F1AE7E98B7AAEFA0",
+    "capture_sha256": "26fae50d8ac1352f87fbbeb0d3f773a09c73bf932896cb7c58e1035a0a7f6c94",
+    "authority_raw": "建宁县人力资源和社会保障局",
+    "processing_body": "建宁县劳动人事争议仲裁院"
+  },
+  "county_budget": {
+    "url": "https://www.fjjn.gov.cn/zwgk/zdlyxxgk/czzj_1/yjsgk/bmyjsgk/bmjsgk/202608/P020260819590887760144.pdf",
+    "sha256": "4951ca27c5a8638e0bc2342d4fd10e0bf58d25536eee0ad6c8d44309df8e05ce",
+    "bytes": 886936,
+    "duty_page": 7,
+    "reporting_unit_pages": [
+      8,
+      9
+    ],
+    "authority_name": "建宁县民政和人力资源社会保障局",
+    "listed_unit": "建宁县劳动人事争议仲裁院"
+  },
+  "appointment": {
+    "url": "https://www.fjjn.gov.cn/zwgk/tzgg/gggs/202610/t20261027_2328985.htm",
+    "visible_body_sha256": "6cd88afbddb20896c331f0d058466c378d24ec547eb0cd17d4182e762ab2898c",
+    "issuing_body": "建宁县劳动人事争议仲裁委员会"
+  },
+  "conclusion": "Official guide names the county arbitration institute. County budget identifies the same institute under the current department and confirms the county-wide arbitration responsibility. The original guide authority string is preserved."
+}

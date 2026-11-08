@@ -491,6 +491,18 @@ SANMING_QINGLIU_REGIONS = {
         'original_kinds': ('application',),
     },
 }
+SANMING_JIANNING_REGIONS = {
+    '350430': {
+        'district': '建宁县',
+        'city': '三明市',
+        'source_base': LOCALITIES + '/sanming-jianning-own-source',
+        'source_id': '64ad9887fd1677ef049bac0b',
+        'source_manifest_sha256': 'c8021b2eca9928d2dfc4defabab59df134f93d837c67c5f768762abc661cf342',
+        'stage_sha256': '7278b16faf4fc70defd5a5db4fb50ed9a90d206f676253d8bdf9d0e426c7456a',
+        'source_freeze_sha256': '78d79c305e8ae44b9c0abc031e5d1f388121a5e96e7d9304220c2ef7040472a3',
+        'original_kinds': ('application', 'evidence'),
+    },
+}
 SUPPORTED_REGIONS = {
     **REGIONS,
     **DY_REGIONS,
@@ -510,6 +522,7 @@ SUPPORTED_REGIONS = {
     **SANMING_YOUXI_REGIONS,
     **SANMING_NEXT_THREE_REGIONS,
     **SANMING_QINGLIU_REGIONS,
+    **SANMING_JIANNING_REGIONS,
     INVESTMENT_CODE: {
         'district': '台商投资区', 'source_id': 'cf089c0b9ee9b764b564e269',
         'source_manifest_sha256': '297b56b936b8c43d5598c4fc115c26b881936d21fcd3da08722523ca74319fc2',
@@ -558,6 +571,7 @@ _CANDIDATE_PREFLIGHTS = {
             (LOCALITIES + '/sanming-youxi-own-source', SANMING_YOUXI_REGIONS),
             (SANMING_NEXT_THREE_BASE, SANMING_NEXT_THREE_REGIONS),
             (LOCALITIES + '/sanming-qingliu-own-source', SANMING_QINGLIU_REGIONS),
+            (LOCALITIES + '/sanming-jianning-own-source', SANMING_JIANNING_REGIONS),
         )
         for code, profile in regions.items()
     },

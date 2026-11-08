@@ -618,3 +618,13 @@ class QingliuCandidateTests(_FujianCandidateChecks, TestCase):
     region = {'province': 'fujian', 'city': '三明市', 'district': '清流县'}
     source_folder = 'sanming-qingliu-own-source/350423'
     foreign_code = '350426'
+
+
+class JianningCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350430'
+    source_id = '64ad9887fd1677ef049bac0b'
+    source_version = 'c8021b2eca9928d2dfc4defabab59df134f93d837c67c5f768762abc661cf342'
+    authority = '建宁县人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '三明市', 'district': '建宁县'}
+    source_folder = 'sanming-jianning-own-source/350430'
+    foreign_code = '350426'
