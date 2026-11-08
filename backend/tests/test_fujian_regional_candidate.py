@@ -674,3 +674,26 @@ class HaicangCandidateTests(_FujianCandidateChecks, TestCase):
     source_folder = 'xiamen-haicang-own-source/350205'
     foreign_code = '350430'
     expected_kinds = {'application'}
+
+
+class TonganCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350212'
+    source_id = '4465250d78878e8a94374e2b'
+    source_version = 'cc64414b20adc3dfdad3c04c86b198785e0e878f43dbf98a0df8c767067cb6cd'
+    authority = '同安区人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '厦门市', 'district': '同安区'}
+    source_folder = 'xiamen-tongan-own-source/350212'
+    foreign_code = '350203'
+
+
+class XianganCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350213'
+    source_id = '1f622c6bd454f5515906f8c3'
+    source_version = '279bc36eb43e9b09e6dfe35a471cd4cdc64a9a621266b7934f28bf053c76cbaf'
+    authority = '厦门市翔安区人力资源和社会保障局'
+    handling_form = '窗口办，网上办'
+    region = {'province': 'fujian', 'city': '厦门市', 'district': '翔安区'}
+    source_folder = 'xiamen-xiangan-own-source/350213'
+    foreign_code = '350203'
+    expected_kinds = {'application'}

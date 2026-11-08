@@ -545,6 +545,28 @@ XIAMEN_FIRST_FOUR_REGIONS = {
         'original_kinds': ('application',),
     },
 }
+XIAMEN_NEXT_TWO_REGIONS = {
+    '350212': {
+        'district': '同安区',
+        'city': '厦门市',
+        'source_base': LOCALITIES + '/xiamen-tongan-own-source',
+        'source_id': '4465250d78878e8a94374e2b',
+        'source_manifest_sha256': 'cc64414b20adc3dfdad3c04c86b198785e0e878f43dbf98a0df8c767067cb6cd',
+        'stage_sha256': 'c4d41748ba4737c3f7a7be658b4db7013c086d2d9d32b4364a6c787abe79a578',
+        'source_freeze_sha256': '45602c00a35ac257da4d3502ba8a97f000ee12e6c7f0c1d61d421aa73f12fb48',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350213': {
+        'district': '翔安区',
+        'city': '厦门市',
+        'source_base': LOCALITIES + '/xiamen-xiangan-own-source',
+        'source_id': '1f622c6bd454f5515906f8c3',
+        'source_manifest_sha256': '279bc36eb43e9b09e6dfe35a471cd4cdc64a9a621266b7934f28bf053c76cbaf',
+        'stage_sha256': 'ce68c7027109f6089e538bd4a3d8e113ae4786d395050a80f0c1bee13695c2de',
+        'source_freeze_sha256': 'e422316989b86966d21823715e0568faaab51d7b2b9803558b7f5fddada0a74d',
+        'original_kinds': ('application',),
+    },
+}
 SUPPORTED_REGIONS = {
     **REGIONS,
     **DY_REGIONS,
@@ -566,6 +588,7 @@ SUPPORTED_REGIONS = {
     **SANMING_QINGLIU_REGIONS,
     **SANMING_JIANNING_REGIONS,
     **XIAMEN_FIRST_FOUR_REGIONS,
+    **XIAMEN_NEXT_TWO_REGIONS,
     INVESTMENT_CODE: {
         'district': '台商投资区', 'source_id': 'cf089c0b9ee9b764b564e269',
         'source_manifest_sha256': '297b56b936b8c43d5598c4fc115c26b881936d21fcd3da08722523ca74319fc2',
@@ -588,7 +611,8 @@ _CANDIDATE_PREFLIGHTS = {
             profile['source_base'], f"{profile['source_base']}/{code}/WORD-PREFLIGHT.json",
             profile['stage_sha256'], profile['source_freeze_sha256'],
         )
-        for code, profile in {**FUJIAN_MUNICIPAL_REGIONS, **XIAMEN_FIRST_FOUR_REGIONS}.items()
+        for regions in (FUJIAN_MUNICIPAL_REGIONS, XIAMEN_FIRST_FOUR_REGIONS, XIAMEN_NEXT_TWO_REGIONS)
+        for code, profile in regions.items()
     },
     INVESTMENT_CODE: (INVESTMENT_BASE, INVESTMENT_STAGE_RECEIPT, INVESTMENT_STAGE_SHA256, INVESTMENT_SOURCE_FREEZE_SHA256),
     XIANGCHENG_CODE: (XIANGCHENG_BASE, XIANGCHENG_STAGE_RECEIPT, XIANGCHENG_STAGE_SHA256, XIANGCHENG_SOURCE_FREEZE_SHA256),

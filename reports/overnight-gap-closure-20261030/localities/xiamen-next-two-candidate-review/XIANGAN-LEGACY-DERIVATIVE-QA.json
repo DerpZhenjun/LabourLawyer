@@ -1,0 +1,32 @@
+{
+  "at": "2026-11-08T07:23:55.044162+00:00",
+  "source_id": "1f622c6bd454f5515906f8c3",
+  "attachment_id": "A637EF6EAD573C2578CA358269DED78A",
+  "original_sha256": "57e6ecded6e510d5adfa320c4ef82887ad5aa37d4f895f191ad78ace239b6613",
+  "derivative_sha256": "8bff7ad229e0b515e48f51fd97757953af6989937976ec39be6c962f771a2fae",
+  "rendered_png_sha256": "9546ccc7f33d9da32e552ffe2516e11acbe8da861f640ba63e063d82470f5c9d",
+  "render_equal": "BYTE_IDENTICAL_SINGLE_PAGE_AT_1600PX",
+  "original_unchanged": true,
+  "external_relationships": 0,
+  "rows": 10,
+  "columns": [
+    "序号                                        序号",
+    "证据名称",
+    "来源",
+    "页码",
+    "证明对象",
+    "原件/复印件"
+  ],
+  "body_markers": [
+    "劳动争议仲裁证据清单",
+    "（第   次举证，□正本/□副本）",
+    "案号：         仲案[20   ]    号",
+    "申请人：",
+    "被申请人：",
+    "第三人：",
+    "举证方：□申请人/□被申请人□第三人  ",
+    "举证人（签名或盖章）：",
+    "提交日期："
+  ],
+  "status": "LOCAL_LAYOUT_QA_ONLY_GENERATION_ADAPTER_PENDING"
+}
