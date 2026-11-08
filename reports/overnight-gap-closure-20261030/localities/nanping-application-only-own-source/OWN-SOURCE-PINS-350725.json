@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "0d268279a2ced36a4d00af13dab4a549b7684252b5cd970e054462b922e6d2ee",
+  "regions": {
+    "350725": {
+      "region_code": "350725",
+      "district": "政和县",
+      "directory_city": "南平市",
+      "source_id": "8cbb28e92dec4b9e84175e26",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=CA0FD08AFAB1A0000FF38C6768012850",
+      "service_unid": "CA0FD08AFAB1A0000FF38C6768012850",
+      "service_code": "113507250040072421400201430200201",
+      "authority": "政和县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application"
+      ],
+      "source_manifest_sha256": "7933966b1ba6e4315aa7dfbb556827aeba69f6c6146d1f33e51d5b5348f0b07e"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "9b998011fcded9622fdabbfc07aa4436b4b0b857d73958850bbca7f47c7771af",
+  "regions": {
+    "350722": {
+      "region_code": "350722",
+      "district": "浦城县",
+      "directory_city": "南平市",
+      "source_id": "a5f6eb9afcdba92231eccec3",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=45370BF66470F6BBFCFFAEBE298F552F",
+      "service_unid": "45370BF66470F6BBFCFFAEBE298F552F",
+      "service_code": "11350722003988341E400201430200201",
+      "authority": "浦城县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application"
+      ],
+      "source_manifest_sha256": "c67a884ab39a3567ac59a367956016005f7d7d23ab29c73b8415857b92629ffc"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
