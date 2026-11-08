@@ -45,6 +45,7 @@ LONGHAI_STAGE_RECEIPT = LONGHAI_BASE + '/WORD-PREFLIGHT.json'
 LONGHAI_STAGE_SHA256 = '651c28d38274c3837b1f0573fe26143c14f438bdbb36d23decff8a92c093c2a1'
 LONGHAI_SOURCE_FREEZE_SHA256 = '12d06ae95b62ae8482f905e05e79b01cf832f527d308cdaf8a2d3ff618009bac'
 ZHANGZHOU_FOUR_BASE = LOCALITIES + '/zhangzhou-four-own-source'
+ZHANGZHOU_NEXT_FOUR_BASE = LOCALITIES + '/zhangzhou-next-four-own-source'
 REGIONS = {
     '350582': {
         'district': '晋江市', 'source_id': 'd8353a4bb91532863fb03802',
@@ -113,10 +114,45 @@ ZHANGZHOU_FOUR_REGIONS = {
         'original_kinds': ('application', 'evidence'),
     },
 }
+ZHANGZHOU_NEXT_FOUR_REGIONS = {
+    '350622': {
+        'district': '云霄县',
+        'source_id': '41be287d59db2eae92eac0f1',
+        'source_manifest_sha256': '5edc06c82bc94fa0452c3ea8edc3d8d1d9d6ef586bf19f55f5ded5786d860be5',
+        'stage_sha256': 'c2bd4a357692389e96c5bc9f714a2a10857a0555b48bd8e6a13bb9926b8d2def',
+        'source_freeze_sha256': '79abef3428fc5bbd6e289ee25ee1a9ba34a1d49e0a7454b7771bce6ae74dd6a3',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350624': {
+        'district': '诏安县',
+        'source_id': '32f582f436d0fcb48afeb66f',
+        'source_manifest_sha256': '04159ca519d958593a71b8147c0d517268bbbb7f9a82f535b4230a0be31ff7fe',
+        'stage_sha256': '8b9a57a262f518b8f041fea6d1298d63859e23427e3b02d650750651e97f754a',
+        'source_freeze_sha256': '301c204373f6aeef9c9ec9335b768cdb82ddad221815f1e675aaa26d6bbc722a',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350627': {
+        'district': '南靖县',
+        'source_id': '6af5580aaa3c66970cd8c61b',
+        'source_manifest_sha256': 'e2a8449a5f26bed7477dd706167ebcce2137f69fe711eb6335a26f2532ef4477',
+        'stage_sha256': 'b790152f95297a72cfb62200e924bee846494d0674c17dc67672822936c08509',
+        'source_freeze_sha256': '4ed06850ecb05fee7008685245affe3172402beffed8fd9d1b6aa4c8f0dabff0',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350626': {
+        'district': '东山县',
+        'source_id': '2a8fc5dd930c86940a551377',
+        'source_manifest_sha256': 'bce4b0e47eaad6a9508e295e64da4a720ca9d8d06e7252cf46e92be51b1646e3',
+        'stage_sha256': '15094328b8ffc90e7d4f32129a6b48362fc6da9f00e5a41e8cb39a7436dff781',
+        'source_freeze_sha256': 'ae452dd47d228b7966fadbad8fb8a1a0feb5776d5b7159c6ec23fc6cf62678b4',
+        'original_kinds': ('application', 'evidence'),
+    },
+}
 SUPPORTED_REGIONS = {
     **REGIONS,
     **DY_REGIONS,
     **ZHANGZHOU_FOUR_REGIONS,
+    **ZHANGZHOU_NEXT_FOUR_REGIONS,
     INVESTMENT_CODE: {
         'district': '台商投资区', 'source_id': 'cf089c0b9ee9b764b564e269',
         'source_manifest_sha256': '297b56b936b8c43d5598c4fc115c26b881936d21fcd3da08722523ca74319fc2',
@@ -139,10 +175,14 @@ _CANDIDATE_PREFLIGHTS = {
     LONGHAI_CODE: (LONGHAI_BASE, LONGHAI_STAGE_RECEIPT, LONGHAI_STAGE_SHA256, LONGHAI_SOURCE_FREEZE_SHA256),
     **{
         code: (
-            ZHANGZHOU_FOUR_BASE, f'{ZHANGZHOU_FOUR_BASE}/{code}/WORD-PREFLIGHT.json',
+            base, f'{base}/{code}/WORD-PREFLIGHT.json',
             profile['stage_sha256'], profile['source_freeze_sha256'],
         )
-        for code, profile in ZHANGZHOU_FOUR_REGIONS.items()
+        for base, regions in (
+            (ZHANGZHOU_FOUR_BASE, ZHANGZHOU_FOUR_REGIONS),
+            (ZHANGZHOU_NEXT_FOUR_BASE, ZHANGZHOU_NEXT_FOUR_REGIONS),
+        )
+        for code, profile in regions.items()
     },
 }
 _MODELS = {'application': Application, 'evidence': Evidence}

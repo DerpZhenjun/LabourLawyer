@@ -153,3 +153,43 @@ class HuaanCandidateTests(_ZhangzhouCandidateChecks, TestCase):
     region = {'province': 'fujian', 'city': '漳州市', 'district': '华安县'}
     source_folder = 'zhangzhou-four-own-source/350629'
     foreign_code = '350628'
+
+
+class YunxiaoCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+    code = '350622'
+    source_id = '41be287d59db2eae92eac0f1'
+    source_version = '5edc06c82bc94fa0452c3ea8edc3d8d1d9d6ef586bf19f55f5ded5786d860be5'
+    authority = '云霄县人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '漳州市', 'district': '云霄县'}
+    source_folder = 'zhangzhou-next-four-own-source/350622'
+    foreign_code = '350624'
+
+
+class ZhaoanCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+    code = '350624'
+    source_id = '32f582f436d0fcb48afeb66f'
+    source_version = '04159ca519d958593a71b8147c0d517268bbbb7f9a82f535b4230a0be31ff7fe'
+    authority = '诏安县人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '漳州市', 'district': '诏安县'}
+    source_folder = 'zhangzhou-next-four-own-source/350624'
+    foreign_code = '350622'
+
+
+class NanjingCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+    code = '350627'
+    source_id = '6af5580aaa3c66970cd8c61b'
+    source_version = 'e2a8449a5f26bed7477dd706167ebcce2137f69fe711eb6335a26f2532ef4477'
+    authority = '南靖县人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '漳州市', 'district': '南靖县'}
+    source_folder = 'zhangzhou-next-four-own-source/350627'
+    foreign_code = '350622'
+
+
+class DongshanCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+    code = '350626'
+    source_id = '2a8fc5dd930c86940a551377'
+    source_version = 'bce4b0e47eaad6a9508e295e64da4a720ca9d8d06e7252cf46e92be51b1646e3'
+    authority = '东山县人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '漳州市', 'district': '东山县'}
+    source_folder = 'zhangzhou-next-four-own-source/350626'
+    foreign_code = '350622'
