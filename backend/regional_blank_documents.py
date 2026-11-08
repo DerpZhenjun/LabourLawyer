@@ -101,6 +101,11 @@ LOCAL_PROOFS = {
  '321324':('suqian-sihong-own-source','district','a1d4d4faeda9e9f4dc5a94120982816c95cb84bc0ef1511ce82a336744af21cc','1161e7ba8cba428f52325cd3dea1172b7ed54a74006159e891e937d777e08967'),
  '321325':('suqian-lake-own-source','functional_area','472fdbc4ee0c4aca0d1495f34ad31ad8de3d207d71f8c91fccf59b29d98a36d4','a5aa9593c673b129ed0ce1568c47431a60f605f7d94740e2a5b512f354052ed0'),
  '321392':('suqian-ssip-own-source','functional_area','1a418811d2bc2a08106400fcde89d82a09f304f77498dee3fafae7dc1c504b99','3ce4bf27aebeaa989b97b0d129af7b09a3bd086e3326f04d9236b6649fe97bbf'),
+ '321002':('yangzhou-guangling-own-source','district','a7695bd2e0404a27647cf7fb8312ecd7f3a145afd522b6df171e7cad61be7c46','225ac5f76073d15b0d26b5d45a6c2096ea62ae979a965a6c0b873f500fb3206a'),
+ '321003':('yangzhou-hanjiang-own-source','district','cfb130c7c8ba56097455c34bf97ab29f31e276888290586c5c6b821f71dbb586','26db788b65fc016466a138519363213e961378d82dd731819238f2b575a0040b'),
+ '321012':('yangzhou-jiangdu-own-source','district','ea6940b1de0fce532665a900d2d2494ced75839f4fa65b9a6de19f5d4ba9e35f','3e2f27626e2bea9ad1fbeafc6f86dc71d84723b926a0556237f5c3ac4417aa25'),
+ '321023':('yangzhou-baoying-own-source','district','7242c5935cafcfdb13e40c342d6ad6680eb67044f55675eb8d38b07a0ed75719','db55d5b9713c57d6df8c374b6ecede0e946bc9bd9427c3ff4baad8aebc5bc62e'),
+ '321084':('yangzhou-gaoyou-own-source','district','6b6530d92acd5331489d758d6bc235788bbd2f98b7c034f78fae034634ee9205','dbfa1412d92e3f97e6c5d365072fad1e0ac9dcee07c3dde976cb540367a5d660'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -309,6 +314,21 @@ EXACT_SOURCES={
  '321392':('宿迁市','苏州宿迁工业园区','99b9ee49afeb34982c4cba87',{
     'fd50790b-1455-4cf2-ae3f-6810ed58c3fb':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
     '3e9bf615-0fa2-4279-a43d-7d0e58419b10':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321002':('扬州市','广陵区','6de416b60f069c12cc5794c9',{
+    '2af62df3-be3f-463a-81a3-b23ffb9be32b':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '2992e2e4-12a8-421d-b384-eaa22adb4a0c':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321003':('扬州市','邗江区','bbe69ce71284ba9c1c9d172f',{
+    'c07338df-d292-4048-a97f-3e97641e9b10':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'e7c1e164-5ebb-4d89-a751-c222cb3ea50d':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321012':('扬州市','江都区','9247a2c6de01992d26bb57b5',{
+    '688996b7-078a-43f7-ba4f-67bff2cd6426':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'e29a732c-b7e6-4324-9ba6-a6c97c61e3d0':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321023':('扬州市','宝应县','35c349b3ff699b188ad7cc46',{
+    '89baa947-8627-4383-8bff-a0c045d0c827':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '156fa24b-782d-4775-aaa4-3d1371e05be5':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321084':('扬州市','高邮市','b90a43c2a0cc8c0acb5c6516',{
+    '7d1c471c-2cca-4cba-a789-da6b3bee285b':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '1db32a56-164a-4f1a-90c7-2cd1397c1f5c':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -363,6 +383,11 @@ EXACT_IDENTITIES={
  '321324':('泗洪县人力资源和社会保障局','11321324557085689K400201430200201'),
  '321325':('宿迁市湖滨新区政法和社会管理办公室','TE321325XXX8001032400201430200201'),
  '321392':('苏州宿迁工业园区劳动保障和社会事业局','11321300016184991A400201430200201'),
+ '321002':('扬州市广陵区人力资源和社会保障局','113210020144111853400201430200201'),
+ '321003':('扬州市邗江区人力资源和社会保障局','11321027014455276X400201430200201'),
+ '321012':('扬州市江都区人社局','1132108801444901X4400201430200201'),
+ '321023':('宝应县人力资源和社会保障局','11321023014433130R400201430200201'),
+ '321084':('高邮市人力资源和社会保障局','11321084014427208M400201430200201'),
 }
 
 

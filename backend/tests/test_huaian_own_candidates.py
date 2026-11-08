@@ -84,6 +84,16 @@ AREAS = {
                'f7852470-a737-4c9f-be71-b237a494b7d1', 'fb30f08f-d847-4bca-a05b-013c09e77e5c'),
     '321392': ('宿迁市', '苏州宿迁工业园区', 'suqian-ssip', '99b9ee49afeb34982c4cba87', '321392',
                'fd50790b-1455-4cf2-ae3f-6810ed58c3fb', '3e9bf615-0fa2-4279-a43d-7d0e58419b10'),
+    '321002': ('扬州市', '广陵区', 'yangzhou-guangling', '6de416b60f069c12cc5794c9', '321002',
+               '2af62df3-be3f-463a-81a3-b23ffb9be32b', '2992e2e4-12a8-421d-b384-eaa22adb4a0c'),
+    '321003': ('扬州市', '邗江区', 'yangzhou-hanjiang', 'bbe69ce71284ba9c1c9d172f', '321003',
+               'c07338df-d292-4048-a97f-3e97641e9b10', 'e7c1e164-5ebb-4d89-a751-c222cb3ea50d'),
+    '321012': ('扬州市', '江都区', 'yangzhou-jiangdu', '9247a2c6de01992d26bb57b5', '321012',
+               '688996b7-078a-43f7-ba4f-67bff2cd6426', 'e29a732c-b7e6-4324-9ba6-a6c97c61e3d0'),
+    '321023': ('扬州市', '宝应县', 'yangzhou-baoying', '35c349b3ff699b188ad7cc46', '321023',
+               '89baa947-8627-4383-8bff-a0c045d0c827', '156fa24b-782d-4775-aaa4-3d1371e05be5'),
+    '321084': ('扬州市', '高邮市', 'yangzhou-gaoyou', 'b90a43c2a0cc8c0acb5c6516', '321084',
+               '7d1c471c-2cca-4cba-a789-da6b3bee285b', '1db32a56-164a-4f1a-90c7-2cd1397c1f5c'),
 }
 
 
@@ -106,7 +116,7 @@ class HuaianOwnCandidatesTests(TestCase):
         with TemporaryDirectory(prefix='jiangsu-own-candidates-') as tmp:
             store = RegionalStore(Path(tmp) / 'guides.sqlite')
             directory = DirectoryStore(Path(tmp) / 'directory.sqlite')
-            for city_code in ('320700', '320800', '320300', '320900', '321300'):
+            for city_code in ('320700', '320800', '320300', '320900', '321300', '321000'):
                 directory.put_area(next(r for r in rows if r['code'] == city_code and r['level'] == 3))
                 store.put_guide(forms.staged_jiangsu_municipal(ROOT, city_code))
             for code, (city, district, slug, source, provider, app_id, evidence_id) in AREAS.items():
