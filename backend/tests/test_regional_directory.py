@@ -93,6 +93,26 @@ class RegionalDirectoryTests(unittest.TestCase):
         row, = self.store.areas('fujian', '龙岩市')
         self.assertEqual((row['id'], row['code']), ('national:350803', '350803'))
 
+    def test_shaxian_exposes_current_code_without_relabeling_sanyuan(self):
+        common = {
+            'provider': 'national', 'province': 'fujian', 'city': '三明市', 'level': 4,
+            'parent_code': '350400', 'source_url': 'https://gjzwfw.www.gov.cn/fwmh/ucGovRegion/findUcGovRegion.do',
+            'collected_at': '2026-10-23T14:00:00Z',
+        }
+        old = self.store.put_area({
+            **common, 'code': '350427', 'district': '沙县区', 'raw_record': {'regionCode': '350427'},
+        })
+        self.store.put_area({**common, 'code': '350403', 'district': '三元区'})
+        result = {row['district']: row for row in self.store.areas('fujian', '三明市')}
+        shaxian = result['沙县区']
+        self.assertEqual((shaxian['id'], shaxian['code'], shaxian['provider_code']), (old['id'], '350405', '350427'))
+        self.assertEqual(shaxian['raw_record'], old['raw_record'])
+        self.assertFalse(shaxian['can_generate'])
+        self.assertEqual(result['三元区']['code'], '350403')
+        self.store.put_area({**common, 'code': '350405', 'district': '沙县区'})
+        choices = [row for row in self.store.areas('fujian', '三明市') if row['district'] == '沙县区']
+        self.assertEqual([row['id'] for row in choices], ['national:350405'])
+
     def test_queue_resumes_interrupted_job_without_duplicate_enqueue(self):
         key = self.store.enqueue('directory', {'provider':'national','parent':'510000'})
         self.assertEqual(self.store.enqueue('directory', {'provider':'national','parent':'510000'}),key)

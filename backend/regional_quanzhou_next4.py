@@ -484,6 +484,17 @@ SANMING_YOUXI_REGIONS = {
         'original_kinds': ('application', 'evidence'),
     },
 }
+SANMING_SHAXIAN_REGIONS = {
+    '350405': {
+        'district': '沙县区',
+        'source_base': LOCALITIES + '/sanming-shaxian-own-source',
+        'source_id': '4f433827d01b05ee6582c3f9',
+        'source_manifest_sha256': 'b1f928e32768329892618cff4bf501b84d5b3443d5a15f36a6d0f6d3eb95939e',
+        'stage_sha256': 'dfde15bbb0f7f53f3fcba42ad39c24bd0c6d739a7a52856c727d5b6c0ab95f9f',
+        'source_freeze_sha256': '4fcef1b94eb2f13927aff19e07f34be5dfb22baaf32e2bcb031729c78b67d0a6',
+        'original_kinds': ('application', 'evidence'),
+    },
+}
 SANMING_NEXT_THREE_REGIONS = {
     '350424': {
         'district': '宁化县',
@@ -618,6 +629,7 @@ SUPPORTED_REGIONS = {
     **LONGYAN_NEXT_THREE_REGIONS,
     **FUJIAN_MUNICIPAL_REGIONS,
     **SANMING_YOUXI_REGIONS,
+    **SANMING_SHAXIAN_REGIONS,
     **SANMING_NEXT_THREE_REGIONS,
     **SANMING_QINGLIU_REGIONS,
     **SANMING_JIANNING_REGIONS,
@@ -645,7 +657,7 @@ _CANDIDATE_PREFLIGHTS = {
             profile['source_base'], f"{profile['source_base']}/{code}/WORD-PREFLIGHT.json",
             profile['stage_sha256'], profile['source_freeze_sha256'],
         )
-        for regions in (FUJIAN_MUNICIPAL_REGIONS, XIAMEN_FIRST_FOUR_REGIONS, XIAMEN_NEXT_TWO_REGIONS)
+        for regions in (FUJIAN_MUNICIPAL_REGIONS, SANMING_SHAXIAN_REGIONS, XIAMEN_FIRST_FOUR_REGIONS, XIAMEN_NEXT_TWO_REGIONS)
         for code, profile in regions.items()
     },
     INVESTMENT_CODE: (INVESTMENT_BASE, INVESTMENT_STAGE_RECEIPT, INVESTMENT_STAGE_SHA256, INVESTMENT_SOURCE_FREEZE_SHA256),

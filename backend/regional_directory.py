@@ -93,6 +93,7 @@ def sichuan_city_areas(capture):
 # Current Fujian civil affairs register, independently matched to each own service.
 # These presentation rules preserve the national provider's stored identifiers.
 _FUJIAN_CURRENT_CODES = {
+    ('fujian', '三明市'): ('沙县区', '350400', '350427', '350405'),
     ('fujian', '南平市'): ('建阳区', '350700', '350784', '350703'),
     ('fujian', '龙岩市'): ('永定区', '350800', '350822', '350803'),
 }

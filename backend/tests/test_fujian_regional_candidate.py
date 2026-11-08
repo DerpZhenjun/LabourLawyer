@@ -593,6 +593,26 @@ class ZhangzhouMunicipalCandidateTests(_MunicipalCandidateChecks, TestCase):
     foreign_code = '350602'
 
 
+class ShaxianCurrentScopeCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350405'
+    source_id = '4f433827d01b05ee6582c3f9'
+    source_version = 'b1f928e32768329892618cff4bf501b84d5b3443d5a15f36a6d0f6d3eb95939e'
+    authority = '三明市沙县区人力资源和社会保障局'
+    handling_form = '窗口办，网上办'
+    region = {'province': 'fujian', 'city': '三明市', 'district': '沙县区'}
+    source_folder = 'sanming-shaxian-own-source/350405'
+    foreign_code = '350426'
+
+    def test_current_scope_preserves_the_official_legacy_code(self):
+        guide = own.staged_candidate(self.code, root=ROOT)
+        self.assertEqual((guide['region_code'], guide['official_region_code']), ('350405', '350427'))
+        self.assertEqual(guide['fields']['实施主体']['official_region_code'], '350427')
+        self.assertTrue(all(template['region_code'] == self.code for template in guide['templates']))
+        for unsupported in ('350427', '350403', '350404'):
+            with self.subTest(unsupported=unsupported), self.assertRaises(ValueError):
+                own.staged_candidate(unsupported, root=ROOT)
+
+
 class YouxiCandidateTests(_FujianCandidateChecks, TestCase):
     code = '350426'
     source_id = 'c4a1025ea6a8038fcb55baa3'
