@@ -19,12 +19,14 @@ LOCALITIES = ROOT / 'reports/overnight-gap-closure-20261030/localities'
 
 
 class _FujianCandidateChecks:
+    handling_form = '窗口办，网上办，邮寄办'
+
     def test_candidate_contracts_and_downloads_use_exact_local_lineage(self):
         source = own.production_source(self.code, root=ROOT)
         self.assertEqual(source['source_id'], self.source_id)
         self.assertEqual(source['source_version'], self.source_version)
         self.assertEqual(source['authority'], self.authority)
-        self.assertEqual(source['channel']['handling_form_raw'], '窗口办，网上办，邮寄办')
+        self.assertEqual(source['channel']['handling_form_raw'], self.handling_form)
         self.assertEqual(source['channel']['depth_raw'], '材料预审（Ⅱ级）')
         self.assertIsNone(source['channel']['entry_url'])
         self.assertFalse(source['can_generate'])
@@ -293,3 +295,34 @@ class ZherongCandidateTests(_FujianCandidateChecks, TestCase):
     region = {'province': 'fujian', 'city': '宁德市', 'district': '柘荣县'}
     source_folder = 'ningde-next-five-own-source/350926'
     foreign_code = '350902'
+
+
+class YanpingCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350702'
+    source_id = 'f780a2e27a9ef10965a9a398'
+    source_version = '3a8fe2101325254e0ab8814a29af66da9653780d3baa7e3b8273c51de2e18bd2'
+    authority = '南平市延平区人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '南平市', 'district': '延平区'}
+    source_folder = 'nanping-first-three-own-source/350702'
+    foreign_code = '350781'
+
+
+class ShaowuCandidateTests(_FujianCandidateChecks, TestCase):
+    handling_form = '窗口办，网上办'
+    code = '350781'
+    source_id = '7b2e6d218619d6a4b7dd3b18'
+    source_version = 'cb5892f69d77ab6342a21a912b5c342d94cd7a17c9df75c2fc14332f4fbffe6a'
+    authority = '邵武市人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '南平市', 'district': '邵武市'}
+    source_folder = 'nanping-first-three-own-source/350781'
+    foreign_code = '350702'
+
+
+class WuyishanCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350782'
+    source_id = 'f07923c1454cce539678a805'
+    source_version = '19b7ea84bc6d1c272ae491705a87f22657b43e65729ef57b79d01ac1a60b95e1'
+    authority = '武夷山市人力资源和社会保障局'
+    region = {'province': 'fujian', 'city': '南平市', 'district': '武夷山市'}
+    source_folder = 'nanping-first-three-own-source/350782'
+    foreign_code = '350702'
