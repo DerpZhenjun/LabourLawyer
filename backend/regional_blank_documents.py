@@ -28,6 +28,14 @@ MUNICIPAL_PROOFS = {
                '17aa6cf0616b5b4cf80a204fc800b0996b6c7ed1aa5feeecbf232f27e97798b4'),
     '320900': ('yancheng', '48a8b42c3816d0efeb088e1996baa4ebbfb49043bb39d97507e89d075a727df2',
                '2b2dfb134c1dfdec37236d2f36ad35938ff85b29bbc34261c6b9ccc4908ff51f'),
+    '321000': ('yangzhou', '3dff462a109bfbfbcef5150da390ce5f3c099cab9fd98caeed022dde9b670f88',
+               '3c11bce5bd4648d1c15e5fc7e618f8f74fa1b8b0ac2bff2878635564b70f1d6c'),
+    '321100': ('zhenjiang', '80f8b64f45800ffa22987b488703ff5149d44b9dbd7c5bb02bfe07adfea84959',
+               'baea1a366155d2939f024a3b6fe220430f894e9bb9760949a4cd0572aa42b1d5'),
+    '321200': ('taizhou', '0f9174c185b05fe665c6dce6c3c964878d8a2081c87e5417172e5fbca38df39a',
+               '0973ffca960b6531140f3f1cb48417c7735df61c77eef3c5db42d0a83b2346fa'),
+    '321300': ('suqian', 'f9a85425c18fba9a8f931877ac3149c825df872faf77dda023f3519a9348fbcb',
+               '0209c0b4f562dd2a77b748a94fa2972ee50dca88adf8343e227f142249a028d3'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -91,6 +99,22 @@ EXACT_SOURCES={
         'cb2d28f4-a4d8-4633-9e89-238ebe8604ac':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
         '59d0356b-d251-4424-9a29-17f0491edc19':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
     }),
+    '321000':('扬州市','市本级','8c8aaf5af507c4ae65d8b7ea',{
+        'cb95bc3e-68cc-43a1-b409-da2e6f324fd3':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        'e8b97aa9-2475-4fb4-bf55-99f690b725c1':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
+    '321100':('镇江市','市本级','27626805973015340d56732b',{
+        '456ed620-c6d4-45d6-838f-e086fceb814c':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        '0490fd04-5659-4479-9680-57aa5ffa3349':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
+    '321200':('泰州市','市本级','b9d1e481edaa0219e36312fa',{
+        '1a094502-26db-4208-be47-11f3fce8fb58':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        'd29f0a2b-dc5f-451b-99db-be8a26ff55f4':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
+    '321300':('宿迁市','市本级','d976408fd03de4277b278053',{
+        'b882276a-02d6-49cb-80f6-3b8e26c704fd':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        '224056b1-b2b2-4abf-9ac4-63c1e700e0aa':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -103,6 +127,10 @@ EXACT_IDENTITIES={
     '320924':('射阳县人力资源和社会保障局','11320924737070337G400201430200201'),
     '320922':('滨海县人力资源和社会保障局','11320922014374388A400201430200201'),
     '320921':('响水县人力资源和社会保障局','113209215754155300400201430200201'),
+    '321000':('扬州市人力资源和社会保障局','113210000144063193300201430200201'),
+    '321100':('镇江市人力资源和社会保障局','11321100014467082E300201430200201'),
+    '321200':('泰州市人力资源和社会保障局','113212000144165255300201430200201'),
+    '321300':('宿迁市人力资源和社会保障局','1132130055462291XB300201430200201'),
 }
 
 
