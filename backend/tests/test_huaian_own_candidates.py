@@ -154,6 +154,12 @@ AREAS = {
                '3962a0b5-9808-48fc-8c6b-a635cdd7d644', '02c2d0d4-b08e-4071-a273-6baed007532c'),
     '320590': ('苏州市', '工业园区', 'suzhou-industrial-park', '866205b79a0218e31aa4812d', '320590',
                '5b8d38c4-49b6-4de8-adad-549f5c79ae7b', '19e8b533-37a9-41f8-889b-886a4cf9781d'),
+    '320104': ('南京市', '秦淮区', 'nanjing-qinhuai', '2301e52ded0f1c2a6ff69589', '320104',
+               '13e52e45-e608-4c2a-8680-6974b5ce7240', '6f0c5082-f09e-4c63-b2ae-cea27b617bda'),
+    '320105': ('南京市', '建邺区', 'nanjing-jianye', '371ce70b35260711073880bc', '320105',
+               'e70300d8-f5db-41b7-8335-7fb96dcec831', '8c2b5f25-f760-4d58-a5dc-3513875637da'),
+    '320106': ('南京市', '鼓楼区', 'nanjing-gulou', 'f7a64fa92a3851f56a9b89e8', '320106',
+               '22330733-e351-486e-9f4a-af67e2e04e5c', '1d208301-c481-486d-abb9-57fed2299d89'),
 }
 
 
@@ -189,7 +195,7 @@ class HuaianOwnCandidatesTests(TestCase):
         with TemporaryDirectory(prefix='jiangsu-own-candidates-') as tmp:
             store = RegionalStore(Path(tmp) / 'guides.sqlite')
             directory = DirectoryStore(Path(tmp) / 'directory.sqlite')
-            for city_code in ('320700', '320800', '320300', '320900', '321300', '321000', '320600', '321100', '321200', '320400', '320200', '320500'):
+            for city_code in ('320700', '320800', '320300', '320900', '321300', '321000', '320600', '321100', '321200', '320400', '320200', '320500', '320100'):
                 directory.put_area(next(r for r in rows if r['code'] == city_code and r['level'] == 3))
                 store.put_guide(forms.staged_jiangsu_municipal(ROOT, city_code))
             directory.put_area(next(r for r in rows if r['code'] == '320685' and r['city'] == '南通市'

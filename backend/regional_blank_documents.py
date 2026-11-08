@@ -136,6 +136,9 @@ LOCAL_PROOFS = {
  '320292':('wuxi-edz-own-source','functional_area','d547975bfa08f5dc16667910f2984b876b81d6e56ad8c2190cc669e522e53508','5386a7e17da9e0e2f25808ed2df8f5c46486fc2a54fdb39a0b86a92c9d8475b4'),
  '320585':('suzhou-taicang-own-source','district','070a60c3ce71d02ba606f22a5352fe7869dbd9a306779ac40ffd0f4cfdcf4a84','f779b268a4e476e81066c538e112a415655004a941f6df41aa90653b898af184'),
  '320590':('suzhou-industrial-park-own-source','functional_area','8e1147b6c998732e64e519c08b821db459fd13ac8c2d88e0296e8ea1f91add8c','791888911781c1cef54c9bd85b50eb5b8524a8b62f0948264254c598b349afbb'),
+ '320104':('nanjing-qinhuai-own-source','district','8d97ae2dfc07f52dd8058a7fc904b0248471c46496b02ea549775676668e72d4','ea731a7a958b938aa2e28a4c19099d40e185ddb2a06ff722423806fb5dc9c51d'),
+ '320105':('nanjing-jianye-own-source','district','5900d5d4b2d404e62ba8ff68ba8c64976cee1ec3932709c9ebaae4e88be77cea','a21114dcb5f149a3f5fafae921d262dec9a1c4de2ac482cc9d8eedd33ca2ac3f'),
+ '320106':('nanjing-gulou-own-source','district','9d167f15e179e903b7a44091082eea7312a8f41b438a2a4a2e726a87235c905b','ae8a1e7795f297944c96dc1ead405269a994d9f41a49803aa0a5b9fd5a567614'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -448,6 +451,15 @@ EXACT_SOURCES={
  '320590':('苏州市','工业园区','866205b79a0218e31aa4812d',{
     '5b8d38c4-49b6-4de8-adad-549f5c79ae7b':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
     '19e8b533-37a9-41f8-889b-886a4cf9781d':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320104':('南京市','秦淮区','2301e52ded0f1c2a6ff69589',{
+    '13e52e45-e608-4c2a-8680-6974b5ce7240':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '6f0c5082-f09e-4c63-b2ae-cea27b617bda':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320105':('南京市','建邺区','371ce70b35260711073880bc',{
+    'e70300d8-f5db-41b7-8335-7fb96dcec831':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '8c2b5f25-f760-4d58-a5dc-3513875637da':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320106':('南京市','鼓楼区','f7a64fa92a3851f56a9b89e8',{
+    '22330733-e351-486e-9f4a-af67e2e04e5c':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '1d208301-c481-486d-abb9-57fed2299d89':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -537,6 +549,9 @@ EXACT_IDENTITIES={
  '320292':('江苏无锡经济开发区社会事业局','11320200MB1911084Q400201430200201'),
  '320585':('苏州太仓市人社局','113205850141850345400201430200201'),
  '320590':('苏州工业园区人力资源和社会保障局','12320500X08243760H400201430200201'),
+ '320104':('南京市秦淮区人力资源和社会保障局','113201045588672603400201430200201'),
+ '320105':('南京市建邺区人力资源和社会保障局','11320105012989370J400201430200201'),
+ '320106':('南京市鼓楼区人力资源和社会保障局','1132010601299804X7400201430200201'),
 }
 
 
