@@ -1,0 +1,56 @@
+{
+  "observed_at_utc": "2026-11-08T09:31:06.545Z",
+  "city": "淮安市",
+  "states": [
+    {
+      "district": "淮阴区",
+      "region_code": "320804",
+      "provider_directory_code": "320804",
+      "official_area_name": "淮阴区",
+      "source_url": "https://www.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=87&iddept_yw_inf=11320821014304750B400201430200201&ql_kind=20&iddept_ql_inf=11320821014304750B4002014302002",
+      "authority": "淮安市淮阴区人力资源和社会保障局"
+    },
+    {
+      "district": "洪泽区",
+      "region_code": "320813",
+      "provider_directory_code": "320829",
+      "official_area_name": "洪泽区",
+      "source_url": "https://www.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=88&iddept_yw_inf=11320829014341463H400201430200201&ql_kind=20&iddept_ql_inf=11320829014341463H4002014302002",
+      "authority": "淮安市洪泽区人力资源和社会保障局"
+    },
+    {
+      "district": "经济开发区",
+      "region_code": "320871",
+      "provider_directory_code": "320871",
+      "official_area_name": "经济技术开发区",
+      "source_url": "https://www.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=130&iddept_yw_inf=11320800K12654517X400201430200201&ql_kind=20&iddept_ql_inf=11320800K12654517X4002014302002",
+      "authority": "淮安经济技术开发区人力资源和社会保障局"
+    }
+  ],
+  "official_references": [
+    {
+      "url": "https://www.hongze.gov.cn/col/928_325421/index.html",
+      "title": "行政区划 - 淮安市洪泽区人民政府",
+      "scope": [
+        "淮安市洪泽区地处江苏省中部，位于洪泽湖东畔，1956年建县，因湖设置，借湖得名。2016年，撤销洪泽县设立洪泽区，以原洪泽县的行政区域为洪泽区的行政区域，洪泽区人民政府驻高良涧街道洪泽湖大道90号。洪泽肩挑两湖(洪泽湖、白马湖)，四面环水，素有“淮上明珠”、“鱼米之乡”的美称,是一座充满魅力的湖滨新兴生态旅游城市。全区国土总面积1273.41平方公里，人口36万，辖3个街道、6个镇。"
+      ]
+    },
+    {
+      "url": "https://mzt.jiangsu.gov.cn/art/2023/4/25/art_78635_10994579.html",
+      "title": "江苏民政厅 区划代码 2022年底江苏省县以上行政区划代码",
+      "scope": [
+        "320804\t   淮阴区",
+        "320813\t   洪泽区"
+      ]
+    },
+    {
+      "url": "https://www.huaian.gov.cn/col/16727_585332/index.html",
+      "title": "淮安市人民政府",
+      "scope": [
+        "淮安市是江苏省省辖市，下辖清江浦、淮安、淮阴、洪泽4个区和涟水、盱眙、金湖3个县。淮安经济技术开发区、淮安工业园区计划单列，统计单独列统。全市有57个镇、38个街道，1232个行政村、342个居委会。（来源：2025淮安年鉴）"
+      ]
+    }
+  ],
+  "application": false,
+  "published": false
+}
