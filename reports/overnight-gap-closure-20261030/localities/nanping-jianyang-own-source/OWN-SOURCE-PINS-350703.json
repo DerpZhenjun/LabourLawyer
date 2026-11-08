@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "9de3f84b2a725458f0c94019b55128fa150025971475cb0bfe226fa8aa6e8096",
+  "regions": {
+    "350703": {
+      "region_code": "350703",
+      "district": "建阳区",
+      "directory_city": "南平市",
+      "source_id": "27b3bacad17d7069dfd7ff81",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=19471F9B7CF61CD416E86D844FC8678F",
+      "service_unid": "19471F9B7CF61CD416E86D844FC8678F",
+      "service_code": "113507840039759622400201430200201",
+      "authority": "南平市建阳区人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "c0d126eca85333839449c7ae1957a6d7b3d1a20eb2ee10eadfd3e9a9c5a80d83"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

@@ -1,0 +1,78 @@
+{
+  "verified_at": "2026-11-08T05:45:31.767129+00:00",
+  "source_freeze_sha256": "9de3f84b2a725458f0c94019b55128fa150025971475cb0bfe226fa8aa6e8096",
+  "state": "OWN_ORIGINALS_AND_TEST_LAYOUTS_BYTE_EQUIVALENT",
+  "method": "Existing mechanical filler on independently retrieved own originals; use prior visual proof only for byte-identical output.",
+  "reference_word_manifest_sha256": "113e12ddec99ef1c528f65618c2b2bbf32b1c642e424c540e525af29b539246f",
+  "records": [
+    {
+      "region_code": "350703",
+      "source_id": "27b3bacad17d7069dfd7ff81",
+      "attachment_id": "9CBDE4146A56AEC248C3D7E48F75FB68",
+      "template_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "kind": "application",
+      "case": "original",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "zip_members": 21
+    },
+    {
+      "region_code": "350703",
+      "source_id": "27b3bacad17d7069dfd7ff81",
+      "attachment_id": "9CBDE4146A56AEC248C3D7E48F75FB68",
+      "template_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "kind": "application",
+      "case": "normal",
+      "bytes": 11987,
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+      "zip_members": 21
+    },
+    {
+      "region_code": "350703",
+      "source_id": "27b3bacad17d7069dfd7ff81",
+      "attachment_id": "9CBDE4146A56AEC248C3D7E48F75FB68",
+      "template_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "kind": "application",
+      "case": "stress",
+      "bytes": 11953,
+      "sha256": "0f399cfd9f5dc4d5fa9d2ba56c2f56719ae95902283cc41572634c4fd5f8c6bf",
+      "zip_members": 21
+    },
+    {
+      "region_code": "350703",
+      "source_id": "27b3bacad17d7069dfd7ff81",
+      "attachment_id": "32547E3177A4C061C3E2CE4608FDE4BB",
+      "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "kind": "evidence",
+      "case": "original",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "zip_members": 25
+    },
+    {
+      "region_code": "350703",
+      "source_id": "27b3bacad17d7069dfd7ff81",
+      "attachment_id": "32547E3177A4C061C3E2CE4608FDE4BB",
+      "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "kind": "evidence",
+      "case": "normal",
+      "bytes": 16699,
+      "sha256": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a",
+      "zip_members": 25
+    },
+    {
+      "region_code": "350703",
+      "source_id": "27b3bacad17d7069dfd7ff81",
+      "attachment_id": "32547E3177A4C061C3E2CE4608FDE4BB",
+      "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "kind": "evidence",
+      "case": "stress",
+      "bytes": 17291,
+      "sha256": "d037c6d322e57604595a7671060767c990d1409898e868834bd09da7b0bcd274",
+      "zip_members": 25
+    }
+  ],
+  "web_accepted": false,
+  "adapter_registered": false,
+  "published": false
+}
