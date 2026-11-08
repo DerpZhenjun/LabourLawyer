@@ -560,6 +560,17 @@ class LongyanMunicipalCandidateTests(_MunicipalCandidateChecks, TestCase):
     foreign_code = '350802'
 
 
+class PutianMunicipalCandidateTests(_MunicipalCandidateChecks, TestCase):
+    code = '350300'
+    source_id = '954a26fbeead1a7b89dd0d5c'
+    source_version = '3ed051a69acc9ba772f9694f19f812c48451e7b9d47c2040d804cdb9f61a7121'
+    authority = '莆田市人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '莆田市', 'district': '市本级'}
+    source_folder = 'putian-municipal-own-source/350300'
+    foreign_code = '350902'
+
+
 class YouxiCandidateTests(_FujianCandidateChecks, TestCase):
     code = '350426'
     source_id = 'c4a1025ea6a8038fcb55baa3'

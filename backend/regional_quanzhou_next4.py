@@ -401,6 +401,16 @@ LONGYAN_NEXT_THREE_REGIONS = {
 }
 FUJIAN_MUNICIPAL_SELECTION = "市本级"
 FUJIAN_MUNICIPAL_REGIONS = {
+    '350300': {
+        'district': '',
+        'city': '莆田市',
+        'source_base': LOCALITIES + '/putian-municipal-own-source',
+        'source_id': '954a26fbeead1a7b89dd0d5c',
+        'source_manifest_sha256': '3ed051a69acc9ba772f9694f19f812c48451e7b9d47c2040d804cdb9f61a7121',
+        'stage_sha256': '5b01525c6b6c121dc9e2c18e7799ca16d9fdf81515b03ff39d3f1536b41d1472',
+        'source_freeze_sha256': '9cd1c60d90fd18d0a5c0485cf3803106c0aca2e3a632b0cc3ef3c9f3bfc6adb5',
+        'original_kinds': ('application', 'evidence'),
+    },
     '350400': {
         'district': '',
         'city': '三明市',
