@@ -8,6 +8,7 @@ from hq_word_mechanics import _layout_fill
 from regional_fujian_huian_quangang_nov1 import _DocumentBytes, exact, form_fields
 from regional_guides import digest, official_content, region_key
 from regional_huian_quangang_request import Application, Evidence
+import regional_xiangan_evidence as xiangan
 
 
 ADAPTER = 'fujian_quanzhou_next4_own_api_v1'
@@ -17,6 +18,9 @@ BROWSER_SHA256 = '71ba37232b2077ce0927f61c64809ca32c51773865424c13cfb2ed4d6d6071
 STAGE_VERIFIED_AT = '2026-11-08T02:57:48Z'
 LOCALITIES = 'reports/overnight-gap-closure-20261030/localities'
 BASE = LOCALITIES + '/quanzhou-next4-own-source-projection'
+XIANGAN_LEGACY_BASE = LOCALITIES + '/xiamen-xiangan-legacy-evidence'
+XIANGAN_LEGACY_RECEIPT = XIANGAN_LEGACY_BASE + '/WORD-APPROVAL.json'
+XIANGAN_LEGACY_RECEIPT_SHA256 = '51971ee9b63dec29ae26fcc1e820fdfad1c096afa3e3f49d5a947ebe87228ac7'
 REVIEW_RECEIPT = LOCALITIES + '/quanzhou-next4-word-review/WORD-REVIEW-QUEUE.json'
 BROWSER_RECEIPT = LOCALITIES + '/quanzhou-next4-word-review/BROWSER-CANDIDATE.json'
 PUBLICATION_RECEIPT = LOCALITIES + '/quanzhou-next4-word-review/FINAL-PUBLICATION.json'
@@ -750,7 +754,10 @@ def _staged_guide(code, *, root):
     if code in _CANDIDATE_PREFLIGHTS:
         _, receipt, stage_sha, source_sha = _CANDIDATE_PREFLIGHTS[code]
         case_count = 3 * len(SUPPORTED_REGIONS[code]['original_kinds'])
-        return _word_preflight_guide(guide, receipt, stage_sha, source_sha, case_count, root=root)
+        result, forms = _word_preflight_guide(guide, receipt, stage_sha, source_sha, case_count, root=root)
+        if code == xiangan.REGION_CODE:
+            forms.append(_stage_xiangan_legacy_evidence(result, root))
+        return result, forms
     raw = _read(root, REVIEW_RECEIPT)
     _require(sha256(raw).hexdigest() == STAGE_SHA256)
     receipt = strict_json(raw)
@@ -811,6 +818,38 @@ def _word_preflight_guide(guide, receipt_path, receipt_sha, source_freeze_sha, c
                       'template_id': template['id'], 'sha256': {row['case']: row['sha256'] for row in matches}})
     _mark_candidate(guide, receipt_path, receipt_sha, receipt['verified_at'])
     return guide, forms
+
+
+def _stage_xiangan_legacy_evidence(guide, root):
+    raw = _read(root, XIANGAN_LEGACY_RECEIPT)
+    _require(sha256(raw).hexdigest() == XIANGAN_LEGACY_RECEIPT_SHA256)
+    proof = strict_json(raw)
+    _require(proof['state'] == 'OWN_LEGACY_WORD_VISUALLY_REVIEWED'
+             and proof['region_code'] == xiangan.REGION_CODE
+             and proof['source_id'] == guide['source_id']
+             and proof['source_version'] == guide['source_version']
+             and proof['attachment_id'] == xiangan.ATTACHMENT_ID
+             and proof['original_sha256'] == xiangan.ORIGINAL_SHA256
+             and proof['layout_sha256'] == xiangan.LAYOUT_SHA256
+             and proof['publication_approved'] is False)
+    file = XIANGAN_LEGACY_BASE + '/evidence-official-original.doc'
+    layout = XIANGAN_LEGACY_BASE + '/evidence-layout-converted.docx'
+    _require(sha256(_read(root, file)).hexdigest() == proof['original_sha256']
+             and sha256(_read(root, layout)).hexdigest() == proof['layout_sha256'])
+    template, = [t for t in guide['templates'] if t['id'] == proof['attachment_id']]
+    _require(template['official_label'] == proof['official_name']
+             and template['official_role'] == '格式文本'
+             and template['public_file_unid'] == proof['public_file_unid']
+             and template['material_id'] == proof['material_id']
+             and not template['source_original_eligible'])
+    template.update(file=file, local_original=file, sha256=proof['original_sha256'],
+                    official_kind='blank', download_status='downloaded', source_original_eligible=True,
+                    eligible_own_kind='evidence', can_generate=True, adapter=xiangan.ADAPTER,
+                    document_types=['evidence'], generation_mode='blank')
+    guide['legacy_evidence_adapter_evidence'] = {'file': XIANGAN_LEGACY_RECEIPT,
+                                                 'sha256': XIANGAN_LEGACY_RECEIPT_SHA256}
+    return {'region_code': xiangan.REGION_CODE, 'kind': 'evidence', 'source_id': guide['source_id'],
+            'template_id': template['id'], 'sha256': proof['filled_sha256']}
 
 
 def published_guide(code, *, root):
@@ -910,9 +949,10 @@ def approved_report_attachment(guide, template, root):
 
 def checked_adapter(guide, template, kind, *, root):
     canonical = _bound(guide, root=root, stage_required=True)
-    _require(any(t['can_generate'] and t['eligible_own_kind'] == kind and exact(t, template)
-                 for t in canonical['templates']))
-    return ADAPTER
+    matches = [t for t in canonical['templates']
+               if t['can_generate'] and t['eligible_own_kind'] == kind and exact(t, template)]
+    _require(len(matches) == 1)
+    return matches[0]['adapter']
 
 
 def production_schema_descriptor(code, kind):
@@ -945,9 +985,12 @@ def production_schema_descriptor(code, kind):
 
 
 def fill_document(guide, template, kind, path, data, *, root):
-    checked_adapter(guide, template, kind, root=root)
+    adapter = checked_adapter(guide, template, kind, root=root)
     _require(Path(path).resolve() == (Path(root) / template['file']).resolve())
     raw = _read(root, template['file'])
     _require(sha256(raw).hexdigest() == template['sha256'])
+    if adapter == xiangan.ADAPTER:
+        layout = _read(root, XIANGAN_LEGACY_BASE + '/evidence-layout-converted.docx')
+        return _DocumentBytes(xiangan.fill_layout(layout, data), root)
     parsed = _MODELS[kind].model_validate(data, strict=True).model_dump()
     return _DocumentBytes(_layout_fill(raw, kind, parsed), root)

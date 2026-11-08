@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "source_id": "1f622c6bd454f5515906f8c3",
+  "template_id": "A637EF6EAD573C2578CA358269DED78A",
+  "viewports": [
+    375,
+    768,
+    1440
+  ],
+  "downloads": [
+    {
+      "mode": "blank",
+      "bytes": 18996,
+      "sha256": "8bff7ad229e0b515e48f51fd97757953af6989937976ec39be6c962f771a2fae"
+    },
+    {
+      "mode": "normal",
+      "bytes": 16107,
+      "sha256": "4aeb0714249c54f03ae4f460af2fb10ba6eca1f9509d2e83ef0c8d3c0f5e1115"
+    }
+  ],
+  "blocked_requests": [],
+  "errors": [],
+  "contract_id": "7cc32568238dc08f5161cbac8f483803721b41e2c393ea58f23a08bee4a02eaf",
+  "original_sha256": "57e6ecded6e510d5adfa320c4ef82887ad5aa37d4f895f191ad78ace239b6613",
+  "cancelled_without_request": true,
+  "word_approval_sha256": "51971ee9b63dec29ae26fcc1e820fdfad1c096afa3e3f49d5a947ebe87228ac7",
+  "publication_approved": false,
+  "reviewed_at": "2026-11-08T07:42:20.051956+00:00",
+  "native_receipt_sha256": "9f0a9e068dee0665d50600538ea721d48fc51316586e2c1ce90d90d388884e2b"
+}

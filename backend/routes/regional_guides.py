@@ -15,6 +15,7 @@ from regional_adapters import checked_reference_adapter,HUNAN_C_ADAPTER,JIANGSU_
 from regional_blank_documents import fill_blank_document, ADAPTER as BLANK_ADAPTER
 from regional_jiangsu_candidates import fill_candidate_document, SUPPORTED as JIANGSU_OWN_CANDIDATES
 from regional_rongjiang_documents import fill_rongjiang_document, ADAPTER as RONGJIANG_ADAPTER
+from regional_xiangan_evidence import ADAPTER as XIANGAN_EVIDENCE_ADAPTER, XianganEvidenceRequest
 from regional_zhejiang_documents import fill_zhejiang_document,ADAPTER as ZHEJIANG_ADAPTER
 from regional_zhejiang_oct29 import fill_document as fill_ningbo_document,blank_binding as ningbo_blank_binding,ADAPTER as NINGBO_ADAPTER
 from regional_shangcheng_documents import fill_shangcheng_document,ADAPTER as SHANGCHENG_ADAPTER
@@ -557,6 +558,8 @@ class FujianKEvidenceRequest(BaseModel):
 
 def generation_request_model(adapter,kind):
     """Preserve the existing adapter-specific request-model selection."""
+    if adapter == XIANGAN_EVIDENCE_ADAPTER and kind == 'evidence':
+        return XianganEvidenceRequest
     model=(BlankApplicationRequest if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER} else ApplicationRequest) if kind=='application' else EvidenceRequest
     if adapter==FEIDONG_ADAPTER:model=FeidongApplicationRequest
     if adapter in {HUNAN_ADAPTER,HUNAN_C_ADAPTER}:model=HunanApplicationRequest
@@ -601,7 +604,7 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
             g, province=payload.province, city=payload.city, district=payload.district,
             source_id=payload.source_id, version=payload.version)
         t = select_regional_template(g, payload.template_id, payload.kind, mode=payload.mode)
-        if t.get('adapter') == QZ_ADAPTER and payload.contract_id is None:
+        if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER} and payload.contract_id is None:
             raise RegionalValidationError(409, '请重新打开当前地区的填写表单后生成')
         adapter, data, validated_contract_id = validate_generation_request(
             g, t, payload.kind, payload.data, payload.contract_id, root=ROOT,
@@ -611,9 +614,10 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
         raise HTTPException(exc.status_code, str(exc)) from exc
     blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER,JIANGSU_F_ADAPTER,JIANGSU_G_ADAPTER,FUJIAN_H_ADAPTER,FUJIAN_I_ADAPTER,FUJIAN_J_ADAPTER,FUJIAN_K_ADAPTER,PINGTAN_ADAPTER,PUTIAN_ADAPTER,PUTIAN_N_ADAPTER,FUJIAN_O_ADAPTER,FUJIAN_P_ADAPTER,HQ_ADAPTER}
     blank_adapters.add(QZ_ADAPTER)
-    if adapter in blank_adapters|{RONGJIANG_ADAPTER,HUNAN_ADAPTER,HUNAN_C_ADAPTER} and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
+    converted_adapters = {RONGJIANG_ADAPTER, HUNAN_ADAPTER, HUNAN_C_ADAPTER, XIANGAN_EVIDENCE_ADAPTER}
+    if adapter in blank_adapters | converted_adapters and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
     try:
-        if adapter==QZ_ADAPTER:
+        if adapter in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER}:
             doc=fill_qz_document(g,t,payload.kind,checked_path(t,g),data.model_dump(),root=ROOT)
         elif adapter==HQ_ADAPTER:
             doc=fill_hq_document(g,t,payload.kind,checked_path(t,g),data.model_dump(),root=ROOT)
@@ -674,10 +678,10 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
                 doc=fill_blank_document(g,t,payload.kind,checked_path(t),data.model_dump())
         else:doc=fill_tianfu_reference(checked_path(t),payload.kind,data.model_dump())
     except ValueError as exc:raise HTTPException(409,str(exc)) from exc
-    suffix=('-依据官方DOC转换填写.docx' if adapter in {RONGJIANG_ADAPTER,HUNAN_ADAPTER,HUNAN_C_ADAPTER} else '-官方空白表格填写.docx' if adapter in blank_adapters else '-参考样表辅助填写.docx')
+    suffix=('-依据官方DOC转换填写.docx' if adapter in converted_adapters else '-官方空白表格填写.docx' if adapter in blank_adapters else '-参考样表辅助填写.docx')
     name=g['district']+('申请书' if payload.kind=='application' else '证据清单')+suffix
     response=_response(doc,name,background_tasks)
-    response.headers['X-Document-Origin']=('official-blank-converted-filled' if adapter in {RONGJIANG_ADAPTER,HUNAN_ADAPTER,HUNAN_C_ADAPTER} else 'official-blank-filled' if adapter in blank_adapters else 'official-sample-adaptation-not-blank')
+    response.headers['X-Document-Origin']=('official-blank-converted-filled' if adapter in converted_adapters else 'official-blank-filled' if adapter in blank_adapters else 'official-sample-adaptation-not-blank')
     response.headers['X-Guide-Source-ID']=g['source_id']
     response.headers['X-Guide-Version']=str(g['version'])
     if validated_contract_id is not None:response.headers['X-Form-Contract-ID']=validated_contract_id

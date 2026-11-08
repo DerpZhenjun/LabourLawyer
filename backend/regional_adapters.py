@@ -4,6 +4,7 @@ from regional_guides import digest
 from regional_blank_documents import blank_binding, ADAPTER as BLANK_ADAPTER
 from regional_jiangsu_candidates import candidate_contract, SUPPORTED as JIANGSU_OWN_CANDIDATES
 from regional_rongjiang_documents import rongjiang_source_matches, ADAPTER as RONGJIANG_ADAPTER
+from regional_xiangan_evidence import ADAPTER as XIANGAN_EVIDENCE_ADAPTER
 from regional_zhejiang_documents import with_zhejiang_capabilities,checked_zhejiang_adapter,ADAPTER as ZHEJIANG_ADAPTER
 from regional_shangcheng_documents import with_shangcheng_capabilities,checked_shangcheng_adapter,ADAPTER as SHANGCHENG_ADAPTER
 from regional_zhejiang_oct29 import (with_capabilities as with_ningbo_capabilities,
@@ -383,7 +384,7 @@ def with_reference_capabilities(guide,root=None):
 
 
 def checked_reference_adapter(guide, template, kind,root=None):
-    if template.get('adapter') == QZ_ADAPTER:
+    if template.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER}:
         return checked_qz_adapter(guide, template, kind, root=root)
     if template.get('adapter') == HQ_ADAPTER:
         return checked_hq_adapter(guide, template, kind, root=root)

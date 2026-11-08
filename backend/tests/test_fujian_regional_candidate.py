@@ -19,6 +19,7 @@ LOCALITIES = ROOT / 'reports/overnight-gap-closure-20261030/localities'
 
 
 class _FujianCandidateChecks:
+    blocked_evidence_count = 2
     expected_kinds = {'application', 'evidence'}
     handling_form = '窗口办，网上办，邮寄办'
 
@@ -48,12 +49,14 @@ class _FujianCandidateChecks:
                 self.assertFalse(guide['published'])
                 self.assertEqual(len(guide['materials']), 3)
                 self.assertEqual(len(guide['templates']), 6)
-                eligible = {t['eligible_own_kind']: t for t in guide['templates'] if t['can_generate']}
+                eligible = {t['eligible_own_kind']: t for t in guide['templates']
+                            if t['can_generate'] and t['adapter'] == own.ADAPTER}
                 self.assertEqual(set(eligible), self.expected_kinds)
                 if 'evidence' not in self.expected_kinds:
                     evidence_material, = [m['material_id'] for m in guide['materials'] if m['name'] == '证据清单']
-                    blocked_evidence = [t for t in guide['templates'] if t['material_id'] == evidence_material]
-                    self.assertEqual(len(blocked_evidence), 2)
+                    blocked_evidence = [t for t in guide['templates']
+                                        if t['material_id'] == evidence_material and not t['can_generate']]
+                    self.assertEqual(len(blocked_evidence), self.blocked_evidence_count)
                     for blocked in blocked_evidence:
                         evidence_query = {**self.region, 'source_id': self.source_id, 'version': guide['version'],
                                           'kind': 'evidence', 'template_id': blocked['id']}
@@ -695,5 +698,6 @@ class XianganCandidateTests(_FujianCandidateChecks, TestCase):
     handling_form = '窗口办，网上办'
     region = {'province': 'fujian', 'city': '厦门市', 'district': '翔安区'}
     source_folder = 'xiamen-xiangan-own-source/350213'
+    blocked_evidence_count = 1
     foreign_code = '350203'
     expected_kinds = {'application'}
