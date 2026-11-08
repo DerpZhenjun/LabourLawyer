@@ -1,0 +1,124 @@
+{
+  "province": "guangdong",
+  "province_name": "广东省",
+  "city": "深圳市",
+  "district": "深圳市罗湖区",
+  "region_code": "440303",
+  "scope_level": "district",
+  "case_scope": "collective",
+  "published": false,
+  "service_name": "劳动人事争议仲裁申请",
+  "authority": "深圳市罗湖区劳动人事争议仲裁委员会",
+  "source_url": "https://www.szlh.gov.cn/lhrlzyj/gkmlpt/content/8/8598/post_8598964.html",
+  "source_title": "罗湖区劳动人事争议仲裁资料下载（集体案）",
+  "collected_at": "2026-11-08T19:47:18+08:00",
+  "verified_at": "2026-11-08T19:47:18+08:00",
+  "verification_status": "partial",
+  "official_version": "2021-03-11（集体案资料发布）",
+  "fields": {
+    "办理地点": {
+      "source_url": "https://www.szlh.gov.cn/lhrlzyj/gkmlpt/content/11/11960/post_11960860.html",
+      "region_code": "440303",
+      "collected_at": "2026-11-08T19:47:18+08:00",
+      "verified_at": "2026-11-08T19:47:18+08:00",
+      "raw_value": "深圳市罗湖区沿河北路2019号2号楼一楼（罗湖区劳动信访大厅）",
+      "normalized_value": "深圳市罗湖区沿河北路2019号2号楼一楼（罗湖区劳动信访大厅）",
+      "verification_status": "verified"
+    },
+    "办理时间": {
+      "source_url": "https://www.szlh.gov.cn/lhrlzyj/gkmlpt/content/11/11960/post_11960860.html",
+      "region_code": "440303",
+      "collected_at": "2026-11-08T19:47:18+08:00",
+      "verified_at": "2026-11-08T19:47:18+08:00",
+      "raw_value": "周一至周五，9:00–12:00、14:00–18:00（节假日除外）",
+      "normalized_value": "周一至周五，9:00–12:00、14:00–18:00（节假日除外）",
+      "verification_status": "verified"
+    },
+    "咨询方式": {
+      "source_url": "https://www.szlh.gov.cn/lhrlzyj/gkmlpt/content/11/11960/post_11960860.html",
+      "region_code": "440303",
+      "collected_at": "2026-11-08T19:47:18+08:00",
+      "verified_at": "2026-11-08T19:47:18+08:00",
+      "raw_value": "0755-25438335",
+      "normalized_value": "0755-25438335",
+      "verification_status": "verified"
+    }
+  },
+  "materials": [],
+  "sections": {
+    "集体案资料范围": {
+      "source_url": "https://www.szlh.gov.cn/lhrlzyj/gkmlpt/content/8/8598/post_8598964.html",
+      "region_code": "440303",
+      "collected_at": "2026-11-08T19:47:18+08:00",
+      "verified_at": "2026-11-08T19:47:18+08:00",
+      "raw_value": "区人力资源局的集体案资料页列有申请书、请求明细表、推举代表书、送达信息确认书、加班工资汇总表、证据清单和材料清单。各项是否适用请查官方原件。",
+      "normalized_value": "区人力资源局的集体案资料页列有申请书、请求明细表、推举代表书、送达信息确认书、加班工资汇总表、证据清单和材料清单。各项是否适用请查官方原件。",
+      "verification_status": "verified"
+    },
+    "立案大厅迁址": {
+      "source_url": "https://www.szlh.gov.cn/lhrlzyj/gkmlpt/content/11/11960/post_11960860.html",
+      "region_code": "440303",
+      "collected_at": "2026-11-08T19:47:18+08:00",
+      "verified_at": "2026-11-08T19:47:18+08:00",
+      "raw_value": "2025 年 1 月 20 日起按迁址公告所列地址办理。集体案材料清单中的原地址保留在原件，核对窗口时请看迁址公告。",
+      "normalized_value": "2025 年 1 月 20 日起按迁址公告所列地址办理。集体案材料清单中的原地址保留在原件，核对窗口时请看迁址公告。",
+      "verification_status": "verified"
+    }
+  },
+  "supporting_sources": {
+    "2025年立案大厅迁址公告": "https://www.szlh.gov.cn/lhrlzyj/gkmlpt/content/11/11960/post_11960860.html"
+  },
+  "channel": {
+    "raw_value": "立案大厅已核验，网办入口待核验",
+    "form": "window",
+    "online_status": "unverified",
+    "entry_url": null
+  },
+  "warnings": [
+    "此次核验的申请书与证据清单仅供深圳市罗湖区集体案使用。",
+    "普通案件的本区空白模板待核验。",
+    "日期由填写人核对。申请书的代表签名与证据清单的签收栏留待手工填写。"
+  ],
+  "templates": [
+    {
+      "id": "luohu-collective-application",
+      "region_code": "440303",
+      "case_scope": "collective",
+      "official_kind": "blank",
+      "source_url": "https://www.szlh.gov.cn/lhrlzyj/attachment/0/757/757766/8598964.wps",
+      "official_sha256": "e79493ac40c2fb28923a7ecc304e78b48334b61357bd954414475fa5247c10d6",
+      "official_bytes": 19456,
+      "file": "templates/_docx/_regional/guangdong/luohu-collective-application.docx",
+      "file_type": "docx",
+      "file_origin": "official-blank-converted-layout",
+      "original_format": "WPS",
+      "original_name": "罗湖区集体案仲裁申请书（官方 WPS 转换版）.docx",
+      "download_status": "downloaded",
+      "sha256": "0b9bd9e22c926c0c76f5dbaaf8eb2027eaef1c938ee24c2a82b2a789e4dda405",
+      "document_types": [
+        "application"
+      ],
+      "can_generate": false
+    },
+    {
+      "id": "luohu-collective-evidence",
+      "region_code": "440303",
+      "case_scope": "collective",
+      "official_kind": "blank",
+      "source_url": "https://www.szlh.gov.cn/lhrlzyj/attachment/0/757/757763/8598964.wps",
+      "official_sha256": "a09ba57374b46753c49e11b5fc7b1dae516ae31f5071c7f265815d660b71a602",
+      "official_bytes": 20992,
+      "file": "templates/_docx/_regional/guangdong/luohu-collective-evidence.docx",
+      "file_type": "docx",
+      "file_origin": "official-blank-converted-layout",
+      "original_format": "WPS",
+      "original_name": "罗湖区集体案证据清单（官方 WPS 转换版）.docx",
+      "download_status": "downloaded",
+      "sha256": "47b2d951b37cda01c02764ad810dacfd8e4e50e74f08bf0c33722a538b275f41",
+      "document_types": [
+        "evidence"
+      ],
+      "can_generate": false
+    }
+  ]
+}
