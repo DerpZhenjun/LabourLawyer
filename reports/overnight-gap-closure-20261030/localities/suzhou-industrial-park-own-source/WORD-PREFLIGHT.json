@@ -1,0 +1,66 @@
+{
+  "state": "OWN_ORIGINALS_WORD_LAYOUT_VERIFIED",
+  "region_code": "320590",
+  "source_id": "866205b79a0218e31aa4812d",
+  "source_url": "https://www.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=113&iddept_yw_inf=12320500X08243760H400201430200201&ql_kind=20&iddept_ql_inf=12320500X08243760H4002014302002",
+  "verified_at_utc": "2026-11-08T11:16:25.071210+00:00",
+  "published": false,
+  "raw_capture": {
+    "bytes": 370314,
+    "sha256": "8f9115bf7960ad8a928a42ddd6a2471551fcfb895f043f35e365559e6e03a0ef"
+  },
+  "records": [
+    {
+      "kind": "application",
+      "material": "劳动人事争议仲裁申请书",
+      "annex_id": "5b8d38c4-49b6-4de8-adad-549f5c79ae7b",
+      "official_role": "空白表格",
+      "source_url": "https://www.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=113&iddept_yw_inf=12320500X08243760H400201430200201&ql_kind=20&iddept_ql_inf=12320500X08243760H4002014302002",
+      "observed_url": "https://sxgl.jszwfw.gov.cn:66/audit-qlk-web/rest/frame/pages/basic/attach/attachAction/getContent?isCommondto=true&attachGuid=5b8d38c4-49b6-4de8-adad-549f5c79ae7b",
+      "observed_at_utc": "2026-11-08T11:15:14.711677+00:00",
+      "status_code": 200,
+      "state": "native_browser_download_verified",
+      "file": "application-official-original.docx",
+      "bytes": 17701,
+      "sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "source_id": "866205b79a0218e31aa4812d",
+      "region_code": "320590",
+      "repository_file": "templates/_docx/_regional/320590/5b8d38c4-49b6-4de8-adad-549f5c79ae7b-application.docx",
+      "layout_fixture_sha256": "69c9484a4ad2ede2cb8a1f2748def5535eeaf0babf09f2ee1508c06a5da893ed",
+      "same_xml_parts_as_visually_reviewed_fixture": true,
+      "reference_rendered_page_sha256": [
+        "148df9de9a1f40b0296dede56d402d8565a996fe044ba8a07db29570bbfcf869",
+        "89ff4b9944a58dd4681925459936b04e0aef6434bf43610c39c0232e6b7f3c52"
+      ],
+      "rendered_page_sha256": [
+        "148df9de9a1f40b0296dede56d402d8565a996fe044ba8a07db29570bbfcf869",
+        "89ff4b9944a58dd4681925459936b04e0aef6434bf43610c39c0232e6b7f3c52"
+      ]
+    },
+    {
+      "kind": "evidence",
+      "material": "劳动人事争议仲裁案件证据清单",
+      "annex_id": "19e8b533-37a9-41f8-889b-886a4cf9781d",
+      "official_role": "空白表格",
+      "source_url": "https://www.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=113&iddept_yw_inf=12320500X08243760H400201430200201&ql_kind=20&iddept_ql_inf=12320500X08243760H4002014302002",
+      "observed_url": "https://sxgl.jszwfw.gov.cn:66/audit-qlk-web/rest/frame/pages/basic/attach/attachAction/getContent?isCommondto=true&attachGuid=19e8b533-37a9-41f8-889b-886a4cf9781d",
+      "observed_at_utc": "2026-11-08T11:15:16.034549+00:00",
+      "status_code": 200,
+      "state": "native_browser_download_verified",
+      "file": "evidence-official-original.docx",
+      "bytes": 15273,
+      "sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "source_id": "866205b79a0218e31aa4812d",
+      "region_code": "320590",
+      "repository_file": "templates/_docx/_regional/320590/19e8b533-37a9-41f8-889b-886a4cf9781d-evidence.docx",
+      "layout_fixture_sha256": "04c24427e6e1bf3c7817ed8e25024c504ed3f4e7901bc03e569d640cb95dab32",
+      "same_xml_parts_as_visually_reviewed_fixture": true,
+      "reference_rendered_page_sha256": [
+        "a4610b9c3d3c652be1b623a6007ce2f75ccc51a9515d3aac7bb4a65f8f60a72d"
+      ],
+      "rendered_page_sha256": [
+        "a4610b9c3d3c652be1b623a6007ce2f75ccc51a9515d3aac7bb4a65f8f60a72d"
+      ]
+    }
+  ]
+}
