@@ -87,6 +87,13 @@ LOCAL_PROOFS = {
  '320324':('xuzhou-suining-own-source','district','c57be529a40f834a135b8b389a501ec732b203e48af6fb64198e253dc6c3df3e','823c2abf97bc182358b665a109391fe9f704f2318fc0da7c24c12d8ed95d437b'),
  '320381':('xuzhou-xinyi-own-source','district','96bcc337bbfe75ae94475c630e6c2aef86a7604dc34fa4a4ae310783a4bfe9a8','311b2335975be4b0fdc9775d9106e252fa3973853c2f350ed3df50b1d33c39b6'),
  '320382':('xuzhou-pizhou-own-source','district','cc2be80db9e79c3bdf4e37525d1c554bb939f5aaf7667666a36d64b9de700d39','b067167cf9ba3e9cf1c2da42d95e485f886571aebaeb06862cdb46a4ff9ce5e6'),
+ '320902':('yancheng-tinghu-own-source','district','ec0d0ac90cafa109b925e332038ca99932339fdf78555d3268188eaea22db61e','3fb2436afb04df1979935567b3eadeeb2f8dcf9905132c6a2e84c1631c9db6dc'),
+ '320903':('yancheng-yandu-own-source','district','1abda73be8a5a0367726649166c64b0548bc39ea6804862e69baaa5c359b4cc4','e376937551089d42799f21efab9d1d1b89286c4b7f099ace0ccadb5b3b121a3a'),
+ '320921':('yancheng-xiangshui-own-source','district','ba44ae4f15ee579a02c0dd16aecb08abf199b51247c842c9e725a12890e01b2b','72cb3380750014bca55f6e66a0af385d79a1e42fec2c8226c535d158fa07ef12'),
+ '320922':('yancheng-binhai-own-source','district','3680053ad124bbad54d44193f149eefb8032b203eba5982872794e590f3a85ff','9e5445f02fb79eda6b2b0a606054740a7919efcc82f3aee07c7c030e8e04e0bf'),
+ '320924':('yancheng-sheyang-own-source','district','db6f18f5eb7c5b2d19aecc2aabac8ef1480f81379a1a9a3421765ec181702c3f','f493a588353292ed55a8b583dd4f001295622f290087f5ca3e49a710101c4235'),
+ '320981':('yancheng-dongtai-own-source','district','abce7cacfb828cc69b7ea6d54d217b70d1e559b536f7b89139b2fb464210d9b2','e73cf9ab865a2c8c5fd464efcd62e45d4067caddc91ebd7d96d854183e2d064d'),
+ '320971':('yancheng-edz-own-source','functional_area','57af93268de0a393a452973ab08a4264f54dfda726a4943529b187a97d4f035b','93f503efbac6c2c6b0c943ddb40a2c3a8f6c2855e89d11130bbb991ae28c1245'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -253,6 +260,27 @@ EXACT_SOURCES={
  '320382':('徐州市','邳州市','d2a0a2956e6a022d7bef2cf7',{
     'b02a3340-4ef3-4230-84f0-39b595fd94b0':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
     'fd36a7f6-e516-4d36-bbab-62b09fef3538':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320902':('盐城市','亭湖区','d56231312b263cd2c5a42b96',{
+    'b2ef8a79-637b-4c49-bbbd-82f0082c2bbf':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '103d2584-4128-49dc-a177-72bb3904afa2':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320903':('盐城市','盐都区','56d382f2893c03e7c7e2fbd6',{
+    '73bc8138-5dba-4b3f-ae15-9f8d3f90b717':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'c99c9cba-a1f6-4107-9084-45adbb9002da':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320921':('盐城市','响水县','7d83756f2c94a39e125a20aa',{
+    'cb2d28f4-a4d8-4633-9e89-238ebe8604ac':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '59d0356b-d251-4424-9a29-17f0491edc19':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320922':('盐城市','滨海县','07a281abbc4c6050825a9534',{
+    'a0b76715-d491-4a89-8d3d-e08462f1f0f4':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '5008f178-fe89-4f89-9839-4b6b69eef95b':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320924':('盐城市','射阳县','cd4add4b09c7631a71b0d02f',{
+    '85e7e12b-18a8-458f-90f5-5a9ea44439a1':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'c3833b5a-b6ea-40aa-a3ff-905a50e83a4d':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320981':('盐城市','东台市','0b0e7b33454afdc0221e164e',{
+    'd5a8d1f0-ba28-4fa3-8e0d-0c12fb5e8120':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '5d848c02-a62a-4686-9f25-2e320b1b32ae':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320971':('盐城市','盐城开发区','cfdea0ddc6c9122dd461f617',{
+    '7b18187c-ed1a-4b52-917f-d46bb1850af6':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'db8d22b6-69d6-429b-8a7e-1b6c65b8eff8':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -293,6 +321,13 @@ EXACT_IDENTITIES={
  '320324':('睢宁县人力资源和社会保障局','11320324014093076G400201430200201'),
  '320381':('新沂市人力资源与社会保障局','113203810141088056400201430200201'),
  '320382':('邳州市人力资源和社会保障局','11320382014097421F400201430200201'),
+ '320902':('盐城市亭湖区人力资源和社会保障局','11320902014360656E400201430200201'),
+ '320903':('盐城市盐都区人力资源与社会保障局','11320928562941566D400201430200201'),
+ '320921':('响水县人力资源和社会保障局','113209215754155300400201430200201'),
+ '320922':('滨海县人力资源和社会保障局','11320922014374388A400201430200201'),
+ '320924':('射阳县人力资源和社会保障局','11320924737070337G400201430200201'),
+ '320981':('盐城市东台市人力资源和社会保障局','11320981014396886W400201430200201'),
+ '320971':('盐城经济技术开发区组织部（人力资源和社会保障社局）','11320900MB03383358400201430200201'),
 }
 
 

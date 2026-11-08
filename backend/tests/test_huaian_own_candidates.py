@@ -56,6 +56,20 @@ AREAS = {
                '4b37d83f-2bc2-4bb9-aaa3-e4fb69c76bab', '8a03c432-a9fc-46c6-8652-3f62d9eb6dde'),
     '320382': ('徐州市', '邳州市', 'xuzhou-pizhou', 'd2a0a2956e6a022d7bef2cf7', '320382',
                'b02a3340-4ef3-4230-84f0-39b595fd94b0', 'fd36a7f6-e516-4d36-bbab-62b09fef3538'),
+    '320902': ('盐城市', '亭湖区', 'yancheng-tinghu', 'd56231312b263cd2c5a42b96', '320902',
+               'b2ef8a79-637b-4c49-bbbd-82f0082c2bbf', '103d2584-4128-49dc-a177-72bb3904afa2'),
+    '320903': ('盐城市', '盐都区', 'yancheng-yandu', '56d382f2893c03e7c7e2fbd6', '320903',
+               '73bc8138-5dba-4b3f-ae15-9f8d3f90b717', 'c99c9cba-a1f6-4107-9084-45adbb9002da'),
+    '320921': ('盐城市', '响水县', 'yancheng-xiangshui', '7d83756f2c94a39e125a20aa', '320921',
+               'cb2d28f4-a4d8-4633-9e89-238ebe8604ac', '59d0356b-d251-4424-9a29-17f0491edc19'),
+    '320922': ('盐城市', '滨海县', 'yancheng-binhai', '07a281abbc4c6050825a9534', '320922',
+               'a0b76715-d491-4a89-8d3d-e08462f1f0f4', '5008f178-fe89-4f89-9839-4b6b69eef95b'),
+    '320924': ('盐城市', '射阳县', 'yancheng-sheyang', 'cd4add4b09c7631a71b0d02f', '320924',
+               '85e7e12b-18a8-458f-90f5-5a9ea44439a1', 'c3833b5a-b6ea-40aa-a3ff-905a50e83a4d'),
+    '320981': ('盐城市', '东台市', 'yancheng-dongtai', '0b0e7b33454afdc0221e164e', '320981',
+               'd5a8d1f0-ba28-4fa3-8e0d-0c12fb5e8120', '5d848c02-a62a-4686-9f25-2e320b1b32ae'),
+    '320971': ('盐城市', '盐城开发区', 'yancheng-edz', 'cfdea0ddc6c9122dd461f617', '320971',
+               '7b18187c-ed1a-4b52-917f-d46bb1850af6', 'db8d22b6-69d6-429b-8a7e-1b6c65b8eff8'),
 }
 
 
@@ -78,7 +92,7 @@ class HuaianOwnCandidatesTests(TestCase):
         with TemporaryDirectory(prefix='jiangsu-own-candidates-') as tmp:
             store = RegionalStore(Path(tmp) / 'guides.sqlite')
             directory = DirectoryStore(Path(tmp) / 'directory.sqlite')
-            for city_code in ('320700', '320800', '320300'):
+            for city_code in ('320700', '320800', '320300', '320900'):
                 directory.put_area(next(r for r in rows if r['code'] == city_code and r['level'] == 3))
                 store.put_guide(forms.staged_jiangsu_municipal(ROOT, city_code))
             for code, (city, district, slug, source, provider, app_id, evidence_id) in AREAS.items():
