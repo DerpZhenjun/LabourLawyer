@@ -48,6 +48,8 @@ def bootstrap_public_data(root=ROOT,data_dir=None):
     # creating or changing either database. Existing data is never downgraded.
     guides=deepcopy(payload['guides.json'])
     for g in guides:
+        if g.get('candidate_adapter_evidence') is not None and g.get('published') is not True:
+            raise ValueError('Candidate guide cannot initialize a public catalogue')
         source=urlsplit(g.get('source_url',''));host=source.hostname or ''
         if (source.scheme not in {'http','https'} or not host.endswith('.gov.cn')
             or not all(g.get(k) for k in ['province','city','district','region_code','collected_at','verified_at'])

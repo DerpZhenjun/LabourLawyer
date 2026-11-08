@@ -16,6 +16,7 @@ from regional_zhejiang_oct29 import (REPORT as NB_REPORT, MANIFEST_SHA256 as NB_
 from regional_hunan_oct29b import (REPORT as HN_REPORT, MANIFEST_SHA256 as HN_MANIFEST,
                                   DERIVED_MANIFEST_SHA256, ORIGINAL_SHAS,
                                   SPECS as HN_SPECS, parse_capture as parse_hunan)
+import regional_quanzhou_next4 as quanzhou
 
 _GUIDE_METADATA = {
     'source_id', 'version', 'content_hash', 'region_id', 'can_generate',
@@ -175,6 +176,8 @@ def public_evidence(guide, root):
     """
     if isinstance(root,str) and not root.strip():return None
     if not isinstance(guide,dict) or not isinstance(guide.get('province'),str) or not isinstance(guide.get('region_code'),str):return None
+    if guide.get('province')=='fujian' and guide.get('region_code') in quanzhou.REGIONS:
+        return quanzhou.public_evidence(guide,root)
     if guide.get('province')=='fujian' and guide.get('region_code') in {'350521','350505'}:
         from regional_fujian_huian_quangang_nov1 import public_evidence as own
         return own(guide,root)
@@ -248,6 +251,8 @@ def approved_report_attachment(guide, template, root):
     """
     if isinstance(root,str) and not root.strip():return False
     if not isinstance(guide,dict) or not isinstance(guide.get('province'),str) or not isinstance(guide.get('region_code'),str):return False
+    if guide.get('province')=='fujian' and guide.get('region_code') in quanzhou.REGIONS:
+        return quanzhou.approved_report_attachment(guide,template,root)
     if guide.get('province')=='fujian' and guide.get('region_code') in {'350521','350505'}:
         from regional_fujian_huian_quangang_nov1 import approved_report_attachment as own
         return own(guide,template,root)

@@ -73,6 +73,7 @@ TESTS = (
     'test_huian_quangang_dispatch',
     'test_huian_quangang_client_contract',
     'test_hq_semantic_cache',
+    'test_quanzhou_next4_candidate',
     'test_regional_fujian_oct31n',
     'test_fujian_oct31n_dispatch',
     'test_fujian_n_client_contract',

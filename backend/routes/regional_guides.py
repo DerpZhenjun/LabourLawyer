@@ -68,6 +68,8 @@ from regional_fujian_huian_quangang_nov1 import (
     STAGE_SHA256 as HQ_STAGE_SHA256, PUBLICATION_SHA256 as HQ_PUBLICATION_SHA256)
 from regional_huian_quangang_request import (
     HuianQuangangApplicationRequest, HuianQuangangEvidenceRequest)
+from regional_quanzhou_next4 import (
+    ADAPTER as QZ_ADAPTER, REGIONS as QZ_REGIONS, fill_document as fill_qz_document)
 from regional_zhejiang_oct29e import fill_document as fill_zhejiang_e_document
 from regional_zhejiang_chunan_oct30 import (fill_document as fill_chunan_document, ADAPTER as CHUNAN_ADAPTER,
     PUBLICATION_SHA256 as CHUNAN_PUBLICATION_SHA256)
@@ -284,7 +286,7 @@ class GenerateRequest(BaseModel):
     @model_validator(mode='before')
     @classmethod
     def own_kunshan_version(cls,value):
-        if isinstance(value,dict) and value.get('source_id') in {m['source_id'] for m in HQ_REGIONS.values()}:
+        if isinstance(value,dict) and value.get('source_id') in {m['source_id'] for regions in (HQ_REGIONS,QZ_REGIONS) for m in regions.values()}:
             if type(value.get('version')) is not int or value['version']<1:
                 raise ValueError('本地区来源版本必须是正整数')
             if set(value)-set(cls.model_fields):
@@ -548,7 +550,7 @@ def generation_request_model(adapter,kind):
     if adapter==FUJIAN_K_ADAPTER:model=FujianKApplicationRequest if kind=='application' else FujianKEvidenceRequest
     if adapter==PINGTAN_ADAPTER:model=PingtanApplicationRequest if kind=='application' else PingtanEvidenceRequest
     if adapter==PUTIAN_ADAPTER:model=PutianApplicationRequest if kind=='application' else PutianEvidenceRequest
-    if adapter==HQ_ADAPTER:model=HuianQuangangApplicationRequest if kind=='application' else HuianQuangangEvidenceRequest
+    if adapter in {HQ_ADAPTER,QZ_ADAPTER}:model=HuianQuangangApplicationRequest if kind=='application' else HuianQuangangEvidenceRequest
     elif adapter==FUJIAN_P_ADAPTER:model=FujianPApplicationRequest if kind=='application' else FujianPEvidenceRequest
     elif adapter==FUJIAN_O_ADAPTER:model=FujianOApplicationRequest if kind=='application' else FujianOEvidenceRequest
     elif adapter==PUTIAN_N_ADAPTER:model=PutianNApplicationRequest if kind=='application' else PutianNEvidenceRequest
@@ -580,6 +582,8 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
             g, province=payload.province, city=payload.city, district=payload.district,
             source_id=payload.source_id, version=payload.version)
         t = select_regional_template(g, payload.template_id, payload.kind, mode=payload.mode)
+        if t.get('adapter') == QZ_ADAPTER and payload.contract_id is None:
+            raise RegionalValidationError(409, '请重新打开当前地区的填写表单后生成')
         adapter, data, validated_contract_id = validate_generation_request(
             g, t, payload.kind, payload.data, payload.contract_id, root=ROOT,
             adapter_checker=lambda guide,template,kind:checked_reference_adapter(guide,template,kind,root=ROOT), contract_builder=build_form_contract,
@@ -587,9 +591,12 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
     except RegionalValidationError as exc:
         raise HTTPException(exc.status_code, str(exc)) from exc
     blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER,JIANGSU_F_ADAPTER,JIANGSU_G_ADAPTER,FUJIAN_H_ADAPTER,FUJIAN_I_ADAPTER,FUJIAN_J_ADAPTER,FUJIAN_K_ADAPTER,PINGTAN_ADAPTER,PUTIAN_ADAPTER,PUTIAN_N_ADAPTER,FUJIAN_O_ADAPTER,FUJIAN_P_ADAPTER,HQ_ADAPTER}
+    blank_adapters.add(QZ_ADAPTER)
     if adapter in blank_adapters|{RONGJIANG_ADAPTER,HUNAN_ADAPTER,HUNAN_C_ADAPTER} and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
     try:
-        if adapter==HQ_ADAPTER:
+        if adapter==QZ_ADAPTER:
+            doc=fill_qz_document(g,t,payload.kind,checked_path(t,g),data.model_dump(),root=ROOT)
+        elif adapter==HQ_ADAPTER:
             doc=fill_hq_document(g,t,payload.kind,checked_path(t,g),data.model_dump(),root=ROOT)
         elif adapter==FUJIAN_P_ADAPTER:
             doc=fill_fujian_p_document(g,t,payload.kind,checked_path(t,g),data.model_dump(),root=ROOT)
