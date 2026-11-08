@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "d0bd63762ebcf63a9673cfa2534b8b6114f3416b7c0927d2821fa5e273ccb055",
+  "regions": {
+    "350925": {
+      "region_code": "350925",
+      "district": "周宁县",
+      "directory_city": "宁德市",
+      "source_id": "93c89d232bac720d254d951b",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=FBA0637D2A4F8FCC496ED5589B7B6AC2",
+      "service_unid": "FBA0637D2A4F8FCC496ED5589B7B6AC2",
+      "service_code": "113522300040666135400201430200Y01",
+      "authority": "周宁县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "2925904df42021fa7392b580b9d02d8d7193ff5daca4ee87985c1bf64ddb537b"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

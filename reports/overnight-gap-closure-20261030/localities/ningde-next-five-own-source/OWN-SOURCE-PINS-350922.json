@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "654c253c357d5831c0ee5f1f241f28e9ca2bb075b7e3406ca9d9103738663f60",
+  "regions": {
+    "350922": {
+      "region_code": "350922",
+      "district": "古田县",
+      "directory_city": "宁德市",
+      "source_id": "b001fa88aecf2dca266120e3",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=051F912836F9AFAA20A41C50AAF50953",
+      "service_unid": "051F912836F9AFAA20A41C50AAF50953",
+      "service_code": "113522270040477112400201430200201",
+      "authority": "古田县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "d72a825eb8cac6f049ca64b76fe6ff824a222325fecfea5bfa6b58d7e3cab65f"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

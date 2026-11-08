@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "b314421df6a6149a01d21dd57d314c799f99d09817bc458b7974005404121dcc",
+  "regions": {
+    "350926": {
+      "region_code": "350926",
+      "district": "柘荣县",
+      "directory_city": "宁德市",
+      "source_id": "b5dede071093f619366f7212",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=3530C53F04844F0A27461F8E7FFEEFE3",
+      "service_unid": "3530C53F04844F0A27461F8E7FFEEFE3",
+      "service_code": "11352231004072888G400201430200201",
+      "authority": "柘荣县民政和人力资源社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "cb08426c5bebc559997940c644845c5a29b06c3fd0c60b69d601570a5a3bc04f"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "0faa9c4dbb404e725cc2151c62657329bdd4ef83730cf9b0451bda5c1f69705f",
+  "regions": {
+    "350924": {
+      "region_code": "350924",
+      "district": "寿宁县",
+      "directory_city": "宁德市",
+      "source_id": "1ebfe0ec7e5a13953ed7b26c",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=C1F52D488531A7BE5EFD0631107EFFBC",
+      "service_unid": "C1F52D488531A7BE5EFD0631107EFFBC",
+      "service_code": "113522290040601749400201430200Y01",
+      "authority": "寿宁县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "1846eddaab2674891da8eca114cc28d45e952f1d7e641d7de0d2f6a009d23285"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "ef4ec2ed6a916fe56893392d795645bb328472da482be357f457915441666b36",
+  "regions": {
+    "350923": {
+      "region_code": "350923",
+      "district": "屏南县",
+      "directory_city": "宁德市",
+      "source_id": "272f1398c7c84fdbcb241d55",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=4D930EDD7433D8FEAF30FDF187B398AD",
+      "service_unid": "4D930EDD7433D8FEAF30FDF187B398AD",
+      "service_code": "1135222800405388XY400201430200201",
+      "authority": "屏南县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "4cca508c10e685dcc0cc2db5167450f1313a8d354036fc135e73c43119486dbc"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
