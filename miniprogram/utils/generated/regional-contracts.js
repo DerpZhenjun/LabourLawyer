@@ -1,5 +1,5 @@
 // Generated from packages/regional-contracts/src/index.ts. Do not edit.
-// source-sha256: 534157d00dea8bf164622a94b338b228bd95c4e0ed85f466f4081136f43a2264
+// source-sha256: 4e5a921f9fccdc6a58ec4651550d11b4915ace6dc1c4533f28e07f2f9be54778
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.fieldErrors = exports.isPlainRecord = void 0;
@@ -12,6 +12,9 @@ exports.plainGuideWarning = plainGuideWarning;
 exports.createEmptyForm = createEmptyForm;
 exports.createExampleForm = createExampleForm;
 exports.buildGenerateRequest = buildGenerateRequest;
+exports.publicGuideText = publicGuideText;
+exports.readGuideSections = readGuideSections;
+exports.guideDisplayField = guideDisplayField;
 const isPlainRecord = (value) => value !== null && typeof value === 'object' && !Array.isArray(value) &&
     [Object.prototype, null].includes(Object.getPrototypeOf(value));
 exports.isPlainRecord = isPlainRecord;
@@ -310,4 +313,110 @@ function buildGenerateRequest(contract, form) {
         throw new Error(validation.errors[0]?.message ?? '请核对填写内容。');
     const c = contract.context;
     return { province: c.province, city: c.city, district: c.district, source_id: c.source_id, version: c.version, template_id: c.template_id, kind: c.kind, mode: c.mode, contract_id: contract.contract_id, data: clone(form) };
+}
+const sectionPending = '相关说明待核实';
+/** Convert official HTML to inert text. Neither browser DOM nor HTML execution is used. */
+function publicGuideText(value) {
+    if (typeof value !== 'string')
+        return '';
+    let text = value;
+    const entities = { nbsp: ' ', amp: '&', lt: '<', gt: '>', quot: '"', apos: "'" };
+    for (let i = 0; i < 3; i++) {
+        const next = text.replace(/&(#x[0-9a-f]+|#[0-9]+|nbsp|amp|lt|gt|quot|apos);/gi, (_, name) => {
+            if (name[0] !== '#')
+                return entities[name.toLowerCase()] ?? '';
+            const point = name[1]?.toLowerCase() === 'x' ? parseInt(name.slice(2), 16) : parseInt(name.slice(1), 10);
+            return point >= 32 && point <= 0x10ffff && !(point >= 0xd800 && point <= 0xdfff) ? String.fromCodePoint(point) : '';
+        });
+        if (next === text)
+            break;
+        text = next;
+    }
+    return text.replace(/<!--[\s\S]*?(?:-->|$)/g, '')
+        .replace(/<(script|style|iframe|object|svg|math|template)\b(?:[^>"']|"[^"]*"|'[^']*')*>[\s\S]*?(?:<\/\1\s*>|$)/gi, '')
+        .replace(/<\/(?:p|div|li|h[1-6]|tr)\s*>|<br\s*\/?\s*>/gi, '\n')
+        .replace(/<(?=[a-z!/?])(?:[^>"']|"[^"]*"|'[^']*')*>/gi, '')
+        .replace(/<[a-z!/?][^>]*$/gi, '').trim();
+}
+const human = (record, key) => (0, exports.isPlainRecord)(record) ? publicGuideText(record[key]) : '';
+const factLine = (label, value) => value ? `${label}：${value}` : '';
+const joined = (values) => values.filter(Boolean).join('\n');
+const sectionName = (key) => key === 'conditions' ? '受理条件' : key === 'window' ? '窗口办理说明' : key;
+function readGuideSections(value) {
+    if (!(0, exports.isPlainRecord)(value))
+        return [];
+    const result = [];
+    const add = (key, label, text) => result.push({ key, label, value: text || sectionPending });
+    for (const [key, body] of Object.entries(value)) {
+        if (key === 'notice_titles_not_promoted_to_general_requirements')
+            continue;
+        if (key === 'apply_method_raw') {
+            add(key + ':conditions', '受理条件', human(body, 'applyTerm'));
+            add(key + ':window', '窗口办理说明', joined([
+                factLine('办理地点', human(body, 'acceptAddress')), factLine('办公时间', human(body, 'officeTime')), factLine('交通指引', human(body, 'trafficGuide'))
+            ]));
+        }
+        else if (key === 'notices_raw') {
+            const rows = Array.isArray(body) ? body.filter(exports.isPlainRecord) : [];
+            add(key, '常见问题', rows.map(row => joined([factLine('问', human(row, 'title')), factLine('答', human(row, 'content'))])).filter(Boolean).join('\n\n'));
+        }
+        else if (key === 'flow_nodes_raw') {
+            const rows = (0, exports.isPlainRecord)(body) && Array.isArray(body.flowNodeList) ? body.flowNodeList.filter(exports.isPlainRecord) : [];
+            add(key, '办理流程', rows.map(row => {
+                const name = human(row, 'name'), step = human(row, 'step'), unit = human(row, 'limittype'), count = human(row, 'limitcount');
+                const title = joined([...new Set([name, step].filter(Boolean))]).replace('\n', ' · ');
+                const limit = /^[0-9]+(?:\.[0-9]+)?$/.test(count) ? count + (unit ? ' ' + unit : '（单位待核实）') : unit === '当场' ? unit : unit ? '待核实（单位：' + unit + '）' : '';
+                const standard = human(row, 'csstandard');
+                return joined([title, factLine('办理时限', limit), factLine('审查标准', /^-+$/.test(standard) ? '' : standard), factLine('办理结果', human(row, 'transactresult'))]);
+            }).filter(Boolean).join('\n\n'));
+        }
+        else if (key === 'legal_basis_raw') {
+            add(key, '法律依据', (Array.isArray(body) ? body.filter(exports.isPlainRecord) : []).map(row => joined([human(row, 'lawName'), human(row, 'lawContent')])).filter(Boolean).join('\n\n'));
+        }
+        else if (key === 'matter_according_raw') {
+            add(key, '事项依据', human(body, 'according'));
+        }
+        else if (typeof body === 'string') {
+            // Existing plain-string guide sections retain exact content/whitespace.
+            // Only marked-up legacy strings need conversion to the text-only display.
+            const html = /<\/?[a-z!]|&(?:lt|gt|#)/i.test(body);
+            result.push({ key, label: sectionName(key), value: html ? publicGuideText(body) : body });
+        }
+        else if ((0, exports.isPlainRecord)(body)) {
+            const captured = human(body, 'capture_text') || human(body, 'raw_value');
+            add(key, /[\u3400-\u9fff]/.test(key) ? key : '其他说明', captured);
+        }
+        else if (Array.isArray(body) && body.every(v => typeof v === 'string')) {
+            add(key, sectionName(key), body.map(publicGuideText).join('\n'));
+        }
+        else if (body === null) {
+            add(key, /[\u3400-\u9fff]/.test(key) ? key : '其他说明', '');
+        }
+        // Unknown structured data, flags and counters are never serialized as facts.
+    }
+    return result;
+}
+const displayAliases = {
+    '必须到现场原因': ['必须到现场原因', '必需现场办理原因', '必须到现场办理说明', '现场原因'],
+    '咨询方式': ['咨询方式', '咨询服务', '咨询电话'],
+    '到办事现场次数': ['到办事现场次数', '到现场次数', '现场次数'],
+    '办理时间': ['办理时间', '办公时间'], '办公时间': ['办公时间', '办理时间'],
+    '办理地点': ['办理地点', '受理地址'], '是否收费': ['是否收费', '收费说明'],
+    '承诺办结时限': ['承诺办结时限', '承诺时限']
+};
+/** Bounded aliases and same-guide raw fallbacks; never borrow another locality. */
+function guideDisplayField(guide, name) {
+    if (!(0, exports.isPlainRecord)(guide))
+        return undefined;
+    const fields = (0, exports.isPlainRecord)(guide.fields) ? guide.fields : {};
+    for (const key of own(displayAliases, name) ? displayAliases[name] ?? [] : [name]) {
+        const field = fields[key], raw = (0, exports.isPlainRecord)(field) ? field.raw_value : field;
+        const text = typeof raw === 'string' ? raw : typeof raw === 'number' && Number.isFinite(raw) ? String(raw) : '';
+        if (text.trim())
+            return ['受理时限', '承诺时限', '法定时限'].includes(key) && /^\d+$/.test(text) ? text + '（单位待核实）' : text;
+    }
+    const sections = (0, exports.isPlainRecord)(guide.sections) ? guide.sections : {};
+    const raw = (0, exports.isPlainRecord)(sections.apply_method_raw) ? sections.apply_method_raw : {};
+    const key = name === '办理时间' || name === '办公时间' ? 'officeTime' : name === '办理地点' ? 'acceptAddress' : name === '申请条件' || name === '受理条件' ? 'applyTerm' : undefined;
+    return key ? human(raw, key) || undefined : undefined;
 }

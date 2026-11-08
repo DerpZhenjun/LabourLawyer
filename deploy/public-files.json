@@ -75,13 +75,13 @@
     },
     {
       "path": "data/public-regions/guides.json",
-      "bytes": 12164326,
-      "sha256": "62357aa4a6d32e5c4693ece2f2014e3752d5aa3a4a39bda0f3957b763ef43da4"
+      "bytes": 12263507,
+      "sha256": "7a04a23b7481de7dff40a892a4b80dd21462c103f3298d78c26ef4493b0cced6"
     },
     {
       "path": "data/public-regions/manifest.json",
       "bytes": 526,
-      "sha256": "9f17188e9eb4386e4ec6ff4163b15b19be3f3b0f35765d63614eed22af0935d4"
+      "sha256": "fb09faea6dcef4f0c9b35902821f52a71ccf95d54392357121f86d037a4705ce"
     },
     {
       "path": "frontend/src/data/provinceCatalog.json",
@@ -11809,6 +11809,536 @@
       "path": "reports/overnight-gap-closure-20261030/localities/fujian-h/word/stress-evidence.docx",
       "bytes": 17920,
       "sha256": "19f8a7fccb4d4c6c4fdfbd0df6f6e490f287fbf8eb0e4169744e22e20f6f836e"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/OWN-SOURCE-PINS.json",
+      "bytes": 1301,
+      "sha256": "9a1a18cfb30e0251717fcbf7ca158d3af4ab3400f62cd5cb1b691d276472ca2e"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/huian-350521/PUBLIC-RETRIEVALS.json",
+      "bytes": 1737,
+      "sha256": "0048d54e07be46c8e3e8f1a60376ec4b13a12c2aa3730eace018c1f8d6ae6313"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/huian-350521/SOURCE-PROJECTION-MANIFEST.json",
+      "bytes": 3001,
+      "sha256": "4a9697f5ea943d6dc02b5a9361da7bf6639a50cd6c76f357aa01d68686d4178b"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/huian-350521/application-format-public-retrieval.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/huian-350521/evidence-format-public-retrieval.docx",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/huian-350521/guide.json",
+      "bytes": 34933,
+      "sha256": "6f38c9867998b4c1a6d008860894736094b2c625bae55ca11aa9a94c3a87df51"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/huian-350521/safe-accept-list.json",
+      "bytes": 3014,
+      "sha256": "eb9d0f24f85e613fd90944edffa0894c93698b31879deda1a554b4b73942e48d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/huian-350521/safe-flow-nodes.json",
+      "bytes": 3651,
+      "sha256": "1f93999342e7bda20dd83ac0c310afb0b91917dae6330df5283ca6640a3eb302"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/huian-350521/safe-legal-basis.json",
+      "bytes": 2530,
+      "sha256": "dfc70a543e76100fa17c03e445ef36fb5f664f3011eaa874818cf2c4a4001d62"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/huian-350521/safe-material-list.json",
+      "bytes": 8361,
+      "sha256": "dfcb5c6f7af53345e216c3cdde605eda6d3497e9f32a4e3df193efa452caf727"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/huian-350521/safe-matter-according.json",
+      "bytes": 298,
+      "sha256": "0ac66e02cbf57cb9db1d52cd6a675b701cff69329ebc0290b6fb96f4e190ee72"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/huian-350521/safe-matter-basic.json",
+      "bytes": 8925,
+      "sha256": "cc0099d7ae08dd6e3ac73d1d879193575721d07246af93dc51a26ab2c07c8a4c"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/huian-350521/safe-notice-list.json",
+      "bytes": 691,
+      "sha256": "7c208b705cdb65b643a89a4753308bd8fed2fea317a5031ab08e77ff0db148be"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/huian-350521/safe-table-info.json",
+      "bytes": 2396,
+      "sha256": "adce98e4e63de60c12f35736fc7d73c03e64353a4a542cf3721e765e89c728bd"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/quangang-350505/PUBLIC-RETRIEVALS.json",
+      "bytes": 1737,
+      "sha256": "92765174df8d95674fbc946b51bb45acd3c174ed97a0dfb7a7b114de630890f9"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/quangang-350505/SOURCE-PROJECTION-MANIFEST.json",
+      "bytes": 3001,
+      "sha256": "c3d3dc26535ed2df27d53d4ad4f3fb723e1bfb740fa2ee6926c4a550783a6267"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/quangang-350505/application-format-public-retrieval.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/quangang-350505/evidence-format-public-retrieval.docx",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/quangang-350505/guide.json",
+      "bytes": 34815,
+      "sha256": "20f2269130d96d7a252a77418dd885f597dc3049dc81c8c81228cc854ba8396e"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/quangang-350505/safe-accept-list.json",
+      "bytes": 2996,
+      "sha256": "908b5ff8ae6300e75eb2324b1c97dedd5d6878d03b376e5df8b4927c51abe7d1"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/quangang-350505/safe-flow-nodes.json",
+      "bytes": 3546,
+      "sha256": "3559cf6699998e96cbfd540d0c27a380dc47635ef0602cace87c1705d44648ab"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/quangang-350505/safe-legal-basis.json",
+      "bytes": 2530,
+      "sha256": "dfc70a543e76100fa17c03e445ef36fb5f664f3011eaa874818cf2c4a4001d62"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/quangang-350505/safe-material-list.json",
+      "bytes": 8364,
+      "sha256": "9f361300f7f8fbd6c20ca274ae51d842c4acc811e70c348e2f49f855b682b78a"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/quangang-350505/safe-matter-according.json",
+      "bytes": 298,
+      "sha256": "0ac66e02cbf57cb9db1d52cd6a675b701cff69329ebc0290b6fb96f4e190ee72"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/quangang-350505/safe-matter-basic.json",
+      "bytes": 9290,
+      "sha256": "9c343225782fa69007395e5da519defb4958f2ff7b7c9492596f26f1460f9f10"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/quangang-350505/safe-notice-list.json",
+      "bytes": 680,
+      "sha256": "f1c58fec37897f3764f54fff30dcdcd36885b87c4bd7fd97dbd63be1411e2ea5"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/quangang-350505/safe-table-info.json",
+      "bytes": 2396,
+      "sha256": "45a591704347108508cc87bc84164773ccd606d845d437e8b8336b68cf94583a"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/FINAL-BROWSER-QA.json",
+      "bytes": 22378,
+      "sha256": "6bd4bcaa2eee4b1d9414fafc6b6441aaaae8256908c65292a47d579c35ab802e"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/ROOT-RENDER-INDEX.json",
+      "bytes": 32798,
+      "sha256": "c5b4840d66a26bbf332a1c973d7b9a42026cf541a86f1123f2a1b061ff3a175d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/ROOT-WORD-VISUAL-REVIEW.json",
+      "bytes": 25256,
+      "sha256": "05b5622f8ca3b2ef9dcb77095131392df996b91d52d288879d911b56f3bc3398"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/STAGE-APPROVAL.json",
+      "bytes": 20392,
+      "sha256": "49d9dee2b760157c9bb3f09ec0dd4a13198ae440878483fa53f44059d1f39625"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/WORD-MANIFEST.json",
+      "bytes": 41444,
+      "sha256": "113e12ddec99ef1c528f65618c2b2bbf32b1c642e424c540e525af29b539246f"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/fixtures/350505-application-normal.json",
+      "bytes": 1084,
+      "sha256": "b278ede06d05f230a1437bd86ff7f37cbafec57d4e51baefe6e411ff6f717f4f"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/fixtures/350505-application-stress.json",
+      "bytes": 13013,
+      "sha256": "499dab5e2ff6db9fffa1887fe6152790e8930bb4a7b2b8708721a9ff522caffc"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/fixtures/350505-evidence-normal.json",
+      "bytes": 1007,
+      "sha256": "0b490ddd050258f896834ba146e637c2b3d91bc20add7ace12f75e0c958bad0b"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/fixtures/350505-evidence-stress.json",
+      "bytes": 6876,
+      "sha256": "e1344ad75a61f4092a26b4b6ec52c1247b707431b4a0c611f6954c7273aa1e1f"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/fixtures/350521-application-normal.json",
+      "bytes": 1084,
+      "sha256": "af96aa0211e623af2e71138b905fb3e11b958a0c4ba518452158e8d8ee8fab2d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/fixtures/350521-application-stress.json",
+      "bytes": 13013,
+      "sha256": "5c74c36dd5ca7f4ea6f83643bfc4eac674204ce986be3bd9c3cfbe8e70f085d1"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/fixtures/350521-evidence-normal.json",
+      "bytes": 1007,
+      "sha256": "40a86ff33cfb1bddfb5dc148b9b036a8044a9cc72fe12aa5a7433899d4ebea1d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/fixtures/350521-evidence-stress.json",
+      "bytes": 6876,
+      "sha256": "792d76935c8cf9891efbcc405167a075dab60383c53a4bd1451b965976972845"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/native-final/350505-application-CONTRACT.json",
+      "bytes": 2335,
+      "sha256": "61b3f5c87bfae8d0f8d1bbeb0f6748364975a2834b73acc584b4ea0e643ab4b3"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/native-final/350505-evidence-CONTRACT.json",
+      "bytes": 2601,
+      "sha256": "a7707b90382da09e53aa7cfcbb0d7d53ba4c33c520b1f93445c0838180c2688e"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/native-final/350521-application-CONTRACT.json",
+      "bytes": 2335,
+      "sha256": "d29eea39ec273735cb867c20ecf21b1d36dd253b458575789c80d0590eabef60"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/native-final/350521-evidence-CONTRACT.json",
+      "bytes": 2601,
+      "sha256": "52cccb59c1174adf7d17b14eaf7cd8ba73c2fc706547be34b73651e6c3270dd0"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/native-final/BROWSER-RESULT.json",
+      "bytes": 183293,
+      "sha256": "7bde8b2d69c13a602c201bfd516d4540eec1d83a633ea505b2fab03088f48e8c"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/native-final/ROOT-NATIVE-REVIEW.json",
+      "bytes": 629,
+      "sha256": "c358b250e6b905eee86121ac8116a67e95c4e388954c66676c204da31ef1a04a"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-application-normal-1.png",
+      "bytes": 70050,
+      "sha256": "7029cd930a32c6d5b916df72d7ed0f7695e1a76c05fec82b540ed9c1e6255f77"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-application-normal-2.png",
+      "bytes": 5069,
+      "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-application-original-1.png",
+      "bytes": 40033,
+      "sha256": "7ccf9d2414ce1781a86630b2fac16d60c2807351c16f563c5c73edaf8f16d950"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-application-original-2.png",
+      "bytes": 5069,
+      "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-application-stress-1.png",
+      "bytes": 63341,
+      "sha256": "648a50480c27d8c1d25677d1abd6ac813da90ff3406fd5a356569a8e4c8d765a"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-application-stress-2.png",
+      "bytes": 62249,
+      "sha256": "d60280e77ada899d3001db6fe4f048f8fb4da1d48852c75350273341ba28e73d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-application-stress-3.png",
+      "bytes": 70672,
+      "sha256": "05f947fcedf798aed85f67142680d4b2a7020332c9ff5e07073720ca89b845d3"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-application-stress-4.png",
+      "bytes": 64616,
+      "sha256": "05407baf7e2268746326ec6f5b4ec126fe681a62934c21d87d766c94cb9c7378"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-application-stress-5.png",
+      "bytes": 58692,
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-application-stress-6.png",
+      "bytes": 58692,
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-application-stress-7.png",
+      "bytes": 58692,
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-application-stress-8.png",
+      "bytes": 58692,
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-application-stress-9.png",
+      "bytes": 36031,
+      "sha256": "116d0c23dab2f7eb0008fb5a11bbeb71dd3fa662a8d8b37bb360352c39fedbf8"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-evidence-normal-1.png",
+      "bytes": 44254,
+      "sha256": "9b624094acb2e64210c7ca2fc3a46e452008f0fb2fd423cd85433e2985fca368"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-evidence-original-1.png",
+      "bytes": 35874,
+      "sha256": "65362d420216052c69a3276f236ec48792ce25b3d719faa29b642b84fb3c8ae4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-evidence-stress-1.png",
+      "bytes": 101045,
+      "sha256": "09dbffe41dd0b80eeebad49a42c364eedfd1f4408597ef36c3f88cfecb45e6c2"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-evidence-stress-2.png",
+      "bytes": 98087,
+      "sha256": "b1655ebf34d9fe65e98d79ae3cd0f2e1a712eb20cd28738414144bc280cf215d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-evidence-stress-3.png",
+      "bytes": 98171,
+      "sha256": "9494c3da32267cb15088e834bbd43ff01398c4cdfcedfb0d763d28242eac9fdf"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-evidence-stress-4.png",
+      "bytes": 98046,
+      "sha256": "4e415ff16373712d0c5e333b9fb20ad67ea8d13241ed01f1c94180719441e558"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-evidence-stress-5.png",
+      "bytes": 98138,
+      "sha256": "bafd3c0197914995737f789a34c5feff3281c850e0334d02612349346e5d5a66"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-evidence-stress-6.png",
+      "bytes": 98204,
+      "sha256": "47dbb2a2cdd3f7b965945b9163bd737f91713bb61d972ec91297f34b13f93684"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-evidence-stress-7.png",
+      "bytes": 97987,
+      "sha256": "14533b4af9ec5a6238644ee3eab18740574a1740e33ea91fe1119699256c1ee1"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-evidence-stress-8.png",
+      "bytes": 98232,
+      "sha256": "a3abc48688992d45ad6b590affa28fa4e0522a65f6925d9f13f11f0b0fb3dc26"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350505-evidence-stress-9.png",
+      "bytes": 110513,
+      "sha256": "f8cf8d165647214b3fb5a0c6dbea21b1c4afaf835f993483f0cbdce5704fbb06"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-application-normal-1.png",
+      "bytes": 70050,
+      "sha256": "7029cd930a32c6d5b916df72d7ed0f7695e1a76c05fec82b540ed9c1e6255f77"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-application-normal-2.png",
+      "bytes": 5069,
+      "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-application-original-1.png",
+      "bytes": 40033,
+      "sha256": "7ccf9d2414ce1781a86630b2fac16d60c2807351c16f563c5c73edaf8f16d950"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-application-original-2.png",
+      "bytes": 5069,
+      "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-application-stress-1.png",
+      "bytes": 63341,
+      "sha256": "648a50480c27d8c1d25677d1abd6ac813da90ff3406fd5a356569a8e4c8d765a"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-application-stress-2.png",
+      "bytes": 62249,
+      "sha256": "d60280e77ada899d3001db6fe4f048f8fb4da1d48852c75350273341ba28e73d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-application-stress-3.png",
+      "bytes": 70672,
+      "sha256": "05f947fcedf798aed85f67142680d4b2a7020332c9ff5e07073720ca89b845d3"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-application-stress-4.png",
+      "bytes": 64616,
+      "sha256": "05407baf7e2268746326ec6f5b4ec126fe681a62934c21d87d766c94cb9c7378"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-application-stress-5.png",
+      "bytes": 58692,
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-application-stress-6.png",
+      "bytes": 58692,
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-application-stress-7.png",
+      "bytes": 58692,
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-application-stress-8.png",
+      "bytes": 58692,
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-application-stress-9.png",
+      "bytes": 36031,
+      "sha256": "116d0c23dab2f7eb0008fb5a11bbeb71dd3fa662a8d8b37bb360352c39fedbf8"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-evidence-normal-1.png",
+      "bytes": 44254,
+      "sha256": "9b624094acb2e64210c7ca2fc3a46e452008f0fb2fd423cd85433e2985fca368"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-evidence-original-1.png",
+      "bytes": 35874,
+      "sha256": "65362d420216052c69a3276f236ec48792ce25b3d719faa29b642b84fb3c8ae4"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-evidence-stress-1.png",
+      "bytes": 101045,
+      "sha256": "09dbffe41dd0b80eeebad49a42c364eedfd1f4408597ef36c3f88cfecb45e6c2"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-evidence-stress-2.png",
+      "bytes": 98087,
+      "sha256": "b1655ebf34d9fe65e98d79ae3cd0f2e1a712eb20cd28738414144bc280cf215d"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-evidence-stress-3.png",
+      "bytes": 98171,
+      "sha256": "9494c3da32267cb15088e834bbd43ff01398c4cdfcedfb0d763d28242eac9fdf"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-evidence-stress-4.png",
+      "bytes": 98046,
+      "sha256": "4e415ff16373712d0c5e333b9fb20ad67ea8d13241ed01f1c94180719441e558"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-evidence-stress-5.png",
+      "bytes": 98138,
+      "sha256": "bafd3c0197914995737f789a34c5feff3281c850e0334d02612349346e5d5a66"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-evidence-stress-6.png",
+      "bytes": 98204,
+      "sha256": "47dbb2a2cdd3f7b965945b9163bd737f91713bb61d972ec91297f34b13f93684"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-evidence-stress-7.png",
+      "bytes": 97987,
+      "sha256": "14533b4af9ec5a6238644ee3eab18740574a1740e33ea91fe1119699256c1ee1"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-evidence-stress-8.png",
+      "bytes": 98232,
+      "sha256": "a3abc48688992d45ad6b590affa28fa4e0522a65f6925d9f13f11f0b0fb3dc26"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/pages/350521-evidence-stress-9.png",
+      "bytes": 110513,
+      "sha256": "f8cf8d165647214b3fb5a0c6dbea21b1c4afaf835f993483f0cbdce5704fbb06"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/word/350505-application-normal.docx",
+      "bytes": 11987,
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/word/350505-application-original.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/word/350505-application-stress.docx",
+      "bytes": 11953,
+      "sha256": "0f399cfd9f5dc4d5fa9d2ba56c2f56719ae95902283cc41572634c4fd5f8c6bf"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/word/350505-evidence-normal.docx",
+      "bytes": 16699,
+      "sha256": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/word/350505-evidence-original.docx",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/word/350505-evidence-stress.docx",
+      "bytes": 17291,
+      "sha256": "d037c6d322e57604595a7671060767c990d1409898e868834bd09da7b0bcd274"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/word/350521-application-normal.docx",
+      "bytes": 11987,
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/word/350521-application-original.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/word/350521-application-stress.docx",
+      "bytes": 11953,
+      "sha256": "0f399cfd9f5dc4d5fa9d2ba56c2f56719ae95902283cc41572634c4fd5f8c6bf"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/word/350521-evidence-normal.docx",
+      "bytes": 16699,
+      "sha256": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/word/350521-evidence-original.docx",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    {
+      "path": "reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang/word-qa-nov1-v1/word/350521-evidence-stress.docx",
+      "bytes": 17291,
+      "sha256": "d037c6d322e57604595a7671060767c990d1409898e868834bd09da7b0bcd274"
     },
     {
       "path": "reports/overnight-gap-closure-20261030/localities/fujian-i-source-projection/BATCH-PROJECTION-INDEX.json",

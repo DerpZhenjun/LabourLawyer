@@ -122,18 +122,6 @@ const copy = <T>(value: T): T => {
 const at = (value: unknown, path: Path): unknown => path.reduce<unknown>((v, k) => v !== null && typeof v === 'object' ? Reflect.get(v, k) : undefined, value);
 const identity = (c: FormContract) => JSON.stringify([c.schema_version, c.contract_id, c.context.province, c.context.city, c.context.district, c.context.source_id, c.context.version, c.context.template_id, c.context.kind]);
 const display = (value: unknown): string => typeof value === 'string' ? value : value == null ? '' : typeof value === 'object' ? JSON.stringify(value) : String(value);
-const guideText = (value: unknown): string => {
-    if (Array.isArray(value))
-        return value.map(guideText).join('\n');
-    if (shared.isPlainRecord(value)) {
-        if (typeof value.capture_text === 'string')
-            return guideText(value.capture_text);
-        if (value.raw_value !== undefined)
-            return guideText(value.raw_value);
-        return Object.keys(value).filter(k => value[k] !== null && value[k] !== '' && !['source_file', 'source_url'].includes(k)).map(k => `${k}：${guideText(value[k])}`).join('\n');
-    }
-    return display(value).replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, '').replace(/<\/(?:p|div|li)>|<br\s*\/?\s*>/gi, '\n').replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&amp;/g, '&');
-};
 const page: PageSpec<Data, Methods, State> = {
     data: { provinces: provinces.map(p => p.name), provinceIndex: 0, cities: [], districts: [], cityIndex: -1, districtIndex: -1, guide: null, contract: null, fields: [], sections: [], channelText: '', warnings: [], materials: [], blanks: [], kinds: [], kindIndex: 0, controls: [], errors: [], formValid: false, available: false, busy: false, notice: '请选择办理区县，核对本区自己的指南和表格。', error: '', result: '', storageNotice: '', draftBlocked: false },
     onLoad(options) {
@@ -239,12 +227,14 @@ const page: PageSpec<Data, Methods, State> = {
             g.templates.forEach(t => { if (t.can_generate === true && Array.isArray(t.document_types))
                 t.document_types.forEach(kind => { if (kind === 'application' || kind === 'evidence')
                     this._kinds.push({ t, kind }); }); });
-            const fields = Object.keys(g.fields || {}).map(key => ({ label: key, value: display(shared.isPlainRecord(g.fields[key]) && g.fields[key].raw_value !== undefined ? g.fields[key].raw_value : g.fields[key]) }));
+            const fields = Object.keys(g.fields || {}).map(label => ({ label, value: shared.guideDisplayField(g,label) ?? '' }));
+            const officeTime = shared.guideDisplayField(g,'办理时间');
+            if (officeTime && !fields.some(field => ['办理时间','办公时间'].includes(field.label))) fields.push({label:'办公时间',value:officeTime});
             const blanks = g.templates.map((t, index): RegionalTemplate & {
                 index: number;
             } => ({ ...t, index })).filter(t => t.official_kind === 'blank' && t.download_status === 'downloaded' && t.file && /^[a-f0-9]{64}$/i.test(typeof t.sha256 === 'string' ? t.sha256 : ''));
-            const sections = Object.keys(g.sections).map(label => ({ label, value: guideText(g.sections[label]) }));
-            const channelText = guideText(g.channel.raw_value) + (g.channel.online_status === 'auth_required' ? '\n网上入口需要登录或验证码；本页不会代办提交。' : '');
+            const sections = shared.readGuideSections(g.sections);
+            const channelText = shared.publicGuideText(g.channel.raw_value) + (g.channel.online_status === 'auth_required' ? '\n网上入口需要登录或验证码；本页不会代办提交。' : '');
             this.setData({ guide: g, fields, sections, channelText, materials: g.materials, warnings: Array.isArray(g.warnings) ? g.warnings.map((warning: unknown) => typeof warning === 'string' ? shared.plainGuideWarning(warning) : warning) : [], blanks, kinds: this._kinds.map(k => `${k.kind === 'application' ? '申请书' : '证据清单'} · ${k.t.original_name || k.t.id}`), notice: this._kinds.length ? '请核对本区指南、材料和表格来源。' : '本区表格填写尚待核验，可查看已核验的原件。' });
             if (this._kinds.length)
                 this.loadContract(0);

@@ -1,0 +1,1029 @@
+{
+  "schema_version": 1,
+  "scope": "HQ_OWN_ACTUAL_ROOT_WORD_APPROVAL_ONLY",
+  "root_original_review_sha256": "77dc510573d280f790a2f47944d215c43800100f63dd6fe605d3421d82940b9b",
+  "root_original_index_sha256": "ec8a4bb70acf085db772df62b7f1ce744f77c23bc833298389be066cab957fae",
+  "proposal_freeze_sha256": "8076d58044e6c85a75512f420345b81fc10e44290eea4eb8ff34b994e458e624",
+  "render_preparation_freeze_sha256": "a9d2c14d1172a1800aedd90233da5415c3964ed8ef30a385971461843afe0a31",
+  "region_codes": [
+    "350521",
+    "350505"
+  ],
+  "source_projection_versions": {
+    "350521": "4a9697f5ea943d6dc02b5a9361da7bf6639a50cd6c76f357aa01d68686d4178b",
+    "350505": "c3d3dc26535ed2df27d53d4ad4f3fb723e1bfb740fa2ee6926c4a550783a6267"
+  },
+  "physical_documents": 12,
+  "input_identities": [
+    {
+      "label": "350521-application-original",
+      "region_code": "350521",
+      "kind": "application",
+      "scenario": "original",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "render_job": "350521-application-original"
+    },
+    {
+      "label": "350521-application-blank",
+      "region_code": "350521",
+      "kind": "application",
+      "scenario": "blank",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "render_job": "350521-application-original"
+    },
+    {
+      "label": "350521-application-normal",
+      "region_code": "350521",
+      "kind": "application",
+      "scenario": "normal",
+      "bytes": 11987,
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+      "render_job": "350521-application-normal"
+    },
+    {
+      "label": "350521-application-stress",
+      "region_code": "350521",
+      "kind": "application",
+      "scenario": "stress",
+      "bytes": 11953,
+      "sha256": "0f399cfd9f5dc4d5fa9d2ba56c2f56719ae95902283cc41572634c4fd5f8c6bf",
+      "render_job": "350521-application-stress"
+    },
+    {
+      "label": "350521-evidence-original",
+      "region_code": "350521",
+      "kind": "evidence",
+      "scenario": "original",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "render_job": "350521-evidence-original"
+    },
+    {
+      "label": "350521-evidence-blank",
+      "region_code": "350521",
+      "kind": "evidence",
+      "scenario": "blank",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "render_job": "350521-evidence-original"
+    },
+    {
+      "label": "350521-evidence-normal",
+      "region_code": "350521",
+      "kind": "evidence",
+      "scenario": "normal",
+      "bytes": 16699,
+      "sha256": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a",
+      "render_job": "350521-evidence-normal"
+    },
+    {
+      "label": "350521-evidence-stress",
+      "region_code": "350521",
+      "kind": "evidence",
+      "scenario": "stress",
+      "bytes": 17291,
+      "sha256": "d037c6d322e57604595a7671060767c990d1409898e868834bd09da7b0bcd274",
+      "render_job": "350521-evidence-stress"
+    },
+    {
+      "label": "350505-application-original",
+      "region_code": "350505",
+      "kind": "application",
+      "scenario": "original",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "render_job": "350505-application-original"
+    },
+    {
+      "label": "350505-application-blank",
+      "region_code": "350505",
+      "kind": "application",
+      "scenario": "blank",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "render_job": "350505-application-original"
+    },
+    {
+      "label": "350505-application-normal",
+      "region_code": "350505",
+      "kind": "application",
+      "scenario": "normal",
+      "bytes": 11987,
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+      "render_job": "350505-application-normal"
+    },
+    {
+      "label": "350505-application-stress",
+      "region_code": "350505",
+      "kind": "application",
+      "scenario": "stress",
+      "bytes": 11953,
+      "sha256": "0f399cfd9f5dc4d5fa9d2ba56c2f56719ae95902283cc41572634c4fd5f8c6bf",
+      "render_job": "350505-application-stress"
+    },
+    {
+      "label": "350505-evidence-original",
+      "region_code": "350505",
+      "kind": "evidence",
+      "scenario": "original",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "render_job": "350505-evidence-original"
+    },
+    {
+      "label": "350505-evidence-blank",
+      "region_code": "350505",
+      "kind": "evidence",
+      "scenario": "blank",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "render_job": "350505-evidence-original"
+    },
+    {
+      "label": "350505-evidence-normal",
+      "region_code": "350505",
+      "kind": "evidence",
+      "scenario": "normal",
+      "bytes": 16699,
+      "sha256": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a",
+      "render_job": "350505-evidence-normal"
+    },
+    {
+      "label": "350505-evidence-stress",
+      "region_code": "350505",
+      "kind": "evidence",
+      "scenario": "stress",
+      "bytes": 17291,
+      "sha256": "d037c6d322e57604595a7671060767c990d1409898e868834bd09da7b0bcd274",
+      "render_job": "350505-evidence-stress"
+    }
+  ],
+  "blank_aliases": [
+    {
+      "label": "350521-application-blank",
+      "alias_of": "350521-application-original",
+      "region_code": "350521",
+      "kind": "application",
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "reason": "EXACT_BYTE_EQUAL_TO_SAME_OWN_REGION_ORIGINAL"
+    },
+    {
+      "label": "350521-evidence-blank",
+      "alias_of": "350521-evidence-original",
+      "region_code": "350521",
+      "kind": "evidence",
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "reason": "EXACT_BYTE_EQUAL_TO_SAME_OWN_REGION_ORIGINAL"
+    },
+    {
+      "label": "350505-application-blank",
+      "alias_of": "350505-application-original",
+      "region_code": "350505",
+      "kind": "application",
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "reason": "EXACT_BYTE_EQUAL_TO_SAME_OWN_REGION_ORIGINAL"
+    },
+    {
+      "label": "350505-evidence-blank",
+      "alias_of": "350505-evidence-original",
+      "region_code": "350505",
+      "kind": "evidence",
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "reason": "EXACT_BYTE_EQUAL_TO_SAME_OWN_REGION_ORIGINAL"
+    }
+  ],
+  "native_pages": 48,
+  "Root_unique_pixel_pages_actually_viewed": 20,
+  "jobs": [
+    {
+      "label": "350521-application-original",
+      "region_code": "350521",
+      "kind": "application",
+      "scenario": "original",
+      "file": "350521-application-original.docx",
+      "proposal_path": "proposed-root/reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/huian-350521/application-format-public-retrieval.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "path": "word/350521-application-original.docx",
+      "source_id": "5a2049b6dd7a240d496c29d7",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=A917E510341EA05C46948B616C3BE489",
+      "source_version": "4a9697f5ea943d6dc02b5a9361da7bf6639a50cd6c76f357aa01d68686d4178b",
+      "official_version": "1",
+      "material_id": "E7C8BF6056DBB7E17359DBDEB9F3CDDC",
+      "attachment_id": "9D2094A6856CE70EEFB065965B549417",
+      "public_file_unid": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+      "original_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "native_pages": [
+        {
+          "page": 1,
+          "path": "pages/350521-application-original-1.png",
+          "sha256": "7ccf9d2414ce1781a86630b2fac16d60c2807351c16f563c5c73edaf8f16d950"
+        },
+        {
+          "page": 2,
+          "path": "pages/350521-application-original-2.png",
+          "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+        }
+      ],
+      "native_page_count": 2,
+      "all_fixture_text_preserved": true,
+      "original_template_empty_pages": [
+        2
+      ]
+    },
+    {
+      "label": "350521-application-normal",
+      "region_code": "350521",
+      "kind": "application",
+      "scenario": "normal",
+      "file": "350521-application-normal.docx",
+      "proposal_path": "qa/word/350521-application-normal.docx",
+      "bytes": 11987,
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+      "path": "word/350521-application-normal.docx",
+      "source_id": "5a2049b6dd7a240d496c29d7",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=A917E510341EA05C46948B616C3BE489",
+      "source_version": "4a9697f5ea943d6dc02b5a9361da7bf6639a50cd6c76f357aa01d68686d4178b",
+      "official_version": "1",
+      "material_id": "E7C8BF6056DBB7E17359DBDEB9F3CDDC",
+      "attachment_id": "9D2094A6856CE70EEFB065965B549417",
+      "public_file_unid": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+      "original_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "native_pages": [
+        {
+          "page": 1,
+          "path": "pages/350521-application-normal-1.png",
+          "sha256": "7029cd930a32c6d5b916df72d7ed0f7695e1a76c05fec82b540ed9c1e6255f77"
+        },
+        {
+          "page": 2,
+          "path": "pages/350521-application-normal-2.png",
+          "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+        }
+      ],
+      "native_page_count": 2,
+      "all_fixture_text_preserved": true,
+      "original_template_empty_pages": [
+        2
+      ],
+      "fixture": "fixtures/350521-application-normal.json"
+    },
+    {
+      "label": "350521-application-stress",
+      "region_code": "350521",
+      "kind": "application",
+      "scenario": "stress",
+      "file": "350521-application-stress.docx",
+      "proposal_path": "qa/word/350521-application-stress.docx",
+      "bytes": 11953,
+      "sha256": "0f399cfd9f5dc4d5fa9d2ba56c2f56719ae95902283cc41572634c4fd5f8c6bf",
+      "path": "word/350521-application-stress.docx",
+      "source_id": "5a2049b6dd7a240d496c29d7",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=A917E510341EA05C46948B616C3BE489",
+      "source_version": "4a9697f5ea943d6dc02b5a9361da7bf6639a50cd6c76f357aa01d68686d4178b",
+      "official_version": "1",
+      "material_id": "E7C8BF6056DBB7E17359DBDEB9F3CDDC",
+      "attachment_id": "9D2094A6856CE70EEFB065965B549417",
+      "public_file_unid": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+      "original_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "native_pages": [
+        {
+          "page": 1,
+          "path": "pages/350521-application-stress-1.png",
+          "sha256": "648a50480c27d8c1d25677d1abd6ac813da90ff3406fd5a356569a8e4c8d765a"
+        },
+        {
+          "page": 2,
+          "path": "pages/350521-application-stress-2.png",
+          "sha256": "d60280e77ada899d3001db6fe4f048f8fb4da1d48852c75350273341ba28e73d"
+        },
+        {
+          "page": 3,
+          "path": "pages/350521-application-stress-3.png",
+          "sha256": "05f947fcedf798aed85f67142680d4b2a7020332c9ff5e07073720ca89b845d3"
+        },
+        {
+          "page": 4,
+          "path": "pages/350521-application-stress-4.png",
+          "sha256": "05407baf7e2268746326ec6f5b4ec126fe681a62934c21d87d766c94cb9c7378"
+        },
+        {
+          "page": 5,
+          "path": "pages/350521-application-stress-5.png",
+          "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+        },
+        {
+          "page": 6,
+          "path": "pages/350521-application-stress-6.png",
+          "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+        },
+        {
+          "page": 7,
+          "path": "pages/350521-application-stress-7.png",
+          "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+        },
+        {
+          "page": 8,
+          "path": "pages/350521-application-stress-8.png",
+          "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+        },
+        {
+          "page": 9,
+          "path": "pages/350521-application-stress-9.png",
+          "sha256": "116d0c23dab2f7eb0008fb5a11bbeb71dd3fa662a8d8b37bb360352c39fedbf8"
+        }
+      ],
+      "native_page_count": 9,
+      "all_fixture_text_preserved": true,
+      "original_template_empty_pages": [],
+      "fixture": "fixtures/350521-application-stress.json"
+    },
+    {
+      "label": "350521-evidence-original",
+      "region_code": "350521",
+      "kind": "evidence",
+      "scenario": "original",
+      "file": "350521-evidence-original.docx",
+      "proposal_path": "proposed-root/reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/huian-350521/evidence-format-public-retrieval.docx",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "path": "word/350521-evidence-original.docx",
+      "source_id": "5a2049b6dd7a240d496c29d7",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=A917E510341EA05C46948B616C3BE489",
+      "source_version": "4a9697f5ea943d6dc02b5a9361da7bf6639a50cd6c76f357aa01d68686d4178b",
+      "official_version": "1",
+      "material_id": "A1FB6544199320AA309480566D3FDAF0",
+      "attachment_id": "3C7BF28B410DDBA48A6246EAFD4123C0",
+      "public_file_unid": "CC300F5D9DD5DC404D65C68116D50C55",
+      "original_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "native_pages": [
+        {
+          "page": 1,
+          "path": "pages/350521-evidence-original-1.png",
+          "sha256": "65362d420216052c69a3276f236ec48792ce25b3d719faa29b642b84fb3c8ae4"
+        }
+      ],
+      "native_page_count": 1,
+      "all_fixture_text_preserved": true,
+      "original_template_empty_pages": []
+    },
+    {
+      "label": "350521-evidence-normal",
+      "region_code": "350521",
+      "kind": "evidence",
+      "scenario": "normal",
+      "file": "350521-evidence-normal.docx",
+      "proposal_path": "qa/word/350521-evidence-normal.docx",
+      "bytes": 16699,
+      "sha256": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a",
+      "path": "word/350521-evidence-normal.docx",
+      "source_id": "5a2049b6dd7a240d496c29d7",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=A917E510341EA05C46948B616C3BE489",
+      "source_version": "4a9697f5ea943d6dc02b5a9361da7bf6639a50cd6c76f357aa01d68686d4178b",
+      "official_version": "1",
+      "material_id": "A1FB6544199320AA309480566D3FDAF0",
+      "attachment_id": "3C7BF28B410DDBA48A6246EAFD4123C0",
+      "public_file_unid": "CC300F5D9DD5DC404D65C68116D50C55",
+      "original_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "native_pages": [
+        {
+          "page": 1,
+          "path": "pages/350521-evidence-normal-1.png",
+          "sha256": "9b624094acb2e64210c7ca2fc3a46e452008f0fb2fd423cd85433e2985fca368"
+        }
+      ],
+      "native_page_count": 1,
+      "all_fixture_text_preserved": true,
+      "original_template_empty_pages": [],
+      "fixture": "fixtures/350521-evidence-normal.json"
+    },
+    {
+      "label": "350521-evidence-stress",
+      "region_code": "350521",
+      "kind": "evidence",
+      "scenario": "stress",
+      "file": "350521-evidence-stress.docx",
+      "proposal_path": "qa/word/350521-evidence-stress.docx",
+      "bytes": 17291,
+      "sha256": "d037c6d322e57604595a7671060767c990d1409898e868834bd09da7b0bcd274",
+      "path": "word/350521-evidence-stress.docx",
+      "source_id": "5a2049b6dd7a240d496c29d7",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=A917E510341EA05C46948B616C3BE489",
+      "source_version": "4a9697f5ea943d6dc02b5a9361da7bf6639a50cd6c76f357aa01d68686d4178b",
+      "official_version": "1",
+      "material_id": "A1FB6544199320AA309480566D3FDAF0",
+      "attachment_id": "3C7BF28B410DDBA48A6246EAFD4123C0",
+      "public_file_unid": "CC300F5D9DD5DC404D65C68116D50C55",
+      "original_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "native_pages": [
+        {
+          "page": 1,
+          "path": "pages/350521-evidence-stress-1.png",
+          "sha256": "09dbffe41dd0b80eeebad49a42c364eedfd1f4408597ef36c3f88cfecb45e6c2"
+        },
+        {
+          "page": 2,
+          "path": "pages/350521-evidence-stress-2.png",
+          "sha256": "b1655ebf34d9fe65e98d79ae3cd0f2e1a712eb20cd28738414144bc280cf215d"
+        },
+        {
+          "page": 3,
+          "path": "pages/350521-evidence-stress-3.png",
+          "sha256": "9494c3da32267cb15088e834bbd43ff01398c4cdfcedfb0d763d28242eac9fdf"
+        },
+        {
+          "page": 4,
+          "path": "pages/350521-evidence-stress-4.png",
+          "sha256": "4e415ff16373712d0c5e333b9fb20ad67ea8d13241ed01f1c94180719441e558"
+        },
+        {
+          "page": 5,
+          "path": "pages/350521-evidence-stress-5.png",
+          "sha256": "bafd3c0197914995737f789a34c5feff3281c850e0334d02612349346e5d5a66"
+        },
+        {
+          "page": 6,
+          "path": "pages/350521-evidence-stress-6.png",
+          "sha256": "47dbb2a2cdd3f7b965945b9163bd737f91713bb61d972ec91297f34b13f93684"
+        },
+        {
+          "page": 7,
+          "path": "pages/350521-evidence-stress-7.png",
+          "sha256": "14533b4af9ec5a6238644ee3eab18740574a1740e33ea91fe1119699256c1ee1"
+        },
+        {
+          "page": 8,
+          "path": "pages/350521-evidence-stress-8.png",
+          "sha256": "a3abc48688992d45ad6b590affa28fa4e0522a65f6925d9f13f11f0b0fb3dc26"
+        },
+        {
+          "page": 9,
+          "path": "pages/350521-evidence-stress-9.png",
+          "sha256": "f8cf8d165647214b3fb5a0c6dbea21b1c4afaf835f993483f0cbdce5704fbb06"
+        }
+      ],
+      "native_page_count": 9,
+      "all_fixture_text_preserved": true,
+      "original_template_empty_pages": [],
+      "fixture": "fixtures/350521-evidence-stress.json"
+    },
+    {
+      "label": "350505-application-original",
+      "region_code": "350505",
+      "kind": "application",
+      "scenario": "original",
+      "file": "350505-application-original.docx",
+      "proposal_path": "proposed-root/reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/quangang-350505/application-format-public-retrieval.docx",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "path": "word/350505-application-original.docx",
+      "source_id": "4f9f8144ec2ae19a7f2e70cf",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=746DE402C70F4CCCDFFDB52EA51A431A",
+      "source_version": "c3d3dc26535ed2df27d53d4ad4f3fb723e1bfb740fa2ee6926c4a550783a6267",
+      "official_version": "1",
+      "material_id": "F3257A076DAB3D331C48D9A05BBECB38",
+      "attachment_id": "AC4FB9C53EA01E760AAA60964DA50D65",
+      "public_file_unid": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+      "original_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "native_pages": [
+        {
+          "page": 1,
+          "path": "pages/350505-application-original-1.png",
+          "sha256": "7ccf9d2414ce1781a86630b2fac16d60c2807351c16f563c5c73edaf8f16d950"
+        },
+        {
+          "page": 2,
+          "path": "pages/350505-application-original-2.png",
+          "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+        }
+      ],
+      "native_page_count": 2,
+      "all_fixture_text_preserved": true,
+      "original_template_empty_pages": [
+        2
+      ]
+    },
+    {
+      "label": "350505-application-normal",
+      "region_code": "350505",
+      "kind": "application",
+      "scenario": "normal",
+      "file": "350505-application-normal.docx",
+      "proposal_path": "qa/word/350505-application-normal.docx",
+      "bytes": 11987,
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+      "path": "word/350505-application-normal.docx",
+      "source_id": "4f9f8144ec2ae19a7f2e70cf",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=746DE402C70F4CCCDFFDB52EA51A431A",
+      "source_version": "c3d3dc26535ed2df27d53d4ad4f3fb723e1bfb740fa2ee6926c4a550783a6267",
+      "official_version": "1",
+      "material_id": "F3257A076DAB3D331C48D9A05BBECB38",
+      "attachment_id": "AC4FB9C53EA01E760AAA60964DA50D65",
+      "public_file_unid": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+      "original_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "native_pages": [
+        {
+          "page": 1,
+          "path": "pages/350505-application-normal-1.png",
+          "sha256": "7029cd930a32c6d5b916df72d7ed0f7695e1a76c05fec82b540ed9c1e6255f77"
+        },
+        {
+          "page": 2,
+          "path": "pages/350505-application-normal-2.png",
+          "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+        }
+      ],
+      "native_page_count": 2,
+      "all_fixture_text_preserved": true,
+      "original_template_empty_pages": [
+        2
+      ],
+      "fixture": "fixtures/350505-application-normal.json"
+    },
+    {
+      "label": "350505-application-stress",
+      "region_code": "350505",
+      "kind": "application",
+      "scenario": "stress",
+      "file": "350505-application-stress.docx",
+      "proposal_path": "qa/word/350505-application-stress.docx",
+      "bytes": 11953,
+      "sha256": "0f399cfd9f5dc4d5fa9d2ba56c2f56719ae95902283cc41572634c4fd5f8c6bf",
+      "path": "word/350505-application-stress.docx",
+      "source_id": "4f9f8144ec2ae19a7f2e70cf",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=746DE402C70F4CCCDFFDB52EA51A431A",
+      "source_version": "c3d3dc26535ed2df27d53d4ad4f3fb723e1bfb740fa2ee6926c4a550783a6267",
+      "official_version": "1",
+      "material_id": "F3257A076DAB3D331C48D9A05BBECB38",
+      "attachment_id": "AC4FB9C53EA01E760AAA60964DA50D65",
+      "public_file_unid": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+      "original_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "native_pages": [
+        {
+          "page": 1,
+          "path": "pages/350505-application-stress-1.png",
+          "sha256": "648a50480c27d8c1d25677d1abd6ac813da90ff3406fd5a356569a8e4c8d765a"
+        },
+        {
+          "page": 2,
+          "path": "pages/350505-application-stress-2.png",
+          "sha256": "d60280e77ada899d3001db6fe4f048f8fb4da1d48852c75350273341ba28e73d"
+        },
+        {
+          "page": 3,
+          "path": "pages/350505-application-stress-3.png",
+          "sha256": "05f947fcedf798aed85f67142680d4b2a7020332c9ff5e07073720ca89b845d3"
+        },
+        {
+          "page": 4,
+          "path": "pages/350505-application-stress-4.png",
+          "sha256": "05407baf7e2268746326ec6f5b4ec126fe681a62934c21d87d766c94cb9c7378"
+        },
+        {
+          "page": 5,
+          "path": "pages/350505-application-stress-5.png",
+          "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+        },
+        {
+          "page": 6,
+          "path": "pages/350505-application-stress-6.png",
+          "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+        },
+        {
+          "page": 7,
+          "path": "pages/350505-application-stress-7.png",
+          "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+        },
+        {
+          "page": 8,
+          "path": "pages/350505-application-stress-8.png",
+          "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+        },
+        {
+          "page": 9,
+          "path": "pages/350505-application-stress-9.png",
+          "sha256": "116d0c23dab2f7eb0008fb5a11bbeb71dd3fa662a8d8b37bb360352c39fedbf8"
+        }
+      ],
+      "native_page_count": 9,
+      "all_fixture_text_preserved": true,
+      "original_template_empty_pages": [],
+      "fixture": "fixtures/350505-application-stress.json"
+    },
+    {
+      "label": "350505-evidence-original",
+      "region_code": "350505",
+      "kind": "evidence",
+      "scenario": "original",
+      "file": "350505-evidence-original.docx",
+      "proposal_path": "proposed-root/reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection/quangang-350505/evidence-format-public-retrieval.docx",
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "path": "word/350505-evidence-original.docx",
+      "source_id": "4f9f8144ec2ae19a7f2e70cf",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=746DE402C70F4CCCDFFDB52EA51A431A",
+      "source_version": "c3d3dc26535ed2df27d53d4ad4f3fb723e1bfb740fa2ee6926c4a550783a6267",
+      "official_version": "1",
+      "material_id": "8BBAA03DFD19C7A087D9AF00E820F89D",
+      "attachment_id": "16BFF472076352C1A92C3BBA1E6921C1",
+      "public_file_unid": "CC300F5D9DD5DC404D65C68116D50C55",
+      "original_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "native_pages": [
+        {
+          "page": 1,
+          "path": "pages/350505-evidence-original-1.png",
+          "sha256": "65362d420216052c69a3276f236ec48792ce25b3d719faa29b642b84fb3c8ae4"
+        }
+      ],
+      "native_page_count": 1,
+      "all_fixture_text_preserved": true,
+      "original_template_empty_pages": []
+    },
+    {
+      "label": "350505-evidence-normal",
+      "region_code": "350505",
+      "kind": "evidence",
+      "scenario": "normal",
+      "file": "350505-evidence-normal.docx",
+      "proposal_path": "qa/word/350505-evidence-normal.docx",
+      "bytes": 16699,
+      "sha256": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a",
+      "path": "word/350505-evidence-normal.docx",
+      "source_id": "4f9f8144ec2ae19a7f2e70cf",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=746DE402C70F4CCCDFFDB52EA51A431A",
+      "source_version": "c3d3dc26535ed2df27d53d4ad4f3fb723e1bfb740fa2ee6926c4a550783a6267",
+      "official_version": "1",
+      "material_id": "8BBAA03DFD19C7A087D9AF00E820F89D",
+      "attachment_id": "16BFF472076352C1A92C3BBA1E6921C1",
+      "public_file_unid": "CC300F5D9DD5DC404D65C68116D50C55",
+      "original_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "native_pages": [
+        {
+          "page": 1,
+          "path": "pages/350505-evidence-normal-1.png",
+          "sha256": "9b624094acb2e64210c7ca2fc3a46e452008f0fb2fd423cd85433e2985fca368"
+        }
+      ],
+      "native_page_count": 1,
+      "all_fixture_text_preserved": true,
+      "original_template_empty_pages": [],
+      "fixture": "fixtures/350505-evidence-normal.json"
+    },
+    {
+      "label": "350505-evidence-stress",
+      "region_code": "350505",
+      "kind": "evidence",
+      "scenario": "stress",
+      "file": "350505-evidence-stress.docx",
+      "proposal_path": "qa/word/350505-evidence-stress.docx",
+      "bytes": 17291,
+      "sha256": "d037c6d322e57604595a7671060767c990d1409898e868834bd09da7b0bcd274",
+      "path": "word/350505-evidence-stress.docx",
+      "source_id": "4f9f8144ec2ae19a7f2e70cf",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=746DE402C70F4CCCDFFDB52EA51A431A",
+      "source_version": "c3d3dc26535ed2df27d53d4ad4f3fb723e1bfb740fa2ee6926c4a550783a6267",
+      "official_version": "1",
+      "material_id": "8BBAA03DFD19C7A087D9AF00E820F89D",
+      "attachment_id": "16BFF472076352C1A92C3BBA1E6921C1",
+      "public_file_unid": "CC300F5D9DD5DC404D65C68116D50C55",
+      "original_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+      "native_pages": [
+        {
+          "page": 1,
+          "path": "pages/350505-evidence-stress-1.png",
+          "sha256": "09dbffe41dd0b80eeebad49a42c364eedfd1f4408597ef36c3f88cfecb45e6c2"
+        },
+        {
+          "page": 2,
+          "path": "pages/350505-evidence-stress-2.png",
+          "sha256": "b1655ebf34d9fe65e98d79ae3cd0f2e1a712eb20cd28738414144bc280cf215d"
+        },
+        {
+          "page": 3,
+          "path": "pages/350505-evidence-stress-3.png",
+          "sha256": "9494c3da32267cb15088e834bbd43ff01398c4cdfcedfb0d763d28242eac9fdf"
+        },
+        {
+          "page": 4,
+          "path": "pages/350505-evidence-stress-4.png",
+          "sha256": "4e415ff16373712d0c5e333b9fb20ad67ea8d13241ed01f1c94180719441e558"
+        },
+        {
+          "page": 5,
+          "path": "pages/350505-evidence-stress-5.png",
+          "sha256": "bafd3c0197914995737f789a34c5feff3281c850e0334d02612349346e5d5a66"
+        },
+        {
+          "page": 6,
+          "path": "pages/350505-evidence-stress-6.png",
+          "sha256": "47dbb2a2cdd3f7b965945b9163bd737f91713bb61d972ec91297f34b13f93684"
+        },
+        {
+          "page": 7,
+          "path": "pages/350505-evidence-stress-7.png",
+          "sha256": "14533b4af9ec5a6238644ee3eab18740574a1740e33ea91fe1119699256c1ee1"
+        },
+        {
+          "page": 8,
+          "path": "pages/350505-evidence-stress-8.png",
+          "sha256": "a3abc48688992d45ad6b590affa28fa4e0522a65f6925d9f13f11f0b0fb3dc26"
+        },
+        {
+          "page": 9,
+          "path": "pages/350505-evidence-stress-9.png",
+          "sha256": "f8cf8d165647214b3fb5a0c6dbea21b1c4afaf835f993483f0cbdce5704fbb06"
+        }
+      ],
+      "native_page_count": 9,
+      "all_fixture_text_preserved": true,
+      "original_template_empty_pages": [],
+      "fixture": "fixtures/350505-evidence-stress.json"
+    }
+  ],
+  "files": {
+    "fixtures/350505-application-normal.json": {
+      "bytes": 1084,
+      "sha256": "b278ede06d05f230a1437bd86ff7f37cbafec57d4e51baefe6e411ff6f717f4f"
+    },
+    "fixtures/350505-application-stress.json": {
+      "bytes": 13013,
+      "sha256": "499dab5e2ff6db9fffa1887fe6152790e8930bb4a7b2b8708721a9ff522caffc"
+    },
+    "fixtures/350505-evidence-normal.json": {
+      "bytes": 1007,
+      "sha256": "0b490ddd050258f896834ba146e637c2b3d91bc20add7ace12f75e0c958bad0b"
+    },
+    "fixtures/350505-evidence-stress.json": {
+      "bytes": 6876,
+      "sha256": "e1344ad75a61f4092a26b4b6ec52c1247b707431b4a0c611f6954c7273aa1e1f"
+    },
+    "fixtures/350521-application-normal.json": {
+      "bytes": 1084,
+      "sha256": "af96aa0211e623af2e71138b905fb3e11b958a0c4ba518452158e8d8ee8fab2d"
+    },
+    "fixtures/350521-application-stress.json": {
+      "bytes": 13013,
+      "sha256": "5c74c36dd5ca7f4ea6f83643bfc4eac674204ce986be3bd9c3cfbe8e70f085d1"
+    },
+    "fixtures/350521-evidence-normal.json": {
+      "bytes": 1007,
+      "sha256": "40a86ff33cfb1bddfb5dc148b9b036a8044a9cc72fe12aa5a7433899d4ebea1d"
+    },
+    "fixtures/350521-evidence-stress.json": {
+      "bytes": 6876,
+      "sha256": "792d76935c8cf9891efbcc405167a075dab60383c53a4bd1451b965976972845"
+    },
+    "pages/350505-application-normal-1.png": {
+      "bytes": 70050,
+      "sha256": "7029cd930a32c6d5b916df72d7ed0f7695e1a76c05fec82b540ed9c1e6255f77"
+    },
+    "pages/350505-application-normal-2.png": {
+      "bytes": 5069,
+      "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+    },
+    "pages/350505-application-original-1.png": {
+      "bytes": 40033,
+      "sha256": "7ccf9d2414ce1781a86630b2fac16d60c2807351c16f563c5c73edaf8f16d950"
+    },
+    "pages/350505-application-original-2.png": {
+      "bytes": 5069,
+      "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+    },
+    "pages/350505-application-stress-1.png": {
+      "bytes": 63341,
+      "sha256": "648a50480c27d8c1d25677d1abd6ac813da90ff3406fd5a356569a8e4c8d765a"
+    },
+    "pages/350505-application-stress-2.png": {
+      "bytes": 62249,
+      "sha256": "d60280e77ada899d3001db6fe4f048f8fb4da1d48852c75350273341ba28e73d"
+    },
+    "pages/350505-application-stress-3.png": {
+      "bytes": 70672,
+      "sha256": "05f947fcedf798aed85f67142680d4b2a7020332c9ff5e07073720ca89b845d3"
+    },
+    "pages/350505-application-stress-4.png": {
+      "bytes": 64616,
+      "sha256": "05407baf7e2268746326ec6f5b4ec126fe681a62934c21d87d766c94cb9c7378"
+    },
+    "pages/350505-application-stress-5.png": {
+      "bytes": 58692,
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+    },
+    "pages/350505-application-stress-6.png": {
+      "bytes": 58692,
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+    },
+    "pages/350505-application-stress-7.png": {
+      "bytes": 58692,
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+    },
+    "pages/350505-application-stress-8.png": {
+      "bytes": 58692,
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+    },
+    "pages/350505-application-stress-9.png": {
+      "bytes": 36031,
+      "sha256": "116d0c23dab2f7eb0008fb5a11bbeb71dd3fa662a8d8b37bb360352c39fedbf8"
+    },
+    "pages/350505-evidence-normal-1.png": {
+      "bytes": 44254,
+      "sha256": "9b624094acb2e64210c7ca2fc3a46e452008f0fb2fd423cd85433e2985fca368"
+    },
+    "pages/350505-evidence-original-1.png": {
+      "bytes": 35874,
+      "sha256": "65362d420216052c69a3276f236ec48792ce25b3d719faa29b642b84fb3c8ae4"
+    },
+    "pages/350505-evidence-stress-1.png": {
+      "bytes": 101045,
+      "sha256": "09dbffe41dd0b80eeebad49a42c364eedfd1f4408597ef36c3f88cfecb45e6c2"
+    },
+    "pages/350505-evidence-stress-2.png": {
+      "bytes": 98087,
+      "sha256": "b1655ebf34d9fe65e98d79ae3cd0f2e1a712eb20cd28738414144bc280cf215d"
+    },
+    "pages/350505-evidence-stress-3.png": {
+      "bytes": 98171,
+      "sha256": "9494c3da32267cb15088e834bbd43ff01398c4cdfcedfb0d763d28242eac9fdf"
+    },
+    "pages/350505-evidence-stress-4.png": {
+      "bytes": 98046,
+      "sha256": "4e415ff16373712d0c5e333b9fb20ad67ea8d13241ed01f1c94180719441e558"
+    },
+    "pages/350505-evidence-stress-5.png": {
+      "bytes": 98138,
+      "sha256": "bafd3c0197914995737f789a34c5feff3281c850e0334d02612349346e5d5a66"
+    },
+    "pages/350505-evidence-stress-6.png": {
+      "bytes": 98204,
+      "sha256": "47dbb2a2cdd3f7b965945b9163bd737f91713bb61d972ec91297f34b13f93684"
+    },
+    "pages/350505-evidence-stress-7.png": {
+      "bytes": 97987,
+      "sha256": "14533b4af9ec5a6238644ee3eab18740574a1740e33ea91fe1119699256c1ee1"
+    },
+    "pages/350505-evidence-stress-8.png": {
+      "bytes": 98232,
+      "sha256": "a3abc48688992d45ad6b590affa28fa4e0522a65f6925d9f13f11f0b0fb3dc26"
+    },
+    "pages/350505-evidence-stress-9.png": {
+      "bytes": 110513,
+      "sha256": "f8cf8d165647214b3fb5a0c6dbea21b1c4afaf835f993483f0cbdce5704fbb06"
+    },
+    "pages/350521-application-normal-1.png": {
+      "bytes": 70050,
+      "sha256": "7029cd930a32c6d5b916df72d7ed0f7695e1a76c05fec82b540ed9c1e6255f77"
+    },
+    "pages/350521-application-normal-2.png": {
+      "bytes": 5069,
+      "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+    },
+    "pages/350521-application-original-1.png": {
+      "bytes": 40033,
+      "sha256": "7ccf9d2414ce1781a86630b2fac16d60c2807351c16f563c5c73edaf8f16d950"
+    },
+    "pages/350521-application-original-2.png": {
+      "bytes": 5069,
+      "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+    },
+    "pages/350521-application-stress-1.png": {
+      "bytes": 63341,
+      "sha256": "648a50480c27d8c1d25677d1abd6ac813da90ff3406fd5a356569a8e4c8d765a"
+    },
+    "pages/350521-application-stress-2.png": {
+      "bytes": 62249,
+      "sha256": "d60280e77ada899d3001db6fe4f048f8fb4da1d48852c75350273341ba28e73d"
+    },
+    "pages/350521-application-stress-3.png": {
+      "bytes": 70672,
+      "sha256": "05f947fcedf798aed85f67142680d4b2a7020332c9ff5e07073720ca89b845d3"
+    },
+    "pages/350521-application-stress-4.png": {
+      "bytes": 64616,
+      "sha256": "05407baf7e2268746326ec6f5b4ec126fe681a62934c21d87d766c94cb9c7378"
+    },
+    "pages/350521-application-stress-5.png": {
+      "bytes": 58692,
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+    },
+    "pages/350521-application-stress-6.png": {
+      "bytes": 58692,
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+    },
+    "pages/350521-application-stress-7.png": {
+      "bytes": 58692,
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+    },
+    "pages/350521-application-stress-8.png": {
+      "bytes": 58692,
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+    },
+    "pages/350521-application-stress-9.png": {
+      "bytes": 36031,
+      "sha256": "116d0c23dab2f7eb0008fb5a11bbeb71dd3fa662a8d8b37bb360352c39fedbf8"
+    },
+    "pages/350521-evidence-normal-1.png": {
+      "bytes": 44254,
+      "sha256": "9b624094acb2e64210c7ca2fc3a46e452008f0fb2fd423cd85433e2985fca368"
+    },
+    "pages/350521-evidence-original-1.png": {
+      "bytes": 35874,
+      "sha256": "65362d420216052c69a3276f236ec48792ce25b3d719faa29b642b84fb3c8ae4"
+    },
+    "pages/350521-evidence-stress-1.png": {
+      "bytes": 101045,
+      "sha256": "09dbffe41dd0b80eeebad49a42c364eedfd1f4408597ef36c3f88cfecb45e6c2"
+    },
+    "pages/350521-evidence-stress-2.png": {
+      "bytes": 98087,
+      "sha256": "b1655ebf34d9fe65e98d79ae3cd0f2e1a712eb20cd28738414144bc280cf215d"
+    },
+    "pages/350521-evidence-stress-3.png": {
+      "bytes": 98171,
+      "sha256": "9494c3da32267cb15088e834bbd43ff01398c4cdfcedfb0d763d28242eac9fdf"
+    },
+    "pages/350521-evidence-stress-4.png": {
+      "bytes": 98046,
+      "sha256": "4e415ff16373712d0c5e333b9fb20ad67ea8d13241ed01f1c94180719441e558"
+    },
+    "pages/350521-evidence-stress-5.png": {
+      "bytes": 98138,
+      "sha256": "bafd3c0197914995737f789a34c5feff3281c850e0334d02612349346e5d5a66"
+    },
+    "pages/350521-evidence-stress-6.png": {
+      "bytes": 98204,
+      "sha256": "47dbb2a2cdd3f7b965945b9163bd737f91713bb61d972ec91297f34b13f93684"
+    },
+    "pages/350521-evidence-stress-7.png": {
+      "bytes": 97987,
+      "sha256": "14533b4af9ec5a6238644ee3eab18740574a1740e33ea91fe1119699256c1ee1"
+    },
+    "pages/350521-evidence-stress-8.png": {
+      "bytes": 98232,
+      "sha256": "a3abc48688992d45ad6b590affa28fa4e0522a65f6925d9f13f11f0b0fb3dc26"
+    },
+    "pages/350521-evidence-stress-9.png": {
+      "bytes": 110513,
+      "sha256": "f8cf8d165647214b3fb5a0c6dbea21b1c4afaf835f993483f0cbdce5704fbb06"
+    },
+    "ROOT-RENDER-INDEX.json": {
+      "bytes": 32798,
+      "sha256": "c5b4840d66a26bbf332a1c973d7b9a42026cf541a86f1123f2a1b061ff3a175d"
+    },
+    "ROOT-WORD-VISUAL-REVIEW.json": {
+      "bytes": 25256,
+      "sha256": "05b5622f8ca3b2ef9dcb77095131392df996b91d52d288879d911b56f3bc3398"
+    },
+    "word/350505-application-normal.docx": {
+      "bytes": 11987,
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618"
+    },
+    "word/350505-application-original.docx": {
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    "word/350505-application-stress.docx": {
+      "bytes": 11953,
+      "sha256": "0f399cfd9f5dc4d5fa9d2ba56c2f56719ae95902283cc41572634c4fd5f8c6bf"
+    },
+    "word/350505-evidence-normal.docx": {
+      "bytes": 16699,
+      "sha256": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a"
+    },
+    "word/350505-evidence-original.docx": {
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    "word/350505-evidence-stress.docx": {
+      "bytes": 17291,
+      "sha256": "d037c6d322e57604595a7671060767c990d1409898e868834bd09da7b0bcd274"
+    },
+    "word/350521-application-normal.docx": {
+      "bytes": 11987,
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618"
+    },
+    "word/350521-application-original.docx": {
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    },
+    "word/350521-application-stress.docx": {
+      "bytes": 11953,
+      "sha256": "0f399cfd9f5dc4d5fa9d2ba56c2f56719ae95902283cc41572634c4fd5f8c6bf"
+    },
+    "word/350521-evidence-normal.docx": {
+      "bytes": 16699,
+      "sha256": "138734dc6c8268cd2bffa6ffa5604c07119cc7841ed687b5e00865ae56b4798a"
+    },
+    "word/350521-evidence-original.docx": {
+      "bytes": 18887,
+      "sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    },
+    "word/350521-evidence-stress.docx": {
+      "bytes": 17291,
+      "sha256": "d037c6d322e57604595a7671060767c990d1409898e868834bd09da7b0bcd274"
+    }
+  },
+  "STAGE": null,
+  "PUBLICATION": null
+}

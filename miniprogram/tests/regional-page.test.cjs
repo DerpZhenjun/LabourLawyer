@@ -30,7 +30,7 @@ function harness(storage={}) {
  const requests=[],modals=[],writes=[],opens=[]
  const wx={env:{USER_DATA_PATH:'/synthetic-device'},getStorageSync:key=>storage[key],setStorageSync:(key,value)=>{storage[key]=clone(value)},removeStorageSync:key=>{delete storage[key]},setNavigationBarTitle(){},setClipboardData(){},showModal:opts=>modals.push(opts),request:opts=>{const task={aborted:false,abort(){this.aborted=true;opts.fail?.({errMsg:'abort'})}};requests.push({...opts,task});return task},getFileSystemManager:()=>({writeFile:opts=>writes.push(opts)}),openDocument:opts=>opens.push(opts)}
  const transport=transportModule.createRegionalTransport(wx,()=> 'https://synthetic.invalid')
- vm.runInNewContext(fs.readFileSync(pageFile,'utf8'),{Page:d=>{definition=d},wx,getApp:()=>({globalData:{apiBase:'https://synthetic.invalid'}}),require:request=>request.includes('generated/regional-contracts')?shared:request.includes('regionalTransport')?{...transportModule,createRegionalTransport:()=>transport}:request.endsWith('data/provinces')?[{slug:'zhejiang',name:'浙江省'},{slug:'jiangsu',name:'江苏省'}]:(()=>{throw new Error('Unexpected local rule dependency '+request)})(),Array,Object,JSON,String,Number,Date,Set,Reflect,ArrayBuffer,Uint8Array,DataView,encodeURIComponent,decodeURIComponent})
+ vm.runInNewContext(fs.readFileSync(pageFile,'utf8'),{Page:d=>{definition=d},wx,getApp:()=>({globalData:{apiBase:'https://synthetic.invalid'}}),require:request=>request.includes('generated/regional-contracts')?shared:request.includes('regionalTransport')?{...transportModule,createRegionalTransport:()=>transport}:request.endsWith('data/provinces')?[{slug:'zhejiang',name:'浙江省'},{slug:'jiangsu',name:'江苏省'},{slug:'fujian',name:'福建省'}]:(()=>{throw new Error('Unexpected local rule dependency '+request)})(),Array,Object,JSON,String,Number,Date,Set,Reflect,ArrayBuffer,Uint8Array,DataView,encodeURIComponent,decodeURIComponent})
  const page=definition;page.data=clone(definition.data);page.setData=value=>Object.assign(page.data,value)
  const last=needle=>[...requests].reverse().find(r=>r.url.includes(needle))
  const respond=(request,data,statusCode=200,header={})=>request.success({statusCode,data,header})
@@ -108,4 +108,19 @@ test('generated response must identify the exact submitted form contract',()=>{
 test('WXML keeps visible labels, safe text controls, official/technical distinction and province entry',()=>{
  const wxml=fs.readFileSync(path.join(root,'miniprogram/pages/regional/index.wxml'),'utf8');assert.match(wxml,/aria-label=/);assert.match(wxml,/<label/);assert.match(wxml,/maxlength="-1"/);assert.match(wxml,/技术容量/);assert.match(wxml,/本人.*签/);const app=JSON.parse(fs.readFileSync(path.join(root,'miniprogram/app.json'),'utf8'));assert(app.pages.includes('pages/regional/index'));assert.match(fs.readFileSync(path.join(root,'miniprogram/pages/province/index.wxml'),'utf8'),/区县/)
 })
+
+test('actual own HQ source sections display readable text and own office hours without changing raw guide facts',()=>{
+ for(const [i,folder] of ['huian-350521','quangang-350505'].entries()) {
+  const original=JSON.parse(fs.readFileSync(path.join(root,'reports/overnight-gap-closure-20261030/localities/fujian-huian-quangang-source-projection',folder,'guide.json'),'utf8'))
+  const before=JSON.stringify(original),g={...original,version:i+1},h=harness()
+  h.page.onLoad({province:'fujian'});h.respond(h.last('/areas'),{items:[{province:'fujian',city:'泉州市'}]});h.page.onCityChange(event('0'));h.respond(h.last('/areas'),{items:[{province:'fujian',city:'泉州市',district:g.district,code:g.region_code}]});h.page.onDistrictChange(event('0'));h.respond(h.last('/lookup'),g)
+  assert.equal(h.page.data.error,'');const sections=h.page.data.sections,text=sections.map(s=>s.label+'\n'+s.value).join('\n')
+  assert(sections.some(s=>s.label==='常见问题'&&s.value.includes(original.sections.notices_raw[0].title)))
+  assert(sections.some(s=>s.label==='窗口办理说明'&&s.value.includes(original.sections.apply_method_raw.officeTime)))
+  assert(h.page.data.fields.some(f=>f.label==='办公时间'&&f.value===original.sections.apply_method_raw.officeTime))
+  assert.doesNotMatch(text,/apply_method_raw|siteUnid|flowNodeCount|notice_titles_not_promoted|href=|<a\b|true|false/)
+  assert.equal(JSON.stringify(original),before);assert.equal(JSON.stringify(h.page._guide.sections),JSON.stringify(original.sections))
+ }
+})
+
 console.log(`PASS miniprogram regional: ${passed} Page/transport checks; synthetic only; no network or device claims`)

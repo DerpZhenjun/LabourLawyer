@@ -1,0 +1,16 @@
+{
+  "status": "ROOT_HQ_OWN_NATIVE_BROWSER_PASS",
+  "actual_browser_review": true,
+  "publication_approval": "APPROVED",
+  "models": 0,
+  "browser_screenshots": 0,
+  "source_ids": [
+    "5a2049b6dd7a240d496c29d7",
+    "4f9f8144ec2ae19a7f2e70cf"
+  ],
+  "contracts": 4,
+  "native_downloads": 8,
+  "browser_result_sha256": "7bde8b2d69c13a602c201bfd516d4540eec1d83a633ea505b2fab03088f48e8c",
+  "artifact_manifest_sha256": "b41df04ac95fe753ec5117e84c66e34cdf027104e6da991c8b85266aeb59d44f",
+  "review_scope": "Independent replay of stored isolated browser evidence against the actual downloads and independently reviewed Word files"
+}

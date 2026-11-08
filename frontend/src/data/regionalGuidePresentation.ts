@@ -1,7 +1,6 @@
 /** Read only this guide's facts. JSON boundaries reject malformed data. */
-import {isPlainRecord} from '../../../packages/regional-contracts/src/index.ts'
+import {isPlainRecord,readGuideSections,guideDisplayField} from '../../../packages/regional-contracts/src/index.ts'
 import type {RegionalGuide,RegionalTemplate,Region,DocumentKind} from '../../../packages/regional-contracts/src/index.ts'
-const aliases:Record<string,string[]>={'必须到现场原因':['必须到现场原因','必需现场办理原因','必须到现场办理说明'],'咨询方式':['咨询方式','咨询服务','咨询电话'],'到办事现场次数':['到办事现场次数','到现场次数']}
 export const publicError=(value:unknown,fallback='资料暂时无法读取，请稍后重试。'):string=>value instanceof Error?value.message:fallback
 const invalid=():never=>{throw new Error('返回的公开资料格式不正确，请稍后重新核对。')}
 export const record=(value:unknown):Record<string,unknown>=>isPlainRecord(value)?value:invalid()
@@ -10,11 +9,7 @@ const strings=(value:unknown):string[]=>value===undefined?[]:Array.isArray(value
 const rows=(value:unknown):Record<string,unknown>[]=>Array.isArray(value)?value.map(record):invalid()
 const count=(value:unknown):number=>typeof value==='number'&&Number.isSafeInteger(value)&&value>=0?value:invalid()
 const boolean=(value:unknown):boolean=>typeof value==='boolean'?value:invalid()
-export function guideField(guide:unknown,name:string):string {
- const fields=isPlainRecord(guide)&&isPlainRecord(guide.fields)?guide.fields:undefined
- for(const key of aliases[name]??[name]){const entry=fields?.[key],value=isPlainRecord(entry)?entry.raw_value:undefined;if(value!==undefined&&value!==null&&String(value).trim())return String(value)}
- return '待核实'
-}
+export function guideField(guide:unknown,name:string):string {return guideDisplayField(guide,name)??'待核实'}
 export function visitCountLabel(guide:unknown):string {const value=guideField(guide,'到办事现场次数');return value==='待核实'||value.includes('次')?value:value+' 次'}
 export function originalCopyLabel(material:unknown):string {const m=isPlainRecord(material)?material:{};return typeof m.original_copy==='string'&&m.original_copy?m.original_copy:/原件|复印件/.test(typeof m.material_type==='string'?m.material_type:'')?String(m.material_type):'原件/复印件待核实'}
 export function materialCopiesLabel(value:unknown):string {
@@ -34,13 +29,13 @@ export function materialDetails(material:unknown):Record<string,unknown> {
 export function hasGenerationKind(guide:unknown,kind:DocumentKind):boolean {return isPlainRecord(guide)&&Array.isArray(guide.templates)&&guide.templates.some(t=>isPlainRecord(t)&&t.can_generate===true&&Array.isArray(t.document_types)&&t.document_types.includes(kind))}
 export interface TemplateDisplay extends RegionalTemplate {source_url:string;region_code:string;download_status:string;original_name:string;official_kind:string}
 export interface MaterialDisplay extends Record<string,unknown> {id:string;name:string;official_badges:string[];required:string;format:string;copies:string|number;purpose:string}
-export interface GuideDisplay extends RegionalGuide {templates:TemplateDisplay[];materials:MaterialDisplay[];warnings:string[];verified_at:string;official_version:string;channel:{online_status:string;entry_url:string;raw_value:string;entry_check:{status:string}}}
+export interface GuideDisplay extends RegionalGuide {display_sections:ReturnType<typeof readGuideSections>;templates:TemplateDisplay[];materials:MaterialDisplay[];warnings:string[];verified_at:string;official_version:string;channel:{online_status:string;entry_url:string;raw_value:string;entry_check:{status:string}}}
 export function readGuideDisplay(value:RegionalGuide|null):GuideDisplay|null {
  if(value===null)return null
  const channel=record(value.channel)
  const templates=value.templates.map(t=>({...t,source_url:text(t.source_url),region_code:text(t.region_code),download_status:text(t.download_status),original_name:text(t.original_name),official_kind:text(t.official_kind)}))
  const materials=value.materials.map(m=>{const copies=m.copies===undefined||m.copies===null?'':typeof m.copies==='number'&&Number.isFinite(m.copies)?m.copies:text(m.copies);return{...m,id:text(m.id),name:text(m.name),official_badges:strings(m.official_badges),required:text(m.required),format:text(m.format),copies,purpose:text(m.purpose)}})
- return{...value,templates,materials,warnings:strings(value.warnings),verified_at:text(value.verified_at),official_version:text(value.official_version),channel:{...channel,online_status:text(channel.online_status),entry_url:text(channel.entry_url),raw_value:text(channel.raw_value),entry_check:{status:text(channel.entry_check===undefined?undefined:record(channel.entry_check).status)}}}
+ return{...value,display_sections:readGuideSections(value.sections),templates,materials,warnings:strings(value.warnings),verified_at:text(value.verified_at),official_version:text(value.official_version),channel:{...channel,online_status:text(channel.online_status),entry_url:text(channel.entry_url),raw_value:text(channel.raw_value),entry_check:{status:text(channel.entry_check===undefined?undefined:record(channel.entry_check).status)}}}
 }
 export interface DirectoryArea extends Region {region_code:string;source_id:string|null;can_generate:boolean}
 export function readAreaRows(value:unknown,province:string,city=''):DirectoryArea[] {return rows(value).map(row=>{const rowProvince=text(row.province,province),rowCity=text(row.city,city);if(rowProvince!==province||(city&&rowCity!==city))return invalid();return{...row,province:rowProvince,city:rowCity,district:text(row.district),region_code:text(row.region_code),source_id:row.source_id===null||row.source_id===undefined?null:text(row.source_id),can_generate:row.can_generate===undefined?false:boolean(row.can_generate)}})}

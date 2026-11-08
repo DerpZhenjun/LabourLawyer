@@ -18,7 +18,7 @@
     <text class="muted" selectable>来源：{{guide.source_id}} · 版本：{{guide.version}}</text>
     <text selectable>{{guide.source_url}}</text><button bindtap="copySource">复制官方指南网址</button>
   </view>
-  <view wx:for="{{sections}}" wx:key="label" class="card"><text class="title">{{item.label}}</text><text selectable>{{item.value}}</text></view>
+  <view wx:for="{{sections}}" wx:key="key" class="card"><text class="title">{{item.label}}</text><text selectable>{{item.value || '相关说明待核实'}}</text></view>
   <view wx:if="{{materials.length}}" class="card">
     <text class="title">申请材料</text>
     <view wx:for="{{materials}}" wx:key="index" class="material">

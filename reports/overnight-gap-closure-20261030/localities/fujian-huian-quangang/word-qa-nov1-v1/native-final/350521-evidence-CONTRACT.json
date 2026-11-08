@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "context": {
+    "province": "fujian",
+    "city": "泉州市",
+    "district": "惠安县",
+    "region_code": "350521",
+    "source_id": "5a2049b6dd7a240d496c29d7",
+    "version": 1,
+    "template_id": "3C7BF28B410DDBA48A6246EAFD4123C0",
+    "kind": "evidence",
+    "mode": "blank",
+    "adapter": "fujian_huian_quangang_own_api_nov1_v1",
+    "schema_id": "fujian-huian-quangang-350521-evidence-v1",
+    "schema_version": 1,
+    "source_version": "4a9697f5ea943d6dc02b5a9361da7bf6639a50cd6c76f357aa01d68686d4178b",
+    "template_sha256": "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815",
+    "template_version": "sha256:d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+  },
+  "fields": [
+    {
+      "key": "evidenceList",
+      "type": "object_list",
+      "maxItems": 9,
+      "fields": [
+        {
+          "key": "name",
+          "type": "text",
+          "maxLength": 60,
+          "label": "证据名称",
+          "hint": ""
+        },
+        {
+          "key": "pageCount",
+          "type": "text",
+          "maxLength": 4,
+          "label": "页数",
+          "hint": "本项证据页数，不是材料副本份数。"
+        },
+        {
+          "key": "originalType",
+          "type": "text",
+          "maxLength": 4,
+          "choices": [
+            "原件",
+            "复印件"
+          ],
+          "label": "原件或复印件",
+          "hint": ""
+        },
+        {
+          "key": "purpose",
+          "type": "text",
+          "maxLength": 80,
+          "label": "证明对象",
+          "hint": ""
+        },
+        {
+          "key": "pageRange",
+          "type": "text",
+          "maxLength": 32,
+          "label": "页码",
+          "hint": "本项证据对应的页码。"
+        }
+      ],
+      "label": "证据清单",
+      "hint": "按本区证据清单已有列逐项填写。"
+    }
+  ],
+  "defaults": {
+    "evidenceList": [
+      {
+        "name": "",
+        "pageCount": "",
+        "originalType": "",
+        "purpose": "",
+        "pageRange": ""
+      }
+    ]
+  },
+  "policy": {
+    "unknown_fields": "reject",
+    "invalid_xml": "reject",
+    "text_controls": "newline_only",
+    "trim_text": true,
+    "capacity_is_official_requirement": false,
+    "capacity_is_legal_requirement": false,
+    "committee_autofill_allowed": false,
+    "signature_date_copies_fields": "not_accepted"
+  },
+  "contract_id": "9ac0097e1b68a7f6807ff0b23fecbaca9cfb4467ed5e5665eb9aae32f75bfae6"
+}

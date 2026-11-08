@@ -1,0 +1,669 @@
+{
+  "status": "ROOT_ACTUAL_NATIVE_WORD_AND_VISUAL_REVIEW_PASSED_NOT_STAGED_OR_PUBLISHED",
+  "verified_at": "2026-11-01T09:18:35.755171+00:00",
+  "region_codes": [
+    "350521",
+    "350505"
+  ],
+  "proposal_freeze_sha256": "8076d58044e6c85a75512f420345b81fc10e44290eea4eb8ff34b994e458e624",
+  "render_preparation_freeze_sha256": "a9d2c14d1172a1800aedd90233da5415c3964ed8ef30a385971461843afe0a31",
+  "render_index_sha256": "ec8a4bb70acf085db772df62b7f1ce744f77c23bc833298389be066cab957fae",
+  "native_export_sha256": "ca08c207e88c7c0788faeb3e9de5e83f90e18c9ab9732f653529939979498918",
+  "physical_native_exports": 12,
+  "input_identities": 16,
+  "blank_original_byte_aliases": 4,
+  "rendered_pages": 48,
+  "unique_pixel_pages_actually_viewed": 20,
+  "reviewed_representatives": [
+    {
+      "label": "350521-application-original",
+      "page": 1,
+      "path": "pages/350521-application-original-1.png",
+      "sha256": "7ccf9d2414ce1781a86630b2fac16d60c2807351c16f563c5c73edaf8f16d950"
+    },
+    {
+      "label": "350521-application-original",
+      "page": 2,
+      "path": "pages/350521-application-original-2.png",
+      "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+    },
+    {
+      "label": "350521-application-normal",
+      "page": 1,
+      "path": "pages/350521-application-normal-1.png",
+      "sha256": "7029cd930a32c6d5b916df72d7ed0f7695e1a76c05fec82b540ed9c1e6255f77"
+    },
+    {
+      "label": "350521-application-stress",
+      "page": 1,
+      "path": "pages/350521-application-stress-1.png",
+      "sha256": "648a50480c27d8c1d25677d1abd6ac813da90ff3406fd5a356569a8e4c8d765a"
+    },
+    {
+      "label": "350521-application-stress",
+      "page": 2,
+      "path": "pages/350521-application-stress-2.png",
+      "sha256": "d60280e77ada899d3001db6fe4f048f8fb4da1d48852c75350273341ba28e73d"
+    },
+    {
+      "label": "350521-application-stress",
+      "page": 3,
+      "path": "pages/350521-application-stress-3.png",
+      "sha256": "05f947fcedf798aed85f67142680d4b2a7020332c9ff5e07073720ca89b845d3"
+    },
+    {
+      "label": "350521-application-stress",
+      "page": 4,
+      "path": "pages/350521-application-stress-4.png",
+      "sha256": "05407baf7e2268746326ec6f5b4ec126fe681a62934c21d87d766c94cb9c7378"
+    },
+    {
+      "label": "350521-application-stress",
+      "page": 5,
+      "path": "pages/350521-application-stress-5.png",
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+    },
+    {
+      "label": "350521-application-stress",
+      "page": 9,
+      "path": "pages/350521-application-stress-9.png",
+      "sha256": "116d0c23dab2f7eb0008fb5a11bbeb71dd3fa662a8d8b37bb360352c39fedbf8"
+    },
+    {
+      "label": "350521-evidence-original",
+      "page": 1,
+      "path": "pages/350521-evidence-original-1.png",
+      "sha256": "65362d420216052c69a3276f236ec48792ce25b3d719faa29b642b84fb3c8ae4"
+    },
+    {
+      "label": "350521-evidence-normal",
+      "page": 1,
+      "path": "pages/350521-evidence-normal-1.png",
+      "sha256": "9b624094acb2e64210c7ca2fc3a46e452008f0fb2fd423cd85433e2985fca368"
+    },
+    {
+      "label": "350521-evidence-stress",
+      "page": 1,
+      "path": "pages/350521-evidence-stress-1.png",
+      "sha256": "09dbffe41dd0b80eeebad49a42c364eedfd1f4408597ef36c3f88cfecb45e6c2"
+    },
+    {
+      "label": "350521-evidence-stress",
+      "page": 2,
+      "path": "pages/350521-evidence-stress-2.png",
+      "sha256": "b1655ebf34d9fe65e98d79ae3cd0f2e1a712eb20cd28738414144bc280cf215d"
+    },
+    {
+      "label": "350521-evidence-stress",
+      "page": 3,
+      "path": "pages/350521-evidence-stress-3.png",
+      "sha256": "9494c3da32267cb15088e834bbd43ff01398c4cdfcedfb0d763d28242eac9fdf"
+    },
+    {
+      "label": "350521-evidence-stress",
+      "page": 4,
+      "path": "pages/350521-evidence-stress-4.png",
+      "sha256": "4e415ff16373712d0c5e333b9fb20ad67ea8d13241ed01f1c94180719441e558"
+    },
+    {
+      "label": "350521-evidence-stress",
+      "page": 5,
+      "path": "pages/350521-evidence-stress-5.png",
+      "sha256": "bafd3c0197914995737f789a34c5feff3281c850e0334d02612349346e5d5a66"
+    },
+    {
+      "label": "350521-evidence-stress",
+      "page": 6,
+      "path": "pages/350521-evidence-stress-6.png",
+      "sha256": "47dbb2a2cdd3f7b965945b9163bd737f91713bb61d972ec91297f34b13f93684"
+    },
+    {
+      "label": "350521-evidence-stress",
+      "page": 7,
+      "path": "pages/350521-evidence-stress-7.png",
+      "sha256": "14533b4af9ec5a6238644ee3eab18740574a1740e33ea91fe1119699256c1ee1"
+    },
+    {
+      "label": "350521-evidence-stress",
+      "page": 8,
+      "path": "pages/350521-evidence-stress-8.png",
+      "sha256": "a3abc48688992d45ad6b590affa28fa4e0522a65f6925d9f13f11f0b0fb3dc26"
+    },
+    {
+      "label": "350521-evidence-stress",
+      "page": 9,
+      "path": "pages/350521-evidence-stress-9.png",
+      "sha256": "f8cf8d165647214b3fb5a0c6dbea21b1c4afaf835f993483f0cbdce5704fbb06"
+    }
+  ],
+  "identical_pixel_pages_mapping": [
+    {
+      "sha256": "7ccf9d2414ce1781a86630b2fac16d60c2807351c16f563c5c73edaf8f16d950",
+      "representative": {
+        "label": "350521-application-original",
+        "page": 1,
+        "path": "pages/350521-application-original-1.png",
+        "sha256": "7ccf9d2414ce1781a86630b2fac16d60c2807351c16f563c5c73edaf8f16d950"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-application-original",
+          "page": 1,
+          "path": "pages/350521-application-original-1.png",
+          "sha256": "7ccf9d2414ce1781a86630b2fac16d60c2807351c16f563c5c73edaf8f16d950"
+        },
+        {
+          "label": "350505-application-original",
+          "page": 1,
+          "path": "pages/350505-application-original-1.png",
+          "sha256": "7ccf9d2414ce1781a86630b2fac16d60c2807351c16f563c5c73edaf8f16d950"
+        }
+      ]
+    },
+    {
+      "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4",
+      "representative": {
+        "label": "350521-application-original",
+        "page": 2,
+        "path": "pages/350521-application-original-2.png",
+        "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-application-original",
+          "page": 2,
+          "path": "pages/350521-application-original-2.png",
+          "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+        },
+        {
+          "label": "350521-application-normal",
+          "page": 2,
+          "path": "pages/350521-application-normal-2.png",
+          "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+        },
+        {
+          "label": "350505-application-original",
+          "page": 2,
+          "path": "pages/350505-application-original-2.png",
+          "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+        },
+        {
+          "label": "350505-application-normal",
+          "page": 2,
+          "path": "pages/350505-application-normal-2.png",
+          "sha256": "a661ea84d1a7854b4f3122f407cfa8848d51cc4c6c1a7a02d489a13a70e2fca4"
+        }
+      ]
+    },
+    {
+      "sha256": "7029cd930a32c6d5b916df72d7ed0f7695e1a76c05fec82b540ed9c1e6255f77",
+      "representative": {
+        "label": "350521-application-normal",
+        "page": 1,
+        "path": "pages/350521-application-normal-1.png",
+        "sha256": "7029cd930a32c6d5b916df72d7ed0f7695e1a76c05fec82b540ed9c1e6255f77"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-application-normal",
+          "page": 1,
+          "path": "pages/350521-application-normal-1.png",
+          "sha256": "7029cd930a32c6d5b916df72d7ed0f7695e1a76c05fec82b540ed9c1e6255f77"
+        },
+        {
+          "label": "350505-application-normal",
+          "page": 1,
+          "path": "pages/350505-application-normal-1.png",
+          "sha256": "7029cd930a32c6d5b916df72d7ed0f7695e1a76c05fec82b540ed9c1e6255f77"
+        }
+      ]
+    },
+    {
+      "sha256": "648a50480c27d8c1d25677d1abd6ac813da90ff3406fd5a356569a8e4c8d765a",
+      "representative": {
+        "label": "350521-application-stress",
+        "page": 1,
+        "path": "pages/350521-application-stress-1.png",
+        "sha256": "648a50480c27d8c1d25677d1abd6ac813da90ff3406fd5a356569a8e4c8d765a"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-application-stress",
+          "page": 1,
+          "path": "pages/350521-application-stress-1.png",
+          "sha256": "648a50480c27d8c1d25677d1abd6ac813da90ff3406fd5a356569a8e4c8d765a"
+        },
+        {
+          "label": "350505-application-stress",
+          "page": 1,
+          "path": "pages/350505-application-stress-1.png",
+          "sha256": "648a50480c27d8c1d25677d1abd6ac813da90ff3406fd5a356569a8e4c8d765a"
+        }
+      ]
+    },
+    {
+      "sha256": "d60280e77ada899d3001db6fe4f048f8fb4da1d48852c75350273341ba28e73d",
+      "representative": {
+        "label": "350521-application-stress",
+        "page": 2,
+        "path": "pages/350521-application-stress-2.png",
+        "sha256": "d60280e77ada899d3001db6fe4f048f8fb4da1d48852c75350273341ba28e73d"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-application-stress",
+          "page": 2,
+          "path": "pages/350521-application-stress-2.png",
+          "sha256": "d60280e77ada899d3001db6fe4f048f8fb4da1d48852c75350273341ba28e73d"
+        },
+        {
+          "label": "350505-application-stress",
+          "page": 2,
+          "path": "pages/350505-application-stress-2.png",
+          "sha256": "d60280e77ada899d3001db6fe4f048f8fb4da1d48852c75350273341ba28e73d"
+        }
+      ]
+    },
+    {
+      "sha256": "05f947fcedf798aed85f67142680d4b2a7020332c9ff5e07073720ca89b845d3",
+      "representative": {
+        "label": "350521-application-stress",
+        "page": 3,
+        "path": "pages/350521-application-stress-3.png",
+        "sha256": "05f947fcedf798aed85f67142680d4b2a7020332c9ff5e07073720ca89b845d3"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-application-stress",
+          "page": 3,
+          "path": "pages/350521-application-stress-3.png",
+          "sha256": "05f947fcedf798aed85f67142680d4b2a7020332c9ff5e07073720ca89b845d3"
+        },
+        {
+          "label": "350505-application-stress",
+          "page": 3,
+          "path": "pages/350505-application-stress-3.png",
+          "sha256": "05f947fcedf798aed85f67142680d4b2a7020332c9ff5e07073720ca89b845d3"
+        }
+      ]
+    },
+    {
+      "sha256": "05407baf7e2268746326ec6f5b4ec126fe681a62934c21d87d766c94cb9c7378",
+      "representative": {
+        "label": "350521-application-stress",
+        "page": 4,
+        "path": "pages/350521-application-stress-4.png",
+        "sha256": "05407baf7e2268746326ec6f5b4ec126fe681a62934c21d87d766c94cb9c7378"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-application-stress",
+          "page": 4,
+          "path": "pages/350521-application-stress-4.png",
+          "sha256": "05407baf7e2268746326ec6f5b4ec126fe681a62934c21d87d766c94cb9c7378"
+        },
+        {
+          "label": "350505-application-stress",
+          "page": 4,
+          "path": "pages/350505-application-stress-4.png",
+          "sha256": "05407baf7e2268746326ec6f5b4ec126fe681a62934c21d87d766c94cb9c7378"
+        }
+      ]
+    },
+    {
+      "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da",
+      "representative": {
+        "label": "350521-application-stress",
+        "page": 5,
+        "path": "pages/350521-application-stress-5.png",
+        "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-application-stress",
+          "page": 5,
+          "path": "pages/350521-application-stress-5.png",
+          "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+        },
+        {
+          "label": "350521-application-stress",
+          "page": 6,
+          "path": "pages/350521-application-stress-6.png",
+          "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+        },
+        {
+          "label": "350521-application-stress",
+          "page": 7,
+          "path": "pages/350521-application-stress-7.png",
+          "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+        },
+        {
+          "label": "350521-application-stress",
+          "page": 8,
+          "path": "pages/350521-application-stress-8.png",
+          "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+        },
+        {
+          "label": "350505-application-stress",
+          "page": 5,
+          "path": "pages/350505-application-stress-5.png",
+          "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+        },
+        {
+          "label": "350505-application-stress",
+          "page": 6,
+          "path": "pages/350505-application-stress-6.png",
+          "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+        },
+        {
+          "label": "350505-application-stress",
+          "page": 7,
+          "path": "pages/350505-application-stress-7.png",
+          "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+        },
+        {
+          "label": "350505-application-stress",
+          "page": 8,
+          "path": "pages/350505-application-stress-8.png",
+          "sha256": "fd895f0de8d51939fdf055977b3e47a98869cac51035c2c95f6d2d8e957e41da"
+        }
+      ]
+    },
+    {
+      "sha256": "116d0c23dab2f7eb0008fb5a11bbeb71dd3fa662a8d8b37bb360352c39fedbf8",
+      "representative": {
+        "label": "350521-application-stress",
+        "page": 9,
+        "path": "pages/350521-application-stress-9.png",
+        "sha256": "116d0c23dab2f7eb0008fb5a11bbeb71dd3fa662a8d8b37bb360352c39fedbf8"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-application-stress",
+          "page": 9,
+          "path": "pages/350521-application-stress-9.png",
+          "sha256": "116d0c23dab2f7eb0008fb5a11bbeb71dd3fa662a8d8b37bb360352c39fedbf8"
+        },
+        {
+          "label": "350505-application-stress",
+          "page": 9,
+          "path": "pages/350505-application-stress-9.png",
+          "sha256": "116d0c23dab2f7eb0008fb5a11bbeb71dd3fa662a8d8b37bb360352c39fedbf8"
+        }
+      ]
+    },
+    {
+      "sha256": "65362d420216052c69a3276f236ec48792ce25b3d719faa29b642b84fb3c8ae4",
+      "representative": {
+        "label": "350521-evidence-original",
+        "page": 1,
+        "path": "pages/350521-evidence-original-1.png",
+        "sha256": "65362d420216052c69a3276f236ec48792ce25b3d719faa29b642b84fb3c8ae4"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-evidence-original",
+          "page": 1,
+          "path": "pages/350521-evidence-original-1.png",
+          "sha256": "65362d420216052c69a3276f236ec48792ce25b3d719faa29b642b84fb3c8ae4"
+        },
+        {
+          "label": "350505-evidence-original",
+          "page": 1,
+          "path": "pages/350505-evidence-original-1.png",
+          "sha256": "65362d420216052c69a3276f236ec48792ce25b3d719faa29b642b84fb3c8ae4"
+        }
+      ]
+    },
+    {
+      "sha256": "9b624094acb2e64210c7ca2fc3a46e452008f0fb2fd423cd85433e2985fca368",
+      "representative": {
+        "label": "350521-evidence-normal",
+        "page": 1,
+        "path": "pages/350521-evidence-normal-1.png",
+        "sha256": "9b624094acb2e64210c7ca2fc3a46e452008f0fb2fd423cd85433e2985fca368"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-evidence-normal",
+          "page": 1,
+          "path": "pages/350521-evidence-normal-1.png",
+          "sha256": "9b624094acb2e64210c7ca2fc3a46e452008f0fb2fd423cd85433e2985fca368"
+        },
+        {
+          "label": "350505-evidence-normal",
+          "page": 1,
+          "path": "pages/350505-evidence-normal-1.png",
+          "sha256": "9b624094acb2e64210c7ca2fc3a46e452008f0fb2fd423cd85433e2985fca368"
+        }
+      ]
+    },
+    {
+      "sha256": "09dbffe41dd0b80eeebad49a42c364eedfd1f4408597ef36c3f88cfecb45e6c2",
+      "representative": {
+        "label": "350521-evidence-stress",
+        "page": 1,
+        "path": "pages/350521-evidence-stress-1.png",
+        "sha256": "09dbffe41dd0b80eeebad49a42c364eedfd1f4408597ef36c3f88cfecb45e6c2"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-evidence-stress",
+          "page": 1,
+          "path": "pages/350521-evidence-stress-1.png",
+          "sha256": "09dbffe41dd0b80eeebad49a42c364eedfd1f4408597ef36c3f88cfecb45e6c2"
+        },
+        {
+          "label": "350505-evidence-stress",
+          "page": 1,
+          "path": "pages/350505-evidence-stress-1.png",
+          "sha256": "09dbffe41dd0b80eeebad49a42c364eedfd1f4408597ef36c3f88cfecb45e6c2"
+        }
+      ]
+    },
+    {
+      "sha256": "b1655ebf34d9fe65e98d79ae3cd0f2e1a712eb20cd28738414144bc280cf215d",
+      "representative": {
+        "label": "350521-evidence-stress",
+        "page": 2,
+        "path": "pages/350521-evidence-stress-2.png",
+        "sha256": "b1655ebf34d9fe65e98d79ae3cd0f2e1a712eb20cd28738414144bc280cf215d"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-evidence-stress",
+          "page": 2,
+          "path": "pages/350521-evidence-stress-2.png",
+          "sha256": "b1655ebf34d9fe65e98d79ae3cd0f2e1a712eb20cd28738414144bc280cf215d"
+        },
+        {
+          "label": "350505-evidence-stress",
+          "page": 2,
+          "path": "pages/350505-evidence-stress-2.png",
+          "sha256": "b1655ebf34d9fe65e98d79ae3cd0f2e1a712eb20cd28738414144bc280cf215d"
+        }
+      ]
+    },
+    {
+      "sha256": "9494c3da32267cb15088e834bbd43ff01398c4cdfcedfb0d763d28242eac9fdf",
+      "representative": {
+        "label": "350521-evidence-stress",
+        "page": 3,
+        "path": "pages/350521-evidence-stress-3.png",
+        "sha256": "9494c3da32267cb15088e834bbd43ff01398c4cdfcedfb0d763d28242eac9fdf"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-evidence-stress",
+          "page": 3,
+          "path": "pages/350521-evidence-stress-3.png",
+          "sha256": "9494c3da32267cb15088e834bbd43ff01398c4cdfcedfb0d763d28242eac9fdf"
+        },
+        {
+          "label": "350505-evidence-stress",
+          "page": 3,
+          "path": "pages/350505-evidence-stress-3.png",
+          "sha256": "9494c3da32267cb15088e834bbd43ff01398c4cdfcedfb0d763d28242eac9fdf"
+        }
+      ]
+    },
+    {
+      "sha256": "4e415ff16373712d0c5e333b9fb20ad67ea8d13241ed01f1c94180719441e558",
+      "representative": {
+        "label": "350521-evidence-stress",
+        "page": 4,
+        "path": "pages/350521-evidence-stress-4.png",
+        "sha256": "4e415ff16373712d0c5e333b9fb20ad67ea8d13241ed01f1c94180719441e558"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-evidence-stress",
+          "page": 4,
+          "path": "pages/350521-evidence-stress-4.png",
+          "sha256": "4e415ff16373712d0c5e333b9fb20ad67ea8d13241ed01f1c94180719441e558"
+        },
+        {
+          "label": "350505-evidence-stress",
+          "page": 4,
+          "path": "pages/350505-evidence-stress-4.png",
+          "sha256": "4e415ff16373712d0c5e333b9fb20ad67ea8d13241ed01f1c94180719441e558"
+        }
+      ]
+    },
+    {
+      "sha256": "bafd3c0197914995737f789a34c5feff3281c850e0334d02612349346e5d5a66",
+      "representative": {
+        "label": "350521-evidence-stress",
+        "page": 5,
+        "path": "pages/350521-evidence-stress-5.png",
+        "sha256": "bafd3c0197914995737f789a34c5feff3281c850e0334d02612349346e5d5a66"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-evidence-stress",
+          "page": 5,
+          "path": "pages/350521-evidence-stress-5.png",
+          "sha256": "bafd3c0197914995737f789a34c5feff3281c850e0334d02612349346e5d5a66"
+        },
+        {
+          "label": "350505-evidence-stress",
+          "page": 5,
+          "path": "pages/350505-evidence-stress-5.png",
+          "sha256": "bafd3c0197914995737f789a34c5feff3281c850e0334d02612349346e5d5a66"
+        }
+      ]
+    },
+    {
+      "sha256": "47dbb2a2cdd3f7b965945b9163bd737f91713bb61d972ec91297f34b13f93684",
+      "representative": {
+        "label": "350521-evidence-stress",
+        "page": 6,
+        "path": "pages/350521-evidence-stress-6.png",
+        "sha256": "47dbb2a2cdd3f7b965945b9163bd737f91713bb61d972ec91297f34b13f93684"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-evidence-stress",
+          "page": 6,
+          "path": "pages/350521-evidence-stress-6.png",
+          "sha256": "47dbb2a2cdd3f7b965945b9163bd737f91713bb61d972ec91297f34b13f93684"
+        },
+        {
+          "label": "350505-evidence-stress",
+          "page": 6,
+          "path": "pages/350505-evidence-stress-6.png",
+          "sha256": "47dbb2a2cdd3f7b965945b9163bd737f91713bb61d972ec91297f34b13f93684"
+        }
+      ]
+    },
+    {
+      "sha256": "14533b4af9ec5a6238644ee3eab18740574a1740e33ea91fe1119699256c1ee1",
+      "representative": {
+        "label": "350521-evidence-stress",
+        "page": 7,
+        "path": "pages/350521-evidence-stress-7.png",
+        "sha256": "14533b4af9ec5a6238644ee3eab18740574a1740e33ea91fe1119699256c1ee1"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-evidence-stress",
+          "page": 7,
+          "path": "pages/350521-evidence-stress-7.png",
+          "sha256": "14533b4af9ec5a6238644ee3eab18740574a1740e33ea91fe1119699256c1ee1"
+        },
+        {
+          "label": "350505-evidence-stress",
+          "page": 7,
+          "path": "pages/350505-evidence-stress-7.png",
+          "sha256": "14533b4af9ec5a6238644ee3eab18740574a1740e33ea91fe1119699256c1ee1"
+        }
+      ]
+    },
+    {
+      "sha256": "a3abc48688992d45ad6b590affa28fa4e0522a65f6925d9f13f11f0b0fb3dc26",
+      "representative": {
+        "label": "350521-evidence-stress",
+        "page": 8,
+        "path": "pages/350521-evidence-stress-8.png",
+        "sha256": "a3abc48688992d45ad6b590affa28fa4e0522a65f6925d9f13f11f0b0fb3dc26"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-evidence-stress",
+          "page": 8,
+          "path": "pages/350521-evidence-stress-8.png",
+          "sha256": "a3abc48688992d45ad6b590affa28fa4e0522a65f6925d9f13f11f0b0fb3dc26"
+        },
+        {
+          "label": "350505-evidence-stress",
+          "page": 8,
+          "path": "pages/350505-evidence-stress-8.png",
+          "sha256": "a3abc48688992d45ad6b590affa28fa4e0522a65f6925d9f13f11f0b0fb3dc26"
+        }
+      ]
+    },
+    {
+      "sha256": "f8cf8d165647214b3fb5a0c6dbea21b1c4afaf835f993483f0cbdce5704fbb06",
+      "representative": {
+        "label": "350521-evidence-stress",
+        "page": 9,
+        "path": "pages/350521-evidence-stress-9.png",
+        "sha256": "f8cf8d165647214b3fb5a0c6dbea21b1c4afaf835f993483f0cbdce5704fbb06"
+      },
+      "identical_pages": [
+        {
+          "label": "350521-evidence-stress",
+          "page": 9,
+          "path": "pages/350521-evidence-stress-9.png",
+          "sha256": "f8cf8d165647214b3fb5a0c6dbea21b1c4afaf835f993483f0cbdce5704fbb06"
+        },
+        {
+          "label": "350505-evidence-stress",
+          "page": 9,
+          "path": "pages/350505-evidence-stress-9.png",
+          "sha256": "f8cf8d165647214b3fb5a0c6dbea21b1c4afaf835f993483f0cbdce5704fbb06"
+        }
+      ]
+    }
+  ],
+  "observations": [
+    "All 20 unique page images were actually opened and visually inspected; SHA equality maps all 48 actual pages to them.",
+    "Original application has an empty trailing second page; normal filled application preserves that original pagination. This is not a newly introduced blank page and original bytes are retained.",
+    "Application normal fields, three original request slots, facts, unfilled committee, signature and date remain legible and inside original margins.",
+    "Application maximum-capacity fictional fixture flows across nine pages; all complete field text survives extraction and signature/date remain present on final page.",
+    "Evidence normal fixture has one row, integer page count, original/copy column, purpose/page-range columns, total and signature/date slots; no clipping or overlap.",
+    "Evidence stress has nine rows over nine pages with repeated table header, complete cell text and final total 89991; all rows, boundaries and page footers visible.",
+    "No unrelated region name, guessed committee, signed date or real identity introduced. Technical test capacities are not official filing requirements."
+  ],
+  "clipped_or_lost_content": false,
+  "unexplained_empty_pages": false,
+  "shared_production_registration": false,
+  "stage_approval": false,
+  "publication_approval": false,
+  "models": 0,
+  "browser_screenshots": 0,
+  "portable_sanitization": {
+    "original_sha256": "77dc510573d280f790a2f47944d215c43800100f63dd6fe605d3421d82940b9b",
+    "only_changes": "Native PNG paths replaced by own relative pages paths; no approval fields altered"
+  }
+}
