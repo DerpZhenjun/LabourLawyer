@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "e422316989b86966d21823715e0568faaab51d7b2b9803558b7f5fddada0a74d",
+  "regions": {
+    "350213": {
+      "region_code": "350213",
+      "district": "翔安区",
+      "directory_city": "厦门市",
+      "source_id": "1f622c6bd454f5515906f8c3",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=C441788F52CEBC803F49D57FACE0C4B3",
+      "service_unid": "C441788F52CEBC803F49D57FACE0C4B3",
+      "service_code": "11350208004136730B400201430200201",
+      "authority": "厦门市翔安区人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application"
+      ],
+      "source_manifest_sha256": "279bc36eb43e9b09e6dfe35a471cd4cdc64a9a621266b7934f28bf053c76cbaf"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

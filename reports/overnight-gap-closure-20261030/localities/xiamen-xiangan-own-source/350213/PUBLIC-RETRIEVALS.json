@@ -1,0 +1,23 @@
+{
+  "application": {
+    "source_id": "1f622c6bd454f5515906f8c3",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=C441788F52CEBC803F49D57FACE0C4B3",
+    "region_code": "350213",
+    "service_unid": "C441788F52CEBC803F49D57FACE0C4B3",
+    "kind": "application",
+    "official_attachment_id": "E2F8AF63989556B569C1FE755FA6FBDB",
+    "official_material_id": "413D5538F800D7875E9C1C58B0850899",
+    "public_file_unid": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+    "official_name": "仲裁申请书.docx",
+    "official_role": "格式文本",
+    "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFileStream?unid=F4048D8C91E2FF882AC6C62CC0EC4D86",
+    "observed_browser_status": 200,
+    "native_download_completed": false,
+    "retrieved_at": "2026-11-08T07:12:06.907497+00:00",
+    "file": "application-format-public-retrieval.docx",
+    "bytes": 13093,
+    "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+    "TLS_verification": "DEFAULT_ENABLED",
+    "zip_crc": "PASS"
+  }
+}

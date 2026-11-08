@@ -1,0 +1,83 @@
+{
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=C441788F52CEBC803F49D57FACE0C4B3",
+  "source_id": "1f622c6bd454f5515906f8c3",
+  "observed_at": "2026-11-08T07:12:01.202566+00:00",
+  "raw_native_capture_pin": {
+    "bytes": 26848,
+    "sha256": "61f26291805acfb6186dbf109b7acdb45a093b389ef62a09b2b7745157c3213b"
+  },
+  "roles": [
+    {
+      "attachment_id": "FFDAA61CBF6D2E8865AC65BD6A6C441B",
+      "material_id": "EF06ECCF3AF294EC2BC13D0207383303",
+      "public_file_unid": "D17D0A0DB2F16808BD853B1848D118AA",
+      "official_label": "28劳动争议仲裁证据清单（示例）.docx",
+      "official_role": "示范文本",
+      "type_raw": "2",
+      "observed_control_label": "[示范文本]28劳动争议仲裁证据清单（示例）.docx"
+    },
+    {
+      "attachment_id": "A637EF6EAD573C2578CA358269DED78A",
+      "material_id": "EF06ECCF3AF294EC2BC13D0207383303",
+      "public_file_unid": "6E3F2B70B248EB2169F92B36516AF1EA",
+      "official_label": "28劳动争议仲裁证据清单.doc",
+      "official_role": "格式文本",
+      "type_raw": "1",
+      "observed_control_label": "[格式文本]28劳动争议仲裁证据清单.doc"
+    },
+    {
+      "attachment_id": "647D4B5416862AEE39A3EDD12700D147",
+      "material_id": "CD05097F9909F7E20B01F468F15D3596",
+      "public_file_unid": "B003DE5E16255A0F11702262AAA851EB",
+      "official_label": "证据材料 (示例）.docx",
+      "official_role": "示范文本",
+      "type_raw": "2",
+      "observed_control_label": "[示范文本]证据材料 (示例）.docx"
+    },
+    {
+      "attachment_id": "7F4BD733FA9E9B59615172F68B159E92",
+      "material_id": "CD05097F9909F7E20B01F468F15D3596",
+      "public_file_unid": "92D79F13B68D01980CD67AECC5C27003",
+      "official_label": "证据材料.docx",
+      "official_role": "格式文本",
+      "type_raw": "1",
+      "observed_control_label": "[格式文本]证据材料.docx"
+    },
+    {
+      "attachment_id": "C5CC46DD49DBD32B6D42206A798D1509",
+      "material_id": "413D5538F800D7875E9C1C58B0850899",
+      "public_file_unid": "98A0EE44D3D63B3D6A10FE60D4E83776",
+      "official_label": "仲裁申请书示例.docx",
+      "official_role": "示范文本",
+      "type_raw": "2",
+      "observed_control_label": "[示范文本]仲裁申请书示例.docx"
+    },
+    {
+      "attachment_id": "E2F8AF63989556B569C1FE755FA6FBDB",
+      "material_id": "413D5538F800D7875E9C1C58B0850899",
+      "public_file_unid": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+      "official_label": "仲裁申请书.docx",
+      "official_role": "格式文本",
+      "type_raw": "1",
+      "observed_control_label": "[格式文本]仲裁申请书.docx"
+    }
+  ],
+  "verified_legacy_original": {
+    "region_code": "350213",
+    "source_id": "1f622c6bd454f5515906f8c3",
+    "official_url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/file/downloadFileStream?unid=6E3F2B70B248EB2169F92B36516AF1EA",
+    "attachment_id": "A637EF6EAD573C2578CA358269DED78A",
+    "official_name": "28劳动争议仲裁证据清单.doc",
+    "official_role": "格式文本",
+    "original_sha256": "57e6ecded6e510d5adfa320c4ef82887ad5aa37d4f895f191ad78ace239b6613",
+    "size": 25088,
+    "binary_doc": true,
+    "at": "2026-11-08T07:18:58.089218+00:00",
+    "pages": 1,
+    "rendered_page_sha256": "9546ccc7f33d9da32e552ffe2516e11acbe8da861f640ba63e063d82470f5c9d",
+    "visible_attachment_text": "[格式文本]28劳动争议仲裁证据清单.doc",
+    "visual_review": "Official blank table, ten numbered rows, source and proof-purpose fields, signature and date. No entered party or evidence data.",
+    "generation_state": "LEGACY_LAYOUT_ADAPTER_PENDING"
+  },
+  "evidence_role_observation_sha256": "06e08d2418e12ec5ef026f05a6782b31b9f97e5d16a8ae3f936e555357371891"
+}
