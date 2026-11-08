@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "96edf353f6106eb36271b69adc9835f090786337a65792c8a27e8869258dcf22",
+  "regions": {
+    "350802": {
+      "region_code": "350802",
+      "district": "新罗区",
+      "directory_city": "龙岩市",
+      "source_id": "fdc6a88b3a22440ff0b7c40f",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=EF192D07324B05005E68126456C0B7A5",
+      "service_unid": "EF192D07324B05005E68126456C0B7A5",
+      "service_code": "1135080200408837XD400201430200201",
+      "authority": "新罗区人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "faf214ad5a505bf5d6be8d65e544db55fb9b9a4a999fb00ff7acaf7a2665e58a"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

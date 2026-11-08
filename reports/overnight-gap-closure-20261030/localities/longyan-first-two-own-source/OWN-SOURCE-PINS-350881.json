@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "1e3af4ae09f8b3b0e790a9deadfcfe6489b7424c7baf173aad363d4e301972cb",
+  "regions": {
+    "350881": {
+      "region_code": "350881",
+      "district": "漳平市",
+      "directory_city": "龙岩市",
+      "source_id": "8ddc5833de93302535e84616",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=499080B5BA89BAB1FB1F29B63C993438",
+      "service_unid": "499080B5BA89BAB1FB1F29B63C993438",
+      "service_code": "11350881004094489E400201430200Y01",
+      "authority": "漳平市人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "84b0bcb512748a2f60f8de3548366059de81b32abf0f4dd2aa39ab8f2ed44616"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
