@@ -1,0 +1,34 @@
+{
+  "url": "https://mzt.jiangsu.gov.cn/art/2026/7/2/art_78635_11723214.html",
+  "attachment": "https://mzt.jiangsu.gov.cn/module/download/downfile.jsp?classid=0&filename=76ec7c4bda4a48ac9df378bff7abb145.xls",
+  "collected_at": "2026-11-08T10:40:56.933875+00:00",
+  "size": 142336,
+  "sha256": "c0955755231ba250ee585ca79c6f8d51fda54ad819ba4315857c1a7a5a7256da",
+  "matches": [
+    {
+      "sheet": "Sheet1",
+      "row": 522,
+      "column": 4,
+      "name": "崇川区",
+      "code": "320613",
+      "cell": "崇川区 320613\n（21街道）"
+    },
+    {
+      "sheet": "Sheet1",
+      "row": 543,
+      "column": 4,
+      "name": "海门区",
+      "code": "320614",
+      "cell": "海门区 320614\n（3街道，9镇）"
+    },
+    {
+      "sheet": "Sheet1",
+      "row": 596,
+      "column": 4,
+      "name": "海安市",
+      "code": "320685",
+      "cell": "海安市 320685\n（4街道，9镇）"
+    }
+  ],
+  "verified_at": "2026-11-08T10:45:12.574005+00:00"
+}

@@ -106,6 +106,14 @@ LOCAL_PROOFS = {
  '321012':('yangzhou-jiangdu-own-source','district','ea6940b1de0fce532665a900d2d2494ced75839f4fa65b9a6de19f5d4ba9e35f','3e2f27626e2bea9ad1fbeafc6f86dc71d84723b926a0556237f5c3ac4417aa25'),
  '321023':('yangzhou-baoying-own-source','district','7242c5935cafcfdb13e40c342d6ad6680eb67044f55675eb8d38b07a0ed75719','db55d5b9713c57d6df8c374b6ecede0e946bc9bd9427c3ff4baad8aebc5bc62e'),
  '321084':('yangzhou-gaoyou-own-source','district','6b6530d92acd5331489d758d6bc235788bbd2f98b7c034f78fae034634ee9205','dbfa1412d92e3f97e6c5d365072fad1e0ac9dcee07c3dde976cb540367a5d660'),
+ '320613':('nantong-chongchuan-own-source','district','1b4cac0ffa6489f819d512a69af2ede65998a073f402696c804a4af7f4c7dc4d','e09a0af5a142c5e6a39b73c7800a89637f2c334c4268c89b7bf7066d913c173b'),
+ '320612':('nantong-tongzhou-own-source','district','774315e91d50c335ff65fefd9c0185ab461adb9623a8f995edc14c4e4375c93c','1e57705879a1bd8d1dd90a96274621fb1aa9f9706a2f163a725e3990a1bd6318'),
+ '320685':('nantong-haian-own-source','district','6f8ca1bc4c93b3ffe1066e966acebb50cef0704d708e949535b985ddf9be49aa','625f914a9c49fa01700a32897f38b6ac2284a6481a0b98050d8f8132785af50c'),
+ '320623':('nantong-rudong-own-source','district','9d506b8662d218478dc5183947d76b07a3b73289e21034a9db347cb8b91f0ff0','8a9a72dedbb858138876261ceb1c544478a600677f7613952e2fa5fbc7cbabbb'),
+ '320681':('nantong-qidong-own-source','district','8b065301f47865fd3ea6ff41d960fce58b0f2348e2a62958039434f9d7479213','a962ea67650ed79c45afaadda389d21fe6377a041ea09c1a1cadfc3cd9493c38'),
+ '320682':('nantong-rugao-own-source','district','9ba5253ef80b07f66ec45ce4181c3b6032715ecb2ff71e1342f84f58d94bb06d','1cb64a1f8f530b50f51bd00c353f728fde7e12562d04702168915ef03d8fc1fc'),
+ '320614':('nantong-haimen-own-source','district','fa1448af8265afe7c93a402c4066854bf0a0bb8d329ad9af6064e9005d29516a','8038e9c2c39119269d7a80a850656548b24b0f9645091d2da1ce13dccc7f0d3a'),
+ '320693':('nantong-suxitong-own-source','functional_area','159a7e8653b3db207d00d432701c9083a06a035c9bc5acc2aa4a067a5d7575fc','13a068aca61399bf2bf9a03a3d317b10a7c2915b772ba56af92cd05448885e8e'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -329,6 +337,30 @@ EXACT_SOURCES={
  '321084':('扬州市','高邮市','b90a43c2a0cc8c0acb5c6516',{
     '7d1c471c-2cca-4cba-a789-da6b3bee285b':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
     '1db32a56-164a-4f1a-90c7-2cd1397c1f5c':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320613':('南通市','崇川区','1c3e1b1b5b4841a3fc4cc60a',{
+    'cb669356-efc2-48b9-895d-f449c807c17a':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'a3378d5e-a37c-4969-88b4-ca217fc71986':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320612':('南通市','通州区','b56cff9f6b1e5da25b02ec6d',{
+    '583bbb1b-37f8-4cc6-b26d-438428da4072':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '4db99020-0b45-4805-bed2-79cf14e9c388':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320685':('南通市','海安市','9cfe280a096cd41035d85b91',{
+    'd9f23630-2121-4f9c-96ba-8a14f1bf5138':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '61b6ae9f-1495-45bc-9db5-8ca9e9a00392':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320623':('南通市','如东县','ea97908d9e453ef904316e6f',{
+    '3ed2162d-26c7-4314-b51e-998c2d5bdabf':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'c5ee786c-ee35-4166-a865-981a332aabea':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320681':('南通市','启东市','abf05466ec62053aecfe1b04',{
+    '47a13e91-b667-4599-aad3-c01f3bd90417':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'fe2a393b-ee05-4197-abeb-a8d6be4f48ed':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320682':('南通市','如皋市','a629b2cb8743aeaeeb37b4e3',{
+    'c3b37bd5-614e-46f4-8f43-9162d9e48419':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '289ce92c-e82f-457e-914d-634d97aef332':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320614':('南通市','海门区','b3ba940d72bebe2edaa50d97',{
+    '8d82918d-9572-404c-89d6-6a7a2f296316':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'dd5c213b-0c86-45c9-a169-31e7f0a92a35':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320693':('南通市','苏锡通','2446c985a8e4028bc4729f14',{
+    '92e37500-fd55-4a4b-a256-5af92a57909a':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '188616cb-8599-4c75-beca-834623fff1f5':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -388,6 +420,14 @@ EXACT_IDENTITIES={
  '321012':('扬州市江都区人社局','1132108801444901X4400201430200201'),
  '321023':('宝应县人力资源和社会保障局','11321023014433130R400201430200201'),
  '321084':('高邮市人力资源和社会保障局','11321084014427208M400201430200201'),
+ '320613':('南通市崇川区人力资源和社会保障局','11320602014208515T400201430200201'),
+ '320612':('南通市通州区人力资源和社会保障局','11320683555858940W400201430200201'),
+ '320685':('海安市人力资源和社会保障局','11320621014223336G400201430200201'),
+ '320623':('如东县人力资源和社会保障局','11320623014236006N400201430200201'),
+ '320681':('启东市人力资源和社会保障局','113206810142471511400201430200201'),
+ '320682':('如皋市人力资源和社会保障局','11320682552486117F400201430200201'),
+ '320614':('南通市海门区人力资源和社会保障局','11320684014245260H400201430200201'),
+ '320693':('江苏南通苏锡通科技产业园区政法和社会事业局','11320600MB1K253397400201430200201'),
 }
 
 

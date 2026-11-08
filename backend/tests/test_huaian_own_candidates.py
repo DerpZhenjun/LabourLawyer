@@ -94,6 +94,22 @@ AREAS = {
                '89baa947-8627-4383-8bff-a0c045d0c827', '156fa24b-782d-4775-aaa4-3d1371e05be5'),
     '321084': ('扬州市', '高邮市', 'yangzhou-gaoyou', 'b90a43c2a0cc8c0acb5c6516', '321084',
                '7d1c471c-2cca-4cba-a789-da6b3bee285b', '1db32a56-164a-4f1a-90c7-2cd1397c1f5c'),
+    '320613': ('南通市', '崇川区', 'nantong-chongchuan', '1c3e1b1b5b4841a3fc4cc60a', '320613',
+               'cb669356-efc2-48b9-895d-f449c807c17a', 'a3378d5e-a37c-4969-88b4-ca217fc71986'),
+    '320612': ('南通市', '通州区', 'nantong-tongzhou', 'b56cff9f6b1e5da25b02ec6d', '320612',
+               '583bbb1b-37f8-4cc6-b26d-438428da4072', '4db99020-0b45-4805-bed2-79cf14e9c388'),
+    '320685': ('南通市', '海安市', 'nantong-haian', '9cfe280a096cd41035d85b91', '320621',
+               'd9f23630-2121-4f9c-96ba-8a14f1bf5138', '61b6ae9f-1495-45bc-9db5-8ca9e9a00392'),
+    '320623': ('南通市', '如东县', 'nantong-rudong', 'ea97908d9e453ef904316e6f', '320623',
+               '3ed2162d-26c7-4314-b51e-998c2d5bdabf', 'c5ee786c-ee35-4166-a865-981a332aabea'),
+    '320681': ('南通市', '启东市', 'nantong-qidong', 'abf05466ec62053aecfe1b04', '320681',
+               '47a13e91-b667-4599-aad3-c01f3bd90417', 'fe2a393b-ee05-4197-abeb-a8d6be4f48ed'),
+    '320682': ('南通市', '如皋市', 'nantong-rugao', 'a629b2cb8743aeaeeb37b4e3', '320682',
+               'c3b37bd5-614e-46f4-8f43-9162d9e48419', '289ce92c-e82f-457e-914d-634d97aef332'),
+    '320614': ('南通市', '海门区', 'nantong-haimen', 'b3ba940d72bebe2edaa50d97', '320684',
+               '8d82918d-9572-404c-89d6-6a7a2f296316', 'dd5c213b-0c86-45c9-a169-31e7f0a92a35'),
+    '320693': ('南通市', '苏锡通', 'nantong-suxitong', '2446c985a8e4028bc4729f14', '320693',
+               '92e37500-fd55-4a4b-a256-5af92a57909a', '188616cb-8599-4c75-beca-834623fff1f5'),
 }
 
 
@@ -116,9 +132,11 @@ class HuaianOwnCandidatesTests(TestCase):
         with TemporaryDirectory(prefix='jiangsu-own-candidates-') as tmp:
             store = RegionalStore(Path(tmp) / 'guides.sqlite')
             directory = DirectoryStore(Path(tmp) / 'directory.sqlite')
-            for city_code in ('320700', '320800', '320300', '320900', '321300', '321000'):
+            for city_code in ('320700', '320800', '320300', '320900', '321300', '321000', '320600'):
                 directory.put_area(next(r for r in rows if r['code'] == city_code and r['level'] == 3))
                 store.put_guide(forms.staged_jiangsu_municipal(ROOT, city_code))
+            directory.put_area(next(r for r in rows if r['code'] == '320685' and r['city'] == '南通市'
+                                    and r['district'] == '经济开发区'))
             for code, (city, district, slug, source, provider, app_id, evidence_id) in AREAS.items():
                 directory.put_area(next(r for r in rows if r['code'] == provider and r['city'] == city and r['district'] == district))
                 base = ROOT / f'reports/overnight-gap-closure-20261030/localities/{slug}-own-source'
@@ -171,6 +189,14 @@ class HuaianOwnCandidatesTests(TestCase):
                                 self.assertEqual(document.tables[0].rows[1].cells[1].text, label)
                             for wrong in ('市本级', '清江浦区', ''):
                                 mismatch = client.post('/regional/generate', json={**payload, 'district': wrong})
+                                self.assertEqual(mismatch.status_code, 409)
+                            if code == '320685':
+                                other, = (row for row in options if row['district'] == '经济开发区')
+                                self.assertEqual(other['provider_code'], code)
+                                self.assertIsNone(other['region_code'])
+                                self.assertIsNone(other['source_id'])
+                                self.assertFalse(other['can_generate'])
+                                mismatch = client.post('/regional/generate', json={**payload, 'district': '经济开发区'})
                                 self.assertEqual(mismatch.status_code, 409)
                             wrong_city = '淮安市' if city == '连云港市' else '连云港市'
                             mismatch = client.post('/regional/generate', json={**payload, 'city': wrong_city})

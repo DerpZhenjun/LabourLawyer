@@ -93,35 +93,48 @@ def sichuan_city_areas(capture):
 # Current civil affairs registers, independently matched to each own service.
 # These presentation rules preserve the national provider's stored identifiers.
 _FUJIAN_CODE_SOURCE = 'https://mzt.fujian.gov.cn/gk/tzgg/202607/t20260710_7176497.htm'
+_JIANGSU_CODE_SOURCE = 'https://mzt.jiangsu.gov.cn/art/2023/4/25/art_78635_10994579.html'
 _CURRENT_DIRECTORY_CODES = {
-    ('fujian', '三明市'): ('沙县区', '350400', '350427', '350405', _FUJIAN_CODE_SOURCE),
-    ('fujian', '南平市'): ('建阳区', '350700', '350784', '350703', _FUJIAN_CODE_SOURCE),
-    ('fujian', '龙岩市'): ('永定区', '350800', '350822', '350803', _FUJIAN_CODE_SOURCE),
-    ('jiangsu', '淮安市'): ('洪泽区', '320800', '320829', '320813',
-                         'https://mzt.jiangsu.gov.cn/art/2023/4/25/art_78635_10994579.html'),
+    ('fujian', '三明市'): (('沙县区', '350400', '350427', '350405', _FUJIAN_CODE_SOURCE),),
+    ('fujian', '南平市'): (('建阳区', '350700', '350784', '350703', _FUJIAN_CODE_SOURCE),),
+    ('fujian', '龙岩市'): (('永定区', '350800', '350822', '350803', _FUJIAN_CODE_SOURCE),),
+    ('jiangsu', '淮安市'): (('洪泽区', '320800', '320829', '320813', _JIANGSU_CODE_SOURCE),),
+    ('jiangsu', '南通市'): (
+        ('海安市', '320600', '320621', '320685', _JIANGSU_CODE_SOURCE),
+        ('海门区', '320600', '320684', '320614', _JIANGSU_CODE_SOURCE),
+    ),
 }
+
 
 def _current_directory_codes(rows, correction):
     district, parent, legacy, current, source_url = correction
 
-    def matches(row, code):
+    def same_provider_scope(row):
         return (
             row.get('provider') == 'national' and row.get('level') == 4
-            and row.get('district') == district and row.get('parent_code') == parent
-            and row.get('code') == code
+            and row.get('parent_code') == parent
             and row.get('source_url') == 'https://gjzwfw.www.gov.cn/fwmh/ucGovRegion/findUcGovRegion.do'
         )
 
-    already_current = any(matches(row, current) for row in rows)
+    matching = [row for row in rows if same_provider_scope(row)
+                and row.get('district') == district and row.get('code') in {legacy, current}]
+    if not matching:
+        return rows
+    already_current = any(row['code'] == current for row in matching)
     result = []
     for row in rows:
-        if not matches(row, legacy):
+        if row in matching and row['code'] == legacy:
+            if not already_current:
+                result.append({
+                    **row, 'code': current, 'region_code': current, 'provider_code': legacy,
+                    'code_source_url': source_url,
+                })
+        elif (same_provider_scope(row) and row.get('code') == current
+              and row.get('district') != district):
+            # Preserve the raw directory identity and withhold the conflicting region code.
+            result.append({**row, 'provider_code': current, 'region_code': None})
+        else:
             result.append(row)
-        elif not already_current:
-            result.append({
-                **row, 'code': current, 'region_code': current, 'provider_code': legacy,
-                'code_source_url': source_url,
-            })
     return result
 
 
@@ -174,8 +187,7 @@ class DirectoryStore:
             else:
                 rows = db.execute('SELECT payload FROM directory_areas WHERE province=? AND level IN (3,4) ORDER BY level,id',(province,))
             result=[json.loads(row['payload']) for row in rows]
-            correction = _CURRENT_DIRECTORY_CODES.get((province, city))
-            if correction:
+            for correction in _CURRENT_DIRECTORY_CODES.get((province, city), ()):
                 result = _current_directory_codes(result, correction)
             if not city:
                 # Include terminal stations and district-only supplementary sources.

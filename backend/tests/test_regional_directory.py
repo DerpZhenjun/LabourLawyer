@@ -1,3 +1,4 @@
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -25,6 +26,27 @@ class RegionalDirectoryTests(unittest.TestCase):
         self.assertEqual([r['code'] for r in result], ['220104'])
         self.assertFalse(result[0]['can_generate'])
         self.assertIsNone(result[0]['source_id'])
+
+    def test_nantong_current_codes_preserve_legacy_and_isolate_provider_collision(self):
+        rows = json.loads((Path(__file__).resolve().parents[2] / 'data/public-regions/directory.json').read_bytes())
+        wanted = {'海安市': '320621', '海门区': '320684', '经济开发区': '320685', '经济开发区-1': '320671'}
+        with tempfile.TemporaryDirectory() as tmp:
+            directory = DirectoryStore(Path(tmp) / 'nantong.sqlite')
+            for row in rows:
+                if row['city'] == '南通市' and wanted.get(row['district']) == row['code']:
+                    directory.put_area(row)
+            areas = {row['district']: row for row in directory.areas('jiangsu', '南通市')}
+            self.assertEqual(set(areas), set(wanted))
+            self.assertEqual((areas['海安市']['code'], areas['海门区']['code']), ('320685', '320614'))
+            self.assertEqual((areas['海安市']['provider_code'], areas['海门区']['provider_code']), ('320621', '320684'))
+            self.assertEqual(areas['经济开发区']['provider_code'], '320685')
+            self.assertIsNone(areas['经济开发区']['region_code'])
+            self.assertEqual(areas['经济开发区-1']['code'], '320671')
+            self.assertEqual(len({row['id'] for row in areas.values()}), 4)
+            with directory.connection() as db:
+                raw = {row['district']: json.loads(row['payload'])['code']
+                       for row in db.execute('SELECT district, payload FROM directory_areas')}
+            self.assertEqual(raw, wanted)
 
     def test_provider_qualified_codes_keep_functional_area_separate(self):
         common = {'code':'510109','province':'sichuan','city':'成都市','level':4,'parent_code':'510100','source_url':'https://www.sczwfw.gov.cn/','collected_at':'2026-10-23T14:00:00Z'}
