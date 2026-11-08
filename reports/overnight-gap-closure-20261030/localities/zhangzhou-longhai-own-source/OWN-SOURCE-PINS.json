@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "12d06ae95b62ae8482f905e05e79b01cf832f527d308cdaf8a2d3ff618009bac",
+  "regions": {
+    "350681": {
+      "region_code": "350681",
+      "district": "龙海区",
+      "directory_city": "漳州市",
+      "source_id": "ed191bcdf82538767ff7bc25",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=F8FE322C31AA96DD33DB396ED639116D",
+      "service_unid": "F8FE322C31AA96DD33DB396ED639116D",
+      "service_code": "113506810038848767400201430200Y01",
+      "authority": "龙海区人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "60cb15eedb5f3d3fa70c2cd38037c93ab972e3866f530cf9fb65f6c6251bdafc"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
