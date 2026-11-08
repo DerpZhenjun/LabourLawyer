@@ -28,6 +28,8 @@ from regional_fujian_huian_quangang_nov1 import ADAPTER as HQ, production_schema
 from regional_quanzhou_next4 import ADAPTER as QZ, production_schema_descriptor as qz_schema
 from regional_xiangan_evidence import ADAPTER as XAE, schema_descriptor as xiangan_evidence_schema
 
+from regional_zhongshan_municipal import ADAPTER as ZSM, schema_descriptor as zhongshan_schema
+
 ROOT=Path(__file__).resolve().parents[1]
 EJS='jiangsu_own_blank_oct29e_v1'
 FJS='jiangsu_own_blank_oct30f_v1'
@@ -40,7 +42,7 @@ JS_BLANK={'jiangsu_xishan_blank_v1','jiangsu_own_blank_oct29_v1',
 REFERENCE={'sichuan_combined_reference_v1','tianfu_reference_v1'}
 NINGBO='zhejiang_ningbo_own_blank_oct29_v1'
 FEIDONG='anhui-feidong-official-application-20261029'
-SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE}|ZJ_OWN|HN|JS_BLANK|REFERENCE)
+SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE,ZSM}|ZJ_OWN|HN|JS_BLANK|REFERENCE)
 PUBLIC_PROOF_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE,'jiangsu_own_blank_oct29c_v1','jiangsu_own_blank_oct29d_v1'}|ZJ_OWN|HN)
 
 JS_APP=('applicantName birthDate gender idNumber idAddress otherDocumentType otherDocumentNumber '
@@ -213,6 +215,7 @@ def build_form_contract(guide,template,kind,root=None):
     own_schema=(hq_schema(guide['region_code'],kind) if adapter==HQ else
                 qz_schema(guide['region_code'],kind) if adapter==QZ else
                 xiangan_evidence_schema(guide['source_version']) if adapter==XAE else
+                zhongshan_schema(guide['source_version']) if adapter==ZSM else
                 fujian_o_schema(guide['region_code'],kind) if adapter==FJO else
                 fujian_p_schema(guide['region_code'],kind) if adapter==FJP else
                 putian_n_schema(guide['region_code'],kind) if adapter==FJN else

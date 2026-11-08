@@ -10,7 +10,7 @@
     <p v-else-if="!contract" class="region-notice danger" role="alert">当前地区表单尚未完成核对，请返回指南确认来源后重试。</p>
     <form v-else @submit.prevent="requestConfirmation">
       <div class="sample-note"><i class="fa-regular fa-lightbulb" aria-hidden="true"></i><span><strong>已填入虚构示例，请替换为你的真实信息</strong>姓名、地址、金额和证据仅用于演示。未确定的受理机构和日期可以留空，再向受理机关核对。</span></div>
-      <details class="reference-source-note"><summary>文书来源与使用说明：{{ isHunan?'依据当地官方DOC的平台转换副本':isBlank?'当地官方空白表格':'当地官方参考样表，非空白模板' }}</summary><p>{{ sourceDescription }}生成内容属于辅助填写，不保证受理。签名需本人手写，请核对后自行保存并提交。</p></details>
+      <details class="reference-source-note"><summary>文书来源与使用说明：{{ isConverted?'依据当地官方 DOC 的空白转换版':isBlank?'当地官方空白表格':'当地官方参考样表，非空白模板' }}</summary><p>{{ sourceDescription }}生成内容属于辅助填写，不保证受理。签名需本人手写，请核对后自行保存并提交。</p></details>
       <fieldset class="regional-controls" :disabled="generating">
         <FeidongApplicationFields v-if="isFeidong" :key="draftKey" v-model="draft" />
         <HunanApplicationFields v-else-if="isHunan" :key="draftKey" v-model="draft" />
@@ -20,7 +20,7 @@
       </fieldset>
       <div v-if="generationError" class="region-notice danger" role="alert"><p>{{ generationError }}</p><button v-if="validation.valid && ready" type="button" class="ll-button secondary" @click="reload">重新核对本区表单</button></div>
       <p v-if="downloaded" class="region-notice" role="status">文书已生成并下载。请核对空白处、份数和当地要求，打印后本人签名。</p>
-      <section class="region-panel region-generation"><div><h2>生成 Word 文档</h2><p>按当前地区{{ isHunan?'官方DOC的平台转换副本':isBlank?'官方空白表格':'参考样表' }}填写，未填写的位置留空。</p></div><button class="ll-button" :disabled="generating || !ready">{{ generating?'正在生成…':'生成并下载'+title }}</button></section>
+      <section class="region-panel region-generation"><div><h2>生成 Word 文档</h2><p>按当前地区{{ isConverted?'官方 DOC 的空白转换版':isBlank?'官方空白表格':'参考样表' }}填写，未填写的位置留空。</p></div><button class="ll-button" :disabled="generating || !ready">{{ generating?'正在生成…':'生成并下载'+title }}</button></section>
     </form>
     <Teleport to="body"><div v-if="confirmOpen" class="reference-dialog" @click.self="cancelConfirmation"><section ref="dialog" role="dialog" aria-modal="true" :aria-labelledby="`${dialogId}-title`" :aria-describedby="`${dialogId}-description`" tabindex="-1"><h2 :id="`${dialogId}-title`">确认生成{{ title }}？</h2><p :id="`${dialogId}-description`">{{ sourceDescription }}默认内容是虚构示例，未替换时只能作参考，不能直接提交；未填写的位置留空。请核对内容、受理机构并本人签字，不会代你提交申请。</p><div class="region-actions"><button type="button" class="ll-button secondary" @click="cancelConfirmation">取消</button><button type="button" class="ll-button" :disabled="generating" v-on="{click: confirmationAction}">确认生成</button></div></section></div></Teleport>
   </component>
@@ -86,7 +86,8 @@ const special=computed(()=>contract.value?specialization(contract.value):'')
 const isJiangsuOwn=computed(()=>special.value==='jiangsu'),isZhejiangOwn=computed(()=>special.value==='zhejiang')
 const isHunan=computed(()=>special.value==='hunan'),isFeidong=computed(()=>special.value==='feidong')
 const isBlank=computed(()=>contract.value?.context.mode==='blank')
-const sourceDescription=computed(()=>isHunan.value?'将依据本区官方 DOC 空白表的平台转换副本填写。下载结果是平台生成的 DOCX，官方原件保留 DOC 格式。':isBlank.value?`将根据${contract.value?.context.district||''}官网提供的空白表格辅助填写。`:`将根据${contract.value?.context.district||''}官方参考样表辅助填写。它不是官方空白模板。`)
+const isConverted=computed(()=>isHunan.value||template.value?.file_origin==='official-blank-converted-layout')
+const sourceDescription=computed(()=>isConverted.value?'将依据本区官方 DOC 空白表的平台转换副本填写。下载结果是平台生成的 DOCX，官方原件保留 DOC 格式。':isBlank.value?`将根据${contract.value?.context.district||''}官网提供的空白表格辅助填写。`:`将根据${contract.value?.context.district||''}官方参考样表辅助填写。它不是官方空白模板。`)
 const dialog=ref<HTMLElement|null>(null),dialogId=`regional-confirm-${useId()}`
 useDialogFocus(()=>confirmOpen.value,dialog,cancelConfirmation)
 </script>

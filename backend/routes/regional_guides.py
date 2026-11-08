@@ -16,6 +16,12 @@ from regional_blank_documents import fill_blank_document, is_jiangsu_municipal_c
 from regional_jiangsu_candidates import fill_candidate_document, SUPPORTED as JIANGSU_OWN_CANDIDATES
 from regional_rongjiang_documents import fill_rongjiang_document, ADAPTER as RONGJIANG_ADAPTER
 from regional_xiangan_evidence import ADAPTER as XIANGAN_EVIDENCE_ADAPTER, XianganEvidenceRequest
+from regional_zhongshan_municipal import (
+    ADAPTER as ZHONGSHAN_ADAPTER, CONVERTED_ORIGIN as ZHONGSHAN_CONVERTED_ORIGIN,
+    LAYOUT as ZHONGSHAN_LAYOUT, ZhongshanApplicationRequest,
+    checked_adapter as checked_zhongshan_adapter, exact_municipal as exact_zhongshan_municipal,
+    fill_application as fill_zhongshan_application,
+)
 from regional_zhejiang_documents import fill_zhejiang_document,ADAPTER as ZHEJIANG_ADAPTER
 from regional_zhejiang_oct29 import fill_document as fill_ningbo_document,blank_binding as ningbo_blank_binding,ADAPTER as NINGBO_ADAPTER
 from regional_shangcheng_documents import fill_shangcheng_document,ADAPTER as SHANGCHENG_ADAPTER
@@ -130,7 +136,7 @@ def areas(province: str=Query(max_length=30),city: str=Query(default='',max_leng
         fujian_exact = profile and (profile['city'], profile['source_id'], profile['source_manifest_sha256']) == (
             city, municipal.get('source_id'), municipal.get('source_version'),
         )
-        if fujian_exact or is_jiangsu_municipal_candidate(municipal):
+        if fujian_exact or is_jiangsu_municipal_candidate(municipal) or exact_zhongshan_municipal(municipal):
             city_row = next((
                 row for row in directory.areas(province) if row['city'] == city and row['level'] == 3
                 and row['code'] == code and not row['district']
@@ -289,8 +295,20 @@ def download(template_id: str,province: str=Query(max_length=30),city: str=Query
         t={**t,'region_code':g['region_code']}
     elif t.get('region_code')!=g.get('region_code'):
         raise HTTPException(404,'未找到该地区的官方附件')
-    return FileResponse(checked_path(t,g),filename=t['original_name'],headers={'Cache-Control':'no-store',
-        'X-Guide-Source-ID':g.get('source_id',''),'X-Guide-Version':str(g.get('version','')),'X-Template-SHA256':t['sha256']})
+    converted = (t.get('adapter') == ZHONGSHAN_ADAPTER or t.get('file_origin') == ZHONGSHAN_CONVERTED_ORIGIN
+                 or t.get('file') == ZHONGSHAN_LAYOUT.as_posix())
+    if converted:
+        try:
+            checked_zhongshan_adapter(g, t, 'application', root=ROOT)
+        except ValueError as exc:
+            raise HTTPException(409, str(exc)) from exc
+    path = checked_path(t,g)
+    headers = {'Cache-Control':'no-store', 'X-Guide-Source-ID':g.get('source_id',''),
+               'X-Guide-Version':str(g.get('version','')), 'X-Template-SHA256':t['sha256']}
+    if converted:
+        headers['X-Document-Origin'] = ZHONGSHAN_CONVERTED_ORIGIN
+    return FileResponse(path,filename=t['original_name'],headers=headers)
+
 
 class GenerateRequest(BaseModel):
     province: str=Field(max_length=30)
@@ -559,6 +577,8 @@ class FujianKEvidenceRequest(BaseModel):
 
 def generation_request_model(adapter,kind):
     """Preserve the existing adapter-specific request-model selection."""
+    if adapter == ZHONGSHAN_ADAPTER and kind == 'application':
+        return ZhongshanApplicationRequest
     if adapter == XIANGAN_EVIDENCE_ADAPTER and kind == 'evidence':
         return XianganEvidenceRequest
     model=(BlankApplicationRequest if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER} else ApplicationRequest) if kind=='application' else EvidenceRequest
@@ -605,7 +625,7 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
             g, province=payload.province, city=payload.city, district=payload.district,
             source_id=payload.source_id, version=payload.version)
         t = select_regional_template(g, payload.template_id, payload.kind, mode=payload.mode)
-        if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER} and payload.contract_id is None:
+        if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER} and payload.contract_id is None:
             raise RegionalValidationError(409, '请重新打开当前地区的填写表单后生成')
         adapter, data, validated_contract_id = validate_generation_request(
             g, t, payload.kind, payload.data, payload.contract_id, root=ROOT,
@@ -615,10 +635,12 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
         raise HTTPException(exc.status_code, str(exc)) from exc
     blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER,JIANGSU_F_ADAPTER,JIANGSU_G_ADAPTER,FUJIAN_H_ADAPTER,FUJIAN_I_ADAPTER,FUJIAN_J_ADAPTER,FUJIAN_K_ADAPTER,PINGTAN_ADAPTER,PUTIAN_ADAPTER,PUTIAN_N_ADAPTER,FUJIAN_O_ADAPTER,FUJIAN_P_ADAPTER,HQ_ADAPTER}
     blank_adapters.add(QZ_ADAPTER)
-    converted_adapters = {RONGJIANG_ADAPTER, HUNAN_ADAPTER, HUNAN_C_ADAPTER, XIANGAN_EVIDENCE_ADAPTER}
+    converted_adapters = {RONGJIANG_ADAPTER, HUNAN_ADAPTER, HUNAN_C_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER}
     if adapter in blank_adapters | converted_adapters and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
     try:
-        if adapter in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER}:
+        if adapter == ZHONGSHAN_ADAPTER:
+            doc=fill_zhongshan_application(checked_path(t,g), data.model_dump())
+        elif adapter in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER}:
             doc=fill_qz_document(g,t,payload.kind,checked_path(t,g),data.model_dump(),root=ROOT)
         elif adapter==HQ_ADAPTER:
             doc=fill_hq_document(g,t,payload.kind,checked_path(t,g),data.model_dump(),root=ROOT)

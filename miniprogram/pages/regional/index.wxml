@@ -28,7 +28,7 @@
       <text wx:if="{{item.original_copy}}">原件或复印件：{{item.original_copy}}</text><text wx:if="{{item.paper_size}}">纸张：{{item.paper_size}}</text><text wx:if="{{item.format}}">材料格式：{{item.format}}</text><text wx:if="{{item.source_channel}}">材料来源：{{item.source_channel}} {{item.source_channel_detail}}</text><text wx:if="{{item.instructions}}" selectable>填表说明：{{item.instructions}}</text><text wx:if="{{item.acceptance_standard}}" selectable>受理标准：{{item.acceptance_standard}}</text><text wx:if="{{item.material_basis}}" selectable>材料依据：{{item.material_basis}}</text>
     </view>
   </view>
-  <view wx:if="{{blanks.length}}" class="card"><text class="title">本区公开空白原件</text><button wx:for="{{blanks}}" wx:key="id" data-index="{{item.index}}" bindtap="downloadBlank" disabled="{{busy}}">下载空白：{{item.original_name}}</button></view>
+  <view wx:if="{{blanks.length}}" class="card"><text class="title">本地区已核验的空白文件</text><button wx:for="{{blanks}}" wx:key="id" data-index="{{item.index}}" bindtap="downloadBlank" disabled="{{busy}}">下载空白：{{item.original_name}}</button></view>
   <view wx:if="{{kinds.length}}" class="card">
     <label for="regional-kind">文书类型与原件</label><picker id="regional-kind" range="{{kinds}}" value="{{kindIndex}}" bindchange="onKindChange" aria-label="选择文书类型与自己的原件"><view class="picker-value">{{kinds[kindIndex]}} ▾</view></picker>
     <text>填写容量是技术容量，不能作为官方受理要求。是否必填、材料份数和办理方式请核对上方本区原文。</text>
