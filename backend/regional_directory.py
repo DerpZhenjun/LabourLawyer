@@ -90,18 +90,19 @@ def sichuan_city_areas(capture):
     return rows
 
 
-# Current Fujian civil affairs register, independently matched to each own service.
+# Current civil affairs registers, independently matched to each own service.
 # These presentation rules preserve the national provider's stored identifiers.
-_FUJIAN_CURRENT_CODES = {
-    ('fujian', '三明市'): ('沙县区', '350400', '350427', '350405'),
-    ('fujian', '南平市'): ('建阳区', '350700', '350784', '350703'),
-    ('fujian', '龙岩市'): ('永定区', '350800', '350822', '350803'),
-}
 _FUJIAN_CODE_SOURCE = 'https://mzt.fujian.gov.cn/gk/tzgg/202607/t20260710_7176497.htm'
-
+_CURRENT_DIRECTORY_CODES = {
+    ('fujian', '三明市'): ('沙县区', '350400', '350427', '350405', _FUJIAN_CODE_SOURCE),
+    ('fujian', '南平市'): ('建阳区', '350700', '350784', '350703', _FUJIAN_CODE_SOURCE),
+    ('fujian', '龙岩市'): ('永定区', '350800', '350822', '350803', _FUJIAN_CODE_SOURCE),
+    ('jiangsu', '淮安市'): ('洪泽区', '320800', '320829', '320813',
+                         'https://mzt.jiangsu.gov.cn/art/2023/4/25/art_78635_10994579.html'),
+}
 
 def _current_directory_codes(rows, correction):
-    district, parent, legacy, current = correction
+    district, parent, legacy, current, source_url = correction
 
     def matches(row, code):
         return (
@@ -119,7 +120,7 @@ def _current_directory_codes(rows, correction):
         elif not already_current:
             result.append({
                 **row, 'code': current, 'region_code': current, 'provider_code': legacy,
-                'code_source_url': _FUJIAN_CODE_SOURCE,
+                'code_source_url': source_url,
             })
     return result
 
@@ -173,7 +174,7 @@ class DirectoryStore:
             else:
                 rows = db.execute('SELECT payload FROM directory_areas WHERE province=? AND level IN (3,4) ORDER BY level,id',(province,))
             result=[json.loads(row['payload']) for row in rows]
-            correction = _FUJIAN_CURRENT_CODES.get((province, city))
+            correction = _CURRENT_DIRECTORY_CODES.get((province, city))
             if correction:
                 result = _current_directory_codes(result, correction)
             if not city:

@@ -17,7 +17,7 @@ BINDINGS={
 }
 LIANYUNGANG_CODE = '320700'
 LIANYUNGANG_SOURCE_ID = '798345f56be3804472dc90b1'
-MUNICIPAL_BASE = Path('reports/overnight-gap-closure-20261030/localities')
+CANDIDATE_BASE = Path('reports/overnight-gap-closure-20261030/localities')
 # Guide and Word receipt are pinned separately from the verified official annex bytes.
 MUNICIPAL_PROOFS = {
     LIANYUNGANG_CODE: ('lianyungang', 'a569d9a0cde1c4534ac4f1fe5b2414ca0e6e6612952098b49f773ede817d6ee7',
@@ -46,6 +46,17 @@ MUNICIPAL_PROOFS = {
                'd658606d6664ef843875f085a91563113b579024502ddef8907831d1a9820bb8'),
     '320600': ('nantong', '7c857ebc72bae9298a98a86b84169b3589b9ef999a7293551b9bb607c961d9c1',
                '97fad4437bdbbc86693c93077cf082ebb625c533787a8e346374a2608f12d8f0'),
+}
+LOCAL_PROOFS = {
+    '320804': ('huaiyin-own-source', 'district',
+               'e1dcd1bcd5bddf6bf703bfb766c0db43ece2df03c277cd17155d7bdc39c6498f',
+               '9af9a2ab83440a8da7eb12328cfb11b582ab69a0f06ab540f2c42204a55b8c21'),
+    '320813': ('hongze-own-source', 'district',
+               '12a6da46ce46d5afbcc2a921d6447969eeb99aef3111ecff4020891cda816756',
+               '719445644202ffcb3d29d37e7cd8049e79ae29a08c750157cd0fd2ebb7a63b1d'),
+    '320871': ('huaian-edz-own-source', 'functional_area',
+               '31b435d609df5f165af1634d49ffce0ec3f696e3cd53ed95cc420e55c6c3d41b',
+               'a4493c0b9bb324d6c4b3853f530b17db2c7b53f0f8c336fa381df4f1eed5353c'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -145,6 +156,18 @@ EXACT_SOURCES={
         '5b040d4e-663b-4860-bcef-d8c12cf54741':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
         'c8260c13-5490-40f7-9be7-3071bb957c58':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
     }),
+    '320804':('淮安市','淮阴区','af10b6358a0cea5389de88b7',{
+        'eca65f46-5178-4c29-a6f5-cea523aa5595':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        '857d0650-f222-465d-9687-54459d9e3bb0':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
+    '320813':('淮安市','洪泽区','353f307d6c7fc7e41924a8cf',{
+        'db154c19-9478-4644-9120-2a9bf727c70b':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        '70b69cb8-9011-464c-b31c-15bc6339e391':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
+    '320871':('淮安市','经济开发区','d80293457ba981b81997c7f9',{
+        'e3661b6a-1991-4fa4-9471-4f5975d7586a':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        '2d24580f-7c60-4ac0-880d-fc3437ba71be':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -166,55 +189,77 @@ EXACT_IDENTITIES={
     '320400':('常州市人力资源社会保障局','11320400014110315K300201430200201'),
     '320500':('苏州市人力资源和社会保障局','11320500014152347F300201430200201'),
     '320600':('南通市人力资源和社会保障局','11320600014207133U300201430200201'),
+    '320804':('淮安市淮阴区人力资源和社会保障局','11320821014304750B400201430200201'),
+    '320813':('淮安市洪泽区人力资源和社会保障局','11320829014341463H400201430200201'),
+    '320871':('淮安经济技术开发区人力资源和社会保障局','11320800K12654517X400201430200201'),
 }
 
 
-def _municipal_word_receipt(slug, word_sha256):
-    return {'file': (MUNICIPAL_BASE / f'{slug}-municipal-own-source/WORD-PREFLIGHT.json').as_posix(),
+def _candidate_proof(code):
+    if code in MUNICIPAL_PROOFS:
+        slug, guide_sha256, word_sha256 = MUNICIPAL_PROOFS[code]
+        return f'{slug}-municipal-own-source', 'municipal', guide_sha256, word_sha256
+    return LOCAL_PROOFS.get(code)
+
+
+def _candidate_word_receipt(folder, word_sha256):
+    return {'file': (CANDIDATE_BASE / folder / 'WORD-PREFLIGHT.json').as_posix(),
             'sha256': word_sha256}
+
+
+def _is_jiangsu_candidate(guide, proof):
+    code = guide.get('region_code')
+    folder, scope, guide_sha256, word_sha256 = proof
+    city, district, source_id, _ = EXACT_SOURCES[code]
+    return (guide.get('province') == 'jiangsu' and guide.get('city') == city
+            and guide.get('district') == district and guide.get('scope_level') == scope
+            and guide.get('source_id') == source_id and guide.get('source_version') == guide_sha256
+            and (guide.get('authority'), guide.get('service_code')) == EXACT_IDENTITIES[code]
+            and guide.get('candidate_adapter_evidence') == _candidate_word_receipt(folder, word_sha256)
+            and guide.get('published') is False)
 
 
 def is_jiangsu_municipal_candidate(guide):
     code = guide.get('region_code')
-    proof = MUNICIPAL_PROOFS.get(code)
-    if not proof:
-        return False
-    slug, guide_sha256, word_sha256 = proof
-    city, district, source_id, _ = EXACT_SOURCES[code]
-    return (guide.get('province') == 'jiangsu' and guide.get('city') == city
-            and guide.get('district') == district and guide.get('scope_level') == 'municipal'
-            and guide.get('source_id') == source_id and guide.get('source_version') == guide_sha256
-            and (guide.get('authority'), guide.get('service_code')) == EXACT_IDENTITIES[code]
-            and guide.get('candidate_adapter_evidence') == _municipal_word_receipt(slug, word_sha256)
-            and guide.get('published') is False)
+    return code in MUNICIPAL_PROOFS and _is_jiangsu_candidate(guide, _candidate_proof(code))
 
 
-def staged_jiangsu_municipal(root, code):
+def staged_jiangsu_locality(root, code):
     root = Path(root).resolve()
-    slug, guide_sha256, word_sha256 = MUNICIPAL_PROOFS[code]
-    word_receipt = _municipal_word_receipt(slug, word_sha256)
-    guide_raw = (root / MUNICIPAL_BASE / f'{slug}-municipal-own-source/GUIDE.json').read_bytes()
+    proof = _candidate_proof(code)
+    if proof is None:
+        raise KeyError(code)
+    folder, scope, guide_sha256, word_sha256 = proof
+    word_receipt = _candidate_word_receipt(folder, word_sha256)
+    guide_raw = (root / CANDIDATE_BASE / folder / 'GUIDE.json').read_bytes()
     word_raw = (root / word_receipt['file']).read_bytes()
     if (sha256(guide_raw).hexdigest(), sha256(word_raw).hexdigest()) != (guide_sha256, word_sha256):
-        raise ValueError('市本级指南或版式复核凭证不匹配')
+        raise ValueError('地区指南或版式复核凭证不匹配')
     guide = json.loads(guide_raw)
     guide.update(source_version=guide_sha256, registration_status='CANDIDATE_ONLY',
                  publication_status='candidate', candidate_adapter_evidence=word_receipt)
-    if guide.get('region_code') != code or not is_jiangsu_municipal_candidate(guide):
-        raise ValueError('市本级事项不匹配')
+    if guide.get('region_code') != code or not _is_jiangsu_candidate(guide, proof):
+        raise ValueError('地区事项不匹配')
+    area = f"{guide['city']}本级" if scope == 'municipal' else guide['district']
     for template in guide['templates']:
         kind = blank_binding(guide, template)
         if kind:
             path = root / template['file']
             if path.resolve() != path or sha256(path.read_bytes()).hexdigest() != template['sha256']:
-                raise ValueError('市本级原件路径或哈希不匹配')
+                raise ValueError('地区原件路径或哈希不匹配')
             template.update(can_generate=True, adapter=ADAPTER, document_types=[kind],
                             content_kind='filled_official_blank',
-                            generation_label=f"依据{guide['city']}本级官方空白表格填写")
+                            generation_label=f'依据{area}官方空白表格填写')
     if sum(t['can_generate'] for t in guide['templates']) != 2:
-        raise ValueError('市本级空白文书适配不完整')
+        raise ValueError('地区空白文书适配不完整')
     guide['can_generate'] = True
     return guide
+
+
+def staged_jiangsu_municipal(root, code):
+    if code not in MUNICIPAL_PROOFS:
+        raise KeyError(code)
+    return staged_jiangsu_locality(root, code)
 
 
 def staged_lianyungang_municipal(root):
@@ -227,7 +272,8 @@ def blank_binding(guide,template):
     city,district,source_id,bindings=source
     if (guide.get('province'),guide.get('city'),guide.get('district'))!=('jiangsu',city,district):
         return None
-    if code in MUNICIPAL_PROOFS and not is_jiangsu_municipal_candidate(guide):
+    proof = _candidate_proof(code)
+    if proof and not _is_jiangsu_candidate(guide, proof):
         return None
     if guide.get('verification_status')!='verified' or digest(guide.get('source_url',''))[:24]!=source_id:
         return None
@@ -240,7 +286,7 @@ def blank_binding(guide,template):
     expected={'annex_id':template['id'],'region_code':code,'sha256':checksum,'official_kind':'blank',
               'download_status':'downloaded','source_url':guide['source_url']}
     if any(template.get(k)!=v for k,v in expected.items()):return None
-    if code in MUNICIPAL_PROOFS or code in {'320706','320903','320902','320981','320924','320922','320921'}:
+    if proof or code in {'320706','320903','320902','320981','320924','320922','320921'}:
         download=urlsplit(template.get('download_url',''))
         if (download.scheme!='https' or download.hostname!='sxgl.jszwfw.gov.cn' or download.port!=66
             or download.path!='/audit-qlk-web/rest/frame/pages/basic/attach/attachAction/getContent'
