@@ -1,0 +1,14 @@
+{
+  "status": "isolated_source_only_pass",
+  "published": false,
+  "counties": 8,
+  "material_cards_verified": 29,
+  "viewports_each": [
+    375,
+    1440
+  ],
+  "source_ids_distinct": true,
+  "has_generation": false,
+  "remote_or_production_writes": false,
+  "receipt_sha256": "4e911fc9f2c8c03397b1e21a4f1a91028e4456b64b3c1bac05283c6c0d9b941d"
+}
