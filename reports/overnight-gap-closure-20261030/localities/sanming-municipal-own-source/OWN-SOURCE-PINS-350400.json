@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "8d685d5c892e93e1e4061b9a08bb3957591e28bbb73103f6cc0337797d4e535d",
+  "regions": {
+    "350400": {
+      "region_code": "350400",
+      "district": "",
+      "directory_city": "三明市",
+      "source_id": "da959113b9c50e887043f638",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=21F9A5079420D7B35A35BDD3E379BF57",
+      "service_unid": "21F9A5079420D7B35A35BDD3E379BF57",
+      "service_code": "11350400003728961K300201430200Y01",
+      "authority": "三明市人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application"
+      ],
+      "scope_level": "municipal",
+      "official_area_name": "三明市",
+      "source_manifest_sha256": "c796921f5893dcce538f51a44393332cdb8b2e95f426a0476ea965dad9e03390"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

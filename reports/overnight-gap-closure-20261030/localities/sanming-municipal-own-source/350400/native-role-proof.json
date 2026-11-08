@@ -1,0 +1,86 @@
+{
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=21F9A5079420D7B35A35BDD3E379BF57",
+  "source_id": "da959113b9c50e887043f638",
+  "observed_at": "2026-11-08T06:30:54.381923+00:00",
+  "raw_native_capture_pin": {
+    "bytes": 26726,
+    "sha256": "09c0ba9c9a44d565fbb657600b78bb5dfa19515b13ed68ae6436bb752aa588bc"
+  },
+  "roles": [
+    {
+      "attachment_id": "F3407D3527F97C47342833B8247ABB83",
+      "material_id": "46964B49BC83291F25BC71AD75463A04",
+      "public_file_unid": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+      "official_label": "仲裁申请书.docx",
+      "official_role": "格式文本",
+      "type_raw": "1",
+      "observed_control_label": "[格式文本]仲裁申请书.docx"
+    },
+    {
+      "attachment_id": "BE71A8858459BDA45D82E1BA1A7CB3DD",
+      "material_id": "46964B49BC83291F25BC71AD75463A04",
+      "public_file_unid": "98A0EE44D3D63B3D6A10FE60D4E83776",
+      "official_label": "仲裁申请书示例.docx",
+      "official_role": "示范文本",
+      "type_raw": "2",
+      "observed_control_label": "[示范文本]仲裁申请书示例.docx"
+    },
+    {
+      "attachment_id": "265B5144F2802CE7A69A4DA030CE078D",
+      "material_id": "26F3FD3383B51758329D107F158EF172",
+      "public_file_unid": "D1FC4518599795CED309FA868A7B7368",
+      "official_label": "证据清单（空白）.docx",
+      "official_role": "示范文本",
+      "type_raw": "2",
+      "observed_control_label": "[示范文本]证据清单（空白）.docx"
+    },
+    {
+      "attachment_id": "5AE4EA742F9D90DEA266B672F4841D89",
+      "material_id": "9EAFEABEDC620CF072F9977A5A4274D6",
+      "public_file_unid": "AC704CC9F21C3EE7B1618DFF2AF3570E",
+      "official_label": "证据材料（供参考）.docx",
+      "official_role": "示范文本",
+      "type_raw": "2",
+      "observed_control_label": "[示范文本]证据材料（供参考）.docx"
+    },
+    {
+      "attachment_id": "4380ADCB4A4EEF952AC24A05E5D338BC",
+      "material_id": "26F3FD3383B51758329D107F158EF172",
+      "public_file_unid": "F5C9C2711CA9F5DAE3FAF3B681A789C3",
+      "official_label": "证据清单（示例）.docx",
+      "official_role": "格式文本",
+      "type_raw": "1",
+      "observed_control_label": "[格式文本]证据清单（示例）.docx"
+    },
+    {
+      "attachment_id": "202EF36972C486D4E0636B0E010AD8BA",
+      "material_id": "9EAFEABEDC620CF072F9977A5A4274D6",
+      "public_file_unid": "7C3DBFA82D340B3C50F4DD45E14FE785",
+      "official_label": "证据材料（供参考）.docx",
+      "official_role": "格式文本",
+      "type_raw": "1",
+      "observed_control_label": "[格式文本]证据材料（供参考）.docx"
+    }
+  ],
+  "observed_evidence_conflict": [
+    {
+      "attachment_id": "265B5144F2802CE7A69A4DA030CE078D",
+      "material_id": "26F3FD3383B51758329D107F158EF172",
+      "public_file_unid": "D1FC4518599795CED309FA868A7B7368",
+      "official_label": "证据清单（空白）.docx",
+      "official_role": "示范文本",
+      "type_raw": "2",
+      "observed_control_label": "[示范文本]证据清单（空白）.docx"
+    },
+    {
+      "attachment_id": "4380ADCB4A4EEF952AC24A05E5D338BC",
+      "material_id": "26F3FD3383B51758329D107F158EF172",
+      "public_file_unid": "F5C9C2711CA9F5DAE3FAF3B681A789C3",
+      "official_label": "证据清单（示例）.docx",
+      "official_role": "格式文本",
+      "type_raw": "1",
+      "observed_control_label": "[格式文本]证据清单（示例）.docx"
+    }
+  ],
+  "evidence_role_observation_sha256": "0ae016d81b9cb474f4c167a3d70f3fa5ad0fa6dadef5a1057413b3cd20519b9e"
+}
