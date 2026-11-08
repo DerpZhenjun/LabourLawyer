@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "45602c00a35ac257da4d3502ba8a97f000ee12e6c7f0c1d61d421aa73f12fb48",
+  "regions": {
+    "350212": {
+      "region_code": "350212",
+      "district": "同安区",
+      "directory_city": "厦门市",
+      "source_id": "4465250d78878e8a94374e2b",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=A4BE34A8F18882B46565EFBFC0B86BEC",
+      "service_unid": "A4BE34A8F18882B46565EFBFC0B86BEC",
+      "service_code": "11350212004173216H400201430200201",
+      "authority": "同安区人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "cc64414b20adc3dfdad3c04c86b198785e0e878f43dbf98a0df8c767067cb6cd"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
