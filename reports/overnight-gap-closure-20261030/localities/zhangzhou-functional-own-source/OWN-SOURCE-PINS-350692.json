@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "e6ba624ca27e3d9b04ff7a9efeb72b4d37a198eeb1b591fa8a26cb5e731f20d7",
+  "regions": {
+    "350692": {
+      "region_code": "350692",
+      "district": "漳州台商投资区",
+      "directory_city": "漳州市",
+      "source_id": "ba43712a330a421eb5306aed",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=1DBDEA2A35FF400DF254451A1130D46F",
+      "service_unid": "1DBDEA2A35FF400DF254451A1130D46F",
+      "service_code": "113506000503493825400201430200201",
+      "authority": "漳州台商投资区社会事业管理局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "c657a98361f5d3e69af383ffe4a57afc401f5930c729a4227eda52d7e83a263d"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
