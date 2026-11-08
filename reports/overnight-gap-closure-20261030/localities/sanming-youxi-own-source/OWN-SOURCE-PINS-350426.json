@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "9dd7b343fe02951a902afae25bb403f6df9bcf8440e01fa68c70349a9e6a8f9e",
+  "regions": {
+    "350426": {
+      "region_code": "350426",
+      "district": "尤溪县",
+      "directory_city": "三明市",
+      "source_id": "c4a1025ea6a8038fcb55baa3",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=23DC566BF957438C41670E339363BB13",
+      "service_unid": "23DC566BF957438C41670E339363BB13",
+      "service_code": "11350426003772313K400201430200101",
+      "authority": "尤溪县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "2ef0c5c3cec90a841d088dea938e4addb098852b97f9bcaefaaf9b6c18fe4227"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
