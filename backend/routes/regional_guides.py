@@ -358,7 +358,9 @@ def download(template_id: str,province: str=Query(max_length=30),city: str=Query
     path = checked_path(t,g)
     headers = {'Cache-Control':'no-store', 'X-Guide-Source-ID':g.get('source_id',''),
                'X-Guide-Version':str(g.get('version','')), 'X-Template-SHA256':t['sha256']}
-    if baoji_layout or baoji_worker_layout:
+    if baoji_worker_layout:
+        headers['X-Document-Origin'] = t['file_origin']
+    elif baoji_layout:
         headers['X-Document-Origin'] = BAOJI_LAYOUT_ORIGIN
     elif converted:
         headers['X-Document-Origin'] = ZHONGSHAN_CONVERTED_ORIGIN

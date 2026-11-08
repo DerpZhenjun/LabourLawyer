@@ -1,5 +1,6 @@
-"""Fill independently retrieved worker forms from three Baoji counties."""
+"""Fill independently retrieved worker forms from Baoji counties."""
 import json
+from copy import deepcopy
 from datetime import date
 from hashlib import sha256
 from io import BytesIO
@@ -21,9 +22,12 @@ BASE_GUIDES = Path('reports/overnight-gap-closure-20261030/localities/baoji-eigh
 BASE_GUIDES_SHA = 'c7539c1a883f09f49eb8aceb4b3e2a95505e2ac3b6d655d732ddcac6a9f7b883'
 PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-three-worker-applications/SOURCE-PROOF.json')
 PROOF_SHA = '0c07b48554cc17a88d8eaf439d51fbb48e6ac52885c83ad35d0547fc09b9e176'
+LINYOU_PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-linyou-worker-application/SOURCE-PROOF.json')
+LINYOU_PROOF_SHA = '3cddcfe9de8988b9fa05d4cf847610a387a25698a7c5693affe661e4c8cc88d1'
 SHARED = 'shaanxi_baoji_qishan_long_worker_v1'
 MEI = 'shaanxi_baoji_mei_worker_v1'
-ADAPTERS = {'610323': SHARED, '610326': MEI, '610327': SHARED}
+LINYOU = 'shaanxi_baoji_linyou_worker_v1'
+ADAPTERS = {'610323': SHARED, '610326': MEI, '610327': SHARED, '610329': LINYOU}
 LAYOUTS = {
     code: Path(f'templates/_docx/_regional/shaanxi/baoji-{code}-worker-application.docx') for code in ADAPTERS
 }
@@ -32,6 +36,7 @@ LAYOUT_HASHES = {
     '610323': SHARED_LAYOUT_SHA,
     '610326': 'd3b1d4fe23d4578a2b323cf2e7f500eadaa8b22e832f627b751e77ba6af5116f',
     '610327': SHARED_LAYOUT_SHA,
+    '610329': '5c64d10d59977f133f8a38ae2ccb72fd02eba4b8e12f7f2b771dcf42845b9c69',
 }
 
 
@@ -84,7 +89,26 @@ class QishanLongApplication(WorkerApplication):
     representative_phone: _line(24) = ''
 
 
-MODELS_BY_ADAPTER = {SHARED: QishanLongApplication, MEI: MeiApplication}
+class LinyouApplication(OwnBase):
+    applicant_name: _line(20) = ''
+    gender: _line(6) = ''
+    birth_text: _line(20) = ''
+    nationality: _line(12) = ''
+    applicant_work_unit: _line(60) = ''
+    address: _line(70) = ''
+    phone: _line(24) = ''
+    applicant_postcode: _line(12) = ''
+    respondent_name: _line(60) = ''
+    representative: _line(24) = ''
+    representative_role: _line(20) = ''
+    respondent_address: _line(75) = ''
+    respondent_phone: _line(24) = ''
+    respondent_postcode: _line(12) = ''
+    requests: list[_line(75)] = Field(default_factory=list, max_length=3)
+    facts: Annotated[bounded(360), AfterValidator(_facts_lines)] = ''
+
+
+MODELS_BY_ADAPTER = {SHARED: QishanLongApplication, MEI: MeiApplication, LINYOU: LinyouApplication}
 MODELS = {code: MODELS_BY_ADAPTER[adapter] for code, adapter in ADAPTERS.items()}
 
 
@@ -142,6 +166,32 @@ def _write_qishan_long(paragraphs, data):
         tail.getparent().remove(tail)
 
 
+def _write_linyou(paragraphs, data):
+    # Preserve every label and the line where the issuing county places it.
+    for paragraph, index, key, prefix, gap in (
+        (1, 1, 'applicant_name', '', '    '), (1, 3, 'gender', ':', ''),
+        (2, 1, 'birth_text', ':', '    '), (2, 3, 'nationality', ':', ''),
+        (3, 1, 'applicant_work_unit', ' ', '    '), (3, 3, 'address', ':', ''),
+        (4, 1, 'phone', ':', '    '), (4, 3, 'applicant_postcode', ':', ''),
+        (6, 3, 'representative', ' :', '    '), (6, 5, 'representative_role', ':', ''),
+        (7, 1, 'respondent_address', ' :', '    '), (7, 3, 'respondent_phone', ':', ''),
+        (8, 2, 'respondent_postcode', ':', ''),
+    ):
+        if data[key]:
+            paragraphs[paragraph].runs[index].text = prefix + data[key] + gap
+    if data['respondent_name']:
+        respondent = paragraphs[5].add_run(data['respondent_name'])
+        respondent._r.insert(0, deepcopy(paragraphs[1].runs[1]._r.rPr))
+    for index, value in enumerate(data['requests'], 9):
+        paragraphs[index].runs[-1].text += ' ' + value
+    if data['facts']:
+        paragraphs[12].runs[1].text = data['facts']
+        for spacer in paragraphs[13:16]:
+            spacer._p.getparent().remove(spacer._p)
+    for paragraph in paragraphs[16:21]:
+        paragraph.paragraph_format.keep_with_next = True
+
+
 def fill_application(code, layout, values):
     if code not in MODELS or sha256(layout).hexdigest() != LAYOUT_HASHES[code]:
         raise ValueError('地区与已核验申请书版式不匹配')
@@ -149,6 +199,8 @@ def fill_application(code, layout, values):
     document = Document(BytesIO(layout))
     if code == '610326':
         _write_mei(document.paragraphs, data)
+    elif code == '610329':
+        _write_linyou(document.paragraphs, data)
     else:
         _write_qishan_long(document.paragraphs, data)
     return PreservedPackageDocument(document, layout)
@@ -161,14 +213,17 @@ LABELS = {
     'facts': '事实与理由', 'birth_date': '出生日期', 'nationality': '民族', 'age': '年龄',
     'social_credit_code': '统一社会信用代码', 'representative_gender': '法定代表人性别',
     'representative_role': '法定代表人职务', 'representative_phone': '法定代表人联系电话',
+    'birth_text': '出生时间', 'applicant_work_unit': '工作单位',
+    'applicant_postcode': '申请人邮政编码', 'respondent_postcode': '被申请人邮政编码',
 }
 
 
 def schema_descriptor(adapter, source_version):
     model = MODELS_BY_ADAPTER[adapter]
+    labels = LABELS | {'respondent_address': '被申请人通信地址'} if adapter == LINYOU else LABELS
     fields = []
     for key, prop in model.model_json_schema()['properties'].items():
-        field = {'key': key, 'label': LABELS[key], 'type': 'text'}
+        field = {'key': key, 'label': labels[key], 'type': 'text'}
         if key == 'requests':
             field.update(type='text_list', maxLength=prop['items']['maxLength'], maxItems=prop['maxItems'])
         else:
@@ -200,15 +255,16 @@ def staged_guide(code, root=None):
         raise ValueError('该区县暂无通过验收的申请书')
     root = Path(ROOT if root is None else root).resolve()
     candidates = json.loads(_pinned_bytes(root, BASE_GUIDES, BASE_GUIDES_SHA))
-    proof = json.loads(_pinned_bytes(root, PROOF, PROOF_SHA))
+    proof_path, proof_hash = (LINYOU_PROOF, LINYOU_PROOF_SHA) if code == '610329' else (PROOF, PROOF_SHA)
+    proof = json.loads(_pinned_bytes(root, proof_path, proof_hash))
     guide = next(g for g in candidates if g['region_code'] == code)
     item = next(p for p in proof['items'] if p['region_code'] == code)
     name = guide['district'].replace('　', '')
     guide.update(source_id=digest(guide['source_url'])[:24],
-                 source_version=digest(code + ':' + PROOF_SHA + ':' + BASE_GUIDES_SHA),
+                 source_version=digest(code + ':' + proof_hash + ':' + BASE_GUIDES_SHA),
                  can_generate=True, verified_at=item['fetched_at'])
     guide['warnings'][0] = '本区申请书可填写生成，签名和提交日期请由本人补填。'
-    guide['templates'] = [{
+    template = {
         'id': f'baoji-{code}-worker-application', 'region_code': code, 'official_kind': 'blank',
         'source_url': item['source_url'], 'official_attachment_entry': 'material_tab',
         'official_sha256': item['official_sha256'], 'official_bytes': item['official_bytes'],
@@ -217,7 +273,10 @@ def staged_guide(code, root=None):
         'original_name': name + '劳动仲裁申请书（空白填写版）.docx',
         'download_status': 'downloaded', 'sha256': item['layout_sha256'],
         'document_types': ['application'], 'can_generate': True, 'adapter': ADAPTERS[code],
-    }]
+    }
+    if code == '610329':
+        template.update(file_origin='official-blank-converted-layout', original_format=item['original_format'])
+    guide['templates'] = [template]
     return guide
 
 

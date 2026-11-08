@@ -1,4 +1,4 @@
-"""The three own-source applications cannot borrow a county or an evidence template."""
+"""The own-source applications cannot borrow a county or an evidence template."""
 from io import BytesIO
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -22,7 +22,7 @@ class BaojiCountyApplicationAPITests(TestCase):
 
         with TemporaryDirectory() as work:
             store = RegionalStore(Path(work) / 'guide.sqlite')
-            guides = {code: store.put_guide(staged_guide(code, ROOT)) for code in ('610323', '610326', '610327')}
+            guides = {code: store.put_guide(staged_guide(code, ROOT)) for code in ('610323', '610326', '610327', '610329')}
             app = FastAPI()
             app.include_router(routes.router, prefix='/regional')
             with patch.object(routes, 'ROOT', ROOT), patch.object(routes, 'store', return_value=store), TestClient(app) as client:
@@ -37,6 +37,12 @@ class BaojiCountyApplicationAPITests(TestCase):
                         blank = client.get(f"/regional/templates/{template['id']}", params=query)
                         self.assertEqual(blank.status_code, 200)
                         self.assertEqual(blank.headers['X-Template-SHA256'], template['sha256'])
+                        if code == '610329':
+                            self.assertEqual(blank.headers['X-Document-Origin'], 'official-blank-converted-layout')
+                            self.assertEqual(template['original_format'], 'DOC')
+                            keys = {field['key'] for field in contract.json()['fields']}
+                            self.assertIn('applicant_work_unit', keys)
+                            self.assertNotIn('id_number', keys)
                         payload = {**query, 'mode': 'blank', 'contract_id': contract.json()['contract_id'],
                                    'data': {'applicant_name': '测试劳动者'}}
                         response = client.post('/regional/generate', json=payload)

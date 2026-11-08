@@ -1,0 +1,31 @@
+{
+  "published": false,
+  "state": "PASS",
+  "case": {
+    "code": "610329",
+    "source_id": "6351d6b877bdee8f0113b177",
+    "blank_sha256": "5c64d10d59977f133f8a38ae2ccb72fd02eba4b8e12f7f2b771dcf42845b9c69",
+    "filled_sha256": "d733ba3aa30cfdcdbb425354f7c8eda3ad48b2dd0c337a7031b83371e6e535e8",
+    "cancel_without_post": true,
+    "viewports": [
+      375,
+      768,
+      1440
+    ]
+  },
+  "regression_counties": 3,
+  "browser_downloads": 8,
+  "browser_receipt_sha256": "4dff10bf9bf0b343bfb5d8d3366db9e7d53f0272fea50a1119ff5f630244bccf",
+  "word_fixture_pages": [
+    1,
+    1,
+    3
+  ],
+  "word_fixture_receipt_sha256": "6300131f95cf26970b0dced47e16fa028fb0c9d383eb90858fe3758b8379ba78",
+  "browser_word_receipt_sha256": "4ee2b014d75b927d62aa363166efb14a90e792d620218c17148256f2100ddbf7",
+  "browser_word_pages": 1,
+  "focused_passed": 5,
+  "regression_passed": 21,
+  "regression_skipped": 1,
+  "web_build_passed": true
+}

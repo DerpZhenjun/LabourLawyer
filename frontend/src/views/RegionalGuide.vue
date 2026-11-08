@@ -70,7 +70,7 @@
               <p>适用地区编码：{{ t.region_code }}</p>
               <p v-if="t.sha256 || !t.official_sha256" class="file-hash">SHA256：{{ t.sha256 || '未下载，待核验' }}</p>
               <p v-if="t.official_sha256" class="file-hash">官方原件 SHA256：{{ t.official_sha256 }}</p>
-              <a :href="t.source_url" target="_blank" rel="noopener noreferrer">{{ t.file_origin==='official-blank-converted-layout'?('下载官网 '+(t.original_format==='WPS'?'WPS':'DOC')+' 原件'):t.official_attachment_entry==='material_tab'?'前往官网申报材料下载':t.file_origin==='official-blank-metadata-sanitized-layout'?'下载官网 DOCX 原件':'官方材料栏目' }} ↗</a>
+              <a :href="t.source_url" target="_blank" rel="noopener noreferrer">{{ t.official_attachment_entry==='material_tab'?'前往官网申报材料下载':t.file_origin==='official-blank-converted-layout'?('下载官网 '+(t.original_format==='WPS'?'WPS':'DOC')+' 原件'):t.file_origin==='official-blank-metadata-sanitized-layout'?'下载官网 DOCX 原件':'官方材料栏目' }} ↗</a>
             </details>
           </div>
           <a v-if="t.download_status==='downloaded'" class="ll-button secondary" :href="originalTemplateLink(t.id)">{{ t.file_origin==='official-blank-converted-layout'?'下载空白转换版':t.file_origin==='official-blank-metadata-sanitized-layout'?'下载空白填写版':'下载原文件' }}</a>
