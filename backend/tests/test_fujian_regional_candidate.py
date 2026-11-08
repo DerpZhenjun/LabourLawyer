@@ -326,3 +326,47 @@ class WuyishanCandidateTests(_FujianCandidateChecks, TestCase):
     region = {'province': 'fujian', 'city': '南平市', 'district': '武夷山市'}
     source_folder = 'nanping-first-three-own-source/350782'
     foreign_code = '350702'
+
+
+class JianouCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350783'
+    source_id = 'db760e316b1f5abf85a0e791'
+    source_version = 'c4ca52093ae26b8bcdf5a1e467bb116acf2b23b92af5ebccf77ec8514fc55065'
+    authority = '建瓯市人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '南平市', 'district': '建瓯市'}
+    source_folder = 'nanping-next-four-own-source/350783'
+    foreign_code = '350702'
+
+
+class ShunchangCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350721'
+    source_id = '04c84b5c09ac6325710f35ee'
+    source_version = '7c5d5269bcb3a21b776b1a3639e7853e518a1ee0ea1f5636640596431d038149'
+    authority = '顺昌县人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '南平市', 'district': '顺昌县'}
+    source_folder = 'nanping-next-four-own-source/350721'
+    foreign_code = '350702'
+
+
+class GuangzeCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350723'
+    source_id = '012ffa540bf8300a303b0b8a'
+    source_version = 'e82a712e2b512ef21e4a5de3f9bb9bacfc425dc97b8b40ffaf8945be6e09ba2d'
+    authority = '光泽县人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '南平市', 'district': '光泽县'}
+    source_folder = 'nanping-next-four-own-source/350723'
+    foreign_code = '350702'
+
+
+class SongxiCandidateTests(_FujianCandidateChecks, TestCase):
+    code = '350724'
+    source_id = '5367845e0fb0ae0340bfeb3a'
+    source_version = '147248df85a42120b7a90af9bb6b6652205e6038071377bab1da9f66299c502b'
+    authority = '松溪县人力资源和社会保障局'
+    handling_form = '窗口办，网上办，邮寄办'
+    region = {'province': 'fujian', 'city': '南平市', 'district': '松溪县'}
+    source_folder = 'nanping-next-four-own-source/350724'
+    foreign_code = '350702'

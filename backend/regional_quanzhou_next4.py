@@ -50,6 +50,7 @@ ZHANGZHOU_FUNCTIONAL_BASE = LOCALITIES + '/zhangzhou-functional-own-source'
 NINGDE_FIRST_FOUR_BASE = LOCALITIES + '/ningde-first-four-own-source'
 NINGDE_NEXT_FIVE_BASE = LOCALITIES + '/ningde-next-five-own-source'
 NANPING_FIRST_THREE_BASE = LOCALITIES + '/nanping-first-three-own-source'
+NANPING_NEXT_FOUR_BASE = LOCALITIES + '/nanping-next-four-own-source'
 REGIONS = {
     '350582': {
         'district': '晋江市', 'source_id': 'd8353a4bb91532863fb03802',
@@ -264,6 +265,40 @@ NANPING_FIRST_THREE_REGIONS = {
         'original_kinds': ('application', 'evidence'),
     },
 }
+NANPING_NEXT_FOUR_REGIONS = {
+    '350783': {
+        'district': '建瓯市',
+        'source_id': 'db760e316b1f5abf85a0e791',
+        'source_manifest_sha256': 'c4ca52093ae26b8bcdf5a1e467bb116acf2b23b92af5ebccf77ec8514fc55065',
+        'stage_sha256': '649fd6d87c792818da4b702d5532d4ce0974314a45e40f566f818d1ce1e5f120',
+        'source_freeze_sha256': '81ab760097600566c2d6dc6dd28e603573849db708aef83fec45a906219c3337',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350721': {
+        'district': '顺昌县',
+        'source_id': '04c84b5c09ac6325710f35ee',
+        'source_manifest_sha256': '7c5d5269bcb3a21b776b1a3639e7853e518a1ee0ea1f5636640596431d038149',
+        'stage_sha256': '702d240478f5baf94c40b99f21ce022d4ae873ee6f7bfeec3a5988e8f387a656',
+        'source_freeze_sha256': 'a2d3d6a5e10e459c93bfdaa2bc00b6ee6b1f3543731af989dc77bd6b1e75c5d9',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350723': {
+        'district': '光泽县',
+        'source_id': '012ffa540bf8300a303b0b8a',
+        'source_manifest_sha256': 'e82a712e2b512ef21e4a5de3f9bb9bacfc425dc97b8b40ffaf8945be6e09ba2d',
+        'stage_sha256': '0a4d74968728d583f4b2b9cfaa3c2b0b368155e6cf39062984f66b8592b8c28a',
+        'source_freeze_sha256': 'f324705bc793bc1813d7a12e5de3736398915039590d038a18371041fe5ff535',
+        'original_kinds': ('application', 'evidence'),
+    },
+    '350724': {
+        'district': '松溪县',
+        'source_id': '5367845e0fb0ae0340bfeb3a',
+        'source_manifest_sha256': '147248df85a42120b7a90af9bb6b6652205e6038071377bab1da9f66299c502b',
+        'stage_sha256': 'a33494cae9a98464633abb76dece183895e6c88afcd83710d7ef10016b0c172b',
+        'source_freeze_sha256': 'c4b748817a0179c41a72462fdfb3828932c3431a07857f524f42c924a4698131',
+        'original_kinds': ('application', 'evidence'),
+    },
+}
 SUPPORTED_REGIONS = {
     **REGIONS,
     **DY_REGIONS,
@@ -273,6 +308,7 @@ SUPPORTED_REGIONS = {
     **NINGDE_FIRST_FOUR_REGIONS,
     **NINGDE_NEXT_FIVE_REGIONS,
     **NANPING_FIRST_THREE_REGIONS,
+    **NANPING_NEXT_FOUR_REGIONS,
     INVESTMENT_CODE: {
         'district': '台商投资区', 'source_id': 'cf089c0b9ee9b764b564e269',
         'source_manifest_sha256': '297b56b936b8c43d5598c4fc115c26b881936d21fcd3da08722523ca74319fc2',
@@ -305,6 +341,7 @@ _CANDIDATE_PREFLIGHTS = {
             (NINGDE_FIRST_FOUR_BASE, NINGDE_FIRST_FOUR_REGIONS),
             (NINGDE_NEXT_FIVE_BASE, NINGDE_NEXT_FIVE_REGIONS),
             (NANPING_FIRST_THREE_BASE, NANPING_FIRST_THREE_REGIONS),
+            (NANPING_NEXT_FOUR_BASE, NANPING_NEXT_FOUR_REGIONS),
         )
         for code, profile in regions.items()
     },
