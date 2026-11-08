@@ -29,6 +29,7 @@ from regional_quanzhou_next4 import ADAPTER as QZ, production_schema_descriptor 
 from regional_xiangan_evidence import ADAPTER as XAE, schema_descriptor as xiangan_evidence_schema
 
 from regional_baoji_evidence import ADAPTER as BJE, schema_descriptor as baoji_evidence_schema
+from regional_baoji_county_application import MODELS_BY_ADAPTER as BAOJI_WORKER_MODELS, schema_descriptor as baoji_worker_schema
 from regional_luohu_collective import ADAPTER as LHC, schema_descriptor as luohu_schema
 from regional_zhongshan_municipal import ADAPTER as ZSM, schema_descriptor as zhongshan_schema
 
@@ -44,7 +45,7 @@ JS_BLANK={'jiangsu_xishan_blank_v1','jiangsu_own_blank_oct29_v1',
 REFERENCE={'sichuan_combined_reference_v1','tianfu_reference_v1'}
 NINGBO='zhejiang_ningbo_own_blank_oct29_v1'
 FEIDONG='anhui-feidong-official-application-20261029'
-SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE,ZSM,LHC,BJE}|ZJ_OWN|HN|JS_BLANK|REFERENCE)
+SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE,ZSM,LHC,BJE}|BAOJI_WORKER_MODELS.keys()|ZJ_OWN|HN|JS_BLANK|REFERENCE)
 PUBLIC_PROOF_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE,'jiangsu_own_blank_oct29c_v1','jiangsu_own_blank_oct29d_v1'}|ZJ_OWN|HN)
 
 JS_APP=('applicantName birthDate gender idNumber idAddress otherDocumentType otherDocumentNumber '
@@ -217,6 +218,7 @@ def build_form_contract(guide,template,kind,root=None):
     own_schema=(hq_schema(guide['region_code'],kind) if adapter==HQ else
                 qz_schema(guide['region_code'],kind) if adapter==QZ else
                 xiangan_evidence_schema(guide['source_version']) if adapter==XAE else
+                baoji_worker_schema(adapter,guide['source_version']) if adapter in BAOJI_WORKER_MODELS else
                 baoji_evidence_schema(guide['source_version']) if adapter==BJE else
                 zhongshan_schema(guide['source_version']) if adapter==ZSM else
                 luohu_schema(kind,guide['source_version']) if adapter==LHC else

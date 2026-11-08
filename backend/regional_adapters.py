@@ -2,6 +2,7 @@
 from copy import deepcopy
 from regional_guides import digest
 from regional_baoji_evidence import ADAPTER as BAOJI_EVIDENCE_ADAPTER, checked_adapter as checked_baoji_evidence_adapter
+from regional_baoji_county_application import MODELS_BY_ADAPTER as BAOJI_WORKER_MODELS, checked_adapter as checked_baoji_worker_adapter
 from regional_luohu_collective import ADAPTER as LUOHU_ADAPTER, checked_adapter as checked_luohu_adapter
 from regional_zhongshan_municipal import ADAPTER as ZHONGSHAN_ADAPTER, checked_adapter as checked_zhongshan_adapter
 from regional_blank_documents import blank_binding, ADAPTER as BLANK_ADAPTER
@@ -387,6 +388,8 @@ def with_reference_capabilities(guide,root=None):
 
 
 def checked_reference_adapter(guide, template, kind,root=None):
+    if template.get('adapter') in BAOJI_WORKER_MODELS:
+        return checked_baoji_worker_adapter(guide, template, kind, root=root)
     if template.get('adapter') == BAOJI_EVIDENCE_ADAPTER:
         return checked_baoji_evidence_adapter(guide, template, kind, root=root)
     if template.get('adapter') == LUOHU_ADAPTER:

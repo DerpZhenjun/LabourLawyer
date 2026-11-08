@@ -20,6 +20,10 @@ from regional_luohu_collective import (
     ADAPTER as LUOHU_ADAPTER, MODELS as LUOHU_MODELS, LAYOUTS as LUOHU_LAYOUTS,
     checked_adapter as checked_luohu_adapter, fill_document as fill_luohu_document,
 )
+from regional_baoji_county_application import (
+    MODELS_BY_ADAPTER as BAOJI_WORKER_MODELS, LAYOUTS as BAOJI_WORKER_LAYOUTS,
+    checked_adapter as checked_baoji_worker_adapter, fill_application as fill_baoji_worker_application,
+)
 from regional_baoji_evidence import (
     ADAPTER as BAOJI_EVIDENCE_ADAPTER, LAYOUT as BAOJI_LAYOUT, LAYOUT_ORIGIN as BAOJI_LAYOUT_ORIGIN,
     BaojiEvidenceRequest, checked_adapter as checked_baoji_evidence_adapter,
@@ -335,9 +339,13 @@ def download(template_id: str,province: str=Query(max_length=30),city: str=Query
                  or t.get('file_origin') == ZHONGSHAN_CONVERTED_ORIGIN or t.get('file') == ZHONGSHAN_LAYOUT.as_posix())
     baoji_layout = (t.get('adapter') == BAOJI_EVIDENCE_ADAPTER or t.get('file') == BAOJI_LAYOUT.as_posix()
                     or t.get('file_origin') == BAOJI_LAYOUT_ORIGIN)
-    if converted or baoji_layout:
+    baoji_worker_layout = (t.get('adapter') in BAOJI_WORKER_MODELS or
+                           any(t.get('file') == path.as_posix() for path in BAOJI_WORKER_LAYOUTS.values()))
+    if converted or baoji_layout or baoji_worker_layout:
         try:
-            if baoji_layout:
+            if baoji_worker_layout:
+                checked_baoji_worker_adapter(g, t, 'application', root=ROOT)
+            elif baoji_layout:
                 checked_baoji_evidence_adapter(g, t, 'evidence', root=ROOT)
             elif luohu_layout:
                 kinds = t.get('document_types', [])
@@ -350,7 +358,7 @@ def download(template_id: str,province: str=Query(max_length=30),city: str=Query
     path = checked_path(t,g)
     headers = {'Cache-Control':'no-store', 'X-Guide-Source-ID':g.get('source_id',''),
                'X-Guide-Version':str(g.get('version','')), 'X-Template-SHA256':t['sha256']}
-    if baoji_layout:
+    if baoji_layout or baoji_worker_layout:
         headers['X-Document-Origin'] = BAOJI_LAYOUT_ORIGIN
     elif converted:
         headers['X-Document-Origin'] = ZHONGSHAN_CONVERTED_ORIGIN
@@ -629,6 +637,8 @@ def generation_request_model(adapter,kind):
         return LUOHU_MODELS[kind]
     if adapter == ZHONGSHAN_ADAPTER and kind == 'application':
         return ZhongshanApplicationRequest
+    if adapter in BAOJI_WORKER_MODELS and kind == 'application':
+        return BAOJI_WORKER_MODELS[adapter]
     if adapter == BAOJI_EVIDENCE_ADAPTER and kind == 'evidence':
         return BaojiEvidenceRequest
     if adapter == XIANGAN_EVIDENCE_ADAPTER and kind == 'evidence':
@@ -677,7 +687,7 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
             g, province=payload.province, city=payload.city, district=payload.district,
             source_id=payload.source_id, version=payload.version)
         t = select_regional_template(g, payload.template_id, payload.kind, mode=payload.mode, case_scope=payload.case_scope)
-        if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER, BAOJI_EVIDENCE_ADAPTER} and payload.contract_id is None:
+        if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER, BAOJI_EVIDENCE_ADAPTER, *BAOJI_WORKER_MODELS} and payload.contract_id is None:
             raise RegionalValidationError(409, '请重新打开当前地区的填写表单后生成')
         adapter, data, validated_contract_id = validate_generation_request(
             g, t, payload.kind, payload.data, payload.contract_id, root=ROOT,
@@ -686,12 +696,14 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
     except RegionalValidationError as exc:
         raise HTTPException(exc.status_code, str(exc)) from exc
     blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER,JIANGSU_F_ADAPTER,JIANGSU_G_ADAPTER,FUJIAN_H_ADAPTER,FUJIAN_I_ADAPTER,FUJIAN_J_ADAPTER,FUJIAN_K_ADAPTER,PINGTAN_ADAPTER,PUTIAN_ADAPTER,PUTIAN_N_ADAPTER,FUJIAN_O_ADAPTER,FUJIAN_P_ADAPTER,HQ_ADAPTER}
-    blank_adapters.update({QZ_ADAPTER, BAOJI_EVIDENCE_ADAPTER})
+    blank_adapters.update({QZ_ADAPTER, BAOJI_EVIDENCE_ADAPTER, *BAOJI_WORKER_MODELS})
     converted_adapters = {RONGJIANG_ADAPTER, HUNAN_ADAPTER, HUNAN_C_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER}
     if adapter in blank_adapters | converted_adapters and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
     try:
         if adapter == LUOHU_ADAPTER:
             doc=fill_luohu_document(payload.kind,checked_path(t,g),data.model_dump())
+        elif adapter in BAOJI_WORKER_MODELS:
+            doc=fill_baoji_worker_application(g['region_code'], checked_path(t, g).read_bytes(), data.model_dump())
         elif adapter == BAOJI_EVIDENCE_ADAPTER:
             doc=fill_baoji_evidence(checked_path(t, g).read_bytes(), data.model_dump())
         elif adapter == ZHONGSHAN_ADAPTER:

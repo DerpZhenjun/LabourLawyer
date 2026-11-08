@@ -1,0 +1,61 @@
+{
+  "state": "PASS",
+  "cases": [
+    {
+      "code": "610323",
+      "source_id": "42e02734348a940a318eec47",
+      "blank_sha256": "a9abffd8a2714f636689727f0113f2d19f22c76ba1a7809792ac029ce64295da",
+      "filled_sha256": "c7c9c7995b45b409ca38054bb39b63441a40a7fea4712f622a743c5a0cb720fa",
+      "cancel_without_post": true,
+      "viewports": [
+        375,
+        768,
+        1440
+      ]
+    },
+    {
+      "code": "610326",
+      "source_id": "2760c9d9af6593861e9309c7",
+      "blank_sha256": "d3b1d4fe23d4578a2b323cf2e7f500eadaa8b22e832f627b751e77ba6af5116f",
+      "filled_sha256": "742a9ccada67a8e745adad2ce80d7dce9a94fbd4f6b335f14a089abf1d6f2938",
+      "cancel_without_post": true,
+      "viewports": [
+        375,
+        768,
+        1440
+      ]
+    },
+    {
+      "code": "610327",
+      "source_id": "f747722bc1dda97f8b0d55b1",
+      "blank_sha256": "a9abffd8a2714f636689727f0113f2d19f22c76ba1a7809792ac029ce64295da",
+      "filled_sha256": "c7c9c7995b45b409ca38054bb39b63441a40a7fea4712f622a743c5a0cb720fa",
+      "cancel_without_post": true,
+      "viewports": [
+        375,
+        768,
+        1440
+      ]
+    }
+  ],
+  "blocked": [],
+  "errors": [],
+  "published": false,
+  "browser_receipt_sha256": "e0ae6545744602bb5690d5d62979e1113786c54aa417136e9933fc579338791a",
+  "browser_downloads": 6,
+  "native_word": {
+    "source_layout_receipt_sha256": "08c63fb55ac9454998eacf194403ca47b71454750cb27071d36c23442f9bd8c9",
+    "fixture_documents": 9,
+    "fixture_pages": 15,
+    "browser_filled_pages": 3,
+    "browser_filled_documents": 3,
+    "fixture_render_receipt_sha256": "a9861956d3549751624beb4b00006bd804c43b8b78e1c09157e1e8ce07320562"
+  },
+  "local_tests": {
+    "miniprogram_passed": 20,
+    "regression_passed": 65,
+    "focused_passed": 18,
+    "web_build_passed": true,
+    "regression_skipped": 1
+  }
+}
