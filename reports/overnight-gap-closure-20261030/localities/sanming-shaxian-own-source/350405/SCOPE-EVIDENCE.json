@@ -1,0 +1,45 @@
+{
+  "observed_at_utc": "2026-11-08 08:12:49 UTC",
+  "region_code": "350405",
+  "portal_region_code": "350427",
+  "province": "fujian",
+  "city": "三明市",
+  "district": "沙县区",
+  "source_id": "4f433827d01b05ee6582c3f9",
+  "scope_result": "UNCHANGED_TERRITORY_AND_EXACT_DISTRICT_AUTHORITY",
+  "published": false,
+  "authority_context": {
+    "url": "https://www.fjsx.gov.cn/zwgk/jjsx/bmkx/202601/t20260119_2184788.htm",
+    "title": "根治欠薪顽疾 维护劳动公平 _ 部门快讯 _ 沙县区人民政府门户网站",
+    "lines": [
+      "日期：2026-01-12 来源：三明市沙县区人社局"
+    ],
+    "links": []
+  },
+  "current_code_evidence": {
+    "url": "https://mzt.fujian.gov.cn/gk/tzgg/202607/t20260710_7176497.htm",
+    "title": "福建省行政区划名录及代码（截至2026年6月30日） _ 通知公告 _ 福建省民政厅",
+    "visible_rows": [
+      "三元区\n\n\t\n\n350404\n\n\n\n\n      列东街道\n\n\t\n\n3504",
+      "350404200\n\n\n\n\n    沙县区\n\n\t\n\n350405\n\n\n\n\n    "
+    ]
+  },
+  "municipal_approval": {
+    "url": "https://www.sm.gov.cn/smsrmzfbgs/smsrmzf/zfxxgkml/cxjsgl/202103/t20210310_1641836.htm",
+    "title": "三明市人民政府关于同意沙县行政区划调整的批复_ 城乡建设管理_ 政府信息公开平台",
+    "lines": [
+      "备注/文号： 明政函〔2021〕19号",
+      "公文生成日期： 2021-02-26",
+      "同意撤销沙县，设立三明市沙县区，以原沙县的行政区域为沙县区的行政区域，沙县区人民政府驻凤岗街道府前中路89号。"
+    ]
+  },
+  "provincial_approval": {
+    "url": "https://www.fujian.gov.cn/zwgk/zfxxgk/szfwj/jgzz/mzcjbzzc/202102/t20210203_5530849.htm",
+    "notice": "闽政文〔2021〕49号",
+    "same_territory": true
+  },
+  "excluded_scope": {
+    "name": "三元区",
+    "reason": "现行三元区合并原梅列区及原三元区，旧码事项适用范围仍需单独核验"
+  }
+}
