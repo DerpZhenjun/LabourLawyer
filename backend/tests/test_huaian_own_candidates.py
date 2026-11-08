@@ -110,6 +110,16 @@ AREAS = {
                '8d82918d-9572-404c-89d6-6a7a2f296316', 'dd5c213b-0c86-45c9-a169-31e7f0a92a35'),
     '320693': ('南通市', '苏锡通', 'nantong-suxitong', '2446c985a8e4028bc4729f14', '320693',
                '92e37500-fd55-4a4b-a256-5af92a57909a', '188616cb-8599-4c75-beca-834623fff1f5'),
+    '321102': ('镇江市', '京口区', 'zhenjiang-jingkou', 'cb673500cd75bfe69de5e78b', '321102',
+               '79e18b27-0e6d-4e1f-9b83-40690e6cee1e', '66bb003d-40ff-4f4f-9946-c7e1d3cb473a'),
+    '321111': ('镇江市', '润州区', 'zhenjiang-runzhou', '4223ab831f52e1afbc0bc376', '321111',
+               '58a27495-07b2-4c3b-a393-6857877c4f16', '5ff1ef03-df01-468e-b70b-12b640f81dfb'),
+    '321112': ('镇江市', '丹徒区', 'zhenjiang-dantu', '34086ef3a9f8af8995c22fd5', '321112',
+               '8335e104-614a-42bd-804d-5198d889fde2', '80c5cacb-31a4-4de0-96f1-1d05cdec2bec'),
+    '321181': ('镇江市', '丹阳市', 'zhenjiang-danyang', '88f8a7fab3a029da739d7759', '321181',
+               '0ddb0e56-9ebf-438c-8f4f-4aba1dd901cd', '2b489fa8-be63-4fb6-99c7-04948b3f866f'),
+    '321182': ('镇江市', '扬中市', 'zhenjiang-yangzhong', '6faa24fecb0f43577eb71b76', '321182',
+               '5aa121be-5f9c-410b-ba5d-623102c98a04', '853c7d53-dd54-4b50-863c-c23ec84baefe'),
 }
 
 
@@ -132,7 +142,7 @@ class HuaianOwnCandidatesTests(TestCase):
         with TemporaryDirectory(prefix='jiangsu-own-candidates-') as tmp:
             store = RegionalStore(Path(tmp) / 'guides.sqlite')
             directory = DirectoryStore(Path(tmp) / 'directory.sqlite')
-            for city_code in ('320700', '320800', '320300', '320900', '321300', '321000', '320600'):
+            for city_code in ('320700', '320800', '320300', '320900', '321300', '321000', '320600', '321100'):
                 directory.put_area(next(r for r in rows if r['code'] == city_code and r['level'] == 3))
                 store.put_guide(forms.staged_jiangsu_municipal(ROOT, city_code))
             directory.put_area(next(r for r in rows if r['code'] == '320685' and r['city'] == '南通市'

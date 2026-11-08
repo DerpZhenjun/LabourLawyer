@@ -114,6 +114,11 @@ LOCAL_PROOFS = {
  '320682':('nantong-rugao-own-source','district','9ba5253ef80b07f66ec45ce4181c3b6032715ecb2ff71e1342f84f58d94bb06d','1cb64a1f8f530b50f51bd00c353f728fde7e12562d04702168915ef03d8fc1fc'),
  '320614':('nantong-haimen-own-source','district','fa1448af8265afe7c93a402c4066854bf0a0bb8d329ad9af6064e9005d29516a','8038e9c2c39119269d7a80a850656548b24b0f9645091d2da1ce13dccc7f0d3a'),
  '320693':('nantong-suxitong-own-source','functional_area','159a7e8653b3db207d00d432701c9083a06a035c9bc5acc2aa4a067a5d7575fc','13a068aca61399bf2bf9a03a3d317b10a7c2915b772ba56af92cd05448885e8e'),
+ '321102':('zhenjiang-jingkou-own-source','district','02471e1e828612a69e97ff6134dffb9d470d98ed606076f87949fea549888772','5d444c181770fd238c24846fd3b262a8336f90c32485fecfc950463033a9374d'),
+ '321111':('zhenjiang-runzhou-own-source','district','407931b632f2710296b6094b52aeef64fcbe191184257a724b941132397891a6','17d630ad1b4c0036d1cc330d51c685391a2ec83835f60839fd9ed7023b236b06'),
+ '321112':('zhenjiang-dantu-own-source','district','10ca1feedcf8b5fff6618a46abf5f8074f9a349f72f72134d18eba10e94cb565','9f29e239b08789a89e72192f6332853c7a856d6c4c2df0d725441e141415a24e'),
+ '321181':('zhenjiang-danyang-own-source','district','8dec73ecc07242213ea5ff90cce04cb4cc6e1f91877a1c6537bb4ca48abfd91f','7fe41a1c7c8bd674d56e4e9b33167884ff1cb0fba06e5ef04f80adb9fff56046'),
+ '321182':('zhenjiang-yangzhong-own-source','district','b160d446423320f51c87c60f2804b8d867acd5b2dd2adda718825289326ecf24','02903b1ccb1675b294ceee4052293f157b8b0c817b77283ccddc9479e0e3b575'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -361,6 +366,21 @@ EXACT_SOURCES={
  '320693':('南通市','苏锡通','2446c985a8e4028bc4729f14',{
     '92e37500-fd55-4a4b-a256-5af92a57909a':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
     '188616cb-8599-4c75-beca-834623fff1f5':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321102':('镇江市','京口区','cb673500cd75bfe69de5e78b',{
+    '79e18b27-0e6d-4e1f-9b83-40690e6cee1e':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '66bb003d-40ff-4f4f-9946-c7e1d3cb473a':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321111':('镇江市','润州区','4223ab831f52e1afbc0bc376',{
+    '58a27495-07b2-4c3b-a393-6857877c4f16':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '5ff1ef03-df01-468e-b70b-12b640f81dfb':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321112':('镇江市','丹徒区','34086ef3a9f8af8995c22fd5',{
+    '8335e104-614a-42bd-804d-5198d889fde2':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '80c5cacb-31a4-4de0-96f1-1d05cdec2bec':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321181':('镇江市','丹阳市','88f8a7fab3a029da739d7759',{
+    '0ddb0e56-9ebf-438c-8f4f-4aba1dd901cd':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '2b489fa8-be63-4fb6-99c7-04948b3f866f':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '321182':('镇江市','扬中市','6faa24fecb0f43577eb71b76',{
+    '5aa121be-5f9c-410b-ba5d-623102c98a04':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '853c7d53-dd54-4b50-863c-c23ec84baefe':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -428,6 +448,11 @@ EXACT_IDENTITIES={
  '320682':('如皋市人力资源和社会保障局','11320682552486117F400201430200201'),
  '320614':('南通市海门区人力资源和社会保障局','11320684014245260H400201430200201'),
  '320693':('江苏南通苏锡通科技产业园区政法和社会事业局','11320600MB1K253397400201430200201'),
+ '321102':('镇江市京口区人力资源和社会保障局','113211020144727977400201430200201'),
+ '321111':('镇江市润州区人力资源和社会保障局','11321111014477192T400201430200201'),
+ '321112':('镇江市丹徒区人力资源和社会保障局','11321121553805554K400201430200201'),
+ '321181':('丹阳市人力资源和社会保障局','113211810144872785400201430200201'),
+ '321182':('扬中市人力资源和社会保障局','11321182554623867C400201430200201'),
 }
 
 
