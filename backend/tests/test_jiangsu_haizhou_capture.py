@@ -80,6 +80,25 @@ class HaizhouCaptureTests(unittest.TestCase):
         self.assertEqual({t['id'] for t in guide['templates'] if t['material_id'] == duplicate['id']},
                          set(replacement_ids))
 
+    def test_electronic_credential_badge_keeps_the_official_material_name(self):
+        capture = self.capture()
+        doc = html.fromstring(capture['html'])
+        cell = doc.xpath('//*[@id="floor10"]//tr[contains(@class, "tsize")][3]/td[2]')[0]
+        name = self.parse()['materials'][2]['name']
+        badge = '已关联电子证照，免提交'
+        cell.clear()
+        cell.append(html.fromstring(f'<p>{name}</p>'))
+        cell.append(html.fromstring(f'<p>{badge}</p>'))
+        capture['html'] = html.tostring(doc, encoding='unicode')
+        material = self.parse(capture)['materials'][2]
+        self.assertEqual(material['name'], name)
+        self.assertEqual(material['details']['电子证照提示'], badge)
+        self.assertEqual(material['required'], self.parse()['materials'][2]['required'])
+        capture['html'] = capture['html'].replace(f'<p>{name}</p>', '<p>其他材料</p>', 1)
+        with self.assertRaisesRegex(ValueError, '材料详情与当前材料不匹配'):
+            self.parse(capture)
+
+
     def test_wrong_portal_authority_task_or_visible_district_is_rejected(self):
         self.parse()
         for key,old,new in [('url','lyghz.jszwfw.gov.cn','www.jszwfw.gov.cn'),

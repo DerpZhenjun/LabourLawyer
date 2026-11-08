@@ -223,7 +223,15 @@ def _parse_exact_capture(capture,entry_check,spec):
         if len(cells)!=8:raise ValueError('材料列表列结构已变化')
         name=text(cells[1]);detail_tables=cells[7].xpath('.//table')
         details=table_pairs(detail_tables[0]) if detail_tables else {}
-        if details.get('材料名称')!=name:raise ValueError('材料详情与当前材料不匹配')
+        detail_name=details.get('材料名称')
+        if detail_name!=name:
+            paragraphs=[text(node) for node in cells[1].xpath('./p')]
+            badge='已关联电子证照，免提交'
+            if (not detail_name or paragraphs!=[detail_name,badge] or len(cells[1])!=2
+                    or any(value.strip() for value in cells[1].xpath('./text()'))):
+                raise ValueError('材料详情与当前材料不匹配')
+            name=detail_name
+            details['电子证照提示']=badge
         material_id=digest([code,name])[:20]
         if material_id in material_ids:
             material_id=digest([code,name,text(cells[0])])[:20]
