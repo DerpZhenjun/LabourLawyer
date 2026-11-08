@@ -193,3 +193,13 @@ class DongshanCandidateTests(_ZhangzhouCandidateChecks, TestCase):
     region = {'province': 'fujian', 'city': '漳州市', 'district': '东山县'}
     source_folder = 'zhangzhou-next-four-own-source/350626'
     foreign_code = '350622'
+
+
+class InvestmentZoneCandidateTests(_ZhangzhouCandidateChecks, TestCase):
+    code = '350692'
+    source_id = 'ba43712a330a421eb5306aed'
+    source_version = 'c657a98361f5d3e69af383ffe4a57afc401f5930c729a4227eda52d7e83a263d'
+    authority = '漳州台商投资区社会事业管理局'
+    region = {'province': 'fujian', 'city': '漳州市', 'district': '漳州台商投资区'}
+    source_folder = 'zhangzhou-functional-own-source/350692'
+    foreign_code = '350599'
