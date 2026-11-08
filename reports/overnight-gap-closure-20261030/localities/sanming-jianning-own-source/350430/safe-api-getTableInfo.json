@@ -1,0 +1,76 @@
+{
+  "msg": null,
+  "total": null,
+  "code": 200,
+  "data": {
+    "tableList": [
+      {
+        "unid": "CDC46B0A5A6F1C972612B68E57762D71",
+        "createtime": "2021-12-09 10:10:44",
+        "code": null,
+        "punid": "C50867FAB824EBDC44FAD172D89AA6BD",
+        "fileunid": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+        "name": "仲裁申请书.docx",
+        "memo": null,
+        "type": "1",
+        "timestamp": "2024-08-21 17:54:00.001"
+      },
+      {
+        "unid": "A6EEA01CC89FD31C07377DF78E2FE258",
+        "createtime": "2021-12-09 10:10:44",
+        "code": null,
+        "punid": "C50867FAB824EBDC44FAD172D89AA6BD",
+        "fileunid": "98A0EE44D3D63B3D6A10FE60D4E83776",
+        "name": "仲裁申请书示例.docx",
+        "memo": null,
+        "type": "2",
+        "timestamp": "2024-08-21 17:54:00.001"
+      },
+      {
+        "unid": "48F14F60FA2C34049C3E6DDFB19E41CF",
+        "createtime": "2024-09-02 17:08:26",
+        "code": null,
+        "punid": "05FB67730C7F1A7A5BA43317AD8B0FB5",
+        "fileunid": "50C05667D9483899E556E8F4D6CBCE03",
+        "name": "证据清单（示例）.docx",
+        "memo": null,
+        "type": "2",
+        "timestamp": null
+      },
+      {
+        "unid": "6054800C187440A0BFB81E3C83941C07",
+        "createtime": "2024-09-02 17:23:23",
+        "code": null,
+        "punid": "E115FD193741852CBBF4A477440578D6",
+        "fileunid": "9D7A83CD92ECCFC4AC89891E9182E567",
+        "name": "证据材料（供参考）.docx",
+        "memo": null,
+        "type": "2",
+        "timestamp": null
+      },
+      {
+        "unid": "202EF369755086D4E0636B0E010AD8BA",
+        "createtime": "2024-08-21 17:54:00",
+        "code": null,
+        "punid": "05FB67730C7F1A7A5BA43317AD8B0FB5",
+        "fileunid": "CC300F5D9DD5DC404D65C68116D50C55",
+        "name": "证据清单（空白）.docx",
+        "memo": null,
+        "type": "1",
+        "timestamp": "2024-08-21 17:54:00.001"
+      },
+      {
+        "unid": "202EF369755F86D4E0636B0E010AD8BA",
+        "createtime": "2024-08-21 17:54:00",
+        "code": null,
+        "punid": "E115FD193741852CBBF4A477440578D6",
+        "fileunid": "6EFE86A941A038DC1ED88B911A7D5621",
+        "name": "证据材料（供参考）.docx",
+        "memo": null,
+        "type": "1",
+        "timestamp": "2024-08-21 17:54:00.001"
+      }
+    ],
+    "paddingList": []
+  }
+}

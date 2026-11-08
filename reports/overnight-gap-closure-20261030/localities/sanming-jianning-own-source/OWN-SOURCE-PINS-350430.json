@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "78d79c305e8ae44b9c0abc031e5d1f388121a5e96e7d9304220c2ef7040472a3",
+  "regions": {
+    "350430": {
+      "region_code": "350430",
+      "district": "建宁县",
+      "directory_city": "三明市",
+      "source_id": "64ad9887fd1677ef049bac0b",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=FBCE623E95C81F33F1AE7E98B7AAEFA0",
+      "service_unid": "FBCE623E95C81F33F1AE7E98B7AAEFA0",
+      "service_code": "1135043000379730XF400201430200Y01",
+      "authority": "建宁县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "c8021b2eca9928d2dfc4defabab59df134f93d837c67c5f768762abc661cf342"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
