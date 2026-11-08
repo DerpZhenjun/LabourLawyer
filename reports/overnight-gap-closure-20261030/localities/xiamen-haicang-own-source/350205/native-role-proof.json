@@ -1,0 +1,86 @@
+{
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=58EFC33E57CF65744F3BAEF8444760BF",
+  "source_id": "59e32cc0aee11a28de7c607f",
+  "observed_at": "2026-11-08T07:04:25.276388+00:00",
+  "raw_native_capture_pin": {
+    "bytes": 27999,
+    "sha256": "1094c4e39709e1d0505cc0cbb70d2b3bd92251123b35cfef8cb1b1b18892eda9"
+  },
+  "roles": [
+    {
+      "attachment_id": "77BF995AFB2E15A5F5AD027234CF046F",
+      "material_id": "09CDC685670ED6D6AB900AE04CFCF1A2",
+      "public_file_unid": "DA61D27FB4D42D825803C92CD247CE35",
+      "official_label": "证据模板.doc",
+      "official_role": "示范文本",
+      "type_raw": "2",
+      "observed_control_label": "[示范文本]证据模板.doc"
+    },
+    {
+      "attachment_id": "202EF369734B86D4E0636B0E010AD8BA",
+      "material_id": "09CDC685670ED6D6AB900AE04CFCF1A2",
+      "public_file_unid": "6EFE86A941A038DC1ED88B911A7D5621",
+      "official_label": "证据材料（供参考）.docx",
+      "official_role": "格式文本",
+      "type_raw": "1",
+      "observed_control_label": "[格式文本]证据材料（供参考）.docx"
+    },
+    {
+      "attachment_id": "202EF369734086D4E0636B0E010AD8BA",
+      "material_id": "2A2DFF4515A1B240E28972846A3ACBAB",
+      "public_file_unid": "D266D62D3E51B38A3C568B47677C4B09",
+      "official_label": "证据清单（示例）.docx",
+      "official_role": "格式文本",
+      "type_raw": "1",
+      "observed_control_label": "[格式文本]证据清单（示例）.docx"
+    },
+    {
+      "attachment_id": "B64C03B340A769013DF540EE002AB84B",
+      "material_id": "2A2DFF4515A1B240E28972846A3ACBAB",
+      "public_file_unid": "027B45E93193D4380B1DA9D5CB21EB54",
+      "official_label": "28劳动争议仲裁证据清单.doc",
+      "official_role": "示范文本",
+      "type_raw": "2",
+      "observed_control_label": "[示范文本]28劳动争议仲裁证据清单.doc"
+    },
+    {
+      "attachment_id": "DE00E09E82A0A496C8F55C56BAD8AD22",
+      "material_id": "DE638AA27B26BB0BFD14743A61A97F3C",
+      "public_file_unid": "98A0EE44D3D63B3D6A10FE60D4E83776",
+      "official_label": "仲裁申请书示例.docx",
+      "official_role": "示范文本",
+      "type_raw": "2",
+      "observed_control_label": "[示范文本]仲裁申请书示例.docx"
+    },
+    {
+      "attachment_id": "ABC9CCD9C87C28BC8FE14FE0A9F87D11",
+      "material_id": "DE638AA27B26BB0BFD14743A61A97F3C",
+      "public_file_unid": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+      "official_label": "仲裁申请书.docx",
+      "official_role": "格式文本",
+      "type_raw": "1",
+      "observed_control_label": "[格式文本]仲裁申请书.docx"
+    }
+  ],
+  "observed_evidence_conflict": [
+    {
+      "attachment_id": "202EF369734086D4E0636B0E010AD8BA",
+      "material_id": "2A2DFF4515A1B240E28972846A3ACBAB",
+      "public_file_unid": "D266D62D3E51B38A3C568B47677C4B09",
+      "official_label": "证据清单（示例）.docx",
+      "official_role": "格式文本",
+      "type_raw": "1",
+      "observed_control_label": "[格式文本]证据清单（示例）.docx"
+    },
+    {
+      "attachment_id": "B64C03B340A769013DF540EE002AB84B",
+      "material_id": "2A2DFF4515A1B240E28972846A3ACBAB",
+      "public_file_unid": "027B45E93193D4380B1DA9D5CB21EB54",
+      "official_label": "28劳动争议仲裁证据清单.doc",
+      "official_role": "示范文本",
+      "type_raw": "2",
+      "observed_control_label": "[示范文本]28劳动争议仲裁证据清单.doc"
+    }
+  ],
+  "evidence_role_observation_sha256": "2071dc289f5b13a30515773b69608585da67e02946e1e0f7b48f51075b688b39"
+}

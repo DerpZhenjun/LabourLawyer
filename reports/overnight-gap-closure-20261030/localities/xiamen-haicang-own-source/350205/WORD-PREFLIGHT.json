@@ -1,0 +1,45 @@
+{
+  "verified_at": "2026-11-08T07:09:02.471031+00:00",
+  "source_freeze_sha256": "6542ff9c2e6a4e587d90cf7d4612ded5cec792cfce736b67457871afabf1d417",
+  "state": "OWN_ORIGINALS_AND_TEST_LAYOUTS_BYTE_EQUIVALENT",
+  "method": "Existing mechanical filler on independently retrieved own originals; use prior visual proof only for byte-identical output.",
+  "reference_word_manifest_sha256": "113e12ddec99ef1c528f65618c2b2bbf32b1c642e424c540e525af29b539246f",
+  "records": [
+    {
+      "region_code": "350205",
+      "source_id": "59e32cc0aee11a28de7c607f",
+      "attachment_id": "ABC9CCD9C87C28BC8FE14FE0A9F87D11",
+      "template_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "kind": "application",
+      "case": "original",
+      "bytes": 13093,
+      "sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "zip_members": 21
+    },
+    {
+      "region_code": "350205",
+      "source_id": "59e32cc0aee11a28de7c607f",
+      "attachment_id": "ABC9CCD9C87C28BC8FE14FE0A9F87D11",
+      "template_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "kind": "application",
+      "case": "normal",
+      "bytes": 11987,
+      "sha256": "71d729a935de4e845d1a5c0d07af5ae9efd8eb95b414411954621826109cf618",
+      "zip_members": 21
+    },
+    {
+      "region_code": "350205",
+      "source_id": "59e32cc0aee11a28de7c607f",
+      "attachment_id": "ABC9CCD9C87C28BC8FE14FE0A9F87D11",
+      "template_sha256": "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "kind": "application",
+      "case": "stress",
+      "bytes": 11953,
+      "sha256": "0f399cfd9f5dc4d5fa9d2ba56c2f56719ae95902283cc41572634c4fd5f8c6bf",
+      "zip_members": 21
+    }
+  ],
+  "web_accepted": false,
+  "adapter_registered": false,
+  "published": false
+}

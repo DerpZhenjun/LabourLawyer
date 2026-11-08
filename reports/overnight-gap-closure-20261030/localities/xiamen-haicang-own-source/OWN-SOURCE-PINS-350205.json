@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "6542ff9c2e6a4e587d90cf7d4612ded5cec792cfce736b67457871afabf1d417",
+  "regions": {
+    "350205": {
+      "region_code": "350205",
+      "district": "海沧区",
+      "directory_city": "厦门市",
+      "source_id": "59e32cc0aee11a28de7c607f",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=58EFC33E57CF65744F3BAEF8444760BF",
+      "service_unid": "58EFC33E57CF65744F3BAEF8444760BF",
+      "service_code": "11350207004136888G400201430200201",
+      "authority": "厦门市海沧区人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application"
+      ],
+      "source_manifest_sha256": "bd61ba685b94c9e1197f24a28a630364e50934dadb0449dc29c0aefa49abe5e8"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
