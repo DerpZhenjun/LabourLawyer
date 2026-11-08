@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "fedb0e57a60ffe9f7bae07a3110dc8b5ba3ce4daf1060191d10bab452c9b695f",
+  "regions": {
+    "350423": {
+      "region_code": "350423",
+      "district": "清流县",
+      "directory_city": "三明市",
+      "source_id": "e1fcf92db221a6feebb6a287",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=0B85F2A092F72603134B2FEBA13F1F7D",
+      "service_unid": "0B85F2A092F72603134B2FEBA13F1F7D",
+      "service_code": "11350423MB03649126400201430200Y01",
+      "authority": "清流县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application"
+      ],
+      "source_manifest_sha256": "28be1c6fcf51bb3688f57ab5354eefbeac604b4eae5186a1805951587d1a5ab6"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
