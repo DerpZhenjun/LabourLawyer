@@ -76,6 +76,23 @@ class RegionalDirectoryTests(unittest.TestCase):
         })
         self.assertEqual([row['code'] for row in self.store.areas('fujian', '\u5357\u5e73\u5e02')], ['350784', '350784'])
 
+    def test_yongding_keeps_the_old_provider_record_and_exposes_the_current_code(self):
+        old = {
+            'provider': 'national', 'code': '350822', 'province': 'fujian', 'city': '龙岩市',
+            'district': '永定区', 'level': 4, 'parent_code': '350800',
+            'source_url': 'https://gjzwfw.www.gov.cn/fwmh/ucGovRegion/findUcGovRegion.do',
+            'collected_at': '2026-10-23T14:00:00Z', 'raw_record': {'regionCode': '350822'},
+        }
+        stored = self.store.put_area(old)
+        row, = self.store.areas('fujian', '龙岩市')
+        self.assertEqual(row['id'], stored['id'])
+        self.assertEqual((row['code'], row['region_code'], row['provider_code']), ('350803', '350803', '350822'))
+        self.assertEqual(row['raw_record'], old['raw_record'])
+        self.assertFalse(row['can_generate'])
+        self.store.put_area({**old, 'code': '350803', 'raw_record': {'regionCode': '350803'}})
+        row, = self.store.areas('fujian', '龙岩市')
+        self.assertEqual((row['id'], row['code']), ('national:350803', '350803'))
+
     def test_queue_resumes_interrupted_job_without_duplicate_enqueue(self):
         key = self.store.enqueue('directory', {'provider':'national','parent':'510000'})
         self.assertEqual(self.store.enqueue('directory', {'provider':'national','parent':'510000'}),key)
