@@ -1,0 +1,33 @@
+{
+  "region_code": "610300",
+  "source_url": "https://rsj.baoji.gov.cn/col9976/col1293/202305/t20230512_658694.html",
+  "official_attachment_url": "https://rsj.baoji.gov.cn/col9976/col1293/202305/P020260415349549146352.docx",
+  "official_sha256": "c0e338dd185734f12b86649992d0ca891cad246bf6a8e85beae58f9ef294e3f9",
+  "official_bytes": 13960,
+  "downloaded_at": "2026-11-08T13:05:50.851844+00:00",
+  "guide_snapshot_sha256": "63edf154cbd23c295f4c278de16ba51d5e3a9c24bedfad86a6b6cacdbb31993b",
+  "layout_sha256": "fd28374f4c2a6b6cf777df3bde5f890596bb7370b349c685a821fc0dc525695e",
+  "layout_equivalence": {
+    "changed_metadata_parts": [
+      "docProps/app.xml",
+      "docProps/core.xml",
+      "docProps/custom.xml"
+    ],
+    "layout_parts_byte_identical": true,
+    "renderer": "Microsoft Word",
+    "identical_page_pixels": true,
+    "pages": 1
+  },
+  "local_qa": {
+    "normal_page_count": 1,
+    "maximum_rows": 9,
+    "maximum_fixture_page_count": 1,
+    "verified_columns": [
+      "序号",
+      "证据名称",
+      "证明事项及证明目的",
+      "页码"
+    ],
+    "manual_signature": true
+  }
+}

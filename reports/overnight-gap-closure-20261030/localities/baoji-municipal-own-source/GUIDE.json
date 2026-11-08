@@ -1,0 +1,142 @@
+{
+  "province": "shaanxi",
+  "province_name": "陕西省",
+  "city": "宝鸡市",
+  "district": "市本级",
+  "region_code": "610300",
+  "scope_level": "municipal",
+  "service_name": "劳动人事争议仲裁申请",
+  "authority": "宝鸡市人力资源和社会保障局",
+  "source_url": "https://rsj.baoji.gov.cn/col9976/col1293/202305/t20230512_658694.html",
+  "source_title": "宝鸡市人力资源和社会保障局关于在全市开通劳动人事争议电子邮件预申请服务的公告",
+  "collected_at": "2026-11-08T13:05:47.601454+00:00",
+  "verified_at": "2026-11-08T13:05:50.851844+00:00",
+  "verification_status": "partial",
+  "published": false,
+  "fields": {
+    "办理方式": {
+      "source_url": "https://rsj.baoji.gov.cn/col9976/col1293/202305/t20230512_658694.html",
+      "region_code": "610300",
+      "raw_value": "先向有管辖权的仲裁委发送邮件预申请。预审通过后，可以邮寄或到现场提交正式材料。",
+      "normalized_value": "先向有管辖权的仲裁委发送邮件预申请。预审通过后，可以邮寄或到现场提交正式材料。",
+      "collected_at": "2026-11-08T13:05:47.601454+00:00",
+      "verified_at": "2026-11-08T13:05:50.851844+00:00",
+      "verification_status": "verified"
+    }
+  },
+  "sections": {
+    "邮件预申请": {
+      "source_url": "https://rsj.baoji.gov.cn/col9976/col1293/202305/t20230512_658694.html",
+      "region_code": "610300",
+      "raw_value": "劳动仲裁委收到书面申请资料后启动案件处理程序。",
+      "normalized_value": "市人社公告说明，仲裁机构先对邮件材料提供指导并预审，收到预审通过后的正式书面材料才启动案件处理程序。",
+      "collected_at": "2026-11-08T13:05:47.601454+00:00",
+      "verified_at": "2026-11-08T13:05:50.851844+00:00",
+      "verification_status": "verified"
+    }
+  },
+  "materials": [
+    {
+      "id": "baoji-mail-application",
+      "name": "仲裁申请书",
+      "source_url": "https://rsj.baoji.gov.cn/col9976/col1293/202305/P020260415349548869062.docx",
+      "region_code": "610300",
+      "raw_value": "邮寄正式材料时，申请书按被申请人数、第三人人数之和再加一份准备。",
+      "normalized_value": "邮寄正式材料时，申请书按被申请人数、第三人人数之和再加一份准备。",
+      "collected_at": "2026-11-08T13:05:47.601454+00:00",
+      "verified_at": "2026-11-08T13:05:50.851844+00:00",
+      "verification_status": "verified",
+      "instructions": "邮寄正式材料时，申请书按被申请人数、第三人人数之和再加一份准备。",
+      "required": "邮寄正式材料"
+    },
+    {
+      "id": "baoji-mail-identity",
+      "name": "身份证明",
+      "source_url": "https://rsj.baoji.gov.cn/col9976/col1293/202305/P020260415349548869062.docx",
+      "region_code": "610300",
+      "raw_value": "邮件预申请阶段无需提供，预审合格后正式提交时提供。",
+      "normalized_value": "邮件预申请阶段无需提供，预审合格后正式提交时提供。",
+      "collected_at": "2026-11-08T13:05:47.601454+00:00",
+      "verified_at": "2026-11-08T13:05:50.851844+00:00",
+      "verification_status": "verified",
+      "instructions": "邮件预申请阶段无需提供，预审合格后正式提交时提供。",
+      "required": "邮寄正式材料"
+    },
+    {
+      "id": "baoji-mail-evidence",
+      "name": "劳动人事关系证据",
+      "source_url": "https://rsj.baoji.gov.cn/col9976/col1293/202305/P020260415349548869062.docx",
+      "region_code": "610300",
+      "raw_value": "准备与被申请人存在劳动人事关系的相关证据。",
+      "normalized_value": "准备与被申请人存在劳动人事关系的相关证据。",
+      "collected_at": "2026-11-08T13:05:47.601454+00:00",
+      "verified_at": "2026-11-08T13:05:50.851844+00:00",
+      "verification_status": "verified",
+      "instructions": "准备与被申请人存在劳动人事关系的相关证据。",
+      "required": "邮寄正式材料"
+    },
+    {
+      "id": "baoji-mail-service",
+      "name": "送达信息确认书",
+      "source_url": "https://rsj.baoji.gov.cn/col9976/col1293/202305/P020260415349548869062.docx",
+      "region_code": "610300",
+      "raw_value": "准备劳动人事争议调解仲裁文书送达信息确认书。",
+      "normalized_value": "准备劳动人事争议调解仲裁文书送达信息确认书。",
+      "collected_at": "2026-11-08T13:05:47.601454+00:00",
+      "verified_at": "2026-11-08T13:05:50.851844+00:00",
+      "verification_status": "verified",
+      "instructions": "准备劳动人事争议调解仲裁文书送达信息确认书。",
+      "required": "邮寄正式材料"
+    }
+  ],
+  "channel": {
+    "raw_value": "邮件预申请，预审通过后邮寄或现场提交",
+    "form": "pre_application_by_email",
+    "online_status": "unverified",
+    "entry_url": null,
+    "submission_verified": false
+  },
+  "warnings": [
+    "本指南仅列宝鸡市本级。区县管辖及材料请向当地仲裁机构核对。",
+    "本地只提供证据目录填写。仲裁申请书为官方标注的样本，空白申请书仍待核验。",
+    "证据目录下载后由提交人签字或盖章，并按目录顺序附证据材料复印件。"
+  ],
+  "templates": [
+    {
+      "id": "baoji-municipal-evidence",
+      "region_code": "610300",
+      "official_kind": "blank",
+      "source_url": "https://rsj.baoji.gov.cn/col9976/col1293/202305/P020260415349549146352.docx",
+      "official_sha256": "c0e338dd185734f12b86649992d0ca891cad246bf6a8e85beae58f9ef294e3f9",
+      "official_bytes": 13960,
+      "file": "templates/_docx/_regional/shaanxi/baoji-municipal-evidence.docx",
+      "file_type": "docx",
+      "file_origin": "official-blank-metadata-sanitized-layout",
+      "original_name": "宝鸡市证据目录（填写版空白表格）.docx",
+      "download_status": "downloaded",
+      "sha256": "fd28374f4c2a6b6cf777df3bde5f890596bb7370b349c685a821fc0dc525695e",
+      "document_types": [
+        "evidence"
+      ],
+      "can_generate": false
+    },
+    {
+      "id": "baoji-municipal-application-sample",
+      "region_code": "610300",
+      "official_kind": "sample",
+      "source_url": "https://rsj.baoji.gov.cn/col9976/col1293/202305/P020260415349548941089.docx",
+      "official_sha256": "8eff2eb5e8f03fa063034b0b6d668afe6f37ab846a16ff429e2a3d5bb6eb4da7",
+      "official_bytes": 18325,
+      "original_name": "劳动（人事）争议仲裁申请书（样本）.docx",
+      "file_type": "docx",
+      "download_status": "official_link_only",
+      "document_types": [],
+      "can_generate": false
+    }
+  ],
+  "supporting_sources": {
+    "申请资料清单": "https://rsj.baoji.gov.cn/col9976/col1293/202305/P020260415349548869062.docx",
+    "邮件预申请说明": "https://rsj.baoji.gov.cn/col9976/col1293/202310/t20231013_658866.html",
+    "管辖问答": "https://rsj.baoji.gov.cn/col1267/col1270/202402/t20240222_871183.html"
+  }
+}
