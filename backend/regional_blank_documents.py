@@ -129,6 +129,11 @@ LOCAL_PROOFS = {
  '320404':('changzhou-zhonglou-own-source','district','7cac02ad4712e8e9ddef30ab2043252b6b34cff3b87b0b1b68d037b3aea41fd3','e30b6f1fdd7edfe9cb2240459812dcedcb6a97be0a158ff67852d7a5bdd4eb6b'),
  '320481':('changzhou-liyang-own-source','district','0710f7c51f82d90bc43b3710877be697297bed825b5ed7eb668f9c49aca4afa3','b478cb6c0c814976888e955015d2425d0d0ef99db11cfbb957ff93d631525bb2'),
  '320413':('changzhou-jintan-own-source','district','c91910ee04ad83fdbb0c99303946b98cbb5f167735cc66d236f50babad60f79e','a3804539b86e0159b0d0d044c08e5cc8a908c1bd3e70b537fd937781ac2f35bb'),
+ '320206':('wuxi-huishan-own-source','district','477006a6945e16e60af6f427703c1120c351aea93e5f2ae17948ed14403f7e0e','015c9b216207bf991cdeadef0185a1e3cf317c52728cbc2f07c5d7c9a6608222'),
+ '320211':('wuxi-binhu-own-source','district','f2097db873c288951f26ef8b1344b0cb7b9ea92e1a222629b3504c3b0856ff22','69c635f88c06395e3e0a9aa19bdcf841407a1d9fd652e75c893f83039fb7a9fc'),
+ '320213':('wuxi-liangxi-own-source','district','99252fdc0c19337ca951da479b217407d3e1c4b95f87021106c8cc77d8d3d90c','31fa5a6699e80e6211e8af4af90b854770c324ac5005e8f6e089564084116bae'),
+ '320214':('wuxi-xinwu-own-source','district','05b5dbc75ee3c33f896046a9ab1205b30122a1c56314f8ec828886cbc998b6ff','745dcb371dd90be2c84dfdef73c31d284815f1659ad47563b6638a7d473d6668'),
+ '320292':('wuxi-edz-own-source','functional_area','d547975bfa08f5dc16667910f2984b876b81d6e56ad8c2190cc669e522e53508','5386a7e17da9e0e2f25808ed2df8f5c46486fc2a54fdb39a0b86a92c9d8475b4'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -420,6 +425,21 @@ EXACT_SOURCES={
  '320413':('常州市','金坛区','73ccdcd47f33754e4fba164c',{
     '7c921ce6-43ed-43fe-8c02-ee584dfece7a':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
     'a5296113-81cb-438b-86f2-9e85761a39da':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320206':('无锡市','惠山区','54e5e7c2742c7957c8ffeaab',{
+    'c82fa538-5ffb-4673-a362-91175e049d12':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '3afc1297-9e14-49d6-b2fb-2bfac66346d1':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320211':('无锡市','滨湖区','197d3d1aaeca692cce9d43de',{
+    '6bfe76e1-90d8-4009-b6e1-df4d0491997a':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '92d30519-96ad-4a39-a3c4-6c8a87c19f40':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320213':('无锡市','梁溪区','9eadb99cc598993e8e9bc93b',{
+    '9c46cc60-ede3-4d34-b818-17c6c2f7cfc0':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    'cfebf172-bb48-497b-a994-6b78643f6d44':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320214':('无锡市','新吴区','e17ee662008caa98a507f07c',{
+    '94e2383c-b816-4a53-a2a2-b72800d97afd':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '5ca17072-fad9-4e42-ac9d-b4d3e3691673':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
+ '320292':('无锡市','经济开发区','8b7685fe81e6e7e82758b218',{
+    'c01bf318-d976-4d60-89a0-b0e87945c6b0':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+    '95774b46-0f4e-4b96-b0a5-1c0c841bc57a':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c')}),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -502,6 +522,11 @@ EXACT_IDENTITIES={
  '320404':('常州市钟楼区人力资源和社会保障局','11320404014119504M400201430200201'),
  '320481':('常州市溧阳市人力资源和社会保障局','123204814674542847400201430200201'),
  '320413':('常州市金坛区人力资源和社会保障局','11320482014138916T400201430200201'),
+ '320206':('无锡市惠山区人力资源和社会保障局','113202060140358023400201430200201'),
+ '320211':('无锡市滨湖区人力资源和社会保障局','113202120140289874400201430200201'),
+ '320213':('无锡市梁溪区人力资源和社会保障局','11320213MB046223X2400201430200201'),
+ '320214':('无锡国家高新技术产业开发区（无锡市新吴区）人力资源和社会保障局','11320214MB0376841Y400201430200201'),
+ '320292':('江苏无锡经济开发区社会事业局','11320200MB1911084Q400201430200201'),
 }
 
 

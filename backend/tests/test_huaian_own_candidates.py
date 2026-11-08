@@ -140,6 +140,16 @@ AREAS = {
                '265ec962-29f4-4cd7-80af-728e7d339a2b', '6ece6338-906f-420d-b401-db0082a6001e'),
     '320413': ('常州市', '金坛区', 'changzhou-jintan', '73ccdcd47f33754e4fba164c', '320482',
                '7c921ce6-43ed-43fe-8c02-ee584dfece7a', 'a5296113-81cb-438b-86f2-9e85761a39da'),
+    '320206': ('无锡市', '惠山区', 'wuxi-huishan', '54e5e7c2742c7957c8ffeaab', '320206',
+               'c82fa538-5ffb-4673-a362-91175e049d12', '3afc1297-9e14-49d6-b2fb-2bfac66346d1'),
+    '320211': ('无锡市', '滨湖区', 'wuxi-binhu', '197d3d1aaeca692cce9d43de', '320211',
+               '6bfe76e1-90d8-4009-b6e1-df4d0491997a', '92d30519-96ad-4a39-a3c4-6c8a87c19f40'),
+    '320213': ('无锡市', '梁溪区', 'wuxi-liangxi', '9eadb99cc598993e8e9bc93b', '320213',
+               '9c46cc60-ede3-4d34-b818-17c6c2f7cfc0', 'cfebf172-bb48-497b-a994-6b78643f6d44'),
+    '320214': ('无锡市', '新吴区', 'wuxi-xinwu', 'e17ee662008caa98a507f07c', '320214',
+               '94e2383c-b816-4a53-a2a2-b72800d97afd', '5ca17072-fad9-4e42-ac9d-b4d3e3691673'),
+    '320292': ('无锡市', '经济开发区', 'wuxi-edz', '8b7685fe81e6e7e82758b218', '320292',
+               'c01bf318-d976-4d60-89a0-b0e87945c6b0', '95774b46-0f4e-4b96-b0a5-1c0c841bc57a'),
 }
 
 
@@ -175,7 +185,7 @@ class HuaianOwnCandidatesTests(TestCase):
         with TemporaryDirectory(prefix='jiangsu-own-candidates-') as tmp:
             store = RegionalStore(Path(tmp) / 'guides.sqlite')
             directory = DirectoryStore(Path(tmp) / 'directory.sqlite')
-            for city_code in ('320700', '320800', '320300', '320900', '321300', '321000', '320600', '321100', '321200', '320400'):
+            for city_code in ('320700', '320800', '320300', '320900', '321300', '321000', '320600', '321100', '321200', '320400', '320200'):
                 directory.put_area(next(r for r in rows if r['code'] == city_code and r['level'] == 3))
                 store.put_guide(forms.staged_jiangsu_municipal(ROOT, city_code))
             directory.put_area(next(r for r in rows if r['code'] == '320685' and r['city'] == '南通市'
