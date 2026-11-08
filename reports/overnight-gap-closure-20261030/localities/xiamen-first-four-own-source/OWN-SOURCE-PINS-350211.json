@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "5c2688657a77119961fe0f77c5a4875cd060410e986198fc894a6edb6ab2264e",
+  "regions": {
+    "350211": {
+      "region_code": "350211",
+      "district": "集美区",
+      "directory_city": "厦门市",
+      "source_id": "6f719c328875cd3cd16646ff",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=6304ED599C2127DD209645B1BE992104",
+      "service_unid": "6304ED599C2127DD209645B1BE992104",
+      "service_code": "11350211K190493440400201430200201",
+      "authority": "厦门市集美区人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "752f2cdb03e972f0eacc2eac96052fc79fb7914d7b28263887e7fcd0338834be"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

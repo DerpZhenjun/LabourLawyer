@@ -1,0 +1,76 @@
+{
+  "msg": null,
+  "total": null,
+  "code": 200,
+  "data": {
+    "tableList": [
+      {
+        "unid": "BF13A2C485BAE1466DB0A518C9263915",
+        "createtime": "2024-05-15 09:46:24",
+        "code": null,
+        "punid": "35A610AAFF9822559293CB8704444E0B",
+        "fileunid": "CC300F5D9DD5DC404D65C68116D50C55",
+        "name": "证据清单（空白）.docx",
+        "memo": null,
+        "type": "1",
+        "timestamp": "2024-08-21 17:53:50.001"
+      },
+      {
+        "unid": "DFC64C207CE65F72492AEA596330E5A1",
+        "createtime": "2024-05-15 09:46:24",
+        "code": null,
+        "punid": "35A610AAFF9822559293CB8704444E0B",
+        "fileunid": "D266D62D3E51B38A3C568B47677C4B09",
+        "name": "证据清单（示例）.docx",
+        "memo": null,
+        "type": "2",
+        "timestamp": "2024-08-21 17:53:50.001"
+      },
+      {
+        "unid": "AF97997C8DB0F86FEAB72818C33D9D1F",
+        "createtime": "2024-05-15 09:46:26",
+        "code": null,
+        "punid": "4694295D428DDB8AD85BF70D274E33A0",
+        "fileunid": "7C3DBFA82D340B3C50F4DD45E14FE785",
+        "name": "证据材料（供参考）.docx",
+        "memo": null,
+        "type": "1",
+        "timestamp": "2024-08-21 17:53:50.001"
+      },
+      {
+        "unid": "7BFC78D4BD219188181B5A13B50AD730",
+        "createtime": "2024-05-15 09:46:26",
+        "code": null,
+        "punid": "4694295D428DDB8AD85BF70D274E33A0",
+        "fileunid": "6EFE86A941A038DC1ED88B911A7D5621",
+        "name": "证据材料（供参考）.docx",
+        "memo": null,
+        "type": "2",
+        "timestamp": "2024-08-21 17:53:50.001"
+      },
+      {
+        "unid": "FE60E3B2BE4EEA344B11B2A7F9524947",
+        "createtime": "2022-03-04 15:46:39",
+        "code": null,
+        "punid": "F8BDEB3C306E9237D3AB4FB3270BE13E",
+        "fileunid": "F4048D8C91E2FF882AC6C62CC0EC4D86",
+        "name": "仲裁申请书.docx",
+        "memo": null,
+        "type": "1",
+        "timestamp": "2024-08-21 17:53:50.001"
+      },
+      {
+        "unid": "15FC9005A30B39B77623D9DBD6E962A1",
+        "createtime": "2022-03-04 15:46:40",
+        "code": null,
+        "punid": "F8BDEB3C306E9237D3AB4FB3270BE13E",
+        "fileunid": "98A0EE44D3D63B3D6A10FE60D4E83776",
+        "name": "仲裁申请书示例.docx",
+        "memo": null,
+        "type": "2",
+        "timestamp": "2024-08-21 17:53:50.001"
+      }
+    ],
+    "paddingList": []
+  }
+}

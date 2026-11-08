@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "8d9dfce6ee50d887bfd180337af665480b78ec0a41ada36cdf3e2112919864d7",
+  "regions": {
+    "350203": {
+      "region_code": "350203",
+      "district": "思明区",
+      "directory_city": "厦门市",
+      "source_id": "344a290c8ef651a27389ed99",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=D37A89C155816DC8957F10BE14D321A5",
+      "service_unid": "D37A89C155816DC8957F10BE14D321A5",
+      "service_code": "12350203426608443B400201430200201",
+      "authority": "厦门市思明区人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "a38b0e084d3bdd4164b811c406af8866312256c2eb4aa4731618090f98efbb8a"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

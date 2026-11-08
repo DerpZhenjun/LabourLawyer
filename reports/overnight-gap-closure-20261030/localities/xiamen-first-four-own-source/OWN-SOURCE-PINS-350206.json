@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "25ac327bbe9f3eaae6fd01c10735c0687559ea30462d1ae4a749ae145c89dc35",
+  "regions": {
+    "350206": {
+      "region_code": "350206",
+      "district": "湖里区",
+      "directory_city": "厦门市",
+      "source_id": "72f29a0f432cbb59fe6e1eb3",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=194C7FF55A75D1D1B5C8E9149C319981",
+      "service_unid": "194C7FF55A75D1D1B5C8E9149C319981",
+      "service_code": "11350206004161266T400201430200201",
+      "authority": "厦门市湖里区人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "410d2985e0d923b65ec362a8856df41f6a1d71b9050b71e1c2b87b95601c2955"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
