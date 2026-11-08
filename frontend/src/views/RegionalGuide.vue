@@ -58,7 +58,25 @@
         <p v-if="!guide.materials.length" class="region-notice">材料清单尚未核验，不显示确定的当地要求。</p>
       </section>
       <section class="region-panel" id="regional-documents"><span class="ll-eyebrow">03 · 文书与下载</span><h2>看清来源，再填写</h2><p>“空白表格”和“示例样表”不是一回事。请核对文件来源与适用范围，辅助填写不保证受理。</p>
-        <div class="regional-template" v-for="t in guide.templates" :key="t.id"><i class="fa-regular fa-file-lines" aria-hidden="true"></i><div><h3>{{ t.original_name }}</h3><p>{{ t.file_origin==='official-blank-converted-layout'?('官方 '+(t.original_format==='WPS'?'WPS':'DOC')+' 的空白转换版'):t.official_kind==='blank'?'官方空白表格':t.official_kind==='sample'?'官方示例样表（不是空白模板）':'附件类型待核实' }}</p><details><summary>来源与文件校验</summary><p>适用地区编码：{{ t.region_code }}</p><p class="file-hash">SHA256：{{ t.sha256 || '未下载，待核验' }}</p><p v-if="t.official_sha256" class="file-hash">官方原件 SHA256：{{ t.official_sha256 }}</p><a :href="t.source_url" target="_blank" rel="noopener noreferrer">{{ t.file_origin==='official-blank-converted-layout'?('下载官网 '+(t.original_format==='WPS'?'WPS':'DOC')+' 原件'):'官方材料栏目' }} ↗</a></details></div><a v-if="t.download_status==='downloaded'" class="ll-button secondary" :href="originalTemplateLink(t.id)">{{ t.file_origin==='official-blank-converted-layout'?'下载空白转换版':'下载原文件' }}</a><span v-else>下载待核验</span></div>
+        <div v-for="t in guide.templates" :key="t.id" class="regional-template">
+          <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+          <div>
+            <h3>{{ t.original_name }}</h3>
+            <p v-if="t.file_origin==='official-blank-converted-layout'">官方 {{ t.original_format==='WPS'?'WPS':'DOC' }} 的空白转换版</p>
+            <p v-else-if="t.file_origin==='official-blank-metadata-sanitized-layout'">依据官方空白原件制作的填写版，版式保留</p>
+            <p v-else>{{ t.official_kind==='blank'?'官方空白表格':t.official_kind==='sample'?'官方示例样表（不是空白模板）':'附件类型待核实' }}</p>
+            <details>
+              <summary>来源与文件校验</summary>
+              <p>适用地区编码：{{ t.region_code }}</p>
+              <p v-if="t.sha256 || !t.official_sha256" class="file-hash">SHA256：{{ t.sha256 || '未下载，待核验' }}</p>
+              <p v-if="t.official_sha256" class="file-hash">官方原件 SHA256：{{ t.official_sha256 }}</p>
+              <a :href="t.source_url" target="_blank" rel="noopener noreferrer">{{ t.file_origin==='official-blank-converted-layout'?('下载官网 '+(t.original_format==='WPS'?'WPS':'DOC')+' 原件'):t.file_origin==='official-blank-metadata-sanitized-layout'?'下载官网 DOCX 原件':'官方材料栏目' }} ↗</a>
+            </details>
+          </div>
+          <a v-if="t.download_status==='downloaded'" class="ll-button secondary" :href="originalTemplateLink(t.id)">{{ t.file_origin==='official-blank-converted-layout'?'下载空白转换版':t.file_origin==='official-blank-metadata-sanitized-layout'?'下载空白填写版':'下载原文件' }}</a>
+          <a v-else-if="t.download_status==='official_link_only'" class="ll-button secondary" :href="t.source_url" target="_blank" rel="noopener noreferrer">打开官方附件</a>
+          <span v-else>下载待核验</span>
+        </div>
         <div v-if="generatable" class="reference-fill"><h3>按{{ guide.district }}{{ blankGeneration?'官方空白表格':'参考样表' }}辅助填写</h3><p>{{ blankGeneration?'当前填写使用本地区官网提供、已核对的空白表格。':'官网将申请书附件列为示例样表。' }}页面上方可以直接填写；默认内容为本平台虚构示例，请替换为真实信息。签名位置留空，不自动提交申请。</p><div class="region-actions"><RouterLink v-if="hasGenerationKind(guide,'application')" :to="documentLink('application')" class="ll-button">填写申请书</RouterLink><RouterLink v-if="hasGenerationKind(guide,'evidence')" :to="documentLink('evidence')" class="ll-button secondary">填写证据清单</RouterLink></div></div>
         <p v-else class="region-notice">本地区附件尚未通过自动填写核验，{{ guide.templates.some(t=>t.download_status==='downloaded')?'可下载上方已核实的原文件参考。':'尚未核实可下载文件，请打开官方原文查询或向办理机构确认。' }}不会套用其他地区的文书。</p>
       </section>

@@ -20,6 +20,11 @@ from regional_luohu_collective import (
     ADAPTER as LUOHU_ADAPTER, MODELS as LUOHU_MODELS, LAYOUTS as LUOHU_LAYOUTS,
     checked_adapter as checked_luohu_adapter, fill_document as fill_luohu_document,
 )
+from regional_baoji_evidence import (
+    ADAPTER as BAOJI_EVIDENCE_ADAPTER, LAYOUT as BAOJI_LAYOUT, LAYOUT_ORIGIN as BAOJI_LAYOUT_ORIGIN,
+    BaojiEvidenceRequest, checked_adapter as checked_baoji_evidence_adapter,
+    exact_municipal as exact_baoji_municipal, fill_evidence as fill_baoji_evidence,
+)
 from regional_zhongshan_municipal import (
     ADAPTER as ZHONGSHAN_ADAPTER, CONVERTED_ORIGIN as ZHONGSHAN_CONVERTED_ORIGIN,
     LAYOUT as ZHONGSHAN_LAYOUT, ZhongshanApplicationRequest,
@@ -159,7 +164,8 @@ def areas(province: str=Query(max_length=30),city: str=Query(default='',max_leng
         fujian_exact = profile and (profile['city'], profile['source_id'], profile['source_manifest_sha256']) == (
             city, municipal.get('source_id'), municipal.get('source_version'),
         )
-        if fujian_exact or is_jiangsu_municipal_candidate(municipal) or exact_zhongshan_municipal(municipal):
+        if (fujian_exact or is_jiangsu_municipal_candidate(municipal)
+                or exact_zhongshan_municipal(municipal) or exact_baoji_municipal(municipal)):
             city_row = next((
                 row for row in directory.areas(province) if row['city'] == city and row['level'] == 3
                 and row['code'] == code and not row['district']
@@ -313,7 +319,7 @@ def download(template_id: str,province: str=Query(max_length=30),city: str=Query
         if source_id is None or version is None or source_id!=g.get('source_id') or type(version) is not int or version!=g.get('version'):
             raise HTTPException(409,'办理地区或来源版本已改变，请重新查看指南')
     t=next((t for t in g['templates'] if t.get('id')==template_id),None)
-    if not t or t.get('case_scope') != case_scope:
+    if not t or t.get('case_scope') != case_scope or t.get('download_status') == 'official_link_only':
         raise HTTPException(404,'未找到该地区与案件类型的官方附件')
     if 'region_code' not in t:
         from regional_public_provenance import public_evidence,approved_report_attachment
@@ -327,9 +333,13 @@ def download(template_id: str,province: str=Query(max_length=30),city: str=Query
         t.get('file') == path for path, _ in LUOHU_LAYOUTS.values())
     converted = (luohu_layout or t.get('adapter') == ZHONGSHAN_ADAPTER
                  or t.get('file_origin') == ZHONGSHAN_CONVERTED_ORIGIN or t.get('file') == ZHONGSHAN_LAYOUT.as_posix())
-    if converted:
+    baoji_layout = (t.get('adapter') == BAOJI_EVIDENCE_ADAPTER or t.get('file') == BAOJI_LAYOUT.as_posix()
+                    or t.get('file_origin') == BAOJI_LAYOUT_ORIGIN)
+    if converted or baoji_layout:
         try:
-            if luohu_layout:
+            if baoji_layout:
+                checked_baoji_evidence_adapter(g, t, 'evidence', root=ROOT)
+            elif luohu_layout:
                 kinds = t.get('document_types', [])
                 kind = kinds[0] if len(kinds) == 1 else None
                 checked_luohu_adapter(g, t, kind, root=ROOT)
@@ -340,7 +350,9 @@ def download(template_id: str,province: str=Query(max_length=30),city: str=Query
     path = checked_path(t,g)
     headers = {'Cache-Control':'no-store', 'X-Guide-Source-ID':g.get('source_id',''),
                'X-Guide-Version':str(g.get('version','')), 'X-Template-SHA256':t['sha256']}
-    if converted:
+    if baoji_layout:
+        headers['X-Document-Origin'] = BAOJI_LAYOUT_ORIGIN
+    elif converted:
         headers['X-Document-Origin'] = ZHONGSHAN_CONVERTED_ORIGIN
     return FileResponse(path,filename=t['original_name'],headers=headers)
 
@@ -617,6 +629,8 @@ def generation_request_model(adapter,kind):
         return LUOHU_MODELS[kind]
     if adapter == ZHONGSHAN_ADAPTER and kind == 'application':
         return ZhongshanApplicationRequest
+    if adapter == BAOJI_EVIDENCE_ADAPTER and kind == 'evidence':
+        return BaojiEvidenceRequest
     if adapter == XIANGAN_EVIDENCE_ADAPTER and kind == 'evidence':
         return XianganEvidenceRequest
     model=(BlankApplicationRequest if adapter in {BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER} else ApplicationRequest) if kind=='application' else EvidenceRequest
@@ -663,7 +677,7 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
             g, province=payload.province, city=payload.city, district=payload.district,
             source_id=payload.source_id, version=payload.version)
         t = select_regional_template(g, payload.template_id, payload.kind, mode=payload.mode, case_scope=payload.case_scope)
-        if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER} and payload.contract_id is None:
+        if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER, BAOJI_EVIDENCE_ADAPTER} and payload.contract_id is None:
             raise RegionalValidationError(409, '请重新打开当前地区的填写表单后生成')
         adapter, data, validated_contract_id = validate_generation_request(
             g, t, payload.kind, payload.data, payload.contract_id, root=ROOT,
@@ -672,12 +686,14 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
     except RegionalValidationError as exc:
         raise HTTPException(exc.status_code, str(exc)) from exc
     blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER,JIANGSU_F_ADAPTER,JIANGSU_G_ADAPTER,FUJIAN_H_ADAPTER,FUJIAN_I_ADAPTER,FUJIAN_J_ADAPTER,FUJIAN_K_ADAPTER,PINGTAN_ADAPTER,PUTIAN_ADAPTER,PUTIAN_N_ADAPTER,FUJIAN_O_ADAPTER,FUJIAN_P_ADAPTER,HQ_ADAPTER}
-    blank_adapters.add(QZ_ADAPTER)
+    blank_adapters.update({QZ_ADAPTER, BAOJI_EVIDENCE_ADAPTER})
     converted_adapters = {RONGJIANG_ADAPTER, HUNAN_ADAPTER, HUNAN_C_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER}
     if adapter in blank_adapters | converted_adapters and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
     try:
         if adapter == LUOHU_ADAPTER:
             doc=fill_luohu_document(payload.kind,checked_path(t,g),data.model_dump())
+        elif adapter == BAOJI_EVIDENCE_ADAPTER:
+            doc=fill_baoji_evidence(checked_path(t, g).read_bytes(), data.model_dump())
         elif adapter == ZHONGSHAN_ADAPTER:
             doc=fill_zhongshan_application(checked_path(t,g), data.model_dump())
         elif adapter in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER}:

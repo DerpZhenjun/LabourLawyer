@@ -88,7 +88,8 @@ const isHunan=computed(()=>special.value==='hunan'),isFeidong=computed(()=>speci
 const isBlank=computed(()=>contract.value?.context.mode==='blank')
 const isConverted=computed(()=>isHunan.value||template.value?.file_origin==='official-blank-converted-layout')
 const convertedFormat=computed(()=>template.value?.original_format==='WPS'?'WPS':'DOC')
-const sourceDescription=computed(()=>isConverted.value?`${region.value.case_scope?'仅用于本区集体案。':''}将依据本区官方 ${convertedFormat.value} 空白表的平台转换副本填写。下载结果为 DOCX。`:isBlank.value?`将根据${contract.value?.context.district||''}官网提供的空白表格辅助填写。`:`将根据${contract.value?.context.district||''}官方参考样表辅助填写。它不是官方空白模板。`)
+const isMetadataSanitized=computed(()=>template.value?.file_origin==='official-blank-metadata-sanitized-layout')
+const sourceDescription=computed(()=>isMetadataSanitized.value?'将依据本市官方空白表格的填写版生成。原件可从当地指南的官方附件链接下载。':isConverted.value?`${region.value.case_scope?'仅用于本区集体案。':''}将依据本区官方 ${convertedFormat.value} 空白表的平台转换副本填写。下载结果为 DOCX。`:isBlank.value?`将根据${contract.value?.context.district||''}官网提供的空白表格辅助填写。`:`将根据${contract.value?.context.district||''}官方参考样表辅助填写。它不是官方空白模板。`)
 const dialog=ref<HTMLElement|null>(null),dialogId=`regional-confirm-${useId()}`
 useDialogFocus(()=>confirmOpen.value,dialog,cancelConfirmation)
 </script>

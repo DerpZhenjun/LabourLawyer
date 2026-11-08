@@ -1,0 +1,43 @@
+{
+  "status": "local_candidate_pass",
+  "published": false,
+  "scope": {
+    "province": "shaanxi",
+    "city": "宝鸡市",
+    "district": "市本级",
+    "region_code": "610300",
+    "document_kind": "evidence"
+  },
+  "source_id": "1695d2d6a7c0865b97a9688c",
+  "guide_sha256": "81aef3858a9bc0925c7095c2438f7064b3960c8daeedbf07a63b746e2f513850",
+  "browser": {
+    "engine": "Chrome",
+    "viewports": [
+      375,
+      768,
+      1440
+    ],
+    "cancelled_without_request": 1,
+    "downloads": 2,
+    "city_explicitly_selected": true,
+    "application_sample_generation": false,
+    "neighbor_inheritance": false,
+    "page_errors": 0,
+    "external_requests": 0,
+    "receipt_sha256": "ff10c6ccf402eb0a9ced2146c984bbc72db6e8c58301d90ff92f389aff802364"
+  },
+  "word": {
+    "generated_download_sha256": "ee22ee8c8620c5960c480124418c9a64639d6489b35966552370ca892c53669d",
+    "render_page_sha256": "89d0f54e01534906bbbe5a2f4fd53ddc7ff62423ee06c5c45a135c03c3fb7f9b",
+    "pages": 1,
+    "signature_manual": true
+  },
+  "checks": {
+    "backend_targeted": 23,
+    "backend_compatibility_total": 66,
+    "backend_compatibility_skipped": 1,
+    "web_build": true,
+    "mini_program_tests": true,
+    "mini_program_device_review": false
+  }
+}
