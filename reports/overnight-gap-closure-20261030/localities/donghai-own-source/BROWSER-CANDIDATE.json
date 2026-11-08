@@ -1,0 +1,49 @@
+{
+  "state": "PASS",
+  "source_id": "2e7e7fa46c45730b32762bea",
+  "viewports": [
+    [
+      "application",
+      375
+    ],
+    [
+      "application",
+      768
+    ],
+    [
+      "application",
+      1440
+    ],
+    [
+      "evidence",
+      375
+    ],
+    [
+      "evidence",
+      768
+    ],
+    [
+      "evidence",
+      1440
+    ]
+  ],
+  "cancels": 2,
+  "downloads": [
+    {
+      "kind": "application",
+      "template_id": "fcfd5b3f-0595-4b98-bda3-bdfaf0ea0c57",
+      "original_sha256": "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "filled_sha256": "03c0c0386276d1358b6040379dd17ba1ea90b333ec0930b812c426bf147679bf",
+      "bytes": 12702
+    },
+    {
+      "kind": "evidence",
+      "template_id": "c1aea292-44c1-4c7b-8eb6-8d4e415eda96",
+      "original_sha256": "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c",
+      "filled_sha256": "90a48e56399cf1175098572bc69382912739de4ef602e8539b5effede15240fe",
+      "bytes": 11474
+    }
+  ],
+  "errors": [],
+  "blocked": []
+}

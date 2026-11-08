@@ -17,14 +17,27 @@ from regional_guides import RegionalStore
 from routes import regional_guides as routes
 
 ROOT = Path(__file__).resolve().parents[2]
-CITY = {'province': 'jiangsu', 'city': '淮安市'}
 AREAS = {
-    '320804': ('淮阴区', 'huaiyin', 'af10b6358a0cea5389de88b7', '320804',
+    '320804': ('淮安市', '淮阴区', 'huaiyin', 'af10b6358a0cea5389de88b7', '320804',
                'eca65f46-5178-4c29-a6f5-cea523aa5595', '857d0650-f222-465d-9687-54459d9e3bb0'),
-    '320813': ('洪泽区', 'hongze', '353f307d6c7fc7e41924a8cf', '320829',
+    '320813': ('淮安市', '洪泽区', 'hongze', '353f307d6c7fc7e41924a8cf', '320829',
                'db154c19-9478-4644-9120-2a9bf727c70b', '70b69cb8-9011-464c-b31c-15bc6339e391'),
-    '320871': ('经济开发区', 'huaian-edz', 'd80293457ba981b81997c7f9', '320871',
+    '320871': ('淮安市', '经济开发区', 'huaian-edz', 'd80293457ba981b81997c7f9', '320871',
                'e3661b6a-1991-4fa4-9471-4f5975d7586a', '2d24580f-7c60-4ac0-880d-fc3437ba71be'),
+    '320830': ('淮安市', '盱眙县', 'xuyi', '70ab0102a5469dbbfa060551', '320830',
+               '393e1c03-9727-4099-a8b9-0948596ec8e5', '342980c8-2a11-4917-9124-d02f0bd28e60'),
+    '320703': ('连云港市', '连云区', 'lianyun', '43affed1b2f460165b7d11d0', '320703',
+               'd00271ab-a748-47c3-84d4-172f3c9ba531', 'c56e13df-1ad6-403b-997d-a80c51a1e8dd'),
+    '320707': ('连云港市', '赣榆区', 'ganyu', '2846cc27d49c263550444626', '320707',
+               'c6b17cfe-c40b-4f0b-be2b-9319b0448042', '7c4cb9c1-016c-478d-ad15-828edecc8d60'),
+    '320722': ('连云港市', '东海县', 'donghai', '2e7e7fa46c45730b32762bea', '320722',
+               'fcfd5b3f-0595-4b98-bda3-bdfaf0ea0c57', 'c1aea292-44c1-4c7b-8eb6-8d4e415eda96'),
+    '320723': ('连云港市', '灌云县', 'guanyun', 'b329533cd5ca25e92a69f081', '320723',
+               'a49c5d14-2f99-4594-a68e-af0c524813ec', '8b9768fb-77c5-41e2-9a3b-0a0566596ee7'),
+    '320724': ('连云港市', '灌南县', 'guannan', '89ac4e45ae810866811cf20e', '320724',
+               '526eb9d5-f756-4c3d-a2d5-50abcff3dc2b', 'c62b7731-21df-43cf-883a-907d1fa3ac68'),
+    '320771': ('连云港市', '经济开发区', 'lianyungang-edz', '358a2d7a25da49bd5e51dea0', '320771',
+               '27a93b11-b2d2-4668-a1d3-6d43903bb787', 'a457b10c-74fe-4d3c-ae83-f3dedcc419f1'),
 }
 
 
@@ -44,13 +57,14 @@ class HuaianOwnCandidatesTests(TestCase):
 
     def test_exact_local_originals_contracts_and_downloads(self):
         rows = json.loads((ROOT / 'data/public-regions/directory.json').read_bytes())
-        with TemporaryDirectory(prefix='huaian-own-candidates-') as tmp:
+        with TemporaryDirectory(prefix='jiangsu-own-candidates-') as tmp:
             store = RegionalStore(Path(tmp) / 'guides.sqlite')
             directory = DirectoryStore(Path(tmp) / 'directory.sqlite')
-            directory.put_area(next(r for r in rows if r['code'] == '320800' and r['level'] == 3))
-            store.put_guide(forms.staged_jiangsu_municipal(ROOT, '320800'))
-            for code, (district, slug, source, provider, app_id, evidence_id) in AREAS.items():
-                directory.put_area(next(r for r in rows if r['code'] == provider and r['district'] == district))
+            for city_code in ('320700', '320800'):
+                directory.put_area(next(r for r in rows if r['code'] == city_code and r['level'] == 3))
+                store.put_guide(forms.staged_jiangsu_municipal(ROOT, city_code))
+            for code, (city, district, slug, source, provider, app_id, evidence_id) in AREAS.items():
+                directory.put_area(next(r for r in rows if r['code'] == provider and r['city'] == city and r['district'] == district))
                 base = ROOT / f'reports/overnight-gap-closure-20261030/localities/{slug}-own-source'
                 only_source = json.loads((base / 'GUIDE.json').read_bytes())
                 app_original = next(t for t in only_source['templates'] if t['id'] == app_id)
@@ -65,12 +79,13 @@ class HuaianOwnCandidatesTests(TestCase):
             app.include_router(routes.router, prefix='/regional')
             with patch.object(routes, 'ROOT', ROOT), patch.object(routes, 'store', return_value=store), \
                     patch.object(routes, 'directory_store', return_value=directory), TestClient(app) as client:
-                options = client.get('/regional/areas', params=CITY).json()['items']
-                for code, (district, _, source, _, app_id, evidence_id) in AREAS.items():
-                    with self.subTest(district=district):
+                for code, (city, district, _, source, _, app_id, evidence_id) in AREAS.items():
+                    with self.subTest(city=city, district=district):
+                        area = {'province': 'jiangsu', 'city': city}
+                        options = client.get('/regional/areas', params=area).json()['items']
                         option, = (row for row in options if row['district'] == district)
                         self.assertEqual((option['code'], option['source_id']), (code, source))
-                        scope = {**CITY, 'district': district}
+                        scope = {**area, 'district': district}
                         guide = client.get('/regional/lookup', params=scope).json()
                         for kind, annex in (('application', app_id), ('evidence', evidence_id)):
                             q = {**scope, 'source_id': source, 'version': guide['version'],
@@ -101,3 +116,6 @@ class HuaianOwnCandidatesTests(TestCase):
                             for wrong in ('市本级', '清江浦区', ''):
                                 mismatch = client.post('/regional/generate', json={**payload, 'district': wrong})
                                 self.assertEqual(mismatch.status_code, 409)
+                            wrong_city = '淮安市' if city == '连云港市' else '连云港市'
+                            mismatch = client.post('/regional/generate', json={**payload, 'city': wrong_city})
+                            self.assertEqual(mismatch.status_code, 409)

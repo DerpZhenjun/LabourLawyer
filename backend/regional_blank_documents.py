@@ -57,6 +57,27 @@ LOCAL_PROOFS = {
     '320871': ('huaian-edz-own-source', 'functional_area',
                '31b435d609df5f165af1634d49ffce0ec3f696e3cd53ed95cc420e55c6c3d41b',
                'a4493c0b9bb324d6c4b3853f530b17db2c7b53f0f8c336fa381df4f1eed5353c'),
+    '320830': ('xuyi-own-source', 'district',
+               '0918b875b8211fc3f7e92a36c2170cdae882f678ba5730fc5a00097c4a3dd301',
+               '4c9d10ebb08fd5bacb2963f6bde848079ee755e3ecc00f1c02fc3c4fbae5e045'),
+    '320703': ('lianyun-own-source', 'district',
+               '8819c78c080bb064738668713f9fa2a65d271860805f60962d10ea88817bf407',
+               '57eb37e846d4d4aaa49c052375c5a7b5395e4a4dc1d726cb86b00de9d83c10c8'),
+    '320707': ('ganyu-own-source', 'district',
+               'aa378e113054959f50d95c03247eb2dce6fea50b2fcb288c14759fa758195934',
+               '19126e19db41e830579cfd2de489789baff3e2561181563ff8c10dbd4edef9c0'),
+    '320722': ('donghai-own-source', 'district',
+               'db89b589a40e5d5497b83e8103241dfc98391262cc6ca3b8e7c92f6dd0cf9154',
+               'a542bb79ae03be5bc3379d7495d8878688429fda643d23a902f1dc3cbea49796'),
+    '320723': ('guanyun-own-source', 'district',
+               '58c75c7289d4a4e19c37b4ddaba5c90291a5937b69ac2dbd0c32bd4d79d46074',
+               'bd1845bb8a8e6cf344de5d9010d1440bb797b37aba4d33cbceb0c3fd15f477be'),
+    '320724': ('guannan-own-source', 'district',
+               'f17e313271c0d463c2a7d85ad231ffe5b59e0d313b9d212b5474955e03c8bdf7',
+               '35a127004b35babd4508235a326a31672aa0e19f438023dbf05647234a562921'),
+    '320771': ('lianyungang-edz-own-source', 'functional_area',
+               '7e8d044475941112eb4632237f6051dbd5699081fc343b12c02ff4d9f067a70b',
+               '48a8281e697a71888373e5c6b2f24e99f22e3c270d8e5f6a7f90593cb3fde6d9'),
 }
 EXACT_SOURCES={
     LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
@@ -168,6 +189,34 @@ EXACT_SOURCES={
         'e3661b6a-1991-4fa4-9471-4f5975d7586a':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
         '2d24580f-7c60-4ac0-880d-fc3437ba71be':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
     }),
+    '320830':('淮安市','盱眙县','70ab0102a5469dbbfa060551',{
+        '393e1c03-9727-4099-a8b9-0948596ec8e5':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        '342980c8-2a11-4917-9124-d02f0bd28e60':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
+    '320703':('连云港市','连云区','43affed1b2f460165b7d11d0',{
+        'd00271ab-a748-47c3-84d4-172f3c9ba531':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        'c56e13df-1ad6-403b-997d-a80c51a1e8dd':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
+    '320707':('连云港市','赣榆区','2846cc27d49c263550444626',{
+        'c6b17cfe-c40b-4f0b-be2b-9319b0448042':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        '7c4cb9c1-016c-478d-ad15-828edecc8d60':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
+    '320722':('连云港市','东海县','2e7e7fa46c45730b32762bea',{
+        'fcfd5b3f-0595-4b98-bda3-bdfaf0ea0c57':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        'c1aea292-44c1-4c7b-8eb6-8d4e415eda96':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
+    '320723':('连云港市','灌云县','b329533cd5ca25e92a69f081',{
+        'a49c5d14-2f99-4594-a68e-af0c524813ec':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        '8b9768fb-77c5-41e2-9a3b-0a0566596ee7':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
+    '320724':('连云港市','灌南县','89ac4e45ae810866811cf20e',{
+        '526eb9d5-f756-4c3d-a2d5-50abcff3dc2b':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        'c62b7731-21df-43cf-883a-907d1fa3ac68':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
+    '320771':('连云港市','经济开发区','358a2d7a25da49bd5e51dea0',{
+        '27a93b11-b2d2-4668-a1d3-6d43903bb787':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        'a457b10c-74fe-4d3c-ae83-f3dedcc419f1':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
 }
 EXACT_IDENTITIES={
     LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
@@ -192,6 +241,13 @@ EXACT_IDENTITIES={
     '320804':('淮安市淮阴区人力资源和社会保障局','11320821014304750B400201430200201'),
     '320813':('淮安市洪泽区人力资源和社会保障局','11320829014341463H400201430200201'),
     '320871':('淮安经济技术开发区人力资源和社会保障局','11320800K12654517X400201430200201'),
+    '320830':('盱眙县人力资源和社会保障局','11320830014345835M400201430200201'),
+    '320703':('连云港连云区人力资源和社会保障局','113207030142582646400201430200201'),
+    '320707':('连云港市赣榆区人社局','11320707562978836D400201430200201'),
+    '320722':('东海县人力资源和社会保障局','11320722570382987L400201430200201'),
+    '320723':('连云港灌云县人社局','11320723014288930L400201430200201'),
+    '320724':('灌南县人力资源和社会保障局','113207240143092872400201430200201'),
+    '320771':('连云港经济技术开发区人力资源和社会保障局','11320708MB1A74924R400201430200201'),
 }
 
 
