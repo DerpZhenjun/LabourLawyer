@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "6f30d4641f4438527955969ce96aa12911e8346c9440d78fe527d35d75508587",
+  "regions": {
+    "350200": {
+      "region_code": "350200",
+      "district": "",
+      "directory_city": "厦门市",
+      "source_id": "a5caaf5ad3f5a6e27c0c3603",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=00C738768B79A0F3773E2100F8C96E2A",
+      "service_unid": "00C738768B79A0F3773E2100F8C96E2A",
+      "service_code": "11350200004139309F300201430200201",
+      "authority": "厦门市人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "scope_level": "municipal",
+      "official_area_name": "厦门市",
+      "source_manifest_sha256": "c1798b1a541fb46db1dea860764fb32af26227c68d690de22b8fe6d716f6b708"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
