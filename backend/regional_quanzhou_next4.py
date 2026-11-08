@@ -1,4 +1,4 @@
-"""Document adaptation for individually captured Quanzhou sources."""
+"""Document adaptation for individually captured Fujian sources using the reviewed layout."""
 from hashlib import sha256
 from pathlib import Path, PurePosixPath
 import stat
@@ -34,6 +34,11 @@ INVESTMENT_BASE = LOCALITIES + '/quanzhou-investment-zone-own-source'
 INVESTMENT_STAGE_RECEIPT = INVESTMENT_BASE + '/WORD-PREFLIGHT.json'
 INVESTMENT_STAGE_SHA256 = '60bd331d59be45e072b112a4c63785e98fd293b9e6aa962b8a3646b3c35b9990'
 INVESTMENT_SOURCE_FREEZE_SHA256 = '7b752522ecfe5ca30a4ea2a81f6f266777b1f94126b9c45ceea5808fc8fcbba3'
+XIANGCHENG_CODE = '350602'
+XIANGCHENG_BASE = LOCALITIES + '/zhangzhou-own-source'
+XIANGCHENG_STAGE_RECEIPT = XIANGCHENG_BASE + '/WORD-PREFLIGHT.json'
+XIANGCHENG_STAGE_SHA256 = '2031524a853e6c2c478478c8314e3d05650778eb340577844fe18030abc85f92'
+XIANGCHENG_SOURCE_FREEZE_SHA256 = '4c41d8d1717ffa7d34ba01d2ae7bf6757b169f1d48474d155121aac1a976f21a'
 REGIONS = {
     '350582': {
         'district': '晋江市', 'source_id': 'd8353a4bb91532863fb03802',
@@ -76,6 +81,11 @@ SUPPORTED_REGIONS = {
         'source_manifest_sha256': '297b56b936b8c43d5598c4fc115c26b881936d21fcd3da08722523ca74319fc2',
         'original_kinds': ('application', 'evidence'),
     },
+    XIANGCHENG_CODE: {
+        'district': '芗城区', 'source_id': 'f8e8351e86b1c41530f16dec',
+        'source_manifest_sha256': 'f00f84d5e6ed1a90e7d064760966c36735950d2e734c2fa6493db2186956ab41',
+        'original_kinds': ('application', 'evidence'),
+    },
 }
 _MODELS = {'application': Application, 'evidence': Evidence}
 _FAILURES = (ValueError, OSError, TypeError, KeyError)
@@ -103,6 +113,8 @@ def _read(root, name):
 
 def _source_folder(code):
     _require(type(code) is str and code in SUPPORTED_REGIONS)
+    if code == XIANGCHENG_CODE:
+        return f'{XIANGCHENG_BASE}/{code}'
     if code == INVESTMENT_CODE:
         return f'{INVESTMENT_BASE}/{code}'
     return f'{DY_BASE if code in DY_REGIONS else BASE}/{code}'
@@ -176,6 +188,11 @@ def _staged_guide(code, *, root):
         return _word_preflight_guide(
             guide, INVESTMENT_STAGE_RECEIPT, INVESTMENT_STAGE_SHA256,
             INVESTMENT_SOURCE_FREEZE_SHA256, 6, root=root,
+        )
+    if code == XIANGCHENG_CODE:
+        return _word_preflight_guide(
+            guide, XIANGCHENG_STAGE_RECEIPT, XIANGCHENG_STAGE_SHA256,
+            XIANGCHENG_SOURCE_FREEZE_SHA256, 6, root=root,
         )
     raw = _read(root, REVIEW_RECEIPT)
     _require(sha256(raw).hexdigest() == STAGE_SHA256)
