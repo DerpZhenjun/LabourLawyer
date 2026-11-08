@@ -1,4 +1,6 @@
 """Explicit own-source blank forms. Sharing a field layout grants no jurisdiction."""
+from hashlib import sha256
+import json
 from pathlib import Path
 import re
 from urllib.parse import parse_qs,urlsplit
@@ -13,7 +15,18 @@ BINDINGS={
     'e1ae7409-3195-4eeb-aace-c9de16282335':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
     '2d7b1fe9-8bdb-4e9b-b0ef-7616a6b87c97':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
 }
+LIANYUNGANG_CODE = '320700'
+LIANYUNGANG_SOURCE_ID = '798345f56be3804472dc90b1'
+LIANYUNGANG_BASE = Path('reports/overnight-gap-closure-20261030/localities/lianyungang-municipal-own-source')
+LIANYUNGANG_GUIDE_SHA256 = 'a569d9a0cde1c4534ac4f1fe5b2414ca0e6e6612952098b49f773ede817d6ee7'
+LIANYUNGANG_WORD_SHA256 = '3a354ec4b95e18b4124df88e0380ab27236cbaa46c6e7644446667e0081a711d'
+LIANYUNGANG_RECEIPT = {'file': (LIANYUNGANG_BASE / 'WORD-PREFLIGHT.json').as_posix(),
+                       'sha256': LIANYUNGANG_WORD_SHA256}
 EXACT_SOURCES={
+    LIANYUNGANG_CODE:('连云港市','市本级',LIANYUNGANG_SOURCE_ID,{
+        'bcc67aa2-7b47-4cc2-92e6-3aaf581aa901':('application','99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3'),
+        'eb850eb4-d57a-47e3-9fc9-45f719d582be':('evidence','c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c'),
+    }),
     '320205':('无锡市','锡山区',SOURCE_ID,BINDINGS),
     # Own county guide, own eight downloaded annexes; same file bytes alone
     # never authorize another locality or another annex.
@@ -61,6 +74,7 @@ EXACT_SOURCES={
     }),
 }
 EXACT_IDENTITIES={
+    LIANYUNGANG_CODE:('连云港市人力资源和社会保障局','11320700014252938G300201430200201'),
     '320903':('盐城市盐都区人力资源与社会保障局','11320928562941566D400201430200201'),
     '320902':('盐城市亭湖区人力资源和社会保障局','11320902014360656E400201430200201'),
     '320981':('盐城市东台市人力资源和社会保障局','11320981014396886W400201430200201'),
@@ -70,11 +84,48 @@ EXACT_IDENTITIES={
 }
 
 
+def is_lianyungang_municipal_candidate(guide):
+    return (guide.get('province') == 'jiangsu' and guide.get('city') == '连云港市'
+            and guide.get('district') == '市本级' and guide.get('scope_level') == 'municipal'
+            and guide.get('region_code') == LIANYUNGANG_CODE
+            and guide.get('source_id') == LIANYUNGANG_SOURCE_ID
+            and guide.get('source_version') == LIANYUNGANG_GUIDE_SHA256
+            and guide.get('candidate_adapter_evidence') == LIANYUNGANG_RECEIPT
+            and guide.get('published') is False)
+
+
+def staged_lianyungang_municipal(root):
+    root = Path(root).resolve()
+    guide_raw = (root / LIANYUNGANG_BASE / 'GUIDE.json').read_bytes()
+    word_raw = (root / LIANYUNGANG_RECEIPT['file']).read_bytes()
+    if (sha256(guide_raw).hexdigest(), sha256(word_raw).hexdigest()) != (LIANYUNGANG_GUIDE_SHA256, LIANYUNGANG_WORD_SHA256):
+        raise ValueError('连云港市本级指南或版式复核凭证不匹配')
+    guide = json.loads(guide_raw)
+    guide.update(source_version=LIANYUNGANG_GUIDE_SHA256, registration_status='CANDIDATE_ONLY',
+                 publication_status='candidate', candidate_adapter_evidence=dict(LIANYUNGANG_RECEIPT))
+    if not is_lianyungang_municipal_candidate(guide):
+        raise ValueError('连云港市本级事项不匹配')
+    for template in guide['templates']:
+        kind = blank_binding(guide, template)
+        if kind:
+            path = root / template['file']
+            if path.resolve() != path or sha256(path.read_bytes()).hexdigest() != template['sha256']:
+                raise ValueError('连云港市本级原件路径或哈希不匹配')
+            template.update(can_generate=True, adapter=ADAPTER, document_types=[kind],
+                            content_kind='filled_official_blank', generation_label='依据连云港市本级官方空白表格填写')
+    if sum(t['can_generate'] for t in guide['templates']) != 2:
+        raise ValueError('连云港市本级空白文书适配不完整')
+    guide['can_generate'] = True
+    return guide
+
+
 def blank_binding(guide,template):
     code=guide.get('region_code');source=EXACT_SOURCES.get(code)
     if not source:return None
     city,district,source_id,bindings=source
     if (guide.get('province'),guide.get('city'),guide.get('district'))!=('jiangsu',city,district):
+        return None
+    if code == LIANYUNGANG_CODE and not is_lianyungang_municipal_candidate(guide):
         return None
     if guide.get('verification_status')!='verified' or digest(guide.get('source_url',''))[:24]!=source_id:
         return None
@@ -87,7 +138,7 @@ def blank_binding(guide,template):
     expected={'annex_id':template['id'],'region_code':code,'sha256':checksum,'official_kind':'blank',
               'download_status':'downloaded','source_url':guide['source_url']}
     if any(template.get(k)!=v for k,v in expected.items()):return None
-    if code in {'320706','320903','320902','320981','320924','320922','320921'}:
+    if code in {LIANYUNGANG_CODE,'320706','320903','320902','320981','320924','320922','320921'}:
         download=urlsplit(template.get('download_url',''))
         if (download.scheme!='https' or download.hostname!='sxgl.jszwfw.gov.cn' or download.port!=66
             or download.path!='/audit-qlk-web/rest/frame/pages/basic/attach/attachAction/getContent'
