@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "e4dfe82e68f06d0affb5627e479325a585d3d0101d7f616430043c4917b68168",
+  "regions": {
+    "350700": {
+      "region_code": "350700",
+      "district": "",
+      "directory_city": "南平市",
+      "source_id": "f94ef9ec2ad2020932331f5a",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=22049666BDCA26183CFAB40D7B67D0F3",
+      "service_unid": "22049666BDCA26183CFAB40D7B67D0F3",
+      "service_code": "11350700003944795Y300201430200Y01",
+      "authority": "南平市人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "scope_level": "municipal",
+      "official_area_name": "南平市",
+      "source_manifest_sha256": "706c1574ab63bbe59b2e3fd320a8fdab0191d2864fd5411a953f18bdee11ef8f"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
