@@ -1,0 +1,161 @@
+{
+  "region_code": "350783",
+  "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=88AF4A0A15B407AD7C34DE308840E2BD",
+  "source_id": "db760e316b1f5abf85a0e791",
+  "official_version": "1",
+  "collected_at": "2026-11-08T05:46:56.946133+00:00",
+  "discovery_freeze_sha256": "81ab760097600566c2d6dc6dd28e603573849db708aef83fec45a906219c3337",
+  "safe_files": {
+    "safe-api-getAcceptList.json": {
+      "bytes": 2611,
+      "sha256": "7d7d8543f82573f369ecb35ba9023ca36a108742ed7c41f9b94027dae078f389"
+    },
+    "safe-api-getFlowNode.json": {
+      "bytes": 2781,
+      "sha256": "f715038cf68fe237983e8e3f96b65ec9c39697389b14b260db86a32b27fd08c9"
+    },
+    "safe-api-getLegalBasis.json": {
+      "bytes": 2249,
+      "sha256": "4613590f17025071a30785cb4ea5f2d44551cb528ec58dae66594f599f55dde7"
+    },
+    "safe-api-getMaterialList.json": {
+      "bytes": 6730,
+      "sha256": "c98030938d4b2e5fd8f450b8efc9627da0630c56fe22ee5de345101203bbe8be"
+    },
+    "safe-api-getMatterAccording.json": {
+      "bytes": 265,
+      "sha256": "fe3d5acd2bcbcef2313148f0e1bb85e177abf1cd3ef9804efd9f7e76f134f2c6"
+    },
+    "safe-api-getMatterBasicInfo.json": {
+      "bytes": 7033,
+      "sha256": "92020e8ddeb9b1ec3aee792258eb548e632a7dbe724630e9ccf34c602ae58636"
+    },
+    "safe-api-getServiceSituation.json": {
+      "bytes": 196,
+      "sha256": "6560d6764d2e1ad3772fe37ad5e54fa90e0ffd9710708b0add2da0ac64436412"
+    },
+    "safe-api-getTableInfo.json": {
+      "bytes": 2396,
+      "sha256": "36f9d68667843f44bd9748e8b31873ba47377ca4147ea4ba340384ef5484274b"
+    },
+    "native-field-observations.json": {
+      "bytes": 867,
+      "sha256": "3b7e1a799ec5aaa1524b3ff1f16b51b1a3f8ad5c6b8e8035fd96561ab90b47f6"
+    }
+  },
+  "actual_native_API_receipts": [
+    {
+      "endpoint": "getAcceptList",
+      "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/getAcceptList?unid=88AF4A0A15B407AD7C34DE308840E2BD",
+      "method": "GET",
+      "status": 200,
+      "request_id": "63872.104",
+      "observed_timestamp_ms": 1794116816249,
+      "captured_at": "2026-11-08T05:46:56.674555+00:00",
+      "file": "api-getAcceptList.json",
+      "bytes": 2611,
+      "sha256": "7d7d8543f82573f369ecb35ba9023ca36a108742ed7c41f9b94027dae078f389",
+      "browser_response_sha256": "7d7d8543f82573f369ecb35ba9023ca36a108742ed7c41f9b94027dae078f389",
+      "sanitized_body": false
+    },
+    {
+      "endpoint": "getFlowNode",
+      "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/getFlowNode?serviceId=88AF4A0A15B407AD7C34DE308840E2BD",
+      "method": "GET",
+      "status": 200,
+      "request_id": "63872.112",
+      "observed_timestamp_ms": 1794116816254,
+      "captured_at": "2026-11-08T05:46:56.723388+00:00",
+      "file": "api-getFlowNode.json",
+      "bytes": 2781,
+      "sha256": "f715038cf68fe237983e8e3f96b65ec9c39697389b14b260db86a32b27fd08c9",
+      "browser_response_sha256": "f715038cf68fe237983e8e3f96b65ec9c39697389b14b260db86a32b27fd08c9",
+      "sanitized_body": false
+    },
+    {
+      "endpoint": "getLegalBasis",
+      "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/getLegalBasis?serviceUnid=88AF4A0A15B407AD7C34DE308840E2BD",
+      "method": "GET",
+      "status": 200,
+      "request_id": "63872.128",
+      "observed_timestamp_ms": 1794116816255,
+      "captured_at": "2026-11-08T05:46:56.764417+00:00",
+      "file": "api-getLegalBasis.json",
+      "bytes": 2249,
+      "sha256": "4613590f17025071a30785cb4ea5f2d44551cb528ec58dae66594f599f55dde7",
+      "browser_response_sha256": "4613590f17025071a30785cb4ea5f2d44551cb528ec58dae66594f599f55dde7",
+      "sanitized_body": false
+    },
+    {
+      "endpoint": "getMaterialList",
+      "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/getMaterialList?unid=88AF4A0A15B407AD7C34DE308840E2BD&isMatmultiple=Y",
+      "method": "GET",
+      "status": 200,
+      "request_id": "63872.134",
+      "observed_timestamp_ms": 1794116816256,
+      "captured_at": "2026-11-08T05:46:56.799683+00:00",
+      "file": "api-getMaterialList.json",
+      "bytes": 6730,
+      "sha256": "c98030938d4b2e5fd8f450b8efc9627da0630c56fe22ee5de345101203bbe8be",
+      "browser_response_sha256": "c98030938d4b2e5fd8f450b8efc9627da0630c56fe22ee5de345101203bbe8be",
+      "sanitized_body": false
+    },
+    {
+      "endpoint": "getMatterAccording",
+      "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/getMatterAccording?serviceId=88AF4A0A15B407AD7C34DE308840E2BD",
+      "method": "GET",
+      "status": 200,
+      "request_id": "63872.127",
+      "observed_timestamp_ms": 1794116816255,
+      "captured_at": "2026-11-08T05:46:56.835545+00:00",
+      "file": "api-getMatterAccording.json",
+      "bytes": 265,
+      "sha256": "fe3d5acd2bcbcef2313148f0e1bb85e177abf1cd3ef9804efd9f7e76f134f2c6",
+      "browser_response_sha256": "fe3d5acd2bcbcef2313148f0e1bb85e177abf1cd3ef9804efd9f7e76f134f2c6",
+      "sanitized_body": false
+    },
+    {
+      "endpoint": "getMatterBasicInfo",
+      "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/getMatterBasicInfo?unid=88AF4A0A15B407AD7C34DE308840E2BD&infoType=1",
+      "method": "GET",
+      "status": 200,
+      "request_id": "63872.103",
+      "observed_timestamp_ms": 1794116816249,
+      "captured_at": "2026-11-08T05:46:56.871621+00:00",
+      "file": "api-getMatterBasicInfo.json",
+      "bytes": 7033,
+      "sha256": "92020e8ddeb9b1ec3aee792258eb548e632a7dbe724630e9ccf34c602ae58636",
+      "browser_response_sha256": "92020e8ddeb9b1ec3aee792258eb548e632a7dbe724630e9ccf34c602ae58636",
+      "sanitized_body": false
+    },
+    {
+      "endpoint": "getServiceSituation",
+      "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/getServiceSituation?unid=88AF4A0A15B407AD7C34DE308840E2BD",
+      "method": "GET",
+      "status": 200,
+      "request_id": "63872.110",
+      "observed_timestamp_ms": 1794116816254,
+      "captured_at": "2026-11-08T05:46:56.907678+00:00",
+      "file": "api-getServiceSituation.json",
+      "bytes": 196,
+      "sha256": "6560d6764d2e1ad3772fe37ad5e54fa90e0ffd9710708b0add2da0ac64436412",
+      "browser_response_sha256": "6560d6764d2e1ad3772fe37ad5e54fa90e0ffd9710708b0add2da0ac64436412",
+      "sanitized_body": false
+    },
+    {
+      "endpoint": "getTableInfo",
+      "url": "https://zwfw.fujian.gov.cn:732/cms-business/apasService/getTableInfo?serviceId=88AF4A0A15B407AD7C34DE308840E2BD",
+      "method": "GET",
+      "status": 200,
+      "request_id": "63872.111",
+      "observed_timestamp_ms": 1794116816254,
+      "captured_at": "2026-11-08T05:46:56.946133+00:00",
+      "file": "api-getTableInfo.json",
+      "bytes": 2396,
+      "sha256": "36f9d68667843f44bd9748e8b31873ba47377ca4147ea4ba340384ef5484274b",
+      "browser_response_sha256": "d5b170eadf59d44426a17973cdf5e9efd4bcac1bae389316bc99d6f2756c9ad3",
+      "sanitized_body": true
+    }
+  ],
+  "scope": "own public source, no generation registration"
+}

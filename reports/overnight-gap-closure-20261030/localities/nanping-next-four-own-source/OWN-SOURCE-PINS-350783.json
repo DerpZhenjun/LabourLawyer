@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "81ab760097600566c2d6dc6dd28e603573849db708aef83fec45a906219c3337",
+  "regions": {
+    "350783": {
+      "region_code": "350783",
+      "district": "建瓯市",
+      "directory_city": "南平市",
+      "source_id": "db760e316b1f5abf85a0e791",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=88AF4A0A15B407AD7C34DE308840E2BD",
+      "service_unid": "88AF4A0A15B407AD7C34DE308840E2BD",
+      "service_code": "113507830039817131400201430200201",
+      "authority": "建瓯市人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "c4ca52093ae26b8bcdf5a1e467bb116acf2b23b92af5ebccf77ec8514fc55065"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

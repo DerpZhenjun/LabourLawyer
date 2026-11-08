@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "a2d3d6a5e10e459c93bfdaa2bc00b6ee6b1f3543731af989dc77bd6b1e75c5d9",
+  "regions": {
+    "350721": {
+      "region_code": "350721",
+      "district": "顺昌县",
+      "directory_city": "南平市",
+      "source_id": "04c84b5c09ac6325710f35ee",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=D802BE6F4E53C96CE5C12E2ED6B8AB3B",
+      "service_unid": "D802BE6F4E53C96CE5C12E2ED6B8AB3B",
+      "service_code": "11350721003969263A400201430200101",
+      "authority": "顺昌县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "7c5d5269bcb3a21b776b1a3639e7853e518a1ee0ea1f5636640596431d038149"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}

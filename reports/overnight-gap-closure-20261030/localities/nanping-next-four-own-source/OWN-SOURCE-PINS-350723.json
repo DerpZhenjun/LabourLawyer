@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "discovery_freeze_sha256": "f324705bc793bc1813d7a12e5de3736398915039590d038a18371041fe5ff535",
+  "regions": {
+    "350723": {
+      "region_code": "350723",
+      "district": "光泽县",
+      "directory_city": "南平市",
+      "source_id": "012ffa540bf8300a303b0b8a",
+      "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=4BC5FEC13FA892A806B1005C6827BE0C",
+      "service_unid": "4BC5FEC13FA892A806B1005C6827BE0C",
+      "service_code": "11350723003994637A400201430200201",
+      "authority": "光泽县人力资源和社会保障局",
+      "official_version": "1",
+      "original_kinds": [
+        "application",
+        "evidence"
+      ],
+      "source_manifest_sha256": "e82a712e2b512ef21e4a5de3f9bb9bacfc425dc97b8b40ffaf8945be6e09ba2d"
+    }
+  },
+  "registered": false,
+  "published": false,
+  "can_generate": false
+}
