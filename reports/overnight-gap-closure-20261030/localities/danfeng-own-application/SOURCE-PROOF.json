@@ -1,0 +1,268 @@
+{
+  "area": {
+    "city": "商洛市",
+    "district": "丹凤县",
+    "province_name": "陕西省",
+    "region_code": "611022",
+    "authority": "丹凤县人力资源和社会保障局"
+  },
+  "home_url": "https://www.danfeng.gov.cn/",
+  "home_sha256": "2d849cc907834fd47f71ea36513842d5641cf83ca5fc4dbaba194b9fe47120db",
+  "portal_url": "https://zwfw.shaanxi.gov.cn/#/index?siteCode=611022000000",
+  "roles": {
+    "worker": {
+      "label": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1118025210469&siteCode=611022000000",
+      "collected_at": "2026-11-15T14:24:42.524Z",
+      "guide_sha256": "e71c0a9da121614c8c974fc015124e8b71c482dc762eab1cef32486fbf9096aa",
+      "receipt_sha256": "9014ea988afa73d9dbee3e432b7173ac6f07f64338091cbe141b11d0eaa2a1be",
+      "commitment_workdays": 1,
+      "venue": "陕西省商洛市丹凤县 中心街与花庙路交叉路口往西北约200米(丹凤县幼儿园西南侧约100米)丹凤县人力资源市场(办理窗口:人力资源市场四楼)",
+      "phone": "0914-3378756",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "有明确的仲裁请求和事实理由",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "d5dbfeb3976c395ffa5e7946af3bfe459704fe9082ae5e2a6d2de9334e3bd1c8",
+              "size": 27426,
+              "file_type": "png"
+            },
+            {
+              "portal_label": "空表",
+              "sha256": "91600c6cfe8e4871ebd396244e8e2d26a640adee4f5db5e37c9ca905ad0f8d8b",
+              "size": 12396,
+              "file_type": "docx",
+              "source_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/14/FE/rBIxU2CY1YSAJIyTAAAwbDfqjIQ06.docx"
+            }
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "申请人有效身份证件",
+          "required": "必要",
+          "instructions": "无",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "096ecf94b108932435fd53ce392c17f160e7ef5baa643f338ca53fd215c02c54",
+              "size": 183197,
+              "file_type": "png"
+            },
+            {
+              "portal_label": "空表",
+              "sha256": "6a5557183ce06b2e2d0f66991e426331a663b439656921749546ddb75c1964bd",
+              "size": 109056,
+              "file_type": "doc"
+            }
+          ]
+        },
+        {
+          "key": "authorization",
+          "name": "委托人授权委托书",
+          "required": "必要",
+          "instructions": "需本人签字",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "a31e0ea2c7e0740a70e547c6dbaef7554742c7d2a0aac157411d7855c0a5050c",
+              "size": 35200,
+              "file_type": "png"
+            },
+            {
+              "portal_label": "空表",
+              "sha256": "4d8046881fe3d45ab457227148e681cbf7edf71556c4d2e8d8e529b05c09960f",
+              "size": 12800,
+              "file_type": "doc"
+            }
+          ]
+        },
+        {
+          "key": "qualification",
+          "name": "营业执照、统一社会信用代码证书或身份证",
+          "required": "必要",
+          "instructions": "无",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "31ab94fac3df0f9f73bb610c842c220d36d9ba7172ce331bc0a5fc30d615f703",
+              "size": 106183,
+              "file_type": "jpg"
+            },
+            {
+              "portal_label": "空表",
+              "sha256": "31ab94fac3df0f9f73bb610c842c220d36d9ba7172ce331bc0a5fc30d615f703",
+              "size": 106183,
+              "file_type": "jpg"
+            }
+          ]
+        },
+        {
+          "key": "evidence",
+          "name": "证据材料",
+          "required": "必要",
+          "instructions": "申请人需对提交的材料统一编号",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "ecf73ad8b45dbef387414af152bcd5ed316c2c4f58025a8afc526b9c27511283",
+              "size": 14399,
+              "file_type": "png"
+            },
+            {
+              "portal_label": "空表",
+              "sha256": "2c8f78dc70c0d6d07f85f4155339803f50d569fb9af45e2caf9251b51cbff621",
+              "size": 19456,
+              "file_type": "doc"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "label": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1111926202498&siteCode=611022000000",
+      "collected_at": "2026-11-15T14:24:42.283Z",
+      "guide_sha256": "6a72a89ca21591fed85607be6ee486c8575c4cd2ab62ad4927d52c0bc5a9b30d",
+      "receipt_sha256": "a3089dd063f53fc995b2b02a5818ac7671e0f3ee9ceeb0bdf00673a49cf17662",
+      "commitment_workdays": 1,
+      "venue": "陕西省商洛市丹凤县 中心街与花庙路交叉路口往西北约200米(丹凤县幼儿园西南侧约100米)丹凤县人力资源市场(办理窗口:人力资源市场四楼)",
+      "phone": "0914-3378756",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "有明确的仲裁请求和事实理由",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "d5dbfeb3976c395ffa5e7946af3bfe459704fe9082ae5e2a6d2de9334e3bd1c8",
+              "size": 27426,
+              "file_type": "png"
+            },
+            {
+              "portal_label": "空表",
+              "sha256": "91600c6cfe8e4871ebd396244e8e2d26a640adee4f5db5e37c9ca905ad0f8d8b",
+              "size": 12396,
+              "file_type": "docx"
+            }
+          ]
+        },
+        {
+          "key": "qualification",
+          "name": "营业执照、统一社会信用代码证书或身份证",
+          "required": "必要",
+          "instructions": "有明确的仲裁请求和事实理由",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "31ab94fac3df0f9f73bb610c842c220d36d9ba7172ce331bc0a5fc30d615f703",
+              "size": 106183,
+              "file_type": "jpg"
+            },
+            {
+              "portal_label": "空表",
+              "sha256": "31ab94fac3df0f9f73bb610c842c220d36d9ba7172ce331bc0a5fc30d615f703",
+              "size": 106183,
+              "file_type": "jpg"
+            }
+          ]
+        },
+        {
+          "key": "representative",
+          "name": "法人身份证明文件",
+          "required": "必要",
+          "instructions": "需盖单位公章",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "434e6e648574b0a822ba395c6b3b96818642bd7d5c0f827fbf9259bfc66732e0",
+              "size": 29168,
+              "file_type": "png"
+            },
+            {
+              "portal_label": "空表",
+              "sha256": "d6bef6a0ed2cfd743b55c90d2ce7d98f24fb8989c50b24b00f842ead24cd1290",
+              "size": 12286,
+              "file_type": "docx"
+            }
+          ]
+        },
+        {
+          "key": "authorization",
+          "name": "法定代表人授权委托书",
+          "required": "必要",
+          "instructions": "需本人签字",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "a31e0ea2c7e0740a70e547c6dbaef7554742c7d2a0aac157411d7855c0a5050c",
+              "size": 35200,
+              "file_type": "png"
+            },
+            {
+              "portal_label": "空表",
+              "sha256": "4d8046881fe3d45ab457227148e681cbf7edf71556c4d2e8d8e529b05c09960f",
+              "size": 12800,
+              "file_type": "doc"
+            }
+          ]
+        },
+        {
+          "key": "evidence",
+          "name": "证据材料",
+          "required": "必要",
+          "instructions": "申请人需对提交的材料统一编号",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "ecf73ad8b45dbef387414af152bcd5ed316c2c4f58025a8afc526b9c27511283",
+              "size": 14399,
+              "file_type": "png"
+            },
+            {
+              "portal_label": "空表",
+              "sha256": "2c8f78dc70c0d6d07f85f4155339803f50d569fb9af45e2caf9251b51cbff621",
+              "size": 19456,
+              "file_type": "doc"
+            }
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "申请人有效身份证件",
+          "required": "必要",
+          "instructions": "无",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "3a7247aa645b798d36cf10edae35b1a463614dbf0ad9f57509b9cffe83f16254",
+              "size": 440141,
+              "file_type": "png"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "application_review": {
+    "worker_portal_blank": true,
+    "employer_portal_blank_same_document": true,
+    "physical_applicant_fields": [
+      "姓名",
+      "性别",
+      "民族",
+      "出生",
+      "原籍",
+      "现住址",
+      "通讯地址"
+    ],
+    "employer_applicant_fields_verified": false,
+    "blank_word_pages": 1
+  }
+}
