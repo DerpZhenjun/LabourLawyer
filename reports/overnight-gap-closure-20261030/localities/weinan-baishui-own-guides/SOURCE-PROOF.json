@@ -1,0 +1,128 @@
+{
+  "region_code": "610527",
+  "city": "渭南市",
+  "district": "白水县",
+  "authority": "白水县人社局",
+  "official_home": "https://www.baishui.gov.cn/",
+  "official_home_sha256": "f3427e5de650a39a5dca4282b63803d44be4b3e8987e1b3abc8fc4e4b117882d",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610527000000",
+  "department_code": "11610527010816169P",
+  "consultation_phone": "0913-6160131",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114183124647&siteCode=610527000000",
+      "collected_at": "2026-11-15T17:10:22.404Z",
+      "raw_receipt_sha256": "cc8be95c4fd6d638ce2d7b23cc95e226b398e250a0ac953e3cff3e2e5ab01c4e",
+      "office": "陕西省渭南市白水县 白水县人力资源和社会保障局(雷公路北)白水县人力资源和社会保障局(办理窗口:仲裁股)",
+      "commitment_workdays": 3,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "85e9bc23b343b384c7b95203b33447d7b719c52cd523a6cd4b62c426de22ac58",
+            "captured_at": "2026-11-15T17:10:50.7170037Z"
+          }
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "cd97f3eb469332a0aa671126fb8bd25a33dd0d8ee164cce07174c785e83a29ec",
+            "captured_at": "2026-11-15T17:10:51.1119027Z"
+          }
+        },
+        {
+          "key": "relationship",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "5cad4c73f0112aa042954cba7548e146ce207315597eb9391201bdb79b056829",
+            "captured_at": "2026-11-15T17:10:51.3771759Z"
+          }
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "a6147392f4311771c6a925315807c7f70a462b5de788a036d16d260f4e5c0e83",
+            "captured_at": "2026-11-15T17:10:51.6897731Z"
+          }
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1118793124328&siteCode=610527000000",
+      "collected_at": "2026-11-15T17:10:22.643Z",
+      "raw_receipt_sha256": "d62e325a0abca5ccb18366f9c10b73aeadefd20f4eb487ac7cb3ff15c693dee4",
+      "office": "陕西省渭南市白水县 白水县人力资源和社会保障局(雷公路北)白水县人力资源和社会保障局(办理窗口:仲裁股)",
+      "commitment_workdays": 0,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "85e9bc23b343b384c7b95203b33447d7b719c52cd523a6cd4b62c426de22ac58",
+            "captured_at": "2026-11-15T17:10:53.8758353Z"
+          }
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "cd97f3eb469332a0aa671126fb8bd25a33dd0d8ee164cce07174c785e83a29ec",
+            "captured_at": "2026-11-15T17:10:54.7572509Z"
+          }
+        },
+        {
+          "key": "relationship",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "5cad4c73f0112aa042954cba7548e146ce207315597eb9391201bdb79b056829",
+            "captured_at": "2026-11-15T17:10:55.3019039Z"
+          }
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "a6147392f4311771c6a925315807c7f70a462b5de788a036d16d260f4e5c0e83",
+            "captured_at": "2026-11-15T17:10:55.7935016Z"
+          }
+        }
+      ]
+    }
+  },
+  "attachment_count": 8,
+  "distinct_attachment_sha_count": 4,
+  "official_blanks_verified": 0,
+  "attachment_receipt_sha256": "dcb64b5b38554968bc6bec43dcdeef13bb065bd110985a5dbdf57b53bcc91e28",
+  "jpeg_preflight_sha256": "f2cb424b488aba08067132bdb6a0339caf4a1ba8040d53bddf95388063ee32bc",
+  "image_content_review_state": "DECODE_AND_BYTE_PARITY_ONLY",
+  "identity_sample_and_qualification_sample_same_bytes": true
+}
