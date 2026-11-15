@@ -1,0 +1,94 @@
+{
+  "area": {
+    "province": "陕西省",
+    "city": "安康市",
+    "district": "岚皋县",
+    "region_code": "610925",
+    "site_code": "610925000000",
+    "authority": "岚皋县人力资源和社会保障局",
+    "department_code": "116109250160550490"
+  },
+  "county_home": "https://www.langao.gov.cn/",
+  "county_home_sha256": "f170da0ae638b2bf4e4d034f7bf7d429143e41f90936b63af6635cba65115c5d",
+  "department_url": "https://zwfw.shaanxi.gov.cn/pc/#/c/department?siteCode=610925000000&deptCode=116109250160550490&deptName=%E5%B2%9A%E7%9A%8B%E5%8E%BF%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E5%92%8C%E7%A4%BE%E4%BC%9A%E4%BF%9D%E9%9A%9C%E5%B1%80",
+  "department_dom_sha256": "ea7d33f8861b7d15224db047e7c60a1db02f019e7f20882082baa3b706a02a0e",
+  "worker": {
+    "role": "劳动者",
+    "url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1113095181904&siteCode=610925000000",
+    "observed_at": "2026-11-15T12:46:02.531Z",
+    "dom_sha256": "20c3c1bd553f5e84e621dc0fab347a9e2b4f7561bda1509161596938fa241f18",
+    "venue": "陕西省安康市岚皋县城关镇 河滨大道12岚皋县人力资源和社会保障局(办理窗口:208室)",
+    "materials": [
+      {
+        "name": "劳动人事争议仲裁申请书",
+        "required": "必要",
+        "public_labels": [
+          "样表"
+        ]
+      },
+      {
+        "name": "授权委托书",
+        "required": "必要",
+        "public_labels": [
+          "样表"
+        ]
+      }
+    ]
+  },
+  "employer": {
+    "role": "用人单位",
+    "url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1113914144865&siteCode=610925000000",
+    "observed_at": "2026-11-15T12:46:02.763Z",
+    "dom_sha256": "0cfa165c39a1d9f31e2a38879a6b8b7c5c83761129399d388687154cbcc4467f",
+    "venue": "陕西省安康市岚皋县城关镇 河滨大道12岚皋县人力资源和社会保障局(办理窗口:仲裁股)",
+    "materials": [
+      {
+        "name": "劳动人事争议仲裁申请书",
+        "required": "必要",
+        "public_labels": [
+          "样表"
+        ]
+      },
+      {
+        "name": "主体资格证明材料",
+        "required": "必要",
+        "public_labels": [
+          "样表"
+        ]
+      },
+      {
+        "name": "授权委托书",
+        "required": "必要",
+        "public_labels": [
+          "样表"
+        ]
+      }
+    ]
+  },
+  "attachment_receipt_sha256": "af5f2be051ae2dcababf17e1774c99a3d14b56aa3e9d964f9fd0bb438119831a",
+  "original_count": 5,
+  "application": {
+    "official_kind": "sample",
+    "sha256": "ef7620aa767b293d4152f03e87de5c0b1807f23c5a78eb7c3dfa0485077bd65f",
+    "same_bytes_both_roles": true,
+    "own_receiving_committee": true,
+    "native_word_pages": 1,
+    "native_page_sha256": "b60db1a97353ae9716ab292c2c169c223f6789b40b34cc43310f9e7fb046501f"
+  },
+  "authorization": {
+    "official_kind": "sample",
+    "sha256": "0336e052ca62fd2ff583ab4fb8a5e67004a3fb9f358947647a8d2a9de569f380",
+    "same_bytes_both_roles": true,
+    "own_receiving_committee": true,
+    "native_word_pages": 1,
+    "native_page_sha256": "00b072e5821914b0cdbe104b22bc98c493a3c5a5c32493f6a1a8ce4134262bfb"
+  },
+  "qualification": {
+    "official_kind": "sample",
+    "format": "jpg",
+    "sha256": "6d058d0980220368d3af4f6e5f0ce5f333e40f0bd6662c60e73bd40d922cbc4d"
+  },
+  "blank_verified": false,
+  "state": "OWN_ROLE_GUIDES_AND_SAMPLE_ATTACHMENTS_VERIFIED_BLANKS_UNVERIFIED",
+  "published": false
+}
