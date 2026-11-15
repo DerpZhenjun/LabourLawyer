@@ -17,6 +17,9 @@ from regional_blank_documents import fill_blank_document, is_jiangsu_municipal_c
 from regional_jiangsu_candidates import fill_candidate_document, SUPPORTED as JIANGSU_OWN_CANDIDATES
 from regional_rongjiang_documents import fill_rongjiang_document, ADAPTER as RONGJIANG_ADAPTER
 from regional_xiangan_evidence import ADAPTER as XIANGAN_EVIDENCE_ADAPTER, XianganEvidenceRequest
+from regional_foping_reference import (
+    ADAPTER as FOPING_REFERENCE_ADAPTER, FopingReferenceRequest, fill_application as fill_foping_reference,
+)
 from regional_liuba_evidence import (
     ADAPTER as LIUBA_XLSX_ADAPTER, MIME as XLSX_MIME, EvidenceRequest as LiubaEvidenceRequest,
     fill_evidence as fill_liuba_evidence, with_liuba_workbook,
@@ -659,6 +662,8 @@ class FujianKEvidenceRequest(BaseModel):
 
 def generation_request_model(adapter,kind):
     """Preserve the existing adapter-specific request-model selection."""
+    if adapter == FOPING_REFERENCE_ADAPTER and kind == 'application':
+        return FopingReferenceRequest
     if adapter == LIUBA_XLSX_ADAPTER and kind == 'evidence':
         return LiubaEvidenceRequest
     if adapter == XIXIANG_REFERENCE_ADAPTER and kind == 'application':
@@ -722,7 +727,7 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks, xlsx: b
             g, province=payload.province, city=payload.city, district=payload.district,
             source_id=payload.source_id, version=payload.version)
         t = select_regional_template(g, payload.template_id, payload.kind, mode=payload.mode, case_scope=payload.case_scope)
-        if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER, BAOJI_EVIDENCE_ADAPTER, XIXIANG_REFERENCE_ADAPTER, LIUBA_XLSX_ADAPTER, *BAOJI_WORKER_MODELS} and payload.contract_id is None:
+        if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER, BAOJI_EVIDENCE_ADAPTER, XIXIANG_REFERENCE_ADAPTER, LIUBA_XLSX_ADAPTER, FOPING_REFERENCE_ADAPTER, *BAOJI_WORKER_MODELS} and payload.contract_id is None:
             raise RegionalValidationError(409, '请重新打开当前地区的填写表单后生成')
         adapter, data, validated_contract_id = validate_generation_request(
             g, t, payload.kind, payload.data, payload.contract_id, root=ROOT,
@@ -735,7 +740,9 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks, xlsx: b
     converted_adapters = {RONGJIANG_ADAPTER, HUNAN_ADAPTER, HUNAN_C_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER}
     if adapter in blank_adapters | converted_adapters and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
     try:
-        if adapter == LIUBA_XLSX_ADAPTER:
+        if adapter == FOPING_REFERENCE_ADAPTER:
+            doc = fill_foping_reference(checked_path(t,g).read_bytes(), data.model_dump())
+        elif adapter == LIUBA_XLSX_ADAPTER:
             doc = fill_liuba_evidence(checked_path(t, g).read_bytes(), data.model_dump())
         elif adapter == XIXIANG_REFERENCE_ADAPTER:
             doc=fill_xixiang_reference(checked_path(t,g).read_bytes(),data.model_dump())

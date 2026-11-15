@@ -3,6 +3,7 @@ from copy import deepcopy
 from regional_guides import digest
 from regional_baoji_evidence import ADAPTER as BAOJI_EVIDENCE_ADAPTER, checked_adapter as checked_baoji_evidence_adapter
 from regional_baoji_county_application import MODELS_BY_ADAPTER as BAOJI_WORKER_MODELS, checked_adapter as checked_baoji_worker_adapter
+from regional_foping_reference import ADAPTER as FOPING_REFERENCE_ADAPTER, checked_adapter as checked_foping_reference
 from regional_liuba_evidence import ADAPTER as LIUBA_XLSX_ADAPTER, checked_adapter as checked_liuba_workbook
 from regional_xixiang_reference import ADAPTER as XIXIANG_REFERENCE_ADAPTER, checked_adapter as checked_xixiang_adapter
 from regional_luohu_collective import ADAPTER as LUOHU_ADAPTER, checked_adapter as checked_luohu_adapter
@@ -390,6 +391,8 @@ def with_reference_capabilities(guide,root=None):
 
 
 def checked_reference_adapter(guide, template, kind,root=None):
+    if template.get('adapter') == FOPING_REFERENCE_ADAPTER:
+        return checked_foping_reference(guide, template, kind, root)
     if template.get('adapter') == LIUBA_XLSX_ADAPTER:
         return checked_liuba_workbook(guide, template, kind, root)
     if template.get('adapter') == XIXIANG_REFERENCE_ADAPTER:
