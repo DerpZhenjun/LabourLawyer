@@ -27,6 +27,7 @@ from regional_fujian_oct31p import ADAPTER as FJP, production_schema_descriptor 
 from regional_fujian_huian_quangang_nov1 import ADAPTER as HQ, production_schema_descriptor as hq_schema
 from regional_quanzhou_next4 import ADAPTER as QZ, production_schema_descriptor as qz_schema
 from regional_xiangan_evidence import ADAPTER as XAE, schema_descriptor as xiangan_evidence_schema
+from regional_liuba_evidence import ADAPTER as LBE, schema_descriptor as liuba_xlsx_schema
 from regional_xixiang_reference import ADAPTER as XXI, schema_descriptor as xixiang_reference_schema
 
 from regional_baoji_evidence import ADAPTER as BJE, schema_descriptor as baoji_evidence_schema
@@ -46,7 +47,7 @@ JS_BLANK={'jiangsu_xishan_blank_v1','jiangsu_own_blank_oct29_v1',
 REFERENCE={'sichuan_combined_reference_v1','tianfu_reference_v1'}
 NINGBO='zhejiang_ningbo_own_blank_oct29_v1'
 FEIDONG='anhui-feidong-official-application-20261029'
-SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE,ZSM,LHC,BJE,XXI}|BAOJI_WORKER_MODELS.keys()|ZJ_OWN|HN|JS_BLANK|REFERENCE)
+SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE,ZSM,LHC,BJE,XXI,LBE}|BAOJI_WORKER_MODELS.keys()|ZJ_OWN|HN|JS_BLANK|REFERENCE)
 PUBLIC_PROOF_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE,'jiangsu_own_blank_oct29c_v1','jiangsu_own_blank_oct29d_v1'}|ZJ_OWN|HN)
 
 JS_APP=('applicantName birthDate gender idNumber idAddress otherDocumentType otherDocumentNumber '
@@ -221,6 +222,7 @@ def build_form_contract(guide,template,kind,root=None):
                 xiangan_evidence_schema(guide['source_version']) if adapter==XAE else
                 baoji_worker_schema(adapter,guide['source_version']) if adapter in BAOJI_WORKER_MODELS else
                 baoji_evidence_schema(guide['source_version']) if adapter==BJE else
+                liuba_xlsx_schema(guide['source_version']) if adapter==LBE else
                 xixiang_reference_schema(guide['source_version']) if adapter==XXI else
                 zhongshan_schema(guide['source_version']) if adapter==ZSM else
                 luohu_schema(kind,guide['source_version']) if adapter==LHC else
@@ -252,6 +254,8 @@ def build_form_contract(guide,template,kind,root=None):
         context.update(schema_id=own_schema['schema_id'],schema_version=own_schema['schema_version'],
             source_version=own_schema['source_version'],template_sha256=template['sha256'],template_version='sha256:'+template['sha256'])
         result.update(defaults=deepcopy(own_schema['defaults']),policy=deepcopy(own_schema['policy']))
+    if adapter == LBE:
+        context['output_format'] = 'xlsx'
     if template.get('case_scope'):
         context['case_scope'] = template['case_scope']
     result['contract_id']=_contract_id(result)
@@ -263,6 +267,10 @@ def _text(value,field):
     if any(not (c in '\t\n\r' or 0x20<=ord(c)<=0xd7ff or 0xe000<=ord(c)<=0xfffd or 0x10000<=ord(c)<=0x10ffff) for c in value):raise ValueError(field['label']+'含无效XML字符')
     if field.get('maxLength') is not None and len(value)>field['maxLength']:raise ValueError(field['label']+'超出技术容量')
     if value and field.get('choices') is not None and value not in field['choices']:raise ValueError(field['label']+'不是本表可填写选项')
+    if field.get('required') and not value.strip():
+        raise ValueError(field['label']+'不能为空')
+    if value.strip() and field.get('format') == 'positive-integer' and not re.fullmatch(r'[1-9][0-9]*', value.strip()):
+        raise ValueError(field['label']+'须为正整数')
     if value and field.get('format')=='iso-date':
         if not re.fullmatch(r'[0-9]{4}-[0-9]{2}-[0-9]{2}',value):raise ValueError(field['label']+'须为有效YYYY-MM-DD日期')
         try:date.fromisoformat(value)
@@ -302,6 +310,9 @@ def _value(value,field,adapter):
 def _object(value,fields,adapter):
     allowed={f['key']:f for f in fields}
     if not isinstance(value,dict) or any(not isinstance(k,str) or k not in allowed for k in value):raise ValueError('填写数据含本表没有槽位的字段')
+    for key, field in allowed.items():
+        if field.get('required') and key not in value:
+            raise ValueError(field['label']+'不能为空')
     return {k:_value(v,allowed[k],adapter) for k,v in value.items()}
 
 

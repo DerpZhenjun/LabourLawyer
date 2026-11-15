@@ -6,8 +6,9 @@ import re
 from datetime import datetime
 from pathlib import Path
 from typing import Annotated, Literal
+from urllib.parse import quote
 from fastapi import APIRouter, BackgroundTasks, HTTPException, Query
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, Response
 from pydantic import BaseModel, Field, field_validator, model_validator
 from regional_guides import RegionalStore
 from regional_documents import fill_tianfu_reference
@@ -16,6 +17,10 @@ from regional_blank_documents import fill_blank_document, is_jiangsu_municipal_c
 from regional_jiangsu_candidates import fill_candidate_document, SUPPORTED as JIANGSU_OWN_CANDIDATES
 from regional_rongjiang_documents import fill_rongjiang_document, ADAPTER as RONGJIANG_ADAPTER
 from regional_xiangan_evidence import ADAPTER as XIANGAN_EVIDENCE_ADAPTER, XianganEvidenceRequest
+from regional_liuba_evidence import (
+    ADAPTER as LIUBA_XLSX_ADAPTER, MIME as XLSX_MIME, EvidenceRequest as LiubaEvidenceRequest,
+    fill_evidence as fill_liuba_evidence, with_liuba_workbook,
+)
 from regional_xixiang_reference import (
     ADAPTER as XIXIANG_REFERENCE_ADAPTER, XixiangReferenceRequest, fill_application as fill_xixiang_reference,
 )
@@ -139,8 +144,10 @@ CaseScope = Literal['collective']
 
 
 def lookup(province: str=Query(max_length=30),city: str=Query(max_length=80),district: str=Query(max_length=80),
-           case_scope: CaseScope | None = None):
+           case_scope: CaseScope | None = None, xlsx: bool = False):
     guide = store().lookup(province,city,district)
+    if xlsx:
+        guide = with_liuba_workbook(guide, ROOT)
     templates = guide['templates']
     collective = any(template.get('case_scope') == 'collective' for template in templates)
     if case_scope and not collective:
@@ -164,7 +171,7 @@ def directory_store():
 
 
 @router.get('/areas')
-def areas(province: str=Query(max_length=30),city: str=Query(default='',max_length=80)):
+def areas(province: str=Query(max_length=30),city: str=Query(default='',max_length=80), xlsx: bool = False):
     directory = directory_store()
     rows = directory.areas(province, city)
     guides={(g['province'],g['city'],g['district']):g for g in store().inventory()}
@@ -187,6 +194,8 @@ def areas(province: str=Query(max_length=30),city: str=Query(default='',max_leng
                                 'region_code': code, 'scope_level': 'municipal'})
     for row in rows:
         g=guides.get((province,city,row['district']),{}) if city else {}
+        if xlsx:
+            g = with_liuba_workbook(g, ROOT)
         eligible = [template for template in g.get('templates', []) if template.get('can_generate')]
         row.update(source_id=g.get('source_id'), verification_status=g.get('verification_status','unverified'),
                    can_generate=any(not template.get('case_scope') for template in eligible))
@@ -650,6 +659,8 @@ class FujianKEvidenceRequest(BaseModel):
 
 def generation_request_model(adapter,kind):
     """Preserve the existing adapter-specific request-model selection."""
+    if adapter == LIUBA_XLSX_ADAPTER and kind == 'evidence':
+        return LiubaEvidenceRequest
     if adapter == XIXIANG_REFERENCE_ADAPTER and kind == 'application':
         return XixiangReferenceRequest
     if adapter == LUOHU_ADAPTER:
@@ -684,8 +695,11 @@ def generation_request_model(adapter,kind):
 @router.get('/form-contract')
 def form_contract(province: str=Query(max_length=30),city: str=Query(max_length=80),district: str=Query(max_length=80),
                   source_id: str=Query(max_length=64),version: int=Query(ge=1),template_id: str=Query(max_length=64),
-                  kind: Literal['application','evidence']=Query(),case_scope: CaseScope | None = None):
+                  kind: Literal['application','evidence']=Query(),case_scope: CaseScope | None = None,
+                  xlsx: bool = False):
     g=store().lookup(province,city,district)
+    if xlsx:
+        g = with_liuba_workbook(g, ROOT)
     try:
         validate_guide_context(
             g, province=province, city=city, district=district,
@@ -698,15 +712,17 @@ def form_contract(province: str=Query(max_length=30),city: str=Query(max_length=
 
 
 @router.post('/generate')
-def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
+def generate(payload: GenerateRequest,background_tasks: BackgroundTasks, xlsx: bool = False):
     # Never log the applicant payload or forward it to OpenClaw.
     g=store().lookup(payload.province,payload.city,payload.district)
+    if xlsx:
+        g = with_liuba_workbook(g, ROOT)
     try:
         validate_guide_context(
             g, province=payload.province, city=payload.city, district=payload.district,
             source_id=payload.source_id, version=payload.version)
         t = select_regional_template(g, payload.template_id, payload.kind, mode=payload.mode, case_scope=payload.case_scope)
-        if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER, BAOJI_EVIDENCE_ADAPTER, XIXIANG_REFERENCE_ADAPTER, *BAOJI_WORKER_MODELS} and payload.contract_id is None:
+        if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER, BAOJI_EVIDENCE_ADAPTER, XIXIANG_REFERENCE_ADAPTER, LIUBA_XLSX_ADAPTER, *BAOJI_WORKER_MODELS} and payload.contract_id is None:
             raise RegionalValidationError(409, '请重新打开当前地区的填写表单后生成')
         adapter, data, validated_contract_id = validate_generation_request(
             g, t, payload.kind, payload.data, payload.contract_id, root=ROOT,
@@ -715,11 +731,13 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
     except RegionalValidationError as exc:
         raise HTTPException(exc.status_code, str(exc)) from exc
     blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER,JIANGSU_F_ADAPTER,JIANGSU_G_ADAPTER,FUJIAN_H_ADAPTER,FUJIAN_I_ADAPTER,FUJIAN_J_ADAPTER,FUJIAN_K_ADAPTER,PINGTAN_ADAPTER,PUTIAN_ADAPTER,PUTIAN_N_ADAPTER,FUJIAN_O_ADAPTER,FUJIAN_P_ADAPTER,HQ_ADAPTER}
-    blank_adapters.update({QZ_ADAPTER, BAOJI_EVIDENCE_ADAPTER, *BAOJI_WORKER_MODELS})
+    blank_adapters.update({QZ_ADAPTER, BAOJI_EVIDENCE_ADAPTER, LIUBA_XLSX_ADAPTER, *BAOJI_WORKER_MODELS})
     converted_adapters = {RONGJIANG_ADAPTER, HUNAN_ADAPTER, HUNAN_C_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER}
     if adapter in blank_adapters | converted_adapters and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
     try:
-        if adapter == XIXIANG_REFERENCE_ADAPTER:
+        if adapter == LIUBA_XLSX_ADAPTER:
+            doc = fill_liuba_evidence(checked_path(t, g).read_bytes(), data.model_dump())
+        elif adapter == XIXIANG_REFERENCE_ADAPTER:
             doc=fill_xixiang_reference(checked_path(t,g).read_bytes(),data.model_dump())
         elif adapter == LUOHU_ADAPTER:
             doc=fill_luohu_document(payload.kind,checked_path(t,g),data.model_dump())
@@ -792,7 +810,13 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks):
     except ValueError as exc:raise HTTPException(409,str(exc)) from exc
     suffix=('-依据官方DOC转换填写.docx' if adapter in converted_adapters else '-官方空白表格填写.docx' if adapter in blank_adapters else '-参考样表辅助填写.docx')
     name=g['district']+('申请书' if payload.kind=='application' else '证据清单')+suffix
-    response=_response(doc,name,background_tasks)
+    if adapter == LIUBA_XLSX_ADAPTER:
+        filename = quote(name.removesuffix('.docx') + '.xlsx', safe='')
+        response = Response(doc, media_type=XLSX_MIME, headers={
+            'Content-Disposition': f"attachment; filename*=UTF-8''{filename}", 'Cache-Control': 'no-store',
+        })
+    else:
+        response=_response(doc,name,background_tasks)
     response.headers['X-Document-Origin']=('official-blank-converted-filled' if adapter in converted_adapters else 'official-blank-filled' if adapter in blank_adapters else 'official-sample-adaptation-not-blank')
     response.headers['X-Guide-Source-ID']=g['source_id']
     response.headers['X-Guide-Version']=str(g['version'])
