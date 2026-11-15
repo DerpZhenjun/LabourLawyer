@@ -1,0 +1,89 @@
+{
+  "region_code": "610802",
+  "city": "榆林市",
+  "district": "榆阳区",
+  "authority": "榆阳区人社局",
+  "official_home": "https://www.yuyang.gov.cn/",
+  "official_home_sha256": "a19069d4adf44cfb9e0847662f0955c4bf7ef69b6a5836b5e0b8effab318b97e",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610802000000",
+  "department_code": "116108020160830662",
+  "consultation_phone": "0912-3739566",
+  "roles": {
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1116112144785&siteCode=610802000000",
+      "collected_at": "2026-11-15T18:03:11.574Z",
+      "raw_receipt_sha256": "6d11eac45dbd8189da081e3ce2c2b3a9c8e932fbbe6842720ec4e7f885fd860c",
+      "office": "陕西省榆林市榆阳区上郡路街道 上郡南路185榆阳区劳动服务综合大楼(办理窗口:仲裁院案件受理办公室)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOC",
+              "sha256": "1d6c86d698368b84a51c83d835f9273975d1edee393881a0dcef6fd303298f5e",
+              "captured_at": "2026-11-15T18:03:41.1521127Z"
+            }
+          ]
+        },
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件2 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOC",
+              "sha256": "41c73635ff8067fefcaf1062c8db4ce6e907a7c00aba7f769cf3cbcd99fc7cd7",
+              "captured_at": "2026-11-15T18:03:41.4355795Z"
+            }
+          ]
+        },
+        {
+          "key": "representative",
+          "name": "申请机构法定代表人及主要负责人证明",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOCX",
+              "sha256": "ca99cc93ed9b2fadcad55783ee57c7895a21539220592671a22c7f0d9022d7d9",
+              "captured_at": "2026-11-15T18:03:41.6048886Z"
+            },
+            {
+              "portal_label": "空表",
+              "format": "DOCX",
+              "sha256": "ca99cc93ed9b2fadcad55783ee57c7895a21539220592671a22c7f0d9022d7d9",
+              "captured_at": "2026-11-15T18:03:41.8029514Z"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "attorney_copies_as_displayed": "原件1 份",
+  "attachment_count": 4,
+  "distinct_attachment_sha_count": 3,
+  "representative_blank_sample_sha_equal": true,
+  "worker_guide_verified": false,
+  "verified_blank_templates": 0,
+  "department_arbitration_search_sha256": "bece5d2bd2469e282f02f0cb55e395c1682f9374340beecde9063a142064f318",
+  "department_labour_dispute_search_sha256": "c9d8203c1c33e05d9f40b8e9c0808d756c895a36d5804f946f86ddf28396428b",
+  "attachment_receipt_sha256": "da2a3c56be80a0a9c4866b19d5df191fd4888d1665e49f4855822eac263bd430",
+  "static_preflight_sha256": "fb5361e2f319bb84e9752e9136f831d3a34dabeca95b9515f8b690cfaa305e2b",
+  "native_word_sha256": "e80cc53e107b573daabea7a2bac929c38a28a1cf830f6f3434f61c5acc1d3156",
+  "word_marker_sha256": "655649be11c4838393a612f3be873a2de3af77d0ae1e8817a4ce1e9f97f94cfe"
+}
