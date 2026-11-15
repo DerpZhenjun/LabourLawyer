@@ -1,0 +1,21 @@
+{
+  "published": false,
+  "items": [
+    {
+      "region_code": "610331",
+      "source_url": "https://zwfwzx.baoji.gov.cn/icity/icity/proinfo/index?code=3b70d8828ceebd348910308ca34a8812",
+      "official_bytes": 27136,
+      "official_sha256": "bea08f4a731f5da74ad7da40397c9b307d962f882f568fa13e06715cdb1c1737",
+      "layout_sha256": "19ced1ed971860179d2d11fb15e5b14cab76cac08a2ed1ca78ef4493818e1766",
+      "original_format": "DOC",
+      "fetched_at": "2026-11-08T14:16:16.483380+00:00",
+      "geometry_comparison": {
+        "pages": 5,
+        "content_unchanged": true,
+        "largest_horizontal_offset_pt": 0.061,
+        "largest_vertical_offset_pt": 0,
+        "pixel_identical": false
+      }
+    }
+  ]
+}
