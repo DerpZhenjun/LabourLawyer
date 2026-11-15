@@ -1,0 +1,75 @@
+{
+  "observed_at": "2026-11-15T15:27:10Z",
+  "hightech": {
+    "region_code": "611027",
+    "name": "商洛高新区（商丹园区）",
+    "official_home": {
+      "url": "https://www.shangluo.gov.cn/gxq/",
+      "observed_at": "2026-11-15T15:23:06Z",
+      "sha256": "af975504163adc5f048013691eedf946e7a86445cb2afa3ee82d93c08c9c1500"
+    },
+    "government_services": {
+      "url": "https://www.shangluo.gov.cn/gxq/zwfw1.htm",
+      "observed_at": "2026-11-15T15:24:13Z",
+      "sha256": "67f59393b38b6bc045c4beb998051a7c051d6b9bc02b4072b992ca9ce2ba6d84"
+    },
+    "information_disclosure": {
+      "url": "https://www.shangluo.gov.cn/gxq/zfxxgk1/zfxxgkzn.htm",
+      "sha256": "93d98e49cf234a4c62fef2a8895810acc04b234dae2e8417ce55b5a0ef0b3450"
+    },
+    "legacy_personal_service": {
+      "url": "https://zwfw.shangluo.gov.cn/slzwdt/epointzwmhwz/pages/eventdetail/wanttodo_new?usertype=20",
+      "browser_result": "ERR_CONNECTION_CLOSED"
+    },
+    "regional_portal": "https://zwfw.shaanxi.gov.cn/#/index?siteCode=611027000000",
+    "observed_department": {
+      "name": "市人社局",
+      "code": "116110000160610947",
+      "authority": "商洛市人力资源和社会保障局",
+      "window": "713",
+      "telephone": "0914-2313632",
+      "commitment_workdays": 5
+    },
+    "municipal_items": {
+      "worker": {
+        "url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1119138246162&siteCode=611027000000",
+        "collected_at": "2026-11-15T15:26:20.879Z",
+        "sha256": "3d1c09c3583230ae1112d307e832605ea8d96f35da6db55d19f17009fc0f6d1a",
+        "municipal_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1119138246162&siteCode=611000000000",
+        "same_matter": true,
+        "same_material_text_and_attachment_urls": true,
+        "material_count": 5
+      },
+      "employer": {
+        "url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1118808276944&siteCode=611027000000",
+        "collected_at": "2026-11-15T15:26:21.111Z",
+        "sha256": "8a631cfe25233a4e3a824f50b859bd523b54598abbb9967a955f81bb4739888b",
+        "municipal_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1118808276944&siteCode=611000000000",
+        "same_matter": true,
+        "same_material_text_and_attachment_urls": true,
+        "material_count": 4
+      }
+    },
+    "independent_guide_verified": false,
+    "independent_template_verified": false,
+    "generation_enabled": false
+  },
+  "economic": {
+    "region_code": "611028",
+    "name": "商洛经济技术开发区",
+    "region_code_source": "project catalog",
+    "government_gazette": {
+      "url": "https://www.shangluo.gov.cn/PDF/zfgb/2024/gongbao2024niandi7qi.pdf",
+      "sha256": "19ef3376a9e5a72c9a0ab2cd80607162181e986eb4f5dc61bbd4e68c971786c5",
+      "printed_page": 17,
+      "pdf_page": 21,
+      "observed_at": "2026-11-15T15:27:09Z",
+      "supports": "管委会机构名称"
+    },
+    "municipal_region_picker": "https://zwfw.shaanxi.gov.cn/#/index?siteCode=611000000000",
+    "separate_entry_observed_in_picker": false,
+    "independent_guide_verified": false,
+    "independent_template_verified": false,
+    "generation_enabled": false
+  }
+}
