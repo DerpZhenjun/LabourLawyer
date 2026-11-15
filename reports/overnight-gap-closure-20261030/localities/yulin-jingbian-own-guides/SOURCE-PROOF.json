@@ -1,0 +1,170 @@
+{
+  "city": "榆林市",
+  "district": "靖边县",
+  "region_code": "610824",
+  "authority": "靖边县人力资源和社会保障局",
+  "consultation_phone": "0912-4611349",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610824000000",
+  "department_portal": "https://zwfw.shaanxi.gov.cn/pc/#/c/department?siteCode=610824000000&deptCode=11610824016087710T&deptName=%E5%8E%BF%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E5%92%8C%E7%A4%BE%E4%BC%9A%E4%BF%9D%E9%9A%9C%E5%B1%80",
+  "department_code": "11610824016087710T",
+  "attachment_ledger_sha256": "f8df1c7b4c64c48c1dedaa3141118859fbae7d76c7065065735f5d2f721d1bde",
+  "word_review_sha256": "75c724585bafd1d51d30f7588fc2b6f4320b447cfc4491c616121a9f6664a7da",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1115711136362&siteCode=610824000000",
+      "collected_at": "2026-11-15T18:22:04.741Z",
+      "raw_receipt_sha256": "ddebc123a734aa8a5d45b0477dcfed0ef2484db669bb401a76c3b79f2401b4c5",
+      "office": "陕西省榆林市靖边县 张家畔街道人民路文广局(明珠大厦附近)靖边县政府第二办公区-停车场(办理窗口:88)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2 份",
+          "attachments": [
+            {
+              "portal_label": "样表1",
+              "format": "DOC",
+              "captured_at": "2026-11-15T18:23:05.879727+00:00",
+              "sha256": "e73b24e45fc4ae82f148df5b9035b9da357185c8d3bceab3959775f65e3390c2"
+            },
+            {
+              "portal_label": "样表2",
+              "format": "DOCX",
+              "captured_at": "2026-11-15T18:23:06.071739+00:00",
+              "sha256": "7c8fd5a159569654e4977fb135d91ef128a732f243811d0137793c0415dc815a"
+            },
+            {
+              "portal_label": "样表3",
+              "format": "DOC",
+              "captured_at": "2026-11-15T18:23:06.321255+00:00",
+              "sha256": "9bea7d00add848e4ae3e811f740661f99dbd2c6cb742f4b7c9e117e25fa9a945"
+            },
+            {
+              "portal_label": "样表4",
+              "format": "DOC",
+              "captured_at": "2026-11-15T18:23:06.551051+00:00",
+              "sha256": "68928ca36213ac327fe078f9c635224714d967dbdaea39610a8d6bd2722966e7"
+            },
+            {
+              "portal_label": "空表1",
+              "format": "DOC",
+              "captured_at": "2026-11-15T18:23:06.742320+00:00",
+              "sha256": "9bea7d00add848e4ae3e811f740661f99dbd2c6cb742f4b7c9e117e25fa9a945"
+            },
+            {
+              "portal_label": "空表2",
+              "format": "DOCX",
+              "captured_at": "2026-11-15T18:23:06.895781+00:00",
+              "sha256": "7c8fd5a159569654e4977fb135d91ef128a732f243811d0137793c0415dc815a"
+            },
+            {
+              "portal_label": "空表3",
+              "format": "DOC",
+              "captured_at": "2026-11-15T18:23:07.139262+00:00",
+              "sha256": "e73b24e45fc4ae82f148df5b9035b9da357185c8d3bceab3959775f65e3390c2"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1111789141933&siteCode=610824000000",
+      "collected_at": "2026-11-15T18:22:04.978Z",
+      "raw_receipt_sha256": "1218be0f0246402fcd7fc5039d1c9ebdb1a7c72b03cf44443e4902613e29523c",
+      "office": "陕西省榆林市靖边县 张家畔街道人民路文广局(明珠大厦附近)靖边县政府第二办公区-停车场(办理窗口:88)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2 份",
+          "attachments": [
+            {
+              "portal_label": "样表1",
+              "format": "DOC",
+              "captured_at": "2026-11-15T18:23:07.337495+00:00",
+              "sha256": "e73b24e45fc4ae82f148df5b9035b9da357185c8d3bceab3959775f65e3390c2"
+            },
+            {
+              "portal_label": "样表2",
+              "format": "DOC",
+              "captured_at": "2026-11-15T18:23:07.531471+00:00",
+              "sha256": "9bea7d00add848e4ae3e811f740661f99dbd2c6cb742f4b7c9e117e25fa9a945"
+            },
+            {
+              "portal_label": "样表3",
+              "format": "DOCX",
+              "captured_at": "2026-11-15T18:23:07.717155+00:00",
+              "sha256": "7c8fd5a159569654e4977fb135d91ef128a732f243811d0137793c0415dc815a"
+            },
+            {
+              "portal_label": "样表4",
+              "format": "DOC",
+              "captured_at": "2026-11-15T18:23:07.936491+00:00",
+              "sha256": "68928ca36213ac327fe078f9c635224714d967dbdaea39610a8d6bd2722966e7"
+            },
+            {
+              "portal_label": "空表1",
+              "format": "DOC",
+              "captured_at": "2026-11-15T18:23:08.084120+00:00",
+              "sha256": "9bea7d00add848e4ae3e811f740661f99dbd2c6cb742f4b7c9e117e25fa9a945"
+            },
+            {
+              "portal_label": "空表2",
+              "format": "DOC",
+              "captured_at": "2026-11-15T18:23:08.271907+00:00",
+              "sha256": "e73b24e45fc4ae82f148df5b9035b9da357185c8d3bceab3959775f65e3390c2"
+            },
+            {
+              "portal_label": "空表3",
+              "format": "DOCX",
+              "captured_at": "2026-11-15T18:23:08.481190+00:00",
+              "sha256": "7c8fd5a159569654e4977fb135d91ef128a732f243811d0137793c0415dc815a"
+            },
+            {
+              "portal_label": "空表4",
+              "format": "DOC",
+              "captured_at": "2026-11-15T18:23:08.680441+00:00",
+              "sha256": "68928ca36213ac327fe078f9c635224714d967dbdaea39610a8d6bd2722966e7"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "application_content_review": [
+    {
+      "sha256": "68928ca36213ac327fe078f9c635224714d967dbdaea39610a8d6bd2722966e7",
+      "pages": 1,
+      "classification": "含预填请求和事实理由的劳动者申请样本",
+      "sample_bytes_equal_to_portal_blank": true
+    },
+    {
+      "sha256": "7c8fd5a159569654e4977fb135d91ef128a732f243811d0137793c0415dc815a",
+      "pages": 2,
+      "classification": "含预填请求和事实理由的劳动者申请样本",
+      "sample_bytes_equal_to_portal_blank": true
+    },
+    {
+      "sha256": "9bea7d00add848e4ae3e811f740661f99dbd2c6cb742f4b7c9e117e25fa9a945",
+      "pages": 2,
+      "classification": "含预填请求和事实理由的劳动者申请样本",
+      "sample_bytes_equal_to_portal_blank": true
+    },
+    {
+      "sha256": "e73b24e45fc4ae82f148df5b9035b9da357185c8d3bceab3959775f65e3390c2",
+      "pages": 2,
+      "classification": "含预填请求和事实理由的劳动者申请样本",
+      "sample_bytes_equal_to_portal_blank": true
+    }
+  ]
+}
