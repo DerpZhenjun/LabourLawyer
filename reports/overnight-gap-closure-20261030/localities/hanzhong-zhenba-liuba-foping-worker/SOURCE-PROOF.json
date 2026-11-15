@@ -1,0 +1,553 @@
+{
+  "regions": {
+    "610728": {
+      "catalog_sha256": "bfb45c61ddbd8426dd28a160a0dedf91bb30c37abae160e11e004c7aad1e7cdf",
+      "materials_receipt_sha256": "081cdd81a51573e2ade2756200d634d3800dfeac4e144a8f6fd768bd101c0dc4",
+      "official_html_sha256": "4553f7707e9204e253aedf0ac9e4f4a7a2b4aa82d505793631f5d1b252820dd7",
+      "attachment_proof": {
+        "observed_at": "2026-11-15T09:26:54.235321+00:00",
+        "receipt_sha256": "8186faabd7d18410761c0512ea7ed6dfb5a3dddd96c87551822b3ce45a900693",
+        "files": [
+          {
+            "entry_type": "sample",
+            "official_name": "劳动仲裁申请书.jpg",
+            "sha256": "36776ddd7289300c5b8a776e7b762a33a21a4bcb458d5af5d0e23a3fe5176cc8",
+            "bytes": 1712172,
+            "finding": "filled_authorization_photo_misfiled_under_application",
+            "word_page_sha256": []
+          },
+          {
+            "entry_type": "blank",
+            "official_name": "委托书.jpg",
+            "sha256": "36776ddd7289300c5b8a776e7b762a33a21a4bcb458d5af5d0e23a3fe5176cc8",
+            "bytes": 1712172,
+            "finding": "same_filled_authorization_photo_under_blank_button",
+            "word_page_sha256": []
+          },
+          {
+            "entry_type": "sample",
+            "official_name": "委托书.jpg",
+            "sha256": "36776ddd7289300c5b8a776e7b762a33a21a4bcb458d5af5d0e23a3fe5176cc8",
+            "bytes": 1712172,
+            "finding": "same_filled_authorization_photo_under_sample_button",
+            "word_page_sha256": []
+          }
+        ]
+      },
+      "guide": {
+        "province": "shaanxi",
+        "province_name": "陕西省",
+        "city": "汉中市",
+        "district": "镇巴县",
+        "scope_level": "district",
+        "region_code": "610728",
+        "authority": "镇巴县人力资源和社会保障局",
+        "service_name": "劳动人事争议仲裁申请",
+        "source_title": "劳动人事争议仲裁申请（劳动者）",
+        "source_url": "https://zwfw.hanzhong.gov.cn/zhenbaxian/icity/proinfo/index?code=3460b023b5fbf0eed211346a41eed716",
+        "source_version": "ab6f86708ee31a9007839f57eadb834b49b7fd5450410db2c7b5b37176d131c9",
+        "official_version": "",
+        "collected_at": "2026-11-15T09:25:40.669102+00:00",
+        "verified_at": "2026-11-15T09:38:47.582176+00:00",
+        "verification_status": "verified",
+        "published": true,
+        "can_generate": false,
+        "fields": {
+          "办理形式": "窗口办理 网上办理 快递申请",
+          "到办事现场次数": "0 次",
+          "法定办结时限": "5 工作日",
+          "承诺办结时限": "0 工作日",
+          "咨询方式": "0916-6719066",
+          "办理地点": "陕西省汉中市镇巴县泾洋街道 镇巴县泾洋街道 周家营街镇巴县人力资源和社会保障局(办理窗口:二楼劳动关系和法治仲裁股)",
+          "办理时间": "夏令时:星期一至星期五上午08:00至12:00,下午15:00至18:00(法定节假日除外) 冬令时:星期一至星期五上午09:00至12:00,下午14:00至18:00(法定节假日除外)",
+          "是否收费": "不收费",
+          "服务对象": "自然人"
+        },
+        "materials": [
+          {
+            "id": "610728-worker-1",
+            "name": "劳动人事争议仲裁申请书",
+            "material_type": "原件和复印件",
+            "format": "纸质材料",
+            "copies": "原件2份  复印件2份",
+            "required": "必要",
+            "acceptance_standard": "《劳动人事争议仲裁办案规则》第一章第二条",
+            "source_channel": "申请人自备",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/zhenbaxian/icity/proinfo/index?code=3460b023b5fbf0eed211346a41eed716",
+            "region_code": "610728",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610728-worker-2",
+            "name": "身份证",
+            "material_type": "原件和复印件",
+            "format": "纸质材料",
+            "copies": "原件1份  复印件1份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "由政府部门核发",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/zhenbaxian/icity/proinfo/index?code=3460b023b5fbf0eed211346a41eed716",
+            "region_code": "610728",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610728-worker-3",
+            "name": "劳动（人事）关系证明材料",
+            "material_type": "原件和复印件",
+            "format": "纸质材料",
+            "copies": "原件2份  复印件2份",
+            "required": "必要",
+            "acceptance_standard": "1.《中华人民共和国劳动法》第七十七条“用人单位与劳动者发生劳动争议，当事人可以依法申请调解、仲裁、提起诉讼，也可以协商解决。” 2.《劳动争议调解仲裁法》第二条“中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法：（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；　（六）法律、法规规定的其他劳动争议。”第五条“发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁。” 3.《劳动人事争议仲裁办案规则》第二条“本规则适用下列争议的仲裁：（一）企业、个体经济组织、民办非企业单位等组织与劳动者之间，以及机关、事业单位、社会团体与其建立劳动关系的劳动者之间，因确认劳动关系，订立、履行、变更、解除和终止劳动合同，工作时间、休息休假、社会保险、福利、培训以及劳动保护，劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（二）实施公务员法的机关与聘任制公务员之间、参照公务员法管理的机关（单位）与聘任工作人员之间因履行聘任合同发生的争议；（三）事业单位与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（四）社会团体与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（五）军队文职人员用人单位与聘用制文职人员之间因履行聘用合同发生的争议；（六）法律、法规规定由劳动人事争议仲裁委员会（以下简称仲裁委员会）处理的其他争议。”",
+            "source_channel": "申请人自备",
+            "instructions": "申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。 仲裁申请书应当载明下列事项： （一）劳动者的姓名、性别、年龄、职业、工作单位和住所，用人单位的名称、住所和法定代表人或者主要负责人的姓名、职务； （二）仲裁请求和所根据的事实、理由； （三）证据和证据来源、证人姓名和住所",
+            "source_url": "https://zwfw.hanzhong.gov.cn/zhenbaxian/icity/proinfo/index?code=3460b023b5fbf0eed211346a41eed716",
+            "region_code": "610728",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610728-worker-4",
+            "name": "授权委托书",
+            "material_type": "原件和复印件",
+            "format": "纸质材料",
+            "copies": "原件2份  复印件2份",
+            "required": "必要",
+            "acceptance_standard": "1.《中华人民共和国劳动法》第七十七条“用人单位与劳动者发生劳动争议，当事人可以依法申请调解、仲裁、提起诉讼，也可以协商解决。” 2.《劳动争议调解仲裁法》第二条“中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法：（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；　（六）法律、法规规定的其他劳动争议。”第五条“发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁。” 3.《劳动人事争议仲裁办案规则》第二条“本规则适用下列争议的仲裁：（一）企业、个体经济组织、民办非企业单位等组织与劳动者之间，以及机关、事业单位、社会团体与其建立劳动关系的劳动者之间，因确认劳动关系，订立、履行、变更、解除和终止劳动合同，工作时间、休息休假、社会保险、福利、培训以及劳动保护，劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（二）实施公务员法的机关与聘任制公务员之间、参照公务员法管理的机关（单位）与聘任工作人员之间因履行聘任合同发生的争议；（三）事业单位与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（四）社会团体与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（五）军队文职人员用人单位与聘用制文职人员之间因履行聘用合同发生的争议；（六）法律、法规规定由劳动人事争议仲裁委员会（以下简称仲裁委员会）处理的其他争议。”",
+            "source_channel": "律师事务所开具",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/zhenbaxian/icity/proinfo/index?code=3460b023b5fbf0eed211346a41eed716",
+            "region_code": "610728",
+            "service_object": "劳动者",
+            "attachments": []
+          }
+        ],
+        "channel": {
+          "raw_value": "全程网办",
+          "online_status": "unverified",
+          "entry_url": null,
+          "submission_verified": false
+        },
+        "sections": {
+          "申请条件": "1.《中华人民共和国劳动争议调解仲裁法》第二条：中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用\n  本法：（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除\n  名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；\n  （五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（六）法律、法规规定的其他劳动争议。第五\n  条：发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、\n  调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁；对仲裁裁决不服的，除本法另有规定的\n  外，可以向人民法院提起诉讼。\n2.《劳动人事争议仲裁办案规则》（中华人民共和国人力资源和社会保障部令第33号）第二条：本规则适用下列争议的仲\n  裁：（一）企业、个体经济组织、民办非企业单位等组织与劳动者之间，以及机关、事业单位、社会团体与其建立劳动\n  关系的劳动者之间，因确认劳动关系，订立、履行、变更、解除和终止劳动合同，工作时间、休息休假、社会保险、福\n  利、培训以及劳动保护，劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（二）实施公务员法的机关与聘\n  任制公务员之间、参照公务员法管理的机关（单位）与聘任工作人员之间因履行聘任合同发生的争议；（三）事业单位\n  与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（四）社会团体与其建立人事关系的\n  工作人员之间因终止人事关系以及履行聘用合同发生的争议；（五）军队文职人员用人单位与聘用制文职人员之间因履\n  行聘用合同发生的争议；（六）法律、法规规定由劳动人事争议仲裁委员会处理的其他争议。\n3.《劳动人事争议仲裁组织规则》（中华人民共和国人力资源和社会保障部令第34号）第七条：仲裁委员会依法履行下列\n  职责：（一）聘任、解聘专职或者兼职仲裁员；（二）受理争议案件；（三）讨论重大或者疑难的争议案件；（四）监  \n  督本仲裁委员会的仲裁活动；（五）制定本仲裁委员会的工作规则；（六）其他依法应当履行的职责。",
+          "收费标准": "不收费"
+        },
+        "warnings": [
+          "页面所列时限为本事项办理信息。",
+          "本县申请书样表、委托书空表及样表入口实测返回同一张已填写的授权委托书照片。申请书和委托书空白模板待核验。"
+        ],
+        "templates": [
+          {
+            "id": "hanzhong-610728-application",
+            "region_code": "610728",
+            "source_url": "https://zwfw.hanzhong.gov.cn/zhenbaxian/icity/proinfo/index?code=3460b023b5fbf0eed211346a41eed716",
+            "official_attachment_entry": "material_tab",
+            "original_name": "镇巴县申请书样表入口（附件不符，待核验）",
+            "official_kind": "unverified",
+            "file_type": "jpg",
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          },
+          {
+            "id": "hanzhong-610728-authorization",
+            "region_code": "610728",
+            "source_url": "https://zwfw.hanzhong.gov.cn/zhenbaxian/icity/proinfo/index?code=3460b023b5fbf0eed211346a41eed716",
+            "official_attachment_entry": "material_tab",
+            "original_name": "镇巴县委托书附件入口（空表待核验）",
+            "official_kind": "unverified",
+            "file_type": "jpg",
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          }
+        ]
+      }
+    },
+    "610729": {
+      "catalog_sha256": "60e5d4957acf97ec9b1e19bf5600c45e05585c19e32840d656d2fdaae2be3d9b",
+      "materials_receipt_sha256": "58d0cbd19cfba017c3002d89a0350fa6bb6fb95c7575cfb1279484ad51de8124",
+      "official_html_sha256": "a5f65208fd26f5f501554d1544c51df2749efbdbf958fd17909d6287661a4728",
+      "attachment_proof": {
+        "observed_at": "2026-11-15T09:27:17.608591+00:00",
+        "receipt_sha256": "ed6d1cb068a2a64eeac89555a2b5b7a3c722406bfab8c5933349e3a1bf7500d4",
+        "files": [
+          {
+            "entry_type": "blank",
+            "official_name": "证据清单.xlsx",
+            "sha256": "52da5de34a02c1bde6808e428fd95082d63b731b7480209385ab5010a87dd28a",
+            "bytes": 10759,
+            "finding": "worksheet_grid_empty",
+            "word_page_sha256": []
+          },
+          {
+            "entry_type": "blank",
+            "official_name": "仲裁申请书.docx",
+            "sha256": "2abce355f79d283ff8cf50ab45614149145a47478b93d1dd2a74af9548ff652a",
+            "bytes": 25313,
+            "finding": "three_word_pages_explicit_sample_and_generic_recipient",
+            "word_page_sha256": [
+              "9cc77b3671b72d55885b79c2a0791641b8e79d7c49488554a25fd57d4ca6bf67",
+              "9460e2a176dbed577bb722b65eba74de4164c8a97509a8f13c4c40c3ddb4dc31",
+              "abb5dbe8b6752ac327317c96d08ba88135e7d68980be11eb6f7c597d68675db6"
+            ]
+          },
+          {
+            "entry_type": "blank",
+            "official_name": "授权委托书.docx",
+            "sha256": "4f58b6549433bd348732395e72a72a305c867af1ad88ba8ea6a92db4d08017e6",
+            "bytes": 23641,
+            "finding": "one_word_page_blank_fields_generic_recipient",
+            "word_page_sha256": [
+              "231f483abf3d607a1c2acd1f8b0c0bc6a07516d61bc0e6d534484df62c29f6a5"
+            ]
+          }
+        ]
+      },
+      "guide": {
+        "province": "shaanxi",
+        "province_name": "陕西省",
+        "city": "汉中市",
+        "district": "留坝县",
+        "scope_level": "district",
+        "region_code": "610729",
+        "authority": "留坝县人力资源和社会保障局",
+        "service_name": "劳动人事争议仲裁申请",
+        "source_title": "劳动人事争议仲裁申请（劳动者）",
+        "source_url": "https://zwfw.hanzhong.gov.cn/liubaxian/icity/proinfo/index?code=791654819cab7692af12cb4e6f78530e",
+        "source_version": "3a64bc8c40196c6467c59462aa423e19fe5125288a8f041d7e413715e2c33f74",
+        "official_version": "",
+        "collected_at": "2026-11-15T09:25:44.776354+00:00",
+        "verified_at": "2026-11-15T09:38:47.582176+00:00",
+        "verification_status": "verified",
+        "published": true,
+        "can_generate": false,
+        "fields": {
+          "办理形式": "窗口办理 网上办理",
+          "到办事现场次数": "0 次",
+          "法定办结时限": "5 工作日",
+          "承诺办结时限": "0 工作日",
+          "咨询方式": "0916-3928776",
+          "办理地点": "陕西省汉中市留坝县 紫柏路171(办理窗口:留坝县人社局)",
+          "办理时间": "夏令时:星期一至星期五上午08:00至12:00,下午15:00至18:00(法定节假日除外) 冬令时:星期一至星期五上午08:00至12:00,下午14:00至18:00(法定节假日除外)",
+          "是否收费": "不收费",
+          "服务对象": "自然人"
+        },
+        "materials": [
+          {
+            "id": "610729-worker-1",
+            "name": "劳动人事争议仲裁申请书",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "acceptance_standard": "1、劳动人事争议冲裁规定的争议范围；2、有明确的仲裁请求和事实理由；3、在申请仲裁的法定时效期间内；4、属于仲裁委员会管辖范围。",
+            "source_channel": "无",
+            "instructions": "申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。",
+            "source_url": "https://zwfw.hanzhong.gov.cn/liubaxian/icity/proinfo/index?code=791654819cab7692af12cb4e6f78530e",
+            "region_code": "610729",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610729-worker-2",
+            "name": "身份证",
+            "material_type": "复印件",
+            "format": "纸质材料",
+            "copies": "复印件1份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "公安机关核发",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/liubaxian/icity/proinfo/index?code=791654819cab7692af12cb4e6f78530e",
+            "region_code": "610729",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610729-worker-3",
+            "name": "劳动（人事）关系证明材料",
+            "material_type": "原件或复印件",
+            "format": "纸质材料",
+            "copies": "原件1份  复印件1份",
+            "required": "非必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/liubaxian/icity/proinfo/index?code=791654819cab7692af12cb4e6f78530e",
+            "region_code": "610729",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610729-worker-4",
+            "name": "授权委托书",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/liubaxian/icity/proinfo/index?code=791654819cab7692af12cb4e6f78530e",
+            "region_code": "610729",
+            "service_object": "劳动者",
+            "attachments": []
+          }
+        ],
+        "channel": {
+          "raw_value": "全程网办",
+          "online_status": "unverified",
+          "entry_url": null,
+          "submission_verified": false
+        },
+        "sections": {
+          "申请条件": "1、属于《劳动争议人事争议仲裁办案规则》第二条规定的争议范围；2、有明确的仲裁请求和实事理由；3、在申请仲裁的法定时效期间内；4、属于仲裁委员会管辖范围。",
+          "收费标准": "不收费"
+        },
+        "warnings": [
+          "页面所列时限为本事项办理信息。",
+          "申报材料中的仲裁申请书标为「空表」，正文标题为「仲裁申请书（样本）」，收件机关使用占位符。",
+          "证据清单数据格为空。委托书为空白参考表，收件机关使用占位符，填写前请核对本县受理机关。",
+          "劳动（人事）关系证明材料附件内容待核验。指南将委托书列为必要，请向本县办理机构核对适用情形。"
+        ],
+        "templates": [
+          {
+            "id": "hanzhong-610729-application",
+            "region_code": "610729",
+            "source_url": "https://zwfw.hanzhong.gov.cn/liubaxian/icity/proinfo/index?code=791654819cab7692af12cb4e6f78530e",
+            "official_attachment_entry": "material_tab",
+            "original_name": "留坝县仲裁申请书（官网正文为样本）",
+            "official_kind": "sample",
+            "file_type": "docx",
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false,
+            "official_sha256": "2abce355f79d283ff8cf50ab45614149145a47478b93d1dd2a74af9548ff652a",
+            "official_bytes": 25313
+          },
+          {
+            "id": "hanzhong-610729-evidence",
+            "region_code": "610729",
+            "source_url": "https://zwfw.hanzhong.gov.cn/liubaxian/icity/proinfo/index?code=791654819cab7692af12cb4e6f78530e",
+            "official_attachment_entry": "material_tab",
+            "original_name": "留坝县证据清单（官方空表）",
+            "official_kind": "blank",
+            "file_type": "xlsx",
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false,
+            "official_sha256": "52da5de34a02c1bde6808e428fd95082d63b731b7480209385ab5010a87dd28a",
+            "official_bytes": 10759
+          },
+          {
+            "id": "hanzhong-610729-authorization",
+            "region_code": "610729",
+            "source_url": "https://zwfw.hanzhong.gov.cn/liubaxian/icity/proinfo/index?code=791654819cab7692af12cb4e6f78530e",
+            "official_attachment_entry": "material_tab",
+            "original_name": "留坝县授权委托书（含收件机关占位符）",
+            "official_kind": "blank",
+            "file_type": "docx",
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false,
+            "official_sha256": "4f58b6549433bd348732395e72a72a305c867af1ad88ba8ea6a92db4d08017e6",
+            "official_bytes": 23641
+          }
+        ]
+      }
+    },
+    "610730": {
+      "catalog_sha256": "765f7ea69f5a16bbe279057999a2864bbfb89a23c270a0d261df58e80ac99635",
+      "materials_receipt_sha256": "a1d24031412bc077acd08c98649dca191a1956ad747772eaedf46069e6c1adf8",
+      "official_html_sha256": "43ee9d689a5335323c4b56f1f6d340dfe888742d38bd70bdc6ca016f5b4e02b7",
+      "attachment_proof": {
+        "observed_at": "2026-11-15T09:27:30.005540+00:00",
+        "receipt_sha256": "ec711737c16922309edf5efff8386dd86d8104d32e1bc89e30d986a53325b62e",
+        "files": [
+          {
+            "entry_type": "blank",
+            "official_name": "证据目录模板.xlsx",
+            "sha256": "77a0ef9932c325ae15bee777c913ae2c022b1444dd9118ee06193c9abab22f2b",
+            "bytes": 21350,
+            "finding": "worksheet_has_filled_sample_rows",
+            "word_page_sha256": []
+          },
+          {
+            "entry_type": "sample",
+            "official_name": "劳动仲裁申请书模板.doc",
+            "sha256": "dae75fba8210fede01e8f5a22e45ff66dabfe8f081c6092037460ef6878014cd",
+            "bytes": 31744,
+            "finding": "site_sample_legacy_structure_reviewed_word_render_pending",
+            "word_page_sha256": []
+          },
+          {
+            "entry_type": "sample",
+            "official_name": "授权委托书.doc",
+            "sha256": "bb1fcacde5fd6ceda675b12084ca533d3a470497a152582805b64dacfaf6be36",
+            "bytes": 18944,
+            "finding": "two_word_pages_exact_foping_recipient_official_sample",
+            "word_page_sha256": [
+              "baf93c3ac18c817891a2d9a53a5292e32581e1f22697d3a9a4b0fa453c4fd3af",
+              "5dc30ac4c6a2b3578ea1c39d032b725e380acf0ae9f93ac630f330d54d39c66c"
+            ]
+          }
+        ]
+      },
+      "guide": {
+        "province": "shaanxi",
+        "province_name": "陕西省",
+        "city": "汉中市",
+        "district": "佛坪县",
+        "scope_level": "district",
+        "region_code": "610730",
+        "authority": "佛坪县人力资源和社会保障局",
+        "service_name": "劳动人事争议仲裁申请",
+        "source_title": "劳动人事争议仲裁申请（劳动者）",
+        "source_url": "https://zwfw.hanzhong.gov.cn/fopingxian/icity/proinfo/index?code=7f5f636163abf3c40ce645a322944808",
+        "source_version": "7ea1fb0d2420200bb19db418b3944d4793c8fe78e60689224ef6f8b361bb90c7",
+        "official_version": "",
+        "collected_at": "2026-11-15T09:25:48.735671+00:00",
+        "verified_at": "2026-11-15T09:38:47.582176+00:00",
+        "verification_status": "verified",
+        "published": true,
+        "can_generate": false,
+        "fields": {
+          "办理形式": "网上办理",
+          "到办事现场次数": "0 次",
+          "法定办结时限": "5 工作日",
+          "承诺办结时限": "3 工作日",
+          "咨询方式": "0916-2999988",
+          "办理地点": "陕西省汉中市佛坪县袁家庄街道 G108(京昆线)佛坪县人民政府-政务服务中心(办理窗口:10号窗口)",
+          "办理时间": "星期一至星期五上午09:00至下午17:00(法定节假日除外)",
+          "是否收费": "不收费",
+          "服务对象": "自然人"
+        },
+        "materials": [
+          {
+            "id": "610730-worker-1",
+            "name": "劳动人事争议仲裁申请书",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "acceptance_standard": "（一）属于《劳动人事争议仲裁办案规则》第二条规定的争议范围； （二）有明确的仲裁请求和事实理由； （三）申请人是与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人； （四）属于本仲裁委员会管辖范围。",
+            "source_channel": "无",
+            "instructions": "根据个人实际情况准备",
+            "source_url": "https://zwfw.hanzhong.gov.cn/fopingxian/icity/proinfo/index?code=7f5f636163abf3c40ce645a322944808",
+            "region_code": "610730",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610730-worker-2",
+            "name": "身份证",
+            "material_type": "原件和复印件",
+            "format": "纸质材料",
+            "copies": "原件1份  复印件1份",
+            "required": "必要",
+            "acceptance_standard": "（一）属于《劳动人事争议仲裁办案规则》第二条规定的争议范围； （二）有明确的仲裁请求和事实理由； （三）申请人是与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人； （四）属于本仲裁委员会管辖范围。",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/fopingxian/icity/proinfo/index?code=7f5f636163abf3c40ce645a322944808",
+            "region_code": "610730",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610730-worker-3",
+            "name": "劳动（人事）关系证明材料",
+            "material_type": "原件或复印件",
+            "format": "纸质、电子",
+            "copies": "原件1份  复印件1份",
+            "required": "必要",
+            "acceptance_standard": "（一）属于《劳动人事争议仲裁办案规则》第二条规定的争议范围； （二）有明确的仲裁请求和事实理由； （三）申请人是与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人； （四）属于本仲裁委员会管辖范围。",
+            "source_channel": "无",
+            "instructions": "申请人与被申请人存在劳动人事关系的材料包括劳动合同、聘用合同、工资支付凭证或记录、工资发放花名册、各项社会保险费缴纳记录、“工作证”、“服务证”、招工招聘“登记表”、招工招聘“报名表”、考勤记录、其他劳动者证言等",
+            "source_url": "https://zwfw.hanzhong.gov.cn/fopingxian/icity/proinfo/index?code=7f5f636163abf3c40ce645a322944808",
+            "region_code": "610730",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610730-worker-4",
+            "name": "授权委托书",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "acceptance_standard": "委托人亲笔签名或盖章",
+            "source_channel": "无",
+            "instructions": "申请人需要委托他人参与仲裁活动时提供",
+            "source_url": "https://zwfw.hanzhong.gov.cn/fopingxian/icity/proinfo/index?code=7f5f636163abf3c40ce645a322944808",
+            "region_code": "610730",
+            "service_object": "劳动者",
+            "attachments": []
+          }
+        ],
+        "channel": {
+          "raw_value": "全程网办",
+          "online_status": "unverified",
+          "entry_url": null,
+          "submission_verified": false
+        },
+        "sections": {
+          "申请条件": "劳动者与用人单位发生劳动人事争议时，当事人不愿调解、调解不成或者达成调解协议后不履行的，可以向劳动人事争议仲裁委员会申请仲裁。",
+          "收费标准": "不收费"
+        },
+        "warnings": [
+          "页面所列时限为本事项办理信息。",
+          "证据目录在官网标为「空表」，实际表格含实填示例。授权委托书写有佛坪县劳动人事争议仲裁委员会，官网列为样表。",
+          "仲裁申请书从本县样表入口取得，旧格式正文版式待核验。"
+        ],
+        "templates": [
+          {
+            "id": "hanzhong-610730-application",
+            "region_code": "610730",
+            "source_url": "https://zwfw.hanzhong.gov.cn/fopingxian/icity/proinfo/index?code=7f5f636163abf3c40ce645a322944808",
+            "official_attachment_entry": "material_tab",
+            "original_name": "佛坪县仲裁申请书（官网样表，版式待核验）",
+            "official_kind": "sample",
+            "file_type": "doc",
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false,
+            "official_sha256": "dae75fba8210fede01e8f5a22e45ff66dabfe8f081c6092037460ef6878014cd",
+            "official_bytes": 31744
+          },
+          {
+            "id": "hanzhong-610730-evidence",
+            "region_code": "610730",
+            "source_url": "https://zwfw.hanzhong.gov.cn/fopingxian/icity/proinfo/index?code=7f5f636163abf3c40ce645a322944808",
+            "official_attachment_entry": "material_tab",
+            "original_name": "佛坪县证据目录（表格含示例）",
+            "official_kind": "sample",
+            "file_type": "xlsx",
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false,
+            "official_sha256": "77a0ef9932c325ae15bee777c913ae2c022b1444dd9118ee06193c9abab22f2b",
+            "official_bytes": 21350
+          },
+          {
+            "id": "hanzhong-610730-authorization",
+            "region_code": "610730",
+            "source_url": "https://zwfw.hanzhong.gov.cn/fopingxian/icity/proinfo/index?code=7f5f636163abf3c40ce645a322944808",
+            "official_attachment_entry": "material_tab",
+            "original_name": "佛坪县授权委托书（官网样表）",
+            "official_kind": "sample",
+            "file_type": "doc",
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false,
+            "official_sha256": "bb1fcacde5fd6ceda675b12084ca533d3a470497a152582805b64dacfaf6be36",
+            "official_bytes": 18944
+          }
+        ]
+      }
+    }
+  }
+}
