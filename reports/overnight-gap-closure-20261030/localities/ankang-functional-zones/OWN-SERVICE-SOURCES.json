@@ -1,0 +1,54 @@
+{
+  "observed_at": "2026-11-15T13:43:13.570Z",
+  "current_locality_guides_verified": 0,
+  "current_locality_application_templates_verified": 0,
+  "archive_scope": "Official public institutional and service sources",
+  "areas": [
+    {
+      "name": "安康高新区",
+      "region_code": "610930",
+      "own_search_url": "https://so.ankang.gov.cn/subsite/gaoxin/s?q=%u52B3%u52A8%u4EF2%u88C1",
+      "source": {
+        "title": "安康高新区社会治安综合治理中心一体化运行公告",
+        "url": "https://www.sxakhidz.gov.cn/Content-2833714.html",
+        "published_at": "2025-07-02T15:51:00+08:00",
+        "sha256": "879cf999fe6852d8a0f1a8544219058fa262d77d5afff6f65dbb42be898d3e8e"
+      },
+      "finding": "综治中心公告列有劳动保障窗口与劳动仲裁一站式服务，地址为智能终端产业园 C6 栋一楼，服务电话 0915-3515200。该公告未列独立申请材料或模板。"
+    },
+    {
+      "name": "恒口示范区",
+      "region_code": "610931",
+      "own_search_url": "https://so.ankang.gov.cn/subsite/hengkou/s?q=%u52B3%u52A8%u4EF2%u88C1",
+      "sources": [
+        {
+          "title": "社会事务管理局",
+          "url": "https://hengkou.ankang.gov.cn/Content-2194314.html",
+          "published_at": "2026-06-24T15:03:00+08:00",
+          "sha256": "759bccbcba5fb35ac772b5ac2609aa769eb71611d76ef678247af68d7a71dec8"
+        },
+        {
+          "title": "信息简报（2025 第4期）",
+          "url": "https://hengkou.ankang.gov.cn/Content-2800080.html",
+          "published_at": "2025-03-11T08:30:00+08:00",
+          "sha256": "63afc1c6fa6208404e9ab5c1a1ddb26fe7ab947f08a88762764d65bd98aece9c"
+        }
+      ],
+      "finding": "管委会公开的社会事务管理局职责包含劳动仲裁，办公地址为示范区创业大厦三楼，联系方式 0915-3629261。简报记录仲裁受理活动，独立申请指南与模板仍待核验。"
+    },
+    {
+      "name": "瀛湖生态旅游区",
+      "region_code": "610932",
+      "own_search_url": "https://so.ankang.gov.cn/subsite/yinghu/s.cshtml?q=%u52B3%u52A8%u4EF2%u88C1",
+      "home": "https://yinghu.ankang.gov.cn/",
+      "finding": "管委会站内以“劳动仲裁”检索，当前结果页未返回匹配页面。独立指南与模板仍待核验。"
+    }
+  ],
+  "historical_city_notice": {
+    "title": "安康市人民政府办公室关于明确劳动人事争议仲裁案件管辖事项的通知",
+    "url": "https://rsj.ankang.gov.cn/Content-250251.html",
+    "sha256": "e4762246c23984601d1181ba4537463c2879ed1382c048e7edc5fe6eae1d024c",
+    "valid_through": "2021-04-01",
+    "use": "historical_context_only"
+  }
+}
