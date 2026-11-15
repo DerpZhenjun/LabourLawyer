@@ -1,0 +1,239 @@
+{
+  "city": "榆林市",
+  "district": "定边县",
+  "region_code": "610825",
+  "authority": "定边县人社局",
+  "consultation_phone": "0912-4212618",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610825000000",
+  "department_portal": "https://zwfw.shaanxi.gov.cn/pc/#/c/department?siteCode=610825000000&deptCode=11610825016098313T&deptName=%E5%8E%BF%E4%BA%BA%E7%A4%BE%E5%B1%80",
+  "department_code": "11610825016098313T",
+  "attachment_receipt_sha256": "dad2aac0e40bc5ca517788e3a5163bfaed06f1d48c82bb5910e5a06078391c5d",
+  "static_preflight_sha256": "a0bfa1da1e6c81cc8e1595c78db4eab853d4e82be3d23ba92be7c51c4a0d4337",
+  "static_document_content_sha256": "d19ebbd8bcb1007d85fe15d4f61a6118397c0c5e12e4f048c87760495ae8ed57",
+  "attachment_review": {
+    "all_portal_blank_bytes_equal_to_samples": true,
+    "worker_application_distinct_sha": 4,
+    "worker_application_body_titles_include_sample": true,
+    "worker_application_native_review": "held_custom_xml",
+    "employer_application_images": "portal_sample_only",
+    "verified_blank_templates": 0
+  },
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1119633274128&siteCode=610825000000",
+      "collected_at": "2026-11-15T19:00:03.369Z",
+      "raw_receipt_sha256": "324fdd76ff5644729e7d61782065e6666d9f13ca2e23e163b7c742f2cf57ea18",
+      "reported_authority": "人社局",
+      "office": "陕西省榆林市定边县 定边县食品药品监督管理局北(西环路西)陕西定边人力资源市场(办理窗口:三楼302)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表1",
+              "format": "DOCX",
+              "sha256": "7a0dc02c22697d6be41a4e46fc21eb03446362458fda9810e5e1ec2775544b09",
+              "captured_at": "2026-11-15T19:00:37.764228+00:00"
+            },
+            {
+              "portal_label": "样表2",
+              "format": "DOCX",
+              "sha256": "ac508af633e9db4cf1c0c919d448e932229778c6936b089a626e47a8fd3dce87",
+              "captured_at": "2026-11-15T19:00:37.944838+00:00"
+            },
+            {
+              "portal_label": "样表3",
+              "format": "DOCX",
+              "sha256": "932f0753c27abb2797bf35d3ccf071da58ade7b6a21dcb4e4498e400ab3f9194",
+              "captured_at": "2026-11-15T19:00:38.227941+00:00"
+            },
+            {
+              "portal_label": "样表4",
+              "format": "DOCX",
+              "sha256": "14debc2006045d4249a6fc8b8aedcae91d14490cf9fb175585ff937690d94a93",
+              "captured_at": "2026-11-15T19:00:38.456146+00:00"
+            },
+            {
+              "portal_label": "空表1",
+              "format": "DOCX",
+              "sha256": "ac508af633e9db4cf1c0c919d448e932229778c6936b089a626e47a8fd3dce87",
+              "captured_at": "2026-11-15T19:00:38.722293+00:00"
+            },
+            {
+              "portal_label": "空表2",
+              "format": "DOCX",
+              "sha256": "7a0dc02c22697d6be41a4e46fc21eb03446362458fda9810e5e1ec2775544b09",
+              "captured_at": "2026-11-15T19:00:38.974957+00:00"
+            },
+            {
+              "portal_label": "空表3",
+              "format": "DOCX",
+              "sha256": "932f0753c27abb2797bf35d3ccf071da58ade7b6a21dcb4e4498e400ab3f9194",
+              "captured_at": "2026-11-15T19:00:39.185488+00:00"
+            },
+            {
+              "portal_label": "空表4",
+              "format": "DOCX",
+              "sha256": "14debc2006045d4249a6fc8b8aedcae91d14490cf9fb175585ff937690d94a93",
+              "captured_at": "2026-11-15T19:00:39.387651+00:00"
+            }
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "87f321916c64320960765b921a0994ca4505d62e74a8cef63eab70bd1f639b13",
+              "captured_at": "2026-11-15T19:00:39.592759+00:00"
+            },
+            {
+              "portal_label": "空表",
+              "format": "JPEG",
+              "sha256": "87f321916c64320960765b921a0994ca4505d62e74a8cef63eab70bd1f639b13",
+              "captured_at": "2026-11-15T19:00:39.799672+00:00"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "b70be02a7e9e6eb5d829f030677a02ab815900b8394a087a79c3488e7241c015",
+              "captured_at": "2026-11-15T19:00:39.967382+00:00"
+            },
+            {
+              "portal_label": "空表",
+              "format": "JPEG",
+              "sha256": "b70be02a7e9e6eb5d829f030677a02ab815900b8394a087a79c3488e7241c015",
+              "captured_at": "2026-11-15T19:00:40.163691+00:00"
+            }
+          ]
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "e47bf7ae894bafeb7645b65272b1edac01e760db991fc2148fa9780ae68c2a8f",
+              "captured_at": "2026-11-15T19:00:40.731009+00:00"
+            },
+            {
+              "portal_label": "空表",
+              "format": "JPEG",
+              "sha256": "e47bf7ae894bafeb7645b65272b1edac01e760db991fc2148fa9780ae68c2a8f",
+              "captured_at": "2026-11-15T19:00:41.256308+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1113322260870&siteCode=610825000000",
+      "collected_at": "2026-11-15T19:00:03.613Z",
+      "raw_receipt_sha256": "fc8945b65b359d6f77f723f75200db848e19efec708c7dc017bd6ec28754f8c9",
+      "reported_authority": "人社局",
+      "office": "陕西省榆林市定边县 定边县食品药品监督管理局北(西环路西)陕西定边人力资源市场(办理窗口:三楼302)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "e47bf7ae894bafeb7645b65272b1edac01e760db991fc2148fa9780ae68c2a8f",
+              "captured_at": "2026-11-15T19:00:41.638003+00:00"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "b70be02a7e9e6eb5d829f030677a02ab815900b8394a087a79c3488e7241c015",
+              "captured_at": "2026-11-15T19:00:41.761212+00:00"
+            }
+          ]
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "0e6e510fa89ad11e352cdae562230c6d926ca9bf9806bececc53b2efa8af6663",
+              "captured_at": "2026-11-15T19:00:42.049064+00:00"
+            }
+          ]
+        },
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2 份",
+          "attachments": [
+            {
+              "portal_label": "样表1",
+              "format": "JPEG",
+              "sha256": "4d679c98b7774f10563244021d950f795d88b363f0856b5c947c6b520d59fab3",
+              "captured_at": "2026-11-15T19:00:42.828862+00:00"
+            },
+            {
+              "portal_label": "样表2",
+              "format": "JPEG",
+              "sha256": "41c6712353b4151d9dc7a0c8228d0fe180b12747b25a20ed33372f812d3be8c2",
+              "captured_at": "2026-11-15T19:00:44.038762+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
