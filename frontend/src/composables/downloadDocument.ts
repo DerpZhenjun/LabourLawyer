@@ -22,7 +22,7 @@ export const downloadDocument = async (blob:Blob, filename:string):Promise<void>
     const file = await Filesystem.getUri({ path, directory: Directory.Cache })
     await Share.share({
       title: '保存劳动仲裁文书',
-      text: '请选择 Word、文件管理器或其他应用保存这份文书。',
+      text: safeName.toLowerCase().endsWith('.xlsx') ? '请选择 Excel、文件管理器或其他应用保存这份表格。' : '请选择 Word、文件管理器或其他应用保存这份文书。',
       files: [file.uri],
       dialogTitle: '保存或分享文书',
     })
