@@ -68,3 +68,33 @@ class BaojiCountyApplicationAPITests(TestCase):
                     'province': wrong['province'], 'city': wrong['city'], 'district': wrong['district'],
                     'source_id': wrong['source_id'], 'version': wrong['version'],
                 }).status_code, (404, 409))
+
+
+    def test_fengxian_offers_a_source_bound_handwritten_blank_without_generation(self):
+        from hashlib import sha256
+        from regional_baoji_county_application import staged_fengxian_guide, staged_guide
+
+        with TemporaryDirectory() as work:
+            store = RegionalStore(Path(work) / 'guide.sqlite')
+            guide = store.put_guide(staged_fengxian_guide(ROOT))
+            neighbor = store.put_guide(staged_guide('610331', ROOT))
+            template, = guide['templates']
+            self.assertEqual(guide['region_code'], '610330')
+            self.assertIs(guide['can_generate'], False)
+            self.assertIs(template['can_generate'], False)
+            keys = ('province', 'city', 'district', 'source_id', 'version')
+            query = {key: guide[key] for key in keys}
+            path = f"/regional/templates/{template['id']}"
+            app = FastAPI()
+            app.include_router(routes.router, prefix='/regional')
+            with patch.object(routes, 'ROOT', ROOT), patch.object(routes, 'store', return_value=store), TestClient(app) as client:
+                blank = client.get(path, params=query)
+                self.assertEqual(blank.status_code, 200, blank.text if not blank.is_success else '')
+                self.assertEqual(blank.headers['X-Document-Origin'], 'official-handwritten-blank-layout')
+                self.assertEqual(sha256(blank.content).hexdigest(), template['sha256'])
+                self.assertIn('必须用钢笔或黑色签字笔书写', '\n'.join(p.text for p in Document(BytesIO(blank.content)).paragraphs))
+                self.assertEqual(client.get(path, params={**query, 'version': guide['version'] + 1}).status_code, 409)
+                self.assertEqual(client.get(path, params={key: neighbor[key] for key in keys}).status_code, 404)
+                generate_query = {**query, 'template_id': template['id'], 'kind': 'application'}
+                self.assertEqual(client.get('/regional/form-contract', params=generate_query).status_code, 409)
+                self.assertEqual(client.post('/regional/generate', json={**generate_query, 'mode': 'blank', 'data': {}}).status_code, 409)

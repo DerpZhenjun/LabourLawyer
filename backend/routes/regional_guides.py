@@ -22,6 +22,7 @@ from regional_luohu_collective import (
 )
 from regional_baoji_county_application import (
     MODELS_BY_ADAPTER as BAOJI_WORKER_MODELS, LAYOUTS as BAOJI_WORKER_LAYOUTS,
+    FENGXIAN_LAYOUT, FENGXIAN_ORIGIN, check_fengxian_blank,
     checked_adapter as checked_baoji_worker_adapter, fill_application as fill_baoji_worker_application,
 )
 from regional_baoji_evidence import (
@@ -341,9 +342,12 @@ def download(template_id: str,province: str=Query(max_length=30),city: str=Query
                     or t.get('file_origin') == BAOJI_LAYOUT_ORIGIN)
     baoji_worker_layout = (t.get('adapter') in BAOJI_WORKER_MODELS or
                            any(t.get('file') == path.as_posix() for path in BAOJI_WORKER_LAYOUTS.values()))
-    if converted or baoji_layout or baoji_worker_layout:
+    fengxian_blank = t.get('file') == FENGXIAN_LAYOUT.as_posix() or t.get('file_origin') == FENGXIAN_ORIGIN
+    if converted or baoji_layout or baoji_worker_layout or fengxian_blank:
         try:
-            if baoji_worker_layout:
+            if fengxian_blank:
+                check_fengxian_blank(g, t, ROOT)
+            elif baoji_worker_layout:
                 checked_baoji_worker_adapter(g, t, 'application', root=ROOT)
             elif baoji_layout:
                 checked_baoji_evidence_adapter(g, t, 'evidence', root=ROOT)
@@ -358,7 +362,7 @@ def download(template_id: str,province: str=Query(max_length=30),city: str=Query
     path = checked_path(t,g)
     headers = {'Cache-Control':'no-store', 'X-Guide-Source-ID':g.get('source_id',''),
                'X-Guide-Version':str(g.get('version','')), 'X-Template-SHA256':t['sha256']}
-    if baoji_worker_layout:
+    if baoji_worker_layout or fengxian_blank:
         headers['X-Document-Origin'] = t['file_origin']
     elif baoji_layout:
         headers['X-Document-Origin'] = BAOJI_LAYOUT_ORIGIN

@@ -1,0 +1,25 @@
+{
+  "state": "PASS",
+  "region_code": "610330",
+  "source_id": "5459e7025fb90b44be30b2c3",
+  "document_sha256": "368cd59cabb8112e35c0f1b0b40e17dd21d59f77917ae78ab6c0859a6bf7135c",
+  "native_downloads": 1,
+  "viewports": [
+    375,
+    768,
+    1440
+  ],
+  "neighbor": "610331",
+  "neighbor_inherited_blank": false,
+  "generation_ui_present": false,
+  "post_count": 0,
+  "console_errors": 0,
+  "published": false,
+  "browser_receipt_sha256": "4a4aa76baa6a5dbccc6febeb0ede95a289a483a7957a5ad6f8bc6520c26e0245",
+  "native_word_pixel_identity": true,
+  "word_pages": 5,
+  "focused_passed": 8,
+  "regression_passed": 13,
+  "regression_skipped": 1,
+  "web_build_passed": true
+}

@@ -29,6 +29,10 @@ JINTAI_PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-jin
 JINTAI_PROOF_SHA = '301cdba88f644425741c178cd0eb767980c1c3e02342a837c882599dae876258'
 TAIBAI_PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-taibai-worker-application/SOURCE-PROOF.json')
 TAIBAI_PROOF_SHA = 'e322cbb218ee9099f886bab2b1bc32e763011b7fa43719cd17e26d545091a2ac'
+FENGXIAN_PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-fengxian-handwritten/SOURCE-PROOF.json')
+FENGXIAN_PROOF_SHA = 'dfab8a5d9228185c7fedce36e4dc4a2a5213df8b6ee635f98952be2df7ad3745'
+FENGXIAN_LAYOUT = Path('templates/_docx/_regional/shaanxi/610330-handwritten-blank-layout.docx')
+FENGXIAN_ORIGIN = 'official-handwritten-blank-layout'
 SHARED = 'shaanxi_baoji_qishan_long_worker_v1'
 MEI = 'shaanxi_baoji_mei_worker_v1'
 LINYOU = 'shaanxi_baoji_linyou_worker_v1'
@@ -436,3 +440,30 @@ def checked_adapter(guide, template, kind, root=None):
         raise ValueError('区县、官方来源与申请书附件不匹配')
     _pinned_bytes(root, LAYOUTS[code], LAYOUT_HASHES[code])
     return ADAPTERS[code]
+
+
+def staged_fengxian_guide(root=None):
+    root = Path(ROOT if root is None else root).resolve()
+    code = '610330'
+    candidates = json.loads(_pinned_bytes(root, BASE_GUIDES, BASE_GUIDES_SHA))
+    proof = json.loads(_pinned_bytes(root, FENGXIAN_PROOF, FENGXIAN_PROOF_SHA))['item']
+    guide = next(g for g in candidates if g['region_code'] == code)
+    guide.update(source_id=digest(guide['source_url'])[:24],
+                 source_version=digest(code + ':' + FENGXIAN_PROOF_SHA + ':' + BASE_GUIDES_SHA),
+                 can_generate=False, verified_at=proof['fetched_at'])
+    guide['warnings'][0] = '凤县官方申请书须用钢笔或黑色签字笔填写，可下载空表。'
+    guide['templates'] = [{
+        'id': 'baoji-610330-handwritten-application', 'region_code': code, 'official_kind': 'blank',
+        'source_url': proof['source_url'], 'official_attachment_entry': 'material_tab',
+        'official_sha256': proof['official_sha256'], 'official_bytes': proof['official_bytes'],
+        'file': FENGXIAN_LAYOUT.as_posix(), 'file_type': 'docx', 'file_origin': FENGXIAN_ORIGIN,
+        'original_name': '凤县劳动仲裁申请书（手写空表）.docx', 'download_status': 'downloaded',
+        'sha256': proof['layout_sha256'], 'document_types': ['application'], 'can_generate': False,
+    }]
+    return guide
+
+
+def check_fengxian_blank(guide, template, root):
+    expected = staged_fengxian_guide(root)
+    if template != expected['templates'][0] or any(guide.get(key) != value for key, value in expected.items()):
+        raise ValueError('凤县官方手写空表与当前指南不匹配')
