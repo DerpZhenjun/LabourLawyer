@@ -1,0 +1,147 @@
+{
+  "region_code": "611026",
+  "city": "商洛市",
+  "district": "柞水县",
+  "authority": "柞水县人力资源和社会保障局",
+  "county_home_tls_status": "NotTimeValid",
+  "county_home": "https://www.snzs.gov.cn/",
+  "verified_navigation": [
+    "https://www.shangluo.gov.cn/",
+    "https://zwfw.shaanxi.gov.cn/#/index?siteCode=611000000000",
+    "https://zwfw.shaanxi.gov.cn/#/index?siteCode=611026000000",
+    "https://zwfw.shaanxi.gov.cn/pc/#/c/department?siteCode=611026000000&deptCode=11611026016073466W"
+  ],
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1110596284757&siteCode=611026000000",
+      "collected_at": "2026-11-15T15:18:26.118Z",
+      "receipt_sha256": "ab5dcca47a7c8c00a6b73e11a32be959df96efe62c75f648288bdd8972d292f0",
+      "guide_sha256": "710e1c27e7dc9d321ed7389ab34fd9057be14c5c2a16f6ab9a382cb91c34c052",
+      "commitment_workdays": 0,
+      "venue": "陕西省商洛市柞水县 县政府院内一号楼一楼(办理窗口:仲裁股)",
+      "phone": "0914-4343027",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "无",
+          "portal_label": "样表",
+          "attachment_sha256": "0f7b7c914bea9202624d62eee82fa568012cc010e78b466eb079a00b1d4e633d",
+          "format": "doc"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "instructions": "无",
+          "portal_label": "样表",
+          "attachment_sha256": "eadc6bc0d95ec36ca90fbfb4af060d0ee3cb7120e6ec30c784f13f739148c3aa",
+          "format": "doc"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "必要",
+          "instructions": "无",
+          "portal_label": "样表",
+          "attachment_sha256": "c4bf94467ba3f92ce8777e9d69680e933a56415018d06d4b7812ebbb9860f45d",
+          "format": "doc"
+        },
+        {
+          "key": "work-permit",
+          "name": "外国人就业证",
+          "required": "必要",
+          "instructions": "无",
+          "portal_label": "样表",
+          "attachment_sha256": "cd7a90c8c92dd393a866075831617e398bb714b1ae576b126749e3989e6117d2",
+          "format": "png"
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "instructions": "无",
+          "portal_label": "样表",
+          "attachment_sha256": "6f91b0edd48e432a3f02fb9d98d0e2387ad219d8717f64a19d1e436f01fe43e2",
+          "format": "jpg"
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114815125227&siteCode=611026000000",
+      "collected_at": "2026-11-15T15:18:25.890Z",
+      "receipt_sha256": "a87c19474ff7ba90b5cf8e3175dfa508dd15441202de2bd7601ae91f49feca69",
+      "guide_sha256": "238c53a21da1407791d98fc2c86e6bea967ada8e98cb53dbe929cca2581c35ba",
+      "commitment_workdays": 2,
+      "venue": "陕西省商洛市柞水县 柞水县人民政府1号楼一楼(办理窗口:仲裁股)",
+      "phone": "0914-4343027",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "无",
+          "portal_label": "样表",
+          "attachment_sha256": "0f7b7c914bea9202624d62eee82fa568012cc010e78b466eb079a00b1d4e633d",
+          "format": "doc"
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "instructions": "无",
+          "portal_label": "样表",
+          "attachment_sha256": "03e6f24c99cb3efbbeeac7cf9349ebe0455fb49f2289f0fcb71a9317605ca616",
+          "format": "png"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "instructions": "无",
+          "portal_label": "空表",
+          "attachment_sha256": "eadc6bc0d95ec36ca90fbfb4af060d0ee3cb7120e6ec30c784f13f739148c3aa",
+          "format": "doc"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "必要",
+          "instructions": "无",
+          "portal_label": "空表",
+          "attachment_sha256": "c4bf94467ba3f92ce8777e9d69680e933a56415018d06d4b7812ebbb9860f45d",
+          "format": "doc"
+        }
+      ]
+    }
+  },
+  "cross_role_attachment_matches": [
+    {
+      "material_key": "application",
+      "worker_label": "样表",
+      "employer_label": "样表",
+      "sha256": "0f7b7c914bea9202624d62eee82fa568012cc010e78b466eb079a00b1d4e633d"
+    },
+    {
+      "material_key": "relation",
+      "worker_label": "样表",
+      "employer_label": "空表",
+      "sha256": "eadc6bc0d95ec36ca90fbfb4af060d0ee3cb7120e6ec30c784f13f739148c3aa"
+    },
+    {
+      "material_key": "authorization",
+      "worker_label": "样表",
+      "employer_label": "空表",
+      "sha256": "c4bf94467ba3f92ce8777e9d69680e933a56415018d06d4b7812ebbb9860f45d"
+    }
+  ],
+  "word_review": {
+    "receipt_sha256": "c7a0fe31831e2048435be412f24495987868e7bcf6bcb52e3ecc9e5d52b29753",
+    "application_sample_pages": 2,
+    "authorization_pages": 1,
+    "relation_doc_native_not_opened": true
+  }
+}
