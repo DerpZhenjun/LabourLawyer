@@ -1,0 +1,47 @@
+{
+  "region_code": "610522",
+  "status": "ISOLATED_CANDIDATE_VERIFIED",
+  "published": false,
+  "source_commit": "79fac5d87d5017954f1dc003a8f8908a838f93b8",
+  "verified_at": "2026-11-16T00:22:32.0749587+08:00",
+  "converted_word_ground_truth_sha256": "6db184d45ae3b10316c9629a4f9adee863a14eeeb7f87ec0e20ded3240878199",
+  "native_word_filled_proof_sha256": "50af146f0e06b561f0ade6ac07ce35d2688f1f2b7d030f0425943abd2db7e2e1",
+  "browser_result_sha256": "f52d9371964c17f361edf1b2da734e3dd502acfc79ba432094ad505640779af1",
+  "browser_log_sha256": "c015cdf7fcee68405e823c8148bdfb303b4b515590e6779cc939f623fa4086cc",
+  "browser_download_word_proof_sha256": "d7c3eb86b8f11252b0b4453f52879a1540e3929451e24499ef225a44bd5475f6",
+  "affected_fields": [
+    "request_one",
+    "request_two",
+    "facts",
+    "evidence_one",
+    "evidence_two"
+  ],
+  "original_party_instructions_and_signature_preserved": true,
+  "filled_word_document_count": 8,
+  "filled_word_page_count": 16,
+  "word_date_page_preserved": true,
+  "browser_viewports": [
+    375,
+    768,
+    1440
+  ],
+  "browser_download_count": 2,
+  "browser_downloads": {
+    "worker": {
+      "sha256": "1205fe7fb0375d5b8606687420e5e88f90b76c6f935fdf48c3fcc69ba4d12920",
+      "bytes": 14067,
+      "template_id": "weinan-610522-worker-application",
+      "contract_id": "3e9386da32541813132ad440358b06004c2d3bec721afb57fe0f2aea2aa4d995"
+    },
+    "employer": {
+      "sha256": "0de99b63850079683d1e9a72995f8a383a5efa9ec6b41051e4d2e2517023d499",
+      "bytes": 14053,
+      "template_id": "weinan-610522-employer-application",
+      "contract_id": "e23e04c122c0e440c6d8f3bdeec7d00414ed282dbcac74d126f8c21904359075"
+    }
+  },
+  "isolated_neighbors": 3,
+  "local_regression_tests": 49,
+  "frontend_typecheck": "PASS",
+  "no_original_or_generated_document_in_commit": true
+}
