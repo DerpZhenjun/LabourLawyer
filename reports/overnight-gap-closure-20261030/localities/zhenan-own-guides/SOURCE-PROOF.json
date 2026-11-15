@@ -1,0 +1,58 @@
+{
+  "region_code": "611025",
+  "city": "商洛市",
+  "district": "镇安县",
+  "authority": "镇安县人社局",
+  "home": "https://www.zazf.gov.cn/",
+  "home_sha256": "788c457097f1a05c134a0ebd24f48f72e8e0f0afe7b1c6cabf4286f2dcda295a",
+  "portal": "https://zwfw.shaanxi.gov.cn/#/index?siteCode=611025000000",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1117030152103&siteCode=611025000000",
+      "collected_at": "2026-11-15T15:11:20.179Z",
+      "receipt_sha256": "d2abde2f93df0ce63dee06be73078071db0d9ffb29bfe09d6a9ceec41a49e5ab",
+      "guide_sha256": "3a90543c510444d08ce709812a1478319394f56dbbf0f400fabaea1b2864c687",
+      "commitment_workdays": 5,
+      "venue": "陕西省商洛市镇安县永乐街道 张家巷子6号鼎立国际4楼办公楼(办理窗口:鼎立国际（办公楼）4楼410办公室)",
+      "phone": "0914-5328722",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "无",
+          "portal_label": "样表",
+          "sample_sha256": "8368475b63b14a92583d85f14b204224dc90ed4fa89db735bd1ebaa6c8933d4c",
+          "format": "doc"
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1115613152203&siteCode=611025000000",
+      "collected_at": "2026-11-15T15:11:20.415Z",
+      "receipt_sha256": "7aeddda6ff66f1bed1fcd2e0de5f589fc81e7d8fec6bc2afb956027f23220101",
+      "guide_sha256": "bfa7bc64088ddc00736b8951422d1caa2948bde7a3e95d9f3c5b89a9fba17985",
+      "commitment_workdays": 3,
+      "venue": "陕西省商洛市镇安县永乐街道 张家巷子6号鼎立国际4楼办公楼(办理窗口:鼎立国际（办公楼）4楼407办公室)",
+      "phone": "0914-5339370",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "无",
+          "portal_label": "样表",
+          "sample_sha256": "8368475b63b14a92583d85f14b204224dc90ed4fa89db735bd1ebaa6c8933d4c",
+          "format": "doc"
+        }
+      ]
+    }
+  },
+  "sample_review": {
+    "same_bytes_across_roles": true,
+    "pages": 1,
+    "word_receipt_sha256": "444e5356c4fac6fd055d56f569079104217ef6c4930bc1223ac07dfe65f685ce"
+  }
+}
