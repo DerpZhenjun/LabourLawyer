@@ -1,4 +1,5 @@
 """The own-source applications cannot borrow a county or an evidence template."""
+from hashlib import sha256
 from io import BytesIO
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -165,3 +166,35 @@ class BaojiCountyApplicationAPITests(TestCase):
                         self.assertEqual(client.get(f'/regional/templates/{template_id}', params=scope).status_code, 404)
                         self.assertEqual(client.get('/regional/form-contract', params=query).status_code, 409)
                         self.assertEqual(client.post('/regional/generate', json={**query,'mode':'blank','data':{}}).status_code, 409)
+
+
+    def test_chencang_authorization_is_a_bound_download_only_blank(self):
+        from regional_baoji_county_application import staged_chencang_authorization_guide, staged_guide_without_generation
+
+        with TemporaryDirectory() as work:
+            store = RegionalStore(Path(work) / 'guide.sqlite')
+            previous = store.put_guide(staged_guide_without_generation('610304', ROOT))
+            guide = store.put_guide(staged_chencang_authorization_guide(ROOT))
+            self.assertGreater(guide['version'], previous['version'])
+            self.assertEqual(guide['materials'], previous['materials'])
+            self.assertFalse(guide['can_generate'])
+            self.assertIn('受理通知书或应诉通知书', ' '.join(guide['warnings']))
+            template, = [t for t in guide['templates'] if t['official_kind'] == 'blank']
+            self.assertFalse(template['can_generate'])
+            self.assertEqual(template['region_code'], '610304')
+            self.assertEqual(template['source_url'], guide['source_url'])
+            scope = {key: guide[key] for key in ('province', 'city', 'district', 'source_id', 'version')}
+            app = FastAPI()
+            app.include_router(routes.router, prefix='/regional')
+            with patch.object(routes, 'ROOT', ROOT), patch.object(routes, 'store', return_value=store), TestClient(app) as client:
+                path = f"/regional/templates/{template['id']}"
+                response = client.get(path, params=scope)
+                self.assertEqual(response.status_code, 200)
+                self.assertEqual(sha256(response.content).hexdigest(), template['sha256'])
+                self.assertEqual(client.get(path, params={**scope,'version':previous['version']}).status_code, 409)
+                self.assertEqual(client.get(path, params={'province':'shaanxi','city':'宝鸡市','district':'扶风县'}).status_code, 404)
+                query = {**scope, 'template_id': template['id'], 'kind': 'application'}
+                self.assertEqual(client.get('/regional/form-contract', params=query).status_code, 409)
+                self.assertEqual(client.post('/regional/generate', json={**query,'mode':'blank','data':{}}).status_code, 409)
+                with patch.object(store, 'lookup', return_value={**guide, 'warnings': []}):
+                    self.assertEqual(client.get(path, params=scope).status_code, 409)

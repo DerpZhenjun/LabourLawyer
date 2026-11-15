@@ -37,6 +37,10 @@ WEIBIN_FENGXIANG_PROOF = Path('reports/overnight-gap-closure-20261030/localities
 WEIBIN_FENGXIANG_PROOF_SHA = '46cc84018feaf65a8784e54f72acef6e5a60908d7ca6bfe3c7b8237a91948b61'
 FOLLOWUP_GUIDE_PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-qianyang-chencang-fufeng-worker/SOURCE-PROOF.json')
 FOLLOWUP_GUIDE_PROOF_SHA = 'c31d2074ff70ff31be4403911896362871c7497c69e15bacc9279a2f19d1bc1f'
+CHENCANG_AUTHORIZATION_PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-chencang-authorization/SOURCE-PROOF.json')
+CHENCANG_AUTHORIZATION_PROOF_SHA = 'ecfb3635c9e1401761841fb8ef74b8ee9028297e936593d6716baeb2205218c9'
+CHENCANG_AUTHORIZATION_LAYOUT = Path('templates/_docx/_regional/shaanxi/baoji-610304-authorization.docx')
+CHENCANG_AUTHORIZATION_ID = 'baoji-610304-authorization'
 SHARED = 'shaanxi_baoji_qishan_long_worker_v1'
 MEI = 'shaanxi_baoji_mei_worker_v1'
 LINYOU = 'shaanxi_baoji_linyou_worker_v1'
@@ -498,3 +502,29 @@ def staged_guide_without_generation(code, root=None):
     guide.update(source_id=digest(guide['source_url'])[:24],
                  source_version=digest(guide['source_version'] + ':' + pinned_hash))
     return guide
+
+
+def staged_chencang_authorization_guide(root=None):
+    root = Path(ROOT if root is None else root).resolve()
+    guide = staged_guide_without_generation('610304', root)
+    proof = json.loads(_pinned_bytes(root, CHENCANG_AUTHORIZATION_PROOF, CHENCANG_AUTHORIZATION_PROOF_SHA))
+    if proof['region_code'] != guide['region_code'] or proof['source_url'] != guide['source_url']:
+        raise ValueError('陈仓区委托书来源与办理指南不匹配')
+    guide['source_version'] = digest(guide['source_version'] + ':' + CHENCANG_AUTHORIZATION_PROOF_SHA)
+    guide['warnings'].append('陈仓区授权委托书可下载空白转换版。' + proof['submission_note'])
+    guide['templates'].append({
+        'id': CHENCANG_AUTHORIZATION_ID, 'region_code': guide['region_code'], 'official_kind': 'blank',
+        'source_url': proof['source_url'], 'official_attachment_entry': 'material_tab',
+        'official_sha256': proof['official_sha256'], 'official_bytes': proof['official_bytes'],
+        'file': CHENCANG_AUTHORIZATION_LAYOUT.as_posix(), 'file_type': 'docx',
+        'file_origin': 'official-blank-converted-layout', 'original_format': proof['original_format'],
+        'original_name': '陈仓区授权委托书（空白转换版）.docx', 'download_status': 'downloaded',
+        'sha256': proof['layout_sha256'], 'document_types': [], 'can_generate': False,
+    })
+    return guide
+
+
+def check_chencang_authorization(guide, template, root):
+    expected = staged_chencang_authorization_guide(root)
+    if template != expected['templates'][-1] or any(guide.get(key) != value for key, value in expected.items()):
+        raise ValueError('陈仓区授权委托书与当前指南不匹配')

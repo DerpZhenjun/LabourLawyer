@@ -23,6 +23,7 @@ from regional_luohu_collective import (
 from regional_baoji_county_application import (
     MODELS_BY_ADAPTER as BAOJI_WORKER_MODELS, LAYOUTS as BAOJI_WORKER_LAYOUTS,
     FENGXIAN_LAYOUT, FENGXIAN_ORIGIN, check_fengxian_blank,
+    CHENCANG_AUTHORIZATION_ID, CHENCANG_AUTHORIZATION_LAYOUT, check_chencang_authorization,
     checked_adapter as checked_baoji_worker_adapter, fill_application as fill_baoji_worker_application,
 )
 from regional_baoji_evidence import (
@@ -343,9 +344,13 @@ def download(template_id: str,province: str=Query(max_length=30),city: str=Query
     baoji_worker_layout = (t.get('adapter') in BAOJI_WORKER_MODELS or
                            any(t.get('file') == path.as_posix() for path in BAOJI_WORKER_LAYOUTS.values()))
     fengxian_blank = t.get('file') == FENGXIAN_LAYOUT.as_posix() or t.get('file_origin') == FENGXIAN_ORIGIN
-    if converted or baoji_layout or baoji_worker_layout or fengxian_blank:
+    chencang_authorization = (t.get('id') == CHENCANG_AUTHORIZATION_ID or
+                              t.get('file') == CHENCANG_AUTHORIZATION_LAYOUT.as_posix())
+    if converted or baoji_layout or baoji_worker_layout or fengxian_blank or chencang_authorization:
         try:
-            if fengxian_blank:
+            if chencang_authorization:
+                check_chencang_authorization(g, t, ROOT)
+            elif fengxian_blank:
                 check_fengxian_blank(g, t, ROOT)
             elif baoji_worker_layout:
                 checked_baoji_worker_adapter(g, t, 'application', root=ROOT)
@@ -362,7 +367,7 @@ def download(template_id: str,province: str=Query(max_length=30),city: str=Query
     path = checked_path(t,g)
     headers = {'Cache-Control':'no-store', 'X-Guide-Source-ID':g.get('source_id',''),
                'X-Guide-Version':str(g.get('version','')), 'X-Template-SHA256':t['sha256']}
-    if baoji_worker_layout or fengxian_blank:
+    if baoji_worker_layout or fengxian_blank or chencang_authorization:
         headers['X-Document-Origin'] = t['file_origin']
     elif baoji_layout:
         headers['X-Document-Origin'] = BAOJI_LAYOUT_ORIGIN
