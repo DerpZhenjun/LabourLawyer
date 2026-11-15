@@ -1,0 +1,182 @@
+{
+  "city": "榆林市",
+  "district": "清涧县",
+  "region_code": "610830",
+  "authority": "清涧县人社局",
+  "consultation_phone": "0912-5211486",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610830000000",
+  "department_portal": "https://zwfw.shaanxi.gov.cn/pc/#/c/department?siteCode=610830000000&deptCode=11610830770021019H&deptName=%E5%8E%BF%E4%BA%BA%E7%A4%BE%E5%B1%80",
+  "department_code": "11610830770021019H",
+  "attachment_receipt_sha256": "85b8ed8840c9554a3bc8f2488056c853561784234859b676a50a68bb5b1bf676",
+  "static_preflight_sha256": "257653accc3d8e1584974bfda48e6eda151a8247f4ad014689d4ce032fc670a6",
+  "static_document_content_sha256": "5c0cd56d0cf2c0721c7e37094d231d90e0c5da5b1e13fa901fca39cef66dd214",
+  "body_diagnostic_sha256": "e56c726ca39a239acfcf57e33d610da0936119b161cf592172f197dc4f7e475e",
+  "attachment_review": {
+    "both_application_blank_labels_have_same_body_text": true,
+    "both_application_blank_container_sha_distinct": true,
+    "application_blank_natural_person_fields_present": true,
+    "proxy_all_four_links_same_bytes": true,
+    "proxy_suffix_jpg_detected_png": true,
+    "native_word_review": "held_custom_xml",
+    "verified_blank_templates": 0
+  },
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1117472284521&siteCode=610830000000",
+      "collected_at": "2026-11-15T19:40:16.981Z",
+      "raw_receipt_sha256": "0fd650ed1b9b712acc4d30856fc6771f54e8ce584096ef9015b918bbd9b2f5bb",
+      "office": "陕西省榆林市清涧县宽州镇 北街与育才街交叉口西北150米清涧县政务大厅(北街)(办理窗口:27号窗口)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "电子或纸质",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOCX",
+              "sha256": "d157785413c7a560e9de7789410f71f4d6e03328e1fcd421466e787c8c838efd",
+              "captured_at": "2026-11-15T19:41:02.613902+00:00",
+              "time_source": "file_write_time_prior_partial_run"
+            },
+            {
+              "portal_label": "空表",
+              "format": "DOCX",
+              "sha256": "94dc67c1b0913b2e3c7f4e5f244c390d19c626fd5c109b5eab0f494caa31d1e1",
+              "captured_at": "2026-11-15T19:41:02.770892+00:00",
+              "time_source": "file_write_time_prior_partial_run"
+            }
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "original_copy": "复印件",
+          "format": "电子或纸质",
+          "copies": "复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "PNG",
+              "sha256": "4f3467ed3f44eba23f77a94807e60a2e4b0ab47aa9535faac6e3f12c64ecaf35",
+              "captured_at": "2026-11-15T19:41:03.772397+00:00",
+              "time_source": "file_write_time_prior_partial_run"
+            },
+            {
+              "portal_label": "空表",
+              "format": "PNG",
+              "sha256": "4f3467ed3f44eba23f77a94807e60a2e4b0ab47aa9535faac6e3f12c64ecaf35",
+              "captured_at": "2026-11-15T19:41:04.980510+00:00",
+              "time_source": "file_write_time_prior_partial_run"
+            }
+          ]
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "电子或纸质",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "PNG",
+              "sha256": "5605c545b63648cd5da047d215e643eda0054cc2b757d6909795b19fb7dc9a7e",
+              "captured_at": "2026-11-15T19:41:57.574885+00:00",
+              "time_source": "http_read"
+            },
+            {
+              "portal_label": "空表",
+              "format": "PNG",
+              "sha256": "5605c545b63648cd5da047d215e643eda0054cc2b757d6909795b19fb7dc9a7e",
+              "captured_at": "2026-11-15T19:41:58.119407+00:00",
+              "time_source": "http_read"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1113754265638&siteCode=610830000000",
+      "collected_at": "2026-11-15T19:40:17.212Z",
+      "raw_receipt_sha256": "4809f9f63f9ad1d330c18a7366fac75cc23a156383bb20c262bbbf94a21d0dfa",
+      "office": "陕西省榆林市清涧县宽州镇 北街与育才街交叉口西北150米清涧县政务大厅(北街)(办理窗口:27号)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "PNG",
+              "sha256": "5605c545b63648cd5da047d215e643eda0054cc2b757d6909795b19fb7dc9a7e",
+              "captured_at": "2026-11-15T19:41:58.566591+00:00",
+              "time_source": "http_read"
+            },
+            {
+              "portal_label": "空表",
+              "format": "PNG",
+              "sha256": "5605c545b63648cd5da047d215e643eda0054cc2b757d6909795b19fb7dc9a7e",
+              "captured_at": "2026-11-15T19:41:58.972900+00:00",
+              "time_source": "http_read"
+            }
+          ]
+        },
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOCX",
+              "sha256": "4d298b0a2f21aafec82d1c56234efd7ca73c3dfc3b03ec5b86b9ee0621df339a",
+              "captured_at": "2026-11-15T19:41:59.139362+00:00",
+              "time_source": "http_read"
+            },
+            {
+              "portal_label": "空表",
+              "format": "DOCX",
+              "sha256": "b49d1e92d038e99df78d3de78f483944b8919e4fdee2922ce4efed403de4aa89",
+              "captured_at": "2026-11-15T19:41:59.292919+00:00",
+              "time_source": "http_read"
+            }
+          ]
+        },
+        {
+          "key": "representative",
+          "name": "申请机构法定代表人及主要负责人证明",
+          "required": "必要",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "空表",
+              "format": "JPEG",
+              "sha256": "24941a85308cf11279789b3eafa214ea962279a4caabbd066d45ffae399fa23f",
+              "captured_at": "2026-11-15T19:41:59.565653+00:00",
+              "time_source": "http_read"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
