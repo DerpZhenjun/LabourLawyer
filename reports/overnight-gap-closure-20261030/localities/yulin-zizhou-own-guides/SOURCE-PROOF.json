@@ -1,0 +1,120 @@
+{
+  "city": "榆林市",
+  "district": "子洲县",
+  "region_code": "610831",
+  "authority": "子洲县人社局",
+  "department_code": "116108310160931333",
+  "consultation_phone": "0912-7230220",
+  "complaint_phone": "0912-7221158",
+  "department_url": "https://zwfw.shaanxi.gov.cn/pc/#/c/department?siteCode=610831000000&deptCode=116108310160931333&deptName=%E5%8E%BF%E4%BA%BA%E7%A4%BE%E5%B1%80",
+  "raw_receipts_sha256": {
+    "WORKER-RAW-RECEIPT.json": "14b93e52ebc521d4d48278e823b510afabbc20b3c3dc91283534a0fec5906958",
+    "EMPLOYER-RAW-RECEIPT.json": "3cbf4b473a54ad35d51001859b1d908047f97ef993b05f7ee8b04ccefcda3c59",
+    "DETAILED-RAW-RECEIPTS.json": "b20f1f12c378144abb643820d2513865d80b389c73c64c42f041b2585b7a3534",
+    "DETAILED-SECTION-RECEIPTS.json": "9a3f4d890c79153317ef30ef75bad85d724d2a4c4c15d2205615aa24b1ca1144"
+  },
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1110283141041&siteCode=610831000000",
+      "collected_at": "2026-11-15T19:55:29.247Z",
+      "office": "陕西省榆林市子洲县榆林市-子洲县-丰庆路与东关大街交叉路口西南侧(子洲中学南侧约50米)子洲县人力资源市场(办理窗口:4楼414)",
+      "hours": "星期一至星期五上午09:00至12:00,下午14:00至18:00(法定节假日除外)",
+      "statutory_workdays": 5,
+      "commitment_workdays": 0,
+      "channel": "窗口办理",
+      "online_available": false,
+      "fee": "不收费",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件3 份",
+          "required": "必要",
+          "attachment": {
+            "label": "样表",
+            "format": "JPEG",
+            "captured_at": "2026-11-15T19:54:32.2047479Z",
+            "sha256": "bc225014699bab0c42e496fcd7761b7ae4f6e05156876e38932029e0e0c27cd4",
+            "bytes": 3272031,
+            "width": 4608,
+            "height": 3456
+          }
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "required": "必要",
+          "attachment": {
+            "label": "样表",
+            "format": "JPEG",
+            "captured_at": "2026-11-15T19:54:32.9967537Z",
+            "sha256": "2168bbf8557886432b8261e853afc9373c5c430a98cfb2b860c950f29dc796b2",
+            "bytes": 3366882,
+            "width": 3456,
+            "height": 4608
+          }
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1113197140955&siteCode=610831000000",
+      "collected_at": "2026-11-15T19:55:29.491Z",
+      "office": "陕西省榆林市子洲县 榆林市-子洲县-丰庆路与东关大街交叉路口西南侧(子洲中学南侧约50米)子洲县人力资源市场(办理窗口:4楼414室)",
+      "hours": "星期一至星期五上午09:00至12:00,下午14:00至18:00(法定节假日除外)",
+      "statutory_workdays": 5,
+      "commitment_workdays": 0,
+      "channel": "窗口办理",
+      "online_available": false,
+      "fee": "不收费",
+      "materials": [
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "required": "必要",
+          "attachment": {
+            "label": "样表",
+            "format": "JPEG",
+            "captured_at": "2026-11-15T19:54:35.3382353Z",
+            "sha256": "2168bbf8557886432b8261e853afc9373c5c430a98cfb2b860c950f29dc796b2",
+            "bytes": 3366882,
+            "width": 3456,
+            "height": 4608
+          }
+        },
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件3 份",
+          "required": "必要",
+          "attachment": {
+            "label": "样表",
+            "format": "JPEG",
+            "captured_at": "2026-11-15T19:54:36.4863424Z",
+            "sha256": "bc225014699bab0c42e496fcd7761b7ae4f6e05156876e38932029e0e0c27cd4",
+            "bytes": 3272031,
+            "width": 4608,
+            "height": 3456
+          }
+        }
+      ]
+    }
+  },
+  "attachment_review": {
+    "site_label": "样表",
+    "verified_jpeg_links": 4,
+    "distinct_sha256": 2,
+    "downloadable_blank_verified": false
+  }
+}
