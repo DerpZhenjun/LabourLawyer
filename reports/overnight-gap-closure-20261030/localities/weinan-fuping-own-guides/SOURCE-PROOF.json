@@ -1,0 +1,151 @@
+{
+  "region_code": "610528",
+  "city": "渭南市",
+  "district": "富平县",
+  "authority": "富平县人力资源和社会保障局",
+  "official_home": "https://www.fuping.gov.cn/",
+  "official_home_sha256": "8a6686b162ed0e2582057b319c5c59ab000c1e6c3c6b1524d222aff3c0086a63",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610528000000",
+  "department_code": "11610528016033114U",
+  "consultation_phone": "0913-8211637",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1116912287025&siteCode=610528000000",
+      "collected_at": "2026-11-15T17:14:05.304Z",
+      "raw_receipt_sha256": "ed398f27dc2146a14768328152056dc2d47348f1f5aa35f57776d330b6be01af",
+      "office": "陕西省渭南市富平县 人民路48号富平县人力资源和社会保障局(办理窗口:四楼劳动仲裁院)",
+      "commitment_workdays": 0,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "7ab1104db06ca2a027aefbb0a54479322ac1c1ca95c5ead6fa5d2096c71d4592",
+            "captured_at": "2026-11-15T17:14:31.6187901Z"
+          }
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "a78ee00342a8a39de777a50a08aa71e5d4562d82793b45ec0eae70b4ed1c7e30",
+            "captured_at": "2026-11-15T17:14:31.8803916Z"
+          }
+        },
+        {
+          "key": "business-license",
+          "name": "企业法人营业执照",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "PNG",
+            "sha256": "428399d2a85280d69042c784e474ef8994c0a0976afe83f98d9525ee0b42e371",
+            "captured_at": "2026-11-15T17:14:32.2529972Z"
+          }
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "容缺后补",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "df28b584e75f927ab0c9e55d50eed0b6445bce402d0ebf3b6262cb077b35e51d",
+            "captured_at": "2026-11-15T17:14:32.5380355Z"
+          }
+        },
+        {
+          "key": "relationship",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "449756f200aef8cd67311e9b08c9184c7f4c0b81d4513de1536fa10fdf7af90e",
+            "captured_at": "2026-11-15T17:14:32.7926830Z"
+          }
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1118652291691&siteCode=610528000000",
+      "collected_at": "2026-11-15T17:14:05.544Z",
+      "raw_receipt_sha256": "28d871cf4fee137f189c3d6dc63595aa127da44cef7c9a6e48ccef290e56f5cf",
+      "office": "陕西省渭南市富平县 人民路48号富平县人力资源和社会保障局(办理窗口:人社局四楼劳动仲裁院)",
+      "commitment_workdays": 0,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "7ab1104db06ca2a027aefbb0a54479322ac1c1ca95c5ead6fa5d2096c71d4592",
+            "captured_at": "2026-11-15T17:14:34.1966631Z"
+          }
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "00fc5950cb17cac740f7633b4e82177b3686e2005363f3de1d58a9aee46bb181",
+            "captured_at": "2026-11-15T17:14:34.5523993Z"
+          }
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "df28b584e75f927ab0c9e55d50eed0b6445bce402d0ebf3b6262cb077b35e51d",
+            "captured_at": "2026-11-15T17:14:35.1078491Z"
+          }
+        },
+        {
+          "key": "relationship",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "99b56ade823d7a3272dbea82f6003b4516a9744e75cecebcaa2d5e217b18f5a1",
+            "captured_at": "2026-11-15T17:14:35.4053253Z"
+          }
+        },
+        {
+          "key": "business-license",
+          "name": "企业法人营业执照",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "1383b25742effe8e94e2f8cc5a65b57ff86a4d1718ba3fa2fa3f5b2886a3c288",
+            "captured_at": "2026-11-15T17:14:35.7611903Z"
+          }
+        }
+      ]
+    }
+  },
+  "attachment_count": 10,
+  "distinct_attachment_sha_count": 8,
+  "official_blanks_verified": 0,
+  "attachment_receipt_sha256": "f79b85a70c7241ea0dfabc0c4f7316de9834afef270393424a83ab99c435a1a2",
+  "image_preflight_sha256": "b71860a2efea4e541bef54bc6c1fa97b870c2ba7641c38b79fb16536abcc8243",
+  "image_content_review_state": "DECODE_AND_BYTE_PARITY_ONLY",
+  "application_samples_same_bytes": true,
+  "proxy_samples_same_bytes": true
+}
