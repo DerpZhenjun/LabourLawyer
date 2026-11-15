@@ -1,0 +1,135 @@
+{
+  "area": {
+    "province_name": "陕西省",
+    "city": "安康市",
+    "district": "市本级",
+    "region_code": "610900",
+    "authority": "安康市人力资源和社会保障局"
+  },
+  "government_home": "https://www.ankang.gov.cn/",
+  "government_home_sha256": "8eee5d1d4de77248d2a89694e5e240be7368fc838c1ef5268d2f53db50451293",
+  "portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610900000000",
+  "phone": "0915-3214125",
+  "authorization_sample": {
+    "pages": 1,
+    "interactive_fields": 0,
+    "pdf_render_sha256": "c1e30e064ee03e8b8257f364dc07b1f79e932eab60d7b31b850ca75a770f6798"
+  },
+  "roles": {
+    "worker": {
+      "label": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1117911280248&siteCode=610900000000",
+      "captured_at": "2026-11-15T13:52:15.109Z",
+      "guide_sha256": "07e2523abafabd48b11280c7fa6b228d70e81362aec4f4b6f6bac3d1359e9d79",
+      "receipt_sha256": "29394806780037e1cd778a63bec4c570397f04f9115df5fb2bd6d2467de72f7f",
+      "venue": "陕西省安康市汉滨区 高新区数字化创业中心(办理窗口:9楼947室调解仲裁科)",
+      "commitment_workdays": 5,
+      "application_review": {
+        "native_pages": 1,
+        "render_sha256": "3bbb5745202636b31681a99c17127acf65c934a36deb51270e3f3b4fb714d3b3",
+        "recipient_verified": "安康市劳动人事争议仲裁委员会",
+        "company_stamp_marker_present": false
+      },
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "attachment_sha256": "6a6724563fa35ea3479a9e44aae66c314820fb8789a2a697901585392109f0ba",
+          "attachment_format": "doc"
+        },
+        {
+          "key": "work-permit",
+          "name": "外国人就业证",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": null,
+          "attachment_sha256": null,
+          "attachment_format": null
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": null,
+          "attachment_sha256": null,
+          "attachment_format": null
+        },
+        {
+          "key": "evidence",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "attachment_sha256": "d8bd10c0b9f122aeaf7c0c2ee0f9b9cb029680859c1fe09532ad36c519d8ba9d",
+          "attachment_format": "jpg"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "attachment_sha256": "5efabf59bae01c2b542fe39227dbd966ae72863ee3b5153de0eb6d6d942073f7",
+          "attachment_format": "pdf"
+        }
+      ]
+    },
+    "employer": {
+      "label": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1115316280701&siteCode=610900000000",
+      "captured_at": "2026-11-15T13:52:15.356Z",
+      "guide_sha256": "12d8312a8551354c928ffbce2b0e79c38ceb1d7dd064044b54b076fb681130e3",
+      "receipt_sha256": "10e6a7311f9061bebbba7733c5e3828c3baf17d5bf1ac3c69465d67acad7b3c2",
+      "venue": "陕西省安康市汉滨区 汉滨区高新区数字化创业中心9楼947室(办理窗口:9楼947室调解仲裁科)",
+      "commitment_workdays": 5,
+      "application_review": {
+        "native_pages": 1,
+        "render_sha256": "6f6224f0bba82fd29def3a0b25a5f4dc52d875481106556732342dc9940b02dd",
+        "recipient_verified": null,
+        "company_stamp_marker_present": true
+      },
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "填写请求事项和事实与理由",
+          "official_attachment_label": "样表",
+          "attachment_sha256": "2cbd350da9acb5c544b618026ff08ed4acf17bda2f4c38705e3fe4d3b8be1039",
+          "attachment_format": "doc"
+        },
+        {
+          "key": "license",
+          "name": "工商营业执照及复印件",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "attachment_sha256": "5e5f4dcafe878b4507afb61acef6d09dcbae86a1b7af0787acd89c43c238bcba",
+          "attachment_format": "jpg"
+        },
+        {
+          "key": "authorization",
+          "name": "委托人授权委托书",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "attachment_sha256": "5efabf59bae01c2b542fe39227dbd966ae72863ee3b5153de0eb6d6d942073f7",
+          "attachment_format": "pdf"
+        },
+        {
+          "key": "evidence",
+          "name": "劳动关系证明材料",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "attachment_sha256": "d8bd10c0b9f122aeaf7c0c2ee0f9b9cb029680859c1fe09532ad36c519d8ba9d",
+          "attachment_format": "jpg"
+        }
+      ]
+    }
+  }
+}
