@@ -101,7 +101,7 @@ const isJiangsuOwn=computed(()=>special.value==='jiangsu'),isZhejiangOwn=compute
 const isHunan=computed(()=>special.value==='hunan'),isFeidong=computed(()=>special.value==='feidong')
 const isBlank=computed(()=>contract.value?.context.mode==='blank')
 const employerOnly=computed(()=>template.value?.service_object==='用人单位')
-const workerManualRecipient=computed(()=>['shaanxi_danfeng_worker_application_v1','shaanxi_shangnan_worker_application_v1'].includes(contract.value?.context.adapter??''))
+const workerManualRecipient=computed(()=>['shaanxi_danfeng_worker_application_v1','shaanxi_shangnan_worker_application_v1','shaanxi_shanyang_worker_application_v1'].includes(contract.value?.context.adapter??''))
 const signInstruction=computed(()=>{
   if(workerManualRecipient.value)return'请核对并补齐文末仲裁委员会名称，再手写签名和日期。'
   if(template.value?.manual_signing==='signature_fingerprint')return'请按原件要求签名、按手印并填写日期。'

@@ -1,0 +1,172 @@
+{
+  "area": {
+    "city": "商洛市",
+    "district": "山阳县",
+    "province_name": "陕西省",
+    "region_code": "611024",
+    "authority": "山阳县人力资源和社会保障局"
+  },
+  "home_url": "https://www.shy.gov.cn/",
+  "home_sha256": "f5d3e1a81ce31dba482eef28e1f079a00bf70584649009cce8ecfdc3658a7d5a",
+  "portal_url": "https://zwfw.shaanxi.gov.cn/#/index?siteCode=611024000000",
+  "roles": {
+    "worker": {
+      "label": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1110233211225&siteCode=611024000000",
+      "collected_at": "2026-11-15T14:57:02.020Z",
+      "guide_sha256": "4b2bf1d6ac5ba40c94ee723230cffb9cd53924e77a93cc23ca360a25f80b5a3f",
+      "receipt_sha256": "8eb2f79a29fd5837fa57ae08b78b4cefefb1c78c8c0dae659d0eb4e9591de9f0",
+      "commitment_workdays_as_displayed": 0,
+      "venue": "陕西省商洛市山阳县 G70(福银高速)(办理窗口:无)",
+      "phone": "0914-8881898",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "1、填写本申请书前，请先读本《填写须知》。 2、本申请书必须用钢笔或签字笔书写，自迹要工整，内容要简明扼要，申请人必须填写清楚申请人的姓名、性别、出生时间，工作单位、住址、联系电话、邮政编码及被申请人名称、法定代表人姓名和职务、联系电话、通讯地址、邮政编码。 3、 请求事项，即申请人要达到的目的。仲裁请求，必须逐项书写清楚。 4、写明事实与理由，要求申请人将争议发生的经过及申请人所持的观点交代清楚。叙述时，观点必须鲜明. 5、申请人签名，要求申请人本人填写、加盖指印，并填写清楚日期。 6、如申请人诉多个被申请人时，可按照本《申请书》的格式样本制作，增加被申请人，纸张大小要求A4型号。如用人单位作为被申请人时，申请人的基本情况可参照本《申请书》格式中被申请人的基本简况来设计、制作，被申请人的基本简况可参照本《申请书》格式中申请人的基本简况来设计、制作。 7、“事实与理由”部分的空格不够时，可增加中页. 8、申请书副本份数应按被申请人的个数提交。 9、被申请人向劳动争议仲裁委员会提交答辩书时，纸张及字体大小要求A4型号，3号字型。",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "bb238f3b7d9fad0162771958bd25e4a36a2023b60c89e6f7f61f3449504c25c3",
+              "size": 3340715,
+              "file_type": "jpg"
+            },
+            {
+              "portal_label": "空表",
+              "sha256": "6f55277834421e8247304f30ec5b68ec3d21f1e81641a73f3e80b6fb51110ba9",
+              "size": 16628,
+              "file_type": "docx",
+              "source_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/01/69/rBgBU2OhFCCARw88AABA9PQrHzY04.docx"
+            }
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "instructions": "无",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "a4bef10ff0bf0e2aa42c7f19822da2b93d6c4d8eb39d41fbc781d4548f0459f6",
+              "size": 35132,
+              "file_type": "png"
+            }
+          ]
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "非必要",
+          "instructions": "无",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "8f084a1ffae1004eb9176244cd896979565aafbf453d175d393d90be5efe98f5",
+              "size": 12755,
+              "file_type": "docx"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "instructions": "产生法律效力的劳动合同",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "95a59c3289ebdfdb255f36a42b74d3f6447c7fde1bbcc2e7afc0cb574ae23dd4",
+              "size": 41168,
+              "file_type": "png"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "label": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1117581208319&siteCode=611024000000",
+      "collected_at": "2026-11-15T14:57:02.254Z",
+      "guide_sha256": "6089ea86f4efc742cf21add7e6258c21333a62a366ce21fca4636545daf20e47",
+      "receipt_sha256": "6313fb125222761a6f868fe7972b4051a2c85cd04daa2aaa9c8d630ab50718a6",
+      "commitment_workdays_as_displayed": 0,
+      "venue": "陕西省商洛市山阳县城关街道 北新街建行巷里面(办理窗口:人社局北五楼)",
+      "phone": "0914-8881898",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "1、填写本申请书前，请先读本《填写须知》。 2、本申请书必须用钢笔或签字笔书写，自迹要工整，内容要简明扼要，申请人必须填写清楚申请人的姓名、性别、出生时间，工作单位、住址、联系电话、邮政编码及被申请人名称、法定代表人姓名和职务、联系电话、通讯地址、邮政编码。 3、 请求事项，即申请人要达到的目的。仲裁请求，必须逐项书写清楚。 4、写明事实与理由，要求申请人将争议发生的经过及申请人所持的观点交代清楚。叙述时，观点必须鲜明. 5、申请人签名，要求申请人本人填写、加盖指印，并填写清楚日期。 6、如申请人诉多个被申请人时，可按照本《申请书》的格式样本制作，增加被申请人，纸张大小要求A4型号。如用人单位作为被申请人时，申请人的基本情况可参照本《申请书》格式中被申请人的基本简况来设计、制作，被申请人的基本简况可参照本《申请书》格式中申请人的基本简况来设计、制作。 7、“事实与理由”部分的空格不够时，可增加中页. 8、申请书副本份数应按被申请人的个数提交。 9、被申请人向劳动争议仲裁委员会提交答辩书时，纸张及字体大小要求A4型号，3号字型。",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "6f55277834421e8247304f30ec5b68ec3d21f1e81641a73f3e80b6fb51110ba9",
+              "size": 16628,
+              "file_type": "docx"
+            },
+            {
+              "portal_label": "空表",
+              "sha256": "6f55277834421e8247304f30ec5b68ec3d21f1e81641a73f3e80b6fb51110ba9",
+              "size": 16628,
+              "file_type": "docx"
+            }
+          ]
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "instructions": "无",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "ee376da12f25868cec4bca6c5fff0d29a6f1be01ff07a6c48930eb266d009c85",
+              "size": 309171,
+              "file_type": "png"
+            }
+          ]
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "必要",
+          "instructions": "百度检索",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "8f084a1ffae1004eb9176244cd896979565aafbf453d175d393d90be5efe98f5",
+              "size": 12755,
+              "file_type": "docx"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "instructions": "无",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "95a59c3289ebdfdb255f36a42b74d3f6447c7fde1bbcc2e7afc0cb574ae23dd4",
+              "size": 41168,
+              "file_type": "png"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "application_review": {
+    "source_classification": "worker portal blank DOCX with natural-person fields",
+    "same_blank_bytes_across_roles": true,
+    "worker_sample_and_blank_differ": true,
+    "employer_applicant_slots_verified": false,
+    "word_native_pages": 1,
+    "original_sha256": "6f55277834421e8247304f30ec5b68ec3d21f1e81641a73f3e80b6fb51110ba9",
+    "word_receipt_sha256": "26ba37d5a8b9b35091d3df12d2586f765e09187414d463ba7b7323c45f4a1f7b"
+  }
+}
