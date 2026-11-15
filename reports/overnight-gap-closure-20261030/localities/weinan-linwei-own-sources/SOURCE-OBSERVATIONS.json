@@ -1,0 +1,130 @@
+{
+  "region_code": "610502",
+  "region": "渭南市临渭区",
+  "authority": "渭南市临渭区人力资源和社会保障局",
+  "local_home": {
+    "url": "https://www.linwei.gov.cn/",
+    "sha256": "5465beb7c7bd23e1ee65e8992bba7f3a7b107cd1c7952070beeb8d6418b18229",
+    "captured_at": "2026-11-15T15:42:55.4746147Z"
+  },
+  "portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610502000000",
+  "department_code": "11610502016025149F",
+  "consultation_phone": "0913-3030350",
+  "roles": {
+    "worker": {
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1119493301384&siteCode=610502000000",
+      "captured_at": "2026-11-15T15:43:44.764Z",
+      "window": "4楼410办公室",
+      "commitment_workdays_as_displayed": 3,
+      "receipt_sha256": "321c2b317d87f0d161e06452d3d0663e49c7c3c18117538599b8a4a7064d68a3",
+      "materials": [
+        {
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "format": "doc",
+              "bytes": 28672,
+              "sha256": "e0278dd3e0579e423e48511011625acef8f2cc05bdc94bdfbc3d1e426c5d12ec"
+            },
+            {
+              "label": "空表",
+              "format": "doc",
+              "bytes": 57344,
+              "sha256": "ff31800f6ae0c669be45f1644ae3693047b4013d439b83222a24e65e9a5bbcc2"
+            }
+          ]
+        },
+        {
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "format": "docx",
+              "bytes": 544444,
+              "sha256": "3c4b9561937c78419562f3ace86000e931501b37c79581b85995b5db501263d1"
+            }
+          ]
+        },
+        {
+          "name": "授权委托书",
+          "required": "必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "format": "doc",
+              "bytes": 26624,
+              "sha256": "7fdd589d1703bf7f8171901702fd3b07d5e771d97f1fc4fe6caae498c4bde309"
+            },
+            {
+              "label": "空表",
+              "format": "doc",
+              "bytes": 53248,
+              "sha256": "a9126deec8ff900a8f5d935d716eb59fa398bdcf1ae14d4b8eee0f459d9dfdc6"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1116213322195&siteCode=610502000000",
+      "captured_at": "2026-11-15T15:43:45.007Z",
+      "window": "4楼410劳动人事争议仲裁院",
+      "commitment_workdays_as_displayed": 0,
+      "receipt_sha256": "410b3626726b9c8c22623bfb311a2e4f94303316c3256247b5cc2e6f571fd37e",
+      "materials": [
+        {
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "format": "doc",
+              "bytes": 28672,
+              "sha256": "4a1489b8802ecf15720d59f7c65efadf83b8ca6cd4880e9e3a2b26fcd10e3827"
+            },
+            {
+              "label": "空表",
+              "format": "doc",
+              "bytes": 57344,
+              "sha256": "969381d4c5fbea8387b6d756a58f1e7d4b624178685de0961b08128bdeb4684f"
+            }
+          ]
+        },
+        {
+          "name": "授权委托书",
+          "required": "必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "format": "doc",
+              "bytes": 26624,
+              "sha256": "7fdd589d1703bf7f8171901702fd3b07d5e771d97f1fc4fe6caae498c4bde309"
+            }
+          ]
+        },
+        {
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "format": "docx",
+              "bytes": 544444,
+              "sha256": "3c4b9561937c78419562f3ace86000e931501b37c79581b85995b5db501263d1"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "word_preflight_sha256": "53fc4b8e67864f223abf4c9e00ed8c2ca8b4967b5f121678395c492bf76df8bf",
+  "word_pagination_sha256": "931d23f3c500820fbd29d058200cef4555d33e635f9402fb3d48cfed69933dd0",
+  "layout_markers_sha256": "817ba31144a1bbc7cb74731e564b04710cb09cf4efaa81a6bee95a6a99251a11",
+  "page_count_per_portal_blank": 1,
+  "applications_have_distinct_text": true,
+  "generation_approved": false,
+  "published": false
+}
