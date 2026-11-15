@@ -106,6 +106,7 @@ const workerManualRecipient=computed(()=>['shaanxi_danfeng_worker_application_v1
 const tongguanBodyOnly=computed(()=>contract.value?.context.adapter==='shaanxi_tongguan_role_application_v1')
 const xianHighTechBodyOnly=computed(()=>contract.value?.context.adapter==='shaanxi_xian_high_tech_application_v1')
 const signInstruction=computed(()=>{
+  if(contract.value?.context.adapter==='shaanxi_xian_high_tech_evidence_xlsx_v1')return'请按原表填写案号、提交人签名和日期。'
   if(xianHighTechBodyOnly.value)return'此处填写请求事项和事实理由。下载后请补全当事人信息和日期，按原表要求亲笔签名捺印。'
   if(['shaanxi_mizhi_worker_application_v1','shaanxi_qingjian_worker_application_v1'].includes(contract.value?.context.adapter??''))return'此处填写仲裁请求和事实理由。下载后请补全当事人信息、申请人署名和日期。'
   if(contract.value?.context.adapter==='shaanxi_shenmu_worker_evidence_v1')return'下载后请在原表填写提交人和提交时间。'
@@ -121,7 +122,7 @@ const isConverted=computed(()=>isHunan.value||template.value?.file_origin==='off
 const convertedFormat=computed(()=>template.value?.original_format==='WPS'?'WPS':'DOC')
 const isMetadataSanitized=computed(()=>template.value?.file_origin==='official-blank-metadata-sanitized-layout')
 const isWorkbook=computed(()=>contract.value?.context.output_format==='xlsx')
-const sourceDescription=computed(()=>isWorkbook.value?'按留坝县官方证据清单生成 XLSX。表格有 9 行，页数填写正整数，签署栏留空。':isMetadataSanitized.value?'将依据本市官方空白表格的填写版生成。原件可从当地指南的官方附件链接下载。':isConverted.value?`${region.value.case_scope?'仅用于本区集体案。':''}将依据本区官方 ${convertedFormat.value} 空白表的平台转换副本填写。下载结果为 DOCX。`:isBlank.value?`将根据${contract.value?.context.district||''}官网提供的空白表格辅助填写。`:`将根据${contract.value?.context.district||''}官方参考样表辅助填写。它不是官方空白模板。`)
+const sourceDescription=computed(()=>contract.value?.context.adapter==='shaanxi_xian_high_tech_evidence_xlsx_v1'?'按西安高新区官方证据目录填写 12 个空白行。':isWorkbook.value?'按留坝县官方证据清单生成 XLSX。表格有 9 行，页数填写正整数，签署栏留空。':isMetadataSanitized.value?'将依据本市官方空白表格的填写版生成。原件可从当地指南的官方附件链接下载。':isConverted.value?`${region.value.case_scope?'仅用于本区集体案。':''}将依据本区官方 ${convertedFormat.value} 空白表的平台转换副本填写。下载结果为 DOCX。`:isBlank.value?`将根据${contract.value?.context.district||''}官网提供的空白表格辅助填写。`:`将根据${contract.value?.context.district||''}官方参考样表辅助填写。它不是官方空白模板。`)
 const dialog=ref<HTMLElement|null>(null),dialogId=`regional-confirm-${useId()}`
 useDialogFocus(()=>confirmOpen.value,dialog,cancelConfirmation)
 </script>

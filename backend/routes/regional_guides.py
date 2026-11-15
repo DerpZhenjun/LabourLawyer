@@ -76,6 +76,10 @@ from regional_ziyang_worker_reference import (
 from regional_foping_reference import (
     ADAPTER as FOPING_REFERENCE_ADAPTER, FopingReferenceRequest, fill_application as fill_foping_reference,
 )
+from regional_xian_high_tech_evidence import (
+    ADAPTER as XIAN_HIGH_TECH_EVIDENCE_ADAPTER, EvidenceRequest as XianHighTechEvidenceRequest,
+    fill_evidence as fill_xian_high_tech_evidence, with_xian_high_tech_workbook,
+)
 from regional_liuba_evidence import (
     ADAPTER as LIUBA_XLSX_ADAPTER, MIME as XLSX_MIME, EvidenceRequest as LiubaEvidenceRequest,
     fill_evidence as fill_liuba_evidence, with_liuba_workbook,
@@ -206,11 +210,15 @@ def store():
 CaseScope = Literal['collective']
 
 
+def with_local_workbooks(guide, root):
+    return with_xian_high_tech_workbook(with_liuba_workbook(guide, root), root)
+
+
 def lookup(province: str=Query(max_length=30),city: str=Query(max_length=80),district: str=Query(max_length=80),
            case_scope: CaseScope | None = None, xlsx: bool = False):
     guide = store().lookup(province,city,district)
     if xlsx:
-        guide = with_liuba_workbook(guide, ROOT)
+        guide = with_local_workbooks(guide, ROOT)
     templates = guide['templates']
     collective = any(template.get('case_scope') == 'collective' for template in templates)
     if case_scope and not collective:
@@ -261,7 +269,7 @@ def areas(province: str=Query(max_length=30),city: str=Query(default='',max_leng
     for row in rows:
         g=guides.get((province,city,row['district']),{}) if city else {}
         if xlsx:
-            g = with_liuba_workbook(g, ROOT)
+            g = with_local_workbooks(g, ROOT)
         eligible = [template for template in g.get('templates', []) if template.get('can_generate')]
         row.update(source_id=g.get('source_id'), verification_status=g.get('verification_status','unverified'),
                    can_generate=any(not template.get('case_scope') for template in eligible))
@@ -759,6 +767,8 @@ def generation_request_model(adapter,kind):
         return ZiyangWorkerReferenceRequest
     if adapter == FOPING_REFERENCE_ADAPTER and kind == 'application':
         return FopingReferenceRequest
+    if adapter == XIAN_HIGH_TECH_EVIDENCE_ADAPTER and kind == 'evidence':
+        return XianHighTechEvidenceRequest
     if adapter == LIUBA_XLSX_ADAPTER and kind == 'evidence':
         return LiubaEvidenceRequest
     if adapter == XIXIANG_REFERENCE_ADAPTER and kind == 'application':
@@ -799,7 +809,7 @@ def form_contract(province: str=Query(max_length=30),city: str=Query(max_length=
                   xlsx: bool = False):
     g=store().lookup(province,city,district)
     if xlsx:
-        g = with_liuba_workbook(g, ROOT)
+        g = with_local_workbooks(g, ROOT)
     try:
         validate_guide_context(
             g, province=province, city=city, district=district,
@@ -816,13 +826,13 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks, xlsx: b
     # Never log the applicant payload or forward it to OpenClaw.
     g=store().lookup(payload.province,payload.city,payload.district)
     if xlsx:
-        g = with_liuba_workbook(g, ROOT)
+        g = with_local_workbooks(g, ROOT)
     try:
         validate_guide_context(
             g, province=payload.province, city=payload.city, district=payload.district,
             source_id=payload.source_id, version=payload.version)
         t = select_regional_template(g, payload.template_id, payload.kind, mode=payload.mode, case_scope=payload.case_scope)
-        if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER, BAOJI_EVIDENCE_ADAPTER, XIXIANG_REFERENCE_ADAPTER, LIUBA_XLSX_ADAPTER, FOPING_REFERENCE_ADAPTER, ZIYANG_REFERENCE_ADAPTER, ZIYANG_EMPLOYER_REFERENCE_ADAPTER, LUEYANG_APPLICATION_ADAPTER, HANBIN_APPLICATION_ADAPTER, HANYIN_APPLICATION_ADAPTER, BAIHE_APPLICATION_ADAPTER, DANFENG_APPLICATION_ADAPTER, SHANGNAN_APPLICATION_ADAPTER, SHANYANG_APPLICATION_ADAPTER, TONGGUAN_APPLICATION_ADAPTER, HEYANG_APPLICATION_ADAPTER, HUAYIN_APPLICATION_ADAPTER, SHENMU_EVIDENCE_ADAPTER, MIZHI_APPLICATION_ADAPTER, QINGJIAN_APPLICATION_ADAPTER, XIAN_HIGH_TECH_APPLICATION_ADAPTER, *BAOJI_WORKER_MODELS} and payload.contract_id is None:
+        if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER, BAOJI_EVIDENCE_ADAPTER, XIXIANG_REFERENCE_ADAPTER, LIUBA_XLSX_ADAPTER, FOPING_REFERENCE_ADAPTER, ZIYANG_REFERENCE_ADAPTER, ZIYANG_EMPLOYER_REFERENCE_ADAPTER, LUEYANG_APPLICATION_ADAPTER, HANBIN_APPLICATION_ADAPTER, HANYIN_APPLICATION_ADAPTER, BAIHE_APPLICATION_ADAPTER, DANFENG_APPLICATION_ADAPTER, SHANGNAN_APPLICATION_ADAPTER, SHANYANG_APPLICATION_ADAPTER, TONGGUAN_APPLICATION_ADAPTER, HEYANG_APPLICATION_ADAPTER, HUAYIN_APPLICATION_ADAPTER, SHENMU_EVIDENCE_ADAPTER, MIZHI_APPLICATION_ADAPTER, QINGJIAN_APPLICATION_ADAPTER, XIAN_HIGH_TECH_APPLICATION_ADAPTER, XIAN_HIGH_TECH_EVIDENCE_ADAPTER, *BAOJI_WORKER_MODELS} and payload.contract_id is None:
             raise RegionalValidationError(409, '请重新打开当前地区的填写表单后生成')
         adapter, data, validated_contract_id = validate_generation_request(
             g, t, payload.kind, payload.data, payload.contract_id, root=ROOT,
@@ -831,7 +841,7 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks, xlsx: b
     except RegionalValidationError as exc:
         raise HTTPException(exc.status_code, str(exc)) from exc
     blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER,JIANGSU_F_ADAPTER,JIANGSU_G_ADAPTER,FUJIAN_H_ADAPTER,FUJIAN_I_ADAPTER,FUJIAN_J_ADAPTER,FUJIAN_K_ADAPTER,PINGTAN_ADAPTER,PUTIAN_ADAPTER,PUTIAN_N_ADAPTER,FUJIAN_O_ADAPTER,FUJIAN_P_ADAPTER,HQ_ADAPTER}
-    blank_adapters.update({QZ_ADAPTER, XIAN_HIGH_TECH_APPLICATION_ADAPTER, QINGJIAN_APPLICATION_ADAPTER, MIZHI_APPLICATION_ADAPTER, BAOJI_EVIDENCE_ADAPTER, LIUBA_XLSX_ADAPTER, DANFENG_APPLICATION_ADAPTER, SHANYANG_APPLICATION_ADAPTER, *BAOJI_WORKER_MODELS})
+    blank_adapters.update({QZ_ADAPTER, XIAN_HIGH_TECH_APPLICATION_ADAPTER, QINGJIAN_APPLICATION_ADAPTER, MIZHI_APPLICATION_ADAPTER, BAOJI_EVIDENCE_ADAPTER, LIUBA_XLSX_ADAPTER, XIAN_HIGH_TECH_EVIDENCE_ADAPTER, DANFENG_APPLICATION_ADAPTER, SHANYANG_APPLICATION_ADAPTER, *BAOJI_WORKER_MODELS})
     converted_adapters = {RONGJIANG_ADAPTER, HUNAN_ADAPTER, HUNAN_C_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER, LUEYANG_APPLICATION_ADAPTER, HANBIN_APPLICATION_ADAPTER, HANYIN_APPLICATION_ADAPTER, BAIHE_APPLICATION_ADAPTER, SHANGNAN_APPLICATION_ADAPTER, TONGGUAN_APPLICATION_ADAPTER, HEYANG_APPLICATION_ADAPTER, HUAYIN_APPLICATION_ADAPTER, SHENMU_EVIDENCE_ADAPTER}
     if adapter in blank_adapters | converted_adapters and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
     try:
@@ -870,6 +880,8 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks, xlsx: b
             doc = fill_ziyang_reference(checked_path(t,g).read_bytes(), data.model_dump())
         elif adapter == FOPING_REFERENCE_ADAPTER:
             doc = fill_foping_reference(checked_path(t,g).read_bytes(), data.model_dump())
+        elif adapter == XIAN_HIGH_TECH_EVIDENCE_ADAPTER:
+            doc = fill_xian_high_tech_evidence(checked_path(t, g).read_bytes(), data.model_dump())
         elif adapter == LIUBA_XLSX_ADAPTER:
             doc = fill_liuba_evidence(checked_path(t, g).read_bytes(), data.model_dump())
         elif adapter == XIXIANG_REFERENCE_ADAPTER:
@@ -945,7 +957,7 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks, xlsx: b
     except ValueError as exc:raise HTTPException(409,str(exc)) from exc
     suffix=('-依据官方DOC转换填写.docx' if adapter in converted_adapters else '-官方空白表格填写.docx' if adapter in blank_adapters else '-参考样表辅助填写.docx')
     name=g['district']+('申请书' if payload.kind=='application' else '证据清单')+suffix
-    if adapter == LIUBA_XLSX_ADAPTER:
+    if adapter in {LIUBA_XLSX_ADAPTER, XIAN_HIGH_TECH_EVIDENCE_ADAPTER}:
         filename = quote(name.removesuffix('.docx') + '.xlsx', safe='')
         response = Response(doc, media_type=XLSX_MIME, headers={
             'Content-Disposition': f"attachment; filename*=UTF-8''{filename}", 'Cache-Control': 'no-store',

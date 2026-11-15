@@ -49,6 +49,7 @@ from regional_lueyang_application import ADAPTER as LYA, schema_descriptor as lu
 from regional_ziyang_employer_reference import ADAPTER as ZYE, layout_fields as ziyang_employer_layout, schema_descriptor as ziyang_employer_schema
 from regional_ziyang_worker_reference import ADAPTER as ZYR, EXTRA_WIDE as ZIYANG_EXTRA_WIDE, layout_fields as ziyang_layout, schema_descriptor as ziyang_schema
 from regional_foping_reference import ADAPTER as FPR, schema_descriptor as foping_reference_schema
+from regional_xian_high_tech_evidence import ADAPTER as XHE, schema_descriptor as xian_high_tech_xlsx_schema
 from regional_liuba_evidence import ADAPTER as LBE, schema_descriptor as liuba_xlsx_schema
 from regional_shenmu_evidence import ADAPTER as SME, schema_descriptor as shenmu_evidence_schema
 from regional_xian_high_tech_application import (ADAPTER as XHA, EXTRA_WIDE as XIAN_HIGH_TECH_EXTRA_WIDE,
@@ -76,7 +77,7 @@ JS_BLANK={'jiangsu_xishan_blank_v1','jiangsu_own_blank_oct29_v1',
 REFERENCE={'sichuan_combined_reference_v1','tianfu_reference_v1'}
 NINGBO='zhejiang_ningbo_own_blank_oct29_v1'
 FEIDONG='anhui-feidong-official-application-20261029'
-SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE,ZSM,LHC,BJE,XXI,LBE,FPR,LYA,HAN,HAY,ZYR,ZYE,BHE,DFA,SNA,SYA}|{TGA,HYA,HUA,SME,MZA,QJA,XHA}|BAOJI_WORKER_MODELS.keys()|ZJ_OWN|HN|JS_BLANK|REFERENCE)
+SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE,ZSM,LHC,BJE,XXI,LBE,FPR,LYA,HAN,HAY,ZYR,ZYE,BHE,DFA,SNA,SYA}|{TGA,HYA,HUA,SME,MZA,QJA,XHA,XHE}|BAOJI_WORKER_MODELS.keys()|ZJ_OWN|HN|JS_BLANK|REFERENCE)
 PUBLIC_PROOF_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE,'jiangsu_own_blank_oct29c_v1','jiangsu_own_blank_oct29d_v1'}|ZJ_OWN|HN)
 
 JS_APP=('applicantName birthDate gender idNumber idAddress otherDocumentType otherDocumentNumber '
@@ -269,6 +270,7 @@ def build_form_contract(guide,template,kind,root=None):
                 ziyang_employer_schema(guide['source_version']) if adapter==ZYE else
                 ziyang_schema(guide['source_version']) if adapter==ZYR else
                 foping_reference_schema(guide['source_version']) if adapter==FPR else
+                xian_high_tech_xlsx_schema(guide['source_version']) if adapter==XHE else
                 liuba_xlsx_schema(guide['source_version']) if adapter==LBE else
                 xixiang_reference_schema(guide['source_version']) if adapter==XXI else
                 zhongshan_schema(guide['source_version']) if adapter==ZSM else
@@ -317,7 +319,7 @@ def build_form_contract(guide,template,kind,root=None):
                               XHA: (xian_high_tech_layout, XIAN_HIGH_TECH_EXTRA_WIDE)}[adapter]
         result['policy']['layout_limits'] = {'unicode_version': unicodedata.unidata_version,
             'wide_ranges': [list(item) for item in _wide_ranges(extra_wide)], 'fields': layout()}
-    if adapter == LBE:
+    if adapter in {LBE, XHE}:
         context['output_format'] = 'xlsx'
     if template.get('case_scope'):
         context['case_scope'] = template['case_scope']

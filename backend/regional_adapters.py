@@ -20,6 +20,7 @@ from regional_lueyang_application import ADAPTER as LUEYANG_APPLICATION_ADAPTER,
 from regional_ziyang_employer_reference import ADAPTER as ZIYANG_EMPLOYER_REFERENCE_ADAPTER, checked_adapter as checked_ziyang_employer_reference
 from regional_ziyang_worker_reference import ADAPTER as ZIYANG_REFERENCE_ADAPTER, checked_adapter as checked_ziyang_reference
 from regional_foping_reference import ADAPTER as FOPING_REFERENCE_ADAPTER, checked_adapter as checked_foping_reference
+from regional_xian_high_tech_evidence import ADAPTER as XIAN_HIGH_TECH_EVIDENCE_ADAPTER, checked_adapter as checked_xian_high_tech_workbook
 from regional_liuba_evidence import ADAPTER as LIUBA_XLSX_ADAPTER, checked_adapter as checked_liuba_workbook
 from regional_xixiang_reference import ADAPTER as XIXIANG_REFERENCE_ADAPTER, checked_adapter as checked_xixiang_adapter
 from regional_luohu_collective import ADAPTER as LUOHU_ADAPTER, checked_adapter as checked_luohu_adapter
@@ -441,6 +442,8 @@ def checked_reference_adapter(guide, template, kind,root=None):
         return checked_ziyang_reference(guide, template, kind, root)
     if template.get('adapter') == FOPING_REFERENCE_ADAPTER:
         return checked_foping_reference(guide, template, kind, root)
+    if template.get('adapter') == XIAN_HIGH_TECH_EVIDENCE_ADAPTER:
+        return checked_xian_high_tech_workbook(guide, template, kind, root=root)
     if template.get('adapter') == LIUBA_XLSX_ADAPTER:
         return checked_liuba_workbook(guide, template, kind, root)
     if template.get('adapter') == XIXIANG_REFERENCE_ADAPTER:

@@ -2,15 +2,14 @@
 from hashlib import sha256
 from io import BytesIO
 from pathlib import Path
-from re import fullmatch, sub
+from re import fullmatch
 from typing import Annotated
-from unicodedata import category
 from zipfile import ZipFile
 
-from lxml import etree
 from pydantic import AfterValidator, BaseModel, ConfigDict, Field
 
 from regional_guides import digest
+from regional_workbook_xml import parse_xml, plain_line, scrub_metadata, set_cell, spreadsheet_tag, xml_bytes
 from regional_hanzhong_guides import LIUBA_URL, REGIONS
 
 
@@ -31,18 +30,10 @@ SHEET = "xl/worksheets/sheet1.xml"
 CORE_METADATA = "docProps/core.xml"
 CUSTOM_METADATA = "docProps/custom.xml"
 MAX_ITEMS = 9
-NS = "http://schemas.openxmlformats.org/spreadsheetml/2006/main"
 BOUND = {
     "file": LAYOUT.as_posix(), "sha256": SOURCE_SHA256, "adapter": ADAPTER,
     "can_generate": True, "document_types": ["evidence"], "output_format": "xlsx",
 }
-
-
-def plain_line(value: str) -> str:
-    if any(category(char).startswith("C") or category(char) in {"Zl", "Zp"}
-           or ord(char) in {0xFFFE, 0xFFFF} for char in value):
-        raise ValueError("每个单元格请填写一行文字")
-    return value.strip()
 
 
 def positive_page_count(value: str) -> str:
@@ -63,53 +54,19 @@ class EvidenceRequest(BaseModel):
     items: list[EvidenceItem] = Field(default_factory=list, max_length=MAX_ITEMS)
 
 
-def _xml(data: bytes):
-    return etree.fromstring(data, parser=etree.XMLParser(resolve_entities=False, no_network=True))
-
-
-def _xml_bytes(element) -> bytes:
-    return etree.tostring(element, encoding="UTF-8", xml_declaration=True, standalone=True)
-
-
-def _tag(name: str) -> str:
-    return f"{{{NS}}}{name}"
-
-
-def _set_cell(cell, value: str | int) -> None:
-    if value == "":
-        return
-    if isinstance(value, int):
-        cell.set("t", "n")
-        etree.SubElement(cell, _tag("v")).text = str(value)
-    else:
-        cell.set("t", "inlineStr")
-        axis = etree.SubElement(cell, _tag("is"))
-        text = etree.SubElement(axis, _tag("t"))
-        # Excel treats _xNNNN_ as an escape even in explicitly textual cells.
-        text.text = sub(r"_x[0-9A-Fa-f]{4}_", lambda match: "_x005F_" + match[0][1:], value)
-
-
 def _fill_sheet(worksheet: bytes, rows: list[EvidenceItem]) -> bytes:
-    root = _xml(worksheet)
-    cells = {cell.get("r"): cell for cell in root.iter(_tag("c"))}
+    root = parse_xml(worksheet)
+    cells = {cell.get("r"): cell for cell in root.iter(spreadsheet_tag("c"))}
     for number in range(3, 3 + MAX_ITEMS):
-        if any(cells[f"{col}{number}"].find(_tag("v")) is not None or
-               cells[f"{col}{number}"].find(_tag("is")) is not None or
-               cells[f"{col}{number}"].find(_tag("f")) is not None for col in "BCDE"):
+        if any(cells[f"{col}{number}"].find(spreadsheet_tag("v")) is not None or
+               cells[f"{col}{number}"].find(spreadsheet_tag("is")) is not None or
+               cells[f"{col}{number}"].find(spreadsheet_tag("f")) is not None for col in "BCDE"):
             raise ValueError("官方证据清单的填写区已变化")
     for index, row in enumerate(rows, 1):
         values = (index, row.name, row.purpose, int(row.page_count) if row.page_count else "")
         for column, value in zip("BCDE", values, strict=True):
-            _set_cell(cells[f"{column}{index + 2}"], value)
-    return _xml_bytes(root)
-
-
-def _scrub_metadata(payload: bytes, remove_all: bool) -> bytes:
-    root = _xml(payload)
-    for field in tuple(root):
-        if remove_all or etree.QName(field).localname in {"creator", "lastModifiedBy"}:
-            root.remove(field)
-    return _xml_bytes(root)
+            set_cell(cells[f"{column}{index + 2}"], value)
+    return xml_bytes(root)
 
 
 def fill_evidence(layout: bytes, values: dict) -> bytes:
@@ -120,8 +77,8 @@ def fill_evidence(layout: bytes, values: dict) -> bytes:
     with ZipFile(BytesIO(layout)) as original, ZipFile(result, mode="w") as generated:
         replacements = {
             SHEET: _fill_sheet(original.read(SHEET), rows),
-            CORE_METADATA: _scrub_metadata(original.read(CORE_METADATA), remove_all=False),
-            CUSTOM_METADATA: _scrub_metadata(original.read(CUSTOM_METADATA), remove_all=True),
+            CORE_METADATA: scrub_metadata(original.read(CORE_METADATA), remove_all=False),
+            CUSTOM_METADATA: scrub_metadata(original.read(CUSTOM_METADATA), remove_all=True),
         }
         for member in original.infolist():
             data = replacements[member.filename] if member.filename in replacements else original.read(member)
