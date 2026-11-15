@@ -1,0 +1,67 @@
+{
+  "collected_at": "2026-11-15T23:38:35Z",
+  "region_code": "610425",
+  "city": "咸阳市",
+  "district": "礼泉县",
+  "authority": "礼泉县人社局",
+  "consultation_phone": "029-35621007",
+  "complaint_phone": "029-35621323",
+  "hours": "星期一至星期五上午08:30至12:00，下午14:30至18:00（法定节假日除外）",
+  "source_receipt_sha256": "e7e9336b1b7a606f60880ab4eafa4509b650b4d51a38485855cd276e863d8c25",
+  "channel_note": "两份指南均列窗口办理、网上办理，公开入口实测到陕西省统一身份认证。两份详版法定办结时限5个工作日、承诺办结时限0个工作日，实际办理时限以办理机关答复为准。",
+  "attachment_note": "劳动者事项的材料栏目未列明条目，请向礼泉县人社局确认应备材料。用人单位事项列三项材料，主体资格证明材料标为非必要。三条附件均为样表。",
+  "venue_note": "两份原文均指文体功能区规划九路一楼四号窗口。劳动者事项写就业服务保障大楼，用人单位事项写就业服务大楼。",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1112216182607&siteCode=610425000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=9f262b57db4c74e09b4cfeaebdcde9d9&areacode=610425000000",
+      "office": "陕西省咸阳市礼泉县 文体功能区规划九路就业服务保障大楼一楼（办理窗口：四号窗口）",
+      "handling_form": "窗口办理、网上办理",
+      "legal_workdays": 5,
+      "promised_workdays": 0,
+      "materials": []
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114062316231&siteCode=610425000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=79c6c7a8aa0ed7d84bcfee472670487a&areacode=610425000000",
+      "office": "陕西省咸阳市礼泉县 文体功能区规划九路就业服务大楼一楼（办理窗口：四号）",
+      "handling_form": "窗口办理、网上办理",
+      "legal_workdays": 5,
+      "promised_workdays": 0,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件3份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0F/33/rBIxVGCvagaAE89aAAD_pA74TZk547.jpg"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/22/D9/rBIxU2CvaqKANWUIAAGOC0fhVFg374.jpg"
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1份",
+          "required": "非必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/22/D9/rBIxU2CvakyACULxAAMkYz2qW9Q508.jpg"
+        }
+      ]
+    }
+  }
+}
