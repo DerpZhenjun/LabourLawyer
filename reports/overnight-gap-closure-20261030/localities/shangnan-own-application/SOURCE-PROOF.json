@@ -1,0 +1,128 @@
+{
+  "area": {
+    "city": "商洛市",
+    "district": "商南县",
+    "province_name": "陕西省",
+    "region_code": "611023",
+    "authority": "商南县人力资源和社会保障局"
+  },
+  "home_url": "https://www.shangnan.gov.cn/",
+  "home_sha256": "41e353f1cb528b6ff7882f955ad81a27681795e94b21f53ceb6108d780eb8675",
+  "portal_url": "https://zwfw.shaanxi.gov.cn/#/index?siteCode=611023000000",
+  "roles": {
+    "worker": {
+      "label": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1118126220654&siteCode=611023000000",
+      "collected_at": "2026-11-15T14:42:48.210Z",
+      "guide_sha256": "de1f1b45bcd7bc7a01236a541fb894890d8b888c61a15eeda3b7f543591baffc",
+      "receipt_sha256": "94bf88d271bfb7f70d6fbc6e25bf6747f9cd8575cbded19589bddf49b54f986e",
+      "commitment_workdays": 1,
+      "venue": "陕西省商洛市商南县 康宁街社保服务中心(办理窗口:社保大楼507室)",
+      "phone": "0914-6329276",
+      "materials": [
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "instructions": "无",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "e4c3c231e99cbd344627952f7ff5943488d3983d548758e2979950d0d4fccf6f",
+              "size": 163812,
+              "file_type": "jpg"
+            },
+            {
+              "portal_label": "空表",
+              "sha256": "e4c3c231e99cbd344627952f7ff5943488d3983d548758e2979950d0d4fccf6f",
+              "size": 163812,
+              "file_type": "jpg"
+            }
+          ]
+        },
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "仲裁申请一式两份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "bc30ba43344b964ab605cd441e294b67a8e7be2383dc44e525fcb7abc0576e82",
+              "size": 13312,
+              "file_type": "doc"
+            },
+            {
+              "portal_label": "空表",
+              "sha256": "bc30ba43344b964ab605cd441e294b67a8e7be2383dc44e525fcb7abc0576e82",
+              "size": 13312,
+              "file_type": "doc",
+              "source_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/03/EB/rBgBU2VdY_aAFDeKAAA0AA6X1tE000.doc"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "label": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1118429220353&siteCode=611023000000",
+      "collected_at": "2026-11-15T14:42:47.978Z",
+      "guide_sha256": "56261a96d9a447ee394fe429f0b5067abc56cd40bc2f1e7239eec44038f72997",
+      "receipt_sha256": "c8dc898869526d39d9734e2ce8a23cb9a69802a333360d01a60728f00d96a71e",
+      "commitment_workdays": 1,
+      "venue": "陕西省商洛市商南县 康宁街社保中心大楼(办理窗口:社保大楼507)",
+      "phone": "0914-6329276",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "无",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "bc30ba43344b964ab605cd441e294b67a8e7be2383dc44e525fcb7abc0576e82",
+              "size": 13312,
+              "file_type": "doc"
+            },
+            {
+              "portal_label": "空表",
+              "sha256": "bc30ba43344b964ab605cd441e294b67a8e7be2383dc44e525fcb7abc0576e82",
+              "size": 13312,
+              "file_type": "doc"
+            }
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "身份证明材料",
+          "required": "必要",
+          "instructions": "无",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "sha256": "e4c3c231e99cbd344627952f7ff5943488d3983d548758e2979950d0d4fccf6f",
+              "size": 163812,
+              "file_type": "jpg"
+            },
+            {
+              "portal_label": "空表",
+              "sha256": "e473138e39f693b3d65b50e5a5d31c6b1e0b092d7e397252a756bc7e02756ab4",
+              "size": 23410,
+              "file_type": "jpg"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "application_review": {
+    "source_classification": "independently linked and inspected natural person blank original",
+    "same_bytes_on_sample_and_blank_links": true,
+    "employer_applicant_slots_verified": false,
+    "native_pages": 1,
+    "original_sha256": "bc30ba43344b964ab605cd441e294b67a8e7be2383dc44e525fcb7abc0576e82",
+    "conversion_sha256": "9c167dbe521dff6cbbed82be13c9ad6849cd79e2c35421ab31dbb4828a0de960",
+    "word_review_receipt_sha256": "048d705c7d4f5423326ed59dd77ee142b18116f5b760f677feee21235bbca037"
+  }
+}

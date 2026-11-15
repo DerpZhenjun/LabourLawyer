@@ -16,7 +16,7 @@
     <p v-else-if="!contract" class="region-notice danger" role="alert">当前地区表单尚未完成核对，请返回指南确认来源后重试。</p>
     <form v-else @submit.prevent="requestConfirmation">
       <p v-if="employerOnly" class="region-notice" role="note">此表适用于用人单位作为申请人。{{ signInstruction }}</p>
-      <p v-else-if="danfengWorker" class="region-notice" role="note">此表适用于劳动者作为申请人。用人单位填写版待核验。{{ signInstruction }}</p>
+      <p v-else-if="workerManualRecipient" class="region-notice" role="note">此表适用于劳动者作为申请人。用人单位填写版待核验。{{ signInstruction }}</p>
       <div class="sample-note"><i class="fa-regular fa-lightbulb" aria-hidden="true"></i><span><strong>已填入虚构示例，请替换为你的真实信息</strong>姓名、地址、金额和证据仅用于演示。未确定的受理机构和日期可以留空，再向受理机关核对。</span></div>
       <details class="reference-source-note"><summary>文书来源与使用说明：{{ isConverted?('依据当地官方 '+convertedFormat+' 的空白转换版'):isBlank?'当地官方空白表格':'当地官方参考样表，非空白模板' }}</summary><p>{{ sourceDescription }}生成内容属于辅助填写，不保证受理。{{ signInstruction }}请核对后自行保存并提交。</p></details>
       <fieldset class="regional-controls" :disabled="generating">
@@ -101,9 +101,9 @@ const isJiangsuOwn=computed(()=>special.value==='jiangsu'),isZhejiangOwn=compute
 const isHunan=computed(()=>special.value==='hunan'),isFeidong=computed(()=>special.value==='feidong')
 const isBlank=computed(()=>contract.value?.context.mode==='blank')
 const employerOnly=computed(()=>template.value?.service_object==='用人单位')
-const danfengWorker=computed(()=>contract.value?.context.adapter==='shaanxi_danfeng_worker_application_v1')
+const workerManualRecipient=computed(()=>['shaanxi_danfeng_worker_application_v1','shaanxi_shangnan_worker_application_v1'].includes(contract.value?.context.adapter??''))
 const signInstruction=computed(()=>{
-  if(danfengWorker.value)return'请核对并补齐文末仲裁委员会名称，再手写签名和日期。'
+  if(workerManualRecipient.value)return'请核对并补齐文末仲裁委员会名称，再手写签名和日期。'
   if(template.value?.manual_signing==='signature_fingerprint')return'请按原件要求签名、按手印并填写日期。'
   if(employerOnly.value&&isConverted.value)return'请由申请单位盖章并填写日期。'
   return'签名需本人手写。'
