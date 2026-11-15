@@ -1,0 +1,68 @@
+{
+  "region_code": "610117",
+  "city": "西安市",
+  "district": "高陵区",
+  "authority": "高陵区人社局",
+  "role": "用人单位",
+  "collected_at": "2026-11-15T21:43:27.727Z",
+  "source_url": "https://zwfw.xa.gov.cn/gaoling/bmbs/abmfl/glqrsj7aa4/1570501207263301634.html",
+  "source_sha256": "a34651939d25e62cb08f725cd7310da5c7970ece10e1cb0f75e37f3e0daf6b46",
+  "public_matter_id": "11610126735065104C400201430200201",
+  "attachment_receipt_sha256": "7d26657627805d4f119f29cac778dadec355c5fa3f7faa56810b95bf0b963e03",
+  "material_details_sha256": "5956df71b99e218020cd2f24b9c50fb4ea5ccfc96e49fa9e5302b39eb3ab0c03",
+  "worker_search_sha256": "415057e6c7582f9aeadeb1b91267f0bfcf13238596d529a7e68d03bde77b1540",
+  "office": "陕西省西安市高陵区 泾环北路561高陵区劳动人事争议仲裁院(办理窗口:立案调解庭)",
+  "hours": "夏令时:星期一至星期五上午09:00至12:00,下午14:00至17:00(法定节假日除外) 冬令时:星期一至星期五上午09:00至12:00,下午13:00至17:00(法定节假日除外)",
+  "phone": "029-86044440",
+  "complaint_phone": "029-86913475",
+  "workdays": 5,
+  "in_person_visits": "1 次",
+  "channel": "窗口办理",
+  "attachment_note": "用人单位申请书采用自然人申请人栏。授权委托书正文写明办理机构为周至县劳动人事争议仲裁院。两份官网附件的用途待核实。",
+  "materials": [
+    {
+      "key": "application",
+      "name": "劳动人事争议仲裁申请书",
+      "original_copy": "原件和复印件",
+      "copies": "原件1份、复印件1份",
+      "required": "必要",
+      "instructions": "无"
+    },
+    {
+      "key": "license",
+      "name": "营业执照",
+      "original_copy": "原件和复印件",
+      "copies": "原件1份、复印件1份",
+      "required": "必要，符合官网条件可免提交",
+      "instructions": "如果申办时提醒您已有电子证照/共享数据，则该材料可以免提交。统一社会信用代码证等主体资格证明材料及复印件1套，法定代表人或主要负责人身份证明书、身份证原件及复印件。"
+    },
+    {
+      "key": "contract",
+      "name": "劳动合同",
+      "original_copy": "原件和复印件",
+      "copies": "原件1份、复印件1份",
+      "required": "必要",
+      "instructions": "可同时提交证据材料清单，包括证据材料名称、种类、证明对象及内容、是否有原件等"
+    },
+    {
+      "key": "authorization",
+      "name": "授权委托书",
+      "original_copy": "原件",
+      "copies": "原件1份",
+      "required": "必要",
+      "instructions": "统一社会信用代码证等主体资格证明材料及复印件一套，法定代表人或主要负责人身份证明书、身份证原件及复印件"
+    }
+  ],
+  "observed_blank_downloads": [
+    {
+      "url": "https://zwfw.xa.gov.cn/upload/itemFile/610117000000/bdbc3b5eefb79d6570cf955d32954ebf/material/3c652bb9e1945028f8d8e6cef2af02fa/%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6.docx",
+      "sha256": "c4a82c8f6e4f0725126149052e98d8c24e4230ac3acb62217e4e4ca764fbd2e0",
+      "label": "仲裁申请书"
+    },
+    {
+      "url": "https://zwfw.xa.gov.cn/upload/itemFile/610117000000/bdbc3b5eefb79d6570cf955d32954ebf/material/198be68a8e2fb8047620d0256676f652/%E5%A7%94%E6%89%98%E4%B9%A6.docx",
+      "sha256": "7cc799e4c020b5fd030110bbc460951d5d76445665eeaaa3cdc80a11f3f9c849",
+      "label": "委托书"
+    }
+  ]
+}
