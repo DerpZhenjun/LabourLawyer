@@ -102,9 +102,10 @@ const isJiangsuOwn=computed(()=>special.value==='jiangsu'),isZhejiangOwn=compute
 const isHunan=computed(()=>special.value==='hunan'),isFeidong=computed(()=>special.value==='feidong')
 const isBlank=computed(()=>contract.value?.context.mode==='blank')
 const employerOnly=computed(()=>template.value?.service_object==='用人单位')
-const workerManualRecipient=computed(()=>['shaanxi_danfeng_worker_application_v1','shaanxi_shangnan_worker_application_v1','shaanxi_shanyang_worker_application_v1','shaanxi_heyang_worker_application_v1','shaanxi_huayin_worker_application_v1','shaanxi_shenmu_worker_evidence_v1'].includes(contract.value?.context.adapter??''))
+const workerManualRecipient=computed(()=>['shaanxi_danfeng_worker_application_v1','shaanxi_shangnan_worker_application_v1','shaanxi_shanyang_worker_application_v1','shaanxi_heyang_worker_application_v1','shaanxi_huayin_worker_application_v1','shaanxi_shenmu_worker_evidence_v1','shaanxi_mizhi_worker_application_v1'].includes(contract.value?.context.adapter??''))
 const tongguanBodyOnly=computed(()=>contract.value?.context.adapter==='shaanxi_tongguan_role_application_v1')
 const signInstruction=computed(()=>{
+  if(contract.value?.context.adapter==='shaanxi_mizhi_worker_application_v1')return'此处填写仲裁请求和事实理由。下载后请补全当事人信息、申请人署名和日期。'
   if(contract.value?.context.adapter==='shaanxi_shenmu_worker_evidence_v1')return'下载后请在原表填写提交人和提交时间。'
   if(contract.value?.context.adapter==='shaanxi_huayin_worker_application_v1')return'此处填写仲裁请求以及事实和理由。下载后请补全双方信息、仲裁委员会名称、签名和日期。'
   if(contract.value?.context.adapter==='shaanxi_heyang_worker_application_v1')return'此处填写三行请求。下载后请补全双方信息、事实与理由、受理机关、签名和日期。'

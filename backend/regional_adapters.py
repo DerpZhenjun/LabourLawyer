@@ -5,6 +5,7 @@ from regional_baoji_evidence import ADAPTER as BAOJI_EVIDENCE_ADAPTER, checked_a
 from regional_baoji_county_application import MODELS_BY_ADAPTER as BAOJI_WORKER_MODELS, checked_adapter as checked_baoji_worker_adapter
 from regional_huayin_application import ADAPTER as HUAYIN_APPLICATION_ADAPTER, checked_adapter as checked_huayin_application
 from regional_shenmu_evidence import ADAPTER as SHENMU_EVIDENCE_ADAPTER, checked_adapter as checked_shenmu_evidence
+from regional_mizhi_application import ADAPTER as MIZHI_APPLICATION_ADAPTER, checked_adapter as checked_mizhi_application
 from regional_heyang_application import ADAPTER as HEYANG_APPLICATION_ADAPTER, checked_adapter as checked_heyang_application
 from regional_tongguan_application import ADAPTER as TONGGUAN_APPLICATION_ADAPTER, checked_adapter as checked_tongguan_application
 from regional_shanyang_application import ADAPTER as SHANYANG_APPLICATION_ADAPTER, checked_adapter as checked_shanyang_application
@@ -404,6 +405,8 @@ def with_reference_capabilities(guide,root=None):
 
 
 def checked_reference_adapter(guide, template, kind,root=None):
+    if template.get('adapter') == MIZHI_APPLICATION_ADAPTER:
+        return checked_mizhi_application(guide, template, kind, root=root)
     if template.get('adapter') == SHENMU_EVIDENCE_ADAPTER:
         return checked_shenmu_evidence(guide, template, kind, root=root)
     if template.get('adapter') == HUAYIN_APPLICATION_ADAPTER:
