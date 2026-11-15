@@ -1,0 +1,137 @@
+{
+  "collected_at": "2026-11-15T23:32:15Z",
+  "region_code": "610424",
+  "city": "咸阳市",
+  "district": "乾　县",
+  "authority": "乾　县人社局",
+  "consultation_phone": "029-35520838",
+  "complaint_phone": "029-35521179",
+  "hours": "星期一至星期五上午08:30至12:00，下午14:30至18:00（法定节假日除外）",
+  "source_receipt_sha256": "f4174941e9945b5654153889fe1d9c5756d74b4d04cd7b6eaf95a1420f18c3d5",
+  "channel_note": "两份指南均列窗口办理、网上办理，公开入口实测到陕西省统一身份认证。两份详版物流栏均不支持物流快递。",
+  "attachment_note": "两份指南共列9项材料，所有下载项标为样表。劳动者指南将外国人就业证标为必要，但未列明适用情形，须向办理机关核对。",
+  "venue_note": "两角色同为工业区兴业大道1号乾县人力资源和社会保障局。劳动者指南列仲裁院办理窗口，用人单位指南列劳动人事争议仲裁窗口。区划代码610424的国家目录名称为“乾　县”。",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114386146277&siteCode=610424000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=49e46a89273725f2f32d282f4b7559c5&areacode=610424000000",
+      "office": "陕西省咸阳市乾县城关街道 工业区兴业大道1号乾县人力资源和社会保障局（办理窗口：仲裁院办理窗口）",
+      "handling_form": "窗口办理、网上办理",
+      "legal_workdays": 5,
+      "promised_workdays": 2,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "official_required": "必要",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/10/28/rBIxVGCwug-AfK3QAACRjjSGbEE699.png"
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "official_required": "必要",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/10/2A/rBIxVGCwu2yAKG1MAAHdLNczIyM896.jpg"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "official_required": "必要",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/10/2B/rBIxVGCwvECATG-SAApjvI2YTJw896.jpg"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "official_required": "必要",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/23/D1/rBIxU2CwvOuAACqDAACOnzjbZdM925.jpg"
+        },
+        {
+          "key": "foreign-employment-permit",
+          "name": "外国人就业证",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "official_required": "必要",
+          "required": "官网标为必要，适用情形待核对",
+          "instructions": "指南未列明适用情形，请向乾县人社局确认该项是否适用。附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/10/2D/rBIxVGCwvY6AVwSfAABH2TZFmgc082.jpg"
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1117275146406&siteCode=610424000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=c86578254d1651c173a4bd903490b0b6&areacode=610424000000",
+      "office": "陕西省咸阳市乾县 工业区兴业大道1号乾县人力资源和社会保障局（办理窗口：劳动人事争议仲裁窗口）",
+      "handling_form": "窗口办理、网上办理",
+      "legal_workdays": 5,
+      "promised_workdays": 2,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "official_required": "必要",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/23/D6/rBIxU2CwwN-AXKmAAACRjjSGbEE167.png"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "official_required": "必要",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/10/32/rBIxVGCwwReAenyPAACOnzjbZdM135.jpg"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "official_required": "必要",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/23/D7/rBIxU2CwwU6AR0ZNAApjvI2YTJw994.jpg"
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "official_required": "必要",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/23/D7/rBIxU2CwwaaAX0XyAAGpZxCTwRo915.jpg"
+        }
+      ]
+    }
+  }
+}
