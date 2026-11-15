@@ -24,10 +24,13 @@ PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-three-work
 PROOF_SHA = '0c07b48554cc17a88d8eaf439d51fbb48e6ac52885c83ad35d0547fc09b9e176'
 LINYOU_PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-linyou-worker-application/SOURCE-PROOF.json')
 LINYOU_PROOF_SHA = '3cddcfe9de8988b9fa05d4cf847610a387a25698a7c5693affe661e4c8cc88d1'
+JINTAI_PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-jintai-worker-application/SOURCE-PROOF.json')
+JINTAI_PROOF_SHA = '301cdba88f644425741c178cd0eb767980c1c3e02342a837c882599dae876258'
 SHARED = 'shaanxi_baoji_qishan_long_worker_v1'
 MEI = 'shaanxi_baoji_mei_worker_v1'
 LINYOU = 'shaanxi_baoji_linyou_worker_v1'
-ADAPTERS = {'610323': SHARED, '610326': MEI, '610327': SHARED, '610329': LINYOU}
+JINTAI = 'shaanxi_baoji_jintai_worker_v1'
+ADAPTERS = {'610323': SHARED, '610326': MEI, '610327': SHARED, '610329': LINYOU, '610303': JINTAI}
 LAYOUTS = {
     code: Path(f'templates/_docx/_regional/shaanxi/baoji-{code}-worker-application.docx') for code in ADAPTERS
 }
@@ -36,6 +39,7 @@ LAYOUT_HASHES = {
     '610323': SHARED_LAYOUT_SHA,
     '610326': 'd3b1d4fe23d4578a2b323cf2e7f500eadaa8b22e832f627b751e77ba6af5116f',
     '610327': SHARED_LAYOUT_SHA,
+    '610303': '1afb707186df326b3cc6192300068bf19a5312a46d76822531cefae83f07d0b7',
     '610329': '5c64d10d59977f133f8a38ae2ccb72fd02eba4b8e12f7f2b771dcf42845b9c69',
 }
 
@@ -108,7 +112,7 @@ class LinyouApplication(OwnBase):
     facts: Annotated[bounded(360), AfterValidator(_facts_lines)] = ''
 
 
-MODELS_BY_ADAPTER = {SHARED: QishanLongApplication, MEI: MeiApplication, LINYOU: LinyouApplication}
+MODELS_BY_ADAPTER = {SHARED: QishanLongApplication, MEI: MeiApplication, LINYOU: LinyouApplication, JINTAI: QishanLongApplication}
 MODELS = {code: MODELS_BY_ADAPTER[adapter] for code, adapter in ADAPTERS.items()}
 
 
@@ -192,6 +196,41 @@ def _write_linyou(paragraphs, data):
         paragraph.paragraph_format.keep_with_next = True
 
 
+def _write_jintai(paragraphs, data):
+    applicant = paragraphs[2].runs
+    applicant[6].text = '，'.join(label + '：' + data[key] for key, label in (
+        ('applicant_name', '姓名'), ('gender', '性别'), ('nationality', '民族'), ('age', '年龄'),
+        ('address', '住所地'), ('id_number', '身份证号'), ('phone', '联系方式'),
+    ) if data[key])
+    for run in applicant[7:]:
+        run.text = ''
+    paragraphs[3].runs[1].text = data['respondent_name']
+    paragraphs[4].runs[2].text = data['social_credit_code']
+    if data['social_credit_code']:
+        paragraphs[4].alignment = WD_ALIGN_PARAGRAPH.LEFT
+    paragraphs[5].runs[3].text = data['respondent_address'] + '    联系电话：' + data['respondent_phone']
+    representative = paragraphs[6].runs
+    representative[2].text = '，'.join(label + '：' + data[key] for key, label in (
+        ('representative', '姓名'), ('representative_gender', '性别'),
+        ('representative_role', '职务'), ('representative_phone', '电话'),
+    ) if data[key])
+    for run in representative[3:]:
+        run.text = ''
+    requests = data['requests'] + [''] * (3 - len(data['requests']))
+    paragraphs[7].runs[2].text = '：' + requests[0]
+    paragraphs[8].runs[1].text = '：' + requests[1]
+    paragraphs[9].runs[1].text = requests[2]
+    paragraphs[13].runs[1].text = data['facts']
+    for run in paragraphs[13].runs[2:]:
+        run.text = ''
+    for index in (14, 15):
+        paragraphs[index].runs[0].text = ''
+    paragraphs[17].runs[2].text = ''
+    for index in (0, 2, 4):
+        paragraphs[18].runs[index].text = '                          ' if index == 0 else '    '
+    paragraphs[17].paragraph_format.keep_with_next = True
+
+
 def fill_application(code, layout, values):
     if code not in MODELS or sha256(layout).hexdigest() != LAYOUT_HASHES[code]:
         raise ValueError('地区与已核验申请书版式不匹配')
@@ -201,6 +240,8 @@ def fill_application(code, layout, values):
         _write_mei(document.paragraphs, data)
     elif code == '610329':
         _write_linyou(document.paragraphs, data)
+    elif code == '610303':
+        _write_jintai(document.paragraphs, data)
     else:
         _write_qishan_long(document.paragraphs, data)
     return PreservedPackageDocument(document, layout)
@@ -254,14 +295,21 @@ def staged_guide(code, root=None):
     if code not in MODELS:
         raise ValueError('该区县暂无通过验收的申请书')
     root = Path(ROOT if root is None else root).resolve()
-    candidates = json.loads(_pinned_bytes(root, BASE_GUIDES, BASE_GUIDES_SHA))
-    proof_path, proof_hash = (LINYOU_PROOF, LINYOU_PROOF_SHA) if code == '610329' else (PROOF, PROOF_SHA)
-    proof = json.loads(_pinned_bytes(root, proof_path, proof_hash))
-    guide = next(g for g in candidates if g['region_code'] == code)
+    guide_hash = BASE_GUIDES_SHA
+    if code == '610303':
+        proof_hash = JINTAI_PROOF_SHA
+        proof = json.loads(_pinned_bytes(root, JINTAI_PROOF, proof_hash))
+        guide = proof['guide']
+        guide_hash = guide['source_version']
+    else:
+        candidates = json.loads(_pinned_bytes(root, BASE_GUIDES, guide_hash))
+        proof_path, proof_hash = (LINYOU_PROOF, LINYOU_PROOF_SHA) if code == '610329' else (PROOF, PROOF_SHA)
+        proof = json.loads(_pinned_bytes(root, proof_path, proof_hash))
+        guide = next(g for g in candidates if g['region_code'] == code)
     item = next(p for p in proof['items'] if p['region_code'] == code)
     name = guide['district'].replace('　', '')
     guide.update(source_id=digest(guide['source_url'])[:24],
-                 source_version=digest(code + ':' + proof_hash + ':' + BASE_GUIDES_SHA),
+                 source_version=digest(code + ':' + proof_hash + ':' + guide_hash),
                  can_generate=True, verified_at=item['fetched_at'])
     guide['warnings'][0] = '本区申请书可填写生成，签名和提交日期请由本人补填。'
     template = {
@@ -274,7 +322,7 @@ def staged_guide(code, root=None):
         'download_status': 'downloaded', 'sha256': item['layout_sha256'],
         'document_types': ['application'], 'can_generate': True, 'adapter': ADAPTERS[code],
     }
-    if code == '610329':
+    if item.get('original_format') == 'DOC':
         template.update(file_origin='official-blank-converted-layout', original_format=item['original_format'])
     guide['templates'] = [template]
     return guide

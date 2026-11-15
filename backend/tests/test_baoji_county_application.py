@@ -83,3 +83,27 @@ class BaojiCountyApplicationTests(TestCase):
         with ZipFile(BytesIO(raw)) as old, ZipFile(out) as new:
             self.assertTrue(all(old.read(name) == new.read(name)
                                 for name in old.namelist() if name != 'word/document.xml'))
+
+
+    def test_jintai_preserves_independent_layout_and_removes_signature_placeholders(self):
+        code = '610303'
+        raw = (LAYOUT / f'baoji-{code}-worker-application.docx').read_bytes()
+        values = {'applicant_name': '测试劳动者', 'respondent_name': '测试用人单位',
+                  'social_credit_code': 'TEST-CODE', 'requests': ['请求核对测试工资'],
+                  'facts': '测试第一段\n测试第二段'}
+        out = BytesIO()
+        self.adapter.fill_application(code, raw, values).save(out)
+        paragraphs = [p.text for p in Document(out).paragraphs]
+        text = '\n'.join(paragraphs)
+        for value in values.values():
+            self.assertIn(value[0] if isinstance(value, list) else value, text)
+        self.assertIn('申请人：', paragraphs[-2])
+        self.assertIn('年月日', ''.join(paragraphs[-1].split()))
+        self.assertNotIn('XX', text)
+        self.assertNotIn('用人单位工商注册登记全称', text)
+        self.assertIn('附上计算标准', text)
+        with self.assertRaises(ValidationError):
+            self.adapter.fill_application(code, raw, {'signature': '测试'})
+        with ZipFile(BytesIO(raw)) as old, ZipFile(out) as new:
+            self.assertTrue(all(old.read(name) == new.read(name)
+                                for name in old.namelist() if name != 'word/document.xml'))

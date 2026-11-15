@@ -22,7 +22,7 @@ class BaojiCountyApplicationAPITests(TestCase):
 
         with TemporaryDirectory() as work:
             store = RegionalStore(Path(work) / 'guide.sqlite')
-            guides = {code: store.put_guide(staged_guide(code, ROOT)) for code in ('610323', '610326', '610327', '610329')}
+            guides = {code: store.put_guide(staged_guide(code, ROOT)) for code in ('610323', '610326', '610327', '610329', '610303')}
             app = FastAPI()
             app.include_router(routes.router, prefix='/regional')
             with patch.object(routes, 'ROOT', ROOT), patch.object(routes, 'store', return_value=store), TestClient(app) as client:
@@ -37,9 +37,13 @@ class BaojiCountyApplicationAPITests(TestCase):
                         blank = client.get(f"/regional/templates/{template['id']}", params=query)
                         self.assertEqual(blank.status_code, 200)
                         self.assertEqual(blank.headers['X-Template-SHA256'], template['sha256'])
-                        if code == '610329':
+                        if code in {'610329', '610303'}:
                             self.assertEqual(blank.headers['X-Document-Origin'], 'official-blank-converted-layout')
                             self.assertEqual(template['original_format'], 'DOC')
+                        if code == '610303':
+                            self.assertEqual(guide['authority'], '金台区人力资源和社会保障局')
+                            self.assertIn('b98e034d881b2120f4e36b837c117c45', template['source_url'])
+                        if code == '610329':
                             keys = {field['key'] for field in contract.json()['fields']}
                             self.assertIn('applicant_work_unit', keys)
                             self.assertNotIn('id_number', keys)
