@@ -1,0 +1,133 @@
+{
+  "area": {
+    "province": "陕西省",
+    "city": "安康市",
+    "district": "镇坪县",
+    "region_code": "610927",
+    "authority": "镇坪县人力资源和社会保障局"
+  },
+  "county_home": {
+    "url": "https://www.zhp.gov.cn/",
+    "sha256": "55030848315388876a54faf26cf3b05f76879de0c2b6ca48376ccc5514075446"
+  },
+  "service_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610927000000",
+  "phone": "0915-8822327",
+  "native_review": {
+    "worker": {
+      "title": "劳动者申请仲裁确认劳动关系需准备的材料",
+      "classification": "filing_guidance",
+      "pages": 1,
+      "render_sha256": "bf66aae2b2d4628571aef419caed0ac4fa4d4df3d561685e52bb1b64d884bf7b"
+    },
+    "employer": {
+      "title": "劳动仲裁申请书",
+      "classification": "application_outline_with_applicant_identity_field_and_respondent_legal_representative_field",
+      "pages": 1,
+      "render_sha256": "1fd330b295892980ed392c6770e92f76aaf31f79533db7130d2dc3f049bd6a92"
+    }
+  },
+  "roles": {
+    "worker": {
+      "label": "劳动者",
+      "url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1111457126325&siteCode=610927000000",
+      "captured_at": "2026-11-15T13:05:51.55Z",
+      "guide_sha256": "403f1444d4b5195ec5b64497b55ccfae56639fae96db15884a5b0ef2e98c2281",
+      "receipt_sha256": "33ca904dd0954808ad24dc07348a074e95aa18318a6de41c62c43d60870ed0fd",
+      "venue": "陕西省安康市镇坪县城关镇 国心北路城关小学东北侧约110米镇坪县人力资源和社会保障局(办理窗口:仲裁委)",
+      "commitment_workdays": 1,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "该材料栏的 DOCX 原件标题为《劳动者申请仲裁确认劳动关系需准备的材料》，内容是提交材料说明。",
+          "format": "docx",
+          "sample_sha256": "8d204f37901361056573deb52b430c45bf51f3f92f1c31ed6f418836f0807c60",
+          "portal_blank_sha256": "8d204f37901361056573deb52b430c45bf51f3f92f1c31ed6f418836f0807c60",
+          "classification": "guidance"
+        },
+        {
+          "key": "evidence",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "instructions": "官网附件为举证材料说明。",
+          "format": "txt",
+          "sample_sha256": "21728993ee08e0f7f1ed6ffc8af9530b190b02dfaf958890eb3dd2f8a1bf615a",
+          "portal_blank_sha256": "21728993ee08e0f7f1ed6ffc8af9530b190b02dfaf958890eb3dd2f8a1bf615a",
+          "classification": "guidance"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "非必要",
+          "instructions": "劳动者事项标为非必要。",
+          "format": "doc",
+          "sample_sha256": "3fa0885e563a7396feaec680ccafd99858490dac82d75a7b9724ce1a9537661d",
+          "portal_blank_sha256": "3fa0885e563a7396feaec680ccafd99858490dac82d75a7b9724ce1a9537661d",
+          "classification": "sample"
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "instructions": "",
+          "format": "jpg",
+          "sample_sha256": "9ca0ac2e3f42accf6a76f61840dfd5874bcce08807745568b80038949e12a9d7",
+          "portal_blank_sha256": "9ca0ac2e3f42accf6a76f61840dfd5874bcce08807745568b80038949e12a9d7",
+          "classification": "identity_example"
+        }
+      ]
+    },
+    "employer": {
+      "label": "用人单位",
+      "url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1117403278606&siteCode=610927000000",
+      "captured_at": "2026-11-15T13:05:51.788Z",
+      "guide_sha256": "a65314f43d248e55aa6546e0c501886f593adf26da858172f21cefb77e56ad18",
+      "receipt_sha256": "eab92aa11a79949ffe8edf9cdb0cabbb80b0cfc3329fb7df3ce46ef7abea499d",
+      "venue": "陕西省安康市镇坪县城关镇 国心北路城关小学东北侧约110米镇坪县人力资源和社会保障局(办理窗口:镇坪县人社局仲裁委)",
+      "commitment_workdays": 3,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "官网该附件是《劳动仲裁申请书》写法提纲，列有申请人身份证及被申请人法定代表人栏，请向受理窗口核对单位申请书格式。",
+          "format": "doc",
+          "sample_sha256": "8f82e94cad2c23c96eb4cf89676bcdad5383d0419f9530e4079394c0a931cdf4",
+          "portal_blank_sha256": "8f82e94cad2c23c96eb4cf89676bcdad5383d0419f9530e4079394c0a931cdf4",
+          "classification": "sample"
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "instructions": "",
+          "format": "jpg",
+          "sample_sha256": "8ecb29b573413c36581a0053d86fe32a4ff6dc9f9fbebc9721e7b02134fb32e2",
+          "portal_blank_sha256": "8ecb29b573413c36581a0053d86fe32a4ff6dc9f9fbebc9721e7b02134fb32e2",
+          "classification": "sample"
+        },
+        {
+          "key": "evidence",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "instructions": "官网附件为举证材料说明。",
+          "format": "txt",
+          "sample_sha256": "21728993ee08e0f7f1ed6ffc8af9530b190b02dfaf958890eb3dd2f8a1bf615a",
+          "portal_blank_sha256": "21728993ee08e0f7f1ed6ffc8af9530b190b02dfaf958890eb3dd2f8a1bf615a",
+          "classification": "guidance"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "必要",
+          "instructions": "",
+          "format": "doc",
+          "sample_sha256": "3fa0885e563a7396feaec680ccafd99858490dac82d75a7b9724ce1a9537661d",
+          "portal_blank_sha256": "3fa0885e563a7396feaec680ccafd99858490dac82d75a7b9724ce1a9537661d",
+          "classification": "sample"
+        }
+      ]
+    }
+  }
+}
