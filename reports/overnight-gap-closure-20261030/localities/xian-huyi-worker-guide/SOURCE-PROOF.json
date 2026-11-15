@@ -1,0 +1,63 @@
+{
+  "region_code": "610118",
+  "city": "西安市",
+  "district": "鄠邑区",
+  "authority": "鄠邑区人社局",
+  "role": "劳动者",
+  "collected_at": "2026-11-15T21:48:49.113Z",
+  "source_url": "https://zwfw.xa.gov.cn/huyi/bmbs/abmfl/hyqrsj14e6/1570511497392656386.html",
+  "source_sha256": "56aac3432710c3890c5cb9717b63e7dc52144c9d55141cfb1860c255b3779717",
+  "public_matter_id": "116101257350734628400201430200202",
+  "employer_url": "https://zwfw.xa.gov.cn/huyi/bmbs/abmfl/hyqrsj14e6/1570516362852429826.html",
+  "employer_status": 404,
+  "official_directory_url": "https://xahrss.xa.gov.cn/wsfw/ldgx/bgxz/5f509addfd850845e6f151bc.html",
+  "source_archive_sha256": "b6f9f44214434448c2154dec61fa96aa07c3ed67f3dee2909f99e4393b88d27c",
+  "material_details_sha256": "f0e2213e0e05ee0fd5017842b454305cc856ac95c94bcba344be9627139e044d",
+  "office": "陕西省西安市鄠邑区 丰京路3542号西安市鄠邑区就业服务中心(办理窗口:617室)",
+  "hours": "夏令时:星期一至星期五上午09:00至12:00,下午15:00至18:00(法定节假日除外) 冬令时:星期一至星期五上午09:00至12:00,下午14:00至18:00(法定节假日除外)",
+  "phone": "029-84818266",
+  "complaint_phone": "029-84835953",
+  "workdays": 5,
+  "in_person_visits": "1 次",
+  "channel": "窗口办理",
+  "authority_note": "事项实施主体为鄠邑区人社局，指南列委托部门为周至县劳动人事争议仲裁委。指南列丰京路3542号就业服务中心617室，西安市人社局通讯录列丰京路36号区就业中心六楼。办理地址和文书收件机关请向该区调解立案科核实。",
+  "attachment_note": "该指南所附仲裁申请书收件机关为西安市劳动人事争议仲裁委员会。身份证附件是复印件样式。申请书的收件机关和附件适用性仍待核验。",
+  "materials": [
+    {
+      "key": "application",
+      "name": "劳动人事争议仲裁申请书",
+      "original_copy": "原件",
+      "copies": "原件3份",
+      "required": "必要",
+      "instructions": "申请人如实填写，按照被申请人个数提交副本"
+    },
+    {
+      "key": "contract",
+      "name": "劳动合同",
+      "original_copy": "原件和复印件",
+      "copies": "原件1份、复印件1份",
+      "required": "必要",
+      "instructions": "可同时提交证据材料清单，包括证据材料名称、种类、证明对象及内容、是否有原件等"
+    },
+    {
+      "key": "identity",
+      "name": "身份证",
+      "original_copy": "原件和复印件",
+      "copies": "原件1份、复印件1份",
+      "required": "必要",
+      "instructions": "请申请人提前复印"
+    }
+  ],
+  "observed_blank_downloads": [
+    {
+      "url": "https://zwfw.xa.gov.cn/upload/itemFile/610118000000/95da870fb4d2735b3ab2579ffb7ea3a9/material/09ed93bcdcf310f1223ad49af18f9cda/%E4%BB%B2%E8%A3%81%E7%94%B3%E8%AF%B7%E4%B9%A6.docx",
+      "sha256": "c4a82c8f6e4f0725126149052e98d8c24e4230ac3acb62217e4e4ca764fbd2e0",
+      "label": "仲裁申请书"
+    },
+    {
+      "url": "https://zwfw.xa.gov.cn/upload/itemFile/610118000000/95da870fb4d2735b3ab2579ffb7ea3a9/material/9aa831d633206ef53cd480cfe760d8d0/%E8%BA%AB%E4%BB%BD%E8%AF%81%E5%A4%8D%E5%8D%B0%E4%BB%B6%E6%A0%B7%E5%BC%8F(%E6%96%B0).docx",
+      "sha256": "11b99060b52051ed0d178395f44503043753ea48ec54758e1c022ce068e902b4",
+      "label": "身份证复印件样式(新)"
+    }
+  ]
+}
