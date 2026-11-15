@@ -1,0 +1,330 @@
+{
+  "regions": {
+    "610723": {
+      "catalog_sha256": "f8e0c192b49a6190ff32a3846884c8b5d1aeaad270acddd5d9ab1a82443e4715",
+      "materials_receipt_sha256": "73cb62625e18c0a8bfd68ab957f350147eff189f3fcb4a10bb51d16dca216f90",
+      "official_html_sha256": "7e3ac1c77970d764482db4e3669c8ba240475799b04bd4b0ab4d79e9e7c7550c",
+      "guide": {
+        "province": "shaanxi",
+        "province_name": "陕西省",
+        "city": "汉中市",
+        "district": "洋县",
+        "scope_level": "district",
+        "region_code": "610723",
+        "authority": "洋县人力资源和社会保障局",
+        "service_name": "劳动人事争议仲裁申请",
+        "source_title": "劳动人事争议仲裁申请（劳动者）",
+        "source_url": "https://zwfw.hanzhong.gov.cn/yangxian/icity/proinfo/index?code=ca7e76a18fe2bb86f512f62c375347e4",
+        "source_version": "7e3ac1c77970d764482db4e3669c8ba240475799b04bd4b0ab4d79e9e7c7550c",
+        "official_version": "",
+        "collected_at": "2026-11-15T08:58:11.974332+00:00",
+        "verified_at": "2026-11-15T09:04:28.265102+00:00",
+        "verification_status": "verified",
+        "published": true,
+        "can_generate": false,
+        "fields": {
+          "办理形式": "窗口办理 网上办理",
+          "到办事现场次数": "1 次",
+          "法定办结时限": "5 工作日",
+          "承诺办结时限": "1 工作日",
+          "咨询方式": "0916-2938727",
+          "办理地点": "陕西省汉中市洋县 真符路6洋县政府行政服务中心(办理窗口:10)",
+          "办理时间": "星期一至星期五上午09:00至12:00,下午13:30至17:00(法定节假日除外)",
+          "是否收费": "不收费",
+          "服务对象": "自然人"
+        },
+        "materials": [
+          {
+            "id": "610723-worker-1",
+            "name": "劳动人事争议仲裁申请书",
+            "material_type": "原件和复印件",
+            "format": "纸质材料",
+            "copies": "原件1份  复印件2份",
+            "required": "必要",
+            "acceptance_standard": "双方产生劳动争议。",
+            "source_channel": "申请人自备",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/yangxian/icity/proinfo/index?code=ca7e76a18fe2bb86f512f62c375347e4",
+            "region_code": "610723",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610723-worker-2",
+            "name": "劳动（人事）关系证明材料",
+            "material_type": "原件和复印件",
+            "format": "纸质材料",
+            "copies": "原件1份  复印件2份",
+            "required": "必要",
+            "acceptance_standard": "双方发生劳动争议。",
+            "source_channel": "申请人自备",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/yangxian/icity/proinfo/index?code=ca7e76a18fe2bb86f512f62c375347e4",
+            "region_code": "610723",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610723-worker-3",
+            "name": "授权委托书",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "acceptance_standard": "双方产生劳动争议。",
+            "source_channel": "申请人自备",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/yangxian/icity/proinfo/index?code=ca7e76a18fe2bb86f512f62c375347e4",
+            "region_code": "610723",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610723-worker-4",
+            "name": "外国人就业证",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "acceptance_standard": "外国人在洋县工作发生劳动争议由省仲裁受理，市、县不予受理。",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/yangxian/icity/proinfo/index?code=ca7e76a18fe2bb86f512f62c375347e4",
+            "region_code": "610723",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610723-worker-5",
+            "name": "身份证",
+            "material_type": "复印件",
+            "format": "纸质材料",
+            "copies": "复印件2份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "申请人自备",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/yangxian/icity/proinfo/index?code=ca7e76a18fe2bb86f512f62c375347e4",
+            "region_code": "610723",
+            "service_object": "劳动者",
+            "attachments": []
+          }
+        ],
+        "channel": {
+          "raw_value": "官网列窗口办理及网上办理",
+          "online_status": "unverified",
+          "entry_url": null,
+          "submission_verified": false
+        },
+        "sections": {
+          "申请条件": "劳动者与用人单位之间发生劳动争议。",
+          "收费标准": "不收费"
+        },
+        "warnings": [
+          "页面所列时限为本事项办理信息。",
+          "申请书空表与样表入口返回相同照片，图片印有样本字样，事实与理由栏标为省略。",
+          "授权委托书是样表照片。材料栏的外国人就业证标为必要，适用情形请向洋县办理机构核对。"
+        ],
+        "templates": [
+          {
+            "id": "hanzhong-610723-application",
+            "region_code": "610723",
+            "source_url": "https://zwfw.hanzhong.gov.cn/yangxian/icity/proinfo/index?code=ca7e76a18fe2bb86f512f62c375347e4",
+            "official_attachment_entry": "material_tab",
+            "original_name": "洋县仲裁申请书（官方样表）",
+            "official_kind": "sample",
+            "file_type": "jpg",
+            "official_sha256": "2e0fd5d3db73957897ea24303f99625edd7dcd7f28ac7317695ff3a0b56a1d1d",
+            "official_bytes": 71540,
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          },
+          {
+            "id": "hanzhong-610723-authorization",
+            "region_code": "610723",
+            "source_url": "https://zwfw.hanzhong.gov.cn/yangxian/icity/proinfo/index?code=ca7e76a18fe2bb86f512f62c375347e4",
+            "official_attachment_entry": "material_tab",
+            "original_name": "洋县授权委托书（官方样表）",
+            "official_kind": "sample",
+            "file_type": "jpg",
+            "official_sha256": "194d222bbb4f8a8b8e796a133d9152794c5fac9b59c47acb089bf88d0affe079",
+            "official_bytes": 662031,
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          }
+        ]
+      },
+      "attachment_proof": {
+        "download_receipt_sha256": "fd3320b170c02499259a590fa4f760091cfff856edc6f6b6bc27142c2bc4fa74",
+        "visual_review_sha256": "dddc3647ad2a4ce148ede67f80a8813f8b1906a2dc71097783e57ffbeedc95c6",
+        "review": "same_application_image_both_entries_printed_sample_and_omission_authorization_photo",
+        "word_render_page_sha256": null
+      }
+    },
+    "610724": {
+      "catalog_sha256": "6422810ece35885012d184d0ff78321b2da701321417595d9db04b3dc1d892b4",
+      "materials_receipt_sha256": "4da9c88f08ede9487c4821a9456901ced1b249504da257c59f88107ba00f4a3d",
+      "official_html_sha256": "304b08175345a4da6bf3b30753a82233d08e0fb7fd5f55b765d66472b5849185",
+      "guide": {
+        "province": "shaanxi",
+        "province_name": "陕西省",
+        "city": "汉中市",
+        "district": "西乡县",
+        "scope_level": "district",
+        "region_code": "610724",
+        "authority": "西乡县人力资源和社会保障局",
+        "service_name": "劳动人事争议仲裁申请",
+        "source_title": "劳动人事争议仲裁申请（劳动者）",
+        "source_url": "https://zwfw.hanzhong.gov.cn/xixiangxian/icity/proinfo/index?code=b0a9823a38c72404ba37e4f1ad839637",
+        "source_version": "304b08175345a4da6bf3b30753a82233d08e0fb7fd5f55b765d66472b5849185",
+        "official_version": "",
+        "collected_at": "2026-11-15T08:57:35.194855+00:00",
+        "verified_at": "2026-11-15T09:04:28.271372+00:00",
+        "verification_status": "verified",
+        "published": true,
+        "can_generate": false,
+        "fields": {
+          "办理形式": "窗口办理 网上办理",
+          "到办事现场次数": "0 次",
+          "法定办结时限": "5 工作日",
+          "承诺办结时限": "0 工作日",
+          "咨询方式": "0916-6217683",
+          "办理地点": "陕西省汉中市西乡县 城关镇环山路人力资源和社会保障局西乡县人力资源和社会保障局(办理窗口:仲裁股)",
+          "办理时间": "星期一至星期五上午08:00至12:00,下午14:00至18:00(法定节假日除外)",
+          "是否收费": "不收费",
+          "服务对象": "自然人"
+        },
+        "materials": [
+          {
+            "id": "610724-worker-1",
+            "name": "劳动人事争议仲裁申请书",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件2份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/xixiangxian/icity/proinfo/index?code=b0a9823a38c72404ba37e4f1ad839637",
+            "region_code": "610724",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610724-worker-2",
+            "name": "身份证",
+            "material_type": "原件和复印件",
+            "format": "纸质材料",
+            "copies": "原件2份  复印件2份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/xixiangxian/icity/proinfo/index?code=b0a9823a38c72404ba37e4f1ad839637",
+            "region_code": "610724",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610724-worker-3",
+            "name": "劳动（人事）关系证明材料",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/xixiangxian/icity/proinfo/index?code=b0a9823a38c72404ba37e4f1ad839637",
+            "region_code": "610724",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610724-worker-4",
+            "name": "授权委托书",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/xixiangxian/icity/proinfo/index?code=b0a9823a38c72404ba37e4f1ad839637",
+            "region_code": "610724",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610724-worker-5",
+            "name": "外国人就业证",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/xixiangxian/icity/proinfo/index?code=b0a9823a38c72404ba37e4f1ad839637",
+            "region_code": "610724",
+            "service_object": "劳动者",
+            "attachments": []
+          }
+        ],
+        "channel": {
+          "raw_value": "官网列窗口办理及网上办理",
+          "online_status": "unverified",
+          "entry_url": null,
+          "submission_verified": false
+        },
+        "sections": {
+          "申请条件": "符合法律法规情形的",
+          "收费标准": "不收费"
+        },
+        "warnings": [
+          "页面所列时限为本事项办理信息。",
+          "申请书 DOCX 来自官网样表栏，落款为西乡县劳动人事争议仲裁委员会。委托书为图片样表。",
+          "承诺时限原文列为 0 工作日，请向西乡县办理机构确认。外国人就业证在材料栏标为必要，适用情形请同时核对。"
+        ],
+        "templates": [
+          {
+            "id": "hanzhong-610724-application",
+            "region_code": "610724",
+            "source_url": "https://zwfw.hanzhong.gov.cn/xixiangxian/icity/proinfo/index?code=b0a9823a38c72404ba37e4f1ad839637",
+            "official_attachment_entry": "material_tab",
+            "original_name": "西乡县仲裁申请书（官方样表）",
+            "official_kind": "sample",
+            "file_type": "docx",
+            "official_sha256": "eb9641450cd2e7d39ab1bc7bc47ff10e61cd38192e508855613a0d1688778882",
+            "official_bytes": 39692,
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          },
+          {
+            "id": "hanzhong-610724-authorization",
+            "region_code": "610724",
+            "source_url": "https://zwfw.hanzhong.gov.cn/xixiangxian/icity/proinfo/index?code=b0a9823a38c72404ba37e4f1ad839637",
+            "official_attachment_entry": "material_tab",
+            "original_name": "西乡县授权委托书（官方样表）",
+            "official_kind": "sample",
+            "file_type": "png",
+            "official_sha256": "920a362d20ecc7fe7bd67e4b5de2c33f06eb572465b5435048966bd3601c5a91",
+            "official_bytes": 51226,
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          }
+        ]
+      },
+      "attachment_proof": {
+        "download_receipt_sha256": "c4902e992d624a60c16755cb58425b4fb03563620006fc22084172613323c940",
+        "visual_review_sha256": "dddc3647ad2a4ce148ede67f80a8813f8b1906a2dc71097783e57ffbeedc95c6",
+        "review": "sample_only_one_page_word_local_authority_authorization_sample_png",
+        "word_render_page_sha256": "85c90aa5cf43a4020f7cd55d6835845c350ef73d8bbdc32edc6806e51d1be53f"
+      }
+    }
+  }
+}
