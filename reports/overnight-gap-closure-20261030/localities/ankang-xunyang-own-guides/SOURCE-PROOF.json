@@ -1,0 +1,69 @@
+{
+  "area": {
+    "province_name": "陕西省",
+    "city": "安康市",
+    "district": "旬阳市",
+    "region_code": "610981",
+    "authority": "旬阳市人力资源和社会保障局"
+  },
+  "county_home": "https://www.xyx.gov.cn/",
+  "county_home_sha256": "25e48ff7332678e11df777eb15858cc98b08040961949f8beb0c2b46aa3c6506",
+  "portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610981000000",
+  "phone": "0915-7221121",
+  "roles": {
+    "worker": {
+      "label": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1113232315705&siteCode=610981000000",
+      "captured_at": "2026-11-15T13:19:07.035Z",
+      "guide_sha256": "ead3d1ef8a9235b355d6820f06551b5c091273f490f34d843157bf1952530bd7",
+      "receipt_sha256": "e8835de1b00332c8c35b864ac15fdec236afdf5b38eee9fc9785235ff0bdaafd",
+      "venue": "陕西省安康市旬阳市城关镇 旬阳市-城关镇商贸大街577号旬阳市人力资源和社会保障局(办理窗口:前楼404室)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "official_sample_sha256": "5026d19a041c80f7fe7c053494d8ce1e6c3741b25b95e2830058ba5804e8cca4"
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "official_sample_sha256": "27fc7861be400ee9dcd9b7488b1c72a97e3d4c053040ad4787e3d9f18387179a"
+        }
+      ]
+    },
+    "employer": {
+      "label": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1116864303744&siteCode=610981000000",
+      "captured_at": "2026-11-15T13:19:06.789Z",
+      "guide_sha256": "e74c69ca69cad37f1e14ea5d3a314bd70e71dbd13c1e5b60d0d902d34538091e",
+      "receipt_sha256": "61eeb26e3caf8d84142499942a41ca6c08cd190bb9dece1da44e2b64609777fa",
+      "venue": "陕西省安康市旬阳市城关镇 旬阳市-商贸大街577号旬阳市人力资源和社会保障局(办理窗口:前楼404室)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "official_sample_sha256": "ee49b047d4c3cf985a87d01c5adae8ae620192b66c79261f2bf592f4fee9995e"
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": null,
+          "official_sample_sha256": null
+        }
+      ]
+    }
+  }
+}
