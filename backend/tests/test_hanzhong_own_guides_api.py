@@ -18,6 +18,47 @@ MATERIALS = ['劳动人事争议仲裁申请书', '授权委托书', '劳动（�
 
 
 class HanzhongOwnGuidesApiTests(TestCase):
+    def test_ningqiang_and_lueyang_keep_their_own_materials_and_sample_modes(self):
+        from regional_hanzhong_guides import staged_guide
+
+        with TemporaryDirectory() as work:
+            store = RegionalStore(Path(work) / 'guides.sqlite')
+            store.put_guide(staged_guide('610700', ROOT))
+            app = FastAPI()
+            app.include_router(routes.router, prefix='/regional')
+            with patch.object(routes, 'ROOT', ROOT), patch.object(routes, 'store', return_value=store), TestClient(app) as client:
+                for code, county, names, copies, period, phone in [
+                    ('610726', '宁强县', [MATERIALS[0], MATERIALS[3], MATERIALS[1]], '原件1份', '2 工作日', '0916-4221648'),
+                    ('610727', '略阳县', [MATERIALS[0], MATERIALS[3], MATERIALS[2], MATERIALS[1], '外国人就业证'],
+                     '原件2份\xa0 复印件2份', '5 工作日', '0916-4827378'),
+                ]:
+                    guide = store.put_guide(staged_guide(code, ROOT))
+                    scope = {**BASE, 'district': county}
+                    fetched = client.get('/regional/lookup', params=scope).json()
+                    self.assertEqual(fetched['source_id'], guide['source_id'])
+                    self.assertEqual(fetched['fields']['承诺办结时限'], period)
+                    self.assertEqual(fetched['fields']['咨询方式'], phone)
+                    self.assertEqual([item['name'] for item in fetched['materials']], names)
+                    self.assertEqual(fetched['materials'][0]['copies'], copies)
+                    self.assertTrue(all(item['region_code'] == code for item in fetched['materials']))
+                    self.assertFalse(fetched['can_generate'])
+                    self.assertEqual(
+                        [template['official_kind'] for template in fetched['templates']],
+                        ['sample', 'sample'] if code == '610726' else ['unverified', 'unverified'],
+                    )
+                    for template in fetched['templates']:
+                        self.assertEqual(template['source_url'], guide['source_url'])
+                        self.assertEqual(template['region_code'], code)
+                        self.assertFalse(template['can_generate'])
+                        self.assertEqual('official_sha256' in template, code == '610726')
+                        binding = {**scope, 'source_id': guide['source_id'], 'version': guide['version']}
+                        self.assertEqual(client.get(
+                            f"/regional/templates/{template['id']}", params=binding,
+                        ).status_code, 404)
+                neighbor = client.get('/regional/lookup', params={**BASE, 'district': '镇巴县'}).json()
+                self.assertIsNone(neighbor['source_id'])
+                self.assertEqual(neighbor['templates'], [])
+
     def test_yangxian_and_xixiang_preserve_separate_sample_and_guide_sources(self):
         from regional_hanzhong_guides import staged_guide
 
