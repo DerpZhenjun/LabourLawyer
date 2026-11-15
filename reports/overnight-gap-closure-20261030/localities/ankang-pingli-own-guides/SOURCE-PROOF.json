@@ -1,0 +1,95 @@
+{
+  "area": {
+    "province": "陕西省",
+    "city": "安康市",
+    "district": "平利县",
+    "region_code": "610926",
+    "authority": "平利县人力资源和社会保障局"
+  },
+  "county_home": {
+    "url": "https://www.pingli.gov.cn/",
+    "sha256": "540401401c0e0a23687dfad280360df54a819c8bb4f219152ec6425c47d9a644"
+  },
+  "service_portal": "https://zwfw.shaanxi.gov.cn/pc/#/c/service?siteCode=610926000000",
+  "phone": "0915-8412611",
+  "consultation_window": "调解仲裁股",
+  "portal_commitment": "0 个工作日",
+  "roles": {
+    "worker": {
+      "label": "劳动者",
+      "url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1119487129116&siteCode=610926000000",
+      "captured_at": "2026-11-15T12:58:43.947Z",
+      "guide_sha256": "56a7b736cfcd0f63d1e563c6c9f7839f4fc67c844dcbb89fee4ffb41120fc1cd",
+      "receipt_sha256": "a916261e6edbccf861495584f05980e5d1a4d47268615c1953c50e7d0587c196",
+      "venue": "陕西省安康市平利县城关镇 陈家坝商贸小区524号陈家坝商贸小区-524号楼(办理窗口:一楼西区29、30综合局窗口)",
+      "materials": [
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": true,
+          "instructions": "",
+          "sample_sha256": "5252d676e718477119a26b5b004a748437b05390c124a7e9022870a6b12353c4",
+          "portal_blank_sha256": "5252d676e718477119a26b5b004a748437b05390c124a7e9022870a6b12353c4"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": true,
+          "instructions": "",
+          "sample_sha256": "54551d2e8d3f5441c432f11ced0e897e352c4675efb42f967722100df51d2674",
+          "portal_blank_sha256": "54551d2e8d3f5441c432f11ced0e897e352c4675efb42f967722100df51d2674"
+        },
+        {
+          "key": "evidence",
+          "name": "劳动（人事）关系证明材料",
+          "required": true,
+          "instructions": "劳动合同、工资流水、考勤记录、保险缴纳等都可以证明劳动关系，可综合提供，无固定样式。",
+          "sample_sha256": "0065336f245592231c9df78901043680c9375892cc5447ce67f85b9df0820141",
+          "portal_blank_sha256": "0065336f245592231c9df78901043680c9375892cc5447ce67f85b9df0820141"
+        },
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": true,
+          "instructions": "",
+          "sample_sha256": "0d54b79f33b39b1f6aa748d1cba20fe9825489329e504caa09fa413186e27199",
+          "portal_blank_sha256": "0d54b79f33b39b1f6aa748d1cba20fe9825489329e504caa09fa413186e27199"
+        }
+      ]
+    },
+    "employer": {
+      "label": "用人单位",
+      "url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1119843131748&siteCode=610926000000",
+      "captured_at": "2026-11-15T12:58:43.703Z",
+      "guide_sha256": "6d8165b6070ba1e3a0a6a2a7fa615d3fff8d76ce3184efdfb889973a592eada3",
+      "receipt_sha256": "a35c816298f6724bbdcdf675b0eefe50c19c6bd5105e80b68790dfafcc85d7aa",
+      "venue": "陕西省安康市平利县城关镇 陈家坝商贸小区524号陈家坝商贸小区-524号楼(办理窗口:一楼东区29 、30综合局窗口)",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": true,
+          "instructions": "",
+          "sample_sha256": "0d54b79f33b39b1f6aa748d1cba20fe9825489329e504caa09fa413186e27199",
+          "portal_blank_sha256": null
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": true,
+          "instructions": "",
+          "sample_sha256": "bb84878753437a481a4a2bb1ba14047013dc4717cc5eece0831b25c394b78778",
+          "portal_blank_sha256": null
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": true,
+          "instructions": "",
+          "sample_sha256": "54551d2e8d3f5441c432f11ced0e897e352c4675efb42f967722100df51d2674",
+          "portal_blank_sha256": null
+        }
+      ]
+    }
+  }
+}
