@@ -26,6 +26,9 @@ from regional_hanbin_application import (
 from regional_lueyang_application import (
     ADAPTER as LUEYANG_APPLICATION_ADAPTER, LueyangApplicationRequest, fill_application as fill_lueyang_application,
 )
+from regional_ziyang_worker_reference import (
+    ADAPTER as ZIYANG_REFERENCE_ADAPTER, WorkerReferenceRequest as ZiyangWorkerReferenceRequest, fill_reference as fill_ziyang_reference,
+)
 from regional_foping_reference import (
     ADAPTER as FOPING_REFERENCE_ADAPTER, FopingReferenceRequest, fill_application as fill_foping_reference,
 )
@@ -677,6 +680,8 @@ def generation_request_model(adapter,kind):
         return HanbinApplicationRequest
     if adapter == LUEYANG_APPLICATION_ADAPTER and kind == 'application':
         return LueyangApplicationRequest
+    if adapter == ZIYANG_REFERENCE_ADAPTER and kind == 'application':
+        return ZiyangWorkerReferenceRequest
     if adapter == FOPING_REFERENCE_ADAPTER and kind == 'application':
         return FopingReferenceRequest
     if adapter == LIUBA_XLSX_ADAPTER and kind == 'evidence':
@@ -742,7 +747,7 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks, xlsx: b
             g, province=payload.province, city=payload.city, district=payload.district,
             source_id=payload.source_id, version=payload.version)
         t = select_regional_template(g, payload.template_id, payload.kind, mode=payload.mode, case_scope=payload.case_scope)
-        if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER, BAOJI_EVIDENCE_ADAPTER, XIXIANG_REFERENCE_ADAPTER, LIUBA_XLSX_ADAPTER, FOPING_REFERENCE_ADAPTER, LUEYANG_APPLICATION_ADAPTER, HANBIN_APPLICATION_ADAPTER, HANYIN_APPLICATION_ADAPTER, *BAOJI_WORKER_MODELS} and payload.contract_id is None:
+        if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER, BAOJI_EVIDENCE_ADAPTER, XIXIANG_REFERENCE_ADAPTER, LIUBA_XLSX_ADAPTER, FOPING_REFERENCE_ADAPTER, ZIYANG_REFERENCE_ADAPTER, LUEYANG_APPLICATION_ADAPTER, HANBIN_APPLICATION_ADAPTER, HANYIN_APPLICATION_ADAPTER, *BAOJI_WORKER_MODELS} and payload.contract_id is None:
             raise RegionalValidationError(409, '请重新打开当前地区的填写表单后生成')
         adapter, data, validated_contract_id = validate_generation_request(
             g, t, payload.kind, payload.data, payload.contract_id, root=ROOT,
@@ -761,6 +766,8 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks, xlsx: b
             doc = fill_hanbin_application(checked_path(t,g).read_bytes(), data.model_dump())
         elif adapter == LUEYANG_APPLICATION_ADAPTER:
             doc = fill_lueyang_application(checked_path(t,g).read_bytes(), data.model_dump())
+        elif adapter == ZIYANG_REFERENCE_ADAPTER:
+            doc = fill_ziyang_reference(checked_path(t,g).read_bytes(), data.model_dump())
         elif adapter == FOPING_REFERENCE_ADAPTER:
             doc = fill_foping_reference(checked_path(t,g).read_bytes(), data.model_dump())
         elif adapter == LIUBA_XLSX_ADAPTER:

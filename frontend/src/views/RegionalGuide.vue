@@ -65,6 +65,7 @@
             <p v-if="t.file_origin==='official-handwritten-blank-layout'">官方手写空表。请用钢笔或黑色签字笔填写。</p>
             <p v-else-if="t.file_origin==='official-blank-converted-layout'">官方 {{ t.original_format==='WPS'?'WPS':'DOC' }} 的空白转换版</p>
             <p v-else-if="t.file_origin==='official-blank-metadata-sanitized-layout'">依据官方空白原件制作的填写版，版式保留</p>
+            <p v-else-if="t.reference_marking==='供当事人参考'">官方参考格式，原件标注“供当事人参考”。</p>
             <p v-else>{{ t.official_kind==='blank'?'官方空白表格':t.official_kind==='sample'?'官方示例样表（不是空白模板）':'附件类型待核实' }}</p>
             <details>
               <summary>来源与文件校验</summary>
@@ -78,7 +79,7 @@
           <a v-else-if="t.download_status==='official_link_only'" class="ll-button secondary" :href="t.source_url" target="_blank" rel="noopener noreferrer">{{ t.official_attachment_entry==='material_tab'?'前往官网申报材料':'打开官方附件' }}</a>
           <span v-else>下载待核验</span>
         </div>
-        <div v-if="generatable" class="reference-fill"><h3>按{{ guide.district }}{{ blankGeneration?'官方空白表格':'参考样表' }}辅助填写</h3><p>{{ blankGeneration?'当前填写使用本地区官网提供、已核对的空白表格。':'官网将申请书附件列为示例样表。' }}页面上方可以直接填写；默认内容为本平台虚构示例，请替换为真实信息。签名位置留空，不自动提交申请。</p><div class="region-actions"><RouterLink v-if="hasGenerationKind(guide,'application')" :to="documentLink('application')" class="ll-button">填写申请书</RouterLink><RouterLink v-if="hasGenerationKind(guide,'evidence')" :to="documentLink('evidence')" class="ll-button secondary">填写证据清单</RouterLink></div></div>
+        <div v-if="generatable" class="reference-fill"><h3>按{{ guide.district }}{{ blankGeneration?'官方空白表格':'参考样表' }}辅助填写</h3><p>{{ blankGeneration?'当前填写使用本地区官网提供、已核对的空白表格。':referenceMarking?'填写时保留原件的参考标记。':'官网将申请书附件列为示例样表。' }}页面上方可以直接填写；默认内容为本平台虚构示例，请替换为真实信息。签名位置留空，不自动提交申请。</p><div class="region-actions"><RouterLink v-if="hasGenerationKind(guide,'application')" :to="documentLink('application')" class="ll-button">填写申请书</RouterLink><RouterLink v-if="hasGenerationKind(guide,'evidence')" :to="documentLink('evidence')" class="ll-button secondary">填写证据清单</RouterLink></div></div>
         <p v-else-if="!guide.templates.some(t=>t.file_origin==='official-handwritten-blank-layout')" class="region-notice">
           本地区附件尚未通过自动填写核验。
           <template v-if="guide.templates.some(t=>t.download_status==='downloaded')">可下载上方已核实的原文件参考。</template>
@@ -135,6 +136,7 @@ const districtChoices=computed(()=>{
 })
 const chengduAreas=computed(()=>coverage.value.filter(g=>g.province==='sichuan'&&g.city==='成都市'))
 const generatable=computed(()=>guide.value?.templates.some(t=>t.can_generate))
+const referenceMarking=computed(()=>guide.value?.templates.some(t=>t.can_generate&&t.reference_marking==='供当事人参考'))
 const blankGeneration=computed(()=>guide.value?.templates.filter(t=>t.can_generate).every(t=>t.official_kind==='blank'))
 const plainWarning=(value:unknown)=>plainGuideWarning(String(value)).replaceAll('not_found_in_checked_sources','本次已查来源未找到').replaceAll('NOT_RUN','尚未核验')
 const field=(name:string)=>guideField(guide.value,name)

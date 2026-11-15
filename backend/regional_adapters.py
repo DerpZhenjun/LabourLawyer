@@ -6,6 +6,7 @@ from regional_baoji_county_application import MODELS_BY_ADAPTER as BAOJI_WORKER_
 from regional_hanyin_application import ADAPTER as HANYIN_APPLICATION_ADAPTER, checked_adapter as checked_hanyin_application
 from regional_hanbin_application import ADAPTER as HANBIN_APPLICATION_ADAPTER, checked_adapter as checked_hanbin_application
 from regional_lueyang_application import ADAPTER as LUEYANG_APPLICATION_ADAPTER, checked_adapter as checked_lueyang_application
+from regional_ziyang_worker_reference import ADAPTER as ZIYANG_REFERENCE_ADAPTER, checked_adapter as checked_ziyang_reference
 from regional_foping_reference import ADAPTER as FOPING_REFERENCE_ADAPTER, checked_adapter as checked_foping_reference
 from regional_liuba_evidence import ADAPTER as LIUBA_XLSX_ADAPTER, checked_adapter as checked_liuba_workbook
 from regional_xixiang_reference import ADAPTER as XIXIANG_REFERENCE_ADAPTER, checked_adapter as checked_xixiang_adapter
@@ -400,6 +401,8 @@ def checked_reference_adapter(guide, template, kind,root=None):
         return checked_hanbin_application(guide, template, kind, root)
     if template.get('adapter') == LUEYANG_APPLICATION_ADAPTER:
         return checked_lueyang_application(guide, template, kind, root)
+    if template.get('adapter') == ZIYANG_REFERENCE_ADAPTER:
+        return checked_ziyang_reference(guide, template, kind, root)
     if template.get('adapter') == FOPING_REFERENCE_ADAPTER:
         return checked_foping_reference(guide, template, kind, root)
     if template.get('adapter') == LIUBA_XLSX_ADAPTER:
