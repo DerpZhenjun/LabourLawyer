@@ -26,7 +26,7 @@ class HanzhongOwnGuidesApiTests(TestCase):
             directory = DirectoryStore(Path(work) / 'directory.sqlite')
             rows = json.loads((ROOT / 'data/public-regions/directory.json').read_bytes())
             for row in rows:
-                if row['code'] in {'610700', '610702', '610721'}:
+                if row['code'] in {'610700', '610702', '610703'}:
                     directory.put_area(row)
 
             municipal = store.put_guide(staged_guide('610700', ROOT))
@@ -39,6 +39,8 @@ class HanzhongOwnGuidesApiTests(TestCase):
                 areas = client.get('/regional/areas', params=BASE).json()['items']
                 self.assertEqual(areas[0]['district'], '市本级')
                 self.assertEqual(areas[0]['source_id'], municipal['source_id'])
+                neighboring_area = next(row for row in areas if row['district'] == '南郑区')
+                self.assertIsNone(neighboring_area['source_id'])
 
                 for draft, method, certain, copies, phone, online in [
                     (municipal, '网上办理', '非必要', '复印件1份', '0916-2626620', 'unverified'),
