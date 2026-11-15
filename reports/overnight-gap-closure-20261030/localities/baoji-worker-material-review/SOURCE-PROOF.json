@@ -1,0 +1,60 @@
+{
+  "regions": {
+    "610324": {
+      "source_url": "https://zwfwzx.baoji.gov.cn/fufengxian/icity/proinfo/index?code=e1dad0769f9b91085d75cda86abb6f85",
+      "observed_at": "2026-11-15T07:15:25.433490+00:00",
+      "materials_receipt_sha256": "66ca0453d43afe7b75112cab8ed81fe84c48035298995d914962fac745e05a99",
+      "samples": [
+        {
+          "material": "授权委托书",
+          "official_sample_filename": "授权委托书样本.jpg",
+          "sample_sha256": "35236c3d1e5a9b7266080f7e12e5056270f54586866078c978e019c593b8258a",
+          "sample_bytes": 42212,
+          "blank_entry_sha256": "35236c3d1e5a9b7266080f7e12e5056270f54586866078c978e019c593b8258a",
+          "classification": "blank_entry_bytes_equal_sample"
+        }
+      ],
+      "evidence_directory_status": "not_listed_in_observed_materials",
+      "warning": "扶风县授权委托书空表与样表下载件相同。本次公开材料未核验到独立空表或证据目录。"
+    },
+    "610328": {
+      "source_url": "https://zwfwzx.baoji.gov.cn/qianyangxian/icity/proinfo/index?code=6f11d0a717c9718711197ed1e6aff2df",
+      "observed_at": "2026-11-15T07:15:29.518857+00:00",
+      "materials_receipt_sha256": "9c29e662a5fbbd5347cd94deb84460e854976dc1a27aca7608de910505a4b1c3",
+      "samples": [
+        {
+          "material": "授权委托书",
+          "official_sample_filename": "授权委托书.doc",
+          "sample_sha256": "ec1403fd9ad0b59771de5192e7a4cb689a072cc5ebd80140cf4a06fc508ec1c3",
+          "sample_bytes": 14336,
+          "classification": "sample_entry_only"
+        }
+      ],
+      "evidence_directory_status": "not_listed_in_observed_materials",
+      "warning": "千阳县授权委托书仅列样表入口。本次公开材料未核验到独立空表或证据目录。"
+    },
+    "610305": {
+      "source_url": "https://zwfwzx.baoji.gov.cn/fengxiangxian/icity/proinfo/index?code=e98532adcf9a3fdfbe2e5aa75271d289",
+      "observed_at": "2026-11-15T07:15:32.839450+00:00",
+      "materials_receipt_sha256": "2baa258482080a698ac4118a02efe375ed83b232e2743d7cb43895f9eeeaa4b6",
+      "samples": [
+        {
+          "material": "授权委托书",
+          "official_sample_filename": "授权委托书.doc",
+          "sample_sha256": "286ea44101f57622185b8fbe49f70992dd76b44b30d49c5b4bdf9af986ab52f7",
+          "sample_bytes": 24212,
+          "classification": "sample_entry_only"
+        },
+        {
+          "material": "劳动人事争议仲裁申请书",
+          "official_sample_filename": "劳动仲裁申请书.docx",
+          "sample_sha256": "c95ca1208715221377c2d868de160b49bed576a4b9ba424dde62fbfddf199bde",
+          "sample_bytes": 13027,
+          "classification": "sample_entry_only"
+        }
+      ],
+      "evidence_directory_status": "not_listed_in_observed_materials",
+      "warning": "凤翔区申请书和授权委托书仅列样表入口。本次公开材料未核验到独立空表或证据目录。"
+    }
+  }
+}
