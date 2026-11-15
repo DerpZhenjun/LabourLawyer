@@ -34,7 +34,7 @@
     <div v-else-if="error" class="region-notice danger" role="alert"><p>{{ error }}</p><button class="ll-button secondary" @click="reload">重新读取</button></div>
     <section v-else-if="!guide?.source_id" class="region-panel empty-guide" data-guide-state="unverified">
       <i class="fa-regular fa-compass" aria-hidden="true"></i><h2>{{ region.city && region.district ? '该地区办事指南尚未核验' : '请选择城市和区县' }}</h2><p>不会用其他地区的材料和办理要求代替。你仍可以打开官网查询，或查看已有文书的具体适用范围。</p>
-      <div class="region-actions"><a v-if="province?.officialUrl" :href="province.officialUrl" target="_blank" rel="noopener noreferrer" class="ll-button secondary">打开已收录的官方来源 ↗</a><RouterLink :to="`/province/${region.province}/templates`" class="ll-button secondary">已有文书及适用范围</RouterLink></div>
+      <div class="region-actions"><a v-if="!region.city && !region.district && province?.officialUrl" :href="province.officialUrl" target="_blank" rel="noopener noreferrer" class="ll-button secondary">打开已收录的官方来源 ↗</a><RouterLink :to="`/province/${region.province}/templates`" class="ll-button secondary">已有文书及适用范围</RouterLink></div>
     </section>
     <div v-else :data-source-id="guide.source_id" :data-region-code="guide.region_code" class="verified-guide">
       <section class="region-panel guide-overview" id="regional-overview">
