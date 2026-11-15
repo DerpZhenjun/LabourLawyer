@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-11-15T15:50:54.350783+00:00",
+  "region_code": "610502",
+  "method": "pinned original and Word-native PDF content",
+  "rows": [
+    {
+      "original": "610502-EMPLOYER-APPLICATION-PORTAL-BLANK-ORIGINAL.doc",
+      "original_sha256": "969381d4c5fbea8387b6d756a58f1e7d4b624178685de0961b08128bdeb4684f",
+      "native_pdf_sha256": "0ccdf9827fcc83062f115e9d51c80432598409b08dce1199e06f08c83a63d652",
+      "native_pages": 1,
+      "portal_label": "空表",
+      "finding": "APPLICATION_TITLE_SAMPLE_WITH_FILLED_BODY_AND_SIGNATURE_DATE",
+      "eligible_blank": false
+    },
+    {
+      "original": "610502-WORKER-APPLICATION-PORTAL-BLANK-ORIGINAL.doc",
+      "original_sha256": "ff31800f6ae0c669be45f1644ae3693047b4013d439b83222a24e65e9a5bbcc2",
+      "native_pdf_sha256": "c8df8ee0a9994b39554f533fa362c37a832787cc521790802bc77cf683bfbb6b",
+      "native_pages": 1,
+      "portal_label": "空表",
+      "finding": "APPLICATION_TITLE_SAMPLE_WITH_FILLED_BODY_AND_SIGNATURE_DATE",
+      "eligible_blank": false
+    },
+    {
+      "original": "610502-WORKER-AUTHORIZATION-PORTAL-BLANK-ORIGINAL.doc",
+      "original_sha256": "a9126deec8ff900a8f5d935d716eb59fa398bdcf1ae14d4b8eee0f459d9dfdc6",
+      "native_pdf_sha256": "32ef61759e134c4ab867d6b681f24f30e259aadd308d499bfbaa4126c79e274a",
+      "native_pages": 1,
+      "portal_label": "空表",
+      "finding": "AUTHORIZATION_WITH_IDENTIFIED_EXAMPLE_PARTIES_AND_SIGNATURE_DATES",
+      "eligible_blank": false
+    }
+  ]
+}
