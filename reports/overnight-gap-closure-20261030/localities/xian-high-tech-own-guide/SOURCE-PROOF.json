@@ -1,0 +1,92 @@
+{
+  "region_code": "610152",
+  "city": "西安市",
+  "district": "高新区管委会",
+  "authority": "西安市劳动人事争议仲裁委员会高新派出庭",
+  "source_title": "劳动人事争议仲裁办事指南",
+  "source_url": "https://xdz.xa.gov.cn/ztzl/ldhshbx/ywzn/1707311223297110018.html",
+  "published_at": "2024-01-01 16:25",
+  "collected_at": "2026-11-15T20:11:34.644Z",
+  "raw_dom_sha256": "ae978b708bf814a5fe55e09aa2b406f3cbd5bde51ddebe943a54f882eef637ad",
+  "office": "锦业路1号都市之门A座1601室",
+  "hours": "工作日 09:00–12:00、14:00–18:00",
+  "phone": "029-88333687",
+  "fee": "不收费",
+  "conditions": "依西安市人力资源和社会保障局委托办理高新区企业的劳动争议调解与仲裁，包括港澳台资企业。个案管辖请向派出庭核对。",
+  "materials": [
+    {
+      "key": "application",
+      "name": "劳动争议仲裁申请书",
+      "required": "立案材料",
+      "copies": "被申请人人数 + 1"
+    },
+    {
+      "key": "identity",
+      "name": "申请人身份证明",
+      "required": "按申请人类型备齐",
+      "instructions": "个人提交身份证原件及复印件。单位提交营业执照副本复印件及法定代表人身份证明书，并附法定代表人有效身份证件复印件。"
+    },
+    {
+      "key": "representation",
+      "name": "授权委托书及代理手续",
+      "required": "有委托代理人时",
+      "instructions": "授权委托书须写明委托事项与权限。公民代理按指南准备推荐函或相关证明材料。"
+    },
+    {
+      "key": "evidence",
+      "name": "证明材料、证据及证据目录",
+      "required": "立案材料",
+      "original_copy": "原件及复印件",
+      "instructions": "准备劳动关系证明、与仲裁请求有关的证据材料及对应证据目录。"
+    },
+    {
+      "key": "registration",
+      "name": "被申请人工商信息",
+      "required": "被申请人为企业时"
+    },
+    {
+      "key": "delivery",
+      "name": "送达地址确认书",
+      "required": "立案材料",
+      "instructions": "官方附件注明正反面打印。"
+    }
+  ],
+  "attachment_review": [
+    {
+      "name": "附件1：劳动争议仲裁申请书.docx",
+      "sha256": "a1bb65264399a7c44a326670f79e78722ebc6c3bd43933f957fd850ccceea893",
+      "bytes": 13810,
+      "collected_at": "2026-11-15T20:11:58.1390326Z"
+    },
+    {
+      "name": "附件2：公民代理推荐函.doc",
+      "sha256": "4dc5bc3c58cd6209b71dd37476205eaa109fed89d9af97a7bff8d1134ebd01bc",
+      "bytes": 14336,
+      "collected_at": "2026-11-15T20:11:58.3686341Z"
+    },
+    {
+      "name": "附件3：授权委托书.doc",
+      "sha256": "fda6fbaabe878e2805de1b465f3415065ba4142de5e940a434da4e961c526fcf",
+      "bytes": 15360,
+      "collected_at": "2026-11-15T20:11:59.6193813Z"
+    },
+    {
+      "name": "附件4：法定代表人（或主要负责人）身份证明书.doc",
+      "sha256": "0f3d386b273dbf4f2f0edd9b3ab898bd22f43b823e11bbfa230db8a02ed647d0",
+      "bytes": 13312,
+      "collected_at": "2026-11-15T20:11:59.8309485Z"
+    },
+    {
+      "name": "附件5：送达地址确认书（正反面打印）.docx",
+      "sha256": "9bb9804def411d650c8efd3cc8e8b6b2cdf0fee35a0fb9722f25da90d5113dd4",
+      "bytes": 15570,
+      "collected_at": "2026-11-15T20:12:00.0910424Z"
+    },
+    {
+      "name": "附件6：证据目录.xlsx",
+      "sha256": "04577e50656b06bffde477959098be5ebf31ed1be191951eac16659495340c9e",
+      "bytes": 11448,
+      "collected_at": "2026-11-15T20:12:00.3038961Z"
+    }
+  ]
+}
