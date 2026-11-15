@@ -1,8 +1,8 @@
 // Generated from packages/regional-contracts/src/index.ts. Do not edit.
-// source-sha256: ec0e941a70db64cdc3706c34c63ede73d9d28c740a6c21469a0a217a7c006553
+// source-sha256: 321fd3ae8e8ab5a3d514705bbccf756cd67ef060f96daed809cffed183d87a83
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.fieldErrors = exports.isPlainRecord = void 0;
+exports.fieldErrors = exports.isPlainRecord = exports.XLSX_MIME = void 0;
 exports.regionQuery = regionQuery;
 exports.parseApiError = parseApiError;
 exports.assertRegionalGuide = assertRegionalGuide;
@@ -15,6 +15,8 @@ exports.buildGenerateRequest = buildGenerateRequest;
 exports.publicGuideText = publicGuideText;
 exports.readGuideSections = readGuideSections;
 exports.guideDisplayField = guideDisplayField;
+exports.isOfficeZip = isOfficeZip;
+exports.XLSX_MIME = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
 const isPlainRecord = (value) => value !== null && typeof value === 'object' && !Array.isArray(value) &&
     [Object.prototype, null].includes(Object.getPrototypeOf(value));
 exports.isPlainRecord = isPlainRecord;
@@ -61,6 +63,7 @@ function assertRegionalGuide(value, expected) {
         return problem();
     for (const t of value.templates) {
         if (!(0, exports.isPlainRecord)(t) || !nonempty(t.id) || t.case_scope !== expected.case_scope ||
+            (t.output_format !== undefined && t.output_format !== 'xlsx') ||
             (t.can_generate !== undefined && typeof t.can_generate !== 'boolean') ||
             !Array.isArray(t.document_types) || !t.document_types.every(kind) ||
             (t.can_generate && (!value.source_id || !t.document_types.length)))
@@ -86,12 +89,12 @@ function assertFields(value, nested = false) {
             return problem();
         if (f.type === 'object_list')
             assertFields(f.fields, true);
-        if (f.format !== undefined && f.format !== 'iso-date')
+        if (f.format !== undefined && !['iso-date', 'positive-integer'].includes(String(f.format)))
             return problem();
         for (const name of ['min', 'max'])
             if (f[name] !== undefined && (typeof f[name] !== 'number' || !Number.isFinite(f[name])))
                 return problem();
-        for (const name of ['nullable', 'integer', 'allow_leading_zero'])
+        for (const name of ['nullable', 'integer', 'allow_leading_zero', 'required'])
             if (f[name] !== undefined && typeof f[name] !== 'boolean')
                 return problem();
         if (f.choices !== undefined && (!Array.isArray(f.choices) || !f.choices.every(v => typeof v === 'string')))
@@ -130,6 +133,8 @@ function assertFormContract(value, expected) {
     for (const key of ['province', 'city', 'district', 'region_code', 'source_id', 'template_id', 'adapter'])
         if (!nonempty(c[key]))
             return problem();
+    if (c.output_format !== undefined && c.output_format !== 'xlsx')
+        return problem();
     if (!positive(c.version) || !kind(c.kind) || !['blank', 'reference_adaptation'].includes(String(c.mode)))
         return problem();
     for (const [key, v] of Object.entries(expected))
@@ -215,6 +220,10 @@ function validateForm(contract, value) {
         }
         if (f.maxLength !== undefined && textLength(v) > f.maxLength)
             add(path, f.label, `${f.label}最多${f.maxLength}字符；已有内容会保留，请调整后生成。`);
+        if (f.required && !pythonStrip(v))
+            add(path, f.label, '请填写' + f.label + '。');
+        if (f.format === 'positive-integer' && pythonStrip(v) && !/^[1-9][0-9]*$/.test(pythonStrip(v)))
+            add(path, f.label, '请填写正整数，或留空。');
         if (f.format === 'iso-date' && v !== '' && !validDate(v))
             add(path, f.label, '请留空，或填写有效的YYYY-MM-DD日期。');
         if (f.choices && v !== '' && !f.choices.includes(v))
@@ -229,9 +238,13 @@ function validateForm(contract, value) {
         if (Reflect.ownKeys(record).some(k => typeof k !== 'string' || !allowed.has(k)))
             add(prefix ? `${prefix}.form` : 'form', '填写内容', '含有本表不支持的内容；不会自动丢弃，请重新核对。');
         for (const f of fields) {
-            if (!own(record, f.key))
+            const path = prefix ? `${prefix}.${f.key}` : f.key;
+            if (!own(record, f.key)) {
+                if (f.required)
+                    add(path, f.label, '请填写' + f.label + '。');
                 continue;
-            const v = record[f.key], path = prefix ? `${prefix}.${f.key}` : f.key;
+            }
+            const v = record[f.key];
             if (f.type === 'text')
                 checkText(v, f, path);
             else if (f.type === 'copies') {
@@ -427,4 +440,56 @@ function guideDisplayField(guide, name) {
     const raw = (0, exports.isPlainRecord)(sections.apply_method_raw) ? sections.apply_method_raw : {};
     const key = name === '办理时间' || name === '办公时间' ? 'officeTime' : name === '办理地点' ? 'acceptAddress' : name === '申请条件' || name === '受理条件' ? 'applyTerm' : undefined;
     return key ? human(raw, key) || undefined : undefined;
+}
+// Check a complete ZIP directory and the mandatory parts for the requested Office format.
+// This is structural verification, not a claim to verify decompressed XML or CRC.
+function isOfficeZip(buffer, format) {
+    try {
+        if (!(buffer instanceof ArrayBuffer))
+            return false;
+        const bytes = new Uint8Array(buffer), v = new DataView(buffer);
+        if (bytes.length < 22 || v.getUint32(0, true) !== 0x04034b50)
+            return false;
+        let end = -1;
+        for (let i = bytes.length - 22; i >= Math.max(0, bytes.length - 65557); i--) {
+            if (v.getUint32(i, true) === 0x06054b50 && i + 22 + v.getUint16(i + 20, true) === bytes.length) {
+                end = i;
+                break;
+            }
+        }
+        if (end < 0 || v.getUint16(end + 4, true) || v.getUint16(end + 6, true))
+            return false;
+        const count = v.getUint16(end + 10, true), size = v.getUint32(end + 12, true), offset = v.getUint32(end + 16, true);
+        if (!count || count !== v.getUint16(end + 8, true) || offset + size !== end)
+            return false;
+        const names = new Set();
+        let cursor = offset;
+        for (let i = 0; i < count; i++) {
+            if (cursor + 46 > end || v.getUint32(cursor, true) !== 0x02014b50 || (v.getUint16(cursor + 8, true) & 1))
+                return false;
+            const n = v.getUint16(cursor + 28, true), e = v.getUint16(cursor + 30, true), c = v.getUint16(cursor + 32, true), local = v.getUint32(cursor + 42, true);
+            if (cursor + 46 + n + e + c > end || local + 30 > offset || v.getUint32(local, true) !== 0x04034b50)
+                return false;
+            const ln = v.getUint16(local + 26, true), le = v.getUint16(local + 28, true), packed = v.getUint32(cursor + 20, true);
+            if (ln !== n || local + 30 + ln + le + packed > offset)
+                return false;
+            let name = '';
+            for (let j = 0; j < n; j++) {
+                if (bytes[local + 30 + j] !== bytes[cursor + 46 + j])
+                    return false;
+                name += String.fromCharCode(bytes[cursor + 46 + j]);
+            }
+            if (names.has(name) || name.includes('..') || name[0] === '/')
+                return false;
+            names.add(name);
+            cursor += 46 + n + e + c;
+        }
+        const required = format === 'xlsx' ? ['xl/workbook.xml', 'xl/worksheets/sheet1.xml'] : ['word/document.xml'];
+        const opposite = format === 'xlsx' ? 'word/document.xml' : 'xl/workbook.xml';
+        return cursor === end && !names.has(opposite) &&
+            ['[Content_Types].xml', '_rels/.rels', ...required].every(n => names.has(n));
+    }
+    catch (_) {
+        return false;
+    }
 }

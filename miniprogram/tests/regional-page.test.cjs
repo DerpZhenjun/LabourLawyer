@@ -39,8 +39,8 @@ function harness(storage={}) {
  return {page,wx,requests,modals,writes,opens,storage,last,respond,start,select}
 }
 function headers(c, t=template('synthetic-app','application')) {return {'X-Guide-Source-ID':c.context.source_id,'X-Guide-Version':String(c.context.version),'X-Template-SHA256':t.sha256,'X-Form-Contract-ID':c.contract_id}}
-function zip() {
- const names=['[Content_Types].xml','_rels/.rels','word/document.xml'];const locals=[],central=[];let offset=0
+function zip(names=['[Content_Types].xml','_rels/.rels','word/document.xml']) {
+ const locals=[],central=[];let offset=0
  for(const name of names){const n=Buffer.from(name),text=Buffer.from('<x/>'),l=Buffer.alloc(30+n.length+text.length);l.writeUInt32LE(0x04034b50,0);l.writeUInt32LE(text.length,18);l.writeUInt32LE(text.length,22);l.writeUInt16LE(n.length,26);n.copy(l,30);text.copy(l,30+n.length);locals.push(l);const c=Buffer.alloc(46+n.length);c.writeUInt32LE(0x02014b50,0);c.writeUInt32LE(text.length,20);c.writeUInt32LE(text.length,24);c.writeUInt16LE(n.length,28);c.writeUInt32LE(offset,42);n.copy(c,46);central.push(c);offset+=l.length}
  const cd=Buffer.concat(central),end=Buffer.alloc(22);end.writeUInt32LE(0x06054b50);end.writeUInt16LE(names.length,8);end.writeUInt16LE(names.length,10);end.writeUInt32LE(cd.length,12);end.writeUInt32LE(offset,16);const b=Buffer.concat([...locals,cd,end]);return b.buffer.slice(b.byteOffset,b.byteOffset+b.byteLength)
 }
@@ -69,6 +69,31 @@ test('generated valid Word package saves and opens; invalid ZIP or wrong source 
  const h=harness();h.start();h.select();h.page.generate();h.modals.at(-1).success({confirm:true});h.respond(h.last('/generate'),new Uint8Array([80,75,3,4]).buffer,200,headers(contract()));assert.equal(h.writes.length,0);assert(!h.page.data.busy)
  h.page.generate();h.modals.at(-1).success({confirm:true});h.respond(h.last('/generate'),zip(),200,{...headers(contract()),'X-Guide-Source-ID':'wrong'});assert.equal(h.writes.length,0)
  h.page.generate();h.modals.at(-1).success({confirm:true});h.respond(h.last('/generate'),zip(),200,headers(contract()));assert.equal(h.writes.length,1);h.writes[0].success();assert.equal(h.opens.length,1);assert.equal(h.opens[0].fileType,'docx');h.opens[0].success();assert(!h.page.data.busy)
+})
+test('XLSX opt-in opens only a spreadsheet package with matching MIME and source',()=>{
+ const h=harness();h.start();h.page.onDistrictChange(event('0'))
+ assert.match(h.last('/lookup').url,/xlsx=true/)
+ const g=guide();g.templates=[{...g.templates[1],output_format:'xlsx'}];const c=contract(g,'evidence')
+ c.context.output_format='xlsx'
+ c.fields=[{key:'items',label:'证据项目',type:'object_list',maxItems:9,fields:[
+   {key:'name',label:'名称',type:'text',required:true,maxLength:22},
+   {key:'page_count',label:'页数',type:'text',format:'positive-integer',maxLength:4},
+ ]}];c.defaults={items:[]}
+ assert.equal(shared.validateForm(c,{items:[{name:'虚构',page_count:'2-4'}]}).valid,false)
+ assert.equal(shared.validateForm(c,{items:[{name:'  ',page_count:'12'}]}).valid,false)
+ assert.equal(shared.validateForm(c,{items:[{name:'虚构',page_count:'12'}]}).valid,true)
+ h.respond(h.last('/lookup'),g);assert.match(h.last('/form-contract').url,/xlsx=true/)
+ h.respond(h.last('/form-contract'),c)
+ const mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', receipt={...headers(c),'Content-Type': mime}
+ const workbook=zip(['[Content_Types].xml','_rels/.rels','xl/workbook.xml','xl/worksheets/sheet1.xml'])
+ function submit(bytes, responseHeaders) {
+  h.page.generate();h.modals.at(-1).success({confirm:true});const request=h.last('/generate')
+  assert.match(request.url,/xlsx=true/);h.respond(request,bytes,200,responseHeaders)
+ }
+ submit(zip(),receipt);assert.equal(h.writes.length,0)
+ submit(workbook,{...receipt,'Content-Type':'application/octet-stream'});assert.equal(h.writes.length,0)
+ submit(workbook,receipt);assert.equal(h.writes.length,1);h.writes[0].success()
+ assert.equal(h.opens[0].fileType,'xlsx');assert.match(h.opens[0].filePath,/\.xlsx$/)
 })
 test('late binary/write/open callbacks cannot report success in a changed locality',()=>{
  const h=harness();h.start();h.select();h.page.generate();h.modals.at(-1).success({confirm:true});const r=h.last('/generate');h.respond(r,zip(),200,headers(contract()));const write=h.writes[0];h.page.onDistrictChange(event('1'));write.success();assert.equal(h.opens.length,0);assert.equal(h.page.data.result,'');h.respond(r,zip(),200,headers(contract()));assert.equal(h.writes.length,1)

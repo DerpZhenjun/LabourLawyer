@@ -1,10 +1,10 @@
 // Generated from utils/regionalTransport.ts. Do not edit.
-// source-sha256: db4b905a9f63d80d67f2b0dec47931b0942f2855c2483ef930234eac046870a0
+// source-sha256: 49d83855baa4c57b531daa323a6cb7c6a0b58aa71fb897c75dd7cc4b0cdbf6e5
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.isWordZip = void 0;
 exports.createRegionalTransport = createRegionalTransport;
 exports.header = header;
-exports.isWordZip = isWordZip;
 exports.decodeError = decodeError;
 const shared = require("./generated/regional-contracts");
 function createRegionalTransport(api, base) {
@@ -15,10 +15,10 @@ function createRegionalTransport(api, base) {
     };
     const send = (route, options, callbacks) => api.request({ url: `${base().replace(/\/$/, '')}/api/regional-guides/${route}`, timeout: 15000, ...options, ...callbacks });
     return {
-        areas: (region, callbacks) => send(`areas?${query(region)}`, {}, callbacks),
-        lookup: (region, callbacks) => send(`lookup?${query(region)}`, {}, callbacks),
-        formContract: (context, callbacks) => send(`form-contract?${query(context, { source_id: context.source_id, version: context.version, template_id: context.template_id, kind: context.kind })}`, {}, callbacks),
-        generate: (payload, callbacks) => send('generate', { method: 'POST', data: payload, responseType: 'arraybuffer', timeout: 60000 }, callbacks),
+        areas: (region, callbacks) => send(`areas?${query(region, { xlsx: true })}`, {}, callbacks),
+        lookup: (region, callbacks) => send(`lookup?${query(region, { xlsx: true })}`, {}, callbacks),
+        formContract: (context, callbacks) => send(`form-contract?${query(context, { source_id: context.source_id, version: context.version, template_id: context.template_id, kind: context.kind, xlsx: true })}`, {}, callbacks),
+        generate: (payload, callbacks) => send('generate?xlsx=true', { method: 'POST', data: payload, responseType: 'arraybuffer', timeout: 60000 }, callbacks),
         downloadTemplate: (context, callbacks) => send(`templates/${encodeURIComponent(context.template_id || '')}?${query(context, { source_id: context.source_id, version: context.version })}`, { responseType: 'arraybuffer', timeout: 60000 }, callbacks),
     };
 }
@@ -26,55 +26,8 @@ function header(headers, name) {
     const key = Object.keys(headers || {}).find(k => k.toLowerCase() === name.toLowerCase());
     return key === undefined ? '' : String(headers?.[key]);
 }
-// Check a complete ZIP directory and the three mandatory Word package parts.
-// This is structural verification, not a claim to verify decompressed XML or CRC.
-function isWordZip(buffer) {
-    try {
-        if (!(buffer instanceof ArrayBuffer))
-            return false;
-        const bytes = new Uint8Array(buffer), v = new DataView(buffer);
-        if (bytes.length < 22 || v.getUint32(0, true) !== 0x04034b50)
-            return false;
-        let end = -1;
-        for (let i = bytes.length - 22; i >= Math.max(0, bytes.length - 65557); i--) {
-            if (v.getUint32(i, true) === 0x06054b50 && i + 22 + v.getUint16(i + 20, true) === bytes.length) {
-                end = i;
-                break;
-            }
-        }
-        if (end < 0 || v.getUint16(end + 4, true) || v.getUint16(end + 6, true))
-            return false;
-        const count = v.getUint16(end + 10, true), size = v.getUint32(end + 12, true), offset = v.getUint32(end + 16, true);
-        if (!count || count !== v.getUint16(end + 8, true) || offset + size !== end)
-            return false;
-        const names = new Set();
-        let cursor = offset;
-        for (let i = 0; i < count; i++) {
-            if (cursor + 46 > end || v.getUint32(cursor, true) !== 0x02014b50 || (v.getUint16(cursor + 8, true) & 1))
-                return false;
-            const n = v.getUint16(cursor + 28, true), e = v.getUint16(cursor + 30, true), c = v.getUint16(cursor + 32, true), local = v.getUint32(cursor + 42, true);
-            if (cursor + 46 + n + e + c > end || local + 30 > offset || v.getUint32(local, true) !== 0x04034b50)
-                return false;
-            const ln = v.getUint16(local + 26, true), le = v.getUint16(local + 28, true), packed = v.getUint32(cursor + 20, true);
-            if (ln !== n || local + 30 + ln + le + packed > offset)
-                return false;
-            let name = '';
-            for (let j = 0; j < n; j++) {
-                if (bytes[local + 30 + j] !== bytes[cursor + 46 + j])
-                    return false;
-                name += String.fromCharCode(bytes[cursor + 46 + j]);
-            }
-            if (names.has(name) || name.includes('..') || name[0] === '/')
-                return false;
-            names.add(name);
-            cursor += 46 + n + e + c;
-        }
-        return cursor === end && ['[Content_Types].xml', '_rels/.rels', 'word/document.xml'].every(n => names.has(n));
-    }
-    catch (_) {
-        return false;
-    }
-}
+const isWordZip = (buffer) => shared.isOfficeZip(buffer, 'docx');
+exports.isWordZip = isWordZip;
 function decodeError(buffer) {
     try {
         let encoded = '';

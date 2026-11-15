@@ -1,15 +1,16 @@
 /** Portable wire types and lossless validation. No framework, network or model dependencies. */
 export type DocumentKind = 'application' | 'evidence'
+export const XLSX_MIME = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
 export type GenerationMode = 'blank' | 'reference_adaptation'
 export type CaseScope = 'collective'
 export interface Region { province: string; city: string; district: string; case_scope?: CaseScope }
 export interface FormContext extends Region {
   region_code: string; source_id: string; version: number; template_id: string
-  kind: DocumentKind; mode: GenerationMode; adapter: string
+  kind: DocumentKind; mode: GenerationMode; adapter: string; output_format?: 'xlsx'
 }
 export interface RegionalTemplate {
   id: string; can_generate?: boolean; document_types: DocumentKind[]
-  adapter?: string; official_kind?: string; original_name?: string; sha256?: string; case_scope?: CaseScope
+  adapter?: string; output_format?: 'xlsx'; official_kind?: string; original_name?: string; sha256?: string; case_scope?: CaseScope
   [key: string]: unknown
 }
 export interface RegionalGuide extends Region {
@@ -22,7 +23,7 @@ export interface RegionalGuide extends Region {
 export interface FieldSpec {
   key: string; label: string; type: 'text' | 'copies' | 'text_list' | 'object_list'
   maxLength?: number; maxItems?: number; min?: number; max?: number; nullable?: boolean
-  integer?: boolean; allow_leading_zero?: boolean; format?: 'iso-date'; choices?: string[]
+  integer?: boolean; allow_leading_zero?: boolean; required?: boolean; format?: 'iso-date' | 'positive-integer'; choices?: string[]
   fields?: FieldSpec[]
 }
 export interface LayoutRule {
@@ -93,6 +94,7 @@ export function assertRegionalGuide(value: unknown, expected: Region): RegionalG
       (expected.case_scope && value.case_scopes===undefined)) return problem()
   for (const t of value.templates) {
     if (!isPlainRecord(t) || !nonempty(t.id) || t.case_scope!==expected.case_scope ||
+        (t.output_format!==undefined && t.output_format!=='xlsx') ||
         (t.can_generate!==undefined && typeof t.can_generate!=='boolean') ||
         !Array.isArray(t.document_types) || !t.document_types.every(kind) ||
         (t.can_generate && (!value.source_id || !t.document_types.length))) return problem()
@@ -112,9 +114,9 @@ function assertFields(value: unknown, nested=false): asserts value is FieldSpec[
     if (f.maxLength!==undefined && (!positive(f.maxLength) || f.maxLength>200000)) return problem()
     if (['text_list','object_list'].includes(String(f.type)) && (!positive(f.maxItems) || f.maxItems>1000)) return problem()
     if (f.type==='object_list') assertFields(f.fields,true)
-    if (f.format!==undefined && f.format!=='iso-date') return problem()
+    if (f.format!==undefined && !['iso-date','positive-integer'].includes(String(f.format))) return problem()
     for(const name of ['min','max']) if(f[name]!==undefined && (typeof f[name]!=='number' || !Number.isFinite(f[name]))) return problem()
-    for(const name of ['nullable','integer','allow_leading_zero']) if(f[name]!==undefined && typeof f[name]!=='boolean') return problem()
+    for(const name of ['nullable','integer','allow_leading_zero','required']) if(f[name]!==undefined && typeof f[name]!=='boolean') return problem()
     if(f.choices!==undefined && (!Array.isArray(f.choices) || !f.choices.every(v=>typeof v==='string'))) return problem()
   }
 }
@@ -139,6 +141,7 @@ export function assertFormContract(value: unknown, expected: Partial<FormContext
   const c=value.context,p=value.policy
   if(c.case_scope!==expected.case_scope || (c.case_scope!==undefined && c.case_scope!=='collective')) return problem()
   for(const key of ['province','city','district','region_code','source_id','template_id','adapter']) if(!nonempty(c[key])) return problem()
+  if(c.output_format!==undefined && c.output_format!=='xlsx') return problem()
   if(!positive(c.version) || !kind(c.kind) || !['blank','reference_adaptation'].includes(String(c.mode))) return problem()
   for(const [key,v] of Object.entries(expected)) if(c[key]!==v) return problem()
   if(p.unknown_fields!=='reject' || p.invalid_xml!=='reject' || p.capacity_is_official_requirement!==false) return problem()
@@ -186,6 +189,8 @@ export function validateForm(contract: FormContract, value: unknown): Validation
     if(v===null && f.nullable)return
     if(!plainText(v) || (contract.policy.text_controls==='newline_only' && typeof v==='string' && /[\u0000-\u0009\u000b-\u001f]/.test(v))){add(path,f.label,'请填写普通文字，不能含有无法保存的字符。');return}
     if(f.maxLength!==undefined && textLength(v)>f.maxLength)add(path,f.label,`${f.label}最多${f.maxLength}字符；已有内容会保留，请调整后生成。`)
+    if(f.required && !pythonStrip(v))add(path,f.label,'请填写'+f.label+'。')
+    if(f.format==='positive-integer' && pythonStrip(v) && !/^[1-9][0-9]*$/.test(pythonStrip(v)))add(path,f.label,'请填写正整数，或留空。')
     if(f.format==='iso-date' && v!=='' && !validDate(v))add(path,f.label,'请留空，或填写有效的YYYY-MM-DD日期。')
     if(f.choices && v!=='' && !f.choices.includes(v))add(path,f.label,'请选择此表支持的选项，未确定时可以留空。')
   }
@@ -194,8 +199,12 @@ export function validateForm(contract: FormContract, value: unknown): Validation
     const allowed=new Set(fields.map(f=>f.key))
     if(Reflect.ownKeys(record).some(k=>typeof k!=='string' || !allowed.has(k)))add(prefix?`${prefix}.form`:'form','填写内容','含有本表不支持的内容；不会自动丢弃，请重新核对。')
     for(const f of fields) {
-      if(!own(record,f.key))continue
-      const v=record[f.key],path=prefix?`${prefix}.${f.key}`:f.key
+      const path=prefix?`${prefix}.${f.key}`:f.key
+      if(!own(record,f.key)){
+        if(f.required)add(path,f.label,'请填写'+f.label+'。')
+        continue
+      }
+      const v=record[f.key]
       if(f.type==='text')checkText(v,f,path)
       else if(f.type==='copies') {
         if(v==='' || (v===null && f.nullable))continue
@@ -350,4 +359,57 @@ export function guideDisplayField(guide:unknown,name:string):string|undefined {
   const raw=isPlainRecord(sections.apply_method_raw)?sections.apply_method_raw:{}
   const key=name==='办理时间'||name==='办公时间'?'officeTime':name==='办理地点'?'acceptAddress':name==='申请条件'||name==='受理条件'?'applyTerm':undefined
   return key?human(raw,key)||undefined:undefined
+}
+
+// Check a complete ZIP directory and the mandatory parts for the requested Office format.
+// This is structural verification, not a claim to verify decompressed XML or CRC.
+export function isOfficeZip(buffer: unknown, format: 'docx' | 'xlsx'): buffer is ArrayBuffer {
+    try {
+        if (!(buffer instanceof ArrayBuffer))
+            return false;
+        const bytes = new Uint8Array(buffer), v = new DataView(buffer);
+        if (bytes.length < 22 || v.getUint32(0, true) !== 0x04034b50)
+            return false;
+        let end = -1;
+        for (let i = bytes.length - 22; i >= Math.max(0, bytes.length - 65557); i--) {
+            if (v.getUint32(i, true) === 0x06054b50 && i + 22 + v.getUint16(i + 20, true) === bytes.length) {
+                end = i;
+                break;
+            }
+        }
+        if (end < 0 || v.getUint16(end + 4, true) || v.getUint16(end + 6, true))
+            return false;
+        const count = v.getUint16(end + 10, true), size = v.getUint32(end + 12, true), offset = v.getUint32(end + 16, true);
+        if (!count || count !== v.getUint16(end + 8, true) || offset + size !== end)
+            return false;
+        const names = new Set();
+        let cursor = offset;
+        for (let i = 0; i < count; i++) {
+            if (cursor + 46 > end || v.getUint32(cursor, true) !== 0x02014b50 || (v.getUint16(cursor + 8, true) & 1))
+                return false;
+            const n = v.getUint16(cursor + 28, true), e = v.getUint16(cursor + 30, true), c = v.getUint16(cursor + 32, true), local = v.getUint32(cursor + 42, true);
+            if (cursor + 46 + n + e + c > end || local + 30 > offset || v.getUint32(local, true) !== 0x04034b50)
+                return false;
+            const ln = v.getUint16(local + 26, true), le = v.getUint16(local + 28, true), packed = v.getUint32(cursor + 20, true);
+            if (ln !== n || local + 30 + ln + le + packed > offset)
+                return false;
+            let name = '';
+            for (let j = 0; j < n; j++) {
+                if (bytes[local + 30 + j] !== bytes[cursor + 46 + j])
+                    return false;
+                name += String.fromCharCode(bytes[cursor + 46 + j]!);
+            }
+            if (names.has(name) || name.includes('..') || name[0] === '/')
+                return false;
+            names.add(name);
+            cursor += 46 + n + e + c;
+        }
+        const required = format === 'xlsx' ? ['xl/workbook.xml', 'xl/worksheets/sheet1.xml'] : ['word/document.xml'];
+        const opposite = format === 'xlsx' ? 'word/document.xml' : 'xl/workbook.xml';
+        return cursor === end && !names.has(opposite) &&
+            ['[Content_Types].xml', '_rels/.rels', ...required].every(n => names.has(n));
+    }
+    catch (_) {
+        return false;
+    }
 }

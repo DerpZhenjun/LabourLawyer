@@ -50,6 +50,7 @@
         <picker wx:if="{{item.choices.length}}" id="{{item.id}}" range="{{item.choices}}" data-path="{{item.path}}" bindchange="onChoice" disabled="{{busy || draftBlocked}}" aria-label="{{item.label}}"><view class="picker-value">{{item.value || '请选择；未选择时保持空白'}} ▾</view></picker>
         <textarea wx:else id="{{item.id}}" value="{{item.value}}" data-path="{{item.path}}" bindinput="onInput" maxlength="-1" auto-height disabled="{{busy || draftBlocked}}" aria-label="{{item.label}}"/>
         <text wx:if="{{item.maxLength}}" class="muted">已输入 {{item.count}} · 技术容量 {{item.maxLength}} 字符（超出会提示，不会截断）</text>
+        <text wx:if="{{item.format === 'positive-integer'}}" class="muted">留空，或填写正整数。</text>
         <text wx:if="{{item.format === 'iso-date'}}" class="muted">留空，或按 YYYY-MM-DD 输入实际日期。</text>
         <text wx:if="{{item.integer}}" class="muted">填写整数；范围 {{item.min}} 至 {{item.max}}。可留空时请保持空白。</text>
         <button wx:if="{{item.viewType === 'list-item'}}" size="mini" data-path="{{item.parentPath}}" data-index="{{item.index}}" bindtap="removeItem" disabled="{{!item.canRemove || busy || draftBlocked}}" aria-label="删除{{item.label}}">删除此项</button>

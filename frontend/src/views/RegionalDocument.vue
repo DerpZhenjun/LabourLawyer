@@ -1,7 +1,7 @@
 <template>
   <component :is="embedded ? 'section' : 'main'" :id="embedded ? undefined : 'main-content'" :tabindex="embedded ? undefined : -1" :class="embedded ? 'regional-editor' : 'regional-page ll-container'">
     <nav v-if="!embedded" class="region-breadcrumb" aria-label="当前位置"><RouterLink :to="back">返回当地办事指南</RouterLink><span>/</span><span>{{ title }}</span></nav>
-    <header v-if="!embedded" class="region-heading"><div><span class="ll-eyebrow">{{ region.city }} · {{ region.district }}</span><h1>{{ title }}</h1><p>一项一项填写，也可以生成后在 Word 中继续补充。</p></div></header>
+    <header v-if="!embedded" class="region-heading"><div><span class="ll-eyebrow">{{ region.city }} · {{ region.district }}</span><h1>{{ title }}</h1><p>一项一项填写，也可以下载后继续补充。</p></div></header>
     <p v-if="loading" role="status" class="region-panel">正在核对当地文书来源…</p>
     <div v-else-if="error" role="alert" class="region-notice danger">{{ error }}</div>
     <section v-else-if="!template" class="region-panel"><h2>当地文书尚未通过填写核验</h2><p>不会用其他地区的模板代替。</p><RouterLink :to="back" class="ll-button secondary">返回指南核对来源</RouterLink></section>
@@ -20,7 +20,7 @@
       </fieldset>
       <div v-if="generationError" class="region-notice danger" role="alert"><p>{{ generationError }}</p><button v-if="validation.valid && ready" type="button" class="ll-button secondary" @click="reload">重新核对本区表单</button></div>
       <p v-if="downloaded" class="region-notice" role="status">文书已生成并下载。请核对空白处、份数和当地要求，打印后本人签名。</p>
-      <section class="region-panel region-generation"><div><h2>生成 Word 文档</h2><p>按当前地区{{ isConverted?('官方 '+convertedFormat+' 的空白转换版'):isBlank?'官方空白表格':'参考样表' }}填写，未填写的位置留空。</p></div><button class="ll-button" :disabled="generating || !ready">{{ generating?'正在生成…':'生成并下载'+title }}</button></section>
+      <section class="region-panel region-generation"><div><h2>{{ isWorkbook?'生成 Excel 工作簿':'生成 Word 文档' }}</h2><p>按当前地区{{ isConverted?('官方 '+convertedFormat+' 的空白转换版'):isBlank?'官方空白表格':'参考样表' }}填写，未填写的位置留空。</p></div><button class="ll-button" :disabled="generating || !ready">{{ generating?'正在生成…':'生成并下载'+title }}</button></section>
     </form>
     <Teleport to="body"><div v-if="confirmOpen" class="reference-dialog" @click.self="cancelConfirmation"><section ref="dialog" role="dialog" aria-modal="true" :aria-labelledby="`${dialogId}-title`" :aria-describedby="`${dialogId}-description`" tabindex="-1"><h2 :id="`${dialogId}-title`">确认生成{{ title }}？</h2><p :id="`${dialogId}-description`">{{ sourceDescription }}默认内容是虚构示例，未替换时只能作参考，不能直接提交；未填写的位置留空。请核对内容、受理机构并本人签字，不会代你提交申请。</p><div class="region-actions"><button type="button" class="ll-button secondary" @click="cancelConfirmation">取消</button><button type="button" class="ll-button" :disabled="generating" v-on="{click: confirmationAction}">确认生成</button></div></section></div></Teleport>
   </component>
@@ -60,7 +60,7 @@ const context=computed<FormContext|null>(()=>{
   const g=guide.value,t=template.value,r=region.value,k=kind.value
   if(!g||!t||!k||typeof g.version!=='number'||!Number.isSafeInteger(g.version)||g.version<1||typeof g.source_id!=='string'||!g.source_id||typeof g.region_code!=='string'||!g.region_code||typeof t.adapter!=='string'||!t.adapter)return null
   if((['province','city','district','case_scope'] as const).some(key=>g[key]!==r[key]))return null
-  return{...r,region_code:g.region_code,source_id:g.source_id,version:g.version,template_id:t.id,kind:k,mode:t.official_kind==='blank'?'blank':'reference_adaptation',adapter:t.adapter}
+  return{...r,region_code:g.region_code,source_id:g.source_id,version:g.version,template_id:t.id,kind:k,mode:t.official_kind==='blank'?'blank':'reference_adaptation',adapter:t.adapter,...(t.output_format==='xlsx'?{output_format:'xlsx' as const}:{})}
 })
 const identity=computed(()=>JSON.stringify([template.value?.sha256,template.value?.source_url,guide.value?.content_hash]))
 const specialization=(contract:FormContract)=>{
@@ -89,7 +89,8 @@ const isBlank=computed(()=>contract.value?.context.mode==='blank')
 const isConverted=computed(()=>isHunan.value||template.value?.file_origin==='official-blank-converted-layout')
 const convertedFormat=computed(()=>template.value?.original_format==='WPS'?'WPS':'DOC')
 const isMetadataSanitized=computed(()=>template.value?.file_origin==='official-blank-metadata-sanitized-layout')
-const sourceDescription=computed(()=>isMetadataSanitized.value?'将依据本市官方空白表格的填写版生成。原件可从当地指南的官方附件链接下载。':isConverted.value?`${region.value.case_scope?'仅用于本区集体案。':''}将依据本区官方 ${convertedFormat.value} 空白表的平台转换副本填写。下载结果为 DOCX。`:isBlank.value?`将根据${contract.value?.context.district||''}官网提供的空白表格辅助填写。`:`将根据${contract.value?.context.district||''}官方参考样表辅助填写。它不是官方空白模板。`)
+const isWorkbook=computed(()=>contract.value?.context.output_format==='xlsx')
+const sourceDescription=computed(()=>isWorkbook.value?'按留坝县官方证据清单生成 XLSX。表格有 9 行，页数填写正整数，签署栏留空。':isMetadataSanitized.value?'将依据本市官方空白表格的填写版生成。原件可从当地指南的官方附件链接下载。':isConverted.value?`${region.value.case_scope?'仅用于本区集体案。':''}将依据本区官方 ${convertedFormat.value} 空白表的平台转换副本填写。下载结果为 DOCX。`:isBlank.value?`将根据${contract.value?.context.district||''}官网提供的空白表格辅助填写。`:`将根据${contract.value?.context.district||''}官方参考样表辅助填写。它不是官方空白模板。`)
 const dialog=ref<HTMLElement|null>(null),dialogId=`regional-confirm-${useId()}`
 useDialogFocus(()=>confirmOpen.value,dialog,cancelConfirmation)
 </script>

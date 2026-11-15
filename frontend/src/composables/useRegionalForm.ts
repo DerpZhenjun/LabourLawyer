@@ -33,7 +33,7 @@ function copyRaw(value: unknown): unknown {
   return value
 }
 const message=(error: unknown,fallback: string)=>error instanceof Error?error.message:fallback
-const defaultFilename=(contract: FormContract)=>`${contract.context.district}-${contract.context.kind==='evidence'?'证据清单':'仲裁申请书'}-${contract.context.adapter.startsWith('hunan_own_legacy_worker')?'官方DOC转换填写':contract.context.mode==='blank'?'空白表格填写':'参考填写'}.docx`
+const defaultFilename=(contract: FormContract)=>`${contract.context.district}-${contract.context.kind==='evidence'?'证据清单':'仲裁申请书'}-${contract.context.adapter.startsWith('hunan_own_legacy_worker')?'官方DOC转换填写':contract.context.mode==='blank'?'空白表格填写':'参考填写'}.${contract.context.output_format??'docx'}`
 
 export function useRegionalForm(context: Readonly<Ref<FormContext|null>>,options: FormOptions) {
   const contract=shallowRef<FormContract|null>(null),raw=ref<unknown>(undefined),draftKey=ref('')
@@ -44,7 +44,7 @@ export function useRegionalForm(context: Readonly<Ref<FormContext|null>>,options
   let loadingController: AbortController|undefined,generationController: AbortController|undefined
   const scope=computed(()=>{
     const c=context.value
-    return JSON.stringify([c?[c.province,c.city,c.district,c.region_code,c.source_id,c.version,c.template_id,c.kind,c.mode,c.adapter,...(c.case_scope?[c.case_scope]:[])]:null,options.identity?.value??'',options.ownerIdentity?.value??''])
+    return JSON.stringify([c?[c.province,c.city,c.district,c.region_code,c.source_id,c.version,c.template_id,c.kind,c.mode,c.adapter,c.output_format,...(c.case_scope?[c.case_scope]:[])]:null,options.identity?.value??'',options.ownerIdentity?.value??''])
   })
 
   function cancelConfirmation() { confirmation=null;confirmationAction.value=undefined;confirmOpen.value=false }

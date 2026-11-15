@@ -1,7 +1,7 @@
 <template>
   <section id="document-workspace" class="document-workspace" aria-labelledby="document-workspace-title">
     <header class="workspace-heading">
-      <div><span class="ll-eyebrow">下一步 · 填写文书</span><h2 id="document-workspace-title">填写并生成文书</h2><p>先按示例修改内容，再生成 Word。办理方式和材料要求在下方。</p></div>
+      <div><span class="ll-eyebrow">下一步 · 填写文书</span><h2 id="document-workspace-title">填写并生成文书</h2><p>先按示例修改内容，再生成文件。办理方式和材料要求在下方。</p></div>
       <a href="#regional-overview" v-if="guide?.source_id" class="workspace-guide-link">查看当地办理要求 <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
     </header>
     <div class="document-kind-switch" role="group" aria-label="选择文书">

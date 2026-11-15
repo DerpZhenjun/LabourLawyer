@@ -1,5 +1,5 @@
 // Generated from pages/regional/index.ts. Do not edit.
-// source-sha256: cb49a1d5523c814388c6bea50b08724815d0ed92a4411d38e705a674244d9378
+// source-sha256: 6a58879b60002eb75588e233753b0bf007ae4311ba82ac1d073f68dba26ab2a2
 "use strict";
 const shared = require("../../utils/generated/regional-contracts");
 const files = require("../../utils/regionalTransport");
@@ -181,6 +181,8 @@ const page = {
             expected.region_code = g.region_code;
         if (option.t.adapter)
             expected.adapter = option.t.adapter;
+        if (option.t.output_format === 'xlsx')
+            expected.output_format = 'xlsx';
         this.request('formContract', expected, res => {
             const c = shared.assertFormContract(res.data, expected);
             this._contract = c;
@@ -374,7 +376,7 @@ const page = {
                 return;
             this.saveDraft();
             this.setData({ busy: true, error: '', result: '' });
-            this.request('generate', payload, res => this.acceptFile(res, c.context, null, 'docx', c.contract_id));
+            this.request('generate', payload, res => this.acceptFile(res, c.context, null, c.context.output_format ?? 'docx', c.contract_id));
         });
     },
     downloadBlank(e) {
@@ -395,7 +397,7 @@ const page = {
         });
     },
     acceptFile(res, context, sha, type, contractId) {
-        if (type !== 'docx' && type !== 'doc' && type !== 'pdf')
+        if (type !== 'docx' && type !== 'doc' && type !== 'pdf' && type !== 'xlsx')
             throw new Error('preview type');
         const source = files.header(res.header, 'X-Guide-Source-ID'), version = files.header(res.header, 'X-Guide-Version');
         if (source !== context.source_id || version !== String(context.version) || (contractId && files.header(res.header, 'X-Form-Contract-ID') !== contractId) || (sha && files.header(res.header, 'X-Template-SHA256').toLowerCase() !== sha.toLowerCase()))
@@ -404,7 +406,9 @@ const page = {
             throw new Error('binary response');
         const binary = res.data;
         const b = new Uint8Array(binary);
-        const valid = type === 'docx' ? files.isWordZip(binary) : type === 'pdf' ? b.length > 5 && String.fromCharCode(...b.slice(0, 5)) === '%PDF-' : b.length > 8 && [208, 207, 17, 224, 161, 177, 26, 225].every((v, i) => b[i] === v);
+        const valid = type === 'xlsx'
+            ? files.header(res.header, 'Content-Type') === shared.XLSX_MIME && shared.isOfficeZip(binary, 'xlsx')
+            : type === 'docx' ? files.isWordZip(binary) : type === 'pdf' ? b.length > 5 && String.fromCharCode(...b.slice(0, 5)) === '%PDF-' : b.length > 8 && [208, 207, 17, 224, 161, 177, 26, 225].every((v, i) => b[i] === v);
         if (!valid) {
             this.setData({ busy: false, error: '返回文件格式不完整，未保存。请重试。' });
             return;

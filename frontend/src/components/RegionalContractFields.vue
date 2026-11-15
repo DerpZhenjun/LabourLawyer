@@ -80,9 +80,10 @@ const invalid=(key:string)=>fieldError(key)?'true':undefined
 const description=(key:string,group:string)=>`${idFor(`${group}-hint`)}${fieldError(key)?` ${idFor(`${key}-error`)}`:''}`
 const rowDescription=(key:string,index:number)=>`${idFor(`${key}-hint`)}${fieldError(`${key}.${index}`)?` ${idFor(`${key}.${index}-error`)}`:''}${fieldError(`${key}.${index}.form`)?` ${idFor(`${key}.${index}.form-error`)}`:''}`
 function hint(field:FieldSpec,current:unknown):string {
-  const parts=['可以留空。']
+  const parts=[field.required?'请填写此项。':'可以留空。']
   if(field.maxLength!==undefined)parts.push(`${Array.from(display(current)).length} / ${field.maxLength} 字符（含空格和换行）。`)
   if(field.type==='copies'&&field.integer)parts.push(`填写整数${field.min!==undefined?`，最少${field.min}`:''}${field.max!==undefined?`，最多${field.max}`:''}。`)
+  if(field.format==='positive-integer')parts.push('填写正整数。')
   if(field.format==='iso-date')parts.push('填写时使用有效的YYYY-MM-DD日期。')
   return parts.join('')
 }
