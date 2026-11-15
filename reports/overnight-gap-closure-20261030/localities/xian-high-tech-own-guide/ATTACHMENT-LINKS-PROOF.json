@@ -1,0 +1,47 @@
+{
+  "region_code": "610152",
+  "guide_url": "https://xdz.xa.gov.cn/ztzl/ldhshbx/ywzn/1707311223297110018.html",
+  "browser_retrieved_at": "2026-11-15T20:53:41.672Z",
+  "browser_readback_sha256": "0110032c40c97d8599dab93200f04220dda2178e9b9b10ce5cf41846cfac5390",
+  "guide_dom_sha256": "ae978b708bf814a5fe55e09aa2b406f3cbd5bde51ddebe943a54f882eef637ad",
+  "native_docx_word_review_sha256": "e103cdced889cc98ae33ad6cffcbd7ddca4861d17364c63b2e931a2bac430b97",
+  "native_doc_word_review_sha256": "a352fdb8b0b4c686d6f08531f66a79d8223a1b0306c042ba8ffd323ad4d49424",
+  "attachments": [
+    {
+      "id": "xian-610152-proxy-recommendation",
+      "official_name": "公民代理推荐函.doc",
+      "official_url": "https://xdz.xa.gov.cn/web_files/xdz/file/2023/10/16/202310161203230714775.doc",
+      "official_sha256": "4dc5bc3c58cd6209b71dd37476205eaa109fed89d9af97a7bff8d1134ebd01bc",
+      "bytes": 14336,
+      "format": "DOC",
+      "print_pages": 1
+    },
+    {
+      "id": "xian-610152-authorization",
+      "official_name": "授权委托书.doc",
+      "official_url": "https://xdz.xa.gov.cn/web_files/xdz/file/2023/10/16/202310161203230838771.doc",
+      "official_sha256": "fda6fbaabe878e2805de1b465f3415065ba4142de5e940a434da4e961c526fcf",
+      "bytes": 15360,
+      "format": "DOC",
+      "print_pages": 1
+    },
+    {
+      "id": "xian-610152-representative-proof",
+      "official_name": "法定代表人（或主要负责人）身份证明书.doc",
+      "official_url": "https://xdz.xa.gov.cn/web_files/xdz/file/2023/10/16/202310161203230784611.doc",
+      "official_sha256": "0f3d386b273dbf4f2f0edd9b3ab898bd22f43b823e11bbfa230db8a02ed647d0",
+      "bytes": 13312,
+      "format": "DOC",
+      "print_pages": 1
+    },
+    {
+      "id": "xian-610152-delivery-address",
+      "official_name": "送达地址确认书（正反面打印）.docx",
+      "official_url": "https://xdz.xa.gov.cn/web_files/xdz/file/2023/10/16/202310161146024877498.docx",
+      "official_sha256": "9bb9804def411d650c8efd3cc8e8b6b2cdf0fee35a0fb9722f25da90d5113dd4",
+      "bytes": 15570,
+      "format": "DOCX",
+      "print_pages": 2
+    }
+  ]
+}

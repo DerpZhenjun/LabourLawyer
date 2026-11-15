@@ -53,7 +53,10 @@ class XianHighTechOwnGuideTests(TestCase):
         guide = store.put_guide(staged_guide(ROOT))
         app = FastAPI()
         app.include_router(routes.router, prefix="/regional")
-        self.enterContext(patch.object(routes, "ROOT", ROOT))
+        from regional_xian_high_tech_guide import SOURCE
+        (root / SOURCE).parent.mkdir(parents=True)
+        (root / SOURCE).write_bytes((ROOT / SOURCE).read_bytes())
+        self.enterContext(patch.object(routes, "ROOT", root))
         self.enterContext(patch.object(routes, "store", return_value=store))
         self.enterContext(patch.object(routes, "directory_store", return_value=directory))
         client = self.enterContext(TestClient(app))

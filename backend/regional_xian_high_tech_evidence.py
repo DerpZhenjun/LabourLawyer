@@ -8,10 +8,8 @@ from zipfile import ZipFile
 
 from pydantic import AfterValidator, BaseModel, ConfigDict, Field
 
-from regional_guides import digest
 from regional_workbook_xml import parse_xml, plain_line, scrub_metadata, set_cell, spreadsheet_tag, xml_bytes
-from regional_xian_high_tech_application import IDENTITY, LAYOUT_SHA256 as APPLICATION_SHA256
-from regional_xian_high_tech_guide import staged_guide
+from regional_xian_high_tech_application import matches_guide_source
 
 
 ADAPTER = "shaanxi_xian_high_tech_evidence_xlsx_v1"
@@ -70,7 +68,7 @@ def fill_evidence(layout: bytes, values: dict) -> bytes:
 
 
 def _verified_template(guide, root):
-    if guide.get("region_code") != "610152" or guide.get("published") is not False:
+    if not matches_guide_source(guide, root):
         return None
     root = Path(root).resolve()
     path = (root / LAYOUT).resolve()
@@ -79,18 +77,12 @@ def _verified_template(guide, root):
     try:
         if sha256(path.read_bytes()).hexdigest() != SOURCE_SHA256:
             return None
-        expected = staged_guide(root)
-    except (OSError, ValueError):
-        return None
-    if any(guide.get(field) != expected[field] for field in IDENTITY if field != "source_version"):
-        return None
-    source_version = expected["source_version"]
-    if guide.get("source_version") not in {source_version, digest(f"{source_version}:{APPLICATION_SHA256}")}:
+    except OSError:
         return None
     return {
         "id": TEMPLATE_ID, "original_name": "证据目录.xlsx",
         "service_object": "劳动者、用人单位", "region_code": "610152",
-        "guide_source_url": expected["source_url"], "source_url": expected["source_url"],
+        "guide_source_url": guide["source_url"], "source_url": guide["source_url"],
         "official_sha256": SOURCE_SHA256, "official_kind": "blank", "original_format": "XLSX",
         "file_type": "xlsx", "download_status": "official_link_only",
         "file": LAYOUT.as_posix(), "sha256": SOURCE_SHA256,

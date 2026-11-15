@@ -76,6 +76,7 @@ from regional_ziyang_worker_reference import (
 from regional_foping_reference import (
     ADAPTER as FOPING_REFERENCE_ADAPTER, FopingReferenceRequest, fill_application as fill_foping_reference,
 )
+from regional_xian_high_tech_attachments import with_official_attachments
 from regional_xian_high_tech_evidence import (
     ADAPTER as XIAN_HIGH_TECH_EVIDENCE_ADAPTER, EvidenceRequest as XianHighTechEvidenceRequest,
     fill_evidence as fill_xian_high_tech_evidence, with_xian_high_tech_workbook,
@@ -219,6 +220,7 @@ def lookup(province: str=Query(max_length=30),city: str=Query(max_length=80),dis
     guide = store().lookup(province,city,district)
     if xlsx:
         guide = with_local_workbooks(guide, ROOT)
+    guide = with_official_attachments(guide, ROOT)
     templates = guide['templates']
     collective = any(template.get('case_scope') == 'collective' for template in templates)
     if case_scope and not collective:

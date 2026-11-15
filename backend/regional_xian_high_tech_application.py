@@ -78,8 +78,22 @@ def staged_application_candidate(root=None):
         "adapter": ADAPTER, "document_types": ["application"], "can_generate": True, "generation_mode": "blank",
     }]
     guide["sections"]["官网附件核验"] += "申请书仅辅助填写请求事项和事实理由。双方信息、签名捺印与日期手填。"
-    guide["warnings"] = ["当前仅提供申请书正文填写。送达地址确认书、证据目录等附件仍待验收。"]
+    guide["warnings"] = ["申请书仅填写请求事项和事实理由。可用的文书和官方链接见附件列表。"]
     return guide
+
+
+
+def matches_guide_source(guide, root):
+    if guide.get("region_code") != "610152" or guide.get("published") is not False:
+        return False
+    try:
+        expected = staged_guide(root)
+    except ValueError:
+        return False
+    if any(guide.get(field) != expected[field] for field in IDENTITY if field != "source_version"):
+        return False
+    source = expected["source_version"]
+    return guide.get("source_version") in {source, digest(f"{source}:{LAYOUT_SHA256}")}
 
 
 def checked_adapter(guide, template, kind, root=None):
