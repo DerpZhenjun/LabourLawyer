@@ -43,7 +43,7 @@
         <dl class="guide-facts"><div><dt><i class="fa-solid fa-building" aria-hidden="true"></i> 办理形式</dt><dd data-field="handling-form">{{ field('办理形式') }}</dd></div><div><dt>官网显示的办理时限</dt><dd>{{ field('承诺办结时限') }}</dd></div><div><dt>是否收费</dt><dd>{{ field('是否收费') }}</dd></div><div><dt>到现场次数</dt><dd>{{ visitCountLabel(guide) }}</dd></div></dl>
         <p class="region-small">这里的时限是官网事项办理信息，不表示争议案件将在这个时间内裁决。</p>
         <div v-for="warning in guide.warnings" :key="warning" class="region-notice" role="note"><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i><p>{{ plainWarning(warning) }}</p></div>
-        <div class="guide-source"><a :href="guide.source_url" target="_blank" rel="noopener noreferrer">核对官方原文 ↗</a><span>核验：{{ date(guide.verified_at) }} · 官网版本 {{ guide.official_version || '未提供' }}</span></div>
+        <div class="guide-source"><template v-if="roleSourceLinks.length"><a v-for="entry in roleSourceLinks" :key="entry.role" :href="entry.href" target="_blank" rel="noopener noreferrer">{{ entry.role }}官网指南 ↗</a></template><a v-else :href="guide.source_url" target="_blank" rel="noopener noreferrer">核对官方原文 ↗</a><span>核验：{{ date(guide.verified_at) }} · 官网版本 {{ guide.official_version || '未提供' }}</span></div>
       </section>
       <nav class="guide-jumps" aria-label="指南内容"><a href="#regional-submit">怎样提交</a><a href="#regional-materials">准备材料</a><a href="#regional-documents">文书与下载</a><a href="#regional-original">完整原文</a></nav>
       <section class="region-panel" id="regional-submit">
@@ -123,6 +123,14 @@ function officialOnlineLink(entry:unknown,source:unknown):{href:string;direct:bo
   }catch{return null}
 }
 const onlineEntry=computed(()=>guide.value?officialOnlineLink(guide.value.channel.entry_url,guide.value.source_url):null)
+const roleSourceLinks=computed(()=>{
+  const sources=guide.value?.role_sources
+  if(!sources||typeof sources!=='object'||Array.isArray(sources))return[]
+  return ['劳动者','用人单位'].flatMap(role=>{
+    const source=officialOnlineLink((sources as Record<string,unknown>)[role], undefined)
+    return source?[{role,href:source.href}]:[]
+  })
+})
 const {cityAreas,districtAreas,directoryLoading,directoryError}=useRegionDirectory(region)
 const cities=computed(()=>[...new Set([...cityAreas.value,...inventory.value.filter(g=>g.province===region.value.province)].map(g=>g.city))])
 const districts=computed(()=>[...new Set([...inventory.value,...coverage.value,...districtAreas.value].filter(g=>g.province===region.value.province&&g.city===region.value.city).map(g=>g.district))])

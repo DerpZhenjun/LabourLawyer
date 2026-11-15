@@ -1,0 +1,117 @@
+{
+  "city": "商洛市",
+  "region_code": "611000",
+  "authority": "商洛市人力资源和社会保障局",
+  "region_scope": "municipal",
+  "home": "https://www.shangluo.gov.cn/",
+  "home_sha256": "9b50912884f58eaa6d45eebd5e1c016aa3cca0176dd20a5f26c9e431de5c8099",
+  "portal": "https://zwfw.shaanxi.gov.cn/#/index?siteCode=611000000000",
+  "phone": "0914-2313632",
+  "duplicated_attachment_sha256": "cd1d39b345d7ad80e7ee553a39f65e94a1af7cd580b6147ced20a9eb0d3c5176",
+  "duplicated_attachment_count": 8,
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1119138246162&siteCode=611000000000",
+      "collected_at": "2026-11-15T14:02:30.656Z",
+      "guide_sha256": "adb7ef99e5217e0c377637d99fb58745a19a807e7bdf33a79483dc5298eb591a",
+      "receipt_sha256": "de0b13fe72a83786123295f0e232413e360a575888c93af3b7492362850ac53d",
+      "venue": "陕西省商洛市商州区城关街道 民主路1号商洛市行政中心(办理窗口:劳动人事争议仲裁院仲裁一、二科（713）)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "format": "jpg",
+          "sha256": "cd1d39b345d7ad80e7ee553a39f65e94a1af7cd580b6147ced20a9eb0d3c5176"
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "format": "jpg",
+          "sha256": "db6d62165a0376ba58bcbffae65bbd84f66a4c4f882469e591c9e722c9b80989"
+        },
+        {
+          "key": "evidence",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "format": "jpg",
+          "sha256": "cd1d39b345d7ad80e7ee553a39f65e94a1af7cd580b6147ced20a9eb0d3c5176"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "format": "jpg",
+          "sha256": "cd1d39b345d7ad80e7ee553a39f65e94a1af7cd580b6147ced20a9eb0d3c5176"
+        },
+        {
+          "key": "work-permit",
+          "name": "外国人就业证",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "format": "jpg",
+          "sha256": "cd1d39b345d7ad80e7ee553a39f65e94a1af7cd580b6147ced20a9eb0d3c5176"
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1118808276944&siteCode=611000000000",
+      "collected_at": "2026-11-15T14:02:30.896Z",
+      "guide_sha256": "d2b6e366aaa0726dbb67adaed7ba07adcc000ae10d60314e235bf529fd2c69aa",
+      "receipt_sha256": "93eca628fb45a14294ddcae4ceaee04b9e982612d5f516305c0a86b40a3be17e",
+      "venue": "陕西省商洛市商州区城关街道 民主路1号商洛市行政中心(办理窗口:劳动人事争议仲裁院仲裁一、二科（713）)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "format": "jpg",
+          "sha256": "cd1d39b345d7ad80e7ee553a39f65e94a1af7cd580b6147ced20a9eb0d3c5176"
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "format": "jpg",
+          "sha256": "cd1d39b345d7ad80e7ee553a39f65e94a1af7cd580b6147ced20a9eb0d3c5176"
+        },
+        {
+          "key": "evidence",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "format": "jpg",
+          "sha256": "cd1d39b345d7ad80e7ee553a39f65e94a1af7cd580b6147ced20a9eb0d3c5176"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "必要",
+          "instructions": "",
+          "official_attachment_label": "样表",
+          "format": "jpg",
+          "sha256": "cd1d39b345d7ad80e7ee553a39f65e94a1af7cd580b6147ced20a9eb0d3c5176"
+        }
+      ]
+    }
+  }
+}
