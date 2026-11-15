@@ -107,3 +107,37 @@ class BaojiCountyApplicationTests(TestCase):
         with ZipFile(BytesIO(raw)) as old, ZipFile(out) as new:
             self.assertTrue(all(old.read(name) == new.read(name)
                                 for name in old.namelist() if name != 'word/document.xml'))
+
+
+    def test_taibai_keeps_original_instructions_and_manual_fingerprint(self):
+        code = '610331'
+        raw = (LAYOUT / f'baoji-{code}-worker-application.docx').read_bytes()
+        original = Document(BytesIO(raw))
+        fields = {'applicant_name': '测试劳动者', 'birth_date': '2000-02-29', 'third_party_name': '测试第三人',
+                  'third_party_phone': '测试第三人电话', 'application_copies': '2', 'evidence_copies': '1',
+                  'requests': ['请求核对测试工资', '请求核对测试记录'], 'facts': '测试第一段\n测试第二段'}
+        out = BytesIO()
+        self.adapter.fill_application(code, raw, fields).save(out)
+        generated = Document(out)
+        lines = [p.text for p in generated.paragraphs]
+        self.assertIn('2000年02月29日', lines[3])
+        self.assertIn('测试第三人', lines[13])
+        self.assertIn('测试第三人电话', lines[16])
+        self.assertEqual(lines[18:20], fields['requests'])
+        self.assertTrue(all(generated.paragraphs[index]._p.xpath('./w:pPr/w:numPr') for index in (18, 19)))
+        self.assertIn('副本2份', lines[22])
+        self.assertIn('证据材料1份', lines[23])
+        self.assertIn('太白县劳动人事争议仲裁委员会', lines[25])
+        self.assertIn('（手印）', lines[27])
+        self.assertTrue(generated.paragraphs[29].paragraph_format.page_break_before)
+        self.assertNotIn('测试劳动者', lines[27])
+        self.assertNotIn('....', '\n'.join(lines[:29]))
+        self.assertEqual([p._p.xml for p in original.paragraphs[30:]],
+                         [p._p.xml for p in generated.paragraphs[30:]])
+        with ZipFile(BytesIO(raw)) as old, ZipFile(out) as new:
+            self.assertTrue(all(old.read(name) == new.read(name)
+                                for name in old.namelist() if name != 'word/document.xml'))
+        for data in ({'signature': '测试'}, {'evidence_copies': '-1'}, {'birth_date': '2001-02-29'},
+                     {'id_number': '非本县表单栏位'}):
+            with self.subTest(data=data), self.assertRaises(ValidationError):
+                self.adapter.fill_application(code, raw, data)

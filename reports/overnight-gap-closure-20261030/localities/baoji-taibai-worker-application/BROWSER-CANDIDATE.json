@@ -1,0 +1,31 @@
+{
+  "published": false,
+  "state": "PASS",
+  "case": {
+    "code": "610331",
+    "source_id": "14bde90c6e646d06c677db35",
+    "blank_sha256": "19ced1ed971860179d2d11fb15e5b14cab76cac08a2ed1ca78ef4493818e1766",
+    "filled_sha256": "bc6659ef2db1a669306088c17f0886d10ef3f99d362aca7fe6dae0c313153fa8",
+    "cancel_without_post": true,
+    "viewports": [
+      375,
+      768,
+      1440
+    ]
+  },
+  "regression_counties": 5,
+  "browser_downloads": 12,
+  "browser_receipt_sha256": "30545d0024bf6d7a549531467ffc08d574b25643acc7190b85c88a05990b29dc",
+  "word_fixture_pages": [
+    5,
+    5,
+    7
+  ],
+  "word_fixture_receipt_sha256": "4337cd620678bb60c1d17684fa13b1eb58bca451156b3bc76fb82ca367c3cc17",
+  "word_text_pagination_sha256": "f114680933ff775c54f3823d74771b21dc31438e27a39b670c059caf32b4ad1e",
+  "browser_word_pages": 5,
+  "browser_word_receipt_sha256": "67b5425905d2753c7318bdaf6a186e2e1a8ddf3081dbb46af5a430c65da3b5b7",
+  "focused_passed": 7,
+  "regression_passed": 21,
+  "regression_skipped": 1
+}

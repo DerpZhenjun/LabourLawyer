@@ -10,6 +10,7 @@ from unicodedata import category
 
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.shared import Pt
 from pydantic import AfterValidator, Field
 
 from regional_documents import PreservedPackageDocument
@@ -26,11 +27,14 @@ LINYOU_PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-lin
 LINYOU_PROOF_SHA = '3cddcfe9de8988b9fa05d4cf847610a387a25698a7c5693affe661e4c8cc88d1'
 JINTAI_PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-jintai-worker-application/SOURCE-PROOF.json')
 JINTAI_PROOF_SHA = '301cdba88f644425741c178cd0eb767980c1c3e02342a837c882599dae876258'
+TAIBAI_PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-taibai-worker-application/SOURCE-PROOF.json')
+TAIBAI_PROOF_SHA = 'e322cbb218ee9099f886bab2b1bc32e763011b7fa43719cd17e26d545091a2ac'
 SHARED = 'shaanxi_baoji_qishan_long_worker_v1'
 MEI = 'shaanxi_baoji_mei_worker_v1'
 LINYOU = 'shaanxi_baoji_linyou_worker_v1'
 JINTAI = 'shaanxi_baoji_jintai_worker_v1'
-ADAPTERS = {'610323': SHARED, '610326': MEI, '610327': SHARED, '610329': LINYOU, '610303': JINTAI}
+TAIBAI = 'shaanxi_baoji_taibai_worker_v1'
+ADAPTERS = {'610323': SHARED, '610326': MEI, '610327': SHARED, '610329': LINYOU, '610303': JINTAI, '610331': TAIBAI}
 LAYOUTS = {
     code: Path(f'templates/_docx/_regional/shaanxi/baoji-{code}-worker-application.docx') for code in ADAPTERS
 }
@@ -39,6 +43,7 @@ LAYOUT_HASHES = {
     '610323': SHARED_LAYOUT_SHA,
     '610326': 'd3b1d4fe23d4578a2b323cf2e7f500eadaa8b22e832f627b751e77ba6af5116f',
     '610327': SHARED_LAYOUT_SHA,
+    '610331': '19ced1ed971860179d2d11fb15e5b14cab76cac08a2ed1ca78ef4493818e1766',
     '610303': '1afb707186df326b3cc6192300068bf19a5312a46d76822531cefae83f07d0b7',
     '610329': '5c64d10d59977f133f8a38ae2ccb72fd02eba4b8e12f7f2b771dcf42845b9c69',
 }
@@ -57,6 +62,12 @@ def _line(limit):
 def _iso_date(value):
     if value and date.fromisoformat(value).isoformat() != value:
         raise ValueError('出生日期须为 YYYY-MM-DD')
+    return value
+
+
+def _copy_count(value):
+    if value and not (value.isascii() and value.isdecimal()):
+        raise ValueError('份数须为非负整数')
     return value
 
 
@@ -112,7 +123,39 @@ class LinyouApplication(OwnBase):
     facts: Annotated[bounded(360), AfterValidator(_facts_lines)] = ''
 
 
-MODELS_BY_ADAPTER = {SHARED: QishanLongApplication, MEI: MeiApplication, LINYOU: LinyouApplication, JINTAI: QishanLongApplication}
+class TaibaiApplication(OwnBase):
+    applicant_name: _line(20) = ''
+    gender: _line(6) = ''
+    nationality: _line(12) = ''
+    birth_date: Annotated[str, Field(max_length=10), AfterValidator(_iso_date)] = ''
+    address: _line(70) = ''
+    phone: _line(24) = ''
+    applicant_postcode: _line(12) = ''
+    applicant_mailing_address: _line(75) = ''
+    respondent_name: _line(60) = ''
+    representative: _line(24) = ''
+    representative_role: _line(20) = ''
+    social_credit_code: _line(24) = ''
+    respondent_address: _line(75) = ''
+    respondent_phone: _line(24) = ''
+    respondent_postcode: _line(12) = ''
+    respondent_mailing_address: _line(75) = ''
+    third_party_name: _line(60) = ''
+    third_party_representative: _line(24) = ''
+    third_party_role: _line(20) = ''
+    third_party_credit_code: _line(24) = ''
+    third_party_address: _line(75) = ''
+    third_party_phone: _line(24) = ''
+    requests: list[_line(75)] = Field(default_factory=list, max_length=3)
+    facts: Annotated[bounded(360), AfterValidator(_facts_lines)] = ''
+    application_copies: Annotated[_line(4), AfterValidator(_copy_count)] = ''
+    evidence_copies: Annotated[_line(4), AfterValidator(_copy_count)] = ''
+
+
+MODELS_BY_ADAPTER = {
+    SHARED: QishanLongApplication, MEI: MeiApplication, LINYOU: LinyouApplication,
+    JINTAI: QishanLongApplication, TAIBAI: TaibaiApplication,
+}
 MODELS = {code: MODELS_BY_ADAPTER[adapter] for code, adapter in ADAPTERS.items()}
 
 
@@ -231,6 +274,44 @@ def _write_jintai(paragraphs, data):
     paragraphs[17].paragraph_format.keep_with_next = True
 
 
+def _write_taibai(paragraphs, data):
+    for line, run, key in (
+        (2, 1, 'applicant_name'), (2, 8, 'gender'), (2, 10, 'nationality'),
+        (4, 1, 'address'), (5, 1, 'phone'), (5, 3, 'applicant_postcode'),
+        (6, 1, 'applicant_mailing_address'), (7, 1, 'respondent_name'),
+        (8, 1, 'representative'), (8, 7, 'representative_role'), (9, 3, 'social_credit_code'),
+        (10, 1, 'respondent_address'), (11, 1, 'respondent_phone'),
+        (11, 3, 'respondent_postcode'), (12, 1, 'respondent_mailing_address'),
+        (13, 1, 'third_party_name'), (14, 1, 'third_party_representative'),
+        (14, 5, 'third_party_role'), (15, 3, 'third_party_credit_code'),
+        (16, 1, 'third_party_address'), (16, 5, 'third_party_phone'),
+        (21, 3, 'facts'), (22, 3, 'application_copies'), (23, 2, 'evidence_copies'),
+    ):
+        paragraphs[line].runs[run].text = data[key]
+    for line, run in ((2, 8), (5, 1), (11, 1)):
+        paragraphs[line].runs[run].text += '    '
+    for run in (2, 3):
+        paragraphs[2].runs[run].text = ''
+    birth = data['birth_date'].split('-') if data['birth_date'] else ('    ', '  ', '  ')
+    for run, value in zip((1, 3, 5), birth, strict=True):
+        paragraphs[3].runs[run].text = value
+    requests = data['requests'] + [''] * (3 - len(data['requests']))
+    for paragraph, request in zip(paragraphs[18:20], requests[:2], strict=True):
+        paragraph.runs[0].text = request
+    paragraphs[20].runs[2].text = requests[2]
+    paragraphs[27].runs[1].text = '：\u00a0\u00a0\u00a0\u00a0'
+    for run, spaces in ((3, '    '), (5, '  '), (7, '  ')):
+        paragraphs[28].runs[run].text = spaces
+    # Keep the completed form compact and start the official instructions on their own page.
+    for paragraph in paragraphs[2:29]:
+        paragraph.paragraph_format.line_spacing = Pt(20)
+    for paragraph in paragraphs[22:28]:
+        paragraph.paragraph_format.keep_with_next = True
+    spacer = paragraphs[29].paragraph_format
+    spacer.line_spacing = Pt(1)
+    spacer.page_break_before = True
+
+
 def fill_application(code, layout, values):
     if code not in MODELS or sha256(layout).hexdigest() != LAYOUT_HASHES[code]:
         raise ValueError('地区与已核验申请书版式不匹配')
@@ -242,6 +323,8 @@ def fill_application(code, layout, values):
         _write_linyou(document.paragraphs, data)
     elif code == '610303':
         _write_jintai(document.paragraphs, data)
+    elif code == '610331':
+        _write_taibai(document.paragraphs, data)
     else:
         _write_qishan_long(document.paragraphs, data)
     return PreservedPackageDocument(document, layout)
@@ -256,12 +339,21 @@ LABELS = {
     'representative_role': '法定代表人职务', 'representative_phone': '法定代表人联系电话',
     'birth_text': '出生时间', 'applicant_work_unit': '工作单位',
     'applicant_postcode': '申请人邮政编码', 'respondent_postcode': '被申请人邮政编码',
+    'applicant_mailing_address': '申请人通讯地址', 'respondent_mailing_address': '被申请人通讯地址',
+    'third_party_name': '第三人名称', 'third_party_representative': '第三人法定代表人',
+    'third_party_role': '第三人法定代表人职务', 'third_party_credit_code': '第三人组织机构代码或统一社会信用代码',
+    'third_party_address': '第三人住所', 'third_party_phone': '第三人联系电话',
+    'application_copies': '申请书副本份数', 'evidence_copies': '证据清单及有关证据材料份数',
 }
 
 
 def schema_descriptor(adapter, source_version):
     model = MODELS_BY_ADAPTER[adapter]
-    labels = LABELS | {'respondent_address': '被申请人通信地址'} if adapter == LINYOU else LABELS
+    labels = LABELS
+    if adapter == LINYOU:
+        labels = LABELS | {'respondent_address': '被申请人通信地址'}
+    elif adapter == TAIBAI:
+        labels = LABELS | {'respondent_address': '被申请人住所', 'social_credit_code': '被申请人组织机构代码或统一社会信用代码'}
     fields = []
     for key, prop in model.model_json_schema()['properties'].items():
         field = {'key': key, 'label': labels[key], 'type': 'text'}
@@ -303,7 +395,10 @@ def staged_guide(code, root=None):
         guide_hash = guide['source_version']
     else:
         candidates = json.loads(_pinned_bytes(root, BASE_GUIDES, guide_hash))
-        proof_path, proof_hash = (LINYOU_PROOF, LINYOU_PROOF_SHA) if code == '610329' else (PROOF, PROOF_SHA)
+        proof_path, proof_hash = {
+            '610329': (LINYOU_PROOF, LINYOU_PROOF_SHA),
+            '610331': (TAIBAI_PROOF, TAIBAI_PROOF_SHA),
+        }.get(code, (PROOF, PROOF_SHA))
         proof = json.loads(_pinned_bytes(root, proof_path, proof_hash))
         guide = next(g for g in candidates if g['region_code'] == code)
     item = next(p for p in proof['items'] if p['region_code'] == code)
@@ -311,7 +406,10 @@ def staged_guide(code, root=None):
     guide.update(source_id=digest(guide['source_url'])[:24],
                  source_version=digest(code + ':' + proof_hash + ':' + guide_hash),
                  can_generate=True, verified_at=item['fetched_at'])
-    guide['warnings'][0] = '本区申请书可填写生成，签名和提交日期请由本人补填。'
+    guide['warnings'][0] = (
+        '本区申请书可填写生成，签名、手印和签署日期请按原表说明由本人办理。'
+        if code == '610331' else '本区申请书可填写生成，签名和提交日期请由本人补填。'
+    )
     template = {
         'id': f'baoji-{code}-worker-application', 'region_code': code, 'official_kind': 'blank',
         'source_url': item['source_url'], 'official_attachment_entry': 'material_tab',
