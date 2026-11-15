@@ -1,0 +1,193 @@
+{
+  "city": "榆林市",
+  "district": "神木市",
+  "region_code": "610881",
+  "authority": "神木市人社局",
+  "consultation_phone": "0912-8332484",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610881000000",
+  "department_portal": "https://zwfw.shaanxi.gov.cn/pc/#/c/department?siteCode=610881000000&deptCode=11610821016084317Q&deptName=%E7%A5%9E%E6%9C%A8%E5%B8%82%E4%BA%BA%E7%A4%BE%E5%B1%80",
+  "department_code": "11610821016084317Q",
+  "attachment_ledger_sha256": "970b54e49a02e57976659f1a4577d59cb1e0feac60a881eebda02f938cc6f2c1",
+  "word_review_sha256": "a8ea8e5d197c9997dc041d713c9e4fb402ae4eab7ce55e8e7b9d458a8f594897",
+  "content_structure_sha256": "eb2ae317b58c15e7af1a2549da10db4d44e8834bc07f6f931ea5d48c1b9c2488",
+  "application_content_review": {
+    "portal_label": "样表",
+    "sha256": "f980fb2305f259590e503fea45a9a772b0c03edec2aa7c3a21e67edcf71bdb6c",
+    "pages": 8,
+    "both_roles_same_bytes": true,
+    "classification": "劳动者申请书样本汇编，含预填请求和事实理由"
+  },
+  "evidence_checklist_content_review": {
+    "portal_label": "空表",
+    "portal_material": "劳动（人事）关系证明材料",
+    "sha256": "b11c90c11792d175fb0353edd17dac49e7fa6df6729d542f245562bd6f8e7575",
+    "pages": 1,
+    "title": "证据清单",
+    "headers": [
+      "序号",
+      "名称",
+      "证明内容",
+      "页数"
+    ],
+    "blank_body_rows": 10,
+    "footer_labels": [
+      "提交人",
+      "提交时间"
+    ],
+    "scope": "worker",
+    "generation_status": "pending",
+    "structure_receipt_sha256": "1546c344426d1a04e71eeda8e2a4a29efbd76100b7f4ce2cdf6c973e7b9c98c6"
+  },
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1115685285126&siteCode=610881000000",
+      "collected_at": "2026-11-15T18:30:17.732Z",
+      "raw_receipt_sha256": "ac0b55a39d18674dd2ac533fdef3f2400f647e12f3e72c24daffec89f3ee45d2",
+      "reported_authority": "人社局",
+      "office": "陕西省榆林市神木市 杨业大街御景茗苑南侧约80米神木市政务服务中心(办理窗口:神木市政务服务中心7楼749办公室)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOC",
+              "sha256": "f980fb2305f259590e503fea45a9a772b0c03edec2aa7c3a21e67edcf71bdb6c",
+              "captured_at": "2026-11-15T18:30:53.972044+00:00"
+            }
+          ]
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "非必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "644aa2e36d837525cba0a23b37226f587fff923cdbc478e1bad0ff3c87f87751",
+              "captured_at": "2026-11-15T18:30:55.340803+00:00"
+            }
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "75ed6f424c9b971ed7b41fba390f647d658f48766484eb038ba2e7aa447c0df3",
+              "captured_at": "2026-11-15T18:30:55.611079+00:00"
+            }
+          ]
+        },
+        {
+          "key": "employment-permit",
+          "name": "外国人就业证",
+          "required": "非必要",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "047649f7a199089ab5ca74a6a80aa3d033d1fe59d3756afeb508573b6e9ef896",
+              "captured_at": "2026-11-15T18:30:55.815157+00:00"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "空表",
+              "format": "DOC",
+              "sha256": "b11c90c11792d175fb0353edd17dac49e7fa6df6729d542f245562bd6f8e7575",
+              "captured_at": "2026-11-15T18:30:55.976277+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1117178284287&siteCode=610881000000",
+      "collected_at": "2026-11-15T18:30:17.500Z",
+      "raw_receipt_sha256": "573c5f2aad235dada7505c9432e1d1384c9176a22f4fea7ebe2154fc8a5ceff8",
+      "reported_authority": "人社局",
+      "office": "陕西省榆林市神木市 杨业大街御景茗苑南侧约80米神木市政务服务中心(办理窗口:神木市政务服务中心7楼749办公室)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOC",
+              "sha256": "f980fb2305f259590e503fea45a9a772b0c03edec2aa7c3a21e67edcf71bdb6c",
+              "captured_at": "2026-11-15T18:30:56.240233+00:00"
+            }
+          ]
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "644aa2e36d837525cba0a23b37226f587fff923cdbc478e1bad0ff3c87f87751",
+              "captured_at": "2026-11-15T18:30:57.272323+00:00"
+            }
+          ]
+        },
+        {
+          "key": "representative",
+          "name": "申请机构法定代表人及主要负责人证明",
+          "required": "必要",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "6bdabe8aba0bfdc8250bad124bf9f30c57bff69288db4b79c2f4ee443f141186",
+              "captured_at": "2026-11-15T18:30:57.626511+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
