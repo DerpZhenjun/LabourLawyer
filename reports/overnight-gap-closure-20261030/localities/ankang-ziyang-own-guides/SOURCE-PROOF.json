@@ -1,0 +1,222 @@
+{
+  "area": {
+    "province": "陕西省",
+    "city": "安康市",
+    "district": "紫阳县",
+    "region_code": "610924",
+    "site_code": "610924000000",
+    "authority": "紫阳县人力资源和社会保障局",
+    "department_code": "11610924016054599U"
+  },
+  "navigation": {
+    "county_home": "https://www.zyx.gov.cn/",
+    "county_home_sha256": "8d575b6d5c15a0eef1c4768664293a97e68a6b77ff6af7b93fee029b7f38b47d",
+    "county_catalog": "https://zwfw.shaanxi.gov.cn/pc/#/c/service?type=1&siteCode=610924000000",
+    "department": "https://zwfw.shaanxi.gov.cn/pc/#/c/department?siteCode=610924000000&deptCode=11610924016054599U&deptName=%E5%8E%BF%E4%BA%BA%E7%A4%BE%E5%B1%80",
+    "department_dom_sha256": "09a24fb741e2423d7c0d5b138c319673a29747c02f8be196f7dcde7c6f52b2a5"
+  },
+  "worker": {
+    "role": "劳动者",
+    "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1119168271890&siteCode=610924000000",
+    "observed_at": "2026-11-15T12:27:53.736Z",
+    "dom_sha256": "190472f6a546eb99d37d792fe60a74cd8fed30ef271c55f8ea288814b4008154",
+    "materials": [
+      {
+        "name": "劳动人事争议仲裁申请书",
+        "required": "必要",
+        "instructions": "1、申请人的基本信息，身份证号码。 2、被申请人单位名称，法定代表人联系方式及地址。 3、申请事项与事实理由。",
+        "public_labels": [
+          "样表",
+          "空表"
+        ]
+      },
+      {
+        "name": "身份证",
+        "required": "必要",
+        "instructions": "按实际情况填报",
+        "public_labels": [
+          "样表",
+          "空表"
+        ]
+      },
+      {
+        "name": "劳动（人事）关系证明材料",
+        "required": "必要",
+        "instructions": "有效劳动关系证明材料",
+        "public_labels": [
+          "样表",
+          "空表"
+        ]
+      },
+      {
+        "name": "授权委托书",
+        "required": "必要",
+        "instructions": "如实填写，签字捺印、盖章",
+        "public_labels": [
+          "样表",
+          "空表"
+        ]
+      }
+    ]
+  },
+  "employer": {
+    "role": "用人单位",
+    "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1116228296493&siteCode=610924000000",
+    "observed_at": "2026-11-15T12:27:53.976Z",
+    "dom_sha256": "76480133585a1659da90fba5230f5e588e9d74de67cc089d0a912578c38820da",
+    "materials": [
+      {
+        "name": "劳动人事争议仲裁申请书",
+        "required": "必要",
+        "instructions": "1、申请人单位信息，地址及联系方式 2、被申请人信息，地址及联系方式 3、申请事项及事实理由",
+        "public_labels": [
+          "样表",
+          "空表"
+        ]
+      },
+      {
+        "name": "营业执照复印件",
+        "required": "必要",
+        "instructions": "无",
+        "public_labels": [
+          "样表",
+          "空表"
+        ]
+      },
+      {
+        "name": "劳动（人事）关系证明材料",
+        "required": "必要",
+        "instructions": "真实、有效",
+        "public_labels": [
+          "样表",
+          "空表"
+        ]
+      },
+      {
+        "name": "授权委托书",
+        "required": "必要",
+        "instructions": "真实、签字捺印、单位盖章",
+        "public_labels": [
+          "样表",
+          "空表"
+        ]
+      },
+      {
+        "name": "法定代表人（负责人）身份证明",
+        "required": "必要",
+        "instructions": "按实际填报、单位盖章",
+        "public_labels": [
+          "样表",
+          "空表"
+        ]
+      },
+      {
+        "name": "法人身份证明",
+        "required": "必要",
+        "instructions": "复印清晰、加盖公章",
+        "public_labels": [
+          "样表",
+          "空表"
+        ]
+      }
+    ]
+  },
+  "attachments": [
+    {
+      "role": "worker",
+      "material": "application",
+      "portal_label": "空表",
+      "observed_at": "2026-11-15T20:28:22.4483789+08:00",
+      "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw/group1/8ed1c069e0844252acf33a116daaa4bc.docx",
+      "sha256": "b6540c117e1478f18a31e4f31bf8d56f6f7922417c049f163ba68d4412e1f83f",
+      "bytes": 13484,
+      "format": "docx",
+      "word_pages": 2,
+      "native_pages_sha256": [
+        "2a09efd2e69b35cada451835888cb7a1a179033f367e716823c8936600607b53",
+        "f8c7c242e2f58592142299feb6e08ab524a8fa9e50653422070759fb827ab7ee"
+      ],
+      "kind": "blank_fields_with_reference_label",
+      "reference_wording_present": true,
+      "signature_fingerprint_and_date": "manual_second_page",
+      "primary_form_recipient": "紫阳县劳动人事争议仲裁委员会"
+    },
+    {
+      "role": "worker",
+      "material": "authorization",
+      "portal_label": "空表",
+      "observed_at": "2026-11-15T20:28:23.8165429+08:00",
+      "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw/group1/6ffc8b8273df4ee3a3c33c1cd8ab68e5.docx",
+      "sha256": "259b748a841db1a254562ce4df72045049e8aa8e05ca0a872f173fd374226ffc",
+      "bytes": 13469,
+      "format": "docx",
+      "word_pages": 2,
+      "native_pages_sha256": [
+        "76b4ba9d515a55b6c59cb8aaa73a721c2bef32c3fd804b72e7b996fa3e66d301",
+        "e2848cd8f9d0b6eee320b036f9a58819973c83182fa3e09848016daf8e292dbc"
+      ],
+      "kind": "blank"
+    },
+    {
+      "role": "employer",
+      "material": "application",
+      "portal_label": "空表",
+      "observed_at": "2026-11-15T20:28:24.2049702+08:00",
+      "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw/group1/58195802e0e2419fae32d44a733b5d46.docx",
+      "sha256": "3f313454a14bca271bc550ac18fb5156e4b703cdb34df694ced423b5aba5691c",
+      "bytes": 13526,
+      "format": "docx",
+      "word_pages": 2,
+      "native_pages_sha256": [
+        "8c8dcba837c25831154e50ea95adb77431e18f49594287bcb1d158038da74b7f",
+        "f8c7c242e2f58592142299feb6e08ab524a8fa9e50653422070759fb827ab7ee"
+      ],
+      "kind": "blank_fields_with_reference_label",
+      "reference_wording_present": true,
+      "signature_fingerprint_and_date": "manual_second_page",
+      "primary_form_recipient": "紫阳县劳动人事争议仲裁委员会"
+    },
+    {
+      "role": "employer",
+      "material": "authorization",
+      "portal_label": "空表",
+      "observed_at": "2026-11-15T20:28:28.6756177+08:00",
+      "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw/group1/1b7840e87117465d9b39e351db1f3654.docx",
+      "sha256": "259b748a841db1a254562ce4df72045049e8aa8e05ca0a872f173fd374226ffc",
+      "bytes": 13469,
+      "format": "docx",
+      "word_pages": 2,
+      "native_pages_sha256": [
+        "76b4ba9d515a55b6c59cb8aaa73a721c2bef32c3fd804b72e7b996fa3e66d301",
+        "e2848cd8f9d0b6eee320b036f9a58819973c83182fa3e09848016daf8e292dbc"
+      ],
+      "kind": "blank"
+    },
+    {
+      "role": "employer",
+      "material": "representative-proof",
+      "portal_label": "空表",
+      "observed_at": "2026-11-15T20:28:29.0095866+08:00",
+      "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw/group1/d688bab940754071a11268dc2df956c9.docx",
+      "sha256": "2e801d098c11f65f36c1ffadac44886fc3be1b86c5b159206686117b654998c3",
+      "bytes": 11252,
+      "format": "docx",
+      "word_pages": 1,
+      "native_pages_sha256": [
+        "dfc5c8c17b8ac1ac9a1cf8ef62354934e11b81bd46f67e5c9b7fedd10a6011ef"
+      ],
+      "kind": "blank"
+    }
+  ],
+  "venue": "紫阳县城关镇紫府路西段县政府对面，紫阳县人力资源和社会保障局负一楼仲裁股",
+  "received_attachments": 20,
+  "attachment_receipts_sha256": "45dca577ea5956887c828f7c72241d449c9ed95cc3791f08112064693a3f010c",
+  "excluded_from_templates": [
+    "身份证",
+    "营业执照复印件",
+    "劳动（人事）关系证明材料",
+    "法人身份证明"
+  ],
+  "published": false,
+  "state": "OWN_ROLES_AND_REFERENCE_MARKED_NATIVE_BLANKS_VERIFIED_ADAPTER_PENDING"
+}
