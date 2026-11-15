@@ -1,0 +1,144 @@
+{
+  "region_code": "610158",
+  "site_code": "610158000000",
+  "city": "西安市",
+  "district": "西安浐灞国际港",
+  "authority": "组织人事部",
+  "collected_at": "2026-11-15T21:23:04.483Z",
+  "channel": "窗口办理",
+  "consultation_phone": "029-83597978",
+  "complaint_phone": "029-83597701",
+  "workdays": 5,
+  "in_person_visits": "1 次",
+  "fee": "不收费",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1118846332097&siteCode=610158000000",
+      "hours": "星期一至星期五上午09:00至12:00,下午13:00至17:00(法定节假日除外)",
+      "office": "陕西省西安市灞桥区 浐灞大道1号浐灞商务中心二期-办公楼(办理窗口:35)",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "source": "申请人自备",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件3 份",
+          "required": "必要",
+          "standard": "（一）劳动者的姓名、性别、年龄、职业、联系电话、工作单位和住所，用人单位的名称、住所和法定代表人或者主要负责人的姓名、职务、联系电话； （二）仲裁请求和所根据的事实、理由； （三）证据和证据来源、证人姓名和住所。",
+          "instructions": "申请人如实填写，按照被申请人个数提交副本"
+        },
+        {
+          "key": "labor-contract",
+          "name": "劳动合同",
+          "source": "申请人自备",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件1 份",
+          "required": "必要",
+          "standard": "符合《中华人民共和国劳动合同法》第十七条条款要求。",
+          "instructions": "可同时提交证据材料清单，包括证据材料名称、种类、证明对象及内容、是否有原件等"
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "source": "政府部门核发",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件1 份",
+          "required": "必要",
+          "standard": "身份证复印件与原件核对一致",
+          "instructions": "请申请人提前复印"
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114531332028&siteCode=610158000000",
+      "hours": "星期一至星期五上午09:00至12:00,下午13:00至17:00(法定节假日除外)",
+      "office": "陕西省西安市灞桥区 浐灞大道1号浐灞商务中心二期-办公楼(办理窗口:35号)",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "source": "申请人自备",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件1 份",
+          "required": "必要",
+          "standard": "（一）劳动者的姓名、性别、年龄、职业、联系电话、工作单位和住所，用人单位的名称、住所和法定代表人或者主要负责人的姓名、职务、联系电话； （二）仲裁请求和所根据的事实、理由； （三）证据和证据来源、证人姓名和住所。",
+          "instructions": "无"
+        },
+        {
+          "key": "business-license",
+          "name": "营业执照",
+          "source": "申请人自备",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件1 份",
+          "required": "必要",
+          "standard": "提供加盖单位印章的《营业执照》复印件。",
+          "instructions": "统一社会信用代码证等主体资格证明材料及复印件1套，法定代表人或主要负责人身份证明书、身份证原件及复印件。"
+        },
+        {
+          "key": "labor-contract",
+          "name": "劳动合同",
+          "source": "申请人自备",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件1 份",
+          "required": "必要",
+          "standard": "符合《中华人民共和国劳动合同法》第十七条条款要求。",
+          "instructions": "可同时提交证据材料清单，包括证据材料名称、种类、证明对象及内容、是否有原件等"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "source": "申请人自备",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "required": "必要",
+          "standard": "授权委托书应当载明委托事项和权限，并有委托人签名或者盖章。",
+          "instructions": "统一社会信用代码证等主体资格证明材料及复印件一套，法定代表人或主要负责人身份证明书、身份证原件及复印件"
+        }
+      ]
+    }
+  },
+  "guide_dom_sha256": "b3071ef4669ced45e23ac4b7a9f69c1fe2e75c0eb00c759ccadd828e92b0a3bc",
+  "download_manifest_sha256": "e6c7eb662f39b06d11446d4f7efa77d198835537b01563c1f27ad36da1d7b2a3",
+  "public_city_directory": "https://xahrss.xa.gov.cn/wsfw/ldgx/bgxz/5f509addfd850845e6f151bc.html",
+  "office_note": "事项指南列浐灞商务中心二期 35 号窗口。西安市人社局仲裁机构通讯目录将派出庭列在浐灞大道 1 号政务服务中心南二厅一楼。办理地点请按事项与窗口核实。",
+  "attachment_notice": "两角色的申请书空表字节相同，申请人栏采用自然人版式。用人单位授权委托书正文指定周至县劳动人事争议仲裁院。身份证附件为 A4 复印件样式。附件适用性待确认。",
+  "attachments": [
+    {
+      "role": "worker",
+      "material": "劳动人事争议仲裁申请书",
+      "sha256": "c4a82c8f6e4f0725126149052e98d8c24e4230ac3acb62217e4e4ca764fbd2e0",
+      "pages": 1,
+      "review": "自然人申请人栏，抬头收件机关为西安市劳动人事争议仲裁委员会"
+    },
+    {
+      "role": "employer",
+      "material": "劳动人事争议仲裁申请书",
+      "sha256": "c4a82c8f6e4f0725126149052e98d8c24e4230ac3acb62217e4e4ca764fbd2e0",
+      "pages": 1,
+      "review": "与劳动者入口下载的文件字节一致，表内自然人栏无法对应法人申请人"
+    },
+    {
+      "role": "worker",
+      "material": "身份证",
+      "sha256": "11b99060b52051ed0d178395f44503043753ea48ec54758e1c022ce068e902b4",
+      "pages": 1,
+      "review": "身份证复印件样式，带 A4 正反面示意框"
+    },
+    {
+      "role": "employer",
+      "material": "授权委托书",
+      "sha256": "7cc799e4c020b5fd030110bbc460951d5d76445665eeaaa3cdc80a11f3f9c849",
+      "pages": 1,
+      "review": "正文写明前往周至县劳动人事争议仲裁院，适用地域冲突"
+    }
+  ]
+}
