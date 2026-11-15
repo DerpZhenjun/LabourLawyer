@@ -1,0 +1,142 @@
+{
+  "original_html_sha256": "7eb6942b87680fe0458cd13820de34eda8addca28544f6195af68b6324d02fd5",
+  "guide_receipt_sha256": "a42a6cc9f5c5e16d2c39e63a52f79c52ee76d534faaa47ef0e6f5adf0cad7f77",
+  "visible_materials_receipt_sha256": "f5e2cedf10a66e9b3709c577de30d9bcfd071b2e3c8333c31e7de3ba86b91fb8",
+  "guide": {
+    "province": "shaanxi",
+    "province_name": "陕西省",
+    "city": "铜川市",
+    "district": "宜君县",
+    "scope_level": "district",
+    "region_code": "610222",
+    "authority": "宜君县人社局",
+    "service_name": "劳动人事争议仲裁申请",
+    "source_title": "劳动人事争议仲裁申请（劳动者）",
+    "source_url": "https://zwfw.tongchuan.gov.cn/yijun/icity/proinfo/indexSimple?code=d0ef9dce4272e2f2dca843b2127d2b7c",
+    "source_version": "7eb6942b87680fe0458cd13820de34eda8addca28544f6195af68b6324d02fd5",
+    "official_version": "",
+    "collected_at": "2026-11-15T08:11:16.619593+00:00",
+    "verified_at": "2026-11-15T08:12:48.339868+00:00",
+    "verification_status": "verified",
+    "published": true,
+    "can_generate": false,
+    "fields": {
+      "办理地点": "陕西省铜川市宜君县 宜阳街宜君县第一中学西北侧约30米宜君县人力资源和社会保障局(办理窗口:311)",
+      "咨询方式": "0919-8172950",
+      "到现场次数": "2 次",
+      "承诺办结时限": "5个（工作日）"
+    },
+    "materials": [
+      {
+        "id": "610222-worker-1",
+        "name": "劳动（人事）关系证明材料",
+        "region_code": "610222",
+        "source_url": "https://zwfw.tongchuan.gov.cn/yijun/icity/proinfo/indexSimple?code=d0ef9dce4272e2f2dca843b2127d2b7c",
+        "material_type": "原件和复印件",
+        "format": "纸质材料",
+        "copies": "原件1份  复印件2份",
+        "required": "必要",
+        "instructions": "原件和复印件；纸质材料；原件1份  复印件2份；必要",
+        "raw_value": "原件和复印件；纸质材料；原件1份  复印件2份；必要",
+        "normalized_value": "原件和复印件；纸质材料；原件1份  复印件2份；必要",
+        "verification_status": "verified",
+        "collected_at": "2026-11-15T08:12:48.339868+00:00",
+        "verified_at": "2026-11-15T08:12:48.339868+00:00"
+      },
+      {
+        "id": "610222-worker-2",
+        "name": "授权委托书",
+        "region_code": "610222",
+        "source_url": "https://zwfw.tongchuan.gov.cn/yijun/icity/proinfo/indexSimple?code=d0ef9dce4272e2f2dca843b2127d2b7c",
+        "material_type": "原件",
+        "format": "纸质材料",
+        "copies": "原件2份",
+        "required": "必要",
+        "instructions": "原件；纸质材料；原件2份；必要",
+        "raw_value": "原件；纸质材料；原件2份；必要",
+        "normalized_value": "原件；纸质材料；原件2份；必要",
+        "verification_status": "verified",
+        "collected_at": "2026-11-15T08:12:48.339868+00:00",
+        "verified_at": "2026-11-15T08:12:48.339868+00:00"
+      },
+      {
+        "id": "610222-worker-3",
+        "name": "外国人就业证",
+        "region_code": "610222",
+        "source_url": "https://zwfw.tongchuan.gov.cn/yijun/icity/proinfo/indexSimple?code=d0ef9dce4272e2f2dca843b2127d2b7c",
+        "material_type": "原件和复印件",
+        "format": "纸质材料",
+        "copies": "原件1份  复印件2份",
+        "required": "必要",
+        "instructions": "原件和复印件；纸质材料；原件1份  复印件2份；必要",
+        "raw_value": "原件和复印件；纸质材料；原件1份  复印件2份；必要",
+        "normalized_value": "原件和复印件；纸质材料；原件1份  复印件2份；必要",
+        "verification_status": "verified",
+        "collected_at": "2026-11-15T08:12:48.339868+00:00",
+        "verified_at": "2026-11-15T08:12:48.339868+00:00"
+      },
+      {
+        "id": "610222-worker-4",
+        "name": "身份证",
+        "region_code": "610222",
+        "source_url": "https://zwfw.tongchuan.gov.cn/yijun/icity/proinfo/indexSimple?code=d0ef9dce4272e2f2dca843b2127d2b7c",
+        "material_type": "复印件",
+        "format": "纸质材料",
+        "copies": "复印件2份",
+        "required": "必要",
+        "instructions": "复印件；纸质材料；复印件2份；必要",
+        "raw_value": "复印件；纸质材料；复印件2份；必要",
+        "normalized_value": "复印件；纸质材料；复印件2份；必要",
+        "verification_status": "verified",
+        "collected_at": "2026-11-15T08:12:48.339868+00:00",
+        "verified_at": "2026-11-15T08:12:48.339868+00:00"
+      },
+      {
+        "id": "610222-worker-5",
+        "name": "劳动人事争议仲裁申请书",
+        "region_code": "610222",
+        "source_url": "https://zwfw.tongchuan.gov.cn/yijun/icity/proinfo/indexSimple?code=d0ef9dce4272e2f2dca843b2127d2b7c",
+        "material_type": "原件和复印件",
+        "format": "纸质材料",
+        "copies": "原件1份  复印件1份",
+        "required": "必要",
+        "instructions": "原件和复印件；纸质材料；原件1份  复印件1份；必要",
+        "raw_value": "原件和复印件；纸质材料；原件1份  复印件1份；必要",
+        "normalized_value": "原件和复印件；纸质材料；原件1份  复印件1份；必要",
+        "verification_status": "verified",
+        "collected_at": "2026-11-15T08:12:48.339868+00:00",
+        "verified_at": "2026-11-15T08:12:48.339868+00:00"
+      }
+    ],
+    "sections": {
+      "办理窗口与咨询": "陕西省铜川市宜君县 宜阳街宜君县第一中学西北侧约30米宜君县人力资源和社会保障局(办理窗口:311)；咨询窗口 311",
+      "公开简版页面发布时间": "2025-03-20 15:00:03",
+      "官网办理深度": "材料预审"
+    },
+    "channel": {
+      "raw_value": "材料预审",
+      "online_status": "unverified",
+      "entry_url": null,
+      "submission_verified": false
+    },
+    "templates": [
+      {
+        "id": "tongchuan-610222-application-sample",
+        "region_code": "610222",
+        "official_kind": "sample",
+        "source_url": "https://zwfw.tongchuan.gov.cn/yijun/icity/proinfo/indexSimple?code=d0ef9dce4272e2f2dca843b2127d2b7c",
+        "official_attachment_entry": "material_tab",
+        "original_name": "宜君县劳动仲裁申请书（官方样表入口）",
+        "download_status": "official_link_only",
+        "document_types": [
+          "application"
+        ],
+        "can_generate": false
+      }
+    ],
+    "warnings": [
+      "宜君县简版指南的申请书与授权委托书公开入口仅列样表，空白表格待核验。",
+      "本次公开简版材料未核验到独立证据清单。办理深度按官网记录，网上申办未核验。"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "region_code": "610722",
+  "source_url": "https://zwfw.hanzhong.gov.cn/chengguxian/icity/proinfo/index?code=1cc63bbd676a8984cd9336ea27286c65",
+  "observed_at": "2026-11-15T16:03:53.39258+08:00",
+  "source_receipt_sha256": "e069e7a64f0ee0a3b77c1bfc809271f8519836262b272fae5828759964a3a3d9",
+  "sample_receipt_sha256": "7dedd91f5403d2613d85d20a3509db6cdc64a174e265ca45b334ff3b62dad8ca",
+  "structure_review_sha256": "5d19fd205599d1b2851daa3cf6b9d020fa1f5efcdf921e39e0e815987f25eb06",
+  "material": "授权委托书",
+  "official_filename": "授权委托书模板.doc",
+  "official_sha256": "4980f6ba4e4eb3ca915ae1ff73a374fbb593cd673eae73bd15bf8b125a597f56",
+  "official_bytes": 14848,
+  "sample_sha256": "9b4af773d82ba5575c780411f9511735f135ba4e2bdb3d69fbe1b1b597278212",
+  "word_review": {
+    "page_count": 1,
+    "converted_sha256": "2a164142e484fbab040abf7d6df29459071a2c4d9a6ca1e939873d41680b0204",
+    "pdf_sha256": "8ebcd0f2e54a4ea6c02fa70c2008ed860ec25ea97c7a0cab593a078e1c579a9e",
+    "page_sha256": "570c475a83dbc927e7945cbab4f5b08ce09ce1fe54dadb0d71f40679a877f359",
+    "printed_committee_placeholder": "***",
+    "agency_choice_blank": true,
+    "signatures_blank": true
+  },
+  "download_status": "official_link_only"
+}
