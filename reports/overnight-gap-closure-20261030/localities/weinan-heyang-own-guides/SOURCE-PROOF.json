@@ -1,0 +1,108 @@
+{
+  "region_code": "610524",
+  "city": "渭南市",
+  "district": "合阳县",
+  "authority": "合阳县人社局",
+  "official_home": "https://www.heyang.gov.cn/",
+  "official_home_sha256": "b9f314bc737a1b0390ea807bd9f0153e7cb848f3a3570846aa77e45da9b9724d",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610524000000",
+  "department_code": "11610524752131003B",
+  "consultation_phone": "0913-5526162",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1113961262002&siteCode=610524000000",
+      "collected_at": "2026-11-15T16:32:24.851Z",
+      "raw_receipt_sha256": "e5c87edfb4670d560c8773a065f6f7f326025d56207da7b57a8b8d356fea1ff8",
+      "office": "陕西省渭南市合阳县 凤凰西路人社局大楼(办理窗口:人社局520室)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "format": "doc",
+              "sha256": "ce3db50786886f007fdca79224cfa40114256ac6e7e92454be47635b00c4b49a",
+              "bytes": 14336
+            },
+            {
+              "label": "空表",
+              "format": "doc",
+              "sha256": "57714685d0956c011f048e9705130a8e172daba2c59ee5494b2c9e97707540de",
+              "bytes": 14848
+            }
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "format": "doc",
+              "sha256": "254db346d7ba91d608f9a54f5a3bf591c2dca4edc7e817bb952eb8777a0fd59f",
+              "bytes": 20480
+            },
+            {
+              "label": "空表",
+              "format": "doc",
+              "sha256": "57714685d0956c011f048e9705130a8e172daba2c59ee5494b2c9e97707540de",
+              "bytes": 14848
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1111355237898&siteCode=610524000000",
+      "collected_at": "2026-11-15T16:32:25.093Z",
+      "raw_receipt_sha256": "b295e5fab64466e70f8743a33ddbfe22a1d0982e305b9546a62864d132cf2369",
+      "office": "陕西省渭南市合阳县 凤凰西路行政审批大楼(办理窗口:520)",
+      "commitment_workdays": 0,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "format": "doc",
+              "sha256": "ce3db50786886f007fdca79224cfa40114256ac6e7e92454be47635b00c4b49a",
+              "bytes": 14336
+            },
+            {
+              "label": "空表",
+              "format": "doc",
+              "sha256": "57714685d0956c011f048e9705130a8e172daba2c59ee5494b2c9e97707540de",
+              "bytes": 14848
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "attachment_count": 6,
+  "unique_attachment_hashes": 3,
+  "shared_blank_original_sha256": "57714685d0956c011f048e9705130a8e172daba2c59ee5494b2c9e97707540de",
+  "shared_blank_title": "劳动仲裁申请书",
+  "blank_file_is_natural_person_applicant_form": true,
+  "blank_file_under_identity_material_is_application": true,
+  "employer_layout_verified": false,
+  "worker_slot_review_pending": true,
+  "static_preflight_sha256": "27434f4e1c37ae23808956baaf10eba2efd13b038ab2d8022c216231fbd5c754",
+  "word_pagination_sha256": "65db1ed80f34933954f518b2c50ae5b9281f04952c03dfe18056c4eec966773c",
+  "word_content_sha256": "b19dbd0487280d45bf04e196af53fe09e67991f7abd4b1d00438f9654884d836",
+  "word_role_layout_sha256": "baf87213ec5f026822e5b8b07bfd342ea1645670124a07b535cc555e82aae127",
+  "word_pages": {
+    "distinct_blank": 1,
+    "distinct_sample": 2
+  },
+  "generation_approved": false,
+  "published": false
+}
