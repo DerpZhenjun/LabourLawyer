@@ -128,3 +128,40 @@ class BaojiCountyApplicationAPITests(TestCase):
                 query.update(template_id=template['id'], kind='application')
                 self.assertEqual(client.get('/regional/form-contract', params=query).status_code, 409)
                 self.assertEqual(client.post('/regional/generate', json={**query,'mode':'blank','data':{}}).status_code, 409)
+
+
+    def test_additional_own_guides_keep_sample_assets_out_of_generation(self):
+        from regional_baoji_county_application import staged_guide_without_generation
+
+        with TemporaryDirectory() as work:
+            store = RegionalStore(Path(work) / 'guide.sqlite')
+            app = FastAPI()
+            app.include_router(routes.router, prefix='/regional')
+            with patch.object(routes, 'ROOT', ROOT), patch.object(routes, 'store', return_value=store), TestClient(app) as client:
+                for code, district, count, source_code in (
+                    ('610328', '千阳县', 4, '6f11d0a717c9718711197ed1e6aff2df'),
+                    ('610304', '陈仓区', 4, 'ed4d601ac3dc1a52d00dc8eb45160799'),
+                    ('610324', '扶风县', 5, 'e1dad0769f9b91085d75cda86abb6f85'),
+                ):
+                    with self.subTest(code=code):
+                        guide = store.put_guide(staged_guide_without_generation(code, ROOT))
+                        self.assertIs(guide['can_generate'], False)
+                        self.assertEqual(guide['authority'], district + '人力资源和社会保障局')
+                        self.assertIn(source_code, guide['source_url'])
+                        self.assertEqual(len(guide['materials']), count)
+                        self.assertTrue(all(m['region_code'] == code for m in guide['materials']))
+                        template_id = f'baoji-{code}-worker-application-sample'
+                        if code == '610328':
+                            self.assertEqual(guide['templates'], [])
+                            self.assertIn('未列申请书空表', guide['warnings'][0])
+                        else:
+                            template, = guide['templates']
+                            self.assertEqual(template['id'], template_id)
+                            self.assertEqual(template['official_kind'], 'sample')
+                            self.assertEqual(template['download_status'], 'official_link_only')
+                            self.assertIs(template['can_generate'], False)
+                        scope = {key: guide[key] for key in ('province', 'city', 'district', 'source_id', 'version')}
+                        query = {**scope, 'template_id': template_id, 'kind': 'application'}
+                        self.assertEqual(client.get(f'/regional/templates/{template_id}', params=scope).status_code, 404)
+                        self.assertEqual(client.get('/regional/form-contract', params=query).status_code, 409)
+                        self.assertEqual(client.post('/regional/generate', json={**query,'mode':'blank','data':{}}).status_code, 409)

@@ -1,0 +1,38 @@
+{
+  "state": "PASS",
+  "cases": [
+    {
+      "region_code": "610328",
+      "source_id": "e9f5e0ff4899e2d43fbff85a",
+      "materials": 4,
+      "official_sample_link": false,
+      "generation_ui_present": false
+    },
+    {
+      "region_code": "610304",
+      "source_id": "93cbc1c274099004bc13f2e7",
+      "materials": 4,
+      "official_sample_link": true,
+      "generation_ui_present": false
+    },
+    {
+      "region_code": "610324",
+      "source_id": "af71d2585037853b501153e2",
+      "materials": 5,
+      "official_sample_link": true,
+      "generation_ui_present": false
+    }
+  ],
+  "viewports": [
+    375,
+    768,
+    1440
+  ],
+  "post_count": 0,
+  "console_errors": 0,
+  "published": false,
+  "browser_receipt_sha256": "d6d477fe420adce4e7b3cef6412363ab1a64656ac730d3cea6ba555db1b2a246",
+  "focused_passed": 10,
+  "regression_passed": 13,
+  "regression_skipped": 1
+}

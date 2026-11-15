@@ -35,6 +35,8 @@ FENGXIAN_LAYOUT = Path('templates/_docx/_regional/shaanxi/610330-handwritten-bla
 FENGXIAN_ORIGIN = 'official-handwritten-blank-layout'
 WEIBIN_FENGXIANG_PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-weibin-fengxiang-worker/SOURCE-PROOF.json')
 WEIBIN_FENGXIANG_PROOF_SHA = '46cc84018feaf65a8784e54f72acef6e5a60908d7ca6bfe3c7b8237a91948b61'
+FOLLOWUP_GUIDE_PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-qianyang-chencang-fufeng-worker/SOURCE-PROOF.json')
+FOLLOWUP_GUIDE_PROOF_SHA = 'c31d2074ff70ff31be4403911896362871c7497c69e15bacc9279a2f19d1bc1f'
 SHARED = 'shaanxi_baoji_qishan_long_worker_v1'
 MEI = 'shaanxi_baoji_mei_worker_v1'
 LINYOU = 'shaanxi_baoji_linyou_worker_v1'
@@ -480,9 +482,19 @@ def check_fengxian_blank(guide, template, root):
 
 
 def staged_fengxiang_guide(root=None):
+    return staged_guide_without_generation('610305', root)
+
+
+def staged_guide_without_generation(code, root=None):
     root = Path(ROOT if root is None else root).resolve()
-    proof = json.loads(_pinned_bytes(root, WEIBIN_FENGXIANG_PROOF, WEIBIN_FENGXIANG_PROOF_SHA))
-    guide = proof['regions']['610305']['guide']
+    if code == '610305':
+        path, pinned_hash = WEIBIN_FENGXIANG_PROOF, WEIBIN_FENGXIANG_PROOF_SHA
+    elif code in {'610328', '610304', '610324'}:
+        path, pinned_hash = FOLLOWUP_GUIDE_PROOF, FOLLOWUP_GUIDE_PROOF_SHA
+    else:
+        raise ValueError('该区县暂无已核验的指南候选')
+    proof = json.loads(_pinned_bytes(root, path, pinned_hash))
+    guide = proof['regions'][code]['guide']
     guide.update(source_id=digest(guide['source_url'])[:24],
-                 source_version=digest(guide['source_version'] + ':' + WEIBIN_FENGXIANG_PROOF_SHA))
+                 source_version=digest(guide['source_version'] + ':' + pinned_hash))
     return guide
