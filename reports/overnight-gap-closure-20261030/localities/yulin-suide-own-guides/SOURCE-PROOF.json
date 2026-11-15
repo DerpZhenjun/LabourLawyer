@@ -1,0 +1,175 @@
+{
+  "city": "榆林市",
+  "district": "绥德县",
+  "region_code": "610826",
+  "authority": "绥德县人社局",
+  "consultation_phone": "0912-5627169",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610826000000",
+  "department_portal": "https://zwfw.shaanxi.gov.cn/pc/#/c/department?siteCode=610826000000&deptCode=1161082601608881XE&deptName=%E5%8E%BF%E4%BA%BA%E7%A4%BE%E5%B1%80",
+  "department_code": "1161082601608881XE",
+  "attachment_receipt_sha256": "c21b0d0b5b0fa5d79eb20fcee2768c2c2066bf02c8940556b00a2ad491ee8b61",
+  "static_preflight_sha256": "9aedb55535e0ceb37f4ff42a3cb379b37c1e304f29ae7398e92e6b37efc2282c",
+  "static_document_content_sha256": "f5d574d2975878438d7f2fb847702280a196124fb9f44d88fd8111176f541ddd",
+  "word_review_sha256": "f106d0653b3a5977121ddfa3eca2a154e6e99e4495ec09a5e1fd1934fa595a82",
+  "word_content_markers_sha256": "4539c772909e1b915e4752a766a45e94a774473d0146422503fbc0f7a38034f9",
+  "attachment_review": {
+    "application_same_bytes_for_both_roles": true,
+    "application_sha256": "160cb02b9fb0f4ac169a365fcd5434fdefe70affc9468b3155608e6464fcf3b9",
+    "application_pages": 12,
+    "application_content": "含多处样本标记和证据清单的文书汇编",
+    "docx_native_review": "held_custom_xml",
+    "verified_blank_templates": 0
+  },
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1116733248640&siteCode=610826000000",
+      "collected_at": "2026-11-15T19:05:52.425Z",
+      "raw_receipt_sha256": "f0626b246c52158aa0631391defa98b3b2ce4c190e51c301df72efc6026c417c",
+      "reported_authority": "人社局",
+      "office": "陕西省榆林市绥德县名州镇 永乐大道与西山大街交叉路口往东北约200米(财政局家属楼西南侧)永乐大道政务大厅(办理窗口:政务大厅3楼328室)",
+      "commitment_workdays": 0,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件2 份 复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOC",
+              "sha256": "160cb02b9fb0f4ac169a365fcd5434fdefe70affc9468b3155608e6464fcf3b9",
+              "captured_at": "2026-11-15T19:06:42.547950+00:00"
+            }
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件2 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOC",
+              "sha256": "47c4dc05528ee52dc28a7ce04c210c9ae528853e400bae041002910558a58f8f",
+              "captured_at": "2026-11-15T19:06:42.729578+00:00"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件2 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOCX",
+              "sha256": "c117a0050ea15975167c8fa388f66bf67e9685957ece961bf25ac457ec5cb2a7",
+              "captured_at": "2026-11-15T19:06:42.936587+00:00"
+            }
+          ]
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件2 份 复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOC",
+              "sha256": "f28627a6fbb3b18a8d6e4816164dba8276e308a01ca51f029b2b6945a674833f",
+              "captured_at": "2026-11-15T19:06:43.130686+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1112413123890&siteCode=610826000000",
+      "collected_at": "2026-11-15T19:05:52.657Z",
+      "raw_receipt_sha256": "985a20e58e80ac81c0d48e84bb2e2a87ff1ff2c6c273d68fa1b16c7c9a8fc834",
+      "reported_authority": "人社局",
+      "office": "陕西省榆林市绥德县名州镇 名州镇小街4号绥德县人事局(办理窗口:政务中心328)",
+      "commitment_workdays": 0,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件2 份 复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOC",
+              "sha256": "160cb02b9fb0f4ac169a365fcd5434fdefe70affc9468b3155608e6464fcf3b9",
+              "captured_at": "2026-11-15T19:06:43.376400+00:00"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "original_copy": "原件和复印件",
+          "format": "电子和纸质",
+          "copies": "原件1 份 复印件2 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOCX",
+              "sha256": "c117a0050ea15975167c8fa388f66bf67e9685957ece961bf25ac457ec5cb2a7",
+              "captured_at": "2026-11-15T19:06:43.597270+00:00"
+            }
+          ]
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件2 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOCX",
+              "sha256": "3f13470c2272bb978e7d7373de86b99d58ecd572d27c2ac791aa2623c7c700e7",
+              "captured_at": "2026-11-15T19:06:43.756894+00:00"
+            }
+          ]
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "非必要",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件2 份 复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOC",
+              "sha256": "f28627a6fbb3b18a8d6e4816164dba8276e308a01ca51f029b2b6945a674833f",
+              "captured_at": "2026-11-15T19:06:43.958251+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
