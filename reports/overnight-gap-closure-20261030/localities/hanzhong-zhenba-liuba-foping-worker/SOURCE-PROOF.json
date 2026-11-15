@@ -393,8 +393,12 @@
             "official_name": "劳动仲裁申请书模板.doc",
             "sha256": "dae75fba8210fede01e8f5a22e45ff66dabfe8f081c6092037460ef6878014cd",
             "bytes": 31744,
-            "finding": "site_sample_legacy_structure_reviewed_word_render_pending",
-            "word_page_sha256": []
+            "finding": "one_word_page_reference_sample_with_placeholders_and_instructions",
+            "word_page_sha256": [
+              "e5b4bf16dc80f1ce9b735c7483a47f1c6080d6b9ddb286aa09608a923b3e7cdf"
+            ],
+            "word_conversion_sha256": "21e807daedfb1c563f391c8795a7d1da81938845aeaea8daf145a8beab424af4",
+            "preflight_sha256": "dbdeb3eb0bb0ccb1ea1a3702fc0c46e42d01f03e1aa848d0f3cb2729476a57b4"
           },
           {
             "entry_type": "sample",
@@ -420,10 +424,10 @@
         "service_name": "劳动人事争议仲裁申请",
         "source_title": "劳动人事争议仲裁申请（劳动者）",
         "source_url": "https://zwfw.hanzhong.gov.cn/fopingxian/icity/proinfo/index?code=7f5f636163abf3c40ce645a322944808",
-        "source_version": "7ea1fb0d2420200bb19db418b3944d4793c8fe78e60689224ef6f8b361bb90c7",
+        "source_version": "92095dfbc243cb6610780c21fcca34710ed7396fa3e2d8b15cf6d00fa624ed28",
         "official_version": "",
         "collected_at": "2026-11-15T09:25:48.735671+00:00",
-        "verified_at": "2026-11-15T09:38:47.582176+00:00",
+        "verified_at": "2026-11-15T10:24:44.422381+00:00",
         "verification_status": "verified",
         "published": true,
         "can_generate": false,
@@ -513,7 +517,7 @@
         "warnings": [
           "页面所列时限为本事项办理信息。",
           "证据目录在官网标为「空表」，实际表格含实填示例。授权委托书写有佛坪县劳动人事争议仲裁委员会，官网列为样表。",
-          "仲裁申请书从本县样表入口取得，旧格式正文版式待核验。"
+          "仲裁申请书从本县样表入口取得。Word 复核为一页，含填写说明和占位内容。"
         ],
         "templates": [
           {
@@ -521,7 +525,7 @@
             "region_code": "610730",
             "source_url": "https://zwfw.hanzhong.gov.cn/fopingxian/icity/proinfo/index?code=7f5f636163abf3c40ce645a322944808",
             "official_attachment_entry": "material_tab",
-            "original_name": "佛坪县仲裁申请书（官网样表，版式待核验）",
+            "original_name": "佛坪县仲裁申请书（官网样表）",
             "official_kind": "sample",
             "file_type": "doc",
             "download_status": "official_link_only",
