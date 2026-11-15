@@ -1,0 +1,148 @@
+{
+  "area": {
+    "province": "陕西省",
+    "city": "安康市",
+    "district": "石泉县",
+    "region_code": "610922",
+    "authority": "石泉县人社部门",
+    "site_code": "610922000000",
+    "department_code": "11610922748618644F"
+  },
+  "navigation": {
+    "home": "https://www.shiquan.gov.cn/",
+    "home_sha256": "49c20f25f8de4592c7276d97d0a7e5992e6bcd5f6a4448e15963cb45289be584",
+    "catalog": "https://zwfw.shaanxi.gov.cn/pc/#/c/service?siteCode=610922000000",
+    "department": "https://zwfw.shaanxi.gov.cn/pc/#/c/department?siteCode=610922000000&deptCode=11610922748618644F&deptName=%E7%9F%B3%E6%B3%89%E5%8E%BF%E4%BA%BA%E7%A4%BE%E9%83%A8%E9%97%A8",
+    "department_dom_sha256": "8593203aa7ad4e06646a08ad28fe5219725d9ab4e40888dea65100cb23dd277e"
+  },
+  "common": {
+    "venue": "陕西省安康市石泉县城关镇北环路延伸段9号石泉县人力资源和社会保障局4楼409室",
+    "phone": "0915-6310093",
+    "commitment": "5 个自然日",
+    "online_status": "offline"
+  },
+  "worker": {
+    "role": "劳动者",
+    "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114908280209&siteCode=610922000000",
+    "dom_sha256": "87a1d6177ff5cb17c82ae1b845fa4224137f578f0c4bff2edcf844054896331b",
+    "observed_at": "2026-11-15T12:08:00.823Z",
+    "materials": [
+      {
+        "name": "劳动人事争议仲裁申请书",
+        "required": "必要",
+        "public_labels": [
+          "样表",
+          "空表"
+        ]
+      },
+      {
+        "name": "身份证",
+        "required": "必要",
+        "public_labels": [
+          "样表"
+        ]
+      },
+      {
+        "name": "授权委托书",
+        "required": "必要",
+        "public_labels": [
+          "样表",
+          "空表"
+        ]
+      }
+    ],
+    "application": {
+      "title": "石泉县劳动者仲裁申请书（手写空表）",
+      "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/35/7D/rBIxU2JZMSiAacSlAAA0AJdt0Kc357.doc",
+      "sha256": "5038008b3dd9aaa8ddab6ae6b9784a55e6eea458c493a52581b0ced31a7b2104",
+      "bytes": 13312,
+      "observed_at": "2026-11-15T20:08:31.3707553+08:00",
+      "official_kind": "blank",
+      "file_type": "doc",
+      "word_native_pages": 1,
+      "converted_private_layout_sha256": "27d89fabeeb04d4eaeeb5b455b84fd78e9735f81bbc6795de5bca9ae31db6978",
+      "native_page_sha256": "4a28773a40b151203185c37c28a6603a8a7b820e8d1376ec9468c21680c83698",
+      "fill_method": "handwritten"
+    },
+    "authorization_note": "官网材料说明列委托书三份，受托人、委托人和仲裁委员会各一份。"
+  },
+  "employer": {
+    "role": "用人单位",
+    "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1110665283374&siteCode=610922000000",
+    "dom_sha256": "52997f6dfc450221b35b5e90200bd2b75ce83c5a71914c12bd352b35ee4482e7",
+    "observed_at": "2026-11-15T12:08:00.582Z",
+    "materials": [
+      {
+        "name": "劳动人事争议仲裁申请书",
+        "required": "必要",
+        "public_labels": [
+          "样表",
+          "空表"
+        ]
+      },
+      {
+        "name": "主体资格证明材料",
+        "required": "必要",
+        "public_labels": [
+          "样表",
+          "空表"
+        ]
+      },
+      {
+        "name": "授权委托书",
+        "required": "必要",
+        "public_labels": [
+          "样表",
+          "空表"
+        ]
+      }
+    ],
+    "application": {
+      "title": "石泉县用人单位仲裁申请书（手写空表）",
+      "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/21/D9/rBIxVGJZODyAZwVyAAA0AEi5c2A051.doc",
+      "sha256": "f3b1d08b9104ad781b4f9c805c230271e2c004cfe04b193e86221284e5ec6445",
+      "bytes": 13312,
+      "observed_at": "2026-11-15T20:08:30.1442769+08:00",
+      "official_kind": "blank",
+      "file_type": "doc",
+      "word_native_pages": 1,
+      "converted_private_layout_sha256": "7808849c9cb1e96c79ecc75d0e9a86a04d287ef9dbb96fcc74259563e7c1f905",
+      "native_page_sha256": "ac5c8998bdd907dc1067ee856ae238f4f6c545961b10140d113897099588137b",
+      "fill_method": "handwritten"
+    },
+    "application_copies_note": "用人单位事项材料栏写明申请书两份，原表附注另按被申请人人数提交副本。两处原文均保留。",
+    "qualification_note": "用人单位事项材料说明列法定代表人或主要负责人身份证明和营业执照副本复印件。"
+  },
+  "authorization": {
+    "title": "石泉县授权委托书（两类事项空表）",
+    "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/35/7D/rBIxU2JZM-qANGEaAAA2AAlkSVE480.doc",
+    "sha256": "84df9629f56303e35f5c304f1aea59b28c4e43ce55ec22f7c5cc6c2820477c48",
+    "bytes": 13824,
+    "observed_at": "2026-11-15T20:08:32.4532462+08:00",
+    "official_kind": "blank",
+    "file_type": "doc",
+    "word_native_pages": 1,
+    "converted_private_layout_sha256": "a8d144cee107dd971849ff90922f317b0009227c81ac96deaf0e4e2d5cc0aeac",
+    "native_page_sha256": "d1a71d55437a4bd0433c5a40324cb4241782e7fa22521996f7f9723fdffcea08",
+    "employer_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/35/7D/rBIxU2JZOKaADWX9AAA2AAlkSVE384.doc",
+    "recipient": "石泉县劳动人事争议仲裁委员会",
+    "signature_and_date": "manual"
+  },
+  "qualification": {
+    "title": "石泉县法定代表人或主要负责人身份证明书（空表）",
+    "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/35/7D/rBIxU2JZOYSALih6AAA2ALn2yoI686.doc",
+    "sha256": "edf53f7e46a9294e9b8cda752dd1f7586ca796bbf5e597a58cd8d7e4046348c6",
+    "bytes": 13824,
+    "observed_at": "2026-11-15T20:08:30.5551467+08:00",
+    "official_kind": "blank",
+    "file_type": "doc",
+    "word_native_pages": 1,
+    "converted_private_layout_sha256": "f7eabe310ab9c26a5047ab837d1cd970b7feebfcb33515f439630334aee50f59",
+    "native_page_sha256": "5e97b1817a299ca00cfe26b4ba98e2dff1cd69b3884f18208f9ec90bb8544f14",
+    "seal_and_date": "manual"
+  },
+  "attachments_receipt_sha256": "0c4240ee664fca3ca3ee363a2658bcf873cf8950923270068da0c527bf7b32a3",
+  "attachments_received": 11,
+  "verification": "OWN_GUIDES_AND_FOUR_DISTINCT_BLANKS_VERIFIED_OFFICIAL_LINK_ONLY",
+  "published": false
+}
