@@ -1,0 +1,159 @@
+{
+  "region_code": "610523",
+  "city": "渭南市",
+  "district": "大荔县",
+  "authority": "大荔县人力资源和社会保障局",
+  "consultation_phone": "0913-3222912",
+  "official_home": "https://www.dalisn.gov.cn/",
+  "official_home_sha256": "10d6f41decb57b8faa90785415d1d07d416ceebaf8d33fe51150d53102e2cebd",
+  "official_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610523000000",
+  "department_code": "116105230160292541",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1116263175815&siteCode=610523000000",
+      "collected_at": "2026-11-15T16:24:33.400Z",
+      "receipt_sha256": "d6920e04320e1708bc7151e4fbe71f65dbfd1c2a2ba8a80aac91468735efda60",
+      "commitment_workdays": 1,
+      "venue": "陕西省渭南市大荔县西城街道 富民路12号大荔县人力资源和社会保障局(办理窗口:仲裁院立案室301)",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "doc",
+              "bytes": 28672,
+              "sha256": "0434e9556f5bbdc1cedd548b445322ba2963fc47f1892857be24eb17cfe45732"
+            }
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "doc",
+              "bytes": 18432,
+              "sha256": "967dad185b1972fd0121315613fa5003973fa4c5afbd71b44ba6f9354ac595f4"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "docx",
+              "bytes": 14071,
+              "sha256": "bc27e2aca7e5a124c313467fe974256e464328bb8afb61bf448588b9fd50b26a"
+            }
+          ]
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "doc",
+              "bytes": 14848,
+              "sha256": "9106307b42b5437cb28b1e965054d5cc9a2525768edffd8843a4683e69937394"
+            }
+          ]
+        },
+        {
+          "key": "foreign-employment",
+          "name": "外国人就业证",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "jpg",
+              "bytes": 20188,
+              "sha256": "daf4e356ef20613199db8c25b17b3d04f5aef456aabcba4ec92bd1b077e076f0"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1118478171766&siteCode=610523000000",
+      "collected_at": "2026-11-15T16:24:33.642Z",
+      "receipt_sha256": "e627540f0f139988dd18e64c7b2ba15c8d91ffa9f8838490ce1713694b29ff65",
+      "commitment_workdays": 1,
+      "venue": "陕西省渭南市大荔县西城街道 富民路12号大荔县人力资源和社会保障局(办理窗口:仲裁院立案室301)",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "doc",
+              "bytes": 28672,
+              "sha256": "0fdac58cdadea0bf0ead547a45b1625a95067817b07cffd25a5e6745a38d51e1"
+            }
+          ]
+        },
+        {
+          "key": "entity",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "jpg",
+              "bytes": 172684,
+              "sha256": "b1427ca38420c4c03776f83ac8c873a10822f4e7b3abc6f0865d9c7259de6833"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "docx",
+              "bytes": 14071,
+              "sha256": "bc27e2aca7e5a124c313467fe974256e464328bb8afb61bf448588b9fd50b26a"
+            }
+          ]
+        },
+        {
+          "key": "authorization",
+          "name": "委托人授权委托书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "doc",
+              "bytes": 14848,
+              "sha256": "9106307b42b5437cb28b1e965054d5cc9a2525768edffd8843a4683e69937394"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "attachment_count": 9,
+  "unique_attachment_hashes": 7,
+  "all_portal_labels_samples": true,
+  "word_static_preflight_sha256": "da5b4b10d29a525da509f5a1c6c75722666a9be35aafd9e43297c4e520af61b1",
+  "native_sample_receipt_sha256": "1e30f900e8c06a4b2621c00d62bcd6184b713a716cab623ed31e820377206542",
+  "native_authorization_pages": 1,
+  "application_samples_native_review": "STATIC_PREFLIGHT_NOT_PASSED",
+  "generation_approved": false,
+  "published": false
+}
