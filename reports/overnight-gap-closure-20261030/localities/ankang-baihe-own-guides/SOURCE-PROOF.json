@@ -1,0 +1,143 @@
+{
+  "area": {
+    "province_name": "陕西省",
+    "city": "安康市",
+    "district": "白河县",
+    "region_code": "610929",
+    "authority": "白河县人力资源和社会保障局"
+  },
+  "county_home": "https://www.baihe.gov.cn/",
+  "county_home_sha256": "6d1c9fbcfccdc85f67579be83f873e6e876eefd099fd7467963e95c5ec40d906",
+  "phone": "0915-7828062",
+  "file_format_correction_sha256": "852c2fdba2bd0564a56521cb08e7a0a81a2213da127418592742faec0830b888",
+  "employer_converted_sha256": "0ae014cf63f5f3466a500295111a645551f84a1d81411348b5266b394078dc1d",
+  "roles": {
+    "worker": {
+      "label": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114046276484&siteCode=610929000000",
+      "captured_at": "2026-11-15T13:17:25.448Z",
+      "guide_sha256": "d6cdde1c13a36da254272270291ee862960d1b34618b7c64de05b8e2d8b71d78",
+      "receipt_sha256": "ffa5a0fc693a6bd55e0e3d5837905560675e40b10c3b41e36a854c8353231113",
+      "venue": "陕西省安康市白河县城关镇 旬白路199号（人力资源市场）(办理窗口:二楼调解仲裁股)",
+      "commitment_workdays": 1,
+      "materials": [
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "sample_sha256": "6fe5a8fe2a51f8083647116463106251a327dc173146ecfb2cf0ae33b9e89bb5",
+          "portal_blank_sha256": null,
+          "inspection": "material_only",
+          "instructions": ""
+        },
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "sample_sha256": "4f95e777bcc4ef0d3169dd967abeb1cc1662b7430072ba3d3c7f673c1dea7ad9",
+          "portal_blank_sha256": "e051a6207844b488e83a6096babf5f9ac0a090fba2483120346e273739a643b3",
+          "inspection": "source_conflict",
+          "instructions": "劳动者事项所列 DOC 空表含申请人法定代表人栏和盖章栏。请先向白河县受理窗口核对个人签署和填表要求。",
+          "word_pages": 1,
+          "word_render_sha256": "65cd1478c0d4f2de87a3bac0d1c7e4ff70a15412d0d36ff3d26a72c15b37f742",
+          "blank_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/31/62/rBIxU2GEpFmABzCqAAAwAEgmfJI673.doc"
+        },
+        {
+          "key": "termination",
+          "name": "解除劳动合同证明",
+          "required": "必要",
+          "sample_sha256": "94aec2126799fdf03cf9dd08c1bd6e8c7f374b436f7fba46903b271d3c687355",
+          "portal_blank_sha256": "9401ad9abe1992140df051bc98df69b99ac87560d0fe25b00e5067f2172091ad",
+          "inspection": "material_only",
+          "instructions": ""
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "必要",
+          "sample_sha256": "b5611ae4fb893c3d6f09d29e5e4e9df6e7cfd6889a88e6db9f3b00b8486de004",
+          "portal_blank_sha256": "bf3dbcb70110549066cd8583e06bedb6e761131ed68e59e5902bacc1d2802f96",
+          "inspection": "blank",
+          "instructions": "委托办理时请核对授权范围、签名或盖章。",
+          "word_pages": 1,
+          "word_render_sha256": "9a78baa90fa4a81b469a3220f8ac425fc9f6cefd34943a6027416f90b59b4499",
+          "blank_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/31/62/rBIxU2GEpIuAFwUoAAAwAOgDvxk843.doc"
+        },
+        {
+          "key": "foreign-work-permit",
+          "name": "外国人就业证",
+          "required": "必要",
+          "sample_sha256": "eda0ca59d973ef1db45c1f8d3c0c7a897109d3e6b879f60a57494a5678e8a99a",
+          "portal_blank_sha256": "eda0ca59d973ef1db45c1f8d3c0c7a897109d3e6b879f60a57494a5678e8a99a",
+          "inspection": "material_only",
+          "instructions": "官网空表与样表下载内容相同，均为 JPEG。"
+        },
+        {
+          "key": "injury-decision",
+          "name": "认定工伤决定书",
+          "required": "必要",
+          "sample_sha256": "ce655a7ad667f57811d397678389f3b23db937f5f7cefbef35f7741b2415dfec",
+          "portal_blank_sha256": "d6bdc983c49c7c10b64fdcfe1aacd0768281d7bfb4717b6938a54ae705ded925",
+          "inspection": "material_only",
+          "instructions": ""
+        }
+      ]
+    },
+    "employer": {
+      "label": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1112859318184&siteCode=610929000000",
+      "captured_at": "2026-11-15T13:17:25.208Z",
+      "guide_sha256": "26a31cb326422e2cc80606e28bfb93a7e4d86e0ed7de79aac35a0ef83102734e",
+      "receipt_sha256": "eb2e268628f4bf5892b9737d26fd815fa166d3b17d49baece0e8893d3bb8df35",
+      "venue": "陕西省安康市白河县城关镇 旬白路199号（人力资源市场）(办理窗口:二楼调解仲裁股)",
+      "commitment_workdays": 1,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "sample_sha256": "4f95e777bcc4ef0d3169dd967abeb1cc1662b7430072ba3d3c7f673c1dea7ad9",
+          "portal_blank_sha256": "aed265f01c565104ce0a4b787151595fb5b8ad1b9b0185accb27a70ec198ec20",
+          "inspection": "blank",
+          "instructions": "用人单位空表含申请人名称、法定代表人、地址和电话栏。盖章与日期由申请人填写。",
+          "word_pages": 1,
+          "word_render_sha256": "ecf634f02cc81d66d0ee9316850fe2d3f74a22a37e8b9dbe4a02ca4fe234eeb6",
+          "blank_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1D/B7/rBIxVGGEmLOALPhAAAAwAMW7vIE230.doc"
+        },
+        {
+          "key": "representative",
+          "name": "法定代表人(负责人)身份证明书",
+          "required": "必要",
+          "sample_sha256": "ed4470bac3f6bfe62f6a6c8d521b32eb7573b203abc7114bb4726e2324081563",
+          "portal_blank_sha256": "35d98062a19bfdde484c0140775d7ccf7be869349a23e74e5db169a26a578b5c",
+          "inspection": "blank",
+          "instructions": "",
+          "word_pages": 1,
+          "word_render_sha256": "1b8018386e1608ba269898e2ee110d3d6d5a019035deb344a7bdd78c5653b7be",
+          "blank_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/31/5D/rBIxU2GEnHiAVQkyAAAsAMFNeiU628.doc"
+        },
+        {
+          "key": "evidence",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "sample_sha256": "94aec2126799fdf03cf9dd08c1bd6e8c7f374b436f7fba46903b271d3c687355",
+          "portal_blank_sha256": "94aec2126799fdf03cf9dd08c1bd6e8c7f374b436f7fba46903b271d3c687355",
+          "inspection": "material_only",
+          "instructions": "官网空表与样表下载内容相同。"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "必要",
+          "sample_sha256": "b5611ae4fb893c3d6f09d29e5e4e9df6e7cfd6889a88e6db9f3b00b8486de004",
+          "portal_blank_sha256": "bf3dbcb70110549066cd8583e06bedb6e761131ed68e59e5902bacc1d2802f96",
+          "inspection": "blank",
+          "instructions": "",
+          "word_pages": 1,
+          "word_render_sha256": "9a78baa90fa4a81b469a3220f8ac425fc9f6cefd34943a6027416f90b59b4499",
+          "blank_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1D/BA/rBIxVGGEn5qANuZFAAAwAOgDvxk066.doc"
+        }
+      ]
+    }
+  }
+}
