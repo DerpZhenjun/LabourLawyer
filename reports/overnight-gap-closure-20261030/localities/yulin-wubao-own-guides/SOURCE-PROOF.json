@@ -1,0 +1,207 @@
+{
+  "city": "榆林市",
+  "district": "吴堡县",
+  "region_code": "610829",
+  "authority": "吴堡县人社局",
+  "consultation_phone": "0912-6510195",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610829000000",
+  "department_portal": "https://zwfw.shaanxi.gov.cn/pc/#/c/department?siteCode=610829000000&deptCode=11610829MB2900643T&deptName=%E5%8E%BF%E4%BA%BA%E7%A4%BE%E5%B1%80",
+  "department_code": "11610829MB2900643T",
+  "attachment_receipt_sha256": "1e2c4375080bb312edced3c17c1c3c059783114a48542345c74bc79604bad9bc",
+  "static_preflight_sha256": "cc1af50681318b2f83012406b1ef9940c095d9f33f92f3cfa10c903b4b616fad",
+  "static_document_content_sha256": "720624bb9503cffb54f56d0185f178d9b6421984e9d1d076b120c36c76f3c776",
+  "attachment_review": {
+    "application_samples_same_set_different_order": true,
+    "jpeg_links": 13,
+    "docx_links": 1,
+    "unique_attachment_sha": 9,
+    "qualification_docx_native_review": "held_unclassified_members",
+    "verified_blank_templates": 0
+  },
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1112911285597&siteCode=610829000000",
+      "collected_at": "2026-11-15T19:36:30.519Z",
+      "raw_receipt_sha256": "f1037e1ed761beecc40a3bfb809123fbff90062537e769c005cc45d7fbc6f867",
+      "office": "陕西省榆林市吴堡县 政务服务中心（黄河大道3区4号）东区2楼(办理窗口:1)",
+      "commitment_workdays": 1,
+      "materials": [
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "f22410dbf1efdd368c5b7555399c2fcfc47bca5de105be180e6132cc93c68410",
+              "captured_at": "2026-11-15T19:37:11.435729+00:00"
+            }
+          ]
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "64bce2312ae47568514c09396d73e9174a7df37ed769b34486f3758b7772a18d",
+              "captured_at": "2026-11-15T19:37:11.713491+00:00"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "07f76bcf885e1201815f5ee06da60721e9ad3c8d09deeec47714bf27b70ff265",
+              "captured_at": "2026-11-15T19:37:11.961152+00:00"
+            }
+          ]
+        },
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表1",
+              "format": "JPEG",
+              "sha256": "15e80c0ab7511565da8b04696f0e3ba20d44a78d8e9dd3db3da284dd327a9fed",
+              "captured_at": "2026-11-15T19:37:12.220719+00:00"
+            },
+            {
+              "portal_label": "样表2",
+              "format": "JPEG",
+              "sha256": "4ac542eeb8188745c7fa12784eaeae300b2bfe7c82a7954271e7a0fa9a160594",
+              "captured_at": "2026-11-15T19:37:12.447497+00:00"
+            },
+            {
+              "portal_label": "样表3",
+              "format": "JPEG",
+              "sha256": "cc6f693582c2cf6f4994917b7d30b84cd4b51df1c1a38e093a8d59bd6c42c021",
+              "captured_at": "2026-11-15T19:37:12.849174+00:00"
+            },
+            {
+              "portal_label": "样表4",
+              "format": "JPEG",
+              "sha256": "d7ca22e75eb281336828c22bbe4f6c14431be1dfefb82a328e68b5de748aafc1",
+              "captured_at": "2026-11-15T19:37:13.193047+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114077286994&siteCode=610829000000",
+      "collected_at": "2026-11-15T19:36:30.763Z",
+      "raw_receipt_sha256": "5acb52891ab50a34b460146cd0caa53b17b36170d47b59856db990b1a89de2a2",
+      "office": "陕西省榆林市吴堡县宋家川街道 政务服务中心（黄河大道3区4号）东区5楼(办理窗口:1)",
+      "commitment_workdays": 1,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表1",
+              "format": "JPEG",
+              "sha256": "cc6f693582c2cf6f4994917b7d30b84cd4b51df1c1a38e093a8d59bd6c42c021",
+              "captured_at": "2026-11-15T19:37:13.397266+00:00"
+            },
+            {
+              "portal_label": "样表2",
+              "format": "JPEG",
+              "sha256": "15e80c0ab7511565da8b04696f0e3ba20d44a78d8e9dd3db3da284dd327a9fed",
+              "captured_at": "2026-11-15T19:37:13.653494+00:00"
+            },
+            {
+              "portal_label": "样表3",
+              "format": "JPEG",
+              "sha256": "4ac542eeb8188745c7fa12784eaeae300b2bfe7c82a7954271e7a0fa9a160594",
+              "captured_at": "2026-11-15T19:37:13.898346+00:00"
+            },
+            {
+              "portal_label": "样表4",
+              "format": "JPEG",
+              "sha256": "d7ca22e75eb281336828c22bbe4f6c14431be1dfefb82a328e68b5de748aafc1",
+              "captured_at": "2026-11-15T19:37:14.156022+00:00"
+            }
+          ]
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOCX",
+              "sha256": "c310aca0e0d2160f0cf5d9cb10eac1b17ab733ce9ef48f8c188b008c43ebcc39",
+              "captured_at": "2026-11-15T19:37:14.330826+00:00"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "419e0037ab83624e615ab0e7c663cbac089a42973859175a16041acfe4dc4b28",
+              "captured_at": "2026-11-15T19:37:14.761112+00:00"
+            }
+          ]
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "64bce2312ae47568514c09396d73e9174a7df37ed769b34486f3758b7772a18d",
+              "captured_at": "2026-11-15T19:37:15.063075+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
