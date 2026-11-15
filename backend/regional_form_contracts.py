@@ -27,6 +27,7 @@ from regional_fujian_oct31p import ADAPTER as FJP, production_schema_descriptor 
 from regional_fujian_huian_quangang_nov1 import ADAPTER as HQ, production_schema_descriptor as hq_schema
 from regional_quanzhou_next4 import ADAPTER as QZ, production_schema_descriptor as qz_schema
 from regional_xiangan_evidence import ADAPTER as XAE, schema_descriptor as xiangan_evidence_schema
+from regional_lueyang_application import ADAPTER as LYA, schema_descriptor as lueyang_application_schema
 from regional_foping_reference import ADAPTER as FPR, schema_descriptor as foping_reference_schema
 from regional_liuba_evidence import ADAPTER as LBE, schema_descriptor as liuba_xlsx_schema
 from regional_xixiang_reference import ADAPTER as XXI, schema_descriptor as xixiang_reference_schema
@@ -48,7 +49,7 @@ JS_BLANK={'jiangsu_xishan_blank_v1','jiangsu_own_blank_oct29_v1',
 REFERENCE={'sichuan_combined_reference_v1','tianfu_reference_v1'}
 NINGBO='zhejiang_ningbo_own_blank_oct29_v1'
 FEIDONG='anhui-feidong-official-application-20261029'
-SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE,ZSM,LHC,BJE,XXI,LBE,FPR}|BAOJI_WORKER_MODELS.keys()|ZJ_OWN|HN|JS_BLANK|REFERENCE)
+SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE,ZSM,LHC,BJE,XXI,LBE,FPR,LYA}|BAOJI_WORKER_MODELS.keys()|ZJ_OWN|HN|JS_BLANK|REFERENCE)
 PUBLIC_PROOF_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE,'jiangsu_own_blank_oct29c_v1','jiangsu_own_blank_oct29d_v1'}|ZJ_OWN|HN)
 
 JS_APP=('applicantName birthDate gender idNumber idAddress otherDocumentType otherDocumentNumber '
@@ -223,6 +224,7 @@ def build_form_contract(guide,template,kind,root=None):
                 xiangan_evidence_schema(guide['source_version']) if adapter==XAE else
                 baoji_worker_schema(adapter,guide['source_version']) if adapter in BAOJI_WORKER_MODELS else
                 baoji_evidence_schema(guide['source_version']) if adapter==BJE else
+                lueyang_application_schema(guide['source_version']) if adapter==LYA else
                 foping_reference_schema(guide['source_version']) if adapter==FPR else
                 liuba_xlsx_schema(guide['source_version']) if adapter==LBE else
                 xixiang_reference_schema(guide['source_version']) if adapter==XXI else
