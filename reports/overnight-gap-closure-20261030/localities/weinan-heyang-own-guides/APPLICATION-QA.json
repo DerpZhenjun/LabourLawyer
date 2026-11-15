@@ -1,0 +1,89 @@
+{
+  "region_code": "610524",
+  "district": "合阳县",
+  "service_object": "劳动者",
+  "state": "CANDIDATE_ACCEPTED",
+  "publication": "NOT_DEPLOYED",
+  "verified_at": "2026-11-15T16:47:35.3468522Z",
+  "role_guide_receipt_sha256": "f2ae5703d81bf6a8aec36303497409f4c8d878efee0e5e53c296b35c19e62c27",
+  "official_source_sha256": "57714685d0956c011f048e9705130a8e172daba2c59ee5494b2c9e97707540de",
+  "conversion_sha256": "4dbbaf712ff531e1eaba57b1ca697657679a30ad2180dbf797026d8fd43c0d9b",
+  "conversion_review_sha256": "a5ade92607d13da5d1aa7c9ffec58aa5dfa043f345d20a2ec1d4c1ed25d47866",
+  "fields": [
+    "request_one",
+    "request_two",
+    "request_three"
+  ],
+  "manual_fields": [
+    "双方信息",
+    "事实与理由",
+    "受理机关",
+    "签名",
+    "日期"
+  ],
+  "employer_template": "UNVERIFIED_WRONG_APPLICANT_ROLE",
+  "identity_attachment": "UNVERIFIED_WRONG_DOCUMENT",
+  "targeted_regressions": 58,
+  "frontend_typecheck": "PASS",
+  "browser_receipt_sha256": "d2cabebad6ce5bb1719dcb9487200ebdabd2d3ae17958a6f394459d36eb77a47",
+  "browser": {
+    "state": "PASS",
+    "viewports": [
+      375,
+      768,
+      1440
+    ],
+    "region_code": "610524",
+    "worker_only": true,
+    "native_downloads": 1,
+    "fetch_bytes_match": true,
+    "native_download_sha256": "3ff7714136fe34bb09d9d4317428492488f7b94b04f7c5c047625c999ea00517",
+    "contract_id": "b8d30f2ae36cfbaaa681e13b1233d5ad94c1781217ab199756c70890946cd389",
+    "cancel_posts": 0,
+    "overflow_posts": 0,
+    "isolated_localities": 3
+  },
+  "word_geometry_receipt_sha256": "9e23f53c0284028def18082dcd509299263122914bec467f81afa41837d8c11f",
+  "word_cases": [
+    {
+      "case": "blank",
+      "pages": 1,
+      "line_count": 0,
+      "original_glyph_shift_pt": 0.0388,
+      "docx_sha256": "0c34a29ea4bdf72573c95a6fd623f2649a0528da6612d235dee3e24b0cf6b3a0",
+      "pdf_sha256": "688eff128e1efcfe7885f82e5fe49d49ee074795d0487ff5fa3dc083f77b0fc5"
+    },
+    {
+      "case": "short",
+      "pages": 1,
+      "line_count": 3,
+      "original_glyph_shift_pt": 0.0388,
+      "docx_sha256": "3b65cdad49dd7fc0804a4da2e2ac872647f81fba928ea402a142a2b682fd0b7c",
+      "pdf_sha256": "20ce42dbf563862e9a58259dad89cbe95dd3afcb230d397e8d4e500d887ff458"
+    },
+    {
+      "case": "wide",
+      "pages": 1,
+      "line_count": 3,
+      "original_glyph_shift_pt": 0.0388,
+      "docx_sha256": "b365ad835f10b49f05c00267db9545edbf9d301eb2644f10982f9c4858499a3e",
+      "pdf_sha256": "ea7a4408e9782f846a53c575d701d735fd58f139eab9b07039d2e1c92c7e5322"
+    },
+    {
+      "case": "latin",
+      "pages": 1,
+      "line_count": 3,
+      "original_glyph_shift_pt": 0.0388,
+      "docx_sha256": "bf5655d1e384825567536842ff4bfaf9d86cad89fae0b3d57d6781fced76f5b1",
+      "pdf_sha256": "7fb023dff17c15e2ca84c7819168ae7c49e8cea5ebe38e4efbd286d11ccea2c7"
+    }
+  ],
+  "word_download_receipt_sha256": "139da348df1906b60b0fe78c667b22d4f987ca1102728b46b780890d50214a00",
+  "word_download": {
+    "remaining_original_glyphs": 217,
+    "original_glyph_shift_pt": 0.0,
+    "pages": 1,
+    "request_rows": 3,
+    "pdf_sha256": "501d8f4d7f1fd9d278a5ac79b504fea8f46e1516e214c87885a2724afa86036c"
+  }
+}

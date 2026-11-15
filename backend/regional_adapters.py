@@ -3,6 +3,7 @@ from copy import deepcopy
 from regional_guides import digest
 from regional_baoji_evidence import ADAPTER as BAOJI_EVIDENCE_ADAPTER, checked_adapter as checked_baoji_evidence_adapter
 from regional_baoji_county_application import MODELS_BY_ADAPTER as BAOJI_WORKER_MODELS, checked_adapter as checked_baoji_worker_adapter
+from regional_heyang_application import ADAPTER as HEYANG_APPLICATION_ADAPTER, checked_adapter as checked_heyang_application
 from regional_tongguan_application import ADAPTER as TONGGUAN_APPLICATION_ADAPTER, checked_adapter as checked_tongguan_application
 from regional_shanyang_application import ADAPTER as SHANYANG_APPLICATION_ADAPTER, checked_adapter as checked_shanyang_application
 from regional_shangnan_application import ADAPTER as SHANGNAN_APPLICATION_ADAPTER, checked_adapter as checked_shangnan_application
@@ -401,6 +402,8 @@ def with_reference_capabilities(guide,root=None):
 
 
 def checked_reference_adapter(guide, template, kind,root=None):
+    if template.get('adapter') == HEYANG_APPLICATION_ADAPTER:
+        return checked_heyang_application(guide, template, kind, root=root)
     if template.get('adapter') == TONGGUAN_APPLICATION_ADAPTER:
         return checked_tongguan_application(guide, template, kind, root=root)
     if template.get('adapter') == SHANYANG_APPLICATION_ADAPTER:

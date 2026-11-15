@@ -27,6 +27,10 @@ from regional_fujian_oct31p import ADAPTER as FJP, production_schema_descriptor 
 from regional_fujian_huian_quangang_nov1 import ADAPTER as HQ, production_schema_descriptor as hq_schema
 from regional_quanzhou_next4 import ADAPTER as QZ, production_schema_descriptor as qz_schema
 from regional_xiangan_evidence import ADAPTER as XAE, schema_descriptor as xiangan_evidence_schema
+from regional_heyang_application import (
+    ADAPTER as HYA, EXTRA_WIDE as HEYANG_EXTRA_WIDE,
+    layout_fields as heyang_layout, schema_descriptor as heyang_schema,
+)
 from regional_tongguan_application import (
     ADAPTER as TGA, EXTRA_WIDE as TONGGUAN_EXTRA_WIDE,
     layout_fields as tongguan_layout, schema_descriptor as tongguan_schema,
@@ -61,7 +65,7 @@ JS_BLANK={'jiangsu_xishan_blank_v1','jiangsu_own_blank_oct29_v1',
 REFERENCE={'sichuan_combined_reference_v1','tianfu_reference_v1'}
 NINGBO='zhejiang_ningbo_own_blank_oct29_v1'
 FEIDONG='anhui-feidong-official-application-20261029'
-SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE,ZSM,LHC,BJE,XXI,LBE,FPR,LYA,HAN,HAY,ZYR,ZYE,BHE,DFA,SNA,SYA}|{TGA}|BAOJI_WORKER_MODELS.keys()|ZJ_OWN|HN|JS_BLANK|REFERENCE)
+SUPPORTED_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE,ZSM,LHC,BJE,XXI,LBE,FPR,LYA,HAN,HAY,ZYR,ZYE,BHE,DFA,SNA,SYA}|{TGA,HYA}|BAOJI_WORKER_MODELS.keys()|ZJ_OWN|HN|JS_BLANK|REFERENCE)
 PUBLIC_PROOF_ADAPTERS=frozenset(EXACT_JS|{NINGBO,FEIDONG,FJH,FJI,FJJ,FJK,FJL,FJM,FJN,FJO,FJP,HQ,QZ,XAE,'jiangsu_own_blank_oct29c_v1','jiangsu_own_blank_oct29d_v1'}|ZJ_OWN|HN)
 
 JS_APP=('applicantName birthDate gender idNumber idAddress otherDocumentType otherDocumentNumber '
@@ -237,6 +241,7 @@ def build_form_contract(guide,template,kind,root=None):
                 xiangan_evidence_schema(guide['source_version']) if adapter==XAE else
                 baoji_worker_schema(adapter,guide['source_version']) if adapter in BAOJI_WORKER_MODELS else
                 baoji_evidence_schema(guide['source_version']) if adapter==BJE else
+                heyang_schema(guide['source_version']) if adapter==HYA else
                 tongguan_schema(guide['source_version']) if adapter==TGA else
                 shanyang_schema(guide['source_version']) if adapter==SYA else
                 shangnan_schema(guide['source_version']) if adapter==SNA else
@@ -280,7 +285,7 @@ def build_form_contract(guide,template,kind,root=None):
         context.update(schema_id=own_schema['schema_id'],schema_version=own_schema['schema_version'],
             source_version=own_schema['source_version'],template_sha256=template['sha256'],template_version='sha256:'+template['sha256'])
         result.update(defaults=deepcopy(own_schema['defaults']),policy=deepcopy(own_schema['policy']))
-    if adapter in {HAN, HAY, ZYR, ZYE, BHE, DFA, SNA, SYA, TGA}:
+    if adapter in {HAN, HAY, ZYR, ZYE, BHE, DFA, SNA, SYA, TGA, HYA}:
         layout, extra_wide = {HAN: (hanbin_layout, ''), HAY: (hanyin_layout, HANYIN_EXTRA_WIDE),
                               ZYR: (ziyang_layout, ZIYANG_EXTRA_WIDE),
                               ZYE: (ziyang_employer_layout, ZIYANG_EXTRA_WIDE),
@@ -288,7 +293,8 @@ def build_form_contract(guide,template,kind,root=None):
                               DFA: (danfeng_layout, DANFENG_EXTRA_WIDE),
                               SNA: (shangnan_layout, SHANGNAN_EXTRA_WIDE),
                               SYA: (shanyang_layout, SHANYANG_EXTRA_WIDE),
-                              TGA: (tongguan_layout, TONGGUAN_EXTRA_WIDE)}[adapter]
+                              TGA: (tongguan_layout, TONGGUAN_EXTRA_WIDE),
+                              HYA: (heyang_layout, HEYANG_EXTRA_WIDE)}[adapter]
         result['policy']['layout_limits'] = {'unicode_version': unicodedata.unidata_version,
             'wide_ranges': [list(item) for item in _wide_ranges(extra_wide)], 'fields': layout()}
     if adapter == LBE:
