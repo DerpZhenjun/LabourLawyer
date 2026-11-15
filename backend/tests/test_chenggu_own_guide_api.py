@@ -40,3 +40,34 @@ class ChengguOwnGuideApiTests(TestCase):
                 query = {**scope, 'template_id': sample['id'], 'kind': 'application'}
                 self.assertEqual(client.get('/regional/form-contract', params=query).status_code, 409)
                 self.assertEqual(client.post('/regional/generate', json={**query, 'mode':'blank', 'data':{}}).status_code, 409)
+
+
+    def test_verified_county_authorization_exposes_only_official_download_entry(self):
+        from regional_chenggu_guides import staged_authorization_guide, staged_guide
+
+        with TemporaryDirectory() as work:
+            store = RegionalStore(Path(work) / 'guides.sqlite')
+            previous = store.put_guide(staged_guide(ROOT))
+            current = store.put_guide(staged_authorization_guide(ROOT))
+            self.assertGreater(current['version'], previous['version'])
+            self.assertEqual(current['source_id'], previous['source_id'])
+            self.assertEqual(current['templates'][0], previous['templates'][0])
+            self.assertEqual(current['materials'], previous['materials'])
+            self.assertFalse(current['can_generate'])
+            blank, = [template for template in current['templates'] if template['official_kind'] == 'blank']
+            self.assertEqual(blank['region_code'], '610722')
+            self.assertEqual(blank['source_url'], current['source_url'])
+            self.assertEqual(blank['official_sha256'], '4980f6ba4e4eb3ca915ae1ff73a374fbb593cd673eae73bd15bf8b125a597f56')
+            self.assertEqual(blank['download_status'], 'official_link_only')
+            self.assertFalse(blank['can_generate'])
+            self.assertNotIn('file', blank)
+            scope = {key: current[key] for key in ('province', 'city', 'district', 'source_id', 'version')}
+            app = FastAPI()
+            app.include_router(routes.router, prefix='/regional')
+            with patch.object(routes, 'ROOT', ROOT), patch.object(routes, 'store', return_value=store), TestClient(app) as client:
+                endpoint = f"/regional/templates/{blank['id']}"
+                self.assertEqual(client.get(endpoint, params=scope).status_code, 404)
+                self.assertEqual(client.get(endpoint, params={**scope, 'version': previous['version']}).status_code, 409)
+                query = {**scope, 'template_id': blank['id'], 'kind': 'application'}
+                self.assertEqual(client.get('/regional/form-contract', params=query).status_code, 409)
+                self.assertEqual(client.post('/regional/generate', json={**query, 'mode': 'blank', 'data': {}}).status_code, 409)

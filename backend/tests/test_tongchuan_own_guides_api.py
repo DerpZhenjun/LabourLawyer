@@ -137,3 +137,39 @@ class TongchuanOwnGuidesApiTests(TestCase):
                 store.put_guide({**guide, 'source_version': '0' * 64})
                 altered = client.get('/regional/areas', params=scope).json()['items']
                 self.assertEqual([row['district'] for row in altered], ['宜君县'])
+
+
+    def test_yijun_simple_public_guide_uses_only_county_materials(self):
+        from regional_tongchuan_guides import staged_municipal_guide, staged_yijun_guide
+
+        with TemporaryDirectory() as work:
+            store = RegionalStore(Path(work) / 'guides.sqlite')
+            store.put_guide(staged_municipal_guide(ROOT))
+            guide = store.put_guide(staged_yijun_guide(ROOT))
+            self.assertEqual((guide['region_code'], guide['district']), ('610222', '宜君县'))
+            self.assertIn('/yijun/icity/proinfo/indexSimple?', guide['source_url'])
+            self.assertIn('办理窗口:311', guide['fields']['办理地点'])
+            self.assertFalse(guide['can_generate'])
+            expected_materials = [
+                '劳动（人事）关系证明材料', '授权委托书', '外国人就业证', '身份证', '劳动人事争议仲裁申请书',
+            ]
+            self.assertEqual([material['name'] for material in guide['materials']], expected_materials)
+            self.assertTrue(all(material['source_url'] == guide['source_url'] for material in guide['materials']))
+            sample, = guide['templates']
+            self.assertEqual(sample['official_kind'], 'sample')
+            self.assertEqual(sample['download_status'], 'official_link_only')
+            self.assertFalse(sample['can_generate'])
+            self.assertNotIn('file', sample)
+            app = FastAPI()
+            app.include_router(routes.router, prefix='/regional')
+            with patch.object(routes, 'ROOT', ROOT), patch.object(routes, 'store', return_value=store), TestClient(app) as client:
+                scope = {key: guide[key] for key in ('province', 'city', 'district')}
+                fetched = client.get('/regional/lookup', params=scope).json()
+                self.assertEqual(fetched['source_id'], guide['source_id'])
+                versioned = {**scope, 'source_id': guide['source_id'], 'version': guide['version']}
+                path = f"/regional/templates/{sample['id']}"
+                self.assertEqual(client.get(path, params=versioned).status_code, 404)
+                self.assertEqual(client.get(path, params={**scope, 'district': '市本级'}).status_code, 404)
+                query = {**versioned, 'template_id': sample['id'], 'kind': 'application'}
+                self.assertEqual(client.get('/regional/form-contract', params=query).status_code, 409)
+                self.assertEqual(client.post('/regional/generate', json={**query, 'mode':'blank', 'data':{}}).status_code, 409)

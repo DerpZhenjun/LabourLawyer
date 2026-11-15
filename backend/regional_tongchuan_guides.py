@@ -18,6 +18,9 @@ MUNICIPAL_PROOF_SHA256 = '4a17fb18bfcd0fc6c53724a87266677bb66a2d29c61192abc106de
 MUNICIPAL_URL = 'https://rs.tongchuan.gov.cn/micro/onlineItemDetail.jspx?saa004=00000283'
 MUNICIPAL_SOURCE_VERSION = 'c5ae6fd988596088b3412c177c26f198846f089f372e528a2158d486f3b6e1d7'
 
+YIJUN_PROOF = Path('reports/overnight-gap-closure-20261030/localities/tongchuan-yijun-worker/SOURCE-PROOF.json')
+YIJUN_PROOF_SHA256 = '355bad8498f22c7a00bf57b016c0c44115e4d05cf100da6d09c8aff130046650'
+
 
 def _read_proof(root, source_file, checksum):
     source = Path(ROOT if root is None else root).resolve()
@@ -70,4 +73,12 @@ def staged_municipal_guide(root=None):
     guide['source_id'] = digest(guide['source_url'])[:24]
     if not exact_municipal(guide):
         raise ValueError('铜川市本级办理说明与当地来源不匹配')
+    return guide
+
+
+def staged_yijun_guide(root=None):
+    guide = _read_proof(root, YIJUN_PROOF, YIJUN_PROOF_SHA256)['guide']
+    if (guide['city'], guide['district'], guide['region_code']) != ('铜川市', '宜君县', '610222'):
+        raise ValueError('宜君县简版指南与办理地区不匹配')
+    guide['source_id'] = digest(guide['source_url'])[:24]
     return guide
