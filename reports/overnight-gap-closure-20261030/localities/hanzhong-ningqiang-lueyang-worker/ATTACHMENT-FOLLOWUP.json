@@ -1,0 +1,54 @@
+{
+  "region_code": "610727",
+  "region_name": "略阳县",
+  "authority": "略阳县人力资源和社会保障局",
+  "verification_date": "2026-11-15",
+  "department_catalog": "https://zwfw.hanzhong.gov.cn/lueyang/department/itemlist?code=11610727016044462N",
+  "public_guides": [
+    {
+      "role": "worker",
+      "url": "https://zwfw.hanzhong.gov.cn/lueyang/icity/proinfo/indexSimple?code=db398b8a59ada537b50c5d30e5f33063",
+      "observed_at": "2026-11-15T10:44:18.775299+00:00",
+      "download_receipt_sha256": "ad64c60811aa5bea2e5331b2bd5c97cdcd448389bf2965daacbe9bc09e16a073"
+    },
+    {
+      "role": "employer",
+      "url": "https://zwfw.hanzhong.gov.cn/lueyang/icity/proinfo/indexSimple?code=132ca87678606b28881b797a3ea2095d",
+      "observed_at": "2026-11-15T10:42:16.986462+00:00",
+      "page_sha256": "51394efc616f3150d5f25f704b3322fe57a002e00905e176cb96faea701f8df3",
+      "download_receipt_sha256": "94b78507bf43c9bac3fd7d8a1b62519f6ac06e19d6a4a443ee9aa471a45a4bed"
+    }
+  ],
+  "department_dom_sha256": "61a27d4c868fa4f9958372a164473a4b620682cee99cabe85face673dfc6510b",
+  "attachments": [
+    {
+      "kind": "application",
+      "official_label": "空表下载",
+      "official_filename": "仲裁申请书模板.doc",
+      "sha256": "8724359e3a7e8659a4febd4cd79d11ffe22ad71f85e23ead9c3ae832b12e6ae9",
+      "bytes": 26624,
+      "downloaded_from_both_guides_and_bytes_match": true,
+      "word_pages": 2,
+      "application_layout_role": "worker",
+      "printed_receiver": "略阳县人事劳动争议仲裁委员会",
+      "finding": "第一页为劳动者申请人和用人单位被申请人的填写式，第二页为材料说明。保留原说明，按劳动者范围评估后续填写。用人单位申请书版式仍待该角色的独立原件核验。"
+    },
+    {
+      "kind": "authorization",
+      "official_label": "空表下载",
+      "official_filename": "授权委托书.doc",
+      "sha256": "1c2fa2fa3eec5aca46da5e5b8c0e94c753b07a80b133e2a17f2d2c166aa17e6d",
+      "bytes": 28672,
+      "downloaded_from_both_guides_and_bytes_match": true,
+      "word_pages": 2,
+      "word_pages_identical": true,
+      "receiver_field": "blank",
+      "finding": "两页版式和内容逐字节渲染一致。受理机构栏及委托人与受托人的签署栏留空，正式适配需保留原版式及签署空白。"
+    }
+  ],
+  "related_materials": {
+    "employer_organization_document": "空表入口提供证件样本.jpg，按样本记录。",
+    "employer_employment_relationship": "空表入口列出两张劳动合同样本图片，正文未复核。"
+  },
+  "content_review": "Actual download and Word visual review complete for the two pinned documents. No generation changes in this record."
+}
