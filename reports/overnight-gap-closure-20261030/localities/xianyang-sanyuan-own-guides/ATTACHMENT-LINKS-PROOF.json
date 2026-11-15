@@ -1,0 +1,31 @@
+{
+  "region_code": "610422",
+  "guide_proof_sha256": "6e23016effd4382181d94b1aeeadef2ef74642eb63948f9aa95bc4c161ebcb41",
+  "reviewed_at": "2026-11-15T23:15:43Z",
+  "attachments": [
+    {
+      "id": "xianyang-610422-worker-application",
+      "official_name": "仲裁申请书（劳动者）",
+      "official_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0A/C0/rBIxVGCnJZSABzZ8AAA-i427WVo79.docx",
+      "guide_source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1116001147713&siteCode=610422000000",
+      "official_sha256": "b2781e80d301afa6b80b56ba1c7616741e0b94f2a8528980e7942700583052be",
+      "format": "DOCX"
+    },
+    {
+      "id": "xianyang-610422-employer-application",
+      "official_name": "仲裁申请书（用人单位，按原件说明调整）",
+      "official_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0B/65/rBIxVGCngG2AMhJRAAA-i427WVo36.docx",
+      "guide_source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1118123147108&siteCode=610422000000",
+      "official_sha256": "b2781e80d301afa6b80b56ba1c7616741e0b94f2a8528980e7942700583052be",
+      "format": "DOCX"
+    },
+    {
+      "id": "xianyang-610422-worker-evidence-list",
+      "official_name": "证据清单（劳动者）",
+      "official_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1D/87/rBIxU2CncSWAKKT9AAA31C8BwRE34.docx",
+      "guide_source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1116001147713&siteCode=610422000000",
+      "official_sha256": "e572247a5ec3c63bfd7b4d97e53c0324e1246f5b02523bca57ec95a31abf2bf1",
+      "format": "DOCX"
+    }
+  ]
+}

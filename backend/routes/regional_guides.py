@@ -106,6 +106,7 @@ from regional_weinan_municipal_guides import exact_municipal as exact_weinan_mun
 from regional_yulin_municipal_guides import exact_municipal as exact_yulin_municipal
 from regional_xianyang_municipal_guides import exact_municipal as exact_xianyang_municipal
 from regional_xianyang_municipal_attachments import with_xianyang_official_attachments
+from regional_xianyang_sanyuan_attachments import with_sanyuan_official_attachments
 from regional_baoji_evidence import (
     ADAPTER as BAOJI_EVIDENCE_ADAPTER, LAYOUT as BAOJI_LAYOUT, LAYOUT_ORIGIN as BAOJI_LAYOUT_ORIGIN,
     BaojiEvidenceRequest, checked_adapter as checked_baoji_evidence_adapter,
@@ -224,6 +225,7 @@ def lookup(province: str=Query(max_length=30),city: str=Query(max_length=80),dis
         guide = with_local_workbooks(guide, ROOT)
     guide = with_official_attachments(guide, ROOT)
     guide = with_xianyang_official_attachments(guide, ROOT)
+    guide = with_sanyuan_official_attachments(guide, ROOT)
     templates = guide['templates']
     collective = any(template.get('case_scope') == 'collective' for template in templates)
     if case_scope and not collective:
