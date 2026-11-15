@@ -1,0 +1,165 @@
+{
+  "region_code": "610525",
+  "city": "渭南市",
+  "district": "澄城县",
+  "authority": "澄城县人力资源和社会保障局",
+  "official_home": "https://www.chengcheng.gov.cn/",
+  "official_home_sha256": "298feeee2e6c837021c7b2801378c64f052483ad3e524312d0da32a4854f5f32",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610525000000",
+  "department_code": "11610525010815561H",
+  "consultation_phone": "0913-6866135",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1117947253932&siteCode=610525000000",
+      "collected_at": "2026-11-15T16:48:55.151Z",
+      "raw_receipt_sha256": "21bc0ec7a6adb720e74d228784473b9324ff61978c6fc3d3b13b4071178e0641",
+      "office": "陕西省渭南市澄城县 西大街13号(人力资源大楼)澄城县人力资源和社会保障局(办理窗口:劳动仲裁)",
+      "commitment_workdays": 0,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0C/AD/rBIxVGCrX6uAdkUcAAAuAOYvnCA900.doc",
+              "sha256": "d281ff7ea485e01ad4692ec162fbc848857d430f5ac60262d0a8fa913e055f87",
+              "captured_at": "2026-11-15T16:49:26.2481124Z"
+            }
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1E/F3/rBIxU2CrYB-AelGhAAAuAOYvnCA186.doc",
+              "sha256": "d281ff7ea485e01ad4692ec162fbc848857d430f5ac60262d0a8fa913e055f87",
+              "captured_at": "2026-11-15T16:49:26.4332014Z"
+            }
+          ]
+        },
+        {
+          "key": "relationship",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1E/F4/rBIxU2CrYFSADY0BAAAuAOYvnCA858.doc",
+              "sha256": "d281ff7ea485e01ad4692ec162fbc848857d430f5ac60262d0a8fa913e055f87",
+              "captured_at": "2026-11-15T16:49:26.7028761Z"
+            }
+          ]
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "非必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0C/B0/rBIxVGCrYJWAcDOpAABqAKrC9eM098.doc",
+              "sha256": "d0187655bef913ea953a8f2fee0ee1c2778ac59379faa5e6bc822125ecfb6ad9",
+              "captured_at": "2026-11-15T16:49:26.9449063Z"
+            }
+          ]
+        },
+        {
+          "key": "employment-permit",
+          "name": "外国人就业证",
+          "required": "必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1E/F5/rBIxU2CrYOWAfooFAAAuAOYvnCA611.doc",
+              "sha256": "d281ff7ea485e01ad4692ec162fbc848857d430f5ac60262d0a8fa913e055f87",
+              "captured_at": "2026-11-15T16:49:27.1920939Z"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1116580223067&siteCode=610525000000",
+      "collected_at": "2026-11-15T16:48:55.389Z",
+      "raw_receipt_sha256": "810cc5c9527d10d25545681b06cb34d3f988fd925fc2e2d3394667056a35f5d6",
+      "office": "陕西省渭南市澄城县 宝塔路与青正街交叉路口往西北约50米(澄城县政府东南侧约50米)澄城县人力资源市场(办理窗口:劳动仲裁)",
+      "commitment_workdays": 0,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1E/B4/rBIxU2CrSeCAMqqSAAAuAPHQ7mA148.doc",
+              "sha256": "5b0548712812af99641623369745765e82f64321b5c6043f27d6f52072933efa",
+              "captured_at": "2026-11-15T16:49:27.4595499Z"
+            }
+          ]
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0C/70/rBIxVGCrSjCAYTSeAAAuAPHQ7mA373.doc",
+              "sha256": "5b0548712812af99641623369745765e82f64321b5c6043f27d6f52072933efa",
+              "captured_at": "2026-11-15T16:49:27.7429705Z"
+            }
+          ]
+        },
+        {
+          "key": "relationship",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0C/75/rBIxVGCrTGOAYXkOAABaALkY_Yk465.doc",
+              "sha256": "892f00882dc6e576451c7c33972a42c6c1d8fbe495887982f79cb13a8770d410",
+              "captured_at": "2026-11-15T16:49:28.0276507Z"
+            }
+          ]
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "非必要",
+          "attachments": [
+            {
+              "label": "样表",
+              "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1E/B8/rBIxU2CrTAKAR_DBAABqAKrC9eM448.doc",
+              "sha256": "d0187655bef913ea953a8f2fee0ee1c2778ac59379faa5e6bc822125ecfb6ad9",
+              "captured_at": "2026-11-15T16:49:28.2621944Z"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "attachment_count": 9,
+  "unique_attachment_sha_count": 4,
+  "proof_of_blanks": false,
+  "attachment_receipt_sha256": "7fdfe8835008f0e01989a505c101470acc94714044d2a68ffebe0aa09f28034e",
+  "static_preflight_sha256": "bba4c587ab1ebf0f0b83ec922454f8dee46a0f53f2561337ae5361463e5e8b25",
+  "word_pages": {
+    "worker_application_sample": 1,
+    "employer_application_sample": 1,
+    "employer_relationship_sample": 2
+  },
+  "word_receipt_sha256": "ee044cf7266c42c1c35a872a0ec03616448b4f2791e5157daa4a844e839c4dae",
+  "word_content_receipt_sha256": "514f20386327fd083daf018983e828bc0c28275f86975e303c8454f299858bbc",
+  "worker_application_same_bytes_as_identity_relationship_employment_permit": true,
+  "employer_application_same_bytes_as_qualification": true,
+  "proxy_samples_passed_static_preflight": false
+}
