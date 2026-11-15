@@ -1,0 +1,133 @@
+{
+  "region_code": "610582",
+  "city": "渭南市",
+  "district": "华阴市",
+  "authority": "华阴市人力资源和社会保障局",
+  "official_home": "https://www.huayin.gov.cn/",
+  "official_home_sha256": "5281012b4d25770362ed84a971ad24c74996be6566185f865a28e14a06a3b572",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610582000000",
+  "department_code": "1161058201602690XR",
+  "consultation_phone": "0913-4622203",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1110122129972&siteCode=610582000000",
+      "collected_at": "2026-11-15T17:24:09.552Z",
+      "raw_receipt_sha256": "bcaef26c08e6b0c48e919d9d6bdb569e57971da909fa333bdb225f830dad2868",
+      "office": "陕西省渭南市华阴市太华路街道 太华路与贵妃路交叉路口往北约100米(华阴市人民医院西南侧约50米)华阴市人力资源和社会保障局(办理窗口:仲裁院)",
+      "commitment_workdays": 3,
+      "materials": [
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "attachment": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "8eba14b56979cb166fde4dd9f9e1415dde3a9769f31d1dddeb5d42e4b149fe64",
+            "captured_at": "2026-11-15T17:24:35.2328968Z"
+          }
+        },
+        {
+          "key": "relationship",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "attachment": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "1e7e6567c51dad89a259b10caad4673cf24f5f770efd5466d5969cb1f5143864",
+            "captured_at": "2026-11-15T17:24:36.4515710Z"
+          }
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "attachment": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "c113ce4ee2c8b5c4b6890d953a30ae15d152eb644e59cbc7421920bc2f4936ac",
+            "captured_at": "2026-11-15T17:24:37.9906001Z"
+          }
+        },
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachment": {
+            "label": "空表",
+            "format": "DOC",
+            "sha256": "67e9fc2611a2ebf9e10e31798e96a709bfea7c42a287eb5ae3508ee3f20dcbf9",
+            "captured_at": "2026-11-15T17:24:38.2307009Z"
+          }
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1117580130162&siteCode=610582000000",
+      "collected_at": "2026-11-15T17:24:09.788Z",
+      "raw_receipt_sha256": "42b0f6d609b3b5225cf0522d76d258001e1e8b34cca7bdb757899d102bf9e58e",
+      "office": "陕西省渭南市华阴市太华路街道 太华路与贵妃路交叉路口往北约100米(华阴市人民医院西南侧约50米)华阴市人力资源和社会保障局(办理窗口:仲裁院)",
+      "commitment_workdays": 3,
+      "materials": [
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "attachment": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "8eba14b56979cb166fde4dd9f9e1415dde3a9769f31d1dddeb5d42e4b149fe64",
+            "captured_at": "2026-11-15T17:24:38.5380434Z"
+          }
+        },
+        {
+          "key": "relationship",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "attachment": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "1e7e6567c51dad89a259b10caad4673cf24f5f770efd5466d5969cb1f5143864",
+            "captured_at": "2026-11-15T17:24:39.2654981Z"
+          }
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "attachment": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "f06e5a8db2d943f145486258b07d5c7168be7b4e4e70f9ff440ce3d6d878d4ce",
+            "captured_at": "2026-11-15T17:24:40.3050406Z"
+          }
+        },
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachment": {
+            "label": "空表",
+            "format": "DOC",
+            "sha256": "67e9fc2611a2ebf9e10e31798e96a709bfea7c42a287eb5ae3508ee3f20dcbf9",
+            "captured_at": "2026-11-15T17:24:40.5343907Z"
+          }
+        }
+      ]
+    }
+  },
+  "attachment_count": 8,
+  "distinct_attachment_sha_count": 5,
+  "attachment_receipt_sha256": "26abc7c4de1487959d2cad2ca188f1f482fa8036ada4e0ef591decda868eb85a",
+  "static_preflight_sha256": "d0650dd9ea9957331fae21a8327b93e75eced18c28ca472d5163ba28b10e0bae",
+  "word_receipt_sha256": "f17e2173641e3b4a229c51c4d705879c67192496dd9da3b6c32994c965afa116",
+  "word_content_marker_sha256": "4f3600e746c1afa93551d2bb53865653de0a3d577ba2dfd9d6565ba1373acad4",
+  "applicant_profile": "NATURAL_PERSON_ROLE_LAYOUT",
+  "applicant_slot_adaptation": "PENDING",
+  "employer_format_verified": false,
+  "application_doc_sha256": "67e9fc2611a2ebf9e10e31798e96a709bfea7c42a287eb5ae3508ee3f20dcbf9",
+  "application_doc_native_pages": 2,
+  "independently_verified_employee_blank_layout": true
+}
