@@ -1,0 +1,202 @@
+{
+  "region_code": "610503",
+  "city": "渭南市",
+  "district": "华州区",
+  "authority": "渭南市华州区人力资源和社会保障局",
+  "consultation_phone": "0913-4733358",
+  "official_home": "https://www.hzqu.gov.cn/",
+  "official_home_sha256": "b9f7a64f16e9d259000663c08dc5730425ea0a1f8541a39dc070a051b401ee6e",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610503000000",
+  "department_code": "116105210160277933",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1110811215226&siteCode=610503000000",
+      "collected_at": "2026-11-15T15:55:48.123Z",
+      "receipt_sha256": "a8d51ca58027aa7d884cf965e98169c369aff4fae6dbd3b59a1ed3317ea39bd9",
+      "commitment_workdays": 0,
+      "venue": "陕西省渭南市华州区杏林镇 子仪路人社局(办理窗口:二楼劳动仲裁股)",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "jpg",
+              "bytes": 2226860,
+              "sha256": "e958de848162205f428f8fc1423d2c3b2bfa70ba0183c9011c29d113367315f1"
+            },
+            {
+              "portal_label": "空表",
+              "format": "jpg",
+              "bytes": 2226860,
+              "sha256": "e958de848162205f428f8fc1423d2c3b2bfa70ba0183c9011c29d113367315f1"
+            }
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "jpg",
+              "bytes": 1603248,
+              "sha256": "4e8ed2f28c70faa8337ff9a3705444fdc60524d314ba3410effc248156a2ce9d"
+            },
+            {
+              "portal_label": "空表",
+              "format": "jpg",
+              "bytes": 1603248,
+              "sha256": "4e8ed2f28c70faa8337ff9a3705444fdc60524d314ba3410effc248156a2ce9d"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "jpg",
+              "bytes": 4255504,
+              "sha256": "5a652a00469c71ec26cc13d170830f7f408e067ee6c5d983e2c98ab614415d56"
+            },
+            {
+              "portal_label": "空表",
+              "format": "jpg",
+              "bytes": 4255504,
+              "sha256": "5a652a00469c71ec26cc13d170830f7f408e067ee6c5d983e2c98ab614415d56"
+            }
+          ]
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "doc",
+              "bytes": 15360,
+              "sha256": "35835850c262abef0162a791db0c9efaf2d4bb37d86fef1cab8f9361c90de7d1"
+            },
+            {
+              "portal_label": "空表",
+              "format": "doc",
+              "bytes": 15360,
+              "sha256": "35835850c262abef0162a791db0c9efaf2d4bb37d86fef1cab8f9361c90de7d1"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1119477206821&siteCode=610503000000",
+      "collected_at": "2026-11-15T15:55:48.359Z",
+      "receipt_sha256": "04879fc3ff092c7c9f70724649e0cd66b75e46f759d37269444ce693e9e00454",
+      "commitment_workdays": 0,
+      "venue": "陕西省渭南市华州区杏林镇 子仪路人社局二楼劳动仲裁股(办理窗口:二楼劳动仲裁股)",
+      "materials": [
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "doc",
+              "bytes": 15360,
+              "sha256": "35835850c262abef0162a791db0c9efaf2d4bb37d86fef1cab8f9361c90de7d1"
+            },
+            {
+              "portal_label": "空表",
+              "format": "doc",
+              "bytes": 15360,
+              "sha256": "35835850c262abef0162a791db0c9efaf2d4bb37d86fef1cab8f9361c90de7d1"
+            }
+          ]
+        },
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "jpg",
+              "bytes": 2226860,
+              "sha256": "e958de848162205f428f8fc1423d2c3b2bfa70ba0183c9011c29d113367315f1"
+            },
+            {
+              "portal_label": "空表",
+              "format": "jpg",
+              "bytes": 2226860,
+              "sha256": "e958de848162205f428f8fc1423d2c3b2bfa70ba0183c9011c29d113367315f1"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "jpg",
+              "bytes": 1797812,
+              "sha256": "9a8d6f1f80256c96559e541debd1d12cfdec5a8299c45cefde361485f4dff260"
+            },
+            {
+              "portal_label": "空表",
+              "format": "doc",
+              "bytes": 12800,
+              "sha256": "d44b869f81cab1990f2f322e74be7849e195969ebe84b73c30eb5f6670ce7b28"
+            }
+          ]
+        },
+        {
+          "key": "entity",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "jpg",
+              "bytes": 2429744,
+              "sha256": "973acb6d82c68b889e25ba887e08001e6d63a19ecfd81d04eb565aeb9cea74a5"
+            },
+            {
+              "portal_label": "空表",
+              "format": "jpg",
+              "bytes": 2429744,
+              "sha256": "973acb6d82c68b889e25ba887e08001e6d63a19ecfd81d04eb565aeb9cea74a5"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "attachments": 16,
+  "sample_blank_same_bytes_pairs": 7,
+  "unique_original_hashes": 7,
+  "employer_relation_label_conflict": {
+    "expected_material": "劳动（人事）关系证明材料",
+    "word_title": "法定代表人（或主要负责人）身份证明书",
+    "original_sha256": "d44b869f81cab1990f2f322e74be7849e195969ebe84b73c30eb5f6670ce7b28"
+  },
+  "static_doc_sha256": "05bdc8b494dec5c753e811f7dafcff0d06edbe0f11d992ad7a513a8ba404dbf3",
+  "word_receipt_sha256": "6230780dad326107e8e7b9d5a98d51666bae577f9dbece3710728d87d7204a0e",
+  "word_content_markers_sha256": "6ecea3606e8454f558b308fe915e08ef74576952139bee95cacaad40bc9c4d2a",
+  "word_native_docs_pages": [
+    1,
+    1
+  ],
+  "generation_approved": false,
+  "published": false
+}
