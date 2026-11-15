@@ -82,6 +82,7 @@ from regional_hanzhong_guides import exact_municipal as exact_hanzhong_municipal
 from regional_ankang_municipal_guides import exact_municipal as exact_ankang_municipal
 from regional_shangluo_municipal_guides import exact_municipal as exact_shangluo_municipal
 from regional_weinan_municipal_guides import exact_municipal as exact_weinan_municipal
+from regional_yulin_municipal_guides import exact_municipal as exact_yulin_municipal
 from regional_baoji_evidence import (
     ADAPTER as BAOJI_EVIDENCE_ADAPTER, LAYOUT as BAOJI_LAYOUT, LAYOUT_ORIGIN as BAOJI_LAYOUT_ORIGIN,
     BaojiEvidenceRequest, checked_adapter as checked_baoji_evidence_adapter,
@@ -232,7 +233,8 @@ def areas(province: str=Query(max_length=30),city: str=Query(default='',max_leng
                 or exact_zhongshan_municipal(municipal) or exact_baoji_municipal(municipal)
                 or exact_tongchuan_municipal(municipal) or exact_hanzhong_municipal(municipal)
                 or exact_ankang_municipal(municipal) or exact_shangluo_municipal(municipal)
-                or exact_weinan_municipal(municipal)):
+                or exact_weinan_municipal(municipal)
+                or exact_yulin_municipal(municipal)):
             city_row = next((
                 row for row in directory.areas(province) if row['city'] == city and row['level'] == 3
                 and row['code'] == code and not row['district']

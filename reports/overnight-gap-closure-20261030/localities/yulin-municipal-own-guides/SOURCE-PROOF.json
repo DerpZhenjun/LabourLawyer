@@ -1,0 +1,148 @@
+{
+  "region_code": "610800",
+  "city": "榆林市",
+  "district": "市本级",
+  "authority": "榆林市人社局",
+  "official_home": "https://www.yl.gov.cn/",
+  "official_home_sha256": "4dc0e6b697f64a7da4a4ab63f289049b2b3fa57ad27f09589eef8e553f0ad3e4",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610800000000",
+  "department_code": "11610800MB2900934W",
+  "consultation_phone": "0912-3859555",
+  "commitment_workdays": 0,
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114310220443&siteCode=610800000000",
+      "collected_at": "2026-11-15T17:52:11.506Z",
+      "raw_receipt_sha256": "866233ea02f8089395844507bbdc6f82fd23038474728e60a62b53d375833397",
+      "office": "陕西省榆林市榆阳区航宇路街道 明珠大道辅路(办理窗口:榆林市高新区榆溪大道劳动保障大厦2楼205室)",
+      "materials": [
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPG",
+              "sha256": "f2c08918ca8086403d88da633534c8d0b06682205ded2288e5328863fb4f222c",
+              "captured_at": "2026-11-15T17:52:46.8394507Z"
+            }
+          ],
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": 1
+        },
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOC",
+              "sha256": "977298b4fab5b24978763f29512d44ffe054fff6f5829f6d6f450bdad9b2a7ad",
+              "captured_at": "2026-11-15T17:52:47.0806111Z"
+            }
+          ],
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": 3
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOCX",
+              "sha256": "5d29fc7d056263bb6d24e0f3a8c756ff44c0b1ac9f59ac87a0e7a3da7b973d94",
+              "captured_at": "2026-11-15T17:52:47.2562484Z"
+            }
+          ],
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": 1
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1115339238904&siteCode=610800000000",
+      "collected_at": "2026-11-15T17:52:11.736Z",
+      "raw_receipt_sha256": "47dc4c59545f65e10b181aeccb392d83d22eed4cf2ac9fa2caa1c65af0be738f",
+      "office": "陕西省榆林市榆阳区航宇路街道 明珠大道辅路(办理窗口:榆林市高新区榆溪大道劳动保障大厦2楼205室)",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOC",
+              "sha256": "977298b4fab5b24978763f29512d44ffe054fff6f5829f6d6f450bdad9b2a7ad",
+              "captured_at": "2026-11-15T17:52:47.4848240Z"
+            }
+          ],
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": 3
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOCX",
+              "sha256": "5d29fc7d056263bb6d24e0f3a8c756ff44c0b1ac9f59ac87a0e7a3da7b973d94",
+              "captured_at": "2026-11-15T17:52:47.6855548Z"
+            }
+          ],
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": 1
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表1",
+              "format": "DOCX",
+              "sha256": "b821609e36f0055a466a71e74d0f6162fc5b5d6b55b222cdede7365c83f56bf8",
+              "captured_at": "2026-11-15T17:52:47.9433109Z"
+            },
+            {
+              "portal_label": "样表2",
+              "format": "JPG",
+              "sha256": "49a620523cad327c031e9fb8ecc86b3e081b8befcac883bf0f9ac65304451d80",
+              "captured_at": "2026-11-15T17:52:48.3398877Z"
+            }
+          ],
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": 1
+        }
+      ]
+    }
+  },
+  "attachment_count": 7,
+  "distinct_attachment_sha_count": 5,
+  "verified_blank_templates": 0,
+  "attachment_receipt_sha256": "3516c30e6e356464d57231879c8a17dd2e5c64f7a72fbc97f539b15b7c99f991",
+  "static_preflight_sha256": "5944299e9cfe51f3d830d564ecb80ef52a4201808512548b70938cf559899698",
+  "legacy_static_recheck_sha256": "2d5dd38e20017b9bfe827e7664e8e1d520be66d26d253daf14b9a73686f8f58f",
+  "native_application_receipt_sha256": "4f3c902311d9a95e65b7a0e6241204c521eda5f476fa642fdb2615806c6ca70e",
+  "application_page_markers_sha256": "9aff7c87882431b400a38e831bfeb314649bb7bcf1aad275e9481876e3f39b2d",
+  "native_docx_receipt_sha256": "4a94cdb7b86d72d02ee40a0c549ba0862ec1be3e6089e04f45a650c5b6218ce1",
+  "native_docx_marker_sha256": "bb2f91dea6c051e40aeecb7f2fbbf267f2c95883c9f93f2603435e87646e9ddb",
+  "application_sample_pages": 4,
+  "application_sample_marked_pages": 4,
+  "proxy_sample_pages": 2,
+  "qualification_docx_sample_pages": 4
+}
