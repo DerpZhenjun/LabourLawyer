@@ -1,0 +1,82 @@
+{
+  "collected_at": "2026-11-16T06:34:00+08:00",
+  "region_code": "610402",
+  "city": "咸阳市",
+  "district": "秦都区",
+  "authority": "秦都区人社局",
+  "consultation_phone": "029-32000575",
+  "complaint_phone": "029-32000571",
+  "hours": "星期一至星期五上午08:30至12:00，下午14:30至18:00（法定节假日除外）",
+  "records": {
+    "dom_sha256": "91b0c3ec5466f4159fad2a60ecfcd5146ab74e0c9df6d608d2a937fdf0b5b624",
+    "download_sha256": "2116caa95ebdba4ff403936a3b59a8b106374e6ac062a323d93b266a29de6e94",
+    "native_word_sha256": "ddfa96afd7c85f3f5e1990b6faf8ac26aff943fd7ea7fd0b038b32d1c7d09220"
+  },
+  "channel_note": "劳动者指南列网上办理、材料预审，公开按钮实测到陕西省统一身份认证，核验在登录页结束。用人单位指南列窗口办理，明确暂不支持在线办理。",
+  "attachment_note": "用人单位指南的空表申请人字段为自然人，被申请人字段为用人单位，第二页空白，此原件不适用于用人单位申请。劳动者空表写明咸阳市秦都区劳动人事争议仲裁院，原件第二页仅有日期。劳动关系证明和授权委托书只列样表。当前仅提供指南和材料核验。",
+  "venue_note": "两份指南的距离原文分别为约90米和约100米，均指向秦都区市民服务中心9015。劳动者旧版称9015立案室，用人单位旧版称9015室。",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1112926236462&siteCode=610402000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=628a333f1074ed0c2031fdd05aaa8b63&areacode=610402000000",
+      "office": "陕西省咸阳市秦都区吴家堡街道 文林路陕西财经职业技术学院西南侧约90米咸阳市秦都区市民服务中心（办理窗口：9015办公室）",
+      "handling_form": "网上办理",
+      "legal_workdays": 5,
+      "promised_workdays": 1,
+      "blank_sha256": "79ac3d0f72f6bf1d202f7d7b88781c6a31d13d1eb1b6597aafe73fec7b8de4c4",
+      "blank_source_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/23/54/rBIxU2CwbPSAe1EZAAAwAFuzS_w281.doc",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件和复印件",
+          "format": "电子和纸质",
+          "copies": "原件1份、复印件2份",
+          "required": "必要",
+          "instructions": "材料表列原件1份、复印件2份，材料详情引用《劳动人事争议仲裁办案规则》第二十九条，并提及按照被申请人人数提交副本。"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1份、复印件2份",
+          "required": "必要",
+          "instructions": "指南材料详情提及证据、证据来源及证人姓名和住所，附件标为样表。"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "instructions": "指南标为必要，同时引用《中华人民共和国劳动争议调解仲裁法》第二十四条，载明委托他人参加仲裁时提交载明委托事项和权限并由委托人签名或盖章的委托书。"
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1112022236001&siteCode=610402000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=74630d8bf8d841f61da3043615bf05b1&areacode=610402000000",
+      "office": "陕西省咸阳市秦都区吴家堡街道 文林路陕西财经职业技术学院西南侧约100米咸阳市秦都区市民服务中心（办理窗口：9015）",
+      "handling_form": "窗口办理",
+      "legal_workdays": 5,
+      "promised_workdays": 5,
+      "blank_sha256": "f08a74fdc9554977918c1542508bfd252ff2dcbdb2bac921052bd049ae944971",
+      "blank_source_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/23/D5/rBIxU2Cwv8uAINPKAAAwAPWoxX4761.doc",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件和复印件",
+          "format": "电子和纸质",
+          "copies": "原件1份、复印件2份",
+          "required": "必要",
+          "instructions": "指南要求字迹清楚、事实和理由真实。官网空表中的申请人类型与本事项不一致。"
+        }
+      ]
+    }
+  }
+}
