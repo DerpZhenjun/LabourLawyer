@@ -1,0 +1,359 @@
+{
+  "regions": {
+    "610700": {
+      "catalog_sha256": "cc478be34af979919a94241e79873bdad7481d2c22f87a4017745c8261c04201",
+      "materials_receipt_sha256": "b72f8a4e1819a5ffc867bf4ddd0a4d9c654a834fe32af4fc61f3ebf294ed9e8b",
+      "official_html_sha256": "3acd887065ff7e48e774dd3419f9173c0ccf839334d37b94e803443ae0ff7f92",
+      "guide": {
+        "province": "shaanxi",
+        "province_name": "陕西省",
+        "city": "汉中市",
+        "district": "市本级",
+        "scope_level": "municipal",
+        "region_code": "610700",
+        "authority": "汉中市人力资源和社会保障局",
+        "service_name": "劳动人事争议仲裁申请",
+        "source_title": "劳动人事争议仲裁申请（劳动者）",
+        "source_url": "https://zwfw.hanzhong.gov.cn/icity/icity/proinfo/index?code=7197a41a59b8d58586007e9567536b8b",
+        "source_version": "3acd887065ff7e48e774dd3419f9173c0ccf839334d37b94e803443ae0ff7f92",
+        "official_version": "",
+        "collected_at": "2026-11-15T08:29:27.752260+00:00",
+        "verified_at": "2026-11-15T08:43:31.336623+00:00",
+        "verification_status": "verified",
+        "published": true,
+        "can_generate": false,
+        "fields": {
+          "办理地点": "陕西省汉中市汉台区东关街道 南团结街(滨江佳园西北侧)金格大厦(办理窗口:3楼3号窗口)",
+          "办理时间": "星期一至星期五上午09:00至12:00,下午13:00至17:00(法定节假日除外)",
+          "咨询电话": "0916-2626620",
+          "办理形式": "网上办理",
+          "到办事现场次数": "0 次",
+          "咨询方式": "0916-2626620",
+          "是否收费": "不收费",
+          "必须到现场原因": "不需要跑动",
+          "服务对象": "自然人",
+          "法定办结时限": "5 工作日",
+          "承诺办结时限": "5 工作日"
+        },
+        "materials": [
+          {
+            "id": "610700-worker-1",
+            "name": "劳动人事争议仲裁申请书",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件2份",
+            "required": "必要",
+            "acceptance_standard": "（一）属于《劳动人事争议仲裁办案规则》第二条规定的争议范围； （二）有明确的仲裁请求和事实理由； （三）申请人是与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人； （四）属于本仲裁委员会管辖范围。",
+            "source_channel": "申请人自备",
+            "instructions": "根据个人实际情况准备",
+            "source_url": "https://zwfw.hanzhong.gov.cn/icity/icity/proinfo/index?code=7197a41a59b8d58586007e9567536b8b",
+            "region_code": "610700",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610700-worker-2",
+            "name": "授权委托书",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "非必要",
+            "acceptance_standard": "委托人亲笔签名或盖章",
+            "source_channel": "申请人自备",
+            "instructions": "申请人需要委托他人参与仲裁活动时提供",
+            "source_url": "https://zwfw.hanzhong.gov.cn/icity/icity/proinfo/index?code=7197a41a59b8d58586007e9567536b8b",
+            "region_code": "610700",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610700-worker-3",
+            "name": "劳动（人事）关系证明材料",
+            "material_type": "复印件",
+            "format": "纸质材料",
+            "copies": "复印件2份",
+            "required": "必要",
+            "acceptance_standard": "（一）属于《劳动人事争议仲裁办案规则》第二条规定的争议范围； （二）有明确的仲裁请求和事实理由； （三）申请人是与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人； （四）属于本仲裁委员会管辖范围。",
+            "source_channel": "申请人自备",
+            "instructions": "申请人与被申请人存在劳动人事关系的材料包括劳动合同、聘用合同、工资支付凭证或记录、工资发放花名册、各项社会保险费缴纳记录、“工作证”、“服务证”、招工招聘“登记表”、招工招聘“报名表”、考勤记录、其他劳动者证言等",
+            "source_url": "https://zwfw.hanzhong.gov.cn/icity/icity/proinfo/index?code=7197a41a59b8d58586007e9567536b8b",
+            "region_code": "610700",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610700-worker-4",
+            "name": "身份证",
+            "material_type": "复印件",
+            "format": "纸质材料",
+            "copies": "复印件1份",
+            "required": "必要",
+            "acceptance_standard": "（一）属于《劳动人事争议仲裁办案规则》第二条规定的争议范围； （二）有明确的仲裁请求和事实理由； （三）申请人是与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人； （四）属于本仲裁委员会管辖范围。",
+            "source_channel": "申请人自备",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/icity/icity/proinfo/index?code=7197a41a59b8d58586007e9567536b8b",
+            "region_code": "610700",
+            "service_object": "劳动者",
+            "attachments": []
+          }
+        ],
+        "channel": {
+          "raw_value": "全程网办",
+          "online_status": "unverified",
+          "entry_url": null,
+          "submission_verified": false
+        },
+        "sections": {
+          "申请条件": "劳动者与用人单位发生劳动人事争议时，当事人不愿调解、调解不成或者达成调解协议后不履行的，可以向劳动人事争议仲裁委员会申请仲裁。",
+          "收费标准": "不收费"
+        },
+        "warnings": [
+          "5 个工作日为本事项指南所列办结时限，请按办理机构说明核对后续仲裁审理期限。",
+          "本事项的申请书和证据目录在空表与样表入口返回相同文件，申请书含填写指引，证据目录含预填示例。",
+          "授权委托书两入口也返回相同文件。已核对收件机关及留白，可从本事项官网材料栏下载。"
+        ],
+        "templates": [
+          {
+            "id": "hanzhong-610700-application",
+            "region_code": "610700",
+            "source_url": "https://zwfw.hanzhong.gov.cn/icity/icity/proinfo/index?code=7197a41a59b8d58586007e9567536b8b",
+            "official_attachment_entry": "material_tab",
+            "original_name": "汉中市本级申请书（官方填写参考）",
+            "official_kind": "sample",
+            "file_type": "doc",
+            "official_sha256": "79281898289c7bbf95943576b72ebbbc74d683c60d8c4e8cf7bccf7893c2a92d",
+            "official_bytes": 15872,
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          },
+          {
+            "id": "hanzhong-610700-evidence",
+            "region_code": "610700",
+            "source_url": "https://zwfw.hanzhong.gov.cn/icity/icity/proinfo/index?code=7197a41a59b8d58586007e9567536b8b",
+            "official_attachment_entry": "material_tab",
+            "original_name": "汉中市本级证据目录（官方填写示例）",
+            "official_kind": "sample",
+            "file_type": "xlsx",
+            "official_sha256": "13b2d0f17d242614e8009938c897dd887522fb6851334b2aaef2b5f8eabfb0a0",
+            "official_bytes": 10675,
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          },
+          {
+            "id": "hanzhong-610700-authorization",
+            "region_code": "610700",
+            "source_url": "https://zwfw.hanzhong.gov.cn/icity/icity/proinfo/index?code=7197a41a59b8d58586007e9567536b8b",
+            "official_attachment_entry": "material_tab",
+            "original_name": "汉中市本级授权委托书（官网空表入口）",
+            "official_kind": "blank",
+            "file_type": "doc",
+            "official_sha256": "ddffc7b9cf72014d221097fd75a2895f2e7328318398ca197f45b321c4cfc933",
+            "official_bytes": 18432,
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          }
+        ]
+      },
+      "attachment_proof": {
+        "attachment_receipt_sha256": "3f2a8b9e2e93b32ccb59056953de71cb33856b0936150cc9b31fc4ab23da96ee",
+        "static_review_sha256": "2324b96f4533497b576c4eca36c95acb117f6efc8647a22aead1ef279d3ea617",
+        "exact_pairs_same_bytes": [
+          "劳动仲裁申请书模板.doc",
+          "授权委托书.doc",
+          "证据目录模板.xlsx"
+        ],
+        "word_review": {
+          "application_page_sha256": "e5b4bf16dc80f1ce9b735c7483a47f1c6080d6b9ddb286aa09608a923b3e7cdf",
+          "application_body": "field_descriptions_and_placeholder_example",
+          "authorization_page_sha256": "ab4d4a869d4750eff44bc8c5065efe76ff7ed6907b52054def6cb663a083344b",
+          "authorization_printed_committee": "汉中市劳动人事争议仲裁委员会",
+          "authorization_body": "own_printed_committee_case_agent_signature_date_blank",
+          "application_page_count": 1,
+          "authorization_page_count": 1
+        },
+        "worksheet_body": "prefilled_evidence_rows"
+      }
+    },
+    "610702": {
+      "catalog_sha256": "385f593f416fe4bda2b7680ba113595c22eea07242268470d07fb6d9b213020b",
+      "materials_receipt_sha256": "e19faeed1a014e1baf91170d9517a93464bfa683ad01046e6bc0994946f253a7",
+      "official_html_sha256": "91fe36696df88143df09e2c01bf0c5285651938f6429199472959e8c31d75ad3",
+      "guide": {
+        "province": "shaanxi",
+        "province_name": "陕西省",
+        "city": "汉中市",
+        "district": "汉台区",
+        "scope_level": "district",
+        "region_code": "610702",
+        "authority": "汉台区人力资源和社会保障局",
+        "service_name": "劳动人事争议仲裁申请",
+        "source_title": "劳动人事争议仲裁申请（劳动者）",
+        "source_url": "https://zwfw.hanzhong.gov.cn/hantaiqu/icity/proinfo/index?code=8b78d3ed826828562ac2d7d521d317b6",
+        "source_version": "91fe36696df88143df09e2c01bf0c5285651938f6429199472959e8c31d75ad3",
+        "official_version": "",
+        "collected_at": "2026-11-15T08:29:32.304101+00:00",
+        "verified_at": "2026-11-15T08:43:31.339623+00:00",
+        "verification_status": "verified",
+        "published": true,
+        "can_generate": false,
+        "fields": {
+          "办理地点": "陕西省汉中市汉台区中山街街道 建设巷7号附近汉中市工商联民主党派机关大院(办理窗口:汉台区劳动人事争议仲裁院)",
+          "办理时间": "夏令时:星期一至星期五上午08:00至12:00,下午15:00至18:00(法定节假日除外) 冬令时:星期一至星期五上午08:00至12:00,下午14:00至18:00(法定节假日除外)",
+          "咨询电话": "0916-2214767",
+          "办理形式": "窗口办理",
+          "到办事现场次数": "2 次",
+          "咨询方式": "0916-2214767",
+          "是否收费": "不收费",
+          "必须到现场原因": "需要对提供材料进行原件核验，并签字领取受理通知书或不予受理决定书",
+          "服务对象": "自然人",
+          "法定办结时限": "5 工作日",
+          "承诺办结时限": "5 工作日"
+        },
+        "materials": [
+          {
+            "id": "610702-worker-1",
+            "name": "劳动人事争议仲裁申请书",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件2份",
+            "required": "必要",
+            "acceptance_standard": "（一）属于《劳动人事争议仲裁办案规则》第二条规定的争议范围； （二）有明确的仲裁请求和事实理由； （三）申请人是与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人； （四）属于本仲裁委员会管辖范围。",
+            "source_channel": "申请人自行提供",
+            "instructions": "根据个人实际情况准备",
+            "source_url": "https://zwfw.hanzhong.gov.cn/hantaiqu/icity/proinfo/index?code=8b78d3ed826828562ac2d7d521d317b6",
+            "region_code": "610702",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610702-worker-2",
+            "name": "授权委托书",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "acceptance_standard": "委托人亲笔签名或盖章",
+            "source_channel": "申请人自备",
+            "instructions": "申请人需要委托他人参与仲裁活动时提供",
+            "source_url": "https://zwfw.hanzhong.gov.cn/hantaiqu/icity/proinfo/index?code=8b78d3ed826828562ac2d7d521d317b6",
+            "region_code": "610702",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610702-worker-3",
+            "name": "劳动（人事）关系证明材料",
+            "material_type": "复印件",
+            "format": "纸质、电子",
+            "copies": "复印件2份",
+            "required": "必要",
+            "acceptance_standard": "（一）属于《劳动人事争议仲裁办案规则》第二条规定的争议范围； （二）有明确的仲裁请求和事实理由； （三）申请人是与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人； （四）属于本仲裁委员会管辖范围。",
+            "source_channel": "申请人自备",
+            "instructions": "申请人与被申请人存在劳动人事关系的材料包括劳动合同、聘用合同、工资支付凭证或记录、工资发放花名册、各项社会保险费缴纳记录、“工作证”、“服务证”、招工招聘“登记表”、招工招聘“报名表”、考勤记录、其他劳动者证言等",
+            "source_url": "https://zwfw.hanzhong.gov.cn/hantaiqu/icity/proinfo/index?code=8b78d3ed826828562ac2d7d521d317b6",
+            "region_code": "610702",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610702-worker-4",
+            "name": "身份证",
+            "material_type": "复印件",
+            "format": "纸质材料",
+            "copies": "复印件2份",
+            "required": "必要",
+            "acceptance_standard": "（一）属于《劳动人事争议仲裁办案规则》第二条规定的争议范围； （二）有明确的仲裁请求和事实理由； （三）申请人是与本案有直接利害关系的自然人、法人或者其他组织，有明确的被申请人； （四）属于本仲裁委员会管辖范围。",
+            "source_channel": "申请人自备",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/hantaiqu/icity/proinfo/index?code=8b78d3ed826828562ac2d7d521d317b6",
+            "region_code": "610702",
+            "service_object": "劳动者",
+            "attachments": []
+          }
+        ],
+        "channel": {
+          "raw_value": "否",
+          "online_status": "unavailable",
+          "entry_url": null,
+          "submission_verified": false
+        },
+        "sections": {
+          "申请条件": "劳动者与用人单位发生劳动人事争议时，当事人不愿调解、调解不成或者达成调解协议后不履行的，可以向劳动人事争议仲裁委员会申请仲裁。",
+          "收费标准": "不收费"
+        },
+        "warnings": [
+          "5 个工作日为本事项指南所列办结时限，请按办理机构说明核对后续仲裁审理期限。",
+          "汉台区材料栏将授权委托书标为必要，填报须知为委托他人参与仲裁时提供。请按实际情况向本区办理机构核对。",
+          "本事项的申请书和证据目录在空表与样表入口返回相同文件，申请书含填写指引，证据目录含预填示例。",
+          "授权委托书两入口也返回相同文件。已核对收件机关及留白，可从本事项官网材料栏下载。"
+        ],
+        "templates": [
+          {
+            "id": "hanzhong-610702-application",
+            "region_code": "610702",
+            "source_url": "https://zwfw.hanzhong.gov.cn/hantaiqu/icity/proinfo/index?code=8b78d3ed826828562ac2d7d521d317b6",
+            "official_attachment_entry": "material_tab",
+            "original_name": "汉台区申请书（官方填写参考）",
+            "official_kind": "sample",
+            "file_type": "doc",
+            "official_sha256": "79281898289c7bbf95943576b72ebbbc74d683c60d8c4e8cf7bccf7893c2a92d",
+            "official_bytes": 15872,
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          },
+          {
+            "id": "hanzhong-610702-evidence",
+            "region_code": "610702",
+            "source_url": "https://zwfw.hanzhong.gov.cn/hantaiqu/icity/proinfo/index?code=8b78d3ed826828562ac2d7d521d317b6",
+            "official_attachment_entry": "material_tab",
+            "original_name": "汉台区证据目录（官方填写示例）",
+            "official_kind": "sample",
+            "file_type": "xlsx",
+            "official_sha256": "13b2d0f17d242614e8009938c897dd887522fb6851334b2aaef2b5f8eabfb0a0",
+            "official_bytes": 10675,
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          },
+          {
+            "id": "hanzhong-610702-authorization",
+            "region_code": "610702",
+            "source_url": "https://zwfw.hanzhong.gov.cn/hantaiqu/icity/proinfo/index?code=8b78d3ed826828562ac2d7d521d317b6",
+            "official_attachment_entry": "material_tab",
+            "original_name": "汉台区授权委托书（官网空表入口）",
+            "official_kind": "blank",
+            "file_type": "doc",
+            "official_sha256": "cc8b47a940a500b940c460c61e4692761bc0cdf9791042a94ee2a9ee4d392ce8",
+            "official_bytes": 18432,
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          }
+        ]
+      },
+      "attachment_proof": {
+        "attachment_receipt_sha256": "a15f5111280e0e94e0780997e76c4f628503ffd756c9b5a52ce13b37bdbda69b",
+        "static_review_sha256": "2324b96f4533497b576c4eca36c95acb117f6efc8647a22aead1ef279d3ea617",
+        "exact_pairs_same_bytes": [
+          "劳动仲裁申请书模板.doc",
+          "授权委托书.doc",
+          "证据目录模板.xlsx"
+        ],
+        "word_review": {
+          "application_page_sha256": "e5b4bf16dc80f1ce9b735c7483a47f1c6080d6b9ddb286aa09608a923b3e7cdf",
+          "application_body": "field_descriptions_and_placeholder_example",
+          "authorization_page_sha256": "10c25393f6ac3ad9adfb7db9ec47cf4411704029a2f98f3a6f20225f850a355e",
+          "authorization_printed_committee": "汉中市汉台区劳动人事争议仲裁委员会",
+          "authorization_body": "own_printed_committee_case_agent_signature_date_blank",
+          "application_page_count": 1,
+          "authorization_page_count": 1
+        },
+        "worksheet_body": "prefilled_evidence_rows"
+      }
+    }
+  }
+}
