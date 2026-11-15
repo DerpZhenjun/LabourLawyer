@@ -1,0 +1,146 @@
+{
+  "area": {
+    "province": "陕西省",
+    "city": "安康市",
+    "district": "汉阴县",
+    "region_code": "610921",
+    "official_portal_site_code": "610921000000",
+    "authority": "汉阴县人力资源和社会保障局",
+    "department_code": "11610921016051320C"
+  },
+  "official_navigation": {
+    "county_home": "https://www.hanyin.gov.cn/",
+    "county_home_sha256": "9eaa17becd2bb5a4dd990ceb1f57cf294cb4997eff60913b9b96e32dcb1d4a26",
+    "department_roles": "https://www.hanyin.gov.cn/Content-2321800.html",
+    "department_roles_sha256": "969343244a4d985701b825dee1386dfe8466fc7fe020571428c2988cbf279569",
+    "county_catalog": "https://zwfw.shaanxi.gov.cn/pc/#/c/service?type=1&siteCode=610921000000",
+    "department_results_url": "https://zwfw.shaanxi.gov.cn/pc/#/c/department?siteCode=610921000000&deptCode=11610921016051320C&deptName=%E6%B1%89%E9%98%B4%E5%8E%BF%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E5%92%8C%E7%A4%BE%E4%BC%9A%E4%BF%9D%E9%9A%9C%E5%B1%80",
+    "department_results_sha256": "3630a691c7cf0954d3d8eb78fb6eadb64f95b4778542e695ef61c0dacda8a60e"
+  },
+  "worker": {
+    "guide_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1119159132100&siteCode=610921000000",
+    "guide_sha256": "77d8b2d823680001f52df20553daced6de4b658b644e6de6569bf2ea8c61b3e9",
+    "observed_at": "2026-11-15T11:39:44.138Z",
+    "role": "劳动者",
+    "guide_title": "劳动人事争议仲裁申请（劳动者）",
+    "venue": "陕西省安康市汉阴县城关镇汉阴县政务大厅，汉阴县人力资源和社会保障局劳动仲裁股",
+    "commitment_working_days": 3,
+    "materials": [
+      {
+        "name": "劳动人事争议仲裁申请书",
+        "required": "必要",
+        "public_labels": [
+          "空表"
+        ]
+      },
+      {
+        "name": "身份证",
+        "required": "必要",
+        "public_labels": [
+          "样表"
+        ]
+      },
+      {
+        "name": "劳动（人事）关系证明材料",
+        "required": "必要",
+        "public_labels": [
+          "空表"
+        ]
+      },
+      {
+        "name": "授权委托书",
+        "required": "非必要",
+        "public_labels": [
+          "样表"
+        ]
+      }
+    ],
+    "blank": {
+      "label": "空表",
+      "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/22/F5/rBIxU2CwOPeAR31xAABCAGiKLlY708.doc",
+      "downloaded_at": "2026-11-15T19:39:25.5836319+08:00",
+      "bytes": 16896,
+      "sha256": "e4ce4845bb1d7c0bdfd9ab0e1f925b1337f454318a8f27ca92a46f2beab998a0",
+      "kind": "blank",
+      "format": "DOC",
+      "word_native_pages": 1,
+      "recipient_on_form": "劳动争议仲裁委员会（前缀留空）",
+      "signature_and_date": "manual",
+      "request_rows": 3,
+      "facts_and_evidence_rows": 3,
+      "includes_note_for_attaching_extra_pages": true,
+      "page_sha256": [
+        "41ca58b2c26f51bfe35b9def1e8a6fb41ff9c1e296fd3da3591f1e1bb6e1b686"
+      ],
+      "converted_private_layout_sha256": "891d211ef70c7d17d97de7d8c2b9761d9f849d59a751767dc8d17ede97421683"
+    }
+  },
+  "employer": {
+    "guide_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1119569132603&siteCode=610921000000",
+    "guide_sha256": "8022cccb8ad0c576e3fd4f75b4152e4608aafbd1eebba1c98021e8d55cc74b2e",
+    "observed_at": "2026-11-15T11:39:44.383Z",
+    "role": "用人单位",
+    "guide_title": "劳动人事争议仲裁申请（用人单位）",
+    "venue": "陕西省安康市汉阴县城关镇民主街104号汉阴县人力资源和社会保障局，劳动仲裁办公室",
+    "commitment_working_days": 5,
+    "materials": [
+      {
+        "name": "劳动人事争议仲裁申请书",
+        "required": "必要",
+        "public_labels": [
+          "空表"
+        ]
+      },
+      {
+        "name": "主体资格证明材料",
+        "required": "必要",
+        "public_labels": [
+          "空表"
+        ]
+      },
+      {
+        "name": "劳动（人事）关系证明材料",
+        "required": "必要",
+        "public_labels": [
+          "空表"
+        ]
+      },
+      {
+        "name": "授权委托书",
+        "required": "非必要",
+        "public_labels": [
+          "空表"
+        ]
+      }
+    ],
+    "application_attachment_role": "worker_application_identical_to_worker_guide",
+    "application_attachment_sha256": "e4ce4845bb1d7c0bdfd9ab0e1f925b1337f454318a8f27ca92a46f2beab998a0",
+    "employer_application_blank_verified": false
+  },
+  "other_attachments": {
+    "relationship": {
+      "actual_role": "labor_contract_material",
+      "word_native_pages": 12,
+      "sha256": "d590aa0fbb4056b1e892ee7530f2bec15edb67b1d72af0a676e0a0012b0b5d91",
+      "same_in_both_guides": true
+    },
+    "entity_qualification": {
+      "actual_role": "legal_representative_identity_certificate_material",
+      "word_native_pages": 1,
+      "sha256": "d46e03be44615b14071af01c29310894c2f6394e9982453620157b9e4dc2830e"
+    },
+    "authorization": {
+      "actual_role": "county_addressed_blank_fields_with_conflicting_portal_labels",
+      "recipient": "汉阴县劳动人事争议仲裁委员会",
+      "worker_label": "样表",
+      "employer_label": "空表",
+      "sha256": "d718b8afd8329995427773edc3d8c1c9f0a36c4dda232b3bfd62fb15b86ab943",
+      "word_native_pages": 1,
+      "same_in_both_guides": true,
+      "page_sha256": "42eedd4bfcfdb3a8ca4548202488a609a6542f911aef85591b4dff5f6355d68a",
+      "generation_verified": false
+    }
+  },
+  "attachment_receipts_sha256": "3c45690abf1f09ac1558c474619081220bb8269a50b7def9470dbe1a37ce8352",
+  "state": "OWN_WORKER_GUIDE_AND_BLANK_VERIFIED_ADAPTER_PENDING"
+}
