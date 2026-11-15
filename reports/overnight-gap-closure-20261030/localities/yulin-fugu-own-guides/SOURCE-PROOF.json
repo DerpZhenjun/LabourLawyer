@@ -1,0 +1,73 @@
+{
+  "city": "榆林市",
+  "district": "府谷县",
+  "region_code": "610822",
+  "authority": "府谷县人社局",
+  "consultation_phone": "0912-8711637",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610822000000",
+  "department_portal": "https://zwfw.shaanxi.gov.cn/pc/#/c/department?siteCode=610822000000&deptCode=11610822016085387M&deptName=%E5%8E%BF%E4%BA%BA%E7%A4%BE%E5%B1%80",
+  "department_code": "11610822016085387M",
+  "attachment_receipt_sha256": "5c6fbf32efa331e72bb376681f99ae77c1b780c1be9eed3c81c61f3b9e44d89f",
+  "static_preflight_sha256": "342879c22e662e004bdab110f94f4ffd7aed270694f8f33b0312d45fa5fe55e5",
+  "static_diagnostic_sha256": "41f2173987051e7810f745a8f027140e34369a8f3c8ed6fc8194f742e53f320f",
+  "application_content_review": {
+    "portal_label": "样表",
+    "sha256": "ecdd04d0227ea3baeeec8cba5f15adeec2a94923fd4cfdd370a2f7c0ae9a57c8",
+    "both_roles_same_bytes": true,
+    "word_review": "held_unclassified_nonempty_data_stream"
+  },
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1118917293804&siteCode=610822000000",
+      "collected_at": "2026-11-15T18:51:50.345Z",
+      "raw_receipt_sha256": "5077f15226c66a9c10ecc5aca3f2f4da509166aafd238108314e725cdaa90a7f",
+      "office": "陕西省榆林市府谷县府谷镇 黄河路(办理窗口:府谷县新区人社大楼503)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOC",
+              "sha256": "ecdd04d0227ea3baeeec8cba5f15adeec2a94923fd4cfdd370a2f7c0ae9a57c8",
+              "captured_at": "2026-11-15T18:52:25.510994+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1119938323554&siteCode=610822000000",
+      "collected_at": "2026-11-15T18:51:50.598Z",
+      "raw_receipt_sha256": "12715ad172b7c7213b48d9726fc49e116e67a58d78b07574c6890ac52fec7cb1",
+      "office": "陕西省榆林市府谷县府谷镇 黄河路(办理窗口:府谷县新区人社大楼503)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOC",
+              "sha256": "ecdd04d0227ea3baeeec8cba5f15adeec2a94923fd4cfdd370a2f7c0ae9a57c8",
+              "captured_at": "2026-11-15T18:52:25.679998+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
