@@ -1,0 +1,206 @@
+{
+  "city": "榆林市",
+  "district": "米脂县",
+  "region_code": "610827",
+  "authority": "米脂县人力资源和社会保障局",
+  "consultation_phone": "0912-6221515",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610827000000",
+  "department_portal": "https://zwfw.shaanxi.gov.cn/pc/#/c/department?siteCode=610827000000&deptCode=11610827797902414W&deptName=%E5%8E%BF%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E5%92%8C%E7%A4%BE%E4%BC%9A%E4%BF%9D%E9%9A%9C%E5%B1%80",
+  "department_code": "11610827797902414W",
+  "attachment_receipt_sha256": "146604b414599c8c52a12ea49c73f442299e5715d7849cc5bc0812895cfa307b",
+  "static_preflight_sha256": "a4b039dc647f030aaf4fccf9fbe3fd6e6bad15d062a0d320e7d880af86b1c1f4",
+  "static_document_content_sha256": "c168fbc3de244ee05d6006478d2d5273c5881f52b43c95d1df8d1f1e5a072480",
+  "static_form_structure_sha256": "d5d856123b6339d6ce5e77484b8e88693580ced1f3aed6b1ca4bcbf753d76d26",
+  "static_binding_diagnostic_sha256": "bbb49b75d3d512c27fed85567cba35b3c8e33474cab402495c18a2304a20faf7",
+  "attachment_review": {
+    "worker_application_portal_blank_sha256": "89e9761637793594f48b5831dcf003070a4c4d7278e4f0fea07df4118f060951",
+    "employer_application_blank_and_sample_same_as_worker_portal_blank": true,
+    "labor_relation_blank_and_sample_match_worker_application_sample": true,
+    "employment_permit_doc_has_same_text_as_worker_application_portal_blank": true,
+    "authorization_blank_and_sample_same_bytes_for_both_roles": true,
+    "request_and_facts_slots_present": true,
+    "worker_role_layout_review": "pending",
+    "original_docx_native_review": "held_custom_xml",
+    "verified_blank_templates": 0
+  },
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1110885133917&siteCode=610827000000",
+      "collected_at": "2026-11-15T19:15:04.472Z",
+      "raw_receipt_sha256": "9281754184990dd9cb4b85704e5d04770509f58723980b833af094f7059376ca",
+      "office": "陕西省榆林市米脂县 银州镇西下巷25号米脂县人民政府(办理窗口:3号楼117)",
+      "commitment_workdays": 0,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件3 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOCX",
+              "sha256": "549469381b894ad87b07e5d15541fc8b7f057685876aa6bd4038146d6634ab02",
+              "captured_at": "2026-11-15T19:15:59.268096+00:00"
+            },
+            {
+              "portal_label": "空表",
+              "format": "DOCX",
+              "sha256": "89e9761637793594f48b5831dcf003070a4c4d7278e4f0fea07df4118f060951",
+              "captured_at": "2026-11-15T19:15:59.464044+00:00"
+            }
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件3 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "a8c27782bcddbbe584c10f0e6185054bdceae8bd6ac061fcec78e8afb2dcad1b",
+              "captured_at": "2026-11-15T19:15:59.715272+00:00"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件3 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOCX",
+              "sha256": "549469381b894ad87b07e5d15541fc8b7f057685876aa6bd4038146d6634ab02",
+              "captured_at": "2026-11-15T19:15:59.970118+00:00"
+            },
+            {
+              "portal_label": "空表",
+              "format": "DOCX",
+              "sha256": "549469381b894ad87b07e5d15541fc8b7f057685876aa6bd4038146d6634ab02",
+              "captured_at": "2026-11-15T19:16:00.153674+00:00"
+            }
+          ]
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件3 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOCX",
+              "sha256": "e413c5e06158cfdc1c7c845379237819f309f1b713e041d244bae3e79201e6c3",
+              "captured_at": "2026-11-15T19:16:00.302784+00:00"
+            },
+            {
+              "portal_label": "空表",
+              "format": "DOCX",
+              "sha256": "e413c5e06158cfdc1c7c845379237819f309f1b713e041d244bae3e79201e6c3",
+              "captured_at": "2026-11-15T19:16:00.516292+00:00"
+            }
+          ]
+        },
+        {
+          "key": "employment-permit",
+          "name": "外国人就业证",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件3 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOCX",
+              "sha256": "6b8c0d0116efa90711c289ec3362ab0c0a45db696f730df2ad20a39ddb3bc699",
+              "captured_at": "2026-11-15T19:16:00.729327+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1117723134749&siteCode=610827000000",
+      "collected_at": "2026-11-15T19:15:04.706Z",
+      "raw_receipt_sha256": "cc40db0f7dab89b7c4f1c73c3f2495c9ba0e791b1daa607ff274b70e4da5e719",
+      "office": "陕西省榆林市米脂县 银州镇西下巷25号米脂县人民政府(办理窗口:3号楼117)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件3 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOCX",
+              "sha256": "e413c5e06158cfdc1c7c845379237819f309f1b713e041d244bae3e79201e6c3",
+              "captured_at": "2026-11-15T19:16:00.886391+00:00"
+            },
+            {
+              "portal_label": "空表",
+              "format": "DOCX",
+              "sha256": "e413c5e06158cfdc1c7c845379237819f309f1b713e041d244bae3e79201e6c3",
+              "captured_at": "2026-11-15T19:16:01.051455+00:00"
+            }
+          ]
+        },
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件3 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOCX",
+              "sha256": "89e9761637793594f48b5831dcf003070a4c4d7278e4f0fea07df4118f060951",
+              "captured_at": "2026-11-15T19:16:01.221358+00:00"
+            },
+            {
+              "portal_label": "空表",
+              "format": "DOCX",
+              "sha256": "89e9761637793594f48b5831dcf003070a4c4d7278e4f0fea07df4118f060951",
+              "captured_at": "2026-11-15T19:16:01.417141+00:00"
+            }
+          ]
+        },
+        {
+          "key": "representative",
+          "name": "申请机构法定代表人及主要负责人证明",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件3 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "DOCX",
+              "sha256": "ca99cc93ed9b2fadcad55783ee57c7895a21539220592671a22c7f0d9022d7d9",
+              "captured_at": "2026-11-15T19:16:01.579530+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
