@@ -58,7 +58,7 @@ def read_guide(root, source, source_sha256, district, warning):
         },
         "channel": {
             "raw_value": channel,
-            "online_status": "auth_required",
+            "online_status": proof.get("online_status", "auth_required"),
             "entry_url": None,
             "submission_verified": False,
         },

@@ -1,0 +1,119 @@
+{
+  "collected_at": "2026-11-15T23:06:52Z",
+  "region_code": "610482",
+  "city": "咸阳市",
+  "district": "彬州市",
+  "authority": "彬州市人力资源和社会保障局",
+  "consultation_phone": "劳动者：029-34922241\n用人单位：029-34925438",
+  "complaint_phone": "劳动者：029-34925438\n用人单位：029-34922241",
+  "hours": "星期一至星期五上午08:30至12:00，下午14:30至18:00（法定节假日除外）",
+  "source_receipt_sha256": "66e08da191da1b2bdd727817050df8e898282f107bc803ea1015d1035764bc45",
+  "online_status": "conflict",
+  "channel_note": "两份指南详细栏目均显示网上办理，新版按钮均提示暂不支持在线办理，旧版按钮同样禁用。请向彬州市人社局确认实际途径。",
+  "attachment_note": "两份指南共列八项纸质材料，所有下载项标为样表。办理时限栏原文为法定5个工作日、承诺0个工作日，实际时间以办理机关确认为准。",
+  "venue_note": "两份指南均为彬州市城关街道社保大厦市民中心8楼业务股。咨询号码和投诉号码在两角色页面上分别互换，保留各自原文。",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1117190315328&siteCode=610482000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=167ae20056a677af5119c7f7695cb433&areacode=610482000000",
+      "office": "陕西省咸阳市彬州市城关街道 社保大厦市民中心（办理窗口：8楼业务股）",
+      "handling_form": "网上办理",
+      "legal_workdays": 5,
+      "promised_workdays": 0,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1份、复印件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0E/C7/rBIxVGCvNZyAAZ5rAAA4APPItUY459.doc"
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件3份、复印件1份",
+          "required": "必要",
+          "instructions": "份数栏原文列原件3份、复印件1份，请按办理机关确认的份数准备。附件是样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0E/C7/rBIxVGCvNeuAcyutAAA4APPItUY891.doc"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1份、复印件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/22/6C/rBIxU2CvNhSAC2VSAAA4APPItUY713.doc"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1份、复印件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/22/6C/rBIxU2CvNkOAVmB2AAA-RHpej4I09.docx"
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1111787234646&siteCode=610482000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=08bb0a87fab207d4dce1f57eb73b125b&areacode=610482000000",
+      "office": "陕西省咸阳市彬州市城关街道 社保大厦市民中心（办理窗口：8楼业务股）",
+      "handling_form": "网上办理",
+      "legal_workdays": 5,
+      "promised_workdays": 0,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件3份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0E/BB/rBIxVGCvGK-ABwgBAAA4APPItUY751.doc"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0E/BC/rBIxVGCvGcqAftHCAAA-RHpej4I44.docx"
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/00/77/rBgBVGMa8m6AIcO5AAN6OIu-Cp4795.jpg"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1份、复印件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/00/77/rBgBVGMa8s2AVQQRAAA31C8BwRE61.docx"
+        }
+      ]
+    }
+  }
+}
