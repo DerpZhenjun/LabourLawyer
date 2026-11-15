@@ -58,7 +58,7 @@ class XianyangMunicipalOfficialGuidesTests(TestCase):
         store = RegionalStore(root / "guides.sqlite")
         app = FastAPI()
         app.include_router(routes.router, prefix="/regional")
-        self.enterContext(patch.object(routes, "ROOT", ROOT))
+        self.enterContext(patch.object(routes, "ROOT", root))
         self.enterContext(patch.object(routes, "store", return_value=store))
         self.enterContext(patch.object(routes, "directory_store", return_value=directory))
         client = self.enterContext(TestClient(app))

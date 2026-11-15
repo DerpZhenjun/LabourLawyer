@@ -1,0 +1,48 @@
+{
+  "region_code": "610400",
+  "scope_level": "municipal",
+  "city": "咸阳市",
+  "collected_at": "2026-11-15T22:18:16.121Z",
+  "capture_sha256": "268e2e87d8b12e81cfe18a6ceb5d8c5dddf5443fcc77fcae03a23881145bff78",
+  "guide_proof_sha256": "5c0b3a6be32c21572def10caee3acac34728bf91c762d5cdbbce608e9451615d",
+  "download_manifest_sha256": "a227acef5a39ea40740099b1afa2252d10c201029300a06796f078880ef1a659",
+  "word_native_review": {
+    "distinct_native_documents": 6,
+    "reviewed_pages": 11,
+    "worker_application": 3,
+    "employer_application": 3,
+    "authorization": 2
+  },
+  "attachments": [
+    {
+      "id": "xianyang-610400-worker-application",
+      "official_name": "仲裁申请书（劳动者，手填收件机关并签署）",
+      "official_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/21/DE/rBIxU2CuGqiAFvNrAAAwHymxCxQ05.docx",
+      "official_sha256": "a8ed5e07c3fb030500f1fa770d301b215e355310fee4841c6fe055cc8c358ef2",
+      "guide_source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1117369317238&siteCode=610400000000",
+      "format": "DOCX"
+    },
+    {
+      "id": "xianyang-610400-employer-application",
+      "official_name": "仲裁申请书（用人单位，手填收件机关并签署）",
+      "official_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/23/58/rBIxU2CwdW2Afa3VAAAwOyLdnSg59.docx",
+      "official_sha256": "ff92e552b60664dffa272ace53ff568654399cf1e22ba9177cd511938e0b8d70",
+      "guide_source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114139245895&siteCode=610400000000",
+      "format": "DOCX"
+    },
+    {
+      "id": "xianyang-610400-authorization",
+      "official_name": "授权委托书（两角色共同使用，手填收件机关及委托权限并签章）",
+      "official_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/21/D4/rBIxU2CuFzyAHlU3AAA9BgG1RYU03.docx",
+      "alternate_official_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0F/B2/rBIxVGCwcyCALfnXAAA9BgG1RYU89.docx",
+      "official_sha256": "cc6c5be5cd810389d0eadea86198e23e970d81fe449b58903eb391d37d3e2b74",
+      "guide_source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1117369317238&siteCode=610400000000",
+      "alternate_guide_source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114139245895&siteCode=610400000000",
+      "format": "DOCX"
+    }
+  ],
+  "notices": [
+    "申请书和授权委托书的收件机关为空栏或占位，下载后由申请人按实际受理机构填写。",
+    "身份证与劳动关系证明附件为说明，继续保留原件证据。"
+  ]
+}
