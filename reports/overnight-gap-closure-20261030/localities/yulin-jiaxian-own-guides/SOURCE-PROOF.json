@@ -1,0 +1,204 @@
+{
+  "city": "榆林市",
+  "district": "佳　县",
+  "region_code": "610828",
+  "authority": "佳县人力资源和社会保障局",
+  "agency_district_spelling": "佳县",
+  "directory_response_sha256": "d12427c2e05239da6c6f051969a00061cf7b3dc2d85388ecc2f42a3b2c1f7659",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610828000000",
+  "department_portal": "https://zwfw.shaanxi.gov.cn/pc/#/c/department?siteCode=610828000000&deptCode=11610828016091007X&deptName=%E5%8E%BF%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E5%92%8C%E7%A4%BE%E4%BC%9A%E4%BF%9D%E9%9A%9C%E5%B1%80",
+  "department_code": "11610828016091007X",
+  "attachment_receipt_sha256": "58610b92aec66fdae9df8f3c5350c43ac74c1a5d4c40cb46c0514c15c6f28f05",
+  "static_preflight_sha256": "5d2e4c422a517f8f0194e8d0f3a90ddf6f102c3119ffc55ccb78dea5d1549b20",
+  "attachment_review": {
+    "all_portal_labels": "样表",
+    "jpeg_decoded": 10,
+    "unique_sha": 6,
+    "application_worker_and_employer_different_bytes": true,
+    "verified_blank_templates": 0
+  },
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1110074146483&siteCode=610828000000",
+      "collected_at": "2026-11-15T19:32:07.759Z",
+      "raw_receipt_sha256": "172246b0ff7afa9caaec84add1a7154dbbb7b88ecb2bb294a4d03bebf4919a1b",
+      "consultation_phone": "0912-7960033",
+      "office": "陕西省榆林市佳县 古城街与凌云路交叉路口往北约200米前水门-1号楼(办理窗口:佳县劳动争议仲裁院)",
+      "commitment_workdays": 1,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件或复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "ad4adff57d414c552c3e7e1188be75d547f5d9c8d8f0ad225e26d1c6839e2040",
+              "captured_at": "2026-11-15T19:32:45.775071+00:00"
+            }
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "original_copy": "原件或复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "716268fdcd001f2b03acfdc1f02ae6c7e6958aefd0140778f78b05b2385187f6",
+              "captured_at": "2026-11-15T19:32:46.123395+00:00"
+            }
+          ]
+        },
+        {
+          "key": "employment-permit",
+          "name": "外国人就业证",
+          "required": "必要",
+          "original_copy": "原件或复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "0457d52d802a789578cc40d58129e6aec7fe3bbbeeb2a8a3618c5305212274c6",
+              "captured_at": "2026-11-15T19:32:46.621097+00:00"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "original_copy": "原件或复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "5dcf3d451886429f409405ead99beb6f676af068404c1f16f1ac3c13a1c8db64",
+              "captured_at": "2026-11-15T19:32:47.161087+00:00"
+            }
+          ]
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "original_copy": "原件或复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "9620e6df3fa09bd3c18d74ca3f60f086a4ec02f354f4ddd4c462abbce91d408a",
+              "captured_at": "2026-11-15T19:32:47.484950+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1119758146481&siteCode=610828000000",
+      "collected_at": "2026-11-15T19:32:07.999Z",
+      "raw_receipt_sha256": "f4989f8f0c1bb0d07a10305023ebf600b5bc98377b0c6d9d5e6f4ff35ef95799",
+      "consultation_phone": "0912-6721492",
+      "office": "陕西省榆林市佳县 沿黄线(办理窗口:佳县劳动人事争议仲裁院)",
+      "commitment_workdays": 1,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "def843b37e9ab0cff10c8d798ff76f0d13436194519bc2ea2a0f9ccbb774a561",
+              "captured_at": "2026-11-15T19:32:47.973975+00:00"
+            }
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "716268fdcd001f2b03acfdc1f02ae6c7e6958aefd0140778f78b05b2385187f6",
+              "captured_at": "2026-11-15T19:32:48.367819+00:00"
+            }
+          ]
+        },
+        {
+          "key": "employment-permit",
+          "name": "外国人就业证",
+          "required": "必要",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "0457d52d802a789578cc40d58129e6aec7fe3bbbeeb2a8a3618c5305212274c6",
+              "captured_at": "2026-11-15T19:32:49.027531+00:00"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "5dcf3d451886429f409405ead99beb6f676af068404c1f16f1ac3c13a1c8db64",
+              "captured_at": "2026-11-15T19:32:49.270856+00:00"
+            }
+          ]
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "sha256": "9620e6df3fa09bd3c18d74ca3f60f086a4ec02f354f4ddd4c462abbce91d408a",
+              "captured_at": "2026-11-15T19:32:49.629167+00:00"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
