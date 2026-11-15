@@ -1,0 +1,122 @@
+{
+  "region_code": "611021",
+  "city": "商洛市",
+  "district": "洛南县",
+  "authority": "洛南县人社局",
+  "home": "https://www.luonan.gov.cn/",
+  "home_sha256": "2235520f4b915cbbc831baf4830cff27d6dfb2175332b9a9254954189473aa33",
+  "portal": "https://zwfw.shaanxi.gov.cn/#/index?siteCode=611021000000",
+  "department": "https://zwfw.shaanxi.gov.cn/pc/#/c/department?siteCode=611021000000&deptCode=11611021735368842E",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1117422644942&siteCode=611021000000",
+      "collected_at": "2026-11-15T14:18:43.449Z",
+      "guide_sha256": "e0c6a3989bd08d0a3ff1dd58702ad7cdcb7a8bd42585209c328843795937eedf",
+      "receipt_sha256": "b0613818e5f1575788693168cee38b53cb4106f1b8308c210cc270dc93414ea2",
+      "venue": "陕西省商洛市洛南县城关街道 中街中甫街(办理窗口:仲裁办)",
+      "phone": "0914-7326303",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "无",
+          "official_attachment_label": "样表",
+          "attachment_format": "docx",
+          "attachment_bytes": 13471,
+          "attachment_sha256": "fc9b6da378c7e4dbc137de22d6edddaff62d2c44c3b017bbddbe2718f34f2d09"
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "instructions": "无",
+          "official_attachment_label": "样表",
+          "attachment_format": "jpg",
+          "attachment_bytes": 154388,
+          "attachment_sha256": "57fd22256f6d375106559bd60376b40b2fb3b66fd488dcd430f5cc711e397aed"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "必要",
+          "instructions": "无",
+          "official_attachment_label": "样表",
+          "attachment_format": "jpg",
+          "attachment_bytes": 21446,
+          "attachment_sha256": "22a7b15098d5c89e15db973c56d789a86d068bd0e295a74926fe25a1e4c05f29"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "instructions": "无",
+          "official_attachment_label": "样表",
+          "attachment_format": "jpg",
+          "attachment_bytes": 78205,
+          "attachment_sha256": "1e08f5d2f62899385e881fd66a530bb932bb085566499f1fe6f9a1a3fc871442"
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1111640644600&siteCode=611021000000",
+      "collected_at": "2026-11-15T14:18:43.219Z",
+      "guide_sha256": "6908ec03444297fcb332ad26d29de55f80708775ddd3fb48fb59f055a1dcdc37",
+      "receipt_sha256": "fe892496d816cb767922be4fabca5600a9605f117eefa9b2408b64741d47331c",
+      "venue": "陕西省商洛市洛南县城关街道 河滨南路(办理窗口:仲裁办)",
+      "phone": "0914-7326303",
+      "commitment_workdays": 0,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "instructions": "无",
+          "official_attachment_label": "样表",
+          "attachment_format": "docx",
+          "attachment_bytes": 13471,
+          "attachment_sha256": "fc9b6da378c7e4dbc137de22d6edddaff62d2c44c3b017bbddbe2718f34f2d09"
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "instructions": "无",
+          "official_attachment_label": "样表",
+          "attachment_format": "jpg",
+          "attachment_bytes": 154388,
+          "attachment_sha256": "57fd22256f6d375106559bd60376b40b2fb3b66fd488dcd430f5cc711e397aed"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "必要",
+          "instructions": "无",
+          "official_attachment_label": "样表",
+          "attachment_format": "jpg",
+          "attachment_bytes": 21446,
+          "attachment_sha256": "22a7b15098d5c89e15db973c56d789a86d068bd0e295a74926fe25a1e4c05f29"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "instructions": "无",
+          "official_attachment_label": "样表",
+          "attachment_format": "jpg",
+          "attachment_bytes": 78205,
+          "attachment_sha256": "1e08f5d2f62899385e881fd66a530bb932bb085566499f1fe6f9a1a3fc871442"
+        }
+      ]
+    }
+  },
+  "application_review": {
+    "http_hyperlink_fields": 5,
+    "field_review_sha256": "06c21aff7dd52d00d771d421481a20a4329b0cb44029a69041c85ec5f7fdca45",
+    "native_rendered": false
+  },
+  "same_byte_role_pairs": 4
+}
