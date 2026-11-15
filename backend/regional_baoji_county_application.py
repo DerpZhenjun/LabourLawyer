@@ -41,6 +41,8 @@ CHENCANG_AUTHORIZATION_PROOF = Path('reports/overnight-gap-closure-20261030/loca
 CHENCANG_AUTHORIZATION_PROOF_SHA = 'ecfb3635c9e1401761841fb8ef74b8ee9028297e936593d6716baeb2205218c9'
 CHENCANG_AUTHORIZATION_LAYOUT = Path('templates/_docx/_regional/shaanxi/baoji-610304-authorization.docx')
 CHENCANG_AUTHORIZATION_ID = 'baoji-610304-authorization'
+MATERIAL_REVIEW_PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-worker-material-review/SOURCE-PROOF.json')
+MATERIAL_REVIEW_PROOF_SHA = '6dd089585f4a155f1acc8c60630fb8230c02e1c87f2a841995a9e78348d43a2c'
 SHARED = 'shaanxi_baoji_qishan_long_worker_v1'
 MEI = 'shaanxi_baoji_mei_worker_v1'
 LINYOU = 'shaanxi_baoji_linyou_worker_v1'
@@ -528,3 +530,15 @@ def check_chencang_authorization(guide, template, root):
     expected = staged_chencang_authorization_guide(root)
     if template != expected['templates'][-1] or any(guide.get(key) != value for key, value in expected.items()):
         raise ValueError('陈仓区授权委托书与当前指南不匹配')
+
+
+def staged_baoji_material_review_guide(code, root=None):
+    root = Path(ROOT if root is None else root).resolve()
+    guide = staged_guide_without_generation(code, root)
+    reviews = json.loads(_pinned_bytes(root, MATERIAL_REVIEW_PROOF, MATERIAL_REVIEW_PROOF_SHA))['regions']
+    review = reviews.get(code)
+    if review is None or review['source_url'] != guide['source_url']:
+        raise ValueError('材料核验记录与当地办理指南不匹配')
+    guide['source_version'] = digest(guide['source_version'] + ':' + MATERIAL_REVIEW_PROOF_SHA)
+    guide['warnings'].append(review['warning'])
+    return guide

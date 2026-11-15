@@ -198,3 +198,40 @@ class BaojiCountyApplicationAPITests(TestCase):
                 self.assertEqual(client.post('/regional/generate', json={**query,'mode':'blank','data':{}}).status_code, 409)
                 with patch.object(store, 'lookup', return_value={**guide, 'warnings': []}):
                     self.assertEqual(client.get(path, params=scope).status_code, 409)
+
+
+    def test_reviewed_own_materials_do_not_promote_samples(self):
+        from regional_baoji_county_application import staged_baoji_material_review_guide, staged_guide_without_generation
+
+        with TemporaryDirectory() as work:
+            store = RegionalStore(Path(work) / 'guide.sqlite')
+            app = FastAPI()
+            app.include_router(routes.router, prefix='/regional')
+            with patch.object(routes, 'ROOT', ROOT), patch.object(routes, 'store', return_value=store), TestClient(app) as client:
+                for code, expected in (
+                    ('610324', '空表与样表下载件相同'),
+                    ('610328', '授权委托书仅列样表入口'),
+                    ('610305', '申请书和授权委托书仅列样表入口'),
+                ):
+                    with self.subTest(code=code):
+                        before = store.put_guide(staged_guide_without_generation(code, ROOT))
+                        current = store.put_guide(staged_baoji_material_review_guide(code, ROOT))
+                        self.assertGreater(current['version'], before['version'])
+                        self.assertEqual(current['source_id'], before['source_id'])
+                        self.assertEqual(current['templates'], before['templates'])
+                        self.assertEqual(current['materials'], before['materials'])
+                        self.assertIn(expected, ' '.join(current['warnings']))
+                        self.assertIn('证据目录', ' '.join(current['warnings']))
+                        self.assertFalse(current['can_generate'])
+                        scope = {key: current[key] for key in ('province', 'city', 'district')}
+                        response = client.get('/regional/lookup', params=scope)
+                        self.assertEqual(response.status_code, 200)
+                        self.assertIn(expected, ' '.join(response.json()['warnings']))
+                        versioned_scope = {**scope, 'source_id': current['source_id'], 'version': current['version']}
+                        ids = [t['id'] for t in current['templates']] + [f'baoji-{code}-authorization']
+                        for template_id in ids:
+                            self.assertEqual(client.get(f'/regional/templates/{template_id}', params=versioned_scope).status_code, 404)
+                            for kind in ('application', 'evidence'):
+                                query = {**versioned_scope, 'template_id': template_id, 'kind': kind}
+                                self.assertEqual(client.get('/regional/form-contract', params=query).status_code, 409)
+                                self.assertEqual(client.post('/regional/generate', json={**query, 'mode':'blank', 'data':{}}).status_code, 409)
