@@ -1,0 +1,296 @@
+{
+  "regions": {
+    "610726": {
+      "catalog_sha256": "6f6e2ed93918b6915a38d4594c5a37cbffa53522e41aae35d02910c3d60536ab",
+      "materials_receipt_sha256": "0df3bb555dde717327e3301b8baf6c1b943ad7da5b55fbab0a91d96614b04ce9",
+      "official_html_sha256": "862136c2d597b27f2c2e33896dc1714393d475919a2e0b3fc582412a922ee153",
+      "guide": {
+        "province": "shaanxi",
+        "province_name": "陕西省",
+        "city": "汉中市",
+        "district": "宁强县",
+        "scope_level": "district",
+        "region_code": "610726",
+        "authority": "宁强县人力资源和社会保障局",
+        "service_name": "劳动人事争议仲裁申请",
+        "source_title": "劳动人事争议仲裁申请（劳动者）",
+        "source_url": "https://zwfw.hanzhong.gov.cn/ningqiangxian/icity/proinfo/index?code=40c1d8c82ac016906c57ab9558a8965a",
+        "source_version": "862136c2d597b27f2c2e33896dc1714393d475919a2e0b3fc582412a922ee153",
+        "official_version": "",
+        "collected_at": "2026-11-15T09:16:46.432320+00:00",
+        "verified_at": "2026-11-15T09:23:28.316764+00:00",
+        "verification_status": "verified",
+        "published": true,
+        "can_generate": false,
+        "fields": {
+          "办理形式": "窗口办理 网上办理",
+          "到办事现场次数": "0 次",
+          "法定办结时限": "5 工作日",
+          "承诺办结时限": "2 工作日",
+          "咨询方式": "0916-4221648",
+          "办理地点": "陕西省汉中市宁强县 羌州南路社保大楼3楼宁强县人力资源和社会保障局(办理窗口:劳动人事争议仲裁院)",
+          "办理时间": "夏令时:星期一至星期五上午08:00至12:00,下午15:00至18:00(法定节假日除外) 冬令时:星期一至星期五上午08:00至12:00,下午14:00至18:00(法定节假日除外)",
+          "是否收费": "不收费",
+          "服务对象": "自然人"
+        },
+        "materials": [
+          {
+            "id": "610726-worker-1",
+            "name": "劳动人事争议仲裁申请书",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/ningqiangxian/icity/proinfo/index?code=40c1d8c82ac016906c57ab9558a8965a",
+            "region_code": "610726",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610726-worker-2",
+            "name": "身份证",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/ningqiangxian/icity/proinfo/index?code=40c1d8c82ac016906c57ab9558a8965a",
+            "region_code": "610726",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610726-worker-3",
+            "name": "授权委托书",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/ningqiangxian/icity/proinfo/index?code=40c1d8c82ac016906c57ab9558a8965a",
+            "region_code": "610726",
+            "service_object": "劳动者",
+            "attachments": []
+          }
+        ],
+        "channel": {
+          "raw_value": "全程网办",
+          "online_status": "unverified",
+          "entry_url": null,
+          "submission_verified": false
+        },
+        "sections": {
+          "申请条件": "无",
+          "收费标准": "不收费"
+        },
+        "warnings": [
+          "页面所列时限为本事项办理信息。",
+          "本县申请书样表为照片，落款为宁强县劳动人事争议仲裁委员会。委托书也为样表照片。",
+          "材料栏将授权委托书标为必要；请向本县办理机构核对适用情形。"
+        ],
+        "templates": [
+          {
+            "id": "hanzhong-610726-application",
+            "region_code": "610726",
+            "source_url": "https://zwfw.hanzhong.gov.cn/ningqiangxian/icity/proinfo/index?code=40c1d8c82ac016906c57ab9558a8965a",
+            "official_attachment_entry": "material_tab",
+            "original_name": "宁强县仲裁申请书（官方样表照片）",
+            "official_kind": "sample",
+            "file_type": "jpg",
+            "official_sha256": "71e48d716e1a4c407199eb7e5851e9b042f6312195dbf4802b2444fc6cabe3ed",
+            "official_bytes": 617176,
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          },
+          {
+            "id": "hanzhong-610726-authorization",
+            "region_code": "610726",
+            "source_url": "https://zwfw.hanzhong.gov.cn/ningqiangxian/icity/proinfo/index?code=40c1d8c82ac016906c57ab9558a8965a",
+            "official_attachment_entry": "material_tab",
+            "original_name": "宁强县授权委托书（官方样表照片）",
+            "official_kind": "sample",
+            "file_type": "jpg",
+            "official_sha256": "b3bdb4128caf5e0ff3ed4d42675d0f06c5230354dc6d548c433c18cce5a1ffd7",
+            "official_bytes": 654860,
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          }
+        ]
+      },
+      "attachment_proof": {
+        "download_receipt_sha256": "42f2940872b7e88a053de5aa556677ec94a43512c67afc38e1f59b9a47a59bbd",
+        "content_review": "two_sample_photos_own_printed_committee_on_application_and_blank_authorization_fields"
+      }
+    },
+    "610727": {
+      "catalog_sha256": "bef582464f98d29659555e98853fc2fc2422c74baff63be83f538d3fdbeb77c5",
+      "materials_receipt_sha256": "afdf8ed16523ae2b300a735fbdf6723ad45395bed1d1844044e58af129aa08aa",
+      "official_html_sha256": "3b0a9b7512853f0e97aa6ec942d084d2e81cd4845e94e13ec31acb38ad2db1cf",
+      "guide": {
+        "province": "shaanxi",
+        "province_name": "陕西省",
+        "city": "汉中市",
+        "district": "略阳县",
+        "scope_level": "district",
+        "region_code": "610727",
+        "authority": "略阳县人力资源和社会保障局",
+        "service_name": "劳动人事争议仲裁申请",
+        "source_title": "劳动人事争议仲裁申请（劳动者）",
+        "source_url": "https://zwfw.hanzhong.gov.cn/lueyang/icity/proinfo/index?code=db398b8a59ada537b50c5d30e5f33063",
+        "source_version": "3b0a9b7512853f0e97aa6ec942d084d2e81cd4845e94e13ec31acb38ad2db1cf",
+        "official_version": "",
+        "collected_at": "2026-11-15T09:16:50.737419+00:00",
+        "verified_at": "2026-11-15T09:23:28.319764+00:00",
+        "verification_status": "verified",
+        "published": true,
+        "can_generate": false,
+        "fields": {
+          "办理形式": "网上办理",
+          "到办事现场次数": "1 次",
+          "法定办结时限": "5 工作日",
+          "承诺办结时限": "5 工作日",
+          "咨询方式": "0916-4827378",
+          "办理地点": "陕西省汉中市略阳县 狮凤东路与灵岩路交叉路口东南侧(略阳县劳动人力资源大厦)略阳县人力资源和社会保障局(办理窗口:902室)",
+          "办理时间": "夏令时:星期一至星期五上午08:00至12:00,下午15:00至18:00(法定节假日除外) 冬令时:星期一至星期五上午08:00至12:00,下午14:00至18:00(法定节假日除外)",
+          "是否收费": "不收费",
+          "服务对象": "自然人"
+        },
+        "materials": [
+          {
+            "id": "610727-worker-1",
+            "name": "劳动人事争议仲裁申请书",
+            "material_type": "原件和复印件",
+            "format": "纸质、电子",
+            "copies": "原件2份  复印件2份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/lueyang/icity/proinfo/index?code=db398b8a59ada537b50c5d30e5f33063",
+            "region_code": "610727",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610727-worker-2",
+            "name": "身份证",
+            "material_type": "原件和复印件",
+            "format": "纸质、电子",
+            "copies": "原件2份  复印件2份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/lueyang/icity/proinfo/index?code=db398b8a59ada537b50c5d30e5f33063",
+            "region_code": "610727",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610727-worker-3",
+            "name": "劳动（人事）关系证明材料",
+            "material_type": "原件和复印件",
+            "format": "纸质、电子",
+            "copies": "原件2份  复印件2份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/lueyang/icity/proinfo/index?code=db398b8a59ada537b50c5d30e5f33063",
+            "region_code": "610727",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610727-worker-4",
+            "name": "授权委托书",
+            "material_type": "原件和复印件",
+            "format": "纸质、电子",
+            "copies": "原件2份  复印件2份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/lueyang/icity/proinfo/index?code=db398b8a59ada537b50c5d30e5f33063",
+            "region_code": "610727",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610727-worker-5",
+            "name": "外国人就业证",
+            "material_type": "原件和复印件",
+            "format": "纸质、电子",
+            "copies": "原件2份  复印件2份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/lueyang/icity/proinfo/index?code=db398b8a59ada537b50c5d30e5f33063",
+            "region_code": "610727",
+            "service_object": "劳动者",
+            "attachments": []
+          }
+        ],
+        "channel": {
+          "raw_value": "官网列网上办理",
+          "online_status": "unverified",
+          "entry_url": null,
+          "submission_verified": false
+        },
+        "sections": {
+          "申请条件": "(一)企业、个体经济组织、民办非企业单位等组织与劳动者之间，以及机关、事业单位、社会团体与其建立劳动关系的劳动者之间，因确认劳动关系，订立、履行、变更、解除和终止劳动合同，工作时间、休息休假、社会保险、福利、培训以及劳动保护，劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议; (二)实施公务员法的机关与聘任制公务员之间、参照公务员法管理的机关(单位)与聘任工作人员之间因履行聘任合同发生的争议; (三)事业单位与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议; (四)社会团体与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议; (五)军队文职人员用人单位与聘用制文职人员之间因履行聘用合同发生的争议; (六)法律、法规规定由劳动人事争议仲裁委员会(以下简称仲裁委员会)处理的其他争议。",
+          "收费标准": "不收费"
+        },
+        "warnings": [
+          "页面所列时限为本事项办理信息。",
+          "官网材料栏列有申请书和委托书 DOC 空表入口。详细版及简版实测均未取得文件，文件内容和版式待核验。",
+          "外国人就业证在材料栏标为必要，适用情形请向略阳县办理机构核对。"
+        ],
+        "templates": [
+          {
+            "id": "hanzhong-610727-application",
+            "region_code": "610727",
+            "source_url": "https://zwfw.hanzhong.gov.cn/lueyang/icity/proinfo/index?code=db398b8a59ada537b50c5d30e5f33063",
+            "official_attachment_entry": "material_tab",
+            "original_name": "略阳县仲裁申请书（空表入口待核验）",
+            "official_kind": "unverified",
+            "file_type": "doc",
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          },
+          {
+            "id": "hanzhong-610727-authorization",
+            "region_code": "610727",
+            "source_url": "https://zwfw.hanzhong.gov.cn/lueyang/icity/proinfo/index?code=db398b8a59ada537b50c5d30e5f33063",
+            "official_attachment_entry": "material_tab",
+            "original_name": "略阳县授权委托书（空表入口待核验）",
+            "official_kind": "unverified",
+            "file_type": "doc",
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          }
+        ]
+      },
+      "attachment_proof": {
+        "download_receipt_sha256": "20dfbf7229018fabf024f40bfce3c9b5c2f560cb61ab8ba52dfd9aff61102422",
+        "repeat_observation_sha256": "a30ace0a9967e6a1502ba80815d7aebcd5883717f9a6db8af21ebe88b31ea6e0",
+        "ui_control_receipt_sha256": "c9924e5eb9e9b11ada20d0cecfe42d0b3e12cd83dc13f6fae7f891b986c9f664",
+        "simple_guide_receipt_sha256": "dfc8f1f7b045e2a726c166a3ed4f08c23d6f623b7a5ca808f2e748be1b2eb7a5",
+        "simple_source_url": "https://zwfw.hanzhong.gov.cn/lueyang/icity/proinfo/indexSimple?code=db398b8a59ada537b50c5d30e5f33063",
+        "downloaded_attachment_count": 0
+      }
+    }
+  }
+}
