@@ -1,0 +1,186 @@
+{
+  "region_code": "610522",
+  "city": "渭南市",
+  "district": "潼关县",
+  "authority": "潼关县人力资源和社会保障局",
+  "consultation_phone": "0913-3819821",
+  "official_home": "https://www.tongguan.gov.cn/",
+  "official_home_sha256": "67659511f6c12293c94982b33bb63970c196b390acac5238db3486df169f655a",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610522000000",
+  "department_code": "11610522016028593D",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1113129125212&siteCode=610522000000",
+      "collected_at": "2026-11-15T16:02:00.332Z",
+      "receipt_sha256": "7edc0dc160db7f61e2e06df0d86f384080d9bd05dc7222712cdb6145ad15e9ed",
+      "commitment_workdays_as_displayed": 0,
+      "venue": "陕西省渭南市潼关县 民生街东段人社局(办理窗口:潼关县劳动人事争议仲裁院408室)",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "空表",
+              "format": "doc",
+              "bytes": 12288,
+              "sha256": "436c1a1d43bb4382e94e5172f29b6ea0f04e50ca40642a9a3f8cec1c009db1b3"
+            }
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "空表",
+              "format": "doc",
+              "bytes": 9216,
+              "sha256": "6559e7e72bb2159f95d6047800ef41e4e232788a953d33e192e9415d7ffb340b"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "空表",
+              "format": "docx",
+              "bytes": 13393,
+              "sha256": "ae324b7f19e6c4c155af6176846f5905e5755453b204cc0de4c4f8f00b0f8fc1"
+            }
+          ]
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "空表",
+              "format": "doc",
+              "bytes": 11264,
+              "sha256": "53155da2c3d415dfefc06054ca948dcf238fe7569b7ba12a1faea3722b57fa38"
+            }
+          ]
+        },
+        {
+          "key": "foreign-employment",
+          "name": "外国人就业证",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "空表",
+              "format": "jpg",
+              "bytes": 10094,
+              "sha256": "0387338f6ef8719ce7d40458240aeaf0c21ec8a58b3dd36bc552c90a5820a2d4"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1112284124845&siteCode=610522000000",
+      "collected_at": "2026-11-15T16:02:00.564Z",
+      "receipt_sha256": "fdb0bf84045e2024c1121e71d4f0aeb1a4345e584198faa50af7b69d61d081d1",
+      "commitment_workdays_as_displayed": 0,
+      "venue": "陕西省渭南市潼关县 民生街东段人社局(办理窗口:潼关县劳动人事争议仲裁院408室)",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "空表",
+              "format": "doc",
+              "bytes": 12288,
+              "sha256": "1ae771a2f92dbfea557134b6a7db9c2bb7d5650705ba75f3f3ec1adc65ba2ff6"
+            }
+          ]
+        },
+        {
+          "key": "entity",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "jpg",
+              "bytes": 86342,
+              "sha256": "e17806b6b72d92bf496706b3d2476b8ae3b84e8747ba1b5604834ff941b1f27c"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "空表",
+              "format": "docx",
+              "bytes": 13393,
+              "sha256": "ae324b7f19e6c4c155af6176846f5905e5755453b204cc0de4c4f8f00b0f8fc1"
+            }
+          ]
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "空表",
+              "format": "doc",
+              "bytes": 11264,
+              "sha256": "53155da2c3d415dfefc06054ca948dcf238fe7569b7ba12a1faea3722b57fa38"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "attachments": 9,
+  "unique_original_hashes": 7,
+  "static_preflight_sha256": "1363ecb7ac19ca50f3ede63c9336dedcf11a0e8ad3755fb003cceaca2cb3259c",
+  "word_receipt_sha256": "07609995e50793318d1f635892b176f386f864aa3934045b72ea6e0e7fdaebb0",
+  "word_content_markers_sha256": "0837703629240a10f2525ce121357005baab451615f555a6c260caea4650237a",
+  "word_native_render": [
+    {
+      "name": "610522-WORKER-APPLICATION-PORTAL-BLANK-ORIGINAL.doc",
+      "sha256": "436c1a1d43bb4382e94e5172f29b6ea0f04e50ca40642a9a3f8cec1c009db1b3",
+      "pages": 2,
+      "pdf_sha256": "8d7c519224e232a6301f6dd202d8110600f0ba72a6ce2b6a0f075df71bdfc5c9"
+    },
+    {
+      "name": "610522-EMPLOYER-APPLICATION-PORTAL-BLANK-ORIGINAL.doc",
+      "sha256": "1ae771a2f92dbfea557134b6a7db9c2bb7d5650705ba75f3f3ec1adc65ba2ff6",
+      "pages": 2,
+      "pdf_sha256": "4363e5b40632aaa2d793d0bfe8896c91d51cce3b89c00ec5f05649ba5f2203d0"
+    },
+    {
+      "name": "610522-WORKER-AUTHORIZATION-PORTAL-BLANK-ORIGINAL.doc",
+      "sha256": "53155da2c3d415dfefc06054ca948dcf238fe7569b7ba12a1faea3722b57fa38",
+      "pages": 1,
+      "pdf_sha256": "e407c9af6f5d95ae0faa88b2959a3ba722cb7873a14719089aaa46322c8a38f4"
+    },
+    {
+      "name": "610522-WORKER-RELATION-PORTAL-BLANK-ORIGINAL.docx",
+      "sha256": "ae324b7f19e6c4c155af6176846f5905e5755453b204cc0de4c4f8f00b0f8fc1",
+      "pages": 2,
+      "pdf_sha256": "e853d0c00a6362e49dd6288c5e87778c1b191ce93db515b3b9b850b43e59bc44"
+    }
+  ],
+  "roles_application_same_page_text": false,
+  "applications_native_final_page": "date field only",
+  "word_content_review_state": "ROLE_LAYOUT_AND_SLOT_REVIEW_PENDING",
+  "generation_approved": false,
+  "published": false
+}
