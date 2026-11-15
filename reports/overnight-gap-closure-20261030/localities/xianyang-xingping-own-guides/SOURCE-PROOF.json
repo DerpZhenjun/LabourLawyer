@@ -1,0 +1,94 @@
+{
+  "collected_at": "2026-11-15T23:00:34Z",
+  "region_code": "610481",
+  "city": "咸阳市",
+  "district": "兴平市",
+  "authority": "市人力资源和社会保障局",
+  "consultation_phone": "029-38158020",
+  "complaint_phone": "029-38901310",
+  "hours": "星期一至星期五上午08:30至12:00，下午14:30至18:00（法定节假日除外）",
+  "records": {
+    "dom_sha256": "fbfb2abdf06e3994a915fbc7e28ad55dcc5283eea75775546a7d3286190422e8",
+    "download_sha256": "f639946424645d19da9e891dbd02ff9033c66c4cc17b1eba96fe7b4454921f2c",
+    "native_word_sha256": "b1b87b0090c521176b925c7343b75fe1fe8e9fba58e5d3699ba3b50e6929ea3e"
+  },
+  "channel_note": "两角色的公开在线办理实测到陕西省统一身份认证，未登录或提交。劳动者办理形式列窗口办理、网上办理，另有物流支持选项；用人单位办理形式列快递申请。两角色的收件人、地址和电话栏均为无，邮寄前请向办理机关核对。",
+  "attachment_note": "劳动者页仅列“名称争议申请书”，与仲裁事项名称不一致，附件只标样表。用人单位页所列空表实际为自然人申请人字段，没有预填收件机关，表内材料说明与单位指南材料项不同。",
+  "venue_note": "两份指南的窗口均标兴平市劳动保障监察大队，用人单位原文另列县门东街操场巷4号，两份地址按各自原文保留。",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114294126445&siteCode=610481000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuide&id=4ff511629a8cf8863aaabf8d77b26427&areacode=610481000000",
+      "handling_form": "窗口办理、网上办理",
+      "legal_workdays": 5,
+      "promised_workdays": 2,
+      "office": "陕西省咸阳市兴平市东城街道 兴平市劳动保障监察大队（办理窗口：兴平市劳动保障监察大队）",
+      "materials": [
+        {
+          "key": "name-dispute-application",
+          "name": "名称争议申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2份",
+          "required": "必要",
+          "instructions": "新旧版材料名称均为“名称争议申请书”，与事项名称不一致，请向兴平市人社局核对。该附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/25/19/rBIxU2C0lv6ASwD5AAC1QMaNmNY642.jpg"
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1116194126190&siteCode=610481000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuide&id=a7babf301b1f39a3d754b43dae9cb014&areacode=610481000000",
+      "handling_form": "网上办理、窗口办理、快递申请",
+      "legal_workdays": 5,
+      "promised_workdays": 5,
+      "office": "陕西省咸阳市兴平市东城街道 县门东街操场巷4号（办理窗口：兴平市劳动保障监察大队）",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2份",
+          "required": "必要",
+          "instructions": "指南空表使用自然人申请人字段，与用人单位事项的申请人角色不符。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/11/30/rBIxVGC0Tl6ABq5GAAC1QMaNmNY153.jpg"
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2份",
+          "required": "必要",
+          "instructions": "指南附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/24/D9/rBIxU2C0UQSATDM8AAS6KUVVHZA262.jpg"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2份",
+          "required": "必要",
+          "instructions": "指南附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/24/DA/rBIxU2C0UYaALm5iAABCABhs3jA316.doc"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "instructions": "指南附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/11/37/rBIxVGC0UrSAKMmMAAA1iykV67801.docx"
+        }
+      ],
+      "blank_sha256": "41b46b5b5da6dcb3fd5f3e316a934735481780348e75adef3db36e4057fe1c12",
+      "blank_source_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/2A/67/rBIxU2EkrIeAHC67AAAuAHh2Agc660.doc"
+    }
+  }
+}
