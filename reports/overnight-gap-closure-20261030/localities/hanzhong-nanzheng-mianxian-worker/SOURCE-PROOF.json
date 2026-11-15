@@ -1,0 +1,316 @@
+{
+  "regions": {
+    "610703": {
+      "catalog_sha256": "c703a49d72915a4463b126749c9e8cd3179fc1414d6a250108a11ccb4a218a95",
+      "materials_receipt_sha256": "4a088c39fec7ea2de0ae5996949375e78e7f9facf63e11acfe9dc26912519290",
+      "official_html_sha256": "42eabe0b29bc9fc392c60e6a23ca88e0e26e831033f1349e94e6f009b04c86c4",
+      "guide": {
+        "province": "shaanxi",
+        "province_name": "陕西省",
+        "city": "汉中市",
+        "district": "南郑区",
+        "scope_level": "district",
+        "region_code": "610703",
+        "authority": "南郑区人力资源和社会保障局",
+        "service_name": "劳动人事争议仲裁申请",
+        "source_title": "劳动人事争议仲裁申请（劳动者）",
+        "source_url": "https://zwfw.hanzhong.gov.cn/nanzhengqu/icity/proinfo/index?code=022c4091212688f29e51265d41fe5d85",
+        "source_version": "42eabe0b29bc9fc392c60e6a23ca88e0e26e831033f1349e94e6f009b04c86c4",
+        "official_version": "",
+        "collected_at": "2026-11-15T08:51:06.534491+00:00",
+        "verified_at": "2026-11-15T08:54:18.825934+00:00",
+        "verification_status": "verified",
+        "published": true,
+        "can_generate": false,
+        "fields": {
+          "办理形式": "窗口办理",
+          "到办事现场次数": "1 次",
+          "咨询方式": "0916-5516507",
+          "法定办结时限": "5 工作日",
+          "承诺办结时限": "1 工作日",
+          "办理地点": "陕西省汉中市南郑区 人民路与城北一路交叉口东北150米汉中市南郑区人力资源和社会保障局(办理窗口:劳动人事争议仲裁院)",
+          "办理时间": "夏令时:星期一至星期五上午08:00至12:00,下午15:00至18:00(法定节假日除外) 冬令时:星期一至星期五上午08:00至12:00,下午14:00至18:00(法定节假日除外)",
+          "是否收费": "不收费",
+          "服务对象": "自然人"
+        },
+        "materials": [
+          {
+            "id": "610703-worker-1",
+            "name": "劳动人事争议仲裁申请书",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件2份",
+            "required": "必要",
+            "acceptance_standard": "申请劳动仲裁须提交以下材料： 1、申请书一式两份（两个被申请人的三份）。 2、申请人如系自然人，请提交身份证或户口本复印件；申请人如系用人单位，请提交有关部门颁发的法定代表人（或主要负责人）证明书和营业执照副本复印件。 3、申诉请求相关的证据。",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/nanzhengqu/icity/proinfo/index?code=022c4091212688f29e51265d41fe5d85",
+            "region_code": "610703",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610703-worker-2",
+            "name": "身份证",
+            "material_type": "复印件",
+            "format": "纸质材料",
+            "copies": "复印件1份",
+            "required": "必要",
+            "acceptance_standard": "政策规定",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/nanzhengqu/icity/proinfo/index?code=022c4091212688f29e51265d41fe5d85",
+            "region_code": "610703",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610703-worker-3",
+            "name": "授权委托书",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "acceptance_standard": "政策规定",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/nanzhengqu/icity/proinfo/index?code=022c4091212688f29e51265d41fe5d85",
+            "region_code": "610703",
+            "service_object": "劳动者",
+            "attachments": []
+          }
+        ],
+        "channel": {
+          "raw_value": "否",
+          "online_status": "unavailable",
+          "entry_url": null,
+          "submission_verified": false
+        },
+        "sections": {
+          "申请条件": "政策规定",
+          "收费标准": "不收费"
+        },
+        "warnings": [
+          "页面所列时限为本事项办理信息。",
+          "申请书两入口均返回同一份样本，落款印有市级仲裁委员会名称。请向南郑区办理机构确认收件机关和适用申请书。",
+          "委托书的收件机关名称栏留空，请按实际办理机构填写；请核对授权事项并签章。"
+        ],
+        "templates": [
+          {
+            "id": "hanzhong-610703-application",
+            "region_code": "610703",
+            "source_url": "https://zwfw.hanzhong.gov.cn/nanzhengqu/icity/proinfo/index?code=022c4091212688f29e51265d41fe5d85",
+            "official_attachment_entry": "material_tab",
+            "original_name": "南郑区仲裁申请书（官网填写示例）",
+            "official_kind": "sample",
+            "file_type": "doc",
+            "official_sha256": "784a0020b6d82a877c399855b661ec96cb83e1af3b8b798b49d1aa0648b11c81",
+            "official_bytes": 12800,
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          },
+          {
+            "id": "hanzhong-610703-authorization",
+            "region_code": "610703",
+            "source_url": "https://zwfw.hanzhong.gov.cn/nanzhengqu/icity/proinfo/index?code=022c4091212688f29e51265d41fe5d85",
+            "official_attachment_entry": "material_tab",
+            "original_name": "南郑区授权委托书（官网空表入口）",
+            "official_kind": "blank",
+            "file_type": "doc",
+            "official_sha256": "c86ec2a724ab28f746ea9b2a601e9186fabe93fb3c29364e7a678d20896ec499",
+            "official_bytes": 24064,
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          }
+        ]
+      },
+      "attachment_proof": {
+        "download_receipt_sha256": "f078cae28862343e1651a172791cd8cb0d18f9fd38bf8e65d15d8a7d2270e6bd",
+        "attachment_pairs": [
+          {
+            "name": "仲裁申请书样本.doc",
+            "official_sha256": "784a0020b6d82a877c399855b661ec96cb83e1af3b8b798b49d1aa0648b11c81",
+            "official_bytes": 12800,
+            "blank_and_sample_same_bytes": true,
+            "body_review": "official_sample_fixed_municipal_recipient_not_district",
+            "visual_page_sha256": "4983f1517b379a700f77881c7858c7646f9d2547440e7a65ba74fc61690d2025"
+          },
+          {
+            "name": "授权委托书.doc",
+            "official_sha256": "c86ec2a724ab28f746ea9b2a601e9186fabe93fb3c29364e7a678d20896ec499",
+            "official_bytes": 24064,
+            "blank_and_sample_same_bytes": true,
+            "body_review": "arbitration_authorization_recipient_name_case_and_signatures_blank",
+            "visual_page_sha256": "009041bfbf8b6646d9ba96f465e00f0601f0f84ca8e80ea29fdd7a35c4d02402"
+          }
+        ]
+      }
+    },
+    "610725": {
+      "catalog_sha256": "512092299babe2c6fe30c9fa4680b7e3d2f7538ebffdab5defaefe314dca0a3f",
+      "materials_receipt_sha256": "cdf890532fbaf1baab0e4e421238fcf7fc284e56b52735e4dff5e281ef18be17",
+      "official_html_sha256": "894432f50897cc58217f5f313f30888b7d1721d97898a6287c17e9d6f6605cd0",
+      "guide": {
+        "province": "shaanxi",
+        "province_name": "陕西省",
+        "city": "汉中市",
+        "district": "勉县",
+        "scope_level": "district",
+        "region_code": "610725",
+        "authority": "勉县人力资源和社会保障局",
+        "service_name": "劳动人事争议仲裁申请",
+        "source_title": "劳动人事争议仲裁申请（劳动者）",
+        "source_url": "https://zwfw.hanzhong.gov.cn/mianxian/icity/proinfo/index?code=fb75803296e3e6ca4cbf8085261f9fff",
+        "source_version": "894432f50897cc58217f5f313f30888b7d1721d97898a6287c17e9d6f6605cd0",
+        "official_version": "",
+        "collected_at": "2026-11-15T08:48:05.301499+00:00",
+        "verified_at": "2026-11-15T08:54:18.829875+00:00",
+        "verification_status": "verified",
+        "published": true,
+        "can_generate": false,
+        "fields": {
+          "办理形式": "网上办理",
+          "到办事现场次数": "0 次",
+          "咨询方式": "0916-8652321",
+          "法定办结时限": "5 工作日",
+          "承诺办结时限": "5 工作日",
+          "办理地点": "陕西省汉中市勉县 金牛大道与新兴北路交叉路口往东约100米(勉县东方眼科医院东侧)勉县人力资源和社会保障局(办理窗口:四楼劳动人事争议仲裁股)",
+          "办理时间": "星期一至星期五上午09:00至12:00,下午14:00至18:00(法定节假日除外)",
+          "是否收费": "不收费",
+          "服务对象": "自然人"
+        },
+        "materials": [
+          {
+            "id": "610725-worker-1",
+            "name": "外国人就业证",
+            "material_type": "复印件",
+            "format": "纸质材料",
+            "copies": "复印件1份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/mianxian/icity/proinfo/index?code=fb75803296e3e6ca4cbf8085261f9fff",
+            "region_code": "610725",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610725-worker-2",
+            "name": "身份证",
+            "material_type": "复印件",
+            "format": "纸质材料",
+            "copies": "复印件1份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/mianxian/icity/proinfo/index?code=fb75803296e3e6ca4cbf8085261f9fff",
+            "region_code": "610725",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610725-worker-3",
+            "name": "授权委托书",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/mianxian/icity/proinfo/index?code=fb75803296e3e6ca4cbf8085261f9fff",
+            "region_code": "610725",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610725-worker-4",
+            "name": "劳动（人事）关系证明材料",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/mianxian/icity/proinfo/index?code=fb75803296e3e6ca4cbf8085261f9fff",
+            "region_code": "610725",
+            "service_object": "劳动者",
+            "attachments": []
+          },
+          {
+            "id": "610725-worker-5",
+            "name": "劳动人事争议仲裁申请书",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件2份",
+            "required": "必要",
+            "acceptance_standard": "无",
+            "source_channel": "无",
+            "instructions": "无",
+            "source_url": "https://zwfw.hanzhong.gov.cn/mianxian/icity/proinfo/index?code=fb75803296e3e6ca4cbf8085261f9fff",
+            "region_code": "610725",
+            "service_object": "劳动者",
+            "attachments": []
+          }
+        ],
+        "channel": {
+          "raw_value": "全程网办",
+          "online_status": "unverified",
+          "entry_url": null,
+          "submission_verified": false
+        },
+        "sections": {
+          "申请条件": "无",
+          "收费标准": "不收费"
+        },
+        "warnings": [
+          "页面所列时限为本事项办理信息。",
+          "申请书空表与样表均为同一张图片，包含预填请求和案情，仅供参考。",
+          "材料栏委托书为通用范本，含调查费用等条款，请向勉县办理机构核对仲裁委托书。外国人就业证在指南材料栏标为必要，适用情形请向办理机构核对。"
+        ],
+        "templates": [
+          {
+            "id": "hanzhong-610725-application",
+            "region_code": "610725",
+            "source_url": "https://zwfw.hanzhong.gov.cn/mianxian/icity/proinfo/index?code=fb75803296e3e6ca4cbf8085261f9fff",
+            "official_attachment_entry": "material_tab",
+            "original_name": "勉县仲裁申请书（官网填写示例）",
+            "official_kind": "sample",
+            "file_type": "jpg",
+            "official_sha256": "da33a5a0047b248eab346060262106dfbc172fbea0f8703779419a912127b0ca",
+            "official_bytes": 1377806,
+            "download_status": "official_link_only",
+            "document_types": [],
+            "can_generate": false
+          }
+        ]
+      },
+      "attachment_proof": {
+        "download_receipt_sha256": "5c65314f78047b73a49fa3540a33368cbbe13a1ec9753f661e3826398648d669",
+        "attachment_pairs": [
+          {
+            "name": "劳动仲裁申请书.jpg",
+            "official_sha256": "da33a5a0047b248eab346060262106dfbc172fbea0f8703779419a912127b0ca",
+            "official_bytes": 1377806,
+            "blank_and_sample_same_bytes": true,
+            "body_review": "same_jpeg_with_prefilled_claims_facts_and_third_party_watermark",
+            "visual_page_sha256": "da33a5a0047b248eab346060262106dfbc172fbea0f8703779419a912127b0ca"
+          },
+          {
+            "name": "授权委托书.docx",
+            "official_sha256": "64f8aee3764ef7578b04eb35e3806e527fcda635d7eca5a008f26dfc2d2d82c3",
+            "official_bytes": 12457,
+            "blank_and_sample_same_bytes": true,
+            "body_review": "general_power_of_attorney_with_unrelated_investigation_fee_terms",
+            "visual_page_sha256": "a24b8d2ca68f6b4bf9dc28ae609661c8b96a60915759042a6f155565ac0c5bef"
+          }
+        ]
+      }
+    }
+  }
+}
