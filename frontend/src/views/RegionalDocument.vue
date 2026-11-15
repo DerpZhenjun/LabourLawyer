@@ -15,7 +15,7 @@
     <div v-else-if="contractError" class="region-notice danger" role="alert"><p>{{ contractError }}</p><button type="button" class="ll-button secondary" @click="reload">重试加载本区表单</button></div>
     <p v-else-if="!contract" class="region-notice danger" role="alert">当前地区表单尚未完成核对，请返回指南确认来源后重试。</p>
     <form v-else @submit.prevent="requestConfirmation">
-      <p v-if="tongguanBodyOnly" class="region-notice" role="note">{{ signInstruction }}</p>
+      <p v-if="tongguanBodyOnly || xianHighTechBodyOnly" class="region-notice" role="note">{{ signInstruction }}</p>
       <p v-else-if="employerOnly" class="region-notice" role="note">此表适用于用人单位作为申请人。{{ signInstruction }}</p>
       <p v-else-if="workerManualRecipient" class="region-notice" role="note">此表适用于劳动者作为申请人。用人单位填写版待核验。{{ signInstruction }}</p>
       <div class="sample-note"><i class="fa-regular fa-lightbulb" aria-hidden="true"></i><span><strong>已填入虚构示例，请替换为你的真实信息</strong>姓名、地址、金额和证据仅用于演示。未确定的受理机构和日期可以留空，再向受理机关核对。</span></div>
@@ -104,7 +104,9 @@ const isBlank=computed(()=>contract.value?.context.mode==='blank')
 const employerOnly=computed(()=>template.value?.service_object==='用人单位')
 const workerManualRecipient=computed(()=>['shaanxi_danfeng_worker_application_v1','shaanxi_shangnan_worker_application_v1','shaanxi_shanyang_worker_application_v1','shaanxi_heyang_worker_application_v1','shaanxi_huayin_worker_application_v1','shaanxi_shenmu_worker_evidence_v1','shaanxi_mizhi_worker_application_v1','shaanxi_qingjian_worker_application_v1'].includes(contract.value?.context.adapter??''))
 const tongguanBodyOnly=computed(()=>contract.value?.context.adapter==='shaanxi_tongguan_role_application_v1')
+const xianHighTechBodyOnly=computed(()=>contract.value?.context.adapter==='shaanxi_xian_high_tech_application_v1')
 const signInstruction=computed(()=>{
+  if(xianHighTechBodyOnly.value)return'此处填写请求事项和事实理由。下载后请补全当事人信息和日期，按原表要求亲笔签名捺印。'
   if(['shaanxi_mizhi_worker_application_v1','shaanxi_qingjian_worker_application_v1'].includes(contract.value?.context.adapter??''))return'此处填写仲裁请求和事实理由。下载后请补全当事人信息、申请人署名和日期。'
   if(contract.value?.context.adapter==='shaanxi_shenmu_worker_evidence_v1')return'下载后请在原表填写提交人和提交时间。'
   if(contract.value?.context.adapter==='shaanxi_huayin_worker_application_v1')return'此处填写仲裁请求以及事实和理由。下载后请补全双方信息、仲裁委员会名称、签名和日期。'
