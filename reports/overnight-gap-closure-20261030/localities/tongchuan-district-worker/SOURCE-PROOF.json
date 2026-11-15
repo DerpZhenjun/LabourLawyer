@@ -1,0 +1,421 @@
+{
+  "regions": {
+    "610202": {
+      "original_html_sha256": "b5f4229f2f1e2c376d59af29423be93e1f994ce8d04dfac51f19bd19a902e771",
+      "materials_receipt_sha256": "92011f73a1146e85c8bed13d1a68532afa1702803719e01bc96ffaa8d2e5cdc3",
+      "pending_blank_reviews": [],
+      "file_entries": [
+        {
+          "name": "外国人就业证",
+          "blank": [],
+          "sample": [
+            "不涉及外国人就业证.docx"
+          ]
+        },
+        {
+          "name": "授权委托书",
+          "blank": [],
+          "sample": [
+            "2514cb5c26bedeed0dc1653ac9b069b.jpg"
+          ]
+        },
+        {
+          "name": "劳动（人事）关系证明材料",
+          "blank": [],
+          "sample": [
+            "033f8c7583e955c9446493eddf36159.jpg"
+          ]
+        },
+        {
+          "name": "劳动人事争议仲裁申请书",
+          "blank": [],
+          "sample": [
+            "劳动仲裁申请书.docx"
+          ]
+        }
+      ],
+      "guide": {
+        "province": "shaanxi",
+        "province_name": "陕西省",
+        "city": "铜川市",
+        "district": "王益区",
+        "scope_level": "district",
+        "region_code": "610202",
+        "authority": "王益区人社局",
+        "service_name": "劳动人事争议仲裁申请",
+        "source_title": "劳动人事争议仲裁申请（劳动者）",
+        "source_url": "https://zwfw.tongchuan.gov.cn/wangyi/icity/proinfo/index?code=689dd51baa349bf71db04b138d3ef7b3",
+        "source_version": "92011f73a1146e85c8bed13d1a68532afa1702803719e01bc96ffaa8d2e5cdc3",
+        "official_version": "",
+        "collected_at": "2026-11-15T07:36:09.539580+00:00",
+        "verified_at": "2026-11-15T07:36:09.539580+00:00",
+        "verification_status": "verified",
+        "published": true,
+        "can_generate": false,
+        "fields": {},
+        "sections": {
+          "办理地点和时间": "陕西省铜川市王益区红旗街街道 王益区政府前楼108(办理窗口:综合窗口) 夏令时:星期一至星期五上午09:00至12:00,下午15:00至18:00(法定节假日除外) 冬令时:星期一至星期五上午09:00至12:00,下午14:00至18:00(法定节假日除外)",
+          "公开指南所列申请条件": "1、区县及以下国家机关、事业单位和社会团体发生的劳动、人事争议；2、区县范围内驻铜部队师级以下单位发生劳动、人事争议；3、中、省属驻铜单位和市属国有、集体及国有控股企业设立的分支机构在本区县范围内发生的劳动争议；4、其他各类企业及其分支机构和民办非企业单位在本区县范围内发生的劳动争议；5、市劳动人事争议仲裁委员会指定受理的劳动、人事争议。",
+          "实施机构": "铜川市王益区劳动者维权和仲裁调解中心",
+          "事项时限与审批结果": "法定办结时限（工作日） 5 个；承诺办结时限（工作日） 5个；审批结果名称 不予受理通知书 受理通知书"
+        },
+        "materials": [
+          {
+            "id": "610202-worker-1",
+            "region_code": "610202",
+            "source_url": "https://zwfw.tongchuan.gov.cn/wangyi/icity/proinfo/index?code=689dd51baa349bf71db04b138d3ef7b3",
+            "name": "外国人就业证",
+            "format": "纸质材料",
+            "copies": "原件1份  复印件1份",
+            "required": "非必要",
+            "instructions": "符合条件；申请人自备",
+            "raw_value": "纸质材料；原件1份  复印件1份；非必要；符合条件；申请人自备",
+            "normalized_value": "纸质材料；原件1份  复印件1份；非必要；符合条件；申请人自备",
+            "verification_status": "verified",
+            "collected_at": "2026-11-15T07:36:09.539580+00:00",
+            "verified_at": "2026-11-15T07:36:09.539580+00:00"
+          },
+          {
+            "id": "610202-worker-2",
+            "region_code": "610202",
+            "source_url": "https://zwfw.tongchuan.gov.cn/wangyi/icity/proinfo/index?code=689dd51baa349bf71db04b138d3ef7b3",
+            "name": "授权委托书",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "instructions": "符合劳动争议调解仲裁法；申请人自备；委托内容全面",
+            "raw_value": "纸质材料；原件1份；必要；符合劳动争议调解仲裁法；申请人自备；委托内容全面",
+            "normalized_value": "纸质材料；原件1份；必要；符合劳动争议调解仲裁法；申请人自备；委托内容全面",
+            "verification_status": "verified",
+            "collected_at": "2026-11-15T07:36:09.539580+00:00",
+            "verified_at": "2026-11-15T07:36:09.539580+00:00"
+          },
+          {
+            "id": "610202-worker-3",
+            "region_code": "610202",
+            "source_url": "https://zwfw.tongchuan.gov.cn/wangyi/icity/proinfo/index?code=689dd51baa349bf71db04b138d3ef7b3",
+            "name": "劳动（人事）关系证明材料",
+            "format": "纸质、电子",
+            "copies": "原件1份  复印件1份",
+            "required": "必要",
+            "instructions": "符合条件；申请人自备",
+            "raw_value": "纸质、电子；原件1份  复印件1份；必要；符合条件；申请人自备",
+            "normalized_value": "纸质、电子；原件1份  复印件1份；必要；符合条件；申请人自备",
+            "verification_status": "verified",
+            "collected_at": "2026-11-15T07:36:09.539580+00:00",
+            "verified_at": "2026-11-15T07:36:09.539580+00:00"
+          },
+          {
+            "id": "610202-worker-4",
+            "region_code": "610202",
+            "source_url": "https://zwfw.tongchuan.gov.cn/wangyi/icity/proinfo/index?code=689dd51baa349bf71db04b138d3ef7b3",
+            "name": "身份证",
+            "format": "纸质、电子",
+            "copies": "复印件1份",
+            "required": "必要",
+            "instructions": "有效期内的身份证复印件；申请人自备",
+            "raw_value": "纸质、电子；复印件1份；必要；有效期内的身份证复印件；申请人自备",
+            "normalized_value": "纸质、电子；复印件1份；必要；有效期内的身份证复印件；申请人自备",
+            "verification_status": "verified",
+            "collected_at": "2026-11-15T07:36:09.539580+00:00",
+            "verified_at": "2026-11-15T07:36:09.539580+00:00"
+          },
+          {
+            "id": "610202-worker-5",
+            "region_code": "610202",
+            "source_url": "https://zwfw.tongchuan.gov.cn/wangyi/icity/proinfo/index?code=689dd51baa349bf71db04b138d3ef7b3",
+            "name": "劳动人事争议仲裁申请书",
+            "format": "纸质、电子",
+            "copies": "原件2份",
+            "required": "必要",
+            "instructions": "符合条件；申请人自备；内容真实完整",
+            "raw_value": "纸质、电子；原件2份；必要；符合条件；申请人自备；内容真实完整",
+            "normalized_value": "纸质、电子；原件2份；必要；符合条件；申请人自备；内容真实完整",
+            "verification_status": "verified",
+            "collected_at": "2026-11-15T07:36:09.539580+00:00",
+            "verified_at": "2026-11-15T07:36:09.539580+00:00"
+          }
+        ],
+        "templates": [
+          {
+            "id": "tongchuan-610202-application-sample",
+            "region_code": "610202",
+            "official_kind": "sample",
+            "source_url": "https://zwfw.tongchuan.gov.cn/wangyi/icity/proinfo/index?code=689dd51baa349bf71db04b138d3ef7b3",
+            "official_attachment_entry": "material_tab",
+            "original_name": "王益区劳动仲裁申请书（官方样表入口）",
+            "download_status": "official_link_only",
+            "document_types": [
+              "application"
+            ],
+            "can_generate": false
+          }
+        ],
+        "channel": {
+          "raw_value": "窗口办理 网上办理",
+          "online_status": "unverified",
+          "entry_url": null,
+          "submission_verified": false
+        },
+        "warnings": [
+          "王益区公开材料栏目仅列申请书样表入口，空白申请书待核验。",
+          "本次公开材料未核验到独立证据清单。线上申办未实测。"
+        ]
+      }
+    },
+    "610203": {
+      "original_html_sha256": "c1bd10cc7192d99cd852126481f9d51e6033def36b49170fd011d0096c869670",
+      "materials_receipt_sha256": "9ea8f66ce64721155f5d414d607229ef72c35b26a78fe9cbebca2bddd862fc36",
+      "pending_blank_reviews": [],
+      "file_entries": [
+        {
+          "name": "劳动人事争议仲裁申请书",
+          "blank": [],
+          "sample": [
+            "仲裁申请书.jpg"
+          ]
+        },
+        {
+          "name": "授权委托书",
+          "blank": [],
+          "sample": [
+            "3.个人委托授权书.doc"
+          ]
+        },
+        {
+          "name": "劳动（人事）关系证明材料",
+          "blank": [],
+          "sample": [
+            "劳动合同.jpg"
+          ]
+        }
+      ],
+      "guide": {
+        "province": "shaanxi",
+        "province_name": "陕西省",
+        "city": "铜川市",
+        "district": "印台区",
+        "scope_level": "district",
+        "region_code": "610203",
+        "authority": "印台区人力资源和社会保障局",
+        "service_name": "劳动人事争议仲裁申请",
+        "source_title": "劳动人事争议仲裁申请（劳动者）",
+        "source_url": "https://zwfw.tongchuan.gov.cn/yintai/icity/proinfo/index?code=5e6d7905330bbcd63f2b56d1d613028d",
+        "source_version": "9ea8f66ce64721155f5d414d607229ef72c35b26a78fe9cbebca2bddd862fc36",
+        "official_version": "",
+        "collected_at": "2026-11-15T07:37:28.054928+00:00",
+        "verified_at": "2026-11-15T07:37:28.054928+00:00",
+        "verification_status": "verified",
+        "published": true,
+        "can_generate": false,
+        "fields": {},
+        "sections": {
+          "办理地点和时间": "陕西省铜川市印台区城关街道 同官路98-附10号附近印台区人力资源和社会保障局(办理窗口:仲裁院306室) 夏令时:星期一至星期五上午08:30至12:00,下午15:00至18:00(法定节假日除外) 冬令时:星期一至星期五上午08:30至12:00,下午14:00至18:00(法定节假日除外)",
+          "公开指南所列申请条件": "仲裁请求符合仲裁受理范围 仲裁请求符合管辖范围 仲裁申请书应当载明仲裁申请书应当载明下列事项： （一）劳动者的姓名、性别、年龄、职业、工作单位和住所，用人单位的名称、住所和法定代表人或者主要负责人的姓名、职务； （二）仲裁请求和所根据的事实、理由； （三）证据和证据来源、证人姓名和住所。",
+          "实施机构": "劳动人事争议仲裁院",
+          "事项时限与审批结果": "法定办结时限（工作日） 5 个；承诺办结时限（工作日） 5个；审批结果名称 不予受理通知书 受理通知书"
+        },
+        "materials": [
+          {
+            "id": "610203-worker-1",
+            "region_code": "610203",
+            "source_url": "https://zwfw.tongchuan.gov.cn/yintai/icity/proinfo/index?code=5e6d7905330bbcd63f2b56d1d613028d",
+            "name": "劳动人事争议仲裁申请书",
+            "format": "纸质材料",
+            "copies": "原件2份",
+            "required": "必要",
+            "instructions": "仲裁申请书应当载明下列事项： （...；申请人提供；本人签名需手写、按指纹",
+            "raw_value": "纸质材料；原件2份；必要；仲裁申请书应当载明下列事项： （...；申请人提供；本人签名需手写、按指纹",
+            "normalized_value": "纸质材料；原件2份；必要；仲裁申请书应当载明下列事项： （...；申请人提供；本人签名需手写、按指纹",
+            "verification_status": "verified",
+            "collected_at": "2026-11-15T07:37:28.054928+00:00",
+            "verified_at": "2026-11-15T07:37:28.054928+00:00"
+          },
+          {
+            "id": "610203-worker-2",
+            "region_code": "610203",
+            "source_url": "https://zwfw.tongchuan.gov.cn/yintai/icity/proinfo/index?code=5e6d7905330bbcd63f2b56d1d613028d",
+            "name": "授权委托书",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "instructions": "受委托人需符合民事诉讼法的代理条...；申请人提供；受委托人系自然人需提供身份证原件...",
+            "raw_value": "纸质材料；原件1份；必要；受委托人需符合民事诉讼法的代理条...；申请人提供；受委托人系自然人需提供身份证原件...",
+            "normalized_value": "纸质材料；原件1份；必要；受委托人需符合民事诉讼法的代理条...；申请人提供；受委托人系自然人需提供身份证原件...",
+            "verification_status": "verified",
+            "collected_at": "2026-11-15T07:37:28.054928+00:00",
+            "verified_at": "2026-11-15T07:37:28.054928+00:00"
+          },
+          {
+            "id": "610203-worker-3",
+            "region_code": "610203",
+            "source_url": "https://zwfw.tongchuan.gov.cn/yintai/icity/proinfo/index?code=5e6d7905330bbcd63f2b56d1d613028d",
+            "name": "身份证",
+            "format": "纸质材料",
+            "copies": "原件1份  复印件1份",
+            "required": "必要",
+            "instructions": "申请人提供",
+            "raw_value": "纸质材料；原件1份  复印件1份；必要；申请人提供",
+            "normalized_value": "纸质材料；原件1份  复印件1份；必要；申请人提供",
+            "verification_status": "verified",
+            "collected_at": "2026-11-15T07:37:28.054928+00:00",
+            "verified_at": "2026-11-15T07:37:28.054928+00:00"
+          },
+          {
+            "id": "610203-worker-4",
+            "region_code": "610203",
+            "source_url": "https://zwfw.tongchuan.gov.cn/yintai/icity/proinfo/index?code=5e6d7905330bbcd63f2b56d1d613028d",
+            "name": "劳动（人事）关系证明材料",
+            "format": "纸质材料",
+            "copies": "原件1份  复印件1份",
+            "required": "必要",
+            "instructions": "申请人提供；能够证明存在劳动人事关系的证据，...",
+            "raw_value": "纸质材料；原件1份  复印件1份；必要；申请人提供；能够证明存在劳动人事关系的证据，...",
+            "normalized_value": "纸质材料；原件1份  复印件1份；必要；申请人提供；能够证明存在劳动人事关系的证据，...",
+            "verification_status": "verified",
+            "collected_at": "2026-11-15T07:37:28.054928+00:00",
+            "verified_at": "2026-11-15T07:37:28.054928+00:00"
+          }
+        ],
+        "templates": [
+          {
+            "id": "tongchuan-610203-application-sample",
+            "region_code": "610203",
+            "official_kind": "sample",
+            "source_url": "https://zwfw.tongchuan.gov.cn/yintai/icity/proinfo/index?code=5e6d7905330bbcd63f2b56d1d613028d",
+            "official_attachment_entry": "material_tab",
+            "original_name": "印台区劳动仲裁申请书（官方样表入口）",
+            "download_status": "official_link_only",
+            "document_types": [
+              "application"
+            ],
+            "can_generate": false
+          }
+        ],
+        "channel": {
+          "raw_value": "窗口办理 网上办理",
+          "online_status": "unverified",
+          "entry_url": null,
+          "submission_verified": false
+        },
+        "warnings": [
+          "印台区公开材料栏目仅列申请书样表入口，空白申请书待核验。",
+          "本次公开材料未核验到独立证据清单。线上申办未实测。",
+          "印台区指南所列申请书字段与《劳动争议调解仲裁法》第二十八条表述有差异，填写前请核对办理机构的现行要求。"
+        ]
+      }
+    },
+    "610204": {
+      "original_html_sha256": "0254fc10e9e9c18c56f91ced3842f428c3f64087390387963334926f8225f110",
+      "materials_receipt_sha256": "fb0e89bc8f52c7e6b94ec5b9edcf2a4e0fc9a50b233960514fa12b69860425dc",
+      "pending_blank_reviews": [
+        {
+          "material": "授权委托书",
+          "original_filename": "委托书.docx",
+          "original_sha256": "128837098459c5677e2ecb0929ab833645224946264344218f9ffb2a19e923fd",
+          "original_bytes": 15438
+        }
+      ],
+      "file_entries": [
+        {
+          "name": "劳动人事争议仲裁申请书",
+          "blank": [],
+          "sample": [
+            "申请书.jpg"
+          ]
+        },
+        {
+          "name": "授权委托书",
+          "blank": [
+            "委托书.docx"
+          ],
+          "sample": []
+        }
+      ],
+      "guide": {
+        "province": "shaanxi",
+        "province_name": "陕西省",
+        "city": "铜川市",
+        "district": "耀州区",
+        "scope_level": "district",
+        "region_code": "610204",
+        "authority": "耀州区人社局",
+        "service_name": "劳动人事争议仲裁申请",
+        "source_title": "劳动人事争议仲裁申请（劳动者）",
+        "source_url": "https://zwfw.tongchuan.gov.cn/yaozhou/icity/proinfo/index?code=6bec09fd771fc7977881001a14bb7c0a",
+        "source_version": "fb0e89bc8f52c7e6b94ec5b9edcf2a4e0fc9a50b233960514fa12b69860425dc",
+        "official_version": "",
+        "collected_at": "2026-11-15T07:39:27.987249+00:00",
+        "verified_at": "2026-11-15T07:39:27.987249+00:00",
+        "verification_status": "verified",
+        "published": true,
+        "can_generate": false,
+        "fields": {},
+        "sections": {
+          "办理地点和时间": "陕西省铜川市耀州区永安路街道 永安南路53号(办理窗口:3楼) 夏令时:星期一至星期五上午08:30至12:00,下午15:00至18:00(法定节假日除外) 冬令时:星期一至星期五上午08:30至12:00,下午14:00至18:00(法定节假日除外)",
+          "公开指南所列申请条件": "3.《劳动人事争议仲裁办案规则》第二条“本规则适用下列争议的仲裁：（一）企业、个体经济组织、民办非企业单位等组织与劳动者之间，以及机关、事业单位、社会团体与其建立劳动关系的劳动者之间，因确认劳动关系，订立、履行、变更、解除和终止劳动合同，工作时间、休息休假、社会保险、福利、培训以及劳动保护，劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议；（二）实施公务员法的机关与聘任制公务员之间、参照公务员法管理的机关（单位）与聘任工作人员之间因履行聘任合同发生的争议；（三）事业单位与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（四）社会团体与其建立人事关系的工作人员之间因终止人事关系以及履行聘用合同发生的争议；（五）军队文职人员用人单位与聘用制文职人员之间因履行聘用合同发生的争议；（六）法律、法规规定由劳动人事争议仲裁委员会（以下简称仲裁委员会）处理的其他争议。” 2.《劳动争议调解仲裁法》第二条“中华人民共和国境内的用人单位与劳动者发生的下列劳动争议，适用本法：（一）因确认劳动关系发生的争议；（二）因订立、履行、变更、解除和终止劳动合同发生的争议；（三）因除名、辞退和辞职、离职发生的争议；（四）因工作时间、休息休假、社会保险、福利、培训以及劳动保护发生的争议；（五）因劳动报酬、工伤医疗费、经济补偿或者赔偿金等发生的争议； （六）法律、法规规定的其他劳动争议。”第五条“发生劳动争议，当事人不愿协商、协商不成或者达成和解协议后不履行的，可以向调解组织申请调解；不愿调解、调解不成或者达成调解协议后不履行的，可以向劳动争议仲裁委员会申请仲裁。”",
+          "实施机构": "调解仲裁科",
+          "事项时限与审批结果": "法定办结时限（工作日） 5 个；承诺办结时限（工作日） 2个；审批结果名称 受理通知书 不予受理通知书"
+        },
+        "materials": [
+          {
+            "id": "610204-worker-1",
+            "region_code": "610204",
+            "source_url": "https://zwfw.tongchuan.gov.cn/yaozhou/icity/proinfo/index?code=6bec09fd771fc7977881001a14bb7c0a",
+            "name": "劳动人事争议仲裁申请书",
+            "format": "纸质材料",
+            "copies": "原件2份",
+            "required": "必要",
+            "instructions": "劳动争议仲裁办案规则 第三十条 ...；自写；仲裁申请书应当载明下列事项： （...",
+            "raw_value": "纸质材料；原件2份；必要；劳动争议仲裁办案规则 第三十条 ...；自写；仲裁申请书应当载明下列事项： （...",
+            "normalized_value": "纸质材料；原件2份；必要；劳动争议仲裁办案规则 第三十条 ...；自写；仲裁申请书应当载明下列事项： （...",
+            "verification_status": "verified",
+            "collected_at": "2026-11-15T07:39:27.987249+00:00",
+            "verified_at": "2026-11-15T07:39:27.987249+00:00"
+          },
+          {
+            "id": "610204-worker-2",
+            "region_code": "610204",
+            "source_url": "https://zwfw.tongchuan.gov.cn/yaozhou/icity/proinfo/index?code=6bec09fd771fc7977881001a14bb7c0a",
+            "name": "授权委托书",
+            "format": "纸质材料",
+            "copies": "原件1份",
+            "required": "必要",
+            "instructions": "申请人有委托人需提供委托书；文书填写要求及注意事项 ...",
+            "raw_value": "纸质材料；原件1份；必要；申请人有委托人需提供委托书；文书填写要求及注意事项 ...",
+            "normalized_value": "纸质材料；原件1份；必要；申请人有委托人需提供委托书；文书填写要求及注意事项 ...",
+            "verification_status": "verified",
+            "collected_at": "2026-11-15T07:39:27.987249+00:00",
+            "verified_at": "2026-11-15T07:39:27.987249+00:00"
+          }
+        ],
+        "templates": [
+          {
+            "id": "tongchuan-610204-application-sample",
+            "region_code": "610204",
+            "official_kind": "sample",
+            "source_url": "https://zwfw.tongchuan.gov.cn/yaozhou/icity/proinfo/index?code=6bec09fd771fc7977881001a14bb7c0a",
+            "official_attachment_entry": "material_tab",
+            "original_name": "耀州区劳动仲裁申请书（官方样表入口）",
+            "download_status": "official_link_only",
+            "document_types": [
+              "application"
+            ],
+            "can_generate": false
+          }
+        ],
+        "channel": {
+          "raw_value": "网上办理",
+          "online_status": "unverified",
+          "entry_url": null,
+          "submission_verified": false
+        },
+        "warnings": [
+          "耀州区公开材料栏目仅列申请书样表入口，空白申请书待核验。",
+          "官方授权委托书空表已取得，内容和版式仍在核验。",
+          "本次公开材料未核验到独立证据清单。线上申办未实测。"
+        ]
+      }
+    }
+  }
+}
