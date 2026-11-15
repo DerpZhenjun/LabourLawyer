@@ -1,0 +1,33 @@
+{
+  "state": "PASS",
+  "cases": [
+    {
+      "code": "610302",
+      "source_id": "85f2b25d6c44bbfe7d7e9017",
+      "blank_sha256": "a9abffd8a2714f636689727f0113f2d19f22c76ba1a7809792ac029ce64295da",
+      "filled_sha256": "c7c9c7995b45b409ca38054bb39b63441a40a7fea4712f622a743c5a0cb720fa",
+      "cancel_without_post": true,
+      "viewports": [
+        375,
+        768,
+        1440
+      ]
+    }
+  ],
+  "blocked": [],
+  "errors": [],
+  "fengxiang": {
+    "official_sample_link": true,
+    "generation_ui_present": false,
+    "source_id": "c88226feb76b713e4fe763f1"
+  },
+  "published": false,
+  "browser_receipt_sha256": "35920266d3e0b57bfcc74a1629d168da5800974a803aede994b4a00de6fc9b03",
+  "browser_downloads": 2,
+  "word_filled_pages": 1,
+  "word_evidence": "Browser download byte-identical to previously Microsoft Word-rendered official layout fixture.",
+  "focused_passed": 9,
+  "regression_passed": 13,
+  "regression_skipped": 1,
+  "web_build_passed": true
+}

@@ -75,7 +75,7 @@
             </details>
           </div>
           <a v-if="t.download_status==='downloaded'" class="ll-button secondary" :href="originalTemplateLink(t.id)">{{ t.file_origin==='official-handwritten-blank-layout'?'下载手写空表':t.file_origin==='official-blank-converted-layout'?'下载空白转换版':t.file_origin==='official-blank-metadata-sanitized-layout'?'下载空白填写版':'下载原文件' }}</a>
-          <a v-else-if="t.download_status==='official_link_only'" class="ll-button secondary" :href="t.source_url" target="_blank" rel="noopener noreferrer">打开官方附件</a>
+          <a v-else-if="t.download_status==='official_link_only'" class="ll-button secondary" :href="t.source_url" target="_blank" rel="noopener noreferrer">{{ t.official_attachment_entry==='material_tab'?'前往官网申报材料':'打开官方附件' }}</a>
           <span v-else>下载待核验</span>
         </div>
         <div v-if="generatable" class="reference-fill"><h3>按{{ guide.district }}{{ blankGeneration?'官方空白表格':'参考样表' }}辅助填写</h3><p>{{ blankGeneration?'当前填写使用本地区官网提供、已核对的空白表格。':'官网将申请书附件列为示例样表。' }}页面上方可以直接填写；默认内容为本平台虚构示例，请替换为真实信息。签名位置留空，不自动提交申请。</p><div class="region-actions"><RouterLink v-if="hasGenerationKind(guide,'application')" :to="documentLink('application')" class="ll-button">填写申请书</RouterLink><RouterLink v-if="hasGenerationKind(guide,'evidence')" :to="documentLink('evidence')" class="ll-button secondary">填写证据清单</RouterLink></div></div>

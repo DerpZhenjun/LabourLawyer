@@ -22,7 +22,7 @@ class BaojiCountyApplicationAPITests(TestCase):
 
         with TemporaryDirectory() as work:
             store = RegionalStore(Path(work) / 'guide.sqlite')
-            guides = {code: store.put_guide(staged_guide(code, ROOT)) for code in ('610323', '610326', '610327', '610329', '610303', '610331')}
+            guides = {code: store.put_guide(staged_guide(code, ROOT)) for code in ('610323', '610326', '610327', '610329', '610303', '610331', '610302')}
             app = FastAPI()
             app.include_router(routes.router, prefix='/regional')
             with patch.object(routes, 'ROOT', ROOT), patch.object(routes, 'store', return_value=store), TestClient(app) as client:
@@ -40,6 +40,11 @@ class BaojiCountyApplicationAPITests(TestCase):
                         if code in {'610329', '610303', '610331'}:
                             self.assertEqual(blank.headers['X-Document-Origin'], 'official-blank-converted-layout')
                             self.assertEqual(template['original_format'], 'DOC')
+                        if code == '610302':
+                            self.assertEqual(guide['authority'], '渭滨区人力资源和社会保障局')
+                            self.assertIn('2d4627f40526c121783dd9a99196cc2a', template['source_url'])
+                            application = next(m for m in guide['materials'] if '仲裁申请书' in m['name'])
+                            self.assertIn('原件1份', application['copies'])
                         if code == '610303':
                             self.assertEqual(guide['authority'], '金台区人力资源和社会保障局')
                             self.assertIn('b98e034d881b2120f4e36b837c117c45', template['source_url'])
@@ -98,3 +103,28 @@ class BaojiCountyApplicationAPITests(TestCase):
                 generate_query = {**query, 'template_id': template['id'], 'kind': 'application'}
                 self.assertEqual(client.get('/regional/form-contract', params=generate_query).status_code, 409)
                 self.assertEqual(client.post('/regional/generate', json={**generate_query, 'mode': 'blank', 'data': {}}).status_code, 409)
+
+
+    def test_fengxiang_exposes_its_official_sample_link_without_generation(self):
+        from regional_baoji_county_application import staged_fengxiang_guide
+
+        with TemporaryDirectory() as work:
+            store = RegionalStore(Path(work) / 'guide.sqlite')
+            guide = store.put_guide(staged_fengxiang_guide(ROOT))
+            self.assertEqual(guide['region_code'], '610305')
+            self.assertEqual(guide['authority'], '凤翔区人力资源和社会保障局')
+            self.assertEqual(len(guide['materials']), 4)
+            self.assertIs(guide['can_generate'], False)
+            template, = guide['templates']
+            self.assertEqual(template['official_kind'], 'sample')
+            self.assertEqual(template['download_status'], 'official_link_only')
+            self.assertIs(template['can_generate'], False)
+            self.assertIn('e98532adcf9a3fdfbe2e5aa75271d289', template['source_url'])
+            query = {key: guide[key] for key in ('province', 'city', 'district', 'source_id', 'version')}
+            app = FastAPI()
+            app.include_router(routes.router, prefix='/regional')
+            with patch.object(routes, 'ROOT', ROOT), patch.object(routes, 'store', return_value=store), TestClient(app) as client:
+                self.assertEqual(client.get(f"/regional/templates/{template['id']}", params=query).status_code, 404)
+                query.update(template_id=template['id'], kind='application')
+                self.assertEqual(client.get('/regional/form-contract', params=query).status_code, 409)
+                self.assertEqual(client.post('/regional/generate', json={**query,'mode':'blank','data':{}}).status_code, 409)

@@ -33,12 +33,15 @@ FENGXIAN_PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-f
 FENGXIAN_PROOF_SHA = 'dfab8a5d9228185c7fedce36e4dc4a2a5213df8b6ee635f98952be2df7ad3745'
 FENGXIAN_LAYOUT = Path('templates/_docx/_regional/shaanxi/610330-handwritten-blank-layout.docx')
 FENGXIAN_ORIGIN = 'official-handwritten-blank-layout'
+WEIBIN_FENGXIANG_PROOF = Path('reports/overnight-gap-closure-20261030/localities/baoji-weibin-fengxiang-worker/SOURCE-PROOF.json')
+WEIBIN_FENGXIANG_PROOF_SHA = '46cc84018feaf65a8784e54f72acef6e5a60908d7ca6bfe3c7b8237a91948b61'
 SHARED = 'shaanxi_baoji_qishan_long_worker_v1'
 MEI = 'shaanxi_baoji_mei_worker_v1'
 LINYOU = 'shaanxi_baoji_linyou_worker_v1'
 JINTAI = 'shaanxi_baoji_jintai_worker_v1'
 TAIBAI = 'shaanxi_baoji_taibai_worker_v1'
-ADAPTERS = {'610323': SHARED, '610326': MEI, '610327': SHARED, '610329': LINYOU, '610303': JINTAI, '610331': TAIBAI}
+WEIBIN = 'shaanxi_baoji_weibin_worker_v1'
+ADAPTERS = {'610323': SHARED, '610326': MEI, '610327': SHARED, '610329': LINYOU, '610303': JINTAI, '610331': TAIBAI, '610302': WEIBIN}
 LAYOUTS = {
     code: Path(f'templates/_docx/_regional/shaanxi/baoji-{code}-worker-application.docx') for code in ADAPTERS
 }
@@ -47,6 +50,7 @@ LAYOUT_HASHES = {
     '610323': SHARED_LAYOUT_SHA,
     '610326': 'd3b1d4fe23d4578a2b323cf2e7f500eadaa8b22e832f627b751e77ba6af5116f',
     '610327': SHARED_LAYOUT_SHA,
+    '610302': SHARED_LAYOUT_SHA,
     '610331': '19ced1ed971860179d2d11fb15e5b14cab76cac08a2ed1ca78ef4493818e1766',
     '610303': '1afb707186df326b3cc6192300068bf19a5312a46d76822531cefae83f07d0b7',
     '610329': '5c64d10d59977f133f8a38ae2ccb72fd02eba4b8e12f7f2b771dcf42845b9c69',
@@ -158,7 +162,7 @@ class TaibaiApplication(OwnBase):
 
 MODELS_BY_ADAPTER = {
     SHARED: QishanLongApplication, MEI: MeiApplication, LINYOU: LinyouApplication,
-    JINTAI: QishanLongApplication, TAIBAI: TaibaiApplication,
+    JINTAI: QishanLongApplication, TAIBAI: TaibaiApplication, WEIBIN: QishanLongApplication,
 }
 MODELS = {code: MODELS_BY_ADAPTER[adapter] for code, adapter in ADAPTERS.items()}
 
@@ -184,7 +188,7 @@ def _write_mei(paragraphs, data):
         paragraphs[index].paragraph_format.keep_with_next = True
 
 
-def _write_qishan_long(paragraphs, data):
+def _write_shared_layout(paragraphs, data):
     applicant = paragraphs[2].runs
     applicant[2].text = '，'.join(label + '：' + data[key] for key, label in (
         ('applicant_name', '姓名'), ('gender', '性别'), ('nationality', '民族'), ('age', '年龄'),
@@ -330,7 +334,7 @@ def fill_application(code, layout, values):
     elif code == '610331':
         _write_taibai(document.paragraphs, data)
     else:
-        _write_qishan_long(document.paragraphs, data)
+        _write_shared_layout(document.paragraphs, data)
     return PreservedPackageDocument(document, layout)
 
 
@@ -392,7 +396,13 @@ def staged_guide(code, root=None):
         raise ValueError('该区县暂无通过验收的申请书')
     root = Path(ROOT if root is None else root).resolve()
     guide_hash = BASE_GUIDES_SHA
-    if code == '610303':
+    if code == '610302':
+        proof_hash = WEIBIN_FENGXIANG_PROOF_SHA
+        region = json.loads(_pinned_bytes(root, WEIBIN_FENGXIANG_PROOF, proof_hash))['regions'][code]
+        proof = {'items': [region['template']]}
+        guide = region['guide']
+        guide_hash = guide['source_version']
+    elif code == '610303':
         proof_hash = JINTAI_PROOF_SHA
         proof = json.loads(_pinned_bytes(root, JINTAI_PROOF, proof_hash))
         guide = proof['guide']
@@ -467,3 +477,12 @@ def check_fengxian_blank(guide, template, root):
     expected = staged_fengxian_guide(root)
     if template != expected['templates'][0] or any(guide.get(key) != value for key, value in expected.items()):
         raise ValueError('凤县官方手写空表与当前指南不匹配')
+
+
+def staged_fengxiang_guide(root=None):
+    root = Path(ROOT if root is None else root).resolve()
+    proof = json.loads(_pinned_bytes(root, WEIBIN_FENGXIANG_PROOF, WEIBIN_FENGXIANG_PROOF_SHA))
+    guide = proof['regions']['610305']['guide']
+    guide.update(source_id=digest(guide['source_url'])[:24],
+                 source_version=digest(guide['source_version'] + ':' + WEIBIN_FENGXIANG_PROOF_SHA))
+    return guide
