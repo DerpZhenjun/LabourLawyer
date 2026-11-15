@@ -27,6 +27,11 @@ export function materialDetails(material:unknown):Record<string,unknown> {
  return result
 }
 export function hasGenerationKind(guide:unknown,kind:DocumentKind):boolean {return isPlainRecord(guide)&&Array.isArray(guide.templates)&&guide.templates.some(t=>isPlainRecord(t)&&t.can_generate===true&&Array.isArray(t.document_types)&&t.document_types.includes(kind))}
+export function hasVerifiedOfficialBlankLink(guide: Pick<RegionalGuide, 'templates'>): boolean {
+ return guide.templates.some(template => template.official_kind === 'blank'
+  && Boolean(template.official_sha256)
+  && template.download_status === 'official_link_only')
+}
 export interface TemplateDisplay extends RegionalTemplate {source_url:string;region_code:string;download_status:string;original_name:string;official_kind:string}
 export interface MaterialDisplay extends Record<string,unknown> {id:string;name:string;official_badges:string[];required:string;format:string;copies:string|number;purpose:string}
 export interface GuideDisplay extends RegionalGuide {display_sections:ReturnType<typeof readGuideSections>;templates:TemplateDisplay[];materials:MaterialDisplay[];warnings:string[];verified_at:string;official_version:string;channel:{online_status:string;entry_url:string;raw_value:string;entry_check:{status:string}}}

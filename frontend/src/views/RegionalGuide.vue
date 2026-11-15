@@ -79,7 +79,13 @@
           <span v-else>下载待核验</span>
         </div>
         <div v-if="generatable" class="reference-fill"><h3>按{{ guide.district }}{{ blankGeneration?'官方空白表格':'参考样表' }}辅助填写</h3><p>{{ blankGeneration?'当前填写使用本地区官网提供、已核对的空白表格。':'官网将申请书附件列为示例样表。' }}页面上方可以直接填写；默认内容为本平台虚构示例，请替换为真实信息。签名位置留空，不自动提交申请。</p><div class="region-actions"><RouterLink v-if="hasGenerationKind(guide,'application')" :to="documentLink('application')" class="ll-button">填写申请书</RouterLink><RouterLink v-if="hasGenerationKind(guide,'evidence')" :to="documentLink('evidence')" class="ll-button secondary">填写证据清单</RouterLink></div></div>
-        <p v-else-if="!guide.templates.some(t=>t.file_origin==='official-handwritten-blank-layout')" class="region-notice">本地区附件尚未通过自动填写核验，{{ guide.templates.some(t=>t.download_status==='downloaded')?'可下载上方已核实的原文件参考。':'尚未核实可下载文件，请打开官方原文查询或向办理机构确认。' }}不会套用其他地区的文书。</p>
+        <p v-else-if="!guide.templates.some(t=>t.file_origin==='official-handwritten-blank-layout')" class="region-notice">
+          本地区附件尚未通过自动填写核验。
+          <template v-if="guide.templates.some(t=>t.download_status==='downloaded')">可下载上方已核实的原文件参考。</template>
+          <template v-else-if="hasVerifiedOfficialBlankLink(guide)">已核验的空表可从上方官网入口下载。</template>
+          <template v-else>尚未核实可下载文件，请打开官方原文查询或向办理机构确认。</template>
+          不会套用其他地区的文书。
+        </p>
       </section>
       <section class="region-panel" id="regional-original"><span class="ll-eyebrow">04 · 完整原文</span><h2>核对受理条件和其他说明</h2><details v-for="section in guide.display_sections" :key="section.key" class="original-section"><summary>{{ section.label }}</summary><p class="official-raw">{{ section.value || '相关说明待核实' }}</p></details><p class="region-small">原文来自本次公开页面采集。页面内容更新后，应再次核验；不能替代办理机构对管辖、材料和受理条件的判断。</p></section>
     </div>
@@ -87,7 +93,7 @@
   </main>
 </template>
 <script setup lang="ts">
-import {guideField,visitCountLabel,originalCopyLabel,materialCopiesLabel,materialDetails,hasGenerationKind,readGuideDisplay,publicError} from '@/data/regionalGuidePresentation'
+import {guideField,visitCountLabel,originalCopyLabel,materialCopiesLabel,materialDetails,hasGenerationKind,hasVerifiedOfficialBlankLink,readGuideDisplay,publicError} from '@/data/regionalGuidePresentation'
 import type {DirectoryArea} from '@/data/regionalGuidePresentation'
 import {plainGuideWarning} from '../../../packages/regional-contracts/src/index.ts'
 import type {DocumentKind,Region} from '../../../packages/regional-contracts/src/index.ts'

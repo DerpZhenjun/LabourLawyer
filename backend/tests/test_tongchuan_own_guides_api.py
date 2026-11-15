@@ -63,3 +63,38 @@ class TongchuanOwnGuidesApiTests(TestCase):
                             query = {**scope, 'kind': kind}
                             self.assertEqual(client.get('/regional/form-contract', params=query).status_code, 409)
                             self.assertEqual(client.post('/regional/generate', json={**query, 'mode': 'blank', 'data': {}}).status_code, 409)
+
+
+    def test_yaozhou_blank_authorization_preserves_official_source_without_enabling_generation(self):
+        from regional_tongchuan_guides import staged_guide, staged_yaozhou_authorization_guide
+
+        with TemporaryDirectory() as work:
+            store = RegionalStore(Path(work) / 'guides.sqlite')
+            previous = store.put_guide(staged_guide('610204', ROOT))
+            current = store.put_guide(staged_yaozhou_authorization_guide(ROOT))
+            self.assertGreater(current['version'], previous['version'])
+            self.assertEqual(current['source_id'], previous['source_id'])
+            self.assertEqual(current['templates'][0], previous['templates'][0])
+            self.assertEqual(current['materials'], previous['materials'])
+            self.assertNotIn('内容和版式仍在核验', ' '.join(current['warnings']))
+            template, = [item for item in current['templates'] if item['official_kind'] == 'blank']
+            self.assertEqual(template['region_code'], '610204')
+            self.assertEqual(template['source_url'], current['source_url'])
+            self.assertEqual(template['official_attachment_entry'], 'material_tab')
+            self.assertEqual(template['download_status'], 'official_link_only')
+            self.assertEqual(template['official_sha256'], '128837098459c5677e2ecb0929ab833645224946264344218f9ffb2a19e923fd')
+            self.assertNotIn('file', template)
+            self.assertFalse(template['can_generate'])
+            self.assertFalse(current['can_generate'])
+            scope = {key: current[key] for key in ('province', 'city', 'district')}
+            app = FastAPI()
+            app.include_router(routes.router, prefix='/regional')
+            with patch.object(routes, 'ROOT', ROOT), patch.object(routes, 'store', return_value=store), TestClient(app) as client:
+                valid = {**scope, 'source_id': current['source_id'], 'version': current['version']}
+                route = f"/regional/templates/{template['id']}"
+                self.assertEqual(client.get(route, params=valid).status_code, 404)
+                self.assertEqual(client.get(route, params={**valid, 'version': previous['version']}).status_code, 409)
+                self.assertEqual(client.get(route, params={**scope, 'district': '印台区'}).status_code, 404)
+                query = {**valid, 'template_id': template['id'], 'kind': 'application'}
+                self.assertEqual(client.get('/regional/form-contract', params=query).status_code, 409)
+                self.assertEqual(client.post('/regional/generate', json={**query, 'mode':'blank', 'data':{}}).status_code, 409)

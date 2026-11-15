@@ -9,7 +9,17 @@
     </div>
     <p v-if="loading" class="region-panel" role="status">正在核对文书来源…</p>
     <p v-else-if="error" class="region-notice danger" role="alert">暂时无法核对文书来源，请在下方重新读取指南。</p>
-    <div v-else-if="guide?.source_id && !localTemplate" class="region-panel workspace-unavailable"><h3>当地文书尚未通过填写核验</h3><p>不会用其他区县的模板代替。{{ guide.templates?.some(t=>t.download_status==='downloaded')?'你可以先下载已核实的当地原文件参考填写。':'尚未核实可下载文件，请先查看官网材料栏目或向办理机构确认。' }}办理指南仍在下方。</p><a href="#regional-documents" class="ll-button secondary">查看当地文书核验情况</a></div>
+    <div v-else-if="guide?.source_id && !localTemplate" class="region-panel workspace-unavailable">
+      <h3>当地文书尚未通过填写核验</h3>
+      <p>
+        不会用其他区县的模板代替。
+        <template v-if="guide.templates.some(t=>t.download_status==='downloaded')">你可以先下载已核实的当地原文件参考填写。</template>
+        <template v-else-if="hasVerifiedOfficialBlankLink(guide)">已核验的空表可从下方官网入口下载。</template>
+        <template v-else>尚未核实可下载文件，请先查看官网材料栏目或向办理机构确认。</template>
+        办理指南仍在下方。
+      </p>
+      <a href="#regional-documents" class="ll-button secondary">查看当地文书核验情况</a>
+    </div>
     <div v-else-if="!guide?.source_id && (!legacyAvailable || hasSelectedPlace)" class="region-panel workspace-unavailable"><h3>该地区暂未开放这类文书生成</h3><p>尚未核验可填写的模板，不会套用其他地区的文书。已有历史文书可在单独的适用范围页面查看。</p><RouterLink :to="`/province/${region.province}/templates`" class="ll-button secondary">查看已有文书的适用范围</RouterLink></div>
     <div v-else-if="!guide?.source_id" class="workspace-scope" role="note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i><p>当前文书来源：{{ province?.officialName }}。适用范围：{{ province?.scope || '请核对来源' }}。<strong>不代表所选区县的模板已经核验</strong>；提交前请向当地受理机构确认。<a :href="province?.officialUrl" target="_blank" rel="noopener noreferrer">查看来源 ↗</a></p></div>
     <KeepAlive :max="6"><component v-if="editor" :is="editor" :key="editorKey" v-bind="editorProps" /></KeepAlive>
@@ -18,6 +28,7 @@
 <script setup lang="ts">
 import {computed,defineAsyncComponent,ref} from 'vue'
 import {RouterLink} from 'vue-router'
+import {hasVerifiedOfficialBlankLink} from '@/data/regionalGuidePresentation'
 import type {DocumentKind,Region,RegionalGuide} from '../../../packages/regional-contracts/src/index'
 interface WorkspaceProvince {officialName?:string;scope?:string;officialUrl?:string;hasApplication?:boolean;hasEvidence?:boolean}
 const props=withDefaults(defineProps<{region:Region;province?:WorkspaceProvince|null|undefined;guide?:RegionalGuide|null|undefined;loading?:boolean;error?:string}>(),{loading:false,error:''})
