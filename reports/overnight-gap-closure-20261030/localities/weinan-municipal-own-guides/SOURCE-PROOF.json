@@ -1,0 +1,44 @@
+{
+  "region_code": "610500",
+  "city": "渭南市",
+  "authority": "渭南市人力资源和社会保障局",
+  "official_home": "https://www.weinan.gov.cn/",
+  "official_home_sha256": "159f87dffda2777b6313fd59a84642509688fbc1c67b0f1def3860d1498fd6a1",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610500000000",
+  "department_code": "11610500562222916D",
+  "commitment_workdays": 5,
+  "consultation_phone": "0913-2363017",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1113560176120&siteCode=610500000000",
+      "collected_at": "2026-11-15T15:35:24.803Z",
+      "receipt_sha256": "dbf4759227bc3a2840929be4232a863aa2619e1cffa6f43829a24ce9b23ec5f7",
+      "venue": "陕西省渭南市临渭区解放街道 朝阳大街83号渭南市人力资源和社会保障局(办理窗口:709办公室)",
+      "material": {
+        "name": "劳动人事争议仲裁申请书",
+        "required": "必要",
+        "instructions": "无",
+        "portal_label": "样表",
+        "original_sha256": "efb976ca1258700db18704fb80b73fe2ff1a2dce52463a48a667fefde41c45f6",
+        "original_pages": 2
+      }
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1112609175553&siteCode=610500000000",
+      "collected_at": "2026-11-15T15:35:25.038Z",
+      "receipt_sha256": "add72a41c34f89d610efb92d4dcd0fe234144d68d24463e7cb69fcd08b8a533d",
+      "venue": "陕西省渭南市临渭区解放街道 朝阳大街83号渭南市人力资源和社会保障局(办理窗口:709室)",
+      "material": {
+        "name": "劳动人事争议仲裁申请书",
+        "required": "必要",
+        "instructions": "无",
+        "portal_label": "样表",
+        "original_sha256": "111f8db43eeb066791f0474bd77b6e4ef0d0e35112a1160c8a4cf11c00b9775b",
+        "original_pages": 1
+      }
+    }
+  },
+  "word_receipt_sha256": "e39a8bd78130e6378e8486590f93667701705a2aee9a2e8ce79520184136f27b"
+}
