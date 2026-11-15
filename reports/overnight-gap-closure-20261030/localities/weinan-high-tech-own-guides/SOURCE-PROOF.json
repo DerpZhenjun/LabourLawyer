@@ -1,0 +1,181 @@
+{
+  "region_code": "610591",
+  "city": "渭南市",
+  "district": "高新区",
+  "authority": "渭南高新技术产业开发区社会事业局",
+  "official_home": "https://gaoxinqu.weinan.gov.cn/",
+  "official_home_sha256": "41159c23299bf7bdb4d09da08a5c2885db27da8449c5c8955c75a6990e1d5776",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610591000000",
+  "department_code": "12610500016112955N",
+  "consultation_phone": "0913-2111162",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114028673560&siteCode=610591000000",
+      "collected_at": "2026-11-15T17:39:17.686Z",
+      "raw_receipt_sha256": "566c6897d75ae5cd9db2f19d099c34b095b9cc0911fd80010477ac4cd7efab34",
+      "office": "陕西省渭南市临渭区崇业路街道 六泉路老管委会(办理窗口:315室)",
+      "commitment_workdays": 1,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "filename_extension": ".jpg",
+              "actual_format": "JPEG",
+              "sha256": "bbd4e058bce21ec28bdf6b7c8bda3384cd0d819a9b5008d557b7016fb476ef32",
+              "captured_at": "2026-11-15T17:39:47.8378150Z"
+            },
+            {
+              "portal_label": "空表",
+              "filename_extension": ".jpg",
+              "actual_format": "JPEG",
+              "sha256": "bbd4e058bce21ec28bdf6b7c8bda3384cd0d819a9b5008d557b7016fb476ef32",
+              "captured_at": "2026-11-15T17:39:49.6939979Z"
+            }
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "filename_extension": ".jpg",
+              "actual_format": "JPEG",
+              "sha256": "276c0982e5a66eb4e7de29ec9a3cf391f951a5ec173d572d7b00eac49d815e5f",
+              "captured_at": "2026-11-15T17:39:50.0465127Z"
+            },
+            {
+              "portal_label": "空表",
+              "filename_extension": ".jpg",
+              "actual_format": "JPEG",
+              "sha256": "276c0982e5a66eb4e7de29ec9a3cf391f951a5ec173d572d7b00eac49d815e5f",
+              "captured_at": "2026-11-15T17:39:50.3218604Z"
+            }
+          ]
+        },
+        {
+          "key": "relationship",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "filename_extension": ".png",
+              "actual_format": "PNG",
+              "sha256": "7a8f5e69533b3be3691b0c03b00d67223557d2a002cee27b68833d7b6b866474",
+              "captured_at": "2026-11-15T17:39:50.9339467Z"
+            },
+            {
+              "portal_label": "空表",
+              "filename_extension": ".png",
+              "actual_format": "PNG",
+              "sha256": "7a8f5e69533b3be3691b0c03b00d67223557d2a002cee27b68833d7b6b866474",
+              "captured_at": "2026-11-15T17:39:51.6685316Z"
+            }
+          ]
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "filename_extension": ".jpg",
+              "actual_format": "PNG",
+              "sha256": "5605c545b63648cd5da047d215e643eda0054cc2b757d6909795b19fb7dc9a7e",
+              "captured_at": "2026-11-15T17:39:52.1586005Z"
+            },
+            {
+              "portal_label": "空表",
+              "filename_extension": ".jpg",
+              "actual_format": "PNG",
+              "sha256": "5605c545b63648cd5da047d215e643eda0054cc2b757d6909795b19fb7dc9a7e",
+              "captured_at": "2026-11-15T17:40:24.1425344Z"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114918673473&siteCode=610591000000",
+      "collected_at": "2026-11-15T17:39:17.919Z",
+      "raw_receipt_sha256": "b92ab14bb597065a71c0fcf1125022079d2e4a0602a5ff7ec556229cfcb3fd33",
+      "office": "陕西省渭南市临渭区崇业路街道 东风大街西段12号(办理窗口:315室)",
+      "commitment_workdays": 1,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "filename_extension": ".jpg",
+              "actual_format": "JPEG",
+              "sha256": "bbd4e058bce21ec28bdf6b7c8bda3384cd0d819a9b5008d557b7016fb476ef32",
+              "captured_at": "2026-11-15T17:40:25.9257411Z"
+            }
+          ]
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "filename_extension": ".jpg",
+              "actual_format": "JPEG",
+              "sha256": "bbd4e058bce21ec28bdf6b7c8bda3384cd0d819a9b5008d557b7016fb476ef32",
+              "captured_at": "2026-11-15T17:40:26.8975763Z"
+            }
+          ]
+        },
+        {
+          "key": "relationship",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "filename_extension": ".jpg",
+              "actual_format": "JPEG",
+              "sha256": "bbd4e058bce21ec28bdf6b7c8bda3384cd0d819a9b5008d557b7016fb476ef32",
+              "captured_at": "2026-11-15T17:40:29.4126256Z"
+            }
+          ]
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "filename_extension": ".jpg",
+              "actual_format": "JPEG",
+              "sha256": "be6932021adc18a6ee00114b69dafdccec9a1d8f102f34876cd15b7f85ccc913",
+              "captured_at": "2026-11-15T17:40:30.7634096Z"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "attachment_count": 12,
+  "distinct_attachment_sha_count": 5,
+  "verified_blank_templates": 0,
+  "attachment_receipt_sha256": "db5970ae7aa529129eb88093eb9c7eba962c9dbcc008cf68ce940bc2025a35c1",
+  "image_preflight_sha256": "c8f6d43ecd7ebb4c4fee9c266b91a35ccb9e8688e5a0ba570c078e2dbf805125",
+  "image_content_review_state": "DECODE_AND_BYTE_PARITY_ONLY",
+  "all_worker_blank_sample_pairs_same_bytes": true,
+  "worker_application_same_as_employer_application_qualification_relationship": true
+}
