@@ -1,0 +1,170 @@
+{
+  "area": {
+    "province": "陕西省",
+    "city": "安康市",
+    "district": "宁陕县",
+    "region_code": "610923",
+    "site_code": "610923000000",
+    "authority": "宁陕县人社局",
+    "department_code": "11610923016052999M"
+  },
+  "navigation": {
+    "county_home": "https://www.ningshan.gov.cn/",
+    "county_home_sha256": "87a3ede25d80c963551662571784d45a027e6738165c931c475f0e6ddbdc1e33",
+    "committee_notice": "https://www.ningshan.gov.cn/Content-2770394.html",
+    "committee_notice_sha256": "e2552c921be80110b56cec5125564bc63d608c73ccf4437845d48dcfc4b44dad",
+    "county_service": "https://zwfw.shaanxi.gov.cn/pc/#/c/service?type=1&siteCode=610923000000",
+    "department_dom_sha256": "03117207874b978ddd7e03dd0318ad09957397963ced1a0402d60875f97e0e5f"
+  },
+  "common": {
+    "onsite_visits": 1,
+    "statutory_time": "5 个工作日",
+    "commitment": "5 个工作日",
+    "phone": "0915-6828286",
+    "service_depth": "信息发布"
+  },
+  "worker": {
+    "role": "劳动者",
+    "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1118247286707&siteCode=610923000000",
+    "observed_at": "2026-11-15T12:17:20.489Z",
+    "venue": "宁陕县城关镇迎宾大道32号创业就业中心5楼，宁陕县劳动人事争议仲裁股",
+    "dom_sha256": "98a02bf8d9bb4c005d15c47e4ee9d85672487518f7c86b301863cca02bb9e963",
+    "materials": [
+      {
+        "name": "劳动人事争议仲裁申请书",
+        "required": "必要",
+        "instructions": "无",
+        "labels": [
+          "样表",
+          "空表"
+        ]
+      },
+      {
+        "name": "劳动（人事）关系证明材料",
+        "required": "必要",
+        "instructions": "无",
+        "labels": [
+          "样表",
+          "空表"
+        ]
+      },
+      {
+        "name": "授权委托书",
+        "required": "必要",
+        "instructions": "如申请律师代理需复印律师资格证。",
+        "labels": [
+          "空表"
+        ]
+      },
+      {
+        "name": "申请人身份证明材料",
+        "required": "必要",
+        "instructions": "无",
+        "labels": [
+          "空表"
+        ]
+      }
+    ],
+    "application": {
+      "title": "宁陕县劳动者仲裁申请书（官方参考格式）",
+      "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/34/6B/rBIxU2Hnaq2Ad5ThAAA8AA8sx2w981.doc",
+      "portal_label": "空表",
+      "actual_kind": "sample",
+      "format": "doc",
+      "pages": 2,
+      "sha256": "ad6192beab740c8d4c8ca106db95d15c8757fa0c47dc621c4493b0a7ef2baed0",
+      "bytes": 15360,
+      "original_fetched_at": "2026-11-15T20:17:49.2149069+08:00",
+      "example_facts": true,
+      "editable_layout_sha256": "ec7b301f2d955fa803047318a78fb9a8bfd1ad9293eb65858d79a6c0ae46c739",
+      "page_sha256": [
+        "f53981ab136d5140bb9836b600c26ee771d7ef4aa76e6e864046b136036889f0",
+        "7c903c789df30b33b927b789fb9a0e5344313af8487a9498d5ee40803fcaba64"
+      ]
+    }
+  },
+  "employer": {
+    "role": "用人单位",
+    "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1119437277504&siteCode=610923000000",
+    "observed_at": "2026-11-15T12:17:20.959Z",
+    "venue": "宁陕县城关镇长安街13号，人社局窗口",
+    "dom_sha256": "1ffc4c4dc1c045b1b26d8ed5f9fd30a967b50517cca36646f74a40223ea0eadd",
+    "materials": [
+      {
+        "name": "劳动人事争议仲裁申请书",
+        "required": "必要",
+        "instructions": "填报息需真实有效。",
+        "labels": [
+          "样表",
+          "空表"
+        ]
+      },
+      {
+        "name": "劳动（人事）关系证明材料",
+        "required": "必要",
+        "instructions": "无",
+        "labels": [
+          "样表",
+          "空表"
+        ]
+      },
+      {
+        "name": "授权委托书",
+        "required": "必要",
+        "instructions": "授权人如是代理律师需提供律师资格证复印件。",
+        "labels": []
+      },
+      {
+        "name": "主体资格证明材料",
+        "required": "必要",
+        "instructions": "身份证复印件是单位法人。",
+        "labels": []
+      }
+    ],
+    "application": {
+      "title": "宁陕县用人单位仲裁申请书（官方参考格式）",
+      "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/20/C6/rBIxVGHnZ0aAG9LSAABCAFnQsP4557.doc",
+      "portal_label": "空表",
+      "actual_kind": "sample",
+      "format": "doc",
+      "pages": 2,
+      "sha256": "2376a4d118cde85a064f0aca7058fb2d58086ffc4cd033ffa49fdc8d7d9ae34f",
+      "bytes": 16896,
+      "original_fetched_at": "2026-11-15T20:17:51.9712847+08:00",
+      "example_facts": true,
+      "editable_layout_sha256": "eb1fb595891643b22a2cec7b9069c79df5196e441057218a267135d383473c6b",
+      "page_sha256": [
+        "c90695e0e181c2bbf49cab939bcf3899a76168716e22f4c80965f1d4bfecc1f9",
+        "2fdf4035fc73ec231e85e3802f3c2a17b096f5b2ed9df1f19fc0e320931fde6a"
+      ]
+    }
+  },
+  "worker_authorization": {
+    "title": "宁陕县劳动者授权委托书（官方空表）",
+    "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/20/C6/rBIxVGHnaz6ALfYVAAA2AFGpMdI710.doc",
+    "portal_label": "空表",
+    "actual_kind": "blank",
+    "format": "doc",
+    "pages": 1,
+    "sha256": "648bdd1f27ef675e9ffd31b8eacdce93cafd68dbaffd9613e6834cd8afa90ba7",
+    "bytes": 13824,
+    "recipient": "宁陕县劳动人事争议仲裁委员会",
+    "signature_and_date": "manual",
+    "original_fetched_at": "2026-11-15T20:17:50.6127449+08:00",
+    "editable_layout_sha256": "664fb6d131cc18305068bc362f1cb4950b679f5dac1a5e502a7734a8415aebe7",
+    "page_sha256": [
+      "e192ae9d47e39e96d900014245151e927ad7b28105828152852b4082908b2572"
+    ]
+  },
+  "relationship_attachment": {
+    "sha256": "d8bd10c0b9f122aeaf7c0c2ee0f9b9cb029680859c1fe09532ad36c519d8ba9d",
+    "both_roles_labels_same_bytes": true,
+    "treat_as_blank": false
+  },
+  "copies_note": "两份申请书的第二页都同时列三份表述，以及两份或按被申请人人数提交的说明。份数以对应窗口确认为准。",
+  "authorization_requirement_note": "两条指南都把授权委托书标为必要，两份参考格式的材料页另写明有委托代理人时提交。用人单位事项的委托书及主体资格材料未见公开附件入口。",
+  "attachment_receipt_sha256": "7cce97e7b8265266b55729ba33b6f2eb1c3c4eb6f900a8afb64e65bb3335bc81",
+  "count_downloads": 10,
+  "state": "OWN_TWO_ROLE_GUIDES_TWO_APPLICATION_REFERENCES_ONE_WORKER_AUTHORIZATION_BLANK_VERIFIED",
+  "published": false
+}
