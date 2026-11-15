@@ -1,0 +1,76 @@
+{
+  "collected_at": "2026-11-15T23:44:36Z",
+  "region_code": "610426",
+  "city": "咸阳市",
+  "district": "永寿县",
+  "authority": "永寿县人力资源和社会保障局",
+  "consultation_phone": "029-37669116",
+  "complaint_phone": "029-37663432",
+  "hours": "星期一至星期五上午08:30至12:00，下午14:30至18:00（法定节假日除外）",
+  "source_receipt_sha256": "c3932f2303d4731e993b312bf0769c25c63855c2a0ae9b77429e85c06596330e",
+  "source_law_title_reference": "https://www.mohrss.gov.cn/SYrlzyhshbzb/ztzl/ldrszytjzc/fgzc/202207/t20220714_457857.html",
+  "channel_note": "两份指南均列网上办理，公开按钮实测到陕西省统一身份认证。两份指南均标物流快递不支持。",
+  "attachment_note": "劳动者事项的材料原文写“人事争议仲裁申请书”，材料依据栏用语需向永寿县人社局核对。用人单位事项单列表格及份数。三项材料的附件共四条，均标为样表。",
+  "venue_note": "两角色均指新永路1号永寿县人民政府人社局301。",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114447147712&siteCode=610426000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=49cc72fa13b388e39f65e93d407237f3&areacode=610426000000",
+      "office": "陕西省咸阳市永寿县 新永路1号永寿县人民政府（办理窗口：永寿县人社局301）",
+      "handling_form": "网上办理",
+      "legal_workdays": 5,
+      "promised_workdays": 5,
+      "materials": [
+        {
+          "key": "identity",
+          "name": "申请人有效身份证件",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_urls": [
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/11/BE/rBIxVGC1kQSAX3yKAAKpgrt7VQE525.jpg",
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/25/63/rBIxU2C1kP2ATdvHAAjz7OZNgcM081.jpg"
+          ]
+        },
+        {
+          "key": "application",
+          "name": "人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "instructions": "材料原文称人事争议仲裁申请书，依据栏用语需核对。附件标为样表。",
+          "sample_urls": [
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/11/8C/rBIxVGC0pTuAebQAAHvKNXDoxmE123.jpg"
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1115140147297&siteCode=610426000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=6b7af5a066cefd35682f2f866b9e3b52&areacode=610426000000",
+      "office": "陕西省咸阳市永寿县 新永路1号永寿县人民政府（办理窗口：永寿县人社局301）",
+      "handling_form": "网上办理",
+      "legal_workdays": 5,
+      "promised_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件和复印件",
+          "format": "电子和纸质",
+          "copies": "原件1份、复印件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_urls": [
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/11/94/rBIxVGC0qlKAP_hNAHvKNXDoxmE987.jpg"
+          ]
+        }
+      ]
+    }
+  }
+}
