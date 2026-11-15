@@ -1,0 +1,142 @@
+{
+  "collected_at": "2026-11-15T23:50:32Z",
+  "region_code": "610428",
+  "city": "咸阳市",
+  "district": "长武县",
+  "authority": "长武县人社局",
+  "consultation_phone": "029-34201821",
+  "complaint_phone": "029-34202383",
+  "hours": "星期一至星期五上午08:30至12:00，下午14:30至18:00（法定节假日除外）",
+  "source_receipt_sha256": "24e845440270c4e2a20a59531a14546e1e4d2419f4903c3227e6d8e8fbf81752",
+  "primary_role": "employer",
+  "channel_note": "劳动者仅列窗口办理，公开按钮暂不支持在线办理。用人单位列网上办理、窗口办理、快递申请，在线公开按钮实测到陕西省统一身份认证，官网网办链接只对应单位事项。",
+  "attachment_note": "两份指南共8项材料，附件均为样表。劳动者的劳动关系材料与授权委托书标为容缺后补，用人单位仅劳动关系材料标为容缺后补。",
+  "venue_note": "两角色均指四楼403人事争议仲裁院办公室。劳动者页面另列车站街79号。用人单位页面承诺时限栏为0个工作日，具体办结时限以办理机关答复为准。",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1112569250547&siteCode=610428000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=34aafdaa80073c7cf7bd2fb3806dc996&areacode=610428000000",
+      "office": "陕西省咸阳市长武县 车站街79号长武县人力资源和社会保障局（办理窗口：四楼403人事争议仲裁院办公室）",
+      "handling_form": "窗口办理",
+      "legal_workdays": 5,
+      "promised_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件和复印件",
+          "format": "电子和纸质",
+          "copies": "原件1份、复印件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_urls": [
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/08/EB/rBIxVGCkys-AF-rCAAA8AJpbS4c458.doc"
+          ]
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1份、复印件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_urls": [
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1B/33/rBIxU2CkzC6APh6VAAqN8296clY535.jpg"
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1份、复印件1份",
+          "required": "容缺后补",
+          "instructions": "指南列为容缺后补，具体条件向办理机关核对。附件标为样表。",
+          "sample_urls": [
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1B/38/rBIxU2CkzeaACkXFAA3cWa1am9Y891.jpg",
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/08/F4/rBIxVGCkzeaARunEAA61X-c-1ZM896.jpg",
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/08/F4/rBIxVGCkzeaACp96AA4UBwKLjv4675.jpg",
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1B/38/rBIxU2CkzeaAYzM5AAxE3f2xHOk472.jpg"
+          ]
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "容缺后补",
+          "instructions": "指南列为容缺后补，具体条件向办理机关核对。附件标为样表。",
+          "sample_urls": [
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/08/F6/rBIxVGCkzo-AY1EEAAshJhemfkM537.jpg"
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1118076148030&siteCode=610428000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=abc4fbfe31945293af0adc8c77c28d06&areacode=610428000000",
+      "office": "陕西省咸阳市长武县 长武县人力资源和社会保障局（办理窗口：四楼403人事争议仲裁院办公室）",
+      "handling_form": "网上办理、窗口办理、快递申请",
+      "legal_workdays": 5,
+      "promised_workdays": 0,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件和复印件",
+          "format": "电子和纸质",
+          "copies": "原件1份、复印件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_urls": [
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0A/99/rBIxVGCnF_OAW1mWAAA8AJpbS4c024.doc"
+          ]
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1份、复印件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_urls": [
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1C/E2/rBIxU2CnGZaACoQRAAwfXPAw1rc729.jpg",
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0A/9E/rBIxVGCnGZaAJA9FAAqNOekPuAM891.jpg"
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1份、复印件1份",
+          "required": "容缺后补",
+          "instructions": "指南列为容缺后补，具体条件向办理机关核对。附件标为样表。",
+          "sample_urls": [
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0A/9F/rBIxVGCnGfGABLOQAA4UBwKLjv4607.jpg",
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1C/E3/rBIxU2CnGfGAKbRpAA61X-c-1ZM911.jpg",
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0A/9F/rBIxVGCnGfGAFsxWAAxE3f2xHOk050.jpg",
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0A/9F/rBIxVGCnGfGAXdDzAA3cWa1am9Y062.jpg"
+          ]
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_urls": [
+            "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0A/9F/rBIxVGCnGjOAD-L-AAshJhemfkM511.jpg"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -22,7 +22,7 @@ def read_guide(root, source, source_sha256, district, warning):
     proof = json.loads(raw)
     roles = proof["roles"]
     code = proof["region_code"]
-    source_url = roles["worker"]["source_url"]
+    source_url = roles[proof.get("primary_role", "worker")]["source_url"]
     channel = "\n".join(f'{item["name"]}：{item["handling_form"]}' for item in roles.values())
     return {
         "province": "shaanxi",
