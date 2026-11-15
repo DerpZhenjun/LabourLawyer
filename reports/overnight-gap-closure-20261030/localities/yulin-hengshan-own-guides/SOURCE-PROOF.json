@@ -1,0 +1,335 @@
+{
+  "region_code": "610803",
+  "city": "榆林市",
+  "district": "横山区",
+  "authority": "横山区人社局",
+  "official_home": "https://www.hszf.gov.cn/",
+  "official_home_sha256": "c96558604c7c7bf4e5839e13f146e9c1867f1b0e1f2a7879eb4ff7afcd3f6d92",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610803000000",
+  "department_code": "1161082301608646X3",
+  "consultation_phone": "0912-7618282",
+  "attachment_ledger_sha256": "07f20c3423529bd1ba9dda547ef0809a99c300eee98fcce8a7579ff27b68a61f",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114382136663&siteCode=610803000000",
+      "collected_at": "2026-11-15T18:08:52.171Z",
+      "raw_receipt_sha256": "d056872c5afafe75fe651b448ae9ed97076490c049bd5c8ecabd2cd9127e6bc4",
+      "office": "陕西省榆林市横山区 怀远东路古城环路/怀远东路(路口)(办理窗口:仲裁院)",
+      "commitment_workdays": 0,
+      "materials": [
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "captured_at": "2026-11-15T18:10:00.3781101Z",
+              "sha256": "6288ad4edd218a4746073c381e2e7ccca5c017d35b444d6e1789b40e95162fd2"
+            },
+            {
+              "portal_label": "空表",
+              "format": "OLE",
+              "captured_at": "2026-11-15T18:10:00.5963266Z",
+              "sha256": "4a113f9d72e9bba0c13724e23b3ec5cfd1fdc16b455eb798f9208e5cccf08cab"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表1",
+              "format": "OLE",
+              "captured_at": "2026-11-15T18:10:00.9250743Z",
+              "sha256": "c8fdcc4e2b0d67028832cb205f1f5c7eff91596076e02d4468711f5bc1aa4340"
+            },
+            {
+              "portal_label": "样表2",
+              "format": "ZIP",
+              "captured_at": "2026-11-15T18:10:01.2220018Z",
+              "sha256": "9fbe97ff45f73fd1520d3242a70d3aeb958ca73535aafc91269e0c09eab4c9a2"
+            },
+            {
+              "portal_label": "样表3",
+              "format": "ZIP",
+              "captured_at": "2026-11-15T18:10:01.4446137Z",
+              "sha256": "f9301ed82da0ff9fb824c384d4c3161a08cc74d4aa812b4a13569da137acf2f3"
+            },
+            {
+              "portal_label": "样表4",
+              "format": "ZIP",
+              "captured_at": "2026-11-15T18:10:01.7289524Z",
+              "sha256": "8f56374629e73cd26049f538634d9943634c14ce2dcea3ecab71632a1047bdf0"
+            },
+            {
+              "portal_label": "空表1",
+              "format": "OLE",
+              "captured_at": "2026-11-15T18:10:02.0765827Z",
+              "sha256": "c8fdcc4e2b0d67028832cb205f1f5c7eff91596076e02d4468711f5bc1aa4340"
+            },
+            {
+              "portal_label": "空表2",
+              "format": "ZIP",
+              "captured_at": "2026-11-15T18:10:02.3786356Z",
+              "sha256": "8f56374629e73cd26049f538634d9943634c14ce2dcea3ecab71632a1047bdf0"
+            },
+            {
+              "portal_label": "空表3",
+              "format": "ZIP",
+              "captured_at": "2026-11-15T18:10:02.6318203Z",
+              "sha256": "f9301ed82da0ff9fb824c384d4c3161a08cc74d4aa812b4a13569da137acf2f3"
+            },
+            {
+              "portal_label": "空表4",
+              "format": "ZIP",
+              "captured_at": "2026-11-15T18:10:02.9067127Z",
+              "sha256": "9fbe97ff45f73fd1520d3242a70d3aeb958ca73535aafc91269e0c09eab4c9a2"
+            }
+          ]
+        },
+        {
+          "key": "employment-permit",
+          "name": "外国人就业证",
+          "required": "必要",
+          "original_copy": "原件或复印件",
+          "format": "电子和纸质",
+          "copies": "原件1 份 复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表1",
+              "format": "JPEG",
+              "captured_at": "2026-11-15T18:10:03.2057532Z",
+              "sha256": "7ea6bbaa5abac2881e335b330112f921b17460cea0414d00fea12ae968052fe6"
+            },
+            {
+              "portal_label": "样表2",
+              "format": "JPEG",
+              "captured_at": "2026-11-15T18:10:03.4309594Z",
+              "sha256": "fbdb84118cf76658a716a8de5be0269e7f2fa972047a64de8614f0ffeb4668af"
+            },
+            {
+              "portal_label": "样表3",
+              "format": "JPEG",
+              "captured_at": "2026-11-15T18:10:03.7020056Z",
+              "sha256": "54ab6c5fbe880d1cc73822615e265545d16bf97a3db8b03550f15d5848ce41ed"
+            },
+            {
+              "portal_label": "空表",
+              "format": "JPEG",
+              "captured_at": "2026-11-15T18:10:04.0138025Z",
+              "sha256": "7ea6bbaa5abac2881e335b330112f921b17460cea0414d00fea12ae968052fe6"
+            }
+          ]
+        },
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件3 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "captured_at": "2026-11-15T18:10:05.8210431Z",
+              "sha256": "2dc10b0840b57503cb8d6a5eff810cb88cdbd18b8436fc53ecb7e239967aa2ac"
+            },
+            {
+              "portal_label": "空表",
+              "format": "OLE",
+              "captured_at": "2026-11-15T18:10:06.0451357Z",
+              "sha256": "5b21fdfb280f9a2d80d83b1c6938b4d5ab26e53b500840e69a9522e5fd44f070"
+            }
+          ]
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "OLE",
+              "captured_at": "2026-11-15T18:10:06.2949589Z",
+              "sha256": "1e6ff5b07eefc3e3daf44854253c9c1f308a1e55c4474c816557ee8e278182e9"
+            },
+            {
+              "portal_label": "空表",
+              "format": "OLE",
+              "captured_at": "2026-11-15T18:10:06.5756395Z",
+              "sha256": "1e6ff5b07eefc3e3daf44854253c9c1f308a1e55c4474c816557ee8e278182e9"
+            }
+          ]
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1119882126762&siteCode=610803000000",
+      "collected_at": "2026-11-15T18:08:51.923Z",
+      "raw_receipt_sha256": "a2b9c6b0dc90abf45af700bcbd3d66669339cb508f660fb19a2062053518e577",
+      "office": "陕西省榆林市横山区 怀远东路古城环路/怀远东路(路口)(办理窗口:政务大楼2楼劳动人事争议调解仲裁窗口)",
+      "commitment_workdays": 0,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "captured_at": "2026-11-15T18:10:07.1264569Z",
+              "sha256": "01eefaaf5df3320915008ad3b79cb2fca046f322df79d5cb3a532a48419ea35e"
+            },
+            {
+              "portal_label": "空表",
+              "format": "OLE",
+              "captured_at": "2026-11-15T18:10:07.4301331Z",
+              "sha256": "8212b96e84dd929b69fffaefabe1a02eed5c50d1090c28b460f526c5e6cf6dd2"
+            }
+          ]
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "JPEG",
+              "captured_at": "2026-11-15T18:10:09.4299459Z",
+              "sha256": "76ec3868f554374d2a6d71b49208210561e61db3e7f1e34bce770d7fb7ca1942"
+            },
+            {
+              "portal_label": "空表",
+              "format": "JPEG",
+              "captured_at": "2026-11-15T18:10:10.0908765Z",
+              "sha256": "35c4825e17ddc675c8aea5639a0e5abd617f7a783585701b5bc8d871caff3b6f"
+            }
+          ]
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "original_copy": "原件或复印件",
+          "format": "纸质材料",
+          "copies": "原件1 份 复印件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表1",
+              "format": "ZIP",
+              "captured_at": "2026-11-15T18:10:10.4613322Z",
+              "sha256": "f9301ed82da0ff9fb824c384d4c3161a08cc74d4aa812b4a13569da137acf2f3"
+            },
+            {
+              "portal_label": "样表2",
+              "format": "ZIP",
+              "captured_at": "2026-11-15T18:10:10.7905406Z",
+              "sha256": "8f56374629e73cd26049f538634d9943634c14ce2dcea3ecab71632a1047bdf0"
+            },
+            {
+              "portal_label": "样表3",
+              "format": "ZIP",
+              "captured_at": "2026-11-15T18:10:11.0985769Z",
+              "sha256": "9fbe97ff45f73fd1520d3242a70d3aeb958ca73535aafc91269e0c09eab4c9a2"
+            },
+            {
+              "portal_label": "样表4",
+              "format": "OLE",
+              "captured_at": "2026-11-15T18:10:11.4120084Z",
+              "sha256": "c8fdcc4e2b0d67028832cb205f1f5c7eff91596076e02d4468711f5bc1aa4340"
+            },
+            {
+              "portal_label": "空表1",
+              "format": "OLE",
+              "captured_at": "2026-11-15T18:10:11.7737203Z",
+              "sha256": "c8fdcc4e2b0d67028832cb205f1f5c7eff91596076e02d4468711f5bc1aa4340"
+            },
+            {
+              "portal_label": "空表2",
+              "format": "ZIP",
+              "captured_at": "2026-11-15T18:10:12.0534022Z",
+              "sha256": "8f56374629e73cd26049f538634d9943634c14ce2dcea3ecab71632a1047bdf0"
+            },
+            {
+              "portal_label": "空表3",
+              "format": "ZIP",
+              "captured_at": "2026-11-15T18:10:12.3438729Z",
+              "sha256": "f9301ed82da0ff9fb824c384d4c3161a08cc74d4aa812b4a13569da137acf2f3"
+            },
+            {
+              "portal_label": "空表4",
+              "format": "ZIP",
+              "captured_at": "2026-11-15T18:10:12.6751203Z",
+              "sha256": "9fbe97ff45f73fd1520d3242a70d3aeb958ca73535aafc91269e0c09eab4c9a2"
+            }
+          ]
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1 份",
+          "attachments": [
+            {
+              "portal_label": "样表",
+              "format": "OLE",
+              "captured_at": "2026-11-15T18:10:12.9359940Z",
+              "sha256": "1e6ff5b07eefc3e3daf44854253c9c1f308a1e55c4474c816557ee8e278182e9"
+            },
+            {
+              "portal_label": "空表",
+              "format": "OLE",
+              "captured_at": "2026-11-15T18:10:13.2624020Z",
+              "sha256": "1e6ff5b07eefc3e3daf44854253c9c1f308a1e55c4474c816557ee8e278182e9"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "application_content_review": {
+    "worker": {
+      "portal_label": "空表",
+      "classification": "含预填仲裁请求和事实理由的劳动者申请范本",
+      "sha256": "5b21fdfb280f9a2d80d83b1c6938b4d5ab26e53b500840e69a9522e5fd44f070",
+      "pages": 2
+    },
+    "employer": {
+      "portal_label": "空表",
+      "classification": "含预填仲裁请求和事实理由的用人单位申请范本",
+      "sha256": "8212b96e84dd929b69fffaefabe1a02eed5c50d1090c28b460f526c5e6cf6dd2",
+      "pages": 1
+    }
+  },
+  "proxy_content_review": {
+    "sha256": "1e6ff5b07eefc3e3daf44854253c9c1f308a1e55c4474c816557ee8e278182e9",
+    "pages": 1,
+    "same_bytes_in_both_roles_and_labels": true
+  }
+}
