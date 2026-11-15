@@ -1,0 +1,90 @@
+{
+  "collected_at": "2026-11-15T23:15:43Z",
+  "region_code": "610422",
+  "city": "咸阳市",
+  "district": "三原县",
+  "authority": "三原县人力资源和社会保障局",
+  "consultation_phone": "029-32256652",
+  "complaint_phone": "029-32282422",
+  "hours": "星期一至星期五上午08:30至12:00，下午14:30至18:00（法定节假日除外）",
+  "records": {
+    "dom_sha256": "b2ee668da3146bf919ada59ff4973d6b363c78c95f2d239384b28b71854bfe0e",
+    "download_sha256": "383a00a24c23c2464c91d2d318b4e84c0d0c5a2d608ba7235c3c7fdb54e51fda",
+    "native_word_sha256": "7a788df35b863652f521b68f09ab5cd996c293edd458fb4e819d6cc2999dab3d"
+  },
+  "channel_note": "两份指南列网上办理和快递申请，公开按钮实测到陕西省统一身份认证。用人单位指南列邮编713800，劳动者指南邮编栏为无，邮寄前请向三原县人社局核对收件信息。",
+  "attachment_note": "两份申请书空表链接对应同一份 DOCX。默认自然人申请人，单位申请人依原件说明调整单位栏式并盖章。收件机关留空确认。劳动者关系证明表所列空表实际为证据清单，底层材料另行准备。",
+  "venue_note": "两角色同一公开窗口，三原县人力资源和社会保障局8楼仲裁股。",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1116001147713&siteCode=610422000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=de7dfb96c5c014d3eff9078a9cdfa683&areacode=610422000000",
+      "office": "陕西省咸阳市三原县 丰原街与东一路交叉路口往东约50米（老干局小区北侧约100米）三原县人力资源和社会保障局（办理窗口：8楼仲裁股）",
+      "handling_form": "网上办理、快递申请",
+      "legal_workdays": 5,
+      "promised_workdays": 4,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2份",
+          "required": "必要",
+          "instructions": "两角色官网链接均指同一份申请书原件。单位申请人需按原件说明调整申请人栏，并自行确认收件机关和签章。",
+          "blank_source_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0A/C0/rBIxVGCnJZSABzZ8AAA-i427WVo79.docx"
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1份、复印件2份",
+          "required": "必要",
+          "instructions": "本项下载标为样表。"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件2份",
+          "required": "必要",
+          "instructions": "官网空表实际是证据清单及说明，劳动（人事）关系证据仍须另行准备。",
+          "blank_source_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1D/87/rBIxU2CncSWAKKT9AAA31C8BwRE34.docx"
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1118123147108&siteCode=610422000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=f185531bdc948726d4c974b815d22462&areacode=610422000000",
+      "office": "陕西省咸阳市三原县 丰原街与东一路交叉路口往东约50米（老干局小区北侧约100米）三原县人力资源和社会保障局（办理窗口：8楼仲裁股）",
+      "handling_form": "网上办理、快递申请",
+      "legal_workdays": 5,
+      "promised_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2份",
+          "required": "必要",
+          "instructions": "两角色官网链接均指同一份申请书原件。单位申请人需按原件说明调整申请人栏，并自行确认收件机关和签章。",
+          "blank_source_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0B/65/rBIxVGCngG2AMhJRAAA-i427WVo36.docx"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件2份、复印件2份",
+          "required": "必要",
+          "instructions": "本项下载标为样表。"
+        }
+      ]
+    }
+  }
+}
