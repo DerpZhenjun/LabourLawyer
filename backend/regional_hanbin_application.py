@@ -3,12 +3,11 @@ import json
 from hashlib import sha256
 from io import BytesIO
 from pathlib import Path
-from typing import Annotated
-from unicodedata import category, east_asian_width
 
 from docx import Document
-from pydantic import AfterValidator, Field
+from pydantic import Field
 
+from regional_fixed_layout import display_width, fixed_line
 from regional_guides import digest
 from regional_huian_quangang_request import OwnBase
 
@@ -53,40 +52,25 @@ WIDTHS = {
 ROW_WIDTH = 64
 
 
-def _display_width(value):
-    return sum(2 if east_asian_width(char) in {"W", "F"} else 1 for char in value)
-
-
-def _line(width):
-    def check(value):
-        if any(category(char).startswith("C") or category(char) in {"Zl", "Zp"} for char in value):
-            raise ValueError("原表每栏只容纳一行文字")
-        value = value.strip()
-        if _display_width(value) > width:
-            raise ValueError("文字超出原表栏位的填写容量")
-        return value
-    return Annotated[str, Field(max_length=width), AfterValidator(check)]
-
-
 class HanbinApplicationRequest(OwnBase):
-    applicant_name: _line(WIDTHS["applicant_name"]) = ""
-    applicant_gender: _line(WIDTHS["applicant_gender"]) = ""
-    applicant_birth_month: _line(WIDTHS["applicant_birth_month"]) = ""
-    applicant_id: _line(WIDTHS["applicant_id"]) = ""
-    applicant_address: _line(WIDTHS["applicant_address"]) = ""
-    applicant_mailing_address: _line(WIDTHS["applicant_mailing_address"]) = ""
-    applicant_contact: _line(WIDTHS["applicant_contact"]) = ""
-    agent_first: _line(WIDTHS["agent_first"]) = ""
-    agent_second: _line(WIDTHS["agent_second"]) = ""
-    respondent_name: _line(WIDTHS["respondent_name"]) = ""
-    respondent_address: _line(WIDTHS["respondent_address"]) = ""
-    representative_name: _line(WIDTHS["representative_name"]) = ""
-    representative_position: _line(WIDTHS["representative_position"]) = ""
-    respondent_mailing_address: _line(WIDTHS["respondent_mailing_address"]) = ""
-    respondent_contact: _line(WIDTHS["respondent_contact"]) = ""
-    requests: list[_line(ROW_WIDTH)] = Field(default_factory=lambda: [""], max_length=6)
-    facts: list[_line(ROW_WIDTH)] = Field(default_factory=lambda: [""], max_length=6)
-    evidence: list[_line(ROW_WIDTH)] = Field(default_factory=lambda: [""], max_length=7)
+    applicant_name: fixed_line(WIDTHS["applicant_name"]) = ""
+    applicant_gender: fixed_line(WIDTHS["applicant_gender"]) = ""
+    applicant_birth_month: fixed_line(WIDTHS["applicant_birth_month"]) = ""
+    applicant_id: fixed_line(WIDTHS["applicant_id"]) = ""
+    applicant_address: fixed_line(WIDTHS["applicant_address"]) = ""
+    applicant_mailing_address: fixed_line(WIDTHS["applicant_mailing_address"]) = ""
+    applicant_contact: fixed_line(WIDTHS["applicant_contact"]) = ""
+    agent_first: fixed_line(WIDTHS["agent_first"]) = ""
+    agent_second: fixed_line(WIDTHS["agent_second"]) = ""
+    respondent_name: fixed_line(WIDTHS["respondent_name"]) = ""
+    respondent_address: fixed_line(WIDTHS["respondent_address"]) = ""
+    representative_name: fixed_line(WIDTHS["representative_name"]) = ""
+    representative_position: fixed_line(WIDTHS["representative_position"]) = ""
+    respondent_mailing_address: fixed_line(WIDTHS["respondent_mailing_address"]) = ""
+    respondent_contact: fixed_line(WIDTHS["respondent_contact"]) = ""
+    requests: list[fixed_line(ROW_WIDTH)] = Field(default_factory=lambda: [""], max_length=6)
+    facts: list[fixed_line(ROW_WIDTH)] = Field(default_factory=lambda: [""], max_length=6)
+    evidence: list[fixed_line(ROW_WIDTH)] = Field(default_factory=lambda: [""], max_length=7)
 
 
 def _fill_underlined(runs, value):
@@ -95,7 +79,7 @@ def _fill_underlined(runs, value):
     if any(run.underline is not True or run.text.strip() for run in runs):
         raise ValueError("汉滨区原表的下划线填写位置已变化")
     fill_width = sum(len(run.text) for run in runs)
-    runs[0].text = value + " " * max(0, fill_width - _display_width(value))
+    runs[0].text = value + " " * max(0, fill_width - display_width(value))
     for run in runs[1:]:
         run.text = ""
 
