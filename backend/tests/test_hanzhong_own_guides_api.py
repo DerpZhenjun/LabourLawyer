@@ -73,6 +73,8 @@ class HanzhongOwnGuidesApiTests(TestCase):
                     self.assertEqual(guide['materials'][0]['copies'], copies)
                     self.assertFalse(guide['can_generate'])
                     self.assertEqual([item['official_kind'] for item in guide['templates']], kinds)
+                    if code == '610729':
+                        self.assertTrue(any('六类劳动关系证明材料' in warning for warning in guide['warnings']))
                     for item in guide['templates']:
                         self.assertEqual(item['region_code'], code)
                         self.assertEqual(item['source_url'], guide['source_url'])

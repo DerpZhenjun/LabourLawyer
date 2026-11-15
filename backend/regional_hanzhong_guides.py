@@ -16,7 +16,7 @@ YANGXIAN_XIXIANG_PROOF_SHA256 = 'ad9511b7dead0944471df466f4896221aa0094af8ce3dfa
 NINGQIANG_LUEYANG_PROOF = PROOF.parent.with_name('hanzhong-ningqiang-lueyang-worker') / PROOF.name
 NINGQIANG_LUEYANG_PROOF_SHA256 = '2a1193be7a1080559c4a9de00220f3f5805ddae2707d04ff1fff41ad9709c668'
 ZHENBA_LIUBA_FOPING_PROOF = PROOF.parent.with_name('hanzhong-zhenba-liuba-foping-worker') / PROOF.name
-ZHENBA_LIUBA_FOPING_PROOF_SHA256 = '70c834460d8c4e3fd5ae757cdaf4302638ab9da7cfb84dbcaa1c0ad486c69ba6'
+ZHENBA_LIUBA_FOPING_PROOF_SHA256 = '3eda14315b3ea6670b3b5b379441d9b464538c497ee7f0767291830a04c445a2'
 CITY_URL = 'https://zwfw.hanzhong.gov.cn/icity/icity/proinfo/index?code=7197a41a59b8d58586007e9567536b8b'
 HANTAI_URL = 'https://zwfw.hanzhong.gov.cn/hantaiqu/icity/proinfo/index?code=8b78d3ed826828562ac2d7d521d317b6'
 NANZHENG_URL = 'https://zwfw.hanzhong.gov.cn/nanzhengqu/icity/proinfo/index?code=022c4091212688f29e51265d41fe5d85'
@@ -39,7 +39,7 @@ REGIONS = {
     '610726': ('宁强县', 'district', NINGQIANG_URL, '862136c2d597b27f2c2e33896dc1714393d475919a2e0b3fc582412a922ee153'),
     '610727': ('略阳县', 'district', LUEYANG_URL, '3b0a9b7512853f0e97aa6ec942d084d2e81cd4845e94e13ec31acb38ad2db1cf'),
     '610728': ('镇巴县', 'district', ZHENBA_URL, 'ab6f86708ee31a9007839f57eadb834b49b7fd5450410db2c7b5b37176d131c9'),
-    '610729': ('留坝县', 'district', LIUBA_URL, '3a64bc8c40196c6467c59462aa423e19fe5125288a8f041d7e413715e2c33f74'),
+    '610729': ('留坝县', 'district', LIUBA_URL, '504d2f563a78ad02b707d34034cfdb2208b4d8ac0ca68f607e29af3ceb3cf386'),
     '610730': ('佛坪县', 'district', FOPING_URL, '7ea1fb0d2420200bb19db418b3944d4793c8fe78e60689224ef6f8b361bb90c7'),
 }
 PROOFS_BY_CODE = {

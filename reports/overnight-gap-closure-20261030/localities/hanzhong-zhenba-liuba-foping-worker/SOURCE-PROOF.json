@@ -205,7 +205,19 @@
               "231f483abf3d607a1c2acd1f8b0c0bc6a07516d61bc0e6d534484df62c29f6a5"
             ]
           }
-        ]
+        ],
+        "relationship_material_reference": {
+          "receipt_sha256": "55a2addfbc2ea842d92465d006f719b8747bfabc8f4d6c3fa14e574a2a6670c2",
+          "observed_at": "2026-11-15T09:43:08.456194+00:00",
+          "entry_type": "blank",
+          "official_name": "劳动（人事）关于证明材料.doc",
+          "sha256": "29e5804bd2577183e9e7bd8f7e8d576f4b91412260b13cb6df25d40210ae0b88",
+          "bytes": 10752,
+          "finding": "official_evidence_instructions_six_numbered_items_no_fillable_fields",
+          "word_page_sha256": [
+            "bde24040791f1c4f9b4ae6d6128924b7b354a03897ab308d2964eef00f183b92"
+          ]
+        }
       },
       "guide": {
         "province": "shaanxi",
@@ -218,10 +230,10 @@
         "service_name": "劳动人事争议仲裁申请",
         "source_title": "劳动人事争议仲裁申请（劳动者）",
         "source_url": "https://zwfw.hanzhong.gov.cn/liubaxian/icity/proinfo/index?code=791654819cab7692af12cb4e6f78530e",
-        "source_version": "3a64bc8c40196c6467c59462aa423e19fe5125288a8f041d7e413715e2c33f74",
+        "source_version": "504d2f563a78ad02b707d34034cfdb2208b4d8ac0ca68f607e29af3ceb3cf386",
         "official_version": "",
         "collected_at": "2026-11-15T09:25:44.776354+00:00",
-        "verified_at": "2026-11-15T09:38:47.582176+00:00",
+        "verified_at": "2026-11-15T09:45:59.771327+00:00",
         "verification_status": "verified",
         "published": true,
         "can_generate": false,
@@ -312,7 +324,7 @@
           "页面所列时限为本事项办理信息。",
           "申报材料中的仲裁申请书标为「空表」，正文标题为「仲裁申请书（样本）」，收件机关使用占位符。",
           "证据清单数据格为空。委托书为空白参考表，收件机关使用占位符，填写前请核对本县受理机关。",
-          "劳动（人事）关系证明材料附件内容待核验。指南将委托书列为必要，请向本县办理机构核对适用情形。"
+          "本县附件列出六类劳动关系证明材料，可在官网申报材料栏查看。指南将委托书列为必要，请向本县办理机构核对适用情形。"
         ],
         "templates": [
           {
