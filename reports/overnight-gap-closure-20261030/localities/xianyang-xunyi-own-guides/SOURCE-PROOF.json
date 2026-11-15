@@ -1,0 +1,88 @@
+{
+  "collected_at": "2026-11-15T23:56:49Z",
+  "region_code": "610429",
+  "city": "咸阳市",
+  "district": "旬邑县",
+  "authority": "县人社局",
+  "consultation_phone": "029-34424180",
+  "complaint_phone": "029-34422269",
+  "hours": "星期一至星期五上午08:30至12:00，下午14:30至17:30（法定节假日除外）",
+  "source_receipt_sha256": "47fad5dc5253985d4c988fe00542b37ffe17e189c5fa812a0da823fad07be765",
+  "channel_note": "两份指南均列窗口办理、网上办理，公开按钮实测到陕西省统一身份认证。两份详版均写不支持物流快递。",
+  "attachment_note": "劳动者三项、用人单位两项，下载均标为样表。两份指南各自列出授权委托书，保留原文份数。",
+  "venue_note": "两角色均指育才路旬邑县人社局，劳动者为劳动仲裁窗口，用人单位为大厅仲裁窗口。两份指南工作日下午均至17:30。",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1118187145674&siteCode=610429000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=16a71dad8cd8f7dd5b404732dfe5f210&areacode=610429000000",
+      "office": "陕西省咸阳市旬邑县 育才路（旬邑县职教中心东北侧约100米）旬邑县人力资源和社会保障局（办理窗口：劳动仲裁窗口）",
+      "handling_form": "窗口办理、网上办理",
+      "legal_workdays": 5,
+      "promised_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1F/4C/rBIxU2CsRxSAfcKmAABmAKToADA686.doc"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0D/08/rBIxVGCsR6qAaCe4AAB4LtseHSY945.doc"
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0D/07/rBIxVGCsR0-AD9YAAAJVq7KBBgg275.png"
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1113056146202&siteCode=610429000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=751478fe14a739635558cc6b4c4b81b7&areacode=610429000000",
+      "office": "陕西省咸阳市旬邑县 育才路（旬邑县职教中心东北侧约100米）旬邑县人力资源和社会保障局（办理窗口：大厅仲裁窗口）",
+      "handling_form": "窗口办理、网上办理",
+      "legal_workdays": 5,
+      "promised_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0D/0B/rBIxVGCsSs6AKY14AABmAKToADA092.doc"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0D/0B/rBIxVGCsSxCACsOaAAB4LtseHSY625.doc"
+        }
+      ]
+    }
+  }
+}
