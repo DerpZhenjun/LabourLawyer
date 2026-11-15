@@ -13,6 +13,11 @@ PROOF_SHA256 = '46e022230016bc4f495eb8e6ccd24857955a34bc657e1d5958e7f0469aa39a9e
 YAOZHOU_AUTHORIZATION_PROOF = Path('reports/overnight-gap-closure-20261030/localities/tongchuan-yaozhou-authorization/SOURCE-PROOF.json')
 YAOZHOU_AUTHORIZATION_SHA256 = '9d436185fe49b375bd2f6ab727bfedd60d5ec7a35470f5d912639a645269de5d'
 
+MUNICIPAL_PROOF = Path('reports/overnight-gap-closure-20261030/localities/tongchuan-municipal-own-source/SOURCE-PROOF.json')
+MUNICIPAL_PROOF_SHA256 = '4a17fb18bfcd0fc6c53724a87266677bb66a2d29c61192abc106deff2b86221a'
+MUNICIPAL_URL = 'https://rs.tongchuan.gov.cn/micro/onlineItemDetail.jspx?saa004=00000283'
+MUNICIPAL_SOURCE_VERSION = 'c5ae6fd988596088b3412c177c26f198846f089f372e528a2158d486f3b6e1d7'
+
 
 def _read_proof(root, source_file, checksum):
     source = Path(ROOT if root is None else root).resolve()
@@ -49,4 +54,20 @@ def staged_yaozhou_authorization_guide(root=None):
         'official_bytes': proof['original_bytes'], 'file_type': 'docx', 'download_status': 'official_link_only',
         'document_types': [], 'can_generate': False,
     })
+    return guide
+
+
+def exact_municipal(guide):
+    keys = ('province', 'city', 'district', 'region_code', 'scope_level', 'source_url', 'source_id', 'source_version')
+    return tuple(guide.get(key) for key in keys) == (
+        'shaanxi', '铜川市', '市本级', '610200', 'municipal', MUNICIPAL_URL,
+        digest(MUNICIPAL_URL)[:24], MUNICIPAL_SOURCE_VERSION,
+    )
+
+
+def staged_municipal_guide(root=None):
+    guide = _read_proof(root, MUNICIPAL_PROOF, MUNICIPAL_PROOF_SHA256)['guide']
+    guide['source_id'] = digest(guide['source_url'])[:24]
+    if not exact_municipal(guide):
+        raise ValueError('铜川市本级办理说明与当地来源不匹配')
     return guide

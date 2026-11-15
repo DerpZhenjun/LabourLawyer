@@ -1,4 +1,5 @@
 """Exact Tongchuan worker guides must keep their own materials and sample status."""
+import json
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from unittest import TestCase
@@ -7,6 +8,7 @@ from unittest.mock import patch
 from fastapi import FastAPI
 from fastapi.testclient import TestClient
 
+from regional_directory import DirectoryStore
 from regional_guides import RegionalStore
 from routes import regional_guides as routes
 
@@ -98,3 +100,40 @@ class TongchuanOwnGuidesApiTests(TestCase):
                 query = {**valid, 'template_id': template['id'], 'kind': 'application'}
                 self.assertEqual(client.get('/regional/form-contract', params=query).status_code, 409)
                 self.assertEqual(client.post('/regional/generate', json={**query, 'mode':'blank', 'data':{}}).status_code, 409)
+
+
+    def test_municipal_source_exposes_only_the_city_selection_and_preserves_county_boundaries(self):
+        from regional_tongchuan_guides import staged_municipal_guide
+
+        scope = {'province': 'shaanxi', 'city': '铜川市'}
+        with TemporaryDirectory() as work:
+            store = RegionalStore(Path(work) / 'guides.sqlite')
+            directory = DirectoryStore(Path(work) / 'directory.sqlite')
+            rows = json.loads((ROOT / 'data/public-regions/directory.json').read_bytes())
+            for row in rows:
+                if row['code'] in {'610200', '610222'}:
+                    directory.put_area(row)
+            guide = store.put_guide(staged_municipal_guide(ROOT))
+            app = FastAPI()
+            app.include_router(routes.router, prefix='/regional')
+            with patch.object(routes, 'ROOT', ROOT), patch.object(routes, 'store', return_value=store), patch.object(
+                routes, 'directory_store', return_value=directory
+            ), TestClient(app) as client:
+                areas = client.get('/regional/areas', params=scope).json()['items']
+                self.assertEqual([(row['district'], row['can_generate']) for row in areas], [('市本级', False), ('宜君县', False)])
+                retrieved = client.get('/regional/lookup', params={**scope, 'district': '市本级'}).json()
+                self.assertEqual(retrieved['source_id'], guide['source_id'])
+                self.assertEqual(retrieved['fields']['咨询方式'], '0919-3185664')
+                self.assertEqual(len(retrieved['materials']), 4)
+                self.assertTrue(all(row['region_code'] == '610200' for row in retrieved['materials']))
+                self.assertEqual(retrieved['templates'], [])
+                self.assertNotIn('宜君县', json.dumps(retrieved, ensure_ascii=False))
+                county = client.get('/regional/lookup', params={**scope, 'district': '宜君县'}).json()
+                self.assertIsNone(county['source_id'])
+                self.assertEqual(county['materials'], [])
+                query = {**scope, 'district':'市本级', 'source_id':guide['source_id'], 'version':guide['version'],
+                         'template_id':'unverified', 'kind':'application'}
+                self.assertEqual(client.post('/regional/generate', json={**query, 'mode':'blank', 'data':{}}).status_code, 409)
+                store.put_guide({**guide, 'source_version': '0' * 64})
+                altered = client.get('/regional/areas', params=scope).json()['items']
+                self.assertEqual([row['district'] for row in altered], ['宜君县'])

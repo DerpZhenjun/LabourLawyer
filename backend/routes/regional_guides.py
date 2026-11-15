@@ -26,6 +26,7 @@ from regional_baoji_county_application import (
     CHENCANG_AUTHORIZATION_ID, CHENCANG_AUTHORIZATION_LAYOUT, check_chencang_authorization,
     checked_adapter as checked_baoji_worker_adapter, fill_application as fill_baoji_worker_application,
 )
+from regional_tongchuan_guides import exact_municipal as exact_tongchuan_municipal
 from regional_baoji_evidence import (
     ADAPTER as BAOJI_EVIDENCE_ADAPTER, LAYOUT as BAOJI_LAYOUT, LAYOUT_ORIGIN as BAOJI_LAYOUT_ORIGIN,
     BaojiEvidenceRequest, checked_adapter as checked_baoji_evidence_adapter,
@@ -171,7 +172,8 @@ def areas(province: str=Query(max_length=30),city: str=Query(default='',max_leng
             city, municipal.get('source_id'), municipal.get('source_version'),
         )
         if (fujian_exact or is_jiangsu_municipal_candidate(municipal)
-                or exact_zhongshan_municipal(municipal) or exact_baoji_municipal(municipal)):
+                or exact_zhongshan_municipal(municipal) or exact_baoji_municipal(municipal)
+                or exact_tongchuan_municipal(municipal)):
             city_row = next((
                 row for row in directory.areas(province) if row['city'] == city and row['level'] == 3
                 and row['code'] == code and not row['district']
