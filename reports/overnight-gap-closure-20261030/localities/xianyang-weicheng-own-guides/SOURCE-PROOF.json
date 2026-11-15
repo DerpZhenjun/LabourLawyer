@@ -1,0 +1,128 @@
+{
+  "collected_at": "2026-11-15T22:45:58Z",
+  "region_code": "610404",
+  "city": "咸阳市",
+  "district": "渭城区",
+  "authority": "渭城区人社局",
+  "consultation_phone": "029-33156088",
+  "complaint_phone": "029-33155899",
+  "hours": "星期一至星期五上午08:30至12:00，下午14:30至18:00（法定节假日除外）",
+  "source_receipt_sha256": "d1d958cf9f6299bd5d043a6b650d03430b44a2222f802a2080f0214ce5aa7c4a",
+  "channel_note": "劳动者与用人单位两份指南均列网上办理。两条公开按钮分别实测到陕西省统一身份认证，未登录或提交。请从对应申请角色的官网指南进入。",
+  "attachment_note": "劳动者五项和用人单位四项材料的附件全部标为样表，两版指南均未列可下载空表。",
+  "venue_note": "两份指南均指向渭城区中山街94号咸阳市公安局渭城区分局后行政楼业务科，用人单位指南另写明中山街道。",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1113668185300&siteCode=610404000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=3462fd5ca269319ae78948d6f1315b2a&areacode=610404000000",
+      "handling_form": "网上办理",
+      "legal_workdays": 5,
+      "promised_workdays": 5,
+      "office": "陕西省咸阳市渭城区 中山街94号咸阳市公安局渭城区分局后行政楼（办理窗口：业务科）",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件3份",
+          "required": "必要",
+          "instructions": "指南要求 A4 打印，双方地址写到户号，一方为单位时注明办公电话及科室。涉款请求附明细，落款姓名和时间手写，日期为提交当日。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/16/83/rBIxVGEfacyABfkGAAA0HT3VETA46.docx"
+        },
+        {
+          "key": "identity",
+          "name": "身份证明材料",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1份",
+          "required": "必要",
+          "instructions": "该项附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/16/85/rBIxVGEfcG6AD9YOAJb6Kt4hw78238.jpg"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2份",
+          "required": "非必要",
+          "instructions": "指南标为非必要，附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/2A/2B/rBIxU2Efdm6AQGcBAAA_FqBtoCM76.docx"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "原件或复印件",
+          "format": "纸质材料",
+          "copies": "原件1份、复印件1份",
+          "required": "必要",
+          "instructions": "材料形式原文为原件或复印件，份数栏同时列两类。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/2A/2C/rBIxU2Efe7uAK8j9AAVN4bHcnvY458.png"
+        },
+        {
+          "key": "business-license",
+          "name": "企业法人营业执照",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1份",
+          "required": "必要",
+          "instructions": "该项附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/2A/2C/rBIxU2Efer-AI3VhAFCq_G3elAM296.jpg"
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1116158185730&siteCode=610404000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=4e0cce295caa3fff9aaea3261f69d805&areacode=610404000000",
+      "handling_form": "网上办理",
+      "legal_workdays": 5,
+      "promised_workdays": 5,
+      "office": "陕西省咸阳市渭城区中山街道 中山街94号咸阳市公安局渭城区分局后行政楼（办理窗口：业务科）",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件3份",
+          "required": "必要",
+          "instructions": "指南要求 A4 打印，双方地址写到户号，申请单位注明办公电话及科室。涉款请求附明细，落款姓名和时间手写，日期为提交当日。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/16/90/rBIxVGEjCwSAFeXPAAA0Gx0kgXM80.docx"
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1份",
+          "required": "必要",
+          "instructions": "该项附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/16/90/rBIxVGEjC6OAdUqLAFCq_G3elAM154.jpg"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2份",
+          "required": "非必要",
+          "instructions": "指南标为非必要，附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/24/60/rBIxU2Cy-gaAcQpFAABIACgqKnQ335.doc"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1份",
+          "required": "必要",
+          "instructions": "份数栏仅列复印件一份。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/2A/35/rBIxU2EjDE6AJRy-AAVN4bHcnvY492.png"
+        }
+      ]
+    }
+  }
+}
