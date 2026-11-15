@@ -1,0 +1,93 @@
+{
+  "region_code": "610582",
+  "district": "华阴市",
+  "service_object": "劳动者",
+  "state": "CANDIDATE_ACCEPTED",
+  "publication": "NOT_DEPLOYED",
+  "official_doc_sha256": "67e9fc2611a2ebf9e10e31798e96a709bfea7c42a287eb5ae3508ee3f20dcbf9",
+  "conversion_sha256": "be7630bbb7fd4f501f3f0e2f0d37bcd1a81285218f45c98058a7ddfbac3ca6b4",
+  "source_proof_sha256": "525f91272441d86638e8859cd81894369db1ceef034b0247dc2b2a55d4572e6f",
+  "conversion_proof_sha256": "5e55dc683181c7a97667c66b91927c397f2179fe1472742d6ea62063bf754348",
+  "targeted_regressions": 60,
+  "frontend_typecheck": "PASS",
+  "candidate_acceptance_at": "2026-11-15T17:36:10.6836440Z",
+  "fields": {
+    "requests": 5,
+    "facts": 12
+  },
+  "manual": [
+    "双方信息",
+    "仲裁委员会名称",
+    "签名",
+    "日期"
+  ],
+  "employer_format_verified": false,
+  "browser_receipt_sha256": "992da74181fae84d27ea0d4a6f5e584848d5bc892ae5ddb0983b4aa5d579676f",
+  "browser": {
+    "state": "PASS",
+    "viewports": [
+      375,
+      768,
+      1440
+    ],
+    "region_code": "610582",
+    "worker_only": true,
+    "native_downloads": 1,
+    "fetch_bytes_match": true,
+    "native_download_sha256": "121e15e3e94248392dd21297fca09e382bd814fc9ae4bc5683d92c0b2712a05e",
+    "contract_id": "da7e284ec13bf5027583da5180dd5c1f29aea799b461d1fcb2fb139a9694f404",
+    "cancel_posts": 0,
+    "overflow_posts": 0,
+    "isolated_localities": 3
+  },
+  "word_geometry_sha256": "75e96486fcf67ab340edf912ceb3fbe7ba91ec5d7dd44716f7dea92d4fa55435",
+  "word_geometry": [
+    {
+      "case": "blank",
+      "page_count": 2,
+      "filled_rows": 0,
+      "original_glyph_shift_pt": 0,
+      "name": "blank",
+      "pages": 2,
+      "docx_sha256": "d8624e8579e2084afde1c785d605934f1bc94091d02eb20d6580868e4536cbd8",
+      "pdf_sha256": "4bec43185d278656f0b899d684f00d63d6ee5e9493ac3906396c09e1ba616e2b"
+    },
+    {
+      "case": "short",
+      "page_count": 2,
+      "filled_rows": 4,
+      "original_glyph_shift_pt": 0,
+      "name": "short",
+      "pages": 2,
+      "docx_sha256": "3824b56088e08b704abc45ac25dca266b2ead0b163d30e8820a2fd9b808fc970",
+      "pdf_sha256": "5bf53abab2656ec47922cd87611962610c62b100d6dcf86b336619f877bbe3c2"
+    },
+    {
+      "case": "wide",
+      "page_count": 2,
+      "filled_rows": 17,
+      "original_glyph_shift_pt": 0,
+      "name": "wide",
+      "pages": 2,
+      "docx_sha256": "8708c437206a0613c0f1a5874d70e0361449cb57278c762710ed4959a1472601",
+      "pdf_sha256": "d1cd4f57ab6da6e2a3a9965b5afd4075fd9abd8caa3ee788e463b2c0805739d4"
+    },
+    {
+      "case": "latin",
+      "page_count": 2,
+      "filled_rows": 17,
+      "original_glyph_shift_pt": 0,
+      "name": "latin",
+      "pages": 2,
+      "docx_sha256": "67312a39bfac60113ca864490ed47e90b5a0a99185c7fcffb6ccb04fde202b63",
+      "pdf_sha256": "3f0c25fe884fa590b71a6c332c240aecae9c1de79a0321b9585b470744ecb368"
+    }
+  ],
+  "native_download_word_sha256": "901d218b16835d7d6ab60478d3538af9e2486ef5aa900476242ff24623b404d4",
+  "native_download_word": {
+    "page_count": 2,
+    "synthetic_rows": 4,
+    "native_geometry_exact_match": true,
+    "pdf_sha256": "1d6d22f8248f574d0148adee72d183da7b2fc47c8b59889fc6538c6c560fba30"
+  }
+}
