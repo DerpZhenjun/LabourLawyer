@@ -11,16 +11,30 @@ PROOF = Path('reports/overnight-gap-closure-20261030/localities/hanzhong-hantai-
 PROOF_SHA256 = '2a19f91974a98d0a7c246b8467dfc8b0df6e2461d89ef79d5893399330814eb7'
 COUNTY_PROOF = PROOF.parent.with_name('hanzhong-nanzheng-mianxian-worker') / PROOF.name
 COUNTY_PROOF_SHA256 = '0f78e6f9a4e00db87f7f2748eab69adca8ae2ec637c3b4fb7d36c4ecf01fe556'
+YANGXIAN_XIXIANG_PROOF = PROOF.parent.with_name('hanzhong-yangxian-xixiang-worker') / PROOF.name
+YANGXIAN_XIXIANG_PROOF_SHA256 = 'ad9511b7dead0944471df466f4896221aa0094af8ce3dfa04af1a647c9dda5dc'
 CITY_URL = 'https://zwfw.hanzhong.gov.cn/icity/icity/proinfo/index?code=7197a41a59b8d58586007e9567536b8b'
 HANTAI_URL = 'https://zwfw.hanzhong.gov.cn/hantaiqu/icity/proinfo/index?code=8b78d3ed826828562ac2d7d521d317b6'
 NANZHENG_URL = 'https://zwfw.hanzhong.gov.cn/nanzhengqu/icity/proinfo/index?code=022c4091212688f29e51265d41fe5d85'
 MIANXIAN_URL = 'https://zwfw.hanzhong.gov.cn/mianxian/icity/proinfo/index?code=fb75803296e3e6ca4cbf8085261f9fff'
+YANGXIAN_URL = 'https://zwfw.hanzhong.gov.cn/yangxian/icity/proinfo/index?code=ca7e76a18fe2bb86f512f62c375347e4'
+XIXIANG_URL = 'https://zwfw.hanzhong.gov.cn/xixiangxian/icity/proinfo/index?code=b0a9823a38c72404ba37e4f1ad839637'
 CITY_SOURCE_VERSION = '3acd887065ff7e48e774dd3419f9173c0ccf839334d37b94e803443ae0ff7f92'
 REGIONS = {
     '610700': ('市本级', 'municipal', CITY_URL, CITY_SOURCE_VERSION),
     '610702': ('汉台区', 'district', HANTAI_URL, '91fe36696df88143df09e2c01bf0c5285651938f6429199472959e8c31d75ad3'),
     '610703': ('南郑区', 'district', NANZHENG_URL, '42eabe0b29bc9fc392c60e6a23ca88e0e26e831033f1349e94e6f009b04c86c4'),
     '610725': ('勉县', 'district', MIANXIAN_URL, '894432f50897cc58217f5f313f30888b7d1721d97898a6287c17e9d6f6605cd0'),
+    '610723': ('洋县', 'district', YANGXIAN_URL, '7e3ac1c77970d764482db4e3669c8ba240475799b04bd4b0ab4d79e9e7c7550c'),
+    '610724': ('西乡县', 'district', XIXIANG_URL, '304b08175345a4da6bf3b30753a82233d08e0fb7fd5f55b765d66472b5849185'),
+}
+PROOFS_BY_CODE = {
+    '610700': (PROOF, PROOF_SHA256),
+    '610702': (PROOF, PROOF_SHA256),
+    '610703': (COUNTY_PROOF, COUNTY_PROOF_SHA256),
+    '610725': (COUNTY_PROOF, COUNTY_PROOF_SHA256),
+    '610723': (YANGXIAN_XIXIANG_PROOF, YANGXIAN_XIXIANG_PROOF_SHA256),
+    '610724': (YANGXIAN_XIXIANG_PROOF, YANGXIAN_XIXIANG_PROOF_SHA256),
 }
 
 
@@ -39,7 +53,7 @@ def exact_municipal(guide):
 def staged_guide(code, root=None):
     if code not in REGIONS:
         raise ValueError('该地区暂无已核验的汉中指南候选')
-    proof, checksum = (COUNTY_PROOF, COUNTY_PROOF_SHA256) if code in {'610703', '610725'} else (PROOF, PROOF_SHA256)
+    proof, checksum = PROOFS_BY_CODE[code]
     source = Path(ROOT if root is None else root).resolve()
     path = (source / proof).resolve()
     if not path.is_relative_to(source):

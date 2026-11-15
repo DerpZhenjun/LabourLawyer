@@ -18,6 +18,40 @@ MATERIALS = ['劳动人事争议仲裁申请书', '授权委托书', '劳动（�
 
 
 class HanzhongOwnGuidesApiTests(TestCase):
+    def test_yangxian_and_xixiang_preserve_separate_sample_and_guide_sources(self):
+        from regional_hanzhong_guides import staged_guide
+
+        with TemporaryDirectory() as work:
+            store = RegionalStore(Path(work) / 'guides.sqlite')
+            app = FastAPI()
+            app.include_router(routes.router, prefix='/regional')
+            with patch.object(routes, 'ROOT', ROOT), patch.object(routes, 'store', return_value=store), TestClient(app) as client:
+                for code, county, method_limit, phone, application_copies, file_type in [
+                    ('610723', '洋县', '1 工作日', '0916-2938727', '原件1份\xa0 复印件2份', 'jpg'),
+                    ('610724', '西乡县', '0 工作日', '0916-6217683', '原件2份', 'docx'),
+                ]:
+                    stored = store.put_guide(staged_guide(code, ROOT))
+                    scope = {**BASE, 'district': county}
+                    guide = client.get('/regional/lookup', params=scope).json()
+                    self.assertEqual(guide['source_id'], stored['source_id'])
+                    self.assertEqual(guide['fields']['承诺办结时限'], method_limit)
+                    self.assertEqual(guide['fields']['咨询方式'], phone)
+                    self.assertEqual(len(guide['materials']), 5)
+                    self.assertEqual(guide['materials'][0]['copies'], application_copies)
+                    self.assertEqual(guide['materials'][0]['region_code'], code)
+                    self.assertEqual([t['official_kind'] for t in guide['templates']], ['sample', 'sample'])
+                    application = guide['templates'][0]
+                    self.assertEqual(application['file_type'], file_type)
+                    self.assertEqual(application['source_url'], guide['source_url'])
+                    self.assertEqual(application['region_code'], code)
+                    self.assertFalse(application['can_generate'])
+                    query = {**scope, 'source_id': guide['source_id'], 'version': guide['version'],
+                             'kind': 'application', 'template_id': application['id']}
+                    self.assertEqual(client.get('/regional/form-contract', params=query).status_code, 409)
+                neighbor = client.get('/regional/lookup', params={**BASE, 'district': '宁强县'}).json()
+                self.assertIsNone(neighbor['source_id'])
+                self.assertEqual(neighbor['templates'], [])
+
     def test_nanzheng_and_mianxian_use_their_own_attachment_and_material_bindings(self):
         from regional_hanzhong_guides import staged_guide
 
