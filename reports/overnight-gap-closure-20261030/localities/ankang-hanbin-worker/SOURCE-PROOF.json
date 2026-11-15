@@ -1,0 +1,112 @@
+{
+  "area": {
+    "province": "陕西省",
+    "city": "安康市",
+    "district": "汉滨区",
+    "region_code": "610902",
+    "official_portal_site_code": "610902000000",
+    "authority": "汉滨区人力资源和社会保障局",
+    "department_code": "1161090201604901XM"
+  },
+  "official_navigation": {
+    "county_home": "https://www.hanbin.gov.cn/",
+    "county_home_sha256": "cc78010e1a80db422c0717732b3fbef1fd7491211ed7f6e47a3d162d40c26a67",
+    "county_catalog": "https://zwfw.shaanxi.gov.cn/pc/#/c/service?type=1&siteCode=610902000000",
+    "department_results_sha256": "5ef328fb4d31522f741fc833050bba7e96ed9bc4b53c28d62fccc69d7236398c"
+  },
+  "worker": {
+    "guide_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1112299132275&siteCode=610902000000",
+    "guide_sha256": "81244368f77349503fcd77366fd2d6b2ed716a4e16aebd9d6e4da14986a54789",
+    "role": "劳动者",
+    "guide_title": "劳动人事争议仲裁申请（劳动者）",
+    "materials": [
+      {
+        "name": "劳动人事争议仲裁申请书",
+        "required": "必要",
+        "public_labels": [
+          "样表",
+          "空表"
+        ]
+      },
+      {
+        "name": "身份证",
+        "required": "必要",
+        "public_labels": [
+          "样表"
+        ]
+      },
+      {
+        "name": "劳动（人事）关系证明材料",
+        "required": "必要",
+        "public_labels": [
+          "样表"
+        ]
+      },
+      {
+        "name": "授权委托书",
+        "required": "非必要",
+        "public_labels": [
+          "样表"
+        ]
+      }
+    ],
+    "blank": {
+      "label": "空表",
+      "url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/14/79/rBIxVGDw9CCAA3q0AABrJH-Weqs901.doc",
+      "downloaded_at": "2026-11-15T11:10:25.6419976+00:00",
+      "bytes": 27428,
+      "sha256": "fd7883d264e4e218f852ae0fbe94c81a47265b1dd338710858416b6709795a16",
+      "kind": "blank",
+      "format": "DOC",
+      "word_native_pages": 2,
+      "recipient_on_form": "××××劳动人事争议仲裁委员会",
+      "receiver_field": "placeholder",
+      "signature_and_date": "manual",
+      "page_sha256": [
+        "177f2dae30912be5f54a4a494f745c38770963e033c5135fbdc6bdfc77a76577",
+        "577e9abc6c630544fae232ca49413d6c540f385afa30f2154ad652d30f5c74ec"
+      ],
+      "converted_private_layout_sha256": "7c0c86dda9e36f1a8226d831899b4c421680707dec33e8e045696f997e89f0e8"
+    }
+  },
+  "employer": {
+    "guide_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114638235312&siteCode=610902000000",
+    "guide_sha256": "179a625a3f2bb993a20891b70eccbba565ed6083285e5170af84c7eff14aec48",
+    "role": "用人单位",
+    "guide_title": "劳动人事争议仲裁申请（用人单位）",
+    "blank_receipt_sha256": "cb958017f1462115022b06ee3e18b6575c477d2a7c79238e1743f2c158a5c665",
+    "attachments": [
+      {
+        "name": "劳动人事争议仲裁申请书",
+        "label": "空表",
+        "format": "DOCX",
+        "actual_role": "image_only_marked_reference_sample",
+        "sha256": "6c8dd68495308f26c8e8cbaee699a5720f2a9bc5b58512029e363b1fa82f7a46"
+      },
+      {
+        "name": "主体资格证明材料",
+        "label": "空表",
+        "format": "PNG",
+        "actual_role": "identity_document_sample",
+        "sha256": "0fd7646de16c1a767aff66692037e518df6085bc9af4ed9b356aa78407e0b42a"
+      },
+      {
+        "name": "劳动（人事）关系证明材料",
+        "label": "空表",
+        "format": "PNG",
+        "actual_role": "instructions_screenshot",
+        "sha256": "5a5a95daac207941361868569dbfdc12314b374e17eefb53ff9109244e9f213d"
+      },
+      {
+        "name": "授权委托书",
+        "label": "空表",
+        "format": "JPEG",
+        "actual_role": "marked_reference_sample",
+        "sha256": "422a4470ed7717f3204869b1fae98e48651a079d03e17cbc050bc746795e2d47"
+      }
+    ],
+    "blank_form_verified": false
+  },
+  "observed_at": "2026-11-15",
+  "state": "OWN_WORKER_GUIDE_AND_BLANK_VERIFIED_ADAPTER_PENDING"
+}
