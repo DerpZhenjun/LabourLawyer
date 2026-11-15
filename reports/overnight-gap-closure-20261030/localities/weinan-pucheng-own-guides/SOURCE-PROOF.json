@@ -1,0 +1,131 @@
+{
+  "region_code": "610526",
+  "city": "渭南市",
+  "district": "蒲城县",
+  "authority": "蒲城县人力资源和社会保障局",
+  "official_home": "https://www.pucheng.gov.cn/",
+  "official_home_sha256": "0f2473ef056292c27c498a923f458a1c2c13fa6dca86463762f0563e916246bc",
+  "municipal_portal": "https://zwfw.shaanxi.gov.cn/pc/#/index?siteCode=610526000000",
+  "department_code": "11610526016030212Q",
+  "consultation_phone": "0913-3338689",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114121225423&siteCode=610526000000",
+      "collected_at": "2026-11-15T17:00:16.143Z",
+      "raw_receipt_sha256": "3811082fabe08a3d87b1f1ccd992d2bcd013fa7e2e4073e8d0b41d92c53efcc4",
+      "office": "陕西省渭南市蒲城县奉先街道 南转盘广电大楼后西楼4F蒲城县劳动人事争议仲裁院(办理窗口:立案室)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "DOCX",
+            "sha256": "8ba86ba82ca9005af315f1a33a77c617a943245c2b0090f4ca46c9b652f840da",
+            "captured_at": "2026-11-15T17:00:54.3437261Z"
+          }
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "1a69809b5f8faef0f05f641b44bfe900a16824a83effde0595437d4d03d8c35c",
+            "captured_at": "2026-11-15T17:00:54.6548285Z"
+          }
+        },
+        {
+          "key": "relationship",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "afd54a1518441b630a7515c32d803003b17ada0871f7077380937503a6691edf",
+            "captured_at": "2026-11-15T17:00:54.8693140Z"
+          }
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "DOC",
+            "sha256": "00aeacebc313690f88a13725c525c0d88a077d307ee12f2346186c3b0439f4f4",
+            "captured_at": "2026-11-15T17:00:55.1755545Z"
+          }
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1119989225703&siteCode=610526000000",
+      "collected_at": "2026-11-15T17:00:16.393Z",
+      "raw_receipt_sha256": "6be4ee03dc06916263b8de86356537c547a99a3868b44f39b8ff021fac143d3c",
+      "office": "陕西省渭南市蒲城县 南转盘广电大楼后西楼4F蒲城县劳动人事争议仲裁院(办理窗口:立案室)",
+      "commitment_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "XLSX",
+            "sha256": "a8201297ef7c5efac2501f172bc175f12290ed0579c49db1a39ffe8876b24e4f",
+            "captured_at": "2026-11-15T17:01:32.7765795Z"
+          }
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "9add9f4dc0a10f9b3d10c4ffd6caaed2c4d5bd24743ac598bb3d44e352d7e1bb",
+            "captured_at": "2026-11-15T17:01:33.1493002Z"
+          }
+        },
+        {
+          "key": "relationship",
+          "name": "劳动（人事）关系证明材料",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "JPG",
+            "sha256": "afd54a1518441b630a7515c32d803003b17ada0871f7077380937503a6691edf",
+            "captured_at": "2026-11-15T17:01:33.4324125Z"
+          }
+        },
+        {
+          "key": "proxy",
+          "name": "授权委托书",
+          "required": "必要",
+          "sample": {
+            "label": "样表",
+            "format": "DOC",
+            "sha256": "00aeacebc313690f88a13725c525c0d88a077d307ee12f2346186c3b0439f4f4",
+            "captured_at": "2026-11-15T17:01:33.6434682Z"
+          }
+        }
+      ]
+    }
+  },
+  "attachment_count": 8,
+  "distinct_attachment_sha_count": 6,
+  "official_blanks_verified": 0,
+  "attachment_receipt_sha256": "8365f7ac8687e9d2bbffb2e8d6bab1441d128d96152e6e4e958bd0e13364a0c8",
+  "static_preflight_sha256": "d734d1a77ca5dc5eba3d531fef54b832c0214b839a19b012879175d6a5257a12",
+  "word_receipt_sha256": "368517129b48ba0ea173bc1c96932a328d1e94f18b24aaa2d7456b2647570655",
+  "word_content_marker_sha256": "26c34d5b88c3aed2486f53a06cfa8f6327003bb298174a296370bf752f20588c",
+  "worker_application_docx_pages": 4,
+  "proxy_doc_pages": 1,
+  "employer_application_xlsx_nonempty_sheets": 1
+}
