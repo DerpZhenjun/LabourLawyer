@@ -1,0 +1,137 @@
+{
+  "collected_at": "2026-11-15T23:25:54Z",
+  "region_code": "610423",
+  "city": "咸阳市",
+  "district": "泾阳县",
+  "authority": "泾阳县人社局",
+  "consultation_phone": "029-36211771",
+  "complaint_phone": "029-36211762",
+  "hours": "星期一至星期五上午08:30至12:00，下午14:30至18:00（法定节假日除外）",
+  "source_receipt_sha256": "60d0587887538bd8898609223ac7a310dcd65b19f5853696108caccb0b50333e",
+  "channel_note": "两份指南均列网上办理、窗口办理，线上按钮实测到陕西省统一身份认证。劳动者指南的物流快递栏为是，用人单位指南为否。请按对应角色向办理机关确认物流办理。",
+  "attachment_note": "两份指南共列9项材料，所有下载项标为样表。劳动者指南将外国人就业证标为必要，但未列明适用情形，须向办理机关核对。",
+  "venue_note": "两角色均指向北极宫大街162号泾阳县人力资源和社会保障局二楼调解仲裁科。用人单位简版列两个表述，地址与窗口相同。",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1112624126185&siteCode=610423000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=9c07778c6223f460a73063c51f4747fd&areacode=610423000000",
+      "office": "陕西省咸阳市泾阳县泾干街道 北极宫大街162号泾阳县人力资源和社会保障局（办理窗口：二楼调解仲裁科）",
+      "handling_form": "网上办理、窗口办理",
+      "legal_workdays": 5,
+      "promised_workdays": 2,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1份、复印件1份",
+          "official_required": "必要",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1A/42/rBIxVGFtKAWAA42BAAAuvBSaLhE05.docx"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1份、复印件1份",
+          "official_required": "必要",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1A/42/rBIxVGFtKBqAHwHrAAAwWYHIuAw29.docx"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "official_required": "非必要",
+          "required": "非必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1A/42/rBIxVGFtKDaAYoYMAAA654A_z4E10.docx"
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "original_copy": "原件或复印件",
+          "format": "纸质材料",
+          "copies": "原件1份、复印件1份",
+          "official_required": "必要",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/2D/E7/rBIxU2FtKE-AUKNeAAEkFlO4hcY545.jpg"
+        },
+        {
+          "key": "foreign-employment-permit",
+          "name": "外国人就业证",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "official_required": "必要",
+          "required": "官网标为必要，适用情形待核对",
+          "instructions": "指南未列明适用情形，请向泾阳县人社局确认该项是否适用。附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/2D/E7/rBIxU2FtKF2ARwG7AAPLdQwsgHA261.jpg"
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1116428125453&siteCode=610423000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&id=1a500d23fb2d98fa50becb6751f13069&areacode=610423000000",
+      "office": "陕西省咸阳市泾阳县泾干街道 北极宫大街162号泾阳县人力资源和社会保障局（办理窗口：二楼调解仲裁科）",
+      "handling_form": "网上办理、窗口办理",
+      "legal_workdays": 5,
+      "promised_workdays": 2,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件2份、复印件1份",
+          "official_required": "必要",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/2D/E6/rBIxU2FtJ46AH7tbAAAuvBSaLhE63.docx"
+        },
+        {
+          "key": "qualification",
+          "name": "主体资格证明材料",
+          "original_copy": "原件和复印件",
+          "format": "电子和纸质",
+          "copies": "原件1份、复印件1份",
+          "official_required": "必要",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/17/65/rBIxVGEoyiGAHeOWAADI0q0f8xw573.jpg"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1份、复印件1份",
+          "official_required": "必要",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1A/42/rBIxVGFtJ6WADI2OAAAwWYHIuAw25.docx"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "official_required": "必要",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/2D/E6/rBIxU2FtJ8qAC588AAA654A_z4E12.docx"
+        }
+      ]
+    }
+  }
+}
