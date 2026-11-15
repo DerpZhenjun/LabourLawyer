@@ -94,6 +94,7 @@ def sichuan_city_areas(capture):
 # These presentation rules preserve the national provider's stored identifiers.
 _FUJIAN_CODE_SOURCE = 'https://mzt.fujian.gov.cn/gk/tzgg/202607/t20260710_7176497.htm'
 _JIANGSU_CODE_SOURCE = 'https://mzt.jiangsu.gov.cn/art/2023/4/25/art_78635_10994579.html'
+_HANZHONG_DIRECTORY_LABELS = {'610723': ('洋　县', '洋县'), '610725': ('勉　县', '勉县')}
 _CURRENT_DIRECTORY_CODES = {
     ('fujian', '三明市'): (('沙县区', '350400', '350427', '350405', _FUJIAN_CODE_SOURCE),),
     ('fujian', '南平市'): (('建阳区', '350700', '350784', '350703', _FUJIAN_CODE_SOURCE),),
@@ -139,6 +140,20 @@ def _current_directory_codes(rows, correction):
             result.append({**row, 'provider_code': current, 'region_code': None})
         else:
             result.append(row)
+    return result
+
+
+def _hanzhong_county_labels(rows):
+    result = []
+    for row in rows:
+        labels = _HANZHONG_DIRECTORY_LABELS.get(row.get('code'))
+        if (
+            labels and row.get('district') == labels[0] and row.get('official_name') == labels[0]
+            and row.get('provider') == 'national' and row.get('level') == 4 and row.get('parent_code') == '610700'
+            and row.get('source_url') == 'https://gjzwfw.www.gov.cn/fwmh/ucGovRegion/findUcGovRegion.do'
+        ):
+            row = {**row, 'district': labels[1]}
+        result.append(row)
     return result
 
 
@@ -193,6 +208,8 @@ class DirectoryStore:
             result=[json.loads(row['payload']) for row in rows]
             for correction in _CURRENT_DIRECTORY_CODES.get((province, city), ()):
                 result = _current_directory_codes(result, correction)
+            if (province, city) == ('shaanxi', '汉中市'):
+                result = _hanzhong_county_labels(result)
             if not city:
                 # Include terminal stations and district-only supplementary sources.
                 result=list({item['city']:item for item in reversed(result) if item['city']}.values())

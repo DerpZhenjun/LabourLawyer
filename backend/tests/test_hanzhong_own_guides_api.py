@@ -18,6 +18,34 @@ MATERIALS = ['劳动人事争议仲裁申请书', '授权委托书', '劳动（�
 
 
 class HanzhongOwnGuidesApiTests(TestCase):
+    def test_official_wide_space_directory_labels_reach_verified_county_guides(self):
+        from regional_hanzhong_guides import staged_guide
+
+        with TemporaryDirectory() as work:
+            directory = DirectoryStore(Path(work) / 'directory.sqlite')
+            store = RegionalStore(Path(work) / 'guides.sqlite')
+            entries = json.loads((ROOT / 'data/public-regions/directory.json').read_bytes())
+            for row in entries:
+                if row['code'] in {'610723', '610725'}:
+                    directory.put_area(row)
+                    store.put_guide(staged_guide(row['code'], ROOT))
+            app = FastAPI()
+            app.include_router(routes.router, prefix='/regional')
+            with patch.object(routes, 'store', return_value=store), patch.object(
+                routes, 'directory_store', return_value=directory,
+            ), TestClient(app) as client:
+                items = client.get('/regional/areas', params=BASE).json()['items']
+                expected = {'610723': ('洋县', '洋　县'), '610725': ('勉县', '勉　县')}
+                self.assertEqual(len(items), len(expected))
+                for item in items:
+                    district, original = expected[item['code']]
+                    self.assertEqual((item['district'], item['official_name']), (district, original))
+                    self.assertEqual(item['raw_record']['regionName'], original)
+                    self.assertIsNotNone(item['source_id'])
+                    guide = client.get('/regional/lookup', params={**BASE, 'district': item['district']}).json()
+                    self.assertEqual(guide['source_id'], item['source_id'])
+                    self.assertEqual(guide['region_code'], item['code'])
+
     def test_ningqiang_and_lueyang_keep_their_own_materials_and_sample_modes(self):
         from regional_hanzhong_guides import staged_guide
 
