@@ -1,0 +1,279 @@
+{
+  "published": false,
+  "regions": {
+    "610302": {
+      "catalog_sha256": "913a3d5c6a90472c5710bf53b3bea37a901fbc6ceb72d7e0a3b23dd6fccc4839",
+      "guide_receipt_sha256": "c03dbb27d91a5ceb56d2f87d0d67588fd008b698110c302154b1197a81209635",
+      "materials_receipt_sha256": "0bdbae1c6c0b6b0629187c5ca8412b27a5e1e7dca7f03fa0bc5224566a719d01",
+      "guide": {
+        "province": "shaanxi",
+        "province_name": "陕西省",
+        "city": "宝鸡市",
+        "district": "渭滨区",
+        "scope_level": "district",
+        "region_code": "610302",
+        "authority": "渭滨区人力资源和社会保障局",
+        "service_name": "劳动人事争议仲裁申请",
+        "source_title": "劳动人事争议仲裁申请（劳动者）",
+        "source_url": "https://zwfwzx.baoji.gov.cn/weibinqu/icity/proinfo/index?code=2d4627f40526c121783dd9a99196cc2a",
+        "source_version": "0bdbae1c6c0b6b0629187c5ca8412b27a5e1e7dca7f03fa0bc5224566a719d01",
+        "official_version": "2026-09-14 21:14:12",
+        "collected_at": "2026-11-15T06:33:29.968991+00:00",
+        "verified_at": "2026-11-15T06:34:38.170120+00:00",
+        "verification_status": "partial",
+        "published": false,
+        "can_generate": false,
+        "fields": {
+          "办理深度": {
+            "source_url": "https://zwfwzx.baoji.gov.cn/weibinqu/icity/proinfo/index?code=2d4627f40526c121783dd9a99196cc2a",
+            "region_code": "610302",
+            "raw_value": "在线核验",
+            "normalized_value": "在线核验",
+            "collected_at": "2026-11-15T06:34:38.170120+00:00",
+            "verified_at": "2026-11-15T06:34:38.170120+00:00",
+            "verification_status": "verified"
+          },
+          "办理地点": {
+            "source_url": "https://zwfwzx.baoji.gov.cn/weibinqu/icity/proinfo/index?code=2d4627f40526c121783dd9a99196cc2a",
+            "region_code": "610302",
+            "raw_value": "陕西省宝鸡市渭滨区清姜街道 清姜路28号渭滨区市民中心(办理窗口:3楼311室)",
+            "normalized_value": "陕西省宝鸡市渭滨区清姜街道 清姜路28号渭滨区市民中心(办理窗口:3楼311室)",
+            "collected_at": "2026-11-15T06:34:38.170120+00:00",
+            "verified_at": "2026-11-15T06:34:38.170120+00:00",
+            "verification_status": "verified"
+          },
+          "办理时间": {
+            "source_url": "https://zwfwzx.baoji.gov.cn/weibinqu/icity/proinfo/index?code=2d4627f40526c121783dd9a99196cc2a",
+            "region_code": "610302",
+            "raw_value": "夏令时:星期一至星期五上午08:30至12:00,下午14:30至18:00(法定节假日除外) 冬令时:星期一至星期五上午08:30至12:00,下午13:30至18:00(法定节假日除外)",
+            "normalized_value": "夏令时:星期一至星期五上午08:30至12:00,下午14:30至18:00(法定节假日除外) 冬令时:星期一至星期五上午08:30至12:00,下午13:30至18:00(法定节假日除外)",
+            "collected_at": "2026-11-15T06:34:38.170120+00:00",
+            "verified_at": "2026-11-15T06:34:38.170120+00:00",
+            "verification_status": "verified"
+          }
+        },
+        "sections": {
+          "公开指南所列受理信息": "受理地点：陕西省宝鸡市渭滨区清姜街道 清姜路28号渭滨区市民中心(办理窗口:3楼311室)\n受理时间：夏令时:星期一至星期五上午08:30至12:00,下午14:30至18:00(法定节假日除外) 冬令时:星期一至星期五上午08:30至12:00,下午13:30至18:00(法定节假日除外)"
+        },
+        "materials": [
+          {
+            "source_url": "https://zwfwzx.baoji.gov.cn/weibinqu/icity/proinfo/index?code=2d4627f40526c121783dd9a99196cc2a",
+            "region_code": "610302",
+            "raw_value": "原件，纸质材料，原件1份 复印件0份",
+            "normalized_value": "原件，纸质材料，原件1份 复印件0份",
+            "collected_at": "2026-11-15T06:34:38.170120+00:00",
+            "verified_at": "2026-11-15T06:34:38.170120+00:00",
+            "verification_status": "verified",
+            "id": "610302-worker-1",
+            "name": "授权委托书",
+            "instructions": "原件，纸质材料，原件1份 复印件0份",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份 复印件0份",
+            "required": "必要"
+          },
+          {
+            "source_url": "https://zwfwzx.baoji.gov.cn/weibinqu/icity/proinfo/index?code=2d4627f40526c121783dd9a99196cc2a",
+            "region_code": "610302",
+            "raw_value": "原件，纸质材料，原件1份 复印件0份",
+            "normalized_value": "原件，纸质材料，原件1份 复印件0份",
+            "collected_at": "2026-11-15T06:34:38.170120+00:00",
+            "verified_at": "2026-11-15T06:34:38.170120+00:00",
+            "verification_status": "verified",
+            "id": "610302-worker-2",
+            "name": "劳动人事争议仲裁申请书",
+            "instructions": "原件，纸质材料，原件1份 复印件0份",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份 复印件0份",
+            "required": "必要"
+          },
+          {
+            "source_url": "https://zwfwzx.baoji.gov.cn/weibinqu/icity/proinfo/index?code=2d4627f40526c121783dd9a99196cc2a",
+            "region_code": "610302",
+            "raw_value": "复印件，纸质材料，原件0份 复印件1份",
+            "normalized_value": "复印件，纸质材料，原件0份 复印件1份",
+            "collected_at": "2026-11-15T06:34:38.170120+00:00",
+            "verified_at": "2026-11-15T06:34:38.170120+00:00",
+            "verification_status": "verified",
+            "id": "610302-worker-3",
+            "name": "身份证",
+            "instructions": "复印件，纸质材料，原件0份 复印件1份",
+            "material_type": "复印件",
+            "format": "纸质材料",
+            "copies": "原件0份 复印件1份",
+            "required": "必要"
+          }
+        ],
+        "templates": [],
+        "channel": {
+          "raw_value": "在线核验",
+          "online_status": "unverified",
+          "entry_url": null,
+          "submission_verified": false
+        },
+        "warnings": [
+          "本区申请书已核验。",
+          "独立证据目录仍待核验。",
+          "办理深度按本区指南记录，线上申请状态尚未核验。"
+        ]
+      },
+      "template": {
+        "region_code": "610302",
+        "source_url": "https://zwfwzx.baoji.gov.cn/weibinqu/icity/proinfo/index?code=2d4627f40526c121783dd9a99196cc2a",
+        "official_sha256": "200e2034d7c644821fe9978017624f33360e34b4ce9e88a8816abb31c0c913eb",
+        "official_bytes": 13178,
+        "layout_sha256": "a9abffd8a2714f636689727f0113f2d19f22c76ba1a7809792ac029ce64295da",
+        "fetched_at": "2026-11-15T06:34:38.170120+00:00"
+      }
+    },
+    "610305": {
+      "catalog_sha256": "90380ff8af34c21a43f7657e8147caec0fb5b6d7f76acbfb115f4cf1b32c0e4c",
+      "guide_receipt_sha256": "cd6861c865b8ae0be29ecea62353d334f4e68e2b378b53f0325f2a0d11b6a4ec",
+      "materials_receipt_sha256": "d293c0853205c316e63b532392cccc33d409c09eca281e7765ff103413e6fa36",
+      "guide": {
+        "province": "shaanxi",
+        "province_name": "陕西省",
+        "city": "宝鸡市",
+        "district": "凤翔区",
+        "scope_level": "district",
+        "region_code": "610305",
+        "authority": "凤翔区人力资源和社会保障局",
+        "service_name": "劳动人事争议仲裁申请",
+        "source_title": "劳动人事争议仲裁申请（劳动者）",
+        "source_url": "https://zwfwzx.baoji.gov.cn/fengxiangxian/icity/proinfo/index?code=e98532adcf9a3fdfbe2e5aa75271d289",
+        "source_version": "d293c0853205c316e63b532392cccc33d409c09eca281e7765ff103413e6fa36",
+        "official_version": "2026-07-25 14:47:52",
+        "collected_at": "2026-11-15T06:33:25.679993+00:00",
+        "verified_at": "2026-11-15T06:34:35.866682+00:00",
+        "verification_status": "partial",
+        "published": false,
+        "can_generate": false,
+        "fields": {
+          "办理深度": {
+            "source_url": "https://zwfwzx.baoji.gov.cn/fengxiangxian/icity/proinfo/index?code=e98532adcf9a3fdfbe2e5aa75271d289",
+            "region_code": "610305",
+            "raw_value": "在线核验",
+            "normalized_value": "在线核验",
+            "collected_at": "2026-11-15T06:34:35.866682+00:00",
+            "verified_at": "2026-11-15T06:34:35.866682+00:00",
+            "verification_status": "verified"
+          },
+          "办理地点": {
+            "source_url": "https://zwfwzx.baoji.gov.cn/fengxiangxian/icity/proinfo/index?code=e98532adcf9a3fdfbe2e5aa75271d289",
+            "region_code": "610305",
+            "raw_value": "陕西省宝鸡市凤翔区城关镇 雍城大道西段宝鸡凤凰大酒店南侧约110米凤翔市民中心(办理窗口:322室)",
+            "normalized_value": "陕西省宝鸡市凤翔区城关镇 雍城大道西段宝鸡凤凰大酒店南侧约110米凤翔市民中心(办理窗口:322室)",
+            "collected_at": "2026-11-15T06:34:35.866682+00:00",
+            "verified_at": "2026-11-15T06:34:35.866682+00:00",
+            "verification_status": "verified"
+          },
+          "办理时间": {
+            "source_url": "https://zwfwzx.baoji.gov.cn/fengxiangxian/icity/proinfo/index?code=e98532adcf9a3fdfbe2e5aa75271d289",
+            "region_code": "610305",
+            "raw_value": "夏令时:星期一至星期五上午08:00至12:00,下午15:00至18:00(法定节假日除外) 冬令时:星期一至星期五上午08:00至12:00,下午14:00至18:00(法定节假日除外)",
+            "normalized_value": "夏令时:星期一至星期五上午08:00至12:00,下午15:00至18:00(法定节假日除外) 冬令时:星期一至星期五上午08:00至12:00,下午14:00至18:00(法定节假日除外)",
+            "collected_at": "2026-11-15T06:34:35.866682+00:00",
+            "verified_at": "2026-11-15T06:34:35.866682+00:00",
+            "verification_status": "verified"
+          }
+        },
+        "sections": {
+          "公开指南所列受理信息": "受理地点：陕西省宝鸡市凤翔区城关镇 雍城大道西段宝鸡凤凰大酒店南侧约110米凤翔市民中心(办理窗口:322室)\n受理时间：夏令时:星期一至星期五上午08:00至12:00,下午15:00至18:00(法定节假日除外) 冬令时:星期一至星期五上午08:00至12:00,下午14:00至18:00(法定节假日除外)"
+        },
+        "materials": [
+          {
+            "source_url": "https://zwfwzx.baoji.gov.cn/fengxiangxian/icity/proinfo/index?code=e98532adcf9a3fdfbe2e5aa75271d289",
+            "region_code": "610305",
+            "raw_value": "复印件，纸质材料，原件0份 复印件1份",
+            "normalized_value": "复印件，纸质材料，原件0份 复印件1份",
+            "collected_at": "2026-11-15T06:34:35.866682+00:00",
+            "verified_at": "2026-11-15T06:34:35.866682+00:00",
+            "verification_status": "verified",
+            "id": "610305-worker-1",
+            "name": "身份证",
+            "instructions": "复印件，纸质材料，原件0份 复印件1份",
+            "material_type": "复印件",
+            "format": "纸质材料",
+            "copies": "原件0份 复印件1份",
+            "required": "必要"
+          },
+          {
+            "source_url": "https://zwfwzx.baoji.gov.cn/fengxiangxian/icity/proinfo/index?code=e98532adcf9a3fdfbe2e5aa75271d289",
+            "region_code": "610305",
+            "raw_value": "原件，纸质材料，原件1份 复印件0份",
+            "normalized_value": "原件，纸质材料，原件1份 复印件0份",
+            "collected_at": "2026-11-15T06:34:35.866682+00:00",
+            "verified_at": "2026-11-15T06:34:35.866682+00:00",
+            "verification_status": "verified",
+            "id": "610305-worker-2",
+            "name": "授权委托书",
+            "instructions": "原件，纸质材料，原件1份 复印件0份",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件1份 复印件0份",
+            "required": "必要"
+          },
+          {
+            "source_url": "https://zwfwzx.baoji.gov.cn/fengxiangxian/icity/proinfo/index?code=e98532adcf9a3fdfbe2e5aa75271d289",
+            "region_code": "610305",
+            "raw_value": "复印件，纸质材料，原件0份 复印件2份",
+            "normalized_value": "复印件，纸质材料，原件0份 复印件2份",
+            "collected_at": "2026-11-15T06:34:35.866682+00:00",
+            "verified_at": "2026-11-15T06:34:35.866682+00:00",
+            "verification_status": "verified",
+            "id": "610305-worker-3",
+            "name": "劳动（人事）关系证明材料",
+            "instructions": "复印件，纸质材料，原件0份 复印件2份",
+            "material_type": "复印件",
+            "format": "纸质材料",
+            "copies": "原件0份 复印件2份",
+            "required": "必要"
+          },
+          {
+            "source_url": "https://zwfwzx.baoji.gov.cn/fengxiangxian/icity/proinfo/index?code=e98532adcf9a3fdfbe2e5aa75271d289",
+            "region_code": "610305",
+            "raw_value": "原件，纸质材料，原件2份 复印件0份",
+            "normalized_value": "原件，纸质材料，原件2份 复印件0份",
+            "collected_at": "2026-11-15T06:34:35.866682+00:00",
+            "verified_at": "2026-11-15T06:34:35.866682+00:00",
+            "verification_status": "verified",
+            "id": "610305-worker-4",
+            "name": "劳动人事争议仲裁申请书",
+            "instructions": "原件，纸质材料，原件2份 复印件0份",
+            "material_type": "原件",
+            "format": "纸质材料",
+            "copies": "原件2份 复印件0份",
+            "required": "必要"
+          }
+        ],
+        "templates": [
+          {
+            "id": "baoji-610305-worker-application-sample",
+            "region_code": "610305",
+            "official_kind": "sample",
+            "source_url": "https://zwfwzx.baoji.gov.cn/fengxiangxian/icity/proinfo/index?code=e98532adcf9a3fdfbe2e5aa75271d289",
+            "official_attachment_entry": "material_tab",
+            "original_name": "凤翔区劳动仲裁申请书（官方样表）",
+            "download_status": "official_link_only",
+            "document_types": [
+              "application"
+            ],
+            "can_generate": false
+          }
+        ],
+        "channel": {
+          "raw_value": "在线核验",
+          "online_status": "unverified",
+          "entry_url": null,
+          "submission_verified": false
+        },
+        "warnings": [
+          "凤翔区指南公开列出申请书样表，空表仍待核验。",
+          "独立证据目录仍待核验。",
+          "办理深度按本区指南记录，线上申请状态尚未核验。"
+        ]
+      }
+    }
+  }
+}
