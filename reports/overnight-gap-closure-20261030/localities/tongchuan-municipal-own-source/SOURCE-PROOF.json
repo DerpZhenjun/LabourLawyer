@@ -1,0 +1,94 @@
+{
+  "original_html_sha256": "c5ae6fd988596088b3412c177c26f198846f089f372e528a2158d486f3b6e1d7",
+  "source_observed_at": "2026-11-15T07:21:06.6228984+00:00",
+  "guide": {
+    "province": "shaanxi",
+    "province_name": "陕西省",
+    "city": "铜川市",
+    "district": "市本级",
+    "scope_level": "municipal",
+    "region_code": "610200",
+    "authority": "铜川市人力资源和社会保障局调解仲裁科",
+    "service_name": "劳动人事争议仲裁申请",
+    "source_title": "劳动人事争议调解仲裁",
+    "source_url": "https://rs.tongchuan.gov.cn/micro/onlineItemDetail.jspx?saa004=00000283",
+    "source_version": "c5ae6fd988596088b3412c177c26f198846f089f372e528a2158d486f3b6e1d7",
+    "official_version": "",
+    "collected_at": "2026-11-15T07:21:06.6228984+00:00",
+    "verified_at": "2026-11-15T07:21:06.6228984+00:00",
+    "verification_status": "verified",
+    "published": true,
+    "can_generate": false,
+    "fields": {
+      "办理地点": "铜川市新区齐庆路便民服务中心10楼1003室",
+      "咨询方式": "0919-3185664",
+      "办理时间": "周一至周五9：00-12：00 14：30-17：00（法定节假日除外）",
+      "服务对象": "单位或个人"
+    },
+    "sections": {
+      "公开说明所列市本级受理条件": "1、市国家机关、事业单位和社会团体发生的劳动、人事争议；2、驻铜部队师级单位发生的劳动、人事争议；3、中省驻铜和市属国有及国有控股企业发生的劳动争议；4、新区范围内其他各类企业及其分支机构和民办非企业单位发生的劳动争议。",
+      "官网所列结案时限": "一般45日内结案，案情复杂的可延长15日"
+    },
+    "materials": [
+      {
+        "id": "610200-municipal-1",
+        "name": "劳动/人事争议仲裁申请书",
+        "required": "是",
+        "source_url": "https://rs.tongchuan.gov.cn/micro/onlineItemDetail.jspx?saa004=00000283",
+        "region_code": "610200",
+        "raw_value": "劳动/人事争议仲裁申请书",
+        "normalized_value": "劳动/人事争议仲裁申请书",
+        "verification_status": "verified",
+        "verified_at": "2026-11-15T07:21:06.6228984+00:00",
+        "collected_at": "2026-11-15T07:21:06.6228984+00:00"
+      },
+      {
+        "id": "610200-municipal-2",
+        "name": "申请人身份证或社会保障卡",
+        "required": "是",
+        "source_url": "https://rs.tongchuan.gov.cn/micro/onlineItemDetail.jspx?saa004=00000283",
+        "region_code": "610200",
+        "raw_value": "申请人身份证或社会保障卡",
+        "normalized_value": "申请人身份证或社会保障卡",
+        "verification_status": "verified",
+        "verified_at": "2026-11-15T07:21:06.6228984+00:00",
+        "collected_at": "2026-11-15T07:21:06.6228984+00:00"
+      },
+      {
+        "id": "610200-municipal-3",
+        "name": "授权委托书及受委托人身份证明或资格证明（有委托代理人的提供）",
+        "required": "是",
+        "source_url": "https://rs.tongchuan.gov.cn/micro/onlineItemDetail.jspx?saa004=00000283",
+        "region_code": "610200",
+        "raw_value": "授权委托书及受委托人身份证明或资格证明（有委托代理人的提供）",
+        "normalized_value": "授权委托书及受委托人身份证明或资格证明（有委托代理人的提供）",
+        "verification_status": "verified",
+        "verified_at": "2026-11-15T07:21:06.6228984+00:00",
+        "collected_at": "2026-11-15T07:21:06.6228984+00:00",
+        "purpose": "有委托代理人的提供"
+      },
+      {
+        "id": "610200-municipal-4",
+        "name": "与请求事项相关的证据",
+        "required": "是",
+        "source_url": "https://rs.tongchuan.gov.cn/micro/onlineItemDetail.jspx?saa004=00000283",
+        "region_code": "610200",
+        "raw_value": "与请求事项相关的证据",
+        "normalized_value": "与请求事项相关的证据",
+        "verification_status": "verified",
+        "verified_at": "2026-11-15T07:21:06.6228984+00:00",
+        "collected_at": "2026-11-15T07:21:06.6228984+00:00"
+      }
+    ],
+    "templates": [],
+    "channel": {
+      "raw_value": "",
+      "online_status": "unverified",
+      "entry_url": null,
+      "submission_verified": false
+    },
+    "warnings": [
+      "本页仅整理市人社局公开说明的市本级范围。未取得独立空白申请书或证据清单，网上办理未核验。"
+    ]
+  }
+}

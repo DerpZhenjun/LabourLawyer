@@ -1,0 +1,124 @@
+{
+  "original_html_sha256": "c37bf51c30c2c039c4bbd8a711a7998230033da0f39dc02f63af093488cc4134",
+  "blank_entry_receipt_sha256": "e069e7a64f0ee0a3b77c1bfc809271f8519836262b272fae5828759964a3a3d9",
+  "sample_entry_receipt_sha256": "7dedd91f5403d2613d85d20a3509db6cdc64a174e265ca45b334ff3b62dad8ca",
+  "attachment_comparison": {
+    "劳动人事争议仲裁申请书": {
+      "official_name": "劳动仲裁申请书（样本）.doc",
+      "blank_entry_sha256": "eb7e33fa48f901cbbd6ecb9e994ca86c71a5da5aebd2df1e9372faaf85596515",
+      "sample_entry_sha256": "eb7e33fa48f901cbbd6ecb9e994ca86c71a5da5aebd2df1e9372faaf85596515",
+      "same_bytes": true
+    },
+    "授权委托书": {
+      "official_name": "授权委托书模板.doc",
+      "blank_entry_sha256": "4980f6ba4e4eb3ca915ae1ff73a374fbb593cd673eae73bd15bf8b125a597f56",
+      "sample_entry_sha256": "9b4af773d82ba5575c780411f9511735f135ba4e2bdb3d69fbe1b1b597278212",
+      "same_bytes": false
+    }
+  },
+  "guide": {
+    "province": "shaanxi",
+    "province_name": "陕西省",
+    "city": "汉中市",
+    "district": "城固县",
+    "scope_level": "district",
+    "region_code": "610722",
+    "authority": "城固县劳动人事争议仲裁委员会",
+    "service_name": "劳动人事争议仲裁申请",
+    "source_title": "劳动人事争议仲裁申请（劳动者）",
+    "source_url": "https://zwfw.hanzhong.gov.cn/chengguxian/icity/proinfo/index?code=1cc63bbd676a8984cd9336ea27286c65",
+    "source_version": "e069e7a64f0ee0a3b77c1bfc809271f8519836262b272fae5828759964a3a3d9",
+    "official_version": "",
+    "collected_at": "2026-11-15T08:03:53.392580+00:00",
+    "verified_at": "2026-11-15T08:03:53.392580+00:00",
+    "verification_status": "verified",
+    "published": true,
+    "can_generate": false,
+    "fields": {
+      "办理形式": "窗口办理 网上办理",
+      "服务对象": "自然人",
+      "是否收费": "不收费",
+      "到场办理原因": "递交材料",
+      "办理地点": "陕西省汉中市城固县博望街道 乐城路71号（原西环二路北段）政务服务中心一楼(办理窗口:人社窗口)",
+      "办理时间": "星期一至星期五上午08:30至12:00,下午14:00至17:30(法定节假日除外)"
+    },
+    "sections": {
+      "公开事项所列申请条件": "劳动者与用人单位发生劳动人事争议时，当事人不愿调解、调解不成或者达成调解协议后不履行的，可以向劳动人事争议仲裁委员会申请仲裁。",
+      "事项时限与审批结果": "法定办结时限 5 工作日；承诺办结时限 0 工作日；审批结果名称 受理通知书 不予受理通知书"
+    },
+    "materials": [
+      {
+        "id": "610722-worker-1",
+        "region_code": "610722",
+        "source_url": "https://zwfw.hanzhong.gov.cn/chengguxian/icity/proinfo/index?code=1cc63bbd676a8984cd9336ea27286c65",
+        "name": "劳动人事争议仲裁申请书",
+        "format": "纸质材料",
+        "copies": "原件1份  复印件1份",
+        "required": "必要",
+        "instructions": "纸质材料；原件1份  复印件1份；必要；自备",
+        "raw_value": "纸质材料；原件1份  复印件1份；必要；自备",
+        "normalized_value": "纸质材料；原件1份  复印件1份；必要；自备",
+        "verification_status": "verified",
+        "collected_at": "2026-11-15T08:03:53.392580+00:00",
+        "verified_at": "2026-11-15T08:03:53.392580+00:00"
+      },
+      {
+        "id": "610722-worker-2",
+        "region_code": "610722",
+        "source_url": "https://zwfw.hanzhong.gov.cn/chengguxian/icity/proinfo/index?code=1cc63bbd676a8984cd9336ea27286c65",
+        "name": "身份证",
+        "format": "纸质材料",
+        "copies": "复印件1份",
+        "required": "必要",
+        "instructions": "纸质材料；复印件1份；必要；自备",
+        "raw_value": "纸质材料；复印件1份；必要；自备",
+        "normalized_value": "纸质材料；复印件1份；必要；自备",
+        "verification_status": "verified",
+        "collected_at": "2026-11-15T08:03:53.392580+00:00",
+        "verified_at": "2026-11-15T08:03:53.392580+00:00"
+      },
+      {
+        "id": "610722-worker-3",
+        "region_code": "610722",
+        "source_url": "https://zwfw.hanzhong.gov.cn/chengguxian/icity/proinfo/index?code=1cc63bbd676a8984cd9336ea27286c65",
+        "name": "授权委托书",
+        "format": "纸质材料",
+        "copies": "原件1份",
+        "required": "非必要",
+        "instructions": "纸质材料；原件1份；非必要；自备",
+        "raw_value": "纸质材料；原件1份；非必要；自备",
+        "normalized_value": "纸质材料；原件1份；非必要；自备",
+        "verification_status": "verified",
+        "collected_at": "2026-11-15T08:03:53.392580+00:00",
+        "verified_at": "2026-11-15T08:03:53.392580+00:00"
+      }
+    ],
+    "templates": [
+      {
+        "id": "chenggu-610722-application-sample",
+        "region_code": "610722",
+        "official_kind": "sample",
+        "source_url": "https://zwfw.hanzhong.gov.cn/chengguxian/icity/proinfo/index?code=1cc63bbd676a8984cd9336ea27286c65",
+        "official_attachment_entry": "material_tab",
+        "original_name": "城固县劳动仲裁申请书（官方样表入口）",
+        "official_sha256": "eb7e33fa48f901cbbd6ecb9e994ca86c71a5da5aebd2df1e9372faaf85596515",
+        "download_status": "official_link_only",
+        "document_types": [
+          "application"
+        ],
+        "can_generate": false
+      }
+    ],
+    "channel": {
+      "raw_value": "窗口办理 网上办理",
+      "online_status": "unverified",
+      "entry_url": null,
+      "submission_verified": false
+    },
+    "warnings": [
+      "申请书的空表与样表入口返回同一份样本，独立空白申请书仍待核验。",
+      "城固县委托书空表已取得，文件结构与版式待核验。",
+      "本次公开栏目未核验到独立证据目录。"
+    ]
+  }
+}
