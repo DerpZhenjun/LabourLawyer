@@ -95,6 +95,33 @@ class XianyangQianxianOwnGuideTests(TestCase):
         payload = {**params, "mode": "blank", "data": {}}
         self.assertEqual(client.post("/regional/generate", json=payload).status_code, 409)
 
+    def test_qianxian_common_spelling_resolves_only_the_same_county(self):
+        from regional_xianyang_qianxian_guides import staged_guide
+
+        root = Path(self.enterContext(TemporaryDirectory()))
+        store = RegionalStore(root / "guides.sqlite")
+        self.enterContext(patch.object(routes, "ROOT", root))
+        self.enterContext(patch.object(routes, "store", return_value=store))
+        app = FastAPI()
+        app.include_router(routes.router, prefix="/regional")
+        client = self.enterContext(TestClient(app))
+        spelling = {**CITY, "district": "乾县"}
+
+        self.assertIsNone(client.get("/regional/lookup", params=spelling).json()["source_id"])
+        current = store.put_guide(staged_guide(ROOT))
+        self.assertEqual(client.get("/regional/lookup", params=spelling).json(), current)
+        self.assertEqual(
+            client.get("/regional/lookup", params=spelling).json(),
+            client.get("/regional/lookup", params=AREA).json(),
+        )
+        self.assertEqual(client.get("/regional/versions", params=spelling).json(),
+                         client.get("/regional/versions", params=AREA).json())
+        for outside in ({**spelling, "city": "西安市"}, {**spelling, "province": "sichuan"},
+                        {**spelling, "district": "乾 县"}):
+            with self.subTest(outside=outside):
+                self.assertIsNone(client.get("/regional/lookup", params=outside).json()["source_id"])
+                self.assertEqual(client.get("/regional/versions", params=outside).json(), {"items": []})
+
     def test_modified_source_proof_is_rejected(self):
         from regional_xianyang_qianxian_guides import SOURCE, staged_guide
 

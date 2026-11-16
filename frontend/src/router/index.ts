@@ -52,6 +52,10 @@ const routes:RouteRecordRaw[] = [
 
 const router=createRouter({history:createWebHistory(import.meta.env.BASE_URL),routes,scrollBehavior(to){return to.hash?{el:to.hash,behavior:'smooth'}:{top:0}}})
 router.beforeEach(async to => {
+  const servesLocalGuide = to.name === 'province-guide' || to.path.startsWith('/local-documents/')
+  if (servesLocalGuide && to.params.slug === 'shaanxi' && to.query.city === '咸阳市' && to.query.district === '乾县') {
+    return { path: to.path, query: { ...to.query, district: '乾　县' }, hash: to.hash, replace: true }
+  }
   if(to.meta.layout==='admin'){
     try{const user=await verifySession();if(!user||user.role!=='admin')return{path:'/login',query:{next:to.fullPath}}}
     catch{return{path:'/login',query:{next:to.fullPath}}}

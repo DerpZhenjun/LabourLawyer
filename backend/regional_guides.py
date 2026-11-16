@@ -13,6 +13,10 @@ from urllib.parse import parse_qs, urlsplit
 
 EVENT_TYPES=set('SEARCH_NO_RESULT SEARCH_ALIAS_REQUIRED WRONG_SERVICE_MATCH GUIDE_PAGE_UNAVAILABLE REGION_SELECTION_FAILURE ONLINE_APPLICATION_UNAVAILABLE ONLINE_CHANNEL_UNVERIFIED OFFICIAL_TEMPLATE_NOT_FOUND TEMPLATE_DOWNLOAD_FAILED MATERIAL_INFORMATION_MISSING AUTH_REQUIRED CAPTCHA_REQUIRED OFFICIAL_SOURCE_CONFLICT SOURCE_STALE'.split())
 
+QIANXIAN_SCOPE = ('shaanxi', '咸阳市', '乾　县')
+QIANXIAN_ALIAS = ('shaanxi', '咸阳市', '乾县')
+
+
 def now():return datetime.now(timezone.utc).isoformat()
 def digest(value):return hashlib.sha256(json.dumps(value,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
 def region_key(province,city,district):return digest([province.strip(),city.strip(),district.strip()])[:24]
@@ -93,19 +97,34 @@ class RegionalStore:
             seq=db.execute('SELECT sequence FROM regional_guides WHERE region_id=? AND content_hash=?',(rid,checksum)).fetchone()['sequence']
             db.execute('INSERT OR REPLACE INTO regional_current VALUES(?,?)',(rid,seq))
         return self.lookup(d['province'],d['city'],d['district'])
-    def lookup(self,province,city,district):
+    def lookup(self, province, city, district):
+        scope = (province.strip(), city.strip(), district.strip())
+        query = '''SELECT * FROM regional_guides WHERE province=? AND city=? AND district=?
+                   AND sequence IN (SELECT sequence FROM regional_current) LIMIT 1'''
         with self.connection() as db:
-            row=db.execute('SELECT * FROM regional_guides WHERE province=? AND city=? AND district=? AND sequence IN (SELECT sequence FROM regional_current) LIMIT 1',
-                           (province.strip(),city.strip(),district.strip())).fetchone()
-        if row:
-            d=json.loads(row['payload']);d['version']=row['sequence'];return d
+            row = db.execute(query, scope).fetchone()
+            if row:
+                return {**json.loads(row['payload']), 'version': row['sequence']}
+            if scope == QIANXIAN_ALIAS:
+                row = db.execute(query, QIANXIAN_SCOPE).fetchone()
+                if row:
+                    payload = json.loads(row['payload'])
+                    if payload.get('region_code') == '610424':
+                        return {**payload, 'version': row['sequence']}
         return {'province':province,'city':city,'district':district,'region_id':region_key(province,city,district),
                 'source_id':None,'verification_status':'unverified','fields':{},'materials':[],'templates':[],
                 'sections':{},'channel':resolve_channel({},''),'message':'该地区办事指南尚未核验'}
-    def versions(self,province,city,district):
+    def versions(self, province, city, district):
+        scope = (province, city, district)
+        query = '''SELECT payload FROM regional_guides
+                   WHERE province=? AND city=? AND district=? ORDER BY sequence DESC'''
         with self.connection() as db:
-            rows=db.execute('SELECT payload FROM regional_guides WHERE province=? AND city=? AND district=? ORDER BY sequence DESC',(province,city,district)).fetchall()
-        return [json.loads(r['payload']) for r in rows]
+            rows = db.execute(query, scope).fetchall()
+            if rows or scope != QIANXIAN_ALIAS:
+                return [json.loads(row['payload']) for row in rows]
+            rows = db.execute(query, QIANXIAN_SCOPE).fetchall()
+        payloads = [json.loads(row['payload']) for row in rows]
+        return [payload for payload in payloads if payload.get('region_code') == '610424']
     def inventory(self):
         with self.connection() as db:
             rows=db.execute('SELECT payload FROM regional_guides WHERE sequence IN (SELECT sequence FROM regional_current) ORDER BY province,city,district').fetchall()
