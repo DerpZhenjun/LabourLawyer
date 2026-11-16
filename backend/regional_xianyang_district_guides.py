@@ -7,6 +7,13 @@ from pathlib import Path
 from regional_guides import digest
 
 
+def _period(role, kind):
+    period = role.get(f"{kind}_period")
+    if period is not None:
+        return period
+    return f'{role[f"{kind}_workdays"]} 个工作日'
+
+
 def read_guide(root, source, source_sha256, district, warning):
     root = Path(root).resolve()
     path = (root / source).resolve()
@@ -50,9 +57,9 @@ def read_guide(root, source, source_sha256, district, warning):
             "办理形式": channel,
             "办理时间": proof["hours"],
             "办理地点": "\n".join(f'{item["name"]}：{item["office"]}' for item in roles.values()),
-            "法定办结时限": f'{roles["worker"]["legal_workdays"]} 个工作日',
+            "法定办结时限": _period(roles["worker"], "legal"),
             "承诺办结时限": "\n".join(
-                f'{item["name"]}：{item["promised_workdays"]} 个工作日' for item in roles.values()
+                f'{item["name"]}：{_period(item, "promised")}' for item in roles.values()
             ),
             "是否收费": "否",
         },

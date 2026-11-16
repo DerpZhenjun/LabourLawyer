@@ -1,0 +1,108 @@
+{
+  "collected_at": "2026-11-16T00:11:06Z",
+  "region_code": "610431",
+  "city": "咸阳市",
+  "district": "武功县",
+  "authority": "武功县人社局",
+  "consultation_phone": "029-37299880",
+  "complaint_phone": "029-37292258",
+  "hours": "星期一至星期五上午08:30至12:00，下午14:30至18:00（法定节假日除外）",
+  "source_receipt_sha256": "ead916407faf2aae1f4edef12481a4b4ef2b8117e33d515e254cc71cd209184a",
+  "channel_note": "两角色公开在线按钮均实测至陕西省统一身份认证。旧版劳动者列网上、窗口、快递，用人单位仅列网上且写不支持物流快递。劳动者请向办理机关核对邮寄收件信息。",
+  "attachment_note": "劳动者五项、用人单位两项，下载均标为样表。两份现行指南均列申请书原件4份。旧版材料表未列条目。",
+  "venue_note": "两角色现行指南均指后稷西路与文汇路交叉口一带，劳动者窗口列武功县劳动人事争议仲裁院，用人单位窗口列就业和社保服务中心四楼。实际窗口受理方式请向办理机关核对。",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1111635145835&siteCode=610431000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&areacode=610431000000&id=7e224465e898bd30bfb899747311312b",
+      "office": "陕西省咸阳市武功县普集街道 后稷西路和文汇路十字(办理窗口:武功县劳动人事争议仲裁院)",
+      "handling_form": "网上办理、窗口办理、快递申请（旧版列示）",
+      "legal_period": "5 个自然日",
+      "promised_period": "5 个自然日",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件4份",
+          "required": "必要",
+          "instructions": "真实，合法有效 附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1F/1A/rBIxU2Crbi2APF02AACaAE3XT6M582.doc"
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1份",
+          "required": "必要",
+          "instructions": "真实，合法有效 附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1F/1B/rBIxU2CrbsOARAf8AAA_aS5Dtxs76.docx"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1份",
+          "required": "必要",
+          "instructions": "真实，合法有效 附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1F/1C/rBIxU2CrbxyATBpPAACaAE3XT6M433.doc"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "instructions": "真实、合法有效 附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1F/1C/rBIxU2Crb2uAHCnzAABiANRrd40474.doc"
+        },
+        {
+          "key": "employment_permit",
+          "name": "外国人就业证",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1份",
+          "required": "必要",
+          "instructions": "现行指南未说明适用条件，请向办理机关核对。 附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1F/1D/rBIxU2Crb9yAfo88AACaAE3XT6M879.doc"
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1115989147006&siteCode=610431000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&areacode=610431000000&id=1c05790b8a7eee403e2936dda0977fc2",
+      "office": "陕西省咸阳市武功县普集街道 怡心华府西南(后稷西路)后稷西路与文汇路十字(办理窗口:就业和社保服务中心四楼)",
+      "handling_form": "网上办理（旧版列示）",
+      "legal_period": "5 个自然日",
+      "promised_period": "5 个自然日",
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件4份",
+          "required": "必要",
+          "instructions": "以事实为依据，以法律为准绳 附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0C/C6/rBIxVGCrZ-2ABkTIAACaAE3XT6M550.doc"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "instructions": "真实、合法有效 材料依据栏原文：真实，并加盖公章。 附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1F/10/rBIxU2CragyAJuCMAABA6kCYwLs32.docx"
+        }
+      ]
+    }
+  }
+}
