@@ -1,0 +1,33 @@
+{
+  "province": "ningxia",
+  "province_name": "宁夏回族自治区",
+  "city": "吴忠市",
+  "district": "同心县",
+  "region_code": "640324",
+  "collected_at": "2026-11-16T10:26:11.9373841+08:00",
+  "authority": "同心县劳动人事争议仲裁院",
+  "source": {
+    "title": "同心县人力资源和社会保障局直属机构",
+    "url": "https://www.tongxin.gov.cn/zwgk/jigouzhineng/xzfzcbm/rlzyhshbzj/zsjg_43604/202111/t20211125_3154178.html",
+    "sha256": "c86b3cd6c55c38fe358ac91709595b942cd74a5f9c7e2f375085380f645dcdaf",
+    "section": "三、同心县劳动人事争议仲裁院",
+    "published_at": "2021-11-25"
+  },
+  "duties": "同心县劳动人事争议仲裁院负责处理县仲裁委员会管辖的劳动人事争议案件，并提供相关政策咨询。",
+  "office": "同心县新区罗山路5号人力资源和社会保障局大楼一楼",
+  "phone_fax": "0953-8030350",
+  "limits": "专门立案窗口、网上提交入口、双方申请材料和空白表格仍待核验。",
+  "recent_institute_disclosures": [
+    {
+      "url": "https://www.tongxin.gov.cn/zwgk/zfxxgkml/czzj_47146/bmys/2021n_74541/202602/W020260205425951936402.pdf",
+      "publisher_url": "https://www.tongxin.gov.cn/zwgk/zfxxgkml/czzj_47146/bmys/2021n_74541/202602/t20260205_5161064.html",
+      "sha256": "5e28025211064e604880aae41564b0d569376edbfd5a7d74a3854406e62feb2d"
+    },
+    {
+      "url": "https://www.tongxin.gov.cn/zwgk/zfxxgkml/czzj_47146/bmjs/2021_77410/202609/W020260921328999372560.pdf",
+      "publisher_url": "https://www.tongxin.gov.cn/zwgk/zfxxgkml/czzj_47146/bmjs/2021_77410/202609/t20260921_5350912.html",
+      "sha256": "c92a0016efee3d508c33922ff9621eab4519dea42fca709b05e544be226623bb"
+    }
+  ],
+  "receipt_sha256": "20cd507fe70009424f03fdb4b26bcf22e20375e82eee75fa247a98d7c3faae6d"
+}
