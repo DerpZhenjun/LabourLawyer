@@ -1,0 +1,34 @@
+{
+  "province": "ningxia",
+  "province_name": "宁夏回族自治区",
+  "city": "石嘴山市",
+  "district": "大武口区",
+  "region_code": "640202",
+  "collected_at": "2026-11-16T09:26:47.5578776+08:00",
+  "checklist": {
+    "title": "大武口区基本公共就业服务事项清单（第29项）",
+    "url": "https://www.dwk.gov.cn/ztzl/zxzt/rsjzyk_/202303/t20230307_3987464.html",
+    "sha256": "b662f046b602e494b6a01eb346ea8a05a77f9f393149e981143642ce4f2feb2e"
+  },
+  "procedure": {
+    "title": "劳动人事争议调解、仲裁工作规程",
+    "url": "https://www.dwk.gov.cn/ztzl/zxzt/rsjzyk_/202303/t20230307_3987373.html",
+    "materials_image_url": "https://www.dwk.gov.cn/ztzl/zxzt/rsjzyk_/202303/W020230307546027957930.jpg",
+    "materials_image_sha256": "028a764d04e1e29e328f1fc5a2db77985caf102ce79940e246befef90f8141ae",
+    "materials": [
+      {"key": "application", "name": "劳动仲裁申请书", "original_copy": ""},
+      {"key": "identity", "name": "本人身份证复印件", "original_copy": "复印件"},
+      {"key": "relationship", "name": "劳动关系证据", "original_copy": ""},
+      {"key": "respondent", "name": "被申请人登记注册信息", "original_copy": ""}
+    ]
+  },
+  "institute": {
+    "url": "https://www.dwk.gov.cn/xxgk/zfxxgkml/jgzn/dwkqrlzyhshbzj/202111/t20211117_3135054.html",
+    "sha256": "43fc0576326b003c8b97c66970709d6b807b05b2a3d625679fc89d84c7902278"
+  },
+  "authority": "大武口区劳动人事争议仲裁院",
+  "office": "大武口区劳动人事争议仲裁院办公室",
+  "channel": "线下书面申请",
+  "application_note": "下列资料按劳动者展示，区人社局工作规程以本人身份证为身份材料。用人单位材料仍待核验，区级空白模板仍待核验。",
+  "proof_sha256": "b788dc18aac58dd15d7d2bace52b32de45125bdc404d9ac857cccb30b6042c76"
+}
