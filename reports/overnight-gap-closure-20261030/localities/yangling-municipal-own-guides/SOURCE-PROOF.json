@@ -1,0 +1,110 @@
+{
+  "collected_at": "2026-11-16T00:27:29Z",
+  "region_code": "611100",
+  "city": "杨凌示范区",
+  "district": "市本级",
+  "authority": "杨凌示范区人力资源社会保障局",
+  "phone": "029-87033786",
+  "hours": "工作日夏令时上午08:30至12:00，下午15:00至18:00。冬令时上午08:30至12:00，下午14:00至18:00。",
+  "workdays": 5,
+  "fee": "否",
+  "source_receipt_sha256": "7192f0e9a5522dc145b1ef5f3adf11b89b93a40acf6395acd6c8ee0bba5d8ea2",
+  "process_source_url": "https://rsj.yangling.gov.cn/zcxc/ldgx/1787671863758073858.html",
+  "channel_note": "两角色省平台当前均显示暂不支持在线办理。按各自指南核对现场窗口，公开流程图列提交申请书及相关证据材料。",
+  "attachment_note": "省平台六项附样表。用人单位申请书附件标“空表”，原件是自然人填写示例。示范区人社局另列委托书、证据表及其他原件，申请书与证据目录含填写示例。",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1111818134236&siteCode=611100000000",
+      "office": "陕西省咸阳市杨陵区 政务大厦502室(办理窗口:劳动争议仲裁委员会)",
+      "in_person_visits": 2,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2份",
+          "required": "必要",
+          "official_attachment_label": "样表",
+          "official_attachment_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/13/8B/rBIxVGDJ8AqANDEiAAA5yFLMocE23.docx",
+          "instructions": "附件标为样表。"
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1份",
+          "required": "必要",
+          "official_attachment_label": "样表",
+          "official_attachment_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/27/30/rBIxU2DJ8LiATkJAAACulY0iTUw94.docx",
+          "instructions": "附件标为样表。"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1份",
+          "required": "必要",
+          "official_attachment_label": "样表",
+          "official_attachment_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/13/8B/rBIxVGDJ8HWAGSQvAACgSxUqqvo737.jpg",
+          "instructions": "附件标为样表。"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "official_attachment_label": "样表",
+          "official_attachment_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/27/30/rBIxU2DJ8FCAMdWLAAA4AFkXIZg325.doc",
+          "instructions": "附件标为样表。"
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1114008126299&siteCode=611100000000",
+      "office": "陕西省咸阳市杨陵区 新桥路6号杨凌政务大厦(办理窗口:杨凌示范区劳动人事争议仲裁委员会)",
+      "in_person_visits": 1,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1份 复印件2份",
+          "required": "必要",
+          "official_attachment_label": "空表",
+          "official_attachment_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/13/8A/rBIxVGDJyhKAS0ZSAAA5yFLMocE49.docx",
+          "instructions": "现行指南同时要求按被申请人人数提交副本。下载原件为自然人填写示例，请向办理机关确认单位申请书格式。"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "原件和复印件",
+          "format": "电子和纸质",
+          "copies": "原件1份 复印件2份",
+          "required": "必要",
+          "official_attachment_label": "样表",
+          "official_attachment_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/13/8A/rBIxVGDJy8OASt6KAACIAJ_AHJk918.doc",
+          "instructions": "附件标为样表。"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件和复印件",
+          "format": "纸质材料",
+          "copies": "原件1份 复印件1份",
+          "required": "非必要",
+          "official_attachment_label": "样表",
+          "official_attachment_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/27/2E/rBIxU2DJzNeAWvUEAAA4AFkXIZg480.doc",
+          "instructions": "附件标为样表。"
+        }
+      ]
+    }
+  }
+}
