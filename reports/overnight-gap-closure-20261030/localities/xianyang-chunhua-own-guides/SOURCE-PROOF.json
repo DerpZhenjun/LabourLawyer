@@ -1,0 +1,118 @@
+{
+  "collected_at": "2026-11-16T00:07:24Z",
+  "region_code": "610430",
+  "city": "咸阳市",
+  "district": "淳化县",
+  "authority": "淳化县人力资源和社会保障局",
+  "consultation_phone": "029-32616733",
+  "complaint_phone": "029-32772255",
+  "hours": "星期一至星期五上午09:00至12:00，下午14:00至18:00（法定节假日除外）",
+  "source_receipt_sha256": "49840b9130575e4a6a511571c90bd72f976c7d94b765e5e685b8e3a989cd6bfd",
+  "channel_note": "两角色公开在线按钮均实测至陕西省统一身份认证。旧版劳动者列网上办理、窗口办理，用人单位列网上办理，均写不支持物流快递。",
+  "attachment_note": "劳动者四项、用人单位四项，下载均标为样表。两份现行指南均列申请书原件2份，填报须知另要求按照被申请人人数提交副本。旧版材料表未列条目。",
+  "venue_note": "两角色现行指南均列人民街北段与西新街交叉口东南50米，办理窗口为4楼仲裁院接待室。用人单位现场受理方式请向办理机关确认。",
+  "roles": {
+    "worker": {
+      "name": "劳动者",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1113555132853&siteCode=610430000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&areacode=610430000000&id=11ca2487da5ef9847a62947deb500d0a",
+      "office": "陕西省咸阳市淳化县 人民街北段与西新街交叉口东南50米淳化县人力资源和社会保障局(办理窗口:4楼仲裁院接待室)",
+      "handling_form": "网上办理、窗口办理（旧版列示）",
+      "legal_workdays": 5,
+      "promised_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2份",
+          "required": "必要",
+          "instructions": "申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。 附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0A/03/rBIxVGCmFcCAKe10AAA-ANlR_IY432.doc"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1C/57/rBIxU2CmGpyAP7kyAABKIBHQzfo537.doc"
+        },
+        {
+          "key": "identity",
+          "name": "身份证",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1C/52/rBIxU2CmGQyAQTarAAHvaaYGW-U30.docx"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1C/55/rBIxU2CmGh2Ad6xcAABMAGErDeM441.doc"
+        }
+      ]
+    },
+    "employer": {
+      "name": "用人单位",
+      "source_url": "https://zwfw.shaanxi.gov.cn/pc//#/c/service-guide?matterId=1117764135700&siteCode=610430000000",
+      "legacy_url": "https://zwfw.xianyang.gov.cn/serviceGuide/serviceGuide.do?method=serviceGuides&areacode=610430000000&id=cc553d59dea0fb18afa5fc52f740d284",
+      "office": "陕西省咸阳市淳化县 人民街北段与西新街交叉口东南50米淳化县人力资源和社会保障局(办理窗口:4楼仲裁院接待室)",
+      "handling_form": "网上办理（旧版列示）",
+      "legal_workdays": 5,
+      "promised_workdays": 5,
+      "materials": [
+        {
+          "key": "application",
+          "name": "劳动人事争议仲裁申请书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件2份",
+          "required": "必要",
+          "instructions": "《劳动人事争议仲裁办案规则》 第二十九条 申请人申请仲裁应当提交书面仲裁申请，并按照被申请人人数提交副本。 附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1C/E2/rBIxU2CnGZWAdaQOAAA-ANlR_IY462.doc"
+        },
+        {
+          "key": "entity",
+          "name": "主体资格证明材料",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/0A/A2/rBIxVGCnGvSAdgAfAAA2AAoYNEY842.doc"
+        },
+        {
+          "key": "relation",
+          "name": "劳动（人事）关系证明材料",
+          "original_copy": "复印件",
+          "format": "纸质材料",
+          "copies": "复印件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1C/E7/rBIxU2CnGzKAIEdBAABMAGErDeM077.doc"
+        },
+        {
+          "key": "authorization",
+          "name": "授权委托书",
+          "original_copy": "原件",
+          "format": "纸质材料",
+          "copies": "原件1份",
+          "required": "必要",
+          "instructions": "附件标为样表。",
+          "sample_url": "https://zwfwxtzx.shaanxi.gov.cn/sxfw//group1/M00/1C/E7/rBIxU2CnG22ARnIeAABKIBHQzfo369.doc"
+        }
+      ]
+    }
+  }
+}
