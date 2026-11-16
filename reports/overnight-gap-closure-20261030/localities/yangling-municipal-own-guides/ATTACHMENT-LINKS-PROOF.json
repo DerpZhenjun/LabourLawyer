@@ -1,0 +1,31 @@
+{
+  "region_code": "611100",
+  "guide_proof_sha256": "1be0bfa9176ec1ff9a8607c2734e929935e8a7654071ae075a5c48811e096fa5",
+  "reviewed_at": "2026-11-16T00:27:29Z",
+  "attachments": [
+    {
+      "id": "yangling-611100-worker-authorization",
+      "official_name": "授权委托书（劳动者，签名和日期手工填写）",
+      "official_url": "https://rsj.yangling.gov.cn/upload/rlzyshbzj/2024/05/07/202405071031364726.docx",
+      "guide_source_url": "https://rsj.yangling.gov.cn/zcxc/ldgx/1787671863758073858.html",
+      "official_sha256": "582aabc1e7e5f9f73ca2ed66679133b7a9c9336e7042e5a87be4e203e2b3ac4a",
+      "format": "DOCX"
+    },
+    {
+      "id": "yangling-611100-employer-authorization",
+      "official_name": "授权委托书（用人单位，签章和日期手工填写）",
+      "official_url": "https://rsj.yangling.gov.cn/upload/rlzyshbzj/2024/05/07/202405071031152933.doc",
+      "guide_source_url": "https://rsj.yangling.gov.cn/zcxc/ldgx/1787671863758073858.html",
+      "official_sha256": "167c5f01b7d85d18d9a7072812e52b6ba8f9572022d46b1bfdb9b447cafa60e9",
+      "format": "DOC"
+    },
+    {
+      "id": "yangling-611100-evidence-specification",
+      "official_name": "证据规格表（Excel，手工填写）",
+      "official_url": "https://rsj.yangling.gov.cn/upload/rlzyshbzj/2024/05/07/202405071030431485.xlsx",
+      "guide_source_url": "https://rsj.yangling.gov.cn/zcxc/ldgx/1787671863758073858.html",
+      "official_sha256": "31225f6e6021c85a189bcc963877f1012ab03a1ada3ad06ba66f44d362d6c867",
+      "format": "XLSX"
+    }
+  ]
+}
