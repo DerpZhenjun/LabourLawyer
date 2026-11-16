@@ -107,6 +107,7 @@ from regional_yulin_municipal_guides import exact_municipal as exact_yulin_munic
 from regional_xianyang_municipal_guides import exact_municipal as exact_xianyang_municipal
 from regional_yangling_guides import exact_municipal as exact_yangling_municipal
 from regional_yinchuan_municipal_notice import exact_municipal as exact_yinchuan_municipal
+from regional_wuzhong_municipal_institute import exact_municipal as exact_wuzhong_municipal
 from regional_xianyang_municipal_attachments import with_xianyang_official_attachments
 from regional_xianyang_sanyuan_attachments import with_sanyuan_official_attachments
 from regional_yangling_municipal_attachments import with_yangling_official_attachments
@@ -271,7 +272,8 @@ def areas(province: str=Query(max_length=30),city: str=Query(default='',max_leng
                 or exact_weinan_municipal(municipal)
                 or exact_yulin_municipal(municipal) or exact_xianyang_municipal(municipal)
                 or exact_yangling_municipal(municipal)
-                or exact_yinchuan_municipal(municipal)):
+                or exact_yinchuan_municipal(municipal)
+                or exact_wuzhong_municipal(municipal)):
             city_row = next((
                 row for row in directory.areas(province) if row['city'] == city and row['level'] == 3
                 and row['code'] == code and not row['district']
