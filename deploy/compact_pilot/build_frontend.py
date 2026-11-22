@@ -39,7 +39,8 @@ def main():
     stage.mkdir()
     dist = output / 'dist'
     archive = output / 'baseline.tar'
-    subprocess.run(['git', 'archive', '--format=tar', '-o', str(archive), baseline, 'frontend', 'packages', 'config'],
+    subprocess.run(['git', '-c', 'core.autocrlf=false', '-c', 'core.eol=lf',
+                    'archive', '--format=tar', '-o', str(archive), baseline, 'frontend', 'packages', 'config'],
                    cwd=ROOT, check=True, timeout=30)
     with tarfile.open(archive, 'r:') as bundle:
         bundle.extractall(stage, filter='data')
