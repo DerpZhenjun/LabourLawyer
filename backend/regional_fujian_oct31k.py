@@ -1,4 +1,5 @@
 """Unregistered K own-source candidates. Offline filling grants no public phase."""
+from regional_evidence_session import evidence_once
 from copy import deepcopy
 from hashlib import sha256
 from io import BytesIO
@@ -102,6 +103,7 @@ def _meta(code):
 def _kind(code,kind):
     meta=_meta(code);require(type(kind) is str and kind in meta['allowed_kinds'],'Own evidence/sample/reference kind not adapted');return meta
 
+@evidence_once
 def _sources(root,code):
     meta=_meta(code);folder=SOURCE_BASE+'/'+meta['folder'];raw=_bytes(root,folder+'/SOURCE-PROJECTION-MANIFEST.json')
     require(sha256(raw).hexdigest()==meta['manifest_sha256'],'Own K projection version changed');manifest=json.loads(raw)
@@ -207,6 +209,7 @@ def prepare_candidate(code,*,root):
         t=next(t for t in g['templates'] if t['id']==spec['file_id']);t.update(can_generate=True,document_types=[kind],adapter=ADAPTER,generation_mode='blank')
     return g
 
+@evidence_once
 def _word_manifest(root):
     require(type(WORD_SHA) is str and re.fullmatch('[a-f0-9]{64}',WORD_SHA),'K Word QA not sealed')
     raw=_bytes(root,WORD_MANIFEST);require(sha256(raw).hexdigest()==WORD_SHA,'K Word manifest differs');m=json.loads(raw)
@@ -223,6 +226,7 @@ def approval_requirements(*,stage=True):
         'word_manifest_sha256':WORD_SHA,'eligible_originals':4,'approved_by':'independent_root','visual_review':'PASS','source_projection_review':'PASS','can_publish':not stage,'model_calls':0}
     if not stage:result.update(stage_receipt_sha256=STAGE_SHA256,native_confirmation_download_own_forms=True)
     return result
+@evidence_once
 def _receipt(root,stage=True):
     pin=STAGE_SHA256 if stage else PUBLICATION_SHA256;require(type(pin) is str and re.fullmatch('[a-f0-9]{64}',pin),'K independent phase not approved')
     for c in REGIONS:_sources(root,c)
@@ -236,6 +240,7 @@ def _receipt(root,stage=True):
     return {'receipt':STAGE_RECEIPT if stage else PUBLICATION_RECEIPT,'sha256':pin}
 def staged_candidate(code,*,root):
     g=prepare_candidate(code,root=root);g['candidate_adapter_evidence']=_receipt(root);g.update(offline_candidate=False,publication_status='staged_own_word_qa');return g
+@evidence_once
 def _published(code,root):
     g=staged_candidate(code,root=root);g['publication_adapter_evidence']=_receipt(root,False);g.update(published=True,publication_status='published');return g
 def _matches(g,c):

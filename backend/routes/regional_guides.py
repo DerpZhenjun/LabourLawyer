@@ -7,7 +7,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Annotated, Literal
 from urllib.parse import quote
-from fastapi import APIRouter, BackgroundTasks, HTTPException, Query
+from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException, Query
+from regional_evidence_session import evidence_validation_scope
 from fastapi.responses import FileResponse, Response
 from pydantic import BaseModel, Field, field_validator, model_validator
 from regional_guides import RegionalStore
@@ -200,7 +201,7 @@ from regional_validation import (
 )
 
 ROOT=Path(__file__).resolve().parents[2]
-router=APIRouter()
+router=APIRouter(dependencies=[Depends(evidence_validation_scope)])
 
 @router.get('/release-capabilities')
 def release_capabilities():

@@ -2,6 +2,7 @@
 
 No raw signed response or private candidate directory is a runtime dependency.
 """
+from regional_evidence_session import evidence_once
 from copy import deepcopy
 from hashlib import sha256
 from io import BytesIO
@@ -76,6 +77,7 @@ def _meta(code):
     require(type(code) is str and code in REGIONS,'仅支持I两区自身地区编码');return REGIONS[code]
 
 
+@evidence_once
 def _sources(root,code):
     meta=_meta(code);folder=SOURCE_BASE+'/'+meta['folder'];raw=_bytes(root,folder+'/SOURCE-PROJECTION-MANIFEST.json')
     require(sha256(raw).hexdigest()==meta['manifest_sha256'],'I自身公开投影版本变化');m=json.loads(raw)
@@ -113,6 +115,7 @@ def source_files(root,code=None):
     return files
 
 
+@evidence_once
 def _word_manifest(root,code=None):
     raw=_bytes(root,WORD_MANIFEST);require(sha256(raw).hexdigest()==WORD_SHA,'I公开Word证据清单变化');m=json.loads(raw)
     require(m['generated_pages']==22 and m['original_pages']==6 and m['word_documents']==8 and m['fictional_fixtures']==8
@@ -219,6 +222,7 @@ def approval_requirements(*,stage=True):
     return result
 
 
+@evidence_once
 def _receipt(root,stage=True):
     pin=STAGE_SHA256 if stage else PUBLICATION_SHA256
     require(type(pin) is str and re.fullmatch('[a-f0-9]{64}',pin),'I自身独立阶段收据未批准固定')
@@ -241,6 +245,7 @@ def staged_candidate(code,*,root):
     g.update(publication_status='staged_own_word_qa',offline_candidate=False);return g
 
 
+@evidence_once
 def _published(code,root):
     g=staged_candidate(code,root=root);g['publication_adapter_evidence']=_receipt(root,False)
     g.update(published=True,publication_status='published',candidate_web_qa='PASS');return g

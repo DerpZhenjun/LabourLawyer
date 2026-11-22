@@ -1,4 +1,5 @@
 """Putian two-own-source M provider; no generation until independent phase pins."""
+from regional_evidence_session import evidence_once
 from copy import deepcopy
 from hashlib import sha256
 from io import BytesIO
@@ -175,6 +176,7 @@ def _kind(kind):
     require(type(kind) is str and kind in TEMPLATES)
     return TEMPLATES[kind]
 
+@evidence_once
 def _source(code, root):
     identity = _code(code)
     pin = {'folder': identity['folder'], 'source_manifest_sha256': SOURCE_SHAS[code]}
@@ -393,6 +395,7 @@ def approval_requirements(*, stage=True):
     return result
 
 
+@evidence_once
 def _word_manifest(root):
     require(type(WORD_SHA) is str and re.fullmatch('[a-f0-9]{64}', WORD_SHA))
     raw = _raw(root, WORD_MANIFEST)
@@ -412,6 +415,7 @@ def _word_manifest(root):
     return word
 
 
+@evidence_once
 def _receipt(root, stage=True):
     pin = STAGE_SHA256 if stage else PUBLICATION_SHA256
     require(type(pin) is str and re.fullmatch('[a-f0-9]{64}', pin))
@@ -453,6 +457,7 @@ def staged_candidate(code, *, root):
     return guide
 
 
+@evidence_once
 def _published(code, root):
     guide = staged_candidate(code, root=root)
     guide['publication_adapter_evidence'] = _receipt(root, False)

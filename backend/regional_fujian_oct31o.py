@@ -1,5 +1,6 @@
 """UNREGISTERED private formal-root O provider proposal; no approved phase."""
 'Locality-free OOXML mechanics; caller must validate its own complete source.'
+from regional_evidence_session import evidence_once
 from copy import deepcopy
 from hashlib import sha256
 from io import BytesIO
@@ -195,6 +196,7 @@ def _kind(kind):
     require(type(kind) is str and kind in KINDS)
     return KINDS[kind]
 
+@evidence_once
 def _source(code, root):
     own = _code(code)
     body = _raw(root, SOURCE_BASE / 'OWN-SOURCE-PINS.json')
@@ -432,6 +434,7 @@ def approval_requirements(*,stage=True):
                       publication_approval='APPROVED',browser_kit_freeze_sha256=BROWSER_KIT_FREEZE_SHA256)
     return result
 
+@evidence_once
 def _word_manifest(root):
     require(type(WORD_SHA256) is str and re.fullmatch('[a-f0-9]{64}',WORD_SHA256))
     raw=_raw(root,WORD_MANIFEST);require(sha256(raw).hexdigest()==WORD_SHA256);word=json.loads(raw)
@@ -483,6 +486,7 @@ def _word_manifest(root):
     parity=_json(root,QA_REPORT+'/SOURCE-WORD-PARITY.json');require(parity['source_projection_review_sha256']==ROOT_SOURCE_REVIEW_SHA256 and parity['actual_Root_Word_review_sha256']==ROOT_WORD_REVIEW_SHA256 and parity['stress_evidence_signature_date_separate_tenth_page'] is True and parity['fictional_stress_page_total']==89991 and parity['browser_final_publication_approval'] is None)
     return word
 
+@evidence_once
 def _receipt(root,stage=True):
     require(type(stage) is bool)
     pin=STAGE_SHA256 if stage else PUBLICATION_SHA256
@@ -667,6 +671,7 @@ def with_publication_evidence(guide,*,root):
     for key in _METADATA & set(guide):result[key]=deepcopy(guide[key])
     return result
 
+@evidence_once
 def _published(code,root):
     final_evidence=_receipt(root,False)
     guide=_stage_projection(prepare_candidate(code,root=root),_stage_evidence())

@@ -1,5 +1,6 @@
 """UNREGISTERED private formal-root P provider proposal; no approved phase."""
 """Locality-free OOXML mechanics; caller must validate its own complete source."""
+from regional_evidence_session import evidence_once
 from copy import deepcopy
 from hashlib import sha256
 from io import BytesIO
@@ -173,6 +174,7 @@ def _json(root,relative):
  except (UnicodeError,json.JSONDecodeError) as error:raise ValueError('Own JSON invalid') from error
 def _code(code):require(type(code) is str and code in REGIONS);return REGIONS[code]
 def _kind(kind):require(type(kind) is str and kind in KINDS);return KINDS[kind]
+@evidence_once
 def _source(code,root):
  own=_code(code);body=_raw(root,SOURCE_BASE/'OWN-SOURCE-PINS.json');require(sha256(body).hexdigest()==SOURCE_PINS_SHA256);pin=json.loads(body)[code];identity=pin['identity'];base=SOURCE_BASE/own[0]
  require(pin['folder']==own[0] and identity['source_id']==own[1] and identity['service_code']==own[2] and identity['region_code']==code)
@@ -341,6 +343,7 @@ def approval_requirements(*,stage=True):
     return result
 
 
+@evidence_once
 def _word_manifest(root):
     require(type(WORD_SHA256) is str and re.fullmatch('[a-f0-9]{64}',WORD_SHA256))
     raw=_raw(root,WORD_MANIFEST);require(sha256(raw).hexdigest()==WORD_SHA256);word=json.loads(raw)
@@ -379,6 +382,7 @@ def _word_manifest(root):
     for leaf in parity['source_files']:require(sha256(_raw(root,leaf['path'])).hexdigest()==leaf['sha256'] and len(_raw(root,leaf['path']))==leaf['bytes'])
     return word
 
+@evidence_once
 def _receipt(root,stage=True):
     require(type(stage) is bool)
     pin=STAGE_SHA256 if stage else PUBLICATION_SHA256
@@ -626,6 +630,7 @@ def _stage_projection(guide,evidence):
 
 
 
+@evidence_once
 def _published(code,root):
     final_evidence=_receipt(root,False)
     guide=_stage_projection(prepare_candidate(code,root=root),_stage_evidence())

@@ -1,4 +1,5 @@
 """Unregistered six-own-source J provider; offline QA never grants public phases."""
+from regional_evidence_session import evidence_once
 from copy import deepcopy
 from hashlib import sha256
 from io import BytesIO
@@ -214,6 +215,7 @@ def _kind(code,kind):
     meta=_meta(code);require(type(kind) is str and kind in meta['allowed_kinds'],'Own J sample/reference/unsupported kind cannot generate');return meta
 
 
+@evidence_once
 def _sources(root,code):
     meta=_meta(code);folder=SOURCE_BASE+'/'+meta['folder'];raw=_bytes(root,folder+'/SOURCE-PROJECTION-MANIFEST.json')
     require(sha256(raw).hexdigest()==meta['manifest_sha256'],'Own J safe source version changed');manifest=json.loads(raw)
@@ -259,6 +261,7 @@ def source_files(root,code=None):
     return paths
 
 
+@evidence_once
 def _word_manifest(root):
     raw=_bytes(root,WORD_MANIFEST);require(type(WORD_SHA) is str and sha256(raw).hexdigest()==WORD_SHA,'Own J public Word manifest changed');m=json.loads(raw)
     require(m['original_pages']==17 and m['generated_pages']==60 and m['word_documents']==22 and m['fictional_fixtures']==22
@@ -347,6 +350,7 @@ def approval_requirements(*,stage=True):
         'word_manifest_sha256':WORD_SHA,'eligible_originals':11,'approved_by':'independent_root','visual_review':'PASS','source_projection_review':'PASS','can_publish':not stage,'model_calls':0}
     if not stage:result.update(stage_receipt_sha256=STAGE_SHA256,native_confirmation_download_own_forms=True)
     return result
+@evidence_once
 def _receipt(root,stage=True):
     pin=STAGE_SHA256 if stage else PUBLICATION_SHA256;require(type(pin) is str and re.fullmatch('[a-f0-9]{64}',pin),'Own J independent phase not approved')
     for code in REGIONS:_sources(root,code)
@@ -360,6 +364,7 @@ def _receipt(root,stage=True):
     return {'receipt':STAGE_RECEIPT if stage else PUBLICATION_RECEIPT,'sha256':pin}
 def staged_candidate(code,*,root):
     g=prepare_candidate(code,root=root);g['candidate_adapter_evidence']=_receipt(root);g.update(offline_candidate=False,publication_status='staged_own_word_qa');return g
+@evidence_once
 def _published(code,root):
     g=staged_candidate(code,root=root);g['publication_adapter_evidence']=_receipt(root,False);g.update(published=True,publication_status='published');return g
 def _matches(g,canonical):
