@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Annotated, Literal
 from urllib.parse import quote
 from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException, Query
-from regional_evidence_session import evidence_validation_scope
+from regional_evidence_session import evidence_validation_scope, install_provider_evidence_reuse
 from fastapi.responses import FileResponse, Response
 from pydantic import BaseModel, Field, field_validator, model_validator
 from regional_guides import RegionalStore
@@ -201,6 +201,7 @@ from regional_validation import (
 )
 
 ROOT=Path(__file__).resolve().parents[2]
+install_provider_evidence_reuse()
 router=APIRouter(dependencies=[Depends(evidence_validation_scope)])
 
 @router.get('/release-capabilities')

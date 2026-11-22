@@ -24,14 +24,14 @@
   },
   "pilot": {
     "state": "PASS",
-    "completed_at": "2026-11-22T07:21:29.642972+00:00",
+    "completed_at": "2026-11-22T07:59:44.720005+00:00",
     "regions": 50,
     "cohort": "EXISTING_OFFICIAL_ORIGINALS",
     "new_coverage_regions": 0,
     "includes_first_source_discovery": false,
     "includes_visual_rendering": false,
     "source_snapshot_sha256": "b8daff3ad6155a5e3a04c5377fe8f25338fe6eaa6bf48e08c10880fd7a0e947e",
-    "renderer_sha256": "1c5edd55d5de293e1b02c8be245c105d0bc56ad26ddf6dac14198ea845fd7fc4",
+    "renderer_sha256": "9d7bca956e8bbce6713b4fc0bf65c860d42198c27068bc4ad4056862738102d7",
     "provinces": {
       "anhui": 1,
       "fujian": 25,
@@ -44,39 +44,39 @@
     "modes": [
       {
         "mode": "baseline",
-        "seconds": 180.61057450000044,
+        "seconds": 222.82641279999916,
         "regions": 50,
         "passed": 50,
         "failed": 0,
         "documents": 273,
         "reused_reviews": 0,
-        "review_seconds": 2.554270499997074,
-        "median_region_seconds": 2.059072499999729,
-        "p95_region_seconds": 7.170099400000254
+        "review_seconds": 3.3998232999929314,
+        "median_region_seconds": 2.764882600000419,
+        "p95_region_seconds": 8.785393599999225
       },
       {
         "mode": "cold",
-        "seconds": 188.39221810000072,
+        "seconds": 199.86845540000104,
         "regions": 50,
         "passed": 50,
         "failed": 0,
         "documents": 273,
         "reused_reviews": 184,
-        "review_seconds": 2.699275900002249,
-        "median_region_seconds": 2.183197249999921,
-        "p95_region_seconds": 7.306036400000266
+        "review_seconds": 3.1909884000106103,
+        "median_region_seconds": 2.2263602499997432,
+        "p95_region_seconds": 6.596593300000677
       },
       {
         "mode": "warm",
-        "seconds": 198.82778190000045,
+        "seconds": 182.56950200000028,
         "regions": 50,
         "passed": 50,
         "failed": 0,
         "documents": 273,
         "reused_reviews": 270,
-        "review_seconds": 1.0141228999900704,
-        "median_region_seconds": 2.157193850000567,
-        "p95_region_seconds": 9.645206099999996
+        "review_seconds": 1.0335416000016266,
+        "median_region_seconds": 2.325451699999576,
+        "p95_region_seconds": 6.925532899998871
       }
     ]
   },
@@ -88,9 +88,9 @@
     "second_pass_reused": 273,
     "unique_visual_content": 59,
     "used_visual_pages": 121,
-    "seconds": 40.05453440000019,
+    "seconds": 28.690490000000864,
     "approval_sha256": "a3444f057f140f2bc94e826965405db5c5ca883d12191f301460739a0279dee7",
-    "renderer_sha256": "a47a50287a96ff8e914af81447dc52aeb9cb5e7f68c8b4dbd09b3ae31774b4b2"
+    "renderer_sha256": "a6b61bbba2881a6f5f0409f2f8e8049ff744e27d1318abc3bec6ed0934b7c100"
   },
   "browser": {
     "state": "PASS",
@@ -108,9 +108,10 @@
   "paired_before_after": {
     "regions": 49,
     "before_seconds": 1197.1095397000054,
-    "after_seconds": 175.71203080000032,
-    "observed_ratio": 6.81290594758753,
+    "after_seconds": 215.63825809999616,
+    "observed_ratio": 5.551471015615789,
     "randomized": false,
+    "baseline_overlapped_local_historical_tests": true,
     "scope": "Regional HTTP validation of existing sealed sources; includes filesystem and preexisting cache effects"
   },
   "output_parity": {

@@ -1,5 +1,4 @@
 """Pingtan own source and reviewed Word mapping; public phases independently pinned."""
-from regional_evidence_session import evidence_once
 from copy import deepcopy
 from hashlib import sha256
 from io import BytesIO
@@ -58,7 +57,6 @@ def _kind(kind):
     require(type(kind) is str and kind in TEMPLATES, 'Only own application/evidence blanks considered')
     return TEMPLATES[kind]
 
-@evidence_once
 def _sources(root):
     body = _bytes(root, BASE / 'SOURCE-PROJECTION-MANIFEST.json')
     require(sha256(body).hexdigest() == SOURCE_SHA, 'Own L source projection version differs')
@@ -331,7 +329,6 @@ def validate_request(payload,*,root):
 def original_bytes(code,kind,*,root):_code(code);return _own_original_bytes(kind,root=root)
 def template_path(code,kind,*,root):
  _code(code);t=_kind(kind);_sources(root);return path_at(root,BASE/t['file'])
-@evidence_once
 def _word_manifest(root):
  require(type(WORD_SHA) is str and re.fullmatch('[a-f0-9]{64}',WORD_SHA),'Own Word proof not independently pinned')
  raw=_bytes(root,WORD_MANIFEST);require(sha256(raw).hexdigest()==WORD_SHA,'Own public Word proof changed');m=json.loads(raw)
@@ -346,7 +343,6 @@ def approval_requirements(*,stage=True):
  result={'identities':[{**{k:IDENTITY[k] for k in ['region_code','source_id','service_code']},'manifest_sha256':SOURCE_SHA}],'word_manifest_sha256':WORD_SHA,'eligible_originals':2,'approved_by':'independent_root','visual_review':'PASS','source_projection_review':'PASS','can_publish':not stage,'model_calls':0}
  if not stage:result.update(stage_receipt_sha256=STAGE_SHA256,native_confirmation_download_own_forms=True)
  return result
-@evidence_once
 def _receipt(root,stage=True):
  pin=STAGE_SHA256 if stage else PUBLICATION_SHA256
  require(type(pin) is str and re.fullmatch('[a-f0-9]{64}',pin),'Own independent phase not approved')
@@ -368,7 +364,6 @@ def staged_candidate(code,*,root):
  for kind,t in TEMPLATES.items():
   row=next(x for x in g['templates'] if x['id']==t['file_id']);row.update(can_generate=True,document_types=[kind],adapter=ADAPTER,generation_mode='blank')
  return g
-@evidence_once
 def _published(code,root):
  g=staged_candidate(code,root=root);g['publication_adapter_evidence']=_receipt(root,False);g.update(published=True,publication_status='published');return g
 def _matches(g,c):

@@ -112,3 +112,14 @@ class RegionalEvidenceSessionTests(TestCase):
 
         with TestClient(app) as client:
             self.assertEqual(client.get("/stage").json(), {"invalid_stage_rejected": True})
+
+    def test_installation_is_idempotent_and_preserves_provider_file_bytes(self):
+        import regional_fujian_oct31j as provider
+        path = Path(provider.__file__)
+        original = path.read_bytes()
+        self.module.install_provider_evidence_reuse()
+        first = provider._word_manifest
+        self.module.install_provider_evidence_reuse()
+        self.assertIs(provider._word_manifest, first)
+        self.assertTrue(getattr(first, "_regional_evidence_once", False))
+        self.assertEqual(path.read_bytes(), original)

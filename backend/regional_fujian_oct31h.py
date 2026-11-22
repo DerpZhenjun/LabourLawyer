@@ -1,7 +1,6 @@
 """Gulou own-source blanks. Offline review, isolated stage and publication are
 separate authorities. No other locality's facts, forms or field sets are used.
 """
-from regional_evidence_session import evidence_once
 from copy import deepcopy
 from hashlib import sha256
 from io import BytesIO
@@ -74,7 +73,6 @@ def _bytes(root,relative):
 def _read(root,relative):return json.loads(_bytes(root,relative).decode('utf-8-sig'))
 
 
-@evidence_once
 def _sources(root):
     raw=_bytes(root,SOURCE_FREEZE)
     require(sha256(raw).hexdigest()==FREEZE_SHA,'鼓楼来源冻结清单变化')
@@ -104,7 +102,6 @@ def _offline_review(root):
     return r
 
 
-@evidence_once
 def _word_manifest(root):
     review=_offline_review(root);raw=_bytes(root,WORD_MANIFEST)
     require(sha256(raw).hexdigest()==WORD_SHA,'鼓楼公开Word证据清单变化')
@@ -216,7 +213,6 @@ def approval_requirements(*,stage=True):
     return result
 
 
-@evidence_once
 def _receipt(root,stage=True):
     pin=STAGE_SHA256 if stage else PUBLICATION_SHA256
     require(type(pin) is str and re.fullmatch('[a-f0-9]{64}',pin),'鼓楼独立阶段收据尚未批准固定')
@@ -251,7 +247,6 @@ def prepare_candidate(code='350102',*,root):
     return g
 
 
-@evidence_once
 def _published(root):
     g=prepare_candidate(root=root);g['publication_adapter_evidence']=_receipt(root,False)
     g.update(published=True,publication_status='published',candidate_web_qa='PASS');return g

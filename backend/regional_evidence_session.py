@@ -9,6 +9,7 @@ from contextvars import ContextVar
 from copy import deepcopy
 from dataclasses import dataclass, field
 from functools import wraps
+from importlib import import_module
 from threading import RLock
 
 
@@ -19,6 +20,7 @@ class _EvidenceSession:
 
 
 _SESSION = ContextVar("regional_evidence_session", default=None)
+_INSTALL_LOCK = RLock()
 
 
 async def evidence_validation_scope():
@@ -30,6 +32,8 @@ async def evidence_validation_scope():
 
 
 def evidence_once(function):
+    if getattr(function, "_regional_evidence_once", False):
+        return function
     @wraps(function)
     def checked(*args, **kwargs):
         session = _SESSION.get()
@@ -48,4 +52,26 @@ def evidence_once(function):
                 session.results[key] = deepcopy(result)
                 return result
             return deepcopy(session.results[key])
+    checked._regional_evidence_once = True
     return checked
+
+
+def install_provider_evidence_reuse():
+    """Install metadata wrappers without changing historically pinned sources."""
+    providers = {
+        "regional_fujian_oct31h": ("_sources", "_word_manifest", "_receipt", "_published"),
+        "regional_fujian_oct31i": ("_sources", "_word_manifest", "_receipt", "_published"),
+        "regional_fujian_oct31j": ("_sources", "_word_manifest", "_receipt", "_published"),
+        "regional_fujian_oct31k": ("_sources", "_word_manifest", "_receipt", "_published"),
+        "regional_fujian_oct31l": ("_sources", "_word_manifest", "_receipt", "_published"),
+        "regional_fujian_oct31m": ("_source", "_word_manifest", "_receipt", "_published"),
+        "regional_fujian_oct31n": ("_source", "_word_manifest", "_receipt", "_published"),
+        "regional_fujian_oct31o": ("_source", "_word_manifest", "_receipt", "_published"),
+        "regional_fujian_oct31p": ("_source", "_word_manifest", "_receipt", "_published"),
+        "regional_fujian_huian_quangang_nov1": ("_source", "word_proof", "_phase_receipt"),
+    }
+    with _INSTALL_LOCK:
+        for name, functions in providers.items():
+            provider = import_module(name)
+            for function in functions:
+                setattr(provider, function, evidence_once(getattr(provider, function)))

@@ -1,26 +1,26 @@
 [
   {
-    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\pilot-50-final\\RESULT.json",
-    "sha256": "53e467614692ffcf2cef99aebb4cad71aecf641228727216a0ce0990b38a493b"
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\pilot-50-registration\\RESULT.json",
+    "sha256": "0b9af93af0f7c06f4c8bbdb2e4a7c7dce7528ac17986f1d4e80c155724e02fac"
   },
   {
-    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\full-acceptance-r2\\RESULT.json",
-    "sha256": "8ed2a071dbcf6e1506bd7240f7d1840f7fac8aeb074449ed75f2c2d0c95ae3ba"
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\full-acceptance-registration\\RESULT.json",
+    "sha256": "4ae66a2f1d0a5c2caa18a64c5ed8865aca0c8a901ebc3f20a6eb04b67170c70a"
   },
   {
-    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\full-acceptance-r2\\ROOT-VISUAL-APPROVAL.json",
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\full-acceptance-registration\\ROOT-VISUAL-APPROVAL.json",
     "sha256": "a3444f057f140f2bc94e826965405db5c5ca883d12191f301460739a0279dee7"
   },
   {
-    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\full-acceptance-r2\\RUNTIME-MANIFEST.json",
-    "sha256": "25805890e98c2fcac393888de7c2704b670ce13277f1d71e6b91adb5bc52272d"
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\full-acceptance-registration\\RUNTIME-MANIFEST.json",
+    "sha256": "852b90bc8f8e4b83ce2420bba0b8c8b0b40ae2b0a2ba7abd9ee29b6e1d250427"
   },
   {
-    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\browser-r2\\RESULT.json",
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\browser-registration\\RESULT.json",
     "sha256": "cb1e70c8be1bd355860387dd11cf33ee89b99c76d6d0a81db891c163d182d526"
   },
   {
-    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\SOURCE-REUSE-OUTPUT-PARITY.json",
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\SOURCE-REUSE-OUTPUT-PARITY-REGISTRATION.json",
     "sha256": "539f30965e3a7fbb1921ab505317f6e8007e782d21161c6384476be44de5cf8f"
   },
   {
@@ -50,5 +50,29 @@
   {
     "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\NEW-TESTS-GUARDED-CI.log",
     "sha256": "72862571ec58903db053bebca1b447e3fa41aaea372b6bd100c238491d8bd3f6"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\PROVIDER-PINS-RED.log",
+    "sha256": "9e0c22e261a6546182fb7107fc551afb5171df92cbb7452e4acadeb118a4029a"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\PROVIDER-PINS-GREEN.log",
+    "sha256": "e41fc61cdced9161db8976de801fe99f1672b9b2676dcc702ce23e9b45938f96"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\J-HISTORICAL-PIN-GREEN.log",
+    "sha256": "6ae16cf7f4c6543e5f2f44fbe3608ef8ad72df782d83e43fc388ca9ab41f50b6"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\PROVIDER-BASE-MANIFEST.json",
+    "sha256": "d617158120f6e98b4e291b0c952bd6482aa3ab6f5bfbb85c7593c18c03ff9ad0"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\CI-244-FAILED.log",
+    "sha256": "807cd904ec50efe595c75f3637f7c4e334597ff7971b8cba8b009321b2e61d83"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\REGISTRATION-TESTS-GUARDED-CI.log",
+    "sha256": "18dc3e36a5a25d3bec6226f8bd0eb50def0484af6f0355df0a5a703dda8175b5"
   }
 ]

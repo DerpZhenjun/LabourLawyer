@@ -1,5 +1,4 @@
 """UNREGISTERED own Huian/Quangang API source and private Word review proposal."""
-from regional_evidence_session import evidence_once
 from pathlib import Path,PurePosixPath
 from copy import deepcopy
 from hashlib import sha256
@@ -27,7 +26,6 @@ def _raw(root,name):
  require(name.startswith(BASE+'/') and rel.suffix in {'.json','.docx'})
  p=base/name;require(p.is_file() and p.resolve()==p and all(not q.is_symlink() for q in [p,*p.parents]));return p.read_bytes()
 def _json(root,name):return json.loads(_raw(root,name))
-@evidence_once
 def _source(code,root):
  require(type(code) is str and code in REGIONS);pinsraw=_raw(root,BASE+'/OWN-SOURCE-PINS.json');require(sha256(pinsraw).hexdigest()==SOURCE_PINS_SHA256);pins=json.loads(pinsraw);require(pins['WORD'] is pins['STAGE'] is pins['PUBLICATION'] is None)
  pin=pins['regions'][code];require(exact(pin,REGIONS[code]));folder=BASE+'/'+pin['folder'];raw=_raw(root,folder+'/SOURCE-PROJECTION-MANIFEST.json');require(sha256(raw).hexdigest()==pin['source_manifest_sha256']);manifest=json.loads(raw)
@@ -111,7 +109,6 @@ def _production_guide(guide,root):
 def production_source(code,*,root):return _production_guide(prepare_candidate(code,root=root),root)
 parse_capture=production_source
 
-@evidence_once
 def word_proof(*,root):
  from hq_phase_proof import verify_word
  return verify_word(root,WORD_SHA256,ROOT_WORD_REVIEW_SHA256,source_files=source_files,prepare=prepare_candidate,original=original_bytes,private_candidate=private_candidate,private_contract=build_contract,data_model=_kind,mechanical_fill=_layout_fill)
@@ -166,7 +163,6 @@ def approval_requirements(*,root,stage=True):
 
 def _native_names():return [QA_REPORT+'/native-final/'+n for n in ['BROWSER-RESULT.json','ROOT-NATIVE-REVIEW.json',*[c+'-'+k+'-CONTRACT.json' for c in REGIONS for k in ['application','evidence']]]]
 
-@evidence_once
 def _phase_receipt(root,stage=True):
  pin=STAGE_SHA256 if stage else PUBLICATION_SHA256
  if pin is None:raise PermissionError('Own HQ '+('STAGE' if stage else 'PUBLICATION')+' approval is UNBOUND')
