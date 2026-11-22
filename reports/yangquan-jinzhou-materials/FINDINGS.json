@@ -1,0 +1,275 @@
+{
+  "scope": "市本级两地补核，不含目录邻区",
+  "started_at": "2026-11-22T09:45:03.240940+00:00",
+  "evidence_sealed_at": "2026-11-22T10:00:25.922282+00:00",
+  "wall_seconds": 922.681342,
+  "source_http_elapsed_sum_seconds": {
+    "140300": 3.6196927999990294,
+    "210700": 4.778022700000292
+  },
+  "timing_scope": "本轮检索和人工交叉复核墙钟。分市HTTP时间为可计时请求之和，浏览交互及共享整理未拆分。",
+  "materials_complete_regions": 0,
+  "new_official_evidence_blank_originals": 0,
+  "evidence_adapter_acceptance_regions": 0,
+  "application_candidates_retained": 2,
+  "published_regions": 0,
+  "national_first_sweep_continuous_days": [
+    2,
+    4
+  ],
+  "full_national_completion_eta_seconds": null,
+  "prior_application_stage_wall_seconds": 776.61946,
+  "previous_candidate_ci": {
+    "id": 45008859054,
+    "job_id": 137166436472,
+    "conclusion": "success"
+  },
+  "national_baseline": {
+    "source": {
+      "url": "https://chinajob.mohrss.gov.cn/c/2022-07-15/356212.shtml",
+      "checked_at": "2026-11-22T09:47:28.692861+00:00",
+      "final_url": "https://chinajob.mohrss.gov.cn/c/2022-07-15/356212.shtml",
+      "status": 200,
+      "sha256": "e3934e7e79ff1733f45858c4db1c03f51b49854f7c2c367bb04e48617f2bf51a",
+      "bytes": 70039,
+      "seconds": 0.38396360000115237
+    },
+    "art24": "受委托参与仲裁须有委托人签名或盖章的委托书，载明委托事项和权限。",
+    "art28": "书面申请按被申请人人数提交副本。"
+  },
+  "regions": {
+    "140300": {
+      "sources": {
+        "corporate_search": {
+          "url": "https://yq.sxzwfw.gov.cn/icity/govservice/project?i=2&type=fr",
+          "kind": "public_browser_observation",
+          "artifact": "YQ-CORPORATE-SEARCH.txt.json",
+          "sha256": "cbcc61babcca0adb55149f8dc65c8116b892622dd439f0ebcc360aea3453f96f",
+          "observation": "市本级法人办事、公共服务下找到劳动人事争议仲裁申请。"
+        },
+        "corporate_guide": {
+          "url": "https://zwfwpt.sxzwfw.gov.cn:10002/#/person/B366BEB6C15C4FE4B4187413B0E777D9",
+          "kind": "public_browser_observation",
+          "artifact": "YQ-CORPORATE-GUIDE-DOM.txt",
+          "sha256": "1ed2bfd67a24762e55bf02abff40992e5d52f0b06c148f51293a000887754f8f",
+          "observation": "同一事项编号、同一实施地点和一条材料。公开栏没有单位和代理的单列清单。"
+        },
+        "own_department_guide_2017": {
+          "url": "https://rsj.yq.gov.cn/zwzx/ywzn/xfzc/201706/t20170616_111641.html",
+          "status": 200,
+          "sha256": "b0085d36c2f67560da355988877cc50c897e07bc1a5ef1a08fa84b4d71ad7cbd",
+          "checked_at": "2026-11-22T09:54:16.187880+00:00",
+          "seconds": 0.317502500001865,
+          "bytes": 21140,
+          "published_on": "2017-06-16",
+          "current_validity": "Unconfirmed for the current portal or intake practice"
+        },
+        "own_department_category": {
+          "url": "https://rsj.yq.gov.cn/zwzx/ywzn/xfzc/",
+          "kind": "public_browser_observation",
+          "artifact": "YQ-ARBITRATION-DIRECTORY.json.json",
+          "sha256": "90cc43aecb4c6685da121b2de7905eb8600f85b2e7ddb401f2d43ff6315065f2",
+          "observation": "信访仲裁栏目可见一条指南，发布日期2017-06-16。"
+        },
+        "own_site_evidence_search": {
+          "url": "https://rsj.yq.gov.cn/irs-c-web/rsj/search.shtml?code=1845a11f020&dataTypeId=29&searchWord=%E8%AF%81%E6%8D%AE%E6%B8%85%E5%8D%95",
+          "kind": "public_browser_observation",
+          "artifact": "YQ-EVIDENCE-SEARCH.txt.json",
+          "sha256": "64421f9008cf3f5596f2cb49be33cb6c4ea969078e428d36007ee2efeab76574",
+          "observation": "证据清单查询返回零条。"
+        },
+        "department_matters_directory": {
+          "url": "https://rsj.yq.gov.cn/zwzx/ywzn/sxqd/",
+          "status": 200,
+          "bytes": 15094,
+          "sha256": "2fbd087ce295032781bad5372103eeb56cd29badc03332e4c6c84631c9d1cb5b",
+          "seconds": 0.34208229999785544,
+          "checked_at": "2026-11-22T09:56:54.908161+00:00"
+        },
+        "department_matters_attachments": [
+          {
+            "url": "https://rsj.yq.gov.cn/zwzx/ywzn/sxqd/202207/P020230608370889934911.xls",
+            "status": 200,
+            "final_url": "https://rsj.yq.gov.cn/zwzx/ywzn/sxqd/202207/P020230608370889934911.xls",
+            "bytes": 71680,
+            "sha256": "7524fc97a1385951bdcb4da02a6dfc20c612b187d95f8ca8906ea1ec70a47ace",
+            "seconds": 0.3520472000018344,
+            "checked_at": "2026-11-22T09:58:26.056554+00:00",
+            "worksheet_audit": [
+              {
+                "name": "Sheet1",
+                "rows": 59,
+                "matched": []
+              },
+              {
+                "name": "Sheet2",
+                "rows": 0,
+                "matched": []
+              },
+              {
+                "name": "Sheet3",
+                "rows": 0,
+                "matched": []
+              }
+            ]
+          },
+          {
+            "url": "https://rsj.yq.gov.cn/zwzx/ywzn/sxqd/202201/W020220111346933726970.xlsx",
+            "status": 200,
+            "final_url": "https://rsj.yq.gov.cn/zwzx/ywzn/sxqd/202201/W020220111346933726970.xlsx",
+            "bytes": 13422,
+            "sha256": "2ab77696ca8186a47058a596b04efaa558086b75fd50b57ca3fa36399cfccf4d",
+            "seconds": 0.32441179999659653,
+            "checked_at": "2026-11-22T09:58:26.030282+00:00",
+            "worksheet_audit": [
+              {
+                "name": "xl/worksheets/sheet1.xml",
+                "rows": 60,
+                "matched": []
+              }
+            ]
+          }
+        ],
+        "download_index_prior": {
+          "url": "https://rsj.yq.gov.cn/zlxz/",
+          "prior_review": "2026-11-22，已核公开下载栏"
+        }
+      },
+      "employer": "2017年市人社局指南可证地方历史清单，现行法人页未列明。",
+      "agency": "历史清单明确单位委托书、代理人身份证复印件并核对原件。个人委托办理的本地补充件未取得。",
+      "blocked": "现行单位/代理清单有效性和独立证据清单空表待市本级公布或确认。"
+    },
+    "210700": {
+      "sources": {
+        "department_catalog": [
+          {
+            "url": "https://zwfw.jz.gov.cn/jeesaas/f/item/srvOrg/11210700001150254X",
+            "kind": "public_browser_observation",
+            "artifact": "JZ-CATALOG-PAGE-1.txt.json",
+            "sha256": "b4587dbd8262a22635bf28e6dfec90423582fb1ed05b4c78b8169bf2c7cced11",
+            "observation": "31条事项的第1页"
+          },
+          {
+            "url": "https://zwfw.jz.gov.cn/jeesaas/f/item/srvOrg/11210700001150254X",
+            "kind": "public_browser_observation",
+            "artifact": "JZ-CATALOG-PAGE-2.txt.json",
+            "sha256": "6fd185722715b63a246207c49192e52439b055470a0847c61a6d2d6c2fc78ac2",
+            "observation": "31条事项的第2页"
+          },
+          {
+            "url": "https://zwfw.jz.gov.cn/jeesaas/f/item/srvOrg/11210700001150254X",
+            "kind": "public_browser_observation",
+            "artifact": "JZ-CATALOG-PAGE-3.txt.json",
+            "sha256": "196dba70d9398e6b6988534a8dbbd77b0dee11690ae34f6ec1ae3910d3815cad",
+            "observation": "31条事项的第3页"
+          }
+        ],
+        "current_guide": {
+          "url": "https://zwfw.jz.gov.cn/jeesaas/f/itemInfo/17bfd791-a222-4c33-8983-57ee706fc72e?ql=2",
+          "checked_at": "2026-11-22T09:47:28.108152+00:00",
+          "final_url": "https://zwfw.jz.gov.cn/jeesaas/f/itemInfo/17bfd791-a222-4c33-8983-57ee706fc72e?ql=2",
+          "status": 200,
+          "sha256": "7fc32e6050930fe8ba3524d34ff6f763624da26adc27f7654beff090ee3b4277",
+          "bytes": 30857,
+          "seconds": 0.5853256000009424
+        },
+        "current_guide_materials_tab": {
+          "url": "https://zwfw.jz.gov.cn/jeesaas/f/itemInfo/17bfd791-a222-4c33-8983-57ee706fc72e?ql=2",
+          "kind": "public_browser_observation",
+          "artifact": "JZ-MATERIAL-TAB.txt.json",
+          "sha256": "8fda160336c7035aa97bbc16db7024020d20bd623c46f8561b00ba0a9e27b320",
+          "observation": "市本级指南列三项材料。"
+        },
+        "id_detail": {
+          "url": "https://zwfw.jz.gov.cn/jeesaas/f/item/itemMaterialDetail/157550c2-4e1d-41ef-838a-686669a001c0",
+          "checked_at": "2026-11-22T09:47:28.122601+00:00",
+          "final_url": "https://zwfw.jz.gov.cn/jeesaas/f/item/itemMaterialDetail/157550c2-4e1d-41ef-838a-686669a001c0",
+          "status": 200,
+          "sha256": "2b4e8fbf0e06e4703418bbaaae2b53261ec9b4bed0a28fa943174c45140e62ca",
+          "bytes": 3916,
+          "seconds": 0.5557417999989411
+        },
+        "application_detail": {
+          "url": "https://zwfw.jz.gov.cn/jeesaas/f/item/itemMaterialDetail/34f3b579-aeed-4938-8b41-d859e1fa1b59",
+          "checked_at": "2026-11-22T09:47:28.340491+00:00",
+          "final_url": "https://zwfw.jz.gov.cn/jeesaas/f/item/itemMaterialDetail/34f3b579-aeed-4938-8b41-d859e1fa1b59",
+          "status": 200,
+          "sha256": "11d865048721ec0fa673b7b6a3ebde5efbe3012a0cb65e7b4eaf18610c869548",
+          "bytes": 3433,
+          "seconds": 0.45888019999983953
+        },
+        "evidence_detail": {
+          "url": "https://zwfw.jz.gov.cn/jeesaas/f/item/itemMaterialDetail/c811404e-2e25-4594-a815-0b4fce5b691d",
+          "checked_at": "2026-11-22T09:47:28.678126+00:00",
+          "final_url": "https://zwfw.jz.gov.cn/jeesaas/f/item/itemMaterialDetail/c811404e-2e25-4594-a815-0b4fce5b691d",
+          "status": 200,
+          "sha256": "74c8c9e75d1714feff7179ebe77ab66a0dc660f60f15bbfa555ab07a91222f94",
+          "bytes": 3810,
+          "seconds": 0.31543080000119517
+        },
+        "own_online_explanation_2021": {
+          "url": "https://www.jz.gov.cn/rsj/info/1003/1537.htm",
+          "checked_at": "2026-11-22T09:48:46.279166+00:00",
+          "status": 200,
+          "final_url": "https://www.jz.gov.cn/rsj/info/1003/1537.htm",
+          "sha256": "881bf79c05d1feb28bddd1e035c1aed82edef7a32112f4177f2f5eb29eee9564",
+          "bytes": 25499,
+          "title": "锦州市人社局劳动人事争议仲裁网上申请开通-锦州市人力资源和社会保障局",
+          "seconds": 0.5441533000011987,
+          "published_on": "2021-07-01"
+        },
+        "own_jurisdiction_notice_2022": {
+          "url": "https://www.jz.gov.cn/rsj/info/1003/2359.htm",
+          "checked_at": "2026-11-22T09:48:46.280163+00:00",
+          "status": 200,
+          "final_url": "https://www.jz.gov.cn/rsj/info/1003/2359.htm",
+          "sha256": "352dbf2a7a20ee6cb03473f854d5177d677d687970a29fe0aaa4f350b95564c7",
+          "bytes": 11987,
+          "title": "关于调整全市劳动人事争议仲裁案件管辖范围的通知-锦州市人力资源和社会保障局",
+          "seconds": 0.5584970999989309,
+          "published_on": "2022-04-15"
+        },
+        "own_department_catalog_pdf": {
+          "url": "https://www.jz.gov.cn/__local/2/06/D8/853B90E17244F42E36043AEB856_53C9653B_5ADA9.pdf",
+          "status": 200,
+          "sha256": "aa898d5f85ce6cfad685ff4d52ff7c36e105bad811e4b9f55e3efc547a094ce4",
+          "checked_at": "2026-11-22T09:51:58.977711+00:00",
+          "seconds": 0.7914132999976573,
+          "bytes": 372137,
+          "page_count": 31,
+          "matching_pages": []
+        },
+        "own_site_search": {
+          "url": "https://www.jz.gov.cn/rsj/search.jsp?wbtreeid=1006",
+          "kind": "public_browser_observation",
+          "artifact": "JZ-EVIDENCE-SEARCH.txt.json",
+          "sha256": "4ff48ef1244e6235f607574c8435e6c1b87b08e3930acb7b7813a92655b38069",
+          "observation": "证据清单关键词首屏结果为制度、竞赛、行政执法等，未出现市本级劳动仲裁空表。"
+        }
+      },
+      "employer": "2021年市人社局开通说明明确自然人/法人入口。现行指南没有单列单位申报全套材料。",
+      "agency": "未取得现行本级详细代理材料、份数或相应空表。",
+      "public_counts": [
+        {
+          "name": "仲裁申请人身份证复印件",
+          "paper_originals": 1,
+          "paper_copies": 2,
+          "issue": "材料名明确为复印件，详情另列原件1份。原件是否仅查验、是否留档未公开说明。"
+        },
+        {
+          "name": "仲裁申请书及副本",
+          "paper_originals": 2,
+          "paper_copies": 0,
+          "issue": "同页引用按被申请人人数提交副本。纸质原件份数和副本规则的对应关系、多被申请人算法待窗口确认。"
+        },
+        {
+          "name": "证据清单及证据材料",
+          "paper_originals": 1,
+          "paper_copies": 1,
+          "issue": "一栏合并列证据清单和材料。不同对象的分项与多被申请人份数未公开说明。空白和样例栏均为暂无。"
+        }
+      ],
+      "blocked": "核验原件是否留存、按被申请人如何配套副本、单位/代理材料和证据清单空表。"
+    }
+  }
+}
