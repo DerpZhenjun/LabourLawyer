@@ -1,0 +1,8 @@
+{
+  "url": "http://192.168.110.81:8088/api/regional-guides/inventory",
+  "observed_at": "2026-11-22T09:05:57+00:00",
+  "items": 227,
+  "direct_can_generate": 44,
+  "batch_published": 0,
+  "note": "Read-only service inventory. Item presence and direct can_generate are distinct. No private cases or credentials retained in public summary."
+}

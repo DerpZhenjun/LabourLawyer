@@ -1,0 +1,20 @@
+{
+  "reviewer": "independent whole-batch review",
+  "reviewed_at": "2026-11-22T09:10:18.232718+00:00",
+  "critical_findings": 0,
+  "important_unresolved": 0,
+  "tests": "11 passed independently",
+  "fixed_findings": [
+    "Normalized supplemental lower-bound timing and incomplete markers",
+    "Downgraded HLJ partial identity/application lists from complete materials",
+    "Mutable initial_verification_result snapshots excluded from first-success timing",
+    "Same-region duplicate download URLs counted once",
+    "OLE files with embedded ZIP remain raw binary identity",
+    "Source-stage rate explicitly excludes later classification/render/audit",
+    "Empty XLS acquisition separated from valid blank acquisition"
+  ],
+  "evidence_bindings_sha_verified": 272,
+  "frozen_regions_verified": 50,
+  "censored_regions": 50,
+  "raw_source_upload_policy": "Original response bodies, signed download URLs and filled samples remain local; explicit-path commit includes sanitized quantitative metadata only."
+}

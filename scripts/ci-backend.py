@@ -35,6 +35,7 @@ TESTS = (
     'test_regional_evidence_session',
     'test_template_reuse_benchmark',
     'test_template_reuse_original_download',
+    'test_first_source_measurement',
     'test_zhejiang_chunan_oct30',
     'test_chunan_oct30_dispatch',
     'test_chunan_publication_evidence',

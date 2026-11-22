@@ -1,0 +1,96 @@
+{
+  "regions_attempted": 50,
+  "counts": {
+    "own_source_found": 31,
+    "own_guide_verified": 6,
+    "materials_verified": 1,
+    "blank_original_acquired": 6,
+    "generation_ready": 0,
+    "published": 0
+  },
+  "censored_regions": 50,
+  "research_started_at": "2026-11-22T08:25:46.856206+00:00",
+  "research_completed_at": "2026-11-22T08:57:52.202762+00:00",
+  "research_wall_seconds": 1925.346556,
+  "recorded_region_dwell_seconds": 5823.616979,
+  "dwell_warning": "Lower bounds and overlapping root dwell; not total effective agent hours",
+  "timing_incomplete_regions": [
+    "130800",
+    "231200",
+    "232763",
+    "230523",
+    "232701",
+    "230671",
+    "410900",
+    "530100"
+  ],
+  "attempts_per_wall_hour": 93.48966264751768,
+  "stage_output_per_wall_hour": {
+    "own_source_found": 57.96359084146096,
+    "own_guide_verified": 11.218759517702122,
+    "materials_verified": 1.8697932529503536,
+    "blank_original_acquired": 11.218759517702122,
+    "generation_ready": 0.0,
+    "published": 0.0
+  },
+  "full_completion_eta_seconds": null,
+  "eta_reason": "No representative end-to-end completion-time model; censored cases retained",
+  "templates": {
+    "reported_url_bindings": 11,
+    "acquired_url_bindings": 11,
+    "classification_counts": {
+      "blank": 7,
+      "unknown": 1,
+      "sample": 3
+    },
+    "qualified_blank_url_bindings": 7,
+    "qualified_blank_bindings": 6,
+    "regions_with_qualified_blank": 6,
+    "unique_originals": 4,
+    "new_unique_originals": 4,
+    "previously_seen_unique_originals": 0,
+    "new_unique_ratio": 1.0,
+    "new_binding_ratio": 1.0,
+    "new_sha256": [
+      "526954c3331fc05443b53f0fac89ccd5280f52a3b462a0122618d04718429694",
+      "83b8eaded7ce071d27a3e0d86fcbf1dddef577597f0871781610cbd284ffb9b1",
+      "e9948c8581111d1cb94f662ca2f3f563149a8cc2adbbc935ea2890f4e53b4c3e",
+      "fd4dc738f352542644bdcfe4097f3ea5ac88e11db9a551e2abbcf8c3767e8997"
+    ],
+    "qualification_warning": "Blank acquisition does not assert complete materials, adaptation or rendering acceptance"
+  },
+  "baseline": {
+    "paths_verified": 1664,
+    "unique_raw_sha256": 163,
+    "unique_zip_member_sha256": 96,
+    "qualification": "Previously seen bytes only; no source authority or QA approval inherited"
+  },
+  "own_guide_candidates_current_validity_pending": 5,
+  "historical_guide_current_validity_pending": 1,
+  "complete_current_materials_coverage": 0,
+  "guides_with_data_quality_conflict": 4,
+  "evidence_entries_verified": 272,
+  "root_classification_changed_regions": [
+    "232763",
+    "230523",
+    "232701"
+  ],
+  "status_counts": {
+    "ACCESS_BOUNDARY": 9,
+    "IDENTITY_STALE": 1,
+    "OWN_GUIDE_VERIFIED": 6,
+    "PARTIAL_OWN_SOURCE": 24,
+    "UNRESOLVED": 10
+  },
+  "research_wall_note": "freeze→last source research end; includes baseline/setup/coordinator overhead, excludes post-research audit/render/CI. Recorded dwell overlaps and has gaps; effective parallelism cannot be reliably estimated.",
+  "protocol_limit": "Stratified deterministic 10-province pilot, not a nationally representative probability sample. Fifty source attempts, no fully completed region.",
+  "template_content_groups": {
+    "known_zip_unique": 2,
+    "raw_binary_unique": 2,
+    "all_member_novel_unique": 2,
+    "note": "Raw binary DOC not semantically normalized; no text-similarity equivalence asserted"
+  },
+  "root_audit_completed_at": "2026-11-22T09:10:18.232718+00:00",
+  "audited_wall_seconds": 2671.376512,
+  "audited_wall_note": "Includes statistics implementation, independent scope/hash and Word classification review; excludes later commit, CI and final pause closeout."
+}

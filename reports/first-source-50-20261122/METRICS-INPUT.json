@@ -1,0 +1,2020 @@
+{
+  "scope": "Reviewed attestation input. Full raw sources and all failed observations remain local. No first-pass success timestamps inferred from mutable initial_verification_result snapshots.",
+  "cohort_sha256": "7ada6a7d09a48096d163a809cb2e2907d5ac023ffbba5f144e2314f4890ff712",
+  "cohort": {
+    "frozen_at": "2026-11-22T08:25:46.856206+00:00",
+    "regions": [
+      {
+        "code": "130800"
+      },
+      {
+        "code": "130207"
+      },
+      {
+        "code": "130527"
+      },
+      {
+        "code": "130281"
+      },
+      {
+        "code": "130274"
+      },
+      {
+        "code": "140300"
+      },
+      {
+        "code": "140802"
+      },
+      {
+        "code": "140726"
+      },
+      {
+        "code": "140581"
+      },
+      {
+        "code": "140975"
+      },
+      {
+        "code": "210700"
+      },
+      {
+        "code": "211102"
+      },
+      {
+        "code": "210323"
+      },
+      {
+        "code": "210782"
+      },
+      {
+        "code": "211485"
+      },
+      {
+        "code": "220300"
+      },
+      {
+        "code": "220602"
+      },
+      {
+        "code": "220621"
+      },
+      {
+        "code": "220781"
+      },
+      {
+        "code": "220900"
+      },
+      {
+        "code": "231200"
+      },
+      {
+        "code": "232763"
+      },
+      {
+        "code": "230523"
+      },
+      {
+        "code": "232701"
+      },
+      {
+        "code": "230671"
+      },
+      {
+        "code": "370800"
+      },
+      {
+        "code": "371311"
+      },
+      {
+        "code": "371623"
+      },
+      {
+        "code": "371481"
+      },
+      {
+        "code": "371772"
+      },
+      {
+        "code": "410900"
+      },
+      {
+        "code": "410411"
+      },
+      {
+        "code": "410326"
+      },
+      {
+        "code": "410182"
+      },
+      {
+        "code": "410993"
+      },
+      {
+        "code": "421100"
+      },
+      {
+        "code": "420304"
+      },
+      {
+        "code": "420325"
+      },
+      {
+        "code": "420582"
+      },
+      {
+        "code": "421171"
+      },
+      {
+        "code": "451100"
+      },
+      {
+        "code": "450303"
+      },
+      {
+        "code": "450326"
+      },
+      {
+        "code": "451481"
+      },
+      {
+        "code": "450805"
+      },
+      {
+        "code": "530100"
+      },
+      {
+        "code": "530115"
+      },
+      {
+        "code": "530129"
+      },
+      {
+        "code": "530181"
+      },
+      {
+        "code": "530929"
+      }
+    ]
+  },
+  "research_completed_at": "2026-11-22T08:57:52.202762+00:00",
+  "records": [
+    {
+      "region_code": "130800",
+      "sample_ordinal": 1,
+      "province": "hebei",
+      "city": "承德市",
+      "district": "",
+      "current_region_code": "130800",
+      "current_official_name": "承德市",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:28:01.941214+00:00",
+      "completed_at": "2026-11-22T08:28:26.331634+00:00",
+      "research_completed_at": "2026-11-22T08:59:05.073281+00:00",
+      "work_seconds": 24.39,
+      "followup_work_seconds": 48.56,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": true,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "130207",
+      "sample_ordinal": 2,
+      "province": "hebei",
+      "city": "唐山市",
+      "district": "丰南区",
+      "current_region_code": "130207",
+      "current_official_name": "丰南区",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:28:27.223678+00:00",
+      "completed_at": "2026-11-22T08:28:54.925923+00:00",
+      "research_completed_at": "2026-11-22T08:59:05.073281+00:00",
+      "work_seconds": 27.702,
+      "followup_work_seconds": 19.952,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "130527",
+      "sample_ordinal": 3,
+      "province": "hebei",
+      "city": "邢台市",
+      "district": "南和县",
+      "current_region_code": "130506",
+      "current_official_name": "邢台市南和区",
+      "status": "IDENTITY_STALE",
+      "started_at": "2026-11-22T08:28:55.915906+00:00",
+      "completed_at": "2026-11-22T08:29:47.137176+00:00",
+      "research_completed_at": "2026-11-22T08:59:05.073281+00:00",
+      "work_seconds": 51.221,
+      "followup_work_seconds": 7.091,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "130281",
+      "sample_ordinal": 4,
+      "province": "hebei",
+      "city": "唐山市",
+      "district": "遵化市",
+      "current_region_code": "130281",
+      "current_official_name": "遵化市",
+      "status": "ACCESS_BOUNDARY",
+      "started_at": "2026-11-22T08:29:47.864025+00:00",
+      "completed_at": "2026-11-22T08:30:24.366346+00:00",
+      "research_completed_at": "2026-11-22T08:59:05.073281+00:00",
+      "work_seconds": 36.502,
+      "followup_work_seconds": 20.24,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "130274",
+      "sample_ordinal": 5,
+      "province": "hebei",
+      "city": "唐山市",
+      "district": "海港经济开发区",
+      "current_region_code": "130274",
+      "current_official_name": "河北唐山海港经济开发区",
+      "status": "ACCESS_BOUNDARY",
+      "started_at": "2026-11-22T08:30:25.218897+00:00",
+      "completed_at": "2026-11-22T08:30:52.397482+00:00",
+      "research_completed_at": "2026-11-22T08:59:05.073281+00:00",
+      "work_seconds": 27.179,
+      "followup_work_seconds": 14.869,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "140300",
+      "sample_ordinal": 6,
+      "province": "shanxi",
+      "city": "阳泉市",
+      "district": "",
+      "current_region_code": "140300",
+      "current_official_name": "阳泉市",
+      "status": "OWN_GUIDE_VERIFIED",
+      "started_at": "2026-11-22T08:30:53.094482+00:00",
+      "completed_at": "2026-11-22T08:31:37.215553+00:00",
+      "research_completed_at": "2026-11-22T08:59:05.073281+00:00",
+      "work_seconds": 44.121,
+      "followup_work_seconds": 198.228,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": true,
+        "materials_verified": false,
+        "blank_original_acquired": true,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": true,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [
+        {
+          "classification": "blank",
+          "sha256": "fd4dc738f352542644bdcfe4097f3ea5ac88e11db9a551e2abbcf8c3767e8997",
+          "member_sha256": "d537d3d2b7d216e593bba154d967b09acb0a9dc61f4868fcc310ae38ea8f1a73",
+          "root_blank_verified": true,
+          "document_types": [
+            "arbitration_application"
+          ],
+          "previously_seen_raw": false,
+          "previously_seen_all_members": false,
+          "url_present": true
+        }
+      ],
+      "sources": []
+    },
+    {
+      "region_code": "140802",
+      "sample_ordinal": 7,
+      "province": "shanxi",
+      "city": "运城市",
+      "district": "盐湖区",
+      "current_region_code": "140802",
+      "current_official_name": "盐湖区",
+      "status": "OWN_GUIDE_VERIFIED",
+      "started_at": "2026-11-22T08:31:38.130584+00:00",
+      "completed_at": "2026-11-22T08:32:19.349713+00:00",
+      "research_completed_at": "2026-11-22T08:59:05.073281+00:00",
+      "work_seconds": 41.219,
+      "followup_work_seconds": 63.144,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": true,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": true,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "140726",
+      "sample_ordinal": 8,
+      "province": "shanxi",
+      "city": "晋中市",
+      "district": "太谷县",
+      "current_region_code": "140703",
+      "current_official_name": "晋中市太谷区",
+      "status": "OWN_GUIDE_VERIFIED",
+      "started_at": "2026-11-22T08:32:20.133514+00:00",
+      "completed_at": "2026-11-22T08:33:09.101880+00:00",
+      "research_completed_at": "2026-11-22T08:59:05.073281+00:00",
+      "work_seconds": 48.968,
+      "followup_work_seconds": 279.103,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": true,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": true,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [
+        {
+          "classification": "unknown",
+          "sha256": "6eafabc0bf6c2dcb18cea2d6867e04426855ad2acee727e782ff1cb4504b91d8",
+          "member_sha256": null,
+          "root_blank_verified": false,
+          "document_types": [
+            "unknown"
+          ],
+          "previously_seen_raw": false,
+          "previously_seen_all_members": null,
+          "url_present": true
+        }
+      ],
+      "sources": []
+    },
+    {
+      "region_code": "140581",
+      "sample_ordinal": 9,
+      "province": "shanxi",
+      "city": "晋城市",
+      "district": "高平市",
+      "current_region_code": "140581",
+      "current_official_name": "高平市",
+      "status": "OWN_GUIDE_VERIFIED",
+      "started_at": "2026-11-22T08:33:09.931062+00:00",
+      "completed_at": "2026-11-22T08:33:57.189735+00:00",
+      "research_completed_at": "2026-11-22T08:59:05.073281+00:00",
+      "work_seconds": 47.259,
+      "followup_work_seconds": 153.983,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": true,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": true,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "140975",
+      "sample_ordinal": 10,
+      "province": "shanxi",
+      "city": "忻州市",
+      "district": "静乐现代农业产业示范区",
+      "current_region_code": "140975",
+      "current_official_name": "静乐现代农业产业示范区",
+      "status": "UNRESOLVED",
+      "started_at": "2026-11-22T08:33:58.186822+00:00",
+      "completed_at": "2026-11-22T08:34:36.064032+00:00",
+      "research_completed_at": "2026-11-22T08:59:05.073281+00:00",
+      "work_seconds": 37.877,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "210700",
+      "sample_ordinal": 11,
+      "province": "liaoning",
+      "city": "锦州市",
+      "district": "",
+      "current_region_code": "210700",
+      "current_official_name": "锦州市",
+      "status": "OWN_GUIDE_VERIFIED",
+      "started_at": "2026-11-22T08:34:37.051908+00:00",
+      "completed_at": "2026-11-22T08:36:41.505605+00:00",
+      "research_completed_at": "2026-11-22T08:59:05.073281+00:00",
+      "work_seconds": 124.454,
+      "followup_work_seconds": 121.406,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": true,
+        "materials_verified": false,
+        "blank_original_acquired": true,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": true,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [
+        {
+          "classification": "blank",
+          "sha256": "83b8eaded7ce071d27a3e0d86fcbf1dddef577597f0871781610cbd284ffb9b1",
+          "member_sha256": null,
+          "root_blank_verified": true,
+          "document_types": [
+            "arbitration_application"
+          ],
+          "previously_seen_raw": false,
+          "previously_seen_all_members": null,
+          "url_present": true
+        }
+      ],
+      "sources": []
+    },
+    {
+      "region_code": "211102",
+      "sample_ordinal": 12,
+      "province": "liaoning",
+      "city": "盘锦市",
+      "district": "双台子区",
+      "current_region_code": "211102",
+      "current_official_name": "双台子区",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:36:42.337754+00:00",
+      "completed_at": "2026-11-22T08:37:16.987062+00:00",
+      "research_completed_at": "2026-11-22T08:59:05.073281+00:00",
+      "work_seconds": 34.649,
+      "followup_work_seconds": 68.565,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "210323",
+      "sample_ordinal": 13,
+      "province": "liaoning",
+      "city": "鞍山市",
+      "district": "岫岩满族自治县",
+      "current_region_code": "210323",
+      "current_official_name": "岫岩满族自治县",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:37:17.847657+00:00",
+      "completed_at": "2026-11-22T08:38:13.046767+00:00",
+      "research_completed_at": "2026-11-22T08:59:05.073281+00:00",
+      "work_seconds": 55.199,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "210782",
+      "sample_ordinal": 14,
+      "province": "liaoning",
+      "city": "锦州市",
+      "district": "北镇市",
+      "current_region_code": "210782",
+      "current_official_name": "北镇市",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:38:13.930336+00:00",
+      "completed_at": "2026-11-22T08:39:05.669117+00:00",
+      "research_completed_at": "2026-11-22T08:59:05.073281+00:00",
+      "work_seconds": 51.739,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "211485",
+      "sample_ordinal": 15,
+      "province": "liaoning",
+      "city": "葫芦岛市",
+      "district": "杨家杖子经济技术开发区",
+      "current_region_code": "211485",
+      "current_official_name": "辽宁葫芦岛杨家杖子经济开发区",
+      "status": "ACCESS_BOUNDARY",
+      "started_at": "2026-11-22T08:39:06.508551+00:00",
+      "completed_at": "2026-11-22T08:39:48.551034+00:00",
+      "research_completed_at": "2026-11-22T08:59:05.073281+00:00",
+      "work_seconds": 42.042,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "220300",
+      "sample_ordinal": 16,
+      "province": "jilin",
+      "city": "四平市",
+      "district": "",
+      "current_region_code": "220300",
+      "current_official_name": "四平市",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:27:13.7326787+00:00",
+      "completed_at": "2026-11-22T08:29:42.562257+00:00",
+      "research_completed_at": "2026-11-22T08:57:52.202762+00:00",
+      "work_seconds": 148.83,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "220602",
+      "sample_ordinal": 17,
+      "province": "jilin",
+      "city": "白山市",
+      "district": "浑江区",
+      "current_region_code": "220602",
+      "current_official_name": "浑江区",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:29:43.393335+00:00",
+      "completed_at": "2026-11-22T08:30:44.858763+00:00",
+      "research_completed_at": "2026-11-22T08:57:52.202762+00:00",
+      "work_seconds": 61.465,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "220621",
+      "sample_ordinal": 18,
+      "province": "jilin",
+      "city": "白山市",
+      "district": "抚松县",
+      "current_region_code": "220621",
+      "current_official_name": "抚松县",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:30:45.552356+00:00",
+      "completed_at": "2026-11-22T08:31:16.978680+00:00",
+      "research_completed_at": "2026-11-22T08:57:52.202762+00:00",
+      "work_seconds": 31.426,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "220781",
+      "sample_ordinal": 19,
+      "province": "jilin",
+      "city": "松原市",
+      "district": "扶余市",
+      "current_region_code": "220781",
+      "current_official_name": "扶余市",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:31:17.789265+00:00",
+      "completed_at": "2026-11-22T08:31:56.244026+00:00",
+      "research_completed_at": "2026-11-22T08:57:52.202762+00:00",
+      "work_seconds": 38.455,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "220900",
+      "sample_ordinal": 20,
+      "province": "jilin",
+      "city": "长白山管委会",
+      "district": "",
+      "current_region_code": "220900",
+      "current_official_name": "吉林省长白山保护开发区管理委员会",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:31:57.011089+00:00",
+      "completed_at": "2026-11-22T08:32:47.774305+00:00",
+      "research_completed_at": "2026-11-22T08:57:52.202762+00:00",
+      "work_seconds": 50.763,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "231200",
+      "sample_ordinal": 21,
+      "province": "heilongjiang",
+      "city": "绥化市",
+      "district": "",
+      "current_region_code": "231200",
+      "current_official_name": "绥化市",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:33:02.016423+00:00",
+      "completed_at": "2026-11-22T08:33:58.437635+00:00",
+      "research_completed_at": "2026-11-22T08:57:52.202762+00:00",
+      "work_seconds": 56.421,
+      "followup_work_seconds": 44.154,
+      "followup_timing_incomplete": true,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": true,
+        "generation_ready": false,
+        "own_material_items_verified": true
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [
+        {
+          "classification": "blank",
+          "sha256": "e9948c8581111d1cb94f662ca2f3f563149a8cc2adbbc935ea2890f4e53b4c3e",
+          "member_sha256": "f56eb6dab40f8046f6c0c6b5ea24954f497da23bad895f13a3f69b7296d34cc1",
+          "root_blank_verified": true,
+          "document_types": [
+            "arbitration_application"
+          ],
+          "previously_seen_raw": false,
+          "previously_seen_all_members": false,
+          "label_conflict": false,
+          "url_present": true
+        },
+        {
+          "classification": "blank",
+          "sha256": "e9948c8581111d1cb94f662ca2f3f563149a8cc2adbbc935ea2890f4e53b4c3e",
+          "member_sha256": "f56eb6dab40f8046f6c0c6b5ea24954f497da23bad895f13a3f69b7296d34cc1",
+          "root_blank_verified": true,
+          "document_types": [
+            "arbitration_application"
+          ],
+          "previously_seen_raw": false,
+          "previously_seen_all_members": false,
+          "label_conflict": true,
+          "url_present": true
+        }
+      ],
+      "sources": []
+    },
+    {
+      "region_code": "232763",
+      "sample_ordinal": 22,
+      "province": "heilongjiang",
+      "city": "大兴安岭地区",
+      "district": "新林区",
+      "current_region_code": "232763",
+      "current_official_name": "新林区",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:33:59.455861+00:00",
+      "completed_at": "2026-11-22T08:34:49.440791+00:00",
+      "research_completed_at": "2026-11-22T08:57:52.202762+00:00",
+      "work_seconds": 49.985,
+      "followup_work_seconds": 169.565,
+      "followup_timing_incomplete": true,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": true,
+        "generation_ready": false,
+        "own_material_items_verified": true
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [
+        {
+          "classification": "blank",
+          "sha256": "526954c3331fc05443b53f0fac89ccd5280f52a3b462a0122618d04718429694",
+          "member_sha256": null,
+          "root_blank_verified": true,
+          "document_types": [
+            "arbitration_application"
+          ],
+          "previously_seen_raw": false,
+          "previously_seen_all_members": null,
+          "label_conflict": false,
+          "url_present": true
+        },
+        {
+          "classification": "sample",
+          "sha256": "1cf7ccdabe0e8e36478a1f3dc73946946bbe9e5f73c24093f1f6040bb16b079b",
+          "member_sha256": "30d725d129b4eb520877480d2cb2d2532ce2fa69d7eb221a108ae8a5d333891e",
+          "root_blank_verified": false,
+          "document_types": [
+            "arbitration_application"
+          ],
+          "previously_seen_raw": false,
+          "previously_seen_all_members": false,
+          "label_conflict": false,
+          "url_present": true
+        }
+      ],
+      "sources": []
+    },
+    {
+      "region_code": "230523",
+      "sample_ordinal": 23,
+      "province": "heilongjiang",
+      "city": "双鸭山市",
+      "district": "宝清县",
+      "current_region_code": "230523",
+      "current_official_name": "宝清县",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:34:50.469713+00:00",
+      "completed_at": "2026-11-22T08:35:21.777171+00:00",
+      "research_completed_at": "2026-11-22T08:57:52.202762+00:00",
+      "work_seconds": 31.307,
+      "followup_work_seconds": 49.7,
+      "followup_timing_incomplete": true,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": true,
+        "generation_ready": false,
+        "own_material_items_verified": true
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [
+        {
+          "classification": "blank",
+          "sha256": "526954c3331fc05443b53f0fac89ccd5280f52a3b462a0122618d04718429694",
+          "member_sha256": null,
+          "root_blank_verified": true,
+          "document_types": [
+            "arbitration_application"
+          ],
+          "previously_seen_raw": false,
+          "previously_seen_all_members": null,
+          "label_conflict": false,
+          "url_present": true
+        },
+        {
+          "classification": "sample",
+          "sha256": "1cf7ccdabe0e8e36478a1f3dc73946946bbe9e5f73c24093f1f6040bb16b079b",
+          "member_sha256": "30d725d129b4eb520877480d2cb2d2532ce2fa69d7eb221a108ae8a5d333891e",
+          "root_blank_verified": false,
+          "document_types": [
+            "arbitration_application"
+          ],
+          "previously_seen_raw": false,
+          "previously_seen_all_members": false,
+          "label_conflict": false,
+          "url_present": true
+        }
+      ],
+      "sources": []
+    },
+    {
+      "region_code": "232701",
+      "sample_ordinal": 24,
+      "province": "heilongjiang",
+      "city": "大兴安岭地区",
+      "district": "漠河市",
+      "current_region_code": "232701",
+      "current_official_name": "漠河市",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:35:22.783820+00:00",
+      "completed_at": "2026-11-22T08:36:12.098815+00:00",
+      "research_completed_at": "2026-11-22T08:57:52.202762+00:00",
+      "work_seconds": 49.315,
+      "followup_work_seconds": 50.122,
+      "followup_timing_incomplete": true,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": true,
+        "generation_ready": false,
+        "own_material_items_verified": true
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [
+        {
+          "classification": "blank",
+          "sha256": "526954c3331fc05443b53f0fac89ccd5280f52a3b462a0122618d04718429694",
+          "member_sha256": null,
+          "root_blank_verified": true,
+          "document_types": [
+            "arbitration_application"
+          ],
+          "previously_seen_raw": false,
+          "previously_seen_all_members": null,
+          "label_conflict": false,
+          "url_present": true
+        },
+        {
+          "classification": "sample",
+          "sha256": "1cf7ccdabe0e8e36478a1f3dc73946946bbe9e5f73c24093f1f6040bb16b079b",
+          "member_sha256": "30d725d129b4eb520877480d2cb2d2532ce2fa69d7eb221a108ae8a5d333891e",
+          "root_blank_verified": false,
+          "document_types": [
+            "arbitration_application"
+          ],
+          "previously_seen_raw": false,
+          "previously_seen_all_members": false,
+          "label_conflict": false,
+          "url_present": true
+        }
+      ],
+      "sources": []
+    },
+    {
+      "region_code": "230671",
+      "sample_ordinal": 25,
+      "province": "heilongjiang",
+      "city": "大庆市",
+      "district": "高新区",
+      "current_region_code": "230671",
+      "current_official_name": "大庆高新技术产业开发区",
+      "status": "UNRESOLVED",
+      "started_at": "2026-11-22T08:36:12.941866+00:00",
+      "completed_at": "2026-11-22T08:37:06.379683+00:00",
+      "research_completed_at": "2026-11-22T08:57:52.202762+00:00",
+      "work_seconds": 53.438,
+      "followup_work_seconds": 45.741,
+      "followup_timing_incomplete": true,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "370800",
+      "sample_ordinal": 26,
+      "province": "shandong",
+      "city": "济宁市",
+      "district": "",
+      "current_region_code": "370800",
+      "current_official_name": "济宁市",
+      "status": "OWN_GUIDE_VERIFIED",
+      "started_at": "2026-11-22T08:37:17.303759+00:00",
+      "completed_at": "2026-11-22T08:38:41.407663+00:00",
+      "research_completed_at": "2026-11-22T08:57:52.202762+00:00",
+      "work_seconds": 84.104,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": true,
+        "materials_verified": true,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": true,
+        "materials_roles_verified": true,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "371311",
+      "sample_ordinal": 27,
+      "province": "shandong",
+      "city": "临沂市",
+      "district": "罗庄区",
+      "current_region_code": "371311",
+      "current_official_name": "罗庄区",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:38:42.226943+00:00",
+      "completed_at": "2026-11-22T08:39:24.428819+00:00",
+      "research_completed_at": "2026-11-22T08:57:52.202762+00:00",
+      "work_seconds": 42.202,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "371623",
+      "sample_ordinal": 28,
+      "province": "shandong",
+      "city": "滨州市",
+      "district": "无棣县",
+      "current_region_code": "371623",
+      "current_official_name": "无棣县",
+      "status": "ACCESS_BOUNDARY",
+      "started_at": "2026-11-22T08:39:25.254343+00:00",
+      "completed_at": "2026-11-22T08:40:00.472422+00:00",
+      "research_completed_at": "2026-11-22T08:57:52.202762+00:00",
+      "work_seconds": 35.218,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "371481",
+      "sample_ordinal": 29,
+      "province": "shandong",
+      "city": "德州市",
+      "district": "乐陵市",
+      "current_region_code": "371481",
+      "current_official_name": "乐陵市",
+      "status": "ACCESS_BOUNDARY",
+      "started_at": "2026-11-22T08:40:01.152061+00:00",
+      "completed_at": "2026-11-22T08:40:48.437580+00:00",
+      "research_completed_at": "2026-11-22T08:57:52.202762+00:00",
+      "work_seconds": 47.286,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "371772",
+      "sample_ordinal": 30,
+      "province": "shandong",
+      "city": "菏泽市",
+      "district": "菏泽高新区",
+      "current_region_code": null,
+      "current_official_name": null,
+      "status": "ACCESS_BOUNDARY",
+      "started_at": "2026-11-22T08:40:49.092684+00:00",
+      "completed_at": "2026-11-22T08:41:23.269581+00:00",
+      "research_completed_at": "2026-11-22T08:57:52.202762+00:00",
+      "work_seconds": 34.177,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "410900",
+      "sample_ordinal": 31,
+      "province": "henan",
+      "city": "濮阳市",
+      "district": "",
+      "current_region_code": "410900",
+      "current_official_name": "濮阳市",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:28:19.311Z",
+      "completed_at": "2026-11-22T08:29:32.047Z",
+      "research_completed_at": "2026-11-22T08:29:32.047Z",
+      "work_seconds": 72.736,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": true,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "410411",
+      "sample_ordinal": 32,
+      "province": "henan",
+      "city": "平顶山市",
+      "district": "湛河区",
+      "current_region_code": "410411",
+      "current_official_name": "湛河区",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:29:32.050Z",
+      "completed_at": "2026-11-22T08:29:57.725Z",
+      "research_completed_at": "2026-11-22T08:29:57.725Z",
+      "work_seconds": 25.675,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "410326",
+      "sample_ordinal": 33,
+      "province": "henan",
+      "city": "洛阳市",
+      "district": "汝阳县",
+      "current_region_code": "410326",
+      "current_official_name": "汝阳县",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:29:57.727Z",
+      "completed_at": "2026-11-22T08:30:46.784Z",
+      "research_completed_at": "2026-11-22T08:30:46.784Z",
+      "work_seconds": 49.057,
+      "followup_work_seconds": 35.74,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "410182",
+      "sample_ordinal": 34,
+      "province": "henan",
+      "city": "郑州市",
+      "district": "荥阳市",
+      "current_region_code": "410182",
+      "current_official_name": "荥阳市",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:30:46.786Z",
+      "completed_at": "2026-11-22T08:31:51.994Z",
+      "research_completed_at": "2026-11-22T08:31:51.994Z",
+      "work_seconds": 65.208,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "410993",
+      "sample_ordinal": 35,
+      "province": "henan",
+      "city": "濮阳市",
+      "district": "示范区",
+      "current_region_code": null,
+      "current_official_name": "濮阳市城乡一体化示范区",
+      "status": "UNRESOLVED",
+      "started_at": "2026-11-22T08:31:51.995Z",
+      "completed_at": "2026-11-22T08:32:30.824Z",
+      "research_completed_at": "2026-11-22T08:32:30.824Z",
+      "work_seconds": 38.829,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "421100",
+      "sample_ordinal": 36,
+      "province": "hubei",
+      "city": "黄冈市",
+      "district": "",
+      "current_region_code": "421100",
+      "current_official_name": "黄冈市",
+      "status": "ACCESS_BOUNDARY",
+      "started_at": "2026-11-22T08:32:30.826Z",
+      "completed_at": "2026-11-22T08:33:19.261Z",
+      "research_completed_at": "2026-11-22T08:33:19.261Z",
+      "work_seconds": 48.435,
+      "followup_work_seconds": 27.134,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "420304",
+      "sample_ordinal": 37,
+      "province": "hubei",
+      "city": "十堰市",
+      "district": "郧阳区",
+      "current_region_code": "420304",
+      "current_official_name": "郧阳区",
+      "status": "UNRESOLVED",
+      "started_at": "2026-11-22T08:33:19.263Z",
+      "completed_at": "2026-11-22T08:34:10.197Z",
+      "research_completed_at": "2026-11-22T08:34:10.197Z",
+      "work_seconds": 50.934,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "420325",
+      "sample_ordinal": 38,
+      "province": "hubei",
+      "city": "十堰市",
+      "district": "房县",
+      "current_region_code": "420325",
+      "current_official_name": "房县",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:34:10.199Z",
+      "completed_at": "2026-11-22T08:34:56.803Z",
+      "research_completed_at": "2026-11-22T08:34:56.803Z",
+      "work_seconds": 46.604,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "420582",
+      "sample_ordinal": 39,
+      "province": "hubei",
+      "city": "宜昌市",
+      "district": "当阳市",
+      "current_region_code": "420582",
+      "current_official_name": "当阳市",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:34:56.809Z",
+      "completed_at": "2026-11-22T08:35:37.000Z",
+      "research_completed_at": "2026-11-22T08:35:37.000Z",
+      "work_seconds": 40.191,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "421171",
+      "sample_ordinal": 40,
+      "province": "hubei",
+      "city": "黄冈市",
+      "district": "龙感湖管理区",
+      "current_region_code": "421171",
+      "current_official_name": "龙感湖管理区",
+      "status": "UNRESOLVED",
+      "started_at": "2026-11-22T08:35:37.002Z",
+      "completed_at": "2026-11-22T08:36:43.046Z",
+      "research_completed_at": "2026-11-22T08:36:43.046Z",
+      "work_seconds": 66.044,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "451100",
+      "sample_ordinal": 41,
+      "province": "guangxi",
+      "city": "贺州市",
+      "district": "",
+      "current_region_code": "451100",
+      "current_official_name": "贺州市",
+      "status": "ACCESS_BOUNDARY",
+      "started_at": "2026-11-22T08:36:43.049Z",
+      "completed_at": "2026-11-22T08:37:50.056Z",
+      "research_completed_at": "2026-11-22T08:37:50.056Z",
+      "work_seconds": 67.007,
+      "followup_work_seconds": 9.064,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "450303",
+      "sample_ordinal": 42,
+      "province": "guangxi",
+      "city": "桂林市",
+      "district": "叠彩区",
+      "current_region_code": "450303",
+      "current_official_name": "叠彩区",
+      "status": "UNRESOLVED",
+      "started_at": "2026-11-22T08:37:50.058Z",
+      "completed_at": "2026-11-22T08:38:41.251Z",
+      "research_completed_at": "2026-11-22T08:38:41.251Z",
+      "work_seconds": 51.193,
+      "followup_work_seconds": 98.57300000000001,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "450326",
+      "sample_ordinal": 43,
+      "province": "guangxi",
+      "city": "桂林市",
+      "district": "永福县",
+      "current_region_code": "450326",
+      "current_official_name": "永福县",
+      "status": "UNRESOLVED",
+      "started_at": "2026-11-22T08:38:41.253Z",
+      "completed_at": "2026-11-22T08:39:27.019Z",
+      "research_completed_at": "2026-11-22T08:39:27.019Z",
+      "work_seconds": 45.766,
+      "followup_work_seconds": 91.70599999999999,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "451481",
+      "sample_ordinal": 44,
+      "province": "guangxi",
+      "city": "崇左市",
+      "district": "凭祥市",
+      "current_region_code": "451481",
+      "current_official_name": "凭祥市",
+      "status": "UNRESOLVED",
+      "started_at": "2026-11-22T08:39:27.020Z",
+      "completed_at": "2026-11-22T08:40:02.052Z",
+      "research_completed_at": "2026-11-22T08:40:02.052Z",
+      "work_seconds": 35.032,
+      "followup_work_seconds": 29.44,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "450805",
+      "sample_ordinal": 45,
+      "province": "guangxi",
+      "city": "贵港市",
+      "district": "高新技术产业开发区",
+      "current_region_code": null,
+      "current_official_name": "广西贵港高新技术产业开发区",
+      "status": "UNRESOLVED",
+      "started_at": "2026-11-22T08:40:02.054Z",
+      "completed_at": "2026-11-22T08:40:37.566Z",
+      "research_completed_at": "2026-11-22T08:40:37.566Z",
+      "work_seconds": 35.512,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "530100",
+      "sample_ordinal": 46,
+      "province": "yunnan",
+      "city": "昆明市",
+      "district": "",
+      "sample_category": "municipal",
+      "current_region_code": "530100",
+      "current_official_name": "昆明市",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:28:08.861878+00:00",
+      "completed_at": "2026-11-22T08:40:16.419714+00:00",
+      "research_completed_at": "2026-11-22T08:40:16.419714+00:00",
+      "work_seconds": 727.557836,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "municipal_general_guide_found": true,
+        "materials_verified": false,
+        "materials_in_general_guide_found": true,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": true,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "530115",
+      "sample_ordinal": 47,
+      "province": "yunnan",
+      "city": "昆明市",
+      "district": "晋宁区",
+      "sample_category": "district",
+      "current_region_code": "530115",
+      "current_official_name": "晋宁区",
+      "status": "ACCESS_BOUNDARY",
+      "started_at": "2026-11-22T08:40:16.419714+00:00",
+      "completed_at": "2026-11-22T08:43:17.484906+00:00",
+      "research_completed_at": "2026-11-22T08:43:17.484906+00:00",
+      "work_seconds": 181.065192,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "530129",
+      "sample_ordinal": 48,
+      "province": "yunnan",
+      "city": "昆明市",
+      "district": "寻甸回族彝族自治县",
+      "sample_category": "county",
+      "current_region_code": "530129",
+      "current_official_name": "寻甸回族彝族自治县",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:43:17.484906+00:00",
+      "completed_at": "2026-11-22T08:54:08.470247+00:00",
+      "research_completed_at": "2026-11-22T08:54:08.470247+00:00",
+      "work_seconds": 650.985341,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "530181",
+      "sample_ordinal": 49,
+      "province": "yunnan",
+      "city": "昆明市",
+      "district": "安宁市",
+      "sample_category": "county_city",
+      "current_region_code": "530181",
+      "current_official_name": "安宁市",
+      "status": "PARTIAL_OWN_SOURCE",
+      "started_at": "2026-11-22T08:54:08.470247+00:00",
+      "completed_at": "2026-11-22T08:57:13.866552+00:00",
+      "research_completed_at": "2026-11-22T08:57:13.866552+00:00",
+      "work_seconds": 185.396305,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": true,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    },
+    {
+      "region_code": "530929",
+      "sample_ordinal": 50,
+      "province": "yunnan",
+      "city": "临沧市",
+      "district": "临沧高新技术产业开发区",
+      "sample_category": "functional_zone",
+      "current_region_code": null,
+      "current_official_name": "临沧高新技术产业开发区",
+      "status": "UNRESOLVED",
+      "started_at": "2026-11-22T08:54:08.470247+00:00",
+      "completed_at": "2026-11-22T08:57:13.866552+00:00",
+      "research_completed_at": "2026-11-22T08:57:13.866552+00:00",
+      "work_seconds": 185.396305,
+      "followup_work_seconds": 0,
+      "followup_timing_incomplete": false,
+      "censored": true,
+      "coverage": {
+        "own_source_found": false,
+        "own_guide_verified": false,
+        "materials_verified": false,
+        "blank_original_acquired": false,
+        "generation_ready": false
+      },
+      "root_review": {
+        "own_scope_verified": false,
+        "materials_roles_verified": false,
+        "hashes_verified": true,
+        "generation_acceptance_verified": false,
+        "published_readback_verified": false
+      },
+      "timing_incomplete": false,
+      "templates": [],
+      "sources": []
+    }
+  ]
+}
