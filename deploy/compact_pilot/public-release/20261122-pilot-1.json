@@ -1,0 +1,20 @@
+{
+  "assets": {
+    "DEPLOYMENT-MANIFEST.json": {
+      "bytes": 40679,
+      "sha256": "49c30a44dddad2ec1b75ee6966539e0c6e6e006a2eb11fd0c052cb4a70326d1a"
+    },
+    "labourlawyer-web-pilot-v1.2.0-preview.6-pilot.1.tar.gz": {
+      "bytes": 1134000,
+      "sha256": "db2658bf70f927849fcb18651cd8ac329af01d7a8c5dedbc6e60936d9ca2f284"
+    }
+  },
+  "ci_run_id": 45032675045,
+  "distribution": "Local desktop browser pilot",
+  "document_bindings": 36,
+  "pilot_localities": 18,
+  "release_tag": "v1.2.0-preview.6-pilot.1",
+  "repository": "DerpZhenjun/LabourLawyer",
+  "schema_version": 1,
+  "source_commit": "7e0dabe8bdce51369099bb11c47c7968a7982b2a"
+}
