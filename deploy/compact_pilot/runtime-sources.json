@@ -1,0 +1,606 @@
+{
+  "schema": 1,
+  "source_base_commit": "fef5abfe14826123b1b6045c05dd6566bdcb1ab7",
+  "files": [
+    {
+      "bytes": 5074,
+      "path": "backend/WenShu/Zhejiang/LAdocx.py",
+      "sha256": "a4aa3ad75f1107bcb77d138f035b6738afbdcd98eaed4893de1a874b682e2a1c"
+    },
+    {
+      "bytes": 32621,
+      "path": "backend/WenShu/exact_template_fill.py",
+      "sha256": "699c11e0ef3bec8812c2e8f25c6ac96757f848cf48a9b9dc3a5816095eea4eef"
+    },
+    {
+      "bytes": 876,
+      "path": "backend/WenShu/generic_template_fill.py",
+      "sha256": "be655f1874cacf4d99b9bd0d2327b5982b4c60fb4f6d10bfe6aa1d5296574b95"
+    },
+    {
+      "bytes": 7189,
+      "path": "backend/WenShu/template_fill.py",
+      "sha256": "a9eb0b1eef7619f56fb8ca2eb5648a239721806509f0757377913afb24a2f14e"
+    },
+    {
+      "bytes": 1681,
+      "path": "backend/api_contracts.py",
+      "sha256": "a97d130cb8fd45246ab46f023f81f49d1421fc425ebc888df5ef3f201ba35478"
+    },
+    {
+      "bytes": 5002,
+      "path": "backend/deployment_app.py",
+      "sha256": "cfc0ab34cbc48ca519bc00a776b978ff15e8041d39de50f3a34636a04c25f04c"
+    },
+    {
+      "bytes": 1661,
+      "path": "backend/document_forms.py",
+      "sha256": "1b7d0120048afec13e56be9a21b494f4ee2e785c9fd402b1b3fce56ac6ce4ae1"
+    },
+    {
+      "bytes": 2618,
+      "path": "backend/generated_document_storage.py",
+      "sha256": "34dbca9a9c2352cf725fd52d0f936dc77436fd0e21ccd35cce30379a8f42cb44"
+    },
+    {
+      "bytes": 8770,
+      "path": "backend/hq_phase_proof.py",
+      "sha256": "f9dfef9bedad75885d5c9396da59f0010b4bb8f1e2d5b0cc08e9f32090bb7dfb"
+    },
+    {
+      "bytes": 6434,
+      "path": "backend/hq_word_mechanics.py",
+      "sha256": "48106b8c4e8885648142b5a263020357a5e2703d0e8ea0f629aba7d758d4e36e"
+    },
+    {
+      "bytes": 8880,
+      "path": "backend/hq_word_semantic_cache.py",
+      "sha256": "ad6b5ffa71f1b5d56d605415aebd2391a3f175b5428f31145a89579356113d84"
+    },
+    {
+      "bytes": 5041,
+      "path": "backend/province_documents.py",
+      "sha256": "4228ac1b50d2629eee3c0c33827f1e73f5427d32bf8e86c63ec5e317569d9ca3"
+    },
+    {
+      "bytes": 44987,
+      "path": "backend/regional_adapters.py",
+      "sha256": "b3bf861c73b8af4d1a78f1e703623e0ab6beed1cd5c2b3610d1764bef56ab2c3"
+    },
+    {
+      "bytes": 13908,
+      "path": "backend/regional_anhui_oct29.py",
+      "sha256": "4d8ad0a0e20f7cadd9181c4acd16de10476f4986c8bce8836e4bb0c55523f7fc"
+    },
+    {
+      "bytes": 4158,
+      "path": "backend/regional_ankang_municipal_guides.py",
+      "sha256": "f3fd90b49fa4ce04b6dc9456b577321e989e982569350ee7b81966e64f923384"
+    },
+    {
+      "bytes": 9620,
+      "path": "backend/regional_baihe_application.py",
+      "sha256": "766c299d03052fbb087c726e8e7e7f88fc3e06c20546ec51b2b15d1eefce7028"
+    },
+    {
+      "bytes": 27471,
+      "path": "backend/regional_baoji_county_application.py",
+      "sha256": "c96d0961a957cda1b22d9eb0782533692f526d30408523926dd475aa50071f2d"
+    },
+    {
+      "bytes": 5945,
+      "path": "backend/regional_baoji_evidence.py",
+      "sha256": "7039176b851af9c87ddb4b5cc5204d878490ef20b3dd2a82bea5fb44e5ef4ee8"
+    },
+    {
+      "bytes": 67192,
+      "path": "backend/regional_blank_documents.py",
+      "sha256": "a3f6e776692b1ac2f859d2ce04167eb02600358fdb0626b7c258da87401f5726"
+    },
+    {
+      "bytes": 11272,
+      "path": "backend/regional_danfeng_application.py",
+      "sha256": "b0e21e3dea1df006d297d9f7d47486be8c005ea1ef31a97534e83aa4176f3794"
+    },
+    {
+      "bytes": 13523,
+      "path": "backend/regional_directory.py",
+      "sha256": "3fdb46dd9a4519e07551810ad392a325cc651cf61d084baac6e42ef2f9767aff"
+    },
+    {
+      "bytes": 6463,
+      "path": "backend/regional_documents.py",
+      "sha256": "b81b8ec704a4348ce51fd4cf80c1a0c77e1bc304216a3a742bce31cb5a348983"
+    },
+    {
+      "bytes": 3141,
+      "path": "backend/regional_evidence_session.py",
+      "sha256": "79d5cbacab7cd7f4acbbf36859b5b3f25f0945346114fe329a0782bf6b8aa92e"
+    },
+    {
+      "bytes": 823,
+      "path": "backend/regional_fixed_layout.py",
+      "sha256": "6aa51ebcbb60c5a3766831e3b6add42ce11aefec2d17375d1855c26c65c68561"
+    },
+    {
+      "bytes": 8231,
+      "path": "backend/regional_foping_reference.py",
+      "sha256": "82dc5e5b182375d62d70ba929b2673fcbfcaa6f9ecb329d621434cc69034cafb"
+    },
+    {
+      "bytes": 29014,
+      "path": "backend/regional_form_contracts.py",
+      "sha256": "74784a079023ef2e002a682e200040b36c2bd5864534acc54f33e056856aec29"
+    },
+    {
+      "bytes": 26961,
+      "path": "backend/regional_fujian_huian_quangang_nov1.py",
+      "sha256": "19101517c5a9138b76806e76b1ce08683d40b4a976bb1e3a25aaa1b6263e6d66"
+    },
+    {
+      "bytes": 2389,
+      "path": "backend/regional_fujian_o_request.py",
+      "sha256": "0f8aa5dc0e36fe9fe434b3696f8d99aa100c29dc75604571f2a4d1983eb23737"
+    },
+    {
+      "bytes": 29053,
+      "path": "backend/regional_fujian_oct31h.py",
+      "sha256": "df0b2af47a6c780133196a1451045be93a113c9ee2947db539276b74baa1ab63"
+    },
+    {
+      "bytes": 31848,
+      "path": "backend/regional_fujian_oct31i.py",
+      "sha256": "0df72037801fdcb759c3d9ab20a553ea21d205b82cb6ca2b3b33520b1aaef1b5"
+    },
+    {
+      "bytes": 43250,
+      "path": "backend/regional_fujian_oct31j.py",
+      "sha256": "fa8b61de2298a0dd978d889d060d6ffbe01bbf28f5747588f8ac01b5c6fe236e"
+    },
+    {
+      "bytes": 32885,
+      "path": "backend/regional_fujian_oct31k.py",
+      "sha256": "fd451372536e65fc122b87f0dde8cc04da2d51ed812c5687faf4e1e419a278bc"
+    },
+    {
+      "bytes": 33088,
+      "path": "backend/regional_fujian_oct31l.py",
+      "sha256": "335e1fbcedfb79491d551a3f04697760f90c3918222e261239c685fdfeb19100"
+    },
+    {
+      "bytes": 33562,
+      "path": "backend/regional_fujian_oct31m.py",
+      "sha256": "f0f509f6552f8cb25efd8bd50bf36d9bd87deb5b4ae36cab918acd7c47aea535"
+    },
+    {
+      "bytes": 37773,
+      "path": "backend/regional_fujian_oct31n.py",
+      "sha256": "9f785a9ce114f2cac2bff8c4fb68ffc733e74174154f7f4be49d0fcc23c6f187"
+    },
+    {
+      "bytes": 49919,
+      "path": "backend/regional_fujian_oct31o.py",
+      "sha256": "5d25d9978f99be7336b4bc466c4709299deebca51849fb997d7ddeffdab7aab7"
+    },
+    {
+      "bytes": 48508,
+      "path": "backend/regional_fujian_oct31p.py",
+      "sha256": "dff1530b28af871a6b79666a2efa3df0f12731f6b3379defb3ebd4e6d503c75f"
+    },
+    {
+      "bytes": 2380,
+      "path": "backend/regional_fujian_p_request.py",
+      "sha256": "cf94480a03805cd174560308d107e5ce93bc75ccf41d36ac572795d710c0f8b8"
+    },
+    {
+      "bytes": 10463,
+      "path": "backend/regional_guides.py",
+      "sha256": "8c989973319951735e57ec30827c50b7e39275562f9fb7e2d5125c71010ba426"
+    },
+    {
+      "bytes": 2685,
+      "path": "backend/regional_guyuan_municipal_committee.py",
+      "sha256": "d3251dc93a9628852a9e84e30f3f410c4c9188d21c18c6f5b93684953db02121"
+    },
+    {
+      "bytes": 10323,
+      "path": "backend/regional_hanbin_application.py",
+      "sha256": "aeca554c3ca4249acc090a9d9707c5a9a7c2021fcd00068feeb86ed8fc3d62d1"
+    },
+    {
+      "bytes": 11323,
+      "path": "backend/regional_hanyin_application.py",
+      "sha256": "3551479e021af83d5a5b1765e06f0137f9b82873880225231fcc350ae1bc0250"
+    },
+    {
+      "bytes": 5718,
+      "path": "backend/regional_hanzhong_guides.py",
+      "sha256": "13ae67013e099729c7dcbaeab18d67989d4db65912036fb751fc49523a2b286f"
+    },
+    {
+      "bytes": 5668,
+      "path": "backend/regional_heyang_application.py",
+      "sha256": "720fa3107af91cd30fb25d42589cc1f1912b3b0c8663b05086244178d5e1f35f"
+    },
+    {
+      "bytes": 3474,
+      "path": "backend/regional_heyang_guides.py",
+      "sha256": "954f4034d8a27189802464d05f9e07350a9af369d095414710fc61a389899aba"
+    },
+    {
+      "bytes": 5695,
+      "path": "backend/regional_huayin_application.py",
+      "sha256": "223b2572c54bdb4554c2675632ccd89b78eda2424aaf9b18f9be6fede0b95bf7"
+    },
+    {
+      "bytes": 3416,
+      "path": "backend/regional_huayin_guides.py",
+      "sha256": "713533d7848b934065323abda670895fb02aa5ba9e8ac48c8590f3d978be9c16"
+    },
+    {
+      "bytes": 1308,
+      "path": "backend/regional_huian_quangang_request.py",
+      "sha256": "d42787c0ce50080d9a5b50fd0fe4e3ef441b7fdcddc5ed1782d28fbd4f07a244"
+    },
+    {
+      "bytes": 20069,
+      "path": "backend/regional_hunan_oct29b.py",
+      "sha256": "f7e2c6054a4029797654ca0c729935b63ed3afb98b17f3dc27df67bc07489214"
+    },
+    {
+      "bytes": 14588,
+      "path": "backend/regional_hunan_oct29c.py",
+      "sha256": "d5efef6b0d68984474207d1758e23082fabbfeb807502b68326af39a796b1e3a"
+    },
+    {
+      "bytes": 2295,
+      "path": "backend/regional_jiangsu_candidates.py",
+      "sha256": "4baef33f521a377ab7b7eb5c7524419878fffece63683ce069a8ef67e8c2c701"
+    },
+    {
+      "bytes": 6383,
+      "path": "backend/regional_jiangsu_oct29.py",
+      "sha256": "e0943d13b4c29a4f0848dcb419564a776f7d90492b7dbc8892bf43e2e8296896"
+    },
+    {
+      "bytes": 10697,
+      "path": "backend/regional_jiangsu_oct29c.py",
+      "sha256": "fbc79c681b2b6ce52307e39b9eb6cdf7adce31612f07ecb536410c117e852198"
+    },
+    {
+      "bytes": 15709,
+      "path": "backend/regional_jiangsu_oct29d.py",
+      "sha256": "bf127b4cbf94feaf5dfacdf74b5f165e1747e4ad7f73c968eea5ada5acc6ac53"
+    },
+    {
+      "bytes": 24236,
+      "path": "backend/regional_jiangsu_oct29e.py",
+      "sha256": "6630f22da726ef8a9c95326e0e14db7ef17c8b3e0db48a0b8bf42818c54cc30f"
+    },
+    {
+      "bytes": 18653,
+      "path": "backend/regional_jiangsu_oct30f.py",
+      "sha256": "71d7318e244b1c6e679d8446231f9fb5444f63daaad67784a5bdf82ff912d203"
+    },
+    {
+      "bytes": 24687,
+      "path": "backend/regional_jiangsu_oct31g.py",
+      "sha256": "64f9de554e09cab02d1c5965734c762d7bf51e720b42a110e3d1c9b80e1ffd98"
+    },
+    {
+      "bytes": 2876,
+      "path": "backend/regional_jiangsu_request.py",
+      "sha256": "688f18eb9871295360914f4dba67a1a03ab7a0c52f013a759eb6d13dff1200d5"
+    },
+    {
+      "bytes": 8385,
+      "path": "backend/regional_jiangxi.py",
+      "sha256": "d2c4c703fa294ba37a0969e74d5de7c14b3d97ac4d16d67b852579fe4aa951e8"
+    },
+    {
+      "bytes": 6597,
+      "path": "backend/regional_liuba_evidence.py",
+      "sha256": "43c312a942ed32754b38b68c23184513eae61956b26f391a9c28ac5be5a0f586"
+    },
+    {
+      "bytes": 10231,
+      "path": "backend/regional_lueyang_application.py",
+      "sha256": "767267e38a76852af356a24f2182b2775e7dae73e9bd485e8f14243190d32d84"
+    },
+    {
+      "bytes": 10341,
+      "path": "backend/regional_luohu_collective.py",
+      "sha256": "fe760bcf1e45636d1a86bdcd1c74b35823c6f4dde61e8649af45d006f50baa3f"
+    },
+    {
+      "bytes": 5546,
+      "path": "backend/regional_mizhi_application.py",
+      "sha256": "8cf718eba2f84bc120b90ad1304a4c4f24a6ed571a9659ff8778addb78468bad"
+    },
+    {
+      "bytes": 3770,
+      "path": "backend/regional_mizhi_guides.py",
+      "sha256": "698e964408ceafdf3f757b0e254ba328338855f8cbb265ced2ed8ae6870227a0"
+    },
+    {
+      "bytes": 3203,
+      "path": "backend/regional_oct29_bindings.py",
+      "sha256": "4ae2c12a8ded91356ee6eca34112944e32987218c7d9544a2a5b70e0ace0166c"
+    },
+    {
+      "bytes": 1382,
+      "path": "backend/regional_official_attachment_links.py",
+      "sha256": "1804b8b8e02b214b1240aa6e7dd0a6923493e553c165c66c10a8de5146cfcfcb"
+    },
+    {
+      "bytes": 2387,
+      "path": "backend/regional_pingtan_request.py",
+      "sha256": "f718309ce78974ea3e90b6516b9bd75e99328512d226e4bfb3aa8c1784b91278"
+    },
+    {
+      "bytes": 17717,
+      "path": "backend/regional_public_provenance.py",
+      "sha256": "55cde248a2d2c8139228361513cb6827ed790fa96a9981740a11c327ca71e126"
+    },
+    {
+      "bytes": 2378,
+      "path": "backend/regional_putian_n_request.py",
+      "sha256": "a93d012b0a9006d79f72845a10127cfc265fb750e4c7b8b4b239327ddb2aa477"
+    },
+    {
+      "bytes": 2376,
+      "path": "backend/regional_putian_request.py",
+      "sha256": "77a4e658e5c03d026832e6c0870f106b25bb5e567f7d9ddb77e16d42cd09b155"
+    },
+    {
+      "bytes": 5674,
+      "path": "backend/regional_qingjian_application.py",
+      "sha256": "537b30dd144e169c3e23e67a5e3295199e1fabf70fbdce31fedfee83222ffdd1"
+    },
+    {
+      "bytes": 3567,
+      "path": "backend/regional_qingjian_guides.py",
+      "sha256": "4251fc005985e7d86afb2533fd0e71baf0b926682926cc713c76028ee9e1dae4"
+    },
+    {
+      "bytes": 55338,
+      "path": "backend/regional_quanzhou_next4.py",
+      "sha256": "3ca5cdea6e1eaf1684f1aaed544270742edbade25618490d1cba821706e45855"
+    },
+    {
+      "bytes": 7416,
+      "path": "backend/regional_rollout.py",
+      "sha256": "95515fb31257a1074c29e9c03206990d827ba3d60720e5e814624a92aef08f40"
+    },
+    {
+      "bytes": 7900,
+      "path": "backend/regional_rongjiang_documents.py",
+      "sha256": "5e3e3c804bc8706aef31ff29d6a32889fa02699bded500b810801558e5d6be6a"
+    },
+    {
+      "bytes": 7275,
+      "path": "backend/regional_shangcheng_documents.py",
+      "sha256": "c09e7c9fe5df9ae97ed2a803ecf7299c19572d4006885f1927db3bd983b25f3f"
+    },
+    {
+      "bytes": 3595,
+      "path": "backend/regional_shangluo_municipal_guides.py",
+      "sha256": "497c21c806b339cf060c676082379a970b36804763a0a23273e1cc8fb3184253"
+    },
+    {
+      "bytes": 10775,
+      "path": "backend/regional_shangnan_application.py",
+      "sha256": "d34f0bdc00bd2065f7a326e8d1f6dfb155d586f00231db4eaec8ccbef4cf0cba"
+    },
+    {
+      "bytes": 10095,
+      "path": "backend/regional_shanyang_application.py",
+      "sha256": "70dbd65cb4d53e0d6f0cfc46783d7c43caee93a3a052b1d8615377d90f51d59f"
+    },
+    {
+      "bytes": 5923,
+      "path": "backend/regional_shenmu_evidence.py",
+      "sha256": "399fefb7a638157235b58becacdd2268225114476bf2a2251811a0ada601418f"
+    },
+    {
+      "bytes": 3576,
+      "path": "backend/regional_shenmu_guides.py",
+      "sha256": "cc1fb48db9e8748e93723a110aea72059d833631e38b883c5b411d698b3597f3"
+    },
+    {
+      "bytes": 4346,
+      "path": "backend/regional_tongchuan_guides.py",
+      "sha256": "b95f2e61bfb029b426dcff4a19f288d81bc3b0fe5c2a38f829f474288ea4e4a6"
+    },
+    {
+      "bytes": 9277,
+      "path": "backend/regional_tongguan_application.py",
+      "sha256": "03003595dfe02a78b6961eda531e99d453a77d5d2cc09c2c0792a9b3d7f09bc5"
+    },
+    {
+      "bytes": 4884,
+      "path": "backend/regional_validation.py",
+      "sha256": "db7f3f17217bee080c67c314ee15034cfb83f5018b6493a68ce68c2df0fb699c"
+    },
+    {
+      "bytes": 3812,
+      "path": "backend/regional_weinan_municipal_guides.py",
+      "sha256": "f6cacdf0a5854fa8963b0a862ada9eede732d9fc34a976729806f19ee3961270"
+    },
+    {
+      "bytes": 1627,
+      "path": "backend/regional_workbook_xml.py",
+      "sha256": "98aa9181fba276f5f4c328cac09df6e1975459924a5194790a6be0fba05f44b5"
+    },
+    {
+      "bytes": 2825,
+      "path": "backend/regional_wuzhong_municipal_institute.py",
+      "sha256": "0638466ec6f7f45d3428ded835bf01403c5a64339fdcd167d6f7e71bb534c505"
+    },
+    {
+      "bytes": 6014,
+      "path": "backend/regional_xian_high_tech_application.py",
+      "sha256": "5acd5888f53af1087031e2703c1d4830c14370c72c742b1257afb7b23274a646"
+    },
+    {
+      "bytes": 1527,
+      "path": "backend/regional_xian_high_tech_attachments.py",
+      "sha256": "6a386c69a41f071d30b4e4e5cb64776c70af66bcca5ba901e8cd67d57293e51b"
+    },
+    {
+      "bytes": 5627,
+      "path": "backend/regional_xian_high_tech_evidence.py",
+      "sha256": "d4f8ecce1615d050ab1b46b14ba012be79aa6c97f657c55bab2c2eeb27c64a20"
+    },
+    {
+      "bytes": 2913,
+      "path": "backend/regional_xian_high_tech_guide.py",
+      "sha256": "fd6bef8545049554ba0ccf1c195a71a70699535fdca5b97ce700985d4ebe2261"
+    },
+    {
+      "bytes": 6154,
+      "path": "backend/regional_xiangan_evidence.py",
+      "sha256": "2f0dbe4f5fc9b995804de0ee17f082c98c3892f1cebdf060bb881664e4693fa6"
+    },
+    {
+      "bytes": 3697,
+      "path": "backend/regional_xianyang_district_guides.py",
+      "sha256": "eaf6d884e8620fb5fb6def4587e2a7aec6b238521a25b0da9ce3fab53076f3b2"
+    },
+    {
+      "bytes": 575,
+      "path": "backend/regional_xianyang_municipal_attachments.py",
+      "sha256": "224b55725e980313070ceca27fa6cec2510c753f6a6219f019dd6d6ba5b7d9ab"
+    },
+    {
+      "bytes": 4014,
+      "path": "backend/regional_xianyang_municipal_guides.py",
+      "sha256": "d5e478141f41b9ddee5d4add049d202e1373c6dffb78ccb1e9040be48aa6f356"
+    },
+    {
+      "bytes": 1002,
+      "path": "backend/regional_xianyang_sanyuan_attachments.py",
+      "sha256": "2d0fd8f3aba183ecc649b9b305226e0b58fb8ab653e06b82a10040b1ffa4edfa"
+    },
+    {
+      "bytes": 689,
+      "path": "backend/regional_xianyang_sanyuan_guides.py",
+      "sha256": "108e750305bd8fd3e9c36a7e60847a2eb3d4809b4a7cfb9d1f929a3ee39e65ed"
+    },
+    {
+      "bytes": 8624,
+      "path": "backend/regional_xixiang_reference.py",
+      "sha256": "4e50be74b4b2876e0503afd58fb0e4697500a91be5e92543601e6459156b6b1b"
+    },
+    {
+      "bytes": 5306,
+      "path": "backend/regional_yangling_guides.py",
+      "sha256": "b5701b59015e35a80c4dbc9479c1f7633e76859e28b91bd7414c11fd872a49e2"
+    },
+    {
+      "bytes": 596,
+      "path": "backend/regional_yangling_municipal_attachments.py",
+      "sha256": "9c0a77b9c6df2acc3bf4661535ab5132cf06e3479540abe80519add8697bc0d5"
+    },
+    {
+      "bytes": 11162,
+      "path": "backend/regional_yangquan_jinzhou.py",
+      "sha256": "01db22be5d84168ce4d038a2ba4ff07641e8a12c06768ac04bcc08e5a95d1a94"
+    },
+    {
+      "bytes": 2591,
+      "path": "backend/regional_yinchuan_municipal_notice.py",
+      "sha256": "2ae0cc46bf9639e8705963e8bcd55c71805a669c6880ca29d5955e5dff598913"
+    },
+    {
+      "bytes": 3940,
+      "path": "backend/regional_yulin_municipal_guides.py",
+      "sha256": "5fe7effd0b1fb8216a074572adbe8c8e43980c3e357eb6219e6cf1a018a71e6b"
+    },
+    {
+      "bytes": 19073,
+      "path": "backend/regional_zhejiang.py",
+      "sha256": "2ab97941bf9974a9267f67c514f6074032a51e9ba718b0ab4a86bce37448edd9"
+    },
+    {
+      "bytes": 16635,
+      "path": "backend/regional_zhejiang_chunan_oct30.py",
+      "sha256": "4fbe17024e17848bfa0b076146773b9a11da6a317abcd871f976c5eacc58dfe2"
+    },
+    {
+      "bytes": 8871,
+      "path": "backend/regional_zhejiang_documents.py",
+      "sha256": "4dce86d139bf9941fdf11dbb90c56e49fc07a03e8d01aafb077a0d9616f76cad"
+    },
+    {
+      "bytes": 16189,
+      "path": "backend/regional_zhejiang_more.py",
+      "sha256": "e7dbb97ec27ecde99fb9658206dc0b1c080ba5f7340a34277639e0dfd36de690"
+    },
+    {
+      "bytes": 15355,
+      "path": "backend/regional_zhejiang_oct29.py",
+      "sha256": "d7da9fae1c7f3d444d0e6df79398d858e1ab23899bed3207d8637f04c08fe240"
+    },
+    {
+      "bytes": 26505,
+      "path": "backend/regional_zhejiang_oct29d.py",
+      "sha256": "0b882685586f0ead41f13a2f57d807072d9071a3b16ddda16ffb1fdc99b9d16e"
+    },
+    {
+      "bytes": 17808,
+      "path": "backend/regional_zhejiang_oct29e.py",
+      "sha256": "dc69ab8377ab81b0b35960fa4334cc0e4f1e284190868aede49d0485eaf5b726"
+    },
+    {
+      "bytes": 1852,
+      "path": "backend/regional_zhejiang_request.py",
+      "sha256": "5c890e1fd5f9ebe6fa4ac565be7c91c8e7084e80e059306cfd285f2f8353c69d"
+    },
+    {
+      "bytes": 7476,
+      "path": "backend/regional_zhongshan_municipal.py",
+      "sha256": "dc2514315b1cc339f19ff8173e401ee52215117aba6bd28b3bcb2c76c6c22884"
+    },
+    {
+      "bytes": 2931,
+      "path": "backend/regional_zhongwei_municipal_institute.py",
+      "sha256": "abedfa0d9a1ea51c2067c00582bbf7df20283a8d57e1a5a9b845b300a923bf6e"
+    },
+    {
+      "bytes": 7802,
+      "path": "backend/regional_ziyang_employer_reference.py",
+      "sha256": "888fb8719eecd07601e088b7b0e7b3a348378f073bc87dcac6717b839c14a8e2"
+    },
+    {
+      "bytes": 12240,
+      "path": "backend/regional_ziyang_worker_reference.py",
+      "sha256": "d749a8dcc594dade1107787d7f181a1cfb8f3bb1e708342d3bb22a268cbad8e2"
+    },
+    {
+      "bytes": 8660,
+      "path": "backend/routes/province_documents.py",
+      "sha256": "68c973b5242a6b4139d256b3d9a2efacc41273e77136dcb6efd2694de02dd889"
+    },
+    {
+      "bytes": 64393,
+      "path": "backend/routes/regional_guides.py",
+      "sha256": "2e226572330217377420ab1e26fd0e97d880bd769b818f901f3923c1833eea9b"
+    },
+    {
+      "bytes": 26081,
+      "path": "config/document_forms.json",
+      "sha256": "b9f69fdac3ccaf6e5cb0d9398fd39e987c3694159ebc2f8f478b8c2c2c7b6632"
+    },
+    {
+      "bytes": 26554,
+      "path": "config/province_official_template_catalog.json",
+      "sha256": "34eb3f51e8e79e01283540676afcd8318d962427b59be0e6bb6c3a83274f45fc"
+    },
+    {
+      "bytes": 24167,
+      "path": "deploy/requirements.txt",
+      "sha256": "a9240fb664d7fe0a43c603c9cc9367ea198c6d6c461477042a12ae6c51ebaec9"
+    }
+  ]
+}

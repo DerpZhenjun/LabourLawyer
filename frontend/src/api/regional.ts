@@ -5,6 +5,21 @@ import type {FormContract,FormContext,Region,RegionalGuide} from '../../../packa
 
 export type FormContractQuery = Region & Pick<FormContext,'source_id'|'version'|'template_id'|'kind'> & Partial<Pick<FormContext,'adapter'|'region_code'|'output_format'>>
 export interface AreaOption { city?:string; district?:string; [key:string]:unknown }
+export interface OfficialBlankLayout { layoutSha256:string; officialSha256:string }
+
+const sha256Pattern=/^[a-f0-9]{64}$/
+
+function matchesGenerationOrigin(context:FormContext,headers:Headers,layout?:OfficialBlankLayout):boolean {
+  const origin=headers.get('X-Document-Origin')
+  if(context.mode==='reference_adaptation')return origin==='official-sample-adaptation-not-blank'&&!layout
+  if(!layout)return origin==='official-blank-filled'||origin==='official-blank-converted-filled'
+  return origin==='official-blank-metadata-sanitized-filled'&&
+    headers.get('X-Document-Layout-Origin')==='official-blank-metadata-sanitized-layout'&&
+    sha256Pattern.test(layout.layoutSha256)&&sha256Pattern.test(layout.officialSha256)&&
+    layout.layoutSha256!==layout.officialSha256&&headers.get('X-Template-SHA256')===layout.layoutSha256&&
+    headers.get('X-Official-Original-SHA256')===layout.officialSha256
+}
+
 export function createRegionalClient(baseURL:string,fetcher:typeof fetch=fetch) {
   const base=baseURL.replace(/\/$/,'')+'/api/regional-guides'
   const request=(url:string,signal?:AbortSignal,init:RequestInit={})=>fetcher(url,{...init,...(signal?{signal}:{})})
@@ -28,13 +43,13 @@ export function createRegionalClient(baseURL:string,fetcher:typeof fetch=fetch) 
       const query=regionQuery(context)+`&source_id=${encodeURIComponent(context.source_id)}&version=${context.version}&template_id=${encodeURIComponent(context.template_id)}&kind=${context.kind}&xlsx=true`
       return assertFormContract(await read(await request(`${base}/form-contract?${query}`,signal)),context)
     },
-    async generate(contract:FormContract,form:unknown,signal?:AbortSignal):Promise<Blob> {
+    async generate(contract:FormContract,form:unknown,signal?:AbortSignal,layout?:OfficialBlankLayout):Promise<Blob> {
       const payload=buildGenerateRequest(contract,form)
       const response=await request(`${base}/generate${contract.context.output_format==='xlsx'?'?xlsx=true':''}`,signal,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
       if(!response.ok){await read(response);throw new Error('无法生成，请核对内容。')}
-      const context=contract.context,origin=response.headers.get('X-Document-Origin')
+      const context=contract.context
       if(response.headers.get('X-Form-Contract-ID')!==contract.contract_id || response.headers.get('X-Guide-Source-ID')!==context.source_id || response.headers.get('X-Guide-Version')!==String(context.version) ||
-          !(context.mode==='reference_adaptation'?origin==='official-sample-adaptation-not-blank':['official-blank-filled','official-blank-converted-filled'].includes(origin ?? '')))
+          !matchesGenerationOrigin(context,response.headers,layout))
         throw new Error('下载文件的地区或来源版本不匹配，请重新选择地区核对。')
       const blob=await response.blob()
       if(context.output_format==='xlsx'){

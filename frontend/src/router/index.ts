@@ -52,6 +52,11 @@ const routes:RouteRecordRaw[] = [
 
 const router=createRouter({history:createWebHistory(import.meta.env.BASE_URL),routes,scrollBehavior(to){return to.hash?{el:to.hash,behavior:'smooth'}:{top:0}}})
 router.beforeEach(async to => {
+  if (import.meta.env?.VITE_LABOURLAWYER_PILOT === '1'
+      && !/^\/(?:province\/(?:jiangsu|fujian|zhejiang)|local-documents\/(?:jiangsu|fujian|zhejiang)\/(?:application|evidence))\/?$/.test(to.path)) {
+    window.location.replace('/pilot-scope.html')
+    return false
+  }
   const servesLocalGuide = to.name === 'province-guide' || to.path.startsWith('/local-documents/')
   if (servesLocalGuide && to.params.slug === 'shaanxi' && to.query.city === '咸阳市' && to.query.district === '乾县') {
     return { path: to.path, query: { ...to.query, district: '乾　县' }, hash: to.hash, replace: true }

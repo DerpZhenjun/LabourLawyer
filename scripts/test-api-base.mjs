@@ -17,12 +17,16 @@ const evaluate=(source,modules,env={VITE_API_BASE_URL:'http://127.0.0.1:8000'})=
  return module.exports
 }
 const token='S'.repeat(43)
-const httpFor=api=>evaluate(read('frontend/src/api/http.ts'),{
+const httpFor=(api,pilot=false)=>evaluate(read('frontend/src/api/http.ts'),{
  '../../../packages/client-contracts/src/index.ts':shared,
  '../../../packages/regional-contracts/src/index.ts':wire,
  './authSession.ts':{authSession:{get:()=>({access_token:token})}},
  './connection.ts':{savedConnection:()=>api?{api,digital:''}:null},
-},api?{VITE_API_BASE_URL:'http://127.0.0.1:8000'}:{VITE_API_BASE_URL:'/'})
+},pilot?{VITE_API_BASE_URL:'https://other-service.example',VITE_LABOURLAWYER_PILOT:'1'}:api?{VITE_API_BASE_URL:'http://127.0.0.1:8000'}:{VITE_API_BASE_URL:'/'})
+const pilot=httpFor('https://old-remote-connection.example',true)
+assert.equal(pilot.API_BASE,'','Pilot must not reuse an old remote API address')
+assert.equal(Object.keys(pilot.authorizationHeaders()).length,0,'Pilot should not send a stored bearer token')
+assert.equal(pilot.apiURL('/api/regional-guides/lookup'),'http://127.0.0.1:45678/api/regional-guides/lookup')
 const sameOrigin=httpFor('')
 assert.equal(sameOrigin.API_BASE,'')
 assert.equal(sameOrigin.apiURL('/health'),'http://127.0.0.1:45678/health','Desktop same-origin API configuration must resolve through its own proxy')

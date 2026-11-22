@@ -19,7 +19,8 @@
   </div>
 
   <div v-else class="public-site">
-    <PublicHeader />
+    <PublicHeader v-if="!pilotBuild" />
+    <header v-else class="public-footer"><a href="/pilot-scope.html">返回三省试点地区清单</a></header>
     <RouterView :key="route.path+':'+(publicEditorRoute?publicEditorIdentity:'public')" />
     <footer class="public-footer">
       <div><div class="footer-brand"><BrandMark :size="32" /><div><strong>LabourLawyer</strong><small>劳动仲裁文书助手</small></div></div><p>帮助普通劳动者了解办理流程、准备申请文书和整理证据。</p></div>
@@ -28,9 +29,9 @@
     </footer>
   </div>
 
-  <button v-if="!assistantOpen && !digitalOpen" ref="assistantButton" class="assistant-fab" :style="assistantDock.style.value" :aria-hidden="assistantDock.hidden.value || undefined" @click="assistantOpen=true" aria-label="打开 AI 法律顾问"><BrandMark variant="assistant" :size="30" /><span>AI 法律顾问</span></button>
-  <QA v-if="assistantOpen" :key="currentUser?.id??'anonymous'" :open="assistantOpen" @close="assistantOpen=false" @open-digital-human="openDigitalLawyer" />
-  <DigitalLawyer v-if="digitalOpen" :key="currentUser?.id??'anonymous'" @close="digitalOpen=false" />
+  <button v-if="!pilotBuild && !assistantOpen && !digitalOpen" ref="assistantButton" class="assistant-fab" :style="assistantDock.style.value" :aria-hidden="assistantDock.hidden.value || undefined" @click="assistantOpen=true" aria-label="打开 AI 法律顾问"><BrandMark variant="assistant" :size="30" /><span>AI 法律顾问</span></button>
+  <QA v-if="!pilotBuild && assistantOpen" :key="currentUser?.id??'anonymous'" :open="assistantOpen" @close="assistantOpen=false" @open-digital-human="openDigitalLawyer" />
+  <DigitalLawyer v-if="!pilotBuild && digitalOpen" :key="currentUser?.id??'anonymous'" @close="digitalOpen=false" />
 </template>
 
 <script setup lang="ts">
@@ -44,6 +45,7 @@ import {publicEditorIdentity} from '@/api/publicDraftScope'
 import PublicHeader from '@/components/PublicHeader.vue'
 const QA = defineAsyncComponent(() => import('@/components/QA.vue'))
 
+const pilotBuild=import.meta.env?.VITE_LABOURLAWYER_PILOT==='1'
 const route=useRoute();const router=useRouter();const sidebarOpen=ref(false);const assistantOpen=ref(false);const digitalOpen=ref(false)
 const assistantButton=ref<HTMLElement|null>(null)
 const assistantDock=useAssistantDock(assistantButton)

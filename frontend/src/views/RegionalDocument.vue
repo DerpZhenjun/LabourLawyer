@@ -15,11 +15,12 @@
     <div v-else-if="contractError" class="region-notice danger" role="alert"><p>{{ contractError }}</p><button type="button" class="ll-button secondary" @click="reload">重试加载本区表单</button></div>
     <p v-else-if="!contract" class="region-notice danger" role="alert">当前地区表单尚未完成核对，请返回指南确认来源后重试。</p>
     <form v-else @submit.prevent="requestConfirmation">
+      <p v-if="pilotBuild" class="region-notice" role="note">本试点已验收劳动者申请、单一被申请人的情形。<template v-if="contract.fields.some(field=>field.key==='agentName')">代理人姓名栏用于录入原表字段。请向办理机构核对代理资格、授权手续和相应材料。</template></p>
       <p v-if="tongguanBodyOnly || xianHighTechBodyOnly" class="region-notice" role="note">{{ signInstruction }}</p>
       <p v-else-if="employerOnly" class="region-notice" role="note">此表适用于用人单位作为申请人。{{ signInstruction }}</p>
       <p v-else-if="workerManualRecipient" class="region-notice" role="note">此表适用于劳动者作为申请人。用人单位填写版待核验。{{ signInstruction }}</p>
       <div class="sample-note"><i class="fa-regular fa-lightbulb" aria-hidden="true"></i><span><strong>已填入虚构示例，请替换为你的真实信息</strong>姓名、地址、金额和证据仅用于演示。未确定的受理机构和日期可以留空，再向受理机关核对。</span></div>
-      <details class="reference-source-note"><summary>文书来源与使用说明：{{ isConverted?('依据当地官方 '+convertedFormat+' 的空白转换版'):isBlank?'当地官方空白表格':'当地官方参考样表，非空白模板' }}</summary><p>{{ sourceDescription }}生成内容属于辅助填写，不保证受理。{{ signInstruction }}请核对后自行保存并提交。</p></details>
+      <details class="reference-source-note"><summary>文书来源与使用说明：{{ isMetadataSanitized?'依据当地官方原件制作的空白填写版':isConverted?('依据当地官方 '+convertedFormat+' 的空白转换版'):isBlank?'当地官方空白表格':'当地官方参考样表，非空白模板' }}</summary><p>{{ sourceDescription }}生成内容属于辅助填写，不保证受理。{{ signInstruction }}请核对后自行保存并提交。</p></details>
       <fieldset class="regional-controls" :disabled="generating">
         <FeidongApplicationFields v-if="isFeidong" :key="draftKey" v-model="draft" />
         <HunanApplicationFields v-else-if="isHunan" :key="draftKey" v-model="draft" />
@@ -57,6 +58,7 @@ import '@/regional-guide.css'
 import '@/document-forms.css'
 
 const props=defineProps<{embedded?:boolean;selectedRegion?:Region;selectedGuide?:RegionalGuide|null;documentKind?:DocumentKind}>()
+const pilotBuild=import.meta.env?.VITE_LABOURLAWYER_PILOT==='1'
 const route=useRoute(),region=computed<Region>(()=>props.selectedRegion||({province:String(route.params.slug),city:String(route.query.city||''),district:String(route.query.district||''),...(route.query.case_scope==='collective'?{case_scope:'collective' as const}:{})}))
 const kind=computed<DocumentKind|null>(()=>{const value=props.documentKind||route.params.kind;return value==='application'||value==='evidence'?value:null}),title=computed(()=>kind.value==='evidence'?'证据清单':'仲裁申请书')
 const back=computed(()=>({path:`/province/${region.value.province}`,query:{city:region.value.city,district:region.value.district,case_scope:region.value.case_scope}}))
@@ -86,7 +88,13 @@ const specialization=(contract:FormContract)=>{
   if(kind==='application'&&adapter===FEIDONG_ADAPTER_KEY)return'feidong'
   return'generic'
 }
-const formState=useRegionalForm(context,{client:regionalClient,identity,ownerIdentity:publicEditorIdentity,download:downloadDocument,
+const documentClient={...regionalClient,generate:(contract:FormContract,form:unknown,signal?:AbortSignal)=>{
+  const current=template.value
+  if(current?.generation_origin!=='official-blank-metadata-sanitized-filled')return regionalClient.generate(contract,form,signal)
+  if(typeof current.sha256!=='string'||typeof current.official_sha256!=='string')throw new Error('空白填写版来源摘要缺失，请重新核对当地指南。')
+  return regionalClient.generate(contract,form,signal,{layoutSha256:current.sha256,officialSha256:current.official_sha256})
+}}
+const formState=useRegionalForm(context,{client:documentClient,identity,ownerIdentity:publicEditorIdentity,download:downloadDocument,
   example:contract=>{
     const type=specialization(contract),kind=contract.context.kind
     return type==='jiangsu'?createJiangsuOwnExample(kind):type==='zhejiang'?createZhejiangOwnExample(kind):type==='hunan'?createHunanApplicationExample():type==='feidong'?createFeidongApplicationExample():createExampleForm(contract)
@@ -122,7 +130,7 @@ const isConverted=computed(()=>isHunan.value||template.value?.file_origin==='off
 const convertedFormat=computed(()=>template.value?.original_format==='WPS'?'WPS':'DOC')
 const isMetadataSanitized=computed(()=>template.value?.file_origin==='official-blank-metadata-sanitized-layout')
 const isWorkbook=computed(()=>contract.value?.context.output_format==='xlsx')
-const sourceDescription=computed(()=>contract.value?.context.adapter==='shaanxi_xian_high_tech_evidence_xlsx_v1'?'按西安高新区官方证据目录填写 12 个空白行。':isWorkbook.value?'按留坝县官方证据清单生成 XLSX。表格有 9 行，页数填写正整数，签署栏留空。':isMetadataSanitized.value?'将依据本市官方空白表格的填写版生成。原件可从当地指南的官方附件链接下载。':isConverted.value?`${region.value.case_scope?'仅用于本区集体案。':''}将依据本区官方 ${convertedFormat.value} 空白表的平台转换副本填写。下载结果为 DOCX。`:isBlank.value?`将根据${contract.value?.context.district||''}官网提供的空白表格辅助填写。`:`将根据${contract.value?.context.district||''}官方参考样表辅助填写。它不是官方空白模板。`)
+const sourceDescription=computed(()=>contract.value?.context.adapter==='shaanxi_xian_high_tech_evidence_xlsx_v1'?'按西安高新区官方证据目录填写 12 个空白行。':isWorkbook.value?'按留坝县官方证据清单生成 XLSX。表格有 9 行，页数填写正整数，签署栏留空。':isMetadataSanitized.value?'将依据所选地区官方空白表格的填写版生成。原件可从当地指南的官方附件链接下载。':isConverted.value?`${region.value.case_scope?'仅用于本区集体案。':''}将依据本区官方 ${convertedFormat.value} 空白表的平台转换副本填写。下载结果为 DOCX。`:isBlank.value?`将根据${contract.value?.context.district||''}官网提供的空白表格辅助填写。`:`将根据${contract.value?.context.district||''}官方参考样表辅助填写。它不是官方空白模板。`)
 const dialog=ref<HTMLElement|null>(null),dialogId=`regional-confirm-${useId()}`
 useDialogFocus(()=>confirmOpen.value,dialog,cancelConfirmation)
 </script>

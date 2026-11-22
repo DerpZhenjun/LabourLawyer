@@ -20,7 +20,7 @@
       </p>
       <a href="#regional-documents" class="ll-button secondary">查看当地文书核验情况</a>
     </div>
-    <div v-else-if="!guide?.source_id && (!legacyAvailable || hasSelectedPlace)" class="region-panel workspace-unavailable"><h3>该地区暂未开放这类文书生成</h3><p>尚未核验可填写的模板，不会套用其他地区的文书。已有历史文书可在单独的适用范围页面查看。</p><RouterLink :to="`/province/${region.province}/templates`" class="ll-button secondary">查看已有文书的适用范围</RouterLink></div>
+    <div v-else-if="!guide?.source_id && (pilotBuild || !legacyAvailable || hasSelectedPlace)" class="region-panel workspace-unavailable"><h3>{{ pilotBuild && !region.district ? '请选择试点区县' : '该地区暂未开放这类文书生成' }}</h3><p v-if="pilotBuild">{{ region.district ? '请核对所选地区，或返回试点范围选择已开放的地区。' : '选定城市和试点区县后，即可查看该地区开放的文书。' }}</p><template v-else><p>尚未核验可填写的模板，不会套用其他地区的文书。已有历史文书可在单独的适用范围页面查看。</p><RouterLink :to="`/province/${region.province}/templates`" class="ll-button secondary">查看已有文书的适用范围</RouterLink></template></div>
     <div v-else-if="!guide?.source_id" class="workspace-scope" role="note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i><p>当前文书来源：{{ province?.officialName }}。适用范围：{{ province?.scope || '请核对来源' }}。<strong>不代表所选区县的模板已经核验</strong>；提交前请向当地受理机构确认。<a :href="province?.officialUrl" target="_blank" rel="noopener noreferrer">查看来源 ↗</a></p></div>
     <KeepAlive :max="6"><component v-if="editor" :is="editor" :key="editorKey" v-bind="editorProps" /></KeepAlive>
   </section>
@@ -32,6 +32,7 @@ import {hasVerifiedOfficialBlankLink} from '@/data/regionalGuidePresentation'
 import type {DocumentKind,Region,RegionalGuide} from '../../../packages/regional-contracts/src/index'
 interface WorkspaceProvince {officialName?:string;scope?:string;officialUrl?:string;hasApplication?:boolean;hasEvidence?:boolean}
 const props=withDefaults(defineProps<{region:Region;province?:WorkspaceProvince|null|undefined;guide?:RegionalGuide|null|undefined;loading?:boolean;error?:string}>(),{loading:false,error:''})
+const pilotBuild=import.meta.env.VITE_LABOURLAWYER_PILOT==='1'
 const Application=defineAsyncComponent(()=>import('@/views/Zhejiang/LA.vue'))
 const Evidence=defineAsyncComponent(()=>import('@/views/Zhejiang/EL.vue'))
 const Regional=defineAsyncComponent(()=>import('@/views/RegionalDocument.vue'))
@@ -42,7 +43,7 @@ const legacyAvailable=computed(()=>kind.value==='application'?props.province?.ha
 const editor=computed(()=>{
   if(props.loading||props.error)return null
   if(props.guide?.source_id)return localTemplate.value?Regional:null
-  if(hasSelectedPlace.value)return null
+  if(pilotBuild||hasSelectedPlace.value)return null
   return legacyAvailable.value?(kind.value==='application'?Application:Evidence):null
 })
 const editorKey=computed(()=>`${props.guide?.source_id?`${props.guide.source_id}:${props.guide.version}:${props.region.case_scope??''}`:`province:${props.region.province}`}:${kind.value}`)

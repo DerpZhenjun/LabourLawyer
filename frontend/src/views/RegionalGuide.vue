@@ -5,7 +5,7 @@
     <section class="region-panel selector-panel" aria-labelledby="region-select-title">
       <h2 id="region-select-title">在哪里办理？</h2>
       <div class="region-selectors">
-        <label>省份<select aria-label="办理省份" :value="region.province" @change="changeProvince(eventValue($event))"><option v-for="p in provinces" :key="p.slug" :value="p.slug">{{ p.name }}</option></select></label>
+        <label>省份<select aria-label="办理省份" :value="region.province" @change="changeProvince(eventValue($event))"><option v-for="p in selectableProvinces" :key="p.slug" :value="p.slug">{{ p.name }}</option></select></label>
         <label>城市<input aria-label="办理城市" list="known-cities" placeholder="输入或选择城市" :value="region.city" @input="changePlace('city',eventValue($event))"></label>
         <label>区县<input aria-label="办理区县" list="known-districts" placeholder="输入或选择区县" :value="region.district" @input="changePlace('district',eventValue($event))"></label>
       </div>
@@ -14,7 +14,7 @@
       <p class="region-small" role="status" v-if="directoryLoading">正在读取官方地区目录…</p>
       <p class="region-small" role="status" v-else-if="directoryError">{{ directoryError }}</p>
       <details v-if="region.city && districtChoices.length && !(region.province==='sichuan' && region.city==='成都市')" class="region-directory">
-        <summary>查看本市全部区县与功能区 · {{ districtChoices.length }} 个地区</summary>
+        <summary>{{ pilotBuild?'查看本市试点区县':'查看本市全部区县与功能区' }} · {{ districtChoices.length }} 个地区</summary>
         <label>选择本市区县或功能区<select aria-label="选择本市区县或功能区" :value="region.district" @change="changePlace('district',eventValue($event))"><option value="" disabled>选择准备办理的地区</option><option v-for="a in districtChoices" :key="a.district" :value="a.district">{{ a.district }} · {{ a.can_generate?'可填写生成':a.case_scopes?.includes('collective')?'集体案可填写':a.source_id?'已收录指南':'待核验' }}</option></select></label>
         <p class="region-small">目录收录不代表文书已支持。“待核验”不会套用其他地区的资料；你也可以在上方直接输入地区名称。</p>
       </details>
@@ -33,8 +33,8 @@
     <p v-if="loading" class="region-panel" role="status">正在读取这个地区的指南…</p>
     <div v-else-if="error" class="region-notice danger" role="alert"><p>{{ error }}</p><button class="ll-button secondary" @click="reload">重新读取</button></div>
     <section v-else-if="!guide?.source_id" class="region-panel empty-guide" data-guide-state="unverified">
-      <i class="fa-regular fa-compass" aria-hidden="true"></i><h2>{{ region.city && region.district ? '该地区办事指南尚未核验' : '请选择城市和区县' }}</h2><p>不会用其他地区的材料和办理要求代替。你仍可以打开官网查询，或查看已有文书的具体适用范围。</p>
-      <div class="region-actions"><a v-if="!region.city && !region.district && province?.officialUrl" :href="province.officialUrl" target="_blank" rel="noopener noreferrer" class="ll-button secondary">打开已收录的官方来源 ↗</a><RouterLink :to="`/province/${region.province}/templates`" class="ll-button secondary">已有文书及适用范围</RouterLink></div>
+      <i class="fa-regular fa-compass" aria-hidden="true"></i><h2>{{ region.city && region.district ? '该地区办事指南尚未核验' : '请选择城市和区县' }}</h2><p>{{ pilotBuild ? '试点按所选地区显示办事指南和材料要求。' : '不会用其他地区的材料和办理要求代替。你仍可以打开官网查询，或查看已有文书的具体适用范围。' }}</p>
+      <div class="region-actions"><a v-if="!region.city && !region.district && province?.officialUrl" :href="province.officialUrl" target="_blank" rel="noopener noreferrer" class="ll-button secondary">打开已收录的官方来源 ↗</a><RouterLink v-if="!pilotBuild" :to="`/province/${region.province}/templates`" class="ll-button secondary">已有文书及适用范围</RouterLink></div>
     </section>
     <div v-else :data-source-id="guide.source_id" :data-region-code="guide.region_code" class="verified-guide">
       <section class="region-panel guide-overview" id="regional-overview">
@@ -106,6 +106,8 @@ import {useRegionalGuide,templateURL} from '@/composables/useRegionalGuide'
 import DocumentWorkspace from '@/components/DocumentWorkspace.vue'
 import {useRegionDirectory} from '@/composables/useRegionDirectory'
 import '@/regional-guide.css'
+const pilotBuild=import.meta.env?.VITE_LABOURLAWYER_PILOT==='1'
+const selectableProvinces=pilotBuild?provinces.filter(p=>['jiangsu','fujian','zhejiang'].includes(p.slug)):provinces
 const route=useRoute(),router=useRouter(),inventory=ref<DirectoryArea[]>([]),coverage=ref<DirectoryArea[]>([])
 const region=computed<Region>(()=>({province:String(route.params.slug||''),city:String(route.query.city||''),district:String(route.query.district||''),...(route.query.case_scope==='collective'?{case_scope:'collective' as const}:{})}))
 const province=computed(()=>findProvince(region.value.province))

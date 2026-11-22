@@ -76,6 +76,10 @@ jobs:
         run: node scripts/client-pipeline.mjs build --targets web,mini
       - name: Run isolated backend regressions
         run: python scripts/ci-backend.py
+      - name: Check compact pilot proof and generated-document origin
+        run: |
+          PYTHONPATH=backend:deploy/compact_pilot python -m unittest discover -s deploy/compact_pilot/tests -p 'test_*.py'
+          node --experimental-strip-types scripts/test-pilot-generated-origin.mjs
       - name: Run exact guarded collector crash and restart fixtures
         run: python scripts/ci-collector-crash.py
       - name: Ensure checks did not regenerate committed files
