@@ -1,0 +1,54 @@
+[
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\pilot-50-final\\RESULT.json",
+    "sha256": "53e467614692ffcf2cef99aebb4cad71aecf641228727216a0ce0990b38a493b"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\full-acceptance-r2\\RESULT.json",
+    "sha256": "8ed2a071dbcf6e1506bd7240f7d1840f7fac8aeb074449ed75f2c2d0c95ae3ba"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\full-acceptance-r2\\ROOT-VISUAL-APPROVAL.json",
+    "sha256": "a3444f057f140f2bc94e826965405db5c5ca883d12191f301460739a0279dee7"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\full-acceptance-r2\\RUNTIME-MANIFEST.json",
+    "sha256": "25805890e98c2fcac393888de7c2704b670ce13277f1d71e6b91adb5bc52272d"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\browser-r2\\RESULT.json",
+    "sha256": "cb1e70c8be1bd355860387dd11cf33ee89b99c76d6d0a81db891c163d182d526"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\SOURCE-REUSE-OUTPUT-PARITY.json",
+    "sha256": "539f30965e3a7fbb1921ab505317f6e8007e782d21161c6384476be44de5cf8f"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\FINAL-RELATED-REGRESSION.log",
+    "sha256": "740a57cc10690d68211147a7891fe5a3506be95b87d04a338e7c9ffee77acf82"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\REQUEST-SCOPE-ROOT-RETRY.log",
+    "sha256": "8c1c3f33f3753495ba56e525d08b76e911b1a84ecb17421d4eb36e04115030fd"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\PRODUCTION-READBACK.json",
+    "sha256": "f06f036c0a30b8803ce2f38966216f978ada3ee78eb053bb682ad514fc6cf2b1"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\source-refresh-50\\SUMMARY.json",
+    "sha256": "ddd275bbe003b6f0db86bdf6b9b08c1d51ecfdbc0cf6815194ae88a69ffaf8e5"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\source-refresh-50\\CONTENT-SIGNALS.json",
+    "sha256": "fa917ac8f7e67210e467789735ac473398e543f7b87d10d4cf05e10d9530df67"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\FINAL-NEW-TESTS.log",
+    "sha256": "d62e4457addf427b9f769d14deb8e4e20e145c7600bdc3f549a51c90f1aac61d"
+  },
+  {
+    "path": "D:\\pl-qzdy-stage-nov08\\.runtime\\template-reuse-20261122\\NEW-TESTS-GUARDED-CI.log",
+    "sha256": "72862571ec58903db053bebca1b447e3fa41aaea372b6bd100c238491d8bd3f6"
+  }
+]

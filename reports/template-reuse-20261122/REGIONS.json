@@ -1,0 +1,993 @@
+[
+  {
+    "region_code": "340122",
+    "province": "anhui",
+    "city": "合肥市",
+    "district": "肥东县",
+    "source_url": "https://hf.ahzwfw.gov.cn/bog-bsdt/static/workProcess/components/applicationMaterial.html?ssqdCode=94e006563cb441c1a2827939cafe265f",
+    "source_id": "6a6e5a998809bb0009176648",
+    "state": "PASS",
+    "template_kind_bindings": 1,
+    "documents": 3,
+    "original_sha256": [
+      "d06dfdd7f7c0dd0210c8cc7ba4836cf06312558681bd781f0d4fba683ea18373"
+    ],
+    "durations_seconds": {
+      "baseline": 0.6235894000001281,
+      "cold": 0.6007974000003742,
+      "warm": 0.67548429999988
+    }
+  },
+  {
+    "region_code": "350102",
+    "province": "fujian",
+    "city": "福州市",
+    "district": "鼓楼区",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=76D5D6C31E91AC25E948E44CF0D90043&infoType=1",
+    "source_id": "3e2246aa2a534d2b37f6c6c5",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 1.3150692999997773,
+      "cold": 1.4948678999999174,
+      "warm": 1.3792520999995759
+    }
+  },
+  {
+    "region_code": "430103",
+    "province": "hunan",
+    "city": "长沙市",
+    "district": "天心区",
+    "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=8d0f29c6783f4fa6b6fe2011ff14bf2e",
+    "source_id": "77b8c6dd323c643b5025e13b",
+    "state": "PASS",
+    "template_kind_bindings": 1,
+    "documents": 3,
+    "original_sha256": [
+      "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97"
+    ],
+    "durations_seconds": {
+      "baseline": 0.8596378000002005,
+      "cold": 1.1915994999999384,
+      "warm": 1.0603076000006695
+    }
+  },
+  {
+    "region_code": "320205",
+    "province": "jiangsu",
+    "city": "无锡市",
+    "district": "锡山区",
+    "source_url": "https://www.jszwfw.gov.cn/jszwfw/bscx/itemlist/briefbszn.do?webId=35&iddept_yw_inf=11320205014038763X400201430200201&ql_kind=20&iddept_ql_inf=11320205014038763X4002014302002&type=2",
+    "source_id": "b1f8ab307b0a4f634081c052",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+    ],
+    "durations_seconds": {
+      "baseline": 0.39780309999969177,
+      "cold": 0.4270896999996694,
+      "warm": 0.4001642000002903
+    }
+  },
+  {
+    "region_code": "330109",
+    "province": "zhejiang",
+    "city": "杭州市",
+    "district": "萧山区",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=7c940b86-e89e-47e9-9785-292358209e9a",
+    "source_id": "57f5b9173d3a4f1e559eb4ab",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c"
+    ],
+    "durations_seconds": {
+      "baseline": 1.3622700999994777,
+      "cold": 1.7623813000000155,
+      "warm": 1.5722539999997025
+    }
+  },
+  {
+    "region_code": "350103",
+    "province": "fujian",
+    "city": "福州市",
+    "district": "台江区",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=442BD04C55F500427A01682CD4325DC4&infoType=1",
+    "source_id": "dcf9b71dee1c1cb61a3af637",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 2.1065662000000884,
+      "cold": 2.2080803999997443,
+      "warm": 2.143905600000835
+    }
+  },
+  {
+    "region_code": "430104",
+    "province": "hunan",
+    "city": "长沙市",
+    "district": "岳麓区",
+    "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=515bd3bf94164cf6b295560fb0ba18e3",
+    "source_id": "45e6cae69c980713f0bfb87a",
+    "state": "PASS",
+    "template_kind_bindings": 1,
+    "documents": 3,
+    "original_sha256": [
+      "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97"
+    ],
+    "durations_seconds": {
+      "baseline": 0.8885584999998173,
+      "cold": 1.093507900000077,
+      "warm": 1.080388899999889
+    }
+  },
+  {
+    "region_code": "320281",
+    "province": "jiangsu",
+    "city": "无锡市",
+    "district": "江阴市",
+    "source_url": "https://wxjy.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=39&iddept_ql_inf=1132028101404259474002014302002&ql_kind=20&iddept_yw_inf=113202810140425947400201430200201",
+    "source_id": "3d304f186983f34c4170a398",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+    ],
+    "durations_seconds": {
+      "baseline": 0.4430592999997316,
+      "cold": 0.43490339999971184,
+      "warm": 0.413311899999826
+    }
+  },
+  {
+    "region_code": "330111",
+    "province": "zhejiang",
+    "city": "杭州市",
+    "district": "富阳区",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=31ce6363-7379-40c0-8454-f0715785e193",
+    "source_id": "16f67bbbcf7b124948381309",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c"
+    ],
+    "durations_seconds": {
+      "baseline": 1.914199699999699,
+      "cold": 2.158314100000098,
+      "warm": 2.5191837000002124
+    }
+  },
+  {
+    "region_code": "350104",
+    "province": "fujian",
+    "city": "福州市",
+    "district": "仓山区",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=C305CB8E72A47E753A26686C733D3559&infoType=1",
+    "source_id": "9ab36db8d0ff985d9617a944",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 1.9399448000003758,
+      "cold": 2.05448559999968,
+      "warm": 2.1069876999999906
+    }
+  },
+  {
+    "region_code": "430111",
+    "province": "hunan",
+    "city": "长沙市",
+    "district": "雨花区",
+    "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=E499C22DC24A06E7E053671515AC91D4",
+    "source_id": "64a4b3a0d0bbb800bd3309fb",
+    "state": "PASS",
+    "template_kind_bindings": 1,
+    "documents": 3,
+    "original_sha256": [
+      "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97"
+    ],
+    "durations_seconds": {
+      "baseline": 0.942772800000057,
+      "cold": 1.0898510999995779,
+      "warm": 1.0781774999995832
+    }
+  },
+  {
+    "region_code": "320282",
+    "province": "jiangsu",
+    "city": "无锡市",
+    "district": "宜兴市",
+    "source_url": "https://wxyx.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=40&iddept_ql_inf=1132028201404667594002014302002&ql_kind=20&iddept_yw_inf=113202820140466759400201430200201",
+    "source_id": "509219666f61612819e02f36",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+    ],
+    "durations_seconds": {
+      "baseline": 0.3955089000000953,
+      "cold": 0.36864930000047025,
+      "warm": 0.39486440000018774
+    }
+  },
+  {
+    "region_code": "330112",
+    "province": "zhejiang",
+    "city": "杭州市",
+    "district": "临安区",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=41c59062-1bee-45d9-a9ff-645b91059195",
+    "source_id": "f556a6146755db0f84784861",
+    "state": "PASS",
+    "template_kind_bindings": 1,
+    "documents": 3,
+    "original_sha256": [
+      "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f"
+    ],
+    "durations_seconds": {
+      "baseline": 0.6874954999993861,
+      "cold": 0.7568692000004376,
+      "warm": 0.8608593999997538
+    }
+  },
+  {
+    "region_code": "350105",
+    "province": "fujian",
+    "city": "福州市",
+    "district": "马尾区",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=1719B4B2674EECE065CC22222ACD8A54&infoType=1",
+    "source_id": "0aa50441bacd05b2245fb5f1",
+    "state": "PASS",
+    "template_kind_bindings": 1,
+    "documents": 3,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    ],
+    "durations_seconds": {
+      "baseline": 1.2828435999999783,
+      "cold": 1.3690973000002487,
+      "warm": 1.4260864999996556
+    }
+  },
+  {
+    "region_code": "430112",
+    "province": "hunan",
+    "city": "长沙市",
+    "district": "望城区",
+    "source_url": "https://zwfw-new.hunan.gov.cn/hnywtb/service/guide.html?id=aYcZ8ELbR56Me61a8eSG0A&type=fr&rightsCode=002014302002&ywCode=01&approve_id=f3060b49b9ed4a50b1b300254417b324",
+    "source_id": "e63cea876d59bcd7b306427f",
+    "state": "PASS",
+    "template_kind_bindings": 1,
+    "documents": 3,
+    "original_sha256": [
+      "c6bbebf6eed3a11f1cbe5ee14cd6de9937f741c9fcda37165e06d0706e18ea97"
+    ],
+    "durations_seconds": {
+      "baseline": 0.9414801000002626,
+      "cold": 1.1743970999996236,
+      "warm": 1.1420473000007405
+    }
+  },
+  {
+    "region_code": "320411",
+    "province": "jiangsu",
+    "city": "常州市",
+    "district": "新北区",
+    "source_url": "https://czxb.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=43&iddept_ql_inf=1132040801411296X74002014302002&ql_kind=20&iddept_yw_inf=1132040801411296X7400201430200201",
+    "source_id": "0e3fbeb5a181d89ecffb084f",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+    ],
+    "durations_seconds": {
+      "baseline": 0.7479594000005818,
+      "cold": 0.8516829999998663,
+      "warm": 0.9239818999994895
+    }
+  },
+  {
+    "region_code": "330127",
+    "province": "zhejiang",
+    "city": "杭州市",
+    "district": "淳安县",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ee47fff8-558c-4a85-88e9-8a28d2bddbdc",
+    "source_id": "3fb683d473fe253a3a117d46",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c"
+    ],
+    "durations_seconds": {
+      "baseline": 3.4476872999994157,
+      "cold": 3.9349614000002475,
+      "warm": 4.550675999999839
+    }
+  },
+  {
+    "region_code": "350111",
+    "province": "fujian",
+    "city": "福州市",
+    "district": "晋安区",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=2AE4D76F39D556A71053EF3E78D83397&infoType=1",
+    "source_id": "09dcedf106cd2fd411a09546",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 2.4776363999999376,
+      "cold": 2.8549709999997503,
+      "warm": 3.1098940000001676
+    }
+  },
+  {
+    "region_code": "320412",
+    "province": "jiangsu",
+    "city": "常州市",
+    "district": "武进区",
+    "source_url": "https://czwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=44&iddept_ql_inf=1132048301413435XM4002014302002&ql_kind=20&iddept_yw_inf=1132048301413435XM400201430200201",
+    "source_id": "965b43f4ca2cf8c898b082af",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+    ],
+    "durations_seconds": {
+      "baseline": 0.8545339000002059,
+      "cold": 0.7872457000003124,
+      "warm": 0.9814756999994643
+    }
+  },
+  {
+    "region_code": "330182",
+    "province": "zhejiang",
+    "city": "杭州市",
+    "district": "建德市",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=ed48d6e4-e7ee-433d-97aa-b1352d1fb341",
+    "source_id": "f6487b8d118bdc3289baad17",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c"
+    ],
+    "durations_seconds": {
+      "baseline": 2.13699540000016,
+      "cold": 2.3162632000003214,
+      "warm": 2.1704821000002994
+    }
+  },
+  {
+    "region_code": "350121",
+    "province": "fujian",
+    "city": "福州市",
+    "district": "闽侯县",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=91F7E51AA93120174C111809DD6CB410&infoType=1",
+    "source_id": "70d8f78ba93e94e9afecf7f3",
+    "state": "PASS",
+    "template_kind_bindings": 1,
+    "documents": 3,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    ],
+    "durations_seconds": {
+      "baseline": 1.2565362000004825,
+      "cold": 1.4681676999998672,
+      "warm": 1.2208472000002075
+    }
+  },
+  {
+    "region_code": "320506",
+    "province": "jiangsu",
+    "city": "苏州市",
+    "district": "吴中区",
+    "source_url": "https://szwz.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=27&iddept_ql_inf=11320506552548402T4002014302002&ql_kind=20&iddept_yw_inf=11320506552548402T400201430200201",
+    "source_id": "185d26b7f845b0da48cd8475",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+    ],
+    "durations_seconds": {
+      "baseline": 0.942175899999711,
+      "cold": 1.0160777999999482,
+      "warm": 0.9639282999996794
+    }
+  },
+  {
+    "region_code": "330203",
+    "province": "zhejiang",
+    "city": "宁波市",
+    "district": "海曙区",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=a57febe6-cd30-4a53-8b4c-f24edaaf7864",
+    "source_id": "d06f0baa1875a403975389c3",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c"
+    ],
+    "durations_seconds": {
+      "baseline": 1.3912522999999055,
+      "cold": 1.5666093999998338,
+      "warm": 1.3461980000001859
+    }
+  },
+  {
+    "region_code": "350122",
+    "province": "fujian",
+    "city": "福州市",
+    "district": "连江县",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=0AB23B595298D2754FC2B46E318C32FB&infoType=1",
+    "source_id": "bca45154d74905b963af83c9",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 4.291431999999986,
+      "cold": 5.131593300000532,
+      "warm": 5.651160600000367
+    }
+  },
+  {
+    "region_code": "320507",
+    "province": "jiangsu",
+    "city": "苏州市",
+    "district": "相城区",
+    "source_url": "https://szxc.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=28&iddept_ql_inf=11320507555810103L4002014302002&ql_kind=20&iddept_yw_inf=11320507555810103L400201430200201",
+    "source_id": "e87b6309ce5f6b51ba0aa5fc",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+    ],
+    "durations_seconds": {
+      "baseline": 2.3035256000002846,
+      "cold": 2.494699199999559,
+      "warm": 2.9344578999998703
+    }
+  },
+  {
+    "region_code": "330212",
+    "province": "zhejiang",
+    "city": "宁波市",
+    "district": "鄞州区",
+    "source_url": "https://www.zjzwfw.gov.cn/zjservice-fe/#/workguide?localInnerCode=73f99740-5b23-424a-9ae8-be607cdceaeb",
+    "source_id": "dfa77c6a4ab07a39c9882710",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "0eab0f0a2ee98e8ca1e4d2fa5469fcb5738d0c0f24671345bebc8394099ae41f",
+      "4965bf3d2bf76404ab190d1e47d2fa250c8cb8bd93762949df94be38b2d4ca8c"
+    ],
+    "durations_seconds": {
+      "baseline": 1.6453400000000329,
+      "cold": 1.3605335000002015,
+      "warm": 1.494018899999901
+    }
+  },
+  {
+    "region_code": "350123",
+    "province": "fujian",
+    "city": "福州市",
+    "district": "罗源县",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=F9AC961E43C2B1BEF413BE5DBFA96CE2&infoType=1",
+    "source_id": "e6dccff3468cba55aa9b5c09",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 4.978862599999957,
+      "cold": 5.100380100000621,
+      "warm": 4.928611799999999
+    }
+  },
+  {
+    "region_code": "320508",
+    "province": "jiangsu",
+    "city": "苏州市",
+    "district": "姑苏区",
+    "source_url": "https://szgs.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=26&iddept_ql_inf=11320508014152478Y4002014302002&ql_kind=20&iddept_yw_inf=11320508014152478Y400201430200201",
+    "source_id": "9e10ccda19cf00e2f5ad536e",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+    ],
+    "durations_seconds": {
+      "baseline": 1.196299899999758,
+      "cold": 1.4126431999993656,
+      "warm": 1.2575239999996484
+    }
+  },
+  {
+    "region_code": "350124",
+    "province": "fujian",
+    "city": "福州市",
+    "district": "闽清县",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=8145FB57E5488D9301D1A44B780F0AE7&infoType=1",
+    "source_id": "4d74f378197bace2e63b05e9",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 5.472512500000448,
+      "cold": 6.414149499999439,
+      "warm": 5.196676199999274
+    }
+  },
+  {
+    "region_code": "320509",
+    "province": "jiangsu",
+    "city": "苏州市",
+    "district": "吴江区",
+    "source_url": "https://szwj.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=29&iddept_ql_inf=1132058401420395XF4002014302002&ql_kind=20&iddept_yw_inf=1132058401420395XF400201430200201",
+    "source_id": "17dae350af59963fb0c16dba",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+    ],
+    "durations_seconds": {
+      "baseline": 2.4243446000000404,
+      "cold": 2.593652999999904,
+      "warm": 2.1874166999996305
+    }
+  },
+  {
+    "region_code": "350125",
+    "province": "fujian",
+    "city": "福州市",
+    "district": "永泰县",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=836301B361845E6D866C29E099B63DC9&infoType=1",
+    "source_id": "3bfbebb0f7115a969c3d77be",
+    "state": "PASS",
+    "template_kind_bindings": 1,
+    "documents": 3,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365"
+    ],
+    "durations_seconds": {
+      "baseline": 2.7028019999997923,
+      "cold": 2.6224209000001792,
+      "warm": 2.322408799999721
+    }
+  },
+  {
+    "region_code": "320581",
+    "province": "jiangsu",
+    "city": "苏州市",
+    "district": "常熟市",
+    "source_url": "https://szcs.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=30&iddept_ql_inf=11320581014173412K4002014302002&ql_kind=20&iddept_yw_inf=11320581014173412K400201430200201",
+    "source_id": "9a24af792c956feb67bd37c6",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+    ],
+    "durations_seconds": {
+      "baseline": 26.14036550000037,
+      "cold": 25.431364199999734,
+      "warm": 26.516433699999652
+    }
+  },
+  {
+    "region_code": "350128",
+    "province": "fujian",
+    "city": "平潭综合实验区",
+    "district": "平潭综合实验区",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=DB9193FF4D772DB2CDBBA1BCA7369872&infoType=1",
+    "source_id": "511e7f64c9481b5a0b6ff4a1",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 2.01157879999937,
+      "cold": 1.7020642000006774,
+      "warm": 1.8003341000003275
+    }
+  },
+  {
+    "region_code": "320582",
+    "province": "jiangsu",
+    "city": "苏州市",
+    "district": "张家港市",
+    "source_url": "https://szzjg.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=31&iddept_ql_inf=11320582551232000Y4002014302002&ql_kind=20&iddept_yw_inf=11320582551232000Y400201430200201",
+    "source_id": "95e826085ed0fec9f410cc86",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+    ],
+    "durations_seconds": {
+      "baseline": 23.42477070000041,
+      "cold": 22.876510000000053,
+      "warm": 27.864883799999916
+    }
+  },
+  {
+    "region_code": "350181",
+    "province": "fujian",
+    "city": "福州市",
+    "district": "福清市",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=469958A9BED0E05129E545EFD2E2A759&infoType=1",
+    "source_id": "9af3a0528483a9bb4fb67de5",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 4.607399199999236,
+      "cold": 4.513649299999997,
+      "warm": 4.313349599999128
+    }
+  },
+  {
+    "region_code": "320583",
+    "province": "jiangsu",
+    "city": "苏州市",
+    "district": "昆山市",
+    "source_url": "https://szks.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?webId=32&iddept_ql_inf=1132058301418949XF4002014302002&ql_kind=20&iddept_yw_inf=1132058301418949XF400201430200201",
+    "source_id": "d39444ab7f4bcaea2ea91473",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+    ],
+    "durations_seconds": {
+      "baseline": 7.04698449999978,
+      "cold": 7.055631399999584,
+      "warm": 6.299356699999407
+    }
+  },
+  {
+    "region_code": "350182",
+    "province": "fujian",
+    "city": "福州市",
+    "district": "长乐区",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=CFA1069F9BE910A14774F6F86D48BB3C&infoType=1",
+    "source_id": "e0b2adc9b9b0b10bc0eb9332",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "511d213073af6e25b0f9f8ed2b914b7b31ee47bf6cef2fbb85a0422e3d6a4f56"
+    ],
+    "durations_seconds": {
+      "baseline": 5.607684800000243,
+      "cold": 4.883399600000303,
+      "warm": 4.183201900000313
+    }
+  },
+  {
+    "region_code": "320925",
+    "province": "jiangsu",
+    "city": "盐城市",
+    "district": "建湖县",
+    "source_url": "https://ycjh.jszwfw.gov.cn/jszwfw/publicservice/itemlist/showDetail.do?iddept_ql_inf=11320925014387568C4002014302002&iddept_yw_inf=11320925014387568C400201430200201&ql_kind=20&webId=99#floor13",
+    "source_id": "ef1eb897ebf880c6f2a316f5",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "99dfd60d844fa9a4ea3c37df64d447eda980849427a17e1afbba92e61b092dc3",
+      "c40d42c03b2881fa25144ba895132befbbd23c92b76469dc5a1bc7dd69eefe8c"
+    ],
+    "durations_seconds": {
+      "baseline": 0.4857718000002933,
+      "cold": 0.3919101999999839,
+      "warm": 0.37723029999961
+    }
+  },
+  {
+    "region_code": "350302",
+    "province": "fujian",
+    "city": "莆田市",
+    "district": "城厢区",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=FA08DD1B47657A342A4574961F7BAC35&infoType=1",
+    "source_id": "28a4418211ce36fedd8069f6",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 4.706202800000028,
+      "cold": 4.407757400000264,
+      "warm": 3.5496775999999954
+    }
+  },
+  {
+    "region_code": "350303",
+    "province": "fujian",
+    "city": "莆田市",
+    "district": "涵江区",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=B9DF60152E3BE1A2BA326311AD809DC3&infoType=1",
+    "source_id": "27f41dab3a9d19c7d144c8de",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 4.329887700000654,
+      "cold": 4.9256563999997525,
+      "warm": 4.334635400000479
+    }
+  },
+  {
+    "region_code": "350304",
+    "province": "fujian",
+    "city": "莆田市",
+    "district": "荔城区",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=BDE5EC9DAD4CFE0ADED039A84F96B29B&infoType=1",
+    "source_id": "c2f441391f073f71f55ce9de",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 4.3116957000002,
+      "cold": 4.588957000000846,
+      "warm": 4.4256348000008074
+    }
+  },
+  {
+    "region_code": "350305",
+    "province": "fujian",
+    "city": "莆田市",
+    "district": "秀屿区",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=EC90D061D8C4ECCCBF8F1E48EE8693E8&infoType=1",
+    "source_id": "758cc6043c5d57e5574a766e",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 4.055558000000019,
+      "cold": 4.684801100000186,
+      "warm": 4.289668599999459
+    }
+  },
+  {
+    "region_code": "350322",
+    "province": "fujian",
+    "city": "莆田市",
+    "district": "仙游县",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=D17248EFB5EF8E8BDCACDEEEC1B4DD62&infoType=1",
+    "source_id": "6918d8e34e1206673434fbc9",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 6.285683299999619,
+      "cold": 7.118471899999349,
+      "warm": 7.313352000000123
+    }
+  },
+  {
+    "region_code": "350502",
+    "province": "fujian",
+    "city": "泉州市",
+    "district": "鲤城区",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=F755D399CB53FB9466E78283AD8261BD&infoType=1",
+    "source_id": "c95aa7b9d6cf3798036de103",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 6.164158600000519,
+      "cold": 6.640220600000248,
+      "warm": 8.645371099999466
+    }
+  },
+  {
+    "region_code": "350503",
+    "province": "fujian",
+    "city": "泉州市",
+    "district": "丰泽区",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=AAB14D9CD5CB5150831332F702B33559&infoType=1",
+    "source_id": "89a6739d1a513a7c5a77717a",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 7.170099400000254,
+      "cold": 7.306036400000266,
+      "warm": 9.645206099999996
+    }
+  },
+  {
+    "region_code": "350504",
+    "province": "fujian",
+    "city": "泉州市",
+    "district": "洛江区",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?unid=2C9DC060006344D5C8F159A9869A60D5&infoType=1",
+    "source_id": "4a34ce0e167250f122410ffc",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 7.5045340000006036,
+      "cold": 7.780333300000166,
+      "warm": 10.69067029999951
+    }
+  },
+  {
+    "region_code": "350505",
+    "province": "fujian",
+    "city": "泉州市",
+    "district": "泉港区",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=746DE402C70F4CCCDFFDB52EA51A431A",
+    "source_id": "4f9f8144ec2ae19a7f2e70cf",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 4.70001990000037,
+      "cold": 5.512037700000292,
+      "warm": 6.377144999999473
+    }
+  },
+  {
+    "region_code": "350521",
+    "province": "fujian",
+    "city": "泉州市",
+    "district": "惠安县",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=A917E510341EA05C46948B616C3BE489",
+    "source_id": "5a2049b6dd7a240d496c29d7",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 4.603571800000282,
+      "cold": 5.426815099999658,
+      "warm": 5.796396699999605
+    }
+  },
+  {
+    "region_code": "350524",
+    "province": "fujian",
+    "city": "泉州市",
+    "district": "安溪县",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=2104A2B4A186E572580E9388426D4548",
+    "source_id": "ecd5bfaec46d03d4f6ae3860",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 1.5202511999996204,
+      "cold": 1.4031024000005345,
+      "warm": 1.2804090999998152
+    }
+  },
+  {
+    "region_code": "350525",
+    "province": "fujian",
+    "city": "泉州市",
+    "district": "永春县",
+    "source_url": "https://zwfw.fujian.gov.cn/person-todo/todo-fingerpost?infoType=1&unid=2EC12DD37CDBF2977963C381B3A509A8",
+    "source_id": "dce92327ed30b9ea92994e08",
+    "state": "PASS",
+    "template_kind_bindings": 2,
+    "documents": 6,
+    "original_sha256": [
+      "093b08f0c6aa6a33c535e3c0c196b74c496f86f23e65c09900fbdb2fc39d6365",
+      "d70eb6e31557c72029ab7b80c6d4f7783833e44c2cbf22e0cf9e1ef06abf4815"
+    ],
+    "durations_seconds": {
+      "baseline": 1.365137899999354,
+      "cold": 1.400570400000106,
+      "warm": 1.3717049999995652
+    }
+  }
+]

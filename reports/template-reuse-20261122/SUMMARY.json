@@ -1,0 +1,177 @@
+{
+  "state": "PASS_BOUNDED_PILOT",
+  "date": "2026-11-22",
+  "new_coverage_regions": 0,
+  "snapshot_guides": 235,
+  "snapshot_guide_status": {
+    "verified": 166,
+    "partial": 62,
+    "conflict": 7
+  },
+  "directory_nodes": 3974,
+  "template_inventory": {
+    "bindings": 1159,
+    "available_bindings": 1013,
+    "unique_originals": 39,
+    "unavailable_bindings": 146,
+    "unavailable_reasons": {
+      "Missing QA evidence path": 110,
+      "QA evidence is unavailable": 36
+    },
+    "eligible_blank_regions": 54,
+    "eligible_blank_bindings": 98,
+    "eligible_unique_originals": 9
+  },
+  "pilot": {
+    "state": "PASS",
+    "completed_at": "2026-11-22T07:21:29.642972+00:00",
+    "regions": 50,
+    "cohort": "EXISTING_OFFICIAL_ORIGINALS",
+    "new_coverage_regions": 0,
+    "includes_first_source_discovery": false,
+    "includes_visual_rendering": false,
+    "source_snapshot_sha256": "b8daff3ad6155a5e3a04c5377fe8f25338fe6eaa6bf48e08c10880fd7a0e947e",
+    "renderer_sha256": "1c5edd55d5de293e1b02c8be245c105d0bc56ad26ddf6dac14198ea845fd7fc4",
+    "provinces": {
+      "anhui": 1,
+      "fujian": 25,
+      "hunan": 4,
+      "jiangsu": 13,
+      "zhejiang": 7
+    },
+    "template_families": 9,
+    "invalid_bindings": 0,
+    "modes": [
+      {
+        "mode": "baseline",
+        "seconds": 180.61057450000044,
+        "regions": 50,
+        "passed": 50,
+        "failed": 0,
+        "documents": 273,
+        "reused_reviews": 0,
+        "review_seconds": 2.554270499997074,
+        "median_region_seconds": 2.059072499999729,
+        "p95_region_seconds": 7.170099400000254
+      },
+      {
+        "mode": "cold",
+        "seconds": 188.39221810000072,
+        "regions": 50,
+        "passed": 50,
+        "failed": 0,
+        "documents": 273,
+        "reused_reviews": 184,
+        "review_seconds": 2.699275900002249,
+        "median_region_seconds": 2.183197249999921,
+        "p95_region_seconds": 7.306036400000266
+      },
+      {
+        "mode": "warm",
+        "seconds": 198.82778190000045,
+        "regions": 50,
+        "passed": 50,
+        "failed": 0,
+        "documents": 273,
+        "reused_reviews": 270,
+        "review_seconds": 1.0141228999900704,
+        "median_region_seconds": 2.157193850000567,
+        "p95_region_seconds": 9.645206099999996
+      }
+    ]
+  },
+  "visual_acceptance": {
+    "state": "PASS",
+    "regions": 50,
+    "documents": 273,
+    "first_pass_reused": 184,
+    "second_pass_reused": 273,
+    "unique_visual_content": 59,
+    "used_visual_pages": 121,
+    "seconds": 40.05453440000019,
+    "approval_sha256": "a3444f057f140f2bc94e826965405db5c5ca883d12191f301460739a0279dee7",
+    "renderer_sha256": "a47a50287a96ff8e914af81447dc52aeb9cb5e7f68c8b4dbd09b3ae31774b4b2"
+  },
+  "browser": {
+    "state": "PASS",
+    "regions": 50,
+    "viewports": [
+      375,
+      768,
+      1440
+    ],
+    "downloads": 50,
+    "post_count": 50,
+    "page_errors": [],
+    "screenshots": false
+  },
+  "paired_before_after": {
+    "regions": 49,
+    "before_seconds": 1197.1095397000054,
+    "after_seconds": 175.71203080000032,
+    "observed_ratio": 6.81290594758753,
+    "randomized": false,
+    "scope": "Regional HTTP validation of existing sealed sources; includes filesystem and preexisting cache effects"
+  },
+  "output_parity": {
+    "paired_outputs": 267,
+    "all_member_bytes_equal": 267,
+    "differences": []
+  },
+  "final_artifacts_rehashed": 819,
+  "full_review_receipts_rehashed": 89,
+  "production_readback": {
+    "checked_at": "2026-11-22T07:26:03.861029+00:00",
+    "state": "READ_BACK",
+    "guides": 227,
+    "generatable": 44,
+    "changed_by_this_batch": false
+  },
+  "source_reachability": {
+    "regions": 50,
+    "seconds": 3.8326434000000518,
+    "states": {
+      "HTML_ACCESSIBLE_CONTENT_REQUIRES_UI_REVIEW": 50
+    },
+    "contains_new_official_filing_acceptance": false,
+    "purpose": "Current public source reachability only, full guide content remains independently scoped"
+  },
+  "source_content_signals": {
+    "regions": 50,
+    "states": {
+      "DYNAMIC_DETAIL_OR_MANUAL_REVIEW_REQUIRED": 37,
+      "PUBLIC_HTML_HAS_OWN_AUTHORITY_AND_MATERIAL_NAMES": 13
+    }
+  },
+  "estimates": {
+    "existing_ready_template_work_days": [
+      1,
+      2
+    ],
+    "nationwide_conditional_continuous_weeks": [
+      4,
+      8
+    ],
+    "assumptions": {
+      "remaining_regions_planning_only": 3700,
+      "own_source_minutes_per_region": [
+        5,
+        10
+      ],
+      "new_template_families": [
+        200,
+        400
+      ],
+      "hours_per_new_family": [
+        0.5,
+        1
+      ],
+      "qa_release_and_retries_hours": [
+        80,
+        160
+      ]
+    },
+    "nationwide_source_discovery_measured": false,
+    "includes_external_wait": false
+  }
+}
