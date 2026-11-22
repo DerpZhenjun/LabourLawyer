@@ -13,6 +13,30 @@ from package_candidate import (
 )
 
 
+def frontend_notices(frontend):
+    entries = json.loads((frontend / 'package-lock.json').read_bytes())['packages']
+    sections = ['Notices from installed frontend dependencies',
+                'The build may omit unused dependencies. The project code license is in LICENSE.']
+    for relative, entry in sorted(entries.items()):
+        if not relative.startswith('node_modules/') or entry.get('dev'):
+            continue
+        package = frontend / relative
+        if not package.is_dir():
+            if entry.get('optional'):
+                continue
+            raise FileNotFoundError('A locked frontend dependency is missing')
+        name = relative.rsplit('node_modules/', 1)[-1]
+        package_meta = json.loads((package / 'package.json').read_bytes())
+        if package_meta['name'] != name or package_meta['version'] != entry['version']:
+            raise ValueError('An installed dependency differs from the lock')
+        license_text = package_meta.get('license', entry.get('license', 'Unspecified'))
+        sections.append(f'{name} {entry["version"]} — {license_text}')
+        for path in sorted(package.iterdir()):
+            if path.is_file() and path.name.lower().startswith(('license', 'licence', 'notice', 'copying', 'ofl')):
+                sections.append(path.name + '\n' + path.read_text(encoding='utf-8-sig').strip())
+    return '\n\n'.join(sections) + '\n'
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source-revision', required=True)
@@ -61,6 +85,8 @@ def main():
                    cwd=frontend, env=env, check=True, timeout=90)
     subprocess.run([node, './node_modules/vite/bin/vite.js', 'build', '--configLoader', 'native', '--outDir', str(dist)],
                    cwd=frontend, env=env, check=True, timeout=90)
+    with (dist / 'third-party-notices.txt').open('x', encoding='utf-8', newline='\n') as notices:
+        notices.write(frontend_notices(frontend))
 
     artifacts = {path.relative_to(dist).as_posix(): {'bytes': path.stat().st_size, 'sha256': digest(path.read_bytes())}
                  for path in dist.rglob('*') if path.is_file()}

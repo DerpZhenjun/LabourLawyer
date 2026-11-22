@@ -15,6 +15,8 @@
 python deploy/compact_pilot/package_candidate.py --source-revision <完整提交哈希> --frontend <新目录>/dist --frontend-receipt <新目录>/FRONTEND-RECEIPT.json --frontend-receipt-sha256 <前端回执摘要> --pilot-data <试点数据> --pilot-data-sha256 <数据清单摘要> --output <新归档路径>
 ```
 
+归档包含项目软件许可 `LICENSE` 和前端依赖声明 `frontend/dist/third-party-notices.txt`。官方空白原件的提供单位通过对应地区的办事指南核对。
+
 ## 本机启动与验收
 
 从解压后的归档目录创建外部 Python 3.11 虚拟环境。下例 `python` 需替换为该环境的解释器。

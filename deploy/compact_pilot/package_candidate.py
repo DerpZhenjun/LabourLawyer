@@ -96,7 +96,8 @@ def runtime(source_revision):
     result['pilot/verify.py'] = exact_source(source_revision, 'deploy/verify.py')
     for name in PILOT_SOURCES:
         result['pilot/' + name] = exact_source(source_revision, 'deploy/compact_pilot/' + name)
-    result['README-PRIVATE-PILOT.md'] = exact_source(source_revision, 'deploy/compact_pilot/README.md')
+    result['README-PILOT.md'] = exact_source(source_revision, 'deploy/compact_pilot/README.md')
+    result['LICENSE'] = git_bytes(source_revision, 'LICENSE')
     return result, baseline
 
 
@@ -118,7 +119,7 @@ def frontend(files_root, manifest_path, manifest_pin, baseline, source_revision)
         if digest(exact_source(source_revision, relative)) != checksum:
             raise ValueError('Frontend source differs from the build receipt')
     files = receipt['artifacts']
-    if not {'index.html', 'pilot-scope.html', 'llms.txt'} <= files.keys():
+    if not {'index.html', 'pilot-scope.html', 'llms.txt', 'third-party-notices.txt'} <= files.keys():
         raise ValueError('Pilot frontend entry points missing')
     actual = {f.relative_to(files_root).as_posix() for f in files_root.rglob('*') if f.is_file()}
     if actual != files.keys():
