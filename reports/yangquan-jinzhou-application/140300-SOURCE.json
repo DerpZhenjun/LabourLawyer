@@ -1,0 +1,50 @@
+{
+  "province": "shanxi",
+  "province_name": "山西省",
+  "city": "阳泉市",
+  "authority": "阳泉市劳动人事争议仲裁委员会",
+  "guide_url": "https://zwfwpt.sxzwfw.gov.cn:10002/#/person/B366BEB6C15C4FE4B4187413B0E777D9",
+  "office": "阳泉市城区南大街60号阳泉市人力资源和社会保障局",
+  "rows": [
+    {
+      "name": "仲裁申请书",
+      "copies": "2份，纸质原件或复印件"
+    }
+  ],
+  "unresolved": "材料栏仅列申请书；身份证明、用人单位申请、授权委托及独立证据清单的本地口径待核。",
+  "source_format": "DOCX",
+  "original_name": "仲裁申请书.docx",
+  "original_sha256": "fd4dc738f352542644bdcfe4097f3ea5ac88e11db9a551e2abbcf8c3767e8997",
+  "source_capture": {
+    "sha256": "9fb07d1c9604826c58d264895cc472d6357b30e9f78d388382dbec19d595df7e",
+    "capture_type": "rendered_dom",
+    "collected_at": "2026-11-22T09:33:28.054151+00:00"
+  },
+  "other_sources": [
+    {
+      "url": "https://rsj.yq.gov.cn/jgzn/jsdw/202401/t20240110_1810872.html",
+      "captured_at": "2026-11-22T09:29:53.376462+00:00",
+      "status": 200,
+      "final_url": "https://rsj.yq.gov.cn/jgzn/jsdw/202401/t20240110_1810872.html",
+      "file": "yangquan-institution.html",
+      "sha256": "33c9f51cd97f4e70f3acc176a39dd9f57120568498faa229d2bce7f9d67d6343",
+      "size": 15286,
+      "seconds": 0.39351559999886376
+    },
+    {
+      "url": "https://rsj.yq.gov.cn/zlxz/",
+      "captured_at": "2026-11-22T09:29:53.378468+00:00",
+      "status": 200,
+      "final_url": "https://rsj.yq.gov.cn/zlxz/",
+      "file": "yangquan-downloads.html",
+      "sha256": "f4911672f47d05d7a0bc036d04a0c7f91553e821927051646b0e887c99c3a232",
+      "size": 15223,
+      "seconds": 0.4049828000006528
+    }
+  ],
+  "region_code": "140300",
+  "verified_at": "2026-11-22T09:33:28.054151+00:00",
+  "materials_complete": false,
+  "layout_sha256": "2edead881a05e98b2c11b138466dcc7b521dd0bb0ebf54d5949738d95bc1c3ad",
+  "layout_original_source_sha256": "fd4dc738f352542644bdcfe4097f3ea5ac88e11db9a551e2abbcf8c3767e8997"
+}

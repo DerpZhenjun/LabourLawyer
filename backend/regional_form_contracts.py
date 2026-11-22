@@ -27,6 +27,7 @@ from regional_fujian_oct31p import ADAPTER as FJP, production_schema_descriptor 
 from regional_fujian_huian_quangang_nov1 import ADAPTER as HQ, production_schema_descriptor as hq_schema
 from regional_quanzhou_next4 import ADAPTER as QZ, production_schema_descriptor as qz_schema
 from regional_xiangan_evidence import ADAPTER as XAE, schema_descriptor as xiangan_evidence_schema
+from regional_yangquan_jinzhou import ADAPTERS as YJ, schema_descriptor as yj_schema
 from regional_huayin_application import (
     ADAPTER as HUA, EXTRA_WIDE as HUAYIN_EXTRA_WIDE,
     layout_fields as huayin_layout, schema_descriptor as huayin_schema,
@@ -243,12 +244,13 @@ def build_form_contract(guide,template,kind,root=None):
     if len(originals)!=1 or originals[0]!=template or template.get('can_generate') is not True or kind not in template.get('document_types',[]):raise ValueError('本区没有已核验的可生成附件')
     if template.get('official_kind') not in {'blank','sample'}:raise ValueError('附件没有已核验填写类别')
     adapter=template.get('adapter')
-    if adapter not in SUPPORTED_ADAPTERS:raise ValueError('适配器尚无已核验字段契约')
+    if adapter not in SUPPORTED_ADAPTERS | YJ:raise ValueError('适配器尚无已核验字段契约')
     _own_original(guide,template,adapter,root)
     if checked_reference_adapter(guide,template,kind,root=root)!=adapter:raise ValueError('本区适配器身份不匹配')
     from routes.regional_guides import generation_request_model
     schema=generation_request_model(adapter,kind).model_json_schema()
-    own_schema=(hq_schema(guide['region_code'],kind) if adapter==HQ else
+    own_schema=(yj_schema(adapter,guide['source_version']) if adapter in YJ else
+                hq_schema(guide['region_code'],kind) if adapter==HQ else
                 qz_schema(guide['region_code'],kind) if adapter==QZ else
                 xiangan_evidence_schema(guide['source_version']) if adapter==XAE else
                 baoji_worker_schema(adapter,guide['source_version']) if adapter in BAOJI_WORKER_MODELS else

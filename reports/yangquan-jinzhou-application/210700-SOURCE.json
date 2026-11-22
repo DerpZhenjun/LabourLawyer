@@ -1,0 +1,84 @@
+{
+  "province": "liaoning",
+  "province_name": "辽宁省",
+  "city": "锦州市",
+  "authority": "锦州市劳动人事争议仲裁委员会",
+  "guide_url": "https://zwfw.jz.gov.cn/jeesaas/f/itemInfo/17bfd791-a222-4c33-8983-57ee706fc72e?ql=2",
+  "office": "辽宁省锦州市松山新区市府路72号二楼锦州市劳动人事争议仲裁院",
+  "consultation": "0416-5055712",
+  "rows": [
+    {
+      "name": "仲裁申请人身份证复印件",
+      "copies": "事项列表列纸质原件1份；详情列纸质原件1份、复印件2份，材料名称仍为身份证复印件，口径待窗口核对",
+      "source_url": "https://zwfw.jz.gov.cn/jeesaas/f/item/itemMaterialDetail/157550c2-4e1d-41ef-838a-686669a001c0"
+    },
+    {
+      "name": "仲裁申请书及副本",
+      "copies": "详情列纸质原件2份，同时引用按被申请人人数提交副本",
+      "source_url": "https://zwfw.jz.gov.cn/jeesaas/f/item/itemMaterialDetail/34f3b579-aeed-4938-8b41-d859e1fa1b59"
+    },
+    {
+      "name": "证据清单及证据材料",
+      "copies": "详情列纸质原件1份、复印件1份",
+      "source_url": "https://zwfw.jz.gov.cn/jeesaas/f/item/itemMaterialDetail/c811404e-2e25-4594-a815-0b4fce5b691d"
+    }
+  ],
+  "unresolved": "单位申请人和代理材料细项待核；证据清单详情两种下载均显示暂无，独立证据清单原件未取得。申请书份数的表格数字与详情引述分别保留。 身份证复印件名称与原件/复印件份数栏存在口径差异。",
+  "source_format": "DOC",
+  "original_name": "劳动人事争议仲裁申请书.doc",
+  "original_sha256": "83b8eaded7ce071d27a3e0d86fcbf1dddef577597f0871781610cbd284ffb9b1",
+  "source_capture": {
+    "url": "https://zwfw.jz.gov.cn/jeesaas/f/itemInfo/17bfd791-a222-4c33-8983-57ee706fc72e?ql=2",
+    "captured_at": "2026-11-22T09:29:53.378468+00:00",
+    "status": 200,
+    "final_url": "https://zwfw.jz.gov.cn/jeesaas/f/itemInfo/17bfd791-a222-4c33-8983-57ee706fc72e?ql=2",
+    "file": "jinzhou-guide.html",
+    "sha256": "7fc32e6050930fe8ba3524d34ff6f763624da26adc27f7654beff090ee3b4277",
+    "size": 30857,
+    "seconds": 0.5992146000007779
+  },
+  "other_sources": [
+    {
+      "url": "https://zwfw.jz.gov.cn/jeesaas/f/item/itemMaterialDetail/34f3b579-aeed-4938-8b41-d859e1fa1b59",
+      "captured_at": "2026-11-22T09:29:53.784384+00:00",
+      "status": 200,
+      "final_url": "https://zwfw.jz.gov.cn/jeesaas/f/item/itemMaterialDetail/34f3b579-aeed-4938-8b41-d859e1fa1b59",
+      "file": "jinzhou-application.html",
+      "sha256": "11d865048721ec0fa673b7b6a3ebde5efbe3012a0cb65e7b4eaf18610c869548",
+      "size": 3433,
+      "seconds": 0.37223180000000866
+    },
+    {
+      "url": "https://zwfw.jz.gov.cn/jeesaas/f/item/itemMaterialDetail/c811404e-2e25-4594-a815-0b4fce5b691d",
+      "captured_at": "2026-11-22T09:29:53.978145+00:00",
+      "status": 200,
+      "final_url": "https://zwfw.jz.gov.cn/jeesaas/f/item/itemMaterialDetail/c811404e-2e25-4594-a815-0b4fce5b691d",
+      "file": "jinzhou-evidence.html",
+      "sha256": "74c8c9e75d1714feff7179ebe77ab66a0dc660f60f15bbfa555ab07a91222f94",
+      "size": 3810,
+      "seconds": 0.45786779999980354
+    },
+    {
+      "url": "https://www.jz.gov.cn/__local/6/CD/FB/C07D71B7BD25134C841A87537B9_632DDEB3_D898A.pdf",
+      "captured_at": "2026-11-22T09:29:53.769689+00:00",
+      "status": 200,
+      "final_url": "https://www.jz.gov.cn/__local/6/CD/FB/C07D71B7BD25134C841A87537B9_632DDEB3_D898A.pdf",
+      "file": "jinzhou-local-book.pdf",
+      "sha256": "bfb560b09ff8c2338324e671cc5108eb2ebe90666eae0bbe5cf33ca9bfe35f56",
+      "size": 887178,
+      "seconds": 0.7903243999990082
+    },
+    {
+      "url": "https://zwfw.jz.gov.cn/jeesaas/f/item/itemMaterialDetail/157550c2-4e1d-41ef-838a-686669a001c0",
+      "status": 200,
+      "sha256": "2b4e8fbf0e06e4703418bbaaae2b53261ec9b4bed0a28fa943174c45140e62ca",
+      "captured_at": "2026-11-22T09:40:09.513778+00:00",
+      "seconds": 0.5629974999992555
+    }
+  ],
+  "region_code": "210700",
+  "verified_at": "2026-11-22T09:40:09.513778+00:00",
+  "materials_complete": false,
+  "layout_sha256": "9f8701b91b3831b356a5383b520b9b958c4a653830c6eee01eb2bbfda595bc68",
+  "layout_original_source_sha256": "c1544ee88a456d82b59fcff13af09b3e688b2d096cfdda7901b4d60918b08030"
+}

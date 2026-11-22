@@ -1,0 +1,139 @@
+{
+  "state": "TWO_LOCAL_APPLICATIONS_ACCEPTED",
+  "at": "2026-11-22T09:41:10.348467+00:00",
+  "regions": [
+    {
+      "region_code": "140300",
+      "seconds": 0.5587872999985848,
+      "samples": [
+        {
+          "case": "blank",
+          "sha256": "3c3b084a121d52c347b58ba5b54e0427230f5aa2d4bfcd8153067546e09083ff",
+          "seconds": 0.21128119999957562,
+          "origin": "official-blank-filled",
+          "visual_receipt": {
+            "name": "140300-blank",
+            "pages": 2,
+            "page_sha256": [
+              "4106d1d71e5e7b6711fde56a54397a493e65779012e10e06c6b3cfddce960b62",
+              "230f286b4a04f06c1ea0f9184984d8cf5e6a16bbebe6d65c0d83c637f85650fe"
+            ],
+            "pdf_sha256": "3f20726076cfebbc3af13da1757738699da36fb75788376767c7f86f60a87dd8"
+          },
+          "all_package_members_match_visual_input": true
+        },
+        {
+          "case": "typical",
+          "sha256": "b7c515808851c7bcfbaba12673acc759fa300290ad674ebc5f975a443b57f584",
+          "seconds": 0.12550369999917166,
+          "origin": "official-blank-filled",
+          "visual_receipt": {
+            "name": "140300-typical",
+            "pages": 2,
+            "page_sha256": [
+              "8b1dd6a2a80385188adfada5bdaf853f987aa59831cb83d56d632c57d2a0c4e6",
+              "307a0070a2985695cf282f4f00e7b7d3b4d520af989971959645209457a3d39e"
+            ],
+            "pdf_sha256": "de66391aa953ffbb7e59c2e82821c0cf76c6bf6c2df0eabea75519f17dcd8b47"
+          },
+          "all_package_members_match_visual_input": true
+        },
+        {
+          "case": "capacity",
+          "sha256": "6ac1000b3f02d04bb3229a809801af247d8eda77a79738fee57704e4d420adfb",
+          "seconds": 0.1556047000012768,
+          "origin": "official-blank-filled",
+          "visual_receipt": {
+            "name": "140300-capacity",
+            "pages": 2,
+            "page_sha256": [
+              "077ccaef444ab3ebb8d24841942ba6a899e4cadca4c3fbbcfaa1f47d7fb3eead",
+              "38432c72d31f5d5e0274b1ce9ebc4e1c6c52a4cd0d50709fe8389160f6a39f9b"
+            ],
+            "pdf_sha256": "45f7f7b4ff7fea199ce9a6ef5be9f7f09318a5af119fcf24cc6f6de8620ff325"
+          },
+          "all_package_members_match_visual_input": true
+        }
+      ],
+      "contract_id": "0521f1aab4f28cbcfc84cb778c13d4089e303741b89829b490ad6dba14fed098",
+      "published": false
+    },
+    {
+      "region_code": "210700",
+      "seconds": 0.6371326000007684,
+      "samples": [
+        {
+          "case": "blank",
+          "sha256": "d38509adc1642710cb957c65c727aaed8f7585ce4a7804658aac06520fbcfaf2",
+          "seconds": 0.16402930000003835,
+          "origin": "official-blank-converted-filled",
+          "visual_receipt": {
+            "name": "210700-blank",
+            "pages": 2,
+            "page_sha256": [
+              "72a0d44a17276a946f2a9860767de3e550fe3e83b8033e04eff424d225e8dd83",
+              "47b66815e73218b4f16b71f4c9b226bc65b826b8096363d1de98b03060c93ff3"
+            ],
+            "pdf_sha256": "f94dbd16e1ea7d7e3a42388d87cd1d879b465758d6c055a2458b1d2c83fba238"
+          },
+          "all_package_members_match_visual_input": true
+        },
+        {
+          "case": "typical",
+          "sha256": "163b744d96770d6239888f1314c097cd987f69652cc91a3afc1dd5100e3dd912",
+          "seconds": 0.20519789999889326,
+          "origin": "official-blank-converted-filled",
+          "visual_receipt": {
+            "name": "210700-typical",
+            "pages": 2,
+            "page_sha256": [
+              "2f02998c7cf233fef6e67db7841e233b1d9cc615614c6460aad11c3a0da15e26",
+              "9cca2382275c59ab0827c24e7ded050c1f173ddbf3574ad7f249576411cbda69"
+            ],
+            "pdf_sha256": "664cf2ebe1337684b61dfb3ab3adcfcf32d1b040c52233e98196b5f71c598742"
+          },
+          "all_package_members_match_visual_input": true
+        },
+        {
+          "case": "capacity",
+          "sha256": "658a270f0b3d8290ebc9e72de2653efd77bc7a36035e9550a5d94172fbb76eae",
+          "seconds": 0.1870084999991377,
+          "origin": "official-blank-converted-filled",
+          "visual_receipt": {
+            "name": "210700-capacity",
+            "pages": 2,
+            "page_sha256": [
+              "794d4abf5cc947d9aec708ff57e611a9edfeac0def82c8171429149b08837f16",
+              "2d76bab2985add64195955564a39f4bb5a09c90842cf6fd2c321b554459f7518"
+            ],
+            "pdf_sha256": "d04364e0f4638bf0fef7e0a7c58278376efce5e96b6649a35743ee8a1a7e7302"
+          },
+          "all_package_members_match_visual_input": true
+        }
+      ],
+      "contract_id": "3d7e394f16830c4bbfba1f98dc5498ae0f0accc3888ae92ab57aea2d0e49bc04",
+      "published": false
+    }
+  ],
+  "source_recheck_to_acceptance_seconds": 776.61946,
+  "started_at": "2026-11-22T09:29:07.144510+00:00",
+  "accepted_at": "2026-11-22T09:42:03.763970+00:00",
+  "generated_document_count": 6,
+  "generated_pages_checked": 12,
+  "source_pages_compared": 4,
+  "local_tests_passed": 30,
+  "materials_complete_regions": 0,
+  "full_locality_completion_regions": 0,
+  "published_regions": 0,
+  "national_first_sweep_budget_continuous_days": [
+    2,
+    4
+  ],
+  "national_complete_eta": null,
+  "shared_word_export_seconds": 25.2850755,
+  "source_http_request_seconds": {
+    "140300": 0.7984983999995166,
+    "210700": 2.7826360999988538
+  },
+  "timing_scope": "Shared wall clock includes current source check, tests, adapter changes, repair and manual Word page review. Source HTTP sums exclude dynamic tabs, interpretation and concurrency. Per-city end-to-end time was not independently timed."
+}

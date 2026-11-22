@@ -195,6 +195,11 @@ from regional_directory import DirectoryStore
 from regional_rollout import build_rollout_status, directory_rows, load_rollout_candidates
 from routes.province_documents import ApplicationRequest, EvidenceRequest, _response
 from regional_form_contracts import build_form_contract
+from regional_yangquan_jinzhou import (
+    ADAPTERS as YANGQUAN_JINZHOU_ADAPTERS, MODELS as YANGQUAN_JINZHOU_MODELS,
+    YANGQUAN_ADAPTER, JINZHOU_ADAPTER, exact_municipal as exact_yangquan_jinzhou,
+    fill_application as fill_yangquan_jinzhou,
+)
 from regional_validation import (
     RegionalValidationError, current_form_contract, select_regional_template,
     validate_generation_request, validate_guide_context,
@@ -279,7 +284,7 @@ def areas(province: str=Query(max_length=30),city: str=Query(default='',max_leng
                 or exact_yinchuan_municipal(municipal)
                 or exact_wuzhong_municipal(municipal)
                 or exact_guyuan_municipal(municipal)
-                or exact_zhongwei_municipal(municipal)):
+                or exact_zhongwei_municipal(municipal) or exact_yangquan_jinzhou(municipal, ROOT)):
             city_row = next((
                 row for row in directory.areas(province) if row['city'] == city and row['level'] == 3
                 and row['code'] == code and not row['district']
@@ -762,6 +767,8 @@ def generation_request_model(adapter,kind):
         return MizhiApplicationRequest
     if adapter == SHENMU_EVIDENCE_ADAPTER and kind == 'evidence':
         return ShenmuEvidenceRequest
+    if adapter in YANGQUAN_JINZHOU_ADAPTERS and kind == 'application':
+        return YANGQUAN_JINZHOU_MODELS[adapter]
     if adapter == HUAYIN_APPLICATION_ADAPTER and kind == 'application':
         return HuayinWorkerApplicationRequest
     if adapter == HEYANG_APPLICATION_ADAPTER and kind == 'application':
@@ -853,6 +860,8 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks, xlsx: b
             g, province=payload.province, city=payload.city, district=payload.district,
             source_id=payload.source_id, version=payload.version)
         t = select_regional_template(g, payload.template_id, payload.kind, mode=payload.mode, case_scope=payload.case_scope)
+        if t.get('adapter') in YANGQUAN_JINZHOU_ADAPTERS and payload.contract_id is None:
+            raise RegionalValidationError(409, '请重新打开当前地区的填写表单后生成')
         if t.get('adapter') in {QZ_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER, BAOJI_EVIDENCE_ADAPTER, XIXIANG_REFERENCE_ADAPTER, LIUBA_XLSX_ADAPTER, FOPING_REFERENCE_ADAPTER, ZIYANG_REFERENCE_ADAPTER, ZIYANG_EMPLOYER_REFERENCE_ADAPTER, LUEYANG_APPLICATION_ADAPTER, HANBIN_APPLICATION_ADAPTER, HANYIN_APPLICATION_ADAPTER, BAIHE_APPLICATION_ADAPTER, DANFENG_APPLICATION_ADAPTER, SHANGNAN_APPLICATION_ADAPTER, SHANYANG_APPLICATION_ADAPTER, TONGGUAN_APPLICATION_ADAPTER, HEYANG_APPLICATION_ADAPTER, HUAYIN_APPLICATION_ADAPTER, SHENMU_EVIDENCE_ADAPTER, MIZHI_APPLICATION_ADAPTER, QINGJIAN_APPLICATION_ADAPTER, XIAN_HIGH_TECH_APPLICATION_ADAPTER, XIAN_HIGH_TECH_EVIDENCE_ADAPTER, *BAOJI_WORKER_MODELS} and payload.contract_id is None:
             raise RegionalValidationError(409, '请重新打开当前地区的填写表单后生成')
         adapter, data, validated_contract_id = validate_generation_request(
@@ -864,9 +873,13 @@ def generate(payload: GenerateRequest,background_tasks: BackgroundTasks, xlsx: b
     blank_adapters={BLANK_ADAPTER,ZHEJIANG_ADAPTER,SHANGCHENG_ADAPTER,NINGBO_ADAPTER,OCT29_JIANGSU_ADAPTER,FEIDONG_ADAPTER,JIANGSU_C_ADAPTER,JIANGSU_D_ADAPTER,ZHEJIANG_D_ADAPTER,JIANGSU_E_ADAPTER,ZHEJIANG_E_ADAPTER,CHUNAN_ADAPTER,JIANGSU_F_ADAPTER,JIANGSU_G_ADAPTER,FUJIAN_H_ADAPTER,FUJIAN_I_ADAPTER,FUJIAN_J_ADAPTER,FUJIAN_K_ADAPTER,PINGTAN_ADAPTER,PUTIAN_ADAPTER,PUTIAN_N_ADAPTER,FUJIAN_O_ADAPTER,FUJIAN_P_ADAPTER,HQ_ADAPTER}
     blank_adapters.update({QZ_ADAPTER, XIAN_HIGH_TECH_APPLICATION_ADAPTER, QINGJIAN_APPLICATION_ADAPTER, MIZHI_APPLICATION_ADAPTER, BAOJI_EVIDENCE_ADAPTER, LIUBA_XLSX_ADAPTER, XIAN_HIGH_TECH_EVIDENCE_ADAPTER, DANFENG_APPLICATION_ADAPTER, SHANYANG_APPLICATION_ADAPTER, *BAOJI_WORKER_MODELS})
     converted_adapters = {RONGJIANG_ADAPTER, HUNAN_ADAPTER, HUNAN_C_ADAPTER, XIANGAN_EVIDENCE_ADAPTER, ZHONGSHAN_ADAPTER, LUOHU_ADAPTER, LUEYANG_APPLICATION_ADAPTER, HANBIN_APPLICATION_ADAPTER, HANYIN_APPLICATION_ADAPTER, BAIHE_APPLICATION_ADAPTER, SHANGNAN_APPLICATION_ADAPTER, TONGGUAN_APPLICATION_ADAPTER, HEYANG_APPLICATION_ADAPTER, HUAYIN_APPLICATION_ADAPTER, SHENMU_EVIDENCE_ADAPTER}
+    blank_adapters.add(YANGQUAN_ADAPTER)
+    converted_adapters.add(JINZHOU_ADAPTER)
     if adapter in blank_adapters | converted_adapters and payload.mode!='blank':raise HTTPException(409,'这是官方空白表格，请按空白表格填写模式生成')
     try:
-        if adapter == XIAN_HIGH_TECH_APPLICATION_ADAPTER:
+        if adapter in YANGQUAN_JINZHOU_ADAPTERS:
+            doc = fill_yangquan_jinzhou(adapter, checked_path(t, g).read_bytes(), data.model_dump())
+        elif adapter == XIAN_HIGH_TECH_APPLICATION_ADAPTER:
             doc = fill_xian_high_tech_application(checked_path(t, g).read_bytes(), data.model_dump())
         elif adapter == QINGJIAN_APPLICATION_ADAPTER:
             doc = fill_qingjian_application(checked_path(t, g).read_bytes(), data.model_dump())

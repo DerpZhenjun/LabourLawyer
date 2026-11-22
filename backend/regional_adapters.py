@@ -408,6 +408,9 @@ def with_reference_capabilities(guide,root=None):
 
 
 def checked_reference_adapter(guide, template, kind,root=None):
+    from regional_yangquan_jinzhou import ADAPTERS, checked_adapter
+    if template.get('adapter') in ADAPTERS:
+        return checked_adapter(guide, template, kind, root)
     if template.get('adapter') == XIAN_HIGH_TECH_APPLICATION_ADAPTER:
         return checked_xian_high_tech_application(guide, template, kind, root=root)
     if template.get('adapter') == QINGJIAN_APPLICATION_ADAPTER:
